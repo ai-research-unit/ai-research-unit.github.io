@@ -67,14 +67,14 @@ $$
 The mixed products anticommute: in a time–space pair the left factor $e_t$ commutes with every unit while the right factors $\vec e_x$ and $\vec e_y$ anticommute, and in a space–space pair the right factor $\vec e_y$ is common to both while the left factors $\vec e_k$ anticommute. Hence
 
 $$
-\{\Gamma_\mu,\Gamma_\nu\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}, \qquad g = \mathrm{diag}(-1,+1,+1,+1),
+\{\Gamma_\mu,\Gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}, \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 the metric sign being the convention noted in the companion article.
 
 **The two bases.** The frame above is the **chiral (Weyl) basis**. The chirality is the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; on the Peirce planes $\mathbb{B}\tilde\Pi_\pm$, with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, it acts as $-1$ on $\mathbb{B}\tilde\Pi_+$ and as $+1$ on $\mathbb{B}\tilde\Pi_-$, so the upper two-component block is left-handed and the lower is right-handed. The **Dirac basis** is obtained by the $*$-unitary change of basis $R_{\tilde W}$ with $\tilde W=(e_t+\vec e_y)/\sqrt2$. It diagonalizes the timelike cell $\Gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, which becomes $+1$ on the upper block and $-1$ on the lower, and it mixes the two chiralities. The plane-wave spinors are simplest in the Dirac basis; the massless equations are simplest in the chiral one.
 
-**The two metrics, and the two sectors.** Two metric symbols appear, and they carry the same information with opposite sign. The Clifford metric $g=\mathrm{diag}(-1,+1,+1,+1)$ is the one in the anticommutator of the cells. The spacetime metric $g_{\mu\nu}[\mathbb{M}_-]$ is its negative, $g_{\mu\nu}[\mathbb{M}_-]$, and it is the metric of the $ict'$ gradient. The relative sign is the freedom the companion article flags as convention.
+**The two metrics, and the two sectors.** Two metric symbols appear, and they carry the same information with opposite sign. The sign vector $\varepsilon=(1,-1,-1,-1)$ is the one in the anticommutator of the cells. The spacetime metric $g_{\mu\nu}[\mathbb{M}_-]$ is its negative, $g_{\mu\nu}[\mathbb{M}_-]$, and it is the metric of the $ict'$ gradient. The relative sign is the freedom the companion article flags as convention.
 
 Two sectors recur. The material sector $\mathbb{M}_-$ is the anti-Hermitian part of $\mathbb{B}$, the fixed space of $\flat$; the informational sector $\mathbb{M}_+$ is its Hermitian partner, and it is where the spin observables of this article live.
 
@@ -90,7 +90,7 @@ $$
 P^2=\Gamma_0^2p_0^2+\sum_k\Gamma_k^2p_k^2=p_0^2-\vec p^2 .
 $$
 
-The last expression is $g^{\mu\nu}p_\mu p_\nu$, and equally $g^{\mu\nu}[\mathbb{M}_-]p_\mu p_\nu$; the two agree, and the minus sits in the spatial signs alone.
+The last expression is $-g^{\mu\nu}[\mathbb{M}_-]p_\mu p_\nu$, the minus sitting in the sign of the time slot.
 
 On derivatives the same cells give the wave operator of the material sector. On a plane wave $p_0\to i\partial/\partial t'$ and $p_k\to-i\partial/\partial Q_k$, so $P\to\slashed p$ with
 
@@ -114,7 +114,7 @@ $$
 and the anticommutator flips sign,
 
 $$
-\{i\Gamma_\mu,i\Gamma_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
+\{i\Gamma_\mu,i\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
 $$
 
 The physics is unchanged; only the placement of the signs differs.
@@ -525,7 +525,9 @@ $$
 
 select the two components; on the four-component carrier they act as the Peirce right multiplications $R_{\tilde\Pi_+}$ and $R_{\tilde\Pi_-}$. The algebraic counterparts of $P_L$ and $P_R$ are the central idempotents $e_\pm=\tfrac12(1\pm\chi)$ of the complexification, with $\chi=i\tilde\Xi_{\mathrm{ad}}$ the central grading of the Gamma section; the Peirce idempotents $\tilde\Pi_\pm$ are not central, and the two pairs are different objects. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -547,30 +549,29 @@ $\gamma_5$ is the reference-frame cell of the chirality $-iR_{\vec e_z}^{\mathrm
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 The biquaternionic Dirac equation, on its spinor module, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The pair is one-sided, with both gradients acting on the left; the two-sided form of the companion article is a different operator and is not used here. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\,\langle w,\cdot\rangle_{\mathrm D} = P+m$, $\sum_r v\,\langle v,\cdot\rangle_{\mathrm D} = P-m$.
@@ -610,7 +611,7 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\slashed p = i\Gamma_0\partial/\partial t'+\sum_k i\Gamma_k\partial/\partial Q_k$ | Dirac operator on the material sector; $\slashed p^2=\Box$ on $\mathbb{M}_-$ |
 | $\alpha_k = \Gamma_0\Gamma_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Velocity operator of the non-relativistic limit |
 | $\sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
-| $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the generators |
+| $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,+1,+1,+1)$ | sign vector of the generators |
 | $g_{\mu\nu}[\mathbb{M}_-]$ | Spacetime metric of the $ict'$ gradient |
 | $\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \psi_L^\dagger\phi_R+\psi_R^\dagger\phi_L$ | Dirac adjoint, the Hermitian pairing twisted by $\Gamma_0$ |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
@@ -627,6 +628,7 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original Dirac equation and the prediction of $g = 2$.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the plane-wave solutions, the Dirac bilinears, and the Gordon decomposition in the standard notation.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the spin sums, the charge-conjugation and chirality structure, and the non-relativistic reduction.

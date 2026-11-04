@@ -304,7 +304,9 @@ so that the one-particle term reproduces $D_F=Z/(m^2-p^2-i\epsilon)$ and the res
 - The reduction of the **two-sided** Dirac equation is not written. Its mass is a right multiplication together with the conjugation $\overline{F}$, so the amputation would have to be applied on the right and the conjugation carried through every leg; whether that produces the same residue as the one-sided pair is not settled here.
 - Whether the component-wise structure of the scalar reduction has observable consequences lies outside this article, which only identifies it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
@@ -330,7 +332,7 @@ the mass-shell operator is minus the product of the two shifted cells,
 $$
 \mathcal{M}(\tilde P)=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^2-p^2 ,
 $$
-a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf 1$ with $g=\mathrm{diag}(-1,+1,+1,+1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
+a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
 
 $\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.
 
@@ -388,6 +390,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Lehmann, K. Symanzik, and W. Zimmermann, "Zur Formulierung quantisierter Feldtheorien," *Il Nuovo Cimento* **1** (1955) 205–225, for the original reduction formula.
 - H. Lehmann, K. Symanzik, and W. Zimmermann, "On the formulation of quantized field theories. II," *Il Nuovo Cimento* **6** (1957) 319–333, for the extension and the renormalization constants.
 - G. Källén, "On the definition of the renormalization constants in quantum electrodynamics," *Helvetica Physica Acta* **25** (1952) 417–434, for the spectral representation of the propagator.

@@ -390,7 +390,7 @@ $$
 = \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\frac{du_\mu}{d\tau}\frac{du_\nu}{d\tau}\right)\;}
 $$
 
-where the second expression writes the contraction out with the frame metric $\eta=\mathrm{diag}(+,-,-,-)$, used throughout this article for every contraction of four-vectors. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
+where the second expression writes the contraction out with the frame metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,1,1,1)$, used throughout this article for every contraction of four-vectors. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
 
 For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With the derivative taken this time with respect to $t'$ (not $t'_r$),
 

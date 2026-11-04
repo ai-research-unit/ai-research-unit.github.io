@@ -10,7 +10,7 @@ One warning belongs in the introduction, because a reader who has seen an extern
 
 **Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$ and $K_{\lambda\mu\nu}$ the first index is the output, the second is the direction of the derivative and the third is the index of the differentiated object — which is why the tetrad postulate below reads $\partial/\partial x_\mu\exp(a){}_\nu-\Gamma_{\lambda\mu\nu}\exp(a){}_\lambda$, and why the torsion, the antisymmetric part in that pair, is the object of the first section. $\mathrm{Riem}_{\lambda\mu\nu\rho}$ reads the output first, then the index of the differentiated object, then the two derivative directions, and it is antisymmetric in those last two. In the mixed frame-and-world objects $\exp(a){}_\mu$, $e_{a\mu}$, $\omega^{a}{}_{b\mu}$ and its lowered form $\omega_{ab\mu}$, the frame slot comes first. In an identity the same label appears on both sides, so it names a free index and is not summed; a contraction is always written with an explicit $\sum$, and carries the sign vector $\varepsilon$ where the contraction is the metric one: $\varepsilon_t=+1$ and $\varepsilon_k=-1$, so that $\varepsilon_\mu A_\mu$ is the component $A^\mu$ in the frame, where $g=\eta$. A raised label appears only where the object is defined that way — $A^\rho$ for the axial current and $\omega^{a}{}_{b\mu}$ for the spin connection as solved — and each display that uses one gives the lowering beside it, $A^\rho=\varepsilon_\rho A_\rho$ and $\omega_{ab\mu}=\varepsilon_a\omega^{a}{}_{b\mu}$, so that no result depends on which of the two is written. In a general chart the raising is done by the inverse metric, which is written out explicitly, as in the Christoffel symbols of the next section.
 
-**Cells and the two conventions of the article.** The geometry is written in tensors, the algebra in cells. A frame cell is a two-sided operator, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ for the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ and $L_aR_b\psi=a\psi b$; the three spatial cells carry an arrow on the right multiplier and the timelike one collapses to $iR_{\vec e_x}^{\mathrm{axf}}$. The factor $i$ belongs to the cell, and $i^2=-1$ is used silently throughout: a product of two cells brings one factor $i^2$ and so one sign flip, and no display below counts a minus sign twice. The Clifford names of these cells are used in one section only, *The Legacy Gamma Formulation*; nothing before it needs them, because the cells are written out directly.
+**Cells and the two conventions of the article.** The geometry is written in tensors, the algebra in cells. A frame cell is a two-sided operator, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ for the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ and $L_aR_b\psi=a\psi b$; the three spatial cells carry an arrow on the right multiplier and the timelike one collapses to $iR_{\vec e_x}^{\mathrm{axf}}$. The factor $i$ belongs to the cell, and $i^2=-1$ is used silently throughout: a product of two cells brings one factor $i^2$ and so one sign flip, and no display below counts a minus sign twice. The Clifford names of these cells are used in one section only, *The Legacy Pauli Gamma Formulation*; nothing before it needs them, because the cells are written out directly.
 
 ## The Torsion Tensor
 
@@ -177,7 +177,7 @@ The identity is exact, and the constant is $-i$. The cells carry the reason them
 $$
 \operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr] = -\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\chi\,C_\rho ,
 $$
-with $\chi$ the chirality cell. That is an operator identity, exact at every index triple, and it accounts for its own unit: in bare cells, $\beta_\mu=L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, the same identity reads $\operatorname{Alt}[\beta_\lambda\beta_\mu\beta_\nu]=+\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\,R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ with no unit left at all, because $\chi C_\rho=(-i)(i)R_{\vec e_z}^{\mathrm{axf}}\beta_\rho=+R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ cancels the two units and leaves a sign. The $-i$ of the display is therefore exactly the $i^3=-i$ of the three cells on the left, and nothing else. Sandwiching it between $\bar\psi$ and $\psi$ gives $\Sigma$ on the left and $A_\rho$ on the right, so the display above holds with $-i$ and there is nothing left to choose. The same identity in the Clifford reading is displayed in *The Legacy Gamma Formulation*.
+with $\chi$ the chirality cell. That is an operator identity, exact at every index triple, and it accounts for its own unit: in bare cells, $\beta_\mu=L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, the same identity reads $\operatorname{Alt}[\beta_\lambda\beta_\mu\beta_\nu]=+\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\,R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ with no unit left at all, because $\chi C_\rho=(-i)(i)R_{\vec e_z}^{\mathrm{axf}}\beta_\rho=+R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ cancels the two units and leaves a sign. The $-i$ of the display is therefore exactly the $i^3=-i$ of the three cells on the left, and nothing else. Sandwiching it between $\bar\psi$ and $\psi$ gives $\Sigma$ on the left and $A_\rho$ on the right, so the display above holds with $-i$ and there is nothing left to choose. The same identity in the Clifford reading is displayed in *The Legacy Pauli Gamma Formulation*.
 
 The weight is what carries the sign. Without it the same display with $+i$ holds on the eighteen triples whose free index is spacelike and fails on the six whose free index is timelike; the sign vector is exactly the raised index that repairs those six.
 
@@ -241,7 +241,9 @@ The negative content is the boundary, restated so that a later reader cannot mis
 
 The two open items this article was written against stand as follows. The first — torsion in the framework's notation, with the geometry that makes the elimination possible — is supplied here, and the identities are recomputed. The second — the action and the selection principle — is untouched, and remains where *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* and *Quantum Gravity under the Biquaternion Framework — A Research Agenda* placed it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. With $L_a$ and $R_b$ the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, they are
 $$
@@ -258,45 +260,31 @@ The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each 
 
 These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu=C_\mu$ and $\gamma_5=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
 
-The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $\varepsilon=(1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-**The duality the spin section cites.**
-$$
-\operatorname{Alt}\bigl[\gamma_\lambda\gamma_\mu\gamma_\nu\bigr] = i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_\rho\gamma_5
-= -\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_5\gamma_\rho ,
-$$
-with the same normalised antisymmetrisation as in the spin section, and the raised index written low by the sign vector on the right. The two forms are equal because $\{\gamma_5,\gamma_\rho\}=0$, and the second is the one the spin section uses, where $\bar\psi\gamma_5\gamma_\rho\psi$ is $A_\rho$.
-
-**Three contractions**, all exact in this frame:
-$$
-\sum_\mu(\gamma_\mu)^2=-2I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\gamma_\mu\gamma_5\gamma_\mu=+2\gamma_5 .
-$$
-All three follow from one fact and one sum: the square $(\gamma_\mu)^2=\varepsilon_\mu I_4$, unsummed, with $\varepsilon_t=+1$ and $\varepsilon_k=-1$, and the sum $\sum_\mu\varepsilon_\mu=-2$. In the first, $(\gamma_\mu)^2=\varepsilon_\mu I_4$ term by term and the sum of the four signs is $-2$. In the third, $\gamma_\mu\gamma_5=-\gamma_5\gamma_\mu$ gives $\gamma_\mu\gamma_5\gamma_\mu=-\gamma_5(\gamma_\mu)^2=-\varepsilon_\mu\gamma_5$ term by term, and the sum of the signs gives $+2\gamma_5$; no weight is needed there, because the sign is already carried by the product. In the second the free index $\alpha$ is not summed, and the weight is what makes the four terms add: the term with $\mu=\alpha$ is $+\gamma_\alpha$ and each of the other three is $-\gamma_\alpha$, so the total is $\gamma_\alpha-3\gamma_\alpha=-2\gamma_\alpha$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K_{\lambda\mu\nu}$. The torsion fixes only the antisymmetric part of the remainder in its last pair, twenty-four of sixty-four components; the unique metric-compatible connection for a given torsion is the Einstein–Cartan contorsion $K_{\lambda\mu\nu}=\tfrac12(T_{\lambda\mu\nu}-T_{\mu\nu\lambda}+T_{\nu\lambda\mu})$, exact for any torsion, antisymmetric in the first and third slots, and collapsing to $\tfrac12T$ exactly when the torsion is totally antisymmetric. Writing $T_{\lambda\mu\nu}=2K_{\lambda\mu\nu}$ throughout is the further choice of the sector in which the Christoffel symbols are the whole symmetric part of the connection; inside it the covariant derivative of the metric, $\nabla_\mu g_{\nu\rho} = -(g_{\nu\lambda}K_{\lambda\mu\rho} + g_{\rho\lambda}K_{\lambda\mu\nu})$, vanishes for every index order exactly when the contorsion is totally antisymmetric, and the 24 components are cut to four. **Inside the sector, metric compatibility is the condition of total antisymmetry**, and that is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
@@ -335,6 +323,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - F. W. Hehl, P. von der Heyde, G. D. Kerlick and J. M. Nester, "General relativity with spin and torsion: foundations and prospects," *Reviews of Modern Physics* **48** (1976) 393–416, for the Einstein–Cartan–Sciama–Kibble theory, the contorsion and the algebraic torsion–spin relation.
 - F. W. Hehl and B. K. Datta, "Nonlinear spinor equation and asymmetric connection in general relativity," *Journal of Mathematical Physics* **12** (1971) 1334–1339, for the elimination of the torsion and the axial–axial contact term.
 - R. Aldrovandi and J. G. Pereira, *Teleparallel Gravity: An Introduction* (Springer, 2013), for the Weitzenböck connection, the vanishing of its curvature, and the teleparallel formulation of general relativity.

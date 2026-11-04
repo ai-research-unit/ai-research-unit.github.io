@@ -381,7 +381,9 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Basis-freedom interpretation.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and the state module no canonical idempotent, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the interpretation states its algebraic origin and does not address the selection rule (O19).
 - **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
@@ -432,6 +434,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - N. Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for central simple algebras, their derivations, and their maximal commutative subalgebras.
 - R. S. Pierce, *Associative Algebras* (Springer, 1982), for the structure of full matrix algebras, their simplicity, their ideals, and their idempotents.
 - Y. A. Drozd and V. V. Kirichenko, *Finite Dimensional Algebras* (Springer, 1994), for zero divisors, the Wedderburn theorems, and the module theory of finite-dimensional algebras.

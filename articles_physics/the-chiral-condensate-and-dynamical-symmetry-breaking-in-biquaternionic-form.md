@@ -38,14 +38,14 @@ and $G_\mu$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and
 
 $$
 G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{G_\mu,G_\nu\}=2g_{\mu\nu}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 $$
 \Gamma^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \{\Gamma,G_\mu\}=0\qquad(\mu=0,1,2,3),
 $$
 
-with $g=\operatorname{diag}(-1,+1,+1,+1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$.
+with $\varepsilon=(1,-1,-1,-1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$.
 
 **The collapse of the imaginary unit.** Because $i^{2}=-1$, the product of the central imaginary with a cell is a plain cell, and the two collapses used below are
 
@@ -110,7 +110,7 @@ $$
 where the second form is the first read through $iG_0=-R_{\vec e_x}^{\mathrm{axf}}$ and $iG_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. The time term is a pure right multiplication and the three spatial terms are left times right; the four minus signs are the four factors of $i$ that the generators carry. The operator is two-sided, and since the metric is already in the generators,
 
 $$
-\mathbb{D}^{2}=-g^{\mu\nu}\frac{\partial^{2}}{\partial x_\mu\partial x_\nu}
+\mathbb{D}^{2}=+g^{\mu\nu}[\mathbb{M}_-]\frac{\partial^{2}}{\partial x_\mu\partial x_\nu}
 =-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}=\Box ,
 $$
 
@@ -398,7 +398,9 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 **Not supplied.** The colour gauge dynamics that produces the condensate in nature; the value of the coupling $G$; the scale $\Lambda$; and therefore the numerical value of $\langle\bar{\psi}\psi\rangle$ and of the constituent mass. The framework is scale-free until these are supplied, exactly as the companion articles record for the masses elsewhere. No biquaternion prediction distinguishes this account from the standard one.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -440,18 +442,18 @@ so multiplying a generator or the chirality cell by $i$ trades it for a plain ce
 
 **The identities the article cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -490,7 +492,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\sum_k\partial^2/\partial Q_k^2$ | d'Alembertian, series convention; $Q_k=x_k$, and $\Delta$ is reserved for the Dirac module |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathbb{D}-m)\psi=0$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ | Cell equation: the pair on $\Delta$, two-sided |
-| $G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{G_\mu,G_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$ | Chirality cell; $\mathrm{diag}(-I_2,I_2)$ in the chiral basis |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality of the double, the corpus's algebra-side name; equal to $\Gamma$ on $\Delta$ |
 | $\omega=G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{axf}}$ | Volume cell; the image of the scalar imaginary |
@@ -514,6 +516,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, and II, *Physical Review* **124** (1961) 246–254, for the four-fermion mechanism of dynamical mass generation.
 - J. Goldstone, "Field theories with superconductor solutions," *Nuovo Cimento* **19** (1961) 154–164, for the Goldstone theorem and the counting of broken generators.
 - S. Coleman and E. Weinberg, "Radiative corrections as the origin of spontaneous symmetry breaking," *Physical Review D* **7** (1973) 1888–1910, for dynamical symmetry breaking in the effective-potential language.

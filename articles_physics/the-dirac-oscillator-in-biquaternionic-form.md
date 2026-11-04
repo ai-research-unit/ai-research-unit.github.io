@@ -18,7 +18,7 @@ The substitution is "non-minimal" in the precise sense that it cannot be obtaine
 
 It belongs in this subcategory as the **exactly solvable external-potential problem** of the biquaternionic Dirac theory. The hydrogen atom, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, is exactly solvable by a different mechanism (a Coulomb central field and a second-order radial reduction); the oscillator is exactly solvable because the first-order operator can be **squared in closed form**, and the square is again a second-order operator, central apart from a single spin–orbit term. That is the same square as in *Klein–Gordon from the Dirac Square in Biquaternionic Form*, now with the position-dependent addition that makes the square a harmonic oscillator. A square available in closed form, plus a confining addition that is linear in the position, make the model the place where one sees concretely how the biquaternionic first-order operator behaves under squaring.
 
-The article derives the substitution, the split of a state into its two frame parts and the coupled pair those parts satisfy, the exact operator identity on squaring, and the spectrum; it then works the one-dimensional case for which everything is transparent, takes the non-relativistic limit, reads the result in the algebra, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. Nothing below is written with a matrix, a column or a decomposition of the algebra: a state is an element, an operator is an action on it, and every display of an array is confined to *The Legacy Gamma Formulation*.
+The article derives the substitution, the split of a state into its two frame parts and the coupled pair those parts satisfy, the exact operator identity on squaring, and the spectrum; it then works the one-dimensional case for which everything is transparent, takes the non-relativistic limit, reads the result in the algebra, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. Nothing below is written with a matrix, a column or a decomposition of the algebra: a state is an element, an operator is an action on it, and every display of an array is confined to *The Legacy Pauli Gamma Formulation*.
 
 **Two Dirac equations.** The corpus carries two, and this article keeps them apart. The **algebra equation** is the one-sided chiral pair
 
@@ -28,7 +28,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-in which every derivative multiplies on the left and the mass couples the two values of the subscript. The **module equation** is the single two-sided equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the multipliers stand on both sides and whose two chiral parts are two lines. Chirality is the subscript in both forms of the equation, and it takes two values. In the module equation the large and small parts are not the chiral parts but the two values of the frame action $\beta$: $\beta$ is $+1$ on one part and $-1$ on the other, the mass is diagonal in that label and off-diagonal in the chiral one, and the two labels are different functions of the same state. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity actions, and both are two-sided. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Legacy Gamma Formulation* it makes no further appearance.
+in which every derivative multiplies on the left and the mass couples the two values of the subscript. The **module equation** is the single two-sided equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the multipliers stand on both sides and whose two chiral parts are two lines. Chirality is the subscript in both forms of the equation, and it takes two values. In the module equation the large and small parts are not the chiral parts but the two values of the frame action $\beta$: $\beta$ is $+1$ on one part and $-1$ on the other, the mass is diagonal in that label and off-diagonal in the chiral one, and the two labels are different functions of the same state. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity actions, and both are two-sided. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Legacy Pauli Gamma Formulation* it makes no further appearance.
 
 **The subscript.** Chirality is the subscript: an element is $L$ or $R$, and those are the two values. The letters are the Dirac ones, $L$ for left-handed and $R$ for right-handed, in the sense the corpus already uses for $\psi_L$ and $\psi_R$. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript belongs to the element, not to a column: a unit, a product and a general element carry it, and a state carries it because a state is an element.
 
@@ -280,7 +280,9 @@ a Hermitian element of $\mathbb{M}_+$: $i\vec e_k$ is Hermitian, $L_k^{\mathrm{o
 
 **The zero modes are supersymmetric.** The operator identity has the form of a factorisation, $\mathcal{Q}_+\mathcal{Q}_-$ with the conjugate pair of *The Square of the Coupled Operator*. The aligned states with $n_r=0$ are exactly the **zero modes** $\mathcal{Q}_-\psi_+=0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q}_-,\mathcal{Q}_+)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}_+\mathcal{Q}_-$ and $\mathcal{Q}_-\mathcal{Q}_+$ are partner Hamiltonians, and the zero modes of one are the states the supersymmetry relates. That this supersymmetry is present, and hidden in the Dirac equation rather than imposed, is the content of the Benítez–Salas-Brito solution listed in the Further Reading. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -304,18 +306,18 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -400,7 +402,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 + 2m\hbar\omega c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The square is central except for the Hermitian remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}i\vec e_k$, which in the elements is $-\frac{4m\omega}{\hbar}\sum_k(L_k^{\mathrm{orb}}e_t)\tilde S_k$. The zero-point cancellation is the trace of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. The article uses the two-sided module equation throughout; the gammas, the two chiral parts and the arrays of the two Dirac equations appear only in *The Legacy Gamma Formulation*, and no display of the body needs one.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The square is central except for the Hermitian remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}i\vec e_k$, which in the elements is $-\frac{4m\omega}{\hbar}\sum_k(L_k^{\mathrm{orb}}e_t)\tilde S_k$. The zero-point cancellation is the trace of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. The article uses the two-sided module equation throughout; the gammas, the two chiral parts and the arrays of the two Dirac equations appear only in *The Legacy Pauli Gamma Formulation*, and no display of the body needs one.
 
 ## Summary of Notation
 
@@ -414,7 +416,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\alpha_k:\ Q\mapsto \vec e_kQ\vec e_z$ | Velocity actions; Hermitian, $\alpha_k^2=\mathrm I$ |
 | $\beta\alpha_k:\ Q\mapsto i\vec e_kQ\vec e_y$, $\alpha_k\beta:\ Q\mapsto-i\vec e_kQ\vec e_y$ | The two mixed products; $\beta\alpha_k\beta=-\alpha_k$ |
 | $Q_L$, $Q_R$ | Chirality: the two values of the subscript, left-handed and right-handed |
-| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Metric of the frame |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the frame |
 | $H = c\,\boldsymbol\alpha\cdot(\vec p-im\omega\beta\vec r) + \beta mc^2$ | Dirac-oscillator Hamiltonian |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution (frame-odd shift) |
 | $\mathbb{D}$ | The two-sided Dirac operator of the series; $\mathbb{D}^2=\Box$ |
@@ -435,6 +437,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - M. Moshinsky and A. Szczepaniak, "The Dirac oscillator," *Journal of Physics A: Mathematical and General* **22** (1989) L817–L819, for the original non-minimal substitution and the exact solution.
 - M. Moshinsky and Yu. F. Smirnov, *The Harmonic Oscillator in Modern Physics* (Harwood, 1996), for the oscillator algebra, the pseudo-oscillator, and the relativistic realisation.
 - A. D. Alhaidari, "The Dirac-oscillator Green's function," *International Journal of Theoretical Physics* **43** (2004) 939–946, for the two-branch energy spectrum obtained from the Green's-function poles.

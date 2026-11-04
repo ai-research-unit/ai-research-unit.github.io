@@ -10,7 +10,7 @@ The article records the two parent actions and their four eliminations, and sepa
 
 **The frame.** Four-vector indices $\mu=0,1,2,3$ carry the generator metric of the Dirac module,
 $$
-g_{\mu\nu}=\mathrm{diag}(+1,-1,-1,-1),
+g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1),
 $$
 the corpus's *generator metric*, not the $ict'$ metric $\mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$. Contractions are $V\cdot W=\sum_{\mu,\nu}V_\mu g_{\mu\nu}W_\nu=\sum_\mu\epsilon_\mu V_\mu W_\mu$ with the sign vector $\epsilon=(1,-1,-1,-1)$, and every index the source raises is carried by an $\epsilon$ in the sums below. The Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ is totally antisymmetric with $\varepsilon_{0123}=1$; it is a different letter from $\epsilon$. Two neutral vectors are fixed by the structure constants, the timelike $k_\mu$ of $c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ and the spacelike $j_\mu$ of $\check c_{\mu\nu\lambda}=(t'_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$, with $k\cdot k=-j\cdot j=1$ and $k\cdot j=0$. The source's point is that they are offshoots of the algebra and not extra structure. The projectors are
 $$
@@ -22,11 +22,11 @@ which project onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdo
 $$
 C_\mu=L_{a_\mu}R_{b_\mu},\qquad a_0=e_t,\quad a_k=\vec e_k,\qquad b_0=\vec e_x,\quad b_k=\vec e_y,\qquad C_\mu\Psi=a_\mu\Psi b_\mu,
 $$
-and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with the components $w_\mu$. The cells obey the Clifford relations $\{iC_\mu,iC_\nu\}=2g_{\mu\nu}e_t$, so the metric sits inside the generator and a cell bilinear carries no explicit $\epsilon$. The chirality cell is
+and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with the components $w_\mu$. The cells obey the Clifford relations $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}e_t$, so the metric sits inside the generator and a cell bilinear carries no explicit $\epsilon$. The chirality cell is
 $$
 \Gamma=-iC_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=e_t,\qquad \Gamma\,C_\mu=-C_\mu\Gamma,\qquad \Gamma=iC_0C_1C_2C_3 .
 $$
-The gammas are a frame of this algebra. They appear once, in §The Legacy Gamma Formulation, and nowhere in the body.
+The gammas are a frame of this algebra. They appear once, in §The Legacy Pauli Gamma Formulation, and nowhere in the body.
 
 ## The Parent Action
 
@@ -273,7 +273,9 @@ The topological mass of the gauge field and the phase mass of the Dirac field ar
 
 These questions are open.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -287,8 +289,8 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The four $\gamma_\mu$ are the generators $iC_\mu$ of the body, and $\gamma_5$ is the representative of the chirality cell $\Gamma$. They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ and $\{\gamma_5,\gamma_\mu\}=0$, the second being the same anticommutation that $\Gamma$ obeys as a cell: right multiplications by orthogonal units anticommute. The product of the four is the chirality,
-$$
+The four $\gamma_\mu$ are the generators $iC_\mu$ of the body, and $\gamma_5$ is the representative of the chirality cell $\Gamma$. They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\{\gamma_5,\gamma_\mu\}=0$, the second being the same anticommutation that $\Gamma$ obeys as a cell: right multiplications by orthogonal units anticommute. The product of the four is the chirality,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5 ,
 $$
 which is the cell identity $\Gamma=iC_0C_1C_2C_3$ read on the module.
@@ -331,10 +333,10 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | Symbol | Meaning |
 |---|---|
 | $C_\mu=L_{a_\mu}R_{b_\mu}$ | Bare cell of index $\mu$; $a_0=e_t$, $a_k=\vec e_k$, $b_0=\vec e_x$, $b_k=\vec e_y$; $C_\mu\Psi=a_\mu\Psi b_\mu$ |
-| $iC_\mu$ | Generator cell; $\{iC_\mu,iC_\nu\}=2g_{\mu\nu}e_t$ |
+| $iC_\mu$ | Generator cell; $\{iC_\mu,iC_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}e_t$ |
 | $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ | Contraction of the four generators with the components $w_\mu$ |
 | $C_5=L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\Gamma=-iC_5$ | Chirality cell; $\Gamma=iC_0C_1C_2C_3$, not a gamma matrix |
-| $g_{\mu\nu}=\mathrm{diag}(+1,-1,-1,-1)$ | Generator metric; not the $ict'$ metric of $\mathbb{M}_-$ |
+| $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$ | Generator metric; not the $ict'$ metric of $\mathbb{M}_-$ |
 | $\epsilon_\mu=g_{\mu\mu}$, $\epsilon=(1,-1,-1,-1)$ | Sign vector of the metric; distinct from $\varepsilon$ |
 | $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $H_\mu$ | Dual (potential) field of the four-dimensional parent action, complex four-vector |
@@ -358,6 +360,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the parent actions (55) and (77), their eliminations, the self-dual field strength, the topological reading of the mass, and the non-integrable phase. **The eliminations are quoted; the algebraic identities they use are recomputed.**
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the s-vector representation, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, and the bilinear dictionary on which the parent action is built.
 - S. Deser and R. Jackiw, *Physics Letters B* **139** (1984) 371, for the parent (master) action method itself.

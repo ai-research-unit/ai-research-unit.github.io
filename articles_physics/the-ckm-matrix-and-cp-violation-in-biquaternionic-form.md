@@ -255,11 +255,13 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 4. **The strong CP problem.** The CKM phase is not the only CP-odd parameter; the $\theta$ parameter is another, and its smallness is the strong CP problem. The $\theta$ parameter belongs to the corpus's general gauge apparatus; the fermion-sector statement is that the two phases are independent inputs in the framework.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The body of the article is written in the cells $L_aR_b$ of the Dirac module, $L_a\psi=a\psi$, $R_b\psi=\psi b$, so $L_aR_b\psi=a\psi b$. The gamma matrices are the same operators under their Clifford names. They are collected here so that a reader who comes from the matrix literature can translate, and they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
-**The frame and the metric.** The names below are the $\mathbb{M}_-$ frame, $g=\mathrm{diag}(-1,+1,+1,+1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
+**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
@@ -315,19 +317,19 @@ so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamm
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0 .
-$$
+\{\gamma_\mu,\gamma_5\}=0 ,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d] .
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -373,7 +375,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
 | $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}})=\tfrac12(I_4-\chi)$ | Chirality cell; left projector, rank two |
-| $\gamma_\mu$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Legacy Gamma Formulation) |
+| $\gamma_\mu$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Legacy Pauli Gamma Formulation) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in \mathrm{U}(N_g)$ | The CKM matrix as a flavour-factor operator |
@@ -396,6 +398,7 @@ The framework's definite structural contribution is the location of the phase. T
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - N. Cabibbo, "Unitary symmetry and leptonic decays," *Physical Review Letters* **10** (1963) 531–533, for the original mixing angle.
 - M. Kobayashi and T. Maskawa, "CP violation in the renormalizable theory of weak interaction," *Progress of Theoretical Physics* **49** (1973) 652–657, for the three-generation mixing matrix and its CP-violating phase.
 - S. L. Glashow, J. Iliopoulos, and L. Maiani, "Weak interactions with lepton–hadron symmetry," *Physical Review D* **2** (1970) 1285–1292, for flavour universality and the GIM mechanism.

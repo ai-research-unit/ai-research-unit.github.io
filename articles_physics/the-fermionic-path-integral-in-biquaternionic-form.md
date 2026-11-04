@@ -80,7 +80,7 @@ $$
 \mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}.
 $$
 
-The operator is the same dynamics, written once; the five frame cells are named in §*The Legacy Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=R_{\vec e_x}^{\mathrm{axf}}E-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
+The operator is the same dynamics, written once; the five frame cells are named in §*The Legacy Pauli Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=-g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=R_{\vec e_x}^{\mathrm{axf}}E-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
 ### Properties of the Action
 
@@ -316,7 +316,9 @@ The phase of the determinant is where the fermionic integral's analytic content 
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the imaginary-time direction and the Euclidean formulation.
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the antiperiodic boundary condition and the Matsubara structure that the fermionic measure carries.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are written with the left and right multiplications of the module, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on it:
 
@@ -330,7 +332,7 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-They obey the Clifford relations of the frame — $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
+They obey the Clifford relations of the frame — $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
 
 The pair operator of the body is the same cell operator, written in gammas:
 
@@ -380,7 +382,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=iR_{\vec e_x}^{\mathrm{axf}}E-i\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ |
+| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=-g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=iR_{\vec e_x}^{\mathrm{axf}}E-i\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ |
 | $\mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Pair operator in cells; the explicit $i$ and the $i$ of the cell multiply to $-1$ |
 | $S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\slashed p+m)$ multiply to $-1$ |
 | $\det(\mathbb{D}-m)=[\det(\Box-m^2)]^2$ | Determinant; the module's two complex dimensions give the square of the scalar determinant |
@@ -392,6 +394,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - F. A. Berezin, *The Method of Second Quantization* (Academic Press, 1966), for Berezin integration, the Gaussian determinant, and the fermionic path integral.
 - L. D. Faddeev and A. A. Slavnov, *Gauge Fields: Introduction to Quantum Theory* (Benjamin/Cummings, 1980), for the fermionic functional integral, the determinant, and its relation to the effective action.
 - J. W. Negele and H. Orland, *Quantum Many-Particle Systems* (Addison-Wesley, 1988), for the Grassmann path integral, the generating functional, and the Matsubara boundary conditions.

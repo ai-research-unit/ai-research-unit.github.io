@@ -12,7 +12,7 @@ The plan is the basis, then the operations on it, then the representation, then 
 
 ## The Chiral Algebra
 
-**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\xi_1,\eta_1$ and $\alpha_2,\beta_2,\xi_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Legacy Gamma Formulation*; the body works in the algebra and in the cells $L_aR_b$, with $L_aR_b\,\psi=a\psi b$.
+**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\xi_1,\eta_1$ and $\alpha_2,\beta_2,\xi_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Legacy Pauli Gamma Formulation*; the body works in the algebra and in the cells $L_aR_b$, with $L_aR_b\,\psi=a\psi b$.
 
 ### The Scalar-Vector Biquaternion and the Corpus Dictionary
 
@@ -591,7 +591,9 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 **The two versions.** The corpus holds v2 (March 2025, *Cyclic representation of the Dirac equation*) and v3 (February 2026, *Chiral algebra of Dirac equation*), and they were compared word by word. The differences are seven and all small: the title; one clause of the abstract; the replacement of the Russian cross-reference placeholders ("source not found") by references to Appendix 1 and 2; the display of the Hadamard matrix, written for the Cartesian point coordinates in v2 and for the wave-function components in v3 (the same $H_4$ in both); the deletion of a stray clause; a change of e-mail address; and the map of the Appendix's second isomorphism, changed from $\left(\begin{smallmatrix}\xi & \alpha\\ -\beta & -\eta\end{smallmatrix}\right)$ to $\left(\begin{smallmatrix}\alpha & -\eta\\ \xi & -\beta\end{smallmatrix}\right)$. The last of these is the only mathematical change, and since both forms fail the same test it is a correction that did not repair the claim.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body is written in the cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the frame names are attached to the cells here and nowhere else:
 
@@ -615,11 +617,11 @@ $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The four frame cells satisfy the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$, and their squares are $\pm I_4$:
+The four frame cells satisfy the cell relation of $\varepsilon=(1,-1,-1,-1)$, and their squares are $\pm I_4$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\quad(k=1,2,3).
-$$
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\quad(k=1,2,3),
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 The squares spend the central unit once, $i^2=-1$: the plain cells $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ square to $I_4$, and the factor $i$ turns the second family into $-I_4$. The chirality is the cell $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, with $\chi^2=I_4$ and $\{\gamma_\mu,\chi\}=0$; $L_{e_t}^{\mathrm{pau}}$ is the identity, so the cell is a pure right multiplication, written in full to keep the frame uniform. It is the cell that the two-sided equation of *The Two Dirac Equations, and Where the Cyclic Form Sits* multiplies on the right. The body's longitudinal boost operator $L=N\exp(\theta)+\bar N\exp(-\theta)$ is a different symbol from the left cell $L_a$; the subscript distinguishes them, and no formula in the body mixes the two.
 
@@ -680,6 +682,7 @@ Two corrections of computation run through the article. The first is the factor 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Sergey Y. Kotkovskiy, *Chiral algebra of Dirac equation*, version v3 (February 2026); earlier version *Cyclic representation of the Dirac equation*, v2 (March 2025). The source of this article: the isotropic basis, the four multiplication types, the exchange and cyclic conjugations, the cyclic representation, the Hadamard expression, the matrix isomorphisms, the Lorentz boost, the plane waves, the spin operators and the rotation transformation. The paper prints the identifier `2502.0126`, which is malformed and belongs on arXiv to an unrelated statistics paper; no record of this work was found under that number, its title, or its author's name, so the two versions held in the corpus are the source of record.
 - S. Ya. Kotkovsky, "Nullvector algebra", *Hypercomplex Numbers in Geometry and Physics* **2**(23) (2014), for the author's earlier nullvector algebra, the origin of the isotropic basis and the terminology of nullquaternions used throughout.
 - V. V. Kravchenko, *Applied Quaternionic Analysis* (Heldermann, 2003), and the corpus's [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and [The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral](the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html), for the standard biquaternionic Dirac machinery against which the paper's purpose-made algebra should be read.

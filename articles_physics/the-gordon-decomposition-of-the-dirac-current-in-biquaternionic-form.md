@@ -14,7 +14,7 @@ The article is organised as follows. The next section fixes the conventions: the
 
 ### The Algebra and the Cells
 
-The conventions are those of the companion articles: the algebra and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions* and *Matrix Representations Conventions*, and the two-sided operator $L_{a}R_{b}$, its two free slots and its identity $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ are those of *Operator Family Conventions*. None is restated here. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Legacy Gamma Formulation* and used nowhere else.
+The conventions are those of the companion articles: the algebra and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions* and *Matrix Representations Conventions*, and the two-sided operator $L_{a}R_{b}$, its two free slots and its identity $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ are those of *Operator Family Conventions*. None is restated here. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Legacy Pauli Gamma Formulation* and used nowhere else.
 
 ### The Generators
 
@@ -33,16 +33,16 @@ and they split into two families:
 | temporal | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = iR_{\vec e_x}^{\mathrm{axf}}$ | $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | spatial | $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 
-The two families anticommute, so that the four cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
+The two families anticommute, so that the four cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},\,iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
+\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},\,iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
 $$
 
 The product of two real cells splits into the metric direction and the bivector direction, and the split is stated once here because the proof below uses it twice:
 
 $$
-L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}\,L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}=-g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+i\sigma_{\mu\nu},
+L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}\,L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}=-\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+i\sigma_{\mu\nu},
 \qquad
 \left(iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}\right)\left(iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right)=g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-i\sigma_{\mu\nu}.
 $$
@@ -449,7 +449,9 @@ What the algebra does supply is the location of the two terms: the convection te
 
 6. **Berry's spin for light.** The electromagnetic analogue identifies the intrinsic spin density with a curl of an $E$–$B$ cross product. The framework's field-strength biquaternion and its Riemann–Silberstein partner are the natural place to test whether this spin is the same object as the photon's helicity in the framework.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 This section, and only this section, names the generator cells and the chirality cell by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the cell spelling.
 
@@ -473,7 +475,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\psi=m\psi$, and the current $\bar\psi\gamma_\mu\psi$ with $\bar\psi=\psi^\dagger\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}R_{\vec e_z}^{\mathrm{pau}}$.
+These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\psi=m\psi$, and the current $\bar\psi\gamma_\mu\psi$ with $\bar\psi=\psi^\dagger\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}R_{\vec e_z}^{\mathrm{pau}}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -514,7 +516,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\psi$, $\bar\psi = \psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac spinor (spinor-module representative) and its adjoint |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Cell; $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}$ | The four generator cells, with $\delta_t = \vec e_x$ and $\delta_k = \vec e_y$; the temporal one is $iR_{\vec e_x}^{\mathrm{axf}}$ |
-| $\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Clifford relations; metric $g = \mathrm{diag}(-1,+1,+1,+1)$ |
+| $\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\} = 2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Clifford relations; metric $\varepsilon=(1,-1,-1,-1)$ |
 | $L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu} = -g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} + i\sigma_{\mu\nu}$ | Split of a product of two real cells; the $i$ multiplies out of the generator product |
 | $i\sigma_{\mu\nu} = \tfrac12\left[L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right]$ | The bivector without its imaginary unit, as a commutator of real cells |
 | $-iR_{\vec e_z}^{\mathrm{axf}} = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\left(iR_{\vec e_z}^{\mathrm{axf}}\right)^2 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Chirality cell, anticommuting with every generator |
@@ -534,6 +536,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the origin of the current decomposition.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the Gordon decomposition, the bilinears and the $1/2m$ coefficient of the spin current.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the vertex decomposition into $F_1$ and $F_2$, the Gordon identity and the Ward identity.

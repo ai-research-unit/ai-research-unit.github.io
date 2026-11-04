@@ -16,7 +16,7 @@ The framework's contribution is structural, and is stated at the outset.
 
 **The order of the article.** A section states the anomaly as a quantum failure of a classical symmetry and exhibits the Clifford trace behind it. A section gives the axial anomaly, its current, its density, and the identification of the density with $I_2$. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A section treats the anomaly as a topological density, a section the non-abelian consistency conditions, and a section the 't Hooft vertex. A section separates the two traces the article uses from the one it does not. A table collects what the framework supplies, transcribes, and does not supply; the closing sections are the Gamma Formulation, the Summary, the Summary of Notation, and Further Reading.
 
-**Notation, once.** The imaginary unit has $i^2=-1$. It is the only imaginary unit in the article, and where two of them meet in a product they are reduced before the formula is read: the four generator cells of a four-fold product contribute $i^4=+1$, so such a product is a product of four plain cells and carries no residual $i$. The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$; the generator cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$; the module spinor is $\psi=\psi_L+\psi_R$, with $\psi_L$ and $\psi_R$ its two chiral components; and the Dirac bar is $\bar{\psi}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The four generator cells carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$. The same objects, under their Clifford frame names, are collected in the closing section *The Legacy Gamma Formulation*, and none of those names is used before it.
+**Notation, once.** The imaginary unit has $i^2=-1$. It is the only imaginary unit in the article, and where two of them meet in a product they are reduced before the formula is read: the four generator cells of a four-fold product contribute $i^4=+1$, so such a product is a product of four plain cells and carries no residual $i$. The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$; the generator cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$; the module spinor is $\psi=\psi_L+\psi_R$, with $\psi_L$ and $\psi_R$ its two chiral components; and the Dirac bar is $\bar{\psi}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The four generator cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$. The same objects, under their Clifford frame names, are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 
 The volume cell is the product of the four generator cells, taken in the order $t,x,y,z$, and the four factors of $i$ multiply to $i^4=+1$:
 $$
@@ -351,7 +351,9 @@ so the chirality-weighted trace is the **difference** of the two Weyl traces. Fo
 | The $\theta$ parameter, the $\mathrm{U}(1)_A$ problem, and the axion | **Outside**; the $\theta$ parameter belongs to the general gauge apparatus, the axion to the spin-$0$ subcategory |
 | The number of generations | **Not constrained** by cancellation; treated separately |
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four generator cells and the chirality cell of the body become
 
@@ -385,18 +387,18 @@ so multiplying a generator cell by $i$ trades it for a plain one; four such cell
 
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -430,7 +432,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the vector-like abelian factor |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian, series convention |
 | $L_{a}R_{b}\psi=a\psi b$ | The two-sided cells |
-| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$, $\tau(t)=x$, $\tau(k)=y$ | Generator cell of the coordinate $x_\mu$; the four carry the Clifford relations of $g$ |
+| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$, $\tau(t)=x$, $\tau(k)=y$ | Generator cell of the coordinate $x_\mu$; the four carry the cell relation of $g$ |
 | $\psi=\psi_L+\psi_R$ | Module spinor; $\psi_L$ and $\psi_R$ are its two chiral components |
 | $-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; equals $i\omega$ |
 | $\bar{\psi}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac bar on the module |
@@ -458,6 +460,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. L. Adler, "Axial-vector vertex in spinor electrodynamics," *Physical Review* **177** (1969) 2426–2438, for the axial anomaly and the triangle diagram.
 - J. S. Bell and R. Jackiw, "A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the $\sigma$-model," *Nuovo Cimento A* **60** (1969) 47–61, for the anomaly and its physical consequence.
 - S. L. Adler and W. A. Bardeen, "Absence of higher-order corrections in the anomalous axial-vector divergence equation," *Physical Review* **182** (1969) 1517–1536, for the exactness of the one-loop anomaly.

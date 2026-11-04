@@ -122,7 +122,9 @@ The biquaternion algebra is the even part of a Clifford algebra of Lorentzian si
 
 Four limits must be stated. First, the type table of this article is the **commuting** normalisation, $Jc(v)=c(v)J$; the anticommuting normalisation of the physics corpus is the other one, and the two differ in the classes $d\equiv2,3,6,7$ and agree in $d\equiv0,1,4,5$. Statements about the real spinors of $(1,3)$ belong to the second normalisation and are cited, not re-derived. Second, the classification of the real forms and the sign table are taken from the general theory and the eightfold table (*Bott Periodicity and the Classification*); the article verifies the matrix models of the three three-dimensional forms, not the classification itself. Third, the absence of a reality structure is a statement about the module of the algebra and not about the existence of a real structure on the ambient module, which is a question for the physics corpus; the ambient module of the previous section is the passage from the one to the other. Fourth, $\kappa$ is an automorphism of the matrix model and is not one of the four conjugations of $\mathbb{B}$; the conjugate module $\bar S$ is **inequivalent** to $S$ as a complex module — that inequivalence is precisely the complex type — and the two are isomorphic only as real representations, with coordinate conjugation as antilinear intertwiner. The general source states exactly this inequivalence, in its dimension-three section, and the article agrees with it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are the generators $\gamma_k=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
 
@@ -159,6 +161,7 @@ The complex spinor module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ of the biqu
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Category of Modules](the-category-of-modules.html) and [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the module $S$, its matrix action and the Clifford realization; the volume element and the complex commutant are treated in this article.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their order properties, and [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html) for their fixed spaces.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the four matrix images and the dressed coefficient conjugation.

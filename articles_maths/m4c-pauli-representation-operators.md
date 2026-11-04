@@ -701,7 +701,9 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - The Segre length in physics: the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.
 
@@ -771,11 +773,11 @@ This is the matrix of an inner automorphism, and it carries frames to frames. It
 
 **Theorem (the Clifford relations).** For the normal form of §*The Normal Form and the Pair $(\beta,\delta)$*,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
 (\gamma_5)^2=\mathrm I_4,\qquad
 \gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
 $$
-with $g=\operatorname{diag}(-1,+1,+1,+1)$, and
+with $\varepsilon=(1,-1,-1,-1)$, and
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
 $$
@@ -886,6 +888,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the frame, the left and right matrices and the six subspaces.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the compression of the two one-sided actions.
 - [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.

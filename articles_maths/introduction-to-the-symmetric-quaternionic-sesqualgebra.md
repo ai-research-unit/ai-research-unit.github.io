@@ -152,8 +152,8 @@ In the coefficient basis the Gram matrix of the form is $E=\mathrm{diag}(1,-1,-1
 
 *Proof.* The scalar part of the value is the first term of the scalar–vector form, and the Gram matrix is computed from $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$.
 
-**Theorem (the invariance fails).** The form is not invariant under the block: there are biquaternions with
-$$
+**Theorem (the invariance fails).** The form is not invariant under the block: there are biquaternions with,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 \langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}\neq\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
 $$
 Explicitly,

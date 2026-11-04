@@ -129,7 +129,7 @@ The frame label is written in brackets, as it is on the generators, so no spacet
 
 ## The Rules
 
-Seven rules follow.
+Eight rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
 2. **One product, one frame.** A product is read in one frame: the generators carry that frame in brackets, $\gamma_\mu[\mathbb{B}]$ or $\gamma_\mu[\mathbb{M}_-]$, and one generator of each frame is never written in the same product.
@@ -138,6 +138,7 @@ Seven rules follow.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The coefficients of both frame metrics are real.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{M}_-$ and is not carried to $\mathbb{M}_+$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates or $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ on the generators, and the article gives it. A display is read only in the frame that produced it.
+8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$ and the metric is $(1,1,1,1)$. In the $\mathbb{M}_-$ frame the interval is $x_0^2-\vec x^2$ and the metric is $(-1,1,1,1)$: one sign for the one $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. A two-index display of the interval carries the minus of that frame, $-x_0^2+x_1^2+x_2^2+x_3^2=\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]x_\mu x_\nu$, and the cells of the frame square to the opposite array, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$. The letter $\eta$ is never the metric.
 
 **The plain weight is not a frame metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 

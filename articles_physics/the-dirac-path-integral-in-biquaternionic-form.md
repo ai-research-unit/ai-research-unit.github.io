@@ -38,10 +38,10 @@ $$
 G_5 = -iR_{\vec e_z}^{\mathrm{axf}} = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}:\psi\mapsto -ie_t\psi\vec e_z .
 $$
 
-The frame is a choice: the right factor $\vec e_y$ is common to the three spatial cells, the left factor is the direction of the coordinate, and the time cell has $\vec e_x$ on its right. The four cells carry the Clifford relations of the level-3 (Clifford) metric,
+The frame is a choice: the right factor $\vec e_y$ is common to the three spatial cells, the left factor is the direction of the coordinate, and the time cell has $\vec e_x$ on its right. The four cells carry the cell relation of the frame of the cells,
 
 $$
-\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4, \qquad g = \mathrm{diag}(-1,+1,+1,+1),
+\{G_\mu,G_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4, \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 which is the sense in which the component form is the standard Dirac equation. The propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde R = ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-$.
@@ -194,13 +194,13 @@ $$
 \{\psi_\mu,\psi_\nu\} = \frac{1}{2}g_{\mu\nu}[\mathbb{M}_-]\,I_4 ,
 $$
 
-in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The metric here is $\eta$ and not $g$, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}^{\mathrm{axf}}$ and $C_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
+in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The plain cells carry the opposite sign to the gammas, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}^{\mathrm{axf}}$ and $C_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=-2\varepsilon_\mu\delta_{\mu\nu}I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
 
 $$
-\{G_\mu,G_\nu\} = i^2\{C_\mu,C_\nu\} = -2g_{\mu\nu}[\mathbb{M}_-]I_4 = 2g_{\mu\nu}I_4 .
+\{G_\mu,G_\nu\} = i^2\{C_\mu,C_\nu\} = i^2\bigl(-2\varepsilon_\mu\delta_{\mu\nu}I_4\bigr) = 2\varepsilon_\mu\delta_{\mu\nu}I_4 .
 $$
 
-The central $i$ is thus exactly the change of metric that separates the worldline algebra from the Dirac operator, and the odd variable is that cell up to it and up to the normalisation of the kinetic term,
+The central $i$ is thus exactly the change of sign that separates the worldline algebra from the Dirac operator, and the odd variable is that cell up to it and up to the normalisation of the kinetic term,
 
 $$
 \psi_\mu = \tfrac12 iG_\mu = -\tfrac12 C_\mu ,
@@ -386,7 +386,9 @@ The Feynman propagator, the proper-time representation, the worldline supersymme
 
 The worldline and the checkerboard are complementary descriptions of the same object, and the algebra shows why both work: a first-order operator can be realised as a sum over directed paths, the checkerboard, which builds in the chirality, or as a second-order path integral dressed by the Clifford-valued spin factor, the worldline, which builds in the square. The two agree because the odd variable and the mass term are the two faces of the same off-diagonal structure.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\psi\mapsto a\psi b$. The five are the generator cells under the gammas' own letters, $\gamma_\mu = G_\mu$ and $\gamma_5 = G_5$, so that the dictionary between the two writings is the identity on the operators:
 
@@ -417,7 +419,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123} = +1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2 = -I_4,\qquad
 \gamma_5^2 = I_4,\qquad
 \{\gamma_\mu,\gamma_5\} = 0,
@@ -425,13 +427,13 @@ $$
 
 $$
 [\gamma_\mu,\gamma_\nu] = 2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}] = g_{ac}\gamma_d - g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd} = \tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3 = -i\,\gamma_5 = -R_{\vec e_z}^{\mathrm{pau}},\qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -439,7 +441,7 @@ In the axis-free display:
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3 = -i\,\gamma_5 = -R_{\vec e_z}^{\mathrm{axf}},\qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -463,7 +465,7 @@ $$
 \sum_\mu\gamma^\mu\gamma_{\alpha_1}\cdots\gamma_{\alpha_n}\gamma_\mu = (-1)^n(4-2n)\,\gamma_{\alpha_1}\cdots\gamma_{\alpha_n},
 $$
 
-so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $+2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. In the Euclidean frame, where every cell squares to $+I_4$ and no index is raised, the four are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$: the two-gamma entry counts the degenerate string $\gamma_\alpha\gamma_\alpha=+I_4$, which is a square rather than a bivector, and so is $4I_4$ on the diagonal and $0$ off it, while the last is the rule with the three indices reversed. In the $\mathbb{M}_-$ frame the rule changes when the contracted index is lowered, because then the square of a generator carries the metric: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+g_{\alpha\alpha})\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum, unlike the two-gamma sum, is therefore not a statement about four dimensions alone but about the signature as well.
+so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. In the Euclidean frame, where every cell squares to $+I_4$ and no index is raised, the four are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$: the two-gamma entry counts the degenerate string $\gamma_\alpha\gamma_\alpha=+I_4$, which is a square rather than a bivector, and so is $4I_4$ on the diagonal and $0$ off it, while the last is the rule with the three indices reversed. In the $\mathbb{M}_-$ frame the rule changes when the contracted index is lowered, because then the square of a generator carries the metric: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1-g_{\alpha\alpha})\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum, unlike the two-gamma sum, is therefore not a statement about four dimensions alone but about the signature as well.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -489,9 +491,9 @@ the identity of the notation table below; the scalar path integral of the compan
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $G_0 = iR_{\vec e_x}^{\mathrm{axf}}$, $G_k = iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells of the canonical frame, $G_\mu=iC_\mu$ |
-| $C_0 = R_{\vec e_x}^{\mathrm{axf}}$, $C_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Bare cells, $\{C_\mu,C_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]I_4$ |
+| $C_0 = R_{\vec e_x}^{\mathrm{axf}}$, $C_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Bare cells, $\{C_\mu,C_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $G_5 = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Pseudoscalar (chirality) cell |
-| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells, $\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4$ |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the cells, $\{G_\mu,G_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$-coordinate metric |
 | $\slashed p = iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ | Momentum cell, $(\slashed p)^2 = p^2I_4$ |
 | $i\slashed\partial$ | First-order operator, $(i\slashed\partial)^2 = \Box$; symbol $\slashed p$ |
@@ -516,6 +518,7 @@ the identity of the notation table below; the scalar path integral of the compan
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - R. P. Feynman, "Space-time approach to non-relativistic quantum mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the path integral.
 - R. P. Feynman, "The theory of positrons," *Physical Review* **76** (1949) 749–759, and "Mathematical formulation of the quantum theory of electromagnetic interaction," *Physical Review* **80** (1950) 440–457, for the first-order propagator and its proper-time structure.
 - H. A. Gersch, "Feynman's relativistic chessboard as an Ising model," *International Journal of Theoretical Physics* **20** (1981) 491–501, for the checkerboard model and its continuum limit.

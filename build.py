@@ -257,7 +257,7 @@ def copy_static(since=None):
             print(f"Copied {name}")
 
 
-def build_root_page(md_path, out_name, articles):
+def build_root_page(md_path, out_name, articles, is_menu=False):
     if md_path.exists():
         raw = md_path.read_text()
         meta, body_md = parse_frontmatter(raw)
@@ -266,6 +266,7 @@ def build_root_page(md_path, out_name, articles):
 
         html = (INDEX_TEMPLATE
             .replace("{nav}",         build_nav_index(articles))
+            .replace("{body_attr}",   ' class="menu"' if is_menu else "")
             .replace("{index_items}", body_html)
         )
         (DEPLOY / out_name).write_text(html)
@@ -303,13 +304,15 @@ def build_article(coll, f, articles):
 
 
 # Root pages first: the menus and the landing page are the site's entry points,
-# so they are written before the article corpus.
+# so they are written before the article corpus. The third field marks the two
+# menu pages, whose body carries the `menu` class the banded headings need;
+# `index.md` is a prose article, not a list of entries, and keeps article styling.
 ROOT_PAGES = [
-    ("index.md",      "index.html"),
-    ("maths.md",      "maths.html"),
-    ("physics.md",    "physics.html"),
-    ("disclaimer.md", "disclaimer.html"),
-    ("contact.md",    "contact.html"),
+    ("index.md",      "index.html",      False),
+    ("maths.md",      "maths.html",      True),
+    ("physics.md",    "physics.html",    True),
+    ("disclaimer.md", "disclaimer.html", False),
+    ("contact.md",    "contact.html",    False),
 ]
 
 
@@ -378,8 +381,8 @@ def main():
 
     articles = nav_pool()
 
-    for md_name, out_name in ROOT_PAGES:
-        build_root_page(SRC / md_name, out_name, articles)
+    for md_name, out_name, is_menu in ROOT_PAGES:
+        build_root_page(SRC / md_name, out_name, articles, is_menu)
 
     for coll in ordered_collections():
         if not coll["articles"]:

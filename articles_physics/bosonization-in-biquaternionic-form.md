@@ -29,7 +29,7 @@ $$
 \{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}\}=2g_{\mu\rho}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad \mu,\rho\in\{t,x\},
 $$
-and the four-cell product is in the section *The Legacy Gamma Formulation*.
+and the four-cell product is in the section *The Legacy Pauli Gamma Formulation*.
 
 The chirality cell is
 $$
@@ -47,7 +47,7 @@ P_R=\tfrac12\bigl(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\ma
 $$
 project onto the two components; on the two-dimensional module each has trace $1$, while on the four-dimensional carrier the same cells have trace $2$, the carrier carrying each half twice.
 
-**The square of the chirality.** Both chirality cells are involutions: the two-dimensional $L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and so does the four-dimensional $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ of the section *The Legacy Gamma Formulation*. The two dimensions differ in the bare product of the frame's generators, not in the square. In two dimensions the product of the two generators is the chirality cell itself, $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i^2R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ with $i^2=-1$; in four dimensions the product of the four is
+**The square of the chirality.** Both chirality cells are involutions: the two-dimensional $L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and so does the four-dimensional $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ of the section *The Legacy Pauli Gamma Formulation*. The two dimensions differ in the bare product of the frame's generators, not in the square. In two dimensions the product of the two generators is the chirality cell itself, $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i^2R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ with $i^2=-1$; in four dimensions the product of the four is
 $$
 iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
 = i^4\, R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
@@ -302,7 +302,9 @@ The non-abelian extension is stated and its status fixed.
 - The precise operator-algebraic isomorphism between the module's current algebra and the centre's exponentiated algebra is stated but not proved; the article gives the correspondence and the counting, and cites the standard construction for the identity itself.
 - Whether the coefficient conjugation $\mathcal C=\overline{\cdot}$ is forced by the reduction or is one of several equivalent real structures, and whether the framework's sector structure selects it, is not resolved here.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, not the four-dimensional $\gamma_5$.
 
@@ -343,18 +345,18 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The standard gamma identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -409,7 +411,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the boson field |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module; home of the Dirac field |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; extracts central scalars from bilinears |
-| $g=\mathrm{diag}(+1,-1)$ | Two-dimensional level-3 Clifford metric |
+| $\varepsilon=(1,-1)$ | Two-dimensional level-3 signs |
 | $L_{a}R_{b}\psi=a\psi b$ | Two-sided cell; the identity is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $I_4$ | Identity operator on the Dirac module, the cell $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ read as a matrix |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cells, $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
@@ -424,7 +426,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\alpha$ | Short-distance cutoff in the dictionary |
 | $\theta$ | Phase of the mass, $m=|m|e^{i\theta}$; also the $\theta$-vacuum angle |
 | $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
-| $\varepsilon_\mu=g_{\mu\mu}$ | Signature sign of the index $\mu$; with $g=\mathrm{diag}(+1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_1=-1$ |
+| $\varepsilon_\mu=-g_{\mu\mu}$ | Signature sign of the index $\mu$; with $g=\mathrm{diag}(+1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_1=-1$ |
 | $A_\mu=\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu V_\nu$ | Hodge dual of the current; $=-\tfrac{1}{\sqrt\pi}\partial \phi/\partial x_\mu$, so $\sum_\mu\varepsilon_\mu\partial A_\mu/\partial x_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2/\partial x_\mu^2\phi$ |
 | $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ | Series d'Alembertian |
 | $\sum_\mu\varepsilon_\mu\partial^2/\partial Q_\mu^2=\partial^2/\partial Q_t^2-\Delta_Q$ | Quaternionic norm of the gradient; the operator in the anomaly |
@@ -435,6 +437,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. Coleman, "Quantum sine-Gordon equation as the massive Thirring model," *Physical Review D* **11** (1975) 2088–2097, for the equivalence of the massive Thirring and sine-Gordon models.
 - S. Mandelstam, "Soliton operators for the quantized sine-Gordon equation," *Physical Review D* **11** (1975) 3026–3030, for the fermion operators in terms of the boson.
 - E. Witten, "Non-abelian bosonization in two dimensions," *Communications in Mathematical Physics* **92** (1984) 455–472, for non-abelian bosonization and the Wess–Zumino term.

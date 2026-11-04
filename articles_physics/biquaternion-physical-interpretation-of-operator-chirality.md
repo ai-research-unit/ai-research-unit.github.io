@@ -146,7 +146,7 @@ and reads $\chi$ on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operat
 $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
-whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Legacy Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
+whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Legacy Pauli Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
 
 **What it cost.** Three structures that the physics does not need: an adjoined root, a complexification of the real algebra, and a declaration of a module. Each of them is a choice, and each of them is invisible in the array, which is why the two readings were taken for one another for as long as they were.
 
@@ -177,7 +177,9 @@ so for that one root the Peirce projector and the chiral projector are the same 
 - **The frame is still a choice.** $\gamma_5$ is the volume cell of a declared frame; a different frame gives a different fifth cell and the same algebra.
 - **No claim that the Clifford reading is wrong.** It is a correct display of the same operators, and the article says where it stops being a foundation.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 **What the frame is.** The gammas are a frame of the algebra, five cells of the sixteen, and not a different algebra. In that frame the chirality operator, the side and the split read as follows.
 
@@ -220,6 +222,7 @@ The limit is stated once and it is not small: the two chiral halves of $\mathbb{
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the definition, the dimensions, the swap, the conjugation and the list of unrelated objects.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the one-sided and the two-sided equation, and the plane-wave solutions.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the three forms of the equation and the gauge covariance of the pair on the algebra.

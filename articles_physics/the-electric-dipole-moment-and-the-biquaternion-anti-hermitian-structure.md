@@ -30,7 +30,7 @@ $$
 \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$ and is fixed in §*The Legacy Gamma Formulation*.
+so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the cell relations of $\varepsilon=(1,-1,-1,-1)$ and is fixed in §*The Legacy Pauli Gamma Formulation*.
 
 **The structural statement.** The biquaternion framework places the EDM operator in a definite half of its algebra. The insertion $\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma_{ij}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other: the EDM insertion is $i$ times the dual of the tensor, and that $i$ is what carries the dual back into the anti-Hermitian class. The article establishes this and states what it does and does not buy.
 
@@ -40,11 +40,11 @@ so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame 
 
 The sections that follow fix the operator, its dimension, and the size of the effect; establish the Hermiticity of the insertions, the Hodge duality, and the dictionary that makes the placement exact; derive the nonrelativistic limit; tabulate the discrete symmetries of the insertions; give the form-factor decomposition and the two coefficients; treat the CP-odd phase; and collect the bounds and the scales they probe. A closing section separates what the framework supplies from what it transcribes and what it lacks, and a list of open questions follows it. The frame of Clifford generators is fixed in a single appendix, so that those generators appear in one place only.
 
-**The metric and the field strength.** The frame metric and the components are
+**The signs and the field strength.** The frame signs and the components are
 
 $$
-g=\mathrm{diag}(-1,+1,+1,+1),\qquad
-\varepsilon_\rho=g_{\rho\rho},\qquad
+\varepsilon=(1,-1,-1,-1),\qquad
+\varepsilon_\rho=-g_{\rho\rho},\qquad
 \epsilon_{0123}=+1,\qquad
 F_{0i}=E_i,\qquad
 F_{ij}=-\epsilon_{ijk}B_k ,
@@ -117,7 +117,7 @@ where $\varphi$ is the CP-odd phase. The estimate is the one that governs the re
 
 ## The Anti-Hermitian Structure of $\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})$
 
-**The Hermiticity of the insertions.** With the block representation and $g=\mathrm{diag}(-1,+1,+1,+1)$, the generators of the Lorentz algebra split into the boosts and the rotations,
+**The Hermiticity of the insertions.** With the block representation and $\varepsilon=(1,-1,-1,-1)$, the generators of the Lorentz algebra split into the boosts and the rotations,
 
 $$
 \sigma_{0k}\ \text{(anti-Hermitian)},\qquad
@@ -380,7 +380,9 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 4. **The duality at the level of the action.** The Hodge duality relates the EDM and magnetic insertions with a factor of $i$; whether the framework's action can be written so that the duality is manifest, pairing the two observables in a single Hermitian structure, is a question of the action's algebraic form.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -413,7 +415,7 @@ The dictionary is $\mathbb{R}$-linear, not $\mathbb{C}$-linear; over $\mathbb{R}
 **The identities.** With $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
@@ -421,12 +423,12 @@ $$
 
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -445,7 +447,7 @@ $$
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=-2\gamma_\rho\gamma_\beta\gamma_\alpha .
 $$
 
@@ -491,7 +493,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Frame cells; the last is the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$ |
 | $\sigma_{\mu\nu}=\tfrac{i}{2}[iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}]$ | Lorentz generators, the Dirac tensor; $\nu(t)=x$, $\nu(k)=y$ |
 | $\omega=-R_{\vec e_z}^{\mathrm{axf}}$, $\omega^2=-e_t$ | Volume element, the product of the four frame cells; $-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$ |
-| $\varepsilon_\rho=g_{\rho\rho}$ | Signature sign; with $g=\mathrm{diag}(-1,+1,+1,+1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
+| $\varepsilon_\rho=-g_{\rho\rho}$ | Signature sign; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $\sigma_{0k}$, $\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})$ | Anti-Hermitian, $\mathbb{M}_-$; the second is the EDM insertion |
 | $\sigma_{ij}$, $\sigma_{ij}(-iR_{\vec e_z}^{\mathrm{axf}})$ | Hermitian, $\mathbb{M}_+$; the magnetic insertion and $i$ times its dual |
 | $\star M:=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma M_{\rho\sigma}$ | Hodge dual, the summed pair raised; on the bivectors $\star\star=-1$ |
@@ -511,6 +513,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - L. I. Schiff, "Measurability of nuclear electric dipole moments," *Physical Review* **132** (1963) 2194–2200, for the atomic-physics theorem on the screening of nuclear EDMs.
 - W. Bernreuther and M. Suzuki, "The electric dipole moment of the electron," *Reviews of Modern Physics* **63** (1991) 313–340, for the electron EDM and its theory.
 - I. B. Khriplovich and S. K. Lamoreaux, *CP Violation Without Strangeness* (Springer, 1997), for electric dipole moments of particles, atoms, and molecules.

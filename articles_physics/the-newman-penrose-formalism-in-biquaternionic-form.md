@@ -42,7 +42,7 @@ l\cdot m = l\cdot\bar m = n\cdot m = n\cdot\bar m = 0,
 \tag{1}
 $$
 
-where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{M}_-$. This is the normalization appropriate to the signature $(3,1)$ with $g = \mathrm{diag}(-1,+1,+1,+1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
+where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{M}_-$. This is the normalization appropriate to the signature $(3,1)$ with $\varepsilon=(1,-1,-1,-1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
 
 Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is **not** an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{M}_-$.
 

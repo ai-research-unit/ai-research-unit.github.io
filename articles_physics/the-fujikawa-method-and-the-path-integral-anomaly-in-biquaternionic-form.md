@@ -29,9 +29,9 @@ $$
 $$
 with
 $$
-(\mathsf G_0)^2=I_4,\qquad (\mathsf G_k)^2=-I_4,\qquad \{\mathsf G_\mu,\mathsf G_\nu\}=2g_{\mu\nu}I_4,\qquad \chi^2=I_4,\qquad \{\chi,\mathsf G_\mu\}=0,
+(\mathsf G_0)^2=I_4,\qquad (\mathsf G_k)^2=-I_4,\qquad \{\mathsf G_\mu,\mathsf G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \varepsilon=(1,-1,-1,-1),\qquad \chi^2=I_4,\qquad \{\chi,\mathsf G_\mu\}=0,
 $$
-and the volume cell is $\omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi$, so $\chi=i\omega$. These are the cells of the $\mathbb{M}_-$ frame; the derivative in every display below is $\partial/\partial x_\mu$ with $x_0=ct'$ and $x_k=q_k$, and the metric is $g=\operatorname{diag}(-1,+1,+1,+1)$. The $\mathbb{B}$-frame cells are $\mathsf G_0$ and $i\mathsf G_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, with $Q_t=ict'$; every one of them squares to $+I_4$, and $i^2=-1$ is the whole difference between the two frames. A contraction is written in one frame only (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. Two traces appear below and are kept apart: $\mathrm{tr}$ is the four-dimensional spinor trace, taken inside the cell algebra, and $\operatorname{Tr}$ is the functional trace over modes, which is what a determinant produces. The corpus's trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ is the $2\times2$ reading of the algebra and is not used here. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
+and the volume cell is $\omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi$, so $\chi=i\omega$. These are the cells of the $\mathbb{M}_-$ frame; the derivative in every display below is $\partial/\partial x_\mu$ with $x_0=ct'$ and $x_k=q_k$, and the metric is $\varepsilon=(1,-1,-1,-1)$. The $\mathbb{B}$-frame cells are $\mathsf G_0$ and $i\mathsf G_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, with $Q_t=ict'$; every one of them squares to $+I_4$, and $i^2=-1$ is the whole difference between the two frames. A contraction is written in one frame only (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. Two traces appear below and are kept apart: $\mathrm{tr}$ is the four-dimensional spinor trace, taken inside the cell algebra, and $\operatorname{Tr}$ is the functional trace over modes, which is what a determinant produces. The corpus's trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ is the $2\times2$ reading of the algebra and is not used here. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
 The framework results used here are those of the companion articles:
 
@@ -301,7 +301,9 @@ so the axial charge transported in a background is twice the index. The index is
 
 4. **The $\theta$ dependence and the vacuum.** The anomaly makes the vacuum energy depend on a topological angle, and the resolution of the $\mathrm{U}(1)_A$ problem and the strong-CP problem involve that angle. Both belong to the general gauge apparatus and to the spin-$0$ subcategory; this article states the fermion-sector divergence and stops.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The body of this article is written in cells. This section is the only place where the $\gamma$ frame is used; the gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -325,18 +327,18 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -366,7 +368,7 @@ The biquaternion content is threefold: the chirality insertion is the volume cel
 | $\mathbb{M}_-,\mathbb{M}_+,\mathbb{C}_{\mathbb{B}}$ | Material sector, informational sector, centre |
 | $\Delta=S\oplus\bar{S}$ | Dirac module; $S=\mathbb{C}^2=(\tfrac12,0)$ |
 | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$ | Left, right and two-sided multiplication |
-| $\mathsf G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\mathsf G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{\mathsf G_\mu,\mathsf G_\nu\}=2g_{\mu\nu}$ |
+| $\mathsf G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\mathsf G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{\mathsf G_\mu,\mathsf G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$ | Chirality cell; $\operatorname{diag}(-I_2,I_2)$ in the chiral basis |
 | $\omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi$ | Volume cell |
 | $\sigma_{\mu\nu}=\tfrac12\mathsf G_\mu\mathsf G_\nu$ ($\mu\ne\nu$) | Bivector of two frame cells; $\sigma_{\mu\nu}F_{\mu\nu}$ is the full $\sum_{\mu\nu}$, twice the sum over $\mu<\nu$ |
@@ -387,6 +389,7 @@ The biquaternion content is threefold: the chirality insertion is the volume cel
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - K. Fujikawa, "Path-integral measure for gauge-invariant fermion theories," *Physical Review Letters* **42** (1979) 1195–1198, for the derivation of the anomaly from the measure.
 - K. Fujikawa, "Comment on chiral and gauge anomalies," *Physical Review D* **21** (1980) 2848–2852, and **22** (1980) 1499 (Erratum), for the non-abelian extension and the heat-kernel evaluation.
 - K. Fujikawa and H. Suzuki, *Path Integrals and Quantum Anomalies* (Oxford, 2004), for the systematic treatment of the measure, the Jacobian, and the index.

@@ -373,7 +373,9 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 - Companion article *The Electron in Biquaternionic Form*, for the one-particle sector interpretation of the spin bilinear.
 - *The Dirac Equation in Biquaternionic Form*, for the one-sided chiral pair and the two-sided dictionary that separates the two equations.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gamma symbols appear only in this section; everywhere else the same operators are written as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -436,20 +438,20 @@ The dictionary from the sixteen products to the gamma frame is complex-linear; o
 **The identities of the frame.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -458,18 +460,18 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 
-These identities raise and lower indices with $g$, and that matters here: $\gamma^0=\gamma_0$ but $\gamma^k=-\gamma_k$, because $g^{kk}=-1$. The four contraction sums carry the raised index on the summed gamma, and in the frame $g=(+1,-1,-1,-1)$ they are
+These identities raise and lower indices with $g$, and that matters here: $\gamma^0=-\gamma_0$ while $\gamma^k=+\gamma_k$, because $g^{00}=-1$ and $g^{kk}=+1$. The four contraction sums carry the raised index on the summed gamma, and in the frame $g=(-1,+1,+1,+1)$ they are
 
 $$
-\sum_\mu\gamma^\mu\gamma_\mu=4I_4,
+\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,
 \qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,
 $$
 
 $$
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4,
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
 \qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha.
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha.
 $$
 
 The raised index is not decoration. With the index down on the summed gamma, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ but $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=4\gamma_0$ for $\alpha=0$ and $0$ for spatial $\alpha$, because $\gamma_0^2=+I_4$ while $\gamma_k^2=-I_4$; the four sums above are the ones that are covariant.
@@ -535,6 +537,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the equation whose quantized field this article describes.
 - W. Pauli, "The connection between spin and statistics," *Physical Review* **58** (1940) 716–722, for the theorem that fixes the anticommutator for half-integer spin.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the canonical quantization of the Dirac field, the $c$-number anticommutator, and the conserved current.

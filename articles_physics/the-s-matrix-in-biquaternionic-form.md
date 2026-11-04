@@ -327,7 +327,9 @@ The interpretation is labeled and its boundary is stated. The S-matrix of this a
 
 7. **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is the unanswered question. Nothing in the S-matrix construction changes that.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
@@ -362,9 +364,9 @@ $$
 
 so
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu},
 \qquad
-g=\mathrm{diag}(-1,+1,+1,+1),
+\varepsilon=(1,-1,-1,-1),
 $$
 and
 $$
@@ -474,6 +476,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - John A. Wheeler, "On the Mathematical Description of Light Nuclei by the Method of Resonating Group Structure," *Physical Review* **52** (1937) 1107–1122, for the introduction of the scattering matrix.
 - Werner Heisenberg, "Die 'beobachtbaren Größen' in der Theorie der Elementarteilchen," *Zeitschrift für Physik* **120** (1943) 513–538, for the S-matrix program.
 - Freeman J. Dyson, "The S-Matrix in Quantum Electrodynamics," *Physical Review* **75** (1949) 1736–1755, for the time-ordered exponential and the equivalence of the interaction-picture and Heisenberg-picture formulations.

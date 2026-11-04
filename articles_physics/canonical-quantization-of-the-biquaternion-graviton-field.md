@@ -21,7 +21,7 @@ The article is organized as follows. The linearized field and its gauge symmetry
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field and the subsidiary condition that the graviton's covariant quantization parallels.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the bosonic statistics of integer-spin fields.
-- Companion article *The Dirac Equation in Biquaternionic Form*, for the Clifford metric $g$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
+- Companion article *The Dirac Equation in Biquaternionic Form*, for the frame metric $g_{\mu\nu}[\mathbb{M}_-]$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
 
 ## The Linearized Field and Its Gauge Symmetry
 

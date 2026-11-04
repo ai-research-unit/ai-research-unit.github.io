@@ -12,7 +12,7 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 - **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $k^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
 - **What the algebra does not supply.** It does not produce $\alpha$, and it does not by itself remove the divergence. The finiteness of the anomaly rests on the Ward identity, that is, on gauge invariance; the framework writes the vertex in its own tensor language and does not replace that argument.
 
-**The cells.** The computation is written in cells, and the gamma matrices appear in one place only, §*The Legacy Gamma Formulation*, as a matrix realisation of the cells and not as a second algebra. With $L_aR_b$ the two-sided multiplication, $L_aR_b\psi=a\psi b$, the four generator cells are the timelike $iR_{\vec e_x}^{\mathrm{axf}}$ and the three spacelike $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the identity cell is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$. Cells multiply by multiplying the left multipliers together and the right multipliers together, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right pair in reverse order.
+**The cells.** The computation is written in cells, and the gamma matrices appear in one place only, §*The Legacy Pauli Gamma Formulation*, as a matrix realisation of the cells and not as a second algebra. With $L_aR_b$ the two-sided multiplication, $L_aR_b\psi=a\psi b$, the four generator cells are the timelike $iR_{\vec e_x}^{\mathrm{axf}}$ and the three spacelike $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the identity cell is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$. Cells multiply by multiplying the left multipliers together and the right multipliers together, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right pair in reverse order.
 
 **The factor $i$ and the two signs.** Every generator cell carries one factor $i$, so a product of two of them carries two, and $i^2=-1$ is the whole origin of the Clifford signs. The squares are
 
@@ -36,10 +36,10 @@ $$
 iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},\qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-which is $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$. The four cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
+which is $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$. The four cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4 ,
+\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 ,
 $$
 
 so the four directions and the four cells carry one and the same metric. A paired Greek index is written low with the plain weight, $\varepsilon=(1,-1,-1,-1)$: $\sigma_{\mu\nu}k_\nu$ is the sum $\sum_\nu\varepsilon_\nu\,\sigma_{\mu\nu}k_\nu$, and no index is ever raised.
@@ -74,7 +74,7 @@ $$
 \qquad c_\mu=L_{a_\mu}R_{b_\mu},
 $$
 
-so that $\mathrm{tr}(c_\mu c_\nu)=4g_{\mu\nu}$ and a single frame cell is traceless, one of its two multipliers being a vector unit with vanishing scalar part. This is the reduction applied under every loop numerator. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
+so that $\mathrm{tr}(c_\mu c_\nu)=4\varepsilon_\mu\delta_{\mu\nu}$ and a single frame cell is traceless, one of its two multipliers being a vector unit with vanishing scalar part. This is the reduction applied under every loop numerator. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
 
 ## The Vertex Function and the Form Factors
 
@@ -223,7 +223,7 @@ $$
 
 Reading the factors: $i^3=-i$, the left multipliers give $L_{\vec e_x}^{\mathrm{axf}}L_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_z}^{\mathrm{axf}}$, and the right ones give $R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{-\vec e_t}=-R_{e_t}^{\mathrm{axf}}$, so the two minus signs cancel and one factor $i$ survives. The same matrix is the left multiplication by the biquaternion of the spin generator, $iL_{\vec e_z}^{\mathrm{axf}}=L_{i\vec e_z}^{\mathrm{axf}}$, twice $\tilde S_3/\hbar$ of the companion *Angular Momentum and Spin in Biquaternionic Form*; the bivector acts on the module as the doubled spin generator itself. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
 
-**The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on the four contraction identities of §*The Legacy Gamma Formulation*, re-evaluated in the cell basis with residual $0$. With $c_\mu$ the frame cell of the direction $\mu$ and the plain weight $\varepsilon$ in the sum, they are
+**The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on the four contraction identities of §*The Legacy Pauli Gamma Formulation*, re-evaluated in the cell basis with residual $0$. With $c_\mu$ the frame cell of the direction $\mu$ and the plain weight $\varepsilon$ in the sum, they are
 
 $$
 \sum_\mu\varepsilon_\mu\,c_\mu c_\mu=4I_4 ,
@@ -232,7 +232,7 @@ $$
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,c_\mu c_\alpha c_\beta c_\mu=4g_{\alpha\beta}I_4 ,
+\sum_\mu\varepsilon_\mu\,c_\mu c_\alpha c_\beta c_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4 ,
 \qquad
 \sum_\mu\varepsilon_\mu\,c_\mu c_\alpha c_\beta c_\rho c_\mu=-2\,c_\rho c_\beta c_\alpha .
 $$
@@ -319,7 +319,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 - *The Gordon split as the symmetric/antisymmetric split of a generator product*, done in the algebra's own basis.
 - *The dictionary verification* of the six bivectors against the six algebra directions.
 
-**It fixes the conventions.** The Clifford metric, the sign of $\sigma_{\mu\nu}$, the dictionary and the propagator's $i\epsilon$ are fixed by the companion articles, and the standard loop integral is transcribed into them without translation error.
+**It fixes the conventions.** The signs of the frame, the sign of $\sigma_{\mu\nu}$, the dictionary and the propagator's $i\epsilon$ are fixed by the companion articles, and the standard loop integral is transcribed into them without translation error.
 
 **It does not supply the numbers.** The value of $\alpha$, the coefficient $A_2$, and the finiteness of the anomaly are not consequences of the algebra. The finiteness is the Ward identity's; the coefficients are the theory's; $\alpha$ is empirical. The position is exactly the one the propagator companion records for the $i\epsilon$ and the mass article records for the masses: the algebra names the axis, and physics fixes its magnitude and orientation.
 
@@ -336,11 +336,11 @@ All numerics are machine-precision matrix arithmetic in plain Python, in the fou
 
 | Claim | Value / result |
 |---|---|
-| Anticommutator, metric | $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(-1,+1,+1,+1)$: residual $0$ |
+| Anticommutator, metric | $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$: residual $0$ |
 | Squares | $(iR_{\vec e_x}^{\mathrm{axf}})^2=I_4$, $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-I_4$: residual $0$ |
 | Mixed product | $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=g_{0k}I_4-i\sigma_{0k}$: residual $0$ |
 | Traces | $\mathrm{tr}L_aR_b=4\mathrm{Sc}(a)\mathrm{Sc}(b)$; $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$: residual $0$ |
-| Trace factorization | $\mathrm{tr}(c_{\mu_1}\cdots c_{\mu_n})=4\mathrm{Sc}(a_{\mu_1}\cdots a_{\mu_n})\mathrm{Sc}(b_{\mu_n}\cdots b_{\mu_1})$ at every word length from one to four; hence $\mathrm{tr}(c_\mu c_\nu)=4g_{\mu\nu}$ and $\mathrm{tr}c_\mu=0$: residual $0$ |
+| Trace factorization | $\mathrm{tr}(c_{\mu_1}\cdots c_{\mu_n})=4\mathrm{Sc}(a_{\mu_1}\cdots a_{\mu_n})\mathrm{Sc}(b_{\mu_n}\cdots b_{\mu_1})$ at every word length from one to four; hence $\mathrm{tr}(c_\mu c_\nu)=4\varepsilon_\mu\delta_{\mu\nu}$ and $\mathrm{tr}c_\mu=0$: residual $0$ |
 | Cell dimensions | the sixteen products and the sixteen cells each span a real space of dimension $16$ |
 | Contractions | the four $\varepsilon$-weighted sums of the reduction passage above: residual $0$ |
 | Dictionary | $\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $i\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; $\vec e_x\vec e_y$ and $\vec e_z$ have the same image: residual $0$ |
@@ -366,7 +366,9 @@ The on-shell spinors were built as $w=(iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL
 - Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the field operators whose electromagnetic three-point function is the vertex.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -433,14 +435,14 @@ $$
 **The identities the body cites.** In the $\gamma$ realisation, with $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -457,7 +459,7 @@ $$
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=-2\gamma_\rho\gamma_\beta\gamma_\alpha .
 $$
 
@@ -494,7 +496,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | Cell: left multiplier $a$, right multiplier $b$ |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\nu(t)=x$, $\nu(k)=y$ | The frame cell of the direction $\mu$; $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ |
-| $(iR_{\vec e_x}^{\mathrm{axf}})^2=I_4$, $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-I_4$ | The two signs of the Clifford metric, from $i^2=-1$ |
+| $(iR_{\vec e_x}^{\mathrm{axf}})^2=I_4$, $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-I_4$ | The two signs of the frame, from $i^2=-1$ |
 | $c_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | The frame cell of the direction $\mu$, abbreviated $c_\mu$ |
 | $\mathrm{tr}(L_{a}R_{b})=4\mathrm{Sc}(a)\mathrm{Sc}(b)$ | $4\times4$ cell trace, factorized into the two multipliers |
 | $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $2\times2$ trace, the realisation of the plain form |
@@ -504,10 +506,10 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | $i^2=-1$ from the two factors, one more minus from $\vec e_y\vec e_x=-\vec e_z$, so the cell is positive |
 | $\bar w_2 iR_{\vec e_x}^{\mathrm{axf}}w=\bar w_2[(p+p_2)_0+i\sum_\nu\varepsilon_\nu\sigma_{0\nu}k_\nu]w/2m$ | Gordon decomposition, timelike branch |
 | $k=p_2-p$ | Momentum transfer |
-| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric, the level-3 metric of the Dirac module |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the Dirac module |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | The two sectors, and the split $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule |
-| Four contraction identities of §*The Legacy Gamma Formulation* | Contraction identities (residual $0$) |
+| Four contraction identities of §*The Legacy Pauli Gamma Formulation* | Contraction identities (residual $0$) |
 | $\sigma_{12}=L_{i\vec e_z}^{\mathrm{axf}}=\Sigma^3$ | Magnetic bivector is the spin matrix, $\mathrm{diag}(\sigma^3,\sigma^3)$ in the Peirce display |
 | $\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $i\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Dictionary (verified) |
 | $\sigma_{12}\mapsto i\vec e_z\in\mathbb{M}_+$, $\sigma_{01}\mapsto-\vec e_x\in\mathbb{M}_-$ | Sectors of the magnetic and electric structures, and so on cyclically |
@@ -518,6 +520,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - J. Schwinger, "On quantum-electrodynamics and the magnetic moment of the electron," *Physical Review* **73** (1948) 416–417, for the leading anomaly $a=\alpha/2\pi$.
 - R. Karplus and N. M. Kroll, "Fourth-order corrections in quantum electrodynamics and the magnetic moment of the electron," *Physical Review* **77** (1950) 536–549, for the two-loop coefficient $A_2$.
 - C. M. Sommerfield, "Magnetic dipole moment of the electron," *Physical Review* **107** (1957) 328–329, and A. Petermann, "Fourth order magnetic moment of the electron," *Helvetica Physica Acta* **30** (1957) 407–408, for the closed form of $A_2$.

@@ -6,7 +6,7 @@ A **nonlinear Dirac equation** is a Dirac equation with a self-interaction term.
 
 Two models dominate the literature, and they fill the two channels other than the axial one. The **Thirring model** (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, contracted with the metric, $-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The **Soler model** (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\frac{g}{2}\left(\bar\psi\psi\right)^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.
 
-Here $V_\mu=\bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi$, where $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the **generator cell** of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=g_{\mu\mu}$ is the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{M}_-$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
+Here $V_\mu=\bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi$, where $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the **generator cell** of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ is the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{M}_-$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
 
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a **placement of the channels**: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V_\mu = \bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi$, the axial current $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A_\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
@@ -31,7 +31,7 @@ So the timelike generator squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{ax
 
 $$
 \left\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}\right\}=2g_{\mu\rho}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-\qquad g=\mathrm{diag}(-1,+1,+1,+1).
+\qquad \varepsilon=(1,-1,-1,-1).
 $$
 
 This is the sign the frame of the cells carries, the $\mathbb{M}_-$ frame of the conventions article. The interval reads the same numbers with the opposite overall sign, $g'=-g=(-1,+1,+1,+1)$, so that $s^2=g'_{\mu\nu}x^\mu x^\nu=-g_{\mu\nu}x^\mu x^\nu$; which of the two tuples is called $g$ is a convention, and no result depends on it.
@@ -250,7 +250,9 @@ The duality is the exact reason the two-dimensional model has one coupling, and 
 
 5. **The exact solutions.** Closed-form solutions of the Soler model exist, and the massive Thirring model is Bethe-ansatz solvable. Neither has been transcribed into the framework's notation, and it is not known whether the biquaternion form of the equations makes either more transparent.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 This section writes the same cells in the $\gamma$ notation, so that each formula the sources state can be checked against the cell it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -287,7 +289,7 @@ The cell dictionary is complex-linear. With the central $i$ dropped, the four ce
 The identities the literature quotes were written in the $\gamma$ notation, and they are recorded once here, in that notation, so that each can be checked against the sources. In the $\gamma$ reading, with $\epsilon_{0123}=+1$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
@@ -295,12 +297,12 @@ $$
 
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -320,7 +322,7 @@ A cell's square is a frame statement, and every contraction of the frame inherit
 $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha ,
 $$
 
@@ -352,8 +354,8 @@ The biquaternion interpretation places the channels. The scalar density is the m
 | $\chi_{\mathrm{2D}} = L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell of two dimensions, the product of the two generators |
 | $\sum_\mu\varepsilon_\mu J_\mu K_\mu$ | Metric contraction of two currents |
 | $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor bilinear; $\sigma_{0k}\psi = i \vec e_k\psi \vec e_z$, $\sigma_{jk}\psi = i \vec e_j \vec e_k\psi$ for $j\ne k$, and $\sigma_{\mu\mu}=0$ |
-| $\sigma_{\mu\nu}$, $S_{cd}$ | Generators of the Lorentz algebra, $\sigma_{\mu\nu}=2iS_{\mu\nu}$; their commutator form is in *The Legacy Gamma Formulation* |
-| $\varepsilon_\mu = g_{\mu\mu}$ | Signature sign of the index $\mu$ |
+| $\sigma_{\mu\nu}$, $S_{cd}$ | Generators of the Lorentz algebra, $\sigma_{\mu\nu}=2iS_{\mu\nu}$; their commutator form is in *The Legacy Pauli Gamma Formulation* |
+| $\varepsilon_\mu = -g_{\mu\mu}$ | Signature sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |
 | $\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,c^{(5)}_\mu\psi$ | Hehl–Datta term in the equation ($\frac{3\kappa}{16}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ as a Lagrangian term) |
@@ -363,6 +365,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - W. E. Thirring, "A soluble relativistic field theory," *Annals of Physics* **3** (1958) 91–112, for the original two-dimensional model.
 - M. Soler, "Classical, stable, nonlinear spinor field with positive rest energy," *Physical Review D* **1** (1970) 2760–2765, for the scalar-interaction model in four dimensions.
 - F. W. Hehl and B. K. Datta, "Nonlinear spinor equation and asymmetric connection in general relativity," *Journal of Mathematical Physics* **12** (1971) 1334–1339, for the torsion-induced axial-axial interaction.

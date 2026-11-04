@@ -16,7 +16,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 5. **The anomaly and the $\theta$ vacuum are the two structural quantum effects of this group.** The trace anomaly is the failure of a *conformal* symmetry; the $\theta$ vacuum of the next article is the failure of a *topological* triviality. Both arise from the same place — the regularised determinant, and in particular its non-central part — and the determinant article's distinction between the central case (a determinant that factors) and the non-central case (a determinant with a phase) is what separates them. The trace anomaly is a central statement about a non-central operator; the $\theta$ vacuum is a statement about the phase that the non-central operator acquires.
 
-The article proceeds as follows. The next section fixes what is meant by the trace and recalls the classical vanishing. A section derives the quantum trace from the conformal variation of the determinant and gives the heat-kernel origin of the coefficient, and a section evaluates the coefficient in two and four dimensions. A section identifies the trace of the space the field lives on with the counting of components, and a section treats the Weyl transformation at the three metric levels. A section relates the anomaly to the renormalisation-group $\beta$ function of *The Renormalization Group in Biquaternionic Form*, and a section records the proper-time representation and the finite-dimensional check of the counting. A section separates what is established from what is interpretation. *The Legacy Gamma Formulation* then records the Clifford dictionary used elsewhere in the series, and the summary, the notation table, and the literature close the article.
+The article proceeds as follows. The next section fixes what is meant by the trace and recalls the classical vanishing. A section derives the quantum trace from the conformal variation of the determinant and gives the heat-kernel origin of the coefficient, and a section evaluates the coefficient in two and four dimensions. A section identifies the trace of the space the field lives on with the counting of components, and a section treats the Weyl transformation at the three metric levels. A section relates the anomaly to the renormalisation-group $\beta$ function of *The Renormalization Group in Biquaternionic Form*, and a section records the proper-time representation and the finite-dimensional check of the counting. A section separates what is established from what is interpretation. *The Legacy Pauli Gamma Formulation* then records the Clifford dictionary used elsewhere in the series, and the summary, the notation table, and the literature close the article.
 
 ## The Classical Trace and Its Vanishing
 
@@ -153,7 +153,7 @@ $$
 $$
 The minus is one use of $i^2=-1$ and nothing else. A Weyl rescaling acts on this interpretation too — the level-2 metric is rescaled along with the level-1 form — but the $ict'$ assignment is unchanged, and no minus sign in the anomaly formula is to be "corrected" on the basis of the level-1 form. The two levels are consistent by construction; the minus comes from $i^2$, not from the anomaly.
 
-**Level 3.** The Clifford tool, whose four generators carry the metric $\mathrm{diag}(+1,-1,-1,-1)$, is a translation of the algebra adopted where an article writes in a Clifford frame; it is set out once in *The Legacy Gamma Formulation* below and is not a convention of the body. The tool enters the anomaly through the spin factor of a fermionic field's heat kernel, where the Dirac operator's $a_{d/2}$ carries the spinor trace, and it does not dictate the framework's conventions. A calculation performed in the Clifford frame and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
+**Level 3.** The Clifford tool, whose four generators carry the frame metric $\mathrm{diag}(-1,+1,+1,+1)$, is a translation of the algebra adopted where an article writes in a Clifford frame; it is set out once in *The Legacy Pauli Gamma Formulation* below and is not a convention of the body. The tool enters the anomaly through the spin factor of a fermionic field's heat kernel, where the Dirac operator's $a_{d/2}$ carries the spinor trace, and it does not dictate the framework's conventions. A calculation performed in the Clifford frame and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
 
 **What the transformation is not.** A Weyl rescaling is not a coordinate transformation, since it changes distances without changing coordinates; not the Wick rotation, which in this series is either the exchange of the real and imaginary sectors or the continuation $t'\mapsto-i\tau$ of one coordinate, and which rotates rather than rescales all of them; and not a Lorentz transformation, which preserves the level-1 form. Keeping these apart is the content of the section.
 
@@ -229,7 +229,9 @@ The first identity is exact, so the second and third are exact; a central differ
 - The anomaly of a genuinely non-central biquaternion operator, and whether its eta-invariant part has a framework-specific form, is left to the $\theta$-vacuum article.
 - The scheme-independent coefficients of the biquaternion scalar and spinor fields are not computed here; only the counting that fixes them is identified.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra.
 
@@ -265,8 +267,8 @@ $$
 (iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t,
 $$
 
-for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
-$$
+for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}},
@@ -330,6 +332,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. L. Adler, "Axial-vector vertex in spinor electrodynamics," *Physical Review* **177** (1969) 2426–2438, for the axial anomaly and the origin of anomalous Ward identities.
 - J. S. Bell and R. Jackiw, "A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the $\sigma$-model," *Il Nuovo Cimento A* **60** (1969) 47–61, for the independent discovery of the axial anomaly.
 - D. M. Capper and M. J. Duff, "Trace anomalies in dimensional regularization," *Il Nuovo Cimento A* **23** (1974) 173–183, for the trace anomaly in dimensional regularisation.

@@ -115,7 +115,7 @@ $$
 A_0=\bar{\cdot},\qquad
 A_k=\bar{\cdot}\circ L_{-i \vec e_k},
 $$
-so the odd generators are the bar and the bar times the three spacelike units. They satisfy the Clifford relations of *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*. The finite group is the smallest subgroup of Pin that contains them.
+so the odd generators are the bar and the bar times the three spacelike units. They satisfy the cell relation of *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*. The finite group is the smallest subgroup of Pin that contains them.
 
 **The spin part.** The even group $L(U)$ is a finite subgroup of the even part of Pin. It contains the quaternion group
 $$
@@ -178,7 +178,9 @@ $$
 $$
 and its image lies in $SL_4(\mathbb{C})$ because every frame element has determinant $1$ in the complex-linear description. The determinant of the spinor matrix is not the determinant of the Lorentz transformation; the latter is the parity of the word. The two-to-one cover is visible in the spinor matrices, not in their determinants.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -243,6 +245,7 @@ with $U$ the sixteen signed biquaternion units; its even part of order $16$ is a
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the versor group, the double cover and the theorem $\mathrm{Pin}\not\subseteq\mathbb{B}$.
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the general definitions and the reflection formula.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame elements and the Clifford relations.

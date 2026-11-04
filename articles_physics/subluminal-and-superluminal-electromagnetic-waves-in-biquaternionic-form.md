@@ -14,7 +14,7 @@ A third claim follows, and it is the other half of the paper's title. The projec
 
 The corpus records the programme and does not endorse it. Its value here lies in the structural part: the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation. That part is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial-current form of the massless equation, which the spinor bilinear reproduces.
 
-The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the metric $g=\mathrm{diag}(-1,+1,+1,+1)$, which is the corpus's own convention for its frame cells. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the left and the right multiplication of a spinor $\psi$; the units are $e_t$, the identity of the algebra, and $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-1$; and $i$ is the central unit. Two rules of sign recur in every display below and are fixed once here: $i^2=-1$, and $\vec e_x\vec e_y=\vec e_z$, which makes the quaternion units anticommute. The corpus's five frame cells are $iR_{\vec e_x}^{\mathrm{axf}}$, the three $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=x,y,z$, and $-iR_{\vec e_z}^{\mathrm{axf}}$; on a spinor they act as $iR_{\vec e_x}^{\mathrm{axf}}\psi=i\psi\vec e_x$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi=i\vec e_k\psi\vec e_y$, and $-iR_{\vec e_z}^{\mathrm{axf}}\psi=-i\psi\vec e_z$.
+The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the signs $\varepsilon=(1,-1,-1,-1)$, which is the corpus's own convention for its frame cells. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the left and the right multiplication of a spinor $\psi$; the units are $e_t$, the identity of the algebra, and $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-1$; and $i$ is the central unit. Two rules of sign recur in every display below and are fixed once here: $i^2=-1$, and $\vec e_x\vec e_y=\vec e_z$, which makes the quaternion units anticommute. The corpus's five frame cells are $iR_{\vec e_x}^{\mathrm{axf}}$, the three $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=x,y,z$, and $-iR_{\vec e_z}^{\mathrm{axf}}$; on a spinor they act as $iR_{\vec e_x}^{\mathrm{axf}}\psi=i\psi\vec e_x$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi=i\vec e_k\psi\vec e_y$, and $-iR_{\vec e_z}^{\mathrm{axf}}\psi=-i\psi\vec e_z$.
 
 The source's **volume element** is the product of the four generators,
 
@@ -28,7 +28,7 @@ $$
 \omega^2=R_{(-\vec e_z)^2}^{\mathrm{axf}}=R_{-1}=-1 .
 $$
 
-With the anticommutation with each of the four generator cells, that is the pair of signs that makes it the volume element of $\mathrm{Cl}_{1,3}$; the check is in *The Legacy Gamma Formulation*. The source sets $i\equiv\omega$, so the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is that operator — the **duality operator** — and not a second imaginary number: the two obey the one rule $i^2=-1$. Every $\exp(\omega\beta)$ below is the exponential of that cell, $\cos\beta+\omega\sin\beta$, that is, a duality rotation.
+With the anticommutation with each of the four generator cells, that is the pair of signs that makes it the volume element of $\mathrm{Cl}_{1,3}$; the check is in *The Legacy Pauli Gamma Formulation*. The source sets $i\equiv\omega$, so the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is that operator — the **duality operator** — and not a second imaginary number: the two obey the one rule $i^2=-1$. Every $\exp(\omega\beta)$ below is the exponential of that cell, $\cos\beta+\omega\sin\beta$, that is, a duality rotation.
 
 The source's fixed bivector is $-\vec e_z$, the product of its second generator with its first, and it is the **spin plane**: the role played in the corpus's Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3$ by the fixed bivector $\omega\sigma_3$, and it multiplies the spinor on the **right** as it does there. The cell for that right multiplication is $R_{-\vec e_z}^{\mathrm{axf}}$, which is the volume element $\omega$ displayed just above: the spin plane and the duality generator are the same cell, which is why one symbol does both jobs in the source.
 
@@ -416,7 +416,7 @@ $$
 \partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}=m\,\psi\,iR_{\vec e_x}^{\mathrm{axf}}
 $$
 
-acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, $\nabla\psi\,\omega\sigma_3-eA\psi=m\psi v_0$, in which the mass also multiplies on the right; the chiral pair is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for a second chirality. The two chiralities are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\omega\psi_\pm=\pm L_{-\vec e_z}^{\mathrm{axf}}\psi_\pm$, that is $\psi_\pm\vec e_z=\pm\vec e_z\psi_\pm$: the bivector enters twice, once as a right multiplication and once as a left one. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the even algebra — the spinors commuting with $\vec e_z$ and those anticommuting. The operator effecting the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are written out in *The Legacy Gamma Formulation*.
+acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, $\nabla\psi\,\omega\sigma_3-eA\psi=m\psi v_0$, in which the mass also multiplies on the right; the chiral pair is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for a second chirality. The two chiralities are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\omega\psi_\pm=\pm L_{-\vec e_z}^{\mathrm{axf}}\psi_\pm$, that is $\psi_\pm\vec e_z=\pm\vec e_z\psi_\pm$: the bivector enters twice, once as a right multiplication and once as a left one. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the even algebra — the spinors commuting with $\vec e_z$ and those anticommuting. The operator effecting the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are written out in *The Legacy Pauli Gamma Formulation*.
 
 **Where the two presentations diverge.** They agree at $m=0$, each giving Weyl equations, and part ways once a mass is present. The corpus's mass couples two chiral fields and is antilinear; the source's mass is linear and multiplies the one spinor on the right by a fixed cell with a scalar coefficient. That is why the coefficient of the sourced equation is a complex number in $\omega$ rather than a real mass — a mass times a duality phase — and why its linearisation needs both of the steps of *Linearisation* above: the constraints, which turn the imaginary part into a pure phase, and the rescaling, which removes it.
 
@@ -427,7 +427,9 @@ What the programme establishes is the **structural half**. That the free Maxwell
 
 The boundaries are these. The Clifford-bundle route is an **external formalism**; the corpus's own treatment is the biquaternion one, and the two are related through the even-subalgebra dictionary rather than identified. The "superluminal" of the X-wave is a pattern speed of a localised solution, not a signalling speed, and must not be read otherwise. The **purely electromagnetic particle** is a programme item revived from Einstein and Waite, not a constructed particle. The **mass spectrum** is a proposal, not a derivation. The muon comes out of one algebra with the monopole quantum number $n=1$; nothing in the algebra fixes that number; the tau needs a further hypothesis on it; and the arithmetic of the states beyond the muon, as the mass-spectrum section shows, does not close.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Each is a **cell**, a left multiplication times a right one, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$:
 
@@ -441,21 +443,21 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The gammas then obey the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$:
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The gammas then obey the cell relations of $\varepsilon=(1,-1,-1,-1)$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -499,7 +501,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 |---|---|
 | $C\ell(M)$ | Clifford bundle of differential forms over Minkowski spacetime |
 | $C\ell^+(M)$ | Its even subalgebra; the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary |
-| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Metric; the corpus's frame-cell convention |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector; the corpus's frame-cell convention |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cells, $iR_{\vec e_x}^{\mathrm{axf}}=R_{i\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
 | $L_a$, $R_b$ | Left and right multiplication of a spinor, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
 | $\omega=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{-\vec e_z}^{\mathrm{axf}}$ | Volume element, the cell of the pseudoscalar; $\omega^2=-1$ and $\omega$ anticommutes with the generator cells; the source's "$i$", the duality operator |
@@ -526,6 +528,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr., "Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum", arXiv:hep-th/9607231 (1996), the source of this article.
 - J. Vaz Jr. and W. A. Rodrigues Jr., "Maxwell and Dirac Theories as an Already Unified Theory", *Advances in Applied Clifford Algebras* (1995), for the equivalence of the Maxwell and massless Dirac equations underlying the spinor representation.
 - W. A. Rodrigues Jr. and J.-Y. Lu, "On the Existence of Undistorted Progressive Waves (UPWs) of Arbitrary Speeds $0\le|v|\le\infty$ in Nature", RP 12/96, IMECC-UNICAMP (1996), for the UPW and X-wave family and their generation.

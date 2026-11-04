@@ -312,7 +312,9 @@ The physical point the corpus records is that the left-versus-right question of 
 
 5. **Empirical contact.** None is claimed. The formulation is an equivalent rewriting, and the question, as everywhere, is whether it makes any structural fact of the framework easier to see, not whether it predicts anything new.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 No gamma symbol is used in the body of this article; the five appear here for reference, as cells of the full operator algebra. They are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -359,10 +361,11 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $\mathsf{M}_2$ | The corpus's matrix representation, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
 | $\mathfrak D,\ \tilde A$ | The corpus's elements with matrix images $\nabla$ and $A$ |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The corpus's chiral gradient and its quaternion conjugate |
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | The odd cell of the Dirac adjoint, named in *The Legacy Gamma Formulation*; not the Daviau right factor, and not an implementation of the star |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | The odd cell of the Dirac adjoint, named in *The Legacy Pauli Gamma Formulation*; not the Daviau right factor, and not an implementation of the star |
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, for the map, the star, the equivalence and the four options; the source of this article.
 - C. Daviau, "Équation de Dirac et algèbre de Clifford," *Annales de la Fondation Louis de Broglie*, for the space Clifford formulation in its original form.
 - D. Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra formulation that the equivalence compares against.

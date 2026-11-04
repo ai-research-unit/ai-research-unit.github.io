@@ -39,7 +39,7 @@ iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
 iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad k=1,2,3,
 $$
 
-with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}\psi=a\psi b$. Each of the four is one factor of $i$ times a cell with real entries; throughout, $i$ is the central scalar with $i^2=-1$, and wherever two imaginary units meet in a product below they are multiplied to that $-1$ and the $-1$ is written, so no display carries a double $i$. With **signature** $g=\mathrm{diag}(-,+,+,+)$ they carry the Clifford relations of $g$, and the chirality operator is $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. This is the frame and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed below. Signature and frame must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
+with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}\psi=a\psi b$. Each of the four is one factor of $i$ times a cell with real entries; throughout, $i$ is the central scalar with $i^2=-1$, and wherever two imaginary units meet in a product below they are multiplied to that $-1$ and the $-1$ is written, so no display carries a double $i$. With **signature** $g=\mathrm{diag}(-,+,+,+)$ they carry the cell relation of $g$, and the chirality operator is $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. This is the frame and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed below. Signature and frame must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
 
 ## Dirac, Weyl and Majorana: The Three Notions
 
@@ -160,7 +160,7 @@ We collect the verified statements of this section in a table. Each entry was ch
 
 | Statement | Verification |
 |---|---|
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ carry the Clifford relations of $g$, $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\Gamma^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | all $16$ commutators and anticommutators, exact |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ carry the cell relation of $g$, $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\Gamma^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | all $16$ commutators and anticommutators, exact |
 | $P_{\pm}=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\pm\Gamma)$: idempotent, $P_{+}+P_{-}=I_4$, ranks $2$ and $2$, $P_{\pm}\Gamma=\pm P_{\pm}$, $\mathcal{C}P_{\mp}=P_{\pm}\mathcal{C}$ | exact |
 | $C^{T}=-C$, $C^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $C^\dagger=C^{-1}$ | exact, $C=L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ |
 | $C\,(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})^{T}C^{-1}=-\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $C\,(iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^{T}C^{-1}=-\,iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | all $\mu=0,1,2,3$ |
@@ -388,7 +388,9 @@ None of this is derived by the framework. The hyperboloid models are a standard-
 
 6. **Empirical contact.** The decisive experiment is neutrinoless double beta decay. The framework offers no rate and no prediction; the question of whether it can be brought into contact with one is open.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In cells they are
 
@@ -410,52 +412,29 @@ $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
-(\gamma_0)^2=I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums depend on the frame through the squares of the cells, so no single list is canonical. In a frame in which all four cells square to $+I_4$ — the Euclidean frame — they are
-
-$$
-\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
-$$
-
-$$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,
-\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu=-2\gamma_\delta\gamma_\beta\gamma_\alpha .
-$$
-
-In the frame of this article, where one cell squares to $+I_4$ and three to $-I_4$, every index is a lower index and the metric enters the contraction itself, so the first two read
-
-$$
-\sum_\mu\gamma_\mu\gamma_\mu=-2I_4,
-\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2\bigl(1+g_{\alpha\alpha}\bigr)\gamma_\alpha ,
-$$
-
-the second sum being $4\gamma_0$ on the timelike cell and $0$ on the three spatial ones. Each of these values was computed in the frame stated and not carried over from another one.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 A Dirac fermion is an arbitrary element of $\Delta=S\oplus\bar{S}$, with independent chiral halves and eight real components. A Weyl fermion is an element of one half, chiral and — while its chirality is protected — massless. A Majorana fermion is a fixed point of a conjugate-linear real structure $\mathcal{C}$ on $\Delta$ with $\mathcal{C}^2=1$, with four real components, no vector current, and a permitted mass. In the Lorentzian signature $(1,3)$ Majorana spinors exist and Majorana–Weyl spinors do not, because the real structure that makes a spinor Majorana exchanges the two chiral halves instead of preserving them.
@@ -485,9 +464,9 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $\psi_L\in S,\ \psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality operator; $-1$ on $S$, $+1$ on $\bar{S}$, $\Gamma^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $P_{\pm}=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\pm\Gamma)$ | Chirality projectors; $P_{+}+P_{-}=I_4$, $\mathcal{C}P_{\mp}=P_{\pm}\mathcal{C}$ |
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$; $\nu(0)=x$, $\nu(1)=\nu(2)=\nu(3)=y$ | Frame cells; they carry the Clifford relations of $g$ |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$; $\nu(0)=x$, $\nu(1)=\nu(2)=\nu(3)=y$ | Frame cells; they carry the cell relation of $g$ |
 | $L_a,R_b$, $L_{a}R_{b}$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $L_{a}R_{b}\psi=a\psi b$ |
-| $g=\mathrm{diag}(-,+,+,+)$, $\varepsilon_\mu=g_{\mu\mu}$ | Clifford signature and its sign vector, $\varepsilon_0=+1$, $\varepsilon_k=-1$ |
+| $g=\mathrm{diag}(-,+,+,+)$, $\varepsilon_\mu=-g_{\mu\mu}$ | Clifford signature and its sign vector, $\varepsilon_0=+1$, $\varepsilon_k=-1$ |
 | $C = L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=R_{\vec e_x}^{\mathrm{axf}}$ | Charge-conjugation cell; $C^{T}=-C$, $C^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $K = C\,(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})^{T} = i\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=i$ | The central imaginary that carries the real structure; $KK^{*}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $\mathcal{C}:\psi\mapsto K\psi^{*}$ | Charge conjugation as an antilinear involution; commutes with $\mathbb{D}$ |
@@ -506,6 +485,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ettore Majorana, "Teoria simmetrica dell'elettrone e del positrone", *Nuovo Cimento* **14** (1937) 171–184, the original symmetric theory of the electron and positron, where the self-conjugate spinor is introduced.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the construction of Dirac, Weyl and Majorana fields, the charge-conjugation matrix, and the relation between the reality of the mass term and fermion-number conservation.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Dirac bilinears, charge conjugation in the chiral basis, and the Majorana mass term.

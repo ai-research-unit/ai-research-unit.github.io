@@ -8,7 +8,7 @@ The four options are not four theories. They are four **inequivalent rewritings*
 
 Two conventions frame everything below.
 
-- **The article is written in cells.** A two-sided multiplication is a cell, and every operator of the body is a cell or a sum of cells. The Clifford names of the same five cells are collected once, in the closing section *The Legacy Gamma Formulation*, and none of those names is used before it.
+- **The article is written in cells.** A two-sided multiplication is a cell, and every operator of the body is a cell or a sum of cells. The Clifford names of the same five cells are collected once, in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 - **The corpus carries two Dirac equations, not one:** the one-sided chiral pair on the spinor module, and the two-sided single equation on the algebra. Parra's options belong to the second family. The section *The Two Dirac Equations* states both and places the options, and the placement is what joins Parra's spin bivector to the corpus's chirality cell.
 
 The article is an **equivalent rewriting**, as everywhere in this series: the four options are four forms of the standard equation, and nothing new is predicted. What is new to the corpus is the object: the discrete symmetries organising the four spinor types, and the algebraic datum that keeps them apart. The construction is taken from Parra as reported by Fauser; the corpus reproduces the report and does not claim to have consulted Parra's papers, which are unpublished or difficult to obtain.
@@ -114,7 +114,7 @@ $$
 R_{e_{21}}=-i\,\chi,\qquad (R_{e_{21}})^2=(-i)^2\chi^2=-I_4,\qquad \chi^2=I_4 .
 $$
 
-The first identity is the dictionary of *The Legacy Gamma Formulation*: the spin bivector is the frame product $e_2e_1=-\vec e_z$, and the cell of a product is the composition of the cells, $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$. The two squares are the second point. Right multiplication by the spin bivector is a **complex structure** on the module, and right multiplication by the chirality cell is an **involution**; the two differ by a factor $i$, and $i^2=-1$ is the whole of the difference. The corpus's Hestenes article separates the same two objects by the same test, giving the phase to the spin plane, $(\omega\sigma_3)^2=-1$, and not to the chirality; in the cell language the test is the square, $-I_4$ against $I_4$. That is the precise sense in which the options join the two-sided operator theory to chirality: the object Parra multiplies on the right and the object the two-sided equation multiplies on the right are the same cell up to the central sign.
+The first identity is the dictionary of *The Legacy Pauli Gamma Formulation*: the spin bivector is the frame product $e_2e_1=-\vec e_z$, and the cell of a product is the composition of the cells, $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$. The two squares are the second point. Right multiplication by the spin bivector is a **complex structure** on the module, and right multiplication by the chirality cell is an **involution**; the two differ by a factor $i$, and $i^2=-1$ is the whole of the difference. The corpus's Hestenes article separates the same two objects by the same test, giving the phase to the spin plane, $(\omega\sigma_3)^2=-1$, and not to the chirality; in the cell language the test is the square, $-I_4$ against $I_4$. That is the precise sense in which the options join the two-sided operator theory to chirality: the object Parra multiplies on the right and the object the two-sided equation multiplies on the right are the same cell up to the central sign.
 
 **The odd velocity.** Parra's mass term multiplies by the velocity $e_0$, an odd element, and an even field multiplied on the right by an odd element leaves the even carrier, so the term sits in the odd sector of the algebra. The corpus writes the same structure inside the even carrier as the chirality cell acting on the conjugated field, $m\chi\bar\Psi$: the conjugation absorbs the oddness, and the fixed direction plays the part of the velocity — a conjugation and a fixed direction, and nothing else. Daviau's $m\varphi^{*}$ is the same replacement in the space Clifford algebra. The two mass terms are one structure in two carriers, and the article writes the corpus's representative throughout. What the passage costs is linearity: Parra's mass term is linear in the field and the corpus's is antilinear, which is the difference the companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* records between the two kinds of mass.
 
@@ -230,7 +230,9 @@ Fauser draws a structural conclusion from the four options. In the geometric-alg
 
 7. **Empirical contact.** None is claimed. The options are equivalent rewritings; the question, as everywhere, is whether isolating them makes a structural fact of the framework easier to see.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four frame cells and the chirality cell of the body become
 
@@ -254,11 +256,11 @@ $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 $$
 
-The four frame cells satisfy the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$, and their squares are $\pm I_4$:
+The four frame cells satisfy the cell relation of $\varepsilon=(1,-1,-1,-1)$, and their squares are $\pm I_4$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\ \ (k=1,2,3) .
-$$
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\ \ (k=1,2,3) ,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 The chirality cell is the fifth: it is the cell $\chi$ of the body, and it anticommutes with all four,
 
@@ -309,7 +311,7 @@ The options are permuted by the discrete quotient $D=\Gamma_{1,3}/\Gamma^{0}_{1,
 | $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
 | $\vec s=-i\vec S$ | The spin vector; $\vec S$ real, so $\vec s=\vec s^{*}$ under $^{*}=\bar\cdot\circ{}^{\natural}$ and $\vec s$ lies in $X_{\mathrm i}$ |
 | $L_a$, $R_b$, $L_aR_b$ | Left, right and two-sided multiplication; $L_aR_b\psi=a\psi b$ and $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
-| $\Gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ | The four frame cells, $\tau(t)=x$ and $\tau(k)=y$; $\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}I_4$ |
+| $\Gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ | The four frame cells, $\tau(t)=x$ and $\tau(k)=y$; $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\chi=R_{-i\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a right-multiplication cell, $\chi\psi=-i\psi\vec e_z$; $\chi^2=I_4$ and $\{\Gamma_\mu,\chi\}=0$ |
 | $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-i\chi$ | The right cell of the spin bivector; $(R_{e_{21}})^2=(-i)^2\chi^2=-I_4$ |
 | $\mathcal{D}=\Gamma_\mu\partial/\partial x_\mu$ | The gradient cell of the body |
@@ -328,6 +330,7 @@ The options are permuted by the discrete quotient $D=\Gamma_{1,3}/\Gamma^{0}_{1,
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §2.3, for the four options, their permutation group and the spin-particle bundle; the source of this article.
 - J. M. Parra-Serra, "On Dirac and Darwin–Hestenes equation," in *Proceedings of the Conference on Clifford Algebras* (1989), and "Dirac's theory in real geometric formalism: multivectors versus spinors" (unpublished), for the original analysis. The corpus has not consulted these; they are cited through Fauser.
 - W. A. Rodrigues Jr., E. C. de Oliveira and others, on the spin Clifford bundle, referred to by Fauser for the comparison with the spin-particle bundle.

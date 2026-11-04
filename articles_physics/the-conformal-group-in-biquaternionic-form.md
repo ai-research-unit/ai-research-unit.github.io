@@ -15,7 +15,7 @@ The answer is a boundary rather than an embedding, and the boundary falls in a d
 
 The compactification is the one part of the picture the article does build, and it is built on a form the earlier sections do not use. The space on which the conformal group acts globally is the $*$-unitary group $\mathrm{U}(2)=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}$ — compact, of real dimension $4$, and not the norm-units $SL(2,\mathbb{C})$ — and the two sectors are its Cayley charts, poled each in the other. The boundary is a slice of the zero-divisor cone, and the sphere at its base turns out to be the Bloch sphere of the informational sector read as generators. That construction is *The Compactification from the Star*; it does not put the group inside the algebra, and it does not force a compact universe.
 
-The conventions are those of the read-list companions: the algebra, the units, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The body is written in elements, with the cell dictionary confined to *The Legacy Gamma Formulation*; the gamma names appear only there. Throughout, $c$ is the speed of light in the medium, and the scalar coordinate of $\mathbb{M}_-$ is $Q_t=ict'$, so that $\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$.
+The conventions are those of the read-list companions: the algebra, the units, the sectors and the biquaternion norm are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The body is written in elements, with the cell dictionary confined to *The Legacy Pauli Gamma Formulation*; the gamma names appear only there. Throughout, $c$ is the speed of light in the medium, and the scalar coordinate of $\mathbb{M}_-$ is $Q_t=ict'$, so that $\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$.
 
 ## The Conformal Group and Its Generators
 
@@ -322,7 +322,9 @@ The same passage adds, and this is **speculative**, a **physical interpretation*
 
 **Twistors.** A third realization uses the same vector space as the algebra but a different structure. The double cover $SU(2,2)$ of the conformal group acts linearly on twistor space $T=S\oplus\bar{S}\cong\mathbb{C}^4$. As complex vector spaces, $T$ and $\mathbb{B}$ are both $\mathbb{C}^4$; but the form that $SU(2,2)$ preserves is a **Hermitian** form of signature $(2,2)$, whereas the biquaternion norm $\langle\cdot\rangle_{\natural}$ is a complex **symmetric bilinear** form. The spaces agree; the forms do not. This is the precise sense in which the conformal group, when it acts on the same four-dimensional vector space, enters as the **$*$-unitary** group of a form and not as the **unit** group of a norm — a different kind of group from the one the framework uses. The companion article on twistors develops this in full, with the incidence relation and the Klein correspondence; the point here is only that the twistor realization does not place the conformal group inside $\mathbb{B}$, it places it on $\mathbb{B}$ read as a new module with a new form.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here only as the dictionary to the matrix formulation; no gamma name is used before this section.
 
@@ -375,9 +377,9 @@ $$
 \gamma_0^2=I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=I_4,
 $$
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad \{\gamma_5,\gamma_\mu\}=0,\qquad \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5.
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \{\gamma_5,\gamma_\mu\}=0,\qquad \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5.
 $$
-The Clifford metric is $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$, fixed by the frame; it must not be interchanged with the interval of a displacement, which is the norm.
+The sign vector of the cells is $\varepsilon=(1,-1,-1,-1)$, fixed by the frame; it must not be interchanged with the interval of a displacement, which is the norm.
 
 **What the frame carries of the conformal algebra.** The six bivectors $\gamma_\mu\gamma_\nu$ with $\mu<\nu$ close under the commutator and span the Lorentz algebra, exactly the six generators that the body places inside $\mathbb{B}$. The other nine are not bivectors of this frame: the dilation is the four-vector product $\gamma_5$ up to a phase, and the translations and special conformal generators are the vector-plus-pseudovector combinations $\tfrac12\gamma_\mu(1\mp i\gamma_5)$ quoted in the Clifford-group paragraph above. To get all fifteen as bivectors one must enlarge the generating set by the pseudoscalar and the unit, which is the six-generator construction of that paragraph. This is the dictionary's reading of the body's count.
 
@@ -417,7 +419,7 @@ $$
 $$
 which reproduces $x_{2\mu}=(x_\mu+a_\mu x^2)/(1+2a\cdot x+a^2x^2)$.
 
-What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-unit element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{M}_-$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger: Vahlen matrices with entries in $\mathrm{Cl}_{1,3}$ (entry algebra real dimension $16$), conformal geometric algebra in $\mathrm{Cl}_{2,4}$ (even part real dimension $32$), or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a signature-$(2,2)$ Hermitian form that the biquaternion norm is not. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it. The operator content is carried by cells, and the frame cells with their Clifford relations and the two Dirac equations are collected in *The Legacy Gamma Formulation* and used nowhere else.
+What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-unit element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{M}_-$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger: Vahlen matrices with entries in $\mathrm{Cl}_{1,3}$ (entry algebra real dimension $16$), conformal geometric algebra in $\mathrm{Cl}_{2,4}$ (even part real dimension $32$), or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a signature-$(2,2)$ Hermitian form that the biquaternion norm is not. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it. The operator content is carried by cells, and the frame cells with their Clifford relations and the two Dirac equations are collected in *The Legacy Pauli Gamma Formulation* and used nowhere else.
 
 What the algebra does carry, by contrast, is the compactification, and it carries it on a different form. The space on which the conformal group acts globally is the $*$-unitary group $\mathrm{U}(2)=\{\tilde{Q}:\tilde{Q}\tilde{Q}^{*}=e_t\}$, compact of real dimension $4$ — and not the unit-norm group $SL(2,\mathbb{C})$. Each sector charts it by a Cayley transform poled in the other sector, $\tilde{U}_{\mathrm{C}}=(\tilde{Q}-p)(\tilde{Q}+p)^{-1}$ with $p=ie_t$ for $\mathbb{M}_+$ and $p=e_t$ for $\mathbb{M}_-$, and the chart transition between the two is the star. The boundary is the chord $e_t-\tilde{U}_{\mathrm{C}}$ becoming a zero divisor; the light cone of the origin is the corresponding locus for $e_t+\tilde{U}_{\mathrm{C}}$; and where both vanish the boundary is the sphere $i\vec n$, $\vec n\in S^{2}$ — the half-turns, which are the differences $\tilde\Pi_1(\vec n)-\tilde\Pi_2(\vec n)$ of the two complementary pure states. The sphere at infinity of a sector is the Bloch sphere of that sector read as generators. What the construction does not give is a reason to prefer the compactified space, or an action of the conformal group inside $\mathbb{B}$: the compactification is available to the algebra, not forced by it.
 
@@ -454,7 +456,7 @@ What the algebra does carry, by contrast, is the compactification, and it carrie
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | General plain sesquilinear form; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $L_a$, $R_b$ | Left and right multiplication, $L_a\tilde Q=a\tilde Q$, $R_b\tilde Q=\tilde Q b$; a cell is $L_aR_b$ |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; equals $\gamma_5$ |
-| $\gamma_0,\dots,\gamma_3$, $\gamma_5$ | Frame cells of $\mathrm{Cl}_{1,3}$; confined to *The Legacy Gamma Formulation* |
+| $\gamma_0,\dots,\gamma_3$, $\gamma_5$ | Frame cells of $\mathrm{Cl}_{1,3}$; confined to *The Legacy Pauli Gamma Formulation* |
 | $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Identity cell on the module |
 | $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ | Central grading of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$; represented by $\gamma_5$ on the module |
 | $C(M)$, $\ell(M)$ | Coefficient matrix of a cell and its rank, the length |
@@ -463,6 +465,7 @@ What the algebra does carry, by contrast, is the compactification, and it carrie
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Philippe Di Francesco, Pierre Mathieu, and David Sénéchal, *Conformal Field Theory* (Springer, 1997), for the conformal algebra, its generators, and the $SO(d,2)$ form of the conformal group.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the conformal group and the generators of dilations and special conformal transformations in the standard physics convention.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 2 (Cambridge, 1986), for the conformal compactification of Minkowski space and its relation to null geometry and twistors.

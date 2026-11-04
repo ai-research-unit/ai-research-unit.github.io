@@ -130,7 +130,7 @@ $$
 \{iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\} = 0,
 $$
 
-which is the Clifford relation with $g = \mathrm{diag}(-1,+1,+1,+1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the first square,
+which is the cell relation with $\varepsilon=(1,-1,-1,-1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the first square,
 
 $$
 \left(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\right)^2
@@ -245,7 +245,9 @@ What survives is a relation of *scale and phase*, not of identity. The mass sets
 
 The Zitterbewegung is usually introduced as a property of the electron, and a [companion article on the electron in biquaternionic form](the-electron-in-biquaternionic-form.html) has since been written in this group. Nothing in the present article depends on it. If the sector decomposition is to acquire physical content, the electron article is the natural place to look: the electron's rest energy is the scale of both the sector rotation and the trembling, so any attempt to identify an observable with the informational sector would have to pass through that scale. The present negative result is a constraint on that attempt, not a substitute for it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of the cell algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the cells $\beta$ and $\alpha_k$.
 
@@ -269,7 +271,7 @@ $$
 \end{aligned}
 $$
 
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $\varepsilon=(1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
 
 A single cell $L_aR_b$ is a pure tensor; a single product is one cell up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -318,6 +320,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - E. Schrödinger, "Über die kräftefreie Bewegung in der relativistischen Quantenmechanik," *Sitzungsberichte der Preußischen Akademie der Wissenschaften* (1930) 418–428, for the original discovery of the Zitterbewegung.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the Dirac equation and the velocity operator.
 - L. L. Foldy and S. A. Wouthuysen, "On the Dirac theory of spin 1/2 particles and its non-relativistic limit," *Physical Review* **78** (1950) 29–36, for the mean position operator and the elimination of the trembling.

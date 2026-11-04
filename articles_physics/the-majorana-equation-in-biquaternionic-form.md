@@ -170,7 +170,7 @@ and no sign is produced. This is the same verified identity the neutrino article
 
 A spinor is **real** when it equals its own conjugate, and whether the equation can be written so that this reality is visible depends on the reality type of the Clifford algebra. The point is easy to get wrong, so it is stated before it is used.
 
-**The coefficient is already real; the generator is not.** The four cells $c_\mu$ have real entries, but they carry $\{c_\mu,c_\nu\}=-2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, that is the metric $-g=\mathrm{diag}(-1,+1,+1,+1)$. Read as generators, they therefore generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$ and not the corpus's $\mathrm{Cl}_{1,3}$. The corpus's generators are $i c_\mu$, and those carry $+g$, hence $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, which has **no** representation by real $4\times4$ matrices. That is the whole reason the $i$ sits in the generator and not in the kinetic operator, and the two statements are not in conflict: $\mathbb{D}=\sum c_\mu\partial/\partial x_\mu$ is a real operator because the cells are read with the opposite overall sign of the metric.
+**The coefficient is already real; the generator is not.** The four cells $c_\mu$ have real entries, but they carry $\{c_\mu,c_\nu\}=-2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, that is the metric $-\varepsilon=(1,-1,-1,-1)$. Read as generators, they therefore generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$ and not the corpus's $\mathrm{Cl}_{1,3}$. The corpus's generators are $i c_\mu$, and those carry $+g$, hence $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, which has **no** representation by real $4\times4$ matrices. That is the whole reason the $i$ sits in the generator and not in the kinetic operator, and the two statements are not in conflict: $\mathbb{D}=\sum c_\mu\partial/\partial x_\mu$ is a real operator because the cells are read with the opposite overall sign of the metric.
 
 **What that buys.** Because every $c_\mu$ is real, $\mathbb{D}$ preserves the real subspace $\mathbb{R}^{4}\subset\Delta$, and a solution whose initial data lie there stays there: the real form of the equation is a statement about the operator, not about a second operator. The real subspace it preserves is the one on which the charge conjugation is $\psi\mapsto\psi^{*}$ rather than $\psi\mapsto i\psi^{*}$; the two differ by the normalisation of the reality, which is the point of *Real Spinors and Reality Conditions*, and in the corpus's mostly-minus normalisation the same four-real-dimensional family appears as $\psi=i\psi^{*}$, the Majorana sector computed below, not as the strictly real-valued spinors. A real-valued spinor in the corpus's normalisation has $\psi^{c}=i\psi$ and is therefore **not** its own conjugate; this is the trap of the word "real", and the two normalisations must not be mixed.
 
@@ -221,9 +221,9 @@ $$
 The metric factor is not decoration: without it the spatial part changes sign and the two chiralities are exchanged. That is the trap of the two-component form, and it is the same trap as in the four-component count — a sign of a weight, not a sign of a physics. With $g=\mathrm{diag}(-,+,+,+)$ the two orders of the pair give
 
 $$
-\sigma_{\mu}\bar\sigma_{\nu}+\sigma_{\nu}\bar\sigma_{\mu}=2g_{\mu\nu}[\mathbb{M}_-]I_2,
+\sigma_{\mu}\bar\sigma_{\nu}+\sigma_{\nu}\bar\sigma_{\mu}=2\varepsilon_\mu\delta_{\mu\nu}I_2,
 \qquad
-\bar\sigma_{\mu}\sigma_{\nu}+\bar\sigma_{\nu}\sigma_{\mu}=2g_{\mu\nu}[\mathbb{M}_-]I_2,
+\bar\sigma_{\mu}\sigma_{\nu}+\bar\sigma_{\nu}\sigma_{\mu}=2\varepsilon_\mu\delta_{\mu\nu}I_2,\qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 both verified for all sixteen pairs $(\mu,\nu)$; the symmetric part of a product is the metric, and the antisymmetric part spans the six Lorentz generators.
@@ -429,7 +429,9 @@ because $c_{0}^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $c_{k}^{2}=+L
 
 5. **Empirical contact.** The decisive experiment is neutrinoless double beta decay, and the framework offers no rate and no prediction. Whether the eigenstructure above can be brought into contact with a rate is open, and is recorded in the neutrino article as an open question of the corpus.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -451,30 +453,29 @@ $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ field equal to its own charge conjugate, and it is the Dirac equation with the mass term pairing the field with its conjugate instead of with the other chiral half. In the cell frame with $g=\mathrm{diag}(-,+,+,+)$ its three standard forms were written, and each was identified as one operator, or one reading of it, rather than as a separate equation. The cell operator is $\mathbb{D}=\sum_\mu c_\mu\partial/\partial x_\mu$, built from the four real cells $c_0=R_{\vec e_x}^{\mathrm{axf}}$ and $c_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, so that $\mathbb{D}^{2}=\Box$ with no sign left over: the two factors of $i$ of each generator are already multiplied to $-1$. The charge-conjugate form uses the real cell $C=R_{\vec e_x}^{\mathrm{axf}}$, for which $C^{T}=-C$, $C^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $C\,(iR_{\vec e_x}^{\mathrm{axf}})^{T}C^{-1}=-\,iR_{\vec e_x}^{\mathrm{axf}}$ and $C\,(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^{T}C^{-1}=-\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ on all $\mu$, and the antilinear map $\mathcal{C}\psi=K\psi^{*}$ with the central scalar $K=C\,(iR_{\vec e_x}^{\mathrm{axf}})^{T}=i$ satisfies $KK^{*}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, so that $\mathcal{C}^{2}=1$; it anticommutes with each generator cell, $K\,(ic_\mu)^{*}K^{-1}=-\,ic_\mu$, and commutes with $\mathbb{D}$, which is what makes the constraint $\psi^{c}=\psi$ consistent with the massive equation and reduces it to the Dirac equation on the fixed space. The real form needs no new operator: the four cells $c_\mu$ are real and generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, so $\mathbb{D}$ preserves the real subspace on which the charge conjugation is the plain complex conjugation, and the frame $r_\mu$ is the conventional way of writing that same algebra. The corpus's generators $i c_\mu$ are $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and admit no real representation, which is why the reality is carried by the antilinear $\mathcal{C}$. The two-component form is the Weyl operator with the antilinear mass term, $i(\partial/\partial t'-\boldsymbol\sigma\cdot\nabla)\psi_L=m\epsilon\psi_L^{*}$ with $\epsilon=i\sigma_2$, and the two Weyl operators satisfy $W_RW_L=\Box$, which is the precise sense in which they are square roots of the Klein–Gordon operator. The charge-conjugation operator is an involution whose two eigenspaces are each of real dimension four: the $+1$ space is the Majorana sector, on which the equation is Dirac, and the $-1$ space carries the opposite sign of the mass, which the chirality cell removes — $\Gamma$ changes sign against the kinetic operator and again against the conjugation, so the two cancel, while the multiplication by $i$ changes it once and reverses the mass — so that $\Gamma$ is an isomorphism between the two and $i$ is not. Both are on the mass shell, $(\Box-m^{2})\psi=0$, which follows from the involution and needs no matrix square. A self-conjugate field carries one Weyl spinor rather than two, no vector current, and no fermion number; whether a given fermion is Majorana, and the neutrino mass and phases, are outside the algebra.
@@ -485,7 +486,7 @@ The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ fie
 |---|---|
 | $L_a$, $R_b$, $L_aR_b$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$; $L_{e_t}^{\mathrm{axf}}=R_{e_t}^{\mathrm{axf}}=\mathrm{id}$ |
 | $c_0=R_{\vec e_x}^{\mathrm{axf}}$, $c_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four real cells, the coefficients of $\mathbb{D}$ |
-| $i c_\mu$, $\{ic_\mu,ic_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Generator cells and their Clifford relations |
+| $i c_\mu$, $\{ic_\mu,ic_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Generator cells and their Clifford relations |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; $-1$ on $S$, $+1$ on $\bar S$, $\Gamma^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $S$, $\bar S$, $\Delta=S\oplus\bar S$ | Chiral halves, $\Gamma=-1$ and $\Gamma=+1$, and the Dirac module |
 | $x_0=t'$, $x_k=Q_k$ | The real coordinates in which contractions with derivatives are written |
@@ -514,6 +515,7 @@ The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ fie
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - E. Majorana, "Teoria simmetrica dell'elettrone e del positrone," *Nuovo Cimento* **14** (1937) 171–184, for the original equation and the real form of the Dirac theory.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), Chapter 2 and Appendix A, for the charge-conjugation matrix, the Majorana condition and the conventions used here.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), Chapter 5, for the charge-conjugation operator and its two eigenstates.

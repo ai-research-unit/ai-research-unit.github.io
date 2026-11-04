@@ -283,7 +283,9 @@ more, the symbol of the differential operator and not the operator itself; the p
 to the other is the spectral theorem, and the two adjoints distinguished in this article are the two
 senses in which that symbol is self-adjoint.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -345,6 +347,7 @@ Hermitian Dirac Operator* and *The Hermitian Cauchy Kernel as an Adjoint*.
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the algebra-valued and scalar pairings of the Clifford theory and the adjoints they induce.
 - R. Delanghe, F. Sommen and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, 1992), for the module pairings, the intertwiner adjoints and the spinor dual.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford module, its Hermitian forms and the self-adjointness of Dirac-type operators.

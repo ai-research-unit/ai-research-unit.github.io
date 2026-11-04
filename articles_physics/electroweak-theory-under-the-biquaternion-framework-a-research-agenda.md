@@ -14,7 +14,7 @@ The word "electroweak" occurs in the corpus only where standard theory is being 
 
 The discipline this forces on the article is the one the genre requires: **an agenda that quietly assumes hypercharge or chirality has fabricated its own premise.** Both are therefore carried as **open items throughout**, never as working assumptions. Wherever a standard electroweak statement is written down — the group, the hypercharge values, the Weinberg angle, the Higgs doublet, the $W$ and $Z$ masses — it is flagged as standard input, not as a framework result.
 
-**Two notations, and where the Clifford frame lives.** The algebra's own objects are written as elements — $\tilde{\Psi}$, $\tilde{A}$, $\mathcal{A}_\mu$ — and operators on the spinor module are written as **cells**, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for $a,b\in\mathbb{B}$, with $L_aR_b\,\psi=a\psi b$ and the composition $L_aR_b\,L_cR_d=L_{ac}R_{db}$. Chirality, the mass bilinear and the axial current are statements in the cells, and the cells are the notation of the sections that treat them. The Clifford frame is a dictionary for the same algebra, not a second framework, and it appears in this article only in *The Legacy Gamma Formulation*. Every factor of $i$ in a product is spent with $i^2=-1$, so no product of cells carries an unspent power of $i$.
+**Two notations, and where the Clifford frame lives.** The algebra's own objects are written as elements — $\tilde{\Psi}$, $\tilde{A}$, $\mathcal{A}_\mu$ — and operators on the spinor module are written as **cells**, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for $a,b\in\mathbb{B}$, with $L_aR_b\,\psi=a\psi b$ and the composition $L_aR_b\,L_cR_d=L_{ac}R_{db}$. Chirality, the mass bilinear and the axial current are statements in the cells, and the cells are the notation of the sections that treat them. The Clifford frame is a dictionary for the same algebra, not a second framework, and it appears in this article only in *The Legacy Pauli Gamma Formulation*. Every factor of $i$ in a product is spent with $i^2=-1$, so no product of cells carries an unspent power of $i$.
 
 **The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
 
@@ -139,7 +139,7 @@ $$
 
 with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two chiral ideals off-diagonally: this is the one-sided statement.
 
-On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(-1,+1,+1,+1)$,
+On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\varepsilon=(1,-1,-1,-1)$,
 
 $$
 G_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},
@@ -162,12 +162,12 @@ and, with the sum over $\mu$ plain,
 $$
 \mathbb{D}^{2}
 =-\tfrac12\{G_\mu,G_\nu\}\frac{\partial^{2}}{\partial x_\mu\,\partial x_\nu}
-=-g^{\mu\nu}\frac{\partial^{2}}{\partial x_\mu\,\partial x_\nu}
+=+g^{\mu\nu}[\mathbb{M}_-]\frac{\partial^{2}}{\partial x_\mu\,\partial x_\nu}
 =-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}
 =\Box .
 $$
 
-The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial/\partial x_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
+The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial/\partial x_\mu$; the second is the Lorentzian signature inside $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
 
 **The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
 
@@ -183,7 +183,7 @@ $$
 =2im\,\bar\psi\,(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi,
 $$
 
-a plain sum, with the derivative taken in $x_\mu=(t',x,y,z)$; in the $ict'$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The cells already carry the metric, $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, so an extra $\varepsilon_\mu$ would apply it a second time. The right-hand side vanishes only at $m=0$.
+a plain sum, with the derivative taken in $x_\mu=(t',x,y,z)$; in the $ict'$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The cells already carry the signature, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, so an extra $\varepsilon_\mu$ would apply it a second time. The right-hand side vanishes only at $m=0$.
 
 **The real structure.** The algebra's anti-linear object is the **real structure** $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign, fixing the anti-Hermitian sector $\mathbb{M}_-$ and negating the Hermitian one $\mathbb{M}_+$; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a **Majorana-type** conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary **Dirac** mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).
 
@@ -294,7 +294,9 @@ With those settled, the rest of the agenda becomes ordinary work: build the scal
 
 Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic electroweak sector, if one is ever constructed, would inherit that position unless it makes a prediction standard electroweak theory does not; and a sector whose gauge group, hypercharge assignments, scalar potential, and gauge fixing are all imported has no prospect of doing so. The agenda's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer electroweak theory while assuming all of it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -348,18 +350,18 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities used in the body.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -424,6 +426,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, the Lie-algebra decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and the open matter-representation question this agenda inherits.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection, the central $\mathrm{U}(1)$, the linear mass and the real structure, and the gauge-fixing gap.
 

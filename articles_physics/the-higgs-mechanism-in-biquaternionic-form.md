@@ -303,7 +303,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\beta$ | Quartic self-coupling of the scalar (distinct from the phase $\lambda$) |
 | $h$ | Radial (Higgs) mode, $m_h^2 = 2\beta v^2$ |
 | $\theta$ | Angular (would-be Goldstone) mode |
-| $g = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric for contractions |
+| $\varepsilon=(1,-1,-1,-1)$ | coordinate signs for contractions |
 | $\mathcal{L}_\text{scalar} = -\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi) - V$ | Gauge-invariant scalar Lagrangian |
 | $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\big|_\text{vac} = -\frac{ϙ^2v^2}{2\hbar^2}\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ | Kinetic term at the vacuum = mass term |
 | $M_A^2 = ϙ^2v^2/\hbar^2$ | Gauge boson mass-squared from the kinetic term |

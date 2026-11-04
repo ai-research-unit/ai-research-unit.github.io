@@ -266,7 +266,7 @@ $$
 \end{aligned}
 $$
 
-The factor $\gamma$ here is a number, not one of the frame cells that carry the $\gamma$ names in *The Legacy Gamma Formulation* below. The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$ and using $1-v^2/c^2=1/\gamma^2$, the cross terms cancel and the factors combine, giving
+The factor $\gamma$ here is a number, not one of the frame cells that carry the $\gamma$ names in *The Legacy Pauli Gamma Formulation* below. The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$ and using $1-v^2/c^2=1/\gamma^2$, the cross terms cancel and the factors combine, giving
 
 $$
 \vec E_2^2 - c^2\vec B_2^2 = \vec E^2 - c^2\vec B^2,
@@ -522,7 +522,9 @@ which is the quickest check of a computed flow. The characteristic polynomial is
 
 **Boundary.** The section adds an interpretation and no dynamics. It does not refine the classification of the paragraphs above, and it computes no flow that the field equations ask for. What it records is that the pair which already fixed the frame displaying the field also fixes what the field generates: the invariants are the spectral data of the flow. The standard forms of the four types, their normalisations and their classification up to conjugacy are not developed here; they are Minguzzi's, and *Further Reading* cites them.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The body of this article writes the field as an element of $\mathbb{B}$; its cell reading is the left multiplication $L_{\tilde F}$. The gamma names are attached to the frame cells only here.
 
@@ -595,9 +597,9 @@ $$
 $$
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]e_t,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}[\mathbb{M}_-]e_t,\qquad
 \{\gamma_5,\gamma_\mu\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 with $g_{\mu\nu}[\mathbb{M}_-]$, and the volume element
 
@@ -711,7 +713,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\gamma = 1/\sqrt{1-v^2/c^2}$ | Lorentz factor (a number, not a gamma cell) |
 | $\vec v$ | Boost velocity, speed $v=\lvert\vec v\rvert$ |
 | $L_a, R_b$ | Left and right multiplication cells, $L_a\psi=a\psi$, $R_b\psi=\psi b$ |
-| $\gamma_0,\dots,\gamma_3,\gamma_5$ | The five gamma generators, frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, listed in §*The Legacy Gamma Formulation* |
+| $\gamma_0,\dots,\gamma_3,\gamma_5$ | The five gamma generators, frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, listed in §*The Legacy Pauli Gamma Formulation* |
 | $c(M)$ | Coefficient matrix of the two-sided operator $M$ |
 | $\Gamma = \gamma_5 = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, representative of $\chi_{\mathrm{ad}}$ on the Dirac module |
 | $F$ | Biquaternion-valued Dirac field of the two-sided equation, not the field strength |
@@ -720,6 +722,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ludwik Silberstein, "Elektromagnetische Grundgleichungen in bivektorieller Behandlung", *Annalen der Physik* 22 (1907) 579–586, and 24 (1907) 783–784, for the original complex-vector formulation of the electromagnetic field.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for a modern account of the complex-vector and duality structure.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the standard treatment of the field invariants and the transformation of the fields.

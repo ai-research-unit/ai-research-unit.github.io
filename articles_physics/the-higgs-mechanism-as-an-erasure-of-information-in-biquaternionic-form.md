@@ -14,7 +14,7 @@ The reason the two statements do not contradict each other is the subject of the
 The article proceeds as follows. The symmetric phase is set up with its circle of degenerate vacua, and the informational status of the phase is fixed. The erasure is then shown to be the elimination of a gauge direction, with the invariant content of the vacuum isolated. The relocation of the information into the longitudinal mode and the mass is then derived, with the mass coefficient recomputed on a generic connection. The symmetry-breaking map is read as a channel — $*$-unitary on the full degrees of freedom and many-to-one only on the gauge-invariant ones — and compared with the loss of confinement and with the redundancy of the gauge orbit. The vacuum is then read as a stable record, in the structure of einselection, and the Landauer comparison is drawn. A ledger separates the framework's own construction from the imports.
 
 $$
-g = \mathrm{diag}(-1,+1,+1,+1)
+\varepsilon=(1,-1,-1,-1)
 $$
 
 on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
@@ -282,7 +282,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
-| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict'$-coordinate metric for contractions |
+| $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
 | $\Gamma = -(\hbar/ϙv)\theta$ | Gauge function of the unitary gauge |
 | $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial Q_\mu\,\theta$ | Gauge-invariant combination carrying the mass |
 | $M_A^2 = ϙ^2v^2/\hbar^2$, $M_A = ϙv/\hbar$ | Gauge-field (Proca) mass; the record |

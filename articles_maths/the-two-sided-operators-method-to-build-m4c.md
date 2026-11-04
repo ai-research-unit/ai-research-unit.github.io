@@ -494,7 +494,9 @@ $$
 
 **The full computation.** *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gamma frame is one choice inside the method's basis; the body writes the cells.
 
@@ -507,14 +509,14 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-**The Clifford relations.** With the metric $g=\operatorname{diag}(-1,+1,+1,+1)$,
+**The Clifford relations.** With the sign vector $\varepsilon=(1,-1,-1,-1)$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{I}_4,
 \qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
 \qquad
-\{\gamma_5,\gamma_\mu\}=0.
-$$
+\{\gamma_5,\gamma_\mu\}=0,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 **The chirality projectors.**
 $$
@@ -559,6 +561,7 @@ $$
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the construction and the product question.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the left regular model and its trace and determinant.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}^{\mathrm{pau}}R_{P_j}^{\mathrm{pau}}$.

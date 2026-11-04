@@ -436,7 +436,7 @@ $$
 \tilde F_{\mu} D_{\mu}\psi = 0,
 $$
 
-identical in form to the flat massless equation. On the spinor module the representative is a cell, but not the coefficient matrix of left multiplication by $\tilde F_\mu$: that matrix squares with a vector cross term left over. It is the Clifford cell $e_{\mu a}\,\mathsf G_a$, built from the four generator cells of *The Legacy Gamma Formulation*, whose four matrices close on the weights of the metric, $\{\mathsf G_a,\mathsf G_b\}=2g_{ab}I_4$, and whose square is the scalar operator below; in the rigid frame it is the cell Dirac operator $\mathbb D$ of the parent article.
+identical in form to the flat massless equation. On the spinor module the representative is a cell, but not the coefficient matrix of left multiplication by $\tilde F_\mu$: that matrix squares with a vector cross term left over. It is the Clifford cell $e_{\mu a}\,\mathsf G_a$, built from the four generator cells of *The Legacy Pauli Gamma Formulation*, whose four matrices close on the weights of the metric, $\{\mathsf G_a,\mathsf G_b\}=2g_{ab}I_4$, and whose square is the scalar operator below; in the rigid frame it is the cell Dirac operator $\mathbb D$ of the parent article.
 
 **The massive pair.** The massive equation is the chiral pair, for the two halves $\tilde\Psi_R$ and $\tilde\Psi_L$ of the Dirac field of the parent article. Its two lines are displayed separately because they are the two chiral halves of one field, not one equation written twice:
 
@@ -470,9 +470,9 @@ $$
 \boxed{\;(\tilde F_{\mu} D_{\mu})^2 = -\Box_g + \tfrac14 \mathrm{Ric}\;},
 $$
 
-Here $\mathrm{Ric}$ is the Ricci scalar and $\Box_g = g^{\mu\nu}\nabla_\mu\nabla_\nu = \frac{1}{\sqrt{-\det g}}\,\frac{\partial}{\partial x_\mu}\!\left(\sqrt{-\det g}\,g^{\mu\nu}\partial/\partial x_\nu\right)$ is the Laplace–Beltrami operator acting on spinors, the inverse metric being the one object written with raised indices because it is the inverse and not a component; so the boxed identity is the standard Lichnerowicz formula $\nabla^{*}\nabla + \tfrac14\mathrm{Ric}$ written with $\nabla^{*}\nabla = -\Box_g$, the form of *Spin Geometry*. The overall sign is fixed by the flat limit. The cells carry the weight $g_{ab}=\operatorname{diag}(1,-1,-1,-1)$, which is $g_{ab}[\mathbb{M}_-]$: they square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg. The rigid square is therefore $\partial^2/\partial t'^2-\Delta=-\Box_g$, and the curvature term must carry the opposite sign to it, which is the sign displayed. The identity was recomputed here for this article on a conformal metric in two dimensions, in both signatures, with the connection taken from the frame: $(\mathsf G_a e_a{}^\mu D_\mu)^2=-g^{\mu\nu}\nabla_\mu\nabla_\nu+\mathrm{Ric}/4$ holds identically in the geometer's convention, in which the cells square to minus the norm.
+Here $\mathrm{Ric}$ is the Ricci scalar and $\Box_g = g^{\mu\nu}\nabla_\mu\nabla_\nu = \frac{1}{\sqrt{-\det g}}\,\frac{\partial}{\partial x_\mu}\!\left(\sqrt{-\det g}\,g^{\mu\nu}\partial/\partial x_\nu\right)$ is the Laplace–Beltrami operator acting on spinors, the inverse metric being the one object written with raised indices because it is the inverse and not a component; so the boxed identity is the standard Lichnerowicz formula $\nabla^{*}\nabla + \tfrac14\mathrm{Ric}$ written with $\nabla^{*}\nabla = -\Box_g$, the form of *Spin Geometry*. The overall sign is fixed by the flat limit. The cells carry the weight $g_{ab}=\operatorname{diag}(1,-1,-1,-1)$, which is $-g_{ab}[\mathbb{M}_-]$: they square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg. The rigid square is therefore $\partial^2/\partial t'^2-\Delta=-\Box_g$, and the curvature term must carry the opposite sign to it, which is the sign displayed. The identity was recomputed here for this article on a conformal metric in two dimensions, in both signatures, with the connection taken from the frame: $(\mathsf G_a e_a{}^\mu D_\mu)^2=-g^{\mu\nu}\nabla_\mu\nabla_\nu+\mathrm{Ric}/4$ holds identically in the geometer's convention, in which the cells square to minus the norm.
 
-The square is taken on the spinor module, where the operator is a cell. The algebra element itself does not square to a scalar: in the rigid frame $\tilde\nabla^2$ carries the vector term $-2i\sum_k\vec e_k\,\partial^2/\partial t'\partial x_k$, so the algebra square is not the scalar Lichnerowicz square. The formula is the square of the Clifford cell, not of the algebra element, and that is why it is stated for the cell reading. The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $+\mathrm{Ric}/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $\sum_{\mu,\nu}g_{\mu\mu}[\mathbb{M}_-]g_{\nu\nu}[\mathbb{M}_-] F_{\mu\nu}S_{\mu\nu}$, with $S$ the spin generator — the $S_{ab}$ of *The Legacy Gamma Formulation*, written here with world indices — the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $\mathrm{Ric}/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.
+The square is taken on the spinor module, where the operator is a cell. The algebra element itself does not square to a scalar: in the rigid frame $\tilde\nabla^2$ carries the vector term $-2i\sum_k\vec e_k\,\partial^2/\partial t'\partial x_k$, so the algebra square is not the scalar Lichnerowicz square. The formula is the square of the Clifford cell, not of the algebra element, and that is why it is stated for the cell reading. The curvature term is not optional: a Dirac field on a curved background obeys a Klein–Gordon-type equation with the $+\mathrm{Ric}/4$ coupling even in the absence of any source, which is the curved-space face of the statement that the square of a first-order operator is second order. With minimal coupling to an electromagnetic potential of the companion articles, the square acquires in addition a field-strength–spin term of the form $\sum_{\mu,\nu}g_{\mu\mu}[\mathbb{M}_-]g_{\nu\nu}[\mathbb{M}_-] F_{\mu\nu}S_{\mu\nu}$, with $S$ the spin generator — the $S_{ab}$ of *The Legacy Pauli Gamma Formulation*, written here with world indices — the curved-space relative of the Pauli term of the Gordon decomposition; its coefficient is stated in the curved-Dirac literature and is not rederived here. For comparison, the alternative first-order equation whose square is exactly the Laplacian, without the $\mathrm{Ric}/4$ term, is the **Dirac–Kähler equation**; the companion maths article records the price of that alternative, which is the loss of the Lorentz-covariant fourfold split in curved spacetime.
 
 ### What This Does and Does Not Settle
 
@@ -646,7 +646,9 @@ This article puts the biquaternion Dirac equation on an imported background $g$.
 
 Read further, the local complex structure is an **emergent metric** in the sense of the analogue-gravity programme — the wave cone is a property of the medium and not of a fixed background — and the construction is a **bundle of algebras** whose typical fibre is the biquaternion algebra, whose local complex structure is a section of the frame bundle and whose medium is a connection on it. The interpretation is labelled and bounded: it is the shape the framework's algebra takes when the complex structure is allowed to vary, and it is offered against the imported $g$, not as a derivation of Einstein's equations. The owner of the local construction is *The Local Complex Structure and the Speed of Light*.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas generate $\mathrm{Cl}_{3,1}(\mathbb{C})=M_4(\mathbb{C})$; they are not a different algebra. In the display below $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products that the gammas generate:
 
@@ -675,7 +677,7 @@ $$
 $$
 $$
 [\gamma_a,\gamma_b]=2\gamma_a\gamma_b\quad(a\ne b),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
@@ -763,6 +765,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the tetrad formalism and the distinction between coordinate and orthonormal frames in general relativity.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the metric, the curvature tensors, and the spinor formulation of curved spacetime.
 - A. Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963) 7–9, for the square of the Dirac operator and the $\tfrac14 \mathrm{Ric}$ curvature term.

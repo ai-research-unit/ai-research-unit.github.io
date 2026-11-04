@@ -28,17 +28,17 @@ with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame. The antisymmetrize
 
 Two features of the standard theory are recorded and read in the algebra. First, in the massless case the system has a gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x_\mu\,\epsilon$, with $\epsilon$ an arbitrary Dirac spinor; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
-The conventions are those of the companion articles: the algebra, the units, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame Conventions*; the cell, its composition and its identity are those of *Operator Family Conventions*; and the frame cells $\gamma_\mu$ and $\gamma_5$ are those of *Matrix Representations Conventions*, §*The Legacy Gamma Formulation*. None is restated here. The label $\mu$ of a cell is the coordinate index of its left multiplier, and the index is always written low. The right multiplier is always a spatial unit — the direction $\nu(\mu)$ is one of $x,y,z$ by construction, never $t$ — so it carries the arrow, $\vec e_{\nu(\mu)}$; the left multiplier carries the arrow only when its index is written out as spatial, $L_{\vec e_k}^{\mathrm{axf}}$; the generic $L_{e_\mu}^{\mathrm{axf}}$ is left plain, since $\mu=0$ gives the scalar $e_t=1$. The factor $i$ of a cell is a normalisation and not a choice, and the cells with it removed would square to $-g_{\mu\nu}$. Where a second $i$ meets the $i$ of a cell the two collapse, $i^2=-1$, so that $i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ and the Dirac operator $i\,\gamma_\mu\partial/\partial x_\mu$ of the frame is minus the plain two-sided contraction. Every display below is written in these glyphs, so that the factor $i$ of a cell is read once, here, and not at each occurrence; where the two multipliers carry the argument — the algebra element of the mass term, the reading of the trace — the cell is spelled out. The cells are elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not of $\mathbb{B}$, and the frame is a coordinate choice.
+The conventions are those of the companion articles: the algebra, the units, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame Conventions*; the cell, its composition and its identity are those of *Operator Family Conventions*; and the frame cells $\gamma_\mu$ and $\gamma_5$ are those of *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*. None is restated here. The label $\mu$ of a cell is the coordinate index of its left multiplier, and the index is always written low. The right multiplier is always a spatial unit — the direction $\nu(\mu)$ is one of $x,y,z$ by construction, never $t$ — so it carries the arrow, $\vec e_{\nu(\mu)}$; the left multiplier carries the arrow only when its index is written out as spatial, $L_{\vec e_k}^{\mathrm{axf}}$; the generic $L_{e_\mu}^{\mathrm{axf}}$ is left plain, since $\mu=0$ gives the scalar $e_t=1$. The factor $i$ of a cell is a normalisation and not a choice, and the cells with it removed would square to $-\varepsilon_\mu\delta_{\mu\nu}$. Where a second $i$ meets the $i$ of a cell the two collapse, $i^2=-1$, so that $i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ and the Dirac operator $i\,\gamma_\mu\partial/\partial x_\mu$ of the frame is minus the plain two-sided contraction. Every display below is written in these glyphs, so that the factor $i$ of a cell is read once, here, and not at each occurrence; where the two multipliers carry the argument — the algebra element of the mass term, the reading of the trace — the cell is spelled out. The cells are elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not of $\mathbb{B}$, and the frame is a coordinate choice.
 
-The informational basis is $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ — the four units that square to $+e_t$ — and it is distinct from the coordinate basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, whose three spatial legs carry no factor $i$. With the mostly-minus metric $g=\mathrm{diag}(-1,+1,+1,+1)$,
+The informational basis is $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ — the four units that square to $+e_t$ — and it is distinct from the coordinate basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, whose three spatial legs carry no factor $i$. With the mostly-minus metric $\varepsilon=(1,-1,-1,-1)$,
 
 $$
 (\gamma_0)^2=+I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
-\bigl\{\gamma_\mu,\gamma_\nu\bigr\}=2g_{\mu\nu}I_4 .
+\bigl\{\gamma_\mu,\gamma_\nu\bigr\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 .
 $$
 
-No index is raised or lowered, and the metric enters only through the **sign vector** $\varepsilon_\mu:=g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$: where two low indices are contracted with the metric, the term carries $\varepsilon_\mu$. The chirality cell is the product of the four frame cells,
+No index is raised or lowered, and the metric enters only through the **sign vector** $\varepsilon_\mu$, the square of the $\mu$-th cell, $\varepsilon_0=+1$, $\varepsilon_k=-1$: where two low indices are contracted with the metric, the term carries $\varepsilon_\mu$. The chirality cell is the product of the four frame cells,
 
 $$
 \gamma_5=i\,\gamma_0\gamma_1\gamma_2\gamma_3,
@@ -94,7 +94,7 @@ $$
 \mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\Bigl(\varepsilon_\mu\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}\,\gamma_5\,\gamma_\nu\,\partial/\partial x_\rho\,\psi_\sigma - m\,h_{\mu\nu}\psi_\nu\Bigr),
 $$
 
-up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $h_{\mu\nu}$, not the Clifford metric $g_{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2\sum_\mu A_\mu A_\mu$.
+up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $h_{\mu\nu}$, not the cell metric $\varepsilon_\mu\delta_{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2\sum_\mu A_\mu A_\mu$.
 
 ### The constraint and the reduction
 
@@ -444,7 +444,9 @@ The conventions are those of three companion articles:
 - Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the translation of the frame cells and their antisymmetrized products into the algebra's units.
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part of the algebra and the four-vector representation from which the vector-spinor is built.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and the transcription introduces no new symbol: the $\gamma_\mu$ and $\gamma_5$ of the literature are the cells declared in the conventions, $\gamma_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, the same cells in the axis-free display being $\gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$. The two vocabularies therefore name the same five objects in one chosen frame of the cell algebra, and no translation between two algebras is needed; what the literature adds is the matrix representation of those objects, not a second set of generators.
 
@@ -495,11 +497,11 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | $\tilde{\Psi}_\mu\in\mathbb{B}$ | Biquaternion-valued components of the vector-spinor |
 | $\epsilon$ | Dirac-spinor parameter of the massless shift symmetry |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | A cell: one left and one right multiplier, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity cell is $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; the frame is written with the two multipliers |
-| $\gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$ | Frame cells, one factor $i$ each, $g=\mathrm{diag}(-1,+1,+1,+1)$; the four gamma cells of the dictionary |
+| $\gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | Frame cells, one factor $i$ each, $\varepsilon=(1,-1,-1,-1)$; the four gamma cells of the dictionary |
 | $\gamma_{\mu\nu}:=\tfrac12[\gamma_\mu,\gamma_\nu]=h_{\mu\nu}$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma_{\mu\nu}$ |
 | $\Gamma_{0k}=i\vec e_k$, $\Gamma_{k0}=-i\vec e_k$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
 | $\gamma_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm \gamma_\mu\,\gamma_\nu\,\gamma_\rho=T_{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |
-| $\varepsilon_\mu=g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
+| $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
 | $T_{\mu\nu\rho}=\gamma_{\mu\nu\rho}$, $h_{\mu\nu}=\gamma_{\mu\nu}$ | Antisymmetrized triple and pair of frame cells; the kinetic structure and the mass structure, the mass term entering as $+i\,m\,h_{\mu\nu}\psi_\nu$ in the trivector writing and as $-m\,h_{\mu\nu}\psi_\nu$ in the epsilon writing |
 | $\mathbb{D}=i\,\gamma_\mu\partial/\partial x_\mu$ | Dirac operator of the frame; the reduced equation is $(\mathbb{D}-m)\psi_\mu=0$ |
 | $S=\gamma_\sigma\psi_\sigma$ | Trace spinor |
@@ -514,6 +516,7 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - William Rarita and Julian Schwinger, "On a theory of particles with half-integral spin", *Physical Review* 60 (1941) 61, for the original field equation for spin three-halves.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. III: Supersymmetry* (Cambridge, 2000), for the Rarita–Schwinger field, its gauge structure, and its role in supergravity.
 - Daniel Z. Freedman and Antoine Van Proeyen, *Supergravity* (Cambridge, 2012), for the spin-$\tfrac32$ field, its constraints, and the counting of its physical states.

@@ -181,7 +181,9 @@ is a spectral triple, the **almost commutative** geometry. Its dimension spectru
 
 **Remark.** The finite examples show that the theory is non-vacuous in degree zero and that the metric information can be entirely discrete. They also exhibit the two roles of the operator: as the metric datum through the distance formula, and as the $K$-homology class through the index pairing. In the almost commutative case both roles are combined, and the operator is the sum of the geometric operator of $M$ and the internal operator of the finite factor.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -231,6 +233,7 @@ The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\do
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Alain Connes, *Noncommutative Geometry* (Academic Press, 1994), for spectral triples, the distance formula, cyclic cohomology and the index pairing.
 - Alain Connes, "Noncommutative geometry and reality," *Journal of Mathematical Physics* **36** (1995), 6194–6231, for the real structure, the KO-dimension and the signs table.
 - Alain Connes and Henri Moscovici, "The local index formula in noncommutative geometry," *Geometric and Functional Analysis* **5** (1995), 174–243, for the local index formula and the dimension spectrum.

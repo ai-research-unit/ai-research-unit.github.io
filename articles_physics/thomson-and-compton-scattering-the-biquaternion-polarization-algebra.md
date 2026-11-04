@@ -382,7 +382,9 @@ The **mass enters as the one external scale**: the Klein–Nishina function depe
 
 What the framework does **not** supply is the dynamics. The Thomson cross-section and the Klein–Nishina formula are consequences of the Maxwell–Dirac action and its quantisation, not of the algebra; the algebra organises the polarization bookkeeping and exhibits the states, the observables, and the geometric factors as elements of one structure, but the $r_e^2$ and the $(\omega_{\mathrm{out}}/\omega)^2$ come from the field theory. This is the same boundary the photon article draws: the framework transcribes the standard physics faithfully, and the specific facts attached to the photon and the electron are supplied from outside.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
 $$
@@ -405,7 +407,7 @@ $$
 
 with the metric and orientation
 $$
-g_{\mu\nu}=\mathrm{diag}(+1,-1,-1,-1),\qquad \epsilon_{0123}=+1 .
+g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1),\qquad \epsilon_{0123}=+1 .
 $$
 The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{e_t}^{\mathrm{pau}}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P$ enter the cell formulation with one generator of each type.
 
@@ -441,14 +443,14 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.**
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
@@ -464,7 +466,7 @@ $$
 $$
 
 $$
-\mathrm{Tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{Tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{Tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -537,7 +539,7 @@ Compton scattering shifts the frequency to $\omega_{\mathrm{out}} = \omega/[1+(\
 $$
 D_s(p)=\tfrac12 D(p)\Bigl(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+s_{0}R_{\vec e_y}^{\mathrm{axf}}+\sum_k s_{k}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\Bigr) ,
 $$
-which sum back to $D(p)$; the asymmetry is the part of the cross-section linear in the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$, the same axial factor that carries the photon's circular polarization. The electron's spin biquaternion is a Hermitian element with the same cone structure as the beam's coherence biquaternion. The Legacy Gamma Formulation names the frame in which all of this is written, and separates the two Dirac equations of the series: the one-sided chiral pair that the scattering uses, and the two-sided equation that belongs to the dictionary.
+which sum back to $D(p)$; the asymmetry is the part of the cross-section linear in the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$, the same axial factor that carries the photon's circular polarization. The electron's spin biquaternion is a Hermitian element with the same cone structure as the beam's coherence biquaternion. The Legacy Pauli Gamma Formulation names the frame in which all of this is written, and separates the two Dirac equations of the series: the one-sided chiral pair that the scattering uses, and the two-sided equation that belongs to the dictionary.
 
 ## Summary of Notation
 
@@ -574,6 +576,7 @@ which sum back to $D(p)$; the asymmetry is the part of the cross-section linear 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Oskar Klein and Yoshio Nishina, "Über die Streuung von Strahlung durch freie Elektronen nach der neuen relativistischen Quantendynamik von Dirac", *Zeitschrift für Physik* **52** (1929), for the Klein–Nishina cross-section and its derivation.
 - Walter Heitler, *The Quantum Theory of Radiation* (Oxford, 3rd edn, 1954), for the polarization of Compton-scattered radiation, the polarization asymmetry, and the electron-spin terms.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 3rd edn, 1998), for the classical Thomson scattering, the Larmor power, and the polarization dependence of dipole radiation.

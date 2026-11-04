@@ -2,393 +2,601 @@
 
 ## Introduction
 
-Under the rule of *The Clifford Layer Is the Cell Layer*, the corpus writes its spinors and its Dirac operators in the algebra itself. A left multiplication, a right multiplication, or a product of the two acts on an element of $\mathbb{B}$, and the body of an article carries no gamma and no column. When an array is needed, the corpus prints it in the coefficient basis of the four units and labels it $\mathrm{axf}$. Two older displays remain in use: the Pauli display, labelled $\mathrm{pau}$, whose arrays are built from the Pauli matrices, and the gamma display, whose arrays are the Dirac matrices. The question of this article is why the corpus displays in $\mathrm{axf}$ and not in either of the other two. The short answer is that the two older displays select a spatial direction and $\mathrm{axf}$ selects none.
+This article defends one claim: writing a fundamental equation of physics with the Pauli or gamma matrices is a formal defect, and the axis-free matrices are the display that does not have it. The defect is that both displays single out one spatial direction, and physical space has no preferred spatial direction. The laws are isotropic and the arrays are not, so every formula written in them carries a datum the physics does not contain, and the notation gives no place to mark that datum and no way to subtract it.
 
-The argument has three steps. **The first** is a fact about the Pauli matrices: the third one is the diagonal one, so a basis of $\mathbb{C}^2$ that makes the Pauli triplet look standard is the eigenbasis of a chosen spatial direction. **The second** is that the choice propagates: the same axis reappears in the $2\times2$ image, in the $4\times4$ Pauli representation, and in the five gammas, in each case as the entry that is diagonal or as the pair of blocks that is marked. **The third** is that the algebra makes the same choice whenever it builds an idempotent from a root, and from the idempotent follow the Peirce decomposition, a Peirce basis with a gauge, a minimal left ideal, and a two-component spinor space, which is what the Weyl blocks split. One arbitrary choice of axis is therefore carried by five objects at once.
+The damage is worse than a decoration, and this is the part usually missed. A display that fixes a direction silently absorbs whatever depends on that direction, so the page stops showing it. It can hide a physical structure, by writing an object that is one orbit under rotation as several unrelated entries. It can hide a property of an equation, by making an invariance look like an accident of the entries. It can hide a correspondence, by presenting as two different equations what is one operator in two frames. No result changes and no computation is wrong. What is lost is the ability to see, on the page, which statements belong to the physics and which belong to the notation, and a structure that cannot be seen cannot be used.
 
-The conclusion is stronger than a preference of taste: for the general writing of physics equations the differentiation is a **defect**. No equation of general physics distinguishes one spatial direction from another, so a notation that does distinguish one has put a datum into the page that the equation does not contain, and has done so without a mark.
+The axis-free display writes no direction, and that is why it is the display of the physics articles of this corpus.
 
-Nothing in the algebra changes, and that is the point. The three displays are three bases of the same $M_4(\mathbb{C})$, related by conjugation, so no product, no trace, no determinant and no spectrum moves when the display changes. What the Pauli and gamma displays add is a fixed direction, and a fixed direction is a gauge. A gauge chosen by the physics is a convention that can be stated once; a gauge chosen by the notation is a convention that follows every formula written in it, silently, and must be undone by the reader before the formula can be applied to a second problem.
+One piece of precision is needed before either claim can be checked. A display is an array read in a basis, and the basis is the choice. An operator here is an element of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen, and its display is a $4\times4$ array in a basis of the carrier $\mathbb{B}$, of complex dimension four. The $\mathrm{axf}$ display and the $\mathrm{pau}$ display are two bases of that one carrier: two arrays of one operator, related by a conjugation. The gamma form is not a third basis but a list of five fixed cells of the operator algebra, and a gamma formula writes an operator as a sum of those five and their products. A change from one display to another preserves every product, every trace, every determinant and every spectrum, so the choice is never a question of correctness.
 
-The consequence is a rule of use, and it is the second subject of this article. If the differentiation is a defect, then the chain it generates — the $2\times2$ Pauli matrices, the $4\times4$ Pauli representation, the root $\vec\Xi=i\vec e_z$, the idempotents, the Peirce decomposition and its basis, the minimal left ideals, the two-component spinors and the Weyl blocks — is used in the corpus **as little as possible**, and each link only where that link is itself the subject. $\mathrm{axf}$ fixes no direction, so it can be read without knowing that a choice was ever available.
+The article has four parts.
 
-**What this article does not claim.** It does not claim that the gamma or Pauli formalisms are wrong, that their users are careless, or that any calculation in the literature is in error — the word *defect* is used of a notation for general use, and not of the people who use it. A calculation in a definite frame is correct in that frame; what is defective is carrying the frame into a formula that is meant to hold in all of them. The article does not claim a new prediction. It separates what the axis-carrying constructions still need from what the display can drop, and it states how much of the chain the corpus keeps.
+The first part takes the Pauli matrices as they are printed, finds the direction in $\sigma_3$, proves in one line why the third matrix is the diagonal one, and follows the direction into the four-dimensional array, into the root of the Peirce frame, into the idempotents, into the ideal, into the column and into the gamma set. Section *The Direction Inside the Gamma Matrices* does the same for the five gammas, where the direction sits in the frame instead of in a diagonal entry, and shows that no choice of gamma basis can remove it.
 
-## The Axis in the Pauli Matrices
+The second part states the defect in physical terms, and the section *Why a Direction in the Notation Is a Defect* is the core of the article: an equation of general physics must not be written under a display that singles out a direction the physical reality does not contain.
 
-**The arrays of the units.** The $2\times2$ image of the algebra sends the identity to the identity and the three spatial units to the Pauli matrices,
+The third part gives the alternative. Section *The Axis-Free Matrices* prints the $\mathrm{axf}$ arrays, proves that no direction can enter them, and lists what they buy and what they cost. Section *The Intrinsic Form* states the preferred form of a physical equation, which is not a matrix at all: a pair of multipliers acting on an element, with no basis.
+
+The fourth part is practical. Section *Migrating from the Pauli Framework* gives the three passes that carry a section of physics into the $\mathrm{axf}$ and intrinsic forms, the dictionary, the four statements that turn out false in the move, and the checks that catch them.
+
+## The Direction Inside the Pauli Matrices
+
+### The Three Matrices
+
+The Pauli matrices are
+
 $$
-\mathsf M_2(e_t)=I_2,\qquad \mathsf M_2(\vec e_x)=-i\sigma_1,\qquad \mathsf M_2(\vec e_y)=-i\sigma_2,\qquad \mathsf M_2(\vec e_z)=-i\sigma_3 .
+\sigma_1=\begin{pmatrix}0&1\\ 1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}.
 $$
-Two of the three are off-diagonal and one is diagonal. That asymmetry is the whole matter. A direction is not named in the formula, yet the reader can find it: it is the one whose array is diagonal.
 
-**A diagonal array is a statement about a basis.** The matrix $\sigma_3=\operatorname{diag}(1,-1)$ has the two basis vectors of $\mathbb{C}^2$ as eigenvectors, with eigenvalues $+1$ and $-1$. A basis in which $\sigma_3$ is diagonal is therefore a basis adapted to the third direction, and the adaption is a choice. Had the frame been built on $\vec e_x$ instead, the diagonal array would be $-i\sigma_1$, and the two remaining units would be off-diagonal. Nothing in the algebra prefers one of the three; the standard triplet prefers the third because it is written first as a diagonal.
+Two of them carry $i$ or carry zeros on the diagonal. The third is real and diagonal. That difference is the subject of this section, and it is not a difference between three operators. It is a difference between three positions in a list, produced by the order in which the list was built.
 
-**The same choice in the raising and lowering pair.** The combinations
+The same asymmetry appears in the two-dimensional image of a general element. The image of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ is
+
 $$
-\sigma_\pm=\tfrac12(\sigma_1\pm i\sigma_2)
+\mathsf M_2(\tilde Q)=Q_t\,\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
-are the off-diagonal halves, and they raise and lower the eigenvalue of $\sigma_3$. The triplet $(\sigma_3,\sigma_+,\sigma_-)$ is thus the triple of a diagonal part and two nilpotent parts, which is the shape of a Peirce decomposition. It is the Peirce decomposition of the third direction, written in $2\times2$ arrays before any biquaternion is mentioned.
 
-**What the array does and does not say.** The identities $\sigma_k^2=I_2$, $\operatorname{tr}\sigma_k=0$ and $\det\sigma_k=-1$ hold for all three, and they are statements about the algebra. The statement *the third matrix is the diagonal one* holds for one frame only, and it is a statement about the display. A page that prints the standard triplet prints both kinds of statement in the same font, and the reader has no mark that separates them.
+The diagonal of this matrix carries $Q_t$ and $Q_z$. The off-diagonal carries $Q_x$ and $Q_y$. The trace and the determinant are unaffected — the trace is $2Q_t$ and the determinant is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ in every display — but the shape of the array is not neutral. It puts one spatial coefficient in the diagonal slots and the other two in the off-diagonal slots, and a reader has no way to learn from the array that this was a decision.
 
-## The Same Axis in Four Dimensions
+### Why the Third Matrix Is the Diagonal One
 
-**The Pauli representation doubles the choice.** The regular matrix in the Pauli display is the $2\times2$ image taken once per tensor factor,
+The reason is the construction, not the algebra. The two-dimensional image is left multiplication read on a minimal left ideal, and the ideal is built from an idempotent. The idempotents used are the Peirce idempotents of the root $\vec\Xi=i\vec e_z$,
+
 $$
-\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q),\qquad
-\mathsf M_{4R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 ,
+\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),
 $$
-and the second display of *Matrix Representations Conventions* assembles it from the two blocks. The axis enters twice: inside each $2\times2$ block, as the diagonal Pauli matrix, and in the block structure itself, which is the split into the two chiral halves. A $4\times4$ array in this display therefore marks a direction twice over.
 
-**The gamma set inherits it.** The five gammas of the Pauli display are
+with $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$. The carrier of the image is $\mathbb{B}\tilde\Pi_+$, of complex dimension two, and the matrix of $\vec e_z$ on that carrier is diagonal because $\vec e_z$ built the carrier.
+
+The computation is one line. Multiply the idempotent by the unit:
+
 $$
-\gamma_0=\sigma_1\otimes I_2,\qquad \gamma_k=i\sigma_2\otimes\sigma_k,\qquad \gamma_5=-\sigma_3\otimes I_2 ,
+\tilde\Pi_+\vec e_z=\tfrac12\bigl(\vec e_z+i\vec e_z^2\bigr)=\tfrac12\bigl(\vec e_z-i e_t\bigr)=-i\,\tfrac12\bigl(e_t+i\vec e_z\bigr)=-i\tilde\Pi_+.
 $$
-so the third spatial direction is the one carried by $\sigma_3$ in the spatial triplet, and $\gamma_5$ is diagonal in the same basis. In the Dirac basis, where $\gamma_0$ and $\gamma_5$ are both diagonal, the array shows the axis in the two places that matter most: the energy and the chirality. In the chiral basis the axis moves into $\gamma_k$ and stays visible in which entry of the block is marked.
 
-**A change of gamma basis does not remove the choice.** Every gamma basis is $S\gamma_\mu S^{-1}$ for some invertible $S$, and the family is a homogeneous space under $GL_4(\mathbb{C})$. A general $S$ mixes the five among themselves and among the other eleven cells, so the five-name list survives as a list of five and not as a basis. What no $S$ does is restore the symmetry among the three spatial directions: a conjugation moves the axis, it does not average over it. The axis is a gauge that the notation does not name, and a change of gauge is written in the literature with the same symbol as a change of algebra.
+So $\vec e_z$ acts on the ideal as the scalar $-i$, and its array is $-i\sigma_3$: diagonal, with the two eigenvalues $-i$ and $+i$ in the two slots. The other two units permute the two slots, so their arrays are off-diagonal. The root $i\vec e_z$ is the datum the display consumes, and the diagonal of $\sigma_3$ is its footprint.
 
-## The Root, and What It Generates
+Nothing forced $\vec e_z$. The same construction runs on $\vec e_x$ or on $\vec e_y$, with the idempotents $\tfrac12(e_t\pm i\vec e_x)$ and $\tfrac12(e_t\pm i\vec e_y)$, and produces a triplet whose diagonal member is the unit used. The algebra has three interchangeable spatial units, and the display needs exactly one of them.
 
-**In the algebra the choice appears as a root.** There is no matrix, so the choice of axis appears as a choice of an element whose square is $e_t$. The three cheapest are the imaginary multiples of the spatial units,
+### The Direction in the Four-Dimensional Array
+
+The four-dimensional Pauli array of the same element is the two-dimensional image in both slots, because left multiplication does not mix the two Peirce components:
+
 $$
-\vec\Xi_x=i\vec e_x,\qquad \vec\Xi_y=i\vec e_y,\qquad \vec\Xi_z=i\vec e_z,\qquad \vec\Xi_k^2=e_t ,
+L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q).
 $$
-and the three are exchanged by the rotations of the algebra. The conventional choice is the third, $\vec\Xi=i\vec e_z$, and it is the same choice the diagonal Pauli matrix makes.
 
-**The idempotents.** From the root come the two idempotents
+The arrays of the four units show the direction twice. The time unit is the identity, the $\vec e_z$ array is diagonal, and the other two are off-diagonal inside each of the two identical blocks:
+
 $$
-\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm\vec\Xi\bigr)=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
-\tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t .
+L^{\mathrm{pau}}_{e_t}=\mathrm I_4,\qquad
+L^{\mathrm{pau}}_{\vec e_z}=\begin{pmatrix}-i&0&0&0\\ 0&i&0&0\\ 0&0&-i&0\\ 0&0&0&i\end{pmatrix},
 $$
-They are the two spectral projectors of the third direction, and they exist only because a direction was chosen. No idempotent of this kind is canonical in $\mathbb{B}$: every one of them is built on a root, and the roots come in three families.
 
-**The Peirce decomposition.** The pair splits the algebra into four pieces,
 $$
-\mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},\qquad
-\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau ,
+L^{\mathrm{pau}}_{\vec e_x}=\begin{pmatrix}0&-i&0&0\\ -i&0&0&0\\ 0&0&0&-i\\ 0&0&-i&0\end{pmatrix},\qquad
+L^{\mathrm{pau}}_{\vec e_y}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
 $$
-each of complex dimension one. The decomposition is the algebraic content of the diagonal/off-diagonal pattern of the Pauli triplet: $\mathbb{B}_{++}$ and $\mathbb{B}_{--}$ are the diagonal parts, and the two mixed pieces are the raising and lowering parts. It is a decomposition of the algebra of the third direction.
 
-**The Peirce basis, and its gauge.** A basis adapted to the decomposition is
-$$
-\bigl(\tilde\Pi_+,\ \vec\Upsilon_+,\ \vec\Upsilon_-,\ \tilde\Pi_-\bigr),\qquad
-\vec\Upsilon_\pm=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),\qquad
-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
-$$
-The idempotents fix the splitting and not the basis: the pair may be rescaled,
-$$
-\vec\Upsilon_+\longmapsto\lambda\,\vec\Upsilon_+,\qquad \vec\Upsilon_-\longmapsto\lambda^{-1}\,\vec\Upsilon_-,\qquad \lambda\in\mathbb{C}^{\times},
-$$
-and the matrix of an element in the Peirce basis changes with $\lambda$. The Peirce basis therefore carries a gauge on top of the choice of axis, and a page that prints one such matrix prints one representative of a two-parameter family, the axis and the scale.
+Three statements follow, and each is a statement about the page and not about the algebra.
 
-**The ideal, and the two-component spinor.** The left ideal
-$$
-\mathbb{B}\tilde\Pi_+=\mathbb{C}\,\tilde\Pi_+\oplus\mathbb{C}\,\vec\Upsilon_+
-$$
-is minimal: it is a complex vector space of dimension two, closed under left multiplication, and every minimal left ideal of $\mathbb{B}$ arises this way from some idempotent. That two-dimensional space is the two-component spinor space of the literature, and a column of two complex numbers is its coordinate column in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$. The right ideal $\tilde\Pi_+\mathbb{B}$ is the mirror image, and the pair of them is the pair of chiral halves.
+Exactly one of the three spatial units is diagonal. A triplet with this shape cannot be written without deciding which unit it is, because the shape of the list — one diagonal member, two off-diagonal members — is what a triplet of this kind is. The decision is made at the moment the arrays are written, and it is made silently.
 
-**The Weyl blocks inherit the split.** The chirality array of the display is the diagonal of the same basis,
-$$
-\gamma_5=\operatorname{diag}(-I_2,I_2),
-$$
-and the projectors $P_\pm=\tfrac12(1\pm\gamma_5)$ cut the column into its upper and lower halves. Those halves are the coordinate spaces of the two ideals. The Weyl block decomposition is therefore the Peirce decomposition read on the module, and the Weyl spinors are the components of the minimal left ideal. Nothing new is chosen at this step: the choice was made at the root.
+The diagonal unit appears twice, once in each block. The repetition is not an accident of the layout; it is $\mathrm I_2\otimes\cdot$, the statement that the frame was built from a root and that the root appears in both slots.
 
-**One choice, every link.** The chain is short and it is a chain: a root gives the idempotents, the idempotents give the Peirce decomposition, the decomposition gives a Peirce basis and its gauge, the basis gives the minimal left ideal, the ideal is the two-component spinor space, and the module split is the Weyl block decomposition. Add the two arrays the chain began with, the $2\times2$ Pauli matrices and the $4\times4$ Pauli representation, and the whole chain is nine links long. A display that prints the Pauli triplet prints the first link, and the other eight follow from it whether or not the page says so.
+The two remaining spatial units carry the same weight. No entry distinguishes $\vec e_x$ from $\vec e_y$, which is correct, because no entry should. The asymmetry is therefore exactly one-against-two, and it sits in the diagonal.
 
-## The Defect
+### The Diagonal Cells Tell the Same Story
 
-**The defect, defined.** A notation has a **display defect** when it makes a statement look like a property of the object while the statement is in fact a property of the coordinate. Three questions test it. Does the notation force a choice that the object does not force? Is the choice marked where it is made? Does the choice propagate to other objects built in the notation? The Pauli display answers yes to all three, and the gamma display inherits the answers.
+The same fact can be stated without writing a single array, and the statement is the one used later.
 
-**The first test: the choice is forced.** The algebra has three spatial units and the rotations exchange them; no equation of general physics singles one out. The Pauli triplet singles out the third, because exactly one of its members is diagonal. The forcing is not a convention laid on top of the algebra — it is a consequence of writing the triplet in the standard form, and there is no way to write it in that form without it.
+A cell is diagonal in a basis when it sends each basis vector to a multiple of itself. In the coefficient basis the diagonal cells are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$: the square of a unit is a scalar, so it multiplies every basis vector by that scalar. No other cell is diagonal, because a cell with two different slots multiplies a unit by a different unit.
 
-**The second test: the choice is unmarked.** A page that prints $\sigma_3=\operatorname{diag}(1,-1)$ prints no sentence saying which direction was fixed, and the diagonal carries the answer only to a reader who already knows. Worse, the statement *the third component is diagonal* is grammatical in the same way as *the three squares are $e_t,-e_t,-e_t$*: both look like facts about the algebra, and only the second is one. The reader cannot sort them, because the notation gives no mark.
+In the Pauli display the diagonal cells are four others. They are $e_te_t$, $e_t\vec e_z$, $\vec e_ze_t$ and $\vec e_z\vec e_z$: both slots take their value from the pair $\{e_t,\vec e_z\}$. The declared unit appears twice, and the two other spatial units appear in no diagonal cell at all.
 
-**The third test: the choice propagates.** A forced, unmarked choice confined to one object would be a small blemish. This one is not confined. It reappears in the $4\times4$ Pauli representation, where the axis is marked twice, once inside each $2\times2$ block and once in the block split; in the five gammas, where it is the diagonal of $\gamma_5$; in the root $\vec\Xi=i\vec e_z$; in the idempotents $\tilde\Pi_\pm$; in the Peirce decomposition and its basis; in the minimal left ideal; in the two-component spinor; and in the Weyl blocks. Eight objects, one undeclared choice.
+| basis | cells that are diagonal |
+|---|---|
+| the four units, in any order of the three spatial units | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$ |
+| a frame built on the unit $u$ | $e_te_t$, $e_tu$, $ue_t$, $uu$ |
 
-**Why a declared basis does not repair it.** Declaring the frame helps the reader of one page. It does not repair the defect, for two reasons. First, the declaration is local: a formula copied into the next article arrives without it, and the copy is again unmarked. Second, the propagation defeats it: a declaration at the root must be repeated at every derived object, and the objects that carry it — the idempotents, the ideal, the Weyl blocks — are usually introduced several sections later, where the reader has forgotten which direction was fixed. A notation that needs the same reminder at nine places is not repaired by stating it once.
+The second row was verified for $u=\vec e_x$, $u=\vec e_y$ and $u=\vec e_z$: in each case the diagonal set is the four cells named, and no other. The pattern is therefore not a property of $\vec e_z$. It is the signature of a frame built on any declared unit, and it moves when the declared unit moves.
 
-**The asymmetry is not the metric's.** The signature does distinguish time from space: $e_t^2=e_t$ and $\vec e_k^2=-e_t$. That asymmetry is carried by the algebra, it is stated once in the units, and every formula inherits it correctly. The Pauli triplet adds a *second* asymmetry, among three units that the metric treats alike, and nothing in the algebra carries it. The two must not be confused: the first is physics, the second is the writing.
+A reader who can see which cells are diagonal can read the hidden unit off the page. That is the compensation the Pauli display offers, and it is a real one. The information is present; it is simply never stated, and it is carried by a list of four products rather than by a sentence.
 
-**The cost in true-looking statements.** *The third component is diagonal*, *the upper half of the column is left-handed*, *the two spinor components*, *the gamma that is diagonal is the energy*: each is true in one gauge and false in another, and each is printed in the same font as the identities that hold in all of them. The corpus paid for this class once already, in the migration that made the arrays axis-free, when four statements of this kind turned out to be false — the chirality cell, the $\sigma_k$ blocks, the transpose rule and the $\mathsf S$-swap.
+### What the Direction Carries
 
-**The cost in work.** Three conjugate Peirce decompositions exist, one per spatial direction, and a theorem proved in the third must either be re-proved in the other two or shown covariant. The corpus's own conventions carry the caveat: *another gauge or another order of the four basis elements gives another matrix of the same operator*.
+The direction does not stay in the triplet. It is inherited by every construction built from the root, and the inheritance is mechanical: whatever is built from $\vec e_z$ carries $\vec e_z$. Each item below is a place where a reader meets the choice without being told.
 
-**What survives the change.** The trace, the determinant, the spectrum, the square of the volume cell, the signature and the rank-one cone are properties of the operator and not of the display. They are the statements a display may print in any basis, and they are the ones the corpus keeps in the body.
+The root. The Peirce frame is the frame of the root $\vec\Xi=i\vec e_z$, of square $e_t$. The root is the choice, named or not.
 
-## The Axis-Free Display
+The idempotents. $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$. The unit appears inside both, with opposite signs.
 
-**The coefficient basis marks nothing.** The corpus displays the regular matrices in the basis of the four units, $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and labels the display $\mathrm{axf}$. Every unit is a real signed permutation, the four units enter the basis on the same footing, and the three spatial units are interchangeable in the array as they are in the algebra. No entry is diagonal by privilege: the array of $\vec e_k$ is a permutation with signs, and the three are the same shape.
+The mixed units. $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$. The two remaining spatial units are consumed here, and consumed in an order: $\vec e_x$ multiplied by $i$ comes first, $\vec e_y$ second. The pair $(\vec e_x,\vec e_y)$ is no longer a set; it is an ordered pair, and its orientation is part of the frame.
 
-**The five gammas are not marked out.** In the coefficient basis the five frame cells of the Clifford reading are five of the sixteen, all real signed permutations of determinant one, and the other eleven are the same kind of object. The display therefore does not say which five are the frame and which eleven are the products: that is a statement of the physics, and it is made in words, where it can be checked.
+The Peirce decomposition. The four components are read in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, which is a second choice, independent of the first: the two middle slots can be exchanged.
 
-**The label names the array.** $\mathrm{axf}$ sits in the caret in roman letters and never as an exponent. $L^{\mathrm{axf}}(\tilde Q)$ is the matrix of the operator $\tilde Q$, $L_{e_\mu}^{\mathrm{axf}}$ the matrix of the unit $e_\mu$, and neither is a power.
+The adapted basis and its scale. The mixed units are defined only up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$ and $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$, so the frame carries a free nonzero scalar as well. The scale is harmless for the algebra and fatal for a display that pretends to be unique.
 
-**The two displays are one operator.** The change of display is a conjugation,
-$$
-L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L^{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1},
-$$
-and a conjugation preserves every product, every anticommutator, every trace, every determinant and the spectrum. Nothing that the algebra states depends on which of the two is printed. What depends on it is what the page discloses, and $\mathrm{axf}$ discloses no axis because it fixes none.
+The minimal left ideal. $\mathbb{B}\tilde\Pi_+$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.
 
-**What the axis-free display does not do.** It does not remove the axis from the objects of the previous section. The Peirce decomposition, the Peirce basis and its gauge, the minimal left ideal, the two-component spinor space and the Weyl blocks are built on a root, and they keep the root in either display; what changes is that the array no longer conceals the choice. The display is therefore only half of the remedy, and the other half is a rule of use, stated in the next section.
+The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5)$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_+$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.
 
-**The reason, in one line.** A display is a coordinate on the algebra, and a coordinate that singles out one of three interchangeable directions fixes a gauge that the physics never asked for. The coefficient basis fixes none, so it is the display of record.
+The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_+,i\tilde\Pi_+)$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.
 
-## The Chain, Used as Little as Possible
+The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth cell. Neither fact is stated anywhere on a page that prints the five matrices.
 
-**The rule.** If the differentiation is a defect, the chain it generates is not a set of tools to be reached for but a set of tools to be avoided. The corpus therefore uses each link **only where that link is itself the subject of the sentence**, and nowhere else. The default object is a cell $L_{a}R_{b}$ acting on an element of $\mathbb{B}$; a link of the chain appears when an article is about that link — the Pauli triplet as an array, the root as a choice, the idempotent as a state — and not as a notation for something more general.
+The Dirac adjoint. The adjoint $\bar\psi=\psi^{\dagger}\gamma_0$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
 
-**The links, and the policy for each.**
+The charge conjugation. The cell $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one cell serves is a fact of the frame; which cell it is, is a choice.
 
-| link | where it enters | policy in the corpus |
+The third component of spin. A triplet whose third member is diagonal makes $\sigma_3$ the distinguished one, and every later sentence that measures "the third component" inherits the distinction.
+
+The sentences. "The third member is the diagonal one." "The upper half of the column is the left part." "The diagonal member is the energy." Each is true in the frame that produced it, false in a rotated one, and printed in the same font as the identities that hold everywhere.
+
+| object | the direction it carries | what happens on a relabelling of the spatial units |
 |---|---|---|
-| $\sigma_1,\sigma_2,\sigma_3$ and the image $\mathsf M_2$ | the $2\times2$ display | one dictionary entry in *Matrix Representations Conventions*; never in a physical formula |
-| $\mathsf M_{4L},\mathsf M_{4R}$, the $4\times4$ Pauli arrays | the second display | the gamma section of an article and the conventions; printed in $\mathrm{pau}$ beside $\mathrm{axf}$, never alone |
-| $\gamma_0,\dots,\gamma_5$ | the Clifford reading | one closing section per article, five cells and no array in the body |
-| the root $\vec\Xi=i\vec e_z$ | the Peirce frame, the chirality array | named where the root is the subject; never a silent default |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the Peirce decomposition, the state module | only where the idempotent is the object — *Roots, Idempotents and Observables*, the quantum-information articles |
-| the Peirce decomposition and basis, with the gauge $\lambda$ | a basis of $\mathbb{B}$ | only where the decomposition is the subject, and the gauge is stated with it |
-| the minimal left ideal $\mathbb{B}\tilde\Pi_+$ | the two-component spinor | not used to define a spinor; the carrier of a spinor is $\mathbb{B}$ |
-| the two-component column | the spinor of the literature | replaced by an element of $\mathbb{B}$; a column only where a comparison with the literature needs one |
-| the Weyl blocks, $\operatorname{diag}(-I_2,I_2)$ | chirality and the chiral projectors | replaced by the cell $\Gamma$ and the central sign $\chi$; the array only in the gamma section |
+| the root $i\vec e_z$ | the unit $\vec e_z$ | the root becomes another root |
+| the idempotents $\tilde\Pi_\pm$ | the unit $\vec e_z$, twice, with opposite signs | the idempotents change |
+| the mixed units $\vec\Upsilon_\pm$ | the ordered pair $(\vec e_x,\vec e_y)$ | the pair changes, and the orientation with it |
+| the Peirce decomposition | the order of the four components | the two middle slots exchange |
+| the minimal left ideal | the idempotent of the unit | a different ideal |
+| the two-component column, and the spinor | the basis of that ideal | a different column |
+| the block split | the split of the ideal, twice | a different block split |
+| the gamma set | $\vec e_y$ as the common right multiplier, $\vec e_z$ as the axis of the fifth cell | a different five-element set |
+| the Dirac adjoint | the chosen time generator $\gamma_0$ | a different $\gamma_0$ |
+| the charge conjugation | the cell $L_{e_t}R_{\vec e_x}$ | a different cell |
+| the third component of spin | the diagonal member of the triplet | the diagonal moves |
 
-**What replaces each link.** The replacements are not omissions; they are objects of the same algebra with no choice in them. A spinor is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no ideal is selected. Chirality is the cell $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ together with the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, so no column is cut in half. The Peirce components are read as four subspaces only when a space is wanted; the same algebra of a term is the pair of multipliers, which needs none. The chain is available in full at every point, and it is entered only at the link an article studies.
+## The Direction Inside the Gamma Matrices
 
-**Two consequences that a reader will notice.** A corpus article carries no column, no $\sigma_k$ and no $\gamma$ in its body, and a two-component object appears as an element of the algebra or not at all. The gamma sections remain, because the literature prints those arrays and a reader who compares with a textbook compares arrays; they are the one place where the chain is displayed in full, and they are closing sections.
+### The Five Cells
 
-**The price of the policy.** Two things are given up. A reader trained on the Dirac equation must learn the dictionary, which the closing section of each article supplies in one display. And the corpus loses the shorthand of *the upper component* and *the third direction*, which is a real loss of speed for a computation that has already fixed a frame; the corpus pays it because a shorthand that is valid in one frame is a defect in a formula meant for all of them.
+The gamma set is five cells of the operator algebra:
 
-## Three Ways to Write the Same Operator
-
-The three formulations are one algebra read at three levels, and the display is a separate choice that any of the three may be printed in. The corpus prints in the coefficient basis, $\mathrm{axf}$; the gammas below are the $\mathbb{M}_-$-frame values of *Frame Conventions*, $\gamma_\mu[\mathbb{M}_-]$, with the index low, and when an array of them is shown in this article it is the Pauli display, $\mathrm{pau}$, because those are the arrays the literature prints.
-
-**The coordinate level.** $\mathrm{Cl}_{1,3}(\mathbb{C})$ is generated by four elements $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, together with the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$; the corpus calls the five the gamma set. A spinor is a column of four complex numbers, an operator is a $4\times4$ array, and the product is matrix multiplication. This is the standard language of quantum field theory.
-
-**The algebra level.** $\mathbb{B}$ is the even part, of complex dimension four, and the odd part is a rank-one module over it. The endomorphisms of the carrier are
 $$
-\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C}),
+\gamma_0[\mathbb{M}_-]=iR_{\vec e_x},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}.
 $$
-with the sixteen basis cells $L_{a}R_{b}$. A general element is a sum of cells; a physical element is a sum of a few terms.
 
-**The action level.** The same element is written as what it does to $\psi\in\mathbb{B}$,
+The frame is named in brackets and it is $\mathbb{M}_-$ throughout this article; below the label is dropped, and every $\gamma_\mu$ is $\gamma_\mu[\mathbb{M}_-]$. Two of the five are single multipliers, because $L_{e_t}$ is the identity of the operator algebra: $e_t$ is the unit of $\mathbb{B}$. The five satisfy the cell relation of that frame,
+
 $$
-\psi\longmapsto a\,\psi\,b,\qquad a,b\in\mathbb{B}.
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm I_4,\qquad
+g[\mathbb{M}_-]=(-1,1,1,1),
+\qquad \varepsilon=(1,-1,-1,-1),$$
+
+so that $\gamma_0^2=+\mathrm I_4$ and $\gamma_k^2=-\mathrm I_4$; their product is the fifth, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, with $\gamma_5^2=\mathrm I_4$. All of this was verified on the arrays.
+
+In the Pauli display of the previous section the five become
+
 $$
-No symbol for the operator is needed when the operator is not the subject. This is the level at which the corpus writes.
-
-| level | carrier | primitive | free complex parameters | product |
-|---|---|---|---|---|
-| coordinate | $\mathbb{C}^4$ | one gamma, a fixed array, plus a scalar coefficient | one per term | matrix product |
-| algebra | $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ | one product $L_{Q}R_{P}$ | seven per product | $L_{Q}R_{P}L_{R}R_{S}=L_{QR}R_{SP}$ |
-| action | $\mathbb{B}$ | the pair $(Q,P)$ | seven per term | composition of actions |
-
-**The parameters of a product.** The pair $(Q,P)$ has eight complex parameters, and the scaling $(Q,P)\mapsto(\lambda Q,\lambda^{-1}P)$, $\lambda\in\mathbb{C}^{\times}$, leaves the operator unchanged. The map is therefore constant on the orbits of $\mathbb{C}^{\times}$, and a product has seven effective parameters. The ambient has sixteen complex dimensions. The five are not independent: four generate the algebra, and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ is fixed by their product. The basis they induce by antisymmetrised products has sixteen elements.
-
-## What the Gamma Matrices Are
-
-**A generating set, not a basis.** The four gammas generate $\mathrm{Cl}_{1,3}(\mathbb{C})$, and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ is fixed by them. The basis they induce is the sixteen antisymmetrised products, of ranks $0,1,2,3,4$ and dimensions $1+4+6+4+1=16$. The five are a generating set, not a basis; the basis has sixteen elements, and the count matters. The five are five of the sixteen cells, up to a scalar; the other eleven cells are the remaining elements of the same basis, and in the Clifford basis they correspond to the bivectors, the trivectors and the scalar, obtained as products of the five. They are single cells as well, and the five-name list does not name them. A reader who has the five can compute the other eleven, but the list itself shows only five.
-
-**The gamma basis is not canonical.** For a fixed metric, every gamma basis is $S\gamma_\mu S^{-1}$ for some invertible $S$, and the gamma bases over that metric form a homogeneous space under $GL_4(\mathbb{C})$. Physics chooses one basis. An equation that names $\gamma_0$ names the choice, and a reader who does not know the choice cannot tell a choice of basis from an algebraic fact.
-
-**The reference frame chosen by the corpus is one of a family.** In that frame, whose spatial pair is $(\vec e_y,\vec e_x)$,
+\gamma_0=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
+\gamma_k=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+
+This is the block form that the Peirce frame produces. It is not a form chosen afterwards, and that is the point of the section.
+
+### The Three Spatial Units Have Three Different Jobs
+
+In the five cells the three spatial units are not interchangeable, and the asymmetry is visible in the definitions.
+
+The unit $\vec e_x$ is the right multiplier of the time gamma, and it is also the left multiplier of the first spatial gamma.
+
+The unit $\vec e_y$ is the common right multiplier of all three spatial gammas. That is what makes the three spatial terms of the Dirac operator combine into one term, as shown below.
+
+The unit $\vec e_z$ is never the right multiplier of a spatial gamma. It appears once, as the axis of the fifth cell, and it is the only unit that does.
+
+### The Relabelling Test
+
+The test is a relabelling. Take the five definitions and permute the names $x,y,z$ among the units. For the permutation that sends $\vec e_x\to\vec e_y$, $\vec e_y\to\vec e_z$ and $\vec e_z\to\vec e_x$, the five cells become
+
 $$
-and the Clifford relations hold. Any other orthogonal pair of spatial units gives another basis by the same construction; a change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra. It is a change of gamma basis, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.
-
-**The metric is already in the units.** In $\mathbb{B}$ the signature is carried by $e_t^2=e_t$ and $\vec e_k^2=-e_t$. The Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ restates that signature as a second datum, and a gamma basis is a choice of representatives for that datum. The basis adds no structure the multiplication lacks; it adds a coordinate on that structure.
-
-## The Ambient Is Wider Than the Physics
-
-**The single products are a cone.** A single two-sided operator is $L_{Q}R_{P}$, and the map $(Q,P)\mapsto L_{Q}R_{P}$ is complex-bilinear, not complex-linear. Its image is the affine cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension seven, and a matrix belongs to it exactly when its coefficient matrix $c(M)$, the matrix of $M$ in the cell basis, has rank at most one. The cone is closed under composition and under inversion on its units. It is not closed under addition.
-
-**This is not a defect of the gamma basis.** In the reference frame, the sixteen Clifford basis elements and the sixteen reference cells are the same operators, up to permutation and scalar; the dictionary is a bijection. The cone is therefore the same in both readings. What differs is what the notation displays. A single product $L_{Q}R_{P}$ carries two free multipliers, seven effective parameters; a gamma basis element is a fixed matrix with a scalar coefficient. The physics supplies the multipliers, so the cell form makes the product the primitive; the gamma form makes the coefficient the primitive.
-
-**The bases coincide; the coefficients factor.** A general operator has sixteen coefficients in either form. A single product has a coefficient matrix of rank one, so its sixteen coefficients are not free: they factor as $c_{ab}=u_a v_b$, seven effective parameters. The gamma form displays the sixteen coefficients and leaves the rank-one constraint implicit; the cell form displays the two multipliers that produce them. The gain is the constraint made visible, not a shorter expansion.
-
-**The cone does not exhaust the ambient.** A general element of $M_4(\mathbb{C})$ is a sum of at most four products, and the length is the coefficient rank,
+iR_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_z},\qquad iL_{\vec e_z}R_{\vec e_z},\qquad iL_{\vec e_x}R_{\vec e_z},\qquad -iR_{\vec e_x},
 $$
-\ell(M)=\operatorname{rank}c(M)\in\{0,1,2,3,4\}.
-$$
-A generic element has $\ell=4$, and the set $\det c(M)\neq0$ is open and dense.
 
-**A concrete failure.** The sum
-$$
-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}
-$$
-has coefficient matrix $\operatorname{diag}(1,1,0,0)$, of rank two. It is not a single product, and no change of frame by a decomposable $S$ makes it one: such a change acts on $c(M)$ by an invertible left and right multiplication and preserves its rank. A formalism that makes the generic matrix the primitive has no place to mark the rank-one subset that the physics uses; the cell form writes the same operator as a sum of two terms and leaves it there.
+which is not the original set. The same failure occurs for all five non-trivial permutations, as checked on the cells. So the gamma set is tied to a labelling of the spatial units, and a relabelling produces a different frame, related to the first by a conjugation.
 
-**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
+The distinction is worth stating exactly, because it is easy to overstate. The Clifford relations are invariant: the relabelled cells satisfy the same relations with the same metric, because a permutation of the three spatial units is an automorphism of the algebra and leaves the metric alone. What is not invariant is the set of five. The metric cannot tell the three units apart, and the five-cell list can.
 
-**The physics uses few terms.** The chiral projector is one term. The Dirac operator, worked in the next section, has length two: the three spatial terms share a right multiplier and combine into one. The four-term display is a display, not a property of the operator. The operators displayed in the corpus sit at low length; the generic element is not one of them. The gamma basis makes the coefficient vector the object; the biquaternion reading makes the pair the object.
+### Every Gamma Display Writes One Direction
 
-## A Worked Example: the Dirac Operator
+The choice cannot be removed by choosing a better gamma basis, and the reason is a one-line argument.
 
-**The gamma display.** In the reference frame, with $x_0=ct'$ and $x_1,x_2,x_3$ the three spatial coordinates, the operator is
-$$
-D\psi=\gamma_0\frac{\partial\psi}{\partial x_0}+\gamma_1\frac{\partial\psi}{\partial x_1}+\gamma_2\frac{\partial\psi}{\partial x_2}+\gamma_3\frac{\partial\psi}{\partial x_3},
-$$
-with
-$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-Four fixed operators and four derivatives. The display does not show a pair of multipliers, and it does not show that the three spatial terms share a right multiplier.
+Suppose a display made both $\gamma_0$ and $\gamma_5$ diagonal. Both are invertible, so their diagonal entries are nonzero. They anticommute, and two diagonal matrices anticommute only if the entrywise product of their diagonals vanishes in every slot. That product vanishes, so $\gamma_0\gamma_5=0$, which contradicts invertibility. Hence at most one of the two is diagonal.
 
-**The dictionary.** Replace each gamma by its cell:
-$$
-D\psi=i\,e_t\frac{\partial\psi}{\partial x_0}\vec e_x+i\,\vec e_x\frac{\partial\psi}{\partial x_1}\vec e_y+i\,\vec e_y\frac{\partial\psi}{\partial x_2}\vec e_y+i\,\vec e_z\frac{\partial\psi}{\partial x_3}\vec e_y.
-$$
-The substitution is mechanical, and the two displays are the same operator term by term. The gamma elements of the display are the cells of the cell display, and the scalar coefficients are unchanged; nothing is lost and nothing is added.
+The two standard displays are the two ways of spending that one allowance. The Dirac display makes $\gamma_0$ diagonal and $\gamma_5$ off-diagonal: it writes the time direction, which the metric does distinguish, into the array. The block display, and the Pauli display of this corpus, makes $\gamma_5$ diagonal and $\gamma_0$ off-diagonal: it writes a spatial direction, which the metric does not distinguish, into the array. A page that prints gammas has made the choice before it prints anything, and the notation gives the reader no way to tell which choice was made.
 
-**The minimal display.** The three spatial terms share the right multiplier $\vec e_y$, so they combine for every $\psi$:
-$$
-D\psi=i\,e_t\frac{\partial\psi}{\partial x_0}\vec e_x+i\,(\nabla\psi)\vec e_y,\qquad \nabla=\vec e_x\frac{\partial}{\partial x_1}+\vec e_y\frac{\partial}{\partial x_2}+\vec e_z\frac{\partial}{\partial x_3}.
-$$
-Two products, not four. The four-cell form is a display, and the length theorem reads the minimal number, two. The gradient is the one of *Operator and Calculus Conventions*, its sum written out; the left multiplication $L_{\nabla}$ used below is read term by term.
+### The Split the Pauli Display Shows
 
-**The coefficient matrix.** At a generic frequency, the only nonzero entries of $c(D)$ in the four-term display are $(t,x)$, $(x,y)$, $(y,y)$ and $(z,y)$, with coefficients $i\partial/\partial x_0$, $i\partial/\partial x_1$, $i\partial/\partial x_2$ and $i\partial/\partial x_3$. The matrix has rank two, because the three spatial terms occupy the same column $y$. The length theorem returns two, the number of terms in the minimal display, and the two numbers agree. The agreement is a check of the dictionary, not a coincidence.
+The fifth cell is $i$ times a real signed permutation with zeros on the whole diagonal in $\mathrm{axf}$, and it is $\operatorname{diag}(-1,-1,1,1)$ in the Pauli display. Its eigenvalues are $\pm1$ in both, its square is the identity in both, and its trace is zero in both. What changes is whether the array splits into two blocks, and the split is the Peirce split of the same unit.
 
-**The square.** The gamma basis is a correct coordinate, and the check is that the square is the wave operator:
-$$
-D^2=\frac{\partial^2}{\partial x_0^2}-\frac{\partial^2}{\partial x_1^2}-\frac{\partial^2}{\partial x_2^2}-\frac{\partial^2}{\partial x_3^2},
-$$
-because $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, and distinct gammas anticommute. The cell form gives the same square, because the cells are the same operators. This is the sense in which the gamma basis is correct: it is a coordinate, and the coordinate reproduces the invariant.
+The projector $\tfrac12(\mathrm I-\gamma_5)$ is $\operatorname{diag}(1,1,0,0)$ and the projector $\tfrac12(\mathrm I+\gamma_5)$ is $\operatorname{diag}(0,0,1,1)$, both of rank two. Their ranges are the two left ideals of the frame: the eigenvalue $-1$ holds on $\mathbb{B}\tilde\Pi_+$ and the eigenvalue $+1$ on $\mathbb{B}\tilde\Pi_-$, as verified on both ideals. So the block, the left ideal, the two-component column and the projector are one object seen four times, and one choice of unit produces all four.
 
-**The mass.** The mass term is one cell, and in this frame that cell is the identity:
-$$
-m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\psi=m\,e_t\psi e_t=m\psi,
-$$
-because $e_t$ is central. In the gamma display the same term is $m\psi$, which is $m\gamma_0^2$, not a sixth gamma. The five-name list does not name the identity as a cell; the cell list does. This is the concrete case of the point above: the cell form names the mass block, the gamma form leaves it as the identity.
+The three cells $-iR_{\vec e_x}$, $-iR_{\vec e_y}$ and $-iR_{\vec e_z}$ are conjugate to one another, and the conjugation is implemented by an operator of the algebra. For $s$ the quarter-turn versor about $\vec e_y$, the conjugation $L_sR_{s^{-1}}$ carries $\vec e_z$ to $\vec e_x$ and carries $-iR_{\vec e_z}$ to $-iR_{\vec e_x}$ exactly. So the choice of which spatial unit carries the fifth cell is a labelling, and every labelling gives a split of the same kind. Only one of the three is diagonal in the display, and it is the one the frame was built on.
 
-**The lengths.** At a generic frequency,
+## Why a Direction in the Notation Is a Defect
 
-| operator | cell display | length |
+### Physical Space Has No Preferred Spatial Direction
+
+Take any two spatial directions. A rotation of the algebra carries one to the other, and the rotation is an automorphism: it preserves the product, the metric, the trace and the determinant. For $s$ a nonzero versor, the operator $L_sR_{s^{-1}}$ is such an automorphism, and it acts on the units by $u\mapsto sus^{-1}$. The three spatial units are one orbit.
+
+No experiment distinguishes them. A laboratory that is turned by ninety degrees measures the same physics, and the transformation that relates the two descriptions is a symmetry of the theory and not a relabelling of a measurement error. Isotropy is not a convenience of notation; it is a property of space, and it is the reason angular momentum is conserved.
+
+An equation of general physics therefore does not contain a spatial direction. If it did, the direction would have to be supplied by something outside the equation, and the equation would be about a situation rather than about a law. The Dirac operator of a free field, the wave equation, the Maxwell equations and the Klein–Gordon equation all have this property: each is form-invariant under the rotation, and none of them names a direction.
+
+### The Display Adds a Direction the Equation Does Not Have
+
+A display is a function of a basis. Written in a basis, an operator becomes numbers, and a rotation of the basis becomes a conjugation of the array. The pair (operator, array) is therefore covariant: the operator is fixed and the array moves.
+
+The standard Pauli display breaks the covariance of the page. The array $L^{\mathrm{pau}}(\tilde Q)$ is written in a basis fixed by a root, and the rotation that exchanges $\vec e_z$ with $\vec e_x$ does not produce another array of the same shape: it produces an array in another frame. So the sentence "$\sigma_3$ is diagonal" is not a statement that survives the symmetry. It is a statement about the frame, printed in the grammar of a statement about the algebra.
+
+The defect is not that the display has a direction. The defect is that the direction is unmarked. A sentence $\sigma_3[u]$, with $u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.
+
+### The Defect Hides Structures, Properties and Correspondences
+
+An unmarked direction does not only add a datum. It also removes one, because whatever depends on the direction is absorbed into the frame and stops being visible. Three examples from the material of this article show the damage.
+
+A physical structure disappears. The three spatial cells of the gamma set are one orbit: a conjugation of the algebra carries any one of them to any other, so the statement "these three are one object" is a statement of physics. In the Pauli display the third of them is $\operatorname{diag}(1,-1)$ inside its block and the other two are off-diagonal, so the page shows one member and two others, and the orbit is not on the page. A reader who wants to use the symmetry must first discover that it exists, and the display is what conceals it.
+
+A property of an equation disappears. The axis-free array satisfies $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, so the transpose of the array is again the array of an element, and the adjoint operation is basis-free. In the Pauli display no such rule holds: the transpose of the array is not the array of any conjugation of the element, and the property is not available to a reader who works in that display. It is not that the property is false. It is that the display cannot state it.
+
+A correspondence disappears. The Dirac operator written in the block form and the same operator written in the Dirac form are one operator in two frames, and the matrix that carries one to the other is $C_{\Pi}$. On a page that prints both, the correspondence has to be supplied by a sentence. On a page that prints only one, the other is not visible at all, and two articles that use different conventions look like two different theories.
+
+The pattern is general. A frame that is declared nowhere is a frame nobody can undo, and an object written in it carries the frame in place of the information it displaced.
+
+### Not Every Frame Is a Defect
+
+The argument would be worthless if it condemned every frame, and it does not. A frame is legitimate whenever the physics supplies one.
+
+A measurement supplies one. A Stern–Gerlach apparatus has an axis, and the axis is in the laboratory, not in the notation. An experiment on a beam has a beam axis. A scattering process has a plane, and the plane has a normal. A background field breaks isotropy, and its direction is part of the solution. In each of these cases a frame is a physical datum, and the correct practice is to name it, use it, and say that the result is about that frame.
+
+The metric supplies one, and it is a different kind of direction. Time is distinguished from space by the sign, $e_t^2=e_t$ and $\vec e_k^2=-e_t$, and that asymmetry is carried by the units themselves. Every formula inherits it automatically and correctly, with no sentence and no declaration, because it lives in an object and not in a layout. That is the model: an asymmetry that the physics has should be carried by an object of the algebra, where a reader can see it and where it cannot be lost.
+
+The defect is the third case, which is neither of these: a direction that the problem does not supply, that the notation supplies anyway, that is used in every formula of the article, and that is never named.
+
+### The Test Is Covariance
+
+The test of a displayed statement is mechanical. Apply the automorphism, re-read the statement, and compare.
+
+The statement
+$$
+\vec e_k^2=-e_t
+$$
+returns itself, with $k$ renamed. It is a fact about $\mathbb{B}$.
+
+The statement
+$$
+\sigma_3=\operatorname{diag}(1,-1)
+$$
+does not return itself. Under the exchange of $\vec e_z$ with $\vec e_x$ the diagonal member becomes the first one, and the array is not the array that was printed. It is a fact about the page.
+
+Both are printed as equalities, in the same font, with no marker. The first is true of every direction. The second is true of one direction and false of the other two. A reader who wants to know which kind of statement is in front of him has nothing to consult, and a writer who copies the second into a rotated context produces a formula that is wrong without being detectable as wrong.
+
+### The Four Things the Reader Loses
+
+The loss is practical, and it can be listed.
+
+He cannot sort. Two statements with the same grammar and different status stand side by side, and nothing in the notation separates the invariant from the frame-dependent one.
+
+He cannot check. Verifying that an equation is rotation-invariant requires seeing how it transforms. In the standard display the transformation is invisible, so the check cannot be done on the page and must be redone from the algebra every time.
+
+He cannot copy. A declaration is local. It is dropped when the formula moves into the next article, into a program as a literal array, or into a comparison with a paper that uses another convention. What travels is the array, and the array carries the direction while the sentence that named it stays behind.
+
+He cannot reuse a proof. A theorem proved for one split of the three units must be reproved for the other two, or shown to be covariant, and the second task is the harder one precisely because the statement was written in a form that hides the transformation.
+
+### What Is Not Claimed
+
+No computation done in the Pauli or gamma display is wrong. The Clifford relations hold in every display, every trace and every determinant is invariant, and an amplitude computed with gammas is correct. The Dirac equation written with the five gammas is a correct equation, and it is the equation of the literature.
+
+The claim is narrower and it is about the page. A fundamental equation should not be written in a form that privileges a direction the physical reality does not contain, because the privilege then travels with the formula and cannot be distinguished from the physics. The remedy is not a correction of any result. It is a rule of writing: the direction is an object of the sentence, with a name, and it appears only where the construction is the subject.
+
+## The Axis-Free Matrices
+
+### The Definition
+
+The coefficient basis is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and it is the basis the multiplication table already provides. The $\nu$-th column of the left array is the coordinate column of the product $\tilde Qe_\nu$:
+
+$$
+L^{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix}.
+$$
+
+Every entry is a structure constant of the algebra or a coefficient of the element. The array is the multiplication table read as a matrix, and nothing else enters it: no idempotent, no root, no direction.
+
+The four unit arrays show why no direction can enter.
+
+$$
+L^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
+L^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix},
+$$
+
+$$
+L^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\ 0&0&-1&0\\ 0&1&0&0\\ 1&0&0&0\end{pmatrix}.
+$$
+
+All three spatial arrays have zero diagonal. Not one of them is preferred, and none of them can be read as "the diagonal one".
+
+### Why No Direction Is Chosen
+
+The diagonal cells of this display are the four squares, and the set is
+
+$$
+\{e_te_t,\ \vec e_x\vec e_x,\ \vec e_y\vec e_y,\ \vec e_z\vec e_z\}.
+$$
+
+Each spatial unit is diagonal in exactly one cell, its own square, and in no other. The three are on the same footing: a permutation of the spatial units permutes the last three members of the set and leaves the set unchanged. The set therefore carries no information about which unit was used in any construction, because no construction was used.
+
+Compare the second row of the table of §*The Diagonal Cells Tell the Same Story*. There the declared unit appears twice in the diagonal set and the other two appear never. Here every unit appears once and none appears twice. The difference between "once each" and "twice for one, never for the others" is the difference between a display that has made a choice and a display that has not.
+
+### The Good Properties
+
+The axis-free display is not merely neutral. It has properties that the Pauli display lacks, and they follow from the same fact: the basis is the one the algebra carries.
+
+Every one of the sixteen cells is a real signed permutation matrix: one nonzero entry in each row and in each column, of modulus one, of determinant one, of Hilbert–Schmidt norm two. The sixteen were checked one by one. In the Pauli display eight are real and eight carry $i$.
+
+The four unit arrays and their negatives form a group of order eight isomorphic to the quaternion group. The array of a product is the product of the arrays, and the array of a unit is a column of the multiplication table. The display is the algebra's own multiplication table, so nothing is added by the act of writing it.
+
+The invariants are read directly, from the array's own entries:
+
+$$
+\operatorname{Tr}L^{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
+\det L^{\mathrm{axf}}(\tilde Q)=\bigl\langle\tilde Q\bigr\rangle_{\natural}^{2},
+$$
+
+where $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. Both were verified on random elements. The trace is four times the scalar coefficient and the determinant is the square of the natural norm, so the two invariants a physicist needs come out of the display's own structure.
+
+The transpose is the natural conjugation:
+
+$$
+L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L^{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
+$$
+
+The Pauli display has no such rule: the transpose of its array is not the array of any conjugation of the element. This is the property that makes the adjoint operation basis-free, and it is lost in the display that has a direction.
+
+The right family is the transpose of the left one between a fixed diagonal sign matrix:
+
+$$
+R^{\mathrm{axf}}(\tilde Q)=\mathsf D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D,\qquad
+\mathsf D=\operatorname{diag}(1,-1,-1,-1).
+$$
+
+The five gammas are not marked out. In this display they are $i$ times five of the sixteen cells, of the same kind as the other eleven, and nothing in the array distinguishes them. Which five cells form the frame is a statement of the physics, made in words, where a reader can check it.
+
+| property | $\mathrm{axf}$ | $\mathrm{pau}$ |
 |---|---|---|
-| mass | $mL_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | 1 |
-| chirality | $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | 1 |
-| chiral projector $P_+$ | $\tfrac12L_{e_t}^{\mathrm{axf}}R_{e_t-i\vec e_z}^{\mathrm{axf}}$ | 1 |
-| Dirac, minimal | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\,\partial/\partial x_0+iL_{\nabla}R_{\vec e_y}^{\mathrm{axf}}$ | 2 |
-| Dirac, expanded | four cells | 2 |
-| generic element | — | 4 |
+| the diagonal cells | the four squares, one per unit | $e_te_t$, $e_t\vec e_z$, $\vec e_ze_t$, $\vec e_z\vec e_z$ |
+| the diagonal set under a permutation of the spatial units | unchanged | changed |
+| the sixteen cells | all real signed permutations, determinant one | eight real, eight carrying $i$ |
+| the transpose rule | $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$ | absent |
+| the trace | $4Q_t$ | $4Q_t$ |
+| the determinant | $\langle\tilde Q\rangle_\natural^2$ | $\langle\tilde Q\rangle_\natural^2$ |
+| the block structure | none | two identical blocks |
+| the five gammas | five of the sixteen cells, not distinguished | three Pauli matrices, one of them diagonal |
+| the direction written into the page | none | one spatial unit |
 
-The length is the number of products in the minimal sum, not the number of cells on the page. The expanded Dirac display has four cells and length two. The generic element has length four, and no physical operator displayed in the corpus has that length.
+### What the Display Gives Up
 
-## The Spinor Is Not a Column
+The neutrality has a price, and the price should be stated in the same breath.
 
-**A column is a choice.** A spinor in $\mathbb{C}^4$ is a column, and a column presupposes a basis. The basis is supplied by a minimal left ideal of the Clifford algebra, and the choice of ideal is a choice of idempotent, hence of frame. The carrier of the corpus is $\mathbb{B}$ as a four-dimensional complex vector space, with its own multiplication; no ideal and no column are selected. The left copy $\mathbb{B}_L$ acts block-diagonally, on two copies of its two-dimensional simple module, and the odd slot is what exchanges the two chiral halves. The Dirac action is therefore the two-sided action, not the left regular action alone.
+The Pauli display shows the block, the ideal and the column as diagonal entries. The axis-free display shows none of them. A reader of an $\mathrm{axf}$ page who wants the Peirce split must be told which cell produces it, and must apply the projector $\tfrac12(\mathrm I-\gamma_5)$ explicitly. The information is not absent, but it is not free either: it costs one sentence.
 
-**The same freedom, stated twice.** In the column language the freedom is written twice: in the basis of $\mathbb{C}^4$ and in the representation of the gammas. A change of basis acts on the representation by conjugation, so the two writings carry the same invertible $S$, and the reader has to check that both were changed together. The algebra language names the freedom once, as the frame, and a frame change is written where it occurs.
+That trade is the whole content of the choice between the two displays. The Pauli display gives the block for free and charges a silent direction. The axis-free display charges a sentence and gives no direction. For a formula of general physics the second price is the lower one, because general physics has no direction to give.
 
-**Chirality separates cleanly.** In the reference frame the chirality is the single cell
+## The Intrinsic Form
+
+### The Operator Is a Pair
+
+A matrix display is already a compromise. The object an equation of the corpus names is not an array but an action on an element:
+
 $$
-\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
+\psi\longmapsto a\,\psi\,b.
 $$
-and the projectors are read as actions,
+
+The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.
+
+This is the form the physics equations of the corpus take when the equation is the subject and no array is required. Each factor is named, so a reader sees which factor carries the mass, which the momentum and which the grading, and no factor is an entry of a display.
+
+### Composition and Invariants
+
+Composition is one line, with the second slot reversed because right multiplications compose in the opposite order:
+
 $$
-P_\pm:\ \psi\longmapsto\tfrac12\bigl(\psi\mp i\,e_t\,\psi\,\vec e_z\bigr).
+\bigl(L_aR_b\bigr)\bigl(L_cR_d\bigr)=L_{ac}R_{db}.
 $$
-The physical split uses a different object, the central sign,
+
+Powers, inverses and the adjoint follow without a display:
+
 $$
-\chi=i\tilde\Xi_{\mathrm{ad}},\qquad \chi^2=e_t .
+\bigl(L_aR_b\bigr)^n=L_{a^n}R_{b^n},\qquad
+\bigl(L_aR_b\bigr)^{-1}=L_{a^{-1}}R_{b^{-1}},\qquad
+\bigl(L_aR_b\bigr)^{\approx}=L_bR_a.
 $$
-It is an operator on the module, not multiplication by an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. In the one-mode truncation the two are represented by the same symbol $\gamma_5$, and the notation does not distinguish them. The coincidence is real, and it is exactly the case in which the conflation is harmless. Outside that case the two roles separate, and the notation does not.
 
-## The Frame Becomes the Physics
+The trace and the determinant are read from the multipliers:
 
-**One frame in every formula.** The reference dictionary ties time to $\vec e_x$ and the three spatial directions to $\vec e_y$,
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\operatorname{Tr}L_aR_b=4\,a_tb_t,\qquad
+\det L_aR_b=\bigl\langle a\bigr\rangle_\natural^{2}\bigl\langle b\bigr\rangle_\natural^{2}.
 $$
-and it is a second example of the defect: the pair $(\vec e_y,\vec e_x)$ is a choice, so a formula written in it is a formula about that choice as much as about the operator, and the gamma notation gives the reader no mark that separates the two. The difference from the Pauli axis is where the choice sits — here in the pair of multipliers, there in the diagonal entry — and not whether a choice is made.
 
-**A change of gamma basis preserves the cone only when it is decomposable.** A change by $S=L_{a}R_{b}$, with $a,b$ units, sends $L_{Q}R_{P}$ to $L_{aQa^{-1}}R_{\,b^{-1}Pb}$ and stays inside the cone. A general change of gamma basis need not: it is itself a sum of a few cells, and it can turn one product into several. The gamma notation writes both changes with the same symbol $S(\cdot)S^{-1}$, and the difference between them — one preserves the class of physical operators, the other does not — is invisible.
+The metric is the squares of the units, and no separate $g_{\mu\nu}$ enters:
 
-**A statement the corpus can make and the gamma notation does not.** The biquaternion form separates three things that the gamma form runs together: the algebra, the frame, and the grading. This is why the corpus's conventions articles can state the frame freedom once, in one place, and why an article that changes frame does not have to restate its physics.
-
-## What the Biquaternion Formalism Buys
-
-**The primitive is the physical object.** A term is a pair of multipliers. The left multiplier is what acts before, the right multiplier what acts after, and the formula is read in the order the operation happens. A reader sees which element carries the mass, which carries the momentum, and which carries the grading, because each is a named factor rather than an entry of an array.
-
-**Composition is a formula, not a product of arrays.** The product is
 $$
-L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},
+e_t^2=e_t,\qquad \vec e_k^2=-e_t,\qquad
+\mathrm{Sc}\bigl(\tilde Q^2\bigr)=Q_t^2-Q_x^2-Q_y^2-Q_z^2.
 $$
-with the second slot reversed. Powers, inverses and the adjoint follow in one line,
+
+### The Carrier Is the Algebra
+
+The intrinsic form takes the carrier to be $\mathbb{B}$ itself, with its own multiplication, so the objects of an equation are elements and their products. Nothing else is introduced: no ideal, no column, no projector, no frame.
+
+Two consequences follow, and both are properties of the algebra rather than of a display.
+
+The split of the algebra into its two sectors is the conjugation $\natural$, and it is carried by the algebra. A column of $\mathbb{C}^4$ carries no conjugation of its own, and a display in columns must import the split as extra structure.
+
+The five gammas belong to a frame and not to the algebra. In the intrinsic form they are written out as the cells they are, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$, and a reader sees the three spatial units in three different jobs on the same line. That is the defect of §*The Three Spatial Units Have Three Different Jobs* made visible at the place where it enters, which is the most a notation can do about it.
+
+### When a Matrix Is Still Needed
+
+Some statements are about an array: a comparison of two displays, the census of the sixteen cells, a sentence that makes the direction visible, a program that multiplies numbers. For those, the array is the object of the sentence and must be written.
+
+The natural array is the $\mathrm{axf}$ one, because it is the only one that adds nothing. A reader who sees an $\mathrm{axf}$ array can be sure that any direction in the surrounding paragraph came from the physics and not from the layout.
+
+The order of preference is therefore four-level: the action first, a cell when the operator must be one symbol, an $\mathrm{axf}$ array when an array is unavoidable, and a Pauli or gamma array only where the array itself is the subject, as in a comparison or a dictionary.
+
+| level | object | needs a basis | used when |
+|---|---|---|---|
+| the action | the pair $(a,b)$ | no | the operator is the subject |
+| the cell | $L_aR_b$ as one element of a basis of operators | no | the operator must be one symbol |
+| the array | $L^{\mathrm{axf}}(\tilde Q)$ | yes, the coefficient basis | an array is the object of the sentence |
+| the Pauli array | $L^{\mathrm{pau}}(\tilde Q)$ | yes, the Peirce frame | a block, an ideal or a gamma is the subject |
+
+## Migrating from the Pauli Framework
+
+An article written in the Pauli framework does not have to be rewritten at once. The move has three passes, and each pass is mechanical enough to be checked.
+
+### The First Pass: From Arrays to Cells
+
+Replace every array by the cell it displays. A cell is written $L_{e_\mu}R_{e_\nu}$, and its array is read in whichever frame the sentence needs. The pass removes the frame from the algebra and leaves it in the notation, where it can be seen.
+
+A cell with a time slot collapses, because $e_t$ is the unit of the algebra: $L_{e_t}$ and $R_{e_t}$ are the identity operator, and a cell with two time slots is the identity. Two of the five gammas are single multipliers for exactly this reason.
+
+During this pass an array may stay only where the array is the object: a comparison of two displays, the table of the sixteen cells, a sentence whose content is which entry is nonzero. Everything else becomes a cell.
+
+### The Second Pass: From Cells to Actions
+
+Replace every cell by what it does. The rule is one line, and it is the whole pass:
+
 $$
-(L_{a}R_{b})^n=L_{a^n}R_{b^n},\qquad L_{a}R_{b}^{-1}=L_{a^{-1}}R_{b^{-1}},\qquad (L_{a}R_{b})^{\approx}=L_{b}R_{a},
+\psi\longmapsto a\,\psi\,b.
 $$
-where $\approx$ is the adjoint for the plain form $\mathrm{Sc}(XY)$; it exchanges the two slots and conjugates neither parameter. The Hilbert–Schmidt dagger is a different involution, the conjugate transpose of the array.
 
-**Trace and determinant are scalars of the algebra.**
+The pass removes the operator symbol as well. A mass term is $m\psi$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication.
+
+An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
+
+### The Third Pass: Keep the Axis-Free Array Where an Array Is Required
+
+The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label in the caret: $L^{\mathrm{axf}}(\tilde Q)$ and $L^{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent.
+
+A section that survives all three passes has no Pauli object in its body, and any Pauli object it keeps is inside a closing block whose subject is the dictionary.
+
+### The Dictionary
+
+The three passes need a table, and one table serves all three. Each row gives the name in the old notation, the object behind it, and the action.
+
+| Pauli or gamma name | object | $\mathrm{axf}$ array | action |
+|---|---|---|---|
+| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\psi\mapsto\psi$ |
+| the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
+| $\gamma_0$ | $iR_{\vec e_x}$ | $iR^{\mathrm{axf}}_{\vec e_x}$ | $\psi\mapsto i\psi\vec e_x$ |
+| $\gamma_k$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}$ | $\psi\mapsto i\vec e_k\psi\vec e_y$ |
+| $\gamma_5$ | $-iR_{\vec e_z}$ | $-iR^{\mathrm{axf}}_{\vec e_z}$ | $\psi\mapsto-i\psi\vec e_z$ |
+| the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\psi\mapsto m\psi$ |
+| the Peirce projector $\tfrac12(\mathrm I-\gamma_5)$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR^{\mathrm{axf}}_{\vec e_z}\bigr)$ | $\psi\mapsto\tfrac12\bigl(\psi-i\psi\vec e_z\bigr)$ |
+| the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
+
+The last row is the one that has no action, and that is the honest answer: the adjoint is not an operator on the element but a pairing of two elements.
+
+### The Conjugation and What It Preserves
+
+The two displays are related by one matrix. With the Peirce vectors as columns,
+
 $$
-\operatorname{Tr}L_{a}R_{b}=4\,a_t b_t,\qquad \det L_{a}R_{b}=\langle a\rangle_{\natural}^{2}\langle b\rangle_{\natural}^{2},
+C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr),\qquad
+L^{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L^{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
 $$
-with $a_t$ the scalar part and $\langle a\rangle_{\natural}$ the quaternionic norm. Both are read from the two multipliers and neither needs a basis.
 
-**The metric is a square, not a tensor.** The signature is read from the squares of the units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$, and from the plain form $\mathrm{Sc}(Q^2)=Q_t^2-Q_x^2-Q_y^2-Q_z^2$. No separate $g_{\mu\nu}$ enters, and the plain weight is the same in both frames.
+and $\det C_{\Pi}=-\tfrac14$. Every invariant survives the change: products, anticommutators, traces, determinants, spectra, ranks and the eigenvalue count. This is why the migration cannot change a result, and why it must be checked on invariants rather than on entries.
 
-**The two sectors have a place.** The material and informational sectors are the anti-Hermitian and Hermitian subspaces of $\mathbb{B}$. A column of $\mathbb{C}^4$ carries no conjugation of its own: the split is a property of the algebra's conjugation, and a notation that begins with an array must import it as extra structure. The biquaternion form carries it natively.
+The conjugation is the check. Take an identity, conjugate both sides, and verify that the two sides remain equal. If a statement survives the conjugation, it was a statement about the operator. If it does not, it was a statement about the display.
 
-**The grading is an operator with a name.** $\Gamma$ is a cell, $\Gamma^2=1$, and the projectors are its halves. The physical grading is the central sign $\chi$, a separate operator on the module. The notation can hold the distinction because it has two symbols for two objects.
+### The Four Traps
 
-**The action is the equation.** The Dirac operator is written as it acts. A reader who wants the operator's value on a state substitutes the state. A reader who wants the symbol composes the factors. Nothing has to be converted between a display and a computation.
+A migration that has been done once already leaves a record of what went wrong, and the record is four statements that looked like algebra and were notation.
 
-## The Optimal Writing
+The transpose rule. It holds in $\mathrm{axf}$, $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, and it does not hold in the Pauli display. A proof that uses it is a proof about the axis-free frame, and it must be stated as such or re-proved.
 
-The rules that follow from the above are short.
+The blocks. The two identical blocks of the Pauli array are the statement that left multiplication preserves the two Peirce components. In $\mathrm{axf}$ there are no blocks, and the same content is the statement that the right slot of the cell $L_{\vec e_k}R_{\vec e_y}$ does not move. A sentence about "the blocks" has to be rewritten as a sentence about the ideal.
 
-- **Write the action first.** $\psi\mapsto a\,\psi\,b$. If the operator is the subject, name it $L_a$, $R_b$ or $L_{a}R_{b}$; otherwise leave it implicit.
-- **One term is one line.** A sum is written term by term, one term per line, and each term is a pair.
-- **Never compress a sum into one symbol.** A sum is a single product only when $\operatorname{rank}c\le1$, and the test is silent, not displayed.
-- **Keep the coefficient matrix out of the page.** It is a diagnostic of the isomorphism, not a datum of the physics.
-- **No arrays, no columns, no Kronecker products** in a physical formula. The algebra is four-dimensional and the action is written on it.
-- **The basis is named once.** A change of basis is a change of the pair of spatial units and is stated where it occurs.
-- **Enter the chain only where it is the subject.** A Pauli array, a root, an idempotent, a Peirce basis, an ideal, a column or a Weyl block appears when the article studies that link, and not as a shorthand for something more general.
-- **The gamma form goes to one closing section.** One display, the dictionary, the real-form caveat, no derivation. The body does not carry it, except in an article whose subject is the comparison, as this one.
+The diagonal member. In the Pauli display one spatial unit sits on the diagonal, and a sentence about "the diagonal entry" is a sentence about that unit. In $\mathrm{axf}$ every diagonal cell is a square, and the entry says nothing about any unit. A sentence of that kind must be rewritten with the unit named.
 
-## Where the Gamma Formalism Remains the Right Tool
+The swap. The right family is the transpose of the left one between $\mathsf D$ and its own inverse in $\mathrm{axf}$, and the Pauli display has no such rule. A symmetry argument that uses the swap is a symmetry of the coefficient basis.
 
-**The literature is written in it.** Textbooks, scattering amplitudes, the spinor-helicity formalism, gamma-trace technology, Fierz rearrangements, anomaly computations, index theorems and supergravity all use it. A reader who wants to compare with that literature needs the dictionary, and the Gamma section supplies it.
+### The Checklist
 
-**Some computations are shorter in it.** A trace of many gammas is a contraction of indices; a Fierz rearrangement is a completeness relation of the sixteen products; a perturbative calculation is organised by the gamma basis. The biquaternion form does not forbid these; it declines to make them the default.
+Five checks catch a migration that has gone wrong, and all five are mechanical.
 
-**Some objects are frames by nature.** The Clifford group, the Pin group, the frame stabiliser and the space of gamma bases are the subject of their own articles, and there the frame is the object. Those articles keep it.
+The glyph census. Count the occurrences of the array delimiters and of the symbols $\sigma$, $\gamma$, $\Pi$ and $\Upsilon$ in the body, everything before the closing block. A body with no array, no $\sigma$ and no $\gamma$ has passed the first two passes.
 
-**The real forms need care.** Over $\mathbb{C}$ the dictionary is exact. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ while the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; the two real forms are opposite, and the dictionary is complex-linear. An article that uses a real structure states the form at that point.
+The operator census. Count the occurrences of the letters $L$ and $R$ carrying a subscript, section by section. A section that has reached the third pass has none, except a cell the section is about.
 
-**One article uses a larger algebra by design.** *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions* studies $\mathrm{Cl}(7)$, and its gammas do not reduce to the sixteen cells; it is the stated exception.
+The invariant test. Evaluate both sides of every identity on a hundred random elements and compare. A mismatch is a conjugation error, not a typo.
 
-## What Changes and What Does Not
+The permutation test. Rename the three spatial units by a cycle and re-read the section. Every sentence that becomes false was a sentence about the display. This test is the reason the article exists, and it is the one a migration usually skips.
 
-**What does not change.** The algebra is the same, the physics is the same, and every identity holds in both notations. The isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ is exact over $\mathbb{C}$, and the dictionary has five entries.
+The link test. Every cited title must resolve, and a rewritten section must not cite a section that no longer exists.
 
-**What changes.** The default object, the default display, and the starting point of a computation. The biquaternion form begins from the pair the physics supplies; the gamma form begins from a gamma basis and a column.
+### The Rules of Use
 
-**What it costs.** A reader trained on gamma matrices must learn the dictionary, and a paper written in the corpus does not look like a paper written in the standard notation. The cost is paid once per reader and is repaid by the Gamma section.
+Write the action first, $\psi\mapsto a\psi b$, and name the operator only when the operator is the subject.
 
-**What it does not cost.** No result is lost. A computation that needs the gamma basis can be recast in it at any point, and each article's closing section states how.
+Write one term per line. A sum is a sum of terms, and each term is a pair.
 
-**Where the argument is proved.** *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* states the frame in full and proves the dictionary, and *Frame Conventions* fixes the two coordinate frames, the metric each carries and the low index of the gamma. *$M_4(\mathbb{C})$ Pauli Representation : Operators* proves the cone, the length theorem and the product criterion. *Operator Family Conventions* fixes the family marks $L$, $R$, $LR$, $\Theta$. *The Clifford Layer Is the Cell Layer* states the withdrawal rule and the per-article counts, and *The Square-Zero Element* is the first article written under it.
+Never compress a sum into one symbol unless its coefficient matrix has rank one.
+
+Keep the coefficient matrix out of the page. It is a diagnostic of the dictionary, not a datum of the physics.
+
+Use no arrays, columns or Kronecker products in a physical formula.
+
+Name the basis once, where it is used, and state a change of pair of spatial units where it occurs.
+
+Enter the Pauli chain only where it is the subject: a Pauli array, a root, an idempotent, a Peirce basis, an ideal or a block.
+
+Put the gamma form in one closing section, with the dictionary and no derivation, except in an article whose subject is the comparison, as in this one.
 
 ## Summary
 
-| question | gamma form | biquaternion form |
-|---|---|---|
-| what is the object? | a $4\times4$ matrix | a two-sided operator $L_{a}R_{b}$ |
-| what is the primitive? | a fixed matrix with a scalar coefficient | a pair of multipliers, seven effective parameters |
-| what is a physical element? | a sum of a few fixed matrices, each with a scalar coefficient | a sum of a few pairs |
-| what is a spinor? | a column in a chosen basis | an element of $\mathbb{B}$ |
-| what is chirality? | $\gamma_5$, one symbol for two roles | a cell $\Gamma$ and the central sign $\chi$ |
-| what is the metric? | a tensor in the Clifford relation | the squares $e_t^2=e_t$, $\vec e_k^2=-e_t$ |
-| what fixes the basis? | $S\gamma_\mu S^{-1}$, unmarked | the pair of spatial units, named |
-| which direction does the display mark? | one, the third, as the diagonal entry | none; the four units enter alike |
-| what follows from that mark? | idempotents, Peirce decomposition and basis, ideal, two-component spinor, Weyl blocks | only where an article chooses a root and says so |
-| is the mark a defect? | yes, for a formula meant to hold in every frame: a forced, unmarked, propagating choice | no mark, no defect |
-| how much of the chain is used? | as required by the literature it compares with | as little as possible, each link only where it is the subject |
-| where does it live? | the body in the literature; the Gamma section in the corpus | the body |
+The Pauli matrices carry a direction and do not say so. The asymmetry is one-against-two: exactly one of the three spatial units is diagonal, and it is the unit that built the idempotents of the display. The direction then propagates to the root, the idempotents, the ordered mixed pair, the Peirce decomposition, the adapted basis, the minimal left ideal, the two-component column, the spinor, the block split, the gamma frame, the adjoint, the charge conjugation and every sentence that speaks of "the third member" or "the upper block".
 
-**The one-sentence answer.** The Pauli and gamma arrays are correct coordinates on the algebra, but each marks one of three interchangeable spatial directions, and for the general writing of physics equations that mark is a defect; the coefficient basis marks none, and the biquaternion form is the algebra's own action, so the corpus writes the action, displays in $\mathrm{axf}$, and uses the Pauli–Peirce chain as little as possible.
+The gamma matrices carry the same direction in the frame. The five cells use the three spatial units in three different jobs, and a relabelling of the units produces a different five-element set. The Clifford relations do not notice the change, because a permutation of the units is an automorphism; the list of five does notice it.
+
+No gamma display can avoid the choice. The two gammas $\gamma_0$ and $\gamma_5$ anticommute, so at most one of them is diagonal, and the display spends that allowance on the time direction or on a spatial one. The Pauli display of this corpus spends it on the spatial one.
+
+The defect is a formal defect, and its source is physical. Physical space has no preferred spatial direction, and a fundamental equation therefore contains none. A display that singles one out adds a datum the equation does not have, and the addition is unmarked, so the reader cannot subtract it. It also hides what depends on that direction: the orbit of the three spatial cells, the basis-free form of the adjoint, and the correspondence between two frames become invisible on the page, which is worse than a stray datum. A frame is legitimate when a measurement, an apparatus or a background supplies the direction, and then it is named; the defect is the default frame no problem asked for.
+
+The $\mathrm{axf}$ display writes no direction. Its diagonal cells are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every cell is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the natural norm, and the transpose is the natural conjugation.
+
+The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\psi\mapsto a\psi b$, with no basis in the definition.
+
+The migration has three passes — arrays to cells, cells to actions, keep the axis-free array where an array is required — a dictionary, four traps and five checks.
+
+| question | the Pauli and gamma displays | the $\mathrm{axf}$ display |
+|---|---|---|
+| what fixes the display? | a declared unit, unmarked | the multiplication table, and nothing else |
+| what does the array write into the page? | one spatial direction | no direction |
+| which cells are diagonal? | $e_te_t$, $e_tu$, $ue_t$, $uu$ | the four squares, one per unit |
+| what is the block? | the split of the array into two halves | a named projector, with no diagonal |
+| where does a state come from? | a column in a chosen ideal | an element of $\mathbb{B}$ |
+| what is the metric? | a tensor in the Clifford relation | the squares of the units |
+| what is the cost? | the direction travels with the formula | the block must be named |
 
 ## Summary of Notation
 
@@ -396,31 +604,31 @@ The rules that follow from the above are short.
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
-| $x_0,x_1,x_2,x_3$ | the $\mathbb{M}_-$-frame coordinates, $x_0=ct'$; derivatives are written $\partial/\partial x_\mu$ |
+| the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the diagonal cells of the coefficient basis, a set unchanged by a permutation of the three spatial units |
 | $L_a$, $R_b$ | left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $L_{a}R_{b}$ | the two-sided operator, $L_{a}R_{b}\psi=a\psi b$ |
-| $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | composition, with the second slot reversed |
-| $c(M)$ | the coefficient matrix of $M$ in the cell basis; a diagnostic, not a datum |
-| $\ell(M)=\operatorname{rank}c(M)$ | the length, the least number of products in a sum |
-| $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | the chirality in the reference frame, $\Gamma^2=1$ |
-| $P_\pm=\tfrac12(1\pm\Gamma)$ | the chiral projectors |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign, $\chi^2=e_t$; an operator, not multiplication by an element of $\mathbb{B}$ |
-| the spatial pair | the orthogonal pair of units that fixes the reference frame |
-| $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | the gamma set in the $\mathbb{M}_-$ frame, named in this article's exposition and in each article's closing section |
-| $\mathrm{axf}$ | the label of the axis-free display, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
-| $\mathrm{pau}$ | the label of the Pauli display, built on the Pauli matrices and on one root |
-| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; $\sigma_3$ is the diagonal one, and the diagonal is the mark of the third direction |
-| $\vec\Xi=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
+| $L_aR_b$ | the two-sided operator, $L_aR_b\psi=a\psi b$ |
+| $L^{\mathrm{axf}}(\tilde Q)$, $L^{\mathrm{pau}}(\tilde Q)$ | the left array of $\tilde Q$ in the axis-free and in the Pauli display; the label is a name, not an exponent |
+| $L^{\mathrm{axf}}_{e_\mu}$, $R^{\mathrm{axf}}_{e_\mu}$ | the arrays of the units in the axis-free display |
+| $C_{\Pi}$ | the change of basis from the coefficient basis to the Peirce frame, $\det C_{\Pi}=-\tfrac14$ |
+| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; the diagonal one is the mark of the declared unit |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the mixed Peirce units, defined up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$ |
-| $\mathbb{B}\tilde\Pi_+$ | the minimal left ideal, complex dimension two; the two-component spinor space |
-| display defect | a notation that forces, does not mark, and propagates a choice the object does not force |
-| the chain | the nine links from the Pauli triplet to the Weyl blocks, each used only where it is the subject |
+| $\vec\Xi=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
+| $\gamma_\mu[\mathbb{M}_-]$ | the five frame cells, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{M}_-$ and the index is low |
+| $g[\mathbb{M}_-]$ | the metric of the $\mathbb{M}_-$ frame, $(-1,1,1,1)$; the cells satisfy $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}\mathrm I_4$ |
+| $\mathrm{axf}$ | the label of the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
+| $\mathrm{pau}$ | the label of the Pauli display, the Peirce frame of the root $i\vec e_z$ |
+| $\langle\tilde Q\rangle_\natural$ | the natural norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; its square is the determinant of the left array |
+| the chain | the constructions from the Pauli triplet to the two blocks, each used only where it is the subject |
 
 ## Further Reading
 
+- [Conventions of the Matrix Models](matrix-representations-conventions.html), for the axis-free and Pauli arrays, the sixteen cells and the switch between them.
+- [Conventions of the Frames](frame-conventions.html), for the two coordinate frames, their metrics and the gamma cells.
+- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five cells as a generating set, the graded basis and the non-canonicity of the frame.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left and right actions, the sandwich and the vocabulary of the representations.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Clifford algebra, its even part and the degree grading.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the spinor module, the minimal left ideals and the representation of the gammas.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the Clifford algebra, the minimal left ideals and the representation of the gammas.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the geometric reading of the Dirac operator and the even subalgebra as the algebra of spacetime.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions," *Proceedings of the London Mathematical Society* **4** (1873) 381–395, for the biquaternion algebra and the word "rotor".
 - Joe Harris, *Algebraic Geometry: A First Course*, Graduate Texts in Mathematics 133 (Springer, 1992), for the Segre variety, the Segre embedding and the rank-one determinantal variety.

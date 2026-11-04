@@ -274,7 +274,9 @@ and the distinction between them is the whole content of the gauge statement: $C
 
 **The evidential tier.** Both items are recorded in the lowest tier the corpus uses, and the reason is the medium rather than the authors. Gsponer and Hurni are careful workers on Lanczos's electrodynamics, and the corpus already cites their *Foundations of Physics* paper; but a four-page conference abstract asserting a replacement for the Dirac equation, the quark–lepton spectrum, the absence of a Higgs, and a non-local strong interaction contains **no derivation**, and the paper's own title is a **question**. The register is therefore correct in the source, and the corpus matches it: **claims reported, derivations not available in this source**, pointer to a programme with a history. The "parton" terminology is also historically loaded — the paper's two families are quarks and leptons, the modern interpretation — and "baryonic charge" is the paper's own term.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -354,6 +356,7 @@ The article commits throughout to the agenda's central discipline: no section as
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge principle, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this agenda follows.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the gauge-invariant density, and the open reality-class gap.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension the parent builds.

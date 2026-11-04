@@ -269,7 +269,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 4. **The nilpotent family in physics.** The real light cone is entirely of the idempotent type; the nilpotent family requires genuinely complex spatial components. Are there classical configurations — complexified momenta, geometric-optics rays, Regge-type constructions — for which the nilpotent branch of $\mathcal{Z}$ is the physically relevant one?
 
-5. **The cone and the metric levels.** The cone is the zero set of the level-1 identity form on $\mathbb{C}$, whose restriction to the real material slice is the frame form $g_{\mu\nu}[\mathbb{M}_-]$ in the $ict'$ coordinate. A reader moving to the level-3 Clifford metric $g$ must not conflate the three; whether the Clifford translation of the cone adds anything to its algebraic definition is an open question of the series rather than of this article.
+5. **The cone and the metric levels.** The cone is the zero set of the level-1 identity form on $\mathbb{C}$, whose restriction to the real material slice is the frame form $g_{\mu\nu}[\mathbb{M}_-]$ in the $ict'$ coordinate. A reader moving to the level-3 frame metric $g_{\mu\nu}[\mathbb{M}_-]$ must not conflate the three; whether the Clifford translation of the cone adds anything to its algebraic definition is an open question of the series rather than of this article.
 
 The conventions of the construction are those of the following companion articles:
 

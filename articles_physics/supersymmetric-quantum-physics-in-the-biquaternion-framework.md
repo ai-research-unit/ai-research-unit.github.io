@@ -20,7 +20,7 @@ The article develops the correspondence in both directions. It first states the 
 
 ## The Conventions
 
-The frame is the cell frame of the series. A cell is a two-sided multiplier, $L_{a}R_{b}\psi = a\psi b$, with $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity and the composition rule $L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{db}$; every operator display below is a sum of cells or a sum of element multipliers, and the side of an action is carried by position and never by a mark. The five generators of the reference frame are the cells $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, the three $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=x,y,z$, and $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$. The first squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three spatial ones to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, so the four carry $g = \mathrm{diag}(-1,+1,+1,+1)$ and distinct ones anticommute; the fifth anticommutes with all four and squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. These five are named as gammas only in §*The Legacy Gamma Formulation*, and the name is not used before it.
+The frame is the cell frame of the series. A cell is a two-sided multiplier, $L_{a}R_{b}\psi = a\psi b$, with $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity and the composition rule $L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{db}$; every operator display below is a sum of cells or a sum of element multipliers, and the side of an action is carried by position and never by a mark. The five generators of the reference frame are the cells $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, the three $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=x,y,z$, and $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$. The first squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three spatial ones to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, so the four carry $\varepsilon=(1,-1,-1,-1)$ and distinct ones anticommute; the fifth anticommutes with all four and squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. These five are named as gammas only in §*The Legacy Pauli Gamma Formulation*, and the name is not used before it.
 
 The algebra, the sectors, the gradient, the d'Alembertian and the three conjugations are those of *Algebra and Element Conventions*, *Frame Conventions* and *Operator and Calculus Conventions*, and none is restated here. The chirality is the fifth frame cell of *Matrix Representations Conventions*, whose representative on $\Delta$ is written $\chi$ below and whose central form is the sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$. The mass pair is
 
@@ -316,7 +316,9 @@ In the biquaternion framework shape invariance has a direct interpretation. The 
 
 **The isospectral example.** The partner pair is the corpus's simplest isospectral family: $H_+=A^{\dagger}A$ and $H_-=AA^{\dagger}$ agree away from zero, differ at zero where the Witten index counts the imbalance, and are carried into one another by the change of the mass profile that shape invariance describes. The element-level version of the same statement is §*The Isospectral Family* of [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html).
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and a cell is $L_{a}R_{b}$.
 
@@ -338,7 +340,7 @@ $$
 \end{aligned}
 $$
 
-The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$: $\gamma_0^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, so the four carry $g=\mathrm{diag}(-1,+1,+1,+1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A cell is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}$, and the cells span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of cells. A single cell is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of cells rather than as one.
+The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$: $\gamma_0^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, so the four carry $\varepsilon=(1,-1,-1,-1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A cell is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{op}}$, and the cells span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of cells. A single cell is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of cells rather than as one.
 
 $\gamma_5$ is the reference-frame cell of the chirality and $\gamma_0$ the reference-frame time cell, and two identifications close the article. The chirality sign of the previous sections, $\chi=\mathrm{diag}(-I_2,I_2)$ on $\Delta$, has $\gamma_5$ as its cell: the cell and the array are the same operator in the two representations, while the central sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is the algebra's definition of it. And $\gamma_0$ is off-diagonal on the Dirac module, so the frame grading $\beta$ of §*The Two Gradings Must Not Be Conflated* is $\gamma_0$. The anticommutation that separates the two gradings is then a one-line computation on the cells,
 
@@ -402,10 +404,11 @@ The Dirac oscillator is the three-dimensional relativistic realisation: $A_\omeg
 | $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ | Biquaternion form of the reduced supercharge |
 | $\tilde{Q}^2 = (-\partial^2/\partial Q_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
 | $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ | Oscillator supercharge (written $\mathcal{Q}$ in the companion article) |
-| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the four frame cells |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the four frame cells |
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - E. Witten, "Dynamical breaking of supersymmetry," *Nuclear Physics B* **188** (1981) 513–554, for the introduction of supersymmetric quantum physics and the Witten index.
 - E. Witten, "Constraints on supersymmetry breaking," *Nuclear Physics B* **202** (1982) 253–316, for the index and its invariance.
 - P. Salomonson and J. W. van Holten, "Fermionic coordinates and supersymmetry in quantum mechanics," *Nuclear Physics B* **196** (1982) 509–531, for the supercharge formalism.

@@ -435,7 +435,9 @@ the curvature constant and the surface umbilic at every point, and the latitude 
 
 **Proof.** The frame is the sandwich of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
 
@@ -506,6 +508,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Patrick R. Girard, Patrick Clarysse, Romaric Pujol, Liang Wang and Philippe Delachartre, *Differential Geometry Revisited by Biquaternion Clifford Algebra*, in *Curves and Surfaces* (Lecture Notes in Computer Science 9213, Springer, 2015), 216–242, the source of the construction recorded here: the biquaternion calculus with its exterior product, the affine connection bivector, the Frenet and Darboux frames, the curvature lines, the asymptotic lines, the geodesics and the two worked examples.
 - Patrick R. Girard, *Quaternions, Clifford Algebras and Relativistic Physics* (Birkhäuser, Basel, 2007), for the hyperquaternion algebras and the extension of the calculus to the four-dimensional pseudo-Euclidean case.
 - Gaston Casanova, *L'algèbre vectorielle* (Presses Universitaires de France, Paris, 1976), for the interior and exterior products of multivectors and the classical vector-calculus identities they reproduce, in the form the source follows.

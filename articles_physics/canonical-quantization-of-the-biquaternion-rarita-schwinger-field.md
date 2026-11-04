@@ -14,7 +14,7 @@ $$
 
 so that the tensor product of the material vector with the spinor contains a spin-$\tfrac32$ piece and a spin-$\tfrac12$ piece, and the trace constraint removes the latter. The same pattern appears for the graviton, where the symmetric square of the material triplet decomposes as $0\oplus2$ with $6=1+5$, and the trace-free part is the spin-two carrier of dimension five. In both cases the antisymmetrized kinetic structure carries the top spin and a trace removes the lower component; for the half-integer field the trace is taken with the frame cells, and it is the constraint that makes the field irreducible.
 
-The article is organized as follows. The field and its cell are fixed first, and every display is written in the cells as their two multipliers; three composites are then named once — the pair operator, its Fourier symbol, and the trace spinor — so that no display of the body repeats a sum. The gamma dictionary is collected once, in *The Legacy Gamma Formulation* at the end, so that no display of the body needs a gamma. The chiral pair, the constraint, and the consequence that transversality follows from the two are stated next, and the projector onto the traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
+The article is organized as follows. The field and its cell are fixed first, and every display is written in the cells as their two multipliers; three composites are then named once — the pair operator, its Fourier symbol, and the trace spinor — so that no display of the body repeats a sum. The gamma dictionary is collected once, in *The Legacy Pauli Gamma Formulation* at the end, so that no display of the body needs a gamma. The chiral pair, the constraint, and the consequence that transversality follows from the two are stated next, and the projector onto the traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
 
 - Companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, for the classical equation, the chiral pair, and the rest-frame reduction.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor carrier as a left ideal and the Clifford structure.
@@ -34,12 +34,12 @@ $$
 so that a cell names both sides at once. The frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$: the cell $iR_{\vec e_x}^{\mathrm{axf}}$ for $\mu=t$ and the cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\mu=k$. The label of a cell is the coordinate index of its left multiplier, and it is written low. The four frame cells satisfy
 
 $$
-iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}+iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}=2g_{\mu\nu}I_4,
+iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}+iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
 \qquad
-g=\mathrm{diag}(-1,+1,+1,+1).
+\varepsilon=(1,-1,-1,-1).
 $$
 
-The factor $i$ belongs to the cell and is not a choice: it is what makes the four cells the Clifford generators, and without it they would square to $-g_{\mu\nu}$. Where two cells meet, the two imaginary units multiply to $-1$,
+The factor $i$ belongs to the cell and is not a choice: it is what makes the four cells the Clifford generators, and without it they would square to $-\varepsilon_\mu\delta_{\mu\nu}$. Where two cells meet, the two imaginary units multiply to $-1$,
 
 $$
 iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}},
@@ -83,7 +83,7 @@ $$
 \bigl(\mathbb{D}-m\bigr)\psi_\mu=0 ,
 $$
 
-with the operator of the preceding paragraph. The two imaginary units — the one of the frame cell and the one the Dirac operator carries — are already multiplied to $-1$ inside $\mathbb{D}$, so the display carries no double $i$; the minus sign of $\mathbb{D}$ *is* that product. What remains is a plain two-sided contraction. The single equation is the transcription of the pair, not a second equation: the operator multiplies on both sides, and its action on the two chiral halves is the pair above. The companion article states the same equivalence from the classical side, and *The Legacy Gamma Formulation* reads $\mathbb{D}$ as $i\gamma\cdot\partial$.
+with the operator of the preceding paragraph. The two imaginary units — the one of the frame cell and the one the Dirac operator carries — are already multiplied to $-1$ inside $\mathbb{D}$, so the display carries no double $i$; the minus sign of $\mathbb{D}$ *is* that product. What remains is a plain two-sided contraction. The single equation is the transcription of the pair, not a second equation: the operator multiplies on both sides, and its action on the two chiral halves is the pair above. The companion article states the same equivalence from the classical side, and *The Legacy Pauli Gamma Formulation* reads $\mathbb{D}$ as $i\gamma\cdot\partial$.
 
 The field is irreducible only with the **trace constraint**
 
@@ -146,7 +146,7 @@ $$
 (P\psi)_\mu=\sum_\nu\varepsilon_\nu P_{\mu\nu}\psi_\nu ,
 $$
 
-whose trace vanishes. This was verified with explicit $4\times4$ matrices of the frame cells, with $g=\mathrm{diag}(-1,+1,+1,+1)$: the idempotency with the metric-weighted composition and both annihilation conditions held to machine precision. The rank of the $16\times16$ array $P_{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is
+whose trace vanishes. This was verified with explicit $4\times4$ matrices of the frame cells, with $\varepsilon=(1,-1,-1,-1)$: the idempotency with the metric-weighted composition and both annihilation conditions held to machine precision. The rank of the $16\times16$ array $P_{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is
 
 $$
 \boxed{\;\mathrm{rank}\,P = 12 = 16-4\;},
@@ -320,7 +320,9 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 6. **Empirical content.** As everywhere, whether any of this yields a prediction distinguishing the framework from standard higher-spin theory. The transcription given here does not.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -356,10 +358,10 @@ $$
 
 with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb{D}_p$ is $\mathbb{D}$ read at $\partial/\partial x_\mu\to-ip_\mu$, and that substitution is the single $i$ that separates the two; the triple $T$ differs from the antisymmetrized triple of frame cells by the same bookkeeping, three factors giving $(-i)^3=i$.
 
-**The identities.** With $g=\mathrm{diag}(-1,+1,+1,+1)$ and the sign vector $\varepsilon_\mu=g_{\mu\mu}$,
+**The identities.** With $\varepsilon=(1,-1,-1,-1)$ and the sign vector $\varepsilon_\mu=-g_{\mu\mu}$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
 \qquad
 \gamma_\mu^2=\varepsilon_\mu I_4,
 \qquad
@@ -371,7 +373,7 @@ $$
 \qquad
 \{\gamma_\mu,\gamma_5\}=0,
 \qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},
 $$
 
 with $\gamma_{\mu\nu}:=\tfrac12[\gamma_\mu,\gamma_\nu]$ for a pair and $\gamma_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu\gamma_\nu\gamma_\rho$ for a triple. The third entry of the first display is the identity the transversality argument uses, written with the letter.
@@ -423,8 +425,8 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\psi_\mu$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
 | $L_{a}R_{b}\psi=a\psi b$, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | A cell: one left and one right multiplier; the identity cell is $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame cell of the coordinate $x_\mu$: $iR_{\vec e_x}^{\mathrm{axf}}$ for $\mu=t$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\mu=k$; elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ |
-| $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4$ | Clifford relation of the frame cells; the product of two cells multiplies their imaginary units to $-1$ |
-| $\varepsilon_\mu=g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
+| $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | Clifford relation of the frame cells; the product of two cells multiplies their imaginary units to $-1$ |
+| $\varepsilon_\mu=-g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
 | $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |
 | $\mathbb{D}:=-\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\partial/\partial x_\mu$, $\mathbb{D}_p:=\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu$ | Pair operator of the conventions article on the module and its Fourier symbol; $\mathbb{D}^2=\Box$, $\mathbb{D}_p^2=p^2$, and the two imaginary units are already multiplied to $-1$ |
 | $(\mathbb{D}-m)\psi_\mu=0$ | Cell transcription of the chiral pair |
@@ -444,11 +446,12 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
-| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric (level 3); the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$ |
-| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the generators; the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$ |
+| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Pauli Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - C. Becchi, A. Rouet and R. Stora, "Renormalization of Gauge Theories," *Annals of Physics* **98** (1976) 287–321, for the BRST symmetry that governs the gauge fixing of the massless field.
 - W. Rarita and J. Schwinger, "On a Theory of Particles with Half-Integral Spin," *Physical Review* **60** (1941) 61, for the original vector-spinor equation and constraint.
 - Paul A. M. Dirac, "Generalized Hamiltonian Dynamics," *Canadian Journal of Mathematics* **2** (1950) 129–148, for the constraint analysis and the quantization with constraints.

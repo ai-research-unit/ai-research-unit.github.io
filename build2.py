@@ -48,16 +48,24 @@ def main():
 
     article_tpl = build.newer_than(build.SRC / "article_template.html", since)
     index_tpl = build.newer_than(build.SRC / "index_template.html", since)
+    # The two build scripts are dependencies too: a page list entry, a template
+    # placeholder or a CSS scope changed in them leaves no newer .md behind, so
+    # without this test the deployed pages keep the old markup and stay stale
+    # while the build reports success.
+    code_changed = (build.newer_than(build.SRC / "build.py", since)
+                    or build.newer_than(build.SRC / "build2.py", since))
     if article_tpl:
         print("article_template.html changed — every article page is rebuilt.")
     if index_tpl:
         print("index_template.html changed — every root page is rebuilt.")
+    if code_changed:
+        print("build.py changed — every root page and article page is rebuilt.")
 
     rebuilt = 0
 
-    for md_name, out_name in build.ROOT_PAGES:
-        if index_tpl or build.newer_than(build.SRC / md_name, since):
-            build.build_root_page(build.SRC / md_name, out_name, nav)
+    for md_name, out_name, is_menu in build.ROOT_PAGES:
+        if index_tpl or code_changed or build.newer_than(build.SRC / md_name, since):
+            build.build_root_page(build.SRC / md_name, out_name, nav, is_menu)
             rebuilt += 1
 
     for coll in build.ordered_collections():
@@ -66,7 +74,7 @@ def main():
                 print(f"Warning: no md files in {coll['src'].name}/")
             continue
         for f in coll["articles"]:
-            if article_tpl or build.newer_than(f, since):
+            if article_tpl or code_changed or build.newer_than(f, since):
                 build.build_article(coll, f, nav)
                 rebuilt += 1
 

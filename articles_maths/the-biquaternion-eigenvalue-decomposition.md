@@ -267,7 +267,9 @@ The Hermitian condition has a grade reading. The biquaternion star fixes the rea
 
 **Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec\Xi$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 
@@ -317,6 +319,7 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternions with $\mathrm{Cl}_{3,0}$ and the volume element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
 - The biquaternion articles of this corpus: *The Biquaternion Algebra*, *The Spectrum*, *Idempotents*, and *Peirce Decompositions of the Biquaternion Algebra*.

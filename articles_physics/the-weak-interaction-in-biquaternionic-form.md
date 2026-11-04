@@ -18,7 +18,7 @@ $$
 \Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \chi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}I_4$ and $\chi^2=I_4$, with $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -72,7 +72,7 @@ against the measured $1.2300\times10^{-4}$, which is $0.958$ times the tree-leve
 
 ### The vector and the axial vertex
 
-The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\chi$ is a cell as well; explicitly $\Gamma_t\chi=R_{\vec e_y}$ and $\Gamma_k\chi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=g_{\mu\mu}I_4$ and $(\Gamma_\mu\chi)^2=-g_{\mu\mu}I_4$, both verified exactly.
+The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\chi$ is a cell as well; explicitly $\Gamma_t\chi=R_{\vec e_y}$ and $\Gamma_k\chi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\chi)^2=-g_{\mu\mu}I_4$, both verified exactly.
 
 The object the weak interaction uses is neither of these but their difference. It is a cell as well, this time by linearity of the right factor rather than by the product rule,
 
@@ -228,14 +228,14 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $i$ | Central imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $L_aR_b$ | Cell, $L_aR_b\psi=a\psi b$; applying it twice gives $a^2\psi b^2$ |
-| $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}I_4$ |
+| $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\chi=-iR_{\vec e_z}$ | Chirality cell, $\chi^2=I_4$, the image of $\gamma_5[\mathbb{M}_-]$ |
 | $P_L=\tfrac12(I_4-\chi)$, $P_R=\tfrac12(I_4+\chi)$ | Chiral projectors, $P_LP_R=0$ |
 | $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |
 | $\Gamma_\mu(g_V-g_A\chi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
 | $\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=g_{\mu\mu}(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
-| $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ | Clifford metric of the $\mathbb{M}_-$ frame |
+| $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$ | Frame metric of the $\mathbb{M}_-$ frame |
 | $J^{+}_\mu=\bar\psi_{\mathrm u}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
 | $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu$ | Four-fermion contact |

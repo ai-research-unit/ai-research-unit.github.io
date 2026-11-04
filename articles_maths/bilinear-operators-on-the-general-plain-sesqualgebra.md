@@ -116,7 +116,9 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{Q}_
 
 **A null spinor.** A nonzero spinor $s$ with $\langle s,s\rangle_{\natural}=0$ — a zero divisor of the algebra — has a **nonzero** scalar covariant, $\mathfrak{b}_0(s,s)=s^{\dagger}s>0$. The covariants of this article are built from the positive definite module form and not from the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, which is the distinction between the two forms of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; a spinor is null for the module form only when it vanishes, and the null cone of the algebra lives in the vector part of $\mathbb{M}_+$ and not on the spinor.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 
@@ -151,6 +153,7 @@ A **form** on the biquaternion spinor module is given by a $2\times2$ matrix, $\
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the completeness of the Clifford action, the spinor module and the trace form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for the Fierz identity, the bilinear covariants and the classification by grade.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the double centraliser theorem and the commutant of a full matrix algebra on its simple module.

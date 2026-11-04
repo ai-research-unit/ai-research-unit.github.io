@@ -24,7 +24,7 @@ This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a 
 
 5. **The article stands apart from the rest of the subcategory, and is last for that reason.** Everything before it has been quantum field theory: states, operator algebras, path integrals, finite-temperature and non-equilibrium machinery, and the two structural quantum effects. The spectral triple is a construction in non-commutative geometry, and its appearance here is as the algebraic interpretation of the framework's objects. It is included because the biquaternion algebra's non-commutativity and its module make the construction natural, and it is placed last because it uses the objects the other articles establish without being used by them.
 
-The sections that follow treat, in order: the definition and the axioms; the biquaternion candidate and its elementary properties; the real structure and the KO signs; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations and the spectral action; the almost-commutative triple and the finite geometry; the ledger of what is established and what is interpretation; and a closing section, *The Legacy Gamma Formulation*, where the cells are written out as gamma matrices, followed by a summary and a table of notation.
+The sections that follow treat, in order: the definition and the axioms; the biquaternion candidate and its elementary properties; the real structure and the KO signs; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations and the spectral action; the almost-commutative triple and the finite geometry; the ledger of what is established and what is interpretation; and a closing section, *The Legacy Pauli Gamma Formulation*, where the cells are written out as gamma matrices, followed by a summary and a table of notation.
 
 ## Spectral Triples and Their Axioms
 
@@ -88,7 +88,7 @@ $$
 \qquad
 (i\tilde\nabla)^{\dagger}=i\tilde\nabla^{\natural},
 $$
-so $i\tilde\nabla$ is not self-adjoint for that form. The criterion is fixed by the derivative: since $(\partial/\partial x_\mu)^{\dagger}=-\partial/\partial x_\mu$, an operator $\sum_\mu A_\mu\partial/\partial x_\mu$ with constant coefficients is self-adjoint exactly when every $A_\mu$ is anti-Hermitian. Here $ie_t$ is anti-Hermitian but the three $i\vec e_k$ are Hermitian, so the operator is self-adjoint on the time direction and skew on the three spatial ones, and the defect is the Minkowski signature itself. The Euclidean frame of *The Legacy Gamma Formulation* is the opposite case, all four of its generators being Hermitian; there the coefficients $-iE_\mu$ are anti-Hermitian and $-i\sum_\mu E_\mu\partial/\partial Q_\mu$ is self-adjoint for the same form, with square $-\Box$, since $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial Q_\mu^2$ and the frame's generators square to $+1$. That is Connes' normalisation, and it is the frame in which the signs are all of one kind. The framework's operator is self-adjoint for the Dirac (Krein) form, and whether the triple can use a positive-definite form and keep a self-adjoint $D$ is part of the open problem, not a consequence of the algebra.
+so $i\tilde\nabla$ is not self-adjoint for that form. The criterion is fixed by the derivative: since $(\partial/\partial x_\mu)^{\dagger}=-\partial/\partial x_\mu$, an operator $\sum_\mu A_\mu\partial/\partial x_\mu$ with constant coefficients is self-adjoint exactly when every $A_\mu$ is anti-Hermitian. Here $ie_t$ is anti-Hermitian but the three $i\vec e_k$ are Hermitian, so the operator is self-adjoint on the time direction and skew on the three spatial ones, and the defect is the Minkowski signature itself. The Euclidean frame of *The Legacy Pauli Gamma Formulation* is the opposite case, all four of its generators being Hermitian; there the coefficients $-iE_\mu$ are anti-Hermitian and $-i\sum_\mu E_\mu\partial/\partial Q_\mu$ is self-adjoint for the same form, with square $-\Box$, since $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial Q_\mu^2$ and the frame's generators square to $+1$. That is Connes' normalisation, and it is the frame in which the signs are all of one kind. The framework's operator is self-adjoint for the Dirac (Krein) form, and whether the triple can use a positive-definite form and keep a self-adjoint $D$ is part of the open problem, not a consequence of the algebra.
 
 **The Dirac equation in two forms.** The framework writes the Dirac equation in two forms, and the displays should be kept separate because they answer different questions. The defining form is the chiral pair,
 $$
@@ -447,7 +447,9 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 - Whether the triple can use a positive-definite form at all. The candidate operator is not self-adjoint for the Hermitian form — $ie_t$ is anti-Hermitian and the three $i\vec e_k$ are not — while it is self-adjoint for the Dirac form, which is indefinite. A spectral triple needs a self-adjoint $D$ on a Hilbert space, so either a different frame or a different form is needed, and the algebra does not decide which.
 - The exact relation between the algebra's involution $\flat$ and the module's quaternionic structure $\mathcal{J}$ is stated qualitatively (via $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) and is not constructed explicitly. In particular, the sign $\epsilon'$ of $JD=\epsilon'DJ$ is not computed.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The body of this article is written in cells. The gammas are collected here, as a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -471,7 +473,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
+They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -539,6 +541,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - A. Connes, *Noncommutative Geometry* (Academic Press, 1994), for the founding treatment of spectral triples.
 - A. Connes, "Noncommutative geometry and reality," *Journal of Mathematical Physics* **36** (1995) 6194–6231, for the real structure, the axioms, and the KO-dimension.
 - A. Connes, "Gravity coupled with matter and the foundation of non-commutative geometry," *Communications in Mathematical Physics* **182** (1996) 155–176, for inner fluctuations and the spectral action.

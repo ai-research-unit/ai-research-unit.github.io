@@ -43,9 +43,8 @@ the coefficient matrix $D$ of *The Four Forms and the Four Algebraic Norms over 
 
 ### The Identity with the Scalar Part of the Plain Product
 
-**Theorem.** The trace form of the block is the scalar part of the **plain** product:
-
-$$
+**Theorem.** The trace form of the block is the scalar part of the **plain** product:,
+\qquad \varepsilon=(1,-1,-1,-1),$$
 \boxed{\; \tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle \;}.
 $$
 

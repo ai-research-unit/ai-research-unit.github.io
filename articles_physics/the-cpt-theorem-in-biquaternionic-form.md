@@ -29,7 +29,7 @@ Each carries one factor of $i$, and naming them $G_\mu$ is what keeps that facto
 $$
 G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_\mu G_\nu=-G_\nu G_\mu\quad(\mu\ne\nu),
 $$
-which are the Clifford relations of the metric $g=\operatorname{diag}(-1,+1,+1,+1)$. A product of two generators is where $i^{2}=-1$ is spent: the two factors of $i$ give $-1$, and that sign combines with $\vec e_k^{2}=-e_t$ and with $\vec e_j\vec e_k=\pm\vec e_l$ so that the product is again a single cell, this time with no $i$ in it. This is used repeatedly below: the generators themselves are not written out again, only $G_\mu$ and the plain cells $L_aR_b$ that the internal factors need. The section The Legacy Gamma Formulation is the only place this article writes gamma symbols, and it uses them for exactly these four cells.
+which are the cell relations of the sign vector $\varepsilon=(1,-1,-1,-1)$. A product of two generators is where $i^{2}=-1$ is spent: the two factors of $i$ give $-1$, and that sign combines with $\vec e_k^{2}=-e_t$ and with $\vec e_j\vec e_k=\pm\vec e_l$ so that the product is again a single cell, this time with no $i$ in it. This is used repeatedly below: the generators themselves are not written out again, only $G_\mu$ and the plain cells $L_aR_b$ that the internal factors need. The section The Legacy Pauli Gamma Formulation is the only place this article writes gamma symbols, and it uses them for exactly these four cells.
 
 The chirality cell and the volume element are
 $$
@@ -360,7 +360,9 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 7. **Does the Clifford classification derive the module maps?** The three non-trivial fundamental automorphisms of $\mathrm{Cl}_{n,m}$ are the algebra's three conjugations, and the classification assigns $P$, $T$ and $PT$ to them. On the spinor module the same operations are implemented by the internal cells $\eta_P=G_0$ and $\eta_T=G_1G_3=-L_{\vec e_y}^{\mathrm{axf}}$, of which only the second is even. Whether the module maps can be *read off* the automorphism classification — so that $\eta_P$ and $\eta_T$ are derived rather than matched — is the representation-theoretic step this article does not take. If it can be taken, the correspondences $P\leftrightarrow\star$, $T\leftrightarrow\sim$ become a derivation; if it cannot, the classification remains a structural companion rather than a source.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; the bodies above and below are written in the cells. In this frame the generators are the same four cells, with the $i$ written out rather than carried in the name:
 $$
@@ -425,30 +427,29 @@ $$
 
 Each reduction is a single cell with no $i$ left, and the mechanism is the same in all four: the two factors of $i$ multiply to $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ contributes a second $-1$, and the two cancel, leaving the quaternion product of the two arguments. That is the rule that decides the parity of a product: a product of an even number of generators is real, a product of an odd number is purely imaginary, so an odd product such as $\gamma_1$ or $i\gamma_2$ needs its explicit $i$ and an even product such as $\gamma_1\gamma_3$ never has one. The mechanical rules are $L_aR_bL_cR_d=L_{ac}R_{db}$, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ for $j\ne k$ and $\vec e_k^{2}=-e_t$, together with $L_{e_t}^{\mathrm{pau}}=R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ for the identity.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because the square of a cell depends on the frame. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 The biquaternion framework carries the three discrete operations on its spinor-module Dirac field, and they are written in cells throughout. Charge conjugation is $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$; parity is $P[\psi](x)=G_0\psi(t',-\vec x)$; time reversal is $T[\psi](x)=-L_{\vec e_y}^{\mathrm{axf}}\psi^{*}(-t',\vec x)$. Each was verified separately to preserve the free equation $(\mathbb{D}-m)\psi=0$, on the differential equation, for three on-shell momenta and on a superposition of both frequency branches. The field map of time reversal is anti-linear, $T[i\psi]=-i\,T[\psi]$, and its induced operator is anti-unitary; it conjugates the framework's scalar imaginary. Charge conjugation and parity anticommute with the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ and exchange the chiral halves; time reversal commutes with $\Gamma$; the composition preserves chirality.
@@ -478,7 +479,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(\mathbb{D}-m)\psi=0$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | Two-sided cells; identity $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, inverse $L_{a^{-1}}R_{b^{-1}}$, product $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ |
-| $G_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four generator cells (written as the gammas in the Gamma section); $G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $G_k^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, distinct ones anticommute (metric $g=\mathrm{diag}(-1,+1,+1,+1)$); $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ |
+| $G_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four generator cells (written as the gammas in the Gamma section); $G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $G_k^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, distinct ones anticommute (signs $\varepsilon=(1,-1,-1,-1)$); $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ |
 | $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ | The Dirac operator on the module, in cells |
 | $G_0E_{\vec p}-\sum_k G_kp_k$ | Plane-wave value of $\mathbb{D}$; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\omega=-R_{\vec e_z}^{\mathrm{axf}}=-i\Gamma$ | Chirality cell and volume element; $\Gamma^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; $\eta_{CPT}=\Gamma=i\omega$ |
@@ -495,6 +496,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - G. Lüders and B. Zumino, "Connection between Spin and Statistics," *Physical Review* **110** (1958) 1450–1453, for the general proof of the CPT theorem in the axiomatic setting.
 - R. F. Streater and A. S. Wightman, *PCT, Spin and Statistics, and All That* (Benjamin, 1964), for the Wightman-axiomatic treatment from which the theorem's hypotheses — locality, positivity, Lorentz invariance — are read.
 - J. J. Sakurai, *Invariance Principles and Elementary Particles* (Princeton, 1964), for the classic operator treatment of the discrete symmetries and of CPT.

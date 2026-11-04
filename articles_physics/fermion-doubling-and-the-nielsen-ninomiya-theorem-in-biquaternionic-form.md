@@ -12,7 +12,7 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The classical action and the lattice
 
-The field of this article is a biquaternion, an element of $\mathbb{B}$; on the lattice it is a Grassmann-valued element at each site. Its coordinates are the material ones, $x_0=ct'$ and $x_k$, and its frame is the $\mathbb{M}_-$ frame of *Frame Conventions*. Here $i$ is the scalar imaginary, $i^2=-1$.
+The field of this article is the biquaternion $\tilde\Psi$, an element of $\mathbb{B}$, and $\psi$ is its four-component coordinate column in the regular display, on which the cells act as the operators they are. Its coordinates are the material ones, $x_0=ct'$ and $x_k$, and its frame is the $\mathbb{M}_-$ frame of *Frame Conventions*. Here $i$ is the scalar imaginary, $i^2=-1$.
 
 The five frame cells are those of *Matrix Representations Conventions*: the timelike cell, the three spatial cells and the chirality cell $\chi$. Each is an action of the form $\tilde Q\mapsto a\tilde Qb$, and the action is the derived form
 
@@ -22,7 +22,7 @@ $$
 \tilde Q\mapsto-i\tilde Q\vec e_z .
 $$
 
-The first line is the timelike cell, the second the three spatial cells, the third the chirality cell $\chi$. Their squares and their anticommutator are the ones *Frame Conventions* states in the $\mathbb{M}_-$ frame, with $g=\mathrm{diag}(-1,+1,+1,+1)$; they are cited here, not rederived.
+Their squares and their anticommutator are the ones *Frame Conventions* states in the $\mathbb{M}_-$ frame, with $\varepsilon=(1,-1,-1,-1)$; they are cited here, not rederived.
 
 The dynamics is the chiral pair of *Operator and Calculus Conventions*, §*The Gradient*,
 
@@ -50,10 +50,26 @@ $$
 and the Euclidean action is
 
 $$
-S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\sum_{\mu=1}^4 E_\mu\frac{\partial}{\partial x_\mu} + m\right)\psi(x).
+S^E_F[\psi] = \int d^4x_E\;\psi^{\dagger}(x)\left(\sum_{\mu=1}^4 E_\mu\frac{\partial}{\partial x_\mu} + m\right)\psi(x).
 $$
 
-The sign of the mass term flips with the Wick rotation; that is the rotation, not a new convention. The Euclidean chirality is the fifth cell, the product $E_4E_1E_2E_3$ of the four Euclidean cells; it is minus the Minkowski chirality cell $\chi$, because the four cells anticommute and reversing their order flips the sign.
+$\psi^{\dagger}$ is the adjoint of the column, the dagger of *Operator and Calculus Conventions*, §*The Operators*. The four Euclidean cells are self-adjoint under it, $\psi^{\dagger}\psi=\sum_\mu\lvert\psi_\mu\rvert^{2}$ is positive, the kinetic part is anti-Hermitian up to a total derivative, and the mass term is Hermitian for real $m$.
+
+The Euclidean equation is the Lorentzian one with the whole equation multiplied by $-1$, so the mass term reads $+m$ against the derivative term where the Lorentzian form reads $-m$; the sign is a way of writing the equation, not a second convention. The Euclidean chirality is the fifth cell, the product $E_4E_1E_2E_3$ of the four Euclidean cells; it is minus the Minkowski chirality cell $\chi$, because the four cells anticommute and reversing their order flips the sign.
+
+A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_\mu$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four Euclidean directions, the fourth temporal; the doubling theorem is a statement about the symbol and does not depend on the signature. The field becomes a Grassmann-valued column $\psi_n$ at each site, with $\psi_n^{\dagger}$ an independent Grassmann variable and not its conjugate, and the derivative is replaced by the **symmetric difference**
+
+$$
+\frac{\partial\psi}{\partial x_\mu}\ \longrightarrow\ \frac{\psi_{n+\vec u_\mu}-\psi_{n-\vec u_\mu}}{2a},
+$$
+
+so that the naive action is
+
+$$
+S_F^L[\psi] = a^4\sum_n \psi_n^{\dagger}\left(\sum_{\mu=1}^4 E_\mu\frac{\psi_{n+\vec u_\mu}-\psi_{n-\vec u_\mu}}{2a} + m\psi_n\right),
+$$
+
+which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
 ### The propagator and the doubler poles
 
@@ -94,7 +110,7 @@ The naive action carries a symmetry absent from the continuum: for each of the s
 $$
 \boxed{\;\psi_n \;\to\; \exp(-i\,n\cdot\pi_A)\,S_A\,\psi_n,
 \qquad
-\bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(i\,n\cdot\pi_A),
+\psi_n^{\dagger} \;\to\; \psi_n^{\dagger}\,S_A^{\dagger}\,\exp(i\,n\cdot\pi_A),
 \qquad
 S_0 = \mathrm{I}_4,\quad S_\nu = -\chi E_\nu\;},
 $$
@@ -121,7 +137,7 @@ The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubli
 The theorem also has a Euclidean form for an action
 
 $$
-S=\sum_{x,y,\mu}\bar\psi(x)\,E_\mu F_\mu(x,y)\,\psi_R(y),
+S=\sum_{x,y,\mu}\psi_R^{\dagger}(x)\,E_\mu F_\mu(x,y)\,\psi_R(y),
 $$
 
 under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^\dagger$) and locality; here $\psi_R$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of $L$ and $R$ Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
@@ -187,7 +203,9 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 6. **Empirical contact.** As everywhere, the doubling is a lattice artefact without continuum signature; any framework-level claim must respect that.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are the frame cells of the body, written as single letters; they form a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -238,7 +256,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
 $$
 
-On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu\partial/\partial x_\mu$ and $\varepsilon_\mu=g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$.
+On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu\partial/\partial x_\mu$ and $\varepsilon_\mu=-g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$.
 
 The pair and the cell equation are the same statement in two readings. The two lines of the pair are the two chiral halves of $\psi$: with
 
@@ -257,7 +275,7 @@ The gradient anticommutes with $\gamma_5$, so it carries each chirality into the
 
 **The identities of the frame.** In the $\gamma$ reading the indices run over $\mu=0,1,2,3$, so the lattice direction $\mu=4$ of the previous sections is $\mu=0$ here. With $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
@@ -268,7 +286,7 @@ $$
 \Sigma_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -305,6 +323,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | $S_F^L$ | Naive lattice fermion action |
 | $\tilde\nabla$ | Biquaternionic gradient, of *Operator and Calculus Conventions* |
 | $\chi$ | The chirality cell, the fifth of the frame cells; acts by $\tilde Q\mapsto-i\tilde Q\vec e_z$ |
+| $\psi$, $\psi^{\dagger}$ | The field as its coordinate column and its adjoint, the dagger of *Operator and Calculus Conventions* |
 | $\psi_L$, $\psi_R$ | The chirality subscript of a field, of *Matrix Representations Conventions* |
 | $E_4$, $E_k$ | Euclidean frame cells, the Wick rotation of the frame cells; act by $\tilde Q\mapsto \tilde Q\,i\vec e_x$ and $\tilde Q\mapsto-\vec e_k\,\tilde Q\,\vec e_y$; $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}\mathrm{I}_4$ |
 | $S_\nu=-\chi E_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
@@ -318,6 +337,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. B. Nielsen and M. Ninomiya, "Absence of neutrinos on a lattice (I): proof by homotopy theory," *Nuclear Physics B* **185** (1981) 20–40, and "(II): intuitive topological proof," *Nuclear Physics B* **193** (1981) 173–194, for the original theorem.
 - H. B. Nielsen and M. Ninomiya, "A no-go theorem for regularizing chiral fermions," *Physics Letters B* **105** (1981) 219–223, for the general-regularization version.
 - D. Friedan, "A proof of the Nielsen–Ninomiya theorem," *Communications in Mathematical Physics* **85** (1982) 481–490, for the differential-geometric proof.

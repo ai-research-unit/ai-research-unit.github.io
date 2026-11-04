@@ -94,7 +94,9 @@ so $D_{\mathrm{alg}}$ is a skew-adjoint operator with purely imaginary spectrum 
 
 **Example (the biquaternion algebra).** In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$ with the frame $\vec e_x,\vec e_y,\vec e_z$ of square $-1$, the Dirac element $D_{\mathrm{alg}} = L_{\vec e_x}+L_{\vec e_y}+L_{\vec e_z}$ is skew-adjoint with $D_{\mathrm{alg}}^{2} = -3\,\mathrm{id}$ and $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = 3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and the eigen-spinors form an orthonormal basis of $\mathbb{B}$ for the form $\mathrm{Sc}(x^{\dagger}y)$. This is the smallest definite model with a non-abelian spin group, and it realises the spectral gap explicitly.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -133,6 +135,7 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Dirac operator on a Hermitian Clifford module, the positivity of the square and the space of harmonic spinors.
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators*, Grundlehren der mathematischen Wissenschaften 298 (Springer, 1992), for the Weitzenböck formula, the positivity of the square and the Hodge-type splitting.
 - Mikio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for self-adjoint operators, their spectra and the positivity of $D^{*}D$.

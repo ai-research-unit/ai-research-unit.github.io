@@ -148,7 +148,9 @@ and off the slice the two differ.
 
 **What an object of the algebra can and cannot hold.** The objects of the algebra are the elements of $\mathbb{B}$ and the groups and sets built from them by multiplication, conjugation and the sandwich. The orthogonal group is such an object, read on the Hermitian sector. The Pin group is not, because it contains the odd versors, which are the reflections; the only part of it that is an object of the algebra is the even cover $\mathbb{B}^{\times}_1\cong\mathrm{Spin}(1,3)$.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -188,6 +190,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the Clifford group, its norm, the signed inner conjugation and the double cover of the orthogonal group.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternion algebra with the even part of $\mathrm{Cl}_{1,3}$ and for the matrix models of the two slots.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford algebra as the ambient object, the volume element and the parity grading.

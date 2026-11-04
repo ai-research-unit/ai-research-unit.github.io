@@ -215,7 +215,7 @@ $$
 (e_Nu)(e_Nv)+(e_Nv)(e_Nu)=e_Nu e_Nv+e_Nv e_Nu=-e_N^2(uv+vu)=-(uv+vu)=0,
 $$
 
-where the middle step uses that $u$ and $v$ both anticommute with $e_N$ and $e_N^2=-1$. The products $e_Ne_i$ therefore satisfy the Clifford relations of the form $\mathfrak{Q}$ restricted to $e_N^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_N^\perp,\mathfrak{Q})$. Both sides have dimension $2^{N-1}$, so the map is an isomorphism.
+where the middle step uses that $u$ and $v$ both anticommute with $e_N$ and $e_N^2=-1$. The products $e_Ne_i$ therefore satisfy the cell relation of the form $\mathfrak{Q}$ restricted to $e_N^\perp$, and by the universal property they generate a quotient of $\mathrm{Cl}(e_N^\perp,\mathfrak{Q})$. Both sides have dimension $2^{N-1}$, so the map is an isomorphism.
 
 **Low-dimensional instances.** For $\mathrm{Cl}_{0,2}$ one has $\mathrm{Cl}^0_{0,2}=\operatorname{span}\{1,e_1e_2\}\cong\mathbb{C}$; for $\mathrm{Cl}_{3,0}$ one has $\mathrm{Cl}^0_{3,0}\cong\mathbb{H}$, as computed above; and for $\mathrm{Cl}_{1,3}$ the recursion applied to a generator of square $-1$ gives $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}$, which is $M_2(\mathbb{C})$ by the identification of the next section, the same algebra that is used in the biquaternion articles. The recursion holds whenever a generator of square $-1$ exists; when a generator of square $+1$ is used instead, the same computation returns $-\mathfrak{Q}$ in place of $\mathfrak{Q}$, which is why the sign of the form matters and why the recursion alternates between the two definite families.
 
@@ -278,7 +278,9 @@ The table is stated for a field of characteristic not $2$ in which $-1$ is not a
 
 Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong\mathbb{C}$ when $F=\mathbb{R}$; $\mathrm{Cl}_{3,0}\cong\mathbb{C}\mathrm{l}_2\cong M_2(\mathbb{C})\cong\mathbb{B}$, the biquaternion algebra; $\mathrm{Cl}_{1,1}$ is the four-dimensional algebra called the split quaternions in the classical literature; and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ is the quaternion algebra. The entries with centre larger than $F$ are exactly those of odd rank $n$, in agreement with the general rule that the volume element is central and nontrivial when $n$ is odd.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
 
@@ -326,6 +328,7 @@ Complexification sends $\mathrm{Cl}(V,\mathfrak{Q})$ to the complex Clifford alg
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the classification of real and complex Clifford algebras and the low-dimensional computations.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the relation between the small Clifford algebras and the classical groups.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for explicit low-dimensional identifications and the Pauli-matrix model.

@@ -216,7 +216,9 @@ Two further gaps are the article's own, and they are narrower. The **neutrality 
 
 Finally, the standing **empirical-contact** gap applies with full force. Nothing here distinguishes the framework's neutron from the Standard Model's, because the framework reaches only the generic fermion structure they share; the neutron-specific content is imported. The article therefore makes no prediction, claims no prediction, and leaves the neutron's structure exactly where standard physics found it.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.
 
@@ -248,7 +250,7 @@ $$
 \gamma_k^{2}=i^{2}(L_{\vec e_k}^{\mathrm{axf}})^{2}(R_{\vec e_y}^{\mathrm{axf}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
 $$
 
-The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$.
+The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
 
 The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the cells contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, so
 
@@ -308,7 +310,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - m_n i\,\overline{F}\,\vec e_z$ | Two-sided Dirac equation, $F\in\mathbb{B}$; bar is the coefficientwise conjugation |
-| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Gamma Formulation* |
+| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |
@@ -316,6 +318,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html) — the sibling accounting for a fundamental spin-$\tfrac12$ fermion, and the source of the tree-level $g=2$ relation used here to show that a neutral structureless Dirac field has zero magnetic moment.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation, its mass term, plane-wave solutions, and the mass-shell relation used throughout.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the Dirac module, the projectors, the charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$, the mass selection rule, and the real structure whose interpretation is left open here.

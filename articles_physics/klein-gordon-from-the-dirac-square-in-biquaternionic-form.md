@@ -20,7 +20,7 @@ C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},
 (x_t,x_x,x_y,x_z) = (ct',x,y,z),
 $$
 
-with $\nu(t) = x$ and $\nu(k) = y$ the reference frame, built from cells that multiply on the left and on the right at once; the chiral pair is its splitting by the chirality cell. Both readings reach the same central $\Box$, by two different mechanisms. In the algebra the square is the **product** $\tilde\nabla\tilde\nabla^{\natural}$, not $\tilde\nabla$ alone, and the **conjugate** cancels the cross terms; in the module $\mathbb{D}$ squares by itself, because the frame cells **anticommute**. The section *The Square in the Spinor Module* carries the second reading, and the Clifford names of the same cells are collected in *The Legacy Gamma Formulation*.
+with $\nu(t) = x$ and $\nu(k) = y$ the reference frame, built from cells that multiply on the left and on the right at once; the chiral pair is its splitting by the chirality cell. Both readings reach the same central $\Box$, by two different mechanisms. In the algebra the square is the **product** $\tilde\nabla\tilde\nabla^{\natural}$, not $\tilde\nabla$ alone, and the **conjugate** cancels the cross terms; in the module $\mathbb{D}$ squares by itself, because the frame cells **anticommute**. The section *The Square in the Spinor Module* carries the second reading, and the Clifford names of the same cells are collected in *The Legacy Pauli Gamma Formulation*.
 
 The question is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* shows that $\Box - m^2c^2/\hbar^2$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the first-order terms of a product $(\tilde\nabla^{\natural} + A)(\tilde\nabla + B)$ can be cancelled only with $B = -A$ and $A$ anticommuting with all three units $\vec e_x,\vec e_y,\vec e_z$, and no such element exists. If the Klein–Gordon operator has no scalar square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the spinor module, and the mass term is off-diagonal between the two chiral halves. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be spinor-valued.
 
@@ -209,9 +209,9 @@ $$
 with $\nu(t) = x$ and $\nu(k) = y$, and the identity on the four-dimensional module is $I_4 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, since $e_t = 1$. Each cell carries one factor of $i$, and every product of two cells carries $i^2 = -1$, so no display below ever carries a double $i$. The cells satisfy
 
 $$
-C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4,
+C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu}I_4,
 \qquad
-g = \mathrm{diag}(-1,+1,+1,+1),
+\varepsilon=(1,-1,-1,-1),
 $$
 
 so $C_t^2 = I_4$ and $C_k^2 = -I_4$. The cells are indexed by the coordinate labels, $\mu\in\{t,x,y,z\}$, so $C_t$ is the timelike cell and the other three are spatial. The timelike cell carries $R_{\vec e_x}^{\mathrm{axf}}$ and the spatial cells carry $R_{\vec e_y}^{\mathrm{axf}}$; those two units anticommute, and that is why $C_t$ anticommutes with each $C_k$.
@@ -335,7 +335,7 @@ The transfer from the first-order pair to the second-order equation can now be a
 
 There is a final structural remark. The passage from the pair to the square is the passage from a **graded** operator to its diagonal. In the chiral block form of $\mathcal{D}_-$ the gradient sits off the diagonal — it maps one chirality to the other — while the mass sits on the diagonal, the same scalar in both blocks. The product $\mathcal{D}_-\mathcal{D}_+$ is diagonal, $(\Box - m^2)$ acting on each chirality separately, so the off-diagonal part is what has been traced out. That grading is the one the supersymmetric structure of the first-order operator exploits, and *Supersymmetric Quantum Physics in the Biquaternion Framework* develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root; it is the diagonal of a matrix whose off-diagonal entries are the Dirac operator and its conjugate.
 
-In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P\tilde P^{\natural} = -\mu^2$, which is the definition of the on-shell four-momentum; no matrix enters. The module reading uses one more, the Clifford relation $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$, which is the same cancellation written in the frame of the cells.
+In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural = \tilde\nabla^\natural\tilde\nabla = \Box$, which is exact, and the mass-shell condition $\tilde P\tilde P^{\natural} = -\mu^2$, which is the definition of the on-shell four-momentum; no matrix enters. The module reading uses one more, the Clifford relation $C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu}I_4$, which is the same cancellation written in the frame of the cells.
 
 ## The Converse Direction
 
@@ -386,7 +386,7 @@ This does not contradict the one-way statement of *What the Square Carries and W
 
 If the first half is called a potential and the second a field strength, the pair says that the field is the derivative of the potential. The gradient alone suggests the redundancy such a description usually carries: if $\tilde\nabla\kappa = 0$, the potentials $\tilde\Psi_R$ and $\tilde\Psi_R + \kappa$ generate the same second half. The freedom does not survive the pair, and it is the mass shell that removes it. The condition $\tilde\nabla\kappa = 0$ is the massless Weyl equation, so $\kappa$ obeys $\Box\kappa = 0$ while the potential obeys $\Box\tilde\Psi_R = m^2\tilde\Psi_R$; the sum obeys neither, and the second member fails by exactly $m\kappa$. A potential off the mass shell generates no solution of the pair. In the two-term form there is therefore no redundancy to quotient out: the first half is physical data, and the pair fixes the whole field from it.
 
-The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a quadruple $\phi$ of Klein–Gordon scalars and the field is $\chi = D^*\phi$, with $D^* = i\gamma^\mu\partial/\partial x_\mu + m$ and $DD^* = \Box - m^2$ in the gamma frame of *The Legacy Gamma Formulation* below. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to $\partial\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
+The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a quadruple $\phi$ of Klein–Gordon scalars and the field is $\chi = D^*\phi$, with $D^* = i\gamma^\mu\partial/\partial x_\mu + m$ and $DD^* = \Box - m^2$ in the gamma frame of *The Legacy Pauli Gamma Formulation* below. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to $\partial\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
 
 One step of the source's argument is not adopted. Kassandrov reads the construction as evidence that the spinor transformation law is not forced, taking the generating half to transform as a scalar doublet and the generated half then transforming nonlinearly. The corpus does not need that step and does not take it: the Lorentz action used here is the left action of the unit-norm biquaternions on the module, one action for every field, and a second realization on the components is a different theory of the transformation law rather than a consequence of the pair.
 
@@ -432,7 +432,9 @@ positive everywhere, integrable at infinity, singular at the origin as $1/r^2$. 
 
 The source builds infinite chains of solutions by feeding the generated half back as a new generator. In the algebra each step is one more application of the definition, and the corpus records the mechanism without reproducing the chains in the source's 2+2 representation.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the previous section under their Clifford names, together with their product:
 
@@ -469,7 +471,7 @@ A cell is a pure tensor, and the coefficient matrix $c(M)$ of an element $M$ in 
 **The identities.** In the $\gamma$ reading, with the Clifford indices $\mu,\nu,\rho,\sigma\in\{0,1,2,3\}$ — the label $0$ is the timelike slot, the cell $C_t$ — and $\epsilon_{0123} = +1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \gamma_0^2 = I_4,\qquad
 (\gamma_k)^2 = -I_4,\qquad
 \gamma_5^2 = I_4,\qquad
@@ -478,12 +480,12 @@ $$
 
 $$
 [\gamma_\mu,\gamma_\nu] = 2\gamma_\mu\gamma_\nu\ \ (\mu\neq\nu),\qquad
-[\gamma_a,S_{cd}] = g_{ac}\gamma_d - g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd} = \tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -506,7 +508,7 @@ $$
 \sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu = -2\gamma_\gamma\gamma_\beta\gamma_\alpha .
 $$
 
-In the $\mathbb{M}_-$ frame, with $g = (+1,-1,-1,-1)$, the metric enters: the first sum is $\sum_\mu\gamma_\mu\gamma_\mu = -2I_4$, and the second is $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha$, which is $4\gamma_0$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
+In the $\mathbb{M}_-$ frame, with $\varepsilon=(1,-1,-1,-1)$, the signs of the cells enter: the first sum is $\sum_\mu\gamma_\mu\gamma_\mu = -2I_4$, and the second is $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha$, which is $4\gamma_0$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -514,7 +516,7 @@ In the $\mathbb{M}_-$ frame, with $g = (+1,-1,-1,-1)$, the metric enters: the fi
 
 The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2)\tilde{\Psi} = 0$ with the series d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$, which in physical units is $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. The square is not the plain square: $\tilde\nabla^2 \neq \Box$, because the timelike unit $e_t$ commutes with the vector units and leaves the mixed term $2\,\partial/\partial Q_t\,\vec\nabla$, and it is the conjugate product $\tilde\nabla\tilde\nabla^\natural$ that cancels it. The conjugate is the algebra's image of the Clifford anticommutator.
 
-On the spinor module the same square is written in cells. The frame cells $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ satisfy $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$, each squares to $\pm I_4$, and the operator $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$, with $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$, squares to $\Box$ with no conjugate at all. Here the cancellation is carried by the anticommutation of the cells rather than by a conjugation, and every product of two $i$'s is reduced by $i^2 = -1$, so the operator carries no imaginary unit. The chirality cell $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = i\,C_tC_xC_yC_z$ squares to $I_4$ and anticommutes with each $C_\mu$, so $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$; the single two-sided equation $(\mathbb{D} - m)\psi = 0$ therefore splits by chirality into the pair, and $(\mathbb{D} - m)(\mathbb{D} + m) = \Box - m^2$.
+On the spinor module the same square is written in cells. The frame cells $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ satisfy $C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu}I_4$, each squares to $\pm I_4$, and the operator $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$, with $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$, squares to $\Box$ with no conjugate at all. Here the cancellation is carried by the anticommutation of the cells rather than by a conjugation, and every product of two $i$'s is reduced by $i^2 = -1$, so the operator carries no imaginary unit. The chirality cell $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = i\,C_tC_xC_yC_z$ squares to $I_4$ and anticommutes with each $C_\mu$, so $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$; the single two-sided equation $(\mathbb{D} - m)\psi = 0$ therefore splits by chirality into the pair, and $(\mathbb{D} - m)(\mathbb{D} + m) = \Box - m^2$.
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, coupled by the mass. Written as the block matrix $\mathcal{D}_\mp$ defined above, the operator identity is $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, it is $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table seen from two sides.
 
@@ -531,7 +533,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $L_a$, $R_b$, $L_aR_b$ | Left and right multiplication, $L_a\psi = a\psi$, $R_b\psi = \psi b$, and the two-sided cell $L_aR_b\psi = a\psi b$ |
-| $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cells, $\mu\in\{t,x,y,z\}$, $\nu(t) = x$, $\nu(k) = y$; $C_t = iR_{\vec e_x}^{\mathrm{axf}}$ and $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$ |
+| $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cells, $\mu\in\{t,x,y,z\}$, $\nu(t) = x$, $\nu(k) = y$; $C_t = iR_{\vec e_x}^{\mathrm{axf}}$ and $C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $I_4 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Identity on the spinor module |
 | $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$ | Two-sided Dirac operator of the module, $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$; $\mathbb{D}^2 = \Box$ |
 | $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = i\,C_tC_xC_yC_z$ | Chirality cell, $\Gamma^2 = I_4$, $\{\Gamma,C_\mu\} = 0$, $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$ |
@@ -557,6 +559,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original first-order equation and its second-order consequence.
 - O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the first-order equation, its second-order square and the plane-wave spinors.

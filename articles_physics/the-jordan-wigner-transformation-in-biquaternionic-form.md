@@ -113,7 +113,7 @@ $$
 
 both signs using $i^2=-1$. The $2\times2$ image is the left action alone and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$; the cell acts from both sides and carries both.
 
-The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and on the Dirac module the two agree up to an overall sign. The relation is recorded in *The Legacy Gamma Formulation* below.
+The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and on the Dirac module the two agree up to an overall sign. The relation is recorded in *The Legacy Pauli Gamma Formulation* below.
 
 The one-site identification is exact inside the algebra, and its $2\times2$ image is exact as well:
 
@@ -306,7 +306,9 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and the $2\times2$ image $\mathsf M_2$ that fixes the one-site map.
 - Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies, the identification of $\gamma_5=-iR_{\vec e_z}$ as a pure right multiplier, and the coincidence $P=-\gamma_5$ for the aligned root.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are cells of the same two-sided operator algebra that the one-site identification used, and the chirality cell is the right multiplication by $\vec e_z$ that separated the two carriers there.
 
@@ -366,15 +368,15 @@ $$
 
 and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra.
 
-The frame is Clifford, with $g=\mathrm{diag}(-1,+1,+1,+1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:
+The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4 ,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 ,
 \qquad
 \gamma_5^2=I_4 ,
 \qquad
 \{\gamma_\mu,\gamma_5\}=0 ,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 all three checked cell by cell.
 
@@ -450,6 +452,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. Jordan and E. Wigner, "Über das Paulische Äquivalenzverbot," *Zeitschrift für Physik* **47** (1928) 631–651, for the transformation itself.
 - E. Lieb, T. Schultz and D. Mattis, "Two soluble models of an antiferromagnetic chain," *Annals of Physics* **16** (1961) 407–466, for the free-fermion solution of the XY and Ising chains by the transformation.
 - P. Pfeuty, "The one-dimensional Ising model with a transverse field," *Annals of Physics* **57** (1970) 79–90, for the transverse-field Ising chain, its two sectors and its degeneracy.

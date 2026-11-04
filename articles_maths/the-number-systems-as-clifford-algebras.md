@@ -184,7 +184,9 @@ the constructions of the complex octonionic chain algebra and of the split bioct
 
 **Remark (the pattern).** The first and third examples are the same statement at the two rungs $\mathbb{C}\mathrm{l}_2$ and $\mathbb{C}\mathrm{l}_6$: a split system has an odd complex chain dimension, and its chain algebra doubles, whereas the definite system's chain algebra is even-dimensional and simple. The doubling is the algebraic content of a pair of chiralities, and it is the reason the split systems, rather than the biquaternion algebra, are the natural carriers of such a pair.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 
@@ -231,6 +233,7 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the number systems and the composition law.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the low-dimensional Clifford algebras with the classical number systems.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the norms and conjugations of the Clifford algebras of small dimension.

@@ -8,7 +8,7 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Legacy Gamma Formulation*; no gamma-matrix is used before it.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Legacy Pauli Gamma Formulation*; no gamma-matrix is used before it.
 
 **The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit in its two forms, the one-sided chiral pair and the two-sided cell equation. A fifth states the biquaternion interpretation and separates what is established from what is transcribed; the gammas are collected in a section of their own before the summary.
 
@@ -174,7 +174,7 @@ which lists the three boosts first and the three rotations second: the pairs $10
 
 The inertia $(3,3)$ is the inertia of the Lorentz Lie algebra's Killing form, in the same order: three negative directions for the non-compact boosts and three positive for the compact rotations. The bivector space is $\mathbb{R}^6$ as a real vector space; the identification with $\mathbb{C}^3$ needs a complex structure, and the metric is not the positive-definite form that a Hermitian metric on $\mathbb{C}^3$ would give — it is the split form, with three directions of each sign. The two structures are therefore not interchangeable: $\mathbb{C}^3$ names a complex structure on $\mathbb{R}^6$, and the metric $g_{\alpha\beta\gamma\delta}$ is a separate choice on the same space.
 
-**A note on the two orders of the coordinates.** The corpus's cell frame lists the time coordinate first and writes $g=\mathrm{diag}(-1,+1,+1,+1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
+**A note on the two orders of the coordinates.** The corpus's cell frame lists the time coordinate first and writes $\varepsilon=(1,-1,-1,-1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
 
 ### The Equations in $\mathbb{R}^6$
 
@@ -263,10 +263,10 @@ G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \mathbb{D}=i\sum_{\mu=0}^{3}G_\mu\frac{\partial}{\partial x_\mu}.
 $$
 
-The cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
+The cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4,\qquad G_0^2=I_4,\qquad G_k^2=-I_4,
+\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad G_0^2=I_4,\qquad G_k^2=-I_4,
 $$
 
 so distinct cells anticommute, the cross terms of $\mathbb{D}^2$ vanish, and
@@ -340,7 +340,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
+- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -375,7 +375,9 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 
 6. **The Maxwell–Dirac package.** The corpus's *Bispinor Fields* article derives the Maxwell–Dirac solution in the corpus's form. Does the programme's massless limit coincide with it exactly, including the conventions of the axial current?
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four generator cells and the chirality cell of the body become
 
@@ -432,12 +434,12 @@ $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=\chi$ is the chirality cell on the modul
 The Clifford relations in the gamma reading are
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
-with $g=\mathrm{diag}(-1,+1,+1,+1)$.
+with $\varepsilon=(1,-1,-1,-1)$.
 
 **The sign of $\gamma_5$.** With all four indices lowered the volume relation is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, equivalently $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$. The textbook form is $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$, with raised indices; raising the three spatial gammas costs three signs, so applying that convention to the same cells gives $-\gamma_5$. The overall sign of $\gamma_5$ is a labelling convention, and no equation of the body uses it. What does use it is the naming of the halves: a reader comparing with a textbook should flip the labels of $\psi_L$ and $\psi_R$.
 
@@ -480,6 +482,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. J. Bhabha, "Relativistic wave equations for the elementary particles," *Reviews of Modern Physics* **17** (1945) 200–216, for the finite-dimensional relativistic wave equations and their multi-mass spectra.
 - I. M. Gel'fand and A. M. Yaglom, "General relativistic-invariant equations with a mass spectrum," *Zhurnal Eksperimentalnoi i Teoreticheskoi Fiziki* **18** (1948) 703–733, for the general theory of the equations with a mass spectrum.
 - E. Majorana, "Teoria relativistica di particelle con momento intrinseco arbitrario," *Nuovo Cimento* **9** (1932) 335–344, for the infinite-component equation.

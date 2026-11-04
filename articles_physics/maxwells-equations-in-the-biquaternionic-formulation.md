@@ -8,7 +8,7 @@ This article develops the biquaternionic formulation of Maxwell's equations in a
 
 Throughout this article, the symbol $c$ denotes the **speed of light in the medium**: $c = 1/\sqrt{\epsilon\mu}$. In vacuum, $c$ reduces to the constant vacuum speed of light $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. The symbol $v$ (and $\vec v$) is reserved for particle and frame velocities; the fluid velocity is $\vec v_f$ and the boost velocity is $\vec v_b$. This convention keeps the notation consistent with relativistic mechanics, where $c$ is the speed of light and $v$ is a velocity.
 
-The scalar imaginary satisfies $i^2 = -1$ and commutes with the quaternion units, which satisfy $\vec e_k^2 = -e_t$ and $\vec e_j\vec e_k = -\delta_{jk}e_t + \epsilon_{jkl}\vec e_l$. A product of two factors of $i$ is therefore a sign, and every display below is reduced with $i^2 = -1$ rather than left with a doubled $i$. The body of the article is written in elements and cells: the gamma names appear only in *The Legacy Gamma Formulation*, where they are given to the frame cells, and the same rule $i^2=-1$ fixes their signs.
+The scalar imaginary satisfies $i^2 = -1$ and commutes with the quaternion units, which satisfy $\vec e_k^2 = -e_t$ and $\vec e_j\vec e_k = -\delta_{jk}e_t + \epsilon_{jkl}\vec e_l$. A product of two factors of $i$ is therefore a sign, and every display below is reduced with $i^2 = -1$ rather than left with a doubled $i$. The body of the article is written in elements and cells: the gamma names appear only in *The Legacy Pauli Gamma Formulation*, where they are given to the frame cells, and the same rule $i^2=-1$ fixes their signs.
 
 ## Maxwell's Equations in a Material Medium
 
@@ -697,7 +697,7 @@ $$
 \tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u = \exp\!\left(\frac{\psi}{2}\,i\vec u\right),
 $$
 
-with the rapidity $\psi$ related to the velocity by $\tanh\psi = v_b/c$, and $\vec u = \vec v_b/v_b$ the unit vector in the direction of the boost. The Lorentz factor — a number, not a frame cell, and unrelated to the $\gamma$ names of *The Legacy Gamma Formulation* below — is
+with the rapidity $\psi$ related to the velocity by $\tanh\psi = v_b/c$, and $\vec u = \vec v_b/v_b$ the unit vector in the direction of the boost. The Lorentz factor — a number, not a frame cell, and unrelated to the $\gamma$ names of *The Legacy Pauli Gamma Formulation* below — is
 
 $$
 \gamma = \frac{1}{\sqrt{1 - v_b^2/c^2}} = \cosh\psi .
@@ -850,7 +850,9 @@ The biquaternionic formulation extends naturally to this setting. The gradient $
 
 This is the natural generalization of the $ict'$ structure. The electromagnetic field is the real projection of a complex field, just as the material sector $\mathbb{M}_-$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The body writes its operators as cells $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame cells. Two cells multiply by multiplying the left factors and the right factors, the right factors in reverse order,
 
@@ -878,7 +880,7 @@ $$
 \gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
 $$
 
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(-1,+1,+1,+1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
+with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
@@ -964,6 +966,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
 - Albert Einstein, *The Meaning of Relativity* (Princeton, 1922), for the $ict'$ formulation of special relativity.
 - James Clerk Maxwell, *A Treatise on Electricity and Magnetism* (Dover, 1954), for the original formulation.

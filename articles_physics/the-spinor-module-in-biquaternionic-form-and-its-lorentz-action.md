@@ -27,7 +27,7 @@ $$
 \Theta_{\tilde U}(\tilde{Q})=\tilde U\,\tilde{Q}\,\tilde U^{*}.
 $$
 
-In the operator symbols the Lorentz label is suppressed, $L_{\tilde U}:=L_{\tilde U^{\mathrm{lor}}}$ and $R_{\tilde U^{*}}:=R_{\tilde U^{\mathrm{lor}}{}^{*}}$. The $2\times2$ matrices $\mathsf{M}_2$ are the frame in which the one-sided action on the simple module is computed, and the five gamma matrices are a frame of the cell algebra on the regular module, displayed once in §*The Legacy Gamma Formulation*. No gamma symbol appears in the body of the article.
+In the operator symbols the Lorentz label is suppressed, $L_{\tilde U}:=L_{\tilde U^{\mathrm{lor}}}$ and $R_{\tilde U^{*}}:=R_{\tilde U^{\mathrm{lor}}{}^{*}}$. The $2\times2$ matrices $\mathsf{M}_2$ are the frame in which the one-sided action on the simple module is computed, and the five gamma matrices are a frame of the cell algebra on the regular module, displayed once in §*The Legacy Pauli Gamma Formulation*. No gamma symbol appears in the body of the article.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$ cyclically, and the scalar imaginary is $i$, with $i^2=-1$. The conjugations are the quaternion conjugate $\tilde{Q}^{\natural}$, the coefficientwise complex conjugate $\bar{\tilde{Q}}$, and the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The anti-Hermitian and Hermitian subspaces are
 
@@ -634,7 +634,7 @@ The distinction between the two actions matters for four reasons.
 1. **It is the double cover.** The kernel of the vector action is $\{\pm e_t\}$; the kernel of the spinor action is $\{e_t\}$. The sign that the vector action cannot see is exactly the sign that distinguishes a spinor from its negative.
 2. **It is the difference between a sandwich and a product.** The four-vector action is a sandwich, and it maps $\mathbb{M}_-$ into itself. The spinor action is a single left multiplication by an element of the even subalgebra, and the even subalgebra does not preserve the exterior grading: a bivector multiplied into a vector produces a vector plus a trivector, so grades are mixed in pairs. The spinor module is a Clifford module, not an exterior module.
 3. **It is a difference of real form.** Both representations are four-real-dimensional, and they are different in kind. The vector representation is a **real form**: it is real four-dimensional, and its complexification is $S\otimes\bar{S}=(\tfrac12,\tfrac12)$, of complex dimension four; the four-vector space is the Hermitian slice of that complex representation. The spinor representation is genuinely complex two-dimensional, and it carries no invariant real structure, because such a structure would be an isomorphism $S\cong\bar{S}$ and the two halves are not isomorphic. Equal real dimension, different kind.
-4. **It is the origin of chirality.** The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the cell $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which on the Dirac module acts as $\operatorname{diag}(-I_2,I_2)$; its central form is the grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, which is a cell and not an element of $\mathbb{B}$ and which the frame of §*The Legacy Gamma Formulation* displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}^{\mathrm{axf}}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.
+4. **It is the origin of chirality.** The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the cell $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which on the Dirac module acts as $\operatorname{diag}(-I_2,I_2)$; its central form is the grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, which is a cell and not an element of $\mathbb{B}$ and which the frame of §*The Legacy Pauli Gamma Formulation* displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}^{\mathrm{axf}}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.
 
 The last point is the precise sense in which "the gamma matrices" and "the spinor module" are not two theories. The gamma matrices are a frame of the same cell algebra that contains $L_{\tilde U}$; the spinor module is the carrier on which the one-sided cells act. The frame is displayed once, in the next section, and the body of the article needs none of it.
 
@@ -666,7 +666,9 @@ The last point is the precise sense in which "the gamma matrices" and "the spino
 
 6. **The indefinite pairing and the physical signature.** The pairings $\varepsilon$, $h$ and $[\,\cdot\,|\,\cdot\,]$ are three different invariant forms on the same two-dimensional complex space. Only the last has an indefinite signature, and the indefinite signature is the one that matches the Lorentzian geometry of $\mathbb{R}^{1,2}$. Which of the three is the "physical" one is a question about the interpretation of the module, not about its representation theory; the article records all three and leaves the choice to the applications.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gamma matrices are a **frame** of the same cell algebra, written as $4\times4$ matrices on the regular module. They are displayed once, here, so that the body of the article can be read without them.
 
@@ -690,7 +692,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}[\mathbb{M}_-]I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.
+Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.
 
 A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
 
@@ -721,7 +723,7 @@ The spinor module is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C}
 - **The chiral halves are $S$ and $\bar S$.** They are the two Weyl modules $(\frac12,0)$ and $(0,\frac12)$, paired by $\psi^{\dagger}\varphi$; the chirality cell is $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, with $\Gamma^2=I_4$ and projectors $P_{L,R}=\frac12(I_4\mp\Gamma)$. The two minimal left ideals are **not** the two chiral halves; they are two copies of $S$, and the distinction requires the real structure.
 - **The invariant forms are three on $S$, plus one between the halves.** $\varepsilon$ is the alternating form that makes $S$ self-dual; $h$ is the definite Hermitian form invariant only under $SU(2)$; $[\,\cdot\,|\,\cdot\,]$ is the indefinite Hermitian form invariant under $SU(1,1)$; and the mixed pairing $\psi^{\dagger}\varphi$ is invariant between $S$ and $\bar S$.
 - **The vector representation is the tensor square.** $S\otimes\bar S\cong\mathbb{B}$ as $SL(2,\mathbb{C})$-representations, and the four-vector representation is its Hermitian slice, $(\frac12,\frac12)=(\frac12,0)\otimes(0,\frac12)$.
-- **The gamma matrices are a frame, not the subject.** They are the five cells displayed once in §*The Legacy Gamma Formulation*; the body of the article is written in the cells $L_{\tilde U}$ and $\Theta_{\tilde U}$.
+- **The gamma matrices are a frame, not the subject.** They are the five cells displayed once in §*The Legacy Pauli Gamma Formulation*; the body of the article is written in the cells $L_{\tilde U}$ and $\Theta_{\tilde U}$.
 
 What the article does **not** supply is a dynamics. It supplies the carrier, the action, the invariant pairings and the map to four-vectors; the Dirac equation, the mass terms and the gauge couplings are the subjects of the companion articles.
 
@@ -757,6 +759,8 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}(\mathbb{R})$ | Even Clifford algebra |
 
 ## Further Reading
+
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 
 **Companion articles.**
 

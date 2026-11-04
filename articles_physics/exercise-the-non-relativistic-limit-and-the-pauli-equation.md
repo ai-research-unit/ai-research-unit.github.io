@@ -14,7 +14,7 @@ Five problems are worked:
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
-**The cells.** The article is written in the cells of the frame, and the gamma symbols appear only in *The Legacy Gamma Formulation*. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are
+**The cells.** The article is written in the cells of the frame, and the gamma symbols appear only in *The Legacy Pauli Gamma Formulation*. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are
 
 $$
 c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
@@ -48,7 +48,7 @@ $$
 \alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l .
 $$
 
-The Clifford metric is $g=\operatorname{diag}(-1,+1,+1,+1)$, the negative of the metric $g_{\mu\nu}[\mathbb{M}_-]$ that appears in the $ict'$ form of the biquaternionic gradient. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\Phi$, and the potential energy of the charge in it is $V=ϙ\Phi$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.
+The sign vector of the cells is $\varepsilon=(1,-1,-1,-1)$, the negative of the metric $g_{\mu\nu}[\mathbb{M}_-]$ that appears in the $ict'$ form of the biquaternionic gradient. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\Phi$, and the potential energy of the charge in it is $V=ϙ\Phi$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.
 
 ### The two Dirac equations
 
@@ -462,7 +462,9 @@ is not Hermitian: its first term lies in $\mathbb M_+$ and its second in $\mathb
 
 The pattern is informative. The leading terms ($\vec\pi^2/2m$, $ϙ\Phi$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\hbar$ in its coefficient, while the leading kinetic and electrostatic terms carry none. Written with $\vec S=\tfrac\hbar2\boldsymbol\sigma$, it is $-(ϙ/m)\vec S\cdot\vec B$, the classical coupling of a magnetic moment; the power of $\hbar$ is the conversion between the dimensionless $\boldsymbol\sigma$ and the spin. The Darwin term carries $\hbar^2$ and has no classical counterpart. The spin–orbit term carries one power of $\hbar$ in its coefficient, but it is quadratic in the angular momenta once $\vec S$ and $\vec L=\vec r\times\vec p$ are used, so it becomes the classical Thomas-precession coupling when $\vec S$ and $\vec L$ are classical.
 
-## The Legacy Gamma Formulation
+## The Legacy Pauli Gamma Formulation
+
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. This is the only section of the article that names them.
 
@@ -487,20 +489,20 @@ The dictionary is complex-linear; over $\mathbb R$ the products $L_aR_b$ span $\
 **The identities of the frame.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
@@ -549,7 +551,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Coordinate cells; $c_0^2=1$, $c_k^2=-1$, $\{c_0,c_k\}=0$ |
 | $\alpha_k=c_0c_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Velocity cell, after one use of $i^2=-1$ |
 | $S_k=iL_{\vec e_k}^{\mathrm{axf}}$ | Spin cell; upper block $\sigma_k$, lower block $-\sigma_k$ |
-| $g_{\mu\nu}[\mathbb{M}_-]=\operatorname{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells |
+| $g_{\mu\nu}[\mathbb{M}_-]=\operatorname{diag}(-1,+1,+1,+1)$ | sign vector of the cells |
 | $\vec\pi=p-ϙ\vec A$ | Kinetic momentum |
 | $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |
 | $V=ϙ\Phi$ | Potential energy |
@@ -563,6 +565,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 
 ## Further Reading
 
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original prediction of $g=2$.
 - L. L. Foldy and S. A. Wouthuysen, "On the Dirac theory of spin 1/2 particles and its non-relativistic limit," *Physical Review* **78** (1950) 29–36, for the transformation used here.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the plane-wave solutions and the standard non-relativistic reduction.
