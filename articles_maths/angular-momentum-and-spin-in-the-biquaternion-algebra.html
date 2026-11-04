@@ -113,11 +113,11 @@ $$</p>
 <p>$$
 \tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$</p>
-<p>They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form.</p>
+<p>They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (<em>Algebra and Element Conventions</em>, §<em>The Centre and the Vector Subspace</em>).</p>
 <p><strong>Proposition (the exponential).</strong> For a unit $\vec u\in\mathfrak{g}$ and real $\theta$,</p>
 <p>$$
 \exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(i\theta\,\vec u\cdot\vec{\tilde S}),
+=\exp(i\theta\,\vec u\cdot\vec S),
 $$</p>
 <p>and the result is a unit real quaternion.</p>
 <p><em>Proof.</em> The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$.</p>
@@ -133,13 +133,13 @@ C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2\in U(\mathfrak{g}).
 $$</p>
 <p><strong>Proposition (centrality).</strong> $[C,\tilde S_l]=0$ for $l=1,2,3$.</p>
 <p><em>Proof.</em> $\sum_i[\tilde S_i^2,\tilde S_l]=\sum_i\bigl(\tilde S_i[\tilde S_i,\tilde S_l]+[\tilde S_i,\tilde S_l]\tilde S_i\bigr)=\sum_i\bigl(i\epsilon_{ilj}\tilde S_i\tilde S_j+i\epsilon_{ilj}\tilde S_j\tilde S_i\bigr)$, which is antisymmetric under $i\leftrightarrow j$ and vanishes.</p>
-<p><strong>Definition (spin).</strong> Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec{\tilde S})$ is self-adjoint. The <strong>spin</strong> of the carrier is</p>
+<p><strong>Definition (spin).</strong> Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec S)$ is self-adjoint. The <strong>spin</strong> of the carrier is</p>
 <p>$$
-s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec{\tilde S})\bigr),
+s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr),
 $$</p>
 <p>the maximum being independent of $\vec u$. The spin is a real number in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector.</p>
-<p><strong>Proposition (independence of the axis).</strong> The spectrum of $\rho(\vec u\cdot\vec{\tilde S})$ does not depend on the unit vector $\vec u$.</p>
-<p><em>Proof.</em> For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec{\tilde S})\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec{\tilde S})\bigr)=\rho\bigl((R\vec u)\cdot\vec{\tilde S}\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.</p>
+<p><strong>Proposition (independence of the axis).</strong> The spectrum of $\rho(\vec u\cdot\vec S)$ does not depend on the unit vector $\vec u$.</p>
+<p><em>Proof.</em> For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec S)\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec S)\bigr)=\rho\bigl((R\vec u)\cdot\vec S\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.</p>
 <p><strong>Theorem (the Casimir value and the dimension).</strong> Let $(W,\rho)$ be an irreducible unitary carrier of spin $s$. Then</p>
 <p>$$
 \rho(C)=s(s+1)\operatorname{id}_W,\qquad \dim_{\mathbb{C}}W=2s+1,\qquad s\in\tfrac12\mathbb{Z}_{\ge0}.
@@ -196,10 +196,10 @@ $$</p>
 <p><em>Proof.</em> The minimal left ideals of $M_2(\mathbb{C})$ are the sets of matrices whose rows lie in a fixed line of $\mathbb{C}^2$, and the lines are parametrised by $\mathbb{CP}^1\cong S^2$. The idempotent $\tilde\Pi_+(\vec u)$ is the orthogonal projection onto the $+1$ eigenspace of $\vec u\cdot\vec\sigma$, and $\vec u\mapsto$ that line is the standard identification.</p>
 <p><strong>Proposition (the states in a copy).</strong> In $S_+(\vec u)$,</p>
 <p>$$
-(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
-(\vec u\cdot\vec{\tilde S})\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
+(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
+(\vec u\cdot\vec S)\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
 $$</p>
-<p><em>Proof.</em> $(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.</p>
+<p><em>Proof.</em> $(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.</p>
 <p>The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.</p>
 <p><strong>The double cover.</strong> On $S_+$, $\exp(2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.</p>
 <p><em>Proof.</em> The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.</p>
@@ -282,7 +282,7 @@ C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_k^{\mathrm{orb}}\otimes \til
 $$</p>
 <p>The last term is the spin–orbit operator,</p>
 <p>$$
-\vec L\cdot\vec{\tilde S}=\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
+\vec L\cdot\vec S=\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
 $$</p>
 <p><strong>Theorem (the addition of angular momenta).</strong> For $l\ge1$,</p>
 <p>$$
@@ -292,7 +292,7 @@ $$</p>
 <p><em>Proof.</em> By the Clebsch–Gordan rule, $\mathcal{V}_{2l}\otimes\mathcal{V}_1=\mathcal{V}_{2l-1}\oplus\mathcal{V}_{2l+1}$ for $l\ge1$, and $\mathcal{V}_0\otimes\mathcal{V}_1=\mathcal{V}_1$.</p>
 <p><strong>Corollary (the spin–orbit eigenvalues).</strong> On the summand of total spin $s_{\mathrm{tot}}$,</p>
 <p>$$
-\vec L\cdot\vec{\tilde S}=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
+\vec L\cdot\vec S=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
 $$</p>
 <p>that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$.</p>
 <p><em>Proof.</em> Evaluate the Casimir expansion on the summand.</p>

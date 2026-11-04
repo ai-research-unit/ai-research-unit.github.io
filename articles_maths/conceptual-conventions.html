@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conceptual Conventions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conceptual-conventions"><strong>Conceptual Conventions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The rule.</strong> A concept is used in this corpus only when two conditions hold together. It must be consistent with mathematics. And no result of experiment may contradict it. A concept that fails either condition is left out, however familiar it is.</p>
+<p><strong>Why an experiment appears in a mathematics article.</strong> No article in this series draws a physical conclusion, so nothing written here can contradict a measurement. The condition still has work to do. An article here may not support a convention by an appeal to what an electron does. That argument belongs to the physics corpus, and a convention here has to stand on the algebra alone.</p>
+<p><strong>Two ways of using a concept that passes.</strong> A concept that passes both conditions is used in one of two ways. It is <strong>preferred</strong> when the algebra already contains it, so that nothing has to be added and nothing has to be declared. It is <strong>unpreferred</strong> when it is a working tool that brings something the algebra does not contain: a chosen frame, a basis, a root, or a piece of the algebra printed as though it were the whole. An unpreferred concept is not wrong. It is used only when the article says what it brings.</p>
+<p><strong>The two lists.</strong> The next two sections give the lists. The first is the set of concepts the corpus writes by default. The second is the set it writes only under a declaration, with the defect named and the replacement given. The summary states the result in a few lines.</p>
+<h2 id="preferred-concepts">Preferred Concepts</h2>
+<p>These concepts are the algebra itself, written down. Each one can be read from an element, a cell or a form, and none of them needs a frame, a root, a basis or a name borrowed from another formalism. The corpus writes them without comment.</p>
+<ul>
+<li><strong>The element.</strong> $\tilde Q$ is the object of a sentence here, with its tilde and its case. Whatever can be written as an element is written as an element.</li>
+<li><strong>Operator chirality.</strong> An operator has the <strong>left slot</strong> when it is a pure left multiplier $cL_a$, the <strong>right slot</strong> when it is a pure right multiplier $cR_b$, and <strong>both slots</strong> otherwise. The label is read from the cell and from nothing else. The one-sided operators form a seven-dimensional sum inside the sixteen-dimensional endomorphism algebra, and the scalars lie in both families at once, so a scalar has no side. No root, idempotent, subspace, carrier or Clifford algebra appears in the definition.</li>
+<li><strong>The chirality operator of a frame.</strong> $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}$, the product of the four generators. In the axis-free frame it is $-iR^{\mathrm{axf}}_{\vec e_z}$, a pure right multiplier. It squares to the identity, has trace zero, splits the coefficient space two and two, and is the fifth cell of the frame. That side, and not the diagonal array, is what the operator is.</li>
+<li><strong>The spin.</strong> The generators are $\tilde S_k=\tfrac12 i\vec e_k$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$, and the Casimir is $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2$. On an irreducible unitary carrier the spin is $s=\max\operatorname{spec}\rho(\vec u\cdot\vec S)$, the same for every unit $\vec u$, and then $\rho(C)=s(s+1)$ with $\dim_{\mathbb{C}}W=2s+1$ and $s\in\tfrac12\mathbb{Z}_{\ge0}$. The spin is a real label of a carrier and not a vector, and the definition is a spectrum of elements.</li>
+<li><strong>The axis-free cell.</strong> $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ write no direction, so they can be used in any frame. The corpus writes them by default.</li>
+<li><strong>The four norms, named by letter.</strong> $P$, $N$, $H$ and $K$, each with its arity and its two arguments. A question about a norm names the letter, because the bare word names none of the four.</li>
+<li><strong>The interval as a form value.</strong> $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, with the signature read from the sector and not from the algebra.</li>
+</ul>
+<h2 id="unpreferred-concepts">Unpreferred Concepts</h2>
+<p>Each concept below is used somewhere in the corpus, and each one brings something the algebra does not contain. The list names the defect and the replacement. An unpreferred concept is admitted as a display when the article that prints it declares the missing piece once, at the head of the display.</p>
+<ul>
+<li><strong>The Pauli matrices $\sigma_k$.</strong> Three matrices, correct and useful. <em>The defect:</em> the array fixes an axis that the sentence does not name, and it fixes a Peirce frame with it. <em>Write instead:</em> the axis-free cell, or $\sigma_k[\vec u]$ with the axis in the symbol.</li>
+<li><strong>The gamma matrices $\gamma_\mu$.</strong> <em>The defect:</em> the five cells belong to a frame that is not named, and they carry a dimension and a signature that the algebra does not fix. <em>Write instead:</em> the five cells of a declared frame.</li>
+<li><strong>A Clifford algebra as a starting point.</strong> <em>The defect:</em> the anticommutator is asserted, and with it a dimension and a signature. <em>Write instead:</em> the five cells, with the anticommutator computed from them.</li>
+</ul>
+<p><strong>The kinds of defect.</strong> A defect is one of three kinds, and each kind has a test that can be run on a sentence.</p>
+<p>The first is a <strong>missing datum</strong>. The sentence uses an axis, a dimension, a signature, a root or a basis without naming it. The test is covariance. Rotate the algebra, read the sentence again, and compare. If it comes back unchanged it is a fact about the algebra. If it comes back changed it is a fact about the page, and a fact about the page has to say which page.</p>
+<p>The second is <strong>a part printed as the whole</strong>. A half, an ideal, a column or a sector is written as though it were the algebra. The test is a count. Name the other piece and ask where it went. If it was dropped, the sentence describes a part and claims a whole.</p>
+<p>The third is <strong>two kinds under one name</strong>: an operator and an element, an involution and a projector, a form and a metric. The test is a question about the subject. What kind of object is the subject, and can a predicate of that kind be true of it? An involution squares to the identity and a projector squares to itself.</p>
+<p>A concept that passes all three tests is a preferred concept. That is why the first list is short: the algebra supplies it. The second list is what remains when something has to be supplied from outside.</p>
+<h2 id="summary">Summary</h2>
+<p>A concept is used in this corpus only when it agrees with mathematics and no result of experiment contradicts it. In a mathematics article the second condition is met by restraint, because nothing here draws a physical conclusion.</p>
+<p>The concepts that pass are used in one of two ways. Preferred concepts are the algebra itself: the element, operator chirality, the chirality operator of a frame, the spin, the axis-free cell, the four norms by letter and the interval as a form value. Unpreferred concepts are working tools that bring a frame, a basis, a root or a part of the algebra: the Pauli matrices, the gamma matrices and the Clifford algebra. Each is admitted only with the missing piece declared.</p>
+<p>Every defect is one of three: a missing datum, a part printed as the whole, or two kinds under one name. Operator chirality passes all three, which is why it is written as a slot and not as a root, an idempotent, a projector, a Clifford product or a gamma subscript.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="algebra-and-element-conventions.html">Algebra and Element Conventions</a>. The base, the case rule, the remarkable subspaces and the two levels of the word <em>metric</em>.</li>
+<li><a href="product-and-form-conventions.html">Product and Form Conventions</a>. The twelve products and the four forms, which are the four choices of conjugation on the two slots.</li>
+<li><a href="norm-and-unitary-conventions.html">Norm and Unitary Conventions</a>. The four norms by letter, the qualified regular and degenerate, and the topological norm.</li>
+<li><a href="special-element-and-peirce-conventions.html">Special Element and Peirce Conventions</a>. The root, the idempotent, the family, and the spin and spinor conventions with their declared axis.</li>
+<li><a href="frame-conventions.html">Frame Conventions</a>. The two frames, the Clifford map and the rule that a frame is declared before it is used.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>. The three displays, the Pauli form, the Clifford structure and the legacy gamma block.</li>
+<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>. The operator that is its element, the dagger and the Fock exception.</li>
+<li><a href="operator-family-conventions.html">Operator Family Conventions</a>. The four families and the slot label that is the chirality.</li>
+<li><a href="index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a>. The marks, the subscripts and the working conventions of the corpus.</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>. The two slots, the chirality operator of a frame, the subscript on an element, and the eight objects the notion does not need.</li>
+<li><a href="angular-momentum-and-spin-in-the-biquaternion-algebra.html">Angular Momentum and Spin in the Biquaternion Algebra</a>. The generators, the Casimir, the definition of spin, and the carriers that carry it.</li>
+<li><a href="introduction-to-the-mathematical-corpus.html">Introduction to the Mathematical Corpus</a>. The exclusion of the applications, which is the restraint the second condition asks for.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
