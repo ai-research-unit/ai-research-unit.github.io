@@ -151,7 +151,7 @@ $$
 a_\mu a_\nu+a_\nu a_\mu=2\delta_{\mu\nu}e_t .
 $$
 
-In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $b_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.
+In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $c_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.
 
 The same argument covers the material-sector signature. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one signature exists exactly when one of the opposite signature does.
 
@@ -225,7 +225,16 @@ where $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$. The right action 
 
 ### The Determinant
 
-On a plane wave the symbol of $\mathbb{D}$ is the block matrix with the maps $\psi\mapsto\tilde K\psi$ and $\psi\mapsto\tilde K^{\natural}\psi$ off the diagonal. Its determinant is
+On a plane wave each derivative is replaced by its symbol, and $\mathbb{D}$ becomes the block matrix
+
+$$
+\mathbb{D}(\tilde K)=
+\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix},
+\qquad
+\mathbb{D}(\tilde K)(\psi_L,\psi_R)=\bigl(\tilde K\psi_R,\ \tilde K^{\natural}\psi_L\bigr),
+$$
+
+whose off-diagonal entries are the left multiplications $\psi\mapsto\tilde K\psi$ and $\psi\mapsto\tilde K^{\natural}\psi$. Every entry is a left multiplication by an element, and the matrix is a map of $\mathbb{B}\oplus\mathbb{B}$. Its determinant is
 
 $$
 \det\bigl(\mathbb{D}(\tilde K)-m\bigr)
@@ -317,6 +326,7 @@ The determinant of the left action of the symbol is the square of the quaternion
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the biquaternionic gradient, an element with derivative coefficients, acting on the left |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ | its quaternion conjugate, the second factor of $\Box$ |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | the d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$ |
+| $\mathrm{Sc}$ | the scalar part of an element, its coefficient of $e_t$ |
 | $Q_\mu$ | the algebra coordinates, $Q_t=iq'_t$ |
 | $x_\mu=(q'_t,x,y,z)$ | the real coordinates |
 | $q_\mu$ | the wave covector of a plane wave |

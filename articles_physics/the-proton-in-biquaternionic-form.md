@@ -283,25 +283,25 @@ The table sorts the proton's properties by the status they have in the framework
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same cells their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Each gamma is a single cell $L_aR_b$, the operator $\psi\mapsto a\psi b$. The frame is
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0[\mathbb{M}_-]$ and $\gamma_5$ are Hermitian and $\gamma_1[\mathbb{M}_-],\gamma_2[\mathbb{M}_-],\gamma_3[\mathbb{M}_-]$ are anti-Hermitian — the standard Dirac pattern for $\varepsilon=(1,-1,-1,-1)$ — and that is why the Dirac adjoint of the charge section is built with $G_t=\gamma_0[\mathbb{M}_-]$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
+Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $\varepsilon=(1,-1,-1,-1)$ — and that is why the Dirac adjoint of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
 
-The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu[\mathbb{M}_-]$: $G_t=\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $G_k=\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The anticommutator of the notation table is therefore the Clifford relation below.
+The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $G_k=\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
 **Chirality, three objects and one representative.** $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\chi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the module $\Delta$, and $\gamma_5$ that representative written as a cell.
 
@@ -310,36 +310,36 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the body and the notation table cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
 
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 $$
 
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
 **The contraction sums depend on the frame, because a cell's square does.** In $\mathbb{M}_-$, with the plain weight $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-],
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-] .
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\rho .
 $$
 
-In the Euclidean frame the spatial gammas are $i\gamma_k[\mathbb{M}_-]$, so every cell squares to $+I_4$; the same four sums then hold with every weight equal to $+1$ and $g$ replaced by $\delta$, giving $4I_4$, $-2\gamma_\alpha[\mathbb{M}_-]$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$, with the Euclidean gammas in place of the Minkowski ones. Without weights in $\mathbb{M}_-$ the sum is $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=(1-1-1-1)I_4=-2I_4$: the metric has left the cells and entered the sum.
+With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, and the same four sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\rho$. Without weights the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the cells and entered the sum.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

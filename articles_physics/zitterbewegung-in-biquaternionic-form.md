@@ -201,7 +201,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a [c
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of the cell algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the cells $\beta$ and $\alpha_k$.
 
@@ -209,8 +209,8 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
@@ -219,13 +219,13 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
-They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $\varepsilon=(1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0$.
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $\varepsilon=(1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
 
 A single cell $L_aR_b$ is a pure tensor; a single product is one cell up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

@@ -397,25 +397,25 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
 with the metric and orientation
@@ -426,24 +426,24 @@ The time generator is a **right** multiplication, the three spatial ones are **l
 
 Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the squares then come out with the metric's signs, and the two minus signs involved are distinct. For the time generator,
 $$
-(\gamma_0[\mathbb{M}_-])^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
+(\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
 $$
 
 In the axis-free display:
 
 $$
-(\gamma_0[\mathbb{M}_-])^2 = i^2\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{axf}} = i^2\,R_{-e_t}^{\mathrm{axf}} = (-1)(-1)\,I_4 = +I_4 ,
+(\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{axf}} = i^2\,R_{-e_t}^{\mathrm{axf}} = (-1)(-1)\,I_4 = +I_4 ,
 $$
 
 the first minus from $i^2=-1$ and the second from $\vec e_x^2=-e_t$; for a spatial generator,
 $$
-(\gamma_k[\mathbb{M}_-])^2 = i^2\,L_{\vec e_k}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = i^2\,(+I_4) = -I_4 ,
+(\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = i^2\,(+I_4) = -I_4 ,
 $$
 
 The same identities in the axis-free display:
 
 $$
-(\gamma_k[\mathbb{M}_-])^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
+(\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
 $$
 
 because both quaternion squares are $-e_t$ and their product is $+I_4$. This is the whole content of the signature: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, so the frame is the Minkowski one and the anticommutation relations below are consistent with the metric above.
@@ -456,29 +456,29 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
-The volume cell is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5=-R_{\vec e_z}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the same cell written in the two displays.
+The volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\vec e_z}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the same cell written in the two displays.
 
 The four contraction sums are frame statements, because a cell's square is. In a Euclidean frame, where all four generators (written $\Gamma_\mu$ here) square to $+I_4$, they take the textbook values,
 $$
@@ -487,12 +487,12 @@ $$
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_\mu=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
 $$
-In the Minkowski frame of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$, since $\gamma_0[\mathbb{M}_-]^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones are frame-dependent as written, and the two that follow from $g$ are worth recording because the naive substitution of $g$ for $\delta$ fails there: with all indices down,
+In the Minkowski frame of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones are frame-dependent as written, and the two that follow from $g$ are worth recording because the naive substitution of $g$ for $\delta$ fails there: with all indices down,
 $$
-\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\gamma_0[\mathbb{M}_-],\qquad
-\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=0 ,
+\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=4\gamma_0,\qquad
+\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0 ,
 $$
-verified for the four directions. The covariant forms are recovered by raising one index, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma^\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma^\alpha[\mathbb{M}_-]$, also verified.
+verified for the four directions. The covariant forms are recovered by raising one index, $\sum_\mu\gamma^\mu\gamma^\alpha\gamma_\mu=2\gamma^\alpha$, also verified.
 
 **The two Dirac equations.** Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's **one-sided** chiral pair,
 $$
@@ -501,7 +501,7 @@ $$
 $$
 in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol cell of the spin section,
 $$
-D(p) = p_{0}\,\gamma_0[\mathbb{M}_-]-\sum_k p_{k}\,\gamma_k[\mathbb{M}_-]+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}} ,
+D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}} ,
 \qquad
 D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
 $$
@@ -509,7 +509,7 @@ $$
 The same expressions, in the axis-free display:
 
 $$
-D(p) = p_{0}\,\gamma_0[\mathbb{M}_-]-\sum_k p_{k}\,\gamma_k[\mathbb{M}_-]+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
+D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
 \qquad
 D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
 $$

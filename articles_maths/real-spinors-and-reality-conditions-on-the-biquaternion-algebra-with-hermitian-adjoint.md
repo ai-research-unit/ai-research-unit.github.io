@@ -124,15 +124,15 @@ Four limits must be stated. First, the type table of this article is the **commu
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
-The gammas are the generators $\gamma_k[\mathbb{M}_-]=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
+The gammas are the generators $\gamma_k=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
 
 On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
 $$
-\gamma_k[\mathbb{M}_-]=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k[\mathbb{M}_-])=\sigma_k ,
+\gamma_k=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
 $$
-and the volume element is the central element $\omega=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
+and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the generators $i\vec e_k$ span $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$ and the basis $\vec e_k$ spans $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
 

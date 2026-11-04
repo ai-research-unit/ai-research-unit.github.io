@@ -251,14 +251,14 @@ In the biquaternion framework shape invariance has a direct interpretation. The 
 **The isospectral family.** The partner pair is the corpus's simplest isospectral family: $H_+=A^{\dagger}A$ and $H_-=AA^{\dagger}$ agree away from zero, differ at zero where the Witten index counts the imbalance, and are carried into one another by the change of the mass profile that shape invariance describes. The element-level version of the same statement, with the mass as a root of a general element, is [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html).
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and a cell is $L_{a}R_{b}$.
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
@@ -267,24 +267,24 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
-The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$: $\gamma_0[\mathbb{M}_-]^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k[\mathbb{M}_-]^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, so the four carry $\varepsilon=(1,-1,-1,-1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A cell is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, and the cells span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of cells. A single cell is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of cells rather than as one.
+The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$: $\gamma_0^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, so the four carry $\varepsilon=(1,-1,-1,-1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A cell is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, and the cells span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of cells. A single cell is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of cells rather than as one.
 
-$\gamma_5$ is the reference-frame cell of the chirality and $\gamma_0[\mathbb{M}_-]$ the reference-frame time cell, and two identifications close the article. The chirality sign of the previous sections, $\chi=\mathrm{diag}(-I_2,I_2)$ on $\Delta$, has $\gamma_5$ as its cell: the cell and the array are the same operator in the two representations, while the central sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is the algebra's definition of it. And $\gamma_0[\mathbb{M}_-]$ is off-diagonal on the Dirac module, so the frame grading $\beta$ of §*The Two Gradings Must Not Be Conflated* is $\gamma_0[\mathbb{M}_-]$. The anticommutation that separates the two gradings is then a one-line computation on the cells,
+$\gamma_5$ is the reference-frame cell of the chirality and $\gamma_0$ the reference-frame time cell, and two identifications close the article. The chirality sign of the previous sections, $\chi=\mathrm{diag}(-I_2,I_2)$ on $\Delta$, has $\gamma_5$ as its cell: the cell and the array are the same operator in the two representations, while the central sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is the algebra's definition of it. And $\gamma_0$ is off-diagonal on the Dirac module, so the frame grading $\beta$ of §*The Two Gradings Must Not Be Conflated* is $\gamma_0$. The anticommutation that separates the two gradings is then a one-line computation on the cells,
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_5 = (iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}) = (-i^2)\,L_{e_t}^{\mathrm{pau}}R_{\vec e_z\vec e_x}^{\mathrm{pau}} = L_{e_t}^{\mathrm{pau}}R_{\vec e_z\vec e_x}^{\mathrm{pau}} = -L_{e_t}^{\mathrm{pau}}R_{\vec e_x\vec e_z}^{\mathrm{pau}} = -\gamma_5\gamma_0[\mathbb{M}_-],
+\gamma_0\gamma_5 = (iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}) = (-i^2)\,L_{e_t}^{\mathrm{pau}}R_{\vec e_z\vec e_x}^{\mathrm{pau}} = L_{e_t}^{\mathrm{pau}}R_{\vec e_z\vec e_x}^{\mathrm{pau}} = -L_{e_t}^{\mathrm{pau}}R_{\vec e_x\vec e_z}^{\mathrm{pau}} = -\gamma_5\gamma_0,
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_5 = (iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})(-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}) = (-i^2)\,L_{e_t}^{\mathrm{axf}}R_{\vec e_z\vec e_x}^{\mathrm{axf}} = L_{e_t}^{\mathrm{axf}}R_{\vec e_z\vec e_x}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{\vec e_x\vec e_z}^{\mathrm{axf}} = -\gamma_5\gamma_0[\mathbb{M}_-],
+\gamma_0\gamma_5 = (iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})(-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}) = (-i^2)\,L_{e_t}^{\mathrm{axf}}R_{\vec e_z\vec e_x}^{\mathrm{axf}} = L_{e_t}^{\mathrm{axf}}R_{\vec e_z\vec e_x}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{\vec e_x\vec e_z}^{\mathrm{axf}} = -\gamma_5\gamma_0,
 $$
 
 the two coefficients multiplying to $(-i)(i) = -i^2 = +1$, and the minus coming from the right multipliers, whose order the composition rule reverses: $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = R_{\vec e_z\vec e_x}^{\mathrm{pau}} = -R_{\vec e_x\vec e_z}^{\mathrm{pau}}$, since $\vec e_z\vec e_x = -\vec e_x\vec e_z$.

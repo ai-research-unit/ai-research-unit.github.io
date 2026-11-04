@@ -306,25 +306,25 @@ so that the one-particle term reproduces $D_F=Z/(m^2-p^2-i\epsilon)$ and the res
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
 Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_aR_b$ is a cell.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The frame is the body's cells renamed. The momentum cell is the contraction
 $$
-\slashed p=\gamma_0[\mathbb{M}_-]p_0-\sum_{k=x,y,z}\gamma_k[\mathbb{M}_-]p_k ,
+\slashed p=\gamma_0p_0-\sum_{k=x,y,z}\gamma_kp_k ,
 \qquad
 (\slashed p)^2=p^2\,\mathbf 1 ,
 $$
@@ -332,11 +332,11 @@ the mass-shell operator is minus the product of the two shifted cells,
 $$
 \mathcal{M}(\tilde P)=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^2-p^2 ,
 $$
-a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0[\mathbb{M}_-])^2=\mathbf 1$, and $(\gamma_k[\mathbb{M}_-])^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
+a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
 
-$\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu[\mathbb{M}_-]$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.
+$\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.
 
-The dictionary is complex-linear, and the frame carries the central $i$ in each $\gamma_\mu[\mathbb{M}_-]$: the four are $i$ times real cells, so together with $i$ they span the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ of the section's first line. The real cells $L_aR_b$ alone, without the $i$, are real matrices and span all of $M_4(\mathbb{R})$; nothing is lost by writing the frame with the $i$ attached.
+The dictionary is complex-linear, and the frame carries the central $i$ in each $\gamma_\mu$: the four are $i$ times real cells, so together with $i$ they span the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ of the section's first line. The real cells $L_aR_b$ alone, without the $i$, are real matrices and span all of $M_4(\mathbb{R})$; nothing is lost by writing the frame with the $i$ attached.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

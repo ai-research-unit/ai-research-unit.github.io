@@ -604,42 +604,42 @@ The article adds no dynamics, no mass, no coupling and no empirical prediction. 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in cells.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{e_t}^{\mathrm{pau}}$ and $R_{e_t}^{\mathrm{pau}}$ are the identities of the left and right factors, two of the five cells collapse to one-sided multipliers: $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{e_t}^{\mathrm{pau}}$ and $R_{e_t}^{\mathrm{pau}}$ are the identities of the left and right factors, two of the five cells collapse to one-sided multipliers: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The frame is a Clifford frame. Using $i^2=-1$, the cell rule and $\vec e_k^2=-e_t$, the squares are
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)\bigl(-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)\bigl(-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)\bigl(+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)\bigl(+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)\bigl(-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)\bigl(-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)\bigl(+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)\bigl(+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-for $k=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0[\mathbb{M}_-],\gamma_j[\mathbb{M}_-]\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i[\mathbb{M}_-],\gamma_j[\mathbb{M}_-]\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
+for $k=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0,\gamma_j\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i,\gamma_j\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]
+\gamma_0\gamma_1\gamma_2\gamma_3
 =i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{pau}}
 =(+1)\,L_{-\vec e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
 =-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
@@ -648,7 +648,7 @@ $$
 The same identities in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]
+\gamma_0\gamma_1\gamma_2\gamma_3
 =i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{axf}}
 =(+1)\,L_{-\vec e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 =-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
@@ -657,21 +657,21 @@ $$
 with $i^4=(i^2)^2=(-1)^2=+1$, so that
 
 $$
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \gamma_5^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0\quad(\mu=0,1,2,3).
+\{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
 
 Read in the axis-free display:
 
 $$
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
 \gamma_5^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
-\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0\quad(\mu=0,1,2,3).
+\{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
 
 A single cell $L_aR_b$ is a pure tensor; the cells form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

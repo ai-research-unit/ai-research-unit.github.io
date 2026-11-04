@@ -748,44 +748,44 @@ so the frame is visible in the formula.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
 **The gammas are the five-cell frame as matrices.** The body writes the cells; this section writes the arrays, in both frames.
 
 **The five gammas.** The five Dirac matrices are two-sided operators of the frame. The fifth is the volume cell of the frame, written $\mathsf{V}^{\mathrm{vol}}$ where the cell and not its array is meant, with the frame named in the sentence; the articles on the sides use that glyph and cite the gamma display for the arrays.
 $$
-\boxed{\;\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\boxed{\;\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\;}
 $$
 
 **In the Peirce frame.**
 $$
-\gamma_0[\mathbb{M}_-]=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma_1[\mathbb{M}_-]=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma_2[\mathbb{M}_-]=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma_3[\mathbb{M}_-]=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$, $(\gamma_k[\mathbb{M}_-])^2=-I_4$ and $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. In the Pauli form the same five are
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
-\gamma_0[\mathbb{M}_-]=\sigma_1\otimes I_2,\qquad
-\gamma_k[\mathbb{M}_-]=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_0=\sigma_1\otimes I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 
 **In the axis-free frame.** The conjugation §*The Switch Between the Two Frames* carries them, and there they are $i$ times real signed permutation matrices,
 $$
-\gamma_0[\mathbb{M}_-]=i\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-\gamma_1[\mathbb{M}_-]=i\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
+\gamma_0=i\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+\gamma_1=i\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma_2[\mathbb{M}_-]=i\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
-\gamma_3[\mathbb{M}_-]=i\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+\gamma_2=i\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+\gamma_3=i\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
 \gamma_5=i\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix}.
 $$
 The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exactly the cells $iR_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ and $-iR_{\vec e_z}^{\mathrm{axf}}$: the same five cells, drawn in the other frame.
@@ -795,51 +795,51 @@ The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exac
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
 | $0$ | $1$ | $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$ |
-| $1$ | $\gamma_0[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0[\mathbb{M}_-]$ |
-| $1$ | $\gamma_1[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_1[\mathbb{M}_-]$ |
-| $1$ | $\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_2[\mathbb{M}_-]$ |
-| $1$ | $\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_3[\mathbb{M}_-]$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $2$ | $\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ |
-| $2$ | $\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=-\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $2$ | $\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $3$ | $\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\,\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
-| $4$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\,\gamma_5=-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
+| $1$ | $\gamma_0$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0$ |
+| $1$ | $\gamma_1$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_1$ |
+| $1$ | $\gamma_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_2$ |
+| $1$ | $\gamma_3$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_3$ |
+| $2$ | $\gamma_0\gamma_1$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_1$ |
+| $2$ | $\gamma_0\gamma_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_2$ |
+| $2$ | $\gamma_0\gamma_3$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_3$ |
+| $2$ | $\gamma_1\gamma_2$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_1\gamma_2$ |
+| $2$ | $\gamma_1\gamma_3$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=-\gamma_1\gamma_3$ |
+| $2$ | $\gamma_2\gamma_3$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_2\gamma_3$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0\gamma_1\gamma_2$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=i\,\gamma_0\gamma_1\gamma_3$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0\gamma_2\gamma_3$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\,\gamma_1\gamma_2\gamma_3$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
 Each row reads the cell as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
 
-**The comparison map.** In gammas, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Clifford Structure*.
+**The comparison map.** In gammas, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Clifford Structure*.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu[\mathbb{M}_-] p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu[\mathbb{M}_-]\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\sum_\mu \gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\sum_\mu \gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and the same contraction in the $\mathbb{B}$ coordinate is $\sum_\mu \gamma_\mu\partial/\partial Q_\mu$. The two differ by the coordinate, $Q_t=ix_0$, and not by the matrices: $\partial/\partial x_\mu$ and $\partial/\partial Q_\mu$ already name the frame, so the array needs no label to say which is meant.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## The $2\times2$ Pauli Representation
 
 **Read last, and not because it is small.** The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.

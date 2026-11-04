@@ -199,7 +199,7 @@ attributed by the source to Majorana. It was verified to be $*$-unitary and invo
 
 The source's own generators are printed in its Eq. (28): $\sigma_0\oplus\sigma_0$ in the timelike slot and $\begin{pmatrix} 0 & -\sigma_k \\ \sigma_k & 0\end{pmatrix}$ in the three spatial ones. As printed they are **not** a Clifford set: the anticommutator of the timelike generator with each spatial one is twice that spatial generator, which does not vanish, because the printed timelike matrix is the identity, the cell $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and the identity commutes with every cell. So the displayed timelike generator has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$. With that single correction the four generators satisfy the whole algebra for the frame metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$, their squares forming $\mathrm{diag}(+1,-1,-1,-1)=-\!g[\mathbb{M}_-]$ — every square and every anticommutator verified exactly. The correction repairs the Dirac frame of Eq. (28) and leaves $G$ itself untouched, because $G$ is written block by block with $a_0\sigma_0$ in its diagonal blocks.
 
-**The shorthand and the display use different conventions.** Before its Eq. (35) the source writes $G$ as $a_0I_4$ plus its three spatial generators weighted by $a_k$, and adds that $\gamma$ is "in the standard form". That caveat is doing real work, because the two conventions do not agree. With the **standard** generators — $\mathrm{diag}(\sigma_0,-\sigma_0)$ in the timelike slot and $\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix}$ spatially — the sum is exactly $G$, verified to $0$. Eq. (28) prints $\mathrm{diag}(\sigma_0,\sigma_0)$ in the timelike slot and *minus* the standard spatial entries, and with those the sum differs from $G$ by $2|B|$. So the letters $\gamma_\mu[\mathbb{M}_-]$ denote one thing in Eq. (28) and another in the shorthand, and the convention that reproduces Eq. (2) is the shorthand's.
+**The shorthand and the display use different conventions.** Before its Eq. (35) the source writes $G$ as $a_0I_4$ plus its three spatial generators weighted by $a_k$, and adds that $\gamma$ is "in the standard form". That caveat is doing real work, because the two conventions do not agree. With the **standard** generators — $\mathrm{diag}(\sigma_0,-\sigma_0)$ in the timelike slot and $\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix}$ spatially — the sum is exactly $G$, verified to $0$. Eq. (28) prints $\mathrm{diag}(\sigma_0,\sigma_0)$ in the timelike slot and *minus* the standard spatial entries, and with those the sum differs from $G$ by $2|B|$. So the letters $\gamma_\mu$ denote one thing in Eq. (28) and another in the shorthand, and the convention that reproduces Eq. (2) is the shorthand's.
 
 **The verified effect.** The source's Eq. (34) is the transformation the corpus needs, and with it the source's stated purpose is achieved. Recomputing $G_2 = \tilde UG\tilde U^{-1}$ term by term and recomposing it gives
 
@@ -313,7 +313,7 @@ Two caveats belong with the record. The first is the word *QFT*: in the source's
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; every operator statement above is written in the cells $L_aR_b$.
 
@@ -321,8 +321,8 @@ Here $a,b\in\mathbb{B}$, $L_a$ and $R_b$ are the left and right multiplications,
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
@@ -331,13 +331,13 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
-Each generator carries one unit $i$, and a product of two carries $i^2=-1$; that sign is where the metric enters, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
+Each generator carries one unit $i$, and a product of two carries $i^2=-1$; that sign is where the metric enters, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
 
 The five are generators, not a basis: the basis is the sixteen products. A single product is a pure tensor; the pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

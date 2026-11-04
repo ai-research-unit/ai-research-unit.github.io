@@ -648,19 +648,19 @@ Read further, the local complex structure is an **emergent metric** in the sense
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The five gammas are the five frame cells of *Matrix Representations Conventions*, §*The Clifford Structure*, written as arrays. The section prints each of them in both displays: the $\mathrm{pau}$ display first, whose arrays are the ones the literature prints, and the axis-free display after it, labelled $\mathrm{axf}$, whose cells are the ones this article writes:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-The four of them are, as cells, the frame cells the Dirac operator of this article is built from, and the fifth, $\gamma_5$, is the chirality cell $\mathsf{V}^{\mathrm{vol}}$ of the frame. The anticommutation $\{\gamma_a[\mathbb{M}_-],\gamma_b[\mathbb{M}_-]\}=-2g_{ab}[\mathbb{M}_-]I_4$ is the weight carried into the Lichnerowicz square of §*Flat Limit and the Square*, and the four compose to the fifth, $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The traces, the contraction sums and the algebra of the five are those of the conventions article, §*The Legacy Pauli Gamma Formulation*, and are not restated here. Nothing in the body of this article prints an array: the operators it uses are written there as cells or as elements.
+The four of them are, as cells, the frame cells the Dirac operator of this article is built from, and the fifth, $\gamma_5$, is the chirality cell $\mathsf{V}^{\mathrm{vol}}$ of the frame. The anticommutation $\{\gamma_a,\gamma_b\}=-2g_{ab}[\mathbb{M}_-]I_4$ is the weight carried into the Lichnerowicz square of §*Flat Limit and the Square*, and the four compose to the fifth, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The traces, the contraction sums and the algebra of the five are those of the conventions article, §*The Legacy Pauli Gamma Formulation*, and are not restated here. Nothing in the body of this article prints an array: the operators it uses are written there as cells or as elements.
 
 ## Summary
 

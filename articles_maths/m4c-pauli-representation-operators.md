@@ -703,7 +703,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.
 
@@ -711,27 +711,27 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 **The reference frame.** Define
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
 $$
-\gamma_0[\mathbb{M}_-]=\sigma_1\otimes\mathrm I_2,\qquad
-\gamma_k[\mathbb{M}_-]=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes\mathrm I_2.
 $$
 
 **The values.** In the frame,
 $$
-\gamma_0[\mathbb{M}_-]=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma_1[\mathbb{M}_-]=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma_2[\mathbb{M}_-]=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma_3[\mathbb{M}_-]=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
@@ -748,20 +748,20 @@ $$
 $$
 Define
 $$
-\gamma_0[\mathbb{M}_-]=iL(e_t)R(\delta),\qquad
-\gamma_k[\mathbb{M}_-]=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
+\gamma_0=iL(e_t)R(\delta),\qquad
+\gamma_k=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
 $$
 For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
 
-**The normal form.** Every pair $(\beta,\delta)$ gives a frame with the anticommutation relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0[\mathbb{M}_-]$, and $\beta$ is the right factor of $\gamma_1[\mathbb{M}_-]$. Distinct pairs give distinct frames, not two descriptions of one frame.
+**The normal form.** Every pair $(\beta,\delta)$ gives a frame with the anticommutation relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.
 
 **The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade table.
 
 **Cells only for axes.** If $\beta$ is not one of $\vec e_x,\vec e_y,\vec e_z$, the spatial generators are not cells:
 $$
-\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{pau}}R_{\beta}^{\mathrm{pau}}=i\sum_\nu\beta_\nu\,L_{\vec e_k}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}
+\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\beta}^{\mathrm{pau}}=i\sum_\nu\beta_\nu\,L_{\vec e_k}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}
 $$
-is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0[\mathbb{M}_-]$ is not a cell either. The cell table of §*The Sixteen Products of the Frame* is the table of the reference pair.
+is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a cell either. The cell table of §*The Sixteen Products of the Frame* is the table of the reference pair.
 
 **Conjugacy.** For a unit $\tilde u$ and $U=L(\tilde u)R(\tilde u^{-1})$,
 $$
@@ -773,16 +773,16 @@ This is the matrix of an inner automorphism, and it carries frames to frames. It
 
 **Theorem (the anticommutation relations).** For the normal form of §*The Normal Form and the Pair $(\beta,\delta)$*,
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
 (\gamma_5)^2=\mathrm I_4,\qquad
-\gamma_5\gamma_\mu[\mathbb{M}_-]=-\gamma_\mu[\mathbb{M}_-]\gamma_5,
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
 $$
 with $\varepsilon=(1,-1,-1,-1)$, and
 $$
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
 $$
 
-*Proof.* $(\gamma_0[\mathbb{M}_-])^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k[\mathbb{M}_-])^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]+\gamma_k[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]+\gamma_k[\mathbb{M}_-]\gamma_j[\mathbb{M}_-]=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
+*Proof.* $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
 
 ### The sixteen products of the frame
 
@@ -791,27 +791,27 @@ $$
 | Grade | Product | Cell | Coefficient |
 |---|---|---|---|
 | $0$ | $1$ | $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $1$ |
-| $1$ | $\gamma_0[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
-| $1$ | $\gamma_1[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
-| $1$ | $\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
-| $1$ | $\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
-| $2$ | $\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
-| $2$ | $\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $1$ |
-| $2$ | $\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $-1$ |
-| $2$ | $\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $1$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $-i$ |
-| $3$ | $\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
-| $3$ | $\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $-i$ |
-| $4$ | $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $-1$ |
+| $1$ | $\gamma_0$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
+| $1$ | $\gamma_1$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
+| $1$ | $\gamma_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
+| $1$ | $\gamma_3$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $i$ |
+| $2$ | $\gamma_0\gamma_1$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
+| $2$ | $\gamma_0\gamma_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
+| $2$ | $\gamma_0\gamma_3$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $1$ |
+| $2$ | $\gamma_1\gamma_2$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $1$ |
+| $2$ | $\gamma_1\gamma_3$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $-1$ |
+| $2$ | $\gamma_2\gamma_3$ | $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $1$ |
+| $3$ | $\gamma_0\gamma_1\gamma_2$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
+| $3$ | $\gamma_0\gamma_1\gamma_3$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $-i$ |
+| $3$ | $\gamma_0\gamma_2\gamma_3$ | $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $i$ |
+| $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $-i$ |
+| $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $-1$ |
 
 The products are distinct, so they are the sixteen cells in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the cell basis.
 
 **The algebra.** The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
 $$
-\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]],
+\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
 $$
 which are again cells: $\Sigma^{01}=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\Sigma^{02}=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\Sigma^{03}=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\Sigma^{12}=iL_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\Sigma^{13}=-iL_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\Sigma^{23}=iL_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.
 
@@ -831,7 +831,7 @@ In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1
 
 **The two Weyl blocks.** The frame is block diagonal for the left family, $L(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.
 
-**Types.** In the reference frame, $\gamma_0[\mathbb{M}_-]$ and $\gamma_5$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the anticommutation relations.
+**Types.** In the reference frame, $\gamma_0$ and $\gamma_5$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the anticommutation relations.
 
 Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

@@ -464,17 +464,17 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
-The four gammas are the generators of the body, $\gamma_\mu[\mathbb{M}_-]=C_\mu$, the four actions of §The Trinomial Unit Basis, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The four gammas are the generators of the body, $\gamma_\mu=C_\mu$, the four actions of §The Trinomial Unit Basis, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0[\mathbb{M}_-]:\Psi\longmapsto i\Psi\vec e_x,\quad \gamma_1[\mathbb{M}_-]:\Psi\longmapsto i\vec e_x\Psi\vec e_y,\quad \gamma_2[\mathbb{M}_-]:\Psi\longmapsto i\vec e_y\Psi\vec e_y,\quad \gamma_3[\mathbb{M}_-]:\Psi\longmapsto i\vec e_z\Psi\vec e_y,\quad \gamma_5:\Psi\longmapsto-i\Psi\vec e_z.
+\gamma_0:\Psi\longmapsto i\Psi\vec e_x,\quad \gamma_1:\Psi\longmapsto i\vec e_x\Psi\vec e_y,\quad \gamma_2:\Psi\longmapsto i\vec e_y\Psi\vec e_y,\quad \gamma_3:\Psi\longmapsto i\vec e_z\Psi\vec e_y,\quad \gamma_5:\Psi\longmapsto-i\Psi\vec e_z.
 $$
 
 Each is an action with both elements written in the arrow; $\gamma_0$ and $\gamma_5$ carry the identity on the left and act on the right alone. The arrays the literature prints are these actions in the Peirce frame, and the axis-free arrays of the corpus are the same actions in the corpus frame; a change of frame changes no product, no anticommutator, no trace and no determinant, so every identity here holds in both. Products stay in the same language: the product of two actions is one action, $(\Psi\mapsto a\Psi b)\circ(\Psi\mapsto c\Psi d)=\Psi\mapsto ac\Psi db$, so a product of the symbols here never needs a second notion of operator. An action is one product, and a sum of at most four actions is any $\mathbb{C}$-linear map of the algebra to itself.
 
-$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, which is the right action $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ written in the frame; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
+$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is the right action $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ written in the frame; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the left actions $\Psi\mapsto a\Psi$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the actions $\Psi\mapsto a\Psi b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

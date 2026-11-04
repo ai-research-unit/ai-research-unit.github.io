@@ -266,35 +266,35 @@ The non-abelian extension is stated and its status fixed.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
-The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, not the four-dimensional $\gamma_5$.
+The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, not the four-dimensional $\gamma_5$.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-In two dimensions only $\gamma_0[\mathbb{M}_-]$ and $\gamma_1[\mathbb{M}_-]$ are present, and their product is the chirality cell:
+In two dimensions only $\gamma_0$ and $\gamma_1$ are present, and their product is the chirality cell:
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0\gamma_1=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-(\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-])^2=I_4 .
+(\gamma_0\gamma_1)^2=I_4 .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0\gamma_1=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
-(\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-])^2=I_4 .
+(\gamma_0\gamma_1)^2=I_4 .
 $$
 
 The four-dimensional $\gamma_5$ is not this product; it is the volume cell times $i$, and its square is also $I_4$ because $i^2=-1$ turns the volume cell's $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ into $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$.
@@ -307,32 +307,32 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The standard gamma identities.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$,
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums depend on the frame, because the individual squares do. In the Euclidean frame, where every generator squares to $+I_4$, they are
+The four contraction sums, with the index $\mu$ summed over the frame and the summed index raised by $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, are
 $$
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\delta[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=+2\gamma_\delta[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}] ,
+\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A ,
 $$
-the general rule being $\sum_\mu\gamma_\mu[\mathbb{B}] A\gamma_\mu[\mathbb{B}]=(-1)^n(4-2n)A$ for $A$ a product of $n$ distinct generators. In the $\mathbb{M}_-$ frame the three spacelike generators square to $-I_4$, and with all indices down the coefficients change sign, to $-2$, $+4$, $-2$, $0$ and $+2$ for $n=0$ to $4$; only the first keeps a closed form that names no product, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$.
+the general rule being $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$ for $A$ a product of $n$ distinct generators. The metric sits in the raised index and nowhere else: with every index low the sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

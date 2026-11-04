@@ -10,15 +10,15 @@ Each frame is fixed with its metric. The metric is part of the frame, not a sepa
 
 The article is read after *Algebra and Element Conventions* and before *Matrix Representations Conventions*. It uses no left or right multiplication, no cell and no explicit array.
 
-**The order is the order of dependence, and it is also the order of risk.** The coordinate frame decides the signs of every interval term and of every square. A mistake in it propagates into every display of the article that follows.
+**The order is the order of dependence, and it is also the order of risk.** The coordinate frame decides the signs of every interval term. A mistake in it propagates into every display of the article that follows.
 
 ## What a Frame Is
 
 **A frame is a choice of coordinate, not a part of the object.** It is a rule that turns an element into four labelled components, together with a stated law for passing to another such rule. The object is what the rule leaves fixed. The metric is part of the frame, not a choice made after it: each of the two frames carries its interval. The test of a frame statement is that it names the frame and its metric; the test of an invariant statement is that it does not. A coordinate taken from one frame with the metric of the other is an object of neither, and no algebraic check detects it.
 
-**The two coordinate frames have names.** The names are read $\mathbb{B}$ for biquaternion and $\mathbb{M}_-$ for the material sector. The $\mathbb{B}$ frame is the biquaternion space read in its own complex coordinate: the natural complete frame, with no reality condition and all four directions on the same footing. The $\mathbb{M}_-$ frame is the material real frame, named for the sector it is defined on, reached by $Q_t=ict'$ in physics and by $Q_t=iq'_t$ in mathematics. $Q_\mu$ stays the name of the complex coordinate and $x_\mu$ the name of the real one; the frame name and the coordinate name are separate. The generators carry the frame in brackets and the index low: $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$. The fifth of a frame is the one exception to the bracket: it is a product of the four generators and not the image of a direction, so it is written $\gamma_5$ with no frame attached, and it is the fifth of the material real frame.
+**The two coordinate frames have names.** The names are read $\mathbb{B}$ for biquaternion and $\mathbb{M}_-$ for the material sector. The $\mathbb{B}$ frame is the biquaternion space read in its own complex coordinate: the natural complete frame, with no reality condition and all four directions on the same footing. The $\mathbb{M}_-$ frame is the material real frame, named for the sector it is defined on, reached by $Q_t=ict'$ in physics and by $Q_t=iq'_t$ in mathematics. $Q_\mu$ stays the name of the complex coordinate and $x_\mu$ the name of the real one; the frame name and the coordinate name are separate. The generators carry the index low and no frame label: $\gamma_\mu$ is one set of matrices, the same in both frames. The frame is named on the coordinate and on the metric, $Q_\mu$ or $x_\mu$, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, and never on the array. The fifth is a product of the four generators and not the image of a direction, so it is written $\gamma_5$ with no frame attached.
 
-**The frame and the invariant are read together.** "$\gamma_k[\mathbb{M}_-]^2=-I_4$" is a frame statement: it is true in the $\mathbb{M}_-$ frame and false for $\gamma_k[\mathbb{B}]$. "$\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$" is a frame statement, and the value of $g$ is what the frame supplies: the cells square to $-g[\mathbb{M}_-]$ there, and to $+g[\mathbb{B}]$ here. Neither sentence is complete without the other.
+**The frame and the invariant are read together.** "$\gamma_k^2=-I_4$" is an invariant statement: the array is the same in both frames. "$\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$" is invariant too, with $\varepsilon=(1,-1,-1,-1)$ the plain weight. What a frame supplies is the metric $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, and that metric enters only when an interval is formed or an index is raised. The weight and the metric are two objects, and no sentence needs both to be read.
 
 **A change of frame is a substitution with a law.** On the material sector it is $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3$, with the inverse $x_0=-iQ_t$ and $x_k=Q_k$. A display is read only in the frame that produced it, and the substitution is written wherever a display passes from one frame to the other.
 
@@ -38,11 +38,7 @@ Every coefficient is $+1$, and the value is complex in general. The tuple is a c
 
 **The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{M}_-$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real signature appears only when a sector is imposed. A Lorentzian signature is not a property of this frame.
 
-**The four generators all square to $+I_4$.** In this frame the frame metric is the identity, $g_{\mu\nu}=\delta_{\mu\nu}$, so
-$$
-(\gamma_\mu[\mathbb{B}])^2=+I_4,\qquad \{\gamma_\mu[\mathbb{B}],\gamma_\nu[\mathbb{B}]\}=2\delta_{\mu\nu}I_4 .
-$$
-The four squares have one sign, and no generator is singled out by the sign of its square. The generators are the matrices of *Matrix Representations Conventions*.
+**The metric is the identity, and it is the only thing the frame changes here.** In this frame $g_{\mu\nu}[\mathbb{B}]=\delta_{\mu\nu}$, so the interval is the plain sum $\sum_\mu Q_\mu^2$ and no direction is singled out by a sign. The four matrices $\gamma_\mu$ do not enter the frame: they are the matrices of *Matrix Representations Conventions*, with $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$ in both frames. What the $\mathbb{B}$ frame changes is the metric that reads an interval, not the squares.
 
 **The material case.** On $\mathbb{M}_-$ the coefficients are
 $$
@@ -68,7 +64,7 @@ with coefficients $(-1,1,1,1)$, the negative of the frame metric. The sign is no
 
 **The squares split.** In this frame
 $$
-(\gamma_0[\mathbb{M}_-])^2=+I_4,\qquad (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4 ,
+(\gamma_0)^2=+I_4,\qquad (\gamma_k)^2=-I_4,\qquad \{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4 ,
 $$
 with $g=\mathrm{diag}(-1,+1,+1,+1)$. One generator is singled out by its sign, and that generator is the time direction.
 
@@ -84,7 +80,7 @@ Each column uses its own coordinate; the $\mathbb{B}$ column is the general fram
 | frame metric $g$ | $(1,1,1,1)$ | $(-1,1,1,1)$ |
 | squares of the four cells | all $+I_4$, that is $g$ | $(+,-,-,-)$, that is $-g$ |
 
-**Each frame is one tuple, and the cells of the frame square to it.** In the $\mathbb{B}$ frame the interval and the metric are the same tuple, $(1,1,1,1)$, and the four cells square to it. In the $\mathbb{M}_-$ frame the interval and the metric are again the same tuple, $(-1,1,1,1)$; the cells square to the opposite, $(1,-1,-1,-1)$, because the $i$ of $Q_t=ix_0$ has left the generator and become the sign of the time slot, $i^2=-1$. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the square of the units, the same in both frames, and it is not the metric of either. A reader who carries a tuple from one frame to the other carries the wrong one, and the result is a sign that no algebra check will catch.
+**Each frame is one tuple, and the weight is the same in both.** In the $\mathbb{B}$ frame the interval and the metric are the same tuple, $(1,1,1,1)$. In the $\mathbb{M}_-$ frame they are again the same tuple, $(-1,1,1,1)$: one sign for the $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the square of the units, the same in both frames, and it is not the metric of either. A reader who carries a tuple from one frame to the other carries the wrong one, and the result is a sign that no algebra check will catch.
 
 **The $i$ is never put into the metric.** The coefficients above are real in both frames. What changes is which coordinate carries the $i$: on the material case it is $Q_t$, in the $\mathbb{M}_-$ frame it is none. A metric with an $i$ in it is not a metric of this corpus.
 
@@ -96,49 +92,46 @@ Each column uses its own coordinate; the $\mathbb{B}$ column is the general fram
 
 **What the framework does instead is change the frame.** Physics is studied here by choosing a coordinate frame, not by choosing matrices. In the general case the frame is $\mathbb{B}$ itself, the four coefficients $Q_\mu\in\mathbb{C}$ with the interval $\sum_\mu Q_\mu^2$. In the material sector the frame is the real frame of $\mathbb{M}_-$, reached by $Q_t=ix_0$, and that change of frame carries the physics. The map translates the change into matrices; it does not produce it.
 
-**The map and its values.** The two coordinate frames give four directions each, and the Clifford map sends them into $M_4(\mathbb{C})$:
+**The map and its values.** The four directions of a frame go to the four matrices, and the map is one map for both frames:
 $$
-\mathsf{K}_{\mathbb{B}}(e_\mu)=\gamma_\mu[\mathbb{B}],\qquad
-\mathsf{K}_{\mathbb{M}_-}(e_\mu)=\gamma_\mu[\mathbb{M}_-].
+\mathsf{K}(e_\mu)=\gamma_\mu .
 $$
-Its values are fixed by the anticommutator in each frame,
+Its values are fixed by the anticommutator,
 $$
-\{\gamma_\mu[\mathbb{B}],\gamma_\nu[\mathbb{B}]\}=2\delta_{\mu\nu}I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \varepsilon=(1,-1,-1,-1),
 $$
-and it is linear over the coefficient field of its frame: complex for $\mathbb{B}$, real in the $\mathbb{M}_-$ frame. Earlier versions called the five images the gamma frame; this article names the map the Clifford map, because the object is a map and not a frame, and calls the five the gamma set. The letter $\gamma$ stays for the four images.
+and it is linear over the complex field in either frame. Earlier versions called the five images the gamma frame; this article names the map the Clifford map, because the object is a map and not a frame, and calls the five the gamma set. The letter $\gamma$ stays for the four images.
 
 **The image is four-dimensional and not closed.** Four elements span four dimensions, and $M_4(\mathbb{C})$ has sixteen. A product of two distinct images is a bivector, and it leaves the image. The image is a subspace, not a subalgebra, and not a basis: the basis is the sixteen graded products, $1+4+6+4+1$. Writing the four as "the basis" hides both the count and the place each product lands.
 
-**The metric is read from the map.** The frame metric is read from the anticommutator, equivalently $4g_{\mu\nu}=\operatorname{tr}\bigl(\mathsf{K}(e_\mu)\mathsf{K}(e_\nu)\bigr)$ in the defining representation. The map carries no metric of its own: the frame supplies it, and the same algebra carries both tuples.
+**The weight is read from the map, and the metric is not.** The map carries one weight, $4\varepsilon_\mu\delta_{\mu\nu}=\operatorname{tr}\bigl(\mathsf{K}(e_\mu)\mathsf{K}(e_\nu)\bigr)$ in the defining representation, and that weight is the same in both frames. The frame metric is a second object, carried by the coordinate: it is the coefficient tuple of the interval, $(1,1,1,1)$ on $\mathbb{B}$ and $(-1,1,1,1)$ on $\mathbb{M}_-$. The two are written with two symbols because they are two objects; an article that used one for the other would be wrong in sign and would look right.
 
-**The change of base is one matrix.** On the material sector the change of frame is $Q_t=ix_0$; read on the generators it is
+**The change of base is one matrix, and it acts on the coordinate.** On the material sector the change of frame is $Q_t=ix_0$, with
 $$
-\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}],\qquad
-\Lambda=\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i).
+\Lambda=\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i),\qquad Q=\Lambda x .
 $$
 The matrix is the image of the substitution, not a second convention. The metric follows from it,
 $$
-\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}=g[\mathbb{M}_-],\qquad g[\mathbb{B}]=\mathrm{diag}(1,1,1,1),\quad g[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1).
+\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}=g[\mathbb{M}_-],\qquad g[\mathbb{B}]=\mathrm{diag}(1,1,1,1),\quad g[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1),
 $$
-The frame label is written in brackets, as it is on the generators, so no spacetime index is raised. A display that changes frame writes $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ once; it does not choose a second metric by hand.
+and the matrices do not follow: $\gamma_\mu$ is one array, not one array per coordinate, and the substitution leaves it alone. A display that changes frame writes $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ once; it does not choose a second metric by hand, and it does not restate the matrices.
 
-**The fifth is a product, not a direction.** The fifth is the product $i\gamma_0\gamma_1\gamma_2\gamma_3$ of the frame's four images, so it is fixed by them and is not a fifth image of the map. Being a product and not a direction, it carries no frame in brackets: a bracket there would read as an argument. The glyph is $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ with $\gamma_5^2=I_4$, and it names one operator with no frame attached. It differs from the volume element of the frame, which is the same product without the phase $i$, and the two are written as two glyphs and not one.
+**The fifth is a product, not a direction.** The fifth is the product $i\gamma_0\gamma_1\gamma_2\gamma_3$ of the frame's four images, so it is fixed by them and is not a fifth image of the map. Being a product and not a direction, it carries no frame label: a label there would read as an argument. The glyph is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\gamma_5^2=I_4$, and it names one operator. It differs from the volume element of the frame, which is the same product without the phase $i$, and the two are written as two glyphs and not one.
 
-**Which map is displayed.** The matrix articles display $\mathsf{K}_{\mathbb{M}_-}$ by default, because the coordinate there is real. An article that displays $\mathsf{K}_{\mathbb{B}}$ says so at the display. The two are never mixed in one display.
+**One map, one weight.** The four matrices are the same in both frames, so an article never chooses between two maps: it chooses a coordinate, and the coordinate names the metric. What must not be mixed is the metric. A display that combines $g[\mathbb{B}]$ and $g[\mathbb{M}_-]$ mixes two intervals, and no algebraic check detects it.
 
 ## The Rules
 
 Eight rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
-2. **One product, one frame.** A product is read in one frame: the generators carry that frame in brackets, $\gamma_\mu[\mathbb{B}]$ or $\gamma_\mu[\mathbb{M}_-]$, and one generator of each frame is never written in the same product.
-3. **The gamma index is low, and the frame is in brackets.** $\gamma_\mu[\mathbb{B}]$, $\gamma_\mu[\mathbb{M}_-]$. The index labels which direction is mapped; it is not a tensor slot. No label is raised, and no generator is written without its frame outside a declared default. The fifth is the exception, and it is the rule's own: $\gamma_5$ carries no bracket and no frame, because it is a product and not the image of a direction, and because a bracket on it would read as an argument.
+2. **One product, one metric.** A product is read in one frame's coordinate: the metric is written $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$ wherever an interval is formed or an index is raised, and the two metrics are never combined in one product. The matrices carry no frame and are never relabelled.
+3. **The gamma index is low.** $\gamma_\mu$. The index labels which direction is mapped; it is not a tensor slot, and no label is raised on the generator itself: raising is done with the weight, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$. The fifth is written $\gamma_5$ without a label, because it is a product and not the image of a direction.
 4. **Name the metric with its frame.** The coordinate frame carries its interval. A statement that names a frame names the metric it carries; a metric is never moved from one frame to another.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The coefficients of both frame metrics are real.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{M}_-$ and is not carried to $\mathbb{M}_+$ without saying so.
-7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates or $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ on the generators, and the article gives it. A display is read only in the frame that produced it.
-8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$ and the metric is $(1,1,1,1)$. In the $\mathbb{M}_-$ frame the interval is $x_0^2-\vec x^2$ and the metric is $(-1,1,1,1)$: one sign for the one $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. A two-index display of the interval carries the minus of that frame, $-x_0^2+x_1^2+x_2^2+x_3^2=\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]x_\mu x_\nu$, and the cells of the frame square to the opposite array, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$. The letter $\eta$ is never the metric.
+7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates and $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ on the metric, and the article gives it. A display is read only in the frame that produced it. The substitution does not touch the matrices.
+8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$ and the metric is $(1,1,1,1)$. In the $\mathbb{M}_-$ frame the interval is $x_0^2-\vec x^2$ and the metric is $(-1,1,1,1)$: one sign for the one $i$ of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. A two-index display of the interval carries the minus of that frame, $-x_0^2+x_1^2+x_2^2+x_3^2=\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]x_\mu x_\nu$, and the weight is the negative of that metric, $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$. The letter $\eta$ is never the metric.
 
 **The plain weight is not a frame metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 
@@ -152,7 +145,7 @@ The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_
 
 The metric is carried by the frame, and it is the tuple of the interval. The $\mathbb{B}$ frame carries $(1,1,1,1)$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$. The $\mathbb{M}_-$ frame carries $(-1,1,1,1)$, $-x_0^2+x_1^2+x_2^2+x_3^2$. The two differ by the one sign of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the exception: it belongs to the product and is the same in both frames. Naming the frame and its metric together is what keeps a sign from moving silently.
 
-**The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{M}_-$ in the material case. The base change is the one matrix $\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i)$, the image of $Q_t=ix_0$ on the generators, and the metric transforms with it.
+**The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{M}_-$ in the material case. The base change is the one matrix $\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i)$, the image of $Q_t=ix_0$ on the coordinate, and the metric transforms with it.
 
 ## Summary of Notation
 
@@ -163,15 +156,15 @@ The metric is carried by the frame, and it is the tuple of the interval. The $\m
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $(1,1,1,1)$ in the $\mathbb{B}$ frame (complex in general), $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame |
 | $g_{\mu\nu}$ | The frame metric of the frame; $(1,1,1,1)$ in the $\mathbb{B}$ frame, $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame |
-| $\gamma_\mu[\mathbb{B}]$, $\gamma_\mu[\mathbb{M}_-]$ | The values of the Clifford map in each frame, $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$; the index is always low |
-| $\mathsf{K}_{\mathbb{B}}$, $\mathsf{K}_{\mathbb{M}_-}$ | The Clifford map, $\mathsf{K}_{\mathbb{B}}(e_\mu)=\gamma_\mu[\mathbb{B}]$ and $\mathsf{K}_{\mathbb{M}_-}(e_\mu)=\gamma_\mu[\mathbb{M}_-]$; a dictionary from the four directions into $M_4(\mathbb{C})$, not a structure of $\mathbb{B}$ |
-| $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ | $\mathrm{diag}(1,-i,-i,-i)$, the base change $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ |
+| $\gamma_\mu$ | The four values of the Clifford map, one set for both frames, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$; the index is always low |
+| $\mathsf{K}$ | The Clifford map, $\mathsf{K}(e_\mu)=\gamma_\mu$, the same in both frames; a dictionary from the four directions into $M_4(\mathbb{C})$, not a structure of $\mathbb{B}$ |
+| $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ | $\mathrm{diag}(1,-i,-i,-i)$, the base change of the coordinate, $Q=\Lambda x$ |
 
 ## Further Reading
 
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the base, the element and the units.
 - [Conventions of the Twelve Products and the Four Forms](product-and-form-conventions.html), for the interval, the plain weight and the other two norms.
-- [Conventions of the Matrix Models](matrix-representations-conventions.html), for the explicit arrays and the gamma matrices in each frame.
+- [Conventions of the Matrix Models](matrix-representations-conventions.html), for the explicit arrays and the one set of gamma matrices.
 - [Conventions of the Operators and the Differential Calculus](operator-and-calculus-conventions.html), for the calculus these frames read.
 - [Conventions of the Indices, the Notation and the Corpus](index-notation-and-corpus-conventions.html), for the index rule that keeps the gamma label low.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma matrices read as an object of their own.

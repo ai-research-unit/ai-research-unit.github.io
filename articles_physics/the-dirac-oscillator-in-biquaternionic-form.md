@@ -8,52 +8,94 @@ $$
 \boxed{\;\vec p \;\longrightarrow\; \vec p - i m\omega \beta\vec r\;},
 $$
 
-introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. Here $\vec p$ is the momentum operator, $p_k=-i\hbar\,\partial/\partial Q_k$, and the Hamiltonian is
+introduced by Marcos Moshinsky and Adam Szczepaniak in 1989. Here $\vec p$ is the momentum operator, $p_k=-i\hbar\,\partial/\partial Q_k$, and the source's equation is the Hamiltonian one,
 
 $$
-H = c\,\boldsymbol\alpha\cdot\left(\vec p - i m\omega\beta\vec r\right) + \beta mc^2 .
-$$
-
-The substitution is "non-minimal" in the precise sense that it cannot be obtained from a gauge potential: it adds, to the odd (frame-anticommuting) part of the Dirac operator, a term linear in the position. The resulting system is exactly solvable, its non-relativistic limit is the three-dimensional isotropic harmonic oscillator together with a spin–orbit coupling of the same order as the level spacing, and it has become the standard laboratory for the relativistic treatment of confining interactions.
-
-It belongs in this subcategory as the **exactly solvable external-potential problem** of the biquaternionic Dirac theory. The hydrogen atom, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, is exactly solvable by a different mechanism (a Coulomb central field and a second-order radial reduction); the oscillator is exactly solvable because the first-order operator can be **squared in closed form**, and the square is again a second-order operator, central apart from a single spin–orbit term. That is the same square as in *Klein–Gordon from the Dirac Square in Biquaternionic Form*, now with the position-dependent addition that makes the square a harmonic oscillator. A square available in closed form, plus a confining addition that is linear in the position, make the model the place where one sees concretely how the biquaternionic first-order operator behaves under squaring.
-
-The article derives the substitution, the split of a state into its two frame parts and the coupled pair those parts satisfy, the exact operator identity on squaring, and the spectrum; it then works the one-dimensional case for which everything is transparent, takes the non-relativistic limit, reads the result in the algebra, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. Nothing below is written with a matrix, a column or a decomposition of the algebra: a state is an element, an operator is an action on it, and every display of an array is confined to *The Legacy Pauli Gamma Formulation*.
-
-**Two Dirac equations.** The corpus carries two, and this article keeps them apart. The **algebra equation** is the one-sided chiral pair
-
-$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,
+H = c\sum_k\alpha_k\left(p_k - i m\omega\beta Q_k\right) + \beta mc^2 ,
 \qquad
-\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+H\psi = i\hbar\frac{\partial}{\partial t}\psi .
 $$
 
-in which every derivative multiplies on the left and the mass couples the two values of the subscript. The **module equation** is the single two-sided equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the multipliers stand on both sides and whose two chiral parts are two lines. Chirality is the subscript in both forms of the equation, and it takes two values. In the module equation the large and small parts are not the chiral parts but the two values of the frame action $\beta$: $\beta$ is $+1$ on one part and $-1$ on the other, the mass is diagonal in that label and off-diagonal in the chiral one, and the two labels are different functions of the same state. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity actions, and both are two-sided. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Legacy Pauli Gamma Formulation* it makes no further appearance.
+The substitution is "non-minimal" in the precise sense that it cannot be obtained from a gauge potential: it adds, to the odd (frame-anticommuting) part of the operator, a term linear in the position. The resulting system is exactly solvable, its non-relativistic limit is the three-dimensional isotropic harmonic oscillator together with a spin–orbit coupling of the same order as the level spacing, and it has become the standard laboratory for the relativistic treatment of confining interactions.
 
-**The subscript.** Chirality is the subscript: an element is $L$ or $R$, and those are the two values. The letters are the Dirac ones, $L$ for left-handed and $R$ for right-handed, in the sense the corpus already uses for $\psi_L$ and $\psi_R$. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript belongs to the element, not to a column: a unit, a product and a general element carry it, and a state carries it because a state is an element.
+It belongs in this subcategory as the **exactly solvable external-potential problem** of the biquaternionic Dirac theory. The hydrogen atom, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*, is exactly solvable by a different mechanism (a Coulomb central field and a second-order radial reduction); the oscillator is exactly solvable because the two first-order operators of its pair can be multiplied in closed form, and the product is again a second-order operator, central apart from a single spin–orbit term. That is the same product as in *Klein–Gordon from the Dirac Square in Biquaternionic Form*, now with the position-dependent addition that makes the product a harmonic oscillator. A product available in closed form, plus a confining addition that is linear in the position, make the model the place where one sees concretely how the biquaternionic first-order operator behaves under multiplication by its conjugate.
+
+The article derives the substitution, the split of a state into its two frame parts and the coupled pair those parts satisfy, the exact operator identity on multiplying the two first-order operators, and the spectrum; it then works the one-dimensional case for which everything is transparent, takes the non-relativistic limit, reads the result in the algebra, and connects the zero modes to the supersymmetric structure developed in the companion article *Supersymmetric Quantum Physics in the Biquaternion Framework*. Nothing below is written with a matrix, a column or a decomposition of the algebra: a state is an element, an operator is an action on it or the gradient, and no array appears.
+
+**The gradient and the d'Alembertian.** Every derivative in this article is the corpus gradient. The conventions are stated once, here, and used without restatement:
+
+$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial Q_\mu},
+\qquad
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial Q_\mu},
+\qquad
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+$$
+
+with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$. Write $\vec\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial Q_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{M}_-$, where $Q_t=ict'$ and $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, the d'Alembertian is $\Box=\Delta-c^{-2}\partial^2/\partial t'^2$.
+
+**Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
+
+$$
+\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2e_t\,\frac{\partial}{\partial Q_t}\,\vec\nabla
+\;\neq\;\Box .
+$$
+
+The quaternion conjugate removes that term, because $\tilde\nabla^{\natural}$ enters with $-\vec\nabla$ and the two mixed terms cancel. The root of $\Box$ inside the algebra is therefore the **pair** $(\tilde\nabla,\tilde\nabla^{\natural})$, never one gradient alone. Consequently the free equation stays first order in one field, $\tilde\nabla\tilde F=0$, and the massive equation needs two fields, the **chiral pair**
+
+$$
+\tilde\nabla\tilde\Psi_R=\mu\tilde\Psi_L,
+\qquad
+\tilde\nabla^{\natural}\tilde\Psi_L=\mu\tilde\Psi_R,
+\qquad
+\mu=\frac{mc}{\hbar},
+$$
+
+in which each member sets the gradient of one chiral half equal to $\mu$ times the other. No single field carries a mass in this algebra, and no display below writes one.
+
+**The pair operator.** The two lines are one operator on $\mathbb{B}\oplus\mathbb{B}$. With $\Psi=(\tilde\Psi_L,\tilde\Psi_R)$ and
+
+$$
+\mathbb{D}\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr),
+\qquad
+\mathbb{D}^2=\Box\,I,
+\qquad
+(\mathbb{D}-\mu)\Psi=0,
+$$
+
+the operator $\mathbb{D}$ is the pair written once. Nothing in it acts on the right: it is built from the two gradients, one in each slot, and nothing else enters.
+
+**The subscript.** Chirality is the subscript: an element is $L$ or $R$, and those are the two values. The letters are the Dirac ones, $L$ for left-handed and $R$ for right-handed, in the sense the corpus already uses for $\tilde\Psi_L$ and $\tilde\Psi_R$. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript belongs to the element, not to a column: a unit, a product and a general element carry it, and a state carries it because a state is an element.
+
+**The two gradings.** Chirality and the frame are different functions of the same state, and the oscillator separates the two. Chirality is the subscript of the previous paragraph. The frame is the action $\beta$ below, which is $+1$ on one part of a state and $-1$ on the other; the mass is diagonal in the frame and off-diagonal in the chirality, and the two labels are not interchangeable. The chiral pair above is the corpus equation for a free mass. The oscillator's substitution is built from $\beta$, so the oscillator is posed in the frame grading, and its pair is the same two-field structure with the mass in the diagonal slot and the derivative in the off-diagonal one. That is the only reason the pair below looks unlike the chiral pair, and it changes no physics: a two-field equation with the mass in one slot and the gradient in the other is the corpus's form of a massive first-order equation.
 
 **Conventions.** The conventions are those of the companion articles — *Algebra and Element Conventions*, *Operator Family Conventions*, *Operator and Calculus Conventions*, *Frame Conventions* — and none is redefined. Two actions are the article's own, written out once,
+
 $$
 \beta:\ Q\longmapsto iQ\vec e_x,\qquad
 \alpha_k:\ Q\longmapsto \vec e_kQ\vec e_z .
 $$
-Both are Hermitian and square to the identity, the mixed products are $\beta\alpha_k:Q\mapsto i\vec e_kQ\vec e_y$ and $\alpha_k\beta:Q\mapsto-i\vec e_kQ\vec e_y$, and $\beta\alpha_k\beta=-\alpha_k$. The Dirac operator $\mathbb{D}$ and its square $\Box$ are the series ones; read on the module, $\mathbb{D}$ is the action
+
+The first is a **single right action**, the right multiplication by the element $i\vec e_x$; the second is a **two-sided action**, with the element $\vec e_k$ on the left and the element $\vec e_z$ on the right. Both are Hermitian and square to the identity, the mixed products are $\beta\alpha_k:Q\mapsto i\vec e_kQ\vec e_y$ and $\alpha_k\beta:Q\mapsto-i\vec e_kQ\vec e_y$, and $\beta\alpha_k\beta=-\alpha_k$. The non-minimal shift of the gradient is written once,
+
 $$
-\mathbb{D}:\ Q\longmapsto-\frac{\partial Q}{\partial x_0}\,\vec e_x-\sum_k\vec e_k\,\frac{\partial Q}{\partial Q_k}\,\vec e_y,
-\qquad x_0=ct',
+\vec\nabla_\pm:=\vec\nabla\pm\frac{m\omega}{\hbar}\,\vec r,
+\qquad
+\vec r=\sum_k\vec e_kQ_k ,
 $$
-and that action is all the body needs of it.
+
+so that $\vec\nabla_-\vec\nabla_+$ and $\vec\nabla_+\vec\nabla_-$ are the two orders of the shifted spatial gradient. That is all the body needs.
 
 ## The Non-Minimal Substitution
 
-Minimal coupling replaces $\vec p$ by $\vec p - q\vec A$; the added term is a vector potential and enters the Hamiltonian through $\boldsymbol\alpha\cdot\vec A$. The oscillator substitution is different in three ways, and each matters.
+Minimal coupling replaces $\vec p$ by $\vec p - q\vec A$; the added term is a vector potential and enters the Hamiltonian through $\sum_k\alpha_kA_k$. The oscillator substitution is different in three ways, and each matters.
 
-**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r)$, which is the action $\alpha_k\beta:Q\mapsto-i\vec e_kQ\vec e_y$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the square is again second order and central except for the spin–orbit term.
+**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with every $\alpha_k$, the product $\beta\alpha_k$, which is the two-sided action $Q\mapsto i\vec e_kQ\vec e_y$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term built on $\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the product of the two first-order operators is again second order and central except for the spin–orbit term.
 
-**The coefficient is imaginary, and the term is Hermitian.** A gauge interaction adds the real, Hermitian $q\vec A$ to $\vec p$; here the coefficient is $i$. In the actions the imaginary coefficient is spent on the action at once, because $\alpha_k\beta$ is the action $Q\mapsto-i\vec e_kQ\vec e_y$ and the two factors of $i$ multiply to $-1$:
+**The coefficient is imaginary, and the term is Hermitian.** A gauge interaction adds the real, Hermitian $q\vec A$ to $\vec p$; here the coefficient is $i$. In the actions the imaginary coefficient is spent on the action at once, because $\alpha_k\beta$ is the two-sided action $Q\mapsto-i\vec e_kQ\vec e_y$ and the two factors of $i$ multiply to $-1$:
 
 $$
-c\,\boldsymbol\alpha\cdot\left(-im\omega\beta\vec r\right)\psi
+c\sum_k\alpha_k\left(-im\omega\beta Q_k\right)\psi
 =-icm\omega\sum_k\alpha_k\beta\,Q_k\,\psi
 =-cm\omega\sum_k \vec e_k\,(Q_k\psi)\,\vec e_y .
 $$
@@ -62,13 +104,27 @@ The coefficient is now real, and the action $Q\mapsto\vec e_kQ\vec e_y$ is Hermi
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining, the spectrum is discrete, and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and the reason the spectrum consists of bound levels with the mass gap at their base.
 
-Applying $\beta/(\hbar c)$ to both sides of the time-dependent equation $H\psi=i\hbar\,\partial \psi/\partial t$ — so that every term is divided by $\hbar$ and the right-hand side becomes $i\beta\,\partial \psi/\partial x_0$ — two collapses do the work. The kinetic term becomes the action $\psi\mapsto\sum_k\vec e_k\,(\partial\psi/\partial Q_k)\,\vec e_y$, because the $i$ of the action, the $i$ of $p_k=-i\hbar\partial/\partial Q_k$ and the $1/\hbar$ multiply to $+1$, and that term is $-\mathbb{D}+i\beta\,\partial/\partial x_0$: its second piece cancels the right-hand side, so the **time** derivative drops out and the spatial part survives as $-\mathbb{D}$. The frame action passing through the substitution changes its sign, $\beta\alpha_k\beta=-\alpha_k$, so $-im\omega\beta\vec r$ becomes $+im\omega\alpha_kQ_k$, and the mass term becomes $mc/\hbar$. What remains is
+**The shift of the gradient.** The substitution is a shift of the spatial part of the gradient and of nothing else, because the momentum operator is the spatial gradient: $p_k=-i\hbar\,\partial/\partial Q_k$ gives
 
 $$
-\left(\mathbb{D} - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\left(\sum_k \vec e_k\,Q_k\,\psi\,\vec e_z\right) .
+\vec p - im\omega\beta\vec r \;=\; -i\hbar\left(\vec\nabla+\frac{m\omega}{\hbar}\,\beta\vec r\right).
 $$
 
-The right-hand side is a spacelike action, linear in the position: the non-minimal term is a position-dependent generator of the odd part, and the action $\alpha_k$ that carries it is Hermitian. This is the form in which the biquaternion interpretation is made below.
+The shift carries $\beta$, and $\beta$ is a right action, so the multiplied position acts first and the element $i\vec e_x$ acts last: the shift is $\frac{m\omega}{\hbar}$ times the action $\psi\mapsto(\vec r\psi)\,i\vec e_x$. On a state that $\beta$ fixes, that is the shift $\vec\nabla\to\vec\nabla_+$; on a state that $\beta$ negates, it is the shift $\vec\nabla\to\vec\nabla_-$. The two signs of one shift are the whole content of the substitution, and they are why the pair below has two lines.
+
+**The pair.** The source's equation acts on one field and carries the mass in the diagonal slot. In the algebra that equation is not one equation but two, because the operator that multiplies the mass, $\beta$, is diagonal in the frame grading while every $\alpha_k$ is off-diagonal in it. Projecting the source's equation on the two frame parts, and using that $\alpha_k$ carries each part into the other, gives the coupled pair
+
+$$
+(E-mc^2)\psi_+ = ic\hbar\,\bigl(\vec\nabla_+\psi_-\bigr)\omega ,
+\qquad
+(E+mc^2)\psi_- = ic\hbar\,\bigl(\vec\nabla_-\psi_+\bigr)\omega ,
+\qquad
+\omega=-\vec e_z ,
+$$
+
+where $\omega$ is the pseudoscalar of the algebra, $\omega^2=-e_t$, an element and not the central unit $i$; the oscillator frequency that multiplies $m$ is a real scalar and shares the letter, and it stands only where $m$ or $\hbar$ stands beside it. The right factor is the one the source's velocity action carries: the two-sided action $\alpha_k$ is the gradient's $k$-th term with $\vec e_z$ on the right, and $\vec e_z=-\omega$. The sign of the shift is the sign of $-\beta$ on the state the line acts on: the line for $\psi_+$ acts on $\psi_-$, where $\beta=-1$, so it carries $\vec\nabla_+$, and the line for $\psi_-$ acts on $\psi_+$, where $\beta=+1$, so it carries $\vec\nabla_-$.
+
+Each right-hand side is the shifted gradient followed by one fixed right factor, the element $\omega$; the position enters the shift, and nothing else in it depends on the position. That is the shape the biquaternion reading below uses.
 
 ## The Frame Split and the Coupled Pair
 
@@ -84,36 +140,36 @@ $$
 \beta\psi_+=\psi_+,\quad \beta\psi_-=-\psi_- .
 $$
 
-The split is read on the element and not chosen in a basis: $\psi_+$ is the part with $\beta=+1$ and $\psi_-$ the part with $\beta=-1$. Since $\beta$ anticommutes with every $\alpha_k$, each velocity action carries $\psi_+$ into the part with $\beta=-1$ and $\psi_-$ into the part with $\beta=+1$; that is why the pair below is coupled, and why no first-order equation survives for one part alone when $m\ne0$.
+The split is read on the element and not chosen in a basis: $\psi_+$ is the part with $\beta=+1$ and $\psi_-$ the part with $\beta=-1$. Since $\beta$ anticommutes with every $\alpha_k$, each velocity action carries $\psi_+$ into the part with $\beta=-1$ and $\psi_-$ into the part with $\beta=+1$; that is why the pair is coupled, and why no first-order equation survives for one part alone when $m\ne0$. The mass is diagonal in the same split, with the value $+mc^2$ on $\psi_+$ and $-mc^2$ on $\psi_-$.
 
-Writing $H\psi=E\psi$ with the Hamiltonian of the introduction and separating the two parts gives the coupled pair
-
-$$
-(E-mc^2)\psi_+ = c\sum_k\alpha_k\,\bigl(p_k+im\omega Q_k\bigr)\psi_- ,
-\qquad
-(E+mc^2)\psi_- = c\sum_k\alpha_k\,\bigl(p_k-im\omega Q_k\bigr)\psi_+ ,
-$$
-
-in which each $\alpha_k$ acts on the element written after it. The two signs are the two values of $\beta$: the added term $-im\omega\beta\vec r$ is $+im\omega\vec r$ on the part with $\beta=-1$ and $-im\omega\vec r$ on the part with $\beta=+1$. The pair is the shape in which the oscillator is normally solved: the two frame parts are coupled by the two conjugate first-order actions, and the coupling has the shape of a minimal coupling with $\pm im\omega\vec r$ in place of $\vec A$. Eliminating $\psi_-$,
+The pair written above is the shape in which the oscillator is normally solved: the two frame parts are coupled by the two shifted gradients and the two conjugate signs of the substitution, and the coupling has the shape of a minimal coupling, with $\pm im\omega\vec r$ standing where the vector potential stands. Eliminating $\psi_-$,
 
 $$
-\psi_- = \frac{c}{E+mc^2}\sum_k\alpha_k\,\bigl(p_k-im\omega Q_k\bigr)\psi_+ ,
+\psi_- = \frac{ic\hbar}{E+mc^2}\,\bigl(\vec\nabla_-\psi_+\bigr)\omega ,
 $$
 
 and substituting into the first line gives the second-order equation for the large part alone:
 
 $$
 \left(E^2 - m^2c^4\right)\psi_+
-= c^2\,\mathcal{Q}_+\mathcal{Q}_-\,\psi_+ ,
+= c^2\mathcal{Q}_+\mathcal{Q}_-\,\psi_+ ,
 \qquad
-\mathcal{Q}_\pm:\ Q\longmapsto\sum_k \vec e_k\,\bigl(p_k\pm im\omega Q_k\bigr)Q\,\vec e_z .
+\mathcal{Q}_\pm:\ \psi\longmapsto i\hbar\,\bigl(\vec\nabla_\mp\psi\bigr)\omega .
 $$
 
-The two first-order actions are conjugate to one another and are built from the same three velocity actions; their product is what the next section evaluates. Everything now rests on that product.
+The two first-order actions are adjoints of one another up to sign, $\mathcal{Q}_+^{\dagger}=-\mathcal{Q}_-$: the adjoint of the shifted gradient $\vec\nabla_-$ is $-\vec\nabla_+$, and $\omega=-\vec e_z$ is anti-Hermitian while the factor $i\hbar$ is Hermitian, so the two signs cancel. Both actions are built from the one gradient, and their product is what the next section evaluates. Everything now rests on that product.
 
 ## The Square of the Coupled Operator
 
-The product is computed from two facts and from no matrix identity: the three velocity actions anticommute, and $[Q_k,p_k]=i\hbar$.
+The product is computed from two facts and from no matrix identity: the multiplication table of the three spatial units, and $[Q_k,p_k]=i\hbar$. The two facts do all the work, and they are the only places where the units and where $\hbar$ enter.
+
+**The product is the shifted gradient twice.** The two first-order actions are $\hbar$ times the shifted spatial gradient, right-multiplied by $\omega$, and $\omega^2=-e_t$. The two right factors therefore collapse to $-e_t$, the overall sign flips, and
+
+$$
+\mathcal{Q}_+\mathcal{Q}_-=\hbar^2\,\vec\nabla_-\,\vec\nabla_+ ,
+$$
+
+a left multiplication by the element-valued differential operator $\hbar^2\vec\nabla_-\vec\nabla_+$. That is the object the whole section evaluates. Its diagonal part is scalar; its off-diagonal part is not, and that is the whole story of the spectrum.
 
 **The diagonal part.** The terms with equal indices are scalar operators, and their sum is
 
@@ -123,26 +179,16 @@ $$
 = \vec p^{\,2} + m^2\omega^2\vec r^{\,2} - 3m\hbar\omega ,
 $$
 
-because $[Q_k,p_k]=i\hbar$ in each of the three spatial directions, the sum of the three gives $3i\hbar$, and $im\omega\,(3i\hbar)=-3m\hbar\omega$ through one more use of $i^2=-1$.
+because $[Q_k,p_k]=i\hbar$ in each of the three spatial directions, the sum of the three gives $3i\hbar$, and $im\omega\,(3i\hbar)=-3m\hbar\omega$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{m^2\omega^2}{\hbar^2}\vec r^{\,2}$, the two derivatives to $-\Delta_Q=\vec p^{\,2}/\hbar^2$, and the cross term of $\partial/\partial Q_k$ with $Q_k$ in each direction gives the commutator, which is where the zero point comes from.
 
-**The cross part.** A term with $j\ne k$ is $\alpha_j\alpha_k$ times a scalar operator. The two actions anticommute, so only the antisymmetric part of the coefficient survives, and it is
+**The cross part.** A term with $j\ne k$ carries the product of two different spatial units, and that product is a unit again, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ with $\epsilon_{xyz}=+1$. The pair of ordered terms with the indices exchanged carries the same unit with the opposite sign, so only the antisymmetric part of the coefficient survives, and it is
 
 $$
 \bigl(p_j+im\omega Q_j\bigr)\bigl(p_k-im\omega Q_k\bigr)-\bigl(p_k+im\omega Q_k\bigr)\bigl(p_j-im\omega Q_j\bigr)
-= 2im\omega\bigl(Q_jp_k-Q_kp_j\bigr) = 2im\omega\,L_l^{\mathrm{orb}}
+= 2im\omega\bigl(Q_jp_k-Q_kp_j\bigr) = 2im\omega\sum_l\epsilon_{jkl}L_l^{\mathrm{orb}}
 $$
 
-on the cyclic index $l$. The composition of two velocity actions is a left multiplication by a unit,
-
-$$
-\alpha_x\alpha_y:\ Q\longmapsto-\vec e_zQ,
-\qquad
-\alpha_y\alpha_z:\ Q\longmapsto-\vec e_xQ,
-\qquad
-\alpha_z\alpha_x:\ Q\longmapsto-\vec e_yQ ,
-$$
-
-so the whole cross part is one action: the coefficient $2im\omega L_l^{\mathrm{orb}}$, the minus of the left multiplication and the unit give
+with $L_l^{\mathrm{orb}}=\sum_{a,b}\epsilon_{lab}Q_ap_b$ the orbital angular momentum. Summing over the ordered pairs, the unit $\vec e_l$ and the cyclic factor give
 
 $$
 Q\longmapsto -2m\omega\sum_k L_k^{\mathrm{orb}}\,i\vec e_kQ .
@@ -157,7 +203,11 @@ $$
 
 where the last term is the left multiplication by $i\vec e_k$ with the scalar $L_k^{\mathrm{orb}}$ in front of it, and the second-order equation of the last section reads $(E^2-m^2c^4)\psi_+=c^2\mathcal{Q}_+\mathcal{Q}_-\psi_+$.
 
-This is the load-bearing equation of the article. It was checked by exact differentiation on generic polynomial states of total degree at most two, with random complex coefficients: both sides were evaluated on the same state and the residual was zero, not merely small, because the differentiation of a polynomial is exact and no truncation enters. The commutator $[Q_k,p_k]=i\hbar$, which a truncated basis realises only in its bulk, is here an identity at every order, and it is the only place where $\hbar$ enters the square.
+**Why the product is not the d'Alembertian.** The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla\tilde\nabla^{\natural}=\Box$. They reduce instead to two remainders: the commutator $[Q_k,p_k]$, which is central and produces $-3m\hbar\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.
+
+**The two orders differ.** $\vec\nabla_+\vec\nabla_-$ is not $\vec\nabla_-\vec\nabla_+$, and the difference is in two places. The cross term of $\partial/\partial Q_k$ with $Q_k$ changes sign with the order, so the constant changes sign: the order $\vec\nabla_+\vec\nabla_-$ gives $+3m\hbar\omega$ where the boxed identity has $-3m\hbar\omega$. The antisymmetric part of the coefficient changes sign with the order as well, so the spin–orbit term changes sign too. The two orders are therefore not related by an overall sign, and the boxed identity belongs to the order $\vec\nabla_-\vec\nabla_+$ alone. That is the order in which the substitution appears, the outer shift being the one carried by the line for $\psi_+$; its partner, $\hbar^2\vec\nabla_+\vec\nabla_-$, is the operator of the other supersymmetric member and carries $+3m\hbar\omega$ and $+2m\omega S$.
+
+This is the load-bearing equation of the article. It was checked by exact differentiation on generic polynomial states of total degree at most three, with random complex coefficients: both sides were evaluated on the same state and the residual was zero, not merely small, because the differentiation of a polynomial is exact and no truncation enters. On that class of states the identity holds term by term, with integer coefficients on both sides. The commutator $[Q_k,p_k]=i\hbar$, which a truncated basis realises only in its bulk, is here an identity at every order, and it is the only place where $\hbar$ enters the product.
 
 The right-hand side separates into three pieces. The first two terms are the **three-dimensional isotropic oscillator** in operator form,
 
@@ -174,7 +224,7 @@ S^2=\sum_k\bigl(L_k^{\mathrm{orb}}\bigr)^2+\sum_{j<k}\bigl[L_j^{\mathrm{orb}},L_
 = \vec L^{\,2}-\hbar S ,
 $$
 
-where $[L_j^{\mathrm{orb}},L_k^{\mathrm{orb}}]=i\hbar\epsilon_{jkl}L_l^{\mathrm{orb}}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\hbar l$ and $-\hbar(l+1)$, the two roots of $\lambda^2=\hbar^2l(l+1)-\hbar\lambda$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum.
+where $[L_j^{\mathrm{orb}},L_k^{\mathrm{orb}}]=i\hbar\epsilon_{jkl}L_l^{\mathrm{orb}}$. On a state of orbital number $l$ the operator $S$ therefore takes the two values $\hbar l$ and $-\hbar(l+1)$, the two roots of $\lambda^2=\hbar^2l(l+1)-\hbar\lambda$, and nothing else. The spin–orbit coupling is a two-valued operator, and that is the whole of its spectrum. The identity $S^2=\vec L^{\,2}-\hbar S$ was checked on generic polynomial states at residual zero.
 
 ## The Spectrum
 
@@ -216,18 +266,26 @@ The structure agrees with the published two-branch spectra obtained by solving t
 
 ## The One-Dimensional Case
 
-The one-dimensional oscillator shows the mechanism without the spin–orbit bookkeeping. With a single coordinate $Q$, the single velocity action $\alpha:Q\mapsto\vec e_xQ\vec e_z$, and the substitution $p \to p - im\omega\beta Q$, the pair reduces to
+The one-dimensional oscillator shows the mechanism without the spin–orbit bookkeeping. With a single coordinate $Q$, the single two-sided action $\alpha:Q\mapsto\vec e_xQ\vec e_z$, the single shift $\vec e_x(\partial/\partial Q\pm\frac{m\omega}{\hbar}Q)$ and the substitution $p \to p - im\omega\beta Q$, the pair reduces to
 
 $$
-(E-mc^2)\psi_+ = c\,\alpha\,\bigl(p + im\omega Q\bigr)\psi_-,
+(E-mc^2)\psi_+ = ic\hbar\,\bigl(\partial/\partial Q+\tfrac{m\omega}{\hbar}Q\bigr)\psi_-\,\omega,
 \qquad
-(E+mc^2)\psi_- = c\,\alpha\,\bigl(p - im\omega Q\bigr)\psi_+ ,
+(E+mc^2)\psi_- = ic\hbar\,\bigl(\partial/\partial Q-\tfrac{m\omega}{\hbar}Q\bigr)\psi_+\,\omega ,
 $$
 
-and the product of the two first-order operators is now a scalar, because $\alpha^2$ is the identity:
+and the product of the two first-order operators is now a single element times a scalar operator, because $\omega^2=-e_t$ and there is no second spatial unit to carry a remainder:
 
 $$
-\bigl(p + im\omega Q\bigr)\bigl(p - im\omega Q\bigr)
+\hbar^2\Bigl(\frac{\partial}{\partial Q}-\frac{m\omega}{\hbar}Q\Bigr)\Bigl(\frac{\partial}{\partial Q}+\frac{m\omega}{\hbar}Q\Bigr)
+= -\bigl(p^2 + m^2\omega^2Q^2 - m\hbar\omega\bigr).
+$$
+
+The leading minus is not a convention. The two shifts are vector shifts, so the product carries the factor $\vec e_x\vec e_x=-e_t$, and the element product is
+
+$$
+\mathcal{Q}_+\mathcal{Q}_-
+= \hbar^2\vec e_x\Bigl(\frac{\partial}{\partial Q}-\frac{m\omega}{\hbar}Q\Bigr)\vec e_x\Bigl(\frac{\partial}{\partial Q}+\frac{m\omega}{\hbar}Q\Bigr)
 = p^2 + m^2\omega^2Q^2 - m\hbar\omega .
 $$
 
@@ -237,7 +295,7 @@ $$
 \boxed{\;E^2 = m^2c^4 + 2m\hbar\omega c^2\,n, \qquad n = 0,1,2,\dots\;}
 $$
 
-The spectrum is a single tower in $n$, and the ground state sits at $E = \pm mc^2$, as in the three-dimensional aligned branch but without the orbital multiplicity. The one-dimensional result is the cleanest check that the constant $-m\hbar\omega$ (which becomes $-3m\hbar\omega$ in three dimensions) is not a convention but a consequence of the commutator $[Q,p] = i\hbar$; the zero-point cancellation that produces the $E \propto n$ spectrum is the same mechanism in both cases.
+The spectrum is a single tower in $n$, and the ground state sits at $E = \pm mc^2$, as in the three-dimensional aligned branch but without the orbital multiplicity. The one-dimensional result is the cleanest check that the constant $-m\hbar\omega$ (which becomes $-3m\hbar\omega$ in three dimensions) is not a convention but a consequence of the commutator $[Q,p] = i\hbar$; the zero-point cancellation that produces the $E \propto n$ spectrum is the same mechanism in both cases. Both one-dimensional identities were checked on the monomials $Q^n$, $n=0,\dots,5$, at residual $0$: the scalar product gives the negated bracket, and the element product, which carries $\vec e_x\vec e_x=-e_t$, gives the bracket itself.
 
 ## The Non-Relativistic Limit and the Pseudo-Oscillator
 
@@ -258,13 +316,13 @@ $$
 
 which reproduces the two branches of the spectrum in the non-relativistic regime. Treating the spin–orbit term as a small perturbation of the non-relativistic oscillator is not legitimate: it is the same order as the level spacing, and it changes the degeneracy pattern. The non-relativistic limit of the Dirac oscillator is the oscillator **with a spin–orbit coupling of order $\omega$**, not the pure oscillator.
 
-The comparison isolates where the relativistic content lives. In the free theory the spin–orbit coupling is a $1/c^2$ correction, because it comes from the elimination of the small part; in the oscillator it is present at leading order, because the confining substitution is itself linear in the position and frame-odd. The biquaternion framework reads this as the statement that the substitution shifts the **odd** part of the operator, and the odd part is precisely what the square converts into an even operator with a spin–orbit component.
+The comparison isolates where the relativistic content lives. In the free theory the spin–orbit coupling is a $1/c^2$ correction, because it comes from the elimination of the small part; in the oscillator it is present at leading order, because the confining substitution is itself linear in the position and frame-odd. The biquaternion framework reads this as the statement that the substitution shifts the **odd** part of the operator, and the odd part is precisely what the product converts into an even operator with a spin–orbit component.
 
 ## The Biquaternion Reading
 
 Three structural statements can now be made in the algebra.
 
-**The substitution is a shift of the odd part.** The gradient $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$ has a frame-even part ($e_t\,\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial Q_k$, the spacelike directions). What the substitution adds to the operator is the action $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, and that action is frame-odd: it anticommutes with $\beta$, and it is linear in the position. Squaring the two conjugate first-order actions returns a second-order operator that is central except for one remainder: the pieces built from the two conjugate gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
+**The substitution is a shift of the odd part.** The gradient $\tilde\nabla=e_t\,\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$ has a frame-even part ($e_t\,\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial Q_k$, the spacelike directions). What the substitution adds to the operator is the action $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
 
 $$
 -2m\omega\,S=-2m\omega\sum_k L_k^{\mathrm{orb}}\,i\vec e_k
@@ -274,124 +332,32 @@ $$
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k ,
 $$
 
-a Hermitian element of $\mathbb{M}_+$: $i\vec e_k$ is Hermitian, $L_k^{\mathrm{orb}}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_k^{\mathrm{orb}}$, and the coupling is their contraction, which is the operator $\sum_kL_k^{\mathrm{orb}}\tilde S_k$ of the hydrogen article up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the square.
+a Hermitian element of $\mathbb{M}_+$: $i\vec e_k$ is Hermitian, $L_k^{\mathrm{orb}}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_k^{\mathrm{orb}}$, and the coupling is their contraction, which is the operator $\sum_kL_k^{\mathrm{orb}}\tilde S_k$ of the hydrogen article up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
 
 **The zero point is a commutator.** The constant $-3m\hbar\omega$ comes from the commutator of position and momentum. The shift carries $\vec e_k\,(Q_k\psi)\,\vec e_y$ against the momentum $p_k$, and the two do not commute: their commutator is the central scalar $[Q_k,p_k]=i\hbar$, and the sum over the three directions is $3i\hbar$. The factor $im\omega$ of the substitution turns it into $-3m\hbar\omega$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
 
-**The zero modes are supersymmetric.** The operator identity has the form of a factorisation, $\mathcal{Q}_+\mathcal{Q}_-$ with the conjugate pair of *The Square of the Coupled Operator*. The aligned states with $n_r=0$ are exactly the **zero modes** $\mathcal{Q}_-\psi_+=0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q}_-,\mathcal{Q}_+)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}_+\mathcal{Q}_-$ and $\mathcal{Q}_-\mathcal{Q}_+$ are partner Hamiltonians, and the zero modes of one are the states the supersymmetry relates. That this supersymmetry is present, and hidden in the Dirac equation rather than imposed, is the content of the Benítez–Salas-Brito solution listed in the Further Reading. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
-
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
-$$
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, and $Q_L$ is its $-1$ part in every display; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
-
-**The two Dirac equations.** In this reading the module equation is the Dirac equation. The cells give
-
-$$
-\mathbb{D}=i\sum_{\mu=0}^{3}\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu},
-\qquad x_\mu=(ct',Q_x,Q_y,Q_z),
-$$
-
-a plain sum over the four directions: the minus signs of the three spatial cells do the work the metric would do, and the square is $\Box$ because $\gamma_0[\mathbb{M}_-]^2=I_4$ and $\gamma_k[\mathbb{M}_-]^2=-I_4$. With the projectors
-
-$$
-P_R=\tfrac12(I_4+\gamma_5),\qquad P_L=\tfrac12(I_4-\gamma_5),
-$$
-
-and $\psi_R=P_R\psi$, $\psi_L=P_L\psi$, the equation $(\mathbb{D}-mc/\hbar)\psi=0$ splits into the two lines
-
-$$
-\mathbb{D}\psi_R=\frac{mc}{\hbar}\psi_L,\qquad
-\mathbb{D}\psi_L=\frac{mc}{\hbar}\psi_R .
-$$
-
-$\mathbb{D}$ anticommutes with $\gamma_5$, so it carries each chirality into the other, and the mass couples the two lines; at $m=0$ each line stands alone. The two lines have the shape of the algebra pair, and the difference between the formulations sits in the operator. The algebra needs the conjugate $\tilde{\nabla}^{\natural}$ for its second line, because the quaternion conjugate is what reverses the spacelike directions. On the module the **same** cell operator serves both lines, and what swaps the chiralities is the anticommutation: chirality there is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, a pure right multiplication, and in the algebra the same chirality is written centrally as the sign $\chi$; the cell is the representative of that sign on the module, while the split into the two Peirce copies is neither.
-
-**The oscillator in the $\gamma$ reading.** The frame cell is $\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and the velocity cells are $\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, so $\beta=\gamma_0[\mathbb{M}_-]$, $\alpha_k=\gamma_0[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]$, and
-
-$$
-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\gamma_k[\mathbb{M}_-] .
-$$
-
-In the axis-free display:
-
-$$
-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-i\gamma_k[\mathbb{M}_-] .
-$$
-
-The added term of the substitution, with its explicit $i$ as in the introduction, therefore reads
-
-$$
--icm\omega\sum_k\alpha_k\beta\,x_k=+icm\omega\sum_k\gamma_k[\mathbb{M}_-]x_k ,
-$$
-
-because $\alpha_k\beta=-\gamma_k[\mathbb{M}_-]$ and the two factors of $i$ give $-1$. The $i$ has not disappeared here: it has moved from the coefficient onto the matrix, and it is needed there, since $\gamma_k[\mathbb{M}_-]$ is anti-Hermitian while $i\gamma_k[\mathbb{M}_-]$ is Hermitian. In the cells the same term is $-cm\omega\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}x_k$, with a real coefficient and a Hermitian cell, which is why the body writes it that way.
-
-**What the frame cell is not.** $\gamma_0[\mathbb{M}_-]=\beta=iR_{\vec e_x}^{\mathrm{pau}}$ is the frame cell and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell; the two anticommute. The mass term $\beta mc^2$ is diagonal in the frame grading and off-diagonal in the chirality grading: the Foldy–Wouthuysen transformation can diagonalise it in the frame grading, but no chirality projection can, and the mass is not a chirality.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The zero modes are supersymmetric.** The operator identity has the form of a factorisation, $\mathcal{Q}_+\mathcal{Q}_-$ with the conjugate pair of *The Square of the Coupled Operator*. The aligned states with $n_r=0$ are exactly the **zero modes** $\mathcal{Q}_-\psi_+=0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q}_-,\mathcal{Q}_+)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}_+\mathcal{Q}_-$ and $\mathcal{Q}_-\mathcal{Q}_+$ are partner Hamiltonians, and the zero modes of one are the states the supersymmetry relates. That this supersymmetry is present, and hidden in the Dirac equation rather than imposed, is the content of the Benítez–Salas-Brito solution listed in the Further Reading. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, frame-projected forms; what is common to both is that the product of a first-order operator with its conjugate partner is a second-order operator whose zero modes carry the structure.
 
 ## Summary
 
-The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. A state is an element $\psi$ of $\mathbb{B}$, the frame action $\beta$ splits it uniquely into $\psi_+$ and $\psi_-$, and the equation reduces to the coupled pair
+The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. A state is an element $\psi$ of $\mathbb{B}$, the frame action $\beta$ splits it uniquely into $\psi_+$ and $\psi_-$, and the equation is the pair
 
 $$
-(E-mc^2)\psi_+ = c\sum_k\alpha_k\bigl(p_k+im\omega Q_k\bigr)\psi_-,
+(E-mc^2)\psi_+ = ic\hbar\,\bigl(\vec\nabla_+\psi_-\bigr)\omega,
 \qquad
-(E+mc^2)\psi_- = c\sum_k\alpha_k\bigl(p_k-im\omega Q_k\bigr)\psi_+ .
+(E+mc^2)\psi_- = ic\hbar\,\bigl(\vec\nabla_-\psi_+\bigr)\omega,
+\qquad
+\omega=-\vec e_z .
 $$
 
-Eliminating $\psi_-$ and using the anticommutation of the velocity actions together with $[Q_k,p_k]=i\hbar$ gives the exact operator identity, with $\mathcal{Q}_\pm$ the conjugate pair of *The Square of the Coupled Operator*,
+Eliminating $\psi_-$ and multiplying the two shifted gradients, with the multiplication table of the three spatial units together with $[Q_k,p_k]=i\hbar$, gives the exact operator identity, with $\mathcal{Q}_\pm$ the conjugate pair of *The Square of the Coupled Operator*,
 
 $$
 \boxed{\;\mathcal{Q}_+\mathcal{Q}_-
 = \vec p^{\,2} + m^2\omega^2\vec r^{\,2} - 3m\hbar\omega - 2m\omega\sum_k L_k^{\mathrm{orb}}\,i\vec e_k\;}
 $$
 
-checked by exact differentiation on generic polynomial states, with zero residual. The right-hand side is the three-dimensional oscillator with its zero point removed, plus a spin–orbit coupling of order $\omega$; the coupling is the element $S=\sum_k L_k^{\mathrm{orb}}i\vec e_k$, which takes the two values $\hbar l$ and $-\hbar(l+1)$ because $S^2=\vec L^{\,2}-\hbar S$. The spectrum is
+checked by exact differentiation on generic polynomial states, with residual zero. The right-hand side is the three-dimensional oscillator with its zero point removed, plus a spin–orbit coupling of order $\omega$; the coupling is the element $S=\sum_k L_k^{\mathrm{orb}}i\vec e_k$, which takes the two values $\hbar l$ and $-\hbar(l+1)$ because $S^2=\vec L^{\,2}-\hbar S$. The spectrum is
 
 $$
 E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \mathcal S\right)
@@ -404,7 +370,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 + 2m\hbar\omega c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The square is central except for the Hermitian remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}i\vec e_k$, which in the elements is $-\frac{4m\omega}{\hbar}\sum_k(L_k^{\mathrm{orb}}e_t)\tilde S_k$. The zero-point cancellation is the trace of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. The article uses the two-sided module equation throughout; the gammas, the two chiral parts and the arrays of the two Dirac equations appear only in *The Legacy Pauli Gamma Formulation*, and no display of the body needs one.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\psi\mapsto-cm\omega\sum_k\vec e_k\,(Q_k\psi)\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}i\vec e_k$, which in the elements is $-\frac{4m\omega}{\hbar}\sum_k(L_k^{\mathrm{orb}}e_t)\tilde S_k$. The zero-point cancellation is the sum of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator.
 
 ## Summary of Notation
 
@@ -412,18 +378,26 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian (informational) sector |
+| $\mathbb{M}_-$ | Material sector, with $Q_t=ict'$ and $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ |
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$, $\vec e_y\vec e_x = -\vec e_z$ |
+| $\tilde\nabla$ | The corpus gradient, $e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ |
+| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
+| $\Box = \tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial Q_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{M}_-$, $\Delta-c^{-2}\partial^2/\partial t'^2$ |
+| $\vec\nabla = \sum_k\vec e_k\,\partial/\partial Q_k$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
+| $\vec\nabla_\pm = \vec\nabla\pm\frac{m\omega}{\hbar}\vec r$ | The two non-minimal shifts of the spatial gradient |
+| $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |
 | $Q\mapsto aQb$ | Action on a state; the two-sided multiplication, written out |
-| $\beta:\ Q\mapsto iQ\vec e_x$ | Frame action of this article; $\beta^2=\mathrm I$ |
-| $\alpha_k:\ Q\mapsto \vec e_kQ\vec e_z$ | Velocity actions; Hermitian, $\alpha_k^2=\mathrm I$ |
+| $\beta:\ Q\mapsto iQ\vec e_x$ | Frame action; the single right action by $i\vec e_x$; $\beta^2=\mathrm I$ |
+| $\alpha_k:\ Q\mapsto \vec e_kQ\vec e_z$ | Velocity actions; two-sided, with the elements $\vec e_k$ and $\vec e_z$; Hermitian, $\alpha_k^2=\mathrm I$ |
 | $\beta\alpha_k:\ Q\mapsto i\vec e_kQ\vec e_y$, $\alpha_k\beta:\ Q\mapsto-i\vec e_kQ\vec e_y$ | The two mixed products; $\beta\alpha_k\beta=-\alpha_k$ |
 | $Q_L$, $Q_R$ | Chirality: the two values of the subscript, left-handed and right-handed |
-| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the frame |
-| $H = c\,\boldsymbol\alpha\cdot(\vec p-im\omega\beta\vec r) + \beta mc^2$ | Dirac-oscillator Hamiltonian |
-| $\vec p - im\omega\beta\vec r$ | Non-minimal substitution (frame-odd shift) |
-| $\mathbb{D}$ | The two-sided Dirac operator of the series; $\mathbb{D}^2=\Box$ |
+| $H = c\sum_k\alpha_k(p_k-im\omega\beta Q_k) + \beta mc^2$ | Dirac-oscillator Hamiltonian, the source's equation |
+| $p_k=-i\hbar\,\partial/\partial Q_k$, $\vec p=\sum_k\vec e_kp_k$ | Corpus momentum operator, the spatial gradient in disguise |
+| $\vec p - im\omega\beta\vec r$ | Non-minimal substitution, the frame-odd shift |
+| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$; $\mathbb{D}^2=\Box I$ |
+| $\tilde\nabla\tilde\Psi_R=\mu\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=\mu\tilde\Psi_R$ | The chiral pair, $\mu=mc/\hbar$ |
 | $\psi_+$, $\psi_-$ | The two frame parts, $\beta\psi_\pm=\pm\psi_\pm$; large and small |
-| $\mathcal{Q}_\pm:\ Q\mapsto\sum_k\vec e_k(p_k\pm im\omega Q_k)Q\vec e_z$ | Factorised conjugate actions |
+| $\mathcal{Q}_\pm:\ \psi\mapsto i\hbar(\vec\nabla_\mp\psi)\omega$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\hbar^2\vec\nabla_-\vec\nabla_+$ |
 | $\mathcal{Q}_+\mathcal{Q}_- = \vec p^{\,2}+m^2\omega^2\vec r^{\,2}-3m\hbar\omega-2m\omega S$ | Operator identity |
 | $S = \sum_k L_k^{\mathrm{orb}}\,i\vec e_k$ | Spin–orbit element, Hermitian; $S^2=\vec L^{\,2}-\hbar S$ |
 | $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde S_{\mathrm{tot},k}=L_k^{\mathrm{orb}}e_t+\tilde S_k$ | Spin and total angular momentum elements |
@@ -434,16 +408,13 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $E^2 = m^2c^4+4m\hbar\omega c^2 n_r$ ($s_{\mathrm{tot}}=l+\tfrac12$) | Aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2(2n_r+2l+1)$ ($s_{\mathrm{tot}}=l-\tfrac12$) | Anti-aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2 n$ | One-dimensional spectrum |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (the one-sided algebra equation) |
-| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - M. Moshinsky and A. Szczepaniak, "The Dirac oscillator," *Journal of Physics A: Mathematical and General* **22** (1989) L817–L819, for the original non-minimal substitution and the exact solution.
 - M. Moshinsky and Yu. F. Smirnov, *The Harmonic Oscillator in Modern Physics* (Harwood, 1996), for the oscillator algebra, the pseudo-oscillator, and the relativistic realisation.
 - A. D. Alhaidari, "The Dirac-oscillator Green's function," *International Journal of Theoretical Physics* **43** (2004) 939–946, for the two-branch energy spectrum obtained from the Green's-function poles.
-- J. Benítez, R. P. Martínez y Romero, H. N. Núñez-Yépez and A. L. Salas-Brito, "Solution and hidden supersymmetry of a Dirac oscillator," *Physical Review Letters* **64** (1990) 1643–1645 (erratum **65** (1990) 2085), for the hidden supersymmetry that the zero-mode discussion below reproduces.
+- J. Benítez, R. P. Martínez y Romero, H. N. Núñez-Yépez and A. L. Salas-Brito, "Solution and hidden supersymmetry of a Dirac oscillator," *Physical Review Letters* **64** (1990) 1643–1645 (erratum **65** (1990) 2085), for the hidden supersymmetry that the zero-mode discussion reproduces.
 - R. Szmytkowski and M. Gruchowski, "Completeness of the Dirac oscillator eigenfunctions," *Journal of Physics A: Mathematical and General* **34** (2001) 4991–4997, for the completeness of the two-branch eigenfunctions.
 - P. Strange and L. H. Ryder, "The Dirac oscillator in a rotating frame of reference," *Physics Letters A* **380** (2016) 3465–3468, for the oscillator in a non-inertial setting and the subtleties the rotation introduces.
 - F. Domínguez-Adame and M. A. González, "Solvable linear potentials in the Dirac equation," *Europhysics Letters* **13** (1990) 193–198, for the linear — oscillator — potential solved in reduced dimensions.

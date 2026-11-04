@@ -386,31 +386,31 @@ What the algebra does supply is the location of the two terms: the convection te
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 This section, and only this section, names the generator cells and the chirality cell by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the cell spelling.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-These are the cells of the conventions under their usual names: $\gamma_\mu[\mathbb{M}_-]$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]\nabla_\mu\psi=m\psi$, and the current $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu[\mathbb{M}_-]\psi$ with $\psi^\dagger\gamma_0[\mathbb{M}_-]$. The mixed products of the proof are $\gamma_\mu[\mathbb{M}_-] L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}\gamma_\mu[\mathbb{M}_-]=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu[\mathbb{M}_-]\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}R_{\vec e_z}^{\mathrm{pau}}$.
+These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\psi=m\psi$, and the current $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu\psi$ with $\psi^\dagger\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}R_{\vec e_z}^{\mathrm{pau}}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

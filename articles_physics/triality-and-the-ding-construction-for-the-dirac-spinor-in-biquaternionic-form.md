@@ -212,25 +212,25 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and in the cell notation they are the four generator cells with a name:
 
 $$
-\gamma_\mu[\mathbb{M}_-] = C_\mu, \qquad
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_\mu = C_\mu, \qquad
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_\mu[\mathbb{M}_-] = C_\mu, \qquad
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_\mu = C_\mu, \qquad
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\psi=c\psi d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-The frame obeys the anticommutation relations $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\} = 2\varepsilon_\mu\delta_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\} = 0$, with $\gamma_5 = i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The frame obeys the anticommutation relations $\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

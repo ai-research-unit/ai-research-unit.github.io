@@ -251,23 +251,23 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
-The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the cells that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu[\mathbb{M}_-]$.
+The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the cells that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
-**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, and $\gamma_5$ is the chirality cell:
+**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The generator of the charged current of this article is $\gamma_\mu[\mathbb{M}_-]$ in these names, and the label $L$ of the body is what the older notation writes with the projector $P_L$; that projector is a named object of the older notation, and it needs no formula here.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The generator of the charged current of this article is $\gamma_\mu$ in these names, and the label $L$ of the body is what the older notation writes with the projector $P_L$; that projector is a named object of the older notation, and it needs no formula here.
 
 **The squares.** Every square is a cell square, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the only sources of a sign are $i^2=-1$ and the squares of the imaginary units, $\vec e_k^2=-e_t$ and $e_t^2=e_t$:
 
@@ -282,63 +282,63 @@ $$
 $$
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t^2}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=(-1)(-I_4)=I_4,\qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(+I_4)=-I_4 ,
+\gamma_0^2=i^2L_{e_t^2}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=(-1)(-I_4)=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(+I_4)=-I_4 ,
 $$
 
 Read in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t^2}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=(-1)(-I_4)=I_4,\qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)(+I_4)=-I_4 ,
+\gamma_0^2=i^2L_{e_t^2}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=(-1)(-I_4)=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)(+I_4)=-I_4 ,
 $$
 
-so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0[\mathbb{M}_-]$ against two for $\gamma_k[\mathbb{M}_-]$: two minus signs give $(\gamma_0[\mathbb{M}_-])^2=+I_4$, three give $(\gamma_k[\mathbb{M}_-])^2=-I_4$.
+so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0$ against two for $\gamma_k$: two minus signs give $(\gamma_0)^2=+I_4$, three give $(\gamma_k)^2=-I_4$.
 
 **The fifth generator and the central sign.** $\gamma_5$ is the older notation's name for the fifth generator, the one it calls the chirality cell, and the label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde\Xi_{\mathrm{ad}}$ of *Special Element Conventions*, §*The Root Convention*, is a different object; its representative on the array is $\gamma_5$.
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0 ,
+\{\gamma_\mu,\gamma_5\}=0 ,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]] .
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d] .
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-**The four contraction sums.** They hold in the frame they are written in, because a cell's square is frame-dependent. In the Euclidean frame, where every gamma squares to $+I_4$, they are
+**The four contraction sums.** With the index $\mu$ summed over the frame and the summed index raised by $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are, for $A$ a product of $n$ distinct generators,
 
 $$
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,
+\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
 \qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\gamma[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\gamma[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}] .
+\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A .
 $$
 
-These are not transportable term by term to the $\mathbb{M}_-$ frame, because the sum runs over index values and the metric is in the terms. With every index low, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=+4\gamma_0[\mathbb{M}_-]$, and the spatial sums vanish, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=0$.
+The metric sits in the raised index and nowhere else. With every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spatial sums vanish, $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$.
 
-**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu[\mathbb{M}_-]$, the six $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu[\mathbb{M}_-]$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen cells $L_aR_b$, whose product is again a cell, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality cell is not among the products with real coefficients:
+**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu$, the six $\gamma_\mu\gamma_\nu$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen cells $L_aR_b$, whose product is again a cell, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality cell is not among the products with real coefficients:
 
 $$
-\gamma_5=i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] ,
+\gamma_5=i\,\gamma_0\gamma_1\gamma_2\gamma_3 ,
 $$
 
-so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu[\mathbb{M}_-]$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.
+so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -357,7 +357,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\psi_{t,a}\in\mathbb{B}$ | The field of type $t$ and generation $a$; an element of the algebra |
 | $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ | The generator of the coordinate $x_\mu$, written as the action it is |
 | $\psi_L$, $\psi_R$ | The two parts of an element, by the label $L$ or $R$ |
-| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5$ | The generators under their older names (closing section only) |
+| $\gamma_\mu$, $\gamma_5$ | The generators under their older names (closing section only) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $V\in \mathrm{U}(N_g)$, $V_{ab}$ | The CKM matrix, multiplying the generation label |
 | $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ | Up- and down-type mass matrices on $\mathcal{F}$ |

@@ -174,27 +174,27 @@ up to the scalar $i$; its even part is the complexified even Clifford algebra $M
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
-with $\gamma_\mu[\mathbb{M}_-]=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
+with $\gamma_\mu=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
 
 The grade table in the gamma basis is
 $$
 \begin{array}{c|cccc}
  & t & x & y & z\\ \hline
-t & I & -i\gamma_0[\mathbb{M}_-] & i\gamma_{123}[\mathbb{M}_-] & i\gamma_5\\
-x & \gamma_{23}[\mathbb{M}_-] & -i\gamma_{023}[\mathbb{M}_-] & -i\gamma_1[\mathbb{M}_-] & \gamma_{01}[\mathbb{M}_-]\\
-y & -\gamma_{13}[\mathbb{M}_-] & i\gamma_{013}[\mathbb{M}_-] & -i\gamma_2[\mathbb{M}_-] & \gamma_{02}[\mathbb{M}_-]\\
-z & \gamma_{12}[\mathbb{M}_-] & -i\gamma_{012}[\mathbb{M}_-] & -i\gamma_3[\mathbb{M}_-] & \gamma_{03}[\mathbb{M}_-]
+t & I & -i\gamma_0 & i\gamma_{123} & i\gamma_5\\
+x & \gamma_{23} & -i\gamma_{023} & -i\gamma_1 & \gamma_{01}\\
+y & -\gamma_{13} & i\gamma_{013} & -i\gamma_2 & \gamma_{02}\\
+z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
 \end{array}
 $$
-with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, $\vec e_y\mapsto\gamma_3[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$, $\vec e_z\mapsto\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ and $i\mapsto i\gamma_5$.
+with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
 
 Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

@@ -143,17 +143,17 @@ The first summand is the operators self-adjoint for the form, the second those s
 
 **The six-dimensional summand.** $\Lambda^2V$, of dimension six, is the space spanned by the commutators $[L_a,R_b]=L_aR_b-L_bR_a$, and it is closed under the commutator: it is the orthogonal Lie algebra of the trace form, of the dimension of $\mathfrak{so}(4,\mathbb{C})$, and it is a canonical object of the unpolarized module.
 
-**It is not the span of the bivectors.** The span of the six Lorentz bivectors $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ of the gamma frame is also six-dimensional and also closed under the commutator, and the two spaces must not be identified. No bivector is skew for the trace form: the two spaces meet only in $0$ and together span twelve dimensions. The Lorentz generators of the frame are cells, not skew-adjoint operators, and the passage from one space to the other is not a change of basis.
+**It is not the span of the bivectors.** The span of the six Lorentz bivectors $\gamma_\mu\gamma_\nu$ of the gamma frame is also six-dimensional and also closed under the commutator, and the two spaces must not be identified. No bivector is skew for the trace form: the two spaces meet only in $0$ and together span twelve dimensions. The Lorentz generators of the frame are cells, not skew-adjoint operators, and the passage from one space to the other is not a change of basis.
 
 **Why that comparison is invariant.** The two spaces being compared are not of the same kind, and the comparison is nevertheless stable. A unit $\tilde S$ conjugates every cell, hence carries the bivector span of the frame to the bivector span of the conjugated frame, and the same conjugation preserves the trace form, so it leaves $\Lambda^2V$ fixed. The intersection therefore stays $0$ under the whole unit group: the statement is invariant under the changes of frame the algebra itself performs, and it is not a statement about one display. A general change of basis is a different matter, and an empty one, because it destroys the notion of bivector: only the frames attached to the algebra have bivectors to compare.
 
 **The lesson the corpus should draw.** The comparison has a grade content, and it is the sharpest form of the observation that the two sides carry different kinds of object. Read in the gamma frame, the left multipliers are
 $$
-L_{\vec e_t}=1,\qquad L_{\vec e_x}=\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],\qquad L_{\vec e_y}=-\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],\qquad L_{\vec e_z}=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-],
+L_{\vec e_t}=1,\qquad L_{\vec e_x}=\gamma_2\gamma_3,\qquad L_{\vec e_y}=-\gamma_1\gamma_3,\qquad L_{\vec e_z}=\gamma_1\gamma_2,
 $$
 all of them even, and the right ones are
 $$
-R_{\vec e_t}=1,\qquad R_{\vec e_x}=-i\gamma_0[\mathbb{M}_-],\qquad R_{\vec e_y}=i\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],\qquad R_{\vec e_z}=-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],
+R_{\vec e_t}=1,\qquad R_{\vec e_x}=-i\gamma_0,\qquad R_{\vec e_y}=i\gamma_1\gamma_2\gamma_3,\qquad R_{\vec e_z}=-\gamma_0\gamma_1\gamma_2\gamma_3,
 $$
 which mix grades. The left family lies in the even part of the Clifford algebra, spanned by the scalar and the bivectors; the right family does not, because it holds a vector, a trivector and the volume element. No reading of the pair as two copies of the same object survives the comparison, and the swap is what carries one family to the other.
 

@@ -301,12 +301,12 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu[\mathbb{M}_-]:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
@@ -314,16 +314,16 @@ $$
 The same in the axis-free display:
 
 $$
-\gamma_\mu[\mathbb{M}_-]:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-that is $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+that is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
+**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
 
 $$
 \mathbb{D}=i\gamma\cdot\partial,
@@ -332,7 +332,7 @@ $$
 \qquad
 \Sigma(\psi)=\gamma\cdot\psi,
 \qquad
-T_{\mu\nu\rho}=i\gamma_{[\mu\nu\rho]}[\mathbb{M}_-],
+T_{\mu\nu\rho}=i\gamma_{[\mu\nu\rho]},
 $$
 
 with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb{D}_p$ is $\mathbb{D}$ read at $\partial/\partial x_\mu\to-ip_\mu$, and that substitution is the single $i$ that separates the two; the triple $T$ differs from the antisymmetrized triple of frame cells by the same bookkeeping, three factors giving $(-i)^3=i$.
@@ -340,22 +340,22 @@ with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb
 **The identities.** With $\varepsilon=(1,-1,-1,-1)$ and the sign vector $\varepsilon_\mu=-g_{\mu\mu}$,
 
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
 \qquad
-\gamma_\mu[\mathbb{M}_-]^2=\varepsilon_\mu I_4,
+\gamma_\mu^2=\varepsilon_\mu I_4,
 \qquad
-\gamma_\mu[\mathbb{M}_-](\gamma\cdot p)=2p_\mu-(\gamma\cdot p)\gamma_\mu[\mathbb{M}_-],
+\gamma_\mu(\gamma\cdot p)=2p_\mu-(\gamma\cdot p)\gamma_\mu,
 $$
 
 $$
 \gamma_5^2=I_4,
 \qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 \qquad
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},
 $$
 
-with $\gamma_{\mu\nu}[\mathbb{M}_-]:=\tfrac12[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]$ for a pair and $\gamma_{\mu\nu\rho}[\mathbb{M}_-]:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]$ for a triple. The third entry of the first display is the identity the transversality argument uses, written with the letter.
+with $\gamma_{\mu\nu}:=\tfrac12[\gamma_\mu,\gamma_\nu]$ for a pair and $\gamma_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu\gamma_\nu\gamma_\rho$ for a triple. The third entry of the first display is the identity the transversality argument uses, written with the letter.
 
 **The two Dirac equations.** The pair is one matrix equation written twice. With the chiral projectors $P_{L}:=\tfrac12(I_4-\gamma_5)$ and $P_{R}:=\tfrac12(I_4+\gamma_5)$, the two lines of the pair are the two chiral halves of $(i\gamma\cdot\partial-m)\psi_\mu=0$, the halves being $P_L\psi_\mu$ and $P_R\psi_\mu$; $\gamma_5$ anticommutes with the frame cells and exchanges the halves, so the single matrix equation carries both, and the cell equation of the body, which multiplies on both sides, is its transcription in cells.
 
@@ -366,9 +366,9 @@ $$
 \qquad
 \gamma\cdot\psi=0,
 \qquad
-P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-],
+P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 \qquad
-\pi_\mu=i\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu t\mu]}[\mathbb{M}_-],
+\pi_\mu=i\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu t\mu]},
 $$
 
 and the polarization equations, the completeness relation and the propagator are

@@ -289,7 +289,7 @@ the third step dropping the two central minus signs of $u^{2}$ and using $u^{2}=
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.
 
@@ -297,8 +297,8 @@ Here $L_a$ and $R_b$ are the left and right multiplications of §*The Module and
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
@@ -307,47 +307,47 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
-The four $\gamma_\mu[\mathbb{M}_-]$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$,
+The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$,
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^{2}}^{\mathrm{pau}}=i^2L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4,\qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^{2}}^{\mathrm{pau}}R_{\vec e_y^{2}}^{\mathrm{pau}}=i^2L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-I_4 .
+\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^{2}}^{\mathrm{pau}}=i^2L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{pau}}R_{\vec e_y^{2}}^{\mathrm{pau}}=i^2L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-I_4 .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}}=i^2L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4,\qquad
-\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
+\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}}=i^2L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
 $$
 
-Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0[\mathbb{M}_-]$, two for each $\gamma_k[\mathbb{M}_-]$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and
+Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and
 
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,\qquad
 \gamma_5^2=I_4 .
 $$
 
-**The fifth gamma.** The product $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ is computed in cells, and the factors of $i$ are reduced first: the four cells carry $i^4=(i^2)^2=+1$, so the two factors of $i^2=-1$ cancel. The left multipliers multiply in order, $e_t\vec e_x\vec e_y\vec e_z=\vec e_z^2=-e_t$, and the right multipliers compose in reverse, $\vec e_y\vec e_y\vec e_y\vec e_x=\vec e_y^3\vec e_x=-\vec e_y\vec e_x=\vec e_z$. The product is therefore
+**The fifth gamma.** The product $\gamma_0\gamma_1\gamma_2\gamma_3$ is computed in cells, and the factors of $i$ are reduced first: the four cells carry $i^4=(i^2)^2=+1$, so the two factors of $i^2=-1$ cancel. The left multipliers multiply in order, $e_t\vec e_x\vec e_y\vec e_z=\vec e_z^2=-e_t$, and the right multipliers compose in reverse, $\vec e_y\vec e_y\vec e_y\vec e_x=\vec e_y^3\vec e_x=-\vec e_y\vec e_x=\vec e_z$. The product is therefore
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same identities in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-and the single $i$ of the definition gives $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.
+and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.
 
 **The central grading and the cell.** The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that
 
@@ -426,7 +426,7 @@ The matrix frame is the frame of cells written as letters, and it is confined to
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing when $s^{*}s$ has no part of $u$-parity $-1$, in particular for an even $s$ of definite $u$-parity |
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
-| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
+| $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the Dirac module by the fifth frame cell |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The one-sided Dirac equation, the chiral pair |

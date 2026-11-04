@@ -420,38 +420,38 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Every $i$ below is the central scalar, with $i^2=-1$, so each cell carries one factor of $i$ and each product of two cells carries $i^2=-1$.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The time cell simplifies at once, because $L_{e_t}^{\mathrm{pau}}$ is the identity: $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$. The fifth gamma is not a fifth frame vector but their product,
+The time cell simplifies at once, because $L_{e_t}^{\mathrm{pau}}$ is the identity: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$. The fifth gamma is not a fifth frame vector but their product,
 
 $$
-\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, the chirality cell.
@@ -463,43 +463,43 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the body and the companions cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and with $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ the frame metric of this section — not the body's full metric $g_{\mu\nu}[\mathbb{M}_-]+h_{\mu\nu}$ —
 
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
+\{\gamma_\mu,\gamma_5\}=0,
 $$
 
 $$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-The sign change is the one convention change in the translation: the time cell has $\gamma_0[\mathbb{M}_-]^2=+I_4$, while the material time basis vector has $\langle\varepsilon_0,\varepsilon_0\rangle_{\natural}=-1$.
+The sign change is the one convention change in the translation: the time cell has $\gamma_0^2=+I_4$, while the material time basis vector has $\langle\varepsilon_0,\varepsilon_0\rangle_{\natural}=-1$.
 
-The contraction sums depend only on the squares of the cells, not on the representation, so they are quoted in the Euclidean frame — the frame reached from the $\gamma_\mu[\mathbb{M}_-]$ by $\gamma_k[\mathbb{M}_-]\mapsto i\gamma_k[\mathbb{M}_-]$ for $k=1,2,3$, in which every cell squares to $+I_4$:
-
-$$
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],
-$$
+The contraction sums depend only on the squares of the cells, not on the representation, and they are fixed once the summed index is raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$:
 
 $$
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\gamma[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\gamma[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}].
+\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,
 $$
 
-In the frame of this section, where the squares are $(+1,-1,-1,-1)$, only the first keeps that shape: $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=\sum_\mu g_{\mu\mu}I_4=-2I_4$. The other three change and have to be recomputed in that frame, not transcribed.
+$$
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha.
+$$
+
+For a product of $n$ distinct generators they are one rule, $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the rest are index-dependent and are computed, not transcribed: $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$ and $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$ for $k=1,2,3$.
 
 **The two Dirac equations.** Two equations carry the name in this corpus: the one-sided chirality pair and Kravchenko's two-sided equation. They share the $\gamma$ frame and are related by the dictionary, but they are not the same equation and must not be read as one. The one-sided pair, which is the flat form of the equation meant in the body above, is
 

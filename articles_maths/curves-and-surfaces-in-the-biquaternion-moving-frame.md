@@ -437,15 +437,15 @@ the curvature constant and the surface umbilic at every point, and the latitude 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
-The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu[\mathbb{M}_-]=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
+The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
 
 $$
-\gamma_\mu[\mathbb{M}_-]=i\vec e_\mu,\qquad \gamma_\mu[\mathbb{M}_-]^2=+e_t,\qquad \gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]=-\gamma_\nu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\quad(\mu\neq\nu).
+\gamma_\mu=i\vec e_\mu,\qquad \gamma_\mu^2=+e_t,\qquad \gamma_\mu\gamma_\nu=-\gamma_\nu\gamma_\mu\quad(\mu\neq\nu).
 $$
 
-A single product is a grade-two unit up to sign, $\gamma_j[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]=-\vec e_j\vec e_k$ for $j\neq k$, and the three products are the units $\vec e_x,\vec e_y,\vec e_z$ up to sign.
+A single product is a grade-two unit up to sign, $\gamma_j\gamma_k=-\vec e_j\vec e_k$ for $j\neq k$, and the three products are the units $\vec e_x,\vec e_y,\vec e_z$ up to sign.
 
 The dictionary is exact inside $\mathbb{B}$; over $\mathbb{R}$ the three grade-one units generate $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})\cong\mathbb{B}$, and no complexification is needed.
 

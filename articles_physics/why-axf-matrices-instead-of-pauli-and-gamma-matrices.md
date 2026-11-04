@@ -16,7 +16,7 @@
 
 **The article has five parts.** The first finds the direction in the older display, in the four cells that act diagonally in the basis it is built on, and follows it into the five cells of its frame. The second states the defect in physical terms: an equation of general physics must not be written in a display that singles out a direction the reality does not contain. The third gives the alternative and states what it costs. The fourth is practical: three passes, a dictionary, four traps and five checks. The fifth prints the two displays once.
 
-## The Direction Inside the Pauli Matrices
+## The Direction Inside the Older Display
 
 ### The Display Is Built on One Spatial Unit
 
@@ -28,7 +28,7 @@
 
 **A cell acts diagonally in a basis when it carries each basis element into a multiple of itself.** The criterion is this article's own, and it is a derived form: it reads the cell through its two slots and the two multipliers they carry, and it needs no entry.
 
-**In the coefficient basis the diagonal cells are the four squares.** The cell $L_aR_b$ carries the time unit into $ab$, so it can act diagonally only if $ab$ is a complex multiple of $e_t$. Among the sixteen cells built from the units that leaves the four squares $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$. Each of the four carries every unit into plus or minus itself, so each acts diagonally, and the other twelve do not. The four were checked one by one, and the other twelve were checked with them.
+**In the coefficient basis the diagonal cells are the four squares.** A cell with multipliers $a$ and $b$ carries the unit $e_t$ into $ab$, so it can act diagonally only if $ab$ is a complex multiple of $e_t$. Among the sixteen cells built from the units that leaves the four whose two multipliers are one unit read twice, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$. Each of the four carries every unit into plus or minus itself, so each acts diagonally, and the other twelve do not. The four were checked one by one, and the other twelve were checked with them.
 
 **That set is the axis test.** It is unchanged by any permutation of the three spatial units, because a permutation renames three of its members and leaves the set alone. A display whose diagonal set has that property was built on no unit at all.
 
@@ -43,7 +43,7 @@
 
 **The second row was checked for $\vec u=\vec e_x$, $\vec u=\vec e_y$ and $\vec u=\vec e_z$.** In each case the four cells named act diagonally and no other cell does. The pattern is therefore not a property of $\vec e_z$; it is the signature of a display built on a declared unit, and it moves when the declared unit moves.
 
-**The second row is written with $\vec u$, and that is deliberate.** A page that writes $\vec e_z$ where $\vec u$ belongs prints the unit of its own display as though it were the only one. The article that does it has made the choice twice: once in the display and once in the prose. The corpus writes the same $\vec u$ in *Special Element Conventions*, §*The Spinor Convention*, where the two parts of an element are read in a frame built on a declared axis.
+**The second row is written with $\vec u$, and that is deliberate.** A page that writes $\vec e_z$ where $\vec u$ belongs prints the unit of its own display as though it were the only one. The article that does it has made the choice twice: once in the display and once in the prose. The corpus writes the same $\vec u$ in *Special Element Conventions*, §*The Chirality Convention*, where the two values of the subscript of an element are read from a cell that carries the declared axis.
 
 ### The Declared Unit Can Be Read Off the Page
 
@@ -67,55 +67,63 @@
 
 **A sentence inherits the display.** "The third slot holds the declared unit." "The diagonal member of the general array is the one that carries $Q_z$." Each is true in the display that produced it, false in a rotated one, and printed in the same font as the identities that hold everywhere. In a page written this way the reader has nothing to consult, and a writer who copies such a sentence into a rotated context produces a formula that is wrong without being detectable as wrong.
 
-## The Direction Inside the Gamma Matrices
+## The Direction Inside the Five Cells
 
 ### The Five Cells
 
-**The five cells of the older display are five cells of the operator algebra of one frame.** In the frame built on $\vec u=\vec e_z$, which is the frame $\mathbb{M}_-$ of *Frame Conventions*, they are
+**The five cells of the older display are five actions of one frame.** In the frame built on $\vec u=\vec e_z$, which is the frame $\mathbb{M}_-$ of *Frame Conventions*, they act by
 
 $$
-iR_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}.
+\tilde Q\longmapsto i\tilde Q\vec e_x,\qquad
+\tilde Q\longmapsto i\vec e_x\tilde Q\vec e_y,\qquad
+\tilde Q\longmapsto i\vec e_y\tilde Q\vec e_y,\qquad
+\tilde Q\longmapsto i\vec e_z\tilde Q\vec e_y,\qquad
+\tilde Q\longmapsto -i\tilde Q\vec e_z .
 $$
 
-Two of the five occupy one slot only, because a slot that carries the time unit adds nothing; the three spatial cells occupy both slots. The frame is named once, and it is $\mathbb{M}_-$ throughout this article.
+Two of the five multiply on one side only, because a multiplier equal to $e_t$ changes nothing; the three spatial ones multiply on both sides. The frame is named once, and it is $\mathbb{M}_-$ throughout this article.
 
-**The list is a list of cells and not a list of objects of the algebra.** Each of the five is a cell of that one frame, and the frame is what the five have in common.
+**The list is a list of actions of one frame and not a list of elements of the algebra.** Each of the five is fixed by that frame, and the frame is what the five have in common.
 
 ### The Three Spatial Units Have Three Different Jobs
 
-**In the five cells the three spatial units are not interchangeable, and the asymmetry is in the definitions.**
+**In the five actions the three spatial units are not interchangeable, and the asymmetry is in the definitions.**
 
-**The unit $\vec e_x$ is the right multiplier of the time cell and the left multiplier of the first spatial cell.**
+**The unit $\vec e_x$ multiplies on the right in the first action and on the left in the second.**
 
-**The unit $\vec e_y$ is the right multiplier of all three spatial cells.** The three spatial cells therefore share a right slot, and the three spatial terms of an equation written with them add into one term: the sum is $iL_{\vec e_x+\vec e_y+\vec e_z}R_{\vec e_y}$, because a sum of cells is linear in each slot.
+**The unit $\vec e_y$ multiplies on the right in all three spatial actions.** The three therefore share a right multiplier, and the three spatial terms of an equation written with them add into one: the sum is $\tilde Q\mapsto i(\vec e_x+\vec e_y+\vec e_z)\tilde Q\vec e_y$, because a sum of actions is linear in each multiplier.
 
-**The unit $\vec e_z$ is never the right multiplier of a spatial cell.** It appears once, in the fifth cell, and it is the only unit that does.
+**The unit $\vec e_z$ never multiplies on the right in a spatial action.** It appears once, in the fifth, and it is the only unit that does.
 
-**A reader of the five cells therefore meets the three units in three roles on one line.** Nothing on the page says that the roles could be exchanged.
+**A reader of the five actions therefore meets the three units in three roles on one line.** Nothing on the page says that the roles could be exchanged.
 
 ### The Relabelling Test
 
-**Take the five cells and permute the names $x,y,z$ among the units.** For the cycle that sends $\vec e_x$ to $\vec e_y$, $\vec e_y$ to $\vec e_z$ and $\vec e_z$ to $\vec e_x$, the five become
+**Take the five actions and permute the names $x,y,z$ among the units.** For the cycle that sends $\vec e_x$ to $\vec e_y$, $\vec e_y$ to $\vec e_z$ and $\vec e_z$ to $\vec e_x$, the five become
 
 $$
-iR_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_z},\qquad iL_{\vec e_z}R_{\vec e_z},\qquad iL_{\vec e_x}R_{\vec e_z},\qquad -iR_{\vec e_x},
+\tilde Q\longmapsto i\tilde Q\vec e_y,\qquad
+\tilde Q\longmapsto i\vec e_y\tilde Q\vec e_z,\qquad
+\tilde Q\longmapsto i\vec e_z\tilde Q\vec e_z,\qquad
+\tilde Q\longmapsto i\vec e_x\tilde Q\vec e_z,\qquad
+\tilde Q\longmapsto -i\tilde Q\vec e_x,
 $$
 
-which is not the original set. The same failure occurs for all five non-trivial permutations, checked one by one. So the five-cell list is tied to a labelling of the spatial units, and a relabelling produces another list, related to the first by a conjugation of the display.
+which is not the original five. The list changes in the same way under three of the other four permutations, checked one by one. The fourth, the exchange of $\vec e_x$ with $\vec e_z$, returns the same five in another order: it carries the first into the fifth, the fifth into the first, and exchanges the two spatial actions between them. The ordered list therefore changes under all five, and the unordered set under four of them, so the list is tied to a labelling of the spatial units, and a relabelling produces another list, related to the first by a conjugation of the display.
 
 **The distinction must be stated exactly, because it is easy to overstate.** The relation among the five is the relation of the frame, and it is fixed by the metric (*Frame Conventions*). A permutation of the three spatial units is an automorphism of the algebra, so it leaves that relation alone. What is not invariant is the list of five. The metric cannot tell the three units apart, and the list can.
 
 ### Every Display Writes One Direction
 
-**At most one of the time cell and the fifth cell acts diagonally in a display built on a unit.** The diagonal cells of such a display are $e_te_t$, $e_t\vec u$, $\vec u e_t$ and $\vec u\vec u$; the time cell is $e_t\vec e_x$ and the fifth cell is $e_t\vec e_z$, and the two lie in that set for $\vec u=\vec e_x$ and for $\vec u=\vec e_z$ respectively. One declared unit, so one of the two at most. The counting is the same one that produced the table of §*The Four Diagonal Cells of a Display Built on a Declared Unit*.
+**At most one of the first action and the fifth acts diagonally in a display built on a unit.** The diagonal cells of such a display are $e_te_t$, $e_t\vec u$, $\vec u e_t$ and $\vec u\vec u$; the first of the five carries the multipliers $e_t$ and $\vec e_x$, the fifth carries $e_t$ and $\vec e_z$, and the pair lies in that set for $\vec u=\vec e_x$ and for $\vec u=\vec e_z$ respectively. One declared unit, so one of the two at most. The counting is the same one that produced the table of §*The Four Diagonal Cells of a Display Built on a Declared Unit*.
 
-**The two standard displays spend the one allowance differently.** One makes the time cell diagonal, and writes the time direction, which the metric does distinguish, into the page. The other makes the fifth cell diagonal, and writes a spatial direction, which the metric does not distinguish. A page that prints five cells has made the choice before it prints anything, and the notation gives the reader no way to tell which choice was made.
+**The two standard displays spend the one allowance differently.** One makes the first of the five diagonal, and writes the time direction, which the metric does distinguish, into the page. The other makes the fifth diagonal, and writes a spatial direction, which the metric does not distinguish. A page that prints five cells has made the choice before it prints anything, and the notation gives the reader no way to tell which choice was made.
 
 ### The Fifth Cell Is a Choice of Axis
 
-**The three cells $-iR_{\vec e_x}$, $-iR_{\vec e_y}$ and $-iR_{\vec e_z}$ are conjugate to one another.** Take $s=\tfrac{1}{\sqrt2}\bigl(e_t+\vec e_y\bigr)$, whose natural norm is $e_t$ and whose inverse is $\tfrac{1}{\sqrt2}\bigl(e_t-\vec e_y\bigr)$. The automorphism $\tilde Q\mapsto s\tilde Qs^{-1}$ turns $\vec e_z$ into $\vec e_x$ and $\vec e_x$ into $-\vec e_z$, so it is the quarter turn about $\vec e_y$, and it carries the fifth cell $-iR_{\vec e_z}$ into $-iR_{\vec e_x}$; the identity was checked on a hundred elements.
+**The three actions $\tilde Q\mapsto-i\tilde Q\vec e_x$, $\tilde Q\mapsto-i\tilde Q\vec e_y$ and $\tilde Q\mapsto-i\tilde Q\vec e_z$ are conjugate to one another.** Take $s=\tfrac{1}{\sqrt2}\bigl(e_t+\vec e_y\bigr)$, whose natural norm is $e_t$ and whose inverse is $\tfrac{1}{\sqrt2}\bigl(e_t-\vec e_y\bigr)$. The automorphism $\tilde Q\mapsto s\tilde Qs^{-1}$ turns $\vec e_z$ into $\vec e_x$ and $\vec e_x$ into $-\vec e_z$, so it is the quarter turn about $\vec e_y$, and it carries the fifth action $\tilde Q\mapsto-i\tilde Q\vec e_z$ into $\tilde Q\mapsto-i\tilde Q\vec e_x$; the identity was checked on a hundred elements.
 
-**So which spatial unit carries the fifth cell is a labelling.** Every labelling gives a display of the same kind, and only one of the three is diagonal in a given display. The corpus makes the same statement in *Special Element Conventions*, §*The Spinor Convention*, where the fifth cell is written $-iR_{\vec u}$ and the axis is part of the datum.
+**So which spatial unit carries the fifth action is a labelling.** Every labelling gives a display of the same kind, and only one of the three is diagonal in a given display. The corpus makes the same statement in *Special Element Conventions*, §*The Chirality Convention*, where the cell of the frame multiplies on the right by $-i\vec u$ and the axis is part of the datum.
 
 ## Why a Direction in the Notation Is a Defect
 
@@ -203,7 +211,7 @@ which is not the original set. The same failure occurs for all five non-trivial 
 
 **Every cell permutes the units up to sign.** Each of the sixteen carries each of the four units into plus or minus a unit, so the display is the multiplication table read as a family of maps, and nothing enters it from outside the algebra.
 
-**The invariants are invariants of the operator and are read the same way in both displays.** The trace and the determinant are properties of the operator, and the change of display preserves them, which is why the migration of §*Migrating from the Pauli Framework* cannot change a result.
+**The invariants are invariants of the operator and are read the same way in both displays.** The trace and the determinant are properties of the operator, and the change of display preserves them, which is why the migration of §*Migrating from the Older Framework* cannot change a result.
 
 **The natural conjugation is a transposition here and not in the display built on a unit.** The corpus states the rule for the coefficient basis in *Matrix Representations Conventions*, §*The Stitch Between the Two Families*; it is the property that makes the adjoint operation frame-free.
 
@@ -261,7 +269,7 @@ The pair of multipliers is the operator, and no basis appears in the definition 
 
 **The carrier is $\mathbb{B}$ itself, with its own multiplication**, so the objects of an equation are elements and their products. Nothing else is introduced: no frame, no second carrier, no chosen unit.
 
-**Two consequences follow, and both are properties of the algebra.** The conjugation that splits the algebra is carried by the algebra and needs no extra structure, whereas a display in a basis must import it. And the five cells belong to a frame and not to the algebra, so in the intrinsic form they are written out as the cells they are, and a reader sees the three spatial units in three different jobs on the same line. That is the defect of §*The Three Spatial Units Have Three Different Jobs* made visible at the place where it enters, which is the most a notation can do about it.
+**Two consequences follow, and both are properties of the algebra.** The conjugation that splits the algebra is carried by the algebra and needs no extra structure, whereas a display in a basis must import it. And the five cells belong to a frame and not to the algebra, so in the intrinsic form they are written out as the five actions they are, and a reader sees the three spatial units in three different jobs on the same line. That is the defect of §*The Three Spatial Units Have Three Different Jobs* made visible at the place where it enters, which is the most a notation can do about it.
 
 ### When a Display Is Still Needed
 
@@ -275,7 +283,7 @@ The pair of multipliers is the operator, and no basis appears in the definition 
 | the cell | one cell of the operator algebra | no | the operator must be one symbol |
 | the array | the display of the cell | yes, the named basis | the array is the object of the sentence |
 
-## Migrating from the Pauli Framework
+## Migrating from the Older Framework
 
 **An article written in the older framework does not have to be rewritten at once.** The move has three passes, and each pass is mechanical enough to be checked.
 
@@ -283,7 +291,7 @@ The pair of multipliers is the operator, and no basis appears in the definition 
 
 **Replace every array by the cell it displays.** A cell is written with its two slots, and its display is read in whichever frame the sentence needs. The pass removes the frame from the algebra and leaves it in the notation, where it can be seen.
 
-**A cell with a time slot collapses**, because a slot occupied by the time unit adds nothing: a cell whose time slot is occupied acts as the one-sided cell of its other slot, and a cell with two time slots is the identity action. Two of the five cells of §*The Five Cells* are one-sided for exactly this reason.
+**A cell with a multiplier $e_t$ loses it**, because the unit changes nothing in a product: the cell then acts on the other side alone. Two of the five cells of §*The Five Cells* are one-sided for exactly this reason.
 
 **During this pass an array may stay only where the array is the object**: a comparison of two displays, the table of the sixteen cells, a sentence whose content is which entry is nonzero. Everything else becomes a cell.
 
@@ -301,24 +309,24 @@ The pair of multipliers is the operator, and no basis appears in the definition 
 
 ### The Dictionary
 
-**The three passes need a table, and one table serves all three.** Each row gives the older literature's name, the object behind it, and the action.
+**The three passes need a table, and one table serves all three.** Each row gives the older literature's name and the action behind it, written out.
 
-| the older literature's name | the object in the algebra | the action |
-|---|---|---|
-| the time cell | $iR_{\vec e_x}$ | $\tilde Q\mapsto i\tilde Q\vec e_x$ |
-| the first spatial cell | $iL_{\vec e_x}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_x\tilde Q\vec e_y$ |
-| the second spatial cell | $iL_{\vec e_y}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_y\tilde Q\vec e_y$ |
-| the third spatial cell | $iL_{\vec e_z}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_z\tilde Q\vec e_y$ |
-| the fifth cell | $-iR_{\vec e_z}$ | $\tilde Q\mapsto-i\tilde Q\vec e_z$ |
-| the mass term | a scalar multiple of the unit $e_t$ | $\tilde Q\mapsto m\tilde Q$ |
-| the two-component object | an element read in the frame built on $\vec u$ | it is the operand, not an action |
-| the adjoint | a form and not an action | it needs the frame that declares the form |
+| the older literature's name | the action |
+|---|---|
+| the time cell | $\tilde Q\mapsto i\tilde Q\vec e_x$ |
+| the first spatial cell | $\tilde Q\mapsto i\vec e_x\tilde Q\vec e_y$ |
+| the second spatial cell | $\tilde Q\mapsto i\vec e_y\tilde Q\vec e_y$ |
+| the third spatial cell | $\tilde Q\mapsto i\vec e_z\tilde Q\vec e_y$ |
+| the fifth cell | $\tilde Q\mapsto-i\tilde Q\vec e_z$ |
+| the mass term | $\tilde Q\mapsto m\tilde Q$, a scalar multiple of the element |
+| the two-component object | no action: an element read in the frame built on $\vec u$ is the operand |
+| the adjoint | no action: a pairing of two elements, needing the frame that declares the form |
 
 **The last two rows are the ones without an action, and that is the honest answer.** The field is the operand of every action, and the adjoint is a pairing of two elements and not an operator on one.
 
 ### The Conjugation and What It Preserves
 
-**The two displays are related by one conjugation**, written $C_{\Pi}$ in *Matrix Representations Conventions*, §*The Switch Between the Two Frames*. Every invariant survives it: products, traces, determinants, spectra, ranks and the count of eigenvalues. That is why the migration cannot change a result, and why it must be checked on invariants rather than on entries.
+**The two displays are related by one conjugation**, $C_{\Pi}$, of *Matrix Representations Conventions*, §*The Switch Between the Two Frames*, where what it preserves is stated. Because it preserves those invariants, the migration cannot change a result, and it must be checked on invariants rather than on entries.
 
 **The conjugation is also the test of a sentence.** A statement that survives the conjugation was a statement about the operator; a statement that does not was a statement about the display.
 
@@ -328,7 +336,7 @@ The pair of multipliers is the operator, and no basis appears in the definition 
 
 **The transpose rule.** The natural conjugation is a transposition in the coefficient basis and not in the display built on a unit. A proof that uses the rule is a proof about the axis-free display, and it must be stated as such or reproved.
 
-**The two parts of the older display.** The display built on a unit shows its array in two parts, and the split is the split of the carrier by the fifth cell of that frame. In the coefficient basis there are no parts, and the same content is a statement about which slots the cells occupy. A sentence about "the two halves" has to be rewritten as a sentence about the fifth cell and the frame.
+**The two parts of the older display.** The display built on a unit shows its array in two halves, and each half collects the entries that sit on one of the two values of its fifth cell. In the coefficient basis there is no such halving, and the same content is a statement about which multipliers a cell carries. A sentence about "the two halves" has to be rewritten as a sentence about the fifth action and the frame.
 
 **The diagonal member.** In the older display one spatial unit sits in the diagonal, and a sentence about "the diagonal entry" is a sentence about that unit. In the coefficient basis every diagonal cell is a square, and no entry names a unit. A sentence of that kind must be rewritten with the unit named.
 
@@ -428,21 +436,21 @@ $$
 
 | the older name | the cell | the action |
 |---|---|---|
-| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $\tilde Q\mapsto i\tilde Q\vec e_x$ |
-| $\gamma_1[\mathbb{M}_-]$ | $iL_{\vec e_x}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_x\tilde Q\vec e_y$ |
-| $\gamma_2[\mathbb{M}_-]$ | $iL_{\vec e_y}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_y\tilde Q\vec e_y$ |
-| $\gamma_3[\mathbb{M}_-]$ | $iL_{\vec e_z}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_z\tilde Q\vec e_y$ |
+| $\gamma_0$ | $iR_{\vec e_x}$ | $\tilde Q\mapsto i\tilde Q\vec e_x$ |
+| $\gamma_1$ | $iL_{\vec e_x}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_x\tilde Q\vec e_y$ |
+| $\gamma_2$ | $iL_{\vec e_y}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_y\tilde Q\vec e_y$ |
+| $\gamma_3$ | $iL_{\vec e_z}R_{\vec e_y}$ | $\tilde Q\mapsto i\vec e_z\tilde Q\vec e_y$ |
 | $\gamma_5$ | $-iR_{\vec e_z}$ | $\tilde Q\mapsto-i\tilde Q\vec e_z$ |
 
-**The bracket is the frame and the cells carry it; the fifth is the product of the four and carries none.** The two displays of each cell are conjugates, $C_{\Pi}$ carrying one into the other, with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. An identity holds in both, because a conjugation preserves products, traces, determinants and spectra; what it does not preserve is the reading of a single entry.
+**The cells carry no frame label; the fifth is the product of the four.** The two displays of each cell are conjugates, $C_{\Pi}$ carrying one into the other, with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. An identity holds in both, because a conjugation preserves products, traces, determinants and spectra; what it does not preserve is the reading of a single entry.
 
 ## Summary
 
 **The older display carries a direction and does not say so.** The asymmetry is one against two: exactly one of the three spatial units acts diagonally, and it is the unit that built the display. The direction then travels into everything built from that unit, and into every sentence that speaks of a diagonal member or of a named slot.
 
-**The five cells carry the same direction in the frame.** The three spatial units have three different jobs in the five definitions, and a relabelling of the units produces another five. The relation among the five does not notice the change, because a permutation of the units is an automorphism; the list of five does notice it.
+**The five cells carry the same direction in the frame.** The three spatial units have three different jobs in the five definitions, and a relabelling of the units produces another five; the exchange of $\vec e_x$ with $\vec e_z$ is the only one that returns the same five, and it returns them in another order. The relation among the five does not notice the change, because a permutation of the units is an automorphism; the list of five does notice it.
 
-**No display can avoid the choice.** At most one of the time cell and the fifth cell acts diagonally in a display built on a unit, so the display spends one allowance, and it spends it on the time direction or on a spatial one. The display of the older literature spends it on the spatial one.
+**No display can avoid the choice.** At most one of the first cell and the fifth cell acts diagonally in a display built on a unit, so the display spends one allowance, and it spends it on the time direction or on a spatial one. The display of the older literature spends it on the spatial one.
 
 **The defect is formal, and its source is physical.** Physical space has no preferred spatial direction, and a fundamental equation therefore contains none. A display that singles one out adds a datum the equation does not have, and the addition is unmarked, so the reader cannot subtract it. It also hides what depends on that direction: the orbit of the three spatial units, the frame-free reading of the natural conjugation, and the correspondence between the two displays all become invisible on the page. A frame is legitimate when a measurement, an apparatus or a background supplies the direction, and then it is named; the defect is the default frame no problem asked for.
 

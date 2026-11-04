@@ -852,7 +852,7 @@ This is the natural generalization of the $ict'$ structure. The electromagnetic 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
 
 The body writes its operators as cells $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame cells. Two cells multiply by multiplying the left factors and the right factors, the right factors in reverse order,
 
@@ -863,13 +863,13 @@ $$
 because $R_bR_d=R_{db}$. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
@@ -877,27 +877,27 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 Every generator carries exactly one factor of $i$, so $(iL_aR_b)^2=-L_{a^2}R_{b^2}$ and all the signs are fixed by $i^2=-1$ together with $\vec e_k^2=-e_t$:
 
 $$
-\gamma_0[\mathbb{M}_-]^2=+I_4,\qquad \gamma_1[\mathbb{M}_-]^2=\gamma_2[\mathbb{M}_-]^2=\gamma_3[\mathbb{M}_-]^2=-I_4,\qquad \gamma_5^2=+I_4,
+\gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
 $$
 
-with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
+with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
 
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5,
+\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
 \qquad
-\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] .
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
 The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain cell,
 
 $$
-i\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},
+i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},
 $$
 
 In the axis-free display:
 
 $$
-i\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},
+i\gamma_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},
 $$
 
 with $\vec e_{\nu(t)}=\vec e_x$ and $\vec e_{\nu(k)}=\vec e_y$, together with $i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.

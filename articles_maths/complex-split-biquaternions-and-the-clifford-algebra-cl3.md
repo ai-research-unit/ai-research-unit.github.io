@@ -188,14 +188,14 @@ The theorem shows that the two-sided structure of the algebra has two rungs. On 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu[\mathbb{M}_-]=iE_\mu=i\,j\vec e_\mu,\qquad
-\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]=-E_\mu E_\nu,\qquad
-\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=ij .
+\gamma_\mu=iE_\mu=i\,j\vec e_\mu,\qquad
+\gamma_\mu\gamma_\nu=-E_\mu E_\nu,\qquad
+\gamma_1\gamma_2\gamma_3=ij .
 $$
 
 The native object is the triple $(\vec e_x,\vec e_y,\vec e_z)$ of quaternion units; a generator is one of them multiplied by $i\,j$, and a product of two is minus a quaternion unit. Each generator acts by left multiplication on the algebra, one cell of the two-sided family $L_aR_b$.

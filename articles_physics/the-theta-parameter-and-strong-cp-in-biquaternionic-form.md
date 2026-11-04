@@ -6,7 +6,7 @@
 
 The framework's contribution to this subject is unusually direct, and it rests on a result established earlier in the series. In the abelian sector the topological density is not a foreign object: it is proportional to the framework's second invariant, $I_2=\vec E\cdot\vec B$.
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the $ict'$ convention for sums over indices: the metric is the Kronecker delta, so the labels are summed directly. The four-index symbol is the all-low orientation density, $\epsilon_{0123}=+1$.
+**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame Conventions*, with the $ict'$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
 
 $$
 \tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
@@ -16,7 +16,7 @@ $$
 I_2=\vec E\cdot\vec B ,
 $$
 
-as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **pseudoscalar** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
+as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **parity-odd** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
 
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
@@ -26,19 +26,11 @@ S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\
 F^{\mathrm{dual}}_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $ict'$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the informational trace formula, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
+with all indices summed in the $ict'$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Notation, once.** The tensor displays are read in the $\mathbb{B}$ frame, whose sums use the Kronecker delta. The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient**,
-
-$$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
-\qquad
-\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
-$$
-
-an element of the algebra whose coefficients are derivatives, and it acts from the left, $\tilde\nabla\psi$; it is never applied on the right. On the material sector, where $Q_t=ict'$ and $Q_k=q_k$, its time coefficient is $\frac{\partial}{\partial Q_t}=-\frac{i}{c}\frac{\partial}{\partial t'}$, with the same element and the same side. Its norm against the conjugate is the d'Alembertian, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, which on the material sector is $\Delta-c^{-2}\partial^2/\partial {t'}^2$.
+**Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $\tilde\nabla^{\natural}$, and the **d'Alembertian** $\Box$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
 
 **The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
 
@@ -50,15 +42,7 @@ $$
 
 both acting from the left, and each half satisfies $\Box\tilde\Psi=m^2\tilde\Psi$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here.
 
-**The pseudoscalar and the side.** The **pseudoscalar** of the algebra is $\omega=-\vec e_z$, with $\omega^2=-\vec e_t$; it is the element a two-sided source prints as $i$. That letter is not the central unit: it does not commute with the spatial units, and the source's spin plane applies it on the right, $\psi\mapsto-\psi\vec e_z$. The chirality operation used below multiplies on the right and not on the left. It is a map of the field, written with its side in the display and not identified with an element,
-
-$$
-\Gamma:\;\psi\longmapsto\psi\,(i\omega)=-i\psi\vec e_z ,
-\qquad
-\Gamma^2=\mathrm{id},
-$$
-
-an involution of the field, since $(i\omega)^2=i^2\omega^2=(-1)(-\vec e_t)=e_t$ and the right multiplier $e_t$ is the identity. The left multiplication $\psi\mapsto-\vec e_z\psi$ is a different map, and it is not the one meant: the two do not agree, so the side belongs to the definition. The material time enters through $Q_t=ict'$, so the corpus's time term carries $-\frac{i}{c}\partial/\partial t'$; a display that prints $+i\partial/\partial t'$ differs by that sign, and the corpus's sign is the one kept.
+**The field and its two values.** The field is an element $\tilde\Psi$ of $\mathbb{B}$. Its two parts carry the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*: $\tilde\Psi_L$ is the part of value $-1$ and $\tilde\Psi_R$ the part of value $+1$, and only the zero element carries both. The label belongs to the element and not to a state, so a product and a unit carry it as well. A central phase multiplies the two parts alike. The axial rotation of §*The Chiral Rotation and the Invariance of the Physical Parameter* does not, and that difference is what moves the physical parameter.
 
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\vec E\cdot\vec B$.
 - Companion article *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*, for the theta vacuum and its periodicity.
@@ -102,7 +86,15 @@ S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4x\,\frac{4i}{c}I_2
 =\frac{i\theta}{8\pi^2 c}\int d^4x\,I_2 .
 $$
 
-The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $ict'$ convention attaches to the pseudoscalar. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
+The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $ict'$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
+
+**The same invariant, read from the element.** The array above is a contraction, and the invariant it contracts to is one component of a norm. In vacuum the two medium factors of the companion are one, so $c=1$ there; the quaternionic norm of the field-strength element is $-(I_1+2iI_2)$ (*The Field-Strength Biquaternion and Its Invariants*), so the parity-odd invariant is minus one half of its imaginary part,
+
+$$
+I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\qquad(\text{vacuum}),
+$$
+
+and the theta density is a component of the norm of one element. The reading needs no array: the entries of $F_{\mu\nu}$ and the four coefficients of $\tilde F$ carry the same number, and the second carries it as the imaginary component of $\langle\tilde F\rangle_{\natural}$, the norm of the field element.
 
 **Parity.** Under parity $\vec E\mapsto-\vec E$ and $\vec B\mapsto+\vec B$, and under time reversal $\vec E\mapsto+\vec E$ and $\vec B\mapsto-\vec B$, so $I_2=\vec E\cdot\vec B\mapsto-I_2$ in both cases. Under either transformation the theta action changes sign, $S_\theta\mapsto-S_\theta$. A term linear in a parity-odd density with a real coefficient $\theta$ is therefore not invariant under parity unless $\theta=0$ or $\theta=\pi$ (mod $2\pi$), where the theta weight $\exp(i\theta Ϙ)$ is real for every integer $Ϙ$. For generic $\theta$ the theory violates $P$ and $T$, and by CPT it violates $CP$. The statement is purely algebraic in the abelian sector: the framework has one parity-even and one parity-odd derivative-free invariant, and the theta term is the integral of the odd one.
 
@@ -150,21 +142,17 @@ The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small
 
 ## The Chiral Rotation and the Invariance of the Physical Parameter
 
-The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The generator of the common axial rotation of the quark fields is the chirality involution $\Gamma$ of the introduction, whose square is the identity, so the exponential $\exp(i\alpha\Gamma)$ is periodic in $\alpha$ — a rotation and not a boost. The rotation reads
+The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two values of the subscript by opposite central phases,
 
 $$
-\exp(i\alpha\Gamma)\psi=\psi\,(\cos\alpha+\sin\alpha\,\vec e_z) .
-$$
-
-On the two chiral halves the same involution is a scalar phase, with opposite signs; split from the line above,
-
-$$
-\psi_L\longmapsto \exp(-i\alpha)\psi_L ,
+\tilde\Psi_L\longmapsto \exp(-i\alpha)\tilde\Psi_L ,
 \qquad
-\psi_R\longmapsto \exp(+i\alpha)\psi_R .
+\tilde\Psi_R\longmapsto \exp(+i\alpha)\tilde\Psi_R .
 $$
 
-The two lines are one operation read on the two halves: $\Gamma$ is $-\mathrm{id}$ on $\psi_L$ and $+\mathrm{id}$ on $\psi_R$, so the single right multiplication becomes the pair of left phases. Under this rotation the mass matrix in the fermion bilinear $\psi_L^{\dagger}\,i\,(M_q\psi_R)\,\vec e_x$, in which the timelike insertion $i\vec e_x$ carries one chiral half into the other and is written on the right, transforms as
+Both multipliers have modulus one, so the rotation is periodic in $\alpha$: it is a rotation and not a boost. The two lines are one operation read on the two values; the field is one element, and the rotation multiplies each of its parts by its own phase.
+
+**The mass, and the phase it takes.** The mass is the term that couples the two values: in the chiral pair it is the only term that carries the field from one value to the other. The two values are rotated in opposite senses, so a term that joins them takes twice the phase. With $M_q$ the quark mass matrix — a flavour-space matrix, imported from the Standard Model and not a display of the algebra — the rotation gives
 
 $$
 M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
@@ -187,7 +175,7 @@ $$
 
 This is why $\bar\theta$ is the renormalisation-invariant physical parameter, and why a theory with $\theta=0$ and complex masses is equivalent to one with $\theta\ne0$ and real masses: the rotation moves the phase between the two terms without changing the physics. The invariance is the standard anomaly argument; the measure's non-invariance belongs to the spin-half programme of the corpus, where the anomalous divergence and the Jacobian are computed, and it is not re-derived here.
 
-**What the framework contributes.** The axial rotation is generated by the involution $\Gamma$ of the introduction, whose square is the identity; it is $-\mathrm{id}$ on $\psi_L$ and $+\mathrm{id}$ on $\psi_R$, so the mass term is the chirality-off-diagonal coupling between the two halves, as *The Dirac Equation in Biquaternionic Form* records. The involution multiplies on the right, and the multiplier is the element $i\omega$; it is not the central grading, because $\omega$ anticommutes with $\vec e_x$ and $\vec e_y$, so the rotation cannot be absorbed into a redefinition of the central unit. The central object of the corpus is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the adjoined central root of $-e_t$, so $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\chi)$ are the two central idempotents; it commutes with every unit and is a different object from $\Gamma$, the two coinciding only in the one-mode truncation, where a single symbol represents both. The shift of $\theta$ is therefore a rotation of the two chiral halves against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The algebra makes the structure of the rotation visible — the pseudoscalar generator, the off-diagonal mass, the two halves — while the anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
+**What the framework contributes.** The axial rotation is the pair of opposite phases on the two values, and the mass is the term that couples them. The algebra makes the structure visible — two values, one coupling, one phase difference — and it costs no further object: no grading, no second unit and no side enters the description. A central phase is the contrast that matters. It multiplies the two values alike, so it cannot move one against the other, and only a rotation in opposite senses can move the mass phase against the theta phase. The shift of $\theta$ is therefore a rotation of the two values against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
 
 ## Summary
 
@@ -196,23 +184,25 @@ The theta term $S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F^{\
 $$
 \sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=4\,I_2 \quad(\text{Euclidean}).
+\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=4\,I_2 \quad(\text{Euclidean}),
+\qquad
+I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\ \ (\text{vacuum}).
 $$
 
 Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta)=\sum_Ϙ\exp(iϘ\theta)Z_Ϙ$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.
 
-The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$ and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
+The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The operator content is carried by the gradient and by one involution: the axial rotation is generated by $\Gamma$, right multiplication by the pseudoscalar $\omega=-\vec e_z$, and the massive equation is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, since $\tilde\nabla^2$ is not scalar.
+The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that couples the two values, and the massive equation is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, since $\tilde\nabla^2$ is not scalar.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
-| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion (an element, not the tensor $F_{\mu\nu}$) |
+| $\mathbb B$ | The biquaternion algebra, as fixed in *Algebra and Element Conventions* |
+| $\tilde F$ | Field strength, the one fixed field of *Algebra and Element Conventions*; an element, not the tensor $F_{\mu\nu}$ |
 | $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
-| $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd, pseudoscalar); theta density |
+| $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd); the theta density; in vacuum $I_2=-\tfrac12\mathrm{Im}\langle\tilde F\rangle_{\natural}$ |
 | $\theta$ | Theta angle; coefficient of the topological term |
 | $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}$ | Theta term of the action |
 | $F^{\mathrm{dual}}_{\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
@@ -220,14 +210,11 @@ The operator content is carried by the gradient and by one involution: the axial
 | $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
-| $M_q$ | Quark mass matrix (imported) |
-| $\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z}$ | Biquaternionic gradient; an element with derivative coefficients, acting from the left |
-| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z}$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | D'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {t'}^2$ on $\mathbb{M}_-$ |
-| $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-\vec e_t$; the source's $i$, kept distinct from the central unit |
-| $\Gamma:\psi\mapsto\psi(i\omega)=-i\psi\vec e_z$ | Chirality involution; a right multiplication and not an element, $\Gamma^2=\mathrm{id}$, $-\mathrm{id}$ on $\psi_L$, $+\mathrm{id}$ on $\psi_R$ |
-| $\psi_L,\psi_R$ | Chiral halves, the $\mp\mathrm{id}$ eigenspaces of $\Gamma$; the subscripts name the part and not a multiplication |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Central grading, the adjoined central root of $-e_t$; $\chi^2=e_t$, $e_\pm=\tfrac12(e_t\pm\chi)$; not the involution $\Gamma$ |
+| $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
+| $\tilde\nabla$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
+| $\tilde\nabla^{\natural}$ | Its quaternion conjugate |
+| $\Box$ | The d'Alembertian of the same article, the quaternionic norm of the gradient; scalar |
+| $\tilde\Psi$, $\tilde\Psi_L$, $\tilde\Psi_R$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
 | $f_{abc}$ | Structure constants of the gauge factor, written low |
 
