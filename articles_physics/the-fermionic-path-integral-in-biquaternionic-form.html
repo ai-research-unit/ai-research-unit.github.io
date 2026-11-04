@@ -75,7 +75,7 @@
 <ul>
 <li><strong>The action and its sector.</strong> The biquaternion Dirac action as a bilinear; the <strong>one-sided</strong> pair over the two parts of the field, which is what the integral integrates, and the <strong>two-sided</strong> (Kravchenko) equation, which it does not; the phase $iS$ as an element of $\mathbb{M}_-$ along the $ict'$ axis; and the action as an even (bosonic) functional of the fermionic field.</li>
 <li><strong>The Berezin measure.</strong> Fermionic histories are Grassmann-valued biquaternion fields; the measure is the Berezin measure on the Grassmann extension of the coefficient algebra, and in the finite-mode reduction it is $\prod_a d\psi_a^{\dagger}\,d\psi_a$ with the convention fixed once.</li>
-<li><strong>The Gaussian integral and the determinant.</strong> Completing the square in the Grassmann algebra gives the free generating functional, the two-point function as the inverse kernel, and the determinant of the Dirac operator; the finite-mode statements were recomputed exactly.</li>
+<li><strong>The Gaussian integral and the determinant.</strong> Completing the square in the Grassmann algebra gives the free generating functional, the two-point function as the inverse kernel, and the determinant of the pair operator; the finite-mode statements were recomputed exactly.</li>
 <li><strong>The Pfaffian and the real structure.</strong> For a field whose quadratic form is antisymmetric — the Majorana case, for which the algebra supplies the field-to-its-conjugate pairing — the integral is a Pfaffian, with $\mathrm{Pf}^2=\det$ and a sign that carries physical content.</li>
 <li><strong>The Euclidean integral and the parity sectors.</strong> Wick rotation and the antiperiodic (Matsubara) boundary conditions, the two fermion-parity traces and the boundary conditions that select them, and the phase of the determinant.</li>
 </ul>
@@ -94,7 +94,7 @@ $$</p>
 \qquad
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$</p>
-<p>two equations because the field has two parts. The subscript takes two values: $\tilde\Psi_L$ is the part of value minus one and $\tilde\Psi_R$ the part of value plus one, and only the zero element carries both. Both gradients act from the left, the field is the element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, and the mass pairs the two parts. The Lagrangian above is the same dynamics written with the frame cells, not a second one.</p>
+<p>two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde\Psi_L$ is the element of value minus one and $\tilde\Psi_R$ the element of value plus one. The field is their sum, $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics written with the frame cells, not a second one.</p>
 <p><strong>Its elimination.</strong> The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, so applying $\tilde\nabla^{\natural}$ to the first and using the second gives</p>
 <p>$$
 \Box\tilde\Psi_R=\tilde\nabla^{\natural}m\tilde\Psi_L=m^2\tilde\Psi_R,
@@ -106,13 +106,13 @@ $$</p>
 $$</p>
 <p>in which the gradient acts from the left, the mass acts from the right through $\vec e_z$, and the coefficient complex conjugate $\bar F$ supplies an antilinear part. Its mass multiplies on the other side from the mass of the pair above. The distinction is one of operators, not of fields: the pair acts from the left only and needs the two parts of the field; this operator acts from both sides and can be written on the algebra itself. It is a different operator, related to the pair by a real-linear dictionary and not by an identity; a functional integral written on it would carry the antilinear mass through every step, and is not attempted here.</p>
 <h3 id="the-algebra-bilinear">The Algebra Bilinear</h3>
-<p>With $\mathrm{Sc}$ as the trace pairing — the quaternionic form $\langle\tilde\Psi,\tilde\Phi\rangle_{\natural}=\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Phi)$ — the candidate algebra reading is</p>
+<p>With $\mathrm{Sc}$ the trace pairing and $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic form of the conventions, the candidate algebra reading is</p>
 <p>$$
 S=\int \mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi\big)-m\!\!\int\mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\Psi\big),
 $$</p>
 <p>whose representative in the frame cells is the Lagrangian above. The mass term is the second integral; it is quadratic in the field and linear in the mass, and it couples the two parts, as the parent article requires.</p>
 <h3 id="the-pair-operator-on-the-algebra">The Pair Operator on the Algebra</h3>
-<p>The pair operator acts on the field by left and right multiplication, and it is written out without an operator symbol. With $\mathbb{D}$ the pair operator of the conventions,</p>
+<p>The pair operator acts by left and right multiplication, and it is written out without an operator symbol. The conventions define $\mathbb{D}$ on the pair; read on one element of the algebra, which is the carrier of the field, its action is the derived form</p>
 <p>$$
 \mathbb{D}:\ \psi\longmapsto-\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\psi}{\partial Q_k}\vec e_y .
 $$</p>
@@ -121,13 +121,13 @@ $$</p>
 <p>$$
 \mathbb{D}_p:\ \psi_0\longmapsto iE\,\psi_0\vec e_x-i\sum_k p_k\,\vec e_k\psi_0\vec e_y ,
 $$</p>
-<p>whose square is $p^2$ times the identity, with $p^2=E^2-\vec p^{\,2}$: the two factors of $\vec e_x$ on the time term give $-E^2$, and the two factors of $\vec e_y$ on the spatial terms give $+\vec p^{\,2}$, the cross terms cancelling between the pairs. The operator is the same dynamics, written once.</p>
+<p>whose square is $p^2$ times the identity, with $p^2=E^2-|\vec p|^{2}$: the time term squares to $+E^2e_t$, because $i^2$ and $\vec e_x^{2}$ are both $-1$, each spatial term squares to $-p_k^{2}e_t$, and the cross terms cancel between the time term and the three spatial ones. The operator is the same dynamics, written once.</p>
 <p>The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is <em>not</em> fixed by the algebra alone, and that the transcription above is the working setting. The path integral inherits that status: everything below is exact for it, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.</p>
 <h3 id="properties-of-the-action">Properties of the Action</h3>
 <p>Three properties of the action are used below.</p>
 <p><strong>It is even.</strong> The action is quadratic in the fermionic field, hence bosonic: it commutes with fermion parity and is a $c$-number functional of the field. This is why $\exp(iS)$ is a genuine phase and not an operator.</p>
 <p><strong>Its phase is central.</strong> $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.</p>
-<p><strong>Its Hermiticity structure.</strong> $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}m\psi$ is Hermitian. Both statements use the Dirac adjoint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ of the parent article: the cell $iR_{\vec e_x}^{\mathrm{axf}}$ is Hermitian and converts the bilinear into a Hermitian one, while the three derivative terms are anti-Hermitian and differ from their adjoints by a total derivative, which is the caveat. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator squares to the d'Alembertian, which is scalar, so its spectrum is purely imaginary and comes in pairs $\pm i\mu$ with $\mu$ real; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}_{\mathrm{E}}+m)$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §<em>Parity Sectors, the Phase and the Sign Problem</em>.</p>
+<p><strong>Its Hermiticity structure.</strong> $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}m\psi$ is Hermitian. Both statements use the Dirac adjoint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ of the parent article: that cell is Hermitian and converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit; the three spatial directions enter through cells that are anti-Hermitian, which is why the derivative term is Hermitian only up to a total derivative, and that is the caveat. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box_{\mathrm{E}}>0$; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}_{\mathrm{E}}+m)$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §<em>Parity Sectors, the Phase and the Sign Problem</em>.</p>
 <h3 id="sources">Sources</h3>
 <p>The sources are Grassmann-valued: the generating functional</p>
 <p>$$
@@ -158,14 +158,14 @@ $$</p>
 <p>$$
 \langle\psi_a\,\psi_b^{\dagger}\rangle=\frac{\int\prod d\psi^{\dagger}d\psi\;\exp(-\psi^{\dagger}M\psi)\,\psi_a\psi_b^{\dagger}}{\int\prod d\psi^{\dagger}d\psi\;\exp(-\psi^{\dagger}M\psi)}=\big(M^{-1}\big)_{ab} ,
 $$</p>
-<p>in the coefficient variables; the cell $iR_{\vec e_x}^{\mathrm{axf}}$ of the adjoint multiplies the field-level amplitude by the same factor on both sides and changes no entry.</p>
+<p>in the coefficient variables; the cell of the adjoint multiplies the numerator and the normalization of the measure alike, so it cancels from the amplitude.</p>
 <p>The index order is part of the statement and was checked: for a random complex $2\times2$ $M$ the four amplitudes are the four entries of $M^{-1}$, in the order $\langle\psi_a\psi_b^{\dagger}\rangle=(M^{-1})_{ab}$, to nine decimals. The two off-diagonal amplitudes are sensitive to it because $M$ need not be symmetric: they are $(M^{-1})_{01}$ and $(M^{-1})_{10}$, and the anticommuting order of the measure is what fixes which field contracts with which index.</p>
 <p><strong>The generating functional.</strong> Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\psi\to\psi+M^{-1}\eta$, $\psi^{\dagger}\to\psi^{\dagger}+\bar\eta M^{-1}$ is a shift by odd constants — gives the algebraic identity</p>
 <p>$$
 \boxed{\;\int\prod d\psi^{\dagger}\,d\psi\;\exp\!\big(-\psi^{\dagger}M\psi+\bar\eta\psi+\psi^{\dagger}\eta\big)=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big]\;},
 $$</p>
 <p>with the exponential terminating at the top degree in the sources: the bilinear $\bar\eta M^{-1}\eta$ has degree two, so the series stops at degree two for one mode and at degree $2N$ for $N$ modes.</p>
-<p>The physical weight of §<em>Sources</em> replaces $-\psi^{\dagger}M\psi$ by $iS$, the adjoint's cell riding along as before, and $\bar\eta\psi+\psi^{\dagger}\eta$ by $i\!\int(\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta)$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-m)$ and $M^{-1}=S_F$,</p>
+<p>In the physical weight of §<em>Sources</em>, $-\psi^{\dagger}M\psi$ becomes $iS$ and the sources become the odd ones of that section, $\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-m)$ and $M^{-1}=S_F$,</p>
 <p>$$
 Z[\eta,\bar\eta]=\det M\;\exp\!\big[-\bar\eta\,M^{-1}\eta\big]
 =\det(\mathbb{D}-m)\;\exp\!\Big[-\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
@@ -193,11 +193,11 @@ $$</p>
 <p>$$
 S_F(p)=\frac{i(\mathbb{D}_p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\mathbb{D}_p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$</p>
-<p>which is the propagator companion's amplitude. Written with the units, and with the two imaginary units of $-i(\mathbb{D}_p+m)$ multiplied to $-1$, the same amplitude is</p>
+<p>which is the propagator companion's amplitude. Written with the units, the numerator $-i(\mathbb{D}_p+m)w$ has its two imaginary units multiplied to $-1$ and becomes</p>
 <p>$$
-S_F(p):\ w\longmapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{p^2-m^2+i\epsilon},
+S_F(p):\ w\longmapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$</p>
-<p>the two imaginary units of the prefactor being the whole of the difference between the two displays.</p>
+<p>which is the companion's display, its denominator being $-p^2+m^2-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.</p>
 <p>The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $ict'$ axis of the material sector. The momentum cell squares to $p^2$, so its eigenvalues over the four coefficients are $\pm\mu$ with $\mu^2=p^2$, each twice, and a pair contributes $(\mu-m)(-\mu-m)=m^2-\mu^2$. The determinant is thus the square of the scalar one,</p>
 <p>$$
 \det\big(\mathbb{D}-m\big)=\big[\det\big(\Box-m^2\big)\big]^2
@@ -218,7 +218,7 @@ $$</p>
 <p><strong>The sign of the Pfaffian.</strong> Unlike $\det$, $\mathrm{Pf}$ has a sign that is not determined by the magnitudes, and the sign is fixed by the ordering of the generators — that is, by the <em>conventions of the measure</em>, not by the algebra. Two consequences are worth recording.</p>
 <p>First, the sign is a genuine physical input wherever the Pfaffian is the answer: it is the sign that separates the two parity sectors of a Majorana field, and it flips under an odd permutation of the generators (equivalently, of the differentials). The article keeps the order fixed and records that the sign is not an algebra-invariant.</p>
 <p>Second, the algebra's own statement is the <em>existence</em> of the antisymmetric pairing, not its sign. The real structure $\flat$ supplies the existence of a field-to-its-conjugate pairing; the measure normalizes it; the orientation is a convention. This is the same three-way division the propagator companion records for the $i\epsilon$, and the algebra's contribution is again the middle term.</p>
-<p><strong>The biquaternion form.</strong> The pairing is the antisymmetric bilinear of the field with its own conjugate, and the Pfaffian is its Berezin integral; its square is the determinant of the Dirac kernel whose inverse is $S_F$. The Majorana quantization is therefore the statement that the pairing is available; the Dirac quantization is the statement that it is not used, the two parts of the field being independent. Both statements are read on the units and not on an array: the wedge of two elements is an element, and the pairing of a field with its conjugate is its scalar part.</p>
+<p><strong>The biquaternion form.</strong> The pairing is the antisymmetric form that the algebra puts on the field and its own conjugate, the object $\flat$ makes available, and the Pfaffian is its Berezin integral; its square is the determinant of the pair operator whose inverse is $S_F$. The Majorana quantization is therefore the statement that the pairing is available; the Dirac quantization is the statement that it is not used, the two parts of the field being independent.</p>
 <h2 id="the-euclidean-integral-and-the-boundary-conditions">The Euclidean Integral and the Boundary Conditions</h2>
 <p><strong>Wick rotation.</strong> With $t'\to-i\tau$ the $ict'$ direction of $\mathbb{M}_-$ becomes the real quaternion direction, as the Wick-rotation companion establishes, and the oscillatory weight becomes a decaying one:</p>
 <p>$$
@@ -300,7 +300,7 @@ $$</p>
 <p>The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The equation integrated is the <strong>one-sided</strong> pair over the two parts of the field; Kravchenko's <strong>two-sided</strong> equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.</p>
 <p>The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\psi_b^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the propagator companion's</p>
 <p>$$
-S_F(p):\ w\longmapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{p^2-m^2+i\epsilon},
+S_F(p):\ w\longmapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$</p>
 <p>with the two imaginary units of $-i(\mathbb{D}_p+m)$ multiplied to $-1$. The determinant of the pair operator is the square of the scalar determinant, $\det(\mathbb D-m)=[\det(\Box-m^2)]^2$, because the momentum cell squares to $p^2$, so its eigenvalues are $\pm\mu$ in two pairs and each pair contributes $m^2-\mu^2$.</p>
 <p>For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ makes available the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$; the identity $e^{i\omega_n\beta}=-1$ is exact for every integer $n$ and equivalent to $\omega_n=(2n+1)\pi/\beta$.</p>
@@ -352,7 +352,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\psi_a\psi_b^{\dagger}\rangle=(M^{-1})_{ab}$</td>
-<td>Two-point function (inverse kernel, stated index order); the adjoint's cell multiplies both sides</td>
+<td>Two-point function (inverse kernel, stated index order); the adjoint's cell cancels from the ratio</td>
 </tr>
 <tr>
 <td>$Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$</td>
@@ -364,14 +364,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}_p:\ w\mapsto iE\,w\vec e_x-i\sum_k p_k\,\vec e_k w\vec e_y$</td>
-<td>Momentum cell; its square is $p^2$ times the identity, with $p^2=E^2-\vec p^{\,2}$</td>
+<td>Momentum cell; its square is $p^2$ times the identity, with $p^2=E^2-|\vec p|^{2}$</td>
 </tr>
 <tr>
 <td>$\mathbb{D}:\ \psi\mapsto-\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\psi}{\partial Q_k}\vec e_y$</td>
-<td>Pair operator; left and right multiplication by the units, no imaginary unit left</td>
+<td>The pair operator read on one element; the conventions define it on the pair</td>
 </tr>
 <tr>
-<td>$S_F(p):\ w\mapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{p^2-m^2+i\epsilon}$</td>
+<td>$S_F(p):\ w\mapsto\frac{E\,w\vec e_x-\sum_k p_k\,\vec e_k w\vec e_y-im\,w}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$</td>
 <td>Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$</td>
 </tr>
 <tr>

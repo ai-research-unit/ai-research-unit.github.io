@@ -81,7 +81,7 @@
 <h2 id="three-kinds-of-object">Three Kinds of Object</h2>
 <p><strong>Two algebras, one of them ambient.</strong> The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. The operators of $\mathbb{B}$ form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. An element of $\mathbb{B}$ is not an operator of $\mathbb{B}$; it <em>generates</em> one, and the generation has two sides, the left multiplication $L_a\psi=a\psi$ and the right multiplication $R_b\psi=\psi b$, with the two-sided $L_aR_b\psi=a\psi b$ (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>).</p>
 <p><strong>Why the distinction is the whole article.</strong> An element multiplies from one side only, so a sum of elements with derivative coefficients is a first-order operator of one side. A sum of two-sided multiplications is an operator already, and each of them may act from both sides at once. The first is confined to the algebra; the second is not, because a generator is a frame object and not an element of $\mathbb{B}$. That is the difference between the gradient and the contraction, and everything else follows from it.</p>
-<p><strong>The six objects, in one table.</strong> "Contraction" in the third row means $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, the four frame generators contracted with the four derivatives; it is written out in §<em>The Frame Generators</em>. The last column is the determinant of the symbol, the array obtained by replacing each derivative by its plane-wave value; it is computed in §<em>What a Plane Wave Sees</em>.</p>
+<p><strong>The six objects, in one table.</strong> "Contraction" in the third row means the sum $iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}$, the four frame generators contracted with the four derivatives; it is written out in §<em>The Frame Generators</em>. The last column is the determinant of the symbol, the array obtained by replacing each derivative by its plane-wave value; it is computed in §<em>What a Plane Wave Sees</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -331,12 +331,12 @@ $$</p>
 <p>The four arrays are constant, and that is why the derivative can stand outside them in the sum below.</p>
 <p><strong>The operator.</strong> The contraction is the sum of the four, each multiplied by the derivative of its own coordinate:</p>
 <p>$$
-\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}},
+iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3},
 \qquad x_0=ct',\quad x_k=q_k .
 $$</p>
 <p><strong>The operator as one array.</strong> Multiplying each generator by its coordinate derivative and adding the four gives a single $4\times4$ array whose entries are constants times derivatives:</p>
 <p>$$
-\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}=
+iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}=
 \begin{pmatrix}
 -i\frac{\partial}{\partial x_2}&-i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}&0&i\frac{\partial}{\partial x_1}\\[3pt]
 i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}&i\frac{\partial}{\partial x_2}&-i\frac{\partial}{\partial x_1}&0\\[3pt]
@@ -346,31 +346,30 @@ i\frac{\partial}{\partial x_1}&0&-i\frac{\partial}{\partial x_0}-i\frac{\partial
 $$</p>
 <p><strong>Written out.</strong> The time generator is a right multiplication by $\vec e_x$; each spatial generator is a left multiplication by $\vec e_k$ and a right multiplication by $\vec e_y$:</p>
 <p>$$
-\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)\psi
+\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)\psi
 =\frac{i}{c}\frac{\partial\psi}{\partial t'}\vec e_x+\sum_k i\,\vec e_k\frac{\partial\psi}{\partial q_k}\vec e_y .
 $$</p>
 <p>The time derivative acts from the right only; the three spatial derivatives act from both sides at once. That is what the four are, and it is the reason the square can be scalar.</p>
-<p><strong>What the four supply is the anticommutation, and only that.</strong> They satisfy</p>
+<p><strong>What the four supply is the anticommutation, and only that.</strong> Every pair of them anticommutes, and one pair is enough to see the shape:</p>
 <p>$$
-\bigl(iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\bigr)\bigl(iL_{e_{\nu}}R_{\vec e_{\nu(\nu)}}\bigr)
-+\bigl(iL_{e_{\nu}}R_{\vec e_{\nu(\nu)}}\bigr)\bigl(iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\bigr)=0
-\quad(\mu\ne\nu),
+\bigl(iL_{\vec e_x}R_{\vec e_y}\bigr)\bigl(iL_{\vec e_y}R_{\vec e_y}\bigr)
++\bigl(iL_{\vec e_y}R_{\vec e_y}\bigr)\bigl(iL_{\vec e_x}R_{\vec e_y}\bigr)=0,
 $$</p>
-<p>in <strong>both</strong> frames, and this is the property the algebra cannot supply to any four of its elements (§<em>Why Four Frame Generators and Not Four Units</em>). It is what makes the cross terms of the square cancel between the two orders of a mixed derivative.</p>
+<p>and the same holds for the other five pairs. The relation holds in <strong>both</strong> frames, and this is the property the algebra cannot supply to any four of its elements (§<em>Why Four Frame Generators and Not Four Units</em>). It is what makes the cross terms of the square cancel between the two orders of a mixed derivative.</p>
 <p><strong>The squares belong to the frame, not to the generator.</strong> In the $\mathbb{B}$ frame the four are $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$, and all four square to $+1$. The $\mathbb{M}_-$ generators are $-i$ times the $\mathbb{B}$ ones, $-i\,(-L_{\vec e_k}R_{\vec e_y})=iL_{\vec e_k}R_{\vec e_y}$, so there the three spatial ones square to $-1$, and a reader who takes the time generator's square to be $+1$ and the spatial ones' to be $-1$ as an intrinsic fact of the four has been misled by the frame. That $i$ is the $i$ of $Q_t=ict'$, the same one that turns the Euclidean form into the Lorentzian one, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records both at once. The sign vector $\varepsilon=(1,-1,-1,-1)$ is the metric of the frame in the display of the four, and it is not a second metric.</p>
 <p><strong>With these squares, the contraction squares to a scalar.</strong> In the $\mathbb{M}_-$ frame the signs add the way the material metric does, and</p>
 <p>$$
-\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)^{2}
+\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)^{2}
 =\frac{\partial^2}{\partial x_0^2}-\Delta=-\Box .
 $$</p>
 <p><strong>The normalisation.</strong> Multiplying by $i$ gives the operator whose square is $+\Box$,</p>
 <p>$$
-\Bigl(i\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)^{2}=\Box ,
+-R_{\vec e_x}\frac{\partial}{\partial x_0}-L_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}-L_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}-L_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3},
 $$</p>
 <p>and this is the operator the Bhabha article writes $\mathbb{C}^{\mathrm{spl}}=i\sum_\mu G_\mu\partial/\partial x_\mu$, its $G_\mu$ being the two products above, written there as letters.</p>
 <p><strong>The outer $i$ is the frame's $i$ again.</strong> Since the four $\mathbb{B}$ generators square to $+1$, the contraction in that frame squares to $+\Box$ with no normalisation:</p>
 <p>$$
-\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial Q_{\mu}}\Bigr)^{2}
+\Bigl(iR_{\vec e_x}\frac{\partial}{\partial Q_t}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial Q_x}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial Q_y}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial Q_z}\Bigr)^{2}
 =\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=+\Box .
 $$</p>
 <p>So the corpus's letter needs an explicit $i$ in the $\mathbb{M}_-$ frame and needs none in the $\mathbb{B}$ frame, and the two displays are the same operator. The $i$ that flips the three spatial ones is the $i$ of $Q_t=ict'$, exactly as in the metric. This is the third appearance of one factor in this note: in the form, in the four, and in the normalisation of the contraction.</p>
@@ -478,7 +477,7 @@ ik_3&-ik_2&ik_1&k_0
 $$</p>
 <p><strong>The contraction's symbol, as an array.</strong> Apply $\partial/\partial x_\mu\mapsto ik_\mu$ to the contraction:</p>
 <p>$$
-S\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)=
+S\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)=
 \begin{pmatrix}
 k_2&k_0+k_3&0&-k_1\\
 -k_0+k_3&-k_2&k_1&0\\
@@ -488,7 +487,7 @@ k_2&k_0+k_3&0&-k_1\\
 \qquad S^{2}=-\left(k_0^2-\lvert\vec k\rvert^2\right)I_4,
 $$</p>
 <p>$$
-\det S\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)
+\det S\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)
 =\left(k_0^2-\lvert\vec k\rvert^2\right)^2 .
 $$</p>
 <p>The two determinants are equal and the two arrays are not. Note where the $i$ sits: the gradient's array keeps it on the spatial entries and its time entry is real, while the contraction's array has none, because the $i$ of each of the four cancels the $i$ of its derivative. That is the $i$ of $Q_t=ict'$ showing in the arrays.</p>
@@ -514,7 +513,7 @@ $$</p>
 </tr>
 <tr>
 <td>the contraction</td>
-<td>$\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,ik_\mu$</td>
+<td>$iR_{\vec e_x}ik_0+iL_{\vec e_x}R_{\vec e_y}ik_1+iL_{\vec e_y}R_{\vec e_y}ik_2+iL_{\vec e_z}R_{\vec e_y}ik_3$</td>
 <td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
 </tr>
 </tbody>
@@ -525,14 +524,14 @@ $$</p>
 \tilde\nabla\text{ at }k:\ e_t+i\vec e_x,\quad \text{kernel }\operatorname{span}\left\{ie_t+\vec e_x,\ i\vec e_y+\vec e_z\right\},
 $$</p>
 <p>$$
-\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\,ik_{\mu}\ \text{at }k:\ \operatorname{rank}2,\quad
+iR_{\vec e_x}ik_0+iL_{\vec e_x}R_{\vec e_y}ik_1+iL_{\vec e_y}R_{\vec e_y}ik_2+iL_{\vec e_z}R_{\vec e_y}ik_3\ \text{at }k:\ \operatorname{rank}2,\quad
 \text{kernel }\operatorname{span}\left\{e_t+\vec e_y,\ \vec e_x+\vec e_z\right\}.
 $$</p>
 <p>The two kernels are different two-planes of the same four-dimensional space, and that is the correct picture: the two equations are different equations with the same cone. The gradient's kernel is computed by left multiplication, $\ker L(a)=\{m:am=0\}$, and it is two-dimensional because $a$ is of rank one, so its kernel is a line and each of the two columns of $m$ must lie in that line. The product kernel is two-dimensional because the symbol squares to zero on the cone, so it is a nonzero nilpotent and its rank is two. Neither count is an accident, and neither distinguishes the operators.</p>
 <p><strong>Off the cone both are invertible.</strong> At $k=(2,1,0,0)$, where $k_0^2-\lvert\vec k\rvert^2=3$, the contraction's symbol has determinant $9$ and the gradient's symbol has natural norm $3$, so no plane wave of that wave vector survives either operator.</p>
 <p><strong>What the cone does not decide.</strong> The mass. On a null wave both operators annihilate something, so both can write a massless equation; the difference appears at the next order, where the gradient's square carries the cross term and no scalar mass can be subtracted from it, while $i$ times the contraction squares to $\Box$, so that subtracting a scalar $m$ from it gives an operator whose square is $\Box-m^2$, and the equation implies $(\Box-m^2)\psi=0$. The cone is shared; the square is not. Any argument for the four that runs through the light cone is measuring the $i$ of $Q_t=ict'$ and not the difference between the operators.</p>
 <h2 id="one-field-three-answers">One Field, Three Answers</h2>
-<p>The three operators side by side, on the same ten fields, with $c=1$. This is the table to consult when a formula is ambiguous. "Contraction" is always the contraction $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, written out in §<em>The Frame Generators</em>.</p>
+<p>The three operators side by side, on the same ten fields, with $c=1$. This is the table to consult when a formula is ambiguous. "Contraction" is always the sum $iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}$, written out in §<em>The Frame Generators</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -681,9 +680,10 @@ $$</p>
 <h2 id="the-sources-letter">The Source's Letter</h2>
 <p><strong>The letter, defined.</strong> The source writes one letter, $\partial$, and it is the four frame generators contracted with the four derivatives, the three spatial terms carrying the minus sign:</p>
 <p>$$
-\partial=\sum_{\mu}\varepsilon_{\mu}\,iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}
-=iR_{\vec e_x}\frac{\partial}{\partial x_0}-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}
-=\frac{i}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k},
+\partial=\frac{i}{c}R_{\vec e_x}\frac{\partial}{\partial t'}
+-iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial q_x}
+-iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial q_y}
+-iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial q_z},
 $$</p>
 <p>with $\varepsilon=(1,-1,-1,-1)$, $x_0=ct'$ and $x_k=q_k$.</p>
 <p><strong>The letter as an array.</strong> With the three spatial terms negated, the array of the contraction displayed in §<em>The Frame Generators</em> changes sign in its three spatial parts:</p>
@@ -770,7 +770,7 @@ $$</p>
 <p><strong>The d'Alembertian</strong> is the scalar second-order operator $\Box=\tilde\nabla\tilde\nabla^{\natural}$. It stays in the algebra, it is scalar, and its kernel is the light cone.</p>
 <p><strong>The contraction</strong> is a first-order operator of the algebra built from four frame generators. It acts on both sides, it leaves the algebra for the frame, and its square is scalar in one copy; the gain is anticommutation, not a signature, and its symbol has the same light cone as the gradient's.</p>
 <p><strong>The pair operator</strong> is one operator on $\mathbb{B}\oplus\mathbb{B}$ whose square is $\Box I$; it is the pair written once and contains none of the four. <em>Operator and Calculus Conventions</em> calls it $\mathbb{C}^{\mathrm{spl}}$, and <em>Bhabha Multi-Mass Wave Equations</em> calls the contraction by the same name; the space is the difference.</p>
-<p><strong>The letter</strong> $\partial$ is the contraction with the three spatial terms negated, $\partial=iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$. The conventions do not define it and this note does, once and in full. It shares its square $-\Box$ and its symbol with the contraction. Its glyph is a derivative's, and the index is what separates the two.</p>
+<p><strong>The letter</strong> $\partial$ is the contraction with the three spatial terms negated, $\partial=iR_{\vec e_x}\partial_{x_0}-iL_{\vec e_x}R_{\vec e_y}\partial_{x_1}-iL_{\vec e_y}R_{\vec e_y}\partial_{x_2}-iL_{\vec e_z}R_{\vec e_y}\partial_{x_3}$. The conventions do not define it and this note does, once and in full. It shares its square $-\Box$ and its symbol with the contraction. Its glyph is a derivative's, and the index is what separates the two.</p>
 <p><strong>The rule of use.</strong> A first-order equation in one field <em>with a mass</em> needs the four generators; a second-order equation in one field needs $\Box$; a first-order pair needs the gradient with its conjugate and the direct sum. All three write the same light cone, so the choice is never about the cone and always about the square.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -823,7 +823,7 @@ $$</p>
 </tr>
 <tr>
 <td>the contraction</td>
-<td>the sum $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$; squares to $-\Box$ in the $\mathbb{M}_-$ frame and $+\Box$ in the $\mathbb{B}$ frame</td>
+<td>the sum $iR_{\vec e_x}\partial_0+iL_{\vec e_x}R_{\vec e_y}\partial_1+iL_{\vec e_y}R_{\vec e_y}\partial_2+iL_{\vec e_z}R_{\vec e_y}\partial_3$; squares to $-\Box$ in the $\mathbb{M}_-$ frame and $+\Box$ in the $\mathbb{B}$ frame</td>
 </tr>
 <tr>
 <td>$i$ times the contraction</td>
@@ -835,7 +835,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\partial$</td>
-<td><em>the source's letter</em>, defined in §<em>The Source's Letter</em> and in no conventions article; the contraction $iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$, never written with an index</td>
+<td><em>the source's letter</em>, defined in §<em>The Source's Letter</em> and in no conventions article; the contraction $iR_{\vec e_x}\partial_{x_0}-iL_{\vec e_x}R_{\vec e_y}\partial_{x_1}-iL_{\vec e_y}R_{\vec e_y}\partial_{x_2}-iL_{\vec e_z}R_{\vec e_y}\partial_{x_3}$, never written with an index</td>
 </tr>
 <tr>
 <td>$\partial_\mu$, $\partial/\partial x_\mu$</td>

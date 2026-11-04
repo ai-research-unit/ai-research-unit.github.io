@@ -216,11 +216,17 @@ $$</p>
 <p>The operator of the module, with the four physical coordinates $x_t = ct'$, $x_x = x$, $x_y = y$ and $x_z = z$, is</p>
 <p>$$
 \mathbb{D} := i\sum_\mu C_\mu\frac{\partial}{\partial x_\mu}
-= -R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_t} - \sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k},
+=
+\begin{aligned}
+{}-{}&R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_t}
+-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_x}\\[2pt]
+{}-{}&L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_y}
+-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_z},
+\end{aligned}
 \qquad
 \mathbb{D}^2 = -\frac{\partial^2}{\partial x_t^2} + \Delta = \Box ,
 $$</p>
-<p>where the last equality uses $\partial/\partial Q_t = -i\,\partial/\partial x_t$, hence $\partial^2/\partial Q_t^2 = -\partial^2/\partial x_t^2$. The operator carries no imaginary unit at all: the explicit $i$ of $\mathbb{D}$ and the $i$ of each cell multiply to $-1$, and that collapse is what the right-hand side of the display shows. Kept with its single $i$, the contraction $\sum_\mu C_\mu\partial/\partial x_\mu$ squares to $-\Box$; with the second $i$ it squares to $\Box$.</p>
+<p>where the last equality uses $\partial/\partial Q_t = -i\,\partial/\partial x_t$, hence $\partial^2/\partial Q_t^2 = -\partial^2/\partial x_t^2$. The operator carries no imaginary unit at all: the explicit $i$ of $\mathbb{D}$ and the $i$ of each cell multiply to $-1$, and that collapse is what the right-hand side of the display shows. Kept with its single $i$, the contraction $\sum_\mu C_\mu\partial/\partial x_\mu$ squares to $-\Box$; with the second $i$ it squares to $\Box$. The last line is the operators themselves, four of them, with no sum and no letter left: the time term is one-sided, $R^{\mathrm{axf}}_{\vec e_x}$ alone because $L^{\mathrm{axf}}_{e_t}$ is the identity, and the three spatial terms are two-sided.</p>
 <p>In this reading no conjugate is needed for the square. The four cells anticommute pairwise, so the mixed terms of $\mathbb{D}^2$ cancel by the Clifford relation rather than by conjugation, and each cell squares to $\pm I_4$, so the square is scalar. The algebra and the module reach the same $\Box$ for different reasons: in the algebra the timelike unit $e_t$ commutes with the vector units, which leaves the mixed term of $\tilde\nabla^2$ alive and forces the conjugate; in the module the timelike cell anticommutes with the spacelike ones, and nothing is left to cancel. The two readings divide the labour: the algebra needs only the gradient and pays with a conjugation, the module needs the two-sided cells and pays with a frame.</p>
 <p><strong>Chirality.</strong> The chirality cell is</p>
 <p>$$
