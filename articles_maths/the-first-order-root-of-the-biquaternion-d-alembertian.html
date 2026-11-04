@@ -165,7 +165,7 @@ $$</p>
 <p>$$
 a_\mu a_\nu+a_\nu a_\mu=2\delta_{\mu\nu}e_t .
 $$</p>
-<p>In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $b_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.</p>
+<p>In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $c_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.</p>
 <p>The same argument covers the material-sector signature. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one signature exists exactly when one of the opposite signature does.</p>
 <h3 id="the-carrier-is-four-dimensional">The Carrier Is Four-Dimensional</h3>
 <p>A field that carries the four units is an element of $\mathbb{B}$, four complex dimensions. The gradient has four coefficients, one per unit, and it acts on the four coefficients of the field. A field whose value is one complex number has no first-order equation of the series: $\tilde\nabla\phi=0$ reads</p>
@@ -211,7 +211,14 @@ $$</p>
 $$</p>
 <p>where $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$. The right action has square the identity, and its two eigenspaces are the two chiral halves: $\psi\vec e_z=i\psi$ for the eigenvalue $+1$ and $\psi\vec e_z=-i\psi$ for the eigenvalue $-1$. It commutes with every left multiplication, so it commutes with the gradient and preserves each kernel; at a nonzero null covector the two-dimensional kernel carries one state of each chirality. The mass couples the two labels, and because the gradient preserves the chirality, each label-$L$ part and its label-$R$ partner carry the same chirality; the pair does not exchange the two chiralities. The corpus calculus writes every equation on the left, so the right action is used here only to label the halves; it is a single right action, not a two-sided operator.</p>
 <h3 id="the-determinant">The Determinant</h3>
-<p>On a plane wave the symbol of $\mathbb{D}$ is the block matrix with the maps $\psi\mapsto\tilde K\psi$ and $\psi\mapsto\tilde K^{\natural}\psi$ off the diagonal. Its determinant is</p>
+<p>On a plane wave each derivative is replaced by its symbol, and $\mathbb{D}$ becomes the block matrix</p>
+<p>$$
+\mathbb{D}(\tilde K)=
+\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix},
+\qquad
+\mathbb{D}(\tilde K)(\psi_L,\psi_R)=\bigl(\tilde K\psi_R,\ \tilde K^{\natural}\psi_L\bigr),
+$$</p>
+<p>whose off-diagonal entries are the left multiplications $\psi\mapsto\tilde K\psi$ and $\psi\mapsto\tilde K^{\natural}\psi$. Every entry is a left multiplication by an element, and the matrix is a map of $\mathbb{B}\oplus\mathbb{B}$. Its determinant is</p>
 <p>$$
 \det\bigl(\mathbb{D}(\tilde K)-m\bigr)
 =\bigl(q_0^2-\lvert\vec q\rvert^2-m^2\bigr)^4 ,
@@ -351,6 +358,10 @@ $$</p>
 <tr>
 <td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$</td>
 <td>the d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part of an element, its coefficient of $e_t$</td>
 </tr>
 <tr>
 <td>$Q_\mu$</td>

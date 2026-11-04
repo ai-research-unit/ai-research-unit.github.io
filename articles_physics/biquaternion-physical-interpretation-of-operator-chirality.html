@@ -75,7 +75,7 @@
 <p><strong>What this article does.</strong> It restates the mathematics in the form a physicist reads, identifies the operator with the $\gamma_5$ of the Dirac equation, and states what the algebra does not supply. The proofs are in <em>Operator Chirality on the Biquaternion Algebra</em>, one click away, and nothing here is proved twice.</p>
 <p><strong>What it does not do.</strong> It does not derive a gauge group, a matter content or a mass value. It does not claim that the sides are two inequivalent representations of the Lorentz group: they are not, and §<em>What the Algebra Does Not Supply</em> states that limit in full.</p>
 <p><strong>The order of the article.</strong> Section §<em>Operator Chirality in One Page</em> gives the definition and the dimensions. Section §<em>The Chirality Operator Is Gamma Five</em> identifies the operator and its four properties. Section §<em>The Dirac Equation Reads the Sides</em> shows what the sides do to the equation and where the mass sits. Section §<em>The Eight Objects the Physics Does Not Need</em> takes the list of unrelated mathematical objects and states, for each, the physical reason it is not needed. Section §<em>What the Earlier Reading Adjoined</em> records the route this article replaces, and §<em>What the Algebra Does Not Supply</em> records the one thing the replacement does not buy.</p>
-<p><strong>Conventions.</strong> The algebra, the cells and the two slots are those of <em>Algebra and Element Conventions</em> and <em>Operator Family Conventions</em>; the frame cells $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-]$, the gradient and the array rule are those of <em>Matrix Representations Conventions</em> and <em>Operator and Calculus Conventions</em>, and none is redefined here. This article's own glyph is the chirality cell of the axis-free frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, printed as $\mathsf{V}^{\mathrm{vol}}$ throughout.</p>
+<p><strong>Conventions.</strong> The algebra, the cells and the two slots are those of <em>Algebra and Element Conventions</em> and <em>Operator Family Conventions</em>; the frame cells $\gamma_0,\dots,\gamma_3$, the gradient and the array rule are those of <em>Matrix Representations Conventions</em> and <em>Operator and Calculus Conventions</em>, and none is redefined here. This article's own glyph is the chirality cell of the axis-free frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, printed as $\mathsf{V}^{\mathrm{vol}}$ throughout.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -167,7 +167,7 @@
 <h2 id="the-chirality-operator-is-gamma-five">The Chirality Operator Is Gamma Five</h2>
 <p><strong>The identification.</strong> The product of the four generators is a cell, and it is the chirality operator:
 $$
-\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\mathsf{V}^{\mathrm{vol}}=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
 $$
 the last equality because $L_{e_t}=\mathrm I$. It is the cell that the Dirac literature calls $\gamma_5$, written with no matrix.</p>
 <p><strong>Its properties.</strong> Four, each verified by multiplying cells:</p>
@@ -197,7 +197,7 @@ the last equality because $L_{e_t}=\mathrm I$. It is the cell that the Dirac lit
 </tr>
 <tr>
 <td>with the frame</td>
-<td>$\{\gamma_\mu[\mathbb{M}_-],\mathsf{V}^{\mathrm{vol}}\}=0$</td>
+<td>$\{\gamma_\mu,\mathsf{V}^{\mathrm{vol}}\}=0$</td>
 <td>the frame is odd under the right multiplication by $\vec e_z$</td>
 </tr>
 </tbody>
@@ -303,7 +303,7 @@ so the conjugate member of the pair is the same operator read on the other side.
 </tr>
 <tr>
 <td>a Clifford algebra</td>
-<td>supply the anticommutation $\{\gamma_\mu[\mathbb{M}_-],\mathsf{V}^{\mathrm{vol}}\}=0$</td>
+<td>supply the anticommutation $\{\gamma_\mu,\mathsf{V}^{\mathrm{vol}}\}=0$</td>
 <td>the anticommutation holds for five cells; it is computed, not postulated</td>
 </tr>
 </tbody>
@@ -350,7 +350,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 <li><strong>No claim that the Clifford reading is wrong.</strong> It is a correct display of the same operators, and the article says where it stops being a foundation.</li>
 </ul>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.</p>
 <p><strong>What the frame is.</strong> The gammas are a frame of the algebra, five cells of the sixteen, and not a different algebra. In that frame the chirality operator, the side and the split read as follows.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -364,7 +364,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 <tr>
 <td>the chirality operator</td>
 <td>$-iR_{\vec e_z}$</td>
-<td>$\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$</td>
+<td>$\mathsf{V}^{\mathrm{vol}}=i\gamma_0\gamma_1\gamma_2\gamma_3$</td>
 </tr>
 <tr>
 <td>its side</td>
@@ -374,7 +374,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 <tr>
 <td>the Dirac operator</td>
 <td>$L(\tilde\nabla)$</td>
-<td>$i\gamma^\mu[\mathbb{M}_-]\,\partial/\partial x_\mu$ in the Clifford display</td>
+<td>$i\gamma^\mu\,\partial/\partial x_\mu$ in the Clifford display</td>
 </tr>
 <tr>
 <td>their relation</td>
@@ -390,7 +390,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 </table></div>
 <p><strong>The display.</strong> Where this article prints an array it prints both displays: the Peirce one, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and the axis-free one after it, labelled $\mathrm{axf}$, which is the display of the body. The body of the article writes the same operators in the axis-free display, and the change of display is a conjugation, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, which preserves every product, every trace and every determinant. A statement about the side is therefore a statement about both displays at once, and an array is a statement about one.</p>
 <h2 id="summary">Summary</h2>
-<p>Operator chirality is the side on which an operator multiplies. The chirality operator of a frame is its volume cell, $\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}$, a pure right multiplier, while the Dirac operator is the pure left multiplier $L(\tilde\nabla)$; the two commute, because a left multiplier never fails to commute with a right one, and that commutation is why a massless field carries states of both chiralities. The mass is the central scalar, the one term of the equation with no side, and therefore the term that couples the two.</p>
+<p>Operator chirality is the side on which an operator multiplies. The chirality operator of a frame is its volume cell, $\mathsf{V}^{\mathrm{vol}}=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}$, a pure right multiplier, while the Dirac operator is the pure left multiplier $L(\tilde\nabla)$; the two commute, because a left multiplier never fails to commute with a right one, and that commutation is why a massless field carries states of both chiralities. The mass is the central scalar, the one term of the equation with no side, and therefore the term that couples the two.</p>
 <p>The construction needs none of the eight objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spinor, no Pauli matrix, no ideal and no Clifford algebra. Each of them enters the older route as a choice, and each of them is invisible in the array, which is why the arrays were mistaken for the notion. The array of $\mathsf{V}^{\mathrm{vol}}$ is the same in every reading; the structures that were adjoined to obtain it are not needed to obtain it.</p>
 <p>The limit is stated once and it is not small: the two chiral halves of $\mathbb{B}$ are copies of one Lorentz module, so the grading of the algebra is vector-like, and the inequivalence of $S$ and $S^{\mathrm{c}}$ that the Standard Model uses is a property of the conjugate module rather than of $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
