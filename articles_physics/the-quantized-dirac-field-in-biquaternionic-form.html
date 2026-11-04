@@ -70,118 +70,95 @@
       <div class="article-body">
         <h1 id="the-quantized-dirac-field-in-biquaternionic-form"><strong>The Quantized Dirac Field in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>Canonical Quantization of the Biquaternion Dirac Field</em> promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian $\mathcal{L}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\mathbb{D}-m)\psi$, the conjugate momentum $\pi=i\psi^\dagger$ with its second-class constraint, the equal-time anticommutators, the expansion in the plane-wave solutions of the solutions article, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was treated through its spinor-module representative, and the question of what kind of object the operator-valued biquaternion field is was left standing.</p>
-<p>This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object <em>is</em> in the biquaternion framework, and it develops the four structures that make the operator field more than a transcription:</p>
+<p>The companion article <em>Canonical Quantization of the Biquaternion Dirac Field</em> promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian of the one-sided pair, the conjugate momentum with its second-class constraint, the equal-time anticommutators, the expansion in the parent's plane-wave solutions, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was handled through a representative rather than as an object in its own right, and the question of what kind of object the operator-valued biquaternion field is was left standing.</p>
+<p>This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object <em>is</em> in the biquaternion framework, and it develops the four structures that make the operator field more than a rewrite:</p>
 <ul>
-<li><strong>The field as an operator-valued biquaternion.</strong> The quantized field is a map from spacetime into the tensor product of the fermionic operator algebra and the algebra $\mathbb{B}$ (or, in the transcription adopted throughout the series, into the Dirac module of the spinor sector). The four conjugations of $\mathbb{B}$ lift to operations on the field, three antilinear and one complex-linear, and their action has to be computed together with the operator ordering.</li>
+<li><strong>The field as an operator-valued biquaternion.</strong> The quantized field is a map from spacetime into the tensor product of the fermionic operator algebra and the algebra $\mathbb{B}$. It is an element of $\mathbb{B}$ at every point, multiplied by an operator. The four conjugations of $\mathbb{B}$ lift to operations on the field, three antilinear and one complex-linear, and their action has to be computed together with the operator ordering.</li>
 <li><strong>The field as the odd generator.</strong> Under fermion parity the field is odd and a bilinear is even. The observable algebra is the even part, and the field is the object whose square generates it. This is the operator-level content of the grading the parents supply on the modes.</li>
-<li><strong>The operator-valued observables.</strong> The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{M}_-$, the charge in the centre $\mathbb{C}_{\mathbb{B}}$, and the current is a module-level bilinear that carries a Clifford-odd cell. Their normal ordering has a definite sign.</li>
-<li><strong>The two-point function as a $\mathbb{B}$-valued object.</strong> The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.</li>
+<li><strong>The operator-valued observables.</strong> The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{M}_-$, the charge in the centre $\mathbb{C}_{\mathbb{B}}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.</li>
+<li><strong>The two-point function as an operator-valued distribution.</strong> The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.</li>
 </ul>
 <p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, and $\hbar$ is kept explicit only in the spin operator.</p>
 <h2 id="the-operator-valued-field">The Operator-Valued Field</h2>
-<p>The classical field is a map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators. Two transcriptions are available, and the parents use the second:</p>
+<p>The classical field is an element-valued map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators,</p>
 <p>$$
 \tilde\Psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes\mathbb{B},
-\qquad\text{or}\qquad
-\psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes\Delta,
 $$</p>
-<p>where $\mathcal{A}$ is the fermionic operator algebra generated by the mode operators, $S=\mathbb{C}^2$ is the spinor module, the unique simple left $\mathbb{B}$-module, and $\Delta=S\oplus S^{\mathrm{c}}$ is the Dirac module, the direct sum of $S$ with its conjugate. In the first transcription the field is a $\mathbb{B}$-valued operator; in the second it is a module-valued operator, and the algebra acts on it by left multiplication. The two are related by the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$: an isomorphism of complex algebras onto $M_2(\mathbb{C})$, whose defining representation is the module $S$. On $\Delta$ the cells act as $4\times4$ matrices and $I_4$ is their identity; the two chiral halves are $S$ and $S^{\mathrm{c}}$, and the mass pairs them off-diagonally.</p>
-<p>The relation is not an identity, and the distinction is the parent's open point. An element of $\mathcal{A}\otimes\mathbb{B}$ carries an operator factor <em>and</em> an algebra factor, and products of two such elements mix them: the operator factors multiply as operators and the algebra factors as biquaternions, with the two commuting. A module-valued field carries only the operator factor, and the algebra enters through the action.</p>
-<p>For everything in this article the module transcription is the one that works, and we adopt it. The fields of the expansion are</p>
+<p>where $\mathcal{A}$ is the fermionic operator algebra generated by the mode operators. The field carries one algebra factor and one operator factor at every point; a product of two such fields multiplies the algebra factors as biquaternions and the operator factors as operators, and the two factors commute, so the order of a product is decided by the mode operators alone.</p>
+<p>The fields of the expansion are</p>
 <p>$$
-\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde\Psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde\Psi^{(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde\Psi^{(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $x=(t',\vec x)$, $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$, the parent's spinors $w^{(r)},v^{(r)}$, and the mode anticommutators</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $x=(t',\vec x)$ and $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$. The amplitudes $\tilde\Psi^{(r)}_{\pm}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation of the solutions article at the positive root of $\tilde P\tilde P^{\natural}=-m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are</p>
 <p>$$
 \{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}
 =\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec q)\}
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$</p>
-<p>all others vanishing. The cells act on the module by left and right multiplication,</p>
+<p>all others vanishing.</p>
+<p><strong>The Hermitian conjugate and the Dirac adjoint.</strong> The dagger on the field carries every mode operator to its adjoint and the algebra factor through the star of the algebra,</p>
 <p>$$
-iR_{\vec e_x}^{\mathrm{axf}}\psi=i\,\psi\,\vec e_x,
-\qquad
-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi=i\,\vec e_k\,\psi\,\vec e_y,
+\tilde\Psi^{\mathrm{fop}\dagger}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde\Psi^{(r)*}_{+}(\vec p)\,\exp(+ip\cdot x)
++b^{\mathrm{fop}}_r(\vec p)\,\tilde\Psi^{(r)*}_{-}(\vec p)\,\exp(-ip\cdot x)\Big],
 $$</p>
-<p>so that</p>
+<p>and the Dirac adjoint of the field is the Hermitian conjugate followed by right multiplication by $i\vec e_x$,</p>
 <p>$$
-\psi^{\mathrm{fop}\dagger}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,w^{(r)\dagger}(\vec p)\,\exp(+ip\cdot x)
-+b^{\mathrm{fop}}_r(\vec p)\,v^{(r)\dagger}(\vec p)\,\exp(-ip\cdot x)\Big],
-$$</p>
-<p>$$
-\psi^{\mathrm{fop}\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}=\psi^{\mathrm{fop}\dagger}(x)\,iR_{\vec e_x}^{\mathrm{axf}}
+\tilde\Psi^{\mathrm{fop}\dagger}(x)\,i\vec e_x
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,\bar w^{(r)}(\vec p)\,\exp(+ip\cdot x)
-+b^{\mathrm{fop}}_r(\vec p)\,\bar v^{(r)}(\vec p)\,\exp(-ip\cdot x)\Big],
+\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde\Psi^{(r)*}_{+}(\vec p)\,i\vec e_x\,\exp(+ip\cdot x)
++b^{\mathrm{fop}}_r(\vec p)\,\tilde\Psi^{(r)*}_{-}(\vec p)\,i\vec e_x\,\exp(-ip\cdot x)\Big].
 $$</p>
-<p>with $\bar w^{(r)}=w^{(r)\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ and $\bar v^{(r)}=v^{(r)\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The Dirac adjoint is thus the Hermitian conjugate followed by the Clifford-odd timelike cell of the reference frame, and the field $\psi^{\mathrm{fop}\dagger}$ is a row spinor, in the dual module of $\Delta$. The factor $iR_{\vec e_x}^{\mathrm{axf}}$ is the Clifford-odd cell that makes $\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi^{\mathrm{fop}}$ a Lorentz scalar. This is the same odd/even distinction that the minimal-coupling companion records: the Dirac adjoint, and therefore the current, is not an inner operation of $\mathbb{B}$.</p>
-<p>Two rules for the cells are used without further comment. The explicit $i$ of an operator and the $i$ of a cell multiply by $i^2=-1$, so $(i)(iR_{\vec e_x}^{\mathrm{axf}})=-R_{\vec e_x}^{\mathrm{axf}}$ and no display carries a double $i$. And a side is read from position, $L_aR_b\psi=a\psi b$, so $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are the same operator up to the central factor.</p>
+<p>The factor $i\vec e_x$ is the timelike member of the frame, and it is what makes the bilinear $\mathrm{Sc}\big(\tilde\Psi^{\mathrm{fop}\dagger}i\vec e_x\tilde\Psi^{\mathrm{fop}}\big)$ a Lorentz scalar. It is an element of the algebra and not a conjugation: the Dirac adjoint is an element product followed by the scalar part, and no conjugation by an element produces it.</p>
+<p><strong>How a bilinear is read.</strong> Throughout this article a bilinear of the field is the scalar part of a product of elements: an element standing on each side of the field, and the scalar part taken of the whole. The scalar part of $\tilde\Psi^{\mathrm{fop}\dagger}A\tilde\Psi^{\mathrm{fop}}B$ is a number for any two elements $A$ and $B$, and every observable below is a normal-ordered integral of such a scalar part. No other reading of the product is used.</p>
 <h3 id="the-conjugations-of-the-field">The Conjugations of the Field</h3>
-<p>The algebra carries the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, the Hermitian conjugate ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the anti-Hermitian conjugate $\flat=-{}^{*}$. They lift to the field, and the lifting has two features worth recording.</p>
-<p>First, the bar and the two operations built on it are antilinear, while ${}^{\natural}$ is complex-linear; the three that involve the quaternion factor — $\natural$, ${}^{*}$ and $\flat$ — reverse products, and the plain bar does not. For two operator-valued biquaternions $A$ and $B$,</p>
-<p>$$
-(AB)^{\natural}=B^{\natural}A^{\natural},
-\qquad
-(AB)^{*}=B^{*}A^{*},
-\qquad
-(AB)^{\flat}=-B^{\flat}A^{\flat},
-\qquad
-\overline{AB}=\bar A\,\bar B,
-$$</p>
-<p>where the operator factors are conjugated as well: by the dagger for ${}^{*}$ and $\flat$, and by complex conjugation for $\bar{\cdot}$. The reversal of the algebra product and the reversal of the operator product are one reversal seen twice, because the two factors commute. For a mode operator the Hermitian conjugation is the standard $a^{\mathrm{fop}}\mapsto a^{\mathrm{fop}\dagger}$.</p>
-<p>Second, the conjugates are not new fields. The complex conjugate $\psi^{\mathrm{fop}*}$ conjugates the spinor coefficients and leaves the mode operators alone; the Hermitian conjugate $\psi^{\mathrm{fop}\dagger}$ carries the operators to their adjoints and the spinors to their adjoints. The two therefore differ by the transposition of the spinor index and by the mode content.</p>
+<p>The algebra carries the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, the Hermitian conjugate ${}^{*}$ and the anti-Hermitian conjugate $\flat=-{}^{*}$. They lift to the field, and the lifting has two features worth recording.</p>
+<p>First, the bar and the two operations built on it are antilinear, while ${}^{\natural}$ is complex-linear; the three that involve the quaternion factor — $\natural$, ${}^{*}$ and $\flat$ — reverse the order of a product, and the plain bar does not. The operator factors are conjugated as well: by the dagger for ${}^{*}$ and $\flat$, and by complex conjugation for $\bar{\cdot}$. The reversal of the algebra product and the reversal of the operator product are one reversal seen twice, because the two kinds of factor commute. For a mode operator the Hermitian conjugation is the standard $a^{\mathrm{fop}}\mapsto a^{\mathrm{fop}\dagger}$.</p>
+<p>Second, the conjugates are not new fields. The complex conjugate $\tilde\Psi^{\mathrm{fop}*}$ conjugates the algebra coefficients and leaves the mode operators alone; the Hermitian conjugate $\tilde\Psi^{\mathrm{fop}\dagger}$ carries the mode operators to their adjoints and the algebra factor through the natural conjugation as well as the bar. The two therefore differ by the natural conjugation of the algebra factor and by the mode content.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Mode content</th>
-<th>Spinor content</th>
+<th>Algebra content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\psi^{\mathrm{fop}}$</td>
+<td>$\tilde\Psi^{\mathrm{fop}}$</td>
 <td>$a^{\mathrm{fop}}$, $b^{\mathrm{fop}\dagger}$</td>
-<td>$w^{(r)}$, $v^{(r)}$</td>
+<td>$\tilde\Psi^{(r)}_{+}$, $\tilde\Psi^{(r)}_{-}$</td>
 </tr>
 <tr>
-<td>$\psi^{\mathrm{fop}\dagger}$</td>
+<td>$\tilde\Psi^{\mathrm{fop}\dagger}$</td>
 <td>$a^{\mathrm{fop}\dagger}$, $b^{\mathrm{fop}}$</td>
-<td>$w^{(r)\dagger}$, $v^{(r)\dagger}$</td>
+<td>$\tilde\Psi^{(r)*}_{+}$, $\tilde\Psi^{(r)*}_{-}$</td>
 </tr>
 <tr>
-<td>$\psi^{\mathrm{fop}*}$</td>
+<td>$\tilde\Psi^{\mathrm{fop}*}$</td>
 <td>$a^{\mathrm{fop}}$, $b^{\mathrm{fop}\dagger}$</td>
-<td>$w^{(r)*}$, $v^{(r)*}$</td>
+<td>$\overline{\tilde\Psi^{(r)}_{+}}$, $\overline{\tilde\Psi^{(r)}_{-}}$</td>
 </tr>
 </tbody>
 </table></div>
 <p>The particle and antiparticle halves are exchanged by Hermitian conjugation, not by the algebra's real structure, and the third line carries the same mode content as the first with the phases reversed, which is what conjugating the exponentials does.</p>
-<p>So the split of a fermion field into a "particle field" and an "antiparticle field" is the positive- and negative-frequency split of one operator field, and not a decomposition into an element of $\mathbb{B}$ and its real-structure conjugate. In particular the antiparticle is not obtained by applying $\flat$; that is the content of the standing distinction between the algebra's real structure and the module's charge conjugation, and it survives quantization unchanged.</p>
+<p>So the split of a fermion field into a "particle field" and an "antiparticle field" is the positive- and negative-frequency split of one operator field, and not a decomposition into an element of $\mathbb{B}$ and its real-structure conjugate. In particular the antiparticle is not obtained by applying $\flat$; that is the standing distinction between the algebra's real structure and the charge conjugation of the companion article on charged, neutral and truly neutral particles, and it survives quantization unchanged.</p>
 <h3 id="the-field-equation-as-an-operator-equation">The Field Equation as an Operator Equation</h3>
-<p>Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity on the module:</p>
+<p>Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:</p>
 <p>$$
-(\mathbb{D}-m)\,\psi^{\mathrm{fop}}=0,
-$$</p>
-<p>with $\mathbb{D}$ the pair operator of the parent, the module representative of the biquaternionic Dirac operator. The algebra form of the same equation is the one-sided chiral pair</p>
-<p>$$
-\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,
+\boxed{\;\tilde{\nabla}\tilde\Psi^{\mathrm{fop}}_R=m\tilde\Psi^{\mathrm{fop}}_L,
 \qquad
-\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
+\tilde{\nabla}^{\natural}\tilde\Psi^{\mathrm{fop}}_L=m\tilde\Psi^{\mathrm{fop}}_R\;},
 $$</p>
-<p>in which both gradients act from the left and the mass is the off-diagonal pairing of the two chiral halves $\tilde\Psi_R$ and $\tilde\Psi_L$. The pair and the cell equation are two readings of one equation, not two equations.</p>
+<p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R\bigr)$ it is $(\mathbb{D}-m)$, with $\mathbb{D}$ the pair operator of <em>Conventions of the Operators and the Calculus</em>, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
 <p>Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:</p>
 <p>$$
-\bigl(i\partial/\partial t'+D_3\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
-\qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
+\bigl(i\partial/\partial t'+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
 $$</p>
-<p>In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of <em>The Dirac Equation in Biquaternionic Form</em> but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.</p>
-<p>The operator ordering is immaterial in the cell equation because the gradient differentiates only the $x$-dependent $c$-number spinors and the mode operators are $x$-independent. The equal-time anticommutator is likewise consistent with the equation: applying the gradient to $\{\psi^{\mathrm{fop}}_a(x),\psi^{\mathrm{fop}\dagger}_b(y)\}$ and using the mode algebra reproduces the time derivative of the delta function required by the Hamiltonian, which is the field equation in bracket form. This is the standard consistency check of canonical quantization, recorded rather than rederived as in the parent.</p>
+<p>with $\nabla$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of <em>The Dirac Equation in Biquaternionic Form</em> but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.</p>
+<p>The operator ordering is immaterial in the field equation because the gradient differentiates only the $x$-dependent $c$-number amplitudes and the mode operators are $x$-independent. The equal-time anticommutator is likewise consistent with the equation: applying the gradient to the anticommutator of the field with its Dirac adjoint at two points, and using the mode algebra, reproduces the time derivative of the delta function required by the Hamiltonian, which is the field equation in bracket form. This is the standard consistency check of canonical quantization, recorded rather than rederived as in the parent.</p>
 <h2 id="the-field-as-the-odd-generator">The Field as the Odd Generator</h2>
 <p>Fermion parity is the operator that counts the total number of quanta modulo two,</p>
 <p>$$
@@ -194,43 +171,43 @@ $$</p>
 <p>so that every odd operator anticommutes with $(-1)^F$.</p>
 <p>Every term of the field expansion carries exactly one fermionic operator — $a^{\mathrm{fop}}$ or $b^{\mathrm{fop}\dagger}$ — so the field <em>anticommutes</em> with $(-1)^F$, and it is the odd generator of the operator algebra:</p>
 <p>$$
-\boxed{\;(-1)^F\,\psi^{\mathrm{fop}}(x)\,(-1)^F=-\psi^{\mathrm{fop}}(x),
+\boxed{\;(-1)^F\,\tilde\Psi^{\mathrm{fop}}(x)\,(-1)^F=-\tilde\Psi^{\mathrm{fop}}(x),
 \qquad
-(-1)^F\,\psi^{\mathrm{fop}\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}\,(-1)^F=-\psi^{\mathrm{fop}\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}\;}.
+(-1)^F\,\tilde\Psi^{\mathrm{fop}\dagger}(x)i\vec e_x\,(-1)^F=-\tilde\Psi^{\mathrm{fop}\dagger}(x)i\vec e_x\;}.
 $$</p>
 <p>This was checked on the two-mode truncation of the algebra in the parent article's grading discussion, and it extends to the field term by term.</p>
 <p>The parity has three consequences that organize the rest of the article.</p>
-<p><strong>Observables are even.</strong> A physical bilinear, such as the density $\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi^{\mathrm{fop}}$ or the current below, is quadratic in the field and therefore even, commuting with $(-1)^F$. This is why the physical content of the theory is in the bilinears: the field itself is not an observable, and the sign $\psi^{\mathrm{fop}}\mapsto-\psi^{\mathrm{fop}}$ is invisible to every gauge-invariant bilinear. The <strong>observable algebra</strong> is the even subalgebra of the field algebra; equivalently, the field is a square root of the observables.</p>
+<p><strong>Observables are even.</strong> A physical bilinear, such as the Dirac scalar $\mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}i\vec e_x\tilde\Psi^{\mathrm{fop}}\bigr)$ or the current below, is quadratic in the field and therefore even, commuting with $(-1)^F$. This is why the physical content of the theory is in the bilinears: the field itself is not an observable, and the sign $\tilde\Psi^{\mathrm{fop}}\mapsto-\tilde\Psi^{\mathrm{fop}}$ is invisible to every gauge-invariant bilinear. The <strong>observable algebra</strong> is the even subalgebra of the field algebra; equivalently, the field is a square root of the observables.</p>
 <p><strong>The grading is an algebra grading.</strong> The operator algebra splits into an even part, commuting with $(-1)^F$, and an odd part, anticommuting with it, and products obey the graded rule: even$\cdot$even and odd$\cdot$odd are even, even$\cdot$odd is odd. The field operators anticommute with one another precisely because they are all odd. "Fermionic operators anticommute" and "the algebra is $\mathbb{Z}/2$-graded with the field in the odd part" are the same statement.</p>
-<p><strong>The grading and the $2\pi$ rotation agree on the field.</strong> The companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> shows that a rotation by $2\pi$ acts on the field by $\psi^{\mathrm{fop}}\mapsto-\psi^{\mathrm{fop}}$, because the field transforms in the half-integer-spin module on which the nontrivial covering element $-e_t$ acts as $-\mathrm{id}$. Conjugation by $(-1)^F$ acts on the field in the same way, since every term of the expansion carries one fermionic operator. The two operations agree on the odd subspace; this agreement is the operator-level form of the spin–statistics sign $(-1)^{2s}=-1$ at $s=\tfrac12$, with $(-1)^F$ acting as that sign on the odd subspace. It is a consistency of two structures, and it does not by itself force the bracket — that force is the theorem's, imported from relativistic field theory.</p>
+<p><strong>The grading and the $2\pi$ rotation agree on the field.</strong> The companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> shows that a rotation by $2\pi$ acts on the field by $\tilde\Psi^{\mathrm{fop}}\mapsto-\tilde\Psi^{\mathrm{fop}}$, because the field is of half-integer spin and the nontrivial covering element $-e_t$ multiplies each of its two parts by $-1$. Conjugation by $(-1)^F$ acts on the field in the same way, since every term of the expansion carries one fermionic operator. The two operations agree on the odd subspace; this agreement is the operator-level form of the spin–statistics sign $(-1)^{2s}=-1$ at $s=\tfrac12$, with $(-1)^F$ acting as that sign on the odd subspace. It is a consistency of two structures, and it does not by itself force the bracket — that force is the theorem's, imported from relativistic field theory.</p>
 <p>The single-mode truncation of this structure lives <em>inside</em> $\mathbb{B}$. The spin–statistics companion computes the truncated ladder</p>
 <p>$$
-\boxed{\;\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},
+\boxed{\;\frac{\tilde S_+}{\hbar}=\tfrac12(i\vec e_x-\vec e_y),
 \qquad
-\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)=\frac{\tilde S_-}{\hbar},
+\frac{\tilde S_-}{\hbar}=\tfrac12(i\vec e_x+\vec e_y),
 \qquad
-\vec\Upsilon_x^2=0,
+\Bigl(\frac{\tilde S_+}{\hbar}\Bigr)^2=0,
 \qquad
-\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
+\Bigl\{\frac{\tilde S_+}{\hbar},\frac{\tilde S_-}{\hbar}\Bigr\}=e_t,
 \qquad
 (-1)^F=i\vec e_z\;},
 $$</p>
-<p>so that for one mode the mode algebra, the spin ladder, and the parity element are all elements of $\mathbb{B}$. For the field they are not: the mode algebra is infinite-dimensional and the grading is external. The two statements are compatible, and the parent records the gap between them.</p>
+<p>so that for one mode the mode algebra, the spin ladder and the parity element are all elements of $\mathbb{B}$: the two ladder elements have vanishing squares, their anticommutator is the unit, and the parity element is the central phase times a spatial unit. For the field they are not: the mode algebra is infinite-dimensional and the parity is external to the algebra. The two statements are compatible, and the parent records the gap between them.</p>
 <h2 id="the-operator-valued-observables">The Operator-Valued Observables</h2>
 <h3 id="energy-momentum-charge">Energy, Momentum, Charge</h3>
 <p>The canonical energy–momentum and charge of the quantized field are</p>
 <p>$$
-H=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\Big(iR_{\vec e_x}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}+m\,iR_{\vec e_x}^{\mathrm{axf}}\Big)\psi^{\mathrm{fop}}\!:
-=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Big(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}+m\Big)\psi^{\mathrm{fop}}\!:,
+H=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde\Psi^{\mathrm{fop}\dagger}\Bigl[-\sum_k i\,\vec e_k\,\frac{\partial\tilde\Psi^{\mathrm{fop}}}{\partial Q_k}\,\vec e_z+m\,i\,\tilde\Psi^{\mathrm{fop}}\,\vec e_x\Bigr]\Bigr)\!:,
 $$</p>
 <p>$$
-P^{\mathrm{fop}}_k=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\Big(-i\frac{\partial}{\partial Q_k}\Big)\psi^{\mathrm{fop}}\!:,
+P^{\mathrm{fop}}_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde\Psi^{\mathrm{fop}\dagger}\Bigl(-i\frac{\partial\tilde\Psi^{\mathrm{fop}}}{\partial Q_k}\Bigr)\Bigr)\!:,
 \qquad
 P^{\mathrm{fop}}=\sum_kP^{\mathrm{fop}}_k\vec e_k,
 \qquad
-Ϙ^{\mathrm{fop}}=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\psi^{\mathrm{fop}}\!: .
+Ϙ^{\mathrm{fop}}=\int d^3x\,:\!\mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}\tilde\Psi^{\mathrm{fop}}\bigr)\!: .
 $$</p>
-<p>The simplification of the kinetic term is the rule $i^2=-1$. Written with the cells, the parent's first form is $-i\,C_0C_k=-i\,(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=iR_{\vec e_x}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, three factors of $i$ whose product is $i$; the second form is $-iC_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, two factors whose product is $+1$. The same collapse gives $mC_0=m\,iR_{\vec e_x}^{\mathrm{axf}}$. Substituting the mode expansion and normal ordering gives the parent's results,</p>
+<p><strong>The reduction of the frame.</strong> Each member of the frame enters a bilinear as a factor on the left of the field and a factor on the right, one of the two being the unit in the cases that follow, and the reduction to the factors above is one structure constant together with $i^2=-1$. The kinetic term carries the spatial member: its left factor is $i\vec e_k$ and its right factor is $\vec e_y$, and right multiplication by $i\vec e_x$ follows, so the two right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ and the two phases give $i^2=-1$, which leaves $-i\vec e_k$ on the left of the field and $\vec e_z$ on its right. The mass term carries the timelike member, whose left factor is the unit, so it reduces to $m\,i\vec e_x$ on the right with no factor on the left. The current below is reduced the same way, and the spin bilinear by its left factor alone; the reduction is a derived form of the frame's two-sided action on the field, and it uses no input beyond the multiplication of the units.</p>
+<p>Substituting the mode expansion and normal ordering gives the parent's results,</p>
 <p>$$
 H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\big),
 \qquad
@@ -269,89 +246,82 @@ $$</p>
 <h3 id="the-current">The Current</h3>
 <p>The conserved current is the bilinear</p>
 <p>$$
-J_\mu(x)=\,:\!\psi^{\mathrm{fop}\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{axf}}\,\psi^{\mathrm{fop}}(x)\!:,
+J_t(x)=:\!\mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}\tilde\Psi^{\mathrm{fop}}\bigr)\!:,
 \qquad
-\kappa(t)=x,\quad\kappa(k)=y,
+J_k(x)=:\!\mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}\vec e_k\tilde\Psi^{\mathrm{fop}}\vec e_z\bigr)\!:,
+\qquad k=x,y,z,
 $$</p>
-<p>normal-ordered, Hermitian for all four components, and even under fermion parity. The two $i$'s collapse by $i^2=-1$, and the adjacent cells combine through the single identity $R_{\vec e_x}^{\mathrm{axf}}L_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which is $(R_{\vec e_x}^{\mathrm{axf}})^2=-e_t$ and $\vec e_y\vec e_x=-\vec e_z$ read together:</p>
-<p>$$
-J_\mu(x)=
-\begin{cases}
-:\!\psi^{\mathrm{fop}\dagger}\psi^{\mathrm{fop}}\!:, & \mu=t,\\[2pt]
-:\!\psi^{\mathrm{fop}\dagger}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\psi^{\mathrm{fop}}\!:, & \mu=k.
-\end{cases}
-$$</p>
+<p>normal-ordered, Hermitian for all four components, and even under fermion parity. Each component is the frame's bilinear reduced at the place of use. The spatial member carries $\vec e_k$ before the field and $\vec e_y$ after it; the timelike member carries no factor before the field. The fixed factor $i\vec e_x$ of the conjugate follows in both, so the right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ for the spatial component and as $\vec e_x\vec e_x=-\vec e_t$ for the timelike one, and the two phases contribute $i^2=-1$; the minus of the timelike component meets the minus of $\vec e_x\vec e_x$ and leaves the density with a plus sign. The timelike component is the density, a Hermitian form of the field with itself; each spatial component is the same form with the unit $\vec e_k$ inserted before the field and the fixed unit $\vec e_z$ after it.</p>
 <p>Writing $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, the conservation law is the operator equation</p>
 <p>$$
 \langle\tilde\nabla,\tilde J\rangle_{\natural}(x)=0,
 $$</p>
 <p>on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.</p>
-<p>The check below is made on the classical bilinear, which is the $c$-number coefficient the operator statement descends from. Taking</p>
+<p>The check below is made on the classical bilinear, which is the $c$-number coefficient the operator statement descends from. Taking an element-valued field</p>
 <p>$$
-\psi(x)=c_1w^{(1)}(\vec p_1)\exp(-ip_1\cdot x)+c_2w^{(2)}(\vec p_1)\exp(-ip_1\cdot x)
-+d_1v^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
+\tilde\Psi(x)=c_1\tilde\Psi^{(1)}_{+}(\vec p_1)\exp(-ip_1\cdot x)+c_2\tilde\Psi^{(2)}_{+}(\vec p_1)\exp(-ip_1\cdot x)
++d_1\tilde\Psi^{(1)}_{-}(\vec p_2)\exp(+ip_2\cdot x),
 $$</p>
-<p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
-<p>In biquaternion terms, $J_\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}*}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is <em>not</em> conserved, and that the physical current needs the Clifford-odd cell $iR_{\vec e_x}^{\mathrm{axf}}$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.</p>
+<p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
+<p>In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is <em>not</em> conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ displayed above.</p>
 <h3 id="spin">Spin</h3>
-<p>The spin operator is the spatial integral of the bilinear with the informational-sector cell $i\vec e_k$ acting from the left,</p>
+<p>The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,</p>
 <p>$$
-S_k=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\,\frac{\hbar}{2}\,iL_{\vec e_k}^{\mathrm{axf}}\,\psi^{\mathrm{fop}}\!:,
+S_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde\Psi^{\mathrm{fop}\dagger}\,\tilde S_k\,\tilde\Psi^{\mathrm{fop}}\Bigr)\!:,
+\qquad
+\tilde S_k=\tfrac{\hbar}{2}i\vec e_k .
 $$</p>
-<p>the left multiplication being the one that acts on the spinor index of the field. It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. Under $\mathsf{M}_2$ the cell is $\sigma_k$ on each chiral half, so the bilinear is $\frac{\hbar}{2}\Sigma_k$ with $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$ on the four-component module, which is the standard spin operator of the Dirac field. In biquaternion terms the generator is the informational-sector element $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$; the bilinear realizes it on the module, and the sector interpretation is the one the electron companion records.</p>
+<p>It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. The generator is the informational-sector element $\tilde S_k$ itself, and the bilinear realizes it on the field; the sector interpretation is the one the electron companion records.</p>
 <h2 id="the-two-point-function">The Two-Point Function</h2>
 <p>The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.</p>
-<p><strong>It is a $c$-number and it is local.</strong> Every term of the product $\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}\psi^{\mathrm{fop}}(x)$ or $\psi^{\mathrm{fop}}(x)\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}$ is a product of at most two mode operators with $c$-number spinor coefficients. Terms carrying one particle and one antiparticle operator, $a^{\mathrm{fop}}b^{\mathrm{fop}}$ or $a^{\mathrm{fop}\dagger}b^{\mathrm{fop}\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence</p>
+<p><strong>It is a $c$-number and it is local.</strong> Every term of the product $\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\tilde\Psi^{\mathrm{fop}}(x)$ or $\tilde\Psi^{\mathrm{fop}}(x)\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a^{\mathrm{fop}}b^{\mathrm{fop}}$ or $a^{\mathrm{fop}\dagger}b^{\mathrm{fop}\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,</p>
 <p>$$
-\{\psi^{\mathrm{fop}}_a(x),\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}_b(y)\}=S_{ab}(x-y)\,\mathbf{1},
+\boxed{\;\bigl\{\tilde\Psi^{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
 $$</p>
-<p>a multiple of the identity. Substituting the expansion gives</p>
+<p>an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the pair operator applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.</p>
+<p><strong>The commutator is a $c$-number as well, but it is not local.</strong> Replacing the anticommutator by the commutator gives, for every element $\tilde X$,</p>
 <p>$$
-\boxed{\;\{\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\;},
-$$</p>
-<p>where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.</p>
-<p><strong>The commutator is a $c$-number as well, but it is not local.</strong> Replacing the anticommutator by the commutator gives</p>
-<p>$$
-\langle0|\,[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}]\,|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
+\langle0|\,[\tilde\Psi^{\mathrm{fop}}(x),\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$</p>
 <p>with $G_{\mathrm{S}}$ the symmetric kernel, which does <em>not</em> vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec x-\vec y$,</p>
 <p>$$
-[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)]
-=iR_{\vec e_x}^{\mathrm{axf}}\Big(m+\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial\Delta_k}\Big)F(\vec\Delta),
+[\tilde\Psi^{\mathrm{fop}}(x),\tilde\Psi^{\mathrm{fop}\dagger}(y)]\,\tilde X
+=i\Bigl(m\tilde X+\sum_k\vec e_k\,\tilde X\,\vec e_y\frac{\partial}{\partial\Delta_k}\Bigr)\vec e_x\,F(\vec\Delta),
 \qquad
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}
-=\frac{m}{2\pi^2|\vec\Delta|}K_1\!\big(m|\vec\Delta|\big),
+=\frac{m}{2\pi^2|\vec\Delta|}K_1\!\bigl(m|\vec\Delta|\bigr),
 $$</p>
-<p>a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The mass term is the difference of the two spin sums, $\sum_rw^{(r)}\bar w^{(r)}-\sum_rv^{(r)}\bar v^{(r)}=2m$, taken against the cosine. The gradient term is the sum of the two, $\sum_rw^{(r)}\bar w^{(r)}+\sum_rv^{(r)}\bar v^{(r)}=2\slashed p$, whose spatial part is odd in $\vec p$ and survives against the sine that the difference of the two phases leaves; the integration is the identity $\int\frac{d^3p}{(2\pi)^3}\frac{p_k\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_k$ of the companion. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any spin-$\tfrac12$ field, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.</p>
-<p><strong>The biquaternion form.</strong> Writing the wave biquaternion (the $c$-number symbol) $\tilde P=iE_{\vec p}\,e_t+\vec p$, with $p_0=E_{\vec p}$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is</p>
+<p>a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the pair operator at the wave biquaternion, whose spatial part is odd in $\vec p$ and survives against the sine that the difference of the two phases leaves; the integration is the companion's identity $\int\frac{d^3p}{(2\pi)^3}\frac{p_k\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_k$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.</p>
+<p><strong>The biquaternion form.</strong> Writing the wave biquaternion (the $c$-number symbol) $\tilde P=iE_{\vec p}\,e_t+\vec p$, with $p_0=E_{\vec p}$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map</p>
 <p>$$
-S_F(p)=\frac{i(iR_{\vec e_x}^{\mathrm{axf}}p_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_{k}+m\,I_4)}{p^2-m^2+i\epsilon}
-=-\frac{i(iR_{\vec e_x}^{\mathrm{axf}}p_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_{k}+m\,I_4)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
+S_F(p):\ \tilde X\longmapsto
+\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{p^2-m^2+i\epsilon}
+=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
 $$</p>
-<p>Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-R_{\vec e_x}^{\mathrm{axf}}p_0+\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k+i m\,I_4$. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.</p>
+<p>Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is the pair operator at the wave biquaternion together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.</p>
 <h2 id="what-is-standard-and-what-is-the-algebras">What Is Standard and What Is the Algebra's</h2>
-<p><strong>Standard field theory, transcribed.</strong> The mode expansion and mode algebra; the operator-valued field equation; the parity grading of the mode algebra; the normal-ordered Hamiltonian, momentum, charge, current and spin; the $c$-number anticommutator and the nonlocal commutator; the biquaternion form of the two-point function. None of this is new, and all of it is the standard quantized Dirac field written in the parents' conventions.</p>
+<p><strong>Standard field theory, written in the algebra.</strong> The mode expansion and mode algebra; the operator-valued field equation; the parity grading of the mode algebra; the normal-ordered Hamiltonian, momentum, charge, current and spin; the $c$-number anticommutator and the nonlocal commutator; the biquaternion form of the two-point function. None of this is new, and all of it is the standard quantized Dirac field written in the parents' conventions.</p>
 <p><strong>What the biquaternion structure supplies.</strong></p>
 <ul>
-<li><em>The sector assignment of the observables.</em> Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ generators $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.</li>
-<li><em>The field as the odd generator, with the grading realized inside $\mathbb{B}$ for one mode.</em> The single-mode coincidence $\vec\Upsilon_x=\tilde S_+/\hbar$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.</li>
+<li><em>The sector assignment of the observables.</em> Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ elements $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.</li>
+<li><em>The field as the odd generator, with the structure realized inside $\mathbb{B}$ for one mode.</em> The single-mode coincidence $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.</li>
 <li><em>The biquaternion form of the two-point function</em>, inheriting the deformed mass-shell denominator.</li>
 <li><em>The separation of the four conjugations</em>, so that the particle–antiparticle exchange is Hermitian conjugation of the operator field and not the algebra's real structure.</li>
 </ul>
 <p><strong>Open.</strong></p>
 <ul>
-<li><strong>The intrinsic operator field.</strong> Whether a genuinely $\mathbb{B}$-valued field $\tilde\Psi^{\mathrm{fop}}$, quantized with a $\mathbb{B}$-intrinsic Lagrangian and paired with the trace, gives a theory inequivalent to the module transcription, is not settled. The parent leaves it open and this article does not close it.</li>
+<li><strong>The intrinsic Lagrangian and pairing.</strong> The field is an element and the bilinears are scalar parts of element products, but whether a $\mathbb{B}$-intrinsic Lagrangian with a trace pairing leads to the same normal-ordered observables, or to a theory inequivalent to the parent's, is not settled. The parent leaves it open and this article does not close it.</li>
 <li><strong>The grading on the field.</strong> The parity grading is realized in $\mathbb{B}$ only for one mode; for the field it is external, because the mode algebra is infinite-dimensional and does not embed in $\mathbb{B}$. Whether some enlarged structure carries it inside is open.</li>
-<li><strong>The current.</strong> The physical current needs the Clifford-odd cell $iR_{\vec e_x}^{\mathrm{axf}}$, outside $\mathbb{B}$; whether a biquaternion-natural current exists on a restricted module is open, as the minimal-coupling companion states.</li>
-<li><strong>Empirical content.</strong> Whether the quantized field in biquaternion form differs from the standard one in any observable is the framework's standing open question, and nothing here changes it.</li>
+<li><strong>The current.</strong> The physical current needs the fixed units of the frame, $\vec e_k$ before the field and $\vec e_z$ after it in the spatial components; whether a bilinear exists that is conserved and carries no fixed unit is open, as the minimal-coupling companion states.</li>
+<li><strong>Empirical content.</strong> Whether the quantized field written in biquaternion form differs from the standard one in any observable is the framework's standing open question, and nothing here changes it.</li>
 </ul>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Canonical Quantization of the Biquaternion Dirac Field</em>, for the mode expansion, the anticommutation relations and the normal-ordered observables whose quantization this article continues.</li>
-<li>Companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>, for the plane-wave spinors $w^{(r)},v^{(r)}$ and the spin sums.</li>
+<li>Companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>, for the biquaternion plane waves $\tilde\Psi^{(r)}_{\pm}(\vec p)$ and the spin sums.</li>
 <li>Companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the spin–statistics connection and the $2\pi$ sign that the grading and the anticommutator share.</li>
 <li>Companion article <em>The Feynman Propagator in Biquaternionic Form</em>, for the momentum-space two-point function and the deformation of the mass shell.</li>
-<li>Companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, for the gauge-invariant current and the Clifford-odd cell.</li>
+<li>Companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, for the gauge-invariant current and the fixed units its bilinear carries.</li>
 <li>Companion article <em>The Electron in Biquaternionic Form</em>, for the one-particle sector interpretation of the spin bilinear.</li>
 <li><em>The Dirac Equation in Biquaternionic Form</em>, for the one-sided chiral pair and the two-sided dictionary that separates the two equations.</li>
 </ul>
@@ -430,14 +400,14 @@ $$</p>
 <p>The raised index is not decoration. With the index down on the summed gamma, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$ but $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\gamma_0[\mathbb{M}_-]$ for $\alpha=0$ and $0$ for spatial $\alpha$, because $\gamma_0[\mathbb{M}_-]^2=+I_4$ while $\gamma_k[\mathbb{M}_-]^2=-I_4$; the four sums above are the ones that are covariant.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The quantized biquaternion Dirac field is the operator-valued field whose module representative is the parent article's expansion in plane-wave spinors, with mode anticommutators and the parent's spin sums. Lifted from the classical field, it takes values in $\mathcal{A}\otimes\Delta$ (equivalently $\mathcal{A}\otimes\mathbb{B}$ in the other transcription), it satisfies the free field equation as an operator identity, and its four conjugations act with the operator ordering included: the particle–antiparticle exchange is Hermitian conjugation, $\psi^{\mathrm{fop}}\leftrightarrow\psi^{\mathrm{fop}\dagger}$, and not the algebra's real structure.</p>
+<p>The quantized biquaternion Dirac field is the operator-valued element of $\mathcal{A}\otimes\mathbb{B}$ whose expansion in the biquaternion plane waves carries the parent article's mode anticommutators and spin sums. It is an element of $\mathbb{B}$ at every point multiplied by an operator, it satisfies the free field equation as an operator identity, and its four conjugations act with the operator ordering included: the particle–antiparticle exchange is Hermitian conjugation, $\tilde\Psi^{\mathrm{fop}}\leftrightarrow\tilde\Psi^{\mathrm{fop}\dagger}$, and not the algebra's real structure.</p>
 <p>The field is odd under fermion parity,</p>
 <p>$$
-(-1)^F\psi^{\mathrm{fop}}(x)(-1)^F=-\psi^{\mathrm{fop}}(x),
+(-1)^F\tilde\Psi^{\mathrm{fop}}(x)(-1)^F=-\tilde\Psi^{\mathrm{fop}}(x),
 $$</p>
-<p>so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\vec\Upsilon_x=\tilde S_+/\hbar$ and $(-1)^F=i\vec e_z$; for the field it is external.</p>
-<p>The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P^{\mathrm{fop}}=iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $1.1\times10^{-10}$ and $1.8\times10^{-10}$ respectively.</p>
-<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(iR_{\vec e_x}^{\mathrm{axf}}p_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_{k}+m\,I_4)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
+<p>so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.</p>
+<p>The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P^{\mathrm{fop}}=iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.</p>
+<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde\Psi^{\mathrm{fop}}(x)\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -476,36 +446,36 @@ $$</p>
 <td>Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass</td>
 </tr>
 <tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part; every bilinear of the article is the scalar part of an element product</td>
+</tr>
+<tr>
 <td>$\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
 <td>Biquaternionic gradient and d'Alembertian</td>
 </tr>
 <tr>
-<td>$\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$</td>
-<td>Pair operator on the spinor module; $(\mathbb{D}-m)\psi=0$</td>
+<td>$\mathbb{D}$</td>
+<td>Pair operator of the operator conventions; the pair is $(\mathbb{D}-m)$ on $(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R)$</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$</td>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>
-<td>$\bigl(i\partial/\partial t'+D_3\bigr)F-m\,i\overline{F}\vec e_z=0$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$</td>
+<td>$\bigl(i\partial/\partial t'+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$</td>
 <td>Kravchenko's two-sided equation, a different operator, not quantized here</td>
 </tr>
 <tr>
 <td>$\tilde\Psi^{\mathrm{fop}}$</td>
-<td>Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription)</td>
+<td>Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde\Psi^{\mathrm{fop}}_L$, $\tilde\Psi^{\mathrm{fop}}_R$</td>
 </tr>
 <tr>
-<td>$\psi^{\mathrm{fop}}$, $\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$</td>
-<td>Module-valued quantized field and its adjoint</td>
+<td>$\tilde\Psi^{\mathrm{fop}\dagger}$, $\tilde\Psi^{\mathrm{fop}\dagger}i\vec e_x$</td>
+<td>Hermitian conjugate of the field; Dirac adjoint</td>
 </tr>
 <tr>
-<td>$iR_{\vec e_x}^{\mathrm{axf}}\psi=i\,\psi\,\vec e_x$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi=i\,\vec e_k\,\psi\,\vec e_y$</td>
-<td>Cells of the reference frame, acting on the spinor module</td>
-</tr>
-<tr>
-<td>$S=\mathbb{C}^2$, $\Delta=S\oplus S^{\mathrm{c}}$</td>
-<td>Spinor module, the unique simple left $\mathbb{B}$-module; the Dirac module with its conjugate</td>
+<td>$\tilde\Psi^{(r)}_{\pm}(\vec p)$</td>
+<td>The two branches of the biquaternion plane wave (solutions article)</td>
 </tr>
 <tr>
 <td>$\mathcal{A}$</td>
@@ -513,19 +483,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\kappa(\mu)$</td>
-<td>Right multiplier of the cell: $\kappa(t)=x$, $\kappa(k)=y$</td>
+<td>Right multiplier of the frame member in the closing block: $\kappa(t)=x$, $\kappa(k)=y$</td>
 </tr>
 <tr>
-<td>$I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
-<td>Identity on the four-component Dirac module</td>
-</tr>
-<tr>
-<td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$</td>
-<td>Matrix realization (algebra isomorphism onto $M_2(\mathbb{C})$); $S$ is its defining representation</td>
-</tr>
-<tr>
-<td>$w^{(r)}(\vec p),v^{(r)}(\vec p)$</td>
-<td>Plane-wave spinors (solutions article)</td>
+<td>$J_\mu$</td>
+<td>Current bilinear: $\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}\tilde\Psi^{\mathrm{fop}})$ at $\mu=t$, $\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}\vec e_k\tilde\Psi^{\mathrm{fop}}\vec e_z)$ at $\mu=k$</td>
 </tr>
 <tr>
 <td>$a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$</td>
@@ -537,7 +499,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(-1)^F$</td>
-<td>Fermion parity; $(-1)^F\psi^{\mathrm{fop}}(-1)^F=-\psi^{\mathrm{fop}}$</td>
+<td>Fermion parity; $(-1)^F\tilde\Psi^{\mathrm{fop}}(-1)^F=-\tilde\Psi^{\mathrm{fop}}$</td>
 </tr>
 <tr>
 <td>$H,P^{\mathrm{fop}},Ϙ^{\mathrm{fop}},J_\mu,S_k$</td>
@@ -560,12 +522,12 @@ $$</p>
 <td>Spin generators (informational sector)</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_x=\tilde S_+/\hbar$, $\vec\Upsilon_y=\tilde S_-/\hbar$, $(-1)^F=i\vec e_z$</td>
+<td>$\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_-/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$</td>
 <td>Single-mode ladder and parity inside $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\{\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$</td>
-<td>Covariant anticommutator ($c$-number)</td>
+<td>$\{\tilde\Psi^{\mathrm{fop}}(x)\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$</td>
+<td>Covariant anticommutator ($c$-number), for every element $\tilde X$</td>
 </tr>
 <tr>
 <td>$\Delta_{\mathrm{A}}(x-y)$</td>
@@ -580,16 +542,12 @@ $$</p>
 <td>Equal-time commutator kernel, nonzero at every spacelike separation</td>
 </tr>
 <tr>
-<td>$S_F(p)=-\frac{i(iR_{\vec e_x}^{\mathrm{axf}}p_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_{k}+m\,I_4)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$</td>
-<td>Feynman propagator amplitude</td>
+<td>$S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$</td>
+<td>Feynman propagator amplitude, as a map on elements</td>
 </tr>
 <tr>
 <td>$\tilde P=iE_{\vec p}\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$</td>
 <td>$c$-number wave biquaternion and mass shell</td>
-</tr>
-<tr>
-<td>$\mathrm{tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
-<td>Trace reading of the plain form</td>
 </tr>
 </tbody>
 </table></div>
@@ -604,7 +562,7 @@ $$</p>
 <li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1 (Cambridge, 1995), for the construction of the operator-valued field and the role of the grading.</li>
 <li>V. V. Kravchenko, "On a Biquaternionic Bag Model," <em>Zeitschrift für Analysis und ihre Anwendungen</em> <strong>14</strong> (1995), no. 1, 3–14, for the two-sided equation with the conjugation in the mass term, recorded here only to be kept apart from the quantized one-sided pair.</li>
 <li>R. Haag, <em>Local Quantum Physics: Fields, Particles, Algebras</em> (Springer, 1996), for the algebraic formulation in which the odd generator and the observable algebra are separated.</li>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), and Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the even subalgebra and the spinor module underlying the $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ identification.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), and Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the even subalgebra and the identification of $\mathbb{B}$ with it.</li>
 </ul>
       </div>
     </main>

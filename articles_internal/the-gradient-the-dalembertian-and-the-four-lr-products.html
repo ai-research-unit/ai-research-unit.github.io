@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient, the D'Alembertian and the Four LR Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gradient-the-dalembertian-and-the-four-lr-products"><strong>The Gradient, the D'Alembertian and the Four LR Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Three operators stand at the head of the biquaternion calculus, and they are confused with one another, because all three are built from the same four coordinate derivatives and the same four units. This article separates them, states what each one is, and computes what each one does to the same field.</p>
+<p>The <strong>gradient</strong> $\tilde\nabla$ is an element of the algebra whose four coefficients are derivatives. It acts by left multiplication. Its square is not a scalar.</p>
+<p>The <strong>d'Alembertian</strong> $\Box$ is a scalar differential operator of the second order. It is the norm of the gradient against its conjugate, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and it is a product of two first-order factors.</p>
+<p>The <strong>contraction</strong> is an operator of the algebra built from four LR products instead of four units. An LR product is $L_aR_b$, the map $Q\mapsto aQb$; it is written with its two multipliers and never with a letter. It acts on both sides. Its square is a scalar, in one copy, and that is the property neither of the other two has.</p>
+<p><strong>And a fourth display, which the rest of the corpus only names in a quotation.</strong> The source of the subluminal article writes $\partial$ for the contraction with its three spatial products negated. That letter is the object of §<em>The Source's Letter</em>, it is defined there and not in the conventions, and it is a display of the contraction and not a fifth thing.</p>
+<p><strong>Why the confusion is not a matter of taste.</strong> One name is now carried by two operators, and that is what makes the three look like one. The corpus writes $\mathbb{C}^{\mathrm{spl}}$ in <em>Operator and Calculus Conventions</em> for the pair on $\mathbb{B}\oplus\mathbb{B}$, and in <em>Bhabha Multi-Mass Wave Equations</em> for the contraction of the four products on one field. The two square to the same $+\Box$ and live on different spaces, so the label alone does not say what is being acted on; §<em>The Pair Operator</em> separates them and §<em>The Five Traps</em> states the collision. The source of the subluminal article writes $\partial$ for the second of the two, with the spatial products negated. A page that says "the Dirac operator" without saying which of the three it means, and on what it acts, cannot be read.</p>
+<p><strong>What the article establishes.</strong> The three differ in two ways that matter, and both are computed here: in what they are (an element, a scalar, an operator of the algebra) and in how they square (not scalar, itself, scalar in one copy). The metric is not one of the differences. The algebra has one metric, the Euclidean one, and the Lorentzian form of the material display is that same metric read after $Q_t=ict'$. The light cone is common to the gradient and to the four products, and §<em>What a Plane Wave Sees</em> computes both symbols and gets one cone. What the four products buy is anticommutation, and §<em>Why Four LR Products and Not Four Units</em> proves that no element can buy it.</p>
+<p>The order of the article is the order of increasing structure: the metric, which is the algebra's and not an operator's, then the gradient, then its norm, then the contraction, then why the four products are needed at all, then what a plane wave sees, then the three side by side, then the pair operator. Each operator's array is written out in full at the point where that operator is used, and it is not collected into a separate section. Every claim is recomputed on a field before it is asserted.</p>
+<h2 id="three-kinds-of-object">Three Kinds of Object</h2>
+<p><strong>Two algebras, one of them ambient.</strong> The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. The operators of $\mathbb{B}$ form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. An element of $\mathbb{B}$ is not an operator of $\mathbb{B}$; it <em>generates</em> one, and the generation has two sides, the left multiplication $L_a\psi=a\psi$ and the right multiplication $R_b\psi=\psi b$, with the two-sided $L_aR_b\psi=a\psi b$ (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>).</p>
+<p><strong>Why the distinction is the whole article.</strong> An element multiplies from one side only, so a sum of elements with derivative coefficients is a first-order operator of one side. A sum of LR products is an operator already, and each of them may act from both sides at once. The first is confined to the algebra; the second is not, because an LR product is a frame object and not an element of $\mathbb{B}$. That is the difference between the gradient and the contraction, and everything else follows from it.</p>
+<p><strong>The six objects, in one table.</strong> "Contraction" in the third row means $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, the four LR products contracted with the four derivatives; it is written out in §<em>The Four LR Products</em>. The last column is the determinant of the symbol, the array obtained by replacing each derivative by its plane-wave value; it is computed in §<em>What a Plane Wave Sees</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>what it is</th>
+<th>order</th>
+<th>square</th>
+<th>$\det$ of its symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>an element of $\mathbb{B}$, coefficients are derivatives</td>
+<td>$1$</td>
+<td>$\Box-2\Delta-\frac{2i}{c}\vec e_k\frac{\partial^2}{\partial t'\partial q_k}$, not scalar</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>a scalar differential operator</td>
+<td>$2$</td>
+<td>—</td>
+<td>$k_0^2-\lvert\vec k\rvert^2$</td>
+</tr>
+<tr>
+<td>contraction</td>
+<td>an operator of $\mathbb{B}$, four LR products</td>
+<td>$1$</td>
+<td>$-\Box$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+<tr>
+<td>$i\times$ contraction</td>
+<td>the same, in the normalisation that squares to $\Box$</td>
+<td>$1$</td>
+<td>$+\Box$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+<tr>
+<td>$\partial$</td>
+<td>the source's letter, the contraction with the three spatial products negated</td>
+<td>$1$</td>
+<td>$-\Box$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>an operator of $\mathbb{B}\oplus\mathbb{B}$, the pair</td>
+<td>$1$</td>
+<td>$\Box I$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$ per block</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last column is the same in every row, and that is the finding, not an omission.</strong> The symbol does not separate the three operators, and neither does the light cone, which is what the determinant measures. The <strong>column of squares</strong> is what separates them, and it is the reason the source needs the four products: a first-order equation in one field needs a first-order operator whose square is already scalar, and on a single field only the contraction and $i$ times it are that.</p>
+<h2 id="the-metric-is-euclidean">The Metric Is Euclidean</h2>
+<p><strong>One metric, and it is Euclidean.</strong> The form of $\mathbb{B}$ is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$: the metric is $(1,1,1,1)$. On real coefficients that is the ordinary Euclidean metric, positive definite, and no direction is singled out by a sign (<em>Frame Conventions</em>, §<em>The $\mathbb{B}$ Frame</em>; <em>Conceptual Conventions</em>, §<em>Preferred Concepts</em>). This is the default of the algebra, it is not chosen per operator, and no operator in this article is the place where it is stored.</p>
+<p><strong>Where the Lorentzian display comes from.</strong> On $\mathbb{M}_-$ the time coordinate is $Q_t=ict'$. The $i$ does not disappear when the display is written in real coordinates: its square becomes the sign of the time term, $i^2=-1$, and the form reads $-c^2t'^2+q_x^2+q_y^2+q_z^2$, signature $(-1,+1,+1,+1)$. That is not a second metric. It is the Euclidean metric after the substitution $Q_t=ict'$, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records the substitution (<em>Frame Conventions</em>, §<em>The $\mathbb{M}_-$ Frame</em>, kept for convenience of display).</p>
+<p><strong>The d'Alembertian is one operator with two readings.</strong> It is $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ in the $\mathbb{B}$ frame and $\Delta-c^{-2}\partial^2/\partial t'^2$ on $\mathbb{M}_-$: the same operator, the same metric, one substitution between the two writings. Nothing is added to the content between them.</p>
+<p><strong>The consequence for this article.</strong> Neither the gradient nor the four products introduce a metric of its own, because there is no second metric for one to introduce. Both work in the metric the algebra already has, the one in the norm $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, and the difference between them is not a signature. Anyone who says the metric must be put somewhere has missed that it is already there; what the four products supply is a different property altogether, and §<em>Why Four LR Products and Not Four Units</em> identifies it.</p>
+<h2 id="the-gradient">The Gradient</h2>
+<p><strong>The definition.</strong> The gradient is the element</p>
+<p>$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+$$</p>
+<p>with $Q_\mu=q_\mu+iq'_\mu$, and its quaternion conjugate, the involution of the norm,</p>
+<p>$$
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad \varepsilon=(1,-1,-1,-1).
+$$</p>
+<p>On the material sector, where $Q_t=ict'$ and $Q_k=q_k$, the two read</p>
+<p>$$
+\tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial q_k},
+\qquad
+\tilde\nabla^{\natural}\big|_{\mathbb{M}_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}-\sum_k\vec e_k\frac{\partial}{\partial q_k}.
+$$</p>
+<p>Every statement below is on $\mathbb{M}_-$, which is where the series does its work.</p>
+<p><strong>It is an element, and it acts on one side.</strong> Its four coefficients are units, so it multiplies its argument from the left and never from the right. There is no LR product in it, no matrix, and no second side. Applying it to a field is multiplying that field by an element whose coefficients happen to be derivatives.</p>
+<p><strong>Its square is neither scalar nor the d'Alembertian.</strong> Two applications, computed on a general element-valued field, give the exact identity</p>
+<p>$$
+\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial t'\,\partial q_k},
+$$</p>
+<p>with $\Box=\Delta-c^{-2}\partial^2/\partial t'^2$ and $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$. The first two terms are scalars; the third is not, because $\vec e_k$ is a unit and the term survives. So the square is not a scalar, and it is not $\Box$: the two differ by $2\Delta$ and by the whole cross term.</p>
+<p><strong>The cross term is the whole story.</strong> It has one origin. The time unit is the identity, so $e_t$ commutes with each spatial unit instead of anticommuting with it,</p>
+<p>$$
+e_t\vec e_k+\vec e_k e_t=2\vec e_k ,
+$$</p>
+<p>and the two orders of a mixed derivative therefore add instead of cancelling. Each spatial unit squares to $-e_t$ as well, which is the second half of the reason: the diagonal part of the square comes out with the wrong sign on the Laplacian.</p>
+<p><strong>What the conjugate repairs, and how.</strong> The conjugate flips the three spatial units, and the two cross terms then cancel between the two orders,</p>
+<p>$$
+\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box .
+$$</p>
+<p>Both orders agree, because the two factors commute on their squares. This is why the conventions define the d'Alembertian as the norm taken with the conjugate and not as the square (<em>Operator and Calculus Conventions</em>, §<em>The Quaternionic Bilinear Product</em>): the plain square is not available.</p>
+<p><strong>Worked cases.</strong> With $c=1$ and the field written in the units, the gradient acts as follows. The rule is short: constants die, and a coordinate times a unit returns the product of the unit with that coordinate's unit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>$\tilde\nabla\psi$</th>
+<th>how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_z$</td>
+<td>$0$</td>
+<td>no coordinate in it</td>
+</tr>
+<tr>
+<td>$q_x\vec e_y$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_x\vec e_y=\vec e_z$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x\vec e_x=-e_t$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_x\vec e_z=-\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_x$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y\vec e_x=-\vec e_z$</td>
+</tr>
+<tr>
+<td>$t'\vec e_x$</td>
+<td>$-i\vec e_x$</td>
+<td>the time coefficient is $-i/c$, and $e_t\vec e_x=\vec e_x$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$q_x\vec e_x-q_y\vec e_y$</td>
+<td>two live terms, one per coordinate</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_x$</td>
+<td>$-q_ye_t-q_x\vec e_z$</td>
+<td>two live terms, both scalar-or-unit</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$-\cos q_x\,e_t$</td>
+<td>the derivative of the sine</td>
+</tr>
+<tr>
+<td>$t'^2\vec e_x$</td>
+<td>$-2it'\,\vec e_x$</td>
+<td>the derivative of the square</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these are worth reading slowly. On $q_xq_y\vec e_z$ the operator returns a sum of two units, which is what "element-valued" means: the output is again an element, not a scalar. On $t'\vec e_x$ the output carries the factor $-i$, which is the $1/c$ and the $i$ of the material time in one coefficient.</p>
+<p><strong>The array of the gradient.</strong> In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the gradient has an array, and its entries are derivatives with respect to the algebra coordinates $Q_\mu$:</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde\nabla)=
+\begin{pmatrix}
+\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\[2pt]
+\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}\\[2pt]
+\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}\\[2pt]
+\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\end{pmatrix}.
+$$</p>
+<p>It is $L^{\mathrm{axf}}$ of an element, so it is the multiplication table of the units read with derivative coefficients (<em>Matrix Representations Conventions</em>, §<em>The Left Family</em>). Its first column is the gradient itself, because $\tilde\nabla e_t=\tilde\nabla$; the other three columns are its products with the three spatial units. Its symmetry is the symmetry of that table, and it is not the symmetry of a metric.</p>
+<h2 id="the-dalembertian">The D'Alembertian</h2>
+<p><strong>The definition.</strong> The d'Alembertian is the scalar operator</p>
+<p>$$
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\sum_{\mu}\frac{\partial^2}{\partial Q_\mu^2}.
+$$</p>
+<p><strong>The two factors, as arrays.</strong> The conjugate element $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ has the array</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde\nabla^{\natural})=
+\begin{pmatrix}
+\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}\\[2pt]
+-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}\\[2pt]
+-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}\\[2pt]
+-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\end{pmatrix},
+$$</p>
+<p>the array of §<em>The Gradient</em> with the three spatial columns' signs mirrored. Multiplying the two arrays in either order returns the same diagonal array,</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde\nabla)L^{\mathrm{axf}}(\tilde\nabla^{\natural})
+=L^{\mathrm{axf}}(\tilde\nabla^{\natural})L^{\mathrm{axf}}(\tilde\nabla)
+=\Box\,I_4,
+$$</p>
+<p>with $I_4$ the $4\times4$ identity. That is the statement that the d'Alembertian is the norm and not an element: the product of the two arrays is the scalar, and neither array is.</p>
+<p>and on the material sector it reads</p>
+<p>$$
+\Box\big|_{\mathbb{M}_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
+$$</p>
+<p>a plus on the spatial part and a minus on the time part (<em>Operator and Calculus Conventions</em>, §<em>The Norm</em>).</p>
+<p><strong>It is of the second order, and that is a limit, not a defect.</strong> $\Box$ is a product of two first-order operators, so every equation it writes has order two. A first-order equation cannot be written with it, and no rearrangement helps, because the order is a property of the object and not of its display.</p>
+<p><strong>It is scalar, and it stays in the algebra.</strong> $\Box$ multiplies no element: it acts on each coefficient of a field and returns a field of the same kind. Nothing in it leaves $\mathbb{B}$, and no frame is chosen to write it.</p>
+<p><strong>What it does to the same fields.</strong> Only the two fields with a second derivative in a single coordinate survive; everything linear dies.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>$\Box\psi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_z$, $q_x\vec e_y$, $q_x\vec e_x$, $q_x\vec e_z$, $q_y\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$, $q_xq_y\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$-\sin q_x\,\vec e_x$</td>
+</tr>
+<tr>
+<td>$t'^2\vec e_x$</td>
+<td>$-\frac{2}{c^2}\vec e_x$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The wave equation is its kernel.</strong> $\Box\psi=0$ is the wave equation, and on a plane wave $e^{i\phi}$ with $\phi=k_0x_0-\vec k\cdot\vec q$ it reads</p>
+<p>$$
+\Box\,e^{i\phi}=\left(k_0^2-\lvert\vec k\rvert^2\right)e^{i\phi},
+$$</p>
+<p>so the kernel is exactly the light cone. That is the condition a massless field must meet, and it is the condition the contraction will reproduce at first order.</p>
+<h2 id="the-four-lr-products">The Four LR Products</h2>
+<p><strong>The five products, four of which a derivative uses.</strong> The corpus's five LR products are</p>
+<p>$$
+iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},\qquad
+iL_{\vec e_x}R_{\vec e_y},\qquad
+iL_{\vec e_y}R_{\vec e_y},\qquad
+iL_{\vec e_z}R_{\vec e_y},\qquad
+-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+$$</p>
+<p>and the order is timelike, the three spatial, chirality. The first four correspond to the four coordinates and are the ones a derivative can be contracted with; the fifth is the chirality and is contracted with nothing (<em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>; <em>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</em> writes the four as the letters $G_\mu$). Write</p>
+<p>$$
+\text{time product: }iR_{\vec e_x},\qquad \text{spatial product: }iL_{\vec e_k}R_{\vec e_y}\ \ (k=1,2,3),
+$$</p>
+<p>the right unit being $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$, as in <em>Matrix Representations Conventions</em>. No letter names an LR product: each is written as its two multipliers.</p>
+<p><strong>The four products as arrays.</strong> In the coefficient basis each product is a constant $4\times4$ array, $i$ times a real signed permutation matrix of determinant $1$:</p>
+<p>$$
+iR_{\vec e_x}=\begin{pmatrix}0&-i&0&0\\ i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
+iL_{\vec e_x}R_{\vec e_y}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\ i&0&0&0\end{pmatrix},
+$$</p>
+<p>$$
+iL_{\vec e_y}R_{\vec e_y}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+iL_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}.
+$$</p>
+<p>These are four of the sixteen products $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ read in that basis, and their constant-array form is the reason the derivative can stand outside them.</p>
+<p><strong>The operator.</strong> The contraction is the sum of the four, each multiplied by the derivative of its own coordinate:</p>
+<p>$$
+\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}},
+\qquad x_0=ct',\quad x_k=q_k .
+$$</p>
+<p><strong>The operator as one array.</strong> Multiplying each product by its coordinate derivative and adding the four gives a single $4\times4$ array whose entries are constants times derivatives:</p>
+<p>$$
+\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}=
+\begin{pmatrix}
+-i\frac{\partial}{\partial x_2}&-i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}&0&i\frac{\partial}{\partial x_1}\\[3pt]
+i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}&i\frac{\partial}{\partial x_2}&-i\frac{\partial}{\partial x_1}&0\\[3pt]
+0&-i\frac{\partial}{\partial x_1}&-i\frac{\partial}{\partial x_2}&i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}\\[3pt]
+i\frac{\partial}{\partial x_1}&0&-i\frac{\partial}{\partial x_0}-i\frac{\partial}{\partial x_3}&i\frac{\partial}{\partial x_2}
+\end{pmatrix}.
+$$</p>
+<p><strong>Written out.</strong> The time product is a right multiplication by $\vec e_x$; each spatial product is a left multiplication by $\vec e_k$ and a right multiplication by $\vec e_y$:</p>
+<p>$$
+\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)\psi
+=\frac{i}{c}\frac{\partial\psi}{\partial t'}\vec e_x+\sum_k i\,\vec e_k\frac{\partial\psi}{\partial q_k}\vec e_y .
+$$</p>
+<p>The time derivative acts from the right only; the three spatial derivatives act from both sides at once. That is what an LR product is, and it is the reason the square can be scalar.</p>
+<p><strong>What the four products supply is the anticommutation, and only that.</strong> The four products satisfy</p>
+<p>$$
+\bigl(iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\bigr)\bigl(iL_{e_{\nu}}R_{\vec e_{\nu(\nu)}}\bigr)
++\bigl(iL_{e_{\nu}}R_{\vec e_{\nu(\nu)}}\bigr)\bigl(iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\bigr)=0
+\quad(\mu\ne\nu),
+$$</p>
+<p>in <strong>both</strong> frames, and this is the property the algebra cannot supply to any four of its elements (§<em>Why Four LR Products and Not Four Units</em>). It is what makes the cross terms of the square cancel between the two orders of a mixed derivative.</p>
+<p><strong>The squares are not an LR product property.</strong> In the $\mathbb{B}$ frame the four products are $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$, and all four square to $+1$. The $\mathbb{M}_-$ products are $i$ times the $\mathbb{B}$ ones, $i\,(-L_{\vec e_k}R_{\vec e_y})=iL_{\vec e_k}R_{\vec e_y}$, so there the three spatial products square to $-1$, and the reader who takes the time product's square to be $+1$ and the spatial ones' to be $-1$ as an intrinsic fact of the four products has been misled by the frame. That $i$ is the $i$ of $Q_t=ict'$, the same one that turns the Euclidean form into the Lorentzian one, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records both at once. The sign vector $\varepsilon=(1,-1,-1,-1)$ is the metric of the frame in the product display, and it is not a second metric.</p>
+<p><strong>With these squares, the contraction squares to a scalar.</strong> In the $\mathbb{M}_-$ frame the signs add the way the material metric does, and</p>
+<p>$$
+\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)^{2}
+=\frac{\partial^2}{\partial x_0^2}-\Delta=-\Box .
+$$</p>
+<p><strong>The normalisation.</strong> Multiplying by $i$ gives the operator whose square is $+\Box$,</p>
+<p>$$
+\Bigl(i\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)^{2}=\Box ,
+$$</p>
+<p>and this is the operator the Bhabha article writes $\mathbb{C}^{\mathrm{spl}}=i\sum_\mu G_\mu\partial/\partial x_\mu$, its $G_\mu$ being the two products above, written there as letters.</p>
+<p><strong>The outer $i$ is the frame's $i$ again.</strong> Since the four $\mathbb{B}$ products square to $+1$, the contraction in that frame squares to $+\Box$ with no normalisation:</p>
+<p>$$
+\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial Q_{\mu}}\Bigr)^{2}
+=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=+\Box .
+$$</p>
+<p>So the corpus's letter needs an explicit $i$ in the $\mathbb{M}_-$ frame and needs none in the $\mathbb{B}$ frame, and the two displays are the same operator. The $i$ that flips the three spatial products is the $i$ of $Q_t=ict'$, exactly as in the metric. This is the third appearance of one factor in this note: in the form, in the four products, and in the normalisation of the contraction.</p>
+<p><strong>Worked cases.</strong> The same ten fields, through the contraction. The rule is as short as before: a coordinate times a unit gives $i$ times a unit, but the unit is now produced by two multiplications instead of one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>contraction $\psi$</th>
+<th>how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_z$</td>
+<td>$0$</td>
+<td>no coordinate in it</td>
+</tr>
+<tr>
+<td>$q_x\vec e_y$</td>
+<td>$-i\vec e_x$</td>
+<td>$\vec e_x\vec e_y\vec e_y=-\vec e_x$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_x$</td>
+<td>$-i\vec e_y$</td>
+<td>$\vec e_x\vec e_x\vec e_y=-\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_z$</td>
+<td>$ie_t$</td>
+<td>$\vec e_x\vec e_z\vec e_y=e_t$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_x$</td>
+<td>$i\vec e_x$</td>
+<td>$\vec e_y\vec e_x\vec e_y=\vec e_x$</td>
+</tr>
+<tr>
+<td>$t'\vec e_x$</td>
+<td>$-ie_t$</td>
+<td>the right unit is $\vec e_x$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$iq_ye_t+iq_x\vec e_z$</td>
+<td>two live terms</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_x$</td>
+<td>$iq_x\vec e_x-iq_y\vec e_y$</td>
+<td>two live terms</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$-i\cos q_x\,\vec e_y$</td>
+<td>the derivative of the sine</td>
+</tr>
+<tr>
+<td>$t'^2\vec e_x$</td>
+<td>$-2it'\,e_t$</td>
+<td>the derivative of the square</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One case read in full.</strong> On $q_x\vec e_y$ only the $x$ term is live, and the two multiplications are visible:</p>
+<p>$$
+iL_{\vec e_x}R_{\vec e_y}\bigl(q_x\vec e_y\bigr)=i\,\vec e_x\bigl(\partial_{q_x} q_x\bigr)\vec e_y
+=i\,\vec e_x\vec e_y\vec e_y=i\,\vec e_x(-e_t)=-i\vec e_x .
+$$</p>
+<p><strong>Two terms at once.</strong> A product of two coordinates shows the sum and shows the mixing of the two parts of the algebra:</p>
+<p>$$
+\Bigl(iL_{\vec e_x}R_{\vec e_y}\partial_{q_x}+iL_{\vec e_y}R_{\vec e_y}\partial_{q_y}\Bigr)\bigl(q_xq_y\vec e_z\bigr)
+=i\,\vec e_x\,q_y\vec e_z\vec e_y+i\,\vec e_y\,q_x\vec e_z\vec e_y=i\,q_ye_t+i\,q_x\vec e_z ,
+$$</p>
+<p>using $\vec e_x\vec e_z\vec e_y=e_t$ and $\vec e_y\vec e_z\vec e_y=\vec e_z$. One term is a scalar and one is a unit. A single application mixes the two parts, and the square being scalar is a property of the four products together and not of one step.</p>
+<p><strong>One of the four is diagonal, and the fifth is the chirality.</strong> In the coefficient basis the product $iL_{\vec e_y}R_{\vec e_y}$ is diagonal,</p>
+<p>$$
+iL_{\vec e_y}R_{\vec e_y}=-i\operatorname{diag}(1,-1,1,-1),
+$$</p>
+<p>which is a property of the display and not an extra structure: it is the fourth of the four, and it commutes with itself. The one that carries the chirality is the fifth of the five LR products, $\chi=-iR_{\vec e_z}$. It squares to $+1$, its eigenvalues are $\pm1$ of multiplicity two each, and it anticommutes with each of the four products the derivatives use. That oddness is what splits the module into the two halves, and it is the reason a single product equation can hold the two chiral equations at once.</p>
+<h2 id="why-four-lr-products-and-not-four-units">Why Four LR Products and Not Four Units</h2>
+<p><strong>The requirement.</strong> A first-order equation in one field needs a first-order operator whose square is a scalar. Only then does the equation imply a second-order one, and only then can a mass be subtracted as a scalar, $(\partial-m)\psi=0$ giving $(\Box-m^2)\psi=0$.</p>
+<p><strong>What the algebra offers.</strong> Write an element as $a=\alpha+\vec a$. Then</p>
+<p>$$
+a^2=\alpha^2-\lvert\vec a\rvert^2+2\alpha\vec a ,
+$$</p>
+<p>so $a^2$ is scalar exactly when $\alpha=0$ or $\vec a=0$. The second case is a central element, which multiplies every direction alike and cannot build a wave operator; the usable case is $\alpha=0$, a pure vector, and a pure vector has <strong>three</strong> components.</p>
+<p><strong>The three-component operator, and why it fails.</strong> The spatial gradient $\sum_k\vec e_k\partial_{q_k}$ has the scalar square $-\Delta$, so it meets the first requirement and fails the second: it carries no time derivative. Its symbol is $-\lvert\vec k\rvert^2$, which vanishes only at $\vec k=0$, so it annihilates no wave and describes no propagation. A fourth generator is needed.</p>
+<p><strong>Why the fourth cannot be an element.</strong> The four generators must anticommute in pairs, or the cross terms of the square survive and the square stops being scalar. Two pure vectors anticommute exactly when they are orthogonal, so four mutually anticommuting generators would be four mutually orthogonal nonzero directions of a three-dimensional space. There are three at most. Inside $\mathbb{B}$, of complex dimension four, the count cannot be met.</p>
+<p><strong>Where the fourth does fit.</strong> In $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. The four are elements of that larger space: $iR_{\vec e_x}$ acts from the right, the three $iL_{\vec e_k}R_{\vec e_y}$ act from both sides, and the four anticommute. That is the entire reason the operator of a first-order wave equation is a contraction of products and not of units, and it is a dimension count about the algebra, not a statement about signs.</p>
+<p><strong>What this does not say.</strong> It does not say the four are needed for the light cone: §<em>What a Plane Wave Sees</em> shows that the gradient annihilates the same null plane waves and that both symbols have the same determinant. The four products are needed for the <strong>square</strong>, so that one equation can be first order and still carry a mass.</p>
+<h2 id="what-a-plane-wave-sees">What a Plane Wave Sees</h2>
+<p><strong>The symbol.</strong> Replacing each derivative by its plane-wave value turns a first-order operator into an array of numbers, its <em>symbol</em>, and the symbol says which plane waves the operator annihilates. The values are not the same for every operator, because the operators differentiate different coordinates: $\partial/\partial Q_t\mapsto k_0$ and $\partial/\partial Q_k\mapsto ik_k$ for the gradient, whose coordinates are the algebra's, while $\partial/\partial x_\mu\mapsto ik_\mu$ for the four products, whose coordinates are the material ones. On the spatial slots the value is $ik_k$ and not $k_k$: the $i$ must be kept, and dropping it is the commonest error in this calculation.</p>
+<p><strong>The gradient's symbol, as an array.</strong> Apply the substitution to $L^{\mathrm{axf}}(\tilde\nabla)$:</p>
+<p>$$
+S(\tilde\nabla)=
+\begin{pmatrix}
+k_0&-ik_1&-ik_2&-ik_3\\
+ik_1&k_0&-ik_3&ik_2\\
+ik_2&ik_3&k_0&-ik_1\\
+ik_3&-ik_2&ik_1&k_0
+\end{pmatrix},
+\qquad \det S(\tilde\nabla)=\left(k_0^2-\lvert\vec k\rvert^2\right)^2 .
+$$</p>
+<p><strong>The contraction's symbol, as an array.</strong> Apply $\partial/\partial x_\mu\mapsto ik_\mu$ to the contraction:</p>
+<p>$$
+S\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)=
+\begin{pmatrix}
+k_2&k_0+k_3&0&-k_1\\
+-k_0+k_3&-k_2&k_1&0\\
+0&k_1&k_2&-k_0+k_3\\
+-k_1&0&k_0+k_3&-k_2
+\end{pmatrix},
+\qquad S^{2}=-\left(k_0^2-\lvert\vec k\rvert^2\right)I_4,
+$$</p>
+<p>$$
+\det S\Bigl(\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}\Bigr)
+=\left(k_0^2-\lvert\vec k\rvert^2\right)^2 .
+$$</p>
+<p>The two determinants are equal and the two arrays are not. Note where the $i$ sits: the gradient's array keeps it on the spatial entries and its time entry is real, while the contraction's array has none, because the $i$ of each of the four cancels the $i$ of its derivative. That is the $i$ of $Q_t=ict'$ showing in the arrays.</p>
+<p><strong>Both first-order operators give the same determinant.</strong> Take $\phi=k_0x_0-\vec k\cdot\vec q$ and $x_0=ct'$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>symbol</th>
+<th>$\det$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the element $k_0e_t+i\vec k\cdot\vec e$, of natural norm $k_0^2-\lvert\vec k\rvert^2$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>$k_0^2-\lvert\vec k\rvert^2$</td>
+<td>$k_0^2-\lvert\vec k\rvert^2$</td>
+</tr>
+<tr>
+<td>the contraction</td>
+<td>$\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,ik_\mu$</td>
+<td>$(k_0^2-\lvert\vec k\rvert^2)^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The finding.</strong> The light cone is common to the gradient and to the four products, and the Lorentzian form is not a property of either of them. This deserves to be stated plainly because the opposite is a natural guess. The gradient's symbol is the element $ik_\mu e_\mu$, whose natural norm is $k_0^2-\lvert\vec k\rvert^2$; a nonzero element is a zero divisor exactly when its natural norm vanishes, so the gradient annihilates a plane wave exactly when $k$ is null. The product symbol squares to $-\left(k_0^2-\lvert\vec k\rvert^2\right)I_4$, so it is singular exactly when $k$ is null. Both conditions are the cone, and both determinants are the square of the same scalar.</p>
+<p><strong>Both have a two-dimensional kernel there.</strong> At $k=(1,1,0,0)$ the gradient's symbol is the zero divisor $e_t+i\vec e_x$ and the contraction's symbol is singular, and neither symbol is zero:</p>
+<p>$$
+\tilde\nabla\text{ at }k:\ e_t+i\vec e_x,\quad \text{kernel }\operatorname{span}\left\{ie_t+\vec e_x,\ i\vec e_y+\vec e_z\right\},
+$$</p>
+<p>$$
+\sum_{\mu}iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\,ik_{\mu}\ \text{at }k:\ \operatorname{rank}2,\quad
+\text{kernel }\operatorname{span}\left\{e_t+\vec e_y,\ \vec e_x+\vec e_z\right\}.
+$$</p>
+<p>The two kernels are different two-planes of the same four-dimensional space, and that is the correct picture: the two equations are different equations with the same cone. The gradient's kernel is computed by left multiplication, $\ker L(a)=\{m:am=0\}$, and it is two-dimensional because $a$ is of rank one, so its kernel is a line and each of the two columns of $m$ must lie in that line. The product kernel is two-dimensional because the symbol squares to zero on the cone, so it is a nonzero nilpotent and its rank is two. Neither count is an accident, and neither distinguishes the operators.</p>
+<p><strong>Off the cone both are invertible.</strong> At $k=(2,1,0,0)$, where $k_0^2-\lvert\vec k\rvert^2=3$, the contraction's symbol has determinant $9$ and the gradient's symbol has natural norm $3$, so no plane wave of that wave vector survives either operator.</p>
+<p><strong>What the cone does not decide.</strong> The mass. On a null wave both operators annihilate something, so both can write a massless equation; the difference appears at the next order, where the gradient's square carries the cross term and no scalar mass can be subtracted from it, while $i$ times the contraction squares to $\Box$, so that subtracting a scalar $m$ from it gives an operator whose square is $\Box-m^2$, and the equation implies $(\Box-m^2)\psi=0$. The cone is shared; the square is not. Any argument for the four products that runs through the light cone is measuring the $i$ of $Q_t=ict'$ and not the difference between the operators.</p>
+<h2 id="one-field-three-answers">One Field, Three Answers</h2>
+<p>The three operators side by side, on the same ten fields, with $c=1$. This is the table to consult when a formula is ambiguous. "Contraction" is always the contraction $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, written out in §<em>The Four LR Products</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>$\tilde\nabla\psi$</th>
+<th>contraction</th>
+<th>$\Box\psi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec e_z$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_y$</td>
+<td>$\vec e_z$</td>
+<td>$-i\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$-i\vec e_y$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$ie_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_x$</td>
+<td>$-\vec e_z$</td>
+<td>$i\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$t'\vec e_x$</td>
+<td>$-i\vec e_x$</td>
+<td>$-ie_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$q_x\vec e_x-q_y\vec e_y$</td>
+<td>$iq_ye_t+iq_x\vec e_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_x$</td>
+<td>$-q_ye_t-q_x\vec e_z$</td>
+<td>$iq_x\vec e_x-iq_y\vec e_y$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$-\cos q_x\,e_t$</td>
+<td>$-i\cos q_x\,\vec e_y$</td>
+<td>$-\sin q_x\,\vec e_x$</td>
+</tr>
+<tr>
+<td>$t'^2\vec e_x$</td>
+<td>$-2it'\,\vec e_x$</td>
+<td>$-2it'\,e_t$</td>
+<td>$-\frac{2}{c^2}\vec e_x$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How to read the table.</strong> The first column is always an element, and it is the field multiplied by an element on the left: that is why its entries look like products of units. The second is an element too, but produced by two multiplications, and that is why its entries are shorter, with the intermediate units cancelled. The third is a scalar times the field, and that is why it repeats the field's unit whenever it is nonzero.</p>
+<p><strong>Two checks that catch most errors.</strong> On a constant field all three vanish, so any computed value that does not is a mistake. On a field linear in one coordinate the third vanishes and the first two do not, so a nonzero $\Box$ on a linear field is a mistake.</p>
+<p><strong>The squares, on the same fields.</strong> The three squares, side by side:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>$\tilde\nabla^2\psi$</th>
+<th>contraction squared</th>
+<th>$\Box\psi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q_x\vec e_y$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_x^2\vec e_y$</td>
+<td>$-2\vec e_y$</td>
+<td>$-2\vec e_y$</td>
+<td>$2\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$-\sin q_x\,\vec e_x$</td>
+</tr>
+<tr>
+<td>$t'^2\vec e_x$</td>
+<td>$-\frac{2}{c^2}\vec e_x$</td>
+<td>$+\frac{2}{c^2}\vec e_x$</td>
+<td>$-\frac{2}{c^2}\vec e_x$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How the three squares differ.</strong> The contraction's square is $-\Box$ exactly. The gradient's square agrees with it on the spatial part and differs on the time part, because its diagonal is $-\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}$ where $-\Box$ is $-\Delta+\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}$; on a field with no time dependence the two coincide, which is why the first four rows show the same value in the first two columns, and on a field with no space dependence they separate, which is the fifth row. On top of that the gradient's square carries the cross term $\frac{2i}{c}\vec e_k\frac{\partial^2}{\partial t'\partial q_k}$, which no field of this table has in a single coordinate and which no purely spatial or purely temporal field can show: it needs a product of the time with a spatial coordinate.</p>
+<h2 id="the-pair-operator">The Pair Operator</h2>
+<p><strong>The fourth object, and the name it shares.</strong> In <em>Operator and Calculus Conventions</em> the corpus's $\mathbb{C}^{\mathrm{spl}}$ is neither of the three above. It is one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,</p>
+<p>$$
+\mathbb{C}^{\mathrm{spl}}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \Psi=(\Psi_L,\Psi_R),
+$$</p>
+<p>and it squares to the scalar on the sum,</p>
+<p>$$
+{\mathbb{C}^{\mathrm{spl}}}^2\Psi=\bigl(\tilde\nabla\tilde\nabla^{\natural}\Psi_L,\ \tilde\nabla^{\natural}\tilde\nabla\Psi_R\bigr)=\Box\,\Psi .
+$$</p>
+<p><strong>Its array is block off-diagonal.</strong> Order the eight coefficients as the four of $\Psi_L$ followed by the four of $\Psi_R$. Then $\tilde\nabla$ acts on $\Psi_R$ and $\tilde\nabla^{\natural}$ on $\Psi_L$, so the array carries the gradient's array in the upper-right block and the conjugate's in the lower-left:</p>
+<p>$$
+\mathbb{C}^{\mathrm{spl}}=
+\left(\begin{array}{cccc|cccc}
+0&0&0&0&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\
+0&0&0&0&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}\\
+0&0&0&0&\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}\\
+0&0&0&0&\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}\\[3pt]
+\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}&0&0&0&0\\
+-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}&0&0&0&0\\
+-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}&0&0&0&0\\
+-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&0&0&0&0
+\end{array}\right).
+$$</p>
+<p>Squaring it puts $\tilde\nabla\tilde\nabla^{\natural}$ on one diagonal block and $\tilde\nabla^{\natural}\tilde\nabla$ on the other, both $\Box I_4$, so the square is $\Box I_8$. No LR product appears, and none is needed: the two sides of the pair are two factors of the sum, and the chirality is a place in the sum rather than an LR product acting on it.</p>
+<p><strong>The collision.</strong> <em>Bhabha Multi-Mass Wave Equations</em> writes the same label for the contraction of the four products on one field, $\mathbb{C}^{\mathrm{spl}}=i\sum_\mu G_\mu\partial_\mu$, with ${\mathbb{C}^{\mathrm{spl}}}^2=\Box$. The two operators therefore share a name and a square, and differ in the space they act on: the pair acts on $\mathbb{B}\oplus\mathbb{B}$ and has no product; the contraction acts on $\mathbb{B}$ and is built from four. The shared square is what makes the shared name defensible, and it is also what makes it dangerous, because a page that says $\mathbb{C}^{\mathrm{spl}}$ without naming the space cannot be read. This note writes the contraction out as its four products and adds no letter, so that a reader cannot mistake it for the pair: the collision stays visible in the space the operator acts on, which the notation now forces one to say.</p>
+<p><strong>Why it is not a fourth physics.</strong> The pair and the contraction have the same square and the same massless content. They differ in where the two chiral halves sit: in the pair they are the two summands, so the operator is one-sided on each; in the contraction they are the two eigenspaces of $iL_{\vec e_y}R_{\vec e_y}$, so the operator is two-sided on one module. Both are correct, and the corpus keeps the pair as the definition and the product equation as its representative on the single module (<em>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</em>, §<em>The Two Dirac Equations</em>).</p>
+<p><strong>The one-line test.</strong> If the object acts on a pair of fields, it is the pair and contains no LR product. If it acts on one field and its square is scalar in one copy, it is the contraction, which the Bhabha article also calls $\mathbb{C}^{\mathrm{spl}}$. If it acts on one field, is an element, and its square is not scalar, it is the gradient. The test is the space and the square, never the label.</p>
+<h2 id="the-sources-letter">The Source's Letter</h2>
+<p><strong>The letter, defined.</strong> The source writes one letter, $\partial$, and it is the four LR products contracted with the four derivatives, the three spatial terms carrying the minus sign:</p>
+<p>$$
+\partial=\sum_{\mu}\varepsilon_{\mu}\,iL_{e_{\mu}}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_{\mu}}
+=iR_{\vec e_x}\frac{\partial}{\partial x_0}-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}
+=\frac{i}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k},
+$$</p>
+<p>with $\varepsilon=(1,-1,-1,-1)$, $x_0=ct'$ and $x_k=q_k$.</p>
+<p><strong>The letter as an array.</strong> With the three spatial products negated, the array of the contraction displayed in §<em>The Four LR Products</em> changes sign in its three spatial parts:</p>
+<p>$$
+\partial=
+\begin{pmatrix}
+ i\frac{\partial}{\partial x_2}&-i\frac{\partial}{\partial x_0}+i\frac{\partial}{\partial x_3}&0&-i\frac{\partial}{\partial x_1}\\[3pt]
+ i\frac{\partial}{\partial x_0}+i\frac{\partial}{\partial x_3}&-i\frac{\partial}{\partial x_2}&i\frac{\partial}{\partial x_1}&0\\[3pt]
+0&i\frac{\partial}{\partial x_1}&i\frac{\partial}{\partial x_2}&i\frac{\partial}{\partial x_0}+i\frac{\partial}{\partial x_3}\\[3pt]
+-i\frac{\partial}{\partial x_1}&0&-i\frac{\partial}{\partial x_0}+i\frac{\partial}{\partial x_3}&-i\frac{\partial}{\partial x_2}
+\end{pmatrix},
+$$</p>
+<p>whose square is again $-\Box I_4$.</p>
+<p>It is an operator of the algebra on one field. It is not an element, not a scalar, and not the pair.</p>
+<p><strong>Why the letter is defined here, and stays here.</strong> The internal corpus is where this note lives, so this is where the letter is defined: its formula above, its square, its symbol, its action on ten fields, and the reason it exists. It is written once and in full, and a page that quotes the source points here instead of leaving the operator undefined. It is not a conventions object and is not offered as one.</p>
+<p><strong>The glyph is shared with the derivative, and that is the source's choice, not a convention.</strong> In the expression above $\partial$ is an operator and $\partial/\partial x_\mu$ is a derivative; the source uses one sign for both, and a page that copies it without a rule is unreadable. The rule this note keeps is mechanical: the letter never carries an index, a derivative always does, and the letter is never applied twice in one symbol. So $\partial$ is the operator, $\partial_\mu$ and $\partial/\partial x_\mu$ are derivatives, and $\partial^2$ is the operator squared, which is $-\Box$ and not a second derivative of anything.</p>
+<p><strong>Worked cases.</strong> The same ten fields, through the letter, with $c=1$ as the source has it. On a field that depends on one coordinate the letter differs from the contraction by the sign of the spatial term only:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field $\psi$</th>
+<th>$\partial\psi$</th>
+<th>contraction $\psi$</th>
+<th>how</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>constants die</td>
+</tr>
+<tr>
+<td>$q_x\vec e_x$</td>
+<td>$i\vec e_y$</td>
+<td>$-i\vec e_y$</td>
+<td>the spatial sign is the whole difference</td>
+</tr>
+<tr>
+<td>$q_x\vec e_z$</td>
+<td>$-ie_t$</td>
+<td>$ie_t$</td>
+<td>the same, and $\vec e_x\vec e_z\vec e_y=e_t$</td>
+</tr>
+<tr>
+<td>$t'\vec e_x$</td>
+<td>$-ie_t$</td>
+<td>$-ie_t$</td>
+<td>a time term is untouched</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$-iq_ye_t-iq_x\vec e_z$</td>
+<td>$iq_ye_t+iq_x\vec e_z$</td>
+<td>two live terms, both reflected</td>
+</tr>
+<tr>
+<td>$\sin q_x\,\vec e_x$</td>
+<td>$i\cos q_x\,\vec e_y$</td>
+<td>$-i\cos q_x\,\vec e_y$</td>
+<td>the derivative of the sine</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The square, computed on the same field.</strong> Two applications of the letter on a field with a nonzero second derivative:</p>
+<p>$$
+\partial^2\left(\sin q_x\,\vec e_x\right)=\sin q_x\,\vec e_x=-\Box\left(\sin q_x\,\vec e_x\right),
+$$</p>
+<p>because $\Delta$ of that field is $-\sin q_x\vec e_x$ and its time derivative vanishes. The square is the scalar $-\Box$, and it is the same scalar the contraction squares to, so the letter and the contraction agree in the square and disagree in the sign of every spatial term. That is the sense in which the reflection changes nothing that matters.</p>
+<p><strong>Why the sign changes nothing.</strong> Each spatial term enters the square squared, so the minus does not touch the square; and the sign of the three spatial components of a wave vector leaves $k_0^2-\lvert\vec k\rvert^2$ unchanged, so it does not touch the null condition either. The reflection is a relabelling of the same geometry.</p>
+<p><strong>How the letter stands against $\mathbb{C}^{\mathrm{spl}}$.</strong> The letter is the contraction with the three spatial products negated, so $\partial^2=-\Box$. The Bhabha letter is $i$ times the contraction, so ${\mathbb{C}^{\mathrm{spl}}}^2=+\Box$. Both are contractions of the same four products, and the two differ by the sign of the spatial terms and by one factor of $i$, which is the same difference that separates the contraction from $i$ times it. Neither is the pair of <em>Operator and Calculus Conventions</em>, whose square is also $+\Box$ but which acts on two fields and contains no product.</p>
+<p><strong>Why the letter has to be there at all.</strong> Not for the light cone, which the gradient reaches too, but for the square. The source wants one first-order equation in one field, with a mass in it, and the mass can only be a scalar subtracted from an operator whose square is a scalar. That operator must have four pairwise anticommuting generators, and §<em>Why Four LR Products and Not Four Units</em> shows that the algebra contains no such four. The letter is that operator, and it is a contraction of products because only the four products provide the fourth generator. Without the letter the source would have to write the pair, which is two fields and two equations; with it, one first-order equation in one field carries the mass.</p>
+<p><strong>How to cite it.</strong> A page that quotes the source writes the letter and says, once, that it is the contraction with the spatial products negated, pointing here for the definition; a page that computes writes the contraction, or $i$ times it, or $\Box$. Mixed use without the note is what makes the three operators look like one.</p>
+<h2 id="the-six-traps">The Six Traps</h2>
+<p><strong>The first trap: $\tilde\nabla^2=\Box$.</strong> False. The square is $\Box-2\Delta-\frac{2i}{c}\vec e_k\partial^2_{t'q_k}$, which is neither scalar nor $\Box$. The d'Alembertian is the product with the conjugate, and the order of the two factors is the whole content of the definition.</p>
+<p><strong>The second trap: the sign of the contraction's square.</strong> The contraction squares to $-\Box$ in the $\mathbb{M}_-$ frame and $i$ times it squares to $+\Box$ there. Both are correct, and a page that mixes them flips the sign of every mass term. The sign comes from the frame and not from the four products: the $\mathbb{B}$ products are $i$ times the $\mathbb{M}_-$ ones, $i\,(iL_{\vec e_k}R_{\vec e_y})=-L_{\vec e_k}R_{\vec e_y}$, so the spatial products square to $+1$ in $\mathbb{B}$ and to $-1$ in $\mathbb{M}_-$, and the $i$ that flips them is the $i$ of $Q_t=ict'$. In the $\mathbb{B}$ frame the contraction itself squares to $+\Box$.</p>
+<p><strong>The third trap: reading $\mathbb{C}^{\mathrm{spl}}$ without its space.</strong> The label names two operators. In <em>Operator and Calculus Conventions</em> it is the pair on $\mathbb{B}\oplus\mathbb{B}$; in <em>Bhabha Multi-Mass Wave Equations</em> it is the contraction of the four products on $\mathbb{B}$. Both square to $+\Box$, so a square alone does not tell them apart, and a page that writes only the letter leaves the reader to guess whether four products act on one field or two gradients act on a pair. The cure is one word, the space, and this note writes the contraction out as its four products so that the guess is never needed.</p>
+<p><strong>The fourth trap: "the metric must sit somewhere."</strong> It must not, because it is already there. The algebra carries the Euclidean metric $(1,1,1,1)$ in its natural norm, and the Lorentzian form of a material display is that metric after $Q_t=ict'$, one substitution and not a sign put into an operator. The gradient and the four products carry the same $i$, so neither of them is where the metric sits, and both annihilate the same null waves. What the four products supply is four anticommuting generators, which no element can supply; that is a dimension count, and it is not a signature.</p>
+<p><strong>The fifth trap: reading $\partial$ as a derivative.</strong> The glyph is a derivative's and the object is an operator, so a page that copies the source can write "$\partial$" for a partial derivative and lose the operator, or write "$\partial_\mu$" for the operator and lose the derivative. The rule is the index: the operator never has one, the derivative always does. A second guard is that $\partial$ is never a scalar: $\partial^2=-\Box$ is a scalar, $\partial$ alone is an operator of the algebra, and a page that treats it as a number has dropped the four products.</p>
+<p><strong>The sixth trap: treating an LR product as an element.</strong> No element of $\mathbb{B}$ can play the part of a spatial product. Write an element as $\alpha+\vec a$; then $(\alpha+\vec a)^2=\alpha^2-\lvert\vec a\rvert^2+2\alpha\vec a$. An element with $\vec a=0$ is central, so it commutes with everything and cannot anticommute with a second generator; an element with $\alpha=0$ is a pure vector, and two pure vectors anticommute exactly when they are orthogonal. Four anticommuting generators would therefore be four mutually orthogonal nonzero vectors of a three-dimensional space, and four such do not exist. That is why the four products are operators of the algebra and not elements of it, and why the contraction cannot be rewritten as a sum of elements with derivative coefficients.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The gradient</strong> is an element with derivative coefficients. It acts on the left, it stays in the algebra, and its square is not scalar; its symbol has the same light cone as the four products'.</p>
+<p><strong>The d'Alembertian</strong> is the scalar second-order operator $\Box=\tilde\nabla\tilde\nabla^{\natural}$. It stays in the algebra, it is scalar, and its kernel is the light cone.</p>
+<p><strong>The contraction</strong> is a first-order operator of the algebra built from four LR products. It acts on both sides, it leaves the algebra for the frame, and its square is scalar in one copy; the gain is anticommutation, not a signature, and its symbol has the same light cone as the gradient's.</p>
+<p><strong>The pair operator</strong> is one operator on $\mathbb{B}\oplus\mathbb{B}$ whose square is $\Box I$; it is the pair written once and contains no LR product. <em>Operator and Calculus Conventions</em> calls it $\mathbb{C}^{\mathrm{spl}}$, and <em>Bhabha Multi-Mass Wave Equations</em> calls the contraction by the same name; the space is the difference.</p>
+<p><strong>The letter</strong> $\partial$ is the contraction with the three spatial products negated, $\partial=iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$. The conventions do not define it and this note does, once and in full. It shares its square $-\Box$ and its symbol with the contraction. Its glyph is a derivative's, and the index is what separates the two.</p>
+<p><strong>The rule of use.</strong> A first-order equation in one field <em>with a mass</em> needs the four products; a second-order equation in one field needs $\Box$; a first-order pair needs the gradient with its conjugate and the direct sum. All three write the same light cone, so the choice is never about the cone and always about the square.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the biquaternionic gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$; an element with derivative coefficients</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural$</td>
+<td>the natural norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the Euclidean form $(1,1,1,1)$; the determinant of the left array is its square</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\Delta-c^{-2}\partial^2/\partial t'^2$ on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$Q_\mu$, $q_\mu$</td>
+<td>the algebra coordinates and their real parts; $Q_t=ict'$ and $Q_k=q_k$ on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$x_0$, $x_k$</td>
+<td>the material coordinates $x_0=ct'$ and $x_k=q_k$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$</td>
+</tr>
+<tr>
+<td>$iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>the four LR products a derivative contracts with, written as their two multipliers and never as a letter</td>
+</tr>
+<tr>
+<td>the contraction</td>
+<td>the sum $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$; squares to $-\Box$ in the $\mathbb{M}_-$ frame and $+\Box$ in the $\mathbb{B}$ frame</td>
+</tr>
+<tr>
+<td>$i$ times the contraction</td>
+<td>the same normalised to square to $+\Box$ in the $\mathbb{M}_-$ frame; this is the Bhabha article's $\mathbb{C}^{\mathrm{spl}}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>the pair operator on $\mathbb{B}\oplus\mathbb{B}$ in <em>Operator and Calculus Conventions</em>, ${\mathbb{C}^{\mathrm{spl}}}^2=\Box I$; the same label is the contraction in <em>Bhabha Multi-Mass Wave Equations</em>, the space being the difference</td>
+</tr>
+<tr>
+<td>$\partial$</td>
+<td><em>the source's letter</em>, defined in §<em>The Source's Letter</em> and in no conventions article; the contraction $iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$, never written with an index</td>
+</tr>
+<tr>
+<td>$\partial_\mu$, $\partial/\partial x_\mu$</td>
+<td>the partial derivative, always written with an index; $\partial_0=c^{-1}\partial/\partial t'$</td>
+</tr>
+<tr>
+<td>$L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$</td>
+<td>the left and right arrays in the coefficient basis; the label is a name, not an exponent</td>
+</tr>
+<tr>
+<td>the symbol</td>
+<td>the array obtained by replacing each derivative by its plane-wave value; its determinant decides invertibility on a plane wave, and $\partial$ and the contraction have the same one</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector, carried by the units in the conjugate and by the four products in their squares in the $\mathbb{M}_-$ frame; it is that frame's metric, not an intrinsic sign of an LR product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the gradient, its conjugate, the four norms and the pair operator.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the sixteen products $L_{e_\mu}R_{\vec e_\nu}$, the five LR products of the frame and the coefficient-basis arrays.</li>
+<li><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a>, for the contraction $\mathbb{C}^{\mathrm{spl}}$ and its relation to the chiral pair.</li>
+<li><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>, for $\Box$ as an operator with a kernel and a Green function.</li>
+<li><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a>, for the source's calculus in the article that uses the letter $\partial$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
