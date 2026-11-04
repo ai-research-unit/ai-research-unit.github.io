@@ -71,16 +71,17 @@
         <h1 id="lrd-infestation"><strong>LRD Infestation</strong></h1>
 <h2 id="scope">Scope</h2>
 <p>This file is an <strong>inventory</strong>, not an article and not an entry of a menu. It counts one pattern in the two published corpora and gives a direct link to each article that carries it.</p>
+<p><strong>Snapshot.</strong> The counts below are those of the scan of 4 November 2026, 22:42. A rewrite pass was running over both corpora at the time, so each figure states the day it was taken.</p>
 <p><strong>The pattern.</strong> A left multiplication, then a right multiplication, then a partial derivative:</p>
 <p>$$
 L_{a}R_{b}\,\partial .
 $$</p>
 <p>The chain is written there as one symbol, with a summed index or a label instead of the terms it stands for. It is called <strong>LRD</strong> in this file, from its three letters.</p>
-<p><strong>Two cases, and only the first is in this file's first table.</strong> The chain can be collapsed in two ways. It is collapsed <strong>term by term</strong>, one symbol standing for the four, $L_{a}R_{b}\partial$; that is §<em>The Published Corpus</em>, 27 occurrences in 12 articles. Both kinds are now counted in that one table, in the columns <strong>term by term</strong> and <strong>as a whole</strong>, next to the line numbers and the written form of each. It is collapsed <strong>as a whole</strong>, the sum written over an index or a letter, $\partial=\sum_\mu\dots$; that is §<em>The Second Case</em>, 49 occurrences in 19 articles. The second set contains the first, so the union is <strong>19 articles and 76 occurrences</strong>.</p>
+<p><strong>Two cases, and only the first is in this file's first table.</strong> The chain can be collapsed in two ways. It is collapsed <strong>term by term</strong>, one symbol standing for the four, $L_{a}R_{b}\partial$, and it is collapsed <strong>as a whole</strong>, the sum written over an index or a letter, $\partial=\sum_\mu\dots$. Both kinds are counted in one table, in the columns <strong>term by term</strong> and <strong>as a whole</strong>, next to the line numbers and the written form of each. The second set contains the first, so the union is the table's total. That total is now <strong>zero</strong>: the rewrite pass of 4 November 2026 cleared the pattern from both published corpora.</p>
 <p><strong>Why the second case is worse.</strong> The first case hides which coordinate the derivative acts on. The second hides the derivative, the four multipliers and the sign at once, and it does so in the place where the operator is <em>defined</em>. A reader who meets the definition cannot recover the operator at all.</p>
-<p><strong>The count, first case.</strong> 27 occurrences in 12 published articles: 19 in 11 physics articles and 8 in 1 maths article. One internal file carried 41 chains of the same shape and now carries none of the infested kind.</p>
-<p><strong>The count, second case.</strong> 49 occurrences in 19 published articles: 41 in 18 physics articles and 8 in 1 maths article. The earlier figure of 72 in 29 counted every display holding a $\sum$ beside an $L$ and an $R$, and seven of those rows are not the chain: in five the letter $G_\mu$ is a field or the sum carries one multiplier, and in two the match is a different notation. Those seven rows stay in the table with a zero and a note, so the difference can be read off row by row.</p>
-<p><strong>The word.</strong> Neither table counts the verbal form. The word <em>cell</em>, which names the same collapse in prose, stands 3476 times in 122 physics articles and 1375 times in 165 maths articles.</p>
+<p><strong>The count, first case.</strong> None. The scan of 22:42 finds no published article that collapses the chain term by term. The scan of 22:36 found three, holding 13 occurrences: 6 in 2 physics articles and 7 in 1 maths article. The internal file <em>The Gradient, the D'Alembertian and the Frame Generators</em> carries 44 chains of the shape and none of the infested kind.</p>
+<p><strong>The count, second case.</strong> None. The scan of 22:36 found 14 occurrences in 3 published articles: 7 in 2 physics articles and 7 in 1 maths article. An earlier count of this file read 27 and 49, in 12 and 19 articles. Two repair passes have since rewritten twenty-four published articles, and the re-scan leaves none. The fall is the repair, not a change of rule: the walk and the test are the ones described in §<em>How the Count Is Made</em>.</p>
+<p><strong>The word.</strong> Neither table counts the verbal form. The word <em>cell</em>, which names the same collapse in prose, stands 2495 times in 101 physics articles and 1405 times in 167 maths articles.</p>
 <h2 id="the-token">The Token</h2>
 <p>The canonical form is</p>
 <p>$$
@@ -93,9 +94,9 @@ iR_{\vec e_x}\partial_{x_0}+iL_{\vec e_x}R_{\vec e_y}\partial_{x_1}+iL_{\vec e_y
 $$</p>
 <p>That is four occurrences of the shape, and none of them is infested. The defect is not the shape; it is the collapse.</p>
 <h2 id="why-the-collapse-is-a-defect">Why the Collapse Is a Defect</h2>
-<p><strong>It hides three of four terms.</strong> An index $k$ over $1,2,3$ or a table $\nu(\mu)$ stands for four operators, and the reader who wants any one of them must expand the symbol himself. 25 of the 27 occurrences carry such an index; only one names both multipliers and only one names neither.</p>
-<p><strong>It hides the coordinate of the derivative.</strong> 20 occurrences write the derivative as a bare glyph, $L_{\vec e_k}R_{\vec e_y}\partial$, with no argument at all. Nothing in the expression says whether it acts on $x_0$, on $q_k$, or on $t'$.</p>
-<p><strong>It smuggles in a frame.</strong> 18 of the 27 carry the caret label on both multipliers, so the same chain appears as $^{\mathrm{axf}}$ in one article and $^{\mathrm{pau}}$ in the next. A product of two multiplications is display-independent, so the label on a product is either redundant or false.</p>
+<p><strong>It hides three of four terms.</strong> An index $k$ over $1,2,3$ or a table $\nu(\mu)$ stands for four operators, and the reader who wants any one of them must expand the symbol himself. All 13 carried such an index, and none named both multipliers.</p>
+<p><strong>It hides the coordinate of the derivative.</strong> At the last scan that found the pattern, none of the 13 wrote a bare glyph: the first repair pass had given every chain a coordinate, $x_k$ or $Q_k$. What stayed hidden is which of the four operators the index selects, so the reader could read the coordinate and still not read the term.</p>
+<p><strong>It smuggles in a frame.</strong> 6 of the 13 carried the caret label on both multipliers, so the same chain appeared as $^{\mathrm{axf}}$ in one article and $^{\mathrm{pau}}$ in the next. A product of two multiplications is display-independent, so the label on a product is either redundant or false.</p>
 <p><strong>It reproduces the syntax it replaces.</strong> $\gamma_\mu$ is one index standing for four matrices. $L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial$ is one index standing for four operators. The shape is the same and so is the failure: a single letter that must be unpacked before it can be checked.</p>
 <h2 id="the-count">The Count</h2>
 <div class="table-scroll"><table>
@@ -110,33 +111,33 @@ $$</p>
 <tbody>
 <tr>
 <td>physics</td>
-<td>412</td>
-<td>11</td>
-<td>19</td>
+<td>411</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>maths</td>
 <td>2362</td>
-<td>1</td>
-<td>8</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>internal</td>
-<td>9</td>
+<td>10</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
 <td><strong>total</strong></td>
-<td>2774</td>
-<td><strong>12</strong></td>
-<td><strong>27</strong></td>
+<td>2783</td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p>37 chains of the shape exist in the published corpora. 27 of them are infested and 10 name their coordinate; those 10 are not counted and are listed in §<em>What Is Not Counted</em>.</p>
+<p>Seven chains of the shape exist in the published corpora, in two articles, and all seven name their coordinate; they are the repaired form. They are not counted and are listed in §<em>What Is Not Counted</em>.</p>
 <h2 id="the-published-corpus">The Published Corpus</h2>
-<p>27 occurrences in 12 articles collapse the chain term by term; 49 occurrences in 19 articles collapse it as a whole. One table lists both, because the first set is contained in the second: every article that collapses the chain term by term also collapses it somewhere else.</p>
+<p>No article is listed. The table keeps its columns so that a later scan can be read against it, and it held three rows at 22:36. One table lists both kinds, because the first set is contained in the second: an article that collapses the chain term by term also collapses it somewhere else.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -156,368 +157,18 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a></td>
-<td>maths</td>
-<td>8</td>
-<td>8</td>
-<td>term by term 24, 26, 80, 99, 325, 337, 582, 600; as a whole 24, 26, 79, 99, 107, 324, 582, 600</td>
-<td>$iL_{\vec e_k}R_{\vec e_y}\partial$ five times, $iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$ twice, and $L_{a}R_{b}\partial$ once; as a whole $\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$ in all eight, three of the four terms summed and the time term written out</td>
-<td>8</td>
-<td>0</td>
-<td>0</td>
-<td>40</td>
-<td>index, letters $L_aR_b$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
-<td>physics</td>
-<td>4</td>
-<td>4</td>
-<td>term by term 88, 561, 567, 643; as a whole 86, 560, 566, 643</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$, the $^{\mathrm{pau}}$ twin, and two bare $\partial$; as a whole $\sum_k L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$ three times and the $^{\mathrm{pau}}$ twin once</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>36</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>3</td>
-<td>5</td>
-<td>term by term 255, 456, 480; as a whole 253, 260, 456, 480</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$ and bare $\partial$; as a whole $\sum_{k=1}^{3}L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$ three times, and $\mathbb{D}=i\sum_{\mu=0}^{3}G_\mu\partial_{x_\mu}$ once</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>37</td>
-<td>index, letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
-<td>physics</td>
 <td>—</td>
-<td>4</td>
-<td>as a whole 154, 162, 170, 411</td>
-<td>$\mathbb{D}=iG_\mu\partial_{x_\mu}$ in all four</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>24</td>
-<td>letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>1</td>
-<td>4</td>
-<td>term by term 84; as a whole 83, 91, 444</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\,\partial$; as a whole $\sum_kL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$ at 83 and 444, $iG_\mu\partial_{x_\mu}$ at 91 and 444</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>66</td>
-<td>index, letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>2</td>
-<td>2</td>
-<td>term by term 382, 390; as a whole 381, 389</td>
-<td>the $^{\mathrm{pau}}$ chain and its $^{\mathrm{axf}}$ twin; as a whole $\sum_kL^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{Q_k}$ and its $^{\mathrm{axf}}$ twin</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>8</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
-<td>physics</td>
+<td>none</td>
 <td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>the two corpora carry the pattern nowhere at the scan of 22:42</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>—</td>
-<td>none: the four matches are the field $G_\mu$ and the tensor $G_{\mu\nu}$, not a pair</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>26</td>
-<td>letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>2</td>
-<td>2</td>
-<td>term by term 180, 330; as a whole 179, 330</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$ and bare $\partial$; as a whole $\sum_kL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$ twice</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>13</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>1</td>
-<td>1</td>
-<td>term by term 321; as a whole 319</td>
-<td>$iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$; as a whole $\sum_{k=1}^{3}iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$ once; the sum at 333 carries no derivative and is not counted</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>18</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
-<td>physics</td>
 <td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the three matches sum one multiplier, not the pair</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>22</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
-<td>physics</td>
-<td>2</td>
-<td>1</td>
-<td>term by term 175; as a whole 173</td>
-<td>$L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_x}\partial$ and $L^{\mathrm{axf}}_{e_k}R^{\mathrm{axf}}_{\vec e_{\nu(k)}}\partial$; as a whole $\sum_kL^{\mathrm{axf}}_{e_k}R^{\mathrm{axf}}_{\vec e_{\nu(k)}}\partial_{x_k}$ once</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>44</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
-<td>physics</td>
-<td>1</td>
-<td>3</td>
-<td>term by term 102; as a whole 99, 358</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$; as a whole $\mathbb{D}=i\sum_\mu G_\mu\partial_{x_\mu}$ at 99 and 358, closing at 99 on $\sum_kL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>26</td>
-<td>index, letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 19, 557</td>
-<td>$\sum_\mu(iL^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{\vec e_{\nu(\mu)}})\partial_{x_\mu}$ twice; the sum at 59 carries $\pi_k$ and is not counted</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>86</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>1</td>
-<td>1</td>
-<td>term by term 271; as a whole 271</td>
-<td>$L^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial$; as a whole $\sum_kL^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{x_k}$ once</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>39</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 396, 402</td>
-<td>$\sum_kL^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{Q_k}$ at 396 and the $^{\mathrm{axf}}$ twin at 402</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>22</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>1</td>
-<td>1</td>
-<td>term by term 311; as a whole 310</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$; as a whole $\sum_kL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$ once</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>21</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 641, 648</td>
-<td>$\sum_kL^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{Q_k}$ at 641 and the $^{\mathrm{axf}}$ twin at 648</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>19</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 105, 123</td>
-<td>$\sum_\mu G_\mu\partial_{x_\mu}$ twice, the letter $G_\mu$ standing for the two multiplications</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-<td>letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 41, 61</td>
-<td>$\sum_\mu G_\mu\partial_{Q_\mu}$ twice</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>11</td>
-<td>letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>1</td>
-<td>1</td>
-<td>term by term 385; as a whole 385</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial$; as a whole $\sum_kL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$ once</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>113</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>2</td>
-<td>as a whole 280, 287</td>
-<td>$\sum_kL^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{Q_k}$ at 280 and the $^{\mathrm{axf}}$ twin at 287</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>34</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
-<td>physics</td>
-<td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the match is $\alpha_k=c_0c_k=L_{\vec e_k}R_{\vec e_z}$ with no derivative</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>31</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
-<td>physics</td>
-<td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the match sums one multiplier, $L_{\vec e_k}\partial_{Q_k}$, without the pair</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>17</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the match is $\nabla=\sum_\mu v_\mu\partial_{x_\mu}$ in the spacetime-algebra notation</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>33</td>
-<td>index</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
-<td>physics</td>
-<td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the match is $\partial\alpha/\partial x_\mu$</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>132</td>
-<td>letter $G_\mu$</td>
-</tr>
-<tr>
-<td>Apply the instruction LRD-MIGRATION.md to the article :</td>
-<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
-<td>physics</td>
-<td>—</td>
-<td>0</td>
-<td>—</td>
-<td>none: the match is $\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}$, one symbol, not a pair</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>50</td>
-<td>index</td>
 </tr>
 </tbody>
 </table></div>
@@ -529,7 +180,7 @@ $$</p>
 <li><em>letters $L_aR_b$</em> — the pair names nothing, $L_{a}R_{b}$. One occurrence, in <em>The First-Order Root of the Biquaternion D'Alembertian</em>, which is the worst file in either corpus: six of its eight occurrences also write the derivative with no coordinate.</li>
 </ul>
 <p>Where a file carries both an explicit pair and the letter $G_\mu$, the cell names both.</p>
-<h2 id="the-fourteen-forms">The Fourteen Forms</h2>
+<h2 id="the-seven-forms">The Seven Forms</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -540,69 +191,41 @@ $$</p>
 <tbody>
 <tr>
 <td>5</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial$</td>
-</tr>
-<tr>
-<td>5</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$</td>
-</tr>
-<tr>
-<td>5</td>
-<td>$iL_{\vec e_k}R_{\vec e_y}\partial$</td>
+<td>$L_{\vec e_k}R_{\vec e_y}\partial/\partial x_k$</td>
 </tr>
 <tr>
 <td>2</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{x_k}$</td>
-</tr>
-<tr>
-<td>3</td>
-<td>$iL^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{\vec e_{\nu(\mu)}}\partial$</td>
+<td>$L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}$</td>
 </tr>
 <tr>
 <td>2</td>
-<td>$L^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial_{Q_k}$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$iL^{\mathrm{pau}}_{e_\mu}R^{\mathrm{pau}}_{\vec e_{\nu(\mu)}}\partial$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$</td>
+<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\frac{\partial}{\partial Q_k}$</td>
 </tr>
 <tr>
 <td>1</td>
-<td>$iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_{Q_k}$</td>
+<td>$L^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\frac{\partial}{\partial Q_k}$</td>
 </tr>
 <tr>
 <td>1</td>
-<td>$L^{\mathrm{pau}}_{\vec e_k}R^{\mathrm{pau}}_{\vec e_y}\partial$</td>
+<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial/\partial Q_k$</td>
 </tr>
 <tr>
 <td>1</td>
-<td>$L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_x}\partial$</td>
+<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\,\partial/\partial x_k$</td>
 </tr>
 <tr>
 <td>1</td>
-<td>$L^{\mathrm{axf}}_{e_k}R^{\mathrm{axf}}_{\vec e_{\nu(k)}}\partial$</td>
-</tr>
-<tr>
-<td>1</td>
-<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\,\partial$</td>
-</tr>
-<tr>
-<td>1</td>
-<td>$L_{a}R_{b}\partial$</td>
+<td>$L^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}\partial_k$</td>
 </tr>
 </tbody>
 </table></div>
-<p>Fourteen forms for one operator. The variation is in the label, in the index letter and in the spacing, not in the mathematics.</p>
+<p>These were the seven forms at 22:36, in thirteen occurrences and three files. The variation is in the label, in the fraction style and in the spacing, not in the mathematics. Before the repair pass the same walk found fourteen forms in twelve articles. None of the seven survives the scan of 22:42.</p>
 <h2 id="the-second-case-the-collapsed-contraction">The Second Case: the Collapsed Contraction</h2>
 <p>The chain collapsed as a whole. Four written shapes:</p>
 <p><strong>A sum over an index.</strong> $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, or $\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$, with the four terms never printed.
 <strong>A single letter.</strong> $\partial=\dots$ closing on such a sum, which turns the collapse into a definition.
 <strong>The letter $G_\mu$.</strong> $G_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, used as $\sum_\mu G_\mu\partial/\partial x_\mu$, with the four hidden behind one index and the index function behind that.
-<strong>The $\varepsilon_\mu$ sum</strong>, $\sum_\mu\varepsilon_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu$, where the sign vector does the work the four explicit signs would do.</p>
+<strong>The $\varepsilon_\mu$ sum</strong>, $\sum_\mu\varepsilon_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu$, where the sign vector does the work the four explicit signs would do. None of the four remains in the published corpora at the scan of 22:42; the first and the third were the two that survived the first pass.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -614,18 +237,18 @@ $$</p>
 <tbody>
 <tr>
 <td>physics</td>
-<td>18</td>
-<td>41</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>maths</td>
-<td>1</td>
-<td>8</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><strong>total</strong></td>
-<td><strong>19</strong></td>
-<td><strong>49</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
 </tr>
 </tbody>
 </table></div>
@@ -642,29 +265,29 @@ $$</p>
 <tbody>
 <tr>
 <td>term by term (first case)</td>
-<td>12</td>
-<td>27</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>as a whole (second case)</td>
-<td>19</td>
-<td>49</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>both at once</td>
-<td>12</td>
+<td>0</td>
 <td>—</td>
 </tr>
 <tr>
 <td><strong>union</strong></td>
-<td><strong>19</strong></td>
-<td><strong>76</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
 </tr>
 </tbody>
 </table></div>
-<p>The first set is a subset of the second: every article that collapses the chain term by term also collapses it as a whole somewhere else. No article carries the first kind alone. That is the shape of the defect, not a coincidence — a file that has learned the one-symbol-per-term habit writes its definitions the same way.</p>
+<p>The first set is a subset of the second: every article that collapsed the chain term by term also collapsed it as a whole somewhere else. No article carried the first kind alone. That is the shape of the defect, not a coincidence — a file that has learned the one-symbol-per-term habit writes its definitions the same way.</p>
 <h2 id="the-repaired-files">The Repaired Files</h2>
-<p>Four articles were repaired in this pass. All are published. The first two were repaired by writing the four operators where one sum stood; the last two by deleting the sentence that carried the collapsed contraction.</p>
+<p>Twenty-four published articles were repaired in the first pass and the rest of the list in the rewrite pass of 4 November 2026, which ran while this scan was taken. Four articles had been repaired before either. Two repairs are shown here: the first rewrote a definition, the second deleted the sentence that carried a collapse. The rest are one of those two, file by file. At the scan of 22:42 no published article carries the pattern, and the internal file carries it nowhere.</p>
 <p><strong><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a>.</strong> The definition of the source's letter was</p>
 <p>$$\partial=i\left(\frac{1}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k}\right),$$</p>
 <p>one sum, three of the four terms hidden. It now reads</p>
@@ -675,29 +298,29 @@ $$</p>
 <p><strong>What the repair costs.</strong> Nothing in either article's mathematics. The expansions were checked against the article's own square, $\partial^2=-\Box$ and $\mathbb{D}^2=\Box$, and against the cells' squares, $R_{\vec e_x}^2=-1$ and $(L_{\vec e_k}R_{\vec e_y})^2=+1$. What it costs is length: four terms where one sum stood, twice in one file.</p>
 <p><strong>What the repair buys.</strong> The defect becomes visible. A reader of the old line could believe that a single symbol stood for one operator; a reader of the new line sees four, sees that the time term multiplies on the right alone, and sees where the three minus signs are.</p>
 <h2 id="what-is-not-counted">What Is Not Counted</h2>
-<p>A chain that names its coordinate and its two multipliers is not counted, because it is the repaired form. There are 10 in the published corpora and 41 in the internal file:</p>
+<p>A chain that names its coordinate and its two multipliers is not counted, because it is the repaired form. There are 7 in the published corpora and 44 in the internal file:</p>
 <p>$$
 iR_{\vec e_x}\partial_{x_0}+iL_{\vec e_x}R_{\vec e_y}\partial_{x_1}+iL_{\vec e_y}R_{\vec e_y}\partial_{x_2}+iL_{\vec e_z}R_{\vec e_y}\partial_{x_3}.
 $$</p>
-<p>Four such chains appear in <em>$M_4(\mathbb{C})$ Pauli Representation: Operators</em>, in the $^{\mathrm{pau}}$ display, one per coordinate. That file is the model the others should follow and it is not on the list for that reason.</p>
+<p>Four such chains appear in <em>$M_4(\mathbb{C})$ Pauli Representation: Operators</em>, in the $^{\mathrm{pau}}$ display, one per coordinate, and three in <em>Klein–Gordon from the Dirac Square</em>. Those two are the only files of either corpus that still write the shape, and they write it in the repaired form.</p>
 <h2 id="how-the-count-is-made">How the Count Is Made</h2>
 <p><strong>The scan.</strong> A brace-aware walk over every <code>.md</code> of <code>articles_physics</code>, <code>articles_maths</code> and <code>articles_internal</code>. The walker matches a token $L_{...}$ or $L_{...}^{...}$, then an $R_{...}$ or $R_{...}^{...}$ with only spaces between, then a derivative: $\partial$, $\partial_{...}$, or $\frac{\partial}{\partial ...}$. A chain inside a braced group is matched as a whole, so a pair wrapped in $\bigl(\ \bigr)$ is not missed.</p>
 <p><strong>The classification.</strong> A chain is infested when the pair carries a summed index, $k$ or $\mu$ or $\nu(\cdot)$, or when the derivative carries no coordinate. A chain that names an explicit coordinate, $x_0$ to $x_3$, $q_x$ to $q_z$, $Q_t$ to $Q_z$, $t'$, is clean.</p>
 <p><strong>What the count is.</strong> A literal count of written chains, not of the operators behind them. Each occurrence is counted once, so a line holding the same chain three times counts three.</p>
 <p><strong>The floor.</strong> The count is a floor in two ways. A chain split across a line break with the derivative on the next line is missed; one such case was found by hand in <em>Canonical Quantization</em> and is included. A chain written with the derivative first, $\partial L_{a}R_{b}$, is a different order and is outside the definition.</p>
-<p><strong>A correction.</strong> An earlier pass reported 18 articles and 42 occurrences, counting every chain of the shape and not only the infested ones. Two files were repaired after that pass and a third was withdrawn, and the infested figure is now 12 articles and 27 occurrences.</p>
-<p><strong>The second-case scan.</strong> A different walk, over the same three folders: every display of the file is taken as a unit, the <code>$\sum$</code> tokens are read, and the summand is followed from the sum to its first top-level stop, a plus sign, a minus sign, a comma, an equals sign or a closing delimiter. The display counts once, under <strong>S</strong>, when a chain sits inside that summand, and under <strong>G</strong> only when the file defines the letter $G$ as the pair and the display then uses $G_\mu$ with a derivative. A sum whose summand carries $\pi_k$, or one multiplier without the second, is not the chain and is not counted; seven rows of the table are of that kind and are marked zero with the reason in the <strong>the form</strong> column.</p>
+<p><strong>Two corrections, in order.</strong> An earlier pass reported 18 articles and 42 occurrences, counting every chain of the shape and not only the infested ones. A later pass reported 12 articles and 27 occurrences for the first case. The repair pass then rewrote twenty-four published articles, and the same walk now finds 3 articles and 13. Each figure belongs to the state of the corpus on the day it was taken.</p>
+<p><strong>The second-case scan.</strong> A different walk, over the same three folders: every display of the file is taken as a unit, the <code>$\sum$</code> tokens are read, and the summand is followed from the sum to its first top-level stop, a plus sign, a minus sign, a comma, an equals sign or a closing delimiter. The display counts once, under <strong>S</strong>, when a chain sits inside that summand, and under <strong>G</strong> only when the file defines the letter $G$ as the pair and the display then uses $G_\mu$ with a derivative. A sum whose summand carries $\pi_k$, or one multiplier without the second, is not the chain and is not counted; those rows are marked zero with the reason in the <strong>the form</strong> column.</p>
 <h2 id="the-repair">The Repair</h2>
 <p><strong>One term per coordinate.</strong> Write the four terms, or write the one term the sentence needs. Never a sum over a letter that stands for them.</p>
 <p><strong>Two multipliers, no index.</strong> $iL_{\vec e_x}R_{\vec e_y}$ and its three companions. No $\mu$, no $k$ in the pair.</p>
 <p><strong>A coordinate on every derivative.</strong> $\partial_{x_1}$, not $\partial$.</p>
 <p><strong>No display label on a product.</strong> The label belongs to a single array, not to a product of two multiplications.</p>
 <h2 id="the-state-of-the-target-article">The State of the Target Article</h2>
-<p><em>The Gradient, the D'Alembertian and the Frame Generators</em>, the internal rewrite, holds 41 chains of the shape and <strong>none of them is infested</strong>. The two collapsed sums it still had, $\partial=iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$ and its repeat in the notation table, were expanded to the four terms in this pass.</p>
+<p><em>The Gradient, the D'Alembertian and the Frame Generators</em>, the internal rewrite, holds 44 chains of the shape and <strong>none of them is infested</strong>. The two collapsed sums it still had, $\partial=iR_{\vec e_x}\partial_{x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial_{x_k}$ and its repeat in the notation table, were expanded to the four terms in this pass.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="pauli-gamma-infestation.html">Pauli and Gamma Infestation</a>, the inventory of the array tokens, whose figures are separate from these.</li>
-<li><a href="the-pau-label-in-the-physics-corpus-counted.html">The Pau Label in the Physics Corpus, Counted</a>, the inventory of the caret label that 25 of these 35 occurrences carry.</li>
+<li><a href="the-pau-label-in-the-physics-corpus-counted.html">The Pau Label in the Physics Corpus, Counted</a>, the inventory of the caret label that most of these chains carry.</li>
 <li><a href="../articles_maths/frame-conventions.html">Frame Conventions</a>, for the frame generators the four chains stand for.</li>
 </ul>
       </div>
