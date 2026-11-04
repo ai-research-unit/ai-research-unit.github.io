@@ -114,13 +114,13 @@ $$</p>
 \tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$</p>
 <p>They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (<em>Algebra and Element Conventions</em>, §<em>The Centre and the Vector Subspace</em>).</p>
-<p><strong>Proposition (the exponential).</strong> For a unit $\vec u\in\mathfrak{g}$ and real $\theta$,</p>
+<p><strong>Proposition (the exponential).</strong> For a unit $\vec u\in\mathfrak{g}$ and real $\theta$, the rotation through $\theta$ about $\vec u$ is</p>
 <p>$$
-\exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(i\theta\,\vec u\cdot\vec S),
+\exp(-\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
+=\exp(-i\theta\,\vec u\cdot\vec S),
 $$</p>
-<p>and the result is a unit real quaternion.</p>
-<p><em>Proof.</em> The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$.</p>
+<p>a unit real quaternion, whose adjoint action turns a vector through $+\theta$ about $\vec u$.</p>
+<p><em>Proof.</em> The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$. The sense of the turn is that of $\operatorname{Ad}_{\tilde q}$ for $\tilde q=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ (<em>Quaternion Rotations and Reflections</em>, §<em>The Adjoint Action</em>), which is the same element.</p>
 <p>The group generated is $G=SU(2)$, which is the double cover of $SO(3)$.</p>
 <p><strong>The action on a carrier.</strong> A carrier is a pair $(W,\rho)$ with $W$ a finite-dimensional complex space and $\rho$ either an algebra homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(W)$ or a Lie-algebra homomorphism $\mathfrak{g}\to\operatorname{End}_{\mathbb{C}}(W)$. In the first case the generator acts as $\rho(\tilde S_k)$ with $\tilde S_k\in\mathbb{B}$; in the second, $\rho$ extends $\mathbb{C}$-linearly to $\mathfrak{g}_{\mathbb{C}}$ and again $\rho(\tilde S_k)$ is defined. The two cases are kept apart: only the first is a module over the associative algebra. A carrier is <strong>unitary</strong> when $\rho(X^*)=\rho(X)^\dagger$ in the algebra case, equivalently $\rho(X)^\dagger=-\rho(X)$ for $X\in\mathfrak{g}$ in the Lie case. The carriers of this article are unitary for the trace form.</p>
 <p><strong>Lemma (self-adjointness).</strong> For $X\in\mathbb{B}$, the adjoint of $\operatorname{ad}_X$ with respect to the trace form is $\operatorname{ad}_{X^*}$.</p>
@@ -201,7 +201,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> $(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.</p>
 <p>The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.</p>
-<p><strong>The double cover.</strong> On $S_+$, $\exp(2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.</p>
+<p><strong>The double cover.</strong> On $S_+$, $\exp(-2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(-2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.</p>
 <p><em>Proof.</em> The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.</p>
 <h2 id="the-adjoint-module-spins-zero-and-one">The Adjoint Module: Spins Zero and One</h2>
 <p>Conjugation, $X\mapsto uXu^{-1}$, makes $\mathbb{B}$ a module over $G$ and, differentiating, over $\mathfrak{g}$. The action of $a\in\mathfrak{g}_{\mathbb{C}}$ is $\operatorname{ad}_a$. The centre $Z=\mathbb{C}e_t$ is fixed, and the trace-zero part</p>
