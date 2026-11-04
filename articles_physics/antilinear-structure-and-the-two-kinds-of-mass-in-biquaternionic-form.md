@@ -10,7 +10,6 @@ The framework carries several conjugations, and they are easy to conflate becaus
 - **Established, and recomputed below.** The **Dirac mass** is linear and couples the two values of the subscript, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
 - **Established, and recomputed below.** The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ fails, and it fails **on the dispersion**: its central-phase plane waves have nullity $0$ on the timelike shell and nullity $4$ on the spacelike shell, so its solutions lie on the spacelike locus. This is reproduced here on the eight real coordinates, by pure real arithmetic.
 - **The distinction the whole article turns on.** The diagnosis of that failure is the *pairing*, not the antilinearity. A Majorana mass is also antilinear and is perfectly physical. What the retired equation did was use the **algebra's** real structure $\flat$ as though it were the mass of a field on the **module** — and the two are different real structures on different spaces.
-
 - **Gap, left visible.** The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on.
 
 The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong, and fixes the four levels at which the name "charge conjugation" is used. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which fields can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full, for the retired equation and for all four involutions. A section records what the antilinear structure is genuinely for. A closing section, *The Legacy Pauli Gamma Formulation*, is the dictionary: it is the only place in the article where the gammas appear, because they are a frame of the cell algebra and not a separate structure.
@@ -94,9 +93,9 @@ with $\bullet$ one of ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, $\flat$. The inv
 
 Two kinds are realised in physics. One of them is not in the list at all, because it needs no involution; the other is the last entry, the conjugation.
 
-**The chiral pairing gives the Dirac mass.** It pairs the *chiral partner* rather than a conjugation, $\tilde{\Psi}_L$ with $\tilde{\Psi}_R$, two independent halves of one field. It is linear, and it is the mass term of the Dirac equation.
+**The pairing of the two values gives the Dirac mass.** It pairs the two values of the subscript rather than a conjugate, $\tilde{\Psi}_L$ with $\tilde{\Psi}_R$, two independent parts of one field. It is linear, and it is the mass term of the Dirac equation.
 
-**The conjugation choice gives the Majorana mass.** The pairing that uses the field's own conjugate, $\tilde{\Psi}$ with $\tilde{\Psi}^{\,\bullet}$, requires the field to *equal* its conjugate — a **reality condition** that halves the field's independent components. It is antilinear, and it is the mass term of a Majorana fermion.
+**The conjugation choice gives the Majorana mass.** The pairing that uses the field's own conjugate, $\tilde{\Psi}$ with $\tilde{\Psi}^{\,\bullet}$, requires the field to *equal* its conjugate — a **reality condition** that halves the field's independent components. The map that produces that conjugate is antilinear, and the term it builds is the mass term of a Majorana fermion.
 
 The distinction is visible in the component count before any dynamics is imposed, and the count is decisive. The field is an element of $\mathbb{B}$, of real dimension $8$: four complex components. An antilinear involution of the algebra has a fixed space of real dimension $4$ — half, because multiplication by $i$ exchanges its $+1$ and $-1$ eigenspaces, so the two have equal dimension. So
 
@@ -107,7 +106,7 @@ $$
 
 and the Majorana field is the fixed space of that pairing: a carrier of half the size, singled out by an antilinear structure and not by a linear constraint bolted onto a Dirac field.
 
-The framework's module is $\Delta = S\oplus\bar{S}$, the two chiral halves, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.
+The framework's module is $\Delta = S\oplus\bar{S}$, the two parts, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.
 
 ## The Two Conjugates and the Two Masses
 
@@ -120,10 +119,10 @@ $$
 where the unit multiplies on the right: the value of an element is what the subscript $L$ or $R$ reads, and right multiplication by $\vec e_x$ reverses it, because $\vec e_x$ anticommutes with the $\vec e_z$ that defines the value, so the term pairs each part with the other and never a part with itself.
 
 $$
-\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\,\mathrm{Sc}\big(\tilde\Psi_L^{*}\,\tilde\Psi_L\,\vec e_x\big) + \text{h.c.}\;}
+\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\,\mathrm{Sc}\big(\tilde\Psi_L\,\vec e_x\,\tilde\Psi_L\big) + \text{h.c.}\;}
 $$
 
-The unit inside the bracket is the transposed pairing, and the multiplier it stands for squares to minus the identity, because $\vec e_x^{2}=-e_t$:
+The bracket carries no sign of conjugation: the part stands in both slots, and the only structure between them is the unit on the right. That is the transposed realization of the operation, and the multiplier squares to minus the identity, because $\vec e_x^{2}=-e_t$:
 
 $$
 \eta(\tilde X)=\tilde X\vec e_x ,
@@ -131,7 +130,7 @@ $$
 \eta^{2}(\tilde X)=\tilde X\vec e_x^{2}=-\tilde X ,
 $$
 
-so the transposed pairing carries the division-ring sign that the companion article records. The same operation in its untransposed realization pairs the field with its own conjugate and squares to $+1$:
+so the multiplier carries the division-ring sign that the companion article records, and the bracket is a transposition pairing rather than a scalar product — which is why the term needs its h.c. to be real. The untransposed realization is the operation on the field that produces the conjugate, and it squares to $+1$:
 
 $$
 \mathcal{C}[\tilde\Psi]=-\vec e_y\tilde\Psi^{*}\vec e_y ,
@@ -141,21 +140,21 @@ $$
 
 the second line because $\vec e_y^{*}=-\vec e_y$ and $\vec e_y^{2}=-e_t$, so the two conjugations and the two units cancel in pairs. The section *Two Real Structures, on Two Different Spaces* keeps the operation apart from the algebra's $\flat$.
 
-The first pairs $\tilde\Psi_L$ with $\tilde\Psi_R$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde\Psi\mapsto \exp(i\alpha)\tilde\Psi$. The second pairs $\tilde\Psi_L$ with $\tilde\Psi_L^{c}$ and is **antilinear**; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
+The first pairs $\tilde\Psi_L$ with $\tilde\Psi_R$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde\Psi\mapsto \exp(i\alpha)\tilde\Psi$. The second pairs $\tilde\Psi_L$ with its charge conjugate $\tilde\Psi_L^{c}$, a field produced from $\tilde\Psi_L$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
 
 | | Dirac mass | Majorana mass |
 |---|---|---|
 | pairs | $\tilde\Psi_L$ with $\tilde\Psi_R$ | $\tilde\Psi$ with $\tilde\Psi^{c}$ |
-| linearity | linear | antilinear |
+| the map it is built on | the identity, linear | charge conjugation $\mathcal{C}$, antilinear |
 | fermion number | conserved | violated by $2$ |
 | continuous phase | invariant | not invariant |
 | needs a reality condition | no | yes, $\tilde\Psi^{c}=\tilde\Psi$ |
 | independent real components | $8$ | $4$ |
-| framework structure | the chiral pair of the two values of the subscript | an antilinear real structure |
+| framework structure | the two values of the subscript | an antilinear real structure |
 
 Both are masses; neither is a mistake. The two columns of the table are what the phrase "two kinds of mass" names, and the reason they are both called a mass is that both are non-derivative bilinears — the argument of the previous section.
 
-In biquaternionic form the Dirac mass is the linear chiral pair of the parent article. It is **two equations, one per value of the subscript**, and not one equation with two halves:
+In biquaternionic form the Dirac mass is the linear pair of the parent article. It is **two equations, one per value of the subscript**, and not one equation with two halves:
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L ,
@@ -202,7 +201,7 @@ Two consequences follow, and they are the point of this section:
 - the **Dirac mass** pairs two different fields, so it needs no involution of a single field and it is linear;
 - the **conjugation** in a mass term need not be the algebra's real structure $\flat$. In the two-sided form it is $\bar{\cdot}$, the coefficient conjugation, which is an automorphism and fixes $\mathbb{H}_{\mathbb{B}}$, not $\mathbb{M}_-$.
 
-So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the chiral pair, which needs two independent parts and hence two equations, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
+So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the pair of two values, which needs two independent parts and hence two equations, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
 
 ## Two Real Structures, on Two Different Spaces
 
@@ -240,7 +239,7 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 | 3, the field | $\mathcal{C}[\tilde\Psi]=-\vec e_y\tilde\Psi^{*}\vec e_y$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the cell that exchanges the two values |
 | 4, the module real structure | $\bar{\cdot}$ | $\Delta\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{H}_{\mathbb{B}}$ |
 
-The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\tilde\Psi^{T}\eta\tilde\Psi$, read with the multiplier that acts on the right by $\vec e_x$; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
+The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\mathrm{Sc}\big(\tilde\Psi\,\vec e_x\,\tilde\Psi\big)$, read with the multiplier on the right; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
 
 $$
 \eta(\tilde X)=\tilde X\vec e_x ,
@@ -256,7 +255,7 @@ $$
 
 because $\vec e_y^{*}=-\vec e_y$, so the two conjugations cancel the two units and the two signs with them. The two squares differ only in how many times the relation $\vec e_k^{2}=-e_t$ is used: the bilinear uses it once, on its right-hand factor, and carries one minus; the operation uses it on both factors, and the two minuses cancel. What makes the operation exchange the two values is the cell under it: multiplication on the right by $\vec e_y$ anticommutes with multiplication on the right by $\vec e_z$, which is the cell that defines the value, so the cell carries $L$ to $R$ and $R$ to $L$, while a cell that commuted with it would leave the two parts in place. Neither formula may be carried across the change of realization — the multiplier of the bilinear against the star, or the cell of the operation against the transpose — and that is why the two squares appear to disagree.
 
-The levels are the corpus's own statements, each made in the article that owns it: the character interpretation of $\flat$ and the two labelled dictionaries are *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*; the subspace interpretation of $\flat$ is *The Biquaternion Space, the Group of Involutions and the Six Subspaces*; the level-3 passage, with the explicit statement that the conjugation cell is not the coefficient conjugation, is *The Physical Interpretation of the 12 Products*; the pseudoautomorphism and the division-ring sign of $\eta^{2}$ are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; the level-4 identification is *The Neutrino and Majorana Fermions in Biquaternionic Form*; and the separation of all of them from the real structure on the value space of a scalar field is *The Quantized Scalar Field in Biquaternionic Form*. The $\mathbb{M}_\pm$ split itself is defined by the algebra-level map, so the level-1 object is also what makes $\mathbb{M}_-$ the material sector; the levels are not rivals but a chain, and no level may be substituted for another.
+The levels are the corpus's own statements, each made in the article that owns it: the character interpretation of $\flat$ and the two labelled dictionaries are *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*; the subspace interpretation of $\flat$ is *The Biquaternion Space, the Group of Involutions and the Six Subspaces*; the level-3 passage, with the explicit statement that the conjugation cell is not the coefficient conjugation, is *The Physical Interpretation of the 12 Products*; the pseudoautomorphism and the division-ring sign of $\eta^{2}$ are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; the level-4 identification is *The Neutrino and Majorana Fermions in Biquaternionic Form*; and the separation of all of them from the real structure on the value space of a scalar field is *The Quantized Scalar Field in Biquaternionic Form*. The $\mathbb{M}_\pm$ split itself is defined by the algebra-level map, so the level-1 object is also what makes $\mathbb{M}_-$ the material sector; the levels are not rivals but a hierarchy, and no level may be substituted for another.
 
 ## Charge Conjugation, the $\mathrm{Spin}^c$ Structure and the Neutral Fields
 
@@ -499,7 +498,7 @@ In the Euclidean frame, where every generator squares to $+I_4$, they are $4I_4$
 
 2. **A mass is a pairing with a conjugate.** The mass is the non-derivative part of the equation; it has nothing to differentiate, so it must pair the field with a second field, and in a single-field equation that second field is a conjugate of the first. Which conjugation is chosen — or whether a chiral partner stands in its place — is the definition of which kind of mass.
 
-3. **The two kinds are the chiral pair and the self-pairing.** The Dirac mass is linear and couples the two values of the subscript; the Majorana mass is antilinear and pairs the field with its own conjugate. In biquaternionic form the Dirac mass is two equations, one per value; the two-sided form carries the same coupling in a single equation, with the derivative entering from the left and the mass from the right, and the two readings differ in the shape of the mass term and not in the coupling. The counts differ before any dynamics is imposed: $8$ real components against $4$.
+3. **The two kinds are the pairing of two values and the self-pairing.** The Dirac mass is linear and couples the two values of the subscript; the Majorana mass is antilinear and pairs the field with its own conjugate. In biquaternionic form the Dirac mass is two equations, one per value; the two-sided form carries the same coupling in a single equation, with the derivative entering from the left and the mass from the right, and the two readings differ in the shape of the mass term and not in the coupling. The counts differ before any dynamics is imposed: $8$ real components against $4$.
 
 4. **The algebra's $\flat$ and the module's $\mathcal{C}$ are different real structures.** Both antilinear, both with a four-real-dimensional fixed space, but on different spaces. The Dirac operator preserves the module's real form and does not preserve $\mathbb{M}_-$; the matching dimension count does not identify them.
 
@@ -526,7 +525,7 @@ In the Euclidean frame, where every generator squares to $+I_4$, they are $4I_4$
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | The Dirac mass: linear, off-diagonal in the value of the subscript |
 | $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | The retired equation; spacelike dispersion, not a mass term |
-| $\mathcal{C}[\tilde\Psi]=-\vec e_y\tilde\Psi^{*}\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is $\tilde\Psi^{T}\eta\tilde\Psi$ with $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
+| $\mathcal{C}[\tilde\Psi]=-\vec e_y\tilde\Psi^{*}\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde\Psi\,\vec e_x\,\tilde\Psi\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
 | $a\tilde\Psi b$ | The two-sided action; the side is carried by position and never by a mark |

@@ -6,92 +6,73 @@ The **Fujikawa method** derives the axial anomaly from the path integral rather 
 
 The derivation is two facts and one regularisation.
 
-- **A symmetry of the action.** A *global* chiral rotation $\psi\mapsto \exp(\alpha R_{\vec e_z}^{\mathrm{axf}})\psi$, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mapsto\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\exp(\alpha R_{\vec e_z}^{\mathrm{axf}})$ leaves the massless Dirac action invariant, because the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ anticommutes with every generator cell. The exponent is $i\alpha$ times the chirality cell, $\alpha R_{\vec e_z}^{\mathrm{axf}}=i\alpha\chi$, so the rotation is the axial one and not a vector phase. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial \alpha/\partial x_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
+- **A symmetry of the action.** A *global* rotation $\psi\mapsto\exp(i\alpha\mathsf V^{\mathrm{vol}})\psi$, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mapsto\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\exp(i\alpha\mathsf V^{\mathrm{vol}})$ leaves the massless Dirac action invariant, because the chirality cell $\mathsf V^{\mathrm{vol}}$ anticommutes with every frame cell. The exponent carries the central $i$, so the rotation is the axial one and not a central phase. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial\alpha/\partial x_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
 - **A transformation of the measure.** The same rotation is a change of the integration variables $\psi,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, and the fermion measure $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ picks up the inverse determinant of the rotation. That determinant is the whole story.
 - **A regularisation.** The determinant is the product of the rotation's eigenvalues, one per mode, and it is divergent; it is regulated by a heat-kernel factor $\exp(-\mathcal{H}/M^2)$, evaluated as $M\to\infty$, and the finite remnant is the anomaly.
 
 This article asks what the biquaternion framework supplies for this derivation. The answer is stated at the outset.
 
-- **Established, and recomputed below.** The regulator trace is evaluated with the Clifford structure the framework already carries: the density is $\mathrm{tr}(\chi\,e^{-\mathcal{H}/M^2})$, and the only nonvanishing trace with four generator cells is
+- **Established, and recomputed below.** The regulator trace is a trace of cells, and the product it meets is a multiple of the identity cell. For every one of the $4!$ permutations of the four indices,
 $$
-\mathrm{tr}\bigl(\chi\,\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma\bigr)=-4i\,\epsilon_{\mu\nu\rho\sigma}\ \ (\text{Minkowski}),\qquad
-\mathrm{tr}\bigl(\chi\,\mathsf G^E_\mu\mathsf G^E_\nu\mathsf G^E_\rho\mathsf G^E_\sigma\bigr)=-4\,\epsilon_{\mu\nu\rho\sigma}\ \ (\text{Euclidean}),
+\mathsf V^{\mathrm{vol}}\,\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma=-i\,\epsilon_{\mu\nu\rho\sigma}\,\mathbb 1,
+\qquad
+\mathsf V^{\mathrm{vol}}\,\mathsf G^{E}_\mu\mathsf G^{E}_\nu\mathsf G^{E}_\rho\mathsf G^{E}_\sigma=-\epsilon_{\mu\nu\rho\sigma}\,\mathbb 1 ,
 $$
-with $\mathsf G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\mathsf G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ the generator cells and $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$ the chirality cell, recomputed here for all $4!$ permutations. Because $\chi$ is the volume cell up to the central $i$, the trace is the framework's own chirality structure; because the field strength enters through the commutator $[D_\mu,D_\nu]$, the density is proportional to the framework's invariant $I_2=\vec E\cdot\vec B$. The method does not introduce an object the algebra lacks.
-- **Standard, transcribed.** The measure, the Jacobian, the heat-kernel expansion (Seeley–DeWitt), the Fujikawa coefficient, and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
+the first line in the cells of the $\mathbb{M}_-$ frame and the second in the cells of its continued frame, and the trace of the identity cell is four. Because the chirality cell is the product of the four frame cells up to the central $i$, the identity is the framework's own chirality structure; because the field strength enters through the commutator $[D_\mu,D_\nu]$, the density is proportional to the framework's invariant $I_2=\vec E\cdot\vec B$. The method does not introduce an object the algebra lacks.
+
+- **Standard, transcribed.** The measure, the Jacobian, the heat-kernel expansion, the Fujikawa coefficient, and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
 - **Gap, left visible.** The framework does not supply the functional measure: the algebra gives the operator whose determinant is taken, not the space of fields over which the integral runs. The chiral rotation itself is the axial symmetry of the linear chiral pair; the *anomaly* is the statement that this rotation is not a symmetry of the measure. The framework carries the rotation and the operator; the measure is imported.
 
-The article is organised as follows. A section states the two Dirac equations and the chirality cell. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section states what the regulator must preserve and why the anomaly does not depend on it. A section compares the result with the triangle. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index, and a section reads the rotation in the algebra. A section tabulates what is supplied, transcribed, and missing; the open questions and the section written in the gamma frame follow; the summary and the notation table close the article.
+A section states the two Dirac equations and the chirality cell. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section states what the regulator must preserve and why the anomaly does not depend on it. A section compares the result with the triangle. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index, and a section reads the rotation in the algebra. A section tabulates what is supplied, transcribed, and missing; the open questions and the legacy section follow; the summary and the notation table close the article.
 
-Here $L_aR_b$ is the cell that multiplies on both sides, $L_a\psi=a\psi$, $R_b\psi=\psi b$, so $L_aR_b\psi=a\psi b$ and $L_aR_bL_cR_d=L_{ac}R_{db}$, the identity being $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; the frame cells act as $\mathsf G_0\psi=i\psi\vec e_x$, $\mathsf G_k\psi=i\vec e_k\psi\vec e_y$ and $\chi\psi=-i\psi\vec e_z$. The five frame cells are
-$$
-\mathsf G_0=iR_{\vec e_x}^{\mathrm{axf}},\quad \mathsf G_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \mathsf G_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \mathsf G_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \chi=-iR_{\vec e_z}^{\mathrm{axf}},
-$$
-with
-$$
-(\mathsf G_0)^2=I_4,\qquad (\mathsf G_k)^2=-I_4,\qquad \{\mathsf G_\mu,\mathsf G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \varepsilon=(1,-1,-1,-1),\qquad \chi^2=I_4,\qquad \{\chi,\mathsf G_\mu\}=0,
-$$
-and the volume cell is $\omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi$, so $\chi=i\omega$. These are the cells of the $\mathbb{M}_-$ frame; the derivative in every display below is $\partial/\partial x_\mu$ with $x_0=ct'$ and $x_k=q_k$, and the metric is $\varepsilon=(1,-1,-1,-1)$. The $\mathbb{B}$-frame cells are $\mathsf G_0$ and $i\mathsf G_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, with $Q_t=ict'$; every one of them squares to $+I_4$, and $i^2=-1$ is the whole difference between the two frames. A contraction is written in one frame only (*Matrix Representations Conventions*). The gauge covariant derivative is $D_\mu=\partial/\partial x_\mu+\tfrac{iϙ}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iϙ}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon_{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. Two traces appear below and are kept apart: $\mathrm{tr}$ is the four-dimensional spinor trace, taken inside the cell algebra, and $\operatorname{Tr}$ is the functional trace over modes, which is what a determinant produces. The corpus's trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ is the $2\times2$ reading of the algebra and is not used here. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
+**The frame and the symbols.** Every display below is read in the $\mathbb{M}_-$ frame: its derivative, its coordinates and its metric are *Frame Conventions*, §*The $\mathbb{M}_-$ Frame*, and are not restated here. The four frame cells are written $\mathsf G_0,\mathsf G_1,\mathsf G_2,\mathsf G_3$ and the chirality cell $\mathsf V^{\mathrm{vol}}$, which is the corpus's symbol for it; their formulas, their two displays and their squares are *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and *Special Element Conventions*, §*The Chirality Convention*. The identity cell is written $\mathbb 1$, and a contraction is written in one frame only. The gauge covariant derivative is written $D_\mu=\partial/\partial x_\mu+iϙA_\mu/\hbar$ with $[D_\mu,D_\nu]=iϙF_{\mu\nu}/\hbar$ for the abelian factor; its biquaternion form is the operator $\tilde D$ (*Algebra and Element Conventions*, §*The Gradient and the Operators*), and the component form is used here because the cell operator needs one cell per coordinate. The fermion measure is written $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a cell, which belongs to *Norm and Pairing Conventions*, §*The Trace and the Normalised State*, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
 The framework results used here are those of the companion articles:
 
 - Companion article *The Path Integral in Biquaternionic Form*, for the functional integral and the fermion measure whose Jacobian is computed here.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological density and the winding of the gauge field.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength and the invariants $I_1$ and $I_2$.
-- Companion article *The Dirac Equation in Biquaternionic Form*, for the one-sided gradient, the two-sided cell equation, and the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$.
+- Companion article *The Dirac Equation in Biquaternionic Form*, for the one-sided gradient, the two-sided cell equation, and the chirality cell.
 
 ## The Two Dirac Equations and the Chirality Cell
 
-**Two equations, not one.** The framework carries two first-order equations, and they must not be read as one. The **gradient equation** is one-sided: the biquaternion gradient acts by left multiplication on $\mathbb{B}$, and the mass pairs the two chiral halves. The **cell equation** is two-sided: each generator is a cell $L_aR_b$, which multiplies the field on both sides, and the mass is central. The measure uses the second equation; the chiral rotation uses the chirality cell, which is the bridge between the two.
+**Two equations, not one.** The framework carries two first-order equations, and they must not be read as one. The **gradient equation** is one-sided: the biquaternion gradient acts by left multiplication on $\mathbb{B}$, and the mass pairs the two values of the subscript. The **cell equation** is two-sided: each generator multiplies the field on the left and on the right, and the mass is central. The measure uses the second equation; the rotation uses the chirality cell, which is the bridge between the two.
 
-**The gradient equation.** With
+**The gradient equation.** The equation is the chiral pair
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R ,
 $$
-the equation is the chiral pair
-$$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
-$$
-The two members are conjugates; each acts by left multiplication, and the mass is the off-diagonal pairing of the two chiral halves. This is the corpus's one-sided Dirac equation.
+which is *Operator and Calculus Conventions*, §*The Gradient*: the two members are conjugates, each acts by left multiplication, and the mass is the pairing of the two parts.
 
-**The cell equation.** With $L_aR_b$ the two-sided cell, the covariant Dirac operator is
+**The cell equation.** The covariant cell operator is
 $$
-\slashed D=iR_{\vec e_x}^{\mathrm{axf}}D_0-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}D_k,
+\mathbb{D}=\mathsf G_0D_0+\mathsf G_1D_1+\mathsf G_2D_2+\mathsf G_3D_3,
 \qquad
-(\slashed D-m)\Psi=0 .
+(\mathbb{D}-m)\Psi=0 .
 $$
-Each term is a two-sided cell: the time term is a pure right multiplication, the three spatial terms are left times right. This is the corpus's two-sided Dirac equation; the name records the two-sidedness of the cells, and the mass term is central and multiplies from the left like the derivative. The one-sided and the two-sided forms are related by the Clifford dictionary and are not the same operator.
+Each term is a cell of the frame, and the mass is central and multiplies like the derivative. This is a derived form: $\mathbb{D}$ is the cell display of the corpus's pair operator (*Operator and Calculus Conventions*, §*The Gradient*) with its derivative made covariant, and the pair form and the cell form are related by the dictionary and are not the same operator. The pair acts on the two parts of an element, the cell acts on the element, and the dictionary identifies the two actions.
 
-**The chirality cell and the split.** The chirality cell is
+**The chirality cell and the two values.** The chirality cell of the frame is $\mathsf V^{\mathrm{vol}}$, and it is Hermitian, it squares to the identity cell, and it anticommutes with each of the four frame cells (*Special Element Conventions*, §*The Chirality Convention*). Its action on an element takes two values, $-1$ and $+1$, so an element carries the subscript of its value: $\tilde\Psi_L$ is the part of value $-1$ and $\tilde\Psi_R$ the part of value $+1$. That is the whole definition, and the two values are exactly two.
+
+**The pair read on the two values.** Because the cell anticommutes with each term of $\mathbb{D}$, the operator carries each value into the other. The equation on the part $\tilde\Psi_L$ has a multiple of $\tilde\Psi_R$ on its right, and the equation on $\tilde\Psi_R$ has a multiple of $\tilde\Psi_L$:
 $$
-\chi=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega,\qquad \omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi .
+\mathbb{D}\tilde\Psi_R=m\tilde\Psi_L,\qquad \mathbb{D}\tilde\Psi_L=m\tilde\Psi_R .
 $$
-It is Hermitian, squares to $I_4$, and anticommutes with each generator,
-$$
-\chi^2=I_4,\qquad \{\chi,\mathsf G_\mu\}=0\qquad(\mu=0,1,2,3).
-$$
-In the chiral basis it is diagonal, $\chi=\operatorname{diag}(-I_2,I_2)$, and since $\{\chi,\slashed D\}=0$ the operator has no diagonal block:
-$$
-\slashed D=\begin{pmatrix}0&D_-\\D_+&0\end{pmatrix},
-$$
-where $D_\mp$ are the two $2\times2$ blocks. They are not independent: in the Euclidean frame, where $\slashed D_E$ is Hermitian, $D_+=(D_-)^{\dagger}$, and the index counts the difference of their null spaces.
-The cell equation then splits into the chiral pair
-$$
-D_-\Psi_R=m\Psi_L,\qquad D_+\Psi_L=m\Psi_R,
-$$
-which is the gradient pair read on the module $\Delta=S\oplus\bar S$. This is the whole content of chirality in the measure: the two chiral equations are the two off-diagonal blocks of one cell operator, and the rotation below multiplies the two blocks by opposite phases. The relation to the gradient equation is a representation relation: the cell operator acts on $\Delta$, the gradient acts on $\mathbb{B}$, and the dictionary identifies the two actions on the module; the operators themselves are different.
+This is the gradient pair read on the values of the element. The two writings are the same statement in two variables; they are not two equations of motion, and the operators on the two sides of the dictionary are different.
+
+**What the measure uses.** The measure rotates the field as a whole, so the object it acts on is the element, and the object whose determinant is taken is the cell operator. Chirality enters the measure through one fact only: the rotation multiplies the two values by opposite phases. No other property of the cell is used.
 
 ## The Measure and the Chiral Rotation
 
-**The generating functional.** For a Dirac fermion coupled to an abelian gauge field in the functional-integral formulation, the generating functional is
+**The generating functional.** For a Dirac field coupled to an abelian gauge field in the functional-integral formulation, the generating functional is
 $$
-Z[A] = \int \mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}\;\exp\!\left(i\int d^4x\;\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\slashed D-m\bigr)\psi\right),
+Z[A] = \int \mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}\;\exp\!\left(i\int d^4x\;\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\mathbb{D}-m\bigr)\psi\right),
 $$
-and the fermion integral is Gaussian: it evaluates to the determinant of the Dirac operator,
+and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\bigl(\slashed D-m\bigr) .
+Z[A] = \det\bigl(\mathbb{D}-m\bigr) .
 $$
-The bosonic and fermionic measures, the Gaussian integration, and the determinant are the subject of the corpus's general path-integral apparatus; the companion articles construct them, and this article takes them as given. What the algebra supplies here is the operator whose determinant is taken: $\slashed D-m$ is the module representative of the framework's two-sided Dirac equation, with $m$ the same coefficient that the condensate of the companion article fixes.
+The bosonic and fermionic measures, the Gaussian integration, and the determinant are the subject of the corpus's general path-integral apparatus; the companion articles construct them, and this article takes them as given. What the algebra supplies here is the operator whose determinant is taken: $\mathbb{D}-m$ is the cell display of the framework's two-sided equation, with $m$ the same coefficient that the condensate of the companion article fixes.
 
 **The chiral rotation.** Rotate the integration variables by an axial phase that is local,
 $$
@@ -99,92 +80,92 @@ $$
 \psi^{\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}\ \longmapsto\ \psi_2^{\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}=\psi^{\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}\,U(x),
 $$
 $$
-U(x)=e^{i\alpha(x)\chi}=\cos\alpha(x)\,I_4+i\sin\alpha(x)\,\chi=\cos\alpha(x)\,I_4+\sin\alpha(x)\,R_{\vec e_z}^{\mathrm{axf}},
+U(x)=e^{i\alpha(x)\mathsf V^{\mathrm{vol}}}=\cos\alpha(x)\,\mathbb 1+i\sin\alpha(x)\,\mathsf V^{\mathrm{vol}},
 $$
-where $\alpha$ is a real scalar function and $\chi^2=I_4$, $i\chi=R_{\vec e_z}^{\mathrm{axf}}$. The last equality is the whole content of $i^2=-1$ in the rotation: the two imaginary units combine into one real generator, and the rotation is unitary because $\chi$ is Hermitian.
+where $\alpha$ is a real scalar function. The last equality is the exponential of a cell that squares to the identity cell, and the rotation is unitary because $\mathsf V^{\mathrm{vol}}$ is Hermitian.
 
-**The massless kinetic term is invariant.** Since $\{\chi,\mathsf G_\mu\}=0$, the rotation satisfies $U\mathsf G_\mu=\mathsf G_\mu U^{-1}$, hence $U\mathsf G_\mu U=\mathsf G_\mu$ for constant $\alpha$, and
+**The massless kinetic term is invariant.** Since the cell anticommutes with each $\mathsf G_\mu$, a constant rotation satisfies $U\mathsf G_\mu=\mathsf G_\mu U^{-1}$, hence $U\mathsf G_\mu U=\mathsf G_\mu$, and
 $$
-\psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\slashed D\,\psi_2
-=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,U\,\slashed D\,(U\psi)
+\psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi_2
+=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,U\,\mathbb{D}\,(U\psi)
 =\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(U\mathsf G_\mu U)\,D_\mu\psi
-=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\slashed D\,\psi ,
+=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi ,
 $$
 the derivative acting only where it is written, and the last step using $U\mathsf G_\mu U=\mathsf G_\mu$.
 
 Under the *local* rotation the derivative falls on $\alpha$ and produces the current,
 $$
-\psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\slashed D\,\psi_2
-=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\slashed D\,\psi+i\,\frac{\partial\alpha}{\partial x_\mu}\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf G_\mu\chi\,\psi+O(\alpha^2),
+\psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi_2
+=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi+i\,\frac{\partial\alpha}{\partial x_\mu}\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf G_\mu\mathsf V^{\mathrm{vol}}\,\psi+O(\alpha^2),
 $$
-because $U^{-1}\partial U/\partial x_\mu=i\,\partial \alpha/\partial x_\mu\,\chi$ and $\{\chi,\mathsf G_\mu\}=0$. The two outer factors of $U$ do not contribute at first order — $U\mathsf G_\mu U=\mathsf G_\mu+O(\alpha^2)$ since $\{\chi,\mathsf G_\mu\}=0$ — so the whole correction is $i\,\partial \alpha/\partial x_\mu\,j_5{}^\mu$. Under the *global* rotation it is absent. A mass term is not invariant,
+because $U^{-1}\partial U/\partial x_\mu=i\,\partial \alpha/\partial x_\mu\,\mathsf V^{\mathrm{vol}}$ and the cell anticommutes with $\mathsf G_\mu$. The two outer factors of $U$ do not contribute at first order, since $U\mathsf G_\mu U=\mathsf G_\mu+O(\alpha^2)$, so the whole correction is $i\,\partial\alpha/\partial x_\mu$ times the axial current. Under the *global* rotation it is absent. A mass term is not invariant,
 $$
 \psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,m\,\psi_2=m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,U^2\,\psi
-=m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\cos2\alpha\,I_4+\sin2\alpha\,R_{\vec e_z}^{\mathrm{axf}}\bigr)\psi,
+=m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\cos2\alpha\,\mathbb 1+i\sin2\alpha\,\mathsf V^{\mathrm{vol}}\bigr)\psi,
 $$
-which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the vector central phase passes through the mass, and this one does not.
+which is the classical explicit breaking of the axial symmetry. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the central phase passes through the mass term, and this one does not.
 
 **The classical Ward identity, and the question.** Classically the massless action is invariant under the *global* rotation, and Noether's theorem gives the conservation of the axial current on the equations of motion,
 $$
-j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf G_\mu\chi\,\psi,\qquad
+j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf G_\mu\mathsf V^{\mathrm{vol}}\,\psi,\qquad
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural}=0\quad(\text{on shell}).
 $$
-The *local* rotation is not a symmetry — it fails by exactly the current term displayed above, and that failure is what identifies the current. The Ward identity is the global statement read locally.
-The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
+The *local* rotation is not a symmetry — it fails by exactly the current term displayed above, and that failure is what identifies the current. The Ward identity is the global statement read locally. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
-**Why the measure can fail.** A change of integration variables in a finite-dimensional integral multiplies the measure by the Jacobian determinant, regardless of whether the integrand is invariant. A symmetry of the action is therefore not automatically a symmetry of the integral; it is a symmetry only if the Jacobian is one. The chiral rotation of a Dirac field is a change of variables whose Jacobian is not one, and no local counterterm can restore it (*Regulator independence* below gives the reason: no local functional has the anomaly as its gauge variation). This is why the anomaly is a property of the measure and why the diagrammatic and path-integral derivations must agree.
+**Why the measure can fail.** A change of integration variables in a finite-dimensional integral multiplies the measure by the Jacobian determinant, regardless of whether the integrand is invariant. A symmetry of the action is therefore not automatically a symmetry of the integral; it is a symmetry only if the Jacobian is one. The chiral rotation of a Dirac field is a change of variables whose Jacobian is not one, and no local counterterm can restore it. This is why the anomaly is a property of the measure and why the diagrammatic and path-integral derivations must agree.
 
 ## The Jacobian and the Heat-Kernel Regulator
 
-**The Jacobian.** Write the rotation as a linear map on the space of fields, $\psi_2=U\psi$ with $U=e^{i\alpha\chi}$, and the same rotation on $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The measure transforms by the inverse determinants,
+**The Jacobian.** Write the rotation as a linear map on the space of fields, $\psi_2=U\psi$, and the same rotation on $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The measure transforms by the inverse determinants,
 $$
 \mathcal{D}\psi_2\,\mathcal{D}\psi_2^{\dagger} = \bigl(\det U\bigr)^{-2}\,\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger},
 $$
 and the regulated logarithm is
 $$
-\ln\det U=\operatorname{Tr}\ln U=i\operatorname{Tr}\bigl(\alpha\chi\bigr)_{\mathrm{reg}}
-=i\int d^4x\,\alpha(x)\,\mathrm{tr}\bigl[\chi\,e^{-\mathcal{H}/M^2}\bigr]_x .
+\ln\det U=\mathrm{Tr}\ln U=i\,\mathrm{Tr}\bigl(\alpha\mathsf V^{\mathrm{vol}}\bigr)_{\mathrm{reg}}
+=i\int d^4x\,\alpha(x)\,\mathrm{tr}\bigl[\mathsf V^{\mathrm{vol}}\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
 Hence
 $$
 \bigl(\det U\bigr)^{-2}=\exp\!\left(-2i\int d^4x\,\alpha(x)\,a(x)\right),
 \qquad
-a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\chi\,e^{-\mathcal{H}/M^2}\bigr]_x .
+a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\mathsf V^{\mathrm{vol}}\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
-The factor $2$ in the exponent is the two determinants, one for $\psi$ and one for $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, and the coefficient $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial \alpha/\partial x_\mu)\,j_5^\mu=\int d^4x\,\alpha\,\partial j_5^\mu/\partial x_\mu$, gives $\partial j_5^\mu/\partial x_\mu=2a$. The ABJ density is therefore $A=2a$, and the box below quotes $A$. The trace $a$ is itself the index density, since $\int a=(ϙ^2/32\pi^2)\int\epsilon F F$ is the index of the Dirac operator in the normalization of the index section; that is why $\int A=2\,\mathrm{ind}$, with the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point per spinor component, and the product is infinite.
+The factor $2$ in the exponent is the two determinants, one for $\psi$ and one for $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, and the coefficient $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial \alpha/\partial x_\mu)\,j_5^\mu=\int d^4x\,\alpha\,\partial j_5^\mu/\partial x_\mu$, gives $\partial j_5^\mu/\partial x_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is itself the index density, since $\int a=(ϙ^2/32\pi^2)\int\epsilon F F$ in the normalization of the index section; that is why $\int A=2\,\mathrm{ind}$, with the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point and per value of the subscript, and the product is infinite.
 
-**The heat-kernel regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the squared Dirac operator. In Euclidean signature, where the four cells $\mathsf G^E_\mu$ each square to $+I_4$, the continued operator $\slashed D_E$ is Hermitian; choosing a complete set of modes $\{\varphi_n\}$ of
+**The heat-kernel regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. In the continued frame, where the four frame cells square to $+\mathbb 1$, the continued operator $\mathbb{D}_E$ is anti-Hermitian, because each frame cell is Hermitian and each derivative is anti-Hermitian; its square therefore has no positive eigenvalue, and the regulator is minus that square. Choosing a complete set of modes $\{\varphi_n\}$ of
 $$
-\mathcal{H}=\slashed D_E^2,\qquad \mathcal{H}\varphi_n=\lambda_n\varphi_n,\qquad \lambda_n\ge0,
+\mathcal{H}=-\mathbb{D}_E^2,\qquad \mathcal{H}\varphi_n=\lambda_n\varphi_n,\qquad \lambda_n\ge0,
 $$
-the regulated trace is the diagonal of the heat kernel,
+the regulated trace is the coincidence value of the heat kernel,
 $$
-a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\chi\,e^{-\mathcal{H}/M^2}\bigr]_x .
+a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\mathsf V^{\mathrm{vol}}\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
-The subscript $x$ denotes the diagonal of the operator's kernel, the trace is over the spinor indices, and the $M\to\infty$ limit extracts the finite, regulator-independent remnant. The limit exists because the divergent orders cancel before it is taken: at coincidence the heat kernel expands as $M^4/16\pi^2$ times $I_4$, plus $+iϙM^2/16\pi^2$ times $\sigma_{\mu\nu}F_{\mu\nu}$, plus an $M^0$ term of $-ϙ^2(\sigma_{\mu\nu}F_{\mu\nu})^2/32\pi^2$; the first is annihilated by $\mathrm{tr}\,\chi=0$ and the second by $\mathrm{tr}(\chi\sigma_{\mu\nu})=0$, so only the finite order survives the trace with $\chi$ and nothing has to be subtracted by hand. The $M^4$ and $M^2$ divergences are still there in the determinant; it is the chirality-weighted trace that removes them. This construction is Fujikawa's, and it is standard; what the framework contributes is the trace inside it.
+The subscript $x$ denotes the coincidence value of the operator's kernel, the trace is the trace of a cell on $\mathbb{B}$, and the $M\to\infty$ limit extracts the finite, regulator-independent remnant. The limit exists because the divergent orders cancel before it is taken: at coincidence the heat kernel expands as $M^4/16\pi^2$ times the identity cell, plus an $M^2$ term proportional to the bivector of the field strength, plus an $M^0$ term proportional to its square. The first is annihilated by the vanishing trace of the chirality cell and the second by the vanishing trace of the chirality cell against a bivector, so only the finite order survives the trace, and nothing has to be subtracted by hand. The $M^4$ and $M^2$ divergences are still there in the determinant; it is the chirality-weighted trace that removes them. This construction is Fujikawa's, and it is standard; what the framework contributes is the trace inside it.
 
-**The heat-kernel expansion.** In Euclidean signature the four cells are $\mathsf G^E_\mu$, with $\{\mathsf G^E_\mu,\mathsf G^E_\nu\}=2\delta_{\mu\nu}I_4$; the covariant derivative is anti-Hermitian, because $\partial/\partial x_\mu$ is, so the continued operator is $\slashed D_E=i\mathsf G^E_\mu D_\mu$ and it is Hermitian. Its square is
+**The heat-kernel expansion.** The regulator is a sum of squares plus one cross term, and both pieces follow from the anticommutation of the cells and from the commutator of the covariant derivatives. This is a derived form:
 $$
-\slashed D_E^2=-D_E^2-iϙ\,\sigma_{\mu\nu}F_{\mu\nu},
+\mathcal{H}=-\mathbb{D}_E^2=-\sum_\mu D_\mu D_\mu-\tfrac{iϙ}{2}\,\mathsf G^E_\mu\mathsf G^E_\nu F_{\mu\nu},
+$$
+the field-strength term being summed over the twelve ordered pairs $\mu\neq\nu$, where the anticommutator of two distinct cells vanishes and the commutator is twice the product. The two imaginary units do different jobs and both are needed: the $i$ of each frame cell gives $i^2=-1$ when the two cells meet, which is what turns the kinetic part into minus the sum of squares, so that $-\mathbb{D}_E^2$ has non-negative spectrum; the $iϙ$ of the commutator of the derivatives carries the phase of the cross term, which is why the density comes out real. Only the antisymmetric part of the field strength survives the contraction, because the product of two distinct cells changes sign when its two indices are exchanged. The heat kernel of the sum of squares in four dimensions has the standard Seeley–DeWitt expansion; the coincidence trace of $\exp(-\mathcal{H}/M^2)$ produces, order by order, the coefficients of that expansion. The term that survives the trace with the chirality cell is the one carrying four frame cells, and it is evaluated by the identity of the next paragraph. The overall normalisation comes from the four-dimensional coincidence kernel; the Gaussian that produces it is exhibited once, in *Where the $1/16\pi^2$ comes from* below, and the Seeley–DeWitt coefficients themselves are quoted from the standard references rather than re-derived. What the framework fixes is the trace.
+
+**The one identity that matters.** The product of the chirality cell with four frame cells is the identity cell up to a number, and the number is the sign of the permutation:
+$$
+\mathsf V^{\mathrm{vol}}\,\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma=-i\,\epsilon_{\mu\nu\rho\sigma}\,\mathbb 1 ,
 \qquad
-\sigma_{\mu\nu}=\tfrac12\mathsf G^E_\mu\mathsf G^E_\nu\ \ (\mu\ne\nu),
+\mathsf V^{\mathrm{vol}}\,\mathsf G^{E}_\mu\mathsf G^{E}_\nu\mathsf G^{E}_\rho\mathsf G^{E}_\sigma=-\epsilon_{\mu\nu\rho\sigma}\,\mathbb 1 .
+$$
+The trace then needs no array. The trace of a cell is a scalar-part pairing (*Norm and Pairing Conventions*, §*The Trace and the Normalised State*), so a cell that is a multiple of the identity cell has a trace four times its multiple, and no entry of any display is read. Applied to the two lines above,
+$$
+\mathrm{tr}\bigl(\mathsf V^{\mathrm{vol}}\,\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma\bigr)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 \qquad
-D_E^2=\sum_\mu D_\mu D_\mu,
+\mathrm{tr}\bigl(\mathsf V^{\mathrm{vol}}\,\mathsf G^{E}_\mu\mathsf G^{E}_\nu\mathsf G^{E}_\rho\mathsf G^{E}_\sigma\bigr)=-4\,\epsilon_{\mu\nu\rho\sigma} .
 $$
-where $D_E^2$ has negative spectrum, so $-D_E^2$ is the positive Laplacian. The two imaginary units do different jobs and both are needed: the $i$ in $\slashed D_E$ gives $i^2=-1$ when the two cells meet, which is what turns the kinetic term into $-D_E^2$, while the $iϙ$ in $[D_\mu,D_\nu]=iϙF_{\mu\nu}$ survives in the cross term and produces $-iϙ\sigma_{\mu\nu}F_{\mu\nu}$. Only the antisymmetric cells survive the contraction, because $F_{\mu\nu}$ is antisymmetric. The heat kernel of $D_E^2$ in four dimensions has the standard Seeley–DeWitt expansion; the diagonal trace of $\exp(-\mathcal{H}/M^2)$ produces, order by order, the coefficients of that expansion. The term that survives the trace with $\chi$ is the one carrying four frame cells, and it is evaluated by the identity of the next paragraph. The overall normalisation comes from the four-dimensional coincidence kernel; the Gaussian that produces it is exhibited once, in *Where the $1/16\pi^2$ comes from* below, and the Seeley–DeWitt coefficients themselves are quoted from the standard references rather than re-derived. What the framework fixes is the trace.
+The continued sign is fixed by continuing the cells and not the chirality cell: $\mathsf G^E_k=i\mathsf G_k$ gives $i^3=-i$ on the three spatial factors, and $(-i)(-4i)=-4$. Taking the opposite overall sign would exchange the two values of the subscript and reverse the sign of $A$. The identity vanishes for any repeated index, because two equal cells meet and their product is a multiple of the identity cell, which the chirality cell annihilates. Both lines were recomputed for all $4!$ permutations, with residual exactly zero. Because the density must carry four distinct indices, only the quadratic part of the heat kernel contributes, and the result is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$.
 
-**The one identity that matters.** For all $4!=24$ permutations,
+**The result.** Expanding the heat kernel to second order in the field strength, where the two insertions supply $1/(2!M^4)$ against the kernel's $M^4/16\pi^2$, and using the identity,
 $$
-\mathrm{tr}\bigl(\chi\,\mathsf G^E_\mu\mathsf G^E_\nu\mathsf G^E_\rho\mathsf G^E_\sigma\bigr)=-4\,\epsilon_{\mu\nu\rho\sigma}\ \ (\text{Euclidean}),
-\qquad
-\mathrm{tr}\bigl(\chi\,\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma\bigr)=-4i\,\epsilon_{\mu\nu\rho\sigma}\ \ (\text{Minkowski}),
-$$
-with $\mathsf G^E_\mu$ the Euclidean cells and $\mathsf G_\mu$ the Minkowski ones. The Euclidean sign is fixed by continuing $\chi$ itself: $\chi=-\mathsf G^E_0\mathsf G^E_1\mathsf G^E_2\mathsf G^E_3$, the same matrix as in Minkowski, because $\mathsf G^E_k=i\mathsf G_k$ and $i^3=-i$. Taking the opposite overall sign would exchange the two chiral labels and reverse the sign of $A$. The trace vanishes for any repeated index; the identity was recomputed in the Euclidean frame, with residual exactly zero. Because the density must carry four distinct indices, only the quadratic part of the heat kernel contributes, and the result is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$.
-
-**The result.** Here $\sigma_{\mu\nu}F_{\mu\nu}$ is the full contraction $\sum_{\mu\nu}$, which is twice the sum over the six pairs $\mu<\nu$; using the half-contraction instead multiplies the density by four. Expanding the heat kernel to second order in the field strength, where the two insertions supply $1/(2!M^4)$ against the kernel's $M^4/16\pi^2$, and using the identity,
-$$
-a(x)=-\frac{ϙ^2}{32\pi^2}\,\mathrm{tr}\bigl[\chi\,(\sigma_{\mu\nu}F_{\mu\nu})^2\bigr]
-=\frac{ϙ^2}{32\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+a(x)=\frac{ϙ^2}{32\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 \qquad
 A(x)=2a(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}.
 $$
@@ -192,46 +173,49 @@ The measure transforms as
 $$
 \mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}\ \longmapsto\ \exp\!\left(-i\int d^4x\,\alpha(x)\,A(x)\right)\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger},
 $$
-and is not invariant. The coefficient is Fujikawa's, and it agrees with the Adler–Bell–Jackiw value computed from the triangle in the companion article on anomalies; the agreement is not an accident but the statement that the two derivations compute the same trace. Reinstating the mass term, the axial divergence is
+and is not invariant. The coefficient is Fujikawa's, and its magnitude, its oddness under reflection and its proportionality to the second invariant are the Adler–Bell–Jackiw ones computed from the triangle in the companion article on anomalies; the agreement is not an accident but the statement that the two derivations compute the same trace. The signs of the two intermediate displays are not comparable term by term, because the two articles contract the field strength with opposite signs of the spatial pair: this article uses $F_{ij}=-\epsilon_{ijk}B_k$ and obtains the contraction $-8\,\vec E\cdot\vec B$, while that article uses $F_{ij}=+\epsilon_{ijk}B_k$ and obtains $+8\,\vec E\cdot\vec B$. The boxed density is the same real number in both, $-\frac{ϙ^2}{2\pi^2}I_2$, and it is the boxed density that carries the physics.
+Reinstating the mass term, the axial divergence is
 $$
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural}
-=2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi+A(x)
-=2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi+\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+=2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf V^{\mathrm{vol}}\,\psi+A(x)
+=2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathsf V^{\mathrm{vol}}\,\psi+\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
-which is exactly the ABJ form of the companion article, term for term. The mass term there is written $2m\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\psi$; the two writings agree because $i\chi=i(-iR_{\vec e_z}^{\mathrm{axf}})=R_{\vec e_z}^{\mathrm{axf}}$, the reduction $i(-i)=+1$ of the companion's table, and the axial current is the same cell bilinear, $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mathsf G_\mu\chi\psi$. The mass term is the classical breaking and the Jacobian term is the quantum one; the two are additive and independent.
+which is the ABJ form of the companion article, with the explicit sign of the contraction carried by the field-strength convention declared above. The mass term is written there in the same cell bilinear, and the axial current is the same bilinear, $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mathsf G_\mu\mathsf V^{\mathrm{vol}}\psi$. The mass term is the classical breaking and the Jacobian term is the quantum one; the two are additive and independent.
 
 ## The Regulator and the Symmetry It Preserves
 
-**Why the regulator is part of the argument.** The Jacobian is a product of infinitely many eigenvalues, and any statement about it requires a prescription that makes the product finite. The prescription is not innocent. A naive momentum cutoff, for instance, breaks the gauge invariance of the fermion determinant, and the gauge non-invariance it introduces is indistinguishable, at the level of the regulated determinant, from a genuine anomaly. The Fujikawa regulator is chosen to preserve gauge invariance: the heat-kernel factor $\exp(-\mathcal{H}/M^2)$ is built from the gauge-covariant operator $\mathcal{H}=\slashed D_E^2$, so it commutes with the gauge transformations, and every breaking it produces is attributable to the inserted $\chi$ and not to the cutoff. The anomaly is then the *entire* failure of the chiral symmetry of the measure, with no spurious part. The heat kernel is defined in Euclidean signature, where the squared Dirac operator is positive semidefinite and $\exp(-\mathcal{H}/M^2)$ is convergent — semidefinite and not definite, since the zero modes that carry the index are exactly the kernel of $\mathcal{H}$; the Euclidean continuation is the standard setting for the Seeley–DeWitt expansion, and it does not alter the anomaly coefficient.
+**Why the regulator is part of the argument.** The Jacobian is a product of infinitely many eigenvalues, and any statement about it requires a prescription that makes the product finite. The prescription is not innocent. A naive momentum cutoff, for instance, breaks the gauge invariance of the fermion determinant, and the gauge non-invariance it introduces is indistinguishable, at the level of the regulated determinant, from a genuine anomaly. The Fujikawa regulator is chosen to preserve gauge invariance: the heat-kernel factor $\exp(-\mathcal{H}/M^2)$ is built from the gauge-covariant operator $\mathcal{H}=\mathbb{D}_E^2$, so it commutes with the gauge transformations, and every breaking it produces is attributable to the inserted chirality cell and not to the cutoff. The anomaly is then the *entire* failure of the axial symmetry of the measure, with no spurious part.
+
+**The continued frame, declared.** The heat kernel is computed in the frame where the four cells square to $+\mathbb 1$, reached by $\mathsf G^E_k=i\mathsf G_k$. That frame is a computational device and not a second physics: it is the continuation on which the square of the operator is semidefinite and $\exp(-\mathcal{H}/M^2)$ converges, and it changes no coefficient. It is semidefinite and not definite, since the zero modes that carry the index are exactly the kernel of $\mathcal{H}$.
 
 **Regulator independence.** Different gauge-invariant regulators give the same anomaly. Two such regulators differ by a local counterterm in the effective action, and a local counterterm cannot reproduce the anomaly: removing it would require a local functional whose gauge variation is the anomaly itself, and no local functional has that variation. That obstruction is the Wess–Zumino consistency condition, and it is what makes the coefficient a pure number rather than a function of the cutoff. The total-derivative form makes the same point locally: the density integrates to a topological charge, and a local counterterm would have to shift a topological charge, which no local functional does. The regulator's job is only to expose the finite remnant; it does not choose it.
 
-**The heat-kernel weight and the chirality-cell insertion.** Two features of the construction are worth separating. The heat-kernel factor $\exp(-\mathcal{H}/M^2)$ suppresses the high modes and produces the $1/M^2$ expansion whose coefficients are the Seeley–DeWitt terms; it is a *gauge-invariant* regulator. The insertion of $\chi$ is what makes the trace chirality-weighted; it is not a regulator and is the origin of the anomaly. In the framework's terms the division of labour is the same: $\mathcal{H}$ is built from the covariant derivative of the two-sided equation, and $\chi=i\omega$ is the volume cell whose trace is taken.
+**The heat-kernel weight and the chirality insertion.** Two features of the construction are worth separating. The heat-kernel factor $\exp(-\mathcal{H}/M^2)$ suppresses the high modes and produces the expansion in inverse powers of $M$ whose coefficients are the Seeley–DeWitt terms; it is a *gauge-invariant* regulator. The insertion of the chirality cell is what makes the trace a weighted one; it is not a regulator and is the origin of the anomaly. In the framework's terms the division of labour is the same: $\mathcal{H}$ is built from the covariant derivative of the two-sided equation, and $\mathsf V^{\mathrm{vol}}$ is the volume cell whose trace is taken.
 
 ## Comparison with the Diagrammatic Derivation
 
-**The two computations agree, as they must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. The charge symbol differs between the two only in name: the companion writes $e$, this article writes $ϙ$, and $ϙ=e$ once $\hbar=1$ is inserted in the covariant derivative of the introduction. The agreement is not a coincidence: both reduce to the same cell trace, $\mathrm{tr}(\chi\mathsf G_\mu\mathsf G_\nu\mathsf G_\rho\mathsf G_\sigma)=-4\epsilon_{\mu\nu\rho\sigma}$ in the Euclidean frame, $-4i\epsilon_{\mu\nu\rho\sigma}$ in Minkowski. The triangle computes it against three current insertions; the heat kernel computes it against the squared Dirac operator's field-strength term. The trace is the same, so the coefficient is the same.
+**The two computations agree, as they must.** The companion article on anomalies computes the divergence of the axial current from the triangle diagram, with one axial and two vector insertions, and obtains the Adler–Bell–Jackiw coefficient. This article obtains the same coefficient as the Jacobian of the measure. Two notational differences separate the two pages and neither touches the coefficient: the charge symbol, which the companion writes $e$ and this article writes $ϙ$, equal once $\hbar=1$ is inserted in the covariant derivative of the introduction, and the sign of the spatial pair of the field strength, discussed at the result above. The agreement is not a coincidence: both reduce to the same cell identity, the one displayed above. The triangle computes it against three current insertions; the heat kernel computes it against the squared operator's field-strength term. The identity is the same, so the coefficient is the same.
 
-**What each derivation explains.** The diagrammatic derivation explains *what* the anomaly is as a physical process: a triangle of fermions with an axial current and two gauge currents, finite and unrenormalised. The path-integral derivation explains *why* it is unavoidable: the measure is not invariant under the symmetry, and no choice of regulator removes a symmetry the measure does not have. The second explanation is the deeper one, and it is why the anomaly survives any dynamics that leaves the measure intact: confinement, a condensate, or a change of degrees of freedom cannot remove it, which is the content of anomaly matching in the companion article.
+**What each derivation explains.** The diagrammatic derivation explains *what* the anomaly is as a physical process: a triangle of fermions with an axial current and two gauge currents, finite and unrenormalised. The path-integral derivation explains *why* it is unavoidable: the measure is not invariant under the symmetry, and no choice of regulator removes a symmetry the measure does not have. The second explanation is the deeper one, and it is why the anomaly survives any dynamics that leaves the measure intact: confinement, a condensate, or a change of degrees of freedom cannot remove it, which is the content of anomaly matching.
 
 **One-loop exactness from the measure.** The Adler–Bardeen theorem is transparent in the path-integral language: the Jacobian is a one-loop determinant, because the measure's transformation is computed at the Gaussian level, and there is no higher loop in which to correct it. The regulator independence then promotes the one-loop value to an exact statement. The triangle derivation gives the same protection only after the theorem is proved diagram by diagram; the measure gives it as a structural fact. Neither route is special to the biquaternion algebra, and both are transcribed.
 
 ## The Coefficient, the Density, and the Framework
 
-**The coefficient is a Clifford trace times a field contraction.** The Fujikawa coefficient factorises exactly as the triangle coefficient did: a spinor trace, which produced $-4\epsilon_{\mu\nu\rho\sigma}$ in the Euclidean frame ($-4i\epsilon_{\mu\nu\rho\sigma}$ in Minkowski), and a field-strength contraction, which produced $F_{\mu\nu}F_{\rho\sigma}$. The four-dimensional heat-kernel coefficient supplies the $1/16\pi^2$. Nothing in the factorisation uses a property of the specific gauge group; the abelian computation above generalises to the non-abelian case by replacing $ϙ^2F_{\mu\nu}F_{\rho\sigma}$ with $\mathrm{tr}[F_{\mu\nu}F_{\rho\sigma}]$ and the coefficient by the appropriate Casimir, which is the standard non-abelian Fujikawa result.
+**The coefficient factorises.** The Fujikawa coefficient factorises exactly as the triangle coefficient did: a trace of four cells, which produced $-4i\epsilon_{\mu\nu\rho\sigma}$ in the $\mathbb{M}_-$ frame, and a field-strength contraction, which produced $F_{\mu\nu}F_{\rho\sigma}$. The four-dimensional heat-kernel coefficient supplies the $1/16\pi^2$. Nothing in the factorisation uses a property of the specific gauge group; the abelian computation above generalises to the non-abelian case by replacing $ϙ^2F_{\mu\nu}F_{\rho\sigma}$ with the trace of the field-strength square over the gauge factor and the coefficient by the appropriate Casimir, which is the standard non-abelian Fujikawa result.
 
 **The density is the invariant $I_2$.** The contraction is
 $$
 \epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\vec E\cdot\vec B,
 $$
-evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ for sample fields; hence
+evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; hence
 $$
 \boxed{\;A(x) = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B
 = -\frac{ϙ^2}{2\pi^2}\,I_2\;},
 $$
-so the density is a constant times the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, in the normalization of the instanton article. The constant $-8$ belongs to the contraction above, not to the box: it is the same $8$ that the instanton article carries, up to the signature convention stated next. In that article's $ict'$ convention the same contraction is $8iI_2/c$, and in its Euclidean convention it is $+8I_2$; the invariant $I_2$ is the same object, and the sign is carried by the signature. The anomalous divergence therefore flows into the framework's own pseudoscalar invariant, and the density is odd under parity for the same reason $I_2$ is; the topological character noted in the companion article is the total-derivative form of the same contraction.
+so the density is a constant times the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, in the normalization of the instanton article. The constant $-8$ belongs to the contraction above, not to the box: it is the same $8$ that the instanton article carries, up to the signature convention stated next. In that article's $ict'$ convention the same contraction is $8iI_2/c$, and in its continued convention it is $+8I_2$; the invariant $I_2$ is the same object, and the sign is carried by the signature. The anomalous divergence therefore flows into the framework's own pseudoscalar invariant, and the density is odd under the interchange of the two values of the subscript for the same reason $I_2$ is; the topological character noted in the companion article is the total-derivative form of the same contraction.
 
-**Why the chirality cell is the volume element.** The identity $\chi=i\omega$ is what makes the whole computation a statement about the algebra rather than about a chosen basis. The volume cell is $\omega=-R_{\vec e_z}^{\mathrm{axf}}$; it squares to $-I_4$ and anticommutes with every generator. Multiplication by the central imaginary turns it into the Hermitian chirality cell, $\chi=i\omega=-iR_{\vec e_z}^{\mathrm{axf}}$, which squares to $+I_4$. The anomaly trace is the trace of the chirality cell against the heat kernel, and the $\epsilon$ symbol is the coordinate form of the volume cell. The two cells are different objects: $\omega$ is the algebra's pseudoscalar, while $\chi$ is its Hermitian image and the grading. The axial and vector currents differ only by the cell inserted: the vector rotation has $\ln U=i\alpha I_4$ and inserts the identity, the axial rotation has $\ln U=i\alpha\chi$ and inserts the chirality cell $\chi=i\omega$, which is the volume cell up to the central $i$. The anomaly is the statement that the volume-cell insertion is not a symmetry of the measure, while the identity insertion is.
+**Why the chirality cell is the volume cell.** The identity that makes the whole computation a statement about the algebra is that the chirality cell is the volume cell up to the central $i$: the product of the four frame cells is $-i\mathsf V^{\mathrm{vol}}$, so $\mathsf V^{\mathrm{vol}}=i\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3$ (*Special Element Conventions*, §*The Chirality Convention*). The anomaly trace is the trace of the chirality cell against the heat kernel, and the antisymmetric symbol is the coordinate form of the volume cell. The axial and vector rotations differ only by the cell inserted: the vector rotation has $\ln U=i\alpha\,\mathbb 1$ and inserts the identity cell, the axial rotation has $\ln U=i\alpha\mathsf V^{\mathrm{vol}}$ and inserts the chirality cell. The anomaly is the statement that the volume-cell insertion is not a symmetry of the measure, while the identity insertion is.
 
 **Where the $1/16\pi^2$ comes from.** The coefficient is a four-dimensional Gaussian, and it can be read off before any cell is touched. In the coincidence limit the free heat kernel is
 $$
@@ -239,52 +223,52 @@ $$
 = \int\frac{d^4p_E}{(2\pi)^4}\,\exp(-p_E^2/M^2)
 = \frac{M^4}{16\pi^2},
 $$
-using $\int d^4p_E\,\exp(-p_E^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4=16\pi^4$. The powers of $M$ then balance, and the balance is worth displaying because it is where the $1/32\pi^2$ of the density is fixed. Write $\mathcal{H}=\mathcal{H}_0+V$ with $\mathcal{H}_0=-\partial^2$ and $V=-iϙ\,\sigma_{\mu\nu}F_{\mu\nu}$. Each insertion of $V$ brings one factor $1/M^2$ and one free propagator, so the second-order term carries
+using $\int d^4p_E\,\exp(-p_E^2/M^2)=(\pi M^2)^2=\pi^2M^4$ and dividing by $(2\pi)^4=16\pi^4$. The powers of $M$ then balance, and the balance is worth displaying because it is where the $1/32\pi^2$ of the density is fixed. Write $\mathcal{H}=\mathcal{H}_0+V$, with $\mathcal{H}_0=-\partial^2$ and $V=-\tfrac{iϙ}{2}\mathsf G^E_\mu\mathsf G^E_\nu F_{\mu\nu}$ the field-strength insertion. Each insertion of $V$ brings one factor $1/M^2$ and one free propagator, so the second-order term of the heat kernel carries
 $$
-V=-iϙ\,\sigma_{\mu\nu}F_{\mu\nu},\qquad
 \frac{1}{2!\,M^4}\ \text{for the two insertions},\qquad
 \frac{M^4}{16\pi^2}\ \text{for the coincidence kernel},
 $$
-and the three combine to $\tfrac12\cdot M^{-4}\cdot M^4/16\pi^2=1/32\pi^2$. Since $V^2=(iϙ)^2(\sigma_{\mu\nu}F_{\mu\nu})^2=-ϙ^2(\sigma_{\mu\nu}F_{\mu\nu})^2$, the two imaginary units meet as $i^2=-1$ and the density is $-ϙ^2/32\pi^2$ times the trace. The $M^4$ of the Gaussian and the two $M^{-2}$ of the insertions cancel exactly; that cancellation is why the anomaly is finite and regulator independent, while a term with a different number of insertions would leave a power of $M$ behind and vanish or diverge. The same Gaussian appears in the Seeley–DeWitt expansion of the curved and gauge-covariant Laplacian, where the coefficient is the $a_2$ Seeley–DeWitt term; the anomaly uses only the field-strength part of that term, since the curvature part carries no $\chi$ trace.
+and the two combine to $\tfrac12\cdot M^{-4}\cdot M^4/16\pi^2=1/32\pi^2$. Two insertions bring four frame cells, so the trace over them is the four-cell trace above, taken with the chirality cell in front: $V^2$ carries $(-\tfrac{iϙ}{2})^2=-\tfrac{ϙ^2}{4}$, and the two imaginary units of the measure's exponent and of that square combine into a real density. The $M^4$ of the Gaussian and the two $M^{-2}$ of the insertions cancel exactly; that cancellation is why the anomaly is finite and regulator independent, while a term with a different number of insertions would leave a power of $M$ behind and vanish or diverge. The same Gaussian appears in the Seeley–DeWitt expansion of the covariant sum of squares, where the coefficient is the second Seeley–DeWitt term; the anomaly uses only the field-strength part of that term, since the curvature part carries no trace against the chirality cell.
 
 ## The Integrated Form and the Index
 
-**The integral of the density.** The integrated anomaly is a topological invariant. In the massless theory, where the divergence is the anomaly alone, the total-derivative form and the index of the Dirac operator give
+**The integral of the density.** The integrated anomaly is a topological invariant. In the massless theory, where the divergence is the anomaly alone, the total-derivative form and the index of the operator give
 $$
 \int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
 = \int d^4x\,A(x)
 = \frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= 2\,\mathrm{ind}(\slashed D),
+= 2\,\mathrm{ind}(\mathbb{D}),
 $$
-so the axial charge transported in a background is twice the index. The index is the difference between the numbers of right- and left-handed zero modes of the massless Dirac operator, and the general theorem identifying the two sides is Atiyah–Singer. The zero-mode count and the index theorem belong to the corpus's general gauge apparatus and are not developed here; the fermion-sector facts are that the integral is an integer, that the coefficient is therefore protected against renormalisation, and that a background of unit topological charge produces a net axial-charge violation.
+so the axial charge transported in a background is twice the index. The index is the excess of the number of zero modes of value $L$ over the number of value $R$; the general theorem identifying it with the integral is Atiyah–Singer. The zero-mode count and the index theorem belong to the corpus's general gauge apparatus and are not developed here; the fermion-sector facts are that the integral is an integer, that the coefficient is therefore protected against renormalisation, and that a background of unit topological charge produces a net axial-charge violation.
 
-**The zero modes and the measure.** The index interpretation makes the Fujikawa computation transparent. The chiral rotation acts on each mode by a phase; modes of definite chirality are rotated with opposite signs; the regulator counts them with the heat-kernel weight; and a mismatch between the numbers of left- and right-handed zero modes is a nonzero difference that no regulator can cancel. The anomaly is the zero-mode mismatch seen through the measure. In the framework's terms, the mismatch is a property of the Dirac operator on the module $\Delta=S\oplus\bar{S}$ in a background with nonzero topological charge, and the topological charge is the winding of the material-sector connection.
+**The zero modes and the measure.** The index interpretation makes the Fujikawa computation transparent. The rotation acts on each mode by a phase; modes of the two values are rotated with opposite phases; the regulator counts them with the heat-kernel weight; and a mismatch between the numbers of zero modes of the two values is a nonzero difference that no regulator can cancel. The anomaly is that mismatch seen through the measure. In the framework's terms the mismatch is a property of the cell operator in a background with nonzero topological charge, and the topological charge is the winding of the material-sector connection.
 
-**One instanton.** For a unit instanton the index is one per flavour and the axial charge changes accordingly. The factor of two in front of the index is the one already identified at the measure: two determinants, one for $\psi$ and one for $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. Equivalently, the operator that soaks up a zero mode is the bilinear $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi$, whose axial charge is two, so a single zero mode of definite chirality shifts the axial charge by two units. Inside the trace the same statement is the $\mathrm{tr}(\chi)=0$ identity of the companion article: a mode and its chirality partner enter with opposite signs, so their contributions cancel when the index vanishes, and the integral turns on the difference. Nothing here is particular to the biquaternion algebra except the identification of the winding with the material sector and of the density with $I_2$.
+**One instanton.** For a unit instanton the index is one per flavour and the axial charge changes accordingly. The factor of two in front of the index is the one already identified at the measure: two determinants, one for $\psi$ and one for $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. Equivalently, the bilinear that soaks up a zero mode is $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi$, whose axial charge is two, so a single zero mode of one value shifts the axial charge by two units. Inside the trace the same statement is the vanishing of the trace of the chirality cell: a mode and its partner of the other value enter with opposite signs, so their contributions cancel when the index vanishes, and the integral turns on the difference. Nothing here is particular to the biquaternion algebra except the identification of the winding with the material sector and of the density with $I_2$.
 
-**The two rotations compared.** The framework's two continuous symmetries of the massless equation behave differently in the measure, and the difference is exact. The **vector** rotation $\psi\mapsto \exp(i\alpha)\psi$ is multiplication by a central element: it rotates both chiralities in the same sense, and it is exactly what an abelian gauge transformation does to the fermion field. Because the regulator is gauge invariant, the trace its Jacobian produces is the one *without* $\chi$, and that trace is parity even: the four-cell trace without $\chi$ is symmetric under $\mu\nu\leftrightarrow\rho\sigma$, so it contracts to $F_{\mu\nu}F_{\mu\nu}$ and never to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$. A parity-even local term is absorbed by the counterterms that define the effective action, so the divergence of the vector current is not corrected. In a chiral gauge theory the same distinction appears as the cubic charge sum $\sum_LQ^3-\sum_RQ^3$, which vanishes for a vector-like spectrum; the framework's linear chiral pair is vector-like in that sense. The **axial** rotation $\psi\mapsto e^{i\alpha\chi}\psi$ inserts the chirality cell; it rotates the two chiralities oppositely, its trace is parity odd, its leftover is $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and no local counterterm with the symmetries of the theory absorbs it. Only the second rotation is anomalous. In the framework's terms the mass term and the measure agree about which phase is broken: the linear chiral pair conserves the central phase and breaks the axial one at the classical level, and the measure breaks the same axial phase once more at the quantum level. The two breakings add, and their sum is the ABJ divergence.
+**The two rotations compared.** The framework's two continuous symmetries of the massless equation behave differently in the measure, and the difference is exact. The **vector** rotation $\psi\mapsto \exp(i\alpha)\psi$ is multiplication by a central element: it rotates the two values in the same sense, and it is exactly what a gauge transformation does to the field. Because the regulator is gauge invariant, the trace its Jacobian produces is the one *without* the chirality cell, and that trace is even under the interchange of the two index pairs, so it contracts to $F_{\mu\nu}F_{\mu\nu}$ and never to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$. An even local term is absorbed by the counterterms that define the effective action, so the divergence of the vector current is not corrected. In a chiral gauge theory the same distinction appears as the cubic charge sum $\sum_LQ^3-\sum_RQ^3$, which vanishes for a vector-like spectrum; the framework's linear chiral pair is vector-like in that sense. The **axial** rotation inserts the chirality cell; it rotates the two values oppositely, its trace is odd, its leftover is $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and no local counterterm with the symmetries of the theory absorbs it. Only the second rotation is anomalous. In the framework's terms the mass term and the measure agree about which phase is broken: the linear chiral pair conserves the central phase and breaks the axial one at the classical level, and the measure breaks the same axial phase once more at the quantum level. The two breakings add, and their sum is the ABJ divergence.
 
-**The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, the second Chern character of the gauge field, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: $\chi=i\omega$ inserts the volume cell; the heat-kernel trace converts the volume cell into the $\epsilon$ symbol; the $\epsilon$ symbol contracts the field strength into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link is a framework object except the measure, and the last link is the general index theorem.
+**The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, the second Chern character of the gauge field, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: the chirality cell inserts the volume cell; the heat-kernel trace converts the volume cell into the antisymmetric symbol; the symbol contracts the field strength into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link is a framework object except the measure, and the last link is the general index theorem.
 
 ## The Chiral Rotation in the Biquaternion Language
 
-**The rotation is the axial symmetry of the linear chiral pair.** The rotation $\psi\mapsto e^{i\alpha\chi}\psi$ rotates the left-handed module $S$ and its conjugate $\bar{S}$ in opposite directions, because $\chi=\operatorname{diag}(-I_2,I_2)$ in the chiral basis. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and classical-in-the-vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
+**The rotation is the axial symmetry of the linear chiral pair.** The rotation $\psi\mapsto e^{i\alpha\mathsf V^{\mathrm{vol}}}\psi$ rotates the parts of the two values in opposite directions, because the cell is $-1$ on $\tilde\Psi_L$ and $+1$ on $\tilde\Psi_R$. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and belonged to the vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
 
-**The phase $\alpha(x)$ is a central scalar.** The rotation parameter is a real scalar function of position, hence a central element of the algebra times a function; it is the same kind of object as the gauge function $\Gamma$ of the abelian gauge principle. The *generator* is not a central scalar: the grading is central in the complexified algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}$, and its cell representative $\chi$ anticommutes with each generator of $\mathbb{B}$. That anticommutator, not a central multiplication, is the algebra's reason that the constant rotation commutes with $\slashed D$ and the local one leaves only the derivative term. The current $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mathsf G_\mu\chi\psi$ is the axial bilinear, and the anomaly is the failure of the chirality-generated *axial* rotation to preserve the measure — in sharp contrast with the centrally-generated *vector* rotation, which *is* a symmetry of the measure because it is a gauge transformation and the regulator is gauge invariant.
+**The angle is a central scalar, the generator is a cell.** The rotation parameter is a real scalar function of position, hence a central element of the algebra times a function; it is the same kind of object as the gauge function of the abelian gauge principle. The *generator* is not central: the cell $\mathsf V^{\mathrm{vol}}$ anticommutes with each frame cell. That anticommutator, and not a central multiplication, is the algebra's reason that the constant rotation commutes with $\mathbb{D}$ and the local one leaves only the derivative term.
 
-**The sector placement of the operator.** In the algebro-Clifford dictionary the volume cell $\omega$ is the pseudoscalar cell, the product of the four generators, and $\chi=i\omega$ is its Hermitian image; the EDM-type insertion is the magnetic part $\sigma_{ij}\chi$ ($i,j$ spatial), which is anti-Hermitian and sits in the material sector $\mathbb{M}_-$ (the companion article on the electric dipole moment develops this), while the electric part $\sigma_{0k}\chi$ is Hermitian. The anomaly insertion is $\chi$ itself rather than $\sigma_{\mu\nu}\chi$; it is Hermitian, and its trace against the heat kernel is what the regulator computes. The two insertions are different objects and their sector placements differ; the article states the anomaly's and does not conflate it with the EDM's.
+**The frame position of the insertion.** The chirality cell is a single right multiplier (*Special Element Conventions*, §*The Chirality Convention*), so the insertion carries a direction of the frame and no left action; the product $\mathsf G_\mu\mathsf G_\nu$ of two distinct cells is what a magnetic or electric insertion uses, and the companion article on the electric dipole moment develops that case. The anomaly insertion is the chirality cell itself rather than its product with such a pair; it is Hermitian, and its trace against the heat kernel is what the regulator computes. The two insertions are different objects, and the article states the anomaly's and does not conflate it with the dipole's.
 
-**The operator whose determinant is taken.** The Dirac operator $\slashed D=iR_{\vec e_x}^{\mathrm{axf}}D_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}D_k$ is the module representative of the framework's covariant two-sided equation on the massive sector. Its determinant is the object the measure produces, and its zero modes carry the index. What the framework does not supply is the measure itself — the space of fields, the Grassmann integration, and the determinant's definition. Those are the functional-integral apparatus, constructed in the companion articles on the path integral and on the functional integral, and imported here.
+**The operator whose determinant is taken.** The cell operator $\mathbb{D}=\mathsf G_0D_0+\mathsf G_1D_1+\mathsf G_2D_2+\mathsf G_3D_3$ is the cell display of the framework's covariant two-sided equation. Its determinant is the object the measure produces, and its zero modes carry the index. What the framework does not supply is the measure itself — the space of fields, the Grassmann integration, and the determinant's definition. Those are the functional-integral apparatus, constructed in the companion articles on the path integral and on the functional integral, and imported here.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 
 | Item | Status |
 |---|---|
-| The chirality insertion $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$, the volume cell up to the central $i$ | **Supplied** by the Clifford isomorphism |
-| The cell trace $\mathrm{tr}(\chi\mathsf G\mathsf G\mathsf G\mathsf G)$, equal to $-4\epsilon_{\mu\nu\rho\sigma}$ for the Euclidean cells and $-4i\epsilon_{\mu\nu\rho\sigma}$ for the Minkowski ones | **Supplied**, recomputed for all $4!$ permutations |
-| The heat-kernel splitting $\slashed D_E^2=-D_E^2-iϙ\,\sigma_{\mu\nu}F_{\mu\nu}$ | **Supplied** from the anticommutation relations |
-| The anomaly density, proportional to the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied**; the coefficient is standard |
-| The Dirac operator $\slashed D$ whose determinant is the measure's Jacobian | **Supplied**: the cell representative of the two-sided equation |
+| The chirality cell $\mathsf V^{\mathrm{vol}}$, the volume cell of the frame up to the central $i$ | **Supplied** by the cell frame |
+| The cell identity $\mathsf V^{\mathrm{vol}}\mathsf G\mathsf G\mathsf G\mathsf G=-i\epsilon\,\mathbb 1$, and its trace $-4i\epsilon$ | **Supplied**, recomputed for all $4!$ permutations |
+| The trace of a cell as a scalar-part pairing | **Supplied**; the derived form that removes every entry from the trace |
+| The splitting $\mathcal{H}=-\mathbb{D}_E^2=-\sum_\mu D_\mu D_\mu-\tfrac{iϙ}{2}\mathsf G^E_\mu\mathsf G^E_\nu F_{\mu\nu}$ | **Supplied** from the anticommutation of the cells |
+| The anomaly density, proportional to the framework's invariant $I_2$ | **Supplied**; the coefficient is standard |
+| The cell operator $\mathbb{D}$ whose determinant is the measure's Jacobian | **Supplied**: the cell display of the two-sided equation |
 | The functional measure $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ and the determinant | **Not supplied**; the general path-integral and functional-integral apparatus, cited |
 | The Fujikawa coefficient, the Seeley–DeWitt expansion, and the index relation | **Transcribed**; standard |
 | The index theorem and the zero-mode count | **Outside**; the general gauge apparatus |
@@ -293,11 +277,11 @@ so the axial charge transported in a background is twice the index. The index is
 
 ## Open Questions
 
-1. **Can the measure be an algebra object?** The framework supplies the Dirac operator whose determinant the measure produces, but not the measure itself. Whether the fermionic functional measure can be characterised by the algebra — as a trace on a completion of $\mathbb{B}$ or of its module — or whether it is irreducibly a functional-analytic object, is not settled. The present article takes the measure from the general path-integral apparatus and uses only its transformation law.
+1. **Can the measure be an algebra object?** The framework supplies the operator whose determinant the measure produces, but not the measure itself. Whether the fermionic functional measure can be characterised by the algebra — as a trace on a completion of $\mathbb{B}$ — or whether it is irreducibly a functional-analytic object, is not settled. The present article takes the measure from the general path-integral apparatus and uses only its transformation law.
 
-2. **Does non-commutativity alter the regulator?** The heat-kernel computation above is commutative in the field-strength background: $F_{\mu\nu}$ is a matrix in the gauge factor but a commuting function of $x$ in the abelian case. The framework's algebra is non-commutative, and whether a genuinely biquaternion-valued background (one in which $F$ does not commute with itself at different points) produces a modification of the Seeley–DeWitt coefficient is not examined here. For the Standard Model's gauge fields the algebra enters only through the Clifford trace, and the standard coefficient applies.
+2. **Does non-commutativity alter the regulator?** The heat-kernel computation above is commutative in the field-strength background: for the abelian factor $F_{\mu\nu}$ is a commuting function of $x$, and a non-abelian factor only attaches its own algebra to the entries. The framework's algebra is non-commutative, and whether a genuinely biquaternion-valued background, one in which $F$ does not commute with itself at different points, produces a modification of the Seeley–DeWitt coefficient is not examined here. For the Standard Model's gauge fields the algebra enters only through the cell identity, and the standard coefficient applies.
 
-3. **The algebraic index.** The integrated anomaly is the index of the Dirac operator, and the index theorem is a statement about elliptic operators on manifolds. Whether the biquaternion formulation admits an algebraic index statement — a pairing between a $K$-theory class of the module and a cyclic cocycle of the algebra — is a question of the corpus's general gauge apparatus and is not attempted here.
+3. **The algebraic index.** The integrated anomaly is the index of the operator, and the index theorem is a statement about elliptic operators on manifolds. Whether the biquaternion formulation admits an algebraic index statement — a pairing between a class of the algebra and a cyclic cocycle — is a question of the corpus's general gauge apparatus and is not attempted here.
 
 4. **The $\theta$ dependence and the vacuum.** The anomaly makes the vacuum energy depend on a topological angle, and the resolution of the $\mathrm{U}(1)_A$ problem and the strong-CP problem involve that angle. Both belong to the general gauge apparatus and to the spin-$0$ subcategory; this article states the fermion-sector divergence and stops.
 
@@ -321,7 +305,7 @@ $$
 
 The corpus writes the left factor of $\gamma_k[\mathbb{M}_-]$ as $e_k$; it is the same unit as $\vec e_k$, and here the arrow is kept so that $\gamma_\mu[\mathbb{M}_-]=\mathsf G_\mu$ holds entry by entry. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the abstract central grading $i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so its square is $e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator, which the body writes $\mathsf V^{\mathrm{vol}}$; the abstract central grading $i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so its square is $e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -345,46 +329,47 @@ $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The trace lines are the $\gamma$ reading of the cell trace used in the body: $\gamma_5$ is $\chi$, and $\gamma_\mu[\mathbb{M}_-]$ is $\mathsf G_\mu$. The Euclidean frame does not change $\gamma_5$, which is $\chi$ in both signatures; it changes the gammas, $\gamma^E_k=i\gamma_k[\mathbb{M}_-]$, and the three replacements multiply the four-cell trace by $i^3=-i$. Since $(-i)(-4i)=-4$, the Euclidean trace is $-4\epsilon_{\mu\nu\rho\sigma}$, with no phase left over, and that is the real number the regulator uses. The four single-contraction sums are frame-dependent, because each term depends on the square of a cell. In the Euclidean frame, where every cell squares to $+I_4$, they are $\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4$, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4$, and $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$.
+The trace lines are the $\gamma$ reading of the cell trace used in the body: $\gamma_5$ is $\mathsf V^{\mathrm{vol}}$, and $\gamma_\mu[\mathbb{M}_-]$ is $\mathsf G_\mu$. The continued frame does not change $\gamma_5$, which is $\mathsf V^{\mathrm{vol}}$ in both signatures; it changes the gammas, $\gamma^E_k=i\gamma_k[\mathbb{M}_-]$, and the three replacements multiply the four-cell trace by $i^3=-i$. Since $(-i)(-4i)=-4$, the continued trace is $-4\epsilon_{\mu\nu\rho\sigma}$, with no phase left over, and that is the real number the regulator uses. The four single-contraction sums are frame-dependent, because each term depends on the square of a cell. In the continued frame, where every cell squares to $+I_4$, they are $\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4$, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4$, and $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
-The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under the global rotation $\psi\mapsto e^{i\alpha\chi}\psi$ with $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, and the local rotation adds the axial-current term; the measure is not; the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, and the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\chi e^{-\mathcal{H}/M^2}]$ is the index density, with $A=2a$ the anomaly density. Regulating with $\mathcal{H}=\slashed D_E^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of $\chi$ against the heat kernel; the only surviving trace is the cell identity $\mathrm{tr}(\chi\mathsf G^E_\mu\mathsf G^E_\nu\mathsf G^E_\rho\mathsf G^E_\sigma)=-4\epsilon_{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is
+The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. The massless Dirac action is invariant under the global rotation $\psi\mapsto e^{i\alpha\mathsf V^{\mathrm{vol}}}\psi$ with $\mathsf V^{\mathrm{vol}}=-iR_{\vec e_z}^{\mathrm{axf}}$, and the local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\mathsf V^{\mathrm{vol}}e^{-\mathcal{H}/M^2}]$ as the index density and $A=2a$ as the anomaly density. Regulating with $\mathcal{H}=\mathbb{D}_E^2$ and the heat-kernel factor $\exp(-\mathcal{H}/M^2)$, the density is the trace of the chirality cell against the heat kernel; the only surviving trace is the cell identity $\mathrm{tr}(\mathsf V^{\mathrm{vol}}\mathsf G^E_\mu\mathsf G^E_\nu\mathsf G^E_\rho\mathsf G^E_\sigma)=-4\epsilon_{\mu\nu\rho\sigma}$, recomputed for all $4!$ permutations with residual exactly zero, and the result is
 $$
 \boxed{\;A(x)=\frac{ϙ^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -\frac{ϙ^2}{2\pi^2}\,\vec E\cdot\vec B\;},
 $$
-so the anomaly density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.
+so the anomaly density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$, the instanton article's invariant. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.
 
-The biquaternion content is threefold: the chirality insertion is the volume cell up to the central $i$, $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$; the heat-kernel splitting follows from the anticommutation relations; and the density is proportional to the framework's own pseudoscalar invariant. The rotation is the axial symmetry of the linear chiral pair, and the anomaly is the statement that this rotation does not preserve the measure — while the vector central rotation, which is the fermion phase of an abelian gauge transformation, does. The integrated anomaly is twice the index of the Dirac operator; that integer is what makes the coefficient exact, while the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.
+The biquaternion content is threefold: the chirality insertion is the volume cell up to the central $i$, $\mathsf V^{\mathrm{vol}}=i\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3$; the splitting follows from the anticommutation of the cells and from the commutator of the covariant derivatives; and the density is proportional to the framework's own pseudoscalar invariant. The trace itself is a scalar-part pairing, so the anomaly never needs an array. The rotation is the axial symmetry of the linear chiral pair, and the anomaly is the statement that this rotation does not preserve the measure — while the vector central rotation, which is the fermion phase of an abelian gauge transformation, does. The integrated anomaly is twice the index of the Dirac operator; that integer is what makes the coefficient exact, while the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_-,\mathbb{M}_+,\mathbb{C}_{\mathbb{B}}$ | Material sector, informational sector, centre |
-| $\Delta=S\oplus\bar{S}$ | Dirac module; $S=\mathbb{C}^2=(\tfrac12,0)$ |
+| $\mathbb{B}$ | The biquaternion algebra (*Algebra and Element Conventions*) |
+| $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$ | Left, right and two-sided multiplication |
-| $\mathsf G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\mathsf G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{\mathsf G_\mu,\mathsf G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ |
-| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$ | Chirality cell; $\operatorname{diag}(-I_2,I_2)$ in the chiral basis |
-| $\omega=\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3=-i\chi$ | Volume cell |
-| $\sigma_{\mu\nu}=\tfrac12\mathsf G_\mu\mathsf G_\nu$ ($\mu\ne\nu$) | Bivector of two frame cells; $\sigma_{\mu\nu}F_{\mu\nu}$ is the full $\sum_{\mu\nu}$, twice the sum over $\mu<\nu$ |
-| $\mathrm{tr}$, $\operatorname{Tr}$ | Spinor trace; functional trace over modes |
-| $\slashed D=iR_{\vec e_x}^{\mathrm{axf}}D_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}D_k$ | Two-sided Dirac operator |
-| $\mathcal{H}=\slashed D_E^2=-D_E^2-iϙ\,\sigma_{\mu\nu}F_{\mu\nu}$ | Euclidean regulator operator |
-| $a(x)=\dfrac{ϙ^2}{32\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Regulated trace density (the argument $x$ marks it as a density; the labels $a,b$ of $L_aR_b$ are cell names and do not collide) |
-| $A(x)=2a(x)=\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa/ABJ) |
+| $\mathbb 1$ | The identity cell |
+| $\mathsf G_0,\mathsf G_1,\mathsf G_2,\mathsf G_3$ | The four frame cells of the $\mathbb{M}_-$ frame; formulas in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation* |
+| $\mathsf V^{\mathrm{vol}}=i\mathsf G_0\mathsf G_1\mathsf G_2\mathsf G_3$ | The chirality cell, the volume cell of the frame up to the central $i$ |
+| $\mathsf G^E_k=i\mathsf G_k$ | The cells of the continued frame, all squaring to $+\mathbb 1$ |
+| $\mathrm{tr}$ | The trace of a cell, a scalar-part pairing (*Norm and Pairing Conventions*) |
+| $\mathbb{D}=\mathsf G_0D_0+\mathsf G_1D_1+\mathsf G_2D_2+\mathsf G_3D_3$ | The covariant cell operator, the cell display of the two-sided equation |
+| $\mathcal{H}=-\mathbb{D}_E^2=-\sum_\mu D_\mu D_\mu-\tfrac{iϙ}{2}\mathsf G^E_\mu\mathsf G^E_\nu F_{\mu\nu}$ | The continued regulator operator |
+| $a(x)=\dfrac{ϙ^2}{32\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Regulated trace density (the argument $x$ marks it as a density, so the name collides with nothing else) |
+| $A(x)=2a(x)=\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
+| $\mathrm{Tr}$ | The functional trace over modes |
 | $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ | Fermion measure of the functional integral |
-| $U=e^{i\alpha\chi}=\cos\alpha+\sin\alpha\,R_{\vec e_z}^{\mathrm{axf}}$ | Chiral rotation; $\alpha$ a central scalar function |
+| $U=e^{i\alpha\mathsf V^{\mathrm{vol}}}$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-2i\int d^4x\,\alpha a)$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det(\slashed D-m)$ | Fermion determinant |
-| $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2\,\mathrm{ind}(\slashed D)$ | Integrated anomaly and index |
-| $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
+| $Z[A]=\det(\mathbb{D}-m)$ | Fermion determinant |
+| $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mathsf G_\mu\mathsf V^{\mathrm{vol}}\psi$ | Axial current |
+| $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2\,\mathrm{ind}(\mathbb{D})$ | Integrated anomaly and index |
+| $I_1$, $I_2$ | Biquaternion field invariants, in the instanton article's normalization |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
-| $2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\psi=2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\chi\psi$ | Mass contribution to the axial divergence; the two forms agree by $i\chi=R_{\vec e_z}^{\mathrm{axf}}$ |
+| $2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mathsf V^{\mathrm{vol}}\psi$ | Mass contribution to the axial divergence |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

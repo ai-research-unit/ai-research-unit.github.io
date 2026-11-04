@@ -26,7 +26,7 @@
 | The regular module, its two minimal left ideals and the carrier | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
 | The conjugate module and its inequivalence to $S$ | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
 | The chiral pair of the Dirac equation and its two-sided variant | [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) |
-| The three forms of the equation and the statement that the pair needs no module | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) |
+| The two forms of the equation on the algebra, and the statement that the pair needs no carrier beyond the algebra | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) |
 
 ## Operator Chirality in One Page
 
@@ -225,7 +225,7 @@ The limit is stated once and it is not small: the two chiral halves of $\mathbb{
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the definition, the dimensions, the swap, the conjugation and the list of unrelated objects.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the one-sided and the two-sided equation, and the plane-wave solutions.
-- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the three forms of the equation and the gauge covariance of the pair on the algebra.
+- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the two forms of the equation and the gauge covariance of the pair on the algebra.
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html), for the inequivalence of $S$ and $S^{\mathrm{c}}$, the pairing and the mass operator on $\Delta$; the regular module, its minimal left ideals and the carrier.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors and the mass selection rule in the physics corpus.
 - [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html), for the comparison with the matrix case.

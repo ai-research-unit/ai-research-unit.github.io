@@ -16,7 +16,7 @@ The corpus records the programme and does not endorse it. Its value here lies in
 
 The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The units, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $F$, the spinor $\psi$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
 
-The source writes its whole calculus with one letter, $\partial$. It is a cell operator: the four frame cells contracted with the four derivatives. The pieces are in the conventions; the assembled operator is not; and the name usually given to it is already taken. Why a cell operator and not a gradient is the subject of *The Gradient, the D'Alembertian and the Cell Operator*; the short answer is that a first-order operator with a scalar square needs four pairwise anticommuting generators, and the algebra contains no such four. An element squaring to a scalar is a scalar or a pure vector, a pure vector has three components, and four mutually anticommuting elements would need four mutually orthogonal directions in a three-dimensional space. The cells live in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of dimension sixteen, where the four exist. So the letter is a cell contraction, and the light cone has nothing to do with the choice: the gradient annihilates the same null plane waves, and the metric is the algebra's single Euclidean form $(1,1,1,1)$, made Lorentzian in the material display by $i^2=-1$ in $Q_t=ict'$.
+The source writes its whole calculus with one letter, $\partial$. It is a first-order operator built from four frame generators, one per coordinate, and the four terms are written out here in full, because the single letter states none of them. The pieces are in the conventions; the assembled operator is not; and the name usually given to it is already taken. Why a cell operator and not a gradient is the subject of *The Gradient, the D'Alembertian and the Cell Operator*; the short answer is that a first-order operator with a scalar square needs four pairwise anticommuting generators, and the algebra contains no such four. An element squaring to a scalar is a scalar or a pure vector, a pure vector has three components, and four mutually anticommuting elements would need four mutually orthogonal directions in a three-dimensional space. The cells live in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of dimension sixteen, where the four exist. So the letter is a cell contraction, and the light cone has nothing to do with the choice: the gradient annihilates the same null plane waves, and the metric is the algebra's single Euclidean form $(1,1,1,1)$, made Lorentzian in the material display by $i^2=-1$ in $Q_t=ict'$.
 
 **What the conventions hold, and what they do not.** The four cells are corpus objects. *Matrix Representations Conventions* introduces $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ as the replacement for matrices, one left and one right multiplication per unit, and their signs follow from that definition alone: $iR_{\vec e_x}$ squares to $+1$, each $iL_{\vec e_k}R_{\vec e_y}$ squares to $-1$, and any two distinct cells anticommute. The operator made by contracting those four cells with the four derivatives is not in the conventions. The article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* builds it and calls it $\mathbb{D}$.
 
@@ -31,10 +31,16 @@ and describes it there as one-sided, with no matrix generator. *Product and Form
 **The operator.** With $x_0=ct'$,
 
 $$
-\partial=i\left(\frac{1}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k}\right),
+\partial=
+\begin{aligned}
+&\frac{i}{c}R_{\vec e_x}\frac{\partial}{\partial t'}
+-iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial q_x}\\[2pt]
+{}-{}&iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial q_y}
+-iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial q_z},
+\end{aligned}
 $$
 
-and the bracket is the Bhabha cell contraction with the sign of its time term reversed. That bracket squares to $+\Box$; the $i$ in front then gives
+and the four terms are read one by one, not as a sum over a letter. The first is the time term with the sign of the Bhabha contraction reversed; the other three are that contraction's spatial terms, each carrying its own minus. Written without the $i$, the four are $R_{\vec e_x}\partial_{x_0}-L_{\vec e_x}R_{\vec e_y}\partial_{x_1}-L_{\vec e_y}R_{\vec e_y}\partial_{x_2}-L_{\vec e_z}R_{\vec e_y}\partial_{x_3}$, and that one squares to $+\Box$; the $i$ distributed on the four then gives
 
 $$
 \partial^2=-\Box .

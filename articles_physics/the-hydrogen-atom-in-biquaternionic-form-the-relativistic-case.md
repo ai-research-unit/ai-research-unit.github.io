@@ -332,16 +332,16 @@ $$
 
 in which the small part carries the momentum of the large one. **The small part is not an independent object.** A finite basis makes the two expansions independent by construction, so a basis drawn without attention to the relation violates it, and the violation is not harmless: a basis whose two expansions are unrelated exhibits the **variational collapse** of the Dirac problem — spurious solutions, and a computed spectrum that is not bounded below and does not converge to the correct levels (Stanton and Havriliak 1984; Dyall and Fægri 2007). The remedy is not a numerical device laid on the algebra; it is the relation above, imposed as a condition on the basis.
 
-### The balancing operator
+### The balancing action
 
-Generate the small functions from the large ones by the action that stands in that relation. In the framework's terms that action is the gradient's vector part scaled by $\hbar/2mc$,
+Generate the small functions from the large ones by the action that stands in that relation. In the framework's terms the gradient's vector part, scaled by $\hbar/2mc$, is
 
 $$
 \frac{\hbar}{2mc}\sum_k \vec e_k\,\frac{\partial}{\partial x_k}
 = \frac{i}{2mc}\sum_k p_k\vec e_k ,
 $$
 
-the second form because $\hbar\,\partial/\partial x_k = ip_k$. So the gradient's vector part is $i$ times the momentum's, and the relation above uses the momentum itself: the action is left multiplication by $\vec p/(2mc)$, the right multiplier $\vec e_z$ being what carries the large part into the small one, since $R_{\vec e_z}$ anticommutes with $\beta$ and $L_{\vec p}$ commutes with it. The factor $i$ is the one that carries $\partial_k$ to $p_k/\hbar$; it multiplies every small function alike, so it changes neither the span of the small space nor the condition, and the relation is what fixes the action. Applied to the large functions, the action produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two entries of
+the second form because $\hbar\,\partial/\partial x_k = ip_k$. The relation carries $\vec p$ itself, so the action is that object with the factor $i$ removed: left multiplication by $\vec p/(2mc)$, followed by the right multiplier $\vec e_z$, which is what carries the large part into the small one, since $R_{\vec e_z}$ anticommutes with $\beta$ while $L_{\vec p}$ commutes with it. The constant $i$ is the one that carries $\partial_k$ to $p_k/\hbar$; it multiplies every image alike and changes neither the span of the small space nor the condition, so the relation is what fixes the action and the other form differs from it by that convention alone. Applied to the large functions, the action produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two entries of
 
 $$
 \frac{1}{2mc}\,\vec p\,f_\mu\,\vec e_z .
@@ -359,7 +359,7 @@ $$
 D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A ,
 $$
 
-and the replacement is not optional for the basis. Write
+and the replacement is not optional for the basis. The sign is the corpus's, which the minimal-coupling article records as the opposite of the standard $\partial_\mu-iϙA_\mu/\hbar$; the kinetic momentum written $\vec\pi=\vec p-ϙ\vec A$ above is in the standard convention, so the two are one coupling with the opposite sign of $ϙ$, and every statement below carries $\vec A=0$, where no sign can differ. Write
 
 $$
 \mathrm{Vect}(D) = \mathrm{Vect}\!\left(\tilde\nabla\right)+\frac{iϙ}{\hbar}\,\mathrm{Vect}\!\left(\tilde A\right)
@@ -577,9 +577,9 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$ | Covariant derivative (minimal-coupling article) |
 | $\bar D = \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$ | $\natural$-image of the covariant derivative; operator of the second chiral member |
 | $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z}^{\mathrm{axf}})\tilde\Psi$ | Axial current; $G_\mu$ the four cell generators, the vector current omitting the chirality cell |
-| $\tilde\Psi_{\mathrm{lar}}$, $\tilde\Psi_{\mathrm{sml}}$ | Large and small parts of the field in the frame where $\beta$ acts diagonally (companion Pauli exercise; not the chiral pair) |
+| $\tilde\Psi_{\mathrm{lar}}$, $\tilde\Psi_{\mathrm{sml}}$ | Large and small parts of the field: the eigenspaces of $\beta$ for $+1$ and $-1$ (companion Pauli exercise; not the chiral pair) |
 | $\{f_\mu\}$ | Large-part functions of the finite basis; the small-part functions are their image under the balancing action |
-| $\tilde Q\mapsto\frac{i}{2mc}\vec p\,\tilde Q\,\vec e_z$ | Balancing action; the image of the large basis is the small basis (kinetic balance) |
+| $\tilde Q\mapsto\frac{1}{2mc}\vec p\,\tilde Q\,\vec e_z$ | Balancing action; the image of the large basis is the small basis (kinetic balance) |
 | $\mathrm{Vect}(D)$ | Vector part of the covariant derivative; balancing operator with a field present (magnetic balance) |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$, $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$ | Central phase and connection transformation (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*); the phase a basis function carries |
 
