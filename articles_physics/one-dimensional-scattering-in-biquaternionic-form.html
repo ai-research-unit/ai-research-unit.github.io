@@ -88,16 +88,16 @@ H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_t(x)\,e_t,
 $$</p>
 <p>with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation</p>
 <p>$$
--\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2}(x) + V(x)\phi(x) = E\,\phi(x)
+-\frac{\hbar^2}{2m}\frac{d^2\chi^{\mathrm{scl}}}{dx^2}(x) + V(x)\chi^{\mathrm{scl}}(x) = E\,\chi^{\mathrm{scl}}(x)
 $$</p>
-<p>for the scalar envelope $\phi$, and every solution has the form $\psi = \phi\,\chi$ with $\chi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.</p>
+<p>for the scalar envelope $\chi^{\mathrm{scl}}$, and every solution has the form $\psi = \chi^{\mathrm{scl}}\,\chi$ with $\chi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.</p>
 <p>Away from the points where $V$ jumps, the potential is constant on each interval, and the solutions are exponentials. Writing $V = V_j$ and</p>
 <p>$$
 k_j = \frac{\sqrt{2m(E - V_j)}}{\hbar},
 $$</p>
 <p>with the convention that $k_j$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$), the general solution on the interval $j$ is</p>
 <p>$$
-\phi_j(x) = A_j\,\exp(\,ik_j x) + B_j\,\exp(-ik_j x).
+\chi^{\mathrm{scl}}_j(x) = A_j\,\exp(\,ik_j x) + B_j\,\exp(-ik_j x).
 $$</p>
 <p>A potential that is piecewise constant is therefore solved by matching the coefficients across each jump, and the whole problem is a linear algebra problem for the coefficient vectors $(A_j,B_j)$.</p>
 <h3 id="the-flux-and-the-continuity-equation">The flux and the continuity equation</h3>
@@ -105,29 +105,29 @@ $$</p>
 <p>$$
 J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\psi^\dagger \frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger \psi\right),
 $$</p>
-<p>For a factorised field $\psi = \phi\,\chi$ with $\mathrm{Tr}(\chi^\dagger\chi)=1$ this reduces to the familiar scalar expression</p>
+<p>For a factorised field $\psi = \chi^{\mathrm{scl}}\,\chi$ with $\mathrm{Tr}(\chi^\dagger\chi)=1$ this reduces to the familiar scalar expression</p>
 <p>$$
-J = \frac{\hbar}{2mi}\left(\phi^*\frac{d\phi}{dx} - \left(\frac{d\phi}{dx}\right)^*\phi\right)
-= \frac{\hbar}{m}\,\mathrm{Im}\!\left(\phi^*\frac{d\phi}{dx}\right).
+J = \frac{\hbar}{2mi}\left({\chi^{\mathrm{scl}}}^*\frac{d\chi^{\mathrm{scl}}}{dx} - \left(\frac{d\chi^{\mathrm{scl}}}{dx}\right)^*\chi^{\mathrm{scl}}\right)
+= \frac{\hbar}{m}\,\mathrm{Im}\!\left({\chi^{\mathrm{scl}}}^*\frac{d\chi^{\mathrm{scl}}}{dx}\right).
 $$</p>
 <p>For a superposition of a right- and a left-moving exponential,</p>
 <p>$$
-\phi(x) = A\,\exp(\,ikx) + B\,\exp(-ikx),
+\chi^{\mathrm{scl}}(x) = A\,\exp(\,ikx) + B\,\exp(-ikx),
 $$</p>
 <p>the current is constant despite the interference between the two terms. One computes</p>
 <p>$$
-\phi^*\frac{d\phi}{dx} = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,\exp(-2ikx) + AB^*\,\exp(2ikx)\right),
+{\chi^{\mathrm{scl}}}^*\frac{d\chi^{\mathrm{scl}}}{dx} = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,\exp(-2ikx) + AB^*\,\exp(2ikx)\right),
 $$</p>
-<p>and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}(\phi^*\frac{d\phi}{dx})$:</p>
+<p>and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}({\chi^{\mathrm{scl}}}^*\frac{d\chi^{\mathrm{scl}}}{dx})$:</p>
 <p>$$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$</p>
-<p>The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\psi^\dagger$ with $\frac{d\psi}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.</p>
+<p>The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\psi^\dagger$ with $\frac{d\psi}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\chi^{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.</p>
 <h2 id="the-scattering-problem">The Scattering Problem</h2>
 <h3 id="amplitudes-and-the-scattering-matrix">Amplitudes and the scattering matrix</h3>
 <p>Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E = \hbar^2k^2/2m > 0$ has the asymptotic form</p>
 <p>$$
-\phi(x) \longrightarrow
+\chi^{\mathrm{scl}}(x) \longrightarrow
 \begin{cases}
 A\,\exp(\,ikx) + B\,\exp(-ikx), & x\to-\infty,\\[4pt]
 C\,\exp(\,ikx) + D\,\exp(-ikx), & x\to+\infty.
@@ -173,7 +173,7 @@ $$</p>
 <p>Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a <strong>$*$-unitary element</strong>, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U^{\mathrm{lor}}$, the unit-norm element with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.</p>
 <h2 id="exactly-solvable-potentials">Exactly Solvable Potentials</h2>
 <h3 id="the-step">The step</h3>
-<p>Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\partial\phi/\partial x$ at the origin, with the ansatz $\phi = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\phi = t\exp(ik_2x)$ on the right, gives</p>
+<p>Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\chi^{\mathrm{scl}}$ and $\partial\chi^{\mathrm{scl}}/\partial x$ at the origin, with the ansatz $\chi^{\mathrm{scl}} = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\chi^{\mathrm{scl}} = t\exp(ik_2x)$ on the right, gives</p>
 <p>$$
 1 + r = t,
 \qquad
@@ -195,7 +195,7 @@ R + T = 1\;}.
 $$</p>
 <p>The coefficients are those of a sudden change of impedance; the vanishing of $T$ when $k_2\to0$ is the statement that the wave cannot enter a classically forbidden region at threshold. For $E<V_0$ there is no transmitted wave vector; $r$ has unit modulus, $R=1$, and the solution on the right is the evanescent wave</p>
 <p>$$
-\phi(x) = t\,\exp(-\kappa x),
+\chi^{\mathrm{scl}}(x) = t\,\exp(-\kappa x),
 \qquad
 \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar},
 $$</p>
@@ -203,7 +203,7 @@ $$</p>
 <h3 id="the-rectangular-barrier">The rectangular barrier</h3>
 <p>Let $V(x)=V_0$ on $0<x<a$ and zero elsewhere, with $E<V_0$. The solution is oscillatory outside and evanescent inside:</p>
 <p>$$
-\phi(x) =
+\chi^{\mathrm{scl}}(x) =
 \begin{cases}
 \exp(ikx)+r\exp(-ikx), & x<0,\\
 A\,\exp(\kappa x)+B\,\exp(-\kappa x), & 0<x<a,\\
@@ -212,7 +212,7 @@ t\,\exp(ikx), & x>a,
 \qquad
 \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar}.
 $$</p>
-<p>Matching $\phi$ and $d\phi/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,</p>
+<p>Matching $\chi^{\mathrm{scl}}$ and $d\chi^{\mathrm{scl}}/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,</p>
 <p>$$
 t = \frac{4ik\kappa\,\exp(-ika)}{(k+i\kappa)^2 \exp(-\kappa a) - (k-i\kappa)^2 \exp(+\kappa a)},
 $$</p>
@@ -233,13 +233,13 @@ T \approx \frac{16\,E\,(V_0-E)}{V_0^2}\;\exp(-2\kappa a),
 $$</p>
 <p>whose exponent $2\kappa a = \frac{2}{\hbar}\int_0^a\sqrt{2m(V_0-E)}\,dx$ is the leading WKB tunnelling factor and whose prefactor is the standard connection amplitude. The formula and its asymptote were verified numerically: the transfer-matrix matching and the closed expression for $T$ agree to a relative error below $2\times10^{-14}$ at the sampled energies, $R+T=1$ holds to $10^{-12}$, the $E\to V_0$ limit of the matching reproduces the removable value $T = [1+mV_0a^2/2\hbar^2]^{-1}$, and the thick-barrier ratio (exact over asymptotic) at $E=0.4V_0$, $\kappa a = 6$ is $0.999989$. The checks used a stationary state that is itself a superposition of an incoming and a reflected wave, not a single plane wave, and were performed in explicit complex arithmetic with $m=\hbar=1$.</p>
 <h3 id="the-delta-potential">The delta potential</h3>
-<p>Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\phi$ and a jump in the derivative,</p>
+<p>Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\chi^{\mathrm{scl}}$ and a jump in the derivative,</p>
 <p>$$
-\phi(0^+) = \phi(0^-),
+\chi^{\mathrm{scl}}(0^+) = \chi^{\mathrm{scl}}(0^-),
 \qquad
-\frac{d\phi}{dx}(0^+)-\frac{d\phi}{dx}(0^-) = \frac{2m\lambda}{\hbar^2}\,\phi(0),
+\frac{d\chi^{\mathrm{scl}}}{dx}(0^+)-\frac{d\chi^{\mathrm{scl}}}{dx}(0^-) = \frac{2m\lambda}{\hbar^2}\,\chi^{\mathrm{scl}}(0),
 $$</p>
-<p>the second obtained by integrating the equation across the origin. For $E>0$, with $\phi = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\phi = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2m\lambda}{\hbar^2}t$, so with the dimensionless coupling</p>
+<p>the second obtained by integrating the equation across the origin. For $E>0$, with $\chi^{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\chi^{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2m\lambda}{\hbar^2}t$, so with the dimensionless coupling</p>
 <p>$$
 \beta = \frac{m\lambda}{\hbar^2 k},
 $$</p>
@@ -269,7 +269,7 @@ $$</p>
 <p>The formulas for the barrier and the well are the same expression continued in the sign of $V_0$; the barrier's evanescent region and the well's resonant region are two interpretations of one matching problem. Their common structure — a single pair of matching conditions at each boundary, and a flux identity — is what makes the transfer matrix of the next section useful.</p>
 <h2 id="the-transfer-matrix-and-composite-potentials">The Transfer Matrix and Composite Potentials</h2>
 <h3 id="the-transfer-matrix">The transfer matrix</h3>
-<p>It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_1$ to $k_2$ at the origin, continuity of $\phi$ and $d\phi/dx$ gives</p>
+<p>It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_1$ to $k_2$ at the origin, continuity of $\chi^{\mathrm{scl}}$ and $d\chi^{\mathrm{scl}}/dx$ gives</p>
 <p>$$
 \begin{pmatrix} A \\ B \end{pmatrix}
 =
@@ -284,7 +284,7 @@ $$</p>
 <p>A potential built from $n$ piecewise-constant regions therefore has a <strong>transfer matrix</strong> $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself $*$-unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is $*$-unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.</p>
 <h3 id="composition-and-a-worked-identity">Composition and a worked identity</h3>
 <p>The value of the transfer matrix is that a composite potential is a matrix product: the transfer matrix of a sequence of regions is the ordered product of the step matrices (inverted, as above) and the propagation matrices, taken from left to right. This is why a potential built from many weak barriers can be solved by multiplying two-by-two matrices rather than by matching many boundary conditions at once.</p>
-<p>A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A_2\\B_2\end{pmatrix}$, is obtained from the continuity and jump conditions and is</p>
+<p>A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\chi^{\mathrm{scl}}=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A_2\\B_2\end{pmatrix}$, is obtained from the continuity and jump conditions and is</p>
 <p>$$
 M_\delta(\beta) =
 \begin{pmatrix}
@@ -319,9 +319,9 @@ $$</p>
 <h3 id="bound-states-and-the-discrete-spectrum">Bound states and the discrete spectrum</h3>
 <p>The attractive delta well and the finite square well possess normalisable bound states at $E<0$. In the biquaternion form these are fields in the state module with an exponential envelope,</p>
 <p>$$
-\psi(x) = \phi_b(x)\,\chi,
+\psi(x) = \chi^{\mathrm{scl}}_b(x)\,\chi,
 \qquad
-\phi_b \in L^2(\mathbb{R}),
+\chi^{\mathrm{scl}}_b \in L^2(\mathbb{R}),
 $$</p>
 <p>and they are the discrete part of the spectrum of the central Hamiltonian. They are not on the zero divisor cone of the algebra — that cone is a constraint on the algebra's elements, not on the energy — and they are not scattering states; the distinction between the discrete and continuous spectrum is the analytic distinction between the poles of the $S$-matrix in the complex $k$-plane and its cut. The biquaternion framework inherits this distinction unchanged.</p>
 <p>The one-dimensional bound-state count obeys Levinson's theorem, which in one dimension carries a half-unit offset. With $\delta = \arg t$ the transmission phase, the threshold and asymptotic values differ by</p>
@@ -357,7 +357,7 @@ $$</p>
 <p><strong>3. Does the zero divisor cone constrain bound states?</strong> Bound-state energies are negative and the corresponding wave vector is imaginary; whether the material-sector four-vector of a bound state has a distinguished biquaternion-norm sign in the 1D reduction is not explored here.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the one-dimensional reformulation distinguishes it from scalar Schrödinger scattering.</p>
 <h2 id="summary">Summary</h2>
-<p>The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\psi = E\psi$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\psi = \phi\chi$ with $\chi$ a constant module element, and no potential treated here acts on the module.</p>
+<p>The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\psi = E\psi$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\psi = \chi^{\mathrm{scl}}\chi$ with $\chi$ a constant module element, and no potential treated here acts on the module.</p>
 <p>The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.</p>
 <p>The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.</p>
 <p>The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.</p>
@@ -399,7 +399,7 @@ $$</p>
 <td>Central Hamiltonian</td>
 </tr>
 <tr>
-<td>$\psi = \phi\,\chi$</td>
+<td>$\psi = \chi^{\mathrm{scl}}\,\chi$</td>
 <td>Factorised stationary state</td>
 </tr>
 <tr>
@@ -419,7 +419,7 @@ $$</p>
 <td>Current for a two-exponential superposition</td>
 </tr>
 <tr>
-<td>$\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$</td>
+<td>$\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\chi^{\mathrm{scl}}|^2$</td>
 <td>Density</td>
 </tr>
 <tr>

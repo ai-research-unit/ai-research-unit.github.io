@@ -71,13 +71,13 @@
         <h1 id="the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre"><strong>The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries a distinguished two-dimensional real subspace that commutes with everything: the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, the fixed-point set of quaternion conjugation. It is the algebra's rotationally invariant subspace, and it is the only place a field with a single Lorentz-scalar component can live. The companion article <em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em> established that result representation-theoretically: the state module is the two-dimensional defining module of the algebra and carries spin $\tfrac12$, so a trivial-representation field has no module to occupy and must be valued in the centre instead.</p>
-<p>This article develops the <strong>classical dynamics</strong> of that field. The field is $\tilde{\Phi}=\phi e_t$, a single complex (or, in the real case, real) scalar function of the event; because it is valued in the centre, it commutes with the biquaternionic gradient, with every rotation rotor and with every element of the algebra, and its dynamics is the classical field theory of one scalar degree of freedom. No quantization is used anywhere below: the field equation is a wave equation, the source is a prescribed classical density, and the objects computed are the classical field, its energy and its force on a test source.</p>
+<p>This article develops the <strong>classical dynamics</strong> of that field. The field is $\tilde{\Phi}=\chi e_t$, a single complex (or, in the real case, real) scalar function of the event; because it is valued in the centre, it commutes with the biquaternionic gradient, with every rotation rotor and with every element of the algebra, and its dynamics is the classical field theory of one scalar degree of freedom. No quantization is used anywhere below: the field equation is a wave equation, the source is a prescribed classical density, and the objects computed are the classical field, its energy and its force on a test source.</p>
 <p>The article has one configuration as its destination. A <strong>static central source</strong> produces a static, spherically symmetric field, and the interaction of a test source with that field is the central-force problem of the sibling article <em>The Relativistic Central Force Problem in Biquaternionic Form</em>. The reduction is exact, and it has a clean algebraic reason: because the field takes its values in the rotationally invariant subspace, the potential it produces is a <strong>central scalar</strong> in the sense of the companion article <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>, so the force on a test source is a real vector parallel to the position, the angular momentum is conserved, and the orbit is the one solved relativistically in the sibling article. This article therefore supplies the field-theoretic origin of the $1/r$ potential that the central-force articles treat as given.</p>
 <p>Four results are established.</p>
 <ul>
 <li><strong>The field equation in the centre.</strong> The classical action
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi\right]d^4x
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi-\tfrac12\mu^2\chi^2+g\rho\,\chi\right]d^4x
 $$
 has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\mu^2)\tilde{\Phi}=0$, with dispersion $\omega^2=c^2k^2+c^2\mu^2$ and range $\mu^{-1}$.</li>
 <li><strong>The static central solution.</strong> A point source of strength $Ϙ$ gives the Yukawa field $\tilde{\Phi}=gQ\,\exp(-\mu r)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.</li>
@@ -100,29 +100,29 @@ $$</p>
 <h3 id="the-field-and-its-components">The Field and Its Components</h3>
 <p>The central scalar field is</p>
 <p>$$
-\tilde{\Phi}(x)=\phi(x)\,e_t, \qquad \phi:\mathbb{R}^{1,3}\to\mathbb{C},
+\tilde{\Phi}(x)=\chi(x)\,e_t, \qquad \chi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$</p>
 <p>a single complex-valued function of the event. Its real and imaginary parts are</p>
 <p>$$
-\tilde{\Phi}=\phi_1 e_t+i\phi_2 e_t, \qquad \phi_1,\phi_2\in\mathbb{R},
+\tilde{\Phi}=\chi_1 e_t+i\chi_2 e_t, \qquad \chi_1,\chi_2\in\mathbb{R},
 $$</p>
-<p>so the real part occupies the scalar direction of the informational sector and the imaginary part the scalar direction of the material sector. This is the algebraic reason the second-order scalar structure does not organise itself by the material/informational split: the sector decomposition of a complex scalar is its decomposition into real and imaginary parts, not into particle and antiparticle or state and operator, as discussed in the companion article on the scalar field in the centre. For most of this article the field is taken <strong>real</strong>, $\phi_2=0$; the complex case is treated where the central phase matters, in the section on the conserved current.</p>
+<p>so the real part occupies the scalar direction of the informational sector and the imaginary part the scalar direction of the material sector. This is the algebraic reason the second-order scalar structure does not organise itself by the material/informational split: the sector decomposition of a complex scalar is its decomposition into real and imaginary parts, not into particle and antiparticle or state and operator, as discussed in the companion article on the scalar field in the centre. For most of this article the field is taken <strong>real</strong>, $\chi_2=0$; the complex case is treated where the central phase matters, in the section on the conserved current.</p>
 <p>A field in the centre is a Lorentz scalar in two senses. It is invariant under the rotor conjugation $\tilde{\Phi}\mapsto\tilde{U}\tilde{\Phi}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{\natural}=e_t$, because $\tilde{\Phi}$ commutes with $\tilde{U}$ and $\tilde{U}\tilde{U}^{\natural}=e_t$; and it is invariant under spatial rotations, which are the unit real quaternions acting the same way, for the same reason. The scalar nature of the field is thus not an assumption about its transformation law but a consequence of its living in the centre.</p>
 <h2 id="the-classical-action-and-the-field-equation">The Classical Action and the Field Equation</h2>
 <h3 id="the-action">The Action</h3>
 <p>The classical action of a real central scalar field coupled to a prescribed source density $\rho$ is</p>
 <p>$$
 S=\int\mathcal{L}\,d^4x, \qquad
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi,
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi-\tfrac12\mu^2\chi^2+g\rho\,\chi,
 \qquad d^4x=c\,dt'\,dx\,dy\,dz .
 $$</p>
 <p>The first two terms are the standard kinetic and mass terms of a relativistic scalar field, with the sign that makes the energy positive; the third is the source coupling, whose sign convention is fixed below by the requirement that like sources attract. The action is a real central scalar, and the field is a single real function, so the variation is elementary.</p>
 <h3 id="the-field-equation">The Field Equation</h3>
-<p>The Euler–Lagrange equation for the single component $\phi$ is</p>
+<p>The Euler–Lagrange equation for the single component $\chi$ is</p>
 <p>$$
-\frac{\partial\mathcal{L}}{\partial\phi}-\partial/\partial Q_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\phi)}=0
+\frac{\partial\mathcal{L}}{\partial\chi}-\partial/\partial Q_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\chi)}=0
 \quad\Longrightarrow\quad
--\mu^2\phi+g\rho+\Box\phi=0 ,
+-\mu^2\chi+g\rho+\Box\chi=0 ,
 $$</p>
 <p>that is,</p>
 <p>$$
@@ -148,7 +148,7 @@ $$</p>
 <h3 id="the-range-of-the-field">The Range of the Field</h3>
 <p>A static field obeys</p>
 <p>$$
-\left(\Delta-\mu^2\right)\phi=-g\rho .
+\left(\Delta-\mu^2\right)\chi=-g\rho .
 $$</p>
 <p>The operator $\Delta-\mu^2$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:</p>
 <p>$$
@@ -160,7 +160,7 @@ $$</p>
 <h3 id="the-point-source">The Point Source</h3>
 <p>Let the source be a point of strength $Ϙ$ at the origin, $\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=Ϙ\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The static field is</p>
 <p>$$
-\boxed{\ \phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=gQ\,G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
+\boxed{\ \chi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=gQ\,G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
 \qquad\text{that is}\qquad
 \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t ,
 $$</p>
@@ -184,27 +184,27 @@ $$</p>
 <h3 id="the-energy-density">The Energy Density</h3>
 <p>The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article <em>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</em>. Its energy density is</p>
 <p>$$
-T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}+\tfrac12(\nabla\chi)^2+\tfrac12\mu^2\chi^2>0 ,
 $$</p>
 <p>positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a <strong>static</strong> field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.</p>
 <h3 id="the-energy-of-the-static-field">The Energy of the Static Field</h3>
-<p>The energy of the static solution is computed from the energy density. For the massless field $\phi=A/r$ with the useful abbreviation</p>
+<p>The energy of the static solution is computed from the energy density. For the massless field $\chi=A/r$ with the useful abbreviation</p>
 <p>$$
 A=\frac{gQ}{4\pi},
 $$</p>
 <p>the gradient energy outside a sphere of radius $a$ is</p>
 <p>$$
-E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\phi)^2\,d^3x
+E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\chi)^2\,d^3x
 =2\pi A^2\int_a^{\infty}\frac{dr}{r^2}
 =\frac{2\pi A^2}{a}=\frac{g^2Ϙ^2}{8\pi a},
 $$</p>
-<p>using $\nabla\phi=-A\vec u_r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is <strong>positive</strong>, as it must be; and it <strong>diverges as $a\to0$</strong>, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.</p>
+<p>using $\nabla\chi=-A\vec u_r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is <strong>positive</strong>, as it must be; and it <strong>diverges as $a\to0$</strong>, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.</p>
 <p>The divergence is the classical self-energy of the point-source idealization and not a property of the framework. A source of finite extent gives a finite field energy, and the self-energy is one of the standard reasons a point particle cannot be treated as a structureless classical object in a field theory. In the present article the source is prescribed, so the divergence does not affect the dynamics of the test source in the field, which is finite; it is recorded because it bounds the sense in which the static solution is physical.</p>
 <h2 id="the-test-particle-and-the-reduction-to-the-central-force-problem">The Test Particle and the Reduction to the Central-Force Problem</h2>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
-<p>Let a test source of coupling $g_{\mathrm t}$ and unit strength be placed in the field of the point source. The interaction Lagrangian of the test source is $g_{\mathrm t}\rho_2\,\phi$ with $\rho_2$ its density, so its potential energy in the field is</p>
+<p>Let a test source of coupling $g_{\mathrm t}$ and unit strength be placed in the field of the point source. The interaction Lagrangian of the test source is $g_{\mathrm t}\rho_2\,\chi$ with $\rho_2$ its density, so its potential energy in the field is</p>
 <p>$$
-\boxed{\ E(r)=-g_{\mathrm t}\,\phi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r}\ },
+\boxed{\ E(r)=-g_{\mathrm t}\,\chi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r}\ },
 \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0 ,
 $$</p>
 <p>the sign following from the Hamiltonian sign $H_{\text{int}}=-L_{\text{int}}$ and the convention that like sources attract. The interaction energy is negative and increases to zero at infinity: the configuration is bound, and the massless limit is the inverse-square attraction</p>
@@ -214,11 +214,11 @@ E(r)=-\frac{\kappa}{r}, \qquad
 $$</p>
 <p>which is exactly the inverse-square force of the central-force articles, with $\kappa>0$ for attraction.</p>
 <h3 id="why-the-force-is-central">Why the Force Is Central</h3>
-<p>The force is central for an algebraic reason. The field $\tilde{\Phi}=\phi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:</p>
+<p>The force is central for an algebraic reason. The field $\tilde{\Phi}=\chi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:</p>
 <p>$$
-\vec F(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=-\nabla E(r)=g_{\mathrm t}\,\nabla\phi(r)=g_{\mathrm t}\,\frac{d\phi}{dr}\,\vec u_r ,
+\vec F(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=-\nabla E(r)=g_{\mathrm t}\,\nabla\chi(r)=g_{\mathrm t}\,\frac{d\chi}{dr}\,\vec u_r ,
 $$</p>
-<p>a real vector parallel to the position, pointing inward because $\frac{d\phi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a <strong>central scalar</strong>, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.</p>
+<p>a real vector parallel to the position, pointing inward because $\frac{d\chi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a <strong>central scalar</strong>, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.</p>
 <h3 id="which-central-force-results-apply">Which Central-Force Results Apply</h3>
 <p>The reduction is exact, and it hands the problem to the two sibling articles.</p>
 <ul>
@@ -236,11 +236,11 @@ $$</p>
 <h3 id="the-conserved-current">The Conserved Current</h3>
 <p>The complex Lagrangian</p>
 <p>$$
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi^*\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2|\phi|^2
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi^*\,\partial/\partial Q_\mu\,\chi-\tfrac12\mu^2|\chi|^2
 $$</p>
 <p>is invariant under the central phase, and Noether's theorem gives the conserved current</p>
 <p>$$
-\tilde J=\frac{i}{2}\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
+\tilde J=\frac{i}{2}\left(\chi^*\tilde\nabla\chi-\chi\,\tilde\nabla\chi^*\right),
 \qquad
 \langle\tilde\nabla,\tilde J\rangle_{\natural}=0\ \text{on shell},
 $$</p>
@@ -290,11 +290,11 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The central scalar field in the biquaternion framework is a field valued in the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$,</p>
 <p>$$
-\tilde{\Phi}(x)=\phi(x)e_t ,
+\tilde{\Phi}(x)=\chi(x)e_t ,
 $$</p>
 <p>a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action</p>
 <p>$$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi\right]d^4x,
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi-\tfrac12\mu^2\chi^2+g\rho\,\chi\right]d^4x,
 \qquad \mu=\frac{mc}{\hbar},
 $$</p>
 <p>has the field equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k^2+c^2\mu^2$ and has range $\mu^{-1}$.</p>
@@ -304,13 +304,13 @@ $$</p>
 \qquad\text{whose massless limit is}\qquad
 \tilde{\Phi}=\frac{gQ}{4\pi r}\,e_t .
 $$</p>
-<p>The static field's energy density is $T_{tt}=\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
+<p>The static field's energy density is $T_{tt}=\tfrac12(\nabla\chi)^2+\tfrac12\mu^2\chi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
 <p>A test source of coupling $g_{\mathrm t}$ has the central potential energy</p>
 <p>$$
 E(r)=-\frac{\kappa \exp(-\mu r)}{r}, \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0,
 $$</p>
 <p>whose massless limit $E=-\kappa/r$ is exactly the inverse-square central potential of the sibling article <em>The Relativistic Central Force Problem in Biquaternionic Form</em>. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.</p>
-<p>The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$, with conserved current $\tilde J=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.</p>
+<p>The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$, with conserved current $\tilde J=\tfrac{i}{2}(\chi^*\tilde\nabla\chi-\chi\,\tilde\nabla\chi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -337,12 +337,12 @@ $$</p>
 <td>The centre's one real direction in each sector</td>
 </tr>
 <tr>
-<td>$\tilde{\Phi}=\phi e_t$</td>
-<td>Central scalar field; $\phi$ a complex scalar function</td>
+<td>$\tilde{\Phi}=\chi e_t$</td>
+<td>Central scalar field; $\chi$ a complex scalar function</td>
 </tr>
 <tr>
-<td>$\phi_1,\phi_2$</td>
-<td>Real and imaginary parts of $\phi$</td>
+<td>$\chi_1,\chi_2$</td>
+<td>Real and imaginary parts of $\chi$</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$</td>
@@ -353,7 +353,7 @@ $$</p>
 <td>Mass parameter, the inverse range; classically only $\mu^{-1}$ matters</td>
 </tr>
 <tr>
-<td>$\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2\phi^2+g\rho\phi$</td>
+<td>$\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi-\tfrac12\mu^2\chi^2+g\rho\chi$</td>
 <td>Real scalar Lagrangian</td>
 </tr>
 <tr>
@@ -381,7 +381,7 @@ $$</p>
 <td>Source velocity over $c$, retarded distance, retarded time</td>
 </tr>
 <tr>
-<td>$T_{tt}=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$</td>
+<td>$T_{tt}=\tfrac12\left(\partial\chi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\chi)^2+\tfrac12\mu^2\chi^2$</td>
 <td>Energy density, positive</td>
 </tr>
 <tr>
@@ -393,11 +393,11 @@ $$</p>
 <td>Central interaction energy; $\kappa>0$ attractive</td>
 </tr>
 <tr>
-<td>$\vec F=-\nabla E=g_{\mathrm t}\,\nabla\phi=g_{\mathrm t}\,(d\phi/dr)\,\vec u_r$</td>
+<td>$\vec F=-\nabla E=g_{\mathrm t}\,\nabla\chi=g_{\mathrm t}\,(d\chi/dr)\,\vec u_r$</td>
 <td>Central force on the test source (inward)</td>
 </tr>
 <tr>
-<td>$\tilde J=\tfrac{i}{2}(\phi^*\tilde\nabla\phi-\phi\tilde\nabla\phi^*)$</td>
+<td>$\tilde J=\tfrac{i}{2}(\chi^*\tilde\nabla\chi-\chi\tilde\nabla\chi^*)$</td>
 <td>Conserved current of the central phase; $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$</td>
 </tr>
 <tr>

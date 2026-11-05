@@ -120,20 +120,20 @@ A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 \Big(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
 +a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k_2),
+\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]=\sigma^{\mathrm{met}}_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k_2),
 $$
-with $\zeta=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
+with $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,a^{\mathrm{fop}\dagger}_r(\vec k)a^{\mathrm{fop}}_r(\vec k),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma^{\mathrm{met}}_r\,\omega_k\,a^{\mathrm{fop}\dagger}_r(\vec k)a^{\mathrm{fop}}_r(\vec k),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.</p>
-<p><strong>Its value.</strong> Reordering the modes produces, per mode, the contribution $\sum_r\zeta_r\,\tfrac12\hbar\omega_k$. Since
+<p><strong>Its value.</strong> Reordering the modes produces, per mode, the contribution $\sum_r\sigma^{\mathrm{met}}_r\,\tfrac12\hbar\omega_k$. Since
 $$
-\boxed{\;\sum_{r=0}^{3}\zeta_r=-1+1+1+1=2\;},
+\boxed{\;\sum_{r=0}^{3}\sigma^{\mathrm{met}}_r=-1+1+1+1=2\;},
 $$
 the zero-point constant of the covariant field is that of <strong>two</strong> transverse modes, $\hbar\omega_k$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\zeta_r\sum_{\text{modes}}\tfrac12\hbar\omega_k
+E_0=\sum_{r=0}^{3}\sigma^{\mathrm{met}}_r\sum_{\text{modes}}\tfrac12\hbar\omega_k
 =2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\hbar c\,\lvert\vec k\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;
 \frac{\hbar c\,\Lambda^{4}}{8\pi^{2}}\,V .
@@ -255,9 +255,9 @@ which the zeta route reproduces from $\zeta(-1)=-\tfrac1{12}$ and the heat-kerne
 $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\Big)=-\frac{\pi^{2}\hbar c}{720\,a^{3}} .
 $$</p>
-<p><strong>From the indefinite metric.</strong> In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, <strong>double</strong> the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.</p>
-<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
-<p>The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.</p>
+<p><strong>From the indefinite metric.</strong> In the covariant mode algebra the four polarisations carry the metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma^{\mathrm{met}}_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, <strong>double</strong> the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.</p>
+<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma^{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
+<p>The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\sigma^{\mathrm{met}}_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.</p>
 <h2 id="the-casimir-force-sign-convention-and-two-verifications">The Casimir Force: Sign Convention and Two Verifications</h2>
 <p><strong>Sign convention.</strong> Let $E(a)$ be the vacuum energy of the bounded region at separation $a$, per unit area. The force per unit area on a plate is
 $$
@@ -315,14 +315,14 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <td>$\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$</td>
 </tr>
 <tr>
-<td>Indefinite metric $\zeta=(-1,+1,+1,+1)$</td>
+<td>Indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$</td>
 <td>Native</td>
 <td>biquaternion norm of $\mathbb{M}_-$</td>
 </tr>
 <tr>
 <td>Factor of two (EM vs Dirichlet scalar)</td>
 <td>Native</td>
-<td>$\sum_r\zeta_r=2$; two transverse polarisations</td>
+<td>$\sum_r\sigma^{\mathrm{met}}_r=2$; two transverse polarisations</td>
 </tr>
 <tr>
 <td>Photon Fock vacuum</td>
@@ -389,7 +389,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H^{*})$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.</p>
 <p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
 <p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
-<p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
+<p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma^{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
 <p>The <strong>force</strong> per unit area, with the convention $F/A=-\partial/\partial a(E/A)$, is
 $$
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
@@ -454,7 +454,7 @@ $$
 <td>Covariant mode operators and polarization vectors</td>
 </tr>
 <tr>
-<td>$\zeta=(-1,+1,+1,+1)$</td>
+<td>$\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$</td>
 <td>Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{M}_-$</td>
 </tr>
 <tr>

@@ -82,9 +82,9 @@ $$</p>
 <h3 id="the-rotor-of-the-frame">The Rotor of the Frame</h3>
 <p>Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family</p>
 <p>$$
-R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
+R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
 $$</p>
-<p>so that after a time $t'$ the frame has turned by the angle $\\theta^{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components</p>
+<p>so that after a time $t'$ the frame has turned by the angle $\theta^{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components</p>
 <p>$$
 \vec a_{\text{rot}}(t') = R^{*}(t')\,\vec a_{\text{in}}\,R(t') .
 $$</p>
@@ -141,7 +141,7 @@ $$</p>
 $$</p>
 <p>Hence</p>
 <p>$$
-z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\\theta^{\mathrm{rat}}) + B\exp(-i\\theta^{\mathrm{rat}})\right),
+z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\theta^{\mathrm{rat}}) + B\exp(-i\theta^{\mathrm{rat}})\right),
 $$</p>
 <p>a fast oscillation of frequency $\omega$ whose <strong>envelope rotates at the rate $-\Omega\sin\theta^{\mathrm{foc}}$</strong>. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$, that is, at the rate $\Omega\sin\theta^{\mathrm{foc}}$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.</p>
 <p>For the retained equations the relation below is in fact an identity: $T$ is an exact period of the fast factor, so the envelope factor is the only thing that survives one period, and the numerical integration of the coupled equations reproduces it to machine precision. Integrating with $\omega_0 = 1$ and a representative $\Omega\sin\theta^{\mathrm{foc}} = 0.457$ — chosen so that the envelope rotation is visible within a single period, and larger relative to the pendulum frequency than the Earth's by a factor of some $3\times10^3$ for a $67$-metre pendulum — the complex amplitude satisfies</p>
@@ -150,7 +150,7 @@ z(t' + T) = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,T)z(t')
 $$</p>
 <p>to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\theta^{\mathrm{foc}}\,T$. Over one sidereal day, $T_{\text{day}} = 2\pi/\Omega$, the accumulated precession is</p>
 <p>$$
-\boxed{\;\Delta\phi = \Omega\sin\theta^{\mathrm{foc}}\cdot\frac{2\pi}{\Omega} = 2\pi\sin\theta^{\mathrm{foc}}\;},
+\boxed{\;\Delta\theta = \Omega\sin\theta^{\mathrm{foc}}\cdot\frac{2\pi}{\Omega} = 2\pi\sin\theta^{\mathrm{foc}}\;},
 $$</p>
 <p>the Foucault angle.</p>
 <h3 id="the-size-of-the-neglected-centrifugal-term">The Size of the Neglected Centrifugal Term</h3>
@@ -227,7 +227,7 @@ $$</p>
 <p><strong>The classical analogy.</strong> For a slowly varying periodic classical system the angle conjugate to an adiabatic invariant accumulates a geometric part, the Hannay angle, in analogy with the quantum Berry phase. The Foucault pendulum is a mechanical realization of an anholonomy: the swing plane is the transported object, the latitude circle is the loop, and the precession is the geometric angle. The general theory of such angles belongs to the generalities of the framework rather than to this article, and the present treatment uses only the elementary spherical holonomy.</p>
 <p><strong>The quantum companion.</strong> The companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em> treats the geometric phase of a quantum state, where the phase is carried by a ray in Hilbert space and the loop is a loop in parameter space. The Foucault angle is not a phase of a state; it is a rotation of a classical frame. What the two share is the structure of a holonomy — a closed loop, a transport, and a net transformation that depends on the geometry of the loop — and the classical case is the one in which the transport is the ordinary parallel transport of a vector on a curved surface, with no state space and no phase factor.</p>
 <h2 id="summary">Summary</h2>
-<p>The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,</p>
+<p>The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,</p>
 <p>$$
 \boxed{\;\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
 \vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]\;}.
@@ -240,7 +240,7 @@ d^2\vec\rho/d{t'}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt',
 $$</p>
 <p>with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$,</p>
 <p>$$
-z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\\theta^{\mathrm{rat}}) + B\exp(-i\\theta^{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}} ,
+z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\theta^{\mathrm{rat}}) + B\exp(-i\theta^{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}} ,
 $$</p>
 <p>giving the Foucault angle $2\pi\sin\theta^{\mathrm{foc}}$ per sidereal day, independent of $\omega_0$, of the mass and of the amplitude.</p>
 <p>The angle is geometric. The local vertical traces a circle of latitude with total geodesic turning</p>
@@ -287,7 +287,7 @@ $$</p>
 <td>Angular speed; rotation axis</td>
 </tr>
 <tr>
-<td>$R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\vec u$</td>
+<td>$R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\vec u$</td>
 <td>Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$</td>
 </tr>
 <tr>
@@ -323,7 +323,7 @@ $$</p>
 <td>Complex horizontal coordinate</td>
 </tr>
 <tr>
-<td>$z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')(A\exp(i\\theta^{\mathrm{rat}})+B\exp(-i\\theta^{\mathrm{rat}}))$</td>
+<td>$z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')(A\exp(i\theta^{\mathrm{rat}})+B\exp(-i\theta^{\mathrm{rat}}))$</td>
 <td>Solution; envelope rotation $-\Omega\sin\theta^{\mathrm{foc}}$</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ $$</p>
 <td>Modified oscillation frequency</td>
 </tr>
 <tr>
-<td>$\Delta\phi = 2\pi\sin\theta^{\mathrm{foc}}$</td>
+<td>$\Delta\theta = 2\pi\sin\theta^{\mathrm{foc}}$</td>
 <td>Foucault angle per sidereal day</td>
 </tr>
 <tr>

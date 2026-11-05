@@ -115,10 +115,10 @@ $$</p>
 M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
 \det M=\alpha\delta-\beta\gamma,\qquad
 \operatorname{tr}M=\alpha+\delta,\qquad
-\chi_M(\zeta)=\zeta^2-(\operatorname{tr}M)\zeta+(\det M).
+\chi_M(\omega)=\omega^2-(\operatorname{tr}M)\omega+(\det M).
 $$</p>
 <p><strong>Proof.</strong> $\det\mathsf{M}_2=N$ and $\operatorname{tr}\mathsf{M}_2=2Q_{1t}$ are the trace-and-determinant proposition of the matrix-element-representation article, applied to the iterate. For a central zero parameter $\mathsf{M}_2(\tilde Q_{1,n})=\mathsf{M}_2(\tilde Q_1)^{2^n}$ and the determinant is multiplicative.</p>
-<p><strong>Theorem (the spectrum and the central parameter).</strong> The spectrum of $\mathsf{M}_2(\tilde Q_{1,n})$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q_1)$, where $q_n$ are the iterates of $\zeta\mapsto\zeta^2+C$ when $\tilde Q_3=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.</p>
+<p><strong>Theorem (the spectrum and the central parameter).</strong> The spectrum of $\mathsf{M}_2(\tilde Q_{1,n})$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q_1)$, where $q_n$ are the iterates of $\omega\mapsto\omega^2+C$ when $\tilde Q_3=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.</p>
 <p><strong>Proof.</strong> The functional calculus of the polynomial $p_n$ on a two-by-two matrix and the elementary symmetric functions of the spectrum. This is the eigenvalue reduction of <em>The Biquaternion Quadratic Map and Its Julia Sets</em>, here read as a statement of the model.</p>
 <h2 id="the-two-variable-interpretation">The Two-Variable Interpretation</h2>
 <p>The model turns the biquaternion dynamics into the iteration of a polynomial map of $\mathbb{C}^4$ with the special form above, and the general theory of such maps is the pluripotential and the Fatou theory of several variables.</p>
@@ -135,7 +135,7 @@ Q_{1y}&Q_{1z}&Q_{1t}&-Q_{1x}\\
 Q_{1z}&-Q_{1y}&Q_{1x}&Q_{1t}
 \end{pmatrix},
 $$</p>
-<p>of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\zeta-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.</p>
+<p>of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\omega-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.</p>
 <p><strong>Proof.</strong> Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (<em>The Category of Modules</em>). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.</p>
 <p><strong>Corollary (where the operator enters the dynamics).</strong> The derivative of the quadratic family is the sum of two operators on the space and not an element,</p>
 <p>$$

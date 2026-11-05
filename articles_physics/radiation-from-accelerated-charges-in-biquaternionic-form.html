@@ -169,10 +169,10 @@ $$</p>
 <p>$$
 \tilde{A} = i\,a'_t\,e_t + \vec A,
 \qquad
-\phi = \frac{ϙ}{4\pi\epsilon D}, \qquad
-\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\phi .
+\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D}, \qquad
+\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
 $$</p>
-<p>The relation $\vec A = (\vec v/c^2)\phi$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{M}_-$</strong>, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
+<p>The relation $\vec A = (\vec v/c^2)\chi^{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{M}_-$</strong>, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
 <h2 id="the-spinor-square-root-and-the-invariant-retarded-distance">The Spinor Square Root and the Invariant Retarded Distance</h2>
 <p>Every zero divisor factorises, and the source's spinor treatment of the retarded field is such a factorisation, written in objects that this article has already defined. Three of them are the source's, and it is worth naming each once against the conventions here.</p>
 <p><strong>The invariant retarded distance.</strong> The source's scalar is</p>
@@ -355,7 +355,7 @@ $$</p>
 <p>$$
 \kappa = 1 - \beta\cos\theta ,
 $$</p>
-<p>and an azimuthal angle $\\theta^{\\mathrm{azm}}$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.</p>
+<p>and an azimuthal angle $\theta^{\mathrm{azm}}$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.</p>
 <p>For <strong>linear acceleration</strong>, $d\vec\beta/dt'_r\parallel\vec\beta$, the vector triple product collapses. Since $\vec\beta\times\,d\vec\beta/dt'_r = 0$, one has $\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r = \vec u_R\times\,d\vec\beta/dt'_r$ and therefore</p>
 <p>$$
 \left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2
@@ -369,14 +369,14 @@ $$</p>
 <p>For <strong>circular motion</strong>, $d\vec\beta/dt'_r\perp\vec\beta$. Choosing $\vec\beta$ along the polar axis and $d\vec\beta/dt'_r$ in the equatorial plane, the same algebra gives</p>
 <p>$$
 \left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2
-= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right],
+= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\sin^2\theta\cos^2\theta^{\mathrm{azm}}}{\gamma^2}\right],
 $$</p>
 <p>and hence</p>
 <p>$$
 \frac{dP}{d\Omega} = \frac{ϙ^2\left(d\beta/dt'_r\right)^{2}}{16\pi^2\epsilon c\,\kappa^6}
-\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right].
+\left[\kappa^2 - \frac{\sin^2\theta\cos^2\theta^{\mathrm{azm}}}{\gamma^2}\right].
 $$</p>
-<p>Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.</p>
+<p>Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\chi^{\mathrm{scp}}$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.</p>
 <p><strong>A remark on the temporal convention.</strong> The distributions above are written per unit of the observer's time $t'$ and with $d\vec\beta/dt'_r$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t'_r$; because $dt' = \kappa\,dt'_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The physical total power is the same in either convention; the two distributions themselves are not, since they differ pointwise by the direction-dependent factor $\kappa$, so the sphere integral must be taken with that factor in the retarded-time form.</p>
 <p><strong>Forward beaming.</strong> The factor $\kappa^{-6}$ is the entire content of relativistic beaming. For $\beta\to1$, $\kappa$ is small only within the forward cone $\theta\lesssim1/\gamma$; outside it, the distribution is suppressed by many powers of $\gamma$. The radiated energy is therefore concentrated in a narrow forward cone of half-angle of order $1/\gamma$, the same cone that controls the relativistic Doppler effect and the synchrotron spectrum. As $\beta\to1$, the angular distribution becomes an increasingly sharp forward spike: the charge radiates almost entirely along its direction of motion.</p>
 <h2 id="radiation-reaction-and-the-self-force">Radiation Reaction and the Self-Force</h2>
@@ -561,7 +561,7 @@ $$</p>
 <td>Power per unit solid angle (per observer time)</td>
 </tr>
 <tr>
-<td>$\\theta, \\theta^{\\mathrm{azm}}$</td>
+<td>$\theta, \theta^{\mathrm{azm}}$</td>
 <td>Polar angle from $\vec\beta$, azimuthal angle</td>
 </tr>
 <tr>

@@ -233,13 +233,13 @@ e_i=\frac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}, \qquad e_{-i}=\frac12\begin{pm
 $$</p>
 <p>and the transpose exchanges them: $e_i^{\mathsf T}=e_{-i}$. Neither is symmetric, the eigenvalues are not unimodular for the trivial involution ($i^2=-1$), and the permutation $\pi$ swaps the two indices. The law reads $\lambda_{\pi(i)}^{-1}=\varsigma(\lambda_i)$: for $i$ with $\lambda_i=i$, $\lambda_{\pi(i)}=-i$, and $(-i)^{-1}=i=\varsigma(i)$. The example shows that a unitary element of the first kind need not have Hermitian projectors, and that the unit-circle statement is false when the involution is trivial on the scalars.</p>
 <h3 id="the-cyclic-group-algebra">The cyclic group algebra</h3>
-<p>Let $G=\langle g\rangle$ be cyclic of order three and let $A=k[G]$ with the inversion involution $g^*=g^{-1}$. The element $g$ is unitary, $g^*g=g^{-1}g=1$. If $k$ contains a primitive cube root $\zeta$ and $3\neq0$, the eigenvalues are $1,\zeta,\zeta^2$, and the eigenprojectors are the Lagrange projectors</p>
+<p>Let $G=\langle g\rangle$ be cyclic of order three and let $A=k[G]$ with the inversion involution $g^*=g^{-1}$. The element $g$ is unitary, $g^*g=g^{-1}g=1$. If $k$ contains a primitive cube root $\omega$ and $3\neq0$, the eigenvalues are $1,\omega,\omega^2$, and the eigenprojectors are the Lagrange projectors</p>
 <p>$$
-e_1=\frac{(g-\zeta)(g-\zeta^2)}{(1-\zeta)(1-\zeta^2)}, \qquad
-e_\zeta=\frac{(g-1)(g-\zeta^2)}{(\zeta-1)(\zeta-\zeta^2)}, \qquad
-e_{\zeta^2}=\frac{(g-1)(g-\zeta)}{(\zeta^2-1)(\zeta^2-\zeta)} .
+e_1=\frac{(g-\omega)(g-\omega^2)}{(1-\omega)(1-\omega^2)}, \qquad
+e_\omega=\frac{(g-1)(g-\omega^2)}{(\omega-1)(\omega-\omega^2)}, \qquad
+e_{\omega^2}=\frac{(g-1)(g-\omega)}{(\omega^2-1)(\omega^2-\omega)} .
 $$</p>
-<p>The inversion sends $g$ to $g^2$, and it exchanges $e_\zeta$ and $e_{\zeta^2}$; the eigenvalues $\zeta$ and $\zeta^2$ are exchanged as well. The law holds with $\lambda_{\pi(\zeta)}^{-1}=\zeta^{-2}=\zeta=\varsigma(\zeta)$. The projectors are not Hermitian, and the eigenvalues are not unimodular in the first-kind sense ($\zeta^2\neq1$). The example is the group-algebra form of the rotation: the inversion is the algebraic "reflection" that swaps the two non-real characters.</p>
+<p>The inversion sends $g$ to $g^2$, and it exchanges $e_\omega$ and $e_{\omega^2}$; the eigenvalues $\omega$ and $\omega^2$ are exchanged as well. The law holds with $\lambda_{\pi(\omega)}^{-1}=\omega^{-2}=\omega=\varsigma(\omega)$. The projectors are not Hermitian, and the eigenvalues are not unimodular in the first-kind sense ($\omega^2\neq1$). The example is the group-algebra form of the rotation: the inversion is the algebraic "reflection" that swaps the two non-real characters.</p>
 <h3 id="the-repeated-eigenvalue">The repeated eigenvalue</h3>
 <p>Let $U=\operatorname{diag}(i,i,-i)$ with the conjugate transpose. The distinct eigenvalues are $i$ and $-i$, and the eigenprojectors are</p>
 <p>$$

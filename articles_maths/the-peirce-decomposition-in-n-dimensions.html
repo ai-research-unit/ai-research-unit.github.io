@@ -126,21 +126,21 @@ $$</p>
 <p>The $n^{2}$ lines are collected in the <strong>Peirce table</strong>, the $n\times n$ array whose entry in row $k$ and column $l$ is $A_{kl}$. The diagonal entries are the canonical lines $\mathbb{C}P_{k}$. The off-diagonal entries are the mixed lines. The table is the multiplication table of the algebra read line by line.</p>
 <p>The array is not symmetric: $A_{kl}$ and $A_{lk}$ are different lines, exchanged by the transpose and, when the family is Hermitian, by the star. The diagonal is fixed by both.</p>
 <h2 id="the-family-from-a-root-of-math72">The Family from a Root of $1$</h2>
-<p><strong>The root.</strong> Let $H\in M_{n}(\mathbb{C})$ satisfy $H^{n}=I$ and have $n$ distinct eigenvalues. Since $x^{n}-1$ has the distinct roots $\zeta^{0},\dots,\zeta^{n-1}$, with $\zeta=e^{2\pi i/n}$, the eigenvalues of $H$ are those roots, each once. Write</p>
+<p><strong>The root.</strong> Let $H\in M_{n}(\mathbb{C})$ satisfy $H^{n}=I$ and have $n$ distinct eigenvalues. Since $x^{n}-1$ has the distinct roots $\omega^{0},\dots,\omega^{n-1}$, with $\omega=e^{2\pi i/n}$, the eigenvalues of $H$ are those roots, each once. Write</p>
 <p>$$
-P_{k}=\frac{1}{n}\sum_{j=0}^{n-1}\zeta^{-(k-1)j}H^{j},\qquad k=1,\dots,n .
+P_{k}=\frac{1}{n}\sum_{j=0}^{n-1}\omega^{-(k-1)j}H^{j},\qquad k=1,\dots,n .
 $$</p>
 <p><strong>Proposition.</strong> The $P_{k}$ are idempotent, orthogonal and complete, each of rank one, and</p>
 <p>$$
-H=\sum_{k=1}^{n}\zeta^{k-1}P_{k}.
+H=\sum_{k=1}^{n}\omega^{k-1}P_{k}.
 $$</p>
-<p><strong>Proof.</strong> On the eigenvalue $\zeta^{m}$ the polynomial $\frac1n\sum_{j}\zeta^{-(k-1)j}x^{j}$ takes the value $\delta_{m,k-1}$, so $P_{k}$ is the spectral projector of the eigenvalue $\zeta^{k-1}$. Distinct eigenvalues give orthogonal projectors, and their sum is the identity. The spectrum is simple, so each rank is one. The reconstruction of $H$ is the spectral theorem.</p>
-<p>The family is then the spectral family of $H$. In a basis $v_{1},\dots,v_{n}$ with $Hv_{k}=\zeta^{k-1}v_{k}$ and $\ell_{l}(v_{k})=\delta_{kl}$,</p>
+<p><strong>Proof.</strong> On the eigenvalue $\omega^{m}$ the polynomial $\frac1n\sum_{j}\omega^{-(k-1)j}x^{j}$ takes the value $\delta_{m,k-1}$, so $P_{k}$ is the spectral projector of the eigenvalue $\omega^{k-1}$. Distinct eigenvalues give orthogonal projectors, and their sum is the identity. The spectrum is simple, so each rank is one. The reconstruction of $H$ is the spectral theorem.</p>
+<p>The family is then the spectral family of $H$. In a basis $v_{1},\dots,v_{n}$ with $Hv_{k}=\omega^{k-1}v_{k}$ and $\ell_{l}(v_{k})=\delta_{kl}$,</p>
 <p>$$
 P_{k}=v_{k}\ell_{k},\qquad A_{kl}=\mathbb{C}\,v_{k}\ell_{l}.
 $$</p>
 <p>So the Peirce line $A_{kl}$ is the space of maps that send the $l$-th eigenline into the $k$-th and vanish on the other eigenlines, and the decomposition is the algebra's copy of the spectral decomposition of $H$.</p>
-<p><strong>Without simple spectrum.</strong> If $H^{n}=I$ but an eigenvalue is repeated, the same formula gives a complete orthogonal family, but $\operatorname{rk}P_{k}$ is the multiplicity of $\zeta^{k-1}$. The decomposition is then coarse: a component $A_{kl}$ has dimension $\operatorname{rk}P_{k}\operatorname{rk}P_{l}$, and is a line only when both multiplicities are one. The family is maximal, and the decomposition fine, exactly when the spectrum is simple.</p>
+<p><strong>Without simple spectrum.</strong> If $H^{n}=I$ but an eigenvalue is repeated, the same formula gives a complete orthogonal family, but $\operatorname{rk}P_{k}$ is the multiplicity of $\omega^{k-1}$. The decomposition is then coarse: a component $A_{kl}$ has dimension $\operatorname{rk}P_{k}\operatorname{rk}P_{l}$, and is a line only when both multiplicities are one. The family is maximal, and the decomposition fine, exactly when the spectrum is simple.</p>
 <p><strong>The case $n=2$.</strong> A root of $1$ is an element $H$ with $H^{2}=I$. If $H\ne\pm I$, then</p>
 <p>$$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},
@@ -185,12 +185,12 @@ $$</p>
 <td>A root of $1$, $H^{n}=I$</td>
 </tr>
 <tr>
-<td>$\zeta=e^{2\pi i/n}$</td>
+<td>$\omega=e^{2\pi i/n}$</td>
 <td>The primitive $n$-th root of unity</td>
 </tr>
 <tr>
 <td>$v_{k}$</td>
-<td>An eigenvector of $H$ with eigenvalue $\zeta^{k-1}$</td>
+<td>An eigenvector of $H$ with eigenvalue $\omega^{k-1}$</td>
 </tr>
 </tbody>
 </table></div>

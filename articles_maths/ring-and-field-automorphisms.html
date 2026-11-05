@@ -186,7 +186,7 @@ $$</p>
 <p><strong>Proposition.</strong> Let $K = F(\alpha)$ be algebraic with minimal polynomial $m_\alpha$ over $F$. Then $\sigma \mapsto \sigma(\alpha)$ is a bijection from $\operatorname{Aut}_F(F(\alpha))$ onto the set of roots of $m_\alpha$ lying in $F(\alpha)$; if $m_\alpha$ splits in $F(\alpha)$ with distinct roots, so that the root set has $\deg m_\alpha$ elements, the automorphism group has order $\deg m_\alpha$.</p>
 <p><strong>Proof.</strong> An $F$-automorphism $\sigma$ is determined by $\sigma(\alpha)$, which must be a root of $m_\alpha$; conversely every root of $m_\alpha$ in $F(\alpha)$ defines an $F$-embedding $F(\alpha) \to F(\alpha)$, which is an automorphism because the extension is finite-dimensional over $F$.</p>
 <p><strong>Example.</strong> For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.</p>
-<p><strong>Example.</strong> For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in <em>Unique Factorisation Domains</em> and standard in general.</p>
+<p><strong>Example.</strong> For the cyclotomic field $\mathbb{Q}(\omega_n)$, every automorphism sends $\omega_n \mapsto \omega_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in <em>Unique Factorisation Domains</em> and standard in general.</p>
 <h3 id="termination-of-the-correspondence-for-finite-extensions">Termination of the Correspondence for Finite Extensions</h3>
 <p>Let $K/F$ be a finite extension and let $E = K^{\operatorname{gal}(K/F)}$ be the fixed field of all $F$-automorphisms. Then $E \supseteq F$ and $\operatorname{gal}(K/E) = \operatorname{gal}(K/F)$. The extension $K/F$ is Galois exactly when $E = F$; in general $E$ is the smallest intermediate subfield over which $K$ is Galois, since $K/E$ is Galois by Artin's theorem and any intermediate field $L$ with $K/L$ Galois satisfies $L \supseteq K^{\operatorname{gal}(K/F)} = E$; and $K/F$ is Galois if and only if $F$ is the fixed field of its own automorphism group.</p>
 <p><strong>Example.</strong> For $K = \mathbb{Q}(\sqrt[3]{2})$ the group is trivial, so the fixed field is $K$ itself, and the Galois part of the extension is the trivial subextension $\mathbb{Q}/\mathbb{Q}$.</p>
@@ -205,7 +205,7 @@ $$</p>
 <p>When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorname{char} F \neq 2$ then $K = F(\sqrt{a})$ for a nonsquare $a \in F$.</p>
 <p><strong>Proof.</strong> The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument).</p>
 <p><strong>Example.</strong> The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.</p>
-<p><strong>Example.</strong> The Galois group of $\mathbb{Q}(\zeta_n)$ contains the involution $\zeta_n \mapsto \zeta_n^{-1}$, whose fixed field $\mathbb{Q}(\zeta_n + \zeta_n^{-1})$ is the <strong>maximal real subfield</strong> of the cyclotomic field, of index $2$.</p>
+<p><strong>Example.</strong> The Galois group of $\mathbb{Q}(\omega_n)$ contains the involution $\omega_n \mapsto \omega_n^{-1}$, whose fixed field $\mathbb{Q}(\omega_n + \omega_n^{-1})$ is the <strong>maximal real subfield</strong> of the cyclotomic field, of index $2$.</p>
 <hr />
 <h2 id="conjugation-and-anti-automorphisms">Conjugation and Anti-Automorphisms</h2>
 <h3 id="anti-automorphisms-and-involutions">Anti-Automorphisms and Involutions</h3>
@@ -261,7 +261,7 @@ $$</p>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$\mathbb{Q}(\zeta_n)$</td>
+<td>$\mathbb{Q}(\omega_n)$</td>
 <td>$(\mathbb{Z}/n\mathbb{Z})^\times$</td>
 <td>$1$</td>
 </tr>
@@ -339,7 +339,7 @@ $$</p>
 <td>Absolute Galois group</td>
 </tr>
 <tr>
-<td>$\zeta_n$</td>
+<td>$\omega_n$</td>
 <td>Primitive $n$-th root of unity</td>
 </tr>
 <tr>

@@ -99,13 +99,13 @@ $$</p>
 <p>when $\vec q\neq0$. Euler's formula, $\exp(\theta\vec n)=\cos\theta+\vec n\sin\theta$, and $r=\exp(\ln r)$ give</p>
 <p>$$ \boxed{\; \tilde q=r(\cos\theta+\vec n\sin\theta)=r\exp(\theta\vec n)=\exp(\tilde q_{\log}),
 \qquad \tilde q_{\log}=\ln r+\theta\vec n \;} .$$</p>
-<p>The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\lVert\vec Q\rVert=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.</p>
+<p>The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.</p>
 <p><strong>Definition.</strong> An <strong>exponential polar decomposition</strong> of $\tilde q\in\mathbb{H}^{\times}$ is a writing</p>
 <p>$$
 \tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln r+\vec v, \quad r>0,\quad \vec v\in\operatorname{Im}\mathbb{H},
 $$</p>
 <p>equivalently $\tilde q=\exp(\ln r)\exp(\vec v)$, in which $\exp(\ln r)=r$ is the <strong>scale</strong> and $\exp(\vec v)$ is the <strong>unit factor</strong>, the rotor. The <strong>exponent</strong> is the logarithm $\tilde q_{\log}$, with scalar coordinate $q_{\log}=\ln r$ and vector coordinate $\vec q_{\log}=\vec v$.</p>
-<p>Write $\vec v=\theta\vec n$ with $\lVert\vec Q\rVert=\sqrt{\langle\vec v\rangle_{\natural}}\ge0$ and $\vec n$ a unit pure quaternion when $\vec v\neq0$. The <strong>angle</strong> is $\theta$ and the <strong>axis</strong> is $\vec n$. The angle is defined modulo $2\pi$, because $\exp((\theta+2\pi k)\vec n)=\exp(\theta\vec n)$; the axis is a point of the sphere $S^2$ of unit pure quaternions. The pair $(r,\exp(\vec v))$ is the modulus–unit pair.</p>
+<p>Write $\vec v=\theta\vec n$ with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}\ge0$ and $\vec n$ a unit pure quaternion when $\vec v\neq0$. The <strong>angle</strong> is $\theta$ and the <strong>axis</strong> is $\vec n$. The angle is defined modulo $2\pi$, because $\exp((\theta+2\pi k)\vec n)=\exp(\theta\vec n)$; the axis is a point of the sphere $S^2$ of unit pure quaternions. The pair $(r,\exp(\vec v))$ is the modulus–unit pair.</p>
 <h3 id="the-two-coordinates">The Two Coordinates</h3>
 <p>The exponent has one scalar coordinate and one vector coordinate, and they play different roles.</p>
 <div class="table-scroll"><table>
@@ -126,7 +126,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec q_{\log}=\operatorname{Vect}\tilde q_{\log}$</td>
-<td>$\theta\vec n$, with $\lVert\vec Q\rVert=\arccos\bigl(q_t/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr)$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$</td>
+<td>$\theta\vec n$, with $\theta=\arccos\bigl(q_t/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr)$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$</td>
 <td>$\operatorname{Im}\mathbb{H}$</td>
 <td>angle and axis; one line off the real axis, one sphere on it</td>
 </tr>
@@ -419,7 +419,7 @@ $$</p>
 $$</p>
 <p>The modulus is $r=\sqrt{30}=5.477225575051661$, the scalar part of the unit factor is $1/\sqrt{30}=0.1825741858$, and</p>
 <p>$$
-\lVert\vec Q\rVert=\arccos\frac{1}{\sqrt{30}}=1.387192316515978, \qquad
+\theta=\arccos\frac{1}{\sqrt{30}}=1.387192316515978, \qquad
 \vec n=0.371390676354\,\vec e_x+0.557086014531\,\vec e_y+0.742781352708\,\vec e_z .
 $$</p>
 <p>The exponent is</p>
@@ -524,7 +524,7 @@ $$</p>
 M_{\tilde q}=\operatorname{Mat}(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
 =r\bigl(\cos\theta\,I+\sin\theta\,N\bigr),
 $$</p>
-<p>with $\lVert\vec Q\rVert=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\operatorname{Mat}(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is</p>
+<p>with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\operatorname{Mat}(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is</p>
 <p>$$
 \det M_{\tilde q}=r^2=\langle\tilde q\rangle_{\natural},
 $$</p>
@@ -575,7 +575,7 @@ $$</p>
 <p>$$
 A=\frac{1-\exp(-\operatorname{ad}_{\tilde q})}{\operatorname{ad}_{\tilde q}} .
 $$</p>
-<p>For $\tilde q=q_te_t+\vec v$ with $\lVert\vec Q\rVert=\sqrt{\langle\vec v\rangle_{\natural}}\neq0$, the eigenvalues of $\operatorname{ad}_{\tilde q}$ are $0$ with multiplicity two, on the span of $e_t$ and $\vec v$, and $\pm2i\theta$ with multiplicity one each on the orthogonal complement of $\vec v$ in the pure subspace. Hence the eigenvalues of $A$ are $1$ with multiplicity two and</p>
+<p>For $\tilde q=q_te_t+\vec v$ with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}\neq0$, the eigenvalues of $\operatorname{ad}_{\tilde q}$ are $0$ with multiplicity two, on the span of $e_t$ and $\vec v$, and $\pm2i\theta$ with multiplicity one each on the orthogonal complement of $\vec v$ in the pure subspace. Hence the eigenvalues of $A$ are $1$ with multiplicity two and</p>
 <p>$$
 \frac{1-\exp(\mp2i\theta)}{\pm2i\theta}
 =\exp(\mp i\theta)\frac{\sin\theta}{\theta}
@@ -718,7 +718,7 @@ $$</p>
 <p>$$
 \tilde q=\exp(\ln r+\vec v), \qquad r=\sqrt{\langle\tilde q\rangle_{\natural}}>0,
 $$</p>
-<p>with pure exponent $\vec v=\theta\vec n$, angle $\lVert\vec Q\rVert=\sqrt{\langle\vec v\rangle_{\natural}}$ and axis $\vec n\in S^2$; the unit factor is the rotor $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$, whose sandwich rotates by $2\theta$. The pair $(r,\theta\vec n)$ is unique off the real axis. On the positive real axis the angle is $0$ and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation has $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ and covers the quaternion space cut along the closed negative real axis. Its exponent is the principal logarithm $\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\theta\vec n$; every other logarithm is $\log\tilde q+2\pi k\vec n$ off the real axis, and a union of spheres on it.</p>
+<p>with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and axis $\vec n\in S^2$; the unit factor is the rotor $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$, whose sandwich rotates by $2\theta$. The pair $(r,\theta\vec n)$ is unique off the real axis. On the positive real axis the angle is $0$ and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation has $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ and covers the quaternion space cut along the closed negative real axis. Its exponent is the principal logarithm $\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\theta\vec n$; every other logarithm is $\log\tilde q+2\pi k\vec n$ off the real axis, and a union of spheres on it.</p>
 <p>The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.</p>
 <p>The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ skew-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -752,7 +752,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec v=\theta\vec n$</td>
-<td>the pure exponent, $\lVert\vec Q\rVert=\sqrt{\langle\vec v\rangle_{\natural}}$, $\vec n\in S^2$</td>
+<td>the pure exponent, $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$, $\vec n\in S^2$</td>
 </tr>
 <tr>
 <td>$\exp(\tilde q)=\exp(q_t)(\cos\theta+(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})\sin\theta)$</td>

@@ -104,11 +104,11 @@ $$</p>
 <h3 id="the-root-of-a-frame">The Root of a Frame</h3>
 <p><strong>Definition.</strong> The <strong>root of the frame</strong> is</p>
 <p>$$
-H_F=\sum_{i=1}^{6}\zeta_iE_{ii},
+H_F=\sum_{i=1}^{6}\omega_iE_{ii},
 $$</p>
-<p>with $\zeta_i=\zeta^{i-1}$ the six sixth roots of unity.</p>
+<p>with $\omega_i=\omega^{i-1}$ the six sixth roots of unity.</p>
 <p><strong>Proposition.</strong> $H_F$ is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em>: $H_F^6=I_6$, its eigenvalues are the six roots, each with multiplicity one, and its Lagrange projectors are the diagonal units $E_{ii}$.</p>
-<p><strong>Proof.</strong> In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\zeta_i$ is the coordinate projector $E_{ii}$.</p>
+<p><strong>Proof.</strong> In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\omega_1,\dots,\omega_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\omega_i$ is the coordinate projector $E_{ii}$.</p>
 <p><strong>Corollary.</strong> The frame is a root together with one nonzero vector in each of its six lines. The root is the frame modulo the scales; the scales are the gauge.</p>
 <p><strong>Proof.</strong> The root determines the six lines $V_i=\mathbb{C}v_i$ but no vector inside them. A frame determines the lines and a vector in each. Two frames with the same root differ by $v_i\mapsto t_iv_i$, which is the gauge below.</p>
 <h3 id="the-coordinates">The Coordinates</h3>
@@ -188,7 +188,7 @@ E_{ij}\longmapsto GE_{ij}G^{-1}=\frac{t_i}{t_j}E_{ij}.
 $$</p>
 <p><strong>Proof.</strong> $G(v_iv_j^{\vee})G^{-1}=(t_iv_i)(t_j^{-1}v_j^{\vee})=(t_i/t_j)E_{ij}$.</p>
 <p><strong>Corollary.</strong> The gauge is an inner automorphism of $M_6(\mathbb{C})$. It fixes the root $H_F$, fixes every idempotent $E_{ii}$, and acts freely on the frame and on the tuple of simple nilpotents.</p>
-<p><strong>Proof.</strong> Conjugation by an invertible matrix is an algebra automorphism. The root $H_F=\sum_i\zeta_iE_{ii}$ is a linear combination of the fixed idempotents, hence fixed. The tuple $(E_{12},\dots,E_{56})$ is rescaled by $(\lambda_1,\dots,\lambda_5)$, so no nonidentity gauge fixes the whole tuple; the frame is rescaled by the $t_i$, so no nonidentity gauge fixes it either.</p>
+<p><strong>Proof.</strong> Conjugation by an invertible matrix is an algebra automorphism. The root $H_F=\sum_i\omega_iE_{ii}$ is a linear combination of the fixed idempotents, hence fixed. The tuple $(E_{12},\dots,E_{56})$ is rescaled by $(\lambda_1,\dots,\lambda_5)$, so no nonidentity gauge fixes the whole tuple; the frame is rescaled by the $t_i$, so no nonidentity gauge fixes it either.</p>
 <p><strong>Remark.</strong> The gauge is therefore not a change of the algebra and not a change of the root. It is a change of the frame inside the root, and its effect on the matrix of an element is the conjugation</p>
 <p>$$
 A=\sum a_{ij}E_{ij}\longmapsto GAG^{-1}=\sum\frac{t_i}{t_j}a_{ij}E_{ij}.
@@ -373,7 +373,7 @@ $$</p>
 <td>the matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$</td>
 </tr>
 <tr>
-<td>$H_F=\sum_i\zeta_iE_{ii}$</td>
+<td>$H_F=\sum_i\omega_iE_{ii}$</td>
 <td>the root of the frame</td>
 </tr>
 <tr>

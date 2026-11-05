@@ -143,7 +143,7 @@ $$</p>
 <p>and the same asymptotic formula, with a further factor $1 + o(1)$, holds for $\omega(n) = k$ in the same range of $k$.</p>
 <p>The formula is the local form of the Erdős–Kac theorem, and it is the arithmetic form of the Poisson approximation of the model: the Prime Number Theorem gives the case $k=1$, and the sum of the formula over all $k$ in the range reproduces the fact that most integers have their normal number of prime factors. Summing over $k \leq \theta\log\log N$ and using Stirling's formula for the dominant term gives, for fixed $0 < \theta < 1$,</p>
 <p>$$
-\#\{n\leq N : \omega(n)\leq\theta\log\log N\} = N(\log N)^{-2+\mathrm{J}(1+\log(1/\theta))+o(1)} \quad (\log\log N\to\infty),
+\#\{n\leq N : \omega(n)\leq\theta\log\log N\} = N(\log N)^{-2+\theta(1+\log(1/\theta))+o(1)} \quad (\log\log N\to\infty),
 $$</p>
 <p>and summing over $k \geq (1+\theta)\log\log N$ gives the corresponding upper tail; both are powers of $\log N$.</p>
 <p><strong>Theorem (large deviations; sketch).</strong> The upper deviations from the normal order are governed by the Poisson rate function $I(\theta) = (1+\theta)\log(1+\theta) - \theta$: for fixed $\theta > 0$,</p>
@@ -171,14 +171,14 @@ $$</p>
 <h3 id="selbergs-central-limit-theorem">Selberg's Central Limit Theorem</h3>
 <p><strong>Theorem (Selberg).</strong> Let $t$ be chosen uniformly at random from $[T,2T]$. Then, as $T\to\infty$,</p>
 <p>$$
-\frac{\log|\zeta(1/2+it)|}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow N(0,1),
+\frac{\log|\varkappa^{\mathrm{crd}}|}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow N(0,1),
 $$</p>
 <p>and more generally</p>
 <p>$$
-\frac{\log\zeta(1/2+it)}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow \mathcal{N}_{\mathbb{C}},
+\frac{\log\varkappa^{\mathrm{crd}}}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow \mathcal{N}_{\mathbb{C}},
 $$</p>
 <p>where $\mathcal{N}_{\mathbb{C}}$ is the standard complex Gaussian, in the sense that the real and imaginary parts are independent centred Gaussians of variance $1/2$.</p>
-<p>Selberg's theorem is the central limit theorem for the values of the zeta function, and the mechanism is the same as in the Erdős–Kac theorem: the Dirichlet polynomial approximation of $\zeta(1/2+it)$ is a sum of terms $n^{-1/2-it}$ whose phases $n^{-it}$ behave like independent random variables, and the logarithm converts the product into a sum of independent contributions. The theorem is the foundation of the statistical theory of the zeta function, and it is the reason the values of $\zeta$ on the critical line are called "random": they obey the Gaussian law of the model. The statistical distribution of the zeros — the random-matrix model of Montgomery and Odlyzko, in which the zeros behave like the eigenvalues of a random unitary matrix — is the other half of the picture, and its analytic input is the explicit formula and the pair correlation, cited from <em>Analytic Number Theory</em> and <em>Automorphic Forms</em>.</p>
+<p>Selberg's theorem is the central limit theorem for the values of the zeta function, and the mechanism is the same as in the Erdős–Kac theorem: the Dirichlet polynomial approximation of $\varkappa^{\mathrm{crd}}$ is a sum of terms $n^{-1/2-it}$ whose phases $n^{-it}$ behave like independent random variables, and the logarithm converts the product into a sum of independent contributions. The theorem is the foundation of the statistical theory of the zeta function, and it is the reason the values of $\zeta$ on the critical line are called "random": they obey the Gaussian law of the model. The statistical distribution of the zeros — the random-matrix model of Montgomery and Odlyzko, in which the zeros behave like the eigenvalues of a random unitary matrix — is the other half of the picture, and its analytic input is the explicit formula and the pair correlation, cited from <em>Analytic Number Theory</em> and <em>Automorphic Forms</em>.</p>
 <h3 id="the-distribution-of-the-divisor-function-and-the-local-statistics">The Distribution of the Divisor Function and the Local Statistics</h3>
 <p><strong>Theorem (Erdős–Kac for $d$; sketch).</strong> For $n$ uniform on $\{1,\dots,N\}$,</p>
 <p>$$
@@ -252,7 +252,7 @@ $$</p>
 </tr>
 <tr>
 <td>Selberg CLT</td>
-<td>$\log\lvert\zeta(1/2+it)\rvert/\sqrt{\frac12\log\log T}\Rightarrow N(0,1)$</td>
+<td>$\log\lvert\varkappa^{\mathrm{crd}}\rvert/\sqrt{\frac12\log\log T}\Rightarrow N(0,1)$</td>
 </tr>
 <tr>
 <td>$\mathcal{N}_{\mathbb{C}}$</td>
@@ -269,7 +269,7 @@ $$</p>
 <li>Paul Turán, "On a theorem of Hardy and Ramanujan", <em>Journal of the London Mathematical Society</em> 9 (1934), 274–276, and J. Kubilius, <em>Probabilistic Methods in the Theory of Numbers</em> (American Mathematical Society, 1964), for the variance inequality and the model.</li>
 <li>H. Cramér, "On the order of magnitude of the difference between consecutive prime numbers", <em>Acta Arithmetica</em> 2 (1936), 23–46, for the Cramér model.</li>
 <li>G. H. Hardy and J. E. Littlewood, "Some problems of 'partitio numerorum' III", <em>Acta Mathematica</em> 44 (1923), 1–70, for the singular series and the prime-pair conjectures.</li>
-<li>Atle Selberg, "Contributions to the theory of the Riemann zeta-function", <em>Archiv for Mathematik og Naturvidenskab</em> 48 (1946), 89–155, for the central limit theorem for $\log\zeta$.</li>
+<li>Atle Selberg, "Contributions to the theory of the Riemann zeta-function", <em>Archiv for Mathematik og Naturvidenskab</em> 48 (1946), 89–155, for the central limit theorem for $\log\varkappa^{\mathrm{crd}}$.</li>
 <li>Hugh L. Montgomery, "The pair correlation of zeros of the zeta function", in <em>Analytic Number Theory</em> (American Mathematical Society, 1973), 181–193, for the random-matrix statistics of the zeros.</li>
 <li>Terence Tao and Van Vu, <em>Additive Combinatorics</em> (Cambridge University Press, 2006), and K. Soundararajan, "The distribution of values of the Riemann zeta function", in <em>Proceedings of the International Congress of Mathematicians</em> (2014), for the probabilistic viewpoint on the zeta function.</li>
 </ul>

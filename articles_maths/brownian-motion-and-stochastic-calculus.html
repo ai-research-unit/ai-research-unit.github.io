@@ -187,7 +187,7 @@ $$</p>
 <p>obtained by applying Itô's formula to $\log X_t$; the exponential is the <strong>stochastic exponential</strong> of the process $(\mu-\sigma^2/2)t + \sigma B_t$, and the drift correction $- \sigma^2/2$ is the Itô correction. The process is the standard model of a multiplicative growth process with noise, and the martingale $\exp(\sigma B_t - \sigma^2t/2)$ of the previous section is the case $\mu = 0$ after normalisation.</p>
 <p><strong>Example (the Ornstein–Uhlenbeck process).</strong> The equation $dX_t = -\theta X_t\,dt + \sigma\,dB_t$ with $\theta > 0$ has the stationary Gaussian solution</p>
 <p>$$
-X_t = \exp(-\theta t)X_0 + \sigma\int_0^t \exp(-\mathrm{J}(t-s))\,dB_s,
+X_t = \exp(-\theta t)X_0 + \sigma\int_0^t \exp(-\theta(t-s))\,dB_s,
 $$</p>
 <p>with $\operatorname{Var}(X_t) = \frac{\sigma^2}{2\theta}(1 - \exp(-2\theta t))$, and the stationary distribution $N(0,\sigma^2/2\theta)$. The process is the continuous-time analogue of an autoregressive sequence, it is reversible with respect to the stationary law, and its spectral decomposition is the model of the spectral theory of the Markov chains of <em>Markov Chains and Processes</em>.</p>
 <p><strong>Example (Bessel processes).</strong> For a $d$-dimensional Brownian motion the radial process $R_t = |B_t|$ satisfies</p>

@@ -70,11 +70,11 @@
       <div class="article-body">
         <h1 id="the-escape-radius-and-the-greens-function-for-the-biquaternions"><strong>The Escape Radius and the Green's Function for the Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>In the complex plane the escape radius and the Green's function are the two faces of one computation. A point $\zeta$ with $|\zeta|>1+|C|$ has $|\zeta_n|\to\infty$ monotonically, so the finite bound $1+|C|$ certifies escape; and on the escaping set the limit</p>
+<p>In the complex plane the escape radius and the Green's function are the two faces of one computation. A point $\omega$ with $|\omega|>1+|C|$ has $|\omega_n|\to\infty$ monotonically, so the finite bound $1+|C|$ certifies escape; and on the escaping set the limit</p>
 <p>$$
-G_C(\zeta)=\lim_{n\to\infty}2^{-n}\log|\zeta_n|
+G_C(\omega)=\lim_{n\to\infty}2^{-n}\log|\omega_n|
 $$</p>
-<p>exists, vanishes exactly on the filled Julia set, satisfies $G_C(\zeta^2+C)=2G_C(\zeta)$, and behaves like $\log|\zeta|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and assembles the pluripotential framework it supports: the Monge–Ampère current, the conditional equilibrium measure, its product form on the idempotent plane, and the mass loss at the cone.</p>
+<p>exists, vanishes exactly on the filled Julia set, satisfies $G_C(\omega^2+C)=2G_C(\omega)$, and behaves like $\log|\omega|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and assembles the pluripotential framework it supports: the Monge–Ampère current, the conditional equilibrium measure, its product form on the idempotent plane, and the mass loss at the cone.</p>
 <p>The quadratic family and its critical set are <em>The Biquaternion Quadratic Map and Its Julia Sets</em>; the failure of the single radius and the conditional radius $R_\delta$ are <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the classical theory is <em>The Escape Radius and the Green's Function</em>, <em>The Filled Julia Set and the Green's Function</em> and <em>Plurisubharmonic Functions</em>; the pluripotential theory of several variables is <em>Plurisubharmonic Functions</em>, <em>Several Complex Variables</em> and <em>Fractal Analysis</em>.</p>
 <p>The article owns the escaping set, the Green's function of a biquaternion parameter, its norm-independence, its functional equation and its vanishing locus on the regular part, the exact eigenvalue formula for a central parameter, the Monge–Ampère current and the conditional equilibrium measure, the product form of the measure on the idempotent plane, and the statement of the obstruction at the zero divisors.</p>
 <p><strong>Standing convention.</strong> $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ in the general plain bilinear product, $\mathcal K_{\tilde Q_2}$ the filled Julia set, $J_{\tilde Q_2}$ its boundary, $\|\cdot\|_E$ the Euclidean norm, $\|\cdot\|_F$ the Frobenius norm on $M_2(\mathbb{C})$.</p>
@@ -104,7 +104,7 @@ $$</p>
 $$</p>
 <p>and $G_{\tilde Q_2}=0$ on $\mathcal K_{\tilde Q_2}$: on every bounded orbit the sequence $2^{-n}\log^+\|F^n(\tilde Q)\|_E$ is $O(2^{-n})$ and tends to $0$.</p>
 <p><strong>Proof.</strong> The first identity is the shift $2^{-n}\log^+\|F^{n+1}(\tilde Q)\|=2\cdot 2^{-(n+1)}\log^+\|F^{n+1}(\tilde Q)\|$; the second is that a bounded orbit has $\log^+\|F^n\|_E\le\log^+(1+\sup\|\cdot\|_E)$ uniformly.</p>
-<p><strong>Remark (the missing normalization at infinity).</strong> In the complex plane the Green's function of a polynomial satisfies $G_C(\zeta)=\log|\zeta|+O(1)$ as $\zeta\to\infty$, and this normalization is what makes the function usable: it identifies the escape rate and turns $G_C$ into a potential. In $\mathbb{B}$ the normalization fails on the zero-divisor cone, because $\|\tilde Q^2\|_E$ has no lower bound in terms of $\|\tilde Q\|_E$ and a point of large norm can be sent to the origin in one step. <strong>On the regular part of the escaping set the normalization holds; on the cone it cannot.</strong> The precise statement is the next proposition.</p>
+<p><strong>Remark (the missing normalization at infinity).</strong> In the complex plane the Green's function of a polynomial satisfies $G_C(\omega)=\log|\omega|+O(1)$ as $\omega\to\infty$, and this normalization is what makes the function usable: it identifies the escape rate and turns $G_C$ into a potential. In $\mathbb{B}$ the normalization fails on the zero-divisor cone, because $\|\tilde Q^2\|_E$ has no lower bound in terms of $\|\tilde Q\|_E$ and a point of large norm can be sent to the origin in one step. <strong>On the regular part of the escaping set the normalization holds; on the cone it cannot.</strong> The precise statement is the next proposition.</p>
 <h2 id="the-conditional-greens-function">The Conditional Green's Function</h2>
 <p><strong>Proposition (conditional existence and normalization).</strong> Let $\delta>0$ and let $\Omega_{\tilde Q_2,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde Q_2}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\mathsf{M}_2(F_{\tilde Q_2}^n(\tilde Q))$. Then $G_{\tilde Q_2}$ is defined on $\Omega_{\tilde Q_2,\delta}$, and on it</p>
 <p>$$
@@ -114,7 +114,7 @@ $$</p>
 <p><strong>Remark (why $\delta$ is unavoidable).</strong> The condition is a lower bound on the reciprocal condition number of the iterate and is exactly what the collapse of the square forbids on the zero divisors. <strong>The Green's function of a biquaternion parameter is a function on the $\delta$-regular part of the escaping set for every $\delta>0$, and it is on the union over $\delta$ of these sets; it fails to have a meaning on the orbits that meet the cone infinitely often, and there it is open.</strong> The conditional radius $R_\delta$ of the previous article is the level set of $G_{\tilde Q_2}$ implied by the same estimate.</p>
 <h2 id="the-central-parameter">The Central Parameter</h2>
 <p>For a central parameter the whole pluripotential picture collapses to the complex one, because the orbit is the polynomial in one element and the spectrum separates.</p>
-<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
+<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\omega\mapsto\omega^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
 <p>$$
 \boxed{\;G_{\tilde Q_2}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr)\;},
 $$</p>
@@ -141,7 +141,7 @@ $$</p>
 <p>$$
 \boxed{\;\mu_{\tilde Q_2}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2}\;}
 $$</p>
-<p>of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.</p>
+<p>of the two one-variable equilibrium measures of $\omega\mapsto\omega^2+C_j$, and its entropy is $2\log2$.</p>
 <p><strong>Proof.</strong> On the plane the map is the pair of complex quadratic maps (<em>The Slices of the Biquaternion Julia Sets</em>), the ambient complex dimension is two, and the equilibrium measure of a product map is the product of the equilibrium measures of the factors, the standard product theorem for polynomial maps (<em>Several Complex Variables</em>). The entropy adds, $\log2+\log2=2\log2$.</p>
 <h2 id="the-general-parameter">The General Parameter</h2>
 <p>For a non-central parameter the orbit is no longer a polynomial in one element, the spectrum does not separate, and there is no formula. What remains is the general pluripotential theory of polynomial maps of a complex space, and it must be quoted carefully, because the map here is degenerate.</p>
@@ -177,7 +177,7 @@ $$</p>
 </tr>
 <tr>
 <td>$G_C$, $K_C$</td>
-<td>the classical Green's function and filled Julia set of $\zeta\mapsto\zeta^2+C$</td>
+<td>the classical Green's function and filled Julia set of $\omega\mapsto\omega^2+C$</td>
 </tr>
 <tr>
 <td>$\delta=\sigma_2/\sigma_1$</td>
@@ -205,7 +205,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mu_C$</td>
-<td>the one-variable equilibrium measure of $\zeta\mapsto\zeta^2+C$</td>
+<td>the one-variable equilibrium measure of $\omega\mapsto\omega^2+C$</td>
 </tr>
 <tr>
 <td>$k=4$, $d=2$</td>

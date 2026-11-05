@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Letter Chi: An Inventory of the Glyph — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-letter-chi-an-inventory-of-the-glyph"><strong>The Letter Chi: An Inventory of the Glyph</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The letter $\chi$ now names the generic field. It carries thirteen roles in the corpus and only three of them are fields, so this is the one letter where the field rule meets an occupant. This article lists every use of the glyph, lower case and upper case, with the count of each form and the article that binds it.</p>
+<p>The census covers 3057 tokens in 188 articles. The lower case carries thirteen roles, ten of them with a caret or a subscript and three with no mark at all. The upper case carries one role, the complex field, and it exists in a single file: the corpus wrote no upper-case chi before the field rule was stated.</p>
+<p><strong>What the article establishes.</strong> The four forms the conventions now fix, and why the upper case is written as the glyph and not as the command. The thirteen roles of the lower case, each with the equation that binds it and the articles that use it. The nine articles in which two roles are written with the same bare glyph. The measurement of the Latin $X$, which is what the resemblance of the two glyphs costs and what it does not.</p>
+<p><strong>What it does not claim.</strong> It does not claim that $\chi$ is free, because it is not. The central grading stands in 51 articles, the group character in nine, the ellipticity angle in one, and the complex central field in three. The claim is narrower: that one letter can carry the field and these residues, provided the caret and the case do the separating, and that the separation has to be counted and not assumed.</p>
+<h2 id="the-four-forms-the-conventions-fix">The Four Forms the Conventions Fix</h2>
+<p><em>Algebra and Element Conventions</em>, §<em>The Elements and their Coefficients</em>, states the rule in one paragraph and one table:</p>
+<blockquote>
+<p><strong>The generic field belongs to the $\chi$ family.</strong> A field is not an element, so it takes its own letter and the same two features decide its form. The case carries the coefficient: $\chi$ is real and $Χ$ is complex. The tilde carries the element: $\chi$ is a scalar at each point, and the field whose value is an element of the algebra takes the tilde, $\tilde\chi$ in the quaternion layer and $\tilde{Χ}$ in the biquaternion one.</p>
+</blockquote>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>what it is</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi$</td>
+<td>a real scalar field</td>
+<td>the central coefficient when it is real</td>
+</tr>
+<tr>
+<td>$Χ$</td>
+<td>a complex scalar field</td>
+<td>the central coefficient when it is complex, the majuscule following the case rule</td>
+</tr>
+<tr>
+<td>$\tilde\chi$</td>
+<td>a field whose value is a quaternion</td>
+<td>the layer $\mathbb{H}_{\mathbb{B}}$</td>
+</tr>
+<tr>
+<td>$\tilde{Χ}$</td>
+<td>a field whose value is a biquaternion</td>
+<td>the general algebra-valued field, $\tilde{Χ}=Χ e_t$ when central</td>
+</tr>
+</tbody>
+</table></div>
+<p>The caret and the subscript name the role inside the family, and they are the only marks the letter takes: <code>scl</code> the real scalar, <code>spn</code> the spinor, <code>fop</code> the field operator, <code>alt</code> the second state, <code>scp</code> the scalar potential, <code>gau</code> the gauge function, <code>flw</code> the flow.</p>
+<p><strong>The majuscule is written as the glyph.</strong> The upper-case chi is written $Χ$, U+03A7, and not as the LaTeX command, because the command prints the shape of the Latin $X$ and the page would then carry two objects with one shape. The precedent is the stigma: the majuscule of rho is taken by the four-momentum, so the state is written $Ϛ$, U+03DA, §<em>The Observables, the States and the Quantum Objects</em>. The minuscule keeps its command, <code>\chi</code>, since nothing collides with it.</p>
+<p><strong>The Latin $X$ is not reserved.</strong> This was checked, because the resemblance is only a cost if the two glyphs name two things. $X$ stands bare 1002 times and is never declared: it is a dummy bound inside a statement, $X\mapsto aXb$ in <em>Matrix Representations Conventions</em>, $\omega(X_f,\cdot)=df$ in <em>The Symplectic Form and the Biquaternion Norm Cone</em>. $\tilde X$ stands 221 times in 16 articles, all of them bound the same way, as in $\mathbb D:\tilde X\longmapsto-\partial\tilde X/\cdots$ in <em>Canonical Quantization of the Biquaternion Dirac Field</em>. So the resemblance is a reading risk and not a collision of names, and the repair for it is typographic, not rhetorical.</p>
+<h2 id="the-census">The Census</h2>
+<p>Forty-eight distinct forms, 3057 tokens, 188 articles. The table gives the forms that carry a mark and the bare letter; the remaining subscripts are index labels, listed in §<em>The Index Labels</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi$</td>
+<td>1783</td>
+<td>157</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{scl}}$</td>
+<td>442</td>
+<td>32</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{fop}}$</td>
+<td>173</td>
+<td>8</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{alt}}$</td>
+<td>122</td>
+<td>13</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{scp}}$</td>
+<td>98</td>
+<td>13</td>
+</tr>
+<tr>
+<td>$\chi^{*}$</td>
+<td>95</td>
+<td>18</td>
+</tr>
+<tr>
+<td>$\chi_2$</td>
+<td>74</td>
+<td>18</td>
+</tr>
+<tr>
+<td>$\chi_1$</td>
+<td>55</td>
+<td>13</td>
+</tr>
+<tr>
+<td>$Χ$</td>
+<td>35</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\chi_k$</td>
+<td>23</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\chi_0$</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{flw}}$</td>
+<td>11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{gau}}$</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\chi^{\dagger}$</td>
+<td>9</td>
+<td>6</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{tpl}}$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{odw}}$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two large entries are not roles. $\chi^{*}$ 95 and $\chi^{\dagger}$ 9 are the conjugates of whatever the letter names at that point, and $\chi_1$, $\chi_2$, $\chi_k$, $\chi_0$ are indices, counted in §<em>The Index Labels</em>.</p>
+<h2 id="the-lower-case-the-roles">The Lower Case: The Roles</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>form</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central grading</td>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi_{\mathrm{ad}}$</td>
+<td>83</td>
+<td>51</td>
+</tr>
+<tr>
+<td>complex central field</td>
+<td>$\chi$ bare</td>
+<td>145</td>
+<td>3</td>
+</tr>
+<tr>
+<td>real scalar field</td>
+<td>$\chi^{\mathrm{scl}}$</td>
+<td>442</td>
+<td>32</td>
+</tr>
+<tr>
+<td>field operator</td>
+<td>$\chi^{\mathrm{fop}}$</td>
+<td>173</td>
+<td>8</td>
+</tr>
+<tr>
+<td>second state</td>
+<td>$\chi^{\mathrm{alt}}$</td>
+<td>122</td>
+<td>13</td>
+</tr>
+<tr>
+<td>scalar potential</td>
+<td>$\chi^{\mathrm{scp}}$</td>
+<td>98</td>
+<td>13</td>
+</tr>
+<tr>
+<td>gauge function</td>
+<td>$\chi^{\mathrm{gau}}$</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Hamiltonian flow</td>
+<td>$\chi^{\mathrm{flw}}$</td>
+<td>11</td>
+<td>2</td>
+</tr>
+<tr>
+<td>topological susceptibility</td>
+<td>$\chi^{\mathrm{tpl}}$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>odd worldline variable</td>
+<td>$\chi^{\mathrm{odw}}$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>ellipticity angle</td>
+<td>$\chi_{\mathrm p}$</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>group character</td>
+<td>$\chi$, $\chi_\omega$, $\chi_2$</td>
+<td>20</td>
+<td>9</td>
+</tr>
+<tr>
+<td>index label</td>
+<td>$\tilde\Pi_\chi$</td>
+<td>4</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-central-grading">The Central Grading</h3>
+<p>The grading is the difference of the two central idempotents and squares to the unit:</p>
+<p>$$
+\chi=i\tilde\Xi_{\mathrm{ad}},\qquad \chi^2=e_t .
+$$</p>
+<p>The corpus writes it bare, $\chi$, and with the subscript, $\chi_{\mathrm{ad}}$, in the same article; <em>Bhabha Scattering in Biquaternionic Form</em> writes $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ and <em>Bosonization in Biquaternionic Form</em> writes $\chi=i\tilde\Xi_{\mathrm{ad}}$ at line 304 and the field $\chi^{\mathrm{scl}}$ 26 times in the same article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-complex-central-field">The Complex Central Field</h3>
+<p>The three central-field articles write the field with no caret at all, because in them the field is the only chi in play: 98 tokens in <em>The Higgs Mechanism in Biquaternionic Form</em>, 41 in <em>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</em>, 6 in <em>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</em>. The potential is an invariant function of $\rho=\chi^{*}\chi$ and the phase acts as $\chi\mapsto\exp(i\alpha)\chi$.</p>
+<p>This is the use the upper case exists for: the coefficient is complex, the case rule asks for the majuscule, and the corpus has not yet been converted.</p>
+<h3 id="the-real-scalar-field">The Real Scalar Field</h3>
+<p>$\chi^{\mathrm{scl}}$ is the boson of the bosonization articles, central, with the vertex $:\!\exp(i\beta\chi^{\mathrm{scl}})\!:$ and the kinetic term $\lvert\partial\chi^{\mathrm{scl}}/\partial t'\rvert^{2}-\lvert\nabla\chi^{\mathrm{scl}}\rvert^{2}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a></td>
+<td>83</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>81</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a></td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/congruence-twistors-and-the-fields-they-generate.html">Congruence Twistors and the Fields They Generate</a></td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a></td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a></td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a></td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the Rho Parameter in Biquaternionic Form</a></td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/landau-levels-in-biquaternionic-form.html">Landau Levels in Biquaternionic Form</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/coulomb-scattering-and-rutherfords-formula-in-biquaternionic-form.html">Coulomb Scattering and Rutherford's Formula in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html">The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-field-operator">The Field Operator</h3>
+<p>$\chi^{\mathrm{fop}}$ is the operator of the quantized field, beside its momentum: $[\chi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\delta^{(3)}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a></td>
+<td>62</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a></td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a></td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a></td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-second-state">The Second State</h3>
+<p>$\chi^{\mathrm{alt}}$ is the second of two states, the partner of $\psi$ in an inner product or a symplectic form, $\varepsilon(\psi,\chi^{\mathrm{alt}})=\psi^{T}\epsilon\,\chi^{\mathrm{alt}}$ and $\langle\psi|\chi^{\mathrm{alt}}\rangle$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.html">No-Cloning and the Algebraic Obstruction in Biquaternionic Form</a></td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a></td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a></td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a></td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/mutually-unbiased-bases-and-the-biquaternion-algebra.html">Mutually Unbiased Bases and the Biquaternion Algebra</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/roots-idempotents-and-quantum-information.html">Roots, Idempotents and Quantum Information</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-scalar-potential">The Scalar Potential</h3>
+<p>$\chi^{\mathrm{scp}}$ is the electric scalar potential, the temporal coefficient of the four-potential read as a potential: $q'_t=\chi^{\mathrm{scp}}/c$ and $\chi^{\mathrm{scp}}=ϙ/4\pi\epsilon D$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-complex-displaced-singularity-and-the-circle-electron.html">The Complex-Displaced Singularity and the Circle Electron</a></td>
+<td>26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</a></td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html">Exercise: The Electromagnetic Field of a Moving Charge</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html">Radiation from Accelerated Charges in Biquaternionic Form</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/landau-levels-in-biquaternionic-form.html">Landau Levels in Biquaternionic Form</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-gauge-function">The Gauge Function</h3>
+<p>$\chi^{\mathrm{gau}}$ is the function of the abelian gauge transformation, $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi^{\mathrm{gau}}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-hamiltonian-flow">The Hamiltonian Flow</h3>
+<p>$\chi^{\mathrm{flw}}$ is the one-parameter group of canonical transformations generated by a Hamiltonian, with generator $D_H(f)=\{f,H\}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.html">The Lyapunov Exponent and Information Loss in the Biquaternion Framework</a></td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-two-single-use-roles">The Two Single-Use Roles</h3>
+<p>$\chi^{\mathrm{tpl}}$ is the topological susceptibility of <em>The Theta Vacuum in Biquaternionic Form</em>, $\chi^{\mathrm{tpl}}=\frac1V\,\partial^2/\partial\theta^2\log Z|_{\theta=0}$. $\chi^{\mathrm{odw}}_\mu$ is the odd worldline variable of the conventions, written once.</p>
+<h3 id="the-ellipticity-angle">The Ellipticity Angle</h3>
+<p><em>Thomson and Compton Scattering</em> writes the polarization ellipse with a second angle beside the orientation, $\sin 2\chi_{\mathrm p}=S_3/\sqrt{S_1^2+S_2^2+S_3^2}$, and it is the only article that does. It is an angle, not a field, and it is the one use of the letter that a case rule about fields does not reach.</p>
+<h3 id="the-group-character">The Group Character</h3>
+<p>Nine articles write $\chi$ as the character of a group or of a representation, twenty tokens in all. Most carry a subscript and so cannot be read as the bare letter: $\chi_2=1+2\cos\theta+2\cos2\theta$ for the spin-$2$ character in <em>Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</em> and <em>The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</em>, $\chi_\pm$ for the representation decomposition of <em>Twistor Theory and Biquaternions</em>, $\chi_{m,\nu}(man)=u^m\exp(i\nu t)$ for the $*$-unitary character of <em>The Lorentz Group in Biquaternionic Form</em>, and $\chi_\omega=\cos(2\pi\langle\omega,x\rangle)e_t-\cdots$ in <em>AI Physics Review</em> and <em>The Biquaternion Framework and the Canonical Commutation Relation</em>. Two articles write it bare, one per character of a finite group: <em>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</em> and <em>Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</em>, the second with the idempotents $\tilde\Pi_\chi$. <em>The Hermitian GNS Construction in the Biquaternion Framework</em> writes both, the characters $\chi$ of the dual group and a continuous function $\chi^{\mathrm{scl}}$ on it.</p>
+<h3 id="the-index-labels">The Index Labels</h3>
+<p>$\chi_1$, $\chi_2$, $\chi_k$, $\chi_0$, $\chi_i$, $\chi_c$, $\chi_g$, $\chi_a$, $\chi_b$, $\chi_r$, $\chi_n$, $\chi_t$, $\chi_f$, $\chi_l$, $\chi_S$, $\chi_N$, $\chi_4$, and the idempotents $\tilde\Pi_\chi$ of <em>Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</em>, are subscripts and not names. $\chi_1$ and $\chi_2$ are the two real components of a complex field in the canonical-quantization articles; $\chi_k$ is a Fourier index. They die with the sum or the label they belong to.</p>
+<h2 id="the-upper-case">The Upper Case</h2>
+<p>Thirty-five tokens, one file, one role. All of them are in <em>Algebra and Element Conventions</em>, and all were written after the field rule was stated: before that file the corpus used the command, and the command is what the glyph replaced.</p>
+<p>The role is the complex scalar field, the central coefficient in the Higgs, axion and effective-potential articles. It appears in the rule, in the four-row table, in the two field rows of §<em>The Fields</em>, and in three rows of §<em>Summary of Notation</em>.</p>
+<p><strong>The risk is measured, not supposed.</strong> The upper-case chi and the Latin $X$ are drawn alike in the mathematics fonts the corpus uses. The corpus writes $X$ 1002 times as a bound dummy and $\tilde X$ 221 times the same way, so a page that carries $Χ$ and $X$ asks the reader to separate them by shape alone. Three ways to pay that cost:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>option</th>
+<th>what it costs</th>
+<th>what it buys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>keep $Χ$</td>
+<td>a shape that resembles $X$</td>
+<td>the case rule holds for fields, one letter, no new glyph</td>
+</tr>
+<tr>
+<td>write the complex field $\tilde{Χ}$</td>
+<td>a tilde on a scalar field, which contradicts the tilde rule</td>
+<td>a shape that cannot be read as $X$</td>
+</tr>
+<tr>
+<td>keep $\chi$ for both cases and label the coefficient</td>
+<td>the case rule is suspended for this letter</td>
+<td>no new glyph, no resemblance</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-nine-articles-that-carry-two-roles">The Nine Articles That Carry Two Roles</h2>
+<p>Nine articles write the grading and the real scalar field in the same file, with the same bare letter for the grading and a caret for the field. The caret is the whole of the separation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>$\chi$ grading</th>
+<th>$\chi^{\mathrm{scl}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>1</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>1</td>
+<td>81</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>1</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>1</td>
+<td>29</td>
+</tr>
+</tbody>
+</table></div>
+<p>In these nine the letter carries two meanings and one of them has no mark. Under the rule now in force the grading is the field family's residue and the field takes the tilde or the case, so the repair is available: write the field $\chi^{\mathrm{scl}}$, which it already is, and the grading bare, which it also already is. The nine articles need no edit for that reason alone. What they need is a statement, once, that bare $\chi$ in a grading sentence is the grading.</p>
+<h2 id="what-is-not-decided">What Is Not Decided</h2>
+<p>Three questions the census raises and the conventions do not answer.</p>
+<p><strong>The complex central field.</strong> The Higgs, axion and effective-potential articles write bare $\chi$ and the letter is complex there. The case rule asks for $Χ$. Converting them is 145 tokens in three files, and it makes the field inherit the resemblance to $X$ in the articles where the field is the whole subject.</p>
+<p><strong>The real scalar field.</strong> $\chi^{\mathrm{scl}}$ carries a caret that says <em>scalar</em> to a reader who already knows it is a field. If $\chi$ bare is a real scalar by the case rule, the caret is redundant in 442 tokens, and it is the only thing that separates the field from the grading in the nine articles above. Reading it as redundant and reading it as necessary are both defensible; the corpus must choose one.</p>
+<p><strong>The residues.</strong> The group character in seven articles, the ellipticity angle in one and the index labels are not fields. If the letter is to mean the field family and nothing else, each residue needs its own glyph; if the letter is to keep them, the rule must say that the case and the caret separate a field from a residue and that bare $\chi$ in a grading sentence means the grading.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

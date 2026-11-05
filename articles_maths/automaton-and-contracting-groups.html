@@ -145,7 +145,7 @@ $$</p>
 <p>This is the engine of the word-problem algorithm. It is also the reason contraction proves statements about the elements by induction on the word length rather than by a presentation: in the original paper of Grigorchuk on the group of intermediate growth, the contraction is what proves that every element has finite order, and the same induction gives the torsion property of the Gupta–Sidki groups.</p>
 <h3 id="bounded-automata">Bounded Automata</h3>
 <p>The class of bounded automata is the well-behaved subfamily of the contracting ones.</p>
-<p><strong>Definition (Sidki).</strong> Let $q$ be an automatic transformation and let $\mathrm{J}(k,q)$ be the number of words $v \in X^k$ such that the section $q|_v$ acts nontrivially on the first level $X^1$ of the tree. Then $q$ is <strong>bounded</strong> if the sequence $k \mapsto \mathrm{J}(k,q)$ is bounded, and an automaton is bounded if all its states are. The set $B$ of all bounded automorphisms of $\mathcal{T}$ is a group.</p>
+<p><strong>Definition (Sidki).</strong> Let $q$ be an automatic transformation and let $\theta(k,q)$ be the number of words $v \in X^k$ such that the section $q|_v$ acts nontrivially on the first level $X^1$ of the tree. Then $q$ is <strong>bounded</strong> if the sequence $k \mapsto \theta(k,q)$ is bounded, and an automaton is bounded if all its states are. The set $B$ of all bounded automorphisms of $\mathcal{T}$ is a group.</p>
 <p><strong>Theorem.</strong> A state is bounded if and only if it is defined by a finite automaton in which every two nontrivial cycles are disjoint and are not connected by a directed path. Every self-similar subgroup of the group $B$ of bounded automata is contracting, and a contracting group has a post-critically finite limit space, in the sense of the third article, if and only if it is a subgroup of $B$. A post-critically finite limit space is one-dimensional.</p>
 <p>The characterisation of the finite automaton is Sidki's, the equivalence of boundedness with the post-critically finite limit space is that of Bondarenko and Nekrashevych, and the one-dimensionality is part of the same circle of results. The class contains the Grigorchuk group, the Gupta–Sidki groups, the AT-groups and the spinal groups, that is, most of the known examples; it is the class whose limit spaces are the tame ones, with tiles that meet in finite sets, and it is the reason the limit space of a bounded automaton group is a fractal in the sense of <em>Fractal Geometry</em> rather than a space of complicated local structure. The limit space itself is the subject of the next article; boundedness is defined here because it is a condition on the automaton, and the consequence for the space is named without being used.</p>
 <h2 id="the-examples-and-the-class">The Examples and the Class</h2>
@@ -220,7 +220,7 @@ $$</p>
 <td>The constant of the reduction lemma</td>
 </tr>
 <tr>
-<td>$\mathrm{J}(k,q)$</td>
+<td>$\theta(k,q)$</td>
 <td>The number of $v \in X^k$ with $q\|_v$ nontrivial on $X^1$; boundedness of $q$</td>
 </tr>
 <tr>

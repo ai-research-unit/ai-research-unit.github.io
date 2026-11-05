@@ -128,9 +128,9 @@ $$</p>
 <p><strong>Proof.</strong> In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$; the reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$.</p>
 <p><strong>Remark (the failure of the correspondence).</strong> The map $u\mapsto\rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(\mathcal{A})\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned sandwich rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.</p>
 <h2 id="the-group-instance">The Group Instance</h2>
-<p><strong>Example (the discrete group).</strong> Let $G$ be discrete and $\alpha = \alpha_\theta$ induced by an involutive automorphism of $G$. The reflectors among the point masses are the elements $h$ with $h\mathrm{J}(h) \in Z(G)$, and</p>
+<p><strong>Example (the discrete group).</strong> Let $G$ be discrete and $\alpha = \alpha_\theta$ induced by an involutive automorphism of $G$. The reflectors among the point masses are the elements $h$ with $h\theta(h) \in Z(G)$, and</p>
 <p>$$
-\rho_{\delta_h}(\delta_g) = \delta_{h\mathrm{J}(g)h^{-1}} ,
+\rho_{\delta_h}(\delta_g) = \delta_{h\theta(g)h^{-1}} ,
 $$</p>
 <p>so that the restriction of $\rho_{\delta_h}$ to the point masses is exactly the signed conjugation $\rho_h$ of <em>Reflections as Signed Two-Sided Operators on a Topological Group</em>; the fixed subalgebra $\mathcal{A}^+_\rho$ is the linear span of the fixed subgroup $\{g : \alpha(g) = h^{-1}gh\}$ together with the topological closedness inherited from $\ell^1(G)$.</p>
 <p><strong>Example (the sign character and the two-element group).</strong> Let $\alpha = \alpha_\varepsilon$ for a sign character and let $G$ be abelian. Then $\varepsilon$ is the only nontrivial reflection, the family is $\{\mathrm{id},\alpha_\varepsilon\}$, and the reflector condition is $h^2 \in Z(G) = G$, automatically satisfied by every unit: the correspondence is constant, in accordance with the commutative degeneracy. On a finite abelian group the two reflections are the identity and the sign, which is the group-algebra reading of the Fourier sign symmetry.</p>
@@ -183,7 +183,7 @@ $$</p>
 <td>The coset of the reflections; the outer quotient</td>
 </tr>
 <tr>
-<td>$\rho_{\delta_h}(\delta_g) = \delta_{h\mathrm{J}(g)h^{-1}}$</td>
+<td>$\rho_{\delta_h}(\delta_g) = \delta_{h\theta(g)h^{-1}}$</td>
 <td>Group instance on a discrete group</td>
 </tr>
 </tbody>

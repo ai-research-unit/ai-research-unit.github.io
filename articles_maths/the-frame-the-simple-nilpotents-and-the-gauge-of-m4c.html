@@ -86,14 +86,14 @@ $$</p>
 <p>$$
 E_{kl}E_{mn}=\delta_{lm}E_{kn},\qquad
 E_{kk}=P_k,\qquad
-H=\sum_{k=1}^{4}\zeta_kE_{kk},\qquad
+H=\sum_{k=1}^{4}\omega_kE_{kk},\qquad
 \operatorname{tr}E_{kl}=\delta_{kl}.
 $$</p>
 <p><strong>Proof.</strong> For $v\in\mathbb{C}^4$, write $v=\sum_m\ell_m(v)v_m$. Then</p>
 <p>$$
 E_{kl}E_{mn}v=v_k\ell_l\bigl(v_m\ell_n(v)\bigr)=\delta_{lm}v_k\ell_n(v)=\delta_{lm}E_{kn}v.
 $$</p>
-<p>On $v_m$, $E_{kk}$ acts as $v_k\ell_k(v_m)=\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. The sixteen units are the matrix units of the basis, hence a basis of the algebra.</p>
+<p>On $v_m$, $E_{kk}$ acts as $v_k\ell_k(v_m)=\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\omega_kE_{kk}$ acts on $v_m$ as $\omega_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. The sixteen units are the matrix units of the basis, hence a basis of the algebra.</p>
 <p><strong>The frame is the choice of the vectors.</strong> The root fixes the four lines. The frame fixes a nonzero vector in each line. Different frames of the same flag give different matrix units and the same idempotents:</p>
 <p>$$
 E_{kk}=P_k
@@ -177,13 +177,13 @@ $$</p>
 <p><strong>Proposition.</strong> The gauge fixes the idempotents and the root:</p>
 <p>$$
 P_k=E_{kk}\longmapsto E_{kk}=P_k,\qquad
-H=\sum_k\zeta_kE_{kk}\longmapsto H.
+H=\sum_k\omega_kE_{kk}\longmapsto H.
 $$</p>
 <p>The diagonal $t_1=t_2=t_3=t_4$ acts trivially on every $E_{kl}$, so the effective gauge group is</p>
 <p>$$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3.
 $$</p>
-<p><strong>Proof.</strong> The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\zeta_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every unit, so the kernel is the diagonal.</p>
+<p><strong>Proof.</strong> The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\omega_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every unit, so the kernel is the diagonal.</p>
 <p><strong>One parameter per simple nilpotent.</strong> Put</p>
 <p>$$
 \lambda_k=t_kt_{k+1}^{-1},\qquad k=1,2,3.
@@ -286,7 +286,7 @@ $$</p>
 <p><strong>A frame modulo overall scale has $15$ complex dimensions.</strong> The set of bases of $\mathbb{C}^4$ is $GL_4(\mathbb{C})$, of complex dimension $16$. Two bases that differ by an overall scalar give the same matrix units, since $E_{kl}=v_k\ell_l$ is unchanged when all $v_k$ are multiplied by $t$ and all $\ell_l$ by $t^{-1}$. The frame modulo scale is therefore a point of $PGL_4(\mathbb{C})$, of complex dimension $15$.</p>
 <p><strong>The root and the gauge split the count.</strong> The map from frames to roots,</p>
 <p>$$
-(v_1,v_2,v_3,v_4)\longmapsto H=\sum_{k=1}^{4}\zeta_kE_{kk},
+(v_1,v_2,v_3,v_4)\longmapsto H=\sum_{k=1}^{4}\omega_kE_{kk},
 $$</p>
 <p>has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3$: the frames that give the same root are exactly the rescalings of the vectors inside the fixed lines. Hence</p>
 <p>$$
@@ -323,7 +323,7 @@ $$</p>
 <p><strong>What the second root did and did not do.</strong> It supplied a vector in each mixed Peirce line: $R$ has nonzero entries exactly in $\mathcal{A}_{12}$ and $\mathcal{A}_{21}$, and it normalised them relative to each other. It did not supply the idempotents: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. The presentation of the frame as a root together with a second root therefore overstated the role of $R$. The correct primitive data is the root; the correct additional data is the gauge point, and at $n=2$ the gauge point is a complex number.</p>
 <p><strong>For $n=4$ there is no single second root.</strong> Elements anticommuting with $H$ do exist: they occupy the two mixed blocks $\mathcal{A}_{13},\mathcal{A}_{31},\mathcal{A}_{24},\mathcal{A}_{42}$, and a general such element is a sum of two independent off-diagonal pairs. Under the gauge it sees only the two combinations $\lambda_1\lambda_2$ and $\lambda_2\lambda_3$, so its orbit has dimension two and it does not carry the third parameter. No single element therefore plays the role that $R$ plays at $n=2$; the gauge is a torus, and there is no second primitive.</p>
 <h2 id="summary">Summary</h2>
-<p>An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\zeta_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.</p>
+<p>An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.</p>
 <p>$$
 \boxed{\ 15=12+3,\qquad N_k\longmapsto\lambda_kN_k,\qquad E_{kl}\longmapsto\lambda_k\cdots\lambda_{l-1}E_{kl},\qquad \lambda_1\lambda_2\lambda_3\lambda_4=1.\ }
 $$</p>

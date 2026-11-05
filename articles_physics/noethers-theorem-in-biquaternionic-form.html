@@ -103,19 +103,19 @@ $$</p>
 \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$</p>
 <h3 id="the-field">The Field</h3>
-<p>The relativistic scalar field of the framework is the complex biquaternion field $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\phi$ a complex scalar function. Its action is $S[\tilde{\Phi}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density</p>
+<p>The relativistic scalar field of the framework is the complex biquaternion field $\tilde{\Phi} = \chi^{\mathrm{scl}}\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\chi^{\mathrm{scl}}$ a complex scalar function. Its action is $S[\tilde{\Phi}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density</p>
 <p>$$
 \mathcal{L} = +\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right] + \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right].
 $$</p>
 <p>Because $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$, the first term expands over the four coordinates with a single sign,</p>
 <p>$$
-\mathcal{L} = +\frac{\partial\phi^{*}}{\partial Q_t}\frac{\partial\phi}{\partial Q_t}
-+\sum_k\frac{\partial\phi^{*}}{\partial Q_k}\frac{\partial\phi}{\partial Q_k}
-+\frac{m^2c^2}{\hbar^2}\,\phi^{*}\phi ,
+\mathcal{L} = +\frac{\partial{\chi^{\mathrm{scl}}}^{*}}{\partial Q_t}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t}
++\sum_k\frac{\partial{\chi^{\mathrm{scl}}}^{*}}{\partial Q_k}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_k}
++\frac{m^2c^2}{\hbar^2}\,{\chi^{\mathrm{scl}}}^{*}\chi^{\mathrm{scl}} ,
 $$</p>
 <p>the uniform signs being what the $\natural$ conjugation supplies. The time term is nevertheless negative, because $\partial/\partial Q_t=\partial/\partial ict'$ acts on both factors and two applications of it give $-\frac{1}{c^2}\partial^2/\partial t'^2$; in the real coordinates $x_\mu=(ct',x,y,z)$ the same expression reads</p>
 <p>$$
-\mathcal{L} = -\frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 .
+\mathcal{L} = -\frac{1}{c^2}\left|\frac{\partial\chi^{\mathrm{scl}}}{\partial t'}\right|^2 + |\nabla\chi^{\mathrm{scl}}|^2 + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2 .
 $$</p>
 <p>This is the form used with the energy–momentum tensor below. The Euler–Lagrange equation of $\mathcal{L}$ is the biquaternion Klein–Gordon equation</p>
 <p>$$
@@ -142,29 +142,29 @@ $$</p>
 <p>leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central and $\tilde{\Phi}^{*}\mapsto \exp(-i\alpha)\tilde{\Phi}^{*}$: the two phase factors in $(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})$ cancel, and $\tilde{\Phi}^{*}\tilde{\Phi}$ is invariant. The symmetry therefore holds for the <strong>massive</strong> field as well as the massless one, because the mass term depends on $\tilde{\Phi}$ only through the invariant $\tilde{\Phi}^{*}\tilde{\Phi}$ — a fact used again below.</p>
 <p>For the infinitesimal variation $\delta\tilde{\Phi} = i\alpha\tilde{\Phi}$, $\delta\tilde{\Phi}^{*} = -i\alpha\tilde{\Phi}^{*}$, Noether's construction gives</p>
 <p>$$
-J_\nu = \frac{\partial\mathcal{L}}{\partial(\partial\phi/\partial Q_\nu)}\,\delta\phi + \frac{\partial\mathcal{L}}{\partial(\partial\phi^{*}/\partial Q_\nu)}\,\delta\phi^{*}
-= i\alpha\left(\frac{\partial\phi^{*}}{\partial Q_\nu}\,\phi - \frac{\partial\phi}{\partial Q_\nu}\,\phi^{*}\right),
+J_\nu = \frac{\partial\mathcal{L}}{\partial(\partial\chi^{\mathrm{scl}}/\partial Q_\nu)}\,\delta\chi^{\mathrm{scl}} + \frac{\partial\mathcal{L}}{\partial(\partial{\chi^{\mathrm{scl}}}^{*}/\partial Q_\nu)}\,\delta{\chi^{\mathrm{scl}}}^{*}
+= i\alpha\left(\frac{\partial{\chi^{\mathrm{scl}}}^{*}}{\partial Q_\nu}\,\chi^{\mathrm{scl}} - \frac{\partial\chi^{\mathrm{scl}}}{\partial Q_\nu}\,{\chi^{\mathrm{scl}}}^{*}\right),
 $$</p>
-<p>the second equality from $\partial\mathcal{L}/\partial(\partial\phi/\partial Q_\nu) = +\partial\phi^{*}/\partial Q_\nu$ and its conjugate, which is what the Lagrangian above supplies. Setting $\alpha = 1$ and packaging the four components,</p>
+<p>the second equality from $\partial\mathcal{L}/\partial(\partial\chi^{\mathrm{scl}}/\partial Q_\nu) = +\partial{\chi^{\mathrm{scl}}}^{*}/\partial Q_\nu$ and its conjugate, which is what the Lagrangian above supplies. Setting $\alpha = 1$ and packaging the four components,</p>
 <p>$$
 \boxed{\ \tilde{J} = i\left[(\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi} - \tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi})\right] = \sum_\nu J_\nu e_\nu\ }
-\qquad (\tilde{\Phi} = \phi\,e_t).
+\qquad (\tilde{\Phi} = \chi^{\mathrm{scl}}\,e_t).
 $$</p>
 <p>The overall sign of a current is free — the symmetry with the opposite generator gives the opposite current — and it is fixed here by the charge density, as the next paragraph shows.</p>
 <h3 id="the-current-lies-in-the-material-sector">The Current Lies in the Material Sector</h3>
-<p>The temporal component in the $ict'$ basis is $J_t = i\left(\phi\,\frac{\partial\phi^{*}}{\partial Q_t} - \phi^{*}\frac{\partial\phi}{\partial Q_t}\right)$. Because $\partial/\partial Q_t=\partial/\partial ict'$ and the spatial derivatives are plain, the two kinds of component are recorded separately:</p>
+<p>The temporal component in the $ict'$ basis is $J_t = i\left(\chi^{\mathrm{scl}}\,\frac{\partial{\chi^{\mathrm{scl}}}^{*}}{\partial Q_t} - {\chi^{\mathrm{scl}}}^{*}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t}\right)$. Because $\partial/\partial Q_t=\partial/\partial ict'$ and the spatial derivatives are plain, the two kinds of component are recorded separately:</p>
 <p>$$
-J_t = -\frac{1}{c}\left(\phi^{*}\partial/\partial t'\,\phi - \phi\,\partial/\partial t'\,\phi^{*}\right) = -\frac{2i}{c}\,\mathrm{Im}\!\left(\phi^{*}\frac{\partial\phi}{\partial t'}\right),
+J_t = -\frac{1}{c}\left({\chi^{\mathrm{scl}}}^{*}\partial/\partial t'\,\chi^{\mathrm{scl}} - \chi^{\mathrm{scl}}\,\partial/\partial t'\,{\chi^{\mathrm{scl}}}^{*}\right) = -\frac{2i}{c}\,\mathrm{Im}\!\left({\chi^{\mathrm{scl}}}^{*}\frac{\partial\chi^{\mathrm{scl}}}{\partial t'}\right),
 $$</p>
 <p>which is <strong>purely imaginary</strong>, while the spatial components</p>
 <p>$$
-J_k = +2\,\mathrm{Im}\!\left(\phi^{*}\frac{\partial\phi}{\partial Q_k}\right)
+J_k = +2\,\mathrm{Im}\!\left({\chi^{\mathrm{scl}}}^{*}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_k}\right)
 $$</p>
 <p>are real, the $i$ of the current multiplying the $-2i$ of the Wronskian to $+2$. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J_t = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$, with</p>
 <p>$$
-\rho = \frac{i}{c^2}\left(\phi^{*}\partial/\partial t'\,\phi - \phi\,\partial/\partial t'\,\phi^{*}\right),
+\rho = \frac{i}{c^2}\left({\chi^{\mathrm{scl}}}^{*}\partial/\partial t'\,\chi^{\mathrm{scl}} - \chi^{\mathrm{scl}}\,\partial/\partial t'\,{\chi^{\mathrm{scl}}}^{*}\right),
 $$</p>
-<p>which is real and <strong>positive</strong> on a positive-frequency wave $\phi\propto\exp(i(\vec k\cdot\vec x-\omega t'))$, where it equals $\frac{2\omega}{c^2}|\phi|^2$. This is the sign convention of <em>The Klein–Gordon Equation in Biquaternionic Form</em>, and it is what fixes the sign of $\tilde{J}$ above.</p>
+<p>which is real and <strong>positive</strong> on a positive-frequency wave $\chi^{\mathrm{scl}}\propto\exp(i(\vec k\cdot\vec x-\omega t'))$, where it equals $\frac{2\omega}{c^2}|\chi^{\mathrm{scl}}|^2$. This is the sign convention of <em>The Klein–Gordon Equation in Biquaternionic Form</em>, and it is what fixes the sign of $\tilde{J}$ above.</p>
 <h3 id="conservation-and-the-identity-behind-it">Conservation and the Identity Behind It</h3>
 <p>Forming the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,</p>
 <p>$$
@@ -288,20 +288,20 @@ $$</p>
 <h3 id="the-canonical-tensor">The Canonical Tensor</h3>
 <p>The same translation symmetry applied to the field action gives the <strong>canonical energy–momentum</strong>, the Noether current of spacetime translations. For the complex scalar field it is</p>
 <p>$$
-\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} + \varepsilon_\mu\delta_{\mu\nu}\,\mathcal{L}_\phi\;}
+\boxed{\;T_{\mu\nu} = \frac{\partial{\chi^{\mathrm{scl}}}^*}{\partial x_\mu}\frac{\partial\chi^{\mathrm{scl}}}{\partial x_\nu} + \frac{\partial\chi^{\mathrm{scl}}}{\partial x_\mu}\frac{\partial{\chi^{\mathrm{scl}}}^*}{\partial x_\nu} + \varepsilon_\mu\delta_{\mu\nu}\,\mathcal{L}_\chi^{\mathrm{scl}}\;}
 $$</p>
 <p>with the scalar Lagrangian of the same coordinates,</p>
 <p>$$
-\mathcal{L}_\phi = \sum_\mu\frac{\partial\phi^*}{\partial Q_\mu}\frac{\partial\phi}{\partial Q_\mu} + \frac{m^2c^2}{\hbar^2}|\phi|^2
-= -\frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 .
+\mathcal{L}_\chi^{\mathrm{scl}} = \sum_\mu\frac{\partial{\chi^{\mathrm{scl}}}^*}{\partial Q_\mu}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_\mu} + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2
+= -\frac{1}{c^2}\left|\frac{\partial\chi^{\mathrm{scl}}}{\partial t'}\right|^2 + |\nabla\chi^{\mathrm{scl}}|^2 + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2 .
 $$</p>
-<p>Here $x_\mu=(ct',x,y,z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=ix_0$: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_\phi$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=ict'$, spent once and written out. Translation invariance gives</p>
+<p>Here $x_\mu=(ct',x,y,z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=ix_0$: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_\chi^{\mathrm{scl}}$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=ict'$, spent once and written out. Translation invariance gives</p>
 <p>$$
 -\frac{\partial T_{0\nu}}{\partial x_0}+\sum_k\frac{\partial T_{k\nu}}{\partial x_k} = 0
 $$</p>
 <p>on shell. Its time–time component is the energy density,</p>
 <p>$$
-T_{00} = \frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 > 0,
+T_{00} = \frac{1}{c^2}\left|\frac{\partial\chi^{\mathrm{scl}}}{\partial t'}\right|^2 + |\nabla\chi^{\mathrm{scl}}|^2 + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2 > 0,
 $$</p>
 <p>positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial x_k$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.</p>
 <h3 id="why-the-framework-does-not-write-it-as-one-biquaternion">Why the Framework Does Not Write It as One Biquaternion</h3>
@@ -313,7 +313,7 @@ $$</p>
 $$</p>
 <p>the last equality being the Poynting theorem. The factor $i$ is uniform across the two terms, as a temporal component must be in the $ict'$ convention, and dividing it out recovers $\partial W/\partial t' + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. The real form $\tilde W = W + \frac{1}{c}\vec S$ fails exactly this test: its scalar divergence carries the $i$ on the time term only, and on a free plane wave it equals $\frac{1-i}{c}\partial W/\partial t'$, which is not zero. What <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em> isolates is that factor $i$ on the Poynting part, and the equation $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$, taken as a biquaternion identity with a power–force density on the right, is not what the corpus establishes for either form: what it verifies is the scalar statement above, not the vector one. Read as a Noether statement, $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ says the translation current is conserved up to the work done on the charges — the source is present, so the field alone is not closed.</p>
 <h3 id="a-caution-on-the-math278-convention">A Caution on the $ict'$ Convention</h3>
-<p>The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=-\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$, with $\mu=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.</p>
+<p>The energy density is not $\mathcal{L}_\chi^{\mathrm{scl}}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\chi^{\mathrm{scl}}|^2+|\nabla\chi^{\mathrm{scl}}|^2+\mu^2|\chi^{\mathrm{scl}}|^2$ while $\mathcal{L}_\chi^{\mathrm{scl}}=-\frac{1}{c^2}|\dot\chi^{\mathrm{scl}}|^2+|\nabla\chi^{\mathrm{scl}}|^2+\mu^2|\chi^{\mathrm{scl}}|^2$, with $\mu=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.</p>
 <h2 id="lorentz-invariance-and-the-angular-momentum-bivector">Lorentz Invariance and the Angular-Momentum Bivector</h2>
 <h3 id="the-particle-bivector">The Particle Bivector</h3>
 <p>Lorentz invariance is a spacetime symmetry like translation, and it has a Noether current too. For a free particle the conserved quantity is the antisymmetric pair</p>
@@ -420,7 +420,7 @@ $$</p>
 <p>Noether's theorem in biquaternionic form joins the two ends that <em>Relativistic Mechanics in Biquaternionic Form</em> states separately, the free-particle action and the conserved four-current, by deriving the second from the first. The theorem has two forms. For an <strong>internal</strong> symmetry, that of the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is</p>
 <p>$$
 \tilde{J} = i\left[(\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi} - \tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi})\right] = \sum_\nu J_\nu e_\nu,
-\qquad J_\nu = i\left(\phi\,\partial/\partial Q_\nu\,\phi^{*} - \phi^{*}\partial/\partial Q_\nu\,\phi\right),
+\qquad J_\nu = i\left(\chi^{\mathrm{scl}}\,\partial/\partial Q_\nu\,{\chi^{\mathrm{scl}}}^{*} - {\chi^{\mathrm{scl}}}^{*}\partial/\partial Q_\nu\,\chi^{\mathrm{scl}}\right),
 $$</p>
 <p>which lies in $\mathbb{M}_-$ and satisfies the Noether identity</p>
 <p>$$
@@ -434,7 +434,7 @@ $$</p>
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$</p>
 <p>as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the <strong>coordinate</strong>-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dt' = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde R_0^{\natural}))$, with $\mathrm{Sc}(\tilde P\tilde R_0^{\natural}) = \vec k\cdot\vec R_0-\omega t'_0$.</p>
-<p>The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial x_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\phi/\partial t'|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.</p>
+<p>The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_k\partial T_{k\nu}/\partial x_k = 0$ on shell in the real coordinates, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\chi^{\mathrm{scl}}/\partial t'|^2 + |\nabla\chi^{\mathrm{scl}}|^2 + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -505,11 +505,11 @@ $$</p>
 <td>Four-force (proper-time derivative; not summable)</td>
 </tr>
 <tr>
-<td>$\tilde{\Phi} = \phi\,e_t\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde{\Phi} = \chi^{\mathrm{scl}}\,e_t\in\mathbb{C}_{\mathbb{B}}$</td>
 <td>Complex biquaternion scalar field</td>
 </tr>
 <tr>
-<td>$\mathcal{L} = \sum_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\phi|^2$</td>
+<td>$\mathcal{L} = \sum_\mu(\partial{\chi^{\mathrm{scl}}}^{*}/\partial Q_\mu)(\partial\chi^{\mathrm{scl}}/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\chi^{\mathrm{scl}}|^2$</td>
 <td>Field Lagrangian density, $Q$ frame</td>
 </tr>
 <tr>
@@ -545,8 +545,8 @@ $$</p>
 <td>Real coordinates of the energy–momentum tensor, the chart of $Q_\mu$ at $Q_t=ix_0$</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu} = (\partial\phi^*/\partial x_\mu)(\partial\phi/\partial x_\nu) + (\partial\phi/\partial x_\mu)(\partial\phi^*/\partial x_\nu) + \varepsilon_\mu\delta_{\mu\nu}\mathcal{L}_\phi$</td>
-<td>Canonical energy–momentum in the real coordinates; the coefficient of $\mathcal{L}_\phi$ is the plain form of the two units</td>
+<td>$T_{\mu\nu} = (\partial{\chi^{\mathrm{scl}}}^*/\partial x_\mu)(\partial\chi^{\mathrm{scl}}/\partial x_\nu) + (\partial\chi^{\mathrm{scl}}/\partial x_\mu)(\partial{\chi^{\mathrm{scl}}}^*/\partial x_\nu) + \varepsilon_\mu\delta_{\mu\nu}\mathcal{L}_\chi^{\mathrm{scl}}$</td>
+<td>Canonical energy–momentum in the real coordinates; the coefficient of $\mathcal{L}_\chi^{\mathrm{scl}}$ is the plain form of the two units</td>
 </tr>
 <tr>
 <td>$\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$</td>

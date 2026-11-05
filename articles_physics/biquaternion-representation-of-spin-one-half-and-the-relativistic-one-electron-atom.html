@@ -225,22 +225,22 @@ $$</p>
 <h2 id="the-rotation-operators">The Rotation Operators</h2>
 <p><strong>The source writes $D^\dagger$ for the conjugate, and the corpus writes $D^{*}$ for the Hermitian conjugate of an element</strong>, the dagger being reserved for operators. The source's rotation operator and its conjugate are</p>
 <p>$$
-D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+D(n,\theta) = e_t\cos\frac{\theta}{2} - i\left(q_p\cdot n\right)\sin\frac{\theta}{2},
 \qquad
-D^{*}(n,\varphi) = e_t\cos\frac{\varphi}{2} + i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+D^{*}(n,\theta) = e_t\cos\frac{\theta}{2} + i\left(q_p\cdot n\right)\sin\frac{\theta}{2},
 $$</p>
 <p>with $q_p$ the source's spin vector, whose component along the axis $n$ is $q_p\cdot n=-i(\vec e\cdot n)$ — the unit-spin vector times $-i$, not $\vec e\cdot n$ itself. Since $-i(-i)=i^2=-1$, the general formula reduces to</p>
 <p>$$
-D(n,\varphi)=e_t\cos\frac{\varphi}{2}-(\vec e\cdot n)\sin\frac{\varphi}{2},
+D(n,\theta)=e_t\cos\frac{\theta}{2}-(\vec e\cdot n)\sin\frac{\theta}{2},
 \qquad
-D^{*}(n,\varphi)=e_t\cos\frac{\varphi}{2}+(\vec e\cdot n)\sin\frac{\varphi}{2}.
+D^{*}(n,\theta)=e_t\cos\frac{\theta}{2}+(\vec e\cdot n)\sin\frac{\theta}{2}.
 $$</p>
 <p><strong>For the three axes the source's (14)–(16) read</strong></p>
 <p>$$
 \begin{aligned}
-D(x,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_z\sin\frac{\varphi}{2},\\
-D(y,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_y\sin\frac{\varphi}{2},\\
-D(z,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_x\sin\frac{\varphi}{2}.
+D(x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\\
+D(y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\\
+D(z,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_x\sin\frac{\theta}{2}.
 \end{aligned}
 $$</p>
 <p><strong>They are unit-norm elements</strong>: $D^{*}D = e_t$ was recomputed for each axis and holds exactly, so the corpus's rotor theory applies to them unchanged.</p>
@@ -249,13 +249,13 @@ $$</p>
 \boxed{\;
 \begin{aligned}
 D^{*} S_xD &= S_x,\\
-D^{*} S_yD &= \cos\varphi\,S_y-\sin\varphi\,S_z,\\
-D^{*} S_zD &= \cos\varphi\,S_z+\sin\varphi\,S_y.
+D^{*} S_yD &= \cos\theta\,S_y-\sin\theta\,S_z,\\
+D^{*} S_zD &= \cos\theta\,S_z+\sin\theta\,S_y.
 \end{aligned}\;}
 $$</p>
 <p><strong>The component along the axis is invariant and the two transverse components rotate into one another</strong> in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),</p>
 <p>$$
-D^{*}(n_a,\varphi)S_jD(n_a,\varphi)=\frac{\hbar}{2}\left(q_j\cos\varphi+q_k\sin\varphi\right),
+D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{\hbar}{2}\left(q_j\cos\theta+q_k\sin\theta\right),
 $$</p>
 <p>where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.</p>
 <h2 id="the-raising-and-lowering-operators">The Raising and Lowering Operators</h2>
@@ -301,7 +301,7 @@ $$</p>
 <p><strong>Its closed-form solution is given by the source as Laguerre polynomials</strong> in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\Psi^{*}\Psi$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is</p>
 <p>$$
 \begin{aligned}
-\rho(\theta,\phi)=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
+\rho(\theta,\theta^{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
 +C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
 &+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
 +C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
@@ -363,7 +363,7 @@ q = \left(q_t - iq_7\right)e_t - \left(iq_1 + q_4\right)\vec e_x - \left(iq_2 + 
 $$</p>
 <p>its equation (30). <strong>As printed, the parameter $q_7$ appears in two coefficients and the parameter $q_6$ in none</strong>, so the displayed correspondence cannot be a bijection between the eight parameters and the four complex coefficients. Recorded as printed and not repaired here. The same section represents "the Hodge operator" by the element $-ie_t$, its equation (31), a statement whose symbol $\varepsilon$ is not defined anywhere in the source and whose content cannot be recovered from the page; it is recorded as printed and nothing is built on it.</p>
 <p><strong>The second short section writes four $4\times4$ arrays in element form and attributes the representation to Silvis (2010)</strong>; that attribution is the only place in this corpus where Silvis is named. Two things are visible on the page without any reconstruction. The first array, with $1,1,-1,-1$ on its diagonal, is sent to the two diagonal places both carrying $e_t$, which is the identity: the second of the two is printed with $e_t$ where the minus of the $4\times4$ array should stand, so that as printed the image of that array is the identity and not the pair $(e_t,-e_t)$. The three places off the diagonal are printed with $-i\vec e_x$ above and $i\vec e_x$ below, and the same with $\vec e_z$ and with $\vec e_y$.</p>
-<p><strong>The corpus's side of the same correspondence is in <em>Matrix Representations Conventions</em>, §<em>The Legacy Pauli Gamma Formulation</em></strong>, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_k$ above and $-i\vec e_k$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.</p>
+<p><strong>The corpus's side of the same correspondence is in <em>Matrix Representations Conventions<em>, §</em>The Legacy Pauli Gamma Formulation</em></strong>, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_k$ above and $-i\vec e_k$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.</p>
 <h2 id="what-is-verified-and-what-is-not">What Is Verified and What Is Not</h2>
 <ul>
 <li>The four values of the source's table, exactly.</li>
@@ -491,7 +491,7 @@ $$</p>
 <td>The square-zero element $q_-/\sqrt2$</td>
 </tr>
 <tr>
-<td>$D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$, $q_p\cdot n=-i(\vec e\cdot n)$</td>
+<td>$D(n,\theta) = e_t\cos\frac{\theta}{2} - i(q_p\cdot n)\sin\frac{\theta}{2}$, $q_p\cdot n=-i(\vec e\cdot n)$</td>
 <td>The source's rotation operator; a unit-norm element</td>
 </tr>
 <tr>

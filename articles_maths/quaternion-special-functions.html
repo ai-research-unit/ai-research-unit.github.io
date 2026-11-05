@@ -88,7 +88,7 @@ $$</p>
 \exp(0) = 1 .
 $$</p>
 <p><strong>Caution.</strong> The exponential is not multiplicative in general, because $\mathbb{H}$ is not commutative. The identity $\exp(\tilde q_1 + \tilde q_2) = \exp(\tilde q_1) \exp(\tilde q_2)$ holds when $\tilde q_1$ and $\tilde q_2$ commute; it fails for non-commuting arguments, as the example of $\tfrac{\pi}{2}\vec e_x$ and $\tfrac{\pi}{2}\vec e_y$ shows.</p>
-<p>For a nonzero pure quaternion $\vec q \in \operatorname{Im}\mathbb{H}$ with $\lVert\vec Q\rVert = \sqrt{\langle\vec q\rangle_{\natural}}$, the exponential is</p>
+<p>For a nonzero pure quaternion $\vec q \in \operatorname{Im}\mathbb{H}$ with $\theta = \sqrt{\langle\vec q\rangle_{\natural}}$, the exponential is</p>
 <p>$$
 \exp(\vec q) = \cos\theta + \frac{\vec q}{\theta} \sin\theta.
 $$</p>
@@ -97,7 +97,7 @@ $$</p>
 \exp(\vec\omega \theta) = \cos\theta + \vec\omega \sin\theta.
 $$</p>
 <p>This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is a <strong>rotor</strong> (<em>Algebra and Element Conventions</em>, §<em>Summary of Notation</em>). The sandwich by this rotor rotates by $2\theta$, twice the angle in the exponent, which is the half-angle rule of <em>Exponential Polar Decomposition of Quaternions</em>, §<em>The Rotor Part</em>.</p>
-<p>For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\lVert\vec Q\rVert = \sqrt{\langle\vec q\rangle_{\natural}}$,</p>
+<p>For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\theta = \sqrt{\langle\vec q\rangle_{\natural}}$,</p>
 <p>$$ \boxed{\; \exp(\tilde q) = \exp(q_t) \left(\cos\theta + \frac{\vec q}{\theta} \sin\theta \right) \;} .$$</p>
 <p>So the exponential is the product of a real exponential and a unit quaternion. This is the quaternion analogue of the polar form of a complex number.</p>
 <p><strong>Remark.</strong> The modulus is read from the algebraic norm and is never written with bars. The <strong>modulus</strong> of $\tilde q$ is $\sqrt{\langle\tilde q\rangle_{\natural}}$, and the <strong>modulus of the vector part</strong> is $\sqrt{\langle\vec q\rangle_{\natural}}$; the two agree only when $q_t=0$. The algebraic norm is $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. Its square root is the modulus used in $\sqrt{\langle\exp\tilde q\rangle_{\natural}}=\exp(q_t)$ and in the logarithm.</p>
@@ -186,7 +186,7 @@ $$</p>
 </table></div>
 <p>For the non-real case the logarithms are therefore</p>
 <p>$$
-\tilde q_{\log}=q_{\log}e_t+(\theta+2\pi m)\operatorname{sgn}\tilde q, \qquad q_{\log}=\ln\sqrt{\langle\tilde q\rangle_{\natural}}, \quad \lVert\vec Q\rVert=\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}, \quad m\in\mathbb{Z},
+\tilde q_{\log}=q_{\log}e_t+(\theta+2\pi m)\operatorname{sgn}\tilde q, \qquad q_{\log}=\ln\sqrt{\langle\tilde q\rangle_{\natural}}, \quad \theta=\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}, \quad m\in\mathbb{Z},
 $$</p>
 <p>which is the period formula of <em>Exponential Polar Decomposition of Quaternions</em>, §<em>The General Logarithm</em>. Every nonzero quaternion has at least one logarithm. On the real axis the set of logarithms is not discrete but a union of spheres: the positive axis has the single value $\ln r$, then one sphere of radius $2\pi k$ for each $k\ge1$, and the negative axis has one sphere of radius $(2k+1)\pi$ for each $k\ge0$.</p>
 <p>The two coordinates of the logarithm are therefore as follows, with the angle and the axis that the vector coordinate carries.</p>
@@ -206,7 +206,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec q_{\log}=\operatorname{Vect}\tilde q_{\log}=w$</td>
-<td>$\theta\vec n$, with $\lVert\vec Q\rVert=\arccos\bigl(q_t/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr)\in[0,\pi]$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$; the other logarithms use $(\theta+2\pi m)\vec n$, and on the real axis $2\pi m\vec n$ at $+r$, $(2m+1)\pi\vec n$ at $-r$</td>
+<td>$\theta\vec n$, with $\theta=\arccos\bigl(q_t/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr)\in[0,\pi]$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$; the other logarithms use $(\theta+2\pi m)\vec n$, and on the real axis $2\pi m\vec n$ at $+r$, $(2m+1)\pi\vec n$ at $-r$</td>
 <td>pure exponent, one line or one sphere for each integer</td>
 </tr>
 </tbody>
@@ -230,7 +230,7 @@ $$</p>
 <p>$$
 \exp(\log\tilde q)=\tilde q .
 $$</p>
-<p><strong>Proof.</strong> Write $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, $\theta=\operatorname{Arg}\tilde q$ and $n=\operatorname{sgn}\tilde q$ when $\vec q\neq0$. By the construction, $\cos\lVert\vec Q\rVert=q_t/r$ and $\sin\lVert\vec Q\rVert=\sqrt{\langle\vec q\rangle_{\natural}}/r$, hence</p>
+<p><strong>Proof.</strong> Write $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, $\theta=\operatorname{Arg}\tilde q$ and $n=\operatorname{sgn}\tilde q$ when $\vec q\neq0$. By the construction, $\cos\theta=q_t/r$ and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$, hence</p>
 <p>$$
 \exp(\log\tilde q)=\exp(\ln r+\theta n)=r\left(\cos\theta+n\sin\theta\right)=q_t e_t+\vec q=\tilde q .
 $$</p>

@@ -107,22 +107,22 @@ $$</p>
 <h3 id="the-scalar-action">The Scalar Action</h3>
 <p>Let $\tilde{\Phi}$ be a biquaternion-valued field and take the Lagrangian density</p>
 <p>$$
-\boxed{\ \mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural}\ } ,
+\boxed{\ \mathcal{L}_\chi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural}\ } ,
 \qquad
 \mu = \frac{mc}{\hbar} .
 $$</p>
-<p>Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\phi$ the variation gives</p>
+<p>Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\chi$ the variation gives</p>
 <p>$$
-\Box\phi - \mu^2\phi = 0 ,
+\Box\chi - \mu^2\chi = 0 ,
 $$</p>
 <p>that is,</p>
 <p>$$
 \left(\Box-\mu^2\right)\tilde{\Phi} = 0 ,
 $$</p>
-<p>the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\phi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=ict'$ and $Q_k=x_k$, the kinetic term of $\mathcal{L}_\phi$ written out is</p>
+<p>the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\chi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=ict'$ and $Q_k=x_k$, the kinetic term of $\mathcal{L}_\chi$ written out is</p>
 <p>$$
-\mathcal{L}_\phi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\phi/\partial t'\right)^{2}+(\nabla\phi)^2\right)-\tfrac12\mu^2\phi^2
-= \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2 ,
+\mathcal{L}_\chi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\chi/\partial t'\right)^{2}+(\nabla\chi)^2\right)-\tfrac12\mu^2\chi^2
+= \frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}-\frac12(\nabla\chi)^2-\frac12\mu^2\chi^2 ,
 $$</p>
 <p>and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.</p>
 <h3 id="the-electromagnetic-action">The Electromagnetic Action</h3>
@@ -162,21 +162,21 @@ $$</p>
 <p><strong>Symmetry and improvement.</strong> The canonical tensor need not be symmetric or gauge invariant; the physical stress–energy is obtained by adding a divergence of an antisymmetric tensor, which does not change the conserved charges. For the electromagnetic field the improved tensor is symmetric and gauge invariant, and it is the one constructed in the next sections. For a single real scalar the canonical tensor is already symmetric. The improvement is standard and is recorded here because the bigeneral quaternionic bilinear automatically gives the improved form.</p>
 <p><strong>Overall sign.</strong> The canonical tensor is defined up to an overall sign by the sign of the Lagrangian, and this article follows the convention of the companion exercise: the tensor is taken with the sign that makes the physical energy density positive, $T_{tt}>0$, which for the electromagnetic field means $\mathsf{T}_{00}=-T_{tt}=-W$. Since an overall factor does not affect $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=0$, the conservation law is unaltered.</p>
 <h2 id="the-scalar-field-stressenergy">The Scalar Field Stress–Energy</h2>
-<p>For a real scalar field with the Lagrangian $\mathcal{L}_\phi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is</p>
+<p>For a real scalar field with the Lagrangian $\mathcal{L}_\chi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is</p>
 <p>$$
-\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \delta_{\mu\nu}\mathcal{L}_\phi\ } ,
+\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\nu\,\chi + \delta_{\mu\nu}\mathcal{L}_\chi\ } ,
 $$</p>
 <p>the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=ict'$ and $Q_k=x_k$, the time row carrying the minus of $i^2$,</p>
 <p>$$
-\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0\ } ,
+\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2} + \frac12(\nabla\chi)^2 + \frac12\mu^2\chi^2 > 0\ } ,
 $$</p>
 <p>$$
-T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\phi/\partial t'\,\partial/\partial Q_k\,\phi ,
+T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\chi/\partial t'\,\partial/\partial Q_k\,\chi ,
 \qquad
-T_{jk} = T_{kj} = \partial/\partial Q_j\,\phi\,\partial/\partial Q_k\,\phi
-+ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2\right) .
+T_{jk} = T_{kj} = \partial/\partial Q_j\,\chi\,\partial/\partial Q_k\,\chi
++ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}-\frac12(\nabla\chi)^2-\frac12\mu^2\chi^2\right) .
 $$</p>
-<p>For a right-moving massless wave, $\phi=f(x-ct')$, these reduce to $T_{tt}=T_{xx}=(\partial\phi/\partial x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.</p>
+<p>For a right-moving massless wave, $\chi=f(x-ct')$, these reduce to $T_{tt}=T_{xx}=(\partial\chi/\partial x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.</p>
 <p>The energy density is manifestly positive: it is the sum of three squares, one for the kinetic term, one for the gradient, and one for the mass. The conservation law</p>
 <p>$$
 \sum_\mu\partial/\partial Q_\mu T_{\mu\nu} = 0
@@ -189,7 +189,7 @@ $$</p>
 <p>is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.</p>
 <p>As a check, consider the superposition</p>
 <p>$$
-\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \cos\!\left(k_1x-\omega_1t'\right) + 0.6\cos\!\left(k_2y-\omega_2t'\right),
+\chi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \cos\!\left(k_1x-\omega_1t'\right) + 0.6\cos\!\left(k_2y-\omega_2t'\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -319,7 +319,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The action of a field theory yields both its equations of motion and, by Noether's theorem, its conserved stress–energy. In biquaternion form the scalar action</p>
 <p>$$
-\mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural},
+\mathcal{L}_\chi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural},
 \qquad
 \mu=\frac{mc}{\hbar},
 $$</p>
@@ -330,9 +330,9 @@ S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 $$</p>
 <p>has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.</p>
-<p>The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\delta_{\mu\nu}\mathcal{L}_\phi$, with</p>
+<p>The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\chi\partial/\partial Q_\nu\,\chi+\delta_{\mu\nu}\mathcal{L}_\chi$, with</p>
 <p>$$
-T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
+T_{tt}=\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}+\frac12(\nabla\chi)^2+\frac12\mu^2\chi^2>0,
 \qquad
 \sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=0 \ \text{on shell},
 $$</p>
@@ -385,7 +385,7 @@ $$</p>
 <td>Action; $\mathcal{L}$ the Lagrangian density</td>
 </tr>
 <tr>
-<td>$\mathcal{L}_\phi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$</td>
+<td>$\mathcal{L}_\chi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$</td>
 <td>Scalar Lagrangian</td>
 </tr>
 <tr>
@@ -437,11 +437,11 @@ $$</p>
 <td>Conservation with source per direction; Lorentz four-force</td>
 </tr>
 <tr>
-<td>$T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\delta_{\mu\nu}\mathcal{L}_\phi$</td>
+<td>$T_{\mu\nu}=\partial/\partial Q_\mu\,\chi\partial/\partial Q_\nu\,\chi+\delta_{\mu\nu}\mathcal{L}_\chi$</td>
 <td>Scalar stress–energy</td>
 </tr>
 <tr>
-<td>$T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$</td>
+<td>$T_{tt}=\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}+\frac12(\nabla\chi)^2+\frac12\mu^2\chi^2$</td>
 <td>Scalar energy density, positive</td>
 </tr>
 <tr>

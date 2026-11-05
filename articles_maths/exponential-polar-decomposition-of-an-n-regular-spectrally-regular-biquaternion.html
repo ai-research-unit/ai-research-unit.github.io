@@ -433,7 +433,7 @@ $$</p>
 <p><strong>Theorem (the normal dichotomy).</strong> For $\tilde Q\in\Sigma_{11}$ with word as above, the following are equivalent.</p>
 <ol>
 <li>$\tilde Q$ is normal, $[\tilde Q,\tilde Q^*]=0$.</li>
-<li>$\vec Q\times\overline{\vec Q}=0$, that is, $\vec Q=\zeta\vec u$ with $\zeta\in\mathbb{C}$ and $\vec u$ a real unit vector.</li>
+<li>$\vec Q\times\overline{\vec Q}=0$, that is, $\vec Q=\omega\vec u$ with $\omega\in\mathbb{C}$ and $\vec u$ a real unit vector.</li>
 <li>The two polar factors $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ commute with $\tilde Q$.</li>
 <li>The two axes are parallel or antiparallel, or one of the two angles vanishes.</li>
 <li>The word is a single exponential.</li>
@@ -465,7 +465,7 @@ $$</p>
 <p>which gives 1. If 3 holds, both factors are functions of $\tilde U$, hence diagonal in its eigenbasis, so their axes are the two eigenlines, which are $\pm i\vec\Xi$; this gives 4. If 4 holds, the two exponents commute, so the product is the exponential of their sum, which gives 5. If 5 holds, $\tilde Q$ is a scalar multiple of the exponential of a complex multiple of a real pure vector, and such an exponential is normal; this gives 1.</p>
 <p>For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\psi}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\psi/2}e^{i\theta/2}$ and $e^{\psi/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\psi/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments.</p>
 <p>The display is the <strong>amalgamation</strong> of the four factors into one exponential. The complex angle is $\frac{\theta+i\psi}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.</p>
-<p><strong>Remark (the axes in the normal case).</strong> The common axis is $\pm i\vec\Xi$. Since $\vec\Xi=-i\vec Q/B$ and $\vec Q=\zeta\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.</p>
+<p><strong>Remark (the axes in the normal case).</strong> The common axis is $\pm i\vec\Xi$. Since $\vec\Xi=-i\vec Q/B$ and $\vec Q=\omega\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.</p>
 <h3 id="the-non-normal-case">The Non-Normal Case</h3>
 <p>In the general case the polar factors are not functions of $\tilde Q$, and the eigenbasis is not a polar basis.</p>
 <p><strong>Proposition (the failure of the spectral reading).</strong> Let $\tilde Q\in\Sigma_{11}$ be non-normal. Then</p>
@@ -531,7 +531,7 @@ $$</p>
 </table></div>
 <p>The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(r,\alpha,U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.</p>
 <p>The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a $*$-unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.</p>
-<p><strong>Remark (the two decompositions are transverse).</strong> The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\zeta\vec u$ with $Q_t,\zeta\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.</p>
+<p><strong>Remark (the two decompositions are transverse).</strong> The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\omega\vec u$ with $Q_t,\omega\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <p><strong>Theorem (the exponential polar decomposition).</strong> Every $\tilde Q\in\Sigma_{11}$ has a unique writing</p>
 <p>$$
@@ -814,14 +814,14 @@ $$</p>
 <h3 id="the-null-cone">The Null Cone</h3>
 <p>On the null cone the modulus vanishes and no unit factor exists. A nonzero element of the cone is a zero divisor of rank one. As an element of the sector approaches the cone with $B^2$ bounded away from zero, the rapidity diverges and the scale collapses. The standard family is</p>
 <p>$$
-\tilde Q(\psi)=R e^{-\psi/2}\,\zeta\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
+\tilde Q(\psi)=R e^{-\psi/2}\,\omega\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
 \qquad
 \psi>0,
 $$</p>
-<p>with $R>0$, $|\zeta|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\psi/2}$, and its word has rapidity $\psi$. The limit is</p>
+<p>with $R>0$, $|\omega|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\psi/2}$, and its word has rapidity $\psi$. The limit is</p>
 <p>$$
 \tilde Q(\psi)\longrightarrow
-\frac{R\zeta}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
+\frac{R\omega}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 \qquad
 \psi\to\infty,
 $$</p>
