@@ -111,16 +111,16 @@ $$</p>
 <p><strong>Proof sketch.</strong> The distance along the imaginary axis is $\int_s^t dy/y = \log(t/s)$ for $t > s$; the group $PSL(2, \mathbb{R})$ acts transitively on pairs of points at a given distance, and any two points are carried to two points of a vertical geodesic, which gives the general formula; the displayed identity is checked directly.</p>
 <p><strong>Corollary.</strong> The hyperbolic metric is complete and the hyperbolic distance is unbounded, so $\mathbb{H}^2$ has infinite diameter. Its area element is $dA = dx\,dy/y^2$, and the area of the region $\{x_0 \leq x \leq x_1,\ y \geq y_0\}$ is $(x_1 - x_0)/y_0$, finite in the horizontal direction and infinite in the vertical.</p>
 <h3 id="the-poincare-disk-model">The Poincaré Disk Model</h3>
-<p><strong>Definition.</strong> The <strong>Poincaré disk</strong> is the unit disk $\mathbb{D}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric</p>
+<p><strong>Definition.</strong> The <strong>Poincaré disk</strong> is the unit disk $\mathbb{U}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric</p>
 <p>$$
-g_{\mathbb{D}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
+g_{\mathbb{U}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
 $$</p>
 <p><strong>Theorem.</strong> The <strong>Cayley transform</strong></p>
 <p>$$
 C(z) = \frac{z - i}{z + i}
 $$</p>
 <p>is a biholomorphic isometry from the upper half-plane model onto the Poincaré disk, with inverse $C^{-1}(w) = i(1 + w)/(1 - w)$.</p>
-<p><strong>Proof.</strong> The Cayley transform is a Möbius transformation carrying the real axis to the unit circle and the upper half-plane to the disk; the identity $|C'(z)|/(1 - |C(z)|^2) = 1/(2\operatorname{Im} z)$ gives $C^*(g_{\mathbb{D}}) = g$.</p>
+<p><strong>Proof.</strong> The Cayley transform is a Möbius transformation carrying the real axis to the unit circle and the upper half-plane to the disk; the identity $|C'(z)|/(1 - |C(z)|^2) = 1/(2\operatorname{Im} z)$ gives $C^*(g_{\mathbb{U}}) = g$.</p>
 <p><strong>Proposition (disk distance).</strong> For $z, w$ in the disk,</p>
 <p>$$
 \cosh d(z, w) = 1 + \frac{2|z - w|^2}{(1 - |z|^2)(1 - |w|^2)} .
@@ -266,7 +266,7 @@ $$</p>
 <td>Hyperbolic metric in the upper half-plane/half-space model</td>
 </tr>
 <tr>
-<td>$g_{\mathbb{D}} = 4|dz|^2/(1-|z|^2)^2$</td>
+<td>$g_{\mathbb{U}} = 4|dz|^2/(1-|z|^2)^2$</td>
 <td>Hyperbolic metric in the Poincaré disk model</td>
 </tr>
 <tr>

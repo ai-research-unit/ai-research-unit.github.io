@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects That Split Left and Right — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="objects-that-split-left-and-right"><strong>Objects That Split Left and Right</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The Dirac equation splits into a left-handed member and a right-handed member. Which other quantities of the corpus split the same way?</p>
+<p><strong>The answer in one line.</strong> Four objects carry a split that is not the Dirac one: the field strength, the Euclidean two-form, the two-dimensional light-cone mode, and the operator algebra itself. Every other entry is either the Dirac split read on an object built from the Dirac field, such as a current, a bilinear, a vertex or a lattice count, or a place where the split is missing.</p>
+<p><strong>Why the question is confusing, and the cure.</strong> The corpus writes <em>left</em> and <em>right</em> for three different things. One is the slot of an operator. One is the label of an element. One is the helicity of a field. They are separated once, in §<em>The Three Things Called Left and Right</em>, and every entry of the list names the one it uses.</p>
+<p><strong>The checklist.</strong> A split counts as a left–right split here only when four things are present: a splitting operator, its two halves, a statement of whether the halves are copies or conjugates, and a coupling term that maps one half into the other. §<em>The Checklist</em> states the four and fills them for the Dirac case.</p>
+<p><strong>The list.</strong> §<em>The List</em> numbers fourteen objects. Each carries a paragraph, one line on how it stands to the Dirac case, and the corpus articles that treat it, with direct links.</p>
+<p><strong>The near misses.</strong> §<em>What Is Not a Left–Right Split</em> collects five structures that look like splits and are not.</p>
+<p><strong>Warrant.</strong> The algebraic statements of §<em>The Checklist</em> are recomputed here on the sixteen cells of the algebra, and the residuals are tabulated. Every claim about an article is read from that article and carries its link.</p>
+<h2 id="the-three-things-called-left-and-right">The Three Things Called Left and Right</h2>
+<p><strong>First, the slot of an operator.</strong> An operator of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is a cell $L_aR_b$: the left slot holds $a$ and the right slot holds $b$. The pure left multipliers form a four-dimensional space $L(\mathbb{B})$, the pure right multipliers another, $R(\mathbb{B})$, they meet in the scalars, and their sum is seven-dimensional inside the sixteen. The label is read from the cell and from nothing else. This is <strong>operator chirality</strong>, and it splits operators, not fields.</p>
+<p><strong>Second, the label of an element.</strong> The volume cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ is an involution of spectrum $+1,+1,-1,-1$, so every element $\tilde Q$ splits into $\tilde Q_+$ and $\tilde Q_-$, written $\tilde\Psi_R$ and $\tilde\Psi_L$ in the letters of the Dirac literature. This is the <strong>value</strong> or <strong>subscript</strong> of an element, and it splits the algebra, two complex dimensions on each side.</p>
+<p><strong>Third, the helicity of a field.</strong> The projection $\lambda=\vec u_p\cdot\vec S$ of the spin on a declared axis has the spectrum $\hbar h$ on a carrier of spin $s$. This is a label of a <strong>state</strong>, and it needs an axis that the algebra does not supply.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Where it lives</th>
+<th>The two sides</th>
+<th>What fixes the side</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operator chirality</td>
+<td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>left slot, right slot</td>
+<td>the cell</td>
+</tr>
+<tr>
+<td>The value of an element</td>
+<td>$\mathbb{B}$</td>
+<td>$+1$, $-1$ of $\mathsf{V}^{\mathrm{vol}}$</td>
+<td>the declared frame</td>
+</tr>
+<tr>
+<td>Helicity</td>
+<td>a carrier of the rotation algebra</td>
+<td>the eigenvalues of $\vec u_p\cdot\vec S$</td>
+<td>the declared axis</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Dirac equation uses the second for its field and the first for its operators.</strong> The gradient acts by left multiplication, so it preserves the value; the chirality cell acts on the right, so it grades. The two commute because they sit on opposite sides. That is the mechanism of the whole subject, and the mass is the term that bridges the two halves because it is central, hence the one operator with no side at all.</p>
+<p><strong>The consequence, stated plainly.</strong> No sum of left multiplications carries one value into the other. The Dirac equation therefore cannot be one equation on one half; it is a pair, and the pair is the definition.</p>
+<h2 id="the-checklist">The Checklist</h2>
+<p>Four questions decide whether a candidate object carries a left–right split.</p>
+<ol>
+<li><strong>The splitting operator.</strong> Which operator separates the two sides, and what is its square? A square of $+1$ gives two eigenspaces and a $\mathbb{Z}_2$ grading. A square of $-1$ gives a complex structure and two conjugate halves.</li>
+<li><strong>The halves.</strong> Are they two copies of one object, or two inequivalent objects? A copy is vector-like; a conjugate is not.</li>
+<li><strong>The coupling.</strong> Which term maps one half into the other? A term that stays inside one half is not a coupling.</li>
+<li><strong>The status.</strong> Is the split stated in the corpus, is it a reading of a corpus statement, or is it outside the corpus?</li>
+</ol>
+<p><strong>The Dirac row, filled and recomputed.</strong> The splitting operator is $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, of square $+1$. The halves are two complex dimensions each, both stable under left multiplication, so both are copies of the simple left module $S$. The coupling is the mass, an isomorphism of the two halves. The status is stated in the corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mathsf{V}^{\mathrm{vol}})^2-\mathrm I$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[L_a,\mathsf{V}^{\mathrm{vol}}]$, fifty random complex $a$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\{R_{\vec e_x},\mathsf{V}^{\mathrm{vol}}\}$ and $\{R_{\vec e_y},\mathsf{V}^{\mathrm{vol}}\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[R_{\vec e_t},\mathsf{V}^{\mathrm{vol}}]$ and $[R_{\vec e_z},\mathsf{V}^{\mathrm{vol}}]$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathsf C\,L_a\,\mathsf C-R_{a^{\natural}}$, fifty random $a$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$ of the two chiral projectors</td>
+<td>$2,\ 2$</td>
+</tr>
+<tr>
+<td>left multiplication across the halves, fifty random $a$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table says in words.</strong> Left multiplication never leaves a half, so the Dirac operator, which is a left multiplier, cannot exchange the two halves: that is the second line, and it is why the equation is a pair. A right multiplication by the time unit or by the axis unit never leaves a half either, and a right multiplication by either other unit exchanges them: those are the third and fourth lines, and they are why the chirality cell is a right multiplier and why it grades. The mass is central, so it belongs to both families, has no side, and is the only term that can pair the halves.</p>
+<h2 id="the-list">The List</h2>
+<h3 id="1-the-dirac-field">1. The Dirac Field</h3>
+<p><strong>The split.</strong> The reference case. $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, involution, halves of two complex dimensions, the pair</p>
+<p>$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
+$$</p>
+<p><strong>Relation to the Dirac case.</strong> This is it.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>: the pair, the mass as a pairing, the plane-wave solutions.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a>: the cell $\mathsf{V}^{\mathrm{vol}}$, its four properties, and the list of eight objects the notion does not need.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>: the classification, and the limit of the two copies.</li>
+<li><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>: the two values computed on worked examples.</li>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>: the field as an element in its two halves, the anticommutators.</li>
+<li><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a>, §<em>The Chirality Convention</em>: the definition the corpus writes by default.</li>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>: the mathematics, including the congruence $\mathsf C L(a^{\natural})\mathsf C=R(a)$.</li>
+</ul>
+<h3 id="2-the-operator-algebra-itself">2. The Operator Algebra Itself</h3>
+<p><strong>The split.</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ splits into the left multipliers and the right multipliers, of dimensions four and four, meeting in the scalars. The exchange is the congruence</p>
+<p>$$
+\mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
+$$</p>
+<p>verified at residual $0$ on random $a$. This is a left–right split of the <strong>operators</strong>, not of a field.</p>
+<p><strong>Relation to the Dirac case.</strong> It is the parent structure: the Dirac equation puts its derivatives in the left family and its chirality cell in the right family, and the two commute because a left multiplier and a right multiplier always do.</p>
+<p><strong>The one member of both families is the mass.</strong> $L\cap R$ is the scalar line, so the mass is the only term of the Dirac equation that has no side. That is where the coupling of object 1 comes from.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="left-and-right-actions-of-operators.html">Left and Right Actions of Operators</a>: the two readings of the gradient, their difference by twice the curl, and the two Leibniz defects.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a>: the dimension table $4,4,1,7,16$ and the physical reading.</li>
+<li><a href="the-gauge-covariant-derivative-an-inventory-by-type.html">The Gauge-Covariant Derivative: An Inventory by Type</a>: the nine shapes of one operator, sorted by the side the connection multiplies from.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>: the arrays of the two families and the bridge to the $4\times4$ display.</li>
+<li><a href="../articles_physics/conceptual-conventions.html">Conceptual Conventions</a>: operator chirality as a preferred concept, and the two copies of $\mathbb{C}^2$ as an unpreferred one.</li>
+</ul>
+<h3 id="3-the-dirac-current">3. The Dirac Current</h3>
+<p><strong>The split.</strong> The current has a vector part and an axial part, and the axial part is the vector part followed by the chirality cell. The divergence of the axial current is proportional to the mass,</p>
+<p>$$
+\sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}=2m\,\tilde\Psi^{*}\,iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde\Psi\vec e_z\bigr),
+$$</p>
+<p>so the axial current is conserved exactly when the coupling of object 1 vanishes.</p>
+<p><strong>Relation to the Dirac case.</strong> The same split read on a bilinear. The mass appears as the divergence rather than as a term of the equation, and that is the same fact in a second place.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>: the four frame actions, the axial companion, and the statement that each generator exchanges the value while a product of two keeps it.</li>
+<li><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a>, §<em>The Vertices</em>: the axial vertex as the vector vertex times the chirality cell.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>: the chiral currents and their quantum numbers.</li>
+</ul>
+<h3 id="4-the-field-strength">4. The Field Strength</h3>
+<p><strong>The split.</strong> The Hodge dual of the field strength is the scalar imaginary,</p>
+<p>$$
+\star\tilde F=-i\tilde F,\qquad \star^2=-1\ \text{on the real two-forms},
+$$</p>
+<p>so on the complexified two-form space $\star$ has eigenvalues $\pm i$, and the projectors $\tfrac12(1\pm i\star)$ have rank three each. The two halves are $(1,0)$ and $(0,1)$: the self-dual and the anti-self-dual part of the field.</p>
+<p><strong>The three differences from the Dirac case, and they matter.</strong></p>
+<p>First, the splitting operator is a <strong>complex structure</strong>, not an involution. Its two eigenspaces are a complex space and its conjugate, not two copies.</p>
+<p>Second, the halves are <strong>inequivalent</strong>. $(1,0)$ and $(0,1)$ are conjugate representations of the Lorentz group. This is the one place in the algebra where the two sides differ in kind, and §<em>What Is Not a Left–Right Split</em> records what the Dirac halves cannot do for that reason.</p>
+<p>Third, <strong>the mass does not couple the halves</strong>. The Proca equation is $\tilde\nabla\tilde F=\mu^2\tilde A$; its divergence gives the Lorenz condition, then $(\Box-\mu^2)\tilde A=0$, then $(\Box-\mu^2)\tilde F=0$. The dual is constant, so it commutes with $\Box$, and each half obeys the massive equation on its own. The reason is structural: a one-form has no self-dual split in four dimensions, so the mass term lives in a space where the split is not defined, and the split and the mass never meet.</p>
+<p><strong>Relation to the Dirac case.</strong> Same shape, since an operator's eigenspaces carry the two physical labels, and the corpus's cleanest case of a split whose halves are inequivalent. It is not a copy of the Dirac case, and it is the strongest entry of the list.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>: the dual, the identity $\star=-i$, the projectors, the spin content of each half.</li>
+<li><a href="../articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>: the two helicities as the two halves, checked on two unrelated directions.</li>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>: the massive case, the three polarizations, and the Lorenz condition as a consequence.</li>
+<li><a href="../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a>: the duality rotation that multiplies the two halves by a complex number, and the theta angle that rotates with it.</li>
+<li><a href="../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html">Exercise: Duality Rotation and the Riemann–Silberstein Vector</a>: the worked rotation.</li>
+</ul>
+<h3 id="5-the-euclidean-two-form">5. The Euclidean Two-Form</h3>
+<p><strong>The split.</strong> In Euclidean signature the dual squares to $+1$,</p>
+<p>$$
+\star^2=+1,\qquad \tfrac12(1\pm\star)\ \text{real projectors},
+$$</p>
+<p>and the six real components split into two real three-dimensional halves. The conditions are $\vec B=\pm\vec E$, and they select <strong>independent real solutions</strong>, not the two projections of one field.</p>
+<p><strong>Relation to the Dirac case.</strong> The closest in shape of all the entries. The splitting operator is an involution over the reals, as in the Dirac case, and the two halves are separate solutions. The difference is that the halves are real and the field is real, so there is no conjugate half to pair with.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>: the signature dependence in full, the Bogomolny bound, and the warning that an instanton is a Euclidean object.</li>
+<li><a href="../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a>: the moduli data of the self-dual configurations.</li>
+<li><a href="../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a>: the gas built on them.</li>
+</ul>
+<h3 id="6-the-raritaschwinger-field">6. The Rarita–Schwinger Field</h3>
+<p><strong>The split.</strong> The carrier is a family of four algebra elements, one per spacetime index, and the dynamics is the chiral pair written once for each,</p>
+<p>$$
+\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L},\qquad \tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R},
+$$</p>
+<p>with the trace constraint and the divergence constraint on top. The chirality cell is the right multiplication by $-i\vec e_z$, which that article writes $\omega=-\vec e_z$, the factor $i$ being carried separately.</p>
+<p><strong>Relation to the Dirac case.</strong> Four copies of it, with two constraints. Nothing new in the split itself; what is new is that four copies must be tied together.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a>: the chiral pair on each component, the trace constraint, the rest-frame reduction.</li>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a>: the mode expansion, the projected anticommutator, the gamma dictionary.</li>
+</ul>
+<h3 id="7-the-graviton">7. The Graviton</h3>
+<p><strong>The split.</strong> The corpus carries the helicity $\pm2$ of the massless field and the carrier decomposition $6=1+5$, but it does <strong>not</strong> carry an involution grading of a complex space whose eigenspaces are the two helicities. The article on linearized gravity states the matter itself: the encoding of the Weyl tensor through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars, is <em>a separate problem</em>, <em>not attempted here</em>, and recorded among the open questions.</p>
+<p><strong>Relation to the Dirac case.</strong> A hole, not an entry. It is listed because the question is exactly the one the corpus leaves open here, and because the answer outside the corpus has the same shape: the Weyl tensor splits into two five-complex-dimensional halves, and one of them is taken as fundamental in the chiral formulations of gravity.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a>: the symmetric trace-free carrier, the helicity count, the transverse-traceless projector.</li>
+<li><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a>: the linearized field, its gauge symmetry, and the open question of the Weyl tensor in the algebra.</li>
+<li><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>: the chiral pair in a curved background.</li>
+</ul>
+<h3 id="8-the-chiral-anomaly">8. The Chiral Anomaly</h3>
+<p><strong>The split.</strong> The anomaly is computed for the left-handed content and for the right-handed content separately. In the worked example of the article the two cubic sums are equal, at $-2/9$ each, and each is non-zero. The cancellation is therefore a conspiracy between the two halves, not a per-field accident.</p>
+<p><strong>Relation to the Dirac case.</strong> The same split read on a current, and the sharpest <strong>counting</strong> statement about it: two sums that must match. It is the corpus's echo of the lattice theorem of object 14.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a>: the two sums, the cancellation conditions, the arithmetic.</li>
+<li><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a>: the measure, and the chirality of the transformation.</li>
+<li><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a>: the other anomaly, for contrast.</li>
+</ul>
+<h3 id="9-the-chiral-condensate">9. The Chiral Condensate</h3>
+<p><strong>The split.</strong> The order parameter is a bilinear that is chirality-odd,</p>
+<p>$$
+\langle\tilde\Psi^{*}\,iR_{\vec e_x}^{\mathrm{axf}}\,\tilde\Psi\rangle\neq0,
+$$</p>
+<p>it changes sign under the chirality cell, it vanishes on an element of a single value, and its vacuum value sits on the central scalar line. It is exactly the bilinear that the mass term multiplies.</p>
+<p><strong>Relation to the Dirac case.</strong> The same split read on a bilinear, with one addition: the <strong>coupling slot of the checklist is filled by dynamics</strong> instead of by a parameter. The mass of object 1 is a coefficient; here the coefficient is generated.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a>: the order parameter, the axial current, the gap equation, the Goldstone count.</li>
+<li><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a>: the Goldstone bosons, and the gap where the axial generator is absent.</li>
+<li><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a>: why the condensate is the coefficient of the linear mass and not of the antilinear real structure.</li>
+</ul>
+<h3 id="10-two-dimensions-left-and-right-movers">10. Two Dimensions: Left- and Right-Movers</h3>
+<p><strong>The split.</strong> In two dimensions the light-cone derivatives</p>
+<p>$$
+\partial_t-\partial_x,\qquad \partial_t+\partial_x
+$$</p>
+<p>annihilate the right-moving and the left-moving modes. The two are the two factors of the d'Alembertian, $\Box=(\partial_t-\partial_x)(\partial_t+\partial_x)$, and each factor is an operator of its own.</p>
+<p><strong>Relation to the Dirac case.</strong> A split of the <strong>modes</strong>, not of the algebra. The coupling is again the mass: written on the right, it exchanges the two factors, and its bosonized image is the cosine of the sine-Gordon model.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a>: the two-dimensional arena, the mass as a right factor that exchanges the labels, the cosine, the central-charge matching.</li>
+<li><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a>: the left- and right-moving amplitudes as the two channels of the transfer matrix.</li>
+<li><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress-Energy Conservation Laws and the Field Action in Biquaternionic Form</a>: the null pattern of a single travelling wave.</li>
+</ul>
+<h3 id="11-the-weak-vertex">11. The Weak Vertex</h3>
+<p><strong>The split.</strong> The vertex is one cell, and its chiral mixture is one cell times the chirality cell,</p>
+<p>$$
+\Gamma_\mu(g_V-g_A\chi).
+$$</p>
+<p>The article's result is that this cell is <strong>nilpotent exactly at</strong> $|g_A|=|g_V|$, that is exactly for $V-A$ and for $V+A$, and invertible for every other pair of weights.</p>
+<p><strong>Relation to the Dirac case.</strong> The Dirac split read on a vertex, with a sharp criterion attached: $V-A$ is a choice of one half, and the algebra puts it on the same footing as $V+A$. The algebra selects the shape and not the choice.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a>: the vertex as a cell, the nilpotency, the rate with one chirality flip.</li>
+<li><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a>: the carriers, and the point where the framework stops at the chiral coupling.</li>
+<li><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework: A Research Agenda</a>: the ledger of what the framework does not reach.</li>
+<li><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework: A Research Agenda</a>: the same for the electroweak factor.</li>
+<li><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form</a>: the proof that the framework's non-abelian action is vector-like.</li>
+</ul>
+<h3 id="12-chiral-media">12. Chiral Media</h3>
+<p><strong>The split.</strong> A chiral medium responds to an electric excitation magnetically and to a magnetic excitation electrically. Two complex combinations of the fields are formed, one per circular polarization, and each obeys its own first-order Beltrami equation with its own wavenumber. The corpus disambiguates the word: this <em>chiral</em> is a property of a medium, not of a fermion.</p>
+<p><strong>Relation to the Dirac case.</strong> The weakest entry. The split is of the <strong>operator</strong>, into two Beltrami factors, and there is no coupling term: the two polarizations propagate independently and never mix.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</a>: the Drude–Born–Fedorov relations, the two Beltrami equations, the integral representations, and the disambiguation of the word.</li>
+<li><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a>: the ordinary medium, for contrast.</li>
+<li><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane-Wave Propagation in a Medium</a>: the worked propagation.</li>
+</ul>
+<h3 id="13-the-weyl-spinor-and-the-twistor">13. The Weyl Spinor and the Twistor</h3>
+<p><strong>The split.</strong> $S=(\tfrac12,0)$ and $\bar S=(0,\tfrac12)$ are the two inequivalent conjugate representations of the Lorentz group, and a twistor is a pair, one spinor of each chirality. The article separates the two reasons a pair appears: <strong>parity</strong>, which makes a single Weyl spinor a complete but parity-violating theory, and <strong>incidence</strong>, which makes the second spinor the dual of the first rather than a second field.</p>
+<p><strong>Relation to the Dirac case.</strong> The split is the Dirac one, and the entry is here for its <strong>limit</strong>: the spinor halves are inequivalent as well, and it is the reason $SU(2)_L\times SU(2)_R$ cannot be read off the Dirac field. The algebra's two chiral halves are copies of $S$; the inequivalent partner is the conjugate module, a different object.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>: the two reasons for the pair, the non-isomorphism of the three four-dimensional modules, the character count.</li>
+<li><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>: the two values and the Weyl system.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>: the vector-like limit in the language of the Standard Model.</li>
+<li><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left–Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a>: what a construction outside the algebra buys, and what it costs.</li>
+</ul>
+<h3 id="14-lattice-fermions">14. Lattice Fermions</h3>
+<p><strong>The split.</strong> Nielsen–Ninomiya: a lattice regularization of a chiral fermion carries <strong>equal numbers of $L$ and $R$ species</strong>, whatever the kernel. A lone left-handed species cannot be put on a lattice.</p>
+<p><strong>Relation to the Dirac case.</strong> The Dirac split read as a <strong>counting theorem</strong>. The grading is not merely available; it is balanced, and every regularization pays for that balance or gives up an assumption.</p>
+<p><strong>Corpus.</strong></p>
+<ul>
+<li><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a>: the doubling, the theorem, the propagator block as the price of the mass.</li>
+<li><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a>: the light-cone basis in which the two values are the two products.</li>
+</ul>
+<h2 id="the-table">The Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Object</th>
+<th>The splitting operator</th>
+<th>The halves</th>
+<th>What couples them</th>
+<th>Standing to the Dirac case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Dirac field</td>
+<td>$\mathsf V^{\mathrm{vol}}=-iR_{\vec e_z}$, square $+1$</td>
+<td>two copies of $S$</td>
+<td>the mass</td>
+<td>the reference</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The operator algebra</td>
+<td>the slot of a cell</td>
+<td>$L(\mathbb{B})$, $R(\mathbb{B})$</td>
+<td>the mass, which lies in $L\cap R$</td>
+<td>the parent structure</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Dirac current</td>
+<td>the chirality cell on a bilinear</td>
+<td>vector, axial</td>
+<td>the mass, as a divergence</td>
+<td>same split, derived object</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Field strength</td>
+<td>$\star$, square $-1$</td>
+<td>$(1,0)$, $(0,1)$, inequivalent</td>
+<td>nothing: the mass is on the potential</td>
+<td>same shape, different kind</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Euclidean two-form</td>
+<td>$\star$, square $+1$</td>
+<td>two real halves</td>
+<td>nothing: the halves are separate solutions</td>
+<td>closest in shape</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rarita–Schwinger</td>
+<td>the chirality cell, four times</td>
+<td>four copies of the Dirac pair</td>
+<td>the mass, per component</td>
+<td>four copies</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Graviton</td>
+<td>absent from the corpus</td>
+<td>helicity $\pm2$</td>
+<td>absent</td>
+<td>a hole</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Anomaly</td>
+<td>the chirality cell on a current</td>
+<td>left sum, right sum</td>
+<td>none: the two must match</td>
+<td>same split, counting</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Chiral condensate</td>
+<td>the chirality cell on a bilinear</td>
+<td>the two values</td>
+<td>the condensate itself</td>
+<td>the coupling is generated</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Two dimensions</td>
+<td>$\partial_t\mp\partial_x$</td>
+<td>left-movers, right-movers</td>
+<td>the mass, a cosine</td>
+<td>a split of the modes</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Weak vertex</td>
+<td>the chirality cell on a vertex</td>
+<td>$V-A$, $V+A$</td>
+<td>none: the algebra chooses neither</td>
+<td>a choice of one half</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Chiral media</td>
+<td>the Beltrami factorisation</td>
+<td>two circular polarizations</td>
+<td>none</td>
+<td>a split of the operator</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Weyl spinor, twistor</td>
+<td>the conjugation of the module</td>
+<td>$S$, $\bar S$, inequivalent</td>
+<td>the Dirac mass</td>
+<td>the inequivalent pair</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Lattice fermions</td>
+<td>the chirality cell, counted</td>
+<td>$N_L$ species, $N_R$ species</td>
+<td>none: $N_L=N_R$</td>
+<td>the split as a theorem</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-is-not-a-leftright-split">What Is Not a Left–Right Split</h2>
+<p><strong>The material and informational sectors.</strong> $\mathbb{M}_-$ and $\mathbb{M}_+$ are the $\pm1$ eigenspaces of the anti-Hermitian conjugation $\flat=-{}^{*}$, and the central imaginary exchanges them. The shape is that of an involution, as a chirality is, and the resemblance stops there. The two sides are real four-dimensional spaces that carry different roles, four-vectors on one side and observables and states on the other, not two copies of one role. Nothing pairs them, and no first-order operator of the algebra carries one into the other.</p>
+<p><strong>The two copies of $\mathbb{C}^2$.</strong> The split of $\mathbb{B}$ into two copies of $\mathbb{C}^2$ replaces the algebra's $1+3$ with a $2+2$ that the algebra does not carry, and <em>Conceptual Conventions</em> lists it as an unpreferred concept with that defect named.</p>
+<p><strong>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$.</strong> A left–right symmetric gauge structure needs the two halves to carry <strong>inequivalent</strong> representations. The algebra's two halves are copies, so every action by left multiplication is vector-like on them. The inequivalence lives in the conjugate module, which is a different object from the chirality halves.</p>
+<p><strong>Helicity at non-zero mass.</strong> Helicity and the value coincide only at $m=0$. At $m\neq0$ the helicity operator still exists and still has its spectrum, and it no longer labels the halves; the two readings of one field are genuinely different.</p>
+<p><strong>The Peirce lines.</strong> A Peirce decomposition needs two idempotents and returns four one-dimensional corners. The chiral split is one operator and returns two halves of two complex dimensions. Four lines and two halves are not the same partition, and the difference is measurable.</p>
+<h2 id="summary">Summary</h2>
+<p>A left–right split needs four things: a splitting operator, its two halves, a statement of whether the halves are copies or conjugates, and a coupling that maps one half into the other.</p>
+<p>The Dirac field has all four, and it is the only object of the corpus that has them natively. Its splitting operator is the right multiplier $-iR_{\vec e_z}$, of square $+1$; its halves are two copies of the simple module; its coupling is the mass, the one central term, which has no side.</p>
+<p>Four objects carry a split that is not the Dirac one. The field strength splits by the Hodge dual, whose square is $-1$, and its halves are inequivalent, which is the reason the Standard Model's chiral gauge group is not read off the Dirac field. The Euclidean two-form splits by the same dual, whose square is then $+1$, and its halves are independent real solutions. The two-dimensional light-cone mode splits into left-movers and right-movers, the two factors of the d'Alembertian. The operator algebra splits into its left multipliers and its right multipliers, and the mass is the one operator that belongs to both.</p>
+<p>The remaining entries are the Dirac split read on a derived object: a current, a bilinear, a vertex, a count. They are worth listing because the split travels, and because two of them sharpen it: the anomaly turns it into a matching of two sums, and the lattice theorem turns it into a balance that no regularization escapes.</p>
+<p>The one hole is the graviton. The corpus carries the helicity $\pm2$ and no involution whose eigenspaces are the two helicities, and the object that would fill the hole, the self-dual split of the linearized Weyl tensor, is outside the corpus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf V^{\mathrm{vol}}$</td>
+<td>the chirality cell of the frame, $-iR_{\vec e_z}$ in the axis-free frame; an involution of spectrum $+1,+1,-1,-1$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$</td>
+</tr>
+<tr>
+<td>$L(\mathbb{B})$, $R(\mathbb{B})$</td>
+<td>the two one-sided families of operators, of dimensions four and four, meeting in the scalars</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the simple left module of $\mathbb{B}$, of complex dimension two</td>
+</tr>
+<tr>
+<td>$\bar S$</td>
+<td>the conjugate module, inequivalent to $S$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Hodge dual; square $-1$ on Lorentzian two-forms, $+1$ on Euclidean ones</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{sd,asd}$</td>
+<td>the self-dual and anti-self-dual projectors, $\tfrac12(1\pm i\star)$</td>
+</tr>
+<tr>
+<td>$(1,0)$, $(0,1)$</td>
+<td>the two conjugate three-dimensional complex representations of the Lorentz group</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the chirality cell as a right multiplier, $\chi\tilde Q=-i\tilde Q\vec e_z$</td>
+</tr>
+<tr>
+<td>$\flat$</td>
+<td>the anti-Hermitian conjugation, $-{}^{*}$; its $\pm1$ eigenspaces are the sectors $\mathbb{M}_\pm$</td>
+</tr>
+<tr>
+<td>$\mathsf C$</td>
+<td>the array of the quaternion conjugation, $\operatorname{diag}(1,-1,-1,-1)$; $\mathsf C L(a^{\natural})\mathsf C=R(a)$</td>
+</tr>
+<tr>
+<td>$j_{5\mu}$</td>
+<td>the axial current; its divergence is proportional to the mass</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the pair, the two-sided form, and the mass as a non-integrable phase.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a>, for the cell, the eight objects the physics does not need, and the vector-like limit.</li>
+<li><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>, for the only inequivalent pair in the algebra.</li>
+<li><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>, for parity and incidence, the two reasons a chiral pair appears.</li>
+<li><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>, for the classification and the gap of the chiral gauge group.</li>
+<li><a href="left-and-right-actions-of-operators.html">Left and Right Actions of Operators</a>, for the two readings of the gradient and their difference.</li>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the mathematics of the slot label.</li>
+<li><a href="../articles_physics/conceptual-conventions.html">Conceptual Conventions</a>, for the preferred and unpreferred concepts, and the defect of the $2+2$ split.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

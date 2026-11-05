@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Labels of the Gradient: An Inventory and the Return to the Caret — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret"><strong>The Labels of the Gradient: An Inventory and the Return to the Caret</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two writings in the corpus look like they name an operator that is not the gradient, and neither does:</p>
+<p>$$
+\tilde\nabla_{\mathrm E},\qquad \tilde\nabla\big|_{\mathbb M_-}.
+$$</p>
+<p>The first stands five times in one article, <em>The Fermionic Path Integral in Biquaternionic Form</em>, and is never expanded into components anywhere in the corpus. The second heads a family of six in <em>Remarkable Subspaces and the Analysis</em>, one per subspace, and stands three more times in the physics corpus. Both are the operator $\tilde\nabla$ as it is defined once in <em>Operator and Calculus Conventions</em>. The label does not name a restriction and does not name a second operator. It states the coordinate in which the four derivatives are taken, and that coordinate is already written in the derivative.</p>
+<p><strong>What this article establishes.</strong> What the two writings are, with the derivation and a check at residual zero. The full inventory: nine restriction labels in four articles, one variant subscript in one article, and the 275 occurrences of the one label that does name a different operator, $\tilde\nabla^{\mathrm{gco}}$. The three meanings one glyph position carries in this corpus — the chart, the domain, the image — and the two displays where the meaning is an image and the formula does not say so. The two subspaces the gradient preserves and the four it does not, with the product that decides it. The rule that follows, which puts each label in the slot the conventions already reserve for it. And the migration that applies it, in seven phases: the second metric first, then the labels, then the gradient inside the pair operator, then the conventions text, then the census.</p>
+<p><strong>The answer, stated first.</strong> $\tilde\nabla_{\mathrm E}$ is $\tilde\nabla$ at $Q_t=c\tau$; $\tilde\nabla\big|_{\mathbb M_-}$ is $\tilde\nabla$ at $Q_t=ict'$. Each is the chain rule and nothing else. Neither needs a label, because the substitution carries the whole of the content, and the substitution is already a rule of the corpus: <em>Frame Conventions</em>, rule 7, "a change of frame is a written substitution". The one label the gradient does need is the one that names a different operator, and that label already exists and already sits in the caret, $\tilde\nabla^{\mathrm{gco}}$, with 275 occurrences behind it.</p>
+<h2 id="what-the-two-writings-are">What the Two Writings Are</h2>
+<p><strong>The gradient has one definition, in one coordinate.</strong> <em>Operator and Calculus Conventions</em> fixes it as an element whose four coefficients are derivatives,</p>
+<p>$$
+\tilde\nabla=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad
+\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad
+\varepsilon=(1,-1,-1,-1),
+$$</p>
+<p>and the product of the two is the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\Box=\sum_\mu\partial^2/\partial Q_\mu^2$. The four coordinates $Q_\mu$ are complex, and no substitution has been made. Here $\varepsilon_\mu$ is a weight, $\varepsilon_\mu=\mathrm{Sc}(e_\mu e_\mu)$, not a unit: the units are the four $e_\mu$ throughout, and the $i$ never migrates into them.</p>
+<p><strong>The letters are fixed, and the derivative is read off them.</strong> The corpus writes one element as four complex coefficients against four units, $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and it splits each coefficient into a real and an imaginary parameter, $Q_\mu=q_\mu+iq'_\mu$. The physical names are the ones <em>Introduction to the Biquaternion Universe</em> fixes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_\mu$</td>
+<td>the complex coefficient of the basis unit $e_\mu$, $\mu=t,x,y,z$</td>
+</tr>
+<tr>
+<td>$q_\mu$</td>
+<td>its real part, a real parameter</td>
+</tr>
+<tr>
+<td>$q'_\mu$</td>
+<td>its imaginary part, a real parameter</td>
+</tr>
+<tr>
+<td>$q_t=ct$</td>
+<td>the informational time, $t$ real</td>
+</tr>
+<tr>
+<td>$q'_t=ct'$</td>
+<td>the material time, $t'$ real</td>
+</tr>
+<tr>
+<td>$q_k=x_k$</td>
+<td>the material space, $x,y,z$ real</td>
+</tr>
+<tr>
+<td>$q'_k=x'_k$</td>
+<td>the informational space, $x',y',z'$ real</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two rules follow, and they are the whole of the alignment. <strong>The $i$ is never dropped and never hidden</strong>: the material time is written $ict'$, with the $i$ in front where a reader can see it, and never $ct'$ alone. <strong>The prime marks the imaginary direction</strong>, so it sits on the time in the material sector ($q'_t=ct'$) and on the space in the informational sector ($q'_k=x'_k$); the unprimed letter is the real direction of the sector being read.</p>
+<p><strong>The derivative on each reading is the chain rule.</strong> <em>Biquaternion Analysis</em> states it once, $\partial/\partial Q_\mu=\partial/\partial iq'_\mu$, and gives the four rows. The corpus also writes the coefficient form, $\frac{1}{i}\partial/\partial q'_\mu=-i\,\partial/\partial q'_\mu$; it is the same number, and the displays of §<em>The Goal of the Migration</em> keep the $i$ inside the variable instead, so that the sign of the d'Alembertian can be read off the variable rather than carried separately. Written with the physical names:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>free parameters</th>
+<th>$Q_t$</th>
+<th>$Q_k$</th>
+<th>time term of $\tilde\nabla$</th>
+<th>space term of $\tilde\nabla$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$Q_\mu$ complex, eight real</td>
+<td>$c(t+it')$</td>
+<td>$x_k+ix'_k$</td>
+<td>$e_t\frac{\partial}{\partial Q_t}$</td>
+<td>$\vec e_k\frac{\partial}{\partial Q_k}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$q_\mu$ real</td>
+<td>$c\tau$</td>
+<td>$x_k$</td>
+<td>$e_t\frac{\partial}{\partial c\tau}$</td>
+<td>$\vec e_k\frac{\partial}{\partial x_k}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$q'_t,\ q_k$</td>
+<td>$ict'$</td>
+<td>$x_k$</td>
+<td>$e_t\frac{\partial}{\partial ict'}$</td>
+<td>$\vec e_k\frac{\partial}{\partial x_k}$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$q_t,\ q'_k$</td>
+<td>$ct$</td>
+<td>$ix'_k$</td>
+<td>$e_t\frac{\partial}{\partial ct}$</td>
+<td>$\vec e_k\frac{\partial}{\partial ix'_k}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four rows, one operator, four substitutions.</strong> Every row of the table is the same four terms, $e_t\partial_{Q_t}$ and $\vec e_k\partial_{Q_k}$, with one substitution for $Q_t$ and one for $Q_k$; nothing is dropped and no term changes. The three displays of interest, with the gradient and the d'Alembertian written out, are at §<em>The Goal of the Migration</em>.</p>
+<p><strong>Three marks survive, and none of them names a coordinate.</strong> The caret, $\tilde{\ }$, which separates the element from a four-vector. The superscript $\mathrm{gco}$, which names the gauge-covariant family: a connection is a different operator. And $\natural$, which gives the partner acting from the right. A subscript naming $\mathbb{M}_-$ or $\mathbb{E}$ names a coordinate, and a coordinate is a substitution.</p>
+<p><strong>One caveat, stated plainly.</strong> This follows from the single-metric choice; it is not a theorem about gradients. Under the other choice — real $x_0=ct'$ with the signature carried by the metric — the operator there is $e_t\frac{\partial}{\partial ct'}+\vec e_x\frac{\partial}{\partial x}+\vec e_y\frac{\partial}{\partial y}+\vec e_z\frac{\partial}{\partial z}$, whose square is $+\frac{1}{c^2}\partial^2_{t'}+\Delta$: the $\mathbb{H}_{\mathbb{B}}$ reading, not $\nabla$ of $\mathbb{M}_-$, with $\Box=\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]\partial_{x_\mu}\partial_{x_\nu}$. There a mark would be needed, because the two operators would differ. Here they do not, and the reason is the $i$: it is inside $Q_t$, so it cannot also be inside the metric.</p>
+<h2 id="the-inventory">The Inventory</h2>
+<p><strong>Nine restriction labels, four articles.</strong> The glyph $\big|$ with a subspace in the subscript is used nine times.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>subspace</th>
+<th>formula as printed</th>
+<th>derivatives kept</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$e_t\,\partial_{Q_t}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\vec e_x\partial_{Q_x}+\vec e_y\partial_{Q_y}+\vec e_z\partial_{Q_z}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\sum_\mu e_\mu\,\partial_{q_\mu}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$-i\sum_\mu e_\mu\,\partial_{q'_\mu}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathbb{M}_+$</td>
+<td>$e_t\,\partial_{q_t}-i\sum_k\vec e_k\,\partial_{q'_k}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>$-ie_t\,\partial_{q'_t}+\sum_k\vec e_k\,\partial_{q_k}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>$-\frac{i}{c}e_t\,\partial_{t'}+\sum_k\vec e_k\,\partial_{Q_k}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>$-\frac{i}{c}e_t\,\partial_{t'}+\sum_k\vec e_k\,\partial_{q_k}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><em>The Foldy–Wouthuysen Transformation</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>$-\frac{i}{c}e_t\,\partial_{t'}+D_3$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count in the last column is the test. When four derivatives survive, the label has certified nothing: the operator is the same and only the letters on the derivatives have changed. When fewer survive, some of the terms annihilate every field in the subspace, and that is a fact about the subspace worth stating.</p>
+<p><strong>Four of the nine are the same object.</strong> The four $\mathbb{M}_-$ rows are one display: the sixth and the seventh differ only in whether the time derivative is taken with respect to $q'_t$ or $t'$, the eighth is the seventh with $Q_k$ renamed $q_k$, and the ninth writes the spatial part as $D_3$. One row, four copies.</p>
+<p><strong>One subscript names a different operator, and it is in the caret.</strong> $\tilde\nabla^{\mathrm{gco}}$, the gauge-covariant derivative that <em>The Letter D on the Covariant Derivative</em> establishes as the retirement of the source's $D$. Two hundred and seventy-five occurrences. It is a genuinely different operator: it is $\tilde\nabla-ie\tilde A$, it does not square to $\Box$, and the label is a three-letter lowercase upright token in the caret, which is what <em>Unit, Index and Notation Conventions</em> prescribes for "an upright label of a construction or a variant".</p>
+<p><strong>One subscript names nothing new, and it is in the low slot.</strong> $\tilde\nabla_{\mathrm E}$: five occurrences, one article, no expansion. It breaks two rules at once — the low slot is not the slot for a variant, and the token is a single uppercase letter where the corpus writes three lowercase ones.</p>
+<p><strong>The proportion is the argument.</strong> 275 uses of a label that names a different operator, in the caret, three lowercase letters, consistent. Nine uses of a restriction glyph, three meanings, two of them wrong without a hypothesis. Five uses of a variant subscript, never defined. The corpus has one good convention and two exceptions, and the exceptions are all in the same place: the place where a coordinate was mistaken for an operator.</p>
+<h2 id="three-meanings-in-one-slot">Three Meanings in One Slot</h2>
+<p><strong>The glyph position is overloaded.</strong> A mark after $\tilde\nabla$ is read in this corpus as one of three things, and the corpus does not say which.</p>
+<ol>
+<li><strong>The chart.</strong> Which coordinate the four derivatives are taken in: $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathrm{E}$. A statement about the letters on the derivatives.</li>
+<li><strong>The domain.</strong> Which fields the operator is applied to: central fields, real quaternions, anti-Hermitian fields. A statement about the argument.</li>
+<li><strong>The image.</strong> Which part of the result is kept: the projection of $\tilde\nabla\Psi$ back into the subspace. A statement about the value.</li>
+</ol>
+<p><strong>The number of terms says which one is meant, and the glyph does not.</strong> Seven of the nine displays keep four terms. Four terms mean nothing was dropped, so the display is a change of variable and can only be a chart. Two displays keep fewer — one keeps one term, one keeps three — and a dropped term is a projection or a hypothesis. The count is a reliable signal; the glyph is not.</p>
+<p><strong>The sector is not preserved, and one product decides it.</strong> The spatial derivation multiplies by $\vec e_k$, and $\vec e_k^{\,2}=-e_t$ flips the sign that defines $\mathbb{M}_\pm$; the time derivation multiplies by $e_t$, and $e_t^{\,2}=+e_t$ does not. So the time term of the gradient preserves the Hermitian and the anti-Hermitian sector and the spatial term exchanges them, and since both terms are always present, $\tilde\nabla$ maps neither sector into itself.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>terms kept</th>
+<th>$\tilde\nabla$ maps it into itself</th>
+<th>what the display is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>yes — every coefficient stays real</td>
+<td>a change of variable, complete</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$4$</td>
+<td>yes — every coefficient stays pure imaginary</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$4$</td>
+<td><strong>no</strong> — the spatial term exchanges the sector</td>
+<td>a change of variable, and the bar reads as if it were a domain</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$4$</td>
+<td><strong>no</strong> — the same exchange</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$1$</td>
+<td><strong>no</strong> — $\vec e_k$ times a central element is a vector</td>
+<td>a projection, with a hypothesis it does not state</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$3$</td>
+<td><strong>no</strong> — $\vec e_k^{\,2}=-e_t$ gives a scalar part</td>
+<td>the same</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two projections are wrong as printed.</strong> A central field may depend on $Q_x$: for $\Phi=(Q_t^2+Q_x)e_t$ the gradient is $2Q_te_t+\vec e_x$, and the printed $\mathbb{C}_{\mathbb{B}}$ display returns $2Q_te_t$ and loses the vector part. A pure field may depend on $Q_t$: for $\vec Q=Q_t^2\vec e_x$ the gradient is $2Q_t\vec e_x-Q_t^2e_t$, and the printed $\mathrm{Vect}(\mathbb{B})$ display returns zero. Every other display in the table is correct, because nothing was dropped and there is nothing to be wrong.</p>
+<p><strong>So the glyph cannot be repaired by definition.</strong> It cannot mean "maps into", because it does not map into four of the six subspaces. It cannot mean "the domain", because the two displays that restrict the domain are wrong for fields that vary in the dropped coordinate. What it means in the seven four-term rows is "the gradient with the derivatives re-expressed in this subspace's real coordinates" — a chart, written in the slot that the reader will take for a domain. What it means in the two short rows is "the part of the gradient that stays in the subspace", which is a projection, and a projection needs the sentence that says so.</p>
+<h2 id="the-rule">The Rule</h2>
+<p>Five lines, each taken from a rule the corpus already has.</p>
+<p><strong>1. A variant of the operator goes in the caret, three lowercase letters.</strong> This is the existing rule of <em>Unit, Index and Notation Conventions</em>, and $\tilde\nabla^{\mathrm{gco}}$ is its working example. The pair-operator article already uses the same slot for a variant of the other operator, $\mathbb D^{\mathrm{el}}$, seven times. The construction is not new; it needs applying.</p>
+<p><strong>2. The low slot names a factor, an index or a sign, and never a chart.</strong> For $\mathbb D$ the low slot is the factor that fills the two slots of the exchange, so $\mathbb D_p$ is the symbol and $\mathbb D(\tilde K)$ is the same object with the factor written out. For an element the low slot is the direction index or the count. A coordinate is neither.</p>
+<p><strong>3. A chart is a substitution, written once where the display changes coordinate.</strong> This is <em>Frame Conventions</em>, rule 7. The substitution is $Q_t=ict'$ or $Q_t=c\tau$, and once it is written the operator needs no mark.</p>
+<p><strong>4. A projection is a value, with the hypothesis that makes it one.</strong> "On central fields, $\tilde\nabla=e_t\partial_{Q_t}$" is a statement about the fields and is checked by the fields; the glyph is not needed and cannot carry the hypothesis.</p>
+<p><strong>5. A metric is not written in a display of the gradient.</strong> This is the choice of <em>The Optional Metric: One Metric or Two</em>, and the gradient is where it shows. With one metric the sign of the d'Alembertian has exactly one home, the $i$ inside the coordinate, and a display that borrows a sign from $g_{\mu\nu}$ is a display of the other route. Written: "$\Box=\sum_\mu\partial^2_{Q_\mu}$, and on the material sector $\partial_{Q_t}=\partial/\partial ict'$, so the time term is $-\frac{1}{c^2}\partial^2_{t'}$." Not written: a two-index contraction against a metric of signature $(-1,1,1,1)$, a basis whose units carry the $i$, or a raised index — <em>Matrix Representations Conventions</em> forbids the last outright: "No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display".</p>
+<h2 id="the-proposed-writings">The Proposed Writings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>was</th>
+<th>now</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla\vert_{\mathbb M_-}$</td>
+<td>"in the material coordinate, where $Q_t=ict'$," and the display</td>
+<td>the chart, written as the substitution</td>
+</tr>
+<tr>
+<td>the four other chart labels, $\mathbb M_+$, $\mathbb H_{\mathbb B}$, $i\mathbb H_{\mathbb B}$</td>
+<td>the same sentence, one per subspace, in the subsection that reads that subspace</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>$\tilde\nabla\vert_{\mathbb{C}_{\mathbb B}}$</td>
+<td>kept as a value: "on central fields the gradient is $e_t\partial_{Q_t}$, because a central field does not depend on $Q_k$"</td>
+<td>a real restriction, with its hypothesis</td>
+</tr>
+<tr>
+<td>$\tilde\nabla\vert_{\mathrm{Vect}(\mathbb{B})}$</td>
+<td>the time term restored, or $\partial_{Q_t}=0$ stated</td>
+<td>the display is wrong without one of the two</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm E}$</td>
+<td>no mark: $\tilde\nabla$, with $Q_t=c\tau$, $Q_k=x_k$ stated once in the section</td>
+<td>one metric: the all-real case is a substitution, not a fourth operator</td>
+</tr>
+<tr>
+<td>$\mathbb D_{\mathrm E}$</td>
+<td>no mark: $\mathbb D$, with the same substitution stated once</td>
+<td>the caret is kept for a different operator, not for a coordinate</td>
+</tr>
+<tr>
+<td>$\mathbb D_p$, $\mathbb D(\tilde K)$, $\tilde\nabla^{\mathrm{gco}}$, $\tilde\nabla^{\natural}$</td>
+<td>unchanged</td>
+<td>already correct</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The caret is now reserved for a different operator, and that is the whole of the slot.</strong> $\mathbb D_p$ is the symbol with its factor. $\tilde\nabla^{\mathrm{gco}}$ is the only variant in the caret of either glyph, and it earns the slot because a connection is a different operator. A coordinate does not, so $\mathbb D_{\mathrm E}$ and $\tilde\nabla_{\mathrm E}$ become the plain glyph with a substitution written above it. The split is clean because the two marks no longer compete: the caret means another operator, the sentence means another coordinate, and the low slot keeps the factor.</p>
+<p><strong>One objection, answered.</strong> A reader may say that a mark would at least be shorter than a sentence. It is, and it costs a second name for the same operator: with one metric the all-real case is the informational display at $t=\tau$, so $\tilde\nabla$ at $Q_t=c\tau$ is $\tilde\nabla$, and a caret over it would say that two names exist where one object does.</p>
+<h2 id="the-related-articles">The Related Articles</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it supplies</th>
+<th>why it is here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>the one definition of $\tilde\nabla$, the $\mathbb M_-$ display at §<em>On the material sector</em>, and the new paragraph that names plain $\mathbb D$ as $\mathbb D_{\tilde\nabla}$</td>
+<td>defines two of the nine</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a></td>
+<td>the low slot is "a component or a label, never a derivative"; the caret carries three lowercase letters for a construction or a variant</td>
+<td>the rule the migration applies</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-conventions.html">Frame Conventions</a></td>
+<td>rule 7, a change of frame is a written substitution, with $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$; the four coordinate readings</td>
+<td>the authority for a chart</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/remarkable-subspaces-and-the-analysis.html">Remarkable Subspaces and the Analysis</a></td>
+<td>six of the nine restrictions, one per subspace, with the $\mathbb{C}_{\mathbb B}$ and $\mathrm{Vect}$ rows that are wrong</td>
+<td>the family to retire</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>five $\tilde\nabla_{\mathrm E}$ and eight $\mathbb D_{\mathrm E}$, in a section that is Euclidean throughout</td>
+<td>the whole of the $\mathrm E$ usage</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>one $\mathbb M_-$ restriction, in the Pauli reduction</td>
+<td>a physics use</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>one $\mathbb M_-$ restriction, with the spatial part written $D_3$</td>
+<td>a physics use, and a second collision</td>
+</tr>
+<tr>
+<td><a href="../articles_internal/the-letter-d-on-the-covariant-derivative-an-inventory-and-a-retirement.html">The Letter D on the Covariant Derivative</a></td>
+<td>$\tilde\nabla^{\mathrm{gco}}$, 275 occurrences, the working precedent for a gradient variant in the caret</td>
+<td>the model to follow</td>
+</tr>
+<tr>
+<td><a href="the-pair-operator-an-inventory-of-the-glyph.html">The Pair Operator: An Inventory of the Glyph</a></td>
+<td>the low slot of $\mathbb D$ is the factor, and $\mathbb D^{\mathrm{el}}$ is already in the caret</td>
+<td>the rule for $\mathbb D_{\mathrm E}$</td>
+</tr>
+<tr>
+<td><a href="the-lower-labels-and-the-obstruction-to-the-caret.html">The Lower Labels and the Obstruction to the Caret</a></td>
+<td>why most low-slot words cannot rise, and which ones can</td>
+<td>the criterion for a label</td>
+</tr>
+<tr>
+<td><a href="the-gradient-the-dalembertian-and-the-frame-generators.html">The Gradient, the D'Alembertian and the Frame Generators</a></td>
+<td>the gradient, the d'Alembertian and the four generators separated; one metric, Euclidean</td>
+<td>the operator this note writes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two collisions the migration would also close.</strong> The Foldy–Wouthuysen article writes $D_3$ for the spatial part of the gradient inside the same display where $\tilde\nabla$ is the gradient; <em>The Letter D on the Covariant Derivative</em> retires that letter for the covariant derivative and this article would retire it for the gradient too, which leaves the two articles using $D$ in opposite senses. And $\mathbb D_{\mathrm E}$ collides with $\mathbb D^{\mathrm{el}}$: one is in the low slot and one in the caret, and a reader who has met both has no rule for which.</p>
+<h2 id="the-goal-of-the-migration">The Goal of the Migration</h2>
+<p><strong>One metric, one gradient, one d'Alembertian, three displays.</strong> Keep $\delta_{\mu\nu}=(1,1,1,1)$ and the single definition $\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}$, $\Box=\sum_\mu\partial^2_{Q_\mu}$. A reading is then one substitution of the four complex coefficients $Q_\mu$ for real parameters, written where the display changes coordinate. After the display there is nothing: no bar, no metric subscript, no variant letter. The three displays below are the target of the migration, and each of the five phases is checked against them.</p>
+<p><strong>One set of names, used in all three.</strong> The four complex coefficients are $Q_\mu=q_\mu+iq'_\mu$; the physical names are $q_t=ct$ and $q'_t=ct'$, $q_k=x_k$ and $q'_k=x'_k$, with $x,y,z$ the material space and $x',y',z'$ the informational one. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ throughout. The weight $\varepsilon=(1,-1,-1,-1)$ belongs to $\tilde\nabla^{\natural}$ and is not a unit, so it never appears in these displays.</p>
+<p><strong>One metric, and no display names it.</strong> The only metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$. Every sign in the three displays is already carried by an $i$ inside a coefficient, so no display contains a metric symbol and none needs one: the material display takes its minus from $\frac{1}{(ic)^2}=-\frac{1}{c^2}$, the informational display its three minuses from $\frac{1}{i^2}=-1$, and the complex display has no sign to place because $\partial^2_{Q_\mu}$ is still complex.</p>
+<p><strong>The second metric goes, and the units it lived in go with it.</strong> Three objects are retired as one, because they are one object written three ways: $g_{\mu\nu}[\mathbb{M}_-]=\operatorname{diag}(-1,1,1,1)$, the literal tuple $(-1,1,1,1)$, and the two bases that carry the $i$ into the unit — the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ and the informational basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$. Moving an $i$ from the coordinate into a unit is the same trade as moving $i^2$ into a diagonal, and after the migration the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ in every frame, with the $i$ in the coordinate where the displays show it. $g_{\mu\nu}[\mathbb{B}]$ survives only in the tables that must name a frame, and there it equals $\delta_{\mu\nu}$. Two things are not touched: the dynamical $g_{\mu\nu}(x)$ of the gravity articles, which is a field and not a frame convention; and the weight $\varepsilon=(1,-1,-1,-1)$ of $\tilde\nabla^{\natural}$, which is a sign inside a product, is not a metric, and does not appear in a gradient display.</p>
+<p><strong>The test of alignment.</strong> A display is aligned when the substitution alone turns it into another of the three, with no sign borrowed from a metric: $Q_t=ict'$ and $Q_k=x_k$ into the material display, $Q_t=ct$ and $Q_k=ix'_k$ into the informational one, $Q_t=c\tau$ and $Q_k=x_k$ into the all-real one. The real-metric route fails this test on one line and only one, $+\frac{1}{c^2}\partial^2_{t'}$ instead of $-\frac{1}{c^2}\partial^2_{t'}$, and that sign is the whole of what the second metric was buying.</p>
+<p><strong>On $\mathbb{B}$</strong>: all four coefficients complex, $Q_t=c(t+it')$ and $Q_k=x_k+ix'_k$, eight real parameters. Nothing is frozen, so the display is the definition in the four $Q$'s:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},\\[2pt]
+\Box&=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}.
+\end{aligned}
+$$</p>
+<p><strong>On $\mathbb{M}_-$</strong>: the material reading, $Q_t=ict'$ and $Q_k=x_k$. The $i$ stays inside the variable, written $ict'$ and differentiated as it stands, and $\Box$ carries the minus that the square of that $i$ left behind:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial ict'}+\vec e_x\frac{\partial}{\partial x}+\vec e_y\frac{\partial}{\partial y}+\vec e_z\frac{\partial}{\partial z},\\[2pt]
+\Box&=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}.
+\end{aligned}
+$$</p>
+<p><strong>On $\mathbb{M}_+$</strong>: the informational reading, $Q_t=ct$ and $Q_k=ix'_k$. The $i$ is now on the three space directions, written $ix'$ and differentiated as it stands, so $\Box$ carries three minuses:</p>
+<p>$$
+\begin{aligned}
+\tilde\nabla&=e_t\frac{\partial}{\partial ct}+\vec e_x\frac{\partial}{\partial ix'}+\vec e_y\frac{\partial}{\partial iy'}+\vec e_z\frac{\partial}{\partial iz'},\\[2pt]
+\Box&=+\frac{1}{c^2}\frac{\partial^2}{\partial t^2}-\frac{\partial^2}{\partial x'^2}-\frac{\partial^2}{\partial y'^2}-\frac{\partial^2}{\partial z'^2}.
+\end{aligned}
+$$</p>
+<p><strong>The all-real case, which is where $\tilde\nabla_{\mathrm E}$ lives</strong>: $Q_t=c\tau$ and $Q_k=x_k$, no $i$ anywhere. It is the $\mathbb{M}_+$ display at $t=\tau$ and $x'_k=-ix_k$, and there every sign is plus. It needs no display of its own and no mark.</p>
+<p><strong>The gradient keeps the $i$; the d'Alembertian has already used it.</strong> In each display the $i$ stays inside the variable the derivative is taken with respect to — $\partial/\partial ict'$ on the material time, $\partial/\partial ix'_k$ on the informational space, $\partial/\partial x_k$ on a real direction — and is never pulled out as a coefficient $\frac{1}{ic}$ or $\frac{1}{i}$. The d'Alembertian is the square, so $(1/i)^2=-1$ has been applied and what is printed is a real sign. The minus of $\Box$ therefore sits on exactly the directions that carried an $i$: one, the time, in $\mathbb{M}_-$; three, the space, in $\mathbb{M}_+$; none in the all-real case; and in $\mathbb{B}$ it is still inside $\partial^2_{Q_\mu}$, because $Q_\mu$ is still complex. No sign comes from $\delta_{\mu\nu}$.</p>
+<p><strong>Checked, not asserted.</strong> On a quartic field with all four slots occupied, each of the four readings was compared with $\sum_\mu e_\mu\partial_{Q_\mu}$ differentiated in $Q$ and substituted: residual $0$ in $\mathbb{B}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$. Each $\Box$ was compared with $\sum_\mu\partial^2_{Q_\mu}$: residual $0$ in all four. The name-matched form of §<em>What the Two Writings Are</em>, $Q_t=ct'$ with the $i$ dropped, differs from all four.</p>
+<p><strong>Target, article by article.</strong> This is the table the seven phases must satisfy. The reading each article actually takes is the one its coordinates name; the mark it prints today is in the last column.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>reading it takes</th>
+<th>the pair it should print</th>
+<th>what goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Frame Conventions</em></td>
+<td>all four</td>
+<td>the three displays, and rule 7 extended: a chart is not labelled and a metric is not written</td>
+<td>the $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ equation, the rule-8 metric sentence, the $g[\mathbb M_-]$ column of the frame table</td>
+</tr>
+<tr>
+<td><em>The Optional Metric: One Metric or Two</em></td>
+<td>—</td>
+<td>the working document of Phase 1: its census and its five phases stand as written</td>
+<td>nothing; it is the document</td>
+</tr>
+<tr>
+<td><em>Operator and Calculus Conventions</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>the $\mathbb{M}_-$ pair, with $Q_t=ict'$ displayed above it</td>
+<td>the bar in the printed display</td>
+</tr>
+<tr>
+<td><em>Remarkable Subspaces and the Analysis</em></td>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>one pair per subsection, and a sentence where a projection is meant</td>
+<td>six bars</td>
+</tr>
+<tr>
+<td><em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>the $\mathbb{M}_-$ pair</td>
+<td>one bar</td>
+</tr>
+<tr>
+<td><em>The Foldy–Wouthuysen Transformation</em></td>
+<td>$\mathbb{M}_-$</td>
+<td>the $\mathbb{M}_-$ pair, with the space part written $\vec e_x\partial_x+\vec e_y\partial_y+\vec e_z\partial_z$</td>
+<td>one bar, and $D_3$</td>
+</tr>
+<tr>
+<td><em>The Fermionic Path Integral in Biquaternionic Form</em></td>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>the all-real pair, $Q_t=c\tau$ and $Q_k=x_k$, stated once</td>
+<td>$\tilde\nabla_{\mathrm E}$ five times, $\mathbb D_{\mathrm E}$ eight times</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why this is the goal and not a preference.</strong> With one metric there is one gradient and one d'Alembertian, so a mark on either can only name a substitution, and a substitution is written. Three displays cover every coordinate the corpus uses: complex, material, informational; the all-real case is the third read at $t=\tau$. Anything else a reader needs is one of those three lines, and anything else printed after the glyph is a coordinate doing the work of an operator. The same holds for a sign: a sign borrowed from a metric is a sign that belongs on an $i$.</p>
+<p><strong>This is what the labels were trying to say.</strong> Each of the nine restriction labels and each of the five $\tilde\nabla_{\mathrm E}$ was an attempt to say one of these three lines without writing the substitution. The migration replaces the mark with the line.</p>
+<h2 id="the-migration">The Migration</h2>
+<p><strong>The order is by risk, and the risk is not uniform.</strong> The target is §<em>The Goal of the Migration</em>: one metric, one gradient, one d'Alembertian, three displays. Seven phases. The metric comes first, because every later phase is written against it, and because it is the only phase that moves a sign. It moves it out of a tensor and into the $i$ that was always in the coordinate, so it changes arithmetic and changes no physics. The labels change no equation. The two short restriction rows do change an equation, and they change it because the equation is wrong.</p>
+<h3 id="phase-0-freeze-the-meaning">Phase 0 — Freeze the Meaning</h3>
+<p>Write the letter table and the three displays of §<em>The Goal of the Migration</em> into <em>Unit, Index and Notation Conventions</em>, in the section on the low slot, and cross-reference them from <em>Operator and Calculus Conventions</em> at the definition of $\tilde\nabla$. Add one sentence to <em>Frame Conventions</em> rule 7: a chart is not labelled and a metric is not written, because the substitution carries both at once.</p>
+<p><em>Acceptance.</em> Quoted in one place, cross-referenced from three: the caret slot, the frame rule and the gradient definition. A reader who has the three displays has the whole of the notation.</p>
+<h3 id="phase-1-the-second-metric-447-occurrences-outside-this-article-137-articles">Phase 1 — The Second Metric (447 occurrences outside this article, 137 articles)</h3>
+<p><strong>This is the hard phase, and the count is its smallest part.</strong> One symbol stands in eight roles across 139 articles, each role needs a different replacement, one role carries a printed typo that a search-and-replace would multiply, and one role is not the target at all. The 139 articles are listed below, one row each, with the role the symbol plays there and the edit that follows from it. The literal census outside this article is 326 occurrences of $g_{\mu\nu}[\mathbb{M}_-]$ in 67 articles and 121 of the bare $g[\mathbb{M}_-]$ in 89, 447 in a union of 137 articles. The difference from the 417 of <em>The Optional Metric</em> is a difference of counting — that article counts roles, this line counts strings — and the gap is the first sign that a single total cannot be an acceptance test.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>what the symbol does</th>
+<th>count</th>
+<th>replaced by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>interval</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-]x_\mu x_\nu=-x_0^2+\vec x^2$</td>
+<td>inside the 326</td>
+<td>the material display, $-c^2t'^2+x^2+y^2+z^2$</td>
+</tr>
+<tr>
+<td>Gram matrix</td>
+<td>names the pairing of a basis</td>
+<td>inside the 326</td>
+<td>one sentence per article: the natural form on $(ie_t,\vec e_k)$, and then the basis goes</td>
+</tr>
+<tr>
+<td>change of frame</td>
+<td>$\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$</td>
+<td>8 in 5</td>
+<td>deleted: $Q_t=ict'$ is the change of frame, and it is written once</td>
+</tr>
+<tr>
+<td>definition of $\Box$</td>
+<td>carries the sign of the hyperbolic term</td>
+<td>43 in 28 write the product, the rest write the sum</td>
+<td>$\sum_\mu\partial^2_{Q_\mu}$ everywhere</td>
+</tr>
+<tr>
+<td>mention of the literature</td>
+<td>describes $(-1,1,1,1)$ as the standard convention</td>
+<td>part of 75 literal tuples in 22 articles</td>
+<td>kept</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Trap 1: the interval is printed twice, with opposite signs.</strong> <em>Frame Conventions</em>, rule 8, writes $x_0^2-\vec x^2$ and eleven words later $-x_0^2+\vec x^2$. The second is right. An edit driven by the first sentence copies the typo into every interval it rewrites, which is why the sign is settled before any line is touched.</p>
+<p><strong>Trap 2: $\Box$ is defined twice, and the two definitions disagree once the coefficient is real.</strong> 43 places write $\Box=\tilde\nabla\tilde\nabla^{\natural}$ and the rest write the sum of second derivatives. They agree exactly while $Q_t$ is complex, because the product carries the weight. They disagree in sign on the time term if the coefficient is made real, so every article must be classified by which definition it uses before it is edited — otherwise an edit that is meant to be a rewriting silently redefines an operator.</p>
+<p><strong>Trap 3: the raised index is already a violation, and it is not created by this phase.</strong> Nineteen occurrences in six articles write the inverse metric as a caret index, seven of them in this article before this revision. <em>Matrix Representations Conventions</em> forbids the form: "No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display", and <em>Operator and Calculus Conventions</em> repeats it, "a contraction is a form, never an index". So the inverse is not renamed; it is written out as an explicit low-index sum, $\sum_{\mu\nu}g_{\mu\nu}[\mathbb{M}_-]\partial_{x_\mu}\partial_{x_\nu}$, which is the form rule 8 itself uses for the interval. This defect stands whether or not the second metric is retired, and it goes here because it is the same lines.</p>
+<p><strong>Trap 4: three objects look like the target and are not.</strong> The dynamical $g_{\mu\nu}(x)$ of the gravity articles, 9 occurrences in 5 articles, is a field and not a frame convention. The weight $\varepsilon$ is a sign inside a product and is not a metric. $g[\mathbb{B}]$, 110 occurrences in 91 articles, equals $\delta_{\mu\nu}$ and survives wherever a table must name a frame.</p>
+<p><strong>Trap 5: the units are half the phase.</strong> The material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ and the informational basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ are the second metric written in units, since moving an $i$ from the coordinate into a unit and moving $i^2$ into a diagonal are one operation. They go in this phase, and each line is read, because the coordinate on that line may need its $i$ restored at the same time; a replacement that touches only the unit leaves a display with the $i$ twice.</p>
+<h4 id="phase-1-the-139-articles">Phase 1, the 139 articles</h4>
+<p><strong>Two groups, because the corpus divides there.</strong> 63 articles display $\tilde\nabla$ and carry the symbol, 243 of the 447 occurrences; 76 carry 204 occurrences and display no gradient. Counts are indexed plus bare. The column <em>the $i$</em> is the second half of the question: where an article writes the time as a real $x_0=ct'$, the metric was carrying the sign, so removing it forces the $i$ into that coordinate. That is 36 articles. The other 103 already work in $ict'$ or in a complex $Q_t$ and lose nothing but a symbol.</p>
+<p><strong>Why patching only the gradient articles does not finish the job.</strong> Because in most of the corpus the symbol is not a gradient object. It is a $\Box$ in 69 articles, a kinetic term in 15, an interval in 6, a Gram matrix in 11, the change-of-frame matrix in 4, the material basis in 12, a tuple in 14, and a single clause naming both frames in 36. Editing the 63 would leave 204 occurrences in 76 articles, each naming a metric the 63 no longer have — half-converted, and self-contradictory. The gradient articles are where the edit is <em>visible</em>, not where it is <em>large</em>.</p>
+<h4 id="the-63-articles-that-display-the-gradient-243-occurrences">The 63 articles that display the gradient (243 occurrences)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>occ</th>
+<th>what the symbol does there</th>
+<th>the $i$</th>
+<th>the edit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td>36</td>
+<td>the gradient, a $\Box$, a kinetic term, a Gram matrix, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; one sentence for the natural form; drop the tuple</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="the-optional-metric-and-its-removal.html">The Optional Metric: One Metric or Two, and the Name of the One That Stays</a></td>
+<td>27</td>
+<td>the gradient, a $\Box$, an interval, a Gram matrix, the change-of-frame matrix, the material basis, the literal tuple, plus a field $g_{\mu\nu}(x)$ that is not this object</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; interval as $-c^2t'^2+\vec x^2$; one sentence for the natural form; delete the matrix; $i$ out of the unit; drop the tuple</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>19</td>
+<td>the gradient, a $\Box$, a Gram matrix, the literal tuple, plus a field $g_{\mu\nu}(x)$ that is not this object</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; one sentence for the natural form; drop the tuple</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td>13</td>
+<td>the gradient, a $\Box$, the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a></td>
+<td>11</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a></td>
+<td>10</td>
+<td>the gradient, plus a field $g_{\mu\nu}(x)$ that is not this object</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>9</td>
+<td>the gradient, a $\Box$, a kinetic term, the material basis</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html">The Gauge Field Path Integral in Biquaternionic Form</a></td>
+<td>9</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td>8</td>
+<td>the gradient, a $\Box$, a kinetic term, the material basis</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>7</td>
+<td>the gradient, a $\Box$, an interval</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; interval as $-c^2t'^2+\vec x^2$</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>7</td>
+<td>the gradient, a $\Box$, a kinetic term</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>6</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>6</td>
+<td>the gradient, a $\Box$, the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td>5</td>
+<td>the gradient, a $\Box$, the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td>4</td>
+<td>the gradient</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></td>
+<td>4</td>
+<td>the gradient, a $\Box$, the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
+<td>4</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>3</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>3</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>3</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>2</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td>2</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="the-gradient-the-dalembertian-and-the-frame-generators.html">The Gradient, the D'Alembertian and the Frame Generators</a></td>
+<td>2</td>
+<td>the gradient, a $\Box$, the change-of-frame matrix</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; delete the matrix</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="../articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a></td>
+<td>2</td>
+<td>the gradient, a kinetic term, the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; $i$ out of the unit</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td>2</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>2</td>
+<td>the gradient, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; drop the tuple</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="../articles_maths/m4c-pauli-representation-operators.html">$M4(\mathbb{C})$ Pauli Representation : Operators</a></td>
+<td>1</td>
+<td>the gradient, a Gram matrix</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; one sentence for the natural form</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$, the literal tuple</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$; drop the tuple</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="the-gauge-covariant-derivative-an-inventory-by-type.html">The Gauge-Covariant Derivative: An Inventory by Type</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="../articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a></td>
+<td>1</td>
+<td>the gradient, a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$; $\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the gradient</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>gradient line at $\partial/\partial ict'$</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="the-76-articles-that-carry-the-symbol-without-a-gradient-204-occurrences">The 76 articles that carry the symbol without a gradient (204 occurrences)</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>occ</th>
+<th>what the symbol does there</th>
+<th>the $i$</th>
+<th>the edit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="../articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a></td>
+<td>30</td>
+<td>a kinetic term, an interval</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; interval as $-c^2t'^2+\vec x^2$</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>15</td>
+<td>a $\Box$, a kinetic term, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; drop the tuple</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves in Biquaternionic Form</a></td>
+<td>14</td>
+<td>a $\Box$, a kinetic term, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; drop the tuple</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="../articles_physics/frame-conventions.html">Frame Conventions (physics)</a></td>
+<td>12</td>
+<td>an interval, the change-of-frame matrix, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>interval as $-c^2t'^2+\vec x^2$; delete the matrix; drop the tuple</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a></td>
+<td>11</td>
+<td>a $\Box$, a kinetic term</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="../articles_maths/frame-conventions.html">Frame Conventions (maths)</a></td>
+<td>10</td>
+<td>an interval, the change-of-frame matrix, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>interval as $-c^2t'^2+\vec x^2$; delete the matrix; drop the tuple</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</a></td>
+<td>7</td>
+<td>a $\Box$, a Gram matrix, the literal tuple</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; one sentence for the natural form; drop the tuple</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html">Radiation from Accelerated Charges in Biquaternionic Form</a></td>
+<td>6</td>
+<td>a $\Box$, a kinetic term, the literal tuple</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; drop the tuple</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html">The Effective Optical Metric of the Local Complex Structure</a></td>
+<td>6</td>
+<td>a $\Box$, a kinetic term</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a></td>
+<td>5</td>
+<td>a kinetic term</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html">The Lorentz Group as Biquaternion Norm Automorphisms</a></td>
+<td>5</td>
+<td>the clause naming both frames</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions (physics)</a></td>
+<td>4</td>
+<td>a $\Box$, a Gram matrix, the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; one sentence for the natural form; drop the tuple</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>3</td>
+<td>a $\Box$, a kinetic term</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>3</td>
+<td>a $\Box$, a kinetic term, an interval</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; interval as $-c^2t'^2+\vec x^2$</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a></td>
+<td>3</td>
+<td>a $\Box$, a kinetic term, a Gram matrix</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$; kinetic term as $\sum_\mu\dot Q_\mu\dot Q_\mu$; one sentence for the natural form</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="../articles_maths/matrix-representations-conventions.html">Matrix Representations Conventions (maths)</a></td>
+<td>3</td>
+<td>a Gram matrix</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>one sentence for the natural form</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a></td>
+<td>3</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td>3</td>
+<td>the clause naming both frames</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a></td>
+<td>2</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>2</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a></td>
+<td>2</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="../articles_maths/adjoints-on-a-clifford-module.html">Adjoints on a Clifford Module</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="../articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra.html">Bilinear Operators on the General Plain Sesqualgebra</a></td>
+<td>1</td>
+<td>a Gram matrix</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>one sentence for the natural form</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="../articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a></td>
+<td>1</td>
+<td>the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$i$ out of the unit</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>27</td>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>28</td>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>29</td>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>30</td>
+<td><a href="../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html">Complex Split Biquaternions and the Clifford Algebra Cl(3)</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>31</td>
+<td><a href="../articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>32</td>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the Rho Parameter in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>33</td>
+<td><a href="../articles_maths/dirac-operators-with-hermitian-adjoint.html">Dirac Operators with Hermitian Adjoint</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>34</td>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>35</td>
+<td><a href="../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$i$ out of the unit</td>
+</tr>
+<tr>
+<td>36</td>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>37</td>
+<td><a href="../articles_maths/quaternion-metrics.html">Quaternion Metrics</a></td>
+<td>1</td>
+<td>a Gram matrix</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>one sentence for the natural form</td>
+</tr>
+<tr>
+<td>38</td>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>39</td>
+<td><a href="../articles_maths/spectral-triples-and-noncommutative-geometry.html">Spectral Triples and Noncommutative Geometry</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>40</td>
+<td><a href="../articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html">Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</a></td>
+<td>1</td>
+<td>a Gram matrix</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>one sentence for the natural form</td>
+</tr>
+<tr>
+<td>41</td>
+<td><a href="../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html">The $\mathbb{Z}$-Grading and the Odd Slot of $M4(\mathbb{C})$</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>42</td>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>43</td>
+<td><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>44</td>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>45</td>
+<td><a href="../articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html">The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>46</td>
+<td><a href="../articles_maths/the-clifford-group-and-the-frame-stabiliser.html">The Clifford Group and the Frame Stabiliser</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>47</td>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>48</td>
+<td><a href="../articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>49</td>
+<td><a href="../articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>50</td>
+<td><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>51</td>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>52</td>
+<td><a href="../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>53</td>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>54</td>
+<td><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M4(\mathbb{C})$</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>55</td>
+<td><a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a></td>
+<td>1</td>
+<td>the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$i$ out of the unit</td>
+</tr>
+<tr>
+<td>56</td>
+<td><a href="../articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>57</td>
+<td><a href="../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html">The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>58</td>
+<td><a href="../articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>59</td>
+<td><a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>60</td>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>61</td>
+<td><a href="../articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>62</td>
+<td><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>63</td>
+<td><a href="../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a></td>
+<td>1</td>
+<td>the literal tuple</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the tuple</td>
+</tr>
+<tr>
+<td>64</td>
+<td><a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>65</td>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>66</td>
+<td><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>67</td>
+<td><a href="../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html">The Skyrme Model and the Topological Baryon in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>68</td>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>1</td>
+<td>a $\Box$</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>69</td>
+<td><a href="../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M4(\mathbb{C})$</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>70</td>
+<td><a href="../articles_maths/the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M4(\mathbb{C})$</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>71</td>
+<td><a href="../articles_maths/the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M4(\mathbb{C})$</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>72</td>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the literal tuple</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>drop the tuple</td>
+</tr>
+<tr>
+<td>73</td>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>74</td>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td>1</td>
+<td>the clause naming both frames</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>drop the second half of the clause</td>
+</tr>
+<tr>
+<td>75</td>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td>1</td>
+<td>the material basis</td>
+<td>already $ict'$ or $Q_t$ complex</td>
+<td>$i$ out of the unit</td>
+</tr>
+<tr>
+<td>76</td>
+<td><a href="../articles_physics/why-complexify-spacetime.html">Why Complexify Spacetime?</a></td>
+<td>1</td>
+<td>a $\Box$, plus a field $g_{\mu\nu}(x)$ that is not this object</td>
+<td>$x_0=ct'$ becomes $ict'$</td>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Five edits cover the 139 rows</strong>: the gradient line, the $\Box$, the kinetic term, the interval, the clause. That is why the phase is six sub-commits and not 139: the sub-commits follow the edits, and this table is the checklist that each edit landed where it applies and nowhere else.</p>
+<p><strong>The order inside the phase, and why it is fixed.</strong> Settle rule 8's sign; then classify every $\Box$ by its definition and unify it; then rewrite the displays; then the bases; then the literal tuples; then the raised indices. Each step is the acceptance test of the next, so a different order produces a corpus that passes its own checks and is wrong.</p>
+<p><strong>Acceptance.</strong> Not a total. A grep for a caret-indexed $g$ returns zero. A grep for either $i$-carrying basis returns zero in every article that displays a gradient. Every $\Box$ display is $\sum_\mu\partial^2_{Q_\mu}$ with its substitution in the same section. Every article that states an interval states $-c^2t'^2+x^2+y^2+z^2$. The three displays of §<em>The Goal of the Migration</em> appear in one spelling, character for character, in every article that reads that frame — which is the test the totals cannot give. The dynamical $g_{\mu\nu}(x)$, the weight $\varepsilon$ and $g[\mathbb{B}]$ are counted before and after and are unchanged.</p>
+<p><strong>Rollback: a revert, not a reverse substitution.</strong> The other six phases undo locally, by substituting back. This one does not: the forward edit moves an $i$ out of a unit, and a reverse edit that moved it back would have to know, line by line, whether a given $(-1,1,1,1)$ was an interval or a description of the literature. So the rollback is the revert of the phase commit, and the phase is committed in six sub-commits, one per step of the order above, so that a failure can be attributed to a step.</p>
+<h3 id="phase-2-the-variant-labels-13-occurrences-2-articles">Phase 2 — The Variant Labels (13 occurrences, 2 articles)</h3>
+<p>The mark is dropped, not renamed. $\tilde\nabla_{\mathrm E}$ becomes $\tilde\nabla$ with $Q_t=c\tau$ and $Q_k=x_k$ stated once in the section; $\mathbb D_{\mathrm E}$ becomes $\mathbb D$ with the same substitution. The caret is left free for the one label that names a different operator, $\tilde\nabla^{\mathrm{gco}}$.</p>
+<p>The reason is the test of §<em>The Goal of the Migration</em>: the all-real case is the informational display read at $t=\tau$ and $x'_k=-ix_k$, so it is not a fourth operator and does not need a fourth name. A caret would be a second spelling of a substitution, which is what the phase removes.</p>
+<p><em>Acceptance.</em> A grep for the upright subscript $\mathrm E$ on either glyph returns zero. The Euclidean section of the fermionic article states $Q_t=c\tau$, $Q_k=x_k$ once, and every display in it is reproduced from that statement. $\Box I$ is unchanged, with $\Box$ read as $\sum_\mu\partial^2_{Q_\mu}$.</p>
+<h3 id="phase-3-the-restrictions-9-occurrences-4-articles">Phase 3 — The Restrictions (9 occurrences, 4 articles)</h3>
+<p>Each becomes a sentence plus the display, in the subsection that reads that subspace. The $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}$ rows are the two that need care: each keeps its value and gains the hypothesis that makes it one, since the terms it drops are not zero for every field of the subspace.</p>
+<p><em>Acceptance.</em> A grep for <code>nabla\big|</code> returns zero outside the two displays that state a value with a hypothesis. The $\mathrm{Vect}$ display reproduces $\tilde\nabla(Q_t^2\vec e_x)=2Q_t\vec e_x-Q_t^2e_t$ when applied to a time-dependent pure field.</p>
+<h3 id="phase-4-the-gradient-inside-the-pair-operator">Phase 4 — The Gradient Inside the Pair Operator</h3>
+<p>This is the task that touches every article of the pair-operator inventory that writes the glyph in a frame. Every article that writes $\mathbb D$ in a coordinate other than $Q$ states the substitution in the display, and the glyph keeps no trace of it. Every $\mathbb D$ written through a metric, or through one of the two $i$-carrying bases, is rewritten with $e_\mu$ and $Q_\mu$.</p>
+<p><em>Acceptance.</em> No article writes a coordinate in the low slot of $\mathbb D$. No article writes $\mathbb D$ through the inverse metric or through a basis with an $i$ in it. Every article that writes a material or informational form states the substitution within the same section.</p>
+<h3 id="phase-5-the-conventions-text">Phase 5 — The Conventions Text</h3>
+<p><em>Operator and Calculus Conventions</em> keeps one definition of $\tilde\nabla$ and one derivation of the two readings, and the readings are labelled as readings. The paragraph at §<em>On the material sector</em> becomes the derivation, with $Q_t=ict'$ displayed, the chain rule read as $\partial/\partial ict'$, and the residual stated. <em>The Gradient, the D'Alembertian and the Frame Generators</em>, §<em>The Metric Is Euclidean</em>, loses the sentence that records the substitution as a matrix between two metrics and keeps the sentence that says the metric is $(1,1,1,1)$ and is stored in no operator.</p>
+<p><em>Acceptance.</em> The definition is written once. Both readings are derived from it in the same section. The d'Alembertian sign is traced to $\frac{1}{(ic)^2}=-\frac{1}{c^2}$, with the $i$ inside the variable and never pulled out as a coefficient. No article in the corpus writes a matrix equation whose two sides are two different metrics.</p>
+<h3 id="phase-6-the-census-and-the-rollback">Phase 6 — The Census and the Rollback</h3>
+<p>Re-run the checks of the table below and record the counts at the head of this article. If a phase fails, the rollback is the reverse substitution, and it is safe because no phase changes a physics result: the two short rows of §<em>Three Meanings in One Slot</em> are the only places where content moves, and they move toward the correct statement. The metric phase is the exception and rolls back by reverting its commit, for the reason given in Phase 1: a reverse substitution cannot tell an interval from a description of the literature.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$ indexed, outside this article</td>
+<td>326 in 67 articles</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$g[\mathbb{M}_-]$ bare, outside this article</td>
+<td>121 in 89 articles</td>
+<td>0</td>
+</tr>
+<tr>
+<td>a caret-indexed $g$, the raised index</td>
+<td>19 in 6 articles</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$</td>
+<td>10 in 4 articles</td>
+<td>0</td>
+</tr>
+<tr>
+<td>the literal $(-1,1,1,1)$</td>
+<td>75 in 22 articles</td>
+<td>0 outside the literature articles</td>
+</tr>
+<tr>
+<td>$(ie_t,\vec e_x,\vec e_y,\vec e_z)$ and $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$</td>
+<td>64 and its partner</td>
+<td>0 in gradient displays</td>
+</tr>
+<tr>
+<td>the upright subscript $\mathrm E$ on $\tilde\nabla$</td>
+<td>5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>the upright subscript $\mathrm E$ on $\mathbb D$</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>the restriction mark on $\tilde\nabla$</td>
+<td>9</td>
+<td>2, both values with hypotheses</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>275</td>
+<td>275</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_p$</td>
+<td>70</td>
+<td>70</td>
+</tr>
+<tr>
+<td>$\Box$ defined by the product</td>
+<td>43 in 28 articles</td>
+<td>0, all by substitution</td>
+</tr>
+<tr>
+<td>the dynamical $g_{\mu\nu}(x)$ of the gravity articles</td>
+<td>unchanged</td>
+<td>unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>One metric, one set of units, three displays.</strong> $\delta_{\mu\nu}=(1,1,1,1)$ is the only metric, the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ in every frame, and the $i$ is in the coordinate: $\partial/\partial ict'$, $\partial/\partial ix'_k$, and $\partial/\partial x_k$ where the direction is real. The second metric, $g_{\mu\nu}[\mathbb{M}_-]$, is the same sign moved into a diagonal, and the two bases that carry an $i$ into the unit are the same trade again; both are retired, so no display names a metric and no display needs to.</p>
+<p><strong>The notation is four letters, and the signs come from the $i$.</strong> $Q_\mu$ is the complex coefficient, $q_\mu$ and $q'_\mu$ its real parameters, $q_t=ct$ the informational time, $q'_t=ct'$ the material one, $q_k=x_k$ the material space, $q'_k=x'_k$ the informational one. The gradient keeps the $i$ inside the variable it differentiates by — $\partial/\partial ict'$, $\partial/\partial ix'_k$, and $\partial/\partial x_k$ when the direction is real — and the d'Alembertian carries the minus that $(1/i)^2=-1$ leaves behind. Three displays cover the corpus: $\mathbb{B}$ complex, $\mathbb{M}_-$ material, $\mathbb{M}_+$ informational; the all-real case is the informational display at $t=\tau$. None of them needs a mark, and none of them names a metric.</p>
+<p>The gradient is one operator with four readings, and the readings are substitutions in the coordinate, not restrictions of the operator. Two of the corpus's three marks on it — the bar and the variant subscript — are charts written in slots reserved for other things, and the third, the caret, is the only one used correctly, 275 times, by the one label that names a different operator.</p>
+<p>The restriction glyph carries three meanings and fails in two of the nine places it is used: on the central subspace it drops a vector part that a spatially varying field keeps, and on the vector subspace it drops a scalar part that a time-dependent field keeps. The variant subscript carries one meaning and breaks two rules: the wrong slot and the wrong case.</p>
+<p>The repair needs no new invention. The caret already takes variants, the substitution already names charts, and the sentence already carries hypotheses. The migration is one metric retired, thirteen marks dropped, nine sentences, two corrections, and 275 occurrences left untouched, in seven phases, of which the second metric is the first.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>the complex coefficient of $e_\mu$; $q_\mu$ its real part, $q'_\mu$ its imaginary part</td>
+</tr>
+<tr>
+<td>$q_t=ct$, $q'_t=ct'$</td>
+<td>the informational time, the material time</td>
+</tr>
+<tr>
+<td>$q_k=x_k$, $q'_k=x'_k$</td>
+<td>the material space $x,y,z$, the informational space $x',y',z'$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla=\sum_\mu e_\mu\partial_{Q_\mu}$</td>
+<td>the gradient, one definition, $Q_\mu\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\Box=\sum_\mu\partial^2_{Q_\mu}$</td>
+<td>the d'Alembertian, one definition; $-\frac{1}{c^2}\partial^2_{t'}+\Delta$ on $\mathbb{M}_-$, $+\frac{1}{c^2}\partial^2_t-\Delta'$ on $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>its natural conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial_{Q_\mu}$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>the gauge-covariant derivative, a different operator, caret, 275 occurrences</td>
+</tr>
+<tr>
+<td>$\tilde\nabla$ at $Q_t=c\tau$</td>
+<td>the all-real reading; no mark, no separate name</td>
+</tr>
+<tr>
+<td>$\tilde\nabla\vert_{\mathbb M_-}$</td>
+<td>retired; it is $\tilde\nabla$ at $Q_t=ict'$</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the plain weight, $\mathrm{Sc}(e_\mu e_\mu)$; not a metric, and not a unit</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>the only metric, the unit metric; written in no display</td>
+</tr>
+<tr>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$, $(-1,1,1,1)$</td>
+<td>retired: the second metric, and the same object as a literal</td>
+</tr>
+<tr>
+<td>$(ie_t,\vec e_x,\vec e_y,\vec e_z)$, $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$</td>
+<td>retired: the second metric written in units</td>
+</tr>
+<tr>
+<td>$\vert$ with a subspace</td>
+<td>a chart, a domain or a projection; the corpus does not say which</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em>, for the definition and the material display.</li>
+<li><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a>, §<em>The Subscript</em>, for the low slot and the caret.</li>
+<li><a href="../articles_physics/frame-conventions.html">Frame Conventions</a>, §<em>The Rules</em>, for the written substitution.</li>
+<li><a href="../articles_maths/remarkable-subspaces-and-the-analysis.html">Remarkable Subspaces and the Analysis</a>, for the six restrictions.</li>
+<li><a href="the-letter-d-on-the-covariant-derivative-an-inventory-and-a-retirement.html">The Letter D on the Covariant Derivative: An Inventory and a Retirement</a>, for the caret precedent.</li>
+<li><a href="the-pair-operator-an-inventory-of-the-glyph.html">The Pair Operator: An Inventory of the Glyph</a>, §<em>The Subscript, and What May Stand in It</em>, for the low slot of $\mathbb D$.</li>
+<li><a href="the-optional-metric-and-its-removal.html">The Optional Metric: One Metric or Two</a>, for the choice of a single metric that makes the four material-coordinate labels unnecessary.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
