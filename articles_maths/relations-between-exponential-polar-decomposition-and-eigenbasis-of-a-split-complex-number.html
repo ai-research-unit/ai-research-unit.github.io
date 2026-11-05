@@ -80,15 +80,15 @@ Q=\lambda_+\Pi_++\lambda_-\Pi_-,
 $$</p>
 <p>with $\lambda_\pm$ the eigenvalues and $\Pi_\pm$ the fixed central idempotents. The <strong>exponential polar decomposition</strong> of <em>Exponential Polar Decomposition of Split-Complex Numbers</em> writes an invertible $Q$ as</p>
 <p>$$
-Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j),
+Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j),
 \qquad
-Q_{\log}=\ln r+j\phi,
+Q_{\log}=\ln r+j\theta^{\mathrm{hpa}},
 $$</p>
-<p>with $r>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$ the component sign. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the components are those of the elementary and polar articles.</p>
-<p>The two decompositions answer different questions. The spectral writing separates $Q$ into its two real coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$, with fixed directions $\Pi_\pm$. The polar writing separates $Q$ into a positive modulus $r$, a hyperbolic angle $\phi$, and a discrete sign $\epsilon$ that records the component. The dictionary is therefore a change of coordinates on the unit group: the continuous pair $(\lambda_+,\lambda_-)$ is replaced by $(r,\phi)$, and the two signs of $\lambda_\pm$ are replaced by the single discrete factor $\epsilon$.</p>
+<p>with $r>0$, $\theta^{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$ the component sign. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the components are those of the elementary and polar articles.</p>
+<p>The two decompositions answer different questions. The spectral writing separates $Q$ into its two real coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$, with fixed directions $\Pi_\pm$. The polar writing separates $Q$ into a positive modulus $r$, a hyperbolic angle $\theta^{\mathrm{hpa}}$, and a discrete sign $\epsilon$ that records the component. The dictionary is therefore a change of coordinates on the unit group: the continuous pair $(\lambda_+,\lambda_-)$ is replaced by $(r,\theta^{\mathrm{hpa}})$, and the two signs of $\lambda_\pm$ are replaced by the single discrete factor $\epsilon$.</p>
 <p><strong>The results.</strong> The eigenvalues are recovered from the polar data by</p>
 <p>$$
-\lambda_\pm=\sigma_\pm\,r\,e^{\pm\phi},
+\lambda_\pm=\sigma_\pm\,r\,e^{\pm\theta^{\mathrm{hpa}}},
 \qquad
 \sigma_\pm=\operatorname{sgn}\lambda_\pm,
 $$</p>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 r=\sqrt{\lvert\lambda_+\lambda_-\rvert},
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
+\theta^{\mathrm{hpa}}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
 $$</p>
 <p>and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The product of the eigenvalues is $\lambda_+\lambda_-=q^2-q'^2=(q+q')(q-q')$, and the ratio is the exponential of twice the hyperbolic angle, up to the sign of $q^2-q'^2$. The dictionary is a bijection between the four components of ${\mathbb{C}^{\mathrm{spl}}}^\times$ and the four sign patterns.</p>
 <div class="table-scroll"><table>
@@ -121,15 +121,15 @@ $$</p>
 </tr>
 <tr>
 <td>Polar parameters</td>
-<td>$r>0$, $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$</td>
+<td>$r>0$, $\theta^{\mathrm{hpa}}\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$</td>
 </tr>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\lambda_\pm=\sigma_\pm r e^{\pm\phi}$</td>
+<td>$\lambda_\pm=\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}$</td>
 </tr>
 <tr>
 <td>Polar data from eigenvalues</td>
-<td>$r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$, $\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$</td>
+<td>$r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$, $\theta^{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$</td>
 </tr>
 <tr>
 <td>Sign pattern</td>
@@ -137,11 +137,11 @@ $$</p>
 </tr>
 <tr>
 <td>Factor decompositions</td>
-<td>$r=r\Pi_++r\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\phi j}=e^{\phi}\Pi_++e^{-\phi}\Pi_-$</td>
+<td>$r=r\Pi_++r\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta^{\mathrm{hpa}} j}=e^{\theta^{\mathrm{hpa}}}\Pi_++e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
 </tr>
 <tr>
 <td>Exponential on idempotents</td>
-<td>$\exp(Q_{\log})=r e^{\phi}\Pi_++r e^{-\phi}\Pi_-$</td>
+<td>$\exp(Q_{\log})=r e^{\theta^{\mathrm{hpa}}}\Pi_++r e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
 </tr>
 <tr>
 <td>Common domain</td>
@@ -211,11 +211,11 @@ $$</p>
 <h3 id="the-exponential-polar-decomposition">The Exponential Polar Decomposition</h3>
 <p>Every unit $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times=\{q^2-q'^2\neq0\}$ has a unique writing</p>
 <p>$$
-Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j),
+Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j),
 \qquad
-Q_{\log}=\ln r+j\phi,
+Q_{\log}=\ln r+j\theta^{\mathrm{hpa}},
 $$</p>
-<p>with $r>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $r=\sqrt{\lvert q^2-q'^2\rvert}$ is the modulus, $\phi$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\phi j)=Q/r$, of modulus one. These are the statements of <em>Exponential Polar Decomposition of Split-Complex Numbers</em>, §<em>The Decomposition</em>, §<em>Existence and Uniqueness</em> and §<em>The Four Components</em>.</p>
+<p>with $r>0$, $\theta^{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $r=\sqrt{\lvert q^2-q'^2\rvert}$ is the modulus, $\theta^{\mathrm{hpa}}$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\theta^{\mathrm{hpa}} j)=Q/r$, of modulus one. These are the statements of <em>Exponential Polar Decomposition of Split-Complex Numbers</em>, §<em>The Decomposition</em>, §<em>Existence and Uniqueness</em> and §<em>The Four Components</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -230,7 +230,7 @@ $$</p>
 </tr>
 <tr>
 <td>Decomposition</td>
-<td>$Q=r\,\epsilon\exp(\phi j)$</td>
+<td>$Q=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j)$</td>
 </tr>
 <tr>
 <td>Modulus</td>
@@ -238,7 +238,7 @@ $$</p>
 </tr>
 <tr>
 <td>Angle</td>
-<td>$\phi\in\mathbb{R}$</td>
+<td>$\theta^{\mathrm{hpa}}\in\mathbb{R}$</td>
 </tr>
 <tr>
 <td>Component sign</td>
@@ -246,7 +246,7 @@ $$</p>
 </tr>
 <tr>
 <td>Exponent</td>
-<td>$Q_{\log}=\ln r+j\phi$</td>
+<td>$Q_{\log}=\ln r+j\theta^{\mathrm{hpa}}$</td>
 </tr>
 <tr>
 <td>Kernel</td>
@@ -288,7 +288,7 @@ $$</p>
 <tr>
 <td>$q'=0$, $q^2\neq0$</td>
 <td>one repeated nonzero eigenvalue</td>
-<td>exists with $\phi=0$ and $\epsilon=\operatorname{sgn}q$</td>
+<td>exists with $\theta^{\mathrm{hpa}}=0$ and $\epsilon=\operatorname{sgn}q$</td>
 </tr>
 <tr>
 <td>$q'=0$, $q^2-q'^2=0$</td>
@@ -300,15 +300,15 @@ $$</p>
 <p>The spectral domain is therefore strictly larger than the polar domain. The gap is exactly the null set $q^2-q'^2=0$: the nonzero zero divisors and the zero element, on which the eigenvalue decomposition survives and the logarithm does not.</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <h3 id="the-eigenvalues-from-the-polar-parameters">The Eigenvalues from the Polar Parameters</h3>
-<p>Let $Q=r\,\epsilon\exp(\phi j)$ be a unit, and let $\sigma_\pm=\operatorname{sgn}\lambda_\pm$. Applying the eigenvalue relations $Q\Pi_\pm=\lambda_\pm\Pi_\pm$ to the polar writing gives</p>
+<p>Let $Q=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j)$ be a unit, and let $\sigma_\pm=\operatorname{sgn}\lambda_\pm$. Applying the eigenvalue relations $Q\Pi_\pm=\lambda_\pm\Pi_\pm$ to the polar writing gives</p>
 <p>$$
-\lambda_\pm=\sigma_\pm\,r\,e^{\pm\phi}.
+\lambda_\pm=\sigma_\pm\,r\,e^{\pm\theta^{\mathrm{hpa}}}.
 $$</p>
 <p>The formula is checked on the two idempotents:</p>
 <p>$$
-Q\Pi_+=r\,\epsilon\exp(\phi j)\Pi_+,
+Q\Pi_+=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j)\Pi_+,
 \qquad
-\exp(\phi j)\Pi_+=e^{\phi}\Pi_+,
+\exp(\theta^{\mathrm{hpa}} j)\Pi_+=e^{\theta^{\mathrm{hpa}}}\Pi_+,
 \qquad
 \epsilon\Pi_+=\sigma_+\Pi_+,
 $$</p>
@@ -332,8 +332,8 @@ $$</p>
 <td>$1$</td>
 <td>$+$</td>
 <td>$+$</td>
-<td>$e^{\phi}$, $e^{-\phi}$</td>
-<td>$\ln r+\phi$, $\ln r-\phi$</td>
+<td>$e^{\theta^{\mathrm{hpa}}}$, $e^{-\theta^{\mathrm{hpa}}}$</td>
+<td>$\ln r+\theta^{\mathrm{hpa}}$, $\ln r-\theta^{\mathrm{hpa}}$</td>
 </tr>
 <tr>
 <td>Past cone</td>
@@ -341,8 +341,8 @@ $$</p>
 <td>$-1$</td>
 <td>$-$</td>
 <td>$-$</td>
-<td>$-e^{\phi}$, $-e^{-\phi}$</td>
-<td>$\ln r+\phi$, $\ln r-\phi$</td>
+<td>$-e^{\theta^{\mathrm{hpa}}}$, $-e^{-\theta^{\mathrm{hpa}}}$</td>
+<td>$\ln r+\theta^{\mathrm{hpa}}$, $\ln r-\theta^{\mathrm{hpa}}$</td>
 </tr>
 <tr>
 <td>Right spacelike</td>
@@ -350,8 +350,8 @@ $$</p>
 <td>$j$</td>
 <td>$+$</td>
 <td>$-$</td>
-<td>$e^{\phi}$, $-e^{-\phi}$</td>
-<td>$\ln r+\phi$, $\ln r-\phi$</td>
+<td>$e^{\theta^{\mathrm{hpa}}}$, $-e^{-\theta^{\mathrm{hpa}}}$</td>
+<td>$\ln r+\theta^{\mathrm{hpa}}$, $\ln r-\theta^{\mathrm{hpa}}$</td>
 </tr>
 <tr>
 <td>Left spacelike</td>
@@ -359,23 +359,23 @@ $$</p>
 <td>$-j$</td>
 <td>$-$</td>
 <td>$+$</td>
-<td>$-e^{\phi}$, $e^{-\phi}$</td>
-<td>$\ln r+\phi$, $\ln r-\phi$</td>
+<td>$-e^{\theta^{\mathrm{hpa}}}$, $e^{-\theta^{\mathrm{hpa}}}$</td>
+<td>$\ln r+\theta^{\mathrm{hpa}}$, $\ln r-\theta^{\mathrm{hpa}}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The exponent eigenvalues are always $\ln r\pm\phi$; the component sign changes the eigenvalues of the unit factor, not those of the exponent. This is the discrete part of the dictionary.</p>
+<p>The exponent eigenvalues are always $\ln r\pm\theta^{\mathrm{hpa}}$; the component sign changes the eigenvalues of the unit factor, not those of the exponent. This is the discrete part of the dictionary.</p>
 <p>The two spectral invariants of the polar data are</p>
 <p>$$
 \lambda_+\lambda_-=\sigma_+\sigma_-\,r^2,
 \qquad
-\frac{\lambda_+}{\lambda_-}=\frac{\sigma_+}{\sigma_-}e^{2\phi}.
+\frac{\lambda_+}{\lambda_-}=\frac{\sigma_+}{\sigma_-}e^{2\theta^{\mathrm{hpa}}}.
 $$</p>
 <p>Since $\sigma_+\sigma_-=\operatorname{sgn}(q^2-q'^2)$ and $\sigma_+/\sigma_-=\operatorname{sgn}(q^2-q'^2)$, both identities reduce to</p>
 <p>$$
 \lambda_+\lambda_-=q^2-q'^2,
 \qquad
-\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert=e^{2\phi}.
+\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert=e^{2\theta^{\mathrm{hpa}}}.
 $$</p>
 <p>The product is independent of the component; the modulus of the ratio is the exponential of twice the hyperbolic angle.</p>
 <h3 id="the-polar-parameters-from-the-eigenvalues">The Polar Parameters from the Eigenvalues</h3>
@@ -383,7 +383,7 @@ $$</p>
 <p>$$
 \boxed{\; r=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'^2\rvert},
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert \;}
+\theta^{\mathrm{hpa}}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert \;}
 $$</p>
 <p>The component sign is recovered from the signs of the two eigenvalues:</p>
 <div class="table-scroll"><table>
@@ -417,21 +417,21 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exponent is then $Q_{\log}=\ln r+j\phi$, with real eigenvalues $\ln r\pm\phi=\ln\lvert\lambda_\pm\rvert$. The imaginary parts of the complex logarithms of $\lambda_\pm$ are $0$ or $\pi$, and they are carried by $\epsilon$, not by a continuous angle. This is the exact point at which the split-complex dictionary differs from the complex one: the sign of a real eigenvalue is a discrete datum, not a phase.</p>
+<p>The exponent is then $Q_{\log}=\ln r+j\theta^{\mathrm{hpa}}$, with real eigenvalues $\ln r\pm\theta^{\mathrm{hpa}}=\ln\lvert\lambda_\pm\rvert$. The imaginary parts of the complex logarithms of $\lambda_\pm$ are $0$ or $\pi$, and they are carried by $\epsilon$, not by a continuous angle. This is the exact point at which the split-complex dictionary differs from the complex one: the sign of a real eigenvalue is a discrete datum, not a phase.</p>
 <p><strong>Proposition (the dictionary).</strong> On the unit group, the map</p>
 <p>$$
-\boxed{\; (r,\phi,\epsilon)\longmapsto(\lambda_+,\lambda_-)=(\sigma_+re^{\phi},\sigma_-re^{-\phi}) \;}
+\boxed{\; (r,\theta^{\mathrm{hpa}},\epsilon)\longmapsto(\lambda_+,\lambda_-)=(\sigma_+re^{\theta^{\mathrm{hpa}}},\sigma_-re^{-\theta^{\mathrm{hpa}}}) \;}
 $$</p>
-<p>is a bijection from the four components, each parametrised by $(r,\phi)\in(0,\infty)\times\mathbb{R}$, onto the four open quadrants of $\mathbb{R}^2$. Its inverse is the formula above.</p>
-<p><em>Proof.</em> The forward map gives $\lambda_+\lambda_-=\sigma_+\sigma_-r^2e^{0}=q^2-q'^2$, whose sign is $\sigma_+\sigma_-$, and $\lvert\lambda_+/\lambda_-\rvert=e^{2\phi}$. Hence $r$ and $\phi$ are recovered by the displayed formulas, and the sign pair is recovered from $\lambda_\pm$. Conversely, the formulas reproduce $\lambda_\pm$ from $(r,\phi,\epsilon)$.</p>
+<p>is a bijection from the four components, each parametrised by $(r,\theta^{\mathrm{hpa}})\in(0,\infty)\times\mathbb{R}$, onto the four open quadrants of $\mathbb{R}^2$. Its inverse is the formula above.</p>
+<p><em>Proof.</em> The forward map gives $\lambda_+\lambda_-=\sigma_+\sigma_-r^2e^{0}=q^2-q'^2$, whose sign is $\sigma_+\sigma_-$, and $\lvert\lambda_+/\lambda_-\rvert=e^{2\theta^{\mathrm{hpa}}}$. Hence $r$ and $\theta^{\mathrm{hpa}}$ are recovered by the displayed formulas, and the sign pair is recovered from $\lambda_\pm$. Conversely, the formulas reproduce $\lambda_\pm$ from $(r,\theta^{\mathrm{hpa}},\epsilon)$.</p>
 <h3 id="the-eigenprojections">The Eigenprojections</h3>
 <p>The eigenprojections are the fixed idempotents $\Pi_\pm$; they do not depend on $Q$ and are not part of the polar data. In the polar writing they read the unit factor:</p>
 <p>$$
-\frac{Q}{r}=\epsilon\exp(\phi j)
+\frac{Q}{r}=\epsilon\exp(\theta^{\mathrm{hpa}} j)
 =\frac{\lambda_+}{r}\Pi_++\frac{\lambda_-}{r}\Pi_-
-=\sigma_+e^{\phi}\Pi_++\sigma_-e^{-\phi}\Pi_-.
+=\sigma_+e^{\theta^{\mathrm{hpa}}}\Pi_++\sigma_-e^{-\theta^{\mathrm{hpa}}}\Pi_-.
 $$</p>
-<p>The modulus $r$ is scalar and disappears from the eigenprojections; the component sign $\epsilon$ acts on them by the sign pair $(\sigma_+,\sigma_-)$; the angle $\phi$ acts by the hyperbolic factor $e^{\pm\phi}$. The spectral decomposition of $Q$ and the spectral decomposition of its unit factor therefore have the same idempotents and eigenvalues differing by the scalar $r$.</p>
+<p>The modulus $r$ is scalar and disappears from the eigenprojections; the component sign $\epsilon$ acts on them by the sign pair $(\sigma_+,\sigma_-)$; the angle $\theta^{\mathrm{hpa}}$ acts by the hyperbolic factor $e^{\pm\theta^{\mathrm{hpa}}}$. The spectral decomposition of $Q$ and the spectral decomposition of its unit factor therefore have the same idempotents and eigenvalues differing by the scalar $r$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -444,17 +444,17 @@ $$</p>
 <tr>
 <td>$Q$</td>
 <td>$\lambda_+\Pi_++\lambda_-\Pi_-$</td>
-<td>$r\,\epsilon\exp(\phi j)$</td>
+<td>$r\,\epsilon\exp(\theta^{\mathrm{hpa}} j)$</td>
 </tr>
 <tr>
 <td>Unit factor $Q/r$</td>
-<td>$\sigma_+e^{\phi}\Pi_++\sigma_-e^{-\phi}\Pi_-$</td>
-<td>$\epsilon\exp(\phi j)$</td>
+<td>$\sigma_+e^{\theta^{\mathrm{hpa}}}\Pi_++\sigma_-e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
+<td>$\epsilon\exp(\theta^{\mathrm{hpa}} j)$</td>
 </tr>
 <tr>
 <td>Exponent $Q_{\log}$</td>
-<td>$(\ln r+\phi)\Pi_++(\ln r-\phi)\Pi_-$</td>
-<td>$\ln r+j\phi$</td>
+<td>$(\ln r+\theta^{\mathrm{hpa}})\Pi_++(\ln r-\theta^{\mathrm{hpa}})\Pi_-$</td>
+<td>$\ln r+j\theta^{\mathrm{hpa}}$</td>
 </tr>
 <tr>
 <td>Modulus $r$</td>
@@ -468,20 +468,20 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table shows the division of labour: the eigenvalues carry the continuous scale $r$ and angle $\phi$, the idempotents are fixed, and the discrete factor $\epsilon$ is the spectral sign pair.</p>
+<p>The table shows the division of labour: the eigenvalues carry the continuous scale $r$ and angle $\theta^{\mathrm{hpa}}$, the idempotents are fixed, and the discrete factor $\epsilon$ is the spectral sign pair.</p>
 <h3 id="the-factors-one-by-one">The Factors One by One</h3>
-<p>Each factor of the polar word has its own spectral decomposition on the fixed idempotents. The modulus is scalar, the component sign is the sign pair, and the hyperbolic factor is the exponential of $\phi j$:</p>
+<p>Each factor of the polar word has its own spectral decomposition on the fixed idempotents. The modulus is scalar, the component sign is the sign pair, and the hyperbolic factor is the exponential of $\theta^{\mathrm{hpa}} j$:</p>
 <p>$$
 r=r\Pi_++r\Pi_-,
 \qquad
 \epsilon=\sigma_+\Pi_++\sigma_-\Pi_-,
 \qquad
-e^{\phi j}=e^{\phi}\Pi_++e^{-\phi}\Pi_-.
+e^{\theta^{\mathrm{hpa}} j}=e^{\theta^{\mathrm{hpa}}}\Pi_++e^{-\theta^{\mathrm{hpa}}}\Pi_-.
 $$</p>
 <p>The unit factor and the element follow:</p>
 <p>$$
-u=\epsilon e^{\phi j}
-=\sigma_+e^{\phi}\Pi_++\sigma_-e^{-\phi}\Pi_-,
+u=\epsilon e^{\theta^{\mathrm{hpa}} j}
+=\sigma_+e^{\theta^{\mathrm{hpa}}}\Pi_++\sigma_-e^{-\theta^{\mathrm{hpa}}}\Pi_-,
 \qquad
 Q=r u
 =\lambda_+\Pi_++\lambda_-\Pi_-.
@@ -511,21 +511,21 @@ $$</p>
 </tr>
 <tr>
 <td>Hyperbolic factor</td>
-<td>$e^{\phi j}$</td>
-<td>$e^{\phi}\Pi_++e^{-\phi}\Pi_-$</td>
-<td>$e^{\phi},e^{-\phi}$</td>
+<td>$e^{\theta^{\mathrm{hpa}} j}$</td>
+<td>$e^{\theta^{\mathrm{hpa}}}\Pi_++e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
+<td>$e^{\theta^{\mathrm{hpa}}},e^{-\theta^{\mathrm{hpa}}}$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
-<td>$u=\epsilon e^{\phi j}$</td>
-<td>$\sigma_+e^{\phi}\Pi_++\sigma_-e^{-\phi}\Pi_-$</td>
-<td>$\sigma_+e^{\phi},\sigma_-e^{-\phi}$</td>
+<td>$u=\epsilon e^{\theta^{\mathrm{hpa}} j}$</td>
+<td>$\sigma_+e^{\theta^{\mathrm{hpa}}}\Pi_++\sigma_-e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
+<td>$\sigma_+e^{\theta^{\mathrm{hpa}}},\sigma_-e^{-\theta^{\mathrm{hpa}}}$</td>
 </tr>
 <tr>
 <td>Element</td>
-<td>$Q=r\epsilon e^{\phi j}$</td>
+<td>$Q=r\epsilon e^{\theta^{\mathrm{hpa}} j}$</td>
 <td>$\lambda_+\Pi_++\lambda_-\Pi_-$</td>
-<td>$\lambda_\pm=\sigma_\pm r e^{\pm\phi}$</td>
+<td>$\lambda_\pm=\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -533,16 +533,16 @@ $$</p>
 <h3 id="the-exponential-on-the-idempotents">The Exponential on the Idempotents</h3>
 <p>The exponent is</p>
 <p>$$
-Q_{\log}=\ln r+j\phi
-=(\ln r+\phi)\Pi_++(\ln r-\phi)\Pi_-,
+Q_{\log}=\ln r+j\theta^{\mathrm{hpa}}
+=(\ln r+\theta^{\mathrm{hpa}})\Pi_++(\ln r-\theta^{\mathrm{hpa}})\Pi_-,
 $$</p>
 <p>and its exponential acts on the two idempotents by</p>
 <p>$$
 \exp(Q_{\log})
-=e^{\ln r+\phi}\Pi_++e^{\ln r-\phi}\Pi_-
-=r e^{\phi}\Pi_++r e^{-\phi}\Pi_-.
+=e^{\ln r+\theta^{\mathrm{hpa}}}\Pi_++e^{\ln r-\theta^{\mathrm{hpa}}}\Pi_-
+=r e^{\theta^{\mathrm{hpa}}}\Pi_++r e^{-\theta^{\mathrm{hpa}}}\Pi_-.
 $$</p>
-<p>On the future cone, where $\epsilon=1$, this is $Q$. On the other three components $Q=\epsilon\exp(Q_{\log})$, and the exponent is the logarithm of the future-cone element $r e^{\phi j}$, not of $Q$ itself. In every component the eigenvalues of the exponent are $\ln r\pm\phi=\ln\lvert\lambda_\pm\rvert$, while the eigenvalues of $Q$ are $\sigma_\pm r e^{\pm\phi}$. The exponential sees the modulus and the absolute values of the eigenvalues; the signs are the discrete factor $\epsilon$, outside the image of the exponential.</p>
+<p>On the future cone, where $\epsilon=1$, this is $Q$. On the other three components $Q=\epsilon\exp(Q_{\log})$, and the exponent is the logarithm of the future-cone element $r e^{\theta^{\mathrm{hpa}} j}$, not of $Q$ itself. In every component the eigenvalues of the exponent are $\ln r\pm\theta^{\mathrm{hpa}}=\ln\lvert\lambda_\pm\rvert$, while the eigenvalues of $Q$ are $\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}$. The exponential sees the modulus and the absolute values of the eigenvalues; the signs are the discrete factor $\epsilon$, outside the image of the exponential.</p>
 <p>This is the exact sense in which the exponential is a bijection onto the future cone and the polar word is a section of the word map, not a logarithm, on the other three components. The kernel is trivial, and the failure is not multivaluedness but the four-component cover.</p>
 <h3 id="what-each-side-carries">What Each Side Carries</h3>
 <div class="table-scroll"><table>
@@ -564,7 +564,7 @@ $$</p>
 <tr>
 <td>$\lambda_+/\lambda_-$</td>
 <td>hyperbolic angle and the sign of the ratio</td>
-<td>$\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$, $\sigma_+/\sigma_-=\operatorname{sgn}(\lambda_+/\lambda_-)$</td>
+<td>$\theta^{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$, $\sigma_+/\sigma_-=\operatorname{sgn}(\lambda_+/\lambda_-)$</td>
 <td>the exchange $\sigma_+\leftrightarrow\sigma_-$, one bit</td>
 </tr>
 <tr>
@@ -580,15 +580,15 @@ $$</p>
 <td>—</td>
 </tr>
 <tr>
-<td>$r,\phi,\epsilon$</td>
+<td>$r,\theta^{\mathrm{hpa}},\epsilon$</td>
 <td>the element</td>
-<td>$Q=r\epsilon e^{\phi j}$</td>
+<td>$Q=r\epsilon e^{\theta^{\mathrm{hpa}} j}$</td>
 <td>—</td>
 </tr>
 <tr>
 <td>$Q_{\log}$</td>
 <td>the future-cone part</td>
-<td>$\exp(Q_{\log})=r e^{\phi j}$</td>
+<td>$\exp(Q_{\log})=r e^{\theta^{\mathrm{hpa}} j}$</td>
 <td>the component sign</td>
 </tr>
 </tbody>
@@ -610,7 +610,7 @@ $$</p>
 <td>Distinct interior</td>
 <td>$q'\neq0$, $q^2-q'^2\neq0$</td>
 <td>$\lambda_+\neq\lambda_-$, both nonzero</td>
-<td>$r>0$, $\phi\in\mathbb{R}$, one of four $\epsilon$</td>
+<td>$r>0$, $\theta^{\mathrm{hpa}}\in\mathbb{R}$, one of four $\epsilon$</td>
 </tr>
 <tr>
 <td>Zero divisor</td>
@@ -622,7 +622,7 @@ $$</p>
 <td>Scalar nonzero</td>
 <td>$q'=0$, $q\neq0$</td>
 <td>$\lambda_+=\lambda_-=q$</td>
-<td>$r=\lvert q\rvert$, $\phi=0$, $\epsilon=\operatorname{sgn}q$</td>
+<td>$r=\lvert q\rvert$, $\theta^{\mathrm{hpa}}=0$, $\epsilon=\operatorname{sgn}q$</td>
 </tr>
 <tr>
 <td>Zero</td>
@@ -649,9 +649,9 @@ $$</p>
 <p>$$
 Q=q(1\pm j)=2q\,\Pi_\pm.
 $$</p>
-<p>Its eigenvalues are $\lambda_+=2q$, $\lambda_-=0$ for $Q=2q\Pi_+$, and they are exchanged for $Q=2q\Pi_-$. The spectrum is distinct, and the eigenvalue decomposition exists. The polar decomposition does not: the angle formula gives $\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert=+\infty$, and the logarithm of the zero eigenvalue does not exist. The zero-divisor cone is the boundary of the polar domain, not a spectral degeneration.</p>
+<p>Its eigenvalues are $\lambda_+=2q$, $\lambda_-=0$ for $Q=2q\Pi_+$, and they are exchanged for $Q=2q\Pi_-$. The spectrum is distinct, and the eigenvalue decomposition exists. The polar decomposition does not: the angle formula gives $\theta^{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert=+\infty$, and the logarithm of the zero eigenvalue does not exist. The zero-divisor cone is the boundary of the polar domain, not a spectral degeneration.</p>
 <h3 id="the-scalar-regime">The Scalar Regime</h3>
-<p>For $Q=q$ with $q\neq0$, the two eigenvalues coincide at $q$. The polar data are $r=\lvert q\rvert$, $\phi=0$ and $\epsilon=\operatorname{sgn}q$; the unit factor is $\epsilon=\pm1$. The repeated eigenvalue is therefore not a repeated polar datum: the angle vanishes and the two-term spectral writing collapses to $Q=q\Pi_++q\Pi_-$, while the polar writing keeps the single modulus and the single sign.</p>
+<p>For $Q=q$ with $q\neq0$, the two eigenvalues coincide at $q$. The polar data are $r=\lvert q\rvert$, $\theta^{\mathrm{hpa}}=0$ and $\epsilon=\operatorname{sgn}q$; the unit factor is $\epsilon=\pm1$. The repeated eigenvalue is therefore not a repeated polar datum: the angle vanishes and the two-term spectral writing collapses to $Q=q\Pi_++q\Pi_-$, while the polar writing keeps the single modulus and the single sign.</p>
 <h3 id="the-absence-of-the-jordan-and-nilpotent-regimes">The Absence of the Jordan and Nilpotent Regimes</h3>
 <p>The algebra is $\mathbb{R}\times\mathbb{R}$, hence reduced. There is no nonzero nilpotent, so there is no Jordan-block regime and no nilpotent boundary. Every element is semisimple; the only spectral degeneracy is the scalar case, and the only polar boundary is the zero-divisor cone. This is the structural difference from the biquaternion dictionary, where the Jordan and nilpotent regimes are nonempty and the eigenprojections vary.</p>
 <h2 id="the-exponential-and-the-logarithm">The Exponential and the Logarithm</h2>
@@ -662,12 +662,12 @@ $$</p>
 \qquad
 \lambda_\pm(\exp X)=e^{x\pm y},
 $$</p>
-<p>so $\exp X=1$ exactly when $e^{x+y}=e^{x-y}=1$, that is when $x+y=x-y=0$, hence $X=0$. There is no lattice and no continuous period. This is the spectral reason why the polar exponent $Q_{\log}$ is unique: the two real eigenvalues $\ln r\pm\phi$ are the logarithms of $\lvert\lambda_\pm\rvert$, and the only ambiguity is the discrete sign pair.</p>
+<p>so $\exp X=1$ exactly when $e^{x+y}=e^{x-y}=1$, that is when $x+y=x-y=0$, hence $X=0$. There is no lattice and no continuous period. This is the spectral reason why the polar exponent $Q_{\log}$ is unique: the two real eigenvalues $\ln r\pm\theta^{\mathrm{hpa}}$ are the logarithms of $\lvert\lambda_\pm\rvert$, and the only ambiguity is the discrete sign pair.</p>
 <h3 id="the-fibre">The Fibre</h3>
 <p>For a unit $Q$, the equation $\exp X=Q$ has exactly one solution, and it exists exactly when $Q$ lies in the future cone $F$. In spectral coordinates the condition is $\lambda_\pm>0$, and the solution is</p>
 <p>$$
 \boxed{\; X=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12\ln\frac{\lambda_+}{\lambda_-}\,j
-=\ln r+j\phi \;}
+=\ln r+j\theta^{\mathrm{hpa}} \;}
 $$</p>
 <p>For the other three components, the polar writing is not a logarithm of $Q$ but a logarithm of $\epsilon Q$:</p>
 <p>$$
@@ -721,11 +721,11 @@ S\,\mathsf M_2(Q)\,S^{-1}
 $$</p>
 <p>The polar decomposition is the same identity read through the two factors:</p>
 <p>$$
-\mathsf M_2(Q)=\mathsf M_2(\epsilon)\,\exp(\ln r\,I+\phi K),
+\mathsf M_2(Q)=\mathsf M_2(\epsilon)\,\exp(\ln r\,I+\theta^{\mathrm{hpa}} K),
 \qquad
 K=\mathsf M_2(j)=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
 $$</p>
-<p>The matrix $\mathsf M_2(\epsilon)$ is $I$, $-I$, $K$ or $-K$ for $\epsilon=1,-1,j,-j$; its eigenvalues are the sign pair $(\sigma_+,\sigma_-)$. The exponential factor has eigenvalues $e^{\ln r\pm\phi}=r e^{\pm\phi}$. Hence the eigenvalues of the product are $\sigma_\pm r e^{\pm\phi}=\lambda_\pm$, which is the dictionary in matrix form.</p>
+<p>The matrix $\mathsf M_2(\epsilon)$ is $I$, $-I$, $K$ or $-K$ for $\epsilon=1,-1,j,-j$; its eigenvalues are the sign pair $(\sigma_+,\sigma_-)$. The exponential factor has eigenvalues $e^{\ln r\pm\theta^{\mathrm{hpa}}}=r e^{\pm\theta^{\mathrm{hpa}}}$. Hence the eigenvalues of the product are $\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}=\lambda_\pm$, which is the dictionary in matrix form.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -746,8 +746,8 @@ $$</p>
 <td>the component sign</td>
 </tr>
 <tr>
-<td>$\exp(\ln r\,I+\phi K)$</td>
-<td>$r e^{\phi},r e^{-\phi}$</td>
+<td>$\exp(\ln r\,I+\theta^{\mathrm{hpa}} K)$</td>
+<td>$r e^{\theta^{\mathrm{hpa}}},r e^{-\theta^{\mathrm{hpa}}}$</td>
 <td>the modulus and the angle</td>
 </tr>
 <tr>
@@ -757,15 +757,15 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The matrix picture shows that the polar decomposition is not a different decomposition of the matrix: it is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a sign matrix and a positive diagonal matrix. The sign matrix is discrete, and the positive diagonal is the exponential of the real diagonal $(\ln r+\phi,\ln r-\phi)$.</p>
+<p>The matrix picture shows that the polar decomposition is not a different decomposition of the matrix: it is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a sign matrix and a positive diagonal matrix. The sign matrix is discrete, and the positive diagonal is the exponential of the real diagonal $(\ln r+\theta^{\mathrm{hpa}},\ln r-\theta^{\mathrm{hpa}})$.</p>
 <p>The full case-by-case computation is in <em>Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers</em>; the examples here isolate the dictionary.</p>
 <h3 id="the-four-components-of-one-modulus-and-one-angle">The Four Components of One Modulus and One Angle</h3>
-<p>Take $r=4$ and $\phi=\ln2$. The four components are obtained by the four values of $\epsilon$:</p>
+<p>Take $r=4$ and $\theta^{\mathrm{hpa}}=\ln2$. The four components are obtained by the four values of $\epsilon$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\epsilon$</th>
-<th>$Q=r\epsilon\exp(\phi j)$</th>
+<th>$Q=r\epsilon\exp(\theta^{\mathrm{hpa}} j)$</th>
 <th>$\lambda_+$</th>
 <th>$\lambda_-$</th>
 <th>$(\sigma_+,\sigma_-)$</th>
@@ -802,7 +802,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the dictionary in one line: the modulus and the angle are common, and the four sign patterns are the four components. The product $\lambda_+\lambda_-$ is $16$ in the first two rows and $-16$ in the last two, equal to $q^2-q'^2$; the ratio $\lvert\lambda_+/\lambda_-\rvert$ is $4=e^{2\phi}$ in every row.</p>
+<p>The table is the dictionary in one line: the modulus and the angle are common, and the four sign patterns are the four components. The product $\lambda_+\lambda_-$ is $16$ in the first two rows and $-16$ in the last two, equal to $q^2-q'^2$; the ratio $\lvert\lambda_+/\lambda_-\rvert$ is $4=e^{2\theta^{\mathrm{hpa}}}$ in every row.</p>
 <h3 id="from-the-spectrum-to-the-polar-data">From the Spectrum to the Polar Data</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -811,7 +811,7 @@ $$</p>
 <th>$\lambda_+$</th>
 <th>$\lambda_-$</th>
 <th>$r$</th>
-<th>$\phi$</th>
+<th>$\theta^{\mathrm{hpa}}$</th>
 <th>$\epsilon$</th>
 </tr>
 </thead>
@@ -880,7 +880,7 @@ $$</p>
 <p>$$
 r=\sqrt{\lvert8\cdot(-2)\rvert}=4,
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
+\theta^{\mathrm{hpa}}=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
 \qquad
 (\sigma_+,\sigma_-)=(+,-),
 $$</p>
@@ -888,16 +888,16 @@ $$</p>
 <p>$$
 4j\exp(j\ln2)=4j\left(\frac54+\frac34j\right)=3+5j.
 $$</p>
-<p>The exponent is $Q_{\log}=\ln4+j\ln2$, with eigenvalues $\ln4\pm\ln2=\ln8$ and $\ln2$, which are the logarithms of $\lvert\lambda_+\rvert=8$ and $\lvert\lambda_-\rvert=2$. The complex logarithm of $\lambda_-=-2$ is $\ln2+i\pi$; the imaginary part $\pi$ is the spectral sign, carried by $\epsilon=j$ and not by $\phi$.</p>
+<p>The exponent is $Q_{\log}=\ln4+j\ln2$, with eigenvalues $\ln4\pm\ln2=\ln8$ and $\ln2$, which are the logarithms of $\lvert\lambda_+\rvert=8$ and $\lvert\lambda_-\rvert=2$. The complex logarithm of $\lambda_-=-2$ is $\ln2+i\pi$; the imaginary part $\pi$ is the spectral sign, carried by $\epsilon=j$ and not by $\theta^{\mathrm{hpa}}$.</p>
 <h2 id="summary">Summary</h2>
 <p>For a split-complex unit $Q=q+jq'$, the eigenvalue decomposition and the exponential polar decomposition are related by</p>
 <p>$$
 Q=\lambda_+\Pi_++\lambda_-\Pi_-
-=r\,\epsilon\exp(\phi j),
+=r\,\epsilon\exp(\theta^{\mathrm{hpa}} j),
 \qquad
-\lambda_\pm=\sigma_\pm r e^{\pm\phi},
+\lambda_\pm=\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}},
 $$</p>
-<p>with $\Pi_\pm=\tfrac12(1\pm j)$, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$, $r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$ and $\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$. The component sign $\epsilon$ is the spectral sign pair. The dictionary is a bijection on the unit group; the zero divisors have a spectrum but no polar word, and the scalar elements have a repeated eigenvalue and a vanishing angle.</p>
+<p>with $\Pi_\pm=\tfrac12(1\pm j)$, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$, $r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$ and $\theta^{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$. The component sign $\epsilon$ is the spectral sign pair. The dictionary is a bijection on the unit group; the zero divisors have a spectrum but no polar word, and the scalar elements have a repeated eigenvalue and a vanishing angle.</p>
 <h3 id="main-results">Main Results</h3>
 <p>The table collects the formulas in one place.</p>
 <div class="table-scroll"><table>
@@ -910,11 +910,11 @@ $$</p>
 <tbody>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\lambda_\pm=\sigma_\pm r e^{\pm\phi}$</td>
+<td>$\lambda_\pm=\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}$</td>
 </tr>
 <tr>
 <td>Polar data from eigenvalues</td>
-<td>$r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$, $\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$</td>
+<td>$r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$, $\theta^{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$</td>
 </tr>
 <tr>
 <td>Sign pair</td>
@@ -922,11 +922,11 @@ $$</p>
 </tr>
 <tr>
 <td>Factor decompositions</td>
-<td>$r=r\Pi_++r\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\phi j}=e^{\phi}\Pi_++e^{-\phi}\Pi_-$</td>
+<td>$r=r\Pi_++r\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta^{\mathrm{hpa}} j}=e^{\theta^{\mathrm{hpa}}}\Pi_++e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
 </tr>
 <tr>
 <td>Exponential on idempotents</td>
-<td>$\exp(Q_{\log})=r e^{\phi}\Pi_++r e^{-\phi}\Pi_-$</td>
+<td>$\exp(Q_{\log})=r e^{\theta^{\mathrm{hpa}}}\Pi_++r e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
 </tr>
 <tr>
 <td>Product</td>
@@ -934,11 +934,11 @@ $$</p>
 </tr>
 <tr>
 <td>Ratio</td>
-<td>$\lvert\lambda_+/\lambda_-\rvert=e^{2\phi}$</td>
+<td>$\lvert\lambda_+/\lambda_-\rvert=e^{2\theta^{\mathrm{hpa}}}$</td>
 </tr>
 <tr>
 <td>Exponent eigenvalues</td>
-<td>$\ln r\pm\phi=\ln\lvert\lambda_\pm\rvert$</td>
+<td>$\ln r\pm\theta^{\mathrm{hpa}}=\ln\lvert\lambda_\pm\rvert$</td>
 </tr>
 <tr>
 <td>Kernel of $\exp$</td>
@@ -954,7 +954,7 @@ $$</p>
 </tr>
 <tr>
 <td>Scalars</td>
-<td>repeated eigenvalue, $\phi=0$, $\epsilon=\operatorname{sgn}q$</td>
+<td>repeated eigenvalue, $\theta^{\mathrm{hpa}}=0$, $\epsilon=\operatorname{sgn}q$</td>
 </tr>
 </tbody>
 </table></div>
@@ -984,19 +984,19 @@ $$</p>
 </tr>
 <tr>
 <td>Polar parameters</td>
-<td>$r,\phi,\epsilon$</td>
-<td>$\rho,\phi,\alpha,\beta$</td>
+<td>$r,\theta^{\mathrm{hpa}},\epsilon$</td>
+<td>$\rho,\theta^{\mathrm{hpa}},\alpha,\beta$</td>
 <td>$r,\alpha,\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\sigma_\pm r e^{\pm\phi}$</td>
-<td>$\rho e^{i\alpha}e^{\pm(\phi+i\beta)}$</td>
+<td>$\sigma_\pm r e^{\pm\theta^{\mathrm{hpa}}}$</td>
+<td>$\rho e^{i\alpha}e^{\pm(\theta^{\mathrm{hpa}}+i\beta)}$</td>
 <td>$r e^{i\alpha}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$</td>
 </tr>
 <tr>
 <td>Polar factors from spectrum</td>
-<td>$r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\phi j}=e^{\phi}\Pi_++e^{-\phi}\Pi_-$</td>
+<td>$r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta^{\mathrm{hpa}} j}=e^{\theta^{\mathrm{hpa}}}\Pi_++e^{-\theta^{\mathrm{hpa}}}\Pi_-$</td>
 <td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$</td>
 <td>$\tilde U=\dfrac{\lambda_+}{r e^{i\alpha}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\alpha}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$</td>
 </tr>
@@ -1079,7 +1079,7 @@ $$</p>
 <td>the modulus</td>
 </tr>
 <tr>
-<td>$\phi$</td>
+<td>$\theta^{\mathrm{hpa}}$</td>
 <td>the hyperbolic angle</td>
 </tr>
 <tr>
@@ -1091,11 +1091,11 @@ $$</p>
 <td>the eigenvalue signs</td>
 </tr>
 <tr>
-<td>$Q_{\log}=\ln r+j\phi$</td>
+<td>$Q_{\log}=\ln r+j\theta^{\mathrm{hpa}}$</td>
 <td>the exponent</td>
 </tr>
 <tr>
-<td>$\epsilon\exp(\phi j)=Q/r$</td>
+<td>$\epsilon\exp(\theta^{\mathrm{hpa}} j)=Q/r$</td>
 <td>the unit factor</td>
 </tr>
 <tr>
