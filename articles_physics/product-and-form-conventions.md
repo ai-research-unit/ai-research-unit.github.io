@@ -299,7 +299,7 @@ $$
 \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} .
 $$
 
-Throughout the series a signature is written $(n,m)$ with the **positive** directions counted first, so that $(-,-,-,-)$ is $(0,4)$.
+Throughout the series a signature is written $(n,m)$ with the **positive** directions counted first, so that a form with four negative directions is $(0,4)$. A signature here belongs to a form. The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signature to state.
 
 **Where the four are proved and named.** The classification of the four, their Gram matrices, their signatures, their isometry groups, their Witt classes, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, with its twin *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 

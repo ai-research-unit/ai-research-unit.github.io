@@ -22,7 +22,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The units satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
 
-**The frame.** Every display is written in the $\mathbb{M}_-$ frame, where $Q_t=ict'$ and $t'$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-c^{2}t'^{2}+x^{2}+y^{2}+z^{2}$ (*Frame Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
+**The frame.** Every display is written in the $\mathbb{M}_-$ frame, where $Q_t=ict'$ and $t'$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-c^{2}t'^{2}+x^{2}+y^{2}+z^{2}$ (*Frame and Metric Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
 
 **The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 

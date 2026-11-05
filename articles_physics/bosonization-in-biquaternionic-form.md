@@ -22,7 +22,7 @@ The article proceeds as follows. The next section reduces the framework to the t
 
 Bosonization lives in two dimensions, and the framework must be reduced before it can be stated.
 
-**The frame.** The arena is the material frame of *Frame Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial Q_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
+**The frame.** The arena is the material frame of *Frame and Metric Conventions* read in two slots, $Q_t$ and $Q_x$, reached from the four-slot frame by dropping the two spatial directions $Q_y$ and $Q_z$. The two directions of the arena are $e_t$ and $\vec e_x$. Every display below contracts with the plain weight $\varepsilon=(1,-1)$ of *Frame and Metric Conventions*, §*The Rules*, read in the arena's two slots, and every coordinate derivative is written $\partial/\partial Q_\mu$ as *Operator and Calculus Conventions* fixes it. Nothing else of the frame is restated here.
 
 **The two generator actions.** The two directions act on an element by multiplication on the two sides. The timelike direction is the action $A_t:Q\mapsto iQ\vec e_x$, and the spacelike direction is the action $A_x:Q\mapsto i\vec e_xQ\vec e_y$. Both are the frame's two cells read in the arena, and their products are derived here. Composing each with itself,
 $$
@@ -30,7 +30,7 @@ A_tA_t:Q\mapsto -Q\vec e_x\vec e_x=Q,
 \qquad
 A_xA_x:Q\mapsto -(\vec e_x\vec e_x)\,Q\,(\vec e_y\vec e_y)=-Q ,
 $$
-and the two orders add to zero, $A_tA_x+A_xA_t=0$, because the left factors agree and the two right factors anticommute. The two actions therefore square to $e_t$ and to $-e_t$ and anticommute, which is the arena's reading of the frame's anticommutator in *Frame Conventions*, §*The $\mathbb{M}_-$ Frame*. The product in one order is one action,
+and the two orders add to zero, $A_tA_x+A_xA_t=0$, because the left factors agree and the two right factors anticommute. The two actions therefore square to $e_t$ and to $-e_t$ and anticommute, which is the arena's reading of the frame's anticommutator in *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*. The product in one order is one action,
 $$
 A_tA_x:Q\mapsto\vec e_xQ\vec e_z ,
 $$
@@ -366,7 +366,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $\tilde\Psi^{*}$ | The Hermitian conjugation, the one the adjoint is read through |
 | $j_t$, $j_x$ | The two current components, the scalar parts $\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi)$ and $\mathrm{Sc}(\tilde\Psi^{*}\vec e_x\tilde\Psi\vec e_z)$ |
 | $j_{5,t}$, $j_{5,x}$ | The axial components, $-j_x$ and $-j_t$ |
-| $\varepsilon=(1,-1)$ | The plain weight of the arena's two slots (*Frame Conventions*, §*The Rules*) |
+| $\varepsilon=(1,-1)$ | The plain weight of the arena's two slots (*Frame and Metric Conventions*, §*The Rules*) |
 | $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
 | $\phi$ | The real boson field, central |
 | $\alpha$ | Short-distance cutoff in the dictionary |

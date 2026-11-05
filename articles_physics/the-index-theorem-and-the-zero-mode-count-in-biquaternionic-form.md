@@ -23,7 +23,7 @@ The article states the theorem as the standard result it is, derives the special
 
 **Notation.** The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A field is an element of $\mathbb{B}$, and an action on it is a multiplication, written $a\psi$ when it acts from the left and $\psi b$ when it acts from the right; the side is read from the position, and no letter names it. The letter $R$ labels a representation, on $\tilde D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter as a subscript on a field is the chirality value of the section below.
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame Conventions*, with the four complex coordinates $Q_\mu$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.
+**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the four complex coordinates $Q_\mu$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.
 
 **The gradient.** The derivative of the article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*,
 

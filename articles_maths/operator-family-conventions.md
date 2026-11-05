@@ -8,7 +8,7 @@ This article belongs to the ten conventions articles of the mathematical corpus.
 
 The order follows the dependence. The family letters come first, because the names of the sets and the subscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
 
-**Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight, except those that name *Operator Chirality on the Biquaternion Algebra*, which proves the properties of the label fixed in §*The Slots*.
+**Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame and Metric Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight, except those that name *Operator Chirality on the Biquaternion Algebra*, which proves the properties of the label fixed in §*The Slots*.
 
 ## The Four Families and Their Letters
 
@@ -105,7 +105,7 @@ The subscript holds the size and the family as one field, with no separator: $\m
 
 ### The Units of the Algebra
 
-The units of $\mathbb{B}$ are $e_t,\vec e_x,\vec e_y,\vec e_z$, in that order, the coefficient basis of *Algebra and Element Conventions* and *Frame Conventions*. The unit $e_t$ is the identity of the algebra. A direction index $\mu$ or $\nu$ runs over $t,x,y,z$ in that order.
+The units of $\mathbb{B}$ are $e_t,\vec e_x,\vec e_y,\vec e_z$, in that order, the coefficient basis of *Algebra and Element Conventions* and *Frame and Metric Conventions*. The unit $e_t$ is the identity of the algebra. A direction index $\mu$ or $\nu$ runs over $t,x,y,z$ in that order.
 
 ### The Units $E_{ij}$ of the Operator Space
 
@@ -228,7 +228,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 - [Product and Form Conventions](product-and-form-conventions.html). The twelve products and their names, the four forms and their letters.
 - [Norm and Unitary Conventions](norm-and-unitary-conventions.html). The four algebraic norms, the qualified regular and degenerate, and the unitary convention.
 - [Special Element and Peirce Conventions](special-element-and-peirce-conventions.html). The root, the idempotent, the nilpotent and the matrix units.
-- [Frame Conventions](frame-conventions.html). The two frames of the corpus, the Clifford map and the metric each frame carries.
+- [Frame and Metric Conventions](frame-and-metric-conventions.html). The two frames of the corpus, the one metric they share and the Clifford map.
 - [Matrix Representations Conventions](matrix-representations-conventions.html). The $2\times2$ isomorphism and the $4\times4$ regular representation with its two copies.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html). The operator that is its element, the named operators and the dagger.
 - [Index, Notation and Corpus Conventions](index-notation-and-corpus-conventions.html). The superscripts, the subscript rules and the typography of the source.

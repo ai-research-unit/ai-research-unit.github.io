@@ -12,7 +12,7 @@ The order of the article is that order, and it is the order of the mathematical 
 
 **The algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.** The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
 
-The article assumes the base of *Algebra and Element Conventions*, the products of *Product and Form Conventions*, and the two coordinate frames of *Frame Conventions*, whose $\mathbb{B}$ and $\mathbb{M}_-$ readings the contractions below use. The Peirce convention is that of *Special Element and Peirce Conventions*, whose standard pair fixes the Pauli frame.
+The article assumes the base of *Algebra and Element Conventions*, the products of *Product and Form Conventions*, and the two coordinate frames of *Frame and Metric Conventions*, whose $\mathbb{B}$ and $\mathbb{M}_-$ readings the contractions below use. The Peirce convention is that of *Special Element and Peirce Conventions*, whose standard pair fixes the Pauli frame.
 
 ## The Rule on Pauli and Gamma Matrices
 
@@ -227,7 +227,7 @@ R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
 \qquad
 D=D^{\mathsf T}=D^{-1}.
 $$
-The same array $D$ is the sign vector $\varepsilon$ of the products: the transpose dictionary and the metric of the plain product are one object here. This is the cheapest stitch in the corpus, and it is the reason the transpose is the conjugation above. It is also the reason the metric sign vector of the $\mathbb{M}_-$ frame appears in a statement about matrices: $D$ is that sign vector, and no second array is introduced for it.
+The same array $D$ is the sign vector $\varepsilon$ of the products: the transpose dictionary and the plain weight are one object here. This is the cheapest stitch in the corpus, and it is the reason the transpose is the conjugation above. It is also the reason the metric sign vector of the $\mathbb{M}_-$ frame appears in a statement about matrices: $D$ is that sign vector, and no second array is introduced for it.
 
 **The switch matrix, written out.** It is its own transpose and its own inverse,
 $$
@@ -744,13 +744,13 @@ Each is a unit multiple of a cell; the left factor is a unit and the right facto
 
 **The anticommutation relations.**
 $$
-\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
+\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-I_4,
 $$
 $$
 -iR_{\vec e_z}^{\mathrm{pau}}=i\,(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}),
 $$
-with $g=\operatorname{diag}(-1,+1,+1,+1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
+with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
 
 **The sixteen products are the sixteen cells.** The five frame cells are five cells up to a factor $i$, and the sixteen products of the five are the sixteen cells:
 
@@ -820,10 +820,10 @@ The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which 
 
 **The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{M}_\pm$ and the $ict'$ metric are part of the data. The frame is internal: it is a set of cells, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
 
-**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Frame Conventions*, and neither is a matrix frame.
+**Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
 
-- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every cell squares to $+I_4$.
-- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(-1,1,1,1)$; the plain weight of the cells is the opposite, $(1,-1,-1,-1)$.
+- The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_\mu$, and every cell of this display squares to $+I_4$.
+- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is the same unit metric; the interval reads $-c^2t'^2+x^2+y^2+z^2$, and the plain weight of the cells is $(1,-1,-1,-1)$, which is not a metric.
 
 The five frame cells are the ones of §*The Clifford Structure* in the $\mathbb{M}_-$ frame, and their three spatial squares are $-I_4$ there. In the $\mathbb{B}$ frame the four cells that all square to $+I_4$ are
 $$
@@ -842,7 +842,7 @@ so the frame is visible in the formula.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
 The gammas are the five frame cells of §*The Clifford Structure* written as arrays, and the section writes them in both frames: first the Peirce arrays, which are the ones the gamma literature prints, and then the axis-free ones, which are the display of the body.
 
@@ -865,7 +865,7 @@ $$
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
@@ -896,7 +896,7 @@ with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi
 
 **The three uses of the two letters.** $L_a$ and $R_b$ are the left and the right multiplier, an operator. $\mathsf M_4^{L}$ and $\mathsf M_4^{R}$ are the left and the right regular matrix, an array. $\tilde Q_L$, $\tilde Q_R$, $\psi_L$ and $\psi_R$ are the chirality of an element, and only the third applies to every element of the algebra.
 
-**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$, with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. What a frame changes is the metric that reads an interval, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, and the coordinate that feeds the derivative. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
+**The frames do not touch the five.** These matrices are one set, the same in both coordinate frames: $\gamma_0^2=+I_4$ and $\gamma_k^2=-I_4$, with $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. What a frame changes is the coordinate that feeds the derivative and the interval it forms. A formula that mixes the two metrics belongs to neither frame; the matrices carry no such label.
 
 **The sixteen products.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
@@ -1075,7 +1075,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R^{\mathrm{
 
 **The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
-**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=ict'$ and metric $(1,1,1,1)$; the $\mathbb{M}_-$ frame reads $x_0=ct'$ with metric $(-1,1,1,1)$ and carries the printed gammas. A contraction stays in one frame, and the d'Alembertian is one operator in both.
+**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=ict'$; the $\mathbb{M}_-$ frame reads $x_0=ct'$ and carries the printed gammas. The metric is one, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, in both. A contraction stays in one frame, and the d'Alembertian is one operator in both.
 
 **The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$. A bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
 
@@ -1111,7 +1111,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R^{\mathrm{
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the products the matrix product mirrors.
 - [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the left and right multiplications these matrices represent.
-- [Frame Conventions](frame-conventions.html), for the two coordinate frames, their metrics and their table.
+- [Frame and Metric Conventions](frame-and-metric-conventions.html), for the two coordinate frames, their metrics and their table.
 - [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), companion article, for the coefficient space and the three actions.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [its Operators companion](../articles_maths/m4c-axis-free-representation-operators.html), for the matrices, the product, the trace, the determinant and the sixteen cells in the coefficient basis.
 - [$M_4(\mathbb{C})$ Pauli Representation](../articles_maths/m4c-pauli-representation.html) and [its Operators companion](../articles_maths/m4c-pauli-representation-operators.html), for the Peirce frame, the switch and the same objects in it.

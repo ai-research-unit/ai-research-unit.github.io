@@ -107,7 +107,7 @@ $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
 
-**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame Conventions*, §*The $\mathbb{M}_-$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde\Xi=i\vec u_p$, a root of the central value $+1$, $\tilde\Xi^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde\Xi=i\vec u_p$, a root of the central value $+1$, $\tilde\Xi^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 

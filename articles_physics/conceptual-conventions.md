@@ -29,7 +29,7 @@ Each concept below is used somewhere in the corpus, and each one brings somethin
 These concepts are the algebra and its two sectors, written down. Each one can be read from an element or a form, and none of them needs a frame, a root, a basis or a name borrowed from another formalism.
 
 - **The two sectors.** The anti-Hermitian subspace $\mathbb{M}_-$ carries the four-vectors and the interval. The Hermitian subspace $\mathbb{M}_+$ carries the observables, the states and the spin generators. The algebra supplies the subspaces and the forms on them, and the identification of a subspace with a physical role is the programme's step, stated at every use.
-- **The Euclidean metric of $\mathbb{B}$.** The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, and all four coefficients are $+1$: the metric is $(1,1,1,1)$. On real coefficients that is the ordinary Euclidean metric, positive definite, and no direction is singled out by a sign. Here ${}^{\natural}$ keeps the scalar and negates the three vectors. Additionally, another signature may also be used on $\mathbb{M}_-$, and it is optional: the $i$ is absorbed by the metric, and $i^2=-1$ is what flips the sign of the time coefficient, so with $Q_t=ict'$ the coefficient signs are $(-1,+1,+1,+1)$, signature $(3,1)$, and the interval is $-c^2t'^2+x^2+y^2+z^2$.
+- **The unit metric of $\mathbb{B}$.** The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, and all four coefficients are $+1$: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$. On real coefficients that is the ordinary Euclidean metric, positive definite, and no direction is singled out by a sign. Here ${}^{\natural}$ keeps the scalar and negates the three vectors. The metric is the same on the two sectors: with $Q_t=ict'$ the time square is negative because $i^2=-1$, and the interval is $-c^2t'^2+x^2+y^2+z^2$. Nothing is absorbed: the $i$ stays in the coefficient, and there is one metric.
 - **Operator chirality.** An operator has the **left slot** when it is a pure left multiplier $cL_a$, the **right slot** when it is a pure right multiplier $cR_b$, and **both slots** otherwise. The label is read from the cell and from nothing else. The scalars lie in both families at once, so a scalar has no side. No root, idempotent, ideal, axis or Clifford algebra appears in the definition.
 - **The spin.** The generators are $\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The Casimir is $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2$, and on an irreducible unitary carrier $\rho(C)=s(s+1)$ with $\dim_{\mathbb{C}}W=2s+1$ and $s\in\tfrac12\mathbb{Z}_{\ge0}$. The spin is a real label of a carrier and not a vector, and the definition is a spectrum of elements.
 
@@ -43,11 +43,11 @@ Operator chirality is the model case, because it is a slot and not a gamma subsc
 
 ## Further Reading
 
-- [Algebra and Element Conventions](algebra-and-element-conventions.html). The base, the glyphs, and the three levels of the word *metric*.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html). The base, the glyphs, and the one metric of the series.
 - [Product and Form Conventions](product-and-form-conventions.html). The twelve products and the four forms, which are the four choices of conjugation on the two slots.
 - [Norm and Pairing Conventions](norm-and-pairing-conventions.html). The four norms, the polar word and the three pairings.
 - [Special Element Conventions](special-element-conventions.html). The central map, the chirality convention, and the spin and spinor conventions.
-- [Frame Conventions](frame-conventions.html). The two frames, the Clifford map, and the rule that a frame is declared before it is used.
+- [Frame and Metric Conventions](frame-and-metric-conventions.html). The two frames, the one metric they share, the Clifford map, and the rule that a frame is declared before it is used.
 - [Matrix Representations Conventions](matrix-representations-conventions.html). The three displays, the Pauli form, the Clifford structure and the legacy gamma block.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html). The operator that is its element, the Fock exception and the calculus.
 - [Unit, Index and Notation Conventions](unit-index-and-notation-conventions.html). The physical units, the marks and the subscripts.

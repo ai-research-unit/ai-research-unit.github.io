@@ -26,7 +26,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 
 ## The Electron as a Biquaternion Field
 
-**The objects are named here and fixed elsewhere.** The algebra, its four units and its coefficient basis are *Algebra and Element Conventions*; the star, the involution $\flat$ and the two sectors are fixed there; the gradient, its quaternion conjugate and the d'Alembertian are *Operator and Calculus Conventions*; the complex coordinate and the metric of the material sector are *Frame Conventions*; the two-sided operators and their cells are *Matrix Representations Conventions*, and the one display in this article is the axis-free one. No formula of those objects is repeated here, and every use below is a use of the file named.
+**The objects are named here and fixed elsewhere.** The algebra, its four units and its coefficient basis are *Algebra and Element Conventions*; the star, the involution $\flat$ and the two sectors are fixed there; the gradient, its quaternion conjugate and the d'Alembertian are *Operator and Calculus Conventions*; the complex coordinate and the metric of the material sector are *Frame and Metric Conventions*; the two-sided operators and their cells are *Matrix Representations Conventions*, and the one display in this article is the axis-free one. No formula of those objects is repeated here, and every use below is a use of the file named.
 
 **The electron's data are carried by these objects.**
 

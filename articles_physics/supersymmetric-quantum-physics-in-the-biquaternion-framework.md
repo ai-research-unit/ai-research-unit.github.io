@@ -20,7 +20,7 @@ The article develops the correspondence in both directions. It first states the 
 
 ## The Frame, the Values and the Equation
 
-The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$, and every display below is read in it. The algebra, the sectors, the two conjugations, the gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, the pair operator $\mathbb{D}$ and the cell are those of *Algebra and Element Conventions*, *Frame Conventions*, *Operator and Calculus Conventions* and *Matrix Representations Conventions*, and none of them is restated here.
+The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$, and every display below is read in it. The algebra, the sectors, the two conjugations, the gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, the pair operator $\mathbb{D}$ and the cell are those of *Algebra and Element Conventions*, *Frame and Metric Conventions*, *Operator and Calculus Conventions* and *Matrix Representations Conventions*, and none of them is restated here.
 
 The equation under study is the chiral pair that the corpus states as its dynamics (*Operator and Calculus Conventions*, §*The Dynamics*), printed once because the whole article is a reading of it:
 

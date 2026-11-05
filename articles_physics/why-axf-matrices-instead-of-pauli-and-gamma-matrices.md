@@ -12,7 +12,7 @@
 
 **One closing section prints the two displays side by side.** The article exists to compare them, so the comparison is shown once, in §*The Two Displays Side by Side*, and its arrays are the only arrays of the page.
 
-**The objects are the corpus's.** The element, its units and the coefficient basis are those of *Algebra and Element Conventions*; the cell and its two slots are those of *Operator and Calculus Conventions*, §*The Operators*; the display and the change between two displays are those of *Matrix Representations Conventions*; the five cells of the older frame are those of *Frame Conventions*. No symbol of those files is defined here, and the derived statements of this article are marked where they occur.
+**The objects are the corpus's.** The element, its units and the coefficient basis are those of *Algebra and Element Conventions*; the cell and its two slots are those of *Operator and Calculus Conventions*, §*The Operators*; the display and the change between two displays are those of *Matrix Representations Conventions*; the five cells of the older frame are those of *Frame and Metric Conventions*. No symbol of those files is defined here, and the derived statements of this article are marked where they occur.
 
 **The article has five parts.** The first finds the direction in the older display, in the four cells that act diagonally in the basis it is built on, and follows it into the five cells of its frame. The second states the defect in physical terms: an equation of general physics must not be written in a display that singles out a direction the reality does not contain. The third gives the alternative and states what it costs. The fourth is practical: three passes, a dictionary, four traps and five checks. The fifth prints the two displays once.
 
@@ -71,7 +71,7 @@
 
 ### The Five Cells
 
-**The five cells of the older display are five actions of one frame.** In the frame built on $\vec u=\vec e_z$, which is the frame $\mathbb{M}_-$ of *Frame Conventions*, they act by
+**The five cells of the older display are five actions of one frame.** In the frame built on $\vec u=\vec e_z$, which is the frame $\mathbb{M}_-$ of *Frame and Metric Conventions*, they act by
 
 $$
 \tilde Q\longmapsto i\tilde Q\vec e_x,\qquad
@@ -111,7 +111,7 @@ $$
 
 which is not the original five. The list changes in the same way under three of the other four permutations, checked one by one. The fourth, the exchange of $\vec e_x$ with $\vec e_z$, returns the same five in another order: it carries the first into the fifth, the fifth into the first, and exchanges the two spatial actions between them. The ordered list therefore changes under all five, and the unordered set under four of them, so the list is tied to a labelling of the spatial units, and a relabelling produces another list, related to the first by a conjugation of the display.
 
-**The distinction must be stated exactly, because it is easy to overstate.** The relation among the five is the relation of the frame, and it is fixed by the metric (*Frame Conventions*). A permutation of the three spatial units is an automorphism of the algebra, so it leaves that relation alone. What is not invariant is the list of five. The metric cannot tell the three units apart, and the list can.
+**The distinction must be stated exactly, because it is easy to overstate.** The relation among the five is the relation of the frame, and it is fixed by the metric (*Frame and Metric Conventions*). A permutation of the three spatial units is an automorphism of the algebra, so it leaves that relation alone. What is not invariant is the list of five. The metric cannot tell the three units apart, and the list can.
 
 ### Every Display Writes One Direction
 
@@ -479,7 +479,7 @@ $$
 | $\vec u$ | the declared unit of a display, one of $\vec e_x$, $\vec e_y$, $\vec e_z$, named where the display is |
 | the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the cells that act diagonally in the coefficient basis |
 | the diagonal set | the cells that act diagonally in a named basis; the axis test of §*The Four Cells That Act Diagonally* |
-| $\mathbb{M}_-$ | the material sector frame of *Frame Conventions*, the frame built on $\vec u=\vec e_z$ |
+| $\mathbb{M}_-$ | the material sector frame of *Frame and Metric Conventions*, the frame built on $\vec u=\vec e_z$ |
 | $\mathrm{axf}$, $\mathrm{pau}$ | the labels of the two arrays of one element, the coefficient basis and the Peirce basis |
 | the five frame cells | $iR_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$, $-iR_{\vec e_z}$, in the frame $\mathbb{M}_-$ |
 | $C_{\Pi}$ | the conjugation that carries one display into the other |
@@ -489,7 +489,7 @@ $$
 ## Further Reading
 
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the axis-free and Pauli arrays, the sixteen cells and the switch between them.
-- [Conventions of the Frames](frame-conventions.html), for the two coordinate frames, their metrics and the five cells of the older frame.
+- [Conventions of the Frames](frame-and-metric-conventions.html), for the two coordinate frames, their metrics and the five cells of the older frame.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five cells as a generating set, the graded basis and the non-canonicity of the frame.
 - [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the left and right actions, the sandwich and the vocabulary of the representations.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the algebra the older display presupposes, its even part and the degree grading.

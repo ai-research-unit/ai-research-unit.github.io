@@ -10,7 +10,7 @@ Two invariants come out of the construction and they are not the same object. Th
 
 This article records the construction, the two invariant forms, the order-three map $J$, and the order-four braid maps that Liu calls "Dirac's game". It is the group-theoretic companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*, which carries the dictionary and the Lagrangian; this article carries the symmetry structure.
 
-The conventions are those of the companion articles, and none is restated here: the algebra, its units and its element glyphs are those of *Algebra and Element Conventions*, the coordinate and the frame those of *Frame Conventions*, the named operators and the Dirac operator those of *Operator and Calculus Conventions*. The index $\mu$ runs over $t,x,y,z$, and the sign weight $\varepsilon$ is the one *Frame Conventions* fixes.
+The conventions are those of the companion articles, and none is restated here: the algebra, its units and its element glyphs are those of *Algebra and Element Conventions*, the coordinate and the frame those of *Frame and Metric Conventions*, the named operators and the Dirac operator those of *Operator and Calculus Conventions*. The index $\mu$ runs over $t,x,y,z$, and the sign weight $\varepsilon$ is the one *Frame and Metric Conventions* fixes.
 
 ## The Three Spaces
 

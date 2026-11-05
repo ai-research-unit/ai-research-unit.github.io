@@ -20,7 +20,7 @@ This article asks what the biquaternion framework supplies for this derivation. 
 
 A section fixes the gradient, the pseudoscalar and the two values, and gives the translation once. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section proves that the four-index symbol is not an algebra trace and states the consequence. A section states what the symbol does on the null cone and computes the bivector kernel. A section states what the regulator must preserve and why the anomaly does not depend on it. A section compares the result with the triangle. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index, and a section reads the rotation in the algebra. A section tabulates what is supplied, transcribed, and missing; the open questions follow; the summary and the notation table close the article.
 
-**The frame and the symbols.** Every display below is read in the $\mathbb{M}_-$ frame: its derivative, its coordinates and its metric are *Frame Conventions*, §*The $\mathbb{M}_-$ Frame*, and are not restated here. The biquaternion gradient is
+**The frame and the symbols.** Every display below is read in the $\mathbb{M}_-$ frame: its derivative, its coordinates and its metric are *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and are not restated here. The biquaternion gradient is
 $$
 \tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
 \qquad
@@ -371,7 +371,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra (*Algebra and Element Conventions*) |
 | $\psi$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\psi^{\dagger}$ its Dirac-conjugate bilinear |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors (*Frame Conventions*) |
+| $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {t'}^2$ on $\mathbb{M}_-$ |
 | $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |

@@ -69,7 +69,7 @@ the operator $\mathbb{D}$ is the pair written once. Nothing in it acts on the ri
 
 **The two gradings.** Chirality and the frame are different functions of the same state, and the oscillator separates the two. Chirality is the subscript of the previous paragraph. The frame is the action $\beta$ below, which is $+1$ on one part of a state and $-1$ on the other; the mass is diagonal in the frame and off-diagonal in the chirality, and the two labels are not interchangeable. The chiral pair above is the corpus equation for a free mass. The oscillator's substitution is built from $\beta$, so the oscillator is posed in the frame grading, and its pair is the same two-field structure with the mass in the diagonal slot and the derivative in the off-diagonal one. That is the only reason the pair below looks unlike the chiral pair, and it changes no physics: a two-field equation with the mass in one slot and the gradient in the other is the corpus's form of a massive first-order equation.
 
-**Conventions.** The conventions are those of the companion articles — *Algebra and Element Conventions*, *Operator Family Conventions*, *Operator and Calculus Conventions*, *Frame Conventions* — and none is redefined. Two actions are the article's own, written out once,
+**Conventions.** The conventions are those of the companion articles — *Algebra and Element Conventions*, *Operator Family Conventions*, *Operator and Calculus Conventions*, *Frame and Metric Conventions* — and none is redefined. Two actions are the article's own, written out once,
 
 $$
 \beta:\ Q\longmapsto iQ\vec e_x,\qquad

@@ -75,7 +75,7 @@ and not $2\delta_{\mu\nu}$. The printed $2\delta_{\mu\nu}$ is the normalisation 
 $$
 \sum_A \check q_A\otimes q_A=1\otimes1+\tfrac12\sum_\mu q_\mu\otimes q_\mu+\tfrac{1}{2!}\sum_{\mu<\nu}q_{\mu\nu}\otimes q_{\mu\nu}+\cdots ,
 $$
-with $\check q_A$ the dual basis, and the comment that the coefficient $\tfrac12$ ensures $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu)=2\delta_{\mu\nu}$. The listed elements, however, are the four quaternion units and their antisymmetrized products $q_{\mu\nu}=\tfrac12[q_\mu,q_\nu]$, and the products add nothing: for the units $[q_0,q_i]=0$ for all three spatial $i$, and $[q_i,q_j]=2\epsilon_{ijk}q_k$ is parallel to a unit. So $q_{0i}=0$ and each $q_{ij}$ is a sign times one of the units, and the list spans **four** independent elements of $\mathbb{H}_{\mathbb{C}}$, not the sixteen graded products of *Frame Conventions*,
+with $\check q_A$ the dual basis, and the comment that the coefficient $\tfrac12$ ensures $\mathrm{Tr}_{\mathbb H}(q_\mu q_\nu)=2\delta_{\mu\nu}$. The listed elements, however, are the four quaternion units and their antisymmetrized products $q_{\mu\nu}=\tfrac12[q_\mu,q_\nu]$, and the products add nothing: for the units $[q_0,q_i]=0$ for all three spatial $i$, and $[q_i,q_j]=2\epsilon_{ijk}q_k$ is parallel to a unit. So $q_{0i}=0$ and each $q_{ij}$ is a sign times one of the units, and the list spans **four** independent elements of $\mathbb{H}_{\mathbb{C}}$, not the sixteen graded products of *Frame and Metric Conventions*,
 $$
 \bigl\{e_t,\ \mathsf{V}^{\mathrm{vol}},\ C_\mu,\ \mathsf{V}^{\mathrm{vol}} C_\mu,\ C_{\mu\nu}\bigr\},\qquad \mu<\nu ,
 $$

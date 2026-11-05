@@ -16,7 +16,7 @@ The article is organised as follows. The next section fixes the conventions: the
 
 ### The Field and Its Value
 
-The conventions are those of the companion articles, and none is restated here: the algebra, its basis, its element glyphs and its three conjugations are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the metric and the units are *Frame Conventions*; the chirality value is *Matrix Representations Conventions*, §*The Subscript on an Element*; the gradient and its four products are *Operator and Calculus Conventions*.
+The conventions are those of the companion articles, and none is restated here: the algebra, its basis, its element glyphs and its three conjugations are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the metric and the units are *Frame and Metric Conventions*; the chirality value is *Matrix Representations Conventions*, §*The Subscript on an Element*; the gradient and its four products are *Operator and Calculus Conventions*.
 
 The field is an element of $\mathbb{B}$. At each point $\tilde Q$ it takes a value $\tilde\Psi(\tilde Q)$, with the four coefficients $\Psi_t$, $\Psi_x$, $\Psi_y$, $\Psi_z$. Those four coefficients are the four components of the field. A state is an element; there is no second carrier behind it, and the four coefficients are read off the one element.
 
@@ -67,7 +67,7 @@ $$
 \sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde\Psi\,\vec e_{\nu(\mu)}=-m\,\tilde\Psi .
 $$
 
-Every factor is written out: the derivative acts on the field, the unit $e_\mu$ multiplies from the left, the frame's unit $\vec e_{\nu(\mu)}$ from the right, and the plain weight $\varepsilon_\mu$ of *Frame Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
+Every factor is written out: the derivative acts on the field, the unit $e_\mu$ multiplies from the left, the frame's unit $\vec e_{\nu(\mu)}$ from the right, and the plain weight $\varepsilon_\mu$ of *Frame and Metric Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
 
 The component form displays the two families at once, because the temporal generator is a single right multiplication and the three spatial generators share their right multiplier:
 
@@ -146,7 +146,7 @@ $$
 -m\,j_\mu=\sum_\nu\varepsilon_\nu\Big(-i\,\varepsilon_\mu\delta_{\mu\nu}\,\bar{\tilde\Psi}\,\partial_\nu\tilde\Psi-2\,\bar{\tilde\Psi}\,\Sigma_{\mu\nu}\partial_\nu\tilde\Psi\Big),
 $$
 
-with $\varepsilon_\mu\delta_{\mu\nu}$ the plain weight of *Frame Conventions*, that is, the scalar part of $e_\mu e_\nu$, which is $1$ at $\nu=\mu$ and $0$ otherwise. Put $X=ie_\mu\tilde\Psi\vec e_{\nu(\mu)}$ in the adjoint equation, so that the generator acts on the field and not on the conjugated factor:
+with $\varepsilon_\mu\delta_{\mu\nu}$ the plain weight of *Frame and Metric Conventions*, that is, the scalar part of $e_\mu e_\nu$, which is $1$ at $\nu=\mu$ and $0$ otherwise. Put $X=ie_\mu\tilde\Psi\vec e_{\nu(\mu)}$ in the adjoint equation, so that the generator acts on the field and not on the conjugated factor:
 
 $$
 m\,j_\mu=\sum_\nu\varepsilon_\nu\Big(-i\,\varepsilon_\mu\delta_{\mu\nu}\,\overline{\partial_\nu\tilde\Psi}\,\tilde\Psi+2\,\overline{\partial_\nu\tilde\Psi}\,\Sigma_{\mu\nu}\tilde\Psi\Big).

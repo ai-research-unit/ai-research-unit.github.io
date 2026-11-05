@@ -34,7 +34,7 @@ with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame, as fixed in *Unit,
 
 **Two features of the standard theory are recorded and read in the algebra.** First, in the massless case the system has a gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x_\mu\,\epsilon$, with $\epsilon$ an arbitrary Dirac field; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
-**The conventions are those of the companion articles.** The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, and the frame, its coordinate and its metric those of *Frame Conventions*. None is restated here.
+**The conventions are those of the companion articles.** The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, and the frame, its coordinate and its metric those of *Frame and Metric Conventions*. None is restated here.
 
 **The source's letters, fixed once.** Where a letter of the source is kept, it is read in $\mathbb{B}$. The source's $i$, wherever it acts on the field, is the right multiplier
 $$

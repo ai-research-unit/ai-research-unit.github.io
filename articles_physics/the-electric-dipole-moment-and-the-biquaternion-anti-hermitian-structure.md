@@ -35,7 +35,7 @@ F_{0i}=E_i,\qquad
 F_{ij}=-\epsilon_{ijk}B_k ,
 $$
 
-so that $\varepsilon_0=+1$ and $\varepsilon_k=-1$. The weight $\varepsilon_\rho$ is the corpus's plain weight (*Frame Conventions*): the sign with which the $\rho$-th unit squares. The two signs of $\varepsilon$ are not decoration: they are what turns a lower pair of indices into an upper pair, and the weighted contraction that reproduces the dual below uses them.
+so that $\varepsilon_0=+1$ and $\varepsilon_k=-1$. The weight $\varepsilon_\rho$ is the corpus's plain weight (*Frame and Metric Conventions*): the sign with which the $\rho$-th unit squares. The two signs of $\varepsilon$ are not decoration: they are what turns a lower pair of indices into an upper pair, and the weighted contraction that reproduces the dual below uses them.
 
 **The two Dirac equations.** The mass is the linear Dirac pair
 
@@ -152,7 +152,7 @@ $$
 
 **The duality and the Hermiticity.** The dual alone does not preserve the class, and the factor $i$ is what restores it. The bare electric bivectors $\mathcal{G}_{0k}$ are anti-Hermitian and the rotations $\mathcal{G}_{ij}$ Hermitian, and the dual of a bare electric bivector is a rotation, $\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=\mathcal{G}_{\lambda\mu}$, which is Hermitian: the bare dual has crossed to the other class. Composing with the chirality cell once more, which is what the EDM insertion is, gives $-\vec e_k$, anti-Hermitian again. In the magnetic family the same two steps run the other way, $\mathcal{D}\bigl(\mathcal{G}_{ij}\bigr)$ anti-Hermitian and $\mathcal{G}_{ij}$ after the chirality cell Hermitian, the pseudotensor of that family. The duality exchanges the families and flips the class; the $i$ flips it back, and it is the origin of the $i$ in the EDM Lagrangian.
 
-**The weight and the contraction form.** The dual has a second writing, as a sum over the pair with the weight of *Frame Conventions*,
+**The weight and the contraction form.** The dual has a second writing, as a sum over the pair with the weight of *Frame and Metric Conventions*,
 
 $$
 \mathcal{D}\bigl(\mathcal{G}_{\mu\nu}\bigr)=\frac{1}{2}\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\,\varepsilon_\rho\varepsilon_\sigma\,\mathcal{G}_{\rho\sigma},
@@ -506,7 +506,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $\mathcal{O}_{0k}:\ Q\mapsto-\vec e_kQ$; $\mathcal{O}_{ij}:\ Q\mapsto\vec e_kQ\vec e_z$ | The six EDM insertions; each is the bivector of its pair composed with the chirality cell |
 | $\mathcal{D}$ | The Hodge dual on the insertions; $\mathcal{D}(\mathcal{G}_{0k})=+\mathcal{G}_{\lambda\mu}$, $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0k}$, $\mathcal{D}^{2}=-1$, and $\mathcal{D}(\mathcal{G}_{\mu\nu})=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\mathcal{G}_{\rho\sigma}$ |
 | $\mathcal{O}_{\mu\nu}=i\,\mathcal{D}(\mathcal{G}_{\mu\nu})$ | The EDM insertion as $i$ times the dual of the bivector; on the timelike pair, $i\,(i\vec e_k)=-\vec e_k$ |
-| $\varepsilon_\rho$ | The plain weight of *Frame Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
+| $\varepsilon_\rho$ | The plain weight of *Frame and Metric Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ | The field strength components |
 | $\mathcal{L}_{\mathrm{EDM}}=i\,d\sum_kE_k\psi^{*}i(\vec e_k\psi)\vec e_x + i\,d\sum_kB_k\psi^{*}i(\vec e_k\psi\vec e_z)\vec e_x$ | EDM Lagrangian |
 | $H_{\mathrm{NR}}=-d\sum_kE_k\,i\vec e_k$ | EDM nonrelativistic Hamiltonian |

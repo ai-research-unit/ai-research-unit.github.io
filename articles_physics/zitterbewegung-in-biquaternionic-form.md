@@ -62,7 +62,7 @@ The interpretation of this result is contested, and the article does not settle 
 
 ## The Biquaternionic Setting
 
-The algebra, its units and its coefficients are those of *Algebra and Element Conventions*; the gradient, the two sides and the momentum operator those of *Operator and Calculus Conventions*; the coordinate, the metric and the frame those of *Frame Conventions*; the two sectors and the conjugation those of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces* and §*The Conjugations*. No formula of theirs is restated here.
+The algebra, its units and its coefficients are those of *Algebra and Element Conventions*; the gradient, the two sides and the momentum operator those of *Operator and Calculus Conventions*; the coordinate, the metric and the frame those of *Frame and Metric Conventions*; the two sectors and the conjugation those of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces* and §*The Conjugations*. No formula of theirs is restated here.
 
 The biquaternionic Dirac equation is the parent's linear pair, off-diagonal in the value,
 

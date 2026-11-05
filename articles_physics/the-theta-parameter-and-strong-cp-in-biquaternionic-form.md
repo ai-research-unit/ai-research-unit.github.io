@@ -6,7 +6,7 @@
 
 The framework's contribution to this subject is unusually direct, and it rests on a result established earlier in the series. In the abelian sector the topological density is not a foreign object: it is proportional to the framework's second invariant, $I_2=\vec E\cdot\vec B$.
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame Conventions*, with the $ict'$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
+**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the $ict'$ convention for sums over indices: the labels are summed directly, and the four-index symbol is the all-low orientation density of *Operator and Calculus Conventions*.
 
 $$
 \tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}

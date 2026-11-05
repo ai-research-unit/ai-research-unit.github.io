@@ -60,7 +60,7 @@ $$
 
 with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with $\tilde W^{(r)}$ and $\tilde V^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde\Psi^{\mathrm{fop}*}(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+m$ derived below, and no cell survives in the amplitude.
 
-**The momentum action.** The four frame cells of *Frame Conventions*, written out as actions instead of as cells, are
+**The momentum action.** The four frame cells of *Frame and Metric Conventions*, written out as actions instead of as cells, are
 
 $$
 G_t:\ \tilde Q\longmapsto i\,\tilde Q\,\vec e_x,
@@ -77,7 +77,7 @@ $$
 
 The energy enters on the right through $\vec e_x$; each momentum component enters on the left through $\vec e_k$ and on the right through $\vec e_y$. That asymmetry is the reference frame's, not a slip of notation: it is what makes the action square to the Lorentz square of the momentum.
 
-**The four squares do not share a sign.** The signs of $G_t$ and $G_k$ are read from one application followed by another, and they are the plain weight $\varepsilon$ of *Frame Conventions*:
+**The four squares do not share a sign.** The signs of $G_t$ and $G_k$ are read from one application followed by another, and they are the plain weight $\varepsilon$ of *Frame and Metric Conventions*:
 
 $$
 G_t^2=\mathrm{id},\qquad G_k^2=-\mathrm{id},\qquad \{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id},
@@ -432,7 +432,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathbb{C}_{\mathbb{B}}$ | The centre of $\mathbb{B}$ (*Algebra and Element Conventions*) |
 | $\mathrm{id}$ | The identity, as an action on $\mathbb{B}$ |
 | $G_t$, $G_k$ | The four frame cells written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_k^2=-\mathrm{id}$, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{id}$ |
-| $\varepsilon$ | The plain weight of the four directions, the square of the units (*Frame Conventions*) |
+| $\varepsilon$ | The plain weight of the four directions, the square of the units (*Frame and Metric Conventions*) |
 | $\mathcal{A}_p$ | The momentum action, $p_0G_t-\sum_kp_kG_k$, written out as $\tilde Q\mapsto ip_0\tilde Q\vec e_x-i\sum_kp_k\vec e_k\tilde Q\vec e_y$; $\mathcal{A}_p^2=p^2\mathrm{id}$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient (*Operator and Calculus Conventions*); $Q_t$ is the time coordinate, $ict'$ on $\mathbb{M}_-$ |
 | $\Box$ | The d'Alembertian, the gradient squared through its conjugate (*Operator and Calculus Conventions*) |

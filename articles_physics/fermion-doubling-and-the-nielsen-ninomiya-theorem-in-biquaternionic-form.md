@@ -24,7 +24,7 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The field, the chirality and the lattice
 
-**The field.** The field is the biquaternion $\tilde\Psi$, an element of $\mathbb{B}$; $\psi$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=ict'$ and $Q_k=q_k$ (*Frame Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
+**The field.** The field is the biquaternion $\tilde\Psi$, an element of $\mathbb{B}$; $\psi$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=ict'$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
 
 **The dynamics is the chiral pair of the gradient**,
 

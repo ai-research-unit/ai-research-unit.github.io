@@ -44,7 +44,7 @@ $$
   =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, \tilde\nabla^{\mathrm{gco}}_\mu,
 $$
 
-where the coordinate is that of the material frame of *Frame Conventions*, $Q_t = ict'$ and $Q_k = x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
+where the coordinate is that of the material frame of *Frame and Metric Conventions*, $Q_t = ict'$ and $Q_k = x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 \tilde\nabla^{\mathrm{gco}}\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
