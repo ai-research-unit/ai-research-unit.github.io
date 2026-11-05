@@ -356,7 +356,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the spinor module $S$, the matrix units $\tilde\Pi_1,\tilde\Pi_2,x,y$, the symplectic form, and the left and right actions on which the dyad construction rests.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html), and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the rank-one description and the factorization of null biquaternions into mixed spinors.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the biquaternion-norm criterion and the classification of zero divisors used throughout.
-- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html), for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
+- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html), for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, its biquaternion norm, and the identification of its null cone with the zero divisors.
 - *Spinors*, for the two-component spinor conventions.
 

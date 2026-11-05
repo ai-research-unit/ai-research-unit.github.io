@@ -8,7 +8,7 @@ $$
 \mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\},
 $$
 
-the **null cone**. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is *The N-Regular Sector*, the group of units.
+the **null cone**. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its factorisation into a spinor and a co-spinor, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is *The N-Regular Sector*, the group of units.
 
 The cone is split by the scalar part into two strata, the **pure** stratum of nilpotents and the **non-pure** stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular cell $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.
 
@@ -179,6 +179,84 @@ $$
 whose underlying real manifold is $S^2\times S^2$, and the punctured cone is a $\mathbb{C}^{\times}$-bundle over it. The link is a circle bundle over the quadric.
 
 *Proof.* The projective quadric of a non-degenerate quadratic form in four variables is smooth of dimension two, and over $\mathbb{C}$ it is $\mathbb{P}^1\times\mathbb{P}^1$; the real picture is $S^2\times S^2$. The bundle statements are the definitions of the projectivisation and of the link.
+
+### The Spinor and the Co-Spinor
+
+**The chart.** The reading uses the standard Peirce basis of the pair $\tilde\Pi_\pm$, that is the two mixed units
+
+$$
+\vec\Upsilon_{+-}=\tfrac{1}{2}(i\vec e_x-\vec e_y),\qquad
+\vec\Upsilon_{-+}=\tfrac{1}{2}(i\vec e_x+\vec e_y),
+$$
+
+of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. Both are nilpotent, each idempotent is the product of the two in one order, and every element has the unique expansion $\tilde Q=Q_{++}\tilde\Pi_++Q_{+-}\vec\Upsilon_{+-}+Q_{-+}\vec\Upsilon_{-+}+Q_{--}\tilde\Pi_-$ in the **Peirce coordinates** $Q_{st}$.
+
+**The two spaces.** Every point of the punctured cone is a product of two elements of a plane, one taken on the left and one on the right. The **spinor space** is the Peirce carrier $S_{+}=\mathbb{B}\tilde\Pi_{+}$, with basis $(\tilde\Pi_{+},\vec\Upsilon_{-+})$. The **co-spinor space** is the row space
+
+$$
+S_{+}^{\vee}=\tilde\Pi_{+}\mathbb{B},
+$$
+
+with basis $(\tilde\Pi_{+},\vec\Upsilon_{+-})$ and the same complex dimension two. A spinor and a co-spinor are
+
+$$
+\psi=\psi_{1}\tilde\Pi_{+}+\psi_{2}\vec\Upsilon_{-+},\qquad
+\chi=\chi_{1}\tilde\Pi_{+}+\chi_{2}\vec\Upsilon_{+-},
+$$
+
+with complex coefficients. The products needed below are $\tilde\Pi_{+}^{2}=\tilde\Pi_{+}$, $\tilde\Pi_{+}\vec\Upsilon_{+-}=\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}\tilde\Pi_{+}=\vec\Upsilon_{-+}$, $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$, $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$, and the two vanishing products $\tilde\Pi_{+}\vec\Upsilon_{-+}=\vec\Upsilon_{+-}\tilde\Pi_{+}=0$.
+
+**Proposition (the cone is the product set).** The set $\{\psi\chi:\psi\in S_{+},\chi\in S_{+}^{\vee}\}$ is exactly the cone $\mathcal{N}$.
+
+*Proof.* Multiplying out, the Peirce coordinates of $Q=\psi\chi$ are
+
+$$
+Q_{++}=\psi_{1}\chi_{1},\qquad Q_{+-}=\psi_{1}\chi_{2},\qquad Q_{-+}=\psi_{2}\chi_{1},\qquad Q_{--}=\psi_{2}\chi_{2},
+$$
+
+so each coordinate is an entry of the outer product of the coefficient column of the spinor with the coefficient row of the co-spinor, and
+
+$$
+Q_{++}Q_{--}-Q_{+-}Q_{-+}=\psi_{1}\chi_{1}\psi_{2}\chi_{2}-\psi_{1}\chi_{2}\psi_{2}\chi_{1}=0 .
+$$
+
+The determinant of the Peirce coordinates being the norm (*The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*), the product is on the cone. Conversely a nonzero element of the cone has the rank-one model $\mathsf{M}_{2}(\tilde Q)=uv^{\mathsf{T}}$ of §*The Matrix Picture*, and the display is read backwards: the column $u$ gives the coordinates of a spinor and the row $v^{\mathsf{T}}$ those of a co-spinor, and their product is that element. The zero of the cone is the product of two zero factors.
+
+**The contraction.** A co-spinor and a spinor multiply in the other order too, and that product is not an operator but a multiple of the idempotent:
+
+$$
+\chi\psi=\varepsilon(\chi,\psi)\,\tilde\Pi_{+},\qquad \varepsilon(\chi,\psi)=\chi_{1}\psi_{1}+\chi_{2}\psi_{2},
+$$
+
+because $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}=\mathbb{C}\tilde\Pi_{+}$, the corner of a primitive idempotent. The form $\varepsilon$ is complex bilinear and carries **no conjugation**; it is the evaluation of the co-spinor on the spinor. Its value is the scalar part,
+
+$$
+2Q_{t}=\varepsilon(\chi,\psi),
+$$
+
+the same identity as $2Q_t=v^{\mathsf{T}}u$ of §*The Matrix Picture*. **The trace of the matrix model is the contraction of the two factors.**
+
+**Theorem (the pure stratum is the incidence).** For $Q=\psi\chi\neq0$ the spinor line $[\psi]$ lies in the hyperplane $\ker\chi$ exactly when $Q$ is pure.
+
+*Proof.* The condition $[\psi]\subset\ker\chi$ is $\varepsilon(\chi,\psi)=0$, that is $Q_{t}=0$, that is the purity of $Q$ by §*The Three Strata*. Off the pure stratum the two are transverse: the line and the hyperplane meet only in the zero vector.
+
+**Corollary (the quadric is a product of two projective lines).** The assignment $[Q]\mapsto([\psi],[\chi])$ is a bijection
+
+$$
+\mathbb{P}(\mathcal{N})\longrightarrow\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee}),
+$$
+
+because the scaling $(\psi,\chi)\mapsto(\lambda\psi,\lambda^{-1}\chi)$ leaves $\psi\chi$ fixed, and conversely the pair is recovered from the element: the line $[\psi]$ is the column space of the operator and the line $[\chi]$ its row space, which fixes the relative scale. Under it the projectivised pure stratum is the incidence variety
+
+$$
+\{([\psi],[\chi]):[\psi]\subset\ker\chi\}\cong\mathrm{Fl}(1,2;\mathbb{C}^{2})\cong\mathbb{P}^{1},
+$$
+
+which is the hyperplane section $\{Q_{t}=0\}$ of the quadric, a conic in the plane $\{Q_{t}=0\}$, and the projectivised non-pure stratum is its complement. In rank two a hyperplane of the plane is a line, so incidence is equality of the two lines: the pure stratum is the **diagonal** of the product and the non-pure stratum is the complement of the diagonal, which is the idempotent surface of §*The Three Strata*. An idempotent is a pair of a line and a distinct hyperplane, and the coincidence that purity forces is exactly what is removed.
+
+**The two rulings.** Fixing the spinor line and varying the co-spinor gives the complex plane $\psi S_{+}^{\vee}$, whose projectivisation is a line of the quadric; fixing the co-spinor and varying the spinor gives the plane $S_{+}\chi$. The two families are the two rulings, and two members of different families meet in exactly the point $[\psi\chi]$: an element of $\psi S_{+}^{\vee}$ has column space $\mathbb{C}\psi$ and an element of $S_{+}\chi$ has row space $\mathbb{C}\chi$, and a rank-one element with both is a multiple of the product. **The two rulings of the Segre quadric are the spinor line and the co-spinor line.** The statements that the rulings are the images of the two factors, in *$M_2(\mathbb{C})$ Defining Representation : Operators* and in *Split-Quaternion Null Quadric and Projective Geometry*, receive here their biquaternion names.
+
+**Caution (the two row spaces).** The superscript star is already taken. The corpus writes $S_{+}^{*}=(\mathbb{B}\tilde\Pi_{+})^{*}=\tilde\Pi_{+}^{*}\mathbb{B}$ for the Hermitian adjoint, which is the row of $\tilde\Pi_{+}^{*}$. For the standard pair $\tilde\Pi_{+}^{*}=\tilde\Pi_{+}$, so the two row spaces coincide and the standard chart hides the difference; for a general family they do not, and the product above uses the row of $\tilde\Pi_{+}$ and no involution at all. The symbol $\vee$ marks that difference.
 
 **Theorem (homogeneity under isometries).** The special orthogonal group $\mathrm{SO}(4,\mathbb{C})$ of the norm acts transitively on $\mathcal{N}\setminus\{0\}$. The punctured cone is a single orbit; every invariant of the isometry group is constant on it.
 
@@ -378,6 +456,8 @@ The $\natural$-degenerate sector is the null cone $\mathcal{N}=\{N=0\}$, the zer
 
 It is the determinantal variety of rank at most one. The origin is the apex and the only singular point; the punctured cone is the zero-divisor set. The cone is a two-sided ideal of the multiplicative semigroup and contains no invertible element.
 
+Every point of the punctured cone is a product $\psi\chi$ of a spinor of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ and a co-spinor of $S_{+}^{\vee}=\tilde\Pi_{+}\mathbb{B}$, the assignment $[Q]\mapsto([\psi],[\chi])$ is a bijection $\mathbb{P}(\mathcal{N})\cong\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee})$, and the scalar part is the contraction $2Q_t=\varepsilon(\chi,\psi)$ of the pair. The contraction vanishes, equivalently the spinor line lies in the kernel of the co-spinor, exactly on the pure stratum; the projectivised pure stratum is therefore the incidence variety $\mathrm{Fl}(1,2;\mathbb{C}^{2})$, a conic in $\mathbb{P}^{3}$, and the projectivised non-pure stratum is its complement, the idempotent surface. The two rulings of the quadric are the spinor line and the co-spinor line.
+
 The cone splits into the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of non-trivial idempotents. The three have real dimensions zero, four and six; the non-pure stratum is open and dense in the punctured cone. Under similarity the pure stratum is one orbit and each idempotent multiple family $c\tilde\Pi$ is one orbit, separated by the scalar part $Q_t$.
 
 On the cone the algebraic split by $Q_t$ and the spectral split by $B^2$ coincide: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the cell $\Sigma_{01}$. The cone meets neither $\Sigma_{11}$ nor $\Sigma_{10}$. The norm is the product of the eigenvalues, and the cone is exactly the set on which at least one eigenvalue vanishes.
@@ -403,6 +483,11 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 | $\Sigma_{00}=\{N=0,\ B^2=0\}$ | the doubly degenerate cell |
 | $\tilde\Pi=\tilde Q/(2Q_t)$ | the idempotent of a non-pure element |
 | $\tilde\Pi_\pm=\frac{1}{2}(e_t\pm i\vec e_z)$ | the standard orthogonal idempotents |
+| $S_{+}=\mathbb{B}\tilde\Pi_{+}$ | the spinor space, the Peirce carrier |
+| $S_{+}^{\vee}=\tilde\Pi_{+}\mathbb{B}$ | the co-spinor space, its row space |
+| $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | the mixed units of the Peirce basis |
+| $\varepsilon(\chi,\psi)$ | the contraction, $\chi\psi=\varepsilon(\chi,\psi)\tilde\Pi_{+}$ |
+| $Q_{st}$ | the Peirce coordinates of $\tilde Q$ |
 | $\mathsf{M}_2(\tilde Q)=uv^{\mathsf{T}}$ | the rank-one matrix model |
 | $Q_t=\frac{1}{2}v^{\mathsf{T}}u$ | the scalar part as a contraction |
 | $\tilde Q=\tilde Q_H\tilde Q_0$ | the polar decomposition; $\tilde Q_H$ of rank one, $\tilde Q_0$ a partial isometry |
@@ -418,6 +503,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link, the projectivisation and the singularity
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the mixed units and the Peirce coordinates
 - [Nilpotents](nilpotents.html), for the pure stratum
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the rank-one matrices and the determinant
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone

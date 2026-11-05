@@ -85,11 +85,11 @@ $$
 \tilde P \to \tilde P - ϙ\tilde A, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
 $$
 
-with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $D$ of *Operator and Calculus Conventions* and its conjugate $D^{\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation
+with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $\tilde\nabla^{\mathrm{gco}}$ of *Operator and Calculus Conventions* and its conjugate $\tilde\nabla^{\mathrm{gco},\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation
 
 $$
-D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
-D^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde\nabla^{\mathrm{gco}}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
+\tilde\nabla^{\mathrm{gco},\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
 and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
@@ -151,19 +151,19 @@ This is the form in which the chirality is visible, and it is the form the secti
 The **two-sided equation** is the dictionary form of V. V. Kravchenko: a single equation on the algebra-valued field $F\in\mathbb{B}$,
 
 $$
-\mathcal{N}F = \Big(i\frac{\partial}{\partial t'}+D_3\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
+\mathcal{N}F = \Big(i\frac{\partial}{\partial t'}+\nabla_{3}\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
 \qquad\text{that is}\qquad
 -\tilde{\nabla}^{\natural}F - m\,i\,\overline{F}\,\vec e_z = 0
 $$
 
-in natural units, with $D_3 = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
+in natural units, with $\nabla_{3} = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
 | Equation | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=0$, as displayed |
 | Field | the element $\tilde\Psi\in\mathbb{B}$ | the element $F\in\mathbb{B}$ |
 | Mass | the off-diagonal pairing of the two chirality values | $-mi\,\overline{F}\,\vec e_z$: a conjugation and a direction |
-| Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$ in the mass |
+| Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $\nabla_{3}$; right by $\vec e_z$ in the mass |
 | Chirality | the subscript, the two values $L$ and $R$ | the same two values, carried by the right multiplication by $\vec e_z$ in the mass |
 | Use | the definition, the kinematics, and the mass term | the analytic theory and the integral representation |
 
@@ -331,7 +331,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde P/\hbar = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{M}_-$ frame; metric in the closing section |
 | $m_e$, $e$, $\hbar$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
-| $\mathcal{N}F = (i\partial/\partial t'+D_3)F - mi\,\overline{F}\,\vec e_z$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$ | Two-sided Dirac equation of the dictionary form |
+| $\mathcal{N}F = (i\partial/\partial t'+\nabla_{3})F - mi\,\overline{F}\,\vec e_z$, $\nabla_{3}=\sum_k\vec e_k\partial/\partial Q_k$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = e\hbar/2m_e$ | Gyromagnetic factor; Bohr magneton |
 | $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\Gamma = -iR_{\vec e_z}^{\mathrm{axf}}$ | Central chirality grading and its representative; closing section |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their cell; closing section |

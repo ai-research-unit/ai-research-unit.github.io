@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the interpretation that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *The Spinor-Helicity Formalism and Biquaternions*, and the photon's nullity to *The Null Four-Momentum: What the Cone Derives and What It Does Not*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
+A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the interpretation that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *Helicity in Biquaternionic Form*, and the photon's nullity to *The Null Four-Momentum: What the Cone Derives and What It Does Not*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
 
 ## The Null Cone of the Algebra
 
@@ -54,7 +54,7 @@ $$
 \tilde{\Pi}_\xi = \xi\,\xi^{\dagger}, \qquad \xi \in \mathbb{C}^2,
 $$
 
-with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*The Spinor-Helicity Formalism and Biquaternions*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $\exp(i\alpha)\xi$ multiplies $\xi\xi^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
+with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*Helicity in Biquaternionic Form*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $\exp(i\alpha)\xi$ multiplies $\xi\xi^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
 
 $$
 \mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
@@ -70,7 +70,7 @@ $$
 \xi \;\longmapsto\; \exp(i\alpha)\xi, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
 $$
 
-so the helicity is the **weight** of the central $\mathrm{U}(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are *The Spinor-Helicity Formalism and Biquaternions*; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is *The Hopf Fibration and the Biquaternion Gauge Bundle*. What the celestial sphere supplies here is only the **base**: the point of $S^2$ at which the phase sits.
+so the helicity is the **weight** of the central $\mathrm{U}(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are *Helicity in Biquaternionic Form*; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is *The Hopf Fibration and the Biquaternion Gauge Bundle*. What the celestial sphere supplies here is only the **base**: the point of $S^2$ at which the phase sits.
 
 **The null translations and the nilpotent stratum.** The full little group of a null direction is $ISO(2)$, the semidirect product of the phase with two null translations, and the sphere is the base of the compact part alone. The translations shift the spinor representative along a null direction and leave the momentum and the point of the sphere fixed; they are represented by nilpotent operators, and they annihilate a state of finite helicity. That is why the helicity is the only little-group label the sphere carries: the non-compact translations act trivially on the physical states. The nilpotent stratum of the cone is the element-level counterpart of this translation part. It is not a point of the sphere and not a direction: it has no scale and no phase to attach, and the sphere, which carries directions, does not reach it.
 
@@ -106,7 +106,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 
 ## Further Reading
 
-- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html) — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
+- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html) — the unit spinors over the sphere, the Hopf map and its winding numbers.
 - [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) — the metric of the projective line and the transition probability of the pure states.
 - [The Null Four-Momentum: What the Cone Derives and What It Does Not](the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html) — the massless shell as the zero-divisor cone and the limits of the derivation.

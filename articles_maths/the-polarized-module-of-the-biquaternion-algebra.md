@@ -282,6 +282,8 @@ $$
 
 the right Peirce row of $\tilde\Pi_{+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The two spaces are different subspaces: the row contains $\mathbb{B}_{++}\oplus\mathbb{B}_{+-}$ and $S_{-}$ contains $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. They share the mixed line $\mathbb{B}_{+-}$ but are not equal. Chirality belongs to the left grouping, not to the involution.
 
+**The row is the co-spinor space.** The row $\chi\in\tilde\Pi_{+}\mathbb{B}$ acts on the spinor $\psi\in S_{+}$ by the product $\chi\psi$, which lands in $\tilde\Pi_{+}\mathbb{B}\tilde\Pi_{+}=\mathbb{C}\tilde\Pi_{+}$; the coefficient is a bilinear form with no conjugation, and it is the scalar part of the product in the other order. The products $\psi\chi$ in turn fill the null cone, and the two strata of the cone are the two positions of the line $[\psi]$ relative to the hyperplane $\ker\chi$. The reading is *The N-Degenerate Sector*, §*Geometry*.
+
 ## What the Spinor Is Not
 
 **It is not a state vector in an external space.** The spinor is an element of the algebra, in one of the two Peirce spaces. Its coordinates are the Peirce coordinates in an adapted basis. There is no separate Hilbert space here; a Hermitian form, when it is used, is a form on the algebra.

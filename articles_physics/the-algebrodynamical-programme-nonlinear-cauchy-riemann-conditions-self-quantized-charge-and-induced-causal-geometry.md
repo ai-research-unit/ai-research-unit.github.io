@@ -98,7 +98,7 @@ $$
 \tau = Z\psi , \qquad \tau_A = \sum_B Z_{AB}\psi_B .
 $$
 
-The pair $\{\psi,\tau\}$ is a (projective) twistor of $\mathbb{C}M$ — the same incidence relation the corpus writes in *Twistor Theory and Biquaternions* and *The Spinor-Helicity Formalism and Biquaternions*, with the modulus of the projective equivalence being the freedom to rescale $\psi$. Choosing the gauge $\psi_0=1$ and writing $G=\psi_1/\psi_0$ gives the three projective components
+The pair $\{\psi,\tau\}$ is a (projective) twistor of $\mathbb{C}M$ — the same incidence relation the corpus writes in *Twistor Theory and Biquaternions* and *Helicity in Biquaternionic Form*, with the modulus of the projective equivalence being the freedom to rescale $\psi$. Choosing the gauge $\psi_0=1$ and writing $G=\psi_1/\psi_0$ gives the three projective components
 
 $$
 G,\qquad \kappa_0 = wG+\upsilon,\qquad \kappa_1 = vG+p .

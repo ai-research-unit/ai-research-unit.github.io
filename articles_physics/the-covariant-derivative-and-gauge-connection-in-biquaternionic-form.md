@@ -11,27 +11,27 @@ $$
 and the covariant derivative
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
+\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu \tilde\nabla^{\mathrm{gco}}_\mu = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad \tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $D$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
+together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $\tilde\nabla^{\mathrm{gco}}$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
-**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate $\tilde\nabla^{\natural}$, the d'Alembertian $\Box$ the two compose, and the Laplacian $\Delta_Q$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $D$ built on them and its quaternion conjugate $D^{\natural}$. No other letter names a derivative.
+**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate $\tilde\nabla^{\natural}$, the d'Alembertian $\Box$ the two compose, and the Laplacian $\Delta_Q$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $\tilde\nabla^{\mathrm{gco}}$ built on them and its quaternion conjugate $\tilde\nabla^{\mathrm{gco},\natural}$. No other letter names a derivative.
 
 The article develops the two objects in four directions that the gauge principle article did not pursue.
 
-- **The derivative as an operator.** $D$ is a first-order differential operator, not an element of $\mathbb{B}$. It is a derivation on the algebra of fields, and the connection is precisely the difference between $D$ and $\tilde{\nabla}$: $[D_\mu, f] = \partial/\partial Q_\mu f$ for a scalar function $f$.
-- **The connection as an orbit.** Covariance does not merely hold for $D$; it *determines* it. Requiring $D_2(\lambda\tilde{\Psi}) = \lambda D\tilde{\Psi}$ for a central phase $\lambda$ forces the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection has no gauge-invariant local value — it can be gauged to zero at any one point — and only its curvature obstructs doing so on a neighbourhood.
-- **The curvature as a commutator that closes on the algebra.** The commutator $[D_\mu, D_\nu]$ is multiplication by $\frac{iϙ}{\hbar}F_{\mu\nu}$; unlike $D$ itself, it is an element of $\mathbb{B}$.
-- **The covariant square.** With $D^{\natural}$ the quaternion conjugate of $D$, the exact operator identity splits into the covariant d'Alembertian in its scalar part and the curvature in its vector part:
+- **The derivative as an operator.** $\tilde\nabla^{\mathrm{gco}}$ is a first-order differential operator, not an element of $\mathbb{B}$. It is a derivation on the algebra of fields, and the connection is precisely the difference between $\tilde\nabla^{\mathrm{gco}}$ and $\tilde{\nabla}$: $[\tilde\nabla^{\mathrm{gco}}_\mu, f] = \partial/\partial Q_\mu f$ for a scalar function $f$.
+- **The connection as an orbit.** Covariance does not merely hold for $\tilde\nabla^{\mathrm{gco}}$; it *determines* it. Requiring $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde{\Psi}) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde{\Psi}$ for a central phase $\lambda$ forces the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection has no gauge-invariant local value — it can be gauged to zero at any one point — and only its curvature obstructs doing so on a neighbourhood.
+- **The curvature as a commutator that closes on the algebra.** The commutator $[\tilde\nabla^{\mathrm{gco}}_\mu, \tilde\nabla^{\mathrm{gco}}_\nu]$ is multiplication by $\frac{iϙ}{\hbar}F_{\mu\nu}$; unlike $\tilde\nabla^{\mathrm{gco}}$ itself, it is an element of $\mathbb{B}$.
+- **The covariant square.** With $\tilde\nabla^{\mathrm{gco},\natural}$ the quaternion conjugate of $\tilde\nabla^{\mathrm{gco}}$, the exact operator identity splits into the covariant d'Alembertian in its scalar part and the curvature in its vector part:
 $$
-D^{\natural} D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}
+\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}} \tilde\nabla^{\mathrm{gco}}_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}
 $$
 
 The division between what is established and what is interpretation is kept explicit, as in the companion articles.
 
 - **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}$ in $\mathbb{M}_-$; and the observation that the connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion.
-- **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $D^{\natural} D$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
+- **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
 ## The Covariant Derivative and Its Components
@@ -39,24 +39,24 @@ The division between what is established and what is interpretation is kept expl
 In the abelian case the connection coefficients $A_\mu$ are complex scalars. Writing $\tilde{A} = \sum_\mu A_\mu e_\mu$, the covariant derivative is the first-order operator
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}
+\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}
   = \sum_{\mu\in\{t,x,y,z\}} e_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right)
-  =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, D_\mu,
+  =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, \tilde\nabla^{\mathrm{gco}}_\mu,
 $$
 
 where the coordinate is that of the material frame of *Frame Conventions*, $Q_t = ict'$ and $Q_k = x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
-D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
+\tilde\nabla^{\mathrm{gco}}\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
 \qquad
-D_\mu\tilde{\Psi} = \partial/\partial Q_\mu\,\tilde{\Psi} + \frac{iϙ}{\hbar}A_\mu\tilde{\Psi}.
+\tilde\nabla^{\mathrm{gco}}_\mu\tilde{\Psi} = \partial/\partial Q_\mu\,\tilde{\Psi} + \frac{iϙ}{\hbar}A_\mu\tilde{\Psi}.
 $$
 
-The two descriptions agree because $\sum_\mu e_\mu A_\mu = \tilde{A}$ and $\sum_\mu e_\mu\partial/\partial Q_\mu = \tilde{\nabla}$: the component form of $D$ is not an independent definition, it is the expansion of the same object in the quaternion basis.
+The two descriptions agree because $\sum_\mu e_\mu A_\mu = \tilde{A}$ and $\sum_\mu e_\mu\partial/\partial Q_\mu = \tilde{\nabla}$: the component form of $\tilde\nabla^{\mathrm{gco}}$ is not an independent definition, it is the expansion of the same object in the quaternion basis.
 
-Two points about the nature of $D$ are worth stating before its algebra is used.
+Two points about the nature of $\tilde\nabla^{\mathrm{gco}}$ are worth stating before its algebra is used.
 
-**$D$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $D_\mu$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{M}_-$ — and it is the *coefficient* of the new term, not the derivative itself.
+**$\tilde\nabla^{\mathrm{gco}}$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $\tilde\nabla^{\mathrm{gco}}_\mu$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{M}_-$ — and it is the *coefficient* of the new term, not the derivative itself.
 
 **The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_\mu$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{iϙ}{\hbar}A_\mu$ agree, and the derivation below never has to choose an order. This is the algebraic signature of the abelian gauge group: the phase lies in the centre, and the connection has central coefficients.
 
@@ -66,20 +66,20 @@ The following table collects the components and their meanings.
 |---|---|---|
 | Gradient | $\tilde{\nabla}$ | The ordinary derivative of *Operator and Calculus Conventions* |
 | Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ | Compensating field |
-| Covariant derivative | $D = \sum_\mu e_\mu D_\mu$ | $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ |
-| Time component $\mu = t$ | $D_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ\phi}{\hbar c}$ | $A_t = i\phi/c$ |
-| Space components $\mu = k$ | $D_k = \partial/\partial x_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
+| Covariant derivative | $\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu \tilde\nabla^{\mathrm{gco}}_\mu$ | $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ |
+| Time component $\mu = t$ | $\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ\phi}{\hbar c}$ | $A_t = i\phi/c$ |
+| Space components $\mu = k$ | $\tilde\nabla^{\mathrm{gco}}_k = \partial/\partial x_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
 
 The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\phi/c$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ\phi}{\hbar c}$. The three spatial components keep their imaginary unit, because $A_k$ is real.
 
 ## The Covariant Derivative as a Derivation
 
-The properties collected here are the ones that make $D$ a covariant derivative rather than an arbitrary first-order operator. They are stated for the abelian case.
+The properties collected here are the ones that make $\tilde\nabla^{\mathrm{gco}}$ a covariant derivative rather than an arbitrary first-order operator. They are stated for the abelian case.
 
 **1. Linearity over constants.** For a central constant $\alpha$,
 
 $$
-D(\alpha\tilde{\Psi}) = \alpha\, D\tilde{\Psi}, \qquad D(\tilde{\Psi}\alpha) = (D\tilde{\Psi})\,\alpha,
+\tilde\nabla^{\mathrm{gco}}(\alpha\tilde{\Psi}) = \alpha\, \tilde\nabla^{\mathrm{gco}}\tilde{\Psi}, \qquad \tilde\nabla^{\mathrm{gco}}(\tilde{\Psi}\alpha) = (\tilde\nabla^{\mathrm{gco}}\tilde{\Psi})\,\alpha,
 $$
 
 because constants pass through $\tilde{\nabla}$ and commute with $\tilde{A}$.
@@ -87,38 +87,38 @@ because constants pass through $\tilde{\nabla}$ and commute with $\tilde{A}$.
 **2. The Leibniz rule.** For a complex scalar function $f$,
 
 $$
-D(f\tilde{\Psi}) = f\,D\tilde{\Psi} + \left(\tilde{\nabla} f\right)\tilde{\Psi}.
+\tilde\nabla^{\mathrm{gco}}(f\tilde{\Psi}) = f\,\tilde\nabla^{\mathrm{gco}}\tilde{\Psi} + \left(\tilde{\nabla} f\right)\tilde{\Psi}.
 $$
 
-This is the Leibniz rule of the gradient corrected by the connection: $\tilde{\nabla}(f\tilde{\Psi}) = f\tilde{\nabla}\tilde{\Psi} + (\tilde{\nabla} f)\tilde{\Psi}$, while the connection term is $f\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ by centrality of $f$. The mirror identity for right multiplication, $D(\tilde{\Psi}f) = (D\tilde{\Psi})f + \tilde{\Psi}(\tilde{\nabla} f)$, does **not** hold in this two-term form: $\tilde{\nabla}(\tilde{\Psi}f) = (\tilde{\nabla}\tilde{\Psi})f + \sum_\nu e_\nu\tilde{\Psi}\,\partial/\partial Q_\nu f$, and $e_\nu\tilde{\Psi}\ne\tilde{\Psi}e_\nu$ in general. $D$ is therefore a *left* derivation; the mirror rule holds for constant $f$, or with the mirror derivative that acts on the right. The derivation below uses the left rule only.
+This is the Leibniz rule of the gradient corrected by the connection: $\tilde{\nabla}(f\tilde{\Psi}) = f\tilde{\nabla}\tilde{\Psi} + (\tilde{\nabla} f)\tilde{\Psi}$, while the connection term is $f\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ by centrality of $f$. The mirror identity for right multiplication, $\tilde\nabla^{\mathrm{gco}}(\tilde{\Psi}f) = (\tilde\nabla^{\mathrm{gco}}\tilde{\Psi})f + \tilde{\Psi}(\tilde{\nabla} f)$, does **not** hold in this two-term form: $\tilde{\nabla}(\tilde{\Psi}f) = (\tilde{\nabla}\tilde{\Psi})f + \sum_\nu e_\nu\tilde{\Psi}\,\partial/\partial Q_\nu f$, and $e_\nu\tilde{\Psi}\ne\tilde{\Psi}e_\nu$ in general. $\tilde\nabla^{\mathrm{gco}}$ is therefore a *left* derivation; the mirror rule holds for constant $f$, or with the mirror derivative that acts on the right. The derivation below uses the left rule only.
 
 **3. The commutator with a function is the ordinary derivative.** From the Leibniz rule,
 
 $$
-[D_\mu, f] = \partial/\partial Q_\mu f,
+[\tilde\nabla^{\mathrm{gco}}_\mu, f] = \partial/\partial Q_\mu f,
 $$
 
-as an operator identity: $[D_\mu,f]\tilde{\Psi} = D_\mu(f\tilde{\Psi}) - fD_\mu\tilde{\Psi} = (\partial/\partial Q_\mu f)\tilde{\Psi}$. Equivalently, the connection is exactly the difference between the covariant and the ordinary derivative,
+as an operator identity: $[\tilde\nabla^{\mathrm{gco}}_\mu,f]\tilde{\Psi} = \tilde\nabla^{\mathrm{gco}}_\mu(f\tilde{\Psi}) - f\tilde\nabla^{\mathrm{gco}}_\mu\tilde{\Psi} = (\partial/\partial Q_\mu f)\tilde{\Psi}$. Equivalently, the connection is exactly the difference between the covariant and the ordinary derivative,
 
 $$
-D_\mu - \partial/\partial Q_\mu = \frac{iϙ}{\hbar}A_\mu,
+\tilde\nabla^{\mathrm{gco}}_\mu - \partial/\partial Q_\mu = \frac{iϙ}{\hbar}A_\mu,
 $$
 
 and this is the precise sense in which the connection "compensates" for the ordinary derivative's failure to be gauge covariant.
 
-**4. $D$ is not closed under multiplication, but its commutator is.** The composition $D_\mu D_\nu$ is a second-order operator and is not an algebra element. The *commutator* $[D_\mu,D_\nu]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the gauge field strength is the commutator of covariant derivatives rather than any single $D_\mu$.
+**4. $\tilde\nabla^{\mathrm{gco}}$ is not closed under multiplication, but its commutator is.** The composition $\tilde\nabla^{\mathrm{gco}}_\mu \tilde\nabla^{\mathrm{gco}}_\nu$ is a second-order operator and is not an algebra element. The *commutator* $[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the gauge field strength is the commutator of covariant derivatives rather than any single $\tilde\nabla^{\mathrm{gco}}_\mu$.
 
 ## Gauge Covariance and What It Forces
 
 The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$ a central phase and $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, the covariant derivative built from $\tilde{A}_2$ satisfies
 
 $$
-D_2(\lambda\tilde{\Psi}) = \lambda\,D\tilde{\Psi}
+\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde{\Psi}) = \lambda\,\tilde\nabla^{\mathrm{gco}}\tilde{\Psi}
 $$
 
-for every field $\tilde{\Psi}$, so the equation $D\tilde{\Psi} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the gauge principle article did not state: **covariance determines $D$; the connection is forced, not chosen.**
+for every field $\tilde{\Psi}$, so the equation $\tilde\nabla^{\mathrm{gco}}\tilde{\Psi} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the gauge principle article did not state: **covariance determines $\tilde\nabla^{\mathrm{gco}}$; the connection is forced, not chosen.**
 
-To see this, suppose only that the field transforms as $\tilde{\Psi} \mapsto \lambda\tilde{\Psi}$ and that a derivative of the form $D_2 = \tilde{\nabla} + \Omega_2$ is required to be covariant, $D_2(\lambda\tilde{\Psi}) = \lambda D\tilde{\Psi}$ for all $\tilde{\Psi}$, where $\Omega_2$ denotes multiplication by an element of $\mathbb{B}$. Expanding the left-hand side with the Leibniz rule,
+To see this, suppose only that the field transforms as $\tilde{\Psi} \mapsto \lambda\tilde{\Psi}$ and that a derivative of the form $\tilde\nabla^{\mathrm{gco}}_{2} = \tilde{\nabla} + \Omega_2$ is required to be covariant, $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde{\Psi}) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde{\Psi}$ for all $\tilde{\Psi}$, where $\Omega_2$ denotes multiplication by an element of $\mathbb{B}$. Expanding the left-hand side with the Leibniz rule,
 
 $$
 \tilde{\nabla}(\lambda\tilde{\Psi}) + \Omega_2\lambda\tilde{\Psi}
@@ -202,14 +202,14 @@ which is real. The time term is real because its two imaginary units cancel, $d(
 The curvature is the part of the covariant derivative that survives antisymmetrization. In the abelian case the connection coefficients commute, and the general commutator formula collapses to the curl:
 
 $$
-[D_\mu, D_\nu] = \frac{iϙ}{\hbar}\left(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu},
+[\tilde\nabla^{\mathrm{gco}}_\mu, \tilde\nabla^{\mathrm{gco}}_\nu] = \frac{iϙ}{\hbar}\left(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu},
 \qquad
 F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu .
 $$
 
 This is the gauge principle article's commutator identity, inherited here. Three consequences are developed in the present article.
 
-**The commutator closes on the algebra.** Although $D_\mu$ is an operator and not an element of $\mathbb{B}$, its commutator with $D_\nu$ is multiplication by the biquaternion $\frac{iϙ}{\hbar}F_{\mu\nu}$ — a scalar multiple of a field. The failure of covariant derivatives to commute is thus an algebraic object, not a differential one, and it can be contracted with the basis to form the field-strength biquaternion.
+**The commutator closes on the algebra.** Although $\tilde\nabla^{\mathrm{gco}}_\mu$ is an operator and not an element of $\mathbb{B}$, its commutator with $\tilde\nabla^{\mathrm{gco}}_\nu$ is multiplication by the biquaternion $\frac{iϙ}{\hbar}F_{\mu\nu}$ — a scalar multiple of a field. The failure of covariant derivatives to commute is thus an algebraic object, not a differential one, and it can be contracted with the basis to form the field-strength biquaternion.
 
 **The contraction is the field strength.** Reading off the components of $\tilde{\nabla}^{\natural}\tilde{A}$ gives
 
@@ -217,7 +217,7 @@ $$
 \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
 = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,e_\mu^{\natural} e_\nu,
 \qquad
-\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[D_\mu, D_\nu]\,e_\mu^{\natural} e_\nu ,
+\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[\tilde\nabla^{\mathrm{gco}}_\mu, \tilde\nabla^{\mathrm{gco}}_\nu]\,e_\mu^{\natural} e_\nu ,
 $$
 
 with $e_t^{\natural} = e_t$ and $e_\mu^{\natural} = -\vec e_\mu$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
@@ -233,51 +233,51 @@ The commutator of two covariant derivatives is first order. The *square* of the 
 Define the **quaternion conjugate** of the covariant derivative by conjugating the basis:
 
 $$
-D^{\natural} := \sum_\mu e_\mu^{\natural} D_\mu = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural},
+\tilde\nabla^{\mathrm{gco},\natural} := \sum_\mu e_\mu^{\natural} \tilde\nabla^{\mathrm{gco}}_\mu = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural},
 $$
 
-the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements, the central coefficients $D_\mu$ passing through untouched. Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $D^{\natural}$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
+the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements, the central coefficients $\tilde\nabla^{\mathrm{gco}}_\mu$ passing through untouched. Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\tilde\nabla^{\mathrm{gco},\natural}$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
 
 $$
-\boxed{\;D^{\natural} D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}\;}
+\boxed{\;\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}} \tilde\nabla^{\mathrm{gco}}_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}\;}
 $$
 
-holds, where $D_\mu^2$ means $D_\mu D_\mu$ and $\sum_\mu D_\mu^2 = \sum_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ when $\tilde{A} = 0$.
+holds, where $\tilde\nabla^{\mathrm{gco}}_\mu^2$ means $\tilde\nabla^{\mathrm{gco}}_\mu \tilde\nabla^{\mathrm{gco}}_\mu$ and $\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 = \sum_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ when $\tilde{A} = 0$.
 
 The derivation is short. Expanding the product,
 
 $$
-D^{\natural} D = \sum_{\mu,\nu} e_\mu^{\natural} e_\nu\, D_\mu D_\nu .
+\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_{\mu,\nu} e_\mu^{\natural} e_\nu\, \tilde\nabla^{\mathrm{gco}}_\mu \tilde\nabla^{\mathrm{gco}}_\nu .
 $$
 
-The diagonal terms give $e_t\sum_\mu D_\mu^2$, since $e_\mu^{\natural} e_\mu = e_t$ for every $\mu$. For each pair with $\mu\neq\nu$ the two ordered terms combine, because $D_\mu D_\nu = \tfrac12\{D_\mu,D_\nu\}+\tfrac12[D_\mu,D_\nu]$ while $D_\nu D_\mu = \tfrac12\{D_\mu,D_\nu\}-\tfrac12[D_\mu,D_\nu]$:
+The diagonal terms give $e_t\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2$, since $e_\mu^{\natural} e_\mu = e_t$ for every $\mu$. For each pair with $\mu\neq\nu$ the two ordered terms combine, because $\tilde\nabla^{\mathrm{gco}}_\mu \tilde\nabla^{\mathrm{gco}}_\nu = \tfrac12\{\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu\}+\tfrac12[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]$ while $\tilde\nabla^{\mathrm{gco}}_\nu \tilde\nabla^{\mathrm{gco}}_\mu = \tfrac12\{\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu\}-\tfrac12[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]$:
 
 $$
-e_\mu^{\natural} e_\nu\,D_\mu D_\nu + e_\nu^{\natural} e_\mu\,D_\nu D_\mu
-= \left(e_\mu^{\natural} e_\nu+e_\nu^{\natural} e_\mu\right)\tfrac12\{D_\mu,D_\nu\}
-+ \left(e_\mu^{\natural} e_\nu-e_\nu^{\natural} e_\mu\right)\tfrac12[D_\mu,D_\nu]
-= e_\mu^{\natural} e_\nu\,[D_\mu,D_\nu] .
+e_\mu^{\natural} e_\nu\,\tilde\nabla^{\mathrm{gco}}_\mu \tilde\nabla^{\mathrm{gco}}_\nu + e_\nu^{\natural} e_\mu\,\tilde\nabla^{\mathrm{gco}}_\nu \tilde\nabla^{\mathrm{gco}}_\mu
+= \left(e_\mu^{\natural} e_\nu+e_\nu^{\natural} e_\mu\right)\tfrac12\{\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu\}
++ \left(e_\mu^{\natural} e_\nu-e_\nu^{\natural} e_\mu\right)\tfrac12[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]
+= e_\mu^{\natural} e_\nu\,[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu] .
 $$
 
-The first coefficient vanishes term by term and the second is $2e_\mu^{\natural} e_\nu$. Summing over the pairs with $\mu<\nu$ and using $[D_\mu,D_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$ leaves $\frac{iϙ}{\hbar}\sum_{\mu<\nu}F_{\mu\nu}e_\mu^{\natural} e_\nu$, which is $\frac{iϙ}{\hbar}\tilde{F}$ by the definition of $\tilde{F}$ above. The scalar and vector parts of the result are therefore
+The first coefficient vanishes term by term and the second is $2e_\mu^{\natural} e_\nu$. Summing over the pairs with $\mu<\nu$ and using $[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$ leaves $\frac{iϙ}{\hbar}\sum_{\mu<\nu}F_{\mu\nu}e_\mu^{\natural} e_\nu$, which is $\frac{iϙ}{\hbar}\tilde{F}$ by the definition of $\tilde{F}$ above. The scalar and vector parts of the result are therefore
 
 $$
-\mathrm{Sc}\!\left(D^{\natural} D\right) = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2},
+\mathrm{Sc}\!\left(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}\right) = \sum_{\mu\in\{t,x,y,z\}} \tilde\nabla^{\mathrm{gco}}_\mu^{2},
 \qquad
-\mathrm{Vect}\!\left(D^{\natural} D\right) = \frac{iϙ}{\hbar}\tilde{F}.
+\mathrm{Vect}\!\left(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}\right) = \frac{iϙ}{\hbar}\tilde{F}.
 $$
 
 The square of the covariant derivative contains the curvature in its vector part. Two consequences follow.
 
-**The second-order consequence of the massless equation.** If $D\tilde{\Psi} = 0$ then $D^{\natural} D\tilde{\Psi} = 0$: the field satisfies a covariant wave equation with a curvature term,
+**The second-order consequence of the massless equation.** If $\tilde\nabla^{\mathrm{gco}}\tilde{\Psi} = 0$ then $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}\tilde{\Psi} = 0$: the field satisfies a covariant wave equation with a curvature term,
 
 $$
-\left(\sum_\mu D_\mu^{2}\right)\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{F}\tilde{\Psi} = 0 .
+\left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^{2}\right)\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{F}\tilde{\Psi} = 0 .
 $$
 
 The structural similarity to the identity that the square of a Dirac operator is a Laplacian plus a curvature term is an **interpretation** of this result, not a claim that the biquaternion operator is the standard Dirac operator.
 
-**A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{\Phi} = \phi\,e_t$ obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_\mu D_\mu^2 - (mc/\hbar)^2\right)\phi\,e_t = 0$, which is consistent. But $D^{\natural} D(\phi e_t) = \left(\sum_\mu D_\mu^2\phi\right)e_t + \frac{iϙ}{\hbar}\phi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left(D^{\natural} D - (mc/\hbar)^2\right)\tilde{\Phi} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}(D^{\natural} D)$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature.
+**A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{\Phi} = \phi\,e_t$ obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 - (mc/\hbar)^2\right)\phi\,e_t = 0$, which is consistent. But $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}(\phi e_t) = \left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2\phi\right)e_t + \frac{iϙ}{\hbar}\phi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} - (mc/\hbar)^2\right)\tilde{\Phi} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature.
 
 ### The Chiral Pair and Why the Mass Couples Two Fields
 
@@ -286,14 +286,14 @@ One equation carries the mass under these conventions, and it is the chiral pair
 **The chiral pair** on the algebra. Both members act by left multiplication, the second is the quaternion conjugate of the first, and the mass couples the $L$ part to the $R$ part:
 
 $$
-D\tilde\Psi_R = m\tilde\Psi_L,
+\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L,
 \qquad
-D^{\natural}\tilde\Psi_L = m\tilde\Psi_R .
+\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R .
 $$
 
-Squaring its first member with the second gives the boxed identity on the $R$ part, $D^{\natural} D\tilde\Psi_R = m^2\tilde\Psi_R$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
+Squaring its first member with the second gives the boxed identity on the $R$ part, $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m^2\tilde\Psi_R$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
 
-**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla\tilde\Psi = m\tilde\Psi$ and apply $\tilde\nabla^{\natural}$: the result is $\Box\tilde\Psi = m\,\tilde\nabla^{\natural}\tilde\Psi$, an equation in two different objects, and nothing reduces it to $\Box\tilde\Psi = m^2\tilde\Psi$, because $\tilde\nabla^{\natural}\tilde\Psi = m\tilde\Psi$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_k\vec e_k\,\partial/\partial Q_k\tilde\Psi = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $D^{\natural}$ to $D\tilde\Psi_R = m\tilde\Psi_L$ returns $D^{\natural} D\tilde\Psi_R = mD^{\natural}\tilde\Psi_L = m^2\tilde\Psi_R$, which is the boxed identity.
+**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla\tilde\Psi = m\tilde\Psi$ and apply $\tilde\nabla^{\natural}$: the result is $\Box\tilde\Psi = m\,\tilde\nabla^{\natural}\tilde\Psi$, an equation in two different objects, and nothing reduces it to $\Box\tilde\Psi = m^2\tilde\Psi$, because $\tilde\nabla^{\natural}\tilde\Psi = m\tilde\Psi$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_k\vec e_k\,\partial/\partial Q_k\tilde\Psi = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\tilde\nabla^{\mathrm{gco},\natural}$ to $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$ returns $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m^2\tilde\Psi_R$, which is the boxed identity.
 
 The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function it reads
 
@@ -303,7 +303,7 @@ $$
 
 which is $\Box$ with the sign of $\Delta_Q$ reversed and a vector part added. The expression is derived here from the squares of the units, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla$ square to $-e_t$ while $e_\mu^{\natural} e_\mu = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla^2 = \Box$ would therefore be wrong by $2\Delta_Q$ in the scalar part and by that vector part.
 
-**The minimal coupling** replaces $\tilde\nabla$ by $D$ and $\tilde\nabla^{\natural}$ by $D^{\natural}$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
+**The minimal coupling** replaces $\tilde\nabla$ by $\tilde\nabla^{\mathrm{gco}}$ and $\tilde\nabla^{\natural}$ by $\tilde\nabla^{\mathrm{gco},\natural}$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
 
 ## What the Algebra Supplies, Transcribes, and Only Interprets
 
@@ -313,15 +313,15 @@ The boundary can be drawn as in the companion articles.
 
 **What it only transcribes.** The global-to-local argument itself, the form of minimal coupling, and the covariant derivative are the standard constructions, written in the algebra's notation. The algebra provides a home and makes the identities transparent; it does not supply a reason for a connection to exist, and it does not fix the coupling constant $ϙ$.
 
-**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and its loop integral is gauge invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $D^{\natural} D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ is what makes the interpretation precise.
+**What is interpretation.** The bundle picture — connection as parallel transport, curvature as infinitesimal holonomy — is a consistent interpretation of the algebraic content. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and its loop integral is gauge invariant by the fundamental theorem of calculus ($\oint d\Gamma = 0$); the geometric interpretation of those two facts is interpretation, and the identity $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ is what makes the interpretation precise.
 
 ## The Gauge Connection and the Gravitational Connection
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
-The connection of this article is **one-sided**: $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
+The connection of this article is **one-sided**: $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $\tilde\nabla^{\mathrm{gco}}_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
-The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force, the abelian case of this article, the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the connection is central: it multiplies from the side the derivative already multiplies from, and it passes through every unit. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term between the frame element and the Lorentz generator, which the substituted equation does not have. The difference is settled by one test, whether the generator commutes with the four units, and the test separates the two cases cleanly. The centre of $\mathbb{B}$ is the real span of $e_t$ and $ie_t$, so the six-dimensional traceless subspace, where the Lorentz generator lives, contains no central element at all; the traceless units themselves do not even commute with one another, $[\vec e_x,\vec e_y]=2\vec e_z$ and cyclically, whereas the central element commutes with everything,
+The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force, the abelian case of this article, the substitution $\partial/\partial Q_\mu \to \tilde\nabla^{\mathrm{gco}}_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the connection is central: it multiplies from the side the derivative already multiplies from, and it passes through every unit. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term between the frame element and the Lorentz generator, which the substituted equation does not have. The difference is settled by one test, whether the generator commutes with the four units, and the test separates the two cases cleanly. The centre of $\mathbb{B}$ is the real span of $e_t$ and $ie_t$, so the six-dimensional traceless subspace, where the Lorentz generator lives, contains no central element at all; the traceless units themselves do not even commute with one another, $[\vec e_x,\vec e_y]=2\vec e_z$ and cyclically, whereas the central element commutes with everything,
 
 $$
 [\vec e_x,\vec e_y]=2\vec e_z\neq0,
@@ -335,13 +335,13 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 ## Open Questions
 
-1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}(D^{\natural} D) = \sum_\mu D_\mu^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{iϙ}{\hbar}\tilde{F}\phi$, which is nonzero wherever the field strength is.
+1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}) = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{iϙ}{\hbar}\tilde{F}\phi$, which is nonzero wherever the field strength is.
 
 2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_\mu,A_\nu]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact gauge algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple gauge algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
 
 3. **The matter representation.** The covariant derivative acts by left multiplication, and in the abelian case left and right agree. For the charged massive field the parent's linear chiral pair is written with the left action, which makes the left action the natural one there. For a non-abelian connection the two differ, and the representation carried by the matter field must be specified; what fixes it for a general matter field is open, and the chiral-fermion article's treatment of the two values of the subscript and the minimal-coupling article's left/right analysis are the concrete settings in which the question is posed.
 
-4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $D^{\natural} D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
+4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
 5. **The one-form and the holonomy.** The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.
 
@@ -354,26 +354,26 @@ A second external source goes further and puts the two objects into one. J. Fred
 The connection and the covariant derivative produced by localizing the central phase of the biquaternion algebra are studied here as objects in their own right. The covariant derivative is the first-order operator
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_{\mu\in\{t,x,y,z\}} e_\mu D_\mu,
+\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_{\mu\in\{t,x,y,z\}} e_\mu \tilde\nabla^{\mathrm{gco}}_\mu,
 \qquad
-D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
+\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-with $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $D(f\tilde{\Psi}) = fD\tilde{\Psi} + (\tilde{\nabla} f)\tilde{\Psi}$ and commutator $[D_\mu,f] = \partial/\partial Q_\mu f$, so that the connection is exactly the difference $D_\mu - \partial/\partial Q_\mu = \frac{iϙ}{\hbar}A_\mu$.
+with $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla^{\mathrm{gco}}(f\tilde{\Psi}) = f\tilde\nabla^{\mathrm{gco}}\tilde{\Psi} + (\tilde{\nabla} f)\tilde{\Psi}$ and commutator $[\tilde\nabla^{\mathrm{gco}}_\mu,f] = \partial/\partial Q_\mu f$, so that the connection is exactly the difference $\tilde\nabla^{\mathrm{gco}}_\mu - \partial/\partial Q_\mu = \frac{iϙ}{\hbar}A_\mu$.
 
-Covariance determines the connection rather than merely holding for it: the requirement $D_2(\lambda\tilde{\Psi}) = \lambda D\tilde{\Psi}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde{\nabla}\lambda)\lambda^{-1}$, which for $\lambda = \exp(iϙ\Gamma/\hbar)$ is the inherited law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
+Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde{\Psi}) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde{\Psi}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde{\nabla}\lambda)\lambda^{-1}$, which for $\lambda = \exp(iϙ\Gamma/\hbar)$ is the inherited law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
 
-The curvature is the commutator of covariant derivatives, $[D_\mu,D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu\nu}[D_\mu,D_\nu]e_\mu^{\natural} e_\nu$. Unlike $D_\mu$, the commutator is an element of the algebra. The covariant square separates cleanly,
+The curvature is the commutator of covariant derivatives, $[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu\nu}[\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu]e_\mu^{\natural} e_\nu$. Unlike $\tilde\nabla^{\mathrm{gco}}_\mu$, the commutator is an element of the algebra. The covariant square separates cleanly,
 
 $$
-\boxed{\;D^{\natural} D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F},
+\boxed{\;\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}} \tilde\nabla^{\mathrm{gco}}_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F},
 \qquad
-\mathrm{Sc}(D^{\natural} D) = \sum_\mu D_\mu^2, \quad \mathrm{Vect}(D^{\natural} D) = \frac{iϙ}{\hbar}\tilde{F}\;},
+\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}) = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2, \quad \mathrm{Vect}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}) = \frac{iϙ}{\hbar}\tilde{F}\;},
 $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
-The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla\tilde\Psi = m\tilde\Psi$ returns $\Box\tilde\Psi = m\tilde\nabla^{\natural}\tilde\Psi$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial Q_t^2-\Delta_Q$ against the $\partial^2/\partial Q_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
+The identity is the square of the chiral pair $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla\tilde\Psi = m\tilde\Psi$ returns $\Box\tilde\Psi = m\tilde\nabla^{\natural}\tilde\Psi$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial Q_t^2-\Delta_Q$ against the $\partial^2/\partial Q_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
 
 ## Summary of Notation
 
@@ -396,17 +396,17 @@ The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $m$ | Mass of the parent's Dirac field |
-| $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_\mu e_\mu D_\mu$ | Covariant derivative |
-| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict')$ |
-| $D^{\natural} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $D$ |
+| $\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_\mu e_\mu \tilde\nabla^{\mathrm{gco}}_\mu$ | Covariant derivative |
+| $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict')$ |
+| $\tilde\nabla^{\mathrm{gco},\natural} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $\tilde\nabla^{\mathrm{gco}}$ |
 | $\tilde{A}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
-| $[D_\mu, f] = \partial/\partial Q_\mu f$ | Derivation property |
+| $[\tilde\nabla^{\mathrm{gco}}_\mu, f] = \partial/\partial Q_\mu f$ | Derivation property |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2 = S - \Box\Gamma$ | Gauge scalar; pure gauge |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}e_\mu^{\natural} e_\nu$ | Field strength = curvature, gauge invariant |
 | $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ | Abelian curvature components |
-| $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$ | Curvature as commutator |
-| $\sum_\mu D_\mu^2 = \mathrm{Sc}(D^{\natural} D)$ | Covariant d'Alembertian |
-| $D^{\natural} D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ | Covariant square identity |
+| $[\tilde\nabla^{\mathrm{gco}}_\mu, \tilde\nabla^{\mathrm{gco}}_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$ | Curvature as commutator |
+| $\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 = \mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}})$ | Covariant d'Alembertian |
+| $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ | Covariant square identity |
 | $e_t^{\natural} = e_t, e_\mu^{\natural} = -\vec e_\mu$ | Conjugate basis |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |

@@ -310,5 +310,5 @@ For the material momentum the data are $r=mc$, $\zeta=i$, $\vec u_{\mathrm b}=-\
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the boundary of the word and the two kinds of boundary point.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the generator, its kernel and the processes that have one.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the eigenpair, the Doppler pair and the two null components of the momentum.
-- [The Spinor-Helicity Formalism and Biquaternions](the-spinor-helicity-formalism-and-biquaternions.html), for the singular nature of the massless limit in the spinor variables.
+- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html), for the singular nature of the massless limit in the spinor variables.
 - [Conformal Invariance and the Massless Limit in Biquaternionic Form](conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html), for the massless limit as the restoration of a symmetry.
