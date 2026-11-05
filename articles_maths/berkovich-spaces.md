@@ -95,7 +95,7 @@ and the supremum is attained, at the spectral point. In particular the supremum 
 
 ### The Unit Disc
 
-**Definition.** For the Tate algebra $K\langle T\rangle$ the Berkovich spectrum $M(K\langle T\rangle)$ is the **closed unit disc** $\mathbb{U}^1$ of the Berkovich affine line. The **Gauss point** $\zeta \in \mathbb{U}^1$ is the point whose seminorm is the Gauss norm, $\lvert f \rvert_\zeta = \lVert f \rVert_G$.
+**Definition.** For the Tate algebra $K\langle T\rangle$ the Berkovich spectrum $M(K\langle T\rangle)$ is the **closed unit disc** $\mathbb{U}^1$ of the Berkovich affine line. The **Gauss point** $\varkappa^{\mathrm{crd}} \in \mathbb{U}^1$ is the point whose seminorm is the Gauss norm, $\lvert f \rvert_\varkappa^{\mathrm{crd}} = \lVert f \rVert_G$.
 
 **Theorem (classification of the points of the disc).** Let $K$ be algebraically closed and complete with dense value group. Every point $x \in M(K\langle T\rangle)$ is of exactly one of the following types.
 
@@ -115,7 +115,7 @@ the supremum over the closed disc $D(a,r)$; the value group is $\lvert K^\times 
 
 **Proof.** The classification is Berkovich's theorem for the disc. The essential steps are: a bounded multiplicative seminorm on $K\langle T\rangle$ is determined by its restriction to $K[T]$, and the kernel is a prime ideal corresponding to a point or to a disc; if the kernel is maximal one obtains type 1; otherwise one shows that the seminorm is the supremum over a closed disc, and the value group decides between types 2 and 3; the remaining case is a nested intersection of discs that is empty, giving type 4. Berkovich's original memoir and the standard expositions give the details.
 
-**Remark (the tree structure).** The closed unit disc is a compact, Hausdorff, path-connected and contractible space, and it is an $\mathbb{R}$-tree: between any two points there is a unique arc, and the arc is obtained by moving along the discs containing both points. The Gauss point $\zeta$ is the branch point of infinite valence, with one branch for each residue class in $k$; the classical points are the points of type 1, and the type 4 points are the remaining points, obtained as limits of nested sequences of discs with empty intersection. The disc is thus the precise sense in which the rigid disc is connected: the extra points of types 2, 3 and 4 supply the connections between the residue classes that the classical points cannot provide.
+**Remark (the tree structure).** The closed unit disc is a compact, Hausdorff, path-connected and contractible space, and it is an $\mathbb{R}$-tree: between any two points there is a unique arc, and the arc is obtained by moving along the discs containing both points. The Gauss point $\varkappa^{\mathrm{crd}}$ is the branch point of infinite valence, with one branch for each residue class in $k$; the classical points are the points of type 1, and the type 4 points are the remaining points, obtained as limits of nested sequences of discs with empty intersection. The disc is thus the precise sense in which the rigid disc is connected: the extra points of types 2, 3 and 4 supply the connections between the residue classes that the classical points cannot provide.
 
 **Example (the case of $\mathbb{C}_p$).** For $K = \mathbb{C}_p$ the value group is dense and the residue field is algebraically closed; the disc is a tree with the Gauss point of infinite valence at the centre, the points of types 2 and 3 branching off it and accumulating densely in the branches, and the type 4 points arising from nested sequences of discs with empty intersection. The disc is compact and metrisable, hence separable, so it is the closure of a countable set, while its topology is the ordinary topology of a compact metric space rather than the Grothendieck topology of the rigid disc.
 
@@ -239,7 +239,7 @@ The theory is geometry over a valued field and uses only the norm and the valuat
 | $\Gamma_x = \lvert \mathcal{H}(x)^\times \rvert$ | Value group at $x$ |
 | $\lvert \cdot \rvert_{\mathrm{sup}}$ | Spectral seminorm and spectral point |
 | $\mathbb{U}^1 = M(K\langle T\rangle)$ | Closed unit disc |
-| $\zeta$ | Gauss point, $\lvert f \rvert_\zeta = \lVert f \rVert_G$ |
+| $\varkappa^{\mathrm{crd}}$ | Gauss point, $\lvert f \rvert_\varkappa^{\mathrm{crd}} = \lVert f \rVert_G$ |
 | $D(a,r)$ | Closed disc of centre $a$ and radius $r$ |
 | $\mathbb{A}^{1,\mathrm{an}}$, $\mathbb{P}^{1,\mathrm{an}}$ | Berkovich affine and projective lines |
 | $\rho : M(A) \to \operatorname{Sp} A$ | Classical-point (reduction) map |

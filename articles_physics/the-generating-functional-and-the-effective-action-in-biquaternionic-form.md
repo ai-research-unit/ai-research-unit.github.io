@@ -104,13 +104,13 @@ holds exactly. These are the two standard identities of the Legendre transform; 
 $$
 K^{\mathrm{kin}} \to K = \begin{pmatrix} 2 & 0.3 & 0 \\ 0.3 & 1.4 & 0.2 \\ 0 & 0.2 & 1.1 \end{pmatrix},
 $$
-and source $J=(0.5,-0.4,0.9)$, the classical field is $\phi=K^{-1}J=(0.322647,-0.484316,0.906239)$, and
+and source $J=(0.5,-0.4,0.9)$, the classical field is $\chi=K^{-1}J=(0.322647,-0.484316,0.906239)$, and
 $$
-W[J]=\tfrac12 J^T K^{-1}J = 0.58533264 = \tfrac12\phi^T K\phi = \Gamma[\phi],
+W[J]=\tfrac12 J^T K^{-1}J = 0.58533264 = \tfrac12\chi^T K\chi = \Gamma[\chi],
 \qquad
-W+\Gamma = 1.17066529 = J^T\phi ,
+W+\Gamma = 1.17066529 = J^T\chi ,
 $$
-with $K\cdot K^{-1}=I$ to machine precision. The quadratic case has $W=\Gamma$ and $W+\Gamma=\langle J,\phi\rangle$, exactly as the identities require. The convexity is the positivity of $K$, whose leading principal minors are all positive.
+with $K\cdot K^{-1}=I$ to machine precision. The quadratic case has $W=\Gamma$ and $W+\Gamma=\langle J,\chi\rangle$, exactly as the identities require. The convexity is the positivity of $K$, whose leading principal minors are all positive.
 
 ## The Effective Action and the Loop Expansion
 
@@ -179,9 +179,9 @@ whose minimum is $\tilde\Phi_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum.
 $$
 V_{\mathrm{eff}}(\tilde\Phi_{\mathrm{cl}}) = V(\tilde\Phi_{\mathrm{cl}}) + \frac{\hbar}{2}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde\Phi^2}(\tilde\Phi_{\mathrm{cl}})\big) + \cdots
 $$
-is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\phi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.
+is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\chi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.
 
-**Finite-dimensional convexity check.** For the one-dimensional model $V(\phi)=\tfrac12 m^2\phi^2+\tfrac{\lambda}{4}\phi^4$ with $m^2=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\phi^2}(\phi)=m^2+3\lambda\phi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\phi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
+**Finite-dimensional convexity check.** For the one-dimensional model $V(\chi)=\tfrac12 m^2\chi^2+\tfrac{\lambda}{4}\chi^4$ with $m^2=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\chi^2}(\chi)=m^2+3\lambda\chi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\chi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
 
 ## The One-Loop Term and the Determinant
 

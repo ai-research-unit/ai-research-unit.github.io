@@ -26,12 +26,12 @@ $$
 \sigma : A_{\mathbb{C}}\to A_{\mathbb{C}}, \qquad \sigma(a\otimes\lambda) = a\otimes c(\lambda) = a\otimes\bar\lambda .
 $$
 
-It is $\mathbb{R}$-linear and satisfies $\sigma(\zeta x) = c(\zeta)\sigma(x)$ for $\zeta \in \mathbb{C}$, so it is **semilinear** over $\mathbb{R}$ with respect to $c$.
+It is $\mathbb{R}$-linear and satisfies $\sigma(\varkappa^{\mathrm{crd}} x) = c(\varkappa^{\mathrm{crd}})\sigma(x)$ for $\varkappa^{\mathrm{crd}} \in \mathbb{C}$, so it is **semilinear** over $\mathbb{R}$ with respect to $c$.
 
 **Theorem.** $\sigma$ is a semilinear involution of the algebra $A_{\mathbb{C}}$,
 
 $$
-\boxed{\;\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\zeta x) = \bar\zeta\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;},
+\boxed{\;\sigma(xy) = \sigma(x)\sigma(y), \qquad \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\varkappa^{\mathrm{crd}} x) = \bar\varkappa^{\mathrm{crd}}\,\sigma(x), \qquad \sigma^2 = \mathrm{id}\;},
 $$
 
 and its fixed set is the real part:

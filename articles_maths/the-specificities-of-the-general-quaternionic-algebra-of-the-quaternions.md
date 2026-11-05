@@ -10,7 +10,7 @@ Four of the landmarks are negative and decide the block: the unit is one-sided, 
 
 **Theorem.** The element $e_t$ is a left unit of the product and no right unit exists; the algebra is left-unital and not unital, and the two-sided inverse of a unital algebra is absent.
 
-*Proof.* $\tilde q \star e_t = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra*. The consequences for inversion are *Norm and Invertibility*: the two one-sided equations have the coincident solution $\zeta(\tilde q) = \tilde q/\langle\tilde q\rangle_{\natural}$, and the units do not form a group.
+*Proof.* $\tilde q \star e_t = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra*. The consequences for inversion are *Norm and Invertibility*: the two one-sided equations have the coincident solution $\omega = \tilde q/\langle\tilde q\rangle_{\natural}$, and the units do not form a group.
 
 The symmetric plain algebra is the only one of the three companion structures with a two-sided unit; the antisymmetric plain structure has none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
 

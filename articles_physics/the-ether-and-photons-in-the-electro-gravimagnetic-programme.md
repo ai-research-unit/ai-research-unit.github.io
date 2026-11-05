@@ -188,18 +188,18 @@ $$
 $$
 
 and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\varphi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\vec e_{j}$ with
+potential. Taking the plane potentials $\chi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\vec e_{j}$ with
 $\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,
 
 $$
-\boxed{\;\tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\vec u_k\right),
+\boxed{\;\tilde{\Phi}_{\vec k0} = \omega\,\chi\left(1 + i\,\vec u_k\right),
 \qquad
-\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
+\tilde{\Phi}_{\vec kj} = \chi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
 \qquad j = 1,2,3\;}
 $$
 
-with $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
+with $\chi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For
@@ -211,7 +211,7 @@ satisfy the free equation, and their content differs in a way the programme read
   $\vec k$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
   calls it the plane longitudinal harmonic EGM wave.
 - **A vector-potential mode is transverse exactly when its potential is.** Its scalar (ether-density)
-  amplitude is $\alpha = -k_{j}\varphi$, recomputed, so it vanishes precisely when
+  amplitude is $\alpha = -k_{j}\chi$, recomputed, so it vanishes precisely when
   $\vec e_{j} \perp \vec k$. In that case $\vec E \perp \vec k$, $\vec H \perp \vec k$
   and $\vec E \perp \vec H$ — the **tensional wave** of the paper, with zero ether density —
   while for $k_{j} \neq 0$ the mode carries a longitudinal part. This is where the ether section's
@@ -382,7 +382,7 @@ $\psi = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the **elementary photon**
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
-$\omega\varphi(1+i\vec u_k)$ and $\varphi(\omega \vec e_{j}-ik_{j}+i[\vec k,\vec e_{j}])$, of which
+$\omega\chi(1+i\vec u_k)$ and $\chi(\omega \vec e_{j}-ik_{j}+i[\vec k,\vec e_{j}])$, of which
 the first is longitudinal with the two field vectors parallel and the others are transverse exactly
 when their potentials are; and a source's field is the source convolved with the elementary photon,
 which the paper reads as light, a cloud of elementary photons over a visible band.
@@ -420,8 +420,8 @@ clearest statement of what the programme assumes.
 | $\alpha_{0}$, $\tilde F_{0}$ | Scalar amplitude and field-strength amplitude of the elementary photon (the paper writes $\rho_{0}$ and $\|\Phi_{0}\|$) |
 | $\tilde{\Phi}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
 | $\vec u_k = \vec k/\omega$ | Unit wave direction, $\|\vec k\| = \omega$ |
-| $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | Plane Helmholtz potential |
-| $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$ |
+| $\chi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | Plane Helmholtz potential |
+| $\alpha = -k_{j}\chi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$ |
 | $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$ | Radial unit vector |
 | $\Lambda$, $\tilde{\Sigma}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
 | $\mathrm{O}$, $\tilde{\Sigma}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |

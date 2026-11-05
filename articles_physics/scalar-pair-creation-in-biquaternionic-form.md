@@ -41,7 +41,7 @@ $$
 If the background is **homogeneous**, $\chi=\chi(t')$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
-\phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+\chi^{\mathrm{scl}}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 
 with the mode functions satisfying
@@ -263,7 +263,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
-| $\tilde{\Phi}=\phi\,e_t$, $\tilde Q_5=\chi\,e_t$ | Scalar field and central background |
+| $\tilde{\Phi}=\chi^{\mathrm{scl}}\,e_t$, $\tilde Q_5=\chi\,e_t$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})\chi$ | Central interaction |
 | $\omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\chi(t')$ | Time-dependent frequency |
 | $\tilde P_{\vec k}(t')=i\omega_{\vec k}(t')e_t+\vec k$ | Material four-wavevector; $\langle\tilde P\rangle_{\natural}$ its biquaternion norm |

@@ -30,16 +30,16 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 ### Definition for a Flow
 
-Let $\phi_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \phi_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps
+Let $\chi^{\mathrm{flw}}_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \chi^{\mathrm{flw}}_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps
 
 $$
-D\phi_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
+D\chi^{\mathrm{flw}}_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
 $$
 
 and for a tangent vector $v\in T_{x_0}M$ the **Lyapunov exponent** is
 
 $$
-\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\phi_{t'}\,v\right\|}{\left\|v\right\|},
+\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\chi^{\mathrm{flw}}_{t'}\,v\right\|}{\left\|v\right\|},
 $$
 
 whenever the limit exists. The **multiplicative ergodic theorem** of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the **Lyapunov spectrum** of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.
@@ -51,7 +51,7 @@ Three facts are used below, and each is transcribed from the standard theory rat
 **Divergence and volume.** The sum of the exponents is the average rate of change of the volume element,
 
 $$
-\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\phi_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
+\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\chi^{\mathrm{flw}}_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
 $$
 
 where $f$ is the vector field of the flow. For a Hamiltonian flow the divergence vanishes, the flow is volume-preserving, and the exponents come in pairs $\pm\lambda$ with the total zero. For a dissipative flow the sum is negative and the volume contracts.

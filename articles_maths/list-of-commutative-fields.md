@@ -19,7 +19,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\overline{\mathbb{Q}}$, the algebraic numbers | $0$ | $\mathbb{Q}$ | algebraically closed; the algebraic closure of $\mathbb{Q}$ | *Algebraically Closed Fields* |
 | $\overline{\mathbb{Q}} \cap \mathbb{R}$, the real algebraic numbers | $0$ | $\mathbb{Q}$ | the real closure of $\mathbb{Q}$; algebraic closure $\overline{\mathbb{Q}}$; countable and not order-complete | *Real-Closed and Complete Ordered Fields* |
 | a number field $K$ | $0$ | $\mathbb{Q}$ | finite over $\mathbb{Q}$; completions at its primes | *Algebraic Number Theory* |
-| $\mathbb{Q}(\zeta_n)$, a cyclotomic field | $0$ | $\mathbb{Q}$ | degree $\varphi(n)$ over $\mathbb{Q}$; the cyclotomic subfields | *Cyclotomic Fields* |
+| $\mathbb{Q}(\omega_n)$, a cyclotomic field | $0$ | $\mathbb{Q}$ | degree $\varphi(n)$ over $\mathbb{Q}$; the cyclotomic subfields | *Cyclotomic Fields* |
 | $\mathbb{Q}(\sqrt{d})$, a quadratic field | $0$ | $\mathbb{Q}$ | degree $2$ over $\mathbb{Q}$; imaginary for $d < 0$, real for $d > 0$ | *Algebraic Number Theory* |
 
 A field of characteristic $0$ contains a copy of $\mathbb{Q}$, and the prime field is the intersection of all its subfields. The real algebraic numbers are the real closure of $\mathbb{Q}$ and are countable; the algebraic numbers $\overline{\mathbb{Q}}$ are its algebraic closure, so the algebraic closure of the real algebraic numbers is $\overline{\mathbb{Q}}$ rather than $\mathbb{C}$.
@@ -106,10 +106,10 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathbb{F}_p$, $\mathbb{F}_q$ | The finite fields of order $p$ and $q = p^n$ |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{C}_p$ | $p$-adic numbers, $p$-adic integers, complete algebraic closure |
 | $k(x)$, $k((t))$, $\mathbb{F}_p((t))$ | Rational function field, Laurent series fields |
-| $\mathbb{Q}(\zeta_n)$, $\mathbb{Q}(\sqrt{d})$, $K$ | Cyclotomic, quadratic and number fields |
+| $\mathbb{Q}(\omega_n)$, $\mathbb{Q}(\sqrt{d})$, $K$ | Cyclotomic, quadratic and number fields |
 | $\overline{\mathbb{Q}} \cap \mathbb{R}$ | The real algebraic numbers |
 | $\operatorname{Frac}(R)$ | Field of fractions |
-| $\varphi(n)$ | Euler totient, the degree $[\mathbb{Q}(\zeta_n):\mathbb{Q}]$ |
+| $\varphi(n)$ | Euler totient, the degree $[\mathbb{Q}(\omega_n):\mathbb{Q}]$ |
 | $\operatorname{char} k$ | The characteristic of a field |
 | $\mathbb{H}$ | The quaternions; a division ring, not a field |
 

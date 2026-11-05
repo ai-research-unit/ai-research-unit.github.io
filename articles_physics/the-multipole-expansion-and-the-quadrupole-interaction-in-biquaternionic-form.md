@@ -52,13 +52,13 @@ where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is t
 Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the **spherical multipole expansion**
 
 $$
-\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\phi)\;},
+\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
 $$
 
 with the **spherical multipole moments**
 
 $$
-\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\phi_2)\,d^3x_2 .
+\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\theta^{\mathrm{azm}}_2)\,d^3x_2 .
 $$
 
 The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.

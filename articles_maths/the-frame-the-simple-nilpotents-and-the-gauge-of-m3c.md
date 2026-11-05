@@ -57,13 +57,13 @@ of complex dimension $9-1=8$.
 **The diagonal frame and the root.** Given a frame, the three diagonal idempotents $P_{i}=E_{ii}$ are a complete orthogonal family, and
 
 $$
-H=\sum_{i=1}^{3}\zeta_{i}E_{ii}
+H=\sum_{i=1}^{3}\omega_{i}E_{ii}
 $$
 
 is a root with simple spectrum, by *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by
 
 $$
-\{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\zeta_{i}E_{ii},
+\{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\omega_{i}E_{ii},
 $$
 
 and the fibre is the gauge of §*The Gauge* below.
@@ -141,7 +141,7 @@ $$
 
 The diagonal units are fixed, $E_{ii}'=E_{ii}$; the off-diagonal units are rescaled by the ratios $t_{i}/t_{j}$.
 
-**Proposition.** The gauge transformation preserves the frame. It fixes every idempotent $E_{ii}$, the root $H=\sum_{i}\zeta_{i}E_{ii}$, the spectrum, the trace, the determinant and the characteristic polynomial of every element. It acts on the Peirce coordinates by
+**Proposition.** The gauge transformation preserves the frame. It fixes every idempotent $E_{ii}$, the root $H=\sum_{i}\omega_{i}E_{ii}$, the spectrum, the trace, the determinant and the characteristic polynomial of every element. It acts on the Peirce coordinates by
 
 $$
 \alpha_{ij}\longmapsto\frac{t_{j}}{t_{i}}\alpha_{ij}.
@@ -211,7 +211,7 @@ $$
 
 $$
 \pi:\{\text{frames}\}\longrightarrow\{\text{roots with simple spectrum}\},\qquad
-(E_{ij})\longmapsto H=\sum_{i}\zeta_{i}E_{ii},
+(E_{ij})\longmapsto H=\sum_{i}\omega_{i}E_{ii},
 $$
 
 is surjective, and its fibre over every root is a torsor under the gauge group $(\mathbb{C}^{\times})^{2}$. Consequently

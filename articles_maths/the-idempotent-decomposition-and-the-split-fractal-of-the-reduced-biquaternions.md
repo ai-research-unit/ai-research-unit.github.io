@@ -52,7 +52,7 @@ where $K^{(j)}$ is the filled set of the one-variable map $F_{j}$ in the bounded
 
 **Proof.** By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\mathrm{ts}*}=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$ exactly when both coordinate orbits are bounded.
 
-**Corollary (the quadratic case).** The quadratic map $F_{C}(\breve Q)=\breve Q^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.
+**Corollary (the quadratic case).** The quadratic map $F_{C}(\breve Q)=\breve Q^{2}+C$ is a map of this form, with $F_{j}(\omega)=\omega^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.
 
 **Proof.** The square and the translation are coordinatewise, and the corollary restates the product theorem of *The Reduced Biquaternion Quadratic Map and Its Julia Sets*.
 

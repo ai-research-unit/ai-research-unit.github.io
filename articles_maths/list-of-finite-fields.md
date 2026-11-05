@@ -80,7 +80,7 @@ The trace and the norm of a finite extension are the two additive and multiplica
 | $\mathbb{F}_q$ | cyclic of order $q - 1$ | $q - 1$ | a primitive root | *Finite Fields* |
 | $\overline{\mathbb{F}_p}$ | torsion, the union of the cyclic groups of order $p^n - 1$ | infinite | — | *Finite Fields* |
 
-The multiplicative group of a finite field is cyclic, so a primitive root generates it, and the nonzero elements of $\mathbb{F}_q$ are exactly the roots of $x^{q-1} - 1$. The cyclotomic polynomial $\Phi_{q-1}$ therefore describes the primitive roots, and the situation parallels $\mathbb{Q}(\zeta_n)$ with $\zeta_n$ a primitive $n$-th root of unity in *Cyclotomic Fields*.
+The multiplicative group of a finite field is cyclic, so a primitive root generates it, and the nonzero elements of $\mathbb{F}_q$ are exactly the roots of $x^{q-1} - 1$. The cyclotomic polynomial $\Phi_{q-1}$ therefore describes the primitive roots, and the situation parallels $\mathbb{Q}(\omega_n)$ with $\omega_n$ a primitive $n$-th root of unity in *Cyclotomic Fields*.
 
 ## Warnings
 

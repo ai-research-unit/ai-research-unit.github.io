@@ -59,7 +59,7 @@ $$
 $$
 
 which says that the average over the directions of the energy of the projection of the measure equals the energy of the measure; in the Fourier form the energy is
-$\mathcal{I}_{s}(\mu) = c_{d,s}\int|\widehat{\mu}(\zeta)|^{2}|\zeta|^{s-d}\,d\zeta$, and the curvature of the sphere is what makes the average converge. The distance set is the radial image of the difference set, and the projection theorem of *Projections of a Fractal and the Dimension* is the geometric statement of the same average. Marstrand's theorem gives the dimension of the projections, while Falconer's problem asks for the **measure** of the set of the projected lengths, which is strictly stronger; this is why the projection theorem alone does not settle the conjecture.
+$\mathcal{I}_{s}(\mu) = c_{d,s}\int|\widehat{\mu}(\varkappa^{\mathrm{crd}})|^{2}|\varkappa^{\mathrm{crd}}|^{s-d}\,d\varkappa^{\mathrm{crd}}$, and the curvature of the sphere is what makes the average converge. The distance set is the radial image of the difference set, and the projection theorem of *Projections of a Fractal and the Dimension* is the geometric statement of the same average. Marstrand's theorem gives the dimension of the projections, while Falconer's problem asks for the **measure** of the set of the projected lengths, which is strictly stronger; this is why the projection theorem alone does not settle the conjecture.
 
 ## The Arithmetic of the Distance Set
 

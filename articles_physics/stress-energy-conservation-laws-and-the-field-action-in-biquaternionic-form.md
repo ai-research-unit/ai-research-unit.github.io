@@ -56,15 +56,15 @@ and the statement that a continuous transformation of the field leaves $S$ uncha
 Let $\tilde{\Phi}$ be a biquaternion-valued field and take the Lagrangian density
 
 $$
-\boxed{\ \mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural}\ } ,
+\boxed{\ \mathcal{L}_\chi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural} - \tfrac12\mu^2\,\tilde{\Phi}\tilde{\Phi}^{\natural}\ } ,
 \qquad
 \mu = \frac{mc}{\hbar} .
 $$
 
-Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\phi$ the variation gives
+Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\chi$ the variation gives
 
 $$
-\Box\phi - \mu^2\phi = 0 ,
+\Box\chi - \mu^2\chi = 0 ,
 $$
 
 that is,
@@ -73,11 +73,11 @@ $$
 \left(\Box-\mu^2\right)\tilde{\Phi} = 0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\phi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=ict'$ and $Q_k=x_k$, the kinetic term of $\mathcal{L}_\phi$ written out is
+the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\chi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=ict'$ and $Q_k=x_k$, the kinetic term of $\mathcal{L}_\chi$ written out is
 
 $$
-\mathcal{L}_\phi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\phi/\partial t'\right)^{2}+(\nabla\phi)^2\right)-\tfrac12\mu^2\phi^2
-= \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2 ,
+\mathcal{L}_\chi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\chi/\partial t'\right)^{2}+(\nabla\chi)^2\right)-\tfrac12\mu^2\chi^2
+= \frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}-\frac12(\nabla\chi)^2-\frac12\mu^2\chi^2 ,
 $$
 
 and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.
@@ -137,26 +137,26 @@ The four conserved quantities are the components of energy–momentum (from $\nu
 
 ## The Scalar Field Stress–Energy
 
-For a real scalar field with the Lagrangian $\mathcal{L}_\phi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is
+For a real scalar field with the Lagrangian $\mathcal{L}_\chi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is
 
 $$
-\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \delta_{\mu\nu}\mathcal{L}_\phi\ } ,
+\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\nu\,\chi + \delta_{\mu\nu}\mathcal{L}_\chi\ } ,
 $$
 
 the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=ict'$ and $Q_k=x_k$, the time row carrying the minus of $i^2$,
 
 $$
-\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0\ } ,
+\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2} + \frac12(\nabla\chi)^2 + \frac12\mu^2\chi^2 > 0\ } ,
 $$
 
 $$
-T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\phi/\partial t'\,\partial/\partial Q_k\,\phi ,
+T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\chi/\partial t'\,\partial/\partial Q_k\,\chi ,
 \qquad
-T_{jk} = T_{kj} = \partial/\partial Q_j\,\phi\,\partial/\partial Q_k\,\phi
-+ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2\right) .
+T_{jk} = T_{kj} = \partial/\partial Q_j\,\chi\,\partial/\partial Q_k\,\chi
++ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}-\frac12(\nabla\chi)^2-\frac12\mu^2\chi^2\right) .
 $$
 
-For a right-moving massless wave, $\phi=f(x-ct')$, these reduce to $T_{tt}=T_{xx}=(\partial\phi/\partial x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.
+For a right-moving massless wave, $\chi=f(x-ct')$, these reduce to $T_{tt}=T_{xx}=(\partial\chi/\partial x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.
 
 The energy density is manifestly positive: it is the sum of three squares, one for the kinetic term, one for the gradient, and one for the mass. The conservation law
 
@@ -176,7 +176,7 @@ is time-independent, which follows by integrating the conservation law over a sp
 As a check, consider the superposition
 
 $$
-\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \cos\!\left(k_1x-\omega_1t'\right) + 0.6\cos\!\left(k_2y-\omega_2t'\right),
+\chi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \cos\!\left(k_1x-\omega_1t'\right) + 0.6\cos\!\left(k_2y-\omega_2t'\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -343,7 +343,7 @@ The conventions of the construction are those of the following companion article
 The action of a field theory yields both its equations of motion and, by Noether's theorem, its conserved stress–energy. In biquaternion form the scalar action
 
 $$
-\mathcal{L}_\phi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural},
+\mathcal{L}_\chi = -\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural},
 \qquad
 \mu=\frac{mc}{\hbar},
 $$
@@ -358,10 +358,10 @@ $$
 
 has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
 
-The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\delta_{\mu\nu}\mathcal{L}_\phi$, with
+The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\chi\partial/\partial Q_\nu\,\chi+\delta_{\mu\nu}\mathcal{L}_\chi$, with
 
 $$
-T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
+T_{tt}=\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}+\frac12(\nabla\chi)^2+\frac12\mu^2\chi^2>0,
 \qquad
 \sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=0 \ \text{on shell},
 $$
@@ -391,7 +391,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; the unit metric on $\mathbb{C}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
 | $S=\int\mathcal{L}\,d^4x$ | Action; $\mathcal{L}$ the Lagrangian density |
-| $\mathcal{L}_\phi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$ | Scalar Lagrangian |
+| $\mathcal{L}_\chi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$ | Scalar Lagrangian |
 | $\mu=mc/\hbar$ | Scalar mass parameter |
 | $(\Box-\mu^2)\tilde{\Phi}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
@@ -404,8 +404,8 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$ | Symmetric components; the time column is read in the real coordinate |
 | $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{kk}=0$ | Tracelessness |
 | $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$ | Conservation with source per direction; Lorentz four-force |
-| $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\delta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
-| $T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
+| $T_{\mu\nu}=\partial/\partial Q_\mu\,\chi\partial/\partial Q_\nu\,\chi+\delta_{\mu\nu}\mathcal{L}_\chi$ | Scalar stress–energy |
+| $T_{tt}=\frac{1}{2c^2}\left(\partial\chi/\partial t'\right)^{2}+\frac12(\nabla\chi)^2+\frac12\mu^2\chi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

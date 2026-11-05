@@ -187,11 +187,11 @@ whose blocks act between the two minimal left ideals. The mass occupies the diag
 
 **Hermiticity and phase.** If $\mathcal{F}$ is Hermitian its determinant is real and its sign is physical (the fermion sign problem). If $\mathcal{F}$ is not Hermitian — which is generic for a chiral or a $\theta$-dependent operator — its determinant is complex, and
 $$
-\det\mathcal{F} = \big|\det\mathcal{F}\big|\,\exp(\,i\phi_{\mathcal{F}}),
+\det\mathcal{F} = \big|\det\mathcal{F}\big|\,\exp(\,i\theta^{\mathrm{pha}}_{\mathcal{F}}),
 $$
-with the phase $\phi_{\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(t')$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
+with the phase $\theta^{\mathrm{pha}}_{\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(t')$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
 $$
-\phi_{\mathcal{F}(t')} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(t')\big) + \text{const},
+\theta^{\mathrm{pha}}_{\mathcal{F}(t')} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(t')\big) + \text{const},
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta^{\mathrm{vac}}$ dependence: the $\theta^{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
@@ -259,7 +259,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $K(t')=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi t')^{-d/2}\sum a_n {t'}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
 | $\mathcal{F}=\mathbb{D}-m$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
-| $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\phi_{\mathcal{F}})$ | Complex (chiral) fermion determinant |
+| $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta^{\mathrm{pha}}_{\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 
 ## Further Reading

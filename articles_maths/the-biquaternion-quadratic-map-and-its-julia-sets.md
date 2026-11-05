@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the complex plane the quadratic family is one map, $\zeta\mapsto\zeta^2+C$, and one filled Julia set for each parameter. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the same formula denotes several maps at once, because the square of an element can be read with the general plain bilinear product, with one of the three other products the space carries, or with the left, the right and the matrix product, and the maps so obtained are not equivalent. This article fixes the reading, defines the family and its filled Julia set, and separates what survives the passage from the field to the algebra from what does not.
+In the complex plane the quadratic family is one map, $\omega\mapsto\omega^2+C$, and one filled Julia set for each parameter. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the same formula denotes several maps at once, because the square of an element can be read with the general plain bilinear product, with one of the three other products the space carries, or with the left, the right and the matrix product, and the maps so obtained are not equivalent. This article fixes the reading, defines the family and its filled Julia set, and separates what survives the passage from the field to the algebra from what does not.
 
 The algebra, its conjugations and its remarkable subspaces are *The Biquaternion Algebra* and *Subspaces and Decompositions*; its zero divisors and its idempotents are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *Idempotents*; the norm and the Euclidean norm are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*. These are used here and none is restated. The classical theory in $\mathbb{C}$ is *The Julia Sets of a Complex Polynomial*, *The Mandelbrot Set and the Quadratic Family* and *The Fatou Components and the Classification of the Dynamics*, and the comparison with it is made section by section.
 
@@ -126,11 +126,11 @@ Counting the coordinates, the critical set is the zero set of that one non-zero 
 
 ## The Central Parameter and the Eigenvalue Reduction
 
-**Theorem (central parameter, eigenvalue reduction).** Let $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, let $q_n$ be the iterates of the complex quadratic map $\zeta\mapsto\zeta^2+C$ starting from $\zeta_0=\zeta$, and let $p_n$ be as above. For every $\tilde Q$,
+**Theorem (central parameter, eigenvalue reduction).** Let $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, let $q_n$ be the iterates of the complex quadratic map $\omega\mapsto\omega^2+C$ starting from $\omega_0=\omega$, and let $p_n$ be as above. For every $\tilde Q$,
 
 $$ \mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))=p_n\bigl(\mathsf{M}_2(\tilde Q)\bigr)=q_n\text{ applied to the spectrum}, $$
 
-in the sense that the spectrum of $\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$. If $\mathsf{M}_2(\tilde Q)$ is diagonalisable, then $\tilde Q\in\mathcal K_{\tilde Q_5}$ if and only if both eigenvalues lie in the filled Julia set $K_C$ of $\zeta\mapsto\zeta^2+C$. If $\mathsf{M}_2(\tilde Q)$ has a repeated eigenvalue $\lambda$ and is not scalar, the extra condition is that the derivative sequence $(q_n'(\lambda))$ be bounded as well.
+in the sense that the spectrum of $\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$. If $\mathsf{M}_2(\tilde Q)$ is diagonalisable, then $\tilde Q\in\mathcal K_{\tilde Q_5}$ if and only if both eigenvalues lie in the filled Julia set $K_C$ of $\omega\mapsto\omega^2+C$. If $\mathsf{M}_2(\tilde Q)$ has a repeated eigenvalue $\lambda$ and is not scalar, the extra condition is that the derivative sequence $(q_n'(\lambda))$ be bounded as well.
 
 **Proof.** For a polynomial $p$ and a matrix $M$, the eigenvalues of $p(M)$ are the values of $p$ on the eigenvalues of $M$; this is the statement that the spectrum is transported by polynomial functional calculus, and it holds for every polynomial without any hypothesis on $M$. Boundedness: if $M=SJS^{-1}$ with $J$ the Jordan form, then $p_n(M)=Sp_n(J)S^{-1}$, and $p_n(J)$ is diagonal with entries $p_n(\lambda_j)$ when the eigenvalues are distinct, bounded exactly when each $(p_n(\lambda_j))$ is bounded, and is a Jordan block $\left(\begin{smallmatrix}p_n(\lambda)&p_n'(\lambda)\\0&p_n(\lambda)\end{smallmatrix}\right)$ for a repeated non-scalar eigenvalue, bounded exactly when both $(p_n(\lambda))$ and $(p_n'(\lambda))$ are. Norm equivalence finishes the boundedness claim.
 
@@ -142,7 +142,7 @@ $$
 
 In particular every square-zero element has $\rho(\mathsf{M}_2(\tilde Q))=0$ and so lies in $\mathcal K_0$, however large its Euclidean norm is.
 
-**Proof.** $q_n(\zeta)=\zeta^{2^n}$ and $q_n'(\zeta)=2^n\zeta^{2^n-1}$. For $|\lambda|<1$ the orbit tends to $0$; for $|\lambda|>1$ it escapes; for $|\lambda|=1$ the orbit stays on the unit circle and is bounded, while $|q_n'(\lambda)|=2^n$ is unbounded, so a non-scalar Jordan block at $|\lambda|=1$ makes the iterate unbounded and a diagonalisable one does not. A square-zero element is a non-zero nilpotent $2\times2$ matrix, of spectrum $\{0,0\}$ and not a Jordan block at a non-zero eigenvalue, so its iterate is $0$ from the first step and lies in $\mathcal K_0$.
+**Proof.** $q_n(\omega)=\omega^{2^n}$ and $q_n'(\omega)=2^n\omega^{2^n-1}$. For $|\lambda|<1$ the orbit tends to $0$; for $|\lambda|>1$ it escapes; for $|\lambda|=1$ the orbit stays on the unit circle and is bounded, while $|q_n'(\lambda)|=2^n$ is unbounded, so a non-scalar Jordan block at $|\lambda|=1$ makes the iterate unbounded and a diagonalisable one does not. A square-zero element is a non-zero nilpotent $2\times2$ matrix, of spectrum $\{0,0\}$ and not a Jordan block at a non-zero eigenvalue, so its iterate is $0$ from the first step and lies in $\mathcal K_0$.
 
 **Example (the square-zero element).** The element $\tilde Q=\vec e_x+i\vec e_y$ is a pure vector with $(\vec Q,\vec Q)=1+i^2=0$, hence $\tilde Q^2=0$; its orbit under $F_0$ is $\tilde Q,0,0,\dots$, so it lies in $\mathcal K_0$ at distance $\sqrt2$ from the origin. It is the smallest witness that the filled Julia set is not confined to a bounded ball and that no escape radius can be stated in the Euclidean norm: an element of norm arbitrarily large and square-zero maps to $0$ in one step.
 
@@ -166,7 +166,7 @@ The biquaternion quadratic family is $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde
 | $p_n$ | the polynomial with $\tilde Q_n=p_n(\tilde Q)$, $p_{n+1}=p_n^2+\tilde Q_5$ |
 | $\mathcal K_{\tilde Q_5}$ | the filled Julia set, the locus of bounded orbits |
 | $J_{\tilde Q_5}=\partial\mathcal K_{\tilde Q_5}$ | the Julia set |
-| $q_n$, $K_C$ | the complex iterates $\zeta\mapsto\zeta^2+C$ and the complex filled Julia set |
+| $q_n$, $K_C$ | the complex iterates $\omega\mapsto\omega^2+C$ and the complex filled Julia set |
 | $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the group of involutions |
 
 ## Further Reading

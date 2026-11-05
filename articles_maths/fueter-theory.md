@@ -51,13 +51,13 @@ are regular: for such a function $\partial/\partial Q_t z_\mu=\vec e_\mu$ and $\
 
 **Example (the coordinate functions).** No coordinate function and no constant multiple of $q=q_t+\vec q$ is regular: $\bar\partial q=\partial/\partial Q_tq+\sum_{\mu\in\{x,y,z\}}\vec e_\mu\,\partial/\partial Q_\mu\,q=1-\sum_{\mu\in\{x,y,z\}}\vec e_\mu^2=1-3=-2$. The contrast with the complex case, where $z$ is regular, is the first sign that the quaternionic theory is not a naive copy of the complex one; the regular linear functions are the Fueter variables $z_\mu$ and not the coordinates.
 
-**Example (regular functions from the complex subalgebra).** Let $u\in\mathbb{R}^3$ be a unit vector, write $q_u=\langle\vec q,u\rangle$ for the real coordinate along $u$, and put $\zeta=q_t+uq_u$. Then $u$ and $\zeta$ commute, $\partial/\partial Q_t\zeta=1$, and $\partial/\partial Q_\mu\zeta=uu_\mu$, so
+**Example (regular functions from the complex subalgebra).** Let $u\in\mathbb{R}^3$ be a unit vector, write $q_u=\langle\vec q,u\rangle$ for the real coordinate along $u$, and put $\varkappa^{\mathrm{crd}}=q_t+uq_u$. Then $u$ and $\varkappa^{\mathrm{crd}}$ commute, $\partial/\partial Q_t\varkappa^{\mathrm{crd}}=1$, and $\partial/\partial Q_\mu\varkappa^{\mathrm{crd}}=uu_\mu$, so
 
 $$
-\bar\partial\zeta = 1+\sum_{\mu\in\{x,y,z\}}\vec e_\mu\,uu_\mu = 1+u\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu = 1+u^2 = 0 ,
+\bar\partial\varkappa^{\mathrm{crd}} = 1+\sum_{\mu\in\{x,y,z\}}\vec e_\mu\,uu_\mu = 1+u\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu = 1+u^2 = 0 ,
 $$
 
-using $\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu=u$ and $u^2=-1$. Hence $\zeta$ is regular, and so is $\zeta^k$ for every $k$, since $\bar\partial\zeta^k=k\zeta^{k-1}\bar\partial\zeta=0$. The plane spanned by $1$ and $u$ therefore carries a copy of $\mathbb{C}$ whose holomorphic functions are regular. These are the **reduced** or **plane** regular functions, and they are the functions from which Fueter's theorem constructs all regular functions.
+using $\sum_{\mu\in\{x,y,z\}}u_\mu\vec e_\mu=u$ and $u^2=-1$. Hence $\varkappa^{\mathrm{crd}}$ is regular, and so is ${\varkappa^{\mathrm{crd}}}^k$ for every $k$, since $\bar\partial{\varkappa^{\mathrm{crd}}}^k=k{\varkappa^{\mathrm{crd}}}^{k-1}\bar\partial\varkappa^{\mathrm{crd}}=0$. The plane spanned by $1$ and $u$ therefore carries a copy of $\mathbb{C}$ whose holomorphic functions are regular. These are the **reduced** or **plane** regular functions, and they are the functions from which Fueter's theorem constructs all regular functions.
 
 **Theorem (regularity consequences).** Every left regular function is real-analytic and its four components are harmonic. Hence a regular function satisfies the mean value property
 
@@ -193,7 +193,7 @@ $$
 \phi_0 = \psi_r+\frac{2\psi}{r} , \qquad \psi_0 = -\phi_r ,
 $$
 
-the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\zeta=q_t+ir$ produces one through $F=\Delta f^{\mathrm{ax}}$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
+the reduced Cauchy–Riemann system of the axial theory. The solutions are exactly the axial regular functions, and Fueter's theorem says that every holomorphic function of the reduced variable $\varkappa^{\mathrm{crd}}=q_t+ir$ produces one through $F=\Delta f^{\mathrm{ax}}$; this is the precise sense in which complex analysis sits inside the quaternionic theory as its rotation-invariant part.
 
 *Proof.* Substituting $A=\phi$, $B=\psi/r$ into $\partial A/\partial q_t=3B+r\partial B/\partial r$ gives $\phi_0=3\psi/r+r(\psi_r/r-\psi/r^2)=\psi_r+2\psi/r$, and substituting into $\partial B/\partial q_t=-(\partial A/\partial r)/r$ gives $\psi_0/r-\psi/r^2\cdot0=-\phi_r/r$, that is $\psi_0=-\phi_r$. For the worked example $F=-12q_t-4\vec q$ one has $\phi=-12q_t$, $\psi=-4r$, and the pair reads $-12=-4-8$ and $0=0$.
 
@@ -248,7 +248,7 @@ The Fueter operator $\bar\partial=\partial/\partial Q_t+\vec e_x\partial/\partia
 | $f^{\mathrm{ax}}$ | Axial (radial) extension of $f$ |
 | $F=\Delta f^{\mathrm{ax}}$ | Fueter construction |
 | $A(q_t,r)+\vec qB(q_t,r)$ | Axial form of a regular function |
-| $r=|\vec q|$, $\zeta=q_t+ir$ | Radial coordinate and reduced complex variable |
+| $r=|\vec q|$, $\varkappa^{\mathrm{crd}}=q_t+ir$ | Radial coordinate and reduced complex variable |
 | $V_\lambda$ | Fueter polynomials; $\mathcal{M}_k$ homogeneous regular polynomials |
 | $\mathcal{C}$ | Cauchy transform |
 

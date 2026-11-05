@@ -37,39 +37,39 @@ $$
 $$
 whose class in the Witt group of $\mathbb{Z}[\mathbb{Z}/n]$ with the involution $g\mapsto g^{-1}$ is an invariant of the periodic knot datum. The invariant part $\Sigma_0$ gives the ordinary Seifert form of the quotient knot as the "trivial character" component of $V^{\mathbb{Z}/n}$.
 
-**Proof.** The linking form is invariant under the action because the action preserves the orientations and the linking numbers, and the sum over the group is the standard passage from an equivariant form to a form over the group ring. The decomposition of $\mathbb{Z}[\mathbb{Z}/n]\otimes\mathbb{C}$ into characters of $\mathbb{Z}/n$ decomposes the form into the twisted forms $V_{\zeta}$ of the next section, of which the component at the trivial character is the Seifert form of the quotient.
+**Proof.** The linking form is invariant under the action because the action preserves the orientations and the linking numbers, and the sum over the group is the standard passage from an equivariant form to a form over the group ring. The decomposition of $\mathbb{Z}[\mathbb{Z}/n]\otimes\mathbb{C}$ into characters of $\mathbb{Z}/n$ decomposes the form into the twisted forms $V_{\omega}$ of the next section, of which the component at the trivial character is the Seifert form of the quotient.
 
 **Remark (the equivariant Witt class and the surgery obstruction).** The class of the equivariant Seifert form in the Witt group of $\mathbb{Z}[\mathbb{Z}/n]$ is the algebraic home of the periodicity invariants: it is the analogue, for the periodic knot, of the Seifert form as a concordance invariant, and it is the algebraic input to the equivariant surgery of the knot complement. The Wall group $L_{2k+1}(\mathbb{Z}[\mathbb{Z}/n])$ and the equivariant surgery obstruction of *Involutions on Manifolds and Equivariant Surgery* are the framework; the algebraic computations are in the literature cited below.
 
 ## The Equivariant Alexander Module and Signature
 
-**Definition.** Let $\zeta$ be a complex $n$-th root of unity and let $\mathbb{C}_\zeta$ be the complex numbers with the action of $\mathbb{Z}/n$ by $\zeta$. The **twisted homology** of the knot complement is
+**Definition.** Let $\omega$ be a complex $n$-th root of unity and let $\mathbb{C}_\omega$ be the complex numbers with the action of $\mathbb{Z}/n$ by $\omega$. The **twisted homology** of the knot complement is
 $$
-H_*^{\zeta}(S^3\setminus K;\mathbb{C}) = H_*\bigl((S^3\setminus K)\times_{\mathbb{Z}/n}\mathbb{C}_\zeta\bigr) = H_*(S^3\setminus K;\mathbb{C}_\zeta) ,
+H_*^{\omega}(S^3\setminus K;\mathbb{C}) = H_*\bigl((S^3\setminus K)\times_{\mathbb{Z}/n}\mathbb{C}_\omega\bigr) = H_*(S^3\setminus K;\mathbb{C}_\omega) ,
 $$
-the homology with coefficients in the "twisted" module $\mathbb{C}_\zeta$, a module over $\mathbb{Z}[t^{\pm1}]$ through the action of the meridian.
+the homology with coefficients in the "twisted" module $\mathbb{C}_\omega$, a module over $\mathbb{Z}[t^{\pm1}]$ through the action of the meridian.
 
 **Proposition (decomposition of the equivariant Alexander module).** The equivariant Alexander module $H_1(S^3\setminus K;\mathbb{Z}[\mathbb{Z}/n][t^{\pm1}])$ decomposes, after tensoring with $\mathbb{C}$, into the sum of the twisted modules
 $$
-H_1(S^3\setminus K;\mathbb{C})_{\mathbb{Z}/n}\otimes\mathbb{C} = \bigoplus_{\zeta^n=1} H_1^{\zeta}(S^3\setminus K;\mathbb{C}),
+H_1(S^3\setminus K;\mathbb{C})_{\mathbb{Z}/n}\otimes\mathbb{C} = \bigoplus_{\omega^n=1} H_1^{\omega}(S^3\setminus K;\mathbb{C}),
 $$
-the component at the trivial character being the ordinary Alexander module of $K$ and the component at $\zeta\neq1$ being the twisted module. The twisted **equivariant Alexander polynomial** $\Delta_K(t,\zeta)$ generates the order ideal of the twisted module, and it satisfies the symmetry and the congruence of the periodic knot theory; at $\zeta = 1$ it is the Alexander polynomial of $K$, and the module of the quotient knot appears in the trivial-character and in the linking-form components.
+the component at the trivial character being the ordinary Alexander module of $K$ and the component at $\omega\neq1$ being the twisted module. The twisted **equivariant Alexander polynomial** $\Delta_K(t,\omega)$ generates the order ideal of the twisted module, and it satisfies the symmetry and the congruence of the periodic knot theory; at $\omega = 1$ it is the Alexander polynomial of $K$, and the module of the quotient knot appears in the trivial-character and in the linking-form components.
 
-**Proof sketch.** The group ring $\mathbb{Z}[\mathbb{Z}/n]$ becomes a sum of copies of $\mathbb{C}$ indexed by the characters after tensoring with $\mathbb{C}$; the module structure of the Alexander module over $\mathbb{Z}[\mathbb{Z}/n][t^{\pm1}]$ therefore decomposes into the twisted pieces, and the order ideals give the twisted polynomials. The detailed relation between $\Delta_K(t,\zeta)$ and the Alexander polynomial of the quotient knot $\bar K$ is the content of Murasugi's congruence; the statement and its applications are in the sources, and the present article records the module structure.
+**Proof sketch.** The group ring $\mathbb{Z}[\mathbb{Z}/n]$ becomes a sum of copies of $\mathbb{C}$ indexed by the characters after tensoring with $\mathbb{C}$; the module structure of the Alexander module over $\mathbb{Z}[\mathbb{Z}/n][t^{\pm1}]$ therefore decomposes into the twisted pieces, and the order ideals give the twisted polynomials. The detailed relation between $\Delta_K(t,\omega)$ and the Alexander polynomial of the quotient knot $\bar K$ is the content of Murasugi's congruence; the statement and its applications are in the sources, and the present article records the module structure.
 
-**Definition (the equivariant signature).** For each $n$-th root of unity $\zeta$ the **equivariant signature** $\sigma(K,\zeta)$ is the signature of the Hermitian form obtained from the equivariant Seifert form by the character $\zeta$,
+**Definition (the equivariant signature).** For each $n$-th root of unity $\omega$ the **equivariant signature** $\sigma(K,\omega)$ is the signature of the Hermitian form obtained from the equivariant Seifert form by the character $\omega$,
 $$
-\sigma(K,\zeta) = \operatorname{sign}\bigl((1-\zeta)^{-1}V_{\zeta} + ((1-\zeta)^{-1}V_{\zeta})^{*}\bigr),
+\sigma(K,\omega) = \operatorname{sign}\bigl((1-\omega)^{-1}V_{\omega} + ((1-\omega)^{-1}V_{\omega})^{*}\bigr),
 $$
-the twisted analogue of the Tristram–Levine signature; for $\zeta = -1$ it is the ordinary signature.
+the twisted analogue of the Tristram–Levine signature; for $\omega = -1$ it is the ordinary signature.
 
-**Theorem (the equivariant signature is an invariant of the periodic datum).** The numbers $\sigma(K,\zeta)$ depend only on the periodic knot datum $(K,n)$ and the character, are constant on the components of the complement of the unit circle of the $\zeta$-variable, and satisfy the equivariant sum formulas
+**Theorem (the equivariant signature is an invariant of the periodic datum).** The numbers $\sigma(K,\omega)$ depend only on the periodic knot datum $(K,n)$ and the character, are constant on the components of the complement of the unit circle of the $\omega$-variable, and satisfy the equivariant sum formulas
 $$
-\boxed{\;\sum_{\zeta^n = 1}\sigma(K,\zeta) = \sigma(K,\bar{\ }) + \text{(contributions of the axis)}\;},
+\boxed{\;\sum_{\omega^n = 1}\sigma(K,\omega) = \sigma(K,\bar{\ }) + \text{(contributions of the axis)}\;},
 $$
 so that the periodicity imposes congruences on the signatures of $K$ and of the quotient $\bar K$; these are the classical "periodic" signature conditions.
 
-**Proof sketch.** The Hermitian form is the twisted symmetrisation of the Seifert form; its signature is constant as long as $\zeta$ stays in a component of $\mathbb{C}\setminus(\text{roots of the Alexander polynomial})$, by the continuity of the eigenvalues, and the sum formula is the decomposition of the equivariant form into characters. The precise formulas for the axis contributions and the resulting congruences are in the literature.
+**Proof sketch.** The Hermitian form is the twisted symmetrisation of the Seifert form; its signature is constant as long as $\omega$ stays in a component of $\mathbb{C}\setminus(\text{roots of the Alexander polynomial})$, by the continuity of the eigenvalues, and the sum formula is the decomposition of the equivariant form into characters. The precise formulas for the axis contributions and the resulting congruences are in the literature.
 
 ## Classical Periodic Invariants
 
@@ -99,7 +99,7 @@ where $g$ is the Seifert genus, and more generally the equivariant minimal genus
 
 ## Summary
 
-A knot is $n$-periodic when a cyclic group of order $n$ acts on the three-sphere preserving it with an axis disjoint from the knot; the quotient is a knot $\bar K$ in the quotient sphere, and the threefold of the knot, its quotient and the axis is the periodic datum. Smith theory forces the fixed set of a prime-order action on $S^3$ to be a circle for odd periods, so the periodic datum exists for every period, and the branched covers of $K$ are cyclic covers of those of $\bar K$. The equivariant invariants are assembled from an equivariant Seifert surface: the equivariant Seifert form takes values in the group ring $\mathbb{Z}[\mathbb{Z}/n]$ and its Witt class is the algebraic invariant of the periodic datum, its character decomposition gives the twisted Alexander modules with their twisted polynomials and the twisted signatures $\sigma(K,\zeta)$, and the trivial character recovers the quotient knot. The classical consequences are Murasugi's congruence for the Alexander polynomial, the equivariant signature congruences with their axis contributions, and the equivariant genus inequality $g(K)\geq n\,g(\bar K)$, sharp for the torus knots; the conditions are necessary and the finer detection is by the equivariant Seifert form and the Floer-theoretic refinements. The torus knots and the trefoil are the standard examples.
+A knot is $n$-periodic when a cyclic group of order $n$ acts on the three-sphere preserving it with an axis disjoint from the knot; the quotient is a knot $\bar K$ in the quotient sphere, and the threefold of the knot, its quotient and the axis is the periodic datum. Smith theory forces the fixed set of a prime-order action on $S^3$ to be a circle for odd periods, so the periodic datum exists for every period, and the branched covers of $K$ are cyclic covers of those of $\bar K$. The equivariant invariants are assembled from an equivariant Seifert surface: the equivariant Seifert form takes values in the group ring $\mathbb{Z}[\mathbb{Z}/n]$ and its Witt class is the algebraic invariant of the periodic datum, its character decomposition gives the twisted Alexander modules with their twisted polynomials and the twisted signatures $\sigma(K,\omega)$, and the trivial character recovers the quotient knot. The classical consequences are Murasugi's congruence for the Alexander polynomial, the equivariant signature congruences with their axis contributions, and the equivariant genus inequality $g(K)\geq n\,g(\bar K)$, sharp for the torus knots; the conditions are necessary and the finer detection is by the equivariant Seifert form and the Floer-theoretic refinements. The torus knots and the trefoil are the standard examples.
 
 ## Summary of Notation
 
@@ -110,9 +110,9 @@ A knot is $n$-periodic when a cyclic group of order $n$ acts on the three-sphere
 | $K$, $\bar K$ | the periodic knot and its quotient knot |
 | $\Sigma$, $\Sigma_0 = \Sigma^{\mathbb{Z}/n}$ | an equivariant Seifert surface and its invariant part |
 | $V^{\mathbb{Z}/n}(x,y) = \sum_g V(x,gy)g \in \mathbb{Z}[\mathbb{Z}/n]$ | the equivariant Seifert form |
-| $\zeta$, $\Delta_K(t,\zeta)$ | an $n$-th root of unity and the twisted Alexander polynomial |
-| $H_1^{\zeta}(S^3\setminus K;\mathbb{C})$ | the twisted homology, a summand of the equivariant Alexander module |
-| $\sigma(K,\zeta)$ | the equivariant signature; $\sigma(K,-1)$ is the ordinary signature |
+| $\omega$, $\Delta_K(t,\omega)$ | an $n$-th root of unity and the twisted Alexander polynomial |
+| $H_1^{\omega}(S^3\setminus K;\mathbb{C})$ | the twisted homology, a summand of the equivariant Alexander module |
+| $\sigma(K,\omega)$ | the equivariant signature; $\sigma(K,-1)$ is the ordinary signature |
 | $g(K)\geq n\,g(\bar K)$ | the equivariant genus inequality |
 | $\Sigma_2(S^3,K)$, $\Sigma_n(S^3,K)$ | the double and the $n$-fold cyclic branched covers |
 | $T(n,m)$ | the torus knot, $n$- and $m$-periodic with unknot quotient |

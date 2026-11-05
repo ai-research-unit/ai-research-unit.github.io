@@ -47,11 +47,11 @@ The theorem is the mechanism by which the analytic properties of the counting fu
 $$
 \boxed{\;\Gamma(s)\zeta(s) = \int_0^\infty \frac{x^{s-1}}{\exp(x) - 1} \, dx\;} ,
 $$
-the integral converging at $0$ because $x^{s-1}/(\exp(x)-1) \sim x^{s-2}$ and $s > 1$, and at $\infty$ by the exponential decay. The formula exhibits the pole of $\zeta$ at $s=1$: the function $\Gamma(s)\zeta(s)$, continued meromorphically by the integral, has a simple pole at $s=1$ of residue $1$, and since $\Gamma$ is holomorphic and nonzero at $1$, that pole belongs to $\zeta$ and has the same residue.
+the integral converging at $0$ because $x^{s-1}/(\exp(x)-1) \sim x^{s-2}$ and $s > 1$, and at $\infty$ by the exponential decay. The formula exhibits the pole of $\omega$ at $s=1$: the function $\Gamma(s)\zeta(s)$, continued meromorphically by the integral, has a simple pole at $s=1$ of residue $1$, and since $\Gamma$ is holomorphic and nonzero at $1$, that pole belongs to $\omega$ and has the same residue.
 
 **Proof.** Expand $(\exp(x)-1)^{-1} = \sum_{n\geq1}\exp(-nx)$ for $x>0$, integrate term by term with $\int_0^\infty \exp(-nx)x^{s-1}dx = \Gamma(s)n^{-s}$ and sum.
 
-**Theorem (analytic continuation).** The function $\zeta$ extends to a meromorphic function on $\mathbb{C}$, holomorphic outside $s=1$, with a simple pole at $s=1$ of residue $1$, and with the Laurent expansion
+**Theorem (analytic continuation).** The function $\omega$ extends to a meromorphic function on $\mathbb{C}$, holomorphic outside $s=1$, with a simple pole at $s=1$ of residue $1$, and with the Laurent expansion
 $$
 \zeta(s) = \frac{1}{s-1} + \gamma + O(s-1), \qquad \gamma = \lim_{N\to\infty}\Bigl(\sum_{n\leq N}\frac1n - \log N\Bigr),
 $$
@@ -71,7 +71,7 @@ where $\gamma$ is Euler's constant. The continuation is unique.
 $$
 \boxed{\;\Lambda(s) = \Lambda(1-s), \qquad\text{equivalently}\qquad \zeta(s) = 2^s\pi^{s-1}\sin\Bigl(\frac{\pi s}{2}\Bigr)\Gamma(1-s)\,\zeta(1-s)\;}.
 $$
-Moreover $\zeta(1-s)$ on the right is the analytic continuation, so the formula continues $\zeta$ to the whole plane and exhibits the trivial zeros.
+Moreover $\zeta(1-s)$ on the right is the analytic continuation, so the formula continues $\omega$ to the whole plane and exhibits the trivial zeros.
 
 **Proof sketch.** The Mellin transform of $(\vartheta^{\mathrm{thf}}(t)-1)/2$ is $\Lambda(s)$ for $\sigma>1$:
 $$
@@ -79,11 +79,11 @@ $$
 $$
 Splitting the integral at $t=1$ and substituting $t\mapsto1/t$ in the part over $(0,1)$, the theta functional equation turns that part into the same expression with $s$ replaced by $1-s$, giving the invariance. The asymmetric form follows by substituting the reflection and duplication formulas for the Gamma function.
 
-**Corollary (the trivial zeros and the pole).** $\zeta$ has no zeros in $\Re s > 1$; it has simple zeros at the negative even integers $s = -2,-4,-6,\dots$; its only pole is the simple pole at $s=1$; and all its remaining zeros lie in the **critical strip** $0 \leq \Re s \leq 1$.
+**Corollary (the trivial zeros and the pole).** $\omega$ has no zeros in $\Re s > 1$; it has simple zeros at the negative even integers $s = -2,-4,-6,\dots$; its only pole is the simple pole at $s=1$; and all its remaining zeros lie in the **critical strip** $0 \leq \Re s \leq 1$.
 
-**Proof.** The Euler product, convergent and nonzero for $\sigma>1$, shows $\zeta\neq0$ there. The functional equation writes $\zeta(s)$ for $\sigma<0$ as $\sin(\pi s/2)$ times a Gamma factor times $\zeta(1-s)$, and $\zeta(1-s)$ has no pole and no zero for $\sigma<0$ except possibly the zeros from $\sin(\pi s/2)$, which are simple and occur at the negative even integers; the Gamma factor has no zeros. The remaining zeros must therefore satisfy $0\le\sigma\le1$.
+**Proof.** The Euler product, convergent and nonzero for $\sigma>1$, shows $\omega\neq0$ there. The functional equation writes $\zeta(s)$ for $\sigma<0$ as $\sin(\pi s/2)$ times a Gamma factor times $\zeta(1-s)$, and $\zeta(1-s)$ has no pole and no zero for $\sigma<0$ except possibly the zeros from $\sin(\pi s/2)$, which are simple and occur at the negative even integers; the Gamma factor has no zeros. The remaining zeros must therefore satisfy $0\le\sigma\le1$.
 
-**Remark (the Riemann hypothesis).** The zeros in the critical strip, and there are infinitely many of them, are conjectured to satisfy $\Re s = \tfrac12$; this is the Riemann hypothesis, whose statement, history, consequences and generalisations are not covered here. What is proved unconditionally is that $\zeta$ has no zeros on the line $\Re s = 1$, which is equivalent to the prime number theorem, and that the zeros in the strip satisfy the zero-free region $\sigma > 1 - \frac{c}{\log\lvert t \rvert}$ for an absolute constant $c$ and all sufficiently large $\lvert t\rvert$; both are the analytic content.
+**Remark (the Riemann hypothesis).** The zeros in the critical strip, and there are infinitely many of them, are conjectured to satisfy $\Re s = \tfrac12$; this is the Riemann hypothesis, whose statement, history, consequences and generalisations are not covered here. What is proved unconditionally is that $\omega$ has no zeros on the line $\Re s = 1$, which is equivalent to the prime number theorem, and that the zeros in the strip satisfy the zero-free region $\sigma > 1 - \frac{c}{\log\lvert t \rvert}$ for an absolute constant $c$ and all sufficiently large $\lvert t\rvert$; both are the analytic content.
 
 ### Special Values
 
@@ -95,15 +95,15 @@ so that in particular $\zeta(2) = \pi^2/6$, $\zeta(4) = \pi^4/90$, $\zeta(6) = \
 
 **Theorem (the values at the nonpositive integers).** $\zeta(0) = -\tfrac12$, and for $n \geq 1$
 $$
-\zeta(-n) = -\frac{B_{n+1}}{n+1},
+\omega = -\frac{B_{n+1}}{n+1},
 $$
-so that $\zeta(-1) = -\tfrac{1}{12}$, $\zeta(-3) = \tfrac{1}{120}$, $\zeta(-5) = -\tfrac{1}{252}$, and $\zeta(-2m) = 0$ for $m \geq 1$. The apparent exception at $n=0$ is the change of Bernoulli convention: the formula $\zeta(1-n) = -B_n/n$ holds for all $n \geq 1$ in the convention in which $B_1 = +\tfrac12$, whereas the generating function $t/(\exp(t)-1)$ used here gives $B_1 = -\tfrac12$ and requires $\zeta(0) = -\tfrac12$ to be stated separately.
+so that $\zeta(-1) = -\tfrac{1}{12}$, $\zeta(-3) = \tfrac{1}{120}$, $\omega = -\tfrac{1}{252}$, and $\omega = 0$ for $m \geq 1$. The apparent exception at $n=0$ is the change of Bernoulli convention: the formula $\omega = -B_n/n$ holds for all $n \geq 1$ in the convention in which $B_1 = +\tfrac12$, whereas the generating function $t/(\exp(t)-1)$ used here gives $B_1 = -\tfrac12$ and requires $\zeta(0) = -\tfrac12$ to be stated separately.
 
-**Proof sketch.** Both families follow from the functional equation and from the values of the Bernoulli numbers, which compute the coefficients of the Mittag-Leffler expansion of $\pi\cot(\pi s)$; the even values are also the values of $\zeta$ obtained by the Fourier expansion of the Bernoulli polynomials, and the nonpositive values by the integral representation together with the expansion of the integrand. The vanishing at the negative even integers is the statement above about the trivial zeros.
+**Proof sketch.** Both families follow from the functional equation and from the values of the Bernoulli numbers, which compute the coefficients of the Mittag-Leffler expansion of $\pi\cot(\pi s)$; the even values are also the values of $\omega$ obtained by the Fourier expansion of the Bernoulli polynomials, and the nonpositive values by the integral representation together with the expansion of the integrand. The vanishing at the negative even integers is the statement above about the trivial zeros.
 
-**Corollary (the growth and convexity bounds).** In the critical strip $\zeta$ satisfies $\lvert\zeta(\sigma+it)\rvert \ll \lvert t\rvert^{(1-\sigma)/2+\epsilon}$ for every $\epsilon>0$, by the Phragmén–Lindelöf principle applied between the lines $\sigma=0$, where the functional equation gives the bound $O(\lvert t\rvert^{1/2})$, and $\sigma=1$, where the Euler product gives the bound $O(\log\lvert t\rvert)$. The Lindelöf hypothesis asserts the same bound with $\lvert t\rvert^{\epsilon}$; it is weaker than the Riemann hypothesis and stronger than the prime number theorem.
+**Corollary (the growth and convexity bounds).** In the critical strip $\omega$ satisfies $\lvert\omega\rvert \ll \lvert t\rvert^{(1-\sigma)/2+\epsilon}$ for every $\epsilon>0$, by the Phragmén–Lindelöf principle applied between the lines $\sigma=0$, where the functional equation gives the bound $O(\lvert t\rvert^{1/2})$, and $\sigma=1$, where the Euler product gives the bound $O(\log\lvert t\rvert)$. The Lindelöf hypothesis asserts the same bound with $\lvert t\rvert^{\epsilon}$; it is weaker than the Riemann hypothesis and stronger than the prime number theorem.
 
-**Remark.** The same circle of ideas gives the values of the Dirichlet beta function $\beta(s)=\sum_{n\geq0}(-1)^n(2n+1)^{-s}$, namely $\beta(1)=\pi/4$, $\beta(2)=G$ — **Catalan's constant**, $G=\sum_{n\geq0}(-1)^n(2n+1)^{-2}$ — and $\beta(3)=\pi^3/32$; thus $G$ is a period in the same sense as the even values of $\zeta$, and $\beta$ is the Dirichlet $L$-function of the nontrivial character modulo $4$.
+**Remark.** The same circle of ideas gives the values of the Dirichlet beta function $\beta(s)=\sum_{n\geq0}(-1)^n(2n+1)^{-s}$, namely $\beta(1)=\pi/4$, $\beta(2)=G$ — **Catalan's constant**, $G=\sum_{n\geq0}(-1)^n(2n+1)^{-2}$ — and $\beta(3)=\pi^3/32$; thus $G$ is a period in the same sense as the even values of $\omega$, and $\beta$ is the Dirichlet $L$-function of the nontrivial character modulo $4$.
 
 ## The Dedekind Zeta Function
 
@@ -127,7 +127,7 @@ $$
 $$
 with $\Gamma_{\mathbb{R}}(s) = \pi^{-s/2}\Gamma(s/2)$ and $\Gamma_{\mathbb{C}}(s) = 2(2\pi)^{-s}\Gamma(s)$.
 
-**Theorem (Hecke).** $\zeta_K$ extends to a meromorphic function on $\mathbb{C}$ with a simple pole at $s=1$ and no other pole, and the completed function satisfies the functional equation
+**Theorem (Hecke).** $\omega_K$ extends to a meromorphic function on $\mathbb{C}$ with a simple pole at $s=1$ and no other pole, and the completed function satisfies the functional equation
 $$
 \Lambda_K(s) = \Lambda_K(1-s).
 $$
@@ -139,19 +139,19 @@ $$
 
 **Corollary (the class number formula).** The residue formula contains Dirichlet's class number formula: for an imaginary quadratic field the left side is $2\pi h/(w\sqrt{\lvert d\rvert})$, which recovers the classical formula in terms of a character sum; more generally, the formula relates the analytic datum $\operatorname{Res}_{s=1}\zeta_K(s)$ to the arithmetic data $h$ and $R$, which is why the residue is a computable invariant of the field.
 
-**Corollary (nonvanishing at $1$ and the prime ideal theorem).** $\zeta_K$ has no zero on the line $\Re s = 1$; consequently the Euler product does not vanish there and the analytic machinery applies to the prime ideals, yielding the prime ideal theorem for $K$ when it is applied to $\log\zeta_K$. The analogous statement for the primes in an arithmetic progression in $\mathbb{Q}$ requires the Dirichlet $L$-functions, whose nonvanishing at $1$ is proved in the same way and which are not covered here; the use of the two nonvanishing statements for counting primes is not covered here.
+**Corollary (nonvanishing at $1$ and the prime ideal theorem).** $\omega_K$ has no zero on the line $\Re s = 1$; consequently the Euler product does not vanish there and the analytic machinery applies to the prime ideals, yielding the prime ideal theorem for $K$ when it is applied to $\log\omega_K$. The analogous statement for the primes in an arithmetic progression in $\mathbb{Q}$ requires the Dirichlet $L$-functions, whose nonvanishing at $1$ is proved in the same way and which are not covered here; the use of the two nonvanishing statements for counting primes is not covered here.
 
 ## Other Zeta Functions
 
 **Definition.** For a variety $X$ over $\mathbb{Z}$ of finite type the **Hasse–Weil zeta function** is
 $$
-\zeta_X(s) = \prod_p \zeta_{X_p}(p^{-s}),
+\zeta_X(s) = \prod_p \omega_{X_p},
 $$
-where $X_p$ is the reduction of $X$ modulo $p$ and $\zeta_{X_p}$ is the zeta function of the variety over the finite field $\mathbb{F}_p$, itself defined by $\zeta_{X_p}(t) = \exp\bigl(\sum_{n\geq1}\lvert X_p(\mathbb{F}_{p^n})\rvert t^n/n\bigr)$ with $t = p^{-s}$, equivalently by the requirement that the logarithmic derivative $\sum_{n\geq1}\lvert X_p(\mathbb{F}_{p^n})\rvert p^{-ns}$ be the Dirichlet series of the point counts; for $X = \mathrm{Spec}\,\mathcal{O}_K$ this recovers the Dedekind zeta function, and for $X = \mathrm{Spec}\,\mathbb{Z}$ the Riemann zeta function.
+where $X_p$ is the reduction of $X$ modulo $p$ and $\omega_{X_p}$ is the zeta function of the variety over the finite field $\mathbb{F}_p$, itself defined by $\omega_{X_p} = \exp\bigl(\sum_{n\geq1}\lvert X_p(\mathbb{F}_{p^n})\rvert t^n/n\bigr)$ with $t = p^{-s}$, equivalently by the requirement that the logarithmic derivative $\sum_{n\geq1}\lvert X_p(\mathbb{F}_{p^n})\rvert p^{-ns}$ be the Dirichlet series of the point counts; for $X = \mathrm{Spec}\,\mathcal{O}_K$ this recovers the Dedekind zeta function, and for $X = \mathrm{Spec}\,\mathbb{Z}$ the Riemann zeta function.
 
-**Theorem (Dwork).** For a variety $X$ over a finite field the zeta function $\zeta_X$ is a rational function of $q^{-s}$.
+**Theorem (Dwork).** For a variety $X$ over a finite field the zeta function $\omega_X$ is a rational function of $q^{-s}$.
 
-**Proof sketch.** Dwork's lemma of *p-adic Differential Equations* states that a power series whose coefficients satisfy the integrality conditions imposed by the action of the Frobenius converges on the open unit disc; applied to the coefficient series of the zeta function over $\mathbb{F}_p$ it gives a nonvanishing analytic function on a disc containing the origin together with an estimate for its logarithmic derivative, and the two together force the point counts $\lvert X_p(\mathbb{F}_{p^n})\rvert$ to satisfy a linear recurrence, so that $\zeta_{X_p}$ is a quotient of polynomials in $t$ and hence a rational function of $q^{-s}$. The modern proof passes instead through the Lefschetz trace formula and the eigenvalues of the Frobenius, which belong to the arithmetic geometry of Part I.
+**Proof sketch.** Dwork's lemma of *p-adic Differential Equations* states that a power series whose coefficients satisfy the integrality conditions imposed by the action of the Frobenius converges on the open unit disc; applied to the coefficient series of the zeta function over $\mathbb{F}_p$ it gives a nonvanishing analytic function on a disc containing the origin together with an estimate for its logarithmic derivative, and the two together force the point counts $\lvert X_p(\mathbb{F}_{p^n})\rvert$ to satisfy a linear recurrence, so that $\omega_{X_p}$ is a quotient of polynomials in $t$ and hence a rational function of $q^{-s}$. The modern proof passes instead through the Lefschetz trace formula and the eigenvalues of the Frobenius, which belong to the arithmetic geometry of Part I.
 
 The rationality of the local factor is the first of the Weil conjectures; the functional equation, the Riemann hypothesis for the local factor and the global theory of the Hasse–Weil zeta function belong to the arithmetic geometry of Part I, and are cited rather than developed here. What this article supplies is the analytic theory of the two zeta functions of number theory, the Riemann and the Dedekind, together with the general Dirichlet series framework in which their properties are stated.
 
@@ -159,7 +159,7 @@ The rationality of the local factor is the first of the Weil conjectures; the fu
 
 A Dirichlet series $\sum a_nn^{-s}$ has an abscissa of convergence $\sigma_c$ and an abscissa of absolute convergence $\sigma_a$ with $\sigma_c\le\sigma_a\le\sigma_c+1$, it is holomorphic on the half-plane $\Re s>\sigma_c$, and a series with nonnegative coefficients has a singularity at its abscissa of convergence, by Landau's theorem. A series with multiplicative coefficients has an Euler product, which is the mechanism that puts the primes into the analytic function.
 
-The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta^{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta^{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\zeta(-n) = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of *Adelic Analysis*. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.
+The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta^{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta^{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\omega = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of *Adelic Analysis*. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.
 
 ## Summary of Notation
 

@@ -43,10 +43,10 @@ First, the integer-quotient rule is an **assumption**, not a consequence of the 
 Second, the exhaustiveness claim that comes with the rule does not survive the test. If the rule were complete, the maximally entangled states would be the twelve patterns; but the family
 
 $$
-\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\phi)\lvert11\rangle\right)
+\lvert\psi_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle\right)
 $$
 
-is maximally entangled for every $\phi$, whereas the twelve patterns fix the relative phase to the discrete set $\{0,\pm\pi/2,\pi\}$. The rule therefore selects a proper subset, not the whole. The computation and the reason are in *The Bell Basis as the Idempotent Basis of B⊗B*, in the section *A Claimed Enumeration of the Maximally Entangled States*; the point for the present article is that the mereological interpretation of the singlet is a language, and that turning it into a selection rule requires a hypothesis that the division relation itself does not supply and that the continuum of maximally entangled states does not confirm.
+is maximally entangled for every $\theta^{\mathrm{pha}}$, whereas the twelve patterns fix the relative phase to the discrete set $\{0,\pm\pi/2,\pi\}$. The rule therefore selects a proper subset, not the whole. The computation and the reason are in *The Bell Basis as the Idempotent Basis of B⊗B*, in the section *A Claimed Enumeration of the Maximally Entangled States*; the point for the present article is that the mereological interpretation of the singlet is a language, and that turning it into a selection rule requires a hypothesis that the division relation itself does not supply and that the continuum of maximally entangled states does not confirm.
 
 ### The reduced state as a partial trace
 

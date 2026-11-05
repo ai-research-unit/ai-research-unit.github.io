@@ -201,7 +201,7 @@ $$
 \Box\tilde{\Phi} = \frac{m^2 c^2}{\hbar^2}\tilde{\Phi},
 $$
 
-which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\phi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\chi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 

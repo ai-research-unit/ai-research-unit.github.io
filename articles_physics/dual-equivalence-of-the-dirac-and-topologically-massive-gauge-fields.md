@@ -18,7 +18,7 @@ Every contraction carries the plain weight, $V\cdot W=\sum_\mu\epsilon_\mu V_\mu
 $$
 p^+_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}+j_\mu j_\nu,\qquad p^-_{\mu\nu}=-j_\mu j_\nu,\qquad p^+_{\mu\nu}+p^-_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu},
 $$
-with no sum on $\mu$, the two projecting onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdot j=-1$. Any four-vector splits as $G_\mu=G^\mu-j_\mu\phi$, with three-dimensional part $G^\mu=p^+_{\mu\nu}G_\nu$ and complex scalar $\phi=G_\mu j^\mu$. The superscript on $G^\mu$ is a **label for the transverse part**, not a raised index: every index in this article is a lower index, and a sum over it carries its $\epsilon$.
+with no sum on $\mu$, the two projecting onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdot j=-1$. Any four-vector splits as $G_\mu=G^\mu-j_\mu\chi$, with three-dimensional part $G^\mu=p^+_{\mu\nu}G_\nu$ and complex scalar $\chi=G_\mu j^\mu$. The superscript on $G^\mu$ is a **label for the transverse part**, not a raised index: every index in this article is a lower index, and a sum over it carries its $\epsilon$.
 
 **The generators.** Every operator below is a map of the algebra to itself, and each is written as an action with its side in the display. The generator of index $\mu$ is the map
 $$
@@ -66,7 +66,7 @@ $$
 $$
 because $t'$ is symmetric under the exchange of the first and third slots while $\varepsilon$ is antisymmetric. The two readings must not be mixed, and the exchange isolates precisely the antisymmetric part of the structure constants — the part that survives against the field strength in §*Why the Mass Is Topological*. The Dirac Lagrangian quoted below keeps the source's own order, $\check c_{\nu\mu\lambda}$ with the starred derivative in the first slot, which is also the order of the companion's Lagrangian.
 
-$H_\mu$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_\mu$ in the axial gauge $B_\mu j^\mu=0$, and the complex scalar $\phi$ is a spectator carried through both reductions unchanged.
+$H_\mu$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_\mu$ in the axial gauge $B_\mu j^\mu=0$, and the complex scalar $\chi$ is a spectator carried through both reductions unchanged.
 
 $A_\mu$ is the electromagnetic potential, and it enters only through the covariant derivative
 $$
@@ -116,26 +116,26 @@ so the mass term has one derivative and one power of $m$ — the hallmark of a t
 
 ### The Three-Dimensional Parent Action and the Topological Mass
 
-The three-dimensional version separates the scalar first. The duality is taken between the pairs $(G^\mu;\phi)$ and $(B^\mu;\phi)$ with the *same* $\phi$, and the parent action is
+The three-dimensional version separates the scalar first. The duality is taken between the pairs $(G^\mu;\chi)$ and $(B^\mu;\chi)$ with the *same* $\chi$, and the parent action is
 $$
-S_{G\phi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\mu\lambda}F_{\mu\lambda}+\tfrac{i}{2}\sum_\mu\epsilon_\mu\Bigl(G_\mu\frac{\partial\phi^*}{\partial x_\mu}-\phi^*\frac{\partial G_\mu}{\partial x_\mu}\Bigr)+\tfrac{m-a}{2}G\cdot G+\tfrac{i}{2}\phi^*j\cdot\tilde\nabla^{-a}\phi+\text{c.c.}+\partial Z_1^\mu/\partial x_\mu\Bigr].
+S_{G\chi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\mu\lambda}F_{\mu\lambda}+\tfrac{i}{2}\sum_\mu\epsilon_\mu\Bigl(G_\mu\frac{\partial\chi^*}{\partial x_\mu}-\chi^*\frac{\partial G_\mu}{\partial x_\mu}\Bigr)+\tfrac{m-a}{2}G\cdot G+\tfrac{i}{2}\chi^*j\cdot\tilde\nabla^{-a}\chi+\text{c.c.}+\partial Z_1^\mu/\partial x_\mu\Bigr].
 $$
 Varying $B_\mu$ gives
 $$
 \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\bigl(\tilde\nabla^{a}_\nu G_\lambda-\tilde\nabla^{a}_\lambda G_\nu\bigr)=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}F_{\nu\lambda},
 $$
-and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G^\mu-j_\mu\phi$. Varying $G_\nu$ gives
+and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G^\mu-j_\mu\chi$. Varying $G_\nu$ gives
 $$
-(m-a)G^\mu=\tfrac{i}{2}F_{\lambda\nu}\check c^{*\nu\lambda\mu}-i\,p^{\mu\nu}_+\partial\phi^*/\partial x_\nu ,
+(m-a)G^\mu=\tfrac{i}{2}F_{\lambda\nu}\check c^{*\nu\lambda\mu}-i\,p^{\mu\nu}_+\partial\chi^*/\partial x_\nu ,
 $$
 and substituting this back leaves
 $$
 \begin{aligned}
-\mathcal{L}_{\phi B}=\;&\tfrac{1}{8(m-a)}\sum_{\nu,\mu,\lambda,\rho,\delta}\epsilon_\nu\epsilon_\mu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}F_{\mu\lambda}\bigr)\bigl(\check c_{\nu\rho\delta}F_{\rho\delta}\bigr)+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda B^*_\nu\,i\check c_{\nu\mu\lambda}F_{\mu\lambda}\\
-&-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial\phi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_2^\mu/\partial x_\mu .
+\mathcal{L}_{\chi B}=\;&\tfrac{1}{8(m-a)}\sum_{\nu,\mu,\lambda,\rho,\delta}\epsilon_\nu\epsilon_\mu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}F_{\mu\lambda}\bigr)\bigl(\check c_{\nu\rho\delta}F_{\rho\delta}\bigr)+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda B^*_\nu\,i\check c_{\nu\mu\lambda}F_{\mu\lambda}\\
+&-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial\chi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_2^\mu/\partial x_\mu .
 \end{aligned}
 $$
-The abbreviation *scalar sector* stands for the source's two terms in $\phi$ alone, $\tfrac{1}{2(m-a)}\partial\phi/\partial x_\mu\,p^{\mu\nu}_+\partial\phi^*/\partial x_\nu$ and $\tfrac i2\phi^*j^\mu\tilde\nabla^{-a}_\mu\phi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $B_\nu j^\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $j^\nu\partial B_\mu/\partial x_\nu=j^\nu\partial\phi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\phi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
+The abbreviation *scalar sector* stands for the source's two terms in $\chi$ alone, $\tfrac{1}{2(m-a)}\partial\chi/\partial x_\mu\,p^{\mu\nu}_+\partial\chi^*/\partial x_\nu$ and $\tfrac i2\chi^*j^\mu\tilde\nabla^{-a}_\mu\chi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $B_\nu j^\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $j^\nu\partial B_\mu/\partial x_\nu=j^\nu\partial\chi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\chi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
 $$
 \boxed{\;\mathcal{L}_G=-\tfrac{1}{4m}\sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda F_{\mu\lambda}F_{\mu\lambda}+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,\check\varepsilon_{\nu\mu\lambda}\,B^*_\nu F_{\mu\lambda}+\text{(scalar sector)}+\text{c.c.}\;}
 $$
@@ -151,7 +151,7 @@ and the scalar obeys its own massive equation, decoupled from $B$.
 
 The overall normalisation is the source's: the kinetic term carries $1/m$, so the mass appears in the denominator of the Maxwell term and in the numerator of the Chern–Simons term. Rescaling $F$ or $B$ moves the $m$ to one side or the other, and the invariant statement is the ratio.
 
-**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the anticommutation relations of the four generators, the cancellation of the two factors of $i$ in $\Gamma\,iC_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\phi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $t'$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's weights, so it is carried as the source's own.
+**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the anticommutation relations of the four generators, the cancellation of the two factors of $i$ in $\Gamma\,iC_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\chi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $t'$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's weights, so it is carried as the source's own.
 
 ## Why the Mass Is Topological
 
@@ -171,7 +171,7 @@ $$
 $$
 so the only component that survives is the one along $j$, and the condition is the wave equation.
 
-**There is no Bianchi identity.** The structure constants $\check c$ contain the antisymmetric (Lie) and the symmetric (Jordan) parts, so the two-form built from the potential is not the curl of anything with an automatic closure: the object the duality exchanges is the self-dual tensor of §*The Self-Dual Field Strength*, not an antisymmetric field strength. The source's reason for the construction is stated as the definition of a potential without a Bianchi identity: of the Maxwell-like pair that the Dirac current satisfies, the second plays the role of a Bianchi identity only for one choice of the two phase parameters $\phi_1,\phi_2$ the source introduces, namely $\phi_1+\phi_2=0$, and it is precisely that choice which the dual potential is meant to avoid.
+**There is no Bianchi identity.** The structure constants $\check c$ contain the antisymmetric (Lie) and the symmetric (Jordan) parts, so the two-form built from the potential is not the curl of anything with an automatic closure: the object the duality exchanges is the self-dual tensor of §*The Self-Dual Field Strength*, not an antisymmetric field strength. The source's reason for the construction is stated as the definition of a potential without a Bianchi identity: of the Maxwell-like pair that the Dirac current satisfies, the second plays the role of a Bianchi identity only for one choice of the two phase parameters $\chi_1,\chi_2$ the source introduces, namely $\chi_1+\chi_2=0$, and it is precisely that choice which the dual potential is meant to avoid.
 
 **Which part of $\check c$ survives.** The tensor in $\check c$ is
 $$
@@ -189,17 +189,17 @@ H_{\mu\nu}=\sum_\lambda\epsilon_\lambda\,G^*_\lambda\,\check c_{\lambda\mu\nu}
 $$
 is not antisymmetric. It splits into a symmetric and an antisymmetric part, $H_{\mu\nu}=H_{(\mu\nu)}+H_{[\mu\nu]}$, and the two parts have different characters:
 $$
-H_{(\mu\nu)}=-\phi^*\epsilon_\mu\delta_{\mu\nu},\qquad
+H_{(\mu\nu)}=-\chi^*\epsilon_\mu\delta_{\mu\nu},\qquad
 H_{[\mu\nu]}=-\tfrac{i}{2}\sum_{\lambda,\rho}\varepsilon_{\mu\nu}{}^{\lambda\rho}\,H_{[\lambda\rho]},
-\qquad \phi^*=G^*\cdot j .
+\qquad \chi^*=G^*\cdot j .
 $$
-The symmetric part is pure trace: it is the signed scalar $\phi^*$ times the diagonal weight, $\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and nothing else. The weight enters there with no other tensor. The antisymmetric part is **anti-self-dual**. The symbol carries two lower and two upper indices, because $\varepsilon_{\mu\nu\lambda\rho}H_{[\lambda\rho]}$ with all four indices down is not the Hodge dual under the weighted pairing; with the split the identity is closed on $H_{[\mu\nu]}$ itself.
+The symmetric part is pure trace: it is the signed scalar $\chi^*$ times the diagonal weight, $\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and nothing else. The weight enters there with no other tensor. The antisymmetric part is **anti-self-dual**. The symbol carries two lower and two upper indices, because $\varepsilon_{\mu\nu\lambda\rho}H_{[\lambda\rho]}$ with all four indices down is not the Hodge dual under the weighted pairing; with the split the identity is closed on $H_{[\mu\nu]}$ itself.
 
-Because the dual returns the same object, half of the six entries are dependent: the linear map $G^*\mapsto H_{[\mu\nu]}$ has complex rank three — verified — so $H_{[\mu\nu]}$ carries three complex components. Together with the single complex number $\phi^*$ in the trace, $H_{\mu\nu}$ has exactly the four complex components of $G^*_\mu$, and either object reconstructs the other:
+Because the dual returns the same object, half of the six entries are dependent: the linear map $G^*\mapsto H_{[\mu\nu]}$ has complex rank three — verified — so $H_{[\mu\nu]}$ carries three complex components. Together with the single complex number $\chi^*$ in the trace, $H_{\mu\nu}$ has exactly the four complex components of $G^*_\mu$, and either object reconstructs the other:
 $$
 G^*_\mu=+\sum_\nu\epsilon_\nu\,H_{\mu\nu}\,j_\nu .
 $$
-These signs are fixed and not conventional. With $\check c=(t'-i\varepsilon)j$ and $j=(0,0,0,-1)$ as the corpus has them, the three identities of this paragraph hold exactly on random $G$; and the map $j\mapsto-j$ flips $\check c$, $H$ and $\phi^*$ together, so all three are invariant under the only freedom the neutral vector leaves.
+These signs are fixed and not conventional. With $\check c=(t'-i\varepsilon)j$ and $j=(0,0,0,-1)$ as the corpus has them, the three identities of this paragraph hold exactly on random $G$; and the map $j\mapsto-j$ flips $\check c$, $H$ and $\chi^*$ together, so all three are invariant under the only freedom the neutral vector leaves.
 The same construction runs backwards from the auxiliary potential. The source's
 $$
 H_{[\mu\nu]}=\tfrac{i}{2(m-a)}\sum_{\lambda,\rho}\epsilon_\lambda\epsilon_\rho\,C_{\mu\lambda\rho\nu}F_{\lambda\rho},
@@ -291,7 +291,7 @@ The topological mass of the gauge field and the phase mass of the Dirac field ar
 
 1. **The four-dimensional mass term.** In four dimensions the reduced Lagrangian carries the cubic form, not a Chern–Simons term; the Chern–Simons term appears only after the reduction to the spin manifold. The source's route to four dimensions is the promotion by the embedding vector $j$, so the four-dimensional topological mass is $j$-dependent. Whether there is a four-dimensional topological mass that does not single out a direction is open.
 
-2. **The spectator scalar.** The scalar $\phi$ is carried through both reductions unchanged and, at $a=0$ on the spin manifold, does not interact with $B$. In four dimensions it is not a spectator: it sources the "electric" and "magnetic" currents of the Maxwell-like pair. Whether the three-dimensional decoupling is a property of the theory or of the gauge $a=0$ is not settled.
+2. **The spectator scalar.** The scalar $\chi$ is carried through both reductions unchanged and, at $a=0$ on the spin manifold, does not interact with $B$. In four dimensions it is not a spectator: it sources the "electric" and "magnetic" currents of the Maxwell-like pair. Whether the three-dimensional decoupling is a property of the theory or of the gauge $a=0$ is not settled.
 
 3. **The role of the triality.** The parent action is written in the s-vector variables, and the s-vector carries the triality (order-three ding) structure. Does the dual equivalence commute with the triality map $A\mapsto B\mapsto N\mapsto A$? If it does, the equivalence is triality-covariant, which would be a strong structural statement; if not, the triality breaks at the duality.
 
@@ -309,7 +309,7 @@ $$
 $$
 Maxwell plus a Chern–Simons mass, with $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ and the gauge equation $\sum_\nu\epsilon_\nu\,\partial F_{\nu\mu}/\partial x_\nu+\tfrac m2\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\check\varepsilon_{\mu\nu\lambda}F^*_{\nu\lambda}=0$. The same $m$ is, in the other reduction, the non-integrable phase of the Dirac field: a shift $mK_\mu$ of the covariant derivative, with $K$ the source's unit complex vector, integrated along a path.
 
-Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the gauge freedom of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $t'$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\mu\nu}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\mu\nu]}$ and one in the trace $H_{(\mu\nu)}=-\phi^*\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
+Three facts make the mechanism work. The first-order mass term changes only by a total derivative under the gauge freedom of the dual potential, which is what "topological" means here. Of the two parts of $\check c$, only the Levi-Civita one appears in the reduced Lagrangian of Eq. (88) — the $t'$ part cancels in the reduction — and a Levi-Civita contraction is a Chern–Simons term. And the two-form $H_{\mu\nu}$ carries the same information as the s-vector — three complex components in the anti-self-dual $H_{[\mu\nu]}$ and one in the trace $H_{(\mu\nu)}=-\chi^*\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$, which is four — so the auxiliary field of the reduction is the antisymmetric part of the biquaternion.
 
 The parent actions and the eliminations are the source's; the algebraic identities they use were recomputed for this article and hold. The eliminations themselves were not recomputed, and no quantum statement is made.
 
@@ -331,22 +331,22 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $H_\mu$ | Dual (potential) field of the four-dimensional parent action, complex four-vector |
 | $B_\mu$ | Complex potential of the three-dimensional version, axial gauge $B_\mu j^\mu=0$ |
-| $\phi$ | Complex scalar, $\phi=G_\mu j^\mu$; $G_\mu=G^\mu-j_\mu\phi$ with $G^\mu=p^+_{\mu\nu}G_\nu$ |
+| $\chi$ | Complex scalar, $\chi=G_\mu j^\mu$; $G_\mu=G^\mu-j_\mu\chi$ with $G^\mu=p^+_{\mu\nu}G_\nu$ |
 | $p^\pm_{\mu\nu}$ | Projectors; $p^+_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}+j_\mu j_\nu$, $p^-_{\mu\nu}=-j_\mu j_\nu$, $p^+_{\mu\nu}+p^-_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $A_\mu$ | Electromagnetic four-potential; it enters only the covariant derivative |
 | $B_\mu, N_\mu$ | Real and imaginary four-vectors of the field, $G=B+iN$ |
 | $k_\mu$, $j_\mu$ | Timelike and spacelike neutral vectors, units of $c$ and $\check c$ |
 | $c_{\mu\nu\lambda}$, $\check c_{\mu\nu\lambda}$ | Structure constants on $k$ and on $j$; $\check c=(t'-i\varepsilon)j$ |
 | $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ | Levi-Civita symbol of the $j$-slice |
-| $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\phi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and $H_{[\mu\nu]}$ anti-self-dual |
-| $\phi^*=G^*\cdot j$ | Trace of the two-form, $\phi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\phi=G\cdot j$ with a star |
+| $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\chi^*\epsilon_\mu\delta_{\mu\nu}$ with no sum on $\mu$, and $H_{[\mu\nu]}$ anti-self-dual |
+| $\chi^*=G^*\cdot j$ | Trace of the two-form, $\chi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\chi=G\cdot j$ with a star |
 | $F_{\mu\nu}=\partial B_\nu/\partial x_\mu-\partial B_\mu/\partial x_\nu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
 | $\Psi^{\dagger}iC_0\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
 | $K_\mu$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $m$, $a$ | Fermion mass (equated to the topological gauge mass) and the auxiliary real constant $a\ne m$ |
-| $S_{GH}$, $S_{G\phi B}$ | The two parent actions, four- and three-dimensional |
-| $\mathcal{L}_D$, $\mathcal{L}_H$, $\mathcal{L}_{\phi B}$, $\mathcal{L}_G$ | Dirac, dual-potential, scalar-plus-potential and spin-manifold Lagrangians |
+| $S_{GH}$, $S_{G\chi B}$ | The two parent actions, four- and three-dimensional |
+| $\mathcal{L}_D$, $\mathcal{L}_H$, $\mathcal{L}_{\chi B}$, $\mathcal{L}_G$ | Dirac, dual-potential, scalar-plus-potential and spin-manifold Lagrangians |
 
 ## Further Reading
 

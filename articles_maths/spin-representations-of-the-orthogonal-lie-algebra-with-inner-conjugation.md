@@ -88,10 +88,10 @@ each of multiplicity one, independently of whether $n$ is even or odd.
 
 **Proof.** The Cartan element $b_i=\tfrac12e_{2i-1}e_{2i}$ acts on the module by left multiplication. It satisfies $b_i^2=-\tfrac14$ and commutes with $b_j$ for $j\neq i$, and it anticommutes with the generators $e_{2i-1}$ and $e_{2i}$; hence $2ib_i$ has square $1$, so that the operators $\tfrac12(1\pm2ib_i)$ are orthogonal projections, onto the two eigenspaces of $b_i$, and they label those eigenspaces by the weights $\mp\tfrac12$ in the $i$-th coordinate. The module is spanned by the vectors obtained from a highest-weight vector by the action of the generators; applying the projections for $i=1,\dots,m$ gives $2^m$ simultaneous eigenspaces, each of dimension one because the product of the projections is a primitive idempotent and the module is irreducible. The labels are the half-integral vectors displayed.
 
-**Theorem (the chiral splitting).** Let $n=2m$ and let $\omega=e_1e_2\cdots e_{2m}$ be the volume element, of square $\omega^2=(-1)^m$, central in the even part. The action of $\gamma(\omega)$ on $S$ is diagonalisable with the two eigenvalues $\pm\zeta$, where $\zeta^2=(-1)^m$ is a fixed square root; its eigenspaces
+**Theorem (the chiral splitting).** Let $n=2m$ and let $\omega=e_1e_2\cdots e_{2m}$ be the volume element, of square $\omega^2=(-1)^m$, central in the even part. The action of $\gamma(\omega)$ on $S$ is diagonalisable with the two eigenvalues $\pm\omega$, where $\omega^2=(-1)^m$ is a fixed square root; its eigenspaces
 
 $$
-\boxed{\;S^\pm=\{\psi\in S:\gamma(\omega)\psi=\pm\zeta\,\psi\}\;}
+\boxed{\;S^\pm=\{\psi\in S:\gamma(\omega)\psi=\pm\omega\,\psi\}\;}
 $$
 
 are the **half-spinor modules**, have dimension $2^{m-1}$ each, and their weights are the vectors $\tfrac12(\pm\epsilon_1\pm\cdots\pm\epsilon_m)$ with an even number of minus signs for one of them and an odd number for the other.

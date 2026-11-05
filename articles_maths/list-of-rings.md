@@ -72,7 +72,7 @@ A finite ring has nonzero characteristic, and a ring of characteristic $0$ conta
 | $\mathbb{Z}[\sqrt{2}]$ | $\pm(1+\sqrt{2})^m$ | none | Euclidean, hence every ideal principal | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-2}]$ | $\pm 1$ | none | Euclidean | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-5}]$ | $\pm 1$ | none | Noetherian, not principal | *Examples of Rings and Fields* |
-| $\mathbb{Z}[\zeta_n]$ | finite rank, by Dirichlet's unit theorem | none | Dedekind, not principal in general | *Cyclotomic Fields* |
+| $\mathbb{Z}[\varkappa^{\mathrm{crd}}_n]$ | finite rank, by Dirichlet's unit theorem | none | Dedekind, not principal in general | *Cyclotomic Fields* |
 | $\mathcal{O}_K$ | by Dirichlet's unit theorem | none | Dedekind, so nonzero ideals factor uniquely | *Algebraic Number Theory* |
 | $\overline{\mathbb{Z}}$ | the roots of unity it contains | none | not Noetherian, but Bézout | *Bézout Domains* |
 

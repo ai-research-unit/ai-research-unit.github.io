@@ -77,7 +77,7 @@ $$
 M\bigl(\tilde\Pi_1(\vec u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$
 
-whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\varphi)\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
+whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\theta^{\mathrm{azm}})\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\theta^{\mathrm{azm}}, \sin\theta\sin\theta^{\mathrm{azm}}, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
 
 ### The Hermitian subspace
 

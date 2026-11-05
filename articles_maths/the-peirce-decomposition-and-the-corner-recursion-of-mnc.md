@@ -10,7 +10,7 @@ The idempotents come from *Roots of Unity and the Lagrange Idempotents of $M_n(\
 
 ## The Spectral Flag
 
-**A root with simple spectrum produces a complete flag, and the flag is what the Peirce decomposition depends on.** Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and eigenvalues $\zeta_k$, $k=1,\dots,n$. Put $V_k=\operatorname{im}P_k$, a line. The $V_k$ are independent and sum to $\mathbb{C}^{n}$, and the partial sums
+**A root with simple spectrum produces a complete flag, and the flag is what the Peirce decomposition depends on.** Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and eigenvalues $\omega_k$, $k=1,\dots,n$. Put $V_k=\operatorname{im}P_k$, a line. The $V_k$ are independent and sum to $\mathbb{C}^{n}$, and the partial sums
 
 $$
 F_k=V_1\oplus V_2\oplus\cdots\oplus V_k,\qquad k=1,\dots,n,
@@ -22,7 +22,7 @@ $$
 0\subset F_1\subset F_2\subset\cdots\subset F_n=\mathbb{C}^{n},\qquad \dim F_k=k.
 $$
 
-**The flag is spectral, not standard.** The standard flag of *The Matrix Algebra $M_n(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\zeta_1,\dots,\zeta_n)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.
+**The flag is spectral, not standard.** The standard flag of *The Matrix Algebra $M_n(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\omega_1,\dots,\omega_n)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.
 
 **Different roots, different flags.** The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*: the root fixes the flag, and the gauge fixes the vectors inside the lines.
 
@@ -179,7 +179,7 @@ A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl
 
 | Symbol | Meaning |
 |---|---|
-| $P_k$ | the Lagrange projector of $\zeta_k$, of rank $1$ |
+| $P_k$ | the Lagrange projector of $\omega_k$, of rank $1$ |
 | $V_k=\operatorname{im}P_k$ | the $k$-th spectral line |
 | $F_k$ | the partial sum $V_1\oplus\cdots\oplus V_k$ |
 | $A_{kl}=P_kM_nP_l$ | the Peirce corner, a line |

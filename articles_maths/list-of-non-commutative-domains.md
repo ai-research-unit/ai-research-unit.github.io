@@ -46,7 +46,7 @@ The commutative domains are included in the last row so that the intersection of
 | $k[\mathbb{Z}] \cong k[x, x^{-1}]$ | $\mathbb{Z}$ torsion-free | yes; commutative | *Group Algebras* |
 | $k[C_2]$, $k$ of characteristic $\neq 2$ | $C_2$ has torsion | no: $k[C_2] \cong k \times k$ has zero divisors | *Examples of Rings and Fields* |
 | $\mathbb{F}_2[C_2]$ | $C_2$ has torsion | no: $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$ is local with a nilpotent | *Examples of Rings and Fields* |
-| $k[C_p]$, with $\zeta_p \in k$ and $\operatorname{char} k \nmid p$ | $C_p$ has torsion | no: $k[C_p] \cong k^p$, a product of fields | *Group Algebras* |
+| $k[C_p]$, with $\varkappa^{\mathrm{crd}}_p \in k$ and $\operatorname{char} k \nmid p$ | $C_p$ has torsion | no: $k[C_p] \cong k^p$, a product of fields | *Group Algebras* |
 
 The torsion-free hypothesis is necessary and the two counterexamples in characteristic zero and characteristic two show it. The group ring of a torsion-free group need not be Ore, however: the torsion-free hypothesis gives the absence of zero divisors and not the existence of a division ring of fractions, which is the subject of *Ore Domains and Division Rings of Fractions*.
 

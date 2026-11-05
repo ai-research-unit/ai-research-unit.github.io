@@ -128,13 +128,13 @@ where $u^{\dagger}u=\lvert u_{\blacktriangle}\rvert^{2}+\lvert u_{\blacktriangle
 
 **Definition.** The **projective line** is $\mathbb{P}^{1}=(V\setminus\{0\})/\mathbb{C}^{\times}$, the set of lines. A point is written $[u]$, and a line is described in the affine chart $u_{\blacktriangle}\neq0$ by the coordinate
 $$
-\zeta=\frac{u_{\blacktriangledown}}{u_{\blacktriangle}},
+\varkappa=\frac{u_{\blacktriangledown}}{u_{\blacktriangle}},
 $$
 with the point at infinity for $u_{\blacktriangle}=0$.
 
 **Proposition (the projective line is a sphere).** $\mathbb{P}^{1}$ is homeomorphic to $S^{2}$, and the homeomorphism is the Hopf map restricted to the unit sphere.
 
-*Proof.* A line meets the unit sphere $S^{3}=\{\lVert u\rVert=1\}$ in a circle $u\mapsto e^{i\theta}u$, so $\mathbb{P}^{1}=S^{3}/S^{1}$, which is the Hopf fibration; the base is $S^{2}$ (*The Unit Sphere and the Hopf Fibration*). The affine coordinate $\zeta$ is the stereographic coordinate of the sphere, and the point at infinity is the north pole.
+*Proof.* A line meets the unit sphere $S^{3}=\{\lVert u\rVert=1\}$ in a circle $u\mapsto e^{i\theta}u$, so $\mathbb{P}^{1}=S^{3}/S^{1}$, which is the Hopf fibration; the base is $S^{2}$ (*The Unit Sphere and the Hopf Fibration*). The affine coordinate $\varkappa$ is the stereographic coordinate of the sphere, and the point at infinity is the north pole.
 
 **The dual point and the incidence.** A nonzero row $\phi\in V^{*}$ defines the hyperplane $\{\phi=0\}$, which is a point $[\phi]$ of the dual projective line $(\mathbb{P}^{1})^{*}$. The pair $(u,\phi)$ is **incident** when $\phi(u)=0$, that is when the line $[u]$ lies in the hyperplane $\phi=0$, which in one projective dimension says that the point $[u]$ is exactly the kernel of $\phi$, that is the point of $\mathbb{P}^{1}$ dual to $[\phi]$. **The incidence is a single complex number and its vanishing is the only incidence relation of the line**: the two objects are a point and a dual point, and the incidence is the evaluation.
 
@@ -472,7 +472,7 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 | $\mathcal{C}_{H}$ | the Hermitian rank-one cone |
 | $\pi_u$ | the projector $uu^{\dagger}/(u^{\dagger}u)$ |
 | $\mathbb{P}^{1}$ | the projective line, the set of complex lines |
-| $\zeta$ | the affine coordinate $u_{\blacktriangledown}/u_{\blacktriangle}$ |
+| $\varkappa$ | the affine coordinate $u_{\blacktriangledown}/u_{\blacktriangle}$ |
 | $\sigma_0,\sigma_1,\sigma_2,\sigma_3$ | the Pauli basis of the Hermitian matrices |
 | $t,x,y,z$ | the Pauli coordinates, $t=\tfrac12\operatorname{tr}M$ |
 | $\vec r=2\vec x$ | the Bloch vector |

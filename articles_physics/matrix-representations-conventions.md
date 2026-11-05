@@ -1027,7 +1027,7 @@ $$
 $$
 A subscript names the factor it traces, $\operatorname{Tr}_\mathbb{B}(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}(\vec e_k)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(e_t\otimes e_t)=4$ and $\operatorname{Tr}(\vec e_j\otimes\vec e_k)=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
 
-**A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde\Phi=\varphi\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde U}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
+**A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\iota$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde\Phi=\iota\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde U}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
 
 ### The Bridge to the $4\times4$ Displays
 

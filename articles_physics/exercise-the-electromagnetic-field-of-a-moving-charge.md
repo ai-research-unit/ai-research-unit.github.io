@@ -52,7 +52,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 \qquad
 \langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma^2},
 $$
-with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\phi$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\phi$.
+with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\chi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\chi^{\mathrm{scp}}$.
 
 **Solution (a).** Differentiate $t'_r = t' - R/c$ at fixed field point. Since $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)|$,
 $$
@@ -101,9 +101,9 @@ Thus the whole construction is built from one null and one timelike element of $
 
 **Solution (c).** Writing $\tilde{A} = i\,a'_te_t + \vec A$ and using $\epsilon\mu c^2 = 1$,
 $$
-\phi = \frac{ϙ}{4\pi\epsilon D},
+\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D},
 \qquad
-\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\phi .
+\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
 $$
 
 The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.

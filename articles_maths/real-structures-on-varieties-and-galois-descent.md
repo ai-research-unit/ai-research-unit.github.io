@@ -154,7 +154,7 @@ and the real points of $X/G$ are the fixed points of the involution, $(X/G)(k) =
 
 **Example ($\mathbb{A}^n$ and $\mathbb{P}^n$).** For the conjugation of $\mathbb{C}[x_1,\ldots,x_n]$ and of its graded form, the descended varieties are $\mathbb{A}^n_{\mathbb{R}}$ and $\mathbb{P}^n_{\mathbb{R}}$, with real points $\mathbb{R}^n$ and $\mathbb{P}^n(\mathbb{R})$; the quotient of the affine space is the affine space, and the fixed locus is the whole real form.
 
-**Example (the roots of unity and the finite subgroups).** The conjugation of $\mathbb{C}$ acts on the group $\mu_n$ of $n$-th roots of unity by $\zeta\mapsto\zeta^{-1}$; the fixed points are the roots with $\zeta = \pm1$, the descended group is $\mu_2$ over $\mathbb{R}$, and the quotient $\mu_n/\sigma$ is a variety with two real points. This is the finite-group model of the fixed locus of a real structure.
+**Example (the roots of unity and the finite subgroups).** The conjugation of $\mathbb{C}$ acts on the group $\mu_n$ of $n$-th roots of unity by $\omega\mapsto\omega^{-1}$; the fixed points are the roots with $\omega = \pm1$, the descended group is $\mu_2$ over $\mathbb{R}$, and the quotient $\mu_n/\sigma$ is a variety with two real points. This is the finite-group model of the fixed locus of a real structure.
 
 ### Conics
 

@@ -50,7 +50,7 @@ Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth 
 
 ## The Central Parameter
 
-**Theorem (the central parameter bound).** Let $\tilde Q_1=Ce_t$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.
+**Theorem (the central parameter bound).** Let $\tilde Q_1=Ce_t$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\omega\mapsto\omega^2+C$.
 
 1. If $C$ lies in the interior of the Mandelbrot set, then $\dim_H\mathcal K_{Ce_t}=8$.
 2. If the complex filled Julia set has dimension $\alpha$, then

@@ -36,7 +36,7 @@ is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathc
 
 A spacetime lattice supplies all three. The lattice has finitely many sites in a finite box, so the field has finitely many components; the group-valued variable on each link is drawn from a compact group, so each integral is finite; the lattice action is built from closed loops and is therefore gauge invariant; and the limit in which the lattice spacing $a$ is taken to zero is controlled by the renormalization group, which absorbs the dependence into the coupling. The lattice regularization is the standard non-perturbative construction of a gauge theory, and it is used here because it is the construction that makes the biquaternion path integral well defined.
 
-Two features of the framework make the lattice a natural object rather than an external device. First, the group the lattice integrates over is the group of unit quaternions, which is the compact part of the algebra's own group; the lattice configuration space is a product of copies of that group, and the symplectic/Haar measure on each copy is the normalized measure on the unit sphere $S^3$ in $\mathbb{R}^4$. Second, the lattice spacing $a$ enters the link as the phase $a\kappa\mathcal{A}$, so the lattice is a discretization of the algebra's gradient $\tilde{\nabla}$: the covariant difference $(\tilde U_\mu(n)\phi(n+\vec u_\mu)-\phi(n))/a$ is the lattice version of $D_\mu\phi$, with the link supplying the parallel transport that the discretization of the derivative otherwise loses.
+Two features of the framework make the lattice a natural object rather than an external device. First, the group the lattice integrates over is the group of unit quaternions, which is the compact part of the algebra's own group; the lattice configuration space is a product of copies of that group, and the symplectic/Haar measure on each copy is the normalized measure on the unit sphere $S^3$ in $\mathbb{R}^4$. Second, the lattice spacing $a$ enters the link as the phase $a\kappa\mathcal{A}$, so the lattice is a discretization of the algebra's gradient $\tilde{\nabla}$: the covariant difference $(\tilde U_\mu(n)\chi(n+\vec u_\mu)-\chi(n))/a$ is the lattice version of $D_\mu\chi$, with the link supplying the parallel transport that the discretization of the derivative otherwise loses.
 
 ## The Lattice Carrier
 
@@ -61,7 +61,7 @@ A lattice gauge transformation is a group-valued function $\tilde U(n)\in SU(2)$
 $$
 \tilde U_\mu(n)\longmapsto \tilde U(n)\,\tilde U_\mu(n)\,\tilde U(n+\vec u_\mu)^{-1},
 \qquad
-\phi(n)\longmapsto \tilde U(n)\phi(n)
+\chi(n)\longmapsto \tilde U(n)\chi(n)
 $$
 for a matter field in the fundamental representation. This is the lattice form of the transformation law of the companion article: it is the adjoint law at a point, promoted to a law relating neighbouring sites, and the inhomogeneous term of the continuum transformation is replaced by the difference of the group elements on the two ends of the link. The action will be built from products of links around closed loops, and the trace of each loop is gauge invariant because the $\tilde U(n)$ and $\tilde U(n)^{-1}$ at every site cancel under the trace.
 
@@ -69,9 +69,9 @@ for a matter field in the fundamental representation. This is the lattice form o
 
 The lattice replaces the derivative by a difference, and the link supplies the parallel transport:
 $$
-(D_\mu\phi)(n)\longmapsto\frac{1}{a}\Big(\tilde U_\mu(n)\phi(n+\vec u_\mu)-\phi(n)\Big),
+(D_\mu\chi)(n)\longmapsto\frac{1}{a}\Big(\tilde U_\mu(n)\chi(n+\vec u_\mu)-\chi(n)\Big),
 $$
-which transforms as $\tilde U(n)\big(D_\mu\phi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.
+which transforms as $\tilde U(n)\big(D_\mu\chi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.
 
 ## The Plaquette and the Wilson Action
 
@@ -276,7 +276,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $a$ | Lattice spacing |
 | $\tilde U_\mu(n)=\exp(ia\kappa\mathcal{A}_\mu(n))\in SU(2)$ | Link variable (unit quaternion) |
 | $\tilde U_\mu(n)\mapsto \tilde U(n)\tilde U_\mu(n)\tilde U(n+\vec u_\mu)^{-1}$ | Lattice gauge transformation |
-| $(D_\mu\phi)(n)=a^{-1}(\tilde U_\mu(n)\phi(n+\vec u_\mu)-\phi(n))$ | Discrete covariant difference |
+| $(D_\mu\chi)(n)=a^{-1}(\tilde U_\mu(n)\chi(n+\vec u_\mu)-\chi(n))$ | Discrete covariant difference |
 | $\tilde U_{\mu\nu}(n)$ | Plaquette; product of four links around an elementary square |
 | $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+O(a^3))$ | Plaquette expansion |
 | $\mathrm{Tr}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)$ | Trace of a group element |

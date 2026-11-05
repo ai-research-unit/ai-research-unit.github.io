@@ -70,13 +70,13 @@ $$
 
 $$
 \boxed{\;
-\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}}
+\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{C}=\{(\omega,\omega):\omega\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}}
 \;},
 $$
 
 and the diagonal slice of the Julia set is the corresponding part of the boundary. In particular, for a central parameter $C=c\cdot1$ the diagonal slice of $\mathcal{K}_{C}$ is the complex filled Julia set $K_{c}$.
 
-**Proof.** Along the diagonal $Q_{+}=Q_{-}=\zeta$ and the membership in the product is the conjunction of $\zeta\in K_{c_{1}}$ and $\zeta\in K_{c_{2}}$; for a central parameter the two sets coincide.
+**Proof.** Along the diagonal $Q_{+}=Q_{-}=\omega$ and the membership in the product is the conjunction of $\omega\in K_{c_{1}}$ and $\omega\in K_{c_{2}}$; for a central parameter the two sets coincide.
 
 **Remark (the diagonal and the exchange symmetry).** The diagonal slice is the fixed set of the exchange of the two idempotent coordinates, which is the tessarine sign restricted to the coordinate level; it is the slice the algebra reads most directly, and for a central parameter it reproduces the complex fractal itself, so the central reduced biquaternion fractal contains the complex fractal as its diagonal slice.
 
@@ -85,16 +85,16 @@ and the diagonal slice of the Julia set is the corresponding part of the boundar
 **Theorem (the real slice).** The slice on the plane $\mathbb{R}\{1,ij\}$ of the elements fixed by the star, which in the idempotent coordinates is $Q_{-}=\bar Q_{+}$, is
 
 $$
-\{Q_{-}=\bar Q_{+}\}\cap\mathcal{K}_{C}=\{(\zeta,\bar\zeta):\zeta\in K_{c_{1}}\cap\overline{K_{c_{2}}}\}\cong K_{c_{1}}\cap\overline{K_{c_{2}}}.
+\{Q_{-}=\bar Q_{+}\}\cap\mathcal{K}_{C}=\{(\omega,\bar\omega):\omega\in K_{c_{1}}\cap\overline{K_{c_{2}}}\}\cong K_{c_{1}}\cap\overline{K_{c_{2}}}.
 $$
 
 In particular, if the two parameters are conjugate, $c_{2}=\bar c_{1}$, then $K_{c_{2}}=\overline{K_{c_{1}}}$ and the real slice is the complex filled Julia set $K_{c_{1}}$ itself.
 
-**Proof.** The plane $\mathbb{R}\{1,ij\}$ consists of the elements with $Q_{\blacktriangle}$ real and $Q_{\blacktriangledown}$ purely imaginary, and $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ give $Q_{-}=\bar Q_{+}$ there (while the coefficient-real plane $\{Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{R}\}$ is $\mathbb{R}\{1,j\}$, where $Q_{+}$ and $Q_{-}$ are real and equal only when $Q_{\blacktriangledown}=0$); the product rule then requires $\zeta\in K_{c_{1}}$ and $\bar\zeta\in K_{c_{2}}$, which is the displayed set; the conjugate of $K_{c}$ is $K_{\bar c}$ because the complex quadratic map commutes with the conjugation.
+**Proof.** The plane $\mathbb{R}\{1,ij\}$ consists of the elements with $Q_{\blacktriangle}$ real and $Q_{\blacktriangledown}$ purely imaginary, and $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ give $Q_{-}=\bar Q_{+}$ there (while the coefficient-real plane $\{Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{R}\}$ is $\mathbb{R}\{1,j\}$, where $Q_{+}$ and $Q_{-}$ are real and equal only when $Q_{\blacktriangledown}=0$); the product rule then requires $\omega\in K_{c_{1}}$ and $\bar\omega\in K_{c_{2}}$, which is the displayed set; the conjugate of $K_{c}$ is $K_{\bar c}$ because the complex quadratic map commutes with the conjugation.
 
 **Corollary (the real slice of the Julia set).** On the real subspace the Julia set slice is the boundary of $K_{c_{1}}\cap\overline{K_{c_{2}}}$, of real dimension at most one, and for the conjugate parameters it is the complex Julia set $J_{c_{1}}$, of real dimension one.
 
-**Proof.** The real slice is identified with a subset of the complex plane by $\zeta\mapsto(\zeta,\bar\zeta)$, and a subset of the plane has boundary of real dimension at most one; for conjugate parameters the slice is the full complex filled Julia set.
+**Proof.** The real slice is identified with a subset of the complex plane by $\omega\mapsto(\omega,\bar\omega)$, and a subset of the plane has boundary of real dimension at most one; for conjugate parameters the slice is the full complex filled Julia set.
 
 ## The Affine One-Real-Dimensional Slices
 
@@ -123,8 +123,8 @@ the intersection of the affine line slice of $K_{c_{1}}$ with the affine line sl
 **Proposition (the parameter zero).** At $C=0$ the two complex filled Julia sets are the closed unit discs, $\mathcal{K}_{0}$ is the closed unit bidisc, and
 
 $$
-\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},\qquad
-\{Q_{-}=\bar Q_{+}\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},
+\{Q_{+}=Q_{-}\}\cap\mathcal{K}_{0}=\{|\omega|\leq1\},\qquad
+\{Q_{-}=\bar Q_{+}\}\cap\mathcal{K}_{0}=\{|\omega|\leq1\},
 $$
 
 both slices being unit discs; every affine real line slice is an interval, the intersection of the two intervals cut out by the two discs; and the Julia set slices are the corresponding circles.

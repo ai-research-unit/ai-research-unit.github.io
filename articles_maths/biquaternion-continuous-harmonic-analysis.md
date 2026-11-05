@@ -487,7 +487,7 @@ $$
 
 Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.
 
-**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \zeta_k e_t$, $\zeta_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
+**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa^{\mathrm{crd}}_k e_t$, $\varkappa^{\mathrm{crd}}_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
 $$
 \sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} \langle Z(\tilde{Q})\rangle_{\natural} \, d\mu(\tilde{Q}),

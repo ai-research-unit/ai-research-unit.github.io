@@ -5,7 +5,7 @@
 A scalar field is, in standard relativistic physics, the simplest kind of field: one component at each event, and no axis. A Lorentz transformation moves the event and leaves the value alone,
 
 $$
-\phi'(x')=\phi(x),
+\chi^{\mathrm{scl}}'(x')=\chi^{\mathrm{scl}}(x),
 \qquad x'=\Lambda x .
 $$
 
@@ -163,18 +163,18 @@ This is the algebraic content of the standard fact that a spin-$0$ object can be
 
 The framework's central algebraic fact is the split into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$. The companion article *The Klein–Gordon Equation in Biquaternionic Form* asked whether the second-order scalar structure organizes itself by this split, and found that it does not: because the d'Alembertian is central and scalar, the split merely separates a complex solution into its real and imaginary parts, giving two $i$-related copies of one real solution space rather than a particle–antiparticle or state–operator pair. The algebra above explains why, and it also says what the split *does* mean for a scalar.
 
-The scalar field's value space is the centre, and the centre meets each sector in exactly one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. A complex scalar $\tilde{\Phi}=\phi e_t$ with $\phi=\phi_1+i\phi_2$ and $\phi_1,\phi_2\in\mathbb{R}$ therefore splits as
+The scalar field's value space is the centre, and the centre meets each sector in exactly one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. A complex scalar $\tilde{\Phi}=\chi^{\mathrm{scl}} e_t$ with $\chi^{\mathrm{scl}}=\chi^{\mathrm{scl}}_1+i\chi^{\mathrm{scl}}_2$ and $\chi^{\mathrm{scl}}_1,\chi^{\mathrm{scl}}_2\in\mathbb{R}$ therefore splits as
 
 $$
-\tilde{\Phi}=\underbrace{\phi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\phi_2\,ie_t}_{\in\,\mathbb{M}_-},
+\tilde{\Phi}=\underbrace{\chi^{\mathrm{scl}}_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\chi^{\mathrm{scl}}_2\,ie_t}_{\in\,\mathbb{M}_-},
 $$
 
 and the sector decomposition of a scalar field is nothing other than the decomposition of a complex number into its real and imaginary parts. This is the precise sense in which the negative verdict of the Klein–Gordon article is forced: the $\mathbb{M}_-/\mathbb{M}_+$ split cannot carry the particle–antiparticle doubling, because on the scalar line it is the real/imaginary-part split of a single complex number.
 
 The operations that act on that complex number must be kept distinct, and the same distinction settles the sector question completely.
 
-- **Multiplication by $i$** is central and exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, $i\mathbb{M}_-=\mathbb{M}_+$. On a scalar it maps $\phi_1e_t+\phi_2ie_t$ to $-\phi_2e_t+\phi_1ie_t$: it is a quarter-turn of the complex scalar line, exchanging its two real directions.
-- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and preserves each sector. On a scalar it maps $\phi_1e_t+\phi_2ie_t$ to $\phi_1e_t-\phi_2ie_t$: it is the reflection of the complex line, and it produces the second solution of the second-order equation, $\bar{\tilde{\Phi}}$.
+- **Multiplication by $i$** is central and exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, $i\mathbb{M}_-=\mathbb{M}_+$. On a scalar it maps $\chi^{\mathrm{scl}}_1e_t+\chi^{\mathrm{scl}}_2ie_t$ to $-\chi^{\mathrm{scl}}_2e_t+\chi^{\mathrm{scl}}_1ie_t$: it is a quarter-turn of the complex scalar line, exchanging its two real directions.
+- **Complex conjugation $\bar{\cdot}$** acts on the coefficients and preserves each sector. On a scalar it maps $\chi^{\mathrm{scl}}_1e_t+\chi^{\mathrm{scl}}_2ie_t$ to $\chi^{\mathrm{scl}}_1e_t-\chi^{\mathrm{scl}}_2ie_t$: it is the reflection of the complex line, and it produces the second solution of the second-order equation, $\bar{\tilde{\Phi}}$.
 - **Hermitian conjugation ${}^{*}$** is the involution whose eigenspaces define the sectors; it is neither of the other two, and on the centre it agrees with $\bar{\cdot}$.
 
 These are three different maps, but only two distinct actions on the scalar line: the Hermitian star and complex conjugation coincide there, and multiplication by $i$ is the map that acts differently. The sector-exchanging map $i$ is not the conjugate-producing map $\bar{\cdot}$, and reading the conjugate pair $(\tilde{\Phi},\tilde{\Phi}^{*})$ as the sector pair $(\mathbb{M}_-,\mathbb{M}_+)$ is precisely the conflation the companion article warns against. The centre makes the distinction visible: complex conjugation has real fixed points in the centre, the direction $e_t$; multiplication by $i$ has none.
@@ -184,9 +184,9 @@ These are three different maps, but only two distinct actions on the scalar line
 With the value space fixed, the scalar field is written down at once. A spin-$0$ field of mass $m$ is a function into the centre,
 
 $$
-\tilde{\Phi}(x)=\phi(x)\,e_t,
+\tilde{\Phi}(x)=\chi^{\mathrm{scl}}(x)\,e_t,
 \qquad
-\phi(x)\in\mathbb{C},
+\chi^{\mathrm{scl}}(x)\in\mathbb{C},
 $$
 
 and it obeys the Klein–Gordon equation in the form of the companion article,
@@ -198,7 +198,7 @@ $$
 with $\Box$ the d'Alembertian, central and scalar. Because $\Box$ is central and scalar, it acts coefficient by coefficient, and on a central field the equation is the ordinary complex scalar Klein–Gordon equation
 
 $$
-\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\phi=0,
+\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\chi^{\mathrm{scl}}=0,
 $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.
@@ -206,8 +206,8 @@ with the biquaternion writing carrying no additional content. This is the honest
 The plane-wave solutions exhibit the same point. With the four-position $\tilde R$ and the four-wavevector $\tilde P/\hbar$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot\vec x-\omega t'$, and the positive-frequency solution is
 
 $$
-\tilde{\Phi}=\phi_0\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar\right)e_t
-=\phi_0\,\exp\!\left(i(\vec k\cdot\vec x-\omega t')\right)e_t .
+\tilde{\Phi}=\chi^{\mathrm{scl}}_0\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar\right)e_t
+=\chi^{\mathrm{scl}}_0\,\exp\!\left(i(\vec k\cdot\vec x-\omega t')\right)e_t .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
@@ -301,7 +301,7 @@ A scalar field carries the trivial action of the Lorentz group: the transformati
 
 The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{C}_{\mathbb{B}}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
-For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{\Phi}=\phi e_t$ with $\phi$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{\Phi}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
+For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{\Phi}=\chi^{\mathrm{scl}} e_t$ with $\chi^{\mathrm{scl}}$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{\Phi}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
 
 ## Summary of Notation
 
@@ -316,8 +316,8 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\tilde\psi$, $\tilde\psi_L$, $\tilde\psi_R$ | A state and its two labelled parts |
 | $\tilde\Pi(\vec u)$ | Pure state carrying the unit direction $\vec u$ |
 | $\tilde S_k$ | Rotation generator; the left action has Casimir $\tfrac{3\hbar^2}{4}e_t$ |
-| $\tilde\Phi=\phi e_t$ | Scalar (spin-$0$) field, valued in the centre |
-| $\phi=\phi_1+i\phi_2$ | Complex scalar coefficient |
+| $\tilde\Phi=\chi^{\mathrm{scl}} e_t$ | Scalar (spin-$0$) field, valued in the centre |
+| $\chi^{\mathrm{scl}}=\chi^{\mathrm{scl}}_1+i\chi^{\mathrm{scl}}_2$ | Complex scalar coefficient |
 | $H=\tfrac12(\tilde\psi\tilde\chi^{*}+\tilde\chi\tilde\psi^{*})$ | Hermitian product of two states, in $\mathbb{M}_+$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde\psi,\tilde\chi)=2\,\mathrm{Sc}(\tilde\psi^{*}\tilde\chi)$ | Mixed pairing of two states of opposite labels |

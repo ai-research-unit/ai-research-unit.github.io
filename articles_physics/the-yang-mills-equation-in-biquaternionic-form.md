@@ -304,8 +304,8 @@ with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \
 **The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\vec F$ the compensated operator satisfies the exact identity
 
 $$
-\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\varphi\right)
-= \exp(-(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\left(\Delta + \omega^2\right)\varphi ,
+\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\chi^{\mathrm{scl}}\right)
+= \exp(-(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\left(\Delta + \omega^2\right)\chi^{\mathrm{scl}} ,
 $$
 
 and it holds for the **upper** sign alone: checked on random complex coefficients and random smooth amplitudes, the residual is $1.6\times10^{-6}$ at a finite-difference step of $3\times10^{-4}$ for the upper sign and $O(50)$ for the lower. The directional term is therefore not obstinate — it is removed by the weight — and the complex amplitude of the stationary solution solves the ordinary Helmholtz equation. The kernel is the Helmholtz Green function times that weight,

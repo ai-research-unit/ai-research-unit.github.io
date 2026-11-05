@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\zeta\mapsto\zeta^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde Q_2$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathrm{Vect}(\mathbb{B})$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
+The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\omega\mapsto\omega^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde Q_2$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathrm{Vect}(\mathbb{B})$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
 
 The quadratic family, its filled Julia set, its Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*, and its derivative and holomorphy are *The Biquaternion Holomorphic Dynamics and the Jacobian*. The classical theory is *The Mandelbrot Set and the Quadratic Family*, *The Real Quadratic Family and Its Bifurcations* and *The Julia Sets of a Complex Polynomial*; the quaternion case is *The Quaternion Mandelbrot Set*; the two-variable complex theory is *Several Complex Variables* and the holomorphic dynamics of Part III. All are used here and none is restated.
 
@@ -78,7 +78,7 @@ and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\t
 
 ## The Central Slice
 
-**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde Q_2=Ce_t$. Then $F_{\tilde Q_2}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
+**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde Q_2=Ce_t$. Then $F_{\tilde Q_2}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\omega\mapsto\omega^2+C$. In particular
 
 $$
 \boxed{\;0\in\mathcal C_{\text{central}}:=\{\tilde Q_2=Ce_t : F_{\tilde Q_2}^n(0) \text{ bounded}\} \iff C\in\mathcal M\;},

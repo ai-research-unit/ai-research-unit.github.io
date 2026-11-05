@@ -84,7 +84,7 @@ the product of the two complex filled Julia sets being read in the idempotent co
 
 **Corollary (the escape criterion).** An element escapes to infinity, that is its orbit is unbounded, exactly when one of its two coordinates escapes for the corresponding complex map; the numerical criterion is the classical one, applied to each coordinate.
 
-**Proof.** The norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is the half-sum of the squared moduli of the coordinates, so it is unbounded exactly when one of the two moduli is unbounded; the complex criterion $|\zeta|>R$ with $R$ the standard escape radius of the quadratic family is applied to each coordinate.
+**Proof.** The norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is the half-sum of the squared moduli of the coordinates, so it is unbounded exactly when one of the two moduli is unbounded; the complex criterion $|\omega|>R$ with $R$ the standard escape radius of the quadratic family is applied to each coordinate.
 
 **Remark (the direct product survives the dynamics).** The filled Julia set is exactly a product, and not merely contained in one, because the single generator $F_{C}$ acts coordinatewise with the same index on the two coordinates; the product structure of the algebra and the product structure of the fractal are the same product. This is the essential difference from the non-commutative companion, where the filled set is not a product and the coupling terms appear.
 
@@ -137,7 +137,7 @@ The quadratic map of the reduced biquaternion algebra is $F_{C}(\breve Q)=\breve
 | $F_{C}(\breve Q)=\breve Q^{2}+C$ | the quadratic map of the algebra |
 | $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ | the idempotent coordinates, $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
 | $C=c_{1}\Pi_++c_{2}\Pi_-$ | the parameter in idempotent coordinates |
-| $f_{c}(\zeta)=\zeta^{2}+c$ | the complex quadratic map |
+| $f_{c}(\omega)=\omega^{2}+c$ | the complex quadratic map |
 | $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ | the filled Julia set, the product of the two complex filled Julia sets |
 | $\mathcal{J}_{C}=\partial(K_{c_{1}}\times K_{c_{2}})$ | the Julia set |
 | $\mathscr{Z}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$ | the critical set, the zero-divisor cone |

@@ -253,7 +253,7 @@ $$
 \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\Gamma ,
 $$
 
-with $\vec f$ a prescribed tangential field; this is the source's equation $(14)$. The source writes it for the unnormalised fields of its §3, in which the diagonalising combinations are $\vec\varphi=\vec E+i\vec H$ and $\vec\psi=\vec E-i\vec H$ with the same two wavenumbers $\alpha_1,\alpha_2$; the normalised fields $\vec{\mathcal E},\vec{\mathcal H}$ of this article are used below, and the two conventions describe the same equations.
+with $\vec f$ a prescribed tangential field; this is the source's equation $(14)$. The source writes it for the unnormalised fields of its §3, in which the diagonalising combinations are $\vec\chi=\vec E+i\vec H$ and $\vec\psi=\vec E-i\vec H$ with the same two wavenumbers $\alpha_1,\alpha_2$; the normalised fields $\vec{\mathcal E},\vec{\mathcal H}$ of this article are used below, and the two conventions describe the same equations.
 
 **The basis.** The approximation space is spanned by the fundamental solutions of the two shifted operators, evaluated at source points placed on an auxiliary surface. For the exterior problem the sources lie on a closed surface $\Gamma^-$ enclosed by $\Gamma$, the points $\{y_j^-\}$ being dense on it, and the two families are
 
@@ -381,17 +381,17 @@ $$
 
 the same pair as the homogeneous problem $(20)$. The slowly changing chiral medium is therefore solvable by the same equations and the same kernel as the homogeneous one; only the normalisation of the fields has followed the medium. This is the geometric-optics regime of the medium, and the point of contact with the WKB material of the series.
 
-**The device for variable coefficients.** The paper solves the variable-coefficient equation $(D_3+\alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u=0$, with $\alpha$ a scalar function, by a **zero-divisor** device. Let $\varphi$ be a solution of the eikonal equation $(\nabla\varphi)^2=\alpha^2$, and put $\eta=\exp(\varphi)$. Then
+**The device for variable coefficients.** The paper solves the variable-coefficient equation $(D_3+\alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u=0$, with $\alpha$ a scalar function, by a **zero-divisor** device. Let $\chi$ be a solution of the eikonal equation $(\nabla\chi)^2=\alpha^2$, and put $\eta=\exp(\chi)$. Then
 
 $$
 D_3+\alpha=\eta\bigl(D_3+\tilde Q_+\bigr)\eta^{-1},
 \qquad
-\tilde Q_\pm=\alpha\pm\nabla\varphi,
+\tilde Q_\pm=\alpha\pm\nabla\chi,
 \qquad
 \tilde Q_+\tilde Q_-=0,
 $$
 
-the last being the zero-divisor identity $\alpha^2-(\nabla\varphi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\varphi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
+the last being the zero-divisor identity $\alpha^2-(\nabla\chi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\chi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
 
 $$
 u_x(x)=\exp(\,i\Theta(x_1))\Bigl[H_1(x_2,x_3)(1-i\vec e_x)A_1+H_2(x_2,x_3)\vec e_y(1+i\vec e_x)A_2\Bigr],
@@ -484,7 +484,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $y_j^\pm,\ a_j,b_j\in\mathbb B$ | Source points on $\Gamma^\pm$ and the biquaternionic coefficients of the collocation trial functions |
 | $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\vec{\mathcal E}\times\vec u$; scalar part of a biquaternion |
 | $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\xi$ in the survey |
-| $\varphi$, $\tilde Q_\pm=\alpha\pm\nabla\varphi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
+| $\chi$, $\tilde Q_\pm=\alpha\pm\nabla\chi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
 | $z=x_3+\vec e_xx_2$ | Transverse complex variable for the stratified solutions |
 
 ## Further Reading

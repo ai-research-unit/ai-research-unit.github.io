@@ -20,16 +20,16 @@ $$
 
 where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.
 
-Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\zeta)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
+Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\upsilon)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
 
 $$
-\xi = 0, \qquad \eta = 0, \qquad \zeta = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
+\xi = 0, \qquad \eta = 0, \qquad \upsilon = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
 $$
 
 so that the whole displacement of the singularity from the origin is
 
 $$
-\Delta\tilde{Q} = \zeta\,\vec e_z = -i\varrho\,\vec e_z .
+\Delta\tilde{Q} = \upsilon\,\vec e_z = -i\varrho\,\vec e_z .
 $$
 
 **The displacement is informational.** The element $-i\varrho \vec e_z$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $z' = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an **imaginary direction of the vector coefficient** — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.
@@ -54,7 +54,7 @@ $$
 \boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
 $$
 
-a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's **circle electron**, *Kreiselektron*. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\zeta|$, and the point electron is recovered in the limit $\varrho\to0$.
+a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's **circle electron**, *Kreiselektron*. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\upsilon|$, and the point electron is recovered in the limit $\varrho\to0$.
 
 ## The Branch Disk and the Two Sheets
 
@@ -84,7 +84,7 @@ $$
 
 has both a real and an imaginary part at every point off the ring and off the disk. Writing $\phi=\phi_R+i\phi_I$, the real part $-\mathrm{grad}\,\phi_R$ is the electric field of the configuration and the imaginary part $-\mathrm{grad}\,\phi_I$ is a second field that survives from the displacement into $\mathbb{M}_+$. The imaginary part is not an artefact of the bookkeeping: it is nonzero at generic points, as it must be whenever $\varrho\neq0$, and it vanishes identically at $\varrho=0$, where the point electron is recovered and the field is purely electric.
 
-Away from the singular set the potential remains harmonic, since it is the analytic continuation of the harmonic Coulomb kernel in the parameter $\zeta$; each of the two parts $\phi_R,\phi_I$ therefore satisfies the three-dimensional Laplace equation separately, and the two fields are divergence- and curl-free where they are defined. The ring is the only singularity of the field. The check is direct: the Laplacian of $\phi$ computed by central differences at a hundred points off the ring is below $10^{-7}$, the level of the finite-difference error.
+Away from the singular set the potential remains harmonic, since it is the analytic continuation of the harmonic Coulomb kernel in the parameter $\upsilon$; each of the two parts $\phi_R,\phi_I$ therefore satisfies the three-dimensional Laplace equation separately, and the two fields are divergence- and curl-free where they are defined. The ring is the only singularity of the field. The check is direct: the Laplacian of $\phi$ computed by central differences at a hundred points off the ring is below $10^{-7}$, the level of the finite-difference error.
 
 ### Why the Second Field Is Mesomagnetic, Not Magnetic
 

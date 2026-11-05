@@ -79,7 +79,7 @@ $$
 u=a+ih,\qquad v=f+ib,\qquad w=c+ig,\qquad t=d+ie ,
 $$
 
-and the four entries of its array are $\varphi_1=u+w$, $\varphi_3=t-v$, $\varphi_2=t+v$, $\varphi_4=u-w$. The corpus's field $\tilde\Psi$ carries eight real functions too, one in $\mathbb H_{\mathbb B}$ and one in $i\mathbb H_{\mathbb B}$ for each of the four directions, and the Daviau map is the assignment of the eight of the source to the eight real units of §*The Three Space Vectors and the Dictionary*.
+and the four entries of its array are $\chi_1=u+w$, $\chi_3=t-v$, $\chi_2=t+v$, $\chi_4=u-w$. The corpus's field $\tilde\Psi$ carries eight real functions too, one in $\mathbb H_{\mathbb B}$ and one in $i\mathbb H_{\mathbb B}$ for each of the four directions, and the Daviau map is the assignment of the eight of the source to the eight real units of §*The Three Space Vectors and the Dictionary*.
 
 **Derived form (the expansion).** Read back through the corpus's matrix model, the four entries give
 

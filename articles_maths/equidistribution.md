@@ -66,10 +66,10 @@ where $\pi_{ij}$ are the matrix coefficients of $\pi$; equivalently, if and only
 **Example ($\{n\alpha\}$).** For irrational $\alpha$ the sequence $x_n = n\alpha$ is equidistributed on $[0,1)$. By Weyl's criterion it suffices to show $\frac{1}{N}\sum_{n=1}^N \exp(2\pi i kn\alpha) \to 0$ for $k \neq 0$; the sum is the geometric series
 
 $$
-\frac{1}{N}\sum_{n=1}^{N} \zeta^n = \frac{\zeta(1-\zeta^N)}{N(1-\zeta)}, \qquad \zeta = \exp(2\pi i k\alpha) \neq 1,
+\frac{1}{N}\sum_{n=1}^{N} \omega^n = \frac{\omega}{N(1-\omega)}, \qquad \omega = \exp(2\pi i k\alpha) \neq 1,
 $$
 
-whose modulus is at most $\frac{1}{N}\cdot\frac{2}{|1-\zeta|}$, which tends to $0$ as $N\to\infty$. The irrationality of $\alpha$ is exactly what makes $\zeta \neq 1$ for every $k \neq 0$.
+whose modulus is at most $\frac{1}{N}\cdot\frac{2}{|1-\omega|}$, which tends to $0$ as $N\to\infty$. The irrationality of $\alpha$ is exactly what makes $\omega \neq 1$ for every $k \neq 0$.
 
 **Example (the torus).** Let $\alpha = (\alpha_1, \dots, \alpha_d) \in \mathbb{R}^d$ and let $x_n = n\alpha$ modulo $\mathbb{Z}^d$. The sequence is equidistributed in $T^d$ if and only if $1, \alpha_1, \dots, \alpha_d$ are rationally independent. The criterion is the same: the characters of $T^d$ are $\chi_m(x) = \exp(2\pi i \langle m, x\rangle)$, and the average is a geometric series that vanishes unless $\langle m, \alpha\rangle \in \mathbb{Z}$; the rational-independence condition excludes the latter for every nonzero $m$. This is the sequential form of the ergodicity of the translation of a torus in *Ergodic Theory of Group Actions*, and the two statements are the same harmonic computation.
 

@@ -27,7 +27,7 @@ $$
 $$
 E_{kl}E_{mn}=\delta_{lm}E_{kn},\qquad
 E_{kk}=P_k,\qquad
-H=\sum_{k=1}^{4}\zeta_kE_{kk},\qquad
+H=\sum_{k=1}^{4}\omega_kE_{kk},\qquad
 \operatorname{tr}E_{kl}=\delta_{kl}.
 $$
 
@@ -37,7 +37,7 @@ $$
 E_{kl}E_{mn}v=v_k\ell_l\bigl(v_m\ell_n(v)\bigr)=\delta_{lm}v_k\ell_n(v)=\delta_{lm}E_{kn}v.
 $$
 
-On $v_m$, $E_{kk}$ acts as $v_k\ell_k(v_m)=\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. The sixteen units are the matrix units of the basis, hence a basis of the algebra.
+On $v_m$, $E_{kk}$ acts as $v_k\ell_k(v_m)=\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\omega_kE_{kk}$ acts on $v_m$ as $\omega_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. The sixteen units are the matrix units of the basis, hence a basis of the algebra.
 
 **The frame is the choice of the vectors.** The root fixes the four lines. The frame fixes a nonzero vector in each line. Different frames of the same flag give different matrix units and the same idempotents:
 
@@ -161,7 +161,7 @@ $$
 
 $$
 P_k=E_{kk}\longmapsto E_{kk}=P_k,\qquad
-H=\sum_k\zeta_kE_{kk}\longmapsto H.
+H=\sum_k\omega_kE_{kk}\longmapsto H.
 $$
 
 The diagonal $t_1=t_2=t_3=t_4$ acts trivially on every $E_{kl}$, so the effective gauge group is
@@ -170,7 +170,7 @@ $$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3.
 $$
 
-**Proof.** The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\zeta_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every unit, so the kernel is the diagonal.
+**Proof.** The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\omega_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every unit, so the kernel is the diagonal.
 
 **One parameter per simple nilpotent.** Put
 
@@ -276,7 +276,7 @@ The idempotents $E_{11},E_{22},E_{33},E_{44}$ have scale $1$, and the root $H_0$
 **The root and the gauge split the count.** The map from frames to roots,
 
 $$
-(v_1,v_2,v_3,v_4)\longmapsto H=\sum_{k=1}^{4}\zeta_kE_{kk},
+(v_1,v_2,v_3,v_4)\longmapsto H=\sum_{k=1}^{4}\omega_kE_{kk},
 $$
 
 has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3$: the frames that give the same root are exactly the rescalings of the vectors inside the fixed lines. Hence
@@ -331,7 +331,7 @@ which is the same family with $a$ replaced by $a\lambda$. The gauge orbit of $R$
 
 ## Summary
 
-An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\zeta_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.
+An adapted frame $(v_1,v_2,v_3,v_4)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_1=E_{12}$, $N_2=E_{23}$, $N_3=E_{34}$ square to zero, generate the algebra together with the subdiagonal units (their conjugate transposes in an orthonormal frame), and every composite is their consecutive product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^3$ with one parameter $\lambda_k=t_k/t_{k+1}$ per simple nilpotent, subject to the cocycle that fixes the composites and to the relation $\lambda_1\lambda_2\lambda_3\lambda_4=1$. The frame modulo scale has $15$ complex dimensions, split as $12$ for the root and $3$ for the gauge; at $n=2$ this is $3=2+1$ complex, the $6=4+2$ real count of the biquaternion frame. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.
 
 $$
 \boxed{\ 15=12+3,\qquad N_k\longmapsto\lambda_kN_k,\qquad E_{kl}\longmapsto\lambda_k\cdots\lambda_{l-1}E_{kl},\qquad \lambda_1\lambda_2\lambda_3\lambda_4=1.\ }

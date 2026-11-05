@@ -14,7 +14,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 ### Minimal coupling and the step
 
-A static electrostatic potential $\phi(x)$ is the time component of the four-potential, $\tilde{A} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
+A static electrostatic potential $\chi(x)$ is the time component of the four-potential, $\tilde{A} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
 D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A} = \tilde\nabla + \frac{iϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla - \frac{ϙ a'_t}{\hbar}e_t .
@@ -25,7 +25,7 @@ The added term is a **central scalar multiple of $e_t$**. This is the algebraic 
 A **step** is the potential
 
 $$
-ϙ\phi(x) = V_0\,\mathrm{H}^{\mathrm{hvs}}(x),
+ϙ\chi(x) = V_0\,\mathrm{H}^{\mathrm{hvs}}(x),
 $$
 
 constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a barrier that repels the electron. On each half-line the covariant derivative is a constant-shift of the gradient, so the equation has plane-wave solutions there and the problem reduces to matching across $x = 0$.
@@ -132,7 +132,7 @@ $$
 whose two roots $\omega = \pm\sqrt{k^2c^2 + m^2c^4}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
 
 $$
-\boxed{\;\omega \;\longmapsto\; \omega - \frac{ϙ\phi}{\hbar} \quad\text{with}\quad \omega - \frac{ϙ\phi}{\hbar} < 0\;}.
+\boxed{\;\omega \;\longmapsto\; \omega - \frac{ϙ\chi}{\hbar} \quad\text{with}\quad \omega - \frac{ϙ\chi}{\hbar} < 0\;}.
 $$
 
 This is the algebraic content of the phrase "the far side is reached by an antiparticle". The exchange of the two roots is the same operation that the corpus's conjugation articles study as charge conjugation and the real structure $\flat$; here it is produced not by conjugation of the field but by a central shift of the momentum, which is why the framework can describe it without leaving the algebra. What the framework cannot do is change the particle number; that is the second-quantized statement, and it belongs to the companion articles on the Dirac sea and on pair creation.
@@ -172,7 +172,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 ## Summary
 
-The Klein step is the Dirac equation with a central potential $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
+The Klein step is the Dirac equation with a central potential $ϙ\chi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
 
 The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P\tilde P^{\natural} = -m^2c^2$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
 
@@ -185,7 +185,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient |
 | $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A} = i\,a'_te_t$ | Electrostatic potential biquaternion |
-| $V_0$, $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ | Step height and potential energy |
+| $V_0$, $ϙ\chi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ | Step height and potential energy |
 | $E$, $k$, $k_2$ | Energy, incident momentum, transmitted momentum |
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |

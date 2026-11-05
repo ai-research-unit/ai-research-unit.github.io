@@ -42,7 +42,7 @@ $$
 d(\xi, \eta) = 2^{-n(\xi,\eta)}, \qquad n(\xi,\eta) = \sup\{n : x_i = y_i\ \text{for } i \leq n\},
 $$
 
-where $n(\xi,\eta)$ is the length of the longest common prefix, with $d(\xi,\xi) = 0$. It satisfies the ultrametric inequality $d(\xi,\zeta) \leq \max\{d(\xi,\eta), d(\eta,\zeta)\}$, its balls are the cylinders, and it is complete.
+where $n(\xi,\eta)$ is the length of the longest common prefix, with $d(\xi,\xi) = 0$. It satisfies the ultrametric inequality $d(\xi,\varkappa^{\mathrm{crd}}) \leq \max\{d(\xi,\eta), d(\eta,\varkappa^{\mathrm{crd}})\}$, its balls are the cylinders, and it is complete.
 
 The distance of *Metric, Uniform and Complete Spaces* is placed on the boundary here; the ultrametric form is the one the tree supplies, and the two properties used below are that the balls are exactly the cylinders and that the space is compact. The boundary with its measure — the uniform measure that assigns to a cylinder $[v]$ the mass $d^{-|v|}$ — is a probability space, and the action of a self-similar group on it by measure-preserving transformations is the object whose ergodic theory and whose group-measure-space algebra belong to Part III; this article uses the boundary only as a compact topological space with the group action.
 

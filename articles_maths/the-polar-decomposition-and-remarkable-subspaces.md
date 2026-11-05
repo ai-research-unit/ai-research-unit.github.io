@@ -7,10 +7,10 @@
 The four-factor word is that of *The Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
 
 $$
-\tilde{Q} = r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\tilde{Q} = r\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-with the positive real scale $r$, the central phase $\zeta$ of modulus one on the branch $\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
+with the positive real scale $r$, the central phase $\omega$ of modulus one on the branch $\arg\omega\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
 
 The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is $*$-unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
@@ -24,18 +24,18 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\zeta$, $\theta^{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
+The symbols $r$, $\omega$, $\theta^{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
 ## The Four Exponents of the Word
 
-Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta^{\mathrm{pha}}=\arg\zeta$, and the square of the root decides the character of the factor. The four factors and their exponents are
+Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta^{\mathrm{pha}}=\arg\omega$, and the square of the root decides the character of the factor. The four factors and their exponents are
 
 $$
-\boxed{\; \tilde{Q}=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\boxed{\; \tilde{Q}=r\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\bigl(r,\zeta,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
+\bigl(r,\omega,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
 \longleftrightarrow
 \bigl(\ln r,\,i\theta^{\mathrm{pha}},\,i\tfrac{\psi}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) \;}.
 $$
@@ -43,7 +43,7 @@ $$
 | factor | exponent | root | square of the root | character |
 |---|---|---|---|---|
 | $r$ | $\ln r$ | $e_t$ | $+e_t$ | hyperbolic, degenerate |
-| $\zeta$ | $i\theta^{\mathrm{pha}}$ | $i$ | $-e_t$ | trigonometric, central |
+| $\omega$ | $i\theta^{\mathrm{pha}}$ | $i$ | $-e_t$ | trigonometric, central |
 | $\tilde U_{\mathrm b}$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $+e_t$ | hyperbolic |
 | $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $-e_t$ | trigonometric |
 
@@ -456,7 +456,7 @@ Every sandwich preserves the two halves. A general sandwich does not preserve th
 
 The two sectors are preserved for every element. For a general unit the other four are not preserved, and the theorem below identifies exactly when they are.
 
-**Theorem (which operators preserve the whole subspace structure).** Let $\tilde Q$ be a unit with polar word $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\Rho=r\zeta$ with $r>0$ and $\zeta$ central of modulus one, $\tilde U_{\mathrm b}$ is Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ is a unit real quaternion. The following are equivalent:
+**Theorem (which operators preserve the whole subspace structure).** Let $\tilde Q$ be a unit with polar word $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\Rho=r\omega$ with $r>0$ and $\omega$ central of modulus one, $\tilde U_{\mathrm b}$ is Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ is a unit real quaternion. The following are equivalent:
 
 1. the sandwich $\mathrm{Sd}_{\tilde Q}$ maps each of the six remarkable subspaces to itself;
 2. $\tilde U_{\mathrm b}=e_t$;
@@ -489,7 +489,7 @@ so a vanishing norm stays vanishing and a non-vanishing one stays non-vanishing.
 The complex conjugation is the one that preserves the shape of the word. Its effect is the coefficientwise conjugation of each factor, and since the rotor is a real quaternion and the boost has one real and three purely imaginary coefficients,
 
 $$
-\overline{\tilde{Q}} = r\,\zeta^{-1}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
+\overline{\tilde{Q}} = r\,\omega^{-1}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
 $$
 
 which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its natural conjugate. The natural conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $1.1\times10^{-14}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
@@ -497,7 +497,7 @@ which is a polar word again: the scale is unchanged, the phase is reversed, the 
 The quaternion conjugation is the one that reverses the order of the two non-central factors. It keeps the modulus, since $\langle\tilde Q\rangle_{\natural}$ is invariant, and it gives
 
 $$
-\tilde{Q}^{\natural} = r\,\zeta\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
+\tilde{Q}^{\natural} = r\,\omega\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
 $$
 
 with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is unchanged, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified over $300$ elements, the word to $2.1\times10^{-14}$, its boost to $9.8\times10^{-15}$ and its rotor to $2.6\times10^{-15}$.
@@ -505,7 +505,7 @@ with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word 
 The Hermitian conjugation and the reversal reverse the order of the two factors and negate the phase. The Hermitian conjugate of the word is
 
 $$
-\tilde{Q}^{*} = r\,\zeta^{-1}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
+\tilde{Q}^{*} = r\,\omega^{-1}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
 $$
 
 verified to $1.1\times10^{-14}$ over $300$ elements: the scale is unchanged, the phase is reversed, and the two non-central factors appear in the reversed order, with the boost on the right. Read in the standard order, its boost is $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ — the same rapidity about the rotor-rotated axis — and its rotor is $\tilde u_{\mathrm r}^{-1}$, verified to $1.7\times10^{-14}$ and $3.6\times10^{-15}$.
@@ -566,10 +566,10 @@ The two products of the series are the product of two boosts, which is a boost t
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \zeta \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
-| $r$, $\zeta$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
-| $\Rho = r\zeta = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
-| $\theta^{\mathrm{pha}}$ | the phase angle, $\theta^{\mathrm{pha}}=\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
+| $\tilde{Q} = r \omega \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
+| $r$, $\omega$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
+| $\Rho = r\omega = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
+| $\theta^{\mathrm{pha}}$ | the phase angle, $\theta^{\mathrm{pha}}=\arg\omega\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
 | $\ln r$, $i\theta^{\mathrm{pha}}$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
 | $A_1 = \mathbb{R}e_t$ | the real scalar block, home of the scale exponent |
 | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar block, home of the phase exponent |

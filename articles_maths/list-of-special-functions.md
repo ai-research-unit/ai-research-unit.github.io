@@ -99,7 +99,7 @@ The objects are named by their standard letters; the few symbols used in the tab
 | Symbol | Meaning |
 |---|---|
 | $\Gamma$, $B$ | the gamma and beta functions |
-| $\zeta$, $\eta$, $L(s,\chi)$ | the Riemann zeta, Dirichlet eta and Dirichlet $L$-functions |
+| $\varkappa^{\mathrm{crd}}$, $\eta$, $L(s,\chi)$ | the Riemann zeta, Dirichlet eta and Dirichlet $L$-functions |
 | $P_n, T_n, H_n, L_n$ | Legendre, Chebyshev, Hermite, Laguerre polynomials |
 | $J_\nu$, $I_\nu$, $\operatorname{Ai}$ | Bessel, modified Bessel and Airy functions |
 | ${}_2F_1$, ${}_pF_q$ | hypergeometric and generalised hypergeometric functions |

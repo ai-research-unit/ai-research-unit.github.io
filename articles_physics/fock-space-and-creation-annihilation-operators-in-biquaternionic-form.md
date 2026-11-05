@@ -45,7 +45,7 @@ Two features of this construction govern everything below. First, the **statisti
 
 In the biquaternion framework the one-particle space is a module. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one nontrivial irreducible module, the two-dimensional complex **spinor module** on which it acts by matrix multiplication; the isomorphism $\mathbb{B}\cong\mathrm{End}(\mathbb{C}^2)$ of the algebraic-representations article is exactly this statement. The one-particle space of the Dirac field is a module of this type: at each momentum the positive-frequency solutions span a two-dimensional complex space, the antiparticle branch is a second copy, and the full one-particle space is the completion of the solution space over all momenta. The many-particle space is its **antisymmetric tensor algebra**, as the Dirac quantization article establishes.
 
-The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\zeta=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its **symmetric** algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.
+The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its **symmetric** algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.
 
 The structural point is the same for both:
 
@@ -88,9 +88,9 @@ and Pauli exclusion is the algebraic identity $(a^{\mathrm{fop}\dagger}_r(\vec p
 
 $$
 \big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+=\sigma^{\mathrm{met}}_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 \qquad
-(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1),
+(\sigma^{\mathrm{met}}_0,\sigma^{\mathrm{met}}_1,\sigma^{\mathrm{met}}_2,\sigma^{\mathrm{met}}_3)=(-1,+1,+1,+1),
 $$
 
 and all other commutators vanishing. The timelike mode has negative norm; the physical subspace is defined by the subsidiary condition and carries the two transverse polarizations with positive norm. The physical photon number is the transverse sum
@@ -305,7 +305,7 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | $N=\sum_ia^{\mathrm{fop}\dagger}_ia^{\mathrm{fop}}_i$ | Number operator |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
 | $F=N_a+N_b$, $Ϙ^{\mathrm{fop}}=N_a-N_b$ | Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge) |
-| $a^{\mathrm{fop}}_r(\vec k)$, $\zeta=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
+| $a^{\mathrm{fop}}_r(\vec k)$, $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
 | $N_\gamma$ | Photon number (transverse sum) |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator in $\mathbb{B}$ |
 | $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode creation operator in $\mathbb{B}$ |

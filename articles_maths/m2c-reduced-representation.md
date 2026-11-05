@@ -211,7 +211,7 @@ $$
 \det L_{\breve Q}=|Q_{+}|^{2}|Q_{-}|^{2}=\bigl|\langle\breve Q\rangle_{\mathrm{ts}}\bigr|^{2}.
 $$
 
-*Proof.* The determinant of $\begin{pmatrix}a&b\\ b&a\end{pmatrix}$ is $a^{2}-b^{2}$, and $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})$. For the real model, $L_{\breve Q}$ is carried by the block swap to $\operatorname{diag}(A_{+}+A_{-},A_{+}-A_{-})$, of determinant $|Q_{+}|^{2}|Q_{-}|^{2}$, since the real $2\times2$ block of the multiplication by a complex number $\zeta$ has determinant $|\zeta|^{2}$.
+*Proof.* The determinant of $\begin{pmatrix}a&b\\ b&a\end{pmatrix}$ is $a^{2}-b^{2}$, and $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})$. For the real model, $L_{\breve Q}$ is carried by the block swap to $\operatorname{diag}(A_{+}+A_{-},A_{+}-A_{-})$, of determinant $|Q_{+}|^{2}|Q_{-}|^{2}$, since the real $2\times2$ block of the multiplication by a complex number $\omega$ has determinant $|\omega|^{2}$.
 
 **The zero set.** The determinant vanishes exactly when one of the two idempotent coordinates vanishes,
 $$

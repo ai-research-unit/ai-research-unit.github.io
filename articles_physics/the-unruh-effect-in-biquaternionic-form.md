@@ -176,10 +176,10 @@ This is the section in which thermality is derived rather than asserted.
 
 ### The Two-Point Function on the Orbit
 
-Let $\phi$ be the massless real scalar field and $W$ its Wightman function,
+Let $\chi^{\mathrm{scl}}$ be the massless real scalar field and $W$ its Wightman function,
 
 $$
-W(x,x_2) = \langle 0|\,\phi(x)\,\phi(x_2)\,|0\rangle
+W(x,x_2) = \langle 0|\,\chi^{\mathrm{scl}}(x)\,\chi^{\mathrm{scl}}(x_2)\,|0\rangle
 = \frac{1}{4\pi^2}\,\frac{1}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2-(t'-t'_2-i\epsilon)^2},
 $$
 
@@ -224,7 +224,7 @@ $$
 \boxed{\;W(\delta\tau+i\beta) = W(-\delta\tau), \qquad \beta=\frac{2\pi}{a}\;}.
 $$
 
-The last display is the **KMS boundary relation** of the parent, with $A=B=\phi(0)$: the two-point function continued to imaginary time $\delta\tau+i\beta$ equals the reversed two-point function at $-\delta\tau$. The step that produces it is the pair of elementary identities in item 2; without them, "the accelerated observer sees a thermal state" is an assertion. The $i\epsilon$ in the displayed two-point function fixes which boundary values are meant, and the relation above is the standard one between the two edges of the strip in that convention; we do not re-fix the convention here.
+The last display is the **KMS boundary relation** of the parent, with $A=B=\chi^{\mathrm{scl}}(0)$: the two-point function continued to imaginary time $\delta\tau+i\beta$ equals the reversed two-point function at $-\delta\tau$. The step that produces it is the pair of elementary identities in item 2; without them, "the accelerated observer sees a thermal state" is an assertion. The $i\epsilon$ in the displayed two-point function fixes which boundary values are meant, and the relation above is the standard one between the two edges of the strip in that convention; we do not re-fix the convention here.
 
 Two remarks keep the derivation honest.
 

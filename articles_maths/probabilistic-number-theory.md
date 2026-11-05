@@ -173,18 +173,18 @@ The conjecture is the quantitative form of the independence of the prime events 
 **Theorem (Selberg).** Let $t$ be chosen uniformly at random from $[T,2T]$. Then, as $T\to\infty$,
 
 $$
-\frac{\log|\zeta(1/2+it)|}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow N(0,1),
+\frac{\log|\varkappa^{\mathrm{crd}}|}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow N(0,1),
 $$
 
 and more generally
 
 $$
-\frac{\log\zeta(1/2+it)}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow \mathcal{N}_{\mathbb{C}},
+\frac{\log\varkappa^{\mathrm{crd}}}{\sqrt{\frac{1}{2}\log\log T}} \Longrightarrow \mathcal{N}_{\mathbb{C}},
 $$
 
 where $\mathcal{N}_{\mathbb{C}}$ is the standard complex Gaussian, in the sense that the real and imaginary parts are independent centred Gaussians of variance $1/2$.
 
-Selberg's theorem is the central limit theorem for the values of the zeta function, and the mechanism is the same as in the Erdős–Kac theorem: the Dirichlet polynomial approximation of $\zeta(1/2+it)$ is a sum of terms $n^{-1/2-it}$ whose phases $n^{-it}$ behave like independent random variables, and the logarithm converts the product into a sum of independent contributions. The theorem is the foundation of the statistical theory of the zeta function, and it is the reason the values of $\zeta$ on the critical line are called "random": they obey the Gaussian law of the model. The statistical distribution of the zeros — the random-matrix model of Montgomery and Odlyzko, in which the zeros behave like the eigenvalues of a random unitary matrix — is the other half of the picture, and its analytic input is the explicit formula and the pair correlation, cited from *Analytic Number Theory* and *Automorphic Forms*.
+Selberg's theorem is the central limit theorem for the values of the zeta function, and the mechanism is the same as in the Erdős–Kac theorem: the Dirichlet polynomial approximation of $\varkappa^{\mathrm{crd}}$ is a sum of terms $n^{-1/2-it}$ whose phases $n^{-it}$ behave like independent random variables, and the logarithm converts the product into a sum of independent contributions. The theorem is the foundation of the statistical theory of the zeta function, and it is the reason the values of $\zeta$ on the critical line are called "random": they obey the Gaussian law of the model. The statistical distribution of the zeros — the random-matrix model of Montgomery and Odlyzko, in which the zeros behave like the eigenvalues of a random unitary matrix — is the other half of the picture, and its analytic input is the explicit formula and the pair correlation, cited from *Analytic Number Theory* and *Automorphic Forms*.
 
 ### The Distribution of the Divisor Function and the Local Statistics
 
@@ -221,7 +221,7 @@ The distribution theory extends from $\omega$ to the local limit theorems, to th
 | $v(N)$, local limit | model variance; Gaussian density after smoothing |
 | Cramér model | independent indicators of density $1/\log n$ |
 | $\mathrm{S}(\mathcal{H})$ | singular series of the pattern $\mathcal{H}$ |
-| Selberg CLT | $\log\lvert\zeta(1/2+it)\rvert/\sqrt{\frac12\log\log T}\Rightarrow N(0,1)$ |
+| Selberg CLT | $\log\lvert\varkappa^{\mathrm{crd}}\rvert/\sqrt{\frac12\log\log T}\Rightarrow N(0,1)$ |
 | $\mathcal{N}_{\mathbb{C}}$ | standard complex Gaussian |
 
 
@@ -235,6 +235,6 @@ The distribution theory extends from $\omega$ to the local limit theorems, to th
 - Paul Turán, "On a theorem of Hardy and Ramanujan", *Journal of the London Mathematical Society* 9 (1934), 274–276, and J. Kubilius, *Probabilistic Methods in the Theory of Numbers* (American Mathematical Society, 1964), for the variance inequality and the model.
 - H. Cramér, "On the order of magnitude of the difference between consecutive prime numbers", *Acta Arithmetica* 2 (1936), 23–46, for the Cramér model.
 - G. H. Hardy and J. E. Littlewood, "Some problems of 'partitio numerorum' III", *Acta Mathematica* 44 (1923), 1–70, for the singular series and the prime-pair conjectures.
-- Atle Selberg, "Contributions to the theory of the Riemann zeta-function", *Archiv for Mathematik og Naturvidenskab* 48 (1946), 89–155, for the central limit theorem for $\log\zeta$.
+- Atle Selberg, "Contributions to the theory of the Riemann zeta-function", *Archiv for Mathematik og Naturvidenskab* 48 (1946), 89–155, for the central limit theorem for $\log\varkappa^{\mathrm{crd}}$.
 - Hugh L. Montgomery, "The pair correlation of zeros of the zeta function", in *Analytic Number Theory* (American Mathematical Society, 1973), 181–193, for the random-matrix statistics of the zeros.
 - Terence Tao and Van Vu, *Additive Combinatorics* (Cambridge University Press, 2006), and K. Soundararajan, "The distribution of values of the Riemann zeta function", in *Proceedings of the International Congress of Mathematicians* (2014), for the probabilistic viewpoint on the zeta function.

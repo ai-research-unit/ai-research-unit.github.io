@@ -31,7 +31,7 @@ $$
 \boxed{\;\operatorname{Aut}(\mathbb{F}_q) = \operatorname{gal}(\mathbb{F}_q/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/f\;} .
 $$
 
-**Proof.** $\varphi^a = \mathrm{id}$ means $x^{p^a} = x$ for all $x$, that is $\mathbb{F}_q \subseteq \mathbb{F}_{p^a}$, which holds exactly when the degree $f$ divides $a$; the least such $a$ is $f$. For the identification of the groups, every automorphism of $\mathbb{F}_q$ fixes $\mathbb{F}_p$ and is determined by the image of a primitive element, which must be a conjugate of it, that is an element $\zeta^{p^a}$ for a primitive $(q-1)$-th root $\zeta$; since the conjugates are exactly $\varphi^a(\zeta)$, every automorphism is a power of $\varphi$, and the powers are distinct because their orders are the degrees.
+**Proof.** $\varphi^a = \mathrm{id}$ means $x^{p^a} = x$ for all $x$, that is $\mathbb{F}_q \subseteq \mathbb{F}_{p^a}$, which holds exactly when the degree $f$ divides $a$; the least such $a$ is $f$. For the identification of the groups, every automorphism of $\mathbb{F}_q$ fixes $\mathbb{F}_p$ and is determined by the image of a primitive element, which must be a conjugate of it, that is an element $\omega^{p^a}$ for a primitive $(q-1)$-th root $\omega$; since the conjugates are exactly $\varphi^a(\omega)$, every automorphism is a power of $\varphi$, and the powers are distinct because their orders are the degrees.
 
 **Corollary (the lattice of subfields).** For each divisor $d$ of $f$ there is exactly one subfield $\mathbb{F}_{p^d}$ of $\mathbb{F}_q$, consisting of the elements fixed by $\varphi_d$, and there are no others.
 
@@ -71,7 +71,7 @@ $$
 
 satisfy $\mathrm{Tr}(x) \in \mathbb{F}_p$, $N(x) \in \mathbb{F}_p^\times$ and $\varphi \circ \mathrm{Tr} = \mathrm{Tr} \circ \varphi$, $\varphi \circ N = N \circ \varphi$; the trace is a surjective $\mathbb{F}_p$-linear map $\mathbb{F}_q \to \mathbb{F}_p$ and the norm is a surjective homomorphism $\mathbb{F}_q^\times \to \mathbb{F}_p^\times$.
 
-**Proof.** The trace and the norm are invariant under $\varphi$ because $\varphi$ permutes the summands and the factors cyclically, so their values lie in the fixed field $\mathbb{F}_p$. The trace is additive and $\mathbb{F}_p$-linear because each $\varphi^i$ is; it is not identically zero because the distinct field homomorphisms $\mathrm{id}, \varphi, \ldots, \varphi^{f-1}$ are linearly independent (Dedekind's independence lemma), so their sum $\mathrm{Tr}$ is not the zero map, and a nonzero $\mathbb{F}_p$-linear map to a field is surjective. The norm is multiplicative, its value is nonzero for nonzero $x$, and for a primitive element $\zeta$ the value $N(\zeta) = \zeta^{(q-1)/(p-1)}$ is a primitive $(p-1)$-th root, so the norm is surjective.
+**Proof.** The trace and the norm are invariant under $\varphi$ because $\varphi$ permutes the summands and the factors cyclically, so their values lie in the fixed field $\mathbb{F}_p$. The trace is additive and $\mathbb{F}_p$-linear because each $\varphi^i$ is; it is not identically zero because the distinct field homomorphisms $\mathrm{id}, \varphi, \ldots, \varphi^{f-1}$ are linearly independent (Dedekind's independence lemma), so their sum $\mathrm{Tr}$ is not the zero map, and a nonzero $\mathbb{F}_p$-linear map to a field is surjective. The norm is multiplicative, its value is nonzero for nonzero $x$, and for a primitive element $\omega$ the value $N(\omega) = \omega^{(q-1)/(p-1)}$ is a primitive $(p-1)$-th root, so the norm is surjective.
 
 ## The Topological Interpretation
 

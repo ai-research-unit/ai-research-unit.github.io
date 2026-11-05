@@ -23,10 +23,10 @@ A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is impleme
 Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
 
 $$
-R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
+R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
 $$
 
-so that after a time $t'$ the frame has turned by the angle $\\theta^{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components
+so that after a time $t'$ the frame has turned by the angle $\theta^{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components
 
 $$
 \vec a_{\text{rot}}(t') = R^{*}(t')\,\vec a_{\text{in}}\,R(t') .
@@ -117,7 +117,7 @@ $$
 Hence
 
 $$
-z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\\theta^{\mathrm{rat}}) + B\exp(-i\\theta^{\mathrm{rat}})\right),
+z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\theta^{\mathrm{rat}}) + B\exp(-i\theta^{\mathrm{rat}})\right),
 $$
 
 a fast oscillation of frequency $\omega$ whose **envelope rotates at the rate $-\Omega\sin\theta^{\mathrm{foc}}$**. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$, that is, at the rate $\Omega\sin\theta^{\mathrm{foc}}$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.
@@ -131,7 +131,7 @@ $$
 to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\theta^{\mathrm{foc}}\,T$. Over one sidereal day, $T_{\text{day}} = 2\pi/\Omega$, the accumulated precession is
 
 $$
-\boxed{\;\Delta\phi = \Omega\sin\theta^{\mathrm{foc}}\cdot\frac{2\pi}{\Omega} = 2\pi\sin\theta^{\mathrm{foc}}\;},
+\boxed{\;\Delta\theta = \Omega\sin\theta^{\mathrm{foc}}\cdot\frac{2\pi}{\Omega} = 2\pi\sin\theta^{\mathrm{foc}}\;},
 $$
 
 the Foucault angle.
@@ -259,7 +259,7 @@ The Foucault precession is the oldest and simplest member of the family of geome
 
 ## Summary
 
-The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,
+The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\vec u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,
 
 $$
 \boxed{\;\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dt'], \qquad
@@ -277,7 +277,7 @@ $$
 with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$,
 
 $$
-z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\\theta^{\mathrm{rat}}) + B\exp(-i\\theta^{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}} ,
+z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\left(A\exp(i\theta^{\mathrm{rat}}) + B\exp(-i\theta^{\mathrm{rat}})\right), \qquad \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}} ,
 $$
 
 giving the Foucault angle $2\pi\sin\theta^{\mathrm{foc}}$ per sidereal day, independent of $\omega_0$, of the mass and of the amplitude.
@@ -303,7 +303,7 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra (rotation rotors) |
 | $\vec\Omega$ | Angular velocity of the rotating frame; real vector |
 | $\Omega = |\vec\Omega|$, $\vec u = \vec\Omega/\Omega$ | Angular speed; rotation axis |
-| $R(t') = \cos\frac{\\theta^{\mathrm{rat}}}{2} + \sin\frac{\\theta^{\mathrm{rat}}}{2}\vec u$ | Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$ |
+| $R(t') = \cos\frac{\theta^{\mathrm{rat}}}{2} + \sin\frac{\theta^{\mathrm{rat}}}{2}\vec u$ | Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$ |
 | $\vec a_{\text{in}}$, $\vec a_{\text{rot}}$ | Inertial and rotating-frame components of a vector |
 | $[\vec a,\vec b] = 2\vec a\times\vec b$ | Commutator of two real vectors |
 | $-m[\vec\Omega,d\vec\rho/dt']$ | Coriolis force as a commutator |
@@ -312,9 +312,9 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $\theta^{\mathrm{foc}}$ | Latitude; local vertical component $\Omega\sin\theta^{\mathrm{foc}}$ |
 | $\omega_0 = \sqrt{g/\ell}$ | Pendulum frequency |
 | $z = x + iy$ | Complex horizontal coordinate |
-| $z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')(A\exp(i\\theta^{\mathrm{rat}})+B\exp(-i\\theta^{\mathrm{rat}}))$ | Solution; envelope rotation $-\Omega\sin\theta^{\mathrm{foc}}$ |
+| $z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')(A\exp(i\theta^{\mathrm{rat}})+B\exp(-i\theta^{\mathrm{rat}}))$ | Solution; envelope rotation $-\Omega\sin\theta^{\mathrm{foc}}$ |
 | $\omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}}$ | Modified oscillation frequency |
-| $\Delta\phi = 2\pi\sin\theta^{\mathrm{foc}}$ | Foucault angle per sidereal day |
+| $\Delta\theta = 2\pi\sin\theta^{\mathrm{foc}}$ | Foucault angle per sidereal day |
 | $\boldsymbol\gamma(t')$ | Latitude circle on the unit sphere |
 | $\kappa_g$ | Geodesic curvature; $\oint\kappa_g\,ds = 2\pi\sin\theta^{\mathrm{foc}}$ |
 | $2\pi(1-\sin\theta^{\mathrm{foc}})$ | Enclosed solid angle; parallel-transport holonomy |

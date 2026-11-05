@@ -245,7 +245,7 @@ Then $UP=E$ and $U$ has singular values $1$ on the range and $0$ on the kernel.
 
 ## The Root and the Frame
 
-**A root is $*$-unitary exactly when it is normal.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, $H=\sum_k\zeta_kP_k$, with spectral projectors $P_k$. It satisfies $H^{*}H=I$ exactly when the projectors are Hermitian, equivalently when $H$ is normal. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, the projectors are Hermitian and
+**A root is $*$-unitary exactly when it is normal.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, $H=\sum_k\omega_kP_k$, with spectral projectors $P_k$. It satisfies $H^{*}H=I$ exactly when the projectors are Hermitian, equivalently when $H$ is normal. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, the projectors are Hermitian and
 
 $$
 H=H\cdot I,\qquad U=H,\quad P=I .

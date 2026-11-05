@@ -76,10 +76,10 @@ $$
 
 The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\psi_k}{2}$, $s_k=\sinh\tfrac{\psi_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
-For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\\theta^{\\mathrm{wgn}}$ of $\tilde{u}$ is
+For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\theta^{\mathrm{wgn}}$ of $\tilde{u}$ is
 
 $$
-\boxed{\ \\tan\\frac{\\theta^{\\mathrm{wgn}}}{2}
+\boxed{\ \tan\frac{\theta^{\mathrm{wgn}}}{2}
 =\frac{\sinh^{2}\dfrac{\psi}{2}\,\sin\theta}
 {\cosh^{2}\dfrac{\psi}{2}+\sinh^{2}\dfrac{\psi}{2}\,\cos\theta}\ } ,
 $$
@@ -88,7 +88,7 @@ and its axis is the normal to the plane of the two boost directions. The general
 
 Two features of this composition law matter for what follows. First, the **rotation factor is a compact-group element**, an element of the same $SU(2)$ that carries the topology of the cover; the boost part is contractible, and every obstruction in the composition of boosts is carried by the rotation directions. Second, the rotation factor is **absent for a single boost**: a boost is Hermitian, its polar rotation factor is trivial, and no orientation is generated. The Wigner rotation is a property of a pair, or of a path, and it is the compositional side of the same compact structure whose topological side is the two-sheeted cover.
 
-At equal rapidity $\psi=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\theta^{\mathrm{wgn}}=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\psi_1,\psi_2,\varphi)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
+At equal rapidity $\psi=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\theta^{\mathrm{wgn}}=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\psi_1,\psi_2,\theta)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
 
 ## The Rotor Between Neighbouring Rest Frames
 
@@ -125,7 +125,7 @@ The interval rotor makes precise in what sense the Thomas precession is a rotor 
 
 ## The Continuous Limit: The Thomas Precession Rate
 
-The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dt'\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\psi_1=\psi+d\psi$ and $\psi_2=\psi$, and let $\varphi$ be the angle between them, so that $\varphi=\pi-\delta$ with
+The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dt'\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\psi_1=\psi+d\psi$ and $\psi_2=\psi$, and let $\theta$ be the angle between them, so that $\theta=\pi-\delta$ with
 
 $$
 \delta=\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^{2}),
@@ -136,9 +136,9 @@ $$
 the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\psi=\gamma^2(\vec a\cdot\vec u_v)dt'/c$, and to leading order
 
 $$
-\sin\varphi=\delta+O(d{t'}^{3}),
+\sin\theta=\delta+O(d{t'}^{3}),
 \qquad
-\cos\varphi=-1+O(d{t'}^{2}).
+\cos\theta=-1+O(d{t'}^{2}).
 $$
 
 Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\psi}{2}\,\delta+O(d{t'}^{2})$, the $d\psi$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{t'}^{2})$. Hence
@@ -307,9 +307,9 @@ $$
 and a single boost contains no rotation. The composition of two non-collinear boosts is a unit-norm biquaternion with polar decomposition $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\tilde{u}$, and the rotation factor $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ is the Thomas–Wigner rotation, of exact angle
 
 $$
-\\tan\\frac{\\theta^{\\mathrm{wgn}}}{2}
-=\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\varphi}
-{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\varphi},
+\tan\frac{\theta^{\mathrm{wgn}}}{2}
+=\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta}
+{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
 $$
 
 about the normal to the plane of the two boost directions. The rest frames at two neighbouring laboratory times are related by the interval rotor
@@ -351,7 +351,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde U_{\vec v}$ | Lab-to-rest rotor, $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t$ |
 | $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\tilde{u}$ | Polar decomposition of a composition of boosts |
 | $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ | Thomas–Wigner rotation (unit real quaternion) |
-| $\varphi$, $\theta_W$, $\theta^{\mathrm{wgn}}$ | Angle between boost directions; Wigner angle |
+| $\theta$, $\theta_W$, $\theta^{\mathrm{wgn}}$ | Angle between boost directions; Wigner angle |
 | $\vec a=d\vec v/dt'$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ | Interval rotor between neighbouring rest frames |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |

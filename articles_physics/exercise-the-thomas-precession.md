@@ -125,7 +125,7 @@ $$
 =1+O(d{t'}^2).
 \tag{11}
 $$
-The two $d\psi$ terms cancel exactly; the residual $O(d{t'}^2)$ comes from $\cos\theta^{\mathrm{btw}}=-1+\tfrac12\theta^{\mathrm{dfl}}^2+\cdots$, which is already second order.
+The two $d\psi$ terms cancel exactly; the residual $O(d{t'}^2)$ comes from $\cos\theta^{\mathrm{btw}}=-1+\tfrac12{\theta^{\mathrm{dfl}}}^2+\cdots$, which is already second order.
 
 *The angle.* Combining (10) and (11),
 $$

@@ -127,7 +127,7 @@ $$
 
 **Example.** For $L = \mathbb{Q}(\sqrt[3]{2})$, $\mathcal{O}_L = \mathbb{Z}[\varrho]$ with $\varrho^3 = 2$, and $f = x^3 - 2$. Modulo $5$: $x^3 - 2 \equiv x^3 + 3 \pmod 5$, and $3$ is not a cube mod $5$ (the cubes mod $5$ are $0, \pm1$), so $5$ is inert: $e = 1$, $f = 3$, $g = 1$. Modulo $7$: $2$ is a cube mod $7$ since $3^3 = 27 \equiv 6$, $2^3 = 8 \equiv 1$, $4^3 \equiv 1$, $5^3 \equiv 6$, $6^3 \equiv 6$: the cubes mod $7$ are $0, 1, 6$, so $2$ is not a cube and $7$ is inert. Modulo $31$: the cube roots of $2$ are $4$, $7$ and $20$, since $4^3 = 64 \equiv 2$, $7^3 = 343 = 31\cdot 11 + 2$ and $20^3 = 8000 = 31\cdot 258 + 2$; hence $x^3 - 2$ splits into three linear factors and $31$ splits completely with $f = 1$, $g = 3$. Modulo $2$ the polynomial reduces to $x^3$, and modulo $3$ to $x^3 + 1 = (x+1)^3$, so $2$ and $3$ are totally ramified with $e = 3$, $f = 1$, $g = 1$, consistently with the discriminant $-108 = -2^2\cdot 3^3$.
 
-**Example.** For $L = \mathbb{Q}(\zeta_5)$ and $p \neq 5$: the order of $p$ modulo $5$ is the residue degree, and $g = 4/f$. For $p = 2$ the order of $2$ in $(\mathbb{Z}/5\mathbb{Z})^\times$ is $4$, so $f = 4$, $g = 1$: $2$ is inert. For $p = 11 \equiv 1$, $f = 1$ and $g = 4$: $11$ splits completely. For $p = 19 \equiv -1$, the order is $2$, so $f = 2$, $g = 2$. The prime $5$ is totally ramified, $(5) = (1-\zeta_5)^4$.
+**Example.** For $L = \mathbb{Q}(\omega_5)$ and $p \neq 5$: the order of $p$ modulo $5$ is the residue degree, and $g = 4/f$. For $p = 2$ the order of $2$ in $(\mathbb{Z}/5\mathbb{Z})^\times$ is $4$, so $f = 4$, $g = 1$: $2$ is inert. For $p = 11 \equiv 1$, $f = 1$ and $g = 4$: $11$ splits completely. For $p = 19 \equiv -1$, the order is $2$, so $f = 2$, $g = 2$. The prime $5$ is totally ramified, $(5) = (1-\omega_5)^4$.
 
 ### Ramification and the Discriminant
 
@@ -171,7 +171,7 @@ so that the **rank** of the unit group is $r_1 + r_2 - 1$; the free part is gene
 
 **Proof sketch.** The method is to consider the homomorphism $\ell : \mathcal{O}_K^\times \to \mathbb{R}^{r_1+r_2}$ sending a unit to the logarithms of the absolute values of its conjugates; its image is a lattice of rank $r_1 + r_2 - 1$ and its kernel is $\mu_K$. Both the logarithm and the covolume are analytic and metric notions, and the proof therefore belongs to Part II and to Part III, where the logarithm and the volume are available; the statement is recorded here.
 
-**Example.** For $K = \mathbb{Q}$: $r_1 = 1$, $r_2 = 0$, rank $0$, and $\mathcal{O}_\mathbb{Q}^\times = \{\pm1\} = \mu_\mathbb{Q}$. For $K = \mathbb{Q}(i)$: $r_1 = 0$, $r_2 = 1$, rank $0$, and $\mathcal{O}_K^\times = \{\pm1, \pm i\} = \mu_4$. For $K = \mathbb{Q}(\sqrt2)$: $r_1 = 2$, $r_2 = 0$, rank $1$, and $\mathcal{O}_K^\times = \{\pm(1+\sqrt2)^m : m \in \mathbb{Z}\}$, since $(1+\sqrt2)(\sqrt2-1) = 1$. For $K = \mathbb{Q}(\sqrt{-5})$: rank $0$ and $\mathcal{O}_K^\times = \{\pm1\}$, although $h_K = 2$. For $K = \mathbb{Q}(\zeta_5)$: $r_1 = 0$, $r_2 = 2$, rank $1$, in accordance with *Cyclotomic Fields*; and for $K = \mathbb{Q}(\zeta_7)$: $r_1 = 0$, $r_2 = 3$, rank $2$.
+**Example.** For $K = \mathbb{Q}$: $r_1 = 1$, $r_2 = 0$, rank $0$, and $\mathcal{O}_\mathbb{Q}^\times = \{\pm1\} = \mu_\mathbb{Q}$. For $K = \mathbb{Q}(i)$: $r_1 = 0$, $r_2 = 1$, rank $0$, and $\mathcal{O}_K^\times = \{\pm1, \pm i\} = \mu_4$. For $K = \mathbb{Q}(\sqrt2)$: $r_1 = 2$, $r_2 = 0$, rank $1$, and $\mathcal{O}_K^\times = \{\pm(1+\sqrt2)^m : m \in \mathbb{Z}\}$, since $(1+\sqrt2)(\sqrt2-1) = 1$. For $K = \mathbb{Q}(\sqrt{-5})$: rank $0$ and $\mathcal{O}_K^\times = \{\pm1\}$, although $h_K = 2$. For $K = \mathbb{Q}(\omega_5)$: $r_1 = 0$, $r_2 = 2$, rank $1$, in accordance with *Cyclotomic Fields*; and for $K = \mathbb{Q}(\omega_7)$: $r_1 = 0$, $r_2 = 3$, rank $2$.
 
 **Theorem (Hermite–Minkowski).** For a fixed integer $d$ there are only finitely many number fields of discriminant exactly $d$, and $\mathbb{Q}$ is the only number field with $\lvert d_K\rvert = 1$.
 
@@ -209,7 +209,7 @@ the product of the conductors of the characters, where the conductor of a charac
 
 This is the arithmetic form of the factorisation of the discriminant, and it is stated and used in *Class Field Theory*, where the conductor $\mathrm{F}(\chi)$ is defined; for a quadratic extension there are exactly two characters, the trivial one and the quadratic one whose conductor has norm $\lvert d_K\rvert$.
 
-**Example.** For $L = \mathbb{Q}(\zeta_m)/\mathbb{Q}$, all the characters of $G \cong (\mathbb{Z}/m\mathbb{Z})^\times$ are one-dimensional, with conductors dividing $(m)\infty$; the conductor–discriminant formula gives $\lvert d_L\rvert = \prod_\chi f(\chi) = m^{\varphi(m)}$ up to the correction of the $2$-adic factors, and indeed the discriminant of $\mathbb{Q}(\zeta_m)$ is $(-1)^{\varphi(m)/2}m^{\varphi(m)}/\prod_{p \mid m}p^{\varphi(m)/(p-1)}$, the standard formula, as the values $5^3 = 125$ for $m = 5$ and $8^4/2^4 = 256$ for $m = 8$ illustrate. For $m = p$ prime this reads $d_{\mathbb{Q}(\zeta_p)} = (-1)^{(p-1)/2}p^{p-2}$.
+**Example.** For $L = \mathbb{Q}(\omega_m)/\mathbb{Q}$, all the characters of $G \cong (\mathbb{Z}/m\mathbb{Z})^\times$ are one-dimensional, with conductors dividing $(m)\infty$; the conductor–discriminant formula gives $\lvert d_L\rvert = \prod_\chi f(\chi) = m^{\varphi(m)}$ up to the correction of the $2$-adic factors, and indeed the discriminant of $\mathbb{Q}(\omega_m)$ is $(-1)^{\varphi(m)/2}m^{\varphi(m)}/\prod_{p \mid m}p^{\varphi(m)/(p-1)}$, the standard formula, as the values $5^3 = 125$ for $m = 5$ and $8^4/2^4 = 256$ for $m = 8$ illustrate. For $m = p$ prime this reads $d_{\mathbb{Q}(\omega_p)} = (-1)^{(p-1)/2}p^{p-2}$.
 
 **Example.** For a quadratic field $L = \mathbb{Q}(\sqrt d)$ with $d$ squarefree, the group has two characters, the trivial one of conductor $(1)$ and the quadratic character of conductor $\lvert d_L\rvert$, so the formula returns $\mathrm{d}_{L/\mathbb{Q}} = \lvert d_L\rvert$, in agreement with the computation of the discriminant above.
 
@@ -223,7 +223,7 @@ This is the arithmetic form of the factorisation of the discriminant, and it is 
 
 ### Cyclotomic Fields
 
-**Example.** For $K = \mathbb{Q}(\zeta_m)$ with ring of integers $\mathbb{Z}[\zeta_m]$, the ramified primes are exactly the divisors of $m$, and an unramified prime $p$ has residue degree $f$ equal to the order of $p$ modulo $m$ and $g = \varphi(m)/f$ primes above it; this is *Cyclotomic Fields*. For $m = 8$: since $\zeta_8 = (1+i)/\sqrt2$ one has $\mathbb{Z}[\zeta_8] = \mathbb{Z}[\sqrt2,i]$, the ring of integers of $\mathbb{Q}(\zeta_8)$ is $\mathcal{O}_K = \mathbb{Z}[\zeta_8]$ with discriminant $d_K = 256$, the prime $2$ is totally ramified with $(2) = (1-\zeta_8)^4$, and an odd prime $p$ splits into $\varphi(8)/f = 4/f$ primes, where $f$ is the order of $p$ modulo $8$.
+**Example.** For $K = \mathbb{Q}(\omega_m)$ with ring of integers $\mathbb{Z}[\omega_m]$, the ramified primes are exactly the divisors of $m$, and an unramified prime $p$ has residue degree $f$ equal to the order of $p$ modulo $m$ and $g = \varphi(m)/f$ primes above it; this is *Cyclotomic Fields*. For $m = 8$: since $\omega_8 = (1+i)/\sqrt2$ one has $\mathbb{Z}[\omega_8] = \mathbb{Z}[\sqrt2,i]$, the ring of integers of $\mathbb{Q}(\omega_8)$ is $\mathcal{O}_K = \mathbb{Z}[\omega_8]$ with discriminant $d_K = 256$, the prime $2$ is totally ramified with $(2) = (1-\omega_8)^4$, and an odd prime $p$ splits into $\varphi(8)/f = 4/f$ primes, where $f$ is the order of $p$ modulo $8$.
 
 ### Pure Cubic Fields
 
@@ -238,8 +238,8 @@ This is the arithmetic form of the factorisation of the discriminant, and it is 
 | $\mathbb{Q}(\sqrt{-5})$ | $2$ | $0$ | $1$ | $0$ | $2$ |
 | $\mathbb{Q}(\sqrt2)$ | $2$ | $2$ | $0$ | $1$ | $1$ |
 | $\mathbb{Q}(\sqrt[3]{2})$ | $3$ | $1$ | $1$ | $1$ | $1$ |
-| $\mathbb{Q}(\zeta_5)$ | $4$ | $0$ | $2$ | $1$ | $1$ |
-| $\mathbb{Q}(\zeta_7)$ | $6$ | $0$ | $3$ | $2$ | $1$ |
+| $\mathbb{Q}(\omega_5)$ | $4$ | $0$ | $2$ | $1$ | $1$ |
+| $\mathbb{Q}(\omega_7)$ | $6$ | $0$ | $3$ | $2$ | $1$ |
 
 The class numbers are from *Dedekind Domains and Ideal Class Groups* and *Class Field Theory*; the ranks are $r_1 + r_2 - 1$.
 

@@ -74,7 +74,7 @@ $$
 
 so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
 
-**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
+**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\psi^{\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
 All the derivatives below are $\tilde\nabla$, $\tilde\nabla^{\natural}$ and their pure part $D_3$, and no other differential operator appears. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made. Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$; the field is one element $F\in\mathbb B$ split into its two parts, $F=F_L+F_R$, of value $-1$ and $+1$. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Since $\vec e_z=-\omega$ with $\omega$ the pseudoscalar of the frame, $\omega^2=-e_t$, the chirality is also written $F\mapsto iF\omega$; the $i$ in front of it is the central scalar $i$ of the algebra and not $\omega$.
 
@@ -150,15 +150,15 @@ $$
 
 so that $O$ is odd, $q\Phi$ is even, and $H$ is Hermitian. The eigenvalues of $H$ at zero potential are $\pm\sqrt{m^2c^4+c^2\vec\pi^2}$, which is the mass shell $\tilde K^{\natural}\tilde K=m^2$ of the pair.
 
-**The two halves.** With $\beta\varphi=+\varphi$ and $\beta\chi=-\chi$, the equation of motion reads on the two parts
+**The two halves.** With $\beta\psi^{\mathrm{evn}}=+\psi^{\mathrm{evn}}$ and $\beta\psi^{\mathrm{odd}}=-\psi^{\mathrm{odd}}$, the equation of motion reads on the two parts
 
 $$
-i\hbar\frac{\partial\varphi}{\partial t'}=mc^2\varphi+O\chi+q\Phi\varphi,
+i\hbar\frac{\partial\psi^{\mathrm{evn}}}{\partial t'}=mc^2\psi^{\mathrm{evn}}+O\psi^{\mathrm{odd}}+q\Phi\psi^{\mathrm{evn}},
 \qquad
-i\hbar\frac{\partial\chi}{\partial t'}=-mc^2\chi+O\varphi+q\Phi\chi .
+i\hbar\frac{\partial\psi^{\mathrm{odd}}}{\partial t'}=-mc^2\psi^{\mathrm{odd}}+O\psi^{\mathrm{evn}}+q\Phi\psi^{\mathrm{odd}} .
 $$
 
-The even operator $q\Phi$ is the electrostatic energy and the odd operator $O$ is what couples the large and the small parts: $O\varphi$ is small and $O\chi$ is large. This is the system reduced in Problem 1.
+The even operator $q\Phi$ is the electrostatic energy and the odd operator $O$ is what couples the large and the small parts: $O\psi^{\mathrm{evn}}$ is small and $O\psi^{\mathrm{odd}}$ is large. This is the system reduced in Problem 1.
 
 ## Problem 1: The Foldy–Wouthuysen elimination of the small component
 
@@ -179,23 +179,23 @@ and the odd operator is the pure part of the gauged gradient, $\sum_k\vec e_k\pi
 *Step 2: factoring out the rest energy.* Write $F=\exp(-i\theta)\,G$ with $\theta=mc^2t'/\hbar$. The factor is the central element $\cos\theta-i\sin\theta$, which commutes with every operator of the reduction, so it can be cancelled on both sides. What is left of the mass term is $(\beta-1)mc^2$, which vanishes on the large part and is $-2mc^2$ on the small part, and the parent's two coupled equations follow:
 
 $$
-i\hbar\frac{\partial\varphi}{\partial t'}=O\chi+q\Phi\varphi,
+i\hbar\frac{\partial\psi^{\mathrm{evn}}}{\partial t'}=O\psi^{\mathrm{odd}}+q\Phi\psi^{\mathrm{evn}},
 $$
 
 $$
-i\hbar\frac{\partial\chi}{\partial t'}=O\varphi-2mc^2\chi+q\Phi\chi .
+i\hbar\frac{\partial\psi^{\mathrm{odd}}}{\partial t'}=O\psi^{\mathrm{evn}}-2mc^2\psi^{\mathrm{odd}}+q\Phi\psi^{\mathrm{odd}} .
 $$
 
-*Step 3: the leading elimination.* The term $2mc^2\chi$ dominates the second equation whenever the fields, the kinetic energy and $\partial\chi/\partial t'$ are small compared with $mc^2$. Neglecting the other terms there,
+*Step 3: the leading elimination.* The term $2mc^2\psi^{\mathrm{odd}}$ dominates the second equation whenever the fields, the kinetic energy and $\partial\psi^{\mathrm{odd}}/\partial t'$ are small compared with $mc^2$. Neglecting the other terms there,
 
 $$
-\chi=\frac{O}{2mc^2}\,\varphi+O(c^{-3}),
+\psi^{\mathrm{odd}}=\frac{O}{2mc^2}\,\psi^{\mathrm{evn}}+O(c^{-3}),
 $$
 
-so the small part is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\chi$ exactly at this order:
+so the small part is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\psi^{\mathrm{odd}}$ exactly at this order:
 
 $$
-i\hbar\frac{\partial\varphi}{\partial t'}=\left[\frac{O^2}{2mc^2}+q\Phi\right]\varphi ,
+i\hbar\frac{\partial\psi^{\mathrm{evn}}}{\partial t'}=\left[\frac{O^2}{2mc^2}+q\Phi\right]\psi^{\mathrm{evn}} ,
 $$
 
 and on the large part $O^2/(2mc^2)=(\vec\pi^2-\hbar q\boldsymbol\sigma\cdot\vec B)/2m$, whose leading term is $\vec\pi^2/2m$ and whose remainder is evaluated in Problem 2.
@@ -265,7 +265,7 @@ $$
 Subtracting the rest energy,
 
 $$
-\boxed{\;i\hbar\frac{\partial\varphi}{\partial t'}=\left[\frac{(p-q\vec A)^2}{2m}+q\Phi-\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\varphi\;}
+\boxed{\;i\hbar\frac{\partial\psi^{\mathrm{evn}}}{\partial t'}=\left[\frac{(p-q\vec A)^2}{2m}+q\Phi-\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\psi^{\mathrm{evn}}\;}
 $$
 
 which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.
@@ -315,7 +315,7 @@ O^2=c^2\bigl(\vec\pi^2-i\hbar q\vec B\bigr)
 c^2\bigl(\vec\pi^2-\hbar q\,\boldsymbol\sigma\cdot\vec B\bigr)
 $$
 
-on the large part, which is the parent's result, with $\hbar$ restored. The coefficient carries no power of $c$: the two factors of $c$ in the elimination cancel, since $\chi=O\varphi/(2mc^2)$ is multiplied by $O$ in the first equation. The identification $\vec S=\tfrac\hbar2\boldsymbol\sigma$ gives the spin term
+on the large part, which is the parent's result, with $\hbar$ restored. The coefficient carries no power of $c$: the two factors of $c$ in the elimination cancel, since $\psi^{\mathrm{odd}}=O\psi^{\mathrm{evn}}/(2mc^2)$ is multiplied by $O$ in the first equation. The identification $\vec S=\tfrac\hbar2\boldsymbol\sigma$ gives the spin term
 
 $$
 -\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B=-\frac{q}{m}\,\vec S\cdot\vec B=-\vec\mu\cdot\vec B .
@@ -537,7 +537,7 @@ $$
 S_1=-\frac{i}{2mc^2}\beta O=-\frac{1}{2mc}\sum_k\vec e_k\pi_k\,(\cdot)\,\vec e_z=\frac{i\hbar}{2mc}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $i\hbar\,\partial\varphi/\partial t'=\bigl[\vec\pi^2/2m+q\Phi-(q\hbar/2m)\boldsymbol\sigma\cdot\vec B\bigr]\varphi$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-q\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $i\hbar\,\partial\psi^{\mathrm{evn}}/\partial t'=\bigl[\vec\pi^2/2m+q\Phi-(q\hbar/2m)\boldsymbol\sigma\cdot\vec B\bigr]\psi^{\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-q\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 

@@ -24,29 +24,29 @@ $$
 K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
 $$
 
-Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\varphi_j(X) = S_j(X)/\hbar$ for its phase,
+Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\theta^{\mathrm{pha}}_j(X) = S_j(X)/\hbar$ for its phase,
 
 $$
-K_j(X) = a_j(X)\, \exp(i\varphi_j(X))\, e_t .
+K_j(X) = a_j(X)\, \exp(i\theta^{\mathrm{pha}}_j(X))\, e_t .
 $$
 
 The total amplitude is the **sum of the two alternatives**,
 
 $$
-K(X) = K_1(X) + K_2(X) = \bigl(a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)\bigr) e_t ,
+K(X) = K_1(X) + K_2(X) = \bigl(a_1 \exp(i\theta^{\mathrm{pha}}_1) + a_2 \exp(i\theta^{\mathrm{pha}}_2)\bigr) e_t ,
 $$
 
 which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:
 
 $$
-\boxed{\;K(X)K(X)^{*} = I(X)\,e_t, \qquad I(X) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(X), \qquad \delta(X) := \varphi_1(X) - \varphi_2(X)\;}.
+\boxed{\;K(X)K(X)^{*} = I(X)\,e_t, \qquad I(X) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(X), \qquad \delta(X) := \theta^{\mathrm{pha}}_1(X) - \theta^{\mathrm{pha}}_2(X)\;}.
 $$
 
-**Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $KK^{*}$; and it cancels in any state built from $K$ as well, since $KK^{*} \mapsto \exp(ic)KK^{*} \exp(-ic) = KK^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
+**Only the relative phase is observable.** The substitution $\theta^{\mathrm{pha}}_j \mapsto \theta^{\mathrm{pha}}_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $KK^{*}$; and it cancels in any state built from $K$ as well, since $KK^{*} \mapsto \exp(ic)KK^{*} \exp(-ic) = KK^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
 
 Two observations about where the objects live belong here, because later sections use them.
 
-- **The relative phase is central.** $\delta = \varphi_1 - \varphi_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict'$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
+- **The relative phase is central.** $\delta = \theta^{\mathrm{pha}}_1 - \theta^{\mathrm{pha}}_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict'$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
 - **The scalar amplitude carries no spin.** $K$ is a complex scalar times $e_t$; it is not an element of $\mathbb{M}_+$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the centre $\mathbb{C}_{\mathbb{B}}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.
 
 ## The Fringe Pattern
@@ -197,13 +197,13 @@ $$
 
 verified directly in the matrix representation. It is a **relative** phase between the two spin components — a spin rotation — not a global phase shared by both.
 
-Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $\mathrm{Tr}(s^\dagger s) = 1$). The total amplitude is $\tilde{W}s$ with $\tilde{W} = a_1 \exp(\vec{u}\varphi_1) + a_2 \exp(\vec{u}\varphi_2)$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
+Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $\mathrm{Tr}(s^\dagger s) = 1$). The total amplitude is $\tilde{W}s$ with $\tilde{W} = a_1 \exp(\vec{u}\theta^{\mathrm{pha}}_1) + a_2 \exp(\vec{u}\theta^{\mathrm{pha}}_2)$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
 
 $$
 \mathrm{Tr}\!\bigl((\tilde{W}s)^\dagger(\tilde{W}s)\bigr) = \mathrm{Tr}\bigl(s^\dagger \tilde{W}^{\natural}\tilde{W}s\bigr) = \langle\tilde{W}\rangle_{\natural}\,\mathrm{Tr}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
-because $\tilde{W}^{\natural}\tilde{W} = \langle\tilde{W}\rangle_{\natural}e_t$ is central and $\langle\tilde{W}\rangle_{\natural} = \langle\tilde{W},\tilde{W}\rangle_{\natural} = \bigl(\sum_k a_k\cos\varphi_k\bigr)^2 + \bigl(\sum_k a_k\sin\varphi_k\bigr)^2 = |a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
+because $\tilde{W}^{\natural}\tilde{W} = \langle\tilde{W}\rangle_{\natural}e_t$ is central and $\langle\tilde{W}\rangle_{\natural} = \langle\tilde{W},\tilde{W}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta^{\mathrm{pha}}_k\bigr)^2 + \bigl(\sum_k a_k\sin\theta^{\mathrm{pha}}_k\bigr)^2 = |a_1 \exp(i\theta^{\mathrm{pha}}_1) + a_2 \exp(i\theta^{\mathrm{pha}}_2)|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
 
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 
@@ -222,7 +222,7 @@ $$
 I = \mathrm{Tr}(\psi^\dagger\psi) = \mathrm{Tr}(\psi_1^\dagger\psi_1) + \mathrm{Tr}(\psi_2^\dagger\psi_2) + 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2),
 $$
 
-which was checked on random spinor pairs to machine precision. Write $\psi_j = a_j \exp(i\varphi_j)s_j$ with $s_j$ normalised spinors. Then $\mathrm{Tr}(\psi_j^\dagger\psi_j) = a_j^2$ and the cross term is
+which was checked on random spinor pairs to machine precision. Write $\psi_j = a_j \exp(i\theta^{\mathrm{pha}}_j)s_j$ with $s_j$ normalised spinors. Then $\mathrm{Tr}(\psi_j^\dagger\psi_j) = a_j^2$ and the cross term is
 
 $$
 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2) = 2a_1a_2\,\bigl|\langle s_1, s_2\rangle_{*}\bigr|\,\cos\!\bigl(\delta - \arg\langle s_1,s_2\rangle\bigr),
@@ -313,8 +313,8 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $K_j = a_j \exp(i\varphi_j) e_t$ | Route amplitude through slit $j$; central |
-| $\varphi_j = S_j/\hbar$, $\delta = \varphi_1 - \varphi_2$ | Route phase; relative phase |
+| $K_j = a_j \exp(i\theta^{\mathrm{pha}}_j) e_t$ | Route amplitude through slit $j$; central |
+| $\theta^{\mathrm{pha}}_j = S_j/\hbar$, $\delta = \theta^{\mathrm{pha}}_1 - \theta^{\mathrm{pha}}_2$ | Route phase; relative phase |
 | $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ | Two-path intensity |
 | $d, D, \lambda, k = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |
 | $\vec{u}$ | Unit pure real quaternion; path (pointer) axis |

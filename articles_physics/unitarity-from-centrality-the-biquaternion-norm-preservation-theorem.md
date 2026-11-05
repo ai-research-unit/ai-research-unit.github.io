@@ -119,13 +119,13 @@ $$
 =\mathrm{Tr}\bigl(\tilde Q\tilde Q_1^{*}\tilde Q^{*}\tilde Q\tilde Q_1\tilde Q^{*}\bigr)
 =\mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\varphi|\tilde Q_4\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
+using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle\,|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|$ and
 $$
 \mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr)
-=\langle\varphi|\tilde Q_4\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde Q_4\bigr)
-=\langle\varphi|\tilde Q_4\varphi\rangle^2 .
+=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle\,\mathrm{Tr}\bigl(|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|\tilde Q_4\bigr)
+=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\varphi|\tilde Q_4\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde Q_4\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde Q_4=e_t$.
+The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle^2=1$ for every unit $\chi^{\mathrm{alt}}$; positivity gives $\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle=1$ for all unit $\chi^{\mathrm{alt}}$, hence $\tilde Q_4=e_t$.
 
 The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_1^{*})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde Q}$ exactly when $\tilde Q$ is $*$-unitary, which is the standard statement of unitarity in the framework's language.
 

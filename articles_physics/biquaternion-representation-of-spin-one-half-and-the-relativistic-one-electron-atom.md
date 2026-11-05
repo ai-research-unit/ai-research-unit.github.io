@@ -138,26 +138,26 @@ $$
 **The source writes $D^\dagger$ for the conjugate, and the corpus writes $D^{*}$ for the Hermitian conjugate of an element**, the dagger being reserved for operators. The source's rotation operator and its conjugate are
 
 $$
-D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+D(n,\theta) = e_t\cos\frac{\theta}{2} - i\left(q_p\cdot n\right)\sin\frac{\theta}{2},
 \qquad
-D^{*}(n,\varphi) = e_t\cos\frac{\varphi}{2} + i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+D^{*}(n,\theta) = e_t\cos\frac{\theta}{2} + i\left(q_p\cdot n\right)\sin\frac{\theta}{2},
 $$
 
 with $q_p$ the source's spin vector, whose component along the axis $n$ is $q_p\cdot n=-i(\vec e\cdot n)$ — the unit-spin vector times $-i$, not $\vec e\cdot n$ itself. Since $-i(-i)=i^2=-1$, the general formula reduces to
 
 $$
-D(n,\varphi)=e_t\cos\frac{\varphi}{2}-(\vec e\cdot n)\sin\frac{\varphi}{2},
+D(n,\theta)=e_t\cos\frac{\theta}{2}-(\vec e\cdot n)\sin\frac{\theta}{2},
 \qquad
-D^{*}(n,\varphi)=e_t\cos\frac{\varphi}{2}+(\vec e\cdot n)\sin\frac{\varphi}{2}.
+D^{*}(n,\theta)=e_t\cos\frac{\theta}{2}+(\vec e\cdot n)\sin\frac{\theta}{2}.
 $$
 
 **For the three axes the source's (14)–(16) read**
 
 $$
 \begin{aligned}
-D(x,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_z\sin\frac{\varphi}{2},\\
-D(y,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_y\sin\frac{\varphi}{2},\\
-D(z,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_x\sin\frac{\varphi}{2}.
+D(x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\\
+D(y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\\
+D(z,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_x\sin\frac{\theta}{2}.
 \end{aligned}
 $$
 
@@ -169,15 +169,15 @@ $$
 \boxed{\;
 \begin{aligned}
 D^{*} S_xD &= S_x,\\
-D^{*} S_yD &= \cos\varphi\,S_y-\sin\varphi\,S_z,\\
-D^{*} S_zD &= \cos\varphi\,S_z+\sin\varphi\,S_y.
+D^{*} S_yD &= \cos\theta\,S_y-\sin\theta\,S_z,\\
+D^{*} S_zD &= \cos\theta\,S_z+\sin\theta\,S_y.
 \end{aligned}\;}
 $$
 
 **The component along the axis is invariant and the two transverse components rotate into one another** in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),
 
 $$
-D^{*}(n_a,\varphi)S_jD(n_a,\varphi)=\frac{\hbar}{2}\left(q_j\cos\varphi+q_k\sin\varphi\right),
+D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{\hbar}{2}\left(q_j\cos\theta+q_k\sin\theta\right),
 $$
 
 where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.
@@ -249,7 +249,7 @@ $$
 
 $$
 \begin{aligned}
-\rho(\theta,\phi)=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
+\rho(\theta,\theta^{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
 +C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
 &+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
 +C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
@@ -406,7 +406,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 | $q_+ = \tfrac{1}{\sqrt2}(e_t - i\vec e_x)$, $q_- = \tfrac{1}{\sqrt2}(-\vec e_y - i\vec e_z)$ | The source's two states |
 | $\tfrac12(e_t \pm i\vec e_x)$ | The two pure states along $\vec e_x$; the minus member is $q_+/\sqrt2$ |
 | $\tfrac12(-\vec e_y - i\vec e_z)$ | The square-zero element $q_-/\sqrt2$ |
-| $D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$, $q_p\cdot n=-i(\vec e\cdot n)$ | The source's rotation operator; a unit-norm element |
+| $D(n,\theta) = e_t\cos\frac{\theta}{2} - i(q_p\cdot n)\sin\frac{\theta}{2}$, $q_p\cdot n=-i(\vec e\cdot n)$ | The source's rotation operator; a unit-norm element |
 | $S_\pm = S_x \pm iS_y$ | The source's ladder operators; $S_- = S_+^{*}$ |
 | $Y_l^{s_{\mathrm{tot},z}\pm\frac12}$, $C_1, \dots, C_4$ | The angular harmonics and the source's coefficients, the radicals $C_{l1},C_{l2}$ beside its (20), called Clebsch–Gordan in its (25) |
 | $\sqrt2\,q_+ = e_t - i\vec e_x$, $\sqrt2\,q_- = -\vec e_y - i\vec e_z$ | The two fixed elements in which the radial pair $(F,G)$ is borne |

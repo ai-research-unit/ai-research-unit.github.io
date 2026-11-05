@@ -80,10 +80,10 @@ the left multiplication by the element $-d\sum_kE_k\,i\vec e_k$ of $\mathbb{M}_+
 **The dimension and the size.** The EDM has the dimensions of electric charge times length. In natural units, $d$ is dimensionless times a length, i.e. $[\mathrm{GeV}^{-1}]$, with the conversion given in the Introduction. For a fermion of mass $m_f$ and a new-physics scale $\Lambda$, the standard dimensional estimate of a CP-violating contribution is
 
 $$
-d \sim \frac{e\,m_f}{\Lambda^2}\,\sin\varphi ,
+d \sim \frac{e\,m_f}{\Lambda^2}\,\sin\theta^{\mathrm{pha}} ,
 $$
 
-where $\varphi$ is the CP-odd phase. The estimate is the one that governs the reach of the experiments: the smaller the bound, the larger the scale probed, and the heavier the fermion, the larger the contribution. The numbers are used in the last section.
+where $\theta^{\mathrm{pha}}$ is the CP-odd phase. The estimate is the one that governs the reach of the experiments: the smaller the bound, the larger the scale probed, and the heavier the fermion, the larger the contribution. The numbers are used in the last section.
 
 **The observable.** A permanent EDM precesses in an electric field, and the precession is what the experiments measure — in atoms and molecules, in stored neutrons, and in storage rings. The observable is the coefficient of the spin along $\vec E$, the leading CP-odd electromagnetic coupling of a spin-$\tfrac12$ particle. The framework's proton and neutron articles treat those composites and note that the framework supplies no value for their EDMs; this article treats the operator and its structure.
 
@@ -328,10 +328,10 @@ so that the two coefficients are the form factors at zero momentum transfer, mul
 
 The bounds have improved by many orders of magnitude over the decades and are the tightest CP-odd constraints in particle physics. The values are those of the standard reviews.
 
-**The scales they probe.** The dimensional estimate $d\sim e\,m_f\sin\varphi/\Lambda^2$ converts the bounds into a reach. Since $d$ is quoted in units of $e\cdot\mathrm{cm}$, the charge is factored out of the number and the estimate is used in the form
+**The scales they probe.** The dimensional estimate $d\sim e\,m_f\sin\theta^{\mathrm{pha}}/\Lambda^2$ converts the bounds into a reach. Since $d$ is quoted in units of $e\cdot\mathrm{cm}$, the charge is factored out of the number and the estimate is used in the form
 
 $$
-\frac{d}{e} \sim \frac{m_f}{\Lambda^2}\,\sin\varphi .
+\frac{d}{e} \sim \frac{m_f}{\Lambda^2}\,\sin\theta^{\mathrm{pha}} .
 $$
 
 For the electron, $m_e=0.511\ \mathrm{MeV}=5.11\times10^{-4}\ \mathrm{GeV}$, and the conversion $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$ was used; the numbers were recomputed,
@@ -488,7 +488,7 @@ $$
 + \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\psi\,F_3 + \cdots
 $$
 
-exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\varphi/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
+exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta^{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
 
 ## Summary of Notation
 
@@ -512,7 +512,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $H_{\mathrm{NR}}=-d\sum_kE_k\,i\vec e_k$ | EDM nonrelativistic Hamiltonian |
 | $F_1,F_2,F_3$ | Charge, anomalous magnetic moment, EDM form factors |
 | $d=\tfrac{e}{2m}F_3(0)$, $\mu=\tfrac{e}{2m}(1+F_2(0))$ | EDM and magnetic moment |
-| $d/e\sim m_f\sin\varphi/\Lambda^2$ | Dimensional estimate, the charge factored out of the $e\cdot\mathrm{cm}$ unit |
+| $d/e\sim m_f\sin\theta^{\mathrm{pha}}/\Lambda^2$ | Dimensional estimate, the charge factored out of the $e\cdot\mathrm{cm}$ unit |
 | $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$ | EDM unit conversion |
 | $\lvert d_e\rvert\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$ | Electron EDM bound |
 | $\lvert d_n\rvert\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$ | Neutron EDM bound |

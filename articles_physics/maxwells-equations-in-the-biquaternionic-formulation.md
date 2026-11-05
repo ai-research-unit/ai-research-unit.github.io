@@ -68,7 +68,7 @@ $$
 \tilde{A} = A_0 + \vec A, \qquad A_0 = i\,a'_t,
 $$
 
-where $a'_t=\phi/c$ is the temporal parameter, the scalar potential in the unit of $\vec A$, and $\vec A$ is the vector potential. The coefficient of $e_t$ is $A_t=i\,a'_t$, the imaginary case of the general $A_t=a_t+i\,a'_t$. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
+where $a'_t=\chi^{\mathrm{scp}}/c$ is the temporal parameter, the scalar potential in the unit of $\vec A$, and $\vec A$ is the vector potential. The coefficient of $e_t$ is $A_t=i\,a'_t$, the imaginary case of the general $A_t=a_t+i\,a'_t$. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
 
 The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
 
@@ -138,11 +138,11 @@ The scalar part comes from $e_te_t=e_t$ and from the minus in $\tilde{\nabla}^{\
 
 $$
 \frac{\partial \vec A}{\partial Q_t}-\nabla A_0
-=-\frac{i}{c}\frac{\partial\vec A}{\partial t'}-\frac{i}{c}\nabla\phi
-=-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial t'}+\nabla\phi\Bigr),
+=-\frac{i}{c}\frac{\partial\vec A}{\partial t'}-\frac{i}{c}\nabla\chi^{\mathrm{scp}}
+=-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial t'}+\nabla\chi^{\mathrm{scp}}\Bigr),
 $$
 
-using $A_0 = i\,a'_t$, $a'_t=\phi/c$ and $i^2=-1$. With $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,
+using $A_0 = i\,a'_t$, $a'_t=\chi^{\mathrm{scp}}/c$ and $i^2=-1$. With $\vec E=-\nabla\chi^{\mathrm{scp}}-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,
 
 $$
 \mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)
@@ -174,7 +174,7 @@ $$
 F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu ,
 $$
 
-antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(\partial A_k/\partial t'+\partial \phi/\partial x_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
+antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(\partial A_k/\partial t'+\partial \chi^{\mathrm{scp}}/\partial x_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector** $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,
 
@@ -396,10 +396,10 @@ which means
 $$
 S=\frac{\partial A_0}{\partial Q_t} + \mathrm{div}\,\vec A
 =-\frac{i}{c}\frac{\partial}{\partial t'}\Bigl(i\,a'_t\Bigr)+\mathrm{div}\,\vec A
-=\frac{1}{c^2}\frac{\partial\phi}{\partial t'}+\mathrm{div}\,\vec A=0,
+=\frac{1}{c^2}\frac{\partial\chi^{\mathrm{scp}}}{\partial t'}+\mathrm{div}\,\vec A=0,
 $$
 
-where the two factors of $i$ give $i^2=-1$, $a'_t=\phi/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
+where the two factors of $i$ give $i^2=-1$, $a'_t=\chi^{\mathrm{scp}}/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
 
 $$
 \Box \tilde{A} = -\mu \tilde J,
@@ -435,7 +435,7 @@ $$
 \vec\ell = \vec\omega\times\vec v_f.
 $$
 
-The quantity $\vec\ell$ is the **Lamb vector**. Comparison with the potential relations of the electromagnetic theory, $\vec B = \nabla\times\vec A$ and $\vec E = -\nabla\phi - \partial/\partial t'\vec A$, suggests the pairing
+The quantity $\vec\ell$ is the **Lamb vector**. Comparison with the potential relations of the electromagnetic theory, $\vec B = \nabla\times\vec A$ and $\vec E = -\nabla\chi^{\mathrm{scp}} - \partial/\partial t'\vec A$, suggests the pairing
 
 $$
 \vec v_f\;\leftrightarrow\;\vec A,
@@ -444,10 +444,10 @@ $$
 \qquad
 \vec\ell\;\leftrightarrow\;\vec E,
 \qquad
-\frac{p}{\rho_f}+\frac{|\vec v_f|^2}{2}\;\leftrightarrow\;\phi .
+\frac{p}{\rho_f}+\frac{|\vec v_f|^2}{2}\;\leftrightarrow\;\chi^{\mathrm{scp}} .
 $$
 
-With these identifications the Lamb form of the Euler equation *is* the definition of the electric field from the potentials, $\vec E = -\nabla\phi - \partial/\partial t'\vec A$, and its curl is the vorticity equation
+With these identifications the Lamb form of the Euler equation *is* the definition of the electric field from the potentials, $\vec E = -\nabla\chi^{\mathrm{scp}} - \partial/\partial t'\vec A$, and its curl is the vorticity equation
 
 $$
 \partial/\partial t'\vec\omega = -\,\nabla\times\vec\ell,
@@ -502,7 +502,7 @@ F^*\begin{pmatrix} -\partial/\partial t' \\ \nabla \end{pmatrix} = \begin{pmatri
 cF\begin{pmatrix} -\partial/\partial t' \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \vec J \end{pmatrix}.
 $$
 
-The first holds identically, because it is the two definitions $\rho = \mathrm{div}\,\vec E$ and $\vec J = \mathrm{rot}\,\vec B - \partial/\partial t'\vec E$; the second vanishes exactly when the two homogeneous laws hold; so the third, the paper's one equation, holds exactly when the Maxwell system holds. Recomputing the three on fields built from potentials, $\vec B = \mathrm{rot}\,\vec A$ and $\vec E = -\partial/\partial t'\vec A - \nabla\phi$, gives agreement to $6 \times 10^{-17}$ for the first and the third and $1 \times 10^{-17}$ for the vanishing of the second, and on a field that violates the homogeneous laws the discrepancy in the third is exactly $i\left(\mathrm{div}\,\vec B,\; -(\partial/\partial t'\vec B + \mathrm{rot}\,\vec E)\right)$, so the equivalence is exact rather than numerical coincidence. The paper also records the version of the same equation for the four fields $\vec E, \vec B, \vec D, \vec H$, in which $\vec D + i\vec B$ occupies the vector slots: the shape of the matrix is unchanged, but the paper notes that the square of that matrix is no longer a multiple of the identity — as it is for the form above, where $cF^2 = \langle\vec N,\vec N\rangle I$ — and that this property singles out the first form among all matrices of the second. Both statements were checked: $cF^2 = \langle\vec N,\vec N\rangle I$ exactly, and the second form's square misses a multiple of the identity by at least $14$ over $100$ random pairs of vectors.
+The first holds identically, because it is the two definitions $\rho = \mathrm{div}\,\vec E$ and $\vec J = \mathrm{rot}\,\vec B - \partial/\partial t'\vec E$; the second vanishes exactly when the two homogeneous laws hold; so the third, the paper's one equation, holds exactly when the Maxwell system holds. Recomputing the three on fields built from potentials, $\vec B = \mathrm{rot}\,\vec A$ and $\vec E = -\partial/\partial t'\vec A - \nabla\chi^{\mathrm{scp}}$, gives agreement to $6 \times 10^{-17}$ for the first and the third and $1 \times 10^{-17}$ for the vanishing of the second, and on a field that violates the homogeneous laws the discrepancy in the third is exactly $i\left(\mathrm{div}\,\vec B,\; -(\partial/\partial t'\vec B + \mathrm{rot}\,\vec E)\right)$, so the equivalence is exact rather than numerical coincidence. The paper also records the version of the same equation for the four fields $\vec E, \vec B, \vec D, \vec H$, in which $\vec D + i\vec B$ occupies the vector slots: the shape of the matrix is unchanged, but the paper notes that the square of that matrix is no longer a multiple of the identity — as it is for the form above, where $cF^2 = \langle\vec N,\vec N\rangle I$ — and that this property singles out the first form among all matrices of the second. Both statements were checked: $cF^2 = \langle\vec N,\vec N\rangle I$ exactly, and the second form's square misses a multiple of the identity by at least $14$ over $100$ random pairs of vectors.
 
 **The dual form, and why it holds.** The equation has a dual in which the matrix carries the operators and the vector carries the field. With
 
@@ -512,7 +512,7 @@ $$
 
 the system reads $(\partial/\partial t' I - c\nabla)\left(0,\; -\overline{\vec E + i\vec B}\right)^{\mathsf T} = \left(\rho,\; \vec J\right)^{\mathsf T}$, again exactly equivalent, and the two forms are one construction seen from two sides: in the first the matrix is the field and the column the operators, in the second the matrix is the operators and the column the field. Recomputing this form on the same fields gives agreement to machine precision, with one caveat of transcription: the conjugate bar in the column is required. Without it the scalar row still gives $\rho$ and the vector rows are wrong, which is how the formula extracts from the source and is why it is not stated here without the bar.
 
-The paper writes two further equations of the same shape, in which the four-potential $(\phi, \vec A)$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial/\partial t'\phi + \mathrm{div}\,\vec A = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial/\partial t'\vec A - i\,\mathrm{rot}\,\vec A$ where the definition $\vec E = -\partial/\partial t'\vec A - \nabla\phi$ requires the missing term $-\nabla\phi$, so it holds only in a gauge with $\nabla\phi = 0$, and the second gives $\partial/\partial t'\vec A + \nabla\phi + i\,\mathrm{rot}\,\vec A$ where $-\vec E - i\vec B = \partial/\partial t'\vec A + \nabla\phi - i\,\mathrm{rot}\,\vec A$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\phi|$ and $|2\vec B|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial/\partial t'\phi + \mathrm{div}\,\vec A$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
+The paper writes two further equations of the same shape, in which the four-potential $(\chi^{\mathrm{scp}}, \vec A)$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial/\partial t'\chi^{\mathrm{scp}} + \mathrm{div}\,\vec A = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial/\partial t'\vec A - i\,\mathrm{rot}\,\vec A$ where the definition $\vec E = -\partial/\partial t'\vec A - \nabla\chi^{\mathrm{scp}}$ requires the missing term $-\nabla\chi^{\mathrm{scp}}$, so it holds only in a gauge with $\nabla\chi^{\mathrm{scp}} = 0$, and the second gives $\partial/\partial t'\vec A + \nabla\chi^{\mathrm{scp}} + i\,\mathrm{rot}\,\vec A$ where $-\vec E - i\vec B = \partial/\partial t'\vec A + \nabla\chi^{\mathrm{scp}} - i\,\mathrm{rot}\,\vec A$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\chi^{\mathrm{scp}}|$ and $|2\vec B|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial/\partial t'\chi^{\mathrm{scp}} + \mathrm{div}\,\vec A$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
 
 The reason the dual pairs agree is an algebraic identity, and it is the source of everything else in this route. The matrices of the complex three-vectors satisfy, for every pair of vectors,
 
@@ -548,7 +548,7 @@ $$
 \nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\vec\nu\|^2\right)^2 = 0,
 $$
 
-so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\vec E = \rho_E$, $\mathrm{div}\,\vec H = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta \varphi = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.
+so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\vec E = \rho_E$, $\mathrm{div}\,\vec H = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta \chi^{\mathrm{scp}} = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.
 
 **The modification.** Joining the vector and scalar equations into one connected system is what the scalar $\alpha$-field does. A complex scalar $\alpha=\alpha_1+i\alpha_2$ is added to the field strength, so that the scalar and vector parts of the single biquaternionic equation, which without it are separate statements about separate components, become coupled: each component of $\alpha$ enters one of the vector equations through a gradient and one of the scalar equations through a time derivative. In the $\vec E,\vec H$ normalisation of the Hamiltonian form the coupled first-order system is
 
@@ -673,11 +673,11 @@ $$
 The boost rotor is Hermitian, $\tilde U^{*}=\tilde U$, while its inverse is its quaternion conjugate, $\tilde U^{-1}=\tilde U^{\natural}$; the star in the conjugation law is therefore not an inversion, and the two-sided product is what carries the four-vector. The full development of the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article on the Lorentz transformation. Here we recall the resulting component formulas for the transformation of the scalar and vector potentials:
 
 $$
-\phi_2 = \gamma\left(\phi - \vec v_b\cdot\vec A\right),
+\chi^{\mathrm{scp}}_2 = \gamma\left(\chi^{\mathrm{scp}} - \vec v_b\cdot\vec A\right),
 $$
 
 $$
-\vec A_2 = \vec A + \frac{\gamma - 1}{v_b^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\phi}{c^2}\vec v_b.
+\vec A_2 = \vec A + \frac{\gamma - 1}{v_b^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\chi^{\mathrm{scp}}}{c^2}\vec v_b.
 $$
 
 These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}_2 = \tilde U\tilde{A}\tilde U^{*}$. The same transformation law applies to the four-current $\tilde J$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
@@ -883,7 +883,7 @@ Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into 
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The potential $\tilde{A}$ is subject to the gauge transformation $\tilde{A}_{\mathrm g} = \tilde{A} - \tilde{\nabla}\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $S_2 = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A} = -\mu\tilde J$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla\tilde W) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_2 = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla\tilde W) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_2 = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\chi^{\mathrm{scp}}$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 
@@ -946,4 +946,4 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton", arXiv:math-ph/0201058, §§6–7, for the operator/bivector distinction, the ordinal-invariance assumption, and the analytic interpretation of the vacuum equation.
 - V. V. Kravchenko, "Quaternionic Diagonalization of Maxwell's Equations" (expository article, National Polytechnic Institute, Mexico City), for the objection to the wave-equation reduction, the diagonalization of the time-harmonic Maxwell system into first-order quaternionic equations, and the extendability problem.
 - E. P. J. de Haas, "Biquaternion Formulation of Relativistic Tensor Dynamics," arXiv:1401.4470v1 [physics.gen-ph] (2013), for the counter-claim recorded after *The Author's Reading*: a biquaternion tensor calculus that reports no extra terms relative to the standard relativistic language, the condition being the Lorenz gauge. Cited for the negative claim and for the tensor-index rearrangement it identifies as the source of the extra terms.
-- C. Castro and M. Pavšič, *The Extended Relativity Theory in Clifford Spaces* (review, 8 July 2004), for the extension of Maxwell theory to an arena whose coordinates are Clifford-valued polyvectors, where the potential is itself a polyvector, $A = \varphi + A_{(1)} + A_{(2)} + \dots$ with $A_{(p)}$ its grade-$p$ part, and the field strength $F = dA$ carries a symmetric and an antisymmetric part of every rank, so that an extended charge couples to antisymmetric tensor fields of arbitrary rank. The **formalism is standard** — $p$-form gauge fields and the coupling of extended objects to them are ordinary exterior calculus — while the interpretation of its scalar and pseudoscalar components as a dilaton and an axion is the review's suggestion ("one could attempt to identify"), and the arena is not this article's $\mathbb{B}$. It is listed because it is the widest generalization of the single equation recorded here.
+- C. Castro and M. Pavšič, *The Extended Relativity Theory in Clifford Spaces* (review, 8 July 2004), for the extension of Maxwell theory to an arena whose coordinates are Clifford-valued polyvectors, where the potential is itself a polyvector, $A = \chi^{\mathrm{scp}} + A_{(1)} + A_{(2)} + \dots$ with $A_{(p)}$ its grade-$p$ part, and the field strength $F = dA$ carries a symmetric and an antisymmetric part of every rank, so that an extended charge couples to antisymmetric tensor fields of arbitrary rank. The **formalism is standard** — $p$-form gauge fields and the coupling of extended objects to them are ordinary exterior calculus — while the interpretation of its scalar and pseudoscalar components as a dilaton and an axion is the review's suggestion ("one could attempt to identify"), and the arena is not this article's $\mathbb{B}$. It is listed because it is the widest generalization of the single equation recorded here.

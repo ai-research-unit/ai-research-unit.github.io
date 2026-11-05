@@ -38,10 +38,10 @@ the series converging absolutely and uniformly on every compact subset of the po
 **Proof.** If $f$ is holomorphic, iterating the one-variable Cauchy integral formula of *Complex Analysis* over the $n$ variables gives, for $Q$ in a smaller polydisc,
 
 $$
-f(Q) = \frac{1}{(2\pi i)^n}\int_{\lvert \zeta_j - Q_{0,j}\rvert = r_j} \frac{f(\zeta)}{(\zeta_1 - Q_1)\cdots(\zeta_n - Q_n)}\,d\zeta_1\cdots d\zeta_n ,
+f(Q) = \frac{1}{(2\pi i)^n}\int_{\lvert \varkappa^{\mathrm{crd}}_j - Q_{0,j}\rvert = r_j} \frac{f(\varkappa^{\mathrm{crd}})}{(\varkappa^{\mathrm{crd}}_1 - Q_1)\cdots(\varkappa^{\mathrm{crd}}_n - Q_n)}\,d\varkappa^{\mathrm{crd}}_1\cdots d\varkappa^{\mathrm{crd}}_n ,
 $$
 
-and expanding each factor $(\zeta_j - Q_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic.
+and expanding each factor $(\varkappa^{\mathrm{crd}}_j - Q_j)^{-1}$ as a geometric series gives the power series with the stated coefficients and the stated convergence. Conversely a convergent power series is continuous and holomorphic in each variable, so it is holomorphic.
 
 **Theorem (Cauchy estimates and the identity theorem).** If $f$ is holomorphic on $\Delta(Q_0,r)$ with $\lvert f\rvert \leq M$ then $\lvert c_\alpha\rvert \leq M r^{-\alpha}$. If $f$ vanishes on a nonempty open subset of a domain $D$, then $f \equiv 0$ on $D$.
 
@@ -105,7 +105,7 @@ The domain $D$ is **holomorphically convex** if $\hat K_D$ is compact in $D$ for
 
 ### Plurisubharmonic Functions
 
-**Definition.** An upper semicontinuous function $\varphi : \Xi \to [-\infty, \infty)$ on an open $\Xi \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $Q \in \Xi$ and $B \in \mathbb{C}^n$ the function $\zeta \mapsto \varphi(Q + \zeta B)$ of the complex variable $\zeta$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
+**Definition.** An upper semicontinuous function $\varphi : \Xi \to [-\infty, \infty)$ on an open $\Xi \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $Q \in \Xi$ and $B \in \mathbb{C}^n$ the function $\varkappa^{\mathrm{crd}} \mapsto \varphi(Q + \varkappa^{\mathrm{crd}} B)$ of the complex variable $\varkappa^{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
 
 $$
 L\varphi(Q; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial Q_j \partial \bar Q_k}(Q)\, B_j \bar B_k
@@ -115,7 +115,7 @@ is positive semidefinite for every $Q$ and every $B$.
 
 **Theorem.** A function $\varphi$ is plurisubharmonic if and only if it is locally the upper semicontinuous regularisation of the supremum of a family of functions of the form $c\log\lvert f\rvert$ with $f$ holomorphic and $c > 0$. In particular $\log\lvert f\rvert$ is plurisubharmonic for every holomorphic $f$, and plurisubharmonicity is invariant under biholomorphic maps.
 
-**Proof.** The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\zeta\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references.
+**Proof.** The characterisation of plurisubharmonicity by holomorphic discs gives one direction: composing with a holomorphic map preserves plurisubharmonicity, and $\log\lvert\varkappa^{\mathrm{crd}}\rvert$ is subharmonic in one variable. The converse is the standard approximation by $\log\lvert f\rvert$ in the definition of the pluricomplex Green function; the details are in the references.
 
 **Definition.** A domain $D \subseteq \mathbb{C}^n$ is **pseudoconvex** if it has a continuous plurisubharmonic exhaustion function $\varphi : D \to \mathbb{R}$, that is, a plurisubharmonic $\varphi$ such that $\{Q \in D : \varphi(Q) < c\}$ is relatively compact in $D$ for every $c$. A domain with $\mathcal{C}^2$ boundary is pseudoconvex if and only if the Levi form of a defining function is positive semidefinite on the complex tangent space at every boundary point.
 

@@ -150,17 +150,17 @@ So the obstruction is not that the algebra lacks room for a fourth direction. It
 
 ### A single complex number has no first-order equation
 
-A field whose value is one complex number satisfies the second-order equation: $\Box\phi=0$ is one condition on one function. It satisfies no first-order equation of the series. The gradient acting on it returns an algebra element with four coefficients,
+A field whose value is one complex number satisfies the second-order equation: $\Box\chi=0$ is one condition on one function. It satisfies no first-order equation of the series. The gradient acting on it returns an algebra element with four coefficients,
 
 $$
-\tilde\nabla\phi=\sum_\mu e_\mu\frac{\partial\phi}{\partial Q_\mu},
+\tilde\nabla\chi=\sum_\mu e_\mu\frac{\partial\chi}{\partial Q_\mu},
 $$
 
 and setting it to zero imposes four independent complex conditions, one per unit. The field is then constant. A root requires a field with room for the four units, and the algebra supplies exactly four complex dimensions.
 
 | Field | First-order equation | Root? |
 |---|---|---|
-| One complex number | $\tilde\nabla\phi=0$, which forces $\partial\phi/\partial Q_\mu=0$ | no, it has no solution that propagates |
+| One complex number | $\tilde\nabla\chi=0$, which forces $\partial\chi/\partial Q_\mu=0$ | no, it has no solution that propagates |
 | Element of $\mathbb{B}$, massless | $\tilde\nabla\tilde\Phi=0$ | yes, one factor of $\Box$ |
 | Element of $\mathbb{B}$, massive | $\tilde\nabla\tilde\Psi_R=\mu\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=\mu\tilde\Psi_R$ | yes, the pair |
 

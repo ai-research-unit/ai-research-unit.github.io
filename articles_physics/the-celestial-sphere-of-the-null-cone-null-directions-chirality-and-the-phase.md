@@ -28,7 +28,7 @@ $$
 \boxed{\;\mathcal{C} \;=\; \mathbb{P}(\mathcal{N}) \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2\;},
 $$
 
-which is the **celestial sphere** of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\varphi)$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A **massless element** is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.
+which is the **celestial sphere** of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\theta^{\mathrm{azm}})$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A **massless element** is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.
 
 ## The Two Chiralities: the Segre Quadric
 

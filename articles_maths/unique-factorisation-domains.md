@@ -200,7 +200,7 @@ $$
 
 The coefficients $\binom{p}{k}$ with $1 \leq k \leq p-1$ are divisible by $p$, the leading coefficient $\binom{p}{p} = 1$ is not, and the constant term $\binom{p}{1} = p$ is not divisible by $p^2$. So $\Phi_p(x+1)$ is Eisenstein at $p$, hence irreducible in $\mathbb{Z}[x]$, and the substitution $x \mapsto x+1$ preserves irreducibility.
 
-**Corollary.** $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$ for a primitive $p$-th root of unity $\zeta_p$, since $\Phi_p$ is the minimal polynomial of $\zeta_p$ over $\mathbb{Q}$; the theory of the cyclotomic fields is *Cyclotomic Fields*, later in this category.
+**Corollary.** $[\mathbb{Q}(\omega_p) : \mathbb{Q}] = p - 1$ for a primitive $p$-th root of unity $\omega_p$, since $\Phi_p$ is the minimal polynomial of $\omega_p$ over $\mathbb{Q}$; the theory of the cyclotomic fields is *Cyclotomic Fields*, later in this category.
 
 ---
 
@@ -268,7 +268,7 @@ The rung is strictly stronger than being a domain: $\mathbb{Z}[\sqrt{-5}]$ is a 
 | $F = \operatorname{Frac}(R)$ | Fraction field of $R$ |
 | $N(a + b\sqrt{-5}) = a^2 + 5b^2$ | Multiplicative norm on $\mathbb{Z}[\sqrt{-5}]$ |
 | $\Phi_p(x)$ | Cyclotomic polynomial $x^{p-1} + \cdots + x + 1$ |
-| $\zeta_p$ | Primitive $p$-th root of unity |
+| $\omega_p$ | Primitive $p$-th root of unity |
 | PID | Principal ideal domain |
 
 ## Further Reading

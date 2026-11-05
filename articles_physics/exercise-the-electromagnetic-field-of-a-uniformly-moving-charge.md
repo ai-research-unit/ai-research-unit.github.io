@@ -170,7 +170,7 @@ because $\vec E\parallel\vec d$, and hence $\vec B = \frac{1}{c}\vec u_R\times\v
 $$
 |\vec E| = \frac{ϙ}{4\pi\epsilon}\,\frac{1-\beta^2}{d^2\left(\cos^2\theta + \sin^2\theta/\gamma^2\right)^{3/2}} \propto \frac{1}{d^2}.
 $$
-The falloff is therefore inverse-square about the present position, with no residual $\kappa$-dependence once the direction is held fixed. The surfaces of constant scalar potential, $\phi = \frac{ϙ}{4\pi\epsilon D} = \text{const}$, are
+The falloff is therefore inverse-square about the present position, with no residual $\kappa$-dependence once the direction is held fixed. The surfaces of constant scalar potential, $\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D} = \text{const}$, are
 $$
 d_\parallel^2 + \frac{d_\perp^2}{\gamma^2} = D_0^2 ,
 $$

@@ -11,7 +11,7 @@ The article constructs the frame from a basis adapted to the spectral flag, stat
 **A frame adapted to the flag is a basis with one vector in each spectral line.** Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and lines $V_k=\operatorname{im}P_k$. Choose $v_k\in V_k$, $v_k\ne0$, for $k=1,\dots,n$. Then $(v_1,\dots,v_n)$ is a basis of $\mathbb{C}^{n}$, and
 
 $$
-P_kv_m=\delta_{km}v_k,\qquad Hv_k=\zeta_kv_k.
+P_kv_m=\delta_{km}v_k,\qquad Hv_k=\omega_kv_k.
 $$
 
 Let $\ell_k$ be the dual basis of the dual space, $\ell_k(v_m)=\delta_{km}$, and put
@@ -23,12 +23,12 @@ $$
 **Proposition.** The $n^{2}$ elements $E_{kl}$ are a basis of $M_n(\mathbb{C})$, they satisfy
 
 $$
-E_{kl}E_{mn}=\delta_{lm}E_{kn},\qquad E_{kk}=P_k,\qquad H=\sum_{k=1}^{n}\zeta_kE_{kk},
+E_{kl}E_{mn}=\delta_{lm}E_{kn},\qquad E_{kk}=P_k,\qquad H=\sum_{k=1}^{n}\omega_kE_{kk},
 $$
 
 and $\operatorname{tr}E_{kl}=\delta_{kl}$.
 
-*Proof.* $E_{kl}E_{mn}=v_k\ell_l(v_m)\ell_n=\delta_{lm}v_k\ell_n=\delta_{lm}E_{kn}$. On $v_m$, $E_{kk}$ acts as $\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$.
+*Proof.* $E_{kl}E_{mn}=v_k\ell_l(v_m)\ell_n=\delta_{lm}v_k\ell_n=\delta_{lm}E_{kn}$. On $v_m$, $E_{kk}$ acts as $\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\omega_kE_{kk}$ acts on $v_m$ as $\omega_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$.
 
 **The frame is the choice of the $v_k$.** The root fixes the lines; the frame fixes the vectors. Different frames of the same flag give different matrices $E_{kl}$ and the same idempotents $E_{kk}=P_k$.
 
@@ -72,7 +72,7 @@ $$
 E_{kk}\longmapsto E_{kk},
 $$
 
-and so is the root $H=\sum_k\zeta_kE_{kk}$. The group acting is the torus
+and so is the root $H=\sum_k\omega_kE_{kk}$. The group acting is the torus
 
 $$
 T=\{t=(t_1,\dots,t_n)\in(\mathbb{C}^{\times})^{n}\},
@@ -114,13 +114,13 @@ $$
 
 so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the units is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.
 
-**The idempotents do not depend on the gauge.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\zeta_kP_k$ are gauge invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
+**The idempotents do not depend on the gauge.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\omega_kP_k$ are gauge invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
 
 ## The Count of the Frame
 
 **A frame modulo overall scale has $n^{2}-1$ complex dimensions.** The set of bases of $\mathbb{C}^{n}$ is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$; two bases that differ by an overall scalar give the same matrix units, so the frame is a point of $PGL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.
 
-**The root and the gauge split this count.** The map from frames to roots, $(v_k)\mapsto H=\sum_k\zeta_kE_{kk}$, has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$: the frames that give the same root are exactly the rescalings of the $v_k$. Hence
+**The root and the gauge split this count.** The map from frames to roots, $(v_k)\mapsto H=\sum_k\omega_kE_{kk}$, has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$: the frames that give the same root are exactly the rescalings of the $v_k$. Hence
 
 $$
 \underbrace{n^{2}-1}_{\text{frame}/\,\mathbb{C}^{\times}}
@@ -208,7 +208,7 @@ The two parameters $\lambda_1,\lambda_2$ are independent; the third scale $\lamb
 
 ## Summary
 
-An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\zeta_kE_{kk}$. The simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, square to zero and generate the frame; every composite is their product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^{n-1}$ with one parameter per simple nilpotent, subject to the cocycle that fixes the composites. The frame modulo scale has $n^{2}-1$ complex dimensions, split as $n(n-1)$ for the root and $n-1$ for the gauge; at $n=2$ this is $6=4+2$ real, the biquaternion count. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.
+An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\omega_kE_{kk}$. The simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, square to zero and generate the frame; every composite is their product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^{n-1}$ with one parameter per simple nilpotent, subject to the cocycle that fixes the composites. The frame modulo scale has $n^{2}-1$ complex dimensions, split as $n(n-1)$ for the root and $n-1$ for the gauge; at $n=2$ this is $6=4+2$ real, the biquaternion count. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.
 
 ## Summary of Notation
 

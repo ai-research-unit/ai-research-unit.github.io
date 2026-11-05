@@ -5,14 +5,14 @@
 The Klein–Gordon equation for a relativistic field of rest mass $m$ is
 
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\phi = 0,
+\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\chi = 0,
 \qquad
 \Box = + \partial^2/\partial Q_t^2 + \Delta,
 $$
 
 the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2\right)\tilde{\Phi} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
 
-Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\phi$ and its complex conjugate $\phi^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
+Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\chi$ and its complex conjugate $\chi^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
 
 The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The parent article, *The Schrödinger Equation in Biquaternionic Form*, showed that the first-order-in-time Schrödinger equation is organized by the **scalar imaginary** $i$: the Hermitian observable $\tilde{H}\in\mathbb{M}_+$ generates a flow whose generator $-i\tilde{H}/\hbar$ lies in the material sector $\mathbb{M}_-$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: **does the second-order structure fit the $\mathbb{M}_-/\mathbb{M}_+$ split naturally, or does it require a doubling that the split does not supply?** The answer worked out below is that it requires a doubling, and that the doubling is *not* $\mathbb{M}_+\oplus\mathbb{M}_-$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair.
 
@@ -96,7 +96,7 @@ $$
 \left(\Box - \mu^2\right)\tilde{\Phi}^* = 0 ,
 $$
 
-because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $\phi$ and $\phi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
+because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $\chi$ and $\chi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
 
 It is worth separating three operations that are easy to conflate at this point, because the rest of the article turns on keeping them apart:
 
@@ -205,7 +205,7 @@ are the two frequency branches. They are the same dispersion relation with oppos
 
 ## The Conserved Current and the Two Defects
 
-The Klein–Gordon equation carries a conserved four-current. For a complex scalar field $\tilde{\Phi}=\phi\,e_t\in\mathbb{C}_{\mathbb{B}}$, define
+The Klein–Gordon equation carries a conserved four-current. For a complex scalar field $\tilde{\Phi}=\chi\,e_t\in\mathbb{C}_{\mathbb{B}}$, define
 
 $$
 \tilde{J} = ic\,\rho\,e_t + \vec j\in\mathbb{M}_-,
@@ -233,7 +233,7 @@ $$
 
 while for the negative-frequency branch, that is the same expression with $\omega<0$, the same computation gives $\rho<0$ with the same magnitude. The two branches therefore carry charges of opposite sign, and $\rho$ cannot be read as a probability density. This is the negative-probability problem, and it is a property of the conserved current itself, not of the notation: every step above was made from the equation and the definitions.
 
-The second defect is that the equation is not a single-particle equation. The reason is the same one, stated more broadly: a one-particle interpretation requires a positive conserved probability and a stable notion of "the particle at a place." The Klein–Gordon field provides neither. The resolution in standard physics is to stop reading $\phi$ as a wave function and read it as a **field operator**, with $\phi$ and $\phi^*$ becoming the operators that annihilate and create the particle and the antiparticle; the conserved charge becomes the difference of particle number and antiparticle number, which may have either sign, and the negative-frequency branch is reinterpreted as the antiparticle. The biquaternion form of the equation does not change this. In particular, the current sits in $\mathbb{M}_-$ and is conserved, but the sign of its scalar component is not fixed by membership in $\mathbb{M}_-$.
+The second defect is that the equation is not a single-particle equation. The reason is the same one, stated more broadly: a one-particle interpretation requires a positive conserved probability and a stable notion of "the particle at a place." The Klein–Gordon field provides neither. The resolution in standard physics is to stop reading $\chi$ as a wave function and read it as a **field operator**, with $\chi$ and $\chi^*$ becoming the operators that annihilate and create the particle and the antiparticle; the conserved charge becomes the difference of particle number and antiparticle number, which may have either sign, and the negative-frequency branch is reinterpreted as the antiparticle. The biquaternion form of the equation does not change this. In particular, the current sits in $\mathbb{M}_-$ and is conserved, but the sign of its scalar component is not fixed by membership in $\mathbb{M}_-$.
 
 ## Does the Second-Order Structure Fit $\mathbb{M}_-/\mathbb{M}_+$?
 
@@ -370,7 +370,7 @@ One exception to the obstruction is imported from the literature and kept separa
 
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard treatment of the Klein–Gordon equation, its current, and its defects.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the negative-energy problem and the field-theoretic resolution.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. I* (Cambridge, 1995), for the reinterpretation of $\phi$ and $\phi^*$ as particle and antiparticle field operators.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I* (Cambridge, 1995), for the reinterpretation of $\chi$ and $\chi^*$ as particle and antiparticle field operators.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the first-order square root of the wave operator.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra, its conjugations, and its fixed-point subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the wave equations and their spinor factorisation.

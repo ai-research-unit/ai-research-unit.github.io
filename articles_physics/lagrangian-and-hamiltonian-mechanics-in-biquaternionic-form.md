@@ -260,10 +260,10 @@ $$
 
 ### The Routhian: the Partial Legendre Transform
 
-The Legendre transform need not be applied to all the coordinates at once. When a Lagrangian has $s$ **cyclic** coordinates $q=(q_x,\dots,q_s)$ — coordinates of which $\mathrm{Lag}$ is independent, so that their conjugate momenta are conserved — the transform can be applied to those alone, leaving the remaining coordinates $\zeta=(\zeta_1,\dots,\zeta_{n-s})$ in Lagrangian form. The result is the **Routhian**
+The Legendre transform need not be applied to all the coordinates at once. When a Lagrangian has $s$ **cyclic** coordinates $q=(q_x,\dots,q_s)$ — coordinates of which $\mathrm{Lag}$ is independent, so that their conjugate momenta are conserved — the transform can be applied to those alone, leaving the remaining coordinates $\varkappa^{\mathrm{crd}}=(\varkappa^{\mathrm{crd}}_1,\dots,\varkappa^{\mathrm{crd}}_{n-s})$ in Lagrangian form. The result is the **Routhian**
 
 $$
-R(q,p,\zeta,d\zeta/dt')=\mathrm{Sc}\!\left(p^{\natural}\,dq/dt'\right)-\mathrm{Lag} ,
+R(q,p,\varkappa^{\mathrm{crd}},d\varkappa^{\mathrm{crd}}/dt')=\mathrm{Sc}\!\left(p^{\natural}\,dq/dt'\right)-\mathrm{Lag} ,
 $$
 
 in which the $s$ transformed coordinates obey Hamilton's equations and the $n-s$ others obey Lagrange's. The Routhian has the form of a Hamiltonian and the role of a Lagrangian: the remaining coordinates satisfy the same Lagrange equations as a system of $n-s$ degrees of freedom whose potential is shifted by the momenta that were removed. A central potential shows the mechanism. The angle $\theta$ is cyclic, its momentum $p_\theta=\ell$ is conserved, and the Routhian is a function of $r$ alone, whose Lagrange equation is
@@ -319,10 +319,10 @@ $$
 a bireal — that is, Hermitian — biquaternion whose scalar part is the Hamiltonian and whose vector part carries the canonical momentum. For $n$ point particles in a time-independent external field it is assembled from the four-momenta and the potential,
 
 $$
-\Pi = \sum_n P_n + ϙ_n A(X_n), \qquad P_n = [E_n\,;\,-ic\vec p_n], \qquad A = [\phi\,;\,-i\vec A],
+\Pi = \sum_n P_n + ϙ_n A(X_n), \qquad P_n = [E_n\,;\,-ic\vec p_n], \qquad A = [\chi^{\mathrm{scp}}\,;\,-i\vec A],
 $$
 
-in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\phi$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $\langle\tilde P\rangle_{\natural}=-m^2c^2$.
+in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ the four-potential; the scalar part is the Hamiltonian $H=E+ϙ\chi^{\mathrm{scp}}$ and the vector part the canonical momentum $\vec\pi=\vec p+ϙ\vec A$. Up to the central factor $-i$ — the corpus's placement of the time component in the scalar slot — the four-momenta here are the corpus's four-momentum $\tilde P$, and the source's mass-shell statement $|P|^2=m^2$ (units with $c=1$) is the corpus's $\langle\tilde P\rangle_{\natural}=-m^2c^2$.
 
 The reason to introduce the object is the action. The source's **action postulate** is
 
@@ -442,7 +442,7 @@ The transcription is exact within its domain, and the domain is worth stating pl
 
 **What it does not give.** The algebra is finite dimensional; it cannot carry the configuration space of a system with more than a few degrees of freedom, nor an infinite-dimensional field configuration except through its coefficients. The Poisson bracket is a scalar projection of a quaternion product, and the vector part it discards is not a second bracket. And the canonical Heisenberg sector is absent: there is no pair $\tilde q,\tilde p$ inside $\mathbb{B}$ whose commutator is a nonzero central constant, as the companion articles *Similitudes Between the Poisson Bracket and the Quantum Commutator* and *The Harmonic Oscillator in Biquaternionic Form* prove. None of these limitations is a defect of the transcription; they are properties of the algebra, and they mark where the biquaternion language is a convenience and where it is a constraint.
 
-**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
+**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\chi^{\mathrm{scp}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
 
 ## Summary
 

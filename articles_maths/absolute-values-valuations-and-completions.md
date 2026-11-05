@@ -30,7 +30,7 @@ and **Archimedean** otherwise. It is **trivial** if $\lvert x \rvert = 1$ for al
 
 **Proposition.** Let $\lvert \cdot \rvert$ be an absolute value on $F$.
 
-**(a)** $\lvert 1 \rvert = 1$ and $\lvert -x \rvert = \lvert x \rvert$; more generally $\lvert \zeta \rvert = 1$ for every root of unity $\zeta$.
+**(a)** $\lvert 1 \rvert = 1$ and $\lvert -x \rvert = \lvert x \rvert$; more generally $\lvert \varkappa^{\mathrm{crd}} \rvert = 1$ for every root of unity $\varkappa^{\mathrm{crd}}$.
 
 **(b)** $\lvert x^{-1} \rvert = \lvert x \rvert^{-1}$ for $x \neq 0$.
 

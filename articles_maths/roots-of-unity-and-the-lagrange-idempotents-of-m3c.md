@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A single matrix $H$ with $H^{3}=I$ and three distinct eigenvalues carries the whole frame of $M_{3}(\mathbb{C})$: its spectral projectors are three idempotents, its eigenvalues are the three cube roots of unity, and the identity $H=\sum_{k}\zeta_{k}P_{k}$ is the spectral theorem read in the algebra. This article states that construction, proves that the projectors are idempotent, orthogonal, complete and of rank one, reads the $\mathbb{Z}/3$ grading that $H$ defines, and counts the roots.
+A single matrix $H$ with $H^{3}=I$ and three distinct eigenvalues carries the whole frame of $M_{3}(\mathbb{C})$: its spectral projectors are three idempotents, its eigenvalues are the three cube roots of unity, and the identity $H=\sum_{k}\omega_{k}P_{k}$ is the spectral theorem read in the algebra. This article states that construction, proves that the projectors are idempotent, orthogonal, complete and of rank one, reads the $\mathbb{Z}/3$ grading that $H$ defines, and counts the roots.
 
 The construction is **root-first**. One matrix $H$ is the primitive datum. The Lagrange formula is a polynomial in $H$, so every idempotent is a polynomial in $H$; no second root, no transverse element and no pair of roots enters. The case $n=2$ is the order-two case of the same formula: there the roots are $\pm1$ and the two idempotents are $(I\pm H)/2$, which is the biquaternion frame. The case $n=3$ needs the three cube roots and one $H$.
 
@@ -28,11 +28,11 @@ gives $1+\omega+\omega^{2}=0$ and $\omega^{2}=-1-\omega$. The roots form the cyc
 
 | Root | Value | Real and imaginary parts | Minimal polynomial |
 |---|---|---|---|
-| $\zeta_{1}$ | $1$ | $1$, $0$ | $x-1$ |
-| $\zeta_{2}$ | $\omega$ | $-\tfrac12$, $\tfrac{\sqrt3}{2}$ | $x^{2}+x+1$ |
-| $\zeta_{3}$ | $\omega^{2}$ | $-\tfrac12$, $-\tfrac{\sqrt3}{2}$ | $x^{2}+x+1$ |
+| $\omega_{1}$ | $1$ | $1$, $0$ | $x-1$ |
+| $\omega_{2}$ | $\omega$ | $-\tfrac12$, $\tfrac{\sqrt3}{2}$ | $x^{2}+x+1$ |
+| $\omega_{3}$ | $\omega^{2}$ | $-\tfrac12$, $-\tfrac{\sqrt3}{2}$ | $x^{2}+x+1$ |
 
-The index is read modulo three, $\zeta_{k+3}=\zeta_{k}$. The notation $\zeta_{k}=\omega^{k-1}$ is used throughout the $M_{3}(\mathbb{C})$ category, and the three roots are ordered by the argument in $[0,2\pi)$.
+The index is read modulo three, $\omega_{k+3}=\omega_{k}$. The notation $\omega_{k}=\omega^{k-1}$ is used throughout the $M_{3}(\mathbb{C})$ category, and the three roots are ordered by the argument in $[0,2\pi)$.
 
 **The roots are the values of the character of $\mathbb{Z}/3$.** For $r\in\mathbb{Z}/3$, the character is $\chi_{r}(k)=\omega^{rk}$. The orthogonality relations
 
@@ -60,7 +60,7 @@ and with three distinct eigenvalues. The second condition is the **simple spectr
 - the minimal polynomial of $H$ is $x^{3}-1$;
 - $\operatorname{tr}H=0$ and $\operatorname{tr}H^{2}=0$ and $\det H=1$.
 
-**Proof.** The polynomial $x^{3}-1$ has the three distinct roots $1,\omega,\omega^{2}$, so it annihilates $H$ and has no repeated factor. The minimal polynomial divides $x^{3}-1$, hence is a product of distinct linear factors, and $H$ is diagonalisable with spectrum contained in the three roots. If the spectrum is the full set, the characteristic polynomial is $(x-1)(x-\omega)(x-\omega^{2})=x^{3}-1$, and the minimal polynomial is the same, since no proper factor vanishes on all three eigenvalues. Conversely $x^{3}-1$ as characteristic polynomial gives three distinct roots. The trace of $H$ is the sum of the roots, $1+\omega+\omega^{2}=0$; the trace of $H^{2}$ is the sum of their squares, $1+\omega^{2}+\omega^{4}=1+\omega^{2}+\omega=0$; the determinant is the product, $1$. Conversely, if the spectrum has a repeated value, the three numbers $\operatorname{tr}H$, $\operatorname{tr}H^{2}$, $\det H$ are the elementary symmetric functions of a multiset of size three drawn from three values with a repetition, and the triple $(0,0,1)$ forces the full set: the sum of the eigenvalues is $0$, so the multiset is either $\{1,\omega,\omega^{2}\}$ or a triple of one value; the latter has $\operatorname{tr}H^{2}=3\zeta^{2}\neq0$. So the three conditions are equivalent.
+**Proof.** The polynomial $x^{3}-1$ has the three distinct roots $1,\omega,\omega^{2}$, so it annihilates $H$ and has no repeated factor. The minimal polynomial divides $x^{3}-1$, hence is a product of distinct linear factors, and $H$ is diagonalisable with spectrum contained in the three roots. If the spectrum is the full set, the characteristic polynomial is $(x-1)(x-\omega)(x-\omega^{2})=x^{3}-1$, and the minimal polynomial is the same, since no proper factor vanishes on all three eigenvalues. Conversely $x^{3}-1$ as characteristic polynomial gives three distinct roots. The trace of $H$ is the sum of the roots, $1+\omega+\omega^{2}=0$; the trace of $H^{2}$ is the sum of their squares, $1+\omega^{2}+\omega^{4}=1+\omega^{2}+\omega=0$; the determinant is the product, $1$. Conversely, if the spectrum has a repeated value, the three numbers $\operatorname{tr}H$, $\operatorname{tr}H^{2}$, $\det H$ are the elementary symmetric functions of a multiset of size three drawn from three values with a repetition, and the triple $(0,0,1)$ forces the full set: the sum of the eigenvalues is $0$, so the multiset is either $\{1,\omega,\omega^{2}\}$ or a triple of one value; the latter has $\operatorname{tr}H^{2}=3\omega^{2}\neq0$. So the three conditions are equivalent.
 
 **Corollary.** For a root with simple spectrum,
 
@@ -79,36 +79,36 @@ where $P_{1}$ is the projector onto the eigenvalue $1$.
 **Definition.** Let $H$ be a root with simple spectrum. For $k=1,2,3$ put
 
 $$
-L_{k}(x)=\prod_{l\neq k}\frac{x-\zeta_{l}}{\zeta_{k}-\zeta_{l}}
+L_{k}(x)=\prod_{l\neq k}\frac{x-\omega_{l}}{\omega_{k}-\omega_{l}}
 \in\mathbb{C}[x],
 \qquad
 P_{k}=L_{k}(H).
 $$
 
-The polynomial $L_{k}$ has degree two and satisfies $L_{k}(\zeta_{l})=\delta_{kl}$. The matrix $P_{k}$ is the **Lagrange projector** of $H$ at $\zeta_{k}$.
+The polynomial $L_{k}$ has degree two and satisfies $L_{k}(\omega_{l})=\delta_{kl}$. The matrix $P_{k}$ is the **Lagrange projector** of $H$ at $\omega_{k}$.
 
 **Theorem (the Lagrange idempotents).** Let $H$ be a root with simple spectrum and let $P_{1},P_{2},P_{3}$ be its Lagrange projectors. Then:
 
 1. $P_{k}^{2}=P_{k}$ and $P_{k}P_{l}=0$ for $k\neq l$;
 2. $P_{1}+P_{2}+P_{3}=I$;
-3. $HP_{k}=P_{k}H=\zeta_{k}P_{k}$;
-4. $H=\sum_{k=1}^{3}\zeta_{k}P_{k}$;
+3. $HP_{k}=P_{k}H=\omega_{k}P_{k}$;
+4. $H=\sum_{k=1}^{3}\omega_{k}P_{k}$;
 5. $\operatorname{rank}P_{k}=1$ and $\operatorname{tr}P_{k}=1$;
-6. $P_{k}$ is the projection onto $\ker(H-\zeta_{k}I)$ along the direct sum of the other two eigenspaces.
+6. $P_{k}$ is the projection onto $\ker(H-\omega_{k}I)$ along the direct sum of the other two eigenspaces.
 
-**Proof.** Let $v_{1},v_{2},v_{3}$ be eigenvectors of $H$ with eigenvalues $\zeta_{1},\zeta_{2},\zeta_{3}$. They form a basis because the spectrum is simple. By the spectral mapping theorem for a diagonalisable matrix, for every polynomial $f$ the operator $f(H)$ acts on $v_{l}$ by the scalar $f(\zeta_{l})$:
+**Proof.** Let $v_{1},v_{2},v_{3}$ be eigenvectors of $H$ with eigenvalues $\omega_{1},\omega_{2},\omega_{3}$. They form a basis because the spectrum is simple. By the spectral mapping theorem for a diagonalisable matrix, for every polynomial $f$ the operator $f(H)$ acts on $v_{l}$ by the scalar $f(\omega_{l})$:
 
 $$
-f(H)v_{l}=f(\zeta_{l})v_{l}.
+f(H)v_{l}=f(\omega_{l})v_{l}.
 $$
 
-This is proved by writing $H=U\operatorname{diag}(\zeta_{1},\zeta_{2},\zeta_{3})U^{-1}$ and applying $f$ to the diagonal matrix entry by entry. Applying it to $f=L_{k}$ gives $P_{k}v_{l}=\delta_{kl}v_{l}$, which is statement 6.
+This is proved by writing $H=U\operatorname{diag}(\omega_{1},\omega_{2},\omega_{3})U^{-1}$ and applying $f$ to the diagonal matrix entry by entry. Applying it to $f=L_{k}$ gives $P_{k}v_{l}=\delta_{kl}v_{l}$, which is statement 6.
 
-For statement 1, $P_{k}P_{l}$ acts on $v_{m}$ by $L_{k}(\zeta_{m})L_{l}(\zeta_{m})=\delta_{km}\delta_{lm}$, which is the action of $\delta_{kl}P_{k}$; two operators that agree on a basis are equal. For statement 2, $\sum_{k}L_{k}(\zeta_{m})=1$ for each $m$, so $\sum_{k}P_{k}$ acts as the identity on a basis. For statement 3, $L_{k}(x)x\equiv\zeta_{k}L_{k}(x)$ on the three values of $x$: both sides vanish at the other two roots and equal $\zeta_{k}$ at $\zeta_{k}$; hence $HP_{k}=\zeta_{k}P_{k}$, and $P_{k}H=\zeta_{k}P_{k}$ because $P_{k}$ is a polynomial in $H$. Statement 4 follows by summing statement 3 over $k$ and using statement 2. Statement 5: $P_{k}$ is the projector onto a one-dimensional eigenspace, so its rank is one; the trace of a rank-one idempotent is one, or directly from the eigenvalues $1,0,0$ of $P_{k}$.
+For statement 1, $P_{k}P_{l}$ acts on $v_{m}$ by $L_{k}(\omega_{m})L_{l}(\omega_{m})=\delta_{km}\delta_{lm}$, which is the action of $\delta_{kl}P_{k}$; two operators that agree on a basis are equal. For statement 2, $\sum_{k}L_{k}(\omega_{m})=1$ for each $m$, so $\sum_{k}P_{k}$ acts as the identity on a basis. For statement 3, $L_{k}(x)x\equiv\omega_{k}L_{k}(x)$ on the three values of $x$: both sides vanish at the other two roots and equal $\omega_{k}$ at $\omega_{k}$; hence $HP_{k}=\omega_{k}P_{k}$, and $P_{k}H=\omega_{k}P_{k}$ because $P_{k}$ is a polynomial in $H$. Statement 4 follows by summing statement 3 over $k$ and using statement 2. Statement 5: $P_{k}$ is the projector onto a one-dimensional eigenspace, so its rank is one; the trace of a rank-one idempotent is one, or directly from the eigenvalues $1,0,0$ of $P_{k}$.
 
-**Corollary (completeness of the construction).** The map $H\mapsto(P_{1},P_{2},P_{3})$ is a bijection, up to the order of the eigenvalues, between roots with simple spectrum and complete orthogonal families of three primitive idempotents of $M_{3}(\mathbb{C})$ whose sum is $I$. The inverse is $H=\sum_{k}\zeta_{k}P_{k}$.
+**Corollary (completeness of the construction).** The map $H\mapsto(P_{1},P_{2},P_{3})$ is a bijection, up to the order of the eigenvalues, between roots with simple spectrum and complete orthogonal families of three primitive idempotents of $M_{3}(\mathbb{C})$ whose sum is $I$. The inverse is $H=\sum_{k}\omega_{k}P_{k}$.
 
-**Proof.** The direct map is the theorem. If $P_{1},P_{2},P_{3}$ are complete, orthogonal and primitive, put $H=\sum_{k}\zeta_{k}P_{k}$; then $H^{3}=\sum_{k}\zeta_{k}^{3}P_{k}=\sum_{k}P_{k}=I$, and $HP_{k}=\zeta_{k}P_{k}$, so the $P_{k}$ are the spectral projectors of $H$ and the spectrum is the three distinct roots. The two constructions are inverse because the Lagrange projectors of $H$ are characterised by $P_{k}v_{l}=\delta_{kl}v_{l}$ on the eigenspaces. The order of the eigenvalues is the order of the three idempotents; a permutation of the three labels gives the same unordered family and the same $H$ only after the corresponding permutation of the roots, which is the identity on the matrix.
+**Proof.** The direct map is the theorem. If $P_{1},P_{2},P_{3}$ are complete, orthogonal and primitive, put $H=\sum_{k}\omega_{k}P_{k}$; then $H^{3}=\sum_{k}\omega_{k}^{3}P_{k}=\sum_{k}P_{k}=I$, and $HP_{k}=\omega_{k}P_{k}$, so the $P_{k}$ are the spectral projectors of $H$ and the spectrum is the three distinct roots. The two constructions are inverse because the Lagrange projectors of $H$ are characterised by $P_{k}v_{l}=\delta_{kl}v_{l}$ on the eigenspaces. The order of the eigenvalues is the order of the three idempotents; a permutation of the three labels gives the same unordered family and the same $H$ only after the corresponding permutation of the roots, which is the identity on the matrix.
 
 **No other object is primitive.** The idempotents are polynomials in $H$ of degree two. The whole frame is therefore carried by one matrix, and the phrase *the root* has a definite referent in this category. The Peirce decomposition of the next article is the decomposition of the algebra by the three $P_{k}$; it uses no further datum.
 
@@ -216,13 +216,13 @@ $$
 **Proof.** The map $\operatorname{ad}_{H}(A)=[H,A]=HA-AH$ is linear. The identity $HAH^{-1}=\omega^{r}A$ is equivalent to $HA=\omega^{r}AH$, that is $\operatorname{ad}_{H}(A)=(\omega^{r}-1)AH$; more usefully, in the eigenbasis of $H$ the operator $\operatorname{ad}_{H}$ is diagonal. Indeed, for $E_{kl}$,
 
 $$
-\operatorname{ad}_{H}(E_{kl})=(\zeta_{k}-\zeta_{l})E_{kl},
+\operatorname{ad}_{H}(E_{kl})=(\omega_{k}-\omega_{l})E_{kl},
 $$
 
-and $\zeta_{k}-\zeta_{l}\in\{0,\pm(1-\omega),\pm(1-\omega^{2}),\pm(\omega-\omega^{2})\}$. Since $\zeta_{k}/\zeta_{l}=\omega^{k-l}$ and
+and $\omega_{k}-\omega_{l}\in\{0,\pm(1-\omega),\pm(1-\omega^{2}),\pm(\omega-\omega^{2})\}$. Since $\omega_{k}/\omega_{l}=\omega^{k-l}$ and
 
 $$
-\zeta_{k}-\zeta_{l}=\zeta_{l}(\omega^{k-l}-1),
+\omega_{k}-\omega_{l}=\omega_{l}(\omega^{k-l}-1),
 $$
 
 the eigenvalue is zero exactly when $k=l$ and is a nonzero multiple of $\omega^{r}-1$ otherwise. The eigenspace for the factor $\omega^{r}$ is therefore the span of the $E_{kl}$ with $k-l\equiv r\pmod 3$. The nine matrix units split into the three classes
@@ -316,13 +316,13 @@ They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank
 A root $H$ with $H^{3}=I$ and simple spectrum determines three Lagrange projectors
 
 $$
-P_{k}=\prod_{l\neq k}\frac{H-\zeta_{l}I}{\zeta_{k}-\zeta_{l}},\qquad k=1,2,3,
+P_{k}=\prod_{l\neq k}\frac{H-\omega_{l}I}{\omega_{k}-\omega_{l}},\qquad k=1,2,3,
 $$
 
-which are idempotent, pairwise orthogonal, complete, of rank one, and satisfy $HP_{k}=\zeta_{k}P_{k}$ and
+which are idempotent, pairwise orthogonal, complete, of rank one, and satisfy $HP_{k}=\omega_{k}P_{k}$ and
 
 $$
-\boxed{\;H=\sum_{k=1}^{3}\zeta_{k}P_{k},\qquad P_{k}P_{l}=\delta_{kl}P_{k},\qquad \sum_{k=1}^{3}P_{k}=I.\;}
+\boxed{\;H=\sum_{k=1}^{3}\omega_{k}P_{k},\qquad P_{k}P_{l}=\delta_{kl}P_{k},\qquad \sum_{k=1}^{3}P_{k}=I.\;}
 $$
 
 The construction is root-first: every $P_{k}$ is a polynomial in $H$, and no second object is primitive. The algebra splits into the three eigenspaces of $\operatorname{ad}_{H}$,
@@ -350,10 +350,10 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 | Symbol | Meaning |
 |---|---|
 | $\omega$ | $e^{2\pi i/3}$, a primitive cube root of unity |
-| $\zeta_{k}$ | $\omega^{k-1}$, $k=1,2,3$, the three cube roots |
+| $\omega_{k}$ | $\omega^{k-1}$, $k=1,2,3$, the three cube roots |
 | $H$ | a root of unity of order three, $H^{3}=I$ with simple spectrum |
-| $P_{k}=L_{k}(H)$ | the Lagrange projector at $\zeta_{k}$ |
-| $L_{k}(x)$ | $\prod_{l\neq k}(x-\zeta_{l})/(\zeta_{k}-\zeta_{l})$ |
+| $P_{k}=L_{k}(H)$ | the Lagrange projector at $\omega_{k}$ |
+| $L_{k}(x)$ | $\prod_{l\neq k}(x-\omega_{l})/(\omega_{k}-\omega_{l})$ |
 | $M_{3}^{(r)}$ | the degree-$r$ part of the $\mathbb{Z}/3$ grading, $HAH^{-1}=\omega^{r}A$ |
 | $T$ | the diagonal torus of $GL_{3}(\mathbb{C})$ |
 | $B$ | the Borel subgroup of upper triangular matrices |

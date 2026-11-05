@@ -256,7 +256,7 @@ The functional equation $\Gamma(\tilde{Q}+1) = \tilde{Q} \Gamma(\tilde{Q})$ hold
 The **Riemann zeta function** of a split biquaternion variable could be defined by the Dirichlet series
 
 $$
-\zeta(\tilde{Q}) = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
+\omega = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
 $$
 
 where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the split biquaternion power.
@@ -266,10 +266,10 @@ where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the split biquaternion power.
 The series is a series of split biquaternions. The convergence depends on the behavior of $n^{\tilde{Q}}$ as $n \to \infty$. In the idempotent basis, the series decomposes:
 
 $$
-\zeta(\tilde{Q}) = \zeta(\tilde{Q}_+) \tilde\Pi_1 + \zeta(\tilde{Q}_-) \tilde\Pi_2,
+\omega = \omega(\tilde{Q}_+) \tilde\Pi_1 + \omega(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
-where $\zeta(\tilde{Q}_\pm)$ is the quaternion zeta function of the component. The convergence of the quaternion zeta function depends on the quaternion power, which involves the quaternion logarithm, and the theory is largely open.
+where $\omega(\tilde{Q}_\pm)$ is the quaternion zeta function of the component. The convergence of the quaternion zeta function depends on the quaternion power, which involves the quaternion logarithm, and the theory is largely open.
 
 In the pure oscillatory regime, $n^{\tilde{Q}_\pm}$ oscillates, and the series may converge conditionally or may not converge at all. In the pure nilpotent regime, $n^{\tilde{Q}_\pm}$ converges absolutely if the real part of the scalar part is greater than 1.
 
@@ -287,7 +287,7 @@ Almost nothing is known about the split biquaternion zeta function. The followin
 
 4. **Special values.** Are there split biquaternion analogues of the special values $\zeta(2) = \pi^2/6$, $\zeta(4) = \pi^4/90$, etc.?
 
-5. **The functional equation.** Is there a split biquaternion analogue of the functional equation relating $\zeta(\tilde{Q})$ to $\zeta(e_t - \tilde{Q})$?
+5. **The functional equation.** Is there a split biquaternion analogue of the functional equation relating $\omega$ to $\omega(e_t - \tilde{Q})$?
 
 6. **The Riemann hypothesis.** Is there an analogue of the Riemann hypothesis?
 
@@ -406,7 +406,7 @@ The split biquaternion special functions are therefore a partially developed sub
 | $P_n, T_n, H_n, L_n$ | Legendre, Chebyshev, Hermite, Laguerre polynomials |
 | ${}_2F_1, {}_pF_q$ | Gauss and generalized hypergeometric functions |
 | $\Gamma$ | Gamma function |
-| $\zeta$ | Riemann zeta function |
+| $\omega$ | Riemann zeta function |
 | $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 | $P(\tilde{Q}, \tilde Q_1)$ | Poisson kernel |
 | $G(\tilde Q, \tilde Q_1)$ | Green's function |

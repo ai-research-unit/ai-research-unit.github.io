@@ -276,15 +276,15 @@ and the transpose exchanges them: $e_i^{\mathsf T}=e_{-i}$. Neither is symmetric
 
 ### The cyclic group algebra
 
-Let $G=\langle g\rangle$ be cyclic of order three and let $A=k[G]$ with the inversion involution $g^*=g^{-1}$. The element $g$ is unitary, $g^*g=g^{-1}g=1$. If $k$ contains a primitive cube root $\zeta$ and $3\neq0$, the eigenvalues are $1,\zeta,\zeta^2$, and the eigenprojectors are the Lagrange projectors
+Let $G=\langle g\rangle$ be cyclic of order three and let $A=k[G]$ with the inversion involution $g^*=g^{-1}$. The element $g$ is unitary, $g^*g=g^{-1}g=1$. If $k$ contains a primitive cube root $\omega$ and $3\neq0$, the eigenvalues are $1,\omega,\omega^2$, and the eigenprojectors are the Lagrange projectors
 
 $$
-e_1=\frac{(g-\zeta)(g-\zeta^2)}{(1-\zeta)(1-\zeta^2)}, \qquad
-e_\zeta=\frac{(g-1)(g-\zeta^2)}{(\zeta-1)(\zeta-\zeta^2)}, \qquad
-e_{\zeta^2}=\frac{(g-1)(g-\zeta)}{(\zeta^2-1)(\zeta^2-\zeta)} .
+e_1=\frac{(g-\omega)(g-\omega^2)}{(1-\omega)(1-\omega^2)}, \qquad
+e_\omega=\frac{(g-1)(g-\omega^2)}{(\omega-1)(\omega-\omega^2)}, \qquad
+e_{\omega^2}=\frac{(g-1)(g-\omega)}{(\omega^2-1)(\omega^2-\omega)} .
 $$
 
-The inversion sends $g$ to $g^2$, and it exchanges $e_\zeta$ and $e_{\zeta^2}$; the eigenvalues $\zeta$ and $\zeta^2$ are exchanged as well. The law holds with $\lambda_{\pi(\zeta)}^{-1}=\zeta^{-2}=\zeta=\varsigma(\zeta)$. The projectors are not Hermitian, and the eigenvalues are not unimodular in the first-kind sense ($\zeta^2\neq1$). The example is the group-algebra form of the rotation: the inversion is the algebraic "reflection" that swaps the two non-real characters.
+The inversion sends $g$ to $g^2$, and it exchanges $e_\omega$ and $e_{\omega^2}$; the eigenvalues $\omega$ and $\omega^2$ are exchanged as well. The law holds with $\lambda_{\pi(\omega)}^{-1}=\omega^{-2}=\omega=\varsigma(\omega)$. The projectors are not Hermitian, and the eigenvalues are not unimodular in the first-kind sense ($\omega^2\neq1$). The example is the group-algebra form of the rotation: the inversion is the algebraic "reflection" that swaps the two non-real characters.
 
 ### The repeated eigenvalue
 

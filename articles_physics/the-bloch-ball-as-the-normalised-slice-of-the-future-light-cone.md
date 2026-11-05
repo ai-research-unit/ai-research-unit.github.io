@@ -517,7 +517,7 @@ h_t \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta)e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\psi/2)e_t + i\sinh(\psi/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta)e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
 The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde U_{\mathrm b}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde U_{\mathrm b}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Decomposition in Subspaces*, *The Polar Decomposition of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 
@@ -546,16 +546,16 @@ $$
 The $*$-unitary actor is therefore the one for which the shared formula is a symmetry of the algebra itself, an inner automorphism; the unit-norm boost actor is the one for which it is a symmetry only of the sector and of the cone. This is why the general Lorentz transformation acts on the cone of $\mathbb{M}_+$ but not on the states. The remark in *Biquaternion Rotations and Lorentz Transformations* that on the identity the conjugation returns $\tilde{Q}\tilde{Q}^{*}$, so that "the unit leaves the centre and the centre is carried into the Hermitian sector", is precisely the state-space statement: the image of the identity is
 
 $$
-\Phi_{\tilde U}(e_t) = \tilde U\tilde U^{*} = \tilde U^{2} = \cosh\phi\,e_t + i\sinh\phi\,\vec u,
+\Phi_{\tilde U}(e_t) = \tilde U\tilde U^{*} = \tilde U^{2} = \cosh\psi\,e_t + i\sinh\psi\,\vec u,
 $$
 
 which is not central. On the maximally mixed state it gives
 
 $$
-\tfrac{1}{2}e_t \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_t + i\sinh\phi\,\vec u\bigr),
+\tfrac{1}{2}e_t \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\psi\,e_t + i\sinh\psi\,\vec u\bigr),
 $$
 
-of scalar part $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the scalar part, and not preserving the scalar part is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the scalar part, the normalisation of a state, is not a Lorentz invariant.
+of scalar part $\cosh\psi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the scalar part, and not preserving the scalar part is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the scalar part, the normalisation of a state, is not a Lorentz invariant.
 
 ### The Sectors Are Anti-Isometric, Not Isomorphic
 

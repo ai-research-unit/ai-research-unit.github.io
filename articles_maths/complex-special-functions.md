@@ -412,7 +412,7 @@ $$
 where $B_{2n}$ are the Bernoulli numbers. The values at negative integers are
 
 $$
-\zeta(-n) = (-1)^n \frac{B_{n+1}}{n+1}, \qquad n \geq 0.
+\varkappa^{\mathrm{crd}} = (-1)^n \frac{B_{n+1}}{n+1}, \qquad n \geq 0.
 $$
 
 In particular, $\zeta(0) = -1/2$ and $\zeta(-1) = -1/12$.

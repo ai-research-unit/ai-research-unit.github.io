@@ -64,22 +64,22 @@ The right index of the first factor must equal the left index of the second. The
 
 ## The Root
 
-Let $H\in M_6(\mathbb{C})$ satisfy $H^{6}=I$ and have simple spectrum. Its eigenvalues are the Six roots of unity, and with $\zeta=e^{i\pi/3}$ they are $1,\zeta,\dots,\zeta^{5}$. The Lagrange projectors are
+Let $H\in M_6(\mathbb{C})$ satisfy $H^{6}=I$ and have simple spectrum. Its eigenvalues are the Six roots of unity, and with $\omega=e^{i\pi/3}$ they are $1,\omega,\dots,\omega^{5}$. The Lagrange projectors are
 
 $$
-P_k=\frac{1}{6}\sum_{j=0}^{6-1}\zeta^{-(k-1)j}H^{j},\qquad k=1,\dots,6,
+P_k=\frac{1}{6}\sum_{j=0}^{6-1}\omega^{-(k-1)j}H^{j},\qquad k=1,\dots,6,
 $$
 
-and $H=\sum_k\zeta^{k-1}P_k$. In the eigenbasis,
+and $H=\sum_k\omega^{k-1}P_k$. In the eigenbasis,
 
 $$
-H=\operatorname{diag}(1,\zeta,\dots,\zeta^{5}),\qquad P_k=E_{kk},
+H=\operatorname{diag}(1,\omega,\dots,\omega^{5}),\qquad P_k=E_{kk},
 $$
 
-so the Peirce lines are the matrix units $A_{kl}=\mathbb{C}E_{kl}$. In any other basis, with $v_k$ the eigenvector of $\zeta^{k-1}$ and $\ell_l$ the dual form,
+so the Peirce lines are the matrix units $A_{kl}=\mathbb{C}E_{kl}$. In any other basis, with $v_k$ the eigenvector of $\omega^{k-1}$ and $\ell_l$ the dual form,
 
 $$
-E_{kl}=v_k\ell_l,\qquad v_k=\frac{1}{\sqrt{6}}\bigl(1,\zeta^{k-1},\zeta^{2(k-1)},\dots,\zeta^{(6-1)(k-1)}\bigr)^{T}.
+E_{kl}=v_k\ell_l,\qquad v_k=\frac{1}{\sqrt{6}}\bigl(1,\omega^{k-1},\omega^{2(k-1)},\dots,\omega^{(6-1)(k-1)}\bigr)^{T}.
 $$
 
 The matrix $F=[v_1|\cdots|v_6]$ is the Fourier matrix, unitary, and $F^{*}HF$ is diagonal.
@@ -121,7 +121,7 @@ A complete family of $6$ nonzero idempotents in $M_6(\mathbb{C})$ has rank one a
 | $A_{kl}=P_kM_6P_l$ | The Peirce line |
 | $v_k,\ell_k$ | An eigenvector of $H$ and its dual form |
 | $H$ | A root, $H^{6}=I$ with simple spectrum |
-| $\zeta$ | The root of unity, $\zeta=e^{i\pi/3}$ |
+| $\omega$ | The root of unity, $\omega=e^{i\pi/3}$ |
 
 ## Further Reading
 

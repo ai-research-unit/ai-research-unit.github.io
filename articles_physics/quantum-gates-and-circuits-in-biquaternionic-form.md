@@ -96,16 +96,16 @@ Every $*$-unitary biquaternion factorises into a central phase and a unit real q
 
 $$
 \mathrm{U}(2) \;=\; \mathrm{U}(1)\cdot SU(2), \qquad
-\tilde Q = \exp(i\phi)\,\tilde u_{\mathrm r}, \qquad \phi\in\mathbb{R}, \quad \tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}, \quad \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t .
+\tilde Q = \exp(i\theta^{\mathrm{pha}})\,\tilde u_{\mathrm r}, \qquad \theta^{\mathrm{pha}}\in\mathbb{R}, \quad \tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}, \quad \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t .
 $$
 
-Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde u_{\mathrm r} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\phi)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$, and $i\mathbb{M}_+ = \mathbb{M}_-$ for the anti-Hermitian generators.
+Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde u_{\mathrm r} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\theta^{\mathrm{pha}})$ lies in the centre $\mathbb{C}_{\mathbb{B}}$, and $i\mathbb{M}_+ = \mathbb{M}_-$ for the anti-Hermitian generators.
 
 The phase is **not observable in the action**. Conjugation by a central element is trivial:
 
 $$
-(\exp(i\phi)\tilde u_{\mathrm r})\,\tilde{Ϛ}\,(\exp(i\phi)\tilde u_{\mathrm r})^{*}
-= \exp(i\phi)\tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} \exp(-i\phi)
+(\exp(i\theta^{\mathrm{pha}})\tilde u_{\mathrm r})\,\tilde{Ϛ}\,(\exp(i\theta^{\mathrm{pha}})\tilde u_{\mathrm r})^{*}
+= \exp(i\theta^{\mathrm{pha}})\tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} \exp(-i\theta^{\mathrm{pha}})
 = \tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} .
 $$
 
@@ -132,7 +132,7 @@ $$
 \qquad \vec u_{\mathrm r}^2 = -e_t ,
 $$
 
-acts on the Bloch vector as the rotation by $\theta$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde u_{\mathrm r}(\theta + 2\pi) = -\tilde u_{\mathrm r}(\theta)$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\phi)\tilde u_{\mathrm r}(\theta)$, and modulo the phase it is a rotation.
+acts on the Bloch vector as the rotation by $\theta$ about $\vec u_{\mathrm r}$ (the Rodrigues formula). The half-angle is the double cover: $\tilde u_{\mathrm r}(\theta + 2\pi) = -\tilde u_{\mathrm r}(\theta)$, which is the same rotation and, since $-e_t$ is a central phase, the same gate. The general gate is $\exp(i\theta^{\mathrm{pha}})\tilde u_{\mathrm r}(\theta)$, and modulo the phase it is a rotation.
 
 ### Involutions: The Hermitian Unitaries
 
@@ -144,7 +144,7 @@ $$
 
 since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^{*} = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{M}_+$, and as rotations they are the **$\pi$-rotations** of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec r\mapsto 2(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r} - \vec r$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.
 
-A caution about representatives. A gate is a coset $\tilde Q\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{M}_+$ or in $\mathbb{H}_{\mathbb{B}}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde Q = \exp(i\phi)\tilde u_{\mathrm r}$: **every gate is a central phase times a rotation, and no gate is anything else.**
+A caution about representatives. A gate is a coset $\tilde Q\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{M}_+$ or in $\mathbb{H}_{\mathbb{B}}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde Q = \exp(i\theta^{\mathrm{pha}})\tilde u_{\mathrm r}$: **every gate is a central phase times a rotation, and no gate is anything else.**
 
 ## The Standard Single-Qubit Gate Set
 
@@ -251,7 +251,7 @@ Two remarks make the product law precise.
 
 First, the order is the reverse of the circuit interpretation. If a diagram is read left to right, the algebraic product is written right to left, as above. This is the standard convention for operator composition and carries no biquaternion-specific content.
 
-Second, because the map $\tilde Q\mapsto\Phi_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde Q = \exp(i\phi)\tilde{W}$, then $\Phi_{\tilde{V}}\circ\Phi_{\tilde Q} = \Phi_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
+Second, because the map $\tilde Q\mapsto\Phi_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde Q = \exp(i\theta^{\mathrm{pha}})\tilde{W}$, then $\Phi_{\tilde{V}}\circ\Phi_{\tilde Q} = \Phi_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
 
 ### Worked Identities
 
@@ -490,7 +490,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 A gate in the biquaternion framework is a **$*$-unitary element** $\tilde Q\in\mathbb{B}$ with $\tilde Q\tilde Q^{*} = e_t$, acting on a state $\tilde{Ϛ}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{Ϛ}\mapsto\tilde Q\tilde{Ϛ}\tilde Q^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde Q\tilde Q^{*} = e_t$ is **not** the unit-norm condition $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
 
-The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\phi)(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
+The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\theta^{\mathrm{pha}})(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
 **Composition** is the algebra product: applying $\tilde Q$ then $\tilde{V}$ gives $\tilde{V}\tilde Q$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 

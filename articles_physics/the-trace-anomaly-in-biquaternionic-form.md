@@ -42,11 +42,11 @@ So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant,
 
 **The improved tensor.** For a scalar the canonical tensor is not traceless even for the massless action at the conformal coupling; adding the improvement term
 $$
-T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\phi^2 ,
+T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\chi^2 ,
 \qquad
 \xi=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\xi(d-1)\Box\phi^2$, which on shell is $2\xi(d-1)\sum_\mu(\partial\phi/\partial Q_\mu)^2$, because $\Box\phi^2=2\sum_\mu(\partial\phi/\partial Q_\mu)^2+2\phi\,\Box\phi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\phi/\partial Q_\mu)^2$; the value $\xi=(d-2)/(4(d-1))$ cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\xi(d-1)\Box\chi^2$, which on shell is $2\xi(d-1)\sum_\mu(\partial\chi/\partial Q_\mu)^2$, because $\Box\chi^2=2\sum_\mu(\partial\chi/\partial Q_\mu)^2+2\chi\,\Box\chi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\chi/\partial Q_\mu)^2$; the value $\xi=(d-2)/(4(d-1))$ cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
 **The $ict'$ interpretation.** The flat metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the level-2 interpretation of the level-1 form is the material reading $Q_t=ict'$, $Q_k=x_k$, as *Frame and Metric Conventions* fixes. The trace $T_\mu{}_\mu$ is the contraction with $\delta_{\mu\nu}$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
@@ -56,7 +56,7 @@ The one-loop effective action is the determinant of the second variation, and th
 
 **The one-loop trace.** From *The Generating Functional and the Effective Action in Biquaternionic Form* the one-loop effective action is
 $$
-\Gamma_1[\phi;g] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\phi;g] ,
+\Gamma_1[\chi;g] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\chi;g] ,
 $$
 with $S^{(2)}$ the second variation of the classical action. Its response to a Weyl transformation is
 $$
@@ -208,7 +208,7 @@ The first identity is exact, so the second and third are exact; a central differ
 
 ## Summary
 
-The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
+The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\chi;g]$ has the conformal variation
 $$
 \boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$

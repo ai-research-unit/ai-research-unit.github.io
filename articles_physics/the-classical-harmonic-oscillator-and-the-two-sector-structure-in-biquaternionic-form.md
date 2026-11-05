@@ -43,10 +43,10 @@ and the equation of motion is a statement about its vector part alone. The scala
 For the present article it is enough to take the motion one-dimensional along a fixed direction $\vec u$, so that
 
 $$
-x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = \xi(t')\,\vec u, \qquad \xi(t') = A\cos(\omega t' + \varphi),
+x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = \xi(t')\,\vec u, \qquad \xi(t') = A\cos(\omega t' + \theta^{\mathrm{pha}}),
 $$
 
-with amplitude $A$ and phase $\varphi$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
+with amplitude $A$ and phase $\theta^{\mathrm{pha}}$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
 
 ### The Restoring Force as a Central Material Vector
 

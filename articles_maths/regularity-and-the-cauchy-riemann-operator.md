@@ -137,25 +137,25 @@ $$
 
 using $\partial/\partial x_t z^n = nz^{n-1}$, $\partial/\partial x_1\,z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$.
 
-**Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\zeta \in \mathbb{C}^m$ the symbol element $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ and its conjugate $\sigma^{\mathrm{refl}}(\zeta) = \zeta_t - \sum_kB_k\zeta_k$ satisfy
+**Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\varkappa^{\mathrm{crd}} \in \mathbb{C}^m$ the symbol element $\sigma(\varkappa^{\mathrm{crd}}) = \sum_\alpha B_\alpha\varkappa^{\mathrm{crd}}_\alpha$ and its conjugate $\sigma^{\mathrm{refl}}(\varkappa^{\mathrm{crd}}) = \varkappa^{\mathrm{crd}}_t - \sum_kB_k\varkappa^{\mathrm{crd}}_k$ satisfy
 
 $$
-\sigma(\zeta)\,\sigma^{\mathrm{refl}}(\zeta) = \sum_\alpha\zeta_\alpha^2,
+\sigma(\varkappa^{\mathrm{crd}})\,\sigma^{\mathrm{refl}}(\varkappa^{\mathrm{crd}}) = \sum_\alpha\varkappa^{\mathrm{crd}}_\alpha^2,
 $$
 
-the complex scalars being central in $A_\mathbb{C} = A\otimes_\mathbb{R}\mathbb{C}$ and therefore commuting with the $B_k$. If $\zeta \neq 0$ is isotropic, $\sum_\alpha\zeta_\alpha^2 = 0$, then $\sigma(\zeta)$ and $\sigma^{\mathrm{refl}}(\zeta)$ are both nonzero — separating real and imaginary parts reduces $\sigma(\zeta) = 0$ to $\zeta = 0$ by the symbol computation — so $\sigma(\zeta)$ is a zero divisor of $A_\mathbb{C}$, and
+the complex scalars being central in $A_\mathbb{C} = A\otimes_\mathbb{R}\mathbb{C}$ and therefore commuting with the $B_k$. If $\varkappa^{\mathrm{crd}} \neq 0$ is isotropic, $\sum_\alpha\varkappa^{\mathrm{crd}}_\alpha^2 = 0$, then $\sigma(\varkappa^{\mathrm{crd}})$ and $\sigma^{\mathrm{refl}}(\varkappa^{\mathrm{crd}})$ are both nonzero — separating real and imaginary parts reduces $\sigma(\varkappa^{\mathrm{crd}}) = 0$ to $\varkappa^{\mathrm{crd}} = 0$ by the symbol computation — so $\sigma(\varkappa^{\mathrm{crd}})$ is a zero divisor of $A_\mathbb{C}$, and
 
 $$
-x \longmapsto \exp(\langle\zeta,x\rangle)\,\sigma^{\mathrm{refl}}(\zeta)
+x \longmapsto \exp(\langle\varkappa^{\mathrm{crd}},x\rangle)\,\sigma^{\mathrm{refl}}(\varkappa^{\mathrm{crd}})
 $$
 
-is a $D$-regular $A_\mathbb{C}$-valued function that does not vanish at the origin. Its real and imaginary parts are real $D$-regular functions, at least one of them nonzero, since $D$ has real coefficients and $A \cap iA = 0$ in $A_\mathbb{C}$. For $m = 2$ the covectors $\zeta(\lambda) = \lambda(i,1)$, $\lambda \in \mathbb{R}$, are isotropic and $\sigma(\zeta(\lambda)) = \lambda(i+B_1)$ annihilates $v+iB_1v$ for every $v \in A$, so the real part
+is a $D$-regular $A_\mathbb{C}$-valued function that does not vanish at the origin. Its real and imaginary parts are real $D$-regular functions, at least one of them nonzero, since $D$ has real coefficients and $A \cap iA = 0$ in $A_\mathbb{C}$. For $m = 2$ the covectors $\varkappa^{\mathrm{crd}} = \lambda(i,1)$, $\lambda \in \mathbb{R}$, are isotropic and $\sigma(\varkappa^{\mathrm{crd}}) = \lambda(i+B_1)$ annihilates $v+iB_1v$ for every $v \in A$, so the real part
 
 $$
 x \longmapsto \exp(\lambda x_1)\bigl(\cos(\lambda x_t)\,v - \sin(\lambda x_t)\,B_1v\bigr)
 $$
 
-is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly independent functions. The isotropic family $\zeta(\theta) = (i,\cos\theta,\sin\theta,0,\dots,0)$ is the higher-dimensional analogue of this family.
+is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly independent functions. The isotropic family $\varkappa^{\mathrm{crd}} = (i,\cos\theta,\sin\theta,0,\dots,0)$ is the higher-dimensional analogue of this family.
 
 **Remark.** The last statement is the qualitative reason the theory is rich: ellipticity together with the Cauchy formula makes the solution space large, while non-commutativity prevents it from being an algebra. The particular dimensions and bases of the solution spaces are properties of the individual systems.
 

@@ -52,7 +52,7 @@ and they were checked by recomputation on generic elements. The conjugation ther
 
 **The four-dimensional comparison.** In the full four-slot frame the chirality is the action $Q\mapsto-iQ\vec e_z$, the volume cell with its phase (*Special Element Conventions*, §*The Chirality Convention*). It carries the central $i$, so the coefficient conjugation reverses it and therefore exchanges the two values: a real element there is one value together with the conjugate of the other, which is a Majorana field and not a Majorana–Weyl one (*The Neutrino and Majorana Fermions in Biquaternionic Form*). The whole difference between the two arenas is that single factor of $i$: in the arena the chirality is a product of units, and the conjugation fixes it. This is the fermionic side's true content, and the bosonic side must match it.
 
-**The boson.** The boson is a single real scalar field $\phi$, and it is central: it multiplies every element by the same number, and its exponentials $\exp(2i\sqrt\pi\,\phi)$ are central. Its free dynamics is the massless equation $\Box\phi=0$ of *Operator and Calculus Conventions*, §*The Gradient*, and its stress tensor is a central scalar. The bosonic side of the dictionary is therefore the centre's dynamics, and this is the identification the next sections use.
+**The boson.** The boson is a single real scalar field $\chi^{\mathrm{scl}}$, and it is central: it multiplies every element by the same number, and its exponentials $\exp(2i\sqrt\pi\,\chi^{\mathrm{scl}})$ are central. Its free dynamics is the massless equation $\Box\chi^{\mathrm{scl}}=0$ of *Operator and Calculus Conventions*, §*The Gradient*, and its stress tensor is a central scalar. The bosonic side of the dictionary is therefore the centre's dynamics, and this is the identification the next sections use.
 
 ## The Abelian Bosonization Dictionary
 
@@ -66,23 +66,23 @@ j_x=\mathrm{Sc}\bigl(\tilde\Psi^{*}\,\vec e_x\tilde\Psi\,\vec e_z\bigr).
 $$
 The reduction is a derived form. In the timelike component the cell $i\vec e_x$ meets itself, and $(i\vec e_x)^2=i^2\,\vec e_x\vec e_x=e_t$, so the identity is what remains. In the spacelike component the same cell follows the arena's second generator, and $(i\vec e_x\,Q\,\vec e_y)(i\vec e_x)=\vec e_xQ\vec e_z$, so the chirality is what remains. The two components therefore carry the identity and the chirality, and no third cell appears. Both scalar parts are real, and the check is a recomputation on generic elements.
 
-**The standard dictionary.** For a massless field $\tilde\Psi$ and a real scalar $\phi$, with a normalisation constant $\alpha$ setting the short-distance cutoff and with the convention $\epsilon_{01}=+1$,
+**The standard dictionary.** For a massless field $\tilde\Psi$ and a real scalar $\chi^{\mathrm{scl}}$, with a normalisation constant $\alpha$ setting the short-distance cutoff and with the convention $\epsilon_{01}=+1$,
 $$
 \boxed{\;
 j_\mu \;\longleftrightarrow\;
--\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\phi}{\partial Q_\nu} ,
+-\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_\nu} ,
 \qquad
 \mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\;
--\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big)\;},
+-\frac{1}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\chi^{\mathrm{scl}}\big)\;},
 $$
-whose components are $j_t\leftrightarrow\frac{1}{\sqrt\pi}\partial\phi/\partial Q_x$ and $j_x\leftrightarrow\frac{1}{\sqrt\pi}\partial\phi/\partial Q_t$. The first entry is the current correspondence and the second is the mass correspondence, the sine-Gordon interaction.
+whose components are $j_t\leftrightarrow\frac{1}{\sqrt\pi}\partial\chi^{\mathrm{scl}}/\partial Q_x$ and $j_x\leftrightarrow\frac{1}{\sqrt\pi}\partial\chi^{\mathrm{scl}}/\partial Q_t$. The first entry is the current correspondence and the second is the mass correspondence, the sine-Gordon interaction.
 
 **The two divergences.** The vector current is conserved and the axial current is not:
 $$
 \sum_\mu\varepsilon_\mu\frac{\partial j_\mu}{\partial Q_\mu} = 0 ,
 \qquad
 \sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
-= -\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\phi}{\partial Q_\mu^2} ,
+= -\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\chi^{\mathrm{scl}}}{\partial Q_\mu^2} ,
 $$
 the plain weight sitting inside the divergence. The operator on the right is the quaternionic norm of the gradient of *Operator and Calculus Conventions*, §*The Gradient*, and not the d'Alembertian of the same section: the two differ in the sign of the spatial part, and the anomaly carries the first. The second relation is the anomaly.
 
@@ -92,9 +92,9 @@ j_{5,t}=-j_x,\qquad j_{5,x}=-j_t .
 $$
 That is the dual of the current in the arena with $\epsilon_{01}=+1$, and with the dictionary it reads
 $$
-j_{5,t}=-\frac{1}{\sqrt\pi}\frac{\partial\phi}{\partial Q_t},
+j_{5,t}=-\frac{1}{\sqrt\pi}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t},
 \qquad
-j_{5,x}=-\frac{1}{\sqrt\pi}\frac{\partial\phi}{\partial Q_x} :
+j_{5,x}=-\frac{1}{\sqrt\pi}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_x} :
 $$
 the axial current is a gradient. The plain exchange $\sum_\nu\epsilon_{\mu\nu}j_\nu$, with no weight in the sum, is not a gradient: its two components have opposite relative signs, and the weighted dual is the one the anomaly uses. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
 
@@ -148,7 +148,7 @@ the adjoint's bilinear with the timelike cell left in place. It is real, and it 
 
 **The bosonization of the mass.** Under the dictionary, for real $m$,
 $$
-\boxed{\;m\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\; -\frac{m}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi\big) = -\frac{2\mu}{\beta^2}\cos(\beta\phi) ,
+\boxed{\;m\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\; -\frac{m}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\chi^{\mathrm{scl}}\big) = -\frac{2\mu}{\beta^2}\cos(\beta\chi^{\mathrm{scl}}) ,
 \qquad
 \mu = \frac{2m}{\alpha}\;},
 $$
@@ -156,7 +156,7 @@ the second form exhibiting the sine-Gordon parameters $\beta=2\sqrt\pi$ and $\mu
 
 **The phase of the mass.** A mass term with phase $\theta$ is equivalent, by a chiral rotation of the fermion, to a real mass $|m|$ together with a shift of the boson:
 $$
-|m|\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\; -\frac{|m|}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi+\theta\big).
+|m|\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\; -\frac{|m|}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\chi^{\mathrm{scl}}+\theta\big).
 $$
 The phase is therefore a **shift of the boson field**. In the framework the mass's phase is a central phase $\exp(i\theta)$, the same object as the $\theta^{\mathrm{vac}}$ vacuum's weighting of *The Theta Vacuum in Biquaternionic Form*, and the shift it induces is the two-dimensional instance of the statement that a $\theta$ angle is a bosonic vacuum angle. The framework's statement is therefore exact and structural: the central phase of the mass is the central phase of the vacuum, and bosonization realises it as a field shift.
 
@@ -190,23 +190,23 @@ The framework supplies the factor $2$ as the two Majorana fields into which one 
 
 The fermionic side of the dictionary is built from vertex operators, and their dimensions are the sharpest arithmetic of the equivalence.
 
-**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\phi/\partial Q_\nu$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\phi/\partial Q_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\phi/\partial Q_t$, and the equal-time commutator of the two lower-index components in the arena is
+**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\chi^{\mathrm{scl}}/\partial Q_\nu$ (the dictionary above), whose components are $j_t=\frac{1}{\sqrt\pi}\partial\chi^{\mathrm{scl}}/\partial Q_x$ and $j_x=\frac{1}{\sqrt\pi}\partial\chi^{\mathrm{scl}}/\partial Q_t$, and the equal-time commutator of the two lower-index components in the arena is
 $$
 \bigl[j_t(Q_x),j_x(Q_y)\bigr] = \frac{i}{\pi}\,\frac{d\delta}{dQ_x}(Q_x-Q_y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\phi,\partial\phi/\partial Q_t]=i\delta$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial\phi/\partial Q_x,\partial\phi/\partial Q_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: the commutator $[\chi^{\mathrm{scl}},\partial\chi^{\mathrm{scl}}/\partial Q_t]=i\delta$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial\chi^{\mathrm{scl}}/\partial Q_x,\partial\chi^{\mathrm{scl}}/\partial Q_t]$, which is $\frac{i}{\pi}$ times the derivative of the delta written in the display above. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being the second relation of the dictionary section.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
-:\!\exp\bigl(i\beta\phi_{L,R}\bigr)\!:,
+:\!\exp\bigl(i\beta\chi^{\mathrm{scl}}_{L,R}\bigr)\!:,
 \qquad
 \Delta_{\mathrm{ch}}(\beta)=\frac{\beta^{2}}{8\pi},
 \qquad
 \Delta(\beta)=\frac{\beta^{2}}{4\pi},
 $$
-where $\phi_L$ and $\phi_R$ are the two halves of $\phi=\phi_L+\phi_R$, $\Delta_{\mathrm{ch}}$ is the dimension of a vertex built on one half and $\Delta$ the dimension of a vertex built on the full field. The two differ by the factor two of the half-propagator: $\langle\phi_L\phi_L\rangle$ carries half of $\langle\phi\phi\rangle$, so a half-vertex of coupling $\beta$ has half the dimension of a full one. The arithmetic was verified, and one coupling supplies both values: $\beta=2\sqrt\pi$ gives $\Delta_{\mathrm{ch}}(2\sqrt\pi)=\tfrac12$, the dimension of a free fermion field, and $\Delta(2\sqrt\pi)=1$, the dimension of the mass operator $\cos(2\sqrt\pi\,\phi)$, whose exponential halves are the products of the two half-vertices, one from each half, $e^{i2\sqrt\pi\phi_L}e^{i2\sqrt\pi\phi_R}=e^{i2\sqrt\pi\phi}$. The fermion and the perturbation that gives it a mass are therefore the same vertex at the same coupling, read on one half or on the pair; no second coupling is needed. This is the clearest form of the equivalence: the fermion is the vertex with the fermion's dimension, and the mass is the vertex with the mass's dimension.
+where $\chi^{\mathrm{scl}}_L$ and $\chi^{\mathrm{scl}}_R$ are the two halves of $\chi^{\mathrm{scl}}=\chi^{\mathrm{scl}}_L+\chi^{\mathrm{scl}}_R$, $\Delta_{\mathrm{ch}}$ is the dimension of a vertex built on one half and $\Delta$ the dimension of a vertex built on the full field. The two differ by the factor two of the half-propagator: $\langle\chi^{\mathrm{scl}}_L\chi^{\mathrm{scl}}_L\rangle$ carries half of $\langle\chi^{\mathrm{scl}}\chi^{\mathrm{scl}}\rangle$, so a half-vertex of coupling $\beta$ has half the dimension of a full one. The arithmetic was verified, and one coupling supplies both values: $\beta=2\sqrt\pi$ gives $\Delta_{\mathrm{ch}}(2\sqrt\pi)=\tfrac12$, the dimension of a free fermion field, and $\Delta(2\sqrt\pi)=1$, the dimension of the mass operator $\cos(2\sqrt\pi\,\chi^{\mathrm{scl}})$, whose exponential halves are the products of the two half-vertices, one from each half, $e^{i2\sqrt\pi\chi^{\mathrm{scl}}_L}e^{i2\sqrt\pi\chi^{\mathrm{scl}}_R}=e^{i2\sqrt\pi\chi^{\mathrm{scl}}}$. The fermion and the perturbation that gives it a mass are therefore the same vertex at the same coupling, read on one half or on the pair; no second coupling is needed. This is the clearest form of the equivalence: the fermion is the vertex with the fermion's dimension, and the mass is the vertex with the mass's dimension.
 
-**The framework's interpretation of a vertex.** The operator $:\!\exp(i\beta\phi)\!:$ is built from the **exponential of a central field**: $\phi$ is central, so the vertex operator is the exponential of a central element, and it is the only kind of local operator the bosonic side has. The fermion on the other side is an **anticommuting element** of the algebra. The equivalence therefore identifies a central exponential with an anticommuting element, and the identification is not an isomorphism of the two algebras as they stand: the boson's field commutes with itself and the fermion's anticommutes, and the anticommutation is the statistics statement, carried on the bosonic side by the cocycle of the vertex algebra, whose coefficient is the same anomaly as before. Read this way, the bosonization dictionary is a map between **a commuting object and an anticommuting one**, made an isomorphism of operator algebras by the vertex algebra's central extension. This is the algebraic content of the equivalence and it is worth stating plainly, because it shows the dictionary's non-triviality: an associative central exponential and an anticommuting element are not the same object, and only the extension makes them equivalent.
+**The framework's interpretation of a vertex.** The operator $:\!\exp(i\beta\chi^{\mathrm{scl}})\!:$ is built from the **exponential of a central field**: $\chi^{\mathrm{scl}}$ is central, so the vertex operator is the exponential of a central element, and it is the only kind of local operator the bosonic side has. The fermion on the other side is an **anticommuting element** of the algebra. The equivalence therefore identifies a central exponential with an anticommuting element, and the identification is not an isomorphism of the two algebras as they stand: the boson's field commutes with itself and the fermion's anticommutes, and the anticommutation is the statistics statement, carried on the bosonic side by the cocycle of the vertex algebra, whose coefficient is the same anomaly as before. Read this way, the bosonization dictionary is a map between **a commuting object and an anticommuting one**, made an isomorphism of operator algebras by the vertex algebra's central extension. This is the algebraic content of the equivalence and it is worth stating plainly, because it shows the dictionary's non-triviality: an associative central exponential and an anticommuting element are not the same object, and only the extension makes them equivalent.
 
 **Sugawara.** The bosonic stress tensor is the Sugawara form of the current of the previous subsection. Written with the dictionary's $j_t$ and $j_x$, the traceless symmetric combination is
 $$
@@ -216,9 +216,9 @@ T_{tx}=T_{xt}=\pi\,j_tj_x ,
 $$
 the coefficient $\pi/2$ being the inverse of the dictionary's $1/\pi$, and it is the canonical stress tensor of the free boson,
 $$
-T_{tt}=T_{xx}=\frac12\left[\Bigl(\frac{\partial\phi}{\partial Q_t}\Bigr)^2+\Bigl(\frac{\partial\phi}{\partial Q_x}\Bigr)^2\right],
+T_{tt}=T_{xx}=\frac12\left[\Bigl(\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t}\Bigr)^2+\Bigl(\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_x}\Bigr)^2\right],
 \qquad
-T_{tx}=T_{xt}=\frac{\partial\phi}{\partial Q_t}\frac{\partial\phi}{\partial Q_x} ,
+T_{tx}=T_{xt}=\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_x} ,
 $$
 so the central charge is $c=1$, matching the fermionic $c=1$ of the central-charge section. The framework adds nothing beyond naming the current's $\mathrm{U}(1)$ as the abelian part of the algebra's symmetry; the non-abelian Sugawara construction belongs to the group theory of the next section.
 
@@ -241,13 +241,13 @@ The non-abelian extension is stated and its status fixed.
 - The label takes two values: $\tilde\Psi_L$ is the minus one and $\tilde\Psi_R$ the plus one, and only the zero element is both. A product takes the value of its right factor; for the single units, left multiplication by $e_t$ or $\vec e_x$ keeps the value and by $\vec e_y$ or $\vec e_z$ exchanges it, and right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it.
 - The real structure is the coefficient conjugation $\overline{\tilde\Psi}$, an involution that fixes the chirality, which is a product of units, and reverses the two generator actions, each of which carries one factor of $i$; each value of the label is therefore preserved, and the mass term rotates the scalar and pseudoscalar densities in a real plane. This is the algebraic reason the bosonized mass is a cosine. In four dimensions the chirality carries the central $i$, the conjugation reverses it and exchanges the values, and the counting that makes bosonization possible fails there.
 - The current bilinears are the two scalar parts $j_t=\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi)$ and $j_x=\mathrm{Sc}(\tilde\Psi^{*}\vec e_x\tilde\Psi\vec e_z)$; they carry the identity and the chirality, both are real, and the axial components are $j_{5,t}=-j_x$ and $j_{5,x}=-j_t$. Verified.
-- The mass term is the exchange of the two values; in the arena it is $m\overline{\tilde\Psi}\vec e_y$, the exchange being carried by the right factor $\vec e_y$ because the conjugation fixes the real chirality. It bosonizes to the cosine, and its central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, $\cos(2\sqrt\pi\phi)\to\cos(2\sqrt\pi\phi+\theta)$.
+- The mass term is the exchange of the two values; in the arena it is $m\overline{\tilde\Psi}\vec e_y$, the exchange being carried by the right factor $\vec e_y$ because the conjugation fixes the real chirality. It bosonizes to the cosine, and its central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, $\cos(2\sqrt\pi\chi^{\mathrm{scl}})\to\cos(2\sqrt\pi\chi^{\mathrm{scl}}+\theta)$.
 - The vertex-operator arithmetic is exact: with $\Delta_{\mathrm{ch}}(\beta)=\beta^2/(8\pi)$ on one half and $\Delta(\beta)=\beta^2/(4\pi)$ on the full field, the single coupling $\beta=2\sqrt\pi$ gives $\Delta_{\mathrm{ch}}=\tfrac12$, the free-fermion dimension, and $\Delta=1$, the mass dimension; the factor two between them is the half-propagator of the half-field, not a second coupling. The bosonized fermion is therefore a central exponential while the fermion itself is an anticommuting element, so the dictionary maps a commuting object to an anticommuting one, and only the central extension makes the two operator algebras isomorphic.
 - The central charges match, $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$, as a component count.
 
 **Standard, and transcribed.**
 
-- The abelian dictionary: $j_\mu\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\phi/\partial Q_\nu$, $\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\sum_\mu\varepsilon_\mu\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2\phi/\partial Q_\mu^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
+- The abelian dictionary: $j_\mu\leftrightarrow-\tfrac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial\chi^{\mathrm{scl}}/\partial Q_\nu$, $\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi i\vec e_x)\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\chi^{\mathrm{scl}})$; the axial anomaly $\sum_\mu\varepsilon_\mu\partial j_{5\mu}/\partial Q_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2\chi^{\mathrm{scl}}/\partial Q_\mu^2$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
 - The Schwinger term $[j_t,j_x]=\tfrac{i}{\pi}\delta'$, $\delta'$ being the derivative of the delta, with both indices low; the vertex operators with $\Delta_{\mathrm{ch}}=\beta^2/8\pi$ at $\beta=2\sqrt\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana field.
@@ -340,14 +340,14 @@ the general rule being $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$ for $A
 
 Bosonization in biquaternionic form is the standard two-dimensional equivalence, with the framework's naming of the two sides. The arena's two generator actions are $A_t:Q\mapsto iQ\vec e_x$ and $A_x:Q\mapsto i\vec e_xQ\vec e_y$; they square to $e_t$ and to $-e_t$ and anticommute, and their product in one order is the chirality $\Gamma:Q\mapsto\vec e_xQ\vec e_z$, an involution whose two values are the label: $\tilde\Psi_L$ is the minus one and $\tilde\Psi_R$ the plus one. The coefficient conjugation fixes the chirality, which is a product of units, and reverses the two generator actions, each of which carries one factor of $i$, so it preserves each value and the two values are a real splitting. In four dimensions the chirality carries the central $i$, the conjugation reverses it, and the values are exchanged. The dictionary is
 $$
-j_t=\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\phi}{\partial Q_x},
+j_t=\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_x},
 \qquad
-j_x=\mathrm{Sc}\bigl(\tilde\Psi^{*}\vec e_x\tilde\Psi\vec e_z\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\phi}{\partial Q_t},
+j_x=\mathrm{Sc}\bigl(\tilde\Psi^{*}\vec e_x\tilde\Psi\vec e_z\bigr)\longleftrightarrow\frac{1}{\sqrt\pi}\frac{\partial\chi^{\mathrm{scl}}}{\partial Q_t},
 $$
 $$
-\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr)\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
+\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr)\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\chi^{\mathrm{scl}}\big),
 \qquad
-\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\phi}{\partial Q_\mu^2},
+\sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\chi^{\mathrm{scl}}}{\partial Q_\mu^2},
 $$
 and the framework's contribution is to name the two sides: the fermion is an element of the algebra, read in one value for the count, and the boson is a central scalar, so that the equivalence is a correspondence between the algebra's operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear mass — the exchange of the two values, carried in the arena by the right factor $\vec e_y$ — bosonizes to the cosine, and the mass's central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, the same central phase that weights the $\theta^{\mathrm{vac}}$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 
@@ -368,12 +368,12 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $j_{5,t}$, $j_{5,x}$ | The axial components, $-j_x$ and $-j_t$ |
 | $\varepsilon=(1,-1)$ | The plain weight of the arena's two slots (*Frame and Metric Conventions*, §*The Rules*) |
 | $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
-| $\phi$ | The real boson field, central |
+| $\chi^{\mathrm{scl}}$ | The real boson field, central |
 | $\alpha$ | Short-distance cutoff in the dictionary |
 | $\theta$ | Phase of the mass, $m=|m|e^{i\theta}$; also the $\theta^{\mathrm{vac}}$-vacuum angle |
-| $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box\phi=0$ |
+| $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box\chi^{\mathrm{scl}}=0$ |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
-| $:\!\exp(i\beta\phi)\!:$ | Vertex operator; dimension $\beta^2/4\pi$ on the full field and $\beta^2/8\pi$ on one half |
+| $:\!\exp(i\beta\chi^{\mathrm{scl}})\!:$ | Vertex operator; dimension $\beta^2/4\pi$ on the full field and $\beta^2/8\pi$ on one half |
 | $T_{\mu\nu}$ | Stress tensor of the boson |
 | $c$ | Central charge; $c=1$ for a Dirac fermion or a real boson |
 

@@ -27,7 +27,7 @@ $$
 and the Borel $B=T\ltimes U$ is the product of the torus and the unipotent group $U=\exp(\mathfrak{n})$, where $\mathfrak{n}$ is the nilpotent upper triangular algebra. The exponential of the root is
 
 $$
-e^{tH}=\sum_k e^{t\zeta_k}P_k,
+e^{tH}=\sum_k e^{t\omega_k}P_k,
 $$
 
 and the exponential of a simple nilpotent is polynomial,
@@ -240,17 +240,17 @@ because the two matrices commute. The logarithm series terminates because $\lamb
 
 ### The Root
 
-**Proposition.** For the root $H=\sum_k\zeta_kE_{kk}$,
+**Proposition.** For the root $H=\sum_k\omega_kE_{kk}$,
 
 $$
-e^{tH}=\sum_k e^{t\zeta_k}E_{kk}=\sum_k e^{t\zeta_k}P_k .
+e^{tH}=\sum_k e^{t\omega_k}E_{kk}=\sum_k e^{t\omega_k}P_k .
 $$
 
-The one-parameter subgroup $t\mapsto e^{tH}$ is periodic if the $\zeta_k$ are integer multiples of a common frequency; in particular $H$ itself is $e^L$ with $L=\operatorname{diag}(2\pi ik/5)$ (up to the choice of the logarithm branches).
+The one-parameter subgroup $t\mapsto e^{tH}$ is periodic if the $\omega_k$ are integer multiples of a common frequency; in particular $H$ itself is $e^L$ with $L=\operatorname{diag}(2\pi ik/5)$ (up to the choice of the logarithm branches).
 
-**Proof.** The exponential of a diagonal matrix is the diagonal of the exponentials; the spectral projectors are $E_{kk}$. The root has eigenvalues $\zeta_k=e^{2\pi ik/5}$, so $H=e^L$ with $L=\operatorname{diag}(2\pi ik/5)$.
+**Proof.** The exponential of a diagonal matrix is the diagonal of the exponentials; the spectral projectors are $E_{kk}$. The root has eigenvalues $\omega_k=e^{2\pi ik/5}$, so $H=e^L$ with $L=\operatorname{diag}(2\pi ik/5)$.
 
-**Corollary.** The root is in $SL_5$, because $\det H=\prod_k\zeta_k=1$; the logarithm $L$ can be chosen traceless.
+**Corollary.** The root is in $SL_5$, because $\det H=\prod_k\omega_k=1$; the logarithm $L$ can be chosen traceless.
 
 **Proof.** The product of all fifth roots of unity is $(-1)^{5-1}=1$; the determinant is $1$. The naive logarithm $L_0=\operatorname{diag}(2\pi ik/5)$ has trace $2\pi i(0+1+2+3+4)/5=4\pi i$; replacing the $k=0$ entry $0$ by $-4\pi i$ does not change $e^{L_0}$ and makes the trace zero. Hence $H=e^L$ with $L\in\mathfrak{sl}_5$.
 
@@ -308,7 +308,7 @@ $$
 \boxed{\ \exp:\mathfrak{gl}_5\to GL_5\text{ is surjective, locally invertible};\quad \det(e^A)=e^{\operatorname{tr}A};\quad e^{tE_{k,k+1}}=I+tE_{k,k+1}.\ }
 $$
 
-The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter subgroups are $e^{tX}$; the standard subalgebras $\mathfrak{sl}_5,\mathfrak{u}(5),\mathfrak{su}(5),\mathfrak{n},\mathfrak{t}$ exponentiate to $SL_5,U(5),SU(5),U,T$. The root gives $e^{tH}=\sum_ke^{t\zeta_k}P_k$; the simple nilpotents give the elementary unipotents; the gauge rescales the four nilpotent directions.
+The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter subgroups are $e^{tX}$; the standard subalgebras $\mathfrak{sl}_5,\mathfrak{u}(5),\mathfrak{su}(5),\mathfrak{n},\mathfrak{t}$ exponentiate to $SL_5,U(5),SU(5),U,T$. The root gives $e^{tH}=\sum_ke^{t\omega_k}P_k$; the simple nilpotents give the elementary unipotents; the gauge rescales the four nilpotent directions.
 
 | Object | Lie algebra | Group |
 |---|---|---|

@@ -127,11 +127,11 @@ $$
 $$
 for a constant $C$, and
 $$
-\lvert F(\zeta)\rvert\le C'\,e^{2\pi R\lVert\operatorname{Im}\zeta\rVert}.
+\lvert F(\omega)\rvert\le C'\,e^{2\pi R\lVert\operatorname{Im}\omega\rVert}.
 $$
 The extension is the Fourier–Laplace transform
 $$
-F(\zeta)=\int_{\mathbb{R}^4}f(x)\,e^{-2\pi i x\cdot\zeta}\,dx.
+F(\omega)=\int_{\mathbb{R}^4}f(x)\,e^{-2\pi i x\cdot\omega}\,dx.
 $$
 
 *Proof.* This is the Paley–Wiener theorem of *Fourier Analysis on Euclidean Spaces*, in the $L^2$ form; the direct part is the analytic continuation of the integral, and the converse is the theorem of Paley and Wiener.

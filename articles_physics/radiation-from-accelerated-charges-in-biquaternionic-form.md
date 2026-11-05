@@ -147,11 +147,11 @@ This is the central object of the retarded theory. Its scalar part is the scalar
 $$
 \tilde{A} = i\,a'_t\,e_t + \vec A,
 \qquad
-\phi = \frac{ϙ}{4\pi\epsilon D}, \qquad
-\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\phi .
+\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D}, \qquad
+\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
 $$
 
-The relation $\vec A = (\vec v/c^2)\phi$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a **single biquaternion built from two elements of $\mathbb{M}_-$**, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.
+The relation $\vec A = (\vec v/c^2)\chi^{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a **single biquaternion built from two elements of $\mathbb{M}_-$**, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.
 
 ## The Spinor Square Root and the Invariant Retarded Distance
 
@@ -420,7 +420,7 @@ $$
 \kappa = 1 - \beta\cos\theta ,
 $$
 
-and an azimuthal angle $\\theta^{\\mathrm{azm}}$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.
+and an azimuthal angle $\theta^{\mathrm{azm}}$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.
 
 For **linear acceleration**, $d\vec\beta/dt'_r\parallel\vec\beta$, the vector triple product collapses. Since $\vec\beta\times\,d\vec\beta/dt'_r = 0$, one has $\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r = \vec u_R\times\,d\vec\beta/dt'_r$ and therefore
 
@@ -441,17 +441,17 @@ For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$. Choosing $\vec\beta$ 
 
 $$
 \left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2
-= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right],
+= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\sin^2\theta\cos^2\theta^{\mathrm{azm}}}{\gamma^2}\right],
 $$
 
 and hence
 
 $$
 \frac{dP}{d\Omega} = \frac{ϙ^2\left(d\beta/dt'_r\right)^{2}}{16\pi^2\epsilon c\,\kappa^6}
-\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right].
+\left[\kappa^2 - \frac{\sin^2\theta\cos^2\theta^{\mathrm{azm}}}{\gamma^2}\right].
 $$
 
-Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
+Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\chi^{\mathrm{scp}}$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
 
 **A remark on the temporal convention.** The distributions above are written per unit of the observer's time $t'$ and with $d\vec\beta/dt'_r$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t'_r$; because $dt' = \kappa\,dt'_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The physical total power is the same in either convention; the two distributions themselves are not, since they differ pointwise by the direction-dependent factor $\kappa$, so the sphere integral must be taken with that factor in the retarded-time form.
 
@@ -582,7 +582,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Field invariants |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $dP/d\Omega$ | Power per unit solid angle (per observer time) |
-| $\\theta, \\theta^{\\mathrm{azm}}$ | Polar angle from $\vec\beta$, azimuthal angle |
+| $\theta, \theta^{\mathrm{azm}}$ | Polar angle from $\vec\beta$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |
 | $ϙ, m$ | Charge and mass of the radiating particle |
 | $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |

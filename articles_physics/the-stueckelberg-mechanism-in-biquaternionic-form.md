@@ -78,17 +78,17 @@ $$
 -\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}
 =-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu^2\langle\tilde A,\tilde\nabla\chi\rangle_{\natural}-\tfrac12\mu^2\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi ,
 $$
-shows the three pieces: the Proca mass, a derivative mixing between the vector and the scalar, and the scalar's kinetic term — the last being $-\tfrac12(\partial\phi)^2$ after rescaling, the healthy sign of the Klein–Gordon companion. Rescaling the scalar to canonical normalization,
+shows the three pieces: the Proca mass, a derivative mixing between the vector and the scalar, and the scalar's kinetic term — the last being $-\tfrac12(\partial\chi^{\mathrm{scl}})^2$ after rescaling, the healthy sign of the Klein–Gordon companion. Rescaling the scalar to canonical normalization,
 $$
-\chi=\frac{\phi}{\mu},
+\chi=\frac{\chi^{\mathrm{scl}}}{\mu},
 \qquad
--\tfrac12\mu^2\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi ,
+-\tfrac12\mu^2\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi^{\mathrm{scl}}\,\partial/\partial Q_\mu\,\chi^{\mathrm{scl}} ,
 \qquad
-+\mu^2\sum_\mu A_\mu\partial/\partial Q_\mu\,\chi=+\mu\sum_\mu A_\mu\partial/\partial Q_\mu\,\phi ,
++\mu^2\sum_\mu A_\mu\partial/\partial Q_\mu\,\chi=+\mu\sum_\mu A_\mu\partial/\partial Q_\mu\,\chi^{\mathrm{scl}} ,
 $$
 puts the Lagrangian in the form of a massless vector, a massless scalar and a derivative mixing of strength $\mu$:
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu\langle\tilde A,\tilde\nabla\phi\rangle_{\natural}-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi .
+\mathcal{L}_{\mathrm{S}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu\langle\tilde A,\tilde\nabla\chi\rangle_{\natural}-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\chi^{\mathrm{scl}}\,\partial/\partial Q_\mu\,\chi^{\mathrm{scl}} .
 $$
 The mixing is removed by the gauge transformation that the symmetry permits, and the result is the massive vector alone; this is the content of the gauge fixing below. The Lagrangian has five field components and one gauge symmetry, and it describes three physical polarizations because the scalar and the longitudinal vector are one mode in two variables.
 
@@ -152,19 +152,19 @@ The gauge symmetry removes the scalar by fixing it to a function of the vector �
 
 The abelian Higgs mechanism of the companion article couples the vector to a complex central scalar with a potential,
 $$
-\mathcal{L}_{\mathrm{H}}=-\sum_\mu(D_\mu\varphi)^*(D_\mu\varphi)-V(\varphi^*\varphi),
+\mathcal{L}_{\mathrm{H}}=-\sum_\mu(D_\mu\chi)^*(D_\mu\chi)-V(\chi^*\chi),
 \qquad
-V=\beta\left(\varphi^*\varphi-\tfrac{v^2}{2}\right)^2 ,
+V=\beta\left(\chi^*\chi-\tfrac{v^2}{2}\right)^2 ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu ,
 $$
-whose minimum is at $\vert\varphi\vert=v/\sqrt2$. Writing the scalar in polar form, $\varphi=\rho\,\exp(i\vartheta)$ with $\rho$ the radial mode and $\vartheta$ the phase, the phase enters the covariant derivative only through
+whose minimum is at $\vert\chi\vert=v/\sqrt2$. Writing the scalar in polar form, $\chi=\rho\,\exp(i\vartheta)$ with $\rho$ the radial mode and $\vartheta$ the phase, the phase enters the covariant derivative only through
 $$
 \frac{1}{\kappa}\partial/\partial Q_\mu\,\vartheta
 $$
 in the combination $A_\mu+\tfrac{1}{\kappa}\partial/\partial Q_\mu\,\vartheta$, and it shifts under a gauge transformation. The Stueckelberg field is precisely this phase, and the Stueckelberg Lagrangian is what remains of the Higgs Lagrangian when the radial mode is **removed** — held at its vacuum value or given an infinite mass — so that only the phase, with its shift, survives:
 $$
-\varphi=\frac{v}{\sqrt2}\exp(i\vartheta)=\frac{v}{\sqrt2}\exp(-i\mu\chi/v),
+\chi=\frac{v}{\sqrt2}\exp(i\vartheta)=\frac{v}{\sqrt2}\exp(-i\mu\chi/v),
 \qquad
 \vartheta=-\frac{\mu}{v}\,\chi ,
 $$
@@ -172,11 +172,11 @@ with $\chi$ normalized as above. Conversely, the abelian Higgs is the **ultravio
 
 ### The Explicit Limit
 
-The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\varphi=\frac{1}{\sqrt2}(\rho+v)\exp(i\vartheta)$ with $\rho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
+The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\chi=\frac{1}{\sqrt2}(\rho+v)\exp(i\vartheta)$ with $\rho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
 $$
-D_\mu\varphi=\frac{1}{\sqrt2}\exp(i\vartheta)\Big[\partial/\partial Q_\mu\,\rho+i(\rho+v)\big(\partial/\partial Q_\mu\,\vartheta+\kappa A_\mu\big)\Big],
+D_\mu\chi=\frac{1}{\sqrt2}\exp(i\vartheta)\Big[\partial/\partial Q_\mu\,\rho+i(\rho+v)\big(\partial/\partial Q_\mu\,\vartheta+\kappa A_\mu\big)\Big],
 $$
-so the Goldstone enters through $A_\mu+\tfrac{1}{\kappa}\partial/\partial Q_\mu\,\vartheta$, and the gauge transformation $\varphi\mapsto \exp(+i\kappa\Gamma)\varphi$, $A_\mu\mapsto A_\mu-\partial/\partial Q_\mu\,\Gamma$ shifts $\vartheta\mapsto\vartheta+\kappa\Gamma$, the same transformation law the Stueckelberg field carries. The **Stueckelberg field** is the rescaled phase, with the sign fixed by the requirement that it shift as $\chi\mapsto\chi-\Gamma$ and whose invariant combination is $A_\mu-\partial/\partial Q_\mu\,\chi$:
+so the Goldstone enters through $A_\mu+\tfrac{1}{\kappa}\partial/\partial Q_\mu\,\vartheta$, and the gauge transformation $\chi\mapsto \exp(+i\kappa\Gamma)\chi$, $A_\mu\mapsto A_\mu-\partial/\partial Q_\mu\,\Gamma$ shifts $\vartheta\mapsto\vartheta+\kappa\Gamma$, the same transformation law the Stueckelberg field carries. The **Stueckelberg field** is the rescaled phase, with the sign fixed by the requirement that it shift as $\chi\mapsto\chi-\Gamma$ and whose invariant combination is $A_\mu-\partial/\partial Q_\mu\,\chi$:
 $$
 \chi=-\frac{v}{\mu}\,\vartheta,
 \qquad
@@ -190,10 +190,10 @@ The comparison isolates the economy of the shift-field description.
 
 | | Stueckelberg | Abelian Higgs |
 |---|---|---|
-| field | central scalar $\chi$ | complex central scalar $\varphi$ |
-| symmetry of the mass term | shift $\chi\to\chi-\Gamma$ | phase rotation of $\varphi$ |
-| potential | none | $V=\beta(\varphi^*\varphi-v^2/2)^2$ |
-| vacuum value | none | $\lvert\varphi\rvert=v/\sqrt2$ |
+| field | central scalar $\chi$ | complex central scalar $\chi$ |
+| symmetry of the mass term | shift $\chi\to\chi-\Gamma$ | phase rotation of $\chi$ |
+| potential | none | $V=\beta(\chi^*\chi-v^2/2)^2$ |
+| vacuum value | none | $\lvert\chi\rvert=v/\sqrt2$ |
 | mass | parameter $\mu$ | $\mu=\kappa v=ϙv/\hbar$ |
 | radial mode | absent (or infinitely heavy) | present, mass $m_h=\sqrt{2\beta}\,v$ |
 | Goldstone mode | $\chi$, kept or gauged away | $\vartheta$, gauged away |
@@ -270,13 +270,13 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$ | Scalar equation; the divergence of the vector equation |
 | $\chi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
 | $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi$ | $R_\xi$ gauge-fixing condition |
-| $\chi=\phi/\mu$ | Canonical normalization of the scalar |
+| $\chi=\chi^{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
 | $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |
 | $m_\chi^2=\xi\mu^2$ | Gauge-dependent scalar mass |
-| $V=\beta(\varphi^*\varphi-v^2/2)^2$, $\vert\varphi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
+| $V=\beta(\chi^*\chi-v^2/2)^2$, $\vert\chi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=ϙv/\hbar$ | Higgs origin of the mass; $\kappa=ϙ/\hbar$ |
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
-| $\varphi=\rho \exp(i\vartheta)$, $\vartheta=-(\mu/v)\,\chi$ | Polar form; $\chi$ the Stueckelberg field |
+| $\chi=\rho \exp(i\vartheta)$, $\vartheta=-(\mu/v)\,\chi$ | Polar form; $\chi$ the Stueckelberg field |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 

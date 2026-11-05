@@ -33,7 +33,7 @@ The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quan
 
 ### The Klein–Gordon operator
 
-For a field $\tilde{\Phi}=\phi\,e_t$ taking values in the centre, the Klein–Gordon equation of the companion article is
+For a field $\tilde{\Phi}=\chi^{\mathrm{scl}}\,e_t$ taking values in the centre, the Klein–Gordon equation of the companion article is
 
 $$
 \left(\Box-\mu^2\right)\tilde{\Phi}=0,
@@ -41,7 +41,7 @@ $$
 \mu=\frac{mc}{\hbar},
 $$
 
-and because both $\Box$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\phi$. On a plane wave with the material four-wavevector
+and because both $\Box$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\chi^{\mathrm{scl}}$. On a plane wave with the material four-wavevector
 
 $$
 \tilde P=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,

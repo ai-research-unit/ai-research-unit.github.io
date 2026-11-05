@@ -10,7 +10,7 @@ The result is a division of labour between the two forms, and it is worth statin
 - The **biquaternion norm** fixes the *metric*. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is
 
 $$
-ds^2_{\mathrm{FS}} \;=\; -\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
+ds^2_{\mathrm{FS}} \;=\; -\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2\right),
 $$
 
 the Fubini–Study line element of $\mathbb{P}^1(\mathbb{C})$, equal to one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the spinorial factor: it is the square of the ratio between the angle on the ray space and the angle on the Bloch sphere, that ratio being the half-angle $\tfrac12$ of the double cover $SU(2)\to SO(3)$.
@@ -19,7 +19,7 @@ Three further results complete the picture. The Fubini–Study metric is **Kähl
 $$
 \omega \;=\; -\,i\,\mathrm{Sc}\!\left(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\right) \;=\; \tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}).
 $$
-The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos\lvert\langle\psi|\phi\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec r|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
+The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec r|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
 
 The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the normalised Hermitian form, whose $2\times2$ reading is the trace; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the Hermitian idempotent displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational interpretation of the same geometry, which belongs to the informational articles, and the spin-specific interpretations, which belong to the spin articles.
 
@@ -83,7 +83,7 @@ $$
 $$
 is the standard identification of the projective line with the Bloch sphere. The corresponding spinor is the Bloch spinor of the ray,
 $$
-|\psi(\theta,\varphi)\rangle=\cos\tfrac{\theta}{2}\,|0\rangle+\exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
+|\psi(\theta,\theta^{\mathrm{azm}})\rangle=\cos\tfrac{\theta}{2}\,|0\rangle+\exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$
 and the physical equivalence of $\psi$ and $\exp(i\alpha)\psi$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $\mathrm{U}(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
 
@@ -101,7 +101,7 @@ The Hermitian form keeps only the scalar part,
 $$
 \boxed{\ 2\,\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\tfrac12\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)=\cos^2\frac{\theta}{2},\ }
 $$
-where $\theta$ is the angle between the two Bloch vectors. This is the transition probability of the two pure states, the squared overlap $\lvert\langle\psi|\phi\rangle\rvert^2$, read as the normalised Hermitian form of the algebra; its $2\times2$ reading is the trace, $\mathrm{Tr}(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2))$. On the matrix side it is $\lvert\langle\psi|\phi\rangle\rvert^2$ with the normalized spinors of the preceding section, and the identification is exact:
+where $\theta$ is the angle between the two Bloch vectors. This is the transition probability of the two pure states, the squared overlap $\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert^2$, read as the normalised Hermitian form of the algebra; its $2\times2$ reading is the trace, $\mathrm{Tr}(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2))$. On the matrix side it is $\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert^2$ with the normalized spinors of the preceding section, and the identification is exact:
 $$
 \lvert\langle\psi(\vec{u}_1)|\psi(\vec{u}_2)\rangle\rvert^2=2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\mathrm{Tr}\bigl(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)\bigr).
 $$
@@ -145,11 +145,11 @@ $$
 ds^2_{\mathrm{FS}}=-\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\vec{u}\cdot\delta\vec{u}=0}
 =\tfrac14\,|d\vec{u}|^2 .
 $$
-With $\vec{u}=(\sin\theta\cos\varphi,\sin\theta\sin\varphi,\cos\theta)$ this is
+With $\vec{u}=(\sin\theta\cos\theta^{\mathrm{azm}},\sin\theta\sin\theta^{\mathrm{azm}},\cos\theta)$ this is
 $$
-\boxed{\ ds^2_{\mathrm{FS}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right).\ }
+\boxed{\ ds^2_{\mathrm{FS}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2\right).\ }
 $$
-The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d\varphi^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
+The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
 The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
@@ -157,7 +157,7 @@ The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a wo
 
 The second derivation uses the spinor directly and confirms the first. Let
 $$
-\psi(\theta,\varphi)=\cos\tfrac{\theta}{2}\,\tilde\Pi_++\sin\tfrac{\theta}{2}\,\exp(i\varphi)\,y
+\psi(\theta,\theta^{\mathrm{azm}})=\cos\tfrac{\theta}{2}\,\tilde\Pi_++\sin\tfrac{\theta}{2}\,\exp(i\theta^{\mathrm{azm}})\,y
 $$
 be a normalized spinor, $2\,\mathrm{Sc}(\psi^\dagger\psi)=1$, equivalently $\langle\psi,\psi\rangle_{*}=\tfrac12$, with $\tilde\Pi_\psi=\psi\psi^\dagger$. The Fubini–Study line element of the ray space is
 $$
@@ -165,32 +165,32 @@ ds^2_{\mathrm{FS}}=2\,\mathrm{Sc}\!\left(d\psi^\dagger\,d\psi\right)-\Bigl|2\,\m
 $$
 the second term removing the phase direction. With
 $$
-d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_++\exp(i\varphi)\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\varphi\Bigr)y ,
+d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_++\exp(i\theta^{\mathrm{azm}})\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\theta^{\mathrm{azm}}\Bigr)y ,
 $$
-from which $\partial/\partial\varphi\,\psi=i\,\exp(i\varphi)\sin\tfrac{\theta}{2}\,y$. Using the normalization $2\,\mathrm{Sc}(\psi^\dagger\psi)=1$ and the matrix-unit relations $\tilde\Pi_+^2=\tilde\Pi_+$, $y^2=x^2=0$, $xy=\tilde\Pi_+$, $yx=e_t-\tilde\Pi_+$ with $y^{*}=x$, the four first derivatives are
+from which $\partial/\partial\theta^{\mathrm{azm}}\,\psi=i\,\exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\,y$. Using the normalization $2\,\mathrm{Sc}(\psi^\dagger\psi)=1$ and the matrix-unit relations $\tilde\Pi_+^2=\tilde\Pi_+$, $y^2=x^2=0$, $xy=\tilde\Pi_+$, $yx=e_t-\tilde\Pi_+$ with $y^{*}=x$, the four first derivatives are
 $$
 2\,\mathrm{Sc}\!\left(\psi^\dagger\partial/\partial\theta\,\psi\right)=0,
 \qquad
-2\,\mathrm{Sc}\!\left(\psi^\dagger\partial/\partial\varphi\,\psi\right)=i\,\sin^2\tfrac{\theta}{2},
+2\,\mathrm{Sc}\!\left(\psi^\dagger\partial/\partial\theta^{\mathrm{azm}}\,\psi\right)=i\,\sin^2\tfrac{\theta}{2},
 \qquad
 2\,\mathrm{Sc}\!\left(\partial/\partial\theta\,\psi^\dagger\partial/\partial\theta\,\psi\right)=\tfrac14,
 \qquad
-2\,\mathrm{Sc}\!\left(\partial/\partial\varphi\,\psi^\dagger\partial/\partial\varphi\,\psi\right)=\sin^2\tfrac{\theta}{2},
+2\,\mathrm{Sc}\!\left(\partial/\partial\theta^{\mathrm{azm}}\,\psi^\dagger\partial/\partial\theta^{\mathrm{azm}}\,\psi\right)=\sin^2\tfrac{\theta}{2},
 $$
-the only mixed scalar being $2\,\mathrm{Sc}(\partial/\partial\theta\,\psi^\dagger\partial/\partial\varphi\,\psi)=\tfrac{i}{4}\sin\theta$ and its reverse, which is purely imaginary and cancels in the symmetrization $d\theta\,d\varphi=d\varphi\,d\theta$. Hence
+the only mixed scalar being $2\,\mathrm{Sc}(\partial/\partial\theta\,\psi^\dagger\partial/\partial\theta^{\mathrm{azm}}\,\psi)=\tfrac{i}{4}\sin\theta$ and its reverse, which is purely imaginary and cancels in the symmetrization $d\theta\,d\theta^{\mathrm{azm}}=d\theta^{\mathrm{azm}}\,d\theta$. Hence
 $$
-2\,\mathrm{Sc}\!\left(\psi^\dagger d\psi\right)=i\,\sin^2\tfrac{\theta}{2}\,d\varphi,
+2\,\mathrm{Sc}\!\left(\psi^\dagger d\psi\right)=i\,\sin^2\tfrac{\theta}{2}\,d\theta^{\mathrm{azm}},
 \qquad
-\Bigl|2\,\mathrm{Sc}\!\left(\psi^\dagger d\psi\right)\Bigr|^2=\sin^4\tfrac{\theta}{2}\,d\varphi^2 ,
+\Bigl|2\,\mathrm{Sc}\!\left(\psi^\dagger d\psi\right)\Bigr|^2=\sin^4\tfrac{\theta}{2}\,d{\theta^{\mathrm{azm}}}^2 ,
 $$
 and
 $$
-2\,\mathrm{Sc}\!\left(d\psi^\dagger d\psi\right)=\tfrac14\,d\theta^2+\sin^2\tfrac{\theta}{2}\,d\varphi^2 .
+2\,\mathrm{Sc}\!\left(d\psi^\dagger d\psi\right)=\tfrac14\,d\theta^2+\sin^2\tfrac{\theta}{2}\,d{\theta^{\mathrm{azm}}}^2 .
 $$
 Subtracting,
 $$
-ds^2_{\mathrm{FS}}=\tfrac14\,d\theta^2+\sin^2\tfrac{\theta}{2}\Bigl(1-\sin^2\tfrac{\theta}{2}\Bigr)d\varphi^2
-=\tfrac14\,d\theta^2+\tfrac14\sin^2\theta\,d\varphi^2 ,
+ds^2_{\mathrm{FS}}=\tfrac14\,d\theta^2+\sin^2\tfrac{\theta}{2}\Bigl(1-\sin^2\tfrac{\theta}{2}\Bigr)d{\theta^{\mathrm{azm}}}^2
+=\tfrac14\,d\theta^2+\tfrac14\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2 ,
 $$
 which is the result of the idempotent computation. The two derivations use different objects — the Hermitian idempotent in $\mathbb{M}_+$ and the spinor in the module — and meet in the same line element, as they must, since the Hermitian idempotent is the bilinear companion $\psi\psi^\dagger$ of the spinor.
 
@@ -224,13 +224,13 @@ The associated symplectic form is
 $$
 \omega(\delta_1,\delta_2)=g(J\delta_1,\delta_2)=\tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}),
 $$
-which in the angles $(\theta,\varphi)$ is
+which in the angles $(\theta,\theta^{\mathrm{azm}})$ is
 $$
-\omega=\tfrac14\sin\theta\,d\theta\wedge d\varphi .
+\omega=\tfrac14\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}} .
 $$
 The pair $(g,\omega)$ is Kähler, and the complex structure is $J$; the sphere of radius $\tfrac12$ with its round metric has Gaussian curvature $4$, which is also the holomorphic sectional curvature of the Fubini–Study metric in this normalization. Its total symplectic area is
 $$
-\int_{S^2}\omega=\tfrac14\int_0^{2\pi}\!\!\int_0^{\pi}\sin\theta\,d\theta\,d\varphi=\pi ,
+\int_{S^2}\omega=\tfrac14\int_0^{2\pi}\!\!\int_0^{\pi}\sin\theta\,d\theta\,d\theta^{\mathrm{azm}}=\pi ,
 $$
 the area of the sphere of radius $\tfrac12$, as stated above.
 
@@ -246,7 +246,7 @@ $$
 whose $2\times2$ reading is $-\tfrac12\,i\,\mathrm{Tr}(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi])$.
 This is the algebraic face of the Kähler form: it is built from the plain form, the product, and the Hermitian conjugation, with no metric input beyond the normalization $\mathrm{Sc}(e_t)=1$, whose $2\times2$ reading is $\mathrm{Tr}(e_t)=2$. The imaginary unit $i$ appears because the commutator of two Hermitian displacements is anti-Hermitian, so its scalar part is imaginary; the factor $i$ converts it to the real two-form.
 
-**The Kähler potential.** In the stereographic coordinate $w=\tan(\theta/2)\,\exp(i\varphi)$ inherited from the spinor, the metric takes the standard Fubini–Study form
+**The Kähler potential.** In the stereographic coordinate $w=\tan(\theta/2)\,\exp(i\theta^{\mathrm{azm}})$ inherited from the spinor, the metric takes the standard Fubini–Study form
 $$
 ds^2_{\mathrm{FS}}=\frac{|dw|^2}{\bigl(1+|w|^2\bigr)^2},
 \qquad
@@ -254,7 +254,7 @@ g_{w\bar{w}}=\partial^2/\partial w\partial\bar w\,K,
 \qquad
 K=\log\bigl(1+|w|^2\bigr),
 $$
-so the Kähler potential is the logarithm of the spinor norm, and the metric is the second derivative of that logarithm. The normalization is the one in which $|dw|^2=dw\,d\bar{w}$ and the line element is $g_{w\bar{w}}\,dw\,d\bar{w}$ with **no** factor of two, so that $g_{w\bar{w}}=1/(1+|w|^2)^2$, equivalently $\partial^2/\partial w\partial\bar w\,K=\tfrac14\Delta_0K$ with $\Delta_0=4\partial^2/\partial w\partial\bar w$ the flat Laplacian of the coordinate plane; a reader who uses the convention $ds^2=2g_{w\bar{w}}\,dw\,d\bar{w}$ must halve the $g_{w\bar{w}}$ written here, and with the normalization stated the display reproduces $\tfrac14(d\theta^2+\sin^2\theta\,d\varphi^2)$ exactly. The sphere is the projective line, the coordinate $w$ is the ratio of the two spinor components, and the central phase has been quotiented out by the passage to the ratio. The fibration is the Hopf fibration $S^3\to S^2$; its connection is what the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form* integrates to give the Berry phase, and the curvature of that connection is proportional to $\omega$. The present article needs only the symplectic form, but it is worth recording that the two articles are reading the same structure: the Berry phase is the holonomy of the Hopf connection, and the Fubini–Study form is its curvature.
+so the Kähler potential is the logarithm of the spinor norm, and the metric is the second derivative of that logarithm. The normalization is the one in which $|dw|^2=dw\,d\bar{w}$ and the line element is $g_{w\bar{w}}\,dw\,d\bar{w}$ with **no** factor of two, so that $g_{w\bar{w}}=1/(1+|w|^2)^2$, equivalently $\partial^2/\partial w\partial\bar w\,K=\tfrac14\Delta_0K$ with $\Delta_0=4\partial^2/\partial w\partial\bar w$ the flat Laplacian of the coordinate plane; a reader who uses the convention $ds^2=2g_{w\bar{w}}\,dw\,d\bar{w}$ must halve the $g_{w\bar{w}}$ written here, and with the normalization stated the display reproduces $\tfrac14(d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2)$ exactly. The sphere is the projective line, the coordinate $w$ is the ratio of the two spinor components, and the central phase has been quotiented out by the passage to the ratio. The fibration is the Hopf fibration $S^3\to S^2$; its connection is what the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form* integrates to give the Berry phase, and the curvature of that connection is proportional to $\omega$. The present article needs only the symplectic form, but it is worth recording that the two articles are reading the same structure: the Berry phase is the holonomy of the Hopf connection, and the Fubini–Study form is its curvature.
 
 ## Geodesics, Distance, and the Trace Distance
 
@@ -262,9 +262,9 @@ The metric determines distances, and the distances carry the same information as
 
 **The geodesic distance.** The geodesics of the round sphere of radius $\tfrac12$ are its great circles, so the Fubini–Study geodesic distance between two pure states is the arc length along the shorter great circle,
 $$
-d_{\mathrm{FS}}\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\phi\rangle\rvert ,
+d_{\mathrm{FS}}\bigl(\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert ,
 $$
-where $\theta$ is the angle between $\vec{u}_1$ and $\vec{u}_2$ and $\lvert\langle\psi|\phi\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the **maximal** distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\vec{u}_1$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.
+where $\theta$ is the angle between $\vec{u}_1$ and $\vec{u}_2$ and $\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the **maximal** distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\vec{u}_1$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.
 
 **The equivalent data on the boundary.** The three boundary quantities are monotone functions of one another, and the identities relating them are the content of the geometry:
 $$
@@ -292,7 +292,7 @@ $$
 $$
 but now for **all** displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\vec r|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.
 
-**What standard physics supplies.** The metrically and statistically distinguished metric of the mixed-state space is the **Bures metric**, equivalently the quantum Fisher information. In the convention in which the Bures distance of two pure states equals their Fubini–Study distance — so that the Uhlmann transition probability of two pure states is $\lvert\langle\psi|\phi\rangle_{*}\rvert^2$, as in the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* — the qubit Bures line element is
+**What standard physics supplies.** The metrically and statistically distinguished metric of the mixed-state space is the **Bures metric**, equivalently the quantum Fisher information. In the convention in which the Bures distance of two pure states equals their Fubini–Study distance — so that the Uhlmann transition probability of two pure states is $\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle_{*}\rvert^2$, as in the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* — the qubit Bures line element is
 $$
 ds^2_{\mathrm{Bures}}=\frac14\left(\frac{dr^2}{1-r^2}+r^2\,d\Omega^2\right)
 =\frac14\left(|d\vec r|^2+\frac{(\vec r\cdot d\vec r)^2}{1-r^2}\right),
@@ -323,10 +323,10 @@ Five statements summarize the result, and two of them are limitations that a rea
 The state space of the biquaternion framework is the normalised hyperplane of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The normalised Hermitian form fixes the transition probability of two pure states, $2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*}=\cos^2(\theta/2)$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)^{*})$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
 
 $$
-\boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right)\;},
+\boxed{\;ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2\right)\;},
 $$
 
-one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$, whose $2\times2$ reading is $-\tfrac12 i\,\mathrm{Tr}(\cdots)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
+one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$, whose $2\times2$ reading is $-\tfrac12 i\,\mathrm{Tr}(\cdots)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
 
 The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.
 
@@ -349,10 +349,10 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}=\mathrm{Tr}(\tilde\Pi_1\tilde\Pi_2^{*})$ | Transition probability of two pure states |
 | $\theta$ | Angle between $\vec{u}_1$ and $\vec{u}_2$ |
 | $d_{\mathrm{FS}}=\theta/2$ | Fubini–Study distance |
-| $ds^2_{\mathrm{FS}}=\tfrac14(d\theta^2+\sin^2\theta\,d\varphi^2)$ | Fubini–Study line element |
+| $ds^2_{\mathrm{FS}}=\tfrac14(d\theta^2+\sin^2\theta\,d{\theta^{\mathrm{azm}}}^2)$ | Fubini–Study line element |
 | $J(v)=\vec{u}\times v$ | Complex structure on the boundary |
-| $\omega=\tfrac14\sin\theta\,d\theta\wedge d\varphi$ | Symplectic (Kähler) form |
-| $w=\tan(\theta/2)\exp(i\varphi)$ | Stereographic (affine) coordinate |
+| $\omega=\tfrac14\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ | Symplectic (Kähler) form |
+| $w=\tan(\theta/2)\exp(i\theta^{\mathrm{azm}})$ | Stereographic (affine) coordinate |
 | $K=\log(1+|w|^2)$ | Kähler potential; $ds^2=g_{w\bar{w}}\,dw\,d\bar{w}$, $g_{w\bar{w}}=1/(1+|w|^2)^2$ |
 | $D=\sin(\theta/2)$ | Trace distance of two pure states |
 | $ds^2_{\mathrm{Bures}}$ | Bures metric of the ball (standard import) |

@@ -105,7 +105,7 @@ $$
 **Definition.** The **characteristic variety** of $D$ is
 
 $$
-\operatorname{Char}(D) = \{\zeta \in \mathbb{C}^m : \sigma(\zeta) \text{ is not invertible in } A_\mathbb{C}\},
+\operatorname{Char}(D) = \{\omega \in \mathbb{C}^m : \sigma(\omega) \text{ is not invertible in } A_\mathbb{C}\},
 $$
 
 where $A_\mathbb{C} = A \otimes_\mathbb{R}\mathbb{C}$ is the complexification.
@@ -113,22 +113,22 @@ where $A_\mathbb{C} = A \otimes_\mathbb{R}\mathbb{C}$ is the complexification.
 **Theorem (the characteristic variety of an elliptic system).** For an elliptic hypercomplex system,
 
 $$
-\boxed{\;\operatorname{Char}(D) = \Bigl\{\zeta \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\zeta_\alpha^2 = 0\Bigr\}\;},
+\boxed{\;\operatorname{Char}(D) = \Bigl\{\omega \in \mathbb{C}^m : \sum_{\alpha=0}^{m-1}\omega_\alpha^2 = 0\Bigr\}\;},
 $$
 
 the complex isotropic cone. In particular $\operatorname{Char}(D)$ meets the real subspace only at the origin, which is the ellipticity of $D$.
 
-*Proof.* By the symbol computation, $\sigma(\zeta)\,\sigma^{\mathrm{refl}}(\zeta) = \sum_\alpha\zeta_\alpha^2$ with $\sigma^{\mathrm{refl}}(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$. If $\sum_\alpha\zeta_\alpha^2 \neq 0$ then $\sigma(\zeta)$ is invertible, with inverse $\sigma^{\mathrm{refl}}(\zeta)/\sum_\alpha\zeta_\alpha^2$. Conversely, if $\sum_\alpha\zeta_\alpha^2 = 0$ and $\zeta \neq 0$, then $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = 0$ with $\sigma^{\mathrm{refl}}(\zeta) \neq 0$ (if both vanished, then $\zeta_0 = 0$ and $\sum_kB_k\zeta_k = 0$, which forces all $\zeta_\alpha = 0$ by linear independence of the $B_k$, including $B_0 = 1$), so $\sigma(\zeta)$ is a zero divisor and not invertible; at $\zeta = 0$ one has $\sigma(0) = 0$, also not invertible. Hence $\operatorname{Char}(D)$ is exactly the isotropic cone. For real $\zeta$ the equation $\sum_\alpha\zeta_\alpha^2 = 0$ has only the solution $\zeta = 0$, so the characteristic variety meets the real subspace only at the origin.
+*Proof.* By the symbol computation, $\sigma(\omega)\,\sigma^{\mathrm{refl}}(\omega) = \sum_\alpha\omega_\alpha^2$ with $\sigma^{\mathrm{refl}}(\omega) = \omega_0 - \sum_kB_k\omega_k$. If $\sum_\alpha\omega_\alpha^2 \neq 0$ then $\sigma(\omega)$ is invertible, with inverse $\sigma^{\mathrm{refl}}(\omega)/\sum_\alpha\omega_\alpha^2$. Conversely, if $\sum_\alpha\omega_\alpha^2 = 0$ and $\omega \neq 0$, then $\sigma(\omega)\sigma^{\mathrm{refl}}(\omega) = 0$ with $\sigma^{\mathrm{refl}}(\omega) \neq 0$ (if both vanished, then $\omega_0 = 0$ and $\sum_kB_k\omega_k = 0$, which forces all $\omega_\alpha = 0$ by linear independence of the $B_k$, including $B_0 = 1$), so $\sigma(\omega)$ is a zero divisor and not invertible; at $\omega = 0$ one has $\sigma(0) = 0$, also not invertible. Hence $\operatorname{Char}(D)$ is exactly the isotropic cone. For real $\omega$ the equation $\sum_\alpha\omega_\alpha^2 = 0$ has only the solution $\omega = 0$, so the characteristic variety meets the real subspace only at the origin.
 
 The characteristic variety is the same for every Clifford-type system of a given dimension: it depends only on $m$, not on the finer multiplication. This is the Fourier-side explanation of the plane waves constructed in *Regularity and the Cauchy–Riemann Operator*, whose complex frequencies are precisely the points of $\operatorname{Char}(D)$.
 
-**Theorem (exponential representation).** Every distribution solution of $Du = 0$ on a convex domain is the limit, in the distributional sense, of exponential-polynomial solutions $x \mapsto p(x)\,\exp(\langle\zeta, x\rangle)$ with $\zeta \in \operatorname{Char}(D)$ and $p$ a polynomial.
+**Theorem (exponential representation).** Every distribution solution of $Du = 0$ on a convex domain is the limit, in the distributional sense, of exponential-polynomial solutions $x \mapsto p(x)\,\exp(\langle\omega, x\rangle)$ with $\omega \in \operatorname{Char}(D)$ and $p$ a polynomial.
 
 *Proof.* This is the Ehrenpreis–Palamodov theorem for constant-coefficient systems: solutions are represented as integrals of exponential solutions over the characteristic variety, and on a convex domain the integral can be approximated by finite combinations.
 
 **Corollary (no compactly supported regular functions).** If $f$ is left regular on all of $A$ and has compact support, then $f = 0$.
 
-*Proof.* By the Paley–Wiener theorem, the Fourier transform of a compactly supported distribution is an entire function of the complex variable $\zeta \in \mathbb{C}^m$ of exponential type. The equation $\sigma(\zeta)(\mathcal F f)(\zeta) = 0$, valid for real $\zeta$ and hence, by analyticity, for $\zeta$ in an open set where $\sigma$ is invertible, forces $\mathcal F f$ to vanish on the complement of $\operatorname{Char}(D)$. Since the complement is open and nonempty, $\mathcal F f = 0$ by analytic continuation, and so $f = 0$.
+*Proof.* By the Paley–Wiener theorem, the Fourier transform of a compactly supported distribution is an entire function of the complex variable $\omega \in \mathbb{C}^m$ of exponential type. The equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$, valid for real $\omega$ and hence, by analyticity, for $\omega$ in an open set where $\sigma$ is invertible, forces $\mathcal F f$ to vanish on the complement of $\operatorname{Char}(D)$. Since the complement is open and nonempty, $\mathcal F f = 0$ by analytic continuation, and so $f = 0$.
 
 So the solution space of the Cauchy–Riemann operator consists of functions of slow decay: the exponential representation makes precise the intuitive picture of the previous articles that regular functions are the hypercomplex analogue of entire functions, and it is genuinely a harmonic-analytic statement, depending on the Fourier transform of the operator rather than on its kernel.
 
@@ -256,11 +256,11 @@ $$
 (\mathcal{L}f)(s) = \int_A f(x)\,\exp(-\langle s, x\rangle)\,dx, \qquad s \in \mathbb{C}^m,
 $$
 
-holomorphic in the tube of convergence and reducing to the Fourier transform on the imaginary axis, $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi)$. The hypercomplex-specific feature is a rigidity on the side of compact support. A compactly supported left regular function on all of $A$ is zero (the corollary above), and more precisely the Fourier transform of a compactly supported $A$-valued distribution is entire of exponential type while the equation $\sigma(\zeta)(\mathcal F f)(\zeta) = 0$ forces its support into the characteristic variety, so:
+holomorphic in the tube of convergence and reducing to the Fourier transform on the imaginary axis, $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi)$. The hypercomplex-specific feature is a rigidity on the side of compact support. A compactly supported left regular function on all of $A$ is zero (the corollary above), and more precisely the Fourier transform of a compactly supported $A$-valued distribution is entire of exponential type while the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ forces its support into the characteristic variety, so:
 
 **Proposition.** If $f$ is a compactly supported left regular $A$-valued distribution, then $\mathcal{L}f = 0$ identically. Hence the Laplace theory of regular functions is a theory of functions on cones or of exponential growth.
 
-*Proof.* The Fourier transform $\mathcal F f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\zeta)(\mathcal F f)(\zeta) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\mathcal F f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi) = 0$ for all real $\xi$, and by analyticity $\mathcal{L}f = 0$.
+*Proof.* The Fourier transform $\mathcal F f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\mathcal F f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi) = 0$ for all real $\xi$, and by analyticity $\mathcal{L}f = 0$.
 
 So the Laplace theory of regular functions is a theory of functions on cones or of exponential growth, and its inversion is the classical contour inversion along a translate of the imaginary axis.
 
@@ -387,7 +387,7 @@ The paper is a survey-level treatment and is used here for the criterion alone; 
 
 ## Summary
 
-The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean **Fourier transform** $(\mathcal F f)(\xi) = \int_A f(x)\exp(-i\langle\xi,x\rangle)dx$ intertwines differentiation with multiplication, turns **convolution** into the algebra product, and satisfies **Plancherel**. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\xi) = i\sigma(\xi)(\mathcal F f)(\xi)$, so a function is **left regular** exactly when $\sigma(\xi)(\mathcal F f)(\xi) = 0$ for all $\xi$. The **characteristic variety** $\operatorname{Char}(D) = \{\zeta \in \mathbb{C}^m : \sum_\alpha\zeta_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the **Ehrenpreis–Palamodov theorem**, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.
+The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean **Fourier transform** $(\mathcal F f)(\xi) = \int_A f(x)\exp(-i\langle\xi,x\rangle)dx$ intertwines differentiation with multiplication, turns **convolution** into the algebra product, and satisfies **Plancherel**. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\xi) = i\sigma(\xi)(\mathcal F f)(\xi)$, so a function is **left regular** exactly when $\sigma(\xi)(\mathcal F f)(\xi) = 0$ for all $\xi$. The **characteristic variety** $\operatorname{Char}(D) = \{\omega \in \mathbb{C}^m : \sum_\alpha\omega_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the **Ehrenpreis–Palamodov theorem**, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.
 
 The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\mathcal F E(\xi) = \sigma^{\mathrm{refl}}(\xi)/(i\sum_\alpha\xi_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = x^{\natural}/(\omega_{m-1}|x|^m)$ with $x^{\natural} = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.
 

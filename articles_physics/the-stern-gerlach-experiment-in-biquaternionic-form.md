@@ -168,16 +168,16 @@ is the **coherence**. The apparatus separates the two diagonal components into t
 The full state of an atom in the apparatus is not a spin state alone: the spin is correlated with the centre-of-mass coordinate $z$, which lives in the material sector. Write the initial state as a tensor product of a spin state and a spatial wavepacket, and let $\tilde{U}$ be the evolution through the field region. Because the Hamiltonian $\tilde{H} = -\gamma B(z)\tilde{S}_3$ is diagonal in the $\vec u_z$ spin basis, the evolution acts on the two spin components with opposite phase gradients and displaces them in opposite directions:
 
 $$
-\left(c_+ |{+z}\rangle + c_- |{-z}\rangle\right)\otimes|\phi\rangle
+\left(c_+ |{+z}\rangle + c_- |{-z}\rangle\right)\otimes|\chi^{\mathrm{alt}}\rangle
 \;\longmapsto\;
-c_+ |{+z}\rangle\otimes|\phi_+\rangle + c_- |{-z}\rangle\otimes|\phi_-\rangle ,
+c_+ |{+z}\rangle\otimes|\chi^{\mathrm{alt}}_+\rangle + c_- |{-z}\rangle\otimes|\chi^{\mathrm{alt}}_-\rangle ,
 $$
 
-with $|\phi_\pm\rangle$ wavepackets centred on the two deflections $\Delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
+with $|\chi^{\mathrm{alt}}_\pm\rangle$ wavepackets centred on the two deflections $\Delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
 
 ### The Reduced Spin State
 
-If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\phi_+|\phi_-\rangle = 0$, the cross terms drop and the reduced state is
+If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\chi^{\mathrm{alt}}_+|\chi^{\mathrm{alt}}_-\rangle = 0$, the cross terms drop and the reduced state is
 
 $$
 \boxed{\;\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)

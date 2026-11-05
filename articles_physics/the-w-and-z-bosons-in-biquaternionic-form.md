@@ -62,15 +62,15 @@ The mixing is the statement that the two neutral gauge fields have different mas
 
 ### The Masses and the Electroweak Scale
 
-The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\phi$, of components $\phi^+$ and $\phi^0$ and of hypercharge $Y_\phi=\tfrac12$, with the potential $V=\lambda\big(|\phi^+|^2+|\phi^0|^2-v^2/2\big)^2$ and the vacuum expectation values
+The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\chi^{\mathrm{scl}}$, of components ${\chi^{\mathrm{scl}}}^+$ and ${\chi^{\mathrm{scl}}}^0$ and of hypercharge $Y_\chi^{\mathrm{scl}}=\tfrac12$, with the potential $V=\lambda\big(|{\chi^{\mathrm{scl}}}^+|^2+|{\chi^{\mathrm{scl}}}^0|^2-v^2/2\big)^2$ and the vacuum expectation values
 $$
-\langle\phi^+\rangle=0,
+\langle{\chi^{\mathrm{scl}}}^+\rangle=0,
 \qquad
-\langle\phi^0\rangle=\frac{v}{\sqrt2},
+\langle{\chi^{\mathrm{scl}}}^0\rangle=\frac{v}{\sqrt2},
 \qquad
 v=246.22\ \mathrm{GeV},
 $$
-gives, through the covariant kinetic term $|D_\mu\phi|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\phi B_\mu$, the mass terms
+gives, through the covariant kinetic term $|D_\mu\chi^{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\chi^{\mathrm{scl}} B_\mu$, the mass terms
 $$
 M_W=\frac{gv}{2},
 \qquad
@@ -98,7 +98,7 @@ $$
 $$
 which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\Delta r$, which is standard.
 
-The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\varphi|\rangle=v/\sqrt2$, is
+The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\chi^{\mathrm{scl}})^*(D_\nu\chi^{\mathrm{scl}})$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\chi^{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
 \boxed{\;M_A=\frac{ϙ v}{\hbar}=\kappa v\;},
 $$
@@ -232,7 +232,7 @@ and the rotation angle is the Weinberg angle. The algebra contains the plane and
 
 ### The Standard Route and Its Ingredient
 
-The standard masses $M_W=gv/2$, $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}v/2$ come from the covariant kinetic term of a scalar doublet with $T_3=\pm1/2$, evaluated at its vacuum expectation value. The three ingredients are (i) a scalar field with a nonzero vacuum value, (ii) a scalar that transforms nontrivially under the non-abelian group, so that the kinetic term contains $g^2(T_3)^2|W|^2|\phi|^2$, and (iii) a potential that fixes the value. The framework supplies (i) and (iii) in the abelian case — the central scalar of the Higgs companion has a potential and a vacuum expectation value, and the companion derives the mass $M_A=\kappa v$ — but not (ii): a central scalar is a **singlet** of the compact factor, its adjoint action is zero, and its covariant kinetic term contains no $g^2|W|^2$ term. The non-abelian W's therefore receive no mass from the framework's central scalar. This is the precise content of the statement that the framework's scalar cannot break the non-abelian group.
+The standard masses $M_W=gv/2$, $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}v/2$ come from the covariant kinetic term of a scalar doublet with $T_3=\pm1/2$, evaluated at its vacuum expectation value. The three ingredients are (i) a scalar field with a nonzero vacuum value, (ii) a scalar that transforms nontrivially under the non-abelian group, so that the kinetic term contains $g^2(T_3)^2|W|^2|\chi^{\mathrm{scl}}|^2$, and (iii) a potential that fixes the value. The framework supplies (i) and (iii) in the abelian case — the central scalar of the Higgs companion has a potential and a vacuum expectation value, and the companion derives the mass $M_A=\kappa v$ — but not (ii): a central scalar is a **singlet** of the compact factor, its adjoint action is zero, and its covariant kinetic term contains no $g^2|W|^2$ term. The non-abelian W's therefore receive no mass from the framework's central scalar. This is the precise content of the statement that the framework's scalar cannot break the non-abelian group.
 
 ### What an Adjoint Scalar Would Give
 

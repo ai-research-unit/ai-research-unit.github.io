@@ -77,7 +77,7 @@ This is the cleanest part of the programme and it is worth naming. The corpus ha
 The Helmholtz potentials themselves have a general integral form, which the paper gives as its equation (4): every function integrable on the sphere of radius $\omega$ generates a solution through
 
 $$
-\psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \int_{|\vec\xi| = \omega} \varphi(\vec\xi,\omega)\, \exp(-i(\vec\xi,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\, dS(\vec\xi),
+\psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \int_{|\vec\xi| = \omega} \chi(\vec\xi,\omega)\, \exp(-i(\vec\xi,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\, dS(\vec\xi),
 $$
 
 which is the superposition of plane waves whose wave vector has fixed length $\omega$. It is the precise sense in which the frequency is the length of the wave vector here, exactly as for a plane wave of speed $c$; the rest of the article uses the spherical solutions below, and this representation is recorded only to fix the meaning of $\omega$ and to show that the general monochromatic solution carries no further parameter.

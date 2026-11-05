@@ -65,9 +65,9 @@ the squares vanishing because each supercharge annihilates the sector it lands i
 
 Three consequences are standard and are used repeatedly below.
 
-**Partner spectra.** $A$ carries the $+$ sector into the $-$ sector and $A^\dagger$ carries it back, so $H_+$ and $H_-$ have the same spectrum except possibly at zero energy. Concretely, if $H_+\psi = A^\dagger A\psi = E\psi$ with $E\neq0$, then $\phi = A\psi/\sqrt{|E|}$ satisfies $H_-\phi = E\phi$, and symmetrically. The two spectra are therefore degenerate level by level, with the possible exception of the ground states.
+**Partner spectra.** $A$ carries the $+$ sector into the $-$ sector and $A^\dagger$ carries it back, so $H_+$ and $H_-$ have the same spectrum except possibly at zero energy. Concretely, if $H_+\psi = A^\dagger A\psi = E\psi$ with $E\neq0$, then $\chi^{\mathrm{scl}} = A\psi/\sqrt{|E|}$ satisfies $H_-\chi^{\mathrm{scl}} = E\chi^{\mathrm{scl}}$, and symmetrically. The two spectra are therefore degenerate level by level, with the possible exception of the ground states.
 
-**Zero modes.** A zero-energy state of $H_+$ satisfies $A\psi = 0$; a zero-energy state of $H_-$ satisfies $A^\dagger\phi = 0$. If $A$ has a normalisable zero mode, the supersymmetry is **unbroken** and $\dim\ker A \neq 0$; if neither $A$ nor $A^\dagger$ has one, the supersymmetry is **broken** and the index vanishes. The Witten index
+**Zero modes.** A zero-energy state of $H_+$ satisfies $A\psi = 0$; a zero-energy state of $H_-$ satisfies $A^\dagger\chi^{\mathrm{scl}} = 0$. If $A$ has a normalisable zero mode, the supersymmetry is **unbroken** and $\dim\ker A \neq 0$; if neither $A$ nor $A^\dagger$ has one, the supersymmetry is **broken** and the index vanishes. The Witten index
 
 $$
 \mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_- = \dim\ker A - \dim\ker A^\dagger

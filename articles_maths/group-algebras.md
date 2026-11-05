@@ -161,10 +161,10 @@ $$
 k[\mathbb{Z}/n] \cong \frac{k[x]}{(x^n-1)},
 $$
 
-and when $k$ contains a primitive $n$-th root of unity $\zeta$ and $\operatorname{char} k \nmid n$,
+and when $k$ contains a primitive $n$-th root of unity $\omega$ and $\operatorname{char} k \nmid n$,
 
 $$
-k[\mathbb{Z}/n] \cong \prod_{j=0}^{n-1} \frac{k[x]}{(x - \zeta^j)} \cong k^n,
+k[\mathbb{Z}/n] \cong \prod_{j=0}^{n-1} \frac{k[x]}{(x - \omega^j)} \cong k^n,
 $$
 
 a product of $n$ copies of $k$, corresponding to the $n$ one-dimensional representations. This is the polynomial-algebra description of the group algebra and specialises to the case $n = 2$ above.

@@ -22,7 +22,7 @@ $$
 
 **Definition.** For a Galois extension $L/K$, a **Galois coefficient group** is an abelian $G$-group $A$ with $G = \operatorname{gal}(L/K)$. For the absolute Galois group, a coefficient group is an abelian group together with an action of $G_K$.
 
-The examples that matter are the additive group $L$ with trivial twisting, the multiplicative group $L^\times$, the group $\mu_n = \mu_n(L)$ of $n$-th roots of unity with the natural action $\sigma \cdot \zeta = \sigma(\zeta)$, the integers $\mathbb{Z}$ with trivial action, and $\mathbb{Z}/n\mathbb{Z}$ with trivial action or with the action through roots of unity.
+The examples that matter are the additive group $L$ with trivial twisting, the multiplicative group $L^\times$, the group $\mu_n = \mu_n(L)$ of $n$-th roots of unity with the natural action $\sigma \cdot \omega = \sigma(\omega)$, the integers $\mathbb{Z}$ with trivial action, and $\mathbb{Z}/n\mathbb{Z}$ with trivial action or with the action through roots of unity.
 
 **Definition.** Let $L/K$ be a Galois extension and $A$ a Galois coefficient group. The **Galois cohomology groups** are
 
@@ -190,7 +190,7 @@ $$
 
 Exactness at $H^1(K,\mu_n)$ gives that $\delta$ is surjective, and exactness at the middle $K^\times$ gives $\ker \delta = (K^\times)^n$; hence $\delta$ induces $K^\times/(K^\times)^n \cong H^1(K,\mu_n)$.
 
-**Corollary (the cohomological form of Kummer theory).** Let $\zeta_n \in K$. Then $G_K$ acts trivially on $\mu_n$ and hence $H^1(K,\mu_n) = \operatorname{Hom}(G_K, \mu_n)$, so
+**Corollary (the cohomological form of Kummer theory).** Let $\omega_n \in K$. Then $G_K$ acts trivially on $\mu_n$ and hence $H^1(K,\mu_n) = \operatorname{Hom}(G_K, \mu_n)$, so
 
 $$
 \operatorname{Hom}(G_K,\mu_n) \cong K^\times/(K^\times)^n .

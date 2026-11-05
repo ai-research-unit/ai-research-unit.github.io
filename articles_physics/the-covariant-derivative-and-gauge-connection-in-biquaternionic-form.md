@@ -180,7 +180,7 @@ because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\, e_t$ is a 
 
 $$
 \Gamma(\tilde{Q}) = -a\,t' + A_x(\tilde{Q}_0)\,x + A_y(\tilde{Q}_0)\,y + A_z(\tilde{Q}_0)\,z,
-\qquad a = -ic\,A_t(\tilde{Q}_0) = \phi(\tilde{Q}_0) \in \mathbb{R},
+\qquad a = -ic\,A_t(\tilde{Q}_0) = \chi(\tilde{Q}_0) \in \mathbb{R},
 $$
 
 so that $\partial/\partial Q_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde{A}_2(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
@@ -190,12 +190,12 @@ so that $\partial/\partial Q_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\sum_\mu A_\mu\,dx_\mu = A_t\,d(ict') + \sum_k A_k\,dx_k = -\phi\,dt' + \vec A\cdot d\vec x ,
+\sum_\mu A_\mu\,dx_\mu = A_t\,d(ict') + \sum_k A_k\,dx_k = -\chi\,dt' + \vec A\cdot d\vec x ,
 \qquad
 d\vec x = \vec e_x\,dx + \vec e_y\,dy + \vec e_z\,dz ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\,a'_t$ giving $-\phi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\,a'_t$ giving $-\chi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -277,7 +277,7 @@ $$
 
 The structural similarity to the identity that the square of a Dirac operator is a Laplacian plus a curvature term is an **interpretation** of this result, not a claim that the biquaternion operator is the standard Dirac operator.
 
-**A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{\Phi} = \phi\,e_t$ obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 - (mc/\hbar)^2\right)\phi\,e_t = 0$, which is consistent. But $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}(\phi e_t) = \left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2\phi\right)e_t + \frac{iϙ}{\hbar}\phi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} - (mc/\hbar)^2\right)\tilde{\Phi} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature.
+**A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{\Phi} = \chi\,e_t$ obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2 - (mc/\hbar)^2\right)\chi\,e_t = 0$, which is consistent. But $\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}(\chi e_t) = \left(\sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2\chi\right)e_t + \frac{iϙ}{\hbar}\chi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}} - (mc/\hbar)^2\right)\tilde{\Phi} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}})$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature.
 
 ### The Chiral Pair and Why the Mass Couples Two Fields
 
@@ -335,7 +335,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 ## Open Questions
 
-1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}) = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{iϙ}{\hbar}\tilde{F}\phi$, which is nonzero wherever the field strength is.
+1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}(\tilde\nabla^{\mathrm{gco},\natural} \tilde\nabla^{\mathrm{gco}}) = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{iϙ}{\hbar}\tilde{F}\chi$, which is nonzero wherever the field strength is.
 
 2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_\mu,A_\nu]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact gauge algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple gauge algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
 

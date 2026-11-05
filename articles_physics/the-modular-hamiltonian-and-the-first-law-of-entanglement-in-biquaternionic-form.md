@@ -152,7 +152,7 @@ The exact form of the first law therefore reads
 $$
 \delta S=\delta\langle K_{0}\rangle+\big\langle K_{\tilde{Ϛ},\tilde{Ϛ}_0}\big\rangle_{\tilde{Ϛ}},
 $$
-so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec {u_r}_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\\theta$ of the closed form.
+so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec {u_r}_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\theta$ of the closed form.
 
 ## The Entanglement Hamiltonian of a Qubit
 

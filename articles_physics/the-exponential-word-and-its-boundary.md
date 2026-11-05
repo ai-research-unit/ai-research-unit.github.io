@@ -148,10 +148,10 @@ The two strata are the two ways a word can degenerate. The idempotent stratum is
 
 ## The Boundary Limits
 
-Take a unit complex number $\zeta$, a scale $R>0$, and the family
+Take a unit complex number $\varkappa^{\mathrm{phs}}$, a scale $R>0$, and the family
 
 $$
-\tilde Q(\psi)=R\,e^{-\psi/2}\,\zeta\,e^{i\psi/2\,\vec u_{\mathrm b}}\,\tilde u_{\mathrm r},
+\tilde Q(\psi)=R\,e^{-\psi/2}\,\varkappa^{\mathrm{phs}}\,e^{i\psi/2\,\vec u_{\mathrm b}}\,\tilde u_{\mathrm r},
 \qquad
 \psi>0.
 $$
@@ -160,7 +160,7 @@ Every member is a unit, and the limit is
 
 $$
 \boxed{\;\tilde Q(\psi)\longrightarrow
-\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
+\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
 \qquad(\psi\to\infty)\;}.
 $$
 
@@ -174,7 +174,7 @@ a,b\in\mathbb{R},
 \tilde u_\perp\ \text{orthogonal to}\ \vec u_{\mathrm b}.
 $$
 
-Then the trace of the limit is $R\zeta(a-ib)$, and
+Then the trace of the limit is $R\varkappa^{\mathrm{phs}}(a-ib)$, and
 
 | Rotor condition | Limit | Stratum |
 | --- | --- | --- |
@@ -186,7 +186,7 @@ The second row is the case in which the rotor anticommutes with the boost axis. 
 The norm of the family is
 
 $$
-\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\zeta^2,
+\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\varkappa^{\mathrm{phs}}^2,
 $$
 
 so the distance to the cone is exponential in the rapidity. The word approaches the boundary along the exponential coordinate line of the boost, with the scale line compensating. The boost is the non-compact factor that drives the word to the boundary, and the scale is the factor that keeps the element finite.
@@ -249,7 +249,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 - The defect is the non-additivity of generators, the same structure as the Wigner rotation and the field-strength commutator, but it is not a coupling and not a dynamics.
 - The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.
 - The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.
-- The boundary limit of the family $R e^{-\psi/2}\zeta e^{i\psi\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\zeta}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.
+- The boundary limit of the family $R e^{-\psi/2}\varkappa^{\mathrm{phs}} e^{i\psi\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\varkappa^{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.
 - The rate of approach is exponential and is not selected by the algebra.
 - The idempotent is the direction of an infinite boost; the nilpotent is the rescaled limit of the unipotent line.
 - The word is a parametrization, not a homomorphism, and the boundary value is not a value.

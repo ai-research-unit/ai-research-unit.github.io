@@ -122,7 +122,7 @@ the matrices with five distinct eigenvalues. Its complement is the **discriminan
 
 **Proof.** A nonempty Zariski open subset of an irreducible variety is dense; the discriminant vanishes on every matrix with a repeated eigenvalue by definition.
 
-**Remark.** **The regular semisimple locus is not the root orbit.** The locus is the union of all conjugacy classes of matrices with distinct eigenvalues, of dimension $25$; the root orbit of a fixed root $H$ is one conjugacy class inside it, of dimension $20$. The root set $PGL_5/T$ of the earlier articles is the orbit of the fixed root, not the whole open locus. The distinction is the difference between "some five distinct eigenvalues" and "the five eigenvalues $\zeta_1,\dots,\zeta_5$".
+**Remark.** **The regular semisimple locus is not the root orbit.** The locus is the union of all conjugacy classes of matrices with distinct eigenvalues, of dimension $25$; the root orbit of a fixed root $H$ is one conjugacy class inside it, of dimension $20$. The root set $PGL_5/T$ of the earlier articles is the orbit of the fixed root, not the whole open locus. The distinction is the difference between "some five distinct eigenvalues" and "the five eigenvalues $\omega_1,\dots,\omega_5$".
 
 ## The Spectral Strata
 
@@ -198,23 +198,23 @@ has no solution in radicals. Its Galois group over the field of rational functio
 
 ### The Lagrange Projectors
 
-**Theorem.** Let $H$ be a matrix with simple spectrum $\zeta_1,\dots,\zeta_5$. The Lagrange projectors
+**Theorem.** Let $H$ be a matrix with simple spectrum $\omega_1,\dots,\omega_5$. The Lagrange projectors
 
 $$
-P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=1,\dots,5,
+P_k=\prod_{l\ne k}\frac{H-\omega_lI}{\omega_k-\omega_l},\qquad k=1,\dots,5,
 $$
 
 are well defined, idempotent, orthogonal and complete:
 
 $$
-P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad H=\sum_k\zeta_kP_k .
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad H=\sum_k\omega_kP_k .
 $$
 
-**Proof.** The polynomial $\prod_{l\ne k}(t-\zeta_l)/(\zeta_k-\zeta_l)$ is the Lagrange interpolating polynomial for the function that is $1$ at $\zeta_k$ and $0$ at the other $\zeta_l$. Evaluated at $H$, it gives the spectral projector onto the $\zeta_k$-eigenspace; the identities follow from the polynomial identities at the five distinct points.
+**Proof.** The polynomial $\prod_{l\ne k}(t-\omega_l)/(\omega_k-\omega_l)$ is the Lagrange interpolating polynomial for the function that is $1$ at $\omega_k$ and $0$ at the other $\omega_l$. Evaluated at $H$, it gives the spectral projector onto the $\omega_k$-eigenspace; the identities follow from the polynomial identities at the five distinct points.
 
 **Corollary.** The projectors exist for every simple spectrum, independently of the solvability of the quintic. They are polynomial in $H$ of degree $4$, with coefficients that are rational functions of the eigenvalues; their entries are algebraic functions of the entries of $H$, not generally radical functions.
 
-**Proof.** The Lagrange polynomial has degree $4$ and coefficients rational in the $\zeta_k$; substituting $H$ gives a polynomial of degree $4$ in $H$. The eigenvalues are algebraic functions of the entries (the roots of the characteristic polynomial), and the projectors are rational functions of $H$ and the eigenvalues; the composition is algebraic, not generally radical.
+**Proof.** The Lagrange polynomial has degree $4$ and coefficients rational in the $\omega_k$; substituting $H$ gives a polynomial of degree $4$ in $H$. The eigenvalues are algebraic functions of the entries (the roots of the characteristic polynomial), and the projectors are rational functions of $H$ and the eigenvalues; the composition is algebraic, not generally radical.
 
 **Remark.** **The existence of the projectors is not a radical solution of the quintic.** The projectors are the spectral decomposition of a matrix whose eigenvalues are given; they presuppose the roots. The theorem that they exist at a simple spectrum is a theorem of linear algebra, valid for every matrix with distinct eigenvalues, and it says nothing about expressing the roots in radicals. The Galois obstruction is to the radical expression of the eigenvalues, not to the spectral decomposition.
 
@@ -296,7 +296,7 @@ A general quintic has no radical solution: its Galois group is $S_5$, not solvab
 | $\Delta$ | The discriminant |
 | $M_5^{\mathrm{rs}}$ | The regular semisimple locus, $\Delta\ne0$ |
 | $(m_1,\dots,m_r)$ | A spectral type, a partition of $5$ |
-| $P_k$ | The Lagrange projector of the eigenvalue $\zeta_k$ |
+| $P_k$ | The Lagrange projector of the eigenvalue $\omega_k$ |
 | $C$ | The companion matrix of a quintic |
 
 ## Further Reading

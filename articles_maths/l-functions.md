@@ -27,7 +27,7 @@ $$
 $$
 and the characters of $(\mathbb{Z}/q\mathbb{Z})^\times$ are exactly the characters of $\mathbb{Z}/q\mathbb{Z}$ whose value at a nonunit is $0$.
 
-**Proof.** The group $(\mathbb{Z}/q\mathbb{Z})^\times$ is finite abelian, hence a direct product of cyclic groups; over $\mathbb{C}$ a cyclic group of order $n$ has exactly $n$ characters, given by $g\mapsto\zeta_n^k$ for the $n$-th roots of unity, and the orthogonality relations are the standard orthogonality of the columns and rows of the character table.
+**Proof.** The group $(\mathbb{Z}/q\mathbb{Z})^\times$ is finite abelian, hence a direct product of cyclic groups; over $\mathbb{C}$ a cyclic group of order $n$ has exactly $n$ characters, given by $g\mapsto\omega_n^k$ for the $n$-th roots of unity, and the orthogonality relations are the standard orthogonality of the columns and rows of the character table.
 
 ### Gauss Sums
 
@@ -55,7 +55,7 @@ $$
 $$
 L(s,\chi) = \sum_{n\geq1}\frac{\chi(n)}{n^s} = \prod_{p}\frac{1}{1-\chi(p)p^{-s}} \qquad (\Re s > 1).
 $$
-**Theorem (elementary properties).** The series and the product converge absolutely and locally uniformly for $\Re s>1$, the product is the Euler product of the series, and if $\chi\neq\chi_0$ then the series converges conditionally, and the function is continuous, on the half-plane $\Re s>0$; if $\chi = \chi_0$, then $L(s,\chi_0) = \zeta(s)\prod_{p\mid q}(1-p^{-s})$ has the simple pole of $\zeta$ at $s=1$ and no other pole.
+**Theorem (elementary properties).** The series and the product converge absolutely and locally uniformly for $\Re s>1$, the product is the Euler product of the series, and if $\chi\neq\chi_0$ then the series converges conditionally, and the function is continuous, on the half-plane $\Re s>0$; if $\chi = \chi_0$, then $L(s,\chi_0) = \zeta(s)\prod_{p\mid q}(1-p^{-s})$ has the simple pole of $\omega$ at $s=1$ and no other pole.
 
 **Proof.** Absolute convergence for $\sigma>1$ is the Euler product theorem. For a nonprincipal character the partial sums of the coefficients are bounded by $\varphi(q)$ because the character sums over complete residue systems vanish; summation by parts then gives the convergence for $\sigma>0$. The principal character factors out the finitely many primes dividing $q$.
 
@@ -71,7 +71,7 @@ and the **root number** is $\epsilon_\chi = \dfrac{\tau(\chi)}{i^{a}\sqrt q}$.
 $$
 \boxed{\;\Lambda(s,\chi) = \epsilon_\chi\,\Lambda(1-s,\bar\chi), \qquad \lvert\epsilon_\chi\rvert = 1\;} .
 $$
-For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\zeta$.
+For a nonprimitive character the same statements hold after removing the finitely many Euler factors of the inducing modulus, and for the principal character the completed function has poles at $s=0$ and $s=1$ corresponding to the pole of $\omega$.
 
 **Proof sketch (theta and Gauss sums).** One forms the twisted theta series $\theta_\chi(t) = \sum_{n\geq1}\chi(n)\exp(-\pi n^2t/q)$, with the variant $\sum_n n\,\chi(n)\exp(-\pi n^2t/q)$ when $\chi$ is odd; Poisson summation applied to the twisted Gauss sum produces the transformation law of $\theta_\chi$ under $t\mapsto1/t$, and the constant in that law is precisely the root number $\epsilon_\chi = \tau(\chi)/(i^a\sqrt q)$; the Mellin transform of the appropriate power of $t$ times $\theta_\chi$ is then the completed $L$-function $\Lambda(s,\chi)$, and the functional equation follows from the transformation law. The adelic proof is the one of *Adelic Analysis*: the character $\chi$ determines a Hecke character of the idele class group of $\mathbb{Q}$, and the completed $L$-function is the global zeta integral of that character, so the functional equation is Poisson summation.
 
@@ -79,7 +79,7 @@ For a nonprimitive character the same statements hold after removing the finitel
 
 **Theorem (nonvanishing at $s=1$ and Dirichlet's theorem).** For every character $\chi\neq\chi_0$ modulo $q$, $L(1,\chi)\neq0$. Consequently, for every $a$ with $(a,q)=1$ the sum $\sum_{p}\frac{1}{p^s}$ over the primes $p\equiv a \pmod q$ behaves like $\frac{1}{\varphi(q)}\log\frac{1}{s-1}$ as $s\to1^+$, and there are infinitely many such primes.
 
-**Proof sketch.** For a real character $\chi$ the product $\zeta(s)L(s,\chi)$ has nonnegative Dirichlet coefficients, since $\sum_{d\mid n}\chi(d) = \prod_{p^a\|n}(1+\chi(p)+\cdots+\chi(p)^a)\geq0$ for every $n$; its Euler product has a logarithm with nonnegative coefficients, and at every square $m^2$ coprime to $q$ the coefficient satisfies $\sum_{d\mid m^2}\chi(d)\geq1$, so the coefficients are not all zero and the abscissa of convergence of the series is finite. If $L(1,\chi)$ vanished with a simple zero, the pole of $\zeta$ would cancel and $\zeta(s)L(s,\chi)$, being a Dirichlet series with nonnegative coefficients and a finite abscissa of convergence, would be entire — which Landau's theorem of *Zeta Functions* forbids, since such a series is singular at its abscissa. Alternatively, and cleanly for a primitive real character, the class number formula of *Algebraic Number Theory* exhibits the value directly, $L(1,\chi_d) = 2\pi h/(w\sqrt{\lvert d\rvert})>0$ for the quadratic field of discriminant $d$ associated with $\chi$, which settles the primitive case and with it the nonprimitive one, whose Euler factors at the primes dividing $q$ are finite and nonzero at $s=1$. For a non-real character one applies the same argument to
+**Proof sketch.** For a real character $\chi$ the product $\zeta(s)L(s,\chi)$ has nonnegative Dirichlet coefficients, since $\sum_{d\mid n}\chi(d) = \prod_{p^a\|n}(1+\chi(p)+\cdots+\chi(p)^a)\geq0$ for every $n$; its Euler product has a logarithm with nonnegative coefficients, and at every square $m^2$ coprime to $q$ the coefficient satisfies $\sum_{d\mid m^2}\chi(d)\geq1$, so the coefficients are not all zero and the abscissa of convergence of the series is finite. If $L(1,\chi)$ vanished with a simple zero, the pole of $\omega$ would cancel and $\zeta(s)L(s,\chi)$, being a Dirichlet series with nonnegative coefficients and a finite abscissa of convergence, would be entire — which Landau's theorem of *Zeta Functions* forbids, since such a series is singular at its abscissa. Alternatively, and cleanly for a primitive real character, the class number formula of *Algebraic Number Theory* exhibits the value directly, $L(1,\chi_d) = 2\pi h/(w\sqrt{\lvert d\rvert})>0$ for the quadratic field of discriminant $d$ associated with $\chi$, which settles the primitive case and with it the nonprimitive one, whose Euler factors at the primes dividing $q$ are finite and nonzero at $s=1$. For a non-real character one applies the same argument to
 $$
 F(s) = \zeta(s)^2L(s,\chi)L(s,\bar\chi),
 $$
@@ -173,7 +173,7 @@ The nonvanishing $L(1,\chi)\neq0$ for nonprincipal $\chi$ is the analytic input 
 | $L(s,\rho,L/K)$ | Artin $L$-function of a representation $\rho$ of the Galois group |
 | $d$, $Q$, $\kappa_j$, $\epsilon$ | Degree, conductor, spectral parameters, root number of a general $L$-function |
 | $\mathrm{Frob}_v$ | Frobenius conjugacy class at an unramified prime |
-| $\zeta_L = \prod_\rho L(s,\rho,L/K)^{\dim\rho}$ | Factorisation of the Dedekind zeta function |
+| $\omega_L = \prod_\rho L(s,\rho,L/K)^{\dim\rho}$ | Factorisation of the Dedekind zeta function |
 
 
 

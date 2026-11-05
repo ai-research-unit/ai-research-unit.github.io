@@ -97,7 +97,7 @@ so that the failure of the invariants to compute the cohomology of the descended
 
 **Remark (the arithmetic beyond the Part).** For a variety over a finite field and the $\ell$-adic coefficients, the Galois representation is unramified outside a finite set of places, the eigenvalues of the geometric Frobenius are the Weil numbers whose absolute values are the powers $q^{i/2}$ of *The Frobenius Operator*, and the representation is the object in which the Weil conjectures are stated. The construction of the representation, the weight filtration and the monodromy are the arithmetic of that article and of Part III, and this article records only the abstract representation and its invariants.
 
-**Example (the cyclotomic representation).** For $X=\operatorname{Spec}k$ with $k$ a field containing the roots of unity, the cohomology of the structure sheaf is $k$ in degree zero, and the Galois action on the roots of unity $\mu_n$ of the example of *Real Structures on Varieties and Galois Descent* is the cyclotomic character $\chi : G\to(\mathbb{Z}/n)^\times$, $\sigma(\zeta)=\zeta^{\chi(\sigma)}$. This is the fundamental Galois representation from which the others are built, and its invariants recover the descended group $\mu_n^G$.
+**Example (the cyclotomic representation).** For $X=\operatorname{Spec}k$ with $k$ a field containing the roots of unity, the cohomology of the structure sheaf is $k$ in degree zero, and the Galois action on the roots of unity $\mu_n$ of the example of *Real Structures on Varieties and Galois Descent* is the cyclotomic character $\chi : G\to(\mathbb{Z}/n)^\times$, $\sigma(\omega)=\omega^{\chi(\sigma)}$. This is the fundamental Galois representation from which the others are built, and its invariants recover the descended group $\mu_n^G$.
 
 ## The Involution and the Pairing
 
@@ -161,7 +161,7 @@ whose five-term exact sequence begins with $0\to H^1(G,H^0)\to H^1(X,\mathcal{F}
 | $H^p(G,H^q(X_L,\mathcal{F}))\Rightarrow H^{p+q}(X,\mathcal{F}_0)$ | the Hochschild–Serre spectral sequence |
 | $0\to H^1(G,H^0)\to H^1(X)\to H^1(X_L)^G\to H^2(G,H^0)\to H^2(X)$ | the five-term exact sequence |
 | Galois representation | a finite-dimensional $E$-linear continuous $G$-module |
-| $\chi:G\to(\mathbb{Z}/n)^\times$, $\sigma(\zeta)=\zeta^{\chi(\sigma)}$ | the cyclotomic representation on $\mu_n$ |
+| $\chi:G\to(\mathbb{Z}/n)^\times$, $\sigma(\omega)=\omega^{\chi(\sigma)}$ | the cyclotomic representation on $\mu_n$ |
 | $\sigma^*(u\smile v)=\sigma^*u\smile\sigma^*v$ | equivariance of the cup product |
 | $H^i(X_{\mathbb{C}})=H^i_+\oplus H^i_-$, $H^i_-=iH^i_+$ | the eigenspaces of the conjugation (semilinear) |
 | $H^i_+\cong H^i(X_{\mathbb{R}},\mathcal{O})$ | the $(+1)$-eigenspace is the real cohomology |

@@ -71,7 +71,7 @@ The spinor $\psi$ is an element of the biquaternion algebra $\mathbb{B}$, which 
 The free equation $\tilde\nabla\tilde F=0$ is solved by the plane wave
 
 $$
-\tilde F = f\,\exp(i\phi),\qquad \phi=k_0x_0-\vec k\cdot\vec q ,
+\tilde F = f\,\exp(i\theta^{\mathrm{pha}}),\qquad \theta^{\mathrm{pha}}=k_0x_0-\vec k\cdot\vec q ,
 $$
 
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
@@ -86,11 +86,11 @@ $$
 k^2=0\quad\Longleftrightarrow\quad k_0=\pm|\vec k| .
 $$
 
-The condition $\tilde Kf=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $\tilde K$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\phi)$ vanishes with it.
+The condition $\tilde Kf=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $\tilde K$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta^{\mathrm{pha}})$ vanishes with it.
 
 Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.
 
-The role of the volume element is worth one paragraph, because the source insists on it. Since $\omega^2=-1$, the source's exponential splits as $\exp(\omega\phi)=\cos\phi+\omega\sin\phi$, and the electric and magnetic parts of its field are a quarter period apart. That is the source's display. The corpus writes the same plane wave with the central $i$, and its **duality rotation** is $F\mapsto\exp(i\theta)F$, as in *The Field-Strength Biquaternion and Its Invariants*. The source's $\omega$ and the corpus's central $i$ are different elements; both square to $-1$ and both generate a phase, and the article keeps them apart. The duality parameter is the one that governs the non-linear equation below.
+The role of the volume element is worth one paragraph, because the source insists on it. Since $\omega^2=-1$, the source's exponential splits as $\exp(\omega\theta^{\mathrm{pha}})=\cos\theta^{\mathrm{pha}}+\omega\sin\theta^{\mathrm{pha}}$, and the electric and magnetic parts of its field are a quarter period apart. That is the source's display. The corpus writes the same plane wave with the central $i$, and its **duality rotation** is $F\mapsto\exp(i\theta)F$, as in *The Field-Strength Biquaternion and Its Invariants*. The source's $\omega$ and the corpus's central $i$ are different elements; both square to $-1$ and both generate a phase, and the article keeps them apart. The duality parameter is the one that governs the non-linear equation below.
 
 ### The Hertz potential
 
@@ -105,10 +105,10 @@ Throughout, the time coordinate is written $t'$ — the source's $t$ — for the
 The source takes the Hertz potential to be the bivector $\pi=\Phi\,\vec e_z$; the factor $\vec e_z$ multiplies on the **left**, and $\Phi$ is a function of the phase $\omega\Omega t'$ alone, so it commutes with the bivector. The scalar part is separated as
 
 $$
-\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(\omega\Omega t'),
+\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \chi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(\omega\Omega t'),
 $$
 
-so that the wave equation becomes the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$. The simplest solution is the spherical one $\varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=C\,\sin(\Omega r)/r$, and the resulting stationary field $F_0$ is **regular at the origin** and **vanishes at infinity** — a localised field configuration at rest in the adapted frame. Written in the electric–magnetic split $F_0=\vec E_0+\omega\vec B_0$ it is
+so that the wave equation becomes the Helmholtz equation $\nabla^2\chi+\Omega^2\chi=0$. The simplest solution is the spherical one $\chi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=C\,\sin(\Omega r)/r$, and the resulting stationary field $F_0$ is **regular at the origin** and **vanishes at infinity** — a localised field configuration at rest in the adapted frame. Written in the electric–magnetic split $F_0=\vec E_0+\omega\vec B_0$ it is
 
 $$
 \vec E_0=-\vec W\sin\Omega t', \qquad \vec B_0=\vec W\cos\Omega t',
@@ -264,23 +264,23 @@ $$
 
 The source states it that way round: the current $J$ is not conserved unless $\lambda$ is constant, so it assumes $\langle\tilde\nabla,\tilde J\rangle=0$ explicitly. That assumption is the third condition, and it is the one that turns a Dirac–Hestenes-shaped equation into a Dirac–Hestenes equation with a mass. Without it the display above is exact but its coefficient drifts from point to point.
 
-**The rescaling step.** The same content reads as a statement about the spinor. Put $\psi=\varphi\exp(\omega\theta^{\mathrm{dua}}/2)$ with $\varphi=\sqrt\rho\,R$ and $\theta^{\mathrm{dua}}$ constant. The rotation $\exp(\omega\theta^{\mathrm{dua}}/2)$ does not depend on $x$, so it passes through the derivative on the left side, and the anticommutation with $i\vec e_x$ merges the two phases on the right side into the same half rotation:
+**The rescaling step.** The same content reads as a statement about the spinor. Put $\psi=\chi\exp(\omega\theta^{\mathrm{dua}}/2)$ with $\chi=\sqrt\rho\,R$ and $\theta^{\mathrm{dua}}$ constant. The rotation $\exp(\omega\theta^{\mathrm{dua}}/2)$ does not depend on $x$, so it passes through the derivative on the left side, and the anticommutation with $i\vec e_x$ merges the two phases on the right side into the same half rotation:
 $$
-(\tilde\nabla\psi)(-\vec e_z)=(\tilde\nabla\varphi)(-\vec e_z)\exp(\omega\theta^{\mathrm{dua}}/2),
+(\tilde\nabla\psi)(-\vec e_z)=(\tilde\nabla\chi)(-\vec e_z)\exp(\omega\theta^{\mathrm{dua}}/2),
 $$
 $$
 \left(\Lambda+\omega K\right)\psi\,i\vec e_x\exp(\omega\theta^{\mathrm{dua}})
-=\left(\Lambda+\omega K\right)\varphi\,i\vec e_x\exp(\omega\theta^{\mathrm{dua}}/2).
+=\left(\Lambda+\omega K\right)\chi\,i\vec e_x\exp(\omega\theta^{\mathrm{dua}}/2).
 $$
 The common right factor cancels — it is the **last** factor on both sides, and it is invertible — leaving the same equation with the phase gone,
 
 $$
-(\tilde\nabla\varphi)(-\vec e_z)=\lambda\,\varphi\,i\vec e_x,
+(\tilde\nabla\chi)(-\vec e_z)=\lambda\,\chi\,i\vec e_x,
 $$
 
 with $\Lambda$ and $K$ unchanged, since the phase cancels in the spin bivector. A constant angle is thus not a parameter of the dynamics but a phase carried by the spinor, and solutions with different constant $\theta^{\mathrm{dua}}$ are the same solution multiplied on the right.
 
-The half angle is not a convention. The source prints the full one in one place, where its (5.15) is said to follow from $\psi=\varphi\exp(\theta^{\mathrm{dua}}\omega)$. With that exponent the phase does not cancel: the left side of the source's (5.7) carries one power of it, the right side none. The reason is that on the right the phase enters twice — once from $\psi$ and once from the equation itself — and the two annihilate after the inner one passes the odd factor, $\exp(\omega\theta^{\mathrm{dua}})\,i\vec e_x=i\vec e_x\exp(-\omega\theta^{\mathrm{dua}})$. What follows with the full exponent is $(\tilde\nabla\varphi)(-\vec e_z)=m\varphi\,i\vec e_x\exp(-\omega\theta^{\mathrm{dua}})$, with the phase moved to the other side rather than removed. The rest of the paper uses the half angle: the solutions (5.16) and (5.17) carry $\exp(\theta^{\mathrm{dua}}\omega/2)$, and the mass-spectrum decomposition (6.6) is $\psi=\exp(\omega\theta^{\mathrm{dua}}/2)\varphi$.
+The half angle is not a convention. The source prints the full one in one place, where its (5.15) is said to follow from $\psi=\chi\exp(\theta^{\mathrm{dua}}\omega)$. With that exponent the phase does not cancel: the left side of the source's (5.7) carries one power of it, the right side none. The reason is that on the right the phase enters twice — once from $\psi$ and once from the equation itself — and the two annihilate after the inner one passes the odd factor, $\exp(\omega\theta^{\mathrm{dua}})\,i\vec e_x=i\vec e_x\exp(-\omega\theta^{\mathrm{dua}})$. What follows with the full exponent is $(\tilde\nabla\chi)(-\vec e_z)=m\chi\,i\vec e_x\exp(-\omega\theta^{\mathrm{dua}})$, with the phase moved to the other side rather than removed. The rest of the paper uses the half angle: the solutions (5.16) and (5.17) carry $\exp(\theta^{\mathrm{dua}}\omega/2)$, and the mass-spectrum decomposition (6.6) is $\psi=\exp(\omega\theta^{\mathrm{dua}}/2)\chi$.
 
 **The narrower case $J=0$, $K=0$.** With the constraints imposed the two displays are one equation, the coefficient $\Lambda+\omega K=\lambda\exp(\omega\theta^{\mathrm{dua}})$ being the real coefficient times the phase. The source also studies this narrower case, where the coefficient is $\Lambda$ alone and the phase stands in front; it notes that this form was studied extensively by Daviau. It is non-linear as it stands, it reduces to the Dirac–Hestenes equation by the rescaling above at every constant $\theta^{\mathrm{dua}}$, and it is *identical* to that equation only at $\theta^{\mathrm{dua}}=0$ and $\theta^{\mathrm{dua}}=\pi$ — the two angles the source assigns to the electron and the positron, through the family of the next section.
 
@@ -374,7 +374,7 @@ The family of the previous section is introduced for the mass spectrum, and the 
 The magnetic current re-enters the sourced spinorial equation, and for the phase-free spinor the equation keeps the Dirac form with two coefficients — masses in inverse-length units, hence the $c/\hbar$:
 
 $$
-(\tilde\nabla\varphi)(-\vec e_z)=\frac{Mc}{\hbar}\,\varphi\,i\vec e_x+\omega\,\frac{Nc}{\hbar}\,\varphi\,i\vec e_x,
+(\tilde\nabla\chi)(-\vec e_z)=\frac{Mc}{\hbar}\,\chi\,i\vec e_x+\omega\,\frac{Nc}{\hbar}\,\chi\,i\vec e_x,
 \qquad
 M=m+3m\,\frac{q_{\mathrm{m}}}{e}\sin\theta^{\mathrm{dua}},\qquad
 N=-3m\,\frac{q_{\mathrm{m}}}{e}\cos\theta^{\mathrm{dua}} ,
@@ -490,7 +490,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
-| $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
+| $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\chi+\Omega^2\chi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
 | $\varpi,\ q,\ \xi_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\xi_<$ is its oblate radial coordinate |
 | $\Phi_{X_n},\ \Phi_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\theta^{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed |
 | $\psi$, $\psi^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde\psi$ |
@@ -498,7 +498,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\psi_{L}$, $\psi_{R}$ | The two values of the subscript, $L$ the minus value and $R$ the plus one; $\psi_{+L}$ and $\psi_{+R}$ are the two values of the $+$ branch |
 | $\psi=\rho^{1/2}\exp(\omega\theta^{\mathrm{dua}}/2)R$ | Canonical decomposition: rotor $R$, density $\rho$, angle $\theta^{\mathrm{dua}}$; the letter $\rho$ is reused in the X-wave for the cylindrical radius |
 | $\theta^{\mathrm{dua}}$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
-| $\varphi$ | Spinor with the phase divided out, $\psi=\varphi\exp(\omega\theta^{\mathrm{dua}}/2)$; the linear Dirac equation is for $\varphi$ |
+| $\chi$ | Spinor with the phase divided out, $\psi=\chi\exp(\omega\theta^{\mathrm{dua}}/2)$; the linear Dirac equation is for $\chi$ |
 | $m$, $M$, $N$ | Electron mass; the two coefficients of the sourced equation, $M=m+3mq_{\mathrm{m}}\sin\theta^{\mathrm{dua}}/e$ and $N=-3mq_{\mathrm{m}}\cos\theta^{\mathrm{dua}}/e$, the second vanishing at $\theta^{\mathrm{dua}}=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave |
 | $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $eq_{\mathrm{m}}/\hbar c=n/2$; $\alpha=e^2/\hbar c$ the fine-structure constant |
 | $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the contractions $\langle\tilde\nabla,\tilde j\rangle$ and $\langle\tilde\nabla,\tilde g\rangle$ are the series' contractions of the gradient with the two currents |

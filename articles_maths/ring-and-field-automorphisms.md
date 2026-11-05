@@ -129,7 +129,7 @@ The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all au
 
 **Example.** For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.
 
-**Example.** For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
+**Example.** For the cyclotomic field $\mathbb{Q}(\omega_n)$, every automorphism sends $\omega_n \mapsto \omega_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\omega_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
 
 ### Termination of the Correspondence for Finite Extensions
 
@@ -165,7 +165,7 @@ When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorna
 
 **Example.** The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.
 
-**Example.** The Galois group of $\mathbb{Q}(\zeta_n)$ contains the involution $\zeta_n \mapsto \zeta_n^{-1}$, whose fixed field $\mathbb{Q}(\zeta_n + \zeta_n^{-1})$ is the **maximal real subfield** of the cyclotomic field, of index $2$.
+**Example.** The Galois group of $\mathbb{Q}(\omega_n)$ contains the involution $\omega_n \mapsto \omega_n^{-1}$, whose fixed field $\mathbb{Q}(\omega_n + \omega_n^{-1})$ is the **maximal real subfield** of the cyclotomic field, of index $2$.
 
 ---
 
@@ -203,7 +203,7 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 | $\mathbb{F}_{p^n}$ | $\mathbb{Z}/n$ | $1$ |
 | $F[x]$ | $F \rtimes F^\times$, $x \mapsto ax+b$ | $1$ |
 | $F(x)$ | $\operatorname{PGL}_2(F)$ | $1$ |
-| $\mathbb{Q}(\zeta_n)$ | $(\mathbb{Z}/n\mathbb{Z})^\times$ | $1$ |
+| $\mathbb{Q}(\omega_n)$ | $(\mathbb{Z}/n\mathbb{Z})^\times$ | $1$ |
 | $\mathbb{M}_n(k)$ (over $k$) | $\operatorname{PGL}_n(k)$ | all |
 | $\mathbb{C}$ | $2^{2^{\aleph_0}}$, wild | $1$ |
 
@@ -224,7 +224,7 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 | $R^G$, $K^G$ | Fixed subring, fixed field of a subgroup $G$ |
 | $\varphi(x) = x^p$ | Frobenius map |
 | $\operatorname{gal}(\overline{F}/F)$ | Absolute Galois group |
-| $\zeta_n$ | Primitive $n$-th root of unity |
+| $\omega_n$ | Primitive $n$-th root of unity |
 | $\mathbb{M}_n(k)$, $\operatorname{PGL}_n(k)$ | Matrix algebra and its projective general linear group |
 | $Z(A)$, $A^\times$ | Centre and unit group of an algebra $A$ |
 

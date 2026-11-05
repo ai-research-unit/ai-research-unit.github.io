@@ -47,10 +47,10 @@ $$
 be its transform, normalised so that $\varphi(0)=\mu(\mathbb{R}^n)$ is the total mass. Bochner's theorem says that a continuous $\varphi$ with $\varphi(0)\geq 0$ is of this form **exactly when** it is positive definite in the sense that
 
 $$
-\sum_{k,l=1}^{N}\overline{\zeta_k}\zeta_l\,\varphi(\omega_k-\omega_l)\geq 0
+\sum_{k,l=1}^{N}\overline{\omega_k}\omega_l\,\varphi(\omega_k-\omega_l)\geq 0
 $$
 
-for every finite set of frequencies and every set of complex coefficients. The forward direction is one line: because $\exp(-2\pi i\langle\omega_k-\omega_l,x\rangle)=\exp(-2\pi i\langle\omega_k,x\rangle)\overline{\exp(-2\pi i\langle\omega_l,x\rangle)}$, the sum is $\int\lvert\sum_k\zeta_k\exp(-2\pi i\langle\omega_k,x\rangle)\rvert^{2}d\mu$, a modulus squared integrated against a positive measure.
+for every finite set of frequencies and every set of complex coefficients. The forward direction is one line: because $\exp(-2\pi i\langle\omega_k-\omega_l,x\rangle)=\exp(-2\pi i\langle\omega_k,x\rangle)\overline{\exp(-2\pi i\langle\omega_l,x\rangle)}$, the sum is $\int\lvert\sum_k\omega_k\exp(-2\pi i\langle\omega_k,x\rangle)\rvert^{2}d\mu$, a modulus squared integrated against a positive measure.
 
 Two properties of the character $\exp(-2\pi i\langle\omega,x\rangle)$ are used, and no others. It is **multiplicative**, which is what identifies the difference of frequencies with a product; and it is **$*$-unitary**, $\overline{\exp(-2\pi i\langle\omega,x\rangle)}=\bigl(\exp(-2\pi i\langle\omega,x\rangle)\bigr)^{-1}$, which is what turns the conjugate of one factor into the inverse of the other. The third ingredient is that the quadratic form is built with the conjugation in the **second slot**, which is what places the modulus squared under the integral.
 
@@ -149,7 +149,7 @@ The factorisation proves the direction from the right to the left, and it is the
 
 ### The Scalar Imaginary Is the Classical Theorem
 
-For $\tilde\Xi=i$ the kernel is the central scalar $\chi_\omega=\exp(-2\pi i\langle\omega,x\rangle)e_t$, and the transform is the classical one times the identity, $G(\omega)=\varphi(\omega)e_t$. The factorisation becomes $Q(A)=\sum_{k,l}A_kA_l^{*}\varphi(\omega_k-\omega_l)$; applying the representation $\mathsf{M}_2$, this is the classical Gram sum $\sum_{k,l}\varphi(\omega_k-\omega_l)\mathsf{M}_2(A_k)\mathsf{M}_2(A_l)^{\dagger}$, positive exactly when the scalar form $\sum_{k,l}\overline{\zeta_k}\zeta_l\varphi(\omega_k-\omega_l)$ is. The biquaternion theorem at the scalar imaginary is therefore the classical theorem **componentwise**.
+For $\tilde\Xi=i$ the kernel is the central scalar $\chi_\omega=\exp(-2\pi i\langle\omega,x\rangle)e_t$, and the transform is the classical one times the identity, $G(\omega)=\varphi(\omega)e_t$. The factorisation becomes $Q(A)=\sum_{k,l}A_kA_l^{*}\varphi(\omega_k-\omega_l)$; applying the representation $\mathsf{M}_2$, this is the classical Gram sum $\sum_{k,l}\varphi(\omega_k-\omega_l)\mathsf{M}_2(A_k)\mathsf{M}_2(A_l)^{\dagger}$, positive exactly when the scalar form $\sum_{k,l}\overline{\omega_k}\omega_l\varphi(\omega_k-\omega_l)$ is. The biquaternion theorem at the scalar imaginary is therefore the classical theorem **componentwise**.
 
 ### The Real Roots Are the Quaternion Theorem
 
@@ -211,7 +211,7 @@ $$
 \mathrm{Sc}\,G(\omega)=\int\cos\bigl(2\pi\langle\omega,x\rangle\bigr)\,d\mu
 $$
 
-is the real part of the classical positive-definite function and is itself positive definite. The scalar contraction $\sum_{k,l}\overline{\zeta_k}\zeta_l\,\mathrm{Sc}\,G(\omega_k-\omega_l)$ is therefore non-negative for every root. This is why the corpus's negative example must use a non-central coefficient: with central coefficients and the coefficientwise conjugation the scalar shadow is already positive, and only the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ produces a negative value.
+is the real part of the classical positive-definite function and is itself positive definite. The scalar contraction $\sum_{k,l}\overline{\omega_k}\omega_l\,\mathrm{Sc}\,G(\omega_k-\omega_l)$ is therefore non-negative for every root. This is why the corpus's negative example must use a non-central coefficient: with central coefficients and the coefficientwise conjugation the scalar shadow is already positive, and only the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ produces a negative value.
 
 ## Relation to the Open Question of the Continuous Article
 

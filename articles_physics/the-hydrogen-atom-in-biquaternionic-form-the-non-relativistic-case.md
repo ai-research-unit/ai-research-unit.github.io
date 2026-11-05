@@ -147,7 +147,7 @@ which is the standard spin-1/2 expectation value, written as the plain form of $
 Separate the field as
 
 $$
-\boxed{\;\psi_{n l l_z s_z}(r,\theta,\phi) = R_{nl}(r)\,Y_l^{l_z}(\theta,\phi)\,\chi_{s_z}\;},
+\boxed{\;\psi_{n l l_z s_z}(r,\theta,\theta^{\mathrm{azm}}) = R_{nl}(r)\,Y_l^{l_z}(\theta,\theta^{\mathrm{azm}})\,\chi_{s_z}\;},
 \qquad \chi_{s_z}\in\mathbb{B}\tilde\Pi ,
 $$
 
@@ -301,7 +301,7 @@ $$
 E_n = -\frac{m\kappa^2}{2\hbar^2 n^2} = -\frac{\kappa}{2a_0n^2},
 $$
 
-the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\phi)\chi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$.
+the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\theta^{\mathrm{azm}})\chi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$.
 
 The framework's contribution is therefore structural, not spectral. It identifies the kinetic term as a biquaternion-norm object, places the observable in $\mathbb{M}_+$ and the generator in $\mathbb{M}_-$ along $ie_t$, and separates orbital from spin degrees of freedom by slot. It does not supply the bound-state space, which is not a module over the finite-dimensional algebra; it does not supply a position–momentum pair in $\mathbb{M}_+$; and it does not account for the $n^2$ degeneracy, whose $SO(4)$ origin remains an open question in the corpus. The spectrum and eigenstates are the standard ones, and no deviation is predicted. The relativistic case, where the spin couples and the degeneracy is lifted, is left to its own article.
 

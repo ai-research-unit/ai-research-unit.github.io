@@ -37,7 +37,7 @@ The non-example that fixes this section is $\mathbb{Z}/6\mathbb{Z}$, a commutati
 | $\mathbb{Z}[\sqrt{2}]$ | $1$ | $\pm(1+\sqrt{2})^m$, $m \in \mathbb{Z}$ | none | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-2}]$ | $1$ | $\pm 1$ | none | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-5}]$ | $1$ | $\pm 1$ | none | *Examples of Rings and Fields* |
-| $\mathbb{Z}[\zeta_n]$ | $1$ | finite rank, by Dirichlet's unit theorem | none | *Cyclotomic Fields* |
+| $\mathbb{Z}[\omega_n]$ | $1$ | finite rank, by Dirichlet's unit theorem | none | *Cyclotomic Fields* |
 | $\mathcal{O}_K$ | $1$ | finite rank, by Dirichlet's unit theorem | none | *Algebraic Number Theory* |
 | $\overline{\mathbb{Z}}$ | $1$ | the roots of unity it contains | none | *Bézout Domains* |
 
@@ -108,7 +108,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$ | Residue ring, prime field, finite field |
 | $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers and dual numbers |
 | $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$ | Quadratic integer rings |
-| $\mathbb{Z}[\zeta_n]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | Cyclotomic integers, ring of integers, all algebraic integers |
+| $\mathbb{Z}[\omega_n]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | Cyclotomic integers, ring of integers, all algebraic integers |
 | $R[x]$, $R[x_1,\dots,x_n]$, $R[[x]]$, $k[[x]]$ | Polynomial and power series rings |
 | $k(x)$, $k((t))$ | Rational function field, Laurent series field |
 | $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$ | Localisation at $p$, $p$-adic integers |

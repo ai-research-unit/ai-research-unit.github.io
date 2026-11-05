@@ -219,7 +219,7 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Example.** For a finite abelian group $G$, the dual $G^\vee$ is the character group $\operatorname{Hom}(G, S^1) = \operatorname{Hom}(G, \mathbb{C}^\times)$; it has the same order as $G$ and $G \cong G^\vee$ non-canonically, the isomorphism being canonical only after a choice of roots of unity. For $G = \mathbb{Z}/n\mathbb{Z}$ the dual is $\mu_n$, the group of $n$-th roots of unity, also cyclic of order $n$.
 
-**Example (characters and inversion on $\mathbb{Z}/n\mathbb{Z}$).** A character is determined by its value on the generator $1$, and that value $\zeta$ must satisfy $\zeta^n = 1$ because $n \cdot 1 = 0$; hence every character of $\mathbb{Z}/n\mathbb{Z}$ is of the form $\chi_k(m) = \exp(2\pi i k m/n)$ for a unique $k \in \mathbb{Z}/n\mathbb{Z}$, and $k \mapsto \chi_k$ is an isomorphism of $\mathbb{Z}/n\mathbb{Z}$ onto $\mu_n$. The orthogonality relation
+**Example (characters and inversion on $\mathbb{Z}/n\mathbb{Z}$).** A character is determined by its value on the generator $1$, and that value $\omega$ must satisfy $\omega^n = 1$ because $n \cdot 1 = 0$; hence every character of $\mathbb{Z}/n\mathbb{Z}$ is of the form $\chi_k(m) = \exp(2\pi i k m/n)$ for a unique $k \in \mathbb{Z}/n\mathbb{Z}$, and $k \mapsto \chi_k$ is an isomorphism of $\mathbb{Z}/n\mathbb{Z}$ onto $\mu_n$. The orthogonality relation
 
 $$
 \frac{1}{n}\sum_{m=0}^{n-1} \chi_k(m)\overline{\chi_l(m)} = \delta_{kl}

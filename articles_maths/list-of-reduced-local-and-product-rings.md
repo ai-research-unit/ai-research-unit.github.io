@@ -32,7 +32,7 @@ The word semisimple is used in the sense of *Simple and Semisimple Modules*: a r
 | $\mathbb{Z}/n\mathbb{Z}$, $n$ squarefree | $\prod_{p \mid n} \mathbb{F}_p$ | $2^{\omega(n)}$ idempotents | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{F}_p \times \mathbb{F}_p$ | the product itself | $(1,0)$ and $(0,1)$ | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_2]$ | $\mathbb{Q} \times \mathbb{Q}$ | the group-ring idempotents | *Examples of Rings and Fields* |
-| $\mathbb{Q}[C_3]$ | $\mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | the group-ring idempotents | *Examples of Rings and Fields* |
+| $\mathbb{Q}[C_3]$ | $\mathbb{Q} \times \mathbb{Q}(\omega_3)$ | the group-ring idempotents | *Examples of Rings and Fields* |
 
 The split-complex numbers are the geometric name for $\mathbb{R} \times \mathbb{R}$: the idempotents $\pi_1$ and $\pi_2$ are the two factors, and $j = \pi_1 - \pi_2$. This is the sense in which split-$\mathbb{C}$ sits in the reduced semisimple family: it is a product of two copies of the real field, not a field and not local.
 

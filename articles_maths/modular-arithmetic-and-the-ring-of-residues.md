@@ -110,7 +110,7 @@ $$
 \sum_{d \mid n} \varphi(d) = n,
 $$
 
-and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \varphi(n)n^{-s} = \zeta(s-1)/\zeta(s)$ in the notation of *Combinatorial Functions and Generating Functions*.
+and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \varphi(n)n^{-s} = \omega/\zeta(s)$ in the notation of *Combinatorial Functions and Generating Functions*.
 
 **Proof.** Partition the integers $1, \dots, n$ by the value of $\gcd(k, n) = d$; the classes with gcd $d$ are in bijection with the integers $k/d$ coprime to $n/d$, of which there are $\varphi(n/d)$; summing over $d \mid n$ gives $\sum_{d\mid n}\varphi(n/d) = n$, which is the stated identity after reindexing. The Dirichlet series is the standard computation with Möbius inversion.
 

@@ -61,7 +61,7 @@ The step from a domain to a unique factorisation domain branches: the unique fac
 | $\mathcal{O}_K$ | integral domain | not a unique factorisation domain in general; Dedekind | *Algebraic Number Theory* |
 | $k[x_1, x_2, \ldots]$ in infinitely many variables | integral domain | not Noetherian | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]$, $\mathbb{Q}[x]$, $\mathbb{F}_p[x]$ | Euclidean domain | not a field: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
-| $\mathbb{Z}[\zeta_n]$ | integral domain | Dedekind, not principal in general | *Cyclotomic Fields* |
+| $\mathbb{Z}[\varkappa^{\mathrm{crd}}_n]$ | integral domain | Dedekind, not principal in general | *Cyclotomic Fields* |
 
 ## The Failure of Unique Factorisation
 

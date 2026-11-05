@@ -5,7 +5,7 @@
 A charged particle that encircles a region of magnetic flux acquires a phase that depends on the enclosed flux and not on the details of its path; this is the **Aharonov–Bohm (AB) effect**. In 1984 Aharonov and Casher pointed out the electric dual: a **neutral particle carrying a magnetic dipole moment** and moving in a region of electric field acquires a phase
 
 $$
-\phi_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
+\theta^{\mathrm{pha}}_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
 $$
 
 which likewise depends on the path and the field but not on the speed at which the path is traversed. This is the **Aharonov–Casher (AC) effect**. The two effects have the same structure — a geometric phase from a gauge connection — with the electric displacement field and the magnetic dipole moment exchanged for the vector potential and the electric charge.
@@ -52,11 +52,11 @@ $$
 the phase accumulated along the path is
 
 $$
-\Delta\phi = \frac{1}{\hbar}\int L_{AC}\,dt'
+\Delta\theta^{\mathrm{pha}} = \frac{1}{\hbar}\int L_{AC}\,dt'
 = \frac{1}{\hbar c^2}\int_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
 $$
 
-using $\vec v\,dt' = d\vec r$. For a closed path $\mathcal{C}$ this is the AC phase quoted above — the standard result of Aharonov and Casher, with the same sign convention that gives the Aharonov–Bohm phase $+\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$. It is independent of the duration of the journey and of the speed profile, which is what makes it geometric; reversing the direction of travel reverses the sign of $\phi_{AC}$, as a geometric phase must.
+using $\vec v\,dt' = d\vec r$. For a closed path $\mathcal{C}$ this is the AC phase quoted above — the standard result of Aharonov and Casher, with the same sign convention that gives the Aharonov–Bohm phase $+\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$. It is independent of the duration of the journey and of the speed profile, which is what makes it geometric; reversing the direction of travel reverses the sign of $\theta^{\mathrm{pha}}_{AC}$, as a geometric phase must.
 
 ### The Phase as a Holonomy
 
@@ -66,7 +66,7 @@ $$
 \mathcal{A}_{AC} = \frac{1}{\hbar c^2}\left(\vec E(\vec r)\times\vec\mu\right)\cdot d\vec r,
 $$
 
-whose values are generators acting on the spin degrees of freedom. Then $\phi_{AC} = \oint\mathcal{A}_{AC}$, and for a path that is not closed the same integral defines a relative phase between the endpoints, exactly as the Pancharatnam connection does. The connection is **neither flat nor exact**: away from the charges $\vec E$ is curl-free, but that is not enough to make the closed integral vanish, and $\mathcal{A}_{AC}$ is not the differential of a single-valued function. Two features are responsible — the curvature of the connection in a general field, and the linking of the path with a charge — and they are separated in the subsection below. The AC effect is the statement that a magnetic dipole is sensitive to the electric field through this connection.
+whose values are generators acting on the spin degrees of freedom. Then $\theta^{\mathrm{pha}}_{AC} = \oint\mathcal{A}_{AC}$, and for a path that is not closed the same integral defines a relative phase between the endpoints, exactly as the Pancharatnam connection does. The connection is **neither flat nor exact**: away from the charges $\vec E$ is curl-free, but that is not enough to make the closed integral vanish, and $\mathcal{A}_{AC}$ is not the differential of a single-valued function. Two features are responsible — the curvature of the connection in a general field, and the linking of the path with a charge — and they are separated in the subsection below. The AC effect is the statement that a magnetic dipole is sensitive to the electric field through this connection.
 
 ### The Spin-1/2 Form
 
@@ -85,7 +85,7 @@ $$
 a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
 
 $$
-\phi_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
+\theta^{\mathrm{pha}}_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
 $$
 
 evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}_{AC}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\mathcal{A}_{AC}^{*})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC}^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\mathcal{A}_{AC}\ge0$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
@@ -135,7 +135,7 @@ $$
 = \mathcal{P}\exp\!\left(\frac{i\gamma}{2c^2}\oint \vec E\times i\mathbf e\cdot d\vec r\right),
 $$
 
-where the factor $i$ makes the exponent anti-Hermitian: the connection $\mathcal{A}_{AC}$ is $\mathbb{M}_+$-valued, and it is $i\mathcal{A}_{AC}$ that generates a $*$-unitary transport, exactly as $-i\tilde{H}/\hbar$ does for the Schrödinger evolution. The holonomy is therefore a genuine $*$-unitary, and the cycle-averaged phase for each eigen-component is the corresponding diagonal entry, while the off-diagonal entries rotate the superpositions. On an eigenstate the holonomy reduces to the phase factor $\exp(i\phi_{AC})$, with $\phi_{AC}$ the real eigenvalue of $\oint\mathcal{A}_{AC}$. In the biquaternion language $\tilde Q$ is a general element of $\mathbb{H}_{\mathbb{B}}$ up to a central phase: a rotor in $\mathrm{SU}(2)$ that acts on the two-component spinor. The abelian AC phase measured with a polarised beam is the trace of $\tilde Q$ in the eigenbasis; the non-abelian content appears when the spin is prepared in a superposition and recombined.
+where the factor $i$ makes the exponent anti-Hermitian: the connection $\mathcal{A}_{AC}$ is $\mathbb{M}_+$-valued, and it is $i\mathcal{A}_{AC}$ that generates a $*$-unitary transport, exactly as $-i\tilde{H}/\hbar$ does for the Schrödinger evolution. The holonomy is therefore a genuine $*$-unitary, and the cycle-averaged phase for each eigen-component is the corresponding diagonal entry, while the off-diagonal entries rotate the superpositions. On an eigenstate the holonomy reduces to the phase factor $\exp(i\theta^{\mathrm{pha}}_{AC})$, with $\theta^{\mathrm{pha}}_{AC}$ the real eigenvalue of $\oint\mathcal{A}_{AC}$. In the biquaternion language $\tilde Q$ is a general element of $\mathbb{H}_{\mathbb{B}}$ up to a central phase: a rotor in $\mathrm{SU}(2)$ that acts on the two-component spinor. The abelian AC phase measured with a polarised beam is the trace of $\tilde Q$ in the eigenbasis; the non-abelian content appears when the spin is prepared in a superposition and recombined.
 
 ### The AC Connection in Spin-Orbit Form
 
@@ -148,11 +148,11 @@ In a crystal or atomic system with spin-orbit coupling, the electric field seen 
 The AB and AC phases have the same mathematical shape. In the AB effect a charge $ϙ$ moving in a vector potential $\vec A$ acquires
 
 $$
-\phi_{AB} = \frac{ϙ}{\hbar}\oint_{\mathcal{C}}\vec A\cdot d\vec r
+\theta^{\mathrm{pha}}_{AB} = \frac{ϙ}{\hbar}\oint_{\mathcal{C}}\vec A\cdot d\vec r
 = \frac{ϙ}{\hbar}\Phi_B,
 $$
 
-the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\phi_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
+the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\theta^{\mathrm{pha}}_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
 
 | | Aharonov–Bohm | Aharonov–Casher |
 |---|---|---|
@@ -169,7 +169,7 @@ Both phases are geometric: neither depends on the speed of traversal, and both a
 The further dual is the **He–McKellar–Wilkens (HMW) effect**: a neutral particle carrying an **electric** dipole moment $\vec d$ moving in a **magnetic** field acquires
 
 $$
-\phi_{HMW} = \frac{1}{\hbar}\oint\left(\vec B\times\vec d\right)\cdot d\vec r.
+\theta^{\mathrm{pha}}_{HMW} = \frac{1}{\hbar}\oint\left(\vec B\times\vec d\right)\cdot d\vec r.
 $$
 
 The coupling is to the **motional electric field** $\vec E^{\mathrm{mot}} = \vec v\times\vec B$ seen by the dipole in its own rest frame. The asymmetry with the AC case is the asymmetry of the Lorentz field transformation in SI: the motional magnetic field is $\vec v\times\vec E/c^2$, while the motional electric field is $\vec v\times\vec B$, so the magnetic-dipole coupling carries the $1/c^2$ and the electric-dipole coupling does not.
@@ -185,7 +185,7 @@ L_{AC} = \frac{1}{c^2}\,\vec\mu\cdot\left(\vec v\times\vec E\right)
 = \frac{1}{c^2}\left(\vec E\times\vec\mu\right)\cdot\vec v,
 $$
 
-whose action integral over a closed path is exactly $\hbar\phi_{AC}$. The electric dipole coupling in a magnetic field is $L_{HMW} = \vec d\cdot(\vec v\times\vec B)$, with no $1/c^2$, consistently with the phase above. In each case the coupling is a one-form in velocity contracted with the appropriate moment and field, and the phase is its holonomy. In the biquaternion framework the couplings are elements of $\mathbb{M}_+$ for the dipole cases (they involve the spin or dipole operator) and central for the charge case; the path integral of the companion article *The Path Integral in Biquaternionic Form* is the natural home for the action formulation, and the AC phase is the holonomy that survives the sum over paths.
+whose action integral over a closed path is exactly $\hbar\theta^{\mathrm{pha}}_{AC}$. The electric dipole coupling in a magnetic field is $L_{HMW} = \vec d\cdot(\vec v\times\vec B)$, with no $1/c^2$, consistently with the phase above. In each case the coupling is a one-form in velocity contracted with the appropriate moment and field, and the phase is its holonomy. In the biquaternion framework the couplings are elements of $\mathbb{M}_+$ for the dipole cases (they involve the spin or dipole operator) and central for the charge case; the path integral of the companion article *The Path Integral in Biquaternionic Form* is the natural home for the action formulation, and the AC phase is the holonomy that survives the sum over paths.
 
 ## Explicit Geometries
 
@@ -197,17 +197,17 @@ $$
 \vec E = \frac{\lambda}{2\pi\epsilon_0 r}\,\vec{u_r}.
 $$
 
-Let a magnetic dipole of moment $\vec\mu = \mu_z\vec u_z$ travel once around a circle of radius $R$ in the plane $z = \mathrm{const}$. Along the path $\vec E$ is radial and $d\vec r = R\,d\phi\,\vec u_\phi$ is tangential, so, using $\vec u_r\times\vec u_z = -\vec u_\phi$,
+Let a magnetic dipole of moment $\vec\mu = \mu_z\vec u_z$ travel once around a circle of radius $R$ in the plane $z = \mathrm{const}$. Along the path $\vec E$ is radial and $d\vec r = R\,d\theta^{\mathrm{azm}}\,\vec u_{\mathrm{azm}}$ is tangential, so, using $\vec u_r\times\vec u_z = -\vec u_{\mathrm{azm}}$,
 
 $$
 \left(\vec E\times\vec\mu\right)\cdot d\vec r
-= -E\,\mu_z\,R\,d\phi,
+= -E\,\mu_z\,R\,d\theta^{\mathrm{azm}},
 $$
 
 and the AC phase is independent of $R$:
 
 $$
-\boxed{\;\phi_{AC} = -\frac{1}{\hbar c^2}\cdot 2\pi R E\,\mu_z
+\boxed{\;\theta^{\mathrm{pha}}_{AC} = -\frac{1}{\hbar c^2}\cdot 2\pi R E\,\mu_z
 = -\frac{\lambda\,\mu_z}{\epsilon_0\hbar c^2}\;}
 $$
 
@@ -217,9 +217,9 @@ for the counterclockwise traversal, using $2\pi R E = \lambda/\epsilon_0$. The m
 
 With $\hbar c^2 = 1.0546\times10^{-34}\times(2.998\times10^8)^2\,\mathrm{J\,m} \approx 9.48\times10^{-18}\,\mathrm{J\,m}$:
 
-- **Neutron.** $\mu_n \approx 1.913\,\mu_N \approx 9.66\times10^{-27}\,\mathrm{J/T}$. For a path of length $L = 0.1\,\mathrm{m}$ with $\vec E\perp d\vec r$ and $E = 10^{7}\,\mathrm{V/m}$, the phase is $\phi_{AC} = \mu_n E L/(\hbar c^2) \approx 1.02\times10^{-3}\,\mathrm{rad}$, a milliradian-scale phase readily measured by interferometry.
-- **Electron.** $\mu_e \approx 9.28\times10^{-24}\,\mathrm{J/T}$, giving $\phi_{AC} \approx 0.98\,\mathrm{rad}$ for the same field and path — the effect is roughly a thousand times larger for the electron because of the mass ratio in the Bohr magneton.
-- **Line charge.** For $\lambda = 10^{-8}\,\mathrm{C/m}$ and the neutron moment, $\phi_{AC} = \lambda\mu_n/(\epsilon_0\hbar c^2) \approx 1.15\times10^{-6}\,\mathrm{rad}$; the smallness reflects the small enclosed charge.
+- **Neutron.** $\mu_n \approx 1.913\,\mu_N \approx 9.66\times10^{-27}\,\mathrm{J/T}$. For a path of length $L = 0.1\,\mathrm{m}$ with $\vec E\perp d\vec r$ and $E = 10^{7}\,\mathrm{V/m}$, the phase is $\theta^{\mathrm{pha}}_{AC} = \mu_n E L/(\hbar c^2) \approx 1.02\times10^{-3}\,\mathrm{rad}$, a milliradian-scale phase readily measured by interferometry.
+- **Electron.** $\mu_e \approx 9.28\times10^{-24}\,\mathrm{J/T}$, giving $\theta^{\mathrm{pha}}_{AC} \approx 0.98\,\mathrm{rad}$ for the same field and path — the effect is roughly a thousand times larger for the electron because of the mass ratio in the Bohr magneton.
+- **Line charge.** For $\lambda = 10^{-8}\,\mathrm{C/m}$ and the neutron moment, $\theta^{\mathrm{pha}}_{AC} = \lambda\mu_n/(\epsilon_0\hbar c^2) \approx 1.15\times10^{-6}\,\mathrm{rad}$; the smallness reflects the small enclosed charge.
 
 These are order-of-magnitude estimates; the point is that the phase is linear in the field, the moment and the path length, so it can be tuned into the detectable range.
 
@@ -231,10 +231,10 @@ The AC phase has been observed in several systems. The neutron experiment of Cim
 
 ### Spin-Dependent Interference
 
-The AC phase is not an overall phase of the beam; it is a **spin-dependent** phase, and it is measured by interfering the two spin components. In a two-path interferometer an arm that reverses the spin relative to the other converts the AC phase into a relative phase between the two paths, and the fringes shift by $\Delta\phi/2\pi$ periods. Because reversing the spin reverses the sign of $\vec\mu$ and hence of $\phi_{AC}$, the spin-flip phase difference is twice the single-spin phase,
+The AC phase is not an overall phase of the beam; it is a **spin-dependent** phase, and it is measured by interfering the two spin components. In a two-path interferometer an arm that reverses the spin relative to the other converts the AC phase into a relative phase between the two paths, and the fringes shift by $\Delta\theta^{\mathrm{pha}}/2\pi$ periods. Because reversing the spin reverses the sign of $\vec\mu$ and hence of $\theta^{\mathrm{pha}}_{AC}$, the spin-flip phase difference is twice the single-spin phase,
 
 $$
-\Delta\phi_{\uparrow\downarrow} = 2\phi_{AC}
+\Delta\theta^{\mathrm{pha}}_{\uparrow\downarrow} = 2\theta^{\mathrm{pha}}_{AC}
 = \frac{2}{\hbar c^2}\oint\left(\vec E\times\vec\mu\right)\cdot d\vec r.
 $$
 
@@ -242,7 +242,7 @@ This doubling is what makes the effect accessible: for the neutron example above
 
 ### Reversal Tests
 
-The geometric character of the phase is established by the **reversal tests**. Reversing the direction of travel reverses $\phi_{AC}$; reversing the sign of the enclosed charge reverses it; reversing the spin reverses it; and changing the speed of the particle does not change it. The first three reversals and the speed-independence together distinguish the AC phase from a dynamical phase, which would scale with the traversal time. The neutron experiments used exactly these reversals.
+The geometric character of the phase is established by the **reversal tests**. Reversing the direction of travel reverses $\theta^{\mathrm{pha}}_{AC}$; reversing the sign of the enclosed charge reverses it; reversing the spin reverses it; and changing the speed of the particle does not change it. The first three reversals and the speed-independence together distinguish the AC phase from a dynamical phase, which would scale with the traversal time. The neutron experiments used exactly these reversals.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -274,7 +274,7 @@ The geometric character of the phase is established by the **reversal tests**. R
 A neutral particle carrying a magnetic dipole moment $\vec\mu$ and moving along a path $\mathcal{C}$ in an electric field acquires the **Aharonov–Casher phase**
 
 $$
-\boxed{\;\phi_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r\;},
+\boxed{\;\theta^{\mathrm{pha}}_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r\;},
 $$
 
 which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B_2$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.
@@ -288,7 +288,7 @@ $$
 
 for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the Hermitian form of the state, read through the trace. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega^{\mathrm{sgn}}$ of non-relativistic spin.
 
-The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\phi_{AC} = -\lambda\mu_z/(\epsilon_0\hbar c^2)$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
+The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\theta^{\mathrm{pha}}_{AC} = -\lambda\mu_z/(\epsilon_0\hbar c^2)$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
 
 ## Summary of Notation
 
@@ -302,10 +302,10 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
 | $\vec\mu = \gamma\vec S$ | Magnetic dipole moment |
 | $\vec B_2 = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |
-| $\phi_{AC} = \tfrac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |
+| $\theta^{\mathrm{pha}}_{AC} = \tfrac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |
 | $\mathcal{A}_{AC} = \tfrac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$ | AC connection one-form |
-| $\phi_{AB} = \tfrac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |
-| $\phi_{HMW} = \tfrac{1}{\hbar}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
+| $\theta^{\mathrm{pha}}_{AB} = \tfrac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |
+| $\theta^{\mathrm{pha}}_{HMW} = \tfrac{1}{\hbar}\oint(\vec B\times\vec d)\cdot d\vec r$ | He–McKellar–Wilkens phase |
 | $\lambda$ | Linear charge density of the line-charge geometry |
 | $\Omega^{\mathrm{sgn}}$ | Oriented solid angle (adiabatic limit) |
 

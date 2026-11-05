@@ -194,7 +194,7 @@ which is the reality condition of the real slice. For a complexified momentum th
 
 ## The Brackets as the Invariant Pairing
 
-The spinor module carries the invariant symplectic form $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\,\phi$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
+The spinor module carries the invariant symplectic form $\varepsilon(\psi,\chi^{\mathrm{alt}})=\psi^{T}\epsilon\,\chi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
 
 $$
 \langle ij\rangle=\lambda_i^{T}\epsilon\,\lambda_j=-\langle ji\rangle,

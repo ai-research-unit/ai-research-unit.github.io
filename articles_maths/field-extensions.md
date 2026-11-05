@@ -127,9 +127,9 @@ The subring $F[\alpha_1, \ldots, \alpha_n]$ is defined analogously, as the small
 | $\sqrt{2}$ | $\mathbb{Q}$ | $x^2 - 2$ | $2$ |
 | $i$ | $\mathbb{R}$ | $x^2 + 1$ | $2$ |
 | $\sqrt[3]{2}$ | $\mathbb{Q}$ | $x^3 - 2$ | $3$ |
-| $\zeta_p$, $p$ prime | $\mathbb{Q}$ | $x^{p-1} + \cdots + x + 1$ | $p - 1$ |
+| $\omega_p$, $p$ prime | $\mathbb{Q}$ | $x^{p-1} + \cdots + x + 1$ | $p - 1$ |
 | $\sqrt{2} + \sqrt{3}$ | $\mathbb{Q}$ | $x^4 - 10x^2 + 1$ | $4$ |
-| $\zeta_3 = \tfrac{-1+\sqrt{-3}}{2}$ | $\mathbb{Q}$ | $x^2 + x + 1$ | $2$ |
+| $\omega_3 = \tfrac{-1+\sqrt{-3}}{2}$ | $\mathbb{Q}$ | $x^2 + x + 1$ | $2$ |
 | $x$ (transcendental) | $\mathbb{C}$ | none | infinite |
 
 The irreducibility of $x^2 - 2$ over $\mathbb{Q}$ is the irrationality of $\sqrt2$; that of $x^3 - 2$ and of $\Phi_p$ follows from Eisenstein's criterion as in *Unique Factorisation Domains*. For $\alpha = \sqrt2 + \sqrt3$ one computes
@@ -148,7 +148,7 @@ so $\alpha$ satisfies $x^4 - 10x^2 + 1$; this polynomial is irreducible over $\m
 
 **Proof.** If $\sigma$ is an $F$-embedding then $m_\alpha(\sigma(\alpha)) = \sigma(m_\alpha(\alpha)) = 0$, so $\sigma(\alpha)$ is a conjugate. Conversely every root $\beta$ of $m_\alpha$ admits an $F$-embedding $F(\alpha) \to L$ sending $\alpha$ to $\beta$, because $F(\alpha) \cong F[x]/(m_\alpha)$ and evaluation of $x$ at $\beta$ factors through this quotient.
 
-Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m_\alpha$ is separable, which is the case in characteristic $0$ , more generally, for every **perfect** field; the inseparable case is treated. In $\mathbb{C}$ the conjugates of $\sqrt2$ over $\mathbb{Q}$ are $\pm\sqrt2$, and the conjugates of a primitive $n$-th root of unity $\zeta_n$ over $\mathbb{Q}$ are the $\zeta_n^{k}$ with $\gcd(k,n) = 1$.
+Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m_\alpha$ is separable, which is the case in characteristic $0$ , more generally, for every **perfect** field; the inseparable case is treated. In $\mathbb{C}$ the conjugates of $\sqrt2$ over $\mathbb{Q}$ are $\pm\sqrt2$, and the conjugates of a primitive $n$-th root of unity $\omega_n$ over $\mathbb{Q}$ are the $\omega_n^{k}$ with $\gcd(k,n) = 1$.
 
 ---
 
@@ -278,7 +278,7 @@ The tower law $[K:F] = [K:E][E:F]$ makes degree multiplicative over intermediate
 | $\varepsilon_\alpha$ | Evaluation homomorphism $F[x] \to K$, $p \mapsto p(\alpha)$ |
 | $m_\alpha$ | Minimal polynomial of $\alpha$ over $F$ |
 | $\deg m_\alpha$ | $[F(\alpha):F]$ for algebraic $\alpha$ |
-| $\zeta_n$ | Primitive $n$-th root of unity |
+| $\omega_n$ | Primitive $n$-th root of unity |
 | $\overline{\mathbb{Q}}$ | Algebraic numbers, the algebraic closure of $\mathbb{Q}$ in $\mathbb{C}$ |
 | $F(x)$ | Rational function field $\operatorname{Frac}(F[x])$ |
 | $EL$ | Compositum of subfields $E$ and $L$ |

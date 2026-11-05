@@ -7,7 +7,7 @@ Two orthonormal bases of a $d$-dimensional complex vector space are **mutually u
 In the biquaternion framework the bases of the defining module are the idempotent bases of the Hermitian subspace. A basis of rays is a complete family of orthogonal rank-one idempotents, $\{\tilde\Pi_i\}$ with $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$, and the Hilbert-space overlap between two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,
 
 $$
-\bigl|\langle \psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde\Pi(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr).
+\bigl|\langle \psi|\chi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde\Pi(\chi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr).
 $$
 
 The mutual-unbiasedness condition therefore reads, in the algebra,

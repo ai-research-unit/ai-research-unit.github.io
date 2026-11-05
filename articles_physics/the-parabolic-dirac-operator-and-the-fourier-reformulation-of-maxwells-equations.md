@@ -111,11 +111,11 @@ The system (4) is the source's interpretation of the kernel as a **Cauchy–Riem
 The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial^2/\partial {t'}^2)g = 0$, then
 
 $$
-b(x,t') := \int_0^{t'} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\phi(x)
+b(x,t') := \int_0^{t'} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\chi(x)
 \tag{6}
 $$
 
-makes $g + iv$ an element of $\ker(D + i\partial/\partial t')$ and $g - iv$ an element of $\ker(D - i\partial/\partial t')$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\phi$ any time-independent harmonic function. The proof is the telescoping computation
+makes $g + iv$ an element of $\ker(D + i\partial/\partial t')$ and $g - iv$ an element of $\ker(D - i\partial/\partial t')$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\chi$ any time-independent harmonic function. The proof is the telescoping computation
 
 $$
 Dv = -\int_0^{t'} \Delta g(x,s)\,ds - \partial/\partial t' g(x,0) = -\bigl(\partial/\partial t' g(x,t') - \partial/\partial t' g(x,0)\bigr) - \partial/\partial t' g(x,0) = -\partial/\partial t' g(x,t'),
@@ -128,7 +128,7 @@ $$
 \tag{7}
 $$
 
-and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\phi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{t'}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
+and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\chi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{t'}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
 
 ## The Quaternionic Exponential and the Fourier Characterisation
 
@@ -224,14 +224,14 @@ $$
 \tag{12}
 $$
 
-with the compatibility condition $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\varphi} = \vec{E} + i\vec{B}$ satisfies
+with the compatibility condition $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\chi} = \vec{E} + i\vec{B}$ satisfies
 
 $$
-(D - i\partial/\partial t')\vec{\varphi} = -4\pi(\rho - i\vec{\jmath}).
+(D - i\partial/\partial t')\vec{\chi} = -4\pi(\rho - i\vec{\jmath}).
 \tag{13}
 $$
 
-This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation), so the source's $\vec{\varphi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial t'$ and $\sqrt{\mu}\,\tilde{J} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ becomes
+This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation), so the source's $\vec{\chi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial t'$ and $\sqrt{\mu}\,\tilde{J} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ becomes
 
 $$
 -i\,\tilde{\nabla}\tilde F = -(\rho - i\vec{\jmath}), \qquad \text{that is} \qquad (D - i\partial/\partial t')\tilde F = -i(\rho - i\vec{\jmath}).
@@ -251,7 +251,7 @@ $$
 so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,L_{\mathcal{C}}R_{-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves
 
 $$
-\boxed{\;\vec{\varphi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
+\boxed{\;\vec{\chi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$
 
@@ -308,7 +308,7 @@ The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 =
 | $\Phi_\pm$ | The source's kernel, $\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi kt')$ |
 | $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
-| $\vec{\varphi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
+| $\vec{\chi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
 | $\tilde{F}, \tilde J, \tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box$ | Corpus field-strength biquaternion, four-current, biquaternionic gradient, its conjugate, d'Alembertian |
 | $\epsilon, \mu, c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium (SI section) |
 | $\lambda$ | Parameter of the perturbed operator $D \pm i\lambda\partial/\partial t'$; $\lambda = \sqrt{\epsilon\mu}$ for the homogeneous medium |

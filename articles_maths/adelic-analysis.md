@@ -109,15 +109,15 @@ $$
 
 ### The Local Functional Equation
 
-**Definition.** The **local $L$-factor** attached to $\chi_v$ is $L_v(s,\chi_v) = (1-\chi_v(\varpi_v)q_v^{-s})^{-1}$ when $\chi_v$ is unramified and $L_v = 1$ when it is ramified; the **local zeta integral normalised by the $L$-factor** is $\zeta_v(s,\chi_v,\Phi_v) = Z_v(s,\chi_v,\Phi_v)/L_v(s,\chi_v)$.
+**Definition.** The **local $L$-factor** attached to $\chi_v$ is $L_v(s,\chi_v) = (1-\chi_v(\varpi_v)q_v^{-s})^{-1}$ when $\chi_v$ is unramified and $L_v = 1$ when it is ramified; the **local zeta integral normalised by the $L$-factor** is $\omega_v(s,\chi_v,\Phi_v) = Z_v(s,\chi_v,\Phi_v)/L_v(s,\chi_v)$.
 
 **Theorem (Tate's local functional equation).** There is a meromorphic function $\gamma_v(s,\chi_v)$, independent of $\Phi_v$, with
 $$
 Z_v(1-s, \chi_v^{-1}, \hat\Phi_v) = \gamma_v(s,\chi_v)\,Z_v(s,\chi_v,\Phi_v)
 $$
-for all $\Phi_v$, where $\hat\Phi_v$ is the local Fourier transform. Writing $\gamma_v(s,\chi_v) = \epsilon_v(s,\chi_v)\,L_v(1-s,\chi_v^{-1})/L_v(s,\chi_v)$, the factor $\epsilon_v(s,\chi_v)$ is a monomial in $q_v^{-s}$ times a Gauss sum, and it is the **local root number**; equivalently, the normalised integrals $\zeta_v = Z_v/L_v$ satisfy
+for all $\Phi_v$, where $\hat\Phi_v$ is the local Fourier transform. Writing $\gamma_v(s,\chi_v) = \epsilon_v(s,\chi_v)\,L_v(1-s,\chi_v^{-1})/L_v(s,\chi_v)$, the factor $\epsilon_v(s,\chi_v)$ is a monomial in $q_v^{-s}$ times a Gauss sum, and it is the **local root number**; equivalently, the normalised integrals $\omega_v = Z_v/L_v$ satisfy
 $$
-\zeta_v(1-s, \chi_v^{-1}, \hat\Phi_v) = \epsilon_v(s,\chi_v)\,\zeta_v(s,\chi_v,\Phi_v).
+\omega_v(1-s, \chi_v^{-1}, \hat\Phi_v) = \epsilon_v(s,\chi_v)\,\omega_v(s,\chi_v,\Phi_v).
 $$
 
 **Proof sketch.** For $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ both sides are computed directly from the previous theorem, using $\hat\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ in the unramified case and the explicit Fourier transform of the indicator of a fractional ideal in the ramified case; the quotient then defines $\gamma_v$ and, by linearity and continuity, extends to all $\Phi_v$. The independence of $\Phi_v$ is the substance: the space of Schwartz–Bruhat functions is spanned by such indicators.
@@ -144,11 +144,11 @@ the product converging absolutely and locally uniformly in the half-plane of con
 $$
 Z(1-s, \chi^{-1}, \hat\Phi) = Z(s,\chi,\Phi),
 $$
-with the self-dual measure and the additive character fixed above. Equivalently, the normalised integral $\zeta(s,\chi,\Phi) = Z(s,\chi,\Phi)/L(s,\chi)$ satisfies
+with the self-dual measure and the additive character fixed above. Equivalently, the normalised integral $\omega(s,\chi,\Phi) = Z(s,\chi,\Phi)/L(s,\chi)$ satisfies
 $$
-\zeta(1-s, \chi^{-1}, \hat\Phi) = \epsilon(s,\chi)\,\zeta(s,\chi,\Phi), \qquad \epsilon(s,\chi) = \prod_v \epsilon_v(s,\chi_v),
+\omega(1-s, \chi^{-1}, \hat\Phi) = \epsilon(s,\chi)\,\omega(s,\chi,\Phi), \qquad \epsilon(s,\chi) = \prod_v \epsilon_v(s,\chi_v),
 $$
-and for a factorisable $\Phi$ the normalised integral is the product $\prod_v \zeta_v(s,\chi_v,\Phi_v)$ of the local ones. When $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ at every finite place and $\Phi_v$ is the standard Gaussian at every infinite place, the unnormalised product
+and for a factorisable $\Phi$ the normalised integral is the product $\prod_v \omega_v(s,\chi_v,\Phi_v)$ of the local ones. When $\Phi_v = \mathbf{1}_{\mathcal{O}_v}$ at every finite place and $\Phi_v$ is the standard Gaussian at every infinite place, the unnormalised product
 $$
 \Lambda(s,\chi) = \prod_v Z_v(s,\chi_v,\Phi_v)
 $$
@@ -168,9 +168,9 @@ Z(s) = \pi^{-s/2}\Gamma(s/2)\,\zeta(s) = \Lambda(s),
 $$
 the completed Riemann zeta function, and the functional equation of the theorem becomes $\Lambda(s) = \Lambda(1-s)$; the Euler product of the theorem becomes $\zeta(s) = \prod_p (1-p^{-s})^{-1}$.
 
-**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} \exp(-\pi x^2)\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\zeta$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$.
+**Proof sketch.** The Archimedean integral is $\int_{\mathbb{R}^\times} \exp(-\pi x^2)\lvert x \rvert^{s}d^\times x = \pi^{-s/2}\Gamma(s/2)$; the local integrals at the finite places are $(1-p^{-s})^{-1}$ by the local computation; the product over the places is the Euler product of $\omega$. The Gaussian is self-dual, so the root number is $1$, and the functional equation reads $\Lambda(s) = \Lambda(1-s)$.
 
-The corollary is the prototype. The analytic continuation, the special values, the distribution of the zeros and the arithmetic applications of $\zeta$ and of the Hecke $L$-functions $L(s,\chi)$ are the subject , which take this article's local and global functional equations as their analytic input; the analytic proof of the prime number theorem belongs and the statements about the zeros. What this article supplies is the adelic integration, the Fourier transform, the Poisson summation formula and the two functional equations, local and global.
+The corollary is the prototype. The analytic continuation, the special values, the distribution of the zeros and the arithmetic applications of $\omega$ and of the Hecke $L$-functions $L(s,\chi)$ are the subject , which take this article's local and global functional equations as their analytic input; the analytic proof of the prime number theorem belongs and the statements about the zeros. What this article supplies is the adelic integration, the Fourier transform, the Poisson summation formula and the two functional equations, local and global.
 
 ## Summary
 

@@ -190,7 +190,7 @@ where the derivatives are taken in a commutative subalgebra, and the classical t
 **Theorem (Functions Arising from the Analysis).** The analysis of the system produces special functions that are not obtained by substitution from a real series:
 
 1. the kernel $E_D$ of *Split-Quaternion Integration*, the fundamental solution of the vector operator, a distribution supported on the null cone and homogeneous of degree $-2$;
-2. the Poisson kernel of the hyperbolic plane, $P(w,\zeta) = \frac{1-|w|^2}{|w-\zeta|^2}$, a function of the two variables of the disc model of *Split-Quaternions and Hyperbolic Geometry*;
+2. the Poisson kernel of the hyperbolic plane, $P(w,\omega) = \frac{1-|w|^2}{|w-\omega|^2}$, a function of the two variables of the disc model of *Split-Quaternions and Hyperbolic Geometry*;
 3. the Legendre functions of the hyperboloid, which are the spherical functions of the pair $\big(\mathrm{SO}^{+}(2,1), SO(2)\big)$ and arise as the eigenfunctions of the invariant Laplacian on the sheets;
 4. the characters of the norm-one group, which are the building blocks of the harmonic analysis of *Split-Quaternion Harmonic Analysis*.
 
@@ -215,7 +215,7 @@ The interpolation gives a second, general extension, computed from the two roots
 | ${}_2F_1(a,b;c;\tilde q)$ | the hypergeometric function, by its series | this article |
 | interpolation formula | the value of a function at the two roots of the characteristic polynomial | this article |
 | $E_D$ | the fundamental solution, a function of the analysis | *Split-Quaternion Integration* |
-| Poisson kernel | $\frac{1-|w|^2}{|w-\zeta|^2}$ on the disc | *Split-Quaternions and Hyperbolic Geometry* |
+| Poisson kernel | $\frac{1-|w|^2}{|w-\omega|^2}$ on the disc | *Split-Quaternions and Hyperbolic Geometry* |
 | Legendre functions | the spherical functions of the hyperboloid | this article |
 | characters | the building blocks of the harmonic analysis | *Split-Quaternion Harmonic Analysis* |
 

@@ -141,7 +141,7 @@ The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\nat
 
 ### The real Lagrangian and the second-order equation
 
-For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
+For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{\Phi} = \chi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
 $$
 \boxed{\;
 S[\tilde{\Phi}] = \int\mathcal{L}\,d^4x ,
@@ -150,7 +150,7 @@ S[\tilde{\Phi}] = \int\mathcal{L}\,d^4x ,
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
-\mathcal{L} = -\,(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) - \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) - \mu^2\,\phi^*\phi ,
+\mathcal{L} = -\,(\partial/\partial Q_t\,\chi^*)(\partial/\partial Q_t\,\chi) - \sum_k(\partial/\partial Q_k\,\chi^*)(\partial/\partial Q_k\,\chi) - \mu^2\,\chi^*\chi ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $ict'$ convention gives it. Its Euler–Lagrange equation is
@@ -159,11 +159,11 @@ $$
 \left(\Box - \mu^2\right)\tilde{\Phi} = 0 ,
 \qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta\;},
 $$
-the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\phi - \mu^2\phi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring.
+the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\chi - \mu^2\chi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring.
 
 ### The general biquaternion field
 
-The scalar field is the case $\tilde{\Phi} = \phi\,e_t$, and the Lagrangian is written for a general $\tilde{\Phi}\in\mathbb{B}$ without change of form, because both of its invariants are defined for every element:
+The scalar field is the case $\tilde{\Phi} = \chi\,e_t$, and the Lagrangian is written for a general $\tilde{\Phi}\in\mathbb{B}$ without change of form, because both of its invariants are defined for every element:
 $$
 \mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right] .
 $$
@@ -185,11 +185,11 @@ T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}\!\left(e_\mu e_\rho e_
 $$
 with $\sigma_0 = +1$, $\sigma_k = -1$. The tensor is **not** $\delta_{\mu\nu}\delta_{\rho\sigma}$: exactly one $\sigma$ gives a nonvanishing coefficient for each triple $(\mu,\rho,\nu)$, so it has $64$ nonzero entries of $256$, and $48$ of them carry $\rho \neq \sigma$ and therefore couple different components of the field.
 
-The components therefore decouple for exactly the fields that are **central**. For $\tilde{\Phi} = \phi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
+The components therefore decouple for exactly the fields that are **central**. For $\tilde{\Phi} = \chi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
 $$
-\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] = \sum_\mu\bigl|\partial/\partial Q_\mu\phi\bigr|^2 ,
+\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] = \sum_\mu\bigl|\partial/\partial Q_\mu\chi\bigr|^2 ,
 $$
-the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{\Phi} = \mu^2\tilde{\Phi}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
+the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{\Phi} = \chi\,e_t \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{\Phi} = \mu^2\tilde{\Phi}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
 The centrality of the mass is the structural point to carry forward. The companion *The Dirac Equation in Biquaternionic Form* records that the first-order (Dirac) mass is instead the chirality-off-diagonal coupling, a non-central term; the two mass terms are different objects, and the second-order action above can only produce the central one. This is the variational statement of the same distinction the involution lattice draws between the two kinds of mass.
 
@@ -240,7 +240,7 @@ The stationary-action principle is only half the content of an action; the other
 
 **Translations.** The actions depend on $\tilde{R}$ only through the fields and their gradients, so a constant shift of the argument is a symmetry, and the conserved quantity is the four-momentum. For the field the conserved density is the stress–energy tensor
 $$
-T_{\mu\nu} = -(\partial/\partial Q_\mu\phi^*)\partial/\partial Q_\nu\phi - (\partial/\partial Q_\mu\phi)\partial/\partial Q_\nu\phi^* - \delta_{\mu\nu}\,\mathcal{L} ,
+T_{\mu\nu} = -(\partial/\partial Q_\mu\chi^*)\partial/\partial Q_\nu\chi - (\partial/\partial Q_\mu\chi)\partial/\partial Q_\nu\chi^* - \delta_{\mu\nu}\,\mathcal{L} ,
 \qquad \sum_\mu\partial/\partial Q_\mu T_{\mu\nu} = 0 \ \text{on shell},
 $$
 whose time–time component is the energy density. The companion article records the caution that in the $ict'$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
@@ -309,7 +309,7 @@ $$
 S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right]\right\}d^4x ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
-whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{\Phi} = 0$ with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$; the variation was checked against $\int(\Box\phi - \mu^2\phi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\tilde{\nabla}^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
+whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{\Phi} = 0$ with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$; the variation was checked against $\int(\Box\chi - \mu^2\chi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\tilde{\nabla}^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
 The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the biquaternion norm and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
 
@@ -332,7 +332,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J} = i[\tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi}) - (\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi}]$ | Conserved material-sector current |
-| $T_{\mu\nu} = -(\partial/\partial Q_\mu\phi^*)\partial/\partial Q_\nu\phi - (\partial/\partial Q_\mu\phi)\partial/\partial Q_\nu\phi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
+| $T_{\mu\nu} = -(\partial/\partial Q_\mu\chi^*)\partial/\partial Q_\nu\chi - (\partial/\partial Q_\mu\chi)\partial/\partial Q_\nu\chi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
 | $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ | Hermitian-norm variation |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

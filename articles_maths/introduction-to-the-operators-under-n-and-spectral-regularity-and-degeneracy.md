@@ -58,7 +58,7 @@ The positive factor is the modulus of the operator: $\lvert\mathrm{Sd}_{\tilde Q
 | singular value $2a$ | $4a^{2}$ |
 | phase $e^{i\alpha}$ | $1$ |
 
-The scale and the singular value double. The last row is the cancellation of the central phase: $\mathrm{Sd}_{\zeta\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for every central unit $\zeta$, because $\zeta$ commutes with $\tilde X$ and $\zeta\zeta^{*}=1$. The doubling of the exponents $\ln r$, $\theta/2$ and $\psi/2$ is in the operator-exponential companions. On the null cone the collapse is exact and reads
+The scale and the singular value double. The last row is the cancellation of the central phase: $\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for every central unit $\omega$, because $\omega$ commutes with $\tilde X$ and $\omega\omega^{*}=1$. The doubling of the exponents $\ln r$, $\theta/2$ and $\psi/2$ is in the operator-exponential companions. On the null cone the collapse is exact and reads
 
 $$
 \mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0},\qquad

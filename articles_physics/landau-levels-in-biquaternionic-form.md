@@ -20,16 +20,16 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 
 ### Minimal coupling and the central Hamiltonian
 
-The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\phi(\vec r)$ is
+The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\chi^{\mathrm{scp}}(\vec r)$ is
 
 $$
-H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\phi\right]e_t
+H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\chi^{\mathrm{scp}}\right]e_t
 =\frac{1}{2m}\sum_k\tilde\pi_k^2 ,
 \qquad
 \tilde\pi_k=\left(p_k-\frac{ϙ}{c}A_k\right)e_t ,
 $$
 
-where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_k$ and $\phi$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
+where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_k$ and $\chi^{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
 
 For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
 
@@ -201,14 +201,14 @@ For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=
 The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
 
 $$
-\boxed{\;N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0}\;},
+\boxed{\;N_\chi^{\mathrm{scl}}=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0}\;},
 \qquad
 \Phi_0=\frac{hc}{|ϙ|},
 $$
 
 the number of **magnetic flux quanta** $\Phi_0=hc/|ϙ|$ through the sample area $A$. The degeneracy per unit area is $B/\Phi_0=|ϙ|B/hc$. The counting was verified numerically: at $L_x=L_y=10$ with $B=m=ϙ=\hbar=c=1$ a direct count of the allowed $k$ gave 16 states against $AB/\Phi_0=15.92$, and the count tracked $AB/\Phi_0$ at the other sampled areas, the boundary convention accounting for the unit difference.
 
-The identification of the degeneracy with a flux count is exact and is the non-relativistic seed of the quantum Hall effect. Dividing the electron number $N_e$ by the degeneracy defines the **filling factor** $\nu=N_e/N_\phi$; the integer values of $\nu$ are the plateaux of the integer quantum Hall effect, and the fractional values require the interacting many-body problem, which is outside this article. The biquaternion framework does not change the count: it is a count of central momentum eigenvalues in a fixed area, and the module contributes no extra states, because the spin-0 particle has no internal degree of freedom to fill.
+The identification of the degeneracy with a flux count is exact and is the non-relativistic seed of the quantum Hall effect. Dividing the electron number $N_e$ by the degeneracy defines the **filling factor** $\nu=N_e/N_\chi^{\mathrm{scl}}$; the integer values of $\nu$ are the plateaux of the integer quantum Hall effect, and the fractional values require the interacting many-body problem, which is outside this article. The biquaternion framework does not change the count: it is a count of central momentum eigenvalues in a fixed area, and the module contributes no extra states, because the spin-0 particle has no internal degree of freedom to fill.
 
 ### The flux quantum from the algebra
 
@@ -272,7 +272,7 @@ $$
 
 and the wave functions $\psi_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\chi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
 
-Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
+Each level is degenerate with multiplicity $N_\chi^{\mathrm{scl}}=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
 
 ## Summary of Notation
 
@@ -296,8 +296,8 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $L_z^{\mathrm{orb}}$ | Conserved central angular momentum (symmetric gauge) |
 | $R_k$ | Guiding-centre operators; commute with $H$ |
 | $\Phi_0=hc/\lvert ϙ\rvert$ | Magnetic flux quantum |
-| $N_\phi=AB/\Phi_0$ | Landau-level degeneracy |
-| $\nu=N_e/N_\phi$ | Filling factor |
+| $N_\chi^{\mathrm{scl}}=AB/\Phi_0$ | Landau-level degeneracy |
+| $\nu=N_e/N_\chi^{\mathrm{scl}}$ | Filling factor |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
 
 ## Further Reading

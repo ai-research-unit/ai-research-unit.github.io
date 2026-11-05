@@ -33,9 +33,9 @@ Condition (b) is a minimality condition: it says that no proper subfield of $K$ 
 
 **(b)** The splitting field of $x^2 + 1$ over $\mathbb{R}$ is $\mathbb{C} = \mathbb{R}(i)$, of degree $2$.
 
-**(c)** The splitting field of $x^3 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$, of degree $6$: the polynomial is irreducible by Eisenstein, so adjoining a root gives degree $3$, and the remaining factor $x^2 + \sqrt[3]{2}\,x + \sqrt[3]{4}$ has discriminant $-3\sqrt[3]{4}$, which is negative and therefore not a square in the real field $\mathbb{Q}(\sqrt[3]{2})$; the quadratic is thus irreducible over that field and the second step contributes degree $2$. The tower law gives $[K:\mathbb{Q}] = 6$.
+**(c)** The splitting field of $x^3 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \omega_3)$, of degree $6$: the polynomial is irreducible by Eisenstein, so adjoining a root gives degree $3$, and the remaining factor $x^2 + \sqrt[3]{2}\,x + \sqrt[3]{4}$ has discriminant $-3\sqrt[3]{4}$, which is negative and therefore not a square in the real field $\mathbb{Q}(\sqrt[3]{2})$; the quadratic is thus irreducible over that field and the second step contributes degree $2$. The tower law gives $[K:\mathbb{Q}] = 6$.
 
-**(d)** The splitting field of $x^n - 1$ over $\mathbb{Q}$ is the cyclotomic field $\mathbb{Q}(\zeta_n)$.
+**(d)** The splitting field of $x^n - 1$ over $\mathbb{Q}$ is the cyclotomic field $\mathbb{Q}(\omega_n)$.
 
 **(e)** The splitting field of $x^q - x$ over $\mathbb{F}_p$, where $q = p^m$, is the field $\mathbb{F}_q$.
 
@@ -89,7 +89,7 @@ Now $\sigma$ carries the root set of $g$ into itself: if $\gamma \in N$ satisfie
 
 **Proof.** Let $N$ be the splitting field over $F$ of $m = m_{\alpha_1} \cdots m_{\alpha_n}$. Then $N$ contains each $\alpha_i$, so $K \subseteq N$, and $N$ is normal by the theorem above. Any normal $M \supseteq K$ contains all conjugates of the $\alpha_i$, hence contains all roots of $m$, hence contains a splitting field of $m$ over $F$; so $N$ is minimal. Uniqueness is uniqueness of the splitting field.
 
-**Example.** The normal closure of $\mathbb{Q}(\sqrt[3]{2})$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$, of degree $6$: it is already the splitting field of $x^3 - 2$.
+**Example.** The normal closure of $\mathbb{Q}(\sqrt[3]{2})$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \omega_3)$, of degree $6$: it is already the splitting field of $x^3 - 2$.
 
 ---
 
@@ -298,7 +298,7 @@ An algebraic closure of $F$ is an algebraically closed algebraic extension; it e
 | $\varphi(x) = x^p$ | Frobenius map, $F$ of characteristic $p$ |
 | $\operatorname{Hom}_F(K, \overline{F})$ | $F$-embeddings of $K$ into $\overline{F}$ |
 | $F_s$ | Separable closure of $F$ in $K$ |
-| $\zeta_n$ | Primitive $n$-th root of unity |
+| $\omega_n$ | Primitive $n$-th root of unity |
 | $\mathbb{F}_p$, $\mathbb{F}_{p^n}$ | Finite fields |
 | $\overline{\mathbb{Q}}$ | Algebraic numbers |
 | $\varphi : F \to F'$ | Isomorphism of fields, extended to splitting fields and closures |

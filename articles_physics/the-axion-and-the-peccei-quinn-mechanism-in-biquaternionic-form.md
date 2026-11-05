@@ -81,7 +81,7 @@ $$
 \mathrm{U}(1)_{\mathbb{B}} = \left\{\,\exp(i\alpha)e_t \;:\; \alpha\in\mathbb{R}\,\right\} .
 $$
 
-A central scalar $\tilde\Phi = \varphi e_t$, with $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, transforms under it as $\tilde\Phi\mapsto \exp(i\alpha)\tilde\Phi$, i.e. $a/f_a\mapsto a/f_a+\alpha$, and the symmetry is **exact** at the level of the classical algebra: the phase commutes with every element of $\mathbb{B}$, so no term built from the algebra alone can break it. This is the framework's strongest statement of a global $\mathrm{U}(1)$, and it is the group that the Peccei–Quinn symmetry requires.
+A central scalar $\tilde\Phi = \chi e_t$, with $\chi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, transforms under it as $\tilde\Phi\mapsto \exp(i\alpha)\tilde\Phi$, i.e. $a/f_a\mapsto a/f_a+\alpha$, and the symmetry is **exact** at the level of the classical algebra: the phase commutes with every element of $\mathbb{B}$, so no term built from the algebra alone can break it. This is the framework's strongest statement of a global $\mathrm{U}(1)$, and it is the group that the Peccei–Quinn symmetry requires.
 
 **The axion.** Write the central scalar as
 
@@ -90,7 +90,7 @@ $$
 \qquad
 \rho = \sqrt2\,v_0 + \ldots ,
 \qquad
-v_0 = |\langle\varphi\rangle| ,
+v_0 = |\langle\chi\rangle| ,
 $$
 
 so that $a$ is the angular field and $f_a$ is the scale of the breaking. The kinetic term of the central scalar is the framework's complex scalar kinetic term,
@@ -205,7 +205,7 @@ and $\exp(i\Delta S) = 1$. The periodicity of the axion field is therefore **com
 
 **The Peccei–Quinn symmetry is the algebra's centre.** The one exact global $\mathrm{U}(1)$ that the classical biquaternion algebra contains is the group of central phases, and the Peccei–Quinn symmetry is precisely a global $\mathrm{U}(1)$ of scalar phases. The framework therefore does not have to adjoin the symmetry; it has it, and the reason it cannot be broken by any algebra-built term is that the centre commutes with everything. This is the framework's contribution to the mechanism, and it is exact.
 
-**The axion is a central phase.** The axion field is the angular part of the central scalar, $a = f_a\arg\varphi$, and its kinetic term is the central scalar's kinetic term with the radial mode frozen at its expectation value. The axion is therefore a **central**, and hence singlet, field: it carries no isospin, no colour and no electric charge, which is the correct Standard Model assignment for the QCD axion at the level of the algebra. The material-sector and informational-sector contents are untouched. This is the same central singlet that the Higgs and Goldstone articles use, read in its angular mode.
+**The axion is a central phase.** The axion field is the angular part of the central scalar, $a = f_a\arg\chi$, and its kinetic term is the central scalar's kinetic term with the radial mode frozen at its expectation value. The axion is therefore a **central**, and hence singlet, field: it carries no isospin, no colour and no electric charge, which is the correct Standard Model assignment for the QCD axion at the level of the algebra. The material-sector and informational-sector contents are untouched. This is the same central singlet that the Higgs and Goldstone articles use, read in its angular mode.
 
 **The anomaly is the boundary.** The axion's mass, its CP-restoring minimum and its couplings all come from the coupling $\frac{a}{f_a}FF^{\mathrm{dual}}$, which requires the QCD field strength, its dual, and the fermionic measure that makes the axial rotation anomalous. The dual field strength and the chiral measure belong to the general-gauge and spinor sectors; the framework's centre is not anomalously coupled by itself, and the companion articles on chiral fermions and on the theta parameter record where the anomaly sits. The framework therefore supplies the field and the symmetry, and the anomaly that lifts the field is imported. This is the same boundary the pion article draws for the axial current, seen from the scalar side.
 
@@ -261,10 +261,10 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; carries the Peccei–Quinn $\mathrm{U}(1)$ |
 | $\mathrm{U}(1)_{\mathbb{B}} = \{\exp(i\alpha)e_t\}$ | Central phase group; the Peccei–Quinn symmetry |
 | $\tilde\Phi = \frac{\rho}{\sqrt2}\exp(ia/f_a)e_t$ | Central scalar; axion is its angular mode |
-| $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$ | Complex central component; $a/f_a$ is its Peccei–Quinn phase |
+| $\chi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$ | Complex central component; $a/f_a$ is its Peccei–Quinn phase |
 | $a$ | Axion field (pseudo-Goldstone phase) |
 | $a,b,c$ | colour indices of the gauge field, written low; each contraction is an explicit sum. The axion field also uses the letter $a$. |
-| $v_0 = \vert\langle\varphi\rangle\vert$, $f_a = \sqrt2\,v_0$ | Scalar vacuum value; its relation to the decay constant |
+| $v_0 = \vert\langle\chi\rangle\vert$, $f_a = \sqrt2\,v_0$ | Scalar vacuum value; its relation to the decay constant |
 | $f_a$ | Peccei–Quinn / axion decay constant |
 | $\bar\theta = \theta+\arg\det M_q$ | Physical CP-violating parameter (companion article) |
 | $S_\theta = \frac{\theta}{32\pi^2}\int FF^{\mathrm{dual}}$ | Theta term (companion article) |

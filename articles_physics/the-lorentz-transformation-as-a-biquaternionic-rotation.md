@@ -201,21 +201,21 @@ The rotor conjugation can be verified against the standard component formulas fo
 The scalar part of $\tilde{A}_2$ is
 
 $$
-\mathrm{Sc}(\tilde U_{\mathrm b}\tilde{A}\tilde U_{\mathrm b}^{*}) = i\gamma\left(\frac{\phi}{c} - \frac{\vec v_b\cdot\vec A}{c}\right) = i\frac{\phi_2}{c},
+\mathrm{Sc}(\tilde U_{\mathrm b}\tilde{A}\tilde U_{\mathrm b}^{*}) = i\gamma\left(\frac{\chi}{c} - \frac{\vec v_b\cdot\vec A}{c}\right) = i\frac{\chi_2}{c},
 $$
 
 where the standard relations $\cosh\psi = \gamma$ and $\sinh\psi = \gamma v_b/c$ have been used. This gives
 
 $$
-\phi_2 = \gamma(\phi - \vec v_b\cdot\vec A),
+\chi_2 = \gamma(\chi - \vec v_b\cdot\vec A),
 $$
 
-which is the standard Lorentz transformation of the scalar potential (in units where $\vec A$ is measured in the same units as $\phi$ divided by velocity, i.e., the SI convention).
+which is the standard Lorentz transformation of the scalar potential (in units where $\vec A$ is measured in the same units as $\chi$ divided by velocity, i.e., the SI convention).
 
 The vector part gives
 
 $$
-\vec A_2 = \vec A + \frac{\gamma - 1}{u^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\phi}{c^2}\vec v_b,
+\vec A_2 = \vec A + \frac{\gamma - 1}{u^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\chi}{c^2}\vec v_b,
 $$
 
 which is the standard Lorentz transformation of the vector potential, including the longitudinal projection term and the contribution from the scalar potential.

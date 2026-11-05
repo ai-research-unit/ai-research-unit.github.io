@@ -141,13 +141,13 @@ $$
 
 the sum over all multi-indices $\alpha$, where $D_x^\alpha=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha$ acts on the $x$-variable of $\mathfrak{b}$. In particular the leading term is $c \equiv \mathfrak{a}\mathfrak{b} \bmod S^{m+m'-1}$.
 
-*Proof (sketch).* Use the representation $\mathfrak{a}(x,D)v(x)=\frac{1}{(2\pi)^n}\int \exp(ix\cdot\eta)\mathfrak{a}(x,\eta)\mathcal F v(\eta)\,d\eta$, valid after regularisation. Then $\widehat{\mathfrak{b}(x,D)u}(\eta)=\frac{1}{(2\pi)^n}\int\mathcal F \mathfrak{b}(\eta-\zeta,\zeta)\mathcal F u(\zeta)\,d\zeta$, and substituting $\eta=\zeta+\vartheta^{\mathrm{dum}}$ gives
+*Proof (sketch).* Use the representation $\mathfrak{a}(x,D)v(x)=\frac{1}{(2\pi)^n}\int \exp(ix\cdot\eta)\mathfrak{a}(x,\eta)\mathcal F v(\eta)\,d\eta$, valid after regularisation. Then $\widehat{\mathfrak{b}(x,D)u}(\eta)=\frac{1}{(2\pi)^n}\int\mathcal F \mathfrak{b}(\eta-\varkappa^{\mathrm{crd}},\varkappa^{\mathrm{crd}})\mathcal F u(\varkappa^{\mathrm{crd}})\,d\varkappa^{\mathrm{crd}}$, and substituting $\eta=\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}}$ gives
 
 $$
-\mathfrak{a}(x,D)\mathfrak{b}(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int \exp(ix\cdot\zeta)\,\exp(ix\cdot\vartheta^{\mathrm{dum}})\,\mathfrak{a}(x,\zeta+\vartheta^{\mathrm{dum}})\,\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\zeta)\,\mathcal F u(\zeta)\,d\zeta\,d\vartheta^{\mathrm{dum}} .
+\mathfrak{a}(x,D)\mathfrak{b}(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int \exp(ix\cdot\varkappa^{\mathrm{crd}})\,\exp(ix\cdot\vartheta^{\mathrm{dum}})\,\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})\,\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})\,\mathcal F u(\varkappa^{\mathrm{crd}})\,d\varkappa^{\mathrm{crd}}\,d\vartheta^{\mathrm{dum}} .
 $$
 
-Taylor expansion of $\mathfrak{a}(x,\zeta+\vartheta^{\mathrm{dum}})$ in $\vartheta^{\mathrm{dum}}$ about $\zeta$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\zeta)\vartheta^{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta^{\mathrm{dum}}$ of $\vartheta^{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\zeta)$ is $D_x^\alpha \mathfrak{b}(x,\zeta)$; the remainder after $N$ terms is in $S^{m+m'-N}$.
+Taylor expansion of $\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})$ in $\vartheta^{\mathrm{dum}}$ about $\varkappa^{\mathrm{crd}}$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\varkappa^{\mathrm{crd}})\vartheta^{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta^{\mathrm{dum}}$ of $\vartheta^{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})$ is $D_x^\alpha \mathfrak{b}(x,\varkappa^{\mathrm{crd}})$; the remainder after $N$ terms is in $S^{m+m'-N}$.
 
 **Example.** For $\mathfrak{a}=\xi_j$ and $\mathfrak{b}=x_k$, the composition is $D_jM_{x_k}$, and
 

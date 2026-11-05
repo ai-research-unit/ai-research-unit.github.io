@@ -26,7 +26,7 @@ No physics is invoked.
 
 **Definition.** Let $U$ be a periodic Fatou component of period $p$.
 
-**(a)** $U$ is an **attracting basin** if $U$ contains an attracting or superattracting cycle $\zeta$ of $f^p$ and $U$ is the component of the basin of $\zeta$ that contains $\zeta$; then $f^{pn}(z) \to \zeta$ for every $z \in U$.
+**(a)** $U$ is an **attracting basin** if $U$ contains an attracting or superattracting cycle $\omega$ of $f^p$ and $U$ is the component of the basin of $\omega$ that contains $\omega$; then $f^{pn}(z) \to \omega$ for every $z \in U$.
 
 **(b)** $U$ is a **parabolic basin** if $\partial U$ contains a parabolic cycle of $f^p$ and $f^{pn}(z) \to \partial U$ for every $z \in U$, the convergence being locally uniform, the cycle attracting the points of $U$ through the petals of the Leau–Fatou flower.
 

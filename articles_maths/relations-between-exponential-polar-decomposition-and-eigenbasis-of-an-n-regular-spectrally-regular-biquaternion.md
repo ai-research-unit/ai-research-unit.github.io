@@ -120,17 +120,17 @@ r>0,\quad
 \lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1.
 $$
 
-The factors are the scale $r$, the phase $\zeta=e^{i\alpha}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
+The factors are the scale $r$, the phase $\omega=e^{i\alpha}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
 
 | Polar item | Value |
 |---|---|
 | Domain | $\mathbb{B}^\times=\{\tilde Q:Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0\}$ |
-| Decomposition | $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| Decomposition | $\tilde Q=r\omega\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | Scalar factor | $r>0$ |
-| Phase | $\zeta=e^{i\alpha}$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
+| Phase | $\omega=e^{i\alpha}$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
 | Boost | $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}$, $\psi\ge0$ |
 | Rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$, $\theta\in[0,2\pi]$ |
-| Unit factor | $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=Q/(r\zeta)$ |
+| Unit factor | $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=Q/(r\omega)$ |
 | Parameters | $1+1+(1+2)+(1+2)=8$ real |
 
 ### The Common Domain

@@ -45,7 +45,7 @@ The nilpotents of a commutative ring form an ideal, the nilradical, which is the
 | $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | $\pi_x$, $\pi_y$ | $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
 | $M_2(\mathbb{R})$ | $E_{11}$, $E_{22}$ | the column decomposition $\mathbb{R}^2 = \mathbb{R}\vec e_x \oplus \mathbb{R}\vec e_y$ | *Matrix Algebras* |
 | a Boolean ring $B$ | every element | $B$ is a product of copies of $\mathbb{F}_2$ | *Von Neumann Regular Rings* |
-| $\mathbb{Q}[C_3]$ | the orbit sums of the components | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
+| $\mathbb{Q}[C_3]$ | the orbit sums of the components | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\omega_3)$ | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]/(x^2 - 1)$ | the images of the factors | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
 
 A nontrivial idempotent $e$ satisfies $e(1-e) = 0$ with $e \neq 0$ and $1 - e \neq 0$, so it is a zero divisor, and it induces the direct sum decomposition $R = Re \oplus R(1-e)$ with the two-sided ideals $Re$ and $R(1-e)$. The decomposition of a ring into a product of two rings is the same thing as a pair of complementary idempotents, and this is the sense in which the idempotents of a commutative Artinian ring give its splitting into local rings, as recorded in *List of Reduced, Local and Product Rings*.

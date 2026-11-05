@@ -326,7 +326,7 @@ while the mutual bigradients transform by the same conjugation — the paper's L
 
 **The reconciliation with the 2009 finding.** The corpus records both results and states the interpretation that makes them compatible. The 2009 finding is about a *condition*: the statement $M = 0$, that a single source is closed, is not a Lorentz-invariant statement, because a four-vector whose time component vanishes in one frame has a non-vanishing one in another. The 2017 theorem is about *equations*: the interaction system is covariant. An open system's equations can be covariant while the condition that a subsystem be closed is not, and the two statements are then about different objects. The 2009 scalar field $a$ is the programme's mechanism for the second and does not enter the 2017 proof of the first. The paper itself does not mention the 2009 conservation finding, so the corpus states this interpretation as its own and leaves open whether the invariance theorem is intended for the modified system.
 
-**The Lorentz condition, in a different role.** The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial/\partial \tau\phi = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of *Maxwell's Equations in the Biquaternionic Formulation* carries the cross-reference.
+**The Lorentz condition, in a different role.** The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial/\partial \tau\chi^{\mathrm{scp}} = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of *Maxwell's Equations in the Biquaternionic Formulation* carries the cross-reference.
 
 ## The Static Limit and the Coupling
 
@@ -342,23 +342,23 @@ $$
 \mu\,\mathrm{div}\,\vec H = -\rho_H ,
 $$
 
-with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\phi$, it becomes
+with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$, it becomes
 
 $$
-\boxed{\;\Delta\phi = \frac{\rho_H}{\mu}\;}
+\boxed{\;\Delta\chi^{\mathrm{scp}} = \frac{\rho_H}{\mu}\;}
 $$
 
-so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\phi$ points towards its source: for a positive mass density the static field is **attractive**. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,
+so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$ points towards its source: for a positive mass density the static field is **attractive**. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,
 
 $$
 \mu = \frac{1}{4\pi G},
 $$
 
-with $G$ the gravitational constant (the source writes $\gamma$ for it), which is the ordinary Poisson equation $\Delta\phi = 4\pi G\,\rho_{\text{mass}}$.
+with $G$ the gravitational constant (the source writes $\gamma$ for it), which is the ordinary Poisson equation $\Delta\chi^{\mathrm{scp}} = 4\pi G\,\rho_{\text{mass}}$.
 
 This closes a gap the corpus had recorded. The identification of magnetic charge with mass is a choice, but once it is made the constant $\mu$ of the field is no longer free: reading $\rho_H$ as the mass density and demanding the Poisson limit ties $\mu$ to Newton's constant and fixes the sign of the static force as attraction. What it does **not** do is predict gravity. The value of $G$ enters by hand through $\mu$, exactly as the electric charge enters by hand through $\rho_E$; no relation in the model determines the strength of the gravitational coupling from the algebra. The revision fixes the identification and the sign, not the number.
 
-For a Gaussian mass density of unit total mass, the Newtonian potential $\phi(r) = -(G M/r)\,\mathrm{erf}\big(r/(\sqrt2\,\sigma)\big)$ satisfies $\Delta\phi = 4\pi G\rho$ to the finite-difference floor, and with $\mu = 1/(4\pi G)$ and $\vec H = -\mathrm{grad}\,\phi$ the static field satisfies $\mu\,\mathrm{div}\,\vec H = -\rho_H$ to $10^{-8}$.
+For a Gaussian mass density of unit total mass, the Newtonian potential $\chi^{\mathrm{scp}}(r) = -(G M/r)\,\mathrm{erf}\big(r/(\sqrt2\,\sigma)\big)$ satisfies $\Delta\chi^{\mathrm{scp}} = 4\pi G\rho$ to the finite-difference floor, and with $\mu = 1/(4\pi G)$ and $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$ the static field satisfies $\mu\,\mathrm{div}\,\vec H = -\rho_H$ to $10^{-8}$.
 
 ## The Unified Field and the Interaction Energy
 

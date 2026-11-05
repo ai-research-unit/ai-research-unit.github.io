@@ -231,16 +231,16 @@ and it lies on the idempotent stratum. A null field is a nilpotent and lies on t
 
 The polar decomposition is defined off the cone and has no value on it. It has a boundary value, and the boundary values are exactly the nonzero elements of the cone.
 
-**The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\zeta$ a unit complex number and $R>0$, and set
+**The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\varkappa^{\mathrm{phs}}$ a unit complex number and $R>0$, and set
 
 $$
-\tilde Q(\psi)=R\exp\left(-\frac{\psi}{2}\right)\zeta\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \psi>0.
+\tilde Q(\psi)=R\exp\left(-\frac{\psi}{2}\right)\varkappa^{\mathrm{phs}}\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \psi>0.
 $$
 
 Every $\tilde Q(\psi)$ is a unit, and as $\psi\to\infty$ it converges to
 
 $$
-\boxed{\;\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
+\boxed{\;\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
 $$
 
 a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.

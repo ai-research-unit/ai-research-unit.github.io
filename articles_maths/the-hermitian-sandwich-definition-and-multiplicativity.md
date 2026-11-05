@@ -266,7 +266,7 @@ $$
 CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3),
 $$
 
-of real dimension seven. The general element $\tilde Q=r\zeta\tilde U$ with $r>0$, $|\zeta|=1$ and $|\langle\tilde U\rangle_{\natural}|=1$ gives $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U}$: the phase cancels, the modulus squared is the dilation, and the unit part is the Lorentz transformation.
+of real dimension seven. The general element $\tilde Q=r\omega\tilde U$ with $r>0$, $|\omega|=1$ and $|\langle\tilde U\rangle_{\natural}|=1$ gives $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U}$: the phase cancels, the modulus squared is the dilation, and the unit part is the Lorentz transformation.
 
 **The kernel of the linear map.** The kernel of the linear map $\mathrm{Sd}_{\tilde Q}$ for a fixed $\tilde Q$ is a different object. It is $\{0\}$ exactly when $\tilde Q$ is a unit; if $\tilde Q$ is a null element, the kernel is nonzero. The kernel of the parameter map is the $\mathrm{U}(1)$ orbit; the kernel of the linear map is $\{\tilde X:\tilde Q\tilde X\tilde Q^{*}=0\}$. The two kernels are stated separately, and neither is the other.
 
@@ -285,7 +285,7 @@ a twofold cover. The kernel is $\{\pm e_t\}$; the image is the identity componen
 
 **The Lorentz action.** The anti-Hermitian half is a real four-dimensional space with the Minkowski form of signature $(3,1)$. A unit-norm sandwich preserves the form, because the norm scales by $|\langle\tilde Q\rangle_{\natural}|^{2}=1$. The map is continuous, $SL_2(\mathbb{C})$ is connected, and the kernel is $\{\pm e_t\}$; hence the image is the identity component $SO^{+}(1,3)$. The Hermitian half carries the same action composed with the exchange by $i$, with the opposite sign of the form. The matrix verification is in the two model articles cited in §*The Spectrum*.
 
-**The conformal extension.** For a general unit $\tilde Q=r\zeta\tilde U$, the sandwich is $r^{2}\mathrm{Sd}_{\tilde U}$: a Lorentz transformation composed with the dilation of ratio $r^{2}$ on the algebra, $r^{4}$ on the norm and $r^{8}$ on the $4\times4$ determinant. The image is the conformal group $CO^{+}(1,3)$; the kernel remains the central $\mathrm{U}(1)$, and the scale is the positive real factor. The unit-norm slice is the subgroup on which the dilation is one; the general unit group adds the dilation and the phase, and the phase is the kernel.
+**The conformal extension.** For a general unit $\tilde Q=r\omega\tilde U$, the sandwich is $r^{2}\mathrm{Sd}_{\tilde U}$: a Lorentz transformation composed with the dilation of ratio $r^{2}$ on the algebra, $r^{4}$ on the norm and $r^{8}$ on the $4\times4$ determinant. The image is the conformal group $CO^{+}(1,3)$; the kernel remains the central $\mathrm{U}(1)$, and the scale is the positive real factor. The unit-norm slice is the subgroup on which the dilation is one; the general unit group adds the dilation and the phase, and the phase is the kernel.
 
 ## Summary
 

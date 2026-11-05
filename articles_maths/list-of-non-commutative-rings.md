@@ -37,9 +37,9 @@ The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign
 | $k[G]$ for $G$ abelian | abelian | yes, a commutative ring | none if $G$ is torsion-free and $k$ a domain | *Group Algebras* |
 | $k[G]$ for $G$ non-abelian | non-abelian | no | none if $G$ is torsion-free and $k$ a domain | *Group Algebras* |
 | $k[F_n]$, the free group | $F_n$ | no for $n \geq 2$ | none: $F_n$ is torsion-free | *Ore Domains and Division Rings of Fractions* |
-| $\mathbb{Q}[C_3]$ | $C_3$ | yes | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$, so it has idempotents | *Examples of Rings and Fields* |
+| $\mathbb{Q}[C_3]$ | $C_3$ | yes | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\omega_3)$, so it has idempotents | *Examples of Rings and Fields* |
 | $\mathbb{F}_2[C_2]$ | $C_2$ | yes | $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$, with a nilpotent | *Examples of Rings and Fields* |
-| $k[C_p]$, with $\zeta_p \in k$ and $\operatorname{char} k \nmid p$ | $C_p$ | yes | $k[C_p] \cong k^p$, a product of fields | *Group Algebras* |
+| $k[C_p]$, with $\omega_p \in k$ and $\operatorname{char} k \nmid p$ | $C_p$ | yes | $k[C_p] \cong k^p$, a product of fields | *Group Algebras* |
 
 A group ring is commutative exactly when the group is abelian, so the non-commutative group rings are those of the non-abelian groups. The torsion-free hypothesis governs the zero divisors and not the commutativity: $k[F_n]$ is a non-commutative domain, while $k[C_2]$ is a commutative ring with zero divisors. The group ring of a torsion-free group is a domain, and it is listed among the non-commutative domains in *List of Domains*.
 

@@ -29,9 +29,9 @@ $$
 \boxed{\;I_{\bar\lambda}=I_{-\lambda}=-I_\lambda , \qquad \Omega_{\bar\lambda}=-\Omega_\lambda\;} ,
 $$
 
-it is a free involution of the family, it reverses the orientation of the parameter sphere and hence acts on $\mathbb{CP}^1$ as an anti-holomorphic map without fixed points in the holomorphic parameter $\zeta\mapsto-\bar\zeta^{-1}$, and it is an isometry of the parameter sphere.
+it is a free involution of the family, it reverses the orientation of the parameter sphere and hence acts on $\mathbb{CP}^1$ as an anti-holomorphic map without fixed points in the holomorphic parameter $\varkappa^{\mathrm{crd}}\mapsto-\bar{\varkappa^{\mathrm{crd}}}^{-1}$, and it is an isometry of the parameter sphere.
 
-**Proof.** The conjugation negates the imaginary part, so $\bar\lambda=-\lambda$ for imaginary $\lambda$; the antipodal map of $S^2$ is free and orientation-reversing, and in the stereographic parameter it is $\zeta\mapsto-\bar\zeta^{-1}$, which is anti-holomorphic because it is the composite of the holomorphic $\zeta\mapsto-1/\zeta$ with the conjugation. The metric statement is the compatibility of the conjugation with the quaternionic norm.
+**Proof.** The conjugation negates the imaginary part, so $\bar\lambda=-\lambda$ for imaginary $\lambda$; the antipodal map of $S^2$ is free and orientation-reversing, and in the stereographic parameter it is $\varkappa^{\mathrm{crd}}\mapsto-\bar{\varkappa^{\mathrm{crd}}}^{-1}$, which is anti-holomorphic because it is the composite of the holomorphic $\varkappa^{\mathrm{crd}}\mapsto-1/\varkappa^{\mathrm{crd}}$ with the conjugation. The metric statement is the compatibility of the conjugation with the quaternionic norm.
 
 **Remark (the sign in the forms).** The conjugation negates the complex structure and therefore negates its fundamental form, $\Omega_{\bar\lambda}=-\Omega_\lambda$; this is why the holomorphic symplectic form of the family, being of type $(2,0)$ for $I_\lambda$, is sent to the complex conjugate type for $I_{-\lambda}$ rather than to itself.
 
@@ -79,7 +79,7 @@ For a $K3$ surface with a hyperkähler metric the family is the full two-sphere 
 
 ## Summary
 
-A **hyperkähler manifold** carries the **twistor family** $I_\lambda=aJ_1+bJ_2+cJ_3$ of complex structures, indexed by the unit imaginary quaternions modulo sign, each compatible with the metric and Kähler with fundamental form $\Omega_\lambda$. The quaternionic conjugation acts on the family by the **antipode** $I_\lambda\mapsto-I_\lambda$, a free isometric involution, anti-holomorphic in the holomorphic parameter $\zeta\mapsto-\bar\zeta^{-1}$; it is the conjugation of the structure bundle of *Quaternionic Geometry and the Conjugate Structure*. The **twistor space** $Z=M\times S^2$ is the total space of the family, carrying a complex structure for which the fibration $Z\to\mathbb{CP}^1$ is holomorphic, the twistor lines are holomorphic with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and a holomorphic symplectic form; in dimension four it agrees with the twistor space of the conformal class of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*. The real structures of $Z$ are built from the conjugation and an anti-linear involution of $M$, and the flat space, the four-torus and a $K3$ surface are the worked cases.
+A **hyperkähler manifold** carries the **twistor family** $I_\lambda=aJ_1+bJ_2+cJ_3$ of complex structures, indexed by the unit imaginary quaternions modulo sign, each compatible with the metric and Kähler with fundamental form $\Omega_\lambda$. The quaternionic conjugation acts on the family by the **antipode** $I_\lambda\mapsto-I_\lambda$, a free isometric involution, anti-holomorphic in the holomorphic parameter $\varkappa^{\mathrm{crd}}\mapsto-\bar{\varkappa^{\mathrm{crd}}}^{-1}$; it is the conjugation of the structure bundle of *Quaternionic Geometry and the Conjugate Structure*. The **twistor space** $Z=M\times S^2$ is the total space of the family, carrying a complex structure for which the fibration $Z\to\mathbb{CP}^1$ is holomorphic, the twistor lines are holomorphic with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and a holomorphic symplectic form; in dimension four it agrees with the twistor space of the conformal class of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*. The real structures of $Z$ are built from the conjugation and an anti-linear involution of $M$, and the flat space, the four-torus and a $K3$ surface are the worked cases.
 
 ## Summary of Notation
 
@@ -90,7 +90,7 @@ A **hyperkähler manifold** carries the **twistor family** $I_\lambda=aJ_1+bJ_2+
 | $I_\lambda=aJ_1+bJ_2+cJ_3$ | Twistor family of complex structures |
 | $\Omega_\lambda=a\omega_1+b\omega_2+c\omega_3$ | Fundamental form of $I_\lambda$ |
 | $\lambda\mapsto\bar\lambda$ | Conjugation; acts by the antipode $I_\lambda\mapsto-I_\lambda$ |
-| $\zeta\mapsto-\bar\zeta^{-1}$ | The conjugation in the holomorphic parameter |
+| $\varkappa^{\mathrm{crd}}\mapsto-\bar{\varkappa^{\mathrm{crd}}}^{-1}$ | The conjugation in the holomorphic parameter |
 | $Z=M\times S^2$, $\pi : Z\to\mathbb{CP}^1$ | Twistor space and its fibration |
 | $\mathcal{O}(1)\oplus\mathcal{O}(1)$ | Normal bundle of a twistor line |
 | $\omega=\Omega_2+i\Omega_3$ | Holomorphic symplectic form |

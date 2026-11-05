@@ -131,13 +131,13 @@ the group of central phases. The family therefore collapses in two steps: the un
 
 ## Worked Examples
 
-**A central phase.** For $\tilde{Q}_1=\omega e_t$ with $\lvert\omega\rvert=1$, the inner conjugation is the identity and the signed inner conjugation is the scalar $\overline{\omega}/\omega=\overline{\omega}^{2}$:
+**A central phase.** For $\tilde{Q}_1=\omega e_t$ with $\lvert\omega\rvert=1$, the inner conjugation is the identity and the signed inner conjugation is the scalar $\overline{\omega}/\omega=\overline\omega^{2}$:
 
 $$
-\Phi^{\mathrm{id},\rho}_{\omega e_t}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_t}=\overline{\omega}^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
+\Phi^{\mathrm{id},\rho}_{\omega e_t}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_t}=\overline\omega^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
 $$
 
-The whole of $\mathrm{U}(2)$ modulo $SU(2)$ is of this form, and the example shows the collapse failing at the first non-trivial phase: the two families differ by the unit scalar $\overline{\omega}^{2}$, which is $1$ only at $\pm e_t$.
+The whole of $\mathrm{U}(2)$ modulo $SU(2)$ is of this form, and the example shows the collapse failing at the first non-trivial phase: the two families differ by the unit scalar $\overline\omega^{2}$, which is $1$ only at $\pm e_t$.
 
 **An even element.** For $\tilde{Q}_1=\vec e_x$, of $\mathrm{Cl}_{3,0}$-degree two, the twist is inert, $\bar{\cdot}(\vec e_x)=\vec e_x$, and the four operators coincide:
 

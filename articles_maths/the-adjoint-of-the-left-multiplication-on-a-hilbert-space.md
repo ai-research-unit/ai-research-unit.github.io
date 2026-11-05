@@ -12,7 +12,7 @@ so the adjoint stays on the side it started from, and the map $U\mapsto L_U$ is 
 
 This article fixes the Hilbert–Schmidt form, the adjoint of the left multiplication and its explicit value on the rank-one operators, the self-adjointness, normality, unitarity and positivity criteria that the identity produces, the $*$-representation structure and the commutant, and the passage to the signed left multiplication. The two-sided multiplication algebra is *The Left and Right Multiplication Operators on a Hilbert Space*, where the rank-one decomposition and the Hilbert–Schmidt form are established; the bounded operators and their adjoints are *Bounded Operators on a Hilbert Space*; the Hilbert-Schmidt class is *Compact Operators*; the signed left multiplication is *The Signed Left Multiplication on a Hilbert Space*, and its adjoint is *The Signed Adjoint of the Left Multiplication on a Hilbert Space* below; the two-sided signed adjoint is *The Signed Adjoint Sandwich on a Hilbert Space*; the Hilbert-algebra form of the same identity, with the Tomita operator, is *The Adjoint of the Left Multiplication on a Hermitian Algebra* (Part II).
 
-Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, $B(H)$ acts on $S_2(H)$ by $L_U(T)=UT$ and $R_V(T)=TV$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written with a star. The rank-one operator is $\xi\otimes\bar\eta:\zeta\mapsto\langle\zeta,\eta\rangle\xi$, and the **involution** on the elements is $U\mapsto U^*$.
+Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, $B(H)$ acts on $S_2(H)$ by $L_U(T)=UT$ and $R_V(T)=TV$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written with a star. The rank-one operator is $\xi\otimes\bar\eta:\varkappa^{\mathrm{crd}}\mapsto\langle\varkappa^{\mathrm{crd}},\eta\rangle\xi$, and the **involution** on the elements is $U\mapsto U^*$.
 
 ## The Hilbert–Schmidt Form and the Adjoint
 
@@ -43,12 +43,12 @@ $$
 and the adjoint is computed on rank-one operators by transposing the vector:
 
 $$
-\langle L_U(\xi\otimes\bar\eta),\zeta\otimes\bar\kappa\rangle_{\mathrm{HS}}
-=\langle U\xi,\zeta\rangle\langle\kappa,\eta\rangle
-=\langle \xi\otimes\bar\eta,L_{U^*}(\zeta\otimes\bar\kappa)\rangle_{\mathrm{HS}} .
+\langle L_U(\xi\otimes\bar\eta),\varkappa^{\mathrm{crd}}\otimes\bar\kappa\rangle_{\mathrm{HS}}
+=\langle U\xi,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle
+=\langle \xi\otimes\bar\eta,L_{U^*}(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)\rangle_{\mathrm{HS}} .
 $$
 
-*Proof.* The rank-one action is the computation $UT=U(\xi\otimes\bar\eta)$, and for the right multiplication $(\xi\otimes\bar\eta)V=\xi\otimes\bar\eta\circ V$ gives the transpose formula; the adjoint pairing is the trace of the product of two rank-one operators, $\operatorname{tr}((\xi\otimes\bar\eta)(\zeta\otimes\bar\kappa)^*)=\langle\xi,\zeta\rangle\langle\kappa,\eta\rangle$.
+*Proof.* The rank-one action is the computation $UT=U(\xi\otimes\bar\eta)$, and for the right multiplication $(\xi\otimes\bar\eta)V=\xi\otimes\bar\eta\circ V$ gives the transpose formula; the adjoint pairing is the trace of the product of two rank-one operators, $\operatorname{tr}((\xi\otimes\bar\eta)(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)^*)=\langle\xi,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle$.
 
 **Corollary (the multiplications are isometric and multiplicative).** The maps $U\mapsto L_U$ and $V\mapsto R_V$ are linear, multiplicative and isometric: $\|L_U\|=\|U\|$, $\|R_V\|=\|V\|$, and the two families commute, $L_UR_V=R_VL_U$.
 

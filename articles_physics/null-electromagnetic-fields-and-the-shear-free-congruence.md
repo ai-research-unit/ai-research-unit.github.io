@@ -92,7 +92,7 @@ for every $\mu$, as one line of algebra shows: each term contains either $k_\alp
 
 **Why it holds.** The proof is a computation in the spin-coefficient form of Maxwell's equations. In a null tetrad whose first null leg is the principal direction, three of the four Maxwell scalars vanish and only one survives; call it $\Phi_2$, the standard name. Two of the four Newman–Penrose field equations then have vanishing left-hand sides, and they read $\kappa\Phi_2=0$ and $\sigma\Phi_2=0$. Since $\Phi_2\ne0$, both spin coefficients vanish: $\kappa=0$ is the statement that the congruence is geodesic, and $\sigma=0$ that it is shear-free. The remaining two equations propagate $\Phi_2$ along the two null directions, and the expansion $\rho$ enters them only as a coefficient, so the theorem constrains the congruence without fixing its expansion. The corpus's Newman–Penrose article names the twelve spin coefficients, $\kappa$ and $\sigma$ among them; it does not carry these four equations, and this article records the theorem rather than deriving it.
 
-**The direction field, explicitly.** The principal direction is carried by a spinor, and the unit three-vector it defines is the Bloch vector of that spinor: its components are $n_k=\xi^{\dagger}\sigma_k\xi/(\xi^{\dagger}\xi)$, with $\lvert\vec n\rvert=1$. It is the same map that carries a spin-$\tfrac12$ state to the Bloch sphere in *The Majorana Representation in Biquaternionic Form*, where it is written $\vec u_x$ with the stereographic coordinate $\zeta$. In the eikonal chart $\xi=(1,G)$, so that $\xi^{\dagger}\xi=1+\lvert G\rvert^2$, the map reads
+**The direction field, explicitly.** The principal direction is carried by a spinor, and the unit three-vector it defines is the Bloch vector of that spinor: its components are $n_k=\xi^{\dagger}\sigma_k\xi/(\xi^{\dagger}\xi)$, with $\lvert\vec n\rvert=1$. It is the same map that carries a spin-$\tfrac12$ state to the Bloch sphere in *The Majorana Representation in Biquaternionic Form*, where it is written $\vec u_x$ with the stereographic coordinate $\varkappa^{\mathrm{stg}}$. In the eikonal chart $\xi=(1,G)$, so that $\xi^{\dagger}\xi=1+\lvert G\rvert^2$, the map reads
 
 $$
 \vec n=\frac{1}{1+\lvert G\rvert^2}\bigl(G+\bar G,\;-i(G-\bar G),\;1-\lvert G\rvert^2\bigr),
@@ -117,23 +117,23 @@ $$
 $G$ is the $f^+$ of the programme's fundamental static solution, the stereographic coordinate, written in the Cartesian form $f^+=(x_1+ix_2)/(r+x_3)$ there; and $\beta$ is an eikonal function with $\partial\beta\cdot\partial\beta=0$. The two gradients are
 
 $$
-dG=\lambda\,(\hat\theta+i\hat\phi),\qquad \lambda=\frac{e^{i\theta^{\mathrm{azm}}}}{2r\cos^2(\theta/2)},\qquad d\beta=\hat t+\hat r .
+dG=\lambda\,(\hat\theta+i\hat{\mathrm{azm}}),\qquad \lambda=\frac{e^{i\theta^{\mathrm{azm}}}}{2r\cos^2(\theta/2)},\qquad d\beta=\hat t+\hat r .
 $$
 
-$dG$ is null because $\hat\theta$ and $\hat\phi$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\hat t$ and $\hat r$ are unit and of opposite sign in the interval; and the two are orthogonal because $dG$ has no $t'$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $t'+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
+$dG$ is null because $\hat\theta$ and $\hat{\mathrm{azm}}$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\hat t$ and $\hat r$ are unit and of opposite sign in the interval; and the two are orthogonal because $dG$ has no $t'$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $t'+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
 
 $$
-C_{\hat t\hat r}=0,\qquad C_{\hat\theta\hat\phi}=0,\qquad C_{\hat t\hat\theta}=C_{\hat r\hat\theta}=-\lambda,\qquad C_{\hat t\hat\phi}=C_{\hat r\hat\phi}=-i\lambda,
+C_{\hat t\hat r}=0,\qquad C_{\hat\theta\hat{\mathrm{azm}}}=0,\qquad C_{\hat t\hat\theta}=C_{\hat r\hat\theta}=-\lambda,\qquad C_{\hat t\hat{\mathrm{azm}}}=C_{\hat r\hat{\mathrm{azm}}}=-i\lambda,
 $$
 
-which is the statement that $C=-\lambda\,(\hat t+\hat r)\wedge(\hat\theta+i\hat\phi)$.
+which is the statement that $C=-\lambda\,(\hat t+\hat r)\wedge(\hat\theta+i\hat{\mathrm{azm}})$.
 
-**The field is transverse to the spheres.** The two components $C_{\hat t\hat r}$ and $C_{\hat\theta\hat\phi}$ vanish, so the electric and magnetic parts have no radial component, $E_r=B_r=0$, and the two vectors lie in the plane tangent to the sphere. In the complex form they are related by $\vec E=\lambda(\hat\theta+i\hat\phi)$ and $\vec B=i\vec E$, so that $\vec E+i\vec B=0$: the field is the case of the table in which nullness and duality-purity coincide, and $\vec E\cdot\vec E=0$ holds as a consequence of the nullity of $dG$.
+**The field is transverse to the spheres.** The two components $C_{\hat t\hat r}$ and $C_{\hat\theta\hat{\mathrm{azm}}}$ vanish, so the electric and magnetic parts have no radial component, $E_r=B_r=0$, and the two vectors lie in the plane tangent to the sphere. In the complex form they are related by $\vec E=\lambda(\hat\theta+i\hat{\mathrm{azm}})$ and $\vec B=i\vec E$, so that $\vec E+i\vec B=0$: the field is the case of the table in which nullness and duality-purity coincide, and $\vec E\cdot\vec E=0$ holds as a consequence of the nullity of $dG$.
 
 **The real field it defines is a genuine null field**, with
 
 $$
-\vec E_1=\lambda_R\hat\theta-\lambda_I\hat\phi,\qquad \vec H_1=-\lambda_I\hat\theta-\lambda_R\hat\phi,
+\vec E_1=\lambda_R\hat\theta-\lambda_I\hat{\mathrm{azm}},\qquad \vec H_1=-\lambda_I\hat\theta-\lambda_R\hat{\mathrm{azm}},
 $$
 
 where $\lambda=\lambda_R+i\lambda_I$. Its invariants vanish, $|\vec E_1|=|\vec H_1|=|\lambda|$ and $\vec E_1\cdot\vec H_1=0$, and its principal null direction is the outward radial one: the real part of $C$ is $-(\hat t+\hat r)\wedge\vec E_1$, with $\vec E_1$ read as a covector, and is annihilated by $\hat t+\hat r$, while $\vec H_1=-\hat r\times\vec E_1$ exhibits the transverse triple $(\vec E_1,\vec H_1,\hat r)$ and so the same radial direction. The congruence is the radial one: null, geodesic, of expansion magnitude $2/r$ and with zero shear and twist.
@@ -181,9 +181,9 @@ The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate an
 | $\star$ | The dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$ |
 | $G$ | The stereographic coordinate $(x+iy)/(z+r)=\tan(\theta/2)e^{i\theta^{\mathrm{azm}}}$ |
 | $\xi$, $\vec n$ | The spinor of the congruence and its Bloch vector $n_k=\xi^{\dagger}\sigma_k\xi/(\xi^{\dagger}\xi)$, the principal null direction |
-| $\lambda$ | The coefficient $e^{i\theta^{\mathrm{azm}}}/(2r\cos^2(\theta/2))$ of $dG=\lambda(\hat\theta+i\hat\phi)$ |
+| $\lambda$ | The coefficient $e^{i\theta^{\mathrm{azm}}}/(2r\cos^2(\theta/2))$ of $dG=\lambda(\hat\theta+i\hat{\mathrm{azm}})$ |
 | $t'$, $x$, $y$, $z$ | The material coordinates; $r$ their spatial radius; $\theta$, $\theta^{\mathrm{azm}}$ the polar angles |
-| $\hat t$, $\hat r$, $\hat\theta$, $\hat\phi$ | The orthonormal frame adapted to the spherical coordinates |
+| $\hat t$, $\hat r$, $\hat\theta$, $\hat{\mathrm{azm}}$ | The orthonormal frame adapted to the spherical coordinates |
 | $W$, $\vec S$ | Energy density and Poynting vector, $W=\lvert\lambda\rvert^2$ and $\vec S=-\lvert\lambda\rvert^2\hat r$ in the example |
 
 ## Further Reading

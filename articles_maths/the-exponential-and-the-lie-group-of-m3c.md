@@ -220,7 +220,7 @@ H=\exp K,\qquad
 K=\frac{2\pi i}{3}\big(P_2+2P_3\big),
 $$
 
-with $P_k$ the projector for $\zeta_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is skew-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is skew-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
+with $P_k$ the projector for $\omega_k$ and eigenvalues $0,2\pi i/3,4\pi i/3$. The matrix $K$ is skew-Hermitian. For a general root $H=SH_0S^{-1}$ the spectral logarithm $K=SK_0S^{-1}$ satisfies $H=\exp K$ but is skew-Hermitian only when $S$ can be chosen $*$-unitary, that is, when $H$ is normal; a non-normal root is not $*$-unitary. A gauge transformation $E\mapsto e^{t}Ee^{-t}$ with $t=\operatorname{diag}(t_1,t_2,t_3)$ traceless rescales the nilpotents:
 
 $$
 e^{t}E_{ij}e^{-t}=e^{t_i-t_j}E_{ij},

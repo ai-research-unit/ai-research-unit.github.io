@@ -92,12 +92,12 @@ The mass term requires a word of care, because the framework's **Dirac** mass is
 
 The exact evaluation of the Gaussian functional integral is the backbone of perturbation theory, and in the biquaternion framework it is a finite-dimensional determinant problem per mode.
 
-**Finite-dimensional statement.** Let $\phi\in\mathbb{C}^n$ and let $K$ be an $n\times n$ Hermitian positive-definite matrix. Then
+**Finite-dimensional statement.** Let $\chi\in\mathbb{C}^n$ and let $K$ be an $n\times n$ Hermitian positive-definite matrix. Then
 $$
-\int d^n\phi\; \exp(-\frac12 \phi^\dagger K\phi + J^\dagger\phi + \phi^\dagger J)
+\int d^n\chi\; \exp(-\frac12 \chi^\dagger K\chi + J^\dagger\chi + \chi^\dagger J)
 = \frac{(2\pi)^n}{\det K}\, \exp(\,J^\dagger K^{-1} J).
 $$
-For a real field, $\phi\in\mathbb{R}^n$, the same integral is $(2\pi)^{n/2}(\det K)^{-1/2}\exp(\frac12 J^T K^{-1}J)$; the difference of a factor $2$ in the exponent and a factor $2$ in the power of $2\pi$ is the standard real-versus-complex counting, and it is exactly the counting that a biquaternion field's two-complex-dimensional mode supplies. The **free energy** $W[J]=\log Z[J]$ is then
+For a real field, $\chi\in\mathbb{R}^n$, the same integral is $(2\pi)^{n/2}(\det K)^{-1/2}\exp(\frac12 J^T K^{-1}J)$; the difference of a factor $2$ in the exponent and a factor $2$ in the power of $2\pi$ is the standard real-versus-complex counting, and it is exactly the counting that a biquaternion field's two-complex-dimensional mode supplies. The **free energy** $W[J]=\log Z[J]$ is then
 $$
 W[J] - W[0] = \tfrac12\, J^\dagger K^{-1}J ,
 $$
@@ -155,8 +155,8 @@ The cleanest explicit case is the free scalar field, which the scalar example be
 
 **The Euclidean action.** After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
-S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\phi\,\partial/\partial Q_\mu\phi + m^2\phi^2\Big)
-= \tfrac12\int d^4x_E\;\phi\big(-\Delta_E + m^2\big)\phi ,
+S_E[\chi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\chi\,\partial/\partial Q_\mu\chi + m^2\chi^2\Big)
+= \tfrac12\int d^4x_E\;\chi\big(-\Delta_E + m^2\big)\chi ,
 $$
 with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2_{Q_\mu}$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.
 
@@ -166,7 +166,7 @@ Z_0[J] = \exp\left(\frac12\int\frac{d^4k_E}{(2\pi)^4}\,\frac{J(-k)J(k)}{k_E^2+m^
 $$
 and the two-point function is the propagator
 $$
-\big\langle \phi(x)\phi(y)\big\rangle = \frac{1}{k_E^2+m^2}
+\big\langle \chi(x)\chi(y)\big\rangle = \frac{1}{k_E^2+m^2}
 \;\longrightarrow\;
 D_F(x-y) \quad\text{(Lorentzian)},
 $$

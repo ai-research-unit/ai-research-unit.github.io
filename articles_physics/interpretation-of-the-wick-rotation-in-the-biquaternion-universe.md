@@ -103,18 +103,18 @@ obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c
 The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral
 
 $$
-Z = \int \mathcal{D}\phi\; \exp(iS[\phi]/\hbar)
+Z = \int \mathcal{D}\chi\; \exp(iS[\chi]/\hbar)
 $$
 
 has an oscillating integrand, and it is not absolutely convergent. After the Wick rotation, the path integral becomes
 
 $$
-Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
+Z_E = \int \mathcal{D}\chi\; \exp(-S_E[\chi]/\hbar),
 $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\chi$ on $\mathbb{M}_-$ is transferred to a field $\chi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
 $$
 \Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} + \Delta,

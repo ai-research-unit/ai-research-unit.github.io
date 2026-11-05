@@ -159,14 +159,14 @@ A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 +\epsilon^{(r)*}_\mu(\vec k)\,a^{\mathrm{fop}\dagger}_r(\vec k)\,\exp(+ik\cdot x)\right],
 $$
 
-with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=ict'$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\mu\nu}$. The mode operators carry the corresponding commutators,
+with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma^{\mathrm{met}}_r\delta_{rs}$, where $(\sigma^{\mathrm{met}}_0,\sigma^{\mathrm{met}}_1,\sigma^{\mathrm{met}}_2,\sigma^{\mathrm{met}}_3)=(-1,+1,+1,+1)$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=ict'$, and the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ being $\delta_{\mu\nu}$. The mode operators carry the corresponding commutators,
 
 $$
 \boxed{\;\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
+=\sigma^{\mathrm{met}}_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
 $$
 
-with all other commutators vanishing. The signs are not optional: the timelike mode has $\zeta_0=-1$, so the one-particle state $a^{\mathrm{fop}\dagger}_0|0\rangle$ has **negative norm**, $\langle0|a^{\mathrm{fop}}_0a^{\mathrm{fop}\dagger}_0|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.
+with all other commutators vanishing. The signs are not optional: the timelike mode has $\sigma^{\mathrm{met}}_0=-1$, so the one-particle state $a^{\mathrm{fop}\dagger}_0|0\rangle$ has **negative norm**, $\langle0|a^{\mathrm{fop}}_0a^{\mathrm{fop}\dagger}_0|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.
 
 The negative-norm states are removed by a **subsidiary condition**. The Lorenz gauge condition $S=0$ is imposed on the positive-frequency part of the field,
 
@@ -184,14 +184,14 @@ This condition does not set the timelike and longitudinal excitations to zero in
 
 $$
 \big(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3\big)\big(a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3\big)|0\rangle
-=\big(\zeta_0+\zeta_3\big)|0\rangle=0,
+=\big(\sigma^{\mathrm{met}}_0+\sigma^{\mathrm{met}}_3\big)|0\rangle=0,
 $$
 
 and it has **zero norm**,
 
 $$
 \big\|\big(a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3\big)|0\rangle\big\|^2
-=\zeta_0+\zeta_3=-1+1=0,
+=\sigma^{\mathrm{met}}_0+\sigma^{\mathrm{met}}_3=-1+1=0,
 $$
 
 so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
@@ -203,13 +203,13 @@ $$
 
 which makes the physical field transverse: the polarization sum annihilates every component along $\vec u_k$.
 
-This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\zeta_0=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\zeta$, with $\zeta_0=-1$ and $\zeta_k=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=ict'$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
+This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma^{\mathrm{met}}_0=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma^{\mathrm{met}}$, with $\sigma^{\mathrm{met}}_0=-1$ and $\sigma^{\mathrm{met}}_k=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=ict'$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
 
 The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$ removes the gauge freedom non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.
 
 ## Comparison with the Scalar Field
 
-The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\phi$ of mass $m$ has conjugate momentum $\pi=\partial\phi/\partial t'$, the canonical commutator $[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
+The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\chi^{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\chi^{\mathrm{scl}}/\partial t'$, the canonical commutator $[\chi^{\mathrm{fop}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
 
 $$
 \big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
@@ -248,7 +248,7 @@ The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J
 
 The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$.
 
-Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\zeta=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ leaves the zero-norm combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
+Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\sigma^{\mathrm{met}}_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ leaves the zero-norm combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
 The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
 
@@ -276,7 +276,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |
 | $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$ | Quantized potential, polarization vectors, mode operators |
-| $[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$ | Mode commutator, $\zeta=(-1,+1,+1,+1)$ |
+| $[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)]=\sigma^{\mathrm{met}}_r\delta_{rs}(2\pi)^3\delta^{(3)}$ | Mode commutator, $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ |
 | $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)\lvert\psi\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
 | $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse polarization sum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |

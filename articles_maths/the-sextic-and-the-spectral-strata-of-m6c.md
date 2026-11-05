@@ -176,7 +176,7 @@ $$
 
 It has dimension $30$, and it lies in the simple stratum.
 
-**Proof.** $H^6=I$ with simple spectrum means the eigenvalues are the six distinct sixth roots, so $\chi_H=t^6-1$. Conversely, a matrix with characteristic polynomial $t^6-1$ and simple spectrum has eigenvalues the six sixth roots, hence satisfies $H^6=I$ (it is diagonalizable with those eigenvalues). The fibre over $t^6-1$ is the conjugacy class of $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$, of dimension $30$.
+**Proof.** $H^6=I$ with simple spectrum means the eigenvalues are the six distinct sixth roots, so $\chi_H=t^6-1$. Conversely, a matrix with characteristic polynomial $t^6-1$ and simple spectrum has eigenvalues the six sixth roots, hence satisfies $H^6=I$ (it is diagonalizable with those eigenvalues). The fibre over $t^6-1$ is the conjugacy class of $\operatorname{diag}(\omega_1,\dots,\omega_6)$, of dimension $30$.
 
 **Remark (the six parameters).** The simple stratum has dimension $36$; the root set has dimension $30$. The difference is the six eigenvalues: on $U$ the characteristic map is a submersion onto the six-dimensional space of monic sextics with simple roots, and the root set is the fibre over one point. **The root fixes the spectrum; the stratum forgets it.**
 
@@ -335,7 +335,7 @@ which tends to $A(0)=\lambda I_2+E_{12}$. The cluster projector $P_++P_-=I_2$ is
 
 **Proof.** A repeated eigenvalue gives a nontrivial generalized eigenspace, and there are additional commuting endomorphisms mixing the repeated eigenlines; the centralizer contains the torus and more. The orbit dimension is $36$ minus the centralizer dimension.
 
-**Example.** $H=\operatorname{diag}(1,1,\zeta,\zeta^2,\zeta^3,\zeta^4)$ satisfies $H^6=I_6$ but has a repeated eigenvalue $1$. Its centralizer contains $GL_2$ on the first two coordinates, of dimension four, in addition to the torus on the other four; the orbit is smaller than $30$. The two Lagrange projectors of the eigenvalue $1$ do not exist; the spectral projector onto the $1$-eigenspace is the rank-two projector onto the first two coordinates.
+**Example.** $H=\operatorname{diag}(1,1,\omega,\omega^2,\omega^3,\omega^4)$ satisfies $H^6=I_6$ but has a repeated eigenvalue $1$. Its centralizer contains $GL_2$ on the first two coordinates, of dimension four, in addition to the torus on the other four; the orbit is smaller than $30$. The two Lagrange projectors of the eigenvalue $1$ do not exist; the spectral projector onto the $1$-eigenspace is the rank-two projector onto the first two coordinates.
 
 **Remark (the root set is not closed).** The root set is open in $H^6=I_6$ but not closed in $M_6$: a limit of roots can have a repeated eigenvalue. The boundary is the discriminant intersected with the hypersurface. **The root is a simple-spectrum object; the repeated-root matrices are its degeneration.**
 

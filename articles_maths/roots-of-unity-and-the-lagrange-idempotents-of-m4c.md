@@ -4,7 +4,7 @@
 
 **One element of order four with simple spectrum produces the four idempotents of the frame.** The element is a matrix $H\in M_4(\mathbb{C})$ with $H^4=I$ and four distinct eigenvalues; the idempotents are the Lagrange projectors of its spectrum. They are polynomials in $H$, they are orthogonal and complete, and no second element is needed to produce them. This is the root-first construction of the category $M_4(\mathbb{C})$.
 
-The article states the spectral resolution $H=\sum_k\zeta_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$* to $n=4$.
+The article states the spectral resolution $H=\sum_k\omega_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$* to $n=4$.
 
 The Peirce decomposition that the idempotents produce is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the vectors inside the resulting lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_4(\mathbb{C})$*; the orbit of the root and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The algebra itself is *The Matrix Algebra $M_4(\mathbb{C})$*. No form, no norm and no topology are used.
 
@@ -19,13 +19,13 @@ $$
 Write
 
 $$
-\zeta_k=i^{k-1},\qquad k=1,2,3,4,
+\omega_k=i^{k-1},\qquad k=1,2,3,4,
 $$
 
-so that $\zeta_1=1$, $\zeta_2=i$, $\zeta_3=-1$ and $\zeta_4=-i$. The roots are distinct, and they satisfy
+so that $\omega_1=1$, $\omega_2=i$, $\omega_3=-1$ and $\omega_4=-i$. The roots are distinct, and they satisfy
 
 $$
-\zeta_{k+2}=-\zeta_k,\qquad \zeta_{k+1}=i\zeta_k,\qquad \sum_{k=1}^{4}\zeta_k=0,\qquad \prod_{k=1}^{4}\zeta_k=-1 .
+\omega_{k+2}=-\omega_k,\qquad \omega_{k+1}=i\omega_k,\qquad \sum_{k=1}^{4}\omega_k=0,\qquad \prod_{k=1}^{4}\omega_k=-1 .
 $$
 
 The polynomial factors as
@@ -34,14 +34,14 @@ $$
 x^4-1=(x-1)(x+1)(x-i)(x+i)=(x^2-1)(x^2+1).
 $$
 
-| Root | $\zeta_k$ | Real part | Imaginary part | $\zeta_k^2$ | $\zeta_k^3$ |
+| Root | $\omega_k$ | Real part | Imaginary part | $\omega_k^2$ | $\omega_k^3$ |
 |---|---|---|---|---|---|
-| $\zeta_1$ | $1$ | $1$ | $0$ | $1$ | $1$ |
-| $\zeta_2$ | $i$ | $0$ | $1$ | $-1$ | $-i$ |
-| $\zeta_3$ | $-1$ | $-1$ | $0$ | $1$ | $-1$ |
-| $\zeta_4$ | $-i$ | $0$ | $-1$ | $-1$ | $i$ |
+| $\omega_1$ | $1$ | $1$ | $0$ | $1$ | $1$ |
+| $\omega_2$ | $i$ | $0$ | $1$ | $-1$ | $-i$ |
+| $\omega_3$ | $-1$ | $-1$ | $0$ | $1$ | $-1$ |
+| $\omega_4$ | $-i$ | $0$ | $-1$ | $-1$ | $i$ |
 
-The squaring map $\zeta\mapsto\zeta^2$ sends the four roots onto $\{1,-1\}$, each value twice: $\zeta_1^2=\zeta_3^2=1$ and $\zeta_2^2=\zeta_4^2=-1$. This is the quotient $\mathbb{Z}/4\to\mathbb{Z}/2$ that becomes the chirality in §*The Chirality Involution*. The conjugation $\zeta\mapsto\bar\zeta$ is the inversion $\zeta\mapsto\zeta^{-1}$; it fixes $\zeta_1=1$ and $\zeta_3=-1$ and exchanges $\zeta_2\leftrightarrow\zeta_4$.
+The squaring map $\omega\mapsto\omega^2$ sends the four roots onto $\{1,-1\}$, each value twice: $\omega_1^2=\omega_3^2=1$ and $\omega_2^2=\omega_4^2=-1$. This is the quotient $\mathbb{Z}/4\to\mathbb{Z}/2$ that becomes the chirality in §*The Chirality Involution*. The conjugation $\omega\mapsto\bar\omega$ is the inversion $\omega\mapsto\omega^{-1}$; it fixes $\omega_1=1$ and $\omega_3=-1$ and exchanges $\omega_2\leftrightarrow\omega_4$.
 
 ## The Root
 
@@ -55,12 +55,12 @@ and four distinct eigenvalues. Equivalently, the minimal polynomial of $H$ is $x
 
 **Proposition.** If $H^4=I$ then $H$ is diagonalizable and its eigenvalues lie among the fourth roots of unity. It has simple spectrum if and only if each of the four roots occurs exactly once, if and only if its minimal polynomial is $x^4-1$.
 
-**Proof.** The polynomial $x^4-1$ has the four distinct roots $\zeta_k$ and no repeated factor, so it is square-free. The minimal polynomial of $H$ divides $x^4-1$, hence is square-free. A matrix whose minimal polynomial is square-free is diagonalizable (*The Jordan–Chevalley Decomposition of a Matrix*). Its eigenvalues are roots of $x^4-1$. There are four eigenvalues counted with multiplicity and four roots in all, so simple spectrum is the statement that each root occurs once. The minimal polynomial then has the four distinct roots, hence is $x^4-1$.
+**Proof.** The polynomial $x^4-1$ has the four distinct roots $\omega_k$ and no repeated factor, so it is square-free. The minimal polynomial of $H$ divides $x^4-1$, hence is square-free. A matrix whose minimal polynomial is square-free is diagonalizable (*The Jordan–Chevalley Decomposition of a Matrix*). Its eigenvalues are roots of $x^4-1$. There are four eigenvalues counted with multiplicity and four roots in all, so simple spectrum is the statement that each root occurs once. The minimal polynomial then has the four distinct roots, hence is $x^4-1$.
 
 **Corollary.** A root of order four is invertible, with $H^{-1}=H^3$, and it is not a scalar. Its four eigenspaces
 
 $$
-V_k=\ker(H-\zeta_kI)=\operatorname{im}P_k
+V_k=\ker(H-\omega_kI)=\operatorname{im}P_k
 $$
 
 are lines, and
@@ -73,10 +73,10 @@ $$
 
 ## The Lagrange Projectors
 
-**Definition.** The **Lagrange projector** of $\zeta_k$ is
+**Definition.** The **Lagrange projector** of $\omega_k$ is
 
 $$
-P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=1,2,3,4 .
+P_k=\prod_{l\ne k}\frac{H-\omega_lI}{\omega_k-\omega_l},\qquad k=1,2,3,4 .
 $$
 
 Each factor is a polynomial in $H$, so $P_k$ is a polynomial in $H$ of degree at most three.
@@ -90,40 +90,40 @@ $$
 and they satisfy
 
 $$
-HP_k=P_kH=\zeta_kP_k .
+HP_k=P_kH=\omega_kP_k .
 $$
 
-They are the spectral projectors of $H$. Conversely, a complete orthogonal family $Q_1,\dots,Q_4$ with $H=\sum_k\zeta_kQ_k$ is this family.
+They are the spectral projectors of $H$. Conversely, a complete orthogonal family $Q_1,\dots,Q_4$ with $H=\sum_k\omega_kQ_k$ is this family.
 
 **Proof.** Let $v\in V_m$. Every factor acts on $v$ by a scalar,
 
 $$
-\frac{H-\zeta_lI}{\zeta_k-\zeta_l}v=\frac{\zeta_m-\zeta_l}{\zeta_k-\zeta_l}v ,
+\frac{H-\omega_lI}{\omega_k-\omega_l}v=\frac{\omega_m-\omega_l}{\omega_k-\omega_l}v ,
 $$
 
 so
 
 $$
-P_kv=\prod_{l\ne k}\frac{\zeta_m-\zeta_l}{\zeta_k-\zeta_l}v .
+P_kv=\prod_{l\ne k}\frac{\omega_m-\omega_l}{\omega_k-\omega_l}v .
 $$
 
-If $m=k$ every factor is $1$, and if $m\ne k$ the factor with $l=m$ has numerator $0$. Hence $P_kv=\delta_{km}v$. Therefore $P_k$ is the identity on $V_k$ and $0$ on the other three lines. The three properties follow, and $HP_kv=\zeta_kP_kv$ for every $v$.
+If $m=k$ every factor is $1$, and if $m\ne k$ the factor with $l=m$ has numerator $0$. Hence $P_kv=\delta_{km}v$. Therefore $P_k$ is the identity on $V_k$ and $0$ on the other three lines. The three properties follow, and $HP_kv=\omega_kP_kv$ for every $v$.
 
-For the converse, let $v\in\operatorname{im}Q_m$. Then $Hv=\sum_k\zeta_kQ_kQ_mv=\zeta_mv$, so $\operatorname{im}Q_m\subseteq V_m$. The images of the $Q_m$ are independent and sum to $\mathbb{C}^4$, and the $V_m$ are four lines summing to $\mathbb{C}^4$; hence $\operatorname{im}Q_m=V_m$, and $Q_m$ is the projector onto $V_m$ along the sum of the other lines, which is $P_m$.
+For the converse, let $v\in\operatorname{im}Q_m$. Then $Hv=\sum_k\omega_kQ_kQ_mv=\omega_mv$, so $\operatorname{im}Q_m\subseteq V_m$. The images of the $Q_m$ are independent and sum to $\mathbb{C}^4$, and the $V_m$ are four lines summing to $\mathbb{C}^4$; hence $\operatorname{im}Q_m=V_m$, and $Q_m$ is the projector onto $V_m$ along the sum of the other lines, which is $P_m$.
 
 **Corollary (interpolation).** For every polynomial $f$ of degree at most three,
 
 $$
-f(H)=\sum_{k=1}^{4}f(\zeta_k)P_k .
+f(H)=\sum_{k=1}^{4}f(\omega_k)P_k .
 $$
 
 In particular,
 
 $$
-I=\sum_kP_k,\qquad H=\sum_k\zeta_kP_k,\qquad H^2=\sum_k\zeta_k^2P_k,\qquad H^3=\sum_k\zeta_k^3P_k .
+I=\sum_kP_k,\qquad H=\sum_k\omega_kP_k,\qquad H^2=\sum_k\omega_k^2P_k,\qquad H^3=\sum_k\omega_k^3P_k .
 $$
 
-**Proof.** Both sides are polynomials in $H$ of degree at most three. On $V_m$ the right-hand side is $f(\zeta_m)$, and the left-hand side is $f(H)v=f(\zeta_m)v$. Two polynomials in $H$ that agree on the four lines agree on their sum $\mathbb{C}^4$.
+**Proof.** Both sides are polynomials in $H$ of degree at most three. On $V_m$ the right-hand side is $f(\omega_m)$, and the left-hand side is $f(H)v=f(\omega_m)v$. Two polynomials in $H$ that agree on the four lines agree on their sum $\mathbb{C}^4$.
 
 **Corollary (a basis of $\mathbb{C}[H]$).** The projectors $P_1,\dots,P_4$ are a basis of the commutative algebra $\mathbb{C}[H]$, which is isomorphic to $\mathbb{C}^4$. The map
 
@@ -140,16 +140,16 @@ is an isomorphism $\mathbb{C}[x]/(x^4-1)\to\mathbb{C}^4$, and the matrix of the 
 The Lagrange formula is the discrete Fourier transform of the powers of $H$. Because the four roots are the fourth roots of unity,
 
 $$
-P_k=\frac14\sum_{m=0}^{3}\zeta_k^{-m}H^m,\qquad k=1,2,3,4 .
+P_k=\frac14\sum_{m=0}^{3}\omega_k^{-m}H^m,\qquad k=1,2,3,4 .
 $$
 
 **Proof.** On $V_l$, the right-hand side acts by
 
 $$
-\frac14\sum_{m=0}^{3}\left(\frac{\zeta_l}{\zeta_k}\right)^m .
+\frac14\sum_{m=0}^{3}\left(\frac{\omega_l}{\omega_k}\right)^m .
 $$
 
-The ratio $\zeta_l/\zeta_k$ is a fourth root of unity. It is $1$ exactly when $l=k$, and then the sum is $4/4=1$; otherwise it is a non-trivial fourth root, and the four terms sum to $0$. So the right-hand side is $\delta_{kl}$ on $V_l$, which is $P_k$.
+The ratio $\omega_l/\omega_k$ is a fourth root of unity. It is $1$ exactly when $l=k$, and then the sum is $4/4=1$; otherwise it is a non-trivial fourth root, and the four terms sum to $0$. So the right-hand side is $\delta_{kl}$ on $V_l$, which is $P_k$.
 
 Written in $H$ alone, with $H^0=I$,
 
@@ -175,7 +175,7 @@ The coefficients are the columns of the discrete Fourier matrix of order four. T
 
 **Proposition.** Each $P_k$ has rank $1$ and trace $1$. The projectors depend only on $H$: they are fixed by the polynomial formula, with no choice of basis, no choice of gauge and no second element.
 
-**Proof.** The image of $P_k$ is the line $V_k$, so the rank is $1$. The trace of a projector is its rank, because in a basis adapted to the decomposition $\mathbb{C}^4=\bigoplus_mV_m$ the matrix of $P_k$ is the coordinate matrix $E_{kk}$. The formula involves $H$ and the constants $\zeta_k$ alone.
+**Proof.** The image of $P_k$ is the line $V_k$, so the rank is $1$. The trace of a projector is its rank, because in a basis adapted to the decomposition $\mathbb{C}^4=\bigoplus_mV_m$ the matrix of $P_k$ is the coordinate matrix $E_{kk}$. The formula involves $H$ and the constants $\omega_k$ alone.
 
 **Corollary.** The four projectors are the primitive idempotents of the frame. They are not nilpotents: $P_k^2=P_k\ne0$. The nilpotents $E_{12},E_{23},E_{34}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* are different elements; they square to $0$, they are not polynomials in $H$, and they carry the gauge.
 
@@ -187,7 +187,7 @@ $$
 H_0=\operatorname{diag}(1,i,-1,-i).
 $$
 
-It satisfies $H_0^4=I$ and has the four roots on the diagonal in the order $\zeta_1,\zeta_2,\zeta_3,\zeta_4$. The Lagrange formula returns the coordinate matrix units,
+It satisfies $H_0^4=I$ and has the four roots on the diagonal in the order $\omega_1,\omega_2,\omega_3,\omega_4$. The Lagrange formula returns the coordinate matrix units,
 
 $$
 P_k=E_{kk},\qquad k=1,2,3,4,
@@ -302,13 +302,13 @@ and their sum is $I$. The example shows that the construction depends on $H$ and
 **Theorem.** The root is the weighted sum of its projectors:
 
 $$
-H=\sum_{k=1}^{4}\zeta_kP_k=P_1+iP_2-P_3-iP_4,
+H=\sum_{k=1}^{4}\omega_kP_k=P_1+iP_2-P_3-iP_4,
 $$
 
 and for every integer $m\ge1$,
 
 $$
-H^m=\sum_{k=1}^{4}\zeta_k^mP_k .
+H^m=\sum_{k=1}^{4}\omega_k^mP_k .
 $$
 
 In particular,
@@ -321,7 +321,7 @@ $$
 
 **Proof.** The first identity is the interpolation corollary applied to the polynomial $x$; the second is the same corollary applied to $x^m$. The four displayed cases are $m=0,1,2,3$.
 
-**Corollary.** The four elements $I,H,H^2,H^3$ are a basis of $\mathbb{C}[H]$, and the four $P_k$ are the Lagrange basis for the evaluations $f\mapsto f(\zeta_k)$ at the four roots. The matrix of the change of basis is the Vandermonde matrix of the fourth roots.
+**Corollary.** The four elements $I,H,H^2,H^3$ are a basis of $\mathbb{C}[H]$, and the four $P_k$ are the Lagrange basis for the evaluations $f\mapsto f(\omega_k)$ at the four roots. The matrix of the change of basis is the Vandermonde matrix of the fourth roots.
 
 ### The Grading
 
@@ -337,7 +337,7 @@ Because $H^4=I$, the fourth power of $\operatorname{Ad}_H$ is the identity.
 **Proposition.** For $X\in\mathcal{A}_{kl}=P_kM_4P_l$,
 
 $$
-\operatorname{Ad}_H(X)=\zeta_k\zeta_l^{-1}X=\zeta_{k-l}X .
+\operatorname{Ad}_H(X)=\omega_k\omega_l^{-1}X=\omega_{k-l}X .
 $$
 
 Hence $\operatorname{Ad}_H$ is diagonalizable with eigenvalues among the fourth roots of unity, and
@@ -353,7 +353,7 @@ $$
 \mathcal{M}^{(r)}\mathcal{M}^{(s)}\subseteq\mathcal{M}^{(r+s)} .
 $$
 
-**Proof.** On $\mathcal{A}_{kl}$, $HXH^{-1}=\zeta_kX\zeta_l^{-1}=\zeta_k\zeta_l^{-1}X$. The sum over the pairs $k-l\equiv r$ is direct because the corners $\mathcal{A}_{kl}$ are independent. If $X\in\mathcal{M}^{(r)}$ and $Y\in\mathcal{M}^{(s)}$, then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$.
+**Proof.** On $\mathcal{A}_{kl}$, $HXH^{-1}=\omega_kX\omega_l^{-1}=\omega_k\omega_l^{-1}X$. The sum over the pairs $k-l\equiv r$ is direct because the corners $\mathcal{A}_{kl}$ are independent. If $X\in\mathcal{M}^{(r)}$ and $Y\in\mathcal{M}^{(s)}$, then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\omega^{r+s}XY$.
 
 **The graded pieces.** The four pieces have equal dimension. The pairs $(k,l)$ with $k-l\equiv r$ are, for each $r$, the four pairs obtained by translating both indices:
 
@@ -396,7 +396,7 @@ $$
 \Gamma=P_1-P_2+P_3-P_4 .
 $$
 
-**Proof.** $\Gamma^2=H^4=I$. On $V_k$, $\Gamma$ acts by $\zeta_k^2$, which is $+1$ for $k=1,3$ and $-1$ for $k=2,4$. The trace is $1-1+1-1=0$, and each eigenspace is the sum of two spectral lines, hence has dimension $2$. The displayed formula is the case $m=2$ of the spectral resolution.
+**Proof.** $\Gamma^2=H^4=I$. On $V_k$, $\Gamma$ acts by $\omega_k^2$, which is $+1$ for $k=1,3$ and $-1$ for $k=2,4$. The trace is $1-1+1-1=0$, and each eigenspace is the sum of two spectral lines, hence has dimension $2$. The displayed formula is the case $m=2$ of the spectral resolution.
 
 The two eigenspaces
 
@@ -477,19 +477,19 @@ the decomposition of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\ma
 A root $H$ of order four with simple spectrum is diagonalizable with the four roots of unity $1,i,-1,-i$ as eigenvalues, and the Lagrange polynomials in $H$ produce four primitive orthogonal idempotents $P_k$, complete and summing to $I$, with
 
 $$
-H=\sum_{k=1}^{4}\zeta_kP_k,\qquad \zeta_k=i^{k-1}.
+H=\sum_{k=1}^{4}\omega_kP_k,\qquad \omega_k=i^{k-1}.
 $$
 
 The projectors are the spectral projectors onto the four spectral lines; they are polynomials in $H$ of degree at most three, with the explicit Fourier form
 
 $$
-P_k=\frac14\sum_{m=0}^{3}\zeta_k^{-m}H^m .
+P_k=\frac14\sum_{m=0}^{3}\omega_k^{-m}H^m .
 $$
 
 Conjugation by $H$ grades the algebra by $\mathbb{Z}/4$, with four graded pieces of dimension four; the even part is the centraliser of $\Gamma=H^2$, of dimension eight, and the odd part is the mass block. The involution $\Gamma=H^2$ is the chirality, with the $2+2$ split of the carrier. The root set is $PGL_4/T$, of complex dimension $12$; the gauge contributes three, and the frame modulo scale has dimension $15$. At $n=2$ the construction is the biquaternion root of $+1$, and the old second root is a point of the gauge, not a second primitive.
 
 $$
-\boxed{\ \text{One root } H \text{ of order four with simple spectrum produces all four idempotents, and } H=\sum_k\zeta_kP_k. \ }
+\boxed{\ \text{One root } H \text{ of order four with simple spectrum produces all four idempotents, and } H=\sum_k\omega_kP_k. \ }
 $$
 
 | Quantity | Value for $M_4(\mathbb{C})$ |
@@ -507,11 +507,11 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\zeta_k=i^{k-1}$ | the four fourth roots of unity, $k=1,2,3,4$ |
+| $\omega_k=i^{k-1}$ | the four fourth roots of unity, $k=1,2,3,4$ |
 | $H$ | a root of order four with simple spectrum |
 | $H_0=\operatorname{diag}(1,i,-1,-i)$ | the standard root |
-| $V_k=\ker(H-\zeta_kI)$ | the spectral line of $\zeta_k$ |
-| $P_k$ | the Lagrange projector of $\zeta_k$, $\operatorname{rank}1$, $\operatorname{tr}1$ |
+| $V_k=\ker(H-\omega_kI)$ | the spectral line of $\omega_k$ |
+| $P_k$ | the Lagrange projector of $\omega_k$, $\operatorname{rank}1$, $\operatorname{tr}1$ |
 | $\Gamma=H^2$ | the chirality involution |
 | $\mathcal{A}_{kl}=P_kM_4P_l$ | the Peirce corner, a line |
 | $\mathcal{M}^{(r)}$ | the graded piece of degree $r\in\mathbb{Z}/4$ |

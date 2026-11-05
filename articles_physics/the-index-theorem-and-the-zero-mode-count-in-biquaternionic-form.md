@@ -200,10 +200,10 @@ $$
 
 since the $\hat A$-genus of a surface is $1$. The count of zero modes is therefore $\lvert n\rvert$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a charge-$n$ background binds one fermion mode per unit charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article the field equation $\tilde D\psi=0$ separates, and for $n>0$ the $R$ solutions are the lowest monopole harmonics of the field,
+The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\theta^{\mathrm{azm}}$ of the Hopf article the field equation $\tilde D\psi=0$ separates, and for $n>0$ the $R$ solutions are the lowest monopole harmonics of the field,
 
 $$
-\psi_n^{(m)}=f_n(\theta)\,\exp(im\phi),
+\psi_n^{(m)}=f_n(\theta)\,\exp(im\theta^{\mathrm{azm}}),
 \qquad
 m=-j,\dots,j,
 \qquad

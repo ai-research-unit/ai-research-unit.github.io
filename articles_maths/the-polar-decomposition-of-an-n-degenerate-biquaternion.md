@@ -8,7 +8,7 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of an N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is $*$-unitary, and the pair refines into the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of an N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is $*$-unitary, and the pair refines into the four-factor word $\tilde Q=r\varkappa^{\mathrm{crd}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
 
 This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\Rho\tilde U$ with $\Rho\neq0$ does not exist, and neither does the four-factor word, whose product has norm $\Rho^{2}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not $*$-unitary.
 
@@ -29,13 +29,13 @@ so $\Rho=0$. The modulus–unit decomposition requires $\Rho\neq0$, since it div
 The four-factor word fails for the same reason, and the failure is visible in the norm. Its factors are constrained by
 
 $$
-r=\lvert\Rho\rvert>0,\qquad \lvert\zeta\rvert=1,\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
+r=\lvert\Rho\rvert>0,\qquad \lvert\varkappa^{\mathrm{crd}}\rvert=1,\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
 $$
 
 and the norm is multiplicative, so
 
 $$
-\bigl\langle r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr\rangle_{\natural}=r^{2}\zeta^{2}\langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde u_{\mathrm r}\rangle_{\natural}=\Rho^{2}=0 .
+\bigl\langle r\varkappa^{\mathrm{crd}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr\rangle_{\natural}=r^{2}{\varkappa^{\mathrm{crd}}}^{2}\langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde u_{\mathrm r}\rangle_{\natural}=\Rho^{2}=0 .
 $$
 
 A product of norm zero cannot equal a nonzero element. At the origin the failure is stronger: $\Rho=0$ forces $r=0$, which contradicts $r>0$.

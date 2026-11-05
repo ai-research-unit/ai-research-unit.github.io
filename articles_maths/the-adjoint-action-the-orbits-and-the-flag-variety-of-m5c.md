@@ -14,7 +14,7 @@ $$
 \dim(GL_5\cdot A)=25-\dim Z(A),
 $$
 
-where $Z(A)$ is the centralizer. The **root orbit** is the conjugacy class of the root $H=\sum_k\zeta_kP_k$; its centralizer is the torus $T$, and its dimension is
+where $Z(A)$ is the centralizer. The **root orbit** is the conjugacy class of the root $H=\sum_k\omega_kP_k$; its centralizer is the torus $T$, and its dimension is
 
 $$
 25-5=20 .
@@ -35,7 +35,7 @@ $$
 with fibre the unipotent radical $B/T$; the splitting data of the root is exactly the fibre. The Peirce decomposition is the weight decomposition of the adjoint action of the root,
 
 $$
-\operatorname{ad}_H(E_{kl})=(\zeta_k-\zeta_l)E_{kl},
+\operatorname{ad}_H(E_{kl})=(\omega_k-\omega_l)E_{kl},
 $$
 
 and the simple nilpotents $E_{k,k+1}$ are the simple root vectors.
@@ -98,13 +98,13 @@ $$
 \mathcal{O}_{\mathrm{root}}=GL_5\cdot H=\{gHg^{-1}:g\in GL_5\},
 $$
 
-of dimension $20$; in $PGL_5$ it is $PGL_5/T$, also of dimension $20$. It is the set of matrices with characteristic polynomial $\prod_k(t-\zeta_k)$ and five distinct eigenvalues.
+of dimension $20$; in $PGL_5$ it is $PGL_5/T$, also of dimension $20$. It is the set of matrices with characteristic polynomial $\prod_k(t-\omega_k)$ and five distinct eigenvalues.
 
 **Proof.** The conjugates of $H$ have the same characteristic polynomial and the same five distinct eigenvalues. Conversely, two matrices with the same five distinct eigenvalues are diagonalizable with the same diagonal form, hence conjugate. The centralizer is $T$, of dimension $5$, so the orbit has dimension $20$; in $PGL_5$ the stabilizer is $T/\mathbb{C}^\times$, of dimension $4$, and the orbit has dimension $24-4=20$.
 
 **Corollary.** The root orbit is a single conjugacy class, not the whole regular semisimple locus. The regular semisimple locus is the union of the conjugacy classes of matrices with five distinct eigenvalues, of dimension $25$.
 
-**Proof.** The orbit fixes the five eigenvalues $\zeta_k$; a different choice of five distinct eigenvalues gives a different orbit. The union over all choices is the open locus of distinct eigenvalues, of dimension $25$.
+**Proof.** The orbit fixes the five eigenvalues $\omega_k$; a different choice of five distinct eigenvalues gives a different orbit. The union over all choices is the open locus of distinct eigenvalues, of dimension $25$.
 
 ### The Stabilizer $T$
 
@@ -127,15 +127,15 @@ of dimension $5$ in $GL_5$ and $4$ in $PGL_5$. The Lie algebra of the stabilizer
 **Theorem.** The adjoint action of $H$ on $\mathfrak{gl}_5$ is diagonal in the Peirce basis:
 
 $$
-\operatorname{ad}_H(E_{kl})=(\zeta_k-\zeta_l)E_{kl},
+\operatorname{ad}_H(E_{kl})=(\omega_k-\omega_l)E_{kl},
 \qquad k,l=1,\dots,5 .
 $$
 
-The Peirce lines $A_{kl}$ are the eigenspaces of $\operatorname{ad}_H$ with eigenvalue $\zeta_k-\zeta_l$; the zero eigenspace is the diagonal Cartan, of dimension $5$; the nonzero eigenspaces are the off-diagonal lines, of dimension $20$.
+The Peirce lines $A_{kl}$ are the eigenspaces of $\operatorname{ad}_H$ with eigenvalue $\omega_k-\omega_l$; the zero eigenspace is the diagonal Cartan, of dimension $5$; the nonzero eigenspaces are the off-diagonal lines, of dimension $20$.
 
-**Proof.** $[H,E_{kl}]=(\zeta_k-\zeta_l)E_{kl}$ because $H$ is diagonal with entries $\zeta_k$. The eigenvalue zero occurs exactly when $k=l$, giving the diagonal; the other $20$ lines are the nonzero weights.
+**Proof.** $[H,E_{kl}]=(\omega_k-\omega_l)E_{kl}$ because $H$ is diagonal with entries $\omega_k$. The eigenvalue zero occurs exactly when $k=l$, giving the diagonal; the other $20$ lines are the nonzero weights.
 
-**Corollary.** The Peirce decomposition is the weight decomposition of the adjoint representation of the torus; the simple nilpotents $E_{k,k+1}$ have the simple root weights $\zeta_k-\zeta_{k+1}$. The root orbit is the orbit of the sum of the idempotents, and the Peirce lines are its weight spaces.
+**Corollary.** The Peirce decomposition is the weight decomposition of the adjoint representation of the torus; the simple nilpotents $E_{k,k+1}$ have the simple root weights $\omega_k-\omega_{k+1}$. The root orbit is the orbit of the sum of the idempotents, and the Peirce lines are its weight spaces.
 
 **Proof.** The weights of the adjoint representation are the differences of the eigenvalues; the simple roots are the differences of consecutive eigenvalues; the simple nilpotents are the corresponding weight vectors.
 

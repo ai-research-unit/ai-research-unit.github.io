@@ -314,8 +314,8 @@ The construction's most distinctive feature is that the metric is recovered from
 
 **The distance formula.** For a spectral triple with a commutative algebra the distance between two states is
 $$
-d(\varphi,\omega)
-=\sup_{a\in\mathcal{A}}\bigl\{\lvert\varphi(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\bigr\},
+d(\chi^{\mathrm{alt}},\omega)
+=\sup_{a\in\mathcal{A}}\bigl\{\lvert\chi^{\mathrm{alt}}(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\bigr\},
 $$
 and for $\mathcal{A}=C^\infty(M)$ with $D$ the Dirac operator this reproduces the geodesic distance. The metric is therefore an *output* of the operator and the algebra, not an input. This is standard (Connes 1995; Connes and Marcolli 2008).
 
@@ -473,7 +473,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | Biquaternion gradient; symbol the element $\sum_\mu\xi_\mu e_\mu$ of quaternionic norm $\lvert\xi\rvert^2$ |
 | $D_F:\tilde\Psi\mapsto m\overline{\tilde\Psi}$ | The mass, the finite Dirac operator; antilinear, $D_F^2=\lvert m\rvert^2e_t$, $\{\chi,D_F\}=0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real sector, the elements with real coefficients; the fixed set of the coefficient conjugation, and the set on which the mass commutes with the left action |
-| $d(\varphi,\omega)=\sup_{a\in\mathcal{A}}\{\lvert\varphi(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
+| $d(\chi^{\mathrm{alt}},\omega)=\sup_{a\in\mathcal{A}}\{\lvert\chi^{\mathrm{alt}}(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
 | $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
 | $D_A=D+\sum a_i[D,b_i]$ | Inner fluctuation; the gauge field |
 | $\mathrm{Tr}\,f(D_A/\Lambda)$ | Spectral action |

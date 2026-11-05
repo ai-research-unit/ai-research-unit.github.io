@@ -34,7 +34,7 @@ $$
 
 **Definition.** The **radical** of the form is $N_{\omega} = \{x : [x,y]_{\omega} = 0 \text{ for every } y\} = \{x : \omega(y^{\dagger}x) = 0 \text{ for every } y\}$.
 
-**Proposition.** $N_{\omega}$ is a left ideal, $\overline{N_{\omega}} = N_{\omega}$ for the positive states and the involution flips the two radicals: $N_{\omega}^{\dagger}$ is a right ideal. For a positive state the Cauchy–Schwarz inequality of an inner product holds and $N_{\omega} = \{x : \omega(x^{\dagger}x) = 0\}$.
+**Proposition.** $N_{\omega}$ is a left ideal, $\overline{N_{\omega}} = N_{\omega}$ for the positive states and the involution flips the two radicals: $N_\omega^{\dagger}$ is a right ideal. For a positive state the Cauchy–Schwarz inequality of an inner product holds and $N_{\omega} = \{x : \omega(x^{\dagger}x) = 0\}$.
 
 **Proof.** The ideal property is the invariance of the form; the two descriptions of the radical for a positive state are the standard consequence of the Cauchy–Schwarz inequality; for an indefinite form the inequality fails and the two descriptions differ.
 

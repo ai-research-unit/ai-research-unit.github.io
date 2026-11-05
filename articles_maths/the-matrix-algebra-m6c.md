@@ -314,7 +314,7 @@ $$
 \chi_\rho(t)=t^6-1 .
 $$
 
-**Proof.** $\rho$ is a permutation matrix with no fixed point, so its trace is zero and its determinant is the sign of the $6$-cycle, which is $(-1)^5=-1$. Its eigenvalues are the six sixth roots of unity, each once, so the characteristic polynomial is $\prod_k(t-\zeta_k)=t^6-1$.
+**Proof.** $\rho$ is a permutation matrix with no fixed point, so its trace is zero and its determinant is the sign of the $6$-cycle, which is $(-1)^5=-1$. Its eigenvalues are the six sixth roots of unity, each once, so the characteristic polynomial is $\prod_k(t-\omega_k)=t^6-1$.
 
 **Remark.** The cyclic shift is a root in the sense of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*: $\rho^6=I_6$ with simple spectrum. The nilpotent $N$ is the other extreme: $N^6=0$ with a single eigenvalue. The two examples are the two ends of the Jordan classification, and both have trace zero.
 

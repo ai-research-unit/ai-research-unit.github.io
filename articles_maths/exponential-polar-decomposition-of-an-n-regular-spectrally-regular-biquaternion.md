@@ -473,7 +473,7 @@ so the commutator is $-2\vec Q\times\overline{\vec Q}$.
 **Theorem (the normal dichotomy).** For $\tilde Q\in\Sigma_{11}$ with word as above, the following are equivalent.
 
 1. $\tilde Q$ is normal, $[\tilde Q,\tilde Q^*]=0$.
-2. $\vec Q\times\overline{\vec Q}=0$, that is, $\vec Q=\zeta\vec u$ with $\zeta\in\mathbb{C}$ and $\vec u$ a real unit vector.
+2. $\vec Q\times\overline{\vec Q}=0$, that is, $\vec Q=\omega\vec u$ with $\omega\in\mathbb{C}$ and $\vec u$ a real unit vector.
 3. The two polar factors $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ commute with $\tilde Q$.
 4. The two axes are parallel or antiparallel, or one of the two angles vanishes.
 5. The word is a single exponential.
@@ -516,7 +516,7 @@ For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\
 
 The display is the **amalgamation** of the four factors into one exponential. The complex angle is $\frac{\theta+i\psi}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.
 
-**Remark (the axes in the normal case).** The common axis is $\pm i\vec\Xi$. Since $\vec\Xi=-i\vec Q/B$ and $\vec Q=\zeta\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.
+**Remark (the axes in the normal case).** The common axis is $\pm i\vec\Xi$. Since $\vec\Xi=-i\vec Q/B$ and $\vec Q=\omega\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.
 
 ### The Non-Normal Case
 
@@ -576,7 +576,7 @@ The spectrum and the eigenprojectors together determine the element. The polar w
 
 The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a $*$-unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.
 
-**Remark (the two decompositions are transverse).** The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\zeta\vec u$ with $Q_t,\zeta\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.
+**Remark (the two decompositions are transverse).** The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\omega\vec u$ with $Q_t,\omega\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.
 
 ## Existence and Uniqueness
 
@@ -802,16 +802,16 @@ The two cones meet at $\Sigma_{00}$, the nilpotent stratum. The two walls behave
 On the null cone the modulus vanishes and no unit factor exists. A nonzero element of the cone is a zero divisor of rank one. As an element of the sector approaches the cone with $B^2$ bounded away from zero, the rapidity diverges and the scale collapses. The standard family is
 
 $$
-\tilde Q(\psi)=R e^{-\psi/2}\,\zeta\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
+\tilde Q(\psi)=R e^{-\psi/2}\,\omega\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
 \qquad
 \psi>0,
 $$
 
-with $R>0$, $|\zeta|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\psi/2}$, and its word has rapidity $\psi$. The limit is
+with $R>0$, $|\omega|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\psi/2}$, and its word has rapidity $\psi$. The limit is
 
 $$
 \tilde Q(\psi)\longrightarrow
-\frac{R\zeta}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
+\frac{R\omega}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 \qquad
 \psi\to\infty,
 $$

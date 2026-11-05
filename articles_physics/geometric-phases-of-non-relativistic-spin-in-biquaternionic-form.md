@@ -41,17 +41,17 @@ The dynamical phase is not what this article is about. It is removed by a standa
 
 ### The Aharonov–Anandan Phase
 
-Let $|\psi(t')\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\psi(T)\rangle = \exp(i\phi_{\mathrm{tot}})|\psi(0)\rangle$ for some real $\phi_{\mathrm{tot}}$. Define
+Let $|\psi(t')\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\psi(T)\rangle = \exp(i\theta^{\mathrm{pha}}_{\mathrm{tot}})|\psi(0)\rangle$ for some real $\theta^{\mathrm{pha}}_{\mathrm{tot}}$. Define
 
 $$
-\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\psi(t')|\tilde{H}(t')|\psi(t')\rangle\,dt' .
+\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\psi(t')|\tilde{H}(t')|\psi(t')\rangle\,dt' .
 $$
 
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the trace:
 
 $$
 \langle\tilde{H}\rangle = \frac{\langle\tilde{Ϛ},\tilde H\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})}{\operatorname{Tr}(\tilde{Ϛ})}, \qquad
-\phi_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\psi(0)^\dagger\psi(T)) .
+\theta^{\mathrm{pha}}_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\psi(0)^\dagger\psi(T)) .
 $$
 
 The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde H\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.
@@ -116,7 +116,7 @@ $$
 \boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$
 
-so the total phase is $\phi_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
+so the total phase is $\theta^{\mathrm{pha}}_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
 
 $$
 \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'
@@ -258,7 +258,7 @@ $$
 
 one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.
 
-The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
+The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
 
 $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta^{\mathrm{sol}}}{2},
@@ -284,7 +284,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\psi$ | Spinor; carries the geometric phase |
-| $\gamma_{AA} = \phi_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt'$ | Aharonov–Anandan geometric phase |
+| $\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt'$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |
 | $\gamma^{\mathrm{geo}} = -\tfrac12\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
 | $\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Unsigned solid angle of a latitude cap |

@@ -468,13 +468,13 @@ $$
 $$
 and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\psi\mapsto\tilde{\nabla}^{\natural}\psi$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $\tilde{\nabla}^{\natural}_\kappa\psi_0$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
-**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\phi=\exp(i(\vec k\cdot(x\vec e_x+y\vec e_y+z\vec e_z)-\omega t'))$, and the field is read off by differentiating it. In the coordinate $Q_t=ict'$ the time derivative is $\partial\phi/\partial Q_t=-\omega\phi$ and the three spatial ones are $\partial_k\phi=ik_k\phi$, so
+**Why the elementary field is null.** For the elementary case the potential is a plane wave, $\chi^{\mathrm{scl}}=\exp(i(\vec k\cdot(x\vec e_x+y\vec e_y+z\vec e_z)-\omega t'))$, and the field is read off by differentiating it. In the coordinate $Q_t=ict'$ the time derivative is $\partial\chi^{\mathrm{scl}}/\partial Q_t=-\omega\chi^{\mathrm{scl}}$ and the three spatial ones are $\partial_k\chi^{\mathrm{scl}}=ik_k\chi^{\mathrm{scl}}$, so
 $$
-\tilde{\nabla}^{\natural}_\kappa\,\phi = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\phi ,
+\tilde{\nabla}^{\natural}_\kappa\,\chi^{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\chi^{\mathrm{scl}} ,
 $$
 and its quaternion norm is the shifted symbol of the operator,
 $$
-\left\langle\tilde{\nabla}^{\natural}_\kappa\,\phi\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k\|^2 .
+\left\langle\tilde{\nabla}^{\natural}_\kappa\,\chi^{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k\|^2 .
 $$
 The two lines are one statement in two languages: the norm of the field vanishes exactly when the potential solves the shifted scalar equation, so the field is a zero divisor on the shifted cone, as the massless plane-wave fields of the preceding subsection are on the light cone. The zero-divisor cone of the algebra is the light cone, and the shifted cone is the norm-zero set of the shifted operator. The source normalises its representatives and records separate norm and pseudonorm values for them; the corpus keeps the invariant statement, that the element is null, and the dictionary between the source's mass $m$ and the corpus shift $\kappa$ — $\kappa = -im$, so that the source's imaginary $m$ is a real $\kappa$ — is the one recorded in the d'Alembertian companion.
 
@@ -650,17 +650,17 @@ The four directions are the four the algebra distinguishes. The scalar potential
 **The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to the central imaginary $i$ — a coupling that changes the value of the field, not the minimal coupling of the companion article, which multiplies by a four-vector direction. Write $\vec x:=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ for the position vector. For a time-harmonic field the pseudoscalar-potential equation reduces to
 
 $$
-\bigl(D + \varphi(\vec x)I + M\bigr)f(\vec x) = 0,
+\bigl(D + \chi^{\mathrm{scl}}(\vec x)I + M\bigr)f(\vec x) = 0,
 $$
 
-where $\varphi$ is the potential, $I$ the identity of the algebra, and $M$ the constant frequency–mass shift; the only position dependence in the whole operator is the scalar coefficient $\varphi(\vec x)$. That is exactly the corpus's shifted operator $D_\alpha = D + M_\alpha$ of *Biquaternion Regular Functions*, with the parameter no longer a constant but a function of position. The pseudoscalar-potential Dirac equation is therefore a shifted-operator equation, and the shift is the potential.
+where $\chi^{\mathrm{scl}}$ is the potential, $I$ the identity of the algebra, and $M$ the constant frequency–mass shift; the only position dependence in the whole operator is the scalar coefficient $\chi^{\mathrm{scl}}(\vec x)$. That is exactly the corpus's shifted operator $D_\alpha = D + M_\alpha$ of *Biquaternion Regular Functions*, with the parameter no longer a constant but a function of position. The pseudoscalar-potential Dirac equation is therefore a shifted-operator equation, and the shift is the potential.
 
 **The splitting.** The reduction is the monograph's Theorem 15. Let the constant biquaternion $\omega$ carry the frequency and the mass, so that $\omega^2 = \beta^2$, and suppose $\omega^2$ is not a zero divisor. Then the pseudoscalar equation is equivalent to a **pair** of scalar-coefficient equations,
 
 $$
-\bigl(D + (\varphi(\vec x) + \beta)I\bigr)f_+ = 0,
+\bigl(D + (\chi^{\mathrm{scl}}(\vec x) + \beta)I\bigr)f_+ = 0,
 \qquad
-\bigl(D + (\varphi(\vec x) - \beta)I\bigr)f_- = 0,
+\bigl(D + (\chi^{\mathrm{scl}}(\vec x) - \beta)I\bigr)f_- = 0,
 $$
 
 the two parts $f_\pm$ being the images of $f$ under the two complementary projections that the shifted-operator theory supplies, multiplying on the right. Each of the two is an equation of the form $(D + \alpha(\vec x))u = 0$ with a **scalar** coefficient. That equation is the subject of the monograph's §4.1.5, and the corpus already carries its solution: the **zero-divisor device** recorded in *Maxwell's Equations in Chiral Media*, in which a solution of the eikonal equation $(\nabla\chi)^2 = \alpha^2$ conjugates $D + \alpha$ into $D + \mathcal{Q}_+$ with $\mathcal{Q}_+ = \nabla\chi$ a zero divisor, and the solutions are built from the exponentials $\exp(\pm i\Theta)$ of the accumulated phase and analytic transverse functions. The chain therefore closes inside the corpus: pseudoscalar-potential Dirac equation $\to$ shifted operator with a scalar coefficient $\to$ eikonal conjugation by a zero divisor $\to$ explicit solutions. The exceptional case, $\omega^2$ a zero divisor (an isotropic $\omega$), is separate; the monograph handles it with a one-variable ansatz, because the two projections degenerate there.
@@ -825,7 +825,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\epsilon = \exp(2G)$, $\vec{\nu} = \mathrm{grad}\,G$ | The Dirac potential $g=dG/dx_1$ read as the inhomogeneity of a static Maxwell medium |
 | $k = \omega\sqrt{\epsilon\mu}$ | Maxwell wave number; the Dirac–Maxwell correspondence holds iff $k^2=\alpha^2$, equivalently $E^2=\hbar^2\omega^2+m^2c^4$ |
 | $D_{3,\alpha}$ | The shifted equation for the time-harmonic amplitude, $D_3f+f\alpha=0$ at a constant $\alpha$; the source writes $D_{3,\alpha}=D_3+M_\alpha$ |
-| $\varphi$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
+| $\chi^{\mathrm{scl}}$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
 | $\tfrac12(e_t\pm\alpha/\sqrt{\alpha^2})$ | The two complementary projections of the harmonic field, multiplying on the right; they split it into the two signs of the frequency, and in the source's reading the two helicities |
 | $K_\omega$ | The Cauchy-type operator of the amplitude equation; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$ hold for it |
 | $\tilde{P}/\hbar$ | Wave biquaternion |

@@ -255,14 +255,14 @@ The Hermitian factor is $H_\epsilon=\operatorname{diag}(0,\log\epsilon,\log\epsi
 
 ## The Root, the Frame and the Gauge
 
-**The root.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\zeta_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the exponential polar decomposition is
+**The root.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the exponential polar decomposition is
 
 $$
 H=e^{iK},\qquad
 K=\frac{2\pi}{3}\big(P_2+2P_3\big),
 $$
 
-where $P_k$ is the projector for $\zeta_k$, with $\zeta_1=1$. The Hermitian factor is $I$ and the Hermitian exponent is $0$. For a non-normal root the Hermitian factor is $P=(H^{*}H)^{1/2}\neq I$ and the phase factor is the $*$-unitary $(H^{*}H)^{-1/2}H$; the root is not $*$-unitary. The idempotents $P_k$ themselves are never $*$-unitary.
+where $P_k$ is the projector for $\omega_k$, with $\omega_1=1$. The Hermitian factor is $I$ and the Hermitian exponent is $0$. For a non-normal root the Hermitian factor is $P=(H^{*}H)^{1/2}\neq I$ and the phase factor is the $*$-unitary $(H^{*}H)^{-1/2}H$; the root is not $*$-unitary. The idempotents $P_k$ themselves are never $*$-unitary.
 
 **The frame.** For a frame $S\in GL_3$ the exponential polar decomposition separates the phases from the stretching:
 

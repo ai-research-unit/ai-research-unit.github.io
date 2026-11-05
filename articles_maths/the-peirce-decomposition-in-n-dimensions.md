@@ -96,21 +96,21 @@ The array is not symmetric: $A_{kl}$ and $A_{lk}$ are different lines, exchanged
 
 ## The Family from a Root of $1$
 
-**The root.** Let $H\in M_{n}(\mathbb{C})$ satisfy $H^{n}=I$ and have $n$ distinct eigenvalues. Since $x^{n}-1$ has the distinct roots $\zeta^{0},\dots,\zeta^{n-1}$, with $\zeta=e^{2\pi i/n}$, the eigenvalues of $H$ are those roots, each once. Write
+**The root.** Let $H\in M_{n}(\mathbb{C})$ satisfy $H^{n}=I$ and have $n$ distinct eigenvalues. Since $x^{n}-1$ has the distinct roots $\omega^{0},\dots,\omega^{n-1}$, with $\omega=e^{2\pi i/n}$, the eigenvalues of $H$ are those roots, each once. Write
 
 $$
-P_{k}=\frac{1}{n}\sum_{j=0}^{n-1}\zeta^{-(k-1)j}H^{j},\qquad k=1,\dots,n .
+P_{k}=\frac{1}{n}\sum_{j=0}^{n-1}\omega^{-(k-1)j}H^{j},\qquad k=1,\dots,n .
 $$
 
 **Proposition.** The $P_{k}$ are idempotent, orthogonal and complete, each of rank one, and
 
 $$
-H=\sum_{k=1}^{n}\zeta^{k-1}P_{k}.
+H=\sum_{k=1}^{n}\omega^{k-1}P_{k}.
 $$
 
-**Proof.** On the eigenvalue $\zeta^{m}$ the polynomial $\frac1n\sum_{j}\zeta^{-(k-1)j}x^{j}$ takes the value $\delta_{m,k-1}$, so $P_{k}$ is the spectral projector of the eigenvalue $\zeta^{k-1}$. Distinct eigenvalues give orthogonal projectors, and their sum is the identity. The spectrum is simple, so each rank is one. The reconstruction of $H$ is the spectral theorem.
+**Proof.** On the eigenvalue $\omega^{m}$ the polynomial $\frac1n\sum_{j}\omega^{-(k-1)j}x^{j}$ takes the value $\delta_{m,k-1}$, so $P_{k}$ is the spectral projector of the eigenvalue $\omega^{k-1}$. Distinct eigenvalues give orthogonal projectors, and their sum is the identity. The spectrum is simple, so each rank is one. The reconstruction of $H$ is the spectral theorem.
 
-The family is then the spectral family of $H$. In a basis $v_{1},\dots,v_{n}$ with $Hv_{k}=\zeta^{k-1}v_{k}$ and $\ell_{l}(v_{k})=\delta_{kl}$,
+The family is then the spectral family of $H$. In a basis $v_{1},\dots,v_{n}$ with $Hv_{k}=\omega^{k-1}v_{k}$ and $\ell_{l}(v_{k})=\delta_{kl}$,
 
 $$
 P_{k}=v_{k}\ell_{k},\qquad A_{kl}=\mathbb{C}\,v_{k}\ell_{l}.
@@ -118,7 +118,7 @@ $$
 
 So the Peirce line $A_{kl}$ is the space of maps that send the $l$-th eigenline into the $k$-th and vanish on the other eigenlines, and the decomposition is the algebra's copy of the spectral decomposition of $H$.
 
-**Without simple spectrum.** If $H^{n}=I$ but an eigenvalue is repeated, the same formula gives a complete orthogonal family, but $\operatorname{rk}P_{k}$ is the multiplicity of $\zeta^{k-1}$. The decomposition is then coarse: a component $A_{kl}$ has dimension $\operatorname{rk}P_{k}\operatorname{rk}P_{l}$, and is a line only when both multiplicities are one. The family is maximal, and the decomposition fine, exactly when the spectrum is simple.
+**Without simple spectrum.** If $H^{n}=I$ but an eigenvalue is repeated, the same formula gives a complete orthogonal family, but $\operatorname{rk}P_{k}$ is the multiplicity of $\omega^{k-1}$. The decomposition is then coarse: a component $A_{kl}$ has dimension $\operatorname{rk}P_{k}\operatorname{rk}P_{l}$, and is a line only when both multiplicities are one. The family is maximal, and the decomposition fine, exactly when the spectrum is simple.
 
 **The case $n=2$.** A root of $1$ is an element $H$ with $H^{2}=I$. If $H\ne\pm I$, then
 
@@ -155,8 +155,8 @@ A complete family of $n$ idempotents in $M_{n}(\mathbb{C})$ has rank one at each
 | $A_{kl}=P_{k}M_{n}P_{l}$ | The Peirce line, left index first |
 | $u_{k}$, $\ell_{k}$ | A vector spanning $V_{k}$ and its dual form |
 | $H$ | A root of $1$, $H^{n}=I$ |
-| $\zeta=e^{2\pi i/n}$ | The primitive $n$-th root of unity |
-| $v_{k}$ | An eigenvector of $H$ with eigenvalue $\zeta^{k-1}$ |
+| $\omega=e^{2\pi i/n}$ | The primitive $n$-th root of unity |
+| $v_{k}$ | An eigenvector of $H$ with eigenvalue $\omega^{k-1}$ |
 
 ## Further Reading
 

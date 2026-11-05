@@ -509,16 +509,16 @@ The differential point of view is more informative. The path $\gamma$ pulls the 
 The measure-theoretic picture explains both the strength and the limitation of the theory. The **Cauchy transform** of a finite complex measure $\mu$ with compact support,
 
 $$
-\mathcal{C}\mu(Q) = \frac{1}{2\pi i} \int \frac{d\mu(\zeta)}{\zeta - Q},
+\mathcal{C}\mu(Q) = \frac{1}{2\pi i} \int \frac{d\mu(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q},
 $$
 
 is holomorphic off the support, because differentiation under the integral sign is legitimate there; this is the Cauchy integral formula with a measure in place of $f(Q) \, dQ$, and it shows that the holomorphy of the transform is a property of the Cauchy kernel, not of the particular contour. The kernel is the fundamental solution of the Cauchy–Riemann operator in the sense that $\partial/\partial\bar \zeta \bigl( 1/(\pi(\zeta - Q)) \bigr) = \delta_Q$ as distributions, and this is what makes a purely boundary integral reproduce an interior value. For a function that is smooth on a domain $\Omega$ but not holomorphic, the boundary integral no longer suffices, and the deficit is an area integral: the **Cauchy–Pompeiu formula**
 
 $$
-f(Q) = \frac{1}{2\pi i} \oint_{\partial \Omega} \frac{f(\zeta)}{\zeta - Q} \, d\zeta - \frac{1}{\pi} \int_\Omega \frac{\partial/\partial\bar \zeta f(\zeta)}{\zeta - Q} \, dA(\zeta)
+f(Q) = \frac{1}{2\pi i} \oint_{\partial \Omega} \frac{f(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q} \, d\varkappa^{\mathrm{crd}} - \frac{1}{\pi} \int_\Omega \frac{\partial/\partial\bar \varkappa^{\mathrm{crd}} f(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q} \, dA(\varkappa^{\mathrm{crd}})
 $$
 
-holds for $Q \in \Omega$, with $dA$ the area measure. The Cauchy integral formula is the special case $\partial/\partial\bar \zeta f = 0$; the failure of the boundary representation is measured by the measure-theoretic integral of $\partial/\partial\bar \zeta f$ against the kernel.
+holds for $Q \in \Omega$, with $dA$ the area measure. The Cauchy integral formula is the special case $\partial/\partial\bar \varkappa^{\mathrm{crd}} f = 0$; the failure of the boundary representation is measured by the measure-theoretic integral of $\partial/\partial\bar \varkappa^{\mathrm{crd}} f$ against the kernel.
 
 ## The Relation to Hypercomplex Integration
 

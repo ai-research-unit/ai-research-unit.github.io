@@ -76,7 +76,7 @@ $$
 
 ## Worked Examples
 
-**Example (the zeta function).** For $\zeta(s)=\sum_nn^{-s}$, $\Sigma_t\zeta(s)=\zeta(s+t)$ and the coefficients are $n^{-t}$. The zeros of $\zeta(s+1)$ are the zeros of $\zeta$ translated by $-1$; the pole of $\zeta$ at $s=1$ becomes a pole of $\Sigma_{-1}\zeta$ at $s=2$ and a regular behaviour of $\Sigma_1\zeta$ at $s=0$.
+**Example (the zeta function).** For $\zeta(s)=\sum_nn^{-s}$, $\Sigma_t\zeta(s)=\zeta(s+t)$ and the coefficients are $n^{-t}$. The zeros of $\zeta(s+1)$ are the zeros of $\zeta$ translated by $-1$; the pole of $\zeta$ at $s=1$ becomes a pole of $\Sigma_{-1}\zeta$ at $s=2$ and a regular behaviour of $\Sigma_1\varkappa^{\mathrm{crd}}$ at $s=0$.
 
 **Example (a Dirichlet character).** For $L(\chi,s)$ with $\chi$ of conductor $q$, $\Sigma_t$ multiplies the coefficients by $n^{-t}$; the shift changes the conductor and the gamma factor of the completed function, so the functional equation of the shifted series involves a different completion.
 

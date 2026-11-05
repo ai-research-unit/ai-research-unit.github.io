@@ -22,13 +22,13 @@ $$
 \Gamma^2=I.
 $$
 
-It has eigenvalues $+1$ on $V_1\oplus V_3$ and $-1$ on $V_2\oplus V_4$, where $V_k$ is the spectral line of $\zeta_k=i^{k-1}$. Its trace is $0$, and each eigenspace has dimension $2$. In the spectral projectors,
+It has eigenvalues $+1$ on $V_1\oplus V_3$ and $-1$ on $V_2\oplus V_4$, where $V_k$ is the spectral line of $\omega_k=i^{k-1}$. Its trace is $0$, and each eigenspace has dimension $2$. In the spectral projectors,
 
 $$
 \Gamma=P_1-P_2+P_3-P_4.
 $$
 
-**Proof.** $\Gamma^2=H^4=I$. On $V_k$, $\Gamma$ acts by $\zeta_k^2$, which is $+1$ for $k=1,3$ and $-1$ for $k=2,4$. The trace is $1-1+1-1=0$. Each eigenspace is the sum of two spectral lines, hence has dimension $2$. The displayed formula is the spectral resolution $H^2=\sum_k\zeta_k^2P_k$.
+**Proof.** $\Gamma^2=H^4=I$. On $V_k$, $\Gamma$ acts by $\omega_k^2$, which is $+1$ for $k=1,3$ and $-1$ for $k=2,4$. The trace is $1-1+1-1=0$. Each eigenspace is the sum of two spectral lines, hence has dimension $2$. The displayed formula is the spectral resolution $H^2=\sum_k\omega_k^2P_k$.
 
 **The standard model.** For $H_0=\operatorname{diag}(1,i,-1,-i)$,
 
@@ -217,10 +217,10 @@ so $X_{+-}=X_{-+}=0$. The condition $\Gamma X=-X\Gamma$ gives $X_{++}=X_{--}=0$.
 $$
 M_4=\mathcal{M}^{(0)}\oplus\mathcal{M}^{(1)}\oplus\mathcal{M}^{(2)}\oplus\mathcal{M}^{(3)},
 \qquad
-\operatorname{Ad}_H(X)=\zeta^rX\quad\text{on }\mathcal{M}^{(r)}.
+\operatorname{Ad}_H(X)=\omega^rX\quad\text{on }\mathcal{M}^{(r)}.
 $$
 
-Because $\operatorname{Ad}_\Gamma=\operatorname{Ad}_H^2$, the involution acts on $\mathcal{M}^{(r)}$ by $\zeta^{2r}=(-1)^r$. Hence
+Because $\operatorname{Ad}_\Gamma=\operatorname{Ad}_H^2$, the involution acts on $\mathcal{M}^{(r)}$ by $\omega^{2r}=(-1)^r$. Hence
 
 $$
 M_4^{+}=\mathcal{M}^{(0)}\oplus\mathcal{M}^{(2)},

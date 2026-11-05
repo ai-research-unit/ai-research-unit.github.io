@@ -2,13 +2,13 @@
 
 ## Introduction
 
-In the complex plane the escape radius and the Green's function are the two faces of one computation. A point $\zeta$ with $|\zeta|>1+|C|$ has $|\zeta_n|\to\infty$ monotonically, so the finite bound $1+|C|$ certifies escape; and on the escaping set the limit
+In the complex plane the escape radius and the Green's function are the two faces of one computation. A point $\omega$ with $|\omega|>1+|C|$ has $|\omega_n|\to\infty$ monotonically, so the finite bound $1+|C|$ certifies escape; and on the escaping set the limit
 
 $$
-G_C(\zeta)=\lim_{n\to\infty}2^{-n}\log|\zeta_n|
+G_C(\omega)=\lim_{n\to\infty}2^{-n}\log|\omega_n|
 $$
 
-exists, vanishes exactly on the filled Julia set, satisfies $G_C(\zeta^2+C)=2G_C(\zeta)$, and behaves like $\log|\zeta|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and assembles the pluripotential framework it supports: the Monge–Ampère current, the conditional equilibrium measure, its product form on the idempotent plane, and the mass loss at the cone.
+exists, vanishes exactly on the filled Julia set, satisfies $G_C(\omega^2+C)=2G_C(\omega)$, and behaves like $\log|\omega|$ at infinity. In the biquaternion algebra $\mathbb{B}$ the first object fails: there is no single escape radius, because the square of a non-zero element can be zero. This article shows that the second object survives, in a conditional form off the zero divisors, states the exact form it takes for a central parameter, and assembles the pluripotential framework it supports: the Monge–Ampère current, the conditional equilibrium measure, its product form on the idempotent plane, and the mass loss at the cone.
 
 The quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the failure of the single radius and the conditional radius $R_\delta$ are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the classical theory is *The Escape Radius and the Green's Function*, *The Filled Julia Set and the Green's Function* and *Plurisubharmonic Functions*; the pluripotential theory of several variables is *Plurisubharmonic Functions*, *Several Complex Variables* and *Fractal Analysis*.
 
@@ -60,7 +60,7 @@ and $G_{\tilde Q_2}=0$ on $\mathcal K_{\tilde Q_2}$: on every bounded orbit the 
 
 **Proof.** The first identity is the shift $2^{-n}\log^+\|F^{n+1}(\tilde Q)\|=2\cdot 2^{-(n+1)}\log^+\|F^{n+1}(\tilde Q)\|$; the second is that a bounded orbit has $\log^+\|F^n\|_E\le\log^+(1+\sup\|\cdot\|_E)$ uniformly.
 
-**Remark (the missing normalization at infinity).** In the complex plane the Green's function of a polynomial satisfies $G_C(\zeta)=\log|\zeta|+O(1)$ as $\zeta\to\infty$, and this normalization is what makes the function usable: it identifies the escape rate and turns $G_C$ into a potential. In $\mathbb{B}$ the normalization fails on the zero-divisor cone, because $\|\tilde Q^2\|_E$ has no lower bound in terms of $\|\tilde Q\|_E$ and a point of large norm can be sent to the origin in one step. **On the regular part of the escaping set the normalization holds; on the cone it cannot.** The precise statement is the next proposition.
+**Remark (the missing normalization at infinity).** In the complex plane the Green's function of a polynomial satisfies $G_C(\omega)=\log|\omega|+O(1)$ as $\omega\to\infty$, and this normalization is what makes the function usable: it identifies the escape rate and turns $G_C$ into a potential. In $\mathbb{B}$ the normalization fails on the zero-divisor cone, because $\|\tilde Q^2\|_E$ has no lower bound in terms of $\|\tilde Q\|_E$ and a point of large norm can be sent to the origin in one step. **On the regular part of the escaping set the normalization holds; on the cone it cannot.** The precise statement is the next proposition.
 
 ## The Conditional Green's Function
 
@@ -78,7 +78,7 @@ $$
 
 For a central parameter the whole pluripotential picture collapses to the complex one, because the orbit is the polynomial in one element and the spectrum separates.
 
-**Theorem (the Green's function of a central parameter).** Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then
+**Theorem (the Green's function of a central parameter).** Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\omega\mapsto\omega^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then
 
 $$
 \boxed{\;G_{\tilde Q_2}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr)\;},
@@ -124,7 +124,7 @@ $$
 \boxed{\;\mu_{\tilde Q_2}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2}\;}
 $$
 
-of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.
+of the two one-variable equilibrium measures of $\omega\mapsto\omega^2+C_j$, and its entropy is $2\log2$.
 
 **Proof.** On the plane the map is the pair of complex quadratic maps (*The Slices of the Biquaternion Julia Sets*), the ambient complex dimension is two, and the equilibrium measure of a product map is the product of the equilibrium measures of the factors, the standard product theorem for polynomial maps (*Several Complex Variables*). The entropy adds, $\log2+\log2=2\log2$.
 
@@ -150,14 +150,14 @@ For a non-central parameter the general pluripotential theory does not apply unc
 | $\Omega_{\tilde Q_2}$ | the escaping set, $\|F_{\tilde Q_2}^n\|\to\infty$ |
 | $\mathcal K_{\tilde Q_2}$, $J_{\tilde Q_2}$ | the filled Julia set and the Julia set |
 | $G_{\tilde Q_2}$ | the Green's function $\lim 2^{-n}\log\|F_{\tilde Q_2}^n\|_E$ |
-| $G_C$, $K_C$ | the classical Green's function and filled Julia set of $\zeta\mapsto\zeta^2+C$ |
+| $G_C$, $K_C$ | the classical Green's function and filled Julia set of $\omega\mapsto\omega^2+C$ |
 | $\delta=\sigma_2/\sigma_1$ | the reciprocal condition number of $\mathsf{M}_2(\tilde Q)$ |
 | $\Omega_{\tilde Q_2,\delta}$ | the $\delta$-regular part of the escaping set |
 | $R_\delta$ | the conditional escape radius |
 | $q_n$ | the iterates of the complex quadratic map |
 | $\gamma_{\tilde Q_2}=(dd^cG_{\tilde Q_2})^4$ | the Monge–Ampère current |
 | $\mu_{\tilde Q_2}$ | the equilibrium measure, where it exists |
-| $\mu_C$ | the one-variable equilibrium measure of $\zeta\mapsto\zeta^2+C$ |
+| $\mu_C$ | the one-variable equilibrium measure of $\omega\mapsto\omega^2+C$ |
 | $k=4$, $d=2$ | the complex dimension and the algebraic degree |
 | $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane |
 

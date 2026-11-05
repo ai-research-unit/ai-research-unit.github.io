@@ -17,7 +17,7 @@ This article establishes:
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|dz/dt'\rangle - \langle z|\tilde{H}|z\rangle)dt'$, and the measure.
 2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dt'\rangle\,dt' = -\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dt' = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
-4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = 1$; the two forms are related by the change of variables $\zeta = \psi_2/\psi_1$.
+4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = 1$; the two forms are related by the change of variables $\varkappa^{\mathrm{stg}} = \psi_2/\psi_1$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
@@ -33,15 +33,15 @@ The companion articles supply the pieces:
 
 ### The Coherent States
 
-The spin-1/2 coherent states are the states of definite spin along a direction $\vec u$, written in the stereographic coordinate $\zeta$ as
+The spin-1/2 coherent states are the states of definite spin along a direction $\vec u$, written in the stereographic coordinate $\varkappa^{\mathrm{stg}}$ as
 
 $$
-|\zeta\rangle = \frac{1}{\sqrt{1+|\zeta|^2}}\left(|{+}\rangle + \zeta\,|{-}\rangle\right),
+|\varkappa^{\mathrm{stg}}\rangle = \frac{1}{\sqrt{1+|\varkappa^{\mathrm{stg}}|^2}}\left(|{+}\rangle + \varkappa^{\mathrm{stg}}\,|{-}\rangle\right),
 \qquad
-\zeta = \tan\frac{\theta}{2}\,\exp(i\phi),
+\varkappa^{\mathrm{stg}} = \tan\frac{\theta}{2}\,\exp(i\theta^{\mathrm{azm}}),
 $$
 
-so that $|\zeta\rangle$ has Bloch vector $\vec u(\zeta)$ and its idempotent is $\tilde\Pi_1(\vec u)$. The parameter $\zeta$ ranges over $\mathbb{CP}^1$ — the sphere of directions — with the north pole at $\zeta = 0$ and the south pole at $\zeta = \infty$. The two-component spinor $(\cos\tfrac{\theta}{2},\,\sin\tfrac{\theta}{2}\exp(i\phi))$ is the lift of $|\zeta\rangle$ to the double cover, as in the Majorana construction.
+so that $|\varkappa^{\mathrm{stg}}\rangle$ has Bloch vector $\vec u(\varkappa^{\mathrm{stg}})$ and its idempotent is $\tilde\Pi_1(\vec u)$. The parameter $\varkappa^{\mathrm{stg}}$ ranges over $\mathbb{CP}^1$ — the sphere of directions — with the north pole at $\varkappa^{\mathrm{stg}} = 0$ and the south pole at $\varkappa^{\mathrm{stg}} = \infty$. The two-component spinor $(\cos\tfrac{\theta}{2},\,\sin\tfrac{\theta}{2}\exp(i\theta^{\mathrm{azm}}))$ is the lift of $|\varkappa^{\mathrm{stg}}\rangle$ to the double cover, as in the Majorana construction.
 
 ### The Overlap and the Measure
 
@@ -99,18 +99,18 @@ and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measu
 
 ### The Wess–Zumino Term
 
-For the spin-1/2 coherent state the integrand is elementary. With $\zeta = r \exp(i\phi)$ at fixed $r$,
+For the spin-1/2 coherent state the integrand is elementary. With $\varkappa^{\mathrm{stg}} = r \exp(i\theta^{\mathrm{azm}})$ at fixed $r$,
 
 $$
-\langle z|\partial/\partial t'|z\rangle = \frac{\bar z\,dz/dt' - z\,d\bar z/dt'}{2(1+|z|^2)} = \frac{i\,d\phi/dt'\,r^2}{1+r^2},
+\langle z|\partial/\partial t'|z\rangle = \frac{\bar z\,dz/dt' - z\,d\bar z/dt'}{2(1+|z|^2)} = \frac{i\,d\theta^{\mathrm{azm}}/dt'\,r^2}{1+r^2},
 $$
 
 so that
 
 $$
 i\hbar\langle z|\partial/\partial t'|z\rangle
-= -\hbar\,\frac{r^2}{1+r^2}\,d\phi/dt'
-= -\hbar\,\sin^2\frac{\theta}{2}\,d\phi/dt' .
+= -\hbar\,\frac{r^2}{1+r^2}\,d\theta^{\mathrm{azm}}/dt'
+= -\hbar\,\sin^2\frac{\theta}{2}\,d\theta^{\mathrm{azm}}/dt' .
 $$
 
 Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise,
@@ -145,7 +145,7 @@ $$
 the classical Zeeman energy of a dipole along $\vec u(z)$. The action is thus
 
 $$
-S[z] = \int_0^T\left[-\hbar\sin^2\frac{\theta}{2}\,d\phi/dt' + \frac{\hbar\omega_L}{2}\,\vec u(z)\cdot\vec u_t\right]dt',
+S[z] = \int_0^T\left[-\hbar\sin^2\frac{\theta}{2}\,d\theta^{\mathrm{azm}}/dt' + \frac{\hbar\omega_L}{2}\,\vec u(z)\cdot\vec u_t\right]dt',
 $$
 
 the first term geometric and the second dynamical.
@@ -154,10 +154,10 @@ the first term geometric and the second dynamical.
 
 ### The Equations of Motion
 
-Varying $S$ with respect to $\zeta$ and $\bar\zeta$ gives the classical equation of motion. The Wess–Zumino term supplies the symplectic structure: writing the geometric part as a one-form in the star coordinates, its exterior derivative is the area form of the sphere,
+Varying $S$ with respect to $\varkappa^{\mathrm{stg}}$ and $\bar\varkappa^{\mathrm{stg}}$ gives the classical equation of motion. The Wess–Zumino term supplies the symplectic structure: writing the geometric part as a one-form in the star coordinates, its exterior derivative is the area form of the sphere,
 
 $$
-\omega = -\frac{\hbar}{2}\,\sin\theta\; d\theta\wedge d\phi ,
+\omega = -\frac{\hbar}{2}\,\sin\theta\; d\theta\wedge d\theta^{\mathrm{azm}} ,
 $$
 
 which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
@@ -192,7 +192,7 @@ subject to the constraint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = 1$, 
 The two path integrals are related by the change of variables
 
 $$
-\zeta = \frac{\psi_2}{\psi_1},
+\varkappa^{\mathrm{stg}} = \frac{\psi_2}{\psi_1},
 $$
 
 which is precisely the stereographic coordinate of the Majorana construction. The coherent-state integral is the projection of the spinor integral onto $\mathbb{CP}^1$: the spinor carries four real parameters, the constraint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi=1$ removes one, and the remaining three split into two for the direction and one for the overall phase, the coordinate along the fibres of the double cover. The coherent-state integral forgets the phase, and the Wess–Zumino term is what remains of it in the action. This is the precise sense in which the double cover is visible in the path integral: the two formulations differ by the fibre, and the fibre integral reproduces the Wess–Zumino term.
@@ -244,7 +244,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 
 ## Summary
 
-The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\zeta\rangle$ on $\mathbb{CP}^1$:
+The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa^{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:
 
 $$
 K = \int\mathcal{D}[z]\,\exp(\frac{i}{\hbar}S[z]),
@@ -261,7 +261,7 @@ $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $d\vec r/dt' = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.
+The saddle point of $S$ is the classical Larmor precession $d\vec r/dt' = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi=1$, related to the coherent-state form by $\varkappa^{\mathrm{stg}} = \psi_2/\psi_1$.
 
 In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
@@ -275,12 +275,12 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\mathbb{M}_+$ | Hermitian (informational) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the classical rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
-| $|\zeta\rangle$ | Spin coherent state with Bloch vector $\vec u(\zeta)$ |
-| $\zeta = \tan\tfrac{\theta}{2}\exp(i\phi) = \psi_2/\psi_1$ | Stereographic coordinate |
+| $|\varkappa^{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa^{\mathrm{stg}})$ |
+| $\varkappa^{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta^{\mathrm{azm}}) = \psi_2/\psi_1$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
 | $S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle dt' = -\hbar\tfrac{\theta^{\mathrm{sol}}}{2}$ | Wess–Zumino term |
-| $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ | Symplectic form of the sphere |
+| $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ | Symplectic form of the sphere |
 | $d\vec r/dt' = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}},\psi$ | Grassmann spinor variables, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi=1$ |
 | $\left|\int_{S^2}\omega\right| = 2\pi\hbar$ | Unit-charge flux; non-exactness of $\omega$ |

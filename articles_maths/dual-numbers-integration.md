@@ -15,7 +15,7 @@ $$
 
 is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{C}^{\mathrm{dln}} = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $\langle Q\rangle = Q\bar Q = q^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
 
-These two facts divide the classical Cauchy theory cleanly. The **vanishing** statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is *soft*: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The **reconstruction** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\zeta - Q_0)^{-1}$ is defined only where $\zeta - Q_0$ is a unit, that is only off the fibre $\pi^{-1}(\pi(Q_0))$; no contour of non-zero winding about $Q_0$ avoids that fibre.
+These two facts divide the classical Cauchy theory cleanly. The **vanishing** statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is *soft*: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The **reconstruction** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\omega - Q_0)^{-1}$ is defined only where $\omega - Q_0$ is a unit, that is only off the fibre $\pi^{-1}(\pi(Q_0))$; no contour of non-zero winding about $Q_0$ avoids that fibre.
 
 What replaces the reconstruction half is a **derived** statement. Because the infinitesimal direction is nilpotent, a dual differentiable function is determined by its restriction to the real axis together with one derivative, and integration along a fibre evaluates the real part rather than reconstructing a general value from a boundary integral. In this sense the derived variable — the nilpotent coordinate — carries the information that a Cauchy integral would carry in the complex case.
 
@@ -298,27 +298,27 @@ The detector returns an area, not an integer winding number: the quantity that s
 
 ### The Dual Cauchy Kernel
 
-**Proposition.** Let $Q_0 \in \mathbb{C}^{\mathrm{dln}}$. The element $\zeta - Q_0$ is a unit if and only if $\operatorname{Re}\zeta \neq \operatorname{Re} Q_0$, and for such $\zeta$
+**Proposition.** Let $Q_0 \in \mathbb{C}^{\mathrm{dln}}$. The element $\omega - Q_0$ is a unit if and only if $\operatorname{Re}\omega \neq \operatorname{Re} Q_0$, and for such $\omega$
 
 $$
-(\zeta - Q_0)^{-1} = \frac{1}{\operatorname{Re}(\zeta - Q_0)} - \frac{\operatorname{Inf}(\zeta - Q_0)}{\operatorname{Re}(\zeta - Q_0)^2}\,\varepsilon.
+(\omega - Q_0)^{-1} = \frac{1}{\operatorname{Re}(\omega - Q_0)} - \frac{\operatorname{Inf}(\omega - Q_0)}{\operatorname{Re}(\omega - Q_0)^2}\,\varepsilon.
 $$
 
-**Proof.** Write $\zeta - Q_0 = q + \varepsilon q'$ with $q = \operatorname{Re}(\zeta - Q_0)$, $q' = \operatorname{Inf}(\zeta - Q_0)$. By *Dual-Numbers Algebra* this is a unit if and only if $q \neq 0$, with inverse $q^{-1} - q^{-2}\varepsilon q'$.
+**Proof.** Write $\omega - Q_0 = q + \varepsilon q'$ with $q = \operatorname{Re}(\omega - Q_0)$, $q' = \operatorname{Inf}(\omega - Q_0)$. By *Dual-Numbers Algebra* this is a unit if and only if $q \neq 0$, with inverse $q^{-1} - q^{-2}\varepsilon q'$.
 
 So the set on which the Cauchy kernel is defined is not the punctured neighbourhood of $Q_0$ but its complement in the whole fibre
 
 $$
-L_{Q_0} = \pi^{-1}(\pi(Q_0)) = \{\zeta : \operatorname{Re}\zeta = \operatorname{Re} Q_0\}.
+L_{Q_0} = \pi^{-1}(\pi(Q_0)) = \{\omega : \operatorname{Re}\omega = \operatorname{Re} Q_0\}.
 $$
 
 The kernel is undefined on an entire line through $Q_0$, not merely at $Q_0$.
 
 ### No Contour Avoids the Fibre
 
-**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{C}^{\mathrm{dln}}$ that recovers $f(Q_0)$ from a contour integral of $f$ against the kernel $(\zeta - Q_0)^{-1}$ along a contour $\gamma$ winding once about $Q_0$.
+**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{C}^{\mathrm{dln}}$ that recovers $f(Q_0)$ from a contour integral of $f$ against the kernel $(\omega - Q_0)^{-1}$ along a contour $\gamma$ winding once about $Q_0$.
 
-**Proof.** A closed contour with non-zero winding number about $Q_0$ meets both open half-planes $\{\operatorname{Re}\zeta > \operatorname{Re} Q_0\}$ and $\{\operatorname{Re}\zeta < \operatorname{Re} Q_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Q_0$, a convex set in which $Q_0$ has no interior, and a curve in such a set has winding number zero about $Q_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Q_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Q_0}$. At that point $\zeta - Q_0$ is not a unit, the kernel $(\zeta - Q_0)^{-1}$ is undefined, and the contour integral does not exist.
+**Proof.** A closed contour with non-zero winding number about $Q_0$ meets both open half-planes $\{\operatorname{Re}\omega > \operatorname{Re} Q_0\}$ and $\{\operatorname{Re}\omega < \operatorname{Re} Q_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Q_0$, a convex set in which $Q_0$ has no interior, and a curve in such a set has winding number zero about $Q_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Q_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Q_0}$. At that point $\omega - Q_0$ is not a unit, the kernel $(\omega - Q_0)^{-1}$ is undefined, and the contour integral does not exist.
 
 The obstruction is of the same kind as in the split complex case but simpler: there the non-invertible set was the union of two lines through $Q_0$, here it is the single fibre through $Q_0$. The complement of one line in the plane has two components, each convex, and a closed curve lying in one component is null-homotopic in the punctured plane and has winding number zero about $Q_0$.
 
@@ -330,7 +330,7 @@ The following are consequences of the obstruction. None of them has an analogue 
 - **No residue and no winding number.** A circle of small radius about $Q_0$ meets the fibre in two points, where the integrand of a would-be residue is undefined; and the surviving area detector returns a real area rather than an integer.
 - **No Cauchy estimates and no Liouville theorem.** The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{C}^{\mathrm{dln}}$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\|_E = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.
 - **No mean value property and no maximum principle.** Both would be consequences of the integral formula. The real part of a differentiable function depends only on $q$, so its average over a circle of radius $r$ about a point of real part $q_0$ is the weighted average $\frac{1}{2\pi}\int_0^{2\pi}u(q_0 + r\cos t)\,dt$ of $u$ over the interval $[q_0-r, q_0+r]$, which need not equal $u(q_0)$: for $u(q) = q^2$ it is $q_0^2 + r^2/2$.
-- **No Laurent expansion at a point.** The negative powers $(\zeta - Q_0)^{-n}$ are undefined on the whole fibre through $Q_0$, so a Laurent series in $(\zeta - Q_0)$ does not exist. Power series in non-negative powers do exist wherever the two real functions are real-analytic.
+- **No Laurent expansion at a point.** The negative powers $(\omega - Q_0)^{-n}$ are undefined on the whole fibre through $Q_0$, so a Laurent series in $(\omega - Q_0)$ does not exist. Power series in non-negative powers do exist wherever the two real functions are real-analytic.
 - **No identity theorem.** Distinctness of the zero set from the whole plane does not force a function to vanish. Let $c$ be a smooth function that vanishes for $|q| < 1$ and is positive outside that interval; then $f(Q) = c(q)\,\varepsilon$ is dual differentiable, because its real part vanishes and its infinitesimal part is independent of $q'$, and it vanishes on the open strip $|q| < 1$ while being non-zero outside it. So a differentiable function may vanish on a non-empty open set without vanishing identically, and no accumulation argument for zero sets is available.
 
 ### The Fundamental Solution Is Not Point-Supported
@@ -377,7 +377,7 @@ $$
 
 The first equation is solved by $E_0 = H(q')\delta(q)$, since $\partial/\partial q' H(q')\delta(q) = \delta(q')\delta(q) = \delta_0$. Then $\partial/\partial q E_0 = H(q')\delta'(q)$, and since $\partial/\partial q' q'_+ = H(q')$, the second equation is solved by $E_1 = q'_+\delta'(q)$. Both $E_0$ and $E_1$ are supported on the closed half-line $q = 0$, $q' \geq 0$.
 
-So the fundamental solution is carried by the fibre, not by a point. In $\mathbb{C}$ the fundamental solution of the Cauchy–Riemann operator is $1/(\pi A)$, a locally integrable function singular at the origin, and a small circle is an adequate contour. Here the singular support is one-dimensional and lies in a fibre, and every contour winding about $Q_0$ meets that fibre, on which the kernel $(\zeta - Q_0)^{-1}$ is undefined; so the boundary integral that would represent an interior value is never defined.
+So the fundamental solution is carried by the fibre, not by a point. In $\mathbb{C}$ the fundamental solution of the Cauchy–Riemann operator is $1/(\pi A)$, a locally integrable function singular at the origin, and a small circle is an adequate contour. Here the singular support is one-dimensional and lies in a fibre, and every contour winding about $Q_0$ meets that fibre, on which the kernel $(\omega - Q_0)^{-1}$ is undefined; so the boundary integral that would represent an interior value is never defined.
 
 ## The Substitute in the Derived Variable
 
@@ -498,7 +498,7 @@ The differences are consequences of the single relation $\varepsilon^2 = 0$ agai
 | Laurent expansion | at an isolated singularity | does not exist |
 | Liouville, mean value, maximum principle, identity theorem | hold | fail |
 
-The complex case is rigid because the kernel $(\zeta - Q_0)^{-1}$ is defined on the punctured plane and a contour can surround the missing point. The dual case is degenerate in the opposite way: the kernel is undefined on a whole fibre, so no contour can surround anything, and the class of differentiable functions is so small that every one of them has an explicit primitive. The vanishing half of the Cauchy theory thus survives as an empty theorem, and the reconstruction half, which is its content, does not survive at all.
+The complex case is rigid because the kernel $(\omega - Q_0)^{-1}$ is defined on the punctured plane and a contour can surround the missing point. The dual case is degenerate in the opposite way: the kernel is undefined on a whole fibre, so no contour can surround anything, and the class of differentiable functions is so small that every one of them has an explicit primitive. The vanishing half of the Cauchy theory thus survives as an empty theorem, and the reconstruction half, which is its content, does not survive at all.
 
 ## The Relation to Hypercomplex Integration
 
@@ -538,7 +538,7 @@ which reduces a dual integral to a pair of real line integrals, with the real pa
 
 The form $f\,dQ$ is **closed** exactly when $f$ is **dual differentiable**, that is when $u_{q'} = 0$ and $v_{q'} = u_q$; equivalently $\partial/\partial\bar Q f = 0$. Consequently the **Cauchy–Goursat theorem** $\oint_\gamma f\,dQ = 0$ holds on every domain, and every differentiable function has an explicit primitive; the theorem is nevertheless **soft**, because it excludes nothing and its truth is the existence of the primitive rather than a property of the domain. A **rectangle criterion** characterises the continuous densities that are derivatives of dual differentiable functions — one step short of differentiability itself, since that class is not closed under differentiation — and the conjugate $\bar Q$ supplies the detector $\oint_\gamma \bar Q\,dQ = 2\operatorname{Area}(\gamma)\varepsilon$.
 
-The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\zeta - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.
+The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\omega - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.
 
 What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial^{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{C}^{\mathrm{dln}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
 

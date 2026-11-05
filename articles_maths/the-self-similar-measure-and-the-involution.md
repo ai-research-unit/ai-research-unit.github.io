@@ -70,9 +70,9 @@ N_n^{R}=\tfrac12\bigl(N_n+N_n^{\mathrm{fix}}\bigr)+O(1),
 $$
 where $N_n$ is the number of the periodic orbits and $N_n^{\mathrm{fix}}$ the number fixed by the reversal, and the **Artin–Mazur zeta function** factorises accordingly,
 $$
-\zeta_R(z)^2=\zeta(z)\,\zeta^{\mathrm{fix}}(z)\,,
+\omega_R^2=\omega\,\omega^{\mathrm{fix}}(z)\,,
 $$
-where $\zeta^{\mathrm{fix}}$ counts the fixed orbits, those of the fixed part.
+where $\omega^{\mathrm{fix}}$ counts the fixed orbits, those of the fixed part.
 
 *Proof sketch.* The orbits of the quotient are the orbits of $\varphi$ modulo the involution, and the quotient map is at most two-to-one, so the exponential growth rates agree; the counting formula is the orbit-stabiliser theorem for the action of the two-element group, and the zeta function factorises because it is the Euler product over the orbits of the quotient. The statements are those of *Ergodic Theory* for a finite group action; the factorisation is the "reversible" case of the zeta function of a reversible system.
 
@@ -115,7 +115,7 @@ the density of an $R$-invariant measure satisfies $\rho_\mu\circ R=\rho_\mu$, an
 
 ## Summary
 
-The **reversible self-similar measure** is the invariant measure of the limit dynamical system of a reversible system; it is $R$-invariant if and only if the weights are symmetric under the permutation of the branches, $p_{\rho(i)}=p_i$, and in general the involution transports the measure as $R_*\mu_p=\mu_{\rho(p)}$, with the symmetrisation the reversible measure of the averaged weights. The measure splits into the **fixed part** $\mu^{\mathrm{fix}}=\mu\llcorner\mathrm{Fix}(R)$ and the **exchanged part** $\mu_{\mathrm{exch}}=\mu-\mu^{\mathrm{fix}}$; for the non-atomic self-similar measures of the segment, the Cantor set and the gasket the fixed set is lower-dimensional and the fixed part is zero, so the measure is entirely exchanged and descends to the quotient $\mathcal{J}_G/R$, while the **fixed tiles** $T_v$ with $\rho(v)=v$ carry the mass $p^{\mathrm{fix}}=\sum_{\rho(i)=i}p_i$ of the fixed branches, which is what enters the pressure. The **topological pressure is unchanged** by the involution, $P_R(t)=P(t)$, because the quotient is a finite factor, while the periodic orbits are counted up to reversal by $N_n^R=\tfrac12(N_n+N_n^{\mathrm{fix}})+O(1)$ and the zeta function factorises as $\zeta_R^2=\zeta\,\zeta^{\mathrm{fix}}$; the fixed part of the pressure is $P^{\mathrm{fix}}(t)=\log\sum_{\rho(i)=i}\Delta_i^t$. The **invariant density** is symmetric, $h\circ R=h$, the transfer operator commutes with the involution and splits the eigenfunctions into the symmetric and antisymmetric families, the antisymmetric densities — those of the signed invariant measures — satisfy $\rho\circ R=-\rho$ and vanish on $\mathrm{Fix}(R)$. The transport $R_*\mu_p=\mu_{\rho(p)}$ and the mass invariance under the flip for the symmetric weights were verified on the Cantor set; the entropy invariance, the zeta factorisation and the density transformation are quoted from the reversible-systems theory of *Ergodic Theory* and *Time Reversal and the Transfer Operator*.
+The **reversible self-similar measure** is the invariant measure of the limit dynamical system of a reversible system; it is $R$-invariant if and only if the weights are symmetric under the permutation of the branches, $p_{\rho(i)}=p_i$, and in general the involution transports the measure as $R_*\mu_p=\mu_{\rho(p)}$, with the symmetrisation the reversible measure of the averaged weights. The measure splits into the **fixed part** $\mu^{\mathrm{fix}}=\mu\llcorner\mathrm{Fix}(R)$ and the **exchanged part** $\mu_{\mathrm{exch}}=\mu-\mu^{\mathrm{fix}}$; for the non-atomic self-similar measures of the segment, the Cantor set and the gasket the fixed set is lower-dimensional and the fixed part is zero, so the measure is entirely exchanged and descends to the quotient $\mathcal{J}_G/R$, while the **fixed tiles** $T_v$ with $\rho(v)=v$ carry the mass $p^{\mathrm{fix}}=\sum_{\rho(i)=i}p_i$ of the fixed branches, which is what enters the pressure. The **topological pressure is unchanged** by the involution, $P_R(t)=P(t)$, because the quotient is a finite factor, while the periodic orbits are counted up to reversal by $N_n^R=\tfrac12(N_n+N_n^{\mathrm{fix}})+O(1)$ and the zeta function factorises as $\omega_R^2=\omega\,\omega^{\mathrm{fix}}$; the fixed part of the pressure is $P^{\mathrm{fix}}(t)=\log\sum_{\rho(i)=i}\Delta_i^t$. The **invariant density** is symmetric, $h\circ R=h$, the transfer operator commutes with the involution and splits the eigenfunctions into the symmetric and antisymmetric families, the antisymmetric densities — those of the signed invariant measures — satisfy $\rho\circ R=-\rho$ and vanish on $\mathrm{Fix}(R)$. The transport $R_*\mu_p=\mu_{\rho(p)}$ and the mass invariance under the flip for the symmetric weights were verified on the Cantor set; the entropy invariance, the zeta factorisation and the density transformation are quoted from the reversible-systems theory of *Ergodic Theory* and *Time Reversal and the Transfer Operator*.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ The **reversible self-similar measure** is the invariant measure of the limit dy
 | $\mu=\mu^{\mathrm{fix}}+\mu_{\mathrm{exch}}$ | Fixed and exchanged parts of the measure |
 | $\mathrm{Fix}(R)$, $T_v$ with $\rho(v)=v$ | Fixed set, fixed tiles |
 | $P_R(t)=P(t)$, $P^{\mathrm{fix}}(t)=\log\sum_{\rho(i)=i}\Delta_i^t$ | Reversible pressure; fixed part of the pressure |
-| $N_n^R$, $\zeta_R^2=\zeta\,\zeta^{\mathrm{fix}}$ | Orbit count up to reversal; zeta factorisation |
+| $N_n^R$, $\omega_R^2=\omega\,\omega^{\mathrm{fix}}$ | Orbit count up to reversal; zeta factorisation |
 | $P_\rho f=f\circ R$ | The operator of the involution |
 | $\rho_\mu\circ R=\rho_\mu$, $\rho\circ R=-\rho$ | Symmetric and antisymmetric densities |
 

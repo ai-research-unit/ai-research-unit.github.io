@@ -335,7 +335,7 @@ $$
 H_{\mu\nu} := \sum_\lambda\epsilon_\lambda\, G^*_\lambda\, \check c_{\lambda\mu\nu}
 $$
 
-is not antisymmetric. Its symmetric part is proportional to the metric, $H_{(\mu\nu)}=\phi\,g_{\mu\nu}$, with $\phi=\tfrac14 g_{\mu\nu}H_{\mu\nu}$, and its antisymmetric part is **anti-self-dual**,
+is not antisymmetric. Its symmetric part is proportional to the metric, $H_{(\mu\nu)}=\chi^{\mathrm{scl}}\,g_{\mu\nu}$, with $\chi^{\mathrm{scl}}=\tfrac14 g_{\mu\nu}H_{\mu\nu}$, and its antisymmetric part is **anti-self-dual**,
 
 $$
 H_{[\mu\nu]} = -\tfrac{i}{2}\sum_{\lambda,\rho}\epsilon_\lambda\epsilon_\rho\,\varepsilon_{\mu\nu\lambda\rho} H_{[\lambda\rho]},
@@ -497,7 +497,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $\Psi_1, \Psi_2$ | The two parts of the field |
 | $G_{\mu\nu}$ | Field strength of the self-dual form |
 | $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form; its antisymmetric part is anti-self-dual |
-| $\phi = \tfrac14 g_{\mu\nu}H_{\mu\nu}$ | Complex scalar in $H_{(\mu\nu)}=\phi\,g_{\mu\nu}$, the trace part of $H$ |
+| $\chi^{\mathrm{scl}} = \tfrac14 g_{\mu\nu}H_{\mu\nu}$ | Complex scalar in $H_{(\mu\nu)}=\chi^{\mathrm{scl}}\,g_{\mu\nu}$, the trace part of $H$ |
 | $A_\mu$ | Electromagnetic four-potential |
 
 ## Further Reading

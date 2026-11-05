@@ -209,8 +209,8 @@ The exponential map and its failure of surjectivity are treated in the companion
 
 **The Killing form.** The Lie algebra is semisimple, and its Killing form is nondegenerate. In the basis $(\vec e_x,\vec e_y,\vec e_z,K_1,K_2,K_3)$ it is diagonal,
 $$
-B(\vec e_j,\vec e_k)=-16\,\\delta_{jk},\qquad
-B(K_j,K_k)=+16\,\\delta_{jk},\qquad
+B(\vec e_j,\vec e_k)=-16\,\delta_{jk},\qquad
+B(K_j,K_k)=+16\,\delta_{jk},\qquad
 B(\vec e_j,K_k)=0,
 $$
 (computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.

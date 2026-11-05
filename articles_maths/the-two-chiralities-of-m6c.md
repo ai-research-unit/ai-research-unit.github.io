@@ -48,7 +48,7 @@ $$
 =P_1-P_2+P_3-P_4+P_5-P_6 .
 $$
 
-**Proof.** For each eigenvalue $\zeta_k=\zeta^{k-1}$ of $H$, $\zeta_k^3=(-1)^{k-1}$. The spectral formula gives $\Gamma=\sum_k\zeta_k^3P_k=\sum_k(-1)^{k-1}P_k$; the three odd-indexed projectors contribute $+1$ and the three even-indexed ones $-1$. The square is $\sum_kP_k=I_6$, and the trace is $3-3=0$.
+**Proof.** For each eigenvalue $\omega_k=\omega^{k-1}$ of $H$, $\omega_k^3=(-1)^{k-1}$. The spectral formula gives $\Gamma=\sum_k\omega_k^3P_k=\sum_k(-1)^{k-1}P_k$; the three odd-indexed projectors contribute $+1$ and the three even-indexed ones $-1$. The square is $\sum_kP_k=I_6$, and the trace is $3-3=0$.
 
 **Corollary (the chiral projectors).**
 
@@ -155,17 +155,17 @@ and $A_rA_s\subseteq A_{r+s}$.
 
 **Proof.** The Peirce line $A_{kl}$ has degree $k-l$; a product $A_{kl}A_{mn}$ is either zero or $A_{kn}$, of degree $(k-l)+(m-n)$, and the degree is additive modulo six. For fixed $r$ and each $k$ there is exactly one $l=k-r$, so $A_r$ is the sum of six lines.
 
-**Theorem (the grading automorphism).** Conjugation by $H$ preserves the decomposition and acts on $A_r$ by the scalar $\zeta^r$:
+**Theorem (the grading automorphism).** Conjugation by $H$ preserves the decomposition and acts on $A_r$ by the scalar $\omega^r$:
 
 $$
-HAH^{-1}=\zeta^rA
+HAH^{-1}=\omega^rA
 \qquad
 (A\in A_r).
 $$
 
-**Proof.** On the line $A_{kl}=\mathbb{C}E_{kl}$, $HE_{kl}H^{-1}=(\zeta_k/\zeta_l)E_{kl}=\zeta^{k-l}E_{kl}=\zeta^rE_{kl}$.
+**Proof.** On the line $A_{kl}=\mathbb{C}E_{kl}$, $HE_{kl}H^{-1}=(\omega_k/\omega_l)E_{kl}=\omega^{k-l}E_{kl}=\omega^rE_{kl}$.
 
-**Remark (the automorphism, not the derivation).** The grading is the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$, not of the derivation $\operatorname{ad}_H(A)=HA-AH$. On $A_{kl}$ the derivation acts by $\zeta_k-\zeta_l$, which is not a sixth root of unity; the automorphism acts by the root $\zeta^{k-l}$. **The grading is a symmetry of the algebra, and it is inner.**
+**Remark (the automorphism, not the derivation).** The grading is the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$, not of the derivation $\operatorname{ad}_H(A)=HA-AH$. On $A_{kl}$ the derivation acts by $\omega_k-\omega_l$, which is not a sixth root of unity; the automorphism acts by the root $\omega^{k-l}$. **The grading is a symmetry of the algebra, and it is inner.**
 
 ### The $\mathbb{Z}/2$ Quotient
 
@@ -199,7 +199,7 @@ $$
 (A\in A_r).
 $$
 
-**Proof.** $\Gamma=H^3$, so $\Gamma A\Gamma=H^3AH^{-3}=\zeta^{3r}A=(-1)^rA$.
+**Proof.** $\Gamma=H^3$, so $\Gamma A\Gamma=H^3AH^{-3}=\omega^{3r}A=(-1)^rA$.
 
 **Corollary.** The fixed subalgebra of $\operatorname{Ad}_\Gamma$ is $A_{\text{even}}$, and it is exactly the block-diagonal subalgebra of the chiral split:
 
@@ -233,7 +233,7 @@ $$
 
 **Proof.** Each $B_s$ is the sum of two graded pieces $A_r$, each of dimension six. The product rule is the product rule of the quotient group $\mathbb{Z}/3$.
 
-**Theorem (the $\mathbb{Z}/3$ grading automorphism).** Conjugation by $H^2$ acts on $B_s$ by $\omega^s$, where $\omega=\zeta^2$ is a primitive cube root of unity:
+**Theorem (the $\mathbb{Z}/3$ grading automorphism).** Conjugation by $H^2$ acts on $B_s$ by $\omega^s$, where $\omega=\omega^2$ is a primitive cube root of unity:
 
 $$
 H^2AH^{-2}=\omega^sA
@@ -241,7 +241,7 @@ H^2AH^{-2}=\omega^sA
 (A\in B_s).
 $$
 
-**Proof.** $H^2AH^{-2}=\zeta^{2r}A=\omega^rA$ for $A\in A_r$.
+**Proof.** $H^2AH^{-2}=\omega^{2r}A=\omega^rA$ for $A\in A_r$.
 
 **Theorem (the fixed algebra of the $\mathbb{Z}/3$ quotient).** The fixed subalgebra $B_0$ is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})\oplus M_2(\mathbb{C})$:
 

@@ -286,7 +286,7 @@ $$
 The natural extension to a biquaternion variable would be
 
 $$
-\zeta(\tilde{Q}) = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
+\varkappa^{\mathrm{crd}} = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
 $$
 
 where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the biquaternion power.
@@ -428,7 +428,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 | $J_n, I_n$ | Bessel and modified Bessel functions of integral order |
 | $P_n, H_n, L_n$ | Legendre, Hermite and Laguerre polynomials (Chebyshev also treated) |
 | ${}_2F_1$ | Hypergeometric function |
-| $\Gamma, \zeta$ | Gamma and zeta functions |
+| $\Gamma, \varkappa^{\mathrm{crd}}$ | Gamma and zeta functions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 

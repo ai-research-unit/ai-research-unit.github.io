@@ -83,13 +83,13 @@ $$
 
 One and the same $\lambda$ multiplies both members. The pair therefore scales uniformly, and the mass term, which is linear in the field, is invariant.
 
-**What the mass breaks is the relative phase.** With $\varkappa$ a nonzero central constant, the massless pair is invariant under
+**What the mass breaks is the relative phase.** With $\varsigma$ a nonzero central constant, the massless pair is invariant under
 
 $$
-\tilde{\Psi}_R \;\longmapsto\; \varkappa\,\tilde{\Psi}_R, \qquad \tilde{\Psi}_L \;\longmapsto\; \varkappa^{-1}\,\tilde{\Psi}_L ,
+\tilde{\Psi}_R \;\longmapsto\; \varsigma\,\tilde{\Psi}_R, \qquad \tilde{\Psi}_L \;\longmapsto\; \varsigma^{-1}\,\tilde{\Psi}_L ,
 $$
 
-because each member acquires the product $\varkappa\varkappa^{-1} = 1$. The massive pair is not: its two sides acquire $\varkappa$ and $\varkappa^{-1}$, so it is form-invariant only for $\varkappa^2 = 1$, and for a central constant that is $\varkappa = \pm 1$. A local $\varkappa$ fails already in the massless case, because the derivative acts on $\varkappa$ and the two members acquire derivative terms that do not cancel. The mass therefore keeps the common phase and breaks the relative one. Whether the relative one can be gauged is open question 1.
+because each member acquires the product $\varsigma\varsigma^{-1} = 1$. The massive pair is not: its two sides acquire $\varsigma$ and $\varsigma^{-1}$, so it is form-invariant only for $\varsigma^2 = 1$, and for a central constant that is $\varsigma = \pm 1$. A local $\varsigma$ fails already in the massless case, because the derivative acts on $\varsigma$ and the two members acquire derivative terms that do not cancel. The mass therefore keeps the common phase and breaks the relative one. Whether the relative one can be gauged is open question 1.
 
 A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\lambda\tilde{\Psi})^\flat = \lambda^{*}\tilde{\Psi}^\flat$ for a central phase, so such a term would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ under a local phase and would be form-invariant only for $\lambda = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{\Psi}_L$ with $\tilde{\Psi}_R$.
 
@@ -319,17 +319,17 @@ $$
 where $\vec J$ is the vector part of $\tilde J_\Psi$ — the quantity that would have to vanish on solutions. It does not, and one exact solution is enough to show it. Take
 
 $$
-\phi = \exp\left(iQ_x - Q_t\right), \qquad
-\tilde{\Psi}_R = \tfrac12\,\phi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right).
+\chi = \exp\left(iQ_x - Q_t\right), \qquad
+\tilde{\Psi}_R = \tfrac12\,\chi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right).
 $$
 
-The element in brackets is constant, so the gradient acts on $\phi$ alone, and
+The element in brackets is constant, so the gradient acts on $\chi$ alone, and
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = \tfrac12\left(-e_t + i\vec e_x\right)\phi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right) = 0 ,
+\tilde{\nabla}\tilde{\Psi}_R = \tfrac12\left(-e_t + i\vec e_x\right)\chi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right) = 0 ,
 $$
 
-the left factor $(-e_t+i\vec e_x)$ annihilating the right one term by term. The field is therefore a solution of the first member of the massless pair; its $L$ part is zero, so the second member holds as well, and it is a solution of the massless biquaternion Dirac equation. It is the $R$ part of $\tilde{\nabla}^{\natural}\phi$ for this $\phi$. On it,
+the left factor $(-e_t+i\vec e_x)$ annihilating the right one term by term. The field is therefore a solution of the first member of the massless pair; its $L$ part is zero, so the second member holds as well, and it is a solution of the massless biquaternion Dirac equation. It is the $R$ part of $\tilde{\nabla}^{\natural}\chi$ for this $\chi$. On it,
 
 $$
 \tilde J_{\Psi} = i\,\tilde{\Psi}_R\tilde{\Psi}_R^{*} = i\,e^{-2Q_t}\left(e_t + i\vec e_x\right),
@@ -345,28 +345,28 @@ the scalar part of $\tilde J_\Psi$ being $i\,e^{-2Q_t}$, of the required $ic\rho
 
 The source term is the one element of the coupled system that the algebra has not supplied, and an outside treatment of a coupled biquaternionic Dirac field records an identity of exactly that kind. It is recorded here for its structure; it is an external result, not a development of the framework.
 
-The source is A. I. Arbab, *Coupling of a biquaternionic Dirac field to a bosonic field*, arXiv:1708.06230v2. It works with a matter field and a background boson field, writing for them a Maxwell-like system in ordinary units, with matter electric and magnetic fields $\vec E_\tilde\nabla^{\mathrm{gco}}$ and $\vec B_\tilde\nabla^{\mathrm{gco}}$, matter charge and current densities $\rho_\tilde\nabla^{\mathrm{gco}}$ and $\vec J_\tilde\nabla^{\mathrm{gco}}$, and boson potentials $\varphi_g$ and $\vec A_g$. Taking the divergence of its Faraday-like equation and eliminating the matter fields with the other equations of its system, it obtains
+The source is A. I. Arbab, *Coupling of a biquaternionic Dirac field to a bosonic field*, arXiv:1708.06230v2. It works with a matter field and a background boson field, writing for them a Maxwell-like system in ordinary units, with matter electric and magnetic fields $\vec E_\tilde\nabla^{\mathrm{gco}}$ and $\vec B_\tilde\nabla^{\mathrm{gco}}$, matter charge and current densities $\rho_\tilde\nabla^{\mathrm{gco}}$ and $\vec J_\tilde\nabla^{\mathrm{gco}}$, and boson potentials $\chi_g$ and $\vec A_g$. Taking the divergence of its Faraday-like equation and eliminating the matter fields with the other equations of its system, it obtains
 
 $$
 \vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \frac{1}{c^2}\,\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}}
-= \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \varphi_g\,\rho_\tilde\nabla^{\mathrm{gco}}\right),
+= \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \chi_g\,\rho_\tilde\nabla^{\mathrm{gco}}\right),
 $$
 
-where $\vec E_g = -\nabla\varphi_g - \partial/\partial t'\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination, and the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included. The identity is recorded as the source states it and is not re-derived here.
+where $\vec E_g = -\nabla\chi_g - \partial/\partial t'\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination, and the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included. The identity is recorded as the source states it and is not re-derived here.
 
-**What the identity says.** The left-hand side is a mixed invariant: the cross-contraction $\tfrac12\sum_{\mu,\nu}F_{g,\mu\nu}F_\tilde\nabla^{\mathrm{gco}}^{\mu\nu}$ of the two field strengths. Written on the fields it is $\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}}/c^2$, which is $-I_1^{\mathrm{cross}}/c^2$ with $I_1^{\mathrm{cross}} = \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - c^2\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}}$ — the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself.
+**What the identity says.** The left-hand side is a mixed invariant: the cross-contraction $\tfrac12\sum_{\mu,\nu}F_{g,\mu\nu}F_\tilde{\nabla^{\mathrm{gco}}}^{\mu\nu}$ of the two field strengths. Written on the fields it is $\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}}/c^2$, which is $-I_1^{\mathrm{cross}}/c^2$ with $I_1^{\mathrm{cross}} = \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - c^2\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}}$ — the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself.
 
 The right-hand side is the pairing of the boson potential with the matter source. The identity therefore says that once two fields are coupled, their mixed invariant is not free: it is fixed by the source, and fixed by a source built linearly from the potential and the four-current. It is a constraint on the source, not an independent field equation, and it is the shape of answer that Open Question 4 asks for.
 
-The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \varphi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\mu,\nu}F_{\mu\nu}F^{\mu\nu} = -\sum_\nu A_\nu J^\nu$ in the $({+}{-}{-}{-})$ signature, the minus being the signature's; the mixed form above is the general one.
+The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \chi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\mu,\nu}F_{\mu\nu}F^{\mu\nu} = -\sum_\nu A_\nu J^\nu$ in the $({+}{-}{-}{-})$ signature, the minus being the signature's; the mixed form above is the general one.
 
 **Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four coefficient components: the source fixes that component by a linear relation to the other three, and its Appendix B gives the modified system that replaces the relation, with an extra real field appearing in all four equations. The identity is therefore stated on the constrained system, and it concerns the source's field strengths, not the corpus's $\tilde{\Psi}$ or its $\sqrt{\mu}\,\tilde{J}$.
 
 Written as a residual, with the source's own residual combinations $r_5,\dots,r_8$ of its fields — the vectors $\vec r_6,\vec r_7$ and the scalars $r_5,r_8$ —
 
 $$
-\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \frac{1}{c^2}\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \varphi_g\rho_\tilde\nabla^{\mathrm{gco}}\right)
-= \frac{\hbar}{ϙ\,c}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{ϙ\,c}\,\frac{\partial r_8}{\partial t'} ,
+\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \frac{1}{c^2}\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \chi_g\rho_\tilde\nabla^{\mathrm{gco}}\right)
+= \frac{\hbar}{ϙ\,c}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\chi_g}{c^2}\,r_5 - \frac{\hbar}{ϙ\,c}\,\frac{\partial r_8}{\partial t'} ,
 $$
 
 the identity holds exactly on the solution set of the four equations and not for arbitrary fields: the right-hand side collects the four residuals, each with the weight its own equation carries, and vanishes when all four are imposed.
@@ -401,7 +401,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which side is the physical Dirac field multiplied from? The second member of the pair is the $\natural$-image of the first, so the algebra relates the two sides without choosing between them, and the choice is made where the field is placed, not by the equation. What fixes it inside the algebra?
 
-3. **The interaction current.** The gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is in $\mathbb{M}_-$ but is not conserved: the exact solution $\tilde\Psi_R = \tfrac12\phi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\phi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -2i\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
+3. **The interaction current.** The gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is in $\mathbb{M}_-$ but is not conserved: the exact solution $\tilde\Psi_R = \tfrac12\chi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\chi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -2i\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{\Psi}$, so it does not by itself close the corpus's system.
 
@@ -506,7 +506,7 @@ $$
 
 The prescription attaches to the one-sided pair and not to the parent's two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize.
 
-The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation: the exact solution $\tilde\Psi_R = \tfrac12\phi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\phi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -2i\,e^{-2Q_t}$, while the scalar part of $\tilde J_\Psi$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided cell outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.
+The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation: the exact solution $\tilde\Psi_R = \tfrac12\chi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\chi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -2i\,e^{-2Q_t}$, while the scalar part of $\tilde J_\Psi$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided cell outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.
 
 One external result is recorded on the source side, and it is not a development of the framework: the identity of A. I. Arbab (arXiv:1708.06230v2), by which the mixed invariant of the two coupled field strengths is fixed by the pairing of the potential with the four-current. It is a constraint following from that source's own four equations, and the residual form in that section exhibits that dependence; it is not re-derived here, and its other claims are not adopted. It is recorded because it has the shape that Open Question 4 asks for, and because the corpus has no statement of that shape.
 
@@ -531,7 +531,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
-| $\varkappa$ | A second central constant, in the relative phase $\tilde\Psi_R\mapsto\varkappa\tilde\Psi_R$, $\tilde\Psi_L\mapsto\varkappa^{-1}\tilde\Psi_L$ |
+| $\varsigma$ | A second central constant, in the relative phase $\tilde\Psi_R\mapsto\varsigma\tilde\Psi_R$, $\tilde\Psi_L\mapsto\varsigma^{-1}\tilde\Psi_L$ |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (left action) |
 | $\tilde\nabla^{\mathrm{gco},\natural} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
@@ -560,5 +560,5 @@ One external result is recorded on the source side, and it is not a development 
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of the Dirac equation in spacetime algebra.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component calculus and the Dirac adjoint.
 - J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external result recorded in *What the Algebra Supplies and What It Only Transcribes*: that for the Lorentz gauge group of the standard vierbein coupling, localization and the Euler–Lagrange variation do not commute, which is what makes the internal-gauge commutativity this article relies on a restriction and not a truism. Cited as an external claim; the gravitational construction is recorded in *Curved Spacetime and the Biquaternion Framework*.
-- A. I. Arbab, "Coupling of a biquaternionic Dirac field to a bosonic field," arXiv:1708.06230v2 (2017), for the external identity recorded in *An External Identity for the Source: The Mixed Invariant*: with a background boson field $g$ and a matter field $\tilde\nabla^{\mathrm{gco}}$, the mixed invariant of the two field strengths obeys $\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - c^{-2}\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} = \mu_0(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \varphi_g\rho_\tilde\nabla^{\mathrm{gco}})$, a consequence of the source's own four Maxwell-like equations, recorded with the residual form that exhibits that dependence. Cited for that identity alone; the source's magnetic-mass, single-photon-charge and axion-reduction claims are not adopted.
+- A. I. Arbab, "Coupling of a biquaternionic Dirac field to a bosonic field," arXiv:1708.06230v2 (2017), for the external identity recorded in *An External Identity for the Source: The Mixed Invariant*: with a background boson field $g$ and a matter field $\tilde\nabla^{\mathrm{gco}}$, the mixed invariant of the two field strengths obeys $\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - c^{-2}\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} = \mu_0(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \chi_g\rho_\tilde\nabla^{\mathrm{gco}})$, a consequence of the source's own four Maxwell-like equations, recorded with the residual form that exhibits that dependence. Cited for that identity alone; the source's magnetic-mass, single-photon-charge and axion-reduction claims are not adopted.
 - Companion articles: [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html); [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html); [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html); [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html); [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html); [Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form](antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html); [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html); [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html).

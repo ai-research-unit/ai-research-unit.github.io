@@ -201,9 +201,9 @@ and each part is a real Maxwell field obeying the ordinary conservation laws. At
 
 ## Why the Elementary Charge Is the Quantum
 
-The Coulomb scalar is the first member of a one-parameter family, $G_\zeta=\zeta\,\bar w/(z+r)$, and the charge is $\zeta/4$. What fixes $\zeta$ is not the wave equation. Two exact statements show it.
+The Coulomb scalar is the first member of a one-parameter family, $G_{\mathrm{ϙ}}=\mathrm{ϙ}\,\bar w/(z+r)$, and the charge is $\mathrm{ϙ}/4$. What fixes $\mathrm{ϙ}$ is not the wave equation. Two exact statements show it.
 
-**The wave equation and the eikonal are scale invariant.** $\Box G=0$ is linear and the eikonal is quadratic in the derivatives, so $G_\zeta$ satisfies both for every $\zeta$; the Coulomb-like field therefore exists for every charge. This is why the family is a family.
+**The wave equation and the eikonal are scale invariant.** $\Box G=0$ is linear and the eikonal is quadratic in the derivatives, so $G_{\mathrm{ϙ}}$ satisfies both for every $\mathrm{ϙ}$; the Coulomb-like field therefore exists for every charge. This is why the family is a family.
 
 **The first-order conditions are not.** The programme's generating function is not an arbitrary harmonic scalar: it is subject to the two constraints
 
@@ -213,23 +213,23 @@ $$
 \frac{\partial G}{\partial v}=G\,\frac{\partial G}{\partial \bar w} ,
 $$
 
-which are what makes it come from the twistor, i.e. from the Kerr equation. They are linear in $G$ on the left and quadratic on the right, so a rescaling $G\mapsto\zeta G$ multiplies the two sides by $\zeta$ and $\zeta^2$. For the family above the derivatives are
+which are what makes it come from the twistor, i.e. from the Kerr equation. They are linear in $G$ on the left and quadratic on the right, so a rescaling $G\mapsto\mathrm{ϙ} G$ multiplies the two sides by $\mathrm{ϙ}$ and $\mathrm{ϙ}^2$. For the family above the derivatives are
 
 $$
-\frac{\partial G_\zeta}{\partial w}=-\frac{\zeta\bar w^2}{2r(z+r)^2},
+\frac{\partial G_{\mathrm{ϙ}}}{\partial w}=-\frac{\mathrm{ϙ}\bar w^2}{2r(z+r)^2},
 \qquad
-G_\zeta\,\frac{\partial G_\zeta}{\partial u}=-\frac{\zeta^2\bar w^2}{2r(z+r)^2},
+G_{\mathrm{ϙ}}\,\frac{\partial G_{\mathrm{ϙ}}}{\partial u}=-\frac{\mathrm{ϙ}^2\bar w^2}{2r(z+r)^2},
 $$
 
-so the first constraint is $\zeta=\zeta^2$, and the second gives the same, with $\partial G_\zeta/\partial v=\zeta\bar w/(2r(z+r))$ and $G_\zeta\partial G_\zeta/\partial \bar w=\zeta^2\bar w/(2r(z+r))$. The only nonzero solution is $\zeta=1$:
+so the first constraint is $\mathrm{ϙ}=\mathrm{ϙ}^2$, and the second gives the same, with $\partial G_{\mathrm{ϙ}}/\partial v=\mathrm{ϙ}\bar w/(2r(z+r))$ and $G_{\mathrm{ϙ}}\partial G_{\mathrm{ϙ}}/\partial \bar w=\mathrm{ϙ}^2\bar w/(2r(z+r))$. The only nonzero solution is $\mathrm{ϙ}=1$:
 
 $$
-\zeta=1,
+\mathrm{ϙ}=1,
 \qquad
 |ϙ|=\frac14 .
 $$
 
-**So the elementary charge is the unique normalisation at which the two sides of a first-order condition have the same degree.** The eikonal and the wave equation, both scale invariant, allow a continuum; the condition that is linear on one side and quadratic on the other allows one point of it. That is the exact form of the statement, recorded in the algebrodynamics article, that the primary system is not invariant under the scaling that Maxwell's equations admit — and it is why the fundamental solution carries the quantum and not a multiple of it. At $\zeta=1$ the scalar is $\bar w/(z+r)$, the stereographic chart from the south pole. Its companion $\bar w/(z-r)$ satisfies the same two constraints, with the same constant $1/2$ in the algebra above and a singularity on the opposite half of the axis, so the constraints admit both signs. The companion is **not** the second stereographic chart: the programme's $f^-=w/(r-z)$ satisfies the eikonal — which is quadratic and so blind to conjugation — but fails the constraints by residuals $4.0$ and $9.3$ at a point where $\lvert f^-\rvert=2.3$, checked here. The constraints, unlike the eikonal, distinguish $G$ from $\bar G$, and that is the sharpest illustration of what the nonlinear condition does that the linear ones do not.
+**So the elementary charge is the unique normalisation at which the two sides of a first-order condition have the same degree.** The eikonal and the wave equation, both scale invariant, allow a continuum; the condition that is linear on one side and quadratic on the other allows one point of it. That is the exact form of the statement, recorded in the algebrodynamics article, that the primary system is not invariant under the scaling that Maxwell's equations admit — and it is why the fundamental solution carries the quantum and not a multiple of it. At $\mathrm{ϙ}=1$ the scalar is $\bar w/(z+r)$, the stereographic chart from the south pole. Its companion $\bar w/(z-r)$ satisfies the same two constraints, with the same constant $1/2$ in the algebra above and a singularity on the opposite half of the axis, so the constraints admit both signs. The companion is **not** the second stereographic chart: the programme's $f^-=w/(r-z)$ satisfies the eikonal — which is quadratic and so blind to conjugation — but fails the constraints by residuals $4.0$ and $9.3$ at a point where $\lvert f^-\rvert=2.3$, checked here. The constraints, unlike the eikonal, distinguish $G$ from $\bar G$, and that is the sharpest illustration of what the nonlinear condition does that the linear ones do not.
 
 ## What the Reduced System Does Not Give
 
@@ -249,7 +249,7 @@ This is the linear face of induced nonlinearity. The linear equations of the pot
 
 The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial t-\nabla\Pi$ and $\vec H=\nabla\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
 
-The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\vec x/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_\zeta=\zeta\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\zeta$ and the programme's two first-order constraints only at $\zeta=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
+The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\vec x/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\mathrm{ϙ}$ and the programme's two first-order constraints only at $\mathrm{ϙ}=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
 
 **Energy.** The bilinear density of a duality-pure complex field vanishes identically — invariant, Poynting vector and bilinear stress: $E_{j}E_{j}+H_{j}H_{j}=0$, $\vec E\times\vec H=0$, $E_{j}E_{k}+H_{j}H_{k}=0$, checked to $5.5\times10^{-17}$. The bilinear is the invariant form and is not the energy even for real fields, where its scalar part is $-\epsilon(I_1+2icI_2)$ while $2W=\epsilon E^2+\mu H^2$. In the corpus's element the same fact is $\tilde F=i\sqrt{\epsilon}(\vec E+i\vec H)=0$, so duality purity is the vanishing of the field-strength biquaternion and the corpus's carrier measures departure from purity. The sesquilinear density does not vanish; it is the sum of the densities of the real and imaginary parts, $0.182+0.182=0.364$ at the Coulomb solution, and each part is a real Maxwell field with ordinary conservation laws. The corpus's $T_{\mu\nu}$ is the tensor of such a part.
 
@@ -270,8 +270,8 @@ The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\v
 | $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ | The two surviving components in the gauge $C_u=C_w=0$ |
 | $\partial G/\partial w=G\,\partial G/\partial u$, $\partial G/\partial v=G\,\partial G/\partial\bar w$ | First-order constraints; they make $G$ come from the twistor |
 | $E_{+},E_{3},E_{-}$ | $E_{1}+iE_{2}$, $E_{3}$, $E_{1}-iE_{2}$; the spinor of the field strength |
-| $ϙ$ | Electric charge; the Coulomb family has $\zeta=4ϙ$ |
-| $G_\zeta=\zeta\bar w/(z+r)$ | The Coulomb family; $\zeta=1$ gives the elementary charge $\lvertϙ\rvert=\tfrac14$ |
+| $ϙ$ | Electric charge; the Coulomb family has $\mathrm{ϙ}=4ϙ$ |
+| $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$ | The Coulomb family; $\mathrm{ϙ}=1$ gives the elementary charge $\lvertϙ\rvert=\tfrac14$ |
 | $r=\sqrt{x^2+y^2+z^2}$ | Radial coordinate |
 | $\vec E_r,\vec E_i$ | Real and imaginary parts of $\vec E$; each is a real Maxwell field carrying its own energy |
 | $\vec E\cdot\vec E+\vec H\cdot\vec H$ | The bilinear density, without conjugation; it is the invariant combination and vanishes on a duality-pure field |

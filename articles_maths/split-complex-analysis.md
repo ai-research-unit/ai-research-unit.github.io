@@ -322,7 +322,7 @@ There is **no** general Cauchy integral formula in split complex analysis. The r
 However, if the function is written in the idempotent basis, each component has its own Cauchy integral formula:
 
 $$
-f_+(Q_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - Q_+} \, d\zeta_+,
+f_+(Q_+) = \frac{1}{2\pi i} \oint \frac{f_+(\omega_+)}{\omega_+ - Q_+} \, d\omega_+,
 $$
 
 and similarly for $f_-$. But these are complex formulas applied to real functions, and they require complexification of the components. They are not split complex formulas.

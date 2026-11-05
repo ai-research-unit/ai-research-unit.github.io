@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\zeta_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. **No second object is primitive.** The idempotents are functions of $H$ alone, and the root is the only input.
+A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\omega_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. **No second object is primitive.** The idempotents are functions of $H$ alone, and the root is the only input.
 
 The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is *The Peirce Decomposition of $M_6(\mathbb{C})$*; the frame and its gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_6(\mathbb{C})$*; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*.
 
@@ -15,37 +15,37 @@ The construction is root-first. The biquaternion articles build the frame from t
 **Definition.** Let
 
 $$
-\zeta=e^{2\pi i/6}=\tfrac12+\tfrac{\sqrt3}{2}i ,
+\omega=e^{2\pi i/6}=\tfrac12+\tfrac{\sqrt3}{2}i ,
 $$
 
-a primitive sixth root of unity, and put $\zeta_k=\zeta^{k-1}$ for $k=1,\dots,6$. The six roots are
+a primitive sixth root of unity, and put $\omega_k=\omega^{k-1}$ for $k=1,\dots,6$. The six roots are
 
 $$
-\zeta_1=1,\qquad
-\zeta_2=\zeta=\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
-\zeta_3=\zeta^2=-\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
-\zeta_4=-1,\qquad
-\zeta_5=-\zeta,\qquad
-\zeta_6=\bar\zeta .
+\omega_1=1,\qquad
+\omega_2=\omega=\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
+\omega_3=\omega^2=-\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
+\omega_4=-1,\qquad
+\omega_5=-\omega,\qquad
+\omega_6=\bar\omega .
 $$
 
 They are the elements of the cyclic group $\mu_6=\{z\in\mathbb{C}^\times:z^6=1\}\cong\mathbb{Z}/6$.
 
 **Proposition.** The roots have the following orders and elementary symmetric functions.
 
-| Root | $\zeta_1$ | $\zeta_2$ | $\zeta_3$ | $\zeta_4$ | $\zeta_5$ | $\zeta_6$ |
+| Root | $\omega_1$ | $\omega_2$ | $\omega_3$ | $\omega_4$ | $\omega_5$ | $\omega_6$ |
 |---|---|---|---|---|---|---|
 | Value | $1$ | $\tfrac12+\tfrac{\sqrt3}{2}i$ | $-\tfrac12+\tfrac{\sqrt3}{2}i$ | $-1$ | $-\tfrac12-\tfrac{\sqrt3}{2}i$ | $\tfrac12-\tfrac{\sqrt3}{2}i$ |
 | Order | $1$ | $6$ | $3$ | $2$ | $3$ | $6$ |
-| Conjugate | $\zeta_1$ | $\zeta_6$ | $\zeta_5$ | $\zeta_4$ | $\zeta_3$ | $\zeta_2$ |
+| Conjugate | $\omega_1$ | $\omega_6$ | $\omega_5$ | $\omega_4$ | $\omega_3$ | $\omega_2$ |
 
-The primitive roots are $\zeta_2$ and $\zeta_6$; the real roots are $\zeta_1=1$ and $\zeta_4=-1$; and
+The primitive roots are $\omega_2$ and $\omega_6$; the real roots are $\omega_1=1$ and $\omega_4=-1$; and
 
 $$
-\sum_{k=1}^{6}\zeta_k=0,\qquad \prod_{k=1}^{6}\zeta_k=-1 .
+\sum_{k=1}^{6}\omega_k=0,\qquad \prod_{k=1}^{6}\omega_k=-1 .
 $$
 
-**Proof.** The order of $\zeta_k=\zeta^{k-1}$ is $6/\gcd(6,k-1)$, which gives the row of orders. Complex conjugation sends $\zeta$ to $\zeta^{-1}=\zeta^5$, hence $\zeta_k=\zeta^{k-1}$ to $\zeta^{6-(k-1)}=\zeta_{8-k}$, which is the row of conjugates. The sum vanishes because the six roots are the roots of $x^6-1$, whose coefficient of $x^5$ is zero. The product is the constant term up to the sign $(-1)^6$: $x^6-1=\prod_k(x-\zeta_k)$ gives $-1=\prod_k(-\zeta_k)=\prod_k\zeta_k$, since $6$ is even.
+**Proof.** The order of $\omega_k=\omega^{k-1}$ is $6/\gcd(6,k-1)$, which gives the row of orders. Complex conjugation sends $\omega$ to $\omega^{-1}=\omega^5$, hence $\omega_k=\omega^{k-1}$ to $\omega^{6-(k-1)}=\omega_{8-k}$, which is the row of conjugates. The sum vanishes because the six roots are the roots of $x^6-1$, whose coefficient of $x^5$ is zero. The product is the constant term up to the sign $(-1)^6$: $x^6-1=\prod_k(x-\omega_k)$ gives $-1=\prod_k(-\omega_k)=\prod_k\omega_k$, since $6$ is even.
 
 ### The Cyclotomic Factorisation
 
@@ -55,9 +55,9 @@ $$
 x^6-1=(x-1)(x+1)(x^2+x+1)(x^2-x+1),
 $$
 
-the four factors being the cyclotomic polynomials $\Phi_1,\Phi_2,\Phi_3,\Phi_6$. The minimal polynomial of $\zeta$ over $\mathbb{Q}$ is $\Phi_6(x)=x^2-x+1$, of degree two.
+the four factors being the cyclotomic polynomials $\Phi_1,\Phi_2,\Phi_3,\Phi_6$. The minimal polynomial of $\omega$ over $\mathbb{Q}$ is $\Phi_6(x)=x^2-x+1$, of degree two.
 
-**Proof.** The identity $x^6-1=(x^3-1)(x^3+1)$ and the factorisations $x^3-1=(x-1)(x^2+x+1)$, $x^3+1=(x+1)(x^2-x+1)$ give the product. The roots of $\Phi_6$ are the primitive sixth roots $\zeta,\zeta^5$, whose sum is $1$ and whose product is $1$; the polynomial $x^2-x+1$ has exactly those roots.
+**Proof.** The identity $x^6-1=(x^3-1)(x^3+1)$ and the factorisations $x^3-1=(x-1)(x^2+x+1)$, $x^3+1=(x+1)(x^2-x+1)$ give the product. The roots of $\Phi_6$ are the primitive sixth roots $\omega,\omega^5$, whose sum is $1$ and whose product is $1$; the polynomial $x^2-x+1$ has exactly those roots.
 
 The factorisation matters for the arithmetic of the root, not for the algebra over $\mathbb{C}$: over $\mathbb{C}$ the polynomial splits into six linear factors, and the idempotents below are the six factors evaluated at $H$.
 
@@ -66,7 +66,7 @@ The factorisation matters for the arithmetic of the root, not for the algebra ov
 **Proposition.** The discriminant of $x^6-1$ is
 
 $$
-\operatorname{disc}(x^6-1)=\prod_{j<l}(\zeta_l-\zeta_j)^2=6^6=46656 .
+\operatorname{disc}(x^6-1)=\prod_{j<l}(\omega_l-\omega_j)^2=6^6=46656 .
 $$
 
 **Proof.** For $f(x)=x^n-a$ the discriminant is $(-1)^{(n-1)(n-2)/2}n^na^{n-1}$; at $n=6$, $a=1$ the sign is $(-1)^{10}=+1$ and the value is $6^6$. The product formula is the definition of the discriminant of a monic polynomial with simple roots.
@@ -94,18 +94,18 @@ The word *root* is used in the sense of the corpus: an element whose power is a 
 - its characteristic and minimal polynomials are both $x^6-1$;
 - $\operatorname{tr}H=0$ and $\det H=-1$.
 
-**Proof.** The polynomial $x^6-1$ has the six distinct roots $\zeta_k$ and annihilates $H$. A matrix annihilated by a polynomial with distinct roots is diagonalisable, and its eigenvalues are among those roots. Six distinct eigenvalues in dimension six exhaust the spectrum, so each root occurs once, the characteristic polynomial is $\prod_k(x-\zeta_k)=x^6-1$, and the minimal polynomial, which has the same roots and divides $x^6-1$, is also $x^6-1$. The trace is the sum of the eigenvalues, which vanishes; the determinant is their product, which is $-1$.
+**Proof.** The polynomial $x^6-1$ has the six distinct roots $\omega_k$ and annihilates $H$. A matrix annihilated by a polynomial with distinct roots is diagonalisable, and its eigenvalues are among those roots. Six distinct eigenvalues in dimension six exhaust the spectrum, so each root occurs once, the characteristic polynomial is $\prod_k(x-\omega_k)=x^6-1$, and the minimal polynomial, which has the same roots and divides $x^6-1$, is also $x^6-1$. The trace is the sum of the eigenvalues, which vanishes; the determinant is their product, which is $-1$.
 
 **Corollary.** Every root is semisimple, hence is a semisimple element of $GL_6(\mathbb{C})$, and $H$ generates a cyclic subgroup of order six.
 
-**Proof.** A diagonalisable matrix with eigenvalues of order dividing six satisfies $H^6=I$ and has $H^r\neq I$ for $0<r<6$, because $\zeta^r\neq1$. So $\langle H\rangle\cong\mathbb{Z}/6$.
+**Proof.** A diagonalisable matrix with eigenvalues of order dividing six satisfies $H^6=I$ and has $H^r\neq I$ for $0<r<6$, because $\omega^r\neq1$. So $\langle H\rangle\cong\mathbb{Z}/6$.
 
 ### The Eigenlines
 
 **Definition.** For a root $H$ and $k\in\{1,\dots,6\}$ put
 
 $$
-V_k=\ker(H-\zeta_kI_6).
+V_k=\ker(H-\omega_kI_6).
 $$
 
 **Proposition.** The $V_k$ are six lines and
@@ -114,7 +114,7 @@ $$
 \mathbb{C}^6=V_1\oplus V_2\oplus V_3\oplus V_4\oplus V_5\oplus V_6 .
 $$
 
-**Proof.** Each $V_k$ is the eigenspace of the eigenvalue $\zeta_k$, of dimension one because the spectrum is simple. Distinct eigenspaces of a diagonalisable matrix are independent, and their dimensions sum to six.
+**Proof.** Each $V_k$ is the eigenspace of the eigenvalue $\omega_k$, of dimension one because the spectrum is simple. Distinct eigenspaces of a diagonalisable matrix are independent, and their dimensions sum to six.
 
 The decomposition is canonical: it is determined by $H$, and it is the finest decomposition of $\mathbb{C}^6$ on which $H$ acts by scalars. **The root is the decomposition.** Everything below is a rewriting of this sentence.
 
@@ -125,7 +125,7 @@ The decomposition is canonical: it is determined by $H$, and it is the finest de
 **Definition.** For a root $H$ and $k\in\{1,\dots,6\}$ the **Lagrange projector** $P_k$ is
 
 $$
-P_k=\prod_{l\neq k}\frac{H-\zeta_lI_6}{\zeta_k-\zeta_l}.
+P_k=\prod_{l\neq k}\frac{H-\omega_lI_6}{\omega_k-\omega_l}.
 $$
 
 The denominator is a nonzero complex number, by the distinctness of the roots, so the product is a well-defined polynomial in $H$ of degree five.
@@ -133,50 +133,50 @@ The denominator is a nonzero complex number, by the distinctness of the roots, s
 **Theorem.** For every root $H$ the six Lagrange projectors satisfy
 
 $$
-P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_{k=1}^{6}P_k=I_6,\qquad H=\sum_{k=1}^{6}\zeta_kP_k .
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_{k=1}^{6}P_k=I_6,\qquad H=\sum_{k=1}^{6}\omega_kP_k .
 $$
 
 Moreover $\operatorname{im}P_k=V_k$, $\ker P_k=\bigoplus_{l\neq k}V_l$, $\operatorname{rank}P_k=1$ and $\operatorname{tr}P_k=1$.
 
-**Proof.** Let $L_k(x)=\prod_{l\neq k}(x-\zeta_l)/(\zeta_k-\zeta_l)$, the Lagrange interpolation polynomial of the six nodes $\zeta_1,\dots,\zeta_6$. It satisfies $L_k(\zeta_j)=\delta_{kj}$. On the eigenline $V_j$ the matrix $H$ acts as $\zeta_jI$, so $L_k(H)$ acts as $L_k(\zeta_j)I=\delta_{kj}I$. Therefore $L_k(H)$ is the identity on $V_k$ and zero on every other $V_l$; this is the projection onto $V_k$ along the sum of the other lines. The four displayed identities follow at once, and so do the statements about image, kernel and rank. The trace of a projection is its rank, so $\operatorname{tr}P_k=1$.
+**Proof.** Let $L_k(x)=\prod_{l\neq k}(x-\omega_l)/(\omega_k-\omega_l)$, the Lagrange interpolation polynomial of the six nodes $\omega_1,\dots,\omega_6$. It satisfies $L_k(\omega_j)=\delta_{kj}$. On the eigenline $V_j$ the matrix $H$ acts as $\omega_jI$, so $L_k(H)$ acts as $L_k(\omega_j)I=\delta_{kj}I$. Therefore $L_k(H)$ is the identity on $V_k$ and zero on every other $V_l$; this is the projection onto $V_k$ along the sum of the other lines. The four displayed identities follow at once, and so do the statements about image, kernel and rank. The trace of a projection is its rank, so $\operatorname{tr}P_k=1$.
 
-**Corollary (the idempotents determine the root).** $H=\sum_k\zeta_kP_k$, and the $P_k$ are polynomials in $H$. The map $H\mapsto(P_1,\dots,P_6)$ is injective, and its image is the set of complete orthogonal families of six rank-one idempotents.
+**Corollary (the idempotents determine the root).** $H=\sum_k\omega_kP_k$, and the $P_k$ are polynomials in $H$. The map $H\mapsto(P_1,\dots,P_6)$ is injective, and its image is the set of complete orthogonal families of six rank-one idempotents.
 
-**Proof.** The formula for $H$ is the spectral theorem read at the six eigenvalues: on $V_j$ both sides equal $\zeta_jI$. If two roots give the same family, the formula returns the same $H$. Conversely, a complete orthogonal family of six rank-one idempotents decomposes $\mathbb{C}^6$ into six lines, and $H=\sum\zeta_kP_k$ has the required spectrum and sixth power.
+**Proof.** The formula for $H$ is the spectral theorem read at the six eigenvalues: on $V_j$ both sides equal $\omega_jI$. If two roots give the same family, the formula returns the same $H$. Conversely, a complete orthogonal family of six rank-one idempotents decomposes $\mathbb{C}^6$ into six lines, and $H=\sum\omega_kP_k$ has the required spectrum and sixth power.
 
 ### The Fourier Form
 
 **Theorem.** For every root $H$ and every $k$,
 
 $$
-P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}H^r
-=\frac16\left(I_6+\zeta_k^{-1}H+\zeta_k^{-2}H^2+\cdots+\zeta_k^{-5}H^5\right).
+P_k=\frac16\sum_{r=0}^{5}\omega_k^{-r}H^r
+=\frac16\left(I_6+\omega_k^{-1}H+\omega_k^{-2}H^2+\cdots+\omega_k^{-5}H^5\right).
 $$
 
-**Proof.** On $V_j$ the right-hand side acts as $\frac16\sum_r\zeta_k^{-r}\zeta_j^rI=\frac16\sum_r(\zeta_j/\zeta_k)^rI$. The ratio $\zeta_j/\zeta_k$ is a sixth root of unity, equal to $1$ exactly when $j=k$; the geometric sum is $6$ in that case and $0$ otherwise. So the right-hand side is the projection onto $V_k$ along the other lines, which is $P_k$.
+**Proof.** On $V_j$ the right-hand side acts as $\frac16\sum_r\omega_k^{-r}\omega_j^rI=\frac16\sum_r(\omega_j/\omega_k)^rI$. The ratio $\omega_j/\omega_k$ is a sixth root of unity, equal to $1$ exactly when $j=k$; the geometric sum is $6$ in that case and $0$ otherwise. So the right-hand side is the projection onto $V_k$ along the other lines, which is $P_k$.
 
 **Corollary (the inverse relations).** For every $r$,
 
 $$
-H^r=\sum_{k=1}^{6}\zeta_k^rP_k .
+H^r=\sum_{k=1}^{6}\omega_k^rP_k .
 $$
 
-**Proof.** Both sides act as $\zeta_j^rI$ on $V_j$.
+**Proof.** Both sides act as $\omega_j^rI$ on $V_j$.
 
 The Fourier form exhibits the projectors as the **discrete Fourier transform of the powers of $H$**. It also gives the trace without a spectral argument:
 
 $$
-\operatorname{tr}P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}\operatorname{tr}(H^r)=\frac16\operatorname{tr}(I_6)=1,
+\operatorname{tr}P_k=\frac16\sum_{r=0}^{5}\omega_k^{-r}\operatorname{tr}(H^r)=\frac16\operatorname{tr}(I_6)=1,
 $$
 
-because $\operatorname{tr}(H^r)=\sum_j\zeta_j^r=0$ for $1\le r\le5$, the sum of the $r$-th powers of the roots of $x^6-1$ being zero unless $6$ divides $r$.
+because $\operatorname{tr}(H^r)=\sum_j\omega_j^r=0$ for $1\le r\le5$, the sum of the $r$-th powers of the roots of $x^6-1$ being zero unless $6$ divides $r$.
 
 ### The Explicit Matrices
 
 **Example (diagonal root).** Let
 
 $$
-H=\operatorname{diag}(\zeta_1,\zeta_2,\zeta_3,\zeta_4,\zeta_5,\zeta_6).
+H=\operatorname{diag}(\omega_1,\omega_2,\omega_3,\omega_4,\omega_5,\omega_6).
 $$
 
 Then $V_k=\mathbb{C}e_k$ and
@@ -185,37 +185,37 @@ $$
 P_k=E_{kk},\qquad k=1,\dots,6 .
 $$
 
-The Lagrange formula returns the coordinate idempotents, and the Fourier form returns $\frac16\sum_r\zeta_k^{-r}\operatorname{diag}(\zeta_1^r,\dots,\zeta_6^r)=E_{kk}$.
+The Lagrange formula returns the coordinate idempotents, and the Fourier form returns $\frac16\sum_r\omega_k^{-r}\operatorname{diag}(\omega_1^r,\dots,\omega_6^r)=E_{kk}$.
 
 **Example (the cyclic shift).** Let $\rho$ be the permutation matrix of the cycle $1\mapsto2\mapsto3\mapsto4\mapsto5\mapsto6\mapsto1$, acting on the standard column $e_j$ by $\rho e_j=e_{j-1}$ with indices modulo six. Then $\rho^6=I_6$, and the eigenvalues of $\rho$ are the six sixth roots, each once: the vector
 
 $$
-v_k=\sum_{j=1}^{6}\zeta_k^{j-1}e_j
+v_k=\sum_{j=1}^{6}\omega_k^{j-1}e_j
 $$
 
-satisfies $\rho v_k=\zeta_kv_k$. So $\rho$ is a root, and the Fourier form gives
+satisfies $\rho v_k=\omega_kv_k$. So $\rho$ is a root, and the Fourier form gives
 
 $$
-P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}\rho^r,
+P_k=\frac16\sum_{r=0}^{5}\omega_k^{-r}\rho^r,
 \qquad
-(P_k)_{ij}=\frac16\zeta_k^{i-j},
+(P_k)_{ij}=\frac16\omega_k^{i-j},
 $$
 
-the second identity because $(\rho^r)_{ij}=\delta_{i,j-r}$. The matrix $P_2$, the projector of the eigenvalue $\zeta_2=\zeta$, is therefore
+the second identity because $(\rho^r)_{ij}=\delta_{i,j-r}$. The matrix $P_2$, the projector of the eigenvalue $\omega_2=\omega$, is therefore
 
 $$
 P_2=\frac16
 \begin{pmatrix}
-1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}&\zeta^{-4}&\zeta^{-5}\\
-\zeta&1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}&\zeta^{-4}\\
-\zeta^2&\zeta&1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}\\
-\zeta^3&\zeta^2&\zeta&1&\zeta^{-1}&\zeta^{-2}\\
-\zeta^4&\zeta^3&\zeta^2&\zeta&1&\zeta^{-1}\\
-\zeta^5&\zeta^4&\zeta^3&\zeta^2&\zeta&1
+1&\omega^{-1}&\omega^{-2}&\omega^{-3}&\omega^{-4}&\omega^{-5}\\
+\omega&1&\omega^{-1}&\omega^{-2}&\omega^{-3}&\omega^{-4}\\
+\omega^2&\omega&1&\omega^{-1}&\omega^{-2}&\omega^{-3}\\
+\omega^3&\omega^2&\omega&1&\omega^{-1}&\omega^{-2}\\
+\omega^4&\omega^3&\omega^2&\omega&1&\omega^{-1}\\
+\omega^5&\omega^4&\omega^3&\omega^2&\omega&1
 \end{pmatrix}.
 $$
 
-Each row is the previous row multiplied by $\zeta$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\zeta^{-r-s}\rho^{r+s}=\frac16\sum_t\zeta^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.
+Each row is the previous row multiplied by $\omega$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\omega^{-r-s}\rho^{r+s}=\frac16\sum_t\omega^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.
 
 **Remark.** The two examples are conjugate: $\rho$ is the regular representation of $\mathbb{Z}/6$ and $H$ is its decomposition into characters. Every root is conjugate to the diagonal one, by §*The Root Set*, so the two examples exhaust the isomorphism types of the pair $(H,\{P_k\})$.
 
@@ -259,7 +259,7 @@ $$
 
 **Proof.** The first statement is the direct sum over the thirty-six pairs regrouped by $k-l$. For the second, $A_{kl}\subseteq A_r$ and $A_{mn}\subseteq A_s$ have $k-l\equiv r$ and $m-n\equiv s$; their product is either zero or $A_{kn}$, and $k-n=(k-l)+(l-n)\equiv r+s$ when $l=m$. For the dimension, fix $r$; for each of the six values of $k$ there is exactly one $l$ with $k-l\equiv r$, namely $l=k-r$, so $A_r$ is the sum of six lines.
 
-**Proposition (the grading operators).** $H\in A_0$, and $H$ acts by the scalar $\zeta_k$ on $V_k$. The grading is read from the two commuting families of multiplications $L_{P_k}$ and $R_{P_k}$: on $A_{kl}$ the left multiplications have joint weight $k$ and the right multiplications have joint weight $l$, so
+**Proposition (the grading operators).** $H\in A_0$, and $H$ acts by the scalar $\omega_k$ on $V_k$. The grading is read from the two commuting families of multiplications $L_{P_k}$ and $R_{P_k}$: on $A_{kl}$ the left multiplications have joint weight $k$ and the right multiplications have joint weight $l$, so
 
 $$
 A_r=\bigoplus_{k-l\equiv r}A_{kl}
@@ -268,9 +268,9 @@ $$
 
 where $L=\sum_k k\,L_{P_k}$ and $R=\sum_l l\,R_{P_l}$.
 
-**Proof.** $H=\sum_j\zeta_jP_j$ is a linear combination of the $P_j$, hence lies in $A_0=\bigoplus_jA_{jj}$, and it acts by $\zeta_k$ on the line $V_k$. For $A\in A_{kl}$ one has $P_mA=\delta_{mk}A$ and $AP_m=\delta_{ml}A$, so $L(A)=kA$ and $R(A)=lA$; the difference is $(k-l)A$, whose class modulo six is $r$.
+**Proof.** $H=\sum_j\omega_jP_j$ is a linear combination of the $P_j$, hence lies in $A_0=\bigoplus_jA_{jj}$, and it acts by $\omega_k$ on the line $V_k$. For $A\in A_{kl}$ one has $P_mA=\delta_{mk}A$ and $AP_m=\delta_{ml}A$, so $L(A)=kA$ and $R(A)=lA$; the difference is $(k-l)A$, whose class modulo six is $r$.
 
-**Remark.** The grading is not the eigenspace decomposition of $\operatorname{ad}_H$. On $A_{kl}$ the commutator is $\operatorname{ad}_H(A)=(\zeta_k-\zeta_l)A$, and the differences $\zeta_k-\zeta_l$ are not sixth roots of unity; they depend on the pair, not on the class of $k-l$. The grading **is** the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$: on $A_{kl}$ it acts by $\zeta_k/\zeta_l=\zeta^{k-l}$. The grading is by the difference of the Peirce labels, which is the **diagonal distance** of a matrix entry. It is a grading of the algebra, and $H$ is one of its degree-zero elements.
+**Remark.** The grading is not the eigenspace decomposition of $\operatorname{ad}_H$. On $A_{kl}$ the commutator is $\operatorname{ad}_H(A)=(\omega_k-\omega_l)A$, and the differences $\omega_k-\omega_l$ are not sixth roots of unity; they depend on the pair, not on the class of $k-l$. The grading **is** the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$: on $A_{kl}$ it acts by $\omega_k/\omega_l=\omega^{k-l}$. The grading is by the difference of the Peirce labels, which is the **diagonal distance** of a matrix entry. It is a grading of the algebra, and $H$ is one of its degree-zero elements.
 
 ### The Two Coarser Gradings
 
@@ -320,7 +320,7 @@ $$
 
 The eigenvalues of $\Gamma$ are $+1$ with multiplicity three, on $V_1\oplus V_3\oplus V_5$, and $-1$ with multiplicity three, on $V_2\oplus V_4\oplus V_6$.
 
-**Proof.** $(\zeta_k)^3=(-1)^{k-1}$; the spectral formula for a function of $H$ gives $\Gamma=\sum_k\zeta_k^3P_k$. The trace is the sum of three plus ones and three minus ones.
+**Proof.** $(\omega_k)^3=(-1)^{k-1}$; the spectral formula for a function of $H$ gives $\Gamma=\sum_k\omega_k^3P_k$. The trace is the sum of three plus ones and three minus ones.
 
 **Theorem (the $\mathbb{Z}/2$ grading is the chirality).** Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A^{\mathrm{odd}}$, and $A_{\text{even}}$ is the fixed subalgebra of the involution $\operatorname{Ad}_\Gamma$.
 
@@ -357,7 +357,7 @@ $$
 \dim PGL_6-\dim T=35-5=30 .
 $$
 
-**Proof.** Every root is diagonalisable with the eigenvalues $\zeta_1,\dots,\zeta_6$, each once, so it is conjugate to the diagonal root $D=\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. The roots are therefore one orbit. The stabiliser of $D$ in $GL_6$ is the group of invertible matrices commuting with $D$; since the eigenvalues are distinct, that is the diagonal torus $\mathbb{C}^{\times6}$, of dimension six, and its image in $PGL_6$ is the torus $T$ of dimension five. The orbit–stabiliser theorem and $\dim PGL_6=36-1=35$ give the dimension.
+**Proof.** Every root is diagonalisable with the eigenvalues $\omega_1,\dots,\omega_6$, each once, so it is conjugate to the diagonal root $D=\operatorname{diag}(\omega_1,\dots,\omega_6)$. The roots are therefore one orbit. The stabiliser of $D$ in $GL_6$ is the group of invertible matrices commuting with $D$; since the eigenvalues are distinct, that is the diagonal torus $\mathbb{C}^{\times6}$, of dimension six, and its image in $PGL_6$ is the torus $T$ of dimension five. The orbit–stabiliser theorem and $\dim PGL_6=36-1=35$ give the dimension.
 
 **Corollary (all roots are conjugate).** Any two roots are conjugate by an element of $PGL_6(\mathbb{C})$, and the conjugation carries the Lagrange family of one to the Lagrange family of the other.
 
@@ -373,11 +373,11 @@ $$
 
 **Proposition.** The map from roots to full flags is surjective, and its fibre over a flag is the set of splittings of the flag, an affine space of dimension $15$.
 
-**Proof.** Given a full flag, choosing a line $V_k$ in each successive quotient splits the flag; the choices are independent, of dimensions $5,4,3,2,1,0$, whose sum is $15$. The root is recovered from the splitting and the assignment of $\zeta_k$ to $V_k$.
+**Proof.** Given a full flag, choosing a line $V_k$ in each successive quotient splits the flag; the choices are independent, of dimensions $5,4,3,2,1,0$, whose sum is $15$. The root is recovered from the splitting and the assignment of $\omega_k$ to $V_k$.
 
-**Proposition (the $6!$ of the labelling).** A root is an ordered decomposition into six lines, the $k$-th line carrying the eigenvalue $\zeta_k$. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the positions and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.
+**Proposition (the $6!$ of the labelling).** A root is an ordered decomposition into six lines, the $k$-th line carrying the eigenvalue $\omega_k$. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the positions and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.
 
-**Proof.** Write the root as $(L_1,\dots,L_6)$ with $H|_{L_k}=\zeta_kI$. Permuting the positions gives $(L_{\sigma(1)},\dots,L_{\sigma(6)})$, the root $\sum_k\zeta_kP_{L_{\sigma(k)}}$, which differs from $H$ for $\sigma\neq\mathrm{id}$ because the six lines are distinct. The action is free. The fibre over the unordered set $\{L_1,\dots,L_6\}$ is the set of bijections from the six positions to the six lines, of cardinality $6!$.
+**Proof.** Write the root as $(L_1,\dots,L_6)$ with $H|_{L_k}=\omega_kI$. Permuting the positions gives $(L_{\sigma(1)},\dots,L_{\sigma(6)})$, the root $\sum_k\omega_kP_{L_{\sigma(k)}}$, which differs from $H$ for $\sigma\neq\mathrm{id}$ because the six lines are distinct. The action is free. The fibre over the unordered set $\{L_1,\dots,L_6\}$ is the set of bijections from the six positions to the six lines, of cardinality $6!$.
 
 **Remark.** The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter: the root set is a $6!$-fold cover of the space of unordered decompositions. The map to the flag variety is defined on the root, where the eigenvalues order the lines; it does not descend to the unordered space.
 
@@ -410,11 +410,11 @@ For $n=6$ the same reduction is available for the involution $\Gamma=H^3$: its t
 A root of $M_6(\mathbb{C})$ is a matrix $H$ with $H^6=I_6$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the Lagrange projectors
 
 $$
-P_k=\prod_{l\neq k}\frac{H-\zeta_lI_6}{\zeta_k-\zeta_l}
-=\frac16\sum_{r=0}^{5}\zeta_k^{-r}H^r
+P_k=\prod_{l\neq k}\frac{H-\omega_lI_6}{\omega_k-\omega_l}
+=\frac16\sum_{r=0}^{5}\omega_k^{-r}H^r
 $$
 
-are primitive idempotents, orthogonal and complete, with $H=\sum_k\zeta_kP_k$.
+are primitive idempotents, orthogonal and complete, with $H=\sum_k\omega_kP_k$.
 
 $$
 \boxed{\ \text{One root of order six gives the six primitive idempotents; no second object is primitive.}\ }
@@ -428,7 +428,7 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 |---|---|
 | Root | $H^6=I_6$, six distinct eigenvalues |
 | Idempotents | $P_k$, $k=1,\dots,6$, primitive, rank one |
-| Spectral formula | $H=\sum_k\zeta_kP_k$ |
+| Spectral formula | $H=\sum_k\omega_kP_k$ |
 | Grading | $M_6=\bigoplus_{r\in\mathbb{Z}/6}A_r$, $\dim A_r=6$ |
 | Chirality | $\Gamma=H^3$, $3+3$ split |
 | Root set | $PGL_6/T$, complex dimension $30$ |
@@ -439,10 +439,10 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 
 | Symbol | Meaning |
 |---|---|
-| $\zeta=e^{2\pi i/6}$ | the primitive sixth root |
-| $\zeta_k=\zeta^{k-1}$ | the six sixth roots, $k=1,\dots,6$ |
+| $\omega=e^{2\pi i/6}$ | the primitive sixth root |
+| $\omega_k=\omega^{k-1}$ | the six sixth roots, $k=1,\dots,6$ |
 | $H$ | the root, $H^6=I_6$ with simple spectrum |
-| $V_k=\ker(H-\zeta_kI_6)$ | the six eigenlines |
+| $V_k=\ker(H-\omega_kI_6)$ | the six eigenlines |
 | $P_k$ | the Lagrange projector onto $V_k$ |
 | $A_{kl}=P_kM_6P_l$ | the thirty-six Peirce lines |
 | $A_r=\bigoplus_{k-l\equiv r}A_{kl}$ | the $\mathbb{Z}/6$ graded pieces, $\dim A_r=6$ |

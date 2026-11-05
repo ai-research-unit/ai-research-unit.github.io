@@ -111,9 +111,9 @@ The image of $\pi_{kl}$ is the Peirce line $A_{kl}$.
 
 **Proof.** $\pi_{kl}\pi_{mn}(X)=P_kP_mXP_nP_l=\delta_{km}\delta_{ln}P_kXP_l=\delta_{km}\delta_{ln}\pi_{kl}(X)$; the sum is $\sum_{k,l}P_kXP_l=(\sum_kP_k)X(\sum_lP_l)=X$. The image is $P_kM_5P_l=A_{kl}$.
 
-**Corollary.** The projections $\pi_{kl}$ are the spectral projections of the torus action: $P_k$ and $P_l$ are the idempotents of the root, and $\pi_{kl}$ is the projection onto the line of weight $\zeta_k/\zeta_l$ (or $\zeta_k\zeta_l^{-1}$).
+**Corollary.** The projections $\pi_{kl}$ are the spectral projections of the torus action: $P_k$ and $P_l$ are the idempotents of the root, and $\pi_{kl}$ is the projection onto the line of weight $\omega_k/\omega_l$ (or $\omega_k\omega_l^{-1}$).
 
-**Proof.** The torus acts by $X\mapsto P_kXP_l$ on the line $A_{kl}$; the projection is the spectral projection for the character $\zeta_k/\zeta_l$.
+**Proof.** The torus acts by $X\mapsto P_kXP_l$ on the line $A_{kl}$; the projection is the spectral projection for the character $\omega_k/\omega_l$.
 
 ### The Multiplication Rules
 

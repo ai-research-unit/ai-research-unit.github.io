@@ -60,17 +60,17 @@ because $v_j^{\vee}(v_k)=\delta_{jk}$. The sum $\sum_iE_{ii}$ acts on $v_j$ as $
 
 ### The Frame and the Root
 
-Let $H$ be a root with spectral lines $L_k=\ker(H-\zeta_kI)$ for $k=1,\dots,5$, and let $v_k\in L_k$ be nonzero. The frame $(v_1,\dots,v_5)$ is **spectral** for $H$. In this frame
+Let $H$ be a root with spectral lines $L_k=\ker(H-\omega_kI)$ for $k=1,\dots,5$, and let $v_k\in L_k$ be nonzero. The frame $(v_1,\dots,v_5)$ is **spectral** for $H$. In this frame
 
 $$
-H=\sum_{k=1}^{5}\zeta_kE_{kk},\qquad E_{kk}=P_k,
+H=\sum_{k=1}^{5}\omega_kE_{kk},\qquad E_{kk}=P_k,
 $$
 
-and the matrix of $H$ is $\operatorname{diag}(\zeta_1,\dots,\zeta_5)$. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does **not** determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.
+and the matrix of $H$ is $\operatorname{diag}(\omega_1,\dots,\omega_5)$. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does **not** determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.
 
 **Proposition.** Let $H$ be a root and let $\mathcal{V}$ be a spectral frame. A matrix $g\in GL_5(\mathbb{C})$ preserves $H$ by conjugation, $gHg^{-1}=H$, if and only if $g$ is diagonal in the frame, $g=\sum_it_iE_{ii}$ with $t_i\ne0$. The stabiliser of $H$ in $PGL_5$ is therefore the torus $T$ of the diagonal matrices modulo scalars, of dimension $4$.
 
-**Proof.** In the spectral frame $H=\operatorname{diag}(\zeta_1,\dots,\zeta_5)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\zeta_j=\zeta_i g_{ij}$ for $i,j=1,\dots,5$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.
+**Proof.** In the spectral frame $H=\operatorname{diag}(\omega_1,\dots,\omega_5)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\omega_j=\omega_i g_{ij}$ for $i,j=1,\dots,5$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.
 
 **Corollary.** The gauge group of the spectral frame is the stabiliser of the root. The frame is a point of $PGL_5$; the root is its image in $PGL_5/T$; the gauge is the fibre $T$. The count is
 

@@ -149,7 +149,7 @@ $$
 
 The constraint is **second class**: the Legendre transform is singular, and the field and its momentum are not independent canonical variables, so the naive Poisson bracket has to be replaced by the Dirac bracket. The standard route computes that bracket and then quantizes it; for the free field the outcome is the equal-time anticommutation relations. This article takes the route as read: it imposes the relations directly and verifies, in the section on the mode operators, that they reproduce the boxed equal-time relation. Nothing below depends on the Dirac-bracket computation itself.
 
-The constraint is also why the ordinary rule $[\phi,\pi]=i\delta^{(3)}$ cannot be applied to a Dirac field: there is no independent pair for it to relate. It does not, by itself, say whether the bracket that replaces it is a commutator or an anticommutator; that question is settled by the positivity of the energy rather than by the constraint, and it is the subject of the next section.
+The constraint is also why the ordinary rule $[\chi,\pi]=i\delta^{(3)}$ cannot be applied to a Dirac field: there is no independent pair for it to relate. It does not, by itself, say whether the bracket that replaces it is a commutator or an anticommutator; that question is settled by the positivity of the energy rather than by the constraint, and it is the subject of the next section.
 
 ### The Biquaternion Interpretation and the Open Point
 
@@ -185,7 +185,7 @@ $$
 \{\tilde\Psi^{\mathrm{fop}}_\mu(X,t'),\pi^{\mathrm{fop}}_\nu(Y,t')\}=i\,\delta_{\mu\nu}\,\delta^{(3)}(X-Y),
 $$
 
-which is the fermionic analogue of the canonical relation $[\phi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
+which is the fermionic analogue of the canonical relation $[\chi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
 
 The choice of anticommutator over commutator is forced, and three reasons can be given at the level of this article. They are stated here because they are operative in the construction; the full spin–statistics theorem belongs to the companion article *The Spin–Statistics Theorem in Biquaternionic Form* and is not developed here.
 
@@ -401,7 +401,7 @@ $$
 [Ϙ^{\mathrm{fop}},\tilde\Psi^{\mathrm{fop}\dagger}]=+\tilde\Psi^{\mathrm{fop}\dagger},
 $$
 
-which is the Dirac-field form of the relation $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ of *The Quantized Scalar Field in Biquaternionic Form*: the field lowers the charge by one unit and its conjugate raises it. All three expressions are the standard ones; their derivation uses only the parent article's plane-wave solutions and normalizations.
+which is the Dirac-field form of the relation $[Ϙ^{\mathrm{fop}},\chi^{\mathrm{fop}}]=-\chi^{\mathrm{fop}}$ of *The Quantized Scalar Field in Biquaternionic Form*: the field lowers the charge by one unit and its conjugate raises it. All three expressions are the standard ones; their derivation uses only the parent article's plane-wave solutions and normalizations.
 
 The status of $E_0$ deserves one cautionary sentence. Its divergence is an ultraviolet feature of the free field, removed by the conventional normal-ordering prescription, and nothing in the biquaternion structure as used here changes that. Whether the biquaternion framework offers a distinguished or geometrically meaningful regularization of the vacuum energy is an open question, and we do not claim one.
 

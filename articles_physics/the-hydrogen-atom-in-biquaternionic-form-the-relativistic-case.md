@@ -29,7 +29,7 @@ $$
 \tilde A = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-,
 $$
 
-and a static point nucleus is the special case $\vec A = 0$ with $\phi = \mathfrak{Z}e/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $ϙ$ in it is $ϙ\phi$, which for the electron, $ϙ = -e$, is $ϙ\phi = -e\mathfrak{Z}e/(4\pi\epsilon_0 r) = -\kappa/r$. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is **input**: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling
+and a static point nucleus is the special case $\vec A = 0$ with $\chi^{\mathrm{scl}} = \mathfrak{Z}e/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $ϙ$ in it is $ϙ\chi^{\mathrm{scl}}$, which for the electron, $ϙ = -e$, is $ϙ\chi^{\mathrm{scl}} = -e\mathfrak{Z}e/(4\pi\epsilon_0 r) = -\kappa/r$. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is **input**: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling
 
 $$
 \alpha = \frac{e^2}{4\pi\epsilon_0\hbar c}, \qquad \kappa = \mathfrak{Z}\alpha\,\hbar c,
@@ -63,7 +63,7 @@ i\hbar\,\frac{\partial\tilde\Psi}{\partial t'}
 + i mc^2\,\tilde\Psi\,\vec e_x + V(r)\,\tilde\Psi ,
 $$
 
-with $V(r) = ϙ\phi = -\kappa/r$. The cell $\beta$ acts on one side only — its left factor is the time unit, which multiplies as the identity — while the three $\alpha_k$ act on both sides. What the equation uses is their algebra: each squares to the identity action, and distinct ones anticommute,
+with $V(r) = ϙ\chi^{\mathrm{scl}} = -\kappa/r$. The cell $\beta$ acts on one side only — its left factor is the time unit, which multiplies as the identity — while the three $\alpha_k$ act on both sides. What the equation uses is their algebra: each squares to the identity action, and distinct ones anticommute,
 
 $$
 \alpha_k^2 = \beta^2 = 1 ,
@@ -94,7 +94,7 @@ In the non-relativistic problem the Hamiltonian is a scalar multiple of the iden
 At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian
 
 $$
-H = \frac{\vec\pi^2}{2m} + ϙ\phi - \frac{ϙ}{m}\sum_k B_k\tilde S_k
+H = \frac{\vec\pi^2}{2m} + ϙ\chi^{\mathrm{scl}} - \frac{ϙ}{m}\sum_k B_k\tilde S_k
 - \frac{\vec\pi^4}{8m^3c^2}
 + \frac{\hbar^2}{8m^2c^2}\nabla^2V
 - \frac{ϙ}{2m^2c^2}\sum_k (\vec E\times\vec\pi)_k\tilde S_k,
@@ -295,7 +295,7 @@ $$
 
 with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\vec e_z}^{\mathrm{axf}}$ the chirality cell — the representative on the field of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z}^{\mathrm{axf}})\tilde\Psi$, where $G_\mu$ are the four cell generators of *Noether's Theorem in Biquaternionic Form*: $G_t$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$ and $G_k$ as $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$. These are the frame elements of *The Legacy Pauli Gamma Formulation*: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_k$ is $\beta\alpha_k$, the Hamiltonian's $\alpha_k$ preceded by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
-The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $i\hbar\,\partial/\partial t' \to i\hbar\,\partial/\partial t' - ϙ\phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $i\hbar\,\partial/\partial t' \to i\hbar\,\partial/\partial t' - ϙ\chi^{\mathrm{scl}}$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
 ## The Finite Basis and the Balance of the Two Parts
 
@@ -322,7 +322,7 @@ i\hbar\,\frac{\partial\tilde\Psi_{\mathrm{sml}}}{\partial t'}
 = c\sum_k \pi_k\,\vec e_k\tilde\Psi_{\mathrm{lar}}\,\vec e_z - 2mc^2\tilde\Psi_{\mathrm{sml}} + V\tilde\Psi_{\mathrm{sml}} ,
 $$
 
-with $V(r) = ϙ\phi = -\kappa/r$ and the kinetic momentum $\vec\pi = \vec p-ϙ\vec A$. The Coulomb problem has $\vec A = 0$, so that $\vec\pi = \vec p$ there. A finite basis chooses an expansion for each of the two parts — functions $\{f_\mu\}$ for the large part, and a set of its own for the small — and the two choices are independent unless a further condition is imposed.
+with $V(r) = ϙ\chi^{\mathrm{scl}} = -\kappa/r$ and the kinetic momentum $\vec\pi = \vec p-ϙ\vec A$. The Coulomb problem has $\vec A = 0$, so that $\vec\pi = \vec p$ there. A finite basis chooses an expansion for each of the two parts — functions $\{f_\mu\}$ for the large part, and a set of its own for the small — and the two choices are independent unless a further condition is imposed.
 
 The condition is read off the corpus's own elimination. Neglecting, in the second equation, the terms that are small compared with $2mc^2$ is what produces the Pauli Hamiltonian; it also produces the relation
 
@@ -412,7 +412,7 @@ Three entries deserve a sentence. The first is that the algebraic content is rea
 5. **Radiative corrections.** The Lamb shift and the anomalous moment are loop effects; the framework's classical equation does not contain them (as the electron article records for $g-2$), and a framework account would require the quantized theory.
 6. **Many-electron and finite-nuclear-size effects.** The article is for one electron in a fixed point-Coulomb field; the framework's account of the electron–electron interaction and of nuclear structure is not developed here.
 7. **Empirical content.** The spectrum predicts nothing beyond standard relativistic quantum physics for hydrogen. Whether any framework-level effect distinguishes the two remains the standing open question.
-8. **A complex self-dual Coulomb field.** The construction that generates the Dirac field from a scalar half — *Klein–Gordon from the Dirac Square in Biquaternionic Form*, §*The Converse Direction* — survives an external field only when the complex external field is (anti)self-dual, because minimal coupling makes the two generalized gradients stop commuting and the difference of their products is the field strength. Kassandrov (arXiv:1706.08397) gives the Coulomb case, and the condition takes a definite form: with $\phi = \mathfrak{Z}e/(4\pi\epsilon_0 r)$ and a vector potential whose only nonzero component is $A_\varphi = i\phi\tan(\theta/2)$, the complex field is (anti)self-dual, $\vec B = i\vec E$. Its real part is the electric Coulomb field, its imaginary part is a magnetic monopole of imaginary strength, and the monopole's string lies on the negative $z$ axis. Whether the spectrum can then be obtained as the spectrum of a scalar equation in that complexified background, and what the imaginary part does to the levels, is not worked out anywhere in the corpus. Kassandrov poses the same question and calls it fundamental for the scheme. The question is worth recording because it makes the complexification a condition on the dynamics rather than a convenience of notation.
+8. **A complex self-dual Coulomb field.** The construction that generates the Dirac field from a scalar half — *Klein–Gordon from the Dirac Square in Biquaternionic Form*, §*The Converse Direction* — survives an external field only when the complex external field is (anti)self-dual, because minimal coupling makes the two generalized gradients stop commuting and the difference of their products is the field strength. Kassandrov (arXiv:1706.08397) gives the Coulomb case, and the condition takes a definite form: with $\chi^{\mathrm{scl}} = \mathfrak{Z}e/(4\pi\epsilon_0 r)$ and a vector potential whose only nonzero component is $A_{\theta^{\mathrm{azm}}} = i\chi^{\mathrm{scl}}\tan(\theta/2)$, the complex field is (anti)self-dual, $\vec B = i\vec E$. Its real part is the electric Coulomb field, its imaginary part is a magnetic monopole of imaginary strength, and the monopole's string lies on the negative $z$ axis. Whether the spectrum can then be obtained as the spectrum of a scalar equation in that complexified background, and what the imaginary part does to the levels, is not worked out anywhere in the corpus. Kassandrov poses the same question and calls it fundamental for the scheme. The question is worth recording because it makes the complexification a condition on the dynamics rather than a convenience of notation.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -561,7 +561,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde Q^\natural$ | Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $\tilde\nabla^\natural$, $\tilde A^\natural$, $\tilde\nabla^{\mathrm{gco},\natural}$ are its images |
 | $\tilde A = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Electromagnetic four-potential |
-| $V(r) = ϙ\phi = -\kappa/r$ | Coulomb potential energy |
+| $V(r) = ϙ\chi^{\mathrm{scl}} = -\kappa/r$ | Coulomb potential energy |
 | $\kappa = \mathfrak{Z}e^2/(4\pi\epsilon_0) = \mathfrak{Z}\alpha\,\hbar c$ | Coulomb coupling |
 | $\mathfrak{Z}$ | Nuclear charge number; $\kappa=\mathfrak{Z}\alpha\hbar c$ |
 | $ϙ$ | Electric charge (corpus convention, Greek koppa); $ϙ=-e$ for the electron |

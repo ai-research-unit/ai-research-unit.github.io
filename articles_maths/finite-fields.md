@@ -223,7 +223,7 @@ The multiplicative group $\mathbb{F}_q^\times$ is cyclic of order $q - 1$, since
 | $\overline{\mathbb{F}_p}$ | Algebraic closure, $\bigcup_n \mathbb{F}_{p^n}$ |
 | $\operatorname{Aut}(\mathbb{F}_{p^n}/\mathbb{F}_p)$ | Galois group, cyclic of order $n$ |
 | $\operatorname{char} K$ | Characteristic of a field |
-| $\zeta_n$ | Primitive $n$-th root of unity |
+| $\omega_n$ | Primitive $n$-th root of unity |
 
 ## Further Reading
 

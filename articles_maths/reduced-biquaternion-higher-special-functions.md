@@ -95,17 +95,17 @@ the sine being the reduced sine of the elementary functions, and its poles are t
 
 **Definition.** The **Zeta function** of the reduced biquaternion variable is
 $$
-\zeta(\breve Q)=\zeta(Q_{+})\,\Pi_++\zeta(Q_{-})\,\Pi_-,
+\omega=\omega\,\Pi_++\omega\,\Pi_-,
 $$
 defined for $\operatorname{Re}Q_{+}>1$ and $\operatorname{Re}Q_{-}>1$ and continued meromorphically coordinatewise.
 
-**Theorem (the series and the zeros).** The Dirichlet series $\zeta(\breve Q)=\sum_{n\ge1}n^{-\breve Q}$, with $n^{-\breve Q}=n^{-Q_{+}}\Pi_++n^{-Q_{-}}\Pi_-$, converges for $\operatorname{Re}Q_{+}>1$ and $\operatorname{Re}Q_{-}>1$; the functional equation holds coordinatewise; the element $\zeta(\breve Q)$ is a zero divisor exactly on the union of the two families of complex lines $\{Q_{+}=\rho\}$ and $\{Q_{-}=\rho\}$ for the zeros $\rho$ of the ordinary Zeta function; and $\zeta(\breve Q)=0$ exactly when both coordinates are ordinary zeros, that is on the coordinatewise product of the ordinary zero set with itself.
+**Theorem (the series and the zeros).** The Dirichlet series $\omega=\sum_{n\ge1}n^{-\breve Q}$, with $n^{-\breve Q}=n^{-Q_{+}}\Pi_++n^{-Q_{-}}\Pi_-$, converges for $\operatorname{Re}Q_{+}>1$ and $\operatorname{Re}Q_{-}>1$; the functional equation holds coordinatewise; the element $\omega$ is a zero divisor exactly on the union of the two families of complex lines $\{Q_{+}=\rho\}$ and $\{Q_{-}=\rho\}$ for the zeros $\rho$ of the ordinary Zeta function; and $\omega=0$ exactly when both coordinates are ordinary zeros, that is on the coordinatewise product of the ordinary zero set with itself.
 
 *Proof.* The series splits in the two coordinates into the two ordinary Dirichlet series, each convergent in its half-plane; the functional equation is coordinatewise; an idempotent combination $g_{1}(Q_{+})\Pi_++g_{2}(Q_{-})\Pi_-$ is zero exactly when both components vanish, so the zeros are the coordinatewise product of the two ordinary zero sets, and it is a zero divisor as soon as one component vanishes, which is the union of the two families of complex lines.
 
 **Corollary (the Euler product).** The Euler product
 $$
-\zeta(\breve Q)=\prod_{p}\bigl(1-p^{-\breve Q}\bigr)^{-1}
+\omega=\prod_{p}\bigl(1-p^{-\breve Q}\bigr)^{-1}
 $$
 holds in the region of convergence, the product over the primes, each factor defined by the geometric series $1+p^{-\breve Q}+p^{-2\breve Q}+\cdots$ in the algebra.
 
@@ -150,7 +150,7 @@ The higher special functions of a reduced biquaternion variable are the coeffici
 | $(a)_{n}$ | Pochhammer symbol |
 | $\Gamma(\breve Q)=\Gamma(Q_{+})\Pi_++\Gamma(Q_{-})\Pi_-$ | Gamma function |
 | $\mathrm{B}(\breve Q_{1},\breve Q_{2})$ | Beta function |
-| $\zeta(\breve Q)=\zeta(Q_{+})\Pi_++\zeta(Q_{-})\Pi_-$ | Zeta function |
+| $\omega=\omega\Pi_++\omega\Pi_-$ | Zeta function |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | Idempotent coordinates |
 
 ## Further Reading

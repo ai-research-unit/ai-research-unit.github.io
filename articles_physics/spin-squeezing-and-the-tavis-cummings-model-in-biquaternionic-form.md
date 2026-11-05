@@ -56,10 +56,10 @@ The subspace has dimension $N+1$, while the full $N$-spin space has dimension $2
 The collective coherent state is the product of $N$ identical spin-1/2 coherent states,
 
 $$
-|\theta,\phi\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}\exp(i\phi)|{-}\rangle_i\right),
+|\theta,\theta^{\mathrm{azm}}\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}\exp(i\theta^{\mathrm{azm}})|{-}\rangle_i\right),
 $$
 
-which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec S_{\mathrm{tot}}\rangle = \tfrac{N\hbar}{2}\vec u(\theta,\phi)$, and its transverse variance is isotropic,
+which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\theta^{\mathrm{azm}})$. Its mean spin is $\langle\vec S_{\mathrm{tot}}\rangle = \tfrac{N\hbar}{2}\vec u(\theta,\theta^{\mathrm{azm}})$, and its transverse variance is isotropic,
 
 $$
 \langle \tilde S_{\mathrm{tot},\perp}^2\rangle = \frac{N\hbar^2}{4},
@@ -173,7 +173,7 @@ $$
 which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution
 
 $$
-|\psi(\chi t')\rangle = \exp(-i\chi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)|\theta=\tfrac{\pi}{2},\phi=0\rangle
+|\psi(\chi t')\rangle = \exp(-i\chi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)|\theta=\tfrac{\pi}{2},\theta^{\mathrm{azm}}=0\rangle
 $$
 
 shears the noise ellipse: the variance in the $y$–$z$ plane develops an off-diagonal covariance, the smaller principal variance drops below $\hbar^2N/4$, and $\xi_R^2$ falls below $1$. The mean spin also decreases, since the twisting rotates different Dicke components at different rates; the competition between the shrinking variance and the shrinking mean spin fixes an optimal twisting time.
@@ -283,7 +283,7 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $\tilde S_{\mathrm{tot},\alpha} = \sum_i\tilde{S}_\alpha^{(i)}$ | Collective spin |
 | $\tilde S_{\mathrm{tot},\pm} = \tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Collective raising/lowering operators |
 | $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, $s_{\mathrm{tot}} = N/2$ | Dicke states |
-| $\vec u(\theta,\phi)$ | Direction of the collective mean spin |
+| $\vec u(\theta,\theta^{\mathrm{azm}})$ | Direction of the collective mean spin |
 | $a, a^\dagger$ | Bosonic mode operators |
 | $g$ | Single-spin coupling to the mode |
 | $\tilde{H} = \hbar\omega_c a^\dagger a + \omega_a\tilde S_{\mathrm{tot},3} + g(a^\dagger\tilde S_{\mathrm{tot},-}+a\tilde S_{\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |

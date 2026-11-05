@@ -43,7 +43,7 @@ The dichotomy the table records is between the rings that are connected, with $0
 | $\mathbb{C}^{\mathrm{spl}}$ | $\pi_1$ | $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \pi_1 \oplus \mathbb{R} \pi_2 \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{B}^{\mathrm{spl}}$ | $\pi_1$ | $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H}\pi_1 \oplus \mathbb{H}\pi_2$ | *Split-Biquaternion Zero Divisors* |
 | $R \times S$ | $(1,0)$ | the product by construction | *Examples of Rings and Fields* |
-| $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
+| $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\omega_3)$ | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]/(x^2-1)$ | $\Pi_{1,2}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
 | a Boolean ring $B$ | every idempotent $p$ | $B = Bp \oplus B(1-p)$ for every $p$, every element being idempotent | *Von Neumann Regular Rings* |
 | a commutative Artinian ring | the primitive idempotents | the product of the local rings $R p_i$ | *Noetherian and Artinian Rings* |

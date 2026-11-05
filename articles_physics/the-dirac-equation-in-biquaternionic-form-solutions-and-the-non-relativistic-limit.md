@@ -108,7 +108,7 @@ with $E=+\sqrt{\vec p^2+m^2}$ in both lines: the negative-frequency solution is 
 **The two parts in the split by the timelike unit.** That split gives the large and the small part of the non-relativistic section, and the ratio of their sizes is
 
 $$
-\frac{\|\tilde\Phi\|}{\|\tilde\chi\|}=\sqrt{\frac{E+m}{E-m}}
+\frac{\|\tilde\Phi\|}{\|\tilde\psi\|}=\sqrt{\frac{E+m}{E-m}}
 $$
 
 for a normalized positive-frequency solution, since the two amplitudes are $\sqrt{E+m}$ and $\sqrt{E-m}$ up to the common normalization. The two ratios, $\sqrt{(E+|\vec p|)/(E-|\vec p|)}$ in the values and $\sqrt{(E+m)/(E-m)}$ in the timelike split, are different numbers and neither may be substituted for the other: the first compares the two chiralities, the second compares the large and the small part.
@@ -187,7 +187,7 @@ is Hermitian, satisfies $\tilde\rho^2=\tilde\rho$ and $\mathrm{Tr}\,\tilde\rho=1
 **The split by the timelike unit.** The rest energy dominates the dynamics, and the unit that separates it from the kinetic part is $\vec e_x$: right multiplication by $i\vec e_x$ takes the two values $\pm1$, and the field is the sum of its two parts,
 
 $$
-\tilde\Psi=\tilde\Phi+\tilde\chi,\qquad i\tilde\Phi\vec e_x=\tilde\Phi,\qquad i\tilde\chi\vec e_x=-\tilde\chi ,
+\tilde\Psi=\tilde\Phi+\tilde\psi,\qquad i\tilde\Phi\vec e_x=\tilde\Phi,\qquad i\tilde\psi\vec e_x=-\tilde\psi ,
 $$
 
 the large part and the small part. The action $\mathcal{D}$ is not of one value under that unit: its first term is that same right multiplication by $i\vec e_x$, so it keeps the value, and its spatial part reverses it, because $\vec e_k$ and $\vec e_y$ both anticommute with $\vec e_x$. Write
@@ -201,14 +201,14 @@ so that $\mathcal{O}$ is odd, $i(\mathcal{O}\tilde Q)\vec e_x=-\mathcal{O}(i\til
 **Minimal coupling.** Minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with $A_\mu=(\Phi,-\vec A)$ and $ϙ$ the charge of the field: $E\to E-ϙ\Phi$ in the even term and $p_k\to\pi_k=p_k-ϙA_k$ in $\mathcal{O}$. The equation keeps its shape, and the pair reads, on the two parts,
 
 $$
-(E-ϙ\Phi-m)\tilde\Phi=-\mathcal{O}\tilde\chi,\qquad
-(E-ϙ\Phi+m)\tilde\chi=\mathcal{O}\tilde\Phi .
+(E-ϙ\Phi-m)\tilde\Phi=-\mathcal{O}\tilde\psi,\qquad
+(E-ϙ\Phi+m)\tilde\psi=\mathcal{O}\tilde\Phi .
 $$
 
 The second line is the one multiplied by the large rest energy, so the small part is generated from the large one:
 
 $$
-\tilde\chi=\frac{1}{E-ϙ\Phi+m}\,\mathcal{O}\tilde\Phi\;\approx\;\frac{1}{2m}\,\mathcal{O}\tilde\Phi ,
+\tilde\psi=\frac{1}{E-ϙ\Phi+m}\,\mathcal{O}\tilde\Phi\;\approx\;\frac{1}{2m}\,\mathcal{O}\tilde\Phi ,
 $$
 
 the approximation being the one in which the kinetic energy and the potential are small against the rest energy. This is the algebraic statement that the small part is the velocity acting on the large one, and it is the only step of the limit that discards anything.
@@ -360,7 +360,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\mathcal{H}(\tilde Q)=i\vec u_p\tilde Q$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity; values $\pm1$ |
 | $\tilde\xi_{R\pm},\ \tilde\xi_{L\pm}$ | Helicity elements of the two values, $\mathrm{Tr}(\tilde\xi^{*}\tilde\xi)=1$ |
 | $\tilde w_\pm(\vec p),\ \tilde v_\pm(\vec p)$ | Positive- and negative-frequency solutions |
-| $\tilde\Phi,\ \tilde\chi$ | Large and small part, the values plus one and minus one under right multiplication by $i\vec e_x$ |
+| $\tilde\Phi,\ \tilde\psi$ | Large and small part, the values plus one and minus one under right multiplication by $i\vec e_x$ |
 | $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{M}_+$; $\vec u$ the Bloch vector |
 | $S,\ P$ | Scalar and pseudoscalar bilinears |
 | $j_0,\ \vec j$, $\tilde J=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |

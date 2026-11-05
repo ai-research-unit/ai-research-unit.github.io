@@ -126,7 +126,7 @@ For $\tilde Q=\vec e_x$ one has $(L_{\vec e_x})^{\dagger}=R_{\vec e_x}$, a right
 
 ### The Centre Recovers the Property in One Dimension
 
-For $\tilde Q=\zeta e_t$ one has $L_{\zeta e_t}=\zeta\,\mathrm{id}$, so $\mathcal{M}$ contains its adjoint only on the scalars, $(L_{\zeta e_t})^{\dagger}=\bar\zeta\,\mathrm{id}$; the one-dimensional algebra $\mathbb{C}\,\mathrm{id}$ is a Krein–von Neumann algebra, and it is the largest adjoint-closed subalgebra of $\mathcal{M}$.
+For $\tilde Q=\varkappa^{\mathrm{crd}} e_t$ one has $L_{\varkappa^{\mathrm{crd}} e_t}=\varkappa^{\mathrm{crd}}\,\mathrm{id}$, so $\mathcal{M}$ contains its adjoint only on the scalars, $(L_{\varkappa^{\mathrm{crd}} e_t})^{\dagger}=\bar\varkappa^{\mathrm{crd}}\,\mathrm{id}$; the one-dimensional algebra $\mathbb{C}\,\mathrm{id}$ is a Krein–von Neumann algebra, and it is the largest adjoint-closed subalgebra of $\mathcal{M}$.
 
 ### The Two Envelopes
 

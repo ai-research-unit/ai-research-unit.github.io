@@ -22,7 +22,7 @@ $$
 
 and the **positive semidefinite order** is read on the eigenvalues: $A\ge0$ iff all $\lambda_k\ge0$. The square root $A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$ and the absolute value $|A|=(A^*A)^{1/2}$ follow.
 
-The article proves the Hermitian spectral theorem by the eigenvector induction, constructs the spectral projectors, and develops the operator norm, the positive semidefinite order and the functional calculus. It then treats the **normal** case (the $*$-unitary matrices, including the root $H=\sum_k\zeta_kE_{kk}$) and the **general** case: a matrix with simple spectrum has Lagrange projectors, but they are not orthogonal unless the matrix is normal for the standard form. The distinction is the difference between the algebraic spectral decomposition of the root and the Hilbert-space spectral theorem.
+The article proves the Hermitian spectral theorem by the eigenvector induction, constructs the spectral projectors, and develops the operator norm, the positive semidefinite order and the functional calculus. It then treats the **normal** case (the $*$-unitary matrices, including the root $H=\sum_k\omega_kE_{kk}$) and the **general** case: a matrix with simple spectrum has Lagrange projectors, but they are not orthogonal unless the matrix is normal for the standard form. The distinction is the difference between the algebraic spectral decomposition of the root and the Hilbert-space spectral theorem.
 
 The article assumes the Hermitian form, the Frobenius form and the trace. It uses the determinant and the characteristic polynomial; the general case uses the Jordan decomposition through the Dunford calculus, while the Hermitian case uses only the spectral theorem. The polar decomposition and the singular value decomposition are the next article.
 
@@ -148,7 +148,7 @@ and the Jordan form is diagonal. For a general matrix, the minimal polynomial is
 
 ### The Root Versus the Hermitian Case
 
-**Proposition.** The standard root $H=\sum_k\zeta_kE_{kk}$ is $*$-unitary, hence normal; its spectral projectors are $E_{kk}$, and they are orthogonal for the standard Hermitian form. A general conjugate $gHg^{-1}$ has spectral projectors $gE_{kk}g^{-1}$, which are idempotent but not self-adjoint unless the columns of $g$ are mutually orthogonal.
+**Proposition.** The standard root $H=\sum_k\omega_kE_{kk}$ is $*$-unitary, hence normal; its spectral projectors are $E_{kk}$, and they are orthogonal for the standard Hermitian form. A general conjugate $gHg^{-1}$ has spectral projectors $gE_{kk}g^{-1}$, which are idempotent but not self-adjoint unless the columns of $g$ are mutually orthogonal.
 
 **Proof.** $H$ is diagonal with entries of modulus $1$, so $H^*H=I$; it is normal. The spectral projectors of a diagonal matrix are the diagonal units $E_{kk}$, which are orthogonal. Conjugation sends the projectors to $gE_{kk}g^{-1}$; this is self-adjoint iff $gE_{kk}g^{-1}=g^{-*}E_{kk}g^*$ for all $k$, which holds iff $g^*g$ is diagonal, i.e., the columns of $g$ are mutually orthogonal.
 

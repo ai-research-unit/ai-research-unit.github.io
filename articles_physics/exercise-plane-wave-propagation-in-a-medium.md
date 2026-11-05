@@ -228,10 +228,10 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \boxed{\;\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
-This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde P$, with $W_\phi = \partial/\partial\phi\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $\exp(\pm 2i\phi)$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\phi\tilde P$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\theta^{\mathrm{pha}} = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ and $W = W(\theta^{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta^{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\theta^{\mathrm{pha}}\,\tilde P$, with $W_\theta^{\mathrm{pha}} = \partial/\partial\theta^{\mathrm{pha}}\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta^{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta^{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\theta^{\mathrm{pha}}\tilde P$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
-= W_\phi\,\tilde P\left(e_t + i\vec u_k\right).
+= W_\theta^{\mathrm{pha}}\,\tilde P\left(e_t + i\vec u_k\right).
 $$
 Evaluating the product with $\vec k = k\vec u_k$, $k = \omega/c$, and $\vec u_k^2 = -e_t$:
 $$

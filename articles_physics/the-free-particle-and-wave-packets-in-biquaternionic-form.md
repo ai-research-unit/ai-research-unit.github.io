@@ -295,13 +295,13 @@ The closed forms above were checked numerically. Using the density-width normali
 The packet integral is dominated, for large $t'$ or small $\hbar$, by the stationary points of its phase. Writing the exponent for the free case,
 
 $$
-\varphi(\vec k) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \frac{\hbar k^2}{2m}t',
+\theta^{\mathrm{pha}}(\vec k) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \frac{\hbar k^2}{2m}t',
 $$
 
 the stationary condition is
 
 $$
-\nabla_{\vec k}\varphi = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{\hbar\vec k}{m}t' = 0
+\nabla_{\vec k}\theta^{\mathrm{pha}} = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{\hbar\vec k}{m}t' = 0
 \qquad\Longrightarrow\qquad
 (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{\hbar\vec k}{m}t' = \vec v_g t' .
 $$

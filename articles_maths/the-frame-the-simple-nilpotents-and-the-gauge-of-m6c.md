@@ -58,14 +58,14 @@ $$
 **Definition.** The **root of the frame** is
 
 $$
-H_F=\sum_{i=1}^{6}\zeta_iE_{ii},
+H_F=\sum_{i=1}^{6}\omega_iE_{ii},
 $$
 
-with $\zeta_i=\zeta^{i-1}$ the six sixth roots of unity.
+with $\omega_i=\omega^{i-1}$ the six sixth roots of unity.
 
 **Proposition.** $H_F$ is a root in the sense of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*: $H_F^6=I_6$, its eigenvalues are the six roots, each with multiplicity one, and its Lagrange projectors are the diagonal units $E_{ii}$.
 
-**Proof.** In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\zeta_i$ is the coordinate projector $E_{ii}$.
+**Proof.** In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\omega_1,\dots,\omega_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\omega_i$ is the coordinate projector $E_{ii}$.
 
 **Corollary.** The frame is a root together with one nonzero vector in each of its six lines. The root is the frame modulo the scales; the scales are the gauge.
 
@@ -196,7 +196,7 @@ $$
 
 **Corollary.** The gauge is an inner automorphism of $M_6(\mathbb{C})$. It fixes the root $H_F$, fixes every idempotent $E_{ii}$, and acts freely on the frame and on the tuple of simple nilpotents.
 
-**Proof.** Conjugation by an invertible matrix is an algebra automorphism. The root $H_F=\sum_i\zeta_iE_{ii}$ is a linear combination of the fixed idempotents, hence fixed. The tuple $(E_{12},\dots,E_{56})$ is rescaled by $(\lambda_1,\dots,\lambda_5)$, so no nonidentity gauge fixes the whole tuple; the frame is rescaled by the $t_i$, so no nonidentity gauge fixes it either.
+**Proof.** Conjugation by an invertible matrix is an algebra automorphism. The root $H_F=\sum_i\omega_iE_{ii}$ is a linear combination of the fixed idempotents, hence fixed. The tuple $(E_{12},\dots,E_{56})$ is rescaled by $(\lambda_1,\dots,\lambda_5)$, so no nonidentity gauge fixes the whole tuple; the frame is rescaled by the $t_i$, so no nonidentity gauge fixes it either.
 
 **Remark.** The gauge is therefore not a change of the algebra and not a change of the root. It is a change of the frame inside the root, and its effect on the matrix of an element is the conjugation
 
@@ -349,7 +349,7 @@ The cocycle $c_{ij}c_{jk}=c_{ik}$ forces $c_{ij}=t_i/t_j$ and $c_{ii}=1$: no six
 | $F=(v_1,\dots,v_6)$ | a frame, an ordered basis up to overall scale |
 | $v_j^{\vee}$ | the dual basis, $v_j^{\vee}(v_k)=\delta_{jk}$ |
 | $E_{ij}=v_iv_j^{\vee}$ | the matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$ |
-| $H_F=\sum_i\zeta_iE_{ii}$ | the root of the frame |
+| $H_F=\sum_i\omega_iE_{ii}$ | the root of the frame |
 | $a_{ij}$ | the coordinates of $A$ in the frame |
 | $E_{i,i+1}$ | the five simple nilpotents |
 | $\lambda_i=t_i/t_{i+1}$ | the gauge parameters, $i=1,\dots,5$ |

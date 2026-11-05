@@ -20,11 +20,11 @@ The article proceeds as follows. The next section states the standard theorem an
 
 ## The Wick Theorem in the Standard Theory
 
-Let $\phi^{\mathrm{fop}}_i = \phi^{\mathrm{fop}}(x_i)$ be free fields, bosonic or fermionic, and let $T$ denote time ordering. The **Wick theorem** states that
+Let $\chi^{\mathrm{fop}}_i = \chi^{\mathrm{fop}}(x_i)$ be free fields, bosonic or fermionic, and let $T$ denote time ordering. The **Wick theorem** states that
 $$
-T\big\{\phi^{\mathrm{fop}}_1\phi^{\mathrm{fop}}_2\cdots\phi^{\mathrm{fop}}_n\big\}
+T\big\{\chi^{\mathrm{fop}}_1\chi^{\mathrm{fop}}_2\cdots\chi^{\mathrm{fop}}_n\big\}
 \;=\;
-:\!\phi^{\mathrm{fop}}_1\phi^{\mathrm{fop}}_2\cdots\phi^{\mathrm{fop}}_n\!:
+:\!\chi^{\mathrm{fop}}_1\chi^{\mathrm{fop}}_2\cdots\chi^{\mathrm{fop}}_n\!:
 \;+\;
 \sum_{\text{single contractions}} :\!\cdots\!:
 \;+\;
@@ -34,10 +34,10 @@ T\big\{\phi^{\mathrm{fop}}_1\phi^{\mathrm{fop}}_2\cdots\phi^{\mathrm{fop}}_n\big
 $$
 The terms are indexed by the number of **contractions**: a complete contraction of $n$ fields is a partition of the $n$ labels into $n/2$ unordered pairs, each pair replaced by its two-point function. Odd $n$ has no complete contraction, and the sum terminates at the largest even number. Taking the vacuum expectation value kills every normal-ordered term, since $:\!\cdots\!:$ is defined to have vanishing vacuum expectation, leaving
 $$
-\big\langle 0\big|T\big\{\phi^{\mathrm{fop}}_1\cdots\phi^{\mathrm{fop}}_n\big\}\big|0\big\rangle
+\big\langle 0\big|T\big\{\chi^{\mathrm{fop}}_1\cdots\chi^{\mathrm{fop}}_n\big\}\big|0\big\rangle
 \;=\;
 \sum_{\text{complete pairings}}
-(\pm)\prod_{\text{pairs}}\big\langle 0\big|T\big\{\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j\big\}\big|0\big\rangle .
+(\pm)\prod_{\text{pairs}}\big\langle 0\big|T\big\{\chi^{\mathrm{fop}}_i\chi^{\mathrm{fop}}_j\big\}\big|0\big\rangle .
 $$
 The two-point function is the **Feynman propagator**, and the product over pairs is the product of propagators joining the points. This is the content of the theorem in the form in which perturbation theory uses it.
 
@@ -47,8 +47,8 @@ T\big\{\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j\big\} = \Theta(t'_i-t'_j)\,\ps
 $$
 with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the signature of the pairing:
 $$
-\big\langle T\,\phi^{\mathrm{fop}}_1\cdots\phi^{\mathrm{fop}}_{2m}\big\rangle_t
-= \sum_{\text{pairings } \pi} \mathrm{sgn}(\pi)\prod_{(i,j)\in\pi}\big\langle T\,\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j\big\rangle_t ,
+\big\langle T\,\chi^{\mathrm{fop}}_1\cdots\chi^{\mathrm{fop}}_{2m}\big\rangle_t
+= \sum_{\text{pairings } \pi} \mathrm{sgn}(\pi)\prod_{(i,j)\in\pi}\big\langle T\,\chi^{\mathrm{fop}}_i\chi^{\mathrm{fop}}_j\big\rangle_t ,
 $$
 with $\mathrm{sgn}(\pi)=+1$ for bosons. The theorem is proved by induction on $n$ from the canonical (anti)commutation relations, and it is standard; it is cited as such and used below.
 
@@ -58,15 +58,15 @@ Two definitions make the theorem precise.
 
 **Contraction.** The contraction of two fields is their time-ordered vacuum expectation value,
 $$
-\Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j\big|0\big\rangle ,
+\Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\chi^{\mathrm{fop}}_i\chi^{\mathrm{fop}}_j\big|0\big\rangle ,
 $$
 the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P = iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-m^2$ on the mass shell. The article does not rebuild them.
 
-**Normal ordering.** The normal-ordered product $:\!\phi^{\mathrm{fop}}_1\cdots\phi^{\mathrm{fop}}_n\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
+**Normal ordering.** The normal-ordered product $:\!\chi^{\mathrm{fop}}_1\cdots\chi^{\mathrm{fop}}_n\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
 $$
-\big\langle 0\big|:\!\phi^{\mathrm{fop}}_1\cdots\phi^{\mathrm{fop}}_n\!:\big|0\big\rangle = 0,
+\big\langle 0\big|:\!\chi^{\mathrm{fop}}_1\cdots\chi^{\mathrm{fop}}_n\!:\big|0\big\rangle = 0,
 \qquad
-\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j = \,:\!\phi^{\mathrm{fop}}_i\phi^{\mathrm{fop}}_j\!:\, + \, \Delta_{ij}\,e_t ,
+\chi^{\mathrm{fop}}_i\chi^{\mathrm{fop}}_j = \,:\!\chi^{\mathrm{fop}}_i\chi^{\mathrm{fop}}_j\!:\, + \, \Delta_{ij}\,e_t ,
 $$
 for $n=2$, together with linearity. The second equation is the theorem at $n=2$, and it shows that the two definitions of normal ordering differ by the contraction.
 

@@ -134,7 +134,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{opp}$ | the opposite algebra |
 | $\mathrm{orb}$ | the orbital generators |
 | $\mathrm{out}$ | the outgoing solution |
-| $\mathrm{pau}$ | the standard Peirce frame of the regular matrices, $L^{\mathrm{pau}}(\tilde Q)$ |
+| $\mathrm{pau}$ | related to the Pauli matrices |
 | $\mathrm{per}$ | the periodic cyclic complex; the periodic integration domain |
 | $\mathrm{pol}$ | the polarisation vector |
 | $\mathrm{pot}$ | the potential energy |
@@ -181,7 +181,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\theta^{\mathrm{lna}}$ | the angle of the line $a$ |
 | $\theta^{\mathrm{lnb}}$ | the angle of the line $b$ |
 | $\theta^{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
-| $\theta^{\mathrm{pha}}$ | the phase angle of a complex number |
+| $\theta^{\mathrm{pha}}$ | the phase angle of a complex number or of a gate, $\theta^{\mathrm{pha}}=\arg\omega$ |
 | $\theta^{\mathrm{pla}}$ | the angle in the first invariant plane |
 | $\theta^{\mathrm{plb}}$ | the angle in the second invariant plane |
 | $\theta^{\mathrm{prc}}$ | the precession angle of a gyroscope |
@@ -195,7 +195,9 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\theta^{\mathrm{wav}}$ | the angle between a wave vector and a boost |
 | $\theta^{\mathrm{wgn}}$ | the Wigner angle of a boost product |
 
-**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,330 occurrences in the two corpora; the largest, $\theta^{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
+**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,457 occurrences in the two corpora; the largest, $\theta^{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
+
+**A phase is written here and not in a letter of its own.** The 91 occurrences that $\phi$ carried as a phase are $\theta^{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.
 
 **A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, and §*The Subscripts* rules on the low slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.
 
@@ -276,7 +278,7 @@ ${}_{\natural}$, ${}_{\sharp}$, ${}_{\checkmark}$, ${}_{\maltese}$, ${}_{\blackl
 
 **Letters.** ${}_{\text{\AE}}$, ${}_{\text{\O}}$, ${}_{\text{\ss}}$, ${}_{\text{\ae}}$, ${}_{\eth}$, ${}_{\text{\o}}$, ${}_{\text{\i}}$, ${}_{\text{\OE}}$, ${}_{\text{\oe}}$, ${}_{\text{\j}}$,
 ${}_{\Gamma}$, ${}_{\Delta}$, ${}_{\Theta}$, ${}_{\Lambda}$, ${}_{\Xi}$, ${}_{\Pi}$, ${}_{\Sigma}$, ${}_{\Upsilon}$, ${}_{\Phi}$, ${}_{\Psi}$,
-${}_{\Omega}$, ${}_{\alpha}$, ${}_{\beta}$, ${}_{\gamma}$, ${}_{\delta}$, ${}_{\varepsilon}$, ${}_{\zeta}$, ${}_{\eta}$, ${}_{\theta}$, ${}_{\iota}$,
+${}_{\Omega}$, ${}_{\alpha}$, ${}_{\beta}$, ${}_{\gamma}$, ${}_{\delta}$, ${}_{\varepsilon}$, ${}_{\omega}$, ${}_{\eta}$, ${}_{\theta}$, ${}_{\iota}$,
 ${}_{\kappa}$, ${}_{\lambda}$, ${}_{\mu}$, ${}_{\nu}$, ${}_{\xi}$, ${}_{\omicron}$, ${}_{\pi}$, ${}_{\rho}$, ${}_{\varsigma}$, ${}_{\sigma}$,
 ${}_{\tau}$, ${}_{\upsilon}$, ${}_{\varphi}$, ${}_{\chi}$, ${}_{\psi}$, ${}_{\omega}$, ${}_{\vartheta}$, ${}_{\phi}$, ${}_{\varpi}$, ${}_{\digamma}$,
 ${}_{\varkappa}$, ${}_{\varrho}$, ${}_{\epsilon}$, ${}_{\hbar}$, ${}_{\Im}$, ${}_{\ell}$, ${}_{\Re}$, ${}_{\Finv}$, ${}_{\aleph}$, ${}_{\beth}$,

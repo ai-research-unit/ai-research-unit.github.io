@@ -64,19 +64,19 @@ The nonlinear sigma model is not postulated: it is what a linear model becomes b
 The linear model is the central scalar of the framework with the invariant potential of the companion articles,
 
 $$
-\tilde\Phi = \frac{1}{\sqrt2}\left(\phi_1 + i\phi_2\right)e_t ,
+\tilde\Phi = \frac{1}{\sqrt2}\left(\chi_1 + i\chi_2\right)e_t ,
 \qquad
 V = \frac{\lambda}{4}\left(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) - v_0^2\right)^2 ,
 \qquad
-\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) = \frac12\left(\phi_1^2 + \phi_2^2\right),
+\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi) = \frac12\left(\chi_1^2 + \chi_2^2\right),
 $$
 
-whose vacuum sits at $\phi_1 = \sqrt2\,v_0$, $\phi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\varphi\rangle|$ is the order parameter in the normalisation $\rho = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(\rho - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
+whose vacuum sits at $\chi_1 = \sqrt2\,v_0$, $\chi_2 = 0$, and whose two real components have the masses $m_h^2 = \lambda v_0^2$ and $m_\theta^2 = 0$. Here $v_0 = |\langle\chi\rangle|$ is the order parameter in the normalisation $\rho = v_0^2$, so that $f = \sqrt2\,v_0$; the companion Higgs article writes the same potential as $\beta(\rho - v^2/2)^2$, with $v$ the conventional vacuum expectation value, $v = \sqrt2\,v_0$. In the electroweak case $v$ is therefore the conventional $246$ GeV value while the field's own expectation value is $174$ GeV. Writing
 
 $$
-\phi_1 = \sqrt2\,v_0 + h,
+\chi_1 = \sqrt2\,v_0 + h,
 \qquad
-\phi_2 = \vartheta^{\mathrm{fld}} ,
+\chi_2 = \vartheta^{\mathrm{fld}} ,
 $$
 
 the kinetic term is canonical, $\mathcal{L}^{\mathrm{kin}} = \frac12[(\partial h)^2 + (\partial\vartheta^{\mathrm{fld}})^2]$, and the potential depends on the modulus alone, so the angular field $\vartheta^{\mathrm{fld}}$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\vartheta^{\mathrm{fld}}$ involves $h$, the resulting Lagrangian for $\vartheta^{\mathrm{fld}}$ alone contains only derivatives, and its lowest-order term is
@@ -330,7 +330,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\tilde U = \exp(\vec\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_t$ |
 | $f$ | Decay constant of the broken symmetry |
 | $\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)$, $V = \frac{\lambda}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |
-| $\phi_1 = \sqrt2 v_0 + h$, $\phi_2 = \vartheta^{\mathrm{fld}}$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
+| $\chi_1 = \sqrt2 v_0 + h$, $\chi_2 = \vartheta^{\mathrm{fld}}$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
 | $j^R_\mu = \tilde U^{*}\partial/\partial Q_{1,\mu}\,\tilde U$, $j^L_\mu = \partial/\partial Q_{1,\mu}\,\tilde U\,\tilde U^{*}$ | Maurer–Cartan currents |
 | $\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) of the group-valued field |
 | $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Left–right global symmetry; diagonal $SU(2)_V$ unbroken |

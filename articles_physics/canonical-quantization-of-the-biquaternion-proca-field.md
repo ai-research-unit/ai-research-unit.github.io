@@ -10,7 +10,7 @@ $$
 
 whose divergence is no longer empty, and with a longitudinal polarization that is physical rather than removable. Its quantization differs from that of the Maxwell field in one structural way and in one only: the two constraints that the electromagnetic field carries as **first-class** constraints, and that generate its gauge freedom, become **second-class** when the mass term is present, and the gauge freedom disappears. The phase-space count changes from two to three, and no indefinite metric and no subsidiary condition are needed.
 
-The companion article *Canonical Quantization of the Biquaternion Maxwell Field* establishes the massless case inside the biquaternion framework: the potential $\tilde{A}\in\mathbb{M}_-$, the field strength $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the Legendre transform with $\pi_\mu=-F_{t\mu}$ and the primary constraint $\pi_0\approx0$, Gauss's law as the secondary constraint, the first-class character of both, the Gupta–Bleuler mode expansion with the indefinite metric $\zeta=(-1,+1,+1,+1)$, and the two transverse physical polarizations. It records, at the point where the constraint count is made, that *if the gauge field is given a mass the gauge freedom is absent, the constraint structure changes, and a third polarization becomes physical*. The present article takes that sentence as its programme and works it out.
+The companion article *Canonical Quantization of the Biquaternion Maxwell Field* establishes the massless case inside the biquaternion framework: the potential $\tilde{A}\in\mathbb{M}_-$, the field strength $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the Legendre transform with $\pi_\mu=-F_{t\mu}$ and the primary constraint $\pi_0\approx0$, Gauss's law as the secondary constraint, the first-class character of both, the Gupta–Bleuler mode expansion with the indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, and the two transverse physical polarizations. It records, at the point where the constraint count is made, that *if the gauge field is given a mass the gauge freedom is absent, the constraint structure changes, and a third polarization becomes physical*. The present article takes that sentence as its programme and works it out.
 
 The Proca equation in biquaternionic form is the classical parent of this article; its conventions are those of the Maxwell companions, and the reader is referred to the series conventions for the algebra. The results established here are the following.
 
@@ -154,15 +154,15 @@ Gauss's law **deformed by the mass term**. At $\mu=0$ this is the Maxwell compan
 The two constraints are
 
 $$
-\phi_1 = \pi_0 \approx 0,
+\chi_1 = \pi_0 \approx 0,
 \qquad
-\phi_2 = \sum_i \partial/\partial Q_i\,\pi_i + \mu^2A_0 \approx 0 .
+\chi_2 = \sum_i \partial/\partial Q_i\,\pi_i + \mu^2A_0 \approx 0 .
 $$
 
 Their Poisson bracket is
 
 $$
-\{\phi_1(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\phi_2(\vec y)\}
+\{\chi_1(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\chi_2(\vec y)\}
 = \mu^2\{\pi_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),A_0(\vec y)\}
 = -\mu^2\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y) \neq 0,
 $$
@@ -207,7 +207,7 @@ $$
 \left[a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}}_s(\vec k)\right]=0 ,
 $$
 
-with **all three polarizations of positive norm**. This is the sharpest contrast with the massless case. There the covariance of the description forced a fourth, timelike polarization of negative norm and the indefinite metric $\zeta=(-1,+1,+1,+1)$, and the physical subspace had to be selected by the Gupta–Bleuler subsidiary condition. Here the constraint analysis has already removed the fourth direction, the remaining three are spacelike and positive-norm, and no subsidiary condition is imposed. The Fock space is the symmetric algebra of the three-dimensional polarization module at each momentum, and its norm is positive definite.
+with **all three polarizations of positive norm**. This is the sharpest contrast with the massless case. There the covariance of the description forced a fourth, timelike polarization of negative norm and the indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, and the physical subspace had to be selected by the Gupta–Bleuler subsidiary condition. Here the constraint analysis has already removed the fourth direction, the remaining three are spacelike and positive-norm, and no subsidiary condition is imposed. The Fock space is the symmetric algebra of the three-dimensional polarization module at each momentum, and its norm is positive definite.
 
 The state $|0\rangle$, annihilated by every $a^{\mathrm{fop}}_r(\vec p)$, is the field vacuum. The one-particle states
 
@@ -259,7 +259,7 @@ The massless limit of the numerator is singular, as it must be: $(\delta_{\mu\nu
 
 The massless limit is where the article's structural point is sharpest, so it is worth stating as a limit of the constraint analysis rather than as a limit of the propagator.
 
-At $\mu\neq0$ the two constraints $\phi_1=\pi_0$ and $\phi_2=\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0$ are second class, with $\{\phi_1,\phi_2\}=-\mu^2\delta^{(3)}\neq0$. As $\mu\to0$ the bracket vanishes, the constraints become **first class**, and the constraint pair no longer removes a physical direction but generates a gauge transformation. The gauge transformation it generates is the Maxwell one,
+At $\mu\neq0$ the two constraints $\chi_1=\pi_0$ and $\chi_2=\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0$ are second class, with $\{\chi_1,\chi_2\}=-\mu^2\delta^{(3)}\neq0$. As $\mu\to0$ the bracket vanishes, the constraints become **first class**, and the constraint pair no longer removes a physical direction but generates a gauge transformation. The gauge transformation it generates is the Maxwell one,
 
 $$
 \tilde{A}\;\longmapsto\;\tilde{A}-\tilde{\nabla}\Gamma,
@@ -299,7 +299,7 @@ The Proca field in biquaternionic form is the massive vector field, a material-s
 
 The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}(\tilde{\nabla}^{\natural}(\mu^2\tilde{A}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}=0$.
 
-The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\phi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
+The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\chi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
 
 The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 

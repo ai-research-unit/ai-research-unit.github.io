@@ -20,7 +20,7 @@ $$
 P_k=\frac{1}{2\pi i}\oint_{\gamma_k}(tI-A)^{-1}\,dt,
 $$
 
-with $\gamma_k$ a small circle around $\lambda_k$ separating it from the other eigenvalues. For $H$ with $H^{3}=I$ and simple spectrum, the spectral projectors are exactly the Lagrange idempotents $P_k=\prod_{l\neq k}(H-\zeta_l I)/(\zeta_k-\zeta_l)$ of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the root is the special case in which the eigenvalues are fixed at the cube roots of unity.
+with $\gamma_k$ a small circle around $\lambda_k$ separating it from the other eigenvalues. For $H$ with $H^{3}=I$ and simple spectrum, the spectral projectors are exactly the Lagrange idempotents $P_k=\prod_{l\neq k}(H-\omega_l I)/(\omega_k-\omega_l)$ of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the root is the special case in which the eigenvalues are fixed at the cube roots of unity.
 
 The article proves the Lagrange formula, identifies the projectors with the residues of the resolvent, treats the repeated and the Jordan cases, computes the root case explicitly, and relates the spectrum to the trace form, the spectral radius and the discriminant. The cubic and its discriminant are *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*; the Jordan classification is *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*.
 
@@ -334,31 +334,31 @@ The spectral decomposition is $A=2P_2+3P_3+N$, with a nilpotent part in the repe
 **The root.** Let $H\in M_3(\mathbb{C})$ satisfy $H^{3}=I$ and have simple spectrum. Its eigenvalues are the three cube roots of unity
 
 $$
-\zeta_1=1,\qquad \zeta_2=\omega=e^{2\pi i/3},\qquad \zeta_3=\omega^{2}=e^{4\pi i/3},
+\omega_1=1,\qquad \omega_2=\omega=e^{2\pi i/3},\qquad \omega_3=\omega^{2}=e^{4\pi i/3},
 $$
 
 and its characteristic polynomial is $t^{3}-1$. The spectral projectors are
 
 $$
-P_k=\frac{H^{2}+\zeta_k H+\zeta_k^{2}I}{3\zeta_k^{2}}
-=\frac{(H-\zeta_l I)(H-\zeta_m I)}{(\zeta_k-\zeta_l)(\zeta_k-\zeta_m)},
+P_k=\frac{H^{2}+\omega_k H+\omega_k^{2}I}{3\omega_k^{2}}
+=\frac{(H-\omega_l I)(H-\omega_m I)}{(\omega_k-\omega_l)(\omega_k-\omega_m)},
 $$
 
 where $\{k,l,m\}=\{1,2,3\}$.
 
-**Proof.** The denominator is $\prod_{l\neq k}(\zeta_k-\zeta_l)=3\zeta_k^{2}$, computed from the identity $\prod_{l\neq k}(X-\zeta_l)=X^{2}+\zeta_kX+\zeta_k^{2}$ at $X=\zeta_k$, which gives $3\zeta_k^{2}$. The numerator is $(H-\zeta_l I)(H-\zeta_m I)=H^{2}-(\zeta_l+\zeta_m)H+\zeta_l\zeta_mI=H^{2}+\zeta_kH+\zeta_k^{2}I$, because $\zeta_l+\zeta_m=-\zeta_k$ and $\zeta_l\zeta_m=\zeta_k^{-1}=\zeta_k^{2}$. The Lagrange theorem then gives the projector.
+**Proof.** The denominator is $\prod_{l\neq k}(\omega_k-\omega_l)=3\omega_k^{2}$, computed from the identity $\prod_{l\neq k}(X-\omega_l)=X^{2}+\omega_kX+\omega_k^{2}$ at $X=\omega_k$, which gives $3\omega_k^{2}$. The numerator is $(H-\omega_l I)(H-\omega_m I)=H^{2}-(\omega_l+\omega_m)H+\omega_l\omega_mI=H^{2}+\omega_kH+\omega_k^{2}I$, because $\omega_l+\omega_m=-\omega_k$ and $\omega_l\omega_m=\omega_k^{-1}=\omega_k^{2}$. The Lagrange theorem then gives the projector.
 
 **The spectral identities.** Since $H^{3}=I$, the interpolation identity for the polynomial $t^{3}$ gives
 
 $$
-H^{3}=\sum_k\zeta_k^{3}P_k=\sum_k P_k=I,
+H^{3}=\sum_k\omega_k^{3}P_k=\sum_k P_k=I,
 $$
 
 and the identities for $t$ and $t^{2}$ give
 
 $$
-H=\sum_k\zeta_kP_k,\qquad
-H^{2}=\sum_k\zeta_k^{2}P_k .
+H=\sum_k\omega_kP_k,\qquad
+H^{2}=\sum_k\omega_k^{2}P_k .
 $$
 
 The grading is the $\mathbb{Z}/3$ decomposition
@@ -472,11 +472,11 @@ $$
 
 **The discriminant locus.** The set $\Delta=0$ is the union of the loci where two eigenvalues coincide. It is a hypersurface in $M_3$, of complex dimension $8$ (real dimension $16$), and it is the singular set of the eigenvalue map. On its complement the eigenvalues are three holomorphic functions, and the projectors are three holomorphic rank-one idempotents. The strata are *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*.
 
-**Worked example.** For $A=\operatorname{diag}(1,2,4)$ and $B=\operatorname{diag}(0,1,0)$, the derivative of the second eigenvalue in the direction $B$ is $\operatorname{tr}(P_2B)=\operatorname{tr}(E_{22}B)=1$, which is the derivative of $2+\epsilon$ at $\epsilon=0$. For the root $H$ and a direction $B$, the derivative of the eigenvalue $\zeta_k$ is $\operatorname{tr}(P_kB)$, the $k$-th diagonal entry of $B$ in the eigenbasis of $H$.
+**Worked example.** For $A=\operatorname{diag}(1,2,4)$ and $B=\operatorname{diag}(0,1,0)$, the derivative of the second eigenvalue in the direction $B$ is $\operatorname{tr}(P_2B)=\operatorname{tr}(E_{22}B)=1$, which is the derivative of $2+\epsilon$ at $\epsilon=0$. For the root $H$ and a direction $B$, the derivative of the eigenvalue $\omega_k$ is $\operatorname{tr}(P_kB)$, the $k$-th diagonal entry of $B$ in the eigenbasis of $H$.
 
 ## Summary
 
-Every $A\in M_3(\mathbb{C})$ has the characteristic cubic $\chi_A(t)=t^{3}-\tau t^{2}+\sigma t-\delta$, with $\tau=\operatorname{tr}A$, $\sigma=\frac12(\tau^{2}-\operatorname{tr}A^{2})$ and $\delta=\det A$; its roots are the spectrum. When the spectrum is simple, the spectral projectors are the Lagrange polynomials $P_k=\prod_{l\neq k}(A-\lambda_l I)/(\lambda_k-\lambda_l)$; they are orthogonal idempotents summing to $I$, of rank one and trace one, and $A=\sum\lambda_kP_k$. When the spectrum is repeated, the projectors are the Riesz contour integrals; for a double eigenvalue the Hermite interpolant $P_\lambda=I-((A-\lambda I)/(\lambda-\mu))^{2}$ replaces the Lagrange formula, and $A=\lambda P_\lambda+\mu P_\mu+N$ with $N$ nilpotent. For $H^{3}=I$ with simple spectrum, $P_k=(H^{2}+\zeta_kH+\zeta_k^{2}I)/(3\zeta_k^{2})$, and $H=\sum\zeta_kP_k$ is the $\mathbb{Z}/3$ grading. The trace form $\operatorname{tr}(X^{*}Y)$ is positive definite, the spectral radius is the Gelfand limit, and the eigenvalues and projectors are holomorphic on the complement of the discriminant, with $d\lambda_k=\operatorname{tr}(P_k\,dA)$.
+Every $A\in M_3(\mathbb{C})$ has the characteristic cubic $\chi_A(t)=t^{3}-\tau t^{2}+\sigma t-\delta$, with $\tau=\operatorname{tr}A$, $\sigma=\frac12(\tau^{2}-\operatorname{tr}A^{2})$ and $\delta=\det A$; its roots are the spectrum. When the spectrum is simple, the spectral projectors are the Lagrange polynomials $P_k=\prod_{l\neq k}(A-\lambda_l I)/(\lambda_k-\lambda_l)$; they are orthogonal idempotents summing to $I$, of rank one and trace one, and $A=\sum\lambda_kP_k$. When the spectrum is repeated, the projectors are the Riesz contour integrals; for a double eigenvalue the Hermite interpolant $P_\lambda=I-((A-\lambda I)/(\lambda-\mu))^{2}$ replaces the Lagrange formula, and $A=\lambda P_\lambda+\mu P_\mu+N$ with $N$ nilpotent. For $H^{3}=I$ with simple spectrum, $P_k=(H^{2}+\omega_kH+\omega_k^{2}I)/(3\omega_k^{2})$, and $H=\sum\omega_kP_k$ is the $\mathbb{Z}/3$ grading. The trace form $\operatorname{tr}(X^{*}Y)$ is positive definite, the spectral radius is the Gelfand limit, and the eigenvalues and projectors are holomorphic on the complement of the discriminant, with $d\lambda_k=\operatorname{tr}(P_k\,dA)$.
 
 $$
 \boxed{\ A=\sum_{k=1}^{3}\lambda_kP_k,\quad P_kP_l=\delta_{kl}P_k,\quad \sum_kP_k=I,\quad \operatorname{tr}P_k=1;\qquad P_k=\frac{1}{2\pi i}\oint_{\gamma_k}(tI-A)^{-1}dt.\ }
@@ -486,7 +486,7 @@ $$
 |---|---|---|
 | simple spectrum | $\prod_{l\neq k}(A-\lambda_l I)/(\lambda_k-\lambda_l)$ | $A=\sum\lambda_kP_k$ |
 | double $\lambda$, simple $\mu$ | $I-((A-\lambda I)/(\lambda-\mu))^{2}$ | $A=\lambda P_\lambda+\mu P_\mu+N$ |
-| root $H^{3}=I$ | $(H^{2}+\zeta_kH+\zeta_k^{2}I)/(3\zeta_k^{2})$ | $H=\sum\zeta_kP_k$ |
+| root $H^{3}=I$ | $(H^{2}+\omega_kH+\omega_k^{2}I)/(3\omega_k^{2})$ | $H=\sum\omega_kP_k$ |
 | scalar $\lambda I$ | $I$ | $A=\lambda I$ |
 
 ## Summary of Notation
@@ -501,7 +501,7 @@ $$
 | $R(t)=(tI-A)^{-1}$ | the resolvent |
 | $r(A)$ | the spectral radius |
 | $\|A\|_F$ | the Frobenius norm $\operatorname{tr}(A^{*}A)^{1/2}$ |
-| $\zeta_k$ | the cube roots of unity $1,\omega,\omega^{2}$ |
+| $\omega_k$ | the cube roots of unity $1,\omega,\omega^{2}$ |
 
 ## Further Reading
 

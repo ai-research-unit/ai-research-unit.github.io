@@ -69,10 +69,10 @@ so a collapsing scale and a diverging rapidity can compensate. That compensation
 
 ## The Limit at Infinite Rapidity
 
-Take a unit complex number $\zeta$, a positive real $R$, and the family
+Take a unit complex number $\varkappa^{\mathrm{phs}}$, a positive real $R$, and the family
 
 $$
-\tilde Q(\psi)=R\,e^{-\psi/2}\,\zeta\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
+\tilde Q(\psi)=R\,e^{-\psi/2}\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
 \qquad
 \psi>0.
 $$
@@ -80,21 +80,21 @@ $$
 Each member is a unit, because $R e^{-\psi/2}>0$, and the norm is
 
 $$
-\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\zeta^2.
+\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\varkappa^{\mathrm{phs}}^2.
 $$
 
 Insert the two-term form of the boost. The family splits into a constant term and a term of order $e^{-\psi}$:
 
 $$
 \tilde Q(\psi)
-=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
-+\frac{R\zeta}{2}\,e^{-\psi}\left(e_t-i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}.
+=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
++\frac{R\varkappa^{\mathrm{phs}}}{2}\,e^{-\psi}\left(e_t-i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}.
 $$
 
 The limit therefore exists, and it is
 
 $$
-\boxed{\;L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;}.
+\boxed{\;L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;}.
 $$
 
 The convergence is exponential in the rapidity, with the second term of order $e^{-\psi}$. The limit is nonzero, since $(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}\neq0$, and it lies on the cone, since
@@ -124,7 +124,7 @@ $$
 The scalar part of the limit is
 
 $$
-\operatorname{Sc}L=\frac{R\zeta}{2}\left(a-ib\right),
+\operatorname{Sc}L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(a-ib\right),
 $$
 
 and the square is
@@ -132,14 +132,14 @@ and the square is
 $$
 \boxed{\;L^2=\tau L,
 \qquad
-\tau=2\operatorname{Sc}L=R\zeta\left(a-ib\right)\;}.
+\tau=2\operatorname{Sc}L=R\varkappa^{\mathrm{phs}}\left(a-ib\right)\;}.
 $$
 
 The two cases follow from $\tau$.
 
 | Rotor condition | Scalar part | Normal form | Stratum | Real dimension |
 | --- | --- | --- | --- | --- |
-| $a-ib\neq0$ | $\dfrac{R\zeta}{2}(a-ib)\neq0$ | $L=\tau P$, $P^2=P$, $\operatorname{Sc}P=\tfrac12$ | idempotent | $6$ |
+| $a-ib\neq0$ | $\dfrac{R\varkappa^{\mathrm{phs}}}{2}(a-ib)\neq0$ | $L=\tau P$, $P^2=P$, $\operatorname{Sc}P=\tfrac12$ | idempotent | $6$ |
 | $a-ib=0$, that is $a=b=0$ | $0$ | $L^2=0$, $L\neq0$ | nilpotent | $4$ |
 
 In the first row $L$ is a nonzero complex multiple of a minimal idempotent: $P=L/\tau$ satisfies $P^2=P$ and has scalar part $1/2$. In the second row $\tilde u_{\mathrm r}=\tilde u_\perp$ anticommutes with $\vec u_{\mathrm b}$ and has zero scalar part, and
@@ -161,7 +161,7 @@ The physical family is the four-momentum written in the word. In this section $\
 $$
 r=mc,
 \qquad
-\zeta=i,
+\varkappa^{\mathrm{phs}}=i,
 \qquad
 \vec u_{\mathrm b}=-\vec u_p,
 \qquad
@@ -173,7 +173,7 @@ $$
 where $\psi$ is the rapidity of the momentum and $\psi_w$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_0=imc\,e_t$ to $\tilde P$ through the half-angle rotor $\tilde U_{\mathrm b}(\psi)$, $\tilde P=\tilde U_{\mathrm b}(\psi)\tilde P_0\tilde U_{\mathrm b}(\psi)^{*}=\tilde U_{\mathrm b}(\psi)^{2}\tilde P_0$. The word's boost factor is that square, $\tilde U_{\mathrm b}(\psi_w)=\tilde U_{\mathrm b}(\psi)^{2}$, so $\psi_w=2\psi$. With these data,
 
 $$
-r\zeta\,\tilde U_{\mathrm b}(\psi_w)\tilde u_{\mathrm r}
+r\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\psi_w)\tilde u_{\mathrm r}
 =imc\left(\cosh\psi\,e_t-i\sinh\psi\,\vec u_p\right)
 =i\frac{E}{c}e_t+\vec p
 =\tilde P.
@@ -190,7 +190,7 @@ so $r e^{\psi_w/2}\to R$ with $R=2E/c$, and the relative defect is $e^{-2\psi}=O
 The boundary value is the massless momentum:
 
 $$
-\boxed{\;L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)
+\boxed{\;L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)
 =\frac{iE}{c}\left(e_t-i\vec u_p\right)
 =i\frac{E}{c}e_t+\frac{E}{c}\vec u_p
 =2i\frac{E}{c}\,\tilde\Pi(-\vec u_p)\;},
@@ -213,19 +213,19 @@ with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempo
 
 ## The Path Dependence
 
-The limit depends on the path, and the dependence is not a technicality. Two families with the same scale $R$ and the same phase $\zeta$ but different asymptotic rotors reach different points of the cone for generic rotors:
+The limit depends on the path, and the dependence is not a technicality. Two families with the same scale $R$ and the same phase $\varkappa^{\mathrm{phs}}$ but different asymptotic rotors reach different points of the cone for generic rotors:
 
 $$
-L_1=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,1},
+L_1=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,1},
 \qquad
-L_2=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,2},
+L_2=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,2},
 $$
 
 and $L_1\neq L_2$ unless the rotors differ by the stabiliser of the idempotent. A path along which the boost axis turns reaches the point determined by its asymptotic axis, not by the axis at any finite parameter. The map from paths to points of the cone is therefore not injective, and the cone is not the graph of a function over the units.
 
 Three consequences follow.
 
-1. **The boundary value is a function of the germ of the path at infinity.** It is fixed by the limiting values of $\zeta$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and by the limiting product $r e^{\psi/2}$. It is not fixed by the element at any finite $\psi$.
+1. **The boundary value is a function of the germ of the path at infinity.** It is fixed by the limiting values of $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and by the limiting product $r e^{\psi/2}$. It is not fixed by the element at any finite $\psi$.
 2. **The word has no continuous extension to the cone.** A continuous extension would assign one set of word data to each point of the cone independently of the path. No such assignment exists: two paths with the same endpoint on the cone can have different asymptotic data, because the factorization of the limit into a scale, a phase, a boost axis and a rotor is not unique.
 3. **The two strata can be reached from the same neighbourhood.** A rotor with $a-ib\neq0$ and a rotor with $a=b=0$ are both limits of unit rotors, so an arbitrarily small change of the path can move the boundary value from one stratum to the other. The stratum is stable under a small change of the path that keeps $a-ib$ away from zero; near the surface $a=b=0$ it is not.
 
@@ -275,28 +275,28 @@ with $\ln r=\ln R-\psi/2\to-\infty$ and $\psi/2\to+\infty$. The true logarithm d
 
 ## Summary
 
-The polar word parametrizes the units, and the massless shell is the cone, which is the boundary of the units. The massless limit is therefore a boundary value. Along a family with $r=R e^{-\psi/2}$ and asymptotic data $\zeta$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, the word converges to
+The polar word parametrizes the units, and the massless shell is the cone, which is the boundary of the units. The massless limit is therefore a boundary value. Along a family with $r=R e^{-\psi/2}$ and asymptotic data $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, the word converges to
 
 $$
-L=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
+L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
 $$
 
-a nonzero rank-one element of the cone, with a correction of order $e^{-\psi}$. Decomposing the rotor as $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$, the trace of the limit is $\frac{R\zeta}{2}(a-ib)$ and $L^2=2\operatorname{Sc}L\,L$. When $a-ib\neq0$ the limit is a nonzero complex multiple of a minimal idempotent; when $a=b=0$ it is a nonzero nilpotent. The rotor selects the stratum, and the rate is the same for both.
+a nonzero rank-one element of the cone, with a correction of order $e^{-\psi}$. Decomposing the rotor as $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$, the trace of the limit is $\frac{R\varkappa^{\mathrm{phs}}}{2}(a-ib)$ and $L^2=2\operatorname{Sc}L\,L$. When $a-ib\neq0$ the limit is a nonzero complex multiple of a minimal idempotent; when $a=b=0$ it is a nonzero nilpotent. The rotor selects the stratum, and the rate is the same for both.
 
-For the material momentum the data are $r=mc$, $\zeta=i$, $\vec u_{\mathrm b}=-\vec u_p$, $\tilde u_{\mathrm r}=e_t$ and word rapidity $2\psi$, and the rate is $mc\,e^{\psi}=2E/c+O(e^{-\psi})$. The limit is $2i\frac{E}{c}\tilde\Pi(-\vec u_p)$, the massless momentum, reached with a relative defect of order $m^2$. The idempotent stratum contains this momentum on its anti-Hermitian slice; the stratum itself is larger. The element has a finite limit and the generator does not: the logarithm diverges as $\ln r$ and $\psi/2$ diverge separately. The limit is path-dependent, the cone is not a graph over the units, and the algebra supplies the normal form and the rate condition but not the energy, the polarization or the particle identification.
+For the material momentum the data are $r=mc$, $\varkappa^{\mathrm{phs}}=i$, $\vec u_{\mathrm b}=-\vec u_p$, $\tilde u_{\mathrm r}=e_t$ and word rapidity $2\psi$, and the rate is $mc\,e^{\psi}=2E/c+O(e^{-\psi})$. The limit is $2i\frac{E}{c}\tilde\Pi(-\vec u_p)$, the massless momentum, reached with a relative defect of order $m^2$. The idempotent stratum contains this momentum on its anti-Hermitian slice; the stratum itself is larger. The element has a finite limit and the generator does not: the logarithm diverges as $\ln r$ and $\psi/2$ diverge separately. The limit is path-dependent, the cone is not a graph over the units, and the algebra supplies the normal form and the rate condition but not the energy, the polarization or the particle identification.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar word |
-| $r>0$, $\zeta=e^{i\alpha}$ | the scale and the central phase |
+| $r>0$, $\varkappa^{\mathrm{phs}}=e^{i\alpha}$ | the scale and the central phase |
 | $\tilde U_{\mathrm b}=e^{i\psi\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\psi$ and axis $\vec u_{\mathrm b}$ |
 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the rotor of angle $\theta$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
-| $L=\frac{R\zeta}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ | the boundary value |
+| $L=\frac{R\varkappa^{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ | the boundary value |
 | $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$ | the rotor in the frame of the boost |
-| $\tau=2\operatorname{Sc}L=R\zeta(a-ib)$ | the scale of the idempotent, $L^2=\tau L$ |
+| $\tau=2\operatorname{Sc}L=R\varkappa^{\mathrm{phs}}(a-ib)$ | the scale of the idempotent, $L^2=\tau L$ |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the material four-momentum |
 | $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ | the Hermitian minimal idempotent opposite the motion |
 | $\psi_w=2\psi$ | the word rapidity of the momentum against its Lorentz rapidity |

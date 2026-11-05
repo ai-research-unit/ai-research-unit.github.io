@@ -174,7 +174,7 @@ $$
 
 The root set is **not** the flag variety; it is the total space of the splitting bundle.
 
-**Proof.** The root set is exactly the set of splittings, by the spectral decomposition of a root: a root $H$ determines the five lines $L_k=\ker(H-\zeta_kI)$, and conversely an ordered splitting with distinct scalars $\zeta_k$ determines the root $H=\sum_k\zeta_kP_k$. The splitting map forgets the labels and the lines, keeping only the chain.
+**Proof.** The root set is exactly the set of splittings, by the spectral decomposition of a root: a root $H$ determines the five lines $L_k=\ker(H-\varkappa_kI)$, and conversely an ordered splitting with distinct scalars $\varkappa_k$ determines the root $H=\sum_k\varkappa_kP_k$. The splitting map forgets the labels and the lines, keeping only the chain.
 
 ### Why They Differ
 

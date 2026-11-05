@@ -109,7 +109,7 @@ $$
 
 The result is exactly the algebraic statement that the one-mode canonical condition is stricter than naive normalization. The cross term of the first computation is the diagonal part, and it is automatically fine; the cross term of the second is the off-diagonal part, and it is automatically $2\alpha\beta\,e_t$. It is the vanishing of $\{\vec b,\vec b\}$ — the statement that $\vec b$ is a *fermionic* mode operator, not merely an operator with a normalized conjugate — that forbids the squeezing.
 
-**Numerical check.** With $\mathsf{M}_2$ the $2\times2$ complex representation, sample $\alpha=\cos\vartheta^{\mathrm{par}}$, $\beta=\exp(i\phi)\sin\vartheta^{\mathrm{par}}$ on $20000$ random $(\vartheta^{\mathrm{par}},\phi)$. The first anticommutator equals $e_t$ for all samples, with a maximum residual of $4.4\times10^{-16}$; the second equals $2\alpha\beta e_t$, a **central** element (off-diagonal part identically zero), with magnitude $|2\alpha\beta|=|\sin 2\vartheta^{\mathrm{par}}|\le1$, maximal at $\vartheta^{\mathrm{par}}=\pi/4$ where $|\alpha|=|\beta|=1/\sqrt2$ and $|2\alpha\beta|=1$. The exact cases $\beta=0$ and $\alpha=0$ give $\{\vec b,\vec b\}=0$ to machine precision. The second anticommutator is thus the sole obstruction, and its maximum violation is the maximal squeezing amplitude.
+**Numerical check.** With $\mathsf{M}_2$ the $2\times2$ complex representation, sample $\alpha=\cos\vartheta^{\mathrm{par}}$, $\beta=\exp(i\theta^{\mathrm{pha}})\sin\vartheta^{\mathrm{par}}$ on $20000$ random $(\vartheta^{\mathrm{par}},\theta^{\mathrm{pha}})$. The first anticommutator equals $e_t$ for all samples, with a maximum residual of $4.4\times10^{-16}$; the second equals $2\alpha\beta e_t$, a **central** element (off-diagonal part identically zero), with magnitude $|2\alpha\beta|=|\sin 2\vartheta^{\mathrm{par}}|\le1$, maximal at $\vartheta^{\mathrm{par}}=\pi/4$ where $|\alpha|=|\beta|=1/\sqrt2$ and $|2\alpha\beta|=1$. The exact cases $\beta=0$ and $\alpha=0$ give $\{\vec b,\vec b\}=0$ to machine precision. The second anticommutator is thus the sole obstruction, and its maximum violation is the maximal squeezing amplitude.
 
 ## The One-Mode Canonical Group
 
@@ -127,9 +127,9 @@ This is an **inner** automorphism of $\mathbb{B}$, but the implementing $*$-unit
 $$
 \tilde Q_\vartheta^{\mathrm{par}} = \exp(-i\vartheta^{\mathrm{par}}\tilde\Pi_-) = e_t + \big(\exp(-i\vartheta^{\mathrm{par}})-1\big)\tilde\Pi_-,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_x\,\tilde Q_\vartheta^{\mathrm{par}}^{-1} = \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x,
+\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_x\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_y\,\tilde Q_\vartheta^{\mathrm{par}}^{-1} = \exp(-i\vartheta^{\mathrm{par}})\vec\Upsilon_y ,
+\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_y\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \exp(-i\vartheta^{\mathrm{par}})\vec\Upsilon_y ,
 $$
 where the closed form uses $\tilde\Pi_-^2=\tilde\Pi_-$. The element $\tilde Q_\vartheta^{\mathrm{par}}$ is $*$-unitary and lies in $\mathbb{B}$, and it is non-central: it does not commute with $\vec\Upsilon_x$ or $\vec\Upsilon_y$. This is the $\mathrm{U}(1)$ **gauge** symmetry of the single mode, written as an algebra element.
 
@@ -161,13 +161,13 @@ Both branches act geometrically on the state space, and the action is the action
 
 **Phases are the gauge symmetry of the mode.** A phase $\vec\Upsilon_x\mapsto \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x$ is conjugation by $\tilde Q_\vartheta^{\mathrm{par}}=\exp(-i\vartheta^{\mathrm{par}}\tilde\Pi_-)$, which commutes with the number operator and therefore fixes it and both idempotents:
 $$
-\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi_-\,\tilde Q_\vartheta^{\mathrm{par}}^{-1} = \tilde\Pi_-,
+\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi_-\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \tilde\Pi_-,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi(\pm \vec e_z)\,\tilde Q_\vartheta^{\mathrm{par}}^{-1} = \tilde\Pi(\pm \vec e_z),
+\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi(\pm \vec e_z)\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \tilde\Pi(\pm \vec e_z),
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,(i\vec e_z)\,\tilde Q_\vartheta^{\mathrm{par}}^{-1} = i\vec e_z .
+\tilde Q_\vartheta^{\mathrm{par}}\,(i\vec e_z)\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = i\vec e_z .
 $$
-The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_\vartheta^{\mathrm{par}}\tilde{Q}\tilde Q_\vartheta^{\mathrm{par}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
+The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_\vartheta^{\mathrm{par}}\tilde{Q}\tilde Q_{\vartheta^{\mathrm{par}}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
 
 **The unit group acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
 $$

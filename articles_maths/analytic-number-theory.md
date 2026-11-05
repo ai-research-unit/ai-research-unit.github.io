@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Analytic number theory is the study of the integers by the methods of complex analysis. The bridge between the two subjects is the Euler product: the identity $\zeta(s) = \prod_p(1-p^{-s})^{-1}$, valid for $\Re s>1$, converts a statement about the distribution of the primes into a statement about the singularities and the zeros of a meromorphic function, and the whole of the classical theory is the exploitation of that conversion. The mechanism is exact and it is the following: the logarithmic derivative $-\zeta'(s)/\zeta(s)$ is the Dirichlet series $\sum_n\Lambda(n)n^{-s}$ of the von Mangoldt function, the partial sums of that series are the Chebyshev function $\psi(x)$, and Cauchy's formula applied to the logarithmic derivative expresses $\psi(x)$ as a contour integral whose main term comes from the pole of $\zeta$ at $s=1$ and whose error term is a sum over the zeros of $\zeta$. Every quantitative theorem about the distribution of the primes is a statement about that sum.
+Analytic number theory is the study of the integers by the methods of complex analysis. The bridge between the two subjects is the Euler product: the identity $\zeta(s) = \prod_p(1-p^{-s})^{-1}$, valid for $\Re s>1$, converts a statement about the distribution of the primes into a statement about the singularities and the zeros of a meromorphic function, and the whole of the classical theory is the exploitation of that conversion. The mechanism is exact and it is the following: the logarithmic derivative $-\varkappa^{\mathrm{crd}}'(s)/\zeta(s)$ is the Dirichlet series $\sum_n\Lambda(n)n^{-s}$ of the von Mangoldt function, the partial sums of that series are the Chebyshev function $\psi(x)$, and Cauchy's formula applied to the logarithmic derivative expresses $\psi(x)$ as a contour integral whose main term comes from the pole of $\varkappa^{\mathrm{crd}}$ at $s=1$ and whose error term is a sum over the zeros of $\zeta$. Every quantitative theorem about the distribution of the primes is a statement about that sum.
 
 This article develops the machinery. It defines the arithmetic functions of the classical theory, proves the equivalences between the several ways of stating the prime number theorem, records the Mertens estimates and the Chebyshev bounds, proves Perron's formula and the explicit formula of von Mangoldt, states the Riemann–von Mangoldt zero-counting formula and the zero-free region of de la Vallée Pouss, and treats the distribution of the primes in arithmetic progressions with the theorems of Dirichlet, Siegel–Walfisz, Bombieri–Vinogradov and Linnik. It closes with the other methods of the subject: the sieve, in the forms of Brun and Selberg with the parity phenomenon, and the circle method of Hardy–Littlewood and Vinogradov. The final assembly — the analytic proof of the prime number theorem from the zero-free region, and the consequences of the hypothesis that all the nontrivial zeros lie on the critical line — belong andwritten in parallel; the zeta and $L$-functions that are analysed here are those of *Zeta Functions* and *L-Functions*, written above it.
 
@@ -21,7 +21,7 @@ $$
 $$
 \sum_{n\geq1}\frac{\Lambda(n)}{n^s} = -\frac{\zeta'(s)}{\zeta(s)}, \qquad
 \sum_{n\geq1}\frac{\mu(n)}{n^s} = \frac{1}{\zeta(s)}, \qquad
-\sum_{n\geq1}\frac{\varphi(n)}{n^s} = \frac{\zeta(s-1)}{\zeta(s)},
+\sum_{n\geq1}\frac{\varphi(n)}{n^s} = \frac{\varkappa^{\mathrm{crd}}}{\zeta(s)},
 $$
 and the corresponding Euler products converge absolutely and locally uniformly in the half-plane.
 
@@ -91,7 +91,7 @@ $$
 $$
 the sum being taken over the nontrivial zeros of $\zeta$ in the sense of the symmetric limit $\lim_{T\to\infty}\sum_{\lvert\gamma\rvert\leq T}$, which converges.
 
-**Proof sketch.** Apply Perron's formula to $-\zeta'/\zeta$ for $c>1$, and shift the contour to the line $\Re s = -\tfrac12$, picking up the residue at the pole $s=1$ (giving $x$), the residues at the nontrivial zeros $\rho$ (giving $-x^\rho/\rho$), the pole at $s=0$ from the factor $1/s$ together with the value of $\zeta'/\zeta$ there (giving $-\log2\pi$), and the trivial zeros at the negative even integers (giving the logarithmic term). The shift is justified by the standard bounds for $\zeta'/\zeta$ in the critical strip.
+**Proof sketch.** Apply Perron's formula to $-\varkappa^{\mathrm{crd}}'/\zeta$ for $c>1$, and shift the contour to the line $\Re s = -\tfrac12$, picking up the residue at the pole $s=1$ (giving $x$), the residues at the nontrivial zeros $\rho$ (giving $-x^\rho/\rho$), the pole at $s=0$ from the factor $1/s$ together with the value of $\zeta'/\zeta$ there (giving $-\log2\pi$), and the trivial zeros at the negative even integers (giving the logarithmic term). The shift is justified by the standard bounds for $\varkappa^{\mathrm{crd}}'/\zeta$ in the critical strip.
 
 **Theorem (Riemann–von Mangoldt).** The number of nontrivial zeros with $0<\gamma\leq T$ satisfies
 $$
@@ -105,15 +105,15 @@ so the zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$; in
 
 **Theorem (de la Vallée Poussin).** There is a constant $c>0$ such that
 $$
-\zeta(\sigma+it) \neq 0 \qquad \text{for } \sigma > 1 - \frac{c}{\log(\lvert t\rvert + 2)} .
+\varkappa^{\mathrm{crd}} \neq 0 \qquad \text{for } \sigma > 1 - \frac{c}{\log(\lvert t\rvert + 2)} .
 $$
-Consequently $\zeta$ has no zero on the line $\Re s = 1$, the logarithmic derivative $-\zeta'/\zeta$ is bounded in a region to the left of that line apart from the pole at $s=1$, and the explicit formula yields
+Consequently $\varkappa^{\mathrm{crd}}$ has no zero on the line $\Re s = 1$, the logarithmic derivative $-\varkappa^{\mathrm{crd}}'/\zeta$ is bounded in a region to the left of that line apart from the pole at $s=1$, and the explicit formula yields
 $$
 \boxed{\;\psi(x) = x + O\bigl(x\exp(-c'\sqrt{\log x})\bigr)\;}
 $$
 for a positive constant $c'$; in particular $\pi(x)\sim x/\log x$.
 
-**Proof sketch.** The nonvanishing is deduced from the inequality $3 + 4\cos\theta + \cos2\theta\geq0$ applied to the logarithm of $\zeta$ on the line $\Re s = 1+\epsilon$: with $s = \sigma+it$, $\log\lvert\zeta(\sigma)\rvert + 4\log\lvert\zeta(\sigma+it)\rvert + \log\lvert\zeta(\sigma+2it)\rvert \geq 0$ for $\sigma>1$, and the pole of $\zeta$ at $1$ bounds $\log\lvert\zeta(\sigma)\rvert$ from below by $-\log(\sigma-1)+O(1)$; a zero at $\beta+i\gamma$ with $\beta$ too close to $1$ would make the middle term too negative. The error term follows by inserting the region into the explicit formula and estimating the sum over the zeros; the final statement is the prime number theorem, and the full proof of that theorem is not covered here.
+**Proof sketch.** The nonvanishing is deduced from the inequality $3 + 4\cos\theta + \cos2\theta\geq0$ applied to the logarithm of $\varkappa^{\mathrm{crd}}$ on the line $\Re s = 1+\epsilon$: with $s = \sigma+it$, $\log\lvert\varkappa^{\mathrm{crd}}\rvert + 4\log\lvert\varkappa^{\mathrm{crd}}\rvert + \log\lvert\varkappa^{\mathrm{crd}}\rvert \geq 0$ for $\sigma>1$, and the pole of $\varkappa^{\mathrm{crd}}$ at $1$ bounds $\log\lvert\varkappa^{\mathrm{crd}}\rvert$ from below by $-\log(\sigma-1)+O(1)$; a zero at $\beta+i\gamma$ with $\beta$ too close to $1$ would make the middle term too negative. The error term follows by inserting the region into the explicit formula and estimating the sum over the zeros; the final statement is the prime number theorem, and the full proof of that theorem is not covered here.
 
 ## Primes in Arithmetic Progressions
 
@@ -167,7 +167,7 @@ and analyses the integral by decomposing the circle into the arcs near rational 
 
 ## Summary
 
-Analytic number theory converts the distribution of the primes into the analysis of the zeta and $L$-functions. The von Mangoldt function satisfies $-\zeta'(s)/\zeta(s) = \sum\Lambda(n)n^{-s}$, its partial sums are the Chebyshev function $\psi(x)$, and Abel summation together with the Euler product gives the Mertens estimates and the Chebyshev bounds $\psi(x)\asymp x$, from which Bertrand's postulate follows. The statements $\pi(x)\sim x/\log x$, $\psi(x)\sim x$, $\vartheta^{\mathrm{chb}}(x)\sim x$ and $p_n\sim n\log n$ are equivalent, and the proof of any of them is the prime number theorem, whose analytic proof belongs to *The Prime Number Theorem*.
+Analytic number theory converts the distribution of the primes into the analysis of the zeta and $L$-functions. The von Mangoldt function satisfies $-\varkappa^{\mathrm{crd}}'(s)/\zeta(s) = \sum\Lambda(n)n^{-s}$, its partial sums are the Chebyshev function $\psi(x)$, and Abel summation together with the Euler product gives the Mertens estimates and the Chebyshev bounds $\psi(x)\asymp x$, from which Bertrand's postulate follows. The statements $\pi(x)\sim x/\log x$, $\psi(x)\sim x$, $\vartheta^{\mathrm{chb}}(x)\sim x$ and $p_n\sim n\log n$ are equivalent, and the proof of any of them is the prime number theorem, whose analytic proof belongs to *The Prime Number Theorem*.
 
 The two formulas that organise the subject are Perron's formula, which recovers the partial sums of a Dirichlet series from a contour integral of the series, and the explicit formula of von Mangoldt, which evaluates $\psi(x)$ as $x$ minus a sum over the nontrivial zeros of $\zeta$ minus elementary terms; the version of the explicit formula obtained by shifting the contour is the exact sense in which the zeros of $\zeta$ govern the distribution of the primes. The zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$, by the Riemann–von Mangoldt formula, and they avoid a region to the left of the line $\Re s=1$, by the theorem of de la Vallée Poussin; that zero-free region is precisely the input of the analytic proof of the prime number theorem, with the error term $O(x\exp(-c\sqrt{\log x}))$. For the primes in an arithmetic progression the same analysis applies to the Dirichlet $L$-functions: the nonvanishing at $1$ gives Dirichlet's theorem and the prime number theorem in progressions, the Siegel–Walfisz theorem gives uniformity in the modulus at the cost of an ineffective constant, the Bombieri–Vinogradov theorem gives the same quality of approximation on average for moduli up to $\sqrt x$, and Linnik's theorem bounds the least prime in a progression polynomially in the modulus. The sieve methods, in the forms of Brun and Selberg, and the circle method of Hardy–Littlewood and Vinogradov are the other two engines of the subject: the first counts integers with restricted prime factors and yields Brun's theorem and, with distributional input, bounded gaps between primes; the second counts solutions of additive equations and yields Waring's problem and Vinogradov's three-primes theorem.
 

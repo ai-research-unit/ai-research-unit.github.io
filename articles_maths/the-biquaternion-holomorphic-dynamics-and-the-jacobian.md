@@ -56,7 +56,7 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q_1\ran
 
 ## The Central Parameter and the Eigenvalue Reduction
 
-**Theorem (the central-parameter identification).** Let $\tilde Q_3=Ce_t$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q_1)$ with spectrum $\{\lambda_1,\lambda_2\}$,
+**Theorem (the central-parameter identification).** Let $\tilde Q_3=Ce_t$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\omega\mapsto\omega^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q_1)$ with spectrum $\{\lambda_1,\lambda_2\}$,
 
 $$
 \boxed{\;\tilde Q_1\in\mathcal{J}_{\tilde Q_3}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q_1)\cap\mathcal{J}_C\neq\emptyset\;},
