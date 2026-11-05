@@ -79,7 +79,7 @@
 <p><strong>What the article establishes.</strong> The three differ in two ways that matter, and both are computed here: in what they are (an element, a scalar, an operator of the algebra) and in how they square (not scalar, itself, scalar in one copy). The metric is not one of the differences. The algebra has one metric, the Euclidean one, and the Lorentzian form of the material display is that same metric read after $Q_t=ict'$. The light cone is common to the gradient and to the four generators, and §<em>What a Plane Wave Sees</em> computes both symbols and gets one cone. What the four generators buy is anticommutation, and §<em>Why Four Frame Generators and Not Four Units</em> proves that no element can buy it.</p>
 <p>The order of the article is the order of increasing structure: the metric, which is the algebra's and not an operator's, then the gradient, then its norm, then the contraction, then why the four generators are needed at all, then what a plane wave sees, then the three side by side, then the pair operator. Each operator's array is written out in full at the point where that operator is used, and it is not collected into a separate section. Every claim is recomputed on a field before it is asserted.</p>
 <h2 id="three-kinds-of-object">Three Kinds of Object</h2>
-<p><strong>Two algebras, one of them ambient.</strong> The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. The operators of $\mathbb{B}$ form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. An element of $\mathbb{B}$ is not an operator of $\mathbb{B}$; it <em>generates</em> one, and the generation has two sides, the left multiplication $L_a\psi=a\psi$ and the right multiplication $R_b\psi=\psi b$, with the two-sided $L_aR_b\psi=a\psi b$ (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>).</p>
+<p><strong>Two algebras, one of them ambient.</strong> The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. The operators of $\mathbb{B}$ form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. An element of $\mathbb{B}$ is not an operator of $\mathbb{B}$; it <em>generates</em> one, and the generation has two sides, the left multiplication $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and the right multiplication $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, with the two-sided $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$ (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>).</p>
 <p><strong>Why the distinction is the whole article.</strong> An element multiplies from one side only, so a sum of elements with derivative coefficients is a first-order operator of one side. A sum of two-sided multiplications is an operator already, and each of them may act from both sides at once. The first is confined to the algebra; the second is not, because a generator is a frame object and not an element of $\mathbb{B}$. That is the difference between the gradient and the contraction, and everything else follows from it.</p>
 <p><strong>The six objects, in one table.</strong> "Contraction" in the third row means the sum $iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}$, the four frame generators contracted with the four derivatives; it is written out in §<em>The Frame Generators</em>. The last column is the determinant of the symbol, the array obtained by replacing each derivative by its plane-wave value; it is computed in §<em>What a Plane Wave Sees</em>.</p>
 <div class="table-scroll"><table>
@@ -179,8 +179,8 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>$\tilde\nabla\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>$\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}$</th>
 <th>how</th>
 </tr>
 </thead>
@@ -282,8 +282,8 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>$\Box\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>$\Box\tilde{Ξ}^{\mathrm{spn}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -305,9 +305,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The wave equation is its kernel.</strong> $\Box\psi=0$ is the wave equation, and on a plane wave $e^{i\phi}$ with $\phi=k_0x_0-\vec k\cdot\vec q$ it reads</p>
+<p><strong>The wave equation is its kernel.</strong> $\Box\tilde{Ξ}^{\mathrm{spn}}=0$ is the wave equation, and on a plane wave $e^{i\theta^{\mathrm{pha}}}$ with $\theta^{\mathrm{pha}}=k_0x_0-\vec k\cdot\vec q$ it reads</p>
 <p>$$
-\Box\,e^{i\phi}=\left(k_0^2-\lvert\vec k\rvert^2\right)e^{i\phi},
+\Box\,e^{i\theta^{\mathrm{pha}}}=\left(k_0^2-\lvert\vec k\rvert^2\right)e^{i\theta^{\mathrm{pha}}},
 $$</p>
 <p>so the kernel is exactly the light cone. That is the condition a massless field must meet, and it is the condition the contraction will reproduce at first order.</p>
 <h2 id="the-frame-generators">The Frame Generators</h2>
@@ -346,8 +346,8 @@ i\frac{\partial}{\partial x_1}&0&-i\frac{\partial}{\partial x_0}-i\frac{\partial
 $$</p>
 <p><strong>Written out.</strong> The time generator is a right multiplication by $\vec e_x$; each spatial generator is a left multiplication by $\vec e_k$ and a right multiplication by $\vec e_y$:</p>
 <p>$$
-\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)\psi
-=\frac{i}{c}\frac{\partial\psi}{\partial t'}\vec e_x+\sum_k i\,\vec e_k\frac{\partial\psi}{\partial q_k}\vec e_y .
+\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}\Bigr)\tilde{Ξ}^{\mathrm{spn}}
+=\frac{i}{c}\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial t'}\vec e_x+\sum_k i\,\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial q_k}\vec e_y .
 $$</p>
 <p>The time derivative acts from the right only; the three spatial derivatives act from both sides at once. That is what the four are, and it is the reason the square can be scalar.</p>
 <p><strong>What the four supply is the anticommutation, and only that.</strong> Every pair of them anticommutes, and one pair is enough to see the shape:</p>
@@ -377,8 +377,8 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>contraction $\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>contraction $\tilde{Ξ}^{\mathrm{spn}}$</th>
 <th>how</th>
 </tr>
 </thead>
@@ -452,7 +452,7 @@ iL_{\vec e_y}R_{\vec e_y}=-i\operatorname{diag}(1,-1,1,-1),
 $$</p>
 <p>which is a property of the display and not an extra structure. The chirality is the fifth, $\gamma_5=-iR_{\vec e_z}$: it squares to $+1$, its eigenvalues are $\pm1$ of multiplicity two each, and it anticommutes with each of the four the derivatives use. That oddness is what splits the module into the two halves, and it is the reason a single product equation can hold the two chiral equations at once.</p>
 <h2 id="why-four-frame-generators-and-not-four-units">Why Four Frame Generators and Not Four Units</h2>
-<p><strong>The requirement.</strong> A first-order equation in one field needs a first-order operator whose square is a scalar. Only then does the equation imply a second-order one, and only then can a mass be subtracted as a scalar, $(\partial-m)\psi=0$ giving $(\Box-m^2)\psi=0$.</p>
+<p><strong>The requirement.</strong> A first-order equation in one field needs a first-order operator whose square is a scalar. Only then does the equation imply a second-order one, and only then can a mass be subtracted as a scalar, $(\partial-m)\tilde{Ξ}^{\mathrm{spn}}=0$ giving $(\Box-m^2)\tilde{Ξ}^{\mathrm{spn}}=0$.</p>
 <p><strong>What the algebra offers.</strong> Write an element as $a=\alpha+\vec a$. Then</p>
 <p>$$
 a^2=\alpha^2-\lvert\vec a\rvert^2+2\alpha\vec a ,
@@ -491,7 +491,7 @@ $$</p>
 =\left(k_0^2-\lvert\vec k\rvert^2\right)^2 .
 $$</p>
 <p>The two determinants are equal and the two arrays are not. Note where the $i$ sits: the gradient's array keeps it on the spatial entries and its time entry is real, while the contraction's array has none, because the $i$ of each of the four cancels the $i$ of its derivative. That is the $i$ of $Q_t=ict'$ showing in the arrays.</p>
-<p><strong>Both first-order operators give the same determinant.</strong> Take $\phi=k_0x_0-\vec k\cdot\vec q$ and $x_0=ct'$.</p>
+<p><strong>Both first-order operators give the same determinant.</strong> Take $\theta^{\mathrm{pha}}=k_0x_0-\vec k\cdot\vec q$ and $x_0=ct'$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -529,16 +529,16 @@ iR_{\vec e_x}ik_0+iL_{\vec e_x}R_{\vec e_y}ik_1+iL_{\vec e_y}R_{\vec e_y}ik_2+iL
 $$</p>
 <p>The two kernels are different two-planes of the same four-dimensional space, and that is the correct picture: the two equations are different equations with the same cone. The gradient's kernel is computed by left multiplication, $\ker L(a)=\{m:am=0\}$, and it is two-dimensional because $a$ is of rank one, so its kernel is a line and each of the two columns of $m$ must lie in that line. The product kernel is two-dimensional because the symbol squares to zero on the cone, so it is a nonzero nilpotent and its rank is two. Neither count is an accident, and neither distinguishes the operators.</p>
 <p><strong>Off the cone both are invertible.</strong> At $k=(2,1,0,0)$, where $k_0^2-\lvert\vec k\rvert^2=3$, the contraction's symbol has determinant $9$ and the gradient's symbol has natural norm $3$, so no plane wave of that wave vector survives either operator.</p>
-<p><strong>What the cone does not decide.</strong> The mass. On a null wave both operators annihilate something, so both can write a massless equation; the difference appears at the next order, where the gradient's square carries the cross term and no scalar mass can be subtracted from it, while $i$ times the contraction squares to $\Box$, so that subtracting a scalar $m$ from it gives an operator whose square is $\Box-m^2$, and the equation implies $(\Box-m^2)\psi=0$. The cone is shared; the square is not. Any argument for the four that runs through the light cone is measuring the $i$ of $Q_t=ict'$ and not the difference between the operators.</p>
+<p><strong>What the cone does not decide.</strong> The mass. On a null wave both operators annihilate something, so both can write a massless equation; the difference appears at the next order, where the gradient's square carries the cross term and no scalar mass can be subtracted from it, while $i$ times the contraction squares to $\Box$, so that subtracting a scalar $m$ from it gives an operator whose square is $\Box-m^2$, and the equation implies $(\Box-m^2)\tilde{Ξ}^{\mathrm{spn}}=0$. The cone is shared; the square is not. Any argument for the four that runs through the light cone is measuring the $i$ of $Q_t=ict'$ and not the difference between the operators.</p>
 <h2 id="one-field-three-answers">One Field, Three Answers</h2>
 <p>The three operators side by side, on the same ten fields, with $c=1$. This is the table to consult when a formula is ambiguous. "Contraction" is always the sum $iR_{\vec e_x}\frac{\partial}{\partial x_0}+iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x_1}+iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial x_2}+iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial x_3}$, written out in §<em>The Frame Generators</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>$\tilde\nabla\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>$\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}$</th>
 <th>contraction</th>
-<th>$\Box\psi$</th>
+<th>$\Box\tilde{Ξ}^{\mathrm{spn}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -610,10 +610,10 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>$\tilde\nabla^2\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>$\tilde\nabla^2\tilde{Ξ}^{\mathrm{spn}}$</th>
 <th>contraction squared</th>
-<th>$\Box\psi$</th>
+<th>$\Box\tilde{Ξ}^{\mathrm{spn}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -653,13 +653,13 @@ $$</p>
 <h2 id="the-pair-operator">The Pair Operator</h2>
 <p><strong>The fourth object, and the name it shares.</strong> In <em>Operator and Calculus Conventions</em> the corpus's $\mathbb{C}^{\mathrm{spl}}$ is neither of the three above. It is one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,</p>
 <p>$$
-\mathbb{C}^{\mathrm{spl}}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \Psi=(\Psi_L,\Psi_R),
+\mathbb{C}^{\mathrm{spl}}\tilde{Ξ}^{\mathrm{spn}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L\bigr),\qquad \tilde{Ξ}^{\mathrm{spn}}=(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R),
 $$</p>
 <p>and it squares to the scalar on the sum,</p>
 <p>$$
-{\mathbb{C}^{\mathrm{spl}}}^2\Psi=\bigl(\tilde\nabla\tilde\nabla^{\natural}\Psi_L,\ \tilde\nabla^{\natural}\tilde\nabla\Psi_R\bigr)=\Box\,\Psi .
+{\mathbb{C}^{\mathrm{spl}}}^2\tilde{Ξ}^{\mathrm{spn}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{spn}} .
 $$</p>
-<p><strong>Its array is block off-diagonal.</strong> Order the eight coefficients as the four of $\Psi_L$ followed by the four of $\Psi_R$. Then $\tilde\nabla$ acts on $\Psi_R$ and $\tilde\nabla^{\natural}$ on $\Psi_L$, so the array carries the gradient's array in the upper-right block and the conjugate's in the lower-left:</p>
+<p><strong>Its array is block off-diagonal.</strong> Order the eight coefficients as the four of $\tilde{Ξ}^{\mathrm{spn}}_L$ followed by the four of $\tilde{Ξ}^{\mathrm{spn}}_R$. Then $\tilde\nabla$ acts on $\tilde{Ξ}^{\mathrm{spn}}_R$ and $\tilde\nabla^{\natural}$ on $\tilde{Ξ}^{\mathrm{spn}}_L$, so the array carries the gradient's array in the upper-right block and the conjugate's in the lower-left:</p>
 <p>$$
 \mathbb{C}^{\mathrm{spl}}=
 \left(\begin{array}{cccc|cccc}
@@ -704,9 +704,9 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>field $\psi$</th>
-<th>$\partial\psi$</th>
-<th>contraction $\psi$</th>
+<th>field $\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>$\partial\tilde{Ξ}^{\mathrm{spn}}$</th>
+<th>contraction $\tilde{Ξ}^{\mathrm{spn}}$</th>
 <th>how</th>
 </tr>
 </thead>
@@ -807,7 +807,7 @@ $$</p>
 </tr>
 <tr>
 <td>$L_a$, $R_b$</td>
-<td>left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$</td>
+<td>left and right multiplication, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$</td>
 </tr>
 <tr>
 <td>$\gamma_\mu$, $\gamma_\mu$</td>

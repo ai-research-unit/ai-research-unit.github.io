@@ -124,10 +124,10 @@ $$</p>
 <h3 id="step-2-the-measurement-operator_1">Step 2: The measurement operator</h3>
 <p>The same measurement direction $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{M}_+$ corresponding to the spin projection along $\vec u_x$:</p>
 <p>$$
-\tilde{H} = \frac{\hbar}{2}\, i\vec u_x.
+\tilde R_\psi = \frac{\hbar}{2}\, i\vec u_x.
 $$</p>
 <h3 id="step-3-the-idempotent-for-the-outcome">Step 3: The idempotent for the outcome</h3>
-<p>The idempotent of the eigenstate of $\tilde{H} = \frac{\hbar}{2}i\vec u_x$ with eigenvalue $+\hbar/2$ is</p>
+<p>The idempotent of the eigenstate of $\tilde R_\psi = \frac{\hbar}{2}i\vec u_x$ with eigenvalue $+\hbar/2$ is</p>
 <p>$$
 \tilde\Pi_n = \tfrac{1}{2}\left(e_t + i\vec u_x\right).
 $$</p>
@@ -175,14 +175,14 @@ $$</p>
 \langle \vec u_x\cdot\vec S\rangle_{+z} = \langle +z|\vec u_x\cdot\vec S|+z\rangle = \frac{\hbar}{2}\cos\theta.
 $$</p>
 <h3 id="biquaternion-formulation">Biquaternion formulation</h3>
-<p>The observable is $\tilde{H} = \tfrac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:</p>
+<p>The observable is $\tilde R_\psi = \tfrac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:</p>
 <p>$$
-\langle \tilde{H}\rangle_{\tilde\Pi_z} = \frac{\langle\tilde\Pi_z,\tilde H\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde{H}).
+\langle \tilde R_\psi\rangle_{\tilde\Pi_z} = \frac{\langle\tilde\Pi_z,\tilde R_\psi\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde R_\psi).
 $$</p>
-<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_z\circ\tilde{H}^{*})=\operatorname{Tr}(\tilde\Pi_z\circ\tilde{H})=2\,\mathrm{Sc}(\tilde\Pi_z\circ\tilde{H})$, the star being inert and the unstarred trace real.</p>
+<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_z\circ\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi_z\circ\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi_z\circ\tilde R_\psi)$, the star being inert and the unstarred trace real.</p>
 <p>Computing the product:</p>
 <p>$$
-\tilde\Pi_z \circ \tilde{H} = \tfrac{1}{2}(e_t + i \vec e_z)\cdot\tfrac{\hbar}{2} i\vec u_x = \tfrac{\hbar}{4}\left(i\vec u_x - \vec e_z \vec u_x\right).
+\tilde\Pi_z \circ \tilde R_\psi = \tfrac{1}{2}(e_t + i \vec e_z)\cdot\tfrac{\hbar}{2} i\vec u_x = \tfrac{\hbar}{4}\left(i\vec u_x - \vec e_z \vec u_x\right).
 $$</p>
 <p>Evaluating $\vec e_z \vec u_x$, using $\vec e_z \vec e_x = \vec e_y$ and $\vec e_z \vec e_z = -e_t$:</p>
 <p>$$
@@ -190,11 +190,11 @@ $$</p>
 $$</p>
 <p>Substituting:</p>
 <p>$$
-\tilde\Pi_z \circ \tilde{H} = \tfrac{\hbar}{4}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
+\tilde\Pi_z \circ \tilde R_\psi = \tfrac{\hbar}{4}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
 $$</p>
 <p>The scalar part is $\tfrac{\hbar}{4}\cos\theta$. Therefore</p>
 <p>$$
-\boxed{\;\langle \tilde{H}\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta\;}.
+\boxed{\;\langle \tilde R_\psi\rangle_{\tilde\Pi_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta\;}.
 $$</p>
 <p>Both formulations give the same result.</p>
 <h2 id="summary">Summary</h2>
@@ -240,7 +240,7 @@ $$</p>
 <td>Pure-state idempotent</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_t e_t + i\vec h$</td>
+<td>$\tilde R_\psi = h_t e_t + i\vec h$</td>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>

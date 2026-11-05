@@ -70,13 +70,13 @@
       <div class="article-body">
         <h1 id="spinors-and-dirac-spinors-in-the-biquaternion-algebra"><strong>Spinors and Dirac Spinors in the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An <strong>elementary spinor</strong> is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A <strong>Dirac spinor</strong> is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.</p>
+<p>The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An <strong>elementary spinor</strong> is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A <strong>Dirac spinor</strong> is an element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.</p>
 <p>This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.</p>
 <p>The article is the spinor counterpart of <em>Angular Momentum and Spin in the Biquaternion Algebra</em>: that article defines the spin of a carrier as a maximal weight and classifies the carriers; this one takes the two spinor carriers it produces and names them. The algebra, the units, the two-sided operator and the conjugation are those of <em>Algebra and Element Conventions</em>. The two definitions use none of a Clifford relation, a gamma cell, a Pauli array, a volume element or a Peirce basis; the Pauli arrays appear twice, in worked instances, and never as a definition.</p>
 <h2 id="the-side-of-a-multiplication">The Side of a Multiplication</h2>
 <p>The two families of operators are the left and the right multiplications,</p>
 <p>$$
-L_a\psi=a\psi,\qquad R_b\psi=\psi b .
+L_a\tilde{Ξ}=a\tilde{Ξ},\qquad R_b\tilde{Ξ}=\tilde{Ξ}b .
 $$</p>
 <p>They commute, $L_aR_b=R_bL_a$, because the product is associative: both sides are $a\psi b$. That one line is the engine of everything below, and its consequence is a rule about subspaces.</p>
 <p><strong>Proposition (left ideals are stable, right ideals are not).</strong> If $J\subseteq\mathbb{B}$ is a left ideal then $L_aJ\subseteq J$ for every $a$; if $J$ is a left ideal and $b\ne0$ then $R_bJ$ need not be contained in $J$.</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (<em>Angular Momentum and Spin in the Biquaternion Algebra</em>, §<em>The Rotation Generators</em>), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\theta}{2}+\vec u\sin\tfrac{\theta}{2}$ turns a vector through $+\theta$ about $\vec u$ (<em>Quaternion Rotations and Reflections</em>, §<em>The Adjoint Action</em>), and that is the multiplier above at $\theta=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (<em>Angular Momentum and Spin in the Biquaternion Algebra</em>, §<em>The Rotation Generators</em>).</p>
 <p><strong>Coordinates.</strong> In the carrier $S_+(\vec u)$ an element is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair of complex numbers, a coordinate vector $(d_0;d_1)$ on the carrier. The number is two because the spin is $\tfrac12$; it is not a free choice of the model.</p>
 <h2 id="the-dirac-spinor">The Dirac Spinor</h2>
-<p><strong>Definition (Dirac spinor).</strong> A <strong>Dirac spinor</strong> is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,</p>
+<p><strong>Definition (Dirac spinor).</strong> A <strong>Dirac spinor</strong> is an element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,</p>
 <p>$$
 \mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$</p>
@@ -194,7 +194,7 @@ $$</p>
 <td>The units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
-<td>$L_a\psi=a\psi$, $R_b\psi=\psi b$</td>
+<td>$L_a\tilde{Ξ}=a\tilde{Ξ}$, $R_b\tilde{Ξ}=\tilde{Ξ}b$</td>
 <td>Left and right multiplication; they commute</td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ $$</p>
 <td>The coordinates of an elementary spinor on its carrier</td>
 </tr>
 <tr>
-<td>$\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$</td>
 <td>A Dirac spinor, one part in each carrier</td>
 </tr>
 <tr>

@@ -160,7 +160,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$</td>
+<td>$\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$</td>
 <td>$(+1,+1,+1)$</td>
 <td>$\mathrm{diag}(-1,-1,-1)$</td>
 <td>$-\vec a_1\cdot\vec b_1$</td>
@@ -178,7 +178,7 @@ $$</p>
 <td>$-a_{11}b_{11}+a_{12}b_{12}+a_{13}b_{13}$</td>
 </tr>
 <tr>
-<td>$\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$</td>
+<td>$\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$</td>
 <td>$(-1,-1,+1)$</td>
 <td>$\mathrm{diag}(+1,+1,-1)$</td>
 <td>$a_{11}b_{11}+a_{12}b_{12}-a_{13}b_{13}$</td>
@@ -192,11 +192,11 @@ S_\epsilon = -\sum_{j\in\{x,y,z\}}\epsilon_j\bigl(a_{1j}b_{1j} - a_{1j}b_{2j} + 
 $$</p>
 <p>For the singlet, $\epsilon_j=+1$ for all $j$, so</p>
 <p>$$
-S_{\mathrm{spn}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
+S_{\mathrm{sp}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
 = -\vec a_1\cdot(\vec b_1-\vec b_2) - \vec a_2\cdot(\vec b_1+\vec b_2).
 $$</p>
 <h3 id="step-4-the-optimal-configuration-and-the-value-math107">Step 4: The optimal configuration and the value $2\sqrt{2}$</h3>
-<p>Consider first the singlet. With $\vec b_1$ and $\vec b_2$ held fixed, the two terms in $S_{\mathrm{spn}^-}$ involve $\vec a_1$ and $\vec a_2$ separately, so each can be maximized independently over the unit sphere:</p>
+<p>Consider first the singlet. With $\vec b_1$ and $\vec b_2$ held fixed, the two terms in $S_{\mathrm{sp}^-}$ involve $\vec a_1$ and $\vec a_2$ separately, so each can be maximized independently over the unit sphere:</p>
 <p>$$
 \max_{|\vec a_1|=1}\bigl[-\vec a_1\cdot(\vec b_1-\vec b_2)\bigr] = |\vec b_1-\vec b_2|,
 \qquad
@@ -204,7 +204,7 @@ $$</p>
 $$</p>
 <p>Therefore</p>
 <p>$$
-\max_{|\vec a_1|=|\vec a_2|=1} S_{\mathrm{spn}^-} = |\vec b_1-\vec b_2| + |\vec b_1+\vec b_2|
+\max_{|\vec a_1|=|\vec a_2|=1} S_{\mathrm{sp}^-} = |\vec b_1-\vec b_2| + |\vec b_1+\vec b_2|
 = \sqrt{2-2c} + \sqrt{2+2c} = \sqrt{2}\left(\sqrt{1-c}+\sqrt{1+c}\right),
 $$</p>
 <p>with $c=\vec b_1\cdot\vec b_2$. The function is maximized at $c=0$, i.e. at $\vec b_1\perp\vec b_2$, where it takes the value $2\sqrt{2}$. The directions</p>
@@ -212,14 +212,14 @@ $$</p>
 \vec a_1=\vec u_x,\quad \vec a_2=\vec u_z,\quad
 \vec b_1=\frac{\vec u_x+\vec u_z}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_x+\vec u_z}{\sqrt{2}}
 $$</p>
-<p>realize this configuration, and direct substitution gives $S_{\mathrm{spn}^-}=-2\sqrt{2}$; reversing the signs of $\vec a_1$ and $\vec a_2$ gives $+2\sqrt{2}$.</p>
+<p>realize this configuration, and direct substitution gives $S_{\mathrm{sp}^-}=-2\sqrt{2}$; reversing the signs of $\vec a_1$ and $\vec a_2$ gives $+2\sqrt{2}$.</p>
 <p>Now consider the other three Bell states. They are related to the singlet by <strong>local $*$-unitary operations</strong>: the parent article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> shows that conjugating $\tilde\Pi_{Ξ^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-$*$-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local $*$-unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.</p>
 <p>The explicit optimal configuration for a non-singlet Bell state is worth recording. Its correlation matrix $T=-\mathrm{diag}(\epsilon)$ has diagonal entries $T_{jj}=-\epsilon_j$, two of which are equal because $\epsilon_1\epsilon_2\epsilon_3=+1$ guarantees at least two equal signs. Choose the plane spanned by the two axes $j,k$ with $\epsilon_j=\epsilon_k$, put $\vec a_1,\vec a_2$ along those two axes, and put $\vec b_1,\vec b_2$ at $\pm45^\circ$ within that plane,</p>
 <p>$$
 \vec a_1=\vec u_j,\quad \vec a_2=\vec u_k,\quad
 \vec b_1=\frac{\vec u_j+\vec u_k}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_k}{\sqrt{2}} .
 $$</p>
-<p>Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus <strong>all four Bell states attain Tsirelson's bound</strong>.</p>
+<p>Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus <strong>all four Bell states attain Tsirelson's bound</strong>.</p>
 <h3 id="step-5-tsirelsons-bound">Step 5: Tsirelson's bound</h3>
 <p>It remains to show that no state and no directions can do better than $2\sqrt{2}$. The proof is a single operator identity.</p>
 <p>Start from the grouped form of the Bell operator,</p>
@@ -282,7 +282,7 @@ S_\epsilon = -\sum_{j\in\{x,y,z\}}\epsilon_j\bigl(a_{1j}b_{1j} - a_{1j}b_{2j} + 
 $$</p>
 <p>which is exactly the standard expression of Step 3. For the singlet, $\epsilon_j=+1$, and</p>
 <p>$$
-S_{\mathrm{spn}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
+S_{\mathrm{sp}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
 = -\vec a_1\cdot(\vec b_1-\vec b_2) - \vec a_2\cdot(\vec b_1+\vec b_2).
 $$</p>
 <p>The optimization of Step 4 is then carried out in the algebra exactly as before, since it uses only the real vectors $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ and the bilinear form. The result is the same: $|S_\epsilon|=2\sqrt{2}$ for every Bell state.</p>
@@ -401,7 +401,7 @@ $$</p>
 <p><strong>Problem 6 (Open: a framework-internal reason for $2\sqrt{2}$).</strong> The derivation above obtains the bound from the spectral norm of the matrix image of $\mathcal{S}$. Is there a principle internal to the biquaternion algebra — a condition on elements of $\mathbb{M}_+\otimes\mathbb{M}_+$ stated without passing to $M_4(\mathbb{C})$ — from which $2\sqrt{2}$, and not $4$, follows? The framework's own quadratic form does not do it (Step 4). This is left open; it is the framework's version of the standard question of why nature does not permit the no-signaling maximum.</p>
 <h2 id="summary">Summary</h2>
 <p>The CHSH inequality is the two-settings-per-party form of Bell's theorem, and this exercise derived its classical bound, its quantum bound, and the quantum correlators that produce it.</p>
-<p>In the <strong>standard formulation</strong>, the CHSH combination is the expectation of the Bell operator $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$. Every local hidden-variable model gives $|S|\le2$, because for each value of the shared variable one of the combinations $B_1-B_2$, $B_1+B_2$ vanishes. The Bell-state correlators $E(\vec a_1,\vec b_1)=-\sum_j\epsilon_j a_{1j}b_{1j}$ give $S_{\mathrm{spn}^-}=-\vec a_1\cdot(\vec b_1-\vec b_2)-\vec a_2\cdot(\vec b_1+\vec b_2)$ for the singlet, whose maximum over directions is $|\vec b_1-\vec b_2|+|\vec b_1+\vec b_2|=\sqrt2(\sqrt{1-c}+\sqrt{1+c})\le2\sqrt2$. The exact operator identity $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]$, evaluated with $[A_1,A_2]=2i(u\cdot\boldsymbol{\sigma})$, $[B_1,B_2]=2i(v\cdot\boldsymbol{\sigma})$, gives eigenvalues bounded by $2\sqrt2$ for every state. This is Tsirelson's bound, and it is saturated by all four Bell states at $\vec a_1\perp\vec a_2$, $\vec b_1\perp\vec b_2$.</p>
+<p>In the <strong>standard formulation</strong>, the CHSH combination is the expectation of the Bell operator $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$. Every local hidden-variable model gives $|S|\le2$, because for each value of the shared variable one of the combinations $B_1-B_2$, $B_1+B_2$ vanishes. The Bell-state correlators $E(\vec a_1,\vec b_1)=-\sum_j\epsilon_j a_{1j}b_{1j}$ give $S_{\mathrm{sp}^-}=-\vec a_1\cdot(\vec b_1-\vec b_2)-\vec a_2\cdot(\vec b_1+\vec b_2)$ for the singlet, whose maximum over directions is $|\vec b_1-\vec b_2|+|\vec b_1+\vec b_2|=\sqrt2(\sqrt{1-c}+\sqrt{1+c})\le2\sqrt2$. The exact operator identity $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]$, evaluated with $[A_1,A_2]=2i(u\cdot\boldsymbol{\sigma})$, $[B_1,B_2]=2i(v\cdot\boldsymbol{\sigma})$, gives eigenvalues bounded by $2\sqrt2$ for every state. This is Tsirelson's bound, and it is saturated by all four Bell states at $\vec a_1\perp\vec a_2$, $\vec b_1\perp\vec b_2$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the CHSH combination is the Born pairing of the state with the single Hermitian element</p>
 <p>$$
 \mathcal{S}
@@ -444,7 +444,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}_\mathbb{B}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$</td>
+<td>$\mathrm{Tr}_\mathbb{B}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$</td>
 <td>Trace on a single factor</td>
 </tr>
 <tr>

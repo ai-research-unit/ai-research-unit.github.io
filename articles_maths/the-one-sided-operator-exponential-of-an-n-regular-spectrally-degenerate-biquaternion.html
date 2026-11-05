@@ -79,12 +79,12 @@
 e^{\vec\Upsilon}=e_t+\vec\Upsilon,\qquad
 \varepsilon=\frac{Q_t}{\Rho}=\pm1.\;}
 $$</p>
-<p>Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real; then $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall both factors remain, but their exponents do not add. The formal exponent $i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ is not the logarithm: its difference from the true exponent $\vec\Upsilon$ is the log defect of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Formal Exponent and the Defect</em>, whose cross term $i\varepsilon\tanh\frac{\psi}{2}\tan\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. The exact exponent is $\vec\Upsilon$ itself. What the wall leaves is a pair of constraints between the two factors:</p>
+<p>Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real; then $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall both factors remain, but their exponents do not add. The formal exponent $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ is not the logarithm: its difference from the true exponent $\vec\Upsilon$ is the log defect of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Formal Exponent and the Defect</em>, whose cross term $i\varepsilon\tanh\frac{\theta^{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. The exact exponent is $\vec\Upsilon$ itself. What the wall leaves is a pair of constraints between the two factors:</p>
 <p>$$
 \boxed{\;\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,\qquad
-\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a.\;}
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta^{\mathrm{rpd}}}{2}=a.\;}
 $$</p>
-<p><em>Proof.</em> From the coordinate boxes of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</em>, $\cosh\frac{\psi}{2}=\sqrt{1+a^2}$, $\sinh\frac{\psi}{2}=a$, $\lvert\cos\frac{\theta}{2}\rvert=1/\sqrt{1+a^2}$ and $\sin\frac{\theta}{2}=a/\sqrt{1+a^2}$. Hence $\varepsilon\tan\frac{\theta}{2}=a=\sinh\frac{\psi}{2}$. The axes are $\vec u_{\mathrm b}\propto\vec B+\vec A\times\vec B$ and $\vec u_{\mathrm r}=\varepsilon\vec A/a$. The vectors $\vec B$ and $\vec A\times\vec B$ are both orthogonal to $\vec A$, because $\vec A\cdot\vec B=0$, so $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$.</p>
+<p><em>Proof.</em> From the coordinate boxes of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</em>, $\cosh\frac{\theta^{\mathrm{rpd}}}{2}=\sqrt{1+a^2}$, $\sinh\frac{\theta^{\mathrm{rpd}}}{2}=a$, $\lvert\cos\frac{\theta}{2}\rvert=1/\sqrt{1+a^2}$ and $\sin\frac{\theta}{2}=a/\sqrt{1+a^2}$. Hence $\varepsilon\tan\frac{\theta}{2}=a=\sinh\frac{\theta^{\mathrm{rpd}}}{2}$. The axes are $\vec u_{\mathrm b}\propto\vec B+\vec A\times\vec B$ and $\vec u_{\mathrm r}=\varepsilon\vec A/a$. The vectors $\vec B$ and $\vec A\times\vec B$ are both orthogonal to $\vec A$, because $\vec A\cdot\vec B=0$, so $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$.</p>
 <p>The wall therefore removes neither factor. It removes two real degrees of freedom: the rapidity and the angle are locked to the single parameter $a$, and the two axes are forced orthogonal. The product of the two factors is the unipotent $\tilde U$, up to the sign $\varepsilon$.</p>
 <p><strong>The operator exponential.</strong> Left multiplication is a representation, $L_{\tilde X}L_{\tilde Y}=L_{\tilde X\tilde Y}$, hence $L_{\exp\tilde X}=\exp L_{\tilde X}$. Since $L_{\vec\Upsilon}^2=L_{\vec\Upsilon^2}=0$,</p>
 <p>$$
@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p>for every complex $t$. In particular $\exp L_{\tilde Q}=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$.</p>
 <p><em>Proof.</em> $L_{\tilde Q}=Q_tL_{e_t+\vec\Upsilon}=Q_t(I+L_{\vec\Upsilon})$ and $L_{\vec\Upsilon}^2=0$. The two terms of the exponent commute, because both are polynomials in $L_{\vec\Upsilon}$, so the exponential is $e^{tQ_t}\exp(tQ_tL_{\vec\Upsilon})$, and the second factor is $I+tQ_tL_{\vec\Upsilon}$.</p>
-<p><strong>Interpretation.</strong> The one-parameter group is a line of shears, not a circle of rotations. The exponential moves the identity along the nilpotent direction and stops at degree one; it has no period and carries no angle. The polar angles are in the factors: $L_{\tilde U_{\mathrm b}}$ has the eigenvalues $e^{\pm\psi/2}$, each twice, and $L_{\tilde u_{\mathrm r}}$ has $e^{\pm i\theta/2}$, each twice. Their product has the single eigenvalue $Q_t$, with two Jordan blocks of size two, and its spectrum carries no angle at all. In the regular sector the eigenvalues of $L_{\tilde Q}$ are $\Rho\mu_\pm$ with $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$ and $U_t=\operatorname{Sc}\tilde U$; at the wall $U_t\to\varepsilon$ and both eigenvalues tend to $\Rho\varepsilon=Q_t$. The only trace of the two angles is the single parameter $a$ that measures the nilpotent part.</p>
+<p><strong>Interpretation.</strong> The one-parameter group is a line of shears, not a circle of rotations. The exponential moves the identity along the nilpotent direction and stops at degree one; it has no period and carries no angle. The polar angles are in the factors: $L_{\tilde U_{\mathrm b}}$ has the eigenvalues $e^{\pm\theta^{\mathrm{rpd}}/2}$, each twice, and $L_{\tilde u_{\mathrm r}}$ has $e^{\pm i\theta/2}$, each twice. Their product has the single eigenvalue $Q_t$, with two Jordan blocks of size two, and its spectrum carries no angle at all. In the regular sector the eigenvalues of $L_{\tilde Q}$ are $\Rho\mu_\pm$ with $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$ and $U_t=\operatorname{Sc}\tilde U$; at the wall $U_t\to\varepsilon$ and both eigenvalues tend to $\Rho\varepsilon=Q_t$. The only trace of the two angles is the single parameter $a$ that measures the nilpotent part.</p>
 <p>At the wall the spinor exponent is $\vec\Upsilon$ itself, carried by the left slot. The vector exponent of the sandwich is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right. That is the wall form of the doubling: the spinor reading has one slot, the vector reading has two, and the scalar part appears once per slot. This is why the modulus is $Q_t$ in the one-sided reading and $\lvert Q_t\rvert^2$ in the two-sided one, and not a doubled exponent.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p>The companion gives the operator and its nilpotent part in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Its exponential is the shear</p>
@@ -123,11 +123,11 @@ $$</p>
 \exp\bigl(tL_{\tilde Q}\bigr)=e^{tQ_t}\bigl(I+tQ_tL_{\vec\Upsilon}\bigr),
 $$</p>
 <p>with no period and no angle. Its eigenvalues are $e^{tQ_t}$, each with a Jordan block of size two; the spectrum of the product $L_{\tilde Q}$ itself is $Q_t$ alone, with two Jordan blocks of size two.</p>
-<p>The two polar factors survive at the wall, with the eigenvalues $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$, each twice, but their parameters are not free: the axes are orthogonal and</p>
+<p>The two polar factors survive at the wall, with the eigenvalues $e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$, each twice, but their parameters are not free: the axes are orthogonal and</p>
 <p>$$
 \vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,
 \qquad
-\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a .
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta^{\mathrm{rpd}}}{2}=a .
 $$</p>
 <p>The two angles leave a single trace in the spectrum, the null parameter $a$. The spinor exponent is $\vec\Upsilon$ itself, carried by one slot; the vector exponent is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right, which is the wall form of the doubling.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -168,7 +168,7 @@ $$</p>
 <td>the positive factor and the rotor</td>
 </tr>
 <tr>
-<td>$\psi,\theta$</td>
+<td>$\theta^{\mathrm{rpd}},\theta$</td>
 <td>the rapidity and the rotor angle</td>
 </tr>
 <tr>

@@ -87,9 +87,9 @@ $$</p>
 $$</p>
 <p>The polar word of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</em> is</p>
 <p>$$
-\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>with $\cosh\frac{\psi}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\sinh\frac{\psi}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The two decompositions are compared below.</p>
+<p>with $\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The two decompositions are compared below.</p>
 <h2 id="the-spectral-problem">The Spectral Problem</h2>
 <p><strong>Proposition (one eigenvalue, no eigenbasis).</strong> Let $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$ and $\vec\Upsilon\neq0$. Then $\tilde Q$ has the single eigenvalue $Q_t$, and it has no eigenbasis.</p>
 <p><em>Proof.</em> The characteristic polynomial of $\tilde Q$ is $(X-Q_t)^2$, because $\vec\Upsilon$ is nilpotent. If a basis of eigenvectors existed, the matrix of $\tilde Q$ in that basis would be the scalar matrix $Q_tI$, so $\tilde Q=Q_te_t$ and $\vec\Upsilon=0$.</p>
@@ -142,7 +142,7 @@ $$</p>
 <p>The polar factors do not preserve the flag in general.</p>
 <p><strong>Proposition (the factors leave the flag).</strong> On the Jordan part, the positive factor $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ do not preserve the eigenline $\mathbb{C}\zeta$ unless the element lies on the scalar line. Their product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ does preserve it.</p>
 <p><em>Proof.</em> The product is $\tilde U$, which is upper triangular in the Jordan basis. If both factors preserved the flag, both would be upper triangular in that basis. The worked example below shows that they are not; the general statement follows because the polar factors are functions of $\tilde U$ and $\tilde U^{*}$, and $\tilde U^{*}$ does not preserve the flag of $\tilde U$ on the Jordan part.</p>
-<p>The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\psi/2}$ and $e^{-\psi/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.</p>
+<p>The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\theta^{\mathrm{rpd}}/2}$ and $e^{-\theta^{\mathrm{rpd}}/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.</p>
 <p>This is the precise sense in which the Jordan reading and the polar reading are transverse. The Jordan basis triangularizes the element and the unit factor. The polar word diagonalizes neither the element nor the unit factor; it separates the element into a positive and a $*$-unitary factor, and only their product is unipotent.</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <p>The spectral data and the polar data carry different real information.</p>
@@ -173,7 +173,7 @@ $$</p>
 <tr>
 <td>eigenvalues</td>
 <td>$Q_t$, double</td>
-<td>$\varepsilon$, double for $\tilde U$; $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$ for the factors</td>
+<td>$\varepsilon$, double for $\tilde U$; $e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$ for the factors</td>
 </tr>
 <tr>
 <td>basis</td>
@@ -183,7 +183,7 @@ $$</p>
 <tr>
 <td>real data</td>
 <td>$Q_t$ (2) and $\vec\Upsilon$ (4)</td>
-<td>$r,\alpha$ (2), $\psi,\theta$ (2), frame (2), relation (1)</td>
+<td>$r,\alpha$ (2), $\theta^{\mathrm{rpd}},\theta$ (2), frame (2), relation (1)</td>
 </tr>
 <tr>
 <td>what the spectrum fixes</td>
@@ -197,7 +197,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.</p>
+<p>The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.</p>
 <h2 id="the-boundary">The Boundary</h2>
 <p>Seen from the regular sector $\Sigma_{11}$, the locus $B^2=0$ is the wall at which the two eigenvalues $\lambda_\pm=Q_t\pm iB$ coalesce. The eigenprojectors</p>
 <p>$$
@@ -212,7 +212,7 @@ $$</p>
 $$</p>
 <p>Then $Q_t=1$, $\vec\Upsilon=\vec e_x+i\vec e_y$, $\vec\Upsilon^2=0$, $N=1$, $\Rho=1$, $r=1$, $\alpha=0$ and $\varepsilon=1$. The word is</p>
 <p>$$
-\psi=2\operatorname{arcosh}\sqrt2,
+\theta^{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2,
 \qquad
 \theta=\frac{\pi}{2},
 \qquad
@@ -309,7 +309,7 @@ $$</p>
 </tr>
 <tr>
 <td>factor eigenvalues</td>
-<td>$e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$; the product has the double eigenvalue $\varepsilon$</td>
+<td>$e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$; the product has the double eigenvalue $\varepsilon$</td>
 </tr>
 <tr>
 <td>data carried by the spectrum</td>
@@ -373,7 +373,7 @@ $$</p>
 <td>the positive factor and the rotor</td>
 </tr>
 <tr>
-<td>$\psi,\theta$</td>
+<td>$\theta^{\mathrm{rpd}},\theta$</td>
 <td>the rapidity and the rotor angle</td>
 </tr>
 <tr>

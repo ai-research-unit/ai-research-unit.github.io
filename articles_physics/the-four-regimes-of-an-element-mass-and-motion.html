@@ -233,7 +233,7 @@ $$</p>
 <p>The table is exhaustive: every element lies in exactly one cell. The cells are the four combinations of the two conditions; the two cones are their boundaries, and the origin lies in the closure of all four.</p>
 <h2 id="the-four-regimes">The Four Regimes</h2>
 <h3 id="mass-in-motion-math45">Mass in Motion: $\Sigma_{11}$</h3>
-<p>The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}^{\mathrm{spn}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.</p>
+<p>The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}^{\mathrm{sp}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.</p>
 <p>The physical content is the <strong>two-mode picture</strong>: two invariant planes, a mode basis, a beat, and a unique decomposition of the element into two null components. It is the regime in which a particle has both a mass and a direction of motion, and in which the mass shell is a level set rather than the cell itself.</p>
 <h3 id="the-rest-frame-and-the-exceptional-point-math50">The Rest Frame and the Exceptional Point: $\Sigma_{10}$</h3>
 <p>The cell of units with a repeated eigenvalue. It has two faces. The <strong>scalar line</strong> $Q_te_t$ is the real rest frame: $\vec p=0$, $B=0$, $N=Q_t^2$, and the single eigenvalue $Q_t=iE/c$. It is semisimple, every basis is an eigenbasis, and the two-term writing is not unique. The <strong>Jordan part</strong> $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: one eigenvalue, a Jordan block, no eigenbasis, a shear. It is not on the real material slice, because a real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$.</p>
@@ -247,11 +247,11 @@ $$</p>
 <h2 id="the-real-slices">The Real Slices</h2>
 <p>The table is a table of the full algebra. A physical four-momentum is a point of a real four-dimensional slice, and the slice selects part of each cell.</p>
 <h3 id="the-material-slice">The Material Slice</h3>
-<p>On $\mathbb{M}_-$ the coordinates are $Q_t=ict'$ and $\vec Q=(x,y,z)$ real. Hence</p>
+<p>On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(x,y,z)$ real. Hence</p>
 <p>$$
-B^2=x^2+y^2+z^2\ge0,
+B^2=r_x^2+r_y^2+r_z^2\ge0,
 \qquad
-N=-c^2t'^2+x^2+y^2+z^2 .
+N=-c^2t'^2+r_x^2+r_y^2+r_z^2 .
 $$</p>
 <p>The vector square is non-negative and vanishes exactly at the spatial origin. The material slice therefore meets the four cells as follows.</p>
 <div class="table-scroll"><table>
@@ -283,13 +283,13 @@ $$</p>
 <p>This is the mass–motion table of a real four-momentum. A real momentum has two distinct modes exactly when it moves. At rest it has one mode. On the light cone it has one zero mode. At the origin it has neither.</p>
 <p>The table also shows what is <strong>not</strong> on the real slice: the Jordan part of $\Sigma_{10}$ and the non-zero nilpotents of $\Sigma_{00}$. Both need a complex isotropic spatial vector. They are regimes of the complexified algebra, not of a real four-momentum, and the physics articles that use them say so.</p>
 <h3 id="the-informational-slice">The Informational Slice</h3>
-<p>On $\mathbb{M}_+$ the coordinates are $Q_t=ct$ real and $\vec Q=i(x',y',z')$. Hence</p>
+<p>On $\mathbb{M}_+$ the coordinates are $Q_t=c r_t$ real and $\vec Q=i(r'_{x},r'_{y},r'_{z})$. Hence</p>
 <p>$$
-B^2=-(x'^2+y'^2+z'^2)\le0,
+B^2=-(r'_{x}^2+r'_{y}^2+r'_{z}^2)\le0,
 \qquad
-N=c^2t^2-x'^2-y'^2-z'^2 .
+N=c^2t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2 .
 $$</p>
-<p>The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $x'=y'=z'=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.</p>
+<p>The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $r'_{x}=r'_{y}=r'_{z}=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.</p>
 <p>The sign reversal is the content of the sector bridge. The same $B^2$ is non-negative on matter and non-positive on information, and the same norm is the interval on one and minus the interval on the other. The four-cell partition is the same partition on both slices; the mirror reverses the signs, not the cells.</p>
 <h2 id="the-mass-shell-and-the-light-cone">The Mass Shell and the Light Cone</h2>
 <p>The four cells are not the mass shell and the light cone. They are the regions cut by the two cones, and the physically distinguished level sets cut across them.</p>
@@ -374,11 +374,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>the material slice, $Q_t=ict'$, $\vec Q$ real</td>
+<td>the material slice, $Q_t=i c r'_t$, $\vec Q$ real</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>the informational slice, $Q_t=ct$, $\vec Q$ imaginary</td>
+<td>the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary</td>
 </tr>
 <tr>
 <td>$\tilde P=i\frac{E}{c}e_t+\vec p$</td>

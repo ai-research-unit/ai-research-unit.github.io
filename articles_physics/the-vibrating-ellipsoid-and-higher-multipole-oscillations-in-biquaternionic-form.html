@@ -130,7 +130,7 @@ $$</p>
 <h3 id="normal-mode-dynamics">Normal-Mode Dynamics</h3>
 <p>For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,</p>
 <p>$$
-\left(d^2a_{lm}/d{t'}^2\right)(t') + \omega_l^2\,a_{lm}(t') = 0 ,
+\left(d^2a_{lm}/d{r'_{t}}^2\right)(t') + \omega_l^2\,a_{lm}(t') = 0 ,
 $$</p>
 <p>with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the <strong>spherical</strong> equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(t') = A_{lm}\cos(\omega_l t' + \theta^{\mathrm{pha}}_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.</p>
 <p>The classic and exactly solvable case is <strong>Rayleigh's vibrating liquid drop</strong>, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result</p>
@@ -216,7 +216,7 @@ $$</p>
 <p><strong>The algebra supplies the rotor.</strong> The orientation of the body is a single rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.</p>
 <h2 id="the-velocity-field-and-the-mode-energy">The Velocity Field and the Mode Energy</h2>
 <h3 id="the-velocity-field-is-a-vector-element">The Velocity Field Is a Vector Element</h3>
-<p>The motion of the medium is described by a velocity field $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$, and in the algebra it is a pure real vector element,</p>
+<p>The motion of the medium is described by a velocity field $\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$, and in the algebra it is a pure real vector element,</p>
 <p>$$
 \vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
 $$</p>
@@ -239,7 +239,7 @@ $$</p>
 <h3 id="time-dependent-multipole-fields">Time-Dependent Multipole Fields</h3>
 <p>The moments $\mathrm{Sd}_{ij}(t')$, $\mathrm{Sd}_{ijk}(t'), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.</p>
 <h3 id="power-scaling">Power Scaling</h3>
-<p>The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{t'}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t'$ this gives $d^3Q/d{t'}^3\propto\omega^3$ and</p>
+<p>The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{r'_{t}}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t'$ this gives $d^3Q/d{r'_{t}}^3\propto\omega^3$ and</p>
 <p>$$
 P \;\propto\; \omega^6 .
 $$</p>
@@ -320,7 +320,7 @@ $$</p>
 <td>Normal-mode amplitude (a scalar)</td>
 </tr>
 <tr>
-<td>$\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$</td>
+<td>$\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$</td>
 <td>Velocity field</td>
 </tr>
 <tr>

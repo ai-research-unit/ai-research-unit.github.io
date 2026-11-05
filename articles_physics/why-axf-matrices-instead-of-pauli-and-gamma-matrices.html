@@ -159,7 +159,7 @@ $$</p>
 <p>The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_+$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.</p>
 <p>The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_+,i\tilde\Pi_+)$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.</p>
 <p>The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth cell. Neither fact is stated anywhere on a page that prints the five matrices.</p>
-<p>The Dirac adjoint. The adjoint $\tilde{Ξ}^{\mathrm{spn}\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.</p>
+<p>The Dirac adjoint. The adjoint $\tilde{Ξ}^{\mathrm{sp}\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.</p>
 <p>The charge conjugation. The cell $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one cell serves is a fact of the frame; which cell it is, is a choice.</p>
 <p>The third component of spin. A triplet whose third member is diagonal makes $\sigma_3$ the distinguished one, and every later sentence that measures "the third component" inherits the distinction.</p>
 <p>The sentences. "The third member is the diagonal one." "The upper half of the column is the left part." "The diagonal member is the energy." Each is true in the frame that produced it, false in a rotated one, and printed in the same font as the identities that hold everywhere.</p>
@@ -430,7 +430,7 @@ $$</p>
 <h3 id="the-operator-is-a-pair">The Operator Is a Pair</h3>
 <p>A matrix display is already a compromise. The object an equation of the corpus names is not an array but an action on an element:</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{spn}}\longmapsto a\,\tilde{Ξ}^{\mathrm{spn}}\,b.
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}^{\mathrm{sp}}\,b.
 $$</p>
 <p>The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.</p>
 <p>This is the form the physics equations of the corpus take when the equation is the subject and no array is required. Each factor is named, so a reader sees which factor carries the mass, which the momentum and which the grading, and no factor is an entry of a display.</p>
@@ -509,9 +509,9 @@ $$</p>
 <h3 id="the-second-pass-from-cells-to-actions">The Second Pass: From Cells to Actions</h3>
 <p>Replace every cell by what it does. The rule is one line, and it is the whole pass:</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{spn}}\longmapsto a\,\tilde{Ξ}^{\mathrm{spn}}\,b.
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}^{\mathrm{sp}}\,b.
 $$</p>
-<p>The pass removes the operator symbol as well. A mass term is $m\tilde{Ξ}^{\mathrm{spn}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §<em>Composition and Invariants</em> replaces every matrix multiplication.</p>
+<p>The pass removes the operator symbol as well. A mass term is $m\tilde{Ξ}^{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §<em>Composition and Invariants</em> replaces every matrix multiplication.</p>
 <p>An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.</p>
 <h3 id="the-third-pass-keep-the-axis-free-array-where-an-array-is-required">The Third Pass: Keep the Axis-Free Array Where an Array Is Required</h3>
 <p>The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label in the caret: $L^{\mathrm{axf}}(\tilde Q)$ and $L^{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent.</p>
@@ -532,7 +532,7 @@ $$</p>
 <td>the identity $\mathrm I_4$</td>
 <td>$L_{e_t}R_{e_t}$</td>
 <td>$\mathrm I_4$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}}$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}$</td>
 </tr>
 <tr>
 <td>the image $\mathsf M_2(\tilde Q)$</td>
@@ -544,31 +544,31 @@ $$</p>
 <td>$\gamma_0[\mathbb{M}_-]$</td>
 <td>$iR_{\vec e_x}$</td>
 <td>$iR^{\mathrm{axf}}_{\vec e_x}$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto i\tilde{Ξ}^{\mathrm{sp}}\vec e_x$</td>
 </tr>
 <tr>
 <td>$\gamma_k[\mathbb{M}_-]$</td>
 <td>$iL_{\vec e_k}R_{\vec e_y}$</td>
 <td>$iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto i\vec e_k\tilde{Ξ}^{\mathrm{spn}}\vec e_y$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}^{\mathrm{sp}}\vec e_y$</td>
 </tr>
 <tr>
 <td>$\gamma_5[\mathbb{M}_-]$</td>
 <td>$-iR_{\vec e_z}$</td>
 <td>$-iR^{\mathrm{axf}}_{\vec e_z}$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z$</td>
 </tr>
 <tr>
 <td>the mass term</td>
 <td>$mL_{e_t}R_{e_t}$</td>
 <td>$m\mathrm I_4$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto m\tilde{Ξ}^{\mathrm{spn}}$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto m\tilde{Ξ}^{\mathrm{sp}}$</td>
 </tr>
 <tr>
 <td>the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$</td>
 <td>$\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$</td>
 <td>$\tfrac12\bigl(\mathrm I_4-iR^{\mathrm{axf}}_{\vec e_z}\bigr)$</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}\mapsto\tfrac12\bigl(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\bigr)$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}^{\mathrm{sp}}-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr)$</td>
 </tr>
 <tr>
 <td>the Dirac adjoint</td>
@@ -601,7 +601,7 @@ $$</p>
 <p>The permutation test. Rename the three spatial units by a cycle and re-read the section. Every sentence that becomes false was a sentence about the display. This test is the reason the article exists, and it is the one a migration usually skips.</p>
 <p>The link test. Every cited title must resolve, and a rewritten section must not cite a section that no longer exists.</p>
 <h3 id="the-rules-of-use">The Rules of Use</h3>
-<p>Write the action first, $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$, and name the operator only when the operator is the subject.</p>
+<p>Write the action first, $\tilde{Ξ}^{\mathrm{sp}}\mapsto a\tilde{Ξ}^{\mathrm{sp}} b$, and name the operator only when the operator is the subject.</p>
 <p>Write one term per line. A sum is a sum of terms, and each term is a pair.</p>
 <p>Never compress a sum into one symbol unless its coefficient matrix has rank one.</p>
 <p>Keep the coefficient matrix out of the page. It is a diagnostic of the dictionary, not a datum of the physics.</p>
@@ -615,7 +615,7 @@ $$</p>
 <p>No gamma display can avoid the choice. The two gammas $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ anticommute, so at most one of them is diagonal, and the display spends that allowance on the time direction or on a spatial one. The Pauli display of this corpus spends it on the spatial one.</p>
 <p>The defect is a formal defect, and its source is physical. Physical space has no preferred spatial direction, and a fundamental equation therefore contains none. A display that singles one out adds a datum the equation does not have, and the addition is unmarked, so the reader cannot subtract it. It also hides what depends on that direction: the orbit of the three spatial cells, the basis-free form of the adjoint, and the correspondence between two frames become invisible on the page, which is worse than a stray datum. A frame is legitimate when a measurement, an apparatus or a background supplies the direction, and then it is named; the defect is the default frame no problem asked for.</p>
 <p>The $\mathrm{axf}$ display writes no direction. Its diagonal cells are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every cell is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the natural norm, and the transpose is the natural conjugation.</p>
-<p>The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$, with no basis in the definition.</p>
+<p>The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}^{\mathrm{sp}}\mapsto a\tilde{Ξ}^{\mathrm{sp}} b$, with no basis in the definition.</p>
 <p>The migration has three passes — arrays to cells, cells to actions, keep the axis-free array where an array is required — a dictionary, four traps and five checks.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -681,11 +681,11 @@ $$</p>
 </tr>
 <tr>
 <td>$L_a$, $R_b$</td>
-<td>left and right multiplication, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$</td>
+<td>left and right multiplication, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$</td>
 </tr>
 <tr>
 <td>$L_aR_b$</td>
-<td>the two-sided operator, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$</td>
+<td>the two-sided operator, $L_aR_b\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}} b$</td>
 </tr>
 <tr>
 <td>$L^{\mathrm{axf}}(\tilde Q)$, $L^{\mathrm{pau}}(\tilde Q)$</td>

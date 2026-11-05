@@ -91,19 +91,19 @@ $$</p>
 <p>The article's thesis can be stated at once. The biquaternion algebra, regarded as a representation space of the rotation group — the group acting by rotor conjugation — is the direct sum $D^{(0)}\oplus D^{(1)}$ of the trivial representation and the vector representation, and nothing more. Its <strong>elements</strong> can therefore carry the monopole (a central scalar) and the dipole (a vector), and its <strong>product</strong> never leaves that sum either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the dot and the cross product. The <strong>quadrupole</strong> is the first moment that is not an algebra element: it is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it lives in the symmetric traceless square of the vector part rather than in the algebra itself. The quadrupole <strong>interaction energy</strong>, by contrast, is a scalar, and therefore is always an element of the centre $\mathbb{C}_{\mathbb{B}}$. The distinction between the moment, which is a tensor, and its interaction, which is a scalar, organises the article and the two that follow it.</p>
 <h2 id="the-multipole-expansion-of-a-localised-source">The Multipole Expansion of a Localised Source</h2>
 <h3 id="from-the-coulomb-integral-to-the-series">From the Coulomb Integral to the Series</h3>
-<p>Let a charge distribution of density $\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the Coulomb integral</p>
+<p>Let a charge distribution of density $\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the Coulomb integral</p>
 <p>$$
-Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 .
+Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 .
 $$</p>
-<p>The kernel is expanded by the standard Legendre expansion. Writing $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $r_2 = |x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z|$, $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, $\vec u_2 = (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)/r_2$, and $\cos\gamma = \vec u\cdot\vec u_2$, the expansion is</p>
+<p>The kernel is expanded by the standard Legendre expansion. Writing $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, $r_2 = |x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z|$, $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$, $\vec u_2 = (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)/r_2$, and $\cos\gamma = \vec u\cdot\vec u_2$, the expansion is</p>
 <p>$$
-\frac{1}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
+\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
 $$</p>
 <p>where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is the Legendre polynomial of degree $l$. For a field point outside the source, $r_> = r$ and $r_< = r_2$, and the series converges absolutely. This is the standard result; it is the ancestor of every multipole expansion.</p>
 <h3 id="the-spherical-harmonic-form">The Spherical-Harmonic Form</h3>
 <p>Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the <strong>spherical multipole expansion</strong></p>
 <p>$$
-\boxed{\;Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
+\boxed{\;Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
 $$</p>
 <p>with the <strong>spherical multipole moments</strong></p>
 <p>$$
@@ -123,7 +123,7 @@ $$</p>
 $$</p>
 <p>and the dipole potential is</p>
 <p>$$
-Ξ_{dip}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\vec u}{r^2}.
+Ξ_{dip}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\vec u}{r^2}.
 $$</p>
 <p><strong>Quadrupole ($l = 2$).</strong> The five independent moments are those of the <strong>quadrupole tensor</strong></p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p>which is symmetric, $\mathcal{Q}_{ij} = \mathcal{Q}_{ji}$, and traceless, $\mathcal{Q}_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The quadrupole potential is</p>
 <p>$$
-Ξ_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
+Ξ_{quad}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
 $$</p>
 <p>The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a spherically symmetric $1/r^3$ term, which is not a pure $l=2$ object; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r_2^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.</p>
 <h3 id="the-tower-and-its-ordering">The Tower and Its Ordering</h3>
@@ -152,7 +152,7 @@ $$</p>
 <p>Two comments fix the interpretation. First, the tower is infinite because the space of functions on the sphere is <strong>infinite-dimensional</strong>: a function on $S^2$ has arbitrarily fine angular structure, and each finer scale is one more $D^{(l)}$. Second, the tower is a property of the <strong>field</strong>, which is a function of position; it is not a property of the algebra of values the field takes. That distinction becomes the whole content of the closing article, and it is already visible here.</p>
 <h2 id="the-biquaternion-transcription-of-the-fields">The Biquaternion Transcription of the Fields</h2>
 <h3 id="the-potential-and-the-field">The Potential and the Field</h3>
-<p>In the $ict'$ convention the four-potential is an element of the material sector,</p>
+<p>In the $i c r'_t$ convention the four-potential is an element of the material sector,</p>
 <p>$$
 \tilde{A} = i\,a'_t\,e_t + \vec A \in \mathbb{M}_- ,
 \qquad \vec A = A_1\vec e_x + A_2\vec e_y + A_3\vec e_z ,
@@ -194,7 +194,7 @@ $$</p>
 \tilde{p} = p_1\vec e_x + p_2\vec e_y + p_3\vec e_z ,
 $$</p>
 <p>a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an <strong>element of the algebra</strong>. Two consequences follow.</p>
-<p><strong>The dipole potential.</strong> With the unit radial quaternion $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, satisfying $\vec u^2 = -e_t$, the dipole potential is</p>
+<p><strong>The dipole potential.</strong> With the unit radial quaternion $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$, satisfying $\vec u^2 = -e_t$, the dipole potential is</p>
 <p>$$
 Ξ_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\vec u\right)}{r^2},
 $$</p>
@@ -215,7 +215,7 @@ $$</p>
 <h3 id="the-quadrupole-potential">The Quadrupole Potential</h3>
 <p>The potential of a quadrupole is the $l = 2$ term of the expansion,</p>
 <p>$$
-\boxed{\;Ξ_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
+\boxed{\;Ξ_{quad}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
 $$</p>
 <p>and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.</p>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
@@ -276,7 +276,7 @@ $$</p>
 \qquad \dim_{\mathbb{C}}\operatorname{sym}^2_0(D^{(1)}) = 5\;},
 $$</p>
 <p>which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is <em>outside</em> the algebra: it is a tensor built from two vectors, not a single element.</p>
-<p>The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,Ξ$. The quadrupole angular information is carried by the scalar field $Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the <em>product</em> of two gradient operators.</p>
+<p>The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,Ξ$. The quadrupole angular information is carried by the scalar field $Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the <em>product</em> of two gradient operators.</p>
 <h3 id="the-invariant-statement">The Invariant Statement</h3>
 <p>It is worth stating the conclusion in the form the physics demands. A multipole moment is an <em>invariant of the source</em>: an integral over the source, a functional of the charge distribution. It is not an element of the value algebra of the field. The moments of order $l = 0$ and $l = 1$ happen to coincide with the two irreducible pieces of the algebra — the centre and the vector part — and so can be written as single biquaternions. The moments of order $l \geq 2$ cannot: they are tensors, functionals of the source, or, equivalently, coefficients in the angular expansion of a scalar field. The quadrupole is the first moment at which the finite dimension of the algebra becomes visible in the physics.</p>
 <p>This is not a defect of the framework. It is the same finite-dimensionality that the companion article on the Poisson bracket identifies as the obstruction to the canonical Heisenberg algebra inside $\mathbb{B}$:
@@ -345,7 +345,7 @@ $$</p>
 <td>Field-strength biquaternion</td>
 </tr>
 <tr>
-<td>$\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$</td>
+<td>$\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$</td>
 <td>Unit radial quaternion, $\vec u^2 = -e_t$</td>
 </tr>
 <tr>

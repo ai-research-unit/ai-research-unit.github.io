@@ -111,20 +111,20 @@ $$</p>
 <h3 id="pure-states">Pure States</h3>
 <p>A <strong>pure state</strong> is a state that cannot be written as a nontrivial convex combination of two other states. In the density matrix formalism, pure states are rank-one projectors:</p>
 <p>$$
-\rho_{\mathrm{spn}} = |\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
 $$</p>
-<p>where $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).</p>
+<p>where $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).</p>
 <p>Pure states satisfy</p>
 <p>$$
-\rho_{\mathrm{spn}}^2 = \rho_{\mathrm{spn}},
+\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}},
 $$</p>
 <p>i.e., they are <strong>idempotent</strong>. This is the algebraic characterization of purity: a state is pure if and only if it is idempotent.</p>
 <h3 id="mixed-states">Mixed States</h3>
 <p>A <strong>mixed state</strong> is a state that can be written as a convex combination of pure states:</p>
 <p>$$
-\rho = \sum_i p_i\, \rho_{\mathrm{spn}_i}, \qquad p_i \geq 0, \quad \sum_i p_i = 1.
+\rho = \sum_i p_i\, \rho_{\mathrm{sp}_i}, \qquad p_i \geq 0, \quad \sum_i p_i = 1.
 $$</p>
-<p>The mixed state describes a statistical ensemble: with probability $p_i$, the system is in the pure state $\rho_{\mathrm{spn}_i}$. The mixture reflects our ignorance of the preparation, not a fundamental indeterminacy.</p>
+<p>The mixed state describes a statistical ensemble: with probability $p_i$, the system is in the pure state $\rho_{\mathrm{sp}_i}$. The mixture reflects our ignorance of the preparation, not a fundamental indeterminacy.</p>
 <p>Mixed states are not idempotent: $\rho^2 \neq \rho$. The <strong>purity</strong> of a state is the quantity</p>
 <p>$$
 \mathrm{Tr}(\rho^2) \leq 1,
@@ -170,7 +170,7 @@ $$</p>
 <h3 id="states-of-a-qubit">States of a Qubit</h3>
 <p>A <strong>pure state</strong> of a qubit is a unit vector</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{spn}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
+|\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
 $$</p>
 <p>where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.</p>
 <p>A <strong>mixed state</strong> of a qubit is a density matrix</p>
@@ -224,13 +224,13 @@ $$</p>
 <p>i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
-<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
+<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
 <p>$$
-\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = H\, |\tilde{Ξ}^{\mathrm{spn}}(t')\rangle\;},
+\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(t')\rangle\;},
 $$</p>
 <p>where $H$ is the Hamiltonian. The solution is</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = U(t', t'_0)\, |\tilde{Ξ}^{\mathrm{spn}}(t'_0)\rangle,
+|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = U(t', t'_0)\, |\tilde{Ξ}^{\mathrm{sp}}(t'_0)\rangle,
 $$</p>
 <p>with $U(t', t'_0) = \exp\left(-\tfrac{i}{\hbar}H(t' - t'_0)\right)$ for a time-independent Hamiltonian.</p>
 <p>For a density matrix $\rho(t')$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
@@ -294,7 +294,7 @@ $$</p>
 <p>A <strong>pure</strong> state that is <strong>not</strong> a product state is called <strong>entangled</strong>. For mixed states the criterion is different: a state is <strong>separable</strong> if it can be written as a convex combination of product states, and <strong>entangled</strong> otherwise. Entanglement is the quantum correlation between the two subsystems that cannot be explained by any classical correlation.</p>
 <p>The canonical examples of entangled states are the <strong>Bell states</strong> of two qubits:</p>
 <p>$$
-|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{spn}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{sp}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
 $$</p>
 <p>These are maximally entangled states. They violate Bell inequalities, and they cannot be written as a convex combination of product states.</p>
 <h3 id="reduced-states-and-the-partial-trace">Reduced States and the Partial Trace</h3>
@@ -349,8 +349,8 @@ $$</p>
 <td>Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$</td>
 </tr>
 <tr>
-<td>$\rho_{\mathrm{spn}} = \lvert\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}\rvert$</td>
-<td>Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{spn}}^2 = \rho_{\mathrm{spn}}$)</td>
+<td>$\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}\rvert$</td>
+<td>Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$)</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}$, $\mathrm{Tr}_B$</td>
@@ -389,7 +389,7 @@ $$</p>
 <td>Reduced Planck constant</td>
 </tr>
 <tr>
-<td>$\lvert\tilde{Ξ}^{\mathrm{spn}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$</td>
+<td>$\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$</td>
 <td>Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$</td>
 </tr>
 <tr>
@@ -421,7 +421,7 @@ $$</p>
 <td>Reduced state of subsystem $A$</td>
 </tr>
 <tr>
-<td>$\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{spn}\pm}\rangle$</td>
+<td>$\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{sp}\pm}\rangle$</td>
 <td>Bell states of two qubits</td>
 </tr>
 </tbody>

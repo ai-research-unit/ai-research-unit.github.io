@@ -205,7 +205,7 @@ $$</p>
 <li><strong>Module property:</strong> $Ξ^{\mathrm{deph}}_1(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,Ξ^{\mathrm{deph}}_1(\tilde{Q})\,\tilde{Q}_1$ for all $\tilde{Q}_3, \tilde{Q}_1 \in A$.</li>
 <li><strong>Self-adjointness for the trace pairing:</strong> $\mathrm{Tr}(Ξ^{\mathrm{deph}}_1(\tilde{Q})\,\tilde{Q}_3) = \mathrm{Tr}(\tilde{Q}\,\tilde{Q}_3)$ for all $\tilde{Q}_3 \in A$.</li>
 </ol>
-<p>Properties 1–5 are the defining properties of the <strong>trace-preserving conditional expectation</strong> onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2(h_tQ_t + \vec h\cdot\vec Q)$ is positive definite on $\mathbb{M}_+$, property 5 says that, restricted to Hermitian elements, $Ξ^{\mathrm{deph}}_1$ is exactly the <strong>orthogonal projection</strong> of $\mathbb{M}_+$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_t, i\vec u\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,</p>
+<p>Properties 1–5 are the defining properties of the <strong>trace-preserving conditional expectation</strong> onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde R_\psi\tilde{Q}) = 2(h_tQ_t + \vec h\cdot\vec Q)$ is positive definite on $\mathbb{M}_+$, property 5 says that, restricted to Hermitian elements, $Ξ^{\mathrm{deph}}_1$ is exactly the <strong>orthogonal projection</strong> of $\mathbb{M}_+$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_t, i\vec u\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,</p>
 <p>$$
 Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}\right)\tilde\Pi_1(\vec u) + \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u)\,\tilde{Ϛ}\right)\tilde\Pi_2(\vec u),
 $$</p>
@@ -233,18 +233,18 @@ $$</p>
 <p>Two qualifications keep this honest. First, decoherence does not remove the idempotents from the algebra; it removes the <em>coherences between them</em> from the state. The non-commuting idempotents still exist mathematically; what fails is that a decohered state cannot support the kind of joint-measurement structure the quantum case needs. Second, the divide article's structural refinement — that quantum non-separability lives in a <em>fundamental</em> element of $\mathbb{M}_+^{\otimes n}$ while classical non-separability lives in a <em>derived</em> coherence matrix — is echoed here but with a caveat. Decoherence makes the reduced/system state a classical probability distribution over pointer idempotents, which has the profile of a derived element. But by Stinespring dilation the full system-plus-environment state remains a fundamental state of a larger algebra; the classicality is a feature of the discarded description, not of the world. The framework can express that, but it does not supply the environment that would make it a physical statement rather than a formal one.</p>
 <h2 id="collective-dephasing-and-the-decoherence-free-singlet">Collective Dephasing and the Decoherence-Free Singlet</h2>
 <p>A source in the literature closes with the claim that a maximally entangled system "remains immune to decoherence" (Obojska, <em>Journal of Physics Communications</em> <strong>4</strong> (2020) 055018). The claim is half right. The half that is right is a standard fact that the channel picture of this article states exactly, and the distinction that makes it half right is the distinction between <strong>collective</strong> and <strong>local</strong> noise.</p>
-<p>The singlet $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ is the standard example of a <strong>decoherence-free subspace</strong>. Take the dephasing of the preceding sections, but couple it to the <em>total</em> spin rather than to one qubit: the noise generator is</p>
+<p>The singlet $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ is the standard example of a <strong>decoherence-free subspace</strong>. Take the dephasing of the preceding sections, but couple it to the <em>total</em> spin rather than to one qubit: the noise generator is</p>
 <p>$$
 \alpha\otimes e_t+e_t\otimes\alpha,\qquad \alpha=i\vec u,
 $$</p>
 <p>the same pointer observable applied to both qubits. Then the generator annihilates the singlet,</p>
 <p>$$
-\boxed{\;\bigl(\alpha\otimes e_t+e_t\otimes\alpha\bigr)\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle=0\;} ,
+\boxed{\;\bigl(\alpha\otimes e_t+e_t\otimes\alpha\bigr)\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle=0\;} ,
 $$</p>
 <p>so the singlet commutes with the collective generator and is invariant under the collective dephasing for every strength. In the language of the pointer basis, the singlet lies entirely in the fixed set of the collective channel: it is a fixed state of that channel. This is the sense in which the source's claim is correct.</p>
 <p>Independent local noise is different. Coupling the dephasing to one qubit only, with generator $\alpha\otimes e_t$, does not annihilate the singlet:</p>
 <p>$$
-(\alpha\otimes e_t)\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle=\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle ,
+(\alpha\otimes e_t)\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle=\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle ,
 $$</p>
 <p>up to the sign carried by $\alpha$. At full strength the local channel replaces the singlet by the separable mixture</p>
 <p>$$
@@ -280,7 +280,7 @@ $$</p>
 <li><strong>Partial dephasing</strong> ($0<p<1$) is not idempotent: $Ξ^{\mathrm{deph}}_p \circ Ξ^{\mathrm{deph}}_p = Ξ^{\mathrm{deph}}_{2p-p^2} \neq Ξ^{\mathrm{deph}}_p$. It is a contraction, not a projection; it is mathematically invertible but physically irreversible, because its inverse is not completely positive.</li>
 </ul>
 <p>The pointer basis is the commutative ${}^{*}$-subalgebra of $\mathbb{B}$ generated by the two idempotents along $\vec u$ (its Hermitian part lies in $\mathbb{M}_+$); its idempotents are the only pure states fixed by the channel, and the subalgebra is invariant under the $\mathrm{U}(1)$ phase rotation they generate. The framework supplies this structure once $\vec u$ is given, but it does not derive $\vec u$, the environment, the rate, or the selection of an outcome. In the language of the quantum–classical divide, decoherence is the process by which a partition loses its incompatible idempotents — becoming, operationally, a classical simplex over the pointer states — while the underlying system-plus-environment state remains fundamental. That is what the algebra explains; what lies beyond it is the dynamics that the algebra does not contain.</p>
-<p>One many-qubit case belongs here because a source overstates it. The singlet $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ is a <strong>decoherence-free</strong> state for the part of the noise that acts collectively on the two qubits: the collective generator $\alpha\otimes e_t+e_t\otimes\alpha$ annihilates it, and it is fixed by the collective channel at every strength. It is not, however, immune to independent local dephasing, which drives it to the separable mixture $\tfrac12\lvert01\rangle\langle01\rvert+\tfrac12\lvert10\rangle\langle10\rvert$. The immunity is a property of one state under one channel, not of entanglement as such.</p>
+<p>One many-qubit case belongs here because a source overstates it. The singlet $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ is a <strong>decoherence-free</strong> state for the part of the noise that acts collectively on the two qubits: the collective generator $\alpha\otimes e_t+e_t\otimes\alpha$ annihilates it, and it is fixed by the collective channel at every strength. It is not, however, immune to independent local dephasing, which drives it to the separable mixture $\tfrac12\lvert01\rangle\langle01\rvert+\tfrac12\lvert10\rangle\langle10\rvert$. The immunity is a property of one state under one channel, not of entanglement as such.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -323,7 +323,7 @@ $$</p>
 <td>Trace</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$</td>
+<td>$\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$</td>
 <td>Trace reading at normalisation (Born rule)</td>
 </tr>
 <tr>
@@ -367,7 +367,7 @@ $$</p>
 <td>Collective dephasing generator (total spin)</td>
 </tr>
 <tr>
-<td>$\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$</td>
+<td>$\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle = \tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$</td>
 <td>Singlet; decoherence-free for collective dephasing</td>
 </tr>
 <tr>

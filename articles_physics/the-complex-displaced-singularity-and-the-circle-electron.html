@@ -77,9 +77,9 @@
 <h3 id="the-coulomb-kernel-and-the-position-of-the-singularity">The Coulomb Kernel and the Position of the Singularity</h3>
 <p>In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,</p>
 <p>$$
-\tilde{A} = i\,a'_t\,e_t \in \mathbb{M}_-, \qquad Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|},
+\tilde{A} = i\,a'_t\,e_t \in \mathbb{M}_-, \qquad Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|},
 $$</p>
-<p>where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.</p>
+<p>where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.</p>
 <p>Lanczos introduces potential and field strength as <strong>complex</strong> quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\zeta,\eta,\upsilon)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to</p>
 <p>$$
 \zeta = 0, \qquad \eta = 0, \qquad \upsilon = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
@@ -88,17 +88,17 @@ $$</p>
 <p>$$
 \Delta\tilde{Q} = \upsilon\,\vec e_z = -i\varrho\,\vec e_z .
 $$</p>
-<p><strong>The displacement is informational.</strong> The element $-i\varrho \vec e_z$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $z' = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an <strong>imaginary direction of the vector coefficient</strong> — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.</p>
+<p><strong>The displacement is informational.</strong> The element $-i\varrho \vec e_z$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $r'_{z} = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an <strong>imaginary direction of the vector coefficient</strong> — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.</p>
 <h3 id="the-square-of-the-distance-and-the-ring">The Square of the Distance and the Ring</h3>
 <p>With $\vec r_0 = -i\varrho \vec e_z$ the squared Euclidean separation is</p>
 <p>$$
-\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(x^2+y^2+z^2-\varrho^2\bigr) + 2i\,z\varrho ,
+\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(r_x^2+r_y^2+r_z^2-\varrho^2\bigr) + 2i\,z\varrho ,
 $$</p>
 <p>a <strong>complex</strong> number, and the potential is the reciprocal square root of it,</p>
 <p>$$
-Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
+Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
 $$</p>
-<p>The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the <strong>circle</strong></p>
+<p>The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=r_x^2+r_y^2+r_z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the <strong>circle</strong></p>
 <p>$$
 \boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
 $$</p>
@@ -116,14 +116,14 @@ $$</p>
 <h3 id="the-field-strength-is-complex">The Field Strength Is Complex</h3>
 <p>Because the potential is complex, its gradient is complex, and the field of the configuration</p>
 <p>$$
-\vec E(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\mathrm{grad}\,Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\bigl(\partial/\partial Q_xΞ\,\vec e_x + \partial/\partial Q_yΞ\,\vec e_y + \partial/\partial Q_zΞ\,\vec e_z\bigr)
+\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\mathrm{grad}\,Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\bigl(\partial/\partial Q_xΞ\,\vec e_x + \partial/\partial Q_yΞ\,\vec e_y + \partial/\partial Q_zΞ\,\vec e_z\bigr)
 $$</p>
 <p>has both a real and an imaginary part at every point off the ring and off the disk. Writing $Ξ=Ξ_R+iΞ_I$, the real part $-\mathrm{grad}\,Ξ_R$ is the electric field of the configuration and the imaginary part $-\mathrm{grad}\,Ξ_I$ is a second field that survives from the displacement into $\mathbb{M}_+$. The imaginary part is not an artefact of the bookkeeping: it is nonzero at generic points, as it must be whenever $\varrho\neq0$, and it vanishes identically at $\varrho=0$, where the point electron is recovered and the field is purely electric.</p>
 <p>Away from the singular set the potential remains harmonic, since it is the analytic continuation of the harmonic Coulomb kernel in the parameter $\upsilon$; each of the two parts $Ξ_R,Ξ_I$ therefore satisfies the three-dimensional Laplace equation separately, and the two fields are divergence- and curl-free where they are defined. The ring is the only singularity of the field. The check is direct: the Laplacian of $Ξ$ computed by central differences at a hundred points off the ring is below $10^{-7}$, the level of the finite-difference error.</p>
 <h3 id="why-the-second-field-is-mesomagnetic-not-magnetic">Why the Second Field Is Mesomagnetic, Not Magnetic</h3>
 <p>An electric field that acquires an imaginary component under a displacement of the source looks at first like an electric field accompanied by a magnetic field, and Lanczos's calculation treats it that way: the second field of the displaced configuration is what supplies the compensating energy of the next section. Gsponer and Hurni record a correction that the corpus keeps with the claim. The second component is <strong>not</strong> an ordinary magnetic field. The magnetic field of electromagnetism is an axial vector, the field of a circulation, and it reverses under a space reflection while the electric field — a polar vector — does not. The imaginary component of the displaced field transforms as a <strong>polar</strong> vector, exactly as the electric field does, so it cannot be the magnetic field. Gsponer and Hurni name it a <strong>mesomagnetic</strong> field, and they note that the transformation properties of improper Lorentz transformations such as space reflection were not understood in 1919 and cannot be charged to Lanczos.</p>
 <p>The corpus records both statements and keeps them apart. What is certain is the algebra: the displacement into $\mathbb{M}_+$ produces a second field whose transformation character differs from that of the ordinary magnetic field. Whether it is called magnetic, mesomagnetic, or a mere imaginary part of a complexified electric field is a question of <strong>physical interpretation</strong> that the algebra does not decide.</p>
-<p><strong>The far field is the point field.</strong> The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$. The ring is invisible from far away.</p>
+<p><strong>The far field is the point field.</strong> The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$. The ring is invisible from far away.</p>
 <h2 id="the-ring-in-imaginary-motion">The Ring in Imaginary Motion</h2>
 <p>The displacement $\Delta\tilde{Q}=-i\varrho\,\vec e_z$ of the preceding sections is a constant, and the ring it produces is stationary. A second construction of the same ring, due to Kassandrov, lets the displacement vary with the real time and obtains a ring that contracts to a point and re-expands [Kassandrov 2009]. The construction belongs to the programme the corpus records in <em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</em>: the ring is the caustic locus of a shear-free null congruence generated by a "virtual" charge moving along a complex world line, and the electromagnetic field is the one the congruence carries. No biquaternion algebra enters it. It is recorded here because the object it produces is the object this article owns, and because the deformation is a motion along the informational axis.</p>
 <p>Units are $c=1$ throughout the section, and the signature is the paper's own, $(+,-,-,-)$; the time is the article's $t'$. <strong>Two letters must be kept apart.</strong> The paper writes $\rho$ for the ring radius in its final formula; this article reserves $\rho=\sqrt{x^2+y^2}$ for the cylindrical radius and writes $\varrho(t')$ for the ring radius.</p>
@@ -287,7 +287,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Delta\tilde{Q} = -i\varrho \vec e_z$</td>
-<td>The displacement itself; an element of $\mathbb{M}_+$ with $z'=-\varrho$</td>
+<td>The displacement itself; an element of $\mathbb{M}_+$ with $r'_{z}=-\varrho$</td>
 </tr>
 <tr>
 <td>$\varrho$</td>

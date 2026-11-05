@@ -73,7 +73,7 @@
 <p>A framework built on a non-standard algebra, and on a non-standard choice of which part of it counts as "real", is a framework in which a reader will repeatedly find things that look wrong and are not. Two examples fix the idea. The series takes the <strong>anti</strong>-Hermitian subspace as the material sector, where the more familiar convention would take the Hermitian one. And the series' d'Alembertian carries a sign opposite to the one used in the articles on Weyl spinors. In both cases it is the "correction" that is the error.</p>
 <p>This article opens the conventions of the series. It states the conventions of the base: the algebra and its basis, the units, the element and its coefficients, the remarkable subspaces, the conjugations and the common glyphs. The conventions of the products and the forms, of the norms and the pairings, of the special elements, of the frames, of the matrix models, of the operators and the calculus, and of the units, the indices and the notation are carried by the eight companion articles of the category, in that order, and the rule that decides which concepts the corpus uses, with the concepts it prefers and the concepts it prefers not to use, by the last of the eight. The split follows the dependency order and introduces no new convention: each article states what it needs and cites the one before it, and together they hold what one article held before.</p>
 <p>It states conventions only: the proofs, the properties and the physical interpretations of the objects it names belong to the articles cited beside them. It is meant to be read before any other article is edited, and its reader is anyone writing or revising an article of the series, for whom the conventions are load-bearing — a change that looks local, a sign or a factor of $i$, generally propagates into a dozen dependent articles.</p>
-<p>The word <em>metric</em> has one meaning in the series, and there is one metric. It is the <strong>unit metric</strong> $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is the square of the $i$ in $Q_t=ict'$, $i^2=-1$, made once on the time slot. The Clifford tool is a translation of the algebra and never a reason to change it. The biquaternion norm and the four forms are set out in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
+<p>The word <em>metric</em> has one meaning in the series, and there is one metric. It is the <strong>unit metric</strong> $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is the square of the $i$ in $Q_t=i c r'_t$, $i^2=-1$, made once on the time slot. The Clifford tool is a translation of the algebra and never a reason to change it. The biquaternion norm and the four forms are set out in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
 <p>One warning applies throughout. <strong>A convention recorded here is not a claim that the alternative is wrong.</strong> Several of these choices are freely made where either choice would be defensible; they are conventions, not theorems. What is not free is <em>consistency</em>: once a convention is fixed, the dependent articles inherit it, and a change to it is a change to all of them. Where a convention is instead forced — where the alternative leads to a demonstrable contradiction — the article says so explicitly, and that distinction is the difference between a convention and a result.</p>
 <h2 id="the-algebra-and-its-basis">The Algebra and Its Basis</h2>
 <p>The framework is set in the <strong>biquaternion algebra</strong></p>
@@ -94,9 +94,9 @@ i^2 = -1.
 $$</p>
 <p>Everything that follows turns on how each complex coefficient is split, so the split is fixed here, at the outset. Writing every coefficient as a real part plus $i$ times a real part,</p>
 <p>$$
-Q_t = q_t + iq'_t, \qquad Q_x = q_x + iq'_x, \qquad Q_y = q_y + iq'_y, \qquad Q_z = q_z + iq'_z, \qquad q_\mu, q'_\mu \in \mathbb{R},
+R_t = c\,(r_t + ir'_t), \qquad R_x = r_x + ir'_x, \qquad R_y = r_y + ir'_y, \qquad R_z = r_z + ir'_z, \qquad r_\mu, r'_\mu \in \mathbb{R},
 $$</p>
-<p>replaces the four complex coefficients by <strong>eight real parameters</strong>: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
+<p>replaces the four complex coefficients of the point by <strong>eight real parameters</strong>: $r_\mu$ is the real part of $R_\mu$, the coefficient of $e_\mu$, and $r'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. <strong>The prime stays on the parameter letter and the slot goes into the subscript</strong>: the coefficient is written $r'_t$, never $r_t'$ and never $r_{r'_{t}}$, because the prime qualifies the parameter and not the slot. The factor $c$ stands on the time coefficient alone, and on both of its halves, so that $r_t$ and $r'_t$ are times and every coefficient is a length; the three spatial coefficients $R_x, R_y, R_z$ carry no factor. The generic element of the mathematics keeps its own coefficient letters, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, and those letters carry no physical reading; the position letter is $R$ and its parameters are $r$ and $r'$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
 <p>One structural fact governs the whole series, so it is worth isolating. <strong>The scalar unit $i$ is central</strong>: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a <em>central</em> phase $\exp(i\alpha)$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.</p>
 <p><strong>The central phase is carried by the first coordinate.</strong> The phase is the unit complex number $\lambda=\exp(i\theta)$ multiplying $e_t$, and it acts on an element by left multiplication, $\tilde Q\mapsto\lambda e_t\tilde Q=\lambda\tilde Q$. On the coefficients this is $Q_t\mapsto\lambda Q_t$ and, with the same $\lambda$, $Q_x\mapsto\lambda Q_x$, $Q_y\mapsto\lambda Q_y$, $Q_z\mapsto\lambda Q_z$. <strong>The first line is the definition</strong>: the phase acts on $Q_t$, the coefficient of $e_t$, the first coordinate of the element, and there it rotates the two parameters $q_t$ and $q'_t$ of the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The other three coordinates follow, with the same $\lambda$, because the multiplication is $\mathbb{C}$-linear and $e_t$ is the unit. <strong>The action is therefore fixed by its value on one coordinate</strong>, and there is no second choice to make. The element carries one complex structure, $J=L_{ie_t}$, of which the phase is the exponential, $\lambda e_t=\exp(i\theta J)$; a second complex structure exists in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and in no element of $\mathbb{B}$.</p>
 <p><strong>A statement about the phase is a statement about the first coordinate and its forced extension.</strong> It is never a statement about one summand of a decomposition of the carrier. The words <em>on one half</em>, <em>on the other half</em> and <em>on both halves</em> are not written of the phase, because the element is not a sum of halves.</p>
@@ -162,7 +162,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The majuscule is written as the glyph, not as the command.</strong> The upper-case xi is written directly, <code>Ξ</code>, U+039E, and the command that prints it, <code>\Xi</code>, is not used, so that the majuscule of the field is a glyph of its own at reading speed and never a capital to be resolved against the element $X$. The precedent is the stigma: the majuscule of rho is taken by the four-momentum, so the state is written <code>Ϛ</code>, U+03DA, §<em>The Observables, the States and the Quantum Objects</em>. The minuscule $ξ$ carries its command, <code>\xi</code>, since nothing collides with it.</p>
-<p><strong>The two families do not overlap.</strong> $Q$ is the element, a quantity with four coefficients, and $\xi$ is the field, a quantity defined at each point of space-time. An article that needs to say which element a field takes writes the tilde, $\tilde{Ξ}$, and an article that needs a number writes the case, $\xi$ or $Ξ$. The field operator, the Grassmann variable and the second state are carets on the same letter, never a second letter. The letter therefore stands once for the field and for every named field: the complex scalar field is $Ξ$, the algebra-valued one $\tilde{Ξ}$, the Dirac field $\tilde{Ξ}^{\mathrm{spn}}$, the field operator $\tilde{Ξ}^{\mathrm{fop}}$, and the case and the tilde alone separate them.</p>
+<p><strong>The two families do not overlap.</strong> $Q$ is the element, a quantity with four coefficients, and $\xi$ is the field, a quantity defined at each point of space-time. An article that needs to say which element a field takes writes the tilde, $\tilde{Ξ}$, and an article that needs a number writes the case, $\xi$ or $Ξ$. The field operator, the Grassmann variable and the second state are carets on the same letter, never a second letter. The letter therefore stands once for the field and for every named field: the complex scalar field is $Ξ$, the algebra-valued one $\tilde{Ξ}$, the Dirac field $\tilde{Ξ}^{\mathrm{sp}}$, the field operator $\tilde{Ξ}^{\mathrm{fop}}$, and the case and the tilde alone separate them.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -229,9 +229,9 @@ $$</p>
 <p>with $e_t$ at $\mu=t$ and $\vec e_\mu$ at $\mu=x,y,z$. The same rule reads a quaternion, $\tilde q=\sum_\mu q_\mu e_\mu$. The label names the unit, not the time coordinate: the material time is $t'$ and the informational time is $t$.</p>
 <p><strong>The coefficient prime marks the slot that carries the $i$.</strong> Each complex coefficient is a real part plus $i$ times a real part,</p>
 <p>$$
-Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}, \qquad \mu \in \{t, x, y, z\},
+R_\mu = r_\mu + ir'_\mu, \qquad r_\mu, r'_\mu \in \mathbb{R}, \qquad \mu \in \{t, x, y, z\},
 $$</p>
-<p>so $q_\mu$ multiplies $e_\mu$ and $q'_\mu$ multiplies $ie_\mu$, the same rule for the four slots:</p>
+<p>with the factor $c$ carried on the time slot, $R_t = c(r_t + ir'_t)$, so $r_\mu$ multiplies $e_\mu$ and $r'_\mu$ multiplies $ie_\mu$, the same rule for the four slots:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -244,31 +244,31 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$Q_t$</td>
-<td>$q_t$</td>
+<td>$R_t$</td>
+<td>$c\,r_t$</td>
 <td>$e_t$</td>
-<td>$q'_t$</td>
+<td>$c\,r'_t$</td>
 <td>$ie_t$</td>
 </tr>
 <tr>
-<td>$Q_x$</td>
-<td>$q_x$</td>
+<td>$R_x$</td>
+<td>$r_x$</td>
 <td>$\vec e_x$</td>
-<td>$q'_x$</td>
+<td>$r'_x$</td>
 <td>$i\vec e_x$</td>
 </tr>
 <tr>
-<td>$Q_y$</td>
-<td>$q_y$</td>
+<td>$R_y$</td>
+<td>$r_y$</td>
 <td>$\vec e_y$</td>
-<td>$q'_y$</td>
+<td>$r'_y$</td>
 <td>$i\vec e_y$</td>
 </tr>
 <tr>
-<td>$Q_z$</td>
-<td>$q_z$</td>
+<td>$R_z$</td>
+<td>$r_z$</td>
 <td>$\vec e_z$</td>
-<td>$q'_z$</td>
+<td>$r'_z$</td>
 <td>$i\vec e_z$</td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ $$</p>
 <p>$$
 \Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
 $$</p>
-<p><strong>The prime marks the slot that carries the $i$</strong>, as it does in a coefficient, $Q_t=q_t+iq'_t$ and $q'_t=\xi^{\mathrm{scp}}/c$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are one angle read at a real and at an imaginary argument.</p>
+<p><strong>The prime marks the slot that carries the $i$</strong>, as it does in a coefficient, $R_t=c(r_t+ir'_t)$ and $r'_t=\xi^{\mathrm{scp}}/c$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are one angle read at a real and at an imaginary argument.</p>
 <p><strong>The central phase is the real case.</strong> $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same case at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.</p>
 <p><strong>The boost factor is the pure imaginary case.</strong> The four-vector element carries $\mathcal B$ with $\tilde U_{\mathrm b}^{-2}=\cosh\theta^{\mathrm{rpd}}\,e_t-i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $e^{\vec U\Theta}$ at $\Theta=-i\theta^{\mathrm{rpd}}$: in the two-parameter form $\theta=0$ and $\theta'=\theta^{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret <code>rpd</code>, so that no second letter is spent on it. The sign is the article's and it carries the direction of the boost; the magnitude of the imaginary part is the rapidity.</p>
 <p><strong>The circle and the hyperbola are one formula.</strong> With $\Theta=\theta+i\theta'$,</p>
@@ -338,11 +338,11 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-basis-the-parameters-and-the-coordinates">The Basis, the Parameters and the Coordinates</h3>
-<p>The dictionary between the parameters and the physical coordinates is fixed once and for all. The four real parts are $(t, x, y, z)$ and the four imaginary parts $(t', x', y', z')$,</p>
+<p><strong>There is one alphabet, and it is the position letter.</strong> The parameters are the coordinates, so the dictionary that once mapped one set of letters onto another is not restated: it is deleted. The slot names the coordinate, the prime marks the half of the coefficient that carries the $i$, and $c$ turns a time into a length. The eight real parameters are therefore read as</p>
 <p>$$
-q'_t = c\,t', \qquad (q_x, q_y, q_z) = (x, y, z), \qquad q_t = c\,t, \qquad (q'_x, q'_y, q'_z) = (x', y', z'),
+(r_t,\ r_x,\ r_y,\ r_z) \quad \text{and} \quad (r'_t,\ r'_x,\ r'_y,\ r'_z),
 $$</p>
-<p>so that the four coefficients are $Q_t = ct+ict'$, $Q_x = x+ix'$, $Q_y = y+iy'$, $Q_z = z+iz'$, with $\vec q = x\vec e_x+y\vec e_y+z\vec e_z$ the real spatial vector and $i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$ its imaginary counterpart. Each subspace keeps whichever part of the dictionary its defining condition leaves free.</p>
+<p>the unprimed set the real halves and the primed set the imaginary halves, with the four coefficients $R_t = c(r_t + ir'_t)$, $R_x = r_x + ir'_x$, $R_y = r_y + ir'_y$, $R_z = r_z + ir'_z$. The material time is $r'_t$ and the material space is $r_x, r_y, r_z$; the informational time is $r_t$ and the informational space is $r'_x, r'_y, r'_z$. In the vacuum limit $c = c_0$ the imaginary time coordinate is $i c_0 r'_t$, which is the familiar $i c r'_t$ form, so the older writing is the vacuum approximation of this one.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -350,8 +350,8 @@ $$</p>
 <th>Algebraic name</th>
 <th>Physical name</th>
 <th>Basis</th>
-<th>Real parameters</th>
-<th>Physical coordinates</th>
+<th>Parameters</th>
+<th>Coordinates</th>
 </tr>
 </thead>
 <tbody>
@@ -360,48 +360,48 @@ $$</p>
 <td>The centre</td>
 <td>Complex time sector</td>
 <td>$e_t,\ ie_t$</td>
-<td>$q_t,\ q'_t$</td>
-<td>$ct,\ ict'$</td>
+<td>$r_t,\ r'_t$</td>
+<td>$c r_t,\ i c r'_t$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
 <td>Vector</td>
 <td>Complex space sector</td>
 <td>$\vec e_x,\ \vec e_y,\ \vec e_z,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$q_x,\ q_y,\ q_z,\ q'_x,\ q'_y,\ q'_z$</td>
-<td>$x,\ y,\ z,\ ix',\ iy',\ iz'$</td>
+<td>$r_x,\ r_y,\ r_z,\ r'_x,\ r'_y,\ r'_z$</td>
+<td>$r_x,\ r_y,\ r_z,\ i r'_x,\ i r'_y,\ i r'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
 <td>Quaternion</td>
 <td>Real sector</td>
 <td>$e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$</td>
-<td>$q_t,\ q_x,\ q_y,\ q_z$</td>
-<td>$ct,\ x,\ y,\ z$</td>
+<td>$r_t,\ r_x,\ r_y,\ r_z$</td>
+<td>$c r_t,\ r_x,\ r_y,\ r_z$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
 <td>Antiquaternion</td>
 <td>Imaginary sector</td>
 <td>$ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$q'_t,\ q'_x,\ q'_y,\ q'_z$</td>
-<td>$ict',\ ix',\ iy',\ iz'$</td>
+<td>$r'_t,\ r'_x,\ r'_y,\ r'_z$</td>
+<td>$i c r'_t,\ i r'_x,\ i r'_y,\ i r'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
 <td>Hermitian</td>
 <td>Informational sector</td>
 <td>$e_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$</td>
-<td>$q_t,\ q'_x,\ q'_y,\ q'_z$</td>
-<td>$ct,\ ix',\ iy',\ iz'$</td>
+<td>$r_t,\ r'_x,\ r'_y,\ r'_z$</td>
+<td>$c r_t,\ i r'_x,\ i r'_y,\ i r'_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
 <td>Anti-Hermitian</td>
 <td>Material sector</td>
 <td>$ie_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$</td>
-<td>$q'_t,\ q_x,\ q_y,\ q_z$</td>
-<td>$ict',\ x,\ y,\ z$</td>
+<td>$r'_t,\ r_x,\ r_y,\ r_z$</td>
+<td>$i c r'_t,\ r_x,\ r_y,\ r_z$</td>
 </tr>
 </tbody>
 </table></div>
@@ -475,26 +475,26 @@ $$</p>
 $$</p>
 <p>the Hermitian subspace with the anti-Hermitian one; without qualification, <em>the sectors</em> in this series are these two, and the relativistic articles are written in terms of this split. The element splits a second time, across the coefficient slots,</p>
 <p>$$
-\tilde Q = \tilde Q_{\mathrm H} + \tilde Q_{\mathrm A},\qquad
-\tilde Q_{\mathrm H} = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr),\qquad
-\tilde Q_{\mathrm A} = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z.
+\tilde R = \tilde R_\psi + \tilde R_\varphi,\qquad
+\tilde R_\psi = c r_t\,e_t + i\bigl(r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z\bigr),\qquad
+\tilde R_\varphi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z.
 $$</p>
-<p>$\tilde Q_{\mathrm H}$ is the informational part: it takes the real scalar slot with the imaginary vector slots, and $\tilde Q_{\mathrm A}$ is the material part: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $q'_t$ and the three informational spaces $q'_k$; the unprimed set holds the informational time $q_t$ and the three material spaces $q_k$.</p>
-<p><strong>The particular case of coordinates.</strong> At the dictionary values the two parts are the informational coordinate and the material coordinate,</p>
+<p>$\tilde R_\psi$ is the <strong>informational part</strong>: it takes the real scalar slot with the imaginary vector slots. $\tilde R_\varphi$ is the <strong>material part</strong>: the imaginary scalar slot with the real vector slots. The primed set therefore holds the material time $r'_t$ and the three informational spaces $r'_k$; the unprimed set holds the informational time $r_t$ and the three material spaces $r_k$.</p>
+<p><strong>The two subscripts are reserved.</strong> $\varphi$ marks the material half and $\psi$ the informational half, and no other object in the series may take either letter. The two letters are held free for exactly this use: neither occurs anywhere in the corpus before the split is declared, and the rest of the Greek set is in service, so a half named with any other letter would collide with a symbol already in use. The mnemonic is that $\varphi$ opens the word <em>physics</em> and $\psi$ is the letter a quantum state is written with. <strong>The definitions are the authority</strong>: the halves are the $\pm1$ eigenspaces of the Hermitian conjugation,</p>
 <p>$$
-\tilde Q_{\mathrm H} = ct\,e_t + i\bigl(x'\vec e_x + y'\vec e_y + z'\vec e_z\bigr),\qquad
-\tilde Q_{\mathrm A} = \tilde R = ict'\,e_t + x\vec e_x + y\vec e_y + z\vec e_z,
+\tilde R_\psi = \tfrac12\bigl(\tilde R + \tilde{R}^{*}\bigr) \in \mathbb{M}_+,\qquad
+\tilde R_\varphi = \tfrac12\bigl(\tilde R - \tilde{R}^{*}\bigr) \in \mathbb{M}_-,
 $$</p>
-<p>the informational part carrying the real time $ct$ and the imaginary space $x',y',z'$, the material part the real space $x,y,z$ and the imaginary time $ct'$.</p>
-<p>Quantum physics writes the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters are named $h_t, h_x, h_y, h_z$ in place of $q_t, q'_x, q'_y, q'_z$ — the direction labels, as for the coordinates $Q_\mu$ — and the element is</p>
+<p>and a reader who does not know the letters computes either half from that line.</p>
+<p><strong>The operator reading.</strong> Quantum physics writes the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters are named $h_t, h_x, h_y, h_z$ in place of $r_t, r'_x, r'_y, r'_z$, and the element is</p>
 <p>$$
-\tilde Q_{\mathrm H} = \tilde{H} = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R},
+H = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R},
 $$</p>
 <p>or, with the vector part assembled,</p>
 <p>$$
-\tilde Q_{\mathrm H} = \tilde{H} = h_te_t + i\vec h , \qquad \vec h = h_x\vec e_x + h_y\vec e_y + h_z\vec e_z ,
+H = h_te_t + i\vec h , \qquad \vec h = h_x\vec e_x + h_y\vec e_y + h_z\vec e_z ,
 $$</p>
-<p>with $h_t = ct$ and $h_k = x'_k$. This is the informational coordinate $ct\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of <em>Matrix Representations Conventions</em>, §<em>The 2×2 Matrix Representation</em> ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_tI_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$ of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>. The tilde is required, because $H$ without it is the Hamiltonian, and $h$ without a subscript is the Planck constant.</p>
+<p>with $h_t = c r_t$ and $h_k = r'_k$. <strong>This bridge is the only one the series uses</strong>, and it is written once, here. It equates numbers, not units: $c r_t$ is a length, so $h_t$ is a length as well, and it is read as an energy only when $\hbar$ is carried in the reading. In the articles that read it as one, the $\hbar$ sits in the exponent $\exp(-iHt'/\hbar)$ and not in the coefficient. This is the informational coordinate $c r_t\,e_t + i(r'_x\,\vec e_x+r'_y\,\vec e_y+r'_z\,\vec e_z)$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of <em>Matrix Representations Conventions</em>, §<em>The 2×2 Matrix Representation</em> ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_tI_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$ of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>. <strong>The tilde is not carried</strong>, because $H$ here is not a second element: it is $\tilde R_\psi$ read as an energy, and the letters $h_t$ and $\vec h$ are the reading of the parameters $c r_t$ and $\vec r_\psi$. A bare $h$ without a subscript remains the Planck constant.</p>
 <h2 id="the-conjugations">The Conjugations</h2>
 <p>The biquaternion algebra carries three natural involutions and the anti-Hermitian sign derived from them, all of them used in the series:</p>
 <div class="table-scroll"><table>
@@ -544,7 +544,7 @@ $$</p>
 <p>$$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_te_t - \bar Q_x\vec e_x - \bar Q_y\vec e_y - \bar Q_z\vec e_z, \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$</p>
-<p><strong>The fourth mark is a sign, not a fourth conjugation.</strong> $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{M}_-$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=m\tilde{Ξ}^{\mathrm{spn}\flat}$ conflated the two — and it is not the charge conjugation of the module, the operation defined in <em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em>.</p>
+<p><strong>The fourth mark is a sign, not a fourth conjugation.</strong> $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{M}_-$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=m\tilde{Ξ}^{\mathrm{sp}\flat}$ conflated the two — and it is not the charge conjugation of the module, the operation defined in <em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em>.</p>
 <p><strong>The biquaternion norm.</strong> The natural sign carries the algebra's <strong>biquaternion norm</strong>,</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
@@ -670,7 +670,7 @@ $$</p>
 <tr>
 <td>$\tilde u_H$</td>
 <td>Evolution rotor</td>
-<td>$\exp(-i\tilde H_Rt'/\hbar)=\exp(-\frac{\theta^{\mathrm{rat}}}{2}\vec u_R)$</td>
+<td>$\exp(-i H_{R}t'/\hbar)=\exp(-\frac{\theta^{\mathrm{rat}}}{2}\vec u_R)$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
 <td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\theta^{\mathrm{rat}}$</td>
 </tr>
@@ -767,11 +767,11 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>The proper-time derivative of the four-momentum; the Lorentz-force article projects it onto the material sector, $P_{\mathbb{M}_-}(\tilde Q)=\tfrac12(\tilde Q-\tilde Q^{*})$. The label $a$ numbers a particle, as in $\tilde K_{\mathrm f,a}$</td>
 </tr>
 <tr>
-<td>$\tilde R$</td>
+<td>$\tilde R_\varphi$</td>
 <td>Material four-position</td>
-<td>$\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$</td>
+<td>$\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 <td>$\mathbb{M}_-$</td>
-<td>The position of a world line; the translation displacement of the causality article is $\tilde R_{\mathrm d}$ and of the Poincaré and conformal articles is $\tilde R_0$. Its vector part is pure, $\vec r=x\vec e_x+y\vec e_y+z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dt'=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$; the second point of a convolution is $\tilde R_2$</td>
+<td>The position of a world line; the translation displacement of the causality article is $\tilde{R}_{\varphi,\mathrm d}$ and of the Poincaré and conformal articles is $\tilde{R}_{\varphi,0}$. Its vector part is pure, $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dt'=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$; the second point of a convolution is $\tilde{R}_{\varphi,2}$</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal L}$</td>
@@ -838,18 +838,18 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>The same letter with the tilde of an element, taken when the value at a point is an element of the algebra and dropped when it is a scalar, §<em>Summary of Notation</em> below. General in the Klein–Gordon and functional-integral articles; an $\mathbb{M}_-$-valued field in the integer-spin article; the photon biquaternion of the electro-gravimagnetic programme. The fluctuation about the central field is $\delta\tilde{Ξ}$; the classical field of the functional articles is $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$, with sector parts $\tilde{Ξ}_{\mathrm{cl},\pm}$, and the sector parts of the field are $\tilde{Ξ}_\pm=\tfrac12(\tilde{Ξ}\pm\tilde{Ξ}^{\flat})$</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{spn}}$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}$</td>
 <td>Dirac field</td>
-<td>$\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$</td>
 <td>$\mathbb{B}$</td>
-<td>An algebra-valued spinor field, with <code>spn</code> the caret that names the spinor role, beside <code>scl</code> the scalar role and <code>fop</code> the field operator: $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$</td>
+<td>An algebra-valued spinor field, with <code>sp</code> the caret that names the spinor role, beside <code>scl</code> the scalar role and <code>fop</code> the field operator: $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$</td>
 </tr>
 <tr>
 <td>$\tilde F$</td>
 <td>Field strength</td>
 <td>$i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, scalar part zero</td>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>The one fixed field: it enters $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$ and is never a generic field. A generic element-valued field is the $\xi$ family, written $\tilde{Ξ}$ and qualified by a caret where an article names its role; the Q family spelling $\tilde Q_{\mathrm f}$ of the derivation articles is retired to this rule. One bound use remains outside the field strength: <em>Fueter Theory for Quaternions</em> writes the Fueter–Sce construction $\tilde F=\Delta^{(n-1)/2}f^{\mathrm{ax}}_0$, a function bound at its definition. The dual in the tensor articles is $F^{\mathrm{dual}}$, tilde-free. The letters named <em>phi</em> and <em>psi</em>, in either case and in every variant, are not used: the scalar potential is the field $Ξ$, the spinor field is $\tilde{Ξ}^{\mathrm{spn}}$, and the rapidity is $\theta^{\mathrm{rpd}}$</td>
+<td>The one fixed field: it enters $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$ and is never a generic field. A generic element-valued field is the $\xi$ family, written $\tilde{Ξ}$ and qualified by a caret where an article names its role; the Q family spelling $\tilde Q_{\mathrm f}$ of the derivation articles is retired to this rule. One bound use remains outside the field strength: <em>Fueter Theory for Quaternions</em> writes the Fueter–Sce construction $\tilde F=\Delta^{(n-1)/2}f^{\mathrm{ax}}_0$, a function bound at its definition. The dual in the tensor articles is $F^{\mathrm{dual}}$, tilde-free. The letters named <em>phi</em> and <em>psi</em>, in either case and in every variant, are not used: the scalar potential is the field $Ξ$, the spinor field is $\tilde{Ξ}^{\mathrm{sp}}$, and the rapidity is $\theta^{\mathrm{rpd}}$</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal F}$</td>
@@ -875,7 +875,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <tr>
 <td>$\tilde Q^{\mathrm{amp}}$</td>
 <td>Constant amplitude of the central-phase plane wave</td>
-<td>$\tilde{Ξ}_{\tilde P}(\tilde R)=\tilde Q^{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde P^{\natural}\tilde R)\big)$</td>
+<td>$\tilde{Ξ}_{\tilde P}(\tilde R_\varphi)=\tilde Q^{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde P^{\natural}\tilde R_\varphi)\big)$</td>
 <td>$\mathbb{B}$</td>
 <td>The external-leg amplitude of <em>The LSZ Reduction Formula in Biquaternionic Form</em>, bound where it is introduced; a general element with a complex scalar part, hence the majuscule. It replaced the earlier $\tilde w$</td>
 </tr>
@@ -901,11 +901,11 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>The state of the Bloch ball: Hermitian, positive, $2\,\mathrm{Sc}(\tilde{Ϛ})=1$, read in the $2\times2$ image as $\mathrm{Tr}(\tilde{Ϛ})=1$. The glyph is the upper-case stigma, U+03DA, because the majuscule of rho is the four-momentum $\tilde P$; the rho and varrho spellings are not used. Its matrix image $\mathsf{M}_2(\tilde{Ϛ})$ carries no tilde</td>
 </tr>
 <tr>
-<td>$\tilde H$</td>
+<td>$H$</td>
 <td>General Hermitian observable</td>
 <td>$h_te_t+ih_k\vec e_k$, $h_t,h_k\in\mathbb{R}$</td>
 <td>$\mathbb{M}_+$</td>
-<td>The Born pairing is $2\langle\tilde{Ϛ},\tilde H\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$, read at normalisation in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde H)$; the tilde belongs to this object only</td>
+<td>The Born pairing is $2\langle\tilde{Ϛ},H\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)$, read at normalisation in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$; the tilde belongs to this object only</td>
 </tr>
 <tr>
 <td>$\tilde S$</td>
@@ -933,7 +933,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>Modular Hamiltonian</td>
 <td>$\tilde K^{\mathrm{mod}}=-\log\tilde{Ϛ}$; $\Delta=\exp(-\tilde K^{\mathrm{mod}})$</td>
 <td>$\mathbb{M}_+$</td>
-<td>The modular Hamiltonian of Tomita–Takesaki, with the modular flow $\sigma_{t'}(\tilde Q)=\Delta^{it'}\tilde Q\Delta^{-it'}$. In the finite-dimensional model it is $-\log\tilde{Ϛ}\in\mathbb{M}_+$; the labels $W$, $V$, $\omega$, $L$, $R$ name the region, state or side</td>
+<td>The modular Hamiltonian of Tomita–Takesaki, with the modular flow $\sigma_{r'_{t}}(\tilde Q)=\Delta^{it'}\tilde Q\Delta^{-it'}$. In the finite-dimensional model it is $-\log\tilde{Ϛ}\in\mathbb{M}_+$; the labels $W$, $V$, $\omega$, $L$, $R$ name the region, state or side</td>
 </tr>
 </tbody>
 </table></div>
@@ -941,7 +941,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <p><strong>The state takes the stigma, because the majuscule of rho is taken.</strong> The case rule asks a complex element for an upper-case glyph, and the upper-case rho is drawn as $P$ and names the four-momentum $\tilde P$, which the series never writes otherwise. The state therefore takes a capital that names nothing else in the corpus, the <strong>stigma</strong> $Ϛ$ (U+03DA). The glyph is bound to the state and is never generic; the earlier lowercase rho spelling, and the varrho variant with it, are retired, and the corpus uses neither. Bare $\rho$ is not the state: it keeps its other roles, the charge density and the radial coordinate among them. The matrix image takes no tilde, as for every element.</p>
 <h2 id="summary">Summary</h2>
 <p>The base conventions are one object read in order. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, over complex coefficients; the scalar unit $i$ is central, and multiplication by it is one map whose restrictions are read in <em>Special Element Conventions</em>. The element is written with its case and its tilde, and its coefficients $Q_\mu=q_\mu+iq'_\mu$ split it into a quaternion part and an antiquaternion part.</p>
-<p>The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the coordinate dictionary and the two sector names, with $q'_t=ct'$, $q_t=ct$, $(q_x,q_y,q_z)=(x,y,z)$ and $(q'_x,q'_y,q'_z)=(x',y',z')$. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.</p>
+<p>The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. <strong>There is no dictionary</strong>, because there is nothing to map: the parameters are the coordinates, $(c r_t,\ i c r'_t)$ on the time slot and $(r_x,r_y,r_z)$ with $(i r'_x,i r'_y,i r'_z)$ on the space slots, and the only conversion in the scheme is the factor $c$ that turns a time into a length. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.</p>
 <p>The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\theta+i\theta'$ a complex one, with the central phase the real case and the boost $\Theta=-i\theta^{\mathrm{rpd}}$ the pure imaginary case. The glyphs a reader meets in every article are collected once, with the role, the formula, the space and the meaning of each. The collection is a closed list: no tilde is written on an array, no glyph is invented for an operator, and no letter is reused for a second object of the same layer. The rest of the conventions is in the seven companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, units and notation — each stated after the one it depends on.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -990,7 +990,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 </tr>
 <tr>
 <td>$\vec q$</td>
-<td>Position, the pure quaternion $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$</td>
+<td>Position, the pure quaternion $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}} = \{Q_t e_t\}$</td>
@@ -1022,7 +1022,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 </tr>
 <tr>
 <td>$\tilde\xi$; $\tilde{Ξ}$</td>
-<td>The generic field as an element, quaternion layer and biquaternion layer, $\tilde{Ξ}=Ξ e_t$ when central; the caret names the role, <code>scl</code> the scalar, <code>spn</code> the spinor, <code>fop</code> the field operator</td>
+<td>The generic field as an element, quaternion layer and biquaternion layer, $\tilde{Ξ}=Ξ e_t$ when central; the caret names the role, <code>scl</code> the scalar, <code>sp</code> the spinor, <code>fop</code> the field operator</td>
 </tr>
 <tr>
 <td>$\theta^{\mathrm{rpd}}$</td>

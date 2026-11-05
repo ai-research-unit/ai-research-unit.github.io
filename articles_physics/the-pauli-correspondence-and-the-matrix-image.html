@@ -186,9 +186,9 @@
 \boxed{\;\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)=
 \begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}\;}.
 $$</p>
-<p>The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t$ is real and $Q_k=iq'_k$ with $q'_k$ real, the same formula reads</p>
+<p>The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=c r_t$ is real and $Q_k=i r'_k$ with $r'_k$ real, the same formula reads</p>
 <p>$$
-\mathsf M_2(\tilde Q)=q_t\mathrm I_2+q'_x\sigma_1+q'_y\sigma_2+q'_z\sigma_3 ,
+\mathsf M_2(\tilde R_\psi)=c r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
 $$</p>
 <p>with no factor and no sign. The four real numbers of a Hermitian element are the coefficients of the identity and the three Pauli matrices.</p>
 <h3 id="the-hermitian-units">The Hermitian Units</h3>
@@ -247,14 +247,14 @@ $$</p>
 <tbody>
 <tr>
 <td>material</td>
-<td>$iq'_te_t+\sum_k q_k\vec e_k$</td>
-<td>$-(q'_t)^2+q_x^2+q_y^2+q_z^2$</td>
+<td>$i c r'_t e_t+\sum_k r_k\vec e_k$</td>
+<td>$-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$</td>
 <td>$(3,1)$</td>
 </tr>
 <tr>
 <td>informational</td>
-<td>$q_te_t+iq'_k\vec e_k$</td>
-<td>$q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$</td>
+<td>$c r_t e_t+i r'_k\vec e_k$</td>
+<td>$c^2r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$</td>
 <td>$(1,3)$</td>
 </tr>
 <tr>
@@ -294,15 +294,15 @@ $$</p>
 <p>The boundary is that the reading requires a diagonalisable element matrix and a pure boost or rotation. On the cone one eigenvalue vanishes; on its trace-zero part the two collide at zero and the reading stops. For a general Lorentz element no single rapidity exists; the polar decomposition separates the boost from the rotation.</p>
 <h2 id="observables-and-states">Observables and States</h2>
 <h3 id="the-hermitian-elements-are-the-observables">The Hermitian Elements Are the Observables</h3>
-<p>An element $\tilde H\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde H$.</p>
+<p>An element $\tilde R_\psi\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\psi$.</p>
 <p>The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,</p>
 <p>$$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde H)\bigr)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=h_t+\vec r\cdot\vec h ,
 $$</p>
 <p>for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.</p>
 <p>The boundary is that the word <em>observable</em> uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb M_+$: it carries $\mathbb M_+$ and $\mathbb M_-$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.</p>
 <h3 id="the-three-directions-are-the-three-spin-axes">The Three Directions Are the Three Spin Axes</h3>
-<p>A traceless Hermitian element is $\tilde H=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator</p>
+<p>A traceless Hermitian element is $\tilde R_\psi=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator</p>
 <p>$$
 [\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k
 $$</p>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Phi and Psi Census: The Mathematics and Physics Corpora — Biquaternion Universe</title>
+  <title>The Phi and Psi Census: The Mathematics, the Physics and the Internal Corpora — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,19 +68,20 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-phi-and-psi-census-the-mathematics-and-physics-corpora"><strong>The Phi and Psi Census: The Mathematics and Physics Corpora</strong></h1>
+        <h1 id="the-phi-and-psi-census-the-mathematics-the-physics-and-the-internal-corpora"><strong>The Phi and Psi Census: The Mathematics, the Physics and the Internal Corpora</strong></h1>
 <h2 id="what-is-counted">What Is Counted</h2>
-<p>Every occurrence of <code>\phi</code>, <code>\varphi</code>, <code>\Phi</code>, <code>\psi</code> and <code>\Psi</code> as a control sequence, followed by anything that is not a letter. A subscript or a superscript is counted with its glyph. Longer sequences such as <code>\varphi</code> are counted once, under their own row.</p>
+<p>Every occurrence of the five control sequences — the two lowercase forms, var-phi, and the two capitals — followed by anything that is not a letter. A subscript or a superscript is counted with its glyph, and a longer sequence is counted once under its own row. Raw codepoints are counted separately: U+03C6, U+03D5, U+03C8, U+03A8 and U+03A6 all stand at zero in every corpus.</p>
+<p>The sequences are named in this report by their letter alone — <em>phi</em>, <em>var-phi</em>, <em>Phi</em>, <em>psi</em>, <em>Psi</em> — because the report is itself an article of the internal corpus, where the sequences are retired and cannot be printed.</p>
 <h2 id="totals">Totals</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>corpus</th>
-<th><code>\phi</code></th>
-<th><code>\varphi</code></th>
-<th><code>\Phi</code></th>
-<th><code>\psi</code></th>
-<th><code>\Psi</code></th>
+<th>phi</th>
+<th>var-phi</th>
+<th>Phi</th>
+<th>psi</th>
+<th>Psi</th>
 </tr>
 </thead>
 <tbody>
@@ -88,229 +89,218 @@
 <td><code>articles_physics</code>, 412 articles</td>
 <td>0</td>
 <td>0</td>
-<td>2272 in 127</td>
-<td>4651 in 212</td>
-<td>4740 in 143</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>articles_internal</code>, 49 articles</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><code>articles_maths</code>, 2363 articles</td>
-<td>2613 in 133</td>
+<td>2126 in 120</td>
 <td>7641 in 515</td>
 <td>2763 in 228</td>
-<td>2714 in 219</td>
-<td>340 in 37</td>
+<td>1997 in 192</td>
+<td>243 in 32</td>
 </tr>
 </tbody>
 </table></div>
-<p>The physics row is after the migration. The lowercase letters are gone there and the capitals are untouched. The maths row is untouched in every column.</p>
-<h2 id="physics-the-lowercase-letters-are-gone">Physics: The Lowercase Letters Are Gone</h2>
-<p>1752 occurrences of <code>\phi</code> in 105 articles and 647 of <code>\varphi</code> in 59 articles were migrated. 2364 tokens sat in the 141 articles the batch covered; 35 more sit in three articles edited by hand.</p>
+<p>Physics is zero in all five columns: the whole set is retired there, the lowercase letters and the capitals alike. The internal corpus is zero in all five after the pass recorded below. The maths corpus is untouched in every column and its letters are live.</p>
+<h2 id="the-internal-corpus-the-whole-set-is-gone">The Internal Corpus: The Whole Set Is Gone</h2>
+<p>922 tokens stood in 20 files before the pass and none stand now. The pass read every site; nothing was replaced blindly.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>tokens before</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the-hermitian-element-and-the-letter-h-an-inventory-of-the-glyph</td>
+<td>176</td>
+</tr>
+<tr>
+<td>the-up-and-low-proportions-of-the-physics-corpus</td>
+<td>164</td>
+</tr>
+<tr>
+<td>the-pair-operator-an-inventory-of-the-glyph</td>
+<td>121</td>
+</tr>
+<tr>
+<td>the-gauge-covariant-derivative-an-inventory-by-type</td>
+<td>82</td>
+</tr>
+<tr>
+<td>phi-psy-migration</td>
+<td>80</td>
+</tr>
+<tr>
+<td>draft-introduction-to-the-biquaternion-universe-in-the-position-letter-scheme</td>
+<td>70</td>
+</tr>
+<tr>
+<td>the-gradient-the-dalembertian-and-the-frame-generators</td>
+<td>51</td>
+</tr>
+<tr>
+<td>left-and-right-actions-of-operators</td>
+<td>34</td>
+</tr>
+<tr>
+<td>the-subscripts-of-the-gradient-a-census-and-the-five-names-retired</td>
+<td>34</td>
+</tr>
+<tr>
+<td>the-split-of-energy-mass-and-information-in-the-two-sectors</td>
+<td>30</td>
+</tr>
+<tr>
+<td>objects-that-split-left-and-right</td>
+<td>18</td>
+</tr>
+<tr>
+<td>the-lower-labels-and-the-obstruction-to-the-caret</td>
+<td>17</td>
+</tr>
+<tr>
+<td>the-non-hermitian-adjoint-outside-the-gauge-sector</td>
+<td>16</td>
+</tr>
+<tr>
+<td>the-letter-zeta-an-inventory-of-the-glyph</td>
+<td>7</td>
+</tr>
+<tr>
+<td>the-letter-d-on-the-covariant-derivative-an-inventory-and-a-retirement</td>
+<td>6</td>
+</tr>
+<tr>
+<td>the-letter-chi-an-inventory-of-the-glyph</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the-tensor-formalism-of-the-gauge-sector-inventory-and-the-non-hermitian-adjoint</td>
+<td>4</td>
+</tr>
+<tr>
+<td>matrix/m4c-axis-free-representation-operators</td>
+<td>3</td>
+</tr>
+<tr>
+<td>matrix/m4c-pauli-representation-operators</td>
+<td>3</td>
+</tr>
+<tr>
+<td>the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mapping was the physics one, applied site by site:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>what the letter held</th>
-<th>occurrences</th>
-<th>articles</th>
 <th>written as</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the scalar field</td>
-<td>1877</td>
-<td>—</td>
-<td>$\chi$ bare, or $\chi^{\mathrm{scl}}$</td>
+<td>a real scalar field or a potential</td>
+<td>$\xi$</td>
 </tr>
 <tr>
-<td>the second state of an overlap</td>
-<td>122</td>
-<td>13</td>
-<td>$\chi^{\mathrm{alt}}$</td>
+<td>a complex scalar field</td>
+<td>$Ξ$</td>
+</tr>
+<tr>
+<td>an algebra-valued element</td>
+<td>$\tilde{Ξ}$</td>
+</tr>
+<tr>
+<td>a spinor, a state or a Dirac field</td>
+<td>$\tilde{Ξ}^{\mathrm{spn}}$ with its subscript or dagger kept</td>
+</tr>
+<tr>
+<td>a rapidity</td>
+<td>$\theta^{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>a phase inside an exponential</td>
+<td>$\theta^{\mathrm{pha}}$</td>
+</tr>
+<tr>
+<td>the two halves of the position element</td>
+<td>$\tilde R_\psi$ for the element of $\mathbb{M}_+$ and $\tilde R_\varphi$ for the element of $\mathbb{M}_-$, the two letters being kept free for this and for nothing else</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two files needed more than a substitution, and one rule runs the other way. The inventory of the Hermitian element carries the two halves as live subscripts, and they read $\tilde R_\psi$ and $\tilde R_\varphi$: the two letters are <strong>kept</strong>, not replaced, because freeing them was the point of the pass. They are the subscripts that show an element of $\mathbb{M}_+$ and an element of $\mathbb{M}_-$, and no other object may take them. The count of the five sequences in the columns below therefore stands at zero for every role except that one. This report is the second: it counts the sequences, so it names them instead of printing them.</p>
+<h2 id="physics-the-retirement-now-covers-the-capitals">Physics: The Retirement Now Covers the Capitals</h2>
+<p>An earlier version of this entry recorded a partial retirement — the scalar field to $\chi$, the phase to $\theta^{\mathrm{pha}}$, and the rapidity kept on psi. That table is superseded. The physics corpus now carries none of the five forms in any column, and the roles moved as follows:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the letter held</th>
+<th>written as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the real scalar field</td>
+<td>$\xi$, or $\xi^{\mathrm{scl}}$ for a declared scalar</td>
+</tr>
+<tr>
+<td>the complex scalar field</td>
+<td>$Ξ$</td>
+</tr>
+<tr>
+<td>the algebra-valued field</td>
+<td>$\tilde{Ξ}$</td>
+</tr>
+<tr>
+<td>the spinor, the state and the Dirac field</td>
+<td>$\tilde{Ξ}^{\mathrm{spn}}$, with the chirality subscript or the dagger</td>
+</tr>
+<tr>
+<td>the generic element of the algebra</td>
+<td>$\tilde{Ξ}$, or <code>\tilde{R}</code> where the element is a position</td>
+</tr>
+<tr>
+<td>the rapidity and the boost angle</td>
+<td>$\theta^{\mathrm{rpd}}$</td>
 </tr>
 <tr>
 <td>the phase inside an exponential</td>
-<td>96</td>
-<td>9</td>
 <td>$\theta^{\mathrm{pha}}$</td>
 </tr>
 <tr>
 <td>the azimuth, coordinate or differential</td>
-<td>126</td>
-<td>20</td>
 <td>$\theta^{\mathrm{azm}}$</td>
 </tr>
 <tr>
-<td>the scalar potential</td>
-<td>98</td>
-<td>13</td>
-<td>$\chi^{\mathrm{scp}}$</td>
-</tr>
-<tr>
-<td>a flow</td>
-<td>11</td>
-<td>2</td>
-<td>$\chi^{\mathrm{flw}}$</td>
-</tr>
-<tr>
-<td>the gauge function</td>
-<td>10</td>
-<td>1</td>
-<td>$\chi^{\mathrm{gau}}$</td>
-</tr>
-<tr>
-<td>the rapidity, in one article</td>
-<td>7</td>
-<td>1</td>
-<td>$\psi$</td>
-</tr>
-<tr>
 <td>the phi meson, a name</td>
-<td>5</td>
-<td>1</td>
 <td>the words "phi meson"</td>
 </tr>
 </tbody>
 </table></div>
-<p>Bare $\chi$ 1344 and $\chi^{\mathrm{scl}}$ 533 are the same object; the label is a precision, not a second field. The scalar potential took $\chi^{\mathrm{scp}}$ rather than the planned $a'_t$, because with the letter gone there is no number left to keep.</p>
-<h2 id="physics-psi">Physics: Psi</h2>
-<p>4651 occurrences in 212 articles. The role split comes from reading each article, not from a keyword count.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>role</th>
-<th>occurrences</th>
-<th>articles</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>the spinor and the state</td>
-<td>2839</td>
-<td>131</td>
-<td>$\psi_L,\psi_R$, $\psi^{\dagger}$, $\lvert\psi\rangle$</td>
-</tr>
-<tr>
-<td>the rapidity</td>
-<td>1113</td>
-<td>62</td>
-<td>$\cosh(\psi/2)$, $\tanh\psi=v/c$</td>
-</tr>
-<tr>
-<td>the generic element of the algebra</td>
-<td>183</td>
-<td>36</td>
-<td>$L_a\psi=a\psi$</td>
-</tr>
-<tr>
-<td>the Grassmann variable</td>
-<td>139</td>
-<td>7</td>
-<td>$\psi$ anticommuting in the path integral</td>
-</tr>
-<tr>
-<td>the kernel</td>
-<td>37</td>
-<td>6</td>
-<td>$\psi(x-y)$ of a Green function</td>
-</tr>
-<tr>
-<td>a map or a name</td>
-<td>5</td>
-<td>3</td>
-<td>—</td>
-</tr>
-<tr>
-<td>unassigned in the census</td>
-<td>335</td>
-<td>—</td>
-<td>small secondary uses</td>
-</tr>
-</tbody>
-</table></div>
-<p>The rapidity stays on $\psi$ because it is the imaginary part of the angle, $\Theta=-i\psi$, and the case rule tells it from the spinor.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>occurrences</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking</a></td>
-<td>184</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves</a></td>
-<td>136</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
-<td>135</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral</a></td>
-<td>132</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Rarita–Schwinger Field</a></td>
-<td>122</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly</a></td>
-<td>119</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation</a></td>
-<td>94</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets</a></td>
-<td>90</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases</a></td>
-<td>89</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra</a></td>
-<td>79</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="physics-the-capitals-are-a-different-object">Physics: The Capitals Are a Different Object</h2>
-<p><code>\Phi</code> and <code>\Psi</code> are not the retired letter and they are not the spinor column. <em>Algebra and Element Conventions</em> defines both, line 432 and line 433 of its table:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>glyph</th>
-<th>meaning</th>
-<th>definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\tilde\Phi$</td>
-<td>the algebra-valued scalar field</td>
-<td>$\tilde\Phi=\chi e_t$ in the central case, a general element of $\mathbb{B}$ otherwise</td>
-</tr>
-<tr>
-<td>$\tilde\Psi$</td>
-<td>the Dirac field</td>
-<td>$\tilde\Psi_L+\tilde\Psi_R$, an algebra-valued spinor field</td>
-</tr>
-</tbody>
-</table></div>
-<p>So a field is written twice in this corpus: once as an element of the algebra, $\tilde\Phi$, and once as its central coefficient, $\chi$. The majuscule is the element, the minuscule is the coefficient. That is why <code>\Phi</code> stands 2272 times in 127 articles after the lowercase letter is gone: the central case is $\tilde\Phi=\chi e_t$, and the pair is written together. <code>\Psi</code> stands 4740 times in 143 articles and 2635 of those carry the tilde, the Dirac field of the two chiral halves.</p>
+<p>No $\chi$ reading remains in force, and psi is not the rapidity. The case rule that once told a capital from a lowercase on the same letter is gone with the letters: an element and a spinor are now told apart by the tilde and the superscript, not by case.</p>
 <h2 id="maths-phi-and-varphi-untouched">Maths: Phi and Varphi, Untouched</h2>
-<p>10254 occurrences in 548 articles. No migration has run there and every one is still in place.</p>
+<p>9767 occurrences in 611 articles. No migration has run there and every one is still in place.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>role</th>
-<th><code>\phi</code></th>
-<th><code>\varphi</code></th>
+<th>phi</th>
+<th>var-phi</th>
 <th>how it is read</th>
 </tr>
 </thead>
@@ -319,13 +309,13 @@
 <td>a function, a symbol or a map</td>
 <td>867</td>
 <td>2790</td>
-<td>$T_\phi$ the Toeplitz symbol, $\varphi\smile\psi$ the cup product, $L_\varphi$</td>
+<td>the Toeplitz symbol, the cup product, the multiplication operator</td>
 </tr>
 <tr>
 <td>a formula of logic</td>
 <td>497</td>
 <td>1845</td>
-<td>$\varphi,\psi,\chi$ ranging over formulas</td>
+<td>three letters ranging over formulas</td>
 </tr>
 <tr>
 <td>unclassified by the keyword scan</td>
@@ -361,22 +351,22 @@
 <td>an indexed variable</td>
 <td>14</td>
 <td>31</td>
-<td>$\varphi_n$, $\phi_t$</td>
+<td>an indexed letter, in both spellings</td>
 </tr>
 <tr>
 <td>the golden ratio</td>
 <td>—</td>
 <td>12</td>
-<td>$\varphi=(1+\sqrt5)/2$</td>
+<td>$(1+\sqrt5)/2$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The role rows are a keyword scan over the sentence that carries the occurrence, so a sentence that mentions a spinor counts every glyph in it as a spinor. Read the <code>unclassified</code> row as the measure of how far the scan reaches: 3066 of the 10254, near a third. Treat the other rows as a ranking, not as a census.</p>
+<p>The role rows are a keyword scan over the sentence that carries the occurrence, so a sentence that mentions a spinor counts every glyph in it as a spinor, and the rows do not sum to the totals above. Read the <code>unclassified</code> row as the measure of how far the scan reaches, near a third of each column. Treat the other rows as a ranking, not as a census.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>article</th>
-<th><code>\phi</code></th>
+<th>phi</th>
 </tr>
 </thead>
 <tbody>
@@ -410,7 +400,7 @@
 <thead>
 <tr>
 <th>article</th>
-<th><code>\varphi</code></th>
+<th>var-phi</th>
 </tr>
 </thead>
 <tbody>
@@ -441,7 +431,7 @@
 </tbody>
 </table></div>
 <h2 id="maths-psi">Maths: Psi</h2>
-<p>2714 occurrences in 219 articles, untouched.</p>
+<p>1997 occurrences in 192 articles, untouched.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -459,17 +449,17 @@
 <tr>
 <td>a formula of logic</td>
 <td>558</td>
-<td>$\psi$ beside $\varphi$ and $\chi$ in the propositional calculus</td>
+<td>one letter beside two others in the propositional calculus</td>
 </tr>
 <tr>
 <td>a function, a symbol or a map</td>
 <td>534</td>
-<td>$\psi\mapsto\varphi\smile\psi$, the multiplication operator</td>
+<td>the cup product, the multiplication operator</td>
 </tr>
 <tr>
 <td>a rapidity</td>
 <td>427</td>
-<td>$\cosh\psi$, $\sinh\psi$ in the rotation and boost articles</td>
+<td>the hyperbolic cosine and sine in the rotation and boost articles</td>
 </tr>
 <tr>
 <td>a spinor or a state</td>
@@ -523,71 +513,61 @@
 </tbody>
 </table></div>
 <h2 id="the-forms-the-glyphs-take">The Forms the Glyphs Take</h2>
-<p>A mechanical count of the glyph with whatever is attached to it, over each corpus.</p>
+<p>A mechanical count of the letter with whatever is attached to it, over the maths corpus. The physics and internal columns are zero in every row.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>form</th>
-<th>physics</th>
 <th>maths</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>\psi</code> bare</td>
-<td>2977</td>
-<td>2374</td>
+<td>psi bare</td>
+<td>1662</td>
 </tr>
 <tr>
-<td><code>\psi^{...}</code></td>
-<td>214</td>
-<td>56</td>
+<td>psi with a superscript</td>
+<td>99</td>
 </tr>
 <tr>
-<td><code>\psi_{...}</code></td>
-<td>112</td>
-<td>—</td>
+<td>psi with a subscript</td>
+<td>236</td>
 </tr>
 <tr>
-<td><code>\psi_1</code>, <code>\psi_2</code></td>
-<td>80, 73</td>
-<td>—</td>
+<td>psi with the index 1, and with the index 2</td>
+<td>13, 7</td>
 </tr>
 <tr>
-<td><code>\psi_R</code>, <code>\psi_L</code></td>
-<td>67, 61</td>
-<td>7</td>
+<td>psi with the chiral index R, and with L</td>
+<td>7, 8</td>
 </tr>
 <tr>
-<td><code>\varphi</code> bare</td>
-<td>0</td>
+<td>var-phi bare</td>
 <td>6094</td>
 </tr>
 <tr>
-<td><code>\phi</code> bare</td>
-<td>0</td>
-<td>2099</td>
+<td>phi bare</td>
+<td>1618</td>
 </tr>
 <tr>
-<td><code>\varphi_n</code></td>
-<td>0</td>
-<td>114</td>
+<td>var-phi with the index n</td>
+<td>153</td>
 </tr>
 <tr>
-<td><code>\varphi^{-1}</code></td>
-<td>0</td>
-<td>43</td>
+<td>var-phi to the power minus one</td>
+<td>100</td>
 </tr>
 </tbody>
 </table></div>
-<p>Physics has 205 distinct forms of <code>\psi</code>; maths has 104 of <code>\psi</code> and 466 of <code>\phi</code> with <code>\varphi</code>.</p>
+<p>Maths has 45 distinct forms of psi and 169 of phi with var-phi. Physics and the internal corpus have none, so the form count there is a single row: zero.</p>
 <h2 id="status">Status</h2>
-<p>Physics: lowercase letters migrated, capitals untouched, no build and no deploy, because <em>PLAN.md</em> forbids both. Maths: 10254 occurrences of <code>\phi</code> and <code>\varphi</code> in 548 articles, and 2714 of <code>\psi</code>, all in place and none migrated. The two corpora use the same letters for different objects: in physics a field is $\chi$ with the element $\tilde\Phi$ above it, in maths <code>\varphi</code> is a symbol of a function, a formula of logic, or a rapidity, and no single reading covers it.</p>
+<p>Physics: all 412 articles purged, five columns at zero, and nothing of the retired set in command or glyph. Internal: 49 articles, 922 tokens replaced in 20 files, five columns at zero, verified on the source and on the built page. Maths: 9767 occurrences of phi and var-phi in 611 articles and 1997 of psi, all in place and none migrated. The two live corpora use different letters for the same roles: physics writes a scalar as $\xi$ and an element as $\tilde{Ξ}$, and maths still writes a function, a formula of logic and a rapidity on the two letters this report counts.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_maths/index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a>, for the caret, the low slot, and the tables of three-letter labels.</li>
-<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for <em>The Angle and Its Two Cases</em> and for the rows that define $\tilde\Phi$ and $\tilde\Psi$.</li>
-<li><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit Index and Notation Conventions</a>, for the row that fixes $\psi^{\mathrm{fop}}$.</li>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for <em>The Angle and Its Two Cases</em> and for the rows that define $\tilde{Ξ}$ and $\tilde{Ξ}^{\mathrm{spn}}$.</li>
+<li><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit Index and Notation Conventions</a>, for the row that fixes the Fock-operator superscript on the spinor.</li>
 </ul>
       </div>
     </main>

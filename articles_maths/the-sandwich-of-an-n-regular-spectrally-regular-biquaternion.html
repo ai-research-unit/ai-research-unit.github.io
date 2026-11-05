@@ -79,10 +79,10 @@ $$</p>
 <p>The polar decomposition writes an element of non-vanishing norm as four factors,</p>
 <p>$$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\alpha)\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 \qquad \Rho=r\exp(i\alpha),
 $$</p>
-<p>the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: <strong>what does each factor do to the operator?</strong> The answer is read one factor at a time, and the phase does nothing.</p>
+<p>the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta^{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: <strong>what does each factor do to the operator?</strong> The answer is read one factor at a time, and the phase does nothing.</p>
 <p>The article is the vector-side companion of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is <em>The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</em>: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>.</p>
 <p>The plan is the following. §<em>The Sandwich of the Word</em> proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §<em>The Scale</em> to §<em>The Rotor</em> take the four factors in the order of the word. §<em>The Eigenbasis and the Two Spinor Slots</em> reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>. §<em>The Image and the Kernel</em> identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §<em>The Vanishing of the Modulus</em> records the degenerate case. The article closes with the summary, the notation and the readings.</p>
 <h2 id="conventions">Conventions</h2>
@@ -104,10 +104,10 @@ $$</p>
 <p>$$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \Rho=r\exp(i\alpha),\qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr),\qquad
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy</p>
+<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy</p>
 <p>$$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$</p>
@@ -203,9 +203,9 @@ $$</p>
 <h3 id="the-factor_2">The Factor</h3>
 <p>The boost is</p>
 <p>$$
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)
-=\cosh\tfrac{\psi}{2}\,e_t+i\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b},
-\qquad \psi\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad \theta^{\mathrm{rpd}}\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
 $$</p>
 <p>It is Hermitian and of norm one,</p>
 <p>$$
@@ -213,10 +213,10 @@ $$</p>
 $$</p>
 <p>and its square and inverse are</p>
 <p>$$
-\tilde U_{\mathrm b}^{2}=\exp(i\psi\vec u_{\mathrm b}),\qquad
-\tilde U_{\mathrm b}^{-1}=\exp\Bigl(-i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr).
+\tilde U_{\mathrm b}^{2}=\exp(i\theta^{\mathrm{rpd}}\vec u_{\mathrm b}),\qquad
+\tilde U_{\mathrm b}^{-1}=\exp\Bigl(-i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr).
 $$</p>
-<p>The boost is not $*$-unitary, because $\tilde U_{\mathrm b}^{-1}\neq\tilde U_{\mathrm b}$ unless $\psi=0$.</p>
+<p>The boost is not $*$-unitary, because $\tilde U_{\mathrm b}^{-1}\neq\tilde U_{\mathrm b}$ unless $\theta^{\mathrm{rpd}}=0$.</p>
 <h3 id="the-sandwich-on-the-two-sectors">The Sandwich on the Two Sectors</h3>
 <p>The right slot is $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, so the sandwich is a <strong>congruence</strong>,</p>
 <p>$$
@@ -227,36 +227,36 @@ $$</p>
 <p>$$
 \mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=ia'\,e_t+\vec b',
 \qquad
-a'=a\cosh\psi-b_\parallel\sinh\psi,\qquad
-b_\parallel'=b_\parallel\cosh\psi-a\sinh\psi,\qquad
+a'=a\cosh\theta^{\mathrm{rpd}}-b_\parallel\sinh\theta^{\mathrm{rpd}},\qquad
+b_\parallel'=b_\parallel\cosh\theta^{\mathrm{rpd}}-a\sinh\theta^{\mathrm{rpd}},\qquad
 \vec b_\perp'=\vec b_\perp .
 $$</p>
 <p>On $\mathbb{M}_+$, for $\tilde X=a\,e_t+i\vec b$,</p>
 <p>$$
 \mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=a'\,e_t+i\vec b',
 \qquad
-a'=a\cosh\psi+b_\parallel\sinh\psi,\qquad
-b_\parallel'=b_\parallel\cosh\psi+a\sinh\psi,\qquad
+a'=a\cosh\theta^{\mathrm{rpd}}+b_\parallel\sinh\theta^{\mathrm{rpd}},\qquad
+b_\parallel'=b_\parallel\cosh\theta^{\mathrm{rpd}}+a\sinh\theta^{\mathrm{rpd}},\qquad
 \vec b_\perp'=\vec b_\perp .
 $$</p>
 <p>The two formulas differ only in the signs of the cross terms. The derivation is one line per piece. For the time piece,</p>
 <p>$$
 \tilde U_{\mathrm b}\,(ia\,e_t)\,\tilde U_{\mathrm b}=ia\,\tilde U_{\mathrm b}^{2}
-=ia\cosh\psi-a\sinh\psi\,\vec u_{\mathrm b},
+=ia\cosh\theta^{\mathrm{rpd}}-a\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b},
 $$</p>
-<p>and for the vector piece the perpendicular part is fixed and the parallel part is stretched by $\cosh\psi$; the cross terms combine into the formulas above. In the coordinates $(a,b_x,b_y,b_z)$ the matrices of the two actions are</p>
+<p>and for the vector piece the perpendicular part is fixed and the parallel part is stretched by $\cosh\theta^{\mathrm{rpd}}$; the cross terms combine into the formulas above. In the coordinates $(a,b_x,b_y,b_z)$ the matrices of the two actions are</p>
 <p>$$
-B_-(\psi,\vec u_{\mathrm b})=
+B_-(\theta^{\mathrm{rpd}},\vec u_{\mathrm b})=
 \begin{pmatrix}
-\cosh\psi & -\sinh\psi\,\vec u_{\mathrm b}^{\,T}\\
--\sinh\psi\,\vec u_{\mathrm b} & I_3+(\cosh\psi-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
+\cosh\theta^{\mathrm{rpd}} & -\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}^{\,T}\\
+-\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} & I_3+(\cosh\theta^{\mathrm{rpd}}-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
 \end{pmatrix},
 $$</p>
 <p>$$
-B_+(\psi,\vec u_{\mathrm b})=
+B_+(\theta^{\mathrm{rpd}},\vec u_{\mathrm b})=
 \begin{pmatrix}
-\cosh\psi & \sinh\psi\,\vec u_{\mathrm b}^{\,T}\\
-\sinh\psi\,\vec u_{\mathrm b} & I_3+(\cosh\psi-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
+\cosh\theta^{\mathrm{rpd}} & \sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}^{\,T}\\
+\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} & I_3+(\cosh\theta^{\mathrm{rpd}}-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
 \end{pmatrix},
 $$</p>
 <p>with $B_+=B_-^{-1}$. Each preserves its form, $B_\pm^{T}G_\pm B_\pm=G_\pm$, where $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+=\operatorname{diag}(-1,1,1,1)$.</p>
@@ -391,7 +391,7 @@ $$</p>
 \qquad
 \mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}.
 $$</p>
-<p>The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\psi$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.</p>
+<p>The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\theta^{\mathrm{rpd}}$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.</p>
 <p>The spectral form of the pairing is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
 $$
 \operatorname{spec}\mathrm{Sd}_{\tilde Q}
@@ -458,7 +458,7 @@ The sandwich is therefore the two-slot operator: its spectrum is the four produc
 <td>the scale and the phase angle</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$</td>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
 <td>the Hermitian positive unit-norm boost</td>
 </tr>
 <tr>
@@ -494,7 +494,7 @@ The sandwich is therefore the two-slot operator: its spectrum is the four produc
 <td>the eigenprojections and the two left ideals of the one-sided reading (Peirce index)</td>
 </tr>
 <tr>
-<td>$\psi\ge0$, $\theta\in[0,2\pi]$</td>
+<td>$\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$</td>
 <td>the rapidity and the rotation angle</td>
 </tr>
 <tr>

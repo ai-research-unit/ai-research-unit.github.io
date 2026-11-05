@@ -89,25 +89,25 @@
 - Companion article <em>Exercise: Spin Precession in a Magnetic Field</em>, for the Larmor precession used for the cyclic evolution.</p>
 <h2 id="the-two-phases">The Two Phases</h2>
 <h3 id="the-dynamical-phase">The Dynamical Phase</h3>
-<p>A state that evolves under a time-independent Hamiltonian $\tilde{H}$ acquires the phase</p>
+<p>A state that evolves under a time-independent Hamiltonian $\tilde R_\psi$ acquires the phase</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{spn}}(t') = \exp(-\frac{i}{\hbar}\tilde{H}t')\,\tilde{Ξ}^{\mathrm{spn}}(0),
+\tilde{Ξ}^{\mathrm{sp}}(t') = \exp(-\frac{i}{\hbar}\tilde R_\psit')\,\tilde{Ξ}^{\mathrm{sp}}(0),
 \qquad\text{so}\qquad
-\tilde{Ξ}^{\mathrm{spn}}(T) = \exp(-\frac{i}{\hbar}E\,T)\,\tilde{Ξ}^{\mathrm{spn}}(0)
+\tilde{Ξ}^{\mathrm{sp}}(T) = \exp(-\frac{i}{\hbar}E\,T)\,\tilde{Ξ}^{\mathrm{sp}}(0)
 $$</p>
-<p>for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar}\int_0^T E\,dt'$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde{H}\rangle$, and the same statement holds with $\int_0^T\langle\tilde{H}\rangle\,dt'/\hbar$.</p>
+<p>for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar}\int_0^T E\,dt'$ is the <strong>dynamical phase</strong>; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde R_\psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde R_\psi\rangle\,dt'/\hbar$.</p>
 <p>The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.</p>
 <h3 id="the-aharonovanandan-phase">The Aharonov–Anandan Phase</h3>
-<p>Let $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$ be a normalized solution of the Schrödinger equation that is <strong>cyclic</strong>, $|\tilde{Ξ}^{\mathrm{spn}}(T)\rangle = \exp(i\theta^{\mathrm{pha}}_{\mathrm{tot}})|\tilde{Ξ}^{\mathrm{spn}}(0)\rangle$ for some real $\theta^{\mathrm{pha}}_{\mathrm{tot}}$. Define</p>
+<p>Let $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$ be a normalized solution of the Schrödinger equation that is <strong>cyclic</strong>, $|\tilde{Ξ}^{\mathrm{sp}}(T)\rangle = \exp(i\theta^{\mathrm{pha}}_{\mathrm{tot}})|\tilde{Ξ}^{\mathrm{sp}}(0)\rangle$ for some real $\theta^{\mathrm{pha}}_{\mathrm{tot}}$. Define</p>
 <p>$$
-\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{Ξ}^{\mathrm{spn}}(t')|\tilde{H}(t')|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle\,dt' .
+\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{Ξ}^{\mathrm{sp}}(t')|\tilde R_\psi(t')|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle\,dt' .
 $$</p>
 <p>This is the <strong>Aharonov–Anandan phase</strong>. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the trace:</p>
 <p>$$
-\langle\tilde{H}\rangle = \frac{\langle\tilde{Ϛ},\tilde H\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})}{\operatorname{Tr}(\tilde{Ϛ})}, \qquad
-\theta^{\mathrm{pha}}_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}}(0)^\dagger\tilde{Ξ}^{\mathrm{spn}}(T)) .
+\langle\tilde R_\psi\rangle = \frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})}{\operatorname{Tr}(\tilde{Ϛ})}, \qquad
+\theta^{\mathrm{pha}}_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}}(0)^\dagger\tilde{Ξ}^{\mathrm{sp}}(T)) .
 $$</p>
-<p>The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde H\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.</p>
+<p>The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde R_\psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.</p>
 <h3 id="the-berry-phase-as-the-adiabatic-limit">The Berry Phase as the Adiabatic Limit</h3>
 <p>If the Hamiltonian is transported slowly around a loop in parameter space and the system follows the instantaneous eigenstate, the AA phase becomes the <strong>Berry phase</strong></p>
 <p>$$
@@ -130,7 +130,7 @@ $$</p>
 <h3 id="the-exact-precessing-spin">The Exact Precessing Spin</h3>
 <p>The cleanest exactly solvable case is the fixed field. Take the field along $\vec u_z$,</p>
 <p>$$
-\tilde{H} = -\frac{\hbar\omega_L}{2}\,i\vec e_z,
+\tilde R_\psi = -\frac{\hbar\omega_L}{2}\,i\vec e_z,
 \qquad \omega_L = \gamma B > 0,
 $$</p>
 <p>in the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, where the Bloch vector of a state initially along $+\vec u_x$ precesses as $\vec r(t') = (\cos\omega_L t', -\sin\omega_L t', 0)$. Prepare the spin along</p>
@@ -142,13 +142,13 @@ $$</p>
 T = \frac{2\pi}{\omega_L}
 $$</p>
 <p>it returns to its initial position. The spinor returns only up to a phase, which is computed exactly.</p>
-<p>In the matrix representation the spinor is $\tilde{Ξ}^{\mathrm{spn}}(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is</p>
+<p>In the matrix representation the spinor is $\tilde{Ξ}^{\mathrm{sp}}(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is</p>
 <p>$$
 \boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$</p>
-<p>so the total phase is $\theta^{\mathrm{pha}}_{\mathrm{tot}} = \pi$ and $\tilde{Ξ}^{\mathrm{spn}}(T) = -\tilde{Ξ}^{\mathrm{spn}}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:</p>
+<p>so the total phase is $\theta^{\mathrm{pha}}_{\mathrm{tot}} = \pi$ and $\tilde{Ξ}^{\mathrm{sp}}(T) = -\tilde{Ξ}^{\mathrm{sp}}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:</p>
 <p>$$
-\frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'
+\frac{1}{\hbar}\int_0^T\langle\tilde R_\psi\rangle\,dt'
 = -\frac{\omega_L}{2}\cos\theta_0\,T = -\pi\cos\theta_0 .
 $$</p>
 <p>Hence the AA phase is</p>
@@ -159,7 +159,7 @@ $$</p>
 <p>The traversal here is clockwise as seen from $+\vec u_z$ (the corpus Larmor sense), so $\theta^{\mathrm{sol}}{}^{\mathrm{sgn}} = -\theta^{\mathrm{sol}}$ and the general formula gives $\gamma^{\mathrm{geo}} = -\tfrac12(-\theta^{\mathrm{sol}}) = +\tfrac{\theta^{\mathrm{sol}}}{2}$, in exact agreement. The result was verified numerically for $\theta_0 = 0.3, 0.9, 1.57, 2.4, 3.0$; in every case $\gamma_{AA}\equiv +\theta^{\mathrm{sol}}/2\pmod{2\pi}$, with the continuous branch passing through $0$ at $\theta_0 = 0$ and at $\theta_0 = \pi$ as it must.</p>
 <p>Two limits make the formula transparent. At $\theta_0\to0$ the state is the eigenstate along the field and does not precess; the curve degenerates to a point, $\theta^{\mathrm{sol}}\to0$, and the geometric phase vanishes. At $\theta_0\to\pi$ the state is again an eigenstate (the opposite one), the curve again degenerates, and $\theta^{\mathrm{sol}}\to4\pi$, so $\gamma_{AA}\to2\pi\equiv0$. The geometric phase is largest at the equator, where it is $\pi$: the spinor changes sign after a full precession at $\theta_0 = \pi/2$.</p>
 <h3 id="the-math79-periodicity">The $4\pi$ Periodicity</h3>
-<p>The sign change $\tilde{Ξ}^{\mathrm{spn}}(T) = -\tilde{Ξ}^{\mathrm{spn}}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
+<p>The sign change $\tilde{Ξ}^{\mathrm{sp}}(T) = -\tilde{Ξ}^{\mathrm{sp}}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
 <p>$$
 \tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\vec u_x),
 \qquad
@@ -171,9 +171,9 @@ $$</p>
 <h3 id="the-spinor-carries-the-phase">The Spinor Carries the Phase</h3>
 <p>The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,</p>
 <p>$$
-\tilde\Pi = \frac{\tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})},
+\tilde\Pi = \frac{\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})},
 $$</p>
-<p>and a spinor phase $\tilde{Ξ}^{\mathrm{spn}}\mapsto \exp(i\alpha)\tilde{Ξ}^{\mathrm{spn}}$ cancels between $\tilde{Ξ}^{\mathrm{spn}}$ and $\tilde{Ξ}^{\mathrm{spn}\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.</p>
+<p>and a spinor phase $\tilde{Ξ}^{\mathrm{sp}}\mapsto \exp(i\alpha)\tilde{Ξ}^{\mathrm{sp}}$ cancels between $\tilde{Ξ}^{\mathrm{sp}}$ and $\tilde{Ξ}^{\mathrm{sp}\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.</p>
 <h3 id="the-rotor-and-its-two-faces">The Rotor and Its Two Faces</h3>
 <p>The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,</p>
 <p>$$
@@ -181,30 +181,30 @@ $$</p>
 \qquad
 \tilde{u} = \exp(-\frac{1}{2}\theta^{\mathrm{blc}}\,\vec u_x) = \cos\frac{\theta^{\mathrm{blc}}}{2}\,e_t - \sin\frac{\theta^{\mathrm{blc}}}{2}\,\vec u_x\;},
 $$</p>
-<p>for some axis $\vec u_x$, where $\theta^{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt')$. The two faces are:</p>
+<p>for some axis $\vec u_x$, where $\theta^{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde R_\psi\rangle dt')$. The two faces are:</p>
 <ul>
 <li>the <strong>rotor</strong> $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;</li>
 <li>the <strong>central phase</strong> $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.</li>
 </ul>
 <p>The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma^{\mathrm{geo}} = -\tfrac12\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.</p>
 <h3 id="gauge-freedom-and-the-pancharatnam-connection">Gauge Freedom and the Pancharatnam Connection</h3>
-<p>The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the <strong>Pancharatnam connection</strong>: for two non-orthogonal states $|\tilde{Ξ}^{\mathrm{spn}}_1\rangle$, $|\tilde{Ξ}^{\mathrm{spn}}_2\rangle$, the relative phase is $\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,</p>
+<p>The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the <strong>Pancharatnam connection</strong>: for two non-orthogonal states $|\tilde{Ξ}^{\mathrm{sp}}_1\rangle$, $|\tilde{Ξ}^{\mathrm{sp}}_2\rangle$, the relative phase is $\arg\langle\tilde{Ξ}^{\mathrm{sp}}_1|\tilde{Ξ}^{\mathrm{sp}}_2\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,</p>
 <p>$$
-\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle = \arg\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}\dagger}_1\tilde{Ξ}^{\mathrm{spn}}_2\right),
+\arg\langle\tilde{Ξ}^{\mathrm{sp}}_1|\tilde{Ξ}^{\mathrm{sp}}_2\rangle = \arg\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_1\tilde{Ξ}^{\mathrm{sp}}_2\right),
 $$</p>
-<p>and it is gauge-covariant: a rephasing $\tilde{Ξ}^{\mathrm{spn}}_a\mapsto \exp(i\alpha_a)\tilde{Ξ}^{\mathrm{spn}}_a$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.</p>
+<p>and it is gauge-covariant: a rephasing $\tilde{Ξ}^{\mathrm{sp}}_a\mapsto \exp(i\alpha_a)\tilde{Ξ}^{\mathrm{sp}}_a$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.</p>
 <h2 id="the-rotating-field-at-arbitrary-rate">The Rotating Field at Arbitrary Rate</h2>
 <h3 id="the-rotating-frame-effective-field">The Rotating-Frame Effective Field</h3>
 <p>The adiabatic limit is the slow end of a one-parameter family. Consider a field whose direction rotates about $\vec u_z$ at angular frequency $\omega$ in the Larmor sense of the corpus,</p>
 <p>$$
 \vec u_x(t') = \left(\sin\theta_0\cos\omega t',\,-\sin\theta_0\sin\omega t',\,\cos\theta_0\right),
 $$</p>
-<p>with Hamiltonian $\tilde{H}(t') = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t')$ and $u_x(t')_k\tilde S_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(t') = \exp(-\tfrac{\omega t'}{2}\vec e_z)$, gives the static effective Hamiltonian</p>
+<p>with Hamiltonian $\tilde R_\psi(t') = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t')$ and $u_x(t')_k\tilde S_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(t') = \exp(-\tfrac{\omega t'}{2}\vec e_z)$, gives the static effective Hamiltonian</p>
 <p>$$
-\tilde{H}_R = \tilde u_{\mathrm r}^{*}\tilde{H}\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\partial/\partial t'\tilde u_{\mathrm r}
+\tilde{R}_{\psi,R} = \tilde u_{\mathrm r}^{*}\tilde R_\psi\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\partial/\partial t'\tilde u_{\mathrm r}
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$</p>
-<p>which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{H}_R = -\tfrac{\hbar}{2}\,i\,h_{\mathrm{eff},k}\vec e_k$ with</p>
+<p>which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{R}_{\psi,R} = -\tfrac{\hbar}{2}\,i\,h_{\mathrm{eff},k}\vec e_k$ with</p>
 <p>$$
 \vec h_{\mathrm{eff}} = \left(\omega_L\sin\theta_0,\;0,\;\omega_L\cos\theta_0-\omega\right),
 \qquad
@@ -252,7 +252,7 @@ $$</p>
 \gamma^{\mathrm{geo}} = -\frac{1}{2}\,\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}(\mathcal{C}),
 $$</p>
 <p>one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.</p>
-<p>The <strong>Aharonov–Anandan phase</strong> is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is</p>
+<p>The <strong>Aharonov–Anandan phase</strong> is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde R_\psi\rangle\,dt'$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is</p>
 <p>$$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta^{\mathrm{sol}}}{2},
 $$</p>
@@ -293,7 +293,7 @@ $$</p>
 <td>Spin observable along $\vec e_k$</td>
 </tr>
 <tr>
-<td>$\tilde{H} = -\tfrac{\hbar\omega_L}{2}i\vec e_z$</td>
+<td>$\tilde R_\psi = -\tfrac{\hbar\omega_L}{2}i\vec e_z$</td>
 <td>Fixed-field Hamiltonian</td>
 </tr>
 <tr>
@@ -305,11 +305,11 @@ $$</p>
 <td>Pure-state idempotent; carries no phase</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{spn}}$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}$</td>
 <td>Spinor; carries the geometric phase</td>
 </tr>
 <tr>
-<td>$\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt'$</td>
+<td>$\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde R_\psi\rangle dt'$</td>
 <td>Aharonov–Anandan geometric phase</td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ $$</p>
 <td>Generalized (Floquet) frequency</td>
 </tr>
 <tr>
-<td>$\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle = \arg\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}_1\tilde{Ξ}^{\mathrm{spn}}_2)$</td>
+<td>$\arg\langle\tilde{Ξ}^{\mathrm{sp}}_1|\tilde{Ξ}^{\mathrm{sp}}_2\rangle = \arg\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}_1\tilde{Ξ}^{\mathrm{sp}}_2)$</td>
 <td>Pancharatnam connection</td>
 </tr>
 </tbody>

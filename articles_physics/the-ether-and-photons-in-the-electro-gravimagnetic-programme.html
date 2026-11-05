@@ -139,13 +139,13 @@ ether, and its vector part is the tension of the electric and gravimagnetic fiel
 <h2 id="the-time-harmonic-reduction-and-the-photon-equation">The Time-Harmonic Reduction and the Photon Equation</h2>
 <p>A <strong>monochromatic</strong> field is one whose time dependence is a single exponential,</p>
 <p>$$
-\tilde{A}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
 \qquad \omega > 0 ,
 $$</p>
 <p>so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate gives the programme's <strong>photon
 equation</strong>,</p>
 <p>$$
-\boxed{\;\nabla^{-}_{\omega}\tilde{Ξ} = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\boxed{\;\nabla^{-}_{\omega}\tilde{Ξ} = i\,\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
 \qquad
 \nabla^{\pm}_{\omega} = \omega \pm \nabla\;}
 $$</p>
@@ -180,23 +180,23 @@ programme does not supply.</p>
 <p>The inverse of the photon equation is built from the fundamental solution of the Helmholtz equation
 that satisfies the radiation condition,</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{spn}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = -\frac{\exp(\,i\omega r)}{4\pi r},
-\qquad r = \|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\| ,
-\qquad \left(\Delta + \omega^{2}\right)\tilde{Ξ}^{\mathrm{spn}} = \delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) ,
+\tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = -\frac{\exp(\,i\omega r)}{4\pi r},
+\qquad r = \|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\| ,
+\qquad \left(\Delta + \omega^{2}\right)\tilde{Ξ}^{\mathrm{sp}} = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$</p>
 <p>the outgoing spherical kernel, whose flux through a small sphere was computed and is exactly $+1$,
 and which satisfies the Helmholtz equation away from the origin. Applying the conjugate
 $\omega$-gradient to the source convolved with this kernel gives the <strong>photon biquaternion</strong> of any
 monochromatic source,</p>
 <p>$$
-\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{Ξ}^{\mathrm{spn}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\right\},
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
+= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
 $$</p>
 <p>so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
 generalized functions of slow growth — tempered distributions — which is what makes the convolved
 sources here and the layered sources of the light section below legitimate rather than formal. For a
-<strong>concentrated charge</strong>, $\tilde J_{\mathrm{eg}} = -i\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the kernel is
+<strong>concentrated charge</strong>, $\tilde J_{\mathrm{eg}} = -i\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the kernel is
 evaluated at once and the result is the <strong>elementary photon</strong>: a spherical EGM wave whose scalar and
 vector amplitudes are</p>
 <p>$$
@@ -204,7 +204,7 @@ vector amplitudes are</p>
 \qquad
 \left\|\tilde F_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
 \qquad
-\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r}\;}
+\vec u_x = \frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{r}\;}
 $$</p>
 <p>both recomputed. The wave is a spherical EGM wave emitted by a point charge, propagating at the speed
 of the field, decaying as $r^{-1}$; its density and tension amplitudes are proportional to its
@@ -226,7 +226,7 @@ density.</p>
 \nabla^{-}_{\omega}\tilde{Ξ} = 0 ,
 $$</p>
 <p>and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\xi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\vec e_{j}$ with
+potential. Taking the plane potentials $\xi_{j} = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\vec e_{j}$ with
 $\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,</p>
 <p>$$
@@ -235,13 +235,13 @@ notation and recomputed exactly,</p>
 \tilde{Ξ}_{\vec kj} = \xi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
 \qquad j = 1,2,3\;}
 $$</p>
-<p>with $\xi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
+<p>with $\xi = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.</p>
 <ul>
 <li><strong>The scalar-potential mode is longitudinal and has the two field vectors parallel.</strong> For
   $j = 0$ the mode has
   $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\vec u_k$ and
-  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_k$ with $\theta = (\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
+  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_k$ with $\theta = (\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
   so both fields lie along the wave vector and are parallel up to a relative sign set by the phase —
   recomputed. No other mode of the construction is of this kind: a potential axis along
   $\vec k$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
@@ -278,21 +278,21 @@ parameters, not eight.</p>
 <p>Because the source enters linearly, the representations compose. Every emitted monochromatic field is
 a superposition of elementary photons weighted by the source,</p>
 <p>$$
-\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = i\,\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{Ξ}^{0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = i\,\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}^{0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
 $$</p>
 <p>the convolution being over the spatial variables, so the elementary photon is the kernel of the map
 from a charge–current distribution to its field. Over a band of frequencies the paper sums these
 contributions into what it calls light,</p>
 <p>$$
-\Lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\,\exp(-i\omega\tau)\,d\omega ,
+\Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau)\,d\omega ,
 \qquad
 \tilde{\Sigma}_{\Lambda} = \Lambda\Lambda^{*} ,
 $$</p>
 <p>and the free-photon cloud is the same construction with the four plane modes weighted and summed,</p>
 <p>$$
-\mathrm{O}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
-\left\{\Omega_{j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \int_{\|\vec k\|=\omega} b_{j}(\vec k,\omega)\,
-\tilde{Ξ}_{\vec kj}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\,dS(\vec k)\right\} d\omega ,
+\mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
+\left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k\|=\omega} b_{j}(\vec k,\omega)\,
+\tilde{Ξ}_{\vec kj}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k)\right\} d\omega ,
 \qquad
 \tilde{\Sigma}_{\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$</p>
@@ -393,7 +393,7 @@ $\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$ with
 $\nabla^{\pm}_{\omega} = \omega \pm \nabla$, and the factorisation
 $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
-$\tilde{Ξ}^{\mathrm{spn}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the <strong>elementary photon</strong> of a concentrated
+$\tilde{Ξ}^{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the <strong>elementary photon</strong> of a concentrated
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives <strong>free photons</strong> as the four plane modes
@@ -452,8 +452,8 @@ clearest statement of what the programme assumes.</p>
 <td>The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$</td>
-<td>Biamplitude, $\tilde{A}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
+<td>$\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$</td>
+<td>Biamplitude, $\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
 </tr>
 <tr>
 <td>$\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$</td>
@@ -464,8 +464,8 @@ clearest statement of what the programme assumes.</p>
 <td>Helmholtz factorisation of the photon equation</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{spn}} = -\exp(\,i\omega r)/(4\pi r)$</td>
-<td>Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}^{\mathrm{spn}} = \delta$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$</td>
+<td>Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}^{\mathrm{sp}} = \delta$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}^{0}$</td>
@@ -484,7 +484,7 @@ clearest statement of what the programme assumes.</p>
 <td>Unit wave direction, $\|\vec k\| = \omega$</td>
 </tr>
 <tr>
-<td>$\xi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$</td>
+<td>$\xi = \exp(\,i(\vec k,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$</td>
 <td>Plane Helmholtz potential</td>
 </tr>
 <tr>
@@ -492,7 +492,7 @@ clearest statement of what the programme assumes.</p>
 <td>Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$</td>
 </tr>
 <tr>
-<td>$\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$</td>
+<td>$\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$</td>
 <td>Radial unit vector</td>
 </tr>
 <tr>

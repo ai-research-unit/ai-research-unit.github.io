@@ -78,11 +78,11 @@ $$</p>
 <p>The sandwich of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is <em>The Sandwich of an N-Regular, Spectrally Regular Biquaternion</em>. This article reads the one-sided factors: the polar word</p>
 <p>$$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\alpha)\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 \qquad \Rho=r\exp(i\alpha),
 $$</p>
-<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.</p>
-<p>The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\psi/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in <em>The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion</em> and <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>.</p>
+<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.</p>
+<p>The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta^{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in <em>The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion</em> and <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>.</p>
 <p>The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{M}_+$ and $\mathbb{M}_-$. Its block form in the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is</p>
 <p>$$
 L_{\tilde Q}=
@@ -122,10 +122,10 @@ $$</p>
 <p>$$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \Rho=r\exp(i\alpha),\qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr),\qquad
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy</p>
+<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy</p>
 <p>$$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$</p>
@@ -186,7 +186,7 @@ $$</p>
 <tr>
 <td>boost $\tilde U_{\mathrm b}$</td>
 <td>$L_{\tilde U_{\mathrm b}}$</td>
-<td>mixes for $\psi>0$</td>
+<td>mixes for $\theta^{\mathrm{rpd}}>0$</td>
 <td>$1$</td>
 </tr>
 <tr>
@@ -490,11 +490,11 @@ $$</p>
 <h3 id="the-boost">The Boost</h3>
 <p>The boost is</p>
 <p>$$
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)
-=\cosh\tfrac{\psi}{2}\,e_t+i\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b},
-\qquad \psi\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad \theta^{\mathrm{rpd}}\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
 $$</p>
-<p>It is Hermitian and of norm one. Write $c=\cosh\tfrac{\psi}{2}$, $s=\sinh\tfrac{\psi}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then</p>
+<p>It is Hermitian and of norm one. Write $c=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}$, $s=\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then</p>
 <p>$$
 \tilde U_{\mathrm b}\tilde X
 =i\bigl(ac-s\,\vec u\cdot\vec b\bigr)e_t+i s\,\vec u\times\vec b
@@ -694,7 +694,7 @@ so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is 
 <td>the scale and the phase angle</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$</td>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
 <td>the Hermitian positive unit-norm boost</td>
 </tr>
 <tr>
