@@ -57,7 +57,7 @@ $$
 \left(\Box - m^2\right)\tilde{\Psi}_R = 0
 $$
 
-in these units; with $\hbar$ and $c$ restored the operator is $\Box-m^2c^2/\hbar^2$. The same holds for $\tilde{\Psi}_L$. So each part obeys the Klein–Gordon equation. The factorization is the one the algebra supplies; no matrix square is used and no frame metric enters.
+in these units; with $\hbar$ and $c$ restored the operator is $\Box-m^2c^2/\hbar^2$. The same holds for $\tilde{\Psi}_L$. So each part obeys the Klein–Gordon equation. The factorization is the one the algebra supplies; no matrix square is used and no second metric enters.
 
 ### The Two Values of the Subscript
 
@@ -727,7 +727,7 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

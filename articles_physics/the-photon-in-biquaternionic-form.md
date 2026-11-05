@@ -8,7 +8,7 @@ A framework that reformulates known physics can be read generously or carefully.
 
 The answer, stated at the outset, has three positive parts and four negative ones. The positive parts are these.
 
-1. **The polarization space is the material sector.** The four polarization vectors of the covariant treatment are the four directions of $\mathbb{M}_-$, and the indefinite metric $\zeta = (-1,+1,+1,+1)$ of Gupta–Bleuler is the biquaternion norm of $\mathbb{M}_-$ that the framework already carries. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$.
+1. **The polarization space is the material sector.** The four polarization vectors of the covariant treatment are the four directions of $\mathbb{M}_-$, and the indefinite form $\zeta$ of Gupta–Bleuler, with $\zeta_0=-1$ and $\zeta_k=+1$, is the biquaternion norm $\sum_\mu Q_\mu^2$ of $\mathbb{M}_-$ that the framework already carries, its one minus being the square of the $i$ in $Q_t=ict'$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$.
 2. **Circular polarization is the algebra's complex structure acting on the propagation direction.** The two circular polarization vectors are the eigenvectors of left multiplication by $\vec u_k$ with eigenvalues $\mp i$. The **helicity operator** is $\lambda = \vec u_k\cdot\vec S = i\,\mathrm{Vect}(\vec u_k\,\cdot\,) = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the Hermitian element $i\vec u_k$ of the informational sector $\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$. Its $\pm1$ eigenvectors are exactly the two physical polarizations, and its $0$ eigenvector is the longitudinal direction $\vec u_k$, which the gauge structure removes.
 3. **The two helicities are the two halves of the field strength.** They are the self-dual and anti-self-dual parts of $\tilde{F}$, in the decomposition established in *The Field-Strength Biquaternion and Its Invariants*.
 
@@ -22,12 +22,12 @@ The negative parts are equally specific.
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the photon" is a statement about a general massless spin-one field. The algebra does not single the photon out; it describes a massless gluon in the abelian idealization, a massive Proca field if a mass is added, and any other spin-one field by the same objects.
 
 $$
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ie_t, \vec e_x, \vec e_y, \vec e_z\},
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ict'\,e_t, \vec e_x, \vec e_y, \vec e_z\},
 \qquad
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\},
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ct\,e_t, ix'\,\vec e_x, iy'\,\vec e_y, iz'\,\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The spacetime metric of the $ict'$ sector is $g_{\mu\nu}[\mathbb{M}_-]$.
+with $t',x',y',z'$ real, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=ict'$ and $Q_k=x_k$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -46,7 +46,7 @@ The dictionary that places the photon's data in the algebra is the following.
 | The field | $\tilde{F}=i\sqrt{\epsilon}\,\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
 | Free equation | $\tilde{\nabla}\tilde{F}=0$ |
 | Potential | $\tilde{A}=i\phi/c\,e_t+\vec A\in\mathbb{M}_-$ |
-| Polarization directions | the four basis directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of $\mathbb{M}_-$ |
+| Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{M}_-$, the time coefficient carrying $Q_t=ict'$ |
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\vec u_k$ |
 | Helicity states | the $\pm1$ eigenvectors $\varepsilon^{\mathrm{fop}}_\pm$ of the $\mathbb{M}_+$ element $i\vec u_k$ |
 | Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the $\mathbb{M}_+$ element $i\vec u_k$ |
@@ -63,19 +63,19 @@ $$
 A_\mu(x) = \int \frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}\Bigl(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x) + a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Bigr),
 $$
 
-with $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$ and $\zeta=(-1,+1,+1,+1)$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_k$, $\epsilon^{(3)}=\vec u_k$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
+with $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\zeta_r\delta_{rs}$ and $\zeta_0=-1$, $\zeta_k=+1$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=ict'$; the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\delta_{\mu\nu}$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_k$, $\epsilon^{(3)}=\vec u_k$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 
-The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=iq'_te_t+\vec q$ with $q'_t$ real and $\vec q$ a real pure quaternion, its biquaternion norm is
+The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=Q_te_t+\vec q$ with $Q_t=ict'$ and $\vec q$ a real pure quaternion, its biquaternion norm is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = |\vec q|^2 - (q'_t)^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = |\vec q|^2 - c^2t'^2 ,
 $$
 
-an indefinite quadratic form of signature $(-1,+1,+1,+1)$. The four basis directions are $ie_t$ (the timelike direction, matching $\epsilon^{(0)}$) and $\vec e_x,\vec e_y,\vec e_z$ (the spatial directions, matching $\epsilon^{(1)},\epsilon^{(2)},\epsilon^{(3)}$). So:
+an indefinite quadratic form whose one minus is the square of the $i$ in $Q_t=ict'$. The four directions are $e_t$ (the timelike direction, matching $\epsilon^{(0)}$, with the coefficient $Q_t=ict'$) and $\vec e_x,\vec e_y,\vec e_z$ (the spatial directions, matching $\epsilon^{(1)},\epsilon^{(2)},\epsilon^{(3)}$). So:
 
-> **The polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the biquaternion norm of $\mathbb{M}_-$.**
+> **The polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\zeta$, with $\zeta_0=-1$ and $\zeta_k=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=ict'$.**
 
-This is the precise sense in which the polarization space is native. The framework does not merely "also have" an indefinite four-dimensional space; it is the same space, with the same metric, that appears in the Gupta–Bleuler expansion.
+This is the precise sense in which the polarization space is native. The framework does not merely "also have" an indefinite four-dimensional space; it is the same space, with the same indefinite form, that appears in the Gupta–Bleuler expansion.
 
 The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_k$ be the unit vector along $\vec k$, and let $\varepsilon^{\mathrm{fop}}_1,\varepsilon^{\mathrm{fop}}_2$ be a right-handed orthonormal pair with $(\varepsilon^{\mathrm{fop}}_1,\varepsilon^{\mathrm{fop}}_2,\vec u_k)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_k$ inside the vector part of $\mathbb{M}_-$, whose projector is
 
@@ -187,13 +187,13 @@ A third imported ingredient is the operator-valued character of the field. The p
 | Feature of the photon | Status in the framework | Where it comes from |
 |---|---|---|
 | The transverse polarization plane (the space of the two physical polarizations) | Derived | the $\vec u_k$-orthogonal plane in the vector part of $\mathbb{M}_-$ |
-| Polarization space and its indefinite metric | Derived | $\mathbb{M}_-$ and its biquaternion norm; $\zeta=(-1,+1,+1,+1)$ |
+| Polarization space and its indefinite form | Derived | $\mathbb{M}_-$ and its biquaternion norm, $\zeta_0=-1$ and $\zeta_k=+1$ |
 | Circular polarizations as $\pm i$ eigenstates | Derived | left multiplication by $\vec u_k$; $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ |
 | Helicity operator $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, spectral values $\{+1,0,-1\}$ | Derived | adjoint action on imaginary quaternions; representative $i\vec u_k\in\mathbb{M}_+$; $i$ as sector exchange |
 | Two helicities = self-dual/anti-self-dual halves | Derived (from the field-strength article) | $\vec B=\vec u_k\times\vec E$; $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm=\mp i\varepsilon^{\mathrm{fop}}_\pm$ |
 | Transverse polarization sum $\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$ | Derived | orthogonality in the material sector |
 | Mode expansion, commutators, Fock space | Transcribed | standard canonical quantization on a module |
-| Indefinite metric sign $\zeta_0=-1$ | Derived | the signature of the biquaternion norm of $\mathbb{M}_-$ |
+| Indefinite-form sign $\zeta_0=-1$ | Derived | the square of the $i$ in $Q_t=ict'$ |
 | Subsidiary condition, physical-subspace quotient | Imported | Gupta–Bleuler; no algebraic principle selects it |
 | Photon ladder and number operator | Not available | no bosonic mode in $\mathbb{B}$ |
 | Masslessness $m=0$ | Represented | an input; the Proca alternative is equally writable |
@@ -206,7 +206,7 @@ A third imported ingredient is the operator-valued character of the field. The p
 
 Two rows of the table are short statements of one division, and the division is worth one sentence. The
 algebra **owns** the transverse polarization plane, the two-dimensional space in the vector part of
-$\mathbb{M}_-$ orthogonal to $\vec u_k$, together with its indefinite metric; the algebra does
+$\mathbb{M}_-$ orthogonal to $\vec u_k$, together with its indefinite form; the algebra does
 **not own** the reduction that selects that plane out of the four polarization directions. The plane is
 *Derived*, and the reduction is *Imported*, the subsidiary condition of the gauge row. The same division, an
 object the algebra owns against a value it only represents, is the whole content of *The Null
@@ -229,7 +229,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Boundaries
 
-- **The subject is the photon as a quantum field.** This article owns the polarisation space and its indefinite metric, circular polarisation as the algebra's complex structure, the helicity operator, the self-dual split of the field strength, the absence of a bosonic ladder in $\mathbb{B}$, the gauge gap, and the accounting of the photon's derived, represented and outside features.
+- **The subject is the photon as a quantum field.** This article owns the polarisation space and its indefinite form, circular polarisation as the algebra's complex structure, the helicity operator, the self-dual split of the field strength, the absence of a bosonic ladder in $\mathbb{B}$, the gauge gap, and the accounting of the photon's derived, represented and outside features.
 - **The null four-momentum is *The Null Four-Momentum: What the Cone Derives and What It Does Not*'s to define.** The mass shell as a norm condition, mass as the value of the invariant, the absence of a rest frame, the frame-independence of $c$, the scale-invariance argument and the verdict that the cone marks but does not choose masslessness are stated there, and this article states them as far as its masslessness row needs them; the owner is a pointer and not a prohibition on restating.
 - **The cone across the products is *The Zero-Divisor Cone and the Massless Spectrum*'s to define.** The cone's two jobs in the two bands, the rank of the left multiplication across the twelve rows, the nilpotent index and the roster of massless particles are stated there, and this article quotes them where it needs them.
 - **The classical and mode-level objects are elsewhere.** The field-strength biquaternion and its invariants are *The Field-Strength Biquaternion and Its Invariants*; the Maxwell equation and the potential are *Maxwell's Equations in the Biquaternionic Formulation*; the mode expansion, the commutators and the Fock space are *Canonical Quantization of the Biquaternion Maxwell Field* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
@@ -237,7 +237,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Summary
 
-The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^2-(q'_t)^2$ of that sector. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon^{\mathrm{fop}(r)}_i\varepsilon^{\mathrm{fop}(r)}_j=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
+The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\zeta$, with $\zeta_0=-1$ and $\zeta_k=+1$, is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=|\vec q|^2-c^2t'^2$ of that sector, its one minus the square of the $i$ in $Q_t=ict'$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon^{\mathrm{fop}(r)}_i\varepsilon^{\mathrm{fop}(r)}_j=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
 
 Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\varepsilon^{\mathrm{fop}}_\pm=\tfrac{1}{\sqrt2}(\varepsilon^{\mathrm{fop}}_1\pm i\varepsilon^{\mathrm{fop}}_2)$ are the eigenvectors of left multiplication by $\vec u_k$, with $\vec u_k\varepsilon^{\mathrm{fop}}_\pm=\mp i\varepsilon^{\mathrm{fop}}_\pm$. The helicity operator is $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}=i\,\mathrm{Vect}(\vec u_k\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\vec u_k$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\vec E+ic\vec B$ or on $\vec E-ic\vec B$, never both.
 
@@ -250,8 +250,8 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| $\mathbb{M}_-$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{ict'\,e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{ct\,e_t,ix'\,\vec e_x,iy'\,\vec e_y,iz'\,\vec e_z\}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
@@ -260,7 +260,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
 | $\vec u_k$ | Unit propagation direction (pure real quaternion) |
 | $\varepsilon^{\mathrm{fop}}_1,\varepsilon^{\mathrm{fop}}_2$; $\varepsilon^{\mathrm{fop}}_\pm$ | Linear and circular polarization vectors |
-| $\zeta=(-1,+1,+1,+1)$ | Indefinite metric of Gupta–Bleuler; biquaternion norm of $\mathbb{M}_-$ |
+| $\zeta_0=-1$, $\zeta_k=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=ict'$ |
 | $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ | Helicity operator; representative $i\vec u_k\in\mathbb{M}_+$ |
 | $\vec S$ (in $\tilde W=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
 | $\vec S$ (in $\lambda=\vec u_k\cdot\vec S$) | Spin vector (angular-momentum article) |

@@ -92,7 +92,7 @@ The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with invers
 $$
 \sum_\mu\exp(a){}_\mu e_{b\mu} = \delta_{ab},\qquad \sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu},
 $$
-and it builds the metric as $g_{\mu\nu} = \sum_{a,b}g_{ab}[\mathbb{M}_-]\,\exp(a){}_\mu \exp(b){}_\nu$, with $g_{\mu\nu}[\mathbb{M}_-]$. The frame pair of a frame-indexed object is lowered with $g_{ab}[\mathbb{M}_-]$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the **tetrad postulate**,
+and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\delta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$, which is the unit metric $\delta_{\mu\nu}$ for the identity tetrad. The frame pair of a frame-indexed object is lowered with $\varepsilon_a$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the **tetrad postulate**,
 
 $$
 \nabla_\mu \exp(a){}_\nu = \partial/\partial x_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
@@ -118,11 +118,11 @@ $$
 $$
 and the orthonormality relation it rests on is
 $$
-\sum_\lambda E_{a\lambda}\, e_{b\lambda} = g_{ab}[\mathbb{M}_-],
+\sum_\lambda E_{a\lambda}\, e_{b\lambda} = \varepsilon_a\delta_{ab},
 $$
-in which the lowering matters: without the factor $\varepsilon_a$ the same sum is $\delta_{ab}$, and it is the two signs of $\eta$ that the antisymmetry statement is about.
+in which the lowering matters: without the factor $\varepsilon_a$ the same sum is $\delta_{ab}$, and it is the two signs of the weight that the antisymmetry statement is about.
 
-The sum $\omega_{ab\mu}+\omega_{ba\mu}$ is the frame-space carrier of the non-metricity, and it vanishes exactly when $\nabla_\mu g_{\nu\rho}$ does: the lowered array is antisymmetric in the frame pair exactly when the lowered contorsion is antisymmetric in the first and third world slots, which is the condition of the contorsion section. What does *not* follow outside that sector is the further step to total antisymmetry, and the Weitzenböck connection of *Teleparallel Geometry* is the case that shows it: the array vanishes there while the torsion is not totally antisymmetric. What it is *not* is the plain frame image of $\nabla_\mu g_{\nu\rho}$, $\sum_{\nu,\rho}\exp(a){}_\nu\exp(b){}_\rho\nabla_\mu g_{\nu\rho}$: that equality holds only in the metric-compatible case, where both sides vanish, and it fails as soon as a contorsion with a non-antisymmetric part is present, because the frame image carries metric factors that the frame metric does not. The implication is the one that is used, and it was checked on sixteen contorsions: the Levi-Civita one, seven metric-compatible ones built from axial and from general torsions, four confined to the sector and four with no symmetry at all. The sum vanished in exactly the eight metric-compatible cases and in none of the others — including the metric-compatible ones whose contorsion is *not* antisymmetric in its last pair, which is why the equivalence is with antisymmetry in the first and third slots and not with total antisymmetry. The tetrad used for the check is deliberately not symmetric, so that no index convention is degenerate. That antisymmetrised part $\tfrac12(\omega_{ab\mu}-\omega_{ba\mu})$ is the one place the torsion enters the matter equation, and it is why a contorsion with a non-antisymmetric part carries a piece, the symmetric part, that no field couples to.
+The sum $\omega_{ab\mu}+\omega_{ba\mu}$ is the frame-space carrier of the non-metricity, and it vanishes exactly when $\nabla_\mu g_{\nu\rho}$ does: the lowered array is antisymmetric in the frame pair exactly when the lowered contorsion is antisymmetric in the first and third world slots, which is the condition of the contorsion section. What does *not* follow outside that sector is the further step to total antisymmetry, and the Weitzenböck connection of *Teleparallel Geometry* is the case that shows it: the array vanishes there while the torsion is not totally antisymmetric. What it is *not* is the plain frame image of $\nabla_\mu g_{\nu\rho}$, $\sum_{\nu,\rho}\exp(a){}_\nu\exp(b){}_\rho\nabla_\mu g_{\nu\rho}$: that equality holds only in the metric-compatible case, where both sides vanish, and it fails as soon as a contorsion with a non-antisymmetric part is present, because the frame image carries weight factors that the interval does not. The implication is the one that is used, and it was checked on sixteen contorsions: the Levi-Civita one, seven metric-compatible ones built from axial and from general torsions, four confined to the sector and four with no symmetry at all. The sum vanished in exactly the eight metric-compatible cases and in none of the others — including the metric-compatible ones whose contorsion is *not* antisymmetric in its last pair, which is why the equivalence is with antisymmetry in the first and third slots and not with total antisymmetry. The tetrad used for the check is deliberately not symmetric, so that no index convention is degenerate. That antisymmetrised part $\tfrac12(\omega_{ab\mu}-\omega_{ba\mu})$ is the one place the torsion enters the matter equation, and it is why a contorsion with a non-antisymmetric part carries a piece, the symmetric part, that no field couples to.
 
 Every check in this section was made in four dimensions, in exact rational arithmetic, on a tetrad of the form $\exp(a){}_\mu = \delta_{a\mu} + x_0M_{a\mu}$, with $x_0$ the time coordinate and $M$ the constant matrix whose only nonzero entries are $M_{01}=M_{10}=M_{12}=M_{13}=M_{21}=M_{23}=M_{32}=1$, evaluated at $x_0=\tfrac12$. The matrix is deliberately not symmetric in its $1$–$3$ entries, so that no check below can pass by mistaking a frame index for a world index.
 
@@ -251,7 +251,7 @@ The two open items this article was written against stand as follows. The first 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. With $L_a$ and $R_b$ the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, they are
 $$
@@ -315,7 +315,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\exp(a){}_\mu$, $e_{a\mu}$ | tetrad and its inverse |
 | $E_{a\mu}=\varepsilon_a\exp(a){}_\mu$ | tetrad with its frame slot lowered, the object whose affine derivative gives the spin connection |
 | $\mathrm{D}_\mu$ | affine covariant derivative, acting on the world label only |
-| $g_{\mu\nu} = g_{ab}[\mathbb{M}_-]\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad, $g_{\mu\nu}[\mathbb{M}_-]$ |
+| $g_{\mu\nu} = \delta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad; the unit metric $\delta_{\mu\nu}$ for the identity tetrad |
 | $\omega^{a}{}_{b\mu}$ | spin connection one-form as solved, with the first frame slot raised |
 | $\omega_{ab\mu}=\varepsilon_a\omega^{a}{}_{b\mu}$ | the same array with the first frame slot lowered; antisymmetric in the frame pair exactly in the metric-compatible case |
 | $\omega_{ab\mu}(e)$ | its Levi-Civita part |

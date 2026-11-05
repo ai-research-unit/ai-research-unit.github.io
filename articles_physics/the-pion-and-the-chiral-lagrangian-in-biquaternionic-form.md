@@ -331,7 +331,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -349,7 +349,7 @@ $$
 
 The four frame cells multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\chi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\chi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth cell is the volume cell of the body, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$; the fifth is not of that form, being the volume cell itself, $\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{pau}}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's metric, $\{\beta_a,\beta_b\}=2g_{ab}[\mathbb{M}_-]I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ a central root of $-e_t$, so $\chi_{\mathrm{ad}}^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$; the fifth is not of that form, being the volume cell itself, $\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{pau}}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ a central root of $-e_t$, so $\chi_{\mathrm{ad}}^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -440,7 +440,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the same metric |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_k)=\tfrac12\delta_{jk}$ (§*Norm and Pairing Conventions*) |
 | $j,k,l$ | Triplet indices, written low; every contraction over them is an explicit sum |
 

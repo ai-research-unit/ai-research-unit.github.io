@@ -124,7 +124,7 @@ Four limits must be stated. First, the type table of this article is the **commu
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are the generators $\gamma_k=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
 

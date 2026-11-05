@@ -35,15 +35,19 @@ $$
 \tilde R_{\mathbb H}=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
 $$
 
-and the gradient becomes the **Euclidean gradient**
+and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=ict'$ becomes $Q_t=c\tau$, and the four terms of
 
 $$
-\tilde{\nabla}_E=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3,
-\qquad
-\Box_E=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2,
+\tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3
 $$
 
-with $x_4=c\tau$ and the four real coordinates $(x_4,x_1,x_2,x_3)$. The operator $\Box_E$ is elliptic. This is the setting for **instantons**. The identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$ under the rotation is the subject of the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
+are each the derivative with respect to the same coordinate under the same name, the list now $(x_4,x_1,x_2,x_3)$ real. What the rotation changes is the sign of the time term alone: $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$ on the material sector and $+\partial^2/\partial x_4^2$ on the real slice, so that
+
+$$
+\Box=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2
+$$
+
+on that slice, elliptic where it was hyperbolic. This is the setting for **instantons**. The identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$ under the rotation is the subject of the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
 
 The signature enters the solution theory through the **Hodge star on two-forms**. On the six-dimensional space of two-forms $\star$ is an involution up to a sign,
 
@@ -365,10 +369,8 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{M}_+$ | Informational sector, Hermitian, signature $(1,3)$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, the Euclidean slice |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\tilde{\nabla}_E$ | Euclidean gradient on the rotated slice |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Lorentzian d'Alembertian, hyperbolic |
-| $\Box_E$ | Euclidean Laplacian, elliptic |
+| $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=ict'$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |

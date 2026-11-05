@@ -10,7 +10,7 @@ The join matters for a reason internal to the corpus. The programme's thesis is 
 
 The recomputations are these: the closure of $C$, both invariants, the duality relation together with the constant-field counterexample that separates it from nullness, the annihilation of $C$ by its two null directions, the components in a spherical frame, the principal direction of the real part, the Poynting vector, the nullness of the real part and the expansion of the radial congruence. Bateman's representation and the Mariot–Robinson theorem are quoted and not re-derived: the proof needs the spin-coefficient propagation equations, which the corpus does not carry, and its reference is given in *Further Reading*.
 
-The conventions are those of the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central $i$ with $i^2=-1$; the field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$; the two invariants are $I_1=\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $I_2=\vec E\cdot\vec B$. Throughout this article the vacuum is used in Heaviside–Lorentz units, $\epsilon=\mu=1$ and $c=1$, and the coordinates are $(t',x,y,z)$ with the material time $t'$ and the interval $-\Delta t'^2+\Delta x^2+\Delta y^2+\Delta z^2$, that is $g=(-1,1,1,1)$; the setting of the constants to one is local to this article, and so is the overall sign of the metric, which enters only through the signs written out in $\star$. A two-form $C$ on the real coordinates $(x_0,x_1,x_2,x_3)=(t',x,y,z)$ carries the parts
+The conventions are those of the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central $i$ with $i^2=-1$; the field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$; the two invariants are $I_1=\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $I_2=\vec E\cdot\vec B$. Throughout this article the vacuum is used in Heaviside–Lorentz units, $\epsilon=\mu=1$ and $c=1$, and the coordinates are $(t',x,y,z)$ with the material time $t'$ and the interval $-\Delta t'^2+\Delta x^2+\Delta y^2+\Delta z^2$, whose one minus is the square of the $i$ in $Q_t=it'$; the setting of the constants to one is local to this article, and that minus enters only through the signs written out in $\star$. A two-form $C$ on the real coordinates $(x_0,x_1,x_2,x_3)=(t',x,y,z)$ carries the parts
 
 $$
 E_k=-C_{0k},\qquad B_k=\tfrac12\sum_{j,l}\varepsilon_{jkl}C_{jl},
@@ -50,13 +50,13 @@ is the whole of its content. Those are the relations the programme records when 
 
 ## Bateman's Two Eikonal Functions
 
-Let $\alpha$ and $\beta$ be two complex functions on spacetime, each a solution of the eikonal equation, and mutually orthogonal in the complexified metric,
+Let $\alpha$ and $\beta$ be two complex functions on spacetime, each a solution of the eikonal equation, and mutually orthogonal in the complexified unit metric,
 
 $$
 \partial\alpha\cdot\partial\alpha=0,\qquad \partial\beta\cdot\partial\beta=0,\qquad \partial\alpha\cdot\partial\beta=0,
 $$
 
-where the product is the Minkowski one, $\partial\alpha\cdot\partial\beta=-\partial\alpha/\partial t'\,\partial\beta/\partial t'+\sum_k\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$. The **Bateman field** is the exterior product of the two gradients,
+where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial_{Q_\mu}\alpha\,\partial_{Q_\mu}\beta$, that is $-\partial\alpha/\partial t'\,\partial\beta/\partial t'+\sum_k\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$, the minus being the square of the $i$ in $Q_t=it'$. The **Bateman field** is the exterior product of the two gradients,
 
 $$
 C=d\alpha\wedge d\beta,\qquad C_{\mu\nu}=\frac{\partial\alpha}{\partial x_\mu}\frac{\partial\beta}{\partial x_\nu}-\frac{\partial\alpha}{\partial x_\nu}\frac{\partial\beta}{\partial x_\mu}.
@@ -72,7 +72,7 @@ Three properties follow, and all three are exact statements about the algebra, n
 
 ## The Principal Null Direction
 
-A null two-form is **decomposable**: it is the exterior product of two one-forms, and its contraction with either of them vanishes. For the Bateman field this is immediate. With $k_\alpha$ and $k_\beta$ the two null vectors obtained from the gradients by raising the index,
+A null two-form is **decomposable**: it is the exterior product of two one-forms, and its contraction with either of them vanishes. For the Bateman field this is immediate. With $k_\alpha$ and $k_\beta$ the two null vectors dual to the gradients,
 
 $$
 \sum_\nu C_{\mu\nu}\,k_\alpha^{\ \nu}=0,\qquad \sum_\nu C_{\mu\nu}\,k_\beta^{\ \nu}=0,
@@ -80,7 +80,7 @@ $$
 
 for every $\mu$, as one line of algebra shows: each term contains either $k_\alpha\cdot k_\alpha$, $k_\beta\cdot k_\beta$ or $k_\alpha\cdot k_\beta$, and the three vanish. The two vectors are the **legs** of $C$, and a two-form with two legs is said to be simple or decomposable.
 
-**What the annihilator is, and what "principal" means.** The vectors annihilated by $C$ form the two-plane spanned by the two legs. For a real null field that plane carries one real null vector and one real spacelike vector orthogonal to it, and no second null direction: two real null vectors that are orthogonal in a Lorentzian metric are proportional, so a real two-plane of this type cannot carry two of them. Only one direction in it is null, and that direction is the **principal null direction** of the field, defined up to a scalar. The field is transverse to it: the electric and magnetic vectors span a spacelike two-plane orthogonal to it, and the contraction of the field with it vanishes. This is the object to which the Mariot–Robinson theorem applies.
+**What the annihilator is, and what "principal" means.** The vectors annihilated by $C$ form the two-plane spanned by the two legs. For a real null field that plane carries one real null vector and one real spacelike vector orthogonal to it, and no second null direction: two real null vectors that are orthogonal in the interval are proportional, so a real two-plane of this type cannot carry two of them. Only one direction in it is null, and that direction is the **principal null direction** of the field, defined up to a scalar. The field is transverse to it: the electric and magnetic vectors span a spacelike two-plane orthogonal to it, and the contraction of the field with it vanishes. This is the object to which the Mariot–Robinson theorem applies.
 
 **In the complex case the two legs are distinct and both are null**, and the statement is weaker: the annihilator is two-dimensional over $\mathbb{C}$, and every vector in it is null in the complexified sense, because a combination $\mu k_\alpha+\nu k_\beta$ has norm $2\mu\nu\,k_\alpha\cdot k_\beta=0$. No direction is therefore singled out by the algebra, and which leg is called the principal direction is a choice.
 
@@ -120,7 +120,7 @@ $$
 dG=\lambda\,(\hat\theta+i\hat\phi),\qquad \lambda=\frac{e^{i\phi}}{2r\cos^2(\theta/2)},\qquad d\beta=\hat t+\hat r .
 $$
 
-$dG$ is null because $\hat\theta$ and $\hat\phi$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\hat t$ and $\hat r$ are unit and of opposite metric sign; and the two are orthogonal because $dG$ has no $t'$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $t'+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
+$dG$ is null because $\hat\theta$ and $\hat\phi$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\hat t$ and $\hat r$ are unit and of opposite sign in the interval; and the two are orthogonal because $dG$ has no $t'$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $t'+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
 
 $$
 C_{\hat t\hat r}=0,\qquad C_{\hat\theta\hat\phi}=0,\qquad C_{\hat t\hat\theta}=C_{\hat r\hat\theta}=-\lambda,\qquad C_{\hat t\hat\phi}=C_{\hat r\hat\phi}=-i\lambda,

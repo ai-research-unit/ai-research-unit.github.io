@@ -18,7 +18,7 @@ $$
 ds^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2.
 $$
 
-The minus sign sits explicitly in the metric, encoded in $g_{\mu\nu}[\mathbb{M}_-]$. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.
+The minus sign sits explicitly in the metric. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.
 
 But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:
 
@@ -55,7 +55,7 @@ $$
 becomes, with $Q_t = ic_0 t'$,
 
 $$
-\boxed{\;\Box = \frac{\partial^2}{\partial Q_t^2} + \nabla^2\;},
+\boxed{\;\Box = \sum_\mu\partial^2_{Q_\mu}\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.

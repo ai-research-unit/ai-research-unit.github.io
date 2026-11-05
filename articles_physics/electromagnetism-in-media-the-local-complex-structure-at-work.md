@@ -880,7 +880,7 @@ The third case is realized by the non-commutative vacuum of *Maxwell's Theory on
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 Every two-sided action in this article has been written out as a product, $a\,\psi\,b$, with the side carried by position. The fermion articles of the corpus write the same operators as products of Dirac gammas. The two descriptions are related by a fixed dictionary and not by a change of algebra, and this section states the dictionary once so that a reader can move between them. Afterwards it is dropped: outside this section the article contains no gamma.
 

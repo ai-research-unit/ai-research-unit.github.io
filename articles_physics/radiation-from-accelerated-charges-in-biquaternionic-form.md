@@ -387,10 +387,10 @@ with the retarded-time derivative convention fixed above. This is the relativist
 
 $$
 \boxed{\;P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\frac{du_\mu}{d\tau}\frac{du_\nu}{d\tau}\right)\;}
+= \frac{ϙ^2}{6\pi\epsilon c^3}\sum_\mu\left(\frac{du_\mu}{d\tau}\right)^2\;}
 $$
 
-where the second expression writes the contraction out with the frame metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,1,1,1)$, used throughout this article for every contraction of four-vectors. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.
+where the second expression writes the contraction out in the components of the four-velocity, $u_t=ic\gamma$ and $u_k=\gamma v_k$. The time entry carries the $i$, and its square is the one minus. This is the **relativistic Larmor formula**, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the **biquaternion norm of the four-acceleration biquaternion**. The biquaternion norm is non-negative here because the four-acceleration is spacelike, and it vanishes precisely for unaccelerated motion, as it must.
 
 For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With the derivative taken this time with respect to $t'$ (not $t'_r$),
 
@@ -463,23 +463,23 @@ A charge that radiates loses energy and momentum, and the loss must appear as a 
 
 $$
 m\frac{du_\mu}{d\tau} = f_{\text{ext}\,\mu}
-+ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right).
++ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} - \frac{u_\mu}{c^2}\sum_\nu\left(\frac{du_\nu}{d\tau}\right)^2\right).
 $$
 
 The bracketed term is the radiation-reaction four-force. In tensor form it reads
 
 $$
 K_{\mathrm{rad}\,\mu}
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right),
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} - \frac{u_\mu}{c^2}\sum_\nu\left(\frac{du_\nu}{d\tau}\right)^2\right),
 $$
 
 the radiation-reaction counterpart of the electromagnetic four-force $K_\mu$ of *The Lorentz Force in Biquaternion Form*. Its defining property is that it is **orthogonal to the worldline**:
 
 $$
-\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]K_{\mathrm{rad}\,\mu}u_\nu = 0 .
+\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0 .
 $$
 
-This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]u_\mu u_\nu = c^2$ being constant, which gives $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]u_\mu\,d^2u_\nu/d\tau^2 = -\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}$.
+This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\sum_\mu u_\mu^2 = -c^2$ being constant, which gives $\sum_\mu u_\mu\,d^2u_\mu/d\tau^2 = -\sum_\mu\left(du_\mu/d\tau\right)^2$.
 
 Two caveats should be stated plainly. First, the framework does not resolve the well-known pathologies of the equation — the runaway solutions and the pre-acceleration that follow from treating the self-force as a local differential expression. Second, the equation above is the standard result, not a derivation of the self-force from the biquaternion framework, and the point-charge self-energy divergence is untouched by the change of language. The radiation-reaction problem is thus **represented** cleanly in the framework, but it is not solved by it. A rigorous derivation from Maxwell's theory does exist, however, and it is the subject of the next paragraph.
 
@@ -585,7 +585,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\theta, \phi$ | Polar angle from $\vec\beta$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |
 | $ϙ, m$ | Charge and mass of the radiating particle |
-| $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]K_{\mathrm{rad}\,\mu}u_\nu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |
+| $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |
 | $P(\Sigma)$, $\mathcal{Q}$ | Radiated energy–momentum rate and self-interaction force (Gsponer), $\left(dP/dt'_r\right)(\Sigma) = -\mathcal{Q}$ |
 | $C^{[0]}, C^{[1]}$ | Colombeau moments of the mollifier; the worldline condition fixes $C^{[1]} = 1$ |
 

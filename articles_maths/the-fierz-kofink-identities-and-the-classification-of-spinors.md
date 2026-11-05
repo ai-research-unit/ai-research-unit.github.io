@@ -17,7 +17,7 @@ iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y},\qquad
 iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y},\qquad -iL_{e_t}R_{\vec e_z},
 $$
 
-satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of $g_{\mu\nu}[\mathbb{M}_-]$. In the **Dirac basis** of the module, the basis in which the timelike cell is diagonal, the five cells read
+satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of the material interval, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. In the **Dirac basis** of the module, the basis in which the timelike cell is diagonal, the five cells read
 
 $$
 iR_{\vec e_x}=\begin{pmatrix} I_2 & 0 \\ 0 & -I_2 \end{pmatrix},\qquad
@@ -48,7 +48,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 
 ## The Fierz–Kofink Identities
 
-**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
+**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu$, the sum taken over the $Q$ coordinate, so that the temporal coefficient is $iJ_0$, and similarly for $K$ and $J\cdot K$,
 
 $$
 \boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
@@ -56,7 +56,7 @@ $$
 
 *Proof.* The identity expresses two facts at once: the square of the vector $J$ equals the sum of the squares of the two scalars, and the square of the axial vector is non-positive (or zero) exactly when the square of the vector is non-negative, the two squares being opposite.
 
-**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}S^{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$ and the metric of the corpus, $g_{\mu\nu}[\mathbb{M}_-]$. Then
+**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}S^{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$, every index low, so that no metric enters. Then
 
 $$
 \boxed{\; J_\mu K_\nu-J_\nu K_\mu=\omega\,S_{\mu\nu}+\sigma\,\tilde S_{\mu\nu} \;}.
@@ -161,7 +161,7 @@ $$
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -208,7 +208,7 @@ A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudosca
 
 | Symbol | Meaning |
 |---|---|
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of $g_{\mu\nu}[\mathbb{M}_-]$ |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of the material interval |
 | $-iL_{e_t}R_{\vec e_z}$ | The chirality cell (pseudoscalar) |
 | $\psi^{\dagger}\,iR_{\vec e_x}$ | Dirac adjoint |
 | $\sigma=\psi^{\dagger}\,iR_{\vec e_x}\psi$, $\omega=i\psi^{\dagger}\,iR_{\vec e_x}\,-iR_{\vec e_z}\psi$ | Scalar and pseudoscalar densities |

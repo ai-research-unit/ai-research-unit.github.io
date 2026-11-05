@@ -70,15 +70,15 @@ $$
 
 and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_k^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
 
-**The operator.** With $x_0=t'$ and $x_k$ the three spatial coordinates,
+**The operator.** With $x_0=t'$ and $x_k$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_k=x_k$ the material reading of the four coordinates,
 
 $$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
 \varepsilon=(1,-1,-1,-1),\qquad
-D^{2}=-\frac{\partial^{2}}{\partial {t'}^{2}}+\Delta=\Box .
+D^{2}=\Box=\sum_\mu\frac{\partial^{2}}{\partial Q_\mu^{2}}=-\frac{\partial^{2}}{\partial {t'}^{2}}+\Delta .
 $$
 
-The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
+The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=ix_0$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
 
 **The conjugation.** The charge conjugation of this article is
 
@@ -253,7 +253,7 @@ and it is the algebra's own, the anti-Hermitian part carrying the four-vectors a
 
 **The physical test, and the answer.** The test is the one a physicist would apply: impose the condition, evolve, and see whether the condition survives. The previous section performed it, and the answer is that the condition survives because $\mathcal{C}$ commutes with the operator. A sector, by contrast, is not preserved by the operator at all, so a constraint of the form "the field lies in $\mathbb{M}_-$" cannot be propagated. It would be violated by the first time step. The sector split therefore **obstructs** the reality condition rather than supplying it, and it cannot be used as it stands.
 
-**What survives of the split.** The split is not idle: it is the decomposition that fixes the metric, the signature and the two kinds of physical quantity, and the material sector is where the four-vectors live. What it does not do is supply the charge conjugation. The two decompositions, by $\chi$ and by ${}^{*}$, are different decompositions of one algebra, and an argument that needs one of them cannot borrow the other's dimension.
+**What survives of the split.** The split is not idle: it is the decomposition that separates the two kinds of physical quantity, and the material sector is where the four-vectors live. What it does not do is supply the charge conjugation. The two decompositions, by $\chi$ and by ${}^{*}$, are different decompositions of one algebra, and an argument that needs one of them cannot borrow the other's dimension.
 
 ## The Neutrino: What the Framework Does and Does Not Derive
 
@@ -314,7 +314,7 @@ The framework transcribes both facts, and neither is a derivation.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In cells they are
 
@@ -382,8 +382,8 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{M}_-$ |
 | $c_0:\Psi\mapsto\Psi\vec e_x$; $c_k:\Psi\mapsto\vec e_k\Psi\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
 | $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
-| $\Box=-\partial^2/\partial {t'}^2+\Delta$ | d'Alembertian of the frame; $\Delta$ is the spatial Laplacian |
-| $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame, with $g=\mathrm{diag}(-,+,+,+)$ |
+| $\Box=\sum_\mu\partial^2/\partial Q_\mu^2=-\partial^2/\partial {t'}^2+\Delta$ | d'Alembertian; $\Delta$ is the spatial Laplacian |
+| $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\Psi\mapsto i\bar\Psi$ | Charge conjugation; $\mathcal{C}^2=1$, $\chi\mathcal{C}=-\mathcal{C}\chi$, $\mathcal{C}D=D\mathcal{C}$ |
 | $\Psi^{c}=\mathcal{C}\Psi$ | Charge conjugate; $\Psi^{c}=\Psi$ defines Majorana |
 | $\Psi=i\bar\Psi$ | Majorana condition; equivalent to $\Psi_L=i\overline{\Psi_R}$ |

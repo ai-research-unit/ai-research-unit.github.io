@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=ct+ict'$ and $Q_k=x_k+ix'_k$. The reading used below is the material one, $Q_t=ict'$ and $Q_k=x_k$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2_{Q_\mu}$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -21,13 +21,13 @@ The article is organized as follows. The linearized field and its gauge symmetry
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field and the subsidiary condition that the graviton's covariant quantization parallels.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the bosonic statistics of integer-spin fields.
-- Companion article *The Dirac Equation in Biquaternionic Form*, for the frame metric $g_{\mu\nu}[\mathbb{M}_-]$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
+- Companion article *The Dirac Equation in Biquaternionic Form*, for the unit metric $\delta_{\mu\nu}$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
 
 ## The Linearized Field and Its Gauge Symmetry
 
 ### The Field and the Quadratic Action
 
-The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+h_{\mu\nu}$, the action is
+The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, the action is
 
 $$
 S = \frac12\int d^4x\left(\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\nu\rho}\partial/\partial Q_\mu h_{\nu\rho}
@@ -36,11 +36,11 @@ S = \frac12\int d^4x\left(\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\nu\rho}
 -\sum_\mu\partial/\partial Q_\mu h\,\partial/\partial Q_\mu h\right),
 $$
 
-with $h=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
+with $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
 
 $$
 \Box h_{\mu\nu}-2\sum_\rho\partial/\partial Q_{(\mu}\,\partial/\partial Q_\rho h_{\nu)\rho}+\partial/\partial Q_\mu\,\partial/\partial Q_\nu h
--g_{\mu\nu}[\mathbb{M}_-]\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial Q_\rho\partial Q_\sigma h_{\rho\sigma}\right)
+-\delta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial Q_\rho\partial Q_\sigma h_{\rho\sigma}\right)
 = -\kappa^2\,T_{\mu\nu} .
 $$
 
@@ -61,7 +61,7 @@ $$
 -\partial/\partial Q_\nu\,\partial/\partial Q_\sigma h_{\mu\rho}-\partial/\partial Q_\mu\,\partial/\partial Q_\rho h_{\nu\sigma}\right),
 $$
 
-which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12g_{\mu\nu}[\mathbb{M}_-]h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
+which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
 ### The Gauge Symmetry as Coordinate Freedom
 
@@ -185,11 +185,11 @@ The quantization therefore proceeds as for any first-class system. One introduce
 In the de Donder gauge the quadratic form is inverted by the graviton propagator, whose numerator is the standard de Donder structure
 
 $$
-\mathcal{P}_{\mu\nu,\rho\sigma} = \tfrac12\left(g_{\mu\rho}[\mathbb{M}_-]g_{\nu\sigma}[\mathbb{M}_-]+g_{\mu\sigma}[\mathbb{M}_-]g_{\nu\rho}[\mathbb{M}_-]\right)
--\frac{1}{D-2}g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-] ,
+\mathcal{P}_{\mu\nu,\rho\sigma} = \tfrac12\left(\delta_{\mu\rho}\delta_{\nu\sigma}+\delta_{\mu\sigma}\delta_{\nu\rho}\right)
+-\frac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma} ,
 $$
 
-in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/p^2$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-]$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
+in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/p^2$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\delta_{\mu\nu}\delta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
 
 ### The Massive Case and the Discontinuity
 
@@ -269,8 +269,9 @@ The framework's statement about the graviton is therefore the same as its statem
 
 | Symbol | Meaning |
 |---|---|
-| $g_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+h_{\mu\nu}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
-| $h=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12g_{\mu\nu}[\mathbb{M}_-]h$ | Trace and trace-reversed field |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$ |
+| $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
+| $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ | Trace and trace-reversed field |
 | $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ | Linearized gauge symmetry |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
 | $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
@@ -281,7 +282,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |
 | $[a_r(\vec p),a_s^\dagger(\vec k)]=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Bosonic mode algebra |
-| $\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(g_{\mu\rho}[\mathbb{M}_-]g_{\nu\sigma}[\mathbb{M}_-]+g_{\mu\sigma}[\mathbb{M}_-]g_{\nu\rho}[\mathbb{M}_-])-\tfrac{1}{D-2}g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-]$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
+| $\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(\delta_{\mu\rho}\delta_{\nu\sigma}+\delta_{\mu\sigma}\delta_{\nu\rho})-\tfrac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma}$ | Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing |
 | Fierz–Pauli | Massive spin-two theory; five polarizations; vDVZ discontinuity |
 
 ## Further Reading

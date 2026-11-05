@@ -8,7 +8,7 @@ This article places that formalism in the biquaternion framework of the read-lis
 
 Three claims organise the discussion.
 
-**First, the null tetrad is algebraic and native.** The four legs are elements of $\mathbb{B}$ — $l$ and $n$ in the real material sector $\mathbb{M}_-$, with $m$ and $\bar m$ complex — and each is a zero divisor. Their inner products $l\cdot n = -1$ and $m\cdot\bar m = +1$, and their vanishing self-products, follow from the normalization of the spinor dyad and from the framework's biquaternion norm; the metric is recovered from the tetrad by the completeness relation.
+**First, the null tetrad is algebraic and native.** The four legs are elements of $\mathbb{B}$ — $l$ and $n$ in the real material sector $\mathbb{M}_-$, with $m$ and $\bar m$ complex — and each is a zero divisor. Their inner products $l\cdot n = -1$ and $m\cdot\bar m = +1$, and their vanishing self-products, follow from the normalization of the spinor dyad and from the framework's biquaternion norm; the interval is recovered from the tetrad by the completeness relation.
 
 **Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD} \in \mathrm{sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
 
@@ -122,23 +122,23 @@ $$
 
 The metric is off-diagonal because the basis is null; there is no orthonormal frame hidden in (2). The four diagonal zeros are the null conditions, and the two $\pm1$ entries are the normalizations fixed in (1) and held.
 
-## The Metric Recovered from the Tetrad
+## The Interval Recovered from the Tetrad
 
-The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the coordinate metric is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
+The tetrad is a complex basis of $\mathbb{B}$ as a four-dimensional complex vector space, and the interval is recovered from it by the completeness relation. Since the matrix $\eta$ in (5) squares to the identity, the expansion of an arbitrary element $\tilde{Q}\in\mathbb{B}$ in the tetrad is
 
 $$
 \tilde{Q} = -\langle \tilde{Q},l\rangle_{\natural}\,n - \langle \tilde{Q},n\rangle_{\natural}\,l + \langle \tilde{Q},m\rangle_{\natural}\,\bar m + \langle \tilde{Q},\bar m\rangle_{\natural}\,m ,
 \tag{6}
 $$
 
-and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the metric is
+and, writing $l_\mu,n_\mu,m_\mu,\bar m_\mu$ for the components of the legs in the orthonormal coordinate basis of the material sector, the interval's coefficients are
 
 $$
 \boxed{\;g_{\mu\nu} = -l_\mu n_\nu - n_\mu l_\nu + m_\mu\bar m_\nu + \bar m_\mu m_\nu\;}.
 \tag{7}
 $$
 
-Substituting (2), the right-hand side of (7) evaluates to $\mathrm{diag}(-1,+1,+1,+1)$: the four zero divisors reproduce the material-sector metric, with the correct signature, and no other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
+Substituting (2), the right-hand side of (7) reproduces the interval $-q_t^2+q_x^2+q_y^2+q_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=iq_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
 Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{M}_-$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 
@@ -306,7 +306,7 @@ The framework does not derive the classification, and it does not need to: the c
 
 The construction separates cleanly into what is native to $\mathbb{B}$ and what is transcribed.
 
-**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_1,\tilde\Pi_2$; the spinor dyad and its symplectic normalization; the inner products (1) and the metric (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
+**Native to the algebra.** The four null legs, as zero divisors and as rank-one matrices; the identity (4) that the tetrad is $\sqrt2\,i$ times the matrix-unit basis, with the two real null directions equal to the two primitive idempotents $\tilde\Pi_1,\tilde\Pi_2$; the spinor dyad and its symplectic normalization; the inner products (1) and the interval (7); the bivector subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ in which a connection takes its values; the spinor module $S$ and its symmetric power $\mathrm{sym}^4 S$ in which the Weyl scalars take their values; and the boost weights (12), which follow from the weights of $\mathrm{sym}^4 S$. The mapping of the null tetrad onto the zero divisors is exact, with no residual mismatch: every leg is a zero divisor, every leg is rank one, and the four together span $\mathbb{B}$. In particular, the null structure of the Newman–Penrose tetrad maps onto the framework's zero-divisor structure cleanly, and no gap is reported here.
 
 **Not native to the algebra.** Three items, in increasing order of severity. First, the **connection**: the spin coefficients exist once a metric-compatible connection is chosen, but the algebra does not select one. The parent article records the same for the frame, and it is the reason the spin coefficients are described here as components of a $\mathbb{B}$-valued 1-form rather than as objects the algebra produces. Second, the **curvature**: the Weyl tensor is a rank-four object outside $\mathbb{B}$, and the five scalars are its components in $\mathrm{sym}^4 S$. The algebra says what an element of $\mathrm{sym}^4 S$ is, but nothing in the algebra determines which element a spacetime produces. The gravity articles already record this as open, and it remains open; this article has made the statement of the gap precise by naming the object that is missing. Third, the **dynamics and the global structure**: there are no field equations here, so the algebra cannot say which Petrov types occur, and the construction is pointwise and linear, so it carries no topological or asymptotic information. The peeling behaviour of the scalars along a null direction, for instance, is a statement about a limit and lies outside the algebra.
 
@@ -314,7 +314,7 @@ The construction separates cleanly into what is native to $\mathbb{B}$ and what 
 
 ## Summary
 
-The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of $\mathrm{diag}(-1,+1,+1,+1)$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
+The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of the interval $-q_t^2+q_x^2+q_y^2+q_z^2$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
 
 The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\Psi_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\Psi_k\mapsto A^{2-k}\exp(i(2-k)\theta)\Psi_k$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
 

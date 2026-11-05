@@ -168,7 +168,8 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 
 - [Duo-Complex Numbers](duo-complex-numbers.html), for the space and the complex structure.
 - [The Realification of $\mathbb{C}^2$](the-realification-of-c2.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
-- [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-c2.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
+- [The Singular Value Decomposition of the Operators on $\mathbb{C}^2$](the-singular-value-decomposition-of-the-operators-on-c2.html), the next article, for the SVD of an operator, its weights and its comparison with the biquaternion decomposition.
+- [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-c2.html), for $V\otimes V$ and its relation to the endomorphism algebra.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix computations of the product, the trace and the determinant.
 - [The Centraliser](the-centraliser.html), for the centraliser of a single matrix and the bicommutant.

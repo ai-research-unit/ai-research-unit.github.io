@@ -98,29 +98,27 @@ At each point the local structure induces the quadratic form of the material sec
 $$
 \boxed{\;\langle d\tilde{R}\rangle_{\natural}=(ic\,dt')^2+dx^2+dy^2+dz^2=-c^2\,d{t'}^2+dx^2+dy^2+dz^2\;}.
 $$
-This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.
+This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the interval.
 
 ## The Scale $c$ and the Minkowski Metric
 
 The sentence "the complex structure produces the metric" has two parts, and it is worth separating them.
 
 1. **The signature is algebraic.** The sign of the coefficient on $d{t'}^2$ is $(i)^2$. It comes from the scalar imaginary and is the same for every value of $c$. In the metric formalism the signature is an input; here it is a consequence of the algebra.
-2. **The magnitude is local.** The coefficient is $-c^2$, with $c$ the scale of the imaginary time axis. In the coordinate basis $(\partial/\partial t',\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z)$,
+2. **The magnitude is local.** The coefficient is $-c^2$, with $c$ the scale of the imaginary time axis. The metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the interval it carries is
 $$
-g_{\mu\nu}=\mathrm{diag}\!\left(-c^2,\,1,\,1,\,1\right),
-\qquad
-ds^2=\sum_{\mu,\nu}g_{\mu\nu}\,dx_\mu dx_\nu=-c^2\,d{t'}^2+dx^2+dy^2+dz^2 .
+ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dQ_\mu dQ_\nu=(ic\,dt')^2+dx^2+dy^2+dz^2=-c^2\,d{t'}^2+dx^2+dy^2+dz^2 .
 $$
 
 So $c$ is the conversion factor that turns the statement "time is imaginary" into a statement about lengths. The phase $i$ says that the temporal direction is the imaginary one; the scale $c$ says how much imaginary time corresponds to a unit of physical time, and therefore how the temporal direction is measured against the three spatial directions. Given the phase and the scale, the metric is determined.
 
-For constant $c$ the metric is $c^2\left(-d{t'}^2+(dx^2+dy^2+dz^2)/c^2\right)$, so after the constant rescaling $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the metric is a field of local forms,
+For constant $c$ the metric is $c^2\left(-d{t'}^2+(dx^2+dy^2+dz^2)/c^2\right)$, so after the constant rescaling $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the interval is a field of local forms,
 $$
-g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\mathrm{diag}\!\left(-c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2,\,1,\,1,\,1\right),
+ds^2=(i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,dt')^2+dx^2+dy^2+dz^2 ,
 $$
 and at each point the null directions are those with $|d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'|=c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The metric is not postulated alongside the complex structure; it is read off from the phase and the local scale.
 
-Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question. Second, the field $g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the coordinate components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.
+Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question. Second, the field of local forms is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.
 
 ## Two Routes by Which $c$ Is Fixed
 
@@ -160,7 +158,7 @@ Four boundaries should be stated, so that the local claim is not read as a globa
 
 1. **No empirical content is added.** The algebraicity of the signature and the identity $c=1/\sqrt{\epsilon\mu}$ are both known. The local structure is a repackaging of them, not a new prediction, and it does not distinguish the framework from standard electromagnetism in a medium. Whether the framework has any empirical consequence remains the open question it is elsewhere in the corpus.
 2. **The scale must be real.** In a transparent frequency window $c(\omega)$ is real and the rescaling of the imaginary axis is a real one. Near an absorption line $\epsilon$ and $\mu$ become complex, so $c$ becomes complex, and the rescaling becomes a complex rotation; the scale can no longer be read as the aperture of a real null cone. This is a boundary of the structure as written, recorded in the parent article and not repaired here.
-3. **Only the pointwise Lorentz invariance survives when $c$ varies.** For constant $c$ the interval is invariant under the full Lorentz group and the invariance is global. For $c=c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, a constant Lorentz transformation mixes $t'$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and therefore does not preserve $g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$: only the pointwise invariance remains. No global Lorentz invariance of a variable metric is claimed here. This is the same local/global caution in group-theoretic form.
+3. **Only the pointwise Lorentz invariance survives when $c$ varies.** For constant $c$ the interval is invariant under the full Lorentz group and the invariance is global. For $c=c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, a constant Lorentz transformation mixes $t'$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and therefore does not preserve the interval: only the pointwise invariance remains. No global Lorentz invariance of a variable scale is claimed here. This is the same local/global caution in group-theoretic form.
 4. **Curved spacetime is a further step.** The structure described here is a tangent-space statement at a point. Its extension to a curved manifold requires a tetrad or spin connection, and it is treated separately in the corpus; nothing in the present article assumes or establishes that extension.
 
 ## Physical Readings
@@ -196,8 +194,8 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
 | $\tilde{R}=ic\,t'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position of the material sector |
-| $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Local metric induced by the local complex structure |
-| $ds^2=-c^2d{t'}^2+dx^2+dy^2+dz^2$ | Interval; null cone $|d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'|=c$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The one metric, on the four $Q_\mu$ |
+| $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dQ_\mu dQ_\nu=-c^2d{t'}^2+dx^2+dy^2+dz^2$ | Interval; null cone $|d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$ | d'Alembertian |

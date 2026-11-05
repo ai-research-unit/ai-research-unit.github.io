@@ -324,7 +324,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$ | Coleman–Weinberg minimum |
 | $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B$, $m_h^2 = 4B\langle \rho\rangle$ | Curvature and radial mass at the radiative minimum |
 | $\beta_\lambda, \beta_ϙ, \gamma_\rho$ | Beta functions and anomalous dimension of the invariant $\rho$ (companion) |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 
 ## Further Reading

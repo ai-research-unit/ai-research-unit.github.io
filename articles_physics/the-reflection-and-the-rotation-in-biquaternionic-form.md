@@ -75,7 +75,7 @@ iR_{\vec e_x}^{\mathrm{axf}}\times(\text{image of } w) = x_t\, iR_{\vec e_x}^{\m
 $$
 and a trivector is the frame cell applied after the image of an element of $\mathbb{M}_-$, up to a sign that depends on the orientation chosen for each trivector.
 
-The decisive consequence concerns the **metric**. The biquaternion norm is the sum of the four squared coefficients, and a coefficient $i$ contributes $i^2=-1$. On the Hermitian basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ it therefore takes the four values $(+1,-1,-1,-1)$, which is $-g_{\mu\nu}[\mathbb{M}_-]$; on the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ it takes $(-1,+1,+1,+1)$, which is $g_{\mu\nu}[\mathbb{M}_-]$. The minus signs of the first list are those of $i^2$ on the three spatial directions, and nothing else. The sign vector of the generators is therefore not an independent convention laid on top of the algebra: **it is the biquaternion norm of the Hermitian sector**, and the $ict'$ metric of the material sector is its negative. The material basis carries $g_{\mu\nu}[\mathbb{M}_-]$ and the generators, which are Hermitian objects, carry its negative; the two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
+The decisive consequence concerns the **metric**. The biquaternion norm is the sum of the four squared coefficients, and a coefficient $i$ contributes $i^2=-1$. On the Hermitian basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ it therefore takes the four values $(+1,-1,-1,-1)$, which is the plain weight $\varepsilon$; on the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ it takes $(-1,+1,+1,+1)$, which is the interval of the material sector. The minus signs of the first list are those of $i^2$ on the three spatial directions, and nothing else. The sign vector of the generators is therefore not an independent convention laid on top of the algebra: **it is the biquaternion norm of the Hermitian sector**, and the interval of the material sector is its negative. The material basis carries $(-1,+1,+1,+1)$ and the generators, which are Hermitian objects, carry the weight $\varepsilon$, which is its negative; the two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
 
 The same fact appears in the square of a vector. For $w$ as above,
 $$
@@ -284,7 +284,7 @@ The claims of this article, in order.
 
 2. **The parity is the reflection count.** By Cartan–Dieudonné an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split of the cells by their right multiplier — eight with $e_t$ or $\vec e_z$, eight with $\vec e_x$ or $\vec e_y$ — is that parity, and the first eight are the image of $\mathbb{B}$.
 
-3. **The frame and the signs.** Every vector is the frame cell applied after the image of $w\in\mathbb{M}_+$. The biquaternion norm on the Hermitian basis is $(+1,-1,-1,-1)$, its minus signs being those of $i^2$, and on the material basis it is $g_{\mu\nu}[\mathbb{M}_-]$. The sign vector of the generators is the biquaternion norm of the objects they represent, so the mostly-minus convention is forced rather than chosen.
+3. **The frame and the signs.** Every vector is the frame cell applied after the image of $w\in\mathbb{M}_+$. The biquaternion norm on the Hermitian basis is $(+1,-1,-1,-1)$, its minus signs being those of $i^2$, and on the material basis it is $(-1,+1,+1,+1)$. The sign vector of the generators is the biquaternion norm of the objects they represent, so the mostly-minus convention is forced rather than chosen.
 
 4. **Conjugation by the frame cell is the bar.** The frame cell is the bar, and the bar composed with the reversal is the quaternion conjugation. The two frame factors cancel in the Hermitian conjugation, so the real structure $\flat=-{}^{*}$ is the bare reversal and carries no frame.
 
@@ -303,7 +303,7 @@ The claims of this article, in order.
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | even half, odd half | The cells with an even and with an odd number of generator factors; the even half is the image of $\mathbb{B}$ |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the four generators: the biquaternion norm on the Hermitian basis |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric of the material coordinates |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=ict'$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\psi = a\psi b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
 | the four frame cells | The generator cells: $iR_{\vec e_x}^{\mathrm{axf}}$, and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=1,2,3$ |

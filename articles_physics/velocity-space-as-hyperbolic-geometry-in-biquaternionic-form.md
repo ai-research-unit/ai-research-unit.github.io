@@ -10,13 +10,13 @@ The construction is the hyperbolic geometry of the velocity hyperboloid, in the 
 
 The findings are stated in advance.
 
-1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$ with the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
+1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$, where $Q_t=ict'$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
 2. **The metric is the Beltrami–Klein metric** in the velocity coordinates, $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, and the distance between two velocities is the relative rapidity: $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$.
 3. **The addition of velocities is hyperbolic trigonometry.** The relative-velocity formula is the hyperbolic law of cosines in velocity space, and the composition law of two boosts is its spherical counterpart, the two being exchanged by $c\mapsto ic$ — the Sommerfeld spherical representation.
 4. **The Wigner rotation is the curvature of the boost connection.** Its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term, and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$.
 5. **The light cone is the boundary at infinity.** It is at infinite geodesic distance from every velocity while the velocity itself is bounded by $c$: the rapidity is unbounded where the velocity is bounded, and that is the geometric statement that no finite number of boosts reaches $c$.
 
-The notation is that of the foundational articles: the algebra, the units, the sectors, the material coordinate, the $ict'$ metric and the biquaternion norm are those of *Algebra and Element Conventions*, *Unit, Index and Notation Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-velocity is
+The notation is that of the foundational articles: the algebra, the units, the sectors, the material coordinate $Q_t=ict'$ and the biquaternion norm are those of *Algebra and Element Conventions*, *Unit, Index and Notation Conventions* and *Norm and Pairing Conventions*, and none is restated here. The four-velocity is
 $$
 \tilde{V} = \gamma(ic\,e_t+\vec v),\qquad \langle\tilde{V}\rangle_{\natural} = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
 $$
@@ -50,7 +50,7 @@ c^2{t'}^2-(x^2+y^2+z^2) = c^2 ,
 $$
 the **future sheet** of the hyperboloid of unit timelike vectors. Its vertex is the rest point $\tilde{V}_0 = ic\,e_t$.
 
-The restriction of the ambient form to this quadric is Riemannian, and this is worth one line because the sign depends on the convention. In the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ the one negative direction is the time axis, and at a point $X$ of the sheet that direction is represented by the position vector $X$ itself — which is normal to the quadric and not tangent to it. The restriction of $\eta$ to $X^\perp$ is therefore positive definite, with no sign to repair. This is the mirror of the convention of the maths article *Hyperbolic Geometry*, where the form carries the opposite overall sign and the metric on the hyperboloid is the negative of the restricted form; the two descriptions are the two signs of the same metric, and no physical statement depends on the choice.
+The restriction of the ambient form to this quadric is Riemannian, and this is worth one line because the sign depends on the convention. In the material frame, $Q_t=ict'$ and $Q_k=x_k$, the interval is $-c^2t'^2+x^2+y^2+z^2=\sum_\mu Q_\mu^2$: one minus, the square of the $i$ on the time axis. At a point $X$ of the sheet that direction is represented by the position vector $X$ itself — which is normal to the quadric and not tangent to it. The restriction of the ambient form to $X^\perp$ is therefore positive definite, with no sign to repair. This is the mirror of the convention of the maths article *Hyperbolic Geometry*, where the form carries the opposite overall sign and the metric on the hyperboloid is the negative of the restricted form; the two descriptions are the two signs of the same metric, and no physical statement depends on the choice.
 
 ### Weierstrass coordinates and the rapidity as distance
 

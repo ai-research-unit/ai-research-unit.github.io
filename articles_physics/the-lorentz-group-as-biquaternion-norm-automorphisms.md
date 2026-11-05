@@ -21,7 +21,7 @@ for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
 - **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
-- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski form $g_{\mu\nu}[\mathbb{M}_-]$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
+- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=ix_0$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of Hermitian sandwiches $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U^{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
@@ -165,13 +165,7 @@ $$
 \boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, in the real coordinates, is therefore the quadratic form with matrix
-
-$$
-g_{\mu\nu}[\mathbb{M}_-],
-$$
-
-the level-2 Minkowski form of the series. Identifying $x_0 = ct'$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $Q_t=ix_0$, $Q_k=x_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. Identifying $x_0 = ct'$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
@@ -198,7 +192,7 @@ $$
 \langle T\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\ \text{ for all }\tilde{Q}\in\mathbb{M}_-
 $$
 
-says exactly that $T$ preserves the Minkowski form $g_{\mu\nu}[\mathbb{M}_-]$. Hence
+says exactly that $T$ preserves the Minkowski interval $\langle\tilde Q\rangle_\natural$ on the slice. Hence
 
 $$
 \boxed{\ \mathcal{G} \;\cong\; O(1,3)\ } ,
@@ -512,9 +506,7 @@ $$
 realized by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$ with $A,B\in SL(2,\mathbb{C})$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
 
 $$
-\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2,
-\qquad
-g_{\mu\nu}[\mathbb{M}_-],
+\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2 ,
 $$
 
 so the automorphisms preserving the slice form $O(1,3)$, with identity component the restricted Lorentz group. That component is exactly the group of Hermitian sandwiches,
@@ -576,7 +568,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | Level-2 Minkowski form, restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=ict'$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U^{\mathrm{lor}}$, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |

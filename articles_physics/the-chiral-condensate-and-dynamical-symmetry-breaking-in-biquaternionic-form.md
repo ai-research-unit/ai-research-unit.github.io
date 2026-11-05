@@ -99,7 +99,7 @@ $$
 
 the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's volume cell of the frame, $\chi=-iR_{\vec e_z}$, which is the fifth cell. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.
 
-**The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(t',x,y,z)$, in units $c=1$; the $ict'$ normalization $Q_t=ict'$ is named only where the gradient is written. In these coordinates $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$, so the contraction that reproduces $\Box$ has $\eta^{00}=-1$ and $\eta^{kk}=+1$, that is $g_{\mu\nu}[\mathbb{M}_-]$, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu=-\eta_{\mu\mu}$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+**The frame, the coordinates and the units.** Every derivative in a two-sided display is with respect to $x_\mu=(t',x,y,z)$, in units $c=1$; the $ict'$ normalization $Q_t=ict'$ is named only where the gradient is written. In these coordinates $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$, so the contraction that reproduces $\Box$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathbb{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 
@@ -421,7 +421,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

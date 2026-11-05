@@ -99,11 +99,12 @@ so that $\mathbb{M}_+$ has the orthonormal basis $(e_t, j\vec e_x, j\vec e_y, j\
 
 *Proof.* The subspaces are the $\pm1$-eigenspaces of the involution ${}^{*}$, hence complementary. If $\tilde Q_1^{*} = \tilde Q_1$ and $\tilde Q_2^{*} = -\tilde Q_2$, then $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = -\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and $g(\tilde Q_2,\tilde Q_1) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1) = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$; by symmetry the two are equal, so both vanish. For the explicit descriptions, write $\tilde Q = a + jb$; then $\tilde{Q}^{*} = a^{\natural} - jb^{\natural}$, and $\tilde{Q}^{*} = \tilde Q$ gives $a^{\natural} = a$ and $b^{\natural} = -b$, while $\tilde{Q}^{*} = -\tilde Q$ gives $a^{\natural} = -a$ and $b^{\natural} = b$.
 
-**Theorem.** The restrictions of the Hermitian scalar form have signatures
+**Theorem.** In the coordinates $\tilde Q = a\,e_t + jv$ on $\mathbb{M}_+$ and $\tilde Q = a\,je_t + v$ on $\mathbb{M}_-$, with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the restrictions of the Hermitian scalar form are the intervals
 
 $$
 \boxed{\;
-g\big|_{\mathbb{M}_+} \sim (1,3), \qquad g\big|_{\mathbb{M}_-} \sim (3,1)
+g(\tilde Q,\tilde Q) = a^2 - \lvert v\rvert^2 \ \text{ on } \mathbb{M}_+, \qquad
+g(\tilde Q,\tilde Q) = \lvert v\rvert^2 - a^2 \ \text{ on } \mathbb{M}_- .
 \;}.
 $$
 

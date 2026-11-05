@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the material reading is $Q_t=ict'$ with $Q_k=x_k$, so that the interval $\sum_\mu Q_\mu^2=-c^2t'^2+x^2+y^2+z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 \qquad
@@ -173,14 +173,14 @@ is the Yang–Mills path integral of the framework.
 
 At quadratic order in the fields the gauge-fixed action is
 $$
-S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(g_{\mu\nu}[\mathbb{M}_-]\Box-(1-\tfrac1\xi)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}_{\nu a},
+S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(\delta_{\mu\nu}\Box-(1-\tfrac1\xi)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}_{\nu a},
 $$
 whose inversion gives the gauge-field propagator, in momentum space, with $\Pi\equiv-\sum_\mu p_\mu p_\mu$ the momentum-space invariant,
 $$
-D_{\mu\nu}(p)=\frac{1}{\Pi}\left(g_{\mu\nu}[\mathbb{M}_-]+\frac{p_\mu p_\nu}{\Pi}\right)-\frac{\xi}{\Pi}\frac{p_\mu p_\nu}{\Pi}
-=\frac{1}{\Pi}\left(g_{\mu\nu}[\mathbb{M}_-]+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right).
+D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+\frac{p_\mu p_\nu}{\Pi}\right)-\frac{\xi}{\Pi}\frac{p_\mu p_\nu}{\Pi}
+=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right).
 $$
-The projector algebra is that of the companion article, and the series convention $\sum_\mu p_\mu p_\mu=-\Pi$ fixes its signs: writing $P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/\Pi=g_{\mu\nu}[\mathbb{M}_-]-p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/\Pi=p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\eta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $\sum_\mu p_\mu P_{\mu\nu}=0$. Here $\Pi$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the transverse projector is $g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/\Pi$. The signs of $P$ and $L$ are tied to the momentum convention: they are fixed by the invariant $\sum_\mu p_\mu p_\mu=-\Pi$, and using $+\sum_\mu p_\mu p_\mu$ in place of $\Pi$ gives a matrix that is neither transverse nor idempotent. This is the projector that *Canonical Quantization of the Biquaternion Proca Field* writes as the polarization completeness relation $g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/\mu^2$, with $\mu$ the mass. On shell $\Pi=\mu^2$, so that relation is $g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/\Pi$; the two symbols stay distinct, because $\mu$ is the mass there and the spacetime index here, and $\Pi$ exists in the massless theory where $\mu=0$. The gauge-field path-integral companion writes the same projector with its $p^2$, and with $D=\Pi^{-1}(P+\xi L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $\sum_\nu p_\nu j_\nu=0$, the difference between two propagators with different $\xi$ annihilates the current,
+The projector algebra is that of the companion article, and the series convention $\sum_\mu p_\mu p_\mu=-\Pi$ fixes its signs: writing $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\Pi=\delta_{\mu\nu}-p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/\Pi=p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\delta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $\sum_\mu p_\mu P_{\mu\nu}=0$. Here $\Pi$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the transverse projector is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$. The signs of $P$ and $L$ are tied to the momentum convention: they are fixed by the invariant $\sum_\mu p_\mu p_\mu=-\Pi$, and using $+\sum_\mu p_\mu p_\mu$ in place of $\Pi$ gives a matrix that is neither transverse nor idempotent. This is the projector that *Canonical Quantization of the Biquaternion Proca Field* writes as the polarization completeness relation $\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, with $\mu$ the mass. On shell $\Pi=\mu^2$, so that relation is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$; the two symbols stay distinct, because $\mu$ is the mass there and the spacetime index here, and $\Pi$ exists in the massless theory where $\mu=0$. The gauge-field path-integral companion writes the same projector with its $p^2$, and with $D=\Pi^{-1}(P+\xi L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $\sum_\nu p_\nu j_\nu=0$, the difference between two propagators with different $\xi$ annihilates the current,
 $$
 \big(D(\xi)-D(\xi_2)\big)_{\mu\nu}j_\nu=0 ,
 $$
@@ -260,7 +260,7 @@ whereas in the abelian limit $f_{abc}=0$, $M=-\Box$, and the determinant is fiel
 
 The gauge-fixed action $S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}}$ has a quadratic part whose inversion gives the propagator
 $$
-D_{\mu\nu}(p)=\frac{1}{\Pi}\left(g_{\mu\nu}[\mathbb{M}_-]+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right),
+D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right),
 $$
 with the gauge parameter in the longitudinal projector alone, so that amplitudes built from conserved currents are gauge-parameter independent. The non-abelian additions are the charged, covariantly conserved current; the Slavnov–Taylor identities in place of the abelian Ward identity; and the ghost and self-interaction loops that give the pure $SU(2)$ one-loop coefficient $b_0=22/3$.
 
@@ -282,7 +282,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric (level 2) |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$; the material reading is $Q_t=ict'$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ | Compact gauge algebra |
 | $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
@@ -301,8 +301,8 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $S_{\mathrm{gh}}=-\int\sum_a\bar c_a\sum_\mu\partial/\partial Q_\mu(D_\mu c)_a$ | Ghost action from the determinant |
 | $S_{\mathrm{gf}}=-\tfrac{1}{2\xi}\int\sum_a(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a})^2$ | Gauge-fixing term; $\xi$ the gauge parameter |
 | $\Pi\equiv-\sum_\mu p_\mu p_\mu$ | Momentum-space invariant of the series convention |
-| $D_{\mu\nu}(p)=\Pi^{-1}(g_{\mu\nu}[\mathbb{M}_-]+(1-\xi)p_\mu p_\nu/\Pi)$ | Gauge-field propagator |
-| $P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/\Pi$, $L_{\mu\nu}=-p_\mu p_\nu/\Pi$ | Transverse and longitudinal projectors, $P+L=\eta$ |
+| $D_{\mu\nu}(p)=\Pi^{-1}(\delta_{\mu\nu}+(1-\xi)p_\mu p_\nu/\Pi)$ | Gauge-field propagator |
+| $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\Pi$, $L_{\mu\nu}=-p_\mu p_\nu/\Pi$ | Transverse and longitudinal projectors, $P+L=\delta$ |
 | $\langle \sum_\mu D_\mu F_{\mu\nu}\rangle=\langle J_\nu\rangle$ | Quantum Yang–Mills equation (Schwinger–Dyson) |
 | Slavnov–Taylor identities | Quantum content of gauge invariance in the non-abelian theory |
 | Gribov copies, Gribov horizon | Multiple solutions of the gauge condition; zeros of $M$ |

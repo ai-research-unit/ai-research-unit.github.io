@@ -344,7 +344,7 @@ Two actions carry the split. The first is the spin action, the shell's pattern w
 $$
 \Sigma_s:\qquad \tilde\Psi\longmapsto i s_{0}\,\tilde\Psi\vec e_x-\sum_k i s_{k}\,\vec e_k\tilde\Psi\vec e_y ,
 $$
-and its square is $s\cdot s$ times the identity, which is $-1$: the cross terms cancel, because the coefficients are symmetric where the two units anticommute, and what remains is the metric square of $s$. The second is the bracket
+and its square is $s\cdot s$ times the identity, which is $-1$: the cross terms cancel, because the coefficients are symmetric where the two units anticommute, and what remains is $s\cdot s$. The second is the bracket
 $$
 B_s:\qquad \tilde\Psi\longmapsto \tilde\Psi+s_{0}\,\tilde\Psi\vec e_y+\sum_k s_{k}\,\vec e_k\tilde\Psi\vec e_x ,
 $$
@@ -397,7 +397,7 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
 $$
@@ -418,13 +418,13 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-with the metric and orientation
+with the interval and the orientation
 $$
-g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1),\qquad \epsilon_{0123}=+1 .
+-c^2t'^2+x^2+y^2+z^2,\qquad \epsilon_{0123}=+1 .
 $$
-The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{e_t}^{\mathrm{pau}}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P$ enter the cell formulation with one generator of each type.
+The four directions carry the unit metric $\delta_{\mu\nu}$, and the one minus of the interval is the square of the $i$ in $Q_t=ict'$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{e_t}^{\mathrm{pau}}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P$ enter the cell formulation with one generator of each type.
 
-Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the squares then come out with the metric's signs, and the two minus signs involved are distinct. For the time generator,
+Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the squares then come out with the weight's signs, and the two minus signs involved are distinct. For the time generator,
 $$
 (\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
 $$
@@ -446,7 +446,7 @@ $$
 (\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
 $$
 
-because both quaternion squares are $-e_t$ and their product is $+I_4$. This is the whole content of the signature: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, so the frame is the Minkowski one and the anticommutation relations below are consistent with the metric above.
+because both quaternion squares are $-e_t$ and their product is $+I_4$. The squares carry the whole of the signs: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, and the anticommutation relations below hold in every frame.
 
 A product $M=ab$ of two elements has the coefficient matrix $c(M)_{ij}=a_ib_j$, of rank one: the products therefore fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional algebra, a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$ is that number.
 
@@ -480,14 +480,14 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 The volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-R_{\vec e_z}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the same cell written in the two displays.
 
-The four contraction sums are frame statements, because a cell's square is. In a Euclidean frame, where all four generators (written $\Gamma_\mu$ here) square to $+I_4$, they take the textbook values,
+The four contraction sums are statements about the squares, because a cell's square is. For generators that all square to $+I_4$ (written $\Gamma_\mu$ here), they take the textbook values,
 $$
 \sum_\mu\Gamma_\mu\Gamma_\mu=4I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\mu=-2\Gamma_\alpha,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_\mu=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
 $$
-In the Minkowski frame of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones are frame-dependent as written, and the two that follow from $g$ are worth recording because the naive substitution of $g$ for $\delta$ fails there: with all indices down,
+For the cells of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones depend on the signs as written, and the two that follow from the weight are worth recording, because the weight is not $\delta_{\mu\nu}$: with all indices down,
 $$
 \sum_\mu\gamma_\mu\gamma_0\gamma_\mu=4\gamma_0,\qquad
 \sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0 ,

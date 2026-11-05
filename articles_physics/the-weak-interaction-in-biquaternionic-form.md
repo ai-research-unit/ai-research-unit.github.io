@@ -18,7 +18,7 @@ $$
 \Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \chi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -27,10 +27,10 @@ the label $\mathrm{axf}$ naming the axis-free frame of the regular representatio
 The weak charged current carries one unit of charge and one unit of the weak isospin ladder. In the standard notation, read in the frame declared above, with $u$ the upper and $d$ the lower member of a doublet,
 
 $$
-J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\,\gamma_\mu(1-\gamma_5)\psi_{\mathrm d},
+J^{+}_\mu=\psi^{\dagger}_{\mathrm u}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\psi_{\mathrm d},
 $$
 
-and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $-g_{\mu\nu}/M_W^2$ and leaves a contact,
+and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $\varepsilon_\mu\delta_{\mu\nu}/M_W^2$ and leaves a contact,
 
 $$
 \mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu,
@@ -72,7 +72,7 @@ against the measured $1.2300\times10^{-4}$, which is $0.958$ times the tree-leve
 
 ### The vector and the axial vertex
 
-The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\chi$ is a cell as well; explicitly $\Gamma_t\chi=R_{\vec e_y}$ and $\Gamma_k\chi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\chi)^2=-g_{\mu\mu}I_4$, both verified exactly.
+The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\chi$ is a cell as well; explicitly $\Gamma_t\chi=R_{\vec e_y}$ and $\Gamma_k\chi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\chi)^2=-\varepsilon_\mu I_4$, both verified exactly.
 
 The object the weak interaction uses is neither of these but their difference. It is a cell as well, this time by linearity of the right factor rather than by the product rule,
 
@@ -110,7 +110,7 @@ $$
 the cross term vanishing because distinct quaternion units anticommute. The same computation in a spatial component, with right multiplier $g_Vi\vec e_y+g_A\vec e_x$, gives the same value $g_V^2-g_A^2$, the difference between the two cases being carried by $\Gamma_k^2=-I_4$. Hence
 
 $$
-\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=g_{\mu\mu}\,(g_V^2-g_A^2)\,I_4 ,
+\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu\,(g_V^2-g_A^2)\,I_4 ,
 $$
 
 an identity checked to $2.3\times10^{-16}$ for $(g_V,g_A)\in\{(1,0),(1,\tfrac12),(1,1),(1,-1),(1,2),(1,i),(1,0.3+0.4i),(1,2-i)\}$ and $\mu=t,x,y,z$. Three things follow, and they are the substance of this article.
@@ -210,7 +210,7 @@ One construction would change that, and the article names it without claiming it
 The weak interaction at the process level is a four-fermion contact with a $V-A$ current, and the contact is accurate to a part per million for nuclear beta decay, so the process tests the vertex and not the carrier. The framework supplies the vertex exactly. The vector vertex $\Gamma_\mu$ is the corpus's frame cell and the axial vertex $\Gamma_\mu\chi$ is a cell too, and their combination $\Gamma_\mu(g_V-g_A\chi)$ is a single cell whose right multiplier is $g_Vi\vec e_x-g_A\vec e_y$ in the time component. Squaring gives
 
 $$
-\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=g_{\mu\mu}(g_V^2-g_A^2)I_4 ,
+\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4 ,
 $$
 
 verified to $2.3\times10^{-16}$, so the chiral vertex is nilpotent if and only if $|g_A|=|g_V|$ and invertible otherwise. With the right multiplier normalised to the Peirce pair, the left multipliers are the informational-sector frame, $e_t$ and $-i\vec e_k$ for $P_L$ against $e_t$ and $+i\vec e_k$ for $P_R$, and the two chiralities differ only by the sign of that multiplier. The $V-A$ structure, which the Standard Model takes as input, is therefore exactly the condition that the weak vertex be null, and the identity it satisfies is Dirac's, derived here from the nilpotency of the Peirce element.
@@ -234,9 +234,8 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |
 | $\Gamma_\mu(g_V-g_A\chi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
-| $\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=g_{\mu\mu}(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
-| $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$ | Frame metric of the $\mathbb{M}_-$ frame |
-| $J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
+| $\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
+| $J^{+}_\mu=\psi^{\dagger}_{\mathrm u}iR_{\vec e_x}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
 | $\psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu$ | Four-fermion contact |
 | $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | Contact coefficient |

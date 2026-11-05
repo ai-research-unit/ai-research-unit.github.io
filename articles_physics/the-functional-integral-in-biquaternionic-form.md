@@ -18,7 +18,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the signat
 $$
 S[\tilde\Phi] = \int d^4x\; \Big\langle \tilde\Phi, K^{\mathrm{kin}}\tilde\Phi\Big\rangle,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2_{Q_\mu} .
 $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K^{\mathrm{kin}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
@@ -132,7 +132,7 @@ $$
 \qquad\text{for all } \tilde\Phi_\pm\in\mathbb{M}_\pm .
 $$
 
-**Proof.** It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\Phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\Phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} K^{\mathrm{kin}} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
+**Proof.** It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=ict'$ and $Q_k=x_k$, in the informational sector $Q_t=ct$ and $Q_k=ix'_k$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}K^{\mathrm{kin}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $ict'\cdot ct$ on the time slot and $x_k\cdot ix'_k$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
 **Consequence: factorisation.** With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
@@ -158,7 +158,7 @@ $$
 S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\phi\,\partial/\partial Q_\mu\phi + m^2\phi^2\Big)
 = \tfrac12\int d^4x_E\;\phi\big(-\Delta_E + m^2\big)\phi ,
 $$
-with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\partial^2/\partial Q_t^2+\Delta$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.
+with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2_{Q_\mu}$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.
 
 **The Gaussian result.** The free generating functional is
 $$
@@ -187,7 +187,7 @@ $$
 ict'\,e_t \;\longmapsto\; c\tau\,e_t ,
 $$
 i.e. the relabeling of the imaginary-time coefficient as a real one, $ic(-i\tau)=c\tau$, as *Interpretation of the Wick Rotation in the Biquaternion Universe* establishes.
-Under this identification the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$ (the biquaternion norm), and the oscillatory weight becomes a decaying one:
+Under this identification the time coefficient $Q_t=ict'$ becomes the real $Q_t=c\tau$, so the interval $-c^2t'^2+x^2+y^2+z^2$ becomes the sum of squares $\sum_\mu Q_\mu^2$, the biquaternion norm with every coefficient $+1$, and the oscillatory weight becomes a decaying one:
 $$
 \exp(\,iS[\tilde\Phi]) \;\longrightarrow\; \exp(-S_E[\tilde\Phi]),
 \qquad
@@ -209,9 +209,9 @@ that is, when taking the causal complement twice returns the region. A region is
 
 **Why the restriction is made.** Restricting everything to a finite causally complete region is what gives the functional integral its mathematically precise and physically rigorous form, for three reasons. The number of degrees of freedom in a bounded region is controlled, so the regulator has a natural home; the amplitude depends only on data on a compact boundary; and the assignment of observables to regions — the net of local algebras of algebraic quantum field theory — can be stated, with **isotony** (a smaller region's algebra sits inside a larger one's) and **Einstein causality** (observables in spacelike-separated regions commute). The unbounded integral over all spacetime is the limit in which the region is enlarged to the whole manifold, and it is the limit that requires the regulator and the renormalisation of the next section.
 
-**The interpretation in the algebra.** The causal structure is the framework's own, because the cones are the null cones of the material-sector metric: the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ of the conventions fixes which events are spacelike- and timelike-separated, exactly as *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and the mathematical article *Pseudo-Riemannian and Lorentzian Geometry* set out, with the causal order, its partial-order properties, and the causal complement. The algebra therefore supplies the **metric that defines the cones** and, with it, the causal relation on which $O_{\mathrm{cc}}=O$ is built; and it supplies **microcausality**, the statement that the field commutator vanishes outside the light cone, which the canonical-quantization and spin–statistics articles record and which is the operator form of Einstein causality. The framework's one fully worked causally complete region is the **wedge**, whose modular Hamiltonian $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ and Bisognano–Wichmann identification the modular articles and the quantum-gravity agenda exhibit; the double light cone is the bounded instance and is not worked out.
+**The interpretation in the algebra.** The causal structure is the framework's own, because the cones are the null cones of the material-sector interval: the material reading $Q_t=ict'$, whose time square is $-c^2t'^2$, fixes which events are spacelike- and timelike-separated, exactly as *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and the mathematical article *Pseudo-Riemannian and Lorentzian Geometry* set out, with the causal order, its partial-order properties, and the causal complement. The algebra therefore supplies the **interval that defines the cones** and, with it, the causal relation on which $O_{\mathrm{cc}}=O$ is built; and it supplies **microcausality**, the statement that the field commutator vanishes outside the light cone, which the canonical-quantization and spin–statistics articles record and which is the operator form of Einstein causality. The framework's one fully worked causally complete region is the **wedge**, whose modular Hamiltonian $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ and Bisognano–Wichmann identification the modular articles and the quantum-gravity agenda exhibit; the double light cone is the bounded instance and is not worked out.
 
-What the algebra does **not** supply is the rest: the construction of the region in the continuum, the restriction of the measure to it, the regulator, and the net of local algebras as an operator-algebraic structure. The restriction is on the **region** and not on the algebra — the same statement the boundary-value functional made — and it leaves the algebra's standing gaps, the measure and the space of configurations, exactly where they were. In this the localisation is the field-theoretic case of the path-integral article's time slicing: the region defines where the integral is taken, and the algebra's contribution is the metric of the cones and the microcausality of the observables, not the integral itself.
+What the algebra does **not** supply is the rest: the construction of the region in the continuum, the restriction of the measure to it, the regulator, and the net of local algebras as an operator-algebraic structure. The restriction is on the **region** and not on the algebra — the same statement the boundary-value functional made — and it leaves the algebra's standing gaps, the measure and the space of configurations, exactly where they were. In this the localisation is the field-theoretic case of the path-integral article's time slicing: the region defines where the integral is taken, and the algebra's contribution is the interval of the cones and the microcausality of the observables, not the integral itself.
 
 ## The Measure and the Gap
 
@@ -240,7 +240,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Phi^{\natural}_-\tilde\Phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
 - The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module, with $N$ the real dimension of the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
-- The $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ fixes the null cones and the causal relation on which the causally complete regions are built, and microcausality — the vanishing of the field commutator outside the light cone — is the operator form of Einstein causality; the wedge with $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ is the one fully worked causally complete region.
+- The material reading $Q_t=ict'$ fixes the interval $-c^2t'^2+x^2+y^2+z^2$, hence the null cones and the causal relation on which the causally complete regions are built, and microcausality — the vanishing of the field commutator outside the light cone — is the operator form of Einstein causality; the wedge with $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ is the one fully worked causally complete region.
 
 **Standard, and transcribed.**
 - The definition of the functional integral, the measure, the lattice or mode regularization, the perturbative expansion, the Grassmann integral and its determinant, and the free scalar propagator.
@@ -255,7 +255,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$,
 $$
 S[\tilde\Phi]=\int d^4x\;\Big\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\Big\rangle,
 \qquad
@@ -269,7 +269,7 @@ Z_\pm[J_\pm]=\big(\det K^{\mathrm{kin}}_{\pm}\big)^{-1/2}\exp(\frac12\langle J_\
 $$
 The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $K^{\mathrm{kin}}$.
 
-The **measure**, the **space of field configurations**, and the **interaction** are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a **causally complete region** — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the cone metric, which fixes the causal relation $O_{\mathrm{cc}}=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.
+The **measure**, the **space of field configurations**, and the **interaction** are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a **causally complete region** — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the interval of the cones, which fixes the causal relation $O_{\mathrm{cc}}=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.
 
 ## Summary of Notation
 
@@ -282,8 +282,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ | Biquaternion field and its sector parts |
 | $\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric (level 2) |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$ | d'Alembertian, series convention |
 | $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_E^2$ |
 | $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle$ | Quadratic biquaternion action; $K^{\mathrm{kin}}=\Box-m^2$ |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(-\frac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle+\langle\tilde J,\tilde\Phi\rangle)$ | Functional integral with source |

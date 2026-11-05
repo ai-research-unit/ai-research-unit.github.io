@@ -59,7 +59,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle i\,p\rangle_{\natural}=i^2\langle p\rangle_{\natural}=-\left(p_t^2-\vec p\cdot\vec p\right),
 $$
 
-because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's metric is the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
+because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=ict'$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
 
 **The dictionary.** The two readings name the same eight dimensions, one row to an object:
 
@@ -291,7 +291,7 @@ The one genuinely new object in the source's programme is not a change of basis 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **cells**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_k$; here it names the cells that represent those elements on the Dirac module. The module is what tells the two apart, and the cells act on it while the elements are multiplied. In the corpus's notation they are
 
@@ -341,7 +341,7 @@ $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The signs here are the mostly-minus $\varepsilon=(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $g_{\mu\nu}[\mathbb{M}_-]$ of the material sector; the two differ by an overall sign, $g_{\mu\nu}[\mathbb{M}_-]$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
+The signs here are the mostly-minus $\varepsilon=(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the interval of the material sector; the two differ by an overall sign, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries the weight $\varepsilon$; one whose time cell squares to $-1$ carries the interval.
 
 The letter $\gamma$ is also used, in the algebra-of-physical-space literature, for the three **generators** of that algebra. That is a different object: the element
 

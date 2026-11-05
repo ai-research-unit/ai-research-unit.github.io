@@ -8,7 +8,7 @@ In four-dimensional Minkowski space the three spaces do have dimensions four, fo
 
 The construction is a companion to the corpus's articles on the Dirac field. There, the field is an element of $\mathbb{B}$ and the Lorentz group acts on it by left multiplication; here, a *different* linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $k_\mu$, which the dictionary needs and the metric does not supply.
 
-The frame is $\mathbb{M}_-$ and the metric is $g_{\mu\nu}[\mathbb{M}_-]$ of *Frame and Metric Conventions*; the source writes $\eta_{\mu\nu}$ for it. Where the source contracts with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$, and no index is raised in this article. The only operator that differentiates the field is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with its conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$; the source's $\partial/\partial x_\mu$ keep the source's index and metric. The four generators are the four actions of §The Neutral Elements, and their legacy arrays are printed once in §The Legacy Pauli Gamma Formulation. Because $e_t$ commutes with the spatial units, $\tilde\nabla^2$ keeps the mixed time–space derivatives and is not scalar, so the mass enters through the pair of §The Chiral Pair and not through the square of one first-order derivative operator.
+The frame is $\mathbb{M}_-$ and the metric is $\delta_{\mu\nu}=(1,1,1,1)$; the source writes $\eta_{\mu\nu}$ for the same form read in its real coordinate, whose tuple is $-\varepsilon$. Where the source contracts with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$, and no index is raised in this article. The only operator that differentiates the field is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with its conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$; the source's $\partial/\partial x_\mu$ keep the source's index and metric. The four generators are the four actions of §The Neutral Elements, and their legacy arrays are printed once in §The Legacy Pauli Gamma Formulation. Because $e_t$ commutes with the spatial units, $\tilde\nabla^2$ keeps the mixed time–space derivatives and is not scalar, so the mass enters through the pair of §The Chiral Pair and not through the square of one first-order derivative operator.
 
 ## The Trinomial Unit Basis
 
@@ -441,7 +441,7 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The four gammas are the generators of the body, $\gamma_\mu=C_\mu$, the four actions of §The Trinomial Unit Basis, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -468,7 +468,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | Symbol | Meaning |
 |---|---|
 | $\mu, \nu, \lambda, \rho$ | Ordinary Minkowski four-vector indices, $0,1,2,3$ |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | The frame metric of $\mathbb{M}_-$ (the source's $\eta$); not the $ict'$ metric |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity in the four-index space; no index is raised anywhere. The source's $\eta$ is the same form in the real coordinate, tuple $-\varepsilon$ |
 | $V\cdot W$ | Minkowski pairing of two four-vectors, the sign vector $\epsilon$ supplying the signs |
 | $k_\mu, j_\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
 | $u, v$ | The two neutral elements of $\mathbb{B}$, $u^{\dagger}C_0u = 1$, $v^{\dagger}C_0v = -1$, $u^{\dagger}C_0v = 0$ |
@@ -482,7 +482,6 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $\mathcal{D}(w) = \sum_\mu w_\mu C_\mu$ | The four generators contracted, a sum of four actions, as it appears in the bilinears |
 | $\mathcal{R}(w):\Psi\mapsto-\sum_\mu w_\mu\,a_\mu\Psi b_\mu$ | The same sum one factor of $i$ lower, the real map of the reconstruction |
 | $\Psi_1^{\dagger}C_0\Psi_2$ | Liu's bilinear of two elements, the object the dictionary reproduces |
-| $\delta_{\mu\nu}$ | The identity in the four-index space; no index is raised anywhere |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
 | ${t'}_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)$ | Symmetric four-index trace |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | The totally antisymmetric symbol, $\varepsilon_{0123}=1$; a different letter from the sign vector $\epsilon$ |

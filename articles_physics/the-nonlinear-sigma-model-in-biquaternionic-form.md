@@ -341,7 +341,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\Lambda = m_h = \sqrt{\lambda}\,v_0$ | Cutoff of the effective theory (radial mass) |
 | $\pi\sim\pi+2\pi f$ | Compact phase of the abelian target |
 | $a,b$ | Internal isospin indices, written low; every contraction over them is an explicit sum |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 
 ## Further Reading
