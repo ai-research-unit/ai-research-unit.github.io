@@ -171,7 +171,7 @@ $$
 q'_t = c\,t', \qquad (q_x, q_y, q_z) = (x, y, z), \qquad q_t = c\,t, \qquad (q'_x, q'_y, q'_z) = (x', y', z'),
 $$
 
-so that the four coefficients are $Q_t = c(t+it')$, $Q_x = x+ix'$, $Q_y = y+iy'$, $Q_z = z+iz'$, with $\vec q = x\vec e_x+y\vec e_y+z\vec e_z$ the real spatial vector and $i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$ its imaginary counterpart. Each subspace keeps whichever part of the dictionary its defining condition leaves free.
+so that the four coefficients are $Q_t = ct+ict'$, $Q_x = x+ix'$, $Q_y = y+iy'$, $Q_z = z+iz'$, with $\vec q = x\vec e_x+y\vec e_y+z\vec e_z$ the real spatial vector and $i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$ its imaginary counterpart. Each subspace keeps whichever part of the dictionary its defining condition leaves free.
 
 | Subspace | Algebraic name | Physical name | Basis | Real parameters | Physical coordinates |
 |---|---|---|---|---|---|

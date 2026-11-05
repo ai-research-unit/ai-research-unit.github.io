@@ -61,7 +61,7 @@ the coefficients $Q_t, Q_x, Q_y, Q_z$ take the explicit form
 
 $$
 \begin{aligned}
-Q_t &= q_t + iq'_t = c(t+it'), \\
+Q_t &= q_t + iq'_t = ct+ict', \\
 Q_x &= q_x + iq'_x = x + ix', \\
 Q_y &= q_y + iq'_y = y + iy', \\
 Q_z &= q_z + iq'_z = z + iz'.
