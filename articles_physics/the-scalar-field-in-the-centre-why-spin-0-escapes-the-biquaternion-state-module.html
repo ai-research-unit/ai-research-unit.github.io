@@ -72,11 +72,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>A scalar field is, in standard relativistic physics, the simplest kind of field: one component at each event, and no axis. A Lorentz transformation moves the event and leaves the value alone,</p>
 <p>$$
-\chi^{\mathrm{scl}}'(x')=\chi^{\mathrm{scl}}(x),
+\xi^{\mathrm{scl}}'(x')=\xi^{\mathrm{scl}}(x),
 \qquad x'=\Lambda x .
 $$</p>
 <p>Every other field carries structure that the transformation can act on: the four-vector carries its spacetime index, the Dirac field carries its two labels, and the field strength carries two indices. The scalar carries none, and that is what spin $0$ means.</p>
-<p>In the biquaternion framework a state is an element of the algebra $\mathbb{B}$. Its label takes two values, and the state is written $\tilde\psi_L$ or $\tilde\psi_R$ accordingly; a general element has an L part and an R part, and left multiplication keeps the label. The framework calls the carrier of states the state module; in this article the carrier is the algebra, and a state is an element. The question of this article follows at once: the carrier of states is an element of $\mathbb{B}$ and the left action on it carries spin $\tfrac12$, so where does a spin-$0$ value live, and why is it not a value of that action?</p>
+<p>In the biquaternion framework a state is an element of the algebra $\mathbb{B}$. Its label takes two values, and the state is written $\tilde{Ξ}^{\mathrm{spn}}_L$ or $\tilde{Ξ}^{\mathrm{spn}}_R$ accordingly; a general element has an L part and an R part, and left multiplication keeps the label. The framework calls the carrier of states the state module; in this article the carrier is the algebra, and a state is an element. The question of this article follows at once: the carrier of states is an element of $\mathbb{B}$ and the left action on it carries spin $\tfrac12$, so where does a spin-$0$ value live, and why is it not a value of that action?</p>
 <p>The answer worked out below is that a scalar field takes its value in the <strong>centre</strong> of the algebra, $\mathbb{C}_{\mathbb{B}}$, and that it escapes the carrier of states for three reasons that turn out to be one reason seen three ways. The centre is the set of elements fixed by the conjugation action of every rotation. It is a subalgebra, and it is not stable under left multiplication: multiplying a central value by a general element carries it out of the centre. No one-dimensional subspace of $\mathbb{B}$ is carried into itself by every left multiplication, so the trivial action has no carrier. And the trivial action of the rotation subgroup appears in a product of two states, not in a single state. The scalar is a value in the centre, not a value of the state action.</p>
 <p>The companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em> reached a related conclusion from the equation rather than from the algebra. It found that the second-order scalar equation decouples into four independent scalar equations because the d'Alembertian is central and scalar, that its host is the centre $\mathbb{C}_{\mathbb{B}}$, and that the second-order structure does <strong>not</strong> organize itself by the material/informational split of the algebra. The present article supplies the algebraic reason behind that verdict. It shows <em>why</em> the centre is the scalar's home, why neither $\mathbb{M}_-$ nor $\mathbb{M}_+$ can host it as a carrier, and how the sector split should be read when the field is a scalar: not as particle and antiparticle, and not as state and operator, but as the real and imaginary parts of one complex number.</p>
 <p>The article is organized as follows. The carrier of states and the spin it carries are recalled first. Then the centre is characterized, by the centralizer computation that fixes it as the rotationally invariant subspace. Then the three obstructions are stated and proved. Then the sector question is settled. Then the scalar field and its equation are written in the centre. A final section records the composite route, in which a scalar is built as a product of two states rather than as an element of the carrier.</p>
@@ -91,18 +91,18 @@ $$</p>
 </ul>
 <h2 id="the-carrier-of-states-and-the-spin-it-carries">The Carrier of States and the Spin It Carries</h2>
 <h3 id="a-state-is-an-element">A State Is an Element</h3>
-<p>A state is an element $\tilde\psi$ of $\mathbb{B}$. Its label takes two values; the element is written $\tilde\psi_L$ in the first and $\tilde\psi_R$ in the second, and a general element is $\tilde\psi=\tilde\psi_L+\tilde\psi_R$. Left multiplication keeps the label, and a product takes the label of its right factor. These two facts are the whole of the label's behaviour, and no formula is needed for them.</p>
-<p>The L part is stable under left multiplication, so it is a carrier of the left action in its own right, and the left action on it is what this article asks about. The algebra acts on it by left multiplication, $\tilde\psi\mapsto\tilde{Q}\tilde\psi$, and the action is complex-linear because the scalar imaginary $i$ is central. The carrier is $\mathbb{B}$ itself: a state is an element, and no array enters the description.</p>
-<p>Two features are used constantly. First, a state that carries a pure state is a zero divisor. Let $\tilde\Pi(\vec u)$ be a pure state of the informational sector, with $\vec u$ the unit direction the preparation supplies; a state that carries it satisfies $\tilde\psi\tilde\Pi(\vec u)=\tilde\psi$. Then, for nonzero $\tilde\psi$, $\tilde\psi(e_t-\tilde\Pi(\vec u))=0$ with $e_t-\tilde\Pi(\vec u)\neq0$, so $\tilde\psi$ is a zero divisor. Second, the pure state carries the direction $\vec u$ and nothing else: under the conjugation action of a rotation it goes to the pure state whose direction is the rotated unit, and a rotation about $\vec u$ fixes it.</p>
+<p>A state is an element $\tilde{Ξ}^{\mathrm{spn}}$ of $\mathbb{B}$. Its label takes two values; the element is written $\tilde{Ξ}^{\mathrm{spn}}_L$ in the first and $\tilde{Ξ}^{\mathrm{spn}}_R$ in the second, and a general element is $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$. Left multiplication keeps the label, and a product takes the label of its right factor. These two facts are the whole of the label's behaviour, and no formula is needed for them.</p>
+<p>The L part is stable under left multiplication, so it is a carrier of the left action in its own right, and the left action on it is what this article asks about. The algebra acts on it by left multiplication, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Q}\tilde{Ξ}^{\mathrm{spn}}$, and the action is complex-linear because the scalar imaginary $i$ is central. The carrier is $\mathbb{B}$ itself: a state is an element, and no array enters the description.</p>
+<p>Two features are used constantly. First, a state that carries a pure state is a zero divisor. Let $\tilde\Pi(\vec u)$ be a pure state of the informational sector, with $\vec u$ the unit direction the preparation supplies; a state that carries it satisfies $\tilde{Ξ}^{\mathrm{spn}}\tilde\Pi(\vec u)=\tilde{Ξ}^{\mathrm{spn}}$. Then, for nonzero $\tilde{Ξ}^{\mathrm{spn}}$, $\tilde{Ξ}^{\mathrm{spn}}(e_t-\tilde\Pi(\vec u))=0$ with $e_t-\tilde\Pi(\vec u)\neq0$, so $\tilde{Ξ}^{\mathrm{spn}}$ is a zero divisor. Second, the pure state carries the direction $\vec u$ and nothing else: under the conjugation action of a rotation it goes to the pure state whose direction is the rotated unit, and a rotation about $\vec u$ fixes it.</p>
 <h3 id="the-left-action-carries-spin-one-half">The Left Action Carries Spin One-Half</h3>
-<p>The rotation subgroup acts on a state by left multiplication, $\tilde\psi\mapsto\tilde r\tilde\psi$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_k$, and the sum of their squares in the algebra is</p>
+<p>The rotation subgroup acts on a state by left multiplication, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde r\tilde{Ξ}^{\mathrm{spn}}$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_k$, and the sum of their squares in the algebra is</p>
 <p>$$
 \tilde S_1^2+\tilde S_2^2+\tilde S_3^2=\tfrac{3\hbar^2}{4}\,e_t .
 $$</p>
 <p>The computation is one line from the squares of the generators, $\vec e_k^2=-e_t$; the value was checked by recomputation and is exact.</p>
 <p>Left multiplication by a central element is the identity map of $\mathbb{B}$. The left action of the Casimir is therefore multiplication by $\tfrac{3\hbar^2}{4}$ on every element, and on every irreducible piece of the left action the spin convention gives $s(s+1)=\tfrac34$, hence $s=\tfrac12$. The L part is stable under left multiplication and carries the same Casimir, so its pieces carry $s=\tfrac12$. The carrier of states carries spin one-half.</p>
 <h3 id="no-state-is-rotationally-invariant">No State Is Rotationally Invariant</h3>
-<p>A state cannot be fixed by every rotation. If $\tilde r\tilde\psi=\tilde\psi$ for every unit real quaternion $\tilde r$, the choice $\tilde r=-e_t$ gives $-\tilde\psi=\tilde\psi$, hence $\tilde\psi=0$. No nonzero state is rotation-invariant.</p>
+<p>A state cannot be fixed by every rotation. If $\tilde r\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}$ for every unit real quaternion $\tilde r$, the choice $\tilde r=-e_t$ gives $-\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}$, hence $\tilde{Ξ}^{\mathrm{spn}}=0$. No nonzero state is rotation-invariant.</p>
 <p>The pure state carries the direction $\vec u$ that the preparation supplies, and a rotation of the frame carries it to the pure state whose direction is the rotated unit, while a rotation about $\vec u$ fixes it. A rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends the direction $\vec e_z$ to $(-0.586,-0.524,0.618)$, a unit vector. The direction is what the preparation supplies, and the rotation moves it.</p>
 <p>A scalar field is the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.</p>
 <h2 id="the-centre-and-its-trivial-representation">The Centre and Its Trivial Representation</h2>
@@ -140,7 +140,7 @@ $$</p>
 <h2 id="three-obstructions-one-reason">Three Obstructions, One Reason</h2>
 <p>The carrier of states cannot host a spin-$0$ field for three reasons, one for each object involved: the carrier, the algebra, and the product of two states.</p>
 <h3 id="no-one-dimensional-carrier">No One-Dimensional Carrier</h3>
-<p>Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde\psi$ in it. Then $\tilde{Q}\tilde\psi=\lambda(\tilde{Q})\tilde\psi$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_k^2=-e_t$,</p>
+<p>Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}^{\mathrm{spn}}$ in it. Then $\tilde{Q}\tilde{Ξ}^{\mathrm{spn}}=\lambda(\tilde{Q})\tilde{Ξ}^{\mathrm{spn}}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_k^2=-e_t$,</p>
 <p>$$
 \lambda(\vec e_k)^2=-1,
 $$</p>
@@ -152,54 +152,54 @@ $$</p>
 <p>The consequence is immediate. A scalar field carries the trivial action: the algebra does nothing to its value. If that value were a carrier of the left action, the carrier would be one-dimensional and invariant. No such subspace exists. The value of a scalar is therefore not a value of the state action. The carrier is not "the carrier with spin $0$" as against "the carrier with spin $\tfrac{1}{2}$": every carrier of the left action is at least two-dimensional and carries spin $\tfrac{1}{2}$. The spin-$0$ value has to be found outside the carrier.</p>
 <h3 id="the-invariant-subspace-is-the-centre">The Invariant Subspace Is the Centre</h3>
 <p>If one insists on locating the scalar inside the algebra rather than in a carrier, the centralizer computation settles where. Under the rotation subgroup the algebra separates into spin $0$ and spin $1$. Under the full Lorentz action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ there is no nonzero invariant, because each sector is carried into itself and carries the four-vector action; the centre, fixed by the rotations, is carried out of itself by a boost. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{C}_{\mathbb{B}}$, and there is nothing else it could take them in.</p>
-<p>It is worth stating plainly how the scalar relates to the action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; under rotations that action splits into the time component, spin $0$, and the spatial vector, spin $1$. The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$ with $x'=\Lambda x$, and no algebraic factor acts on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.</p>
+<p>It is worth stating plainly how the scalar relates to the action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; under rotations that action splits into the time component, spin $0$, and the spatial vector, spin $1$. The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{Ξ}'(x')=\tilde{Ξ}(x)$ with $x'=\Lambda x$, and no algebraic factor acts on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.</p>
 <h3 id="the-trivial-representation-lives-in-a-product">The Trivial Representation Lives in a Product</h3>
 <p>There is a third way to see why the scalar is not a value of the state action, and it explains where scalars actually come from. The L part carries the two-dimensional action of one label, the R part the other, and the product of the two contains the trivial action once and the three-dimensional action once under the rotation subgroup. The trivial piece is the product channel; it is not a part of either factor. Under the full Lorentz group the product is the four-vector action, so the rotation-trivial piece is the time component of a four-vector rather than a Lorentz scalar.</p>
 <p>The Lorentz scalars come from two pairings. The antisymmetric pairing of two states of one label is invariant, and the mixed pairing of two states of opposite labels,</p>
 <p>$$
-\mathfrak{b}(\tilde\psi,\tilde\chi)=2\,\mathrm{Sc}\!\left(\tilde\psi^{*}\tilde\chi\right),
+\mathfrak{b}(\tilde{Ξ}^{\mathrm{spn}},\tilde\xi)=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\mathrm{spn}*}\tilde\xi\right),
 $$</p>
-<p>is invariant when the second state carries the dual transformation $\tilde\chi\mapsto(\tilde{U}^{*})^{\natural}\tilde\chi$, because the two factors $\tilde{U}^{*}$ and $(\tilde{U}^{*})^{\natural}$ then cancel, $\tilde{U}^{*}(\tilde{U}^{*})^{\natural}=e_t$ for a unit-norm $\tilde{U}$. Both are complex numbers, hence central multiples of $e_t$. A scalar is therefore not an element of the carrier but a pairing of two elements, and the pairing takes its value in the centre.</p>
+<p>is invariant when the second state carries the dual transformation $\tilde\xi\mapsto(\tilde{U}^{*})^{\natural}\tilde\xi$, because the two factors $\tilde{U}^{*}$ and $(\tilde{U}^{*})^{\natural}$ then cancel, $\tilde{U}^{*}(\tilde{U}^{*})^{\natural}=e_t$ for a unit-norm $\tilde{U}$. Both are complex numbers, hence central multiples of $e_t$. A scalar is therefore not an element of the carrier but a pairing of two elements, and the pairing takes its value in the centre.</p>
 <p>The four-vector channel is the Hermitian product</p>
 <p>$$
-H=\tfrac12\left(\tilde\psi\tilde\chi^{*}+\tilde\chi\tilde\psi^{*}\right)\in\mathbb{M}_+,
+H=\tfrac12\left(\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}^{\mathrm{spn}*}\right)\in\mathbb{M}_+,
 $$</p>
-<p>which is Hermitian for every pair, unlike the single product $\tilde\psi\tilde\chi^{*}$. Its scalar part is $\sigma=\mathrm{Sc}\,H$; the physical four-vector is $iH\in\mathbb{M}_-$, and $\sigma$ is the coefficient of its time direction. Under a rotation $\sigma$ is unchanged; under a boost it is not, and the next section records the check.</p>
+<p>which is Hermitian for every pair, unlike the single product $\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}$. Its scalar part is $\sigma=\mathrm{Sc}\,H$; the physical four-vector is $iH\in\mathbb{M}_-$, and $\sigma$ is the coefficient of its time direction. Under a rotation $\sigma$ is unchanged; under a boost it is not, and the next section records the check.</p>
 <p>This is the algebraic content of the standard fact that a spin-$0$ object can be built from two spin-$\tfrac{1}{2}$ objects but is not itself one: the trivial action of the rotation subgroup sits in the product, not in either factor. The companion article <em>The Dirac Equation in Biquaternionic Form</em> uses the same products when it forms the Dirac current and the Dirac scalar, and the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> develops the pairings and their invariance properties explicitly.</p>
 <h2 id="the-sector-question-neither-math135-nor-math136">The Sector Question: Neither $\mathbb{M}_-$ nor $\mathbb{M}_+$</h2>
 <p>The framework's central algebraic fact is the split into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$. The companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em> asked whether the second-order scalar structure organizes itself by this split, and found that it does not: because the d'Alembertian is central and scalar, the split merely separates a complex solution into its real and imaginary parts, giving two $i$-related copies of one real solution space rather than a particle–antiparticle or state–operator pair. The algebra above explains why, and it also says what the split <em>does</em> mean for a scalar.</p>
-<p>The scalar field's value space is the centre, and the centre meets each sector in exactly one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. A complex scalar $\tilde{\Phi}=\chi^{\mathrm{scl}} e_t$ with $\chi^{\mathrm{scl}}=\chi^{\mathrm{scl}}_1+i\chi^{\mathrm{scl}}_2$ and $\chi^{\mathrm{scl}}_1,\chi^{\mathrm{scl}}_2\in\mathbb{R}$ therefore splits as</p>
+<p>The scalar field's value space is the centre, and the centre meets each sector in exactly one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. A complex scalar $\tilde{Ξ}=\xi^{\mathrm{scl}} e_t$ with $\xi^{\mathrm{scl}}=\xi^{\mathrm{scl}}_1+i\xi^{\mathrm{scl}}_2$ and $\xi^{\mathrm{scl}}_1,\xi^{\mathrm{scl}}_2\in\mathbb{R}$ therefore splits as</p>
 <p>$$
-\tilde{\Phi}=\underbrace{\chi^{\mathrm{scl}}_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\chi^{\mathrm{scl}}_2\,ie_t}_{\in\,\mathbb{M}_-},
+\tilde{Ξ}=\underbrace{\xi^{\mathrm{scl}}_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\xi^{\mathrm{scl}}_2\,ie_t}_{\in\,\mathbb{M}_-},
 $$</p>
 <p>and the sector decomposition of a scalar field is nothing other than the decomposition of a complex number into its real and imaginary parts. This is the precise sense in which the negative verdict of the Klein–Gordon article is forced: the $\mathbb{M}_-/\mathbb{M}_+$ split cannot carry the particle–antiparticle doubling, because on the scalar line it is the real/imaginary-part split of a single complex number.</p>
 <p>The operations that act on that complex number must be kept distinct, and the same distinction settles the sector question completely.</p>
 <ul>
-<li><strong>Multiplication by $i$</strong> is central and exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, $i\mathbb{M}_-=\mathbb{M}_+$. On a scalar it maps $\chi^{\mathrm{scl}}_1e_t+\chi^{\mathrm{scl}}_2ie_t$ to $-\chi^{\mathrm{scl}}_2e_t+\chi^{\mathrm{scl}}_1ie_t$: it is a quarter-turn of the complex scalar line, exchanging its two real directions.</li>
-<li><strong>Complex conjugation $\bar{\cdot}$</strong> acts on the coefficients and preserves each sector. On a scalar it maps $\chi^{\mathrm{scl}}_1e_t+\chi^{\mathrm{scl}}_2ie_t$ to $\chi^{\mathrm{scl}}_1e_t-\chi^{\mathrm{scl}}_2ie_t$: it is the reflection of the complex line, and it produces the second solution of the second-order equation, $\bar{\tilde{\Phi}}$.</li>
+<li><strong>Multiplication by $i$</strong> is central and exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, $i\mathbb{M}_-=\mathbb{M}_+$. On a scalar it maps $\xi^{\mathrm{scl}}_1e_t+\xi^{\mathrm{scl}}_2ie_t$ to $-\xi^{\mathrm{scl}}_2e_t+\xi^{\mathrm{scl}}_1ie_t$: it is a quarter-turn of the complex scalar line, exchanging its two real directions.</li>
+<li><strong>Complex conjugation $\bar{\cdot}$</strong> acts on the coefficients and preserves each sector. On a scalar it maps $\xi^{\mathrm{scl}}_1e_t+\xi^{\mathrm{scl}}_2ie_t$ to $\xi^{\mathrm{scl}}_1e_t-\xi^{\mathrm{scl}}_2ie_t$: it is the reflection of the complex line, and it produces the second solution of the second-order equation, $\bar{\tilde{Ξ}}$.</li>
 <li><strong>Hermitian conjugation ${}^{*}$</strong> is the involution whose eigenspaces define the sectors; it is neither of the other two, and on the centre it agrees with $\bar{\cdot}$.</li>
 </ul>
-<p>These are three different maps, but only two distinct actions on the scalar line: the Hermitian star and complex conjugation coincide there, and multiplication by $i$ is the map that acts differently. The sector-exchanging map $i$ is not the conjugate-producing map $\bar{\cdot}$, and reading the conjugate pair $(\tilde{\Phi},\tilde{\Phi}^{*})$ as the sector pair $(\mathbb{M}_-,\mathbb{M}_+)$ is precisely the conflation the companion article warns against. The centre makes the distinction visible: complex conjugation has real fixed points in the centre, the direction $e_t$; multiplication by $i$ has none.</p>
+<p>These are three different maps, but only two distinct actions on the scalar line: the Hermitian star and complex conjugation coincide there, and multiplication by $i$ is the map that acts differently. The sector-exchanging map $i$ is not the conjugate-producing map $\bar{\cdot}$, and reading the conjugate pair $(\tilde{Ξ},\tilde{Ξ}^{*})$ as the sector pair $(\mathbb{M}_-,\mathbb{M}_+)$ is precisely the conflation the companion article warns against. The centre makes the distinction visible: complex conjugation has real fixed points in the centre, the direction $e_t$; multiplication by $i$ has none.</p>
 <h2 id="the-scalar-field-in-the-centre">The Scalar Field in the Centre</h2>
 <p>With the value space fixed, the scalar field is written down at once. A spin-$0$ field of mass $m$ is a function into the centre,</p>
 <p>$$
-\tilde{\Phi}(x)=\chi^{\mathrm{scl}}(x)\,e_t,
+\tilde{Ξ}(x)=\xi^{\mathrm{scl}}(x)\,e_t,
 \qquad
-\chi^{\mathrm{scl}}(x)\in\mathbb{C},
+\xi^{\mathrm{scl}}(x)\in\mathbb{C},
 $$</p>
 <p>and it obeys the Klein–Gordon equation in the form of the companion article,</p>
 <p>$$
-\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\tilde{\Phi}=0,
+\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ}=0,
 $$</p>
 <p>with $\Box$ the d'Alembertian, central and scalar. Because $\Box$ is central and scalar, it acts coefficient by coefficient, and on a central field the equation is the ordinary complex scalar Klein–Gordon equation</p>
 <p>$$
-\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\chi^{\mathrm{scl}}=0,
+\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\xi^{\mathrm{scl}}=0,
 $$</p>
 <p>with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.</p>
 <p>The plane-wave solutions exhibit the same point. With the four-position $\tilde R$ and the four-wavevector $\tilde P/\hbar$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot\vec x-\omega t'$, and the positive-frequency solution is</p>
 <p>$$
-\tilde{\Phi}=\chi^{\mathrm{scl}}_0\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar\right)e_t
-=\chi^{\mathrm{scl}}_0\,\exp\!\left(i(\vec k\cdot\vec x-\omega t')\right)e_t .
+\tilde{Ξ}=\xi^{\mathrm{scl}}_0\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar\right)e_t
+=\xi^{\mathrm{scl}}_0\,\exp\!\left(i(\vec k\cdot\vec x-\omega t')\right)e_t .
 $$</p>
 <p>The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,</p>
 <p>$$
@@ -215,18 +215,18 @@ $$</p>
 <p>One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the <em>operator</em>, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.</p>
 <h2 id="scalars-from-two-states-the-composite-route">Scalars from Two States: The Composite Route</h2>
 <p>The three obstructions say that a scalar is not a value of the state action. They do not say that the states are irrelevant to scalar physics, and it is worth recording how scalars actually appear in the standard model, because the framework reproduces the mechanism.</p>
-<p>A Lorentz-invariant scalar built from two states is a product, but not every product is one. If $\tilde\psi,\tilde\chi$ are states, the product $\tilde\psi\tilde\chi^{*}$ is an element of $\mathbb{B}$; it is Hermitian only for special pairs, so in general it is not a four-vector. The object that is Hermitian for every pair is the symmetrised product</p>
+<p>A Lorentz-invariant scalar built from two states is a product, but not every product is one. If $\tilde{Ξ}^{\mathrm{spn}},\tilde\xi$ are states, the product $\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}$ is an element of $\mathbb{B}$; it is Hermitian only for special pairs, so in general it is not a four-vector. The object that is Hermitian for every pair is the symmetrised product</p>
 <p>$$
-H=\tfrac12\left(\tilde\psi\tilde\chi^{*}+\tilde\chi\tilde\psi^{*}\right)\in\mathbb{M}_+,
+H=\tfrac12\left(\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}^{\mathrm{spn}*}\right)\in\mathbb{M}_+,
 \qquad
-\sigma=\mathrm{Sc}\,H=\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde\psi\tilde\chi^{*}\right),
+\sigma=\mathrm{Sc}\,H=\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}\right),
 $$</p>
-<p>and its scalar part $\sigma$ is real. Under a Lorentz transformation the states transform by left multiplication, $\tilde\psi\mapsto\tilde{U}\tilde\psi$ and $\tilde\chi\mapsto\tilde{U}\tilde\chi$, so</p>
+<p>and its scalar part $\sigma$ is real. Under a Lorentz transformation the states transform by left multiplication, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{U}\tilde{Ξ}^{\mathrm{spn}}$ and $\tilde\xi\mapsto\tilde{U}\tilde\xi$, so</p>
 <p>$$
 H\;\longmapsto\;\tilde{U}\,H\,\tilde{U}^{*},
 $$</p>
 <p>which is the four-vector action on $\mathbb{M}_+$; the physical four-vector is $iH\in\mathbb{M}_-$. The scalar part $\sigma$ is invariant under the rotation subgroup, where $\tilde U^{*}=\tilde U^{-1}$, but <strong>not</strong> under boosts, where $\tilde U^{*}\tilde U\neq e_t$. The object $H$ is therefore the four-vector channel, and $\sigma$ is the coefficient of its time direction, not a Lorentz scalar; this is the algebraic form of the standard statement that the squared norm of a state is the time component of the four-current, not an invariant.</p>
-<p>A check makes the behaviour explicit. Take $\tilde\psi=\tilde\Pi(\vec e_z)$ and $\tilde\chi=\tilde\Pi(\vec e_z)+0.3\,\vec e_x$. A rotation of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ leaves $\sigma$ unchanged, with residual $0$. A boost of rapidity $1.3$ along $\vec e_x$ multiplies $\sigma$ by $\cosh 1.3=1.9709$.</p>
+<p>A check makes the behaviour explicit. Take $\tilde{Ξ}^{\mathrm{spn}}=\tilde\Pi(\vec e_z)$ and $\tilde\xi=\tilde\Pi(\vec e_z)+0.3\,\vec e_x$. A rotation of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ leaves $\sigma$ unchanged, with residual $0$. A boost of rapidity $1.3$ along $\vec e_x$ multiplies $\sigma$ by $\cosh 1.3=1.9709$.</p>
 <p>The Lorentz-invariant scalars are instead the two pairings developed in the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>. The antisymmetric pairing of two states of one label is invariant, and the mixed pairing of two states of opposite labels is invariant for the reason given above. Both are invariant complex numbers, hence central multiples of $e_t$; the Hermitian channel, by contrast, gives the four-vector $H$ just described. This is the algebraic form of the standard statements that one bilinear is a Lorentz scalar while the squared norm of a single state is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such products. The scalar does not live in the state; it is a <em>product of two states</em>, and the product takes its value in the centre.</p>
 <p>The distinction between the two routes is the distinction the title names. A state is an element and carries spin $\tfrac{1}{2}$ whether or not it is a solution of any particular equation. A field built from two states can be a scalar, and it lives in the centre. The Klein–Gordon field is of the second kind: it is the invariant channel of a product promoted to an independent field, which is why its equation is second order, why it decouples from the first-order structure, and why the material/informational split applies to it only as the real/imaginary split of one complex number.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -253,7 +253,7 @@ $$</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body writes no $\gamma$: the letter appears only in this closing dictionary.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
@@ -262,13 +262,13 @@ $$</p>
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$, is a different object: it is the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$, and it is represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$, is a different object: it is the difference of the two central idempotents of the complexified algebra, so $\xi_{\mathrm{ad}}^2=e_t$, and it is represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_k$ has Casimir $\tfrac{3\hbar^2}{4}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.</p>
 <p>The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{C}_{\mathbb{B}}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.</p>
-<p>For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{\Phi}=\chi^{\mathrm{scl}} e_t$ with $\chi^{\mathrm{scl}}$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{\Phi}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.</p>
+<p>For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{M}_+$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{M}_-$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{Ξ}=\xi^{\mathrm{scl}} e_t$ with $\xi^{\mathrm{scl}}$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{Ξ}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -303,7 +303,7 @@ $$</p>
 <td>Centre of $\mathbb{B}$; the scalar field's value space</td>
 </tr>
 <tr>
-<td>$\tilde\psi$, $\tilde\psi_L$, $\tilde\psi_R$</td>
+<td>$\tilde{Ξ}^{\mathrm{spn}}$, $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$</td>
 <td>A state and its two labelled parts</td>
 </tr>
 <tr>
@@ -315,15 +315,15 @@ $$</p>
 <td>Rotation generator; the left action has Casimir $\tfrac{3\hbar^2}{4}e_t$</td>
 </tr>
 <tr>
-<td>$\tilde\Phi=\chi^{\mathrm{scl}} e_t$</td>
+<td>$\tilde{Ξ}=\xi^{\mathrm{scl}} e_t$</td>
 <td>Scalar (spin-$0$) field, valued in the centre</td>
 </tr>
 <tr>
-<td>$\chi^{\mathrm{scl}}=\chi^{\mathrm{scl}}_1+i\chi^{\mathrm{scl}}_2$</td>
+<td>$\xi^{\mathrm{scl}}=\xi^{\mathrm{scl}}_1+i\xi^{\mathrm{scl}}_2$</td>
 <td>Complex scalar coefficient</td>
 </tr>
 <tr>
-<td>$H=\tfrac12(\tilde\psi\tilde\chi^{*}+\tilde\chi\tilde\psi^{*})$</td>
+<td>$H=\tfrac12(\tilde{Ξ}^{\mathrm{spn}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}^{\mathrm{spn}*})$</td>
 <td>Hermitian product of two states, in $\mathbb{M}_+$</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ $$</p>
 <td>Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar</td>
 </tr>
 <tr>
-<td>$\mathfrak{b}(\tilde\psi,\tilde\chi)=2\,\mathrm{Sc}(\tilde\psi^{*}\tilde\chi)$</td>
+<td>$\mathfrak{b}(\tilde{Ξ}^{\mathrm{spn}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}\tilde\xi)$</td>
 <td>Mixed pairing of two states of opposite labels</td>
 </tr>
 <tr>

@@ -112,7 +112,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 \qquad
 \langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma^2},
 $$
-with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\chi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\chi^{\mathrm{scp}}$.</p>
+with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\xi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\xi^{\mathrm{scp}}$.</p>
 <p><strong>Solution (a).</strong> Differentiate $t'_r = t' - R/c$ at fixed field point. Since $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)|$,
 $$
 \frac{\partial R}{\partial t'} = -\vec u_R\cdot\vec v\,\frac{\partial t'_r}{\partial t'},
@@ -158,9 +158,9 @@ so that the coordinate velocity $\tilde{V}/\gamma$ has $\langle\tilde{V}/\gamma\
 Thus the whole construction is built from one null and one timelike element of $\mathbb{M}_-$, paired through the single scale $D$.</p>
 <p><strong>Solution (c).</strong> Writing $\tilde{A} = i\,a'_te_t + \vec A$ and using $\epsilon\mu c^2 = 1$,
 $$
-\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D},
+\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D},
 \qquad
-\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
+\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\xi^{\mathrm{scp}} .
 $$</p>
 <p>The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.</p>
 <h2 id="problem-2-the-field-strength-and-the-velocityacceleration-split">Problem 2: The Field Strength and the Velocity–Acceleration Split</h2>
@@ -305,16 +305,16 @@ The acceleration field opposes the retarded transverse acceleration, and it is $
 <p><strong>Statement.</strong> (a) State the direction convention for the boost rotor and verify it on the rest four-velocity. (b) Determine the correct transformation law of the field-strength biquaternion under a boost and show that it is <em>not</em> the four-vector rotor conjugation $\tilde{F}\mapsto\tilde U^{\mathrm{lor}}\tilde{F}\tilde U^{\mathrm{lor}}{}^{*}$, where $\tilde U^{\mathrm{lor}}$ is a general Lorentz rotor. (c) Use it to confirm that the velocity field of a uniformly moving charge is the boost of the Coulomb field, as the parent asserts.</p>
 <p><strong>Solution (a).</strong> The convention, fixed by the relativity exercises, is that
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u,
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u,
 \qquad
-\tanh\psi_b = \frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}}_b = \frac{v_b}{c},
 $$
 carries the <em>laboratory</em> to the frame moving with $+\vec v_b$. Applied to the rest four-velocity $\tilde{V}_0 = ic\,e_t$ it gives
 $$
 \tilde U_{\mathrm b}\,\tilde{V}_0\,\tilde U_{\mathrm b}^{*}
 = ic\,e_t\,\tilde U_{\mathrm b}^2
-= ic\left(\cosh\psi_b + i\sinh\psi_b\,\vec u\right)
-= ic\cosh\psi_b - c\sinh\psi_b\,\vec u,
+= ic\left(\cosh\theta^{\mathrm{rpd}}_b + i\sinh\theta^{\mathrm{rpd}}_b\,\vec u\right)
+= ic\cosh\theta^{\mathrm{rpd}}_b - c\sinh\theta^{\mathrm{rpd}}_b\,\vec u,
 $$
 whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$ generates the inverse (moving-to-lab) transformation.</p>
 <p><strong>Solution (b).</strong> The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ is defined for four-vectors, and it does <em>not</em> give the correct field transformation. The correct law for a pure boost is the similarity
@@ -490,7 +490,7 @@ with $\tilde{\mathcal L}^{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde
 <td>Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$</td>
+<td>$\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u$</td>
 <td>Boost rotor; carries lab to the frame moving with $+\vec v_b$</td>
 </tr>
 <tr>

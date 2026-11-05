@@ -93,7 +93,7 @@ $$</p>
 <h3 id="from-the-coulomb-integral-to-the-series">From the Coulomb Integral to the Series</h3>
 <p>Let a charge distribution of density $\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the Coulomb integral</p>
 <p>$$
-\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 .
+Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 .
 $$</p>
 <p>The kernel is expanded by the standard Legendre expansion. Writing $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $r_2 = |x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z|$, $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, $\vec u_2 = (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)/r_2$, and $\cos\gamma = \vec u\cdot\vec u_2$, the expansion is</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 <h3 id="the-spherical-harmonic-form">The Spherical-Harmonic Form</h3>
 <p>Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the <strong>spherical multipole expansion</strong></p>
 <p>$$
-\boxed{\;\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
+\boxed{\;Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
 $$</p>
 <p>with the <strong>spherical multipole moments</strong></p>
 <p>$$
@@ -116,14 +116,14 @@ $$</p>
 <p>$$
 ϙ = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,d^3x_2 ,
 $$</p>
-<p>and the monopole potential is $\Phi_{mon} = ϙ/(4\pi\epsilon_0 r)$.</p>
+<p>and the monopole potential is $Ξ_{mon} = ϙ/(4\pi\epsilon_0 r)$.</p>
 <p><strong>Dipole ($l = 1$).</strong> The three moments are the components of the <strong>dipole moment vector</strong></p>
 <p>$$
 \vec p = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,d^3x_2,
 $$</p>
 <p>and the dipole potential is</p>
 <p>$$
-\Phi_{dip}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\vec u}{r^2}.
+Ξ_{dip}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\vec u}{r^2}.
 $$</p>
 <p><strong>Quadrupole ($l = 2$).</strong> The five independent moments are those of the <strong>quadrupole tensor</strong></p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p>which is symmetric, $\mathcal{Q}_{ij} = \mathcal{Q}_{ji}$, and traceless, $\mathcal{Q}_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The quadrupole potential is</p>
 <p>$$
-\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
+Ξ_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
 $$</p>
 <p>The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a spherically symmetric $1/r^3$ term, which is not a pure $l=2$ object; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r_2^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.</p>
 <h3 id="the-tower-and-its-ordering">The Tower and Its Ordering</h3>
@@ -159,7 +159,7 @@ $$</p>
 $$</p>
 <p>whose scalar coefficient is imaginary and whose vector part is real. In the electrostatic limit $\vec A = 0$, and the four-potential reduces to the purely imaginary central element $(i\,a'_t)\,e_t$, still an element of $\mathbb{M}_-$: the scalar part of a four-potential is imaginary, and it is that imaginary scalar coefficient that marks the sector. The constant factor $i/c$ plays no role in the statics, and it is convenient to work with the rescaled central element</p>
 <p>$$
-\tilde{\Phi} = \Phi\,e_t ,
+\tilde{Ξ} = Ξ\,e_t ,
 $$</p>
 <p>a real, Hermitian central element. It is not itself the four-potential — that is $(i\,a'_t)\,e_t$ — but the scalar potential, and the gradients below are the same for either normalisation.</p>
 <p>The spatial derivative operator is the vector part of the biquaternionic gradient,</p>
@@ -168,14 +168,14 @@ $$</p>
 $$</p>
 <p>so that $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$. Acting on a central element, $\vec\nabla$ produces a pure real vector,</p>
 <p>$$
-\vec\nabla(\Phi\,e_t) = (\partial/\partial Q_x\,\Phi)\vec e_x + (\partial/\partial Q_y\,\Phi)\vec e_y + (\partial/\partial Q_z\,\Phi)\vec e_z ,
+\vec\nabla(Ξ\,e_t) = (\partial/\partial Q_x\,Ξ)\vec e_x + (\partial/\partial Q_y\,Ξ)\vec e_y + (\partial/\partial Q_z\,Ξ)\vec e_z ,
 $$</p>
-<p>which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nabla\Phi$, the object computed is $\vec\nabla\Phi = -\vec E$, a pure real vector, an element of the vector part of $\mathbb{H}_{\mathbb{B}}$, and hence of $\mathbb{M}_-$.</p>
+<p>which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nablaΞ$, the object computed is $\vec\nablaΞ = -\vec E$, a pure real vector, an element of the vector part of $\mathbb{H}_{\mathbb{B}}$, and hence of $\mathbb{M}_-$.</p>
 <p><strong>The spatial Laplacian.</strong> A fact used twice below is that the second power of the vector gradient is minus the Laplacian,</p>
 <p>$$
 \vec\nabla\,\vec\nabla = \sum_{i,j}e_i e_j\,\partial^2/\partial Q_i\partial Q_j = -\sum_i \partial^2/\partial Q_i^2\,e_t = -\Delta\,e_t .
 $$</p>
-<p>The antisymmetric part of the quaternion product, $\sum_{i<j}(e_i e_j - e_j e_i)\partial^2/\partial Q_i\partial Q_j$, vanishes because the partial derivatives commute, so only the trace survives. This has been verified symbolically: for a quadratic potential $\Phi$ with Hessian $H$, the combination $\sum_{ij}e_i e_j\,H_{ij}$ equals $-\mathrm{tr}(H)e_t$ exactly, and the traceless symmetric part of the Hessian never appears.</p>
+<p>The antisymmetric part of the quaternion product, $\sum_{i<j}(e_i e_j - e_j e_i)\partial^2/\partial Q_i\partial Q_j$, vanishes because the partial derivatives commute, so only the trace survives. This has been verified symbolically: for a quadratic potential $Ξ$ with Hessian $H$, the combination $\sum_{ij}e_i e_j\,H_{ij}$ equals $-\mathrm{tr}(H)e_t$ exactly, and the traceless symmetric part of the Hessian never appears.</p>
 <h3 id="the-field-strength-biquaternion">The Field-Strength Biquaternion</h3>
 <p>The field-strength biquaternion of the companion electromagnetic articles is</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 <p>For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{H}_{\mathbb{B}}$.</p>
 <h2 id="the-monopole-and-the-dipole-as-algebra-elements">The Monopole and the Dipole as Algebra Elements</h2>
 <h3 id="the-monopole">The Monopole</h3>
-<p>The monopole moment is a scalar, and in the algebra it is the central element $ϙ\,e_t \in \mathbb{C}_{\mathbb{B}}$. Under a rotation the centre is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $ϙ\Phi(0)$ is likewise a central scalar.</p>
+<p>The monopole moment is a scalar, and in the algebra it is the central element $ϙ\,e_t \in \mathbb{C}_{\mathbb{B}}$. Under a rotation the centre is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $ϙΞ(0)$ is likewise a central scalar.</p>
 <h3 id="the-dipole">The Dipole</h3>
 <p>The dipole moment is a vector,</p>
 <p>$$
@@ -196,7 +196,7 @@ $$</p>
 <p>a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an <strong>element of the algebra</strong>. Two consequences follow.</p>
 <p><strong>The dipole potential.</strong> With the unit radial quaternion $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, satisfying $\vec u^2 = -e_t$, the dipole potential is</p>
 <p>$$
-\Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\vec u\right)}{r^2},
+Ξ_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\vec u\right)}{r^2},
 $$</p>
 <p>because $\mathrm{Sc}(\tilde{p}\vec u) = -\vec p\cdot\vec u$ for pure real vectors.</p>
 <p><strong>The dipole interaction.</strong> The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E$ one has $\tilde{p}\tilde E = -\vec p\cdot\vec E + \vec p\times\vec E$, so</p>
@@ -204,7 +204,7 @@ $$</p>
 -\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E\right)e_t = \tfrac12\left(\tilde{p}\tilde E + \tilde E\tilde{p}\right).
 $$</p>
 <p>The pairing is the <strong>symmetrized product</strong> of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$.</p>
-<p>The dipole is thus the first non-trivial multipole for which the moment is an algebra element and the moment–field coupling is an algebra product — the monopole is the trivial case, a scalar whose coupling $ϙ\Phi(0) = (qe_t)(\Phi e_t)$ is an algebra product too. The dipole is the model for what the algebra can do; the quadrupole is where that stops.</p>
+<p>The dipole is thus the first non-trivial multipole for which the moment is an algebra element and the moment–field coupling is an algebra product — the monopole is the trivial case, a scalar whose coupling $ϙΞ(0) = (qe_t)(Ξ e_t)$ is an algebra product too. The dipole is the model for what the algebra can do; the quadrupole is where that stops.</p>
 <h2 id="the-quadrupole-tensor-and-its-interaction">The Quadrupole Tensor and Its Interaction</h2>
 <h3 id="the-moment-as-a-tensor">The Moment as a Tensor</h3>
 <p>The quadrupole moment is not a vector but a symmetric traceless rank-two tensor,</p>
@@ -215,33 +215,33 @@ $$</p>
 <h3 id="the-quadrupole-potential">The Quadrupole Potential</h3>
 <p>The potential of a quadrupole is the $l = 2$ term of the expansion,</p>
 <p>$$
-\boxed{\;\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
+\boxed{\;Ξ_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j\;},
 $$</p>
 <p>and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.</p>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
-<p>The interaction energy of a bounded charge distribution with an external potential $\Phi_{ext}$ is $W = \int\rho\,\Phi_{ext}\,d^3x_2$. Expanding $\Phi_{ext}$ about the origin,</p>
+<p>The interaction energy of a bounded charge distribution with an external potential $Ξ_{ext}$ is $W = \int\rho\,Ξ_{ext}\,d^3x_2$. Expanding $Ξ_{ext}$ about the origin,</p>
 <p>$$
-\Phi_{ext}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = \Phi(0) - x_{i,2} E_i(0) - \tfrac12 x_{i,2}x_{j,2}\,\partial/\partial Q_i\,E_j(0) + \cdots ,
+Ξ_{ext}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = Ξ(0) - x_{i,2} E_i(0) - \tfrac12 x_{i,2}x_{j,2}\,\partial/\partial Q_i\,E_j(0) + \cdots ,
 $$</p>
-<p>where $\vec E = -\vec\nabla\Phi$ is the external field. The quadratic term separates into a trace part and a traceless part once the second moments are written in terms of the quadrupole tensor,</p>
+<p>where $\vec E = -\vec\nablaΞ$ is the external field. The quadratic term separates into a trace part and a traceless part once the second moments are written in terms of the quadrupole tensor,</p>
 <p>$$
 \int\rho\,x_{i,2}x_{j,2}\,d^3x_2 = \tfrac13\,\mathcal{Q}_{ij} + \tfrac13\,\delta_{ij}\int\rho\,r_2^{\,2}d^3x_2 ,
 $$</p>
 <p>and the trace part contributes $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho\,r_2^{\,2}d^3x_2$. For an external field whose own sources lie outside the distribution, $\nabla\cdot\vec E$ vanishes wherever the distribution sits and that term drops, leaving the standard multipole expansion of the interaction energy,</p>
 <p>$$
-W = ϙ\,\Phi(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial Q_i\,E_j(0) + \cdots .
+W = ϙ\,Ξ(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial Q_i\,E_j(0) + \cdots .
 $$</p>
 <p>Separating off the trace term is what leaves the quadrupole entering the expansion through the traceless tensor $\mathcal{Q}_{ij}$ alone, and it is the same split that the representation-theoretic contraction below uses.</p>
-<p>The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_a\Phi_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $\Phi_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the signature of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r_2^{\,2}d^3x_2$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.</p>
+<p>The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_aΞ_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $Ξ_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the signature of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r_2^{\,2}d^3x_2$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.</p>
 <p>Two features of the quadrupole term deserve emphasis, because they are what the algebra will and will not see.</p>
-<p><strong>Only the traceless part of the field gradient matters.</strong> Since $\mathcal{Q}_{ii} = 0$ and $\partial/\partial Q_i\,E_j = -\partial^2/\partial Q_i\partial Q_j\,\Phi$ is symmetric in $i,j$, the contraction $\mathcal{Q}_{ij}\partial/\partial Q_i\,E_j$ receives contributions only from the traceless symmetric part of the field-gradient matrix. Writing</p>
+<p><strong>Only the traceless part of the field gradient matters.</strong> Since $\mathcal{Q}_{ii} = 0$ and $\partial/\partial Q_i\,E_j = -\partial^2/\partial Q_i\partial Q_j\,Ξ$ is symmetric in $i,j$, the contraction $\mathcal{Q}_{ij}\partial/\partial Q_i\,E_j$ receives contributions only from the traceless symmetric part of the field-gradient matrix. Writing</p>
 <p>$$
 \partial/\partial Q_i\,E_j = \tfrac13\delta_{ij}\,\nabla\cdot\vec E + T_{ij},
 \qquad T_{ii} = 0, \quad T_{ij} = T_{ji},
 $$</p>
 <p>the trace term drops against $\mathcal{Q}_{ii} = 0$. With the external field source-free at the location of the distribution, as assumed for the expansion above, the quadrupole interaction is therefore the pure contraction of two $D^{(2)}$ objects,</p>
 <p>$$
-\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,\Phi(0)\;}.
+\boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial Q_i\partial Q_j\,Ξ(0)\;}.
 $$</p>
 <p><strong>It is a scalar.</strong> Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the <em>value</em> of the quadrupole interaction. Its difficulty is with the <em>moment</em>, and that is the subject of the next section.</p>
 <h2 id="why-the-quadrupole-is-not-an-algebra-element">Why the Quadrupole Is Not an Algebra Element</h2>
@@ -268,7 +268,7 @@ $$</p>
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \quad\text{(as a complex representation of the rotations)},
 \qquad 1 + 3 = 4 .
 $$</p>
-<p>The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\chi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S^{(\mathrm{adj})}_3 = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.</p>
+<p>The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\xi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S^{(\mathrm{adj})}_3 = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.</p>
 <h3 id="where-the-quadrupole-does-live">Where the Quadrupole Does Live</h3>
 <p>The quadrupole is a symmetric traceless tensor over the vector part, and the natural algebraic home is the <strong>symmetric traceless square</strong> of $D^{(1)}$,</p>
 <p>$$
@@ -276,7 +276,7 @@ $$</p>
 \qquad \dim_{\mathbb{C}}\operatorname{sym}^2_0(D^{(1)}) = 5\;},
 $$</p>
 <p>which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is <em>outside</em> the algebra: it is a tensor built from two vectors, not a single element.</p>
-<p>The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,\Phi$. The quadrupole angular information is carried by the scalar field $\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the <em>product</em> of two gradient operators.</p>
+<p>The same conclusion can be read off the second derivative. From $\vec\nabla\vec\nabla = -\Delta\,e_t$, the iterated gradient of a scalar potential is a pure central element: the product of the two gradient operators annihilates the traceless symmetric part of $\partial^2/\partial Q_i\partial Q_j\,Ξ$. The quadrupole angular information is carried by the scalar field $Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — which has arbitrary angular dependence — and by the tensor of its second derivatives, but it is invisible to the <em>product</em> of two gradient operators.</p>
 <h3 id="the-invariant-statement">The Invariant Statement</h3>
 <p>It is worth stating the conclusion in the form the physics demands. A multipole moment is an <em>invariant of the source</em>: an integral over the source, a functional of the charge distribution. It is not an element of the value algebra of the field. The moments of order $l = 0$ and $l = 1$ happen to coincide with the two irreducible pieces of the algebra — the centre and the vector part — and so can be written as single biquaternions. The moments of order $l \geq 2$ cannot: they are tensors, functionals of the source, or, equivalently, coefficients in the angular expansion of a scalar field. The quadrupole is the first moment at which the finite dimension of the algebra becomes visible in the physics.</p>
 <p>This is not a defect of the framework. It is the same finite-dimensionality that the companion article on the Poisson bracket identifies as the obstruction to the canonical Heisenberg algebra inside $\mathbb{B}$:
@@ -285,7 +285,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{M}_-$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.</p>
 <p>The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are <strong>elements of the algebra</strong>, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is <strong>not</strong> an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.</p>
-<p>The quadrupole <strong>interaction</strong> is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial Q_i\partial Q_j\,\Phi(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.</p>
+<p>The quadrupole <strong>interaction</strong> is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial Q_i\partial Q_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.</p>
 <p>The multipole tower is infinite because the angular structure of a field on the sphere is infinite-dimensional; the algebra is finite because it is the value algebra of a two-state, four-vector structure. The first order at which the difference shows is the quadrupole.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -353,8 +353,8 @@ $$</p>
 <td>Scalar (central) part</td>
 </tr>
 <tr>
-<td>$\Phi$, $\Phi_{ext}$</td>
-<td>Scalar potential of the source, and an external potential; $\Phi_{mon}, \Phi_{dip}, \Phi_{quad}$ its multipole parts</td>
+<td>$Ξ$, $Ξ_{ext}$</td>
+<td>Scalar potential of the source, and an external potential; $Ξ_{mon}, Ξ_{dip}, Ξ_{quad}$ its multipole parts</td>
 </tr>
 <tr>
 <td>$\rho$</td>

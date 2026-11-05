@@ -71,7 +71,7 @@
         <h1 id="exercise-the-relativistic-kinematics-of-a-two-body-decay"><strong>Exercise: The Relativistic Kinematics of a Two-Body Decay</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic kinematics of a two-body decay, using the framework and the notation of the companion article <em>The Relativistic Two-Body Problem in Biquaternionic Form</em>. That article is the parent of this exercise: it sets up the kinematics, and what follows applies it. Nothing new is introduced, and every result below is obtained from the tools already defined there.</p>
-<p><strong>What is assumed.</strong> The algebra, the sectors, the conjugations and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The four-momentum is $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ with $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, the four-velocity $\tilde{V}$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, the rotor conjugation by the Lorentz rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the boost biquaternion are those of <em>Norm and Pairing Conventions</em> and <em>Operator and Calculus Conventions</em>, and the relative rapidity is $\psi_{\rm rel}$ with $\cosh\psi_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.</p>
+<p><strong>What is assumed.</strong> The algebra, the sectors, the conjugations and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The four-momentum is $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ with $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, the four-velocity $\tilde{V}$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, the rotor conjugation by the Lorentz rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the boost biquaternion are those of <em>Norm and Pairing Conventions</em> and <em>Operator and Calculus Conventions</em>, and the relative rapidity is $\theta^{\mathrm{rpd}}_{\rm rel}$ with $\cosh\theta^{\mathrm{rpd}}_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.</p>
 <p><strong>What is to be shown.</strong> The problems are: (1) the daughter energies and momentum in the centre-of-momentum frame of a parent at rest; (2) the general case of a moving parent, through the boost biquaternion the parent constructs; (3) the invariant mass of each pair in a three-body decay; (4) the threshold and the opening-angle conditions; (5) a numerical instance, checked to several digits; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.</p>
 <p><strong>Notation for the decay.</strong> A parent of mass $M$ decays into two daughters of masses $m_1, m_2$,
 $$
@@ -116,7 +116,7 @@ The speeds follow from $\vec p_a^* = \gamma_a^* m_a \vec v_a^*$ and $E_a^* = \ga
 $$
 v_a^* = \frac{p^*c^2}{E_a^*},
 \qquad
-\tanh\psi_a^* = \frac{p^*c}{E_a^*} .
+\tanh(\theta^{\mathrm{rpd}})^{*}_a = \frac{p^*c}{E_a^*} .
 $$</p>
 <p><strong>Threshold.</strong> A physical parent always has $M > |m_1 - m_2|$, so the second factor under the square root is positive. The radicand is therefore non-negative exactly when $M \ge m_1 + m_2$. At $M = m_1 + m_2$ one has $p^* = 0$ and $E_a^* = m_ac^2$: the daughters emerge at rest, and the decay has no kinetic energy to distribute. Hence the decay is kinematically allowed if and only if $M \ge m_1 + m_2$, i.e. if and only if the released energy
 $$
@@ -150,12 +150,12 @@ in the laboratory, so that $\vec V$ is the parent's velocity in the lab. (a) Con
 $$
 -\frac{i}{Mc}\tilde{P}^{\natural}_A
 = \frac{E}{Mc^2}e_t + i\frac{\vec P}{Mc}
-= \cosh\Psi\,e_t + i\sinh\Psi\,\vec u_V,
+= \cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u_V,
 $$
-with $\cosh\Psi = E/(Mc^2) = \Gamma$, $\sinh\Psi = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\Psi = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\Psi - \sinh^2\Psi = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
+with $\cosh\theta^{\mathrm{rpd}} = E/(Mc^2) = \Gamma$, $\sinh\theta^{\mathrm{rpd}} = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\theta^{\mathrm{rpd}} = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\theta^{\mathrm{rpd}} - \sinh^2\theta^{\mathrm{rpd}} = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
 $$
 \tilde U_{\rm CM} = \sqrt{-\frac{i}{Mc}\tilde{P}^{\natural}_A}
-= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\vec u_V,
+= \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_V,
 \qquad
 \tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t .
 $$
@@ -176,15 +176,15 @@ $$
 Hence $\tilde U_{\rm CM}\tilde{P}_A\tilde U_{\rm CM}^{*} = iMc\,e_t$, which is precisely the statement that $\tilde U_{\rm CM}$ is the boost to the COM frame.</p>
 <p><strong>Solution (b).</strong> The rotation generated by $\tilde U_{\rm CM}$ carries the lab to the COM frame. The inverse rotation is generated by the quaternion conjugate,
 $$
-\tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V
-= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,(-\vec u_V),
+\tilde U^{\natural}_{\rm CM} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_V
+= \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,(-\vec u_V),
 $$
 which is the boost biquaternion of the same rapidity in the opposite direction. The COM daughter four-momenta are therefore carried to the laboratory by
 $$
 \tilde{P}_a = \tilde U^{\natural}_{\rm CM}\,\tilde{P}_a^{\rm CM}\,\tilde U^{\natural}_{\rm CM}{}^{*} .
 $$</p>
 <blockquote>
-<p><strong>Remark on the parent's boost convention.</strong> The parent writes the rest-to-lab rotation as $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$ with $\tilde U_{\mathrm b} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_V$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\vec V\cdot\vec p_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.</p>
+<p><strong>Remark on the parent's boost convention.</strong> The parent writes the rest-to-lab rotation as $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$ with $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_V$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\vec V\cdot\vec p_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.</p>
 </blockquote>
 <p><strong>Solution (c).</strong> Applying the component form of the rotation with the inverse rotor — equivalently, the standard Lorentz transformation with velocity $\vec V$ — gives
 $$
@@ -192,7 +192,7 @@ E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),
 \qquad
 \vec p_a = \vec p_a^* + \frac{\gamma-1}{V^2}\left(\vec V\cdot\vec p_a^*\right)\vec V + \gamma\frac{E_a^*}{c^2}\vec V,
 $$
-with $\gamma = \cosh\Psi = \Gamma$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, and using $v_a^* = p^*c^2/E_a^*$,
+with $\gamma = \cosh\theta^{\mathrm{rpd}} = \Gamma$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, and using $v_a^* = p^*c^2/E_a^*$,
 $$
 E_a = \gamma E_a^*\left(1 + \frac{Vv_a^*}{c^2}\cos\theta_a^*\right).
 $$
@@ -425,7 +425,7 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 <p><strong>COM frame ($A$ at rest).</strong> The daughters are back to back with $E_1^* + E_2^* = Mc^2$, individual energies $E_a^* = (M^2 + m_a^2 - m_b^2)c^2/(2M)$, common momentum $p^* = \frac{c}{2M}\sqrt{[M^2-(m_1+m_2)^2][M^2-(m_1-m_2)^2]}$, speeds $v_a^* = p^*c^2/E_a^*$, and released energy $Q = (M-m_1-m_2)c^2 = K_1 + K_2$. The decay is allowed iff $M \ge m_1 + m_2$.</p>
 </li>
 <li>
-<p><strong>Moving parent.</strong> The parent constructs $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\vec u_V$, which carries the lab to the COM frame; the inverse rotation, which carries the COM daughters to the lab, is generated by the quaternion conjugate $\tilde U^{\natural}_{\rm CM}$. It gives $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$ and the standard momentum formula, with the lab energy of each daughter confined to $\gamma E_a^*(1 \pm Vv_a^*/c^2)$.</p>
+<p><strong>Moving parent.</strong> The parent constructs $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_V$, which carries the lab to the COM frame; the inverse rotation, which carries the COM daughters to the lab, is generated by the quaternion conjugate $\tilde U^{\natural}_{\rm CM}$. It gives $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$ and the standard momentum formula, with the lab energy of each daughter confined to $\gamma E_a^*(1 \pm Vv_a^*/c^2)$.</p>
 </li>
 <li>
 <p><strong>Three-body decay.</strong> The pair mass is $M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle\tilde{P}_i,\tilde{P}_j\rangle$; equivalently $M_{12}^2c^4 = (Mc^2 - E_3^*)^2 - p_3^{*2}c^2$, with $(m_1+m_2) \le M_{12} \le M - m_3$ and $\sum_{i<j}M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2$.</p>
@@ -494,8 +494,8 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 <td>Quaternion conjugate, COM to lab</td>
 </tr>
 <tr>
-<td>$\Psi$</td>
-<td>COM rapidity, $\tanh\Psi = V/c$</td>
+<td>$\theta^{\mathrm{rpd}}$</td>
+<td>COM rapidity, $\tanh\theta^{\mathrm{rpd}} = V/c$</td>
 </tr>
 <tr>
 <td>$M$, $m_1$, $m_2$</td>
@@ -530,7 +530,7 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 <td>Non-relativistic reduced mass</td>
 </tr>
 <tr>
-<td>$\gamma = \cosh\Psi$</td>
+<td>$\gamma = \cosh\theta^{\mathrm{rpd}}$</td>
 <td>Lorentz factor of the parent in the lab</td>
 </tr>
 </tbody>

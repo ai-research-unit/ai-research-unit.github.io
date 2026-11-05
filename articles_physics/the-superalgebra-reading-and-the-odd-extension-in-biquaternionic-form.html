@@ -77,7 +77,7 @@
 \bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}},
 $$</p>
 <p>so it reverses a commutator and preserves an anticommutator, the reason being that the order reversal of the adjoint and the Koszul sign of the bracket multiply, and cancel exactly on an odd-odd pair. The third is that this is a statement about the <em>convention</em>: the Koszul-signed rule of a super-* would make the star an anti-automorphism of the bracket without the extra sign, and the corpus's star does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses — and why it has to be that one: on the other convention the square of a Hermitian odd element is anti-Hermitian, so the Hamiltonian would be imaginary.</p>
-<p>The body is written in <strong>elements</strong>. The field is an element $\tilde\Psi$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in <em>The Legacy Pauli Gamma Formulation</em>, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.</p>
+<p>The body is written in <strong>elements</strong>. The field is an element $\tilde{Ξ}^{\mathrm{spn}}$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in <em>The Legacy Pauli Gamma Formulation</em>, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.</p>
 <p>The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are restated here in the form the physics uses; the parity interpretation of the ambient algebra and the sectors are <em>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</em>; the supercharge pair and the chirality label are <em>Supersymmetric Quantum Physics in the Biquaternion Framework</em>; the Grassmann envelope is <em>Grassmann Coherent States in Biquaternionic Form</em> and <em>BRST Symmetry in Biquaternionic Form</em>; the commutator bracket and the trace-free part are <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>; the one-mode parity is <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>. Nothing owned by those articles is re-derived.</p>
 <h2 id="the-graded-algebra-and-its-parity">The Graded Algebra and Its Parity</h2>
 <p><strong>Definition.</strong> On a $\mathbb{Z}/2$-graded algebra $A=A^0\oplus A^1$ the <strong>graded commutator</strong> is</p>
@@ -183,7 +183,7 @@ $$</p>
 <p><em>Proof.</em> Apply the anti-automorphism to the definition: $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=(ab)^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}(ba)^{*}=b^{*}a^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}a^{*}b^{*}$. Since $\lvert a^{*}\rvert=\lvert a\rvert$ and $\lvert b^{*}\rvert=\lvert b\rvert$, the same exponent occurs in $\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}=a^{*}b^{*}-(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$, and the two expressions differ by the factor $-(-1)^{\lvert a\rvert\lvert b\rvert}$; for $a,b$ both odd the factor is $+1$, and otherwise it is $-1$. The identity was checked on the sixteen basis elements of the ambient algebra, hence on all $256$ of their products, and separately on the four frame vectors $v_\mu$ and on the products of two of them, for all four parity pairs.</p>
 <p><strong>Remark (the same rule in the actions).</strong> In the actions the statement is the one of §<em>The Module and the Action</em>, the adjoint of $Q\mapsto aQb$ being $Q\mapsto a^{*}Qb^{*}$, and it is consistent with the element rule because $(ab)^{*}=b^{*}a^{*}$: the two multipliers reverse under the star in the same order as the two factors of a product. An action preserves the parity when its two multipliers have the same parity and exchanges it when they differ, and the star preserves the parity of each multiplier, so the adjoint preserves the parity of the action.</p>
 <p><strong>Remark (why the two behave differently).</strong> The adjoint reverses the order of the two factors, and the graded bracket distinguishes the two orders by the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ exactly in the odd-odd case, where the bracket is symmetric: a symmetric bracket is preserved by the reversal, an antisymmetric one is negated. The statement is therefore not an accident of the ambient algebra but the interaction of two signs, the order reversal of the adjoint and the Koszul sign of the bracket. On the even part, where the bracket is the Lie bracket of the framework, the rule reads $\bigl([a,b]\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]$, so the bracket of two anti-Hermitian elements is anti-Hermitian: the anti-Hermitian part is a Lie subalgebra, the compact form of the framework, while the Hermitian generators enter it with the conventional factor $i$.</p>
-<p><strong>Remark (the Koszul-signed convention and what the star is not).</strong> A superalgebra is often equipped with a super-<em> satisfying the Koszul-signed rule $(\zeta\eta)^{*}=(-1)^{\lvert\zeta\rvert\lvert\eta\rvert}\eta^{*}\zeta^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is </em><em>not</em>* of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has</p>
+<p><strong>Remark (the Koszul-signed convention and what the star is not).</strong> A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(\zeta\eta)^{*}=(-1)^{\lvert\zeta\rvert\lvert\eta\rvert}\eta^{*}\zeta^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is <strong>not</strong> of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has</p>
 <p>$$
 (v_0v_1)^{*}=v_1^{*}v_0^{*}=(-v_1)(-v_0)=v_1v_0=-v_0v_1 ,
 $$</p>
@@ -314,13 +314,13 @@ $$</p>
 <p>and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.</p>
 <p><strong>The central grading and the cell.</strong> The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that</p>
 <p>$$
-\chi^2=i^2\,\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
+\xi^2=i^2\,\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
 $$</p>
-<p>by $i^2=-1$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\chi)$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.</p>
+<p>by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.</p>
 <p><strong>The two Dirac equations.</strong> The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and its conjugate $\tilde\nabla^{\natural}$, the <strong>one-sided</strong> form is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R ,
 $$</p>
 <p>two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The <strong>two-sided</strong> form writes a single field and puts the second slot on the right of the algebra element,</p>
 <p>$$
@@ -404,7 +404,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$</td>
-<td>The Koszul-signed super-<em>; </em><em>not</em>* the star of the corpus</td>
+<td>The Koszul-signed super-*; <strong>not</strong> the star of the corpus</td>
 </tr>
 <tr>
 <td>$\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$</td>
@@ -443,7 +443,7 @@ $$</p>
 <td>The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell</td>
 </tr>
 <tr>
-<td>$\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$</td>
+<td>$\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$</td>
 <td>The one-sided Dirac equation, the chiral pair</td>
 </tr>
 <tr>

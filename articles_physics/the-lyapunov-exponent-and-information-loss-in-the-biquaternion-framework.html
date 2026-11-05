@@ -86,20 +86,20 @@ $$</p>
 <p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.</p>
 <h2 id="lyapunov-exponents-the-standard-setting">Lyapunov Exponents: The Standard Setting</h2>
 <h3 id="definition-for-a-flow">Definition for a Flow</h3>
-<p>Let $\chi^{\mathrm{flw}}_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \chi^{\mathrm{flw}}_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps</p>
+<p>Let $\xi^{\mathrm{flw}}_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \xi^{\mathrm{flw}}_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps</p>
 <p>$$
-D\chi^{\mathrm{flw}}_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
+D\xi^{\mathrm{flw}}_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
 $$</p>
 <p>and for a tangent vector $v\in T_{x_0}M$ the <strong>Lyapunov exponent</strong> is</p>
 <p>$$
-\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\chi^{\mathrm{flw}}_{t'}\,v\right\|}{\left\|v\right\|},
+\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\xi^{\mathrm{flw}}_{t'}\,v\right\|}{\left\|v\right\|},
 $$</p>
 <p>whenever the limit exists. The <strong>multiplicative ergodic theorem</strong> of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the <strong>Lyapunov spectrum</strong> of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.</p>
 <h3 id="three-standard-facts">Three Standard Facts</h3>
 <p>Three facts are used below, and each is transcribed from the standard theory rather than re-derived.</p>
 <p><strong>Divergence and volume.</strong> The sum of the exponents is the average rate of change of the volume element,</p>
 <p>$$
-\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\chi^{\mathrm{flw}}_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
+\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\xi^{\mathrm{flw}}_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
 $$</p>
 <p>where $f$ is the vector field of the flow. For a Hamiltonian flow the divergence vanishes, the flow is volume-preserving, and the exponents come in pairs $\pm\lambda$ with the total zero. For a dissipative flow the sum is negative and the volume contracts.</p>
 <p><strong>Pesin's formula.</strong> For a smooth flow with an invariant measure, the Kolmogorov–Sinai entropy equals the sum of the positive exponents,</p>
@@ -141,7 +141,7 @@ $$</p>
 <p>No averaging is needed; the invariance is exact. In Bloch coordinates the rotor conjugations are the rotations of the ball, $|\vec r(t')| = |\vec r(0)|$, and the tangent flow is the corresponding rotation of the tangent plane. The result is the biquaternion form of the statement that a Hamiltonian flow preserves phase-space volume and, more strongly, preserves the metric of the state space: reversible classical dynamics is <strong>information-preserving</strong> in the strictest sense, and its information loss is zero.</p>
 <p>The coadjoint-orbit picture of the companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em> gives the same conclusion from the Hamiltonian side. On the orbit $|\vec S| = \text{const}$ with the Lie–Poisson bracket the Hamiltonian flow preserves the Casimir $\vec S^2$, so the motion is an area-preserving flow on a sphere; the tangent vectors are advected by the flow without change of length, and the exponents vanish. The two descriptions — rotor conjugation on the algebra and Hamiltonian flow on the orbit — agree on this invariant, which is exactly the invariant the similitude preserves.</p>
 <h2 id="irreversible-dynamics-channel-semigroups-are-contractions">Irreversible Dynamics: Channel Semigroups Are Contractions</h2>
-<p>Irreversibility enters the sector through coarse-graining, and the general form of a coarse-graining semigroup is known. A one-parameter semigroup $\Phi_{t'}$, $t'\ge0$, of completely positive trace-preserving maps with $\Phi_0 = \mathrm{id}$ and $\Phi_{s+t'} = \Phi_s\circ\Phi_{t'}$ acts on the Bloch vector affinely,</p>
+<p>Irreversibility enters the sector through coarse-graining, and the general form of a coarse-graining semigroup is known. A one-parameter semigroup $Ξ_{t'}$, $t'\ge0$, of completely positive trace-preserving maps with $Ξ_0 = \mathrm{id}$ and $Ξ_{s+t'} = Ξ_s\circΞ_{t'}$ acts on the Bloch vector affinely,</p>
 <p>$$
 \vec r \longmapsto \vec r(t') = L(t')\,\vec r(0) + \vec t(t'),
 $$</p>
@@ -154,7 +154,7 @@ $$</p>
 \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\sigma_k\!\left(L(t')\right),
 $$</p>
 <p>and for a semigroup $L(t') = \exp(t'A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.</p>
-<p>The physical constraint now does the work. Every completely positive trace-preserving map is a <strong>contraction in the trace distance</strong>, $\|\Phi(\rho)-\Phi(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence</p>
+<p>The physical constraint now does the work. Every completely positive trace-preserving map is a <strong>contraction in the trace distance</strong>, $\|Ξ(\rho)-Ξ(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence</p>
 <p>$$
 \left|L(t')\left(\vec r-\vec s\right)\right| \le \left|\vec r-\vec s\right| \quad\text{for all } t'\ge0 ,
 $$</p>
@@ -293,7 +293,7 @@ $$</p>
 <td>Rotor conjugation; isometry, $\lambda_k=0$</td>
 </tr>
 <tr>
-<td>$\Phi_{t'}$, $L(t')$, $\vec t(t')$</td>
+<td>$Ξ_{t'}$, $L(t')$, $\vec t(t')$</td>
 <td>Channel semigroup and its affine Bloch action</td>
 </tr>
 <tr>

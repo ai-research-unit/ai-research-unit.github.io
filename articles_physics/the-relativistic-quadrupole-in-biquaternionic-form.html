@@ -98,7 +98,7 @@ $$</p>
 $$</p>
 <p>The quadrupole contributes to the potential of the source at the order $r^{-3}$,</p>
 <p>$$
-\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\left[\frac{ϙ}{r} + \frac{\vec p\cdot\vec u}{r^2} + \frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j + \ldots\right],
+Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\left[\frac{ϙ}{r} + \frac{\vec p\cdot\vec u}{r^2} + \frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j + \ldots\right],
 $$</p>
 <p>with $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, $ϙ$ the total charge and $\vec p = \int\rho\,(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,d^3x_2$ the dipole moment. The term displayed is the exact quadrupole term of the Cartesian expansion, and it is a solid harmonic of degree two: it is $r_2^{\,2}P_2(\cos\gamma)$ continued to the field point.</p>
 <h3 id="why-the-moment-is-not-an-algebra-element">Why the Moment Is Not an Algebra Element</h3>
@@ -213,9 +213,9 @@ $$</p>
 \tilde{F}_2 = \tilde{U}^{\natural}\,\tilde{F}\,\tilde{U} ,
 $$</p>
 <p>with $\tilde{U}$ the boost biquaternion of $\mathbb{M}_+$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.</p>
-<p>The <strong>order</strong> $l$ is a different matter, and here the boost does not behave simply. The order is a label of the angular decomposition in a fixed frame; the rotation subgroup preserves it, but a boost does not. The reason is that a boost acts on the field in two ways at once — it mixes the field components <strong>and</strong> it transforms the argument, so the field is read on another time slice and at an aberrated direction — and a pure multipole of one frame therefore acquires other orders in another. The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $\Phi \propto (3z^2-r^2)/r^5$, and a boost along $z$ turns it into</p>
+<p>The <strong>order</strong> $l$ is a different matter, and here the boost does not behave simply. The order is a label of the angular decomposition in a fixed frame; the rotation subgroup preserves it, but a boost does not. The reason is that a boost acts on the field in two ways at once — it mixes the field components <strong>and</strong> it transforms the argument, so the field is read on another time slice and at an aberrated direction — and a pure multipole of one frame therefore acquires other orders in another. The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $Ξ \propto (3z^2-r^2)/r^5$, and a boost along $z$ turns it into</p>
 <p>$$
-\Phi_2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{r=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
+Ξ_2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{r=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
 \qquad
 u = \cos\theta_2 ,
 $$</p>
@@ -229,9 +229,9 @@ $$</p>
 <h3 id="the-near-zone">The Near Zone</h3>
 <p>In the near zone the quadrupole field is the gradient of the quadrupole potential, and it falls off as $r^{-4}$:</p>
 <p>$$
-\vec E_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\vec\nabla\Phi_{quad} ,
+\vec E_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\vec\nablaΞ_{quad} ,
 \qquad
-\Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j .
+Ξ_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j .
 $$</p>
 <p>This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting flux integrates to zero over a large sphere. It is the static, or quasi-static, quadrupole field, the relativistic correction to the near field of a slowly moving source.</p>
 <h3 id="the-electric-quadrupole-radiation">The Electric Quadrupole Radiation</h3>
@@ -398,7 +398,7 @@ $$</p>
 <td>$D_{ij}n_j$, $\mathcal{Q}_{ij}n_j$</td>
 </tr>
 <tr>
-<td>$\Phi_{quad}$</td>
+<td>$Ξ_{quad}$</td>
 <td>Quadrupole potential</td>
 </tr>
 <tr>

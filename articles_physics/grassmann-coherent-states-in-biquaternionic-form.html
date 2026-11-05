@@ -160,11 +160,11 @@ $$</p>
 <h2 id="the-analytic-representation">The Analytic Representation</h2>
 <p>The coherent states turn the Fock space into a space of functions of an odd variable. Write a general state as</p>
 <p>$$
-|\psi\rangle=\psi_0|0\rangle+\psi_1|1\rangle
+|\tilde{Ξ}^{\mathrm{spn}}\rangle=\tilde{Ξ}^{\mathrm{spn}}_0|0\rangle+\tilde{Ξ}^{\mathrm{spn}}_1|1\rangle
 \qquad\longleftrightarrow\qquad
-\psi(\varkappa^*)=\psi_0+\psi_1\varkappa^* ,
+\tilde{Ξ}^{\mathrm{spn}}(\varkappa^*)=\tilde{Ξ}^{\mathrm{spn}}_0+\tilde{Ξ}^{\mathrm{spn}}_1\varkappa^* ,
 $$</p>
-<p>with $\psi_0,\psi_1\in\mathbb{C}$ (or, in the biquaternion setting, coefficients valued in the even part). Then the mode operators become</p>
+<p>with $\tilde{Ξ}^{\mathrm{spn}}_0,\tilde{Ξ}^{\mathrm{spn}}_1\in\mathbb{C}$ (or, in the biquaternion setting, coefficients valued in the even part). Then the mode operators become</p>
 <p>$$
 \boxed{\;a^{\mathrm{fop}}=\frac{\partial}{\partial\varkappa^*} ,
 \qquad
@@ -177,7 +177,7 @@ $$</p>
 <p>The verification is the Leibniz rule on the two-dimensional space of polynomials: on $f=a+b\varkappa^*$, one has $\partial f=b$ and $\varkappa^*\partial f=b\varkappa^*$, so $\partial(\varkappa^*f)+\varkappa^*\partial f=f$. The anticommutator is the identity as claimed. This representation is the fermionic analogue of the Bargmann representation of the oscillator, and it is where the biquaternion content is most visible: the state space is a space of <em>polynomials of degree at most one in an odd variable</em>, the mode algebra is $\{\varkappa^*,\partial/\partial\varkappa^*\}$, and the parity is the degree parity of the polynomial.</p>
 <p><strong>The inner product is the Berezin integral.</strong> With the convention above,</p>
 <p>$$
-\langle\psi|\chi^{\mathrm{alt}}\rangle=\int d\varkappa^*d\varkappa\;\exp(-\varkappa^*\varkappa)\;\overline{\psi(\varkappa^*)}\,\chi^{\mathrm{alt}}(\varkappa^*) ,
+\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle=\int d\varkappa^*d\varkappa\;\exp(-\varkappa^*\varkappa)\;\overline{\tilde{Ξ}^{\mathrm{spn}}(\varkappa^*)}\,\xi^{\mathrm{alt}}(\varkappa^*) ,
 $$</p>
 <p>and the identity was checked: the two basis states are orthonormal, $\langle0|0\rangle=1$, $\langle1|1\rangle=1$, $\langle0|1\rangle=0$, in the convention $\int d\varkappa^*d\varkappa\,\exp(-\varkappa^*\varkappa)=1$ and $\int d\varkappa^*d\varkappa\,\varkappa^*\varkappa=-1$. This is the positive-definite Hermitian form of the Fock space expressed as a Berezin integral; the apparent minus signs are the covariance of the Grassmann measure, and they are what makes the form positive.</p>
 <p><strong>Symbols.</strong> The normal symbol of an operator $O$ is the Grassmann-valued function</p>
@@ -223,7 +223,7 @@ $$</p>
 <p>Since $\exp(-\beta H)|\varkappa\rangle=|0\rangle+\exp(-\beta\varepsilon)\varkappa|1\rangle$ and $\langle-\varkappa|=\langle0|-\varkappa^*\langle1|$, the matrix element is $1-\exp(-\beta\varepsilon)\varkappa^*\varkappa$, and with the convention above the integral gives $1+\exp(-\beta\varepsilon)$, which is the trace of the two-dimensional thermal density matrix. The vanishing of $\varkappa^*\varkappa$'s coefficient and the sign of the surviving term were both recomputed; the formula reproduces the free single-mode result exactly.</p>
 <p>The larger lesson of the thermal kernel is the boundary condition. The Grassmann variables of the path-integral representation of the trace must be <strong>antiperiodic</strong> in imaginary time:</p>
 <p>$$
-\psi(\tau+\beta)=-\psi(\tau) ,
+\tilde{Ξ}^{\mathrm{spn}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{spn}}(\tau) ,
 $$</p>
 <p>which is the statement that the Matsubara frequencies of a fermion are the half-integer ones $\omega_n=(2n+1)\pi/\beta$. The antiperiodicity was checked directly: for $n=0,1,2$ and $\beta=2.7$, $\tau=0.83$, the ratio $\exp(i\omega_n(\tau+\beta))/\exp(i\omega_n\tau)$ equals $-1$ to nine decimal places. The sign is the fermionic one and is the same sign as the anticommutator; the companion article <em>The KMS Condition and the Biquaternion Framework</em> treats the analytic structure that the antiperiodicity generates.</p>
 <h2 id="what-is-standard-and-what-the-algebras">What Is Standard and What the Algebra's</h2>
@@ -328,7 +328,7 @@ $$</p>
 <td>Parity as the label reflection</td>
 </tr>
 <tr>
-<td>$\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$</td>
+<td>$\tilde{Ξ}^{\mathrm{spn}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{spn}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$</td>
 <td>Antiperiodic Matsubara boundary condition</td>
 </tr>
 </tbody>

@@ -129,11 +129,11 @@ $$</p>
 <p>The external states satisfy the massive Dirac equation, and in the biquaternion algebra that equation is not a single line. Two forms matter here: the <strong>chiral pair</strong>, which is the equation read one-sidedly, and the <strong>two-sided equation</strong>, which is the same physics read on the whole algebra.</p>
 <p><strong>The chiral pair.</strong> It is the pair of one-sided equations of <em>Operator and Calculus Conventions</em>,</p>
 <p>$$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$</p>
-<p>with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is <strong>one-sided</strong>. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.</p>
+<p>with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is <strong>one-sided</strong>. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.</p>
 <p><strong>The two-sided form.</strong> Read on the whole algebra rather than one-sidedly, the same physics is the single equation</p>
 <p>$$
 \tilde\nabla^{\natural}F=m\,\bar F\,(-i\vec e_z),
@@ -283,7 +283,7 @@ $$</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.</p>
-<p>The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.</p>
+<p>The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$.</p>
 <p>$$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
@@ -318,7 +318,7 @@ $$</p>
 \frac14 T_{ts}=-2u^2,
 $$</p>
 <p>which is the algebra behind the cross section.</p>
-<p>The central grading $\chi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the volume cell $\mathsf{V}^{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\chi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\chi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The volume cell $\mathsf{V}^{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.</p>
+<p>The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the volume cell $\mathsf{V}^{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The volume cell $\mathsf{V}^{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.</p>
 <p>Read over $\mathbb{R}$ rather than $\mathbb{C}$, the cells generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the cells and the gammas be the same objects, and it is why no larger algebra is needed.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>

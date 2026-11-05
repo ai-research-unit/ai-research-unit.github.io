@@ -149,19 +149,19 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 <p><strong>Interpretation of the result.</strong> The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone of <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".</p>
 <h2 id="the-determinant-in-the-gaussian-integral">The Determinant in the Gaussian Integral</h2>
 <p>The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.</p>
-<p><strong>The Gaussian.</strong> For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
+<p><strong>The Gaussian.</strong> For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle)
+\int\mathcal{D}\tilde{Ξ}\;\exp(-\frac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle)
 = \big(\det K^{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.</p>
 <p><strong>The one-loop action.</strong> Expanding about a classical field as in the previous article,
 $$
-S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde\Phi,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\delta\tilde\Phi\big\rangle+\cdots ,
+S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde{Ξ},S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\delta\tilde{Ξ}\big\rangle+\cdots ,
 $$
-the Gaussian integration of $\delta\tilde\Phi$ gives the one-loop effective action
+the Gaussian integration of $\delta\tilde{Ξ}$ gives the one-loop effective action
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] ,
+\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] ,
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.</p>
 <p><strong>The free case.</strong> For the free biquaternion scalar, $S^{(2)}=K^{\mathrm{kin}}$ is central and mode-diagonal, and
@@ -186,9 +186,9 @@ is the Ray–Singer torsion of the pair when the operators are Laplacians on a m
 <h3 id="the-determinant-and-the-propagator">The Determinant and the Propagator</h3>
 <p>The determinant's variation is the trace of the propagator against the variation of the operator,
 $$
-\frac{\delta}{\delta\chi}\log\det S^{(2)}[\chi] = \mathrm{Tr}\left( \big(S^{(2)}[\chi]\big)^{-1}\,\frac{\delta S^{(2)}[\chi]}{\delta\chi}\right),
+\frac{\delta}{\delta\xi}\log\det S^{(2)}[\xi] = \mathrm{Tr}\left( \big(S^{(2)}[\xi]\big)^{-1}\,\frac{\delta S^{(2)}[\xi]}{\delta\xi}\right),
 $$
-where $\chi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\chi$. In the biquaternion framework the inverse is the propagator of <em>The Feynman Propagator in Biquaternionic Form</em>, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.</p>
+where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\xi$. In the biquaternion framework the inverse is the propagator of <em>The Feynman Propagator in Biquaternionic Form</em>, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.</p>
 <h2 id="regularization">Regularization</h2>
 <p>The determinant is a divergent product, and its regularized value is defined through the zeta function of the operator.</p>
 <p><strong>Zeta-function regularization.</strong> For an operator $S^{(2)}$ with discrete spectrum $\{\lambda_n\}$,
@@ -208,9 +208,9 @@ and the small-$t'$ expansion $K(t')\sim(4\pi t')^{-d/2}\sum_n a_n {t'}^n$ gives 
 <p><strong>A remark on scheme dependence.</strong> Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the <em>ratios</em> of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.</p>
 <h2 id="the-fermionic-determinant-and-its-phase">The Fermionic Determinant and Its Phase</h2>
 <p>The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.</p>
-<p><strong>The Grassmann integral.</strong> Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
+<p><strong>The Grassmann integral.</strong> Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
 $$
-\int\mathcal{D}\tilde\Psi^{\natural}\,\mathcal{D}\tilde\Psi\;\exp\big(\,\tilde\Psi^{\natural}\mathcal{F}\tilde\Psi\big) = \det\mathcal{F},
+\int\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\natural}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\;\exp\big(\,\tilde{Ξ}^{\mathrm{spn}\natural}\mathcal{F}\tilde{Ξ}^{\mathrm{spn}}\big) = \det\mathcal{F},
 \qquad
 \mathcal{F} = \mathbb{D} - m ,
 $$
@@ -296,12 +296,12 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Regular-representation determinant</td>
 </tr>
 <tr>
-<td>$S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$</td>
+<td>$S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$</td>
 <td>Fluctuation operator on the module</td>
 </tr>
 <tr>
-<td>$\delta\tilde\Phi$</td>
-<td>Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$</td>
+<td>$\delta\tilde{Ξ}$</td>
+<td>Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$</td>
 </tr>
 <tr>
 <td>$\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$</td>

@@ -171,7 +171,7 @@ $$</p>
 $$</p>
 <p>with the boost factor on the left. A pure boost is the Hermitian positive unit-norm element</p>
 <p>$$
-\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$</p>
 <p>and a pure spatial rotation is the real quaternion</p>
 <p>$$
@@ -254,7 +254,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>Every entry has the same structure: an imaginary scalar part, which is the time component, and a real vector part, which is the spatial one. Every entry transforms by rotor conjugation, with a boost rotor for a change of velocity and a rotation rotor for a change of spatial frame. The norm is the invariant of the entry: the interval for the position, $-c^2$ for the velocity, $-m^2c^2$ for the momentum, zero for the wavevector of light.</p>
-<p>The <strong>mass shell</strong> is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The <strong>four-potential</strong> is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The <strong>four-current</strong> satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The <strong>four-force</strong> of the table is orthogonal to the four-velocity, $\tilde K_{\mathrm f}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.</p>
+<p>The <strong>mass shell</strong> is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The <strong>four-potential</strong> is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\xi$, and its norm is not gauge invariant; the field strength built from it is. The <strong>four-current</strong> satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The <strong>four-force</strong> of the table is orthogonal to the four-velocity, $\tilde K_{\mathrm f}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.</p>
 <p><strong>The boundary.</strong> The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.</p>
 <h3 id="the-eigenpair-is-the-doppler-pair">The Eigenpair Is the Doppler Pair</h3>
 <p>The eigenvalue decomposition of the element gives one more reading of the four-momentum. With $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec p\rvert$, the two eigenvalues are</p>
@@ -300,11 +300,11 @@ $$</p>
 <h2 id="examples">Examples</h2>
 <p><strong>A four-position.</strong> Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $\langle\tilde Q\rangle_{\natural}=-1+9=8$, a spacelike interval.</p>
 <p><strong>A light ray.</strong> Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.</p>
-<p><strong>A boost of a rest position.</strong> Let $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then</p>
+<p><strong>A boost of a rest position.</strong> Let $\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)+i\sinh(\theta^{\mathrm{rpd}}/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then</p>
 <p>$$
-\tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
+\tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\theta^{\mathrm{rpd}}\,e_t-c\tau\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
 $$</p>
-<p>the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.</p>
+<p>the standard boost $t'_2=\tau\cosh\theta^{\mathrm{rpd}}$, $x_2=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.</p>
 <p><strong>A mass shell.</strong> For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.</p>
 <p><strong>A four-velocity.</strong> For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $\langle\tilde V\rangle_{\natural}=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.</p>
 <h2 id="limits">Limits</h2>

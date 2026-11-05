@@ -149,11 +149,11 @@ $$</p>
 <p>The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{M}_-$ and the biquaternion norm: if $\tilde{R} \in \mathbb{M}_-$ then $\tilde{R}_2 \in \mathbb{M}_-$, and $\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.</p>
 <p>The different Lorentz transformations have rotors in different subspaces. A <strong>pure boost</strong> along the unit direction $\vec u_{\mathrm b}$ has the rotor</p>
 <p>$$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
 $$</p>
-<p>which is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and hence acts by $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by</p>
+<p>which is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and hence acts by $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$. The rapidity $\theta^{\mathrm{rpd}}$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by</p>
 <p>$$
-\cosh\psi = \gamma_V, \qquad \sinh\psi = \gamma_V\frac{V}{c}, \qquad \tanh\psi = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
+\cosh\theta^{\mathrm{rpd}} = \gamma_V, \qquad \sinh\theta^{\mathrm{rpd}} = \gamma_V\frac{V}{c}, \qquad \tanh\theta^{\mathrm{rpd}} = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
 $$</p>
 <p>A <strong>pure spatial rotation</strong> has a rotor in the real-quaternion subalgebra,</p>
 <p>$$
@@ -174,9 +174,9 @@ $$</p>
 <h2 id="the-non-relativistic-limit-the-boost-becomes-a-shear">The Non-Relativistic Limit: the Boost Becomes a Shear</h2>
 <p>The free particle has a non-relativistic limit, and its transformation law has one too. The limit is instructive because the transformation does <strong>not</strong> remain a rotor conjugation.</p>
 <h3 id="expanding-the-boost-rotor">Expanding the Boost Rotor</h3>
-<p>Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\psi \approx V/c$. Expanding the boost rotor,</p>
+<p>Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\theta^{\mathrm{rpd}} \approx V/c$. Expanding the boost rotor,</p>
 <p>$$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$</p>
 <p>To first order in $V/c$ the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so the action on a material vector is $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$, and hence</p>
 <p>$$
@@ -196,7 +196,7 @@ $$</p>
 $$</p>
 <p>This is the <strong>Galilean transformation</strong>: the time coordinate is untouched and the position is shifted by $-\vec Vt'$. The exact boost transformation, of which this is the leading term, is the standard one,</p>
 <p>$$
-c\,t'_2 = \cosh\psi\;c\,t' - \sinh\psi\;x_\parallel, \qquad x_{\parallel,2} = \cosh\psi\;x_\parallel - \sinh\psi\;c\,t', \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_{\perp,2} = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp ,
+c\,t'_2 = \cosh\theta^{\mathrm{rpd}}\;c\,t' - \sinh\theta^{\mathrm{rpd}}\;x_\parallel, \qquad x_{\parallel,2} = \cosh\theta^{\mathrm{rpd}}\;x_\parallel - \sinh\theta^{\mathrm{rpd}}\;c\,t', \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_{\perp,2} = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp ,
 $$</p>
 <p>where $x_\parallel$ is the component along $\vec u_{\mathrm b}$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp$ the perpendicular part; the Galilean form is its $V/c \to 0$ limit.</p>
 <h3 id="the-shear-is-not-a-rotation">The Shear Is Not a Rotation</h3>
@@ -266,7 +266,7 @@ $$</p>
 </tr>
 <tr>
 <td>Boost</td>
-<td>$\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$</td>
+<td>$\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>$\mathbb{M}_+$</td>
 </tr>
 <tr>
@@ -357,8 +357,8 @@ $$</p>
 <td>Rotor conjugation (frame change)</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$</td>
-<td>Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$</td>
+<td>$\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>Boost rotor, in $\mathbb{M}_+$; $\tanh\theta^{\mathrm{rpd}} = V/c$</td>
 </tr>
 <tr>
 <td>$R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>

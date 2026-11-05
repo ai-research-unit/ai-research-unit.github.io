@@ -129,9 +129,9 @@ F_{\tilde Q_1\tilde Q_2}(t'+i\beta) = F_{\tilde Q_2\tilde Q_1}(-t'),
 $$
 is the operator-exchange identity whose resolution is periodicity for the bosonic (commuting) grading and antiperiodicity for the fermionic (anticommuting) grading:
 $$
-\tilde\Phi_{\text{boson}}(\tau+\beta) = +\tilde\Phi_{\text{boson}}(\tau),
+\tilde{Ξ}_{\text{boson}}(\tau+\beta) = +\tilde{Ξ}_{\text{boson}}(\tau),
 \qquad
-\tilde\Psi_{\text{fermion}}(\tau+\beta) = -\tilde\Psi_{\text{fermion}}(\tau).
+\tilde{Ξ}^{\mathrm{spn}}_{\text{fermion}}(\tau+\beta) = -\tilde{Ξ}^{\mathrm{spn}}_{\text{fermion}}(\tau).
 $$
 The framework's grading is the even/odd decomposition of the algebra and of the spinor module, so the two periodicity classes are the two grading classes; this is the finite-temperature face of <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, and no new input is needed beyond the grading and the KMS relation.</p>
 <h2 id="the-matsubara-frequencies-and-the-thermal-propagator">The Matsubara Frequencies and the Thermal Propagator</h2>
@@ -171,7 +171,7 @@ with $\bar\omega_n=(2n+1)\pi/\beta$ gave $0.3314319$ against $0.3314320$. The re
 <p>The partition function is the Gaussian integral of the thermal theory, and its logarithm is the free energy.</p>
 <p><strong>The functional integral.</strong> Under the complexification and the compactification, the thermal partition function is
 $$
-Z(\beta) = \mathrm{Tr}\,\exp(-\beta H) = \int_{\text{periodic}}\mathcal{D}\tilde\Phi\;\exp(-S_E[\tilde\Phi]),
+Z(\beta) = \mathrm{Tr}\,\exp(-\beta H) = \int_{\text{periodic}}\mathcal{D}\tilde{Ξ}\;\exp(-S_E[\tilde{Ξ}]),
 $$
 the integral taken over field configurations obeying the periodicity appropriate to the grading, on $S^1_\beta\times\mathbb{R}^3$. This is the Euclidean functional integral of the previous articles with the time direction compactified, and everything said there about the module, the central quadratic operator, and the Gaussian determinant applies verbatim; only the mode set changes from $\int dp^0$ to $(1/\beta)\sum_n$.</p>
 <p><strong>One-loop free energy.</strong> For the free biquaternion scalar the Euclidean action is quadratic with operator $\mathcal{M}_E$, and the Gaussian integral gives
@@ -235,7 +235,7 @@ G(i\omega_n) = \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{A(\omega)}{i\o
 A(\omega)\ \ge 0 ,
 $$
 in which $A$ is the spectral function and the discrete frequencies $\omega_n$ are the points at which the function is known. This is the finite-temperature form of the Källen–Lehmann representation of the LSZ article, and its positivity has the same origin, the positivity of the inner product of the state space. The analytic structure of $G$ in the complex frequency plane is therefore fixed by $A$: $G$ is analytic off the real axis and its discontinuity across the cut is $A$.</p>
-<p><strong>The positivity is the Bochner theorem at the central root.</strong> The thermal two-point function is a positive-definite function on the compactified time: $F_{\tilde Q_1\tilde Q_1}(t')=\langle\tilde Q_1(t')\tilde Q_1\rangle_\beta$ is positive definite by the positivity of the state-space inner product. That is the hypothesis of Bochner's theorem, and the conclusion is that $F$ is the transform of a positive measure on the circle — the discrete measure with weights $A(\omega_n)\ge0$. So the spectral function's positivity is not an extra assumption of the thermal theory; it is the classical Bochner statement, and in the framework it is the central-root case of the biquaternion Bochner theorem, quoted here in the form the companion article proves it. With the general plain sesquilinear form $\langle\tilde Q_3,\tilde Q_4\rangle_{*}=\mathrm{Sc}(\tilde Q_3\tilde Q_4^{*})$, the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral $\int ZZ^{*}\,d\mu$ of a positive element, and the transform of a positive measure is positive definite <strong>exactly</strong> for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions $\rho=\pm\mu$ — while the non-degenerate roots $\rho=b\mu+d\nu i$ fail; at the central root the transform is $G=\chi e_t$ with $\chi$ the classical positive-definite function, <em>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</em>. The Matsubara kernel is the <strong>central-root</strong> character: $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, the central scalar imaginary, and the central root is degenerate. The thermal correlator's positivity is therefore the central-root case of the theorem, found by the same form $\langle\cdot,\cdot\rangle_{*}$ that the propagator uses. No passage to another sector is involved: the kernel is central, the root is degenerate, and the measure is the one the state supplies.</p>
+<p><strong>The positivity is the Bochner theorem at the central root.</strong> The thermal two-point function is a positive-definite function on the compactified time: $F_{\tilde Q_1\tilde Q_1}(t')=\langle\tilde Q_1(t')\tilde Q_1\rangle_\beta$ is positive definite by the positivity of the state-space inner product. That is the hypothesis of Bochner's theorem, and the conclusion is that $F$ is the transform of a positive measure on the circle — the discrete measure with weights $A(\omega_n)\ge0$. So the spectral function's positivity is not an extra assumption of the thermal theory; it is the classical Bochner statement, and in the framework it is the central-root case of the biquaternion Bochner theorem, quoted here in the form the companion article proves it. With the general plain sesquilinear form $\langle\tilde Q_3,\tilde Q_4\rangle_{*}=\mathrm{Sc}(\tilde Q_3\tilde Q_4^{*})$, the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral $\int ZZ^{*}\,d\mu$ of a positive element, and the transform of a positive measure is positive definite <strong>exactly</strong> for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions $\rho=\pm\mu$ — while the non-degenerate roots $\rho=b\mu+d\nu i$ fail; at the central root the transform is $G=\xi e_t$ with $\xi$ the classical positive-definite function, <em>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</em>. The Matsubara kernel is the <strong>central-root</strong> character: $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, the central scalar imaginary, and the central root is degenerate. The thermal correlator's positivity is therefore the central-root case of the theorem, found by the same form $\langle\cdot,\cdot\rangle_{*}$ that the propagator uses. No passage to another sector is involved: the kernel is central, the root is degenerate, and the measure is the one the state supplies.</p>
 <p><strong>Continuation.</strong> The retarded and advanced functions are the boundary values
 $$
 G^{R/A}(\omega) = G(\omega\pm i\epsilon),
@@ -322,7 +322,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 <td>KMS boundary relation</td>
 </tr>
 <tr>
-<td>$\tilde\Phi(\tau+\beta)=\pm\tilde\Phi(\tau)$</td>
+<td>$\tilde{Ξ}(\tau+\beta)=\pm\tilde{Ξ}(\tau)$</td>
 <td>Periodic (boson) / antiperiodic (fermion)</td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 <td>Matsubara sum replacing $\int dp^0/2\pi$</td>
 </tr>
 <tr>
-<td>$Z=\mathrm{Tr}\,\exp(-\beta H)=\int_{\text{per}}\mathcal{D}\tilde\Phi\,\exp(-S_E)$</td>
+<td>$Z=\mathrm{Tr}\,\exp(-\beta H)=\int_{\text{per}}\mathcal{D}\tilde{Ξ}\,\exp(-S_E)$</td>
 <td>Thermal partition function</td>
 </tr>
 <tr>

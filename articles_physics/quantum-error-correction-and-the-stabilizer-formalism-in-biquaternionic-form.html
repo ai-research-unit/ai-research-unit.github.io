@@ -210,15 +210,15 @@ $$</p>
 <h3 id="the-code-idempotent-as-a-group-algebra-idempotent">The code idempotent as a group-algebra idempotent</h3>
 <p>The construction has a transparent algebraic meaning. Since $S$ is a finite abelian group of commuting involutions, its group algebra is</p>
 <p>$$
-\mathbb{C}[S] \ \cong\ \bigoplus_{\chi}\mathbb{C}\tilde\Pi_\chi,
+\mathbb{C}[S] \ \cong\ \bigoplus_{\xi}\mathbb{C}\tilde\Pi_\xi,
 \qquad
-\tilde\Pi_\chi = \frac{1}{|S|}\sum_{\tilde U\in S}\chi(\tilde U)^{-1}\,\tilde U,
+\tilde\Pi_\xi = \frac{1}{|S|}\sum_{\tilde U\in S}\xi(\tilde U)^{-1}\,\tilde U,
 $$</p>
-<p>where the $\chi$ run over the $|S|$ characters $S\to\{\pm1\}$ and the $\tilde\Pi_\chi$ are the <strong>central idempotents of the group algebra</strong>, satisfying $\tilde\Pi_\chi \tilde\Pi_{\chi_2} = \delta_{\chi\chi_2}\tilde\Pi_\chi$ and $\sum_\chi \tilde\Pi_\chi = e_t^{\otimes n}$. The code idempotent is the trivial-character idempotent,</p>
+<p>where the $\xi$ run over the $|S|$ characters $S\to\{\pm1\}$ and the $\tilde\Pi_\xi$ are the <strong>central idempotents of the group algebra</strong>, satisfying $\tilde\Pi_\xi \tilde\Pi_{\xi_2} = \delta_{\xi\xi_2}\tilde\Pi_\xi$ and $\sum_\xi \tilde\Pi_\xi = e_t^{\otimes n}$. The code idempotent is the trivial-character idempotent,</p>
 <p>$$
 \boxed{\;\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
 $$</p>
-<p>and the other $|S|-1$ idempotents $\tilde\Pi_\chi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\chi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\chi \mathrm{Tr}(\tilde\Pi_\chi)$, with each $\mathrm{Tr}(\tilde\Pi_\chi) = 2^k$.</p>
+<p>and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi \mathrm{Tr}(\tilde\Pi_\xi)$, with each $\mathrm{Tr}(\tilde\Pi_\xi) = 2^k$.</p>
 <h2 id="what-the-framework-adds-and-what-it-does-not">What the Framework Adds and What It Does Not</h2>
 <p><strong>What it does.</strong></p>
 <ul>

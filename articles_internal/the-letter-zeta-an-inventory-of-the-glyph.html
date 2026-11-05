@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Letter Zeta: An Inventory of the Glyph — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-letter-zeta-an-inventory-of-the-glyph"><strong>The Letter Zeta: An Inventory of the Glyph</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The letter $\zeta$ is bound to one object. <em>Special Element and Peirce Conventions</em>, §<em>The Root Convention</em>, makes the glyph the name of the root of the algebra: $\tilde{Ζ}$ in the biquaternion layers, $\tilde\zeta$ in the quaternion ones, $Ζ$ in the layers that carry no tilde. No other object is assigned to the letter, and no other letter is assigned to the root.</p>
+<p>The census does not support the exclusivity. The corpus writes the letter 11752 times in 537 articles: 10206 tokens in 403 mathematical articles and 1546 in 134 physical ones. The root accounts for 4202 of the mathematical tokens and 742 of the physical ones. The remaining 6004 mathematical tokens and 804 physical tokens are a variable, a function, a set or a parameter, and this article counts them part by part.</p>
+<p><strong>What the article establishes.</strong> The forms the conventions fix, and the count of each. The roles of the lower case in each of the six mathematical parts and in physics. The four roles of the upper case, and the reason three of them are local declarations rather than conventions. The one repair the corpus already has at hand.</p>
+<p><strong>What it does not claim.</strong> It does not claim that $\zeta$ is free, because the root holds it. It does not claim that the other uses are errors: each is declared where it is used, and the articles read. The conventions reserve the decorated glyph for the root, the reservation is honoured in 117 mathematical articles, and the bare letter carries at least eight other roles in mathematics.</p>
+<p><strong>What the article decides.</strong> Two sections at the end carry the decision. <em>The Current Situation</em> states in one place what the conventions give the letter, what the corpus does with it, part by part and role by role, and where the line between a written rule and a local declaration falls. <em>The Complete Alternative</em> then gives every role its replacement, in full, on three instruments the corpus already owns and with no new glyph: a word, the superscript label, and the low index.</p>
+<h2 id="the-forms-the-conventions-fix">The Forms the Conventions Fix</h2>
+<p><em>Special Element and Peirce Conventions</em>, §<em>The Root Convention</em>, states the case rule in one sentence:</p>
+<blockquote>
+<p><strong>The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.</strong> The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{Ζ}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\zeta$; those of the complex, split-complex and dual layers carry the plain capital, $Ζ$; and those of the reduced biquaternion layer carry the same plain capital, $Ζ$, no tilde being written where there is no quaternionic factor.</p>
+</blockquote>
+<p>The same section fixes the coordinates. The root of the biquaternion layer is $\tilde{Ζ} = Ζ_te_t + Ζ_x\vec e_x + Ζ_y\vec e_y + Ζ_z\vec e_z$ with $Ζ_\mu = \zeta_\mu + i\zeta'_\mu$, and the root of the quaternion layer is $\tilde\zeta = \zeta_te_t + \zeta_x\vec e_x + \zeta_y\vec e_y + \zeta_z\vec e_z$. The arrow is laid on the same rule by <em>Algebra and Element Conventions</em>, §<em>The Pure Glyphs</em>: the pure root is $\vec{Ζ}$ in the biquaternion layers and $\vec\zeta$ in the quaternion ones, and the arrow replaces the tilde rather than stacking with it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>what it is</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Ζ}$</td>
+<td>a root of $1$, or of a central value $\lambda$</td>
+<td>the biquaternion and split-biquaternion layers</td>
+</tr>
+<tr>
+<td>$\tilde\zeta$</td>
+<td>a root of $1$</td>
+<td>the quaternion and split-quaternion layers</td>
+</tr>
+<tr>
+<td>$Ζ$</td>
+<td>a root of $1$, no tilde</td>
+<td>the complex, split-complex and dual layers</td>
+</tr>
+<tr>
+<td>$Ζ_\pm$</td>
+<td>the two roots of $1$</td>
+<td>the reduced biquaternion layer</td>
+</tr>
+<tr>
+<td>$\vec{Ζ}$, $\vec\zeta$</td>
+<td>a pure root</td>
+<td>the biquaternion and quaternion layers, by the case rule</td>
+</tr>
+<tr>
+<td>$\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>the adjoined central root of $-e_t$</td>
+<td>the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$</td>
+</tr>
+<tr>
+<td>$Ζ_\mu$, $\zeta_\mu$</td>
+<td>a coordinate of the root</td>
+<td>the two layers, by the case rule</td>
+</tr>
+</tbody>
+</table></div>
+<p>The adjoined generator is the one role subscript the conventions name, and they name it twice, once in each corpus. <em>Special Element Conventions</em> writes it in the physics words: "It is a root of the double, not an element of $\mathbb{B}$. The chirality is the cell $\mathsf{V}^{\mathrm{vol}}$ of §<em>The Chirality Convention</em>; its central form is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it."</p>
+<p><strong>The two cases are written by different means.</strong> The minuscule is never a raw codepoint in the corpus: the character U+03B6 stands zero times, and every minuscule is the command <code>\zeta</code>. The majuscule is never a command: <code>\Zeta</code> stands zero times, and every capital is the glyph, U+0396. The reason is typographic. LaTeX has commands for the capitals $\Gamma$, $\Delta$, $\Theta$, $\Lambda$, $\Xi$, $\Pi$, $\Sigma$, $\Upsilon$, $\Phi$, $\Psi$ and $\Omega$, and no command for zeta, chi or stigma. The corpus therefore writes the glyph, as it does for $Χ$ and $Ϛ$. Any count of the letter has to use two instruments, the command for the lower case and the codepoint for the upper one.</p>
+<p><strong>The case rule here is a layer rule, not a field rule.</strong> The same device carries a different content in the two letters. For $\chi$ the case carries the coefficient, real against complex; for $\zeta$ the case carries the layer, quaternion against biquaternion. A reader who arrives from the chi audit will expect the field rule and will not find it. This is the first thing the inventory has to say, because it explains why the minuscule is not a residue of the majuscule but its peer.</p>
+<h2 id="the-census">The Census</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>articles with the letter</th>
+<th>articles in the corpus</th>
+<th>tokens</th>
+<th>lower case</th>
+<th>upper case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mathematics</td>
+<td>403</td>
+<td>2363</td>
+<td>10206</td>
+<td>6510</td>
+<td>3696</td>
+</tr>
+<tr>
+<td>physics</td>
+<td>134</td>
+<td>412</td>
+<td>1546</td>
+<td>1047</td>
+<td>499</td>
+</tr>
+</tbody>
+</table></div>
+<p>The lower case counts the command and its decorations; the upper case counts the codepoint and its decorations. The lower case stands in 342 mathematical articles and 70 physical ones, the capital in 120 and 81. The corpus writes 63 distinct forms of the letter in mathematics and 25 in physics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>mathematics</th>
+<th>physics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\zeta</code> bare</td>
+<td>5420</td>
+<td>736</td>
+</tr>
+<tr>
+<td><code>\zeta</code> with a subscript or a superscript</td>
+<td>223</td>
+<td>46</td>
+</tr>
+<tr>
+<td>$\tilde\zeta$</td>
+<td>429</td>
+<td>64</td>
+</tr>
+<tr>
+<td>$\vec\zeta$</td>
+<td>373</td>
+<td>156</td>
+</tr>
+<tr>
+<td>$\hat\zeta$</td>
+<td>—</td>
+<td>23</td>
+</tr>
+<tr>
+<td>$\bar\zeta$</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>$\partial\zeta$</td>
+<td>58</td>
+<td>13</td>
+</tr>
+<tr>
+<td>$Ζ$</td>
+<td>3696</td>
+<td>499</td>
+</tr>
+<tr>
+<td>distinct forms</td>
+<td>63</td>
+<td>25</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mathematical corpus splits by part. The division is the one the menu <em>AI Maths</em> uses, and the conventions articles, which stand before Part I, are listed apart because they bind the glyph rather than use it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>part</th>
+<th>articles</th>
+<th>tokens</th>
+<th>lower case</th>
+<th>upper case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conventions</td>
+<td>4</td>
+<td>64</td>
+<td>21</td>
+<td>43</td>
+</tr>
+<tr>
+<td>I, Algebra</td>
+<td>23</td>
+<td>174</td>
+<td>129</td>
+<td>45</td>
+</tr>
+<tr>
+<td>II, Topology</td>
+<td>52</td>
+<td>799</td>
+<td>665</td>
+<td>134</td>
+</tr>
+<tr>
+<td>III, Analysis</td>
+<td>123</td>
+<td>2694</td>
+<td>2532</td>
+<td>162</td>
+</tr>
+<tr>
+<td>IV, Geometry</td>
+<td>35</td>
+<td>477</td>
+<td>470</td>
+<td>7</td>
+</tr>
+<tr>
+<td>V, Catalogues</td>
+<td>6</td>
+<td>47</td>
+<td>46</td>
+<td>1</td>
+</tr>
+<tr>
+<td>VI, Synthetic Studies</td>
+<td>160</td>
+<td>5951</td>
+<td>2647</td>
+<td>3304</td>
+</tr>
+</tbody>
+</table></div>
+<p>The distribution is not uniform and the reason is the root. Part VI, the synthetic studies, holds the square-root family, and the square-root family holds the glyph: 3304 of its 5951 tokens are capitals, and 4083 of them are the root in one of its dressed forms, the capital, the tilde or the arrow. Part III, analysis, holds the largest bare lower case, 2441 tokens, because the dual variable of the Fourier transform is written with the letter there.</p>
+<p><strong>How the roles are counted.</strong> Each token is counted by its form with a regular expression. Each role is a reading of the article that carries the token, one article at a time, and the residual row of each table is what the reading does not name. The rows of a part sum to the part's total; the residual is therefore exact even where the reading is coarse.</p>
+<h2 id="mathematics-part-i-algebra">Mathematics, Part I: Algebra</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root in the tilde-free layers</td>
+<td>60</td>
+<td>6</td>
+</tr>
+<tr>
+<td>the generic element</td>
+<td>114</td>
+<td>17</td>
+</tr>
+</tbody>
+</table></div>
+<p>The part holds two small root families. <em>The Biquaternion Eigenvalue Decomposition</em> writes the idempotents of a pure root as $\tilde\Pi_\pm=\tfrac12(1\pm\vec{Ζ})$ with $\vec{Ζ}=-i\vec Q/B$, and 40 of the 45 capitals of the part are that one formula. The other five divide in two. <em>The Eigenvalue Decomposition of a Hermitian Element</em> writes the same pure root twice, $\vec{Ζ}=-i\vec u$ for a real unit vector, and calls the two projectors its Hermitian pair. The remaining three are the adjoined generator, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, once each in <em>Dirac Operators with Hermitian Adjoint</em>, <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>; each sentence says that the grading is a different object from the chirality cell.</p>
+<p>The one systematic use of the bare lower case for a root is <em>The Number Systems as Algebras with and without Nontrivial Idempotents</em>, 15 tokens, which maps a root to an idempotent and back:</p>
+<p>$$
+\zeta\longmapsto e=\tfrac12(1+\zeta),\qquad e\longmapsto \zeta=2e-1,\qquad \zeta^2=1 .
+$$</p>
+<p>The layer there is the two-dimensional one, complex or split-complex, and the case rule asks for the plain capital $Ζ$. The article writes the minuscule throughout. It is the only place in the corpus where the root is written in the lower case with no tilde and no arrow.</p>
+<p>The remaining 114 tokens are the generic element. <em>Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation</em> writes the bracket $[\zeta,\eta]$ of two Lie algebra elements, 28 tokens. <em>Poisson and Gerstenhaber Algebras</em> writes the generators $k[\zeta_1,\dots,\zeta_n]$, 13 tokens. <em>Representation Theory of Symmetric Groups</em> writes a ratio of partitions, $\zeta=\lambda/\mu$, 8 tokens. The rest are elements of algebras with no role: the symmetric and antisymmetric parts of a product, the sesquilinear structure of an endomorphism algebra, Peirce coordinates.</p>
+<h2 id="mathematics-part-ii-topology">Mathematics, Part II: Topology</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the open set, upper case</td>
+<td>131</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the vector of a Hilbert space</td>
+<td>398</td>
+<td>13</td>
+</tr>
+<tr>
+<td>the boundary point or the infinite word</td>
+<td>45</td>
+<td>3</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>225</td>
+<td>32</td>
+</tr>
+</tbody>
+</table></div>
+<p>The part carries the second largest share of the upper case, and all of it but three tokens is an open set. <em>Čech Cohomology</em>, 59 tokens, and <em>Sheaf Cohomology</em>, 52, write an open cover $\mathcal U=\{Ζ_i\}_{i\in I}$ and the sections over a member, $\mathcal F(Ζ)$. <em>Operators on a Variety</em> writes $\mathcal O_X(Ζ)$, 11 tokens, and <em>Schemes</em> writes $\mathcal O_X|_Ζ$, 9. The glyph is a set throughout, and its first occurrence in each article declares it.</p>
+<p>The vector of a Hilbert space is the largest lower-case role of the part. <em>The Modular Operator and Tomita–Takesaki Theory</em> writes a cyclic and separating vector, $S(x\zeta)=x^*\zeta$ and $\overline{\mathcal M\zeta}=H$, 81 tokens. <em>The GNS Construction</em> writes $\zeta_\omega$ beside the state, 34 tokens, and <em>The Indefinite GNS Construction</em> 26. <em>Property (T)</em> writes the invariant vector, $\pi(g)\zeta=\zeta$ for all $g$, 32 tokens. Three further articles of the adjoint family write the same vector in a module, 34, 12 and 12 tokens.</p>
+<p>The boundary point is the third role. <em>Self-Similar Groups</em> writes an infinite word, $\zeta=x_1x_2x_3\cdots\in X^{\omega}$, 17 tokens; <em>Hyperbolic Groups</em> writes two points of the boundary, $\zeta\neq\eta\in\partial X$, 15; <em>Limit Spaces and Schreier Graphs</em> writes the same word, 13. The letter names a point at infinity, not an element of the algebra.</p>
+<p>The residual holds three smaller families. <em>Pontryagin Duality</em> writes a character indexed by a dual element, $\chi_\zeta(x)=\exp(2\pi i\zeta x)$, 14 tokens, and <em>Mackey Theory</em> writes the same, 10. <em>Topological Tensor Products of Sesqualgebras</em> writes a multiplicative functional, $\zeta(a_kc_l)=\zeta(a_k)\zeta(c_l)$, 13. The rest are elements of topological groups and algebras.</p>
+<h2 id="mathematics-part-iii-analysis">Mathematics, Part III: Analysis</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dual variable</td>
+<td>1154</td>
+<td>27</td>
+</tr>
+<tr>
+<td>the vector of a Hilbert space</td>
+<td>394</td>
+<td>16</td>
+</tr>
+<tr>
+<td>the zeta function and its relatives</td>
+<td>242</td>
+<td>13</td>
+</tr>
+<tr>
+<td>the boundary point</td>
+<td>38</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the open set, upper case</td>
+<td>147</td>
+<td>9</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>719</td>
+<td>56</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the part where the letter is at home, and it is at home in a role the conventions do not mention. The dual variable is the frequency of the Fourier transform, the argument of a symbol, the covector of a cotangent space. <em>The Adjoint of the Fourier Operator</em> writes it in the inversion formula:</p>
+<p>$$
+f(x)=\int (\mathcal F f)(\zeta)\exp(2\pi i x\cdot\zeta)\,d\zeta ,
+$$</p>
+<p>73 tokens. <em>Pseudodifferential Operators</em> writes the symbol $\sum_{|\alpha|\le m}\mathfrak a_\alpha(x)\zeta^\alpha$ and its derivative $\partial^\alpha/\partial\zeta^\alpha$, 122. <em>Fourier Analysis on Euclidean Spaces</em> writes $2\pi i\zeta_j\mathcal F f$, 99. <em>Microlocal Analysis</em> 76, <em>Semiclassical Analysis</em> 71, <em>Differential Operators</em> 65 with $\zeta\in\mathbb{R}^n$, <em>The Dirac Operator</em> 39 with $\bar\sigma(\zeta)=\zeta_t-\sum_{i\ge1}e_i\zeta_i$, <em>Clifford Analysis</em> 29 with $\sigma(\zeta)=\zeta_t+\sum e_i\zeta_i$. The same variable is the covector of a manifold in <em>Differential Operators on a Manifold</em>, $\zeta=\sum_j\zeta_j\,dx_j$, 41 tokens, and the argument of the Clifford action $c(\zeta)$ in <em>Dirac Differential Operators</em>, 50.</p>
+<p>The second role is the vector of a Hilbert space, in the representation-theoretic articles rather than the operator-algebraic ones. <em>Unitary Representations and the Orbit Method</em> writes the orbit $\mathcal O_\zeta$, 75 tokens; <em>Unitary Representations and the Adjoint</em> writes the fixed space $\mathcal H^G=\{\zeta:\pi(x)\zeta=\zeta\}$, 42; <em>The Left and Right Multiplication Operators on a Hilbert Space</em> writes $\zeta,\eta\in H$, 57. <em>Positive-Definite Functions and the Gelfand–Raikov Theorem</em> writes the matrix element $\langle\pi(x)\zeta,\eta\rangle$, 32, and the three articles on positive-definite kernels and distributions write the same, 24, 22 and 20.</p>
+<p>The third role is the zeta function, and it is the only role in the corpus that is a name rather than a variable. <em>Zeta Functions</em> writes $\zeta(s)=\sum_{n\ge1}n^{-s}$ and the Euler product $\zeta(s)=\prod_p(1-p^{-s})^{-1}$, 42 tokens. <em>The Prime Number Theorem</em> writes the logarithmic derivative and the zero-free region, 65 tokens. <em>Analytic Number Theory</em> 35, <em>L-Functions</em> 9, <em>Complex Special Functions</em> 13, <em>Real Special Functions</em> 8, <em>List of Constants</em> 10. Across the corpus, the function is written as a value, $\zeta(s)$ or $\zeta(3)$ or $\zeta(-3)$, 151 times in 25 articles.</p>
+<p>The upper case in this part is three things at once. Nine articles write an open set, 147 tokens, in the sheaf-theoretic manner of Part II: <em>Sheaves and the de Rham Complex</em> writes $Ζ\subseteq M$ and $\Omega^k(Ζ)$, 23 tokens; <em>Differential Forms and Stokes' Theorem</em> writes a chart $(Ζ,x_1,\dots,x_n)$, 25; <em>Fibre Bundles, Connections and Curvature</em> writes the trivialising cover $\{Ζ_\alpha\}$, 23. <em>Topological Dynamics</em> writes an invariant set, $T^n(Ζ)\cap Ζ=\varnothing$, 41 tokens. <em>The Riemann Hypothesis</em> writes the completed zeta function, 13 tokens, and I return to it below.</p>
+<p>The residual is a long tail of a genuine kind: the hypercomplex variable of <em>Hypercomplex Integration</em>, $\omega=f\,d\zeta$, 66 tokens; the coefficient of a Cauchy–Riemann operator in <em>Regularity and the Cauchy–Riemann Operator</em>, 68; the differentiation variable of <em>Rigid Analytic Functions</em>; the join of two partitions in <em>Ergodic Theory</em>, $\zeta\vee\eta$, 24 tokens.</p>
+<h2 id="mathematics-part-iv-geometry">Mathematics, Part IV: Geometry</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the cotangent coordinate</td>
+<td>172</td>
+<td>5</td>
+</tr>
+<tr>
+<td>the boundary point</td>
+<td>25</td>
+<td>3</td>
+</tr>
+<tr>
+<td>the open set, upper case</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>275</td>
+<td>25</td>
+</tr>
+</tbody>
+</table></div>
+<p>The dual variable returns as the momentum of a Hamiltonian flow. <em>The Geodesic Flow Operator</em> writes the pair $(x,\zeta)$ of the cotangent bundle, 59 tokens, and <em>The Geodesic Flow</em> 12. <em>Lie–Poisson Reduction and the Euler–Poincaré Equation</em> writes $\zeta\in\mathfrak g^*$ and the bracket</p>
+<p>$$
+\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle ,
+$$</p>
+<p>70 tokens. <em>Poisson Geometry</em> writes $\zeta\in\mathrm{G}^*$, 8. The letter is the covector, and the geometry is read on it.</p>
+<p>The rest of the part divides into three objects. <em>Supergeometry</em> writes an odd coordinate, $\zeta_i^{\,2}=0$ and $f(x,\zeta)=\sum_I f_I(x)\zeta_I$, 59 tokens, the only Grassmann role in the mathematical corpus. <em>Homogeneous Spaces</em> writes an element of the Lie algebra, $\zeta\in\mathrm{G}_p$, 42 tokens. <em>Contact Geometry</em> writes the contact distribution $\zeta=\ker\alpha$, 33 tokens. <em>The Twistor Operator</em> writes a twistor coordinate $\zeta^{\sharp}$, 40 tokens.</p>
+<p>The upper case is five tokens in two articles: $Ζ\subseteq\mathbb{R}^n$ in <em>Conformal Geometry</em> and a chart $(Ζ,x_1,\dots,x_m,y_1,\dots,y_m)$ in <em>Symplectic Geometry</em>.</p>
+<h2 id="mathematics-part-v-catalogues">Mathematics, Part V: Catalogues</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dual variable</td>
+<td>24</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>15</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the open set, upper case</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>7</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The catalogues inherit the roles of the parts they list and add none. <em>List of Differential Operators and Equations</em> writes the principal symbol $\sigma(D)(\zeta)=i\zeta$, 24 tokens. <em>List of Constants</em> and <em>List of Special Functions</em> write the zeta values, 10 and 5. <em>List of Geometric Bundles and Invariants</em> writes the local product $Ζ\times F$, one token, the open set of a bundle chart.</p>
+<h2 id="mathematics-part-vi-synthetic-studies">Mathematics, Part VI: Synthetic Studies</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root</td>
+<td>4083</td>
+<td>104</td>
+</tr>
+<tr>
+<td>the dual variable</td>
+<td>661</td>
+<td>19</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>39</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the vector of a Hilbert space</td>
+<td>36</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the boundary point</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the open set, upper case</td>
+<td>11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>1114</td>
+<td>134</td>
+</tr>
+</tbody>
+</table></div>
+<p>This part holds the root, and it holds it in every form the conventions allow. <em>Idempotents</em> writes 553 tokens of the letter: $\tilde{Ζ}^2=e_t$, the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$, the coordinates $Ζ_t$, $\vec{Ζ}$, and the lower-case real parts $\zeta_t$, $\zeta_x$. The square-root family follows: <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em> 332, <em>Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra</em> 215, <em>Square Roots of an Element</em> 205, <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> 200, <em>Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$-Space</em> 197.</p>
+<p>The coordinates are the reason the part's lower case is large. The conventions write $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$, so every biquaternion coordinate carries a minuscule for its real part and a capital for its real and imaginary parts together. The corpus writes $\zeta_t$ 217 times, $\zeta_x$ 82 times, $Ζ_t$ 143 times. A count of the lower case in this part is in good part a count of components.</p>
+<p>The dual variable appears in the harmonic analysis on the algebras, where the transform pairs an element $\tilde q$ with a dual element $\zeta$:</p>
+<p>$$
+(\mathcal F f)(\zeta)=\int f(\tilde q)\exp\!\bigl(-2\pi\omega\operatorname{Re}(\zeta^{\natural}\tilde q)\bigr)dq ,
+$$</p>
+<p>in <em>Quaternion Harmonic Analysis</em>, 66 tokens in that article. <em>Real Harmonic Analysis</em> writes 118 tokens of the same variable, <em>Harmonic Analysis on $\mathbb{C}^2$</em> 87, <em>Split-Quaternion Harmonic Analysis</em> 75, <em>Complex Harmonic Analysis</em> 50. The regular-function articles write it as a principal symbol, $s(\zeta)=\sum_\mu\zeta_\mu e_\mu$, in <em>Biquaternion Regular Functions</em>, <em>Quaternion Regular Functions</em> and <em>Fueter Theory for Quaternions</em>.</p>
+<p>The residual is the generic element of an algebra. <em>Biquaternion Versors and the Orthogonal Group</em> writes the conjugation $\rho_\zeta(\eta)=-\zeta\eta\zeta^{-1}$, 44 tokens. <em>Real Integration</em> writes the tags of a partition, $\zeta_i\in[c_{i-1},c_i]$, 11 tokens. <em>Several Complex Variables</em> writes the open set $Ζ\subseteq\mathbb{C}^n$, 11 tokens, the only upper-case set of the part.</p>
+<h2 id="the-upper-case-in-mathematics-the-root-and-three-local-names">The Upper Case in Mathematics: The Root and Three Local Names</h2>
+<p>The capital is 3696 tokens in 120 articles. Four roles divide it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root, decorated or not</td>
+<td>3385</td>
+<td>117</td>
+</tr>
+<tr>
+<td>the open set</td>
+<td>295</td>
+<td>17</td>
+</tr>
+<tr>
+<td>the Riemann $Ζ$ function</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the Eilenberg–Zilber map</td>
+<td>3</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root is the conventions' role and needs no defence. The other three are local names, each declared at the point of use, and none of them is mentioned in the conventions.</p>
+<p>The open set is the largest. It stands in 17 articles of Parts II, III, IV, V and VI; the largest counts are <em>Čech Cohomology</em> 59, <em>Sheaf Cohomology</em> 52, <em>Topological Dynamics</em> 41, <em>Differential Forms and Stokes' Theorem</em> 25, <em>Fibre Bundles, Connections and Curvature</em> 23, <em>Sheaves and the de Rham Complex</em> 23. Every one of these articles declares the letter before it uses it, and every one writes a set: $\mathcal F(Ζ)$, $\mathcal O_X(Ζ)$, $Ζ\subseteq M$, $\{Ζ_\alpha\}$.</p>
+<p>The Eilenberg–Zilber map is three tokens in two articles. <em>Cup and Cap Products</em> writes $\zeta\times\zeta$ as a chain map, $Ζ:C_*(X;R)\otimes_R C_*(Y;R)\to C_*(X\times Y;R)$, and the product $c\times d=Ζ_*(c\otimes d)$; <em>The Leray–Serre Spectral Sequence</em> refers back to it. The glyph is a map, declared with its arrow.</p>
+<p>The Riemann $Ζ$ function is 13 tokens in one article. <em>The Riemann Hypothesis</em> defines it at line 24 as the entire product $\tfrac12 s(s-1)\Lambda(s)$ read on the critical line, and uses it in the statement of the hypothesis, $\mathrm{RH}\iff$ every zero of $Ζ$ is real. The standard notation for that function is $\Xi$; the article names it the Riemann $Ζ$ function and declares it at the point of use, so the reader is not asked to guess.</p>
+<p><strong>The strongest objection.</strong> A corpus that declares each of these names has no ambiguity inside an article. That is true, and it was checked: no article carries both an open-set $Ζ$ and a decorated root. The open-set articles have no tilde and no arrow, and the root articles have no subset sign. So the collision is not local. It is corpus-wide: the same shape means the root in 117 articles and a set in 17, and a reader who moves between them carries the wrong reading for a moment.</p>
+<p><strong>The repair is already in the corpus.</strong> An open set is written $\Omega$ in 146 occurrences across 86 articles, and $U$ in 28 occurrences across 22. The two letters are in use, the conventions name neither for this purpose, and the substitution costs 295 tokens in 17 articles. Whether to make it is a decision for the author, not for this audit.</p>
+<h2 id="the-lower-case-in-physics">The Lower Case in Physics</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root, outside the twistor articles</td>
+<td>645</td>
+<td>82</td>
+</tr>
+<tr>
+<td>the twistor and the spinor</td>
+<td>247</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the gauge parameter</td>
+<td>116</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the coefficient of a basis</td>
+<td>108</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>63</td>
+<td>5</td>
+</tr>
+<tr>
+<td>the squeeze parameter</td>
+<td>39</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the L part of a state module</td>
+<td>22</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>306</td>
+<td>32</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root is the physical letter's first role, as it is the mathematical one. <em>Roots, Idempotents and Observables</em> writes 78 tokens, <em>The Roots of a General Element, Mass Frames and the Mass Shell</em> 45, <em>The Schrödinger Equation</em> 44, <em>Unitarity from Centrality</em> 37. The adjoined generator is the largest single named use: $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ stands 98 times in 53 articles, always as the central grading, always with $\chi^2=e_t$.</p>
+<p>The twistor articles are a role of their own, and the letter changes object inside them. <em>Twistor Theory and Biquaternions</em> writes an arrowed wave vector, $\vec\zeta$, 71 tokens, and a capital $\vec{Ζ}$ beside it for the energy–momentum biquaternion $Ζ=\Psi\circ\Psi^{*}=W+iP$, 24 tokens. The article records the source's overload itself: the source writes $Ζ$ for the biquaternion and for its two invariants in the same formulas, and the corpus keeps the biquaternion. <em>Congruence Twistors and the Fields They Generate</em> writes the principal spinor $\zeta=(\zeta_0,\zeta_1)$ with the ratio $G=\zeta_1/\zeta_0$, 52 tokens. <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em> writes the arrowed root and the hat, 59 tokens. The same letter is a wave vector, a spinor and a root in three neighbouring articles.</p>
+<p>The gauge parameter is the third role. <em>The Gauge Field Path Integral</em> writes the gauge-fixing parameter in $-\omega^2/(2\zeta)-B\omega$, 32 tokens; <em>Linearized Gravity</em> and <em>Gravitational Waves</em> write the diffeomorphism vector, $x_\mu\mapsto x_\mu+\zeta_\mu$, 28 and 23; <em>The Stueckelberg Mechanism</em> writes a mass ratio, $\zeta\to\infty$ and $\zeta=0$, 33. The letter is one scalar or one vector, and the article declares which.</p>
+<p>The coefficient is the fourth. <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em> writes $\mathcal B=\alpha\vec q+\beta\vec q^*+\zeta N+\eta\bar N$, with $\zeta$ one coefficient of a four-term basis, 108 tokens. The squeeze parameter is the fifth: <em>Squeezing Beyond the Biquaternion Algebra</em> writes $S(\zeta)=\exp[\tfrac12(\bar\zeta a^2-\zeta a^{\dagger2})]$ and $\zeta=r\exp(i\theta)$, and <em>Spin Squeezing and the Tavis–Cummings Model</em> writes the same, 39 tokens in the two.</p>
+<p>The zeta function is the sixth. <em>The Vacuum State and the Casimir Effect</em> writes $\zeta(-3)=1/120$ and $\zeta(4)=\pi^4/90$, 16 value forms; <em>The Functional Determinant</em> writes $\zeta(s)=\sum\lambda^{-s}$ and $-\left.d\zeta/ds\right|_{s=0}=\log\det$, 3; <em>The Anomalous Magnetic Moment</em> writes $\zeta(3)$ in the four-loop coefficient, 3; <em>The Action Principle and the Classical Limit</em> 3; <em>Coulomb Scattering</em> 1. Across the physics corpus the function is written as a value 26 times in five articles.</p>
+<p>The seventh is not the nilpotent the census first called it. <em>The Fermionic Fock Space</em> writes an L part $\zeta$ of the state module with $\zeta\zeta^{\natural}=0$ and $\zeta^{\natural}\zeta$ the other way, 22 tokens. The element is a part of a spinor and its product with its conjugate vanishes because of the sector, not because it squares to zero. The word nilpotent belongs to $\Upsilon$ and $\nu$, and this is neither.</p>
+<p>The residual holds the occasional field: the fluctuation $\frac12\zeta(\Box-\mu^2)\zeta$ of <em>The Klein–Gordon Path Integral</em>, the time function $\zeta(t')$ of <em>The Classical Harmonic Oscillator</em>, the spinor $d\zeta=\Omega\zeta$ of <em>The Algebrodynamical Programme</em>.</p>
+<h2 id="the-upper-case-in-physics">The Upper Case in Physics</h2>
+<p>The capital is 499 tokens in 81 articles, and all of it belongs to the root.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Ζ}$</td>
+<td>333</td>
+</tr>
+<tr>
+<td>$\vec{Ζ}$</td>
+<td>103</td>
+</tr>
+<tr>
+<td>$Ζ$ bare or with a subscript</td>
+<td>63</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three counts overlap where a form is decorated twice, and the form census above gives the exact split by decoration. The role is one: the root of the algebra, in the biquaternion layer, where the physics corpus lives. The coordinates follow the same rule, $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$, and the physics corpus writes $Ζ_t$ 15 times.</p>
+<p>Two uses deserve a line each. The adjoined generator $\tilde{Ζ}_{\mathrm{ad}}$ is 98 of the 499, and it is the carrier of the chirality grading in 53 articles; the conventions give it a paragraph and forbid another letter, so the count is the measure of how much physics leans on it. The twistor's energy–momentum biquaternion is 24 of the 499, and it is a physical object, not a root: the letter is the same shape and a different thing, and the article that uses it says so.</p>
+<h2 id="the-current-situation">The Current Situation</h2>
+<p><strong>What the conventions give the letter.</strong> One role, in every decoration: the root of the algebra. The sentence that fixes it is the case rule of <em>Special Element and Peirce Conventions</em>, read with the arrow of <em>Algebra and Element Conventions</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>what it means</th>
+<th>where it is fixed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Ζ$, $\tilde\zeta$, $\tilde{Ζ}$</td>
+<td>a root of $1$ in the tilde-free, quaternion and biquaternion layers</td>
+<td><em>Special Element and Peirce Conventions</em>, §<em>The Root Convention</em></td>
+</tr>
+<tr>
+<td>$Ζ_\pm$</td>
+<td>a root of $1$ of the reduced biquaternion layer, the two signs</td>
+<td>same</td>
+</tr>
+<tr>
+<td>$\vec{Ζ}$, $\vec\zeta$</td>
+<td>a pure root</td>
+<td>§<em>The Pure Glyphs</em></td>
+</tr>
+<tr>
+<td>$Ζ_\mu$, $\zeta_\mu$</td>
+<td>the coordinate of the root, $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$</td>
+<td>§<em>The Root Convention</em></td>
+</tr>
+<tr>
+<td>$\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>the adjoined central root of the double, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>physics <em>Special Element Conventions</em>, §<em>The Root Convention</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Nothing else is named.</strong> The fourteen convention articles were read for every statement about the letter, and no sentence assigns it a second object. There is no reservation of the bare $Ζ$ and no reservation of the bare $\zeta$: the conventions write the root with a decoration, capital or tilde or arrow, and a bare minuscule falls outside what they say.</p>
+<p><strong>What the corpus does with it.</strong> 11,752 tokens in 537 articles, mathematics 10,206 in 403 and physics 1,546 in 134. The roles divide as follows, and each column is disjoint and sums to its total.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>mathematics</th>
+<th>physics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root, every decoration</td>
+<td>4,202</td>
+<td>742</td>
+</tr>
+<tr>
+<td>the dual variable</td>
+<td>2,011</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the vector of a Hilbert space</td>
+<td>828</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>296</td>
+<td>63</td>
+</tr>
+<tr>
+<td>the open set, capital</td>
+<td>295</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the boundary point</td>
+<td>115</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the twistor, the spinor, the wave vector</td>
+<td>—</td>
+<td>247</td>
+</tr>
+<tr>
+<td>the gauge parameter</td>
+<td>—</td>
+<td>116</td>
+</tr>
+<tr>
+<td>the coefficient of a basis</td>
+<td>—</td>
+<td>108</td>
+</tr>
+<tr>
+<td>the squeeze parameter</td>
+<td>—</td>
+<td>39</td>
+</tr>
+<tr>
+<td>the L part of a state module</td>
+<td>—</td>
+<td>22</td>
+</tr>
+<tr>
+<td>the rest</td>
+<td>2,459</td>
+<td>209</td>
+</tr>
+<tr>
+<td>total</td>
+<td>10,206</td>
+<td>1,546</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rest of the mathematics column divides once more: the Grassmann coordinate 59 in one article, a generic element of a statement 1,340 in 56, the Riemann $Ζ$ function 13 in one, the Eilenberg–Zilber map 3 in two, and 1,044 of one-off fields, sums and tags.</p>
+<p><strong>The distribution by Part.</strong> The audit took the Part boundaries from <code>maths.md</code>: I ALGEBRA at line 45, II TOPOLOGY at 1801, III ANALYSIS at 2991, IV GEOMETRY at 4184, V CATALOGUES at 4763, VI SYNTHETIC STUDIES after.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>tokens</th>
+<th>the role that carries them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the conventions</td>
+<td>64</td>
+<td>the root, defined</td>
+</tr>
+<tr>
+<td>I, algebra</td>
+<td>174</td>
+<td>the root, and the Grassmann coordinate</td>
+</tr>
+<tr>
+<td>II, topology</td>
+<td>799</td>
+<td>the open set, 1 of every 3 tokens</td>
+</tr>
+<tr>
+<td>III, analysis</td>
+<td>2,694</td>
+<td>the dual variable, the largest single block</td>
+</tr>
+<tr>
+<td>IV, geometry</td>
+<td>477</td>
+<td>the dual variable, as a covector of a manifold</td>
+</tr>
+<tr>
+<td>V, catalogues</td>
+<td>47</td>
+<td>lists, declared at the top</td>
+</tr>
+<tr>
+<td>VI, synthetic studies</td>
+<td>5,951</td>
+<td>the root, the square-root family</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The finding, in one sentence.</strong> Six roles in mathematics and five in physics stand on the letter without a convention, and one of the six is not a role at all: a bare $\zeta$ that means <em>an arbitrary element</em> breaks the element rule of <em>Algebra and Element Conventions</em>, which says that the generic element is $\tilde Q$ and that no letter outside the $Q$ family is generic at any case.</p>
+<p><strong>The legitimate uses, and the size of the breach.</strong> Two roles are not in question: the root, 4,944 tokens, and the zeta function, 359 in 28 articles, where $\zeta(s)$ is a name carried with its argument and the Riemann $Ζ(t)$ is the same name read on the critical line. What the conventions reserve is 4,563 mathematical tokens and 764 physical ones, the capital and the dressed forms; the remaining 5,643 and 782 stand on a glyph no rule has claimed.</p>
+<p><strong>The breach is not local, and it is not a breach of a written rule either.</strong> No article carries two readings of the letter at once — the audit checked all 537 — so a reader inside one article is never misled. The collision is corpus-wide: the same shape is the root in 117 mathematical articles and an open set in 17, and the same minuscule is a frequency in 55 and a state vector in 29. A reader who moves between articles carries the wrong reading for a moment, and the corpus has no sentence that tells him which he is holding.</p>
+<h2 id="the-complete-alternative">The Complete Alternative</h2>
+<p><strong>One rule, three devices, no new letter.</strong> The migration adds no glyph: no Greek capital, no archaic letter, no Fraktur, no letter of any alphabet. It uses the three instruments the conventions already own.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>device</th>
+<th>what it is</th>
+<th>the corpus's precedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a word</td>
+<td>an upright name of two or three letters, set in roman</td>
+<td>$\mathrm{Sd}_{\tilde Q}$, the sandwich, 3,176 tokens; $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, the generic form; $\mathrm{Norm}(\tilde Q)$</td>
+</tr>
+<tr>
+<td>a superscript</td>
+<td>the caret label, three lowercase letters, naming <strong>the object</strong> the glyph denotes</td>
+<td>$\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$, seventy-nine rows</td>
+</tr>
+<tr>
+<td>a low label</td>
+<td>the subscript, naming <strong>a part or a role</strong>, and carrying the index</td>
+<td>$s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, $\mathsf M_{4L}$, $\tilde\Pi_1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The letter $\zeta$ keeps two objects and gives up six roles in mathematics and five in physics, the five carrying eleven distinct objects. Every row below is written once, with the form that replaces it, the device that carries it, and the tokens it moves; the two columns sum to the 10,206 and the 1,546 of the census.</p>
+<h3 id="mathematics">Mathematics</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>now</th>
+<th>the alternative</th>
+<th>device</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dual variable</td>
+<td>$\zeta$, $\zeta^\alpha$, $\partial/\partial\zeta$</td>
+<td>$\mathrm{Frq}$, $\mathrm{Frq}^\alpha$, $\partial/\partial\mathrm{Frq}$</td>
+<td>word</td>
+<td>2,011</td>
+<td>55</td>
+</tr>
+<tr>
+<td>the vector of a Hilbert space</td>
+<td>$\zeta\in\mathcal H$</td>
+<td>$\mathrm{Vc}$, $\mathrm{Vc}\in\mathcal H$</td>
+<td>word</td>
+<td>828</td>
+<td>29</td>
+</tr>
+<tr>
+<td>the open set</td>
+<td>$Ζ\subseteq X$, $\{Ζ_i\}$</td>
+<td>$\mathrm{Opn}\subseteq X$, $\{\mathrm{Opn}_i\}$</td>
+<td>word, with the low index on a member</td>
+<td>295</td>
+<td>17</td>
+</tr>
+<tr>
+<td>the boundary point</td>
+<td>$\zeta\in\partial G$</td>
+<td>$\mathrm{Bnd}\in\partial G$</td>
+<td>word</td>
+<td>115</td>
+<td>12</td>
+</tr>
+<tr>
+<td>the Grassmann coordinate</td>
+<td>$\zeta$, $\zeta^2=0$</td>
+<td>$\mathrm{Grs}$, $\mathrm{Grs}^2=0$</td>
+<td>word</td>
+<td>59</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the generic element</td>
+<td>$\zeta$ for an arbitrary element</td>
+<td>$\tilde Q$, $\vec Q$, $\tilde Q_1$</td>
+<td>the element rule, no new glyph</td>
+<td>1,340</td>
+<td>56</td>
+</tr>
+<tr>
+<td>the one-off fields</td>
+<td>$\zeta$ of a sum, a tag, a parameter</td>
+<td>$\mathrm{Loc}$, declared in the article</td>
+<td>word</td>
+<td>1,044</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the Eilenberg–Zilber map</td>
+<td>$Ζ:C_*\otimes C_*\to C_*$</td>
+<td>$\mathrm{Ezl}$</td>
+<td>word</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>$\zeta(s)$, $\zeta(3)$, $\zeta(-3)$</td>
+<td>unchanged</td>
+<td>—</td>
+<td>296</td>
+<td>25</td>
+</tr>
+<tr>
+<td>the Riemann $Ζ$ function</td>
+<td>$Ζ(t)$</td>
+<td>unchanged</td>
+<td>—</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the root</td>
+<td>every decorated form</td>
+<td>unchanged</td>
+<td>—</td>
+<td>4,202</td>
+<td>117</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="physics">Physics</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>now</th>
+<th>the alternative</th>
+<th>device</th>
+<th>tokens</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the wave vector</td>
+<td>$\vec\zeta$</td>
+<td>$\vec{\mathrm{Wv}}$</td>
+<td>word, with the arrow</td>
+<td>107</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the principal spinor</td>
+<td>$\zeta=(\zeta_0,\zeta_1)$</td>
+<td>$\mathrm{Spr}$, $\mathrm{Spr}_0$, $\mathrm{Spr}_1$</td>
+<td>word, with the low index on a component</td>
+<td>52</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the phase-carrying spinor</td>
+<td>$\exp(i\alpha)\zeta$</td>
+<td>$\mathrm{Spr}^{\mathrm{pha}}$</td>
+<td><strong>word with a superscript</strong></td>
+<td>29</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the unit direction</td>
+<td>$\hat\zeta$</td>
+<td>$\hat{\mathrm{Drc}}$</td>
+<td>word, with the hat</td>
+<td>21</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the energy–momentum biquaternion</td>
+<td>$Ζ=\Psi\circ\Psi^{*}$</td>
+<td>$\mathrm{Pmp}$</td>
+<td>word</td>
+<td>24</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the gauge-fixing parameter</td>
+<td>$-\omega^2/(2\zeta)-B\omega$</td>
+<td>$\mathrm{Fx}$</td>
+<td>word</td>
+<td>32</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the diffeomorphism vector</td>
+<td>$x_\mu\mapsto x_\mu+\zeta_\mu$</td>
+<td>$\mathrm{Df}_\mu$</td>
+<td>word, with the low index</td>
+<td>51</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the mass ratio</td>
+<td>$\zeta\to\infty$, $\zeta(2s-2)$</td>
+<td>$\mathrm{Rat}$</td>
+<td>word</td>
+<td>33</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the coefficient of a basis</td>
+<td>$\mathcal B=\alpha\vec q+\beta\vec q^*+\zeta N+\eta\bar N$</td>
+<td>$\mathcal B=\alpha\vec q+\beta\vec q^*+\mathrm{Bs}\,N+\eta\bar N$</td>
+<td>word</td>
+<td>108</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the squeeze parameter</td>
+<td>$S(\zeta)$, $\zeta=r\exp(i\theta)$</td>
+<td>$\mathrm{Sqz}$, $S(\mathrm{Sqz})$</td>
+<td>word</td>
+<td>39</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the L part of a state module</td>
+<td>$\zeta$, $\zeta\zeta^{\natural}=0$</td>
+<td>$\mathrm{St}_L$, $\mathrm{St}_L\mathrm{St}_L^{\natural}=0$</td>
+<td>word, with the low label on the part</td>
+<td>22</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the one-off fields</td>
+<td>$\tfrac12\zeta(\Box-\mu^2)\zeta$, $\zeta(t')$</td>
+<td>$\mathrm{Loc}$, declared in the article</td>
+<td>word</td>
+<td>209</td>
+<td>32</td>
+</tr>
+<tr>
+<td>the remainder of the twistor group</td>
+<td>small sums and tags of the two articles</td>
+<td>$\mathrm{Loc}$</td>
+<td>word</td>
+<td>14</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the root</td>
+<td>$\tilde{Ζ}$, $\tilde\zeta$, $\vec{Ζ}$</td>
+<td>unchanged</td>
+<td>—</td>
+<td>742</td>
+<td>86</td>
+</tr>
+<tr>
+<td>the zeta function</td>
+<td>$\zeta(-3)$, $\zeta(4)$, $\zeta(3)$</td>
+<td>unchanged</td>
+<td>—</td>
+<td>63</td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four superscripts the migration needs, and why each is needed.</strong></p>
+<p>The caret is not used on $\zeta$. A $\zeta^{\mathrm{fou}}$ would keep the letter as the glyph of a non-root object, and the reservation is a reservation of the glyph, not of a form. The precedent is the corpus's own retirement of the phase: the 91 occurrences that $\phi$ carried are $\theta^{\mathrm{pha}}$, and the role moved to another object's glyph rather than staying on its own.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the form</th>
+<th>why the superscript</th>
+<th>the precedent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Spr}^{\mathrm{pha}}$</td>
+<td>two spinors stand in the twistor group, the principal one and the one that carries the phase; the label names the object, and the bare word keeps the principal spinor</td>
+<td>$\theta$ and $\theta^{\mathrm{pha}}$, where the first keeps the bare glyph and the second takes the label</td>
+</tr>
+<tr>
+<td>$\mathrm{Frq}^{\mathrm{sym}}$</td>
+<td>where one article carries the Fourier variable and the symbol argument of a pseudodifferential operator, the second takes the label; the low index is not used, because the two are different objects and not two copies</td>
+<td>$\theta^{\mathrm{drc}}$ against $\theta^{\mathrm{pha}}$, two roles in one formula</td>
+</tr>
+<tr>
+<td>$\mathrm{Opn}^{\mathrm{cov}}$</td>
+<td>where an article already writes a set $\mathrm{Opn}$ and needs the cover as well, the cover takes the label; the members take the index, $\mathrm{Opn}^{\mathrm{cov}}_i$</td>
+<td>$S_{\mathrm{int}}$ against $S_{\mathrm{tot}}$, a role on the low slot</td>
+</tr>
+<tr>
+<td>$\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>the root's own named subscript, which the conventions give and which does not change</td>
+<td>physics <em>Special Element Conventions</em>, §<em>The Root Convention</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The index is not a superscript, and the alternative never confuses the two.</strong> A second copy of one object takes the low index, $\mathrm{Frq}_1$ and $\mathrm{Frq}_2$, $\mathrm{Spr}_0$ and $\mathrm{Spr}_1$, $\mathrm{Opn}_i$; a different object takes the superscript label. This is the sentence of <em>Index, Notation and Corpus Conventions</em> applied: a label on the caret names the object the glyph denotes, and low it names a part or a role.</p>
+<p><strong>What the alternative refuses.</strong> It refuses twelve candidate letters because each is bound: $\xi$ the field, 2,911 tokens in 172 articles; $\theta$ and $\Theta$ the angles; $\vartheta$ the congruence and the theta function; $\varpi$ the symplectic potential; $\Omega$ the curvature; $U$, $u$, $\tilde U$, $\vec u$ the units, with the sentence that they <em>never name an open set … or a dual element</em>; $\lambda$ the central phase; $\kappa$ the coupling; $\omega$ a curvature component and the angular velocity; $\pi$ and $\Pi$ the idempotent; $\nu$ and $\Upsilon$ the nilpotent; $\gamma$ the Clifford map; $\sigma$ the Pauli matrices; $\chi$ the central grading; $\ell$ the length; $M$ the matrix; $\varrho$ retired by name. It refuses the Greek capitals, the archaic letters and Fraktur, which are letters. It refuses $\mathcal U$ for an open cover only where the article also writes the cover, and prefers the label there.</p>
+<p><strong>What it costs to state.</strong> One sentence in <em>Index, Notation and Corpus Conventions</em>, that an upright name may name an object of the corpus and not only an operation, beside the sentences that already write $\mathrm{Form}$ and $\mathrm{Norm}$; and the rows of the four superscripts above in the label table.</p>
+<h2 id="the-order-of-work">The Order of Work</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>group</th>
+<th>tokens</th>
+<th>articles</th>
+<th>the form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the open set</td>
+<td>295</td>
+<td>17</td>
+<td>$\mathrm{Opn}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the gauge parameter, the diffeomorphism vector, the mass ratio</td>
+<td>116</td>
+<td>4</td>
+<td>$\mathrm{Fx}$, $\mathrm{Df}_\mu$, $\mathrm{Rat}$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the twistor group</td>
+<td>247</td>
+<td>4</td>
+<td>$\vec{\mathrm{Wv}}$, $\mathrm{Spr}$, $\mathrm{Spr}^{\mathrm{pha}}$, $\hat{\mathrm{Drc}}$, $\mathrm{Pmp}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the coefficient of a basis, the squeeze parameter, the L part</td>
+<td>169</td>
+<td>4</td>
+<td>$\mathrm{Bs}$, $\mathrm{Sqz}$, $\mathrm{St}_L$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the boundary point and the Grassmann coordinate</td>
+<td>174</td>
+<td>13</td>
+<td>$\mathrm{Bnd}$, $\mathrm{Grs}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the vector of a Hilbert space</td>
+<td>828</td>
+<td>29</td>
+<td>$\mathrm{Vc}$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>the dual variable</td>
+<td>2,011</td>
+<td>55</td>
+<td>$\mathrm{Frq}$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>the generic element</td>
+<td>1,340</td>
+<td>56</td>
+<td>$\tilde Q$, by the element rule</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first five steps are 1,001 tokens in 42 articles, and each one is a substitution a reader can follow without a table. The last three are 4,179 tokens in 140 articles, and each occurrence must be read: $\zeta^\alpha$, $\zeta_j$ and $\hat\zeta$ are three objects in one article, and a blind substitution would weld them.</p>
+<h2 id="summary">Summary</h2>
+<p>The conventions give the letter one role, the root of the algebra, written in every decoration: $\tilde{Ζ}$, $\tilde\zeta$, $\vec{Ζ}$, $\vec\zeta$, $Ζ$, $Ζ_\pm$, $Ζ_\mu$, and the adjoined generator $\tilde{Ζ}_{\mathrm{ad}}$. No sentence assigns the letter a second object, and no sentence reserves the bare minuscule at all.</p>
+<p>The corpus writes 11,752 tokens in 537 articles. The root holds 4,944 of them, the zeta function 359 in 28 articles, and the remaining 6,449 stand on the letter without a convention: the dual variable 2,011 in 55 articles, the vector of a Hilbert space 828 in 29, the open set 295 in 17, the boundary point 115 in 12, the Grassmann coordinate 59 in 1, the twistor and its spinor 247 in 4, the gauge parameter 116 in 4, the coefficient of a basis 108 in 1, the squeeze parameter 39 in 2, the L part of a state module 22 in 1, and a long tail of one-off fields.</p>
+<p>The alternative adds no glyph. It uses three instruments the corpus already owns: a word, $\mathrm{Frq}$, $\mathrm{Vc}$, $\mathrm{Opn}$, $\mathrm{Bnd}$, $\mathrm{Grs}$, $\mathrm{Bs}$, $\mathrm{Sqz}$, $\mathrm{Fx}$, $\mathrm{Df}_\mu$, $\mathrm{Rat}$, $\mathrm{St}_L$, $\vec{\mathrm{Wv}}$, $\mathrm{Spr}$, $\hat{\mathrm{Drc}}$, $\mathrm{Pmp}$, $\mathrm{Ezl}$; the superscript label where two objects of one word meet, $\mathrm{Spr}^{\mathrm{pha}}$, $\mathrm{Frq}^{\mathrm{sym}}$, $\mathrm{Opn}^{\mathrm{cov}}$; and the low index for a second copy, $\mathrm{Frq}_1$, $\mathrm{Spr}_0$, $\mathrm{Opn}_i$. The caret is never written on $\zeta$, because a $\zeta^{\mathrm{fou}}$ would keep the glyph as the name of a non-root object, and the reservation is a reservation of the glyph.</p>
+<p>The generic element, 1,340 tokens in 56 articles, is not a role at all: the element rule says the general element is $\tilde Q$, and a $\zeta$ that stands for an arbitrary element breaks that rule before it breaks anything about this letter.</p>
+<p>The work is 5,180 tokens in 182 articles, in eight steps. The first five are 1,001 tokens in 42 articles and need no table; the last three are 4,179 in 140 and every occurrence must be read.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<p>The first column is the letter as the corpus writes it today. The third is the form the complete alternative gives it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>reading</th>
+<th>after the alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Ζ}$, $\tilde\zeta$</td>
+<td>the root, biquaternion and quaternion layers</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$Ζ$, $Ζ_\pm$</td>
+<td>the root in the tilde-free and reduced layers</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$\vec{Ζ}$, $\vec\zeta$</td>
+<td>the pure root</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$Ζ_\mu$, $\zeta_\mu$</td>
+<td>the coordinate of the root, $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>the adjoined central root, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$\zeta$ bare, dual variable</td>
+<td>the frequency, the symbol argument, the covector, the momentum</td>
+<td>$\mathrm{Frq}$, and $\mathrm{Frq}^{\mathrm{sym}}$ for the symbol argument</td>
+</tr>
+<tr>
+<td>$\zeta$ bare, vector</td>
+<td>the cyclic, separating or invariant vector of a Hilbert space</td>
+<td>$\mathrm{Vc}$</td>
+</tr>
+<tr>
+<td>$\zeta(s)$</td>
+<td>the zeta function and its relatives</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$Ζ\subseteq X$</td>
+<td>an open set</td>
+<td>$\mathrm{Opn}$, and $\mathrm{Opn}^{\mathrm{cov}}$ for a cover</td>
+</tr>
+<tr>
+<td>$Ζ(t)$</td>
+<td>the Riemann $Ζ$ function, $\tfrac12s(s-1)\Lambda(s)$ on the critical line</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$Ζ_*$</td>
+<td>the Eilenberg–Zilber map</td>
+<td>$\mathrm{Ezl}$</td>
+</tr>
+<tr>
+<td>$\zeta$, twistor</td>
+<td>the wave vector, the principal spinor, the energy–momentum biquaternion</td>
+<td>$\vec{\mathrm{Wv}}$, $\mathrm{Spr}$ and $\mathrm{Spr}^{\mathrm{pha}}$, $\mathrm{Pmp}$</td>
+</tr>
+<tr>
+<td>$\zeta$, boundary</td>
+<td>a point of $\partial G$</td>
+<td>$\mathrm{Bnd}$</td>
+</tr>
+<tr>
+<td>$\zeta$, Grassmann</td>
+<td>the odd coordinate, $\zeta^2=0$</td>
+<td>$\mathrm{Grs}$</td>
+</tr>
+<tr>
+<td>$\zeta$, gauge</td>
+<td>the gauge-fixing parameter, the diffeomorphism vector, the mass ratio</td>
+<td>$\mathrm{Fx}$, $\mathrm{Df}_\mu$, $\mathrm{Rat}$</td>
+</tr>
+<tr>
+<td>$\zeta$, basis</td>
+<td>the coefficient of a basis of the chiral algebra</td>
+<td>$\mathrm{Bs}$</td>
+</tr>
+<tr>
+<td>$\zeta$, squeeze</td>
+<td>the squeeze parameter, $\zeta=r\exp(i\theta)$</td>
+<td>$\mathrm{Sqz}$</td>
+</tr>
+<tr>
+<td>$\zeta$, state module</td>
+<td>the L part, $\zeta\zeta^{\natural}=0$</td>
+<td>$\mathrm{St}_L$</td>
+</tr>
+<tr>
+<td>$\zeta$, generic</td>
+<td>an arbitrary element of a statement</td>
+<td>$\tilde Q$, $\vec Q$, by the element rule</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/special-element-and-peirce-conventions.html">Special Element and Peirce Conventions</a>, §<em>The Root Convention</em>, for the case rule, the coordinates and the subscript of a root.</li>
+<li><a href="../articles_maths/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, §<em>The Pure Glyphs</em>, for the arrow and its priority over the tilde.</li>
+<li><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a>, for the adjoined generator and the sentence that gives it the glyph.</li>
+<li><a href="../articles_maths/index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a>, §<em>The Three-Letter Labels</em>, for the caret, the seventy-nine labels and the rules of the low slot.</li>
+<li><a href="the-letter-chi-an-inventory-of-the-glyph.html">The Letter Chi: An Inventory of the Glyph</a>, for the other letter whose case rule is read as a field rule and not as a layer rule.</li>
+<li><a href="phi-psy-migration.html">The Phi and Psi Census: The Mathematics and Physics Corpora</a>, for the method of counting a glyph in the two corpora.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

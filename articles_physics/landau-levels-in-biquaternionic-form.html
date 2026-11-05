@@ -80,14 +80,14 @@ $$</p>
 <p>The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. Gaussian units are used, with the electric charge denoted $ϙ$ and the mechanical momentum distinguished from the canonical momentum.</p>
 <h2 id="the-charged-particle-in-the-biquaternion-framework">The Charged Particle in the Biquaternion Framework</h2>
 <h3 id="minimal-coupling-and-the-central-hamiltonian">Minimal coupling and the central Hamiltonian</h3>
-<p>The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\chi^{\mathrm{scp}}(\vec r)$ is</p>
+<p>The non-relativistic Hamiltonian of a charge $ϙ$ in a vector potential $\vec A(\vec r)$ and a scalar potential $\xi^{\mathrm{scp}}(\vec r)$ is</p>
 <p>$$
-H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\chi^{\mathrm{scp}}\right]e_t
+H=\left[\frac{1}{2m}\left(p-\frac{ϙ}{c}\vec A\right)^2+ϙ\xi^{\mathrm{scp}}\right]e_t
 =\frac{1}{2m}\sum_k\tilde\pi_k^2 ,
 \qquad
 \tilde\pi_k=\left(p_k-\frac{ϙ}{c}A_k\right)e_t ,
 $$</p>
-<p>where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_k$ and $\chi^{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.</p>
+<p>where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_k$ and $\xi^{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.</p>
 <p>For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.</p>
 <h3 id="the-field-strength-as-a-central-commutator">The field strength as a central commutator</h3>
 <p>The components of the mechanical momentum do not commute. With the convention $\vec B=\nabla\times\vec A$, a direct computation gives</p>
@@ -110,9 +110,9 @@ H=\frac{1}{2m}\Big[p_x^2+\Big(p_y-\frac{ϙB}{c}x\Big)^2+p_z^2\Big]e_t .
 $$</p>
 <p>The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\hbar k$ and $p_z=\hbar k_z$ are conserved, and the envelope has the form</p>
 <p>$$
-\psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\exp(\,i(ky+k_zz))\,f(x)\,\chi ,
+\tilde{Ξ}^{\mathrm{spn}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\exp(\,i(ky+k_zz))\,f(x)\,\xi ,
 $$</p>
-<p>with $\chi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation</p>
+<p>with $\xi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation</p>
 <p>$$
 \frac{1}{2m}\Big[-\hbar^2\frac{d^2f}{dx^2}(x)+m^2\omega_c^2(x-x_0)^2f(x)\Big]=\left(E-\frac{\hbar^2k_z^2}{2m}\right)f(x),
 $$</p>
@@ -134,11 +134,11 @@ n=0,1,2,\dots,
 $$</p>
 <p>which is the <strong>Landau spectrum</strong>: a ladder of levels spaced by $\hbar\omega_c$, dispersive only in the field direction. The transverse kinetic energy is quantised at half-integer multiples of the cyclotron quantum, with a zero-point floor $\frac12\hbar\omega_c$. The wave functions are</p>
 <p>$$
-\psi_{n,k}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\exp(\,i(ky+k_zz))\,
+\tilde{Ξ}^{\mathrm{spn}}_{n,k}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\exp(\,i(ky+k_zz))\,
 H_n\!\left(\frac{x-x_0}{\ell_B}\right)
-\exp(-(x-x_0)^2/2\ell_B^2)\;\chi ,
+\exp(-(x-x_0)^2/2\ell_B^2)\;\xi ,
 $$</p>
-<p>with $H_n$ the Hermite polynomials. The oscillator equation was verified numerically: substituting $\psi_{n,k}$ with the Hermite polynomials for $n=0,\dots,3$, the residual of the one-dimensional equation was of order $10^{-8}$, limited by the finite-difference approximation of the second derivative.</p>
+<p>with $H_n$ the Hermite polynomials. The oscillator equation was verified numerically: substituting $\tilde{Ξ}^{\mathrm{spn}}_{n,k}$ with the Hermite polynomials for $n=0,\dots,3$, the residual of the one-dimensional equation was of order $10^{-8}$, limited by the finite-difference approximation of the second derivative.</p>
 <p>Two features of this result carry the whole physics. First, the spacing $\hbar\omega_c$ is a central scalar built from the central quantities $ϙ,B,m,c$; the ladder is generated by the central creation and annihilation operators</p>
 <p>$$
 a=\frac{1}{\sqrt{2m\hbar\omega_c}}\left(\tilde\pi_x+i\tilde\pi_y\right),
@@ -185,32 +185,32 @@ $$</p>
 <p>In the biquaternion interpretation $L_z^{\mathrm{orb}}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z^{\mathrm{orb}}=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.</p>
 <p>The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states</p>
 <p>$$
-\psi_{0,m}\ \propto\ z^{\,m}\,\exp(-|z|^2/4\ell_B^2)\,\chi ,
+\tilde{Ξ}^{\mathrm{spn}}_{0,m}\ \propto\ z^{\,m}\,\exp(-|z|^2/4\ell_B^2)\,\xi ,
 \qquad
 m=0,1,2,\dots,
 $$</p>
-<p>all have energy $\frac12\hbar\omega_c$ and angular momentum $L_z^{\mathrm{orb}}=m\hbar$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\psi_{0,m}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\omega_c\psi_{0,m}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.</p>
+<p>all have energy $\frac12\hbar\omega_c$ and angular momentum $L_z^{\mathrm{orb}}=m\hbar$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\tilde{Ξ}^{\mathrm{spn}}_{0,m}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\omega_c\tilde{Ξ}^{\mathrm{spn}}_{0,m}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.</p>
 <h3 id="the-classical-orbit-and-the-magnetic-length">The classical orbit and the magnetic length</h3>
 <p>The classical counterpart is the cyclotron orbit of radius $\rho=v_\perp/\omega_c$, with $\omega_c$ the cyclotron frequency and $v_\perp$ the transverse velocity. The magnetic length</p>
 <p>$$
 \ell_B=\sqrt{\frac{\hbar c}{|ϙ|B}}
 $$</p>
 <p>is the quantum length scale of the problem, the radius of the ground-state orbit in the sense that the ground-state wave function is Gaussian with width $\ell_B$. It is the unique length built from $\hbar,c,ϙ,B$; the biquaternion framework records it as a central real scalar built from the same central quantities as $\omega_c$. In the correspondence limit of large quantum numbers the oscillator states become the classical circular orbits of the guiding-centre picture.</p>
-<p>For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\hbar/|ϙ|B}$ (no factor of $c$), a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $\hbar\omega_c=0.116$ meV, with flux quantum $\Phi_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.</p>
+<p>For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\hbar/|ϙ|B}$ (no factor of $c$), a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $\hbar\omega_c=0.116$ meV, with flux quantum $Ξ_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.</p>
 <h2 id="degeneracy-and-the-flux-quantum">Degeneracy and the Flux Quantum</h2>
 <h3 id="counting-the-states">Counting the states</h3>
 <p>The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing</p>
 <p>$$
-\boxed{\;N_\chi^{\mathrm{scl}}=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0}\;},
+\boxed{\;N_\xi^{\mathrm{scl}}=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{Ξ_0}\;},
 \qquad
-\Phi_0=\frac{hc}{|ϙ|},
+Ξ_0=\frac{hc}{|ϙ|},
 $$</p>
-<p>the number of <strong>magnetic flux quanta</strong> $\Phi_0=hc/|ϙ|$ through the sample area $A$. The degeneracy per unit area is $B/\Phi_0=|ϙ|B/hc$. The counting was verified numerically: at $L_x=L_y=10$ with $B=m=ϙ=\hbar=c=1$ a direct count of the allowed $k$ gave 16 states against $AB/\Phi_0=15.92$, and the count tracked $AB/\Phi_0$ at the other sampled areas, the boundary convention accounting for the unit difference.</p>
-<p>The identification of the degeneracy with a flux count is exact and is the non-relativistic seed of the quantum Hall effect. Dividing the electron number $N_e$ by the degeneracy defines the <strong>filling factor</strong> $\nu=N_e/N_\chi^{\mathrm{scl}}$; the integer values of $\nu$ are the plateaux of the integer quantum Hall effect, and the fractional values require the interacting many-body problem, which is outside this article. The biquaternion framework does not change the count: it is a count of central momentum eigenvalues in a fixed area, and the module contributes no extra states, because the spin-0 particle has no internal degree of freedom to fill.</p>
+<p>the number of <strong>magnetic flux quanta</strong> $Ξ_0=hc/|ϙ|$ through the sample area $A$. The degeneracy per unit area is $B/Ξ_0=|ϙ|B/hc$. The counting was verified numerically: at $L_x=L_y=10$ with $B=m=ϙ=\hbar=c=1$ a direct count of the allowed $k$ gave 16 states against $AB/Ξ_0=15.92$, and the count tracked $AB/Ξ_0$ at the other sampled areas, the boundary convention accounting for the unit difference.</p>
+<p>The identification of the degeneracy with a flux count is exact and is the non-relativistic seed of the quantum Hall effect. Dividing the electron number $N_e$ by the degeneracy defines the <strong>filling factor</strong> $\nu=N_e/N_\xi^{\mathrm{scl}}$; the integer values of $\nu$ are the plateaux of the integer quantum Hall effect, and the fractional values require the interacting many-body problem, which is outside this article. The biquaternion framework does not change the count: it is a count of central momentum eigenvalues in a fixed area, and the module contributes no extra states, because the spin-0 particle has no internal degree of freedom to fill.</p>
 <h3 id="the-flux-quantum-from-the-algebra">The flux quantum from the algebra</h3>
-<p>It is worth recording that $\Phi_0$ is not put in by hand. The commutator $[\tilde\pi_x,\tilde\pi_y]=i\hbar ϙB/c\,e_t$ is a central commutation relation with effective action $\hbar_{\mathrm{eff}}=\hbar ϙB/c$, and the central oscillator $H_\perp=\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ has spacing $\hbar_{\mathrm{eff}}/m=\hbar\omega_c$: the cyclotron quantum is the field-strength commutator divided by the mass. The count is read from the other central commutator, $[R_x,R_y]=-i\,\mathrm{sgn}(ϙ)\,\ell_B^2\,e_t$: a canonical pair whose commutator is $\pm i$ times an area has one state per $2\pi$ times that area, so a sample of area $A$ holds $A/(2\pi\ell_B^2)=AB/\Phi_0$ states with</p>
+<p>It is worth recording that $Ξ_0$ is not put in by hand. The commutator $[\tilde\pi_x,\tilde\pi_y]=i\hbar ϙB/c\,e_t$ is a central commutation relation with effective action $\hbar_{\mathrm{eff}}=\hbar ϙB/c$, and the central oscillator $H_\perp=\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ has spacing $\hbar_{\mathrm{eff}}/m=\hbar\omega_c$: the cyclotron quantum is the field-strength commutator divided by the mass. The count is read from the other central commutator, $[R_x,R_y]=-i\,\mathrm{sgn}(ϙ)\,\ell_B^2\,e_t$: a canonical pair whose commutator is $\pm i$ times an area has one state per $2\pi$ times that area, so a sample of area $A$ holds $A/(2\pi\ell_B^2)=AB/Ξ_0$ states with</p>
 <p>$$
-\Phi_0=2\pi\ell_B^2 B=\frac{hc}{|ϙ|}.
+Ξ_0=2\pi\ell_B^2 B=\frac{hc}{|ϙ|}.
 $$</p>
 <p>The flux quantum is thus the central area of one guiding-centre cell, and the degeneracy is the number of such cells in the sample. In the framework the statement is that the two central commutators fix the energy spacing and the state count, and the algebra of the centre contains all of it.</p>
 <h2 id="spin-what-is-not-here">Spin: What Is Not Here</h2>
@@ -223,7 +223,7 @@ $$</p>
 <li><strong>The field strength as a central commutator.</strong> $[\tilde\pi_x,\tilde\pi_y]=i\hbar ϙB/c\,e_t$ places the magnetic field in the centre of the algebra, which is the precise algebraic reason the spin-0 problem is a scalar oscillator problem and why no Zeeman term appears.</li>
 <li><strong>A central Hamiltonian and a spectator module.</strong> The minimal coupling multiplies $e_t$ term by term; the Hamiltonian is central; the creation and annihilation operators are central; the module factor is constant in every Landau state. The gauge transformation shifts the central part of the operator algebra only.</li>
 <li><strong>The two central ladders.</strong> The energy ladder and the degeneracy ladder are both central oscillator algebras; the first is the spectrum, the second is the flux degeneracy. The framework exhibits them as the same algebraic structure, one raising energy and one raising angular momentum.</li>
-<li><strong>The flux quantum from a commutator.</strong> The count $AB/\Phi_0$ follows from the central canonical commutator with effective Planck constant $\hbar ϙB/c$, and the framework records the count as a property of the centre.</li>
+<li><strong>The flux quantum from a commutator.</strong> The count $AB/Ξ_0$ follows from the central canonical commutator with effective Planck constant $\hbar ϙB/c$, and the framework records the count as a property of the centre.</li>
 </ul>
 <p><strong>What remains open.</strong></p>
 <ul>
@@ -233,7 +233,7 @@ $$</p>
 <li><strong>Empirical content.</strong> As elsewhere, whether the reformulation distinguishes itself from scalar Landau-level quantum physics is open.</li>
 </ul>
 <h2 id="open-questions">Open Questions</h2>
-<p><strong>1. Is the flux degeneracy an algebraic invariant of the centre?</strong> The count $AB/\Phi_0$ follows from the central commutator and the boundary conditions. Whether the framework gives a gauge-invariant algebraic derivation of the count without choosing a gauge is not established here.</p>
+<p><strong>1. Is the flux degeneracy an algebraic invariant of the centre?</strong> The count $AB/Ξ_0$ follows from the central commutator and the boundary conditions. Whether the framework gives a gauge-invariant algebraic derivation of the count without choosing a gauge is not established here.</p>
 <p><strong>2. Does the guiding-centre algebra have a sector interpretation?</strong> The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.</p>
 <p><strong>3. What happens at the zero divisor cone?</strong> The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{M}_-$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum physics.</p>
@@ -248,8 +248,8 @@ $$</p>
 <p>$$
 E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}
 $$</p>
-<p>and the wave functions $\psi_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\chi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.</p>
-<p>Each level is degenerate with multiplicity $N_\chi^{\mathrm{scl}}=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.</p>
+<p>and the wave functions $\tilde{Ξ}^{\mathrm{spn}}_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.</p>
+<p>Each level is degenerate with multiplicity $N_\xi^{\mathrm{scl}}=AB/Ξ_0$, the number of flux quanta $Ξ_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/Ξ_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -328,15 +328,15 @@ $$</p>
 <td>Guiding-centre operators; commute with $H$</td>
 </tr>
 <tr>
-<td>$\Phi_0=hc/\lvert ϙ\rvert$</td>
+<td>$Ξ_0=hc/\lvert ϙ\rvert$</td>
 <td>Magnetic flux quantum</td>
 </tr>
 <tr>
-<td>$N_\chi^{\mathrm{scl}}=AB/\Phi_0$</td>
+<td>$N_\xi^{\mathrm{scl}}=AB/Ξ_0$</td>
 <td>Landau-level degeneracy</td>
 </tr>
 <tr>
-<td>$\nu=N_e/N_\chi^{\mathrm{scl}}$</td>
+<td>$\nu=N_e/N_\xi^{\mathrm{scl}}$</td>
 <td>Filling factor</td>
 </tr>
 <tr>

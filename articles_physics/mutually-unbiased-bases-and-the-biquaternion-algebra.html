@@ -73,7 +73,7 @@
 <p>Two orthonormal bases of a $d$-dimensional complex vector space are <strong>mutually unbiased</strong> when every vector of one has the same squared overlap, $1/d$, with every vector of the other. In this case a measurement in one basis yields no information whatever about a measurement in the other: the outcome distributions are as far from correlated as the formalism permits. Mutually unbiased bases are the extreme case of incompatible measurements, they underpin quantum key distribution, and a complete set of them permits the reconstruction of a state from the outcome probabilities of $d+1$ measurements.</p>
 <p>In the biquaternion framework the bases of the defining module are the idempotent bases of the Hermitian subspace. A basis of rays is a complete family of orthogonal rank-one idempotents, $\{\tilde\Pi_i\}$ with $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$, and the Hilbert-space overlap between two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,</p>
 <p>$$
-\bigl|\langle \psi|\chi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde\Pi(\chi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr).
+\bigl|\langle \tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\,\tilde\Pi(\xi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr).
 $$</p>
 <p>The mutual-unbiasedness condition therefore reads, in the algebra,</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>using $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}(i\vec e_\mu)=0$ and $\mathrm{Tr}((i\vec e_\mu)(i\vec e_\nu)) = 2\delta_{\mu\nu}$. In Hilbert-space terms this is the squared overlap</p>
 <p>$$
-\bigl|\langle \psi(\vec u)|\psi(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
+\bigl|\langle \tilde{Ξ}^{\mathrm{spn}}(\vec u)|\tilde{Ξ}^{\mathrm{spn}}(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
 $$</p>
 <p>which vanishes for antipodal directions and equals one for coincident directions. The normalised Hermitian form, read through the trace, is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.</p>
 <h3 id="the-three-coordinate-bases">The three coordinate bases</h3>
@@ -133,7 +133,7 @@ $$</p>
 $$</p>
 <p>independently of the signs. In the Hilbert-space language,</p>
 <p>$$
-\bigl|\langle \psi_s(\vec u_j)|\psi_{s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
+\bigl|\langle \tilde{Ξ}^{\mathrm{spn}}_s(\vec u_j)|\tilde{Ξ}^{\mathrm{spn}}_{s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
 \qquad d=2 ,
 $$</p>
 <p>so <strong>the three coordinate bases are pairwise mutually unbiased</strong>. The derivation used only the algebra's product rules and the trace; unbiasedness is a property of the three imaginary units and their orthogonality, not an additional geometric input.</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 \mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\tilde\Pi_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
 $$</p>
-<p>not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = \tfrac12$ for any product state. Hence <strong>the Bell basis is not mutually unbiased with respect to the product basis</strong>, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally <em>biased</em> with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.</p>
+<p>not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}^{\mathrm{spn}}\rangle\otimes|\tilde{Ξ}^{\mathrm{spn}}\rangle|^2 = \tfrac12$ for any product state. Hence <strong>the Bell basis is not mutually unbiased with respect to the product basis</strong>, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally <em>biased</em> with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.</p>
 <h2 id="what-the-framework-does-and-does-not-add">What the Framework Does and Does Not Add</h2>
 <p><strong>What it does.</strong></p>
 <ul>
