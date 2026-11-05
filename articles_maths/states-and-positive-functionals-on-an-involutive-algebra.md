@@ -7,7 +7,7 @@ A linear functional on an involutive algebra is **positive** when it is non-nega
 
 This article treats the positive functionals and the states of an involutive Banach algebra: the elementary positivity and the Cauchy–Schwarz inequality, the boundedness of a positive functional, the GNS construction and the cyclic representation it produces, the convexity and the extreme points of the state space, and the relation between positivity of elements and positivity of functionals. It assumes the involutive Banach algebra, the $\mathrm{C}^*$-identity and the Gelfand–Naimark theorem from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*, the article immediately preceding; the self-adjoint elements, the positive cone and the order from *Self-Adjoint Elements and the Positive Cone* and *Involutive Algebras*; the bounded operators on a Hilbert space, the adjoint and the cyclic vectors from *Operator Algebras*; and the positivity and the GNS construction of the operator setting from *Operators on a C*-Algebra*. The grade involution $\alpha$ of the signed block is not used.
 
-Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with involution $a \mapsto a^*$; a **positive functional** is a linear $f : A \to \mathbb{C}$ with $f(a^*a) \geq 0$ for all $a$; a **state** is a positive functional with $\lVert f\rVert = 1$, equivalently with $f(1) = 1$; $\mathcal{S}(A)$ is the set of states; for a positive $f$ the **GNS data** are the pre-inner product $\langle a,b\rangle_f = f(b^*a)$, the null space $N_f = \{a : f(a^*a) = 0\}$, the Hilbert space $H_f$ the completion of $A/N_f$, the representation $\pi_f$, and the class $\xi_f = 1 + N_f$; and $\omega_f(a) = f(a)$ is the expectation of $a$ in the state.
+Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with involution $a \mapsto a^*$; a **positive functional** is a linear $f : A \to \mathbb{C}$ with $f(a^*a) \geq 0$ for all $a$; a **state** is a positive functional with $\lVert f\rVert = 1$, equivalently with $f(1) = 1$; $\mathcal{S}(A)$ is the set of states; for a positive $f$ the **GNS data** are the pre-inner product $\langle a,b\rangle_f = f(b^*a)$, the null space $N_f = \{a : f(a^*a) = 0\}$, the Hilbert space $H_f$ the completion of $A/N_f$, the representation $\pi_f$, and the class $\zeta_f = 1 + N_f$; and $\omega_f(a) = f(a)$ is the expectation of $a$ in the state.
 
 ## Positive Functionals
 
@@ -42,10 +42,10 @@ so a state is exactly a positive functional with $f(1) = 1$. In a $\mathrm{C}^*$
 **Theorem (the construction).** Let $f$ be a positive functional on $A$. Then $N_f = \{a : f(a^*a) = 0\}$ is a left ideal, the formula $\langle a + N_f, b + N_f\rangle_f = f(b^*a)$ is a well-defined inner product on $A/N_f$, and there is a unique $*$-representation $\pi_f : A \to B(H_f)$ on the completion with
 
 $$
-\boxed{\;\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\xi_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\xi_f, \xi_f\rangle_f\;} ,
+\boxed{\;\pi_f(a)\,(b + N_f) = ab + N_f , \qquad \pi_f(a)\zeta_f = a + N_f , \qquad f(a) = \langle \pi_f(a)\zeta_f, \zeta_f\rangle_f\;} ,
 $$
 
-so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The representation is **cyclic**, $\pi_f(A)\xi_f$ is dense in $H_f$, and the pair $(\pi_f, H_f)$ is the **GNS representation** of $f$.
+so that $f$ is the vector state of the cyclic vector $\zeta_f = 1 + N_f$. The representation is **cyclic**, $\pi_f(A)\zeta_f$ is dense in $H_f$, and the pair $(\pi_f, H_f)$ is the **GNS representation** of $f$.
 
 **Proof.** Cauchy–Schwarz shows that $N_f$ is the radical of the positive semidefinite form $\langle a,b\rangle_f = f(b^*a)$; it is a left ideal because $f((xa)^*(xa)) = f(a^*x^*xa) \leq \lVert x\rVert^2 f(a^*a)$ for $a \in N_f$, by positivity of the functional $a \mapsto f(a^*x^*xa)$ or by the Cauchy–Schwarz applied to the modified functional. The form descends to the quotient and is positive definite there; left multiplication by $a$ passes to the quotient because $N_f$ is a left ideal, is bounded by the same estimate, and extends to the completion. The involution compatibility $\langle \pi_f(a)x, y\rangle = \langle x, \pi_f(a^*)y\rangle$ is the computation $f(y^*(ax)) = f((a^*y)^*x)$.
 
@@ -67,7 +67,7 @@ so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The repr
 
 ## Examples
 
-**Example (the vector states).** Let $H$ be a Hilbert space and $\xi \in H$ a unit vector; then $f(T) = \langle T\xi,\xi\rangle$ is a state of $B(H)$, and its GNS representation is the identity representation on the cyclic subspace $\overline{B(H)\xi}$; if $\xi$ is cyclic for $B(H)$, that is for the whole $H$, the state is faithful.
+**Example (the vector states).** Let $H$ be a Hilbert space and $\zeta \in H$ a unit vector; then $f(T) = \langle T\zeta,\zeta\rangle$ is a state of $B(H)$, and its GNS representation is the identity representation on the cyclic subspace $\overline{B(H)\zeta}$; if $\zeta$ is cyclic for $B(H)$, that is for the whole $H$, the state is faithful.
 
 **Example (the evaluation functionals).** For $A = C(X,\mathbb{C})$ with the sup norm, every state is a probability measure $\mu$ on $X$, $f \mapsto \int f\,d\mu$, and the pure states are the evaluations at the points of $X$; the GNS representation of the evaluation at $x$ is the one-dimensional representation $f \mapsto f(x)$, and the state is multiplicative.
 
@@ -75,17 +75,17 @@ so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The repr
 
 ## Faithful States and the Separating Vector
 
-**Definition.** A positive functional $f$ is **faithful** when $f(a^*a) = 0$ implies $a = 0$, equivalently when its null space $N_f$ is $\{0\}$; a **normal state** of a von Neumann algebra $M \subseteq B(H)$ is a state of the form $\omega_\xi(T) = \langle T\xi,\xi\rangle$ for a unit vector $\xi$, a **vector state**.
+**Definition.** A positive functional $f$ is **faithful** when $f(a^*a) = 0$ implies $a = 0$, equivalently when its null space $N_f$ is $\{0\}$; a **normal state** of a von Neumann algebra $M \subseteq B(H)$ is a state of the form $\omega_\zeta(T) = \langle T\zeta,\zeta\rangle$ for a unit vector $\zeta$, a **vector state**.
 
-**Proposition (faithfulness and the separating vector).** A positive functional $f$ is faithful if and only if its GNS representation $\pi_f$ is injective, equivalently the cyclic vector $\xi_f$ is **separating** for $\pi_f(A)$, that is $\pi_f(a)\xi_f = 0$ implies $a = 0$. A state is faithful exactly when $a \geq 0$ and $f(a) = 0$ force $a = 0$.
+**Proposition (faithfulness and the separating vector).** A positive functional $f$ is faithful if and only if its GNS representation $\pi_f$ is injective, equivalently the cyclic vector $\zeta_f$ is **separating** for $\pi_f(A)$, that is $\pi_f(a)\zeta_f = 0$ implies $a = 0$. A state is faithful exactly when $a \geq 0$ and $f(a) = 0$ force $a = 0$.
 
-**Proof.** $f(a^*a) = \langle\pi_f(a)\xi_f, \pi_f(a)\xi_f\rangle = \lVert\pi_f(a)\xi_f\rVert^2$, so $N_f = \{a : \pi_f(a)\xi_f = 0\}$; faithfulness is the injectivity of $\pi_f$, that is the separating property of the cyclic vector. The last statement uses the positivity of $a = b^*b$: if $f(a) = 0$ then $f(b^*b) = 0$ and $b = 0$.
+**Proof.** $f(a^*a) = \langle\pi_f(a)\zeta_f, \pi_f(a)\zeta_f\rangle = \lVert\pi_f(a)\zeta_f\rVert^2$, so $N_f = \{a : \pi_f(a)\zeta_f = 0\}$; faithfulness is the injectivity of $\pi_f$, that is the separating property of the cyclic vector. The last statement uses the positivity of $a = b^*b$: if $f(a) = 0$ then $f(b^*b) = 0$ and $b = 0$.
 
 **Remark (the normal states and the predual).** For a von Neumann algebra $M$ the normal states are the vector states, they determine the strong topology and the predual $M_*$ with $M = (M_*)^*$, and the GNS representation of a normal state is normal; the cyclic vector is both cyclic and separating exactly when the state is faithful and the algebra is in standard form. The theory is *Operator Algebras*. The connection with this article is that the faithfulness of a state is a property of its GNS representation, and it is the property that makes the representation an isomorphism onto an algebra of operators.
 
 ## Summary
 
-A positive functional on an involutive Banach algebra is self-adjoint, obeys the Cauchy–Schwarz inequality $\lvert f(b^*a)\rvert^2 \leq f(a^*a)f(b^*b)$, and is bounded with $\lVert f\rVert = f(1)$, so a state is exactly a positive functional of norm one. From a positive functional $f$ the GNS construction produces a Hilbert space $H_f$, a cyclic vector $\xi_f$ and a $*$-representation $\pi_f$ with $f(a) = \langle\pi_f(a)\xi_f,\xi_f\rangle$; the null space $N_f = \{a : f(a^*a) = 0\}$ is a left ideal and the form $\langle a,b\rangle_f = f(b^*a)$ descends to an inner product on $A/N_f$. In a $\mathrm{C}^*$-algebra an element is positive exactly when every state evaluates non-negatively on it, and the states separate the points; the state space is convex and weak-$*$ compact, and its extreme points are the pure states, whose GNS representations are the irreducible ones. The positivity and the order on the elements are *Self-Adjoint Elements and the Positive Cone* and *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the representation theory in full is *Operator Algebras*.
+A positive functional on an involutive Banach algebra is self-adjoint, obeys the Cauchy–Schwarz inequality $\lvert f(b^*a)\rvert^2 \leq f(a^*a)f(b^*b)$, and is bounded with $\lVert f\rVert = f(1)$, so a state is exactly a positive functional of norm one. From a positive functional $f$ the GNS construction produces a Hilbert space $H_f$, a cyclic vector $\zeta_f$ and a $*$-representation $\pi_f$ with $f(a) = \langle\pi_f(a)\zeta_f,\zeta_f\rangle$; the null space $N_f = \{a : f(a^*a) = 0\}$ is a left ideal and the form $\langle a,b\rangle_f = f(b^*a)$ descends to an inner product on $A/N_f$. In a $\mathrm{C}^*$-algebra an element is positive exactly when every state evaluates non-negatively on it, and the states separate the points; the state space is convex and weak-$*$ compact, and its extreme points are the pure states, whose GNS representations are the irreducible ones. The positivity and the order on the elements are *Self-Adjoint Elements and the Positive Cone* and *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the representation theory in full is *Operator Algebras*.
 
 ## Summary of Notation
 
@@ -96,11 +96,11 @@ A positive functional on an involutive Banach algebra is self-adjoint, obeys the
 | $\lVert f\rVert = f(1)$ | Boundedness of a positive functional |
 | $\mathcal{S}(A)$ | The state space, convex weak-$*$ compact |
 | $N_f = \{a : f(a^*a) = 0\}$ | Null left ideal of the form |
-| $H_f$, $\pi_f$, $\xi_f$ | GNS Hilbert space, representation, cyclic vector |
-| $f(a) = \langle\pi_f(a)\xi_f,\xi_f\rangle$ | The state as a vector state |
+| $H_f$, $\pi_f$, $\zeta_f$ | GNS Hilbert space, representation, cyclic vector |
+| $f(a) = \langle\pi_f(a)\zeta_f,\zeta_f\rangle$ | The state as a vector state |
 | Pure state, irreducible | Extreme point; $\pi_f(A)' = \mathbb{C}$ |
 | Faithful $f$ | $f(a^*a)=0 \Rightarrow a=0$; $\pi_f$ injective |
-| Normal state $\omega_\xi$ | $\omega_\xi(T) = \langle T\xi,\xi\rangle$, a vector state |
+| Normal state $\omega_\zeta$ | $\omega_\zeta(T) = \langle T\zeta,\zeta\rangle$, a vector state |
 
 ## Further Reading
 

@@ -21,21 +21,21 @@ An idempotent is **nontrivial** when it is neither $0$ nor $1$; two idempotents 
 **Theorem.** In every unital algebra $A$ over a field of characteristic not two, the map
 
 $$
-\boxed{\;\xi\longmapsto e=\tfrac12(1+\xi)\;}
+\boxed{\;\zeta\longmapsto e=\tfrac12(1+\zeta)\;}
 $$
 
 is a bijection from the roots of $1$ onto the idempotents, with inverse
 
 $$
-e\longmapsto \xi=2e-1.
+e\longmapsto \zeta=2e-1.
 $$
 
 The idempotents $0$ and $1$ correspond to the roots $-1$ and $+1$.
 
-*Proof.* If $\xi^2=1$, then
+*Proof.* If $\zeta^2=1$, then
 
 $$
-e^2=\tfrac14(1+2\xi+\xi^2)=\tfrac14(2+2\xi)=\tfrac12(1+\xi)=e.
+e^2=\tfrac14(1+2\zeta+\zeta^2)=\tfrac14(2+2\zeta)=\tfrac12(1+\zeta)=e.
 $$
 
 If $e^2=e$, then
@@ -44,11 +44,11 @@ $$
 (2e-1)^2=4e^2-4e+1=1.
 $$
 
-The two maps are inverse to each other: $\frac12(1+(2e-1))=e$ and $2\cdot\frac12(1+\xi)-1=\xi$.
+The two maps are inverse to each other: $\frac12(1+(2e-1))=e$ and $2\cdot\frac12(1+\zeta)-1=\zeta$.
 
 **Corollary.** An algebra has a nontrivial idempotent exactly when it has a root of $1$ other than $\pm1$. In a division algebra the only roots of $1$ are $\pm1$, so the only idempotents are $0$ and $1$.
 
-*Proof.* The first statement is the theorem. In a division algebra, $\xi^2=1$ gives $(\xi-1)(\xi+1)=0$, and there are no zero divisors, so $\xi=\pm1$.
+*Proof.* The first statement is the theorem. In a division algebra, $\zeta^2=1$ gives $(\zeta-1)(\zeta+1)=0$, and there are no zero divisors, so $\zeta=\pm1$.
 
 **Remark.** The corollary is the cleanest proof that a division algebra has no nontrivial idempotents, and it explains why the idempotent question is a question about the roots of the polynomial $x^2-1$. In a field the polynomial has at most two roots, so the idempotents are $0,1$; in a product of two fields the polynomial has four roots, and the two extra ones give the two nontrivial idempotents; in a matrix algebra the polynomial has many roots, and the idempotents are many. The dual numbers are the case in which the polynomial still has only two roots, although the algebra is not a field: the nilpotent direction does not solve $x^2=1$.
 
@@ -90,7 +90,7 @@ $$
 \{q\in\mathbb{H}:q^2=-1\}=\{q:\operatorname{Re}q=0,\ |q|=1\},
 $$
 
-which is a two-sphere. The halving map sends the roots of $1$ to idempotents and the roots of $-1$ to elements of square $\frac12\xi$, not to idempotents. The contrast with the split complex numbers is exactly the sign: in $\mathbb{C}^{\mathrm{spl}}$ the element $j$ has square $+1$ and gives the idempotent $\frac12(1+j)$; in $\mathbb{H}$ the pure imaginary units have square $-1$ and give no idempotent. The quaternion algebra is a division algebra, the split complex algebra is not, and the sign of the square is the algebraic reason.
+which is a two-sphere. The halving map sends the roots of $1$ to idempotents and the roots of $-1$ to elements of square $\frac12\zeta$, not to idempotents. The contrast with the split complex numbers is exactly the sign: in $\mathbb{C}^{\mathrm{spl}}$ the element $j$ has square $+1$ and gives the idempotent $\frac12(1+j)$; in $\mathbb{H}$ the pure imaginary units have square $-1$ and give no idempotent. The quaternion algebra is a division algebra, the split complex algebra is not, and the sign of the square is the algebraic reason.
 
 ## Local Algebras Have None
 

@@ -55,9 +55,9 @@ These are the Riesz projectors of $A$, and they are exactly the matrix images of
 $$
 P_\pm=\mathsf M_2(\tilde\Pi_\pm),
 \qquad
-\tilde\Pi_\pm=\frac12\left(e_t\pm\vec\Xi\right),
+\tilde\Pi_\pm=\frac12\left(e_t\pm\vec{Ζ}\right),
 \qquad
-\vec\Xi=-\frac{i\vec Q}{B}.
+\vec{Ζ}=-\frac{i\vec Q}{B}.
 $$
 
 The biquaternion relations $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ are the same statement as the biorthogonality and the completeness of the two eigenbases. The translation is exact because the matrix model is an isomorphism.
@@ -244,7 +244,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 | $\rho=\vec Q/B$ | the root of $-1$ supplied by the element, $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$ |
 | $\lVert\vec Q\rVert^2=\sum_k\lvert Q_k\rvert^2$ | the Euclidean square of the complex vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections, $\vec\Xi=-i\vec Q/B$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, $\vec{Ζ}=-i\vec Q/B$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix image |
 | $r_\pm$, $\ell_\pm$ | right and left eigenvectors, $\ell_\pm^{\dagger}r_\pm=1$ and $\ell_+^{\dagger}r_-=\ell_-^{\dagger}r_+=0$ |
 | $P_\pm=r_\pm\ell_\pm^{\dagger}$ | the spectral projector, $\mathsf M_2(\tilde\Pi_\pm)$ |

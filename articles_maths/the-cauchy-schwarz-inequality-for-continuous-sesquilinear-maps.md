@@ -110,7 +110,7 @@ $$
 
 which is well defined, and the seminorm $p$ descends to the norm $\lVert x + N\rVert = p(x)$ of the completed inner product space.
 
-*Proof.* The form vanishes on $N$ in both arguments, so the value depends only on the classes; it is Hermitian and positive because $s$ is, and it is definite because a class with $\bar{s}(\xi,\xi) = 0$ is represented by an element of the null set, that is of $N$. The completion of the resulting inner product space is a Hilbert space, *Hilbert Spaces*, §*Completeness and the Projection Theorem*, and the seminorm descends to the norm of the quotient.
+*Proof.* The form vanishes on $N$ in both arguments, so the value depends only on the classes; it is Hermitian and positive because $s$ is, and it is definite because a class with $\bar{s}(\zeta,\zeta) = 0$ is represented by an element of the null set, that is of $N$. The completion of the resulting inner product space is a Hilbert space, *Hilbert Spaces*, §*Completeness and the Projection Theorem*, and the seminorm descends to the norm of the quotient.
 
 **Remark (the construction is the GNS construction).** The quotient, the completion and the representation that the completed inner product carries are the construction of *States and Positive Functionals on a Topological Sesqualgebra*, §*The GNS Construction*, in the case in which the map is the pairing of a functional; the abstract form of the quotient is *Positivity and the Positive Cone of a Hermitian Form*, §*The Definite Quotient*, and the article states it here only to record that it uses no definiteness assumption beyond the positivity.
 

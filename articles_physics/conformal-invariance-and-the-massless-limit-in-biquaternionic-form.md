@@ -214,16 +214,16 @@ $$
 $$
 The **improved** tensor removes the ambiguity,
 $$
-T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \xi\bigl(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu\bigr)\chi^2 ,
+T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta\bigl(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu\bigr)\chi^2 ,
 $$
-with $\xi$ fixed by the requirement that the massless trace vanish and hence by the normalisation of the kinetic term. The standard literature normalisation $\mathcal{L} = \tfrac12(\partial\chi)^2 - \tfrac12\mu^2\chi^2$ in the mostly-minus metric gives the textbook $\xi = \tfrac{d-2}{4(d-1)} = \tfrac16$ at $d=4$; the framework's normalisation above, whose kinetic term carries the opposite sign and twice the magnitude, gives $\xi = -\tfrac13$. Since $\Box\chi^2 = 2\chi\Box\chi + 2(\partial\chi)^2$, the trace is
+with $\zeta$ fixed by the requirement that the massless trace vanish and hence by the normalisation of the kinetic term. The standard literature normalisation $\mathcal{L} = \tfrac12(\partial\chi)^2 - \tfrac12\mu^2\chi^2$ in the mostly-minus metric gives the textbook $\zeta = \tfrac{d-2}{4(d-1)} = \tfrac16$ at $d=4$; the framework's normalisation above, whose kinetic term carries the opposite sign and twice the magnitude, gives $\zeta = -\tfrac13$. Since $\Box\chi^2 = 2\chi\Box\chi + 2(\partial\chi)^2$, the trace is
 $$
 \boxed{\;
-\sum_\muT_{\mu\mu} = \bigl(2+6\xi\bigr)\bigl(\partial\chi\bigr)^2 + 4\mu^2\chi^2 + 6\xi\,\chi\bigl(\Box\chi\bigr)
+\sum_\muT_{\mu\mu} = \bigl(2+6\zeta\bigr)\bigl(\partial\chi\bigr)^2 + 4\mu^2\chi^2 + 6\zeta\,\chi\bigl(\Box\chi\bigr)
 \ \longrightarrow\ 4\mu^2\chi^2 - 2\chi\bigl(\Box\chi\bigr)
-\ \longrightarrow\ 2\mu^2\chi^2 \quad\text{on shell at } \xi = -\tfrac13\;},
+\ \longrightarrow\ 2\mu^2\chi^2 \quad\text{on shell at } \zeta = -\tfrac13\;},
 $$
-while massless the gradient-squared term vanishes with $2+6\xi = 0$ and the trace is zero, which is the conformal invariance. In the standard normalisation the same computation reads $\sum_\muT_{\mu\mu} = \chi\Box\chi + 2\mu^2\chi^2$, whose on-shell value there is $\mu^2\chi^2$; the reduction uses that normalisation's own equation of motion, $\Box\chi = -\mu^2\chi$, which carries the opposite sign to the framework's $\Box\chi = +\mu^2\chi$ because the two Lagrangians place the mass term with opposite signs relative to the kinetic term. Only the coefficient is a normalisation artefact — it tracks the normalisation of the Lagrangian, with the sign convention of $\Box$ accounted for — and the physical content is shared: the trace is **proportional to the mass term**, so that the massless limit is exactly the trace-free limit. The identity was verified on an explicit off-shell test field in the four $ict'$ coordinates, where $\sum_\muT_{\mu\mu}$ matched $4\mu^2\chi^2 - 2\chi\Box\chi$ to machine precision, and on an on-shell field, where it returned $2\mu^2\chi^2$.
+while massless the gradient-squared term vanishes with $2+6\zeta = 0$ and the trace is zero, which is the conformal invariance. In the standard normalisation the same computation reads $\sum_\muT_{\mu\mu} = \chi\Box\chi + 2\mu^2\chi^2$, whose on-shell value there is $\mu^2\chi^2$; the reduction uses that normalisation's own equation of motion, $\Box\chi = -\mu^2\chi$, which carries the opposite sign to the framework's $\Box\chi = +\mu^2\chi$ because the two Lagrangians place the mass term with opposite signs relative to the kinetic term. Only the coefficient is a normalisation artefact — it tracks the normalisation of the Lagrangian, with the sign convention of $\Box$ accounted for — and the physical content is shared: the trace is **proportional to the mass term**, so that the massless limit is exactly the trace-free limit. The identity was verified on an explicit off-shell test field in the four $ict'$ coordinates, where $\sum_\muT_{\mu\mu}$ matched $4\mu^2\chi^2 - 2\chi\Box\chi$ to machine precision, and on an on-shell field, where it returned $2\mu^2\chi^2$.
 
 Two consequences of the improvement are worth separating from its value. The improvement term is a total derivative, so it does not affect the equation of motion or the total charges, and it is what makes the trace local without changing the physics. And the trace scales with the Lagrangian exactly as $T_{\mu\nu}$ does, so the coefficient $2$ above and the coefficient $1$ of the standard normalisation are the same statement written twice; what no normalisation can change is the proportionality to the mass term and its vanishing when the mass is zero. The companion *Exercise: The Electromagnetic Energy–Momentum Tensor* records the corresponding improvement for the vector field, and notes the same $ict'$ caution the action article flags: the time index carries the metric's sign, and the trace must be read through the same convention as $\Box$.
 
@@ -320,7 +320,7 @@ The improved stress tensor has trace $\sum_\muT_{\mu\mu} = 2\mu^2\chi^2$ on shel
 | $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
 | $\mu = mc/\hbar$ | The unique scale; breaks the conformal symmetry |
 | $\langle\tilde P\rangle_{\natural} = -\mu^2$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
-| $T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu)\chi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
+| $T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu)\chi^2$ | Improved stress tensor; $\zeta = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\sum_\muT_{\mu\mu} = 2\mu^2\chi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\sum_\muT_{\mu\mu} = 0$ (Maxwell) | Trace-free conformally invariant vector field |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

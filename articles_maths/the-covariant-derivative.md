@@ -24,7 +24,7 @@ $$
 \boxed{\;\nabla_X(fs) = (Xf)\,s + f\,\nabla_X s, \qquad f \in C^\infty(M),\ s \in \Gamma(E)\;}.
 $$
 
-Its principal symbol is $\sigma_1(\nabla_X)(x,\xi) = \langle \xi, X_x\rangle\, \mathrm{id}_{E_x}$.
+Its principal symbol is $\sigma_1(\nabla_X)(x,\zeta) = \langle \zeta, X_x\rangle\, \mathrm{id}_{E_x}$.
 
 *Proof.* The $C^\infty(M)$-linearity in $X$ is the pairing of the $1$-form $\nabla s$ with $X$; the Leibniz rule is the defining Leibniz rule of the connection evaluated on $X$. In a chart with a frame $(e_a)$ the operator reads $(\nabla_X s)_a = X(s_a) + \sum_b \omega_{ab}(X)\,s_b$ with smooth coefficients, which is a first-order operator whose top-order part is $X(s_a)$ on each component; the symbol follows.
 

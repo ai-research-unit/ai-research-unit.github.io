@@ -5,12 +5,12 @@
 The root problem of the biquaternion algebra asks for the elements that square to a given element. The two companion articles answer it for the central values $0$ and $+1$. A general radicand $\tilde Q$ is the question of this article,
 
 $$
-\boxed{\;\tilde\Xi^2=\tilde Q\;}.
+\boxed{\;\tilde{Ζ}^2=\tilde Q\;}.
 $$
 
 **Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star and the natural sign are the two conjugations of *Algebra and Element Conventions*, and the derivative is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with natural conjugate $\tilde\nabla^{\natural}$ and d'Alembertian $\Box$; on the material sector $\Box$ reads $\Delta-c^{-2}\partial^2/\partial {t'}^2$, a derived form. The side is position: $a\psi$ multiplies on the left and $\psi b$ on the right. The chirality is the operator $\Gamma$ of the corpus, a right action; the Dirac bilinear is $\psi^{*}i\psi\vec e_x$. For a radicand with vector part $\vec Q$, $B$ is the modulus of the vector part, $B^2=(\vec Q,\vec Q)$.
 
-The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde\Xi^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
+The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde{Ζ}^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde{Ζ}\tilde{Ζ}^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
 
 Two first-order writings are kept apart throughout. The **gradient equation** is one-sided: every derivative acts by left multiplication, and it carries the mass shell. The **pair equation** is that equation written once on the pair of fields. The chirality is a right multiplication of the field, and the condensate is a bilinear; neither is a term of the gradient.
 
@@ -40,38 +40,38 @@ Write the radicand and the root in scalar and vector parts,
 $$
 \tilde Q=Q_te_t+\vec Q,
 \qquad
-\tilde\Xi=\Xi_te_t+\vec\Xi .
+\tilde{Ζ}=Ζ_te_t+\vec{Ζ} .
 $$
 
 The plain square is
 
 $$
-\tilde\Xi^2=\bigl(\Xi_t^2-(\vec\Xi,\vec\Xi)\bigr)e_t+2\Xi_t\vec\Xi .
+\tilde{Ζ}^2=\bigl(Ζ_t^2-(\vec{Ζ},\vec{Ζ})\bigr)e_t+2Ζ_t\vec{Ζ} .
 $$
 
-For a radicand with $\vec Q\neq0$ a root has $\Xi_t\neq0$ and $\vec\Xi=\vec Q/(2\Xi_t)$, and $x=\Xi_t^2$ solves the reduced quadratic
+For a radicand with $\vec Q\neq0$ a root has $Ζ_t\neq0$ and $\vec{Ζ}=\vec Q/(2Ζ_t)$, and $x=Ζ_t^2$ solves the reduced quadratic
 
 $$
 4x^2-4Q_tx-(\vec Q,\vec Q)=0 ,
 $$
 
-whose discriminant is $16n$, with $n=\langle\tilde Q\rangle_{\natural}$ the natural norm of the radicand. The roots come in opposite pairs $\pm\tilde\Xi$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$. There are **two** when the discriminant vanishes, $n=0$ with $Q_t\neq0$, and **two** in the null-vector row, $(\vec Q,\vec Q)=0$ with $Q_t\neq0$. There are **none** for a nonzero nilpotent, $(\vec Q,\vec Q)=0$ and $Q_t=0$. A complex scalar radicand $\tilde Q=Q_te_t$ has the two scalar roots $\pm\sqrt{Q_t}e_t$, joined by a **four-real-parameter family** of pure roots with $(\vec\Xi,\vec\Xi)=-Q_t$.
+whose discriminant is $16n$, with $n=\langle\tilde Q\rangle_{\natural}$ the natural norm of the radicand. The roots come in opposite pairs $\pm\tilde{Ζ}$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$. There are **two** when the discriminant vanishes, $n=0$ with $Q_t\neq0$, and **two** in the null-vector row, $(\vec Q,\vec Q)=0$ with $Q_t\neq0$. There are **none** for a nonzero nilpotent, $(\vec Q,\vec Q)=0$ and $Q_t=0$. A complex scalar radicand $\tilde Q=Q_te_t$ has the two scalar roots $\pm\sqrt{Q_t}e_t$, joined by a **four-real-parameter family** of pure roots with $(\vec{Ζ},\vec{Ζ})=-Q_t$.
 
 That count is the one given in *Biquaternion Elementary Functions*, §*The Roots*. The four plain roots are the four independent sign choices of the two eigenvalue square roots: the root carries one sign of $\sqrt{\lambda_+}$ where the radicand carries $\lambda_+$, and one sign of $\sqrt{\lambda_-}$ where it carries $\lambda_-$, the two chosen independently. Shifting the two logarithms by $2\pi i$ reproduces the same finite set.
 
-The root set of $0$ is the origin and the nilpotent cone. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the classified set — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec\Xi,\vec\Xi)\neq0$, so its norm does not vanish. A nonzero element equal to its own square is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
+The root set of $0$ is the origin and the nilpotent cone. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the classified set — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec{Ζ},\vec{Ζ})\neq0$, so its norm does not vanish. A nonzero element equal to its own square is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
 
 ### The Natural Square and the Shell
 
 The natural square of an element is its interval,
 
 $$
-\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t,
+\tilde{Ζ}\tilde{Ζ}^{\natural}=\langle\tilde{Ζ}\rangle_{\natural}e_t,
 \qquad
-\langle\tilde\Xi\rangle_{\natural}=\Xi_t^2+(\vec\Xi,\vec\Xi).
+\langle\tilde{Ζ}\rangle_{\natural}=Ζ_t^2+(\vec{Ζ},\vec{Ζ}).
 $$
 
-The root set of a central value $\lambda e_t$ is the level set $\langle\tilde\Xi\rangle_{\natural}=\lambda$. On the material sector $\mathbb{M}_-$, write the four-momentum as
+The root set of a central value $\lambda e_t$ is the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$. On the material sector $\mathbb{M}_-$, write the four-momentum as
 
 $$
 \tilde P=i\frac{E}{c}e_t+\vec p .
@@ -93,14 +93,14 @@ $$
 
 The root set of the value $-m^2c^2$ in the natural band is the whole shell, a three-dimensional two-sheeted hyperboloid, not a finite set. Every point of the shell is a four-momentum; the root is the four-momentum itself. This is the precise sense in which the root problem is the mass-shell problem: it is the natural root problem, not the plain one.
 
-The mass shell is not the plain root set of a central value. The plain roots of $-m^2c^2$ include the scalar elements $\pm imc\,e_t$, which are the two rest points of the shell, and a four-parameter family of pure roots with $(\vec\Xi,\vec\Xi)=m^2c^2$, which are not four-momenta of the shell. The two statements are different and both are correct in their own band.
+The mass shell is not the plain root set of a central value. The plain roots of $-m^2c^2$ include the scalar elements $\pm imc\,e_t$, which are the two rest points of the shell, and a four-parameter family of pure roots with $(\vec{Ζ},\vec{Ζ})=m^2c^2$, which are not four-momenta of the shell. The two statements are different and both are correct in their own band.
 
 ### The Hermitian Square and the Mass Operator
 
 The Hermitian square is
 
 $$
-\tilde\Xi\tilde\Xi^{*},
+\tilde{Ζ}\tilde{Ζ}^{*},
 $$
 
 a positive semidefinite element of $\mathbb{M}_+$, with non-negative eigenvalues. For a positive semidefinite value $\tilde Q$ the roots are $\tilde Q^{1/2}$ times a $*$-unitary element, one root for each such element: a family of amplitudes that share the value and differ by a $*$-unitary right factor, the analogue of the sign of a scalar root. This is the band in which the mass-squared operator of a doublet lives. The three squares are three root problems: the plain square for the algebraic multiplicity, the natural square for the interval, the Hermitian square for the mass operator.
@@ -283,9 +283,9 @@ The three bands answer three different root questions. The table states the diff
 
 | band | root equation | root set of a value | physical interpretation |
 | --- | --- | --- | --- |
-| plain | $\tilde\Xi^2=\tilde Q$ | four, two or none for a non-scalar radicand; two scalars and a four-parameter family for a nonzero central scalar | the algebraic multiplicity; roots as frames |
-| natural | $\tilde\Xi\tilde\Xi^{\natural}=\lambda e_t$ | the level set $\langle\tilde\Xi\rangle_{\natural}=\lambda$ | the mass shell; the causal class |
-| Hermitian | $\tilde\Xi\tilde\Xi^{*}=\tilde Q$ | the amplitudes $\tilde Q^{1/2}$ times a $*$-unitary element, for a positive semidefinite value only | the mass-squared operator; the Born weight |
+| plain | $\tilde{Ζ}^2=\tilde Q$ | four, two or none for a non-scalar radicand; two scalars and a four-parameter family for a nonzero central scalar | the algebraic multiplicity; roots as frames |
+| natural | $\tilde{Ζ}\tilde{Ζ}^{\natural}=\lambda e_t$ | the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ | the mass shell; the causal class |
+| Hermitian | $\tilde{Ζ}\tilde{Ζ}^{*}=\tilde Q$ | the amplitudes $\tilde Q^{1/2}$ times a $*$-unitary element, for a positive semidefinite value only | the mass-squared operator; the Born weight |
 
 ## Limits
 
@@ -295,7 +295,7 @@ The bands must be kept apart. The plain root set of a nonzero central value is a
 
 ## Summary
 
-The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the natural band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the family $\tilde Q^{1/2}$ times a $*$-unitary element, and the mass-squared operator of a doublet lives in that band.
+The root problem $\tilde{Ζ}^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the natural band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the family $\tilde Q^{1/2}$ times a $*$-unitary element, and the mass-squared operator of a doublet lives in that band.
 
 The five interpretations use these sets: the mass shell is a propagator pole; the mass can be a field, with a mass-squared operator whose eigenvalues split a doublet; the mass can be generated by a chiral condensate; the root can be the Kustaanheimo–Stiefel square root of the position; and the roots are frames, the representatives the algebra does not choose among. The mass itself is the Hamilton modulus, $m=\lvert\Rho\rvert/c$, and the shell is its level set. The isospectral family of a generic element is the complex quadric of fixed trace and fixed vector square; on the material slice it is the sphere of directions, and at a repeated eigenvalue it splits into a scalar class and a class with nilpotent vector part.
 
@@ -307,7 +307,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | --- | --- |
 | $\mathbb{B}$ | the biquaternion algebra |
 | $e_t,\vec e_k$ | the identity and the three vector units |
-| $\tilde\Xi$ | a root of $\tilde Q$ |
+| $\tilde{Ζ}$ | a root of $\tilde Q$ |
 | $\tilde Q$ | a radicand |
 | $B$ | the square root of the vector-part square, $B^2=(\vec Q,\vec Q)$ |
 | $*,\natural$ | the Hermitian and natural conjugations of *Algebra and Element Conventions* |

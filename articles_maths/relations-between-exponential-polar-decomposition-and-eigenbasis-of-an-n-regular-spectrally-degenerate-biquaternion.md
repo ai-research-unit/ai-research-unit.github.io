@@ -54,18 +54,18 @@ The scalar line $\vec\Upsilon=0$ is the exception. There $\tilde Q=Q_te_t$ is ce
 
 ## The Jordan Basis
 
-**Proposition (the Jordan chain).** Let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. There are elements $\xi,\eta$ with
+**Proposition (the Jordan chain).** Let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. There are elements $\zeta,\eta$ with
 
 $$
-\vec\Upsilon\xi=0,
+\vec\Upsilon\zeta=0,
 \qquad
-\vec\Upsilon\eta=\xi,
+\vec\Upsilon\eta=\zeta,
 $$
 
-and $(\xi,\eta)$ is a basis. In that basis the matrix of $\tilde Q$ is
+and $(\zeta,\eta)$ is a basis. In that basis the matrix of $\tilde Q$ is
 
 $$
-\mathsf M_{(\xi,\eta)}(\tilde Q)
+\mathsf M_{(\zeta,\eta)}(\tilde Q)
 =
 Q_t
 \begin{pmatrix}
@@ -76,7 +76,7 @@ $$
 
 *Proof.* In the matrix model choose $v\in\operatorname{im}N$ with $v\neq0$. Since $N^2=0$, $v\in\ker N$. Choose $w$ with $Nw=v$. Then $v\neq0$ and $w\notin\ker N$, so $(v,w)$ is a basis. The matrix of $N$ in that basis has first column $0$ and second column $v$, which is the nilpotent Jordan block.
 
-The chain is not unique for the product alone. The vector $\xi$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\xi$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\xi=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Jordan Basis of a Spectrally Degenerate Biquaternion*. It is a basis of the generalized eigenspace, not a polar frame.
+The chain is not unique for the product alone. The vector $\zeta$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\zeta$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\zeta=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in *The Jordan Basis of a Spectrally Degenerate Biquaternion*. It is a basis of the generalized eigenspace, not a polar frame.
 
 ## The Polar Word and the Jordan Flag
 
@@ -86,10 +86,10 @@ $$
 \tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)=\frac{\tilde Q}{Q_t},
 $$
 
-so it preserves the Jordan flag $\mathbb{C}\xi\subset\mathbb{C}^2$. In the Jordan basis its matrix is the unipotent block
+so it preserves the Jordan flag $\mathbb{C}\zeta\subset\mathbb{C}^2$. In the Jordan basis its matrix is the unipotent block
 
 $$
-\mathsf M_{(\xi,\eta)}(\tilde U)
+\mathsf M_{(\zeta,\eta)}(\tilde U)
 =
 \varepsilon
 \begin{pmatrix}
@@ -100,7 +100,7 @@ $$
 
 The polar factors do not preserve the flag in general.
 
-**Proposition (the factors leave the flag).** On the Jordan part, the positive factor $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ do not preserve the eigenline $\mathbb{C}\xi$ unless the element lies on the scalar line. Their product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ does preserve it.
+**Proposition (the factors leave the flag).** On the Jordan part, the positive factor $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ do not preserve the eigenline $\mathbb{C}\zeta$ unless the element lies on the scalar line. Their product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ does preserve it.
 
 *Proof.* The product is $\tilde U$, which is upper triangular in the Jordan basis. If both factors preserved the flag, both would be upper triangular in that basis. The worked example below shows that they are not; the general statement follows because the polar factors are functions of $\tilde U$ and $\tilde U^{*}$, and $\tilde U^{*}$ does not preserve the flag of $\tilde U$ on the Jordan part.
 
@@ -135,7 +135,7 @@ $$
 
 diverge as $B\to0$, because $\vec Q/B$ diverges. Their sum is $e_t$, which remains finite. The eigenbasis has no limit. The polar word has a limit, and the limit is the word of this article; this is proved in *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Boundary*.
 
-The Jordan chain is the limit of a rescaled eigenbasis. If $\xi_\pm$ are normalized eigenvectors of $\tilde Q$ with eigenvalues $\lambda_\pm$, then $\xi_+\to\xi$ and $(\xi_+-\xi_-)/(\lambda_+-\lambda_-)\to\eta$ after a choice of normalization. The chain records the rate at which the two eigenlines merge. It is a spectral remnant of the regular basis, not a polar object.
+The Jordan chain is the limit of a rescaled eigenbasis. If $\zeta_\pm$ are normalized eigenvectors of $\tilde Q$ with eigenvalues $\lambda_\pm$, then $\zeta_+\to\zeta$ and $(\zeta_+-\zeta_-)/(\lambda_+-\lambda_-)\to\eta$ after a choice of normalization. The chain records the rate at which the two eigenlines merge. It is a spectral remnant of the regular basis, not a polar object.
 
 ## Worked Example
 
@@ -175,17 +175,17 @@ N=\mathsf M(\vec\Upsilon)=
 \end{pmatrix}.
 $$
 
-A Jordan chain is $\xi=(2i,0)$ and $\eta=(0,-1)$; then $\xi=(2i,0)$ is the eigenvector and $N\eta=\xi$. In the basis $(\xi,\eta)$,
+A Jordan chain is $\zeta=(2i,0)$ and $\eta=(0,-1)$; then $\zeta=(2i,0)$ is the eigenvector and $N\eta=\zeta$. In the basis $(\zeta,\eta)$,
 
 $$
-\mathsf M_{(\xi,\eta)}(\tilde Q)
+\mathsf M_{(\zeta,\eta)}(\tilde Q)
 =
 \begin{pmatrix}
 1 & 1\\
 0 & 1
 \end{pmatrix},
 \qquad
-\mathsf M_{(\xi,\eta)}(\tilde U_{\mathrm b})
+\mathsf M_{(\zeta,\eta)}(\tilde U_{\mathrm b})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
@@ -193,7 +193,7 @@ $$
 2 & 1
 \end{pmatrix},
 \qquad
-\mathsf M_{(\xi,\eta)}(\tilde u_{\mathrm r})
+\mathsf M_{(\zeta,\eta)}(\tilde u_{\mathrm r})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
@@ -231,7 +231,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 |---|---|
 | spectrum | one eigenvalue $Q_t$, algebraic multiplicity two, geometric multiplicity one |
 | eigenbasis | none on the Jordan part; every basis on the scalar line |
-| replacement | a Jordan chain $\xi,\eta$ with $\vec\Upsilon\xi=0$ and $\vec\Upsilon\eta=\xi$ |
+| replacement | a Jordan chain $\zeta,\eta$ with $\vec\Upsilon\zeta=0$ and $\vec\Upsilon\eta=\zeta$ |
 | matrix form | $Q_t\begin{pmatrix}1&1\\0&1\end{pmatrix}$ in the chain |
 | polar factors | $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ do not preserve the chain in general |
 | factor eigenvalues | $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$; the product has the double eigenvalue $\varepsilon$ |
@@ -260,7 +260,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 | $\psi,\theta$ | the rapidity and the rotor angle |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the two axes, orthogonal on the Jordan part |
 | $\varepsilon=\pm1$ | the sign of the scalar part of the unit factor |
-| $\xi,\eta$ | a Jordan chain, $\vec\Upsilon\xi=0$, $\vec\Upsilon\eta=\xi$ |
+| $\zeta,\eta$ | a Jordan chain, $\vec\Upsilon\zeta=0$, $\vec\Upsilon\eta=\zeta$ |
 | $\mathsf M(\tilde Q)$ | the matrix $Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z$ |
 
 ## Further Reading

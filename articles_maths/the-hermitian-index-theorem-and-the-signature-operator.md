@@ -79,7 +79,7 @@ $$
 \chi(X,E)=\int_{X}\Bigl(\sum_{k}\operatorname{ch}_k(E)\Bigr)\prod_{j=1}^{n}\frac{x_j}{1-\exp(-x_j)} .
 $$
 
-**Proof sketch.** The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\xi$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in *The Atiyah–Singer Index Theorem and K-Theory*, and the Chern–Weil forms are those of *Chern Classes of a Hermitian Bundle*.
+**Proof sketch.** The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\zeta$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in *The Atiyah–Singer Index Theorem and K-Theory*, and the Chern–Weil forms are those of *Chern Classes of a Hermitian Bundle*.
 
 **Corollary (the classical cases).** For a compact Riemann surface $X$ of genus $g$ and a line bundle $L$ the theorem gives
 

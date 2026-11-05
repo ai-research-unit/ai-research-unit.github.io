@@ -22,7 +22,7 @@ nilpotent family, with the index three instead of two (*Nilpotents of the Genera
 Sesqualgebra*). The article states the coincidence, computes the annihilators, and separates the
 part of the classification that survives from the part that does not.
 
-**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ exactly when its central square vanishes, $C(\tilde Q_1)=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_{1t}=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_{1t}\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.
+**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ exactly when its central square vanishes, $C(\tilde Q_1)=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_{1t}=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_{1t}\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde{Ζ})$ are idempotents of the block.
 
 ## The Criterion
 
@@ -72,13 +72,13 @@ Sesqualgebra*, below this article in this category.
 
 ## The Two Families, and What the Block Does to Them
 
-**The parent's partition by the scalar coordinate survives: the pure family ($Q_t=0$, isotropic) is the block's nilpotent family, of index three rather than two, and the non-pure family ($Q_t\neq0$) is the nonzero complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.**
+**The parent's partition by the scalar coordinate survives: the pure family ($Q_t=0$, isotropic) is the block's nilpotent family, of index three rather than two, and the non-pure family ($Q_t\neq0$) is the nonzero complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde{Ζ})$ are idempotents of the block.**
 
 The plain product partitions its zero divisors by the scalar coordinate (*Zero Divisors of the
 General Plain Algebra*): the **pure family** has $Q_t=0$ and $(\vec Q,\vec Q)=0$, and its
 nonzero members are the nilpotents, $\tilde Q^{2}=0$; the **non-pure family** has $Q_t\neq0$, and
 its members are the nonzero complex multiples of the nontrivial idempotents
-$\tfrac12(e_t+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$. The partition is by the scalar
+$\tfrac12(e_t+\tilde{Ζ} i)$ over the roots $\tilde{Ζ}$ of $-1$. The partition is by the scalar
 coordinate, which is a datum of the element and not of the product, so it survives verbatim for the
 block; what does not survive is the **reading of the two families through the square**.
 
@@ -107,7 +107,7 @@ kept, and the index attached to each family is read from the square of the produ
 
 **Proposition (the non-pure family and the idempotents of the block).** The non-pure zero divisors
 are the nonzero complex multiples of the nontrivial idempotents of the plain product, and among
-them exactly the **Hermitian idempotents** $\tfrac12(e_t+\tilde\Xi)$ over the real unit vectors
+them exactly the **Hermitian idempotents** $\tfrac12(e_t+\tilde{Ζ})$ over the real unit vectors
 $\vec u$ are idempotents of the block; the others are zero divisors of the block and not
 idempotents of it.
 
@@ -115,15 +115,15 @@ idempotents of it.
 the block is a Hermitian idempotent of the plain product (*Idempotents of the General Plain
 Sesqualgebra*), and a Hermitian idempotent $\tilde\Pi$ has
 $\tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=\tilde\Pi^{2}=\tilde\Pi$; the Hermitian ones are
-those with a real root $\tilde\Xi=\pm\vec u$, that is the family $\tfrac12(e_t+\tilde\Xi)$. A
+those with a real root $\tilde{Ζ}=\pm\vec u$, that is the family $\tfrac12(e_t+\tilde{Ζ})$. A
 multiple $\lambda\tilde\Pi$ with $\lambda\neq1$ is a zero divisor but is idempotent for neither
 product unless $\lambda=1$.
 
 **Remark (the scalar part of a block idempotent is fixed).** The block idempotents
-$\tfrac12(e_t+\tilde\Xi)$ have scalar part $\tfrac12$, which is the positive value the algebraic
+$\tfrac12(e_t+\tilde{Ζ})$ have scalar part $\tfrac12$, which is the positive value the algebraic
 norm $\langle\tilde\Pi\rangle_{*}=\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=\sum_\mu\lvert\Pi_\mu\rvert^{2}$ forces on
 any idempotent of the block; in particular
-$C\bigl(\tfrac12(e_t+\tilde\Xi)\bigr)=\tfrac14(1-(\vec u,\vec u))=0$, so every block idempotent is
+$C\bigl(\tfrac12(e_t+\tilde{Ζ})\bigr)=\tfrac14(1-(\vec u,\vec u))=0$, so every block idempotent is
 a zero divisor, of the non-pure family. The unit $e_t$ is not a zero divisor, $c(e_t)=1$.
 
 ## The Comparison with the Parent and with the Four General Products
@@ -165,7 +165,7 @@ family consists of the nonzero complex multiples of the nontrivial idempotents. 
 **square-theoretic reading**: a pure zero divisor is a nilpotent of index two for the parent and a
 nilpotent of **index three** for the block, its block-square being the nonzero Hermitian element
 $\tilde Q\tilde Q^{*}$ with positive scalar part; the non-pure zero divisors are nilpotent for
-neither; and of the non-pure multiples, exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$
+neither; and of the non-pure multiples, exactly the Hermitian idempotents $\tfrac12(e_t+\tilde{Ζ})$
 are idempotents of the block. The block keeps the set, keeps the criterion, the partition and the
 annihilators, and changes the index.
 
@@ -181,7 +181,7 @@ annihilators, and changes the index.
 | $\langle\tilde Q_1\rangle_{\natural*}^{*}$, $\langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}$ | the common annihilator, the plain annihilator carried through the involution |
 | $Q_t=0$ | the pure family, isotropic: the nilpotents of the block, index three |
 | $Q_t\neq0$ | the non-pure family, multiples of the idempotents, not nilpotent |
-| $\tfrac12(e_t+\tilde\Xi)$ | the Hermitian idempotents, zero divisors and block idempotents |
+| $\tfrac12(e_t+\tilde{Ζ})$ | the Hermitian idempotents, zero divisors and block idempotents |
 
 ## Further Reading
 

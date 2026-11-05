@@ -51,23 +51,23 @@ so that over the complexified cone the phase is a circle over the two spheres to
 The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde H = -i\tilde P \in \mathbb{M}_+$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
 
 $$
-\tilde{\Pi}_\xi = \xi\,\xi^{\dagger}, \qquad \xi \in \mathbb{C}^2,
+\tilde{\Pi}_\zeta = \zeta\,\zeta^{\dagger}, \qquad \zeta \in \mathbb{C}^2,
 $$
 
-with $\tilde{\Pi}_\xi$ of rank one exactly when $\xi\neq0$, and idempotent when $\xi$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*Helicity in Biquaternionic Form*). The **direction** of $\tilde{\Pi}_\xi$ depends on the spinor only through its **ray**: replacing $\xi$ by $\exp(i\alpha)\xi$ multiplies $\xi\xi^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
+with $\tilde{\Pi}_\zeta$ of rank one exactly when $\zeta\neq0$, and idempotent when $\zeta$ is normalised. The sign is the direction of time: a future-pointing null element gives a positive-semidefinite matrix and a past-pointing one gives its negative, so the two orbits of the sphere are the two signs, and the positive case is the one the spinor-helicity factorisation uses (*Helicity in Biquaternionic Form*). The **direction** of $\tilde{\Pi}_\zeta$ depends on the spinor only through its **ray**: replacing $\zeta$ by $\exp(i\alpha)\zeta$ multiplies $\zeta\zeta^{\dagger}$ by $\exp(i\alpha)\exp(-i\alpha) = 1$ and leaves the element unchanged, so the direction is a **spinor up to a phase**, and
 
 $$
 \mathcal{C} \;\cong\; \mathbb{C}\mathbb{P}^1 \;\cong\; S^2.
 $$
 
-This is the standard identification of the Riemann sphere with the celestial sphere: the spinor $\xi$ is a pair of complex numbers, its ray is a point of $\mathbb{C}\mathbb{P}^1$, and the transition between the two presentations is the stereographic projection of the sphere. The metric the sphere carries in this presentation, and the transition probability between two of its rays, are *The Fubini–Study Geometry and the Biquaternion Norm*; this article records only the identification of the object.
+This is the standard identification of the Riemann sphere with the celestial sphere: the spinor $\zeta$ is a pair of complex numbers, its ray is a point of $\mathbb{C}\mathbb{P}^1$, and the transition between the two presentations is the stereographic projection of the sphere. The metric the sphere carries in this presentation, and the transition probability between two of its rays, are *The Fubini–Study Geometry and the Biquaternion Norm*; this article records only the identification of the object.
 
 ## The Little Group and the Phase
 
-A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto \exp(i\alpha)\xi$, which is the compact $\mathrm{U}(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
+A null direction is fixed by a subgroup of the Lorentz group, its **little group**, and the little group is what attaches the phase to the point. On the spinor $\zeta$ the direction is invariant under the phase $\zeta\mapsto \exp(i\alpha)\zeta$, which is the compact $\mathrm{U}(1)$ part of the little group; a massless field of **helicity** $h$ transforms under that phase by
 
 $$
-\xi \;\longmapsto\; \exp(i\alpha)\xi, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
+\zeta \;\longmapsto\; \exp(i\alpha)\zeta, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
 $$
 
 so the helicity is the **weight** of the central $\mathrm{U}(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are *Helicity in Biquaternionic Form*; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is *The Hopf Fibration and the Biquaternion Gauge Bundle*. What the celestial sphere supplies here is only the **base**: the point of $S^2$ at which the phase sits.
@@ -89,7 +89,7 @@ The interpretation also fixes the boundary of the object. The sphere is the set 
 
 ## Summary
 
-The null cone of the biquaternion norm is the zero-divisor cone, and on the material sector it is the light cone. Its **directions**, the null elements up to scale, form the **celestial sphere** $\mathcal{C}\cong S^2$, the sphere of lightlike directions. Complexified, the projective null cone is the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1$, the product of the two **chiral celestial spheres**, whose real diagonal is the physical sphere; the two rulings are the two chiral spinor families. In spinor coordinates a null Hermitian element is $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$, its direction is the **ray** of $\xi$, and the sphere is $\mathbb{C}\mathbb{P}^1$, with the metric and the transition probability delegated to the Fubini–Study article. The little group of a direction is a $\mathrm{U}(1)$ phase, the **helicity** is the weight of that phase, and the bundle it describes is the Hopf fibration of the algebra. The interpretation is that **a massless element is a point of the celestial sphere together with a phase**: the point is the direction, the phase is the helicity's $\mathrm{U}(1)$, and the norm, being zero, has removed only the scale.
+The null cone of the biquaternion norm is the zero-divisor cone, and on the material sector it is the light cone. Its **directions**, the null elements up to scale, form the **celestial sphere** $\mathcal{C}\cong S^2$, the sphere of lightlike directions. Complexified, the projective null cone is the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1$, the product of the two **chiral celestial spheres**, whose real diagonal is the physical sphere; the two rulings are the two chiral spinor families. In spinor coordinates a null Hermitian element is $\tilde{\Pi}_\zeta = \zeta\zeta^{\dagger}$, its direction is the **ray** of $\zeta$, and the sphere is $\mathbb{C}\mathbb{P}^1$, with the metric and the transition probability delegated to the Fubini–Study article. The little group of a direction is a $\mathrm{U}(1)$ phase, the **helicity** is the weight of that phase, and the bundle it describes is the Hopf fibration of the algebra. The interpretation is that **a massless element is a point of the celestial sphere together with a phase**: the point is the direction, the phase is the helicity's $\mathrm{U}(1)$, and the norm, being zero, has removed only the scale.
 
 ## Summary of Notation
 
@@ -99,8 +99,8 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | $\mathbb{M}_-$ | the material sector, $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
-| $\xi \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\xi\mapsto \exp(i\alpha)\xi$ |
-| $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$ | a positive rank-one Hermitian element, hence null; idempotent for unit $\xi$ |
+| $\zeta \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\zeta\mapsto \exp(i\alpha)\zeta$ |
+| $\tilde{\Pi}_\zeta = \zeta\zeta^{\dagger}$ | a positive rank-one Hermitian element, hence null; idempotent for unit $\zeta$ |
 | $h$ | the helicity, the weight of the little-group $\mathrm{U}(1)$ |
 | $\mathbb{C}\mathbb{P}^1 \cong S^2$ | the sphere in spinor coordinates |
 

@@ -74,7 +74,7 @@ $$
 The elements $\vec e_x, \vec e_y, \vec e_z$ lie in the subspace and satisfy $\vec e_\mu^2 = -1$. More generally, the **roots of $-1$** in the subspace are the pure quaternions of unit length,
 
 $$
-\xi = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1,
+\zeta = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1,
 $$
 
 which is a two-sphere $S^2$. The identity $\vec e_x \vec e_y = \vec e_z$ and its cyclic permutations hold inside the subspace, so the subspace contains the full quaternion multiplication of its imaginary units. The roots of $-1$ in the whole algebra $\mathbb{B}^{\mathrm{spl}}$ form the larger set $S^2 \times S^2$ described in *Split-Biquaternion Roots of Minus One*; the subspace contributes the diagonal of that product.

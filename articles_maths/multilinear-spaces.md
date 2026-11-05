@@ -259,7 +259,7 @@ Their structure, their universal properties among commutative and among graded-c
 
 **Proposition.** If $L$ is free with basis $B$ then $L^*$ is free with the dual basis $B^*=\{b^* : b \in B\}$ defined by $b^*(b')=\delta_{bb'}$, where $\delta$ is the Kronecker symbol. For finite free $L$ there is a natural isomorphism $L \cong L^{**}$, given by $x \mapsto (\text{evaluation at } x)$.
 
-*Proof.* A homomorphism out of a free module is determined by its values on $B$, and these may be prescribed arbitrarily; hence $B^*$ is a basis. For finite $B$, the map $x \mapsto \langle\cdot,x\rangle$ has the inverse sending $\xi \in L^{**}$ to $\sum_{b \in B}\xi(b^*)b$.
+*Proof.* A homomorphism out of a free module is determined by its values on $B$, and these may be prescribed arbitrarily; hence $B^*$ is a basis. For finite $B$, the map $x \mapsto \langle\cdot,x\rangle$ has the inverse sending $\zeta \in L^{**}$ to $\sum_{b \in B}\zeta(b^*)b$.
 
 For a general module the natural map $M \to M^{**}$ need not be injective or surjective; over a field it is an isomorphism exactly when $M$ is finite-dimensional.
 

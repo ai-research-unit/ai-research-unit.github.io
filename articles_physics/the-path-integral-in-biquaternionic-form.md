@@ -18,21 +18,21 @@ The finding is stated at the outset. **The algebra supplies a canonical complex 
 
 ## The Transformation Function and the Origin of the Phase
 
-The identification of the phase with the action is not assumed; it descends from the canonical structure, and the descent is Dirac's. When the configuration variables of a system are changed — the $\xi$'s replaced by another complete set $\eta$ — the classical transformation can be put in the contact form
+The identification of the phase with the action is not assumed; it descends from the canonical structure, and the descent is Dirac's. When the configuration variables of a system are changed — the $\zeta$'s replaced by another complete set $\eta$ — the classical transformation can be put in the contact form
 
 $$
-p_r=\frac{\partial S}{\partial \xi_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
+p_r=\frac{\partial S}{\partial \zeta_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
 $$
 
-with $S=S(\xi,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \xi_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.
+with $S=S(\zeta,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.
 
-The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \xi_f|\eta_f\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\xi)g(\eta)$ — every $\xi$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
+The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \zeta_f|\eta_f\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
 
 $$
-\langle \xi_f|f(\xi)g(\eta)|\eta_f\rangle=f(\xi_f)g(\eta_f)\,\langle \xi_f|\eta_f\rangle ,
+\langle \zeta_f|f(\zeta)g(\eta)|\eta_f\rangle=f(\zeta_f)g(\eta_f)\,\langle \zeta_f|\eta_f\rangle ,
 $$
 
-because $f(\xi)$ is diagonal in the $\xi$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \xi_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
+because $f(\zeta)$ is diagonal in the $\zeta$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \zeta_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
 
 The result for the phase follows when the two sets are the configurations at two times. The generator of the transformation between the configurations at $T$ and at $t'$ is the action over the interval, so $\langle x_t|x_T\rangle$ corresponds to $\exp(iS/\hbar)$, and for $T$ infinitesimally before $t'$ to $\exp(iL\,dt'/\hbar)$. The phase of the path integral is the action because the action generates the canonical transformation between the endpoints — not because it is an invariant that happens to be available. The field-theoretic counterpart of the transformation function, which is a functional of the field values on a boundary rather than a function of two configurations, is named in the companion article *The Functional Integral in Biquaternionic Form*. What that counterpart and this section fix between them is the **content** of the phase; what the algebra fixes is the imaginary unit that multiplies it, which is the question the rest of this article addresses.
 

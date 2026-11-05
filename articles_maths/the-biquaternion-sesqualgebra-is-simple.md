@@ -112,7 +112,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 **Proposition.** A minimal left algebra ideal of $\mathbb{B}$ is not a left $\star$-ideal.
 
-**Proof.** A minimal left algebra ideal is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent. Its conjugate image is $(\mathbb{B}\tilde\Pi)^{*}=\tilde\Pi^{*}\mathbb{B}$, a minimal right ideal, and it equals $\mathbb{B}\tilde\Pi$ only if $\tilde\Pi$ is central, which no primitive idempotent of $\mathbb{B}$ is, the centre being $\mathbb{C}e_t$ and the primitive idempotents the elements $\tilde\Pi(\xi)$ and the projections. So the ideal is not stable and, by the stability of one-sided $\star$-ideals, it is not a left $\star$-ideal.
+**Proof.** A minimal left algebra ideal is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent. Its conjugate image is $(\mathbb{B}\tilde\Pi)^{*}=\tilde\Pi^{*}\mathbb{B}$, a minimal right ideal, and it equals $\mathbb{B}\tilde\Pi$ only if $\tilde\Pi$ is central, which no primitive idempotent of $\mathbb{B}$ is, the centre being $\mathbb{C}e_t$ and the primitive idempotents the elements $\tilde\Pi(\zeta)$ and the projections. So the ideal is not stable and, by the stability of one-sided $\star$-ideals, it is not a left $\star$-ideal.
 
 **Remark.** The elements of the algebra therefore determine a rich lattice of minimal one-sided ideals, one for each primitive idempotent and one for each zero divisor, and the multiplication keeps none of them: the passage from the algebra to the sesqualgebra collapses the one-sided lattice to the two trivial elements. The contrast of the two lattices is the one-sided face of the simplicity of the sesqualgebra.
 

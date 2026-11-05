@@ -82,13 +82,13 @@ This is the proposition of *Spinors and Dirac Spinors in the Biquaternion Algebr
 
 **Why the mass does not undo the cut.** The mass term is the only term of the Dirac equation that names the other part, and it does so on the right, while the helicity element multiplies on the left (*Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation*, §*The Gradient and the Two Parts*). Left and right multiplications commute, so the mass couples the two parts and leaves the helicity split of each intact. At $m=0$ the parts decouple altogether into two Weyl equations, one per part, and the helicity is then locked to the part.
 
-**The spinor form.** The same element is written in that exercise with the root $\tilde\Xi=i\vec u_p$ of the central value $+1$, and the two are proportional,
+**The spinor form.** The same element is written in that exercise with the root $\tilde{Ζ}=i\vec u_p$ of the central value $+1$, and the two are proportional,
 
 $$
-\lambda=\tfrac{\hbar}{2}\,\tilde\Xi .
+\lambda=\tfrac{\hbar}{2}\,\tilde{Ζ} .
 $$
 
-The values $\pm1$ of $\tilde\Xi$ are therefore the helicity values in units of $\tfrac{\hbar}{2}$, and the exercise quotes them under the name of the helicity. The pair is the same pair; the factor is a unit.
+The values $\pm1$ of $\tilde{Ζ}$ are therefore the helicity values in units of $\tfrac{\hbar}{2}$, and the exercise quotes them under the name of the helicity. The pair is the same pair; the factor is a unit.
 
 ## The Higher Carriers
 
@@ -297,7 +297,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\vec S$ | The rotation generator read as one vector, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ on the fundamental carrier |
 | $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\tfrac{\hbar}{2}$ in $S_+(\vec u_p)$ |
 | $S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_\pm(\vec u_p)$ | The minimal left ideals at the axis; an elementary spinor is an element of one of them |
-| $\tilde\Xi=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\lambda=\tfrac{\hbar}{2}\tilde\Xi$ |
+| $\tilde{Ζ}=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\lambda=\tfrac{\hbar}{2}\tilde{Ζ}$ |
 | $\tilde P=\frac{iE}{c}e_t+\vec p$ | The four-momentum, null when $\langle\tilde P\rangle_{\natural}=0$ |
 | $\lambda,\ \bar\lambda$ | In the factorisation sections only: the two spinors with $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$; not the operator |
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
@@ -309,7 +309,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the spin-one helicity operator, its three values and the gauge removal of the longitudinal state.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the little group and the adjoint-action reading of $\lambda$.
-- [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde\Xi$, the two helicity lines and the mass that leaves them intact.
+- [Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation](exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html), for the helicity element $\tilde{Ζ}$, the two helicity lines and the mass that leaves them intact.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the massive case, where the label is not invariant.
 - [Canonical Quantization of the Biquaternion Graviton Field](canonical-quantization-of-the-biquaternion-graviton-field.html), for the spin-two spectrum and the two physical states.
 - [The Determination of the Possible Spins in Biquaternionic Form](the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the little-group classification and the statement that the reduction from $2s+1$ to two is the gauge condition.

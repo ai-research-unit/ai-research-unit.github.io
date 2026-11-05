@@ -191,10 +191,10 @@ $$
 which is the Klein–Gordon equation with a source and is solved by the convolution with the retarded kernel of the companion article. Expanding about the classical field $\chi_{\mathrm{cl}}$,
 
 $$
-\chi=\chi_{\mathrm{cl}}+\xi,
+\chi=\chi_{\mathrm{cl}}+\zeta,
 $$
 
-the exponent separates into the classical action, a linear term that vanishes by stationarity, and the quadratic fluctuation term $\frac{1}{2}\xi(\Box-\mu^2)\xi$. The one-loop approximation is the Gaussian integral over $\xi$, giving
+the exponent separates into the classical action, a linear term that vanishes by stationarity, and the quadratic fluctuation term $\frac{1}{2}\zeta(\Box-\mu^2)\zeta$. The one-loop approximation is the Gaussian integral over $\zeta$, giving
 
 $$
 Z[J]\simeq \exp(\,iS[\chi_{\mathrm{cl}}]+i\int J^*\chi_{\mathrm{cl}})\,

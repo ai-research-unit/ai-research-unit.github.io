@@ -104,15 +104,15 @@ with $K_{\mu\lambda}$ the Kostka number, the number of semistandard tableaux of 
 
 ### The Murnaghan–Nakayama Rule
 
-**Definition.** A **rim hook** (or border strip) of a Young diagram $\lambda$ is a connected skew shape $\xi = \lambda/\mu$ containing no $2\times2$ block; its **height** $\operatorname{ht}(\xi)$ is one less than the number of rows it occupies, and its sign is $(-1)^{\operatorname{ht}(\xi)}$.
+**Definition.** A **rim hook** (or border strip) of a Young diagram $\lambda$ is a connected skew shape $\zeta = \lambda/\mu$ containing no $2\times2$ block; its **height** $\operatorname{ht}(\zeta)$ is one less than the number of rows it occupies, and its sign is $(-1)^{\operatorname{ht}(\zeta)}$.
 
 **Theorem (Murnaghan–Nakayama).** Let $\lambda \vdash n$ and let $\mu = (\mu_1,\ldots,\mu_k)$ be a partition. Then
 
 $$
-\boxed{\;\chi^\lambda_\mu = \sum_{\xi}(-1)^{\operatorname{ht}(\xi)}\;},
+\boxed{\;\chi^\lambda_\mu = \sum_{\zeta}(-1)^{\operatorname{ht}(\zeta)}\;},
 $$
 
-the sum over all ways to remove from $\lambda$ a rim hook $\xi$ of size $\mu_1$ such that the remaining diagram is the diagram of a partition $\lambda^-$ with $\chi^{\lambda^-}_{(\mu_2,\ldots,\mu_k)} \neq 0$, each removal weighted by its sign.
+the sum over all ways to remove from $\lambda$ a rim hook $\zeta$ of size $\mu_1$ such that the remaining diagram is the diagram of a partition $\lambda^-$ with $\chi^{\lambda^-}_{(\mu_2,\ldots,\mu_k)} \neq 0$, each removal weighted by its sign.
 
 **Proof sketch.** The rule follows from the restriction of $S^\lambda$ to the Young subgroup of a cycle and the explicit combinatorics of the $n$-cycle acting on the polytabloid basis; equivalently, it is the translation into tableaux of the identity $\operatorname{ch}(\chi)(p_\mu) = \chi_\mu$ together with the Jacobi–Trudi expansion of the Schur function.
 
@@ -188,7 +188,7 @@ The Frobenius characteristic identifies the character ring of $S_n$ with the sym
 | $K_{\lambda\mu}$ | Kostka number |
 | $h(u)$, $c(u)$ | Hook length and content of a cell |
 | $\unrhd$ | Dominance order |
-| $\xi$, $\operatorname{ht}(\xi)$ | Rim (border) hook, its height |
+| $\zeta$, $\operatorname{ht}(\zeta)$ | Rim (border) hook, its height |
 | $d_{\lambda\mu}$ | Decomposition number |
 | $p$-core, $p$-block | Modular invariants of a partition and of $S_n$ |
 | $W^\lambda$ | Irreducible polynomial representation of $GL_n$ |

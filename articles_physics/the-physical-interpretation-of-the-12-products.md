@@ -188,9 +188,9 @@ The kernel can be structural rather than a constraint. The Bianchi identity says
 
 ### The Four Existence Classes
 
-A root of a central value $\lambda$ in one of the twelve structures is an element whose square in that product is the value, $\tilde\Xi\star\tilde\Xi=\lambda e_t$. The root problem asks which elements realise a given value. It is the inverse of the square map, and the square map is the band's way of producing a number from an operation: the plain square produces a polar scale and a direction, the central square produces the interval, the Hermitian square produces a probability weight, and the fourth square produces the indefinite gauge value.
+A root of a central value $\lambda$ in one of the twelve structures is an element whose square in that product is the value, $\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t$. The root problem asks which elements realise a given value. It is the inverse of the square map, and the square map is the band's way of producing a number from an operation: the plain square produces a polar scale and a direction, the central square produces the interval, the Hermitian square produces a probability weight, and the fourth square produces the indefinite gauge value.
 
-Two squares do most of the grouping. The **plain square** $\tilde\Xi^{2}$ belongs to $\tilde Q_1\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$; the **central square** $\tilde\Xi^{\natural}\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$ belongs to $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$. The sesquilinear bands have two squares of their own: the **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$, positive semidefinite and rank-bearing, and the **fourth square** $\tilde\Xi^{\natural}\tilde\Xi^{*}$, the indefinite gauge value. The symmetric quaternionic sesqualgebra is the exception: its square is the Hermitian part of the fourth square, a real element whose root sets are those of a symmetrised coupling. The four antisymmetric structures have no square of their own beyond the zero or pure value: an antisymmetrisation kills the scalar part, so a bracket cannot realise a nonzero central value at all.
+Two squares do most of the grouping. The **plain square** $\tilde{Ζ}^{2}$ belongs to $\tilde Q_1\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$; the **central square** $\tilde{Ζ}^{\natural}\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ belongs to $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$. The sesquilinear bands have two squares of their own: the **Hermitian square** $\tilde{Ζ}\tilde{Ζ}^{*}$, positive semidefinite and rank-bearing, and the **fourth square** $\tilde{Ζ}^{\natural}\tilde{Ζ}^{*}$, the indefinite gauge value. The symmetric quaternionic sesqualgebra is the exception: its square is the Hermitian part of the fourth square, a real element whose root sets are those of a symmetrised coupling. The four antisymmetric structures have no square of their own beyond the zero or pure value: an antisymmetrisation kills the scalar part, so a bracket cannot realise a nonzero central value at all.
 
 For a general complex value $\lambda$ the twelve structures fall into four classes.
 
@@ -210,9 +210,9 @@ A root of $+1$ is an element whose square in the product is the identity: in the
 An **idempotent** is an element equal to its own square. In the plain product the two equations are one equation read through the halving map,
 
 $$
-\boxed{\;\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
+\boxed{\;\tilde\Pi=\tfrac12(e_t+\tilde{Ζ}),
 \qquad
-\tilde\Xi=2\tilde\Pi-e_t\;},
+\tilde{Ζ}=2\tilde\Pi-e_t\;},
 $$
 
 which is a bijection between the roots of $+1$ and the idempotents. An idempotent is a projection, and a projection is a determinate state: measuring twice gives the same result as measuring once. The idempotent sets are the state sets of the bands. The plain product carries the largest family, one state per root of one; the Hermitian idempotents are the pure states of the probability band, on the boundary of the positive cone; the gauge family is the only nontrivial family of idempotents that are units. The brackets and the interval band carry no nontrivial state: an infinitesimal transformation has no determinate state, and a state is not an interval.

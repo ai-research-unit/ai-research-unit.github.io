@@ -74,7 +74,7 @@ and therefore exchanges the two chirality eigenspaces of the module. An element 
 **Definition.** The **Clifford contraction** is the bundle map
 
 $$
-c : T^*M\otimes\mathcal{S}\longrightarrow\mathcal{S}, \qquad c(\xi\otimes\sigma) = \xi^{\sharp}\cdot\sigma ,
+c : T^*M\otimes\mathcal{S}\longrightarrow\mathcal{S}, \qquad c(\zeta\otimes\sigma) = \zeta^{\sharp}\cdot\sigma ,
 $$
 
 obtained from the multiplication and the metric identification of covectors with vectors.
@@ -117,7 +117,7 @@ On a four-manifold the volume element satisfies $\omega^2=\operatorname{id}$ on 
 
 ## Summary
 
-The **Clifford multiplication** $c(b)\sigma=b\cdot\sigma$ is the operator by which a metric acts on a Clifford module; it satisfies the Clifford relations $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ and $c(b)^2=-g(b,b)\operatorname{id}$, it is injective as a map from the tangent spaces into the endomorphisms of the fibre, and it is **skew-adjoint** for the fibre form, $c(b)^*=-c(b)$, scaling that form by $g(b,b)$. It is an operator of **odd parity** for the chirality grading, anticommuting with the volume element in even dimension and exchanging the two chiral halves. Its extension to covectors, the **Clifford contraction** $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, is a surjection with adjoint $c^*$ and $cc^*=n\operatorname{id}$, so $\ker c=\operatorname{im}c^*$ and $\pi=\operatorname{id}-\frac1nc^*c$ is the projector onto the kernel. The multiplication makes the sections of a Clifford module a module over the sections of the Clifford bundle, and composing it with a connection yields the Cauchy–Riemann operator; the exterior bundle, with $c(b)=b\wedge-\iota_b$ and the operator $d+d^*$, is the non-spinor example. The pointwise adjoint of the multiplication is *The Adjoint of the Clifford Multiplication*; the operators it generates are *Operators on a Clifford Module* and *The Spinor Operator*.
+The **Clifford multiplication** $c(b)\sigma=b\cdot\sigma$ is the operator by which a metric acts on a Clifford module; it satisfies the Clifford relations $c(b)c(w)+c(w)c(b)=-2g(b,w)\operatorname{id}$ and $c(b)^2=-g(b,b)\operatorname{id}$, it is injective as a map from the tangent spaces into the endomorphisms of the fibre, and it is **skew-adjoint** for the fibre form, $c(b)^*=-c(b)$, scaling that form by $g(b,b)$. It is an operator of **odd parity** for the chirality grading, anticommuting with the volume element in even dimension and exchanging the two chiral halves. Its extension to covectors, the **Clifford contraction** $c(\zeta\otimes\sigma)=\zeta^{\sharp}\cdot\sigma$, is a surjection with adjoint $c^*$ and $cc^*=n\operatorname{id}$, so $\ker c=\operatorname{im}c^*$ and $\pi=\operatorname{id}-\frac1nc^*c$ is the projector onto the kernel. The multiplication makes the sections of a Clifford module a module over the sections of the Clifford bundle, and composing it with a connection yields the Cauchy–Riemann operator; the exterior bundle, with $c(b)=b\wedge-\iota_b$ and the operator $d+d^*$, is the non-spinor example. The pointwise adjoint of the multiplication is *The Adjoint of the Clifford Multiplication*; the operators it generates are *Operators on a Clifford Module* and *The Spinor Operator*.
 
 ## Summary of Notation
 
@@ -129,7 +129,7 @@ The **Clifford multiplication** $c(b)\sigma=b\cdot\sigma$ is the operator by whi
 | $h(c(b)\sigma,c(b)\tau)=g(b,b)h(\sigma,\tau)$ | Isometry of the multiplication up to scale |
 | $\omega=c(e_1)\cdots c(e_n)$ | Volume element; chirality operator for $n$ even |
 | $c(b)\omega=-\omega c(b)$ | Odd parity of the multiplication |
-| $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$ |
+| $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\zeta\otimes\sigma)=\zeta^{\sharp}\cdot\sigma$ |
 | $cc^*=n\operatorname{id}$, $\ker c=\operatorname{im}c^*$ | The trace identity and the decomposition |
 | $\Lambda^\bullet T^*M$, $c(b)=b^{\flat}\wedge-\iota_b$ | The exterior bundle as the canonical non-spinor Clifford module |
 

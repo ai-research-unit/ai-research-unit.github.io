@@ -133,17 +133,17 @@ the Laplacian of $\mathbb{R}^4$.
 
 ### Ellipticity
 
-**Definition.** The **symbol** of $D$ at a covector $\xi = (\xi_t, \xi_x, \xi_y, \xi_z)$ is left multiplication by
+**Definition.** The **symbol** of $D$ at a covector $\zeta = (\zeta_t, \zeta_x, \zeta_y, \zeta_z)$ is left multiplication by
 
 $$
-\sigma_D(\xi) = \xi_t + \xi_x \vec e_x + \xi_y \vec e_y + \xi_z \vec e_z.
+\sigma_D(\zeta) = \zeta_t + \zeta_x \vec e_x + \zeta_y \vec e_y + \zeta_z \vec e_z.
 $$
 
-The operator is **elliptic** if $\sigma_D(\xi)$ is invertible for every $\xi \neq 0$.
+The operator is **elliptic** if $\sigma_D(\zeta)$ is invertible for every $\zeta \neq 0$.
 
-**Theorem.** $D$ is elliptic, with $\sigma_D(\xi)^{-1} = \overline{\sigma_D(\xi)}/|\xi|^2$ for $\xi \neq 0$.
+**Theorem.** $D$ is elliptic, with $\sigma_D(\zeta)^{-1} = \overline{\sigma_D(\zeta)}/|\zeta|^2$ for $\zeta \neq 0$.
 
-**Proof.** The element $\xi_t + \sum_\mu \xi_\mu \vec e_\mu$ has norm $\sum_\mu \xi_\mu^2 = |\xi|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\xi)}/|\xi|^2$.
+**Proof.** The element $\zeta_t + \sum_\mu \zeta_\mu \vec e_\mu$ has norm $\sum_\mu \zeta_\mu^2 = |\zeta|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\zeta)}/|\zeta|^2$.
 
 Ellipticity is the analytic reason the regular functions are smooth and the Cauchy theory has the shape it has; the elliptic regularity and its consequences are developed in *Regularity and the Cauchy–Riemann Operator*.
 
@@ -484,7 +484,7 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | $D = \partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | Cauchy–Riemann operator |
 | $\bar{D} = \partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ | Conjugate operator |
 | $D\bar{D} = \bar{D}D = \Delta$ | Factorisation of the Laplacian |
-| $\sigma_D(\xi) = \xi_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ | Symbol of $D$ at the covector $\xi$; $D$ is elliptic |
+| $\sigma_D(\zeta) = \zeta_t + \zeta_x\vec e_x + \zeta_y\vec e_y + \zeta_z\vec e_z$ | Symbol of $D$ at the covector $\zeta$; $D$ is elliptic |
 | $Df = 0$ | Left regularity |
 | $fD = \partial/\partial Q_t f + (\partial/\partial Q_x f)\vec e_x + (\partial/\partial Q_y f)\vec e_y + (\partial/\partial Q_z f)\vec e_z = 0$ | Right regularity |
 | $\int_\Omega f\,dV$ | Domain integral, componentwise Lebesgue |

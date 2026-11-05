@@ -364,7 +364,7 @@ and the product $\bar{\partial}\,\overline{\bar{\partial}} = \partial^2/\partial
 
 ### The Ellipticity Failure
 
-The principal symbol of $\bar{\partial}$ is $\xi_{q'} - \varepsilon\xi_q$; it vanishes on the covectors with $\xi_{q'} = 0$ and $\varepsilon\xi_q = 0$, that is, on the whole co-normal direction of the infinitesimal line. The operator is therefore not elliptic, and it has no fundamental solution with the decay properties of the complex case. This is the operator form of the fact that the norm is degenerate: the direction of the radical is exactly the direction on which the principal symbol vanishes.
+The principal symbol of $\bar{\partial}$ is $\zeta_{q'} - \varepsilon\zeta_q$; it vanishes on the covectors with $\zeta_{q'} = 0$ and $\varepsilon\zeta_q = 0$, that is, on the whole co-normal direction of the infinitesimal line. The operator is therefore not elliptic, and it has no fundamental solution with the decay properties of the complex case. This is the operator form of the fact that the norm is degenerate: the direction of the radical is exactly the direction on which the principal symbol vanishes.
 
 ## The Role of the Maximal Ideal
 

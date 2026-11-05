@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products and Their Relations over the Biquaternion Algebra*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products and Their Relations over the Biquaternion Algebra*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde{Ζ}$ with
 
 $$
-\tilde\Xi\star\tilde\Xi=0 ,
+\tilde{Ζ}\star\tilde{Ζ}=0 ,
 $$
 
 the square-zero elements, and the second is the **nilpotents** of the block, the nonzero elements $\tilde\Upsilon$ with a vanishing power,
@@ -24,17 +24,17 @@ The equations name a product, so the powers, the square-zero elements and the ni
 
 ## The Roots of Zero
 
-**The block has no root of $0$: the equation $\tilde\Xi\star\tilde\Xi=0$ has the single solution $\tilde\Xi=0$, so the root set of $0$ is empty and there is no nonzero square-zero element; the nilpotents of the block are at the next index, and they are the pure zero divisors.**
+**The block has no root of $0$: the equation $\tilde{Ζ}\star\tilde{Ζ}=0$ has the single solution $\tilde{Ζ}=0$, so the root set of $0$ is empty and there is no nonzero square-zero element; the nilpotents of the block are at the next index, and they are the pure zero divisors.**
 
-A **root of $0$** is a nonzero element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\tilde\Xi=0$, that is a nonzero square-zero element; the equation is the block's, the Hermitian square $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}$.
+A **root of $0$** is a nonzero element $\tilde{Ζ}\in\mathbb{B}$ with $\tilde{Ζ}\star\tilde{Ζ}=0$, that is a nonzero square-zero element; the equation is the block's, the Hermitian square $\tilde{Ζ}\star\tilde{Ζ}=\tilde{Ζ}\tilde{Ζ}^{*}$.
 
-**Theorem (no root of $0$; no nonzero square-zero element).** The equation $\tilde\Xi\star\tilde\Xi=0$ has the single solution $\tilde\Xi=0$, so the block has no nonzero square-zero element, no nilpotent of index two, and the root set of $0$ is empty.
+**Theorem (no root of $0$; no nonzero square-zero element).** The equation $\tilde{Ζ}\star\tilde{Ζ}=0$ has the single solution $\tilde{Ζ}=0$, so the block has no nonzero square-zero element, no nilpotent of index two, and the root set of $0$ is empty.
 
-*Proof.* The scalar part of the square is $\mathrm{Sc}(\tilde\Xi\star\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ by the reduction of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Reduction*, and it vanishes only when every coordinate vanishes. A root is required to be nonzero, so the root set is empty; the same computation is the statement that the square-zero set is $\{0\}$. In the matrix model the square is $AA^{\dagger}$, positive semidefinite, whose vanishing forces $A=0$; the same statement is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the square-zero set of the general plain sesquilinear product is the origin alone.
+*Proof.* The scalar part of the square is $\mathrm{Sc}(\tilde{Ζ}\star\tilde{Ζ})=\sum_\mu\lvertΖ_\mu\rvert^{2}$ by the reduction of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Reduction*, and it vanishes only when every coordinate vanishes. A root is required to be nonzero, so the root set is empty; the same computation is the statement that the square-zero set is $\{0\}$. In the matrix model the square is $AA^{\dagger}$, positive semidefinite, whose vanishing forces $A=0$; the same statement is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the square-zero set of the general plain sesquilinear product is the origin alone.
 
 **Remark (square-zero and nilpotent are not the same here).** The block has no square-zero element, so it has no nilpotent of **index two**; its nilpotents have index **three**, and they are exactly the pure zero divisors, the elements with $\Upsilon_t=0$ and $(\vec\Upsilon,\vec\Upsilon)=0$. The empty root set of $0$ is therefore not the empty nilpotent set: the root of $0$ is the square-zero element, and the block has none, while the block has plenty of nilpotents at the next index. The distinction between *square-zero* and *nilpotent* is thus live in the block and not a coincidence of definitions.
 
-**Remark (the pure zero divisors are not square-zero).** The parent's pure zero divisors, $\Xi_t=0$ with $(\vec\Xi,\vec\Xi)=0$, are its nonzero nilpotents of index two; the block's square does not vanish on them, $\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{*}e_t+\mathrm{Vect}(\tilde\Xi\tilde\Xi^{*})\neq0$, as *Zero Divisors of the General Plain Sesqualgebra* records, and the block's nilpotency index is raised to three. The root set of $0$ is empty although the zero-divisor set is not, and although the nilpotent set is not: the three classes of the block are distinct and they must not be conflated.
+**Remark (the pure zero divisors are not square-zero).** The parent's pure zero divisors, $Ζ_t=0$ with $(\vec{Ζ},\vec{Ζ})=0$, are its nonzero nilpotents of index two; the block's square does not vanish on them, $\tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{*}e_t+\mathrm{Vect}(\tilde{Ζ}\tilde{Ζ}^{*})\neq0$, as *Zero Divisors of the General Plain Sesqualgebra* records, and the block's nilpotency index is raised to three. The root set of $0$ is empty although the zero-divisor set is not, and although the nilpotent set is not: the three classes of the block are distinct and they must not be conflated.
 
 **Remark (the parent, the block and the sibling).** The parent has square-zero elements, the pure isotropic cone; the block has none but the origin, and its square-zero set is the origin alone. This is the one clause on which the block and the parent separate at the level of the square, and it is the reason the block's index is three: a pure isotropic element, square-zero for the parent, has a non-vanishing Hermitian square for the block and vanishes only at the third power. The sibling symmetric plain sesqualgebra also has no **nonzero** square-zero element, and it has index-three nilpotents whose square is the nonzero central element $\bigl(\sum_\mu\lvert\Upsilon_\mu\rvert^{2}\bigr)e_t$ (written $\langle\tilde\Upsilon\rangle_{*}e_t$ in that block, where $\langle\cdot\rangle_{*}$ is the algebraic norm of the block); the block's index-three nilpotents have a **non-central** square $\tilde\Upsilon\tilde\Upsilon^{*}$, and that is the difference between the two siblings.
 

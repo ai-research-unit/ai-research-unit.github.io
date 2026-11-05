@@ -5,7 +5,7 @@
 
 **Supergeometry** is the geometry of manifolds whose coordinates are of two kinds, the ordinary commuting ones and the **odd** ones that anticommute and square to zero. A **supermanifold** of dimension $(p \mid q)$ is locally modelled on $p$ even coordinates and $q$ odd coordinates, in the same way that a manifold is locally modelled on Euclidean space; the odd coordinates are the generators of a Grassmann algebra, so that a function of them is a polynomial of degree at most $q$ and the whole local model is the tensor product of the smooth functions of the even variables with the exterior algebra on the odd ones. The geometry that results is the natural home of the parity-reversed objects of differential geometry: the parity-reversed tangent bundle $\Pi TM$, whose functions are the differential forms on $M$; the determinant line bundle, replaced by the **Berezinian** line bundle; and the odd vector fields, one of which, the de Rham vector field on $\Pi TM$, encodes the exterior derivative and satisfies $[Q, Q] = 0$.
 
-Two features make the theory more than a formalism. First, the odd directions are nilpotent: an odd coordinate $\xi$ has $\xi^2 = 0$, so a supermanifold has a canonical **body** manifold, obtained by setting the odd coordinates to zero, and every supermanifold is an infinitesimal thickening of its body in the odd directions. Second, the algebraic machinery already exists: the graded algebras, the sign rule, the Lie superalgebras and the Berezinian are the subject of the companion articles *Superalgebras and Graded Structures* and *Grassmann Variables and Berezin Integration*, written in Part I, and the present article lifts that algebra to a manifold theory in the same way that *Smooth Manifolds and Differential Geometry* lifts the algebra of rings of functions to the theory of manifolds. What the geometry adds is the atlas, the partition of unity, the tangent sheaf and the cohomological constructions; what it does not add is analysis, and the integration of a section of the Berezinian line bundle is an algebraic operation — the extraction of a top coefficient — rather than a measure-theoretic one.
+Two features make the theory more than a formalism. First, the odd directions are nilpotent: an odd coordinate $\zeta$ has $\zeta^2 = 0$, so a supermanifold has a canonical **body** manifold, obtained by setting the odd coordinates to zero, and every supermanifold is an infinitesimal thickening of its body in the odd directions. Second, the algebraic machinery already exists: the graded algebras, the sign rule, the Lie superalgebras and the Berezinian are the subject of the companion articles *Superalgebras and Graded Structures* and *Grassmann Variables and Berezin Integration*, written in Part I, and the present article lifts that algebra to a manifold theory in the same way that *Smooth Manifolds and Differential Geometry* lifts the algebra of rings of functions to the theory of manifolds. What the geometry adds is the atlas, the partition of unity, the tangent sheaf and the cohomological constructions; what it does not add is analysis, and the integration of a section of the Berezinian line bundle is an algebraic operation — the extraction of a top coefficient — rather than a measure-theoretic one.
 
 This article develops the theory in the concrete form, in which a supermanifold is a smooth manifold of even coordinates with an atlas whose transition functions depend polynomially on the odd coordinates. It defines the structure sheaf of functions, the body manifold and the reduction; it constructs the tangent sheaf of derivations, shows that it is locally free of rank $(p \mid q)$ — the fundamental smoothness theorem of the theory — and gives the parity of the vector fields; it treats the differential forms, the parity-reversal functor $\Pi$ and the identification of the functions on $\Pi TM$ with the differential forms on $M$, including the de Rham vector field; it defines the Berezinian line bundle and the integration over a supermanifold with the change-of-variables formula; and it gives the standard examples: the affine superspace $\mathbb{R}^{p \mid q}$, the superpoint, the odd line, the super circle $S^{1\mid 1}$, the odd tangent bundle $\Pi TM$ and the odd total space $\Pi E$ of a vector bundle. The sheaf-theoretic (Berezin–Leites) form of the definition is equivalent and is stated as such, and the concrete form used here needs no sheaf theory.
 
@@ -16,20 +16,20 @@ The article assumes *Superalgebras and Graded Structures* and *Grassmann Variabl
 **Definition.** A **super vector space** over a field $K$ of characteristic different from $2$ is a vector space $V = V_0 \oplus V_1$ with a decomposition into an even and an odd part; a homogeneous element $v \in V_{|v|}$ has **parity** $|v| \in \mathbb{Z}/2\mathbb{Z}$. A **superalgebra** is an algebra that is a super vector space with $A_p A_q \subseteq A_{p+q}$, and it is **supercommutative** if $ab = (-1)^{|a||b|}ba$. The **Grassmann algebra** on $q$ odd generators is
 
 $$
-\Lambda_q = \Lambda(\xi_1, \ldots, \xi_q) = K[\xi_1,\ldots,\xi_q]/(\xi_i\xi_j + \xi_j\xi_i,\ \xi_i^{\,2}) ,
+\Lambda_q = \Lambda(\zeta_1, \ldots, \zeta_q) = K[\zeta_1,\ldots,\zeta_q]/(\zeta_i\zeta_j + \zeta_j\zeta_i,\ \zeta_i^{\,2}) ,
 $$
 
-of dimension $2^q$ over $K$, with basis the monomials $\xi_{i_1}\cdots\xi_{i_k}$ for $i_1 < \cdots < i_k$; it is supercommutative, and $\xi_i^{\,2} = 0$. The algebra is that of *Superalgebras and Graded Structures* and *Grassmann Variables and Berezin Integration*, and its $\mathbb{Z}$-grading by the number of odd generators is the reduction to the $\mathbb{Z}/2$-grading by parity.
+of dimension $2^q$ over $K$, with basis the monomials $\zeta_{i_1}\cdots\zeta_{i_k}$ for $i_1 < \cdots < i_k$; it is supercommutative, and $\zeta_i^{\,2} = 0$. The algebra is that of *Superalgebras and Graded Structures* and *Grassmann Variables and Berezin Integration*, and its $\mathbb{Z}$-grading by the number of odd generators is the reduction to the $\mathbb{Z}/2$-grading by parity.
 
 **Definition.** A supercommutative superalgebra $A$ is **bicommutative** (or **super-Noetherian, with body**) if it is the tensor product of a commutative algebra with a Grassmann algebra; the **body map** is the algebra homomorphism
 
 $$
-\beta : C^\infty(U)\otimes\Lambda_q \longrightarrow C^\infty(U), \qquad \beta(f)(x) = f(x)\ \text{for}\ f\ \text{even in the }\xi\text{, and}\ \beta(\xi_i) = 0 ,
+\beta : C^\infty(U)\otimes\Lambda_q \longrightarrow C^\infty(U), \qquad \beta(f)(x) = f(x)\ \text{for}\ f\ \text{even in the }\zeta\text{, and}\ \beta(\zeta_i) = 0 ,
 $$
 
 killing the odd generators; its kernel is the nilpotent ideal generated by the odd coordinates, and $A/\ker\beta \cong C^\infty(U)$.
 
-**Proposition.** In a bicommutative superalgebra, every odd element is nilpotent and the ideal of nilpotents is generated by the odd generators; the even part is a commutative algebra but not a domain when $q \geq 1$, since $\xi_{i_1}\cdots\xi_{i_k}$ is a nonzero nilpotent of even parity for $k$ even and nonzero.
+**Proposition.** In a bicommutative superalgebra, every odd element is nilpotent and the ideal of nilpotents is generated by the odd generators; the even part is a commutative algebra but not a domain when $q \geq 1$, since $\zeta_{i_1}\cdots\zeta_{i_k}$ is a nonzero nilpotent of even parity for $k$ even and nonzero.
 
 ## Supermanifolds
 
@@ -41,25 +41,25 @@ $$
 \mathbb{R}^{p\mid q} = \mathbb{R}^p \times \mathbb{R}^{0\mid q},
 $$
 
-whose algebra of functions is $C^\infty(V) \otimes \Lambda_q$ for $V$ open in $\mathbb{R}^p$ and with an odd coordinate $\xi_j$ for each $j \leq q$; the changes of coordinates have the form
+whose algebra of functions is $C^\infty(V) \otimes \Lambda_q$ for $V$ open in $\mathbb{R}^p$ and with an odd coordinate $\zeta_j$ for each $j \leq q$; the changes of coordinates have the form
 
 $$
-x_i' = g_i(x), \qquad \xi_j' = \sum_{k} a_{jk}(x)\,\xi_k + \sum_{k_1 < k_2} a_{jk_1k_2}(x)\xi_{k_1}\xi_{k_2} + \cdots ,
+x_i' = g_i(x), \qquad \zeta_j' = \sum_{k} a_{jk}(x)\,\zeta_k + \sum_{k_1 < k_2} a_{jk_1k_2}(x)\zeta_{k_1}\zeta_{k_2} + \cdots ,
 $$
 
-with the $g_i$ smooth, the coefficients smooth, and the $\xi_j'$ with no constant term; the number $p$ is the **even dimension** and $q$ the **odd dimension**. The **structure sheaf** $\mathcal{O}_M$ assigns to an open set $U$ the supercommutative algebra of functions locally of the form $f(x, \xi) = \sum_I f_I(x)\xi_I$, and the **body** of $M$ is the smooth manifold $M_{\mathrm{red}} = \beta(M)$ of dimension $p$ obtained by killing the odd coordinates; the thickening is along the odd directions, and $\mathcal{O}_M$ is a sheaf of bicommutative superalgebras with body $C^\infty_{M_{\mathrm{red}}}$.
+with the $g_i$ smooth, the coefficients smooth, and the $\zeta_j'$ with no constant term; the number $p$ is the **even dimension** and $q$ the **odd dimension**. The **structure sheaf** $\mathcal{O}_M$ assigns to an open set $U$ the supercommutative algebra of functions locally of the form $f(x, \zeta) = \sum_I f_I(x)\zeta_I$, and the **body** of $M$ is the smooth manifold $M_{\mathrm{red}} = \beta(M)$ of dimension $p$ obtained by killing the odd coordinates; the thickening is along the odd directions, and $\mathcal{O}_M$ is a sheaf of bicommutative superalgebras with body $C^\infty_{M_{\mathrm{red}}}$.
 
 **Remark (the sheaf-theoretic definition).** A supermanifold may equivalently be defined as a pair $(M_{\mathrm{red}}, \mathcal{O})$ of a smooth manifold and a sheaf of supercommutative algebras on it, locally isomorphic to $C^\infty(-)\otimes\Lambda_q$; a **morphism** of supermanifolds is a morphism of the underlying ringed spaces that respects the algebras, and every smooth map of the bodies lifts to a morphism exactly when it is compatible with the odd data. The two definitions are equivalent, and the concrete one is used here because it needs no sheaf theory. The equivalence is standard.
 
 **Example (the basic supermanifolds).**
 
-**(a)** $\mathbb{R}^{p\mid q}$, with the global coordinates $x_1, \ldots, x_p$ even and $\xi_1, \ldots, \xi_q$ odd and the algebra $C^\infty(\mathbb{R}^p)\otimes\Lambda_q$ of global functions.
+**(a)** $\mathbb{R}^{p\mid q}$, with the global coordinates $x_1, \ldots, x_p$ even and $\zeta_1, \ldots, \zeta_q$ odd and the algebra $C^\infty(\mathbb{R}^p)\otimes\Lambda_q$ of global functions.
 
-**(b)** The **superpoint** $\mathbb{R}^{0\mid 1}$, whose algebra of functions is $\Lambda_1 = K[\xi]/(\xi^2)$, the dual numbers of the corpus; it is the one-point space with a nilpotent, and it is the local model of an odd direction.
+**(b)** The **superpoint** $\mathbb{R}^{0\mid 1}$, whose algebra of functions is $\Lambda_1 = K[\zeta]/(\zeta^2)$, the dual numbers of the corpus; it is the one-point space with a nilpotent, and it is the local model of an odd direction.
 
-**(c)** The **odd line** $\mathbb{R}^{1\mid 1}$ with one even and one odd coordinate; a function is $f(x) + g(x)\xi$.
+**(c)** The **odd line** $\mathbb{R}^{1\mid 1}$ with one even and one odd coordinate; a function is $f(x) + g(x)\zeta$.
 
-**(d)** The **super circle** $S^{1\mid 1}$, obtained from even and odd coordinates $(t, \xi)$ with $t$ modulo $1$ and $\xi$ odd, with the transition $\xi \mapsto \pm\xi$ according to the orientation; it is the simplest closed supermanifold and the base of the standard super-Teichmüller theory of the companion article.
+**(d)** The **super circle** $S^{1\mid 1}$, obtained from even and odd coordinates $(t, \zeta)$ with $t$ modulo $1$ and $\zeta$ odd, with the transition $\zeta \mapsto \pm\zeta$ according to the orientation; it is the simplest closed supermanifold and the base of the standard super-Teichmüller theory of the companion article.
 
 **(e)** Any smooth manifold $M$ of dimension $p$, read as a supermanifold of dimension $(p \mid 0)$: the supermanifolds of odd dimension zero are exactly the smooth manifolds.
 
@@ -78,10 +78,10 @@ for homogeneous $f, g$; the **tangent sheaf** $\mathcal{T}_M$ is the sheaf of ve
 **Theorem (smoothness).** The tangent sheaf of a supermanifold is locally free over the structure sheaf, of rank $(p \mid q)$; a local frame in a superchart is
 
 $$
-\partial/\partial x_1, \ldots, \partial/\partial x_p, \ \partial/\partial\xi_1, \ldots, \partial/\partial\xi_q,
+\partial/\partial x_1, \ldots, \partial/\partial x_p, \ \partial/\partial\zeta_1, \ldots, \partial/\partial\zeta_q,
 $$
 
-with the $x$-derivatives even and the $\xi$-derivatives odd, and the derivatives with respect to the odd coordinates are the left derivatives of *Grassmann Variables and Berezin Integration*. Hence a supermanifold is **smooth** in the graded sense, and every vector field is locally $X = \sum_i f_i\,\partial/\partial x_i + \sum_j g_j\,\partial/\partial\xi_j$ with the appropriate parities.
+with the $x$-derivatives even and the $\zeta$-derivatives odd, and the derivatives with respect to the odd coordinates are the left derivatives of *Grassmann Variables and Berezin Integration*. Hence a supermanifold is **smooth** in the graded sense, and every vector field is locally $X = \sum_i f_i\,\partial/\partial x_i + \sum_j g_j\,\partial/\partial\zeta_j$ with the appropriate parities.
 
 **Proof sketch.** The chain rule in the super setting gives the transformation of the frame under a change of supercoordinates, and the invertibility of the transformation matrix on the even part (the Jacobian of the body diffeomorphism, which is invertible) together with the triangular form of the odd-odd block shows that the frame is a basis of the module of derivations; the local freeness follows.
 
@@ -119,7 +119,7 @@ $$
 d : \Omega^k(M) \to \Omega^{k+1}(M), \qquad d(f\,d\alpha_1\cdots d\alpha_k) = df\, d\alpha_1\cdots d\alpha_k ,
 $$
 
-characterised by $d^2 = 0$, the super Leibniz rule and $d(f) = df$ on functions; in a superchart the coordinates $x_i$ even and $\xi_j$ odd give the forms $dx_i$ of odd total degree and $d\xi_j$ of even total degree.
+characterised by $d^2 = 0$, the super Leibniz rule and $d(f) = df$ on functions; in a superchart the coordinates $x_i$ even and $\zeta_j$ odd give the forms $dx_i$ of odd total degree and $d\zeta_j$ of even total degree.
 
 **Theorem (functoriality).** The assignment $M \mapsto \Omega^\bullet(M)$ is a functor to the category of differential graded superalgebras: a morphism of supermanifolds pulls back forms, $d$ commutes with the pullback, and the super Leibniz rule holds with the Koszul sign. The degree-zero part is the structure sheaf, and the degree-one part the cotangent sheaf; the complex $(\Omega^\bullet(M), d)$ is the graded version of the de Rham complex of *Differential Forms and Stokes' Theorem*, and its cohomology is the de Rham cohomology of the supermanifold.
 
@@ -144,26 +144,26 @@ with $A$ the even-even, $B$ the even-odd, $C$ the odd-even and $D$ the odd-odd b
 **Theorem (integration and change of variables).** A section of the Berezinian line bundle with compact support on a supermanifold of dimension $(p \mid q)$ has a well-defined integral
 
 $$
-\boxed{\;\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\xi_1\cdots d\xi_q \text{ in } s\Bigr)\;},
+\boxed{\;\int_M s = \int_{M_{\mathrm{red}}}\Bigl(\text{the coefficient of } dx_1\cdots dx_p\, d\zeta_1\cdots d\zeta_q \text{ in } s\Bigr)\;},
 $$
 
-computed in a superchart and independent of the chart, where the even part is integrated over the body and the odd part is integrated by the Berezin rule. Under a change of supercoordinates, with $J = \partial(x', \xi')/\partial(x, \xi)$ the Jacobian of the change from the coordinates $(x, \xi)$ to the coordinates $(x', \xi')$, the Berezinian measures are related by
+computed in a superchart and independent of the chart, where the even part is integrated over the body and the odd part is integrated by the Berezin rule. Under a change of supercoordinates, with $J = \partial(x', \zeta')/\partial(x, \zeta)$ the Jacobian of the change from the coordinates $(x, \zeta)$ to the coordinates $(x', \zeta')$, the Berezinian measures are related by
 
 $$
-\boxed{\;dx\,d\xi = \operatorname{Ber}(J)^{-1}\,dx'\,d\xi'\;} ,
+\boxed{\;dx\,d\zeta = \operatorname{Ber}(J)^{-1}\,dx'\,d\zeta'\;} ,
 $$
 
 the inverse Berezinian appearing, exactly as the inverse determinant appears in the purely odd change of variables of *Grassmann Variables and Berezin Integration* and the inverse Jacobian in the ordinary change of variables of the even part. The integral is a finite algebraic operation — the extraction of a top coefficient — and agrees with the Berezin integral on each chart.
 
 **Proof sketch.** The transformation of the odd part is the change-of-variables formula of the odd calculus, and the even part contributes the ordinary Jacobian determinant, the two combining into the Berezinian; the independence of the chart is the multiplicativity of the Berezinian, $\operatorname{Ber}(XY) = \operatorname{Ber}(X)\operatorname{Ber}(Y)$, on the overlaps of the atlas; the agreement with the Berezin integral is the computation of the top coefficient in the odd variables.
 
-**Example (the integration of a super form).** On $\mathbb{R}^{1\mid 1}$ with the coordinates $(x, \xi)$ a section of the Berezinian is $f(x) + g(x)\xi$ times $dx\,d\xi$, and
+**Example (the integration of a super form).** On $\mathbb{R}^{1\mid 1}$ with the coordinates $(x, \zeta)$ a section of the Berezinian is $f(x) + g(x)\zeta$ times $dx\,d\zeta$, and
 
 $$
-\int_{\mathbb{R}^{1\mid 1}} (f(x) + g(x)\xi)\,dx\,d\xi = \int_{\mathbb{R}} g(x)\,dx ,
+\int_{\mathbb{R}^{1\mid 1}} (f(x) + g(x)\zeta)\,dx\,d\zeta = \int_{\mathbb{R}} g(x)\,dx ,
 $$
 
-the even part of the coefficient; this is the shape of every superspace integral, and it shows why the odd coordinate contributes the coefficient of $\xi$ and the even coordinate the ordinary integral. The ordinary integral enters here as the classical counterpart, exactly as in *Grassmann Variables and Berezin Integration*.
+the even part of the coefficient; this is the shape of every superspace integral, and it shows why the odd coordinate contributes the coefficient of $\zeta$ and the even coordinate the ordinary integral. The ordinary integral enters here as the classical counterpart, exactly as in *Grassmann Variables and Berezin Integration*.
 
 ## The Parity Reversal and the Examples
 
@@ -193,13 +193,13 @@ The tangent sheaf is the sheaf of superderivations of the structure sheaf, local
 |---|---|
 | $V = V_0\oplus V_1$, $\vert v\vert$ | Super vector space with even and odd parts; parity |
 | $ab = (-1)^{\vert a\vert\vert b\vert}ba$ | Supercommutativity |
-| $\Lambda_q = \Lambda(\xi_1,\ldots,\xi_q)$ | Grassmann algebra on $q$ odd generators; $\xi_i^2 = 0$ |
+| $\Lambda_q = \Lambda(\zeta_1,\ldots,\zeta_q)$ | Grassmann algebra on $q$ odd generators; $\zeta_i^2 = 0$ |
 | $\beta$ | Body map; kills the odd coordinates |
 | $M$, $\dim = (p\mid q)$ | Supermanifold; even and odd dimension |
 | $M_{\mathrm{red}}$ | Body manifold, of dimension $p$ |
 | $\mathcal{O}_M$ | Structure sheaf; locally $C^\infty(U)\otimes\Lambda_q$ |
 | $\mathcal{T}_M$ | Tangent sheaf of superderivations; locally free of rank $(p\mid q)$ |
-| $\partial/\partial x_i$, $\partial/\partial\xi_j$ | Even and odd frame of the tangent sheaf |
+| $\partial/\partial x_i$, $\partial/\partial\zeta_j$ | Even and odd frame of the tangent sheaf |
 | $[X,Y] = XY - (-1)^{\vert X\vert\vert Y\vert}YX$ | Superbracket; Lie superalgebra of vector fields |
 | $\Omega^\bullet(M)$, $d$ | Differential forms; super exterior derivative, $d^2 = 0$ |
 | $\Pi E$, $\Pi TM$ | Parity reversal; odd bundle, odd tangent bundle |

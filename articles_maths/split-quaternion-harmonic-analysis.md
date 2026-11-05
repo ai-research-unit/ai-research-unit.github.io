@@ -9,10 +9,10 @@ The split-quaternion algebra, its split-quaternion norm and its units are assume
 
 ## The Additive Group and Its Dual
 
-**Theorem (The Group and Its Dual).** The additive group of the algebra, identified with $\mathbb{R}^4$ through the coordinates $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, is a locally compact abelian group, with the Lebesgue measure as its Haar measure. Its dual is again $\mathbb{R}^4$, identified with the frequency vectors $\xi = \alpha + \beta \vec e_x + \gamma \vec e_y + \delta \vec e_z$, the pairing being the Euclidean scalar product of the coordinate vectors and the characters being the complex-valued functions
+**Theorem (The Group and Its Dual).** The additive group of the algebra, identified with $\mathbb{R}^4$ through the coordinates $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, is a locally compact abelian group, with the Lebesgue measure as its Haar measure. Its dual is again $\mathbb{R}^4$, identified with the frequency vectors $\zeta = \alpha + \beta \vec e_x + \gamma \vec e_y + \delta \vec e_z$, the pairing being the Euclidean scalar product of the coordinate vectors and the characters being the complex-valued functions
 
 $$
-\chi_\xi(\tilde q) = \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle), \qquad \langle \tilde q,\xi\rangle = q_t\alpha + q_x\beta + q_y\gamma + q_z\delta ,
+\chi_\zeta(\tilde q) = \exp(2\pi \mathrm{i}\langle \tilde q,\zeta\rangle), \qquad \langle \tilde q,\zeta\rangle = q_t\alpha + q_x\beta + q_y\gamma + q_z\delta ,
 $$
 
 Pontryagin duality holds, and the dual group is equipped with the dual Haar measure.
@@ -21,7 +21,7 @@ Pontryagin duality holds, and the dual group is equipped with the dual Haar meas
 
 **Remark (The Complex Unit Is Scalar).** The symbol $\mathrm{i}$ in the characters is the usual complex unit, a scalar; it is not an element of the algebra, and no element of the algebra is ever used as the imaginary unit of the transform. The algebra enters only through the values of the functions transformed and through the products of those values.
 
-**Remark (The Corpus Convention).** The characters and the transform are taken with the sign convention of *Quaternion Harmonic Analysis*, §*The Quaternion Characters*, so that the pairing is the Euclidean one on $\mathbb{R}^4$ and the transform of a derivative carries the factor $-2\pi\mathrm{i}$. In the quaternion case the algebra-valued characters $\exp(2\pi\omega\langle \tilde q,\xi\rangle)$ with $\omega^2 = -1$ lie on the unit sphere and are bounded; here the corresponding kernel $\exp(-\tilde q\xi)$ is bounded only when $\operatorname{Sc}(\tilde q\xi) = 0$, and its split-quaternion norm is $\exp(-2\operatorname{Sc}(\tilde q\xi))$ in general, because the form is indefinite. The boundedness of the characters in the definite case and its failure in the split case is the same dichotomy as the definiteness of the form.
+**Remark (The Corpus Convention).** The characters and the transform are taken with the sign convention of *Quaternion Harmonic Analysis*, §*The Quaternion Characters*, so that the pairing is the Euclidean one on $\mathbb{R}^4$ and the transform of a derivative carries the factor $-2\pi\mathrm{i}$. In the quaternion case the algebra-valued characters $\exp(2\pi\omega\langle \tilde q,\zeta\rangle)$ with $\omega^2 = -1$ lie on the unit sphere and are bounded; here the corresponding kernel $\exp(-\tilde q\zeta)$ is bounded only when $\operatorname{Sc}(\tilde q\zeta) = 0$, and its split-quaternion norm is $\exp(-2\operatorname{Sc}(\tilde q\zeta))$ in general, because the form is indefinite. The boundedness of the characters in the definite case and its failure in the split case is the same dichotomy as the definiteness of the form.
 
 **Corollary (The Space of Functions).** The algebra-valued functions with square-integrable components form the Hilbert space
 
@@ -38,7 +38,7 @@ with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natura
 **Definition.** For $f \in L^1(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ the **Fourier transform** is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}^{\mathrm{spl}} ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}^{\mathrm{spl}} ,
 $$
 
 the transform of the four scalar components of $f$.
@@ -47,7 +47,7 @@ the transform of the four scalar components of $f$.
 
 $$
 \boxed{\;
-f(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
+f(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} (\mathcal F f)(\zeta)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\zeta
 \;},
 $$
 
@@ -73,7 +73,7 @@ with the product of the algebra inside the integral.
 
 $$
 \boxed{\;
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi)
+\widehat{f * g}(\zeta) = (\mathcal F f)(\zeta)\,(\mathcal F g)(\zeta)
 \;},
 $$
 
@@ -106,22 +106,22 @@ The transform that uses the algebra itself as the kernel is the analogue of the 
 **Definition.** For a suitable function $f$ the **algebra-kernel transform** is
 
 $$
-\mathcal{F}f(\xi) = \int_{\mathbb{H}^{\mathrm{spl}}} \exp(-\tilde q\xi)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\xi \text{ the algebra product},
+\mathcal{F}f(\zeta) = \int_{\mathbb{H}^{\mathrm{spl}}} \exp(-\tilde q\zeta)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\zeta \text{ the algebra product},
 $$
 
 the exponential being that of *Split-Quaternion Elementary Functions*.
 
-**Theorem (The Kernel Is Never Singular).** The kernel $\exp(-\tilde q\xi)$ is invertible for all $\tilde q$ and all $\xi$, with
+**Theorem (The Kernel Is Never Singular).** The kernel $\exp(-\tilde q\zeta)$ is invertible for all $\tilde q$ and all $\zeta$, with
 
 $$
-N\big(\exp(-\tilde q\xi)\big) = \exp(-2\operatorname{Sc}(\tilde q\xi)) > 0 ,
+N\big(\exp(-\tilde q\zeta)\big) = \exp(-2\operatorname{Sc}(\tilde q\zeta)) > 0 ,
 $$
 
 so the exponential kernel itself is never a zero divisor, and the transform is well defined and bounded on $L^1$ for every frequency.
 
-**Proof.** *Split-Quaternion Elementary Functions*, §*The Exponential*, applied to the element $-\tilde q\xi$.
+**Proof.** *Split-Quaternion Elementary Functions*, §*The Exponential*, applied to the element $-\tilde q\zeta$.
 
-**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $\exp(-\tilde q\xi)$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde q_2$, and
+**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $\exp(-\tilde q\zeta)$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde q_2$, and
 
 $$
 (\tilde q-\tilde q_2)^{-1} = \frac{\overline{\tilde q-\tilde q_2}}{\langle\tilde q-\tilde q_2\rangle_{\natural}}
@@ -129,29 +129,29 @@ $$
 
 exists exactly when $\langle\tilde q-\tilde q_2\rangle_{\natural} \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
 
-**Proof.** The inverse of an element is $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $\langle\tilde q\rangle_{\natural} = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $\exp(-(\tilde q+\tilde q_2)\xi) \neq \exp(-\tilde q\xi)\exp(-\tilde q_2\xi)$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
+**Proof.** The inverse of an element is $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $\langle\tilde q\rangle_{\natural} = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $\exp(-(\tilde q+\tilde q_2)\zeta) \neq \exp(-\tilde q\zeta)\exp(-\tilde q_2\zeta)$ unless $\tilde q$ and $\zeta$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
 
 **Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = \vec e_x\partial/\partial q_x + \vec e_y\partial/\partial q_y + \vec e_z\partial/\partial q_z$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
 
 $$
 \boxed{\;
-\widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi)
+\widehat{Df}(\zeta) = -2\pi \mathrm{i}\;\zeta\, (\mathcal F f)(\zeta)
 \;},
 $$
 
-so that the **symbol** of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $\langle \xi\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
+so that the **symbol** of the operator is the frequency vector $\zeta \in V$; the symbol is invertible exactly when $\zeta$ is a unit, that is exactly when $\langle \zeta\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
 
-**Proof.** Integration by parts in each coordinate gives $\widehat{\partial/\partial q_i f} = -2\pi\mathrm{i}\xi_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of *Split-Quaternion Norm and Invertibility*.
+**Proof.** Integration by parts in each coordinate gives $\widehat{\partial/\partial q_i f} = -2\pi\mathrm{i}\zeta_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of *Split-Quaternion Norm and Invertibility*.
 
 **Corollary (The Transform of the Fundamental Solution Is Singular on the Cone).** Let $E_D$ be the fundamental solution of $D$ of *Split-Quaternion Integration*, §*The Fundamental Solution*. Then, with the principal value of the reciprocal,
 
 $$
-\mathcal F E_D(\xi) = -\frac{1}{2\pi\mathrm{i}}\,\xi^{-1} = \frac{1}{2\pi\mathrm{i}}\,\frac{\xi}{\langle \xi\rangle_{\natural}} ,
+\mathcal F E_D(\zeta) = -\frac{1}{2\pi\mathrm{i}}\,\zeta^{-1} = \frac{1}{2\pi\mathrm{i}}\,\frac{\zeta}{\langle \zeta\rangle_{\natural}} ,
 $$
 
-a distribution whose singular support is exactly the null cone. The vanishing determinant $\langle \xi\rangle_{\natural} = 0$ is therefore not a technical nuisance: it is the support of the transformed fundamental solution, and it is the reason the fundamental solution is singular on the cone rather than at a point.
+a distribution whose singular support is exactly the null cone. The vanishing determinant $\langle \zeta\rangle_{\natural} = 0$ is therefore not a technical nuisance: it is the support of the transformed fundamental solution, and it is the reason the fundamental solution is singular on the cone rather than at a point.
 
-**Proof.** From $\widehat{DE_D} = -2\pi\mathrm{i}\xi\mathcal F E_D = \hat\delta = 1$ and $\xi^{-1} = -\xi/\langle \xi\rangle_{\natural}$ for $\xi \in V$; the support statement is then the standard computation of the principal value of $1/N$ on an indefinite quadratic form, as in *Distributions and Fundamental Solutions*.
+**Proof.** From $\widehat{DE_D} = -2\pi\mathrm{i}\zeta\mathcal F E_D = \hat\delta = 1$ and $\zeta^{-1} = -\zeta/\langle \zeta\rangle_{\natural}$ for $\zeta \in V$; the support statement is then the standard computation of the principal value of $1/N$ on an indefinite quadratic form, as in *Distributions and Fundamental Solutions*.
 
 ## Distributions
 
@@ -159,15 +159,15 @@ a distribution whose singular support is exactly the null cone. The vanishing de
 
 **Proof.** The scalar theory of *Distributions and Fundamental Solutions* applies componentwise; the temperedness of the fundamental solution follows from its homogeneity of degree $-2$ and its support on the cone.
 
-**Corollary (The Failure of Elliptic Inversion and Its Frequency Location).** The inversion of the transform of a solution of $Df = g$ is obstructed exactly on the null cone: the frequency equation $\mathcal F f = -(2\pi\mathrm{i}\xi)^{-1}\mathcal F g$ cannot be solved by a smooth symbol on the whole frequency space, and any solution must have its singularities concentrated on the characteristic variety. This is the frequency-space form of the failure of the elliptic theory and of the cone support of the fundamental solution.
+**Corollary (The Failure of Elliptic Inversion and Its Frequency Location).** The inversion of the transform of a solution of $Df = g$ is obstructed exactly on the null cone: the frequency equation $\mathcal F f = -(2\pi\mathrm{i}\zeta)^{-1}\mathcal F g$ cannot be solved by a smooth symbol on the whole frequency space, and any solution must have its singularities concentrated on the characteristic variety. This is the frequency-space form of the failure of the elliptic theory and of the cone support of the fundamental solution.
 
 **Proof.** The symbol is non-invertible on the null cone by the vanishing-determinant theorem, so the inverse symbol is not smooth there and the multiplication by it is not a pseudodifferential operation of the standard elliptic type.
 
 ## The Symbol and Its Degeneracy
 
-**Theorem (The Symbol and the Singular Frequencies).** The symbol of the vector operator at frequency $\xi$ is the frequency $\xi$ itself, and the symbol is invertible exactly when $\langle \xi\rangle_{\natural} \neq 0$; the singular frequencies are the null cone, which is the zero divisor set of the algebra.
+**Theorem (The Symbol and the Singular Frequencies).** The symbol of the vector operator at frequency $\zeta$ is the frequency $\zeta$ itself, and the symbol is invertible exactly when $\langle \zeta\rangle_{\natural} \neq 0$; the singular frequencies are the null cone, which is the zero divisor set of the algebra.
 
-**Proof.** The operator has constant coefficients, so its symbol is the frequency vector, and the symbol is invertible exactly when the frequency is a unit, that is when $\langle \xi\rangle_{\natural} \neq 0$ by the invertibility criterion; the set $\{N = 0\}$ is the null cone, the zero divisor set.
+**Proof.** The operator has constant coefficients, so its symbol is the frequency vector, and the symbol is invertible exactly when the frequency is a unit, that is when $\langle \zeta\rangle_{\natural} \neq 0$ by the invertibility criterion; the set $\{N = 0\}$ is the null cone, the zero divisor set.
 
 The degeneracy of the harmonic analysis on the null cone is therefore read in the algebra alone, as the non-invertibility of the frequency: the vanishing of the determinant of the symbol is the vanishing of the split-quaternion norm, and no further object is needed to locate it.
 
@@ -179,16 +179,16 @@ The degeneracy of the harmonic analysis on the null cone is therefore read in th
 | group transform | four-dimensional Fourier transform | four-dimensional Fourier transform | two-dimensional Fourier transform |
 | convolution theorem | holds | holds | holds |
 | algebra-kernel transform | quaternionic Fourier transform, invertible symbol | algebra-kernel transform, symbol degenerate on the null cone | hyperbolic transform, degenerate on the isotropic lines |
-| symbol $\xi$ | invertible for every $\xi \neq 0$ | invertible iff $\langle \xi\rangle_{\natural} \neq 0$ | invertible iff $\langle \xi\rangle_{\natural} \neq 0$ |
+| symbol $\zeta$ | invertible for every $\zeta \neq 0$ | invertible iff $\langle \zeta\rangle_{\natural} \neq 0$ | invertible iff $\langle \zeta\rangle_{\natural} \neq 0$ |
 | transformed fundamental solution | singular at the origin | singular on the null cone | singular on the two isotropic lines |
 
 The quaternion column is the content of *Quaternion Harmonic Analysis* and the split-complex column that of *Split-Complex Harmonic Analysis*. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 
 ## Summary
 
-The additive group of the split-quaternion algebra is a locally compact abelian group, identified with $\mathbb{R}^4$, with dual $\mathbb{R}^4$ and scalar characters $\chi_\xi(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\xi\rangle)$. The Fourier transform of the group is the fourfold scalar transform applied to the components, with inversion and Plancherel; the convolution theorem holds with the algebra product, because the characters are scalar, so the transform is an isomorphism of the convolution algebra onto the pointwise product algebra; the convolution is associative because the algebra product is, and it is not commutative, because the algebra product is not.
+The additive group of the split-quaternion algebra is a locally compact abelian group, identified with $\mathbb{R}^4$, with dual $\mathbb{R}^4$ and scalar characters $\chi_\zeta(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\zeta\rangle)$. The Fourier transform of the group is the fourfold scalar transform applied to the components, with inversion and Plancherel; the convolution theorem holds with the algebra product, because the characters are scalar, so the transform is an isomorphism of the convolution algebra onto the pointwise product algebra; the convolution is associative because the algebra product is, and it is not commutative, because the algebra product is not.
 
-The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $\langle \exp(\tilde q)\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\xi$, invertible exactly when $\langle \xi\rangle_{\natural}\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\mathcal F E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. The symbol is the frequency $\xi$ itself, and it is singular exactly on the null cone.
+The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $\langle \exp(\tilde q)\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\zeta$, invertible exactly when $\langle \zeta\rangle_{\natural}\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\mathcal F E_D = -(2\pi\mathrm{i}\zeta)^{-1} = \zeta/(2\pi\mathrm{i}\langle \zeta\rangle_{\natural})$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. The symbol is the frequency $\zeta$ itself, and it is singular exactly on the null cone.
 
 The comparison with the quaternion case is sharp: there the split-quaternion norm vanishes only at the origin, the symbol is invertible at every nonzero frequency, and the transformed fundamental solution is singular at a point; in the split case the split-quaternion norm vanishes on a cone and every degeneracy is located there. The split-complex case is the two-dimensional model of the same phenomenon, with the two isotropic lines in place of the cone. The eight-dimensional relative is a later system of Part V, named only.
 
@@ -198,14 +198,14 @@ The two transforms of the article are therefore to be kept apart: the group tran
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\chi_\xi(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\xi\rangle)$ | the scalar characters of the additive group | this article |
-| $(\mathcal F f)(\xi)$ | the group Fourier transform | this article |
+| $\chi_\zeta(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\zeta\rangle)$ | the scalar characters of the additive group | this article |
+| $(\mathcal F f)(\zeta)$ | the group Fourier transform | this article |
 | $f * g$ | the convolution with the algebra product | this article |
 | $\widehat{f*g} = \mathcal F f\mathcal F g$ | the convolution theorem | this article |
-| $\mathcal{F}f(\xi) = \int \exp(-\tilde q\xi)f$ | the algebra-kernel transform | this article |
-| $\langle\exp(-\tilde q\xi)\rangle_{\natural} = \exp(-2\operatorname{Sc}(\tilde q\xi)) > 0$ | the kernel is never a zero divisor | *Split-Quaternion Elementary Functions* |
-| $\xi^{-1}$, $\langle \xi\rangle_{\natural}$ | the symbol and its determinant | *Split-Quaternion Norm and Invertibility* |
-| $\mathcal F E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$ | the transformed fundamental solution, singular on the null cone | *Split-Quaternion Integration* |
+| $\mathcal{F}f(\zeta) = \int \exp(-\tilde q\zeta)f$ | the algebra-kernel transform | this article |
+| $\langle\exp(-\tilde q\zeta)\rangle_{\natural} = \exp(-2\operatorname{Sc}(\tilde q\zeta)) > 0$ | the kernel is never a zero divisor | *Split-Quaternion Elementary Functions* |
+| $\zeta^{-1}$, $\langle \zeta\rangle_{\natural}$ | the symbol and its determinant | *Split-Quaternion Norm and Invertibility* |
+| $\mathcal F E_D = -(2\pi\mathrm{i}\zeta)^{-1} = \zeta/(2\pi\mathrm{i}\langle \zeta\rangle_{\natural})$ | the transformed fundamental solution, singular on the null cone | *Split-Quaternion Integration* |
 | null cone | the singular frequency set and the zero divisor set | *Split-Quaternion Zero Divisors* |
 
 ## Further Reading

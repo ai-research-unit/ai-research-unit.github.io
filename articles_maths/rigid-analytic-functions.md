@@ -15,37 +15,37 @@ The prerequisites are *Analytic Functions and Power Series* and *Non-Archimedean
 
 **Definition.** The **Tate algebra** in $n$ variables over $K$ is
 $$
-T_n = K\langle \xi_1, \dots, \xi_n \rangle = \Bigl\{ f = \sum_{\nu \in \mathbb{N}^n} a_\nu \xi^\nu : a_\nu \in K,\ \lvert a_\nu \rvert \to 0 \Bigr\},
+T_n = K\langle \zeta_1, \dots, \zeta_n \rangle = \Bigl\{ f = \sum_{\nu \in \mathbb{N}^n} a_\nu \zeta^\nu : a_\nu \in K,\ \lvert a_\nu \rvert \to 0 \Bigr\},
 $$
-the ring of power series in $n$ variables whose coefficients tend to $0$; the **Gauss norm** of $f$ is $\lVert f \rVert = \max_\nu \lvert a_\nu \rvert$, the maximum existing because the coefficients tend to $0$. The **reduction** of $f$ is $f^{\mathrm{res}} = \sum_{\nu : \lvert a_\nu \rvert = \lVert f \rVert} \bar a_\nu \xi^\nu \in k[\xi_1,\dots,\xi_n]$, the sum over the coefficients of maximal absolute value, taken modulo the maximal ideal.
+the ring of power series in $n$ variables whose coefficients tend to $0$; the **Gauss norm** of $f$ is $\lVert f \rVert = \max_\nu \lvert a_\nu \rvert$, the maximum existing because the coefficients tend to $0$. The **reduction** of $f$ is $f^{\mathrm{res}} = \sum_{\nu : \lvert a_\nu \rvert = \lVert f \rVert} \bar a_\nu \zeta^\nu \in k[\zeta_1,\dots,\zeta_n]$, the sum over the coefficients of maximal absolute value, taken modulo the maximal ideal.
 
 **Theorem (Gauss).** $T_n$, with the Gauss norm, is a $K$-Banach algebra, and the Gauss norm is multiplicative:
 $$
 \lVert fg \rVert = \lVert f \rVert\,\lVert g \rVert \qquad (f, g \in T_n).
 $$
-Moreover $(fg)^{\mathrm{res}} = f^{\mathrm{res}} g^{\mathrm{res}}$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\xi] \to T_n^{\mathrm{res}}$ is an isomorphism onto the reduction.
+Moreover $(fg)^{\mathrm{res}} = f^{\mathrm{res}} g^{\mathrm{res}}$ with equality of degrees, so that $T_n$ has no zero divisors and $k[\zeta] \to T_n^{\mathrm{res}}$ is an isomorphism onto the reduction.
 
-**Proof.** Submultiplicativity of the Gauss norm is immediate from the ultrametric inequality on the coefficients of a product. For multiplicativity, scale so that $\lVert f \rVert = \lVert g \rVert = 1$; then $f, g$ lie in the subring $T_n^\circ$ of series with coefficients in the valuation ring $K^\circ$, and reduction modulo the maximal ideal gives a ring isomorphism $T_n^\circ/\mathrm{M}T_n^\circ \cong k[\xi_1,\dots,\xi_n]$, since a series with coefficients in $K^\circ$ determines and is determined by its reduction. The reductions $f^{\mathrm{res}}, g^{\mathrm{res}}$ are nonzero, and $k[\xi]$ is a polynomial ring over a field, hence a domain, so $(fg)^{\mathrm{res}} = f^{\mathrm{res}}g^{\mathrm{res}} \neq 0$ and therefore $\lVert fg \rVert = 1 = \lVert f \rVert \lVert g \rVert$. The general case follows by scaling. The statement about the reduction is the same computation.
+**Proof.** Submultiplicativity of the Gauss norm is immediate from the ultrametric inequality on the coefficients of a product. For multiplicativity, scale so that $\lVert f \rVert = \lVert g \rVert = 1$; then $f, g$ lie in the subring $T_n^\circ$ of series with coefficients in the valuation ring $K^\circ$, and reduction modulo the maximal ideal gives a ring isomorphism $T_n^\circ/\mathrm{M}T_n^\circ \cong k[\zeta_1,\dots,\zeta_n]$, since a series with coefficients in $K^\circ$ determines and is determined by its reduction. The reductions $f^{\mathrm{res}}, g^{\mathrm{res}}$ are nonzero, and $k[\zeta]$ is a polynomial ring over a field, hence a domain, so $(fg)^{\mathrm{res}} = f^{\mathrm{res}}g^{\mathrm{res}} \neq 0$ and therefore $\lVert fg \rVert = 1 = \lVert f \rVert \lVert g \rVert$. The general case follows by scaling. The statement about the reduction is the same computation.
 
 The multiplicativity of the Gauss norm is the technical heart of the theory: it is what makes the affinoid algebras behave like rings of functions with a sup norm, and it fails in the Archimedean case, where the analogous norm on the disc algebra is only submultiplicative.
 
 ### Weierstrass Division and Preparation
 
-**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\xi_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\xi_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $f^{\mathrm{res}} \in k[\xi]$ has degree $d$ as a polynomial in $\xi_n$ and the coefficient of $\xi_n^d$ in $f^{\mathrm{res}}$ is nonzero; the coefficient of $\xi_n^d$ in $f$ is then a unit and the other coefficients of $\xi_n$-degree $> d$ have norm less than $1$.
+**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\zeta_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\zeta_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $f^{\mathrm{res}} \in k[\zeta]$ has degree $d$ as a polynomial in $\zeta_n$ and the coefficient of $\zeta_n^d$ in $f^{\mathrm{res}}$ is nonzero; the coefficient of $\zeta_n^d$ in $f$ is then a unit and the other coefficients of $\zeta_n$-degree $> d$ have norm less than $1$.
 
-**Theorem (Weierstrass division).** Let $f \in T_n$ be distinguished of degree $d$ in $\xi_n$, normalised to $\lVert f \rVert = 1$. Then for every $g \in T_n$ there are unique $q \in T_n$ and $r \in T_{n-1}[\xi_n]$ with $\deg_{\xi_n} r < d$ and
+**Theorem (Weierstrass division).** Let $f \in T_n$ be distinguished of degree $d$ in $\zeta_n$, normalised to $\lVert f \rVert = 1$. Then for every $g \in T_n$ there are unique $q \in T_n$ and $r \in T_{n-1}[\zeta_n]$ with $\deg_{\zeta_n} r < d$ and
 $$
 \boxed{\;g = qf + r\;}.
 $$
-**Proof sketch.** The division is performed coefficient by coefficient in $\xi_n$, using the invertibility of the leading coefficient of $f$ as a power series in $\xi_1,\dots,\xi_{n-1}$ up to smaller terms: one writes $f = \xi_n^d c + (\text{lower terms})$ with $c$ a unit of $T_{n-1}$, solves successively for the coefficients of $q$ and $r$ in decreasing $\xi_n$-degree, and shows that the successive corrections tend to $0$ in the norm, so that the process converges in the Banach algebra. Uniqueness follows from the shape of $r$.
+**Proof sketch.** The division is performed coefficient by coefficient in $\zeta_n$, using the invertibility of the leading coefficient of $f$ as a power series in $\zeta_1,\dots,\zeta_{n-1}$ up to smaller terms: one writes $f = \zeta_n^d c + (\text{lower terms})$ with $c$ a unit of $T_{n-1}$, solves successively for the coefficients of $q$ and $r$ in decreasing $\zeta_n$-degree, and shows that the successive corrections tend to $0$ in the norm, so that the process converges in the Banach algebra. Uniqueness follows from the shape of $r$.
 
-**Theorem (Weierstrass preparation).** Let $f \in T_n$ be distinguished of degree $d$ in $\xi_n$. Then $f$ factors uniquely as
+**Theorem (Weierstrass preparation).** Let $f \in T_n$ be distinguished of degree $d$ in $\zeta_n$. Then $f$ factors uniquely as
 $$
-\boxed{\;f = u \cdot P, \qquad P = \xi_n^d + c_{d-1}\xi_n^{d-1} + \cdots + c_0\;},
+\boxed{\;f = u \cdot P, \qquad P = \zeta_n^d + c_{d-1}\zeta_n^{d-1} + \cdots + c_0\;},
 $$
 with $u$ a unit of $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$ is a **Weierstrass polynomial**.
 
-**Proof.** Apply the division theorem to $g = \xi_n^d$ and to $f$; the remainder is a polynomial in $\xi_n$ of degree $< d$ with coefficients in $T_{n-1}$, and the standard argument identifies $u^{-1}$ with the quotient and $P$ with $\xi_n^d - r$. The convergence of the division is the content of the previous theorem.
+**Proof.** Apply the division theorem to $g = \zeta_n^d$ and to $f$; the remainder is a polynomial in $\zeta_n$ of degree $< d$ with coefficients in $T_{n-1}$, and the standard argument identifies $u^{-1}$ with the quotient and $P$ with $\zeta_n^d - r$. The convergence of the division is the content of the previous theorem.
 
 **Corollary (the Tate algebra is Noetherian).** The ring $T_n$ is Noetherian, and if $A = T_n/\mathrm{A}$ is a quotient, then $A$ is Noetherian.
 
@@ -53,7 +53,7 @@ with $u$ a unit of $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$
 
 ### The Maximum Modulus Principle
 
-**Theorem (maximum modulus principle).** Let $\bar K$ be the completion of an algebraic closure of $K$, with valuation ring $\bar K^\circ$, and let $T_n(\bar K) = \bar K\langle \xi_1,\dots,\xi_n\rangle$ be the corresponding Tate algebra. For $f \in T_n(\bar K)$,
+**Theorem (maximum modulus principle).** Let $\bar K$ be the completion of an algebraic closure of $K$, with valuation ring $\bar K^\circ$, and let $T_n(\bar K) = \bar K\langle \zeta_1,\dots,\zeta_n\rangle$ be the corresponding Tate algebra. For $f \in T_n(\bar K)$,
 $$
 \boxed{\;\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} \lvert f(x) \rvert\;},
 $$
@@ -93,7 +93,7 @@ $$
 $$
 is exact, where $A_{ij\cdots}$ is the affinoid algebra of the intersection; that is, the presheaf $U \mapsto A_U$ is a sheaf for the Grothendieck topology generated by the admissible covers, and the covers are acyclic.
 
-**Proof sketch.** The exactness is proved first for a Laurent cover of the unit polydisc by the two domains $\lvert \xi_1 \rvert \leq 1$ and $\lvert \xi_1 \rvert \geq 1$, where it reduces to the splitting of a Laurent series into its nonnegative and negative parts, and is then propagated to rational covers and to products by the Weierstrass preparation. The general case is by the standard reduction to the two-element cover.
+**Proof sketch.** The exactness is proved first for a Laurent cover of the unit polydisc by the two domains $\lvert \zeta_1 \rvert \leq 1$ and $\lvert \zeta_1 \rvert \geq 1$, where it reduces to the splitting of a Laurent series into its nonnegative and negative parts, and is then propagated to rational covers and to products by the Weierstrass preparation. The general case is by the standard reduction to the two-element cover.
 
 The theorem is what licenses the construction of global rigid analytic spaces by gluing affinoids, which is carried out in *Rigid Analytic Geometry*; from the point of view of this article it says that the ring of rigid analytic functions on an affinoid space is $A$ itself and that the functions are determined by their restrictions to an admissible cover.
 
@@ -131,7 +131,7 @@ The Liouville theorem is the sharpest expression of the discrepancy with the com
 
 ## Examples
 
-**Example (the closed unit disc and its reduction).** The closed unit disc over $K$ is the affinoid space $X = \mathrm{Spm}(T_1)$ with $T_1 = K\langle \xi\rangle$. Its reduction is $T_1^{\mathrm{res}} = k[\xi]$, and the reduction map
+**Example (the closed unit disc and its reduction).** The closed unit disc over $K$ is the affinoid space $X = \mathrm{Spm}(T_1)$ with $T_1 = K\langle \zeta\rangle$. Its reduction is $T_1^{\mathrm{res}} = k[\zeta]$, and the reduction map
 $$
 X \longrightarrow \mathbb{A}^1_k, \qquad x \longmapsto x^{\mathrm{res}} = \text{the reduction of the coordinate of } x,
 $$
@@ -149,7 +149,7 @@ the Robba ring of *p-adic Differential Equations*: a function on the punctured d
 
 ## Summary
 
-Rigid analytic functions are the local quotients of convergent power series on the admissible opens of a rigid analytic space, and the theory of this article is the function theory that the spaces of Part II support. The Tate algebra $T_n = K\langle\xi_1,\dots,\xi_n\rangle$, the power series with coefficients tending to $0$, is a Banach algebra whose Gauss norm is multiplicative, hence is the sup norm on the unit polydisc; the multiplicativity is the Gauss lemma and is the source of the rigidity of the whole theory. The Weierstrass division and preparation theorems hold in $T_n$ with the same statements as over a complex disc, and they give the Noetherian property of the Tate algebra. An affinoid algebra is a quotient of a Tate algebra, its spectrum is a rigid analytic space, and its elements are the rigid analytic functions on it.
+Rigid analytic functions are the local quotients of convergent power series on the admissible opens of a rigid analytic space, and the theory of this article is the function theory that the spaces of Part II support. The Tate algebra $T_n = K\langle\zeta_1,\dots,\zeta_n\rangle$, the power series with coefficients tending to $0$, is a Banach algebra whose Gauss norm is multiplicative, hence is the sup norm on the unit polydisc; the multiplicativity is the Gauss lemma and is the source of the rigidity of the whole theory. The Weierstrass division and preparation theorems hold in $T_n$ with the same statements as over a complex disc, and they give the Noetherian property of the Tate algebra. An affinoid algebra is a quotient of a Tate algebra, its spectrum is a rigid analytic space, and its elements are the rigid analytic functions on it.
 
 The maximum modulus principle, $\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} \lvert f(x) \rvert$ with the supremum attained, holds for the Tate algebra and, for reduced affinoid algebras over an algebraically closed field, in the form spectral norm $=$ sup norm. Tate's acyclicity theorem makes the assignment $U \mapsto A_U$ a sheaf for the Grothendieck topology of admissible covers, so that functions are determined locally and glue along admissible covers. The rigidity of the theory follows: on a connected rigid analytic space a function vanishing on a nonempty admissible open vanishes identically, there are no bump functions and no partitions of unity, a bounded entire function on the affine line is constant, and the roots of a polynomial family cannot cross without coinciding on the whole connected domain, by Krasner's lemma. The examples of the closed disc and its reduction, the annuli, the unit circle and the punctured disc with its Robba ring show how the general theory specialises, and the last of these is the link to the differential theory of *p-adic Differential Equations*.
 
@@ -160,7 +160,7 @@ The maximum modulus principle, $\lVert f \rVert = \sup_{x \in (\bar K^\circ)^n} 
 | $K$ | Complete non-Archimedean field |
 | $\bar K$, $\bar K^\circ$ | Completed algebraic closure, its valuation ring |
 | $k = K^{\mathrm{res}}$ | Residue field of $K$ |
-| $T_n = K\langle \xi_1,\dots,\xi_n\rangle$ | Tate algebra in $n$ variables |
+| $T_n = K\langle \zeta_1,\dots,\zeta_n\rangle$ | Tate algebra in $n$ variables |
 | $\lVert f \rVert$ | Gauss norm, maximum of the coefficient absolute values |
 | $f^{\mathrm{res}}$ | Reduction of $f$, a polynomial over $k$ |
 | $K\langle r x^{-1}, x\rangle$ | Affinoid algebra of the annulus $r \leq \lvert x \rvert \leq 1$ |

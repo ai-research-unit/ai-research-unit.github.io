@@ -61,9 +61,9 @@ natural in the sequence.
 
 ### Ext$^1$ and Extensions
 
-**Definition.** An **extension** of $M$ by $N$ is a short exact sequence $\xi:0\to N\to E\to M\to0$. Two extensions are **equivalent** if there is an isomorphism $E\to E'$ making the diagram commute, that is, restricting to the identity on $N$ and inducing the identity on $M$. The set of equivalence classes is written $\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$.
+**Definition.** An **extension** of $M$ by $N$ is a short exact sequence $\zeta:0\to N\to E\to M\to0$. Two extensions are **equivalent** if there is an isomorphism $E\to E'$ making the diagram commute, that is, restricting to the identity on $N$ and inducing the identity on $M$. The set of equivalence classes is written $\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$.
 
-**Definition (Baer sum).** Given extensions $\xi:0\to N\to E\to M\to0$ and $\eta:0\to N\to E'\to M\to0$, form the pullback of $E\to M$ and $E'\to M$, the extension $0\to N\oplus N\to E\times_ME'\to M\to0$, and then push forward along the subtraction map $N\oplus N\to N$, $(n,n')\mapsto n-n'$. The result is the **Baer sum** $\xi+\eta$, and it makes $\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$ an abelian group with the split extension $0\to N\to N\oplus M\to M\to0$ as zero.
+**Definition (Baer sum).** Given extensions $\zeta:0\to N\to E\to M\to0$ and $\eta:0\to N\to E'\to M\to0$, form the pullback of $E\to M$ and $E'\to M$, the extension $0\to N\oplus N\to E\times_ME'\to M\to0$, and then push forward along the subtraction map $N\oplus N\to N$, $(n,n')\mapsto n-n'$. The result is the **Baer sum** $\zeta+\eta$, and it makes $\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$ an abelian group with the split extension $0\to N\to N\oplus M\to M\to0$ as zero.
 
 **Theorem.** There is a natural isomorphism of abelian groups $\operatorname{Ext}_R^1(M,N)\cong\operatorname{Ext}^1_R(M,N)_{\mathrm{ext}}$. The class $0$ corresponds to the split extension.
 

@@ -40,15 +40,15 @@ where the pairing of $T^*M\otimes\mathcal{S}$ is the tensor product of $g^{-1}$ 
 
 ### The Symbol of the Codifferential
 
-**Proposition.** The principal symbol of the codifferential at a covector $\xi$ is
+**Proposition.** The principal symbol of the codifferential at a covector $\zeta$ is
 
 $$
-\sigma_{\delta}(x,\xi) = -\operatorname{contr}_{\xi} : T_x^*M\otimes\mathcal{S}_x\longrightarrow\mathcal{S}_x ,
+\sigma_{\delta}(x,\zeta) = -\operatorname{contr}_{\zeta} : T_x^*M\otimes\mathcal{S}_x\longrightarrow\mathcal{S}_x ,
 $$
 
-the metric contraction of the form factor with $\xi$; it is a surjection for $\xi\ne0$, it is not injective, and its kernel is the subspace of $\xi$-trace-free elements of $T^*M\otimes\mathcal{S}$.
+the metric contraction of the form factor with $\zeta$; it is a surjection for $\zeta\ne0$, it is not injective, and its kernel is the subspace of $\zeta$-trace-free elements of $T^*M\otimes\mathcal{S}$.
 
-**Proof.** The symbol of the covariant derivative in the direction $X$ is $\xi(X)$ acting on the value, so the symbol of $\delta$ is $-\sum_i\xi(e_i)$ acting by the contraction on the $i$-th component of the form, which is the contraction with $\xi$; its image is $\mathcal{S}$ because $\xi$ has a nonzero component, and its kernel consists of the elements $\alpha$ with $\sum_i\xi(e_i)\alpha(e_i)=0$, the $\xi$-trace-free ones. The contraction map has rank $\dim\mathcal{S}$ and its kernel has dimension $(n-1)\dim\mathcal{S}$.
+**Proof.** The symbol of the covariant derivative in the direction $X$ is $\zeta(X)$ acting on the value, so the symbol of $\delta$ is $-\sum_i\zeta(e_i)$ acting by the contraction on the $i$-th component of the form, which is the contraction with $\zeta$; its image is $\mathcal{S}$ because $\zeta$ has a nonzero component, and its kernel consists of the elements $\alpha$ with $\sum_i\zeta(e_i)\alpha(e_i)=0$, the $\zeta$-trace-free ones. The contraction map has rank $\dim\mathcal{S}$ and its kernel has dimension $(n-1)\dim\mathcal{S}$.
 
 **Remark (the two contractions).** The codifferential is the contraction of the connection in the form variable, while the Cauchy–Riemann operator is the Clifford contraction of the connection. On the spinor bundle both contractions appear, and they are different operators: one is the adjoint of the other's connection, and the relation between them is the adjoint of the Clifford contraction, treated next.
 
@@ -56,7 +56,7 @@ the metric contraction of the form factor with $\xi$; it is a surjection for $\x
 
 ### The Relation Through the Clifford Contraction
 
-**Given.** The Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$, and the orthogonality of the two first-order operators built from the connection: $D=c\circ\nabla^{\mathcal{S}}$ and $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$, as in *The Clifford Multiplication Operator* and *The Twistor Operator*.
+**Given.** The Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\zeta\otimes\sigma)=\zeta^{\sharp}\cdot\sigma$, with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$, and the orthogonality of the two first-order operators built from the connection: $D=c\circ\nabla^{\mathcal{S}}$ and $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$, as in *The Clifford Multiplication Operator* and *The Twistor Operator*.
 
 **Proposition (the flat model).** For the flat connection on $\mathbb{R}^n$, with $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ and $\delta\alpha=-\sum_i(\partial/\partial e_i\,\alpha)(e_i)$, one has
 
@@ -113,7 +113,7 @@ as *The Spinor Operator* records; the codifferential enters through the term $\n
 
 ### The Flat Torus
 
-On the flat torus $\mathbb{T}^n$ with the trivial spin structure, the Fourier modes diagonalise the connection and the codifferential acts on the mode with frequency $\xi$ as the contraction with $\xi$: on the component $\theta_i\otimes s$ it is multiplication by $-\xi_i$, and $\delta\nabla^{\mathcal{S}}$ is multiplication by $|\xi|^2$ on the mode. The kernel of $\nabla^{*}\nabla$ is the constant spinors, and the codifferential of a spinor-valued one-form is its mode-wise contraction with the frequency.
+On the flat torus $\mathbb{T}^n$ with the trivial spin structure, the Fourier modes diagonalise the connection and the codifferential acts on the mode with frequency $\zeta$ as the contraction with $\zeta$: on the component $\theta_i\otimes s$ it is multiplication by $-\zeta_i$, and $\delta\nabla^{\mathcal{S}}$ is multiplication by $|\zeta|^2$ on the mode. The kernel of $\nabla^{*}\nabla$ is the constant spinors, and the codifferential of a spinor-valued one-form is its mode-wise contraction with the frequency.
 
 ### The Circle
 
@@ -125,7 +125,7 @@ On the exterior bundle of a Riemannian manifold the same construction with the L
 
 ## Summary
 
-The **codifferential** of the spinor bundle is the formal adjoint of the spin connection, $\delta=(\nabla^{\mathcal{S}})^*=-\operatorname{tr}_g\nabla^{\mathcal{S}}$, a first-order operator from spinor-valued one-forms to spinors, satisfying $\int h(\nabla^{\mathcal{S}}s,\alpha)=\int h(s,\delta\alpha)$ on a closed manifold; its symbol is the contraction with $\xi$, so it is a surjection with kernel the $\xi$-trace-free spinor-valued forms. It is not square zero in general, unlike its exterior analogue $d^*$, and the name records only the analogy. Composed with itself it gives the **connection Laplacian** $\delta\nabla^{\mathcal{S}}=\nabla^{*}\nabla$, a non-negative operator whose kernel consists of the parallel spinors, and it is the second-order operator appearing in the Lichnerowicz formula $D^2=\nabla^{*}\nabla+\frac14\operatorname{scal}$. The adjoint of the Cauchy–Riemann operator is $\delta\circ c^*$, and for the metric-compatible spin connection it equals $D$ itself: the **self-adjointness** $D^*=D$. The general formal adjoint is *Formal Adjoints and Green's Formula*, the exterior case *The Hodge Laplacian and Harmonic Forms*, and the operators built from the connection are *The Spinor Operator* and *The Twistor Operator*.
+The **codifferential** of the spinor bundle is the formal adjoint of the spin connection, $\delta=(\nabla^{\mathcal{S}})^*=-\operatorname{tr}_g\nabla^{\mathcal{S}}$, a first-order operator from spinor-valued one-forms to spinors, satisfying $\int h(\nabla^{\mathcal{S}}s,\alpha)=\int h(s,\delta\alpha)$ on a closed manifold; its symbol is the contraction with $\zeta$, so it is a surjection with kernel the $\zeta$-trace-free spinor-valued forms. It is not square zero in general, unlike its exterior analogue $d^*$, and the name records only the analogy. Composed with itself it gives the **connection Laplacian** $\delta\nabla^{\mathcal{S}}=\nabla^{*}\nabla$, a non-negative operator whose kernel consists of the parallel spinors, and it is the second-order operator appearing in the Lichnerowicz formula $D^2=\nabla^{*}\nabla+\frac14\operatorname{scal}$. The adjoint of the Cauchy–Riemann operator is $\delta\circ c^*$, and for the metric-compatible spin connection it equals $D$ itself: the **self-adjointness** $D^*=D$. The general formal adjoint is *Formal Adjoints and Green's Formula*, the exterior case *The Hodge Laplacian and Harmonic Forms*, and the operators built from the connection are *The Spinor Operator* and *The Twistor Operator*.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ The **codifferential** of the spinor bundle is the formal adjoint of the spin co
 |---|---|
 | $\nabla^{\mathcal{S}}$ | Spin connection, $\Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$ |
 | $\delta=(\nabla^{\mathcal{S}})^*=-\operatorname{tr}_g\nabla^{\mathcal{S}}$ | Codifferential of the spinor bundle |
-| $\sigma_{\delta}(\xi)=-\operatorname{contr}_{\xi}$ | Symbol; contraction with $\xi$, a surjection |
+| $\sigma_{\delta}(\zeta)=-\operatorname{contr}_{\zeta}$ | Symbol; contraction with $\zeta$, a surjection |
 | $c$, $c^*$ | Clifford contraction and its adjoint |
 | $D=c\circ\nabla^{\mathcal{S}}$, $D^*=D$ | Cauchy–Riemann operator and its self-adjointness |
 | $\nabla^{*}\nabla=\delta\nabla^{\mathcal{S}}$ | Connection Laplacian, non-negative |

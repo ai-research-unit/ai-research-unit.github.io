@@ -15,21 +15,21 @@ No physics is invoked.
 
 ### Dyadic Partitions of Unity
 
-**Definition.** A sequence $(\varphi_j)_{j\ge0}$ in the Schwartz class $\mathcal S(\mathbb{R}^n)$ is a **dyadic partition of unity** if there is $\varphi \in C_c^\infty(\mathbb{R}^n)$ with $\varphi(\xi)=1$ for $|\xi|\le1$ and $\operatorname{supp}\varphi\subseteq\{|\xi|\le2\}$, such that
+**Definition.** A sequence $(\varphi_j)_{j\ge0}$ in the Schwartz class $\mathcal S(\mathbb{R}^n)$ is a **dyadic partition of unity** if there is $\varphi \in C_c^\infty(\mathbb{R}^n)$ with $\varphi(\zeta)=1$ for $|\zeta|\le1$ and $\operatorname{supp}\varphi\subseteq\{|\zeta|\le2\}$, such that
 
 $$
-\varphi_0=\varphi, \qquad \varphi_j(\xi)=\varphi(2^{-j}\xi)-\varphi(2^{-j+1}\xi) \quad (j \ge1).
+\varphi_0=\varphi, \qquad \varphi_j(\zeta)=\varphi(2^{-j}\zeta)-\varphi(2^{-j+1}\zeta) \quad (j \ge1).
 $$
 
-Then $\varphi_j \in C_c^\infty$, $\operatorname{supp}\varphi_j \subseteq\{2^{j-1}\le|\xi|\le2^{j+1}\}$ for $j \ge1$, and
+Then $\varphi_j \in C_c^\infty$, $\operatorname{supp}\varphi_j \subseteq\{2^{j-1}\le|\zeta|\le2^{j+1}\}$ for $j \ge1$, and
 
 $$
-\sum_{j=0}^{\infty}\varphi_j(\xi)=1 \quad (\xi \neq0),
+\sum_{j=0}^{\infty}\varphi_j(\zeta)=1 \quad (\zeta \neq0),
 $$
 
 the sum being locally finite; the $\varphi_j$ are the **Littlewood–Paley blocks** and, for $f \in\mathcal S'(\mathbb{R}^n)$, the distributions $\varphi_j(D)f$ are defined by the Fourier multiplier $\varphi_j$, with $\widehat{\varphi_j(D)f}=\varphi_j\mathcal F f$.
 
-**Theorem (Bernstein's inequalities).** Let $k \in \mathbb{N}_0$, $1\le p\le r\le\infty$, and let $f \in L^{n}(\mathbb{R}^n)$ have $\operatorname{supp}\mathcal F f \subseteq\{|\xi|\le R\}$. Then
+**Theorem (Bernstein's inequalities).** Let $k \in \mathbb{N}_0$, $1\le p\le r\le\infty$, and let $f \in L^{n}(\mathbb{R}^n)$ have $\operatorname{supp}\mathcal F f \subseteq\{|\zeta|\le R\}$. Then
 
 $$
 \boxed{\;\|\partial^\alpha f\|_{L^r}\le C\,R^{|\alpha|+n(\frac1p-\frac1r)}\|f\|_{L^{n}} \quad (|\alpha|=k)\;},
@@ -71,11 +71,11 @@ so the Besov scale brackets the Triebel–Lizorkin scale and the two coincide at
 
 (iii) For fixed $s,n$ the family is monotone in $m$: $B^{s}_{n,m_1}\hookrightarrow B^{s}_{n,m_2}$ and $F^{s}_{n,m_1}\hookrightarrow F^{s}_{n,m_2}$ whenever $q_1\le q_2$.
 
-(iv) The spaces are invariant under the lifted Laplacian: $I_\sigma=(1-\Delta)^{-\sigma/2}$, defined by the multiplier $(1+|\xi|^2)^{-\sigma/2}$, is an isomorphism of $B^{s}_{n,m}$ onto $B^{s-\sigma}_{n,m}$ and of $F^{s}_{n,m}$ onto $F^{s-\sigma}_{n,m}$ for every $\sigma \in\mathbb{R}$.
+(iv) The spaces are invariant under the lifted Laplacian: $I_\sigma=(1-\Delta)^{-\sigma/2}$, defined by the multiplier $(1+|\zeta|^2)^{-\sigma/2}$, is an isomorphism of $B^{s}_{n,m}$ onto $B^{s-\sigma}_{n,m}$ and of $F^{s}_{n,m}$ onto $F^{s-\sigma}_{n,m}$ for every $\sigma \in\mathbb{R}$.
 
 (v) The Schwartz class $\mathcal S$ is dense in $B^{s}_{n,m}$ and in $F^{s}_{n,m}$ when $p,q<\infty$, the dual of $B^{s}_{n,m}$ is $B^{-s}_{p',q'}$ for $1\le p,q<\infty$, and the dual of $F^{s}_{n,m}$ is $F^{-s}_{p',q'}$ for $1<p<\infty$ and $1\le q<\infty$, where $1/p+1/p'=1$ and $1/q+1/q'=1$.
 
-*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1\hookrightarrow\ell^{m}_2$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\xi|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
+*Proof (sketch).* Completeness is the completeness of the mixed sequence and function spaces, the map $f\mapsto(\varphi_j(D)f)$ being an isometry into a closed subspace for the Besov scale; the continuous inclusions in (ii) and (iii) are consequences of the embeddings of the sequence spaces $\ell^{m}_1\hookrightarrow\ell^{m}_2$, Minkowski's integral inequality and the support condition; the lifting (iv) is the comparison of the multipliers $(1+|\zeta|^2)^{-\sigma/2}$ with $2^{-j\sigma}$ on the support of $\varphi_j$; and (v) is the standard duality, obtained from the duality of the underlying sequence spaces and the density of $\mathcal S$.
 
 ## Comparison with the Classical Spaces
 
@@ -84,7 +84,7 @@ so the Besov scale brackets the Triebel–Lizorkin scale and the two coincide at
 **Definition.** For $s \in\mathbb{R}$ and $1<p<\infty$ the **Bessel potential space** $H^{s}_{n}$ is the space of $f \in\mathcal S'$ with
 
 $$
-\|f\|_{H^{s}_{n}}=\bigl\|(1+|\xi|^2)^{s/2}\mathcal F f\,\check{\ }\bigr\|_{L^{n}}<\infty ,
+\|f\|_{H^{s}_{n}}=\bigl\|(1+|\zeta|^2)^{s/2}\mathcal F f\,\check{\ }\bigr\|_{L^{n}}<\infty ,
 $$
 
 and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,n}$ is the space of $f \in L^{n}$ whose distributional derivatives of order at most $k$ lie in $L^{n}$, with the norm $\bigl(\sum_{|\alpha|\le k}\|\partial^\alpha f\|_{L^{n}}^n\bigr)^{1/p}$ for $p<\infty$ and $\max_{|\alpha|\le k}\|\partial^\alpha f\|_{L^\infty}$ for $p=\infty$. For $s>0$ the **Hölder–Zygmund space** $\Lambda^s=C^s$ is the space of $f \in C_b(\mathbb{R}^n)$ with $\|\Delta_h^kf\|_\infty\le C|h|^s$, where $k$ is the least integer exceeding $s$ and $\Delta_hf=f(\cdot+h)-f(\cdot)$.

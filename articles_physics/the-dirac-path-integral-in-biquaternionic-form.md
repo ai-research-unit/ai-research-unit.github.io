@@ -395,7 +395,7 @@ $$
 
 The right factor $\vec e_y$ of the three spatial gammas is the frame's common direction and the left factor is the direction of the coordinate, so the four vectors $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ climb a staircase through the two-sided index pairs — a row in neither factor, and not a diagonal. That staircase is the choice of frame, not a feature of the gammas: the repetition of $\vec e_y$ is in the frame. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le 1$, and a general element is a sum of at most four, with $\ell(M) = \operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi = i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2 = e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi = i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2 = e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

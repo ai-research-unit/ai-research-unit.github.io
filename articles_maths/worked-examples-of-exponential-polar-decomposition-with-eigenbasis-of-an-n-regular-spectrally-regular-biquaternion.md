@@ -17,11 +17,11 @@ $$
 and the eigenprojectors are
 
 $$
-\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec\Xi\bigr),
+\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
 \qquad
-\vec\Xi=-i\frac{\vec Q}{B},
+\vec{Ζ}=-i\frac{\vec Q}{B},
 \qquad
-\vec\Xi^2=-e_t.
+\vec{Ζ}^2=-e_t.
 $$
 
 The two projectors are idempotent and orthogonal, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$, and $\tilde\Pi_++\tilde\Pi_-=e_t$. The eigenvalues of the unit factor $\tilde U=\tilde Q/\Rho$ are
@@ -34,7 +34,7 @@ In the normal case $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$; in the non-normal c
 
 ## The Eight Cases
 
-| Case | $\tilde Q$ | $\lambda_+$ | $\lambda_-$ | $\mu_+$ | $\mu_-$ | $\vec\Xi$ |
+| Case | $\tilde Q$ | $\lambda_+$ | $\lambda_-$ | $\mu_+$ | $\mu_-$ | $\vec{Ζ}$ |
 |---|---|---|---|---|---|---|
 | 1 | $\vec e_x$ | $i$ | $-i$ | $i$ | $-i$ | $-i\vec e_x$ |
 | 2 | $\sqrt2 e_t+i\vec e_x$ | $\sqrt2-1$ | $\sqrt2+1$ | $\sqrt2-1$ | $\sqrt2+1$ | $-i\vec e_x$ |
@@ -52,7 +52,7 @@ The cases 1 to 4 and 7 are normal; their axes are the eigenlines, and $\mu_\pm=e
 Case 5 has
 
 $$
-\vec\Xi
+\vec{Ζ}
 =(0.120345-0.977578i)\vec e_x
 +(-0.428617-0.548962i)\vec e_y
 +(0.388175-0.303078i)\vec e_z.
@@ -61,16 +61,16 @@ $$
 Case 6 has
 
 $$
-\vec\Xi
+\vec{Ζ}
 =(0.253867-0.885183i)\vec e_x
 +(-0.315658-0.569525i)\vec e_y
 +(-0.157829-0.284763i)\vec e_z.
 $$
 
-In both cases $\vec\Xi^2=-e_t$, and the reconstruction
+In both cases $\vec{Ζ}^2=-e_t$, and the reconstruction
 
 $$
-\tilde Q=\lambda_+\frac{e_t+\vec\Xi}{2}+\lambda_-\frac{e_t-\vec\Xi}{2}
+\tilde Q=\lambda_+\frac{e_t+\vec{Ζ}}{2}+\lambda_-\frac{e_t-\vec{Ζ}}{2}
 $$
 
 returns the element. The vectors are complex and not parallel to the polar axes.
@@ -91,9 +91,9 @@ $$
 \lambda_-=1.624811-1.300243i,
 $$
 
-with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
+with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
 
-The polar word has $r=1$, $\alpha=0$, $\psi=1.762747174$, $\theta=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec\Xi$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
+The polar word has $r=1$, $\alpha=0$, $\psi=1.762747174$, $\theta=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
 
 ## Case 3 in Full
 
@@ -123,7 +123,7 @@ which reproduces the values above. The eigenbasis and the polar frame agree, and
 ## What the Examples Show
 
 - The eigenvalues are distinct and nonzero on the whole sector; the eigenbasis exists in every case.
-- The eigenprojectors are explicit through $\vec\Xi=-i\vec Q/B$; the vector is complex and has square $-e_t$.
+- The eigenprojectors are explicit through $\vec{Ζ}=-i\vec Q/B$; the vector is complex and has square $-e_t$.
 - In the normal cases the eigenlines are the polar axes and the unit eigenvalues factor into a modulus and a phase.
 - In the non-normal cases the eigenlines are not the axes, and the unit eigenvalues do not determine the rapidity and the rotor angle.
 - The reconstruction $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is exact in every case, including the non-normal ones.
@@ -135,8 +135,8 @@ which reproduces the values above. The eigenbasis and the polar frame agree, and
 | Item | Value |
 |---|---|
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
-| eigenprojectors | $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ |
-| eigenvector | $\vec\Xi=-i\vec Q/B$, $\vec\Xi^2=-e_t$ |
+| eigenprojectors | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
+| eigenvector | $\vec{Ζ}=-i\vec Q/B$, $\vec{Ζ}^2=-e_t$ |
 | unit eigenvalues | $\mu_\pm=\lambda_\pm/\Rho$ |
 | normal factorisation | $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$ |
 | non-normal gap | the moduli of $\mu_\pm$ need not be $e^{\mp\psi/2}$ |
@@ -163,8 +163,8 @@ which reproduces the values above. The eigenbasis and the polar frame agree, and
 | $N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the reduced product |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the vector form |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
-| $\vec\Xi=-i\vec Q/B$ | the eigenvector |
-| $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ | the eigenprojectors |
+| $\vec{Ζ}=-i\vec Q/B$ | the eigenvector |
+| $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the eigenprojectors |
 | $\Rho$ | the modulus |
 | $\mu_\pm=\lambda_\pm/\Rho$ | the eigenvalues of the unit factor |
 | $\psi,\theta$ | the rapidity and the rotor angle |

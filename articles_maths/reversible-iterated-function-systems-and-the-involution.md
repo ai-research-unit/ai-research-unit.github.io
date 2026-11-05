@@ -34,7 +34,7 @@ $$
 $$
 so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.
 
-*Proof.* $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tau R^{\mathrm{flip}}$.
+*Proof.* $R\pi(x\zeta)=R S_x\pi(\zeta)=S_{\rho(x)}R\pi(\zeta)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\zeta)=\pi(\rho(x)R^{\mathrm{flip}}\zeta)=\pi(R^{\mathrm{flip}}(x\zeta))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tau R^{\mathrm{flip}}$.
 
 ## The Limit Dynamical System and Its Reversal
 
@@ -81,7 +81,7 @@ $$
 
 **Theorem (the natural extension and the reversal).** The natural extension of the limit dynamical system is the two-sided shift $\Phi(x_n)_{n\in\mathbb{Z}}=(x_{n+1})_{n\in\mathbb{Z}}$ on the set of two-sided codes, and the reversal $\hat R(x_n)=(R x_{-n})$ is a measure-preserving involution commuting with $\Phi$, whose quotient is the reversible system; the one-sided factor of $\Phi$ is $\varphi$ and the one-sided factor of $\hat R$ is $R$.
 
-*Proof sketch.* The natural extension of a non-invertible map is the shift on the space of orbits; the reversibility of the coding means that the orbit of $R\xi$ is the reversal of the orbit of $\xi$, so the involution $\hat R$ is well defined and commutes with the shift. The quotient and the entropy are those of the reversible systems of *Ergodic Theory*; the reversible dynamical systems of Part III are the same structure with the continuous time replaced by the iteration. The reversible systems of the self-similar groups of the category are the segment, the Cantor set and the gasket, and their reversible invariants are computed in *The Self-Similar Measure and the Involution*.
+*Proof sketch.* The natural extension of a non-invertible map is the shift on the space of orbits; the reversibility of the coding means that the orbit of $R\zeta$ is the reversal of the orbit of $\zeta$, so the involution $\hat R$ is well defined and commutes with the shift. The quotient and the entropy are those of the reversible systems of *Ergodic Theory*; the reversible dynamical systems of Part III are the same structure with the continuous time replaced by the iteration. The reversible systems of the self-similar groups of the category are the segment, the Cantor set and the gasket, and their reversible invariants are computed in *The Self-Similar Measure and the Involution*.
 
 **Remark (what reversibility buys).** The involution makes the analysis symmetric: the transfer operator is conjugated to itself by $P_\rho$, its eigenfunctions come in $R$-symmetric and $R$-antisymmetric families, and the spectral problem splits into the two. The decomposition is the discrete analogue of the spectral decomposition of a reversible dynamical system in *Time Reversal and the Transfer Operator*, and it is the tool of *The Adjoint of the Transfer Operator of the Limit Dynamical System*.
 

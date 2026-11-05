@@ -160,7 +160,7 @@ Every zero divisor factorises, and the source's spinor treatment of the retarded
 **The invariant retarded distance.** The source's scalar is
 
 $$
-\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,(iR\,e_t+\vec R)^{\natural}\right),
+\zeta = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,(iR\,e_t+\vec R)^{\natural}\right),
 \qquad
 \frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
 $$
@@ -177,13 +177,13 @@ $$
 so that
 
 $$
-\xi = \gamma D = \gamma R\left(1 - \vec u_R\cdot\vec\beta\right).
+\zeta = \gamma D = \gamma R\left(1 - \vec u_R\cdot\vec\beta\right).
 $$
 
 The source's retarded distance is therefore the article's denominator $D$ multiplied by $\gamma$. Because $\tilde{V} = \gamma\,\tilde{V}/\gamma$, the Liénard–Wiechert potential of the previous section collapses to
 
 $$
-\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V},
+\tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma = \frac{\mu ϙ}{4\pi\zeta}\,\tilde{V},
 $$
 
 the four-velocity over the invariant retarded distance, with the factor of $\gamma$ moved rather than removed.
@@ -201,7 +201,7 @@ $$
 with rapidity $y$ fixed by $\cosh y = \gamma$ and $\vec u_\beta = \vec\beta/|\vec\beta|$. The spinor is bireal — fixed by Hermitian conjugation — and that is exactly what makes $B^2 = BB^+$: the square root of the four-velocity and the spinor decomposition of the four-velocity are the same operation. In these variables the potential reads
 
 $$
-\tilde{A} = \frac{i\mu ϙ c}{4\pi\xi}\,B^2 ,
+\tilde{A} = \frac{i\mu ϙ c}{4\pi\zeta}\,B^2 ,
 $$
 
 one spinor square and two invariants.
@@ -217,10 +217,10 @@ $$
 whose unit vector $\vec u$ is the line of sight in the charge's rest frame, taken from the observation point towards the charge,
 
 $$
-iR\,e_t+\vec R = 2i\xi\,B\,\sigma\,B^+ .
+iR\,e_t+\vec R = 2i\zeta\,B\,\sigma\,B^+ .
 $$
 
-This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $B$, and its magnitude is the invariant retarded distance $\xi$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\vec u$ stated above, so that the coefficient of the idempotent is $+2i\xi$.
+This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $B$, and its magnitude is the invariant retarded distance $\zeta$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\vec u$ stated above, so that the coefficient of the idempotent is $+2i\zeta$.
 
 **The four-acceleration.** In the same variables the four-acceleration of the charge is the boost conjugate of its value in the instantaneous rest frame,
 
@@ -491,9 +491,9 @@ $$
 
 the general self-interaction force is obtained in closed form with limits that reproduce the Abraham–von Laue expression, and the Lorentz–Dirac equation of motion follows from it. The paper also identifies why the Schott term was missing or wrong in the customary derivations: the self-energy of a point charge is not the Coulomb self-energy but an integral over a $\delta^2$ function, and that integral contributes a finite part to the Schott term; the same cancellation removes the 4/3 discrepancy between the Coulomb and the electromagnetic self-masses. Nothing in Maxwell's theory is changed — the modification is the class of functions and the algebra used to compute with them — and a by-product of the method is that the worldline condition $dZ/dt'_r\circ\,dZ/dt'_r = 1$ fixes the relevant Colombeau moment to $C^{[1]} = 1$, which is exactly the value that makes the derived reaction term the standard one. The corpus records this as an external result: a derivation from Maxwell's theory by a rigorous analytic method, in which the biquaternion algebra plays the same computational role it plays in the retarded-potential sections above.
 
-**An independent quaternion route to the same equation.** The rigorous derivation above is not the first route to the Lorentz–Dirac equation through the algebra. In 1941 Paul Weiss, a student of Max Born, took the quaternion spinor decomposition of the four-velocity, $\tilde{V}=BB^{+}$ — the square root of the four-velocity, which he explicitly did *not* identify with Dirac's bispinors — obtained explicit formulas for the four-acceleration and for the retarded null separation $X-Z=2i\xi B\sigma B^{+}$ (whose translation into the conventions of this article is worked out in the section on the spinor square root above), and asked for the worldlines on which the energy–momentum flow through a hypersurface enclosing the charge is stationary. The resulting equation of motion is the Lorentz–Dirac equation. That is plausibly the first significant use of spinors in classical physics, and it is independent of the Colombeau derivation above. The source's own historical note adds that the equation had been derived before Dirac's 1938 paper by Myron Mathisson (1931), by a method the commentators regard as more satisfactory. The corpus records all three as history; the framework's own content is the transcription of the reaction force given above.
+**An independent quaternion route to the same equation.** The rigorous derivation above is not the first route to the Lorentz–Dirac equation through the algebra. In 1941 Paul Weiss, a student of Max Born, took the quaternion spinor decomposition of the four-velocity, $\tilde{V}=BB^{+}$ — the square root of the four-velocity, which he explicitly did *not* identify with Dirac's bispinors — obtained explicit formulas for the four-acceleration and for the retarded null separation $X-Z=2i\zeta B\sigma B^{+}$ (whose translation into the conventions of this article is worked out in the section on the spinor square root above), and asked for the worldlines on which the energy–momentum flow through a hypersurface enclosing the charge is stationary. The resulting equation of motion is the Lorentz–Dirac equation. That is plausibly the first significant use of spinors in classical physics, and it is independent of the Colombeau derivation above. The source's own historical note adds that the equation had been derived before Dirac's 1938 paper by Myron Mathisson (1931), by a method the commentators regard as more satisfactory. The corpus records all three as history; the framework's own content is the transcription of the reaction force given above.
 
-**The divergence is a property of the inhomogeneous equation, and one classical programme attacks it head-on.** A charge that appears on the right-hand side of Maxwell's equations carries the infinite self-energy above; a charge read instead as a **singularity of the homogeneous (vacuum) equation** need not. That is the interpretation of Lanczos's electrodynamics reconstructed by Gsponer and Hurni: the homogeneous Maxwell equation is taken as the biquaternion generalisation of the Cauchy–Riemann regularity conditions — a function theory of four complex variables — and a charged particle is a singular set of that equation rather than a source. Deriving the usual action integral of classical electrodynamics from Lanczos's action, the authors find no divergence in the self-interaction: the mass term is finite for a proper boundary tube of finite retarded radius $\xi_y$, the standard infinite point-charge mass returns only in the limit $\xi_y\to0$, and the opposite limit $\xi_y\to\infty$, which encloses the singularities of the whole universe, gives zero masses and destroys the derivation, so the finite result is an intermediate-scale effect. The interaction term requires in addition that the external field vary slowly over the tube, of the order of the classical electron radius $r_e$, which the authors identify with the usual conditions for the internal consistency of classical electrodynamics rather than with a new cutoff. The model is **not** the Abraham–Lorentz extended electron: the singularities carry no finite structure, and the potential and field are not discontinuous at the boundary. The corpus records this as a programme of its own rather than as a result of the framework above — it is the one biquaternion route that confronts the self-energy divergence directly, and it does so outside the point-source idealisation in which the rest of this article works.
+**The divergence is a property of the inhomogeneous equation, and one classical programme attacks it head-on.** A charge that appears on the right-hand side of Maxwell's equations carries the infinite self-energy above; a charge read instead as a **singularity of the homogeneous (vacuum) equation** need not. That is the interpretation of Lanczos's electrodynamics reconstructed by Gsponer and Hurni: the homogeneous Maxwell equation is taken as the biquaternion generalisation of the Cauchy–Riemann regularity conditions — a function theory of four complex variables — and a charged particle is a singular set of that equation rather than a source. Deriving the usual action integral of classical electrodynamics from Lanczos's action, the authors find no divergence in the self-interaction: the mass term is finite for a proper boundary tube of finite retarded radius $\zeta_y$, the standard infinite point-charge mass returns only in the limit $\zeta_y\to0$, and the opposite limit $\zeta_y\to\infty$, which encloses the singularities of the whole universe, gives zero masses and destroys the derivation, so the finite result is an intermediate-scale effect. The interaction term requires in addition that the external field vary slowly over the tube, of the order of the classical electron radius $r_e$, which the authors identify with the usual conditions for the internal consistency of classical electrodynamics rather than with a new cutoff. The model is **not** the Abraham–Lorentz extended electron: the singularities carry no finite structure, and the potential and field are not discontinuous at the boundary. The corpus records this as a programme of its own rather than as a result of the framework above — it is the one biquaternion route that confronts the self-energy divergence directly, and it does so outside the point-source idealisation in which the rest of this article works.
 
 **The point charge is an idealisation, and the classical electron carries more.** Gsponer's own conclusion draws the boundary that his derivation makes precise: the classical electrodynamics of point charges is mathematically an internally consistent theory once potentials, fields and currents are nonlinear generalized functions, but the mathematical point charge — a simple pole of the potential — is an idealisation. A classical point-electron carries, besides its electric charge, an intrinsic magnetic dipole moment and a spin, described by a four-potential that superposes the Coulomb term with a dipole term. Gsponer suggests applying the same method to that potential, which would yield an equation of motion generalising Lorentz–Dirac's for a classical electron with magnetic moment and spin. That is precisely the question left open in *The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form*, where the coupling of the spin to the radiation-reaction force is listed as unresolved; the two articles meet here. As elsewhere in the corpus, the internal consistency of the mathematics does not fix the mass, and the algebra does not supply the electron's moment and spin; those are inputs, not consequences.
 
@@ -520,13 +520,13 @@ $$
 
 built from the null retarded separation $iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(t'_r)\right)$, both in $\mathbb{M}_-$.
 
-The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}(iR\,e_t+\vec R)^{\natural}\right) = \gamma D$ and the spinor square root of the four-velocity, $B = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,B^2$:
+The same potential can be written with the invariant retarded distance $\zeta = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}(iR\,e_t+\vec R)^{\natural}\right) = \gamma D$ and the spinor square root of the four-velocity, $B = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,B^2$:
 
 $$
-\tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,B^2,
+\tilde{A} = \frac{\mu ϙ}{4\pi\zeta}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\zeta}\,B^2,
 $$
 
-and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $iR\,e_t+\vec R = 2i\xi\,B\sigma B^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = B\vec aB^+$.
+and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $iR\,e_t+\vec R = 2i\zeta\,B\sigma B^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = B\vec aB^+$.
 
 The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is **null**:
 
@@ -572,7 +572,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor |
 | $\kappa = 1-\vec u_R\cdot\vec\beta$ | Retardation factor |
 | $D = R-\vec R\cdot\vec\beta = R\kappa$ | Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})$ |
-| $\xi = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}(iR\,e_t+\vec R)^{\natural}\right)$ | Invariant retarded distance (the source's $\xi$) |
+| $\zeta = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}(iR\,e_t+\vec R)^{\natural}\right)$ | Invariant retarded distance (the source's $\zeta$) |
 | $B$, $B^2 = \tilde{V}/(ic)$, $B^+ = B$ | Bireal spinor square root of the four-velocity |
 | $\sigma = \tfrac12(e_t + i\vec u)$ | Primitive idempotent; $\vec u$ the line of sight in the charge's rest frame |
 | $\vec a = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ | Rest-frame acceleration, a pure vector, $d\tilde{V}/d\tau = B\vec aB^+$ |

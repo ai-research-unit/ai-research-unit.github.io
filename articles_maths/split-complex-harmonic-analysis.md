@@ -14,16 +14,16 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The split complex plane $\mathbb{C}^{\mathrm{spl}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
 
 $$
-\langle \xi, Q \rangle = \operatorname{Re}(\bar{\xi} Q) = u q - v q', \qquad \xi = u + jv, \quad Q = q + jq'.
+\langle \zeta, Q \rangle = \operatorname{Re}(\bar{\zeta} Q) = u q - v q', \qquad \zeta = u + jv, \quad Q = q + jq'.
 $$
 
-Note the minus sign: it comes from the split complex conjugation $\bar{\xi} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}^{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself, but the pairing is indefinite.
+Note the minus sign: it comes from the split complex conjugation $\bar{\zeta} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}^{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself, but the pairing is indefinite.
 
 So at the level of the additive group, split complex harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a Lorentzian pairing instead of a Euclidean one.
 
@@ -32,16 +32,16 @@ So at the level of the additive group, split complex harmonic analysis is the sa
 The **split complex characters** are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{spl}}$:
 
 $$
-\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
 $$
 
 where the exponential is the split complex exponential. Explicitly,
 
 $$
-\chi_\xi(Q) = \cosh(\operatorname{Re}(\bar{\xi} Q)) + j \sinh(\operatorname{Re}(\bar{\xi} Q)).
+\chi_\zeta(Q) = \cosh(\operatorname{Re}(\bar{\zeta} Q)) + j \sinh(\operatorname{Re}(\bar{\zeta} Q)).
 $$
 
-These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} Q)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.
+These characters are **unbounded**: as $|\operatorname{Re}(\bar{\zeta} Q)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.
 
 ## The Split Complex Fourier Transform
 
@@ -50,7 +50,7 @@ These characters are **unbounded**: as $|\operatorname{Re}(\bar{\xi} Q)| \to \in
 The **split complex Fourier transform** of a function $f : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ,
 $$
 
 where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
@@ -62,16 +62,16 @@ where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}^2$
 In the idempotent basis, the split complex Fourier transform decomposes as
 
 $$
-\boxed{\; (\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_+ + \mathcal F f_-(\xi_-) \Pi_- \;},
+\boxed{\; (\mathcal F f)(\zeta) = \mathcal F f_+(\zeta_+) \Pi_+ + \mathcal F f_-(\zeta_-) \Pi_- \;},
 $$
 
 where
 
 $$
-\mathcal F f_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \xi_\pm Q_\pm) \, dQ_\pm.
+\mathcal F f_\pm(\zeta_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \zeta_\pm Q_\pm) \, dQ_\pm.
 $$
 
-The two integrals are **Laplace transforms**, one for each idempotent component. The first integral converges for $\xi_+ > 0$ and the second for $\xi_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.
+The two integrals are **Laplace transforms**, one for each idempotent component. The first integral converges for $\zeta_+ > 0$ and the second for $\zeta_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.
 
 This is the precise sense in which split complex harmonic analysis is the Laplace transform in disguise.
 
@@ -98,7 +98,7 @@ whenever the integral converges. For $f$ of exponential growth, the transform co
 The split complex Fourier transform on the positive null direction is the Laplace transform:
 
 $$
-\mathcal F f_+(\xi_+) = \int_0^\infty f_+(Q_+) \exp(-\xi_+ Q_+) \, dQ_+ = \mathcal{L} f_+(\xi_+).
+\mathcal F f_+(\zeta_+) = \int_0^\infty f_+(Q_+) \exp(-\zeta_+ Q_+) \, dQ_+ = \mathcal{L} f_+(\zeta_+).
 $$
 
 So the split complex Fourier transform is the pair of Laplace transforms on the two null directions. This is not an analogy; it is an identity.
@@ -117,10 +117,10 @@ which is a contour integral in the complex plane. So the inversion of the split 
 
 ### Definition
 
-On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\xi} Q))$ are bounded, and the split complex Fourier transform
+On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\zeta} Q))$ are bounded, and the split complex Fourier transform
 
 $$
-(\mathcal F f)(\xi) = \int_{-T}^T f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ
+(\mathcal F f)(\zeta) = \int_{-T}^T f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ
 $$
 
 converges for $f \in L^1([-T, T])$.
@@ -130,7 +130,7 @@ converges for $f \in L^1([-T, T])$.
 On a bounded interval, the inversion formula is
 
 $$
-f(Q) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(j \operatorname{Re}(\bar{\xi} Q)) \, d\xi,
+f(Q) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\zeta) \exp(j \operatorname{Re}(\bar{\zeta} Q)) \, d\zeta,
 $$
 
 under suitable conditions. This is the analogue of the Fourier inversion theorem for the split complex case, and it is the setting in which split complex harmonic analysis is useful.
@@ -168,7 +168,7 @@ where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.
 **Convolution theorem.** For functions for which the split complex Fourier transform is defined,
 
 $$
-\boxed{\; \widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi) \;}.
+\boxed{\; \widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta) \;}.
 $$
 
 **Proof.** Write the definition, apply Fubini, and change variables.
@@ -238,7 +238,7 @@ $$
 **Fourier multiplier.** In terms of the split complex Fourier transform,
 
 $$
-\widehat{Hf}(\xi) = -j \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
+\widehat{Hf}(\zeta) = -j \operatorname{sgn}(\zeta) (\mathcal F f)(\zeta),
 $$
 
 where $\operatorname{sgn}$ is the sign function on each idempotent component.
@@ -380,10 +380,10 @@ The Fourier slice theorem is the mathematical basis of hyperbolic tomography, th
 **Theorem.** For suitable $f$,
 
 $$
-f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\xi} Q)) \, d\sigma \, d\theta,
+f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\zeta} Q)) \, d\sigma \, d\theta,
 $$
 
-where $\xi = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.
+where $\zeta = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.
 
 ## The Wavelet Transform
 
@@ -398,7 +398,7 @@ $$
 The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty,
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
 $$
 
 where $\hat{\psi}$ is the ordinary Fourier transform.
@@ -436,7 +436,7 @@ The split complex Fourier transform is defined with a kernel built from the spli
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
-| $\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q))$ | Split complex character |
+| $\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q))$ | Split complex character |
 | $\mathcal F f$ | Split complex Fourier transform |
 | $f * g$ | Convolution |
 | $f \star g$ | Mellin convolution |

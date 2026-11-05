@@ -245,7 +245,7 @@ the **spectral radius formula**. The kernel of the Gelfand transform is the inte
 **Example (the Fourier transform).** For the convolution algebra $L^1(\mathbb{R})$ the characters are
 
 $$
-\chi_\xi(f) = \int_\mathbb{R}f(x)\,\exp(-i\xi x)\,dx, \qquad \xi \in \mathbb{R},
+\chi_\zeta(f) = \int_\mathbb{R}f(x)\,\exp(-i\zeta x)\,dx, \qquad \zeta \in \mathbb{R},
 $$
 
 so $\operatorname{Max}\bigl(L^1(\mathbb{R})\bigr) = \mathbb{R}$ and the Gelfand transform is the Fourier transform, with $\|\mathcal F f\|_\infty = r(f) \leq \|f\|_1$ for the spectral radius formula. For a finite abelian group $G$ the group algebra $\mathbb{C}[G]$ is semisimple with $\operatorname{Max}(\mathbb{C}[G])$ the character group $\hat G$, and the Gelfand transform is the discrete Fourier transform, $\mathbb{C}[G] \cong \prod_{\chi \in \hat G}\mathbb{C}$; the same computation over a general base ring is the content of *Group Algebras*.

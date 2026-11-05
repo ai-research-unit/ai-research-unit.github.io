@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The central value $0$ and the nilpotents are the two faces of one subject in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$: a **root of zero** is a nonzero element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = 0$, a **nilpotent** is an element some power of which vanishes, and on the **general quaternionic sesquilinear product**
+The central value $0$ and the nilpotents are the two faces of one subject in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$: a **root of zero** is a nonzero element $\tilde{Ζ}$ with $\tilde{Ζ}\star\tilde{Ζ} = 0$, a **nilpotent** is an element some power of which vanishes, and on the **general quaternionic sesquilinear product**
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}
@@ -12,15 +12,15 @@ the two notions meet at the square-zero elements, since a nonzero root of zero a
 
 **What the article does not do.** The root set of a **general** central value and the reduction of the root equation are *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, which classifies the roots of every real central value and proves the reduction; the present article is the value $\lambda = 0$ of that theorem, and it owns the square-zero family, its index and its place in the zero-divisor cone. The roots of a general element are *Square Roots of a General Element in the General Quaternionic Sesqualgebra*; the four-way comparison of the square-zero sets of the twelve general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; and the cone and its criterion are *Zero Divisors of the General Quaternionic Sesqualgebra*.
 
-**The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$, so the square-zero equation is $\overline{\tilde Q}\tilde Q = 0$, whose coordinates are $q_t^{2}+q'^2_t = \lvert\vec p\rvert^{2}+\lvert\vec p'\rvert^{2}$, $q_t\vec p+q'_t\vec p' = 0$ and $\vec p\times\vec p' = 0$ for $\tilde Q = q_t+iq'_t+\vec p+i\vec p'$. The roots of zero are exactly the square-zero elements, the family $\tilde\Xi = c(\vec u+i)$ over the complex numbers $c$ and the real unit vectors $\vec u$, equivalently $c(1+\tilde\Xi_2)$; the family is real four-dimensional, it is the union of the complex lines based at the real unit directions, and every nonzero member is **non-pure**, with scalar part $ic$. Every square-zero element is a two-sided zero divisor with itself as partner, the family is a proper real four-dimensional subfamily of the real six-dimensional zero-divisor cone, and it is incomparable with the plain nilpotent cone because the plain square-zero elements are pure; the two square-zero sets share only the origin. The index of a nonzero square-zero element is two, and the question of a nilpotent of index three is left unsettled. Each section below states its result first and then proves it.
+**The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$, so the square-zero equation is $\overline{\tilde Q}\tilde Q = 0$, whose coordinates are $q_t^{2}+q'^2_t = \lvert\vec p\rvert^{2}+\lvert\vec p'\rvert^{2}$, $q_t\vec p+q'_t\vec p' = 0$ and $\vec p\times\vec p' = 0$ for $\tilde Q = q_t+iq'_t+\vec p+i\vec p'$. The roots of zero are exactly the square-zero elements, the family $\tilde{Ζ} = c(\vec u+i)$ over the complex numbers $c$ and the real unit vectors $\vec u$, equivalently $c(1+\tilde{Ζ}_2)$; the family is real four-dimensional, it is the union of the complex lines based at the real unit directions, and every nonzero member is **non-pure**, with scalar part $ic$. Every square-zero element is a two-sided zero divisor with itself as partner, the family is a proper real four-dimensional subfamily of the real six-dimensional zero-divisor cone, and it is incomparable with the plain nilpotent cone because the plain square-zero elements are pure; the two square-zero sets share only the origin. The index of a nonzero square-zero element is two, and the question of a nilpotent of index three is left unsettled. Each section below states its result first and then proves it.
 
 ## The Roots of Zero
 
-**A nonzero root of zero is exactly a square-zero element: it satisfies $\overline{\tilde Q}\tilde Q = 0$, and on coordinates the system $q_t^{2}+q'^2_t = \lvert\vec p\rvert^{2}+\lvert\vec p'\rvert^{2}$, $q_t\vec p+q'_t\vec p' = 0$, $\vec p\times\vec p' = 0$; the roots are exactly the family $c(\vec u+i)$, $c\in\mathbb{C}^{*}$, $\lvert\vec u\rvert = 1$, equivalently $c(1+\tilde\Xi_2)$, of real dimension four and non-pure.**
+**A nonzero root of zero is exactly a square-zero element: it satisfies $\overline{\tilde Q}\tilde Q = 0$, and on coordinates the system $q_t^{2}+q'^2_t = \lvert\vec p\rvert^{2}+\lvert\vec p'\rvert^{2}$, $q_t\vec p+q'_t\vec p' = 0$, $\vec p\times\vec p' = 0$; the roots are exactly the family $c(\vec u+i)$, $c\in\mathbb{C}^{*}$, $\lvert\vec u\rvert = 1$, equivalently $c(1+\tilde{Ζ}_2)$, of real dimension four and non-pure.**
 
 ### The Square-Zero Equation
 
-**Definition (root of a central value, quoted).** A **root of the central value $\lambda$** in a product $\star$ is a nonzero element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_t$; a **root of zero** is a root of $0$. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §6.
+**Definition (root of a central value, quoted).** A **root of the central value $\lambda$** in a product $\star$ is a nonzero element $\tilde{Ζ}$ with $\tilde{Ζ}\star\tilde{Ζ} = \lambda e_t$; a **root of zero** is a root of $0$. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §6.
 
 **Proposition (the reduction, quoted).** For every $\tilde Q$,
 
@@ -40,22 +40,22 @@ $$
 
 ### The Classification of the Roots of Zero
 
-**The roots of zero are exactly the elements $\tilde\Xi = c(\vec u+i)$ with $c\in\mathbb{C}^{*}$ and $\vec u$ a real unit vector, equivalently $\tilde\Xi = c(1+\tilde\Xi_2)$, together with the origin; they form a real four-dimensional family, the union of the complex lines based at the real unit directions, and every nonzero member is non-pure with scalar part $i c$.**
+**The roots of zero are exactly the elements $\tilde{Ζ} = c(\vec u+i)$ with $c\in\mathbb{C}^{*}$ and $\vec u$ a real unit vector, equivalently $\tilde{Ζ} = c(1+\tilde{Ζ}_2)$, together with the origin; they form a real four-dimensional family, the union of the complex lines based at the real unit directions, and every nonzero member is non-pure with scalar part $i c$.**
 
 **Theorem (the roots of zero).** The roots of zero of $\star$ are exactly the elements
 
 $$
-\boxed{\; \tilde\Xi = c\bigl(\vec u + i\bigr) , \qquad c\in\mathbb{C}^{*} , \qquad \vec u\in\mathbb{R}^3 , \qquad \sum_{k=1}^{3}u_k^2 = 1 \;},
+\boxed{\; \tilde{Ζ} = c\bigl(\vec u + i\bigr) , \qquad c\in\mathbb{C}^{*} , \qquad \vec u\in\mathbb{R}^3 , \qquad \sum_{k=1}^{3}u_k^2 = 1 \;},
 $$
 
-together with the origin; equivalently, $\tilde\Xi = c\,(1 + \tilde\Xi_2)$ over the complex numbers $c$ and the real unit vectors $\vec u_{m}$, and the two parametrizations agree under $\vec u_{m}\mapsto-\vec u$ and $c\mapsto ic$.
+together with the origin; equivalently, $\tilde{Ζ} = c\,(1 + \tilde{Ζ}_2)$ over the complex numbers $c$ and the real unit vectors $\vec u_{m}$, and the two parametrizations agree under $\vec u_{m}\mapsto-\vec u$ and $c\mapsto ic$.
 
-**Proof.** Let $\tilde Q = a+\vec q$ satisfy the coordinate system. The third equation $\vec p\times\vec p' = 0$ says that the real vectors $\vec p$ and $\vec p'$ are linearly dependent; when $\vec p' = 0$ this is automatic and it holds trivially when $\vec p = 0$. If $\vec p$ and $\vec p'$ are not both zero they are parallel to a common real unit vector $\vec u$, so $\vec q = c\,\vec u$ for a complex number $c$, and the second equation becomes $\operatorname{Re}(\overline{a}c)\,\vec u = 0$, that is $\operatorname{Re}(\overline{a}c) = 0$. When $a \neq 0$ this says that $c$ is a real multiple of $ia$, $c = ita$ with $t\in\mathbb{R}$; substituting into the first equation gives $\lvert a\rvert^2 = t^2\lvert a\rvert^2$, so $t^2 = 1$ and $c = \pm ia$; then $\tilde Q = a\pm ia\vec u = \pm ia(\vec u\mp i)$, of the displayed form. When $a = 0$ the first equation gives $\lvert c\rvert^2 = 0$, that is $c = 0$ and $\tilde Q = 0$, which is excluded for a root of zero. The two parametrizations are related by $c(\vec u+i) = ic\,(1-\tilde\Xi) = ic\,(1+i(-\vec u))$. Since $\vec u+i$ has square zero and the set is stable under the multiplication by a complex scalar (the scalar $c$ is central), every displayed element is square-zero, which proves the equivalence.
+**Proof.** Let $\tilde Q = a+\vec q$ satisfy the coordinate system. The third equation $\vec p\times\vec p' = 0$ says that the real vectors $\vec p$ and $\vec p'$ are linearly dependent; when $\vec p' = 0$ this is automatic and it holds trivially when $\vec p = 0$. If $\vec p$ and $\vec p'$ are not both zero they are parallel to a common real unit vector $\vec u$, so $\vec q = c\,\vec u$ for a complex number $c$, and the second equation becomes $\operatorname{Re}(\overline{a}c)\,\vec u = 0$, that is $\operatorname{Re}(\overline{a}c) = 0$. When $a \neq 0$ this says that $c$ is a real multiple of $ia$, $c = ita$ with $t\in\mathbb{R}$; substituting into the first equation gives $\lvert a\rvert^2 = t^2\lvert a\rvert^2$, so $t^2 = 1$ and $c = \pm ia$; then $\tilde Q = a\pm ia\vec u = \pm ia(\vec u\mp i)$, of the displayed form. When $a = 0$ the first equation gives $\lvert c\rvert^2 = 0$, that is $c = 0$ and $\tilde Q = 0$, which is excluded for a root of zero. The two parametrizations are related by $c(\vec u+i) = ic\,(1-\tilde{Ζ}) = ic\,(1+i(-\vec u))$. Since $\vec u+i$ has square zero and the set is stable under the multiplication by a complex scalar (the scalar $c$ is central), every displayed element is square-zero, which proves the equivalence.
 
 **Corollary (the real dimension and the two readings).** The roots of zero form a real four-dimensional family, $c$ of two real parameters and $\vec u$ of two; and every root of zero is **non-pure**,
 
 $$
-\Xi_t = ic \neq 0 ,
+Ζ_t = ic \neq 0 ,
 $$
 
 so the family lies in the non-pure part $Q_t\neq0$ of the zero-divisor cone.
@@ -68,15 +68,15 @@ The classification answers the two questions that a root-of-zero theory asks. Th
 
 ### The Roots of Zero and the Zero Divisors
 
-**Every root of zero is a two-sided zero divisor with itself as partner, lying on the cone $C(\tilde\Xi)=0$, so the family is a proper real four-dimensional subfamily of the real six-dimensional cone, its complement containing the pure zero divisor $\vec e_x+i\vec e_y$.**
+**Every root of zero is a two-sided zero divisor with itself as partner, lying on the cone $C(\tilde{Ζ})=0$, so the family is a proper real four-dimensional subfamily of the real six-dimensional cone, its complement containing the pure zero divisor $\vec e_x+i\vec e_y$.**
 
-**Theorem (the roots of zero are two-sided zero divisors).** Every root of zero $\tilde\Xi$ satisfies $\tilde\Xi\star\tilde\Xi = 0$, so it is a zero divisor of $\star$ with itself as partner on both sides, and it lies in the zero-divisor cone
+**Theorem (the roots of zero are two-sided zero divisors).** Every root of zero $\tilde{Ζ}$ satisfies $\tilde{Ζ}\star\tilde{Ζ} = 0$, so it is a zero divisor of $\star$ with itself as partner on both sides, and it lies in the zero-divisor cone
 
 $$
-\boxed{\; C(\tilde\Xi) = 0 \;}.
+\boxed{\; C(\tilde{Ζ}) = 0 \;}.
 $$
 
-**Proof.** The relation $\tilde\Xi\star\tilde\Xi = 0$ is the product of the element with itself and exhibits the partner; the cone is the criterion of *Zero Divisors of the General Quaternionic Sesqualgebra*, and $\overline{\tilde\Xi}\tilde\Xi = 0$ implies $C(\tilde\Xi) = 0$.
+**Proof.** The relation $\tilde{Ζ}\star\tilde{Ζ} = 0$ is the product of the element with itself and exhibits the partner; the cone is the criterion of *Zero Divisors of the General Quaternionic Sesqualgebra*, and $\overline{\tilde{Ζ}}\tilde{Ζ} = 0$ implies $C(\tilde{Ζ}) = 0$.
 
 The family is therefore a real four-dimensional subfamily of the real six-dimensional cone, and it is a **proper** subfamily: the pure zero divisor $\vec e_x+i\vec e_y$ of the cone is not square-zero, its square being $-2e_t-2i\vec e_z$. This is the difference between the block and the plain algebra. There, every square-zero element is pure; here the square-zero elements are exactly the roots of zero, they lie in the non-pure family, and the cone is split into a pure part, where the square-zero condition is never met, and a non-pure part, where it cuts out the proper subfamily $c(\vec u+i)$.
 
@@ -98,19 +98,19 @@ Throughout this article the product is $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{
 
 The roots of zero of the general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ are the nonzero elements whose square vanishes, and the square reduces to the natural conjugate of the plain product, $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$, so the square-zero equation is $\overline{\tilde Q}\tilde Q = 0$, whose coordinates are $q_t^2+q'^2_t = \lvert\vec p\rvert^2+\lvert\vec p'\rvert^2$, $q_t\vec p+q'_t\vec p' = 0$ and $\vec p\times\vec p' = 0$ for $\tilde Q = q_t+iq'_t+\vec p+i\vec p'$.
 
-The roots of zero are exactly the family $c(\vec u+i)$ over the complex numbers $c$ and the real unit vectors $\vec u$, equivalently the family $c(1+\tilde\Xi_2)$; the family is real four-dimensional, it is the union of the complex lines based at the real unit directions, and every nonzero member is **non-pure**, with scalar part $ic$. The nonzero roots of zero are exactly the nilpotents of index two, and every higher left-nested power of such an element vanishes. Every root of zero is a two-sided zero divisor with itself as partner, the family is a proper real four-dimensional subfamily of the real six-dimensional zero-divisor cone, and it is incomparable with the plain nilpotent cone because the plain square-zero elements are pure; the two square-zero sets share only the origin. The index of a nonzero square-zero element is two, and the question of a nilpotent of index three is left unsettled.
+The roots of zero are exactly the family $c(\vec u+i)$ over the complex numbers $c$ and the real unit vectors $\vec u$, equivalently the family $c(1+\tilde{Ζ}_2)$; the family is real four-dimensional, it is the union of the complex lines based at the real unit directions, and every nonzero member is **non-pure**, with scalar part $ic$. The nonzero roots of zero are exactly the nilpotents of index two, and every higher left-nested power of such an element vanishes. Every root of zero is a two-sided zero divisor with itself as partner, the family is a proper real four-dimensional subfamily of the real six-dimensional zero-divisor cone, and it is incomparable with the plain nilpotent cone because the plain square-zero elements are pure; the two square-zero sets share only the origin. The index of a nonzero square-zero element is two, and the question of a nilpotent of index three is left unsettled.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
-| root of zero | a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = 0$ |
+| root of zero | a nonzero $\tilde{Ζ}$ with $\tilde{Ζ}\star\tilde{Ζ} = 0$ |
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^{\star k} = 0$ for some $k\geq1$ |
 | $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ | the reduction of the square |
 | $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$ |
-| $c(\vec u+i)$, $c\in\mathbb{C}^{*}$, $\vec u$ real unit | the square-zero family; equivalently $c(1+\tilde\Xi_2)$ |
-| $\Xi_t = ic$ | the scalar part of a square-zero element, non-zero |
+| $c(\vec u+i)$, $c\in\mathbb{C}^{*}$, $\vec u$ real unit | the square-zero family; equivalently $c(1+\tilde{Ζ}_2)$ |
+| $Ζ_t = ic$ | the scalar part of a square-zero element, non-zero |
 | $\vec p\times\vec p' = 0$, $q_t\vec p+q'_t\vec p' = 0$ | the vector equations of the square-zero system |
 
 ## Further Reading

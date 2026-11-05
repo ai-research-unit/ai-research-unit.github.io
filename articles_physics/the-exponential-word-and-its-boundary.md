@@ -265,7 +265,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit real pure quaternions |
 | $\psi$, $\theta$ | the stored rapidity and the rotation angle |
 | $\tilde Q_{\log}$ | the formal exponent, the sum of the four exponents |
-| $\tilde\Pi=\tfrac12(e_t+\vec\Xi)$ | a minimal idempotent, $\vec\Xi^2=e_t$ |
+| $\tilde\Pi=\tfrac12(e_t+\vec{Ζ})$ | a minimal idempotent, $\vec{Ζ}^2=e_t$ |
 | $N$ | a nonzero nilpotent, $N^2=0$ |
 
 ## Further Reading

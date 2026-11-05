@@ -372,7 +372,7 @@ $$
 
 The last identity fixes the sign: $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$, so the product of the four generator cells is the chirality cell up to the central factor.
 
-$\gamma_5$ is the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ used in the body, since $L_{e_t}^{\mathrm{pau}}=I$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the adjoined central root of $-e_t$ so that $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $\chi_{\mathrm{ad}}^2=e_t$, is a different object: being central it is the difference of the two central idempotents of the complexified algebra, and $\gamma_5$ is its representative on the Dirac module.
+$\gamma_5$ is the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ used in the body, since $L_{e_t}^{\mathrm{pau}}=I$. The central grading $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the adjoined central root of $-e_t$ so that $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\chi_{\mathrm{ad}}^2=e_t$, is a different object: being central it is the difference of the two central idempotents of the complexified algebra, and $\gamma_5$ is its representative on the Dirac module.
 
 The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ the products of the four generator cells, with real coefficients, span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the cells $L_aR_b$ with $a,b$ in the real quaternion algebra span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; with biquaternion parameters the cells span all of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$.
 

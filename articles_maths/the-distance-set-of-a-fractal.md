@@ -31,7 +31,7 @@ The article assumes *Metric Geometry* for the distance and the diameter; *Fracta
 **Proof sketch.** The proof averages the squared Fourier transform of a measure $\mu$ of finite $s$-energy supported on $E$ over the sphere of radius $r$,
 
 $$
-\sigma(\mu)(r) = \int_{S^{d-1}} \bigl|\widehat{\mu}(r\xi)\bigr|^2\,d\sigma(\xi) ,
+\sigma(\mu)(r) = \int_{S^{d-1}} \bigl|\widehat{\mu}(r\zeta)\bigr|^2\,d\sigma(\zeta) ,
 $$
 
 and integrates $r^{d-1}\,dr$ against a cutoff; the decay of $\widehat\mu$ makes the truncated integral bounded exactly when $\dim_H E > (d+1)/2$, and the distance measure is then positive. The computation is the one of *Real Harmonic Analysis*; the dimension hypothesis enters through the decay of $\widehat\mu$.
@@ -55,7 +55,7 @@ For $d = 2$ the conjecture is the statement $\dim_H E > 1$, and is open; the bou
 **Remark (the reduction to the projection theorem).** The exact identity behind all the thresholds is the energy identity of *Projections of a Fractal and the Dimension*,
 
 $$
-\boxed{\;\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\xi\#}\mu)\,d\sigma(\xi) = c_d\, \mathcal{I}_{d-1}(\mu)\;} ,
+\boxed{\;\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\zeta\#}\mu)\,d\sigma(\zeta) = c_d\, \mathcal{I}_{d-1}(\mu)\;} ,
 $$
 
 which says that the average over the directions of the energy of the projection of the measure equals the energy of the measure; in the Fourier form the energy is
@@ -103,7 +103,7 @@ The distance set of a fractal is the radial image of its difference set, and the
 | $(d+1)/2$ | Falconer's proven threshold (1985) |
 | $5/4$ | Best known planar threshold (Guth–Iosevich–Ou–Wang) |
 | $\widehat\mu$, $\sigma$ | Fourier transform of the measure; surface measure on the sphere |
-| $\mathcal{I}_{d-1}(\pi_{\xi\#}\mu)$ | Energy of the projection of the measure onto the direction $\xi$ |
+| $\mathcal{I}_{d-1}(\pi_{\zeta\#}\mu)$ | Energy of the projection of the measure onto the direction $\zeta$ |
 | $c\,n/\log n$ | Distinct distances of $n$ planar points (Guth–Katz) |
 | $m^2/\sqrt{\log m}$ | Distinct distances of the $m\times m$ grid (Landau–Ramanujan) |
 

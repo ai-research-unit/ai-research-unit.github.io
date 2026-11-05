@@ -59,10 +59,10 @@ $$
 F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial Q_\mu}-\frac{\partial\mathcal A_\mu}{\partial Q_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$
 
-**The symbol, and the square.** The principal symbol at a covector $\xi$ is the left multiplication by $\sum_\mu\xi_\mu e_\mu$. That element is invertible for every real $\xi\neq0$, because its norm is $\sum_\mu\xi_\mu^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,
+**The symbol, and the square.** The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_\mu\zeta_\mu e_\mu$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_\mu\zeta_\mu^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,
 
 $$
-\Bigl(\sum_\mu\xi_\mu e_\mu\Bigr)^2=\xi_t^2-\sum_k\xi_k^2+2\xi_t\sum_k\xi_k\vec e_k ,
+\Bigl(\sum_\mu\zeta_\mu e_\mu\Bigr)^2=\zeta_t^2-\sum_k\zeta_k^2+2\zeta_t\sum_k\zeta_k\vec e_k ,
 $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.

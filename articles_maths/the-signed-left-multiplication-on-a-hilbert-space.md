@@ -24,7 +24,7 @@ $$
 
 and the map $U\mapsto\ell_U$ is linear, injective and order-reversing under composition; the same identity holds for the Hilbert–Schmidt norm, $\|\ell_U(T)\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality for suitable $T$.
 
-*Proof.* $\|U\alpha(T)\|\le\|U\|\|\alpha(T)\|=\|U\|\|T\|$ by the isometry of the grade involution, and the value $\|U\|$ is attained at a rank-one $T=\xi\otimes\bar\eta$ transforming in the even part of the grading with $\|U\xi\|=\|U\|\|\xi\|$; injectivity is the invertibility of $\alpha$ and the faithfulness of the left representation, and linearity is immediate.
+*Proof.* $\|U\alpha(T)\|\le\|U\|\|\alpha(T)\|=\|U\|\|T\|$ by the isometry of the grade involution, and the value $\|U\|$ is attained at a rank-one $T=\zeta\otimes\bar\eta$ transforming in the even part of the grading with $\|U\zeta\|=\|U\|\|\zeta\|$; injectivity is the invertibility of $\alpha$ and the faithfulness of the left representation, and linearity is immediate.
 
 **Proposition (action on the graded pieces).** If $T$ is even then $\ell_U(T)=UT$, if $T$ is odd then $\ell_U(T)=-UT$; hence
 

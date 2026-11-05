@@ -241,7 +241,7 @@ the chirality cell of the neutrality section.
 
 **The charge operator in gammas.** With $\gamma_5=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5)$ and $P_R=\tfrac12(I_4+\gamma_5)$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\psi=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5$.
 
-Two objects must not be confused here. $\gamma_5$ is the reference-frame cell of the chirality $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^{2}=i^{2}\tilde\Xi_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
+Two objects must not be confused here. $\gamma_5$ is the reference-frame cell of the chirality $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^{2}=i^{2}\tilde{Ζ}_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

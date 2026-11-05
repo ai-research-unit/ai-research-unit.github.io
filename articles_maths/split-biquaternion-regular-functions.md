@@ -69,7 +69,7 @@ a system of four first-order equations coupling the scalar part $F_0$ to the vec
 
 **Proof.** Expanding $\tilde{\nabla}F^{\mathrm{fn}} = \sum_\mu\sum_\nu (\partial/\partial Q_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*).
 
-On the quaternion subspace, where the coefficients are real, the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_t$, so the system is elliptic and its regular functions are real-analytic. On an indefinite four-dimensional subspace, where the coordinate along the split direction enters the symbol with the opposite sign, the principal symbol degenerates on the null cone and the system is no longer elliptic.
+On the quaternion subspace, where the coefficients are real, the principal symbol $s(\zeta) = \sum_\mu \zeta_\mu e_\mu$ satisfies $s(\zeta)s^{\natural}(\zeta) = |\zeta|^2 e_t$, so the system is elliptic and its regular functions are real-analytic. On an indefinite four-dimensional subspace, where the coordinate along the split direction enters the symbol with the opposite sign, the principal symbol degenerates on the null cone and the system is no longer elliptic.
 
 ## Examples and Basic Properties
 

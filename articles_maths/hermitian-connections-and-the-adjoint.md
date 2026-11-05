@@ -15,14 +15,14 @@ The article assumes the connections, the connection form, the curvature and the 
 **Definition.** Let $\nabla$ be a connection on $E$ and let $\langle\cdot,\cdot\rangle : E^*\times E \to \mathbb{C}$ be the pairing. The **dual connection** $\nabla^*$ on $E^*$ is defined by the Leibniz rule
 
 $$
-d\langle\xi, s\rangle = \langle\nabla^*\xi, s\rangle + \langle\xi, \nabla s\rangle, \qquad \xi \in \Gamma(E^*), \ s \in \Gamma(E).
+d\langle\zeta, s\rangle = \langle\nabla^*\zeta, s\rangle + \langle\zeta, \nabla s\rangle, \qquad \zeta \in \Gamma(E^*), \ s \in \Gamma(E).
 $$
 
 **Proposition.** The dual connection is a connection; in a frame, if $\nabla = d+\omega$ with connection form $\omega$, then $\nabla^* = d - \omega^{T}$, so the connection form of the dual is the negative transpose. The dual of the dual is the original, $(\nabla^*)^* = \nabla$, and the passage to the dual is compatible with the composition of connections: $(E\otimes F)^* = E^*\otimes F^*$ and the dual of a tensor-product connection is the tensor product of the duals.
 
-*Proof.* Read the defining rule on sections $\xi = \sum_i\xi_i e_i^{\vee}$ in the dual frame of a frame $e_i$ with $\nabla e_j = \sum_i\omega_{ij}\,e_i$. Then $d\langle\xi,e_j\rangle = d\xi_j$ and $\langle\xi,\nabla e_j\rangle = \sum_i\omega_{ij}\xi_i$, so $\langle\nabla^*\xi,e_j\rangle = d\xi_j - \sum_i\omega_{ij}\xi_i = \sum_i(d\xi_i - \sum_j\omega_{ij}\xi_j)\delta_{ij}$, giving the negative transpose in the dual frame; the assertions about the double dual and the tensor product follow from the same computation.
+*Proof.* Read the defining rule on sections $\zeta = \sum_i\zeta_i e_i^{\vee}$ in the dual frame of a frame $e_i$ with $\nabla e_j = \sum_i\omega_{ij}\,e_i$. Then $d\langle\zeta,e_j\rangle = d\zeta_j$ and $\langle\zeta,\nabla e_j\rangle = \sum_i\omega_{ij}\zeta_i$, so $\langle\nabla^*\zeta,e_j\rangle = d\zeta_j - \sum_i\omega_{ij}\zeta_i = \sum_i(d\zeta_i - \sum_j\omega_{ij}\zeta_j)\delta_{ij}$, giving the negative transpose in the dual frame; the assertions about the double dual and the tensor product follow from the same computation.
 
-**Example.** The Levi-Civita connection on $TM$ and its dual on $T^*M$; the covariant derivative of a $1$-form is the dual of the covariant derivative of a vector field, and the two are computed by the same Christoffel symbols with the contraction. For the trivial line bundle with the trivial connection on the functions, the dual connection is the exterior derivative on the $1$-forms read as the dual sections, since $d\langle\xi,s\rangle=\langle d\xi,s\rangle$ for a function $s$.
+**Example.** The Levi-Civita connection on $TM$ and its dual on $T^*M$; the covariant derivative of a $1$-form is the dual of the covariant derivative of a vector field, and the two are computed by the same Christoffel symbols with the contraction. For the trivial line bundle with the trivial connection on the functions, the dual connection is the exterior derivative on the $1$-forms read as the dual sections, since $d\langle\zeta,s\rangle=\langle d\zeta,s\rangle$ for a function $s$.
 
 ### The Conjugate Connection
 
@@ -80,9 +80,9 @@ $$
 
 where $e_1,\ldots,e_n$ is a local orthonormal frame, $\nabla^* : \Gamma(T^*M\otimes E)\to\Gamma(E)$ is the formal adjoint of $\nabla : \Gamma(E)\to\Gamma(T^*M\otimes E)$ read as the contraction $\nabla^* = -\operatorname{tr}_g\nabla$, and the display is up to the sign convention of the Laplace operator; the second term with the divergence of the frame is what makes the expression coordinate-free.
 
-**Proposition.** The connection Laplacian is a formally self-adjoint second-order operator; its principal symbol is $\lvert\xi\rvert^2\,\mathrm{id}$, so it is elliptic and positive semidefinite; for the trivial connection on functions it is the Laplace–Beltrami operator, and for the Levi-Civita connection on the tangent bundle it is the rough Laplacian of the metric.
+**Proposition.** The connection Laplacian is a formally self-adjoint second-order operator; its principal symbol is $\lvert\zeta\rvert^2\,\mathrm{id}$, so it is elliptic and positive semidefinite; for the trivial connection on functions it is the Laplace–Beltrami operator, and for the Levi-Civita connection on the tangent bundle it is the rough Laplacian of the metric.
 
-*Proof.* The formal self-adjointness is $\langle\nabla^*\nabla s,t\rangle_{L^2} = \langle\nabla s,\nabla t\rangle_{L^2} = \langle s,\nabla^*\nabla t\rangle_{L^2}$ up to the sign, which is the pairing of the $1$-form-valued sections by the metric extended to $T^*M\otimes E$; the symbol is computed from the second-order part, which is the metric contraction, $-\sum (g^{-1})_{ij}\partial^2/\partial x_i\partial x_j$, whose symbol is $\sum_{i,j}(g^{-1})_{ij}\xi_i\xi_j=\lvert\xi\rvert^2$. The identifications with the Laplace–Beltrami and the rough Laplacian are the definitions.
+*Proof.* The formal self-adjointness is $\langle\nabla^*\nabla s,t\rangle_{L^2} = \langle\nabla s,\nabla t\rangle_{L^2} = \langle s,\nabla^*\nabla t\rangle_{L^2}$ up to the sign, which is the pairing of the $1$-form-valued sections by the metric extended to $T^*M\otimes E$; the symbol is computed from the second-order part, which is the metric contraction, $-\sum (g^{-1})_{ij}\partial^2/\partial x_i\partial x_j$, whose symbol is $\sum_{i,j}(g^{-1})_{ij}\zeta_i\zeta_j=\lvert\zeta\rvert^2$. The identifications with the Laplace–Beltrami and the rough Laplacian are the definitions.
 
 ## The Curvature of the Adjoint Connection
 
@@ -112,13 +112,13 @@ A connection has a **dual** on $E^*$, with connection form the negative transpos
 
 | Symbol | Meaning |
 |---|---|
-| Pairing $\langle\xi,s\rangle$ on $E^*\times E$ | The fibrewise pairing of the dual and the bundle |
-| Dual connection $\nabla^*$ | $d\langle\xi,s\rangle=\langle\nabla^*\xi,s\rangle+\langle\xi,\nabla s\rangle$; $\nabla^*=d-\omega^T$ |
+| Pairing $\langle\zeta,s\rangle$ on $E^*\times E$ | The fibrewise pairing of the dual and the bundle |
+| Dual connection $\nabla^*$ | $d\langle\zeta,s\rangle=\langle\nabla^*\zeta,s\rangle+\langle\zeta,\nabla s\rangle$; $\nabla^*=d-\omega^T$ |
 | Conjugate bundle $\bar E$, conjugate connection $\bar\nabla$ | Opposite complex structure; $\bar\nabla=d+\bar\omega$ |
 | $\flat : \bar E\to E^*$, $s\mapsto h(s,\cdot)$ | The conjugate-linear isomorphism of the metric |
 | $\flat\circ\bar\nabla=\nabla^*\circ\flat$ | Metric compatibility; self-adjointness of the connection |
 | $(\nabla_X)^*=-\nabla_X-\operatorname{div}X$ | Adjoint of a covariant derivative |
-| $\nabla^*\nabla$, connection Laplacian | Self-adjoint, elliptic, symbol $\lvert\xi\rvert^2\,\mathrm{id}$ |
+| $\nabla^*\nabla$, connection Laplacian | Self-adjoint, elliptic, symbol $\lvert\zeta\rvert^2\,\mathrm{id}$ |
 | $R_{\nabla^*}(X,Y)=-R_\nabla(X,Y)^t$ | Curvature of the dual |
 | $R_{\bar\nabla}=\overline{R_\nabla}$, $\Omega^*=-\Omega$ | Curvature of the conjugate; skew-Hermitian curvature |
 | $\nabla\oplus\nabla^*$ | Self-adjoint operator on $E\oplus E^*$ |

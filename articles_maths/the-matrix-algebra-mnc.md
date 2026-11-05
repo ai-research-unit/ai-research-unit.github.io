@@ -106,7 +106,7 @@ Its stabiliser in $GL_n(\mathbb{C})$ is the Borel subgroup $B$ of upper triangul
 
 The two forms coincide only in the definite case of the Hermitian involution. The statements of the matrix categories use the definite form; a statement about the null cone is a statement about the N-norm and does not transfer.
 
-**The root of $+1$ is the case $n=2$.** The biquaternion article builds its frame from one element $\tilde\Xi$ with $\tilde\Xi^{2}=e_t$. In the matrix picture this is a matrix $H$ with $H^{2}=I$ and simple spectrum, hence $H=\operatorname{diag}(1,-1)$ in a suitable basis. The two Lagrange projectors
+**The root of $+1$ is the case $n=2$.** The biquaternion article builds its frame from one element $\tilde{Ζ}$ with $\tilde{Ζ}^{2}=e_t$. In the matrix picture this is a matrix $H$ with $H^{2}=I$ and simple spectrum, hence $H=\operatorname{diag}(1,-1)$ in a suitable basis. The two Lagrange projectors
 
 $$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2}

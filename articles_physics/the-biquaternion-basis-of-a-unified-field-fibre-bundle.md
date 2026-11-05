@@ -284,7 +284,7 @@ Each generator carries one unit $i$, and a product of two carries $i^2=-1$; that
 
 The five are generators, not a basis: the basis is the sixteen products. A single product is a pure tensor; the pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The first four are the frame cells $C_\mu$ of the body, $C_t=iR_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$, and $\gamma_5$ is the volume cell $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; the gamma names are the Dirac-algebra names for the same cells. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The first four are the frame cells $C_\mu$ of the body, $C_t=iR_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$, and $\gamma_5$ is the volume cell $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; the gamma names are the Dirac-algebra names for the same cells. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

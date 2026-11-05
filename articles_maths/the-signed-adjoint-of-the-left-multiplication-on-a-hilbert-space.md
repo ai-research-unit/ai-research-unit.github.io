@@ -88,7 +88,7 @@ which evaluates to $\alpha(A^*)\,\alpha(\cdot)\,\alpha(B^*)$ and is the closed f
 
 *Proof.* The three closure statements are the three adjoint formulas; an algebra closed under adjunction and under products is a $*$-algebra, and the closure statement is the definition read on the generating families.
 
-**Example (the rank-one computation).** With $\alpha(\xi\otimes\bar\eta)=\Gamma\xi\otimes\overline{\Gamma\eta}$, the signed left multiplication acts on the rank-one operator by $\ell_U(\xi\otimes\bar\eta)=U\Gamma\xi\otimes\overline{\Gamma\eta}$ and the adjoint acts by $\ell_{\alpha(U^*)}(\xi\otimes\bar\eta)=\alpha(U^*)\Gamma\xi\otimes\overline{\Gamma\eta}$; the pairing of two rank-one operators reproduces the identity $\langle\ell_UT,S\rangle_{\mathrm{HS}}=\langle T,\ell_{\alpha(U^*)}S\rangle_{\mathrm{HS}}$, which is the theorem on the rank-one generators.
+**Example (the rank-one computation).** With $\alpha(\zeta\otimes\bar\eta)=\Gamma\zeta\otimes\overline{\Gamma\eta}$, the signed left multiplication acts on the rank-one operator by $\ell_U(\zeta\otimes\bar\eta)=U\Gamma\zeta\otimes\overline{\Gamma\eta}$ and the adjoint acts by $\ell_{\alpha(U^*)}(\zeta\otimes\bar\eta)=\alpha(U^*)\Gamma\zeta\otimes\overline{\Gamma\eta}$; the pairing of two rank-one operators reproduces the identity $\langle\ell_UT,S\rangle_{\mathrm{HS}}=\langle T,\ell_{\alpha(U^*)}S\rangle_{\mathrm{HS}}$, which is the theorem on the rank-one generators.
 
 ## Examples and Degenerate Cases
 

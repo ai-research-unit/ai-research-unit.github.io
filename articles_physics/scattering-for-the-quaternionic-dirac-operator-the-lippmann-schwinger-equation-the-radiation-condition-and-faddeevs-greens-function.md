@@ -38,7 +38,7 @@ The source writes the same pair with a single letter $M$, the side carried by th
 
 ### Notation for the function spaces
 
-Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $\hat u$ satisfies $\lVert(1+\lvert\xi\rvert^{2})^{\alpha/2}\hat u\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
+Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $\hat u$ satisfies $\lVert(1+\lvert\zeta\rvert^{2})^{\alpha/2}\hat u\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
 
 ## Maxwell's Equations as a Dirac-Type System
 
@@ -319,10 +319,10 @@ $$
 \lambda^2 = k^2-t^2 .
 $$
 
-Its Fourier transform is multiplication by $\xi^2+2t\gamma\cdot\xi-\lambda^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
+Its Fourier transform is multiplication by $\zeta^2+2t\gamma\cdot\zeta-\lambda^2$; replacing the real $t$ by a complex parameter $z$, the symbol is invertible away from $\operatorname{Im}(z)=0$, and the **Faddeev Green's operator** is defined by the inverse of that symbol,
 
 $$
-\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi)^3}\int \frac{\exp(ix\cdot\xi)}{\xi^2+2z\gamma\cdot\xi-\lambda^2}\,f(\xi)\,d\xi ,
+\boxed{\;\bigl(g_\gamma(\lambda,z)f\bigr)(x) = \frac{1}{(2\pi)^3}\int \frac{\exp(ix\cdot\zeta)}{\zeta^2+2z\gamma\cdot\zeta-\lambda^2}\,f(\zeta)\,d\zeta ,
 \qquad \gamma\in S^2,\ \lambda\ge0,\ z\in\mathbb{C}_+ = \{z : \operatorname{Im}(z)>0\}\;},
 $$
 
@@ -403,7 +403,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 
 **Uniqueness and existence** follow from the Fredholm alternative with two inputs: the compactness of the integral operator, which is the weak singularity $\lvert x-y\rvert^{-2}, \lvert x-y\rvert^{-1}$ of the kernels, and the uniqueness of the homogeneous solution, which is the unique continuation principle applied to a system derived by applying $D_3$ a second time. The proof closes through the radiation condition: the field is represented by a sphere integral that the condition makes vanish, so the field vanishes outside a ball, and unique continuation carries the vanishing inward.
 
-**Faddeev's Green's function** is obtained by conjugating the operator by a plane wave along a direction $\gamma$, which replaces the Helmholtz symbol by the non-degenerate $\xi^2+2z\gamma\cdot\xi-\lambda^2$; its bounds, quoted from Isozaki, are what the multidimensional inverse-scattering method uses. The construction is applied separately to the two sides of the multiplication, and — this is the source's own remark — the right-multiplication operator has a *different* Faddeev Green's function from the left-multiplication one. The whole chapter is written for vector fields, and the inverse problem proper is not solved in it; what it supplies is the apparatus of the direct problem in quaternionic form and the Green's function that an inversion would need.
+**Faddeev's Green's function** is obtained by conjugating the operator by a plane wave along a direction $\gamma$, which replaces the Helmholtz symbol by the non-degenerate $\zeta^2+2z\gamma\cdot\zeta-\lambda^2$; its bounds, quoted from Isozaki, are what the multidimensional inverse-scattering method uses. The construction is applied separately to the two sides of the multiplication, and — this is the source's own remark — the right-multiplication operator has a *different* Faddeev Green's function from the left-multiplication one. The whole chapter is written for vector fields, and the inverse problem proper is not solved in it; what it supplies is the apparatus of the direct problem in quaternionic form and the Green's function that an inversion would need.
 
 ## Summary of Notation
 
@@ -426,7 +426,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | (8.5) | The Lippmann–Schwinger integral equation; equivalent to (8.1)–(8.4) |
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
 | $k=\eta+t\gamma$, $\lambda^2=k^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
-| $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\xi^2+2z\gamma\cdot\xi-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
+| $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\zeta^2+2z\gamma\cdot\zeta-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
 | $G^{\mathrm{lor}}_\gamma(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 
 ## Further Reading

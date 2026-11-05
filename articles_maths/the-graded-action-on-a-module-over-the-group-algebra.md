@@ -75,7 +75,7 @@ which is the signed left multiplication of *The Signed Left Multiplication on th
 
 **Proof.** $\varepsilon = \mathrm{A}$ on $M = \mathcal{A}$, so $a\cdot_\alpha m = \mathrm{A}(a*\mathrm{A}m) = \alpha(a)*m$, using $\mathrm{A}^2 = \mathrm{id}$. This is $\Lambda_{\alpha(a)}$ applied to $m$, that is the signed left multiplication by $\alpha(a)$.
 
-**Remark (the action on $L^{n}(G)$).** On $M = L^{n}(G)$ with the convolution action of $L^1(G)$ and the grading by the sign character, $M^\pm = \{\xi : \varepsilon\xi = \pm\xi\}$ and the homogeneity is the computation $\varepsilon(a*m) = (\varepsilon a)*(\varepsilon m)$, which is the sign rule for convolution; the twisted action is $a\cdot_\alpha m = \alpha(a)*m$, and the two actions agree exactly when the odd part of $L^1(G)$ convolves $L^{n}(G)$ to zero. The analytic structure — a Banach module over a Banach algebra — is what the group algebra adds to the discrete group-algebra picture of *The Graded Action on a Module over a Topological Group*.
+**Remark (the action on $L^{n}(G)$).** On $M = L^{n}(G)$ with the convolution action of $L^1(G)$ and the grading by the sign character, $M^\pm = \{\zeta : \varepsilon\zeta = \pm\zeta\}$ and the homogeneity is the computation $\varepsilon(a*m) = (\varepsilon a)*(\varepsilon m)$, which is the sign rule for convolution; the twisted action is $a\cdot_\alpha m = \alpha(a)*m$, and the two actions agree exactly when the odd part of $L^1(G)$ convolves $L^{n}(G)$ to zero. The analytic structure — a Banach module over a Banach algebra — is what the group algebra adds to the discrete group-algebra picture of *The Graded Action on a Module over a Topological Group*.
 
 ## The Fixed Submodule and the Invariant Elements
 

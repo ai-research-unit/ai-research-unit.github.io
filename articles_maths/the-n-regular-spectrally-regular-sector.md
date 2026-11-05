@@ -87,7 +87,7 @@ $$
 \{(\lambda_+,\lambda_-,e_+):\ \lambda_\pm\neq0,\ \lambda_+\neq\lambda_-,\ e_+\text{ a non-trivial idempotent}\}
 $$
 
-under the continuous map $(\lambda_+,\lambda_-,e_+)\mapsto\lambda_+e_++\lambda_-e_-$. The eigenvalue parameter space is $\mathbb{C}^2$ minus the diagonal and the two axes, three complex lines through the origin, and its complement is connected. The non-trivial idempotents are $e_+=(e_t+\tilde\Xi)/2$ with $\tilde\Xi^2=e_t$ and $\tilde\Xi\neq\pm e_t$; the quadric $\tilde\Xi^2=e_t$ is a smooth connected complex surface, and deleting the two points $\pm e_t$ leaves it connected. A continuous image of a connected space is connected.
+under the continuous map $(\lambda_+,\lambda_-,e_+)\mapsto\lambda_+e_++\lambda_-e_-$. The eigenvalue parameter space is $\mathbb{C}^2$ minus the diagonal and the two axes, three complex lines through the origin, and its complement is connected. The non-trivial idempotents are $e_+=(e_t+\tilde{Ζ})/2$ with $\tilde{Ζ}^2=e_t$ and $\tilde{Ζ}\neq\pm e_t$; the quadric $\tilde{Ζ}^2=e_t$ is a smooth connected complex surface, and deleting the two points $\pm e_t$ leaves it connected. A continuous image of a connected space is connected.
 
 **Proposition (not simply connected).** $\Sigma_{11}$ has non-trivial fundamental group.
 
@@ -193,13 +193,13 @@ $$
 and fix a square root $B$ of $B^2$, with $\beta=iB$. Define
 $$
 \vec U=\frac{\vec Q}{B},\qquad
-\vec\Xi=-i\vec U=-\frac{i\vec Q}{B},\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
+\vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B},\qquad
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm \beta.
 $$
 Then
 $$
-\vec\Xi^2=e_t,\qquad
+\vec{Ζ}^2=e_t,\qquad
 \tilde\Pi_\pm^2=\tilde\Pi_\pm,\qquad
 \tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad
 \tilde\Pi_++\tilde\Pi_-=e_t,
@@ -210,12 +210,12 @@ $$
 $$
 The pair $\tilde\Pi_\pm$ is the pair denoted $e_\pm$ in §*The Elements*; the two notations are the same spectral idempotents.
 
-The pair $(\tilde\Pi_+,\tilde\Pi_-)$ is attached to $\tilde Q$: it is the pair of the root $\vec\Xi$, not an arbitrary pair of idempotents. The signs are fixed by
+The pair $(\tilde\Pi_+,\tilde\Pi_-)$ is attached to $\tilde Q$: it is the pair of the root $\vec{Ζ}$, not an arbitrary pair of idempotents. The signs are fixed by
 $$
-\vec\Xi\tilde\Pi_\pm=\tilde\Pi_\pm\vec\Xi=\pm\tilde\Pi_\pm,\qquad
+\vec{Ζ}\tilde\Pi_\pm=\tilde\Pi_\pm\vec{Ζ}=\pm\tilde\Pi_\pm,\qquad
 \tilde Q\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm.
 $$
-Choosing the negative square root sends $\vec\Xi$ to $-\vec\Xi$, exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$, and exchanges $\lambda_+$ and $\lambda_-$; the unordered pair and the unordered spectrum are unchanged.
+Choosing the negative square root sends $\vec{Ζ}$ to $-\vec{Ζ}$, exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$, and exchanges $\lambda_+$ and $\lambda_-$; the unordered pair and the unordered spectrum are unchanged.
 
 ### The Peirce Corners and the Nilpotents
 
@@ -368,7 +368,7 @@ $$
 \vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2}\in\mathbb{B}_{+-},\qquad
 \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}\in\mathbb{B}_{-+},
 $$
-with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Special Element and Peirce Conventions*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec\Xi=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
+with $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$. These are the $\vec\Upsilon_1,\vec\Upsilon_2$ of *Special Element and Peirce Conventions*, §*The Nilpotent Convention*, indexed by direction. The present root is $\vec{Ζ}=-i\vec e_z$ when $Q_z>0$ with the choice $B=Q_z$, which is the negative of that one; the two corner labels and the two idempotent labels are therefore exchanged. In the present indexing
 $$
 \vec\Upsilon_+=\vec\Upsilon_x,\qquad \vec\Upsilon_-=\vec\Upsilon_y,
 $$
@@ -391,7 +391,7 @@ The diagonal values are
 $$
 \operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
-The reason is the corner rule: an element of $\mathbb{B}_{st}$ has left sign $s$ and right sign $t$ under multiplication by the root $\vec\Xi$, and $\tilde Q=Q_te_t+\beta\,\vec\Xi$ acts on it on the left by $Q_t+i\,sB=\lambda_s$ and on the right by $Q_t+i\,tB=\lambda_t$. The four basis elements, their corners, and the two diagonal readings are collected in the table.
+The reason is the corner rule: an element of $\mathbb{B}_{st}$ has left sign $s$ and right sign $t$ under multiplication by the root $\vec{Ζ}$, and $\tilde Q=Q_te_t+\beta\,\vec{Ζ}$ acts on it on the left by $Q_t+i\,sB=\lambda_s$ and on the right by $Q_t+i\,tB=\lambda_t$. The four basis elements, their corners, and the two diagonal readings are collected in the table.
 
 | Basis element | Corner | Left eigenvalue $L_{\tilde Q}$ | Right eigenvalue $R_{\tilde Q}$ |
 |---|---|---|---|
@@ -637,11 +637,11 @@ They are nevertheless distinct subspaces of $\mathbb{B}$, and the direct sum is 
 
 In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of the first Peirce copy is
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
 with the coordinate pair $(Q_{2,11},Q_{2,21})$, the first column of the matrix model of §*Matrices and the Column Correspondence*. Under left multiplication by $\tilde Q$,
 $$
-\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
 $$
 so the coordinate pair is sent to
 $$
@@ -649,11 +649,11 @@ $$
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
 $$
 The order of the coefficients follows the eigenbasis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$, in which the eigenvalues are $(\lambda_+,\lambda_-)$, so the coordinate pair is $(Q_{2,12},Q_{2,22})$, the second column of the matrix model of §*Matrices and the Column Correspondence*, and
 $$
-\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-
 \longmapsto
 (\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$
@@ -682,7 +682,7 @@ $$
 $$
 A general element is therefore not a spinor: it has one spinor component of each Peirce copy.
 
-**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two Peirce copies.
+**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec{Ζ})/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two Peirce copies.
 
 ### Matrices and the Column Correspondence
 
@@ -717,7 +717,7 @@ The first column of $\mathsf M_2^{Q}(\tilde Q_2)$ is the coordinate vector of $\
 
 A spinor of the first Peirce copy
 $$
-\xi_+=\alpha\tilde\Pi_++\beta\vec\Upsilon_+
+\zeta_+=\alpha\tilde\Pi_++\beta\vec\Upsilon_+
 \longleftrightarrow
 \begin{pmatrix}\alpha\\\beta\end{pmatrix}
 $$
@@ -725,9 +725,9 @@ is represented by the matrix
 $$
 \begin{pmatrix}\alpha&0\\\beta&0\end{pmatrix},
 $$
-whose first column is $\xi_+$ and whose second column is zero. A spinor of the second Peirce copy
+whose first column is $\zeta_+$ and whose second column is zero. A spinor of the second Peirce copy
 $$
-\xi_-=\gamma\vec\Upsilon_-+\delta\tilde\Pi_-
+\zeta_-=\gamma\vec\Upsilon_-+\delta\tilde\Pi_-
 \longleftrightarrow
 \begin{pmatrix}\gamma\\\delta\end{pmatrix}
 $$
@@ -735,11 +735,11 @@ is represented by the matrix
 $$
 \begin{pmatrix}0&\gamma\\0&\delta\end{pmatrix},
 $$
-whose first column is zero and whose second column is $\xi_-$. The order $(\vec\Upsilon_-,\tilde\Pi_-)$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
+whose first column is zero and whose second column is $\zeta_-$. The order $(\vec\Upsilon_-,\tilde\Pi_-)$ is the eigenbasis of $S_-$ used above; it is the order in which the diagonal values are $(\lambda_+,\lambda_-)$.
 
 Multiplication by $\tilde Q$ acts on the first column by $\mathsf M_2^{Q}(\tilde Q)$,
 $$
-\tilde Q\xi_+\longleftrightarrow
+\tilde Q\zeta_+\longleftrightarrow
 \begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
 \begin{pmatrix}\alpha\\\beta\end{pmatrix}
 =
@@ -747,7 +747,7 @@ $$
 $$
 and on the second column by the same matrix,
 $$
-\tilde Q\xi_-\longleftrightarrow
+\tilde Q\zeta_-\longleftrightarrow
 \begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
 \begin{pmatrix}\gamma\\\delta\end{pmatrix}
 =
@@ -761,21 +761,21 @@ The eigenbasis data depend on $\tilde Q$ through its root. The comparison is col
 
 | Object | Depends on $\tilde Q$? |
 |---|---|
-| Root $\vec\Xi$ and idempotents $\tilde\Pi_\pm$ | yes |
+| Root $\vec{Ζ}$ and idempotents $\tilde\Pi_\pm$ | yes |
 | Corner lines $\mathbb{B}_{+-},\mathbb{B}_{-+}$ as subspaces | yes |
 | Left ideals $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ | yes |
 | Pair $(\vec\Upsilon_+,\vec\Upsilon_-)$ | yes, through the root; the residual scale is removed by the normalisation |
 | Diagonal values $(\lambda_+,\lambda_-)$ of $L_{\tilde Q}$ | yes |
 | Peirce coordinates of a general element $\tilde Q_2$ | yes |
 
-The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec\Xi=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
+The eigenbasis is not the standard Peirce basis attached to the fixed root $i\vec e_z$. The two coincide, up to the reciprocal rescaling, exactly when $\vec Q$ is parallel to $\vec e_z$, that is, when $Q_x=Q_y=0$. In that case $\vec{Ζ}=\pm i\vec e_z$, the pair is the standard pair up to the exchange of its two members, and the nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$, in one order or the other, up to the reciprocal rescaling.
 
 ## The Eigenbasis Data
 
 Given $\tilde Q$ with $B^2\neq0$, the following data are attached to $\tilde Q$:
 $$
-\vec\Xi=-\frac{i\vec Q}{B},\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
+\vec{Ζ}=-\frac{i\vec Q}{B},\qquad
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm \beta,
 $$
 $$
@@ -827,23 +827,23 @@ The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_+\mat
 **Spinors.**
 A spinor of the first Peirce copy is an element of $S_+$,
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 \qquad (Q_{2,11},Q_{2,21})\in\mathbb{C}^2,
 $$
 and under left multiplication
 $$
-\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
 \qquad\text{that is,}\qquad
 (Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\;\lambda_-Q_{2,21}).
 $$
 A spinor of the second Peirce copy is an element of $S_-$,
 $$
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 \qquad (Q_{2,12},Q_{2,22})\in\mathbb{C}^2,
 $$
 and under left multiplication
 $$
-\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
 \qquad\text{that is,}\qquad
 (Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$
@@ -998,7 +998,7 @@ with equality exactly when $\vec U$ is real, that is, when the element is normal
 **The root and the two idempotents.**
 
 $$
-\boxed{\ \vec\Xi=-\frac{i}{B}\vec Q=-\frac{iQ_x}{B}\vec e_x-\frac{iQ_y}{B}\vec e_y-\frac{iQ_z}{B}\vec e_z,\qquad \vec\Xi^2=e_t\ }
+\boxed{\ \vec{Ζ}=-\frac{i}{B}\vec Q=-\frac{iQ_x}{B}\vec e_x-\frac{iQ_y}{B}\vec e_y-\frac{iQ_z}{B}\vec e_z,\qquad \vec{Ζ}^2=e_t\ }
 $$
 
 $$
@@ -1041,11 +1041,11 @@ $$
 
 $$
 \boxed{\ \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
-=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec\Xi
+=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec{Ζ}
 =Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\ }
 $$
 
-with $\vec\Xi=-i\vec Q/B$. The eigenvalues weight the operator, not the element: in this basis $L_{\tilde Q}$ has the diagonal values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and $R_{\tilde Q}$ the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The sum weighted by them, $\lambda_+\tilde\Pi_++\lambda_+\vec\Upsilon_-+\lambda_-\vec\Upsilon_++\lambda_-\tilde\Pi_-$, is not $\tilde Q$.
+with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element: in this basis $L_{\tilde Q}$ has the diagonal values $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, and $R_{\tilde Q}$ the values $\lambda_+,\lambda_-,\lambda_+,\lambda_-$. The sum weighted by them, $\lambda_+\tilde\Pi_++\lambda_+\vec\Upsilon_-+\lambda_-\vec\Upsilon_++\lambda_-\tilde\Pi_-$, is not $\tilde Q$.
 
 ## Summary
 

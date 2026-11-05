@@ -84,35 +84,35 @@ factorisation of the Laplacian is stated in *Dirac Differential Operators*.
 **Definition.** The **principal symbol** of $D$ is the map $\sigma:\mathbb{R}^{m+1}\to A$,
 
 $$
-\sigma(\xi) = \xi_t+\sum_{i=1}^{m}e_i\,\xi_i ,
+\sigma(\zeta) = \zeta_t+\sum_{i=1}^{m}e_i\,\zeta_i ,
 $$
 
 and the **reflected symbol** is
-$\bar\sigma(\xi)=\xi_t-\sum_{i\ge1}e_i\xi_i$.
+$\bar\sigma(\zeta)=\zeta_t-\sum_{i\ge1}e_i\zeta_i$.
 
-**Proposition (invertibility of the symbol).** For every $\xi\neq0$,
+**Proposition (invertibility of the symbol).** For every $\zeta\neq0$,
 
 $$
-\boxed{\;\sigma(\xi)\,\bar\sigma(\xi) = \bar\sigma(\xi)\,\sigma(\xi) = |\xi|^2 = \xi_t^2+\sum_{i=1}^{m}\xi_i^2 > 0\;} ,
+\boxed{\;\sigma(\zeta)\,\bar\sigma(\zeta) = \bar\sigma(\zeta)\,\sigma(\zeta) = |\zeta|^2 = \zeta_t^2+\sum_{i=1}^{m}\zeta_i^2 > 0\;} ,
 $$
 
-so $\sigma(\xi)$ is a unit of $A$, with $\sigma(\xi)^{-1}=\bar\sigma(\xi)/|\xi|^2$, and $D$ is
+so $\sigma(\zeta)$ is a unit of $A$, with $\sigma(\zeta)^{-1}=\bar\sigma(\zeta)/|\zeta|^2$, and $D$ is
 **elliptic**.
 
-*Proof.* Expanding the product, the diagonal terms contribute $\xi_t^2+\sum_{i\ge1} e_i\bar e_i\xi_i^2$.
-For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\xi_t^2$ or $\xi_i^2$. The off-diagonal
-terms cancel pairwise, because $\xi_i\xi_j$ is a real scalar and
+*Proof.* Expanding the product, the diagonal terms contribute $\zeta_t^2+\sum_{i\ge1} e_i\bar e_i\zeta_i^2$.
+For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\zeta_t^2$ or $\zeta_i^2$. The off-diagonal
+terms cancel pairwise, because $\zeta_i\zeta_j$ is a real scalar and
 $e_i\bar e_j+\bar e_j e_i=0$ for $i\neq j\ge1$, this being the Clifford relation
 $e_ie_j+e_je_i=-2\delta_{ij}$ after the sign $\bar e_j=\epsilon_j e_j$ with
-$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\xi|^2$ is a positive real number, hence a unit of $A$,
+$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\zeta|^2$ is a positive real number, hence a unit of $A$,
 and the displayed inverse is immediate. The computation is identical in the other order because
-$\xi_t$ is central and the two factors commute.
+$\zeta_t$ is central and the two factors commute.
 
 **Corollary.** The equality $D\bar D=\bar DD=\Delta$ holds, $\Delta=\partial^2/\partial x_t^2+\sum_{i=1}^{m}\partial^2/\partial x_i^2$
 being the Laplacian of the ambient space, and $D$ is a first-order elliptic operator with constant
 coefficients.
 
-*Proof.* Applying the symbol computation to the covector $i\xi$ and separating orders gives the
+*Proof.* Applying the symbol computation to the covector $i\zeta$ and separating orders gives the
 operator identity; equivalently, expand $D\bar D$ directly as in *Regularity and the Cauchy–Riemann
 Operator*.
 
@@ -302,8 +302,8 @@ The operator of Clifford analysis is $D=\partial/\partial x_t+\sum_{i=1}^{m}e_i\
 $\mathcal{S}$-valued functions of a vector variable by the one-sided Clifford action; the corpus
 names it the Cauchy–Riemann operator, and the classical name *Dirac operator* is carried by the
 self-adjoint family of *Dirac Differential Operators*. Its principal symbol is left multiplication
-by $\sigma(\xi)=\xi_t+\sum_{i\ge1}e_i\xi_i$, which satisfies $\sigma(\xi)\bar\sigma(\xi)=|\xi|^2$; hence
-$\sigma(\xi)$ is a unit for $\xi\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
+by $\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$, which satisfies $\sigma(\zeta)\bar\sigma(\zeta)=|\zeta|^2$; hence
+$\sigma(\zeta)$ is a unit for $\zeta\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
 coefficients are constant, $D$ is the divergence of the field with components $e_\mu f$, and the
 divergence theorem applies to it with the conormal element $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$.
 
@@ -335,7 +335,7 @@ Twisted Cauchy–Riemann Operator*.
 | $D=\partial/\partial x_t+\sum_{i=1}^{m}e_i\partial/\partial x_i$ | The operator of the article (the corpus's Cauchy–Riemann operator) |
 | $\bar D=\partial/\partial x_t-\sum_{i\ge1}e_i\partial/\partial x_i$ | Conjugate operator |
 | $\Delta=\sum_\mu\partial^2/\partial x_\mu^2$ | Laplacian; $D\bar D=\bar DD=\Delta$ |
-| $\sigma(\xi)=\xi_t+\sum_{i\ge1}e_i\xi_i$ | Principal symbol; $\sigma\bar\sigma=|\xi|^2$ |
+| $\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$ | Principal symbol; $\sigma\bar\sigma=|\zeta|^2$ |
 | $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$ | Conormal element of a boundary |
 | $D^{*}=-\bar D$ | Adjoint for the module form with skew vectors |
 | $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$ | Self-adjoint vector part; $D_{\mathrm{sa}}^2=-\Delta$ |

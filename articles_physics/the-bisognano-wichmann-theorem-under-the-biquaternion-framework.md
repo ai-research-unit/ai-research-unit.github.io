@@ -36,7 +36,7 @@ The article proceeds as follows. The theorem is stated first, with its two hypot
 $$
 \boxed{\;\Delta = \exp(-2\pi K_{\mathrm{boost}})\;},
 $$
-where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\xi=c\partial/\partial\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde U_{\mathrm b}(-2\pi s)$, which is future-directed on $W_R$):
+where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\zeta=c\partial/\partial\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde U_{\mathrm b}(-2\pi s)$, which is future-directed on $W_R$):
 $$
 \sigma_s(\tilde Q_1)=\Delta^{is}\tilde Q_1\Delta^{-is} = \text{the boost of rapidity }2\pi s\text{ applied to }\tilde Q_1 .
 $$
@@ -83,7 +83,7 @@ The theorem is about wedges because the wedge is the region for which the releva
 
 **The wedge is a Killing horizon.** The right wedge $W_R=\{x:x_1>|x_0|\}$ is bounded by the two null planes $x_1=\pm x_0$. Its boundary is a **bifurcate Killing horizon** for the boost Killing vector
 $$
-\xi=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta,
+\zeta=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta,
 $$
 which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose orbits are the constant-$\rho$ hyperbolas $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$. In the material sector $\mathbb{M}_-$ the boundary lies in the **zero-divisor cone** $\langle\tilde{Q}\rangle_{\natural}=0$, as established in the companion article on $\mathbb{M}_-$ and used in the Unruh article. In the boost plane $(x_0,x_1)$ the wedge is exactly a connected component of the complement of the light cone of that plane — the two null lines $x_1=\pm x_0$ — and the boost is exactly the Killing vector that preserves it.
 
@@ -270,7 +270,7 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=-c^2{t'}^2+x^2+y^2+z^2$ | Biquaternion norm |
 | $W_R=\{x:x_1>|x_0|\}$, $W_L$ | Right wedge and its mirror (causal complement) |
 | $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $ct'=\rho\sinh\eta$ |
-| $\xi=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta$ | Boost Killing vector |
+| $\zeta=x\partial/\partial t'+c^2t'\partial/\partial Q_x=c\partial/\partial\eta$ | Boost Killing vector |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator (Hermitian, $G_1^2=e_t$) |
 | $\tilde U_{\mathrm b}(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{M}_-$ |

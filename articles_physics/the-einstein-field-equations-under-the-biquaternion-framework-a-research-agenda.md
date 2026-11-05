@@ -63,7 +63,7 @@ $$
 \qquad \tilde Q_{\mathrm d} \in \mathbb{M}_-,
 $$
 
-and it reproduces $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial Q_\mu\,\xi_\nu - \partial/\partial Q_\nu\,\xi_\mu$ with $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$. Its *shape* is the electromagnetic one — the exterior derivative of a gauge parameter — but its *origin* is a diffeomorphism, for which the algebra has no representation, and the article says so without qualification. The trace-reversal has a clean frame image,
+and it reproduces $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial Q_\mu\,\zeta_\nu - \partial/\partial Q_\nu\,\zeta_\mu$ with $\zeta_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$. Its *shape* is the electromagnetic one — the exterior derivative of a gauge parameter — but its *origin* is a diffeomorphism, for which the algebra has no representation, and the article says so without qualification. The trace-reversal has a clean frame image,
 
 $$
 \bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu,
@@ -90,7 +90,7 @@ The traceless part of $h_{\mu\nu}$ — nine of the ten components, and the whole
 
 The wave article begins from the standard theory, recomputes it, and then asks what the framework contains.
 
-The harmonic condition $\partial/\partial Q_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on ten components, and it can always be imposed. It does **not** exhaust the gauge freedom: it is preserved by exactly those transformations with $\Box\xi_\nu = 0$, a statement the article verifies on a general smooth gauge parameter and not only on a plane wave. In the framework's variables the residual freedom is the kernel of $\Box$ acting on $\mathbb{M}_-$,
+The harmonic condition $\partial/\partial Q_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on ten components, and it can always be imposed. It does **not** exhaust the gauge freedom: it is preserved by exactly those transformations with $\Box\zeta_\nu = 0$, a statement the article verifies on a general smooth gauge parameter and not only on a plane wave. In the framework's variables the residual freedom is the kernel of $\Box$ acting on $\mathbb{M}_-$,
 
 $$
 \Box\tilde Q_{\mathrm d} = 0 ,
@@ -278,7 +278,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | metric carried by the frame | inherited |
 | $\delta\tilde{E}_\mu$, $\bar{\delta\tilde{E}}_\mu$ | frame perturbation and its trace-reversed form | inherited |
 | $h_{\mu\nu}$, $h$, $\bar{h}_{\mu\nu}$ | metric perturbation, its Lorentzian trace, and its trace-reversal | inherited |
-| $\tilde Q_{\mathrm d}$, $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | gauge parameter in $\mathbb{M}_-$ and its four-vector image | inherited |
+| $\tilde Q_{\mathrm d}$, $\zeta_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | gauge parameter in $\mathbb{M}_-$ and its four-vector image | inherited |
 | $A_{ij}$, $\mathcal{Q}_{ij}$, $I_{ij}$, $k_\mu$ | plane-wave amplitudes; quadrupole moment and null wave vector | inherited |
 | $S[\tilde{E}_\mu,\vec\Gamma_\mu]$, $\mathcal{L}$ | biquaternion-valued action and Lagrangian density | new in this article |
 | $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ | the six-dimensional traceless real Lie subspace $\mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | naming of an inherited object |

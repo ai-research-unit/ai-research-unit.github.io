@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Let $\star$ be a product on the quaternion space $\mathbb{H}$. An element $\tilde\xi$ is a **root of the central value** $e_t$ when its square in that product is the value,
+Let $\star$ be a product on the quaternion space $\mathbb{H}$. An element $\tilde\zeta$ is a **root of the central value** $e_t$ when its square in that product is the value,
 
 $$
-\tilde\xi\star\tilde\xi=e_t ,
+\tilde\zeta\star\tilde\zeta=e_t ,
 $$
 
 and the **root set of $+1$** is the set of its solutions. An element $\tilde\pi$ is an **idempotent** of the same product when
@@ -14,7 +14,7 @@ $$
 \tilde\pi\star\tilde\pi=\tilde\pi .
 $$
 
-The two equations name one product and one square operator. Beside the algebra product $\tilde q_1\tilde q_2$ of the *Quaternions* category, the space carries the three companion structures of this category, and this article answers both questions once for the three, reading them together because the idempotent set is the root set of $+1$ carried by one map, the halving map $\tilde\pi=\tfrac12(e_t+\tilde\xi)$. The idempotent architecture rests on the roots of $+1$ alone. The algebra product is named once for the contrast and cited, not restated.
+The two equations name one product and one square operator. Beside the algebra product $\tilde q_1\tilde q_2$ of the *Quaternions* category, the space carries the three companion structures of this category, and this article answers both questions once for the three, reading them together because the idempotent set is the root set of $+1$ carried by one map, the halving map $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$. The idempotent architecture rests on the roots of $+1$ alone. The algebra product is named once for the contrast and cited, not restated.
 
 The value $e_t$ is central, the centre of the quaternion space over $\mathbb{R}$ being the real line, so it is the value $\lambda e_t$ at $\lambda=+1$. The other signed value, $\lambda=-1$, is not a second subject: its root set is a single closing remark at the end of §*The Roots of One in the Three Companion Structures*, quoted nowhere else in the article. The value $0$, the square-zero elements and the nilpotents are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the general value $\lambda$ is *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, the companion article.
 
@@ -24,7 +24,7 @@ $$
 \tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
-the **symmetric plain algebra** of the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, the **antisymmetric plain algebra** of the cross product $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
+the **symmetric plain algebra** of the Jordan product $\tilde\zeta\bullet\tilde q=\tfrac12(\tilde\zeta\tilde q+\tilde q\tilde\zeta)$, the **antisymmetric plain algebra** of the cross product $\tilde\zeta\wedge\tilde q=\vec\zeta\times\vec q$, and the **general quaternionic algebra** of the product $\tilde\zeta^{\natural}\tilde q$. Every table of the article follows this order.
 
 ## The Roots of One in the Three Companion Structures
 
@@ -32,8 +32,8 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structure | at the two equal arguments |
 |---|---|---|
-| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
-| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
+| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\zeta_t^{2}-\lvert\vec\zeta\rvert^{2})e_t+2\zeta_t\vec\zeta$ |
+| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\zeta\rangle_{\natural}e_t$ |
 | the vanishing square | $\tilde Q_1\wedge\tilde Q_2$ | $0$ |
 
 The algebra product of the space carries the plain square as well, and that reading is owned by the *Quaternions* category.
@@ -41,14 +41,14 @@ The algebra product of the space carries the plain square as well, and that read
 **Definition.** The **root set of $+1$** in the structure $\star$ is
 
 $$
-\mathcal R_{+1}=\{\tilde\xi:\tilde\xi\star\tilde\xi=e_t\} .
+\mathcal R_{+1}=\{\tilde\zeta:\tilde\zeta\star\tilde\zeta=e_t\} .
 $$
 
 The value is signed, and the quaternion form decides the nature of every root, because the norm of a square is the square of the norm.
 
-**Theorem (a root of $+1$ is a unit of the algebra).** Let $\tilde\xi$ be a root of $+1$ in one of the three companion structures. Then $\langle\tilde\xi\rangle_{\natural}=1$, the element is a unit of $\mathbb{H}$, and its two-sided inverse is $\tilde\xi^{-1}=\tilde\xi^{\natural}/\langle\tilde\xi\rangle_{\natural}$.
+**Theorem (a root of $+1$ is a unit of the algebra).** Let $\tilde\zeta$ be a root of $+1$ in one of the three companion structures. Then $\langle\tilde\zeta\rangle_{\natural}=1$, the element is a unit of $\mathbb{H}$, and its two-sided inverse is $\tilde\zeta^{-1}=\tilde\zeta^{\natural}/\langle\tilde\zeta\rangle_{\natural}$.
 
-*Proof.* The square of the root is $e_t$, and the norm is multiplicative, $\langle\tilde\xi^{2}\rangle_{\natural}=\langle\tilde\xi\rangle_{\natural}^{2}$, so $\langle\tilde\xi\rangle_{\natural}^{2}=\langle e_t\rangle_{\natural}=1$ and $\langle\tilde\xi\rangle_{\natural}=1$. The criterion of invertibility of the algebra is $N\neq0$ and the two-sided inverse is $\tilde\xi^{\natural}/\langle\tilde\xi\rangle_{\natural}$ (*Norm and Invertibility in the Quaternion Algebra*, *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*). The antisymmetric plain structure has no root of $+1$ and the statement is empty for it.
+*Proof.* The square of the root is $e_t$, and the norm is multiplicative, $\langle\tilde\zeta^{2}\rangle_{\natural}=\langle\tilde\zeta\rangle_{\natural}^{2}$, so $\langle\tilde\zeta\rangle_{\natural}^{2}=\langle e_t\rangle_{\natural}=1$ and $\langle\tilde\zeta\rangle_{\natural}=1$. The criterion of invertibility of the algebra is $N\neq0$ and the two-sided inverse is $\tilde\zeta^{\natural}/\langle\tilde\zeta\rangle_{\natural}$ (*Norm and Invertibility in the Quaternion Algebra*, *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*). The antisymmetric plain structure has no root of $+1$ and the statement is empty for it.
 
 The algebra is a division algebra, so it decomposes as
 
@@ -60,39 +60,39 @@ with no zero-divisor term, the algebra product having no zero divisor at all (*Z
 
 **Theorem (the root sets of $+1$).** Among the three companion structures the root set of $+1$ is the pair $\pm e_t$ for the symmetric plain algebra, the unit sphere $S^{3}$ of real dimension three for the general quaternionic algebra, and the empty set for the antisymmetric plain algebra. The algebra product of the same space has the pair $\pm e_t$, and that reading is owned by the *Quaternions* category.
 
-*Proof.* The plain square is the plain form on the scalar part and twice the product $\xi_t\vec\xi$ on the vector part; the central square is the quaternion form; and the vanishing square is zero. The three readings are below.
+*Proof.* The plain square is the plain form on the scalar part and twice the product $\zeta_t\vec\zeta$ on the vector part; the central square is the quaternion form; and the vanishing square is zero. The three readings are below.
 
 The three are read one by one; each names the product, its square and its root set of $+1$, and cites the article that owns them.
 
 ### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
-The product is $\tilde\xi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the root problem is the single real equation $\langle\tilde\xi\rangle_{\natural}=1$, whose solutions form the unit sphere $S^{3}$ of real dimension three, the group of the unit quaternions. The article is *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
+The product is $\tilde\zeta^{\natural}\tilde q$, and its square is the central element $\langle\tilde\zeta\rangle_{\natural}e_t$, so the root problem is the single real equation $\langle\tilde\zeta\rangle_{\natural}=1$, whose solutions form the unit sphere $S^{3}$ of real dimension three, the group of the unit quaternions. The article is *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
 
 ### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, so the root set of $+1$ is the plain one: the equation $\tilde\xi^{2}=e_t$ is the pair $\langle\tilde\xi\rangle=1$, $2\xi_t\vec\xi=0$. The second equation forces $\xi_t=0$ or $\vec\xi=0$; the pure branch gives $-\lvert\vec\xi\rvert^{2}=1$, which is empty over $\mathbb{R}$, and the central branch gives $\xi_t^{2}=1$ and the two roots $\tilde\xi=\pm e_t$. The root set of $+1$ is the pair $\pm e_t$, although the Jordan structure is not associative. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
+The product is the Jordan product $\tilde\zeta\bullet\tilde q=\tfrac12(\tilde\zeta\tilde q+\tilde q\tilde\zeta)$, and its square is the plain square, $\tilde\zeta\bullet\tilde\zeta=\tilde\zeta^{2}$, so the root set of $+1$ is the plain one: the equation $\tilde\zeta^{2}=e_t$ is the pair $\langle\tilde\zeta\rangle=1$, $2\zeta_t\vec\zeta=0$. The second equation forces $\zeta_t=0$ or $\vec\zeta=0$; the pure branch gives $-\lvert\vec\zeta\rvert^{2}=1$, which is empty over $\mathbb{R}$, and the central branch gives $\zeta_t^{2}=1$ and the two roots $\tilde\zeta=\pm e_t$. The root set of $+1$ is the pair $\pm e_t$, although the Jordan structure is not associative. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation reduces to $0=e_t$. The root set of $+1$ is empty. The article is *Introduction to the Antisymmetric Plain Algebra*.
+The product is the commutator $\tilde\zeta\wedge\tilde q=\vec\zeta\times\vec q$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\zeta\wedge\tilde\zeta=0$, and the equation reduces to $0=e_t$. The root set of $+1$ is empty. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
 **The algebra product and the general quaternionic product at $+1$.** At the value $+1$ the algebra product has the pair $\pm e_t$ and the general quaternionic product the sphere $S^{3}$, and the two root sets differ.
 
 **The word is *differ*, not *coincide*.** The zero-divisor sets of the two are one set read twice, the empty set, the algebra being a division algebra; their root sets at $+1$ are two different sets. The reason is the one on which the whole chapter turns: the two products read the same norm, and the zero-divisor criterion is the norm, but their squares are $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$, which differ by a sign on the vector subspace, so the values at which the squares reach the unit are not the same values.
 
-**The two families of the plain reduction.** The reduction of the plain square is the vanishing of the vector part, $2\xi_t\vec\xi=0$, and the two factors give the two families of the plain reduction.
+**The two families of the plain reduction.** The reduction of the plain square is the vanishing of the vector part, $2\zeta_t\vec\zeta=0$, and the two factors give the two families of the plain reduction.
 
-**Definition.** An element is **pure** when its scalar part vanishes, $\xi_t=0$, and **central** when its vector part vanishes, $\vec\xi=0$.
+**Definition.** An element is **pure** when its scalar part vanishes, $\zeta_t=0$, and **central** when its vector part vanishes, $\vec\zeta=0$.
 
-| | pure, $\xi_t=0$ | central, $\xi_t\neq0$ |
+| | pure, $\zeta_t=0$ | central, $\zeta_t\neq0$ |
 |---|---|---|
-| the reduction $2\xi_t\vec\xi=0$ | satisfied identically | forces $\vec\xi=0$ |
+| the reduction $2\zeta_t\vec\zeta=0$ | satisfied identically | forces $\vec\zeta=0$ |
 | a root of $+1$ | none | the pair $\pm e_t$ |
 | the dimension | $3$ | $1$ |
 
 The root of $+1$ of the plain square lies in the centre, where the reduction has already forced the vector part to vanish, and the pure family carries none of them.
 
-**The roots of $-1$.** The other signed value is quoted here once and used nowhere else. The sign does not flip by a central scalar: the centre of $\mathbb{H}$ is the real line, which contains no element of square $-1$, so there is no central imaginary to multiply a root of $+1$ by, and the two signed root sets are read from the squares directly. For the plain square the pure branch is the negative-definite form, so the root set of $-1$ is the pure unit sphere $S^{2}$ of the complex structures, of real dimension two, disjoint from the central pair $\pm e_t$; the two signed root sets of the plain square are therefore read on the two different branches of the one square, the pure branch at $-1$ and the central branch at $+1$. The general quaternionic square is $\langle\tilde\xi\rangle_{\natural}e_t$ with $N\geq0$, and the antisymmetric square vanishes, so in these two companion structures the root set of $-1$ is empty.
+**The roots of $-1$.** The other signed value is quoted here once and used nowhere else. The sign does not flip by a central scalar: the centre of $\mathbb{H}$ is the real line, which contains no element of square $-1$, so there is no central imaginary to multiply a root of $+1$ by, and the two signed root sets are read from the squares directly. For the plain square the pure branch is the negative-definite form, so the root set of $-1$ is the pure unit sphere $S^{2}$ of the complex structures, of real dimension two, disjoint from the central pair $\pm e_t$; the two signed root sets of the plain square are therefore read on the two different branches of the one square, the pure branch at $-1$ and the central branch at $+1$. The general quaternionic square is $\langle\tilde\zeta\rangle_{\natural}e_t$ with $N\geq0$, and the antisymmetric square vanishes, so in these two companion structures the root set of $-1$ is empty.
 
 ## The Idempotents in the Three Companion Structures
 
@@ -102,27 +102,27 @@ An idempotent is an element equal to its own square, the equation naming a produ
 
 ### The Halving Map from the Roots of One to the Idempotents
 
-A root of $+1$ and an idempotent are two readings of one element when $e_t$ is a two-sided unit of the product, and the map is the halving map $\tilde\pi=\tfrac12(e_t+\tilde\xi)$, with the inverse $\tilde\xi=2\tilde\pi-e_t$. Expanding the square of the halved element,
+A root of $+1$ and an idempotent are two readings of one element when $e_t$ is a two-sided unit of the product, and the map is the halving map $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$, with the inverse $\tilde\zeta=2\tilde\pi-e_t$. Expanding the square of the halved element,
 
 $$
-\tilde\pi\star\tilde\pi=\tfrac14\bigl(e_t\star e_t+e_t\star\tilde\xi+\tilde\xi\star e_t+\tilde\xi\star\tilde\xi\bigr) ,
+\tilde\pi\star\tilde\pi=\tfrac14\bigl(e_t\star e_t+e_t\star\tilde\zeta+\tilde\zeta\star e_t+\tilde\zeta\star\tilde\zeta\bigr) ,
 $$
 
-so that a two-sided unit, $e_t\star e_t=e_t$ and $e_t\star\tilde\xi=\tilde\xi=\tilde\xi\star e_t$, together with $\tilde\xi\star\tilde\xi=e_t$, gives
+so that a two-sided unit, $e_t\star e_t=e_t$ and $e_t\star\tilde\zeta=\tilde\zeta=\tilde\zeta\star e_t$, together with $\tilde\zeta\star\tilde\zeta=e_t$, gives
 
 $$
-\boxed{\;\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+2\tilde\xi\bigr)=\tfrac12(e_t+\tilde\xi)=\tilde\pi\;}.
+\boxed{\;\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+2\tilde\zeta\bigr)=\tfrac12(e_t+\tilde\zeta)=\tilde\pi\;}.
 $$
 
-The map is therefore a bijection of the root set of $+1$ onto the idempotent set wherever $e_t$ is a two-sided unit, that is for the symmetric plain algebra, where it pairs the roots $\pm e_t$ of $+1$ with the idempotents $e_t$ and $0$; the inverse $\tilde\xi=2\tilde\pi-e_t$ reads an idempotent as a root of $+1$. The same bijection holds for the algebra product, $e_t$ being its two-sided unit, and that reading is owned by the *Quaternions* category.
+The map is therefore a bijection of the root set of $+1$ onto the idempotent set wherever $e_t$ is a two-sided unit, that is for the symmetric plain algebra, where it pairs the roots $\pm e_t$ of $+1$ with the idempotents $e_t$ and $0$; the inverse $\tilde\zeta=2\tilde\pi-e_t$ reads an idempotent as a root of $+1$. The same bijection holds for the algebra product, $e_t$ being its two-sided unit, and that reading is owned by the *Quaternions* category.
 
-**For the general quaternionic algebra the map is not a bijection, and the idempotent set is read from the central equation.** There the unit $e_t$ is a left unit alone, $\tilde\xi\star e_t=\tilde\xi^{\natural}$, and the same expansion gives
+**For the general quaternionic algebra the map is not a bijection, and the idempotent set is read from the central equation.** There the unit $e_t$ is a left unit alone, $\tilde\zeta\star e_t=\tilde\zeta^{\natural}$, and the same expansion gives
 
 $$
-\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+\tilde\xi+\tilde\xi^{\natural}\bigr)=\tfrac12e_t+\tfrac12\xi_te_t \qquad\text{against}\qquad \tilde\pi=\tfrac12e_t+\tfrac12\tilde\xi ,
+\tilde\pi\star\tilde\pi=\tfrac14\bigl(2e_t+\tilde\zeta+\tilde\zeta^{\natural}\bigr)=\tfrac12e_t+\tfrac12\zeta_te_t \qquad\text{against}\qquad \tilde\pi=\tfrac12e_t+\tfrac12\tilde\zeta ,
 $$
 
-equal exactly when $\tilde\xi=\xi_te_t$ is central. Of the sphere of roots of $+1$ only the two central points $\pm e_t$ are carried to idempotents, and the two-point set is read directly from the idempotent equation, which is central there.
+equal exactly when $\tilde\zeta=\zeta_te_t$ is central. Of the sphere of roots of $+1$ only the two central points $\pm e_t$ are carried to idempotents, and the two-point set is read directly from the idempotent equation, which is central there.
 
 **Theorem (the three idempotent sets).** Among the three companion structures the idempotents are $\{0,e_t\}$ for the symmetric plain algebra and for the general quaternionic algebra, and $\{0\}$ for the antisymmetric plain algebra. Only two idempotent sets occur, the origin belongs to both, and no nontrivial idempotent exists except the unit $e_t$ of the two non-alternating structures.
 
@@ -154,8 +154,8 @@ The two sets are collected below, the algebra product and the general quaternion
 
 | the structure | the square | the roots of $+1$ |
 |---|---|---|
-| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | the sphere $S^{3}$ of the unit quaternions, real dimension $3$ |
-| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\xi^{2}$ | the pair $\pm e_t$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\zeta\rangle_{\natural}e_t$ | the sphere $S^{3}$ of the unit quaternions, real dimension $3$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\zeta^{2}$ | the pair $\pm e_t$ |
 | $\tilde Q_1\wedge\tilde Q_2$ | $0$ | none |
 
 Two companion structures have a root of $+1$, the pair $\pm e_t$ for the symmetric plain algebra and the sphere $S^{3}$ for the general quaternionic algebra, and the failure of the third is the vanishing of its square: the alternating structure has no square to read, so no element is a root of a signed value. The pair $\pm e_t$ is the centre of the quaternionic sphere. The algebra product has the pair $\pm e_t$, as owned by *Square Roots of One and the Idempotents of the Quaternion Algebra*.
@@ -180,25 +180,25 @@ Over $\mathbb{C}$ the same questions have larger answers, and the difference is 
 
 A root of $+1$ is an element whose square in the structure is the unit $e_t$, and an idempotent is an element equal to its own square. The two questions are read on the same square operator and answered once for the three companion structures of the quaternion real space.
 
-A root of $+1$ has $\langle\cdot\rangle_{\natural}=1$ and is a unit of the algebra, with the two-sided inverse $\tilde\xi^{\natural}/\langle\tilde\xi\rangle_{\natural}$. The symmetric plain algebra has the pair $\pm e_t$ as its root set of $+1$; the general quaternionic algebra has the unit sphere $S^{3}$ of real dimension three; and the antisymmetric plain algebra has none, its square vanishing identically. The algebra product and the general quaternionic product differ at the value $+1$: the former reads the central pair and the latter the sphere, one sign of the vector part apart. The roots of $-1$ are a closing remark: over $\mathbb{R}$ there is no central imaginary to flip the sign, the plain square has the pure unit sphere $S^{2}$ of the complex structures, and the general quaternionic and the antisymmetric plain structures have no root of $-1$.
+A root of $+1$ has $\langle\cdot\rangle_{\natural}=1$ and is a unit of the algebra, with the two-sided inverse $\tilde\zeta^{\natural}/\langle\tilde\zeta\rangle_{\natural}$. The symmetric plain algebra has the pair $\pm e_t$ as its root set of $+1$; the general quaternionic algebra has the unit sphere $S^{3}$ of real dimension three; and the antisymmetric plain algebra has none, its square vanishing identically. The algebra product and the general quaternionic product differ at the value $+1$: the former reads the central pair and the latter the sphere, one sign of the vector part apart. The roots of $-1$ are a closing remark: over $\mathbb{R}$ there is no central imaginary to flip the sign, the plain square has the pure unit sphere $S^{2}$ of the complex structures, and the general quaternionic and the antisymmetric plain structures have no root of $-1$.
 
-The idempotents answer with two sets alone. The two non-alternating structures have the two-point set $\{0,e_t\}$, the origin and the unit; the antisymmetric plain structure has the origin alone, its square vanishing identically, so that $e_t$ is not an idempotent for it. The halving map $\tilde\pi=\tfrac12(e_t+\tilde\xi)$, with the inverse $\tilde\xi=2\tilde\pi-e_t$, is a bijection of the roots of $+1$ onto the idempotents for the symmetric plain algebra, where $e_t$ is a two-sided unit, and for the general quaternionic algebra it carries only the two central roots $\pm e_t$, the idempotent set being read from the central equation. The theory is coarser than over the biquaternion complex space because the real field has no scalar imaginary and the plain form is negative definite on the vector subspace.
+The idempotents answer with two sets alone. The two non-alternating structures have the two-point set $\{0,e_t\}$, the origin and the unit; the antisymmetric plain structure has the origin alone, its square vanishing identically, so that $e_t$ is not an idempotent for it. The halving map $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$, with the inverse $\tilde\zeta=2\tilde\pi-e_t$, is a bijection of the roots of $+1$ onto the idempotents for the symmetric plain algebra, where $e_t$ is a two-sided unit, and for the general quaternionic algebra it carries only the two central roots $\pm e_t$, the idempotent set being read from the central equation. The theory is coarser than over the biquaternion complex space because the real field has no scalar imaginary and the plain form is negative definite on the vector subspace.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde\xi\star\tilde\xi=e_t$ | the root equation of the value $+1$ in the structure $\star$ |
+| $\tilde\zeta\star\tilde\zeta=e_t$ | the root equation of the value $+1$ in the structure $\star$ |
 | $\mathcal R_{+1}$ | the root set of $+1$ |
 | $\tilde\pi\star\tilde\pi=\tilde\pi$ | the idempotent equation of the structure $\star$ |
-| $\tilde\pi=\tfrac12(e_t+\tilde\xi)$, $\tilde\xi=2\tilde\pi-e_t$ | the halving map and its inverse |
+| $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$, $\tilde\zeta=2\tilde\pi-e_t$ | the halving map and its inverse |
 | $\pm e_t$ | the roots of $+1$ of $\tilde Q_1\bullet\tilde Q_2$, and of the algebra product |
 | $S^{3}$ | the roots of $+1$ of $\tilde Q_1^{\natural}\tilde Q_2$, the unit sphere of the space, real dimension three |
 | $S^{2}$ | the roots of $-1$ of the plain square, the sphere of the pure unit quaternions, real dimension two |
 | $\{0,e_t\}$ | the idempotents of $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$ |
 | $\{0\}$ | the idempotents of $\tilde Q_1\wedge\tilde Q_2$ |
-| $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
+| $\langle\tilde\zeta\rangle=\zeta_t^{2}-\lvert\vec\zeta\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $\langle\tilde\zeta\rangle_{\natural}=\zeta_t^{2}+\lvert\vec\zeta\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
 | $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of the space |
 
 ## Further Reading

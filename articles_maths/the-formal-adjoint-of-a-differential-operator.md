@@ -81,7 +81,7 @@ the **Green formula**, whose right-hand side is the boundary term. The formal ad
 **Proposition.** The formal adjoint has the same order as $P$ and its principal symbol is the adjoint of the symbol of $P$ with the sign $(-1)^k$:
 
 $$
-\boxed{\;\sigma_k(P^*)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^* \ : \ F_x \longrightarrow E_x\;},
+\boxed{\;\sigma_k(P^*)(x,\zeta) = (-1)^k\,\sigma_k(P)(x,\zeta)^* \ : \ F_x \longrightarrow E_x\;},
 $$
 
 the adjoint being taken with respect to the fibrewise metrics; consequently $P$ and $P^*$ have the same characteristic variety and $P$ is elliptic exactly when $P^*$ is.
@@ -95,7 +95,7 @@ the adjoint being taken with respect to the fibrewise metrics; consequently $P$ 
 **Proposition.** A formally self-adjoint operator of order $k$ has
 
 $$
-\sigma_k(P)(x,\xi) = (-1)^k\,\sigma_k(P)(x,\xi)^*,
+\sigma_k(P)(x,\zeta) = (-1)^k\,\sigma_k(P)(x,\zeta)^*,
 $$
 
 so its principal symbol is Hermitian for $k$ even and skew-Hermitian for $k$ odd; in particular an elliptic formally self-adjoint operator of even order has a definite symbol.
@@ -144,7 +144,7 @@ which is the energy form of the operator; the operator is nonnegative, $P \geq 0
 
 The formal adjoint of a differential operator is defined by the integration-by-parts identity $\int\langle Pu,v\rangle d\mu=\int\langle u,P^*v\rangle d\mu$ for compactly supported sections; it exists, is unique, has the same order as the operator, and its local form is the transposed expression $\sum(-1)^{|\alpha|}\partial^\alpha(A_\alpha^*v)$ with the density correction $(\partial/\partial x_i)^{\dagger}=-\partial/\partial x_i-\partial/\partial x_i\,\log\rho$ in each derivative. The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is the divergence of a vector field, the Lagrange identity, which integrates to the boundary term of Green's formula; the formal adjoint is the true adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.
 
-The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and a skew-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.
+The symbol of the adjoint is $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and a skew-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.
 
 ## Summary of Notation
 
@@ -159,7 +159,7 @@ The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so t
 | $P^*v=\sum(-1)^{\lvert\alpha\rvert}\partial^\alpha(A_\alpha^*v)$ | Local formula for the formal adjoint |
 | $\langle v,Pu\rangle-\langle u,P^*v\rangle=\operatorname{div}W$ | Lagrange identity |
 | $\int_\Omega(\langle v,Pu\rangle-\langle u,P^*v\rangle)=\int_{\partial\Omega}\langle W,\nu\rangle\,dS$ | Green formula; the boundary term |
-| $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$ | Symbol of the adjoint; ellipticity preserved |
+| $\sigma_k(P^*)(\zeta)=(-1)^k\sigma_k(P)(\zeta)^*$ | Symbol of the adjoint; ellipticity preserved |
 | Formally self-adjoint, skew-adjoint, normal | $P^*=P$; $P^*=-P$; $P^*P=PP^*$ |
 | $\mathfrak{Q}(u)=\langle Pu,u\rangle_{L^2}$ | Dirichlet form; energy of a self-adjoint operator |
 

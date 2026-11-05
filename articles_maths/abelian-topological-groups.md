@@ -77,8 +77,8 @@ The symbol $G^\vee$ is used throughout in preference to a hat, which the corpus 
 
 | Group $G$ | Dual $G^\vee$ | Pairing $\chi(x)$ |
 |---|---|---|
-| $\mathbb{R}$ | $\mathbb{R}$ | $x \mapsto \exp(2\pi i \xi x)$, $\xi \in \mathbb{R}$ |
-| $\mathbb{R}^n$ | $\mathbb{R}^n$ | $x \mapsto \exp(2\pi i \langle \xi, x\rangle)$ |
+| $\mathbb{R}$ | $\mathbb{R}$ | $x \mapsto \exp(2\pi i \zeta x)$, $\zeta \in \mathbb{R}$ |
+| $\mathbb{R}^n$ | $\mathbb{R}^n$ | $x \mapsto \exp(2\pi i \langle \zeta, x\rangle)$ |
 | $S^1 = \mathbb{R}/\mathbb{Z}$ | $\mathbb{Z}$ | $z \mapsto z^n$, $n \in \mathbb{Z}$ |
 | $\mathbb{Z}$ | $S^1$ | $n \mapsto z^n$, $z \in S^1$ |
 | $\mathbb{Z}/n\mathbb{Z}$ | $\mathbb{Z}/n\mathbb{Z}$ | $m \mapsto \exp(2\pi i k m/n)$, $k \in \mathbb{Z}/n\mathbb{Z}$ |
@@ -90,7 +90,7 @@ The **Prüfer group** $\mu_{p^\infty} = \bigcup_k \mu_{p^k}$ is the group of all
 
 **Proposition (separation).** For a locally compact abelian group $G$ and $x \neq 0$ in $G$, there is a character $\chi$ with $\chi(x) \neq 1$. Hence the characters separate the points of $G$, and the evaluation map $G \to G^{\vee\vee}$ is injective.
 
-**Pro.** By the structure theorem below, $G$ contains an open subgroup of the form $\mathbb{R}^n \times K$ with $K$ compact, so it suffices first to separate points of $\mathbb{R}^n$ and of a compact group, and then to observe that a character of an open subgroup extends to $G$ because $G/H$ is discrete. For $\mathbb{R}^n$ the characters $x \mapsto \exp(2\pi i\langle \xi, x\rangle)$ separate points by the non-degeneracy of the inner product. For a compact group $K$ the characters separate points by the Peter–Weyl theory in Part III, or equivalently by the theorem of Gelfand–Raĭkov that a compact abelian group embeds in a product of circles; the construction uses the Haar measure and the integration of Part III, and is quoted as standard here. Extension from an open subgroup to $G$ uses that $G/H$ is discrete, so a homomorphism on $H$ extends by choosing values on a set of coset representatives and using compactness.
+**Pro.** By the structure theorem below, $G$ contains an open subgroup of the form $\mathbb{R}^n \times K$ with $K$ compact, so it suffices first to separate points of $\mathbb{R}^n$ and of a compact group, and then to observe that a character of an open subgroup extends to $G$ because $G/H$ is discrete. For $\mathbb{R}^n$ the characters $x \mapsto \exp(2\pi i\langle \zeta, x\rangle)$ separate points by the non-degeneracy of the inner product. For a compact group $K$ the characters separate points by the Peter–Weyl theory in Part III, or equivalently by the theorem of Gelfand–Raĭkov that a compact abelian group embeds in a product of circles; the construction uses the Haar measure and the integration of Part III, and is quoted as standard here. Extension from an open subgroup to $G$ uses that $G/H$ is discrete, so a homomorphism on $H$ extends by choosing values on a set of coset representatives and using compactness.
 
 ### Annihilators and the Algebraic Duality
 

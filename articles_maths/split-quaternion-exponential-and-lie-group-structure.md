@@ -99,13 +99,13 @@ a series in the free Lie algebra on $\tilde q_1,\tilde q_2$, convergent near the
 
 $$
 \boxed{\;
-\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\}
+\ker \exp = \{\, 2\pi k\,\vec\zeta \;:\; k \in \mathbb{Z},\ \vec\zeta \in V,\ \vec\zeta^2 = -1 \,\} \cup \{0\}
 \;},
 $$
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 
-**Proof.** $\exp(2\pi k\vec\xi) = \cos(2\pi k) + \sin(2\pi k)\vec\xi = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\xi$ with $\vec\xi$ a root of $-1$ (or $\tilde q = 0$).
+**Proof.** $\exp(2\pi k\vec\zeta) = \cos(2\pi k) + \sin(2\pi k)\vec\zeta = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\zeta$ with $\vec\zeta$ a root of $-1$ (or $\tilde q = 0$).
 
 Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -159,7 +159,7 @@ $$
 
 a non-compact group isomorphic to $\mathbb{R}$, the **hyperbolic** subgroup. The prototypes are $\exp(\theta \vec e_y)$ and $\exp(\theta \vec e_z)$, whose adjoint actions are boosts of the planes $\operatorname{span}\{\vec e_x,\vec e_z\}$ and $\operatorname{span}\{\vec e_x,\vec e_y\}$ of signature $(1,1)$.
 
-**Terminology (hyperbolic versors).** The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \xi\sin\theta$, built on a root of $-1$, is a **versor**, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a **hyperbolic versor**. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in *List of Algebras by Dimension*; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.
+**Terminology (hyperbolic versors).** The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \zeta\sin\theta$, built on a root of $-1$, is a **versor**, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a **hyperbolic versor**. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in *List of Algebras by Dimension*; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.
 
 **The parabolic directions.** For $\vec v$ null ($\vec v^2 = 0$, $\vec v \neq 0$), the closed form gives $\exp(\vec v) = 1 + \vec v$, a unipotent element; the exponentials of the null directions form the one-parameter unipotent subgroups conjugate to the translations of the affine line.
 
@@ -197,7 +197,7 @@ The exponential has the closed form displayed above, with the sign of $\langle \
 | $\vec e_y U = \{N=-1\}$ | the other component of the group of units | this article |
 | $\exp(\tilde q) = \sum \tilde q^k/k!$ | the exponential, with the closed form above | this article |
 | $\tilde q = q_t + \vec v$, $\mu = \langle \vec v\rangle_{\natural}$ | the scalar–vector split and the sign parameter | this article |
-| $\ker\exp$ | $\{2\pi k\vec\xi : k\in\mathbb{Z}, \vec\xi^2=-1\} \cup \{0\}$ | this article |
+| $\ker\exp$ | $\{2\pi k\vec\zeta : k\in\mathbb{Z}, \vec\zeta^2=-1\} \cup \{0\}$ | this article |
 | $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$ | the split-quaternion norm of the exponential | this article |
 | $\exp(\theta \tilde u) = \cos\theta + \sin\theta\,\tilde u$ | the elliptic subgroup ($\tilde u^2 = -1$) | this article |
 | $\exp(\theta \tilde u) = \cosh\theta + \sinh\theta\,\tilde u$ | the hyperbolic subgroup ($\tilde u^2 = +1$ in $V$) | this article |

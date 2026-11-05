@@ -183,7 +183,7 @@ in the enveloping algebra of the derived algebra.
 
 **The quaternion real form.** On $\mathbb{H}_{\mathbb{B}}$ the form is $\kappa(\tilde Q,\tilde Q)=-2(q_x^2+q_y^2+q_z^2)$, of signature $(0,3)$, with radical $\mathbb{R}e_t$: the negative semidefinite row of the table, and the zero direction is the scalar one.
 
-**The Hermitian real form.** On $\mathbb{M}_+$ with $\tilde Q=q_te_t+q'_xi\vec e_x+q'_yi\vec e_y+q'_zi\vec e_z$ the form is $\kappa(\tilde Q,\tilde Q)=2((q'_x)^2+(q'_y)^2+(q'_z)^2)$: positive semidefinite, with radical $\mathbb{R}e_t$ and no other isotropic element.
+**The Hermitian real form.** On $\mathbb{M}_+$ with $\tilde Q=q_te_t+q'_x\vec e_x+q'_yi\vec e_y+q'_zi\vec e_z$ the form is $\kappa(\tilde Q,\tilde Q)=2((q'_x)^2+(q'_y)^2+(q'_z)^2)$: positive semidefinite, with radical $\mathbb{R}e_t$ and no other isotropic element.
 
 **The vector null cone.** On the vector subspace the element $\tilde Q=\vec e_x+i\vec e_x$ satisfies $\kappa(\tilde Q,\tilde Q)=-2(1+i^2)=0$: it is a nonzero isotropic element, and the complex cone it generates has real dimension four.
 

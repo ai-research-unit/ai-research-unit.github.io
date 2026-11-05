@@ -192,19 +192,19 @@ The table is a dictionary and not an identification of two physical objects. The
 
 ### The Eigenbasis Is a Fourier Basis
 
-The transform is computed in a root-adapted basis. Choose pure $\nu$ and $\xi$ with
+The transform is computed in a root-adapted basis. Choose pure $\nu$ and $\zeta$ with
 
 $$
 \rho\perp\nu,
 \qquad
-\nu\perp\xi,
+\nu\perp\zeta,
 \qquad
-\xi\perp\rho,
+\zeta\perp\rho,
 \qquad
-\rho\nu=\xi,
+\rho\nu=\zeta,
 $$
 
-where the pairing is the complex bilinear form of the vector part. In the ordered basis $(e_t,\rho,\nu,\xi)$ left multiplication by $\rho$ is block diagonal, with the same two-by-two block on $(e_t,\rho)$ and on $(\nu,\xi)$: the block sends $e_t$ to $\rho$ and $\rho$ to $-e_t$, and it sends $\nu$ to $\xi$ and $\xi$ to $-\nu$. Its eigenvalues are $\pm i$.
+where the pairing is the complex bilinear form of the vector part. In the ordered basis $(e_t,\rho,\nu,\zeta)$ left multiplication by $\rho$ is block diagonal, with the same two-by-two block on $(e_t,\rho)$ and on $(\nu,\zeta)$: the block sends $e_t$ to $\rho$ and $\rho$ to $-e_t$, and it sends $\nu$ to $\zeta$ and $\zeta$ to $-\nu$. Its eigenvalues are $\pm i$.
 
 **Proposition 2 (the eigenbasis in the Fourier basis).** In the notation above,
 
@@ -215,16 +215,16 @@ $$
 \qquad
 \rho u_+=-i\,u_+,
 \qquad
-u_\mp=\frac12(\nu\mp i\xi),
+u_\mp=\frac12(\nu\mp i\zeta),
 $$
 
 and $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{\tilde Q}$ is diagonal, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
-*Proof.* The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\xi)/2=(\xi\pm i\nu)/2=\pm i(\nu\mp i\xi)/2$, using $\rho\nu=\xi$ and $\rho\xi=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\xi)$ is a basis (*Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
+*Proof.* The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\zeta)/2=(\zeta\pm i\nu)/2=\pm i(\nu\mp i\zeta)/2$, using $\rho\nu=\zeta$ and $\rho\zeta=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\zeta)$ is a basis (*Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
 The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
 
-**The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\xi\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.
+**The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\zeta\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.
 
 ### Which Frequency
 
@@ -460,7 +460,7 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 | Idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$ |
 | Spectral form | $e^{\theta\tilde Q}=e^{\theta Q_t}(e^{iB\theta}\tilde\Pi_++e^{-iB\theta}\tilde\Pi_-)$ |
 | Eigenspaces | $E_\pm=\tilde\Pi_\pm\mathbb{B}$ |
-| Fourier eigenbasis | $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\xi)$ |
+| Fourier eigenbasis | $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\zeta)$ |
 | Natural unitarity of the kernel | $W^\natural=W^{-1}$ for every pure root |
 | Hermitian unitarity of the kernel | $W^*=W^{-1}$ iff $\rho$ real |
 | $*$-Unitary flow | $\tilde Q^*=-\tilde Q$ iff $Q_t\in i\mathbb{R}$, $\vec Q\in\mathbb{R}^3$ |
@@ -482,13 +482,13 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 | $B^2=(\vec Q,\vec Q)=Q_x^2+Q_y^2+Q_z^2$ | the bilinear square of the vector part |
 | $B$ | a fixed square root of $B^2$; the other is $-B$ |
 | $\rho=\vec Q/B$ | the root of $-1$ supplied by the element |
-| $\vec\Xi=-i\rho$ | the root of $+1$ used by the spectral articles |
+| $\vec{Ζ}=-i\rho$ | the root of $+1$ used by the spectral articles |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, the character exponents |
 | $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$ | the spectral idempotents |
 | $E_\pm=\tilde\Pi_\pm\mathbb{B}$ | the eigenspaces of left multiplication |
 | $W(t,\omega)=\exp(-2\pi\rho\omega t)$ | the biquaternion Fourier kernel |
-| $\nu,\xi$ | pure directions completing $\rho$ to a root-adapted basis |
-| $u_\mp=\tfrac12(\nu\mp i\xi)$ | the nilpotent pair of the eigenbasis |
+| $\nu,\zeta$ | pure directions completing $\rho$ to a root-adapted basis |
+| $u_\mp=\tfrac12(\nu\mp i\zeta)$ | the nilpotent pair of the eigenbasis |
 | $\vec N=\vec Q$ on the cone, $\vec N^2=0$ | the nilpotent part of a degenerate element |
 | $\natural$ | the natural conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$ |
 | $*$ | the Hermitian conjugation, $\bar{\natural}$ |

@@ -135,9 +135,9 @@ so that the configuration is a helical force-free field, the object that appears
 The stationary field is the $v=0$ member of a moving family. For the family the source takes the Hertz potential
 
 $$
-\pi_<=C\,\frac{\sin\Omega\xi_<}{\xi_<}\,\exp\!\left[\omega(\varpi t'-q z)\right]\vec e_x\vec e_y,
+\pi_<=C\,\frac{\sin\Omega\zeta_<}{\zeta_<}\,\exp\!\left[\omega(\varpi t'-q z)\right]\vec e_x\vec e_y,
 \qquad
-\xi_<^2=x^2+y^2+\frac{(z-vt')^2}{1-v^2},
+\zeta_<^2=x^2+y^2+\frac{(z-vt')^2}{1-v^2},
 $$
 
 with the frequency $\varpi$, the axial wavenumber $q$, and the **massive dispersion relation**
@@ -329,9 +329,9 @@ and each of the two values is fixed by its own map and annihilated by the other,
 
 $$
 \psi_\theta^{\mathrm{dua}}=\tfrac12\left(\psi+\exp(\omega\theta^{\mathrm{dua}})\,i\vec e_x\,\psi\,i\vec e_x\right)
-=\exp\!\left(\tfrac{\omega\theta^{\mathrm{dua}}}{2}\right)\tfrac12\left(\xi+i\vec e_x\,\xi\,i\vec e_x\right),
+=\exp\!\left(\tfrac{\omega\theta^{\mathrm{dua}}}{2}\right)\tfrac12\left(\zeta+i\vec e_x\,\zeta\,i\vec e_x\right),
 \qquad
-\xi=\exp\!\left(-\tfrac{\omega\theta^{\mathrm{dua}}}{2}\right)\psi ,
+\zeta=\exp\!\left(-\tfrac{\omega\theta^{\mathrm{dua}}}{2}\right)\psi ,
 $$
 
 that is, rotate the element, project it, rotate the result back. The right-hand display holds for two reasons. The inner half phase passes the conjugating element with a change of sign,
@@ -491,7 +491,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
 | $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\chi+\Omega^2\chi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
-| $\varpi,\ q,\ \xi_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\xi_<$ is its oblate radial coordinate |
+| $\varpi,\ q,\ \zeta_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate |
 | $\Phi_{X_n},\ \Phi_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\theta^{\mathrm{axc}}$ the axicon angle and $a_0$ the constant that regularises the seed |
 | $\psi$, $\psi^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde\psi$ |
 | $\psi_\pm$ | The two values of the split by $i\vec e_x$, $i\vec e_x\,\psi_\pm\,i\vec e_x=\pm\psi_\pm$, with $\psi=\psi_++\psi_-$ |

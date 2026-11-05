@@ -194,31 +194,31 @@ so conjugation by a rotation preserves each of the two spheres. The conjugacy cl
 
 ### Hopf Coordinates of the Unit Sphere
 
-**Definition.** Write a unit quaternion as $\tilde q = \tilde q_1+\tilde q_2\vec e_y$ with $\tilde q_1,\tilde q_2\in\mathbb{C}_{\vec e_x}$; the **Hopf coordinates** $(\xi_x,\eta,\xi_y)$ are the angles
+**Definition.** Write a unit quaternion as $\tilde q = \tilde q_1+\tilde q_2\vec e_y$ with $\tilde q_1,\tilde q_2\in\mathbb{C}_{\vec e_x}$; the **Hopf coordinates** $(\zeta_x,\eta,\zeta_y)$ are the angles
 
 $$
-\tilde q = \sin\eta\;\exp(\vec e_x\xi_x) + \cos\eta\;\exp(\vec e_x\xi_y)\vec e_y, \qquad \eta\in\Bigl[0,\frac{\pi}{2}\Bigr], \quad \xi_x,\xi_y\in[0,2\pi),
+\tilde q = \sin\eta\;\exp(\vec e_x\zeta_x) + \cos\eta\;\exp(\vec e_x\zeta_y)\vec e_y, \qquad \eta\in\Bigl[0,\frac{\pi}{2}\Bigr], \quad \zeta_x,\zeta_y\in[0,2\pi),
 $$
 
-so that in the coordinates $(q_t,q_x,q_y,q_z)$ of $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ one has $q_t = \sin\eta\cos\xi_x$, $q_x = \sin\eta\sin\xi_x$, $q_y = \cos\eta\cos\xi_y$ and $q_z = \cos\eta\sin\xi_y$.
+so that in the coordinates $(q_t,q_x,q_y,q_z)$ of $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ one has $q_t = \sin\eta\cos\zeta_x$, $q_x = \sin\eta\sin\zeta_x$, $q_y = \cos\eta\cos\zeta_y$ and $q_z = \cos\eta\sin\zeta_y$.
 
 **Proposition.** The Hopf coordinates are coordinates on the unit sphere, and $|\tilde q_1| = \sin\eta$ while $|\tilde q_2| = \cos\eta$; consequently the level set $\eta = \mathrm{const}$ with $0<\eta<\frac{\pi}{2}$ is a torus, the sets $\eta = 0$ and $\eta = \frac{\pi}{2}$ are circles, and the level set $\eta = \frac{\pi}{4}$ is the **Clifford torus** $|\tilde q_1| = |\tilde q_2| = \frac{1}{\sqrt2}$.
 
-*Proof.* The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(\vec e_x\xi_x)$ and $\tilde q_2 = \cos\eta\,\exp(\vec e_x\xi_y)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.
+*Proof.* The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(\vec e_x\zeta_x)$ and $\tilde q_2 = \cos\eta\,\exp(\vec e_x\zeta_y)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.
 
 ### The Rotation as a Translation
 
 **Theorem.** Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as
 
-$$ \boxed{\; (\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b) \;} .$$
+$$ \boxed{\; (\zeta_x,\eta,\zeta_y)\longmapsto(\zeta_x+a,\ \eta,\ \zeta_y+b) \;} .$$
 
 In particular the tori $\eta = \mathrm{const}$ and the Clifford torus are invariant, and the two angles of the rotation are the two angular velocities of the translation.
 
-*Proof.* A rotation with these two invariant planes is $\Phi_{(\tilde q,\tilde p)}$ with $\tilde q = \exp(\vec e_x\theta)$ and $\tilde p = \exp(\vec e_x\phi)$, both factors in $\mathbb{C}_{\vec e_x}$, and by the computation of the angle theorem the angle on $\operatorname{span}(1,\vec e_x)$ is $\theta-\phi = a$ while the angle on $\operatorname{span}(\vec e_y,\vec e_z)$ is $\theta+\phi = b$, so that $\theta = \frac12(a+b)$ and $\phi = \frac12(b-a)$. On the first block the map is right multiplication by $\tilde q\tilde p^{-1} = \exp(\vec e_xa)$, so that $\sin\eta\,\exp(\vec e_x\xi_x)$ becomes $\sin\eta\,\exp(\vec e_x(\xi_x+a))$; on the second block the coordinate is multiplied by $\tilde q\tilde p = \exp(\vec e_xb)$, so that $\cos\eta\,\exp(\vec e_x\xi_y)\vec e_y$ becomes $\cos\eta\,\exp(\vec e_x(\xi_y+b))\vec e_y$. That is the display.
+*Proof.* A rotation with these two invariant planes is $\Phi_{(\tilde q,\tilde p)}$ with $\tilde q = \exp(\vec e_x\theta)$ and $\tilde p = \exp(\vec e_x\phi)$, both factors in $\mathbb{C}_{\vec e_x}$, and by the computation of the angle theorem the angle on $\operatorname{span}(1,\vec e_x)$ is $\theta-\phi = a$ while the angle on $\operatorname{span}(\vec e_y,\vec e_z)$ is $\theta+\phi = b$, so that $\theta = \frac12(a+b)$ and $\phi = \frac12(b-a)$. On the first block the map is right multiplication by $\tilde q\tilde p^{-1} = \exp(\vec e_xa)$, so that $\sin\eta\,\exp(\vec e_x\zeta_x)$ becomes $\sin\eta\,\exp(\vec e_x(\zeta_x+a))$; on the second block the coordinate is multiplied by $\tilde q\tilde p = \exp(\vec e_xb)$, so that $\cos\eta\,\exp(\vec e_x\zeta_y)\vec e_y$ becomes $\cos\eta\,\exp(\vec e_x(\zeta_y+b))\vec e_y$. That is the display.
 
 ### The Trajectories
 
-The orbit of a point of the unit sphere under the one-parameter group of the rotations with the angles $at$ and $bt$ is the curve $t\mapsto(\xi_x+at,\ \eta,\ \xi_y+bt)$ on the torus $\eta = \mathrm{const}$; the rotation is the linear flow of the two angles. The classical description of a linear flow on a torus applies.
+The orbit of a point of the unit sphere under the one-parameter group of the rotations with the angles $at$ and $bt$ is the curve $t\mapsto(\zeta_x+at,\ \eta,\ \zeta_y+bt)$ on the torus $\eta = \mathrm{const}$; the rotation is the linear flow of the two angles. The classical description of a linear flow on a torus applies.
 
 **Proposition (periodicity).** The orbit of a point is periodic if and only if the ratio $a/b$ of the two angular velocities is rational, and if $a/b = p/q$ in lowest terms the flow returns to the identity after the time $2\pi|q|/|b| = 2\pi|p|/|a|$. If the ratio is irrational the orbit is dense in the torus.
 
@@ -226,7 +226,7 @@ The orbit of a point of the unit sphere under the one-parameter group of the rot
 
 **Proposition (the isoclinic orbits).** If the rotation is isoclinic, $a = \pm b$, the orbit of a point is a great circle of the unit sphere; if the point lies on the Clifford torus the circle lies on that torus and is a Villarceau circle of it.
 
-*Proof.* For $a = b$ the curve is $t\mapsto(\xi_x+at,\eta,\xi_y+at)$, which is $\tilde q(t) = \exp(\vec e_xat)\tilde q(0)$, the left translate of the starting point by a one-parameter subgroup, hence a great circle; for $a = -b$ it is the right translate, and the same argument applies. On the Clifford torus the left and right translates stay on the torus by the invariance of $\eta$.
+*Proof.* For $a = b$ the curve is $t\mapsto(\zeta_x+at,\eta,\zeta_y+at)$, which is $\tilde q(t) = \exp(\vec e_xat)\tilde q(0)$, the left translate of the starting point by a one-parameter subgroup, hence a great circle; for $a = -b$ it is the right translate, and the same argument applies. On the Clifford torus the left and right translates stay on the torus by the invariance of $\eta$.
 
 ### The Maximal Tori
 
@@ -256,7 +256,7 @@ The classification follows from the two angles. A rotation is simple, that is it
 
 The isoclinic rotations form the two spheres $S^3_L$ and $S^3_R$ of the left and the right multiplications. The two spheres commute elementwise, meet in $\{\pm\mathrm{id}\}$, are normal subgroups of $SO(4)$, and generate it. Conjugation by a rotation carries $L_{\tilde q}$ to $L_{\tilde u\tilde q\tilde u^{-1}}$ and hence never leaves a sphere: no rotation conjugates a left-isoclinic rotation to a right-isoclinic one, and the conjugacy class of $L_{\tilde q}$ inside $SO(4)$ is the two-sphere of the left multiplications with the same real part. The reflection $\tilde q_3\mapsto\tilde q_3^{\natural}$ exchanges the two spheres, and it has determinant $-1$, so the exchange is not available inside the rotation group. This splitting of the isoclinic rotations into two classes with the same normal form is the exceptional position of dimension four among the rotation groups, and the reason $SO(4)$ is not simple.
 
-In the Hopf coordinates $\tilde q = \sin\eta\,\exp(\vec e_x\xi_x)+\cos\eta\,\exp(\vec e_x\xi_y)\vec e_y$ of the unit sphere a rotation with the planes $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$ invariant is the translation $(\xi_x,\xi_y)\mapsto(\xi_x+a,\xi_y+b)$ with $\eta$ unchanged. The level sets of $\eta$ are the invariant tori, the Clifford torus is $\eta = \frac{\pi}{4}$, the orbit of a point is periodic exactly when the ratio of the two angles is rational, and the isoclinic orbits are the great circles of the sphere, which on the Clifford torus are its Villarceau circles.
+In the Hopf coordinates $\tilde q = \sin\eta\,\exp(\vec e_x\zeta_x)+\cos\eta\,\exp(\vec e_x\zeta_y)\vec e_y$ of the unit sphere a rotation with the planes $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$ invariant is the translation $(\zeta_x,\zeta_y)\mapsto(\zeta_x+a,\zeta_y+b)$ with $\eta$ unchanged. The level sets of $\eta$ are the invariant tori, the Clifford torus is $\eta = \frac{\pi}{4}$, the orbit of a point is periodic exactly when the ratio of the two angles is rational, and the isoclinic orbits are the great circles of the sphere, which on the Clifford torus are its Villarceau circles.
 
 ## Summary of Notation
 
@@ -274,7 +274,7 @@ In the Hopf coordinates $\tilde q = \sin\eta\,\exp(\vec e_x\xi_x)+\cos\eta\,\exp
 | simple / double / isoclinic | $\theta^{\mathrm{plb}} = 0$ / $0<\theta^{\mathrm{plb}}<\theta^{\mathrm{pla}}$ / $0<\theta^{\mathrm{plb}} = \theta^{\mathrm{pla}}$ |
 | $\theta = \arccos(\operatorname{Re}\tilde q)$, $\phi = \arccos(\operatorname{Re}\tilde p)$ | The two half-angles of the parametrising pair |
 | $S^3_L = \{L_{\tilde q}\}$, $S^3_R = \{\rho_{\tilde q}\}$ | The left- and right-isoclinic spheres |
-| $(\xi_x,\eta,\xi_y)$ | Hopf coordinates of the unit sphere |
+| $(\zeta_x,\eta,\zeta_y)$ | Hopf coordinates of the unit sphere |
 | $\eta = \frac{\pi}{4}$ | The Clifford torus |
 
 ## Further Reading

@@ -324,7 +324,7 @@ The four corners are a decomposition of the algebra. The carrier of a spinor is 
 **Proposition (the coordinates).** Let $(\nu_1,\dots,\nu_s)$ generate $A_{-+}$ over $D=A_{++}$. Every element of $C(e)$ is
 
 $$
-\xi=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_i\in D,
+\zeta=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_i\in D,
 $$
 
 and the coordinate vector $(d_0;d_1,\dots,d_s)$ has $1+s$ entries. The number $s$ is the least number of generators of $A_{-+}$ over $D$. In $M_N(k)$ with an idempotent of rank $r$, $s=\lceil N/r\rceil-1$; for a primitive idempotent, $s=N-1$.

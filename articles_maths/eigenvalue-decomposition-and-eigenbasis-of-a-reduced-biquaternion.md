@@ -129,7 +129,7 @@ $$
 $$
 The formula applies when $Q_{\blacktriangledown}\neq0$; it exhibits $\Pi_\pm$ as polynomials in $\breve Q$. When $Q_{\blacktriangledown}=0$ the denominator vanishes and the formula does not apply.
 
-**Independence of the element.** The formulae collapse to the fixed idempotents $\Pi_\pm$: the eigenprojections do not depend on $\breve Q$. This is the structural difference from the biquaternion case, where the eigenprojections are the idempotents built from the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ of the vector part and therefore vary with $\tilde Q$ (*The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*). Here the pair $\Pi_+,\Pi_-$ is fixed for the whole algebra, and the dependence on the element lies in the eigenvalues alone.
+**Independence of the element.** The formulae collapse to the fixed idempotents $\Pi_\pm$: the eigenprojections do not depend on $\breve Q$. This is the structural difference from the biquaternion case, where the eigenprojections are the idempotents built from the pure root $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ of the vector part and therefore vary with $\tilde Q$ (*The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*). Here the pair $\Pi_+,\Pi_-$ is fixed for the whole algebra, and the dependence on the element lies in the eigenvalues alone.
 
 The pair is collected in the table.
 
@@ -336,25 +336,25 @@ The notation $S_\pm$ is reserved for these two spaces.
 
 A **spinor of the first Peirce copy** is an element of $S_+$,
 $$
-\xi_+=A_1\Pi_+,\qquad A_1\in\mathbb{C},
+\zeta_+=A_1\Pi_+,\qquad A_1\in\mathbb{C},
 $$
 and a **spinor of the second Peirce copy** is an element of $S_-$,
 $$
-\xi_-=A_2\Pi_-,\qquad A_2\in\mathbb{C}.
+\zeta_-=A_2\Pi_-,\qquad A_2\in\mathbb{C}.
 $$
 In the eigenbasis their coordinates are
 $$
-\xi_+\longleftrightarrow(A_1,0),
+\zeta_+\longleftrightarrow(A_1,0),
 \qquad
-\xi_-\longleftrightarrow(0,A_2).
+\zeta_-\longleftrightarrow(0,A_2).
 $$
 The two spinor spaces are the two coordinate axes of the eigenbasis.
 
 The element $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on them by
 $$
-\breve Q\xi_+=\lambda_+\xi_+,
+\breve Q\zeta_+=\lambda_+\zeta_+,
 \qquad
-\breve Q\xi_-=\lambda_-\xi_-,
+\breve Q\zeta_-=\lambda_-\zeta_-,
 $$
 so $S_+$ is the $\lambda_+$-eigenspace and $S_-$ the $\lambda_-$-eigenspace. In coordinates,
 $$
@@ -362,7 +362,7 @@ A_1\longmapsto\lambda_+A_1,
 \qquad
 A_2\longmapsto\lambda_-A_2.
 $$
-A general element $\breve Q_2=\xi_++\xi_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $\breve Q_2=\zeta_++\zeta_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\zeta_+,\zeta_-$ are the two summands in the direct sum.
 
 **One complex component per Peirce copy.** The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.
 
@@ -637,7 +637,7 @@ The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{B}_{\sigma\tau
 
 ### Comparison with the Neighbouring Cases
 
-The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Upsilon_\pm$ are the two nilpotents of the eigenbasis, one in each mixed corner.
+The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Upsilon_\pm$ are the two nilpotents of the eigenbasis, one in each mixed corner.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
@@ -645,7 +645,7 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Element | $Q=q+jq'$ | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | $\tilde Q=Q_te_t+\vec Q$ |
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ |
 | Distinctness | $q'\neq0$ | $Q_{\blacktriangledown}\neq0$ | $Q_x^2+Q_y^2+Q_z^2\neq0$ |
-| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ |
+| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ |
 | Eigenprojections depend on the element? | no | no | yes |
 | Eigenprojections central? | yes | yes | no |
 | Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ plus two mixed square-zero lines |

@@ -102,7 +102,7 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 **The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.** The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of **norm one**. They do not mark a unitary element: the unitary condition is a different condition, stated at the end of the section.
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde{Ζ}$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
 **"Norm one" is fixed layer by layer.** The glyphs name no set by themselves, and the layers do not share a norm. The table gives the norm of each layer and the set it cuts out at one.
 

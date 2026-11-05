@@ -185,7 +185,7 @@ $$
 \mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha
 $$
 
-are fundamental solutions of $D_{3\pm\alpha}$, that is $D_{3\pm\alpha}\mathcal K_{\pm\alpha}=\delta$. The choice $\operatorname{Im}\alpha\ge0$ selects the outgoing kernel. The principal symbol of $\Delta+\alpha^2$ is $-\lvert\xi\rvert^2$, non-zero for $\xi\neq0$, so the operator is elliptic and the shift by $\alpha$ is a lower-order perturbation; the Helmholtz kernel replaces the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$, which is the three-dimensional analogue of the four-dimensional Cauchy kernel $\bar x/\lvert x\rvert^4$ treated in *Quaternion Regular Functions* and *Biquaternion Regular Functions*.
+are fundamental solutions of $D_{3\pm\alpha}$, that is $D_{3\pm\alpha}\mathcal K_{\pm\alpha}=\delta$. The choice $\operatorname{Im}\alpha\ge0$ selects the outgoing kernel. The principal symbol of $\Delta+\alpha^2$ is $-\lvert\zeta\rvert^2$, non-zero for $\zeta\neq0$, so the operator is elliptic and the shift by $\alpha$ is a lower-order perturbation; the Helmholtz kernel replaces the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$, which is the three-dimensional analogue of the four-dimensional Cauchy kernel $\bar x/\lvert x\rvert^4$ treated in *Quaternion Regular Functions* and *Biquaternion Regular Functions*.
 
 **The four theorems.** On a bounded domain $\Omega\subset\mathbb{R}^3$ with closed piecewise smooth (Liapunov) boundary $\Gamma$, and with $T_\alpha$, $K_\alpha$, $S_\alpha$ the Teodorescu transform, the Cauchy-type operator and the operator of singular integration built from the kernel $\mathcal K_\alpha$,
 
@@ -288,7 +288,7 @@ $$
 \le C\,\|\vec u\times\vec{\mathcal E}\|_{L^2(\Gamma)} .
 $$
 
-**The impedance variant.** The survey notes that the same basis serves other boundary-value problems of the Maxwell system, notably the **impedance** problem, whose boundary condition $\vec E\times\vec u-Z_{\mathrm s}\,[(\vec H\times\vec u)\times\vec u]=\vec f$ (the survey's $Z_{\mathrm s}$ is written $\xi$) replaces the perfect-conductor condition $\vec{\mathcal E}\times\vec u=\vec f$ of the problem above. It changes only the coefficient matrix of the collocation system, not the basis or the counting argument. The bracket is the tangential part of $\vec H$ up to sign, $[(\vec H\times\vec u)\times\vec u]=(\vec H\cdot\vec u)\vec u-\vec H$, and it is tangential to $\Gamma$ for any $\vec H$, so the added term is invisible to the normal component of the condition and $Z_{\mathrm s}=0$ returns the perfect-conductor case; that is why the modification is a coefficient change and nothing else.
+**The impedance variant.** The survey notes that the same basis serves other boundary-value problems of the Maxwell system, notably the **impedance** problem, whose boundary condition $\vec E\times\vec u-Z_{\mathrm s}\,[(\vec H\times\vec u)\times\vec u]=\vec f$ (the survey's $Z_{\mathrm s}$ is written $\zeta$) replaces the perfect-conductor condition $\vec{\mathcal E}\times\vec u=\vec f$ of the problem above. It changes only the coefficient matrix of the collocation system, not the basis or the counting argument. The bracket is the tangential part of $\vec H$ up to sign, $[(\vec H\times\vec u)\times\vec u]=(\vec H\cdot\vec u)\vec u-\vec H$, and it is tangential to $\Gamma$ for any $\vec H$, so the added term is invisible to the normal component of the condition and $Z_{\mathrm s}=0$ returns the perfect-conductor case; that is why the modification is a coefficient change and nothing else.
 
 **The reported test.** The method is tested against an exact solution: the field of a magnetic dipole, $\vec{\mathcal E}^m=\mathrm{rot}(\vec c\,\mathrm{Sd}_\alpha)$ and $\vec{\mathcal H}^m=-\mathrm{rot}\,\vec{\mathcal E}^m/(i\alpha)$ with $\vec c$ constant, which satisfies the achiral ($\beta=0$) system and the radiation condition exactly, scattered by an ellipsoid with semi-axes $a=5,b=3,c=2$, the auxiliary surface being the concentric ellipsoid scaled by $0.15$ and the error measured on the concentric ellipsoid scaled by $5$. For $\alpha=1+0.3i$ the source's table is
 
@@ -483,7 +483,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $\Omega^\pm$, $\Gamma^\pm$ | Exterior/interior domain and the auxiliary surface carrying the source points |
 | $y_j^\pm,\ a_j,b_j\in\mathbb B$ | Source points on $\Gamma^\pm$ and the biquaternionic coefficients of the collocation trial functions |
 | $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\vec{\mathcal E}\times\vec u$; scalar part of a biquaternion |
-| $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\xi$ in the survey |
+| $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\zeta$ in the survey |
 | $\chi$, $\tilde Q_\pm=\alpha\pm\nabla\chi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
 | $z=x_3+\vec e_xx_2$ | Transverse complex variable for the stratified solutions |
 

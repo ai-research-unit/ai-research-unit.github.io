@@ -22,10 +22,10 @@ $$
 
 **Proof.** On the algebra the identity is the adjoint axiom, $\langle L_xy,z\rangle = \langle xy,z\rangle = \langle y,x^{\dagger}z\rangle = \langle y,L_{x^{\dagger}}z\rangle$; the operator $L_x$ is bounded on $A$ for the form norm, so it extends to $H$ with the same adjoint; both sides of the identity are bounded and agree on the dense subspace $A$, hence on $H$.
 
-**Proposition (the adjoint at the cyclic vector).** With $\xi = \iota(1)$,
+**Proposition (the adjoint at the cyclic vector).** With $\zeta = \iota(1)$,
 
 $$
-\boxed{\;\bar L_x\xi = \iota(x) , \qquad \bar L_x^{*}\xi = \iota(x^{\dagger})\;} ,
+\boxed{\;\bar L_x\zeta = \iota(x) , \qquad \bar L_x^{*}\zeta = \iota(x^{\dagger})\;} ,
 $$
 
 so the adjoint is the map of the cyclic vector to the involution, and the deviation of the involution from the identity on $\iota(A)$ is the deviation of $\bar L_x^{*}$ from $\bar L_x$.
@@ -52,11 +52,11 @@ The **Tomita operator**, the **polar decomposition** $\bar S=J\Delta^{1/2}$, the
 
 ### The Group Algebra
 
-For $A = \mathbb{C}[G]$ with the standard form, $L_g^{*} = L_{g^{-1}}$, the Tomita operator is $S(g\xi) = g^{-1}\xi$, and the form is tracial, so $\Delta = \mathrm{id}$ and $S = J$ is a bounded antiunitary involution with $J\bar L_gJ = \bar R_{g^{-1}}$.
+For $A = \mathbb{C}[G]$ with the standard form, $L_g^{*} = L_{g^{-1}}$, the Tomita operator is $S(g\zeta) = g^{-1}\zeta$, and the form is tracial, so $\Delta = \mathrm{id}$ and $S = J$ is a bounded antiunitary involution with $J\bar L_gJ = \bar R_{g^{-1}}$.
 
 ### Matrices
 
-For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, the Tomita operator is $S(a\xi) = a^{*}\xi$ extended, the polar decomposition is $S = J$ with $\Delta = \mathrm{id}$, and every left multiplication is normal. The smallest instance of the pair $a,a^{*}$ and of $S = J$ is
+For $A = M_n(\mathbb{C})$ with the Hilbert–Schmidt form, $\bar L_a^{*} = \bar L_{a^{*}}$ with $a^{*}$ the conjugate transpose, the Tomita operator is $S(a\zeta) = a^{*}\zeta$ extended, the polar decomposition is $S = J$ with $\Delta = \mathrm{id}$, and every left multiplication is normal. The smallest instance of the pair $a,a^{*}$ and of $S = J$ is
 
 $$
 a=\begin{pmatrix}1&i\\0&2\end{pmatrix},\qquad a^{*}=\begin{pmatrix}1&0\\-i&2\end{pmatrix},\qquad S(a)=a^{*},\qquad J=S,\ \Delta=\mathrm{id},\qquad \tau(a)=3 .
@@ -68,7 +68,7 @@ For the group von Neumann algebra of an infinite non-abelian group with a non-tr
 
 ## Summary
 
-The adjoint of the **left multiplication** of a Hermitian algebra is the left multiplication by the involution, $\bar L_x^{*} = \bar L_{x^{\dagger}}$, and it is computed at the cyclic vector by $\bar L_x^{*}\xi = \iota(x^{\dagger})$; the adjoint axiom is exactly this identity, so the form determines the involution and conversely. The **Tomita operator** $S(x\xi) = x^{\dagger}\xi$ is the closure of the involution, it is antilinear with $S^{2} = \mathrm{id}$ on its domain, it exchanges the sides through $SL_xS = R_{x^{\dagger}}$, and it converts an adjoint into a conjugation of the other side, $L_x^{*} = SR_xS$. Its **polar decomposition** $\bar S = J\Delta^{1/2}$ produces the modular conjugation $J$, the modular operator $\Delta = \bar S^{*}\bar S$, the inversion $J\Delta J = \Delta^{-1}$ and the modular group, so the adjoint of the left multiplication already carries the modular structure and the deviation of the form from being tracial is exactly $\Delta\neq\mathrm{id}$. The **criteria** are: $\bar L_x$ self-adjoint exactly when $x = x^{\dagger}$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $x$ is a unitary element, positive exactly when $x$ is in the positive cone; the modular group acts by $\Delta^{it}\bar L_x\Delta^{-it} = \bar L_{\sigma_t(x)}$. The involution and the adjoint axiom are *Hermitian Adjoints on a Hermitian Algebra*, the two-sided adjoint identities are *The Adjoint of the Left and the Right Multiplication*, the modular objects are *The Modular Operator and Tomita-Takesaki Theory*, and the unbounded spectral theory is deferred to Part III with *Analysis on Linear Spaces*.
+The adjoint of the **left multiplication** of a Hermitian algebra is the left multiplication by the involution, $\bar L_x^{*} = \bar L_{x^{\dagger}}$, and it is computed at the cyclic vector by $\bar L_x^{*}\zeta = \iota(x^{\dagger})$; the adjoint axiom is exactly this identity, so the form determines the involution and conversely. The **Tomita operator** $S(x\zeta) = x^{\dagger}\zeta$ is the closure of the involution, it is antilinear with $S^{2} = \mathrm{id}$ on its domain, it exchanges the sides through $SL_xS = R_{x^{\dagger}}$, and it converts an adjoint into a conjugation of the other side, $L_x^{*} = SR_xS$. Its **polar decomposition** $\bar S = J\Delta^{1/2}$ produces the modular conjugation $J$, the modular operator $\Delta = \bar S^{*}\bar S$, the inversion $J\Delta J = \Delta^{-1}$ and the modular group, so the adjoint of the left multiplication already carries the modular structure and the deviation of the form from being tracial is exactly $\Delta\neq\mathrm{id}$. The **criteria** are: $\bar L_x$ self-adjoint exactly when $x = x^{\dagger}$, normal exactly when $xx^{\dagger} = x^{\dagger}x$, unitary exactly when $x$ is a unitary element, positive exactly when $x$ is in the positive cone; the modular group acts by $\Delta^{it}\bar L_x\Delta^{-it} = \bar L_{\sigma_t(x)}$. The involution and the adjoint axiom are *Hermitian Adjoints on a Hermitian Algebra*, the two-sided adjoint identities are *The Adjoint of the Left and the Right Multiplication*, the modular objects are *The Modular Operator and Tomita-Takesaki Theory*, and the unbounded spectral theory is deferred to Part III with *Analysis on Linear Spaces*.
 
 ## Summary of Notation
 

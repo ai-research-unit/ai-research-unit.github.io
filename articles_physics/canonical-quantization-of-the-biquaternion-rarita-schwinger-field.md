@@ -194,7 +194,7 @@ the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the prec
 $$
 \psi_\mu(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}
 \sum_{r=1}^{4}\left[
-a_r(\vec p)\,\xi_{\mu,r}(p)\,\exp(-ip\cdot x)
+a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x)
 + b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+ip\cdot x)
 \right] ,
 $$
@@ -202,17 +202,17 @@ $$
 with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p t'-\vec p\cdot\vec x$, and with the Rarita–Schwinger polarization spinors satisfying
 
 $$
-\bigl(\mathbb{D}_p-m\bigr)\xi_{\mu,r}=0 ,
+\bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
 \qquad
-\Sigma(\xi_r)=0 ,
+\Sigma(\zeta_r)=0 ,
 \qquad
-p\cdot\xi_r=0 ,
+p\cdot\zeta_r=0 ,
 $$
 
 together with the completeness relation of the four polarizations,
 
 $$
-\sum_{r=1}^{4}\xi_{\mu,r}\bar\xi_{\nu,r}=\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} .
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} .
 $$
 
 The object $\Pi_{\mu\nu}$ is the **transverse** traceless projector, the on-shell projector onto the intersection of the two constraints — the trace and the transversality — of rank eight on the vector-spinor space and four on the positive-energy solutions. It is not the constraint projector $P_{\mu\nu}$ of the preceding section: transversality requires the additional momentum-dependent terms, and the contraction of $p$ with the entries of $P$ does not vanish, so the completeness relation cannot be carried by $P_{\mu\nu}$ alone. It is the standard Rarita–Schwinger projector and is cited below. The creation and annihilation operators satisfy the fermionic algebra
@@ -321,7 +321,7 @@ $$
 
 that is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
 
@@ -374,15 +374,15 @@ $$
 and the polarization equations, the completeness relation and the propagator are
 
 $$
-(\gamma\cdot p-m)\xi_{\mu,r}=0,
+(\gamma\cdot p-m)\zeta_{\mu,r}=0,
 \qquad
-\gamma\cdot\xi_r=0,
+\gamma\cdot\zeta_r=0,
 \qquad
-p\cdot\xi_r=0,
+p\cdot\zeta_r=0,
 $$
 
 $$
-\sum_{r=1}^{4}\xi_{\mu,r}\bar\xi_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
+\sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
 \qquad
 G_{\mu\nu}(p)=-\frac{i}{p^2-m^2}\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$
@@ -421,9 +421,9 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\vec x:=x\vec e_x+y\vec e_y+z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\chi_a,\chi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |
-| $\xi_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
+| $\zeta_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
-| $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
+| $\sum_r \zeta_{\mu,r}\bar\zeta_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the generators; the material interval is its negative |
 

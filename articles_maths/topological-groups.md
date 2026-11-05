@@ -234,7 +234,7 @@ $$
 
 hold for every $f : \mathbb{Z}/n\mathbb{Z} \to \mathbb{C}$; this is the discrete Fourier transform of the cyclic group, and the inversion formula is the expansion of $f$ in the orthogonal basis of characters. The same two displays, with the sum over $G$ replaced by Haar integration and the factor $1/n$ by the normalised Haar measure, are the orthogonality and inversion statements for a general compact abelian group.
 
-**Example.** $\mathbb{R}^\vee \cong \mathbb{R}$ via $\xi \mapsto (x \mapsto \exp(2\pi i \xi x))$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; and $(\mathbb{Z}_p)^\vee \cong \mu_{p^\infty}$, the Prüfer group, with the discrete topology.
+**Example.** $\mathbb{R}^\vee \cong \mathbb{R}$ via $\zeta \mapsto (x \mapsto \exp(2\pi i \zeta x))$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; and $(\mathbb{Z}_p)^\vee \cong \mu_{p^\infty}$, the Prüfer group, with the discrete topology.
 
 ### Pontryagin Duality
 

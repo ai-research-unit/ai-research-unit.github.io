@@ -26,21 +26,21 @@ The ordered tuple $(1, B_1, \dots, B_{m-1})$ is the **frame** of the system, and
 **Definition.** The **principal symbol** of $D$ is the map
 
 $$
-\sigma_D : A \times \mathbb{R}^m \to A, \qquad (x, \xi) \longmapsto \sum_{\alpha\in\{t,1,\dots,m-1\}} B_\alpha \xi_\alpha,
+\sigma_D : A \times \mathbb{R}^m \to A, \qquad (x, \zeta) \longmapsto \sum_{\alpha\in\{t,1,\dots,m-1\}} B_\alpha \zeta_\alpha,
 $$
 
-where $B_t = 1$; for the equation $Df = 0$ the symbol acts on values by left multiplication by $\sum_\alpha B_\alpha\xi_\alpha$. The operator is **elliptic** if this left multiplication is invertible for every $\xi \neq 0$.
+where $B_t = 1$; for the equation $Df = 0$ the symbol acts on values by left multiplication by $\sum_\alpha B_\alpha\zeta_\alpha$. The operator is **elliptic** if this left multiplication is invertible for every $\zeta \neq 0$.
 
-**Proposition (symbol invertibility).** For every real $\xi = (\xi_t, \dots, \xi_{m-1}) \neq 0$, the element
-
-$$
-\sigma = \sum_\alpha B_\alpha \xi_\alpha = \xi_t + \sum_{k \geq 1} B_k\xi_k
-$$
-
-satisfies $\sigma(\xi_t - \sum_{k\geq1}B_k\xi_k) = |\xi|^2 = (\xi_t - \sum_{k\geq1}B_k\xi_k)\sigma$, where $|\xi|^2 = \sum_\alpha \xi_\alpha^2 > 0$. Hence $\sigma$ is a unit of $A$, with
+**Proposition (symbol invertibility).** For every real $\zeta = (\zeta_t, \dots, \zeta_{m-1}) \neq 0$, the element
 
 $$
-\sigma^{-1} = \frac{\xi_t - \sum_{k\geq1}B_k\xi_k}{|\xi|^2},
+\sigma = \sum_\alpha B_\alpha \zeta_\alpha = \zeta_t + \sum_{k \geq 1} B_k\zeta_k
+$$
+
+satisfies $\sigma(\zeta_t - \sum_{k\geq1}B_k\zeta_k) = |\zeta|^2 = (\zeta_t - \sum_{k\geq1}B_k\zeta_k)\sigma$, where $|\zeta|^2 = \sum_\alpha \zeta_\alpha^2 > 0$. Hence $\sigma$ is a unit of $A$, with
+
+$$
+\sigma^{-1} = \frac{\zeta_t - \sum_{k\geq1}B_k\zeta_k}{|\zeta|^2},
 $$
 
 and $D$ is elliptic.
@@ -48,10 +48,10 @@ and $D$ is elliptic.
 *Proof.* The product is computed as in the factorisation of the Laplacian of *Hypercomplex Analysis*:
 
 $$
-\Bigl(\xi_t + \sum_k B_k\xi_k\Bigr)\Bigl(\xi_t - \sum_j B_j\xi_j\Bigr) = \xi_t^2 - \sum_{j,k}B_jB_k\xi_j\xi_k = \xi_t^2 + \sum_k\xi_k^2 = |\xi|^2,
+\Bigl(\zeta_t + \sum_k B_k\zeta_k\Bigr)\Bigl(\zeta_t - \sum_j B_j\zeta_j\Bigr) = \zeta_t^2 - \sum_{j,k}B_jB_k\zeta_j\zeta_k = \zeta_t^2 + \sum_k\zeta_k^2 = |\zeta|^2,
 $$
 
-using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\xi_t$ is a real scalar and $B_k\xi_t = \xi_t B_k$. The same computation in the other order gives the same result. Since $|\xi|^2$ is a nonzero real number, it is a unit of $A$, and the displayed expression is the inverse.
+using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\zeta_t$ is a real scalar and $B_k\zeta_t = \zeta_t B_k$. The same computation in the other order gives the same result. Since $|\zeta|^2$ is a nonzero real number, it is a unit of $A$, and the displayed expression is the inverse.
 
 **Corollary.** The symbol $\sigma_D$ is invertible for every nonzero covector, so $D$ is a first-order elliptic operator with constant coefficients on $\mathbb{R}^m$; in particular the Laplace-type operators $D\bar D$ and $\bar D D$ are the Laplacian.
 
@@ -159,13 +159,13 @@ is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly indep
 
 **Remark.** The last statement is the qualitative reason the theory is rich: ellipticity together with the Cauchy formula makes the solution space large, while non-commutativity prevents it from being an algebra. The particular dimensions and bases of the solution spaces are properties of the individual systems.
 
-**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{C}^{\mathrm{spl}}$ with $D = \partial/\partial x_t + j\partial/\partial x_1$ one has $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_t^2 - \xi_1^2$, which vanishes on the two real lines $\xi_t = \pm\xi_1$, so no component need be harmonic. In the characteristic coordinates $\xi_\pm = x_t \pm x_1$ one has $D = 2(\pi_1\partial/\partial\xi_+ + \pi_2\partial/\partial\xi_-)$, so a left regular function has the form $f = f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $(\partial/\partial x_t)^2u = \tfrac12(f_+'' + f_-'') = (\partial/\partial x_1)^2u$. Accordingly:
+**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{C}^{\mathrm{spl}}$ with $D = \partial/\partial x_t + j\partial/\partial x_1$ one has $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = \zeta_t^2 - \zeta_1^2$, which vanishes on the two real lines $\zeta_t = \pm\zeta_1$, so no component need be harmonic. In the characteristic coordinates $\zeta_\pm = x_t \pm x_1$ one has $D = 2(\pi_1\partial/\partial\zeta_+ + \pi_2\partial/\partial\zeta_-)$, so a left regular function has the form $f = f_+(\zeta_-)\pi_1 + f_-(\zeta_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $(\partial/\partial x_t)^2u = \tfrac12(f_+'' + f_-'') = (\partial/\partial x_1)^2u$. Accordingly:
 
 - **Liouville fails.** The bounded non-constant function $\exp(-(x_t - jx_1)^2)$ is left regular on all of $\mathbb{C}^{\mathrm{spl}}$.
 - **The maximum principle fails.** Its Euclidean norm satisfies $\|\exp(-(x_t-jx_1)^2)\| \leq 1 = \|f(0)\|$, so the maximum is attained at the interior point $0$.
-- **The mean value property fails.** The regular function $x \mapsto \xi_-^2\pi_1$ has value $0$ at the centre of $B(0,r)$, while its average over the ball is $\frac{1}{\pi r^2}\int_{B(0,r)}(x_t-x_1)^2\,dx = \tfrac{r^2}{2} \neq 0$.
+- **The mean value property fails.** The regular function $x \mapsto \zeta_-^2\pi_1$ has value $0$ at the centre of $B(0,r)$, while its average over the ball is $\frac{1}{\pi r^2}\int_{B(0,r)}(x_t-x_1)^2\,dx = \tfrac{r^2}{2} \neq 0$.
 
-For $\mathbb{C}^{\mathrm{dln}}$ with $D = \partial/\partial x_t + \varepsilon\partial/\partial x_1$ the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_t^2$, vanishing on $\xi_t = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial x_t\,v = -u'$, the components satisfy the transport equations $\partial/\partial x_t\,u = 0$ and $\partial/\partial x_t\,v = -\partial/\partial x_1\,u$, and the bounded non-constant regular function $1 + \varepsilon \exp(-x_1^2)$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
+For $\mathbb{C}^{\mathrm{dln}}$ with $D = \partial/\partial x_t + \varepsilon\partial/\partial x_1$ the symbol satisfies $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = \zeta_t^2$, vanishing on $\zeta_t = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial x_t\,v = -u'$, the components satisfy the transport equations $\partial/\partial x_t\,u = 0$ and $\partial/\partial x_t\,v = -\partial/\partial x_1\,u$, and the bounded non-constant regular function $1 + \varepsilon \exp(-x_1^2)$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
 
 ## The Fischer and Stokes Decompositions
 
@@ -293,9 +293,9 @@ The classification of admissible operators up to this equivalence, and the deter
 
 ## Summary
 
-The **generalised Cauchy–Riemann operator** $D = \partial/\partial x_t + \sum_k B_k\partial/\partial x_k$ has principal symbol equal to left multiplication by $\sigma(\xi) = \xi_t + \sum_k B_k\xi_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\xi$, with inverse $(\xi_t - \sum_k B_k\xi_k)/|\xi|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
+The **generalised Cauchy–Riemann operator** $D = \partial/\partial x_t + \sum_k B_k\partial/\partial x_k$ has principal symbol equal to left multiplication by $\sigma(\zeta) = \zeta_t + \sum_k B_k\zeta_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\zeta$, with inverse $(\zeta_t - \sum_k B_k\zeta_k)/|\zeta|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
 
-Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$, whose symbols vanish on the real space, the regular functions are $f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ and $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial x_t v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_t-jx_1)^2)$ on $\mathbb{C}^{\mathrm{spl}}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{C}^{\mathrm{dln}}$.
+Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$, whose symbols vanish on the real space, the regular functions are $f_+(\zeta_-)\pi_1 + f_-(\zeta_+)\pi_2$ and $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial x_t v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_t-jx_1)^2)$ on $\mathbb{C}^{\mathrm{spl}}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{C}^{\mathrm{dln}}$.
 
 The integral representation is the divergence theorem for $D$ written in divergence form: the **Cauchy–Pompeiu formula** represents an arbitrary $C^1$ function on a bounded domain with smooth boundary by the boundary integral of the Cauchy kernel against the conormal element plus a volume integral of $Df$, and the **Cauchy integral formula** is the case $Df = 0$, in which the volume term drops. Its hypotheses are those the divergence theorem needs — a bounded domain with smooth boundary, $f$ of class $C^1$ on the closure, a global fundamental solution of the conjugate operator, which exists because $D$ is elliptic — and not the simple connectedness and holomorphy of the classical statement.
 
@@ -310,9 +310,9 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $B_k$ | Coefficients of $D$, with $B_jB_k + B_kB_j = -2\delta_{jk}$ |
 | $D = \partial/\partial x_t + \sum_k B_k\partial/\partial x_k$ | Generalised Cauchy–Riemann operator |
 | $\bar D = \partial/\partial x_t - \sum_k B_k\partial/\partial x_k$ | Conjugate operator |
-| $\sigma(\xi) = \sum_\alpha B_\alpha\xi_\alpha$ | Principal symbol |
-| $\sigma^{\mathrm{refl}}(\xi) = \xi_t - \sum_k B_k\xi_k$ | Reflected symbol, $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\xi_\alpha^2$ |
-| $|\xi|^2 = \sum_\alpha \xi_\alpha^2$ | Euclidean squared norm of the covector |
+| $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ | Principal symbol |
+| $\sigma^{\mathrm{refl}}(\zeta) = \zeta_t - \sum_k B_k\zeta_k$ | Reflected symbol, $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\zeta_\alpha^2$ |
+| $|\zeta|^2 = \sum_\alpha \zeta_\alpha^2$ | Euclidean squared norm of the covector |
 | $c_{\varepsilon\gamma\delta}$ | Structure constants of $A$ |
 | $Df = 0$ | Left regularity |
 | $fD = 0$ | Right regularity |
@@ -328,7 +328,7 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $\mathcal{P}_k$ | $A$-valued homogeneous polynomials of degree $k$ |
 | $\mathcal{H}_k = \ker\Delta \cap \mathcal{P}_k$ | Harmonic homogeneous polynomials |
 | $\mathcal{M}_k = \ker D \cap \mathcal{P}_k$ | Left regular homogeneous polynomials, $= \mathcal{M}_k(A,D)$ |
-| $\pi_{1,2} = \tfrac12(1 \pm j)$, $\xi_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\pi_{1,2} = \tfrac12(1 \pm j)$, $\zeta_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$ |
 
 
 

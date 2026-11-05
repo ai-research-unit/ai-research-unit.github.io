@@ -62,32 +62,32 @@ for some $F_\mu$ depending on the fields and the variation. The divergence is al
 **Definition.** A **symmetry of the first kind**, or rigid symmetry, is a symmetry whose transformation is a one-parameter family,
 
 $$
-\delta_\alpha u_i = \alpha\,\xi_i(x,u,\partial u) ,
+\delta_\alpha u_i = \alpha\,\zeta_i(x,u,\partial u) ,
 $$
 
-with the parameter $\alpha$ a **constant**, and with $\delta_\alpha \mathcal{L} = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$ a divergence. A symmetry depending on $k$ independent constant parameters $\alpha_1,\dots,\alpha_k$ is written as a sum $\delta u_i = \sum_a\xi_{ia}\epsilon_a$, with the sum over $a=1,\dots,k$.
+with the parameter $\alpha$ a **constant**, and with $\delta_\alpha \mathcal{L} = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$ a divergence. A symmetry depending on $k$ independent constant parameters $\alpha_1,\dots,\alpha_k$ is written as a sum $\delta u_i = \sum_a\zeta_{ia}\epsilon_a$, with the sum over $a=1,\dots,k$.
 
-**Theorem (Noether, first theorem).** Let $\delta u_i = \alpha\,\xi_i$ be a symmetry of the first kind, with $\delta \mathcal{L} = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$. Then the field
+**Theorem (Noether, first theorem).** Let $\delta u_i = \alpha\,\zeta_i$ be a symmetry of the first kind, with $\delta \mathcal{L} = \alpha\sum_\mu\partial/\partial x_\mu F_\mu$. Then the field
 
 $$
-j_\mu = \sum_i \mathcal{L}_{\mu i}\,\xi_i - F_\mu
+j_\mu = \sum_i \mathcal{L}_{\mu i}\,\zeta_i - F_\mu
 $$
 
 satisfies
 
 $$
-\boxed{\;\sum_\mu\partial/\partial x_\mu j_\mu = -\,\sum_i E_i\,\xi_i\;} ,
+\boxed{\;\sum_\mu\partial/\partial x_\mu j_\mu = -\,\sum_i E_i\,\zeta_i\;} ,
 $$
 
-and is therefore conserved, $\sum_\mu\partial/\partial x_\mu j_\mu=0$, on every solution of the equations of motion. For a $k$-parameter group the construction gives $k$ currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\xi_{ia} - F_{\mu a}$.
+and is therefore conserved, $\sum_\mu\partial/\partial x_\mu j_\mu=0$, on every solution of the equations of motion. For a $k$-parameter group the construction gives $k$ currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\zeta_{ia} - F_{\mu a}$.
 
-*Proof.* The fundamental identity for the variation $\delta u_i = \alpha\xi_i$ reads
+*Proof.* The fundamental identity for the variation $\delta u_i = \alpha\zeta_i$ reads
 
 $$
-\alpha\sum_\mu\partial/\partial x_\mu F_\mu = \alpha\sum_i E_i\xi_i + \alpha\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i \mathcal{L}_{\mu i}\xi_i\bigr),
+\alpha\sum_\mu\partial/\partial x_\mu F_\mu = \alpha\sum_i E_i\zeta_i + \alpha\sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i \mathcal{L}_{\mu i}\zeta_i\bigr),
 $$
 
-and cancelling the common factor $\alpha$ gives $\sum_i E_i\xi_i = \sum_\mu\partial/\partial x_\mu(F_\mu - \sum_i \mathcal{L}_{\mu i}\xi_i) = -\sum_\mu\partial/\partial x_\mu j_\mu$.
+and cancelling the common factor $\alpha$ gives $\sum_i E_i\zeta_i = \sum_\mu\partial/\partial x_\mu(F_\mu - \sum_i \mathcal{L}_{\mu i}\zeta_i) = -\sum_\mu\partial/\partial x_\mu j_\mu$.
 
 **The conserved charge.** If the current falls off fast enough at infinity, the **Noether charge**
 
@@ -99,10 +99,10 @@ is constant in time, because $\frac{d}{dt}Ϙ = \int\partial/\partial x_0\,j_0\,d
 
 ### Worked Examples of the First Theorem
 
-**Translation invariance and the energy–momentum tensor.** Let the density contain no explicit dependence on the coordinates and let the fields transform with the coordinates, $\delta u_i = \sum_\nu\xi_\nu\partial/\partial x_\nu u_i$ under $x_\mu\mapsto x_\mu+\xi_\mu$ with $\xi_\mu$ constant. Then $\delta \mathcal{L} = \sum_\nu\xi_\nu\partial/\partial x_\nu \mathcal{L} = \sum_\nu\partial/\partial x_\nu(\xi_\nu \mathcal{L})$, so $F_\mu=\xi_\mu \mathcal{L}$, and
+**Translation invariance and the energy–momentum tensor.** Let the density contain no explicit dependence on the coordinates and let the fields transform with the coordinates, $\delta u_i = \sum_\nu\zeta_\nu\partial/\partial x_\nu u_i$ under $x_\mu\mapsto x_\mu+\zeta_\mu$ with $\zeta_\mu$ constant. Then $\delta \mathcal{L} = \sum_\nu\zeta_\nu\partial/\partial x_\nu \mathcal{L} = \sum_\nu\partial/\partial x_\nu(\zeta_\nu \mathcal{L})$, so $F_\mu=\zeta_\mu \mathcal{L}$, and
 
 $$
-j_\mu = \sum_i \mathcal{L}_{\mu i}\,\sum_\nu\xi_\nu\partial/\partial x_\nu u_i - \xi_\mu \mathcal{L} = \sum_\nu\xi_\nu\,T_{\mu\nu} ,
+j_\mu = \sum_i \mathcal{L}_{\mu i}\,\sum_\nu\zeta_\nu\partial/\partial x_\nu u_i - \zeta_\mu \mathcal{L} = \sum_\nu\zeta_\nu\,T_{\mu\nu} ,
 \qquad
 T_{\mu\nu} = \sum_i \mathcal{L}_{\mu i}\,\partial/\partial x_\nu u_i - \delta_{\mu\nu}\,\mathcal{L} .
 $$
@@ -129,7 +129,7 @@ $$
 \sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
 $$
 
-which is precisely $-E_\phi\xi_\phi - E_{\bar{\phi}}\xi_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
+which is precisely $-E_\phi\zeta_\phi - E_{\bar{\phi}}\zeta_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
 
 ## The Second Theorem
 
@@ -283,7 +283,7 @@ The distinction is not a matter of taste, and the count of the degrees of freedo
 
 ## The Hamiltonian Form
 
-The corpus also states Noether's theorem on the Hamiltonian side, and the relation between the two statements is worth recording, because the Hamiltonian form is the first theorem in disguise. On a symplectic manifold with Hamiltonian $H$, a Lie group acting on the manifold and preserving both the symplectic form and $H$ has a momentum map $J$ whose components are conserved, $\{J_\xi,H\}=0$. The action is the first-kind action, the parameters are constants, and the conclusion is a family of conserved functions. The local, field-theoretic version of the same statement is the covariant Hamiltonian theory of *Multisymplectic and Covariant Hamiltonian Field Theory*, where the conserved scalar is replaced by a form; the second theorem's identity, by contrast, has no Hamiltonian counterpart of this shape, because it is not a statement about a conserved quantity at all.
+The corpus also states Noether's theorem on the Hamiltonian side, and the relation between the two statements is worth recording, because the Hamiltonian form is the first theorem in disguise. On a symplectic manifold with Hamiltonian $H$, a Lie group acting on the manifold and preserving both the symplectic form and $H$ has a momentum map $J$ whose components are conserved, $\{J_\zeta,H\}=0$. The action is the first-kind action, the parameters are constants, and the conclusion is a family of conserved functions. The local, field-theoretic version of the same statement is the covariant Hamiltonian theory of *Multisymplectic and Covariant Hamiltonian Field Theory*, where the conserved scalar is replaced by a form; the second theorem's identity, by contrast, has no Hamiltonian counterpart of this shape, because it is not a statement about a conserved quantity at all.
 
 ## The Naming
 
@@ -293,7 +293,7 @@ The names are frequently reversed in the literature and in informal use. The rev
 
 ## Summary
 
-Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\xi_{ia} - F_{\mu a}$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
+Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\zeta_{ia} - F_{\mu a}$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
 
 Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i \mathcal{L}_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
 
@@ -309,7 +309,7 @@ Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u
 | $E_i = \partial \mathcal{L}/\partial u_i - \sum_\mu\partial/\partial x_\mu \mathcal{L}_{\mu i}$ | Euler–Lagrange expression |
 | $\mathrm{Sd}_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i$ | Boundary current of a variation |
 | $F_\mu$ | Divergence through which a symmetry changes the density, $\delta \mathcal{L}=\sum_\mu\partial/\partial x_\mu F_\mu$ |
-| $\xi_i$, $\xi_{ia}$ | Generator of a first-kind symmetry |
+| $\zeta_i$, $\zeta_{ia}$ | Generator of a first-kind symmetry |
 | $a_{i\mu\alpha}$, $b_{i\alpha}$ | Coefficients of $\varepsilon$ and $\partial/\partial x_\mu\,\varepsilon$ in a second-kind symmetry |
 | $a_{i\mu_1\cdots\mu_k\alpha}$ | Coefficient of the $k$-th derivative of $\varepsilon$, $k\le r$ |
 | $q$ | Number of arbitrary functions of a second-kind symmetry |

@@ -3,10 +3,10 @@
 
 ## Introduction
 
-A linear differential operator of order $m$ has a symbol $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)\xi^\alpha$, a polynomial in the frequency variable whose highest-order part, the principal symbol, decides whether the operator is elliptic and whether it can be inverted to leading order. The single idea of pseudodifferential theory is to allow the symbol to be any smooth function of $x$ and $\xi$ of the appropriate growth, and to define the operator by the Fourier inversion formula
+A linear differential operator of order $m$ has a symbol $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)\zeta^\alpha$, a polynomial in the frequency variable whose highest-order part, the principal symbol, decides whether the operator is elliptic and whether it can be inverted to leading order. The single idea of pseudodifferential theory is to allow the symbol to be any smooth function of $x$ and $\zeta$ of the appropriate growth, and to define the operator by the Fourier inversion formula
 
 $$
-\mathfrak{a}(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\xi)\,\mathfrak{a}(x,\xi)\,u(y)\,dy\,d\xi .
+\mathfrak{a}(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\zeta)\,\mathfrak{a}(x,\zeta)\,u(y)\,dy\,d\zeta .
 $$
 
 The class of operators so obtained is closed under composition, under transposition and under the construction of parametrices, and it contains the differential operators, the inverses of elliptic operators and the smoothing operators, together with a calculus of symbols in which composition corresponds to an asymptotic expansion to all orders. The calculus is the natural home of the elliptic regularity of *Distributions and Fundamental Solutions*, and it is the technical foundation of the microlocal analysis: the principal symbol lives on the cotangent bundle, and its vanishing set is where the operator fails to be invertible.
@@ -14,12 +14,12 @@ The class of operators so obtained is closed under composition, under transposit
 The article begins with the **symbol classes** $S^m$ and the asymptotic summation that makes them an algebra; it defines the **quantisation** $\mathfrak{a}\mapsto \mathfrak{a}(x,D)$; it proves that the class is closed under composition and adjoint, with the Leibniz-type expansions
 
 $$
-c(x,\xi)\sim\sum_\alpha\frac{1}{\alpha!}\,\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\xi)\,D_x^\alpha \mathfrak{b}(x,\xi), \qquad [\mathfrak{a}(x,D),\mathfrak{b}(x,D)] \sim \frac1i\{\mathfrak{a},\mathfrak{b}\}(x,D),
+c(x,\zeta)\sim\sum_\alpha\frac{1}{\alpha!}\,\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}(x,\zeta)\,D_x^\alpha \mathfrak{b}(x,\zeta), \qquad [\mathfrak{a}(x,D),\mathfrak{b}(x,D)] \sim \frac1i\{\mathfrak{a},\mathfrak{b}\}(x,D),
 $$
 
 where $\{\mathfrak{a},\mathfrak{b}\}$ is the Poisson bracket; it characterises **ellipticity** and constructs the **parametrix** by solving the composition equation order by order; it records the continuity on $L^2$ and on the Sobolev spaces, and Gårding's inequality; and it treats the **Weyl quantisation** and the invariance of the principal symbol under changes of coordinates, which is what allows the calculus to be carried to a manifold.
 
-Throughout, $\mathbb{K}=\mathbb{C}$ for symbols and operators, $x \in \mathbb{R}^n$ is the space variable and $\xi \in \mathbb{R}^n$ the frequency variable, $\alpha,\beta$ are multi-indices, and $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ is the derivative convention fixed in *Distributions and Fundamental Solutions*, so that the symbol of the differential operator $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)D^\alpha$ is $\sum \mathfrak{a}_\alpha(x)\xi^\alpha$. The Fourier transform and its normalisation, the distributions $\mathcal D'$, $\mathcal S'$ and their pairings, and the kernel $K(x,y)$ of an operator are those of *Distributions and Fundamental Solutions* and *The Schwartz Kernel Theorem*. The Bessel-potential spaces $H^{s}_{n}$ and their interpolation are those of *Interpolation Theory*. Ellipticity, the parametrix and elliptic regularity were stated for differential operators in *Distributions and Fundamental Solutions*; here they are proved in the symbol calculus. The Fredholm property of an elliptic operator, the index and its invariance are those of *Fredholm Theory*. The wavefront set, the propagation of singularities and the microlocal elliptic regularity are not covered here; the $\hbar$-dependent form of the calculus, the semiclassical defect measures and Egorov's theorem are not covered here; and the elliptic boundary-value problems and the classical classification of second-order equations are those in the extension of this Part. The principal symbols of the classical operators, and the Cauchy–Riemann operator $\sum_\mu\,e_\mu\partial/\partial x_\mu$, are treated in the algebra-valued analysis of this Part .
+Throughout, $\mathbb{K}=\mathbb{C}$ for symbols and operators, $x \in \mathbb{R}^n$ is the space variable and $\zeta \in \mathbb{R}^n$ the frequency variable, $\alpha,\beta$ are multi-indices, and $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ is the derivative convention fixed in *Distributions and Fundamental Solutions*, so that the symbol of the differential operator $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)D^\alpha$ is $\sum \mathfrak{a}_\alpha(x)\zeta^\alpha$. The Fourier transform and its normalisation, the distributions $\mathcal D'$, $\mathcal S'$ and their pairings, and the kernel $K(x,y)$ of an operator are those of *Distributions and Fundamental Solutions* and *The Schwartz Kernel Theorem*. The Bessel-potential spaces $H^{s}_{n}$ and their interpolation are those of *Interpolation Theory*. Ellipticity, the parametrix and elliptic regularity were stated for differential operators in *Distributions and Fundamental Solutions*; here they are proved in the symbol calculus. The Fredholm property of an elliptic operator, the index and its invariance are those of *Fredholm Theory*. The wavefront set, the propagation of singularities and the microlocal elliptic regularity are not covered here; the $\hbar$-dependent form of the calculus, the semiclassical defect measures and Egorov's theorem are not covered here; and the elliptic boundary-value problems and the classical classification of second-order equations are those in the extension of this Part. The principal symbols of the classical operators, and the Cauchy–Riemann operator $\sum_\mu\,e_\mu\partial/\partial x_\mu$, are treated in the algebra-valued analysis of this Part .
 
 No physics is invoked.
 
@@ -30,24 +30,24 @@ No physics is invoked.
 **Definition.** For $m \in \mathbb{R}$ the **symbol class** $S^m=S^m(\mathbb{R}^n\times\mathbb{R}^n)$ is the set of $\mathfrak{a} \in C^\infty(\mathbb{R}^n\times\mathbb{R}^n)$ such that for all multi-indices $\alpha,\beta$ there is $C_{\alpha,\beta}$ with
 
 $$
-|\partial^\alpha/\partial\xi^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}(x,\xi)| \le C_{\alpha,\beta}\,(1+|\xi|)^{m-|\alpha|}
+|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}(x,\zeta)| \le C_{\alpha,\beta}\,(1+|\zeta|)^{m-|\alpha|}
 $$
 
-for all $x,\xi$; the class $S^m_{1,0}$ of Hörmander is the one used here and is written $S^m$. Set $S^\infty=\bigcup_mS^m$ and $S^{-\infty}=\bigcap_mS^m$. The **order** of $\mathfrak{a}$ is the infimum of the $m$ with $\mathfrak{a} \in S^m$; a symbol in $S^{-\infty}$ is called **smoothing**.
+for all $x,\zeta$; the class $S^m_{1,0}$ of Hörmander is the one used here and is written $S^m$. Set $S^\infty=\bigcup_mS^m$ and $S^{-\infty}=\bigcap_mS^m$. The **order** of $\mathfrak{a}$ is the infimum of the $m$ with $\mathfrak{a} \in S^m$; a symbol in $S^{-\infty}$ is called **smoothing**.
 
-The derivatives in $x$ are unrestricted, the derivatives in $\xi$ gain a power of $(1+|\xi|)^{-1}$ each time, and the definition is an estimate on $\mathfrak{a}$ and all of its derivatives; this is the exact regularity needed for the composition formula and for the parametrix.
+The derivatives in $x$ are unrestricted, the derivatives in $\zeta$ gain a power of $(1+|\zeta|)^{-1}$ each time, and the definition is an estimate on $\mathfrak{a}$ and all of its derivatives; this is the exact regularity needed for the composition formula and for the parametrix.
 
-**Proposition.** (i) $S^m \subseteq S^{m'}$ for $m \le m'$, and $S^{-\infty}=\bigcap_mS^m$. (ii) If $\mathfrak{a} \in S^m$ and $\mathfrak{b} \in S^{m'}$ then the pointwise product $\mathfrak{a}\mathfrak{b} \in S^{m+m'}$. (iii) $\partial^\beta/\partial x^\beta \mathfrak{a} \in S^m$, $\partial^\alpha/\partial\xi^\alpha \mathfrak{a} \in S^{m-|\alpha|}$, and $S^m$ is a Fréchet space in the seminorms of the definition. (iv) If $\mathfrak{a} \in S^m$ and $\mathfrak{a}$ is a polynomial of degree $m$ in $\xi$ with coefficients in $C^\infty(\mathbb{R}^n)$ of at most polynomial growth, then $\mathfrak{a}$ is the symbol of a differential operator of order $m$.
+**Proposition.** (i) $S^m \subseteq S^{m'}$ for $m \le m'$, and $S^{-\infty}=\bigcap_mS^m$. (ii) If $\mathfrak{a} \in S^m$ and $\mathfrak{b} \in S^{m'}$ then the pointwise product $\mathfrak{a}\mathfrak{b} \in S^{m+m'}$. (iii) $\partial^\beta/\partial x^\beta \mathfrak{a} \in S^m$, $\partial^\alpha/\partial\zeta^\alpha \mathfrak{a} \in S^{m-|\alpha|}$, and $S^m$ is a Fréchet space in the seminorms of the definition. (iv) If $\mathfrak{a} \in S^m$ and $\mathfrak{a}$ is a polynomial of degree $m$ in $\zeta$ with coefficients in $C^\infty(\mathbb{R}^n)$ of at most polynomial growth, then $\mathfrak{a}$ is the symbol of a differential operator of order $m$.
 
-*Proof.* (i)–(iii) are immediate from the product rule and the definition; (iv) because a polynomial of degree $m$ in $\xi$ satisfies the estimates with $|\alpha|\le m$ and has zero $\xi$-derivatives of higher order.
+*Proof.* (i)–(iii) are immediate from the product rule and the definition; (iv) because a polynomial of degree $m$ in $\zeta$ satisfies the estimates with $|\alpha|\le m$ and has zero $\zeta$-derivatives of higher order.
 
-**Example.** (i) The monomial $\xi^\alpha$ lies in $S^{|\alpha|}$; the symbol of a differential operator $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha\xi^\alpha$ with $\mathfrak{a}_\alpha \in C^\infty$ of polynomial growth lies in $S^m$.
+**Example.** (i) The monomial $\zeta^\alpha$ lies in $S^{|\alpha|}$; the symbol of a differential operator $\sum_{|\alpha|\le m}\mathfrak{a}_\alpha\zeta^\alpha$ with $\mathfrak{a}_\alpha \in C^\infty$ of polynomial growth lies in $S^m$.
 
-(ii) The **Bessel symbol** $(1+|\xi|^2)^{s/2}$ lies in $S^s$, and the operator it defines is the Bessel potential $\langle D\rangle^s$ of *Interpolation Theory* up to the convention of the constant.
+(ii) The **Bessel symbol** $(1+|\zeta|^2)^{s/2}$ lies in $S^s$, and the operator it defines is the Bessel potential $\langle D\rangle^s$ of *Interpolation Theory* up to the convention of the constant.
 
-(iii) The function $\mathfrak{a}(\xi)=\chi(|\xi|)|\xi|^m$ with $\chi$ a smooth cutoff vanishing near $0$ lies in $S^m$ and is elliptic; the function $\mathfrak{a}(\xi)=\sin|\xi|^2$ is in $S^0$ but in no lower class, since its derivatives do not decay.
+(iii) The function $\mathfrak{a}(\zeta)=\chi(|\zeta|)|\zeta|^m$ with $\chi$ a smooth cutoff vanishing near $0$ lies in $S^m$ and is elliptic; the function $\mathfrak{a}(\zeta)=\sin|\zeta|^2$ is in $S^0$ but in no lower class, since its derivatives do not decay.
 
-(iv) If $\mathfrak{a} \in S^m$ and $A$ is a constant-coefficient differential operator in the $x$ variables, then $\mathfrak{a}$, $Aa$ and $\partial^\alpha/\partial\xi^\alpha \mathfrak{a}$ remain in the corresponding classes, while $\frac{1}{\mathfrak{a}}$ is in $S^{-m}$ only under the ellipticity hypothesis below.
+(iv) If $\mathfrak{a} \in S^m$ and $A$ is a constant-coefficient differential operator in the $x$ variables, then $\mathfrak{a}$, $Aa$ and $\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}$ remain in the corresponding classes, while $\frac{1}{\mathfrak{a}}$ is in $S^{-m}$ only under the ellipticity hypothesis below.
 
 ### Asymptotic Expansion
 
@@ -61,10 +61,10 @@ if $\mathfrak{a}-\sum_{j<N}\mathfrak{a}_j \in S^{m_N}$ for every $N$; the relati
 
 **Theorem (asymptotic summation).** Given $\mathfrak{a}_j \in S^{m_j}$ with $m_j \downarrow -\infty$, there exists $\mathfrak{a} \in S^{m_0}$ with $\mathfrak{a} \sim\sum_ja_j$; any two such $\mathfrak{a}$ differ by an element of $S^{-\infty}$.
 
-*Proof (sketch).* Choose a cutoff $\chi \in C^\infty(\mathbb{R}^n)$, vanishing for $|\xi|\le1$ and equal to $1$ for $|\xi|\ge2$, and a sequence $t_j \downarrow0$ tending to $0$ fast enough that the series
+*Proof (sketch).* Choose a cutoff $\chi \in C^\infty(\mathbb{R}^n)$, vanishing for $|\zeta|\le1$ and equal to $1$ for $|\zeta|\ge2$, and a sequence $t_j \downarrow0$ tending to $0$ fast enough that the series
 
 $$
-\mathfrak{a}(x,\xi)=\sum_{j=0}^{\infty}\chi(t_j\xi)\,\mathfrak{a}_j(x,\xi)
+\mathfrak{a}(x,\zeta)=\sum_{j=0}^{\infty}\chi(t_j\zeta)\,\mathfrak{a}_j(x,\zeta)
 $$
 
 converges in $C^\infty$ on compact sets and satisfies the estimates of $S^{m_0}$; the rapid decrease of the tails (by the choice of $t_j$) gives $\mathfrak{a}-\sum_{j<N}\mathfrak{a}_j \in S^{m_N}$. The difference of two such sums is in $S^{m_N}$ for every $N$ and hence in $S^{-\infty}$.
@@ -78,13 +78,13 @@ The theorem is what makes the calculus possible: every computation below produce
 **Definition.** For $\mathfrak{a} \in S^m$ the **operator with symbol** $\mathfrak{a}$, in **left quantisation**, is
 
 $$
-\mathfrak{a}(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,u(y)\,dy\,d\xi, \qquad u \in \mathcal S(\mathbb{R}^n),
+\mathfrak{a}(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\zeta)\mathfrak{a}(x,\zeta)\,u(y)\,dy\,d\zeta, \qquad u \in \mathcal S(\mathbb{R}^n),
 $$
 
 the integral being understood as the iterated integral, which converges absolutely after regularisation and defines the oscillatory integral; equivalently, in terms of the Fourier transform,
 
 $$
-\widehat{\mathfrak{a}(x,D)u}(\xi)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\mathcal F \mathfrak{a}(\xi-\eta,\eta)\,\mathcal F u(\eta)\,d\eta,
+\widehat{\mathfrak{a}(x,D)u}(\zeta)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\mathcal F \mathfrak{a}(\zeta-\eta,\eta)\,\mathcal F u(\eta)\,d\eta,
 $$
 
 where $\mathcal F \mathfrak{a}(\cdot,\eta)$ is the Fourier transform of $\mathfrak{a}(\cdot,\eta)$ in the first variable. The operator extends to a continuous map $\mathcal S(\mathbb{R}^n)\to C^\infty(\mathbb{R}^n)$ and to a continuous map $\mathcal E'(\mathbb{R}^n)\to\mathcal D'(\mathbb{R}^n)$.
@@ -92,7 +92,7 @@ where $\mathcal F \mathfrak{a}(\cdot,\eta)$ is the Fourier transform of $\mathfr
 **Theorem (kernel).** The operator $\mathfrak{a}(x,D)$ has kernel
 
 $$
-K_{\mathfrak{a}}(x,y)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,d\xi,
+K_{\mathfrak{a}}(x,y)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\zeta)\mathfrak{a}(x,\zeta)\,d\zeta,
 $$
 
 a distribution on $\mathbb{R}^n\times\mathbb{R}^n$, in the sense of *The Schwartz Kernel Theorem*:
@@ -103,11 +103,11 @@ $$
 
 The kernel is smooth off the diagonal $x=y$; the singularities of $\mathfrak{a}(x,D)$ are carried by the diagonal, and the symbol is the fibre transform of the kernel along the diagonal, which is the reason the symbol is the right object for the calculus.
 
-**Example.** (i) $\mathfrak{a}(x,\xi)=\xi^\alpha$ gives $\mathfrak{a}(x,D)=D^\alpha$, since $\xi^\alpha \exp(i(x-y)\xi)=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha \exp(i(x-y)\xi)$ and the integral reproduces $D^\alpha u$. Hence every differential operator $P=\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)D^\alpha$ is the operator with symbol $\sum \mathfrak{a}_\alpha(x)\xi^\alpha$, and the class of pseudodifferential operators contains the differential operators.
+**Example.** (i) $\mathfrak{a}(x,\zeta)=\zeta^\alpha$ gives $\mathfrak{a}(x,D)=D^\alpha$, since $\zeta^\alpha \exp(i(x-y)\zeta)=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha \exp(i(x-y)\zeta)$ and the integral reproduces $D^\alpha u$. Hence every differential operator $P=\sum_{|\alpha|\le m}\mathfrak{a}_\alpha(x)D^\alpha$ is the operator with symbol $\sum \mathfrak{a}_\alpha(x)\zeta^\alpha$, and the class of pseudodifferential operators contains the differential operators.
 
-(ii) $\mathfrak{a}(x,\xi)=\mathfrak{a}(x)$ independent of $\xi$ gives the operator of multiplication by $\mathfrak{a}$; its kernel is $\mathfrak{a}(x)\delta(x-y)$.
+(ii) $\mathfrak{a}(x,\zeta)=\mathfrak{a}(x)$ independent of $\zeta$ gives the operator of multiplication by $\mathfrak{a}$; its kernel is $\mathfrak{a}(x)\delta(x-y)$.
 
-(iii) $\mathfrak{a}(x,\xi)=\chi(\xi)$ with $\chi$ smooth, supported where $|\xi|$ is large and $\chi=0$ near $0$, gives a smoothing-type operator whose kernel is the inverse Fourier transform of $\chi$; if $\chi\in C_c^\infty$ the operator is smoothing with a Schwartz kernel.
+(iii) $\mathfrak{a}(x,\zeta)=\chi(\zeta)$ with $\chi$ smooth, supported where $|\zeta|$ is large and $\chi=0$ near $0$, gives a smoothing-type operator whose kernel is the inverse Fourier transform of $\chi$; if $\chi\in C_c^\infty$ the operator is smoothing with a Schwartz kernel.
 
 (iv) The inverse of an elliptic operator, when it exists, has a symbol in $S^{-m}$; this is the content of the parametrix construction below.
 
@@ -116,18 +116,18 @@ The kernel is smooth off the diagonal $x=y$; the singularities of $\mathfrak{a}(
 **Definition.** The **Weyl quantisation** of $\mathfrak{a} \in S^m$ is
 
 $$
-\mathfrak{a}^w(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\xi)\,\mathfrak{a}\!\left(\frac{x+y}{2},\xi\right)u(y)\,dy\,d\xi ,
+\mathfrak{a}^w(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}\exp(i(x-y)\cdot\zeta)\,\mathfrak{a}\!\left(\frac{x+y}{2},\zeta\right)u(y)\,dy\,d\zeta ,
 $$
 
-and the Weyl symbol of an operator is the function $\mathfrak{a}$ producing it. The two quantisations differ by a series of lower-order terms: expanding $\mathfrak{a}((x+y)/2,\xi)$ about $x$ and integrating by parts in $\xi$ gives
+and the Weyl symbol of an operator is the function $\mathfrak{a}$ producing it. The two quantisations differ by a series of lower-order terms: expanding $\mathfrak{a}((x+y)/2,\zeta)$ about $x$ and integrating by parts in $\zeta$ gives
 
 $$
-\mathfrak{a}^w(x,D)=\mathfrak{a}(x,D)+\frac{1}{2i}\sum_{j=1}^{n}\partial^2/\partial x_j\partial\xi_j\mathfrak{a}(x,D)+\cdots,
+\mathfrak{a}^w(x,D)=\mathfrak{a}(x,D)+\frac{1}{2i}\sum_{j=1}^{n}\partial^2/\partial x_j\partial\zeta_j\mathfrak{a}(x,D)+\cdots,
 $$
 
 the next correction being of order $m-2$, so that the principal symbols agree. The Weyl quantisation has the formal advantage that the adjoint has symbol $\overline{\mathfrak{a}}$: $(\mathfrak{a}^w)^*=\overline{\mathfrak{a}}^{\,w}$ for $\mathfrak{a} \in S^m$ on $\mathcal S$, so that real symbols give symmetric operators.
 
-**Example (verification).** For $n=1$ and $\mathfrak{a}(x,\xi)=x\xi$ one computes directly that $\mathfrak{a}(x,D)=xD$ and that $\mathfrak{a}^w=xD-\frac{i}{2}I$; the displayed correction term is $\frac{1}{2i}\partial^2/\partial x\partial\xi(x\xi)=\frac{1}{2i}$, giving $\mathfrak{a}^w=xD+\frac{1}{2i}I=xD-\frac{i}{2}I$, in agreement. This is the simplest instance of the subprincipal correction.
+**Example (verification).** For $n=1$ and $\mathfrak{a}(x,\zeta)=x\zeta$ one computes directly that $\mathfrak{a}(x,D)=xD$ and that $\mathfrak{a}^w=xD-\frac{i}{2}I$; the displayed correction term is $\frac{1}{2i}\partial^2/\partial x\partial\zeta(x\zeta)=\frac{1}{2i}$, giving $\mathfrak{a}^w=xD+\frac{1}{2i}I=xD-\frac{i}{2}I$, in agreement. This is the simplest instance of the subprincipal correction.
 
 ## Composition and Adjoint
 
@@ -136,7 +136,7 @@ the next correction being of order $m-2$, so that the principal symbols agree. T
 **Theorem (composition).** Let $\mathfrak{a} \in S^m$ and $\mathfrak{b} \in S^{m'}$. Then $\mathfrak{a}(x,D)\mathfrak{b}(x,D)=c(x,D)$ for a symbol $c \in S^{m+m'}$, unique modulo $S^{-\infty}$, with
 
 $$
-\boxed{\;c(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\xi)\,D_x^\alpha \mathfrak{b}(x,\xi)\;},
+\boxed{\;c(x,\zeta)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}(x,\zeta)\,D_x^\alpha \mathfrak{b}(x,\zeta)\;},
 $$
 
 the sum over all multi-indices $\alpha$, where $D_x^\alpha=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha$ acts on the $x$-variable of $\mathfrak{b}$. In particular the leading term is $c \equiv \mathfrak{a}\mathfrak{b} \bmod S^{m+m'-1}$.
@@ -147,37 +147,37 @@ $$
 \mathfrak{a}(x,D)\mathfrak{b}(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int \exp(ix\cdot\varkappa^{\mathrm{crd}})\,\exp(ix\cdot\vartheta^{\mathrm{dum}})\,\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})\,\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})\,\mathcal F u(\varkappa^{\mathrm{crd}})\,d\varkappa^{\mathrm{crd}}\,d\vartheta^{\mathrm{dum}} .
 $$
 
-Taylor expansion of $\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})$ in $\vartheta^{\mathrm{dum}}$ about $\varkappa^{\mathrm{crd}}$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\xi^\alpha \mathfrak{a}(x,\varkappa^{\mathrm{crd}})\vartheta^{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta^{\mathrm{dum}}$ of $\vartheta^{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})$ is $D_x^\alpha \mathfrak{b}(x,\varkappa^{\mathrm{crd}})$; the remainder after $N$ terms is in $S^{m+m'-N}$.
+Taylor expansion of $\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})$ in $\vartheta^{\mathrm{dum}}$ about $\varkappa^{\mathrm{crd}}$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}(x,\varkappa^{\mathrm{crd}})\vartheta^{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta^{\mathrm{dum}}$ of $\vartheta^{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})$ is $D_x^\alpha \mathfrak{b}(x,\varkappa^{\mathrm{crd}})$; the remainder after $N$ terms is in $S^{m+m'-N}$.
 
-**Example.** For $\mathfrak{a}=\xi_j$ and $\mathfrak{b}=x_k$, the composition is $D_jM_{x_k}$, and
+**Example.** For $\mathfrak{a}=\zeta_j$ and $\mathfrak{b}=x_k$, the composition is $D_jM_{x_k}$, and
 
 $$
 D_j(x_ku)=-i\partial/\partial x_j(x_ku)=-i\delta_{jk}u+x_kD_ju=M_{x_k}D_ju-i\delta_{jk}u .
 $$
 
-The formula gives $c=\xi_jx_k+\frac{1}{1!}\partial/\partial\xi_j\,\xi_j\,D_{x_j}x_k=x_k\xi_j+(-i)\delta_{jk}$, in agreement with the direct computation. The subprincipal term is what makes the calculus noncommutative.
+The formula gives $c=\zeta_jx_k+\frac{1}{1!}\partial/\partial\zeta_j\,\zeta_j\,D_{x_j}x_k=x_k\zeta_j+(-i)\delta_{jk}$, in agreement with the direct computation. The subprincipal term is what makes the calculus noncommutative.
 
-**Corollary (leading order).** The principal symbol of a product is the product of the principal symbols, $\sigma_{m+m'}(\mathfrak{a}(x,D)\mathfrak{b}(x,D))=\sigma_m(\mathfrak{a})\sigma_{m'}(\mathfrak{b})$; the map $\mathfrak{a}\mapsto\sigma_m(\mathfrak{a})$ is a homomorphism from the operators of order $m$ modulo smoothing to the functions on $T^*\mathbb{R}^n$ that are positively homogeneous of degree $m$ in $\xi$ modulo lower order.
+**Corollary (leading order).** The principal symbol of a product is the product of the principal symbols, $\sigma_{m+m'}(\mathfrak{a}(x,D)\mathfrak{b}(x,D))=\sigma_m(\mathfrak{a})\sigma_{m'}(\mathfrak{b})$; the map $\mathfrak{a}\mapsto\sigma_m(\mathfrak{a})$ is a homomorphism from the operators of order $m$ modulo smoothing to the functions on $T^*\mathbb{R}^n$ that are positively homogeneous of degree $m$ in $\zeta$ modulo lower order.
 
 **Corollary (commutator).** The commutator has leading order $m+m'-1$ and
 
 $$
-[\mathfrak{a}(x,D),\mathfrak{b}(x,D)] \;\sim\; \frac1i\{\mathfrak{a},\mathfrak{b}\}(x,D) \pmod{S^{m+m'-2}}, \qquad \{\mathfrak{a},\mathfrak{b}\}=\sum_{j=1}^{n}\bigl(\partial/\partial\xi_j\,\mathfrak{a}\,\partial/\partial x_j\,\mathfrak{b}-\partial/\partial x_j\,\mathfrak{a}\,\partial/\partial\xi_j\,\mathfrak{b}\bigr),
+[\mathfrak{a}(x,D),\mathfrak{b}(x,D)] \;\sim\; \frac1i\{\mathfrak{a},\mathfrak{b}\}(x,D) \pmod{S^{m+m'-2}}, \qquad \{\mathfrak{a},\mathfrak{b}\}=\sum_{j=1}^{n}\bigl(\partial/\partial\zeta_j\,\mathfrak{a}\,\partial/\partial x_j\,\mathfrak{b}-\partial/\partial x_j\,\mathfrak{a}\,\partial/\partial\zeta_j\,\mathfrak{b}\bigr),
 $$
 
-the **Poisson bracket** of $\mathfrak{a}$ and $\mathfrak{b}$. For $\mathfrak{a}=\xi_j$, $\mathfrak{b}=x_k$ the bracket is $\delta_{jk}$ and the commutator is $-i\delta_{jk}I$, as computed above.
+the **Poisson bracket** of $\mathfrak{a}$ and $\mathfrak{b}$. For $\mathfrak{a}=\zeta_j$, $\mathfrak{b}=x_k$ the bracket is $\delta_{jk}$ and the commutator is $-i\delta_{jk}I$, as computed above.
 
 ### The Adjoint
 
 **Theorem (adjoint).** For $\mathfrak{a} \in S^m$ the formal adjoint of $\mathfrak{a}(x,D)$ with respect to the $L^2$ inner product is $\mathfrak{a}(x,D)^*=\mathfrak{a}^*(x,D)$ with
 
 $$
-\mathfrak{a}^*(x,\xi)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\xi^\alpha D_x^\alpha\,\overline{\mathfrak{a}(x,\xi)} ,
+\mathfrak{a}^*(x,\zeta)\sim\sum_{\alpha}\frac{1}{\alpha!}\,\partial^\alpha/\partial\zeta^\alpha D_x^\alpha\,\overline{\mathfrak{a}(x,\zeta)} ,
 $$
 
 so that $\mathfrak{a}^* \in S^m$ and $\mathfrak{a}^* \equiv\overline{\mathfrak{a}} \bmod S^{m-1}$. In particular $\mathfrak{a}(x,D)$ is symmetric on $\mathcal S$ to leading order exactly when $\mathfrak{a}$ is real modulo $S^{m-1}$.
 
-*Proof (sketch).* The identity $\langle \mathfrak{a}(x,D)u,v\rangle=\langle u,\mathfrak{a}(x,D)^*v\rangle$ is integrated by parts in $x$ and $\xi$; the boundary terms vanish for Schwartz functions, and the resulting symbol is the displayed transpose, which is computed by the same Taylor expansion as the composition theorem applied to the kernel $\overline{K_{\mathfrak{a}}(y,x)}$.
+*Proof (sketch).* The identity $\langle \mathfrak{a}(x,D)u,v\rangle=\langle u,\mathfrak{a}(x,D)^*v\rangle$ is integrated by parts in $x$ and $\zeta$; the boundary terms vanish for Schwartz functions, and the resulting symbol is the displayed transpose, which is computed by the same Taylor expansion as the composition theorem applied to the kernel $\overline{K_{\mathfrak{a}}(y,x)}$.
 
 **Corollary (the calculus is an algebra).** The operators of the form $\mathfrak{a}(x,D)$ with $\mathfrak{a} \in S^\infty$, modulo the smoothing operators $S^{-\infty}(x,D)$, form an algebra with involution under composition and adjoint, filtered by the order, with associated graded algebra the symbols modulo lower order; the principal-symbol map is an isomorphism of the graded pieces onto the homogeneous functions on $T^*\mathbb{R}^n$ of the appropriate degree.
 
@@ -188,10 +188,10 @@ so that $\mathfrak{a}^* \in S^m$ and $\mathfrak{a}^* \equiv\overline{\mathfrak{a
 **Definition.** A symbol $\mathfrak{a} \in S^m$ is **elliptic** if there is $c>0$ with
 
 $$
-|\mathfrak{a}(x,\xi)| \ge c\,(1+|\xi|)^m \qquad \text{for } |\xi| \text{ large},
+|\mathfrak{a}(x,\zeta)| \ge c\,(1+|\zeta|)^m \qquad \text{for } |\zeta| \text{ large},
 $$
 
-uniformly in $x$; if the estimate is required only on a subset of $\mathbb{R}^n_x$ one says that $\mathfrak{a}$ is elliptic there. The **principal symbol** $\sigma_m(\mathfrak{a})$ is the class of $\mathfrak{a}$ in $S^m/S^{m-1}$, represented by the positively homogeneous function $\mathfrak{a}_m(x,\xi)=\lim_{t\to\infty}t^{-m}\mathfrak{a}(x,t\xi)$ for $\xi \neq0$; the ellipticity of $\mathfrak{a}$ is the nonvanishing of $\mathfrak{a}_m(x,\xi)$ for every $\xi \neq0$.
+uniformly in $x$; if the estimate is required only on a subset of $\mathbb{R}^n_x$ one says that $\mathfrak{a}$ is elliptic there. The **principal symbol** $\sigma_m(\mathfrak{a})$ is the class of $\mathfrak{a}$ in $S^m/S^{m-1}$, represented by the positively homogeneous function $\mathfrak{a}_m(x,\zeta)=\lim_{t\to\infty}t^{-m}\mathfrak{a}(x,t\zeta)$ for $\zeta \neq0$; the ellipticity of $\mathfrak{a}$ is the nonvanishing of $\mathfrak{a}_m(x,\zeta)$ for every $\zeta \neq0$.
 
 **Theorem (parametrix).** Let $\mathfrak{a} \in S^m$ be elliptic. Then there is $\mathfrak{b} \in S^{-m}$ with
 
@@ -199,7 +199,7 @@ $$
 \boxed{\;\mathfrak{a}(x,D)\mathfrak{b}(x,D)=I-R_1, \qquad \mathfrak{b}(x,D)\mathfrak{a}(x,D)=I-R_2, \qquad R_1,R_2 \in S^{-\infty}(x,D)\;}.
 $$
 
-*Proof (sketch).* Set $\mathfrak{b}_0$ equal to $\mathfrak{a}^{-1}$ for large $|\xi|$ and to $0$ for small $|\xi|$, cut off smoothly; then $\mathfrak{b}_0 \in S^{-m}$ and $\mathfrak{a}\mathfrak{b}_0-1=:r_0 \in S^{-1}$. If $\mathfrak{b}_N \in S^{-m}$ has been chosen with $\mathfrak{a}\mathfrak{b}_N=1+r_N$ and $r_N \in S^{-N}$, set $\mathfrak{b}_{N+1}=\mathfrak{b}_N-r_Na^{-1}$ with $\mathfrak{a}^{-1}$ again cut off for large $|\xi|$; then $\mathfrak{b}_{N+1} \in S^{-m}$ and
+*Proof (sketch).* Set $\mathfrak{b}_0$ equal to $\mathfrak{a}^{-1}$ for large $|\zeta|$ and to $0$ for small $|\zeta|$, cut off smoothly; then $\mathfrak{b}_0 \in S^{-m}$ and $\mathfrak{a}\mathfrak{b}_0-1=:r_0 \in S^{-1}$. If $\mathfrak{b}_N \in S^{-m}$ has been chosen with $\mathfrak{a}\mathfrak{b}_N=1+r_N$ and $r_N \in S^{-N}$, set $\mathfrak{b}_{N+1}=\mathfrak{b}_N-r_Na^{-1}$ with $\mathfrak{a}^{-1}$ again cut off for large $|\zeta|$; then $\mathfrak{b}_{N+1} \in S^{-m}$ and
 
 $$
 \mathfrak{a}\mathfrak{b}_{N+1}=1+r_N-r_N(\mathfrak{a}\mathfrak{a}^{-1})=1+r_N-r_N(1+r_0)=1-r_Nr_0 \in 1+S^{-N-1},
@@ -209,7 +209,7 @@ so the remainder improves by one order at each step. The recursion produces symb
 
 ### Elliptic Regularity
 
-**Theorem (elliptic regularity, pseudodifferential form).** Let $\mathfrak{a} \in S^m$ be elliptic, properly supported, with bounded derivatives $|\partial^\alpha/\partial\xi^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$, and let $R$ be smoothing. Then for every $s \in \mathbb{R}$ and $1<p<\infty$ the operator $\mathfrak{a}(x,D)$ maps $H^{s}_{n}$ continuously into $H^{s-m}_p$, and for $p=2$ no boundedness of the derivatives is required; consequently
+**Theorem (elliptic regularity, pseudodifferential form).** Let $\mathfrak{a} \in S^m$ be elliptic, properly supported, with bounded derivatives $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$, and let $R$ be smoothing. Then for every $s \in \mathbb{R}$ and $1<p<\infty$ the operator $\mathfrak{a}(x,D)$ maps $H^{s}_{n}$ continuously into $H^{s-m}_p$, and for $p=2$ no boundedness of the derivatives is required; consequently
 
 $$
 \mathfrak{a}(x,D)u \in H^{s-m}_p \implies u \in H^{s}_{n}, \qquad \mathfrak{a}(x,D)u \in C^\infty \implies u \in C^\infty ,
@@ -228,30 +228,30 @@ the implications holding locally and, with proper support, globally.
 **Theorem (Calderón–Vaillancourt).** Let $\mathfrak{a} \in S^0$. Then $\mathfrak{a}(x,D)$ extends to a bounded operator on $L^2(\mathbb{R}^n)$, with
 
 $$
-\|\mathfrak{a}(x,D)\|_{L^2\to L^2} \le C\sup_{|\alpha|+|\beta|\le N}\sup_{x,\xi}(1+|\xi|)^{|\alpha|}|\partial^\alpha/\partial\xi^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}(x,\xi)|
+\|\mathfrak{a}(x,D)\|_{L^2\to L^2} \le C\sup_{|\alpha|+|\beta|\le N}\sup_{x,\zeta}(1+|\zeta|)^{|\alpha|}|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}(x,\zeta)|
 $$
 
 for a constant $C$ and an integer $N$ depending only on the dimension.
 
-*Proof (sketch).* Refine the symbol by a partition of the frequency space into dyadic annuli, write $\mathfrak{a}=\sum_ka_k$ with $\mathfrak{a}_k$ supported in $2^k\le|\xi|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below.
+*Proof (sketch).* Refine the symbol by a partition of the frequency space into dyadic annuli, write $\mathfrak{a}=\sum_ka_k$ with $\mathfrak{a}_k$ supported in $2^k\le|\zeta|\le2^{k+1}$, and use the almost-orthogonality of the resulting frequency-localised pieces together with the Cotlar–Stein lemma; the estimates of the symbol class control the norms of the localised pieces and the overlaps. The detailed argument is the Calderón–Vaillancourt theorem quoted below.
 
-**Theorem (continuity on Sobolev spaces).** Let $\mathfrak{a} \in S^m$. Then $\mathfrak{a}(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $\mathfrak{a}(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $\mathfrak{a}$ are bounded, $|\partial^\alpha/\partial\xi^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^{s}_{n}$ for every $1<p<\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.
+**Theorem (continuity on Sobolev spaces).** Let $\mathfrak{a} \in S^m$. Then $\mathfrak{a}(x,D)$ maps $H^s_2$ continuously into $H^{s-m}_2$ for every $s \in \mathbb{R}$, and this follows from the $S^0$ boundedness applied to $\mathfrak{a}(x,D)\langle D\rangle^{-m}$ and the commutation of $\langle D\rangle^s$ with the calculus up to lower order. If in addition the derivatives of $\mathfrak{a}$ are bounded, $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C_{\alpha\beta}$ for $|\alpha|+|\beta|\le N$, then the same continuity holds on $H^{s}_{n}$ for every $1<p<\infty$ and every $s$; the $L^2$ case is common to both hypotheses, and it is the case guaranteed by the preceding theorem for the full class $S^0$.
 
 ### Gårding's Inequality
 
-**Theorem (Gårding).** Let $\mathfrak{a} \in S^1$ with $\operatorname{Re}\mathfrak{a}(x,\xi)\ge0$ for large $|\xi|$, and suppose $\mathfrak{a}(x,D)$ is properly supported. Then there is $C$ with
+**Theorem (Gårding).** Let $\mathfrak{a} \in S^1$ with $\operatorname{Re}\mathfrak{a}(x,\zeta)\ge0$ for large $|\zeta|$, and suppose $\mathfrak{a}(x,D)$ is properly supported. Then there is $C$ with
 
 $$
 \boxed{\;\operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge -C\|u\|_{L^2}^2 \qquad \text{for all } u \in \mathcal S\;} .
 $$
 
-More generally, if $\mathfrak{a} \in S^m$ is elliptic with $\operatorname{Re}\mathfrak{a}\ge c(1+|\xi|)^m>0$, then for all $u$,
+More generally, if $\mathfrak{a} \in S^m$ is elliptic with $\operatorname{Re}\mathfrak{a}\ge c(1+|\zeta|)^m>0$, then for all $u$,
 
 $$
 \operatorname{Re}\langle \mathfrak{a}(x,D)u,u\rangle \ge c'\|u\|_{H^{m/2}}^2-C\|u\|_{L^2}^2 .
 $$
 
-*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}\mathfrak{a}$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $\mathfrak{a}(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs.
+*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}\mathfrak{a}$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $\mathfrak{a}(x,\zeta)(1+|\zeta|^2)^{-m/2}\langle\zeta\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs.
 
 ## Invariance and Operators on Manifolds
 
@@ -262,7 +262,7 @@ The principal symbol is invariant in a precise sense, and this is what makes the
 **Theorem (invariance of the principal symbol).** Let $\kappa:\Omega\to\Omega^{\mathrm{im}}$ be a diffeomorphism of open sets and let $T=\mathfrak{a}(x,D)$ be a pseudodifferential operator on $\Omega^{\mathrm{im}}$; define the transported operator $\kappa^*T$ on $\Omega$ by $\kappa^*Tu=(T(u\circ\kappa^{-1}))\circ\kappa$. Then $\kappa^*T$ is pseudodifferential of order $m$, and its principal symbol is
 
 $$
-\sigma_m(\kappa^*T)(x,\xi)=\sigma_m(T)\bigl(\kappa(x),\,(d\kappa(x))^{-T}\xi\bigr),
+\sigma_m(\kappa^*T)(x,\zeta)=\sigma_m(T)\bigl(\kappa(x),\,(d\kappa(x))^{-T}\zeta\bigr),
 $$
 
 the action of the cotangent lift of $\kappa$; that is, the principal symbol is a function on the cotangent bundle $T^*M$, and a pseudodifferential operator of order $m$ on a manifold is defined by requiring that in every coordinate chart it be given by a symbol in $S^m$ and that the principal symbols so obtained agree as a function on $T^*M$.
@@ -279,9 +279,9 @@ The index of such an operator depends only on its principal symbol and is comput
 
 ## Summary
 
-A symbol of order $m$ is a smooth function $\mathfrak{a}(x,\xi)$ satisfying $|\partial^\alpha/\partial\xi^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C(1+|\xi|)^{m-|\alpha|}$; the classes $S^m$ are nested, closed under products and differentiation, form a Fréchet space, and admit asymptotic summation, so that any formal series with decreasing orders is represented by a symbol unique modulo the smoothing class $S^{-\infty}$. The quantisation $\mathfrak{a}\mapsto \mathfrak{a}(x,D)$ is defined by the Fourier inversion integral, its kernel is $K_{\mathfrak{a}}(x,y)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\xi)\mathfrak{a}(x,\xi)d\xi$ and is smooth off the diagonal, and it contains the differential operators as the polynomial symbols. The Weyl quantisation differs from the left quantisation by $\frac{1}{2i}\sum_j\partial^2/\partial x_j\partial\xi_j\mathfrak{a}$ plus lower order and has the advantage that the adjoint is the conjugate symbol.
+A symbol of order $m$ is a smooth function $\mathfrak{a}(x,\zeta)$ satisfying $|\partial^\alpha/\partial\zeta^\alpha\,\partial^\beta/\partial x^\beta \mathfrak{a}|\le C(1+|\zeta|)^{m-|\alpha|}$; the classes $S^m$ are nested, closed under products and differentiation, form a Fréchet space, and admit asymptotic summation, so that any formal series with decreasing orders is represented by a symbol unique modulo the smoothing class $S^{-\infty}$. The quantisation $\mathfrak{a}\mapsto \mathfrak{a}(x,D)$ is defined by the Fourier inversion integral, its kernel is $K_{\mathfrak{a}}(x,y)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\zeta)\mathfrak{a}(x,\zeta)d\zeta$ and is smooth off the diagonal, and it contains the differential operators as the polynomial symbols. The Weyl quantisation differs from the left quantisation by $\frac{1}{2i}\sum_j\partial^2/\partial x_j\partial\zeta_j\mathfrak{a}$ plus lower order and has the advantage that the adjoint is the conjugate symbol.
 
-The calculus is closed: $\mathfrak{a}(x,D)\mathfrak{b}(x,D)=c(x,D)$ with $c\sim\sum_\alpha\frac{1}{\alpha!}\partial^\alpha/\partial\xi^\alpha \mathfrak{a}\,D_x^\alpha \mathfrak{b}$, the leading term is the product of the principal symbols, and the commutator has leading order $m+m'-1$ with symbol $\frac1i\{\mathfrak{a},\mathfrak{b}\}$, the Poisson bracket. The adjoint is $\mathfrak{a}^*(x,\xi)\sim\sum_\alpha\frac{1}{\alpha!}\partial^\alpha/\partial\xi^\alpha D_x^\alpha\overline{\mathfrak{a}}$. An elliptic symbol, one bounded below by $c(1+|\xi|)^m$ for large $|\xi|$, has a parametrix $\mathfrak{b} \in S^{-m}$ with $\mathfrak{a}\mathfrak{b}-1$ and $\mathfrak{b}\mathfrak{a}-1$ smoothing; hence an elliptic operator is invertible modulo smoothing, is Fredholm between Sobolev spaces, and obeys the elliptic regularity $au \in H^{s-m}_p\Rightarrow u \in H^{s}_{n}$, with the smooth case included.
+The calculus is closed: $\mathfrak{a}(x,D)\mathfrak{b}(x,D)=c(x,D)$ with $c\sim\sum_\alpha\frac{1}{\alpha!}\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}\,D_x^\alpha \mathfrak{b}$, the leading term is the product of the principal symbols, and the commutator has leading order $m+m'-1$ with symbol $\frac1i\{\mathfrak{a},\mathfrak{b}\}$, the Poisson bracket. The adjoint is $\mathfrak{a}^*(x,\zeta)\sim\sum_\alpha\frac{1}{\alpha!}\partial^\alpha/\partial\zeta^\alpha D_x^\alpha\overline{\mathfrak{a}}$. An elliptic symbol, one bounded below by $c(1+|\zeta|)^m$ for large $|\zeta|$, has a parametrix $\mathfrak{b} \in S^{-m}$ with $\mathfrak{a}\mathfrak{b}-1$ and $\mathfrak{b}\mathfrak{a}-1$ smoothing; hence an elliptic operator is invertible modulo smoothing, is Fredholm between Sobolev spaces, and obeys the elliptic regularity $au \in H^{s-m}_p\Rightarrow u \in H^{s}_{n}$, with the smooth case included.
 
 On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, and operators of order $m$ map $H^s_2$ to $H^{s-m}_2$, the $L^{n}$ version holding for the symbols whose derivatives are bounded, as for the elliptic operators; Gårding's inequality turns the ellipticity and a positivity hypothesis on the symbol into a lower bound for the quadratic form, $\operatorname{Re}\langle au,u\rangle\ge c'\|u\|^2_{H^{m/2}}-C\|u\|^2_{L^2}$. The principal symbol is invariant under diffeomorphisms and transforms by the cotangent lift, so the calculus is defined on any smooth manifold, where the operators form a filtered algebra with elliptic parametrices and Fredholm operators of finite index. The wavefront set and the propagation of singularities, the semiclassical calculus and the index theorem are not covered here' subjects.
 
@@ -289,7 +289,7 @@ On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, an
 
 | Symbol | Meaning |
 |---|---|
-| $x$, $\xi$ | space and frequency variables in $\mathbb{R}^n$ |
+| $x$, $\zeta$ | space and frequency variables in $\mathbb{R}^n$ |
 | $\alpha,\beta$ | multi-indices |
 | $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ | derivative convention |
 | $S^m$, $S^\infty$, $S^{-\infty}$ | symbol classes, smoothing class |
@@ -297,7 +297,7 @@ On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, an
 | $\mathfrak{a}(x,D)=\mathrm{Op}(\mathfrak{a})$ | operator with symbol $\mathfrak{a}$ (left quantisation) |
 | $\mathfrak{a}^w(x,D)$ | Weyl quantisation |
 | $K_{\mathfrak{a}}(x,y)$ | kernel of $\mathfrak{a}(x,D)$, image variable first |
-| $c(x,\xi)$ | composition symbol |
+| $c(x,\zeta)$ | composition symbol |
 | $\{\mathfrak{a},\mathfrak{b}\}$ | Poisson bracket |
 | $\mathfrak{a}^*$ | symbol of the formal adjoint |
 | $\sigma_m(\mathfrak{a})$, $\mathfrak{a}_m$ | principal symbol |

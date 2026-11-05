@@ -311,8 +311,8 @@ $$
 **Definition.** For $f\in L^1(M_4)$, the **Fourier transform** is
 
 $$
-\hat f(\xi)=\int_{M_4}f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}\,dA,
-\qquad \xi\in M_4.
+\hat f(\zeta)=\int_{M_4}f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\zeta^*A)}\,dA,
+\qquad \zeta\in M_4.
 $$
 
 The exponent is the Euclidean pairing of the real $32$-dimensional spaces; the transform is the ordinary Fourier transform on $\mathbb{R}^{32}$, written in matrix coordinates.
@@ -320,37 +320,37 @@ The exponent is the Euclidean pairing of the real $32$-dimensional spaces; the t
 **Inversion and Plancherel.** For $f$ in the Schwartz class,
 
 $$
-f(A)=\int_{M_4}\hat f(\xi)e^{2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}\,d\xi,
+f(A)=\int_{M_4}\hat f(\zeta)e^{2\pi i\operatorname{Re}\operatorname{tr}(\zeta^*A)}\,d\zeta,
 \qquad
-\int_{M_4}\lvert f(A)\rvert^2\,dA=\int_{M_4}\lvert\hat f(\xi)\rvert^2\,d\xi .
+\int_{M_4}\lvert f(A)\rvert^2\,dA=\int_{M_4}\lvert\hat f(\zeta)\rvert^2\,d\zeta .
 $$
 
 **Derivatives.** With the Wirtinger derivatives,
 
 $$
-\widehat{\frac{\partial f}{\partial A_{ij}}}(\xi)
-=\pi i\,\overline{\xi_{ij}}\,\hat f(\xi),
+\widehat{\frac{\partial f}{\partial A_{ij}}}(\zeta)
+=\pi i\,\overline{\zeta_{ij}}\,\hat f(\zeta),
 \qquad
-\widehat{\frac{\partial f}{\partial\bar A_{ij}}}(\xi)
-=\pi i\,\xi_{ij}\,\hat f(\xi).
+\widehat{\frac{\partial f}{\partial\bar A_{ij}}}(\zeta)
+=\pi i\,\zeta_{ij}\,\hat f(\zeta).
 $$
 
-The Laplacian is the multiplier $-4\pi^2\lVert\xi\rVert^2$:
+The Laplacian is the multiplier $-4\pi^2\lVert\zeta\rVert^2$:
 
 $$
-\widehat{\Delta f}(\xi)=-4\pi^2\lVert\xi\rVert^2\hat f(\xi).
+\widehat{\Delta f}(\zeta)=-4\pi^2\lVert\zeta\rVert^2\hat f(\zeta).
 $$
 
 **The heat kernel.** The Fourier transform of the heat kernel is
 
 $$
-\widehat{K_t}(\xi)=e^{-4\pi^2t\lVert\xi\rVert^2},
+\widehat{K_t}(\zeta)=e^{-4\pi^2t\lVert\zeta\rVert^2},
 $$
 
 and the Gaussian $e^{-\pi\lVert A\rVert^2}$ is self-dual:
 
 $$
-\widehat{e^{-\pi\lVert A\rVert^2}}=e^{-\pi\lVert\xi\rVert^2}.
+\widehat{e^{-\pi\lVert A\rVert^2}}=e^{-\pi\lVert\zeta\rVert^2}.
 $$
 
 **The convolution.** The convolution
@@ -428,7 +428,7 @@ a complex hypersurface of real codimension two. What is absent in the full algeb
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\xi_{ij}$ and the Laplacian into $-4\pi^2\lVert\xi\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the closest-$*$-unitary problem for the Frobenius distance is the variational problem of the polar decomposition.
+The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\zeta_{ij}$ and the Laplacian into $-4\pi^2\lVert\zeta\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the closest-$*$-unitary problem for the Frobenius distance is the variational problem of the polar decomposition.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4=16,\quad \langle A,B\rangle=\operatorname{tr}(A^*B),\quad \Delta=4\sum_{i,j}\partial/\partial A_{ij}\partial/\partial\bar A_{ij},\quad d\mu=\pi^{-16}e^{-\lVert A\rVert^2}dA. }
@@ -443,7 +443,7 @@ $$
 | Heat kernel | $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$ |
 | Gradient of $\operatorname{Re}\det$ | $\operatorname{adj}(A)^*$ |
 | Gradient of $\operatorname{tr}$ | $I$ |
-| Fourier transform | $\hat f(\xi)=\int f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}dA$ |
+| Fourier transform | $\hat f(\zeta)=\int f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\zeta^*A)}dA$ |
 
 ## Summary of Notation
 

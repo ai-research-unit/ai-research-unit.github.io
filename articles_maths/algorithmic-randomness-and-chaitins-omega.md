@@ -16,14 +16,14 @@ Two boundaries are respected throughout. The article does not build a probabilit
 **Definition.** A **computable open set** is a union $\bigcup_n (a_n, b_n)$ of rational intervals whose endpoints are given by a computable sequence. An **effective null set** is a set of the form
 
 $$
-\bigcap_{n \geq 0} \Xi_n ,
+\bigcap_{n \geq 0} Ζ_n ,
 $$
 
-where $(\Xi_n)$ is a computable sequence of computable open sets with $\Xi_n \subseteq (0,1)$ and Lebesgue measure $\lambda(\Xi_n) \leq 2^{-n}$ for every $n$. A real $x$ is **Martin-Löf random** if it lies in no effective null set.
+where $(Ζ_n)$ is a computable sequence of computable open sets with $Ζ_n \subseteq (0,1)$ and Lebesgue measure $\lambda(Ζ_n) \leq 2^{-n}$ for every $n$. A real $x$ is **Martin-Löf random** if it lies in no effective null set.
 
 **Theorem.** The effective null sets are null sets of *Measure Theory and Integration*, above; their union has measure zero, and consequently the set of Martin-Löf random reals has measure one.
 
-**Proof.** Each effective null set is contained in a null set of the measure theory, since it is contained in $\Xi_n$ for every $n$ and $\lambda(\Xi_n) \to 0$, as in *Measure Theory and Integration*, above. The union of the effective null sets is itself an effective null set: enumerate the computable sequences of rational intervals, and for the $n$-th effective null set inside the enumeration absorb a factor $2^{-n}$, so that the union has measure zero. Hence the union of the effective null sets is null and its complement, the set of random reals, has measure one.
+**Proof.** Each effective null set is contained in a null set of the measure theory, since it is contained in $Ζ_n$ for every $n$ and $\lambda(Ζ_n) \to 0$, as in *Measure Theory and Integration*, above. The union of the effective null sets is itself an effective null set: enumerate the computable sequences of rational intervals, and for the $n$-th effective null set inside the enumeration absorb a factor $2^{-n}$, so that the union has measure zero. Hence the union of the effective null sets is null and its complement, the set of random reals, has measure one.
 
 **Remark.** The definition is the effective form of "almost every": a property holds for almost every real when the set where it fails is null, and it holds for random reals when the failure set is effectively null. The two notions agree in that every effective null set is null, and they differ in that not every null set is effective: there are null sets that contain random reals, so the effective null sets are the ones a computable test can name. The article uses only the effective notion, and the refinement of the Borel sets to the effective hierarchy belongs to *Descriptive Set Theory*, elsewhere in this Part.
 
@@ -107,7 +107,7 @@ for every $n$, where $x \upharpoonright n$ is the first $n$ bits of $x$.
 
 ## Summary
 
-The effective refinement of measure theory replaces the null sets of *Measure Theory and Integration*, above, by the effective null sets, the sets of the form $\bigcap_n \Xi_n$ with $(\Xi_n)$ a computable sequence of computable open sets of measure at most $2^{-n}$, and defines the Martin-Löf random reals as those lying in no effective null set; the union of the effective null sets is null and the random reals therefore have measure one. The Kolmogorov and prefix complexities $C$ and $K$ measure the length of the shortest program for a finite string, depend on the machine only up to an additive constant, and satisfy the counting bound, which gives the incompressibility criterion: a real is random exactly when its initial segments are incompressible. Chaitin's $\Omega$ is the halting probability of a prefix-free universal machine, a computably enumerable real that is Martin-Löf random and therefore not computable, and the halting problem is computable from its bits. Every random real is incomputable, the set of ones of a random real and its complement each contain no infinite computably enumerable subset, and the random reals are not closed under addition or multiplication: the sum, and the product, of two random reals can be computable.
+The effective refinement of measure theory replaces the null sets of *Measure Theory and Integration*, above, by the effective null sets, the sets of the form $\bigcap_n Ζ_n$ with $(Ζ_n)$ a computable sequence of computable open sets of measure at most $2^{-n}$, and defines the Martin-Löf random reals as those lying in no effective null set; the union of the effective null sets is null and the random reals therefore have measure one. The Kolmogorov and prefix complexities $C$ and $K$ measure the length of the shortest program for a finite string, depend on the machine only up to an additive constant, and satisfy the counting bound, which gives the incompressibility criterion: a real is random exactly when its initial segments are incompressible. Chaitin's $\Omega$ is the halting probability of a prefix-free universal machine, a computably enumerable real that is Martin-Löf random and therefore not computable, and the halting problem is computable from its bits. Every random real is incomputable, the set of ones of a random real and its complement each contain no infinite computably enumerable subset, and the random reals are not closed under addition or multiplication: the sum, and the product, of two random reals can be computable.
 
 ## Summary of Notation
 
@@ -117,7 +117,7 @@ The effective refinement of measure theory replaces the null sets of *Measure Th
 | $C(x)$, $K(x)$ | The Kolmogorov and prefix complexity of a finite binary string |
 | $\Omega$ | A prefix-free universal partial computable function |
 | $x \upharpoonright n$ | The first $n$ bits of a real $x$ |
-| $\Xi_n$, $\bigcap_n \Xi_n$ | A computable sequence of computable open sets, and an effective null set |
+| $Ζ_n$, $\bigcap_n Ζ_n$ | A computable sequence of computable open sets, and an effective null set |
 | $\lambda$ | Lebesgue measure, of *Measure Theory and Integration*, above |
 | computably enumerable real | The limit of a computable increasing sequence of rationals |
 | Martin-Löf random | Lying in no effective null set |

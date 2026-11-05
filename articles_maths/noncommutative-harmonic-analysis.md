@@ -15,7 +15,7 @@ $$
 (f*g)(x) = \int_G f(y)g(y^{-1}x)\,dy , \qquad f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1} .
 $$
 
-The abelian dual is $G^\vee$ and the unitary dual — the set of equivalence classes of irreducible unitary representations — is $\operatorname{Irr}(G)$; for $\pi \in \operatorname{Irr}(G)$ the space is $\mathcal{H}_\pi$, the transform is $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$, and the matrix coefficients are $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$. The reduced and full group $\mathrm{C}^*$-algebras are $C^*_r(G)$ and $C^*(G)$, and the group von Neumann algebra is $L(G) = \lambda(G)''$. The hat is never used for a dual.
+The abelian dual is $G^\vee$ and the unitary dual — the set of equivalence classes of irreducible unitary representations — is $\operatorname{Irr}(G)$; for $\pi \in \operatorname{Irr}(G)$ the space is $\mathcal{H}_\pi$, the transform is $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$, and the matrix coefficients are $c^\pi_{\zeta,\eta}(g) = \langle\pi(g)\zeta,\eta\rangle$. The reduced and full group $\mathrm{C}^*$-algebras are $C^*_r(G)$ and $C^*(G)$, and the group von Neumann algebra is $L(G) = \lambda(G)''$. The hat is never used for a dual.
 
 ## The Failure of the Commutative Framework
 
@@ -65,11 +65,11 @@ Thus the transform is a $*$-homomorphism of the Banach $*$-algebra $L^1(G)$ into
 
 ### Matrix Coefficients and Functions of Positive Type
 
-**Definition.** A **matrix coefficient** of the unitary representation $\pi$ is the continuous function $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$. A continuous function $\varphi$ on $G$ is **of positive type** if $\sum_{i,j}c_i\overline{c_j}\varphi(x_j^{-1}x_i) \geq 0$ for every finite family and every choice of coefficients.
+**Definition.** A **matrix coefficient** of the unitary representation $\pi$ is the continuous function $c^\pi_{\zeta,\eta}(g) = \langle\pi(g)\zeta,\eta\rangle$. A continuous function $\varphi$ on $G$ is **of positive type** if $\sum_{i,j}c_i\overline{c_j}\varphi(x_j^{-1}x_i) \geq 0$ for every finite family and every choice of coefficients.
 
-**Theorem (Godement).** A continuous function $\varphi$ on $G$ is of positive type if and only if there is a unitary representation $\pi$ of $G$ and a vector $\xi \in \mathcal{H}_\pi$ with $\varphi(g) = c^\pi_{\xi,\xi}(g)$; the representation may be taken cyclic with $\xi$ cyclic, and then it is unique up to unitary equivalence (the GNS construction). Every matrix coefficient is a linear combination of four functions of positive type, and a function of positive type satisfies $\varphi(e) = \|\varphi\|_\infty$, $\varphi(g^{-1}) = \overline{\varphi(g)}$ and $\|\varphi\|_\infty = \|\varphi\|_{C^*}$.
+**Theorem (Godement).** A continuous function $\varphi$ on $G$ is of positive type if and only if there is a unitary representation $\pi$ of $G$ and a vector $\zeta \in \mathcal{H}_\pi$ with $\varphi(g) = c^\pi_{\zeta,\zeta}(g)$; the representation may be taken cyclic with $\zeta$ cyclic, and then it is unique up to unitary equivalence (the GNS construction). Every matrix coefficient is a linear combination of four functions of positive type, and a function of positive type satisfies $\varphi(e) = \|\varphi\|_\infty$, $\varphi(g^{-1}) = \overline{\varphi(g)}$ and $\|\varphi\|_\infty = \|\varphi\|_{C^*}$.
 
-**Proof sketch.** Given $\varphi$ of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f,h\rangle_\varphi = \int\int f(x)\overline{h(y)}\varphi(y^{-1}x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space, the group acts unitarily by left translation because of the invariance of the kernel, and the class of an approximate identity concentrated near $e$ is the cyclic vector $\xi$ whose associated coefficient is $\varphi$. Conversely a diagonal coefficient is of positive type because $\sum c_i\overline{c_j}\langle\pi(x_j^{-1}x_i)\xi,\xi\rangle = \|\sum_i c_i\pi(x_i)\xi\|^2 \geq 0$. Uniqueness is the standard uniqueness in the GNS construction. This is the noncommutative form of Bochner's theorem; in the abelian case the cyclic representations are the characters and the theorem reduces to *Harmonic Analysis on Groups*, §Positive-Definite Functions and Bochner's Theorem.
+**Proof sketch.** Given $\varphi$ of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f,h\rangle_\varphi = \int\int f(x)\overline{h(y)}\varphi(y^{-1}x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space, the group acts unitarily by left translation because of the invariance of the kernel, and the class of an approximate identity concentrated near $e$ is the cyclic vector $\zeta$ whose associated coefficient is $\varphi$. Conversely a diagonal coefficient is of positive type because $\sum c_i\overline{c_j}\langle\pi(x_j^{-1}x_i)\zeta,\zeta\rangle = \|\sum_i c_i\pi(x_i)\zeta\|^2 \geq 0$. Uniqueness is the standard uniqueness in the GNS construction. This is the noncommutative form of Bochner's theorem; in the abelian case the cyclic representations are the characters and the theorem reduces to *Harmonic Analysis on Groups*, §Positive-Definite Functions and Bochner's Theorem.
 
 **Corollary (the noncommutative Bochner theorem).** The functions of positive type are the "noncommutative Fourier–Stieltjes transforms": each is the diagonal matrix coefficient of a cyclic unitary representation, and the correspondence is a bijection up to unitary equivalence. The measure of the abelian theorem has become the representation.
 
@@ -149,9 +149,9 @@ the inclusion being an equality exactly in the amenable case. The Gelfand–Naim
 
 **Theorem (Hulanicki).** A locally compact group $G$ is amenable if and only if the trivial representation is weakly contained in the regular representation, $\mathbf{1} \prec \lambda$.
 
-**Proof sketch.** If $\mathbf{1} \prec \lambda$, then the constant function $1$ is a limit of sums of coefficients of $\lambda$, and integrating against an invariant mean constructed from these coefficients gives amenability; the translation of the condition into Reiter's property $P_1$ is immediate. Conversely, amenability gives approximately invariant unit vectors $\xi_\alpha \in L^2(G)$ (the square roots of the Reiter functions of *The Convolution Algebra $L^1(G)$*, §Reiter's Property and Amenability), and the associated coefficient $\langle\lambda(g)\xi_\alpha,\xi_\alpha\rangle$ of $\lambda$ converges uniformly on compacta to $1$, which is the coefficient of the trivial representation. This is Hulanicki's theorem and is quoted.
+**Proof sketch.** If $\mathbf{1} \prec \lambda$, then the constant function $1$ is a limit of sums of coefficients of $\lambda$, and integrating against an invariant mean constructed from these coefficients gives amenability; the translation of the condition into Reiter's property $P_1$ is immediate. Conversely, amenability gives approximately invariant unit vectors $\zeta_\alpha \in L^2(G)$ (the square roots of the Reiter functions of *The Convolution Algebra $L^1(G)$*, §Reiter's Property and Amenability), and the associated coefficient $\langle\lambda(g)\zeta_\alpha,\zeta_\alpha\rangle$ of $\lambda$ converges uniformly on compacta to $1$, which is the coefficient of the trivial representation. This is Hulanicki's theorem and is quoted.
 
-**Corollary (the spectral gap of a (T) group).** If $G$ has property (T), then $\mathbf{1}$ is not weakly contained in $\lambda$, and there is a neighbourhood $Q$ of $e$ and $\varepsilon > 0$ with $\sup_{g\in Q}\|\lambda(g)\xi - \xi\| \geq \varepsilon\|\xi\|$ for every $\xi \in L^2(G)$ orthogonal to the constants; equivalently $\|\lambda(f)\| < \|f\|_1$ for suitable $f$. This is the spectral gap used for expanders in *Property (T)* and for the ergodic theorems.
+**Corollary (the spectral gap of a (T) group).** If $G$ has property (T), then $\mathbf{1}$ is not weakly contained in $\lambda$, and there is a neighbourhood $Q$ of $e$ and $\varepsilon > 0$ with $\sup_{g\in Q}\|\lambda(g)\zeta - \zeta\| \geq \varepsilon\|\zeta\|$ for every $\zeta \in L^2(G)$ orthogonal to the constants; equivalently $\|\lambda(f)\| < \|f\|_1$ for suitable $f$. This is the spectral gap used for expanders in *Property (T)* and for the ergodic theorems.
 
 ### The Coefficient Transform as a Noncommutative $L^\infty$
 
@@ -171,7 +171,7 @@ This dictionary is the exact noncommutative analogue of the chain $L^1(G) \subse
 Let $H$ be the three-dimensional Heisenberg group with the multiplication $(x,y,z)(x',y',z') = (x+x', y+y', z+z'+xy')$. It is a connected nilpotent Lie group, hence unimodular and of type I. Its unitary dual consists of the characters of the abelianisation, parametrised by $\mathbb{R}^2$, together with one infinite-dimensional representation $\pi_\lambda$ for each $\lambda \in \mathbb{R}\smallsetminus\{0\}$, the **Schrödinger representation** on $L^2(\mathbb{R})$,
 
 $$
-\pi_\lambda(x,y,z)\xi(t) = \exp(2\pi i \lambda(z + ty))\xi(t+x),
+\pi_\lambda(x,y,z)\zeta(t) = \exp(2\pi i \lambda(z + ty))\zeta(t+x),
 $$
 
 which by the Stone–von Neumann theorem is the unique irreducible representation with central character $\exp(2\pi i\lambda z)$. The Plancherel measure is supported on the infinite-dimensional part , with the Haar measure normalised as in the formula above, has density proportional to $|\lambda|\,d\lambda$; this is the explicit form of the abstract theorem of the previous section, and its derivation is standard.
@@ -200,7 +200,7 @@ Noncommutative harmonic analysis replaces the dual group of the abelian theory b
 | $\operatorname{Irr}(G)$ | Unitary dual, with the Fell topology |
 | $\mathcal{H}_\pi$ | Hilbert space of the representation $\pi$ |
 | $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$ | Operator-valued Fourier transform |
-| $c^\pi_{\xi,\eta}(g) = \langle\pi(g)\xi,\eta\rangle$ | Matrix coefficients |
+| $c^\pi_{\zeta,\eta}(g) = \langle\pi(g)\zeta,\eta\rangle$ | Matrix coefficients |
 | positive type | $\sum_{i,j}c_i\overline{c_j}\varphi(x_j^{-1}x_i)\geq0$ |
 | $\mu_P$ | Plancherel measure on $\operatorname{Irr}(G)$ |
 | $d_\pi = \dim\mathcal{H}_\pi$ | Dimension/multiplicity function |

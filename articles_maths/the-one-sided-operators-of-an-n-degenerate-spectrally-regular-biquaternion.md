@@ -148,12 +148,12 @@ The pair $(\tilde Q_H,\tilde Q_0)$ is the general pair of *The Polar Decompositi
 Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. Put
 
 $$
-\tilde\Xi=2\tilde\Pi-e_t,\qquad
+\tilde{Ζ}=2\tilde\Pi-e_t,\qquad
 \tilde\Pi'=e_t-\tilde\Pi,\qquad
-\kappa=2\langle\tilde\Pi\rangle_{*}=\frac{1+\lVert\tilde\Xi\rVert_E^{2}}{2},
+\kappa=2\langle\tilde\Pi\rangle_{*}=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{2},
 $$
 
-where $\lVert\tilde\Xi\rVert_E^{2}=\lvert\Xi_x\rvert^{2}+\lvert\Xi_y\rvert^{2}+\lvert\Xi_z\rvert^{2}$. The root satisfies $\tilde\Xi^{2}=e_t$ and $\tilde\Xi\neq\pm e_t$; the idempotent has $\langle\tilde\Pi\rangle_{\natural}=0$ and $B^{2}(\tilde\Pi)=-\tfrac14$. The number $\kappa$ is real and $\kappa\ge1$, with equality exactly when $\tilde\Pi$ is Hermitian.
+where $\lVert\tilde{Ζ}\rVert_E^{2}=\lvertΖ_x\rvert^{2}+\lvertΖ_y\rvert^{2}+\lvertΖ_z\rvert^{2}$. The root satisfies $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}\neq\pm e_t$; the idempotent has $\langle\tilde\Pi\rangle_{\natural}=0$ and $B^{2}(\tilde\Pi)=-\tfrac14$. The number $\kappa$ is real and $\kappa\ge1$, with equality exactly when $\tilde\Pi$ is Hermitian.
 
 **Proposition (the closed form).** On $\Sigma_{01}$,
 
@@ -166,16 +166,16 @@ P=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa},\qquad
 \;}
 $$
 
-*Proof.* The Hermitian norm of $\tilde\Pi=(e_t+\tilde\Xi)/2$ is
+*Proof.* The Hermitian norm of $\tilde\Pi=(e_t+\tilde{Ζ})/2$ is
 
 $$
 \langle\tilde\Pi\rangle_{*}
-=\frac14\bigl(1+\langle\tilde\Xi\tilde\Xi^{*}\rangle_{*}\bigr)
-=\frac{1+\lVert\tilde\Xi\rVert_E^{2}}{4}
+=\frac14\bigl(1+\langle\tilde{Ζ}\tilde{Ζ}^{*}\rangle_{*}\bigr)
+=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{4}
 =\frac{\kappa}{2},
 $$
 
-because $\operatorname{Sc}\tilde\Xi=0$ and $\operatorname{Sc}(\tilde\Xi\tilde\Xi^{*})=\lVert\tilde\Xi\rVert_E^{2}$. Hence $\langle\tilde Q\rangle_{*}=\lvert c\rvert^{2}\kappa/2$ and $a=\lvert c\rvert\sqrt{\kappa}/2$. The formula for $P$ is $\tilde Q\tilde Q^{*}/(4a^{2})=\tilde\Pi\tilde\Pi^{*}/\kappa$. The partial-isometry factor is
+because $\operatorname{Sc}\tilde{Ζ}=0$ and $\operatorname{Sc}(\tilde{Ζ}\tilde{Ζ}^{*})=\lVert\tilde{Ζ}\rVert_E^{2}$. Hence $\langle\tilde Q\rangle_{*}=\lvert c\rvert^{2}\kappa/2$ and $a=\lvert c\rvert\sqrt{\kappa}/2$. The formula for $P$ is $\tilde Q\tilde Q^{*}/(4a^{2})=\tilde\Pi\tilde\Pi^{*}/\kappa$. The partial-isometry factor is
 
 $$
 \tilde Q_0=\frac{\tilde Q}{2a}=\frac{c\tilde\Pi}{\lvert c\rvert\sqrt{\kappa}}
@@ -465,7 +465,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\sqrt2\,\vec e_z .
 $$
 
-Then $c=2$, $\tilde\Pi=(e_t+\vec e_x+i\sqrt2\,\vec e_z)/2$, $\tilde\Xi=\vec e_x+i\sqrt2\,\vec e_z$, $\kappa=2$, $a=\sqrt2$. The idempotent is not Hermitian; its Hermitian projection is
+Then $c=2$, $\tilde\Pi=(e_t+\vec e_x+i\sqrt2\,\vec e_z)/2$, $\tilde{Ζ}=\vec e_x+i\sqrt2\,\vec e_z$, $\kappa=2$, $a=\sqrt2$. The idempotent is not Hermitian; its Hermitian projection is
 
 $$
 P=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa}
@@ -529,7 +529,7 @@ with eigenvalues $2,2,0,0$ and singular values $2\sqrt2,2\sqrt2,0,0$. The exampl
 |---|---|
 | $\tilde Q=c\tilde\Pi$ | an element of $\Sigma_{01}$ |
 | $\tilde\Pi'=e_t-\tilde\Pi$ | the complementary idempotent |
-| $\tilde\Xi=2\tilde\Pi-e_t$ | the pure root of $e_t$ |
+| $\tilde{Ζ}=2\tilde\Pi-e_t$ | the pure root of $e_t$ |
 | $\kappa=2\langle\tilde\Pi\rangle_{*}$ | the obliqueness, $\kappa\ge1$ |
 | $a=\sqrt{\langle\tilde Q\rangle_{*}/2}$ | the half singular value, $2a$ the non-zero singular value |
 | $P=\tilde Q\tilde Q^{*}/(4a^{2})$ | the rank-one Hermitian idempotent |

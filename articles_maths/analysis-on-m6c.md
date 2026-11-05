@@ -281,17 +281,17 @@ with $N_i=(A-\lambda_iI_6)P_i$ nilpotent.
 **Proposition.** $\mathcal{S}$ is a Fréchet space, stable under differentiation and multiplication by polynomials, and the Fourier transform
 
 $$
-\hat f(\xi)=\int_{\mathbb{R}^{72}}f(x)e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
+\hat f(\zeta)=\int_{\mathbb{R}^{72}}f(x)e^{-2\pi\mathrm i\langle\zeta,x\rangle}\,dx
 $$
 
 maps $\mathcal{S}$ into itself.
 
-**Proof.** The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
+**Proof.** The derivatives of $\hat f$ multiply by powers of $\zeta$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
 
 **Corollary (Plancherel and inversion).** The Fourier transform extends to a $*$-unitary operator on $L^2(\mathbb{R}^{72})$, and
 
 $$
-f(x)=\int_{\mathbb{R}^{72}}\hat f(\xi)e^{2\pi\mathrm i\langle\xi,x\rangle}\,d\xi .
+f(x)=\int_{\mathbb{R}^{72}}\hat f(\zeta)e^{2\pi\mathrm i\langle\zeta,x\rangle}\,d\zeta .
 $$
 
 **Proof.** The inversion and Plancherel theorems for the Euclidean Fourier transform; the Gaussian is the standard test function.
@@ -309,7 +309,7 @@ $$
 **Corollary (differentiation and convolution).** The Fourier transform converts differentiation into multiplication,
 
 $$
-\widehat{\partial f/\partial x_j}(\xi)=2\pi\mathrm i\xi_j\hat f(\xi),
+\widehat{\partial f/\partial x_j}(\zeta)=2\pi\mathrm i\zeta_j\hat f(\zeta),
 $$
 
 and convolution into product.
@@ -321,8 +321,8 @@ and convolution into product.
 **Proposition.** The Gaussian Fourier transform is
 
 $$
-\int_{\mathbb{R}^{72}}e^{-\pi\lvert x\rvert^2}e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
-=e^{-\pi\lvert\xi\rvert^2}.
+\int_{\mathbb{R}^{72}}e^{-\pi\lvert x\rvert^2}e^{-2\pi\mathrm i\langle\zeta,x\rangle}\,dx
+=e^{-\pi\lvert\zeta\rvert^2}.
 $$
 
 **Proof.** The integral factors over the $72$ coordinates; the one-dimensional formula is the standard Gaussian integral.
@@ -335,7 +335,7 @@ $$
 
 and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
 
-**Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\xi\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
+**Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\zeta\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
 
 **Remark (the Euclidean transform).** **The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_6$.** It uses the additive structure of $\mathbb{C}^{36}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(6)$ is a different object, defined by the irreducible representations; it is not needed here.
 

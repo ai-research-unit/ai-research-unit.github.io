@@ -45,7 +45,7 @@ where $e_i$ is the family that is $1$ at $i$ and $0$ elsewhere.
 
 **Proof.** Completeness of $\ell^\infty$ is the completeness of a product of complete spaces restricted by a closed condition, and $c_0$ is closed in $\ell^\infty$ because a uniform limit of null families is null. For the duality, let $f \in c_0(I)'$ and put $b_i = f(e_i)$; every $a \in c_0(I)$ is the norm-convergent sum $\sum_i a_i e_i$, so $f(a) = \sum_i a_i b_i$ by continuity, and $\lvert f(a) \rvert \leq \lVert a \rVert_\infty \sup_i \lvert b_i \rvert$. The family $(b_i)$ is bounded because $\lvert b_i \rvert \leq \lVert f \rVert$; conversely a bounded family $(b_i)$ defines a functional of norm $\sup_i \lvert b_i \rvert$, the bound being attained on the unit vectors.
 
-**Example (the Tate algebra is a $c_0$).** The Tate algebra $T_n = K\langle \xi_1,\dots,\xi_n\rangle$ of *Rigid Analytic Functions*, with its Gauss norm, is isometric as a Banach space to $c_0(\mathbb{N}^n)$: the monomials $\xi^\nu$ satisfy $\lVert\sum_\nu a_\nu \xi^\nu\rVert = \max_\nu \lvert a_\nu \rvert$ by the Gauss lemma, so they form an orthonormal family, and the coefficient families are exactly the null families on $\mathbb{N}^n$. The multiplicative structure is additional to the Banach space structure.
+**Example (the Tate algebra is a $c_0$).** The Tate algebra $T_n = K\langle \zeta_1,\dots,\zeta_n\rangle$ of *Rigid Analytic Functions*, with its Gauss norm, is isometric as a Banach space to $c_0(\mathbb{N}^n)$: the monomials $\zeta^\nu$ satisfy $\lVert\sum_\nu a_\nu \zeta^\nu\rVert = \max_\nu \lvert a_\nu \rvert$ by the Gauss lemma, so they form an orthonormal family, and the coefficient families are exactly the null families on $\mathbb{N}^n$. The multiplicative structure is additional to the Banach space structure.
 
 **Example (spaces of continuous functions).** For a compact topological space $X$ the space $C(X,K)$ of continuous functions with the supremum norm is a Banach space, and for $X = \mathbb{Z}_p$ its dual is the space of $p$-adic measures of *p-adic Integration*, with the Amice transform giving the coefficients of the dual element in the variable $\binom{x}{n}$.
 
@@ -151,7 +151,7 @@ and for a subset $B \subseteq E'$ the polar in $E$ is $B_\circ = \{x \in E : \lv
 
 **Proof sketch.** Over a spherically complete field the Hahn–Banach theorem is available and separates a point from a closed absolutely convex set not containing it, which is the content of the theorem; the identification of compactoidness with the property of being "polar of a neighbourhood" is then a formal consequence of the definitions and of the density of the finite-dimensional approximations. The details are in the standard reference.
 
-**Corollary (the duality of the Tate algebra).** Let $K$ be a complete non-Archimedean field and let $T_n = K\langle\xi_1,\dots,\xi_n\rangle$ be the Tate algebra of *Rigid Analytic Functions* with its Gauss norm, so that $T_n$ is isometric to $c_0(\mathbb{N}^n)$. Then the dual of $T_n$ is isometrically $\ell^\infty(\mathbb{N}^n)$, the space of bounded families of coefficients; the pairing is $(f, \lambda) \mapsto \sum_\nu a_\nu \lambda_\nu$ for $f = \sum_\nu a_\nu\xi^\nu$, and the unit ball of the dual is the space of $p$-adic distributions of *p-adic Integration*, with the Amice transform identifying a distribution with the power series $\sum_\nu \lambda_\nu T^\nu$ of bounded coefficients and a measure with an element of $\mathbb{Z}_p[[T]]$ in the case $K = \mathbb{Q}_p$.
+**Corollary (the duality of the Tate algebra).** Let $K$ be a complete non-Archimedean field and let $T_n = K\langle\zeta_1,\dots,\zeta_n\rangle$ be the Tate algebra of *Rigid Analytic Functions* with its Gauss norm, so that $T_n$ is isometric to $c_0(\mathbb{N}^n)$. Then the dual of $T_n$ is isometrically $\ell^\infty(\mathbb{N}^n)$, the space of bounded families of coefficients; the pairing is $(f, \lambda) \mapsto \sum_\nu a_\nu \lambda_\nu$ for $f = \sum_\nu a_\nu\zeta^\nu$, and the unit ball of the dual is the space of $p$-adic distributions of *p-adic Integration*, with the Amice transform identifying a distribution with the power series $\sum_\nu \lambda_\nu T^\nu$ of bounded coefficients and a measure with an element of $\mathbb{Z}_p[[T]]$ in the case $K = \mathbb{Q}_p$.
 
 **Proof.** This is the duality $c_0(I)' = \ell^\infty(I)$ of the previous section applied to the orthonormal basis of monomials, together with the identification of the distributions and the Amice transform established in *p-adic Integration*.
 
@@ -181,7 +181,7 @@ Duality is governed by spherical completeness. The Hahn–Banach theorem holds f
 | $\mathrm{ac}(F)$ | Absolutely convex hull of $F$ |
 | Compactoid | Approximable by $\mathrm{ac}(F)$ in every neighbourhood of $0$ |
 | $A^\circ$, $B_\circ$ | Polar of $A \subseteq E$ in $E'$, polar of $B \subseteq E'$ in $E$ |
-| $T_n = K\langle\xi_1,\dots,\xi_n\rangle$ | Tate algebra, isometric to $c_0(\mathbb{N}^n)$ |
+| $T_n = K\langle\zeta_1,\dots,\zeta_n\rangle$ | Tate algebra, isometric to $c_0(\mathbb{N}^n)$ |
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | Spherically complete; complete but not spherically complete |
 
 

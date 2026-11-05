@@ -197,10 +197,10 @@ $$
 
 where $W(t, \omega) = \exp(-2\pi \rho \omega t)$ and $\rho$ is a unit pure real quaternion.
 
-The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g(t)$ in the basis $\{e_t, \rho, \nu, \xi\}$:
+The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\zeta$ such that $\{\rho, \nu, \zeta\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g(t)$ in the basis $\{e_t, \rho, \nu, \zeta\}$:
 
 $$
-g(t) = g_0(t) e_t + g_\rho(t) \rho + g_\nu(t) \nu + g_\xi(t) \xi, \qquad g_\bullet(t) \in \mathbb{C}.
+g(t) = g_0(t) e_t + g_\rho(t) \rho + g_\nu(t) \nu + g_\zeta(t) \zeta, \qquad g_\bullet(t) \in \mathbb{C}.
 $$
 
 The quaternion Fourier transform then decomposes into **four complex Fourier transforms**, one for each complex coefficient, as discussed in the biquaternion continuous harmonic analysis article.
@@ -452,7 +452,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
 | $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |
-| $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |
+| $\hat{f}(\zeta)$ | Continuous split-biquaternion Fourier transform |
 | $f * g$ | Convolution |
 | $\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |
 

@@ -143,7 +143,7 @@ $$
 
 with $\lambda_+-\lambda_-=2q'$. Hence $\Pi_\pm$ are polynomials in $Q$ when $q'\neq0$, and in particular commute with $Q$. When $q'=0$ the denominator vanishes and the formula does not apply: the eigenprojection of the single eigenvalue $\lambda_+=\lambda_-=q$ is then $1$, not $\Pi_\pm$.
 
-**Independence of the element.** The eigenprojections are the fixed pair $\Pi_\pm$: they do not depend on $Q$. This is the commutative counterpart of the biquaternion case, where the eigenprojections are the idempotents of the pure root $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ and therefore vary with $\tilde Q$ (*The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*). Here the dependence on the element lies in the eigenvalues alone.
+**Independence of the element.** The eigenprojections are the fixed pair $\Pi_\pm$: they do not depend on $Q$. This is the commutative counterpart of the biquaternion case, where the eigenprojections are the idempotents of the pure root $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$ and therefore vary with $\tilde Q$ (*The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*). Here the dependence on the element lies in the eigenvalues alone.
 
 The pair is collected in the table.
 
@@ -363,25 +363,25 @@ The notation $S_\pm$ is reserved for these two spaces.
 
 A **spinor of the first Peirce copy** is an element of $S_+$,
 $$
-\xi_+=a_1\Pi_+,\qquad a_1\in\mathbb{R},
+\zeta_+=a_1\Pi_+,\qquad a_1\in\mathbb{R},
 $$
 and a **spinor of the second Peirce copy** is an element of $S_-$,
 $$
-\xi_-=a_2\Pi_-,\qquad a_2\in\mathbb{R}.
+\zeta_-=a_2\Pi_-,\qquad a_2\in\mathbb{R}.
 $$
 In the eigenbasis their coordinates are
 $$
-\xi_+\longleftrightarrow(a_1,0),
+\zeta_+\longleftrightarrow(a_1,0),
 \qquad
-\xi_-\longleftrightarrow(0,a_2).
+\zeta_-\longleftrightarrow(0,a_2).
 $$
 The two spinor spaces are the two coordinate axes of the eigenbasis.
 
 The element $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ acts on them by
 $$
-Q\xi_+=\lambda_+\xi_+,
+Q\zeta_+=\lambda_+\zeta_+,
 \qquad
-Q\xi_-=\lambda_-\xi_-,
+Q\zeta_-=\lambda_-\zeta_-,
 $$
 so $S_+$ is the $\lambda_+$-eigenspace and $S_-$ the $\lambda_-$-eigenspace. In coordinates,
 $$
@@ -389,7 +389,7 @@ a_1\longmapsto\lambda_+a_1,
 \qquad
 a_2\longmapsto\lambda_-a_2.
 $$
-A general element $Q_2=\xi_++\xi_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $Q_2=\zeta_++\zeta_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\zeta_+,\zeta_-$ are the two summands in the direct sum.
 
 **Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{C}^{\mathrm{spl}}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
@@ -426,7 +426,7 @@ S_+=\mathbb{R}\Pi_+\longleftrightarrow\operatorname{span}\{E_{11}\}=\text{column
 \qquad
 S_-=\mathbb{R}\Pi_-\longleftrightarrow\operatorname{span}\{E_{22}\}=\text{column }2.
 $$
-A spinor of the first Peirce copy $\xi_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of the second Peirce copy $\xi_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.
+A spinor of the first Peirce copy $\zeta_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of the second Peirce copy $\zeta_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.
 
 In the basis $(1,j)$ the regular representation is
 $$
@@ -750,7 +750,7 @@ The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{C}^{\mathrm{sp
 
 ### Comparison with the Neighbouring Cases
 
-The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec\Xi=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Upsilon_\pm$ are the two nilpotents of the eigenbasis, one in each mixed corner.
+The table compares the decomposition across the three algebras; in the biquaternion column, the distinct case is $Q_x^2+Q_y^2+Q_z^2\neq0$, $\vec{Ζ}=-i\vec Q/\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and $\vec\Upsilon_\pm$ are the two nilpotents of the eigenbasis, one in each mixed corner.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
@@ -758,7 +758,7 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Element | $Q=q+jq'$ | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | $\tilde Q=Q_te_t+\vec Q$ |
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\sqrt{Q_x^2+Q_y^2+Q_z^2}$ |
 | Distinctness | $q'\neq0$ | $Q_{\blacktriangledown}\neq0$ | $Q_x^2+Q_y^2+Q_z^2\neq0$ |
-| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ |
+| Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ | $\Pi_\pm=\tfrac12(1\pm j)$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ |
 | Eigenprojections depend on the element? | no | no | yes |
 | Eigenprojections central? | yes | yes | no |
 | Peirce decomposition | $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ | $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ plus two mixed square-zero lines |

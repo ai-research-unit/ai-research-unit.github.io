@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article determines the solutions of the equation $\tilde\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
+This article determines the solutions of the equation $\tilde\zeta^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
 The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
-**Theorem (The Solutions).** Let $\tilde\xi = q_t + \vec q$ with $q_t \in \mathbb{R}$ and $\vec q \in V$. Then $\tilde\xi^2 = -1$ if and only if
+**Theorem (The Solutions).** Let $\tilde\zeta = q_t + \vec q$ with $q_t \in \mathbb{R}$ and $\vec q \in V$. Then $\tilde\zeta^2 = -1$ if and only if
 
 $$
 \boxed{\;q_t = 0 \quad \text{and} \quad \langle \vec q\rangle_{\natural} = 1\;}.
@@ -18,24 +18,24 @@ $$
 Hence the solution set is
 
 $$
-\boxed{\;\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\} = \{q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1\}\;},
+\boxed{\;\mathcal{R}_{-1} = \{\tilde\zeta \in V : \langle\tilde\zeta\rangle_{\natural} = 1\} = \{q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1\}\;},
 $$
 
 a subset of the vector subspace. No solution has a nonzero scalar part.
 
-**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\xi = q_t + \vec q$,
+**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\zeta = q_t + \vec q$,
 
 $$
-\tilde\xi^2 = q_t^2 + 2q_t\vec q + \vec q^2 = \big(q_t^2 - \langle \vec q\rangle_{\natural}\big) + 2q_t\vec q,
+\tilde\zeta^2 = q_t^2 + 2q_t\vec q + \vec q^2 = \big(q_t^2 - \langle \vec q\rangle_{\natural}\big) + 2q_t\vec q,
 $$
 
-where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\xi^2 = -1$ splits into the two equations
+where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\zeta^2 = -1$ splits into the two equations
 
 $$
 q_t^2 - \langle \vec q\rangle_{\natural} = -1, \qquad 2q_t\vec q = 0 .
 $$
 
-If $q_t \neq 0$ the second equation gives $\vec q = 0$, and the first then gives $q_t^2 = -1$, which has no real solution. Hence $q_t = 0$, and the first equation becomes $-\langle \vec q\rangle_{\natural} = -1$, that is $\langle \vec q\rangle_{\natural} = 1$. Conversely these two conditions give $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
+If $q_t \neq 0$ the second equation gives $\vec q = 0$, and the first then gives $q_t^2 = -1$, which has no real solution. Hence $q_t = 0$, and the first equation becomes $-\langle \vec q\rangle_{\natural} = -1$, that is $\langle \vec q\rangle_{\natural} = 1$. Conversely these two conditions give $\tilde\zeta^2 = -\langle\tilde\zeta\rangle_{\natural} = -1$.
 
 **Corollary (The Root Set Is the Level Set $N = 1$).** The solution set is a two-dimensional subset of the three-dimensional vector space $V$, namely the level set $N = 1$ in $V$, with two components
 
@@ -45,35 +45,35 @@ $$
 
 the two components being distinguished by the sign of the coefficient $q_x$ of $\vec e_x$. The set is not connected, and each component is diffeomorphic to a plane.
 
-**Proof.** The two components are the intersections of the level set with the closed half-spaces $q_x \geq 1$ and $q_x \leq -1$; on the first, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, and the map $(\xi_y, \xi_z) \mapsto \big(\sqrt{1 + \xi_y^2 + \xi_z^2}, \xi_y, \xi_z\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
+**Proof.** The two components are the intersections of the level set with the closed half-spaces $q_x \geq 1$ and $q_x \leq -1$; on the first, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, and the map $(\zeta_y, \zeta_z) \mapsto \big(\sqrt{1 + \zeta_y^2 + \zeta_z^2}, \zeta_y, \zeta_z\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
 
-The solutions therefore have $\langle\tilde\xi\rangle_{\natural} = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
+The solutions therefore have $\langle\tilde\zeta\rangle_{\natural} = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
 
 ## Identification with the Complex Structures of the Plane
 
-**Theorem (The Root Set Is the Level Set $N = 1$).** The solutions of $\tilde\xi^2 = -1$ are exactly the vectors of the vector subspace with $N = 1$:
+**Theorem (The Root Set Is the Level Set $N = 1$).** The solutions of $\tilde\zeta^2 = -1$ are exactly the vectors of the vector subspace with $N = 1$:
 
 $$
-\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\},
+\mathcal{R}_{-1} = \{\tilde\zeta \in V : \langle\tilde\zeta\rangle_{\natural} = 1\},
 $$
 
-the level set $q_x^2 - q_y^2 - q_z^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $\langle\tilde\xi\rangle_{\natural} = 1$, and conversely.
+the level set $q_x^2 - q_y^2 - q_z^2 = 1$; every solution has $\operatorname{Sc}\tilde\zeta = 0$ and $\langle\tilde\zeta\rangle_{\natural} = 1$, and conversely.
 
-**Proof.** Write $\tilde\xi = \xi_t + \vec v$ with $\xi_t \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_t^2 + 2\xi_t\vec v + \vec v^2 = \xi_t^2 + 2\xi_t\vec v - \langle \vec v\rangle_{\natural}$; this equals $-1$ exactly when the $V$-component $2\xi_t\vec v$ vanishes, so $\xi_t = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_t^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_t = 0$ and the $S$-component gives $-\langle \vec v\rangle_{\natural} = -1$, that is $\langle\tilde\xi\rangle_{\natural} = 1$. Conversely $\tilde\xi \in V$ with $\langle\tilde\xi\rangle_{\natural} = 1$ has $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
+**Proof.** Write $\tilde\zeta = \zeta_t + \vec v$ with $\zeta_t \in S$ and $\vec v \in V$. Then $\tilde\zeta^2 = \zeta_t^2 + 2\zeta_t\vec v + \vec v^2 = \zeta_t^2 + 2\zeta_t\vec v - \langle \vec v\rangle_{\natural}$; this equals $-1$ exactly when the $V$-component $2\zeta_t\vec v$ vanishes, so $\zeta_t = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\zeta_t^2 = -1$, impossible over $\mathbb{R}$; hence $\zeta_t = 0$ and the $S$-component gives $-\langle \vec v\rangle_{\natural} = -1$, that is $\langle\tilde\zeta\rangle_{\natural} = 1$. Conversely $\tilde\zeta \in V$ with $\langle\tilde\zeta\rangle_{\natural} = 1$ has $\tilde\zeta^2 = -\langle\tilde\zeta\rangle_{\natural} = -1$.
 
-**Corollary (The Root Set as Complex Lines).** For each solution $\tilde\xi$, the subalgebra generated by $\tilde\xi$ is
+**Corollary (The Root Set as Complex Lines).** For each solution $\tilde\zeta$, the subalgebra generated by $\tilde\zeta$ is
 
 $$
-\boxed{\;\mathbb{R}[\tilde\xi] = \{p + q\tilde\xi : p, q \in \mathbb{R}\} \cong \mathbb{C}\;},
+\boxed{\;\mathbb{R}[\tilde\zeta] = \{p + q\tilde\zeta : p, q \in \mathbb{R}\} \cong \mathbb{C}\;},
 $$
 
-a copy of the complex numbers inside $\mathbb{H}^{\mathrm{spl}}$, and every subalgebra of $\mathbb{H}^{\mathrm{spl}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\xi$ is again a solution and $\mathbb{R}[-\tilde\xi] = \mathbb{R}[\tilde\xi]$, so the map $\tilde\xi \mapsto \mathbb{R}[\tilde\xi]$ induces a bijection between the antipodal pairs $\{\pm\tilde\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.
+a copy of the complex numbers inside $\mathbb{H}^{\mathrm{spl}}$, and every subalgebra of $\mathbb{H}^{\mathrm{spl}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\zeta$ is again a solution and $\mathbb{R}[-\tilde\zeta] = \mathbb{R}[\tilde\zeta]$, so the map $\tilde\zeta \mapsto \mathbb{R}[\tilde\zeta]$ induces a bijection between the antipodal pairs $\{\pm\tilde\zeta\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.
 
-**Proof.** $\tilde\xi^2 = -1$ gives the isomorphism $p + q\tilde\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\xi]$ with square $-1$ are the $p + q\tilde\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\xi$; and $\tilde\xi$ and $-\tilde\xi$ lie on the two sheets, their coefficients of $\vec e_x$ being opposite.
+**Proof.** $\tilde\zeta^2 = -1$ gives the isomorphism $p + q\tilde\zeta \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\zeta]$ with square $-1$ are the $p + q\tilde\zeta$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\zeta$; and $\tilde\zeta$ and $-\tilde\zeta$ lie on the two sheets, their coefficients of $\vec e_x$ being opposite.
 
 ## The Root Set as a Conjugacy Class
 
-**Theorem (A Single Conjugacy Class).** All solutions of $\tilde\xi^2 = -1$ are conjugate to one another under the group of units:
+**Theorem (A Single Conjugacy Class).** All solutions of $\tilde\zeta^2 = -1$ are conjugate to one another under the group of units:
 
 $$
 \boxed{\;\mathcal{R}_{-1} = \{g \vec e_x g^{-1} : g \in {\mathbb{H}^{\mathrm{spl}}}^{\times}\}\;}.
@@ -147,13 +147,13 @@ so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\et
 
 ### The Roots Are Not Zero Divisors
 
-**Theorem (Disjointness and Generation).** No solution of $\tilde\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\xi$ and each idempotent $\tilde\pi$ of a root of $+1$, the product $\tilde\xi\tilde\pi$ is a nonzero zero divisor, since
+**Theorem (Disjointness and Generation).** No solution of $\tilde\zeta^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\zeta$ and each idempotent $\tilde\pi$ of a root of $+1$, the product $\tilde\zeta\tilde\pi$ is a nonzero zero divisor, since
 
 $$
-\langle\tilde\xi\tilde\pi\rangle_{\natural} = \langle\tilde\xi\rangle_{\natural} \langle\tilde\pi\rangle_{\natural} = 1 \cdot 0 = 0 .
+\langle\tilde\zeta\tilde\pi\rangle_{\natural} = \langle\tilde\zeta\rangle_{\natural} \langle\tilde\pi\rangle_{\natural} = 1 \cdot 0 = 0 .
 $$
 
-**Proof.** $\langle\tilde\xi\rangle_{\natural} = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\xi\tilde\pi$ is nonzero because $\tilde\xi$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.
+**Proof.** $\langle\tilde\zeta\rangle_{\natural} = 1 \neq 0$, so $\tilde\zeta$ is a unit and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\zeta\tilde\pi$ is nonzero because $\tilde\zeta$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.
 
 The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.
 
@@ -165,7 +165,7 @@ For the quaternion algebra the equation has a different solution set.
 
 | | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ |
 |---|---|---|
-| equation | $\tilde\xi^2 = -1$ | $\tilde\xi^2 = -1$ |
+| equation | $\tilde\zeta^2 = -1$ | $\tilde\zeta^2 = -1$ |
 | solution set | the level set $\{N = 1\}$ in $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$ | the level set $\{N = 1\}$ in $V$ |
 | real dimension | $2$ | $2$ |
 | conjugacy class | single class under $Sp(1)$ | single class under ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ |
@@ -176,24 +176,24 @@ The quaternion column is the standard description of the pure imaginary units wi
 
 ### The Biquaternion Case
 
-The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\tilde\Xi^2 = -1$ over a complex algebra has the two central solutions $\tilde\Xi = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.
+The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\tilde{Ζ}^2 = -1$ over a complex algebra has the two central solutions $\tilde{Ζ} = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.
 
 ## Summary
 
-The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\xi\rangle_{\natural} = 1$, that is, the points of the level set $q_x^2 - q_y^2 - q_z^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
+The solutions of $\tilde\zeta^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\zeta\rangle_{\natural} = 1$, that is, the points of the level set $q_x^2 - q_y^2 - q_z^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
 
-Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\xi$ and $-\tilde\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
+Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\zeta$ and $-\tilde\zeta$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
 The solutions form a single conjugacy class, the class of $\vec e_x$; the stabiliser of $\vec e_x$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space ${\mathbb{H}^{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
-The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
+The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\zeta^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\tilde\xi^2 = -1$ | the equation of the article | this article |
-| $\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\}$ | the solution set | this article |
+| $\tilde\zeta^2 = -1$ | the equation of the article | this article |
+| $\mathcal{R}_{-1} = \{\tilde\zeta \in V : \langle\tilde\zeta\rangle_{\natural} = 1\}$ | the solution set | this article |
 | $q_x^2 - q_y^2 - q_z^2 = 1$ | the level set $N = 1$ in the basis $\vec e_x,\vec e_y,\vec e_z$ | this article |
 | $X^2 = -I$ | the corresponding equation for matrices | this article |
 | $GL_1(\mathbb{C})$ | the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$ | this article |

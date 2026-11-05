@@ -18,7 +18,7 @@ $$
 \pi(xy) = \pi(x)\pi(y), \qquad \pi(1) = \mathrm{id}, \qquad \pi(x^{\dagger}) = \pi(x)^{\dagger} ,
 $$
 
-where $T^{\dagger} = JT^{*}J$ is the adjoint for the indefinite form. A **non-degenerate** $J$-representation is one with $\overline{\pi(A)\xi} = K$ for every $\xi\neq0$, equivalently $\overline{\pi(A)K} = K$.
+where $T^{\dagger} = JT^{*}J$ is the adjoint for the indefinite form. A **non-degenerate** $J$-representation is one with $\overline{\pi(A)\zeta} = K$ for every $\zeta\neq0$, equivalently $\overline{\pi(A)K} = K$.
 
 **Proposition (the adjoint in terms of $J$).** For a bounded operator $T$ on $K$ the indefinite adjoint exists, is unique and equals $T^{\dagger} = JT^{*}J$, where $T^{*}$ is the adjoint for the definite form; and $T\mapsto T^{\dagger}$ is an involutive antiautomorphism of $\mathcal{L}(K)$ that reverses products, $(TS)^{\dagger} = S^{\dagger}T^{\dagger}$.
 

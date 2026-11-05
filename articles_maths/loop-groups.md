@@ -127,7 +127,7 @@ $$
 
 the **Atiyah–Pressley form**, which is closed, nondegenerate and invariant under $\Omega G$.
 
-**(b)** The **energy functional** $E(\gamma) = \int_{S^1}\langle \gamma_{-1}\gamma', \gamma_{-1}\gamma'\rangle\,\mathrm{d}\theta$ is a Morse–Bott function on $\Omega G$ whose critical points are the geodesic loops $\gamma(\theta) = \exp(\theta\xi)$ for $\xi$ in the Lie algebra, and the critical manifolds are the **integral manifolds**; the energy stratification is the classical Morse theory of the based loop space, whose Lie-algebraic shadow is the affine Weyl group.
+**(b)** The **energy functional** $E(\gamma) = \int_{S^1}\langle \gamma_{-1}\gamma', \gamma_{-1}\gamma'\rangle\,\mathrm{d}\theta$ is a Morse–Bott function on $\Omega G$ whose critical points are the geodesic loops $\gamma(\theta) = \exp(\theta\zeta)$ for $\zeta$ in the Lie algebra, and the critical manifolds are the **integral manifolds**; the energy stratification is the classical Morse theory of the based loop space, whose Lie-algebraic shadow is the affine Weyl group.
 
 **(c)** The complex structure is compatible with the left action of $\Omega G$, and the Birkhoff decomposition identifies the "big cell" of the based loop group with a complex vector space; the intersection of the Birkhoff cells with the based condition gives the Schubert cell decomposition of the affine Grassmannian, and the complexification of the loop group is the loop group of the complexification, on which the Birkhoff decomposition plays the role of the polar decomposition.
 

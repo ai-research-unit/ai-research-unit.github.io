@@ -25,7 +25,7 @@ $$
 
 where $D=c\circ\nabla^{\mathcal{S}}$ is the Cauchy–Riemann operator. As a map it takes a spinor field to a tangent-valued spinor field, $\mathcal{P} : \Gamma(\mathcal{S})\to\Gamma(T^*M\otimes\mathcal{S})$, and its kernel consists of the **twistor spinors**.
 
-**Proposition.** The Penrose operator is the twistor operator of *The Twistor Operator*: $\mathcal{P}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$ the orthogonal projector onto the kernel of the Clifford contraction. Its principal symbol is injective with image $\ker c_{\xi}$, and it is overdetermined elliptic. The display is the same operator written with the index $X$ exposed.
+**Proposition.** The Penrose operator is the twistor operator of *The Twistor Operator*: $\mathcal{P}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$ the orthogonal projector onto the kernel of the Clifford contraction. Its principal symbol is injective with image $\ker c_{\zeta}$, and it is overdetermined elliptic. The display is the same operator written with the index $X$ exposed.
 
 **Proof.** The identity $\mathcal{P}_X\sigma=\nabla_X\sigma+\frac1nX\cdot D\sigma$ is the definition, and it coincides with $(\pi\nabla^{\mathcal{S}}\sigma)(X)$ by the computation of the splitting in *The Twistor Operator*; the symbol statement is proved there and is recorded here for completeness.
 

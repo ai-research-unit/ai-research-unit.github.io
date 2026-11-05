@@ -2,16 +2,16 @@
 
 ## Introduction
 
-This article solves the square-root problem in the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$: given $Q\in\mathbb{C}^{\mathrm{spl}}$, find every $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with
+This article solves the square-root problem in the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$: given $Q\in\mathbb{C}^{\mathrm{spl}}$, find every $Ζ\in\mathbb{C}^{\mathrm{spl}}$ with
 
 $$
-\Xi^{2}=Q .
+Ζ^{2}=Q .
 $$
 
-The method needs no norm and no form. It is the same idempotent-coordinate split that solves the two central cases $\Xi^{2}=0$ and $\Xi^{2}=1$ in *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* and *Square Roots of One and the Idempotents of the Split-Complex Algebra*, carried one step further: the split turns the equation into two independent scalar equations,
+The method needs no norm and no form. It is the same idempotent-coordinate split that solves the two central cases $Ζ^{2}=0$ and $Ζ^{2}=1$ in *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* and *Square Roots of One and the Idempotents of the Split-Complex Algebra*, carried one step further: the split turns the equation into two independent scalar equations,
 
 $$
-\Xi_{+}^{2}=Q_{+},\qquad \Xi_{-}^{2}=Q_{-},
+Ζ_{+}^{2}=Q_{+},\qquad Ζ_{-}^{2}=Q_{-},
 $$
 
 one for each idempotent coordinate. Each equation is a one-dimensional real square-root problem, and the answer is read off the signs of $Q_{+}$ and $Q_{-}$: four roots when both are positive, two when exactly one is zero and the other positive, one when both are zero, and none otherwise. The roots are finite in every case; there is no continuous family, because the two coordinates are real and independent.
@@ -19,38 +19,38 @@ one for each idempotent coordinate. Each equation is a one-dimensional real squa
 **The results.** For a radicand $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ the roots are the elements
 
 $$
-\Xi=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{\pm}\in\{+1,-1\},
+Ζ=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{\pm}\in\{+1,-1\},
 $$
 
-taken over the signs for which the square roots are real. There are **four roots** when $Q_{+}>0$ and $Q_{-}>0$, **two** when exactly one coordinate is zero and the other is positive, **one** when $Q=0$, and **none** when one of the coordinates is negative. The roots come in pairs $\pm\Xi$ except at $Q=0$, where the two signs coincide. The three central values recover the known sets: $\Xi^{2}=1$ has the four roots $\pm1,\pm j$; $\Xi^{2}=0$ has the one root $0$; $\Xi^{2}=-1$ has none. The image of the square map is the forward cone $Q_{+}\ge0$, $Q_{-}\ge0$; the order cone it defines is *The Classes of Element of the Split-Complex Algebra*.
+taken over the signs for which the square roots are real. There are **four roots** when $Q_{+}>0$ and $Q_{-}>0$, **two** when exactly one coordinate is zero and the other is positive, **one** when $Q=0$, and **none** when one of the coordinates is negative. The roots come in pairs $\pmΖ$ except at $Q=0$, where the two signs coincide. The three central values recover the known sets: $Ζ^{2}=1$ has the four roots $\pm1,\pm j$; $Ζ^{2}=0$ has the one root $0$; $Ζ^{2}=-1$ has none. The image of the square map is the forward cone $Q_{+}\ge0$, $Q_{-}\ge0$; the order cone it defines is *The Classes of Element of the Split-Complex Algebra*.
 
 The article is algebraic. The two central values are recovered in §*The Three Central Values*, which checks this method against the direct computations of the two companion articles. The zero-divisor cone, of which the boundary of the forward cone is a part, is *Zero Divisors of the Split-Complex Algebra*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked.
 
-Throughout, the algebra is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, a general element is $Q=q+jq'$, the conjugation is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. A root is written $\Xi=x+jx'$, with idempotent coordinates $\Xi_{\pm}=x\pm x'$.
+Throughout, the algebra is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, a general element is $Q=q+jq'$, the conjugation is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. A root is written $Ζ=x+jx'$, with idempotent coordinates $Ζ_{\pm}=x\pm x'$.
 
-The equation $\Xi^{2}=Q$ names a product, so the root is relative to it. The plain square $\Xi\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\Xi\Xi$, the multiplication of the split-complex algebra, and the other product of the space and its root problem are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*.
+The equation $Ζ^{2}=Q$ names a product, so the root is relative to it. The plain square $ΖΖ$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $ΖΖ$, the multiplication of the split-complex algebra, and the other product of the space and its root problem are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*.
 
 ## The Reduction
 
 Write the root and the radicand in the idempotent coordinates,
 
 $$
-\Xi=\Xi_{+}\Pi_{+}+\Xi_{-}\Pi_{-},\qquad
+Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-},\qquad
 Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-},
 $$
 
-with $\Xi_{\pm}=x\pm x'$ and $Q_{\pm}=q\pm q'$ real. Because the product is componentwise in the idempotent basis and $\Pi_{\pm}^{2}=\Pi_{\pm}$, $\Pi_{+}\Pi_{-}=0$, the square is
+with $Ζ_{\pm}=x\pm x'$ and $Q_{\pm}=q\pm q'$ real. Because the product is componentwise in the idempotent basis and $\Pi_{\pm}^{2}=\Pi_{\pm}$, $\Pi_{+}\Pi_{-}=0$, the square is
 
 $$
-\Xi^{2}=\Xi_{+}^{2}\Pi_{+}+\Xi_{-}^{2}\Pi_{-}.
+Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-}.
 $$
 
-The equation $\Xi^{2}=Q$ is therefore equivalent to the **pair of independent real equations**
+The equation $Ζ^{2}=Q$ is therefore equivalent to the **pair of independent real equations**
 
 $$
-\Xi_{+}^{2}=Q_{+},\qquad \Xi_{-}^{2}=Q_{-}.
+Ζ_{+}^{2}=Q_{+},\qquad Ζ_{-}^{2}=Q_{-}.
 $$
 
 There is no coupling between the two coordinates, and each equation is the ordinary real square-root problem. The whole classification follows from the signs of $Q_{+}$ and $Q_{-}$.
@@ -61,17 +61,17 @@ $$
 x^{2}+x'^{2}=q,\qquad 2xx'=q',
 $$
 
-because $\Xi^{2}=(x^{2}+x'^{2})+2xx'j$. Adding and subtracting gives the two idempotent equations, and solving them directly reproduces the classification; the idempotent form is the shorter route.
+because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. Adding and subtracting gives the two idempotent equations, and solving them directly reproduces the classification; the idempotent form is the shorter route.
 
 ## The Roots with Positive Coordinates
 
 **If $Q_{+}>0$ and $Q_{-}>0$ then the equation has exactly four roots,**
 
 $$
-\boxed{\;\Xi=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{+},\varepsilon_{-}\in\{+1,-1\}\;}.
+\boxed{\;Ζ=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},\qquad \varepsilon_{+},\varepsilon_{-}\in\{+1,-1\}\;}.
 $$
 
-**Proof.** Each of the two real equations $\Xi_{\pm}^{2}=Q_{\pm}$ has the two solutions $\Xi_{\pm}=\pm\sqrt{Q_{\pm}}$ when $Q_{\pm}>0$. The four combinations are distinct, because the two coordinates are independent and the two square roots are nonzero. Each combination is a root by the reduction, and every root arises this way.
+**Proof.** Each of the two real equations $Ζ_{\pm}^{2}=Q_{\pm}$ has the two solutions $Ζ_{\pm}=\pm\sqrt{Q_{\pm}}$ when $Q_{\pm}>0$. The four combinations are distinct, because the two coordinates are independent and the two square roots are nonzero. Each combination is a root by the reduction, and every root arises this way.
 
 **Corollary (the pairs).** The four roots are the two pairs
 
@@ -80,12 +80,12 @@ $$
 \pm\Bigl(\sqrt{Q_{+}}\,\Pi_{+}-\sqrt{Q_{-}}\,\Pi_{-}\Bigr),
 $$
 
-so the roots come in opposite pairs and $\Xi$ and $-\Xi$ have the same square.
+so the roots come in opposite pairs and $Ζ$ and $-Ζ$ have the same square.
 
 **Remark (the scalar coordinates).** In the basis $1,j$ one root is
 
 $$
-\Xi=\tfrac12\Bigl(\sqrt{Q_{+}}+\sqrt{Q_{-}}\Bigr)+\tfrac12\Bigl(\sqrt{Q_{+}}-\sqrt{Q_{-}}\Bigr)j,
+Ζ=\tfrac12\Bigl(\sqrt{Q_{+}}+\sqrt{Q_{-}}\Bigr)+\tfrac12\Bigl(\sqrt{Q_{+}}-\sqrt{Q_{-}}\Bigr)j,
 $$
 
 and the other three are obtained by the two independent sign changes. The four roots are the four sign choices, not the four rotations of a single root.
@@ -96,10 +96,10 @@ and the other three are obtained by the two independent sign changes. The four r
 
 There are two cases.
 
-- If $Q_{+}>0$ and $Q_{-}=0$, then $\Xi_{-}^{2}=0$ forces $\Xi_{-}=0$ and $\Xi_{+}^{2}=Q_{+}$ gives $\Xi_{+}=\pm\sqrt{Q_{+}}$. The roots are
+- If $Q_{+}>0$ and $Q_{-}=0$, then $Ζ_{-}^{2}=0$ forces $Ζ_{-}=0$ and $Ζ_{+}^{2}=Q_{+}$ gives $Ζ_{+}=\pm\sqrt{Q_{+}}$. The roots are
 
 $$
-\boxed{\;\Xi=\pm\sqrt{Q_{+}}\,\Pi_{+}\;}.
+\boxed{\;Ζ=\pm\sqrt{Q_{+}}\,\Pi_{+}\;}.
 $$
 
 They are the two points $\pm\sqrt{Q_{+}}\,\Pi_{+}$ of the line $\mathbb{R}\Pi_{+}$, and they are zero divisors of the algebra.
@@ -107,12 +107,12 @@ They are the two points $\pm\sqrt{Q_{+}}\,\Pi_{+}$ of the line $\mathbb{R}\Pi_{+
 - If $Q_{+}=0$ and $Q_{-}>0$, then symmetrically
 
 $$
-\Xi=\pm\sqrt{Q_{-}}\,\Pi_{-},
+Ζ=\pm\sqrt{Q_{-}}\,\Pi_{-},
 $$
 
 the two points of the opposite null line.
 
-In both cases the two roots are opposite, $\pm\Xi$, and they are nonzero zero divisors. The radicand is itself a zero divisor in these cases, since one of its idempotent coordinates vanishes.
+In both cases the two roots are opposite, $\pmΖ$, and they are nonzero zero divisors. The radicand is itself a zero divisor in these cases, since one of its idempotent coordinates vanishes.
 
 **Proposition.** On the boundary of the forward cone the root set has two elements, and each root lies on the same null line as the radicand.
 
@@ -122,12 +122,12 @@ In both cases the two roots are opposite, $\pm\Xi$, and they are nonzero zero di
 
 **For a real scalar radicand $Q=\lambda$, $\lambda\in\mathbb{R}$, the roots are: four, $\pm\sqrt{\lambda}$ and $\pm j\sqrt{\lambda}$, when $\lambda>0$; one, $0$, when $\lambda=0$; none when $\lambda<0$.**
 
-Let $Q=\lambda$ with $\lambda\in\mathbb{R}$. Then $Q_{+}=Q_{-}=\lambda$, and the two equations are the same equation $\Xi_{\pm}^{2}=\lambda$.
+Let $Q=\lambda$ with $\lambda\in\mathbb{R}$. Then $Q_{+}=Q_{-}=\lambda$, and the two equations are the same equation $Ζ_{\pm}^{2}=\lambda$.
 
 - If $\lambda>0$, each coordinate has the two signs $\pm\sqrt{\lambda}$, and the four roots are
 
 $$
-\Xi=\pm\sqrt{\lambda}\,\Pi_{+}\pm\sqrt{\lambda}\,\Pi_{-},
+Ζ=\pm\sqrt{\lambda}\,\Pi_{+}\pm\sqrt{\lambda}\,\Pi_{-},
 $$
 
 that is the four elements
@@ -138,16 +138,16 @@ $$
 
 The first two are the real roots, the last two the split-imaginary roots.
 
-- If $\lambda=0$, the only root is $\Xi=0$.
+- If $\lambda=0$, the only root is $Ζ=0$.
 - If $\lambda<0$, neither coordinate has a real square root, and there is no root.
 
 **Corollary (the roots of a positive scalar form a scaled copy of the four-element group).** For $\lambda>0$ the root set is $\sqrt{\lambda}\,\{1,-1,j,-j\}$, a scaled copy of the four-element group of *Square Roots of One and the Idempotents of the Split-Complex Algebra*.
 
 ## The Classification
 
-**The root set of $\Xi^{2}=Q$ is classified by the signs of the two idempotent coordinates of $Q$: four roots if both are positive, two if exactly one is zero and the other positive, one if both are zero, and none if either is negative.**
+**The root set of $Ζ^{2}=Q$ is classified by the signs of the two idempotent coordinates of $Q$: four roots if both are positive, two if exactly one is zero and the other positive, one if both are zero, and none if either is negative.**
 
-**Theorem (the classification).** Let $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$. The number of roots of $\Xi^{2}=Q$ and their form are as follows.
+**Theorem (the classification).** Let $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$. The number of roots of $Ζ^{2}=Q$ and their form are as follows.
 
 | $Q_{+}$ | $Q_{-}$ | roots | number |
 |---|---|---|---|
@@ -158,7 +158,7 @@ The first two are the real roots, the last two the split-imaginary roots.
 | $<0$ | any | none | $0$ |
 | any | $<0$ | none | $0$ |
 
-**Proof.** The reduction gives the two independent equations $\Xi_{\pm}^{2}=Q_{\pm}$. A real equation $t^{2}=a$ has two solutions when $a>0$, one when $a=0$, and none when $a<0$. The number of roots of the pair is the product of the numbers for the two coordinates, and the form is the product of the solution sets. The table enumerates the sign cases; the last two rows both encode the case in which at least one coordinate is negative, and either negative coordinate alone makes the product of the two solution sets empty.
+**Proof.** The reduction gives the two independent equations $Ζ_{\pm}^{2}=Q_{\pm}$. A real equation $t^{2}=a$ has two solutions when $a>0$, one when $a=0$, and none when $a<0$. The number of roots of the pair is the product of the numbers for the two coordinates, and the form is the product of the solution sets. The table enumerates the sign cases; the last two rows both encode the case in which at least one coordinate is negative, and either negative coordinate alone makes the product of the two solution sets empty.
 
 **Corollary (the dichotomy of the radicand).** The equation has a root exactly when $Q$ lies in the **forward cone**
 
@@ -188,7 +188,7 @@ This is the four-element set of *Square Roots of One and the Idempotents of the 
 
 ### The Value $0$
 
-For $Q=0$ one has $Q_{+}=Q_{-}=0$, and the only root is $\Xi=0$. This is the result of *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra*: there is no nonzero square-zero element.
+For $Q=0$ one has $Q_{+}=Q_{-}=0$, and the only root is $Ζ=0$. This is the result of *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra*: there is no nonzero square-zero element.
 
 ### The Value $-1$
 
@@ -201,17 +201,17 @@ The three central values therefore give the three cardinalities $4,1,0$, and the
 **Example ($Q=5+3j$).** Here $Q_{+}=8$ and $Q_{-}=2$, both positive, so there are four roots. One of them is
 
 $$
-\Xi=\sqrt8\,\Pi_{+}+\sqrt2\,\Pi_{-}
+Ζ=\sqrt8\,\Pi_{+}+\sqrt2\,\Pi_{-}
 =2\sqrt2\cdot\tfrac12(1+j)+\sqrt2\cdot\tfrac12(1-j)
 =\frac{3\sqrt2}{2}+\frac{\sqrt2}{2}j .
 $$
 
-Squaring, $x^{2}+x'^{2}=\tfrac{18}{4}+\tfrac{2}{4}=5$ and $2xx'=2\cdot\tfrac{3\sqrt2}{2}\cdot\tfrac{\sqrt2}{2}=3$, so $\Xi^{2}=5+3j$. The other three roots are obtained by changing the signs of the two coordinates.
+Squaring, $x^{2}+x'^{2}=\tfrac{18}{4}+\tfrac{2}{4}=5$ and $2xx'=2\cdot\tfrac{3\sqrt2}{2}\cdot\tfrac{\sqrt2}{2}=3$, so $Ζ^{2}=5+3j$. The other three roots are obtained by changing the signs of the two coordinates.
 
 **Example ($Q=1+j$).** Here $Q_{+}=2$ and $Q_{-}=0$, so there are two roots,
 
 $$
-\Xi=\pm\sqrt2\,\Pi_{+}=\pm\frac{1+j}{\sqrt2}.
+Ζ=\pm\sqrt2\,\Pi_{+}=\pm\frac{1+j}{\sqrt2}.
 $$
 
 Squaring, $\sqrt2\,\Pi_{+}$ has square $2\Pi_{+}=1+j$. The roots lie on the null line $\mathbb{R}\Pi_{+}$ and are zero divisors, as the radicand is.
@@ -228,10 +228,10 @@ The examples exhibit the four cases of the table: four roots, two roots, no root
 
 **The image of the square map $Q\mapsto Q^{2}$ is the forward cone $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\}$; the fibre has four points over the interior, two over the boundary minus the origin, and one over the origin, and up to the sign of the root it has two points over the interior and one over the rest of the cone.**
 
-The square map sends $\Xi=\Xi_{+}\Pi_{+}+\Xi_{-}\Pi_{-}$ to
+The square map sends $Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-}$ to
 
 $$
-\Xi^{2}=\Xi_{+}^{2}\Pi_{+}+\Xi_{-}^{2}\Pi_{-},
+Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-},
 $$
 
 so the image is the set of radicands whose two coordinates are non-negative squares. That is exactly the forward cone $\mathcal{C}$, the closed cone of angle $90^{\circ}$ between the two null lines and containing the positive real axis. The inverse image of an interior point has four elements, the inverse image of a boundary point other than the origin has two, and the inverse image of the origin has one. The cone is pointed, convex and closed; it is the order cone of the algebra, and its order is developed in *The Classes of Element of the Split-Complex Algebra*, §*The Order Cone of Squares*.
@@ -240,10 +240,10 @@ The square map is not injective and not surjective; its fibres have the four, tw
 
 ## Summary
 
-The square-root problem in the split-complex algebra reduces to the two independent real equations $\Xi_{+}^{2}=Q_{+}$ and $\Xi_{-}^{2}=Q_{-}$ in the idempotent coordinates. The roots are
+The square-root problem in the split-complex algebra reduces to the two independent real equations $Ζ_{+}^{2}=Q_{+}$ and $Ζ_{-}^{2}=Q_{-}$ in the idempotent coordinates. The roots are
 
 $$
-\Xi=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},
+Ζ=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},
 $$
 
 over the signs for which the square roots are real. There are four roots when both coordinates of the radicand are positive, two when exactly one is zero and the other positive, one when the radicand is zero, and none when a coordinate is negative. The roots come in opposite pairs except at the origin; the roots of a unit are units, the roots of a nonzero zero divisor are zero divisors, and the root of $0$ is $0$.
@@ -256,10 +256,10 @@ The three central values give the cardinalities $4,1,0$: four roots of $+1$, the
 |---|---|
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
 | $Q=q+jq'$ | Radicand |
-| $\Xi=x+jx'$ | Root |
+| $Ζ=x+jx'$ | Root |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates of the radicand |
-| $\Xi_{\pm}=x\pm x'$ | Idempotent coordinates of the root |
-| $\Xi_{\pm}^{2}=Q_{\pm}$ | The two independent real equations |
+| $Ζ_{\pm}=x\pm x'$ | Idempotent coordinates of the root |
+| $Ζ_{\pm}^{2}=Q_{\pm}$ | The two independent real equations |
 | $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{q\ge|q'|\}$ | Forward cone, the image of the square |
 | $\pm\sqrt{Q_{+}}\,\Pi_{+}\pm\sqrt{Q_{-}}\,\Pi_{-}$ | The four roots in the interior |
 | $\pm\sqrt{Q_{+}}\,\Pi_{+}$ | The two roots on the boundary $\mathbb{R}\Pi_{+}$ |

@@ -237,14 +237,14 @@ a sum fixed by the complex conjugation.
 **Proposition.** An element is idempotent for the sesquilinear multiplication, $\tilde Q \star \tilde Q = \tilde Q$, if and only if it is a Hermitian idempotent of the algebra; hence the idempotents of the multiplication are $0$, $e_t$, and the **pure states**
 
 $$
-\tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_t + \tilde\Xi\bigr) , \qquad \vec u \in \mathbb{R}^{3}, \ |\vec u| = 1 ,
+\tilde\Pi_+(\tilde{Ζ}) = \tfrac12\bigl(e_t + \tilde{Ζ}\bigr) , \qquad \vec u \in \mathbb{R}^{3}, \ |\vec u| = 1 ,
 $$
 
 indexed by the real unit vectors (*Algebra and Element Conventions*, *Idempotents of the General Plain Algebra*).
 
-**Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Idempotents of the General Plain Algebra*: the idempotents are the elements $\tfrac12(e_t + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\xi = \pm\vec u$ with $\vec u$ a unit real vector, that is the elements $\tfrac12(e_t \pm \vec u i)$, together with the trivial idempotents $0$ and $e_t$.
+**Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Idempotents of the General Plain Algebra*: the idempotents are the elements $\tfrac12(e_t + \zeta i)$ with $\zeta$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\zeta = \pm\vec u$ with $\vec u$ a unit real vector, that is the elements $\tfrac12(e_t \pm \vec u i)$, together with the trivial idempotents $0$ and $e_t$.
 
-**Remark.** The unit $e_t$ is idempotent on both sides, and each $\tilde\Pi_+(\tilde\Xi)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Idempotents of the General Plain Algebra*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Idempotents of the General Plain Algebra*, are **not** idempotent for the multiplication.
+**Remark.** The unit $e_t$ is idempotent on both sides, and each $\tilde\Pi_+(\tilde{Ζ})$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Idempotents of the General Plain Algebra*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Idempotents of the General Plain Algebra*, are **not** idempotent for the multiplication.
 
 ## The Four General Products and the Sesquilinear Structure
 
@@ -351,7 +351,7 @@ Among the four general products of *The Four General Products and Their Relation
 | $\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \tilde Q_1\tilde Q_2^{*}\tilde Q_3$ | the ternary product, the $J^{*}$-structure |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$ |
 | $C(\mathbb{B})$ | the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$ |
-| $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_t+\tilde\Xi)$ | the idempotents of the multiplication, $\vec u$ a real unit vector |
+| $\tilde\Pi_+(\tilde{Ζ}) = \tfrac12(e_t+\tilde{Ζ})$ | the idempotents of the multiplication, $\vec u$ a real unit vector |
 
 ## Further Reading
 

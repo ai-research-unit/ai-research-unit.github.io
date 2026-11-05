@@ -36,7 +36,7 @@ Two structures live on $S$, and the distinction is one of the framework's standi
 
 **The Hermitian form.** The restriction to $S$ of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ of *Product and Form Conventions*, §*The Involutions and the Four Forms*, is a complex number for every pair of L parts, linear in the first argument and antilinear in the second. That form is positive definite on all of $\mathbb{B}$, so its restriction to $S$ is positive definite, and it is the Hilbert-space form of the Fock construction, the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's quaternionic norm.
 
-**The quaternionic norm degenerates on $S$.** The quaternionic norm $\langle\cdot\rangle_{\natural}$ is the algebra's own, and its central spelling is the element $\tilde Q\tilde Q^{\natural}$ (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). For an L part $\xi$ that element vanishes, and the reason is a derived form of the two rules of the letters. The natural conjugation reverses the order of a product, and an involution that reverses the order exchanges the two sides (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*); the value of an element is read on a right multiplication, so the conjugate of an L part is an R part. Then $\xi\xi^{\natural}$ takes the letter of its right factor, which is R, while $\xi^{\natural}\xi$ takes the letter of $\xi$, which is L; but the two products are the same central element, and only the zero element carries both values. Hence $\xi\xi^{\natural}=0$, and the quaternionic norm vanishes on every L part. The one-particle space is therefore totally isotropic for the quaternionic norm, and the norm does not descend to a form on it.
+**The quaternionic norm degenerates on $S$.** The quaternionic norm $\langle\cdot\rangle_{\natural}$ is the algebra's own, and its central spelling is the element $\tilde Q\tilde Q^{\natural}$ (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). For an L part $\zeta$ that element vanishes, and the reason is a derived form of the two rules of the letters. The natural conjugation reverses the order of a product, and an involution that reverses the order exchanges the two sides (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*); the value of an element is read on a right multiplication, so the conjugate of an L part is an R part. Then $\zeta\zeta^{\natural}$ takes the letter of its right factor, which is R, while $\zeta^{\natural}\zeta$ takes the letter of $\zeta$, which is L; but the two products are the same central element, and only the zero element carries both values. Hence $\zeta\zeta^{\natural}=0$, and the quaternionic norm vanishes on every L part. The one-particle space is therefore totally isotropic for the quaternionic norm, and the norm does not descend to a form on it.
 
 A one-particle state is therefore an element of the algebra: an L part, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element itself. The two are related by the Hermitian form for probabilities and by the antisymmetric product for the Lorentz-invariant bilinears. The classical plane-wave solution $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the one-particle space at momentum $\vec p$ is $S_{\vec p}\cong S$, spanned by the two solutions $w^{(r)}(\vec p)$.
 
@@ -46,10 +46,10 @@ The Lorentz action on $S$ is the spin-$\tfrac12$ representation, and a rotor $\t
 
 First, the action factors through the double cover: the rotor through $2\pi$ is $-e_t$ (*Norm and Pairing Conventions*, §*The Word and Its Factors*), and $-e_t$ multiplies every element by $-1$. This is the module-level statement of the covering and is computed in the spin–statistics companion.
 
-Second, the action preserves the antisymmetric product up to the quaternionic norm of the rotor. For L parts $\xi,\eta$,
+Second, the action preserves the antisymmetric product up to the quaternionic norm of the rotor. For L parts $\zeta,\eta$,
 
 $$
-(\tilde U\xi)\wedge(\tilde U\eta)=\langle\tilde U\rangle_{\natural}\;\xi\wedge\eta ,
+(\tilde U\zeta)\wedge(\tilde U\eta)=\langle\tilde U\rangle_{\natural}\;\zeta\wedge\eta ,
 $$
 
 which is a derived form: the factor is the quaternionic norm of the rotor, and a unit element has quaternionic norm one (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). For every Lorentz rotor, therefore, the two-particle state is carried to itself, and it is this, and not a transpose identity of an array, that makes the *antisymmetric* power of $S$ a singlet and the two-particle state below Lorentz invariant. The Hermitian form, by contrast, is invariant only on the compact subgroup, as the one-particle article states; a boost does not preserve it, and the invariant bilinears of the space are the antisymmetric products.
@@ -78,10 +78,10 @@ $$
 
 and this is the Fock space of the two spin states of one momentum — two modes in the parent's counting, whose one-particle space is two-dimensional. The vacuum is the unit of the exterior algebra; the one-particle states are $S$ itself; the two-particle state is the top power.
 
-The top power is read inside the algebra, and the reading is a derived form. For L parts $\xi,\eta$ the exterior product is the algebra's own antisymmetric product,
+The top power is read inside the algebra, and the reading is a derived form. For L parts $\zeta,\eta$ the exterior product is the algebra's own antisymmetric product,
 
 $$
-\xi\wedge\eta=\tfrac12\bigl(\xi\eta-\eta\xi\bigr),
+\zeta\wedge\eta=\tfrac12\bigl(\zeta\eta-\eta\zeta\bigr),
 $$
 
 which is again an L part, because a product takes the letter of its right factor, and which is pure, because the scalar part of a product is symmetric. The antisymmetric products of L parts are therefore elements of $\mathbb{B}$, and they span one complex dimension: the space $S$ is two-dimensional and the pairing is antisymmetric, so all its values are multiples of one nonzero value. That line of pure L parts is the top power read inside the algebra, and the singlet of the next section is that line.
@@ -132,7 +132,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums and duals. (It does not turn a tensor product into a tensor product; only the direct sum has the tensor-product rule.)
 
-The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, whose action is $\xi\mapsto\tilde S_i\xi$, and the induced operator $\hat S_i=\Gamma(\tilde S_i)$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\hat S_i$: the rotor $\exp(\theta\,\vec u\cdot\tilde S)$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\xi\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\hat S_i(\xi\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\hat S^2=\sum_i\hat S_i^2$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_i\zeta$, and the induced operator $\hat S_i=\Gamma(\tilde S_i)$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\hat S_i$: the rotor $\exp(\theta\,\vec u\cdot\tilde S)$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\hat S_i(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\hat S^2=\sum_i\hat S_i^2$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -289,7 +289,7 @@ The relations were checked exactly on the cells, where each product is a composi
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\{M:\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with its **length** $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ and $\chi_{\mathrm{ad}}$ the difference of the two central idempotents of the complexified algebra, so that $\chi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ and $\chi_{\mathrm{ad}}$ the difference of the two central idempotents of the complexified algebra, so that $\chi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real cells $L_aR_b$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -317,7 +317,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 |---|---|
 | $S$ | One-particle space: the L parts of $\mathbb{B}$, of complex dimension two |
 | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | The Dirac field, an element of $\mathbb{B}$, and its two values |
-| $\xi\wedge\eta$ | The antisymmetric product of *Product and Form Conventions* read on $S$; its values are the pure L parts, one complex dimension |
+| $\zeta\wedge\eta$ | The antisymmetric product of *Product and Form Conventions* read on $S$; its values are the pure L parts, one complex dimension |
 | $\langle\cdot,\cdot\rangle_{*}$ | The Hermitian form, restricted to $S$; positive definite, and the Hilbert-space form of the construction |
 | $\langle\tilde Q\rangle_{\natural}$ | The quaternionic norm on $\mathbb{B}$; it vanishes on every L part and does not descend to $S$ |
 | $\mathcal{F}=\Lambda S$ | Fermionic Fock space |

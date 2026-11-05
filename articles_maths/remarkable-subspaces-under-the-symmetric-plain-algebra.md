@@ -125,7 +125,7 @@ and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalge
 A Hermitian element has $\langle\tilde Q\rangle_{\natural}=Q_t^2-\sum_k(Q'_k)^2$, so the **units** are the Hermitian elements with $Q_t^2\neq\sum_k(Q'_k)^2$, and the **isotropic** elements are those with $Q_t^2=\sum_k(Q'_k)^2$. The isotropic set is non-empty: the element $e_t+i\vec e_x$ is Hermitian and $\langle e_t+i\vec e_x\rangle_{\natural}=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Idempotents of the General Plain Algebra*,
 
 $$
-\tilde\Pi=\tfrac12(e_t\pm \tilde\Xi),\qquad \vec u\in\mathbb{R}^3,\ |\vec u|=1,
+\tilde\Pi=\tfrac12(e_t\pm \tilde{Ζ}),\qquad \vec u\in\mathbb{R}^3,\ |\vec u|=1,
 $$
 
 the pure states, together with the trivial $0$ and $e_t$.
@@ -162,7 +162,7 @@ An anti-Hermitian element has $\langle\tilde Q\rangle_{\natural}=-(Q'_t)^2+\sum_
 | Vector $\mathrm{Vect}(\mathbb{B})$ | no | $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ | $(\vec Q,\vec Q)\neq0$ | $0$ only | $\{(\vec Q,\vec Q)=0\}$, non-empty |
 | Quaternion $\mathbb{H}_{\mathbb{B}}$ | yes | $h\bullet k=h_tk_t-(\vec h,\vec k)+h_t\vec k+k_t\vec h$ | all $h\neq0$ | $0,\ e_t$ | $0$ only |
 | Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | no | $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ | all $i\mathbf n\neq0$ | $0$ only | $0$ only |
-| Hermitian $\mathbb{M}_+$ | yes | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | $Q_t^2\neq\sum_k(Q'_k)^2$ | $0,\ e_t,\ \tfrac12(e_t\pm \tilde\Xi)$ | $\{Q_t^2=\sum_k(Q'_k)^2\}$, non-empty |
+| Hermitian $\mathbb{M}_+$ | yes | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | $Q_t^2\neq\sum_k(Q'_k)^2$ | $0,\ e_t,\ \tfrac12(e_t\pm \tilde{Ζ})$ | $\{Q_t^2=\sum_k(Q'_k)^2\}$, non-empty |
 | Anti-Hermitian $\mathbb{M}_-$ | no | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | $\sum_kQ_k^2\neq(Q'_t)^2$ | $0$ only | $\{\sum_kQ_k^2=(Q'_t)^2\}$, non-empty |
 
 **Remark (three of the remarkable subspaces are closed).** Exactly **three of the remarkable subspaces are closed under $\bullet$ — the centre, the quaternion subspace and the Hermitian subspace** — and each of the three is a Jordan subalgebra: the centre is the field $\mathbb{C}$, the quaternion subspace is the Jordan division algebra of the symmetrised quaternions, and the Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$. The other three fail: the vector subspace squares into the centre, the anti-quaternion subspace into the quaternion subspace, and the anti-Hermitian subspace into the Hermitian subspace. **The three failures are the three sign changes $\vec e_k^2=-e_t$, $i^2=-1$ and $(ie_t)^2=-e_t$**, each sending an element out of its subspace.
@@ -171,7 +171,7 @@ An anti-Hermitian element has $\langle\tilde Q\rangle_{\natural}=-(Q'_t)^2+\sum_
 
 ## Summary
 
-On the remarkable real subspaces the symmetric plain product is closed on the centre $\mathbb{C}_{\mathbb{B}}$, on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the Hermitian subspace $\mathbb{M}_+$, which are the three Jordan subalgebras of the block — the field $\mathbb{C}$, the Jordan division algebra of the symmetrised quaternions, and the Hermitian Jordan algebra $J(\mathbb{B})$. It fails to close on the vector subspace, where $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ lands in the centre; on the anti-quaternion subspace, where $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ lands in the quaternion subspace; and on the anti-Hermitian subspace, where $(ie_t)^2=-e_t$ lands in the Hermitian subspace. The units are the non-zero scalars in the centre, all non-zero elements in the two quaternion subspaces, the elements of non-zero dot form in the vector subspace, and the elements of non-zero generic norm in the two Hermitian sectors. The idempotents are $0$ and $e_t$ in the centre and the quaternion subspace and the Hermitian idempotents $\tfrac12(e_t\pm \tilde\Xi)$ in the Hermitian subspace, and $0$ alone in the other three. The isotropic elements are absent off zero in the centre and the two quaternion subspaces, and non-empty in the vector, Hermitian and anti-Hermitian subspaces; the elements of square zero agree with them on the vector subspace and are strictly smaller on the two Hermitian sectors.
+On the remarkable real subspaces the symmetric plain product is closed on the centre $\mathbb{C}_{\mathbb{B}}$, on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the Hermitian subspace $\mathbb{M}_+$, which are the three Jordan subalgebras of the block — the field $\mathbb{C}$, the Jordan division algebra of the symmetrised quaternions, and the Hermitian Jordan algebra $J(\mathbb{B})$. It fails to close on the vector subspace, where $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ lands in the centre; on the anti-quaternion subspace, where $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ lands in the quaternion subspace; and on the anti-Hermitian subspace, where $(ie_t)^2=-e_t$ lands in the Hermitian subspace. The units are the non-zero scalars in the centre, all non-zero elements in the two quaternion subspaces, the elements of non-zero dot form in the vector subspace, and the elements of non-zero generic norm in the two Hermitian sectors. The idempotents are $0$ and $e_t$ in the centre and the quaternion subspace and the Hermitian idempotents $\tfrac12(e_t\pm \tilde{Ζ})$ in the Hermitian subspace, and $0$ alone in the other three. The isotropic elements are absent off zero in the centre and the two quaternion subspaces, and non-empty in the vector, Hermitian and anti-Hermitian subspaces; the elements of square zero agree with them on the vector subspace and are strictly smaller on the two Hermitian sectors.
 
 ## Summary of Notation
 
@@ -182,7 +182,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 | $i\mathbb{H}_{\mathbb{B}}\bullet i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$ | the product of two anti-quaternion elements |
 | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | the closure of the Hermitian and the failure for the anti-Hermitian |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the generic norm, deciding units and isotropic elements |
-| $\tfrac12(e_t\pm \tilde\Xi)$, $|\vec u|=1$ | the Hermitian idempotents, in $\mathbb{M}_+$ |
+| $\tfrac12(e_t\pm \tilde{Ζ})$, $|\vec u|=1$ | the Hermitian idempotents, in $\mathbb{M}_+$ |
 
 ## Further Reading
 

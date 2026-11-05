@@ -37,7 +37,7 @@ Thus the Fueter operator is a square root not of the Laplacian but of a wave ope
 
 ### Relation to the Cauchy–Riemann Operator
 
-On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_t + \xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z$ satisfies $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}^{\mathrm{spl}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
+On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\zeta) = \zeta_t + \zeta_x\vec e_x+\zeta_y\vec e_y+\zeta_z\vec e_z$ satisfies $s(\zeta)s^{\natural}(\zeta) = \langle \zeta\rangle_{\natural}e_t$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}^{\mathrm{spl}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
 
 ## Fueter-Regular Functions
 

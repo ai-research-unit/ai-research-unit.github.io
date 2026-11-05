@@ -308,7 +308,7 @@ $$
 P^2=I_4 ,
 $$
 
-and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra.
+and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.
 
 The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:
 
@@ -324,10 +324,10 @@ all three checked cell by cell.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde\Xi_{\mathrm{ad}}$ is the central root of the double with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde\Xi_{\mathrm{ad}}$ has
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of the double with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ has
 
 $$
-\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
+\chi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
 $$
 
 and $\chi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\chi)/2-(e_t-\chi)/2=\chi$. The cell represents $\chi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:

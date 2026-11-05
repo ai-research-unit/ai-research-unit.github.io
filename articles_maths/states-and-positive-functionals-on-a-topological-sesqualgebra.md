@@ -4,13 +4,13 @@
 
 A positive functional on an involutive algebra is one that is non-negatively valued on the elements of the form $x^{*}x$, and a state is a positive functional of norm one. The positivity is the functional's way of respecting the involution, and on a sesqualgebra it does one thing more: the formula $h_{f}(x,y) = f(x^{*}y)$ is a **sesquilinear pairing**, and it is the reduction of the canonical $A$-valued Hermitian form $h(x,y) = x^{*}y$ by the functional. The pairing is positive semi-definite, it satisfies the Cauchy–Schwarz inequality, and its null space is a left ideal; on the quotient the construction of Gelfand, Naimark and Segal produces a Hilbert space and a representation in which the pairing becomes an honest inner product and the involution of the sesqualgebra becomes the Hilbert adjoint.
 
-Three facts organise the article. The pairing $h_{f}$ attached to a positive functional is a **sesquilinear form**, conjugate-linear in the first slot and linear in the second, Hermitian, positive semi-definite, and it is the scalar reduction $h_{\varphi}$ of the form layer at the conjugate functional $\varphi = \varsigma\circ f$, so the scalar theory of the sesqualgebra is contained in the functional theory. The **Cauchy–Schwarz inequality** $|h_{f}(x,y)|^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, its null space $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on the quotient the pairing is an inner product. And the **GNS construction** produces a Hilbert space $H_{f}$, a cyclic vector $\xi_{f}$ and a representation $\pi_{f}$ with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and
+Three facts organise the article. The pairing $h_{f}$ attached to a positive functional is a **sesquilinear form**, conjugate-linear in the first slot and linear in the second, Hermitian, positive semi-definite, and it is the scalar reduction $h_{\varphi}$ of the form layer at the conjugate functional $\varphi = \varsigma\circ f$, so the scalar theory of the sesqualgebra is contained in the functional theory. The **Cauchy–Schwarz inequality** $|h_{f}(x,y)|^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, its null space $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on the quotient the pairing is an inner product. And the **GNS construction** produces a Hilbert space $H_{f}$, a cyclic vector $\zeta_{f}$ and a representation $\pi_{f}$ with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and
 
 $$
-\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*} , \qquad f(x) = \langle \xi_{f}, \pi_{f}(x)\xi_{f}\rangle ,
+\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*} , \qquad f(x) = \langle \zeta_{f}, \pi_{f}(x)\zeta_{f}\rangle ,
 $$
 
-so the representation turns the sesquilinear structure into operators: the derived product of the sesqualgebra becomes the product-with-adjoint, and the pairing $h_{f}(x,y) = f(x^{*}y)$ becomes the inner product of the vectors $\pi_{f}(x)\xi_{f}$ and $\pi_{f}(y)\xi_{f}$.
+so the representation turns the sesquilinear structure into operators: the derived product of the sesqualgebra becomes the product-with-adjoint, and the pairing $h_{f}(x,y) = f(x^{*}y)$ becomes the inner product of the vectors $\pi_{f}(x)\zeta_{f}$ and $\pi_{f}(y)\zeta_{f}$.
 
 The article defines the positive functionals and the pairing they induce, proves the Cauchy–Schwarz inequality and the continuity, runs the GNS construction and reads the sesquilinear structure through it, and names the passage to the GNS construction of the degree-two form category, which it defers. The general theory of the positive functionals, the states and the GNS construction is *States and Positive Functionals on an Involutive Algebra*; the sesquilinear form and its reduction are *The Sesquilinear Form and the Conjugation* and *Hermitian Forms on a Sesqualgebra*; the canonical $A$-valued form and its reductions are *Adjoints of Bounded Sesquilinear Operators*; the positivity and the order are *Self-Adjoint Elements and the Positive Cone* and *Positivity and the Positive Cone of a Hermitian Form*; and the representation theory in full is *Operator Algebras*. Throughout, $A$ is a unital $\mathrm{C}^{*}$-algebra over $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, read as a sesqualgebra through the derived product $x \star y = xy^{*}$; a **positive functional** is a linear $f : A \to \mathbb{C}$ with $f(x^{*}x) \geq 0$ for all $x$, a **state** is a positive functional with $\lVert f\rVert = 1$, equivalently $f(1) = 1$, and $h_{f}(x,y) = f(x^{*}y)$ is its pairing.
 
@@ -116,15 +116,15 @@ which exhibits $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ and, in particular, that $\pi_{
 
 ### The Cyclic Vector and the State
 
-**Proposition (the state is a vector state).** Let $f$ be positive and put $\xi_{f} = 1 + N_{f}$. Then $\xi_{f}$ is **cyclic**, $\overline{\pi_{f}(A)\xi_{f}} = H_{f}$, and
+**Proposition (the state is a vector state).** Let $f$ be positive and put $\zeta_{f} = 1 + N_{f}$. Then $\zeta_{f}$ is **cyclic**, $\overline{\pi_{f}(A)\zeta_{f}} = H_{f}$, and
 
 $$
-f(a) = \langle \xi_{f}, \pi_{f}(a)\xi_{f}\rangle_{f} , \qquad \lVert\xi_{f}\rVert^{2} = f(1) .
+f(a) = \langle \zeta_{f}, \pi_{f}(a)\zeta_{f}\rangle_{f} , \qquad \lVert\zeta_{f}\rVert^{2} = f(1) .
 $$
 
-In particular $f$ is a state exactly when $f(1) = 1$, that is exactly when $\xi_{f}$ is a unit vector.
+In particular $f$ is a state exactly when $f(1) = 1$, that is exactly when $\zeta_{f}$ is a unit vector.
 
-*Proof.* The computation is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle = \langle 1 + N_{f}, a + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\xi_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$; the inner product is conjugate-linear in the first slot, so the state is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$ and the reverse order gives $\overline{f(a)}$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$.
+*Proof.* The computation is $\langle\zeta_{f}, \pi_{f}(a)\zeta_{f}\rangle = \langle 1 + N_{f}, a + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\zeta_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$; the inner product is conjugate-linear in the first slot, so the state is $\langle\zeta_{f}, \pi_{f}(a)\zeta_{f}\rangle$ and the reverse order gives $\overline{f(a)}$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$.
 
 ## The Representation of the Sesquilinear Structure
 
@@ -147,12 +147,12 @@ and the unit is represented by the identity, $\pi_{f}(1) = 1$.
 **Theorem (the pairing is the inner product of the images).** Let $f$ be a positive functional. Then for all $x,y \in A$,
 
 $$
-h_{f}(x,y) = f(x^{*}y) = \langle \pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle_{f} ,
+h_{f}(x,y) = f(x^{*}y) = \langle \pi_{f}(x)\zeta_{f}, \pi_{f}(y)\zeta_{f}\rangle_{f} ,
 $$
 
-so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the map $x \mapsto \pi_{f}(x)\xi_{f}$, and it is positive definite exactly when $f$ is faithful.
+so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the map $x \mapsto \pi_{f}(x)\zeta_{f}$, and it is positive definite exactly when $f$ is faithful.
 
-*Proof.* The multiplicativity and the adjoint property give $\langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x)^{*}\pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x^{*}y)\xi_{f}\rangle = f(x^{*}y)$, the last step by the vector-state formula. The map $x \mapsto \pi_{f}(x)\xi_{f}$ has kernel $N_{f}$, by $\lVert\pi_{f}(x)\xi_{f}\rVert^{2} = f(x^{*}x)$; so $h_{f}$ is positive definite exactly when $N_{f} = \{0\}$, which is faithfulness.
+*Proof.* The multiplicativity and the adjoint property give $\langle\pi_{f}(x)\zeta_{f}, \pi_{f}(y)\zeta_{f}\rangle = \langle\zeta_{f}, \pi_{f}(x)^{*}\pi_{f}(y)\zeta_{f}\rangle = \langle\zeta_{f}, \pi_{f}(x^{*}y)\zeta_{f}\rangle = f(x^{*}y)$, the last step by the vector-state formula. The map $x \mapsto \pi_{f}(x)\zeta_{f}$ has kernel $N_{f}$, by $\lVert\pi_{f}(x)\zeta_{f}\rVert^{2} = f(x^{*}x)$; so $h_{f}$ is positive definite exactly when $N_{f} = \{0\}$, which is faithfulness.
 
 **Remark.** The theorem is the reason the pairing is called positive semi-definite and not positive definite in general: it is the inner product of the images, so its radical is exactly the set of the elements whose image is annihilated by the cyclic vector, and the representation $\pi_{f}$ is injective exactly when the pairing is definite.
 
@@ -176,7 +176,7 @@ so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the ma
 
 ### The Field and the Matrices
 
-**Example (the field, verdict: the pairing of the modulus).** Let $A = \mathbb{C}$ with the conjugation and the derived product $z \star w = z\bar w$. A positive functional is $f(z) = \lambda z$ with $\lambda \geq 0$, the pairing is $h_{f}(z,w) = \lambda\bar z w$, the null space is $\{0\}$ for $\lambda > 0$, and the GNS space is $\mathbb{C}$ with the representation $\pi_{f}(z) = z$ and the cyclic vector $\xi_{f} = 1$. The state $\lambda = 1$ is the model state of all the examples, and the pairing is the Hermitian inner product of the plane.
+**Example (the field, verdict: the pairing of the modulus).** Let $A = \mathbb{C}$ with the conjugation and the derived product $z \star w = z\bar w$. A positive functional is $f(z) = \lambda z$ with $\lambda \geq 0$, the pairing is $h_{f}(z,w) = \lambda\bar z w$, the null space is $\{0\}$ for $\lambda > 0$, and the GNS space is $\mathbb{C}$ with the representation $\pi_{f}(z) = z$ and the cyclic vector $\zeta_{f} = 1$. The state $\lambda = 1$ is the model state of all the examples, and the pairing is the Hermitian inner product of the plane.
 
 **Example (the matrices, verdict: the Hilbert–Schmidt pairing).** Let $A = M_{n}(\mathbb{C})$ with the conjugation, the conjugate transpose and $X \star Y = XY^{*}$. The normalised trace $f(X) = \tfrac1n\operatorname{tr}(X)$ is a faithful state, the pairing is $h_{f}(X,Y) = \tfrac1n\operatorname{tr}(X^{*}Y)$, the Hilbert–Schmidt inner product scaled by $n$, and the GNS space is $M_{n}(\mathbb{C})$ with the Hilbert–Schmidt norm; the representation is $\pi_{f}(X)(Y) = XY$, that is the left regular representation, acting on the matrices as a Hilbert space. The pairing is definite because the trace is faithful, and the example is the finite-dimensional model in which every statement of the article is visible in linear algebra.
 
@@ -186,7 +186,7 @@ so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the ma
 
 ## Summary
 
-A **positive functional** on a unital sesqualgebra is a linear $f$ with $f(x^{*}x) \geq 0$; it is self-adjoint, and it induces the **sesquilinear pairing** $h_{f}(x,y) = f(x^{*}y)$, conjugate-linear in the first slot and linear in the second, Hermitian and positive semi-definite, which is the scalar reduction $h_{\varphi}$ of *The Sesquilinear Form and the Conjugation* at the conjugate functional $\varphi = \varsigma\circ f$ and the reduction of the canonical $A$-valued form $h(x,y) = x^{*}y$ by the functional. The **Cauchy–Schwarz inequality** $\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, the **null space** $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on $A/N_{f}$ the pairing is an inner product whose completion $H_{f}$ carries the **GNS representation** $\pi_{f}$, a $*$-representation with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and a cyclic vector $\xi_{f} = 1 + N_{f}$ such that $f(a) = \langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$. The representation turns the **sesquilinear structure into operators**, $\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*}$ and $\pi_{f}(\{x,y,z\}) = \pi_{f}(x)\pi_{f}(y)^{*}\pi_{f}(z)$, and realises the pairing as the inner product of the images, $h_{f}(x,y) = \langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle$, so that $h_{f}$ is definite exactly when $f$ is faithful. The construction is the specialisation of the GNS construction of the degree-two form category to the forms that are reductions of the canonical one, and it is the scalar reading of the operator theory of the layer.
+A **positive functional** on a unital sesqualgebra is a linear $f$ with $f(x^{*}x) \geq 0$; it is self-adjoint, and it induces the **sesquilinear pairing** $h_{f}(x,y) = f(x^{*}y)$, conjugate-linear in the first slot and linear in the second, Hermitian and positive semi-definite, which is the scalar reduction $h_{\varphi}$ of *The Sesquilinear Form and the Conjugation* at the conjugate functional $\varphi = \varsigma\circ f$ and the reduction of the canonical $A$-valued form $h(x,y) = x^{*}y$ by the functional. The **Cauchy–Schwarz inequality** $\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)h_{f}(y,y)$ holds, the **null space** $N_{f} = \{x : f(x^{*}x) = 0\}$ is the radical of the pairing and a left ideal, and on $A/N_{f}$ the pairing is an inner product whose completion $H_{f}$ carries the **GNS representation** $\pi_{f}$, a $*$-representation with $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ and a cyclic vector $\zeta_{f} = 1 + N_{f}$ such that $f(a) = \langle\zeta_{f}, \pi_{f}(a)\zeta_{f}\rangle$. The representation turns the **sesquilinear structure into operators**, $\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*}$ and $\pi_{f}(\{x,y,z\}) = \pi_{f}(x)\pi_{f}(y)^{*}\pi_{f}(z)$, and realises the pairing as the inner product of the images, $h_{f}(x,y) = \langle\pi_{f}(x)\zeta_{f}, \pi_{f}(y)\zeta_{f}\rangle$, so that $h_{f}$ is definite exactly when $f$ is faithful. The construction is the specialisation of the GNS construction of the degree-two form category to the forms that are reductions of the canonical one, and it is the scalar reading of the operator theory of the layer.
 
 ## Summary of Notation
 
@@ -198,10 +198,10 @@ A **positive functional** on a unital sesqualgebra is a linear $f$ with $f(x^{*}
 | $h_{f}(y,x) = \overline{h_{f}(x,y)}$, $h_{f}(x,x) \geq 0$ | Hermitian and positive semi-definite |
 | $\lvert h_{f}(x,y)\rvert^{2} \leq h_{f}(x,x)h_{f}(y,y)$ | the Cauchy–Schwarz inequality |
 | $N_{f} = \{x : f(x^{*}x) = 0\}$ | the null space, the radical of the pairing and a left ideal |
-| $H_{f}$, $\pi_{f}$, $\xi_{f} = 1 + N_{f}$ | the GNS space, representation and cyclic vector |
+| $H_{f}$, $\pi_{f}$, $\zeta_{f} = 1 + N_{f}$ | the GNS space, representation and cyclic vector |
 | $\pi_{f}(x^{*}) = \pi_{f}(x)^{*}$ | the involution becomes the adjoint |
 | $\pi_{f}(x \star y) = \pi_{f}(x)\pi_{f}(y)^{*}$ | the derived product becomes product-with-adjoint |
-| $h_{f}(x,y) = \langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle$ | the pairing as the inner product of the images |
+| $h_{f}(x,y) = \langle\pi_{f}(x)\zeta_{f}, \pi_{f}(y)\zeta_{f}\rangle$ | the pairing as the inner product of the images |
 | $\lVert f\rVert = f(1)$ | the continuity, automatic in the $\mathrm{C}^{*}$-case |
 
 ## Further Reading

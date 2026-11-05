@@ -20,10 +20,10 @@ $$
 
 where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.
 
-Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\upsilon)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
+Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\zeta,\eta,\upsilon)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
 
 $$
-\xi = 0, \qquad \eta = 0, \qquad \upsilon = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
+\zeta = 0, \qquad \eta = 0, \qquad \upsilon = -i\varrho, \qquad \varrho \in \mathbb{R}_{>0},
 $$
 
 so that the whole displacement of the singularity from the origin is

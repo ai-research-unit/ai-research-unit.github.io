@@ -14,19 +14,19 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The complex plane $\mathbb{C}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}.
+\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}.
 $$
 
-Equivalently, writing $\xi = b + i b'$ and $Q = q + i q'$,
+Equivalently, writing $\zeta = b + i b'$ and $Q = q + i q'$,
 
 $$
-\chi_\xi(Q) = \exp(2\pi i (b q + b' q')).
+\chi_\zeta(Q) = \exp(2\pi i (b q + b' q')).
 $$
 
 The dual group $\hat{\mathbb{C}}$ is isomorphic to $\mathbb{C}$ itself, and the pairing is
 
 $$
-\langle \xi, Q \rangle = \operatorname{Re}(\bar{\xi} Q) = b q + b' q'.
+\langle \zeta, Q \rangle = \operatorname{Re}(\bar{\zeta} Q) = b q + b' q'.
 $$
 
 So complex harmonic analysis is, at the level of the additive group, the same as Fourier analysis on $\mathbb{R}^2$. The complex structure enters through the identification of $\mathbb{C}$ with itself as a dual object, and through the interaction with multiplication.
@@ -54,10 +54,10 @@ This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C
 The **Fourier transform** of $f \in L^1(\mathbb{C})$ is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}} f(Q) \exp(-2\pi i \operatorname{Re}(\bar{\xi} Q)) \, dQ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}} f(Q) \exp(-2\pi i \operatorname{Re}(\bar{\zeta} Q)) \, dQ,
 $$
 
-where $dQ$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $Q = q + i q'$ and $\xi = b + i b'$,
+where $dQ$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $Q = q + i q'$ and $\zeta = b + i b'$,
 
 $$
 (\mathcal F f)(b, b') = \int_{\mathbb{R}^2} f(q, q') \exp(-2\pi i (b q + b' q')) \, dq \, dq'.
@@ -69,21 +69,21 @@ This is the ordinary two-dimensional Fourier transform. The complex notation is 
 
 **Linearity.** $\widehat{af + bg} = a \mathcal F f + b \mathcal F g$.
 
-**Translation.** If $f_{Q_2}(Q_1) = f(Q_1 - Q_2)$, then $\mathcal F f_{Q_2}(\xi) = \exp(-2\pi i \operatorname{Re}(\bar{\xi} Q_2)) (\mathcal F f)(\xi)$.
+**Translation.** If $f_{Q_2}(Q_1) = f(Q_1 - Q_2)$, then $\mathcal F f_{Q_2}(\zeta) = \exp(-2\pi i \operatorname{Re}(\bar{\zeta} Q_2)) (\mathcal F f)(\zeta)$.
 
-**Modulation.** If $f_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)) f(Q)$, then $\mathcal F f_\xi(\eta) = (\mathcal F f)(\eta - \xi)$.
+**Modulation.** If $f_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)) f(Q)$, then $\mathcal F f_\zeta(\eta) = (\mathcal F f)(\eta - \zeta)$.
 
 **Scaling.** If $f_\lambda(Q) = f(\lambda Q)$ for $\lambda \in \mathbb{C}^\times$, then
 
 $$
-\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \mathcal F f\left(\frac{\xi}{\bar{\lambda}}\right),
+\widehat{f_\lambda}(\zeta) = \frac{1}{|\lambda|^2} \mathcal F f\left(\frac{\zeta}{\bar{\lambda}}\right),
 $$
 
-where $\xi/\bar{\lambda}$ is complex division.
+where $\zeta/\bar{\lambda}$ is complex division.
 
-**Rotation.** If $f_\theta(Q) = f(\exp(i\theta) Q)$, then $\mathcal F f_\theta(\xi) = (\mathcal F f)(\exp(i\theta) \xi)$. The Fourier transform commutes with rotations.
+**Rotation.** If $f_\theta(Q) = f(\exp(i\theta) Q)$, then $\mathcal F f_\theta(\zeta) = (\mathcal F f)(\exp(i\theta) \zeta)$. The Fourier transform commutes with rotations.
 
-**Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
+**Conjugation.** $\widehat{\bar{f}}(\zeta) = \overline{(\mathcal F f)(-\zeta)}$.
 
 ### The Plancherel Theorem
 
@@ -105,7 +105,7 @@ This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.
 **Theorem.** If $f \in L^1(\mathbb{C})$ and $\mathcal F f \in L^1(\mathbb{C})$, then
 
 $$
-f(Q) = \int_{\mathbb{C}} (\mathcal F f)(\xi) \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)) \, d\xi
+f(Q) = \int_{\mathbb{C}} (\mathcal F f)(\zeta) \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)) \, d\zeta
 $$
 
 for almost every $Q$.
@@ -136,7 +136,7 @@ $$
 
 **Convolution theorem.** If $f, g \in L^1(\mathbb{C})$, then
 
-$$ \boxed{\;\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)\;}.
+$$ \boxed{\;\widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta)\;}.
 $$
 
 The convolution is the additive convolution. There is also a **multiplicative convolution** on $\mathbb{C}^\times$, defined by
@@ -206,18 +206,18 @@ where $\partial = \partial/\partial Q$.
 The Fourier transform diagonalizes the Laplacian:
 
 $$
-\widehat{\Delta f}(\xi) = -4 \pi^2 |\xi|^2 (\mathcal F f)(\xi).
+\widehat{\Delta f}(\zeta) = -4 \pi^2 |\zeta|^2 (\mathcal F f)(\zeta).
 $$
 
-This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns differentiation into multiplication by the symbol $-4\pi^2 |\xi|^2$.
+This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns differentiation into multiplication by the symbol $-4\pi^2 |\zeta|^2$.
 
 The Cauchy–Riemann operator has symbol
 
 $$
-\widehat{\bar{\partial} f}(\xi) = \pi i \xi (\mathcal F f)(\xi),
+\widehat{\bar{\partial} f}(\zeta) = \pi i \zeta (\mathcal F f)(\zeta),
 $$
 
-where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the set $\bar{\xi} = 0$, which is the origin. This is the reason the Cauchy–Riemann operator is elliptic: its symbol vanishes only at the origin.
+where $\bar{\zeta}$ is the complex conjugate of $\zeta$. The symbol vanishes on the set $\bar{\zeta} = 0$, which is the origin. This is the reason the Cauchy–Riemann operator is elliptic: its symbol vanishes only at the origin.
 
 ### The Fundamental Solution of the Laplacian
 
@@ -236,7 +236,7 @@ $$
 in the sense of distributions. The Fourier transform of $\Phi$ is the tempered distribution
 
 $$
-\hat{\Phi}(\xi) = -\frac{1}{4\pi^2 |\xi|^2},
+\hat{\Phi}(\zeta) = -\frac{1}{4\pi^2 |\zeta|^2},
 $$
 
 which is defined by principal value.
@@ -413,7 +413,7 @@ $$
 The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty.
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty.
 $$
 
 ### The Inversion Formula
@@ -442,7 +442,7 @@ The complex wavelet transform is used in image processing, where it provides bot
 
 ## Summary
 
-Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi}Q))$ are the exponentials from which the transform is built.
+Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta}Q))$ are the exponentials from which the transform is built.
 
 The Fourier transform on $\mathbb{C}$ is the transform on that group, written in the complex variable, and convolution is the group convolution on $\mathbb{R}^2$. The Paley–Wiener theorem relates the decay of the transform to the holomorphic extension of the function. The article then takes up the interaction of the transform with holomorphy: the Cauchy–Riemann operator and the Laplacian, the Hardy spaces of holomorphic functions on the disc, and the theorems describing how harmonic analysis restricts to the holomorphic category.
 
@@ -454,8 +454,8 @@ The last three sections extend the transform beyond the group setting: the Melli
 |---|---|
 | $\mathbb{C}$ | Complex plane |
 | $Q = q + i q'$ | Generic complex number |
-| $\xi = b + i b'$ | Frequency variable |
-| $\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q))$ | Character of $\mathbb{C}$ |
+| $\zeta = b + i b'$ | Frequency variable |
+| $\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q))$ | Character of $\mathbb{C}$ |
 | $\mathcal F f$ | Fourier transform |
 | $f * g$ | Additive convolution |
 | $f \star g$ | Multiplicative (Mellin) convolution |

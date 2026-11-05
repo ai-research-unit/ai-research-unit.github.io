@@ -6,7 +6,7 @@
 The Fourier transform is not only a formula for a function but an operator, and as an operator it is
 unitary. Written
 $$
-(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\xi)\,dx ,
+(\mathcal Ff)(\zeta)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\zeta)\,dx ,
 $$
 it extends from the Schwartz class to an isometry of $L^2(\mathbb R^n)$ onto itself, so that it preserves
 the inner product and the norm; its inverse is the transform with the conjugate character. The operator
@@ -37,16 +37,16 @@ transform acts on functions and the operator is studied through the integral and
 
 **Definition.** The **Fourier operator** on $\mathbb R^n$ is the map
 $$
-(\mathcal Ff)(\xi)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\xi)\,dx ,
+(\mathcal Ff)(\zeta)=\int_{\mathbb R^n}f(x)\exp(-2\pi ix\cdot\zeta)\,dx ,
 $$
 under the normalisation of *Fourier Analysis on Euclidean Spaces*; the conjugate transform is
-$(\overline{\mathcal F}f)(\xi)=\int f(x)\exp(2\pi ix\cdot\xi)dx$, and the inverse transform is
-$\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$.
+$(\overline{\mathcal F}f)(\zeta)=\int f(x)\exp(2\pi ix\cdot\zeta)dx$, and the inverse transform is
+$\check g(x)=\int g(\zeta)\exp(2\pi ix\cdot\zeta)d\zeta$.
 
 On the Schwartz class $\mathcal S(\mathbb R^n)$ the transform is a linear homeomorphism onto itself, of
 order four; this is the content of the invariance of $\mathcal S$ and of the inversion theorem of the
 Fourier article. The two identities this article uses throughout are those of that article as well:
-$\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial/\partial x_j\,\mathcal Ff$,
+$\mathcal F(\partial/\partial x_j\,f)=2\pi i\zeta_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial/\partial x_j\,\mathcal Ff$,
 the second from differentiating under the integral.
 
 ### Extension to $L^2$ and Unitarity
@@ -89,9 +89,9 @@ $\mathcal F^4=\mathrm{id}$, $\mathcal F^{-1}=\mathcal F^3$, and $\mathcal F^3=\m
 **Proof.** On $\mathcal S$, inserting the definition and exchanging the order of integration, which the
 rapid decrease justifies,
 $$
-\mathcal F^2f(x)=\int \mathcal Ff(\xi)\exp(-2\pi ix\cdot\xi)\,d\xi
-=\iint f(y)\exp(-2\pi iy\cdot\xi)\exp(-2\pi ix\cdot\xi)\,dy\,d\xi
-=\int f(y)\Bigl(\int \exp(-2\pi i(x+y)\cdot\xi)d\xi\Bigr)dy ,
+\mathcal F^2f(x)=\int \mathcal Ff(\zeta)\exp(-2\pi ix\cdot\zeta)\,d\zeta
+=\iint f(y)\exp(-2\pi iy\cdot\zeta)\exp(-2\pi ix\cdot\zeta)\,dy\,d\zeta
+=\int f(y)\Bigl(\int \exp(-2\pi i(x+y)\cdot\zeta)d\zeta\Bigr)dy ,
 $$
 and the inner integral is the delta distribution at $x+y$, so it selects $y=-x$ and $\mathcal F^2f=f(-x)$.
 Both sides extend to $L^2$ by continuity and density. Then $\mathcal F^4=(\mathcal F^2)^2=P^2=\mathrm{id}$,
@@ -135,7 +135,7 @@ $$
 \mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha\;} .
 $$
 
-**Proof.** On $\mathbb R$ the two identities $\mathcal F(\partial/\partial x\,f)=2\pi i\xi\mathcal Ff$ and
+**Proof.** On $\mathbb R$ the two identities $\mathcal F(\partial/\partial x\,f)=2\pi i\zeta\mathcal Ff$ and
 $\mathcal F(xf)=-\frac1{2\pi i}\partial/\partial x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
 annihilation operators $x\pm\frac1{2\pi}\frac{d}{dx}$ which raise and lower $k$, hence that $\mathcal F$
 carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by the Gaussian computation
@@ -161,7 +161,7 @@ $$
 where $M_{x_j}$ is multiplication by the coordinate $x_j$; equivalently $\mathcal F$ is a unitary
 equivalence carrying the differentiation $\frac1{2\pi i}\partial/\partial x_j$ into multiplication by the coordinate.
 
-**Proof.** The first identity is the rearrangement of $\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$, the
+**Proof.** The first identity is the rearrangement of $\mathcal F(\partial/\partial x_j\,f)=2\pi i\zeta_j\mathcal Ff$, the
 second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial/\partial x_j\,\mathcal Ff$; both are the differentiation identities
 of *Fourier Analysis on Euclidean Spaces*. On $\mathcal S$ they are identities of operators, and they
 extend to the closures.
@@ -172,7 +172,7 @@ becomes an algebraic one.
 
 ### Translation and Convolution Become Multiplication
 
-**Theorem.** For the translation $\tau_y$ and the character $\chi_y(\xi)=\exp(-2\pi iy\cdot\xi)$ one has
+**Theorem.** For the translation $\tau_y$ and the character $\chi_y(\zeta)=\exp(-2\pi iy\cdot\zeta)$ one has
 $$
 \mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y} ,
 $$
@@ -227,7 +227,7 @@ and multiplication — holds verbatim, with the Hermite basis replaced by the ch
 
 ## Summary
 
-The Fourier operator $\mathcal Ff(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$ extends from the Schwartz class to
+The Fourier operator $\mathcal Ff(\zeta)=\int f(x)\exp(-2\pi ix\cdot\zeta)dx$ extends from the Schwartz class to
 a unitary operator of $L^2(\mathbb R^n)$, isometric for the inner product, with inverse the conjugate
 transform. It has order four: $\mathcal F^2=P$ is parity and $\mathcal F^4=\mathrm{id}$, so its spectrum
 lies in the fourth roots of unity, and it is diagonalised in the Hermite basis by
@@ -243,7 +243,7 @@ $\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place o
 | Symbol | Meaning |
 |---|---|
 | $\mathcal F$, $\overline{\mathcal F}$ | Fourier operator and its conjugate |
-| $\check g$ | Inverse transform, $\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$ |
+| $\check g$ | Inverse transform, $\check g(x)=\int g(\zeta)\exp(2\pi ix\cdot\zeta)d\zeta$ |
 | $P$ | Parity, $(Pf)(x)=f(-x)$; $\mathcal F^2=P$ |
 | $h_\alpha$ | Hermite functions, orthonormal basis with $\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$ |
 | $D_j$ | $\frac1{2\pi i}\partial/\partial x_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$ |

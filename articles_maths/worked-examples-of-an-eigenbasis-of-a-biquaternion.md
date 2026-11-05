@@ -88,15 +88,15 @@ Put
 $$
 \vec U=\frac{\vec Q}{B},
 \qquad
-\vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
+\vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B}.
 $$
 
-Then $\vec\Xi^2=e_t$, and the two eigenprojections are
+Then $\vec{Ζ}^2=e_t$, and the two eigenprojections are
 
 $$
-\tilde\Pi_+=\frac12(e_t+\vec\Xi),
+\tilde\Pi_+=\frac12(e_t+\vec{Ζ}),
 \qquad
-\tilde\Pi_-=\frac12(e_t-\vec\Xi).
+\tilde\Pi_-=\frac12(e_t-\vec{Ζ}).
 $$
 
 They are idempotent, orthogonal and complete:
@@ -127,11 +127,11 @@ $$
 
 The swap $B\mapsto-B$ exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and the two eigenvalues. The decomposition is unique up to this exchange.
 
-**Check.** For $\tilde Q=(1+i)e_t+\vec e_x+i\vec e_y+\vec e_z$, $B=1$, $\vec U=\vec e_x+i\vec e_y+\vec e_z$ and $\vec\Xi=-i\vec e_x+\vec e_y-i\vec e_z$, so $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ and
+**Check.** For $\tilde Q=(1+i)e_t+\vec e_x+i\vec e_y+\vec e_z$, $B=1$, $\vec U=\vec e_x+i\vec e_y+\vec e_z$ and $\vec{Ζ}=-i\vec e_x+\vec e_y-i\vec e_z$, so $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ and
 $$
 (1+i)e_t+\vec e_x+i\vec e_y+\vec e_z=(1+2i)\tilde\Pi_++\tilde\Pi_-.
 $$
-The scalar-vector form confirms it: $\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec\Xi=(1+i)e_t+i\vec\Xi=\tilde Q$.
+The scalar-vector form confirms it: $\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec{Ζ}=(1+i)e_t+i\vec{Ζ}=\tilde Q$.
 
 ### The Peirce Corners and the Nilpotents
 
@@ -230,7 +230,7 @@ $$
 **The shared solution for $\vec Q=Q_x\vec e_x$.** For cases 2 to 5 the vector part is along $\vec e_x$, so
 
 $$
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 \qquad
 \tilde\Pi_+=\frac12(e_t-i\vec e_x),
 \qquad
@@ -259,7 +259,7 @@ $$
 \;}
 $$
 
-The pair is the same for the four elements, because it depends only on $\vec\Xi$, not on the eigenvalues.
+The pair is the same for the four elements, because it depends only on $\vec{Ζ}$, not on the eigenvalues.
 
 ### The Eigenbasis
 
@@ -311,14 +311,14 @@ $$
 
 On $S_+$ the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_+)$, with eigenvalues $\lambda_+$ and $\lambda_-$; on $S_-$ it is $(\vec\Upsilon_-,\tilde\Pi_-)$, with eigenvalues $\lambda_+$ and $\lambda_-$. Each is an eigenbasis with distinct eigenvalues, because $B\neq0$.
 
-The spaces $S_\pm$ are the spinor spaces, the Peirce carriers and here the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. This basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.
+The spaces $S_\pm$ are the spinor spaces, the Peirce carriers and here the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. This basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec{Ζ})/2$; replacing $B$ by $-B$ exchanges them.
 
 ### Spinors and the $2\times2$ Model
 
 A spinor of the first Peirce copy is an element of $S_+$,
 
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 \qquad
 Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
@@ -326,13 +326,13 @@ $$
 with coordinates $(Q_{2,11},Q_{2,21})$, the first column of the matrix. Under multiplication by $\tilde Q$,
 
 $$
-\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+.
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+.
 $$
 
 A spinor of the second Peirce copy is an element of $S_-$,
 
 $$
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 \qquad
 Q_{2,12},Q_{2,22}\in\mathbb{C},
 $$
@@ -340,7 +340,7 @@ $$
 with coordinates $(Q_{2,12},Q_{2,22})$, the second column, and
 
 $$
-\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-.
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-.
 $$
 
 The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on the coordinates of both spinor spaces.
@@ -420,7 +420,7 @@ The spectral projectors are
 
 $$
 \rho_\pm=\mathsf M_2(\tilde\Pi_\pm)
-=\frac12\left(I_2\pm\mathsf M_2(\vec\Xi)\right),
+=\frac12\left(I_2\pm\mathsf M_2(\vec{Ζ})\right),
 $$
 
 and they satisfy
@@ -443,7 +443,7 @@ $$
 | Spectrally degenerate (Jordan) | $B=0$, $\vec Q\neq0$ | $\lambda_+= \lambda_-=Q_t$ | none: the eigenspace is two-dimensional |
 | Spectrally degenerate (scalar) | $B=0$, $\vec Q=0$ | $\lambda_+= \lambda_-=Q_t$ | every basis |
 
-In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the construction of the eigenbasis does not apply because $\vec\Xi$ is undefined.
+In the Jordan regime, write $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$. The minimal polynomial is $(X-Q_t)^2$. When $Q_t\neq0$ the element is unipotent up to the scalar $Q_t$; when $Q_t=0$ it is nilpotent. In both subcases the eigenspace is $\ker L_{\vec N}$, of dimension two. A two-dimensional eigenspace in a four-dimensional algebra is not a basis of eigenvectors, so there is no eigenbasis. In the scalar regime the operator is $Q_t\,\mathrm{id}$, every nonzero vector is an eigenvector, and every basis is an eigenbasis; the construction of the eigenbasis does not apply because $\vec{Ζ}$ is undefined.
 
 ## The Eight Cases
 
@@ -467,7 +467,7 @@ $$
 L_{\tilde Q}=\mathrm{id}.
 $$
 
-Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no eigenbasis attached to $\tilde Q$, because the root $\vec\Xi=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.
+Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the eigenspace is the whole algebra, of dimension four. There is no eigenbasis attached to $\tilde Q$, because the root $\vec{Ζ}=-i\vec Q/B$ is undefined. The standard Peirce pair $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ is a choice; in it the matrix of $L_{\tilde Q}$ is the identity.
 
 **Spinors.** There is no distinguished spinor pair: $B=0$, the two eigenvalues coincide, and the eigenspace is two-dimensional, so $\tilde Q$ selects no pair of complementary minimal left ideals. A general element still has two spinor components in the fixed Peirce basis. With
 $$
@@ -475,9 +475,9 @@ $$
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1&0\\0&1\end{pmatrix},
@@ -522,7 +522,7 @@ $$
 \lambda_-=-i.
 $$
 
-**Eigenprojections.** With $\vec\Xi=-i\vec e_x$,
+**Eigenprojections.** With $\vec{Ζ}=-i\vec e_x$,
 
 $$
 \tilde\Pi_+=\frac12(e_t-i\vec e_x),
@@ -600,15 +600,15 @@ $$
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -620,9 +620,9 @@ In the special case $\tilde Q_2=\vec e_x$ one has $Q_{2,11}=\lambda_+=i$, $Q_{2,
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}i&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}i&0\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&-i\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&-i\end{pmatrix}.
 $$
 
 **Matrix.** In the fixed model,
@@ -731,15 +731,15 @@ $$
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -751,9 +751,9 @@ In the special case $\tilde Q_2=\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ one has $Q_{2,1
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\tfrac{1+i}{\sqrt2}&0\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&\tfrac{1-i}{\sqrt2}\end{pmatrix}.
 $$
 
 **Matrix.** In the fixed model,
@@ -868,15 +868,15 @@ $$
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -888,9 +888,9 @@ In the special case $\tilde Q_2=\sqrt2\,e_t+i\vec e_x$ one has $Q_{2,11}=\lambda
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}\sqrt2-1&0\\0&\sqrt2+1\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}\sqrt2-1&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}\sqrt2-1&0\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&\sqrt2+1\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&\sqrt2+1\end{pmatrix}.
 $$
 
 **Matrix.** In the fixed model,
@@ -1005,15 +1005,15 @@ $$
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -1025,9 +1025,9 @@ In the special case $\tilde Q_2=(1-\tfrac{i}{\sqrt2})e_t+(1+\tfrac{i}{\sqrt2})\v
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}a(1+i)&0\\0&b(1-i)\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}a(1+i)&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}a(1+i)&0\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&b(1-i)\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&b(1-i)\end{pmatrix}.
 $$
 
 **Matrix.** In the fixed model,
@@ -1119,9 +1119,9 @@ $$
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1+\frac{1}{\sqrt2}&\frac{1}{\sqrt2}-1\\[2pt]1+\frac{1}{\sqrt2}&1-\frac{1}{\sqrt2}\end{pmatrix},
@@ -1207,13 +1207,13 @@ $$
 
 Their product is $1$. The element is a unit.
 
-**Eigenprojections.** With $\vec\Xi=-i\vec Q/B$,
+**Eigenprojections.** With $\vec{Ζ}=-i\vec Q/B$,
 
 $$
-\vec\Xi=\frac{1-i}{\sqrt2\,B}\vec e_x-\frac{i}{\sqrt2\,B}\vec e_y+\frac{1}{2B}\vec e_z,
+\vec{Ζ}=\frac{1-i}{\sqrt2\,B}\vec e_x-\frac{i}{\sqrt2\,B}\vec e_y+\frac{1}{2B}\vec e_z,
 $$
 
-and $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$. Numerically,
+and $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$. Numerically,
 
 $$
 \tilde\Pi_+\approx \frac12e_t+(0.0601727-0.4887892\,i)\vec e_x+(-0.2143082-0.2744809\,i)\vec e_y+(0.1940873-0.1515388\,i)\vec e_z,
@@ -1297,15 +1297,15 @@ $$
 $$
 in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$. Its two columns are the two spinors:
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+\longleftrightarrow\begin{pmatrix}Q_{2,11}\\Q_{2,21}\end{pmatrix},
 \qquad
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-\longleftrightarrow\begin{pmatrix}Q_{2,12}\\Q_{2,22}\end{pmatrix},
 $$
 with matrices
 $$
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Left multiplication by $\tilde Q$ multiplies both columns by $\operatorname{diag}(\lambda_+,\lambda_-)$:
 $$
@@ -1317,9 +1317,9 @@ In the special case $\tilde Q_2=(1-\tfrac{i}{2})e_t+\tfrac{1+i}{\sqrt2}\vec e_x+
 $$
 \mathsf M_2^Q(\tilde Q)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_+)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&0\end{pmatrix},
+\mathsf M_2^Q(\zeta_+)=\begin{pmatrix}1-\tfrac{i}{2}+iB&0\\0&0\end{pmatrix},
 \qquad
-\mathsf M_2^Q(\xi_-)=\begin{pmatrix}0&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix}.
+\mathsf M_2^Q(\zeta_-)=\begin{pmatrix}0&0\\0&1-\tfrac{i}{2}-iB\end{pmatrix}.
 $$
 
 **Matrix.** In the fixed model,
@@ -1418,9 +1418,9 @@ $$
 $$
 the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
-\mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
+\mathsf M_2(\zeta_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
+\mathsf M_2(\zeta_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$ In the special case
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}1+i&-2i\\0&1+i\end{pmatrix},
@@ -1487,7 +1487,7 @@ For the five spectrally regular cases the Peirce eigenbasis is $\mathcal{B}(\til
 | $3$ | $\frac12(e_t-i\vec e_x)$ | $\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$ | $\bigl(\frac{1+i}{\sqrt2},\frac{1+i}{\sqrt2},\frac{1-i}{\sqrt2},\frac{1-i}{\sqrt2}\bigr)$ |
 | $4$ | $\frac12(e_t-i\vec e_x)$ | $\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$ | $(\sqrt2-1,\sqrt2-1,\sqrt2+1,\sqrt2+1)$ |
 | $5$ | $\frac12(e_t-i\vec e_x)$ | $\vec\Upsilon_\pm=\frac12(\pm\vec e_z-i\vec e_y)$ | $(a(1+i),a(1+i),b(1-i),b(1-i))$ |
-| $7$ | $\frac12(e_t+\vec\Xi)$ | computed from $\tilde Q_1=i\vec e_y-\sqrt2\vec e_z$ | $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ |
+| $7$ | $\frac12(e_t+\vec{Ζ})$ | computed from $\tilde Q_1=i\vec e_y-\sqrt2\vec e_z$ | $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ |
 
 For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is scalar, and cases 6 and 8 are Jordan.
 
@@ -1506,7 +1506,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 
 ### What the Cases Show
 
-- Cases 2 to 5 have the same vector direction $\vec e_x$. They therefore have the same root $\vec\Xi=-i\vec e_x$, the same eigenprojections $\tilde\Pi_\pm$, and the same nilpotents $\vec\Upsilon_\pm$. Only the two eigenvalues change. The eigenbasis is attached to the direction of the vector part, not to its magnitude or to the scalar part. This is the biquaternion form of the statement that the eigenbasis is attached to the root.
+- Cases 2 to 5 have the same vector direction $\vec e_x$. They therefore have the same root $\vec{Ζ}=-i\vec e_x$, the same eigenprojections $\tilde\Pi_\pm$, and the same nilpotents $\vec\Upsilon_\pm$. Only the two eigenvalues change. The eigenbasis is attached to the direction of the vector part, not to its magnitude or to the scalar part. This is the biquaternion form of the statement that the eigenbasis is attached to the root.
 - Case 4 has $B=i$ and real eigenvalues. The root need not be real for the spectrum to be real. The sign of the root exchanges the two eigenvalues and the two projectors.
 - Case 6 is the unipotent case with a real scalar part. The vector part is null, $B=0$, and the element is $e_t$ plus a square-zero element. The eigenspace has dimension two, so there is no eigenbasis.
 - Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $\natural$-regular. A null vector part does not imply an $\natural$-degenerate element.
@@ -1523,8 +1523,8 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 | $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | a biquaternion |
 | $B=\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ | a fixed square root of the spectral discriminant $B^2$ |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\vec\Xi=-i\vec Q/B$ | the pure root of $+1$ attached to $\tilde Q$ |
-| $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ | the two eigenprojections |
+| $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ attached to $\tilde Q$ |
+| $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the two eigenprojections |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
 | $\vec\Upsilon_\pm$ | the nilpotents of the mixed Peirce corners, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
 | $\mathcal{B}(\tilde Q)$ | the Peirce eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |

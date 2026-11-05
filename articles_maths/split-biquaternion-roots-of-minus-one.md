@@ -3,10 +3,10 @@
 
 ## Introduction
 
-This article determines the roots of $-1$ in the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$, that is, the elements $\tilde\Xi \in \mathbb{B}^{\mathrm{spl}}$ satisfying
+This article determines the roots of $-1$ in the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$, that is, the elements $\tilde{Ζ} \in \mathbb{B}^{\mathrm{spl}}$ satisfying
 
 $$
-\tilde\Xi^2 = -1.
+\tilde{Ζ}^2 = -1.
 $$
 
 It follows the article on split biquaternion zero divisors, where the structure of the algebra and its zero divisors are established, and it uses the idempotent decomposition of the algebra into two copies of the quaternion algebra.
@@ -33,33 +33,33 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quatern
 
 ### Statement
 
-A **root of $-1$** in $\mathbb{B}^{\mathrm{spl}}$ is an element $\tilde\Xi \in \mathbb{B}^{\mathrm{spl}}$ satisfying
+A **root of $-1$** in $\mathbb{B}^{\mathrm{spl}}$ is an element $\tilde{Ζ} \in \mathbb{B}^{\mathrm{spl}}$ satisfying
 
 $$
-\tilde\Xi^2 = -1.
+\tilde{Ζ}^2 = -1.
 $$
 
 The problem is to find all such elements.
 
 ### Reduction to the Idempotent Components
 
-In the idempotent basis, the square of $\tilde\Xi = \xi_+ \tilde\Pi_1 + \xi_- \tilde\Pi_2$ is
+In the idempotent basis, the square of $\tilde{Ζ} = \zeta_+ \tilde\Pi_1 + \zeta_- \tilde\Pi_2$ is
 
 $$
-\tilde\Xi^2 = \xi_+^2 \tilde\Pi_1 + \xi_-^2 \tilde\Pi_2,
+\tilde{Ζ}^2 = \zeta_+^2 \tilde\Pi_1 + \zeta_-^2 \tilde\Pi_2,
 $$
 
 because the idempotents satisfy $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$, and $\tilde\Pi_1 \tilde\Pi_2 = \tilde\Pi_2 \tilde\Pi_1 = 0$.
 
-The equation $\tilde\Xi^2 = -1$ is therefore equivalent to the pair of equations
+The equation $\tilde{Ζ}^2 = -1$ is therefore equivalent to the pair of equations
 
 $$
-\xi_+^2 = -1, \qquad \xi_-^2 = -1,
+\zeta_+^2 = -1, \qquad \zeta_-^2 = -1,
 $$
 
-where $\xi_\pm \in \mathbb{H}$ are ordinary quaternions, and $-1$ is understood as $-e_t = -1_{\mathbb{H}}$ in each copy of $\mathbb{H}$.
+where $\zeta_\pm \in \mathbb{H}$ are ordinary quaternions, and $-1$ is understood as $-e_t = -1_{\mathbb{H}}$ in each copy of $\mathbb{H}$.
 
-So the roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are exactly the pairs $(\xi_+, \xi_-)$ where $\xi_+$ and $\xi_-$ are roots of $-1$ in the quaternion algebra $\mathbb{H}$.
+So the roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are exactly the pairs $(\zeta_+, \zeta_-)$ where $\zeta_+$ and $\zeta_-$ are roots of $-1$ in the quaternion algebra $\mathbb{H}$.
 
 ### Reduction to the Quaternion Case
 
@@ -68,7 +68,7 @@ The problem therefore reduces to the problem of finding the roots of $-1$ in $\m
 So the roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are the elements
 
 $$
-\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
+\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
 $$
 
 where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
@@ -81,7 +81,7 @@ where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
 
 $$
 \boxed{\;
-\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2
+\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2
 \;},
 $$
 
@@ -89,7 +89,7 @@ where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the s
 
 $$
 \boxed{\;
-\tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-)
+\tilde{Ζ} = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-)
 \;},
 $$
 
@@ -99,30 +99,30 @@ There are no other roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$.
 
 ### Proof
 
-**Step 1: Reduction.** As shown above, the equation $\tilde\Xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, where $\xi_\pm \in \mathbb{H}$ are the idempotent components of $\tilde\Xi$.
+**Step 1: Reduction.** As shown above, the equation $\tilde{Ζ}^2 = -1$ is equivalent to the pair of equations $\zeta_+^2 = -1$ and $\zeta_-^2 = -1$, where $\zeta_\pm \in \mathbb{H}$ are the idempotent components of $\tilde{Ζ}$.
 
 **Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $\langle \mu\rangle_{\natural} = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -\langle v\rangle_{\natural} = -1$ gives $\langle v\rangle_{\natural} = 1$.
 
-**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$. Conversely, every root arises this way.
+**Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$. Conversely, every root arises this way.
 
 ### The Scalar Part
 
-A root $\tilde\Xi$ of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ has the form
+A root $\tilde{Ζ}$ of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ has the form
 
 $$
-\tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-).
+\tilde{Ζ} = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-).
 $$
 
-The scalar part of $\tilde\Xi$ (with respect to the quaternion basis) is the split complex number
+The scalar part of $\tilde{Ζ}$ (with respect to the quaternion basis) is the split complex number
 
 $$
-\xi_t = \frac{1}{2}(\mu_+ + \mu_-),
+\zeta_t = \frac{1}{2}(\mu_+ + \mu_-),
 $$
 
 which is a real quaternion in general. The vector part is
 
 $$
-\boldsymbol{\tilde\Xi} = \frac{j}{2}(\mu_+ - \mu_-),
+\boldsymbol{\tilde{Ζ}} = \frac{j}{2}(\mu_+ - \mu_-),
 $$
 
 which is a purely split-imaginary quaternion.
@@ -135,7 +135,7 @@ This is different from the biquaternion case, where the roots of $-1$ are pure (
 
 ### The Pure Roots
 
-A root $\tilde\Xi$ of $-1$ is **pure** if its scalar part vanishes:
+A root $\tilde{Ζ}$ of $-1$ is **pure** if its scalar part vanishes:
 
 $$
 \mu_+ + \mu_- = 0, \quad \text{i.e.,} \quad \mu_- = -\mu_+.
@@ -144,14 +144,14 @@ $$
 In this case, the root is
 
 $$
-\tilde\Xi = \mu_+ \tilde\Pi_1 - \mu_+ \tilde\Pi_2 = \mu_+ (\tilde\Pi_1 - \tilde\Pi_2) = \mu_+ j.
+\tilde{Ζ} = \mu_+ \tilde\Pi_1 - \mu_+ \tilde\Pi_2 = \mu_+ (\tilde\Pi_1 - \tilde\Pi_2) = \mu_+ j.
 $$
 
 So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the level set $N = 1$ in $\mathbb{R}^3$.
 
 ### The Scalar Roots
 
-A root $\tilde\Xi$ of $-1$ is **scalar** if its vector part vanishes:
+A root $\tilde{Ζ}$ of $-1$ is **scalar** if its vector part vanishes:
 
 $$
 \mu_+ - \mu_- = 0, \quad \text{i.e.,} \quad \mu_- = \mu_+.
@@ -160,12 +160,12 @@ $$
 In this case, the root is
 
 $$
-\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_+ \tilde\Pi_2 = \mu_+ (\tilde\Pi_1 + \tilde\Pi_2) = \mu_+.
+\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_+ \tilde\Pi_2 = \mu_+ (\tilde\Pi_1 + \tilde\Pi_2) = \mu_+.
 $$
 
 So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a two-dimensional family.
 
-But wait: the scalar roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are the elements $\tilde\Xi = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{B}^{\mathrm{spl}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ has no square root of $-1$.
+But wait: the scalar roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are the elements $\tilde{Ζ} = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{B}^{\mathrm{spl}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ has no square root of $-1$.
 
 So the scalar roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ form a two-dimensional family, and the pure roots form another two-dimensional family. The general root is a combination of the two, parametrized by a pair of unit pure real quaternions, which is a four-dimensional family.
 
@@ -211,10 +211,10 @@ These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_1$ and
 In the biquaternion case, the roots of $-1$ are related to the idempotents by the formula
 
 $$
-\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i,
+\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde{Ζ} i,
 $$
 
-where $\tilde\Xi$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.
+where $\tilde{Ζ}$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.
 
 In the split biquaternion case, the idempotents are the fixed elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.
 
@@ -228,9 +228,9 @@ This is a reflection of the fact that the biquaternion algebra is simple (and it
 
 ### The Roots Are Not Zero Divisors
 
-A root $\tilde\Xi$ of $-1$ satisfies $\tilde\Xi^2 = -1$. In the idempotent basis, $\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\xi_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\tilde\Xi$ is invertible, not a zero divisor.
+A root $\tilde{Ζ}$ of $-1$ satisfies $\tilde{Ζ}^2 = -1$. In the idempotent basis, $\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2$ with $\mu_\pm$ unit pure real quaternions. The idempotent components $\zeta_\pm = \mu_\pm$ are nonzero (they are unit quaternions). So $\tilde{Ζ}$ is invertible, not a zero divisor.
 
-The inverse of $\tilde\Xi$ is $\tilde\Xi^{-1} = -\tilde\Xi = -\mu_+ \tilde\Pi_1 - \mu_- \tilde\Pi_2$.
+The inverse of $\tilde{Ζ}$ is $\tilde{Ζ}^{-1} = -\tilde{Ζ} = -\mu_+ \tilde\Pi_1 - \mu_- \tilde\Pi_2$.
 
 So the roots of $-1$ are invertible elements, and they lie in the group of units ${\mathbb{B}^{\mathrm{spl}}}^\times$.
 
@@ -252,30 +252,30 @@ The roots of $-1$ form a four-dimensional real algebraic subset of $\mathbb{B}^{
 | Non-trivial roots | $b\mu + d\nu i$, $\mu \perp \nu$, $b^2 - d^2 = 1$ | None |
 | Dimension of root set | 4 (non-trivial family) | 4 (product of two quaternion root sets) |
 | Relation to idempotents | Roots generate idempotents | Independent |
-| Idempotents | $\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$ | $0, \tilde\Pi_1, \tilde\Pi_2, 1$ |
+| Idempotents | $\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde{Ζ} i$ | $0, \tilde\Pi_1, \tilde\Pi_2, 1$ |
 
 The key differences are:
 
 1. **No scalar root.** The split biquaternion algebra has no scalar root of $-1$, because the split complex algebra has no square root of $-1$.
 2. **No non-trivial roots.** The biquaternion algebra has a four-dimensional family of non-trivial roots, which arise from the combination of the scalar imaginary with the quaternion roots. The split biquaternion algebra has no such family, because there is no scalar imaginary.
 3. **The root set is a product.** The split biquaternion root set is the product of two copies of the quaternion root set, parametrized by a pair of unit pure real quaternions. The biquaternion root set is more complicated, because the scalar imaginary interacts with the quaternion roots.
-4. **The idempotents are different.** The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$.
+4. **The idempotents are different.** The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde{Ζ} i$.
 
 ## Summary
 
 The roots of $-1$ in the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ are exactly the elements of the form
 
 $$
-\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
+\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
 $$
 
 where $\mu_+$ and $\mu_-$ are unit pure real quaternions. Equivalently, in the standard basis,
 
 $$
-\tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-).
+\tilde{Ζ} = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-).
 $$
 
-There are no other roots. The proof is by reduction to the idempotent components: the equation $\tilde\Xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, and the roots of $-1$ in the quaternion algebra are the unit pure real quaternions.
+There are no other roots. The proof is by reduction to the idempotent components: the equation $\tilde{Ζ}^2 = -1$ is equivalent to the pair of equations $\zeta_+^2 = -1$ and $\zeta_-^2 = -1$, and the roots of $-1$ in the quaternion algebra are the unit pure real quaternions.
 
 The root set is parametrized by a pair of unit pure real quaternions, i.e., by a pair of elements with $N = 1$. It therefore has real dimension four; that the root set is the topological product of two level sets $\{N = 1\}$, and its manifold structure, are established in *Split-Biquaternion Analysis*.
 
@@ -290,8 +290,8 @@ The split biquaternion root set is simpler than the biquaternion root set, becau
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra |
-| $\tilde\Xi$ | Root of $-1$ |
-| $\xi_\pm = \tilde\Xi \tilde\Pi_{1,2}$ | Idempotent components |
+| $\tilde{Ζ}$ | Root of $-1$ |
+| $\zeta_\pm = \tilde{Ζ} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\mu, \mu_+, \mu_-$ | Unit pure real quaternions |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |

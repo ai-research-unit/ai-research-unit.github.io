@@ -73,7 +73,7 @@ one quaternion equation, equivalently four real equations for the four coefficie
 
 *Proof.* Multiplication out of $\sum_\mu\,e_\mu\,\partial/\partial Q_\mu\,(F_0+\vec F)$ with $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$; the right action reverses the order of $e_\mu$ and the differentiated component.
 
-**Corollary.** The system is elliptic, with principal symbol $s(\xi) = \sum_\mu\xi_\mu e_\mu$ invertible for every real $\xi\neq0$, since $s(\xi)s^{\natural}(\xi) = |\xi|^2e_t$; hence Fueter-regular functions are real-analytic.
+**Corollary.** The system is elliptic, with principal symbol $s(\zeta) = \sum_\mu\zeta_\mu e_\mu$ invertible for every real $\zeta\neq0$, since $s(\zeta)s^{\natural}(\zeta) = |\zeta|^2e_t$; hence Fueter-regular functions are real-analytic.
 
 ### The Debye-Type Reformulation of the System
 

@@ -47,7 +47,7 @@ $$
 the second identity being the operator form of $\{X_r,X_s\}=0$.
 
 *Proof.* $F_r$ is the fundamental solution of $\partial/\partial X_r$, which is elliptic with symbol the
-pure vector $\sum e_a\xi_a$; the pairing with the second operator vanishes by the anticommutation
+pure vector $\sum e_a\zeta_a$; the pairing with the second operator vanishes by the anticommutation
 relation for the twisted vectors, as computed in *Clifford Analysis*.
 
 ### The Hermitian Kernels and the Circulant Matrix

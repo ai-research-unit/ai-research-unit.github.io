@@ -316,7 +316,7 @@ The domain of the polar decomposition is the complement of the null cone $\{\lan
 
 The three subspaces on which the polar word fails only at the origin are exactly the three that carry no nonzero zero divisor, which is the statement of *Subspaces and Decompositions* read through the polar decomposition. The intersection of the domain with the algebra is thus the complement of a single cone, and the trace of that cone on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the four-dimensional complex isotropic cone on the vector subspace, and a three-dimensional null cone on each sector.
 
-The behaviour of the word at the boundary completes the picture: along a path to the cone of $\mathbb{M}_+$ the scale collapses and the word tends to the minimal idempotent $\tfrac{1}{2}(e_t+\vec\Xi i)$ with $\vec\Xi$ a unit real vector, Hermitian, of norm zero and idempotent. The boundary of the family of boosts is the family of minimal idempotents of the Hermitian subspace, and within $\mathbb{M}_+$ the null cone is the cone over that family: every nonzero null element of the Hermitian half is a real multiple of a Hermitian minimal idempotent.
+The behaviour of the word at the boundary completes the picture: along a path to the cone of $\mathbb{M}_+$ the scale collapses and the word tends to the minimal idempotent $\tfrac{1}{2}(e_t+\vec{Ζ} i)$ with $\vec{Ζ}$ a unit real vector, Hermitian, of norm zero and idempotent. The boundary of the family of boosts is the family of minimal idempotents of the Hermitian subspace, and within $\mathbb{M}_+$ the null cone is the cone over that family: every nonzero null element of the Hermitian half is a real multiple of a Hermitian minimal idempotent.
 
 The failure is of the four-factor word, not of the decomposition. On the cone the two-factor pair survives, with a Hermitian positive semidefinite factor and a partial isometry; the minimal idempotent above is its positive factor up to the scalar. The general statement is *The Polar Decomposition of a Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
@@ -548,7 +548,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

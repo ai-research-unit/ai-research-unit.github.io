@@ -146,7 +146,7 @@ $$
 (T(t)f)(x) = (G_t*f)(x), \qquad G_t(x) = (4\pi t)^{-n/2}\exp(-|x|^2/(4t)),
 $$
 
-a contraction semigroup, analytic of angle $\pi/2$, with the $L^1\to L^\infty$ smoothing bound $\|T(t)f\|_\infty\le(4\pi t)^{-n/2}\|f\|_1$ for $f\in L^1\cap L^2$, which is the regularising property of the heat equation. The explicit kernel $G_t$ is the fundamental solution, and the spectral representation of $A$ by the Fourier transform gives $T(t) = \mathcal{F}^{-1}\exp(-t|\xi|^2)\mathcal{F}$.
+a contraction semigroup, analytic of angle $\pi/2$, with the $L^1\to L^\infty$ smoothing bound $\|T(t)f\|_\infty\le(4\pi t)^{-n/2}\|f\|_1$ for $f\in L^1\cap L^2$, which is the regularising property of the heat equation. The explicit kernel $G_t$ is the fundamental solution, and the spectral representation of $A$ by the Fourier transform gives $T(t) = \mathcal{F}^{-1}\exp(-t|\zeta|^2)\mathcal{F}$.
 
 **Example (the wave group).** The wave equation $\partial^2/\partial t^2 u=\Delta u$ on $\mathbb{R}^n$ can be written as a first-order system for $U=(u,\partial/\partial t u)$:
 

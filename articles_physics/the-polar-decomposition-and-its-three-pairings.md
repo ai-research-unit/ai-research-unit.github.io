@@ -100,9 +100,9 @@ The modulus is an ordinary quaternion in its polar form, and it is the spatial f
 The Hamilton pairing writes the element as a modulus times a complex cosine plus a complex axis times the complex sine:
 
 $$
-\boxed{\;\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
+\boxed{\;\tilde Q=\Rho\bigl(\cos\Theta+\vec{Ζ}\sin\Theta\bigr), \qquad
 \Rho=\sqrt N, \qquad
-\vec\Xi=\frac{\vec Q}{B}, \qquad
+\vec{Ζ}=\frac{\vec Q}{B}, \qquad
 B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$
 
@@ -288,7 +288,7 @@ The pairings read the same data under different headings, and the readings are d
 - Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
-- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
+- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec{Ζ}\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
 - The three first factors have three types — a real quaternion, a central complex scalar, a Hermitian positive element — and only the Hamilton factor is a scalar.
 - The three factors carry $4+2+4=10$ real numbers for an eight-dimensional element; the redundancy is the scale, which all three contain.
@@ -312,7 +312,7 @@ The pairings read the same data under different headings, and the readings are d
 | $\psi$ | the kinematic rapidity; $\psi_w=\psi$ for a transformation and $\psi_w=2\psi$ for a four-vector element |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the real quaternion modulus of the quaternion pairing |
 | $\tilde\Psi=\alpha+\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
-| $\Rho=\sqrt N$, $\vec\Xi$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
+| $\Rho=\sqrt N$, $\vec{Ζ}$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
 | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian sectors |

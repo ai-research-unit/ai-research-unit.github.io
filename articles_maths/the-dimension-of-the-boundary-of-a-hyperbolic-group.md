@@ -14,10 +14,10 @@ The article assumes *Hyperbolic Groups* and *Geometric Group Theory* for the hyp
 
 **Definition.** Let $G$ be a finitely generated group with the word metric $|\cdot|$ of *Hyperbolic Groups*, and let $X$ be the Cayley graph, a proper geodesic hyperbolic space. Two geodesic rays are **equivalent** when they stay at bounded distance, and the **Gromov boundary** $\partial G$ is the set of the equivalence classes, topologised by the neighbourhood base of the sets of rays that stay close to a given ray on a long initial segment. The union $G \cup \partial G$ is compact, and $\partial G$ is a compact metrisable space, nonempty when $G$ is non-elementary; the boundary is a quasi-isometry invariant of $G$.
 
-**Definition (the visual metric).** Fix a base point $o \in X$. For $\xi, \eta \in \partial X$ let $(\xi|\eta) \in (0,\infty]$ be the **Gromov product**, the length of the common initial segment of two rays to $\xi$ and $\eta$; for $\varepsilon > 0$ the **visual metric** is
+**Definition (the visual metric).** Fix a base point $o \in X$. For $\zeta, \eta \in \partial X$ let $(\zeta|\eta) \in (0,\infty]$ be the **Gromov product**, the length of the common initial segment of two rays to $\zeta$ and $\eta$; for $\varepsilon > 0$ the **visual metric** is
 
 $$
-d_\varepsilon(\xi,\eta) = \exp(-\varepsilon (\xi|\eta)) .
+d_\varepsilon(\zeta,\eta) = \exp(-\varepsilon (\zeta|\eta)) .
 $$
 
 The distance $d_\varepsilon$ is compatible with the topology, and there is $\varepsilon_0 > 0$, depending on the hyperbolicity constant, such that $d_\varepsilon$ is a metric for $0 < \varepsilon \leq \varepsilon_0$; when $X$ is a tree the space is $0$-hyperbolic and $d_\varepsilon$ is an ultrametric for every $\varepsilon > 0$. The metrics $d_\varepsilon$ for different $\varepsilon$ are Hölder equivalent and are the members of the **conformal gauge** of the boundary.
@@ -79,10 +79,10 @@ so that the product $\varepsilon \cdot \dim_H(\partial X, d_\varepsilon) = \delt
 **Theorem (the Patterson–Sullivan measure).** For a non-elementary hyperbolic group there is a Borel probability measure $\mu$ on $\partial G$, the **Patterson–Sullivan measure**, supported on the whole boundary, that is Ahlfors $\delta$-regular in the normalised visual metric:
 
 $$
-\mu\bigl(B(\xi,r)\bigr) \asymp r^{\delta} \qquad (0 < r \leq 1) ,
+\mu\bigl(B(\zeta,r)\bigr) \asymp r^{\delta} \qquad (0 < r \leq 1) ,
 $$
 
-for every $\xi \in \partial G$. Consequently the Hausdorff dimension of $\mu$ is $\delta$, and in the cocompact case the dimension of the boundary equals the critical exponent,
+for every $\zeta \in \partial G$. Consequently the Hausdorff dimension of $\mu$ is $\delta$, and in the cocompact case the dimension of the boundary equals the critical exponent,
 
 $$
 \boxed{\;\dim_H \partial G = \delta = \dim_H \mu\;} .
@@ -104,13 +104,13 @@ introduced by Pansu. It is a quasi-isometry invariant of the boundary, and by th
 
 **(a)** The critical exponent is $\delta = \log(2r-1)$.
 
-**(b)** With the visual metric $d(\xi,\eta) = \exp(-(\xi|\eta))$ of the tree, which is an ultrametric, the boundary has Hausdorff dimension
+**(b)** With the visual metric $d(\zeta,\eta) = \exp(-(\zeta|\eta))$ of the tree, which is an ultrametric, the boundary has Hausdorff dimension
 
 $$
 \dim_H(\partial F_r, d) = \log(2r-1) .
 $$
 
-**(c)** With the visual metric normalised so that the child cylinders at each vertex have ratio $1/(2r)$, that is $d_{(2r)}(\xi,\eta) = (2r)^{-(\xi|\eta)}$, the dimension is
+**(c)** With the visual metric normalised so that the child cylinders at each vertex have ratio $1/(2r)$, that is $d_{(2r)}(\zeta,\eta) = (2r)^{-(\zeta|\eta)}$, the dimension is
 
 $$
 \dim_H(\partial F_r, d_{(2r)}) = \frac{\log(2r-1)}{\log(2r)} ,
@@ -130,15 +130,15 @@ which is $\log 3/\log 4 = 0.7925\ldots$ for $r = 2$ and $\log 5/\log 6 = 0.8982\
 
 ## Summary
 
-A hyperbolic group has a Gromov boundary, a compact metric space under the visual metrics $d_\varepsilon(\xi,\eta) = \exp(-\varepsilon(\xi|\eta))$, which form the conformal gauge, and its Hausdorff dimension is governed by the critical exponent $\delta$ of the Poincaré series. The exponent is finite, positive, equal to the exponential growth rate and hence a quasi-isometry invariant, and the dimension formula is $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$, with the value $\delta$ in the normalisation $\varepsilon = 1$; this is the equality $\dim_H \partial G = \delta$ of the cocompact case. The Patterson–Sullivan measure is the Ahlfors $\delta$-regular probability measure on the boundary, so the boundary and the measure have the same dimension in the normalised metric. For the free group $F_r$ the boundary is a Cantor set and $\delta = \log(2r-1)$, giving the dimension $\log(2r-1)$ in the canonical visual metric and $\log(2r-1)/\log(2r)$ in the metric with child ratio $1/(2r)$; for a surface group the boundary is a circle and the dimension is one; for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere and the dimension is two. The unnormalised dimension is not an invariant; the invariants are the critical exponent and the conformal dimension of Pansu, and by the theorem of Paulin and Bourdon the boundary up to quasi-Möbius determines the group up to quasi-isometry. The group theory is that of *Hyperbolic Groups* and *Geometric Group Theory*, the measure is *Analysis on Groups*', the end spaces are those of *Fractal Trees and Dendrites*, and the dimension is that of *Fractal Geometry*.
+A hyperbolic group has a Gromov boundary, a compact metric space under the visual metrics $d_\varepsilon(\zeta,\eta) = \exp(-\varepsilon(\zeta|\eta))$, which form the conformal gauge, and its Hausdorff dimension is governed by the critical exponent $\delta$ of the Poincaré series. The exponent is finite, positive, equal to the exponential growth rate and hence a quasi-isometry invariant, and the dimension formula is $\dim_H(\partial G, d_\varepsilon) = \delta/\varepsilon$, with the value $\delta$ in the normalisation $\varepsilon = 1$; this is the equality $\dim_H \partial G = \delta$ of the cocompact case. The Patterson–Sullivan measure is the Ahlfors $\delta$-regular probability measure on the boundary, so the boundary and the measure have the same dimension in the normalised metric. For the free group $F_r$ the boundary is a Cantor set and $\delta = \log(2r-1)$, giving the dimension $\log(2r-1)$ in the canonical visual metric and $\log(2r-1)/\log(2r)$ in the metric with child ratio $1/(2r)$; for a surface group the boundary is a circle and the dimension is one; for a cocompact Kleinian group acting on hyperbolic three-space the boundary is the sphere and the dimension is two. The unnormalised dimension is not an invariant; the invariants are the critical exponent and the conformal dimension of Pansu, and by the theorem of Paulin and Bourdon the boundary up to quasi-Möbius determines the group up to quasi-isometry. The group theory is that of *Hyperbolic Groups* and *Geometric Group Theory*, the measure is *Analysis on Groups*', the end spaces are those of *Fractal Trees and Dendrites*, and the dimension is that of *Fractal Geometry*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\partial G$, $\partial X$ | Gromov boundary of the group, of the hyperbolic space |
-| $(\xi\lvert\eta)$, $o$ | Gromov product with respect to the base point; the base point |
-| $d_\varepsilon$, conformal gauge | $\exp(-\varepsilon(\xi\lvert\eta))$; the family of the Hölder-equivalent visual metrics |
+| $(\zeta\lvert\eta)$, $o$ | Gromov product with respect to the base point; the base point |
+| $d_\varepsilon$, conformal gauge | $\exp(-\varepsilon(\zeta\lvert\eta))$; the family of the Hölder-equivalent visual metrics |
 | $\delta$ | Critical exponent of the Poincaré series; exponential growth rate |
 | $\sum_g \exp(-s\lvert g\rvert)$ | Poincaré series; its abscissa of convergence is $\delta$ |
 | $\mu$ | Patterson–Sullivan measure; Ahlfors $\delta$-regular |

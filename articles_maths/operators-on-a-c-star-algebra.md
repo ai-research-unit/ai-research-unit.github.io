@@ -107,11 +107,11 @@ $$
 
 ## Examples
 
-**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose, the positive elements are the positive semidefinite matrices, the states are $\omega(a) = \mathrm{tr}(\rho a)$ with $\rho \geq 0$ a density matrix of trace one, and the GNS space of a faithful state is the Hilbert–Schmidt space with $\pi$ the defining action; the pure states are the vector states $\omega(a) = \langle a\xi,\xi\rangle$.
+**Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose, the positive elements are the positive semidefinite matrices, the states are $\omega(a) = \mathrm{tr}(\rho a)$ with $\rho \geq 0$ a density matrix of trace one, and the GNS space of a faithful state is the Hilbert–Schmidt space with $\pi$ the defining action; the pure states are the vector states $\omega(a) = \langle a\zeta,\zeta\rangle$.
 
 **Example (the commutative algebra $C(X)$).** For $A = C(X)$ with $X$ compact Hausdorff and $f^*(x) = \overline{f(x)}$, the positive elements are the nonnegative functions, the states are the probability measures on $X$ by the Riesz representation theorem, and the GNS construction of a point state $\omega(f) = f(x_0)$ produces the one-dimensional representation $f \mapsto f(x_0)$; the direct sum over point states is faithful and isometric, recovering the sup norm.
 
-**Example ($B(H)$ and the vector states).** For $A = B(H)$, every unit vector $\xi$ defines a pure state $\omega_\xi(T) = \langle T\xi,\xi\rangle$ and the GNS representation of $\omega_\xi$ is the identity of $B(H)$ with cyclic vector $\xi$; the normal states are the trace-class ones, whose theory is *Operator Algebras*.
+**Example ($B(H)$ and the vector states).** For $A = B(H)$, every unit vector $\zeta$ defines a pure state $\omega_\zeta(T) = \langle T\zeta,\zeta\rangle$ and the GNS representation of $\omega_\zeta$ is the identity of $B(H)$ with cyclic vector $\zeta$; the normal states are the trace-class ones, whose theory is *Operator Algebras*.
 
 **Example (the compact operators).** For $A = K(H)$ in infinite dimension the algebra has no unit, the states are the functionals $\omega(T) = \mathrm{tr}(\rho T)$ with $\rho$ trace-class positive of trace one, and the GNS construction applies to the unitisation; the identity is not in $K(H)$ and the norm is recovered from the same supremum over states, as it must be by the theorem.
 

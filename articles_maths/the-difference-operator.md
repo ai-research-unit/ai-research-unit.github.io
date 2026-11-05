@@ -153,16 +153,16 @@ $$
 $$
 so the eigenfunctions of the difference operator on the functions on $\mathbb Z$ are the geometric
 sequences, with eigenvalues $r-1$; the fixed points of the difference are the constant sequences, $r=1$. For
-the step-$h$ operator on $\mathbb R$ the exponential $e_\xi(x)=\exp(2\pi i\xi x)$ satisfies
+the step-$h$ operator on $\mathbb R$ the exponential $e_\zeta(x)=\exp(2\pi i\zeta x)$ satisfies
 $$
-\Delta_he_\xi=(\exp(2\pi i\xi h)-1)e_\xi .
+\Delta_he_\zeta=(\exp(2\pi i\zeta h)-1)e_\zeta .
 $$
 
-**Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $\exp(2\pi i\xi(x+h))-\exp(2\pi i\xi x)=(\exp(2\pi i\xi h)-1)\exp(2\pi i\xi x)$.
+**Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $\exp(2\pi i\zeta(x+h))-\exp(2\pi i\zeta x)=(\exp(2\pi i\zeta h)-1)\exp(2\pi i\zeta x)$.
 
 The theorem says that the characters of the group are the eigenfunctions of the difference operator, exactly
 as they were the eigenfunctions of the translation; the difference is that the eigenvalue is now
-$\overline{e_\xi(h)}-1$ for the translation eigenvalue $\overline{e_\xi(h)}$. On a finite group of order
+$\overline{e_\zeta(h)}-1$ for the translation eigenvalue $\overline{e_\zeta(h)}$. On a finite group of order
 $N$ the geometric sequences with $r$ an $N$-th root of unity are periodic, and they form the eigenbasis of
 the periodic difference operator, which is the discrete Fourier transform of *The Fourier Operator* applied
 to the shift.
@@ -267,7 +267,7 @@ $\Delta^ma_n=\sum_j(-1)^{m-j}\binom mj a_{n+j}$, the Leibniz rule holds, and $\D
 the second difference giving the second derivative. Its inverse is the summation $\Sigma$, characterised by
 $\Delta\Sigma=\mathrm{id}$ and $\Sigma\Delta a=a-a_0$, with summation by parts as the discrete integration
 by parts and Abel's and Dirichlet's tests as its consequences. The eigenfunctions are the characters, with
-$\Delta(r^n)=(r-1)r^n$ and $\Delta_he_\xi=(\exp(2\pi i\xi h)-1)e_\xi$, and the Newton expansion recovers a
+$\Delta(r^n)=(r-1)r^n$ and $\Delta_he_\zeta=(\exp(2\pi i\zeta h)-1)e_\zeta$, and the Newton expansion recovers a
 sequence from its differences. Under the Fourier series the difference is multiplication by
 $\exp(2\pi i\theta)-1$, so its spectrum is the circle of centre $-1$ and radius $1$ and it has no eigenvalues
 on $\ell^2(\mathbb Z)$; constant-coefficient difference equations are solved by the transfer function and
@@ -283,7 +283,7 @@ operator whose continuous limit is the Laplacian.
 | $\delta_h$ | Central difference, $\delta_ha(x)=a(x+h/2)-a(x-h/2)$ |
 | $\Delta^m$ | Iterated difference, $\sum_j(-1)^{m-j}\binom mj a_{n+j}$ |
 | $\Sigma$ | Indefinite sum, $(\Sigma a)_n=\sum_{k<n}a_k$ |
-| $r^n$, $e_\xi$ | Eigenfunctions of the difference, eigenvalues $r-1$, $\exp(2\pi i\xi h)-1$ |
+| $r^n$, $e_\zeta$ | Eigenfunctions of the difference, eigenvalues $r-1$, $\exp(2\pi i\zeta h)-1$ |
 | $P(z)$ | Characteristic polynomial of a difference equation |
 | $E=\mathbf 1_{\geq1}$ | Fundamental solution of $\Delta E=\delta$ |
 | $L_h$ | Discrete Laplacian, the lattice second difference |

@@ -202,7 +202,7 @@ $$
 
 induced by the cross product and the multiplication of $H^*(F;R)$. The product on $E_\infty$ induces the cup product on $H^*(E;R)$.
 
-*Proof sketch.* The product is induced by the Eilenberg–Zilber map of *Cup and Cap Products* applied to the filtered complexes: $\Xi$ is compatible with the filtrations because the product of a simplex projecting to $B^{(n)}$ with one projecting to $B^{(n')}$ projects to $B^{(p+n')}$. The Leibniz rule is the derivation property of the differential, and the identification on $E_2$ uses the Künneth theorem of *Cup and Cap Products* for the tensor product of the base's cochains with $H^*(F)$.
+*Proof sketch.* The product is induced by the Eilenberg–Zilber map of *Cup and Cap Products* applied to the filtered complexes: $Ζ$ is compatible with the filtrations because the product of a simplex projecting to $B^{(n)}$ with one projecting to $B^{(n')}$ projects to $B^{(p+n')}$. The Leibniz rule is the derivation property of the differential, and the identification on $E_2$ uses the Künneth theorem of *Cup and Cap Products* for the tensor product of the base's cochains with $H^*(F)$.
 
 **Corollary.** If the coefficient module $H^*(F;R)$ is free over $R$ and the spectral sequence degenerates, then $E_2 = E_\infty = H^*(B;R)\otimes_R H^*(F;R)$ by the universal coefficient theorem, so $H^*(E;R)$ is the associated graded of a filtration of that tensor product, and the edge homomorphisms assemble into the successive quotients of the filtration. For a fibration $F \to E \to B$ with $B$ simply connected and $R$ a field, the multiplicativity of the spectral sequence makes the computation of $H^*(E;R)$ from the $E_2$ page a computation of rings and not merely of groups.
 

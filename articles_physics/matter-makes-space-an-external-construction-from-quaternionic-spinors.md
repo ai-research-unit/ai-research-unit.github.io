@@ -177,7 +177,7 @@ Variation with respect to the multipliers returns $e=e[\Psi]$ and $K=K[\Psi]$, w
 
 **The Dirac equation is not derived from the action either.** Section 5.5 varies with respect to the adjoint, $\Psi^{\dagger}$, writes the constraint's contribution as a sum over the sixteen graded products, $\Gamma_A$ built from the $G_\mu$ and read as arrays,
 $$
-\Xi[\lambda,\Lambda](\Psi)=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\Psi,\,\Gamma_A\partial \Psi/\partial x_\mu\bigr\rangle\,\Gamma_A\partial \Psi/\partial x_\mu ,
+Ζ[\lambda,\Lambda](\Psi)=\sum_A c_A\,\mathrm{Tr}_{\mathbb H}\bigl\langle\Psi,\,\Gamma_A\partial \Psi/\partial x_\mu\bigr\rangle\,\Gamma_A\partial \Psi/\partial x_\mu ,
 $$
 and declares it zero "by orthogonality". Orthogonality does not deliver that: a sum of orthogonal basis elements vanishes only when every coefficient vanishes, and each coefficient vanishing is the statement to be proved. The basis invoked is the sixteen-element one, whose four-element counterpart failed at Eq. (2). Since the Dirac kinetic term is already written into the action by hand, the equation that comes out is the equation that went in; the step's only real task is to show that the constraint term does not spoil it, and that is what the non sequitur leaves undone.
 

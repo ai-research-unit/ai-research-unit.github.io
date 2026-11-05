@@ -115,10 +115,10 @@ $$
 
 The Jacobi identity holds, and for a structural reason: on a surface every trivector field vanishes, since $\Lambda^3TM = 0$ in dimension two, so $[\pi,\pi]=0$ for every bivector and every bivector on a surface is Poisson. Here the bracket is also the Lie–Poisson structure of the two-dimensional nonabelian Lie algebra, whose Jacobi identity is the Jacobi identity of that Lie algebra: on the linear coordinates $\{x,y\} = x$. The rank is two away from the line $x = 0$ and zero on it, the symplectic leaves are the two open half-planes $x>0$, $x<0$ and the individual points of the line $x=0$, and there is no nonconstant Casimir: a Casimir would be constant on each leaf, hence locally constant on the dense open set $x\neq0$, hence locally constant on $M$. This is the simplest example of a Poisson structure that is symplectic off a singular locus.
 
-**Example (Lie–Poisson structures).** Let $\mathrm{G}$ be a finite-dimensional Lie algebra with bracket $[\cdot,\cdot]$, and let $\mathrm{G}^*$ be its dual. For $f \in C^\infty(\mathrm{G}^*)$ and $\xi \in \mathrm{G}^*$ the differential $df_\xi$ is an element of $(\mathrm{G}^*)^* \cong \mathrm{G}$, and one defines
+**Example (Lie–Poisson structures).** Let $\mathrm{G}$ be a finite-dimensional Lie algebra with bracket $[\cdot,\cdot]$, and let $\mathrm{G}^*$ be its dual. For $f \in C^\infty(\mathrm{G}^*)$ and $\zeta \in \mathrm{G}^*$ the differential $df_\zeta$ is an element of $(\mathrm{G}^*)^* \cong \mathrm{G}$, and one defines
 
 $$
-\{f, g\}(\xi) = \langle \xi, [df_\xi, dg_\xi]\rangle .
+\{f, g\}(\zeta) = \langle \zeta, [df_\zeta, dg_\zeta]\rangle .
 $$
 
 The Jacobi identity for this bracket is exactly the Jacobi identity of $\mathrm{G}$, and the resulting structure is the **Lie–Poisson structure** on $\mathrm{G}^*$. On linear coordinates $\{x_i, x_j\} = \sum_k c_{kij}x_k$, where $c_{kij}$ are the structure constants; the structure is **linear**, and a linear Poisson structure on $\mathrm{G}^*$ is the same thing as a Lie algebra structure on $\mathrm{G}$. The symplectic leaves are the coadjoint orbits, and the symplectic form on each orbit is the Kirillov–Kostant–Souriau form of *Symplectic Geometry*; the Casimirs are the invariants of the coadjoint representation. The Lie algebras and their structure constants are those of Part I, and the coadjoint action those of *Lie Groups*.
@@ -232,7 +232,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 | Casimir | $f$ with $\{f,g\}=0$ for all $g$; centre of $C^\infty(M)$ |
 | Symplectic leaf | Orbit under the Hamiltonian flows; carries a symplectic form |
 | $(q_i, p_i, y_j)$ | Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\phi_{jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$ |
-| $\mathrm{G}^*$, $\{f,g\}(\xi)=\langle\xi,[df,dg]\rangle$ | Lie–Poisson structure on the dual of a Lie algebra |
+| $\mathrm{G}^*$, $\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle$ | Lie–Poisson structure on the dual of a Lie algebra |
 | Poisson map $F$ | $\{f\circ F, g\circ F\} = \{f,g\}\circ F$ |
 | Coisotropic submanifold | Vanishing ideal closed under the bracket; $\pi^{\sharp}(TC^{\circ})\subseteq TC$ |
 | $d_\pi = [\pi,\cdot]$, $H^\bullet_\pi(M)$ | Poisson differential and Poisson cohomology |

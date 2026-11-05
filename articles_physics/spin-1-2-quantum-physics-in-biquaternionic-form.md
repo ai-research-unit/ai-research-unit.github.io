@@ -171,7 +171,7 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 3. **Normalised:** $\langle\tilde\Pi_{1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the trace reads this as $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
 4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
-**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
+**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
 
 **Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 

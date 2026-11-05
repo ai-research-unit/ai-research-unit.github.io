@@ -25,7 +25,7 @@ The dual group, its functoriality and its topology, the exchange of compactness 
 
 **Theorem (topology of the dual).** $G^\vee$ is locally compact abelian and the evaluation pairing $G \times G^\vee \to S^1$ is continuous. If $G$ is compact then $G^\vee$ is discrete; if $G$ is discrete then $G^\vee$ is compact.
 
-**Example (the standard duals).** $\mathbb{R}^\vee \cong \mathbb{R}$ through $\chi_\xi(x) = \exp(2\pi i \xi x)$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; $T^n{}^\vee \cong \mathbb{Z}^n$; $\mathbb{Q}_p{}^\vee \cong \mathbb{Q}_p$ and $\mathbb{Z}_p{}^\vee \cong \mu_{p^\infty}$. For a finite abelian group $G$ the dual has the same order as $G$, and after a choice of roots of unity $G \cong G^\vee$, non-canonically.
+**Example (the standard duals).** $\mathbb{R}^\vee \cong \mathbb{R}$ through $\chi_\zeta(x) = \exp(2\pi i \zeta x)$; $(S^1)^\vee \cong \mathbb{Z}$; $\mathbb{Z}^\vee \cong S^1$; $T^n{}^\vee \cong \mathbb{Z}^n$; $\mathbb{Q}_p{}^\vee \cong \mathbb{Q}_p$ and $\mathbb{Z}_p{}^\vee \cong \mu_{p^\infty}$. For a finite abelian group $G$ the dual has the same order as $G$, and after a choice of roots of unity $G \cong G^\vee$, non-canonically.
 
 The characters of the additive groups of the number systems are the frequencies of the per-system transforms of Part V, and the identifications above are the ones those articles use.
 
@@ -39,10 +39,10 @@ $$
 (\mathcal F f)(\chi) = \int_G f(x)\,\overline{\chi(x)}\,dx, \qquad \chi \in G^\vee ,
 $$
 
-and for a finite positive measure $\mu$ on $G$ the **Fourier–Stieltjes transform** is $\hat\mu(\chi) = \int_G \overline{\chi(x)}\,d\mu(x)$. When $G$ is written additively and identified with $\mathbb{R}^n$ this is the classical transform with the normalisation of *Fourier Analysis on Euclidean Spaces*: for $G = \mathbb{R}^n$ and $\chi_\xi(x) = \exp(2\pi i\langle\xi, x\rangle)$,
+and for a finite positive measure $\mu$ on $G$ the **Fourier–Stieltjes transform** is $\hat\mu(\chi) = \int_G \overline{\chi(x)}\,d\mu(x)$. When $G$ is written additively and identified with $\mathbb{R}^n$ this is the classical transform with the normalisation of *Fourier Analysis on Euclidean Spaces*: for $G = \mathbb{R}^n$ and $\chi_\zeta(x) = \exp(2\pi i\langle\zeta, x\rangle)$,
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{R}^n} f(x)\,\exp(-2\pi i\langle\xi,x\rangle)\,dx ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{R}^n} f(x)\,\exp(-2\pi i\langle\zeta,x\rangle)\,dx ,
 $$
 
 with no factor of $(2\pi)^{n/2}$; the $2\pi$ is carried by the character. The convention is the one of *Pontryagin Duality*, §Characters and the Dual Group, and it is held for the whole category.
@@ -59,7 +59,7 @@ with no factor of $(2\pi)^{n/2}$; the $2\pi$ is carried by the character. The co
 
 **Proof.** (a) is linearity of the integral and $|(\mathcal F f)(\chi)| \leq \int |f|$. (b) The continuity of the integral under translation of the variable in the group is the continuity of translation in $L^1(G)$: $\|f_{x} - f\|_1 \to 0$ as $x \to 0$, which follows from the density of $C_c(G)$ in $L^1(G)$ and the uniform continuity of a compactly supported function. Uniform continuity of $\mathcal F f$ follows, since $|(\mathcal F f)(\chi) - (\mathcal F f)(\chi')| \leq \| f - f \cdot (\chi' \bar\chi) \|_1$ and $\chi'\bar\chi \to 1$ uniformly on compacta. The vanishing at infinity reduces, by density of $C_c(G)$ in $L^1(G)$, to the case of a continuous compactly supported $f$, where $\mathcal F f$ is the Fourier transform of a compactly supported function; if the support of $f$ has small measure and $\|f\|_\infty$ is bounded, then $|(\mathcal F f)(\chi)|$ is small uniformly in $\chi$ unless $\chi$ is near $1$, and off a compact set of characters the oscillation kills the integral. The standard proof is in *Fourier Analysis on Euclidean Spaces* for the case $G = \mathbb{R}^n$ and in the references below for the general case; it is quoted as standard. (c) and (d) are changes of variable.
 
-**Corollary (the transform of a dilation and of a derivative).** On $G = \mathbb{R}$ one has $\widehat{f(ax)}(\xi) = |a|^{-1}(\mathcal F f)(\xi/a)$ for $a \neq 0$, and if $f$ is absolutely continuous with $\frac{df}{dx} \in L^1$ then $\widehat{\frac{df}{dx}}(\xi) = 2\pi i \xi (\mathcal F f)(\xi)$. On $\mathbb{R}^n$ the corresponding statements hold componentwise, and differentiation is turned into multiplication by the character's infinitesimal generator.
+**Corollary (the transform of a dilation and of a derivative).** On $G = \mathbb{R}$ one has $\widehat{f(ax)}(\zeta) = |a|^{-1}(\mathcal F f)(\zeta/a)$ for $a \neq 0$, and if $f$ is absolutely continuous with $\frac{df}{dx} \in L^1$ then $\widehat{\frac{df}{dx}}(\zeta) = 2\pi i \zeta (\mathcal F f)(\zeta)$. On $\mathbb{R}^n$ the corresponding statements hold componentwise, and differentiation is turned into multiplication by the character's infinitesimal generator.
 
 ### Convolution and the Convolution Theorem
 
@@ -131,7 +131,7 @@ The inversion theorem does not determine $d\chi$ alone but only after $dx$ is fi
 
 **Proposition (normalisation).** Let $dx$ be a fixed Haar measure on $G$. There is a unique Haar measure $d\chi$ on $G^\vee$ for which inversion and Plancherel hold. If $dx$ is replaced by $c\,dx$, $c > 0$, then $d\chi$ is replaced by $c^{-1}d\chi$, and the product of the two total masses is $1$ whenever both groups are compact.
 
-**Example.** On $\mathbb{R}$ with $dx$ Lebesgue measure, the dual is $\mathbb{R}$ with $d\xi$ Lebesgue measure and $\chi_\xi(x) = \exp(2\pi i \xi x)$; the inversion formula $(\mathcal F f)(\xi) = \int f(x)\exp(-2\pi i\xi x)dx$, $f(x) = \int (\mathcal F f)(\xi)\exp(2\pi i\xi x)d\xi$ holds. On $S^1$ with the normalised measure $d\theta$ of total mass $1$, the dual is $\mathbb{Z}$ with counting measure: $(\mathcal F f)(n) = \int_0^1 f(\theta)\exp(-2\pi i n\theta)d\theta$ and $f(\theta) = \sum_{n\in\mathbb{Z}}(\mathcal F f)(n)\exp(2\pi i n\theta)$. On a finite abelian group with the normalised counting measure $|G|^{-1}\sum_x$, the dual carries counting measure: $(\mathcal F f)(\chi) = |G|^{-1}\sum_x f(x)\overline{\chi(x)}$, $f(x) = \sum_\chi (\mathcal F f)(\chi)\chi(x)$, the discrete Fourier transform and its inversion. On a compact group with normalised Haar measure, the dual is discrete with counting measure; on a discrete group with counting measure, the dual is compact with Haar measure of total mass $1$. These are the four faces of one statement, and they are worked out system by system in the harmonic-analysis slots of Part V.
+**Example.** On $\mathbb{R}$ with $dx$ Lebesgue measure, the dual is $\mathbb{R}$ with $d\zeta$ Lebesgue measure and $\chi_\zeta(x) = \exp(2\pi i \zeta x)$; the inversion formula $(\mathcal F f)(\zeta) = \int f(x)\exp(-2\pi i\zeta x)dx$, $f(x) = \int (\mathcal F f)(\zeta)\exp(2\pi i\zeta x)d\zeta$ holds. On $S^1$ with the normalised measure $d\theta$ of total mass $1$, the dual is $\mathbb{Z}$ with counting measure: $(\mathcal F f)(n) = \int_0^1 f(\theta)\exp(-2\pi i n\theta)d\theta$ and $f(\theta) = \sum_{n\in\mathbb{Z}}(\mathcal F f)(n)\exp(2\pi i n\theta)$. On a finite abelian group with the normalised counting measure $|G|^{-1}\sum_x$, the dual carries counting measure: $(\mathcal F f)(\chi) = |G|^{-1}\sum_x f(x)\overline{\chi(x)}$, $f(x) = \sum_\chi (\mathcal F f)(\chi)\chi(x)$, the discrete Fourier transform and its inversion. On a compact group with normalised Haar measure, the dual is discrete with counting measure; on a discrete group with counting measure, the dual is compact with Haar measure of total mass $1$. These are the four faces of one statement, and they are worked out system by system in the harmonic-analysis slots of Part V.
 
 ## The Algebra of the Transform
 
@@ -163,7 +163,7 @@ $$
 
 The measure is unique, and $\varphi(0) = \mu(G^\vee) = \|\mu\|$.
 
-**Proof sketch.** If $\varphi$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\varphi = \int\int f(x)\overline{g(y)}\varphi(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\varphi$ on which $G$ acts unitarily by translation, and the vector $\xi = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\xi$ is the measure $\mu$, and evaluation at $\xi$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.
+**Proof sketch.** If $\varphi$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\varphi = \int\int f(x)\overline{g(y)}\varphi(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\varphi$ on which $G$ acts unitarily by translation, and the vector $\zeta = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\zeta$ is the measure $\mu$, and evaluation at $\zeta$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below.
 
 **Corollary (Herglotz and the Wiener–Khinchin theorem).** On $\mathbb{Z}$ a positive-definite sequence is the sequence of Fourier coefficients of a positive measure on the circle; on $\mathbb{R}$ the autocorrelation $R(\tau) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^T f(t+\tau)\overline{f(t)}\,dt$ of a stationary square-integrable process has a positive spectral measure, and the transform of that measure is $R$. The probabilistic reading of Bochner's theorem is the spectral theory of stationary processes.
 
@@ -171,7 +171,7 @@ The measure is unique, and $\varphi(0) = \mu(G^\vee) = \|\mu\|$.
 
 ### The Line and Euclidean Space
 
-For $G = \mathbb{R}^n$ the theory is the classical one: $(\mathcal F f)(\xi) = \int f(x)\exp(-2\pi i\langle\xi,x\rangle)dx$, inversion holds for $f \in L^1$ with $\mathcal F f \in L^1$, and Plancherel extends the transform to a unitary operator on $L^2(\mathbb{R}^n)$. The Schwartz space $\mathcal{S}(\mathbb{R}^n)$ is invariant, the transform interchanges multiplication by $x^\alpha$ with $(-2\pi i)^{|\alpha|}\partial^\alpha$ up to signs, and it extends to the tempered distributions. The theory is developed in *Fourier Analysis on Euclidean Spaces*, and the $n$-dimensional cases of the per-system articles are its restriction to the additive group of each algebra.
+For $G = \mathbb{R}^n$ the theory is the classical one: $(\mathcal F f)(\zeta) = \int f(x)\exp(-2\pi i\langle\zeta,x\rangle)dx$, inversion holds for $f \in L^1$ with $\mathcal F f \in L^1$, and Plancherel extends the transform to a unitary operator on $L^2(\mathbb{R}^n)$. The Schwartz space $\mathcal{S}(\mathbb{R}^n)$ is invariant, the transform interchanges multiplication by $x^\alpha$ with $(-2\pi i)^{|\alpha|}\partial^\alpha$ up to signs, and it extends to the tempered distributions. The theory is developed in *Fourier Analysis on Euclidean Spaces*, and the $n$-dimensional cases of the per-system articles are its restriction to the additive group of each algebra.
 
 ### The Circle, the Torus and the Integers
 
@@ -195,7 +195,7 @@ and Plancherel reads $\sum_x|f(x)|^2 = |G|\sum_\chi|(\mathcal F f)(\chi)|^2$ und
 
 ### The $p$-adic Line
 
-For $G = \mathbb{Q}_p$ the dual is $\mathbb{Q}_p$ through the standard additive character $\chi_\xi(x) = \exp(2\pi i \{\xi x\}_p)$, where $\{\cdot\}_p$ is the fractional part with values in $\mathbb{Z}[1/p]/\mathbb{Z} \subset \mathbb{Q}/\mathbb{Z}$, and the dual Haar measure is normalised so that $\mathbb{Z}_p$ and its dual both have measure $1$. The transform is the $p$-adic Fourier transform, and its analysis — the radius of convergence, the role of the residue field, the analogue of the Schwartz class — is the subject of the Analysis on Rings and Fields slot, together with the p-adic theory. The group-theoretic input is the present section, and it is the exact analogue of the real case.
+For $G = \mathbb{Q}_p$ the dual is $\mathbb{Q}_p$ through the standard additive character $\chi_\zeta(x) = \exp(2\pi i \{\zeta x\}_p)$, where $\{\cdot\}_p$ is the fractional part with values in $\mathbb{Z}[1/p]/\mathbb{Z} \subset \mathbb{Q}/\mathbb{Z}$, and the dual Haar measure is normalised so that $\mathbb{Z}_p$ and its dual both have measure $1$. The transform is the $p$-adic Fourier transform, and its analysis — the radius of convergence, the role of the residue field, the analogue of the Schwartz class — is the subject of the Analysis on Rings and Fields slot, together with the p-adic theory. The group-theoretic input is the present section, and it is the exact analogue of the real case.
 
 ## The Obstruction for Non-Abelian Groups
 
@@ -253,7 +253,7 @@ The standard cases are the Fourier transform of $\mathbb{R}^n$, the Fourier seri
 | unimodular | $\Delta \equiv 1$; left Haar measure is right-invariant |
 | $S^1 = \mathbb{R}/\mathbb{Z}$ | The circle group |
 | $\chi$, $G^\vee$ | Character $G \to S^1$; dual group with compact-open topology |
-| $\mathbb{R}^\vee \cong \mathbb{R}$, $\chi_\xi(x) = \exp(2\pi i\xi x)$ | Characters of $\mathbb{R}^n$ |
+| $\mathbb{R}^\vee \cong \mathbb{R}$, $\chi_\zeta(x) = \exp(2\pi i\zeta x)$ | Characters of $\mathbb{R}^n$ |
 | $\operatorname{Irr}(G)$ | Unitary dual of a non-abelian group |
 | $(\mathcal F f)(\chi) = \int_G f(x)\overline{\chi(x)}\,dx$ | Fourier transform on an abelian group |
 | $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)\,dg$ | Operator-valued transform on a non-abelian group |

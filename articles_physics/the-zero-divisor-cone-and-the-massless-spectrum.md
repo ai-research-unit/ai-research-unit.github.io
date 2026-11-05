@@ -130,10 +130,10 @@ The first factor has a name and a geometry. The directions of the cone are the *
 The factorisation is one line. A null element of the material sector, multiplied by $-i$, is a positive rank-one Hermitian element, and a positive rank-one element is a spinor times its conjugate:
 
 $$
-\tilde P=i\,\xi\xi^{\dagger},\qquad \xi\in\mathbb{C}^2,\qquad \xi\neq0.
+\tilde P=i\,\zeta\zeta^{\dagger},\qquad \zeta\in\mathbb{C}^2,\qquad \zeta\neq0.
 $$
 
-The direction of $\tilde P$ depends on $\xi$ only through its ray, so the phase of the spinor is not a cone datum. The helicity is the weight of that phase under the little group, and the two helicities of a massless field are the two weights. The cone therefore supplies the ray and the little group supplies the weight; the **value** of the spin is neither. It is a datum of the Lorentz type of the field, and the gauge symmetry is what removes the lower helicities of a higher-rank carrier, as the photon, graviton and Rarita–Schwinger articles show.
+The direction of $\tilde P$ depends on $\zeta$ only through its ray, so the phase of the spinor is not a cone datum. The helicity is the weight of that phase under the little group, and the two helicities of a massless field are the two weights. The cone therefore supplies the ray and the little group supplies the weight; the **value** of the spin is neither. It is a datum of the Lorentz type of the field, and the gauge symmetry is what removes the lower helicities of a higher-rank carrier, as the photon, graviton and Rarita–Schwinger articles show.
 
 That division is the article's reading of the word *spectrum*. The cone is the part of the spectrum that the algebra derives; the spin and the gauge structure are the part it imports. The boundary is exact: **the cone derives no spin and no particle content.** It marks the massless shell and organises the directions, and every massless field of the corpus uses the same marking.
 
@@ -290,7 +290,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
 | $-m^2c^2$ | the mass-shell level of the four-momentum norm |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |
-| $\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\xi\xi^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |
+| $\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\zeta\zeta^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$ | the plain algebra and the plain sesqualgebra |
 
 ## Further Reading

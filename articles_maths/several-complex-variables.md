@@ -19,7 +19,7 @@ the unit ball is $B^n = \{Q : \langle Q_1\rangle_{*} + \cdots + \langle Q_n\rang
 
 ### Holomorphy and the Cauchy–Riemann Equations
 
-**Definition.** Let $\Xi \subseteq \mathbb{C}^n$ be open. A function $f : \Xi \to \mathbb{C}$ is **holomorphic** if it is complex differentiable at every point, that is, real differentiable with a $\mathbb{C}$-linear differential; equivalently, if it is locally the sum of a convergent power series. The first condition is expressed by the system of Cauchy–Riemann equations
+**Definition.** Let $Ζ \subseteq \mathbb{C}^n$ be open. A function $f : Ζ \to \mathbb{C}$ is **holomorphic** if it is complex differentiable at every point, that is, real differentiable with a $\mathbb{C}$-linear differential; equivalently, if it is locally the sum of a convergent power series. The first condition is expressed by the system of Cauchy–Riemann equations
 
 $$
 \frac{\partial f}{\partial \bar Q_j} = 0, \qquad j = 1, \dots, n ,
@@ -105,7 +105,7 @@ The domain $D$ is **holomorphically convex** if $\hat K_D$ is compact in $D$ for
 
 ### Plurisubharmonic Functions
 
-**Definition.** An upper semicontinuous function $\varphi : \Xi \to [-\infty, \infty)$ on an open $\Xi \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $Q \in \Xi$ and $B \in \mathbb{C}^n$ the function $\varkappa^{\mathrm{crd}} \mapsto \varphi(Q + \varkappa^{\mathrm{crd}} B)$ of the complex variable $\varkappa^{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
+**Definition.** An upper semicontinuous function $\varphi : Ζ \to [-\infty, \infty)$ on an open $Ζ \subseteq \mathbb{C}^n$ is **plurisubharmonic** if for every $Q \in Ζ$ and $B \in \mathbb{C}^n$ the function $\varkappa^{\mathrm{crd}} \mapsto \varphi(Q + \varkappa^{\mathrm{crd}} B)$ of the complex variable $\varkappa^{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its **Levi form**
 
 $$
 L\varphi(Q; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial Q_j \partial \bar Q_k}(Q)\, B_j \bar B_k
@@ -168,7 +168,7 @@ for a suitable plurisubharmonic weight $\varphi$. For $m = 1$ the equation $\bar
 
 ### The Cousin Problems
 
-**Definition.** The **first Cousin problem** (additive) asks, given a domain $D$ and an open cover $\{\Xi_i\}$ with holomorphic functions $f_{ij}$ on $\Xi_i \cap \Xi_j$ satisfying the cocycle conditions, for holomorphic $f_i$ on $\Xi_i$ with $f_i - f_j = f_{ij}$. The **second Cousin problem** (multiplicative) asks the same question with the additive cocycle replaced by a nowhere-vanishing multiplicative one, $f_i/f_j = f_{ij}$.
+**Definition.** The **first Cousin problem** (additive) asks, given a domain $D$ and an open cover $\{Ζ_i\}$ with holomorphic functions $f_{ij}$ on $Ζ_i \cap Ζ_j$ satisfying the cocycle conditions, for holomorphic $f_i$ on $Ζ_i$ with $f_i - f_j = f_{ij}$. The **second Cousin problem** (multiplicative) asks the same question with the additive cocycle replaced by a nowhere-vanishing multiplicative one, $f_i/f_j = f_{ij}$.
 
 **Theorem.** On a domain of holomorphy the first Cousin problem is always solvable. The second Cousin problem is solvable if and only if the class of the cocycle in $H^1(D, \mathcal{O}^*)$ vanishes, and in the equivalence-class form the obstruction is the image of the class under the connecting map
 
@@ -291,7 +291,7 @@ The local and global problems of the theory are governed by the $\bar\partial$-e
 | $L\varphi$ | Levi form of $\varphi$ |
 | $H^{n,m}_{\bar\partial}(D)$ | Dolbeault cohomology |
 | $H^q(X, \mathcal{F})$ | Sheaf cohomology |
-| $\Xi_i \cap \Xi_j$, $f_{ij}$ | Cousin data, additive or multiplicative |
+| $Ζ_i \cap Ζ_j$, $f_{ij}$ | Cousin data, additive or multiplicative |
 | $\operatorname{PU}(n,1)$ | Automorphism group of the ball |
 
 ## Further Reading

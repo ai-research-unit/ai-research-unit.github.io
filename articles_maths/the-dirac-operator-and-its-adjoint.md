@@ -48,7 +48,7 @@ the divergence term vanishing on a closed manifold; hence $D$ is **formally self
 
 **Theorem.** On a closed spin manifold the Cauchy–Riemann operator is self-adjoint as an unbounded operator on $L^{2}(\mathcal{S})$ with domain the Sobolev space $H^{1}(\mathcal{S})$; its spectrum is real and discrete, its eigenspinors form a complete orthonormal basis, and its square satisfies $D^{2}\geq0$ with $\ker D=\ker D^{2}$ the space of harmonic spinors.
 
-**Proof.** The formal self-adjointness of the preceding theorem and the ellipticity of $D$, whose symbol $\sigma_D(\xi)=i\,c(\xi)$ is invertible for $\xi\neq0$, make $D$ a closed self-adjoint operator with compact resolvent on the closed manifold; the completeness is the spectral theorem for self-adjoint operators with compact resolvent, and $D^{2}\geq0$ because $D$ is self-adjoint. The equivalence $\ker D=\ker D^{2}$ is $(D^{2}s,s)=\|Ds\|^{2}$. The domain theory is that of *The L2 Adjoint of a Differential Operator* and of *Dirac Operators with Hermitian Adjoint*.
+**Proof.** The formal self-adjointness of the preceding theorem and the ellipticity of $D$, whose symbol $\sigma_D(\zeta)=i\,c(\zeta)$ is invertible for $\zeta\neq0$, make $D$ a closed self-adjoint operator with compact resolvent on the closed manifold; the completeness is the spectral theorem for self-adjoint operators with compact resolvent, and $D^{2}\geq0$ because $D$ is self-adjoint. The equivalence $\ker D=\ker D^{2}$ is $(D^{2}s,s)=\|Ds\|^{2}$. The domain theory is that of *The L2 Adjoint of a Differential Operator* and of *Dirac Operators with Hermitian Adjoint*.
 
 **Theorem (spectral symmetry).** In even dimensions the chirality $\tau$ anticommutes with the operator, $\tau D\tau^{-1}=-D$, so the spectrum is symmetric about the origin: if $D s=\lambda s$ then $D(\tau s)=-\lambda(\tau s)$, and the nonzero eigenvalues occur in pairs $\pm\lambda$ with eigenspinors exchanged by the chirality; the kernel is graded by $\tau$ into the two chiral zero-mode spaces.
 
@@ -149,7 +149,7 @@ The differential-geometric self-adjointness is the analytic shadow of the algebr
 
 ## Examples
 
-**Example (the flat torus).** On the flat torus $T^{n}$ with the product spin structure the spinor bundle is trivial and the operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial/\partial x_i$; it is self-adjoint, its adjoint is itself, its spectrum is the set of $\pm|\xi|$ for the Fourier modes $\xi$, and the nonzero eigenvalues occur in opposite pairs; the kernels of $D^{\pm}$ have equal dimension and the index vanishes, as the $\hat A$-genus of a flat torus does.
+**Example (the flat torus).** On the flat torus $T^{n}$ with the product spin structure the spinor bundle is trivial and the operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial/\partial x_i$; it is self-adjoint, its adjoint is itself, its spectrum is the set of $\pm|\zeta|$ for the Fourier modes $\zeta$, and the nonzero eigenvalues occur in opposite pairs; the kernels of $D^{\pm}$ have equal dimension and the index vanishes, as the $\hat A$-genus of a flat torus does.
 
 **Example (the round sphere).** On $S^{n}$ with the round metric the operator is self-adjoint with $\tau D\tau^{-1}=-D$, so its spectrum is symmetric; the square is the Lichnerowicz Laplacian with the constant positive scalar curvature, and the vanishing theorem gives the absence of harmonic spinors; the adjoint of $D^{+}$ is $D^{-}$ and the index is zero.
 
@@ -171,7 +171,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

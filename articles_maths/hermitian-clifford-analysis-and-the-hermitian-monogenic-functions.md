@@ -221,8 +221,8 @@ Decomposition*; the dimension count of the Hermitian monogenic pieces is recorde
 *Clifford Analysis*.
 
 **Remark (the operator, split).** Read as an operator, the Hermitian refinement replaces the single
-operator $D$ by the pair, replaces the single symbol by the pair of symbols $c(\sum_jf_j\xi_{z_j})$
-and $c(\sum_jf_j^{*}\xi_{\bar z_j})$, and replaces the factorisation $D^2=-\Delta$ by the
+operator $D$ by the pair, replaces the single symbol by the pair of symbols $c(\sum_jf_j\zeta_{z_j})$
+and $c(\sum_jf_j^{*}\zeta_{\bar z_j})$, and replaces the factorisation $D^2=-\Delta$ by the
 anticommutation relation $\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta$. The whole
 of the refinement — integral formulae, boundary values, module structure — rests on the last
 identity, and it is the two-operator case of the matrix device that *Clifford Analysis* records for

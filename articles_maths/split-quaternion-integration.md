@@ -244,7 +244,7 @@ is a distribution of degree zero supported on the null cone; in the standard reg
 
 **Proof.** The convergence of the principal value is the homogeneity of $\langle\cdot\rangle_{\natural}$ of degree two and the oddness of the integrand about the origin; the support statement follows because the two sides agree off the null cone, and the identification of the correction with a multiple of $\delta$ in the standard regularisations is the computation of *Distributions and Fundamental Solutions*.
 
-**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\mathcal F E_D = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$ is displayed; the factor $1/\langle \xi\rangle_{\natural}$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
+**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\mathcal F E_D = \zeta/(2\pi\mathrm{i}\langle \zeta\rangle_{\natural})$ is displayed; the factor $1/\langle \zeta\rangle_{\natural}$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
 
 **Proof.** Combine the displayed transform with the definition of the principal value above.
 

@@ -38,7 +38,7 @@ The measurable spaces are the ones on which the integral is available, and their
 | $W^{k,n}(\Omega)$, $W^{k,n}_0(\Omega)$ | $\lVert f\rVert_{W^{k,n}}^p = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_p^p$; a Banach space, hence complete | *Sobolev Spaces and Weak Solutions* |
 | $H^k(\Omega) = W^{k,2}(\Omega)$ | the inner product $\sum_{\lvert\gamma\rvert\leq k}\langle\partial^\gamma f,\partial^\gamma g\rangle$; a Hilbert space | *Sobolev Spaces and Weak Solutions* |
 | $H^{-1}(\Omega)$ | the operator norm in the dual of $H^1_0(\Omega)$; complete | *Sobolev Spaces and Weak Solutions* |
-| $H^s(\mathbb R^n)$, $s \in \mathbb R$ | $\lVert f\rVert_{H^s}^2 = \int(1+\lvert\xi\rvert^2)^s\lvert(\mathcal F f)(\xi)\rvert^2 d\xi$; complete | *Fourier Analysis on Euclidean Spaces* |
+| $H^s(\mathbb R^n)$, $s \in \mathbb R$ | $\lVert f\rVert_{H^s}^2 = \int(1+\lvert\zeta\rvert^2)^s\lvert(\mathcal F f)(\zeta)\rvert^2 d\zeta$; complete | *Fourier Analysis on Euclidean Spaces* |
 | $H^{s}_{n}$, Bessel-potential space | $\lVert f\rVert = \lVert(1-\Delta)^{s/2}f\rVert_p$; complete | *Interpolation Theory* |
 | $C^{k,\alpha}$, Hölder space | $\lVert f\rVert = \sum_{\lvert\gamma\rvert\leq k}\lVert\partial^\gamma f\rVert_\infty + \sup_{x\neq y}\frac{\lvert\partial^\gamma f(x)-\partial^\gamma f(y)\rvert}{\lvert x-y\rvert^\alpha}$; complete | *Besov and Triebel–Lizorkin Spaces* |
 | $\Lambda^s = C^s$, Hölder–Zygmund space | the Besov norm $B^s_{\infty,\infty}$; complete | *Besov and Triebel–Lizorkin Spaces* |

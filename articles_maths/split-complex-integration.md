@@ -149,7 +149,7 @@ $$
 
 **Proof.** Expanding, $\bar D D = (\partial/\partial q + j\partial/\partial q')(\partial/\partial q - j\partial/\partial q') = \partial^2/\partial q^2 - j^2 \partial^2/\partial q'^2 = \partial^2/\partial q^2 - \partial^2/\partial q'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial Q_+\partial Q_- = \tfrac14(\partial^2/\partial q^2 - \partial^2/\partial q'^2)$.
 
-So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
+So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\zeta_1 - j\,\zeta_2$, whose norm is $\zeta_1^2 - \zeta_2^2$, so it is a unit off the two lines $\zeta_1 = \pm\zeta_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
 ### The Cauchy–Riemann Equations
 

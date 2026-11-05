@@ -173,10 +173,10 @@ This is the **complex eikonal** of complexified Minkowski space. It is first ord
 
 The eikonal has a second reading that ties it to the corpus's operator, and the tie is exact.
 
-The principal symbol of $\tilde\nabla$ at a covector $\xi$ is the matrix $S(\xi)=\sum_{\mu}\xi_\mu\mathsf M_2(e_\mu)$. Its determinant is the norm,
+The principal symbol of $\tilde\nabla$ at a covector $\zeta$ is the matrix $S(\zeta)=\sum_{\mu}\zeta_\mu\mathsf M_2(e_\mu)$. Its determinant is the norm,
 
 $$
-\det S(\xi)=N(\xi)=\sum_{\mu}\xi_\mu^2,
+\det S(\zeta)=N(\zeta)=\sum_{\mu}\zeta_\mu^2,
 $$
 
 because the determinant of the matrix model is the biquaternion norm. The **characteristic set** of $\tilde\nabla$, that is, the set of covectors at which the symbol is singular, is therefore the zero-divisor cone, and the eikonal is the statement that the symbol is singular **at the gradient**:
@@ -310,7 +310,7 @@ Set the two conditions side by side. The comparison is a table of counts, and th
 | Complex equations | four | four |
 | Unknowns | four components of four variables | four components of four variables |
 | Degree in the first derivatives | one | two |
-| Characteristic set | $N(\xi)=0$ | $N(\nabla\Sigma)=0$ |
+| Characteristic set | $N(\zeta)=0$ | $N(\nabla\Sigma)=0$ |
 | Linear in $F$ | yes | no |
 | Solutions obey a linear equation | that equation | yes, $\Box\Sigma=0$ on the twistor class |
 | Solution set | a complex vector space | not a vector space |

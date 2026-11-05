@@ -37,15 +37,15 @@ is a well-defined $G$-equivariant bijection. In particular, if the action is tra
 
 **Definition.** A **Lie group** is a smooth manifold with a group structure for which the multiplication and the inversion are smooth; this is the object of *Lie Groups*, whose theory is used here and not re-derived. A **smooth action** of a Lie group $G$ on a smooth manifold $M$ is a smooth map $G \times M \to M$, $(g, p) \mapsto g\cdot p$, satisfying $e\cdot p = p$ and $(gh)\cdot p = g\cdot(h\cdot p)$.
 
-**Definition.** For $p \in M$ the **orbit map** is $\theta_p : G \to M$, $\theta_p(g) = g\cdot p$; its differential at the identity, composed with the exponential map of *The Lie Algebra and the Exponential Map*, describes the infinitesimal action: the **fundamental vector field** of $\xi \in \mathrm{G}$ is
+**Definition.** For $p \in M$ the **orbit map** is $\theta_p : G \to M$, $\theta_p(g) = g\cdot p$; its differential at the identity, composed with the exponential map of *The Lie Algebra and the Exponential Map*, describes the infinitesimal action: the **fundamental vector field** of $\zeta \in \mathrm{G}$ is
 
 $$
-\xi_M(p) = \left.\frac{d}{dt}\right|_{t=0} \exp(t\xi)\cdot p ,
+\zeta_M(p) = \left.\frac{d}{dt}\right|_{t=0} \exp(t\zeta)\cdot p ,
 $$
 
-a smooth vector field on $M$ whose flow is the one-parameter group $\exp(t\xi)$.
+a smooth vector field on $M$ whose flow is the one-parameter group $\exp(t\zeta)$.
 
-**Theorem.** For a smooth action of a Lie group $G$ on a manifold $M$ and a point $p$, the stabiliser $G_p$ is a closed Lie subgroup of $G$, its Lie algebra is $\mathrm{G}_p = \{\xi \in \mathrm{G} : \xi_M(p) = 0\}$, and the orbit $G\cdot p$ is an immersed submanifold of $M$ with tangent space at $p$ the image of the differential of $\theta_p$, that is $\mathrm{G}/\mathrm{G}_p$.
+**Theorem.** For a smooth action of a Lie group $G$ on a manifold $M$ and a point $p$, the stabiliser $G_p$ is a closed Lie subgroup of $G$, its Lie algebra is $\mathrm{G}_p = \{\zeta \in \mathrm{G} : \zeta_M(p) = 0\}$, and the orbit $G\cdot p$ is an immersed submanifold of $M$ with tangent space at $p$ the image of the differential of $\theta_p$, that is $\mathrm{G}/\mathrm{G}_p$.
 
 **Proof sketch.** The stabiliser is closed as the preimage of $p$ under the continuous orbit map and is a Lie subgroup by the closed subgroup theorem of *Lie Groups*; the tangent claim follows by differentiating $g \mapsto g\cdot p$ at the identity.
 
@@ -137,9 +137,9 @@ a **reductive decomposition** with $\mathrm{M}$ an $\operatorname{Ad}(H)$-invari
 
 **(a)** the metric is complete, and any two points are joined by a minimising geodesic;
 
-**(b)** for a normal homogeneous metric, the geodesics through the identity coset are the curves $t \mapsto \exp(t\xi)H$ for $\xi \in \mathrm{M}$.
+**(b)** for a normal homogeneous metric, the geodesics through the identity coset are the curves $t \mapsto \exp(t\zeta)H$ for $\zeta \in \mathrm{M}$.
 
-**Proof sketch.** Part (a): the group $G$ acts transitively by isometries, so for any geodesic $\gamma$ and any $g$ the translate $g\cdot\gamma$ is a geodesic; every point and every direction is reached from the identity coset, so the exponential map of the metric is defined on all of $T_{eH}(G/H)$, which is completeness by the Hopf–Rinow theorem of *Riemannian Geometry*. Part (b): the one-parameter subgroup $\exp(t\xi)$ gives a curve whose velocity is invariant under left translation, and the invariance of the metric makes it a geodesic, the *canonical connection* of the reductive decomposition having no geodesic terms beyond the group translation; this is the model of the geodesics used for the Grassmannians in *Grassmannians and Stiefel Manifolds*.
+**Proof sketch.** Part (a): the group $G$ acts transitively by isometries, so for any geodesic $\gamma$ and any $g$ the translate $g\cdot\gamma$ is a geodesic; every point and every direction is reached from the identity coset, so the exponential map of the metric is defined on all of $T_{eH}(G/H)$, which is completeness by the Hopf–Rinow theorem of *Riemannian Geometry*. Part (b): the one-parameter subgroup $\exp(t\zeta)$ gives a curve whose velocity is invariant under left translation, and the invariance of the metric makes it a geodesic, the *canonical connection* of the reductive decomposition having no geodesic terms beyond the group translation; this is the model of the geodesics used for the Grassmannians in *Grassmannians and Stiefel Manifolds*.
 
 **Corollary.** A homogeneous Riemannian manifold is complete, its exponential map is surjective, and if $G$ is compact its diameter is finite; the metric is bounded above and below by the metric of the group in the sense that the distance is controlled by the invariant inner product at the base point. For a compact homogeneous space the injectivity radius is positive, by the compactness of the space and the standard lower-bound estimate for the injectivity radius in terms of a curvature bound and the diameter, as in *Riemannian Geometry*.
 
@@ -147,21 +147,21 @@ a **reductive decomposition** with $\mathrm{M}$ an $\operatorname{Ad}(H)$-invari
 
 ### The Lie Algebra Decomposition
 
-**Definition.** For the reductive decomposition $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$, let $p : \mathrm{G} \to \mathrm{M}$ and $p_{\mathrm{H}} : \mathrm{G}\to\mathrm{H}$ be the projections, and define, for $\xi, \eta \in \mathrm{M}$,
+**Definition.** For the reductive decomposition $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$, let $p : \mathrm{G} \to \mathrm{M}$ and $p_{\mathrm{H}} : \mathrm{G}\to\mathrm{H}$ be the projections, and define, for $\zeta, \eta \in \mathrm{M}$,
 
 $$
-[\xi, \eta]_{\mathrm{M}} = p([\xi,\eta]) \in \mathrm{M}, \qquad \text{and} \qquad \Omega_\xi \eta = - \tfrac{1}{2}\,[\xi,\eta]_{\mathrm{M}} + (\text{the symmetric part}),
+[\zeta, \eta]_{\mathrm{M}} = p([\zeta,\eta]) \in \mathrm{M}, \qquad \text{and} \qquad \Omega_\zeta \eta = - \tfrac{1}{2}\,[\zeta,\eta]_{\mathrm{M}} + (\text{the symmetric part}),
 $$
 
 the **canonical connection** (or Nomizu connection) of the reductive decomposition.
 
-**Theorem (Nomizu).** Let $(G/H, g)$ be a homogeneous Riemannian manifold. There is a unique $G$-invariant affine connection $\nabla^c$ on $G/H$, the **canonical connection**, whose torsion is the tensor $T(\xi,\eta) = -[\xi,\eta]_{\mathrm{M}}$ and which is related to the Levi-Civita connection by
+**Theorem (Nomizu).** Let $(G/H, g)$ be a homogeneous Riemannian manifold. There is a unique $G$-invariant affine connection $\nabla^c$ on $G/H$, the **canonical connection**, whose torsion is the tensor $T(\zeta,\eta) = -[\zeta,\eta]_{\mathrm{M}}$ and which is related to the Levi-Civita connection by
 
 $$
-\nabla^c_{\xi}\eta = \nabla^{\mathrm{LC}}_{\xi}\eta + \tfrac{1}{2}\,[\xi,\eta]_{\mathrm{M}} ,
+\nabla^c_{\zeta}\eta = \nabla^{\mathrm{LC}}_{\zeta}\eta + \tfrac{1}{2}\,[\zeta,\eta]_{\mathrm{M}} ,
 $$
 
-for $\xi, \eta \in \mathrm{M}$ extended to invariant vector fields. The canonical connection has parallel curvature and torsion, and it coincides with the Levi-Civita connection if and only if the decomposition satisfies $[\mathrm{M},\mathrm{M}] \subseteq \mathrm{H}$, which is exactly the condition that $(G/H, g)$ be a Riemannian symmetric space.
+for $\zeta, \eta \in \mathrm{M}$ extended to invariant vector fields. The canonical connection has parallel curvature and torsion, and it coincides with the Levi-Civita connection if and only if the decomposition satisfies $[\mathrm{M},\mathrm{M}] \subseteq \mathrm{H}$, which is exactly the condition that $(G/H, g)$ be a Riemannian symmetric space.
 
 **Proof sketch.** The invariance and the skew-symmetry requirements determine the connection uniquely; the comparison with the Levi-Civita connection is the Koszul formula of *Riemannian Geometry* applied to invariant fields, whose structure constants are the brackets of $\mathrm{G}$.
 
@@ -169,23 +169,23 @@ for $\xi, \eta \in \mathrm{M}$ extended to invariant vector fields. The canonica
 
 ### The Curvature Formula
 
-**Theorem (Nomizu).** For a normal homogeneous space $G/H$ with the metric induced from an $\operatorname{Ad}(G)$-invariant inner product $\langle\cdot,\cdot\rangle$ on $\mathrm{G}$, the sectional curvature of the Levi-Civita connection at the identity coset is, for an orthonormal pair $\xi, \eta \in \mathrm{M}$,
+**Theorem (Nomizu).** For a normal homogeneous space $G/H$ with the metric induced from an $\operatorname{Ad}(G)$-invariant inner product $\langle\cdot,\cdot\rangle$ on $\mathrm{G}$, the sectional curvature of the Levi-Civita connection at the identity coset is, for an orthonormal pair $\zeta, \eta \in \mathrm{M}$,
 
 $$
-\boxed{\;K(\xi \wedge \eta) = \tfrac{1}{4}\bigl\|[\xi,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\xi,\eta]_{\mathrm{H}}\bigr\|^2\;} ,
+\boxed{\;K(\zeta \wedge \eta) = \tfrac{1}{4}\bigl\|[\zeta,\eta]_{\mathrm{M}}\bigr\|^2 + \bigl\|[\zeta,\eta]_{\mathrm{H}}\bigr\|^2\;} ,
 $$
 
 where the subscripts denote the components in $\mathrm{M}$ and $\mathrm{H}$. Both terms are nonnegative; the second vanishes when the decomposition satisfies $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{M}$, and the first vanishes when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$. In particular every normal homogeneous space of a compact group has nonnegative sectional curvature.
 
-**Proof sketch.** The metric on $G/H$ is the quotient metric of the Riemannian submersion $G \to G/H$, whose fibres are the orbits of right translation by $H$ and are totally geodesic in the bi-invariant metric of $G$; O'Neill's formula for the submersion, together with the O'Neill tensor $A_\xi\eta = \tfrac12[\xi,\eta]_{\mathrm{H}}$ and the bi-invariant curvature $K_G(\xi,\eta) = \tfrac14\|[\xi,\eta]\|^2$ (verified from the Jacobi identity and the invariance of the inner product, and reducing to the standard formula for the curvature of a bi-invariant metric of Milnor), gives
+**Proof sketch.** The metric on $G/H$ is the quotient metric of the Riemannian submersion $G \to G/H$, whose fibres are the orbits of right translation by $H$ and are totally geodesic in the bi-invariant metric of $G$; O'Neill's formula for the submersion, together with the O'Neill tensor $A_\zeta\eta = \tfrac12[\zeta,\eta]_{\mathrm{H}}$ and the bi-invariant curvature $K_G(\zeta,\eta) = \tfrac14\|[\zeta,\eta]\|^2$ (verified from the Jacobi identity and the invariance of the inner product, and reducing to the standard formula for the curvature of a bi-invariant metric of Milnor), gives
 
 $$
-K_{G/H} = \tfrac14\|[\xi,\eta]\|^2 + \tfrac34\|[\xi,\eta]_{\mathrm{H}}\|^2 = \tfrac14\|[\xi,\eta]_{\mathrm{M}}\|^2 + \|[\xi,\eta]_{\mathrm{H}}\|^2 ,
+K_{G/H} = \tfrac14\|[\zeta,\eta]\|^2 + \tfrac34\|[\zeta,\eta]_{\mathrm{H}}\|^2 = \tfrac14\|[\zeta,\eta]_{\mathrm{M}}\|^2 + \|[\zeta,\eta]_{\mathrm{H}}\|^2 ,
 $$
 
 which is the stated formula.
 
-**Example.** For the Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k)\times O(n-k))$ the decomposition satisfies $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$, so the first term vanishes and the curvature is $\|[\xi,\eta]\|^2 \geq 0$, in agreement with the formula $K = \|[X,Y]\|^2$ of *Grassmannians and Stiefel Manifolds*. For a bi-invariant metric on the group $G$ itself, that is $H = \{e\}$ and $\mathrm{H} = 0$, the second term vanishes and the curvature is $\tfrac14\|[\xi,\eta]\|^2$, the classical value. The different normalisations of an invariant metric change the curvature by a positive factor, and this is the only ambiguity in the curvature of a homogeneous space.
+**Example.** For the Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n) = O(n)/(O(k)\times O(n-k))$ the decomposition satisfies $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$, so the first term vanishes and the curvature is $\|[\zeta,\eta]\|^2 \geq 0$, in agreement with the formula $K = \|[X,Y]\|^2$ of *Grassmannians and Stiefel Manifolds*. For a bi-invariant metric on the group $G$ itself, that is $H = \{e\}$ and $\mathrm{H} = 0$, the second term vanishes and the curvature is $\tfrac14\|[\zeta,\eta]\|^2$, the classical value. The different normalisations of an invariant metric change the curvature by a positive factor, and this is the only ambiguity in the curvature of a homogeneous space.
 
 **Corollary (the sign and the algebra).** A normal homogeneous space has nonnegative sectional curvature, and it is flat exactly when $[\mathrm{M},\mathrm{M}] = 0$, that is, when the complement is abelian; a flat homogeneous space is locally Euclidean, hence a quotient of $\mathbb{R}^n$ by a discrete group of translations by the Bieberbach theory. The curvature of a $G$-invariant, but not normal, metric need not have a sign: unlike the symmetric case, where the sign is determined by the type, a general homogeneous space may have curvature of varying sign, and the classification of the positively curved homogeneous spaces is a separate and delicate problem.
 
@@ -229,7 +229,7 @@ which is the stated formula.
 
 A homogeneous space is a manifold with a transitive group of symmetries, and by the orbit–stabiliser theorem it is the coset space $G/H$ of the group by the stabiliser of a point. When $G$ is a Lie group and $H$ a closed subgroup, $G/H$ is a smooth manifold of dimension $\dim G - \dim H$, the projection $G \to G/H$ is a principal $H$-bundle, the tangent bundle is the associated bundle $G\times_H(\mathrm{G}/\mathrm{H})$, and the isotropy representation of $H$ on $\mathrm{G}/\mathrm{H}$ is the local linear data of the space; every transitive smooth action is of this form, and the sphere, the projective spaces, the Grassmannians, the Stiefel manifolds, the hyperbolic spaces, the Euclidean spaces and the flag manifolds are the standard examples.
 
-A homogeneous space of a compact group carries an invariant Riemannian metric, constructed by averaging against the invariant measure; in general an invariant metric is given by an $\operatorname{Ad}(H)$-invariant inner product on a reductive complement $\mathrm{M}$ of $\mathrm{H}$ in $\mathrm{G}$. Such a metric is complete, and for a normal metric the geodesics through the base point are the one-parameter subgroups $\exp(t\xi)H$; the canonical connection has torsion the component of the bracket in $\mathrm{M}$ and coincides with the Levi-Civita connection exactly when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$, which is the symmetric case. The curvature of a normal homogeneous space is given by the Nomizu formula, $\tfrac14\|[\xi,\eta]_{\mathrm{M}}\|^2 + \|[\xi,\eta]_{\mathrm{H}}\|^2$ for an orthonormal pair, hence is nonnegative and vanishes exactly when $\mathrm{M}$ is abelian; the compact dual of a noncompact symmetric space has the opposite curvature and finite diameter.
+A homogeneous space of a compact group carries an invariant Riemannian metric, constructed by averaging against the invariant measure; in general an invariant metric is given by an $\operatorname{Ad}(H)$-invariant inner product on a reductive complement $\mathrm{M}$ of $\mathrm{H}$ in $\mathrm{G}$. Such a metric is complete, and for a normal metric the geodesics through the base point are the one-parameter subgroups $\exp(t\zeta)H$; the canonical connection has torsion the component of the bracket in $\mathrm{M}$ and coincides with the Levi-Civita connection exactly when $[\mathrm{M},\mathrm{M}]\subseteq\mathrm{H}$, which is the symmetric case. The curvature of a normal homogeneous space is given by the Nomizu formula, $\tfrac14\|[\zeta,\eta]_{\mathrm{M}}\|^2 + \|[\zeta,\eta]_{\mathrm{H}}\|^2$ for an orthonormal pair, hence is nonnegative and vanishes exactly when $\mathrm{M}$ is abelian; the compact dual of a noncompact symmetric space has the opposite curvature and finite diameter.
 
 The isometry group of a Riemannian manifold is a Lie group, so a connected homogeneous Riemannian manifold is a quotient of its own isometry group by a compact stabiliser, and the action of a compact group is locally linearisable. The Cartan duality pairs the compact and noncompact symmetric spaces with the same isotropy algebra and opposite curvature signs; the hyperbolic space dualises to the sphere, and the complex and quaternionic hyperbolic spaces to the complex and quaternionic projective spaces. Isotropy irreducibility forces the invariant metric to be unique up to scale and the space to be Einstein, and the rank-one symmetric spaces are the spaces of constant curvature together with the projective planes over the four division algebras. The symmetric case, the flag case and the cohomology of the classical homogeneous spaces are not covered here.
 
@@ -240,7 +240,7 @@ The isometry group of a Riemannian manifold is a Lie group, so a connected homog
 | $G/H$ | Homogeneous space of the Lie group $G$ by the closed subgroup $H$ |
 | $G_x$, $G\cdot x$ | Stabiliser and orbit of $x$ |
 | $\theta_p : G \to M$, $\theta_p(g) = g\cdot p$ | Orbit map |
-| $\xi_M$ | Fundamental vector field of $\xi \in \mathrm{G}$ |
+| $\zeta_M$ | Fundamental vector field of $\zeta \in \mathrm{G}$ |
 | $\dim G/H = \dim G - \dim H$ | Dimension of a homogeneous space |
 | $\pi : G \to G/H$ | Principal $H$-bundle projection; $G/H$ is the base |
 | $TG/H \cong G\times_H(\mathrm{G}/\mathrm{H})$ | Tangent bundle as an associated bundle |
@@ -249,7 +249,7 @@ The isometry group of a Riemannian manifold is a Lie group, so a connected homog
 | Isotropy representation | $H \to O(T_{eH}(G/H))$; linearisation at the fixed point |
 | $g$ | $G$-invariant Riemannian metric on $G/H$ |
 | $\nabla^c$, $\nabla^{\mathrm{LC}}$ | Canonical connection; Levi-Civita connection |
-| $K(\xi\wedge\eta) = \tfrac14\|[\xi,\eta]_{\mathrm{M}}\|^2 + \|[\xi,\eta]_{\mathrm{H}}\|^2$ | Curvature of a normal homogeneous space (Nomizu) |
+| $K(\zeta\wedge\eta) = \tfrac14\|[\zeta,\eta]_{\mathrm{M}}\|^2 + \|[\zeta,\eta]_{\mathrm{H}}\|^2$ | Curvature of a normal homogeneous space (Nomizu) |
 | $\operatorname{Isom}(M,g)$ | Isometry group; a Lie group (Myers–Steenrod) |
 | Compact / noncompact type, compact dual | Sign of the invariant form; Cartan duality |
 | rank | Dimension of a maximal flat totally geodesic submanifold |

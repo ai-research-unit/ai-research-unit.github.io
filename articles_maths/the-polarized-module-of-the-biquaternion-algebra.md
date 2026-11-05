@@ -76,9 +76,9 @@ $$
 \tilde Q=\tilde Q(\tilde\Pi_{+}+\tilde\Pi_{-})=\tilde Q\tilde\Pi_{+}+\tilde Q\tilde\Pi_{-}\in S_{+}+S_{-}.
 $$
 
-If $\xi\in S_{+}\cap S_{-}$, then $\xi=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}$; multiplying on the right by $\tilde\Pi_{+}$ gives $\xi=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}\tilde\Pi_{+}=0$. So the sum is direct.
+If $\zeta\in S_{+}\cap S_{-}$, then $\zeta=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}$; multiplying on the right by $\tilde\Pi_{+}$ gives $\zeta=\eta_{+}\tilde\Pi_{+}=\eta_{-}\tilde\Pi_{-}\tilde\Pi_{+}=0$. So the sum is direct.
 
-**The left action.** Left multiplication by any $\tilde Q\in\mathbb{B}$ preserves each $S_{\pm}$, because $\tilde Q(\xi\tilde\Pi_{\pm})=(\tilde Q\xi)\tilde\Pi_{\pm}$. This is the action of the algebra on the spinor spaces. It is the algebra product.
+**The left action.** Left multiplication by any $\tilde Q\in\mathbb{B}$ preserves each $S_{\pm}$, because $\tilde Q(\zeta\tilde\Pi_{\pm})=(\tilde Q\zeta)\tilde\Pi_{\pm}$. This is the action of the algebra on the spinor spaces. It is the algebra product.
 
 ## The Canonical Splitting
 
@@ -239,12 +239,12 @@ $$
 
 which in the basis is $Q_{+-}=0$. It sends $S_{-}$ into $S_{-}$ exactly when $\tilde\Pi_{-}\tilde Q\tilde\Pi_{+}=0$, which is $Q_{-+}=0$.
 
-**Proof.** For $\xi=\eta\tilde\Pi_{+}\in S_{+}$, $\xi\tilde Q=\eta\tilde\Pi_{+}\tilde Q$. This lies in $S_{+}$ exactly when $\tilde\Pi_{+}\tilde Q=\tilde\Pi_{+}\tilde Q\tilde\Pi_{+}$, that is when $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=0$. The basis expansion gives $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=Q_{+-}\vec\Upsilon_{+-}$, so the condition is $Q_{+-}=0$. The proof for $S_{-}$ is the same with the signs exchanged.
+**Proof.** For $\zeta=\eta\tilde\Pi_{+}\in S_{+}$, $\zeta\tilde Q=\eta\tilde\Pi_{+}\tilde Q$. This lies in $S_{+}$ exactly when $\tilde\Pi_{+}\tilde Q=\tilde\Pi_{+}\tilde Q\tilde\Pi_{+}$, that is when $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=0$. The basis expansion gives $\tilde\Pi_{+}\tilde Q\tilde\Pi_{-}=Q_{+-}\vec\Upsilon_{+-}$, so the condition is $Q_{+-}=0$. The proof for $S_{-}$ is the same with the signs exchanged.
 
 **The exchange by the mixed units.** Right multiplication by $\vec\Upsilon_{+-}$ sends $S_{+}$ onto $S_{-}$ and kills $S_{-}$; right multiplication by $\vec\Upsilon_{-+}$ sends $S_{-}$ onto $S_{+}$ and kills $S_{+}$:
 
 $$
-\xi\in S_{+}\longmapsto\xi\vec\Upsilon_{+-}\in S_{-},\qquad
+\zeta\in S_{+}\longmapsto\zeta\vec\Upsilon_{+-}\in S_{-},\qquad
 \eta\in S_{-}\longmapsto\eta\vec\Upsilon_{-+}\in S_{+}.
 $$
 
@@ -261,14 +261,14 @@ $$
 Each map is an isomorphism of the two complex planes, and the two maps are inverse:
 
 $$
-(\xi\vec\Upsilon_{+-})\vec\Upsilon_{-+}=\xi\tilde\Pi_{+}=\xi,\qquad
+(\zeta\vec\Upsilon_{+-})\vec\Upsilon_{-+}=\zeta\tilde\Pi_{+}=\zeta,\qquad
 (\eta\vec\Upsilon_{-+})\vec\Upsilon_{+-}=\eta\tilde\Pi_{-}=\eta.
 $$
 
 Each map is square-zero, because the unit kills the space it maps onto:
 
 $$
-\xi\vec\Upsilon_{+-}\vec\Upsilon_{+-}=0,\qquad
+\zeta\vec\Upsilon_{+-}\vec\Upsilon_{+-}=0,\qquad
 \eta\vec\Upsilon_{-+}\vec\Upsilon_{-+}=0.
 $$
 

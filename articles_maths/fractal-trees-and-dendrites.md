@@ -56,7 +56,7 @@ The article assumes *Metric, Uniform and Complete Spaces* for compactness, compl
 
 **Proof sketch.** Compactness: a sequence of vertices leaves every finite subtree in a ray, and every subsequence has a limit in $E(T_r)$, which is closed. Connectedness: any two points are joined by a finite path or a ray, and a vertex and an end are joined by the ray to the end. Local connectedness: the ball of radius $2^{-n}$ around a vertex is a finite tree with the ends attached along its boundary leaves, a contractible and locally connected neighbourhood. No simple closed curve: the space is a tree together with the ends, and a circle would give two distinct arcs between two points, contradicting the uniqueness of the path in the tree. The branch points are the vertices with at least three neighbours, the ends of the tree being of order one.
 
-**Theorem (the end space and its dimension).** The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\xi,\eta) = r^{\,-\ell(\xi,\eta)}$, where $\ell(\xi,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is
+**Theorem (the end space and its dimension).** The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\zeta,\eta) = r^{\,-\ell(\zeta,\eta)}$, where $\ell(\zeta,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is
 
 $$
 \boxed{\;N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n}\;} ,
@@ -114,7 +114,7 @@ A dendrite is a locally connected continuum with no simple closed curve, equival
 | End, $E(X)$ | Point of order one, up to the local structure; the end space |
 | Arc, simple closed curve | Homeomorphic copies of $[0,1]$ and of the circle |
 | $T_r$, $\overline{T_r}$ | The rooted tree with $r$ branches at the root and $r-1$ thereafter; its end compactification |
-| $E(T_r)$, $\ell(\xi,\eta)$ | End space of $T_r$; length of the common initial path |
+| $E(T_r)$, $\ell(\zeta,\eta)$ | End space of $T_r$; length of the common initial path |
 | $\log(r-1)/\log r$ | Hausdorff dimension of $E(T_r)$ in the visual metric |
 | $J_c$, $J_i$ | Julia set of $z^2+c$; the tree-like dendrite |
 | $\dim_{top}$, $\dim_H$ | Topological dimension; Hausdorff dimension |

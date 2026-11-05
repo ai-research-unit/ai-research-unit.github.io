@@ -120,23 +120,23 @@ $$
 $$
 and the count is the Proca count: four components of $A_\mu$, one constraint from the deformed Gauss law, three physical polarizations. The scalar is gone — it has been absorbed into the longitudinal polarization of the vector — and the theory is manifestly that of a massive vector. This is the gauge in which the mechanism is "invisible": it has done its work by making the mass term invariant, and the field that made it invariant has been gauged away.
 
-### The Covariant $R_\xi$ Gauges
+### The Covariant $R_\zeta$ Gauges
 
 The symmetric alternative keeps the scalar and fixes a covariant condition,
 $$
-G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi=0 ,
+G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\zeta\mu^2\chi=0 ,
 \qquad
-\xi\in\mathbb{R},
+\zeta\in\mathbb{R},
 $$
 which is the abelian analogue of the Lorenz gauge of the gauge-field path integral and reduces to it for the massless field. The gauge-fixed Lagrangian,
 $$
-\mathcal{L}_\xi=\mathcal{L}_{\mathrm{S}}-\frac{1}{2\xi}\big(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi\big)^2 ,
+\mathcal{L}_\zeta=\mathcal{L}_{\mathrm{S}}-\frac{1}{2\zeta}\big(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\zeta\mu^2\chi\big)^2 ,
 $$
 has a vector propagator of the Proca form with a gauge-dependent longitudinal part,
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right),
+D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right),
 $$
-which reduces to the Proca propagator of the companion article as $\xi\to\infty$, and a scalar with an $\xi$-dependent mass $\xi\mu^2$. The gauge parameter interpolates between the unitary gauge at $\xi\to\infty$ (the scalar mass becomes infinite and the scalar decouples, leaving the Proca propagator) and the Landau gauge at $\xi=0$ (the scalar mass vanishes). The physical amplitudes are independent of $\xi$, which is the statement that the scalar and the longitudinal vector together carry one physical mode; the demonstration is the abelian case of the gauge-parameter independence recorded in the gauge-field path-integral companion. One feature distinguishes the abelian case from the non-abelian one and is worth recording: the Faddeev–Popov determinant of an abelian gauge fixing is field independent, so the Stueckelberg model has **no ghost**. The scalar $\chi$ and the longitudinal vector are the only unphysical modes, and they cancel among themselves in the gauge-parameter dependence; in the non-abelian case the determinant is field dependent, the ghosts are dynamical, and the cancellation involves the ghost fields in addition. The framework's Stueckelberg mechanism therefore has the simplest possible unphysical sector: one scalar, no ghosts.
+which reduces to the Proca propagator of the companion article as $\zeta\to\infty$, and a scalar with an $\zeta$-dependent mass $\zeta\mu^2$. The gauge parameter interpolates between the unitary gauge at $\zeta\to\infty$ (the scalar mass becomes infinite and the scalar decouples, leaving the Proca propagator) and the Landau gauge at $\zeta=0$ (the scalar mass vanishes). The physical amplitudes are independent of $\zeta$, which is the statement that the scalar and the longitudinal vector together carry one physical mode; the demonstration is the abelian case of the gauge-parameter independence recorded in the gauge-field path-integral companion. One feature distinguishes the abelian case from the non-abelian one and is worth recording: the Faddeev–Popov determinant of an abelian gauge fixing is field independent, so the Stueckelberg model has **no ghost**. The scalar $\chi$ and the longitudinal vector are the only unphysical modes, and they cancel among themselves in the gauge-parameter dependence; in the non-abelian case the determinant is field dependent, the ghosts are dynamical, and the cancellation involves the ghost fields in addition. The framework's Stueckelberg mechanism therefore has the simplest possible unphysical sector: one scalar, no ghosts.
 
 ### The Degree-of-Freedom Count
 
@@ -144,7 +144,7 @@ The count is the same in every gauge and is worth stating in the two ways.
 $$
 \text{fields }(4+1)=5,\quad \text{gauge symmetry }-1,\quad \text{mass-term constraint }-1,\quad \text{physical }=3 .
 $$
-The gauge symmetry removes the scalar by fixing it to a function of the vector — in the unitary gauge to zero — and the mass term's constraint structure removes the timelike component of the vector, leaving the three polarizations that the completeness relation above enumerates. In the $R_\xi$ gauge the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\xi$-dependent scalar that is not physical; the count is invariant, the distribution is not.
+The gauge symmetry removes the scalar by fixing it to a function of the vector — in the unitary gauge to zero — and the mass term's constraint structure removes the timelike component of the vector, leaving the three polarizations that the completeness relation above enumerates. In the $R_\zeta$ gauge the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\zeta$-dependent scalar that is not physical; the count is invariant, the distribution is not.
 
 ## The Relation to the Abelian Higgs
 
@@ -229,7 +229,7 @@ The mechanism as constructed is abelian. Its essential ingredient is that the sh
 
 **Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi_2=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
 
-**Imported, and left visible.** The Stueckelberg construction itself; the $R_\xi$ gauge-fixing condition and the gauge-parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\xi$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.
+**Imported, and left visible.** The Stueckelberg construction itself; the $R_\zeta$ gauge-fixing condition and the gauge-parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\zeta$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.
 
 **Not supplied.** The mechanism does not generate the mass from a vacuum value: $\mu$ is a parameter, and the framework does not explain its value. It does not extend to the compact factor, because the framework's scalar is a singlet and the non-abelian version requires an adjoint scalar. It does not supply the fermion masses, the mixing angles or any empirical content. As everywhere in the series, no new prediction is made.
 
@@ -243,11 +243,11 @@ is invariant — checked explicitly on test fields — and the Stueckelberg Lagr
 $$
 \mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}
 $$
-is gauge invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary gauge $\chi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\xi$ gauge $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi=0$ the scalar has an $\xi$-dependent mass and the vector propagator
+is gauge invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary gauge $\chi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\zeta$ gauge $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\zeta\mu^2\chi=0$ the scalar has an $\zeta$-dependent mass and the vector propagator
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)
+D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right)
 $$
-has a gauge-dependent longitudinal part, with physical amplitudes independent of $\xi$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
+has a gauge-dependent longitudinal part, with physical amplitudes independent of $\zeta$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
 
 The mechanism is the abelian Higgs with the radial mode removed: the Stueckelberg field is the phase of the central scalar, and the Higgs is its ultraviolet completion with $\mu=\kappa v=ϙv/\hbar$ and a radial mode of mass $m_h=\sqrt{2\beta}\,v$. In the framework the Stueckelberg field is central, $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the invariant mass term is the biquaternion norm of the gauge-invariant derivative; the mechanism requires only the shift, no potential and no vacuum value, which is why it is the framework's natural massive-abelian-vector mechanism. It does not extend to the compact factor: the non-abelian version requires a scalar in the adjoint representation, whereas the framework's scalar is a singlet. The mass $\mu$ remains a parameter, and the mechanism adds no empirical content.
 
@@ -269,10 +269,10 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}-\mu^2A_{\mathrm u,\nu}=0$ | Vector equation of motion |
 | $\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$ | Scalar equation; the divergence of the vector equation |
 | $\chi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
-| $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi$ | $R_\xi$ gauge-fixing condition |
+| $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\zeta\mu^2\chi$ | $R_\zeta$ gauge-fixing condition |
 | $\chi=\chi^{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
-| $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |
-| $m_\chi^2=\xi\mu^2$ | Gauge-dependent scalar mass |
+| $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\dfrac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right)$ | Vector propagator in the $R_\zeta$ gauge; Proca at $\zeta\to\infty$ |
+| $m_\chi^2=\zeta\mu^2$ | Gauge-dependent scalar mass |
 | $V=\beta(\chi^*\chi-v^2/2)^2$, $\vert\chi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=ϙv/\hbar$ | Higgs origin of the mass; $\kappa=ϙ/\hbar$ |
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
@@ -286,7 +286,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 - E. C. G. Stueckelberg, "Interaction forces in electrodynamics and in the field theory of nuclear forces," *Helvetica Physica Acta* **11** (1938) 299–328, for the charged-vector case.
 - H. Ruegg and M. Ruiz-Altaba, "The Stueckelberg field," *International Journal of Modern Physics A* **19** (2004) 3265–3347, for the complete review, the gauge fixing and the relation to the Higgs mechanism.
 - T. Kugo and I. Ojima, "Local covariant operator formalism of non-Abelian gauge theories and quark confinement problem," *Progress of Theoretical Physics Supplement* **66** (1979) 1–130, for the quartet mechanism and the treatment of the unphysical scalar modes.
-- M. B. Gavela, G. Girardi, C. Malleville and P. Sorba, "A non-linear $R_\xi$ gauge condition for the electroweak $SU(2)\times \mathrm{U}(1)$ model," *Nuclear Physics B* **272** (1986) 181–206, for the $R_\xi$ gauges with the would-be-Goldstone fields.
+- M. B. Gavela, G. Girardi, C. Malleville and P. Sorba, "A non-linear $R_\zeta$ gauge condition for the electroweak $SU(2)\times \mathrm{U}(1)$ model," *Nuclear Physics B* **272** (1986) 181–206, for the $R_\zeta$ gauges with the would-be-Goldstone fields.
 - K. Fujikawa, B. W. Lee and A. I. Sanda, "Generalized renormalizable gauge formulation of spontaneously broken gauge theories," *Physical Review D* **6** (1972) 2923–2943, for the gauge-fixing conditions and the gauge-parameter independence of physical amplitudes.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the abelian Higgs mechanism, the Goldstone equivalence theorem and the massive-vector propagator.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the Proca field, the Higgs mechanism and the counting of degrees of freedom.

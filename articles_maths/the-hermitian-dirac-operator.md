@@ -110,10 +110,10 @@ adjoint as in *Hermitian Hilbert Modules over a Clifford Algebra*.
 **Theorem (essential self-adjointness).** On the Hilbert module $L^2(\mathbb{R}^{2n};\mathcal{S})$
 the Hermitian Dirac operator, defined on the Sobolev space $H^1$, is essentially self-adjoint; its
 closure has square the Laplacian, and its spectrum is the whole real line, with the Fourier symbol
-$c(\sum_jf_j\xi_{z_j})+c(\sum_jf_j^{*}\xi_{\bar z_j})$ whose square is $\tfrac14|\xi|^2$.
+$c(\sum_jf_j\zeta_{z_j})+c(\sum_jf_j^{*}\zeta_{\bar z_j})$ whose square is $\tfrac14|\zeta|^2$.
 
 *Proof.* The operator has constant coefficients and its symbol is real-linear and elliptic in the
-sense that its square is $\tfrac14|\xi|^2$, so the Fourier transform diagonalises the closure and
+sense that its square is $\tfrac14|\zeta|^2$, so the Fourier transform diagonalises the closure and
 shows self-adjointness on $H^1$; the symbol takes all real values — it is a sum of two isotropic
 parts — so the spectrum is the whole line, in contrast with a symmetric elliptic operator with
 positive square, whose spectrum is a half line if the square is positive. The argument is the
@@ -143,7 +143,7 @@ $D_{\mathrm{alg}}^{\dagger}=-D_{\mathrm{alg}}$, and the absence of harmonic spin
 algebraic and the operator acts on the module itself. The operator of this article is the
 **differential** one: it acts on functions, has the Laplacian as its square, and its
 self-adjointness is with respect to the analytic form on the Hilbert module. The relation between
-the two is the relation between the symbol and the operator: $c(\sum e_a\xi_a)$ is the symbol of
+the two is the relation between the symbol and the operator: $c(\sum e_a\zeta_a)$ is the symbol of
 $D$, the finite-dimensional Dirac element is the same expression evaluated at the covector of the
 generators, and the passage from the algebraic to the analytic statement is the passage from the
 Fourier symbol to the operator by the spectral theorem.
@@ -172,8 +172,8 @@ to the form while the **difference** is antisymmetric; this is the operator-theo
 split. On the Hilbert module $L^2(\mathbb{R}^{2n};\mathcal{S})$, on the Sobolev space $H^1$,
 $\mathcal{D}$ is essentially self-adjoint, its closure has square the Laplacian, and its spectrum is
 the whole real line, the symbol
-$\sigma(\mathcal{D})(\xi)=c(\sum_jf_j\xi_{z_j})+c(\sum_jf_j^{*}\xi_{\bar z_j})$ having square
-$\tfrac14|\xi|^2$ and taking all real values; the Hermitian choice of square root is the one that
+$\sigma(\mathcal{D})(\zeta)=c(\sum_jf_j\zeta_{z_j})+c(\sum_jf_j^{*}\zeta_{\bar z_j})$ having square
+$\tfrac14|\zeta|^2$ and taking all real values; the Hermitian choice of square root is the one that
 absorbs the factor that makes the operator self-adjoint in place of the Euclidean operator, whose
 self-adjoint variant is $iD$. The quaternionic refinement has the four-operator analogue. The
 finite-dimensional **Dirac element** $D_{\mathrm{alg}}=\sum_kL_{e_k}$ of Part II's *Dirac Operators
@@ -192,7 +192,7 @@ Cauchy Integral and the Boundary Values* and *The Hermitian Cauchy Kernel as an 
 | $D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ | Euclidean operator; $D^2=-\Delta_{2n}$; formal adjoint $D^{\dagger}=-\bar D$ |
 | $(\partial/\partial\underline z)^{\dagger}\sim\partial/\partial\bar z$, $(\partial/\partial\bar z)^{\dagger}\sim\partial/\partial\underline z$ | Conjugation interchanging the halves |
 | $\langle\mathcal{D}f,g\rangle=\langle f,\mathcal{D}g\rangle$ | Symmetry with respect to the form |
-| $\sigma(\mathcal{D})(\xi)=c(\sum_jf_j\xi_{z_j})+c(\sum_jf_j^{*}\xi_{\bar z_j})$ | Symbol; square $\tfrac14|\xi|^2$ |
+| $\sigma(\mathcal{D})(\zeta)=c(\sum_jf_j\zeta_{z_j})+c(\sum_jf_j^{*}\zeta_{\bar z_j})$ | Symbol; square $\tfrac14|\zeta|^2$ |
 | $D_{\mathrm{alg}}=\sum_kL_{e_k}$ | Finite-dimensional Dirac element (Part II) |
 | $iD$ | The self-adjoint variant of the Euclidean operator |
 

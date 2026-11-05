@@ -227,15 +227,15 @@ with the energy as the third constant. The three constants $\alpha_1$, $|\vec L|
 
 **Example (the parabolic separation of the Coulomb problem).** Introduce the parabolic coordinates
 $$
-\xi = r+z , \qquad \eta = r-z , \qquad \phi ,
+\zeta = r+z , \qquad \eta = r-z , \qquad \phi ,
 $$
-so that $r=(\xi+\eta)/2$ and $z=(\xi-\eta)/2$. The Hamiltonian of a particle of mass $m$ in the Coulomb potential $-\kappa/r$ together with a uniform field $F$ along the polar axis is
+so that $r=(\zeta+\eta)/2$ and $z=(\zeta-\eta)/2$. The Hamiltonian of a particle of mass $m$ in the Coulomb potential $-\kappa/r$ together with a uniform field $F$ along the polar axis is
 $$
-H = \frac{2}{m(\xi+\eta)}\bigl(\xi\,p_\xi^2+\eta\,p_\eta^2\bigr) + \frac{p_\phi^2}{2m\xi\eta} - \frac{2\kappa}{\xi+\eta} + \frac{F}{2}(\xi-\eta) .
+H = \frac{2}{m(\zeta+\eta)}\bigl(\zeta\,p_\zeta^2+\eta\,p_\eta^2\bigr) + \frac{p_\phi^2}{2m\zeta\eta} - \frac{2\kappa}{\zeta+\eta} + \frac{F}{2}(\zeta-\eta) .
 $$
-Multiplication by $\xi+\eta$ separates the equation into a $\xi$-part and an $\eta$-part,
+Multiplication by $\zeta+\eta$ separates the equation into a $\zeta$-part and an $\eta$-part,
 $$
-\frac{2}{m}\xi\Bigl(\frac{\partial W}{\partial\xi}\Bigr)^2 + \frac{p_\phi^2}{2m\xi} + \frac{F}{2}\xi^2 - \alpha_1\xi = B_1 ,
+\frac{2}{m}\zeta\Bigl(\frac{\partial W}{\partial\zeta}\Bigr)^2 + \frac{p_\phi^2}{2m\zeta} + \frac{F}{2}\zeta^2 - \alpha_1\zeta = B_1 ,
 $$
 $$
 \frac{2}{m}\eta\Bigl(\frac{\partial W}{\partial\eta}\Bigr)^2 + \frac{p_\phi^2}{2m\eta} - \frac{F}{2}\eta^2 - \alpha_1\eta = B_2 ,
@@ -277,7 +277,7 @@ The examples are the central force, whose separation constant is the angular mom
 | Stäckel class | Potentials of the form $U=\sum_i(1/h_i^2)U_i(q_i)$ |
 | $I_i=\frac{1}{2\pi}\oint p_i\,dq_i$ | Action variables of a separable system |
 | $(r,\theta,\phi)$, $(r,\phi)$ | Spherical and polar coordinates |
-| $(\xi,\eta,\phi)$, $\xi=r+z$, $\eta=r-z$ | Parabolic coordinates |
+| $(\zeta,\eta,\phi)$, $\zeta=r+z$, $\eta=r-z$ | Parabolic coordinates |
 | $\alpha_\phi$, $\alpha_\theta^2=|\vec L|^2$ | Spherical separation constants |
 | $B_1$, $B_2$, $B_1+B_2=2\kappa$ | Parabolic separation constants of the Coulomb-plus-field problem |
 

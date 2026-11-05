@@ -116,13 +116,13 @@ differ by a boundary term and therefore have the **same Euler–Lagrange equatio
 
 ### Lanczos's Statement and Its Four-Dimensional Form
 
-Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial/\partial a + i\partial/\partial a'$ and $R^2 = (a-\xi)^2 + (a'-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
+Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial/\partial a + i\partial/\partial a'$ and $R^2 = (a-\zeta)^2 + (a'-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
 
 $$
 \delta\int (X^2 + Y^2)\,da\,da' = 0
 $$
 
-subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,da\,da'$ for every point $(\xi,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
+subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,da\,da'$ for every point $(\zeta,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
 
 $$
 \delta\int (X^2 + Y^2 + Z^2 + T^2)\,da\,db\,dc\,dt = 0,
@@ -176,7 +176,7 @@ Thus $\tau$ is injective exactly on the holomorphic functions whose Taylor coeff
 
 ### Imaginary Units and Slices
 
-An imaginary unit is an element $I$ with $I^2 = -1$. On $\mathbb{H}_{\mathbb{B}}$ the imaginary units form the two-sphere $S^2$ of unit pure imaginary quaternions, and every $\tilde{Q}$ with $\vec q \neq 0$ is uniquely $\tilde{Q} = q_t + I\rho$ with $I \in S^2$, $\rho > 0$. The **slice** $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ is a copy of the complex plane, and two slices meet only in $\mathbb{R}$ unless $I = \pm J$. On the full algebra the roots of $-1$ are, by the article on biquaternion roots of minus one, the family $\pm i$, $\pm\mu$ and $b\mu + d\nu i$, with $\mu, \nu$ perpendicular unit pure real quaternions and $b^2 - d^2 = 1$, $b, d > 0$. Each spans a slice $\mathbb{C}_\xi \cong \mathbb{C}$, but this set of roots is no longer a sphere, so there is no single imaginary sphere on which to base the theory: the axial construction must select one root, hence one slice, at a time.
+An imaginary unit is an element $I$ with $I^2 = -1$. On $\mathbb{H}_{\mathbb{B}}$ the imaginary units form the two-sphere $S^2$ of unit pure imaginary quaternions, and every $\tilde{Q}$ with $\vec q \neq 0$ is uniquely $\tilde{Q} = q_t + I\rho$ with $I \in S^2$, $\rho > 0$. The **slice** $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ is a copy of the complex plane, and two slices meet only in $\mathbb{R}$ unless $I = \pm J$. On the full algebra the roots of $-1$ are, by the article on biquaternion roots of minus one, the family $\pm i$, $\pm\mu$ and $b\mu + d\nu i$, with $\mu, \nu$ perpendicular unit pure real quaternions and $b^2 - d^2 = 1$, $b, d > 0$. Each spans a slice $\mathbb{C}_\zeta \cong \mathbb{C}$, but this set of roots is no longer a sphere, so there is no single imaginary sphere on which to base the theory: the axial construction must select one root, hence one slice, at a time.
 
 ### Axially Symmetric Functions and the Harmonic Coefficients
 
@@ -208,7 +208,7 @@ On $i\mathbb{H}_{\mathbb{B}}$ the theory is the same, up to the constant central
 
 On $\mathbb{M}_-$ and $\mathbb{M}_+$ the second-order operator is the wave operator, $\Box_{\mathbb{M}_-} = (-\partial^2/\partial q'^2_t + \Delta_{\mathbb{R}^3})e_t$ and $\Box_{\mathbb{M}_+} = (\partial^2/\partial q_t^2 - \Delta_{\mathbb{R}^3})e_t$, of signatures $(3,1)$ and $(1,3)$: hyperbolic, hence without elliptic regularity, and the axial coefficients then satisfy a wave-type system rather than a Laplace system. The zero divisors form the **null cone** $(q'_t)^2 = q_x^2 + q_y^2 + q_z^2$ on $\mathbb{M}_-$ (and $q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ on $\mathbb{M}_+$), exactly where the biquaternion norm vanishes. Its nonzero elements are not invertible, so the pointwise inversion of $\tilde{Q}$ underlying the Cauchy kernel fails there, and the Euclidean kernel is not the fundamental solution of the gradient on these subspaces, as the articles on biquaternion integration and on biquaternion analysis on subspaces record. Domains for the Cauchy theory must avoid the cone, not merely the origin.
 
-On the full algebra $\mathbb{B}$ the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued, and its zero set is the **null quadric**, whose nonzero points are exactly the zero divisors and which has real dimension $6$. Every construction dividing by $\tilde{Q}$, and every kernel built from $\tilde{Q}^{-1}$, is therefore unavailable there. The Fueter operator is also not elliptic over $\mathbb{C}$: its symbol $\sum_\mu e_\mu \xi_\mu$ has norm $\sum_\mu \xi_\mu^2$, vanishing for nonzero complex covectors such as $(1, i, 0, 0)$, so ellipticity holds for real covectors but fails over $\mathbb{C}$ and the second-order operator is not the real Laplacian. Finally, the imaginary units are the larger family of the preceding section, so the slice structure must be built one root at a time. The Fueter theory is therefore developed on the four-dimensional subspaces, principally $\mathbb{H}_{\mathbb{B}}$, and extended to the indefinite subspaces only off the null cone; the full-algebra case remains the open problem noted in the article on biquaternion analysis.
+On the full algebra $\mathbb{B}$ the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued, and its zero set is the **null quadric**, whose nonzero points are exactly the zero divisors and which has real dimension $6$. Every construction dividing by $\tilde{Q}$, and every kernel built from $\tilde{Q}^{-1}$, is therefore unavailable there. The Fueter operator is also not elliptic over $\mathbb{C}$: its symbol $\sum_\mu e_\mu \zeta_\mu$ has norm $\sum_\mu \zeta_\mu^2$, vanishing for nonzero complex covectors such as $(1, i, 0, 0)$, so ellipticity holds for real covectors but fails over $\mathbb{C}$ and the second-order operator is not the real Laplacian. Finally, the imaginary units are the larger family of the preceding section, so the slice structure must be built one root at a time. The Fueter theory is therefore developed on the four-dimensional subspaces, principally $\mathbb{H}_{\mathbb{B}}$, and extended to the indefinite subspaces only off the null cone; the full-algebra case remains the open problem noted in the article on biquaternion analysis.
 
 ## Summary
 

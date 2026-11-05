@@ -232,7 +232,7 @@ $$
 
 One equation replaces the four standard Maxwell equations. No explicit $\epsilon$ appears: the medium is carried by the definition of $\tilde{F}$ and by the single factor $\sqrt{\mu}$.
 
-The counting is visible in the characteristic polynomial. In the Fourier variables $(\vec\xi,\omega)$ the vector part $\partial/\partial Q_t\,\vec F + \mathrm{rot}\,\vec F$ acts on the three components as the factor $-\omega/c$ together with the map $\vec F\mapsto i\,\vec\xi\times\vec F$, whose eigenvalues are $0$ and $\pm|\vec\xi|$; the determinant of the symbol is therefore $-({\omega}/{c})\bigl(({\omega}/{c})^2 - |\vec\xi|^2\bigr)$. The characteristic set is therefore $\omega = 0$ together with the light cone $|\omega| = c|\vec\xi|$. The four standard Maxwell equations have the same characteristic set with every zero doubled; the single complex equation carries the characteristics of the four with half the multiplicity, which is the symbol-level form of "one equation replaces four".
+The counting is visible in the characteristic polynomial. In the Fourier variables $(\vec\zeta,\omega)$ the vector part $\partial/\partial Q_t\,\vec F + \mathrm{rot}\,\vec F$ acts on the three components as the factor $-\omega/c$ together with the map $\vec F\mapsto i\,\vec\zeta\times\vec F$, whose eigenvalues are $0$ and $\pm|\vec\zeta|$; the determinant of the symbol is therefore $-({\omega}/{c})\bigl(({\omega}/{c})^2 - |\vec\zeta|^2\bigr)$. The characteristic set is therefore $\omega = 0$ together with the light cone $|\omega| = c|\vec\zeta|$. The four standard Maxwell equations have the same characteristic set with every zero doubled; the single complex equation carries the characteristics of the four with half the multiplicity, which is the symbol-level form of "one equation replaces four".
 
 Taking the scalar and vector parts of $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ separately, we recover the Hamiltonian form of Maxwell's equations. The scalar part is
 
@@ -566,16 +566,16 @@ $$
 
 in which each of the eight equations carries the field. The normalisation of $\alpha$ is the author's and is not fixed by the algebra alone, because $\tilde F$ carries $\sqrt\epsilon$ in its electric half and $\sqrt\mu$ in its magnetic half; the system is quoted from the 2016 paper and is not re-derived here.
 
-**The one sign that is not free.** The two $\alpha_2$ entries — the gradient $-c^2\,\mathrm{grad}\,\alpha_2$ in the second equation and the time derivative in the fourth — are the two halves of one construction, and they must carry the same relative sign. As first printed, with $+\partial/\partial t'\alpha_2$ in the fourth equation, they do not. The test is the principal symbol $P(\vec\xi,\omega)$ of the eight-equation system in the Fourier variables $(\vec\xi,\omega)$, whose determinant is
+**The one sign that is not free.** The two $\alpha_2$ entries — the gradient $-c^2\,\mathrm{grad}\,\alpha_2$ in the second equation and the time derivative in the fourth — are the two halves of one construction, and they must carry the same relative sign. As first printed, with $+\partial/\partial t'\alpha_2$ in the fourth equation, they do not. The test is the principal symbol $P(\vec\zeta,\omega)$ of the eight-equation system in the Fourier variables $(\vec\zeta,\omega)$, whose determinant is
 
 $$
-\det P = -\frac{1}{\epsilon\mu}\left(\epsilon\mu\omega^2+\lVert\vec\xi\rVert^2\right)\left(\epsilon\mu\omega^2-\lVert\vec\xi\rVert^2\right)^3 .
+\det P = -\frac{1}{\epsilon\mu}\left(\epsilon\mu\omega^2+\lVert\vec\zeta\rVert^2\right)\left(\epsilon\mu\omega^2-\lVert\vec\zeta\rVert^2\right)^3 .
 $$
 
-The light cone is present, and with it a branch $\omega=\pm i\lVert\vec\xi\rVert/\sqrt{\epsilon\mu}$ at imaginary frequency — exponential growth and decay in time, not propagation. With the sign as displayed above, the same computation gives
+The light cone is present, and with it a branch $\omega=\pm i\lVert\vec\zeta\rVert/\sqrt{\epsilon\mu}$ at imaginary frequency — exponential growth and decay in time, not propagation. With the sign as displayed above, the same computation gives
 
 $$
-\det P = \frac{1}{\epsilon\mu}\left(\epsilon\mu\omega^2-\lVert\vec\xi\rVert^2\right)^4 ,
+\det P = \frac{1}{\epsilon\mu}\left(\epsilon\mu\omega^2-\lVert\vec\zeta\rVert^2\right)^4 ,
 $$
 
 the light cone alone, with every zero of multiplicity four. Both determinants were computed symbolically, and both were confirmed numerically on the singular values of the symbol.
@@ -869,7 +869,7 @@ $$
 F(\;)=\tfrac12\bigl(R_{\tilde F}-L_{\tilde F}\bigr).
 $$
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 **The two-sided structure, and the two Dirac equations.** The cells come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$ and $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{e_t}^{\mathrm{pau}}\partial/\partial t'\,F+\sum_kL_{\vec e_k}^{\mathrm{pau}}\partial/\partial Q_k\,F-mi\,R_{\vec e_z}^{\mathrm{pau}}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right cell acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one cell from each family, antisymmetrised. In this article the field equation is written with the element; the operators of *The Field Bivector and the Field Operator* above are written as actions on an argument, and the gamma names are attached to the frame cells here and nowhere else.
 
@@ -915,7 +915,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** |
 | $D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Three-dimensional Cauchy–Riemann operator (time-harmonic interpretation) |
-| $P(\vec\xi,\omega)$ | Principal symbol of the eight-equation system of *The Author's Reading*, whose determinant gives the characteristic set |
+| $P(\vec\zeta,\omega)$ | Principal symbol of the eight-equation system of *The Author's Reading*, whose determinant gives the characteristic set |
 | $F, F^*, cF$ | Real field matrices of the matrix formulation and their complexification, $cF := F - iF^*$; the star here is the paper's dual matrix, not the Hermitian conjugate $\tilde Q^{*}$ of the algebra |
 | $c\nabla$ | The operator matrix of the same formulation |
 | $k = \omega\sqrt{\epsilon\mu}$ | Wavenumber in the medium at fixed frequency; shift of $D_3-k$ |

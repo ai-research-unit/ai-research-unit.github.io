@@ -76,10 +76,10 @@ P=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa},
 \qquad
 \tilde Q_0=\frac{c}{\lvert c\rvert}\frac{\tilde\Pi}{\sqrt{\kappa}},
 \qquad
-\kappa=\frac{1+\lVert\tilde\Xi\rVert_E^{2}}{2},
+\kappa=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{2},
 $$
 
-where $\tilde\Xi=2\tilde\Pi-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.
+where $\tilde{Ζ}=2\tilde\Pi-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.
 
 The sandwich of the pair is computed in the matrix model. For any $\tilde X$,
 
@@ -371,7 +371,7 @@ $$
 
 ### Example 2: a non-Hermitian idempotent
 
-Take $\tilde Q=e_t+\vec e_x+i\sqrt2\,\vec e_z$. Then $c=2$, $\kappa=2$, $a=\sqrt2$, $\tilde\Xi=\vec e_x+i\sqrt2\,\vec e_z$, and
+Take $\tilde Q=e_t+\vec e_x+i\sqrt2\,\vec e_z$. Then $c=2$, $\kappa=2$, $a=\sqrt2$, $\tilde{Ζ}=\vec e_x+i\sqrt2\,\vec e_z$, and
 
 $$
 P=\frac12 e_t-\frac{i\sqrt2}{4}\vec e_y+\frac{i\sqrt2}{4}\vec e_z,

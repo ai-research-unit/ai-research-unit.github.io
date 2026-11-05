@@ -106,7 +106,7 @@ $$
 \dim_{\mathbb{R}}\mathcal{R}_2=2\cdot2\cdot1=4,
 $$
 
-which is the four real parameters of the biquaternion root $\tilde\Xi$ with $\tilde\Xi^{2}=e_t$. For $n=3$, $\dim_{\mathbb{R}}\mathcal{R}_3=12$; for $n=4$, $24$; for $n=5$, $40$; for $n=6$, $60$. These are the dimensions of the root in the five-article count of each category.
+which is the four real parameters of the biquaternion root $\tilde{Ζ}$ with $\tilde{Ζ}^{2}=e_t$. For $n=3$, $\dim_{\mathbb{R}}\mathcal{R}_3=12$; for $n=4$, $24$; for $n=5$, $40$; for $n=6$, $60$. These are the dimensions of the root in the five-article count of each category.
 
 **The root is not a frame.** A frame modulo overall scale has complex dimension $n^{2}-1$, and $\mathcal{R}_n$ has dimension $n(n-1)$. The difference,
 
@@ -124,7 +124,7 @@ $$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},\qquad H=P_{+}-P_{-}.
 $$
 
-These are exactly the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ of the biquaternion article, with $H=\tilde\Xi$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
+These are exactly the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde{Ζ})/2$ of the biquaternion article, with $H=\tilde{Ζ}$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.
 
 **The older "second root" is the gauge, not a second primitive.** The biquaternion frame was sometimes presented as a root of $+1$ together with a second root anticommuting with it. That presentation is correct as a description of a normalised frame but wrong as a description of the primitive data. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What the second element supplies is a vector in each mixed Peirce line, that is, a normalisation of the nilpotents, and that data is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*. The construction is root-first: one root, then the gauge. There is no primitive root pair.
 

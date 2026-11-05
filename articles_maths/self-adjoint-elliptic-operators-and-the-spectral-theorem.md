@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A self-adjoint elliptic operator under a self-adjoint boundary condition has a discrete spectrum and a complete set of eigenfunctions, and the eigenvalues obey a law of growth that depends only on the volume of the domain and the order of the operator. The realisation of the elliptic operator on its domain is self-adjoint when the boundary form of the problem vanishes, its inverse is compact, and the spectral theorem for a self-adjoint operator with compact resolvent then gives the complete orthonormal system and the eigenfunction expansion. The **Weyl law** is the asymptotic count of the eigenvalues: for the Laplacian on a bounded domain the number of eigenvalues below $\lambda$ grows like the volume of the region $\{|\xi|^2\le\lambda\}$ divided by $(2\pi)^n$,
+A self-adjoint elliptic operator under a self-adjoint boundary condition has a discrete spectrum and a complete set of eigenfunctions, and the eigenvalues obey a law of growth that depends only on the volume of the domain and the order of the operator. The realisation of the elliptic operator on its domain is self-adjoint when the boundary form of the problem vanishes, its inverse is compact, and the spectral theorem for a self-adjoint operator with compact resolvent then gives the complete orthonormal system and the eigenfunction expansion. The **Weyl law** is the asymptotic count of the eigenvalues: for the Laplacian on a bounded domain the number of eigenvalues below $\lambda$ grows like the volume of the region $\{|\zeta|^2\le\lambda\}$ divided by $(2\pi)^n$,
 
 $$
 N(\lambda) \sim \frac{\omega_n}{(2\pi)^n}\,|\Omega|\,\lambda^{n/2} ,
@@ -98,7 +98,7 @@ $$
 
 the second equality using $\omega_n=\pi^{n/2}/\Gamma(n/2+1)$ and $(4\pi)^{n/2}\pi^{n/2}=(2\pi)^n$.
 
-**Remark (the second term and the method of the proof).** The heat-kernel proof gives the leading term and, if the heat trace is expanded further, the second term $c_n|\partial\Omega|\lambda^{(n-1)/2}$, the **Weyl conjecture**, whose sign distinguishes the Dirichlet from the Neumann condition; the full expansion of the heat trace and the proof of the second term, with the role of the periodic orbits of the billiard, lie outside this article and belong to *Partial Differential Equations* and its spectral theory. The leading term depends only on the volume, and the term of order $n-1$ on the area of the boundary; the counting function of a general elliptic operator of order $2m$ has the same form with $\lambda^{n/(2m)}$ in place of $\lambda^{n/2}$ and the volume of the unit ball replaced by the phase-space volume $\{x\in\Omega,\ \sigma_L(x,\xi)\le1\}$.
+**Remark (the second term and the method of the proof).** The heat-kernel proof gives the leading term and, if the heat trace is expanded further, the second term $c_n|\partial\Omega|\lambda^{(n-1)/2}$, the **Weyl conjecture**, whose sign distinguishes the Dirichlet from the Neumann condition; the full expansion of the heat trace and the proof of the second term, with the role of the periodic orbits of the billiard, lie outside this article and belong to *Partial Differential Equations* and its spectral theory. The leading term depends only on the volume, and the term of order $n-1$ on the area of the boundary; the counting function of a general elliptic operator of order $2m$ has the same form with $\lambda^{n/(2m)}$ in place of $\lambda^{n/2}$ and the volume of the unit ball replaced by the phase-space volume $\{x\in\Omega,\ \sigma_L(x,\zeta)\le1\}$.
 
 ## Examples
 

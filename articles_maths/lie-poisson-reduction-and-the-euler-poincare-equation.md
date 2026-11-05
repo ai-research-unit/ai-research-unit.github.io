@@ -2,20 +2,20 @@
 
 ## Introduction
 
-A Hamiltonian system with a symmetry can be divided by the symmetry, and the quotient carries a Hamiltonian system of its own. The article *Symplectic Geometry* records the finite-dimensional case of the division, the Marsden–Weinstein quotient, in which the level set of a momentum map is taken and the group is divided out. This article treats the case in which the division is total: the phase space is the cotangent bundle of a Lie group $G$, the group acts by the lift of left translation, and the quotient is the dual of the Lie algebra, $\mathfrak g^*$. The quotient is not a cotangent bundle and carries no canonical one-form, but it does carry a Poisson structure, and that structure is the **Lie–Poisson** one of *Poisson Geometry*: the bracket $\{f,g\}(\xi)=\langle\xi,[df,dg]\rangle$ on the dual of a Lie algebra, whose symplectic leaves are the coadjoint orbits and whose Casimirs are the invariants of the coadjoint representation. The reduction from $T^*G$ to $\mathfrak g^*$ is therefore the construction that makes the Lie–Poisson bracket inevitable rather than a chosen example.
+A Hamiltonian system with a symmetry can be divided by the symmetry, and the quotient carries a Hamiltonian system of its own. The article *Symplectic Geometry* records the finite-dimensional case of the division, the Marsden–Weinstein quotient, in which the level set of a momentum map is taken and the group is divided out. This article treats the case in which the division is total: the phase space is the cotangent bundle of a Lie group $G$, the group acts by the lift of left translation, and the quotient is the dual of the Lie algebra, $\mathfrak g^*$. The quotient is not a cotangent bundle and carries no canonical one-form, but it does carry a Poisson structure, and that structure is the **Lie–Poisson** one of *Poisson Geometry*: the bracket $\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle$ on the dual of a Lie algebra, whose symplectic leaves are the coadjoint orbits and whose Casimirs are the invariants of the coadjoint representation. The reduction from $T^*G$ to $\mathfrak g^*$ is therefore the construction that makes the Lie–Poisson bracket inevitable rather than a chosen example.
 
 The article has two further aims. The first is the **variational** route to the same equations. The reduced dynamics can be obtained not only from the reduced Poisson structure but from the reduction of Hamilton's principle: one fixes a Lagrangian on the Lie algebra rather than on the group, varies it, and obtains a single equation on $\mathfrak g^*$, the **Euler–Poincaré equation**,
 $$
-\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi},
+\frac{d}{dt}\frac{\delta\ell}{\delta\zeta}=\mathrm{ad}^*_\zeta\frac{\delta\ell}{\delta\zeta},
 $$
-whose content is that the momentum $\delta\ell/\delta\xi$ is transported by the coadjoint action of $\xi$ itself. This is the form in which the reduction is done in practice, and it is the form that survives the passage to infinite dimensions, where $G$ is a group of diffeomorphisms and the equation becomes a partial differential equation. The second aim is the **classification of the examples**: the rigid body, whose group is the rotation group; the heavy top, whose group is a semidirect product; and the ideal incompressible flow, whose group is the group of volume-preserving diffeomorphisms and whose reduced equation is the Euler equation in vorticity form. The examples are not illustrations of the theory; they are the reason the theory is stated in the form it is, because the last of them has no finite-dimensional avatar at all.
+whose content is that the momentum $\delta\ell/\delta\zeta$ is transported by the coadjoint action of $\zeta$ itself. This is the form in which the reduction is done in practice, and it is the form that survives the passage to infinite dimensions, where $G$ is a group of diffeomorphisms and the equation becomes a partial differential equation. The second aim is the **classification of the examples**: the rigid body, whose group is the rotation group; the heavy top, whose group is a semidirect product; and the ideal incompressible flow, whose group is the group of volume-preserving diffeomorphisms and whose reduced equation is the Euler equation in vorticity form. The examples are not illustrations of the theory; they are the reason the theory is stated in the form it is, because the last of them has no finite-dimensional avatar at all.
 
-The conventions are those of the corpus. $G$ is a Lie group with Lie algebra $\mathfrak g$ and dual $\mathfrak g^*$; the bracket of $\mathfrak g$ is $[\cdot,\cdot]$, the pairing between $\mathfrak g^*$ and $\mathfrak g$ is $\langle\cdot,\cdot\rangle$, and the structure constants are those of *Lie Groups*. For $f\in C^\infty(\mathfrak g^*)$ and $\xi\in\mathfrak g^*$ the differential $df_\xi$ is an element of $\mathfrak g$, so the Lie–Poisson bracket below is defined without further structure. The **coadjoint action** is the map $\mathrm{ad}^*:\mathfrak g\times\mathfrak g^*\to\mathfrak g^*$ fixed by the convention
+The conventions are those of the corpus. $G$ is a Lie group with Lie algebra $\mathfrak g$ and dual $\mathfrak g^*$; the bracket of $\mathfrak g$ is $[\cdot,\cdot]$, the pairing between $\mathfrak g^*$ and $\mathfrak g$ is $\langle\cdot,\cdot\rangle$, and the structure constants are those of *Lie Groups*. For $f\in C^\infty(\mathfrak g^*)$ and $\zeta\in\mathfrak g^*$ the differential $df_\zeta$ is an element of $\mathfrak g$, so the Lie–Poisson bracket below is defined without further structure. The **coadjoint action** is the map $\mathrm{ad}^*:\mathfrak g\times\mathfrak g^*\to\mathfrak g^*$ fixed by the convention
 $$
-\langle\mathrm{ad}^*_X\xi,Y\rangle=\langle\xi,[Y,X]\rangle ,
-\qquad X,Y\in\mathfrak g,\ \xi\in\mathfrak g^* ,
+\langle\mathrm{ad}^*_X\zeta,Y\rangle=\langle\zeta,[Y,X]\rangle ,
+\qquad X,Y\in\mathfrak g,\ \zeta\in\mathfrak g^* ,
 $$
-chosen so that the coadjoint action has the same orientation as the Lie–Poisson bracket of *Poisson Geometry*: with this choice the reduced equation of a Hamiltonian is $d\xi/dt=\mathrm{ad}^*_{dH}\xi$, with a plus, and the Euler–Poincaré equation above likewise carries a plus. The opposite convention, $\langle\mathrm{ad}^*_X\xi,Y\rangle=\langle\xi,[X,Y]\rangle$, is equally common and reverses the sign of both equations together; **the only thing that must not be done is to mix the two**, and the convention is recorded here because every sign in the article depends on it. The symplectic form, the Hamiltonian vector field, the Poisson bracket of a symplectic manifold and the momentum map are those of *Symplectic Geometry* and *Symplectic Forms and Poisson Brackets*; the Lie algebras, their structure constants and their coadjoint orbits are those of *Lie Groups*; the reduction theorem in its general form is that of *Symplectic Geometry*.
+chosen so that the coadjoint action has the same orientation as the Lie–Poisson bracket of *Poisson Geometry*: with this choice the reduced equation of a Hamiltonian is $d\zeta/dt=\mathrm{ad}^*_{dH}\zeta$, with a plus, and the Euler–Poincaré equation above likewise carries a plus. The opposite convention, $\langle\mathrm{ad}^*_X\zeta,Y\rangle=\langle\zeta,[X,Y]\rangle$, is equally common and reverses the sign of both equations together; **the only thing that must not be done is to mix the two**, and the convention is recorded here because every sign in the article depends on it. The symplectic form, the Hamiltonian vector field, the Poisson bracket of a symplectic manifold and the momentum map are those of *Symplectic Geometry* and *Symplectic Forms and Poisson Brackets*; the Lie algebras, their structure constants and their coadjoint orbits are those of *Lie Groups*; the reduction theorem in its general form is that of *Symplectic Geometry*.
 
 The companion articles are:
 
@@ -45,11 +45,11 @@ the dual of the Lie algebra, and the quotient map is the trivialisation followed
 
 ### The Reduced Bracket
 
-The bracket on $\mathfrak g^*$ produced by the reduction has a closed form, and it is the definition of the Lie–Poisson structure. For $f,g\in C^\infty(\mathfrak g^*)$ and $\xi\in\mathfrak g^*$,
+The bracket on $\mathfrak g^*$ produced by the reduction has a closed form, and it is the definition of the Lie–Poisson structure. For $f,g\in C^\infty(\mathfrak g^*)$ and $\zeta\in\mathfrak g^*$,
 $$
-\boxed{\;\{f,g\}(\xi)=\bigl\langle\xi,\,[df_\xi,dg_\xi]\bigr\rangle\;} ,
+\boxed{\;\{f,g\}(\zeta)=\bigl\langle\zeta,\,[df_\zeta,dg_\zeta]\bigr\rangle\;} ,
 $$
-where $df_\xi$ and $dg_\xi$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc_{kij}x_k$ with $c_{kij}$ the structure constants of $\mathfrak g$; the bracket is therefore **linear**, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a *linear* structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.
+where $df_\zeta$ and $dg_\zeta$ are read as elements of $\mathfrak g$ through the pairing. In linear coordinates, $\{x_i,x_j\}=\sum_kc_{kij}x_k$ with $c_{kij}$ the structure constants of $\mathfrak g$; the bracket is therefore **linear**, that is, the bracket of two linear functions is again linear, and a linear Poisson structure on a vector space is the same thing as a Lie algebra structure on its dual. This is the reason the reduction lands on a *linear* structure: the quotient of $T^*G$ by the lift of left translation is a vector space, and its Poisson tensor has no quadratic terms.
 
 Three properties are inherited rather than imposed. **The Jacobi identity** holds because it is the Jacobi identity of $\mathfrak g$; the reduction produces a Poisson structure for free. **Antisymmetry** holds because the bracket of $\mathfrak g$ is antisymmetric. And the **rank** at a point is the codimension of its coadjoint orbit, so the structure is symplectic exactly where the coadjoint orbit is open, that is, on the union of the orbits of maximal dimension. The reduction to $\mathfrak g^*$ therefore does not merely produce a Poisson manifold; it produces the manifold whose leaves are the objects that the orbit method of *Lie Groups* is about.
 
@@ -65,9 +65,9 @@ df/dt=\{f,H\},
 $$
 which is the same formula as in the finite-dimensional Hamiltonian theory of *Lagrangian and Hamiltonian Systems* and is the sense in which the reduction preserves the form of the equations. Written on the momentum itself, the equation is
 $$
-\boxed{\;d\xi/dt=\mathrm{ad}^*_{dH_\xi}\xi\;} ,
+\boxed{\;d\zeta/dt=\mathrm{ad}^*_{dH_\zeta}\zeta\;} ,
 $$
-the **Lie–Poisson equation**: the momentum is transported by the coadjoint action of the differential of the Hamiltonian. With the convention of the introduction the equation carries a plus; the equivalent reading $\frac{d}{dt}\langle\xi,X\rangle=\langle\xi,[X,dH]\rangle$, valid for every $X\in\mathfrak g$, is the one to use when the sign is in doubt, since it depends only on the bracket of $\mathfrak g$ and on the pairing.
+the **Lie–Poisson equation**: the momentum is transported by the coadjoint action of the differential of the Hamiltonian. With the convention of the introduction the equation carries a plus; the equivalent reading $\frac{d}{dt}\langle\zeta,X\rangle=\langle\zeta,[X,dH]\rangle$, valid for every $X\in\mathfrak g$, is the one to use when the sign is in doubt, since it depends only on the bracket of $\mathfrak g$ and on the pairing.
 
 The finite-dimensional case is the rotation group. For $\mathfrak g=\mathfrak{so}(3)$ with the bracket of the wedge product and the pairing the Euclidean one, the dual is $\mathbb{R}^3$ and the Lie–Poisson bracket on linear coordinates is
 $$
@@ -88,28 +88,28 @@ The functions that the Lie–Poisson bracket annihilates are the invariants of t
 
 ### Reduction of the Variational Principle
 
-The same reduced equations can be obtained without writing a Poisson structure at all, and the variational route is the one that extends to infinite dimensions. Let $\ell:\mathfrak g\to\mathbb R$ be a Lagrangian on the Lie algebra, let $g(t)$ be a curve in $G$ with $\xi(t)=g(t)^{-1}\left(dg/dt\right)(t)\in\mathfrak g$ the **left-trivialised velocity**, and let the action be
+The same reduced equations can be obtained without writing a Poisson structure at all, and the variational route is the one that extends to infinite dimensions. Let $\ell:\mathfrak g\to\mathbb R$ be a Lagrangian on the Lie algebra, let $g(t)$ be a curve in $G$ with $\zeta(t)=g(t)^{-1}\left(dg/dt\right)(t)\in\mathfrak g$ the **left-trivialised velocity**, and let the action be
 $$
-\mathcal S[g]=\int_a^b\ell\bigl(\xi(t)\bigr)dt .
+\mathcal S[g]=\int_a^b\ell\bigl(\zeta(t)\bigr)dt .
 $$
-The Lagrangian is left-invariant by construction, since the velocity was trivialised on the left. The variation of the curve induces a variation of $\xi$ of the form
+The Lagrangian is left-invariant by construction, since the velocity was trivialised on the left. The variation of the curve induces a variation of $\zeta$ of the form
 $$
-\delta\xi=d\eta/dt+[\xi,\eta],\qquad \eta=\text{the trivialised variation},
+\delta\zeta=d\eta/dt+[\zeta,\eta],\qquad \eta=\text{the trivialised variation},
 $$
 with the bracket of $\mathfrak g$ in the second term, and the vanishing of the first variation of $\mathcal S$ for every $\eta$ vanishing at the endpoints gives Hamilton's principle in the reduced variables,
 $$
-\delta\mathcal S=\int_a^b\Bigl\langle\frac{\delta\ell}{\delta\xi},\ d\eta/dt+[\xi,\eta]\Bigr\rangle dt=0
+\delta\mathcal S=\int_a^b\Bigl\langle\frac{\delta\ell}{\delta\zeta},\ d\eta/dt+[\zeta,\eta]\Bigr\rangle dt=0
 \qquad\text{for all }\eta .
 $$
 Integrating the first term by parts and using the definition of the coadjoint action,
 $$
-\Bigl\langle\frac{\delta\ell}{\delta\xi},\,[\xi,\eta]\Bigr\rangle=\Bigl\langle\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi},\ \eta\Bigr\rangle ,
+\Bigl\langle\frac{\delta\ell}{\delta\zeta},\,[\zeta,\eta]\Bigr\rangle=\Bigl\langle\mathrm{ad}^*_\zeta\frac{\delta\ell}{\delta\zeta},\ \eta\Bigr\rangle ,
 $$
 the boundary term vanishes and the fundamental lemma gives the **Euler–Poincaré equation**
 $$
-\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}\;}.
+\boxed{\;\frac{d}{dt}\frac{\delta\ell}{\delta\zeta}=\mathrm{ad}^*_\zeta\frac{\delta\ell}{\delta\zeta}\;}.
 $$
-Two features of the derivation are the content of the equation. First, **the momentum is transported by the coadjoint action of the velocity itself**, so the equation is nonlinear in the velocity and is not the statement that momentum is constant; the reduction of a symmetry does not produce a conserved momentum, it produces a momentum that moves under the coadjoint action. Second, **the equation is a single equation on $\mathfrak g^*$**, not a pair on $T^*G$: the configuration variable $g$ has been eliminated, and it is recovered afterwards by solving the reconstruction equation $dg/dt=g\xi$, which is linear in $g$ once $\xi$ is known. The reduction has hence removed the group and kept the algebra, at the price of a nonlinear equation and the loss of the canonical structure.
+Two features of the derivation are the content of the equation. First, **the momentum is transported by the coadjoint action of the velocity itself**, so the equation is nonlinear in the velocity and is not the statement that momentum is constant; the reduction of a symmetry does not produce a conserved momentum, it produces a momentum that moves under the coadjoint action. Second, **the equation is a single equation on $\mathfrak g^*$**, not a pair on $T^*G$: the configuration variable $g$ has been eliminated, and it is recovered afterwards by solving the reconstruction equation $dg/dt=g\zeta$, which is linear in $g$ once $\zeta$ is known. The reduction has hence removed the group and kept the algebra, at the price of a nonlinear equation and the loss of the canonical structure.
 
 When $\ell$ is the kinetic energy of a left-invariant Riemannian metric on $G$, the Euler–Poincaré equation is the equation of the geodesics of that metric, and the rigid body, the heavy top and the incompressible flow are the three standard cases: the geodesic equation of a left-invariant metric on $SO(3)$, of a left-invariant metric plus a potential on a semidirect product, and of the right-invariant $L^2$ metric on the volume-preserving diffeomorphism group. This is the sense in which the Lie–Poisson reduction is the Hamiltonian side of a statement in Riemannian geometry: the reduced dynamics of a left-invariant kinetic energy is the geodesic flow of a metric, read on the dual of the Lie algebra.
 
@@ -134,9 +134,9 @@ $$
 $$
 and let $\ell:\mathfrak g\times V\to\mathbb R$ be a Lagrangian on the semidirect product. The Euler–Poincaré equation on a semidirect product carries an extra term, because the dual of the semidirect product also pairs the $V$-slot with the $\mathfrak g^*$-slot; the result is the **Euler–Poincaré equation with a semidirect product**, whose reduced Poisson structure is the semidirect-product Lie–Poisson bracket
 $$
-\{f,g\}=\bigl\langle\xi,[df_\xi,dg_\xi]\bigr\rangle-\Bigl\langle v,\,df_\xi\cdot dg_v-dg_\xi\cdot df_v\Bigr\rangle ,
+\{f,g\}=\bigl\langle\zeta,[df_\zeta,dg_\zeta]\bigr\rangle-\Bigl\langle v,\,df_\zeta\cdot dg_v-dg_\zeta\cdot df_v\Bigr\rangle ,
 $$
-with $\xi\in\mathfrak g^*$, $v\in V^*$. For $G=SO(3)$, $V=\mathbb{R}^3$ and the Hamiltonian $\frac12\langle I^{-1}M,M\rangle+\langle\Gamma,\chi\rangle$ for a fixed vector $\chi$, the system is the **heavy top**, and the reduced equation is the Euler–Poincaré equation with the extra term $\Gamma\times\chi$; the bracket has two Casimirs, $\lVert\Gamma\rVert^2$ and $\langle M,\Gamma\rangle$, whose joint level sets are the coadjoint orbits, and the reduced phase space is foliated by them rather than by spheres. The semidirect product is the mechanism by which an external structure is restored to the left-invariant setting, and it is the reason the heavy top is a Lie–Poisson system in the same sense as the rigid body, with a bracket that is linear but not of the purely algebraic form.
+with $\zeta\in\mathfrak g^*$, $v\in V^*$. For $G=SO(3)$, $V=\mathbb{R}^3$ and the Hamiltonian $\frac12\langle I^{-1}M,M\rangle+\langle\Gamma,\chi\rangle$ for a fixed vector $\chi$, the system is the **heavy top**, and the reduced equation is the Euler–Poincaré equation with the extra term $\Gamma\times\chi$; the bracket has two Casimirs, $\lVert\Gamma\rVert^2$ and $\langle M,\Gamma\rangle$, whose joint level sets are the coadjoint orbits, and the reduced phase space is foliated by them rather than by spheres. The semidirect product is the mechanism by which an external structure is restored to the left-invariant setting, and it is the reason the heavy top is a Lie–Poisson system in the same sense as the rigid body, with a bracket that is linear but not of the purely algebraic form.
 
 ### The Diffeomorphism Group and the Ideal Flow
 
@@ -158,9 +158,9 @@ in the plane, with the Hamiltonian the kinetic energy $\frac12\int\lVert\nabla\p
 
 ## Summary
 
-The reduction of the cotangent bundle of a Lie group by the lift of left translation is total: the quotient is the dual of the Lie algebra, $T^*G/G\cong\mathfrak g^*$, and it carries the **Lie–Poisson** structure $\{f,g\}(\xi)=\langle\xi,[df,dg]\rangle$, whose Jacobi identity is that of $\mathfrak g$, whose rank at a point is the codimension of its coadjoint orbit, and whose Casimirs are the invariants of the coadjoint representation. The quotient is not a cotangent bundle and not symplectic; it is the Poisson manifold of *Poisson Geometry*, and its symplectic leaves are the coadjoint orbits with their Kirillov–Kostant–Souriau form. The dynamics is $df/dt=\{f,H\}$, equivalently $d\xi/dt=\mathrm{ad}^*_{dH}\xi$, with the coadjoint convention of the introduction; for the rotation group and the rigid-body Hamiltonian the equation is the Euler top, $dM/dt=I^{-1}M\times M$.
+The reduction of the cotangent bundle of a Lie group by the lift of left translation is total: the quotient is the dual of the Lie algebra, $T^*G/G\cong\mathfrak g^*$, and it carries the **Lie–Poisson** structure $\{f,g\}(\zeta)=\langle\zeta,[df,dg]\rangle$, whose Jacobi identity is that of $\mathfrak g$, whose rank at a point is the codimension of its coadjoint orbit, and whose Casimirs are the invariants of the coadjoint representation. The quotient is not a cotangent bundle and not symplectic; it is the Poisson manifold of *Poisson Geometry*, and its symplectic leaves are the coadjoint orbits with their Kirillov–Kostant–Souriau form. The dynamics is $df/dt=\{f,H\}$, equivalently $d\zeta/dt=\mathrm{ad}^*_{dH}\zeta$, with the coadjoint convention of the introduction; for the rotation group and the rigid-body Hamiltonian the equation is the Euler top, $dM/dt=I^{-1}M\times M$.
 
-The variational route to the same equation is the **Euler–Poincaré equation** $\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}$, obtained by reducing Hamilton's principle to a Lagrangian on the Lie algebra; the momentum is transported by the coadjoint action of the velocity, the configuration variable is eliminated and recovered by reconstruction, and when the Lagrangian is a left-invariant kinetic energy the equation is the geodesic equation of the corresponding left-invariant metric. The three examples are the rigid body, the heavy top on a semidirect product — whose bracket and Euler–Poincaré equation carry an extra term and whose Casimirs are $\lVert\Gamma\rVert^2$ and $\langle M,\Gamma\rangle$ — and the volume-preserving diffeomorphism group, whose reduced bracket is the vorticity bracket, whose equation is the Euler equation of an ideal incompressible flow, and whose enstrophy Casimir makes the vorticity equation conservational. The last example has no finite-dimensional analogue, and the semidirect-product device is what restores an external structure to the left-invariant setting.
+The variational route to the same equation is the **Euler–Poincaré equation** $\frac{d}{dt}\frac{\delta\ell}{\delta\zeta}=\mathrm{ad}^*_\zeta\frac{\delta\ell}{\delta\zeta}$, obtained by reducing Hamilton's principle to a Lagrangian on the Lie algebra; the momentum is transported by the coadjoint action of the velocity, the configuration variable is eliminated and recovered by reconstruction, and when the Lagrangian is a left-invariant kinetic energy the equation is the geodesic equation of the corresponding left-invariant metric. The three examples are the rigid body, the heavy top on a semidirect product — whose bracket and Euler–Poincaré equation carry an extra term and whose Casimirs are $\lVert\Gamma\rVert^2$ and $\langle M,\Gamma\rangle$ — and the volume-preserving diffeomorphism group, whose reduced bracket is the vorticity bracket, whose equation is the Euler equation of an ideal incompressible flow, and whose enstrophy Casimir makes the vorticity equation conservational. The last example has no finite-dimensional analogue, and the semidirect-product device is what restores an external structure to the left-invariant setting.
 
 ## Summary of Notation
 
@@ -169,12 +169,12 @@ The variational route to the same equation is the **Euler–Poincaré equation**
 | $G$, $\mathfrak g$, $\mathfrak g^*$, $[\cdot,\cdot]$, $\langle\cdot,\cdot\rangle$ | Lie group, Lie algebra, its dual, the bracket and the pairing |
 | $T^*G$, $\alpha_g$ | The cotangent bundle and a covector at $g$; the lifted left action trivialises it as $G\times\mathfrak g^*$ |
 | $T^*G/G\cong\mathfrak g^*$ | The reduction: the quotient by the lifted left action is the dual of the Lie algebra |
-| $\{f,g\}(\xi)=\langle\xi,[df_\xi,dg_\xi]\rangle$ | The Lie–Poisson bracket on $\mathfrak g^*$; linear, with $\{x_i,x_j\}=\sum_kc_{kij}x_k$ |
-| $\mathrm{ad}^*_X\xi$, $\langle\mathrm{ad}^*_X\xi,Y\rangle=\langle\xi,[Y,X]\rangle$ | The coadjoint action, with the convention of the introduction |
-| $d\xi/dt=\mathrm{ad}^*_{dH}\xi$, $df/dt=\{f,H\}$ | The Lie–Poisson equation of a Hamiltonian |
+| $\{f,g\}(\zeta)=\langle\zeta,[df_\zeta,dg_\zeta]\rangle$ | The Lie–Poisson bracket on $\mathfrak g^*$; linear, with $\{x_i,x_j\}=\sum_kc_{kij}x_k$ |
+| $\mathrm{ad}^*_X\zeta$, $\langle\mathrm{ad}^*_X\zeta,Y\rangle=\langle\zeta,[Y,X]\rangle$ | The coadjoint action, with the convention of the introduction |
+| $d\zeta/dt=\mathrm{ad}^*_{dH}\zeta$, $df/dt=\{f,H\}$ | The Lie–Poisson equation of a Hamiltonian |
 | Casimir | A function annihilated by the bracket; an invariant of the coadjoint representation; constant on the coadjoint orbits |
-| $\ell:\mathfrak g\to\mathbb R$, $\xi=g^{-1}dg/dt$ | A Lagrangian on the Lie algebra and the left-trivialised velocity of a curve in $G$ |
-| $\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}$ | The Euler–Poincaré equation |
+| $\ell:\mathfrak g\to\mathbb R$, $\zeta=g^{-1}dg/dt$ | A Lagrangian on the Lie algebra and the left-trivialised velocity of a curve in $G$ |
+| $\frac{d}{dt}\frac{\delta\ell}{\delta\zeta}=\mathrm{ad}^*_\zeta\frac{\delta\ell}{\delta\zeta}$ | The Euler–Poincaré equation |
 | $\ell(\Omega)=\frac12\langle I\Omega,\Omega\rangle$, $M=I\Omega$ | The rigid body: kinetic energy on $\mathfrak{so}(3)$ and its momentum; $dM/dt=-M\times\Omega$ |
 | $[(X,u),(Y,v)]=([X,Y],X\cdot v-Y\cdot u)$ | The semidirect product bracket; its Lie–Poisson bracket has an extra term, and the heavy top is the example |
 | $\mathrm{Diff}_\mu(D)$, $\mathfrak g^*$ | The volume-preserving diffeomorphism group and the space of vorticities |

@@ -225,18 +225,18 @@ The optimal control is $u^*=-\operatorname{sgn}\sigma$ before the switching curv
 
 ### The Value Function and Bellman's Principle
 
-**Definition.** For $(\xi,\tau)\in X\times[t_0,T]$ let $\mathcal{\Omega}(\xi,\tau)$ be the admissible controls on $[\tau,T]$ whose trajectory from $\xi$ at time $\tau$ exists; the **value function** is
+**Definition.** For $(\zeta,\tau)\in X\times[t_0,T]$ let $\mathcal{\Omega}(\zeta,\tau)$ be the admissible controls on $[\tau,T]$ whose trajectory from $\zeta$ at time $\tau$ exists; the **value function** is
 
 $$
-V(\xi,\tau) = \inf_{u\in\mathcal{\Omega}(\xi,\tau)}\Bigl[\varphi\bigl(x(T)\bigr) + \int_{\tau}^{T}L\bigl(x,u,t\bigr)dt\Bigr] ,
+V(\zeta,\tau) = \inf_{u\in\mathcal{\Omega}(\zeta,\tau)}\Bigl[\varphi\bigl(x(T)\bigr) + \int_{\tau}^{T}L\bigl(x,u,t\bigr)dt\Bigr] ,
 $$
 
-with $x(\tau)=\xi$; the infimum is over the controls, and $V(\xi,T)=\varphi(\xi)$.
+with $x(\tau)=\zeta$; the infimum is over the controls, and $V(\zeta,T)=\varphi(\zeta)$.
 
 **Theorem (Bellman's principle of optimality).** For $t_0\le\tau\le\tau'\le T$,
 
 $$
-V(\xi,\tau) = \inf_{u}\Bigl[\int_{\tau}^{\tau'}L\bigl(x,u,t\bigr)dt + V\bigl(x(\tau'),\tau'\bigr)\Bigr] ,
+V(\zeta,\tau) = \inf_{u}\Bigl[\int_{\tau}^{\tau'}L\bigl(x,u,t\bigr)dt + V\bigl(x(\tau'),\tau'\bigr)\Bigr] ,
 $$
 
 the infimum being over the controls on $[\tau,\tau']$ and $x$ the trajectory they generate.
@@ -248,20 +248,20 @@ the infimum being over the controls on $[\tau,\tau']$ and $x$ the trajectory the
 **Theorem (Hamilton–Jacobi–Bellman).** Suppose $V$ is of class $C^1$ on $X\times(t_0,T)$. Then $V$ satisfies
 
 $$
-\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi)\;}.
+\boxed{\;\frac{\partial V}{\partial t} + \min_{u\in \Omega}\Bigl[L(\zeta,u,t) + \Bigl\langle \frac{\partial V}{\partial\zeta}, f(\zeta,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\zeta,T)=\varphi(\zeta)\;}.
 $$
 
 *Proof.* Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation.
 
-The minimisation in the statement is over the control at the single point $(\xi,t)$, exactly as in the maximum principle, and the two are related by the identity
+The minimisation in the statement is over the control at the single point $(\zeta,t)$, exactly as in the maximum principle, and the two are related by the identity
 
 $$
-n(t) = \frac{\partial V}{\partial\xi}\bigl(x^*(t),t\bigr)
+n(t) = \frac{\partial V}{\partial\zeta}\bigl(x^*(t),t\bigr)
 $$
 
-along an optimal trajectory: substituting $n=\partial/\partial \xi V$ into the minimised Hamiltonian identifies the Bellman minimiser with the maximum-principle minimiser. In the scalar regulator above the identity reads $n=\tanh(T-t)x=Sx$, the costate obtained from the Riccati equation, and $V=\tfrac12Sx^2$ satisfies $\partial/\partial t V+\tfrac12x^2-\tfrac12(\partial/\partial x V)^2=0$, which is the Bellman equation with the control eliminated: $\min_u[\tfrac12(x^2+u^2)+(\partial/\partial x V)u] = \tfrac12x^2-\tfrac12(\partial/\partial x V)^2$ at $u=-\partial/\partial x V$.
+along an optimal trajectory: substituting $n=\partial/\partial \zeta V$ into the minimised Hamiltonian identifies the Bellman minimiser with the maximum-principle minimiser. In the scalar regulator above the identity reads $n=\tanh(T-t)x=Sx$, the costate obtained from the Riccati equation, and $V=\tfrac12Sx^2$ satisfies $\partial/\partial t V+\tfrac12x^2-\tfrac12(\partial/\partial x V)^2=0$, which is the Bellman equation with the control eliminated: $\min_u[\tfrac12(x^2+u^2)+(\partial/\partial x V)u] = \tfrac12x^2-\tfrac12(\partial/\partial x V)^2$ at $u=-\partial/\partial x V$.
 
-**Theorem (verification).** Suppose $W\in C^1$ satisfies the Hamilton–Jacobi–Bellman equation with $W(\xi,T)=\varphi(\xi)$, and suppose that for each $(\xi,t)$ the minimum in the equation is attained at $u=\kappa(\xi,t)$ with $\kappa$ measurable. Then $W=V$ on $X\times[t_0,T]$, the closed-loop equation $dx/dt=f(x,\kappa(x,t),t)$ has trajectories that are admissible, and the corresponding control is optimal.
+**Theorem (verification).** Suppose $W\in C^1$ satisfies the Hamilton–Jacobi–Bellman equation with $W(\zeta,T)=\varphi(\zeta)$, and suppose that for each $(\zeta,t)$ the minimum in the equation is attained at $u=\kappa(\zeta,t)$ with $\kappa$ measurable. Then $W=V$ on $X\times[t_0,T]$, the closed-loop equation $dx/dt=f(x,\kappa(x,t),t)$ has trajectories that are admissible, and the corresponding control is optimal.
 
 *Proof.* For any admissible control and its trajectory, the Bellman equation gives $\frac{d}{dt}W(x(t),t) = \partial/\partial t W+\partial/\partial x W\cdot f \le -L(x,u,t)$ with equality exactly at $u=\kappa(x,t)$; integrating from $t$ to $T$ and using $W(\cdot,T)=\varphi$ gives $W(x(t),t)\le J$ for every $u$, with equality for the closed-loop control.
 
@@ -269,7 +269,7 @@ The verification theorem is why dynamic programming proves **sufficiency**, wher
 
 ### The Passage between the Two Routes
 
-The two routes are related by the **characteristic system** of the Bellman equation. The equation $\partial/\partial t V + H(\xi,\kappa(\xi,\partial/\partial \xi V,t),\partial/\partial \xi V,t)=0$ is a first-order partial differential equation whose characteristic equations, along the curves of steepest descent, are the state and costate equations of the maximum principle, with $n=\partial/\partial \xi V$; the initial condition $V(\xi,T)=\varphi(\xi)$ produces the terminal condition $n(T)=\partial/\partial x\varphi(x(T))$ on the characteristics that arrive at $T$. The maximum principle is thus the characteristic method for the Bellman equation, and it is available precisely when the value function is not: its equations are ordinary, along a single trajectory, and they do not require the value function to exist as a differentiable function of the state. The Bellman equation, conversely, decides the global question the maximum principle leaves open, for a convex problem its solution certifying the optimum where the costate system supplies only candidates.
+The two routes are related by the **characteristic system** of the Bellman equation. The equation $\partial/\partial t V + H(\zeta,\kappa(\zeta,\partial/\partial \zeta V,t),\partial/\partial \zeta V,t)=0$ is a first-order partial differential equation whose characteristic equations, along the curves of steepest descent, are the state and costate equations of the maximum principle, with $n=\partial/\partial \zeta V$; the initial condition $V(\zeta,T)=\varphi(\zeta)$ produces the terminal condition $n(T)=\partial/\partial x\varphi(x(T))$ on the characteristics that arrive at $T$. The maximum principle is thus the characteristic method for the Bellman equation, and it is available precisely when the value function is not: its equations are ordinary, along a single trajectory, and they do not require the value function to exist as a differentiable function of the state. The Bellman equation, conversely, decides the global question the maximum principle leaves open, for a convex problem its solution certifying the optimum where the costate system supplies only candidates.
 
 ## Summary
 
@@ -297,7 +297,7 @@ The **linear-quadratic regulator** is the case of a linear system and a quadrati
 | $S$ | Riccati matrix, $n=Sx$ |
 | $dS/dt=-C-A^{\mathsf T}S-SA+SBD^{-1}B^{\mathsf T}S$ | Matrix Riccati equation, $S(T)=E$ |
 | $\sigma=x_1+\tfrac12x_2\lvert x_2\rvert$ | Switching function of the double integrator |
-| $V(\xi,\tau)$ | Value function, the least cost from $(\xi,\tau)$ |
+| $V(\zeta,\tau)$ | Value function, the least cost from $(\zeta,\tau)$ |
 | $\partial/\partial t V+\min_u[L+\langle \partial/\partial x V,f\rangle]=0$ | Hamilton–Jacobi–Bellman equation |
 | $n=\partial/\partial x V$ | Costate of the maximum principle as a value gradient |
 

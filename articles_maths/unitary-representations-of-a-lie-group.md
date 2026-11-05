@@ -125,7 +125,7 @@ which is bounded, continuous and uniformly continuous in each variable; it is **
 
 ### The Vector Group
 
-For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\xi(x) = \exp(2\pi i\,\xi\cdot x)$ with $\xi \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\xi\cdot X)v$, skew-adjoint because the scalar is imaginary.
+For $G = \mathbb{R}^n$ the irreducible unitary representations are the characters $\chi_\zeta(x) = \exp(2\pi i\,\zeta\cdot x)$ with $\zeta \in \mathbb{R}^n$, the unitary dual is $\mathbb{R}^n$, and the Plancherel measure is Lebesgue measure; the decomposition of the regular representation is the Fourier transform, and the derived representation is $\pi_*(X)v = 2\pi i\,(\zeta\cdot X)v$, skew-adjoint because the scalar is imaginary.
 
 ### A Compact Group
 

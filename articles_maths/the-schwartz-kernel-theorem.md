@@ -199,16 +199,16 @@ whenever one of the operators has compactly supported kernel, the integral being
 
 ### Pseudodifferential Kernels
 
-**Example (symbols and kernels).** For a symbol $\mathfrak{a}(x,\xi)$ on $\mathbb{R}^n$ define formally
+**Example (symbols and kernels).** For a symbol $\mathfrak{a}(x,\zeta)$ on $\mathbb{R}^n$ define formally
 
 $$
-T\varphi(x)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\varphi(y)\,dy\,d\xi .
+T\varphi(x)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\zeta)\mathfrak{a}(x,\zeta)\varphi(y)\,dy\,d\zeta .
 $$
 
-If $\mathfrak{a}$ is a smooth function of at most polynomial growth in $\xi$, the functional is defined by regularisation and the kernel is
+If $\mathfrak{a}$ is a smooth function of at most polynomial growth in $\zeta$, the functional is defined by regularisation and the kernel is
 
 $$
-K(x,y)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,d\xi ,
+K(x,y)=\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\zeta)\mathfrak{a}(x,\zeta)\,d\zeta ,
 $$
 
 a distribution whose singularities lie on the diagonal and whose behaviour off the diagonal records the smoothness of $\mathfrak{a}$. The class of symbols, the composition formula that computes the kernel of a product of two such operators, and the conditions under which the integral converges are those, where the calculus is developed; the kernel theorem is what permits the operator and the kernel to be treated as the same object throughout.
@@ -245,7 +245,7 @@ For open $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$, the algebrai
 
 The proof is the identification of three dualities: $\mathcal L(\mathcal D(X),\mathcal D'(Y))$ is the space of continuous bilinear forms on $\mathcal D(X)\times\mathcal D(Y)$, the dual of the completed projective tensor product is the space of such forms, and for the nuclear spaces $\mathcal D(X)$, $\mathcal D(Y)$ the completed projective tensor product is $\mathcal D(X\times Y)$. Nuclearity is essential: the two completions coincide, and the representation of an operator by a kernel on the product is concrete. The tempered version holds for $\mathcal S(\mathbb{R}^m)$, $\mathcal S(\mathbb{R}^n)$ and gives $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L(\mathcal S(\mathbb{R}^m),\mathcal S'(\mathbb{R}^n))$, the bridge from operators to symbols.
 
-The standard kernels are the delta of the diagonal for the identity, the derivatives of the delta for the differential operators, $\mathfrak{a}(x)\delta(x-y)$ for multiplication, the reflected conjugate kernel for the adjoint and the pairing integral for the composition; kernels in $L^2(X\times Y)$ are exactly the Hilbert–Schmidt operators, with the norm equal to the $L^2$ norm of the kernel, and smooth kernels are exactly the smoothing operators, which form a two-sided ideal. Green's functions are the kernels of inverses of differential operators, and the kernels of pseudodifferential operators are the oscillatory integrals $\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\xi)\mathfrak{a}(x,\xi)\,d\xi$. The algebraic form of the theorem identifies $(E\hat\otimes F)'$ with $E'\hat\otimes F'$ and with $\mathcal L(E,F')$ for Fréchet nuclear $E,F$, so that a distribution in $m+n$ variables is the same thing as an operator from the first group of variables to the second; in finite dimension this is the identification of an operator with its matrix.
+The standard kernels are the delta of the diagonal for the identity, the derivatives of the delta for the differential operators, $\mathfrak{a}(x)\delta(x-y)$ for multiplication, the reflected conjugate kernel for the adjoint and the pairing integral for the composition; kernels in $L^2(X\times Y)$ are exactly the Hilbert–Schmidt operators, with the norm equal to the $L^2$ norm of the kernel, and smooth kernels are exactly the smoothing operators, which form a two-sided ideal. Green's functions are the kernels of inverses of differential operators, and the kernels of pseudodifferential operators are the oscillatory integrals $\frac{1}{(2\pi)^n}\int \exp(i(x-y)\cdot\zeta)\mathfrak{a}(x,\zeta)\,d\zeta$. The algebraic form of the theorem identifies $(E\hat\otimes F)'$ with $E'\hat\otimes F'$ and with $\mathcal L(E,F')$ for Fréchet nuclear $E,F$, so that a distribution in $m+n$ variables is the same thing as an operator from the first group of variables to the second; in finite dimension this is the identification of an operator with its matrix.
 
 ## Summary of Notation
 
@@ -264,7 +264,7 @@ The standard kernels are the delta of the diagonal for the identity, the derivat
 | ${}^tT$, $T^*$, $K^*$ | transpose, adjoint and adjoint kernel |
 | $L\circ K$ | composition of kernels |
 | $\|T\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
-| $\mathfrak{a}(x,\xi)$ | symbol of an operator |
+| $\mathfrak{a}(x,\zeta)$ | symbol of an operator |
 | $G(x,y)$ | Green's function |
 
 

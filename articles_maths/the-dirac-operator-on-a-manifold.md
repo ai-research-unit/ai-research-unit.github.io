@@ -42,12 +42,12 @@ for a local $g$-orthonormal frame $(e_i)$ of tangent vector fields; in even dime
 **Theorem.** The operator $D$ is formally self-adjoint for the spinor inner product, $D^{*}=D$; it is elliptic with principal symbol the Clifford multiplication
 
 $$
-\sigma_D(\xi)=i\,c(\xi),\qquad \sigma_D(\xi)^{2}=|\xi|^{2}\,\mathrm{id},
+\sigma_D(\zeta)=i\,c(\zeta),\qquad \sigma_D(\zeta)^{2}=|\zeta|^{2}\,\mathrm{id},
 $$
 
-invertible for $\xi\neq0$; and it anticommutes with the chirality, so in even dimensions it maps $\mathcal{S}^{\pm}$ to $\mathcal{S}^{\mp}$ and the two chiral halves $D^{+}$ and $D^{-}$ are formally adjoint.
+invertible for $\zeta\neq0$; and it anticommutes with the chirality, so in even dimensions it maps $\mathcal{S}^{\pm}$ to $\mathcal{S}^{\mp}$ and the two chiral halves $D^{+}$ and $D^{-}$ are formally adjoint.
 
-**Proof.** The formal self-adjointness is the compatibility of the spin connection with the spinor metric and the skew-adjointness of the Clifford multiplication, together with the divergence identity for the connection; the symbol is the Clifford multiplication, whose square is $-|\xi|^{2}$, up to the normalising factor $i$ that makes the symbol of a real first-order operator; the anticommutation with the chirality is the property $c(v)\omega_{\mathbb{C}}=-\omega_{\mathbb{C}}c(v)$ of the complex volume element, whence $D$ exchanges the two halves.
+**Proof.** The formal self-adjointness is the compatibility of the spin connection with the spinor metric and the skew-adjointness of the Clifford multiplication, together with the divergence identity for the connection; the symbol is the Clifford multiplication, whose square is $-|\zeta|^{2}$, up to the normalising factor $i$ that makes the symbol of a real first-order operator; the anticommutation with the chirality is the property $c(v)\omega_{\mathbb{C}}=-\omega_{\mathbb{C}}c(v)$ of the complex volume element, whence $D$ exchanges the two halves.
 
 **Remark.** The operator is the curved-space member of the family of Cauchy–Riemann operators of the corpus, the flat member being the operator $\sum_\mu\,e_\mu\partial/\partial x_\mu$ of the Clifford algebra; the classical name is the Dirac operator. It is a first-order self-adjoint elliptic operator whose square is a second-order operator, exactly as the signature operator $d+d^{*}$ is, and it is the model of the operators of this category. The analytic theory of the operator — the precise domain, the closed extensions, the completeness of the eigenspinors and the heat kernel — belongs to Part III, where the measure and the limit are available, and the statements above are the formal identities that Part III completes.
 
@@ -122,7 +122,7 @@ using the self-adjointness of the connection Laplacian; if $D\psi=0$ and $\opera
 
 ## Summary
 
-A **spin structure** on an oriented Riemannian manifold is a two-fold cover of the frame bundle by a $\mathrm{Spin}(n)$-bundle, existing exactly when $w_{2}(TM)=0$, and it carries the **spinor bundle** $\mathcal{S}$ with its Clifford multiplication $c$, $c(v)^{2}=-|v|^{2}$, its metric spin connection and, in even dimensions, its chirality splitting $\mathcal{S}=\mathcal{S}^{+}\oplus\mathcal{S}^{-}$. The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, classically the **Dirac operator**, is formally self-adjoint and elliptic with symbol $i\,c(\xi)$, and it exchanges the half-spinor bundles. The **Lichnerowicz formula** $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ expresses the square through the connection Laplacian and the scalar curvature, and it gives the **vanishing theorem**: a closed spin manifold of strictly positive scalar curvature has no harmonic spinor and vanishing $\hat A$-genus. The index of the positive half is the **$\hat A$-genus**, $\operatorname{ind}D^{+}=\int_M\hat A(TM)$, an integer for a closed spin manifold; the twisted version pairs $\hat A$ with the Chern character of the twisting bundle; and in dimension four the integrality gives Rökhlin's divisibility $16\mid\sigma$.
+A **spin structure** on an oriented Riemannian manifold is a two-fold cover of the frame bundle by a $\mathrm{Spin}(n)$-bundle, existing exactly when $w_{2}(TM)=0$, and it carries the **spinor bundle** $\mathcal{S}$ with its Clifford multiplication $c$, $c(v)^{2}=-|v|^{2}$, its metric spin connection and, in even dimensions, its chirality splitting $\mathcal{S}=\mathcal{S}^{+}\oplus\mathcal{S}^{-}$. The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$, classically the **Dirac operator**, is formally self-adjoint and elliptic with symbol $i\,c(\zeta)$, and it exchanges the half-spinor bundles. The **Lichnerowicz formula** $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ expresses the square through the connection Laplacian and the scalar curvature, and it gives the **vanishing theorem**: a closed spin manifold of strictly positive scalar curvature has no harmonic spinor and vanishing $\hat A$-genus. The index of the positive half is the **$\hat A$-genus**, $\operatorname{ind}D^{+}=\int_M\hat A(TM)$, an integer for a closed spin manifold; the twisted version pairs $\hat A$ with the Chern character of the twisting bundle; and in dimension four the integrality gives Rökhlin's divisibility $16\mid\sigma$.
 
 ## Summary of Notation
 
@@ -134,7 +134,7 @@ A **spin structure** on an oriented Riemannian manifold is a two-fold cover of t
 | $c(v)$, $c(v)^2=-|v|^2$ | Clifford multiplication |
 | $\nabla^{\mathcal{S}}$ | Spin connection (Levi-Civita lifted to the spinors) |
 | $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ | Cauchy–Riemann operator (Dirac operator); $D^{\pm}:\Gamma(\mathcal{S}^{\pm})\to\Gamma(\mathcal{S}^{\mp})$ |
-| $\sigma_D(\xi)=i\,c(\xi)$ | Principal symbol |
+| $\sigma_D(\zeta)=i\,c(\zeta)$ | Principal symbol |
 | $D^2=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ | Lichnerowicz formula |
 | $\operatorname{scal}$ | Scalar curvature |
 | $\hat A(TM)=1-n_1/24+\cdots$ | $\hat A$-class; $\operatorname{ind}D^{+}=\int_M\hat A(TM)$ |

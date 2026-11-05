@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The plain product of the biquaternion algebra, read at the central value $+1$, gives one equation, $\tilde\Xi\tilde\Xi=e_t$, and two objects. Its solutions are the **roots of $+1$**; the elements with $\tilde\Pi\tilde\Pi=\tilde\Pi$ are the **idempotents**; and the **halving map** $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection from the first set onto the second. A root of $+1$ is an operation of square one, and the two idempotents it carries are the algebraic projections onto its two eigenspaces.
+The plain product of the biquaternion algebra, read at the central value $+1$, gives one equation, $\tilde{Ζ}\tilde{Ζ}=e_t$, and two objects. Its solutions are the **roots of $+1$**; the elements with $\tilde\Pi\tilde\Pi=\tilde\Pi$ are the **idempotents**; and the **halving map** $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the first set onto the second. A root of $+1$ is an operation of square one, and the two idempotents it carries are the algebraic projections onto its two eigenspaces.
 
 This article reads the pair physically. The **Hermitian roots of $+1$** are read as the **involutive observables** of the informational sector, the observables whose only values are $\pm1$. The **nontrivial Hermitian idempotents** are read as the **pure states** of that sector. For a nontrivial root, the root and its pair are one datum seen twice: the observable and its two eigenstates; the trivial roots are the degenerate exception. The non-Hermitian roots and idempotents are read as neither, and the roots of $-1$ are read as the **algebraic complex structures** — the central one the scalar imaginary, the non-central ones internal complex structures on the underlying real vector space — and not as local complex structures; the images of the Hermitian roots lie in the material sector.
 
@@ -29,13 +29,13 @@ $$
 \tilde Q^2=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)e_t+2Q_t\vec Q,
 $$
 
-and the equation $\tilde\Xi^2=e_t$ separates into $2\Xi_t\vec\Xi=0$ and $\Xi_t^2-(\vec\Xi,\vec\Xi)=1$. Since $\mathbb{C}$ is a field, a root is either a complex scalar or pure, and the two branches exhaust the solutions. The scalar branch gives the two central roots $\pm e_t$. The pure branch splits again:
+and the equation $\tilde{Ζ}^2=e_t$ separates into $2Ζ_t\vec{Ζ}=0$ and $Ζ_t^2-(\vec{Ζ},\vec{Ζ})=1$. Since $\mathbb{C}$ is a field, a root is either a complex scalar or pure, and the two branches exhaust the solutions. The scalar branch gives the two central roots $\pm e_t$. The pure branch splits again:
 
 | family | elements | real parameters | Hermitian |
 | --- | --- | --- | --- |
 | trivial | $\pm e_t$ | two isolated | yes, central |
-| purely imaginary | $i\tilde\xi$, $\tilde\xi$ a real pure quaternion of square $-e_t$ | two | yes |
-| non-trivial | $\vec\xi+i\vec\xi'$, $\vec\xi\neq0$, with $\xi^2-{\xi'}^2=-1$ and $\vec\xi\cdot\vec\xi'=0$ | four | no |
+| purely imaginary | $i\tilde\zeta$, $\tilde\zeta$ a real pure quaternion of square $-e_t$ | two | yes |
+| non-trivial | $\vec\zeta+i\vec\zeta'$, $\vec\zeta\neq0$, with $\zeta^2-{\zeta'}^2=-1$ and $\vec\zeta\cdot\vec\zeta'=0$ | four | no |
 
 Three facts about the table carry the whole reading. First, **the Hermitian roots are exactly the trivial roots and the purely imaginary family**: a Hermitian element has the form $h_te_t+i\vec h$ with $h_t$ real and $\vec h$ real pure, its square is $(h_t^2+\lvert\vec h\rvert^2)e_t+2h_ti\vec h$, and the vector part vanishes only at $h_t=0$ or $\vec h=0$. Second, **every root is a unit**, with inverse itself, so no root is a zero divisor. Third, **the non-trivial roots are not Hermitian**, so the table already separates the observables from the rest.
 
@@ -46,17 +46,17 @@ The separation is the first physical statement of the article. The physically av
 The halving map is the bridge between the two objects:
 
 $$
-\boxed{\;\tilde\Xi\longmapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi),\qquad
-\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_t-\tilde\Xi)=e_t-\tilde\Pi_+(\tilde\Xi)\;}.
+\boxed{\;\tilde{Ζ}\longmapsto\tilde\Pi_+(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ}),\qquad
+\tilde\Pi_-(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_+(\tilde{Ζ})\;}.
 $$
 
-The two computations are two lines: if $\tilde\Xi^2=e_t$ then $\tfrac14(e_t+\tilde\Xi)^2=\tfrac12(e_t+\tilde\Xi)$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=e_t$. The inverse is $\tilde\Xi=2\tilde\Pi-e_t$.
+The two computations are two lines: if $\tilde{Ζ}^2=e_t$ then $\tfrac14(e_t+\tilde{Ζ})^2=\tfrac12(e_t+\tilde{Ζ})$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=e_t$. The inverse is $\tilde{Ζ}=2\tilde\Pi-e_t$.
 
 The pair has four properties, and each is a physical statement in the reading that follows.
 
 - **Orthogonal and complete.** $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$. The two projections resolve the identity: the two outcomes exhaust the alternatives.
-- **The root is the difference.** $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. The observable is the difference of its two states.
-- **The root acts by the two signs.** $\tilde\Xi\tilde\Pi_+=\tilde\Pi_+\tilde\Xi=\tilde\Pi_+$ and $\tilde\Xi\tilde\Pi_-=\tilde\Pi_-\tilde\Xi=-\tilde\Pi_-$. The pair is the spectral decomposition of the root, with eigenvalues $+1$ and $-1$.
+- **The root is the difference.** $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. The observable is the difference of its two states.
+- **The root acts by the two signs.** $\tilde{Ζ}\tilde\Pi_+=\tilde\Pi_+\tilde{Ζ}=\tilde\Pi_+$ and $\tilde{Ζ}\tilde\Pi_-=\tilde\Pi_-\tilde{Ζ}=-\tilde\Pi_-$. The pair is the spectral decomposition of the root, with eigenvalues $+1$ and $-1$.
 - **Each nontrivial idempotent is a zero divisor.** $\tilde\Pi(e_t-\tilde\Pi)=0$, and a nontrivial idempotent has vanishing norm, $\langle\tilde\Pi\rangle_{\natural}=0$. The states lie on the cone even though the observables do not.
 
 The last property is the sharpest algebraic contrast between the two objects. A root of $+1$ is a unit and never a zero divisor. Its nontrivial idempotents are zero divisors, and they lie on the zero-divisor cone. The nontrivial observable is invertible; its eigenstates are not. The degenerate pair $0,e_t$ is the exception: it is the trivial resolution and carries no state. That is not a defect: a projection is not meant to be invertible, and the non-invertibility is exactly the collapse of information that a projection performs.
@@ -69,20 +69,20 @@ A Hermitian root is a Hermitian element of square $e_t$. It is an operator with 
 
 > **The Hermitian roots of $+1$ are the involutive observables** — the observables of square one, the parities and the signs of the informational sector.
 
-The trivial roots $\pm e_t$ are the observables $+1$ and $-1$; they are central and carry no direction. The family $\pm i\tilde\xi$ is the non-central one: a point $\tilde\xi$ on the real unit sphere, and the observable $i\tilde\xi$. The two signs do not double the family, since $\xi$ already ranges over the sphere, so the family is one observable for each point of $S^2$. The standard examples are $i\vec e_z$, $i\vec e_x$ and $i\vec e_y$; the non-trivial root $\vec e_x+i(\vec e_y+\vec e_z)$ is a root but not Hermitian, and the table places it outside the observables.
+The trivial roots $\pm e_t$ are the observables $+1$ and $-1$; they are central and carry no direction. The family $\pm i\tilde\zeta$ is the non-central one: a point $\tilde\zeta$ on the real unit sphere, and the observable $i\tilde\zeta$. The two signs do not double the family, since $\zeta$ already ranges over the sphere, so the family is one observable for each point of $S^2$. The standard examples are $i\vec e_z$, $i\vec e_x$ and $i\vec e_y$; the non-trivial root $\vec e_x+i(\vec e_y+\vec e_z)$ is a root but not Hermitian, and the table places it outside the observables.
 
 The family is two-dimensional because the sphere is. The observable's eigenvalues do not depend on the point; only its eigenbasis does. The point of $S^2$ labels the **observable** $i\vec u$, while the **axis of the measurement** is the line through $\vec u$. The antipodal point gives $-i\vec u$: the same pair of projectors with the two outcomes exchanged, so the axis is a point of $\mathbb{RP}^2$ and the observable is an oriented axis. The reading is the algebraic form of a Stern–Gerlach measurement: one oriented axis is chosen, and the two outcomes are the two signs along it. The choice is a choice of observable; the algebra fixes the two possible outcomes once it is made.
 
 Two further carriers of the same root are worth naming. A traceless Hermitian element $\tilde H=i\vec h$ with $\vec h\neq0$ squares to $\lvert\vec h\rvert^2e_t$, so $\tilde H/\lvert\vec h\rvert$ is an involution; the eigenvalues of $\tilde H$ are $\pm\lvert\vec h\rvert$, the split levels of the Zeeman and Stark effects. The algebra fixes the structure and the magnitude of the splitting, not the gyromagnetic ratio. And the central root $-e_t$ is the rotor of a full turn, $R(2\pi)=-e_t$, the nontrivial element of the double cover: the two central roots are the two signs of the covering.
 
-The boundary is immediate and important. **Not every observable is a root of $+1$.** A general Hermitian element $\tilde H=h_te_t+i\vec h$ has square $(h_t^2+\lvert\vec h\rvert^2)e_t+2h_ti\vec h$, which is $e_t$ only when $h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$ — that is, only for the trivial roots and the family above. A general observable has arbitrary real eigenvalues $h_t\pm\lvert\vec h\rvert$, and it is the real linear combination $h_te_t+\lvert\vec h\rvert\tilde\Xi$ of the identity and, for $\vec h\neq0$, the root $\tilde\Xi=i\vec h/\lvert\vec h\rvert$; its spectral projections are the halving pair of that root, but the observable itself is a root only when $h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$. The roots of $+1$ are the **involutive** observables, the two-parameter family above together with the two central signs, inside the four-parameter family of general Hermitian elements. The reading names a subclass and does not exhaust the observables.
+The boundary is immediate and important. **Not every observable is a root of $+1$.** A general Hermitian element $\tilde H=h_te_t+i\vec h$ has square $(h_t^2+\lvert\vec h\rvert^2)e_t+2h_ti\vec h$, which is $e_t$ only when $h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$ — that is, only for the trivial roots and the family above. A general observable has arbitrary real eigenvalues $h_t\pm\lvert\vec h\rvert$, and it is the real linear combination $h_te_t+\lvert\vec h\rvert\tilde{Ζ}$ of the identity and, for $\vec h\neq0$, the root $\tilde{Ζ}=i\vec h/\lvert\vec h\rvert$; its spectral projections are the halving pair of that root, but the observable itself is a root only when $h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$. The roots of $+1$ are the **involutive** observables, the two-parameter family above together with the two central signs, inside the four-parameter family of general Hermitian elements. The reading names a subclass and does not exhaust the observables.
 
 ## Hermitian Idempotents as States
 
 A Hermitian idempotent is an idempotent with $\tilde\Pi^{*}=\tilde\Pi$. The halving map of the Hermitian roots gives the family
 
 $$
-\boxed{\;\tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^2\;},
+\boxed{\;\tilde\Pi_\pm(i\tilde\zeta)=\tfrac12(e_t\pm i\tilde\zeta),\qquad \tilde\zeta\in S^2\;},
 $$
 
 which is the **Bloch sphere** of the pure states. The normalisation is $2\operatorname{Sc}\tilde\Pi=1$, which the $2\times2$ reading calls trace one, and the norm vanishes, so the state is on the boundary of the positive cone. The trivial cases $e_t$ and $0$ are the degenerate endpoints of the halving map, not states of the trace-one slice.
@@ -91,10 +91,10 @@ The same element carries the other state readings. The von Neumann entropy of a 
 
 > **The nontrivial Hermitian idempotents are the pure states** of the informational sector, and the two idempotents of a nontrivial Hermitian root are the two eigenstates of the observable.
 
-The spectral resolution makes the identification exact. For $\tilde\Xi=i\tilde\xi$,
+The spectral resolution makes the identification exact. For $\tilde{Ζ}=i\tilde\zeta$,
 
 $$
-\boxed{\;\tilde\Xi\tilde\Pi_+=\tilde\Pi_+\tilde\Xi=\tilde\Pi_+,\qquad \tilde\Xi\tilde\Pi_-=\tilde\Pi_-\tilde\Xi=-\tilde\Pi_-,\qquad \tilde\Xi=\tilde\Pi_+-\tilde\Pi_-\;}.
+\boxed{\;\tilde{Ζ}\tilde\Pi_+=\tilde\Pi_+\tilde{Ζ}=\tilde\Pi_+,\qquad \tilde{Ζ}\tilde\Pi_-=\tilde\Pi_-\tilde{Ζ}=-\tilde\Pi_-,\qquad \tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-\;}.
 $$
 
 The observable, its two eigenvalues and its two states are one object and its two projections. The physical interpretation is that a **two-outcome measurement** is a root of $+1$: the root is the observable, the pair is the two outcomes, and the eigenvalues are the two signs.
@@ -105,15 +105,15 @@ The boundary is again immediate. **Not every idempotent is a state.** The non-He
 
 ## The Roots of Minus One
 
-The central imaginary carries the roots of $+1$ to the roots of $-1$: if $\tilde\Xi^2=e_t$ then $(i\tilde\Xi)^2=-e_t$, and the map is a bijection because $i$ is central and invertible. The three families are carried to the three families of the roots of $-1$: the central scalars $\pm i$, the family $\pm\tilde\xi$ over the real pure unit quaternions, and the family $-\vec\xi'+i\vec\xi$ with the same two conditions.
+The central imaginary carries the roots of $+1$ to the roots of $-1$: if $\tilde{Ζ}^2=e_t$ then $(i\tilde{Ζ})^2=-e_t$, and the map is a bijection because $i$ is central and invertible. The three families are carried to the three families of the roots of $-1$: the central scalars $\pm i$, the family $\pm\tilde\zeta$ over the real pure unit quaternions, and the family $-\vec\zeta'+i\vec\zeta$ with the same two conditions.
 
-> **A root of $-1$ is an algebraic complex structure**: for a root $\tilde\Xi$ with $\tilde\Xi^2=-e_t$, left multiplication $L_{\tilde\Xi}:\tilde Q\mapsto\tilde\Xi\tilde Q$ is a real-linear map of square $-1$.
+> **A root of $-1$ is an algebraic complex structure**: for a root $\tilde{Ζ}$ with $\tilde{Ζ}^2=-e_t$, left multiplication $L_{\tilde{Ζ}}:\tilde Q\mapsto\tilde{Ζ}\tilde Q$ is a real-linear map of square $-1$.
 
-The central root $i$ is the distinguished one. It commutes with every element, so it is a scalar and makes $\mathbb{B}$ an algebra over $\mathbb{C}$; the criterion is the one of *The Biquaternion Algebra*, a $\mathbb{C}$-algebra structure on a real algebra being a **central** root of $-1$, that is, a central $\tilde\Xi$ with $\tilde\Xi^2=-e_t$. The non-central roots are different objects. A root $\tilde\Xi$ off the centre defines the real-linear map $L_{\tilde\Xi}:\tilde Q\mapsto\tilde\Xi\tilde Q$, which satisfies $L_{\tilde\Xi}^2=-\mathrm{id}$, so it is a complex structure on the underlying real vector space; but $L_{\tilde\Xi}$ is not multiplication by a central element, so it is not a second scalar field and does not make $\mathbb{B}$ a complex algebra. It is an **internal** complex structure, a choice of a complex structure on the real space rather than a change of the algebra's scalars.
+The central root $i$ is the distinguished one. It commutes with every element, so it is a scalar and makes $\mathbb{B}$ an algebra over $\mathbb{C}$; the criterion is the one of *The Biquaternion Algebra*, a $\mathbb{C}$-algebra structure on a real algebra being a **central** root of $-1$, that is, a central $\tilde{Ζ}$ with $\tilde{Ζ}^2=-e_t$. The non-central roots are different objects. A root $\tilde{Ζ}$ off the centre defines the real-linear map $L_{\tilde{Ζ}}:\tilde Q\mapsto\tilde{Ζ}\tilde Q$, which satisfies $L_{\tilde{Ζ}}^2=-\mathrm{id}$, so it is a complex structure on the underlying real vector space; but $L_{\tilde{Ζ}}$ is not multiplication by a central element, so it is not a second scalar field and does not make $\mathbb{B}$ a complex algebra. It is an **internal** complex structure, a choice of a complex structure on the real space rather than a change of the algebra's scalars.
 
 **The boundary with the local complex structure.** The corpus's *local complex structure* of the material sector is a different object again: it is the fixed central $i$ with a point-dependent real scale $c(x)$, the writing $ict'$ of the material time, and its locality is the locality of the scale, not of the root. A non-central root of $-1$ is not that structure, and the two must not be conflated. In particular, a root of $-1$ is not a *local* complex structure: the root is a constant element of the algebra, and the point-dependence belongs to the physical identification with the medium.
 
-One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, so a Hermitian root of $+1$ is carried to an **anti-Hermitian** root of $-1$. The observables of the article lie in the informational sector $\mathbb{M}_+$; the roots of $-1$ read off them lie in the material sector $\mathbb{M}_-$. The sign of the radicand separates the sectors. That is the algebraic reason those complex structures are material objects and not observables. Conversely, a root of $-1$ in $\mathbb{M}_-$ is $\pm i$ or a real unit vector, so the material roots of $-1$ are exactly the images of the Hermitian roots of $+1$. The general non-Hermitian root $-\vec\xi'+i\vec\xi$ is not in $\mathbb{M}_-$: it has zero scalar part and a vector part with a nonzero imaginary piece.
+One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, so a Hermitian root of $+1$ is carried to an **anti-Hermitian** root of $-1$. The observables of the article lie in the informational sector $\mathbb{M}_+$; the roots of $-1$ read off them lie in the material sector $\mathbb{M}_-$. The sign of the radicand separates the sectors. That is the algebraic reason those complex structures are material objects and not observables. Conversely, a root of $-1$ in $\mathbb{M}_-$ is $\pm i$ or a real unit vector, so the material roots of $-1$ are exactly the images of the Hermitian roots of $+1$. The general non-Hermitian root $-\vec\zeta'+i\vec\zeta$ is not in $\mathbb{M}_-$: it has zero scalar part and a vector part with a nonzero imaginary piece.
 
 ## The Same Equation Across the Twelve Structures
 
@@ -123,7 +123,7 @@ The equation is relative to the product, so the twelve structures carry twelve r
 | --- | --- | --- | --- |
 | gpa, composition | $\pm e_t$, the purely imaginary roots and the non-Hermitian roots | the trivial pair and the halving image of every nontrivial root | the involutions and the idempotents |
 | gps, probability | the $*$-unitary group $\mathrm{U}(2)$ | the trivial pair and the Hermitian states | the reversible symmetries of the pairing |
-| gqa, causality | the quadric $C=+1$, with $C=\langle\tilde\Xi\rangle_{\natural}$ | the trivial pair only | on $\mathbb{M}_-$, the spacelike unit shell of the interval |
+| gqa, causality | the quadric $C=+1$, with $C=\langle\tilde{Ζ}\rangle_{\natural}$ | the trivial pair only | on $\mathbb{M}_-$, the spacelike unit shell of the interval |
 | gqs, gauge | the slope family $c(\vec u+it)$ with $\lvert\vec u\rvert=1$, $\lvert t\rvert>1$ and $(t^2-1)\lvert c\rvert^2=1$, and the central circle $\lvert a\rvert^2=1$ | the trivial pair and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | its idempotents are units of the algebra, hence reversible |
 | the four brackets | none | the origin only | an infinitesimal transformation has no involution and no state |
 
@@ -132,7 +132,7 @@ The pattern is the one used throughout this article. **The composition band carr
 ## Physical Interpretations
 
 - **The observable is the root, the states are its pair.** The interpretation is that a two-outcome observable of the informational sector is a nontrivial Hermitian root of $+1$, and its two eigenstates are the idempotents of the halving map, with eigenvalues the two signs. Boundary: an identification of an algebraic involution with a measurement, and it adds no dynamics and no preferred direction.
-- **Measurement is projection onto the pair.** The interpretation is that the spectral resolution $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$ is the algebraic form of a measurement with two outcomes, the projection being the idempotent and the outcome being the sign. Boundary: the projection is a projection, not a collapse; the selection of one outcome is not derived.
+- **Measurement is projection onto the pair.** The interpretation is that the spectral resolution $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ is the algebraic form of a measurement with two outcomes, the projection being the idempotent and the outcome being the sign. Boundary: the projection is a projection, not a collapse; the selection of one outcome is not derived.
 - **The state is the idempotent, and the pure states are the Bloch sphere.** The interpretation is that the nontrivial Hermitian idempotents are the pure states, with $2\,\mathrm{Sc}=1$ (trace one in the image) and norm zero, and the family is the Bloch sphere. Boundary: only the nontrivial Hermitian idempotents are states; the mixed states are not idempotent.
 - **The point of the root is the oriented axis of the measurement.** The interpretation is that the two real parameters of the purely imaginary family are a point of the sphere, so choosing a root is choosing an oriented axis; the line through the point is the axis, and the antipodal point gives the same line with the two outcomes exchanged. Boundary: the algebra fixes the two outcomes, not the choice of axis.
 - **The invertible observable and the non-invertible state.** The interpretation is that the root is a unit and its nontrivial idempotents are zero divisors, so the nontrivial observable is reversible and the state is not. Boundary: a statement about invertibility, not about information loss in time.
@@ -151,7 +151,7 @@ The pattern is the one used throughout this article. **The composition band carr
 
 ## Summary
 
-The plain product at $+1$ gives the roots $\tilde\Xi^2=e_t$ and the idempotents $\tilde\Pi^2=\tilde\Pi$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ is a bijection between them. The roots are the two central scalars, the purely imaginary family $\pm i\tilde\xi$ over the real unit sphere, and the non-trivial four-parameter family; every root is a unit, and only the trivial and purely imaginary roots are Hermitian.
+The plain product at $+1$ gives the roots $\tilde{Ζ}^2=e_t$ and the idempotents $\tilde\Pi^2=\tilde\Pi$, and the halving map $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ is a bijection between them. The roots are the two central scalars, the purely imaginary family $\pm i\tilde\zeta$ over the real unit sphere, and the non-trivial four-parameter family; every root is a unit, and only the trivial and purely imaginary roots are Hermitian.
 
 The Hermitian roots are read as the involutive observables, the nontrivial Hermitian idempotents as the pure states, and, for a nontrivial root, its two idempotents as its two eigenstates. Such a root is the difference of its pair, acts by $+1$ and $-1$ on the two, and its idempotents are zero divisors of trace one and vanishing norm; the trivial roots $\pm e_t$ are the degenerate cases. The non-Hermitian roots and idempotents are neither observables nor states. The roots of $-1$ are the algebraic complex structures: the central one is the scalar $i$, the non-central ones are internal complex structures on the underlying real vector space, and those read off the Hermitian roots of $+1$ are anti-Hermitian and lie in the material sector. Across the twelve structures the composition band carries the largest idempotent family, the probability band the $*$-unitary symmetries, the gauge band the reversible idempotents, and the interval band and the brackets no nontrivial state.
 
@@ -159,15 +159,15 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\Xi$ | a root of a central value |
+| $\tilde{Ζ}$ | a root of a central value |
 | $\tilde\Pi$, $\tilde\Pi_\pm$ | an idempotent and the two members of a complete pair |
 | $\tilde{Ϛ}$ | a general state |
-| $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_t\pm\tilde\Xi)$ | the halving map and its two branches |
+| $\tilde\Pi_\pm(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | the halving map and its two branches |
 | $\mathbb{M}_\pm$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
-| $S^2$ | the real unit sphere of the parameter $\tilde\xi$ |
+| $S^2$ | the real unit sphere of the parameter $\tilde\zeta$ |
 
 ## Further Reading
 

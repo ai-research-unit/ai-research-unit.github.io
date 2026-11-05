@@ -59,22 +59,22 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 ## The Roots of Minus One
 
-**Definition.** A **root of $-1$** is a quaternion $\tilde\xi$ with $\tilde\xi^2 = -1$.
+**Definition.** A **root of $-1$** is a quaternion $\tilde\zeta$ with $\tilde\zeta^2 = -1$.
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\tilde\xi = \xi_t+\vec\xi$. Then $\tilde\xi^2 = \xi_t^2-\langle \vec\xi\rangle_{\natural}+2\xi_t\vec\xi$, so $\tilde\xi^2 = -1$ gives $2\xi_t\vec\xi = 0$ and $\xi_t^2-\langle \vec\xi\rangle_{\natural} = -1$. If $\xi_t\neq0$ then $\vec\xi = 0$ and $\xi_t^2 = -1$, impossible, so $\xi_t = 0$ and $\langle \vec\xi\rangle_{\natural} = 1$.
+*Proof.* Write $\tilde\zeta = \zeta_t+\vec\zeta$. Then $\tilde\zeta^2 = \zeta_t^2-\langle \vec\zeta\rangle_{\natural}+2\zeta_t\vec\zeta$, so $\tilde\zeta^2 = -1$ gives $2\zeta_t\vec\zeta = 0$ and $\zeta_t^2-\langle \vec\zeta\rangle_{\natural} = -1$. If $\zeta_t\neq0$ then $\vec\zeta = 0$ and $\zeta_t^2 = -1$, impossible, so $\zeta_t = 0$ and $\langle \vec\zeta\rangle_{\natural} = 1$.
 
 **Worked roots.** The element
 
 $$
-\tilde\xi = \frac{\vec e_x+\vec e_y+\vec e_z}{\sqrt3}
+\tilde\zeta = \frac{\vec e_x+\vec e_y+\vec e_z}{\sqrt3}
 $$
 
 is a root of $-1$: its square is
 
 $$
-\tilde\xi^2 = \tfrac13\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2+\vec e_x\vec e_y+\vec e_y\vec e_x+\vec e_y\vec e_z+\vec e_z\vec e_y+\vec e_z\vec e_x+\vec e_x\vec e_z\bigr) = \tfrac13(-3+0) = -1,
+\tilde\zeta^2 = \tfrac13\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2+\vec e_x\vec e_y+\vec e_y\vec e_x+\vec e_y\vec e_z+\vec e_z\vec e_y+\vec e_z\vec e_x+\vec e_x\vec e_z\bigr) = \tfrac13(-3+0) = -1,
 $$
 
 because the off-diagonal products cancel in pairs and each square is $-1$. The element $\vec e_y$ is a root, and so is the whole sphere $u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ with $u_x^2+u_y^2+u_z^2 = 1$.

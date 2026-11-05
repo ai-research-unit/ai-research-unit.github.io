@@ -138,7 +138,7 @@ forward, with $T_{k^*}$ integrating it backward.
 
 **Theorem.** On the Fourier side the convolution operator is the multiplication operator
 $$
-T_k=\mathcal F^{-1}M_{\mathcal F k}\mathcal F,\qquad (M_{\mathcal F k}h)(\xi)=(\mathcal F k)(\xi)h(\xi) ,
+T_k=\mathcal F^{-1}M_{\mathcal F k}\mathcal F,\qquad (M_{\mathcal F k}h)(\zeta)=(\mathcal F k)(\zeta)h(\zeta) ,
 $$
 and the adjoint is the multiplication by the conjugate multiplier,
 $$
@@ -157,8 +157,8 @@ normality is automatic for a multiplication operator.
 
 **Example (the Hilbert and Riesz transforms).** The Hilbert transform of *The Fourier Transform and
 Conjugate Symmetry* is convolution with the kernel $1/(\pi x)$ on $\mathbb R$ and has the multiplier
-$-i\operatorname{sgn}\xi$, purely imaginary, so it is skew-adjoint, $H^\dagger=-H$, as recorded there; the
-Riesz transforms $R_j$ on $\mathbb R^n$ have the multipliers $-i\xi_j/\lvert\xi\rvert$, also purely
+$-i\operatorname{sgn}\zeta$, purely imaginary, so it is skew-adjoint, $H^\dagger=-H$, as recorded there; the
+Riesz transforms $R_j$ on $\mathbb R^n$ have the multipliers $-i\zeta_j/\lvert\zeta\rvert$, also purely
 imaginary, so each is skew-adjoint, $R_j^\dagger=-R_j$, and their symbols are unimodular, so each $R_j$ is
 unitary after the sign. The examples show both extremities of the multiplier dictionary.
 
@@ -167,7 +167,7 @@ unitary after the sign. The examples show both extremities of the multiplier dic
 **Theorem.** Let $k\in L^1(\mathbb R^n)$ with $\mathcal F k\in L^\infty$. Then the convolution operator $T_k$ is
 unitary on $L^2$ if and only if the multiplier is unimodular,
 $$
-\boxed{\;T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert(\mathcal F k)(\xi)\rvert=1\ \text{for almost every }\xi\;} ,
+\boxed{\;T_k^\dagger T_k=T_kT_k^\dagger=\mathrm{id}\ \Longleftrightarrow\ \lvert(\mathcal F k)(\zeta)\rvert=1\ \text{for almost every }\zeta\;} ,
 $$
 and the unitary convolution operators form a group under composition, the **group of unitary multipliers**;
 under the Fourier transform it is the group of unimodular functions that arise as transforms of profiles.

@@ -48,14 +48,14 @@ A real vector part has $(\vec Q,\vec Q)=\sum_kQ_k^2$, which vanishes only at $\v
 Let $\vec Q\neq0$ and $B=0$. The eigenvalues are both $Q_t$. The eigenprojection formula of the non-degenerate regime is
 
 $$
-\tilde\Pi_\pm=\frac12\left(e_t\pm\vec\Xi\right),
+\tilde\Pi_\pm=\frac12\left(e_t\pm\vec{Ζ}\right),
 \qquad
-\vec\Xi=-\frac{i\vec Q}{B},
+\vec{Ζ}=-\frac{i\vec Q}{B},
 \qquad
-\vec\Xi^2=e_t,
+\vec{Ζ}^2=e_t,
 $$
 
-and it is not defined at $B=0$. In the exceptional approach, with $\vec Q\to\vec Q_0\neq0$ and $B\to0$, the axis $\vec\Xi$ has coefficients of order $1/B$ and leaves every bounded set. The two idempotents do not coalesce; they disappear. There is no pair of nonzero orthogonal idempotents in the centraliser of $\tilde Q$, because that centraliser is $\{ae_t+b\vec Q\}$ and its only idempotents are $0$ and $e_t$.
+and it is not defined at $B=0$. In the exceptional approach, with $\vec Q\to\vec Q_0\neq0$ and $B\to0$, the axis $\vec{Ζ}$ has coefficients of order $1/B$ and leaves every bounded set. The two idempotents do not coalesce; they disappear. There is no pair of nonzero orthogonal idempotents in the centraliser of $\tilde Q$, because that centraliser is $\{ae_t+b\vec Q\}$ and its only idempotents are $0$ and $e_t$.
 
 The element is a single Jordan block. In the matrix model,
 
@@ -166,8 +166,8 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\Delta=-4B^2$ | the discriminant of the characteristic polynomial |
-| $\vec\Xi=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections, defined for $B\neq0$ |
+| $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |
 | $N$ | a nonzero nilpotent, $N^2=0$ |
 
 ## Further Reading

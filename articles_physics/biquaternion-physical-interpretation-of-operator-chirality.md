@@ -118,7 +118,7 @@ so the conjugate member of the pair is the same operator read on the other side.
 | an ideal | supply the state space | the state space is $\mathbb{B}$ itself, and no point of a projective line is chosen |
 | a Clifford algebra | supply the anticommutation $\{\gamma_\mu,\mathsf{V}^{\mathrm{vol}}\}=0$ | the anticommutation holds for five cells; it is computed, not postulated |
 
-**No root.** A root $\tilde\Xi$ with $\tilde\Xi^2=e_t$ is a direction chosen in the algebra, and it is needed when a Peirce decomposition is wanted. The frame's third direction already fixes the operator, so nothing further is chosen. A change of root changes the Peirce data and leaves $\mathsf{V}^{\mathrm{vol}}$ untouched.
+**No root.** A root $\tilde{Ζ}$ with $\tilde{Ζ}^2=e_t$ is a direction chosen in the algebra, and it is needed when a Peirce decomposition is wanted. The frame's third direction already fixes the operator, so nothing further is chosen. A change of root changes the Peirce data and leaves $\mathsf{V}^{\mathrm{vol}}$ untouched.
 
 **No idempotent.** An idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, and it is the algebraic form of a projection, hence of a state-preparation. $\mathsf{V}^{\mathrm{vol}}$ satisfies $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$ and is not a projection: it is a sign, and a sign is not a state. The projectors $\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})$ are built from it when a projection is wanted, and they are derived objects.
 
@@ -138,7 +138,7 @@ so the conjugate member of the pair is the same operator read on the other side.
 
 **The earlier route.** An earlier reading of this article took the chirality to be the central sign of the conjugate pair. That route adjoins a root of $-1$ to $\mathbb{B}_{\mathbb{R}}$, complexifies to $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, takes the central idempotents
 $$
-e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}}),\qquad \chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-,
+e_\pm=\tfrac12(1\pm i\tilde{Ζ}_{\mathrm{ad}}),\qquad \chi=i\tilde{Ζ}_{\mathrm{ad}}=e_+-e_-,
 $$
 and reads $\chi$ on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$.
 

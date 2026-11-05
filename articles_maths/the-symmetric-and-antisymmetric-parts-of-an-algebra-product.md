@@ -81,7 +81,7 @@ $$
 an involution. Over a field in which $2$ is invertible its fixed part and its anti-fixed part are the symmetric square and the exterior square,
 
 $$
-S^2 A = \{\xi \in A \otimes A : \tau(\xi) = \xi\}, \qquad \Lambda^2 A = \{\xi \in A \otimes A : \tau(\xi) = -\xi\}, \qquad A \otimes A = S^2 A \oplus \Lambda^2 A,
+S^2 A = \{\zeta \in A \otimes A : \tau(\zeta) = \zeta\}, \qquad \Lambda^2 A = \{\zeta \in A \otimes A : \tau(\zeta) = -\zeta\}, \qquad A \otimes A = S^2 A \oplus \Lambda^2 A,
 $$
 
 the two projections onto the summands being $\tfrac{1}{2}(1 \pm \tau)$. A product is a linear map $m : A \otimes A \to A$, and the two halves of the product are its values on the two components:

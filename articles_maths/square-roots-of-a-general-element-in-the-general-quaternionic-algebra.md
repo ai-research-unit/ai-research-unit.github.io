@@ -2,55 +2,55 @@
 
 ## Introduction
 
-This article solves the square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ in the general quaternionic bilinear product for an arbitrary element $\tilde Q$ of the biquaternion algebra, and it states the absence that the equation forces.
+This article solves the square-root equation $\tilde{Ζ}\star\tilde{Ζ}=\tilde Q$ in the general quaternionic bilinear product for an arbitrary element $\tilde Q$ of the biquaternion algebra, and it states the absence that the equation forces.
 
-The equation names a product, and throughout this article the square is the one of the general quaternionic product; the plain square of the same element is a different equation, and its solution is *Square Roots of an Element*. The quaternionic square is the central element $\langle\tilde\Xi\rangle_{\natural}e_t$ for every $\tilde\Xi$, so the equation can be solved only when the right-hand side is a central value, and this is the first statement of the article: **an element which is not a central value has no square root in this product**, and the absence is stated and not filled. For a central radicand $\tilde Q=\lambda e_t$ the equation reduces to the single complex equation $\langle\tilde\Xi\rangle_{\natural}=\lambda$, and the root set is a nondegenerate complex quadric, of complex dimension three when $\lambda\neq0$ and the zero-divisor cone when $\lambda=0$. Every central value has roots, and the root set of $\lambda$ is a scaled copy of the root set of $1$ or of $-1$.
+The equation names a product, and throughout this article the square is the one of the general quaternionic product; the plain square of the same element is a different equation, and its solution is *Square Roots of an Element*. The quaternionic square is the central element $\langle\tilde{Ζ}\rangle_{\natural}e_t$ for every $\tilde{Ζ}$, so the equation can be solved only when the right-hand side is a central value, and this is the first statement of the article: **an element which is not a central value has no square root in this product**, and the absence is stated and not filled. For a central radicand $\tilde Q=\lambda e_t$ the equation reduces to the single complex equation $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$, and the root set is a nondegenerate complex quadric, of complex dimension three when $\lambda\neq0$ and the zero-divisor cone when $\lambda=0$. Every central value has roots, and the root set of $\lambda$ is a scaled copy of the root set of $1$ or of $-1$.
 
-**The results.** The quaternionic square is always central, $\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value: **an element with nonzero vector part has no square root** in this product. For a central radicand $\tilde Q=\lambda e_t$ the root set is $R(\lambda)=\{\tilde\Xi:\langle\tilde\Xi\rangle_{\natural}=\lambda\}$, which is a nondegenerate complex quadric of complex dimension $3$ and real dimension $6$ when $\lambda\neq0$, and the zero-divisor cone of real dimension $6$ when $\lambda=0$, and it is never empty. The sets are not new: $R(\lambda)=\alpha R(1)=(i\alpha)R(-1)$ for $\alpha^2=\lambda\neq0$, so the three central values generate every value, and a root of a nonzero value is a unit of the algebra while a nonzero root of $0$ is a zero divisor. Each section below states its result first and then proves it.
+**The results.** The quaternionic square is always central, $\tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t$, so the equation $\tilde{Ζ}\star\tilde{Ζ}=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value: **an element with nonzero vector part has no square root** in this product. For a central radicand $\tilde Q=\lambda e_t$ the root set is $R(\lambda)=\{\tilde{Ζ}:\langle\tilde{Ζ}\rangle_{\natural}=\lambda\}$, which is a nondegenerate complex quadric of complex dimension $3$ and real dimension $6$ when $\lambda\neq0$, and the zero-divisor cone of real dimension $6$ when $\lambda=0$, and it is never empty. The sets are not new: $R(\lambda)=\alpha R(1)=(i\alpha)R(-1)$ for $\alpha^2=\lambda\neq0$, so the three central values generate every value, and a root of a nonzero value is a unit of the algebra while a nonzero root of $0$ is a zero divisor. Each section below states its result first and then proves it.
 
 ## The Reduction
 
-**Definition.** Let $\tilde Q\in\mathbb{B}$. A **square root of $\tilde Q$** in the general quaternionic product is an element $\tilde\Xi$ with
+**Definition.** Let $\tilde Q\in\mathbb{B}$. A **square root of $\tilde Q$** in the general quaternionic product is an element $\tilde{Ζ}$ with
 
 $$
-\tilde\Xi\star\tilde\Xi=\tilde Q .
+\tilde{Ζ}\star\tilde{Ζ}=\tilde Q .
 $$
 
 The root is relative to the product, and this article uses the one of $\star$ throughout; the general definition of the square and of the roots of an element is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*.
 
-**Theorem (the square is central).** For every $\tilde\Xi\in\mathbb{B}$ the square $\tilde\Xi\star\tilde\Xi$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$, and
+**Theorem (the square is central).** For every $\tilde{Ζ}\in\mathbb{B}$ the square $\tilde{Ζ}\star\tilde{Ζ}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$, and
 
 $$
-\boxed{\; \tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t \;}.
+\boxed{\; \tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t \;}.
 $$
 
-**Proof.** The scalar–vector form of the product gives $\tilde\Xi^{\natural}\tilde\Xi=(\Xi_t-\vec\Xi)(\Xi_t+\vec\Xi)=\Xi_t^2-\vec\Xi^2=\bigl(\Xi_t^2+(\vec\Xi,\vec\Xi)\bigr)e_t$; the statement is §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra*.
+**Proof.** The scalar–vector form of the product gives $\tilde{Ζ}^{\natural}\tilde{Ζ}=(Ζ_t-\vec{Ζ})(Ζ_t+\vec{Ζ})=Ζ_t^2-\vec{Ζ}^2=\bigl(Ζ_t^2+(\vec{Ζ},\vec{Ζ})\bigr)e_t$; the statement is §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra*.
 
-**Theorem (the existence criterion).** The equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value. For $\tilde Q=\lambda e_t$ the equation is equivalent to the single complex equation
+**Theorem (the existence criterion).** The equation $\tilde{Ζ}\star\tilde{Ζ}=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value. For $\tilde Q=\lambda e_t$ the equation is equivalent to the single complex equation
 
 $$
-\langle\tilde\Xi\rangle_{\natural}=\lambda .
+\langle\tilde{Ζ}\rangle_{\natural}=\lambda .
 $$
 
-**Proof.** A square is central by the preceding theorem, so a solution forces $\tilde Q\in\mathbb{C}_{\mathbb{B}}$; conversely if $\tilde Q=\lambda e_t$ the equation reads $\langle\tilde\Xi\rangle_{\natural}e_t=\lambda e_t$, which is $\langle\tilde\Xi\rangle_{\natural}=\lambda$ because $e_t\neq0$.
+**Proof.** A square is central by the preceding theorem, so a solution forces $\tilde Q\in\mathbb{C}_{\mathbb{B}}$; conversely if $\tilde Q=\lambda e_t$ the equation reads $\langle\tilde{Ζ}\rangle_{\natural}e_t=\lambda e_t$, which is $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ because $e_t\neq0$.
 
-**Absence (the non-central radicands).** An element of $\mathbb{B}$ whose vector part is nonzero **has no square root** in the general quaternionic product. The witness $\vec e_x$ shows it: a root would satisfy $\langle\tilde\Xi\rangle_{\natural}e_t=\vec e_x$, and the two sides differ in the coefficient of $\vec e_x$. This is not a deficiency of a particular element but of the product, whose squaring map has image the scalar line; the plain product has a wider image, and its squaring map reaches every element, which is why the plain problem has a solution for an arbitrary radicand.
+**Absence (the non-central radicands).** An element of $\mathbb{B}$ whose vector part is nonzero **has no square root** in the general quaternionic product. The witness $\vec e_x$ shows it: a root would satisfy $\langle\tilde{Ζ}\rangle_{\natural}e_t=\vec e_x$, and the two sides differ in the coefficient of $\vec e_x$. This is not a deficiency of a particular element but of the product, whose squaring map has image the scalar line; the plain product has a wider image, and its squaring map reaches every element, which is why the plain problem has a solution for an arbitrary radicand.
 
 ## The Roots of a Central Value
 
-**For a central radicand $\tilde Q=\lambda e_t$ the root set is $R(\lambda)=\{\tilde\Xi:\langle\tilde\Xi\rangle_{\natural}=\lambda\}$: a nondegenerate complex quadric of real dimension six when $\lambda\neq0$, the zero-divisor cone of real dimension six when $\lambda=0$, and never empty.**
+**For a central radicand $\tilde Q=\lambda e_t$ the root set is $R(\lambda)=\{\tilde{Ζ}:\langle\tilde{Ζ}\rangle_{\natural}=\lambda\}$: a nondegenerate complex quadric of real dimension six when $\lambda\neq0$, the zero-divisor cone of real dimension six when $\lambda=0$, and never empty.**
 
 **Theorem (the root set of a central value).** Let $\lambda\in\mathbb{C}$ and let $\tilde Q=\lambda e_t$. The root set of $\tilde Q$ is
 
 $$
-\boxed{\; R(\lambda)=\{\tilde\Xi\in\mathbb{B}:\langle\tilde\Xi\rangle_{\natural}=\lambda\} \;}.
+\boxed{\; R(\lambda)=\{\tilde{Ζ}\in\mathbb{B}:\langle\tilde{Ζ}\rangle_{\natural}=\lambda\} \;}.
 $$
 
 - If $\lambda\neq0$, $R(\lambda)$ is a nondegenerate complex quadric of complex dimension three and real dimension six.
 - If $\lambda=0$, $R(0)$ is the zero-divisor cone, a real cone of real dimension six.
-- The set is never empty: the element $\tilde\Xi=\sqrt\lambda\,e_t$ is a root, where $\sqrt\lambda$ is either square root of $\lambda$ in $\mathbb{C}$.
+- The set is never empty: the element $\tilde{Ζ}=\sqrt\lambda\,e_t$ is a root, where $\sqrt\lambda$ is either square root of $\lambda$ in $\mathbb{C}$.
 
-**Proof.** The identification with the level set is the reduction. With $\Xi_\mu=p_\mu+ip'_\mu$, the equation $N=\sum_\mu(p_\mu^2-(p'_\mu)^2)+2i\sum_\mu p_\mu p'_\mu=\lambda$ is a pair of real equations, the gradient of $N$ does not vanish off the origin, and the level set has real dimension $8-2=6$ in the two cases; for $\lambda=0$ it is a cone because $\langle\cdot\rangle_{\natural}$ is homogeneous. The displayed central element has $\langle \sqrt\lambda\,e_t\rangle_{\natural}=(\sqrt\lambda)^2=\lambda$.
+**Proof.** The identification with the level set is the reduction. With $Ζ_\mu=p_\mu+ip'_\mu$, the equation $N=\sum_\mu(p_\mu^2-(p'_\mu)^2)+2i\sum_\mu p_\mu p'_\mu=\lambda$ is a pair of real equations, the gradient of $N$ does not vanish off the origin, and the level set has real dimension $8-2=6$ in the two cases; for $\lambda=0$ it is a cone because $\langle\cdot\rangle_{\natural}$ is homogeneous. The displayed central element has $\langle \sqrt\lambda\,e_t\rangle_{\natural}=(\sqrt\lambda)^2=\lambda$.
 
 **Corollary (the central roots).** The root set of every central value contains the two central roots $\pm\sqrt\lambda\,e_t$, and they coincide exactly when $\lambda=0$; for $\lambda\neq0$ the two are distinct and lie in the scalar line $\mathbb{C}_{\mathbb{B}}$.
 
@@ -86,7 +86,7 @@ The classification covers every element; the two non-empty rows differ in whethe
 
 The values $\lambda=-1$, $0$ and $+1$ are the subject of the companion articles *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and they are the seeds of the classification:
 
-- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $\tilde\Xi$ over the real unit vectors $\vec u$;
+- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $\tilde{Ζ}$ over the real unit vectors $\vec u$;
 - $R(0)=\{N=0\}=C$, the zero-divisor cone, containing the origin, the pure isotropic elements and the complex multiples of the nontrivial plain idempotents;
 - $R(+1)=\{N=1\}$, a quadric of real dimension six containing the central roots $\pm e_t$ and the real vector roots $\vec u$.
 
@@ -95,30 +95,30 @@ By the scaling theorem, $R(\lambda)$ for a general value is the image of one of 
 ## Worked Examples
 
 - **Roots of $1$.** The central roots are $\pm e_t$. The element $\vec e_x$ is a root, since $\langle \vec e_x\rangle_{\natural}=1$; more generally every real unit vector $\vec u$ is a root, and the elements $i\vec q$ with $(\vec q,\vec q)=-1$ are roots as well. The element $e_t+\vec e_x$ is not a root, since $\langle e_t+\vec e_x\rangle_{\natural}=1+1=2$.
-- **Roots of $-1$.** The central roots are $\pm i$, and the elements $\tilde\Xi$ over the real unit vectors are roots. The element $\vec e_x$ is not a root of $-1$; it is a root of $+1$. This is the sign that the quaternionic product removes from the pure square.
+- **Roots of $-1$.** The central roots are $\pm i$, and the elements $\tilde{Ζ}$ over the real unit vectors are roots. The element $\vec e_x$ is not a root of $-1$; it is a root of $+1$. This is the sign that the quaternionic product removes from the pure square.
 - **Roots of $0$.** The origin, the pure isotropic element $\vec e_x+i\vec e_y$, and the non-pure element $e_t+i\vec e_x$ are roots; the first is the trivial one, the second is a nilpotent of the plain product, and the third is twice a Hermitian idempotent. The root set is the whole cone, and its members are the zero divisors of the algebra.
 - **Roots of a complex value.** For $\lambda=4$ the element $2e_t$ is a root, and so is $2\vec e_x$; for $\lambda=i$ the element $\alpha e_t$ with $\alpha^2=i$, for instance $\alpha=(1+i)/\sqrt2$, is a root, and the whole root set is the image of $R(1)$ under multiplication by $\alpha$.
-- **A non-central radicand.** The element $\vec e_x$ has no root: its square-root equation would force the central element $\langle\tilde\Xi\rangle_{\natural}e_t$ to equal $\vec e_x$. The statement is the absence of §*The Reduction*, and it is the sharpest difference from the plain product, where $\vec e_x$ has the four roots $\pm\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ and $\pm\tfrac{i}{\sqrt2}(e_t-\vec e_x)$ (*Square Roots of an Element*).
+- **A non-central radicand.** The element $\vec e_x$ has no root: its square-root equation would force the central element $\langle\tilde{Ζ}\rangle_{\natural}e_t$ to equal $\vec e_x$. The statement is the absence of §*The Reduction*, and it is the sharpest difference from the plain product, where $\vec e_x$ has the four roots $\pm\tfrac{1}{\sqrt2}(e_t+\vec e_x)$ and $\pm\tfrac{i}{\sqrt2}(e_t-\vec e_x)$ (*Square Roots of an Element*).
 
 ## The Roots Which Are Units, and the Roots Which Are Zero Divisors
 
 **A root of a nonzero central value has $N\neq0$ and is a unit of the plain product satisfying the two one-sided equations of $\star$, while a nonzero root of $0$ has $N=0$ and is a zero divisor with neither equation soluble.**
 
-The algebraic norm decides the nature of every root, and it decides it the same way as in the other products. A root of a non-zero central value has $\langle\tilde\Xi\rangle_{\natural}=\lambda\neq0$, so it is a unit of the plain product and satisfies the two one-sided equations of $\star$; a non-zero root of $0$ has $\langle\tilde\Xi\rangle_{\natural}=0$, so it is a zero divisor of the algebra, and neither one-sided equation is soluble for it (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). The statement is the block reading of the general theorem of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Roots Are Units, or Zero Divisors*. In particular the roots of $-1$ and of $+1$ are never zero divisors, and the roots of $0$ other than the origin are always zero divisors; the origin is neither.
+The algebraic norm decides the nature of every root, and it decides it the same way as in the other products. A root of a non-zero central value has $\langle\tilde{Ζ}\rangle_{\natural}=\lambda\neq0$, so it is a unit of the plain product and satisfies the two one-sided equations of $\star$; a non-zero root of $0$ has $\langle\tilde{Ζ}\rangle_{\natural}=0$, so it is a zero divisor of the algebra, and neither one-sided equation is soluble for it (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). The statement is the block reading of the general theorem of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Roots Are Units, or Zero Divisors*. In particular the roots of $-1$ and of $+1$ are never zero divisors, and the roots of $0$ other than the origin are always zero divisors; the origin is neither.
 
 ## Summary
 
-The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $\langle\tilde\Xi\rangle_{\natural}=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_t$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $\tilde\Xi$, $R(+1)$ the real vector roots $\vec u$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
+The square-root equation $\tilde{Ζ}\star\tilde{Ζ}=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_t$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $\tilde{Ζ}$, $R(+1)$ the real vector roots $\vec u$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$ | the general quaternionic bilinear product |
-| $\langle\tilde\Xi\rangle_{\natural}=\sum_\mu \Xi_\mu^2=\Xi_t^2+(\vec\Xi,\vec\Xi)$ | the algebraic norm |
+| $\tilde{Ζ}\star\tilde Q=\tilde{Ζ}^{\natural}\tilde Q$ | the general quaternionic bilinear product |
+| $\langle\tilde{Ζ}\rangle_{\natural}=\sum_\mu Ζ_\mu^2=Ζ_t^2+(\vec{Ζ},\vec{Ζ})$ | the algebraic norm |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the scalar line, the set of the central values |
 | $\lambda e_t$ | a central value, $\lambda=\lambda_1+i\lambda_2$ |
-| $\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$ | the central square |
+| $\tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ | the central square |
 | $R(\lambda)=\{N=\lambda\}$ | the root set of the central value $\lambda$ |
 | $C=R(0)$ | the zero-divisor cone |
 | $\alpha$, $\sqrt\lambda$ | the square roots of the value, with $\alpha^2=\lambda$ |

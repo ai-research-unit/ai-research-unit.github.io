@@ -140,7 +140,7 @@ The **two monogenic Bohr inequalities** take the modulus of a whole degree clust
 | $a_n^0$, $a_n^m$, $b_n^m$ | Real Fourier coefficients of $f$ in that basis |
 | $f = f(0)+g+h$ | Orthogonal decomposition into main part $g$ and hyperholomorphic constant $h$ |
 | $\mathcal{M}(f,r) = \max_{\lvert \tilde q\rvert=r}\lvert f(\tilde q)\rvert$ | Maximum modulus function |
-| $\mathcal{M}_f(r) = \sup_{\lvert\xi\rvert<r}\lvert f(\xi)\rvert$ | Supremum over the ball; equal to $\mathcal{M}(f,r)$ by the maximum principle |
+| $\mathcal{M}_f(r) = \sup_{\lvert\zeta\rvert<r}\lvert f(\zeta)\rvert$ | Supremum over the ball; equal to $\mathcal{M}(f,r)$ by the maximum principle |
 | $P_n^{l}$, $T_l$, $U_l$ | Associated Legendre function with $P_n^{l} = 0$ for $l \ge n+1$; Chebyshev polynomials of the first and second kinds |
 | $1/3$ | The classical Bohr radius, optimal |
 | $0.125$ | Monogenic radius, case $f(0) = 0$, modulus of each degree cluster |

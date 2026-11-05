@@ -190,7 +190,7 @@ $$
 
 is the biquaternion Fourier kernel of *Biquaternion Continuous Harmonic Analysis*. Left multiplication by the same identity gives the operator flow, $L_{e^{\theta\tilde Q}}=e^{\theta L_{\tilde Q}}$. The regular element therefore supplies the root that the Fourier transform otherwise fixes by hand: the kernel is the exponential of $\rho$, and $B$ is the rate of the flow relative to that root. This is the statement of *Derivatives, Fields and Transforms* that the root is the clock and the frequency is its rate.
 
-**The eigenbasis is the Fourier basis.** The transform is computed in a root-adapted basis $\{e_t,\rho,\nu,\xi\}$, in which left multiplication by $\rho$ is block diagonal and the transform splits into ordinary complex Fourier transforms. The eigenbasis of $L_{\tilde Q}$ is that basis after the complex change that diagonalises the two blocks. The eigenvalues $\lambda_\pm=Q_t\pm iB$ are the two character exponents of the flow, and the spectral idempotents $\tilde\Pi_\pm$ are the elements that split the algebra into the two eigenspaces. In this sense the eigenbasis is the Fourier basis attached to $\tilde Q$, and the mode decomposition is the decomposition of the flow into its two characters.
+**The eigenbasis is the Fourier basis.** The transform is computed in a root-adapted basis $\{e_t,\rho,\nu,\zeta\}$, in which left multiplication by $\rho$ is block diagonal and the transform splits into ordinary complex Fourier transforms. The eigenbasis of $L_{\tilde Q}$ is that basis after the complex change that diagonalises the two blocks. The eigenvalues $\lambda_\pm=Q_t\pm iB$ are the two character exponents of the flow, and the spectral idempotents $\tilde\Pi_\pm$ are the elements that split the algebra into the two eigenspaces. In this sense the eigenbasis is the Fourier basis attached to $\tilde Q$, and the mode decomposition is the decomposition of the flow into its two characters.
 
 **Which sector carries it.** The construction follows $B^2$ and not $N$: it is available on $\Sigma_{11}$ and on $\Sigma_{01}$, the massless zero divisors included, and unavailable on $\Sigma_{10}$ and $\Sigma_{00}$ except on the scalar line, where every basis is an eigenbasis but none is attached to the element. A massless momentum has the real root $\vec p/\lvert\vec p\rvert$ and a $*$-unitary Fourier character even though it is a zero divisor.
 
@@ -229,11 +229,11 @@ For $B^2\neq0$ the element is
 $$
 \boxed{\;\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
 \qquad
-\tilde\Pi_\pm=\frac12\left(e_t\pm\vec\Xi\right),
+\tilde\Pi_\pm=\frac12\left(e_t\pm\vec{Ζ}\right),
 \qquad
-\vec\Xi=-\frac{i\vec Q}{B},
+\vec{Ζ}=-\frac{i\vec Q}{B},
 \qquad
-\vec\Xi^2=e_t\;}.
+\vec{Ζ}^2=e_t\;}.
 $$
 
 The idempotents are orthogonal, sum to the identity, and are unique. Each term is a complex multiple of a minimal idempotent, hence an element of the zero-divisor cone; the two terms are the two **spectral components** of the element. The sum of the coefficients is twice the scalar part, and their product is the norm:
@@ -295,7 +295,7 @@ $$
 \lambda_+\lambda_-=N,
 $$
 
-and it fixes nothing else about the vector part. The axis $\vec\Xi$ has two free complex angles, four real parameters, and the two eigenvalues are blind to them. At $B^2=0$ the axis is not defined, and the two-term spectral decomposition does not exist except on the scalar line.
+and it fixes nothing else about the vector part. The axis $\vec{Ζ}$ has two free complex angles, four real parameters, and the two eigenvalues are blind to them. At $B^2=0$ the axis is not defined, and the two-term spectral decomposition does not exist except on the scalar line.
 
 **Interpretation.** A spectral measurement reads the two frequencies and leaves the frame free. The set of elements with a given spectrum is the set of elements obtained by changing the axis; for a four-momentum it is the two-sphere of directions at fixed energy and momentum magnitude. The spectrum is therefore a **frame-blind** observable: it sees the splitting and the mean, not the orientation.
 
@@ -601,8 +601,8 @@ The article does not claim that the three strata exhaust the physics of the cone
 | $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
 | $W(t,\omega)=\exp(-2\pi\rho\omega t)$ | the biquaternion Fourier kernel |
 | $N_{\tilde Q}=L_{\vec Q}$ | the nilpotent part of the operator, $N_{\tilde Q}^2=0$ when $B^2=0$ |
-| $\vec\Xi=-i\vec Q/B$ | the root of $+1$ of the regular case, $\vec\Xi^2=e_t$ |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the spectral idempotents of the regular case |
+| $\vec{Ζ}=-i\vec Q/B$ | the root of $+1$ of the regular case, $\vec{Ζ}^2=e_t$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the spectral idempotents of the regular case |
 | $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction of the unipotent stratum |
 | $e_b=e+b\vec Q$ | the Peirce idempotents of the defective strata, a gauge |
 | $\operatorname{rank}L_{\tilde Q}$ | $4$ on the units, $2$ on the nilpotent stratum, $0$ at the origin |

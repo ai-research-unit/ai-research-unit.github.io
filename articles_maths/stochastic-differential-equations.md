@@ -37,10 +37,10 @@ Its **quadratic variation** on $[0,t]$ is $\langle B\rangle_t=t$, in the sense t
 
 ### The Itô Integral
 
-**Definition.** Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\phi$ with $\mathbb{E}\int_0^T\phi_s^2ds<\infty$. For a **simple** process $\phi_s=\sum_i\xi_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\xi_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the **Itô integral** is
+**Definition.** Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\phi$ with $\mathbb{E}\int_0^T\phi_s^2ds<\infty$. For a **simple** process $\phi_s=\sum_i\zeta_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\zeta_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the **Itô integral** is
 
 $$
-\int_0^T\phi_s\,dB_s = \sum_i\xi_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
+\int_0^T\phi_s\,dB_s = \sum_i\zeta_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
 $$
 
 the integrand being evaluated at the **left** endpoint of each interval.
@@ -54,7 +54,7 @@ $$
 
 and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$; the extended stochastic process $t\mapsto\int_0^t\phi_s\,dB_s$ is a continuous martingale with quadratic variation $\langle\int\phi\,dB\rangle_t=\int_0^t\phi_s^2ds$.
 
-*Proof.* For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\xi_i\xi_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.
+*Proof.* For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\zeta_i\zeta_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.
 
 **Definition.** For a general integrand $\phi\in\mathcal{H}^2$ the integral is the $L^2$ limit of the integrals of an approximating sequence of simple processes.
 

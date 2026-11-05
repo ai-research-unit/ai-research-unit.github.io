@@ -12,7 +12,7 @@ Two boundaries are held exactly, and the first is stated again here because it i
 - The **ergodic theory of group actions** — the invariance, ergodicity and mixing of an action of a general locally compact group, the Følner averaging of an amenable group, the Mautner phenomenon, the Moore and Howe–Moore theorems, orbit equivalence and the ratio ergodic theorem, and the homogeneous examples — is *Ergodic Theory of Group Actions*. The two articles overlap in the von Neumann and Birkhoff theorems for the action of $\mathbb{Z}$, which are stated once there as standard mathematics and used, and are here **proved** in the sharp form they take for a single transformation; the present article is the measure-theoretic theory of one map, and the group-action article is the algebraic theory of a group acting. **The division of labour is asserted in the introduction of each article**.
 - The **probability theory** used here — the measure-theoretic frame, independence, conditional expectation, the laws of large numbers and the central limit theorem, the martingale theory, the Markov chains and processes, and the Brownian motion — is the block of articles *Measure-Theoretic Probability* through *Brownian Motion and Stochastic Calculus*, and the probabilistic statements are cited from them. The **general measure theory** is *Measure Theory and Integration* and *Modes of Convergence*, and the **functional analysis** — the spectral theorem, the $L^2$ projection, the unitary operators, the Choquet theory of simplices — is *Banach and Hilbert Spaces* and *Operator Algebras*. The **dynamical applications** to homogeneous spaces are *Homogeneous Dynamics* and *Ratner's Theorems*; the **equidistribution** of orbits is *Equidistribution*; and the **random walks on groups**, where the ergodic theory of a convolution action is used, is *Random Walks on Groups*. No physics is invoked.
 
-Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a measurable map, and $T$ is **measure-preserving** if $\mu(T^{-1}A) = \mu(A)$ for every $A \in \mathcal{B}$; the pair $(X,\mathcal{B},\mu,T)$ is then a **measure-preserving system**. Statements hold **a.e.** (almost everywhere) when they fail on a $\mu$-null set, and the probabilistic synonym *almost surely* is not used. The **invariant $\sigma$-algebra** is $\mathcal{I} = \{A \in \mathcal{B} : \mu(T^{-1}A\triangle A) = 0\}$, the **Koopman operator** is $U_Tf = f\circ T$, the **Kronecker** notation $e(\theta) = \exp(2\pi i\theta)$ is used, and $\xi\vee\eta$ is the join of two partitions.
+Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a measurable map, and $T$ is **measure-preserving** if $\mu(T^{-1}A) = \mu(A)$ for every $A \in \mathcal{B}$; the pair $(X,\mathcal{B},\mu,T)$ is then a **measure-preserving system**. Statements hold **a.e.** (almost everywhere) when they fail on a $\mu$-null set, and the probabilistic synonym *almost surely* is not used. The **invariant $\sigma$-algebra** is $\mathcal{I} = \{A \in \mathcal{B} : \mu(T^{-1}A\triangle A) = 0\}$, the **Koopman operator** is $U_Tf = f\circ T$, the **Kronecker** notation $e(\theta) = \exp(2\pi i\theta)$ is used, and $\zeta\vee\eta$ is the join of two partitions.
 
 ## Measure-Preserving Transformations
 
@@ -149,29 +149,29 @@ Kac's theorem quantifies Poincaré recurrence: the mean return time to $A$ is $1
 
 ### Kolmogorov–Sinai Entropy
 
-**Definition.** Let $\xi = \{A_1,\dots,A_k\}$ be a finite partition of $X$. Its **entropy** is $H(\xi) = -\sum_i\mu(A_i)\log\mu(A_i)$, and the entropy of $T$ with respect to $\xi$ is
+**Definition.** Let $\zeta = \{A_1,\dots,A_k\}$ be a finite partition of $X$. Its **entropy** is $H(\zeta) = -\sum_i\mu(A_i)\log\mu(A_i)$, and the entropy of $T$ with respect to $\zeta$ is
 
 $$
-h_\mu(T,\xi) = \lim_{n\to\infty}\frac{1}{n}H\!\left(\bigvee_{k=0}^{n-1}T^{-k}\xi\right),
+h_\mu(T,\zeta) = \lim_{n\to\infty}\frac{1}{n}H\!\left(\bigvee_{k=0}^{n-1}T^{-k}\zeta\right),
 $$
 
-the limit existing because the sequence is subadditive. The **Kolmogorov–Sinai entropy** is $h_\mu(T) = \sup_\xi h_\mu(T,\xi)$, the supremum over finite partitions.
+the limit existing because the sequence is subadditive. The **Kolmogorov–Sinai entropy** is $h_\mu(T) = \sup_\zeta h_\mu(T,\zeta)$, the supremum over finite partitions.
 
-**Theorem (Kolmogorov–Sinai).** If $\xi$ is a **generator** — that is, the partitions $T^{-k}\xi$, $k \geq 0$, generate the $\sigma$-algebra $\mathcal{B}$ up to null sets — then $h_\mu(T) = h_\mu(T,\xi)$.
+**Theorem (Kolmogorov–Sinai).** If $\zeta$ is a **generator** — that is, the partitions $T^{-k}\zeta$, $k \geq 0$, generate the $\sigma$-algebra $\mathcal{B}$ up to null sets — then $h_\mu(T) = h_\mu(T,\zeta)$.
 
 The entropy is an isomorphism invariant: conjugate systems have the same entropy, so the entropy separates systems that are not isomorphic, and it is the principal computable invariant of ergodic theory. The Kolmogorov–Sinai theorem reduces its computation to a single partition for the standard examples: the binary partition generates the doubling map and gives $\log 2$; the digit partition generates the Bernoulli shift and gives $H(p)$; the continued fraction partition together with the Gauss measure gives $\pi^2/(6\log2)$; and a toral automorphism has entropy $\log|\lambda|$ by the Adler–Weiss computation.
 
 ### The Shannon–McMillan–Breiman Theorem
 
-**Theorem (Shannon–McMillan–Breiman).** Let $T$ be ergodic and measure-preserving and let $\xi$ be a finite partition. Then
+**Theorem (Shannon–McMillan–Breiman).** Let $T$ be ergodic and measure-preserving and let $\zeta$ be a finite partition. Then
 
 $$
--\frac{1}{n}\log\mu\bigl(\xi^{(n)}(x)\bigr) \longrightarrow h_\mu(T,\xi) \qquad \text{a.e. and in } L^1,
+-\frac{1}{n}\log\mu\bigl(\zeta^{(n)}(x)\bigr) \longrightarrow h_\mu(T,\zeta) \qquad \text{a.e. and in } L^1,
 $$
 
-where $\xi^{(n)} = \bigvee_{k=0}^{n-1}T^{-k}\xi$ and $\xi^{(n)}(x)$ is the atom of $\xi^{(n)}$ containing $x$.
+where $\zeta^{(n)} = \bigvee_{k=0}^{n-1}T^{-k}\zeta$ and $\zeta^{(n)}(x)$ is the atom of $\zeta^{(n)}$ containing $x$.
 
-The theorem is the ergodic theorem for the information function, and it is the reason the entropy is the exponential rate of decay of the measure of the atom: the typical atom of the $n$-fold refinement has measure $\exp(-nh_\mu(T,\xi))$. Its proof applies the martingale convergence theorem of *Martingales* to the conditional information functions — which form a reverse martingale as the conditioning $\sigma$-algebra shrinks — together with the ergodic theorem for the limiting term, and it is the bridge between entropy and the pointwise ergodic theory.
+The theorem is the ergodic theorem for the information function, and it is the reason the entropy is the exponential rate of decay of the measure of the atom: the typical atom of the $n$-fold refinement has measure $\exp(-nh_\mu(T,\zeta))$. Its proof applies the martingale convergence theorem of *Martingales* to the conditional information functions — which form a reverse martingale as the conditioning $\sigma$-algebra shrinks — together with the ergodic theorem for the limiting term, and it is the bridge between entropy and the pointwise ergodic theory.
 
 ### Bernoulli Shifts and Ornstein's Theorem
 
@@ -232,9 +232,9 @@ The quantitiative refinement of the theory is entropy. The Kolmogorov–Sinai en
 | von Neumann, Birkhoff | mean and pointwise ergodic theorems |
 | $f^* = \mathbb{E}[f\mid\mathcal{I}]$ | Invariant limit of the time averages |
 | $\tau_A$, Kac | first return time; $\int_A\tau_A\,d\mu=1$ |
-| $H(\xi)$, $h_\mu(T,\xi)$, $h_\mu(T)$ | partition entropy, entropy with respect to $\xi$, Kolmogorov–Sinai entropy |
+| $H(\zeta)$, $h_\mu(T,\zeta)$, $h_\mu(T)$ | partition entropy, entropy with respect to $\zeta$, Kolmogorov–Sinai entropy |
 | generator | partition whose translates generate $\mathcal{B}$ |
-| Shannon–McMillan–Breiman | $-\frac1n\log\mu(\xi^{(n)}(x))\to h_\mu(T,\xi)$ |
+| Shannon–McMillan–Breiman | $-\frac1n\log\mu(\zeta^{(n)}(x))\to h_\mu(T,\zeta)$ |
 | Bernoulli shift, $H(p)$ | shift on $\{1,\dots,k\}^{\mathbb{Z}}$, its entropy |
 | Pesin | $h_\mu(T)=\int\sum_{\lambda_i>0}\lambda_i\,d\mu$ |
 | ergodic decomposition | $\mu=\int\mu_x\,d\mu(x)$, $\mu_x$ ergodic |

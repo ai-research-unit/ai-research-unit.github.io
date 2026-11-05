@@ -174,7 +174,7 @@ the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second 
 |---|---|
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two idempotents |
 | $S_\pm=\mathbb{C}\Pi_\pm$ | the two spinor spaces, complex lines |
-| $\xi_+=A_1\Pi_+$, $\xi_-=A_2\Pi_-$ | the two spinors |
+| $\zeta_+=A_1\Pi_+$, $\zeta_-=A_2\Pi_-$ | the two spinors |
 | $A_1,A_2\in\mathbb{C}$ | the spinor coordinates |
 | $C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the eigenvalues of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ |
 | $[L_{\breve Q}]$ | the matrix of multiplication by $\breve Q$ in the eigenbasis |

@@ -109,7 +109,7 @@ so the inversion involution corresponds to the complex conjugation of the Fourie
 
 ## Worked Cases
 
-**Example (the line and the plane).** Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $\exp(-i a\cdot\xi)$, so the adjoint multiplies by $\exp(+ia\cdot\xi)$, the complex conjugate. The example is the original and simplest case.
+**Example (the line and the plane).** Let $G = \mathbb{R}^n$ with the Lebesgue measure; the translation $T_a f(x) = f(x-a)$ has adjoint $T_a^{*} = T_{-a} = T_a^{-1}$, the reversing symmetry is $Cf(x) = f(-x)$, and the Fourier transform diagonalises $T_a$ by the character $\exp(-i a\cdot\zeta)$, so the adjoint multiplies by $\exp(+ia\cdot\zeta)$, the complex conjugate. The example is the original and simplest case.
 
 **Example (the circle).** Let $G = \mathbb{T} = \mathbb{R}/\mathbb{Z}$ with the rotations; the translations are the rotations of the circle, the adjoint of the rotation by $\theta$ is the rotation by $-\theta$, and on the Fourier basis $\exp(2\pi i n x)$ the operator $T_\theta$ acts by $\exp(-2\pi in\theta)$, the adjoint by $\exp(+2\pi in\theta)$. The inversion sends $\theta$ to $-\theta$ and the Fourier coefficient to its conjugate; the example is the compact abelian case.
 

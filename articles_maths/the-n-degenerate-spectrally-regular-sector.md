@@ -68,13 +68,13 @@ $$
 \mathbb{C}^\times\times\{\text{non-trivial idempotents}\}\longrightarrow\Sigma_{01},\qquad (c,\tilde\Pi)\mapsto c\,\tilde\Pi
 $$
 
-is a bijection. The non-trivial idempotents are $\tilde\Pi=(e_t+\tilde\Xi)/2$ with $\tilde\Xi^2=e_t$ and $\tilde\Xi\neq\pm e_t$; writing $\tilde\Xi=\xi\vec e$ for $\xi\in\mathbb{C}^3$, the root equation is
+is a bijection. The non-trivial idempotents are $\tilde\Pi=(e_t+\tilde{Ζ})/2$ with $\tilde{Ζ}^2=e_t$ and $\tilde{Ζ}\neq\pm e_t$; writing $\tilde{Ζ}=\zeta\vec e$ for $\zeta\in\mathbb{C}^3$, the root equation is
 
 $$
-\xi_x^2+\xi_y^2+\xi_z^2=1,
+\zeta_x^2+\zeta_y^2+\zeta_z^2=1,
 $$
 
-a smooth affine quadric of complex dimension $2$. Deleting the two roots $\pm e_t$ and multiplying by $\mathbb{C}^\times$ gives complex dimension $1+2=3$ and real dimension $2+4=6$. The roots $\tilde\Xi=i\vec u$, $\vec u\in S^2$, are the Hermitian ones and form a two-sphere in the quadric.
+a smooth affine quadric of complex dimension $2$. Deleting the two roots $\pm e_t$ and multiplying by $\mathbb{C}^\times$ gives complex dimension $1+2=3$ and real dimension $2+4=6$. The roots $\tilde{Ζ}=i\vec u$, $\vec u\in S^2$, are the Hermitian ones and form a two-sphere in the quadric.
 
 **Remark (a cone with the apex removed).** The sector is stable under every non-zero complex scalar and under no zero scalar: $0\cdot\tilde Q=0$ lies in $\Sigma_{00}$. It is a cone with its apex deleted, and the apex belongs to its closure.
 
@@ -176,7 +176,7 @@ $$
 
 The zero coefficient is the only trace of the norm degeneracy in the Peirce data. The idempotent $e_-$ is present and non-trivial, and the decomposition is genuinely two-term: the vanishing coefficient is a value, not a missing idempotent. Both mixed corners are non-zero, so both nilpotents exist.
 
-**The eigenbasis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction in full generality is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*, and its specialisation to $\Sigma_{11}$ is in *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. With the branch $B=-iQ_t$ one has $\lambda_+=c=2Q_t$, and the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ has the diagonal values $(c,c,0,0)$. The other branch exchanges the labels and gives $(0,0,c,c)$. The zero eigenvalue is carried by the two basis vectors of the $\lambda_-$-eigenspace $\tilde\Pi_-\mathbb{B}$, namely $\vec\Upsilon_+$ and $\tilde\Pi_-$; the spectral decomposition, by contrast, has one zero coefficient.
+**The eigenbasis.** Since $B^2\neq0$, the root $\vec{Ζ}=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction in full generality is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*, and its specialisation to $\Sigma_{11}$ is in *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. With the branch $B=-iQ_t$ one has $\lambda_+=c=2Q_t$, and the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ has the diagonal values $(c,c,0,0)$. The other branch exchanges the labels and gives $(0,0,c,c)$. The zero eigenvalue is carried by the two basis vectors of the $\lambda_-$-eigenspace $\tilde\Pi_-\mathbb{B}$, namely $\vec\Upsilon_+$ and $\tilde\Pi_-$; the spectral decomposition, by contrast, has one zero coefficient.
 
 ## Spinors and the Peirce Index
 
@@ -201,21 +201,21 @@ $$
 $$
 A spinor of the first Peirce copy is
 $$
-\xi_+=Q_{2,11}e_++Q_{2,21}\vec\Upsilon_+,
+\zeta_+=Q_{2,11}e_++Q_{2,21}\vec\Upsilon_+,
 $$
 with coordinates $(Q_{2,11},Q_{2,21})$ in the basis $(e_+,\vec\Upsilon_+)$. Since $e_+\in\mathbb{B}_{++}$ and $\vec\Upsilon_+\in\mathbb{B}_{-+}$, left multiplication by $\tilde Q=c\,e_+$ gives
 $$
-\tilde Q\xi_+=c\,Q_{2,11}e_+,
+\tilde Q\zeta_+=c\,Q_{2,11}e_+,
 \qquad
 (Q_{2,11},Q_{2,21})\longmapsto(c\,Q_{2,11},0).
 $$
 A spinor of the second Peirce copy is
 $$
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}e_-,
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}e_-,
 $$
 with coordinates $(Q_{2,12},Q_{2,22})$ in the basis $(\vec\Upsilon_-,e_-)$. Since $\vec\Upsilon_-\in\mathbb{B}_{+-}$ and $e_-\in\mathbb{B}_{--}$,
 $$
-\tilde Q\xi_-=c\,Q_{2,12}\vec\Upsilon_-,
+\tilde Q\zeta_-=c\,Q_{2,12}\vec\Upsilon_-,
 \qquad
 (Q_{2,12},Q_{2,22})\longmapsto(c\,Q_{2,12},0).
 $$
@@ -229,9 +229,9 @@ Each Peirce copy carries both eigenvalues, and one component of each is annihila
 
 Right multiplication by $\tilde Q=c\,e_+$ is
 $$
-\xi_+\tilde Q=c\,\xi_+\quad(\xi_+\in S_+),
+\zeta_+\tilde Q=c\,\zeta_+\quad(\zeta_+\in S_+),
 \qquad
-\xi_-\tilde Q=0\quad(\xi_-\in S_-),
+\zeta_-\tilde Q=0\quad(\zeta_-\in S_-),
 $$
 because $e_+$ acts as the identity on the right of $S_+$ and $S_-e_+=0$. The Peirce index is the right eigenvalue, as in the general article: here $R_{\tilde Q}$ is $c$ on $S_+$ and $0$ on $S_-$. The second Peirce copy is therefore the right annihilator,
 $$
@@ -278,7 +278,7 @@ $$
 
 and the product of two elements of the sector can lie in $\Sigma_{01}$, can be $0$, and can be a non-zero element of $\Sigma_{00}$.
 
-*Witnesses.* Take the standard pair of a root, $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$, and the Peirce element of the mixed corner,
+*Witnesses.* Take the standard pair of a root, $\tilde\Pi_\pm=(e_t\pm\tilde{Ζ})/2$, and the Peirce element of the mixed corner,
 
 $$
 \tilde\Pi_+=\frac{e_t+i\vec e_z}{2},\qquad
@@ -391,7 +391,7 @@ $$
 $$
 
 $$
-\boxed{\ \vec\Xi=2\tilde\Pi-e_t=\frac{\vec Q}{Q_t}=\frac{Q_x}{Q_t}\vec e_x+\frac{Q_y}{Q_t}\vec e_y+\frac{Q_z}{Q_t}\vec e_z,\qquad \vec\Xi^2=e_t\ }
+\boxed{\ \vec{Ζ}=2\tilde\Pi-e_t=\frac{\vec Q}{Q_t}=\frac{Q_x}{Q_t}\vec e_x+\frac{Q_y}{Q_t}\vec e_y+\frac{Q_z}{Q_t}\vec e_z,\qquad \vec{Ζ}^2=e_t\ }
 $$
 
 **The two nilpotents.** They are the closed form of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*, read with $B=-iQ_t$, the branch that puts $\lambda_+=2Q_t$; the other branch exchanges the two labels. With $\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$,
@@ -463,8 +463,8 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal{N}_{\mathrm{np}}=\Sigma_{01}$ | the non-pure stratum of the null cone |
 | $\tilde\Pi,\tilde\Pi'=e_t-\tilde\Pi$ | a non-trivial idempotent and its complement |
-| $\vec\Xi=2\tilde\Pi-e_t$ | the pure root of $+1$ attached to the idempotent, $\vec\Xi^2=e_t$ |
-| $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the standard pair of a root |
+| $\vec{Ζ}=2\tilde\Pi-e_t$ | the pure root of $+1$ attached to the idempotent, $\vec{Ζ}^2=e_t$ |
+| $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$ | the standard pair of a root |
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the nilpotent of the mixed corner $\mathbb{B}_{+-}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, with $L_{\tilde Q}^2=2Q_tL_{\tilde Q}$ |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
@@ -481,6 +481,6 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 - [The Spectrum](the-spectrum.html), for the spectral criterion and the spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
-- [Idempotents](idempotents.html), for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.
+- [Idempotents](idempotents.html), for the root variety $\tilde{Ζ}^2=e_t$ and the idempotent manifold.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and its failure at $\langle\tilde Q\rangle_{\natural}=0$.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

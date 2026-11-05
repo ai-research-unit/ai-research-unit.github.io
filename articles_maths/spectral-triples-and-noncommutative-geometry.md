@@ -141,7 +141,7 @@ $$
 
 with locally computable coefficients, and the **Weyl law** for the counting function $N(\lambda)=\#\{n:|\lambda_n|\leq\lambda\}$ is $N(\lambda)\sim C\lambda^{p}$.
 
-**Proof sketch.** The heat kernel estimate follows from the parametrix construction for the operator $D^{2}$, whose symbol is $|\xi|^{2}$; the leading term is the volume of the manifold (in the commutative case) times $(4\pi t)^{-p/2}$, and the coefficients are integrals of local invariants. The Weyl law is the Abelian theorem relating the asymptotics of the heat trace as $t\to0$ to the counting function.
+**Proof sketch.** The heat kernel estimate follows from the parametrix construction for the operator $D^{2}$, whose symbol is $|\zeta|^{2}$; the leading term is the volume of the manifold (in the commutative case) times $(4\pi t)^{-p/2}$, and the coefficients are integrals of local invariants. The Weyl law is the Abelian theorem relating the asymptotics of the heat trace as $t\to0$ to the counting function.
 
 **Corollary.** In the commutative case the spectral dimension is the dimension of the manifold and the leading heat coefficient is the volume; the metric dimension is recovered from the spectrum of $D$ alone. The dimension spectrum contains, in addition to the dimension, the smaller integers and half-integers at which the coefficients of the expansion occur, and in the noncommutative case it need not be a single point.
 
@@ -195,7 +195,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

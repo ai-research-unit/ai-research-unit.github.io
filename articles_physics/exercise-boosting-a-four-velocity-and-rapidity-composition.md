@@ -26,16 +26,16 @@ which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\
 
 **(d)** in the collinear case $\vec v\parallel\vec v_b$ the induced velocity is $v_2 = (v-v_b)/(1-v_b v/c^2)$, i.e. the rapidities subtract.
 
-**Solution.** Because a pure-boost rotor is Hermitian, $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$, and the transformation is the two-sided product $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}$. Write $a = \cosh\frac{\psi_b}{2}$, $b = \sinh\frac{\psi_b}{2}$, and $\vec\Xi = \vec u_x$, a real unit pure quaternion with $\vec\Xi^2 = -e_t$. Split the velocity into parts parallel and perpendicular to $\vec\Xi$,
+**Solution.** Because a pure-boost rotor is Hermitian, $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$, and the transformation is the two-sided product $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}$. Write $a = \cosh\frac{\psi_b}{2}$, $b = \sinh\frac{\psi_b}{2}$, and $\vec{Ζ} = \vec u_x$, a real unit pure quaternion with $\vec{Ζ}^2 = -e_t$. Split the velocity into parts parallel and perpendicular to $\vec{Ζ}$,
 $$
-\vec v = \vec v_\parallel + \vec v_\perp, \qquad \vec v_\parallel = v_\parallel \vec\Xi, \qquad \vec\Xi\,\vec v_\parallel = -v_\parallel, \qquad \vec\Xi\,\vec v_\perp = \vec\Xi\times\vec v_\perp, \qquad \vec v_\perp \vec\Xi = -\vec\Xi\times\vec v_\perp .
+\vec v = \vec v_\parallel + \vec v_\perp, \qquad \vec v_\parallel = v_\parallel \vec{Ζ}, \qquad \vec{Ζ}\,\vec v_\parallel = -v_\parallel, \qquad \vec{Ζ}\,\vec v_\perp = \vec{Ζ}\times\vec v_\perp, \qquad \vec v_\perp \vec{Ζ} = -\vec{Ζ}\times\vec v_\perp .
 $$
 The first product expands as
 $$
 \tilde U_{\mathrm b}\tilde{V} = ic\gamma\,\tilde U_{\mathrm b} + \gamma\,\tilde U_{\mathrm b}\vec v
-= ic\gamma a - c\gamma b\,\vec\Xi + \gamma\left(a\vec v_\parallel + a\vec v_\perp - i b v_\parallel + i b\,\vec\Xi\times\vec v_\perp\right).
+= ic\gamma a - c\gamma b\,\vec{Ζ} + \gamma\left(a\vec v_\parallel + a\vec v_\perp - i b v_\parallel + i b\,\vec{Ζ}\times\vec v_\perp\right).
 $$
-Multiplying once more on the right by $\tilde U_{\mathrm b} = a + ib\vec\Xi$ and collecting the scalar and vector parts gives
+Multiplying once more on the right by $\tilde U_{\mathrm b} = a + ib\vec{Ζ}$ and collecting the scalar and vector parts gives
 $$
 \boxed{\;\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}
 = ic\,\gamma_b\gamma\left(1 - \frac{\vec v_b\cdot\vec v}{c^2}\right)e_t
@@ -83,14 +83,14 @@ The norm is preserved: $\langle\tilde{V}_2\rangle_{\natural} = -1$ in units $c=1
 
 **(c)** Reconcile the addition here with the subtraction found in Problem 1.
 
-**Solution. (a)** Put $\vec\Xi = \vec u_y$, $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$. Since $\vec\Xi^2 = -e_t$, the product of the two scalar-imaginary vector parts is
+**Solution. (a)** Put $\vec{Ζ} = \vec u_y$, $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$. Since $\vec{Ζ}^2 = -e_t$, the product of the two scalar-imaginary vector parts is
 $$
-(i\vec\Xi)(i\vec\Xi) = i^2\vec\Xi^2 = (-1)(-1) = +e_t,
+(i\vec{Ζ})(i\vec{Ζ}) = i^2\vec{Ζ}^2 = (-1)(-1) = +e_t,
 $$
 so the two boosts in the same direction multiply hyperbolically:
 $$
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
-= \left(c_1c_2 + s_1s_2\right) + i\left(c_1s_2 + s_1c_2\right)\vec\Xi
+= \left(c_1c_2 + s_1s_2\right) + i\left(c_1s_2 + s_1c_2\right)\vec{Ζ}
 = \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\vec u_y
 = \tilde U_{\mathrm b}(\psi_1+\psi_2).
 \tag{3}
@@ -117,9 +117,9 @@ For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, w
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
-**Solution. (a)** With $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$, $\vec\Xi_i = \vec {u_y}_i$, and the quaternion product identity $\vec\Xi_2\vec\Xi_1 = -\vec\Xi_2\cdot \vec\Xi_1 + \vec\Xi_2\times \vec\Xi_1$ for unit pure quaternions,
+**Solution. (a)** With $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$, $\vec{Ζ}_i = \vec {u_y}_i$, and the quaternion product identity $\vec{Ζ}_2\vec{Ζ}_1 = -\vec{Ζ}_2\cdot \vec{Ζ}_1 + \vec{Ζ}_2\times \vec{Ζ}_1$ for unit pure quaternions,
 $$
-(i\vec\Xi_2)(i\vec\Xi_1) = -\vec\Xi_2\vec\Xi_1 = \cos\theta^{\mathrm{btw}} + \vec\Xi_1\times \vec\Xi_2 .
+(i\vec{Ζ}_2)(i\vec{Ζ}_1) = -\vec{Ζ}_2\vec{Ζ}_1 = \cos\theta^{\mathrm{btw}} + \vec{Ζ}_1\times \vec{Ζ}_2 .
 $$
 Hence
 $$

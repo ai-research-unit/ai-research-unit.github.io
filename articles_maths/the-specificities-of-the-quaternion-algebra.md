@@ -13,9 +13,9 @@ This article collects what is specific to the quaternion algebra among the algeb
 | zero divisors | $\tilde q_1\tilde q_2=0$, both non-zero | none |
 | non-zero nilpotents | $\tilde q^2=0$, $\tilde q\neq0$ | none |
 | idempotents | $\tilde q^2=\tilde q$ | $\{0,e_t\}$ |
-| roots of $-1$ | $\tilde\xi^2=-e_t$ | the unit sphere of the vector subspace $V$, a two-dimensional family |
-| roots of $+1$ | $\tilde\xi^2=e_t$ | $\{\pm e_t\}$ |
-| roots of $0$ | $\tilde\xi^2=0$ | $\{0\}$ |
+| roots of $-1$ | $\tilde\zeta^2=-e_t$ | the unit sphere of the vector subspace $V$, a two-dimensional family |
+| roots of $+1$ | $\tilde\zeta^2=e_t$ | $\{\pm e_t\}$ |
+| roots of $0$ | $\tilde\zeta^2=0$ | $\{0\}$ |
 
 *Proof.* Every non-zero element is invertible by *Norm and Invertibility in the Quaternion Algebra*, above this article in this category, with $\tilde q^{-1}=\tilde q^{\natural}/\tilde q\tilde q^{\natural}$; a vanishing product with a non-zero factor therefore forces the other factor to vanish, so there is no zero divisor, and a non-zero nilpotent would be a zero divisor with itself. For the idempotents, $\tilde q(\tilde q-e_t)=0$ forces $\tilde q=0$ or $\tilde q=e_t$. The three root sets are the cases $q_t=-1,0,1$ of the classification of *Square Roots of a General Element in the Quaternion Algebra*, above this article in this category.
 

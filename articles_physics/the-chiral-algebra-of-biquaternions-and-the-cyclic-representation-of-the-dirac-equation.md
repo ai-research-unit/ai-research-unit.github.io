@@ -14,7 +14,7 @@ The plan is the basis, then the operations on it, then the representation, then 
 
 ## The Chiral Algebra
 
-**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\xi_1,\eta_1$ and $\alpha_2,\beta_2,\xi_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Legacy Pauli Gamma Formulation*. Every display below is an equation between elements; the arrays of the source are named where they are the subject of a sentence, and are not printed.
+**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\zeta_1,\eta_1$ and $\alpha_2,\beta_2,\zeta_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Legacy Pauli Gamma Formulation*. Every display below is an equation between elements; the arrays of the source are named where they are the subject of a sentence, and are not printed.
 
 ### The Scalar-Vector Biquaternion and the Corpus Dictionary
 
@@ -84,21 +84,21 @@ $$
 The basis is not orthogonal in the ordinary sense but it is a **basis**: every biquaternion has a unique decomposition
 
 $$
-\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta \bar{N}, \qquad \alpha, \beta, \xi, \eta \in \mathbb{C},
+\mathcal{B} = \alpha\vec q + \beta\vec q^* + \zeta N + \eta \bar{N}, \qquad \alpha, \beta, \zeta, \eta \in \mathbb{C},
 \tag{4}
 $$
 
-which splits into a **transverse** part $\vec q_a = \alpha\vec q + \beta\vec q^*$ lying in the plane $\Pi$ spanned by $\vec A$ and $\vec B$, and a **longitudinal** part $\mathcal{P} = \xi N + \eta\bar{N}$ whose vector part is along $\vec u$. On space-time the coordinates are the light-cone coordinates
+which splits into a **transverse** part $\vec q_a = \alpha\vec q + \beta\vec q^*$ lying in the plane $\Pi$ spanned by $\vec A$ and $\vec B$, and a **longitudinal** part $\mathcal{P} = \zeta N + \eta\bar{N}$ whose vector part is along $\vec u$. On space-time the coordinates are the light-cone coordinates
 
 $$
-\alpha = x - iy, \qquad \beta = x + iy, \qquad \xi = t' + z, \qquad \eta = t' - z,
+\alpha = x - iy, \qquad \beta = x + iy, \qquad \zeta = t' + z, \qquad \eta = t' - z,
 \tag{5}
 $$
 
 whence the derivatives
 
 $$
-\partial/\partial\alpha = \tfrac12(\partial/\partial Q_x + i\partial/\partial Q_y), \qquad \partial/\partial\beta = \tfrac12(\partial/\partial Q_x - i\partial/\partial Q_y), \qquad \partial/\partial\xi = \tfrac12(\partial/\partial t' + \partial/\partial Q_z), \qquad \partial/\partial\eta = \tfrac12(\partial/\partial t' - \partial/\partial Q_z).
+\partial/\partial\alpha = \tfrac12(\partial/\partial Q_x + i\partial/\partial Q_y), \qquad \partial/\partial\beta = \tfrac12(\partial/\partial Q_x - i\partial/\partial Q_y), \qquad \partial/\partial\zeta = \tfrac12(\partial/\partial t' + \partial/\partial Q_z), \qquad \partial/\partial\eta = \tfrac12(\partial/\partial t' - \partial/\partial Q_z).
 \tag{6}
 $$
 
@@ -112,7 +112,7 @@ with residual zero. So the right components $\mathcal{B}\odot\bar N$ and $\mathc
 
 ### Signed Biquaternions
 
-Grouping the terms of (4) the other way gives the **signed** biquaternions: a *positive* signed biquaternion is of the form $\mathcal{B}^+ = \beta\vec q^* + \eta\bar{N}$, and a *negative* one is of the form $\mathcal{B}^- = \alpha\vec q + \xi N$. Every biquaternion is the sum of one of each, $\mathcal{B} = \mathcal{B}^+ + \mathcal{B}^-$, and the signed objects are the two **left components** of (4),
+Grouping the terms of (4) the other way gives the **signed** biquaternions: a *positive* signed biquaternion is of the form $\mathcal{B}^+ = \beta\vec q^* + \eta\bar{N}$, and a *negative* one is of the form $\mathcal{B}^- = \alpha\vec q + \zeta N$. Every biquaternion is the sum of one of each, $\mathcal{B} = \mathcal{B}^+ + \mathcal{B}^-$, and the signed objects are the two **left components** of (4),
 
 $$
 \mathcal{B}^+ = \bar N\odot\mathcal{B}, \qquad \mathcal{B}^- = N\odot\mathcal{B},
@@ -120,21 +120,21 @@ $$
 
 multiplication on the left by the two longitudinal elements, verified on the printed product (8) with residual zero. Each signed part carries one transverse and one longitudinal amplitude, which is what makes the pair the two columns of the Weyl system. The two **values** of the chirality cell are the right components and not these; the paragraph after (7b) separates the two splits.
 
-The signed biquaternions are the two classes that the **crossing product** of the next section separates, but the two classes it preserves are not the two classes just named. With $\mathcal{P}^+ = \beta\vec q^* + \eta\bar{N}$ and $\mathcal{P}^- = \alpha\vec q + \xi N$, the crossing product defined in (8) gives, for every $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta\bar{N}$,
+The signed biquaternions are the two classes that the **crossing product** of the next section separates, but the two classes it preserves are not the two classes just named. With $\mathcal{P}^+ = \beta\vec q^* + \eta\bar{N}$ and $\mathcal{P}^- = \alpha\vec q + \zeta N$, the crossing product defined in (8) gives, for every $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \zeta N + \eta\bar{N}$,
 
 $$
-\mathcal{P}^+ \rightsquigarrow \mathcal{B} = \eta_{\mathcal{P}^+}\,\xi\,\vec q + \beta_{\mathcal{P}^+}\,\alpha\,\bar{N}, \qquad
-\mathcal{P}^- \rightsquigarrow \mathcal{B} = \xi_{\mathcal{P}^-}\,\eta\,\vec q^* + \alpha_{\mathcal{P}^-}\,\beta\,N,
+\mathcal{P}^+ \rightsquigarrow \mathcal{B} = \eta_{\mathcal{P}^+}\,\zeta\,\vec q + \beta_{\mathcal{P}^+}\,\alpha\,\bar{N}, \qquad
+\mathcal{P}^- \rightsquigarrow \mathcal{B} = \zeta_{\mathcal{P}^-}\,\eta\,\vec q^* + \alpha_{\mathcal{P}^-}\,\beta\,N,
 \tag{7a}
 $$
 
 $$
-\mathcal{B} \rightsquigarrow \mathcal{P}^+ = \xi\,\eta_{\mathcal{P}^+}\,\vec q^* + \alpha\,\beta_{\mathcal{P}^+}\,N, \qquad
-\mathcal{B} \rightsquigarrow \mathcal{P}^- = \eta\,\xi_{\mathcal{P}^-}\,\vec q + \beta\,\alpha_{\mathcal{P}^-}\,\bar{N}.
+\mathcal{B} \rightsquigarrow \mathcal{P}^+ = \zeta\,\eta_{\mathcal{P}^+}\,\vec q^* + \alpha\,\beta_{\mathcal{P}^+}\,N, \qquad
+\mathcal{B} \rightsquigarrow \mathcal{P}^- = \eta\,\zeta_{\mathcal{P}^-}\,\vec q + \beta\,\alpha_{\mathcal{P}^-}\,\bar{N}.
 \tag{7b}
 $$
 
-So the crossing product preserves the classes $\{\vec q,\bar{N}\}$ and $\{\vec q^*,N\}$, and it swaps them when the signed element moves from the left to the right; that is the precise content of the reversal the source states. The classes are **not** $\mathcal{B}^+$ and $\mathcal{B}^-$ of the line above, which are $\{\vec q^*,\bar{N}\}$ and $\{\vec q,N\}$: $\mathcal{P}^+\rightsquigarrow\mathcal{B}$ returns the coefficients $\xi,\alpha$ of $\mathcal{B}^-$, placed in the $\vec q,\bar{N}$ slots. The source writes the four relations with the labels $\mathcal{B}^{\pm}_{L,R}$, and the extraction does not settle the subscript convention; the algebra gives (7a)–(7b), and the labels of the source are the ones item (ii) of *What Is Verified* discusses. The article keeps the assignment (17) below, because that is the one that makes the component system match the corpus's pair row by row.
+So the crossing product preserves the classes $\{\vec q,\bar{N}\}$ and $\{\vec q^*,N\}$, and it swaps them when the signed element moves from the left to the right; that is the precise content of the reversal the source states. The classes are **not** $\mathcal{B}^+$ and $\mathcal{B}^-$ of the line above, which are $\{\vec q^*,\bar{N}\}$ and $\{\vec q,N\}$: $\mathcal{P}^+\rightsquigarrow\mathcal{B}$ returns the coefficients $\zeta,\alpha$ of $\mathcal{B}^-$, placed in the $\vec q,\bar{N}$ slots. The source writes the four relations with the labels $\mathcal{B}^{\pm}_{L,R}$, and the extraction does not settle the subscript convention; the algebra gives (7a)–(7b), and the labels of the source are the ones item (ii) of *What Is Verified* discusses. The article keeps the assignment (17) below, because that is the one that makes the component system match the corpus's pair row by row.
 
 The correspondence with the corpus is exact. The paper's $N=\tfrac12(1+\vec u)$ and $\bar N=\tfrac12(1-\vec u)$ are the light-cone elements for the direction $\vec u$, and under the dictionary that carries the paper's product into the Hamilton product, $\vec u\mapsto i\vec u$, they become the corpus's two light-cone elements. The frame along $\vec u$ carries the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ of *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*, and its values on the four basis elements are
 
@@ -148,7 +148,7 @@ The correspondence with the corpus is exact. The paper's $N=\tfrac12(1+\vec u)$ 
 all four at residual zero. The values are therefore the two **right** components,
 
 $$
-\mathcal{B}\odot\bar N=\alpha\vec q+\eta\bar N \quad(R), \qquad \mathcal{B}\odot N=\beta\vec q^*+\xi N \quad(L),
+\mathcal{B}\odot\bar N=\alpha\vec q+\eta\bar N \quad(R), \qquad \mathcal{B}\odot N=\beta\vec q^*+\zeta N \quad(L),
 $$
 
 and the two projectors of §*The Isotropic (Light) Basis* say the same thing operator by operator. The last column is the point of the section: each signed part holds one element of each value, so the two splits are transversal and neither is a relabelling of the other. The four amplitudes form a two-by-two grid, with the source's sign on one axis and the value of the cell on the other.
@@ -161,21 +161,21 @@ The paper introduces four general products on the same four-dimensional space. T
 
 $$
 \begin{aligned}
-\mathcal{B}_1 \odot \mathcal{B}_2 &= (\xi_1\alpha_2 + \alpha_1\eta_2)\,\vec q + (\eta_1\beta_2 + \beta_1\xi_2)\,\vec q^* + (\alpha_1\beta_2 + \xi_1\xi_2)\,N + (\beta_1\alpha_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \otimes \mathcal{B}_2 &= (\alpha_1\alpha_2 + \xi_1\eta_2)\,\vec q + (\beta_1\beta_2 + \eta_1\xi_2)\,\vec q^* + (\beta_1\xi_2 + \xi_1\alpha_2)\,N + (\alpha_1\eta_2 + \eta_1\beta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \times \mathcal{B}_2 &= (\alpha_1\alpha_2 + \beta_1\xi_2)\,\vec q + (\alpha_1\beta_2 + \beta_1\eta_2)\,\vec q^* + (\xi_1\alpha_2 + \eta_1\xi_2)\,N + (\xi_1\beta_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \rightsquigarrow \mathcal{B}_2 &= \eta_1\xi_2\,\vec q + \xi_1\eta_2\,\vec q^* + \alpha_1\beta_2\,N + \beta_1\alpha_2\,\bar{N}.
+\mathcal{B}_1 \odot \mathcal{B}_2 &= (\zeta_1\alpha_2 + \alpha_1\eta_2)\,\vec q + (\eta_1\beta_2 + \beta_1\zeta_2)\,\vec q^* + (\alpha_1\beta_2 + \zeta_1\zeta_2)\,N + (\beta_1\alpha_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \otimes \mathcal{B}_2 &= (\alpha_1\alpha_2 + \zeta_1\eta_2)\,\vec q + (\beta_1\beta_2 + \eta_1\zeta_2)\,\vec q^* + (\beta_1\zeta_2 + \zeta_1\alpha_2)\,N + (\alpha_1\eta_2 + \eta_1\beta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \times \mathcal{B}_2 &= (\alpha_1\alpha_2 + \beta_1\zeta_2)\,\vec q + (\alpha_1\beta_2 + \beta_1\eta_2)\,\vec q^* + (\zeta_1\alpha_2 + \eta_1\zeta_2)\,N + (\zeta_1\beta_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \rightsquigarrow \mathcal{B}_2 &= \eta_1\zeta_2\,\vec q + \zeta_1\eta_2\,\vec q^* + \alpha_1\beta_2\,N + \beta_1\alpha_2\,\bar{N}.
 \end{aligned}
 \tag{8}
 $$
 
-**Outer.** The first is a rewriting of (1) in the isotropic coordinates, and it is the one product that is known independently through the Appendix's first correspondence: the four coordinates placed in the four slots of a two-by-two array, $\xi$ and $\alpha$ in the first row and $\beta$ and $\eta$ in the second, turn the outer product into the ordinary product of arrays. The outer product is associative, basis-independent, and reproduces the basis relations (3) — the last of which is the reason $N$ and $\bar{N}$ square to themselves.
+**Outer.** The first is a rewriting of (1) in the isotropic coordinates, and it is the one product that is known independently through the Appendix's first correspondence: the four coordinates placed in the four slots of a two-by-two array, $\zeta$ and $\alpha$ in the first row and $\beta$ and $\eta$ in the second, turn the outer product into the ordinary product of arrays. The outer product is associative, basis-independent, and reproduces the basis relations (3) — the last of which is the reason $N$ and $\bar{N}$ square to themselves.
 
-**Inner.** The second product has the striking properties the author advertises, all of them verified exactly: $\vec q \otimes \vec q = \vec q$ and $\vec q^* \otimes \vec q^* = \vec q^*$ (the nullvectors square to themselves under it), $\vec q \otimes \vec q^* = \vec q^* \otimes \vec q = 0$, $N \otimes N = \bar{N} \otimes \bar{N} = 0$, $N \otimes \bar{N} = \vec q$ and $\bar{N} \otimes N = \vec q^*$, and the inner product of two complex numbers is a vector, $\lambda_1 \otimes \lambda_2 = \lambda_1\lambda_2 \vec A$. The author also advertises a failure of distributivity, and this requires care, because the product is bilinear and therefore distributive: it is **compatibility with scalar multiplication** that fails, not distributivity. For the scalar element $\lambda N + \lambda\bar{N}$ and a biquaternion $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta\bar{N}$ one has
+**Inner.** The second product has the striking properties the author advertises, all of them verified exactly: $\vec q \otimes \vec q = \vec q$ and $\vec q^* \otimes \vec q^* = \vec q^*$ (the nullvectors square to themselves under it), $\vec q \otimes \vec q^* = \vec q^* \otimes \vec q = 0$, $N \otimes N = \bar{N} \otimes \bar{N} = 0$, $N \otimes \bar{N} = \vec q$ and $\bar{N} \otimes N = \vec q^*$, and the inner product of two complex numbers is a vector, $\lambda_1 \otimes \lambda_2 = \lambda_1\lambda_2 \vec A$. The author also advertises a failure of distributivity, and this requires care, because the product is bilinear and therefore distributive: it is **compatibility with scalar multiplication** that fails, not distributivity. For the scalar element $\lambda N + \lambda\bar{N}$ and a biquaternion $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \zeta N + \eta\bar{N}$ one has
 
 $$
-\lambda \otimes \mathcal{B} = \lambda\bigl(\eta\,\vec q + \xi\,\vec q^* + \alpha\,N + \beta\,\bar{N}\bigr) \neq \lambda\mathcal{B}
-= \lambda\alpha\,\vec q + \lambda\beta\,\vec q^* + \lambda\xi\,N + \lambda\eta\,\bar{N},
+\lambda \otimes \mathcal{B} = \lambda\bigl(\eta\,\vec q + \zeta\,\vec q^* + \alpha\,N + \beta\,\bar{N}\bigr) \neq \lambda\mathcal{B}
+= \lambda\alpha\,\vec q + \lambda\beta\,\vec q^* + \lambda\zeta\,N + \lambda\eta\,\bar{N},
 $$
 
 a shift of the four coordinates, verified on one hundred random pairs; distributivity in the second argument was verified at the same time and holds. The source's phrasing is a slip, and the displayed rule is the property it points to. All the listed inner-product properties are exact. The inner product is neither associative nor basis-independent, in contrast with the outer product; the author states this and explains that the alternative correspondence reverses the two roles.
@@ -215,22 +215,22 @@ Two entries of the outer table look contradictory, and are not: it gives $N\odot
 
 ### The Appendix's Correspondences
 
-The Appendix of the paper gives two correspondences of $\mathbb{B}$ with the two-by-two complex arrays, one attached to each of the two products it treats in array form; the first is correct, the second is not. The first is the one the whole paper uses: the four coordinates $\alpha,\beta,\xi,\eta$ are placed in the four slots of an array as $\xi,\alpha$ in the first row and $\beta,\eta$ in the second, and the **outer** product becomes the ordinary product of arrays. The second attaches to the **inner** product a product of arrays in which the second product of every entry is **subtracted** instead of added (the Appendix, equations (81)–(82)); its map is printed in v2 with $\xi,\alpha$ in the first row and $-\beta,-\eta$ in the second, and in v3 with $\alpha,-\eta$ in the first row and $\xi,-\beta$ in the second, the subtractive rule unchanged: entry $(i,j)$ of the product is $a_{i1}b_{1j} - a_{i2}b_{2j}$, addition replaced by subtraction in the second term. **Neither form makes the inner product into a product of arrays, and no correction of the map can.** The check was exhaustive: over all $4!$ orders in which the four coordinates may be placed in the four slots, all $2^4$ choices of entry signs, and the four pairing rules (add and subtract, with the two index orders) — $1536$ combinations, each required to give residual zero on twenty random pairs — **no** map realises the inner product. The reason is visible in the formulas: across the four coordinates the first terms of the inner product carry all four coordinates of the second factor, $\alpha_2, \beta_2, \xi_2, \eta_2$, whereas the first term of the rule can carry only two of them. The author's own revision is evidence that he knew the map was wrong — he changed it from v2 to v3 — but the corrected form fails the same test.
+The Appendix of the paper gives two correspondences of $\mathbb{B}$ with the two-by-two complex arrays, one attached to each of the two products it treats in array form; the first is correct, the second is not. The first is the one the whole paper uses: the four coordinates $\alpha,\beta,\zeta,\eta$ are placed in the four slots of an array as $\zeta,\alpha$ in the first row and $\beta,\eta$ in the second, and the **outer** product becomes the ordinary product of arrays. The second attaches to the **inner** product a product of arrays in which the second product of every entry is **subtracted** instead of added (the Appendix, equations (81)–(82)); its map is printed in v2 with $\zeta,\alpha$ in the first row and $-\beta,-\eta$ in the second, and in v3 with $\alpha,-\eta$ in the first row and $\zeta,-\beta$ in the second, the subtractive rule unchanged: entry $(i,j)$ of the product is $a_{i1}b_{1j} - a_{i2}b_{2j}$, addition replaced by subtraction in the second term. **Neither form makes the inner product into a product of arrays, and no correction of the map can.** The check was exhaustive: over all $4!$ orders in which the four coordinates may be placed in the four slots, all $2^4$ choices of entry signs, and the four pairing rules (add and subtract, with the two index orders) — $1536$ combinations, each required to give residual zero on twenty random pairs — **no** map realises the inner product. The reason is visible in the formulas: across the four coordinates the first terms of the inner product carry all four coordinates of the second factor, $\alpha_2, \beta_2, \zeta_2, \eta_2$, whereas the first term of the rule can carry only two of them. The author's own revision is evidence that he knew the map was wrong — he changed it from v2 to v3 — but the corrected form fails the same test.
 
-What *is* true, and is verified exactly, is that the **diagonal** product is an ordinary product of arrays: with the four coordinates placed as $\alpha,\beta$ in the first row and $\xi,\eta$ in the second, the product of the two arrays is the array of $\mathcal{B}_1 \times \mathcal{B}_2$ with residual zero; this is one of the realisations the same exhaustive search returns for the diagonal product, and the diagonal and the outer product are between them the only two of the four that have any. So the source's Appendix sentence — "if we replace outer multiplication by inner multiplication, then another isomorphism is established" — is true with the word **diagonal** in place of **inner**; the exchange-of-roles reading that the author draws from it (the inner product associative and basis-independent under the alternative correspondence) has no support, because the correspondence he exhibits is not an isomorphism at all.
+What *is* true, and is verified exactly, is that the **diagonal** product is an ordinary product of arrays: with the four coordinates placed as $\alpha,\beta$ in the first row and $\zeta,\eta$ in the second, the product of the two arrays is the array of $\mathcal{B}_1 \times \mathcal{B}_2$ with residual zero; this is one of the realisations the same exhaustive search returns for the diagonal product, and the diagonal and the outer product are between them the only two of the four that have any. So the source's Appendix sentence — "if we replace outer multiplication by inner multiplication, then another isomorphism is established" — is true with the word **diagonal** in place of **inner**; the exchange-of-roles reading that the author draws from it (the inner product associative and basis-independent under the alternative correspondence) has no support, because the correspondence he exhibits is not an isomorphism at all.
 
 ### The Exchange Conjugations
 
-Beyond the corpus's conjugations, the paper defines three more by **permuting the coordinates** of (4). In the order $(\alpha, \beta, \xi, \eta)$,
+Beyond the corpus's conjugations, the paper defines three more by **permuting the coordinates** of (4). In the order $(\alpha, \beta, \zeta, \eta)$,
 
 $$
-\mathcal{B}^{\bigstar} : (\alpha, \beta, \xi, \eta) \mapsto (\beta, \alpha, \eta, \xi), \qquad
-\mathcal{B}^{\bullet} : (\alpha, \beta, \xi, \eta) \mapsto (\xi, \eta, \alpha, \beta), \qquad
-\mathcal{B}^{\bigstar\bigstar} : (\alpha, \beta, \xi, \eta) \mapsto (\eta, \xi, \beta, \alpha).
+\mathcal{B}^{\bigstar} : (\alpha, \beta, \zeta, \eta) \mapsto (\beta, \alpha, \eta, \zeta), \qquad
+\mathcal{B}^{\bullet} : (\alpha, \beta, \zeta, \eta) \mapsto (\zeta, \eta, \alpha, \beta), \qquad
+\mathcal{B}^{\bigstar\bigstar} : (\alpha, \beta, \zeta, \eta) \mapsto (\eta, \zeta, \beta, \alpha).
 \tag{10}
 $$
 
-Each is a product of two disjoint transpositions — in cycle notation $(\alpha\beta)(\xi\eta)$, $(\alpha\xi)(\beta\eta)$ and $(\alpha\eta)(\beta\xi)$ — so none of them is a single transposition, and the third is the composition of the other two. Their structural properties were verified: each is self-inverse; $\bigstar \circ \bigstar\bigstar = \bigstar\bigstar \circ \bigstar = \mathcal{B}^{\bullet}$, so applying two different ones gives the third; and the three commute pairwise.
+Each is a product of two disjoint transpositions — in cycle notation $(\alpha\beta)(\zeta\eta)$, $(\alpha\zeta)(\beta\eta)$ and $(\alpha\eta)(\beta\zeta)$ — so none of them is a single transposition, and the third is the composition of the other two. Their structural properties were verified: each is self-inverse; $\bigstar \circ \bigstar\bigstar = \bigstar\bigstar \circ \bigstar = \mathcal{B}^{\bullet}$, so applying two different ones gives the third; and the three commute pairwise.
 
 The corpus has two maps of its own that exchange sides, and neither is one of these. The **swap** $\sigma(L_aR_b)=L_bR_a$ exchanges the two slots of a cell; it is an involution, it is anti-multiplicative, and it is defined on the sixteen cells without a frame. The **natural conjugation** $\mathsf C L(a^{\natural})\mathsf C=R(a)$, with $\mathsf C=\operatorname{diag}(1,-1,-1,-1)$, carries a left multiplier to a right multiplier and reverses the units. Both are maps of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, one on the operators and the other on their arrays. The paper's three maps are neither: they act on the elements of $\mathbb{B}$ and they change the product type, and no cell is moved by them (*Operator Chirality on the Biquaternion Algebra*, §*Conjugation Exchanges the Sides*, §*The Swap of the Two Sides*).
 
@@ -248,11 +248,11 @@ which the author calls the reversal of the multipliers with a change of product 
 The operation on which the whole reformulation turns is the **cyclic conjugation**, a four-cycle of the coordinates:
 
 $$
-\overset{\curvearrowleft}{\mathcal{B}} : (\alpha, \beta, \xi, \eta) \mapsto (\beta, \xi, \eta, \alpha),
+\overset{\curvearrowleft}{\mathcal{B}} : (\alpha, \beta, \zeta, \eta) \mapsto (\beta, \zeta, \eta, \alpha),
 \tag{12}
 $$
 
-that is, $\overset{\curvearrowleft}{\mathcal{B}} = \beta\vec q + \xi\vec q^* + \eta N + \alpha\bar{N}$ for $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta\bar{N}$. The diagram of the paper is a rotation of the four coordinates around the basis, which stays in place. The properties were verified exactly: the fourth iterate is the identity, so the operation generates a cyclic group of order four on every biquaternion; the second iterate is the exchange conjugation of the second type,
+that is, $\overset{\curvearrowleft}{\mathcal{B}} = \beta\vec q + \zeta\vec q^* + \eta N + \alpha\bar{N}$ for $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \zeta N + \eta\bar{N}$. The diagram of the paper is a rotation of the four coordinates around the basis, which stays in place. The properties were verified exactly: the fourth iterate is the identity, so the operation generates a cyclic group of order four on every biquaternion; the second iterate is the exchange conjugation of the second type,
 
 $$
 \overset{\curvearrowleft\curvearrowleft}{\mathcal{B}} = \mathcal{B}^{\bullet},
@@ -277,10 +277,10 @@ and the corpus fixes the gradient, the two values and their names (*Operator and
 
 $$
 \begin{aligned}
-2\bigl(\partial/\partial\xi\,u + \partial/\partial\beta\,v\bigr) &= -im\,u_2, &\qquad
+2\bigl(\partial/\partial\zeta\,u + \partial/\partial\beta\,v\bigr) &= -im\,u_2, &\qquad
 2\bigl(\partial/\partial\eta\,v + \partial/\partial\alpha\,u\bigr) &= -im\,v_2, \\[2pt]
 2\bigl(\partial/\partial\eta\,u_2 - \partial/\partial\beta\,v_2\bigr) &= -im\,u, &\qquad
-2\bigl(\partial/\partial\xi\,v_2 - \partial/\partial\alpha\,u_2\bigr) &= -im\,v.
+2\bigl(\partial/\partial\zeta\,v_2 - \partial/\partial\alpha\,u_2\bigr) &= -im\,v.
 \end{aligned}
 \tag{14}
 $$
@@ -290,43 +290,43 @@ The factor $2$ on the left is the $\tfrac12$ of the derivatives (6): with it, (1
 The **biquaternion wave function** is
 
 $$
-F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\xi + \bar{N}f_\eta,
+F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\zeta + \bar{N}f_\eta,
 \tag{15}
 $$
 
-with complex scalar functions $f_\alpha, f_\beta, f_\xi, f_\eta$ of space-time, and the source's two chiral states are the two signed parts of (15):
+with complex scalar functions $f_\alpha, f_\beta, f_\zeta, f_\eta$ of space-time, and the source's two chiral states are the two signed parts of (15):
 
 $$
-F^- = \vec qf_\alpha + Nf_\xi, \qquad F^+ = \vec q^*f_\beta + \bar{N}f_\eta, \qquad F = F^+ + F^-.
+F^- = \vec qf_\alpha + Nf_\zeta, \qquad F^+ = \vec q^*f_\beta + \bar{N}f_\eta, \qquad F = F^+ + F^-.
 \tag{16}
 $$
 
 The correspondence with the two components of each line is
 
 $$
-u = f_\alpha, \qquad v = -f_\xi, \qquad u_2 = -f_\beta, \qquad v_2 = f_\eta,
+u = f_\alpha, \qquad v = -f_\zeta, \qquad u_2 = -f_\beta, \qquad v_2 = f_\eta,
 \tag{17}
 $$
 
-so that the source's right-chiral state is its positive signed part and its left-chiral state the negative one: $F^- \sim \psi_L$ and $F^+ \sim \psi_R$. The component correspondence is exact and was verified row by row. What it is not is a statement about the corpus's chirality cell. Each signed part holds one amplitude of each value — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\xi$ carry $L$ — so neither $F^+$ nor $F^-$ is an eigen-element of $\mathsf{V}^{\mathrm{vol}}$. The values cut the same field the other way, into
+so that the source's right-chiral state is its positive signed part and its left-chiral state the negative one: $F^- \sim \psi_L$ and $F^+ \sim \psi_R$. The component correspondence is exact and was verified row by row. What it is not is a statement about the corpus's chirality cell. Each signed part holds one amplitude of each value — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\zeta$ carry $L$ — so neither $F^+$ nor $F^-$ is an eigen-element of $\mathsf{V}^{\mathrm{vol}}$. The values cut the same field the other way, into
 
 $$
-F\odot\bar N = \vec qf_\alpha+\bar Nf_\eta \quad(R), \qquad F\odot N = \vec q^*f_\beta+Nf_\xi \quad(L),
+F\odot\bar N = \vec qf_\alpha+\bar Nf_\eta \quad(R), \qquad F\odot N = \vec q^*f_\beta+Nf_\zeta \quad(L),
 $$
 
-and those are the halves that the source's mass term couples: in (20) the mass pairs $f_\alpha$ with $f_\beta$ and $f_\xi$ with $f_\eta$, that is $R$ with $L$ in both cases. So the four amplitudes form a grid, the source's sign is one index and the value of the cell the other, and the mass term flips both at once. The carrier of the value is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ of the frame along $\vec u$, a pure right multiplier, which is why it commutes with the left action of the gradient (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*); the corpus's *Exercise: Chirality and the Weyl Spinors* works the same two values on the corpus's own field. The paper's *chiral algebra* is a computational basis, and the corpus's *Chiral Fermions in the Biquaternion Framework* is about a different question again — which chiral representations the framework admits.
+and those are the halves that the source's mass term couples: in (20) the mass pairs $f_\alpha$ with $f_\beta$ and $f_\zeta$ with $f_\eta$, that is $R$ with $L$ in both cases. So the four amplitudes form a grid, the source's sign is one index and the value of the cell the other, and the mass term flips both at once. The carrier of the value is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ of the frame along $\vec u$, a pure right multiplier, which is why it commutes with the left action of the gradient (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*); the corpus's *Exercise: Chirality and the Weyl Spinors* works the same two values on the corpus's own field. The paper's *chiral algebra* is a computational basis, and the corpus's *Chiral Fermions in the Biquaternion Framework* is about a different question again — which chiral representations the framework admits.
 
 ### The Gradients
 
 The 4-gradient and its vector conjugate, written in the isotropic basis, are
 
 $$
-D = 2(\vec q\,\partial/\partial\beta + \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\xi + \bar{N}\,\partial/\partial\eta), \qquad
-\bar{D} = 2(-\vec q\,\partial/\partial\beta - \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\eta + \bar{N}\,\partial/\partial\xi).
+D = 2(\vec q\,\partial/\partial\beta + \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\zeta + \bar{N}\,\partial/\partial\eta), \qquad
+\bar{D} = 2(-\vec q\,\partial/\partial\beta - \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\eta + \bar{N}\,\partial/\partial\zeta).
 \tag{18}
 $$
 
-The author notes the inversion that looks like a slip and is not: the derivative $\partial/\partial\alpha$ stands on $\vec q^*$ and $\partial/\partial\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial/\partial t'$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2), and it is exactly the right one: multiplying out (18) in the paper's product gives an element whose scalar part is $\partial/\partial t'$ and whose vector part is $\nabla$, which is the author's spin gradient itself, not half of it, and $\bar{D}$ carries the same scalar part and $-\nabla$. Both lines were recomputed coefficient by coefficient. Note in particular that the $\bar N$ slot of $\bar D$ carries $\partial/\partial\xi$, not a second copy of $\partial/\partial\eta$: with $\partial/\partial\eta$ in both longitudinal slots the second line would carry $\partial/\partial t'-\partial/\partial z$ in both scalar slots and would not be the vector conjugate at all. The element $D$ acts on the field by left multiplication in the paper's product, $\psi\mapsto D\psi$; the corpus's own gradient is a different element, acting in the Hamilton product.
+The author notes the inversion that looks like a slip and is not: the derivative $\partial/\partial\alpha$ stands on $\vec q^*$ and $\partial/\partial\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial/\partial t'$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2), and it is exactly the right one: multiplying out (18) in the paper's product gives an element whose scalar part is $\partial/\partial t'$ and whose vector part is $\nabla$, which is the author's spin gradient itself, not half of it, and $\bar{D}$ carries the same scalar part and $-\nabla$. Both lines were recomputed coefficient by coefficient. Note in particular that the $\bar N$ slot of $\bar D$ carries $\partial/\partial\zeta$, not a second copy of $\partial/\partial\eta$: with $\partial/\partial\eta$ in both longitudinal slots the second line would carry $\partial/\partial t'-\partial/\partial z$ in both scalar slots and would not be the vector conjugate at all. The element $D$ acts on the field by left multiplication in the paper's product, $\psi\mapsto D\psi$; the corpus's own gradient is a different element, acting in the Hamilton product.
 
 ### The Single-String Representation
 
@@ -342,17 +342,17 @@ the Dirac equation for the biquaternion wave function $F$, written as one expres
 $$
 \boxed{\;
 \begin{aligned}
-2\bigl(\partial/\partial\xi\,f_\alpha - \partial/\partial\beta\,f_\xi\bigr) &= im\,f_\beta, &\qquad
-2\bigl(\partial/\partial\eta\,f_\xi - \partial/\partial\alpha\,f_\alpha\bigr) &= im\,f_\eta, \\[2pt]
+2\bigl(\partial/\partial\zeta\,f_\alpha - \partial/\partial\beta\,f_\zeta\bigr) &= im\,f_\beta, &\qquad
+2\bigl(\partial/\partial\eta\,f_\zeta - \partial/\partial\alpha\,f_\alpha\bigr) &= im\,f_\eta, \\[2pt]
 2\bigl(\partial/\partial\eta\,f_\beta + \partial/\partial\beta\,f_\eta\bigr) &= im\,f_\alpha, &\qquad
-2\bigl(\partial/\partial\xi\,f_\eta + \partial/\partial\alpha\,f_\beta\bigr) &= im\,f_\xi .
+2\bigl(\partial/\partial\zeta\,f_\eta + \partial/\partial\alpha\,f_\beta\bigr) &= im\,f_\zeta .
 \end{aligned}\;}
 \tag{20}
 $$
 
 **This system is the chiral pair (14), twice.** Substituting (17) into (20) turns each of the four equations into the corresponding one of (14), coefficient for coefficient, including the mass terms, once the second and third are multiplied through by $-1$ — an overall sign on a single equation carries no content. The two systems differ only in that sign and in the factor $2$ that both carry. Since (14) is the two-line pair itself, (20) is the Dirac equation in its two chiral components, which is the author's own claim. The factor is the one already noted after (14): it is the $\tfrac12$ of the derivatives (6), and the printed source omits it from (20) as it omits it from (14). The omission is not cosmetic. With the printed (20) the plane wave of (28) closes on $\epsilon^2-\vec k^2=4m^2$ instead of the mass shell (30); with the factor restored the two agree.
 
-**One step is not reproduced.** The expansion of (19) into (20) cannot be checked in full from the printed symbols. Reading each derivative in $\bar{D}$ and $D$ as acting on the coefficient it multiplies — the pairing that the outer and inner products of (8) dictate — the $N$ and $\bar{N}$ components of (19) reproduce the second and third equations of (20) exactly, factor $2$ and mass included. The two transverse components do not: the $\vec q^*$ component comes out $2\partial f_\eta/\partial\xi$ short of the fourth equation, and exactly that term appears in the $\vec q$ component, which carries it in excess of the first. Whether the second product in (19) is the inner product of (8) or another of the four is not settled by the extraction. The component system (20) is verified on its own, against (14) and against the two-line pair, and it is the object used below; (19) is quoted as the author's single-string form.
+**One step is not reproduced.** The expansion of (19) into (20) cannot be checked in full from the printed symbols. Reading each derivative in $\bar{D}$ and $D$ as acting on the coefficient it multiplies — the pairing that the outer and inner products of (8) dictate — the $N$ and $\bar{N}$ components of (19) reproduce the second and third equations of (20) exactly, factor $2$ and mass included. The two transverse components do not: the $\vec q^*$ component comes out $2\partial f_\eta/\partial\zeta$ short of the fourth equation, and exactly that term appears in the $\vec q$ component, which carries it in excess of the first. Whether the second product in (19) is the inner product of (8) or another of the four is not settled by the extraction. The component system (20) is verified on its own, against (14) and against the two-line pair, and it is the object used below; (19) is quoted as the author's single-string form.
 
 The reader should also note what (19) is and is not: it is a **compactness** statement of the same kind the corpus makes for Maxwell and Dirac elsewhere, not a claim that one chirality is redundant. The expression contains both chiralities implicitly through the two products and the right-hand side; the two-chirality content is unpacked in the next subsection.
 
@@ -397,7 +397,7 @@ with the derivative on the left and the mass on the right (*An Explicit Dictiona
 | Mass | off-diagonal pairing of the two values | right, $m\mathsf{V}^{\mathrm{vol}}\bar F$, a pure right multiplier | right, $im\overset{\curvearrowleft}{F}$ |
 | Chirality | the two lines | the cell $\mathsf{V}^{\mathrm{vol}}$ of the frame | the source's signed parts $F^\pm$, which are the left components |
 
-The distinction matters for reading the source's claims. The two-sided equation's chirality is the frame's cell and its mass is a right multiplication with a conjugation; in the cyclic form the same cell grades the field term by term — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\xi$ carry $L$ — the source's two signed parts are the left components, and the mass is the cyclic conjugation. The two agree on the solutions — (20) is the two-line pair — and their mass terms are not the same operator. The corpus's *The Dirac Equation in Biquaternionic Form* states the pair, and the two-sided equation is stated in *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*; the cyclic form is a third writing of the first, differing from the two-sided equation in the mass and not in the chirality.
+The distinction matters for reading the source's claims. The two-sided equation's chirality is the frame's cell and its mass is a right multiplication with a conjugation; in the cyclic form the same cell grades the field term by term — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\zeta$ carry $L$ — the source's two signed parts are the left components, and the mass is the cyclic conjugation. The two agree on the solutions — (20) is the two-line pair — and their mass terms are not the same operator. The corpus's *The Dirac Equation in Biquaternionic Form* states the pair, and the two-sided equation is stated in *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*; the cyclic form is a third writing of the first, differing from the two-sided equation in the mass and not in the chirality.
 
 ### The Boost and the Energy–Momentum Operators
 
@@ -434,23 +434,23 @@ F \mapsto F_2 = P^+ \odot L + \breve{L} \otimes P^- .
 \tag{25b}
 $$
 
-Two remarks. First, **the right-multiplication by $L$ is a genuine boost, and it was verified**: with $L = N\exp(\theta) + \bar{N}\exp(-\theta)$ the components of $F \odot L$ are $f_\alpha \exp(-\theta)$, $f_\beta \exp(\theta)$, $f_\xi \exp(\theta)$, $f_\eta \exp(-\theta)$, which under the correspondence (17) is exactly (22), row by row. Second, **the two-product identities (25a) and (25b) are exact once $\breve{L}$ is read as that sum.** For every $\mathcal{B}$, $\mathcal{B}\odot L = \breve{L}\otimes\mathcal{B}$ holds with residual zero, and so does (25b), $P^+\odot L + \breve{L}\otimes P^- = \mathcal{B}\odot L$; with the printed $\breve{L}=N$ the same computation misses by a residual of order $1.5$, which is what makes the printed form look false. The identity is the reversal of the multipliers that (11) claims in general, and it holds here because $L$ is longitudinal: for $L = xN + y\bar{N}$ the matching element is $\breve{L} = x\vec q^* + y\vec q$, which is $\mathcal{B}^{\bigstar\bigstar}$ read on the two transverse slots. The general law (11) still fails, since it asks for a coordinate permutation and none realises it; for a longitudinal multiplier the matching element exists, and only there. So the boost stands twice over: as the one-sided $F \odot L$, and as the two-product (25a) with the corrected $\breve{L}$.
+Two remarks. First, **the right-multiplication by $L$ is a genuine boost, and it was verified**: with $L = N\exp(\theta) + \bar{N}\exp(-\theta)$ the components of $F \odot L$ are $f_\alpha \exp(-\theta)$, $f_\beta \exp(\theta)$, $f_\zeta \exp(\theta)$, $f_\eta \exp(-\theta)$, which under the correspondence (17) is exactly (22), row by row. Second, **the two-product identities (25a) and (25b) are exact once $\breve{L}$ is read as that sum.** For every $\mathcal{B}$, $\mathcal{B}\odot L = \breve{L}\otimes\mathcal{B}$ holds with residual zero, and so does (25b), $P^+\odot L + \breve{L}\otimes P^- = \mathcal{B}\odot L$; with the printed $\breve{L}=N$ the same computation misses by a residual of order $1.5$, which is what makes the printed form look false. The identity is the reversal of the multipliers that (11) claims in general, and it holds here because $L$ is longitudinal: for $L = xN + y\bar{N}$ the matching element is $\breve{L} = x\vec q^* + y\vec q$, which is $\mathcal{B}^{\bigstar\bigstar}$ read on the two transverse slots. The general law (11) still fails, since it asks for a coordinate permutation and none realises it; for a longitudinal multiplier the matching element exists, and only there. So the boost stands twice over: as the one-sided $F \odot L$, and as the two-product (25a) with the corrected $\breve{L}$.
 
-The energy-momentum biquaternion $K = k_\alpha\vec q + k_\beta\vec q^* + k_\xi N + k_\eta\bar{N}$ transforms **two-sidedly**, unlike the one-sided wave function,
+The energy-momentum biquaternion $K = k_\alpha\vec q + k_\beta\vec q^* + k_\zeta N + k_\eta\bar{N}$ transforms **two-sidedly**, unlike the one-sided wave function,
 
 $$
 K \mapsto K_2 = L^* \odot K \odot L ,
 \tag{26}
 $$
 
-and the 4-coordinate $Z$ transforms the same way. The first form of (26) was recomputed in the paper's product: it multiplies $k_\alpha,k_\beta$ by $\exp(-2\theta),\exp(2\theta)$ and leaves $k_\xi,k_\eta$ unchanged, while the reversed order $L\odot K\odot L^*$ exchanges the two factors and leaves the same pair untouched. Either way the longitudinal pair is not scaled, so the phase (27) is not preserved by (26) as printed, and the author's invariance argument does not go through his own product. The printed second equality of (26) introduces a symbol $T$ that the extraction never defines, presumably $\breve{L}$; it was not evaluated. The Lorentz invariant built from $K$ and $Z$ is the phase
+and the 4-coordinate $Z$ transforms the same way. The first form of (26) was recomputed in the paper's product: it multiplies $k_\alpha,k_\beta$ by $\exp(-2\theta),\exp(2\theta)$ and leaves $k_\zeta,k_\eta$ unchanged, while the reversed order $L\odot K\odot L^*$ exchanges the two factors and leaves the same pair untouched. Either way the longitudinal pair is not scaled, so the phase (27) is not preserved by (26) as printed, and the author's invariance argument does not go through his own product. The printed second equality of (26) introduces a symbol $T$ that the extraction never defines, presumably $\breve{L}$; it was not evaluated. The Lorentz invariant built from $K$ and $Z$ is the phase
 
 $$
-\Phi = \epsilon t' - \vec k\cdot\vec r = \tfrac12\bigl(-k_\beta\alpha - k_\alpha\beta + k_\eta\xi + k_\xi\eta\bigr),
+\Phi = \epsilon t' - \vec k\cdot\vec r = \tfrac12\bigl(-k_\beta\alpha - k_\alpha\beta + k_\eta\zeta + k_\zeta\eta\bigr),
 \tag{27}
 $$
 
-whose right-hand side was verified to reduce to $\epsilon t' - k_x x - k_y y - k_z z$ identically in the isotropic coordinates of (5). (The extraction garbles the last term; the correct partner of $k_\eta\xi$ is $k_\xi\eta$.)
+whose right-hand side was verified to reduce to $\epsilon t' - k_x x - k_y y - k_z z$ identically in the isotropic coordinates of (5). (The extraction garbles the last term; the correct partner of $k_\eta\zeta$ is $k_\zeta\eta$.)
 
 ### Plane Waves and the Dispersion Relation
 
@@ -461,22 +461,22 @@ F = A \exp(i\Phi) + B \exp(-i\Phi),
 \tag{28}
 $$
 
-with $\Phi$ the invariant phase (27) and $A, B$ constant biquaternions, the positive-frequency and negative-frequency amplitudes. Substituting $F = A \exp(i\Phi)$ into the component system (20) makes it algebraic in the amplitudes; with $\Phi$ the phase (27), so that $\partial\Phi/\partial\alpha = -\tfrac12 k_\beta$ and $\partial\Phi/\partial\xi = \tfrac12 k_\eta$, the four equations read
+with $\Phi$ the invariant phase (27) and $A, B$ constant biquaternions, the positive-frequency and negative-frequency amplitudes. Substituting $F = A \exp(i\Phi)$ into the component system (20) makes it algebraic in the amplitudes; with $\Phi$ the phase (27), so that $\partial\Phi/\partial\alpha = -\tfrac12 k_\beta$ and $\partial\Phi/\partial\zeta = \tfrac12 k_\eta$, the four equations read
 
 $$
-k_\eta a_\alpha + k_\alpha a_\xi = m a_\beta, \qquad k_\beta a_\alpha + k_\xi a_\xi = m a_\eta, \qquad
-k_\xi a_\beta - k_\alpha a_\eta = m a_\alpha, \qquad -k_\beta a_\beta + k_\eta a_\eta = m a_\xi,
+k_\eta a_\alpha + k_\alpha a_\zeta = m a_\beta, \qquad k_\beta a_\alpha + k_\zeta a_\zeta = m a_\eta, \qquad
+k_\zeta a_\beta - k_\alpha a_\eta = m a_\alpha, \qquad -k_\beta a_\beta + k_\eta a_\eta = m a_\zeta,
 \tag{29}
 $$
 
-whose first two determine the longitudinal amplitudes $a_\xi, a_\eta$ from the free pair $a_\alpha, a_\beta$; the remaining two are then satisfied identically precisely when
+whose first two determine the longitudinal amplitudes $a_\zeta, a_\eta$ from the free pair $a_\alpha, a_\beta$; the remaining two are then satisfied identically precisely when
 
 $$
-\boxed{\;\epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2\;}.
+\boxed{\;\epsilon^2 - \vec k^2 = k_\zeta k_\eta - k_\alpha k_\beta = m^2\;}.
 \tag{30}
 $$
 
-The printed amplitude relations of the source are garbled in the extraction; (29) is their clean form, and it reproduces the one readable relation, $a_\xi = (m a_\beta - k_\eta a_\alpha)/k_\alpha$. The phase normalisation is now fixed. With the factor $2$ of (20) restored, the derivatives of (27) are $\partial\Phi/\partial\alpha = -\tfrac12 k_\beta$ and $\partial\Phi/\partial\xi = \tfrac12 k_\eta$, the factor $2$ cancels them, and (29) follows from (20) with the same $\Phi$ as in (27); the printed source omits the factor $2$ from (20) while keeping the $\tfrac12$ in (27), which is what makes its amplitude equations carry $2m$ and puts the wave on $\epsilon^2-\vec k^2=4m^2$. The two factors have to be restored together. At rest, $\vec k = 0$ and $k_\xi = k_\eta = m$, and the wave becomes $F = A_0 \exp(imt') + B_0 \exp(-imt')$ with constant coefficients, the author's starting point for the spin states below.
+The printed amplitude relations of the source are garbled in the extraction; (29) is their clean form, and it reproduces the one readable relation, $a_\zeta = (m a_\beta - k_\eta a_\alpha)/k_\alpha$. The phase normalisation is now fixed. With the factor $2$ of (20) restored, the derivatives of (27) are $\partial\Phi/\partial\alpha = -\tfrac12 k_\beta$ and $\partial\Phi/\partial\zeta = \tfrac12 k_\eta$, the factor $2$ cancels them, and (29) follows from (20) with the same $\Phi$ as in (27); the printed source omits the factor $2$ from (20) while keeping the $\tfrac12$ in (27), which is what makes its amplitude equations carry $2m$ and puts the wave on $\epsilon^2-\vec k^2=4m^2$. The two factors have to be restored together. At rest, $\vec k = 0$ and $k_\zeta = k_\eta = m$, and the wave becomes $F = A_0 \exp(imt') + B_0 \exp(-imt')$ with constant coefficients, the author's starting point for the spin states below.
 
 ### The Spin Operators and the Spin States
 
@@ -497,7 +497,7 @@ F_{x\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + f_\alpha N + f_\beta\bar{N
 F_{y\uparrow} &= f_\alpha\vec q + f_\beta\vec q^* - i f_\alpha N - i f_\beta\bar{N}, &\quad
 F_{y\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + i f_\alpha N + i f_\beta\bar{N}, \\
 F_{z\uparrow} &= f_\alpha\vec q + f_\beta\vec q^*, &\quad
-F_{z\downarrow} &= f_\xi N + f_\eta\bar{N},
+F_{z\downarrow} &= f_\zeta N + f_\eta\bar{N},
 \end{aligned}
 \tag{32}
 $$
@@ -524,7 +524,7 @@ whose longitudinal spin vanishes, $\langle s_z\rangle = 0$: computed from its fo
 
 The author computes what the cyclic conjugation (12) becomes when the wave function is written in the Cartesian components $(f_x, f_y, f_z, f_t)$ rather than in the isotropic ones. Using the inverse of (5), the four-cycle becomes an array with entries in $\{\pm1, \pm i\}$, and the author's point is that this array is a **complex Hadamard array** $H_4$, with $H_4H_4^\dagger = 4I$ and all entries of modulus $1$; he then reads this as an informational aspect of the Dirac equation and connects it to Walsh functions, to noise-resistant coding, and to a genetic-code model he has published elsewhere.
 
-The array is printed in the paper (equation (78)), and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is, up to the overall factor $2$, exactly the array of the four-cycle (12) in the Cartesian components. Reading the four-cycle through (5), with $f_\alpha = f_x-if_y$, $f_\beta=f_x+if_y$, $f_\xi=f_t+f_z$, $f_\eta=f_t-f_z$ and the inverse $f_y=(f_\beta-f_\alpha)/(2i)$, the cycle sends $(f_x,f_y,f_z,f_t)$ to $\tfrac12 H_4\,(f_x,f_y,f_z,f_t)$, and the factor $\tfrac12$ is the one already present in (5), not a second normalisation. The variant with the **second row negated** is what the opposite sign of $f_y$, $(f_\alpha-f_\beta)/(2i)$, produces: it is the four-cycle read with a reversal of the $y$ orientation, and it is not the transformation of (12). Since negating a row preserves both Hadamard properties, both arrays are Hadamard; the printed $H_4$ is the one the four-cycle gives, and the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds. The array is a statement about the display: it is the four-cycle written in the Cartesian components, and it is not the array of the cell of the frame, which is $-iR_{\vec u}$ in every display and is diagonal only in a basis chosen to diagonalise it (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*). Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
+The array is printed in the paper (equation (78)), and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is, up to the overall factor $2$, exactly the array of the four-cycle (12) in the Cartesian components. Reading the four-cycle through (5), with $f_\alpha = f_x-if_y$, $f_\beta=f_x+if_y$, $f_\zeta=f_t+f_z$, $f_\eta=f_t-f_z$ and the inverse $f_y=(f_\beta-f_\alpha)/(2i)$, the cycle sends $(f_x,f_y,f_z,f_t)$ to $\tfrac12 H_4\,(f_x,f_y,f_z,f_t)$, and the factor $\tfrac12$ is the one already present in (5), not a second normalisation. The variant with the **second row negated** is what the opposite sign of $f_y$, $(f_\alpha-f_\beta)/(2i)$, produces: it is the four-cycle read with a reversal of the $y$ orientation, and it is not the transformation of (12). Since negating a row preserves both Hadamard properties, both arrays are Hadamard; the printed $H_4$ is the one the four-cycle gives, and the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds. The array is a statement about the display: it is the four-cycle written in the Cartesian components, and it is not the array of the cell of the frame, which is $-iR_{\vec u}$ in every display and is diagonal only in a basis chosen to diagonalise it (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*). Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
 
 ### The Lorentz Analogue, the Rotation Transformation and the Superluminal Variant
 
@@ -534,13 +534,13 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 **The rotation transformation.** The author argues that because the cyclic conjugate sits on the right-hand side of (19), the left-hand side *is* the operation that creates it, and calls this the **rotation transformation**. Splitting the plane wave into its positive- and negative-frequency parts $Q_x = A\exp(i\Phi)$ and $Q_y = B\exp(-i\Phi)$, he forms the **subtractive components** $Q^\pm = Q_x^\pm - Q_y^\pm$ and writes the transformation as $F \mapsto Q^- \odot K + \bar{K} \otimes Q^+$ with the energy-momentum biquaternion $K$. The claim is that this transformation is the analogue of the Lorentz boost for the particle's **proper rotation**, that is for spin, and the author states explicitly that the translational partner of the transformation "remains open". In the corpus, the corresponding machinery is rotor conjugation, $A \mapsto \Lambda A \Lambda^{*}$ (*The Lorentz Transformation as a Biquaternionic Rotation*); the paper's rotation transformation is not rotor conjugation — it uses two different products and the subtractive components, not a conjugate pair — so it is a candidate for a genuinely different construction. It should be checked against the corpus's rotor action before any claim of novelty is repeated.
 
-**The superluminal variant.** Flipping the sign of the two products, $F^- \odot \bar{D} - D \otimes F^+ = im\overset{\curvearrowleft}{F}$, gives the paper's **superluminal Dirac equation**, with the dispersion relation $\epsilon^2 - |\vec k|^2 = k_\xi k_\eta - k_\alpha k_\beta = -m^2$ in place of the subluminal one. The final algebraic step of this dispersion relation was verified — in the isotropic coordinates $k_\xi k_\eta - k_\alpha k_\beta = k_t^2 - k_x^2 - k_y^2 - k_z^2$ identically — so the superluminal branch follows from the sign as claimed. The **physical interpretation** of that branch is the author's, and the corpus's *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* records a different superluminal construction.
+**The superluminal variant.** Flipping the sign of the two products, $F^- \odot \bar{D} - D \otimes F^+ = im\overset{\curvearrowleft}{F}$, gives the paper's **superluminal Dirac equation**, with the dispersion relation $\epsilon^2 - |\vec k|^2 = k_\zeta k_\eta - k_\alpha k_\beta = -m^2$ in place of the subluminal one. The final algebraic step of this dispersion relation was verified — in the isotropic coordinates $k_\zeta k_\eta - k_\alpha k_\beta = k_t^2 - k_x^2 - k_y^2 - k_z^2$ identically — so the superluminal branch follows from the sign as claimed. The **physical interpretation** of that branch is the author's, and the corpus's *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* records a different superluminal construction.
 
 **The four representations.** The author states, without working them out, that the same treatment with the other three cyclic conjugations gives three more representations of the Dirac equation, all equivalent, and that the same holds with signed biquaternions in place of the signed split. He also states that the representation has a form for a superluminal particle and that it "clearly reveals the time asymmetry" of the Dirac equation. These are announced, not developed.
 
 ## What Is Verified and What Is Not
 
-**The checks, item by item.** (i) **The product-reversal law (11).** It is false as printed. The paper's exchange conjugations are coordinate permutations, so the law is tested exhaustively by permuting: over all twenty-four permutations, in both argument orders and in both directions, none carries the inner product to the outer or the outer to the inner. In the whole family of four products the only cross-type matches are between the **outer** and the **diagonal** ones, which is the Appendix's pair of correspondences. The conjugation symbols are lost in the extraction, so a conjugation that changes the coefficients as well as permuting them cannot be excluded; as written, the law does not hold and must not be used. (ii) **The signed-part assignment.** The extracted equation (17) of the source assigns the coordinates to the signed parts in a way that is inconsistent with the source's own equations (38) and (48) and with the relations (7a)–(7b); the version used in this article is the one of (16), which is the internally consistent one. (iii) **The Appendix's second correspondence (81)–(82).** It is false, in both versions of the paper and for both of the maps printed — v2's, with $\xi,\alpha$ in the first row and $-\beta,-\eta$ in the second, and v3's, with $\alpha,-\eta$ in the first row and $\xi,-\beta$ in the second. No assignment of the four coordinates to the four slots, with or without signs, realises the inner product as a product of arrays with the printed subtractive rule, and the same holds for the additive rule; the reason is a counting one and is given in *The Appendix's Correspondences*. What the Appendix should say is that the **diagonal** product is the second ordinary product of arrays, and that statement is verified exactly. (iv) **The printed Hadamard array.** Read from both versions and verified: every entry has modulus $1$, $H_4H_4^\dagger = 4I$ holds, and the array is exactly twice the four-cycle of (12) in the Cartesian components, with the inverse $f_y=(f_\beta-f_\alpha)/(2i)$. The variant with a negated second row is the four-cycle read with the opposite sign of $f_y$, that is with a reversed $y$ orientation, and it is not the transformation of (12). The Hadamard claim itself is sound. (v) **The gradient identity (18).** Recomputed coefficient by coefficient in the paper's product: the scalar part of $D$ is $\partial/\partial t'$ and its vector part is $\nabla$, while $\bar D$ carries the same scalar part and $-\nabla$, so $D$ *is* the author's spin gradient and the source's statement that the spin gradient is half of $D$ does not hold for the printed $D$ — the two coincide, which is what the factor $2$ of (18) is for. The printed second line of (18) also repeats $\partial/\partial\eta$ on the $\bar N$ slot; the vector conjugate requires $\partial/\partial\xi$ there, and (18) is given in that corrected form. The factor of two is corroborated by the pure-vector case of (1), $\vec q_{a,1}\odot\vec q_{a,2}=\vec q_{a,1}\cdot\vec q_{a,2}+i\,\vec q_{a,1}\times\vec q_{a,2}$, which is the product the author reads his gradient in. (vi) **The rotation transformation and the superluminal variant.** Recorded as the author's constructions; the rotation transformation's claimed difference from the corpus's rotor conjugation was not established. (vii) **The boost's two-product identities (25a)–(25b).** The printed $\breve{L}=\vec q\exp(-\theta)\vec q^*\exp(\theta)$ collapses to $N$, because $\vec q\vec q^*=N$ and the scalars commute (24), and with $\breve L=N$ the identity of (25a) gives $F\odot L\neq N\otimes F$ by a residual of order $1.5$. The expression is a misprint for the sum $\exp(-\theta)\vec q+\exp(\theta)\vec q^*$: with the sum, (25a) and (25b) hold exactly for every $\mathcal{B}$, both with residual zero on random pairs, and the sum is the element the reversal requires for a longitudinal $L$, since $L=xN+y\bar N$ is matched by $\breve L=x\vec q^*+y\vec q$. So the identities are correct and the collapse is a typographical error, not a mathematical one. The boost itself, as the right multiplication $F\odot L$, is verified and unaffected. (viii) **The expansion of (19) into (20).** The component system (20) is verified against (14) and against the two-line pair, but the literal expansion of the single-string (19) is not: with each derivative acting on the coefficient it multiplies, the $N$ and $\bar N$ components reproduce the second and third equations exactly, while the $\vec q^*$ component is short of the fourth by $2\partial f_\eta/\partial\xi$ and the $\vec q$ component carries that term in excess of the first. The extraction does not fix which of the four products is the second one in (19). (ix) **The name of the two signed parts.** The source calls the split "the sign of the component". Recomputed, the signed parts are the two **left** components, $\mathcal{B}^+=\bar N\odot\mathcal{B}$ and $\mathcal{B}^-=N\odot\mathcal{B}$, verified on (8) with residual zero; the two values of the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ are the two **right** components, $\mathcal{B}\odot\bar N$ for $R$ and $\mathcal{B}\odot N$ for $L$, on $\vec q$ and $\bar N$ and on $\vec q^*$ and $N$ respectively. The two splits are transversal: each signed part holds one amplitude of each value, $f_\alpha$ and $f_\eta$ carrying $R$ and $f_\beta$ and $f_\xi$ carrying $L$. The source's mass term, which pairs $\alpha$ with $\beta$ and $\xi$ with $\eta$, is the one term that changes both indices at once. So the source's *sign of the component* is the left index and the value of the cell is the right one, and the corpus's rule applies to the pair: the left index is a copy index and the values of the cell are the chirality (*The Polarized Module of the Biquaternion Algebra*). The columns of the Weyl system are therefore the copies, and the carrier of the value on the field is the cell, term by term.
+**The checks, item by item.** (i) **The product-reversal law (11).** It is false as printed. The paper's exchange conjugations are coordinate permutations, so the law is tested exhaustively by permuting: over all twenty-four permutations, in both argument orders and in both directions, none carries the inner product to the outer or the outer to the inner. In the whole family of four products the only cross-type matches are between the **outer** and the **diagonal** ones, which is the Appendix's pair of correspondences. The conjugation symbols are lost in the extraction, so a conjugation that changes the coefficients as well as permuting them cannot be excluded; as written, the law does not hold and must not be used. (ii) **The signed-part assignment.** The extracted equation (17) of the source assigns the coordinates to the signed parts in a way that is inconsistent with the source's own equations (38) and (48) and with the relations (7a)–(7b); the version used in this article is the one of (16), which is the internally consistent one. (iii) **The Appendix's second correspondence (81)–(82).** It is false, in both versions of the paper and for both of the maps printed — v2's, with $\zeta,\alpha$ in the first row and $-\beta,-\eta$ in the second, and v3's, with $\alpha,-\eta$ in the first row and $\zeta,-\beta$ in the second. No assignment of the four coordinates to the four slots, with or without signs, realises the inner product as a product of arrays with the printed subtractive rule, and the same holds for the additive rule; the reason is a counting one and is given in *The Appendix's Correspondences*. What the Appendix should say is that the **diagonal** product is the second ordinary product of arrays, and that statement is verified exactly. (iv) **The printed Hadamard array.** Read from both versions and verified: every entry has modulus $1$, $H_4H_4^\dagger = 4I$ holds, and the array is exactly twice the four-cycle of (12) in the Cartesian components, with the inverse $f_y=(f_\beta-f_\alpha)/(2i)$. The variant with a negated second row is the four-cycle read with the opposite sign of $f_y$, that is with a reversed $y$ orientation, and it is not the transformation of (12). The Hadamard claim itself is sound. (v) **The gradient identity (18).** Recomputed coefficient by coefficient in the paper's product: the scalar part of $D$ is $\partial/\partial t'$ and its vector part is $\nabla$, while $\bar D$ carries the same scalar part and $-\nabla$, so $D$ *is* the author's spin gradient and the source's statement that the spin gradient is half of $D$ does not hold for the printed $D$ — the two coincide, which is what the factor $2$ of (18) is for. The printed second line of (18) also repeats $\partial/\partial\eta$ on the $\bar N$ slot; the vector conjugate requires $\partial/\partial\zeta$ there, and (18) is given in that corrected form. The factor of two is corroborated by the pure-vector case of (1), $\vec q_{a,1}\odot\vec q_{a,2}=\vec q_{a,1}\cdot\vec q_{a,2}+i\,\vec q_{a,1}\times\vec q_{a,2}$, which is the product the author reads his gradient in. (vi) **The rotation transformation and the superluminal variant.** Recorded as the author's constructions; the rotation transformation's claimed difference from the corpus's rotor conjugation was not established. (vii) **The boost's two-product identities (25a)–(25b).** The printed $\breve{L}=\vec q\exp(-\theta)\vec q^*\exp(\theta)$ collapses to $N$, because $\vec q\vec q^*=N$ and the scalars commute (24), and with $\breve L=N$ the identity of (25a) gives $F\odot L\neq N\otimes F$ by a residual of order $1.5$. The expression is a misprint for the sum $\exp(-\theta)\vec q+\exp(\theta)\vec q^*$: with the sum, (25a) and (25b) hold exactly for every $\mathcal{B}$, both with residual zero on random pairs, and the sum is the element the reversal requires for a longitudinal $L$, since $L=xN+y\bar N$ is matched by $\breve L=x\vec q^*+y\vec q$. So the identities are correct and the collapse is a typographical error, not a mathematical one. The boost itself, as the right multiplication $F\odot L$, is verified and unaffected. (viii) **The expansion of (19) into (20).** The component system (20) is verified against (14) and against the two-line pair, but the literal expansion of the single-string (19) is not: with each derivative acting on the coefficient it multiplies, the $N$ and $\bar N$ components reproduce the second and third equations exactly, while the $\vec q^*$ component is short of the fourth by $2\partial f_\eta/\partial\zeta$ and the $\vec q$ component carries that term in excess of the first. The extraction does not fix which of the four products is the second one in (19). (ix) **The name of the two signed parts.** The source calls the split "the sign of the component". Recomputed, the signed parts are the two **left** components, $\mathcal{B}^+=\bar N\odot\mathcal{B}$ and $\mathcal{B}^-=N\odot\mathcal{B}$, verified on (8) with residual zero; the two values of the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ are the two **right** components, $\mathcal{B}\odot\bar N$ for $R$ and $\mathcal{B}\odot N$ for $L$, on $\vec q$ and $\bar N$ and on $\vec q^*$ and $N$ respectively. The two splits are transversal: each signed part holds one amplitude of each value, $f_\alpha$ and $f_\eta$ carrying $R$ and $f_\beta$ and $f_\zeta$ carrying $L$. The source's mass term, which pairs $\alpha$ with $\beta$ and $\zeta$ with $\eta$, is the one term that changes both indices at once. So the source's *sign of the component* is the left index and the value of the cell is the right one, and the corpus's rule applies to the pair: the left index is a copy index and the values of the cell are the chirality (*The Polarized Module of the Biquaternion Algebra*). The columns of the Weyl system are therefore the copies, and the carrier of the value on the field is the cell, term by term.
 
 **What the source does not supply.** It does not work out the four alternative representations beyond their sign patterns, and it does not prove that they are equivalent to one another, only to the two-line pair. The construction of the Lorentz boost, the plane-wave solutions and the spin operators is present, and the earlier sections of this article give it; what the source does not supply is the second form of the boost as printed — its own identities show that the expression is a sum, and the printed product is a slip. The boost itself stands on the right multiplication, the spin operators on the diagonal product, and the single-string (19) stands as the author's form rather than as a checked expansion. The paper does not present the inner product's non-associativity as a limitation, although it says the outer product is the associative one and the inner product is not, and it raises the division-algebra programme only in a closing paragraph. And the identification of the Hadamard structure with a genetic code is an external programme of the author's, cited in his bibliography, not a result of this article.
 
@@ -584,7 +584,7 @@ The squares spend the central unit once, $i^2=-1$: the plain cells $L_{e_t}^{\ma
 
 A single product $L_aR_b$ is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The central grading is a different object from the chirality cell. $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is represented by $\gamma_5$ on the Dirac module, while $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the module cell. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
+The central grading is a different object from the chirality cell. $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is represented by $\gamma_5$ on the Dirac module, while $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the module cell. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -609,23 +609,23 @@ Two corrections of computation run through the article. The first is the factor 
 | $\Pi$ | The null (transverse) plane spanned by $\vec A$ and $\vec B$ |
 | $\vec q = \tfrac12(\vec A+i\vec B),\ \vec q^*$ | Nullvectors; $\vec q^2 = 0$ |
 | $N = \tfrac12(1, \vec u),\ \bar{N}$ | Uniform nullquaternions; $N^2 = N$, $N\bar{N} = 0$ |
-| $\alpha, \beta, \xi, \eta$ | Isotropic coordinates: $\alpha = x-iy$, $\beta = x+iy$, $\xi = t'+z$, $\eta = t'-z$ |
+| $\alpha, \beta, \zeta, \eta$ | Isotropic coordinates: $\alpha = x-iy$, $\beta = x+iy$, $\zeta = t'+z$, $\eta = t'-z$ |
 | $\mathcal{B}^+, \mathcal{B}^-$ | Signed (positive, negative) biquaternions; the two chiral halves, $\mathcal{B}\bar N$ and $\mathcal{B}N$ |
 | $\mathcal{P}^+, \mathcal{P}^-$ | The two signed elements of the crossing product |
 | $\odot, \otimes, \times, \rightsquigarrow$ | Outer, inner, diagonal and crossing products |
 | $\mathcal{B}^{\bigstar}, \mathcal{B}^{\bullet}, \mathcal{B}^{\bigstar\bigstar}$ | The three exchange conjugations (coordinate permutations) |
 | $\overset{\curvearrowleft}{\phantom{x}}$ | Cyclic conjugation (the four-cycle) |
-| $F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\xi + \bar{N}f_\eta$ | Biquaternion wave function |
+| $F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\zeta + \bar{N}f_\eta$ | Biquaternion wave function |
 | $F^+ , F^-$ | Positive and negative signed parts; $\psi_R$ and $\psi_L$ |
 | $\breve{F}^-$ | Partner of $F^-$ in the separated reading (21); not otherwise used |
 | $\mathsf{V}^{\mathrm{vol}}$ | The chirality cell of the frame along $\vec u$, $-iR_{\vec u}$; its values are $R$ on $\vec q$ and $\bar N$, $L$ on $\vec q^*$ and $N$ |
 | $\mathcal{B}\odot\bar N$, $\mathcal{B}\odot N$ | The right components of $\mathcal{B}$, the $R$ part and the $L$ part |
 | $\bar N\odot\mathcal{B}$, $N\odot\mathcal{B}$ | The left components of $\mathcal{B}$, the source's signed parts $\mathcal{B}^+$ and $\mathcal{B}^-$ |
 | $\chi$ | The literature's glyph for the cell, $\chi=\gamma_5=-iL_{e_t}R_{\vec e_z}$; it appears only in the gamma section, and it is not the central grading $\chi_{\mathrm{ad}}$ |
-| $u, v, u_2, v_2$ | The two components of each chiral line; $u = f_\alpha$, $v = -f_\xi$, $u_2 = -f_\beta$, $v_2 = f_\eta$ |
+| $u, v, u_2, v_2$ | The two components of each chiral line; $u = f_\alpha$, $v = -f_\zeta$, $u_2 = -f_\beta$, $v_2 = f_\eta$ |
 | $\boldsymbol{\sigma}$ | Pauli matrices, $\boldsymbol{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$ |
 | $M$, $\psi$ | The two-by-two arrays the author attaches to $\mathcal{B}$ and to $F$ in the Appendix and in the spin section |
-| $k_\alpha, k_\beta, k_\xi, k_\eta, \epsilon$ | Energy-momentum in isotropic coordinates; $k_\xi k_\eta - k_\alpha k_\beta = \epsilon^2 - \vec k^2$ |
+| $k_\alpha, k_\beta, k_\zeta, k_\eta, \epsilon$ | Energy-momentum in isotropic coordinates; $k_\zeta k_\eta - k_\alpha k_\beta = \epsilon^2 - \vec k^2$ |
 | $\Phi = \epsilon t' - \vec k\cdot\vec r$ | Lorentz-invariant phase of the plane wave |
 | $A, B$ | Positive- and negative-frequency amplitudes of the plane wave |
 | $L = N\exp(\theta) + \bar{N}\exp(-\theta)$ | Longitudinal boost operator |

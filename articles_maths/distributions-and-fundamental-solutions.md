@@ -21,7 +21,7 @@ $$
 P(x,D)=\sum_{|\alpha|\le m}a_\alpha(x)D^\alpha, \qquad a_\alpha \in C^\infty(\Omega),
 $$
 
-acting on $C^m(\Omega)$; its **principal part** is the sum over $|\alpha|=m$ and its **symbol** is the polynomial $P(x,\xi)=\sum_{|\alpha|\le m}a_\alpha(x)\xi^\alpha$, whose leading term $p_m(x,\xi)=\sum_{|\alpha|=m}a_\alpha(x)\xi^\alpha$ is the **principal symbol**. The operator is **elliptic** at $x$ if $p_m(x,\xi)\neq0$ for every $\xi \neq 0$, and **elliptic** if it is so at every $x$.
+acting on $C^m(\Omega)$; its **principal part** is the sum over $|\alpha|=m$ and its **symbol** is the polynomial $P(x,\zeta)=\sum_{|\alpha|\le m}a_\alpha(x)\zeta^\alpha$, whose leading term $p_m(x,\zeta)=\sum_{|\alpha|=m}a_\alpha(x)\zeta^\alpha$ is the **principal symbol**. The operator is **elliptic** at $x$ if $p_m(x,\zeta)\neq0$ for every $\zeta \neq 0$, and **elliptic** if it is so at every $x$.
 
 ### The Spaces $\mathcal D$, $\mathcal E$ and $\mathcal S$
 
@@ -150,15 +150,15 @@ The obstruction is repaired not by weakening the criterion but by changing the o
 **Definition.** The **Fourier transform** of $f \in \mathcal S(\mathbb{R}^n)$ is
 
 $$
-(\mathcal F f)(\xi)=\mathcal Ff(\xi)=\int_{\mathbb{R}^n}f(x)\exp(-ix\cdot\xi)\,dx,
+(\mathcal F f)(\zeta)=\mathcal Ff(\zeta)=\int_{\mathbb{R}^n}f(x)\exp(-ix\cdot\zeta)\,dx,
 \qquad
-\mathcal F^{-1}g(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}g(\xi)\exp(ix\cdot\xi)\,d\xi .
+\mathcal F^{-1}g(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}g(\zeta)\exp(ix\cdot\zeta)\,d\zeta .
 $$
 
 **Theorem.** $\mathcal F$ maps $\mathcal S(\mathbb{R}^n)$ isomorphically onto itself, with $\mathcal F^{-1}$ the inverse, $\|\mathcal F f\|_2=(2\pi)^{n/2}\|f\|_2$, and the identities
 
 $$
-\boxed{\;\widehat{\partial/\partial x_j\,f}(\xi)=i\xi_j(\mathcal F f)(\xi), \qquad \widehat{x_jf}(\xi)=i\partial/\partial x_j(\mathcal F f)(\xi), \qquad \widehat{(f*g)}=\mathcal F f\mathcal F g\;} .
+\boxed{\;\widehat{\partial/\partial x_j\,f}(\zeta)=i\zeta_j(\mathcal F f)(\zeta), \qquad \widehat{x_jf}(\zeta)=i\partial/\partial x_j(\mathcal F f)(\zeta), \qquad \widehat{(f*g)}=\mathcal F f\mathcal F g\;} .
 $$
 
 *Proof.* These are the standard properties: differentiation under the integral sign for the first, integration by parts for the second and the convolution theorem by Fubini; inversion follows from the Fourier inversion theorem, and the $L^2$ identity is Plancherel's theorem. Their proofs, with the normalisation used here, belong to *Fourier Analysis on Euclidean Spaces*.
@@ -180,12 +180,12 @@ $$
 and is again tempered. The transform is a linear isomorphism of $\mathcal S'$ with itself, and it intertwines differentiation with multiplication:
 
 $$
-\widehat{\partial^\alpha w}=i^{|\alpha|}\xi^\alpha\mathcal F w, \qquad \widehat{x^\alpha w}=i^{|\alpha|}\partial^\alpha\mathcal F w, \qquad \widehat{w*v}=\mathcal F w\,\mathcal F v
+\widehat{\partial^\alpha w}=i^{|\alpha|}\zeta^\alpha\mathcal F w, \qquad \widehat{x^\alpha w}=i^{|\alpha|}\partial^\alpha\mathcal F w, \qquad \widehat{w*v}=\mathcal F w\,\mathcal F v
 $$
 
 for $w \in \mathcal S'$ and $v \in \mathcal E'$, the convolution being defined in the next section.
 
-**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\\mathcal F\\varphi\rangle=\\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\xi|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
+**Example.** $\hat\delta=1$ and $\hat1=(2\pi)^n\delta$, since $\langle\hat\delta,\varphi\rangle=\langle\delta,\\mathcal F\\varphi\rangle=\\mathcal F\\varphi(0)=\int\varphi$; the transform of a Gaussian $\exp(-|x|^2/2)$ is $(2\pi)^{n/2}\exp(-|\zeta|^2/2)$; and the transform of a function of compact support is smooth (indeed entire) with at most polynomial growth of all derivatives, which is why the two dual spaces differ.
 
 ## Convolution
 
@@ -253,7 +253,7 @@ A **parametrix** of $P$ near $x_0$ is a distribution $E$ with $PE=\delta_{x_0}-R
 
 **Theorem (Ehrenpreis–Malgrange).** Every nonzero linear differential operator with constant coefficients on $\mathbb{R}^n$ has a fundamental solution.
 
-*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\xi))$ as a tempered distribution even though $1/P(\xi)$ may fail to be locally integrable near the real zeros of the polynomial $P(\xi)$. One writes $1/P(\xi)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\xi+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\xi)\mathcal F E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below.
+*Proof (sketch).* One has to define $\mathcal F^{-1}(1/P(\zeta))$ as a tempered distribution even though $1/P(\zeta)$ may fail to be locally integrable near the real zeros of the polynomial $P(\zeta)$. One writes $1/P(\zeta)$ as a limit of locally integrable functions obtained by translating the polynomial, $1/P(\zeta+i\eta)$ for $\eta$ in a suitable dense set, and uses an a priori estimate for the translated operator to extract a convergent subsequence in $\mathcal S'$; the limit $E$ satisfies $P(\zeta)\mathcal F E=1$ in $\mathcal S'$, which is $PE=\delta$. The argument is standard and is proved in full in the works cited below.
 
 ### The Laplacian and the Heat Operator
 
@@ -287,7 +287,7 @@ $$
 
 and in particular $Pw \in C^\infty(\Omega)$ implies $w \in C^\infty(\Omega)$: an elliptic operator does not create singularities, and it removes them.
 
-*Proof (sketch).* The construction freezes the coefficients at a point $x_0$ and inverts the principal symbol by the Fourier formula: a local parametrix is $E_0(x)=\mathcal F^{-1}(\chi(\xi)/p_m(x_0,\xi))$ with $\chi$ a cutoff vanishing near $\xi=0$, and the operator $I-PE_0$ has order $-1$; iterating the construction and summing a Neumann series over the local pieces gives a parametrix with a smoothing remainder. The regularity statement follows from $w=E(Pw)+Rw$, the mapping property of $E$ of order $-m$ on the Bessel-potential spaces of *Interpolation Theory*, and the smoothing of $R$. The complete proof, with the calculus of symbols, is not covered here.
+*Proof (sketch).* The construction freezes the coefficients at a point $x_0$ and inverts the principal symbol by the Fourier formula: a local parametrix is $E_0(x)=\mathcal F^{-1}(\chi(\zeta)/p_m(x_0,\zeta))$ with $\chi$ a cutoff vanishing near $\zeta=0$, and the operator $I-PE_0$ has order $-1$; iterating the construction and summing a Neumann series over the local pieces gives a parametrix with a smoothing remainder. The regularity statement follows from $w=E(Pw)+Rw$, the mapping property of $E$ of order $-m$ on the Bessel-potential spaces of *Interpolation Theory*, and the smoothing of $R$. The complete proof, with the calculus of symbols, is not covered here.
 
 The theorem explains the role of ellipticity: it is the condition under which the principal symbol can be inverted for large frequencies, and it is the analytic content of the parametrix. The calculus that makes the construction systematic — composition of symbols, the asymptotic expansion of a product, the parametrix of a general operator and the index theory that follows — is developed; the classical classification of a second-order equation into elliptic, parabolic and hyperbolic types and the explicit solution formulas are given, and the boundary-value theory lies outside this article.
 
@@ -309,7 +309,7 @@ A distribution is a continuous linear functional on the test functions $C_c^\inf
 
 Differentiation is defined by transposition, $\langle\partial^\alpha w,\varphi\rangle=(-1)^{|\alpha|}\langle w,\partial^\alpha\varphi\rangle$, so every distribution is infinitely differentiable, the derivatives commute and the Leibniz rule holds against smooth coefficients; the classical rules are recovered, with $H'=\delta$, $(\log|x|)'=\mathrm{pv}(1/x)$ and $x\delta'=-\delta$. Multiplication by a smooth function is defined and is only that: the product of two distributions is in general undefined, and the obstruction is localised in the frequency directions, the product being definable exactly when the wavefront sets are transverse; a Colombeau algebra of nonlinear generalized functions is the alternative in which every product is defined, at the cost of a non-canonical embedding of the distributions.
 
-The Fourier transform is an isomorphism of the Schwartz space and, by transposition, of the tempered distributions, intertwining $\partial^\alpha$ with multiplication by $i^{|\alpha|}\xi^\alpha$ and convolution with multiplication of symbols. Convolution of a distribution with a test function produces a smooth function and regularises; convolution of two distributions is defined when one has compact support, and $\mathcal E'$ is a commutative algebra under it with identity $\delta$, with $\mathcal S'$ acting on $\mathcal E'$ by convolution and the transform converting it into products. A fundamental solution is a distribution $E$ with $PE=\delta$, and it solves $Pw=f$ by $w=E*f$; every nonzero constant-coefficient operator has one, by Ehrenpreis–Malgrange, with the Laplacian, the heat operator and the wave operator as the worked cases. For variable coefficients the general construction yields a parametrix with a smoothing remainder, and ellipticity — the nonvanishing of the principal symbol off the zero section — produces one and gives the elliptic regularity $Pw \in H^s_{\mathrm{loc}}\Rightarrow w \in H^{s+m}_{\mathrm{loc}}$. Finally the distributional derivative is the weak derivative of a locally integrable function, so the distributional setting contains the Sobolev theory and extends verbatim to the first-order operators of the algebra-valued analysis of this Part.
+The Fourier transform is an isomorphism of the Schwartz space and, by transposition, of the tempered distributions, intertwining $\partial^\alpha$ with multiplication by $i^{|\alpha|}\zeta^\alpha$ and convolution with multiplication of symbols. Convolution of a distribution with a test function produces a smooth function and regularises; convolution of two distributions is defined when one has compact support, and $\mathcal E'$ is a commutative algebra under it with identity $\delta$, with $\mathcal S'$ acting on $\mathcal E'$ by convolution and the transform converting it into products. A fundamental solution is a distribution $E$ with $PE=\delta$, and it solves $Pw=f$ by $w=E*f$; every nonzero constant-coefficient operator has one, by Ehrenpreis–Malgrange, with the Laplacian, the heat operator and the wave operator as the worked cases. For variable coefficients the general construction yields a parametrix with a smoothing remainder, and ellipticity — the nonvanishing of the principal symbol off the zero section — produces one and gives the elliptic regularity $Pw \in H^s_{\mathrm{loc}}\Rightarrow w \in H^{s+m}_{\mathrm{loc}}$. Finally the distributional derivative is the weak derivative of a locally integrable function, so the distributional setting contains the Sobolev theory and extends verbatim to the first-order operators of the algebra-valued analysis of this Part.
 
 ## Summary of Notation
 
@@ -330,7 +330,7 @@ The Fourier transform is an isomorphism of the Schwartz space and, by transposit
 | $\check\varphi$, $\tau_a\varphi$ | reflection and translation of a test function |
 | $w*\varphi$, $w*v$ | convolution |
 | $\mathcal F w=\mathcal Fw$ | Fourier transform of a distribution |
-| $P(x,D)$, $p_m(x,\xi)$ | differential operator and principal symbol |
+| $P(x,D)$, $p_m(x,\zeta)$ | differential operator and principal symbol |
 | $E$, $R$ | fundamental solution or parametrix, and smoothing remainder |
 | $W^{k,n}$, $H^{s}_{n}$ | Sobolev and Bessel-potential spaces |
 | $\rho_\varepsilon$ | mollifier |

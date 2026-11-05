@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. An element $\tilde\Xi$ is a **root of the central value** $\lambda e_t$ when its square in that product is the value,
+Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. An element $\tilde{Ζ}$ is a **root of the central value** $\lambda e_t$ when its square in that product is the value,
 
 $$
-\tilde\Xi\star\tilde\Xi=\lambda e_t , \qquad \lambda\in\mathbb{C},
+\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t , \qquad \lambda\in\mathbb{C},
 $$
 
 and the **root set** of the value is the set of the solutions of the equation. This article reads the value $0$ structure by structure in the twelve structures of the space, and then reads the nilpotents, which are the non-zero roots of $0$ of the structures whose index of nilpotency is two. The value $0$ is the only value every structure reaches, so its root set is the presence common to the twelve; the other two values that carry a name, $+1$ and $-1$, are read by the companion *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the general value with the four existence classes of the twelve structures is *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The general vocabulary — the root of a central value, the nilpotent and the square-zero element stated once for a general product — is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
@@ -22,7 +22,7 @@ and every table of the article follows the new order: the four general structure
 
 ## The Roots of Zero
 
-**Definition (the root of a central value; quoted).** Let $\star$ be a product on $\mathbb{B}$, let $\lambda\in\mathbb{C}$ and let $\tilde\Xi\in\mathbb{B}$. The element is a **root of $\lambda e_t$ of $\star$** when $\tilde\Xi\star\tilde\Xi=\lambda e_t$, and the **root set** of the value is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots*). The definition names its product, and every statement below names the product it reads.
+**Definition (the root of a central value; quoted).** Let $\star$ be a product on $\mathbb{B}$, let $\lambda\in\mathbb{C}$ and let $\tilde{Ζ}\in\mathbb{B}$. The element is a **root of $\lambda e_t$ of $\star$** when $\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t$, and the **root set** of the value is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots*). The definition names its product, and every statement below names the product it reads.
 
 ### The Four Sets of the Four General Products
 
@@ -76,15 +76,15 @@ The order is the whole of the comparison of the four sets: one set is the smalle
 
 **Proposition (the root set of $0$ is a cone).** Let $\star$ be one of the twelve products. The root set of $0$ is a complex cone whose apex is the origin: a complex multiple of a root of $0$ is again a root of $0$. For the two structures of a definite square the cone is the origin alone, and for the four structures of a vanishing square it is the whole space (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
-*Proof.* The square of a scaled element is read from the bilinearity of the products: $\mu\tilde\Xi\star\mu\tilde\Xi=\mu^{2}(\tilde\Xi\star\tilde\Xi)$ for the six bilinear structures and $\lvert\mu\rvert^{2}(\tilde\Xi\star\tilde\Xi)$ for the six sesquilinear ones. At the value $0$ the scalar factor disappears, so the property of being a root of $0$ is invariant under every scaling; and the apex is the origin because the square's vanishing set is homogeneous.
+*Proof.* The square of a scaled element is read from the bilinearity of the products: $\mu\tilde{Ζ}\star\mu\tilde{Ζ}=\mu^{2}(\tilde{Ζ}\star\tilde{Ζ})$ for the six bilinear structures and $\lvert\mu\rvert^{2}(\tilde{Ζ}\star\tilde{Ζ})$ for the six sesquilinear ones. At the value $0$ the scalar factor disappears, so the property of being a root of $0$ is invariant under every scaling; and the apex is the origin because the square's vanishing set is homogeneous.
 
 The cone is the reason the value $0$ is the only value whose root set is invariant under the scaling of §*The Scaling of the Cone*, and the reason the root set of $0$ is the only root set the scaling does not move. The two definite sesquilinear structures are the only ones whose cone is a point, and the four antisymmetric structures the only ones whose cone is the space.
 
 ### The Non-Zero Roots of Zero Are the Zero Divisors
 
-**Theorem (the non-zero roots of zero are the zero divisors; quoted).** A non-zero root of $0$ of a general product is a zero divisor of the algebra, and the two-sided, the left and the right conditions coincide there: the non-zero roots of $0$ of the four general products lie in the punctured cone, $\mathcal R_0\setminus\{0\}\subseteq\mathcal{N}$ (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Roots Are Units, or Zero Divisors*). Neither equation $\tilde\Xi\star\tilde Q_1=e_t$ nor $\tilde Q_1\star\tilde\Xi=e_t$ has a solution at a root of $0$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The One-Sided Inverse Equations*).
+**Theorem (the non-zero roots of zero are the zero divisors; quoted).** A non-zero root of $0$ of a general product is a zero divisor of the algebra, and the two-sided, the left and the right conditions coincide there: the non-zero roots of $0$ of the four general products lie in the punctured cone, $\mathcal R_0\setminus\{0\}\subseteq\mathcal{N}$ (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Roots Are Units, or Zero Divisors*). Neither equation $\tilde{Ζ}\star\tilde Q_1=e_t$ nor $\tilde Q_1\star\tilde{Ζ}=e_t$ has a solution at a root of $0$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The One-Sided Inverse Equations*).
 
-The value $0$ is therefore the value at which the roots of the plain product stop being invertible: the inverse $\tilde\Xi^{\natural}/C(\tilde\Xi)$ of §*The Inverse Equations at One* of the companion *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* has the vanishing central square in its denominator, and the vanishing of $C$ is the criterion of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The theorem is quoted for the four general products; outside them the two symmetric sesquilinear structures keep a root of $0$ at the origin alone, and the four antisymmetric structures reach no central value other than $0$, with a square that vanishes identically for the two bilinear ones and cuts a proper subfamily for the two sesquilinear ones.
+The value $0$ is therefore the value at which the roots of the plain product stop being invertible: the inverse $\tilde{Ζ}^{\natural}/C(\tilde{Ζ})$ of §*The Inverse Equations at One* of the companion *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* has the vanishing central square in its denominator, and the vanishing of $C$ is the criterion of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The theorem is quoted for the four general products; outside them the two symmetric sesquilinear structures keep a root of $0$ at the origin alone, and the four antisymmetric structures reach no central value other than $0$, with a square that vanishes identically for the two bilinear ones and cuts a proper subfamily for the two sesquilinear ones.
 
 ## The Twelve Structures and the Roots of Zero
 
@@ -92,51 +92,51 @@ The twelve root sets of $0$ are read one by one, each quoted from the article th
 
 ### $\tilde Q_1\tilde Q_2$, the general plain algebra
 
-The product is $\tilde\Xi\tilde Q_2$, and its square is the plain square. The root set of $0$ is the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four, the component of the cone singled out by the vanishing of the scalar part; its non-zero members are the nilpotents of the algebra, and they are a strict part of its zero-divisor set, the cone beyond the pure part being made of the complex multiples of the non-trivial idempotents. The article is *Nilpotents*.
+The product is $\tilde{Ζ}\tilde Q_2$, and its square is the plain square. The root set of $0$ is the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four, the component of the cone singled out by the vanishing of the scalar part; its non-zero members are the nilpotents of the algebra, and they are a strict part of its zero-divisor set, the cone beyond the pure part being made of the complex multiples of the non-trivial idempotents. The article is *Nilpotents*.
 
 ### $\tilde Q_1\tilde Q_2^{*}$, the general plain sesqualgebra
 
-The product is $\tilde\Xi\tilde Q_2^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The equation of the value $0$ forces every coordinate to vanish, so the root set of $0$ is the origin alone; the zero-divisor set of the structure is the whole punctured space, so the square detects no zero divisor there at all. The article is *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*.
+The product is $\tilde{Ζ}\tilde Q_2^{*}$, and its square is the Hermitian element $\tilde{Ζ}\tilde{Ζ}^{*}$, of scalar part $\langle\tilde{Ζ}\rangle_{*}=\sum_\mu\lvertΖ_\mu\rvert^{2}$. The equation of the value $0$ forces every coordinate to vanish, so the root set of $0$ is the origin alone; the zero-divisor set of the structure is the whole punctured space, so the square detects no zero divisor there at all. The article is *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*.
 
 ### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
-The product is $\tilde\Xi^{\natural}\tilde Q_2$, and its square is the central square $C(\tilde\Xi)e_t$; the equation of the value $0$ is the vanishing of the central square, and the root set of $0$ is the whole cone $\mathcal{N}$, of real dimension six, which is also the whole zero-divisor set of the algebra together with the origin. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
+The product is $\tilde{Ζ}^{\natural}\tilde Q_2$, and its square is the central square $C(\tilde{Ζ})e_t$; the equation of the value $0$ is the vanishing of the central square, and the root set of $0$ is the whole cone $\mathcal{N}$, of real dimension six, which is also the whole zero-divisor set of the algebra together with the origin. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
 ### $\tilde Q_1^{\natural}\tilde Q_2^{*}$, the general quaternionic sesqualgebra
 
-The product is $\tilde\Xi^{\natural}\tilde Q_2^{*}$, and its square has scalar part the Krein value $\Delta(\tilde\Xi)$. The equation of the value $0$ is the square-zero family $c(\vec u\pm i)$ over the real unit vectors, the slope family at $\lvert t\rvert=1$, a proper subfamily of the cone cut out by $\overline{\tilde Q}\tilde Q=0$; it is of real dimension four and contains the element $e_t+i\vec e_x$. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
+The product is $\tilde{Ζ}^{\natural}\tilde Q_2^{*}$, and its square has scalar part the Krein value $\Delta(\tilde{Ζ})$. The equation of the value $0$ is the square-zero family $c(\vec u\pm i)$ over the real unit vectors, the slope family at $\lvert t\rvert=1$, a proper subfamily of the cone cut out by $\overline{\tilde Q}\tilde Q=0$; it is of real dimension four and contains the element $e_t+i\vec e_x$. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde\Xi\bullet\tilde Q_2=\tfrac12(\tilde\Xi\tilde Q_2+\tilde Q_2\tilde\Xi)$, whose square is the plain square, so the root set of $0$ is the pure isotropic cone, element for element that of $\tilde Q_1\tilde Q_2$. The zero-divisor set of the structure is larger than that of $\tilde Q_1\tilde Q_2$, so the square detects the cone only in part there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the Jordan product $\tilde{Ζ}\bullet\tilde Q_2=\tfrac12(\tilde{Ζ}\tilde Q_2+\tilde Q_2\tilde{Ζ})$, whose square is the plain square, so the root set of $0$ is the pure isotropic cone, element for element that of $\tilde Q_1\tilde Q_2$. The zero-divisor set of the structure is larger than that of $\tilde Q_1\tilde Q_2$, so the square detects the cone only in part there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\bullet_{*}\tilde Q_2$, the symmetric plain sesqualgebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q_2^{*}+\overline{\tilde Q_2\tilde\Xi^{*}})$, whose value is central, and its square is $\langle\tilde\Xi\rangle_{*}e_t$, a real and non-negative central value. The root set of $0$ is the origin alone, for the same definiteness. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the symmetrisation $\tfrac12(\tilde{Ζ}\tilde Q_2^{*}+\overline{\tilde Q_2\tilde{Ζ}^{*}})$, whose value is central, and its square is $\langle\tilde{Ζ}\rangle_{*}e_t$, a real and non-negative central value. The root set of $0$ is the origin alone, for the same definiteness. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\bullet_{\natural}\tilde Q_2$, the symmetric quaternionic algebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde\Xi)=C(\tilde\Xi,\tilde Q_2)e_t$, whose value is central, and its square is the central square; the root set of $0$ is the whole cone, as for $\tilde Q_1^{\natural}\tilde Q_2$. The zero-divisor set of the structure is the whole punctured space, so the square detects only the cone there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the symmetrisation $\tfrac12(\tilde{Ζ}^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde{Ζ})=C(\tilde{Ζ},\tilde Q_2)e_t$, whose value is central, and its square is the central square; the root set of $0$ is the whole cone, as for $\tilde Q_1^{\natural}\tilde Q_2$. The zero-divisor set of the structure is the whole punctured space, so the square detects only the cone there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, the symmetric quaternionic sesqualgebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde\Xi^{*}})$, and its square is the coefficientwise real part of the unsplit square, a real element. The root set of $0$ is the cone $\alpha(e_t+\tilde\Xi)$ over the real unit vectors, the same subfamily of the cone as that of $\tilde Q_1^{\natural}\tilde Q_2^{*}$, of real dimension four, containing no pure element. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the symmetrisation $\tfrac12(\tilde{Ζ}^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde{Ζ}^{*}})$, and its square is the coefficientwise real part of the unsplit square, a real element. The root set of $0$ is the cone $\alpha(e_t+\tilde{Ζ})$ over the real unit vectors, the same subfamily of the cone as that of $\tilde Q_1^{\natural}\tilde Q_2^{*}$, of real dimension four, containing no pure element. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\Xi\wedge\tilde Q_2=\vec\Xi\times\vec Q_2$, alternating, so its square vanishes identically. The root set of $0$ is the whole space and every element is a root of $0$; the zero-divisor set is the punctured space, so the two coincide on the non-zero elements. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the commutator $\tilde{Ζ}\wedge\tilde Q_2=\vec{Ζ}\times\vec Q_2$, alternating, so its square vanishes identically. The root set of $0$ is the whole space and every element is a root of $0$; the zero-divisor set is the punctured space, so the two coincide on the non-zero elements. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\wedge_{*}\tilde Q_2$, the antisymmetric plain sesqualgebra
 
-The product is the antisymmetrisation $\tfrac12(\tilde\Xi\tilde Q_2^{*}-\overline{\tilde Q_2\tilde\Xi^{*}})$, whose values are pure elements, so the square of an element is the pure part of its Hermitian square; the equation of the value $0$ is the centrality of the Hermitian square, $\tilde Q\tilde Q^{*}$ central, and the root set of $0$ is the subfamily the centrality cuts out, a complex cone on the real unit sphere of the quaternion subspace, of real dimension five. It is not inside the cone: it contains the unit $e_t$, which lies off the cone, and the cone meets it at the origin alone. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the antisymmetrisation $\tfrac12(\tilde{Ζ}\tilde Q_2^{*}-\overline{\tilde Q_2\tilde{Ζ}^{*}})$, whose values are pure elements, so the square of an element is the pure part of its Hermitian square; the equation of the value $0$ is the centrality of the Hermitian square, $\tilde Q\tilde Q^{*}$ central, and the root set of $0$ is the subfamily the centrality cuts out, a complex cone on the real unit sphere of the quaternion subspace, of real dimension five. It is not inside the cone: it contains the unit $e_t$, which lies off the cone, and the cone meets it at the origin alone. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\wedge_{\natural}\tilde Q_2$, the antisymmetric quaternionic algebra
 
-The product is the commutator $\tilde\Xi\wedge^{\natural}\tilde Q_2=\tfrac12(\tilde\Xi^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde\Xi)$, alternating, so its square vanishes identically. The root set of $0$ is the whole space, the punctured space being the zero-divisor set. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the commutator $\tilde{Ζ}\wedge^{\natural}\tilde Q_2=\tfrac12(\tilde{Ζ}^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde{Ζ})$, alternating, so its square vanishes identically. The root set of $0$ is the whole space, the punctured space being the zero-divisor set. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the antisymmetric quaternionic sesqualgebra
 
-The product is the antisymmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde\Xi^{*}})$, whose values are pure elements; the equation of the value $0$ is the vanishing of the coefficientwise imaginary part of the Hermitian square, and the root set of $0$ is the set of the elements whose vector part is a complex multiple of a real direction, a cone of real dimension six with a free scalar coordinate. It is not inside the cone and it meets the cone: it contains the unit $e_t$, which lies off the cone, and the element $e_t+i\vec e_x$, which lies on it. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the antisymmetrisation $\tfrac12(\tilde{Ζ}^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde{Ζ}^{*}})$, whose values are pure elements; the equation of the value $0$ is the vanishing of the coefficientwise imaginary part of the Hermitian square, and the root set of $0$ is the set of the elements whose vector part is a complex multiple of a real direction, a cone of real dimension six with a free scalar coordinate. It is not inside the cone and it meets the cone: it contains the unit $e_t$, which lies off the cone, and the element $e_t+i\vec e_x$, which lies on it. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Nilpotents
 
@@ -174,14 +174,14 @@ The three tables below collect the root sets of $0$, the four sets of the genera
 
 | the family | the structure | the square | the root set of $0$ |
 |---|---|---|---|
-| the plain algebra | $\tilde Q_1\tilde Q_2$ | $\tilde\Xi^{2}$ | the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, real dimension $4$ |
-| the plain sesqualgebra | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde\Xi\tilde\Xi^{*}$ | the origin alone |
-| the quaternionic algebra | $\tilde Q_1^{\natural}\tilde Q_2$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
+| the plain algebra | $\tilde Q_1\tilde Q_2$ | $\tilde{Ζ}^{2}$ | the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, real dimension $4$ |
+| the plain sesqualgebra | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde{Ζ}\tilde{Ζ}^{*}$ | the origin alone |
+| the quaternionic algebra | $\tilde Q_1^{\natural}\tilde Q_2$ | $C(\tilde{Ζ})e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
 | the quaternionic sesqualgebra | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | of scalar part $\Delta$ | the family $\overline{\tilde Q}\tilde Q=0$, real dimension $4$ |
-| the plain algebra | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\Xi^{2}$ | the pure isotropic cone, the set of $\tilde Q_1\tilde Q_2$ |
-| the plain sesqualgebra | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\langle\tilde\Xi\rangle_{*}e_t$ | the origin alone |
-| the quaternionic algebra | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
-| the quaternionic sesqualgebra | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the coefficientwise real part | the cone $\alpha(e_t+\tilde\Xi)$, real dimension $4$ |
+| the plain algebra | $\tilde Q_1\bullet\tilde Q_2$ | $\tilde{Ζ}^{2}$ | the pure isotropic cone, the set of $\tilde Q_1\tilde Q_2$ |
+| the plain sesqualgebra | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $\langle\tilde{Ζ}\rangle_{*}e_t$ | the origin alone |
+| the quaternionic algebra | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $C(\tilde{Ζ})e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
+| the quaternionic sesqualgebra | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the coefficientwise real part | the cone $\alpha(e_t+\tilde{Ζ})$, real dimension $4$ |
 | the plain algebra | $\tilde Q_1\wedge\tilde Q_2$ | $0$ | the whole space |
 | the plain sesqualgebra | $\tilde Q_1\wedge_{*}\tilde Q_2$ | a pure element | the elements with $\tilde Q\tilde Q^{*}$ central, real dimension $5$ |
 | the quaternionic algebra | $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $0$ | the whole space |
@@ -193,31 +193,31 @@ Read against the whole space, the table has three kinds of entry: the whole spac
 
 | the product | the root set of $0$ | the real dimension | a witness |
 |---|---|---|---|
-| $\tilde Q_1\tilde Q_2$, $\tilde\Xi\tilde Q_2$ | the pure isotropic cone | $4$ | $\vec e_x+i\vec e_y$ |
-| $\tilde Q_1\tilde Q_2^{*}$, $\tilde\Xi\tilde Q_2^{*}$ | the origin | $0$ | none |
-| $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde\Xi^{\natural}\tilde Q_2$ | the cone $\mathcal{N}$ | $6$ | $e_t+i\vec e_x$ |
-| $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde\Xi^{\natural}\tilde Q_2^{*}$ | the subfamily $\overline{\tilde Q}\tilde Q=0$ | $4$ | $e_t+i\vec e_x$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde{Ζ}\tilde Q_2$ | the pure isotropic cone | $4$ | $\vec e_x+i\vec e_y$ |
+| $\tilde Q_1\tilde Q_2^{*}$, $\tilde{Ζ}\tilde Q_2^{*}$ | the origin | $0$ | none |
+| $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde{Ζ}^{\natural}\tilde Q_2$ | the cone $\mathcal{N}$ | $6$ | $e_t+i\vec e_x$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde{Ζ}^{\natural}\tilde Q_2^{*}$ | the subfamily $\overline{\tilde Q}\tilde Q=0$ | $4$ | $e_t+i\vec e_x$ |
 
 The four sets are ordered by the two chains of §*The Order of the Four Sets*, and no one of them is empty, which is the presence common to the twelve structures of the space: the value $0$ is the only value at which all twelve have a root.
 
 ### The Two Families of the Plain Reduction at Zero
 
-The plain reduction $\Xi_t^{2}-(\vec\Xi,\vec\Xi)=\lambda$, $2\Xi_t\vec\Xi=0$ reads at the value $0$ as follows.
+The plain reduction $Ζ_t^{2}-(\vec{Ζ},\vec{Ζ})=\lambda$, $2Ζ_t\vec{Ζ}=0$ reads at the value $0$ as follows.
 
-| | pure, $\Xi_t=0$ | central, $\Xi_t\neq0$ |
+| | pure, $Ζ_t=0$ | central, $Ζ_t\neq0$ |
 |---|---|---|
-| the roots of $0$ | the pure isotropic cone $(\vec\Xi,\vec\Xi)=0$, the nilpotents | the origin alone |
+| the roots of $0$ | the pure isotropic cone $(\vec{Ζ},\vec{Ζ})=0$, the nilpotents | the origin alone |
 | the real dimension | $4$ | $0$, the one point |
 
 The two families are disjoint except at the shared origin, and both are needed for the table of the plain product: the nilpotent cone carries all the non-zero roots of $0$, and the central family contributes the origin alone. The two families are those of the companion *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where they carry the root set of $+1$.
 
 ### The Scaling of the Cone
 
-**Theorem (the scaling of the cone; quoted).** Let $\mu\in\mathbb{C}$ and let $\tilde\Xi$ be a root of $0$ of one of the twelve products. Then $\mu\tilde\Xi$ is a root of $0$ of the same product, so the root set of $0$ is a cone invariant under every scaling (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Scaling of the Root Set*). For a non-zero value the same scaling carries the value $\lambda$ to $\mu^{2}\lambda$ in the six bilinear structures and to $\lvert\mu\rvert^{2}\lambda$ in the six sesquilinear ones, so no non-zero multiple of a root of $\lambda$ is again a root of $\lambda$ unless $\mu^{2}=1$ or $\lvert\mu\rvert^{2}=1$; the value $0$ is the only value whose root set the scaling does not move.
+**Theorem (the scaling of the cone; quoted).** Let $\mu\in\mathbb{C}$ and let $\tilde{Ζ}$ be a root of $0$ of one of the twelve products. Then $\mu\tilde{Ζ}$ is a root of $0$ of the same product, so the root set of $0$ is a cone invariant under every scaling (*Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Scaling of the Root Set*). For a non-zero value the same scaling carries the value $\lambda$ to $\mu^{2}\lambda$ in the six bilinear structures and to $\lvert\mu\rvert^{2}\lambda$ in the six sesquilinear ones, so no non-zero multiple of a root of $\lambda$ is again a root of $\lambda$ unless $\mu^{2}=1$ or $\lvert\mu\rvert^{2}=1$; the value $0$ is the only value whose root set the scaling does not move.
 
 ## Summary
 
-The root of the central value $\lambda e_t$ in a structure is the solution of the equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$, and this article reads the value $0$, the only value every one of the twelve structures reaches. For the four general products the root sets of $0$ are four sets: the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, of real dimension four, which is the nilpotent cone of the plain product; the origin alone for the general plain sesquilinear product, whose square has the definite scalar part $H$; the whole cone $\mathcal{N}=\{C=0\}$, of real dimension six, for the natural product; and the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone, of real dimension four, for the general quaternionic sesquilinear product. The four are ordered by $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $Z_3\subsetneq Z_4\subsetneq Z_2$, with $Z_1$ and $Z_4$ incomparable and meeting at the origin, and each is a complex cone with the origin as its apex.
+The root of the central value $\lambda e_t$ in a structure is the solution of the equation $\tilde{Ζ}\star\tilde{Ζ}=\lambda e_t$, and this article reads the value $0$, the only value every one of the twelve structures reaches. For the four general products the root sets of $0$ are four sets: the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, of real dimension four, which is the nilpotent cone of the plain product; the origin alone for the general plain sesquilinear product, whose square has the definite scalar part $H$; the whole cone $\mathcal{N}=\{C=0\}$, of real dimension six, for the natural product; and the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone, of real dimension four, for the general quaternionic sesquilinear product. The four are ordered by $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $Z_3\subsetneq Z_4\subsetneq Z_2$, with $Z_1$ and $Z_4$ incomparable and meeting at the origin, and each is a complex cone with the origin as its apex.
 
 Among the twelve structures the square-zero set is the pure isotropic cone for $\tilde Q_1\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$, the origin alone for $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1\bullet_{*}\tilde Q_2$, the whole cone for $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$, the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone for $\tilde Q_1^{\natural}\tilde Q_2^{*}$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, for the two antisymmetric sesquilinear structures two subfamilies, one each, that lie outside the cone: the elements whose Hermitian square is central for $\tilde Q_1\wedge_{*}\tilde Q_2$, with the origin its only element of the cone, and the elements whose Hermitian square has vanishing coefficientwise imaginary part for $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, which contains the unit $e_t$ off the cone and the element $e_t+i\vec e_x$ on it, and the whole space for the two alternating structures $\tilde Q_1\wedge\tilde Q_2$ and $\tilde Q_1\wedge_{\natural}\tilde Q_2$. The non-zero roots of $0$ are the zero divisors of the algebra, and the square detects the zero-divisor set whole only for the two alternating structures and the natural product.
 
@@ -228,12 +228,12 @@ The nilpotents are the non-zero square-zero elements, that is the nilpotents of 
 | symbol | meaning |
 |---|---|
 | $\lambda e_t$ | a central value, $\lambda\in\mathbb{C}$ |
-| $\mathcal R_0$ | the root set of the value $0$, the solutions of $\tilde\Xi\star\tilde\Xi=0$ |
+| $\mathcal R_0$ | the root set of the value $0$, the solutions of $\tilde{Ζ}\star\tilde{Ζ}=0$ |
 | $Z_1$, $Z_2$, $Z_3$, $Z_4$ | the root sets of $0$ of the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product |
-| $\mathcal{N}=\{C(\tilde\Xi)=0\}$ | the cone, the vanishing set of the central square |
-| $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi$ | the central square, with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$ |
-| $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the second product's square |
-| $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$ | the Krein value, the scalar part of the fourth product's square |
+| $\mathcal{N}=\{C(\tilde{Ζ})=0\}$ | the cone, the vanishing set of the central square |
+| $C(\tilde{Ζ})e_t=\tilde{Ζ}^{\natural}\tilde{Ζ}$ | the central square, with $C(\tilde{Ζ})=\sum_\muΖ_\mu^{2}$ |
+| $\langle\tilde{Ζ}\rangle_{*}=\sum_\mu\lvertΖ_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the second product's square |
+| $\Delta(\tilde{Ζ})=\lvertΖ_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvertΖ_\mu\rvert^{2}$ | the Krein value, the scalar part of the fourth product's square |
 | $\tilde\Upsilon\star\tilde\Upsilon=0$, $\tilde\Upsilon\neq0$ | a square-zero element, or nilpotent of index two, of the product at hand |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and right annihilators of $\tilde Q$ in the product at hand |
 | $\tilde Q_1\tilde Q_2,\dots,\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures of the space, the four general products and their eight parts |

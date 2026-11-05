@@ -28,11 +28,11 @@ This article does not restate the proofs of those articles. It records the **rel
 | zero divisors | $Q\neq0$, $QB=0$ with $B\neq0$ | $\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}$ | *Zero Divisors of the Split-Complex Algebra* |
 | annihilators | $\{B:QB=0\}$ | $\{0\}$ off $\mathcal{N}$, the opposite line on $\mathcal{N}\setminus\{0\}$, and $\mathbb{C}^{\mathrm{spl}}$ at $0$ | *Annihilators of the Split-Complex Algebra* |
 | idempotents | $\Pi^{2}=\Pi$ | $\{0,1,\Pi_{+},\Pi_{-}\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
-| roots of $+1$ | $\Xi^{2}=1$ | $\{1,-1,j,-j\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
-| roots of $0$ | $\Xi^{2}=0$ | $\{0\}$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
+| roots of $+1$ | $Ζ^{2}=1$ | $\{1,-1,j,-j\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
+| roots of $0$ | $Ζ^{2}=0$ | $\{0\}$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
 | nilpotents | $\Upsilon\neq0$, $\Upsilon^{n}=0$ | $\varnothing$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
-| roots of $-1$ | $\Xi^{2}=-1$ | $\varnothing$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
-| roots of a general $Q$ | $\Xi^{2}=Q$ | $\varepsilon_{+}\sqrt{Q_{+}}\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$ | *Square Roots of a General Element in the Split-Complex Algebra* |
+| roots of $-1$ | $Ζ^{2}=-1$ | $\varnothing$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
+| roots of a general $Q$ | $Ζ^{2}=Q$ | $\varepsilon_{+}\sqrt{Q_{+}}\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$ | *Square Roots of a General Element in the Split-Complex Algebra* |
 | ideals | additive subgroups closed under multiplication | $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{C}^{\mathrm{spl}}$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
 
 ## The Inclusions and the Disjointness
@@ -71,7 +71,7 @@ The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $0
 
 ### The General Roots
 
-The roots of $\Xi^{2}=Q$ exist exactly on the forward cone
+The roots of $Ζ^{2}=Q$ exist exactly on the forward cone
 
 $$
 \boxed{\;\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}\;}.
@@ -165,9 +165,9 @@ The complement contains the **backward cone** $- \mathcal{C}=\{q\le-|q'|\}$ away
 
 | $\lambda$ | equation | roots | number |
 |---|---|---|---|
-| $-1$ | $\Xi^{2}=-1$ | none | $0$ |
-| $0$ | $\Xi^{2}=0$ | $0$ | $1$ |
-| $+1$ | $\Xi^{2}=1$ | $1,-1,j,-j$ | $4$ |
+| $-1$ | $Ζ^{2}=-1$ | none | $0$ |
+| $0$ | $Ζ^{2}=0$ | $0$ | $1$ |
+| $+1$ | $Ζ^{2}=1$ | $1,-1,j,-j$ | $4$ |
 
 The value $+1$ has the four roots because the non-central unit $j$ is a root of $+1$; the value $-1$ has none because a sum of two real squares is non-negative; the value $0$ has the single root $0$ because the algebra is reduced. The three sets are disjoint, and their cardinalities are the three values $4,1,0$.
 
@@ -195,7 +195,7 @@ the image of the square map, a pointed closed convex cone. It defines the compon
 | $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ | Zero-divisor set |
 | $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{q\ge|q'|\}$ | Forward cone, the image of the square |
 | $Q\succeq B\iff Q-B\in\mathcal{C}$ | The order of the forward cone |
-| $\Xi_{\pm}=\pm\sqrt{Q_{\pm}}$ | The roots in the interior of $\mathcal{C}$ |
+| $Ζ_{\pm}=\pm\sqrt{Q_{\pm}}$ | The roots in the interior of $\mathcal{C}$ |
 
 ## Further Reading
 

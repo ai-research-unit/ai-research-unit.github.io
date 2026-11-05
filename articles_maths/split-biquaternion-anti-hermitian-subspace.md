@@ -152,7 +152,7 @@ As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units
 
 $$
 \boxed{\;
-\xi = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1
+\zeta = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_x^2 + q_y^2 + q_z^2 = 1
 \;},
 $$
 

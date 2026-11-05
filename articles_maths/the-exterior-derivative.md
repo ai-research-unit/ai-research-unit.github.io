@@ -15,14 +15,14 @@ The article assumes the differential forms, the wedge product, the exterior deri
 **Proposition.** The exterior derivative is a first-order differential operator $d : \Omega^k(M) \to \Omega^{k+1}(M)$; its principal symbol, in the conventions of *Differential Operators on a Manifold*, is
 
 $$
-\sigma_1(d)(x, \xi) = \xi \wedge \cdot \ : \ \Lambda^kT^*_xM \longrightarrow \Lambda^{k+1}T^*_xM,
+\sigma_1(d)(x, \zeta) = \zeta \wedge \cdot \ : \ \Lambda^kT^*_xM \longrightarrow \Lambda^{k+1}T^*_xM,
 $$
 
-the exterior multiplication by the covector $\xi$; and its order is exactly one, because $\sigma_1(d)$ does not vanish identically.
+the exterior multiplication by the covector $\zeta$; and its order is exactly one, because $\sigma_1(d)$ does not vanish identically.
 
-*Proof.* In a chart the operator reads $d(\sum_I f_I\,dx_I) = \sum_{I,i}\partial/\partial x_i f_I\,dx_i\wedge dx_I$, whose top-order part has the coefficient matrices $\xi_i$ contracted with the basis, which is the exterior multiplication by $\sum_i\xi_i dx_i$. The lower-order terms of an operator do not affect the symbol, so the class of $d$ modulo the zeroth-order operators is the multiplication by $\xi$, and the order is one.
+*Proof.* In a chart the operator reads $d(\sum_I f_I\,dx_I) = \sum_{I,i}\partial/\partial x_i f_I\,dx_i\wedge dx_I$, whose top-order part has the coefficient matrices $\zeta_i$ contracted with the basis, which is the exterior multiplication by $\sum_i\zeta_i dx_i$. The lower-order terms of an operator do not affect the symbol, so the class of $d$ modulo the zeroth-order operators is the multiplication by $\zeta$, and the order is one.
 
-**Corollary.** The symbol of $d$ depends on the point through the covector, not through any choice of coordinates: it is the universal algebraic operation, the multiplication by the coordinate functional, and it satisfies $\sigma_1(d)(x,\xi)\circ\sigma_1(d)(x,\eta)+\sigma_1(d)(x,\eta)\circ\sigma_1(d)(x,\xi)=0$ because the wedge product is graded-commutative; in particular $\sigma_1(d)(x,\xi)^2 = 0$, which is the symbol form of $d^2 = 0$.
+**Corollary.** The symbol of $d$ depends on the point through the covector, not through any choice of coordinates: it is the universal algebraic operation, the multiplication by the coordinate functional, and it satisfies $\sigma_1(d)(x,\zeta)\circ\sigma_1(d)(x,\eta)+\sigma_1(d)(x,\eta)\circ\sigma_1(d)(x,\zeta)=0$ because the wedge product is graded-commutative; in particular $\sigma_1(d)(x,\zeta)^2 = 0$, which is the symbol form of $d^2 = 0$.
 
 ### Naturality under the Pullback
 
@@ -66,7 +66,7 @@ $$
 
 for every function and form. The first identity is the Leibniz rule over the module structure and the second is the vanishing of the square on the exact forms.
 
-*Proof.* The Leibniz rule over the multiplication by a function is exactly the statement that the commutator $[d,f]$ is multiplication by $df$, that is, the operator has order one with the symbol $\xi\wedge\cdot$; and the vanishing on the exact forms is a second-order condition on the coefficients, which together with the symbol pins the operator. Equivalently, the requirements are the statement that $d$ is the unique extension of the differential of functions to a derivation of degree one whose square vanishes.
+*Proof.* The Leibniz rule over the multiplication by a function is exactly the statement that the commutator $[d,f]$ is multiplication by $df$, that is, the operator has order one with the symbol $\zeta\wedge\cdot$; and the vanishing on the exact forms is a second-order condition on the coefficients, which together with the symbol pins the operator. Equivalently, the requirements are the statement that $d$ is the unique extension of the differential of functions to a derivation of degree one whose square vanishes.
 
 ## The de Rham Complex
 
@@ -84,13 +84,13 @@ The complex and its cohomology are those of *Differential Forms and Stokes' Theo
 
 ### Local Exactness and the Poincaré Lemma
 
-**Theorem (Poincaré lemma).** Let $\Xi \subseteq \mathbb{R}^n$ be star-shaped with respect to the origin. Then every closed form on $\Xi$ of positive degree is exact: for each $k \geq 1$ there is an operator $K : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ with
+**Theorem (Poincaré lemma).** Let $Ζ \subseteq \mathbb{R}^n$ be star-shaped with respect to the origin. Then every closed form on $Ζ$ of positive degree is exact: for each $k \geq 1$ there is an operator $K : \Omega^k(Ζ) \to \Omega^{k-1}(Ζ)$ with
 
 $$
-\boxed{\;dK + Kd = \mathrm{id} \quad \text{on } \Omega^k(\Xi), \ k \geq 1\;},
+\boxed{\;dK + Kd = \mathrm{id} \quad \text{on } \Omega^k(Ζ), \ k \geq 1\;},
 $$
 
-the **homotopy operator** obtained by integrating the contraction with the radial field along the segment from the origin; consequently $H^k_{dR}(\Xi) = 0$ for $k \geq 1$ and $H^0_{dR}(\Xi) = \mathbb{R}$.
+the **homotopy operator** obtained by integrating the contraction with the radial field along the segment from the origin; consequently $H^k_{dR}(Ζ) = 0$ for $k \geq 1$ and $H^0_{dR}(Ζ) = \mathbb{R}$.
 
 *Proof.* The operator is $K\alpha = \int_0^1 \iota_{R}\bigl(\alpha(tx)\bigr)\,\frac{dt}{t}$-type, the classical construction of *Differential Forms and Stokes' Theorem*; the identity $dK + Kd = \mathrm{id}$ is the fundamental theorem of calculus applied along the radial direction, and it is the operator statement that closed forms of positive degree on a star-shaped set are exact. The identity is the exact analogue, on the complex, of the statement that the complex is contractible.
 
@@ -98,21 +98,21 @@ The lemma is local: on a general manifold every point has a contractible coordin
 
 ### The Symbol Sequence and Ellipticity
 
-**Theorem.** For every $x \in M$ and every nonzero $\xi \in T^*_xM$ the symbol sequence
+**Theorem.** For every $x \in M$ and every nonzero $\zeta \in T^*_xM$ the symbol sequence
 
 $$
-0 \longrightarrow \Lambda^0T^*_xM \xrightarrow{\ \xi\wedge\ } \Lambda^1T^*_xM \xrightarrow{\ \xi\wedge\ } \cdots \xrightarrow{\ \xi\wedge\ } \Lambda^nT^*_xM \longrightarrow 0
+0 \longrightarrow \Lambda^0T^*_xM \xrightarrow{\ \zeta\wedge\ } \Lambda^1T^*_xM \xrightarrow{\ \zeta\wedge\ } \cdots \xrightarrow{\ \zeta\wedge\ } \Lambda^nT^*_xM \longrightarrow 0
 $$
 
 is exact. Consequently the de Rham complex is an elliptic complex in the sense of *Differential Operators on a Manifold*.
 
-*Proof.* Choose $\eta \in T_xM$ with $\langle\xi,\eta\rangle = 1$ and let $\iota_\eta$ be the contraction with $\eta$ on the exterior algebra. The identity
+*Proof.* Choose $\eta \in T_xM$ with $\langle\zeta,\eta\rangle = 1$ and let $\iota_\eta$ be the contraction with $\eta$ on the exterior algebra. The identity
 
 $$
-\iota_\eta(\xi\wedge\alpha) + \xi\wedge\iota_\eta\alpha = \langle\xi,\eta\rangle\,\alpha = \alpha
+\iota_\eta(\zeta\wedge\alpha) + \zeta\wedge\iota_\eta\alpha = \langle\zeta,\eta\rangle\,\alpha = \alpha
 $$
 
-holds for every $\alpha$, because $\iota_\eta\xi = \langle\xi,\eta\rangle$ in the graded Leibniz rule for the contraction; it says that $\iota_\eta$ is a contracting homotopy for the sequence with differential $\xi\wedge\cdot$. A complex with a contracting homotopy is exact: if $\xi\wedge\alpha = 0$, then $\alpha = \iota_\eta(0) + \xi\wedge\iota_\eta\alpha$ lies in the image of $\xi\wedge\cdot$; and the map $\Lambda^0\to\Lambda^1$ is injective because $\xi\neq0$. This proves exactness at every spot, and the exactness at the symbol level is exactly the definition of the ellipticity of the complex.
+holds for every $\alpha$, because $\iota_\eta\zeta = \langle\zeta,\eta\rangle$ in the graded Leibniz rule for the contraction; it says that $\iota_\eta$ is a contracting homotopy for the sequence with differential $\zeta\wedge\cdot$. A complex with a contracting homotopy is exact: if $\zeta\wedge\alpha = 0$, then $\alpha = \iota_\eta(0) + \zeta\wedge\iota_\eta\alpha$ lies in the image of $\zeta\wedge\cdot$; and the map $\Lambda^0\to\Lambda^1$ is injective because $\zeta\neq0$. This proves exactness at every spot, and the exactness at the symbol level is exactly the definition of the ellipticity of the complex.
 
 **Corollary.** The Laplace-type operator of the de Rham complex, the Laplace–de Rham operator $\Delta = d\delta + \delta d$, is elliptic; the Hodge theory represents the de Rham cohomology by the harmonic forms, and the index of the complex — the alternating sum of the Betti numbers — is computed from the symbol by the index theorem of Part IV. The regularity theory that makes these statements analytic belongs to *Partial Differential Equations* and *The L2 Adjoint of a Differential Operator*; what the present article supplies is the exactness of the symbol and hence the ellipticity.
 
@@ -140,23 +140,23 @@ and the contraction with two fields on a $2$-form recovers the evaluation, $\iot
 
 ## Summary
 
-The exterior derivative is the unique degree-one antiderivation of the graded algebra of forms with $df(X) = Xf$ on functions; it is a first-order operator with the symbol $\xi\wedge\cdot$, it is natural under the pullback, and it satisfies $d^2=0$, so it makes the forms into the de Rham cochain complex. The cohomology of the complex is the de Rham cohomology of *Differential Forms and Stokes' Theorem*; the pullback is a cochain map, homotopic maps induce the same map in cohomology, and on a star-shaped open set the closed forms of positive degree are exact by the homotopy operator $K$ with $dK+Kd=\mathrm{id}$ — the local exactness that fails globally exactly by the cohomology.
+The exterior derivative is the unique degree-one antiderivation of the graded algebra of forms with $df(X) = Xf$ on functions; it is a first-order operator with the symbol $\zeta\wedge\cdot$, it is natural under the pullback, and it satisfies $d^2=0$, so it makes the forms into the de Rham cochain complex. The cohomology of the complex is the de Rham cohomology of *Differential Forms and Stokes' Theorem*; the pullback is a cochain map, homotopic maps induce the same map in cohomology, and on a star-shaped open set the closed forms of positive degree are exact by the homotopy operator $K$ with $dK+Kd=\mathrm{id}$ — the local exactness that fails globally exactly by the cohomology.
 
-The symbol sequence of the complex, the exterior algebra with the multiplication by a covector, is exact off the zero section: the contraction with a vector $\eta$ dual to $\xi$ is a contracting homotopy, $\iota_\eta(\xi\wedge\alpha) + \xi\wedge\iota_\eta\alpha = \alpha$ for $\langle\xi,\eta\rangle=1$. Consequently the de Rham complex is elliptic, its Laplace-type operator $\Delta = d\delta+\delta d$ is elliptic, and the Hodge and index theory of the Part applies. With the interior product and the Lie derivative, $d$ generates the Cartan calculus $[d,d]=0$, $[\iota_X,\iota_Y]=0$, $[d,\iota_X]=\mathcal{L}_X$, $[d,\mathcal{L}_X]=0$, $[\mathcal{L}_X,\iota_Y]=\iota_{[X,Y]}$.
+The symbol sequence of the complex, the exterior algebra with the multiplication by a covector, is exact off the zero section: the contraction with a vector $\eta$ dual to $\zeta$ is a contracting homotopy, $\iota_\eta(\zeta\wedge\alpha) + \zeta\wedge\iota_\eta\alpha = \alpha$ for $\langle\zeta,\eta\rangle=1$. Consequently the de Rham complex is elliptic, its Laplace-type operator $\Delta = d\delta+\delta d$ is elliptic, and the Hodge and index theory of the Part applies. With the interior product and the Lie derivative, $d$ generates the Cartan calculus $[d,d]=0$, $[\iota_X,\iota_Y]=0$, $[d,\iota_X]=\mathcal{L}_X$, $[d,\mathcal{L}_X]=0$, $[\mathcal{L}_X,\iota_Y]=\iota_{[X,Y]}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $d : \Omega^k(M) \to \Omega^{k+1}(M)$ | Exterior derivative; the coboundary of the de Rham complex |
-| $\sigma_1(d)(x,\xi) = \xi\wedge\cdot$ | Principal symbol; multiplication by the covector |
+| $\sigma_1(d)(x,\zeta) = \zeta\wedge\cdot$ | Principal symbol; multiplication by the covector |
 | $F^*d = dF^*$ | Naturality under the pullback; $F^*$ is a cochain map |
 | $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^p\alpha\wedge d\beta$ | Antiderivation property |
 | $d^2 = 0$ | The square vanishes; the complex property |
 | $0 \to \Omega^0 \xrightarrow{d} \cdots \xrightarrow{d} \Omega^n \to 0$ | de Rham complex |
 | $H^k_{dR}(M)$ | de Rham cohomology; closed modulo exact forms |
 | $dK + Kd = \mathrm{id}$ | Homotopy operator of the Poincaré lemma on a star-shaped set |
-| $\xi\wedge\cdot$, $\iota_\eta$, $\langle\xi,\eta\rangle=1$ | Symbol sequence and its contracting homotopy; exactness |
+| $\zeta\wedge\cdot$, $\iota_\eta$, $\langle\zeta,\eta\rangle=1$ | Symbol sequence and its contracting homotopy; exactness |
 | $\Delta = d\delta + \delta d$ | Laplace–de Rham operator; elliptic |
 | $[d,d]=0$, $[\iota_X,\iota_Y]=0$, $[d,\iota_X]=\mathcal{L}_X$ | The Cartan calculus |
 | $[\mathcal{L}_X,\iota_Y]=\iota_{[X,Y]}$ | Commutation of the Lie derivative and the contraction |

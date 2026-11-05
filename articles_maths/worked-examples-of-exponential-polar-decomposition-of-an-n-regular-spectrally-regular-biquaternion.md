@@ -62,7 +62,7 @@ Given $\tilde Q$:
 4. Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.
 5. Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.
 6. Check $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.
-7. Compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$, and $\mu_\pm=\lambda_\pm/\Rho$.
+7. Compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/\Rho$.
 8. Compute the true logarithm by the matrix logarithm, and compare its exponential with $\tilde Q$.
 
 The **defect** of a case is
@@ -142,14 +142,14 @@ $$
 \qquad
 \lambda_-=-i,
 \qquad
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 \qquad
 \tilde\Pi_\pm=\frac{e_t\mp i\vec e_x}{2},
 \qquad
 \mu_\pm=\pm i.
 $$
 
-The element is normal: $\vec Q\times\overline{\vec Q}=0$. The eigenbasis is the polar frame, and the common axis is $i\vec\Xi=\vec e_x$.
+The element is normal: $\vec Q\times\overline{\vec Q}=0$. The eigenbasis is the polar frame, and the common axis is $i\vec{Ζ}=\vec e_x$.
 
 ### The Checks
 
@@ -218,12 +218,12 @@ $$
 \qquad
 \lambda_-=\sqrt2+1=2.41421356,
 \qquad
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 \qquad
 \mu_\pm=\lambda_\pm.
 $$
 
-The element is normal, and the eigenvalues of the unit factor are real and reciprocal. The common axis is $i\vec\Xi=\vec e_x$.
+The element is normal, and the eigenvalues of the unit factor are real and reciprocal. The common axis is $i\vec{Ζ}=\vec e_x$.
 
 ### The Checks
 
@@ -286,7 +286,7 @@ $$
 \qquad
 \lambda_-=\Bigl(1+\frac{1}{\sqrt2}\Bigr)(1-i)=1.70710678(1-i),
 \qquad
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 $$
 
 $$
@@ -353,7 +353,7 @@ The boost is the identity, with $\psi=0$. The rotor has $\theta=\frac{\pi}{2}$ a
 $$
 \lambda_\pm=\frac{1\pm i}{\sqrt2},
 \qquad
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 \qquad
 \mu_\pm=e^{\pm i\pi/4}.
 $$
@@ -421,7 +421,7 @@ $$
 ### The Spectral Data
 
 $$
-\vec\Xi=-i\frac{\vec Q}{B},
+\vec{Ζ}=-i\frac{\vec Q}{B},
 \qquad
 \lambda_+=0.375189466+0.30024259i,
 \qquad
@@ -627,7 +627,7 @@ $$
 \qquad
 \lambda_-=2,
 \qquad
-\vec\Xi=-i\vec e_x,
+\vec{Ζ}=-i\vec e_x,
 \qquad
 \mu_\pm=e^{\pm i\pi/4}.
 $$
@@ -684,12 +684,12 @@ $$
 \qquad
 \lambda_-=-i\sqrt2,
 \qquad
-\vec\Xi=-\frac{i}{\sqrt2}(\vec e_x+\vec e_y),
+\vec{Ζ}=-\frac{i}{\sqrt2}(\vec e_x+\vec e_y),
 \qquad
 \mu_\pm=\pm i.
 $$
 
-The element is normal. The eigenbasis is the polar frame, and the common axis is $i\vec\Xi=\frac{\vec e_x+\vec e_y}{\sqrt2}$.
+The element is normal. The eigenbasis is the polar frame, and the common axis is $i\vec{Ζ}=\frac{\vec e_x+\vec e_y}{\sqrt2}$.
 
 ### The Checks
 
@@ -793,7 +793,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 | $\theta,\vec u_{\mathrm r}$ | the rotor angle and the rotor axis |
 | $c$ | the cosine between the axes |
 | $\lambda_\pm$ | the eigenvalues of $\tilde Q$ |
-| $\vec\Xi$ | the root of one, $-i\vec Q/B$ |
+| $\vec{Ζ}$ | the root of one, $-i\vec Q/B$ |
 | $\tilde\Pi_\pm$ | the spectral idempotents |
 | $\mu_\pm$ | the eigenvalues of the unit factor |
 | $\tilde Q_{\log}$ | the formal exponent |

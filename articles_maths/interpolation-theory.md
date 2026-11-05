@@ -241,7 +241,7 @@ The case $p_1=\infty$ is the definition of the Lorentz spaces; the case $p_1<\in
 **Definition.** For $s \in \mathbb{R}$ and $1<p<\infty$ the **Bessel-potential space** $H^{s}_{n}(\mathbb{R}^n)$ is the set of tempered distributions $u$ whose Fourier transform satisfies
 
 $$
-\|u\|_{H^{s}_{n}}=\bigl\|\mathcal F^{-1}\bigl((1+|\xi|^2)^{s/2}\widehat{u}\bigr)\bigr\|_{L^{n}}<\infty .
+\|u\|_{H^{s}_{n}}=\bigl\|\mathcal F^{-1}\bigl((1+|\zeta|^2)^{s/2}\widehat{u}\bigr)\bigr\|_{L^{n}}<\infty .
 $$
 
 For $s=k \in \mathbb{N}$ and $1<p<\infty$ the space $H^k_p$ coincides with the Sobolev space $W^{k,n}$ of functions whose weak derivatives of order at most $k$ lie in $L^{n}$, with equivalent norms; this identification is the content, and only the Fourier description is used here.
@@ -258,7 +258,7 @@ $$
 (H^{s_0}_p,H^{s_1}_p)_{\vartheta^{\mathrm{itp}},q}=B^{s}_{n,m}, \qquad s=(1-\vartheta^{\mathrm{itp}})s_0+\vartheta^{\mathrm{itp}} s_1,
 $$
 
-where $B^{s}_{n,m}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\xi|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^{s}_{n,m}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
+where $B^{s}_{n,m}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\zeta|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^{s}_{n,m}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
 
 **Corollary (Sobolev embedding, interpolated).** If $0 \le s_1<s_0$ and $1<p<\infty$, then $H^{s_0}_p\subseteq H^{s_1}_p$, and for $s=(1-\vartheta^{\mathrm{itp}})s_1+\vartheta^{\mathrm{itp}} s_0$ the interpolation identity above exhibits $H^{s}_{n}$ as an intermediate space. The classical Sobolev embedding $H^{s}_{n}\subseteq L^r$ with $1/r=1/p-s/n$, when $s<n/p$, is obtained from the endpoint embeddings at $s=0$ and at a large $s$ by interpolation, and the embedding theorems in the sharp form are standard.
 

@@ -45,7 +45,7 @@ The diagonal of this matrix carries $Q_t$ and $Q_z$. The off-diagonal carries $Q
 
 ### Why the Third Matrix Is the Diagonal One
 
-The reason is the construction, not the algebra. The two-dimensional image is left multiplication read on a minimal left ideal, and the ideal is built from an idempotent. The idempotents used are the Peirce idempotents of the root $\vec\Xi=i\vec e_z$,
+The reason is the construction, not the algebra. The two-dimensional image is left multiplication read on a minimal left ideal, and the ideal is built from an idempotent. The idempotents used are the Peirce idempotents of the root $\vec{Ζ}=i\vec e_z$,
 
 $$
 \tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),
@@ -112,7 +112,7 @@ A reader who can see which cells are diagonal can read the hidden unit off the p
 
 The direction does not stay in the triplet. It is inherited by every construction built from the root, and the inheritance is mechanical: whatever is built from $\vec e_z$ carries $\vec e_z$. Each item below is a place where a reader meets the choice without being told.
 
-The root. The Peirce frame is the frame of the root $\vec\Xi=i\vec e_z$, of square $e_t$. The root is the choice, named or not.
+The root. The Peirce frame is the frame of the root $\vec{Ζ}=i\vec e_z$, of square $e_t$. The root is the choice, named or not.
 
 The idempotents. $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$. The unit appears inside both, with opposite signs.
 
@@ -611,7 +611,7 @@ The migration has three passes — arrays to cells, cells to actions, keep the a
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; the diagonal one is the mark of the declared unit |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the mixed Peirce units, defined up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$ |
-| $\vec\Xi=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
+| $\vec{Ζ}=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
 | $\gamma_\mu[\mathbb{M}_-]$ | the five frame cells, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{M}_-$ and the index is low |
 | $\mathrm{axf}$ | the label of the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
 | $\mathrm{pau}$ | the label of the Pauli display, the Peirce frame of the root $i\vec e_z$ |

@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Let $\star$ be a product on the quaternion space $\mathbb{H}$. An element $\tilde\xi$ is a **root of the central value** $0$ when its square in that product vanishes,
+Let $\star$ be a product on the quaternion space $\mathbb{H}$. An element $\tilde\zeta$ is a **root of the central value** $0$ when its square in that product vanishes,
 
 $$
-\tilde\xi\star\tilde\xi=0 ,
+\tilde\zeta\star\tilde\zeta=0 ,
 $$
 
 and the **root set of $0$** is the set of its solutions. The root set of $0$ is at once the **square-zero set** of the structure, and its nonzero members are the **square-zero elements**, or **nilpotents of index two**. The two names are one computation: this article reads the root set of $0$ of the three companion structures, and then reads the nilpotents, which are its nonzero members, together with the two other classes a nonzero square-zero element belongs to, the zero divisors and its own annihilations. The algebra product is named once for the contrast and cited, not restated.
@@ -18,7 +18,7 @@ $$
 \tilde Q_1\bullet\tilde Q_2 , \qquad \tilde Q_1\wedge\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
-the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
+the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\zeta^{\natural}\tilde q$. Every table of the article follows this order.
 
 ## The Roots of Zero in the Three Companion Structures
 
@@ -26,8 +26,8 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structure | at the two equal arguments |
 |---|---|---|
-| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
-| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
+| the plain square | $\tilde Q_1\bullet\tilde Q_2$ | $(\zeta_t^{2}-\lvert\vec\zeta\rvert^{2})e_t+2\zeta_t\vec\zeta$ |
+| the central square | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\zeta\rangle_{\natural}e_t$ |
 | the vanishing square | $\tilde Q_1\wedge\tilde Q_2$ | $0$ |
 
 The algebra product of the space carries the plain square as well, and that reading is owned by the *Quaternions* category.
@@ -35,16 +35,16 @@ The algebra product of the space carries the plain square as well, and that read
 **Definition.** The **root set of $0$** in the structure $\star$ is
 
 $$
-\mathcal R_0=\{\tilde\xi:\tilde\xi\star\tilde\xi=0\} ,
+\mathcal R_0=\{\tilde\zeta:\tilde\zeta\star\tilde\zeta=0\} ,
 $$
 
 and it is the square-zero set of the structure.
 
-**Definition.** A subset of $\mathbb{H}$ is a **cone** when it contains $\mu\tilde\xi$ for every $\tilde\xi$ it contains and every real $\mu$. Its **apex** is the origin.
+**Definition.** A subset of $\mathbb{H}$ is a **cone** when it contains $\mu\tilde\zeta$ for every $\tilde\zeta$ it contains and every real $\mu$. Its **apex** is the origin.
 
 **Proposition (the root set of $0$ is the cone, and the root sets of the two signed values carry no apex).** The set $\mathcal R_0$ is a cone whose apex is the origin: a real multiple of a root of $0$ is again a root of $0$. It is the origin alone for the two structures whose square vanishes only there, and the whole space, a cone with the origin as apex, for the antisymmetric plain structure. The sets of roots of the two signed values carry no apex: a scaling by $\mu$ carries the value $\lambda$ to $\mu^{2}\lambda$, so no nonzero multiple of a root of $\lambda$ is again a root of $\lambda$ unless $\mu^{2}=1$.
 
-*Proof.* The square of a scaled element is $\mu^{2}(\tilde\xi\star\tilde\xi)$, the three companion products being bilinear over $\mathbb{R}$, so the vanishing of the square is preserved by every $\mu$ and a signed value is preserved by $\mu=\pm1$ alone. The root set of $0$ of the plain square is the origin and not the cone of the plain form, because the two equations of the pair must hold together: the cone $\langle\cdot,\cdot\rangle=0$ meets the vector subspace at the origin alone, and the other branch is the centre.
+*Proof.* The square of a scaled element is $\mu^{2}(\tilde\zeta\star\tilde\zeta)$, the three companion products being bilinear over $\mathbb{R}$, so the vanishing of the square is preserved by every $\mu$ and a signed value is preserved by $\mu=\pm1$ alone. The root set of $0$ of the plain square is the origin and not the cone of the plain form, because the two equations of the pair must hold together: the cone $\langle\cdot,\cdot\rangle=0$ meets the vector subspace at the origin alone, and the other branch is the centre.
 
 **Theorem (the three root sets of $0$).** Among the three companion structures the root set of $0$ is the origin alone $\{0\}$ for the symmetric plain algebra and the general quaternionic algebra, and it is the whole space $\mathbb{H}$ for the antisymmetric plain algebra. Only two root sets occur, and no companion structure has a root set of $0$ that is neither a point nor the whole space. The algebra product of the same space has the origin alone, as owned by the *Quaternions* category.
 
@@ -52,21 +52,21 @@ $$
 \boxed{\;\mathcal R_0=\{0\}\ \ \text{(spa, gqa)},\qquad \mathcal R_0=\mathbb{H}\ \ \text{(apa)}\;}
 $$
 
-*Proof.* For the symmetric plain structure the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ forces the origin: the second equation gives $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch $\xi_t^{2}=0$, and the isotropic cone of the plain form, real though it is, does not lie in the root of $0$, since at an isotropic element the vector part $2\xi_t\vec\xi$ does not vanish. For the general quaternionic structure the equation is $\langle\tilde\xi\rangle_{\natural}=0$ with $\langle\cdot\rangle_{\natural}$ a sum of four real squares, so the origin alone vanishes. The antisymmetric plain product is alternating, so $\tilde\xi\wedge\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a companion structure is the plain square, the norm times $e_t$, or zero, and the first two have the origin as their only real zero.
+*Proof.* For the symmetric plain structure the pair $\langle\tilde\zeta\rangle=0$, $2\zeta_t\vec\zeta=0$ forces the origin: the second equation gives $\zeta_t=0$ or $\vec\zeta=0$, the pure branch gives $\lvert\vec\zeta\rvert^{2}=0$ and the central branch $\zeta_t^{2}=0$, and the isotropic cone of the plain form, real though it is, does not lie in the root of $0$, since at an isotropic element the vector part $2\zeta_t\vec\zeta$ does not vanish. For the general quaternionic structure the equation is $\langle\tilde\zeta\rangle_{\natural}=0$ with $\langle\cdot\rangle_{\natural}$ a sum of four real squares, so the origin alone vanishes. The antisymmetric plain product is alternating, so $\tilde\zeta\wedge\tilde\zeta=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a companion structure is the plain square, the norm times $e_t$, or zero, and the first two have the origin as their only real zero.
 
 The three are read one by one below; each names the product, its square and its root set of $0$, and cites the article that owns it.
 
 ### $\tilde Q_1^{\natural}\tilde Q_2$, the general quaternionic algebra
 
-The product is $\tilde\xi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the root equation is the single real equation $\langle\tilde\xi\rangle_{\natural}=0$. The norm is a sum of four real squares, so it vanishes at the origin alone. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
+The product is $\tilde\zeta^{\natural}\tilde q$, and its square is the central element $\langle\tilde\zeta\rangle_{\natural}e_t$, so the root equation is the single real equation $\langle\tilde\zeta\rangle_{\natural}=0$. The norm is a sum of four real squares, so it vanishes at the origin alone. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
 ### $\tilde Q_1\bullet\tilde Q_2$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, of scalar part $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_t\vec\xi$. The root equation is the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$: the second equation forces $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch gives $\xi_t^{2}=0$, so the origin alone solves. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
+The product is the Jordan product $\tilde\zeta\bullet\tilde q=\tfrac12(\tilde\zeta\tilde q+\tilde q\tilde\zeta)$, and its square is the plain square, $\tilde\zeta\bullet\tilde\zeta=\tilde\zeta^{2}$, of scalar part $\langle\tilde\zeta\rangle=\zeta_t^{2}-\lvert\vec\zeta\rvert^{2}$ and vector part $2\zeta_t\vec\zeta$. The root equation is the pair $\langle\tilde\zeta\rangle=0$, $2\zeta_t\vec\zeta=0$: the second equation forces $\zeta_t=0$ or $\vec\zeta=0$, the pure branch gives $\lvert\vec\zeta\rvert^{2}=0$ and the central branch gives $\zeta_t^{2}=0$, so the origin alone solves. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, for every element. The root equation is satisfied identically, and the root set of $0$, the square-zero set, is the whole space $\mathbb{H}$. The nilpotents are all the nonzero elements. The article is *Introduction to the Antisymmetric Plain Algebra*.
+The product is the commutator $\tilde\zeta\wedge\tilde q=\vec\zeta\times\vec q$, alternating, so at the two equal arguments it vanishes, $\tilde\zeta\wedge\tilde\zeta=0$, for every element. The root equation is satisfied identically, and the root set of $0$, the square-zero set, is the whole space $\mathbb{H}$. The nilpotents are all the nonzero elements. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
 **The algebra product and the general quaternionic product at $0$.** At the value $0$ the two structures agree: both root sets are the origin alone, and neither has a nilpotent. This is the value at which the two products agree, while at $+1$ they differ, the algebra product reading the pair $\pm e_t$ and the general quaternionic product the sphere $S^{3}$.
 
@@ -90,11 +90,11 @@ The set is collected once below, with the two readings of the roots of $0$ and t
 
 | the structure | the square | the square-zero equation | the root set of $0$, the square-zero set | the nilpotents |
 |---|---|---|---|---|
-| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | $\langle\tilde\xi\rangle_{\natural}=0$ | $\{0\}$ | none |
-| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\xi^{2}$ | $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ | $\{0\}$ | none |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde\zeta\rangle_{\natural}e_t$ | $\langle\tilde\zeta\rangle_{\natural}=0$ | $\{0\}$ | none |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tilde\zeta^{2}$ | $\langle\tilde\zeta\rangle=0$, $2\zeta_t\vec\zeta=0$ | $\{0\}$ | none |
 | $\tilde Q_1\wedge\tilde Q_2$ | $0$ | satisfied identically | $\mathbb{H}$ | every nonzero element |
 
-Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for the two structures whose square is the plain square or the definite scalar $\langle\tilde\xi\rangle_{\natural}e_t$, and the whole space $\mathbb{H}$ for the one whose square vanishes identically. The origin is the common member, and it is square zero without being a nilpotent, the nilpotents being the nonzero members. The root set of $0$ is a cone in all three structures: the origin, a degenerate cone with the origin as apex, in the two, and the whole space, a cone with the origin as apex, in the third.
+Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for the two structures whose square is the plain square or the definite scalar $\langle\tilde\zeta\rangle_{\natural}e_t$, and the whole space $\mathbb{H}$ for the one whose square vanishes identically. The origin is the common member, and it is square zero without being a nilpotent, the nilpotents being the nonzero members. The root set of $0$ is a cone in all three structures: the origin, a degenerate cone with the origin as apex, in the two, and the whole space, a cone with the origin as apex, in the third.
 
 ### The Three Classes
 
@@ -118,14 +118,14 @@ The nilpotents are the nonzero members of the square-zero sets: none in the two 
 
 | symbol | meaning |
 |---|---|
-| $\tilde\xi\star\tilde\xi=0$ | the root equation of the value $0$ in the structure $\star$ |
+| $\tilde\zeta\star\tilde\zeta=0$ | the root equation of the value $0$ in the structure $\star$ |
 | $\mathcal R_0$ | the root set of $0$, which is the square-zero set |
 | $\tilde\nu$ | a square-zero element, or nilpotent of index two, the nonzero member of the set |
 | $\{0\}$ | the square-zero set of $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$, and their nilpotent set |
 | $\mathbb{H}$ | the square-zero set of $\tilde Q_1\wedge\tilde Q_2$ |
 | $\mathbb{H}\setminus\{0\}$ | the nilpotent set, and the zero-divisor set, of $\tilde Q_1\wedge\tilde Q_2$ |
-| $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
+| $\langle\tilde\zeta\rangle=\zeta_t^{2}-\lvert\vec\zeta\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $\langle\tilde\zeta\rangle_{\natural}=\zeta_t^{2}+\lvert\vec\zeta\rvert^{2}$ | the quaternion form, the square of $\tilde Q_1^{\natural}\tilde Q_2$, and the norm |
 | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\tilde Q_1\bullet\tilde Q_2$, for the comparison |
 | cone, apex | a set that contains every real multiple of each of its elements, and its origin |
 | $\tilde Q_1\bullet\tilde Q_2,\tilde Q_1\wedge\tilde Q_2,\tilde Q_1^{\natural}\tilde Q_2$ | the three companion structures of the space |

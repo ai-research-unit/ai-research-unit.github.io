@@ -87,7 +87,7 @@ $$
 
 and likewise $i\vec e_\mu\star i\vec e_\mu=e_t$ for the three vector directions. Indeed $\vec e_\mu\star \vec e_\mu=\vec e_\mu \vec e_\mu^{*}=\vec e_\mu(-\vec e_\mu)=-\vec e_\mu^{2}=e_t$, and $e_t\star e_t=e_te_t^{*}=e_t$; for $i\vec e_\mu$ one has $(i\vec e_\mu)^{*}=i\vec e_\mu$ and $(i\vec e_\mu)^{2}=i^{2}\vec e_\mu^{2}=(-1)(-e_t)=e_t$, so $i\vec e_\mu\star i\vec e_\mu=(i\vec e_\mu)^{2}=e_t$.
 
-**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_t$ is $e_t$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_t$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ of square $-e_t$.
+**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_t$ is $e_t$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_t$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_t+\tilde{Ζ})$ with $\tilde{Ζ}$ of square $-e_t$.
 
 ### The Two Squares
 

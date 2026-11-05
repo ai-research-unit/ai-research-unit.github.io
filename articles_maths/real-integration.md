@@ -40,10 +40,10 @@ $$
 **Theorem (Riemann sums).** A bounded $f$ is integrable with integral $I$ if and only if for every $\varepsilon > 0$ there is $\delta > 0$ such that
 
 $$
-\left\lvert \sum_{i=1}^{n} f(\xi_i)(c_i - c_{i-1}) - I \right\rvert < \varepsilon
+\left\lvert \sum_{i=1}^{n} f(\zeta_i)(c_i - c_{i-1}) - I \right\rvert < \varepsilon
 $$
 
-for every partition $P$ with $\lVert P\rVert < \delta$ and every choice of tags $\xi_i \in [c_{i-1}, c_i]$.
+for every partition $P$ with $\lVert P\rVert < \delta$ and every choice of tags $\zeta_i \in [c_{i-1}, c_i]$.
 
 **Proof.** A tagged Riemann sum lies between the lower and upper sums of $P$, so the criterion for integrability implies the convergence of the sums. Conversely, if the sums converge to $I$ uniformly in the tags, then the largest and smallest tagged sums for a partition of small mesh both lie within $\varepsilon$ of $I$, so $U(f,P) - L(f,P) < 2\varepsilon$ and $f$ is integrable with integral $I$.
 
@@ -83,13 +83,13 @@ and $\lvert \int_a^b f\rvert \leq \int_a^b \lvert f\rvert \leq \lVert f\rVert_\i
 
 **Definition.** The function $c \mapsto \int_a^c f$ is the **indefinite integral** of $f$ from $a$, and the **mean value** of $f$ on $[a,b]$ is $\frac{1}{b-a}\int_a^b f$.
 
-**Theorem (mean value theorems for the integral).** If $f$ is continuous on $[a,b]$ then its mean value is attained: there is $\xi \in [a,b]$ with
+**Theorem (mean value theorems for the integral).** If $f$ is continuous on $[a,b]$ then its mean value is attained: there is $\zeta \in [a,b]$ with
 
 $$
-\int_a^b f = f(\xi)(b-a),
+\int_a^b f = f(\zeta)(b-a),
 $$
 
-and if in addition $f$ is differentiable on $(a,b)$ then $\xi$ may be taken in the interior; more generally, if $g \geq 0$ is integrable and $f$ continuous, there is $\xi$ with $\int_a^b fg = f(\xi)\int_a^b g$.
+and if in addition $f$ is differentiable on $(a,b)$ then $\zeta$ may be taken in the interior; more generally, if $g \geq 0$ is integrable and $f$ continuous, there is $\zeta$ with $\int_a^b fg = f(\zeta)\int_a^b g$.
 
 **Proof.** The first statement is the extreme value theorem applied to $f$ together with the intermediate value theorem: the mean value lies between the minimum and the maximum of $f$. The second is the same after the observation that the mean is strictly between the endpoint values under differentiability; the weighted form follows by the same argument with the weights $g$.
 
@@ -122,7 +122,7 @@ $$
 
 Consequently every Riemann integrable function with a primitive satisfies the evaluation formula, and primitives differ by constants.
 
-**Proof.** For a partition $P$, the mean value theorem applied on each subinterval gives $\xi_i$ with $F(c_i) - F(c_{i-1}) = F'(\xi_i)(c_i - c_{i-1})$, and summing gives the tagged Riemann sum $F(b)-F(a)$; as the mesh tends to $0$ the sums converge to $\int_a^b F'$ by integrability. Hence $F(b) - F(a) = \int_a^b F'$, and two primitives of the same function have zero derivative, hence differ by a constant.
+**Proof.** For a partition $P$, the mean value theorem applied on each subinterval gives $\zeta_i$ with $F(c_i) - F(c_{i-1}) = F'(\zeta_i)(c_i - c_{i-1})$, and summing gives the tagged Riemann sum $F(b)-F(a)$; as the mesh tends to $0$ the sums converge to $\int_a^b F'$ by integrability. Hence $F(b) - F(a) = \int_a^b F'$, and two primitives of the same function have zero derivative, hence differ by a constant.
 
 ### Techniques
 
@@ -167,10 +167,10 @@ which may exist when the improper integral does not; the principal value of $\in
 
 ### Definition and Integration by Parts
 
-**Definition.** Let $f, g : [a,b] \to \mathbb{R}$ and let $P$ be a partition with tags $\xi_i$. The **Riemann–Stieltjes sum** is
+**Definition.** Let $f, g : [a,b] \to \mathbb{R}$ and let $P$ be a partition with tags $\zeta_i$. The **Riemann–Stieltjes sum** is
 
 $$
-S(f,g,P) = \sum_{i=1}^{n} f(\xi_i)\,(g(c_i) - g(c_{i-1})) ,
+S(f,g,P) = \sum_{i=1}^{n} f(\zeta_i)\,(g(c_i) - g(c_{i-1})) ,
 $$
 
 and $f$ is **Riemann–Stieltjes integrable** with respect to $g$ with integral $\int_a^b f\,dg$ if the sums converge as the mesh tends to $0$, uniformly in the tags.

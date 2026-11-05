@@ -12,7 +12,7 @@ so the adjoint stays on the side it started from, and the map $U\mapsto L_U$ is 
 
 This article fixes the Hilbert–Schmidt form, the adjoint of the left multiplication and its explicit value on the rank-one operators, the self-adjointness, normality, unitarity and positivity criteria that the identity produces, the $*$-representation structure and the commutant, and the passage to the signed left multiplication. The two-sided multiplication algebra is *The Left and Right Multiplication Operators on a Hilbert Space*, where the rank-one decomposition and the Hilbert–Schmidt form are established; the bounded operators and their adjoints are *Bounded Operators on a Hilbert Space*; the Hilbert-Schmidt class is *Compact Operators*; the signed left multiplication is *The Signed Left Multiplication on a Hilbert Space*, and its adjoint is *The Signed Adjoint of the Left Multiplication on a Hilbert Space* below; the two-sided signed adjoint is *The Signed Adjoint Sandwich on a Hilbert Space*; the Hilbert-algebra form of the same identity, with the Tomita operator, is *The Adjoint of the Left Multiplication on a Hermitian Algebra* (Part II).
 
-Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, $B(H)$ acts on $S_2(H)$ by $L_U(T)=UT$ and $R_V(T)=TV$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written with a star. The rank-one operator is $\xi\otimes\bar\eta:\varkappa^{\mathrm{crd}}\mapsto\langle\varkappa^{\mathrm{crd}},\eta\rangle\xi$, and the **involution** on the elements is $U\mapsto U^*$.
+Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, $B(H)$ acts on $S_2(H)$ by $L_U(T)=UT$ and $R_V(T)=TV$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written with a star. The rank-one operator is $\zeta\otimes\bar\eta:\varkappa^{\mathrm{crd}}\mapsto\langle\varkappa^{\mathrm{crd}},\eta\rangle\zeta$, and the **involution** on the elements is $U\mapsto U^*$.
 
 ## The Hilbert–Schmidt Form and the Adjoint
 
@@ -34,21 +34,21 @@ so the adjoint of a left multiplication is the left multiplication by the adjoin
 
 *Proof.* The adjoint identity follows from the trace identity: $\langle L_UT,S\rangle_{\mathrm{HS}}=\operatorname{tr}(UTS^*)=\operatorname{tr}(T(U^*S)^*)=\langle T,U^*S\rangle_{\mathrm{HS}}=\langle T,L_{U^*}S\rangle_{\mathrm{HS}}$; the right case is $\operatorname{tr}(TVS^*)=\operatorname{tr}(T(SV^*)^*)$; uniqueness of the Hilbert adjoint and the density of $S_2(H)$ in the operators of the form give the identities for all elements.
 
-**Proposition (boundedness and the rank-one expression).** For all $U$ and $\xi,\eta\in H$,
+**Proposition (boundedness and the rank-one expression).** For all $U$ and $\zeta,\eta\in H$,
 
 $$
-L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta,\qquad R_V(\xi\otimes\bar\eta)=\xi\otimes\bar{V^*\eta},
+L_U(\zeta\otimes\bar\eta)=(U\zeta)\otimes\bar\eta,\qquad R_V(\zeta\otimes\bar\eta)=\zeta\otimes\bar{V^*\eta},
 $$
 
 and the adjoint is computed on rank-one operators by transposing the vector:
 
 $$
-\langle L_U(\xi\otimes\bar\eta),\varkappa^{\mathrm{crd}}\otimes\bar\kappa\rangle_{\mathrm{HS}}
-=\langle U\xi,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle
-=\langle \xi\otimes\bar\eta,L_{U^*}(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)\rangle_{\mathrm{HS}} .
+\langle L_U(\zeta\otimes\bar\eta),\varkappa^{\mathrm{crd}}\otimes\bar\kappa\rangle_{\mathrm{HS}}
+=\langle U\zeta,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle
+=\langle \zeta\otimes\bar\eta,L_{U^*}(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)\rangle_{\mathrm{HS}} .
 $$
 
-*Proof.* The rank-one action is the computation $UT=U(\xi\otimes\bar\eta)$, and for the right multiplication $(\xi\otimes\bar\eta)V=\xi\otimes\bar\eta\circ V$ gives the transpose formula; the adjoint pairing is the trace of the product of two rank-one operators, $\operatorname{tr}((\xi\otimes\bar\eta)(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)^*)=\langle\xi,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle$.
+*Proof.* The rank-one action is the computation $UT=U(\zeta\otimes\bar\eta)$, and for the right multiplication $(\zeta\otimes\bar\eta)V=\zeta\otimes\bar\eta\circ V$ gives the transpose formula; the adjoint pairing is the trace of the product of two rank-one operators, $\operatorname{tr}((\zeta\otimes\bar\eta)(\varkappa^{\mathrm{crd}}\otimes\bar\kappa)^*)=\langle\zeta,\varkappa^{\mathrm{crd}}\rangle\langle\kappa,\eta\rangle$.
 
 **Corollary (the multiplications are isometric and multiplicative).** The maps $U\mapsto L_U$ and $V\mapsto R_V$ are linear, multiplicative and isometric: $\|L_U\|=\|U\|$, $\|R_V\|=\|V\|$, and the two families commute, $L_UR_V=R_VL_U$.
 
@@ -100,7 +100,7 @@ because the grade involution is a $*$-automorphism and is self-adjoint for the H
 
 **Example (the finite-dimensional picture).** For $H=\mathbb{K}^n$ identify $S_2(H)$ with $M_n(\mathbb{K})$ and the Hilbert–Schmidt form with $\langle S,T\rangle=\operatorname{tr}(ST^*)$; then $L_U$ is the operator $T\mapsto UT$, the adjoint is $T\mapsto U^*T$, and the matrix of $L_U$ in the standard basis is $U\otimes I$. The self-adjointness of $L_U$ is the self-adjointness of $U$, and the eigenvalues of $L_U$ are the eigenvalues of $U$ each repeated $n$ times, so the spectral picture of the multiplication is read from the element.
 
-**Example (rank-one vectors and the shift).** On a rank-one operator, $L_U$ shifts only the left vector and keeps the right one, $L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta$; the adjoint shifts the same vector back by $U^*$, and iterating gives $L_U^n(\xi\otimes\bar\eta)=(U^n\xi)\otimes\bar\eta$. The rank-one decomposition thus carries the adjoint, the powers and the whole functional calculus of $L_U$ back to the element $U$.
+**Example (rank-one vectors and the shift).** On a rank-one operator, $L_U$ shifts only the left vector and keeps the right one, $L_U(\zeta\otimes\bar\eta)=(U\zeta)\otimes\bar\eta$; the adjoint shifts the same vector back by $U^*$, and iterating gives $L_U^n(\zeta\otimes\bar\eta)=(U^n\zeta)\otimes\bar\eta$. The rank-one decomposition thus carries the adjoint, the powers and the whole functional calculus of $L_U$ back to the element $U$.
 
 ## Summary
 
@@ -117,8 +117,8 @@ With respect to the Hilbert–Schmidt form $\langle S,T\rangle_{\mathrm{HS}}=\op
 | $R_V^*=R_{V^*}$ | adjoint of the right multiplication |
 | $\alpha(T)=\Gamma T\Gamma$, $\alpha^*=\alpha$ | the grade involution, self-adjoint for the form |
 | $(\ell_U)^*=\ell_{\alpha(U^*)}$ | adjoint of the signed left multiplication |
-| $\xi\otimes\bar\eta$ | the rank-one operator |
-| $L_U(\xi\otimes\bar\eta)=(U\xi)\otimes\bar\eta$ | the rank-one action |
+| $\zeta\otimes\bar\eta$ | the rank-one operator |
+| $L_U(\zeta\otimes\bar\eta)=(U\zeta)\otimes\bar\eta$ | the rank-one action |
 | $\{L_U\}'=\{R_V\}$ | the commutation theorem |
 
 ## Further Reading

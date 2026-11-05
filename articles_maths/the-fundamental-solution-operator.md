@@ -64,33 +64,33 @@ using the constant coefficients to move $L_2$ onto $E_2$ and the convolution wit
 
 ## The Symbol and the Multiplier
 
-**Theorem (the Fourier multiplier).** Let $L$ have constant coefficients with symbol $\sigma_L(\xi)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,
+**Theorem (the Fourier multiplier).** Let $L$ have constant coefficients with symbol $\sigma_L(\zeta)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,
 
 $$
-\boxed{\;\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)}\;} ,
+\boxed{\;\widehat{T_E f}(\zeta) = \frac{(\mathcal F f)(\zeta)}{\sigma_L(\zeta)}\;} ,
 $$
 
-in the sense that the distribution $1/\sigma_L(\xi)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the **Fourier multiplier** by $1/\sigma_L$.
+in the sense that the distribution $1/\sigma_L(\zeta)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the **Fourier multiplier** by $1/\sigma_L$.
 
-*Proof.* Taking the Fourier transform of $E*f$ gives the product $\mathcal F E\mathcal F f$ for tempered distributions, and taking the transform of $LE=\delta$ gives $\sigma_L(\xi)\mathcal F E(\xi)=1$, so $\mathcal F E=1/\sigma_L$ in the sense of distributions; substituting gives the display. The multiplier acts on $\mathcal{S}$ or on $L^2$ according to whether $1/\sigma_L$ is a bounded function, and otherwise as an operator between the Sobolev spaces.
+*Proof.* Taking the Fourier transform of $E*f$ gives the product $\mathcal F E\mathcal F f$ for tempered distributions, and taking the transform of $LE=\delta$ gives $\sigma_L(\zeta)\mathcal F E(\zeta)=1$, so $\mathcal F E=1/\sigma_L$ in the sense of distributions; substituting gives the display. The multiplier acts on $\mathcal{S}$ or on $L^2$ according to whether $1/\sigma_L$ is a bounded function, and otherwise as an operator between the Sobolev spaces.
 
 **Example (the classical multipliers).** The following table records the operator and its multiplier.
 
-| Operator $L$ | Fundamental solution $E$ | Multiplier $1/\sigma_L(\xi)$ | Inverse on |
+| Operator $L$ | Fundamental solution $E$ | Multiplier $1/\sigma_L(\zeta)$ | Inverse on |
 |---|---|---|---|
-| $-\Delta$ | Newtonian potential $\Phi$ | $1/|\xi|^2$ | $\mathcal{S}$, up to harmonic term |
-| $\partial/\partial t-\Delta$ | heat kernel | $1/(i\tau+|\xi|^2)$ | causal $f$, $t>0$ |
-| $\Box$ | cone-supported solution | $1/(\tau^2-|\xi|^2)$ | causal $f$ |
-| $\partial/\partial x$ | Heaviside step | $1/(i\xi)$ | $\mathcal{S}$ modulo constants |
-| $1-d^2/dx^2$ | $\tfrac12\exp(-|x|)$ | $1/(1+\xi^2)$ | all of $L^2$ |
+| $-\Delta$ | Newtonian potential $\Phi$ | $1/|\zeta|^2$ | $\mathcal{S}$, up to harmonic term |
+| $\partial/\partial t-\Delta$ | heat kernel | $1/(i\tau+|\zeta|^2)$ | causal $f$, $t>0$ |
+| $\Box$ | cone-supported solution | $1/(\tau^2-|\zeta|^2)$ | causal $f$ |
+| $\partial/\partial x$ | Heaviside step | $1/(i\zeta)$ | $\mathcal{S}$ modulo constants |
+| $1-d^2/dx^2$ | $\tfrac12\exp(-|x|)$ | $1/(1+\zeta^2)$ | all of $L^2$ |
 
-The first four multipliers are unbounded at the zeros of the symbol and the operators gain derivatives or lose support; the last is bounded, and $T_E$ is a bounded operator on $L^2$ with norm $1$, the multiplier $1/(1+\xi^2)$ having supremum $1$. The gain of two derivatives by the Newtonian potential operator and the boundedness of the resolvent kernel of $1-d^2/dx^2$ are the two extremes: whether the inverse gains regularity or is bounded is decided by the behaviour of $1/\sigma_L$ at infinity and near its singularities.
+The first four multipliers are unbounded at the zeros of the symbol and the operators gain derivatives or lose support; the last is bounded, and $T_E$ is a bounded operator on $L^2$ with norm $1$, the multiplier $1/(1+\zeta^2)$ having supremum $1$. The gain of two derivatives by the Newtonian potential operator and the boundedness of the resolvent kernel of $1-d^2/dx^2$ are the two extremes: whether the inverse gains regularity or is bounded is decided by the behaviour of $1/\sigma_L$ at infinity and near its singularities.
 
 **Theorem (uniqueness in the tempered class).** Let $L$ have constant coefficients. If the only tempered solution of $Lu=0$ is $u=0$, then $L$ has exactly one tempered fundamental solution and the tempered inverse $T_E$ is unique; in general two tempered fundamental solutions differ by a tempered solution of the homogeneous equation, and the tempered inversion is unique modulo that kernel.
 
 *Proof.* If $E$ and $E'$ are tempered fundamental solutions, then $E-E'$ is tempered and $L(E-E')=0$, so it vanishes under the hypothesis; conversely a tempered solution $h$ of $Lh=0$ may be added to any fundamental solution, and $E+h$ is a fundamental solution because $L$ is linear. The operator $T_E$ therefore differs from $T_{E'}$ by $T_h$ on the distributions for which both are defined.
 
-**Example (the primitive and the Hilbert transform).** For $L=\partial/\partial x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the **Hilbert transform**, whose multiplier is $-i\,\mathrm{sgn}(\xi)$ and whose relation to the two one-sided primitives is the subject of *Real Harmonic Analysis*. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.
+**Example (the primitive and the Hilbert transform).** For $L=\partial/\partial x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the **Hilbert transform**, whose multiplier is $-i\,\mathrm{sgn}(\zeta)$ and whose relation to the two one-sided primitives is the subject of *Real Harmonic Analysis*. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.
 
 ## The Adjoint Fundamental Solution
 
@@ -163,7 +163,7 @@ For an operator with variable coefficients the convolution reading fails and is 
 | $T_E$ | Fundamental solution operator, $f\mapsto E*f$ |
 | $\delta$ | Delta distribution |
 | $S$, $S'$ | Smoothing remainders of the parametrix |
-| $\sigma_L(\xi)$ | Symbol of $L$ |
+| $\sigma_L(\zeta)$ | Symbol of $L$ |
 | $\Phi$ | Newtonian potential, fundamental solution of $-\Delta$ |
 | $\Box$ | Wave operator $\partial^2/\partial t^2-\Delta_x$ |
 | $1/\sigma_L$ | Fourier multiplier of $T_E$ |

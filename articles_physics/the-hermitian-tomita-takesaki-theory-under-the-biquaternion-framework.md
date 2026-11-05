@@ -22,7 +22,7 @@ This article is the companion of *The KMS Condition and the Biquaternion Framewo
 
 Three features of the construction are easy to get wrong, and they organize what follows.
 
-- **$S$ and $J$ are anti-linear.** $S$ satisfies $S(z\xi)=\bar z\,S(\xi)$, so $J$ is anti-unitary and
+- **$S$ and $J$ are anti-linear.** $S$ satisfies $S(z\zeta)=\bar z\,S(\zeta)$, so $J$ is anti-unitary and
 $$
 J\,i\,J = -i .
 $$
@@ -83,7 +83,7 @@ says that the modular conjugation identifies the algebra with its commutant. The
 
 The defining anti-linearity of $S_0$ is inherited by $S$ and, through $S=J\Delta^{1/2}$, by $J$, which is anti-unitary:
 $$
-J(z\xi) = \bar z\,J(\xi), \qquad z\in\mathbb{C},\ \xi\in\mathcal{H}.
+J(z\zeta) = \bar z\,J(\zeta), \qquad z\in\mathbb{C},\ \zeta\in\mathcal{H}.
 $$
 The operator form of this statement is
 $$

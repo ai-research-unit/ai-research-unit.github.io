@@ -42,11 +42,11 @@ $$
 h(p)=-\sum_{x\in X}p_x\log p_x .
 $$
 
-**Theorem.** For $\nu_p$-almost every $\xi\in\partial\mathcal{T}$ the cylinder masses satisfy $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]\to h(p)$, the **Shannon–McMillan–Breiman theorem** for the Bernoulli measure.
+**Theorem.** For $\nu_p$-almost every $\zeta\in\partial\mathcal{T}$ the cylinder masses satisfy $-\tfrac1n\log\nu_p[\zeta_1\cdots\zeta_n]\to h(p)$, the **Shannon–McMillan–Breiman theorem** for the Bernoulli measure.
 
-*Proof sketch.* Writing $\xi=\xi_1\xi_2\cdots$, the mass is the product $\prod_{i\le n}p_{\xi_i}$ and the logarithm is the sum $\sum_{i\le n}\log p_{\xi_i}$, a sum of independent identically distributed terms; the strong law of large numbers gives the limit $-\sum_x p_x\log p_x$, which is the theorem of *Ergodic Theory* in the independent case.
+*Proof sketch.* Writing $\zeta=\zeta_1\zeta_2\cdots$, the mass is the product $\prod_{i\le n}p_{\zeta_i}$ and the logarithm is the sum $\sum_{i\le n}\log p_{\zeta_i}$, a sum of independent identically distributed terms; the strong law of large numbers gives the limit $-\sum_x p_x\log p_x$, which is the theorem of *Ergodic Theory* in the independent case.
 
-The verification on a sampled word of length $10\,000$ gives $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]=0.636075$ for $p=(\tfrac13,\tfrac23)$, against the exact $h(p)=0.636514$, and $0.693147$ for the uniform $p=(\tfrac12,\tfrac12)$, against $h(p)=\log 2$ exactly.
+The verification on a sampled word of length $10\,000$ gives $-\tfrac1n\log\nu_p[\zeta_1\cdots\zeta_n]=0.636075$ for $p=(\tfrac13,\tfrac23)$, against the exact $h(p)=0.636514$, and $0.693147$ for the uniform $p=(\tfrac12,\tfrac12)$, against $h(p)=\log 2$ exactly.
 
 ## The Self-Similar Measure
 
@@ -62,7 +62,7 @@ that is, $\mu(A)=\sum_i p_i\,\mu(S_i^{-1}A)$ for every Borel $A$.
 
 **Theorem (existence and uniqueness).** There is exactly one Borel probability measure $\mu_p$ on $\Lambda$ satisfying the invariance equation, and it is the pushforward of the Bernoulli measure by the coding map.
 
-*Proof sketch.* The map $\Phi(\mu)=\sum_i p_i\,\mu\circ S_i^{-1}$ preserves the set of Borel probability measures on the compact set $\Lambda$. On that set with the Wasserstein distance $d_W$ of *Measure Theory and Integration*, the image measures satisfy $d_W(\mu\circ S_i^{-1},\mu^{\mathrm{refl}}\circ S_i^{-1})\le r_i\,d_W(\mu,\mu^{\mathrm{refl}})$ because $S_i$ is $r_i$-Lipschitz, hence $d_W(\Phi\mu,\Phi\mu^{\mathrm{refl}})\le\max_i r_i\,d_W(\mu,\mu^{\mathrm{refl}})$. The ratio is $<1$, so $\Phi$ is a contraction and has a unique fixed point. For the identification: the coding map $\pi:\partial\mathcal{T}\to\Lambda$, $\pi(\xi)=\lim_n S_{\xi_1}\cdots S_{\xi_n}(x_0)$, is well defined and continuous, and the measure $\pi_*\nu_p$ satisfies the invariance equation because $\pi(x\xi)=S_x(\pi(\xi))$; uniqueness gives $\mu_p=\pi_*\nu_p$.
+*Proof sketch.* The map $\Phi(\mu)=\sum_i p_i\,\mu\circ S_i^{-1}$ preserves the set of Borel probability measures on the compact set $\Lambda$. On that set with the Wasserstein distance $d_W$ of *Measure Theory and Integration*, the image measures satisfy $d_W(\mu\circ S_i^{-1},\mu^{\mathrm{refl}}\circ S_i^{-1})\le r_i\,d_W(\mu,\mu^{\mathrm{refl}})$ because $S_i$ is $r_i$-Lipschitz, hence $d_W(\Phi\mu,\Phi\mu^{\mathrm{refl}})\le\max_i r_i\,d_W(\mu,\mu^{\mathrm{refl}})$. The ratio is $<1$, so $\Phi$ is a contraction and has a unique fixed point. For the identification: the coding map $\pi:\partial\mathcal{T}\to\Lambda$, $\pi(\zeta)=\lim_n S_{\zeta_1}\cdots S_{\zeta_n}(x_0)$, is well defined and continuous, and the measure $\pi_*\nu_p$ satisfies the invariance equation because $\pi(x\zeta)=S_x(\pi(\zeta))$; uniqueness gives $\mu_p=\pi_*\nu_p$.
 
 **Corollary (the masses of the pieces).** $\mu_p(S_i\Lambda)=p_i$, and more generally $\mu_p(S_{i_1}\cdots S_{i_n}\Lambda)=p_{i_1}\cdots p_{i_n}$; the self-similar measure is the Bernoulli measure read on the pieces.
 
@@ -84,7 +84,7 @@ $$
 \boxed{\;\dim_H\mu_p=\alpha=\frac{H(p)}{\chi}, \qquad H(p)=-\sum_i p_i\log p_i, \qquad \chi=\sum_i p_i\log\frac1{r_i}\;}.
 $$
 
-*Proof sketch.* The ball $B(\pi(\xi),\rho)$ with $r_{\xi_1}\cdots r_{\xi_{n+1}}\le\rho<r_{\xi_1}\cdots r_{\xi_n}$ contains the piece $S_{\xi_1}\cdots S_{\xi_{n+1}}\Lambda$ and is contained in a bounded number of pieces at the level $n$, so $\mu(B(\pi(\xi),\rho))\asymp p_{\xi_1}\cdots p_{\xi_n}$ and $\log\rho\approx-\sum_{i\le n}\log(1/r_{\xi_i})$. The numerator is $-\sum_{i\le n}\log p_{\xi_i}$ and the denominator is $\sum_{i\le n}\log(1/r_{\xi_i})$; both are Birkhoff sums of the shift, and the Shannon–McMillan–Breiman theorem of *Ergodic Theory* gives the ratio of the means. The constants are $H(p)/\chi$.
+*Proof sketch.* The ball $B(\pi(\zeta),\rho)$ with $r_{\zeta_1}\cdots r_{\zeta_{n+1}}\le\rho<r_{\zeta_1}\cdots r_{\zeta_n}$ contains the piece $S_{\zeta_1}\cdots S_{\zeta_{n+1}}\Lambda$ and is contained in a bounded number of pieces at the level $n$, so $\mu(B(\pi(\zeta),\rho))\asymp p_{\zeta_1}\cdots p_{\zeta_n}$ and $\log\rho\approx-\sum_{i\le n}\log(1/r_{\zeta_i})$. The numerator is $-\sum_{i\le n}\log p_{\zeta_i}$ and the denominator is $\sum_{i\le n}\log(1/r_{\zeta_i})$; both are Birkhoff sums of the shift, and the Shannon–McMillan–Breiman theorem of *Ergodic Theory* gives the ratio of the means. The constants are $H(p)/\chi$.
 
 **Corollary (the measure of maximal dimension).** If $s$ solves $\sum_i r_i^s=1$ and $p_i=r_i^s$, then $\dim_H\mu_p=s=\dim_H\Lambda$ and $\mu_p$ is, up to normalisation, the restriction of the Hausdorff measure $\mathcal{H}^s$ to $\Lambda$. If $s<\dim_H\Lambda$ then $s<H(p)/\chi$.
 
@@ -120,7 +120,7 @@ $$
 
 ## Summary
 
-The **Bernoulli measure** $\nu_p$ on the boundary $\partial\mathcal{T}=X^{\omega}$ of the rooted tree is defined by $\nu_p[x_1\cdots x_n]=p_{x_1}\cdots p_{x_n}$, it is the unique probability preserved by the shift, it is mixing, and its entropy $h(p)=-\sum_x p_x\log p_x$ is the almost-sure limit $-\tfrac1n\log\nu_p[\xi_1\cdots\xi_n]$ of the Shannon–McMillan–Breiman theorem. The **self-similar measure** is the unique solution of $\mu=\sum_i p_i\,\mu\circ S_i^{-1}$, obtained as the fixed point of a contraction on the probability measures and identified as the pushforward $\mu_p=\pi_*\nu_p$ of the Bernoulli measure by the coding map; its pieces have the masses $p_{i_1}\cdots p_{i_n}$, and its **exact dimension** is the ratio of the entropy to the Lyapunov exponent,
+The **Bernoulli measure** $\nu_p$ on the boundary $\partial\mathcal{T}=X^{\omega}$ of the rooted tree is defined by $\nu_p[x_1\cdots x_n]=p_{x_1}\cdots p_{x_n}$, it is the unique probability preserved by the shift, it is mixing, and its entropy $h(p)=-\sum_x p_x\log p_x$ is the almost-sure limit $-\tfrac1n\log\nu_p[\zeta_1\cdots\zeta_n]$ of the Shannon–McMillan–Breiman theorem. The **self-similar measure** is the unique solution of $\mu=\sum_i p_i\,\mu\circ S_i^{-1}$, obtained as the fixed point of a contraction on the probability measures and identified as the pushforward $\mu_p=\pi_*\nu_p$ of the Bernoulli measure by the coding map; its pieces have the masses $p_{i_1}\cdots p_{i_n}$, and its **exact dimension** is the ratio of the entropy to the Lyapunov exponent,
 $$
 \dim_H\mu_p=\frac{H(p)}{\chi},\qquad H(p)=-\sum_i p_i\log p_i,\qquad \chi=\sum_i p_i\log\frac1{r_i},
 $$

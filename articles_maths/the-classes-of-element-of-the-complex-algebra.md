@@ -40,7 +40,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 ## The Roots of the Distinguished Values
 
-**Definition.** A **root** of a value $W$ in a product is an element $Z$ with $Z^{2}=W$ in that product; a root of $-1$ is written $\Xi$.
+**Definition.** A **root** of a value $W$ in a product is an element $Z$ with $Z^{2}=W$ in that product; a root of $-1$ is written $Ζ$.
 
 **Theorem.** In the plain product the roots are as follows: of $-1$ exactly the two elements $i$ and $-i$; of $+1$ exactly the two elements $1$ and $-1$; of $0$ the element $0$ alone.
 
@@ -91,7 +91,7 @@ Read on the complex field, these classes of element are the classes of a field. 
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the general plain bilinear and the general plain sesquilinear product |
 | $\Pi$ | an idempotent, with no tilde in the complex layer |
 | $\Upsilon$ | a nilpotent, with no tilde in the complex layer |
-| $\Xi$ | a root of $-1$, with no tilde in the complex layer |
+| $Ζ$ | a root of $-1$, with no tilde in the complex layer |
 
 ## Further Reading
 

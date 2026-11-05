@@ -94,7 +94,7 @@ In particular, when $Q_t=0$, $W(t,B/2\pi)=e^{-t\tilde Q}$.
 
 **The root is pure.** The root $\rho=\vec Q/B$ has no scalar part. The central roots $\pm i$ are therefore never the root of a regular element; the dictionary always lands in the two pure families.
 
-**Two cuts.** In the root-adapted basis $(e_t,\rho,\nu,\xi)$ of §*Factorization into Complex Fourier Transforms*, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\xi)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*The Eigenbasis Is a Fourier Basis*.
+**Two cuts.** In the root-adapted basis $(e_t,\rho,\nu,\zeta)$ of §*Factorization into Complex Fourier Transforms*, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\zeta)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*The Eigenbasis Is a Fourier Basis*.
 
 **The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (*Continuity and Limits of the Biquaternion Exponential at the Spectral Cone*, §*The Closed Form and Its Limit* and §*The Fourier Dictionary at the Limit*).
 
@@ -166,7 +166,7 @@ $$
 \boxed{\; f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega \;}.
 $$
 
-**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
+**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \zeta\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
 
 ### The Plancherel Theorem
 
@@ -176,7 +176,7 @@ $$
 \boxed{\; \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega \;}.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \zeta\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
 
 **Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The $*$-unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The General Plain Sesqualgebra (gps) over $\mathbb{C}$*), and the transform remains a faithful change of description for every root.
 
@@ -190,38 +190,38 @@ $$
 
 ### The Change of Basis
 
-Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\xi$ such that
+Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\zeta$ such that
 
 $$
-\rho \perp \nu, \qquad \nu \perp \xi, \qquad \xi \perp \rho, \qquad \rho \nu = \xi.
+\rho \perp \nu, \qquad \nu \perp \zeta, \qquad \zeta \perp \rho, \qquad \rho \nu = \zeta.
 $$
 
-The four elements $\{e_t, \rho, \nu, \xi\}$ form a **complex orthonormal basis** of $\mathbb{B}$ for the biquaternion form $\mathrm{Sc}(x^{\natural}y)$, and for the Euclidean form $\mathrm{Sc}(xy^{*})$ exactly when $\rho^{*} = -\rho$; off the degenerate families it is a basis and not a Euclidean-orthonormal one, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$. Any biquaternion can be written in this basis as
+The four elements $\{e_t, \rho, \nu, \zeta\}$ form a **complex orthonormal basis** of $\mathbb{B}$ for the biquaternion form $\mathrm{Sc}(x^{\natural}y)$, and for the Euclidean form $\mathrm{Sc}(xy^{*})$ exactly when $\rho^{*} = -\rho$; off the degenerate families it is a basis and not a Euclidean-orthonormal one, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$. Any biquaternion can be written in this basis as
 
 $$
-\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
+\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\zeta \zeta,
 $$
 
-with $Q_t, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.
+with $Q_t, Q_\rho, Q_\nu, Q_\zeta \in \mathbb{C}$.
 
 ### The Factorization
 
 Writing the function $f$ in the new basis,
 
 $$
-f(t) = w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi,
+f(t) = w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\zeta(t) \zeta,
 $$
 
 and substituting into the transform with the closed form of the kernel, we obtain
 
 $$
-F(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, e_t - \sin(2\pi \omega t) \, \rho\right) \left(w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi\right) dt.
+F(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, e_t - \sin(2\pi \omega t) \, \rho\right) \left(w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\zeta(t) \zeta\right) dt.
 $$
 
 Expanding the product and collecting terms by basis element gives four sums:
 
 $$
-F(\omega) = F_0(\omega) e_t + F_\rho(\omega) \rho + F_\nu(\omega) \nu + F_\xi(\omega) \xi,
+F(\omega) = F_0(\omega) e_t + F_\rho(\omega) \rho + F_\nu(\omega) \nu + F_\zeta(\omega) \zeta,
 $$
 
 where
@@ -235,11 +235,11 @@ F_\rho(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, Q_\rho(t) 
 $$
 
 $$
-F_\nu(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, Q_\nu(t) + \sin(2\pi \omega t) \, Q_\xi(t)\right) dt,
+F_\nu(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, Q_\nu(t) + \sin(2\pi \omega t) \, Q_\zeta(t)\right) dt,
 $$
 
 $$
-F_\xi(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, Q_\xi(t) - \sin(2\pi \omega t) \, Q_\nu(t)\right) dt.
+F_\zeta(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, Q_\zeta(t) - \sin(2\pi \omega t) \, Q_\nu(t)\right) dt.
 $$
 
 ### The Complex Fourier Transforms
@@ -260,7 +260,7 @@ and $G_\bullet(t)$ are the complex coefficients of $f(t)$ in the new basis.
 
 Concretely, the factorization is the following procedure:
 
-1. **Change of basis.** For each $t$, write the function value $f(t)$ in the basis $\{e_t, \rho, \nu, \xi\}$, obtaining four complex functions $w(t), Q_\rho(t), Q_\nu(t), Q_\xi(t)$.
+1. **Change of basis.** For each $t$, write the function value $f(t)$ in the basis $\{e_t, \rho, \nu, \zeta\}$, obtaining four complex functions $w(t), Q_\rho(t), Q_\nu(t), Q_\zeta(t)$.
 2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex functions obtained by combining the coefficients as above. The result is four complex spectra.
 3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F(\omega)$.
 

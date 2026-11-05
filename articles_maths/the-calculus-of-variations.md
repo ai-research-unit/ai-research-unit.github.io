@@ -306,17 +306,17 @@ where $H$ is the Hamiltonian of the Legendre transform above and the conjugate m
 
 *Proof.* The derivative of $\mathcal{S}$ with respect to the endpoint is the boundary term obtained by differentiating the integral along the extremal: $\partial \mathcal{S}/\partial x = L - w'\partial L/\partial p$ and $\partial \mathcal{S}/\partial w = \partial L/\partial p$. Substituting $p^* = \partial L/\partial p = \partial \mathcal{S}/\partial w$ into the identity $L - w'\partial \mathcal{S}/\partial w$ and using the definition of $H$ as the Legendre transform gives $\partial \mathcal{S}/\partial x = -H(x,w,\partial \mathcal{S}/\partial w)$.
 
-**Theorem (Noether).** Let $G$ be a one-parameter group of transformations of the variables $(x,w)$ leaving the functional $J$ invariant, with infinitesimal generator $(\xi,\eta)$. Then the quantity
+**Theorem (Noether).** Let $G$ be a one-parameter group of transformations of the variables $(x,w)$ leaving the functional $J$ invariant, with infinitesimal generator $(\zeta,\eta)$. Then the quantity
 
 $$
-\boxed{\;N = \xi\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i\;}
+\boxed{\;N = \zeta\Bigl(L - \sum_iw_i'\partial L/\partial p_i\Bigr) + \sum_i\eta_i\partial L/\partial p_i\;}
 $$
 
 is constant along every solution of the Euler–Lagrange equation.
 
 *Proof.* Quoted as standard. The invariance of the integral under the group means that the derivative of $J$ with respect to the group parameter vanishes identically for every curve, not merely at an extremal; writing this derivative as an integral, integrating by parts and using the Euler–Lagrange equation leaves only the boundary term, which is the derivative of the displayed quantity.
 
-**Example (translation invariance).** For $L$ independent of $x$ the group is the translation $x\mapsto x+\varepsilon$ with $\xi=1$, $\eta=0$, and Noether's quantity is $L-\sum_iw_i'\partial L/\partial p_i$, the Beltrami first integral. For $L$ independent of a component $w_i$ the group is the translation of that component with $\eta_i=1$, and the conserved quantity is the conjugate momentum $\partial L/\partial p_i$. The Beltrami identity of the first section is thus the translation case of Noether's theorem.
+**Example (translation invariance).** For $L$ independent of $x$ the group is the translation $x\mapsto x+\varepsilon$ with $\zeta=1$, $\eta=0$, and Noether's quantity is $L-\sum_iw_i'\partial L/\partial p_i$, the Beltrami first integral. For $L$ independent of a component $w_i$ the group is the translation of that component with $\eta_i=1$, and the conserved quantity is the conjugate momentum $\partial L/\partial p_i$. The Beltrami identity of the first section is thus the translation case of Noether's theorem.
 
 ## Summary
 

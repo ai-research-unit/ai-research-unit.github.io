@@ -113,12 +113,12 @@ The reading is therefore a spectral reading of one four-vector, not a particle c
 
 ## The Frame Dependence
 
-The pair is frame-dependent and the product is not. Under a boost of rapidity $\xi$ along $\vec u_p$,
+The pair is frame-dependent and the product is not. Under a boost of rapidity $\zeta$ along $\vec u_p$,
 
 $$
-\nu_+\longmapsto e^{-\xi}\nu_+,
+\nu_+\longmapsto e^{-\zeta}\nu_+,
 \qquad
-\nu_-\longmapsto e^{+\xi}\nu_-,
+\nu_-\longmapsto e^{+\zeta}\nu_-,
 \qquad
 \nu_+\nu_-\longmapsto\nu_+\nu_-,
 $$
@@ -127,11 +127,11 @@ which is the Doppler rescaling written on the pair. Under a rotation the frequen
 
 | Change of frame | $\nu_+$ | $\nu_-$ | product |
 | --- | --- | --- | --- |
-| boost along $\vec p$ by $\xi$ | $e^{-\xi}\nu_+$ | $e^{+\xi}\nu_-$ | unchanged |
+| boost along $\vec p$ by $\zeta$ | $e^{-\zeta}\nu_+$ | $e^{+\zeta}\nu_-$ | unchanged |
 | rotation | unchanged | unchanged | unchanged |
 | general boost | $mc\,e^{\psi'}$ | $mc\,e^{-\psi'}$ | unchanged |
 
-The transformation law is the reason for the name. The two coefficients are the two Doppler factors, and a boost along the direction of motion multiplies one by $e^{-\xi}$ and the other by $e^{+\xi}$. The product is the mass squared, and it is the invariant of the pair.
+The transformation law is the reason for the name. The two coefficients are the two Doppler factors, and a boost along the direction of motion multiplies one by $e^{-\zeta}$ and the other by $e^{+\zeta}$. The product is the mass squared, and it is the invariant of the pair.
 
 ### The Rest Frame
 
@@ -278,8 +278,8 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 | $\psi$ | the rapidity of the momentum, $\cosh\psi=E/(mc)$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $Q_t=iE/c$ |
 | $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\psi}$ | the Doppler pair |
-| $\vec\Xi=-i\vec u_p$ | the pure root of $+1$ of the momentum |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)=\tfrac12(e_t\mp i\vec u_p)$ | the eigenprojections, Hermitian idempotents |
+| $\vec{Ζ}=-i\vec u_p$ | the pure root of $+1$ of the momentum |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\mp i\vec u_p)$ | the eigenprojections, Hermitian idempotents |
 | $\langle\tilde P\rangle_{\natural}=-m^2c^2$ | the biquaternion norm, the interval |
 | $k_\pm=i\,mc\,e^{\pm\psi}\tilde\Pi_\pm$ | the two null components of $\tilde P$ |
 

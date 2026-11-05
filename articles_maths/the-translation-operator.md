@@ -106,13 +106,13 @@ A_jf=\lim_{t\to0}\frac{\tau_{te_j}f-f}{t}=-\partial/\partial x_j\,f\;} ,
 $$
 the limit being in $L^2$. The operator $A_j$ is closed, densely defined, and skew-adjoint,
 $A_j^\dagger=-A_j$; under the Fourier operator it becomes multiplication by the purely imaginary function
-$2\pi i\xi_j$.
+$2\pi i\zeta_j$.
 
 **Proof.** On the Schwartz class the difference quotient converges to $-\partial/\partial x_j\,f$ in $L^2$ by Taylor's
 formula and the integrability of the second derivative. The operator $-\partial/\partial x_j$ is skew-adjoint because
 integration by parts gives $\langle-\partial/\partial x_j\,f,g\rangle=\langle f,\partial/\partial x_j\,g\rangle=\langle f,-(-\partial/\partial x_j)g\rangle$
 on $\mathcal S$, and $\mathcal S$ is a core. The identification with the Fourier side is
-$\mathcal F(-\partial/\partial x_j)\mathcal F^{-1}=M_{-2\pi i\xi_j}$, the differentiation identity of the Fourier
+$\mathcal F(-\partial/\partial x_j)\mathcal F^{-1}=M_{-2\pi i\zeta_j}$, the differentiation identity of the Fourier
 article with a sign. The exponential identity and the closedness are the content of Stone's theorem for a
 strongly continuous one-parameter unitary group, in *Semigroups and Evolution Equations*, later in this
 Part.
@@ -127,18 +127,18 @@ of $A_j$.
 ### The Characters as Eigenfunctions
 
 **Definition.** A **character** of $G$ is a continuous homomorphism $\chi:G\to\mathbb T$ into the circle
-group; on $\mathbb R^n$ the characters are $e_\xi(x)=\exp(2\pi ix\cdot\xi)$ for $\xi\in\mathbb R^n$, and on
+group; on $\mathbb R^n$ the characters are $e_\zeta(x)=\exp(2\pi ix\cdot\zeta)$ for $\zeta\in\mathbb R^n$, and on
 the circle they are $e_m(x)=\exp(2\pi imx)$ for $m\in\mathbb Z$.
 
 **Proposition.** Every character is an eigenfunction of every translation, with
 $$
-\boxed{\;\tau_g e_\xi=\overline{e_\xi(g)}\,e_\xi\;} .
+\boxed{\;\tau_g e_\zeta=\overline{e_\zeta(g)}\,e_\zeta\;} .
 $$
 Consequently the characters simultaneously diagonalise the whole representation, and the algebra generated
 by the translations is commutative.
 
-**Proof.** $\tau_ge_\xi(x)=e_\xi(x-g)=e_\xi(x)e_\xi(-g)=\overline{e_\xi(g)}e_\xi(x)$, using
-$e_\xi(-g)=\overline{e_\xi(g)}$ for a character.
+**Proof.** $\tau_ge_\zeta(x)=e_\zeta(x-g)=e_\zeta(x)e_\zeta(-g)=\overline{e_\zeta(g)}e_\zeta(x)$, using
+$e_\zeta(-g)=\overline{e_\zeta(g)}$ for a character.
 
 ### The Spectrum
 
@@ -148,9 +148,9 @@ finite group $G$ the translation $\tau_g$ has the characters as a basis of eigen
 the $\lvert G\rvert$-th roots of unity; on $\ell^2(\mathbb Z)$ the shift $S=\tau_1$ has spectrum $\mathbb T$
 and no eigenvalues.
 
-**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $\chi_y(\xi)=\exp(-2\pi iy\cdot\xi)$
+**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $\chi_y(\zeta)=\exp(-2\pi iy\cdot\zeta)$
 by *The Fourier Operator* of this group; the spectrum of a multiplication operator $M_m$ on $L^2$ is the
-essential range of $m$, and for $y\neq0$ the function $\xi\mapsto \exp(-2\pi iy\cdot\xi)$ sweeps the circle,
+essential range of $m$, and for $y\neq0$ the function $\zeta\mapsto \exp(-2\pi iy\cdot\zeta)$ sweeps the circle,
 so the essential range is $\mathbb T$. An eigenvalue would require $\chi_y$ to be constant on a set of positive
 measure, which it is not. On a finite group the characters form an orthonormal basis and the eigenvalues are
 $\overline{\chi(g)}$, roots of unity; on $\ell^2(\mathbb Z)$ the shift equation $Sf=\lambda f$ gives
@@ -210,8 +210,8 @@ isometry, and on $L^2$ a unitary; on $L^{n}(\mathbb R^n)$, $1\leq p<\infty$, it 
 group variable but not continuous in the operator norm, $\lVert\tau_y-\mathrm{id}\rVert=\sqrt2$ for
 $y\neq0$. Its
 infinitesimal generator on the one-parameter subgroup $t\mapsto\tau_{te_j}$ is the skew-adjoint operator
-$-\partial/\partial x_j$, which the Fourier operator turns into multiplication by $2\pi i\xi_j$; the characters are
-eigenfunctions of every translation, $\tau_ge_\xi=\overline{e_\xi(g)}e_\xi$, and they diagonalise the
+$-\partial/\partial x_j$, which the Fourier operator turns into multiplication by $2\pi i\zeta_j$; the characters are
+eigenfunctions of every translation, $\tau_ge_\zeta=\overline{e_\zeta(g)}e_\zeta$, and they diagonalise the
 representation, discretely on a finite group and in the spectral sense on $\mathbb R^n$ and $\mathbb Z$. The
 translation $\tau_y$ for $y\neq0$ is unitary with spectrum the unit circle and no eigenvalues on
 $L^2(\mathbb R^n)$. The operators commuting with all translations are exactly the multiplier operators, and
@@ -224,7 +224,7 @@ instance belongs to the group-theoretic category of this Part.
 |---|---|
 | $\tau_g$ | Translation, $(\tau_gf)(x)=f(g^{-1}x)$; $\tau_yf(x)=f(x-y)$ on $\mathbb R^n$ |
 | $\tau_y^\dagger=\tau_{-y}$ | Adjoint of a translation, a unitary on $L^2$ |
-| $e_\xi$, $e_m$ | Characters $\exp(2\pi ix\cdot\xi)$, $\exp(2\pi imx)$ |
+| $e_\zeta$, $e_m$ | Characters $\exp(2\pi ix\cdot\zeta)$, $\exp(2\pi imx)$ |
 | $S$ | Shift on $\ell^2(\mathbb Z)$, $S=\tau_1$ |
 | $A_j=-\partial/\partial x_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, skew-adjoint |
 | $\Delta_h=\tau_{-h}-\mathrm{id}$ | Forward difference, the discrete generator |

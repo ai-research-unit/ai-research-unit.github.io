@@ -8,25 +8,25 @@ Harmonic analysis over a hypercomplex system means the analysis of functions on 
 This is the general method. The explicit transforms, reproducing kernels, bases of spherical monogenics and $L^2$ decompositions of the particular systems — the complex numbers, the quaternions, the split and dual and biquaternion systems — are worked out in categories 26 to 29, and they are not repeated here. What is common to them is the shape of the analysis, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of *Hypercomplex Analysis*: $A$ is finite-dimensional of dimension $m$ over $\mathbb{R}$, with basis $e_t = 1, \dots, e_{m-1}$, and
 
 $$
-D = \partial/\partial x_0 + \sum_{k\geq1} B_k\partial/\partial x_k, \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1} B_k\xi_k, \qquad D\bar D = \bar D D = \Delta,
+D = \partial/\partial x_0 + \sum_{k\geq1} B_k\partial/\partial x_k, \qquad \sigma(\zeta) = \zeta_0 + \sum_{k\geq1} B_k\zeta_k, \qquad D\bar D = \bar D D = \Delta,
 $$
 
-with $B_jB_k + B_kB_j = -2\delta_{jk}$, $B_k^2 = -1$. The symbol $\sigma(\xi)$ and its reflected companion $\sigma^{\mathrm{refl}}(\xi)$ are those of *Regularity and the Cauchy–Riemann Operator*, and $E$ is a fundamental solution of $D$.
+with $B_jB_k + B_kB_j = -2\delta_{jk}$, $B_k^2 = -1$. The symbol $\sigma(\zeta)$ and its reflected companion $\sigma^{\mathrm{refl}}(\zeta)$ are those of *Regularity and the Cauchy–Riemann Operator*, and $E$ is a fundamental solution of $D$.
 
 ## The Additive Fourier Transform
 
-The additive group of $A$ is $\mathbb{R}^m$ through the fixed basis, and the real inner product $\langle \xi, x\rangle = \sum_\alpha \xi_\alpha x_\alpha$ identifies the dual of $A$ with $A$ itself. All functions in this section are complex-valued or $A$-valued and integrable as appropriate; the transform is taken componentwise.
+The additive group of $A$ is $\mathbb{R}^m$ through the fixed basis, and the real inner product $\langle \zeta, x\rangle = \sum_\alpha \zeta_\alpha x_\alpha$ identifies the dual of $A$ with $A$ itself. All functions in this section are complex-valued or $A$-valued and integrable as appropriate; the transform is taken componentwise.
 
 **Definition.** For $f \in L^1(A)$, the **Fourier transform** is
 
 $$
-(\mathcal F f)(\xi) = \int_A f(x)\, \exp(-i\langle\xi, x\rangle)\, dx,
+(\mathcal F f)(\zeta) = \int_A f(x)\, \exp(-i\langle\zeta, x\rangle)\, dx,
 $$
 
 and the inverse transform on a suitable Schwartz space is
 
 $$
-f(x) = \frac{1}{(2\pi)^m} \int_A (\mathcal F f)(\xi)\, \exp(\,i\langle\xi, x\rangle)\, d\xi.
+f(x) = \frac{1}{(2\pi)^m} \int_A (\mathcal F f)(\zeta)\, \exp(\,i\langle\zeta, x\rangle)\, d\zeta.
 $$
 
 For $A$-valued $f$ the transform is $A$-valued, the exponentials being scalar-valued.
@@ -34,7 +34,7 @@ For $A$-valued $f$ the transform is $A$-valued, the exponentials being scalar-va
 **Theorem (basic properties).** The Fourier transform extends to a unitary equivalence of $L^2(A)$ with itself up to the factor $(2\pi)^{-m/2}$ (Plancherel); it interchanges differentiation and multiplication by the coordinate,
 
 $$
-\widehat{\partial/\partial x_\alpha f}(\xi) = i\,\xi_\alpha \,(\mathcal F f)(\xi);
+\widehat{\partial/\partial x_\alpha f}(\zeta) = i\,\zeta_\alpha \,(\mathcal F f)(\zeta);
 $$
 
 and it turns the convolution
@@ -46,39 +46,39 @@ $$
 into the pointwise product with respect to the algebra multiplication of $A$,
 
 $$
-\widehat{(f * g)}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi).
+\widehat{(f * g)}(\zeta) = (\mathcal F f)(\zeta)\,(\mathcal F g)(\zeta).
 $$
 
-*Proof.* These are the standard properties of the Euclidean Fourier transform, applied componentwise; for the last, substitute $x = u + y$ and use $\langle \xi, u+y\rangle = \langle\xi,u\rangle + \langle\xi,y\rangle$.
+*Proof.* These are the standard properties of the Euclidean Fourier transform, applied componentwise; for the last, substitute $x = u + y$ and use $\langle \zeta, u+y\rangle = \langle\zeta,u\rangle + \langle\zeta,y\rangle$.
 
 The multiplication in the convolution theorem is the multiplication of $A$, so the convolution algebra $\bigl(L^1(A), *\bigr)$ is commutative exactly when $A$ is, and it is the algebra of translation-invariant operators.
 
-**Corollary.** A translation-invariant operator on $A$ is convolution with a distribution, and its Fourier multiplier is an $A$-valued function of $\xi$ acting by left multiplication. In particular $D$ is convolution with the distribution $\sum_\alpha B_\alpha\,\delta^{(\alpha)}$ and has multiplier $i\sigma(\xi)$.
+**Corollary.** A translation-invariant operator on $A$ is convolution with a distribution, and its Fourier multiplier is an $A$-valued function of $\zeta$ acting by left multiplication. In particular $D$ is convolution with the distribution $\sum_\alpha B_\alpha\,\delta^{(\alpha)}$ and has multiplier $i\sigma(\zeta)$.
 
 ### The Transforms of the Number Systems
 
 The transform above is attached to the additive group $\mathbb{R}^m$, which is the same group for every $A$; hence the operator is literally the same for $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}^{\mathrm{spl}}$ and $\mathbb{B}$, and what distinguishes the systems is the algebra in which convolution multiplies and, through it, the symbol. This is the sense in which the transform theory depends on the underlying additive group rather than on the multiplication, and it is the first thing to record about the particular systems.
 
-For a Clifford-type system the identity $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \sum_\alpha\xi_\alpha^2$ determines where the symbol fails to be invertible: it is invertible for every real $\xi \neq 0$ exactly when the quadratic form $\sum_\alpha\xi_\alpha^2$ is definite, and otherwise the set where it is not invertible is a genuine real variety contained in the isotropic cone. The systems of the corpus fall into the two cases as follows.
+For a Clifford-type system the identity $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = \sum_\alpha\zeta_\alpha^2$ determines where the symbol fails to be invertible: it is invertible for every real $\zeta \neq 0$ exactly when the quadratic form $\sum_\alpha\zeta_\alpha^2$ is definite, and otherwise the set where it is not invertible is a genuine real variety contained in the isotropic cone. The systems of the corpus fall into the two cases as follows.
 
-| $A$ | $m$ | $\sigma(\xi)$ | $\sigma(\xi)$ invertible iff | Real $\operatorname{Char}(D)$ |
+| $A$ | $m$ | $\sigma(\zeta)$ | $\sigma(\zeta)$ invertible iff | Real $\operatorname{Char}(D)$ |
 |---|---|---|---|---|
-| $\mathbb{C}$ | 2 | $\xi_0 + i\xi_1$ | $\xi \neq 0$ | $\{0\}$, elliptic |
-| $\mathbb{C}^{\mathrm{spl}}$ | 2 | $\xi_0 + j\xi_1$ | $\xi_0^2 \neq \xi_1^2$ | the two lines $\xi_0 = \pm\xi_1$ |
-| $\mathbb{C}^{\mathrm{dln}}$ | 2 | $\xi_0 + \varepsilon\xi_1$ | $\xi_0 \neq 0$ | the line $\xi_0 = 0$ |
-| $\mathbb{H}$ | 4 | $\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$ | $\xi \neq 0$ | $\{0\}$, elliptic |
-| $\mathbb{B}^{\mathrm{spl}}$ | 8 | $\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$ | $\xi \neq 0$ | $\{0\}$, elliptic |
-| $\mathbb{B}$ | 8 | $\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$ | $\xi \neq 0$ | $\{0\}$, elliptic |
+| $\mathbb{C}$ | 2 | $\zeta_0 + i\zeta_1$ | $\zeta \neq 0$ | $\{0\}$, elliptic |
+| $\mathbb{C}^{\mathrm{spl}}$ | 2 | $\zeta_0 + j\zeta_1$ | $\zeta_0^2 \neq \zeta_1^2$ | the two lines $\zeta_0 = \pm\zeta_1$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | 2 | $\zeta_0 + \varepsilon\zeta_1$ | $\zeta_0 \neq 0$ | the line $\zeta_0 = 0$ |
+| $\mathbb{H}$ | 4 | $\zeta_0 + \vec e_x\zeta_1 + \vec e_y\zeta_2 + \vec e_z\zeta_3$ | $\zeta \neq 0$ | $\{0\}$, elliptic |
+| $\mathbb{B}^{\mathrm{spl}}$ | 8 | $\zeta_0 + \vec e_x\zeta_1 + \vec e_y\zeta_2 + \vec e_z\zeta_3$ | $\zeta \neq 0$ | $\{0\}$, elliptic |
+| $\mathbb{B}$ | 8 | $\zeta_0 + \vec e_x\zeta_1 + \vec e_y\zeta_2 + \vec e_z\zeta_3$ | $\zeta \neq 0$ | $\{0\}$, elliptic |
 
 In the last two rows the algebra is eight-dimensional while the operator is built on the four-term quaternion frame $1, \vec e_x, \vec e_y, \vec e_z$; the remaining four real coordinates of the algebra enter the transform as parameters rather than as derivatives, and the ellipticity statement is about the four differentiated directions.
 
-In the four elliptic rows the symbol is invertible off the origin, so a left regular tempered distribution has Fourier transform supported at $\xi = 0$ and is therefore a polynomial, and a compactly supported left regular distribution vanishes — the vanishing theorem of the next section. On the elliptic systems the transform is thus a sharp but restricted tool, and the analysis of regular functions on unbounded domains is carried by the Cauchy representation below instead. In the two degenerate rows the symbol is not invertible on a real set of positive dimension, and the regularity condition becomes a support condition rather than a vanishing one: for $\mathbb{C}^{\mathrm{spl}}$ a left regular function has transform supported on the two lines $\xi_0 = \pm\xi_1$, the value on the line $\xi_0 = \xi_1$ lying in the null line $\mathbb{R}(1-j)$ and the value on the line $\xi_0 = -\xi_1$ in the null line $\mathbb{R}(1+j)$, which is the Fourier-side form of the fact that a regular function depends on one characteristic coordinate; for $\mathbb{C}^{\mathrm{dln}}$ the transform is supported on the hyperplane $\xi_0 = 0$: writing $\mathcal F f = \mathcal F f_0 + \varepsilon\mathcal F f_1$, the two equations $\xi_0\mathcal F f_0 = 0$ and $\xi_0\mathcal F f_1 + \xi_1\mathcal F f_0 = 0$ force the support into that hyperplane, and there they impose no restriction on the data. Indeed
+In the four elliptic rows the symbol is invertible off the origin, so a left regular tempered distribution has Fourier transform supported at $\zeta = 0$ and is therefore a polynomial, and a compactly supported left regular distribution vanishes — the vanishing theorem of the next section. On the elliptic systems the transform is thus a sharp but restricted tool, and the analysis of regular functions on unbounded domains is carried by the Cauchy representation below instead. In the two degenerate rows the symbol is not invertible on a real set of positive dimension, and the regularity condition becomes a support condition rather than a vanishing one: for $\mathbb{C}^{\mathrm{spl}}$ a left regular function has transform supported on the two lines $\zeta_0 = \pm\zeta_1$, the value on the line $\zeta_0 = \zeta_1$ lying in the null line $\mathbb{R}(1-j)$ and the value on the line $\zeta_0 = -\zeta_1$ in the null line $\mathbb{R}(1+j)$, which is the Fourier-side form of the fact that a regular function depends on one characteristic coordinate; for $\mathbb{C}^{\mathrm{dln}}$ the transform is supported on the hyperplane $\zeta_0 = 0$: writing $\mathcal F f = \mathcal F f_0 + \varepsilon\mathcal F f_1$, the two equations $\zeta_0\mathcal F f_0 = 0$ and $\zeta_0\mathcal F f_1 + \zeta_1\mathcal F f_0 = 0$ force the support into that hyperplane, and there they impose no restriction on the data. Indeed
 
 $$
-\mathcal F f_0 = \mathcal F u(\xi_1)\,\delta(\xi_0), \qquad \mathcal F f_1 = -i\,\mathcal F u'(\xi_1)\,\delta'(\xi_0) + \mathcal F w(\xi_1)\,\delta(\xi_0)
+\mathcal F f_0 = \mathcal F u(\zeta_1)\,\delta(\zeta_0), \qquad \mathcal F f_1 = -i\,\mathcal F u'(\zeta_1)\,\delta'(\zeta_0) + \mathcal F w(\zeta_1)\,\delta(\zeta_0)
 $$
 
-solves both equations for arbitrary one-variable distributions $\mathcal F u$ and $\mathcal F w$, the second equation using $\xi_0\delta' = -\delta$ together with the identity $\mathcal F u' = i\xi_1\mathcal F u$; these are the transforms of $f_0 = u(x_1)$ and $f_1 = w(x_1) - x_0u'(x_1)$, up to the normalisation constants of the transform. With $u$ and $w$ arbitrary the space of regular functions is therefore far larger than in the elliptic case. It is exactly this extra freedom that makes the transform useful for the two degenerate systems and sharp but restricted for the elliptic ones.
+solves both equations for arbitrary one-variable distributions $\mathcal F u$ and $\mathcal F w$, the second equation using $\zeta_0\delta' = -\delta$ together with the identity $\mathcal F u' = i\zeta_1\mathcal F u$; these are the transforms of $f_0 = u(x_1)$ and $f_1 = w(x_1) - x_0u'(x_1)$, up to the normalisation constants of the transform. With $u$ and $w$ arbitrary the space of regular functions is therefore far larger than in the elliptic case. It is exactly this extra freedom that makes the transform useful for the two degenerate systems and sharp but restricted for the elliptic ones.
 
 The explicit transforms, the reproducing kernels and the spherical monogenics of each system, together with the classical Plancherel theory those systems inherit, are developed in the articles of categories 26 to 29; what is recorded here is the shape they share and the rule that decides it, namely that the transform is that of the additive group and that the symbol of $D$ decides which frequencies survive regularity.
 
@@ -87,19 +87,19 @@ The explicit transforms, the reproducing kernels and the spherical monogenics of
 **Theorem (the Fourier image of the operator).** For a suitable function or distribution $f$,
 
 $$
-\boxed{\;\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi), \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1}B_k\xi_k\;},
+\boxed{\;\widehat{Df}(\zeta) = i\,\sigma(\zeta)\,(\mathcal F f)(\zeta), \qquad \sigma(\zeta) = \zeta_0 + \sum_{k\geq1}B_k\zeta_k\;},
 $$
 
 the multiplication being left multiplication in $A$. Hence $f$ is left regular if and only if
 
 $$
-\sigma(\xi)\,(\mathcal F f)(\xi) = 0 \qquad \text{for every } \xi.
+\sigma(\zeta)\,(\mathcal F f)(\zeta) = 0 \qquad \text{for every } \zeta.
 $$
 
 *Proof.* By linearity and the differentiation rule of the previous theorem,
 
 $$
-\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial/\partial x_\alpha f} = i\sum_\alpha B_\alpha\xi_\alpha \mathcal F f = i\,\sigma(\xi)\mathcal F f.
+\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial/\partial x_\alpha f} = i\sum_\alpha B_\alpha\zeta_\alpha \mathcal F f = i\,\sigma(\zeta)\mathcal F f.
 $$
 
 **Definition.** The **characteristic variety** of $D$ is
@@ -137,18 +137,18 @@ So the solution space of the Cauchy–Riemann operator consists of functions of 
 **Theorem (Fourier transform of the fundamental solution).** Let $E$ be a fundamental solution of $D$. Then, in the distributional sense,
 
 $$
-i\,\sigma(\xi)\,\mathcal F E(\xi) = 1,
+i\,\sigma(\zeta)\,\mathcal F E(\zeta) = 1,
 $$
 
 so away from the characteristic variety
 
 $$
-\mathcal F E(\xi) = \frac{\sigma^{\mathrm{refl}}(\xi)}{i\sum_\alpha \xi_\alpha^2} = \frac{\xi_0 - \sum_k B_k\xi_k}{i\sum_\alpha\xi_\alpha^2},
+\mathcal F E(\zeta) = \frac{\sigma^{\mathrm{refl}}(\zeta)}{i\sum_\alpha \zeta_\alpha^2} = \frac{\zeta_0 - \sum_k B_k\zeta_k}{i\sum_\alpha\zeta_\alpha^2},
 $$
 
 a distribution whose singular support is contained in $\operatorname{Char}(D)$.
 
-*Proof.* Fourier transforming $DE = \delta_0$ and using the multiplier rule of the previous section gives $i\sigma(\xi)\mathcal F E(\xi) = \hat\delta_0 = 1$, the identity being the constant function $1$. Multiplying by $\sigma^{\mathrm{refl}}(\xi)$ and using $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\xi_\alpha^2$ gives the displayed expression where $\sum_\alpha\xi_\alpha^2 \neq 0$.
+*Proof.* Fourier transforming $DE = \delta_0$ and using the multiplier rule of the previous section gives $i\sigma(\zeta)\mathcal F E(\zeta) = \hat\delta_0 = 1$, the identity being the constant function $1$. Multiplying by $\sigma^{\mathrm{refl}}(\zeta)$ and using $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\zeta_\alpha^2$ gives the displayed expression where $\sum_\alpha\zeta_\alpha^2 \neq 0$.
 
 **Theorem (explicit Cauchy kernel).** Let
 
@@ -256,11 +256,11 @@ $$
 (\mathcal{L}f)(s) = \int_A f(x)\,\exp(-\langle s, x\rangle)\,dx, \qquad s \in \mathbb{C}^m,
 $$
 
-holomorphic in the tube of convergence and reducing to the Fourier transform on the imaginary axis, $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi)$. The hypercomplex-specific feature is a rigidity on the side of compact support. A compactly supported left regular function on all of $A$ is zero (the corollary above), and more precisely the Fourier transform of a compactly supported $A$-valued distribution is entire of exponential type while the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ forces its support into the characteristic variety, so:
+holomorphic in the tube of convergence and reducing to the Fourier transform on the imaginary axis, $(\mathcal{L}f)(i\zeta) = (\mathcal F f)(\zeta)$. The hypercomplex-specific feature is a rigidity on the side of compact support. A compactly supported left regular function on all of $A$ is zero (the corollary above), and more precisely the Fourier transform of a compactly supported $A$-valued distribution is entire of exponential type while the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ forces its support into the characteristic variety, so:
 
 **Proposition.** If $f$ is a compactly supported left regular $A$-valued distribution, then $\mathcal{L}f = 0$ identically. Hence the Laplace theory of regular functions is a theory of functions on cones or of exponential growth.
 
-*Proof.* The Fourier transform $\mathcal F f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\mathcal F f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\xi) = (\mathcal F f)(\xi) = 0$ for all real $\xi$, and by analyticity $\mathcal{L}f = 0$.
+*Proof.* The Fourier transform $\mathcal F f$ is the restriction to $\mathbb{R}^m$ of an entire function of exponential type; the equation $\sigma(\omega)(\mathcal F f)(\omega) = 0$ holds on the open set where $\sigma$ is invertible, hence by analytic continuation on all of $\mathbb{C}^m$ off the complex characteristic variety, so $\mathcal F f$ vanishes on a dense open set and is identically zero. Then $(\mathcal{L}f)(i\zeta) = (\mathcal F f)(\zeta) = 0$ for all real $\zeta$, and by analyticity $\mathcal{L}f = 0$.
 
 So the Laplace theory of regular functions is a theory of functions on cones or of exponential growth, and its inversion is the classical contour inversion along a translate of the imaginary axis.
 
@@ -276,7 +276,7 @@ $$
 (Sh)(x) = \mathrm{p.v.}\int_{\partial\Omega}E(x-y)\,\nu_B(y)\,h(y)\,dS(y), \qquad x \in \partial\Omega,
 $$
 
-is the **Hilbert transform of the system**, and the jump formula of *Hypercomplex Integration* is the statement that the inside and outside Cauchy transforms differ by the identity. On the line the Hilbert transform satisfies $H^2 = -1$ and is an isometry of $L^2$, and its Fourier multiplier is $-i\,\mathrm{sgn}(\xi)$; these are the one-dimensional instances of the general theory below.
+is the **Hilbert transform of the system**, and the jump formula of *Hypercomplex Integration* is the statement that the inside and outside Cauchy transforms differ by the identity. On the line the Hilbert transform satisfies $H^2 = -1$ and is an isometry of $L^2$, and its Fourier multiplier is $-i\,\mathrm{sgn}(\zeta)$; these are the one-dimensional instances of the general theory below.
 
 **The Mellin transform.** For a function of one positive real variable the **Mellin transform** is
 
@@ -361,10 +361,10 @@ The contrast with the additive theory is exact. The additive group $\mathbb{R}^m
 When $A$ decomposes, so does the analysis. If $\vec e_x, \dots, e_r$ is a complete set of orthogonal central idempotents, then $A = \bigoplus_i A_i$ with $A_i = e_iA = Ae_i$, every $A$-valued function is the sum of its components $f_i = e_ife_i$, the Fourier transform acts componentwise,
 
 $$
-\mathcal F f = \sum_i \mathcal F f_i, \qquad \mathcal F f_i(\xi) \in A_i,
+\mathcal F f = \sum_i \mathcal F f_i, \qquad \mathcal F f_i(\zeta) \in A_i,
 $$
 
-and the convolution theorem is the convolution theorem in each subalgebra separately. The transform theory of $A$ is therefore the product of the transform theories of the $A_i$, and no information passes between the summands. For the number systems this is the explicit reduction: $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ reduces the analysis to two copies of the one-dimensional real theory, in the characteristic coordinates $\xi_\pm = x_0 \pm x_1$; the split biquaternions $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \times \mathbb{H}$ reduce to two copies of the quaternion theory; the reduced biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ reduces to **two copies of the complex theory**, and it is the one of these reductions that the signal-processing literature treats as a transform in its own right; and the dual numbers $\mathbb{C}^{\mathrm{dln}}$, which have no idempotents but a nilpotent, are analysed in the basis $1, \varepsilon$ by the same componentwise principle with $\varepsilon$-dependent terms. The biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ are simple, so they possess no central idempotents and no decomposition into a product, but they are a matrix algebra over the field $\mathbb{C}$: a $\mathbb{B}$-valued function is a $2\times2$ matrix of $\mathbb{C}$-valued functions, the additive Fourier transform acts entrywise, and the convolution theorem is the pointwise matrix product. The two reductions together cover every finite-dimensional semisimple $A$ over $\mathbb{R}$ or $\mathbb{C}$: by the structure theory of *Examples of Algebras*, such an algebra is a product of matrix algebras over division algebras, the product decomposes the analysis into factors, and each matrix factor is handled entrywise. This is the precise sense in which the harmonic analysis of a hypercomplex system reduces to the harmonic analysis of a division algebra, repeated according to the size of the matrix blocks, and it is the algebraic content of the obstruction that the zero divisors present.
+and the convolution theorem is the convolution theorem in each subalgebra separately. The transform theory of $A$ is therefore the product of the transform theories of the $A_i$, and no information passes between the summands. For the number systems this is the explicit reduction: $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ reduces the analysis to two copies of the one-dimensional real theory, in the characteristic coordinates $\zeta_\pm = x_0 \pm x_1$; the split biquaternions $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \times \mathbb{H}$ reduce to two copies of the quaternion theory; the reduced biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ reduces to **two copies of the complex theory**, and it is the one of these reductions that the signal-processing literature treats as a transform in its own right; and the dual numbers $\mathbb{C}^{\mathrm{dln}}$, which have no idempotents but a nilpotent, are analysed in the basis $1, \varepsilon$ by the same componentwise principle with $\varepsilon$-dependent terms. The biquaternions $\mathbb{B} \cong M_2(\mathbb{C})$ are simple, so they possess no central idempotents and no decomposition into a product, but they are a matrix algebra over the field $\mathbb{C}$: a $\mathbb{B}$-valued function is a $2\times2$ matrix of $\mathbb{C}$-valued functions, the additive Fourier transform acts entrywise, and the convolution theorem is the pointwise matrix product. The two reductions together cover every finite-dimensional semisimple $A$ over $\mathbb{R}$ or $\mathbb{C}$: by the structure theory of *Examples of Algebras*, such an algebra is a product of matrix algebras over division algebras, the product decomposes the analysis into factors, and each matrix factor is handled entrywise. This is the precise sense in which the harmonic analysis of a hypercomplex system reduces to the harmonic analysis of a division algebra, repeated according to the size of the matrix blocks, and it is the algebraic content of the obstruction that the zero divisors present.
 
 **The commutative four-dimensional case, and why it is the one engineering uses.** The transform of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ is the **discrete reduced biquaternion Fourier transform** of Pei, Chang and Ding (*IEEE Trans. Signal Processing* **52** (2004) 2012–2022), and the article is the corpus's worked instance of the general reduction above with both factors complex. An element of the algebra is written $T = A + Bj$ with $j^2 = +1$ and $A,B \in \mathbb{C}$; the two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$ split it as $\mathbb{C}\Pi_1\oplus\mathbb{C}\Pi_2$, a signal is the sum of its two components $T_\pm$, the transform acts componentwise, and the convolution theorem is the convolution theorem in each component separately — so a convolution in the algebra costs **two** ordinary complex convolutions, and a symmetric four-channel complex system that needs four of them needs two (the paper's own accounting, its §VI). Two kernel conventions are distinguished there and called *type 1* and *type 2*, the second chosen for its similarity to the ordinary complex transform. The reason this algebra and not a quaternion algebra is used is the commutativity, and the paper's introduction gives the corpus's own obstruction in engineering form: for quaternions the convolution of two signals cannot in general be computed as the product of their transforms in the frequency domain, so no convolution theorem is available, and the analysis of a quaternion linear time-invariant system is correspondingly difficult. What is bought there is bought at a price that is exactly the price of this section's decomposition: the norm is the ring-valued determinant $A^2 - B^2$, it vanishes on the two idempotents that perform the splitting, and the transform has no single magnitude to be stationary in. The same doubling applied once more gives the eight-dimensional commutative algebra of the paper's four-channel treatment, which is $\mathbb{C}^4$ in the idempotent basis and reduces the analysis to four copies of the complex theory.
 
@@ -387,15 +387,15 @@ The paper is a survey-level treatment and is used here for the criterion alone; 
 
 ## Summary
 
-The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean **Fourier transform** $(\mathcal F f)(\xi) = \int_A f(x)\exp(-i\langle\xi,x\rangle)dx$ intertwines differentiation with multiplication, turns **convolution** into the algebra product, and satisfies **Plancherel**. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\xi) = i\sigma(\xi)(\mathcal F f)(\xi)$, so a function is **left regular** exactly when $\sigma(\xi)(\mathcal F f)(\xi) = 0$ for all $\xi$. The **characteristic variety** $\operatorname{Char}(D) = \{\omega \in \mathbb{C}^m : \sum_\alpha\omega_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the **Ehrenpreis–Palamodov theorem**, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.
+The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean **Fourier transform** $(\mathcal F f)(\zeta) = \int_A f(x)\exp(-i\langle\zeta,x\rangle)dx$ intertwines differentiation with multiplication, turns **convolution** into the algebra product, and satisfies **Plancherel**. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\zeta) = i\sigma(\zeta)(\mathcal F f)(\zeta)$, so a function is **left regular** exactly when $\sigma(\zeta)(\mathcal F f)(\zeta) = 0$ for all $\zeta$. The **characteristic variety** $\operatorname{Char}(D) = \{\omega \in \mathbb{C}^m : \sum_\alpha\omega_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the **Ehrenpreis–Palamodov theorem**, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.
 
-The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\mathcal F E(\xi) = \sigma^{\mathrm{refl}}(\xi)/(i\sum_\alpha\xi_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = x^{\natural}/(\omega_{m-1}|x|^m)$ with $x^{\natural} = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.
+The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\mathcal F E(\zeta) = \sigma^{\mathrm{refl}}(\zeta)/(i\sum_\alpha\zeta_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = x^{\natural}/(\omega_{m-1}|x|^m)$ with $x^{\natural} = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.
 
 The Euclidean structure gives the **Fischer decomposition** $\mathcal{P}_\nu = \bigoplus_j |x|^{2j}\mathcal{H}_{\nu-2j}$ of homogeneous polynomials into harmonic pieces, of dimensions $\binom{\nu+m-1}{m-1} - \binom{\nu+m-3}{m-1}$; the **solid spherical monogenics** $\mathcal{M}_\nu = \mathcal{P}_\nu \cap \ker D$ refine it, they lie in $\mathcal{H}_\nu$, and $\dim\mathcal{M}_1 = m^2 - m$. A regular function on a ball has a convergent **Taylor expansion** in solid spherical monogenics, and for a Clifford-type system the traces on the sphere of different degrees are mutually orthogonal, which is the hypercomplex **Fourier series**. The **Cauchy transform** reproduces regular functions and is the projection of boundary data onto them, the harmonic-analytic counterpart of the Szegő projection.
 
-The Fourier transform is one of a family determined by the group on which it is taken. The **Laplace transform** $\mathcal{L}f(s) = \int_Af(x)\exp(-\langle s,x\rangle)dx$ is holomorphic in a tube and agrees with the Fourier transform on the imaginary axis, but $\mathcal{L}f = 0$ for every compactly supported left regular distribution, so the Laplace theory of regular functions is a theory on cones; the **Hilbert transform** is the principal value operator $S$ with the conormal Cauchy kernel, the boundary operator of the jump formula, and on the line it has multiplier $-i\,\mathrm{sgn}(\xi)$; the **Mellin transform** is the Fourier transform of the multiplicative group, it diagonalises the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial/\partial x_\alpha$, and it records the radial exponents $\nu, \nu-2, \dots$ of the Fischer decomposition and the single homogeneity degree $-(m-1)$ of the Cauchy kernel; the **Radon transform** satisfies the central-slice theorem and the intertwining $R(Df) = \sigma(\omega)\partial/\partial t(Rf)$, so the regular functions are superpositions of plane waves with frequencies on $\operatorname{Char}(D)$. The **Calderón–Zygmund theory** of singular integrals applies to $S$, whose kernel is homogeneous of degree $-(m-1)$ on the $(m-1)$-dimensional boundary with the singular part subtracted, and it gives the boundedness of the Cauchy transform on $L^{n}(\partial\Omega)$ with operator-valued kernels in the non-commutative case.
+The Fourier transform is one of a family determined by the group on which it is taken. The **Laplace transform** $\mathcal{L}f(s) = \int_Af(x)\exp(-\langle s,x\rangle)dx$ is holomorphic in a tube and agrees with the Fourier transform on the imaginary axis, but $\mathcal{L}f = 0$ for every compactly supported left regular distribution, so the Laplace theory of regular functions is a theory on cones; the **Hilbert transform** is the principal value operator $S$ with the conormal Cauchy kernel, the boundary operator of the jump formula, and on the line it has multiplier $-i\,\mathrm{sgn}(\zeta)$; the **Mellin transform** is the Fourier transform of the multiplicative group, it diagonalises the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial/\partial x_\alpha$, and it records the radial exponents $\nu, \nu-2, \dots$ of the Fischer decomposition and the single homogeneity degree $-(m-1)$ of the Cauchy kernel; the **Radon transform** satisfies the central-slice theorem and the intertwining $R(Df) = \sigma(\omega)\partial/\partial t(Rf)$, so the regular functions are superpositions of plane waves with frequencies on $\operatorname{Char}(D)$. The **Calderón–Zygmund theory** of singular integrals applies to $S$, whose kernel is homogeneous of degree $-(m-1)$ on the $(m-1)$-dimensional boundary with the singular part subtracted, and it gives the boundedness of the Cauchy transform on $L^{n}(\partial\Omega)$ with operator-valued kernels in the non-commutative case.
 
-In the **discrete case** the Fourier coefficients of a left regular function on a torus $A/\Gamma$ are supported on $\Gamma^* \cap \operatorname{Char}(D)$, so a lattice whose dual meets the isotropic cone only at the origin supports only constant regular functions; for a finite abelian group the transform is the discrete Fourier transform making $k[G] \cong \prod_\chi k$. Since the additive group of every $A$ is the same $\mathbb{R}^m$, the Euclidean transform of the systems differs only through the symbol: it is elliptic for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}^{\mathrm{spl}}$ and $\mathbb{B}$, where a left regular tempered distribution has transform supported at the origin, and it is a support condition on the two lines $\xi_0 = \pm\xi_1$ for $\mathbb{C}^{\mathrm{spl}}$ and on the hyperplane $\xi_0 = 0$ for $\mathbb{C}^{\mathrm{dln}}$. The **quaternion groups** show the non-commutative case: for a finite group the transform is matrix-valued, $(\mathcal F f)(\rho) = \sum_gf(g)\rho(g)$ with inversion and Plancherel summing over the irreducible representations weighted by $d_\rho = \dim V_\rho$, and for the finite quaternion group $Q_8$ it consists of the four characters of $Q_8/\{\pm1\}$ together with one two-dimensional component, while for the compact group $S^3$ of unit quaternions the **Peter–Weyl theorem** replaces the sum by the direct integral over representations of dimension $2\ell+1$. The convolution algebra $(L^1(A),*)$ contains $A$ as the measures at the origin, so its zero divisors are those of $A$, and it is commutative exactly when $A$ is. When $A$ has a complete set of orthogonal central idempotents the Fourier transform acts componentwise and the analysis splits as the product of the analyses of the subalgebras $A_i = e_iA = Ae_i$; a simple matrix algebra such as $\mathbb{B} \cong M_2(\mathbb{C})$ is instead handled entrywise, and the two reductions together reduce the harmonic analysis of any finite-dimensional semisimple $A$ to that of a division algebra, repeated over the matrix blocks. The same idempotents decide a second question of the same kind: a purely non-real subspace closed under multiplication and carrying its own exponentials, Schrödinger-type equation and two-way Fourier transform must be a subalgebra isomorphic to $\mathbb{C}$ whose identity is an idempotent different from $1$, hence an ideal with a zero divisor as identity — a condition satisfied by the four-dimensional commutative algebra and by no division algebra.
+In the **discrete case** the Fourier coefficients of a left regular function on a torus $A/\Gamma$ are supported on $\Gamma^* \cap \operatorname{Char}(D)$, so a lattice whose dual meets the isotropic cone only at the origin supports only constant regular functions; for a finite abelian group the transform is the discrete Fourier transform making $k[G] \cong \prod_\chi k$. Since the additive group of every $A$ is the same $\mathbb{R}^m$, the Euclidean transform of the systems differs only through the symbol: it is elliptic for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}^{\mathrm{spl}}$ and $\mathbb{B}$, where a left regular tempered distribution has transform supported at the origin, and it is a support condition on the two lines $\zeta_0 = \pm\zeta_1$ for $\mathbb{C}^{\mathrm{spl}}$ and on the hyperplane $\zeta_0 = 0$ for $\mathbb{C}^{\mathrm{dln}}$. The **quaternion groups** show the non-commutative case: for a finite group the transform is matrix-valued, $(\mathcal F f)(\rho) = \sum_gf(g)\rho(g)$ with inversion and Plancherel summing over the irreducible representations weighted by $d_\rho = \dim V_\rho$, and for the finite quaternion group $Q_8$ it consists of the four characters of $Q_8/\{\pm1\}$ together with one two-dimensional component, while for the compact group $S^3$ of unit quaternions the **Peter–Weyl theorem** replaces the sum by the direct integral over representations of dimension $2\ell+1$. The convolution algebra $(L^1(A),*)$ contains $A$ as the measures at the origin, so its zero divisors are those of $A$, and it is commutative exactly when $A$ is. When $A$ has a complete set of orthogonal central idempotents the Fourier transform acts componentwise and the analysis splits as the product of the analyses of the subalgebras $A_i = e_iA = Ae_i$; a simple matrix algebra such as $\mathbb{B} \cong M_2(\mathbb{C})$ is instead handled entrywise, and the two reductions together reduce the harmonic analysis of any finite-dimensional semisimple $A$ to that of a division algebra, repeated over the matrix blocks. The same idempotents decide a second question of the same kind: a purely non-real subspace closed under multiplication and carrying its own exponentials, Schrödinger-type equation and two-way Fourier transform must be a subalgebra isomorphic to $\mathbb{C}$ whose identity is an idempotent different from $1$, hence an ideal with a zero divisor as identity — a condition satisfied by the four-dimensional commutative algebra and by no division algebra.
 
 ## Summary of Notation
 
@@ -403,9 +403,9 @@ In the **discrete case** the Fourier coefficients of a left regular function on 
 |---|---|
 | $A$ | Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$ |
 | $D = \partial/\partial x_0 + \sum_kB_k\partial/\partial x_k$ | Cauchy–Riemann operator |
-| $\sigma(\xi) = \sum_\alpha B_\alpha\xi_\alpha$ | Symbol of $D$ |
-| $(\mathcal F f)(\xi)$ | Euclidean Fourier transform of $f$ |
-| $\langle\xi,x\rangle = \sum_\alpha\xi_\alpha x_\alpha$ | Real inner product, not the algebra product |
+| $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ | Symbol of $D$ |
+| $(\mathcal F f)(\zeta)$ | Euclidean Fourier transform of $f$ |
+| $\langle\zeta,x\rangle = \sum_\alpha\zeta_\alpha x_\alpha$ | Real inner product, not the algebra product |
 | $f * g$ | Convolution, $\widehat{f*g} = \mathcal F f\mathcal F g$ |
 | $\operatorname{Char}(D)$ | Characteristic variety, the complex isotropic cone |
 | $A_\mathbb{C} = A\otimes_\mathbb{R}\mathbb{C}$ | Complexification of $A$ |
@@ -415,7 +415,7 @@ In the **discrete case** the Fourier coefficients of a left regular function on 
 | $\nu_B = \sum_\alpha\nu_\alpha B_\alpha$ | Conormal element |
 | $\mathcal{C}h$ | Cauchy transform of a boundary datum |
 | $E$ | Fundamental solution / Cauchy kernel |
-| $\mathcal F E$ | Fourier transform of the kernel, $\mathcal F E = \sigma^{\mathrm{refl}}/(i\sum_\alpha\xi_\alpha^2)$ off $\operatorname{Char}(D)$ |
+| $\mathcal F E$ | Fourier transform of the kernel, $\mathcal F E = \sigma^{\mathrm{refl}}/(i\sum_\alpha\zeta_\alpha^2)$ off $\operatorname{Char}(D)$ |
 | $\Phi$ | Fundamental solution of the Laplacian, $E = \bar D\Phi$ |
 | $x^{\natural} = x_0 - \sum_kB_kx_k$ | Clifford conjugate of the variable |
 | $\omega_{m-1} = 2\pi^{m/2}/\Gamma(m/2)$ | Surface area of the unit sphere in $\mathbb{R}^m$ |

@@ -19,19 +19,22 @@ The prerequisites are *The Prime Number Theorem*, written immediately above, for
 
 **Definition.** The **completed zeta function** is
 $$
-\xi(s) = \tfrac12 s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s), \qquad \Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s),
+\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s),
 $$
-and the **Riemann $\Xi$ function** is $\Xi(t) = \xi(\tfrac12+it)$.
+and the **Riemann $Ζ$ function** is the entire product $\tfrac12 s(s-1)\Lambda(s)$ read on the critical line,
+$$
+Ζ(t) = \tfrac12 s(s-1)\Lambda(s)\Big|_{s=\frac12+it} = -\tfrac12\Bigl(t^2+\tfrac14\Bigr)\Lambda\Bigl(\tfrac12+it\Bigr).
+$$
 
-**Theorem.** The function $\xi$ is entire of order $1$, it satisfies $\xi(s) = \xi(1-s)$, it is real on the real axis, and $\Xi$ is real and even for real $t$. The zeros of $\xi$ are exactly the nontrivial zeros of $\zeta$, and
+**Theorem.** The product $\tfrac12 s(s-1)\Lambda(s)$ is entire of order $1$, it satisfies the symmetry $s\mapsto 1-s$, it is real on the real axis, and $Ζ$ is real and even for real $t$. Its zeros are exactly the nontrivial zeros of $\zeta$, and
 $$
-\boxed{\;\text{RH} \iff \text{every zero of } \Xi \text{ is real} \iff \xi(s)\neq0 \text{ for } \Re s > \tfrac12\;} .
+\boxed{\;\text{RH} \iff \text{every zero of } Ζ \text{ is real} \iff \zeta(s)\neq0 \text{ for } \Re s > \tfrac12\;} .
 $$
-**Proof.** The function $s(s-1)$ removes the pole of $\zeta$ at $s=1$ and the trivial zero at $s=0$; the factor $\Gamma(s/2)$ removes the trivial zeros at the negative even integers; what remains is entire by the functional equation of *Zeta Functions*, which reads $\xi(s)=\xi(1-s)$ in these variables, and the order and the reality on the line follow from the Hadamard factorisation and from the functional equation, which for real $s$ exhibits $\xi$ as real. The equivalence of the three statements is a rewriting of the definitions.
+**Proof.** The factor $s(s-1)$ removes the pole of $\Lambda$ at $s=1$ and at $s=0$; the factor $\Gamma(s/2)$ inside $\Lambda$ cancels the trivial zeros of $\zeta$ at the negative even integers; what remains is entire by the functional equation of *Zeta Functions*, which reads $\Lambda(s)=\Lambda(1-s)$ in these variables, and the order and the reality on the line follow from the Hadamard factorisation and from the functional equation, which for real $s$ exhibits $\Lambda$ as real. The equivalence of the three statements is a rewriting of the definitions.
 
-**Remark (Riemann's original formulation).** Riemann's 1859 paper states the hypothesis as the reality of the roots of $\Xi$, with the product representation
+**Remark (Riemann's original formulation).** Riemann's 1859 paper states the hypothesis as the reality of the roots of $Ζ$, with the product representation
 $$
-\Xi(t) = \Xi(0)\prod_{\alpha}\Bigl(1-\frac{t^2}{\alpha^2}\Bigr),
+Ζ(t) = Ζ(0)\prod_{\alpha}\Bigl(1-\frac{t^2}{\alpha^2}\Bigr),
 $$
 the product over the roots $\alpha$ in the upper half-plane, the convergence of the product being the statement that $\sum \lvert\alpha\rvert^{-2}<\infty$, which follows from the order $1$ and the evenness. The hypothesis in this form is the assertion that every $\alpha$ is real.
 
@@ -43,7 +46,7 @@ $$
 $$
 where $S(T) = \frac1\pi\arg\zeta(\tfrac12+iT) = O(\log T)$ unconditionally, and $S(T) = O(\log T/\log\log T)$ under the hypothesis.
 
-**Proof sketch.** The argument principle applied to $\xi$ along the rectangle with corners $\tfrac12\pm iT$, $-\tfrac12\pm iT$: the variation of the argument along the vertical sides contributes the main term, the horizontal sides contribute $O(\log T)$ by the functional equation and the Stirling estimate, and the contribution of the real zeros is $O(\log T)$; one arrives at the stated main term with the constant $7/8$ from the explicit evaluation.
+**Proof sketch.** The argument principle applied to $\zeta$ along the rectangle with corners $\tfrac12\pm iT$, $-\tfrac12\pm iT$: the variation of the argument along the vertical sides contributes the main term, the horizontal sides contribute $O(\log T)$ by the functional equation and the Stirling estimate, and the contribution of the real zeros is $O(\log T)$; one arrives at the stated main term with the constant $7/8$ from the explicit evaluation.
 
 **Remark (the density of the zeros).** The formula shows that the number of zeros with $\gamma$ up to $T$ grows like $\frac{T}{2\pi}\log\frac{T}{2\pi}$, so that the mean spacing of consecutive $\gamma$'s near height $T$ is $2\pi/\log(T/2\pi)$; at $T=50$ this is about $3.0$, while the average of the nine gaps among the first ten zeros below — the gaps themselves ranging from $1.769$ to $6.887$ — is about $3.96$. It also shows that infinitely many nontrivial zeros exist, a statement first proved by Riemann and Hadamard by this argument, and it explains why the numerical verification of the hypothesis is a matter of counting.
 
@@ -103,13 +106,13 @@ for the function $Z(t) = \exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$, 
 
 ### Positivity and Hilbert-Space Formulations
 
-**Definition.** Let $\xi$ be the completed zeta function and, for $n\geq1$, let
+**Definition.** Let $\zeta$ be the completed zeta function and, for $n\geq1$, let
 $$
-\lambda_n = \frac{1}{(n-1)!}\frac{d^n}{ds^n}\Bigl[s^{n-1}\log\xi(s)\Bigr]_{s=1} .
+\lambda_n = \frac{1}{(n-1)!}\frac{d^n}{ds^n}\Bigl[s^{n-1}\log\zeta(s)\Bigr]_{s=1} .
 $$
 **Theorem (Li's criterion).** $\lambda_n = \sum_{\rho}\bigl(1-(1-1/\rho)^n\bigr)$, the sum over the nontrivial zeros, and the Riemann hypothesis is equivalent to $\lambda_n\geq0$ for every $n\geq1$.
 
-**Proof sketch.** Expanding the logarithm of the Hadamard product for $\xi$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.
+**Proof sketch.** Expanding the logarithm of the Hadamard product for $\zeta$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.
 
 **Theorem (Nyman–Beurling criterion).** For $0<\vartheta^{\mathrm{nym}}<1$ let $\rho_\vartheta^{\mathrm{nym}}(x) = \{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\vartheta^{\mathrm{nym}}$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.
 
@@ -125,9 +128,9 @@ where the convolution is on the additive group of the line. The criterion is the
 $$
 H_\lambda(u) = \int_0^\infty \exp(\lambda v^2)\,\Phi(v)\cos(uv)\,dv, \qquad \Phi(v) = \sum_{n\geq1}\bigl(2\pi^2n^4\exp(9v/2)-3\pi n^2\exp(5v/2)\bigr)\exp(-\pi n^2\exp(2v)) ,
 $$
-so that $H_0$ is the Riemann $\Xi$ function in the variable $u$; let $\Lambda$ be the infimum of the $\lambda$ for which all the zeros of $H_\lambda$ are real.
+so that $H_0$ is the Riemann $Ζ$ function in the variable $u$; let $\Lambda^{\mathrm{nwn}}$ be the infimum of the $\lambda$ for which all the zeros of $H_\lambda$ are real.
 
-**Theorem (de Bruijn, Newman).** $\Lambda \leq \tfrac12$: the function $H_\lambda$ has only real zeros for every $\lambda\geq\tfrac12$, by de Bruijn. The Riemann hypothesis is equivalent to $\Lambda\leq0$.
+**Theorem (de Bruijn, Newman).** $\Lambda^{\mathrm{nwn}} \leq \tfrac12$: the function $H_\lambda$ has only real zeros for every $\lambda\geq\tfrac12$, by de Bruijn. The Riemann hypothesis is equivalent to $\Lambda^{\mathrm{nwn}}\leq0$.
 
 **Theorem (Rodgers–Tao).** $\Lambda\geq0$, so that the Riemann hypothesis is equivalent to $\Lambda = 0$.
 
@@ -211,7 +214,7 @@ $$
 
 ## Summary
 
-The Riemann hypothesis asserts that every nontrivial zero $\rho = \beta+i\gamma$ of the zeta function satisfies $\beta=\tfrac12$. By the functional equation and the removal of the pole and the trivial zeros, it is the statement that the entire function $\xi(s) = \tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ has all its zeros on the critical line, equivalently that the Riemann $\Xi$ function $\Xi(t) = \xi(\tfrac12+it)$ has only real zeros. There are $N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e}+\frac78+S(T)+O(T^{-1})$ zeros with $0<\gamma\leq T$, where $S(T) = O(\log T)$ unconditionally and $O(\log T/\log\log T)$ under the hypothesis, so that the mean spacing near height $T$ is $2\pi/\log(T/2\pi)$; the hypothesis has been verified for ranges of the order of $10^{13}$ zeros, the first ten ordinates being $14.134725$, $21.022040$, $25.010858$, $30.424876$, $32.935062$, $37.586178$, $40.918719$, $43.327073$, $48.005151$, $49.773832$.
+The Riemann hypothesis asserts that every nontrivial zero $\rho = \beta+i\gamma$ of the zeta function satisfies $\beta=\tfrac12$. By the functional equation and the removal of the pole and the trivial zeros, it is the statement that the entire function $\tfrac12s(s-1)\Lambda(s) = \tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ has all its zeros on the critical line, equivalently that the Riemann $Ζ$ function $Ζ(t) = \tfrac12 s(s-1)\Lambda(s)$ at $s=\tfrac12+it$ has only real zeros. There are $N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e}+\frac78+S(T)+O(T^{-1})$ zeros with $0<\gamma\leq T$, where $S(T) = O(\log T)$ unconditionally and $O(\log T/\log\log T)$ under the hypothesis, so that the mean spacing near height $T$ is $2\pi/\log(T/2\pi)$; the hypothesis has been verified for ranges of the order of $10^{13}$ zeros, the first ten ordinates being $14.134725$, $21.022040$, $25.010858$, $30.424876$, $32.935062$, $37.586178$, $40.918719$, $43.327073$, $48.005151$, $49.773832$.
 
 The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x$ and to $O(\sqrt x\log x)$ in $\pi(x)-\mathrm{Li}(x)$, equivalently to $O(x^{1/2+\epsilon})$ in either; to the bound $O(x^{1/2+\epsilon})$ for the summatory Möbius function; to Robin's inequality $\sigma(n)<\exp(\gamma) n\log\log n$ for $n\geq5041$ and to Lagarias' inequality for the harmonic numbers; to the nonnegativity of all the Li coefficients; to the Nyman–Beurling density condition in $L^2(0,\infty)$; to Weil's positivity $W(h*h^{\mathrm{refl}})\geq0$ for every Schwartz function $h$; and to the vanishing of the de Bruijn–Newman constant, whose nonnegativity was proved by Rodgers and Tao. Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, Littlewood showed that $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, the Mertens conjecture $M(x)=O(\sqrt x)$ is false by Odlyzko and te Riele, and the best known zero-free region is $\sigma>1-c/(\log\lvert t\rvert)^{2/3}(\log\log\lvert t\rvert)^{1/3}$. Hardy proved that infinitely many zeros lie on the critical line, Selberg that a positive proportion do, and the proportion is known to be at least five twelfths; Montgomery's pair correlation conjecture predicts the local statistics of the zeros and its limiting kernel is that of the Gaussian unitary ensemble, in agreement with the numerical computations. The hypothesis implies the Lindelöf hypothesis and the density hypothesis, and it implies the effective statements about primes in arithmetic progressions, the least quadratic nonresidue, and the generalised statements over number fields; it is a theorem for the zeta functions of curves and varieties over finite fields, by Weil and by Deligne, where the proof is a positivity statement of intersection theory.
 
@@ -221,8 +224,8 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 |---|---|
 | $\rho = \beta+i\gamma$ | Nontrivial zero of $\zeta$, its real and imaginary parts |
 | critical strip, critical line | $0<\Re s<1$, $\Re s=\tfrac12$ |
-| $\xi(s)$ | Completed function $\tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
-| $\Xi(t) = \xi(\tfrac12+it)$ | Riemann $\Xi$ function, real for real $t$ |
+| $\tfrac12s(s-1)\Lambda(s)$ | Entire completed product, $\tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$, invariant under $s\mapsto1-s$ |
+| $Ζ(t) = \tfrac12s(s-1)\Lambda(s)$ at $s=\tfrac12+it$ | Riemann $Ζ$ function, real for real $t$ |
 | $\Lambda(s)$ | $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
 | $N(T)$, $N(\sigma,T)$ | Number of zeros with $0<\gamma\leq T$; with $\beta>\sigma$, $\lvert\gamma\rvert\leq T$ |
 | $S(T)$ | $\frac1\pi\arg\zeta(\tfrac12+iT)$, the fluctuation in the count |
@@ -241,7 +244,7 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 
 ## Further Reading
 
-- Bernhard Riemann, *Über die Anzahl der Primzahlen unter einer gegebenen Größe* (Monatsberichte der Berliner Akademie, 1859), for the original statement, the product for $\Xi$ and the explicit formula.
+- Bernhard Riemann, *Über die Anzahl der Primzahlen unter einer gegebenen Größe* (Monatsberichte der Berliner Akademie, 1859), for the original statement, the product for $Ζ$ and the explicit formula.
 - G. H. Hardy, *Sur les zéros de la fonction $\zeta(s)$ de Riemann* (Comptes Rendus de l'Académie des Sciences 158, 1914), for the infinitude of the zeros on the critical line.
 - Atle Selberg, *On the zeros of Riemann's zeta-function* (Skrifter utgitt av Det Norske Videnskaps-Akademi i Oslo 10, 1942), for the positive proportion of the zeros on the line.
 - Norman Levinson, *More than one third of the zeros of Riemann's zeta-function are on $\sigma=1/2$* (Advances in Mathematics 13, 1974), and J. B. Conrey, *More than two fifths of the zeros of the Riemann zeta function are on the critical line* (Journal für die reine und angewandte Mathematik 399, 1989), for the successive improvements of the proportion.

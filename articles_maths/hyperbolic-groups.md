@@ -89,18 +89,18 @@ so that a quasi-geodesic is a quasi-isometric embedding of an interval; it is a 
 
 ### Visual Metrics
 
-**Definition.** Let $X$ be a proper hyperbolic space with base point $p$ and let $\varepsilon > 0$ be small. For $\xi \neq \eta \in \partial X$ let
+**Definition.** Let $X$ be a proper hyperbolic space with base point $p$ and let $\varepsilon > 0$ be small. For $\zeta \neq \eta \in \partial X$ let
 
 $$
-\rho_\varepsilon(\xi,\eta) = \exp(-\varepsilon(\xi\vert\eta)_p) ,
+\rho_\varepsilon(\zeta,\eta) = \exp(-\varepsilon(\zeta\vert\eta)_p) ,
 $$
 
-where $(\xi\vert\eta)_p$ is the Gromov product of two representatives. For $\varepsilon$ sufficiently small, $(\xi,\eta) \mapsto \rho_\varepsilon(\xi,\eta)$ is comparable to a metric on $\partial X$ that induces the boundary topology; the resulting metrics are the **visual metrics**, and they are pairwise Hölder equivalent for different choices of $\varepsilon$ and of the base point.
+where $(\zeta\vert\eta)_p$ is the Gromov product of two representatives. For $\varepsilon$ sufficiently small, $(\zeta,\eta) \mapsto \rho_\varepsilon(\zeta,\eta)$ is comparable to a metric on $\partial X$ that induces the boundary topology; the resulting metrics are the **visual metrics**, and they are pairwise Hölder equivalent for different choices of $\varepsilon$ and of the base point.
 
 **Theorem (quasi-symmetry).** A quasi-isometry $f : X \to Y$ of proper hyperbolic spaces induces a homeomorphism of boundaries which is **quasi-symmetric** with respect to visual metrics: there is a control function $\eta : [0,\infty) \to [0,\infty)$ with $\eta(t) \to 0$ as $t \to 0$ such that
 
 $$
-\boxed{\;\frac{d(\xi_1,\xi_2)}{d(\xi_1,\xi_3)} < t \;\Longrightarrow\; \frac{d(f\xi_1,f\xi_2)}{d(f\xi_1,f\xi_3)} < \eta(t)\;}
+\boxed{\;\frac{d(\zeta_1,\zeta_2)}{d(\zeta_1,\zeta_3)} < t \;\Longrightarrow\; \frac{d(f\zeta_1,f\zeta_2)}{d(f\zeta_1,f\zeta_3)} < \eta(t)\;}
 $$
 
 for all triples of distinct boundary points. The quasi-symmetric structure of the boundary is therefore a quasi-isometry invariant finer than the topology, and it is the invariant used in the rigidity theorems.
@@ -213,7 +213,7 @@ A finitely generated group is hyperbolic when its Cayley graph is. Hyperbolic gr
 | Morse lemma | Quasi-geodesics stay in an $R(\delta,\lambda,C)$-neighbourhood of geodesics |
 | $\partial X$ | Boundary at infinity: asymptotic classes of geodesic rays |
 | $\overline{X} = X\cup\partial X$ | Compactification of a proper hyperbolic space |
-| visual metric | Metric on $\partial X$ from $\exp(-\varepsilon(\xi\vert\eta)_p)$ |
+| visual metric | Metric on $\partial X$ from $\exp(-\varepsilon(\zeta\vert\eta)_p)$ |
 | quasi-symmetry | Distortion control of the boundary map induced by a quasi-isometry |
 | $\partial\Gamma$ | Boundary of a hyperbolic group, well defined up to homeomorphism |
 | $\tau(\gamma) = \inf_x d(x,\gamma x)$ | Translation length of an isometry |

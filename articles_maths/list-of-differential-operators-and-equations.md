@@ -9,37 +9,37 @@ This article lists the differential operators and the differential equations the
 
 | Object | Its order, symbol and setting | Introduced in |
 |---|---|---|
-| the derivative and the Fréchet derivative | order $1$; symbol $\sigma(D)(\xi) = i\xi$; the differential of a map between normed spaces | *Differential Calculus on Normed Spaces* |
-| the gradient, divergence and curl | order $1$; the symbols $\xi$, $\langle\xi,\cdot\rangle$ and $\xi\times\cdot$; the operators of the vector calculus, and the Laplacian as $\operatorname{div}\nabla$ | *Differential Forms and Stokes' Theorem* |
-| the exterior derivative $d$ | order $1$; symbol the exterior multiplication by $i\xi$; the operator of the de Rham complex, with $d^2=0$ | *Differential Forms and Stokes' Theorem* |
-| the Laplacian $\Delta$ | order $2$; symbol $-\lvert\xi\rvert^2$; the elliptic operator of the corpus, with $\Delta = \operatorname{div}\nabla$ | *Partial Differential Equations*; *Harmonic Maps* |
-| the d'Alembertian $\Box = \partial^2/\partial t^2 - \Delta$ | order $2$; symbol $-\xi_0^2 + \lvert\xi\rvert^2$; the hyperbolic operator of the wave equation | *Partial Differential Equations*; *Biquaternion Analysis* |
-| the Cauchy–Riemann operator $\bar\partial$ and its conjugate | order $1$; symbol $i(\xi_1 + i\xi_2)/2$; the operator of the complex and hypercomplex analysis | *Regularity and the Cauchy–Riemann Operator*; *Complex Analysis* |
-| the Dirac operator $D$ and the twisted Cauchy–Riemann operator | order $1$; symbol the Clifford multiplication by $\xi$; the square is the Laplacian with a curvature term | *Dirac Differential Operators*; *Clifford Modules and the Twisted Cauchy–Riemann Operator* |
-| a Fourier multiplier | order and symbol free; defined by $\widehat{m(D)f} = m(\xi)\mathcal F f$, and the general constant-coefficient operator | *Fourier Analysis on Euclidean Spaces*; *Pseudodifferential Operators* |
-| a pseudodifferential operator | order $m$; a symbol $\mathfrak{a}(x,\xi)$ with an asymptotic expansion; the calculus that closes under composition and adjoints | *Pseudodifferential Operators*; *Microlocal Analysis* |
+| the derivative and the Fréchet derivative | order $1$; symbol $\sigma(D)(\zeta) = i\zeta$; the differential of a map between normed spaces | *Differential Calculus on Normed Spaces* |
+| the gradient, divergence and curl | order $1$; the symbols $\zeta$, $\langle\zeta,\cdot\rangle$ and $\zeta\times\cdot$; the operators of the vector calculus, and the Laplacian as $\operatorname{div}\nabla$ | *Differential Forms and Stokes' Theorem* |
+| the exterior derivative $d$ | order $1$; symbol the exterior multiplication by $i\zeta$; the operator of the de Rham complex, with $d^2=0$ | *Differential Forms and Stokes' Theorem* |
+| the Laplacian $\Delta$ | order $2$; symbol $-\lvert\zeta\rvert^2$; the elliptic operator of the corpus, with $\Delta = \operatorname{div}\nabla$ | *Partial Differential Equations*; *Harmonic Maps* |
+| the d'Alembertian $\Box = \partial^2/\partial t^2 - \Delta$ | order $2$; symbol $-\zeta_0^2 + \lvert\zeta\rvert^2$; the hyperbolic operator of the wave equation | *Partial Differential Equations*; *Biquaternion Analysis* |
+| the Cauchy–Riemann operator $\bar\partial$ and its conjugate | order $1$; symbol $i(\zeta_1 + i\zeta_2)/2$; the operator of the complex and hypercomplex analysis | *Regularity and the Cauchy–Riemann Operator*; *Complex Analysis* |
+| the Dirac operator $D$ and the twisted Cauchy–Riemann operator | order $1$; symbol the Clifford multiplication by $\zeta$; the square is the Laplacian with a curvature term | *Dirac Differential Operators*; *Clifford Modules and the Twisted Cauchy–Riemann Operator* |
+| a Fourier multiplier | order and symbol free; defined by $\widehat{m(D)f} = m(\zeta)\mathcal F f$, and the general constant-coefficient operator | *Fourier Analysis on Euclidean Spaces*; *Pseudodifferential Operators* |
+| a pseudodifferential operator | order $m$; a symbol $\mathfrak{a}(x,\zeta)$ with an asymptotic expansion; the calculus that closes under composition and adjoints | *Pseudodifferential Operators*; *Microlocal Analysis* |
 
 ## The Linear Equations of First and Second Order
 
 | Object | Its order, symbol and solution theory | Introduced in |
 |---|---|---|
 | a linear ordinary differential equation $y' = A(t)y$ | order $1$; symbol $-i\lambda$; solved by the matrix exponential, with the fundamental matrix | *Ordinary Differential Equations* |
-| the Sturm–Liouville problem | order $2$; symbol $-(p\xi^2) + q$; the eigenvalue problem with the Riccati and oscillation theory | *Ordinary Differential Equations*; *The Calculus of Variations* |
-| the Laplace equation $\Delta u = 0$ | order $2$; symbol $-\lvert\xi\rvert^2$; harmonic functions, the mean value property and the maximum principle | *Partial Differential Equations*; *Harmonic Maps* |
-| the Poisson equation $\Delta u = f$ | order $2$; symbol $-\lvert\xi\rvert^2$; solved by the Newtonian potential, the fundamental solution of $\Delta$ | *Distributions and Fundamental Solutions*; *Partial Differential Equations* |
-| the heat equation $\partial/\partial t u = \Delta u$ | order $2$; symbol $i\tau + \lvert\xi\rvert^2$; solved by the Gaussian kernel and the heat semigroup | *Semigroups and Evolution Equations*; *Partial Differential Equations* |
-| the wave equation $\partial^2/\partial t^2 u = \Delta u$ | order $2$; symbol $-\tau^2 + \lvert\xi\rvert^2$; solved by the Kirchhoff and d'Alembert formulas, finite propagation speed | *Partial Differential Equations* |
-| the Schrödinger equation $i\partial/\partial t u = -\Delta u + Vu$ | order $2$; symbol $\tau - \lvert\xi\rvert^2 + V$; solved by the unitary group $\exp(-itH)$ of a self-adjoint operator, by Stone's theorem | *Semigroups and Evolution Equations*; *Integrable Systems* |
-| the transport equation $\partial/\partial t u + \mathfrak{b}\,\partial/\partial x u = 0$ | order $1$, hyperbolic; symbol $i\tau + ib\xi$; solved along the characteristics by translation of the datum, with no smoothing | *Partial Differential Equations* |
+| the Sturm–Liouville problem | order $2$; symbol $-(p\zeta^2) + q$; the eigenvalue problem with the Riccati and oscillation theory | *Ordinary Differential Equations*; *The Calculus of Variations* |
+| the Laplace equation $\Delta u = 0$ | order $2$; symbol $-\lvert\zeta\rvert^2$; harmonic functions, the mean value property and the maximum principle | *Partial Differential Equations*; *Harmonic Maps* |
+| the Poisson equation $\Delta u = f$ | order $2$; symbol $-\lvert\zeta\rvert^2$; solved by the Newtonian potential, the fundamental solution of $\Delta$ | *Distributions and Fundamental Solutions*; *Partial Differential Equations* |
+| the heat equation $\partial/\partial t u = \Delta u$ | order $2$; symbol $i\tau + \lvert\zeta\rvert^2$; solved by the Gaussian kernel and the heat semigroup | *Semigroups and Evolution Equations*; *Partial Differential Equations* |
+| the wave equation $\partial^2/\partial t^2 u = \Delta u$ | order $2$; symbol $-\tau^2 + \lvert\zeta\rvert^2$; solved by the Kirchhoff and d'Alembert formulas, finite propagation speed | *Partial Differential Equations* |
+| the Schrödinger equation $i\partial/\partial t u = -\Delta u + Vu$ | order $2$; symbol $\tau - \lvert\zeta\rvert^2 + V$; solved by the unitary group $\exp(-itH)$ of a self-adjoint operator, by Stone's theorem | *Semigroups and Evolution Equations*; *Integrable Systems* |
+| the transport equation $\partial/\partial t u + \mathfrak{b}\,\partial/\partial x u = 0$ | order $1$, hyperbolic; symbol $i\tau + ib\zeta$; solved along the characteristics by translation of the datum, with no smoothing | *Partial Differential Equations* |
 | a delay differential equation | order $1$ with memory; the symbol is entire, $i\tau - A - B\exp(-\tau h)$; solutions by the method of steps | *Delay and Functional Differential Equations* |
-| a fractional differential equation | order $\alpha \in (0,1)$; symbol $\lvert\xi\rvert^\alpha$; solved by the Mittag-Leffler functions and the fractional semigroup | *Fractional Differential Equations* |
+| a fractional differential equation | order $\alpha \in (0,1)$; symbol $\lvert\zeta\rvert^\alpha$; solved by the Mittag-Leffler functions and the fractional semigroup | *Fractional Differential Equations* |
 
 ## The Classification by Symbol
 
 | Object | The classification it carries | Introduced in |
 |---|---|---|
 | an elliptic operator | principal symbol positive definite: the Laplace type, with the elliptic regularity theory | *Partial Differential Equations*; *Regularity and the Cauchy–Riemann Operator* |
-| a parabolic operator | symbol of the form $i\tau + \mathfrak{a}(\xi)$ with $\mathfrak{a} \geq 0$: the heat type, with smoothing for positive time | *Partial Differential Equations*; *Semigroups and Evolution Equations* |
+| a parabolic operator | symbol of the form $i\tau + \mathfrak{a}(\zeta)$ with $\mathfrak{a} \geq 0$: the heat type, with smoothing for positive time | *Partial Differential Equations*; *Semigroups and Evolution Equations* |
 | a hyperbolic operator | nondegenerate symbol of signature $(1,n)$: the wave type, with finite propagation speed and the Cauchy problem | *Partial Differential Equations* |
 | the characteristic variety and the wave front set | the zeros of the principal symbol, and the directions in which a distribution fails to be smooth | *Microlocal Analysis*; *Pseudodifferential Operators* |
 | the fundamental solution of an operator | the distribution $E$ with $PE = \delta$; the Green function and the parametrix | *Distributions and Fundamental Solutions* |
@@ -82,7 +82,7 @@ The objects are named by their standard symbols; the tables use the following.
 |---|---|
 | $\Delta$, $\Box$ | Laplacian, d'Alembertian |
 | $\bar\partial$, $D$ | Cauchy–Riemann operator, Dirac operator |
-| $\sigma(P)$, $\mathfrak{a}(x,\xi)$ | principal symbol, full symbol of an operator |
+| $\sigma(P)$, $\mathfrak{a}(x,\zeta)$ | principal symbol, full symbol of an operator |
 | $E$, $G$ | fundamental solution, Green function |
 | $T(t)$, $A$ | semigroup, its generator |
 | $\operatorname{char}(P)$ | characteristic variety |

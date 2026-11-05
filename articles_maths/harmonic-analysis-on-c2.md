@@ -22,21 +22,21 @@ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\black
 
 **Definition.** A **character** of $\mathbb{C}^2$ is a continuous homomorphism $\chi:\mathbb{C}^2\to S^1$. Every character is of the form
 $$
-\chi_\xi(Q)=e^{2\pi i\operatorname{Re}\langle Q,\xi\rangle},\qquad \xi\in\mathbb{C}^2,
+\chi_\zeta(Q)=e^{2\pi i\operatorname{Re}\langle Q,\zeta\rangle},\qquad \zeta\in\mathbb{C}^2,
 $$
-where $\langle Q,\xi\rangle=Q_{\blacktriangle}\overline{\xi_{\blacktriangle}}+Q_{\blacktriangledown}\overline{\xi_{\blacktriangledown}}$ is the Hermitian form.
+where $\langle Q,\zeta\rangle=Q_{\blacktriangle}\overline{\zeta_{\blacktriangle}}+Q_{\blacktriangledown}\overline{\zeta_{\blacktriangledown}}$ is the Hermitian form.
 
-*Proof.* A character of $\mathbb{R}^4$ is $x\mapsto e^{2\pi i x\cdot u}$ for a unique $u\in\mathbb{R}^4$; under the identification, $x\cdot u=\operatorname{Re}\langle Q,\xi\rangle$ for a unique $\xi\in\mathbb{C}^2$, because the map $\xi\mapsto\operatorname{Re}\langle\cdot,\xi\rangle$ is an isomorphism of real vector spaces.
+*Proof.* A character of $\mathbb{R}^4$ is $x\mapsto e^{2\pi i x\cdot u}$ for a unique $u\in\mathbb{R}^4$; under the identification, $x\cdot u=\operatorname{Re}\langle Q,\zeta\rangle$ for a unique $\zeta\in\mathbb{C}^2$, because the map $\zeta\mapsto\operatorname{Re}\langle\cdot,\zeta\rangle$ is an isomorphism of real vector spaces.
 
-**Proposition (the dual group).** The map $\xi\mapsto\chi_\xi$ is an isomorphism of topological groups from $\mathbb{C}^2$ onto the dual group $\widehat{\mathbb{C}^2}$, and the pairing
+**Proposition (the dual group).** The map $\zeta\mapsto\chi_\zeta$ is an isomorphism of topological groups from $\mathbb{C}^2$ onto the dual group $\widehat{\mathbb{C}^2}$, and the pairing
 $$
-\mathbb{C}^2\times\mathbb{C}^2\longrightarrow S^1,\qquad (Q,\xi)\longmapsto e^{2\pi i\operatorname{Re}\langle Q,\xi\rangle},
+\mathbb{C}^2\times\mathbb{C}^2\longrightarrow S^1,\qquad (Q,\zeta)\longmapsto e^{2\pi i\operatorname{Re}\langle Q,\zeta\rangle},
 $$
 is a Pontryagin duality pairing.
 
-*Proof.* The characters form a group under pointwise multiplication, and $\chi_\xi\chi_\eta=\chi_{\xi+\eta}$; the map is continuous, bijective and open by the identification with $\mathbb{R}^4$.
+*Proof.* The characters form a group under pointwise multiplication, and $\chi_\zeta\chi_\eta=\chi_{\zeta+\eta}$; the map is continuous, bijective and open by the identification with $\mathbb{R}^4$.
 
-**Remark (the two pairings).** The Hermitian pairing $\langle Q,\xi\rangle$ is complex-linear in $Q$ and conjugate-linear in $\xi$; the **bilinear pairing** $Q\cdot\xi=Q_{\blacktriangle}\xi_{\blacktriangle}+Q_{\blacktriangledown}\xi_{\blacktriangledown}$ is complex-linear in both. **The characters are the exponentials of the real part of either pairing**, and the two readings differ by the complex structure: $\operatorname{Re}\langle Q,\xi\rangle=\operatorname{Re}(Q\cdot\bar\xi)$. The holomorphic exponentials of the next sections use the bilinear pairing and are not unitary.
+**Remark (the two pairings).** The Hermitian pairing $\langle Q,\zeta\rangle$ is complex-linear in $Q$ and conjugate-linear in $\zeta$; the **bilinear pairing** $Q\cdot\zeta=Q_{\blacktriangle}\zeta_{\blacktriangle}+Q_{\blacktriangledown}\zeta_{\blacktriangledown}$ is complex-linear in both. **The characters are the exponentials of the real part of either pairing**, and the two readings differ by the complex structure: $\operatorname{Re}\langle Q,\zeta\rangle=\operatorname{Re}(Q\cdot\bar\zeta)$. The holomorphic exponentials of the next sections use the bilinear pairing and are not unitary.
 
 ## The Fourier Transform
 
@@ -44,7 +44,7 @@ is a Pontryagin duality pairing.
 
 **Definition.** For $f\in L^1(\mathbb{C}^2)$, the **Fourier transform** is
 $$
-\widehat f(\xi)=\int_{\mathbb{C}^2}f(Q)\,e^{-2\pi i\operatorname{Re}\langle Q,\xi\rangle}\,dQ,\qquad \xi\in\mathbb{C}^2.
+\widehat f(\zeta)=\int_{\mathbb{C}^2}f(Q)\,e^{-2\pi i\operatorname{Re}\langle Q,\zeta\rangle}\,dQ,\qquad \zeta\in\mathbb{C}^2.
 $$
 
 **Theorem (inversion and Plancherel).** The Fourier transform extends to a unitary operator
@@ -53,7 +53,7 @@ $$
 $$
 with inverse
 $$
-f(Q)=\int_{\mathbb{C}^2}\widehat f(\xi)\,e^{2\pi i\operatorname{Re}\langle Q,\xi\rangle}\,d\xi
+f(Q)=\int_{\mathbb{C}^2}\widehat f(\zeta)\,e^{2\pi i\operatorname{Re}\langle Q,\zeta\rangle}\,d\zeta
 $$
 for $f$ in the Schwartz class, and
 $$
@@ -64,27 +64,27 @@ $$
 
 **Proposition (the basic properties).** For $f,g\in L^2(\mathbb{C}^2)$ and $Q_0\in\mathbb{C}^2$,
 $$
-\widehat{f(\cdot-Q_0)}(\xi)=e^{-2\pi i\operatorname{Re}\langle Q_0,\xi\rangle}\widehat f(\xi),\qquad
-\widehat{e^{2\pi i\operatorname{Re}\langle Q,Q_0\rangle}f}(\xi)=\widehat f(\xi-Q_0),
+\widehat{f(\cdot-Q_0)}(\zeta)=e^{-2\pi i\operatorname{Re}\langle Q_0,\zeta\rangle}\widehat f(\zeta),\qquad
+\widehat{e^{2\pi i\operatorname{Re}\langle Q,Q_0\rangle}f}(\zeta)=\widehat f(\zeta-Q_0),
 $$
 $$
-\widehat{f(\lambda Q)}(\xi)=\lambda^{-4}\widehat f(\xi/\lambda)\quad(\lambda>0),\qquad
-\widehat{\overline{f}}(\xi)=\overline{\widehat f(-\xi)}.
+\widehat{f(\lambda Q)}(\zeta)=\lambda^{-4}\widehat f(\zeta/\lambda)\quad(\lambda>0),\qquad
+\widehat{\overline{f}}(\zeta)=\overline{\widehat f(-\zeta)}.
 $$
 For a Schwartz function $f$ and a multi-index $\alpha$,
 $$
-\widehat{\partial^\alpha f}(\xi)=(2\pi i)^{\lvert\alpha\rvert}\xi^\alpha\widehat f(\xi),\qquad
-\widehat{Q^\alpha f}(\xi)=\left(\frac{i}{2\pi}\right)^{\lvert\alpha\rvert}\partial^\alpha\widehat f(\xi),
+\widehat{\partial^\alpha f}(\zeta)=(2\pi i)^{\lvert\alpha\rvert}\zeta^\alpha\widehat f(\zeta),\qquad
+\widehat{Q^\alpha f}(\zeta)=\left(\frac{i}{2\pi}\right)^{\lvert\alpha\rvert}\partial^\alpha\widehat f(\zeta),
 $$
-where $\partial^\alpha$ is the real partial derivative and $\xi^\alpha$ the corresponding monomial in the real coordinates.
+where $\partial^\alpha$ is the real partial derivative and $\zeta^\alpha$ the corresponding monomial in the real coordinates.
 
 *Proof.* Each identity is a change of variables, an integration by parts, or a differentiation under the integral sign; the constants come from the $2\pi$ normalization.
 
-**Remark (the complex notation).** In the complex coordinates $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ and $\xi_{\blacktriangle}=u_{\blacktriangle}+iv_{\blacktriangle}$, $\xi_{\blacktriangledown}=u_{\blacktriangledown}+iv_{\blacktriangledown}$, the pairing is
+**Remark (the complex notation).** In the complex coordinates $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ and $\zeta_{\blacktriangle}=u_{\blacktriangle}+iv_{\blacktriangle}$, $\zeta_{\blacktriangledown}=u_{\blacktriangledown}+iv_{\blacktriangledown}$, the pairing is
 $$
-\operatorname{Re}\langle Q,\xi\rangle=q_{\blacktriangle}u_{\blacktriangle}+q'_{\blacktriangle}v_{\blacktriangle}+q_{\blacktriangledown}u_{\blacktriangledown}+q'_{\blacktriangledown}v_{\blacktriangledown},
+\operatorname{Re}\langle Q,\zeta\rangle=q_{\blacktriangle}u_{\blacktriangle}+q'_{\blacktriangle}v_{\blacktriangle}+q_{\blacktriangledown}u_{\blacktriangledown}+q'_{\blacktriangledown}v_{\blacktriangledown},
 $$
-so the transform is the four-dimensional transform in the variables $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ and $(u_{\blacktriangle},v_{\blacktriangle},u_{\blacktriangledown},v_{\blacktriangledown})$. **The complex structure does not change the transform; it changes the interpretation of the frequencies.** A frequency $\xi$ parametrizes the real-linear functional $Q\mapsto\operatorname{Re}\langle Q,\xi\rangle$; the holomorphic transform of the next section uses the complex-linear pairing $Q\cdot\xi$ instead.
+so the transform is the four-dimensional transform in the variables $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ and $(u_{\blacktriangle},v_{\blacktriangle},u_{\blacktriangledown},v_{\blacktriangledown})$. **The complex structure does not change the transform; it changes the interpretation of the frequencies.** A frequency $\zeta$ parametrizes the real-linear functional $Q\mapsto\operatorname{Re}\langle Q,\zeta\rangle$; the holomorphic transform of the next section uses the complex-linear pairing $Q\cdot\zeta$ instead.
 
 ## Convolution
 
@@ -105,7 +105,7 @@ $$
 \widehat{f*g}=\widehat f\,\widehat g.
 $$
 
-*Proof.* The inequalities are Young's inequality for $\mathbb{R}^4$; the product formula is Fubini's theorem and the character property $\chi_\xi(Q-Q_1)=\chi_\xi(Q)\chi_\xi(-Q_1)$.
+*Proof.* The inequalities are Young's inequality for $\mathbb{R}^4$; the product formula is Fubini's theorem and the character property $\chi_\zeta(Q-Q_1)=\chi_\zeta(Q)\chi_\zeta(-Q_1)$.
 
 **Theorem (approximate identities).** Let $\varphi\in L^1$ with $\int\varphi=1$ and set $\varphi_\epsilon(Q)=\epsilon^{-4}\varphi(Q/\epsilon)$. Then for $f\in L^p$, $1\le p<\infty$,
 $$
@@ -123,7 +123,7 @@ and for $f$ continuous and bounded the convergence is uniform on compact sets.
 
 **Theorem (Paley–Wiener for $\mathbb{R}^4$).** Let $R>0$. A function $f\in L^2(\mathbb{R}^4)$ is supported in the closed ball of radius $R$ if and only if its Fourier transform extends to an entire function $F$ on $\mathbb{C}^4$ such that for every $\eta\in\mathbb{R}^4$,
 $$
-\int_{\mathbb{R}^4}\lvert F(\xi+i\eta)\rvert^2\,d\xi\le C\,e^{4\pi R\lVert\eta\rVert}
+\int_{\mathbb{R}^4}\lvert F(\zeta+i\eta)\rvert^2\,d\zeta\le C\,e^{4\pi R\lVert\eta\rVert}
 $$
 for a constant $C$, and
 $$
@@ -138,17 +138,17 @@ $$
 
 **Theorem (the holomorphic reading on $\mathbb{C}^2$).** Let $f\in L^2(\mathbb{C}^2)$ be supported in the ball $\lVert Q\rVert\le R$. Then the **holomorphic Fourier transform**
 $$
-\mathcal{F}f(\xi)=\int_{\mathbb{C}^2}f(Q)\,e^{-2\pi i\,Q\cdot\xi}\,dQ,\qquad Q\cdot\xi=Q_{\blacktriangle}\xi_{\blacktriangle}+Q_{\blacktriangledown}\xi_{\blacktriangledown},
+\mathcal{F}f(\zeta)=\int_{\mathbb{C}^2}f(Q)\,e^{-2\pi i\,Q\cdot\zeta}\,dQ,\qquad Q\cdot\zeta=Q_{\blacktriangle}\zeta_{\blacktriangle}+Q_{\blacktriangledown}\zeta_{\blacktriangledown},
 $$
-is an entire function of $\xi\in\mathbb{C}^2$ of exponential type $R$:
+is an entire function of $\zeta\in\mathbb{C}^2$ of exponential type $R$:
 $$
-\lvert\mathcal{F}f(\xi)\rvert\le C\,e^{2\pi R\lVert\xi\rVert}.
+\lvert\mathcal{F}f(\zeta)\rvert\le C\,e^{2\pi R\lVert\zeta\rVert}.
 $$
 Conversely, an entire function of exponential type $R$ that satisfies the $L^2$ growth condition of the Paley–Wiener theorem is the holomorphic Fourier transform of a function supported in the ball of radius $R$.
 
-*Proof.* The integral is entire because $f$ is compactly supported and the exponential is entire in $\xi$; the bound is the estimate $\lvert e^{-2\pi i Q\cdot\xi}\rvert\le e^{2\pi R\lVert\xi\rVert}$ on the support. The converse is the Paley–Wiener theorem applied to the real-linear functionals $Q\mapsto\operatorname{Re}(Q\cdot\xi)$, which form a real four-dimensional space of frequencies; the exponential type in the complex norm is the radius of the support.
+*Proof.* The integral is entire because $f$ is compactly supported and the exponential is entire in $\zeta$; the bound is the estimate $\lvert e^{-2\pi i Q\cdot\zeta}\rvert\le e^{2\pi R\lVert\zeta\rVert}$ on the support. The converse is the Paley–Wiener theorem applied to the real-linear functionals $Q\mapsto\operatorname{Re}(Q\cdot\zeta)$, which form a real four-dimensional space of frequencies; the exponential type in the complex norm is the radius of the support.
 
-**Remark (the two transforms).** The transform $\mathcal{F}$ is **not** the restriction of the group Fourier transform $\widehat{\phantom{f}}$ to real $\xi$: the exponential $e^{-2\pi iQ\cdot\xi}$ has modulus $e^{2\pi\operatorname{Im}(Q\cdot\xi)}$, which is not $1$, so it is a holomorphic exponential on the complex group and not a unitary character of the real group. **The group transform is unitary and lives on $\mathbb{R}^4$; the holomorphic transform is entire and lives on $\mathbb{C}^2$**, and the Paley–Wiener theorem is the bridge between the support of $f$ and the growth of the entire function. The holomorphic transform is the one used in several complex variables, where the support condition is replaced by the condition that $f$ be compactly supported in the domain.
+**Remark (the two transforms).** The transform $\mathcal{F}$ is **not** the restriction of the group Fourier transform $\widehat{\phantom{f}}$ to real $\zeta$: the exponential $e^{-2\pi iQ\cdot\zeta}$ has modulus $e^{2\pi\operatorname{Im}(Q\cdot\zeta)}$, which is not $1$, so it is a holomorphic exponential on the complex group and not a unitary character of the real group. **The group transform is unitary and lives on $\mathbb{R}^4$; the holomorphic transform is entire and lives on $\mathbb{C}^2$**, and the Paley–Wiener theorem is the bridge between the support of $f$ and the growth of the entire function. The holomorphic transform is the one used in several complex variables, where the support condition is replaced by the condition that $f$ be compactly supported in the domain.
 
 ## The Radon Transform
 
@@ -173,7 +173,7 @@ f(x)=\int_{S^3}\int_{\mathbb{R}}\widehat f(\lambda\omega)\,e^{2\pi i\lambda\,x\c
 $$
 and, equivalently, $f$ is recovered from $Rf$ by differentiating $Rf$ three times in $t$ and integrating over $S^3$.
 
-*Proof.* The Fourier inversion formula in polar coordinates $\xi=\lambda\omega$ gives the first display, with $d\xi=\lvert\lambda\rvert^{3}d\lambda\,d\omega$; the Fourier slice theorem replaces $\widehat f(\lambda\omega)$ by the one-dimensional transform of $Rf$, and the differentiation in $t$ produces the factor $\lambda^3$.
+*Proof.* The Fourier inversion formula in polar coordinates $\zeta=\lambda\omega$ gives the first display, with $d\zeta=\lvert\lambda\rvert^{3}d\lambda\,d\omega$; the Fourier slice theorem replaces $\widehat f(\lambda\omega)$ by the one-dimensional transform of $Rf$, and the differentiation in $t$ produces the factor $\lambda^3$.
 
 **Remark (the complex lines).** The Radon transform of $\mathbb{C}^2$ has a second version: integration over the **complex lines**. An affine complex line is $\{Q_0+\lambda Q_1:\lambda\in\mathbb{C}\}$ for $Q_0,Q_1\in\mathbb{C}^2$ with $Q_1\neq0$, and the space of such lines is $\mathbb{CP}^2$ minus the point $[0:0:1]$, a complex surface: the line is $\alpha Q_{\blacktriangle}+\beta Q_{\blacktriangledown}=\gamma$ with $(\alpha,\beta)\neq(0,0)$, and the triple $[\alpha:\beta:\gamma]$ is its class. **The complex-line transform is the analytical counterpart of the real hyperplane transform**, and its inversion uses a Cauchy–Fantappiè kernel rather than a power of the Laplacian; it is the transform behind the Bochner–Martinelli formula of *The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$*.
 
@@ -222,9 +222,9 @@ $$
 
 **Proposition (the Fourier multiplier).** For a Schwartz function $f$,
 $$
-\widehat{\Delta f}(\xi)=-4\pi^2\lVert\xi\rVert^2\widehat f(\xi),
+\widehat{\Delta f}(\zeta)=-4\pi^2\lVert\zeta\rVert^2\widehat f(\zeta),
 $$
-where $\lVert\xi\rVert^2=\lvert\xi_{\blacktriangle}\rvert^2+\lvert\xi_{\blacktriangledown}\rvert^2$. Hence $\Delta$ is self-adjoint on $L^2$ and its spectrum is $(-\infty,0]$.
+where $\lVert\zeta\rVert^2=\lvert\zeta_{\blacktriangle}\rvert^2+\lvert\zeta_{\blacktriangledown}\rvert^2$. Hence $\Delta$ is self-adjoint on $L^2$ and its spectrum is $(-\infty,0]$.
 
 *Proof.* The Fourier transform of a real second derivative is $(2\pi i)^2$ times the square of the frequency; summing over the four real coordinates gives the display. The symbol is real and nonpositive, so the operator is self-adjoint with the stated spectrum.
 
@@ -254,7 +254,7 @@ and $u$ is $C^\infty$; harmonic functions are real analytic.
 
 ## Summary
 
-The additive group $\mathbb{C}^2$ is $\mathbb{R}^4$; its characters are $\chi_\xi(Q)=e^{2\pi i\operatorname{Re}\langle Q,\xi\rangle}$, its Haar measure is Lebesgue measure, and its Fourier transform is the four-dimensional transform, unitary on $L^2$ and inverting by the opposite character. Convolution is the convolution of $\mathbb{R}^4$; it makes $L^1$ a commutative Banach algebra without unit, and the transform turns it into pointwise multiplication. The Paley–Wiener theorem characterizes compact support by the growth of the Fourier–Laplace extension; in the complex reading, the holomorphic Fourier transform $\mathcal{F}f(\xi)=\int f(Q)e^{-2\pi iQ\cdot\xi}dQ$ is entire of exponential type equal to the radius of the support.
+The additive group $\mathbb{C}^2$ is $\mathbb{R}^4$; its characters are $\chi_\zeta(Q)=e^{2\pi i\operatorname{Re}\langle Q,\zeta\rangle}$, its Haar measure is Lebesgue measure, and its Fourier transform is the four-dimensional transform, unitary on $L^2$ and inverting by the opposite character. Convolution is the convolution of $\mathbb{R}^4$; it makes $L^1$ a commutative Banach algebra without unit, and the transform turns it into pointwise multiplication. The Paley–Wiener theorem characterizes compact support by the growth of the Fourier–Laplace extension; in the complex reading, the holomorphic Fourier transform $\mathcal{F}f(\zeta)=\int f(Q)e^{-2\pi iQ\cdot\zeta}dQ$ is entire of exponential type equal to the radius of the support.
 
 The Radon transform integrates over the affine hyperplanes of $\mathbb{R}^4$; the Fourier slice theorem identifies its one-dimensional transform with the Fourier transform along the normal, and the inversion differentiates three times and integrates over $S^3$. The spherical harmonics of $S^3$ are the restrictions of the harmonic homogeneous polynomials; the space of degree $k$ has dimension $(k+1)^2$ and the eigenvalue $-k(k+2)$, and $L^2(S^3)$ is their orthogonal direct sum. The Laplacian is the Euclidean Laplacian, equal to $4\partial\bar\partial$, with fundamental solution $1/(4\pi^2\lVert Q\rVert^2)$ and with the mean value property; the pluriharmonic functions are the harmonic functions that are real parts of holomorphic functions, and the distinction is the one of *Analysis on $\mathbb{C}^2$*.
 
@@ -263,9 +263,9 @@ The Radon transform integrates over the affine hyperplanes of $\mathbb{R}^4$; th
 | Symbol | Meaning |
 |---|---|
 | $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ | the complex and real coordinates of $\mathbb{C}^2\cong\mathbb{R}^4$ |
-| $\chi_\xi(Q)=e^{2\pi i\operatorname{Re}\langle Q,\xi\rangle}$ | the unitary character of frequency $\xi$ |
-| $\widehat f(\xi)$ | the Fourier transform on the group |
-| $\mathcal{F}f(\xi)$ | the holomorphic Fourier transform, with the bilinear pairing |
+| $\chi_\zeta(Q)=e^{2\pi i\operatorname{Re}\langle Q,\zeta\rangle}$ | the unitary character of frequency $\zeta$ |
+| $\widehat f(\zeta)$ | the Fourier transform on the group |
+| $\mathcal{F}f(\zeta)$ | the holomorphic Fourier transform, with the bilinear pairing |
 | $f*g$ | the convolution |
 | $Rf(\omega,t)$ | the Radon transform over the hyperplane $x\cdot\omega=t$ |
 | $\mathcal{H}_k$ | the spherical harmonics of degree $k$ on $S^3$ |

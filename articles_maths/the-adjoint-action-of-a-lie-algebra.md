@@ -75,7 +75,7 @@ so $\operatorname{ad}$ is a representation; the operators $\operatorname{ad}_x$ 
 
 **Proof.** The first is the homomorphism property; the second is the Jacobi identity in the associative algebra $\operatorname{End}_K(\mathrm{G})$.
 
-**Proposition (the transpose action).** The transpose operators $\operatorname{ad}_x^{*}$ on $\mathrm{G}^*$ define the **coadjoint action**, and it is again a representation, $\operatorname{ad}_{[x,y]}^{*}=[\operatorname{ad}_x^{*},\operatorname{ad}_y^{*}]$; with respect to the pairing $\mathrm{G}^*\times\mathrm{G}\to K$ the coadjoint and adjoint actions are transposed, $\langle\operatorname{ad}_x^{*}\xi,y\rangle=-\langle\xi,\operatorname{ad}_x y\rangle$ in the convention in which the pairing is $\xi(y)$.
+**Proposition (the transpose action).** The transpose operators $\operatorname{ad}_x^{*}$ on $\mathrm{G}^*$ define the **coadjoint action**, and it is again a representation, $\operatorname{ad}_{[x,y]}^{*}=[\operatorname{ad}_x^{*},\operatorname{ad}_y^{*}]$; with respect to the pairing $\mathrm{G}^*\times\mathrm{G}\to K$ the coadjoint and adjoint actions are transposed, $\langle\operatorname{ad}_x^{*}\zeta,y\rangle=-\langle\zeta,\operatorname{ad}_x y\rangle$ in the convention in which the pairing is $\zeta(y)$.
 
 **Proof.** Transposition reverses the commutator, so the homomorphism property is preserved; the sign in the pairing is the definition of the transpose.
 

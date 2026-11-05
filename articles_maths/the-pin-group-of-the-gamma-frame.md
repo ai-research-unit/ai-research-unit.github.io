@@ -13,7 +13,7 @@ The frame is that of *The Gamma Frame and the Complexified Dirac Algebra of $M_4
 
 ## Pin and Spin
 
-**The definitions.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$, and let $\mathrm{Cl}(V)$ be its Clifford algebra. A **versor** is a product $\xi_1\cdots\xi_k$ of non-isotropic vectors. The **Clifford group** is
+**The definitions.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$, and let $\mathrm{Cl}(V)$ be its Clifford algebra. A **versor** is a product $\zeta_1\cdots\zeta_k$ of non-isotropic vectors. The **Clifford group** is
 $$
 \Gamma=\{u\in\mathrm{Cl}(V)^{\times}:\alpha(u)Vu^{-1}\subseteq V\},
 $$
@@ -37,9 +37,9 @@ The full even part of Pin is $\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm
 
 **The decomposition.** The Pin group is the disjoint union of its even and odd parts, and each part is the union of the two norm cosets:
 $$
-\mathrm{Pin}(1,3)=\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr)\ \cup\ \xi_0\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr),
+\mathrm{Pin}(1,3)=\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr)\ \cup\ \zeta_0\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr),
 $$
-for any odd unit vector $\xi_0$ and any even unit $\varkappa^{\mathrm{crd}}$ of norm $-1$. In the biquaternion dictionary, with $\xi_0=A_0=\bar{\cdot}$ and $\varkappa^{\mathrm{crd}}=L_{-i\vec e_x}$,
+for any odd unit vector $\zeta_0$ and any even unit $\varkappa^{\mathrm{crd}}$ of norm $-1$. In the biquaternion dictionary, with $\zeta_0=A_0=\bar{\cdot}$ and $\varkappa^{\mathrm{crd}}=L_{-i\vec e_x}$,
 $$
 \boxed{\;\mathrm{Pin}(1,3)
 =L(\mathbb{B}^{\times}_{1})\ \cup\ L(\mathbb{B}^{\times}_{-1})\ \cup\
@@ -63,22 +63,22 @@ $$
 q(A_\mu)=g_{\mu\mu}\in\{+1,-1\}.
 $$
 
-**The reflection.** For a non-isotropic $\xi\in V$, the reflection in the hyperplane orthogonal to $\xi$ is
+**The reflection.** For a non-isotropic $\zeta\in V$, the reflection in the hyperplane orthogonal to $\zeta$ is
 $$
-\rho_\xi(\eta)=-\xi\eta\xi^{-1}
-=\eta-2\frac{q(\xi,\eta)}{q(\xi)}\,\xi .
+\rho_\zeta(\eta)=-\zeta\eta\zeta^{-1}
+=\eta-2\frac{q(\zeta,\eta)}{q(\zeta)}\,\zeta .
 $$
-For a unit vector, $\xi^{-1}=\xi/q(\xi)$, and with $\varepsilon(\xi):=q(\xi)=\xi^2$,
+For a unit vector, $\zeta^{-1}=\zeta/q(\zeta)$, and with $\varepsilon(\zeta):=q(\zeta)=\zeta^2$,
 $$
-\rho_\xi(\eta)=-\varepsilon(\xi)\,\xi\eta\xi .
+\rho_\zeta(\eta)=-\varepsilon(\zeta)\,\zeta\eta\zeta .
 $$
-The sign $\varepsilon(\xi)$ is $+1$ for a timelike vector and $-1$ for a spacelike vector. The four frame reflections are
+The sign $\varepsilon(\zeta)$ is $+1$ for a timelike vector and $-1$ for a spacelike vector. The four frame reflections are
 $$
 \rho_{A_0}(\eta)=-A_0\eta A_0,\qquad
 \rho_{A_k}(\eta)=+A_k\eta A_k .
 $$
 
-**The determinant.** The reflection $\rho_\xi$ has determinant $-1$ on $V$. A product of $k$ reflections has determinant $(-1)^k$. The even words give determinant $+1$ and form the even part of Pin; the norm-one even words form the spin group, and the norm $-1$ even words form its other component. The odd words give determinant $-1$ and form the odd part. The Lorentz determinant is the parity of the word length, not the determinant of the $4\times4$ matrix.
+**The determinant.** The reflection $\rho_\zeta$ has determinant $-1$ on $V$. A product of $k$ reflections has determinant $(-1)^k$. The even words give determinant $+1$ and form the even part of Pin; the norm-one even words form the spin group, and the norm $-1$ even words form its other component. The odd words give determinant $-1$ and form the odd part. The Lorentz determinant is the parity of the word length, not the determinant of the $4\times4$ matrix.
 
 **The matrix determinant.** In the complex-linear description each frame element is a unit multiple of the two-sided product $L_{a}R_{b}$, and every one has determinant $+1$ as a $4\times4$ matrix:
 $$
@@ -123,7 +123,7 @@ Q_8=\{\pm1,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z\}
 $$
 as the subgroup of index two, and the eight elements $\pm i,\pm i \vec e_x,\pm i \vec e_y,\pm i \vec e_z$ in the other coset, of norm $-1$. The subgroup $Q_8$ lies in $\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1$; the other coset lies in the norm $-1$ even component. The group $L(U)$ is the Pauli group of order $16$; it is the finite even group of the frame, not the full even Pin.
 
-**The frame is not the whole Pin group.** The unit sphere of $V$ is continuous, and the Pin group it generates is a Lie group of real dimension six (the spin group) plus the odd coset. The five frame elements generate only the finite subgroup $G_A$. The passage from the frame to the full group is the passage from the five vectors to all linear combinations $\xi=\sum_\mu \xi_\mu A_\mu$ with $q(\xi)=\pm1$; the finite group is the skeleton, the continuous group is the envelope.
+**The frame is not the whole Pin group.** The unit sphere of $V$ is continuous, and the Pin group it generates is a Lie group of real dimension six (the spin group) plus the odd coset. The five frame elements generate only the finite subgroup $G_A$. The passage from the frame to the full group is the passage from the five vectors to all linear combinations $\zeta=\sum_\mu \zeta_\mu A_\mu$ with $q(\zeta)=\pm1$; the finite group is the skeleton, the continuous group is the envelope.
 
 ## The Finite Group of the Two-Sided Matrices
 
@@ -163,9 +163,9 @@ b\longmapsto\bigl(\eta\mapsto b\,\eta\,b^{*}\bigr),
 $$
 which is two-to-one with kernel $\{\pm1\}$. The norm $-1$ even coset maps to the time-reversing component of $SO(1,3)$, and the odd part maps into the determinant $-1$ components.
 
-**The lift of a reflection.** A reflection $\rho_\xi$ lifts to the two elements $\pm\xi$ of Pin. The sign is the usual sign ambiguity of the spinor representation; it is not a sign of the Lorentz transformation, which is fixed by $\det\rho_\xi=-1$. The two lifts differ by $-1$, the kernel of the double cover.
+**The lift of a reflection.** A reflection $\rho_\zeta$ lifts to the two elements $\pm\zeta$ of Pin. The sign is the usual sign ambiguity of the spinor representation; it is not a sign of the Lorentz transformation, which is fixed by $\det\rho_\zeta=-1$. The two lifts differ by $-1$, the kernel of the double cover.
 
-**The sign $\varepsilon$.** The reflection formula carries the metric sign $\varepsilon(\xi)=q(\xi)$. The timelike and spacelike generators of the frame therefore enter the sandwich with opposite signs:
+**The sign $\varepsilon$.** The reflection formula carries the metric sign $\varepsilon(\zeta)=q(\zeta)$. The timelike and spacelike generators of the frame therefore enter the sandwich with opposite signs:
 $$
 \rho_{A_0}(\eta)=-A_0\eta A_0,\qquad
 \rho_{A_k}(\eta)=+A_k\eta A_k .
@@ -194,7 +194,7 @@ In the real-linear frame, in which the body writes, the same five are $\gamma_0=
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -204,7 +204,7 @@ The Pin group of the Lorentzian four-space is not contained in $\mathbb{B}$; its
 $$
 \mathrm{Pin}(1,3)=L(\mathbb{B}^{\times}_1)\cup L(\mathbb{B}^{\times}_{-1})\cup\bar{\cdot}L(\mathbb{B}^{\times}_1)\cup\bar{\cdot}L(\mathbb{B}^{\times}_{-1}),
 $$
-in the real-linear dictionary. The five frame elements are unit vectors with squares $+1,-1,-1,-1$; the reflection in the hyperplane orthogonal to a unit $\xi$ is $\rho_\xi(\eta)=-\varepsilon(\xi)\xi\eta\xi$ with $\varepsilon(\xi)=q(\xi)=\xi^2$, and its determinant is $-1$. The frame generates a finite subgroup of order $32$,
+in the real-linear dictionary. The five frame elements are unit vectors with squares $+1,-1,-1,-1$; the reflection in the hyperplane orthogonal to a unit $\zeta$ is $\rho_\zeta(\eta)=-\varepsilon(\zeta)\zeta\eta\zeta$ with $\varepsilon(\zeta)=q(\zeta)=\zeta^2$, and its determinant is $-1$. The frame generates a finite subgroup of order $32$,
 $$
 G_A=L(U)\cup\bar{\cdot}L(U),
 $$
@@ -217,7 +217,7 @@ with $U$ the sixteen signed biquaternion units; its even part of order $16$ is a
 | Pin in $\mathbb{B}$ | not contained; only the even part is |
 | Pin decomposition | $L(\mathbb{B}^{\times}_1)\cup L(\mathbb{B}^{\times}_{-1})\cup\bar{\cdot}L(\mathbb{B}^{\times}_1)\cup\bar{\cdot}L(\mathbb{B}^{\times}_{-1})$ |
 | frame squares | $(A_0)^2=1$, $(A_k)^2=-1$, $(A_5)^2=1$ |
-| reflection | $\rho_\xi(\eta)=-\varepsilon(\xi)\xi\eta\xi$, $\varepsilon(\xi)=\xi^2$ |
+| reflection | $\rho_\zeta(\eta)=-\varepsilon(\zeta)\zeta\eta\zeta$, $\varepsilon(\zeta)=\zeta^2$ |
 | reflection determinant | $-1$ |
 | group of the frame | $G_A=L(U)\cup\bar{\cdot}L(U)$, order $32$ |
 | even part of that group | $L(U)$, order $16$, finite subgroup of the even Pin; $Q_8\subset\mathrm{Spin}$ |
@@ -236,8 +236,8 @@ with $U$ the sixteen signed biquaternion units; its even part of order $16$ is a
 | $\mathrm{Pin},\mathrm{Spin}$ | the pin and spin groups |
 | $\mathbb{B}^{\times}_1$ | the norm-one group of the biquaternion algebra |
 | $A_\mu,A_5$ | the frame elements $\bar{\cdot}$, $\bar{\cdot}\circ L_{-i\vec e_k}$, $R_{-i\vec e_z}$; the fifth is the chirality |
-| $\varepsilon(\xi)$ | the metric square $q(\xi)=\xi^2$ |
-| $\rho_\xi$ | the reflection in the hyperplane orthogonal to $\xi$ |
+| $\varepsilon(\zeta)$ | the metric square $q(\zeta)=\zeta^2$ |
+| $\rho_\zeta$ | the reflection in the hyperplane orthogonal to $\zeta$ |
 | $U$ | the sixteen signed biquaternion units |
 | $G_A$ | the group of the frame $L(U)\cup\bar{\cdot}L(U)$ |
 | $G$ | the two-sided group $\{\pm L_{e_\mu}R_{e_\nu}\}$ |

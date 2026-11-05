@@ -488,7 +488,7 @@ $$
 
 by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
 
-**The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
+**The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
 
 **The identities of the frame.** With $\varepsilon=(1,-1,-1,-1)$,
 

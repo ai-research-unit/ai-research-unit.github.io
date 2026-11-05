@@ -106,10 +106,10 @@ $$
 **Definition.** Let $M$ be a closed smooth manifold and let $D\colon\Gamma(E)\to\Gamma(F)$ be a linear differential operator of order $m$ between smooth vector bundles. The **principal symbol** is the bundle map
 
 $$
-\sigma_m(D)\colon\pi^{*}E\longrightarrow\pi^{*}F, \qquad \sigma_m(D)(x,\xi)=\lim_{t\to\infty}t^{-m}\exp(-itf)D(\exp(itf)s)(x)
+\sigma_m(D)\colon\pi^{*}E\longrightarrow\pi^{*}F, \qquad \sigma_m(D)(x,\zeta)=\lim_{t\to\infty}t^{-m}\exp(-itf)D(\exp(itf)s)(x)
 $$
 
-for a function $f$ with $df_x=\xi$ and a section $s$ with $s(x)=v$, a well-defined map on the cotangent bundle $\pi\colon T^{*}M\to M$. The operator is **elliptic** when $\sigma_m(D)(x,\xi)$ is invertible for every $\xi\neq0$.
+for a function $f$ with $df_x=\zeta$ and a section $s$ with $s(x)=v$, a well-defined map on the cotangent bundle $\pi\colon T^{*}M\to M$. The operator is **elliptic** when $\sigma_m(D)(x,\zeta)$ is invertible for every $\zeta\neq0$.
 
 **Definition.** For an elliptic operator on a closed manifold the **analytic index** is
 
@@ -195,7 +195,7 @@ $$
 
 In particular, for untwisted $W$ the index is the $\hat{A}$-genus of $M$, and the spin case of the theorem is the statement that the index of the Cauchy–Riemann operator is a topological characteristic number.
 
-**Proof.** The symbol of $D_E$ is Clifford multiplication by $i\xi$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus.
+**Proof.** The symbol of $D_E$ is Clifford multiplication by $i\zeta$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus.
 
 **Example (Gauss–Bonnet).** Let $D=d+d^{*}$ be the de Rham operator on the even and odd parts of the exterior algebra of a closed oriented even-dimensional manifold. It is elliptic and self-adjoint, and its index is the Euler characteristic; the theorem gives
 
@@ -237,7 +237,7 @@ For a closed spin manifold with a twisted Clifford module bundle the index reduc
 | $\operatorname{ch}(E)=\operatorname{tr}\exp(iR/2\pi)$ | Chern character to $H^{\mathrm{ev}}_{dR}(X;\mathbb{Q})$ |
 | $K_0(R)$, $K_1(R)$ | Grothendieck group of f.g. projective modules; units mod elementary matrices |
 | $K^0(X)\cong K_0(C(X))$ | Serre–Swan |
-| $\sigma_m(D)$, $\sigma(D)(x,\xi)$ | Principal symbol |
+| $\sigma_m(D)$, $\sigma(D)(x,\zeta)$ | Principal symbol |
 | $\operatorname{ind}_a(D)=\dim\ker D-\dim\operatorname{coker}D$ | Analytic index |
 | $[\sigma(D)]\in K^0_c(TM)$ | Symbol class, compactly supported along the fibres |
 | $\operatorname{ind}_t$ | Topological index, pushforward $K^0_c(TM)\to\mathbb{Z}$ |

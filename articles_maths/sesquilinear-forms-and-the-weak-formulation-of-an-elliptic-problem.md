@@ -50,7 +50,7 @@ with $C$ depending on $\Lambda$, $M$ and $n$; the form is a bounded sesquilinear
 
 *Proof.* The estimate is the Cauchy–Schwarz inequality applied to each term of the sum: $|A\nabla u\cdot\overline{\nabla v}|\le\Lambda|\nabla u||\nabla v|$, $|b_j\partial/\partial x_j\,u\bar v|\le\|b_j\|_\infty|\nabla u||v|$ and $|cu\bar v|\le\|c\|_\infty|u||v|$, followed by $|\nabla u||v|\le\frac12(|\nabla u|^2+|v|^2)$ and integration; the constants combine into $C$.
 
-**Theorem (coercivity of the elliptic form).** Let $A$ be symmetric and **uniformly elliptic**, $\lambda|\xi|^2\le A(x)\xi\cdot\xi\le\Lambda|\xi|^2$ with $\lambda>0$, and let $c\ge0$ be bounded. Then the elliptic form is coercive on $H^1_0(\Omega)$:
+**Theorem (coercivity of the elliptic form).** Let $A$ be symmetric and **uniformly elliptic**, $\lambda|\zeta|^2\le A(x)\zeta\cdot\zeta\le\Lambda|\zeta|^2$ with $\lambda>0$, and let $c\ge0$ be bounded. Then the elliptic form is coercive on $H^1_0(\Omega)$:
 
 $$
 \boxed{\;\mathfrak{a}(u,u)\ge\lambda\int_\Omega|\nabla u|^2 \ge \frac{\lambda}{1+C_P}\,\|u\|_{H^1}^2\;} ,

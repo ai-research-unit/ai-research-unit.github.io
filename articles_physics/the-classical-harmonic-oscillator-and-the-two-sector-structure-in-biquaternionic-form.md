@@ -43,7 +43,7 @@ and the equation of motion is a statement about its vector part alone. The scala
 For the present article it is enough to take the motion one-dimensional along a fixed direction $\vec u$, so that
 
 $$
-x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = \xi(t')\,\vec u, \qquad \xi(t') = A\cos(\omega t' + \theta^{\mathrm{pha}}),
+x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z = \zeta(t')\,\vec u, \qquad \zeta(t') = A\cos(\omega t' + \theta^{\mathrm{pha}}),
 $$
 
 with amplitude $A$ and phase $\theta^{\mathrm{pha}}$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
@@ -65,10 +65,10 @@ the vector part vanishing because $\vec F$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec 
 The energy is the sum of the kinetic and elastic terms,
 
 $$
-E = \frac{1}{2}m\left(d\xi/dt'\right)^{2} + \frac{1}{2}m\omega^2\xi^2 ,
+E = \frac{1}{2}m\left(d\zeta/dt'\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
 $$
 
-and it is conserved, $dE/dt' = 0$, by the equation of motion. In the normalized variables $x = \xi$ and $p = md\xi/dt'$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
+and it is conserved, $dE/dt' = 0$, by the equation of motion. In the normalized variables $x = \zeta$ and $p = md\zeta/dt'$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
 
 ## The Complex Amplitude and the Centre
 

@@ -159,9 +159,9 @@ Collecting the pieces, the gauge-fixed Yang–Mills action is
 $$
 S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}},
 \qquad
-S_{\mathrm{gf}}=-\frac{1}{2\xi}\int d^4x\,\sum_a\left(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a}\right)^2 ,
+S_{\mathrm{gf}}=-\frac{1}{2\zeta}\int d^4x\,\sum_a\left(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a}\right)^2 ,
 $$
-where $\xi$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B_a$ of the BRST companion, whose equation of motion is $B_a=-\xi^{-1}\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
+where $\zeta$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B_a$ of the BRST companion, whose equation of motion is $B_a=-\zeta^{-1}\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
 $$
 Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(iS),
 $$
@@ -173,16 +173,16 @@ is the Yang–Mills path integral of the framework.
 
 At quadratic order in the fields the gauge-fixed action is
 $$
-S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(\delta_{\mu\nu}\Box-(1-\tfrac1\xi)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}_{\nu a},
+S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(\delta_{\mu\nu}\Box-(1-\tfrac1\zeta)\partial^2/\partial Q_\mu\partial Q_\nu\right)\mathcal{A}_{\nu a},
 $$
 whose inversion gives the gauge-field propagator, in momentum space, with $\Pi\equiv-\sum_\mu p_\mu p_\mu$ the momentum-space invariant,
 $$
-D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+\frac{p_\mu p_\nu}{\Pi}\right)-\frac{\xi}{\Pi}\frac{p_\mu p_\nu}{\Pi}
-=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right).
+D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+\frac{p_\mu p_\nu}{\Pi}\right)-\frac{\zeta}{\Pi}\frac{p_\mu p_\nu}{\Pi}
+=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\zeta)\frac{p_\mu p_\nu}{\Pi}\right).
 $$
-The projector algebra is that of the companion article, and the series convention $\sum_\mu p_\mu p_\mu=-\Pi$ fixes its signs: writing $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\Pi=\delta_{\mu\nu}-p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/\Pi=p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\delta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $\sum_\mu p_\mu P_{\mu\nu}=0$. Here $\Pi$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the transverse projector is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$. The signs of $P$ and $L$ are tied to the momentum convention: they are fixed by the invariant $\sum_\mu p_\mu p_\mu=-\Pi$, and using $+\sum_\mu p_\mu p_\mu$ in place of $\Pi$ gives a matrix that is neither transverse nor idempotent. This is the projector that *Canonical Quantization of the Biquaternion Proca Field* writes as the polarization completeness relation $\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, with $\mu$ the mass. On shell $\Pi=\mu^2$, so that relation is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$; the two symbols stay distinct, because $\mu$ is the mass there and the spacetime index here, and $\Pi$ exists in the massless theory where $\mu=0$. The gauge-field path-integral companion writes the same projector with its $p^2$, and with $D=\Pi^{-1}(P+\xi L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $\sum_\nu p_\nu j_\nu=0$, the difference between two propagators with different $\xi$ annihilates the current,
+The projector algebra is that of the companion article, and the series convention $\sum_\mu p_\mu p_\mu=-\Pi$ fixes its signs: writing $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\Pi=\delta_{\mu\nu}-p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$ and $L_{\mu\nu}=-p_\mu p_\nu/\Pi=p_\mu p_\nu/(\sum_\mu p_\mu p_\mu)$, one has $P^2=P$, $L^2=L$, $PL=LP=0$, $P+L=\delta$, $\mathrm{tr}\,P=3$, $\mathrm{tr}\,L=1$, and $\sum_\mu p_\mu P_{\mu\nu}=0$. Here $\Pi$ is the momentum-space eigenvalue of the central $\Box$ in the series convention, so that the transverse projector is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$. The signs of $P$ and $L$ are tied to the momentum convention: they are fixed by the invariant $\sum_\mu p_\mu p_\mu=-\Pi$, and using $+\sum_\mu p_\mu p_\mu$ in place of $\Pi$ gives a matrix that is neither transverse nor idempotent. This is the projector that *Canonical Quantization of the Biquaternion Proca Field* writes as the polarization completeness relation $\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, with $\mu$ the mass. On shell $\Pi=\mu^2$, so that relation is $\delta_{\mu\nu}+p_\mu p_\nu/\Pi$; the two symbols stay distinct, because $\mu$ is the mass there and the spacetime index here, and $\Pi$ exists in the massless theory where $\mu=0$. The gauge-field path-integral companion writes the same projector with its $p^2$, and with $D=\Pi^{-1}(P+\zeta L)$ the two agree term by term. The gauge parameter multiplies the longitudinal projector alone, and for a conserved external current, $\sum_\nu p_\nu j_\nu=0$, the difference between two propagators with different $\zeta$ annihilates the current,
 $$
-\big(D(\xi)-D(\xi_2)\big)_{\mu\nu}j_\nu=0 ,
+\big(D(\zeta)-D(\zeta_2)\big)_{\mu\nu}j_\nu=0 ,
 $$
 so that physical amplitudes are gauge-parameter independent. This is the content the companion article verifies in the abelian theory; it is unchanged in the non-abelian theory, because the statement is about the quadratic form and the conservation of the external current.
 
@@ -220,7 +220,7 @@ $$
 \left\langle\big(\sum_\mu D_\mu F_{\mu\nu}\big)_a\right\rangle
 =\left\langle J_{\nu,\mathrm{gf},a}\right\rangle+\left\langle J_{\nu,\mathrm{gh},a}\right\rangle ,
 $$
-where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\frac{1}{2\xi}(\partial\cdot\mathcal{A})^2$ and by the ghost action. Two comments make the statement precise.
+where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\frac{1}{2\zeta}(\partial\cdot\mathcal{A})^2$ and by the ghost action. Two comments make the statement precise.
 
 - **The equation holds inside correlators, up to contact terms.** The classical equation is the statement that the integrand of the path integral is stationary; the quantum statement is that the expectation value of the variation vanishes, and additional operators inserted at the same point produce the contact terms. This is general and standard, not special to the gauge field.
 - **The gauge-invariance content is in the identities, not in the equation.** Gauge invariance of the action does not survive gauge fixing as invariance of $S$; it survives as the Slavnov–Taylor identities relating Green functions, which are the quantum transcription of the statement that physical amplitudes are independent of the gauge parameter and that longitudinal gauge fields decouple from physical states. The equation of motion and the identities together replace the classical equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$.
@@ -246,7 +246,7 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 **Imported, and left visible.** The Faddeev–Popov trick itself and the insertion of unity; the representation of a determinant by a fermionic Gaussian integral; the gauge-fixing condition and the gauge parameter; the Nakanishi–Lautrup field; the Slavnov–Taylor identities and the standard renormalization of the coupling; the one-loop beta coefficient; the Gribov ambiguity and Singer's obstruction; and the non-perturbative construction of confinement. The algebra supplies the carrier and the structure constants; the analytic apparatus of the path integral is standard.
 
-**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\xi$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$ is anti-Hermitian in the spatial directions and Hermitian in the $ict'$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the space directions and obstructed in the time direction, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
+**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\zeta$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$ is anti-Hermitian in the spatial directions and Hermitian in the $ict'$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the space directions and obstructed in the time direction, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
 
 ## Summary
 
@@ -260,7 +260,7 @@ whereas in the abelian limit $f_{abc}=0$, $M=-\Box$, and the determinant is fiel
 
 The gauge-fixed action $S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}}$ has a quadratic part whose inversion gives the propagator
 $$
-D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\xi)\frac{p_\mu p_\nu}{\Pi}\right),
+D_{\mu\nu}(p)=\frac{1}{\Pi}\left(\delta_{\mu\nu}+(1-\zeta)\frac{p_\mu p_\nu}{\Pi}\right),
 $$
 with the gauge parameter in the longitudinal projector alone, so that amplitudes built from conserved currents are gauge-parameter independent. The non-abelian additions are the charged, covariantly conserved current; the Slavnov–Taylor identities in place of the abelian Ward identity; and the ghost and self-interaction loops that give the pure $SU(2)$ one-loop coefficient $b_0=22/3$.
 
@@ -299,9 +299,9 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $c_a,\bar c_a$ | Faddeev–Popov ghost and antighost, Grassmann-odd |
 | $\mathbb{B}\otimes\Lambda$ | Grassmann envelope; adjoined odd coordinates |
 | $S_{\mathrm{gh}}=-\int\sum_a\bar c_a\sum_\mu\partial/\partial Q_\mu(D_\mu c)_a$ | Ghost action from the determinant |
-| $S_{\mathrm{gf}}=-\tfrac{1}{2\xi}\int\sum_a(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a})^2$ | Gauge-fixing term; $\xi$ the gauge parameter |
+| $S_{\mathrm{gf}}=-\tfrac{1}{2\zeta}\int\sum_a(\sum_\mu\partial/\partial Q_\mu\,\mathcal{A}_{\mu a})^2$ | Gauge-fixing term; $\zeta$ the gauge parameter |
 | $\Pi\equiv-\sum_\mu p_\mu p_\mu$ | Momentum-space invariant of the series convention |
-| $D_{\mu\nu}(p)=\Pi^{-1}(\delta_{\mu\nu}+(1-\xi)p_\mu p_\nu/\Pi)$ | Gauge-field propagator |
+| $D_{\mu\nu}(p)=\Pi^{-1}(\delta_{\mu\nu}+(1-\zeta)p_\mu p_\nu/\Pi)$ | Gauge-field propagator |
 | $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\Pi$, $L_{\mu\nu}=-p_\mu p_\nu/\Pi$ | Transverse and longitudinal projectors, $P+L=\delta$ |
 | $\langle \sum_\mu D_\mu F_{\mu\nu}\rangle=\langle J_\nu\rangle$ | Quantum Yang–Mills equation (Schwinger–Dyson) |
 | Slavnov–Taylor identities | Quantum content of gauge invariance in the non-abelian theory |

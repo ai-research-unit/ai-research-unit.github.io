@@ -113,13 +113,13 @@ which is well defined because a cycle capped with a cocycle is a cycle and a bou
 **Definition.** Let $X$ and $Y$ be spaces, with projections $\mathrm{pr}_1 : X\times Y \to X$ and $\mathrm{pr}_2 : X \times Y \to Y$. The **Eilenberg–Zilber chain map** is the natural chain map
 
 $$
-\Xi : C_*(X;R) \otimes_R C_*(Y;R) \longrightarrow C_*(X \times Y;R)
+Ζ : C_*(X;R) \otimes_R C_*(Y;R) \longrightarrow C_*(X \times Y;R)
 $$
 
 sending $\sigma \otimes \tau$ to the chain obtained by composing $x \mapsto (\sigma(x),\tau(y))$ with a fixed subdivision of the product of standard simplices $\Delta_i \times \Delta_j$ into $(i+j)$-simplices, the **shuffle** subdivision. The **homology cross product** is the induced map
 
 $$
-\times : H_i(X;R) \otimes_R H_j(Y;R) \longrightarrow H_{i+j}(X\times Y;R), \qquad c \times d = \Xi_*(c \otimes d),
+\times : H_i(X;R) \otimes_R H_j(Y;R) \longrightarrow H_{i+j}(X\times Y;R), \qquad c \times d = Ζ_*(c \otimes d),
 $$
 
 and the **cohomology cross product** is

@@ -99,7 +99,7 @@ N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e} + O(\log T),
 $$
 so the zeros have density $\frac{1}{2\pi}\log\frac{T}{2\pi}$ near height $T$; in particular infinitely many nontrivial zeros exist, and $\sum_\rho1/\lvert\rho\rvert^{1+\epsilon}$ converges for every $\epsilon>0$ while $\sum_\rho1/\lvert\rho\rvert$ diverges.
 
-**Proof sketch.** The argument principle applied to $\xi$, the completed zeta function of *Zeta Functions* which is entire of order $1$ and real on the critical line, expresses $N(T)$ as the variation of the argument of $\xi$ along the boundary of the rectangle; the variation along the horizontal sides is $O(\log T)$ by the functional equation and the Stirling estimate for the Gamma factor, and the vertical sides contribute the main term. The convergence statement is the standard consequence of the density.
+**Proof sketch.** The argument principle applied to $\zeta$, the completed zeta function of *Zeta Functions* which is entire of order $1$ and real on the critical line, expresses $N(T)$ as the variation of the argument of $\zeta$ along the boundary of the rectangle; the variation along the horizontal sides is $O(\log T)$ by the functional equation and the Stirling estimate for the Gamma factor, and the vertical sides contribute the main term. The convergence statement is the standard consequence of the density.
 
 ### The Zero-Free Region
 

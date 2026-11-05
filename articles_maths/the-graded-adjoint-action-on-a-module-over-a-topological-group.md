@@ -82,21 +82,21 @@ and the adjoint action preserves the submodule of self-adjoint operators and the
 **Definition.** The **coadjoint action** of $G$ on the dual module $M^*$ is
 
 $$
-(g\cdot\xi)(m) = \xi\bigl(\pi(g)^{-1}m\bigr) ,
+(g\cdot\zeta)(m) = \zeta\bigl(\pi(g)^{-1}m\bigr) ,
 $$
 
 the contragredient of the action on $M$; the dual module is graded by $(M^*)_i = (M_i)^*$.
 
-**Theorem.** The coadjoint action is a group action, it is compatible with the grading, $(g\cdot\xi)(M_j)\subseteq$ the component paired with $M_j$, and the grading involution acts on the dual by its transpose, which is itself for an even form and its negative for an odd form. The sign rule relating the pairing to the action is
+**Theorem.** The coadjoint action is a group action, it is compatible with the grading, $(g\cdot\zeta)(M_j)\subseteq$ the component paired with $M_j$, and the grading involution acts on the dual by its transpose, which is itself for an even form and its negative for an odd form. The sign rule relating the pairing to the action is
 
 $$
-\langle g\cdot\xi,\,m\rangle = \bigl\langle \xi,\,\pi(g)^{-1}m\bigr\rangle , \qquad
-\varepsilon(g\cdot\xi) = (-1)^{m}\,\bigl(\alpha(g)\cdot(\varepsilon\xi)\bigr) ,
+\langle g\cdot\zeta,\,m\rangle = \bigl\langle \zeta,\,\pi(g)^{-1}m\bigr\rangle , \qquad
+\varepsilon(g\cdot\zeta) = (-1)^{m}\,\bigl(\alpha(g)\cdot(\varepsilon\zeta)\bigr) ,
 $$
 
 with $m$ the parity of the form.
 
-**Proof.** The action property is the contragredience, $\langle g\cdot(h\cdot\xi),m\rangle = \langle\xi,\pi(h)^{-1}\pi(g)^{-1}m\rangle = \langle(gh)\cdot\xi,m\rangle$. The grading statement is that the dual pairing respects the parity, so $(g\cdot\xi)$ evaluated on $M_j$ pairs with $M_j$; the transposition of the grading involution is computed from $\varepsilon^\# = \pm\varepsilon$. The sign rule is the conjugation identity transported to the dual by the transpose.
+**Proof.** The action property is the contragredience, $\langle g\cdot(h\cdot\zeta),m\rangle = \langle\zeta,\pi(h)^{-1}\pi(g)^{-1}m\rangle = \langle(gh)\cdot\zeta,m\rangle$. The grading statement is that the dual pairing respects the parity, so $(g\cdot\zeta)$ evaluated on $M_j$ pairs with $M_j$; the transposition of the grading involution is computed from $\varepsilon^\# = \pm\varepsilon$. The sign rule is the conjugation identity transported to the dual by the transpose.
 
 ## Continuity
 
@@ -131,7 +131,7 @@ A graded module over $(G,\alpha)$ with a nondegenerate graded form has a transpo
 | $g\cdot T = \pi(g)T\pi(g)^{-1}$ | the adjoint action on the endomorphisms |
 | $\varepsilon(g\cdot T)\varepsilon = \alpha(g)\cdot T^\varepsilon$ | the sign rule of the adjoint action |
 | $(g\cdot T)^\# = g\cdot T^\#$ | the unitary case, transpose and adjoint action commute |
-| $(g\cdot\xi)(m) = \xi(\pi(g)^{-1}m)$ | the coadjoint action on the dual module |
+| $(g\cdot\zeta)(m) = \zeta(\pi(g)^{-1}m)$ | the coadjoint action on the dual module |
 | $G_T$ | the stabiliser of $T$; the action is continuous iff every $G_T$ is open |
 
 ## Further Reading

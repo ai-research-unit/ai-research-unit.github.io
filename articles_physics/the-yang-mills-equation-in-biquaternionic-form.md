@@ -277,26 +277,26 @@ $$
 \qquad a \in \mathbb{C},
 $$
 
-with $\psi^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\psi * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\xi + \vec F, \vec\xi + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
+with $\psi^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i(\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\psi * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
 
 **The characteristic surface, by case.** The homogeneous equation $\nabla^+ B + \vec F\circ B = 0$ has plane-wave solutions supported on
 
 $$
-S = \left\{(\omega,\vec\xi) : (\vec\xi + \vec F, \vec\xi + \vec F) = \omega^2\right\},
+S = \left\{(\omega,\vec\zeta) : (\vec\zeta + \vec F, \vec\zeta + \vec F) = \omega^2\right\},
 $$
 
 with $(\cdot,\cdot)$ the complex-bilinear pairing. Writing $\vec F = -E - iH$ with $E, H$ real vectors, the surface degenerates according to which part of the coefficient is present:
 
 | Coefficient | Surface $S$ | Interpretation |
 |---|---|---|
-| real, $\vec F = -E$ | cone in $\mathbb{R}^4$ with vertex $(\omega,\vec\xi) = (0,E)$ | the coefficient shifts the vertex of the light cone; the kernel carries the phase weight $\exp(-i(E,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, a drift of the wave vector, not a curvature |
-| imaginary, $\vec F = -iH$ | the plane $(\vec\xi,H) = 0$ with the disc $\|\vec\xi\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $\exp(-(H,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, an exponential growth or decay along $H$ |
-| complex, $\vec F = -E - iH$ | the plane through $\vec\xi^* = E$ perpendicular to $H$, with the disc $\|\vec\xi - E\| < \|H\|$ removed | both effects at once, on a cone translated by $E$ |
+| real, $\vec F = -E$ | cone in $\mathbb{R}^4$ with vertex $(\omega,\vec\zeta) = (0,E)$ | the coefficient shifts the vertex of the light cone; the kernel carries the phase weight $\exp(-i(E,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, a drift of the wave vector, not a curvature |
+| imaginary, $\vec F = -iH$ | the plane $(\vec\zeta,H) = 0$ with the disc $\|\vec\zeta\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $\exp(-(H,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, an exponential growth or decay along $H$ |
+| complex, $\vec F = -E - iH$ | the plane through $\vec\zeta^* = E$ perpendicular to $H$, with the disc $\|\vec\zeta - E\| < \|H\|$ removed | both effects at once, on a cone translated by $E$ |
 
-The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\xi - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega\tau)$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and gives the stationary surface
+The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\zeta - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega\tau)$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and gives the stationary surface
 
 $$
-S^{\omega} = \left\{\vec\xi : (\vec\xi + i\vec F, \vec\xi + i\vec F) = \omega^2\right\},
+S^{\omega} = \left\{\vec\zeta : (\vec\zeta + i\vec F, \vec\zeta + i\vec F) = \omega^2\right\},
 $$
 
 with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \|A\|^2}$ centred at $B$ in the plane through $B$ perpendicular to $A$, where $\vec F = A + iB$ — a sphere of radius $|\omega|$ centred at $B$ when $A = 0$. Both characteristic surfaces are written here in the coefficient $\vec F$ itself, so they hold whatever identification it is given with the physical vectors. Letting $\omega \to 0$ gives the static solutions, and the elementary stationary potential is the plane wave of wave vector $K_F = H + \vec u_E\sqrt{\omega^2 + \|E\|^2}$ with $\vec u_E \perp E$, whose invariants are recorded in the twistor article.

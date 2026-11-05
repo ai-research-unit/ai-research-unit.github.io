@@ -9,7 +9,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 
 | Object | Its kernel and its inversion theorem | Introduced in |
 |---|---|---|
-| the Fourier transform on $\mathbb R^n$ | kernel $\exp(-2\pi i\langle x,\xi\rangle)$; inversion $\mathcal F f \mapsto f$ under $f \in L^1$ with $\mathcal F f \in L^1$, and the $L^2$ form by Plancherel | *Fourier Analysis on Euclidean Spaces* |
+| the Fourier transform on $\mathbb R^n$ | kernel $\exp(-2\pi i\langle x,\zeta\rangle)$; inversion $\mathcal F f \mapsto f$ under $f \in L^1$ with $\mathcal F f \in L^1$, and the $L^2$ form by Plancherel | *Fourier Analysis on Euclidean Spaces* |
 | the Fourier series on the circle | kernel $\exp(in\theta)$; inversion by the convergence of the partial sums, and by the Fejér and Cesàro means | *Real Harmonic Analysis*; *Fourier Analysis on Euclidean Spaces* |
 | the Fourier transform on a finite abelian group | the characters as kernel; discrete inversion by the orthogonality relations | *Harmonic Analysis on Groups* |
 | the Fourier transform on a locally compact abelian group | the characters of $\hat G$ as kernel; inversion and Plancherel for the Haar measure | *Harmonic Analysis on Groups* |
@@ -31,7 +31,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 | Object | Its kernel and its inversion theorem | Introduced in |
 |---|---|---|
 | the Hilbert transform on the line | kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^{n}$, $1<p<\infty$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
-| the Riesz transforms $R_j$ | symbols $-i\xi_j/\lvert\xi\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
+| the Riesz transforms $R_j$ | symbols $-i\zeta_j/\lvert\zeta\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Radon transform | integration over hyperplanes; inversion by the Fourier slice theorem and filtered back-projection | *Complex Harmonic Analysis* |
 | the wavelet transform | kernel $\psi((t-b)/a)/a$; inversion by the admissibility condition $\int \lvert\hat\psi(\omega)\rvert^2/\lvert\omega\rvert\,d\omega < \infty$ | *Complex Harmonic Analysis* |
 | the wavelet transform on a hypercomplex system | the same kernel with the system's scalings; inversion by the resolution of the identity | *Biquaternion Continuous Harmonic Analysis* |
@@ -44,7 +44,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 | the spherical transform on a symmetric space | the spherical functions as kernel; inversion by the Plancherel theorem for the spherical transform | *The Plancherel Theorem* |
 | the Fourier transform of a representation | the matrix coefficients as kernel; the Plancherel decomposition of a unitary representation | *Noncommutative Harmonic Analysis* |
 | the character of a representation | the trace of the representation, the degenerate kernel that inverts the decomposition | *Analysis on Compact Groups* |
-| the Wigner transform of a state | the matrix-element kernel $W(x,\xi)$ on phase space; its semiclassical defect measure is positive, carried by the energy surface and invariant under the Hamiltonian flow; inversion is the Weyl quantisation $\operatorname{Op}^w_\hbar$ | *Semiclassical Analysis*; *Pseudodifferential Operators* |
+| the Wigner transform of a state | the matrix-element kernel $W(x,\zeta)$ on phase space; its semiclassical defect measure is positive, carried by the energy surface and invariant under the Hamiltonian flow; inversion is the Weyl quantisation $\operatorname{Op}^w_\hbar$ | *Semiclassical Analysis*; *Pseudodifferential Operators* |
 
 ## Transforms That Do Not Satisfy Their Inversion Theorem
 

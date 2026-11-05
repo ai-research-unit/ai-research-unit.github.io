@@ -51,23 +51,23 @@ is a bijection between the bounded spherical functions and the characters of the
 
 ## The Zonal Spherical Function
 
-**Definition.** Let $\pi\in\operatorname{Irr}(G,K)$ and let $\xi\in\mathcal{H}_\pi^K$ be a unit $K$-fixed vector. The **zonal spherical function** of $\pi$ is
+**Definition.** Let $\pi\in\operatorname{Irr}(G,K)$ and let $\zeta\in\mathcal{H}_\pi^K$ be a unit $K$-fixed vector. The **zonal spherical function** of $\pi$ is
 
 $$
-\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle .
+\omega_\pi(x) = \langle\pi(x)\zeta,\zeta\rangle .
 $$
 
 It is bi-$K$-invariant, because both the vector and the inner product are $K$-invariant, and it is normalised, $\omega_\pi(e) = 1$.
 
-**Theorem (the zonal spherical function is spherical).** For $\pi\in\operatorname{Irr}(G,K)$ and a $K$-fixed unit vector $\xi$, the zonal spherical function satisfies the integral equation
+**Theorem (the zonal spherical function is spherical).** For $\pi\in\operatorname{Irr}(G,K)$ and a $K$-fixed unit vector $\zeta$, the zonal spherical function satisfies the integral equation
 
 $$
 \boxed{\;\int_K\omega_\pi(xky)\,dk = \omega_\pi(x)\omega_\pi(y)\;},
 $$
 
-and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\xi)$ is determined by $\omega_\pi$ up to unitary equivalence.
+and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\zeta)$ is determined by $\omega_\pi$ up to unitary equivalence.
 
-**Proof.** The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\xi$ onto $\mathbb{C}\xi$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\xi$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\xi,\xi\rangle dk = \langle\pi(x)P_\xi\pi(y)\xi,\xi\rangle$, and $\pi(y)\xi = \omega_\pi(y)\xi + $ (a vector orthogonal to $\xi$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of *Positive Definite Functions and the Gelfand–Raikov Theorem*, and the recovery is the GNS correspondence there.
+**Proof.** The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\zeta$ onto $\mathbb{C}\zeta$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\zeta$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\zeta,\zeta\rangle dk = \langle\pi(x)P_\zeta\pi(y)\zeta,\zeta\rangle$, and $\pi(y)\zeta = \omega_\pi(y)\zeta + $ (a vector orthogonal to $\zeta$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of *Positive Definite Functions and the Gelfand–Raikov Theorem*, and the recovery is the GNS correspondence there.
 
 **Corollary (the correspondence).** The map $\pi\mapsto\omega_\pi$ is a bijection from the spherical dual onto the positive definite spherical functions; through the identification with the characters it is the identification of the spherical dual with the spherical spectrum, $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$.
 
@@ -113,7 +113,7 @@ $$
 
 ## Summary
 
-For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions form a closed subalgebra $L^1(K\backslash G/K)$ of the group algebra, and $(G,K)$ is a **Gelfand pair** exactly when it is commutative; a spherical function is a continuous bi-$K$-invariant $\omega\ne0$ with $\int_K\omega(xky)dk = \omega(x)\omega(y)$, and then $\omega(e)=1$, $\omega(x^{-1})=\overline{\omega(x)}$, $|\omega|\leq1$, and $\omega$ is positive definite. The bounded spherical functions are exactly the characters of the invariant algebra, $\chi_\omega(f) = \int f\omega$, and they form the spherical spectrum $\Sigma(G,K)$; the zonal spherical function $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ of a spherical representation $\pi\in\operatorname{Irr}(G,K)$ with unit $K$-fixed vector $\xi$ is spherical, the map $\pi\mapsto\omega_\pi$ is a bijection $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and $\pi$ is recovered from $\omega_\pi$ by the GNS construction. The spherical transform $f\mapsto(\mathcal F f)(\omega) = \int f\omega$ is the Gelfand transform of the invariant algebra, multiplicative with $\widehat{f^*} = \overline{\mathcal F f}$, and the invariant $L^2$ space decomposes with multiplicity one as a direct integral of the spherical representations against the spherical Plancherel measure, with the plancherel identity $\int|f|^2 = \int|\mathcal F f|^2d\mu$. The adjoint, the measure on the spherical dual and the Hermitian forms are the neighbouring articles.
+For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions form a closed subalgebra $L^1(K\backslash G/K)$ of the group algebra, and $(G,K)$ is a **Gelfand pair** exactly when it is commutative; a spherical function is a continuous bi-$K$-invariant $\omega\ne0$ with $\int_K\omega(xky)dk = \omega(x)\omega(y)$, and then $\omega(e)=1$, $\omega(x^{-1})=\overline{\omega(x)}$, $|\omega|\leq1$, and $\omega$ is positive definite. The bounded spherical functions are exactly the characters of the invariant algebra, $\chi_\omega(f) = \int f\omega$, and they form the spherical spectrum $\Sigma(G,K)$; the zonal spherical function $\omega_\pi(x) = \langle\pi(x)\zeta,\zeta\rangle$ of a spherical representation $\pi\in\operatorname{Irr}(G,K)$ with unit $K$-fixed vector $\zeta$ is spherical, the map $\pi\mapsto\omega_\pi$ is a bijection $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and $\pi$ is recovered from $\omega_\pi$ by the GNS construction. The spherical transform $f\mapsto(\mathcal F f)(\omega) = \int f\omega$ is the Gelfand transform of the invariant algebra, multiplicative with $\widehat{f^*} = \overline{\mathcal F f}$, and the invariant $L^2$ space decomposes with multiplicity one as a direct integral of the spherical representations against the spherical Plancherel measure, with the plancherel identity $\int|f|^2 = \int|\mathcal F f|^2d\mu$. The adjoint, the measure on the spherical dual and the Hermitian forms are the neighbouring articles.
 
 ## Summary of Notation
 
@@ -126,7 +126,7 @@ For a compact subgroup $K$ of $G$, the bi-$K$-invariant integrable functions for
 | $\Sigma(G,K)$ | Spherical spectrum, the characters of the invariant algebra |
 | $\chi_\omega(f) = \int_G f\omega\,dx$ | The character attached to a bounded spherical function |
 | $\operatorname{Irr}(G,K)$ | The spherical dual, irreducible $\pi$ with $\mathcal{H}_\pi^K\ne0$ |
-| $\omega_\pi(x) = \langle\pi(x)\xi,\xi\rangle$ | The zonal spherical function |
+| $\omega_\pi(x) = \langle\pi(x)\zeta,\zeta\rangle$ | The zonal spherical function |
 | $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$ | The correspondence $\pi\mapsto\omega_\pi$ |
 | $(\mathcal F f)(\omega) = \int_G f\omega\,dx$ | The spherical transform (a Gelfand transform) |
 | $\mu$ | Spherical Plancherel measure on $\Sigma(G,K)$ |

@@ -4,13 +4,13 @@
 
 The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde q_1\tilde q_2$ of *Introduction to the Quaternion Algebra*, the multiplication of the quaternion algebra. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\xi\in\mathbb{H}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\zeta\in\mathbb{H}$ with
 
 $$
-\tilde\xi^2=0.
+\tilde\zeta^2=0.
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_t$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\xi^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_t$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\zeta^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
 
 **The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_t^2-|\vec q|^2]e_t+2q_t\vec q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_t[q_t^2-3|\vec q|^2]e_t+[3q_t^2-|\vec q|^2]\vec q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
 
@@ -22,49 +22,49 @@ The equations name a product, so the roots and the nilpotents are relative to it
 
 **The roots of $0$ are exactly the origin, $\Sigma_0=\{0\}$; there is no nonzero square-zero element.**
 
-A **root of $0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=0$, the square being the one of the quaternion product.
+A **root of $0$** is an element $\tilde\zeta\in\mathbb{H}$ with $\tilde\zeta^2=0$, the square being the one of the quaternion product.
 
 ### The Reduction
 
 Write the root in scalar and vector parts,
 
 $$
-\tilde\xi=\xi_te_t+\vec\xi,\qquad \vec\xi=\xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z,\qquad \xi_k\in\mathbb{R}.
+\tilde\zeta=\zeta_te_t+\vec\zeta,\qquad \vec\zeta=\zeta_x\vec e_x+\zeta_y\vec e_y+\zeta_z\vec e_z,\qquad \zeta_k\in\mathbb{R}.
 $$
 
-**Proposition (the reduction at the value $0$).** For $\tilde\xi=\xi_te_t+\vec\xi$,
+**Proposition (the reduction at the value $0$).** For $\tilde\zeta=\zeta_te_t+\vec\zeta$,
 
 $$
-\tilde\xi^2=0\qquad\Longleftrightarrow\qquad
+\tilde\zeta^2=0\qquad\Longleftrightarrow\qquad
 \begin{cases}
-2\xi_t\vec\xi=0,\\[2pt]
-\xi_t^2-|\vec\xi|^2=0.
+2\zeta_t\vec\zeta=0,\\[2pt]
+\zeta_t^2-|\vec\zeta|^2=0.
 \end{cases}
 $$
 
-*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the Quaternion Algebra* to $\lambda=0$: the square is $\tilde\xi^2=(\xi_t^2-|\vec\xi|^2)e_t+2\xi_t\vec\xi$, and the element vanishes exactly when both its parts do.
+*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the Quaternion Algebra* to $\lambda=0$: the square is $\tilde\zeta^2=(\zeta_t^2-|\vec\zeta|^2)e_t+2\zeta_t\vec\zeta$, and the element vanishes exactly when both its parts do.
 
-Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_t=0$ or $\vec\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_t=0$, or it is a real scalar, $\vec\xi=0$.
+Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\zeta_t=0$ or $\vec\zeta=0$. **Only the scalar equation survives on each branch**: the root is pure, $\zeta_t=0$, or it is a real scalar, $\vec\zeta=0$.
 
 ### The Scalar Case
 
-In the scalar case $\tilde\xi=\xi_te_t$ and the scalar equation reads $\xi_t^2=0$; since $\mathbb{R}$ is a field, $\xi_t=0$. The root in this case is the single element
+In the scalar case $\tilde\zeta=\zeta_te_t$ and the scalar equation reads $\zeta_t^2=0$; since $\mathbb{R}$ is a field, $\zeta_t=0$. The root in this case is the single element
 
 $$
-\tilde\xi=0,
+\tilde\zeta=0,
 $$
 
 the origin.
 
 ### The Pure Case Is Empty
 
-In the pure case $\tilde\xi=\vec\xi$ and the scalar equation reads
+In the pure case $\tilde\zeta=\vec\zeta$ and the scalar equation reads
 
 $$
--|\vec\xi|^2=0,
+-|\vec\zeta|^2=0,
 $$
 
-that is $\vec\xi=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\vec q|^2e_t$, which vanishes only at the origin.
+that is $\vec\zeta=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\vec q|^2e_t$, which vanishes only at the origin.
 
 ### Statement of the Theorem
 
@@ -72,11 +72,11 @@ that is $\vec\xi=0$: the pure branch returns the origin and no other element. **
 
 $$ \boxed{\; \Sigma_0=\{0\} \;} .$$
 
-*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_t=0$; the pure case gives $\vec\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
+*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\zeta_t=0$; the pure case gives $\vec\zeta=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
 
 ### Verification
 
-The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\vec\xi|^2=0$ and the scalar branch $\xi_t^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $\vec e_x$ has square $\vec e_x^2=-e_t\neq0$, and the element $e_t+\vec e_x$ has square $e_t+2\vec e_x+\vec e_x^2=2\vec e_x\neq0$.
+The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\vec\zeta|^2=0$ and the scalar branch $\zeta_t^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $\vec e_x$ has square $\vec e_x^2=-e_t\neq0$, and the element $e_t+\vec e_x$ has square $e_t+2\vec e_x+\vec e_x^2=2\vec e_x\neq0$.
 
 ### The Roots of Zero and the Nilpotents
 
@@ -183,7 +183,7 @@ The equation $\tilde q^2=0$ is the third of the three central power equations $\
 
 The square of the algebra is the square, and the criterion is $\tilde q^2=0$ if and only if $q_t=0$ and $\vec q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_t^2-|\vec q|^2$ and the vector coefficient $2q_t\vec q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
 
-The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\xi_t=0$ and the pure branch gives $\vec\xi=0$, both returning the origin. This is the opposite of the roots of $+e_t$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
+The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\zeta_t=0$ and the pure branch gives $\vec\zeta=0$, both returning the origin. This is the opposite of the roots of $+e_t$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
 
 The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\vec q|^2e_t$ and a nonzero scalar the positive square $s^2e_t$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the Quaternion Algebra*.
 
@@ -208,7 +208,7 @@ The nilpotent class is empty: there is no nilpotent cone, the set of square-zero
 
 - [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html), for the product, the unit and the square.
 - [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html), for the central reduction specialised here, the roots of $+e_t$, the idempotents and their disjointness from the square-zero class.
-- [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $0$ here are the degenerate case.
+- [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the roots of the general quadratic $\tilde\zeta^2=\tilde q$, of which the roots of $0$ here are the degenerate case.
 - [Zero Divisors of the Quaternion Algebra](zero-divisors-of-the-quaternion-algebra.html), for the empty zero-divisor set and the two families of the complexified block.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), for the folding of the empty classes.
 - [Nilpotents](nilpotents.html), the complexified counterpart, for the pure isotropic cone, its real dimension four and the index-two theorem.

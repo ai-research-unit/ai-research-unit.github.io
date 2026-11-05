@@ -63,7 +63,7 @@ $$
 
 *Proof.* The idempotents are orthogonal and act as the identity on the two coordinates, so the products collapse to the diagonal terms; the two Wirtinger derivatives commute because partial derivatives do; and the identity for $\Delta$ is the Laplacian theorem of *Reduced Biquaternion Analysis*, §*The Differential Operators*.
 
-**Theorem (the symbol and the characteristic set).** The principal symbol of $\partial/\partial\bar Q_{+}$ at a covector $(\xi_{a},\xi_{a'},\xi_{b},\xi_{b'})$ is $\tfrac14[(\xi_{a}+\xi_{b})+i(\xi_{a'}+\xi_{b'})]$, which vanishes exactly on the two-plane $\xi_{a}+\xi_{b}=0$, $\xi_{a'}+\xi_{b'}=0$; the symbol of $\partial/\partial\bar Q_{-}$ vanishes on the two-plane $\xi_{a}-\xi_{b}=0$, $\xi_{a'}-\xi_{b'}=0$. The characteristic set of the operator is the union of the two two-planes, and the operator is elliptic at no point.
+**Theorem (the symbol and the characteristic set).** The principal symbol of $\partial/\partial\bar Q_{+}$ at a covector $(\zeta_{a},\zeta_{a'},\zeta_{b},\zeta_{b'})$ is $\tfrac14[(\zeta_{a}+\zeta_{b})+i(\zeta_{a'}+\zeta_{b'})]$, which vanishes exactly on the two-plane $\zeta_{a}+\zeta_{b}=0$, $\zeta_{a'}+\zeta_{b'}=0$; the symbol of $\partial/\partial\bar Q_{-}$ vanishes on the two-plane $\zeta_{a}-\zeta_{b}=0$, $\zeta_{a'}-\zeta_{b'}=0$. The characteristic set of the operator is the union of the two two-planes, and the operator is elliptic at no point.
 
 *Proof.* The symbols are read off the real-coordinate forms above, and a complex expression $p+iq$ vanishes exactly when both real functions vanish; the two conditions are each two independent real linear equations, hence a two-plane, and the characteristic set is the zero set of the product of the two symbols.
 

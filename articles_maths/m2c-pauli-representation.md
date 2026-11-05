@@ -44,15 +44,15 @@ The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$
 
 **The root.** The element
 $$
-\vec\Xi=i\vec e_z
+\vec{Ζ}=i\vec e_z
 $$
 is a vector, and its square is the unit,
 $$
-\vec\Xi^2=i^2\vec e_z^2=(-1)(-e_t)=e_t .
+\vec{Ζ}^2=i^2\vec e_z^2=(-1)(-e_t)=e_t .
 $$
 The two idempotents are the two spectral projections of the root,
 $$
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2}=\tfrac12(e_t\pm i\vec e_z),
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2}=\tfrac12(e_t\pm i\vec e_z),
 $$
 with
 $$
@@ -60,13 +60,13 @@ $$
 \tilde\Pi_-^2=\tilde\Pi_-,\qquad
 \tilde\Pi_+\tilde\Pi_-=0,\qquad
 \tilde\Pi_++\tilde\Pi_-=e_t,\qquad
-\tilde\Pi_+-\tilde\Pi_-=\vec\Xi .
+\tilde\Pi_+-\tilde\Pi_-=\vec{Ζ} .
 $$
 The root is not central, and the choice of the $z$ direction is a genuine choice.
 
 **The images.** The compression sends the root and the two idempotents to the grading matrix and the two coordinate projections:
 $$
-\mathsf M_2(\vec\Xi)=\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+\mathsf M_2(\vec{Ζ})=\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
 \mathsf M_2(\tilde\Pi_+)=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 \mathsf M_2(\tilde\Pi_-)=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
 $$
@@ -535,22 +535,22 @@ of complex dimension two, so every polynomial in $A$ of degree at least two is a
 
 ## The Spectral Projectors
 
-**The element's own root.** The root of §*The Root and the Two Idempotents* is fixed, $\vec\Xi=i\vec e_z$, and the standard frame is adapted to it. A general element carries its own root, in the direction of its vector part, and its own pair of idempotents. The construction is the one already given, with the axis replaced by the element.
+**The element's own root.** The root of §*The Root and the Two Idempotents* is fixed, $\vec{Ζ}=i\vec e_z$, and the standard frame is adapted to it. A general element carries its own root, in the direction of its vector part, and its own pair of idempotents. The construction is the one already given, with the axis replaced by the element.
 
 ### The Two Projectors of an Element
 
 **The root.** Let $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$ and let $B$ be a square root. Then
 $$
-\vec\Xi=-\frac{i}{B}\vec Q,\qquad
-\vec\Xi^2=\frac{i^2}{B^2}\vec Q^2=\frac{(-1)(-B^2e_t)}{B^2}=e_t ,
+\vec{Ζ}=-\frac{i}{B}\vec Q,\qquad
+\vec{Ζ}^2=\frac{i^2}{B^2}\vec Q^2=\frac{(-1)(-B^2e_t)}{B^2}=e_t ,
 $$
 using $\vec Q^2=-B^2e_t$. The two spectral projectors are
 $$
-\rho_\pm=\tfrac12\bigl(\mathrm I_2\pm\mathsf M_2(\vec\Xi)\bigr),
+\rho_\pm=\tfrac12\bigl(\mathrm I_2\pm\mathsf M_2(\vec{Ζ})\bigr),
 $$
 and with
 $$
-\mathsf M_2(\vec\Xi)=\frac1B\begin{pmatrix}-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&Q_z\end{pmatrix}
+\mathsf M_2(\vec{Ζ})=\frac1B\begin{pmatrix}-Q_z&-Q_x+iQ_y\\-Q_x-iQ_y&Q_z\end{pmatrix}
 $$
 they are
 $$
@@ -558,7 +558,7 @@ $$
 \rho_-=\frac{1}{2B}\begin{pmatrix}B+Q_z&Q_x-iQ_y\\Q_x+iQ_y&B-Q_z\end{pmatrix}.
 $$
 
-The choice of square root $B$ exchanges the two labels, since $\vec\Xi$ changes sign with $B$.
+The choice of square root $B$ exchanges the two labels, since $\vec{Ζ}$ changes sign with $B$.
 
 **Proposition.** The two matrices are idempotents of rank one and trace one, they are complementary, they annihilate one another, and they commute with $A$:
 $$
@@ -571,11 +571,11 @@ $$
 A\rho_\pm=\rho_\pm A .
 $$
 
-*Proof.* The element $\vec\Xi$ squares to the unit, so $\tfrac12(e_t\pm\vec\Xi)$ are idempotent, complementary and orthogonal; applying the isomorphism $\mathsf M_2$ gives the first four identities. The trace of $\rho_\pm$ is $\tfrac12(2\pm0)=1$, and an idempotent of trace one has rank one, hence determinant zero. For the commutation, use
+*Proof.* The element $\vec{Ζ}$ squares to the unit, so $\tfrac12(e_t\pm\vec{Ζ})$ are idempotent, complementary and orthogonal; applying the isomorphism $\mathsf M_2$ gives the first four identities. The trace of $\rho_\pm$ is $\tfrac12(2\pm0)=1$, and an idempotent of trace one has rank one, hence determinant zero. For the commutation, use
 $$
-A=Q_t\mathrm I_2+\mathsf M_2(\vec Q)=Q_t\mathrm I_2+iB\,\mathsf M_2(\vec\Xi),
+A=Q_t\mathrm I_2+\mathsf M_2(\vec Q)=Q_t\mathrm I_2+iB\,\mathsf M_2(\vec{Ζ}),
 $$
-which exhibits $A$ as a polynomial in $\mathsf M_2(\vec\Xi)$.
+which exhibits $A$ as a polynomial in $\mathsf M_2(\vec{Ζ})$.
 
 **The spectral decomposition.** From the same identity,
 $$
@@ -594,9 +594,9 @@ A=\lambda_+\rho_++\lambda_-\rho_-,\qquad
 $$
 The trace and the determinant of §*The Trace* and §*The Determinant* are the symmetric functions of the pair: $\operatorname{Tr}A=\lambda_++\lambda_-=2Q_t$ and $\det A=\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$. The two sections are therefore the spectral theorem of this article, read without naming the projectors.
 
-**The standard pair is one case.** On the axis $\vec Q=-B\vec e_z$, that is $Q_x=Q_y=0$ and $Q_z=-B$, the root is $\vec\Xi=i\vec e_z$ and the two projectors are $E_{11}$ and $E_{22}$. The standard pair is the spectral pair of the element $Q_te_t-B\vec e_z$; for $Q_z=+B$ the two labels are exchanged. The fixed root of the Peirce frame is one point of the family, not a separate construction.
+**The standard pair is one case.** On the axis $\vec Q=-B\vec e_z$, that is $Q_x=Q_y=0$ and $Q_z=-B$, the root is $\vec{Ζ}=i\vec e_z$ and the two projectors are $E_{11}$ and $E_{22}$. The standard pair is the spectral pair of the element $Q_te_t-B\vec e_z$; for $Q_z=+B$ the two labels are exchanged. The fixed root of the Peirce frame is one point of the family, not a separate construction.
 
-**When they are Hermitian.** The projectors satisfy $\rho_\pm^{\dagger}=\rho_\pm$ exactly when $\mathsf M_2(\vec\Xi)$ is Hermitian. This holds on the Hermitian strata: if $\tilde Q^{*}=\tilde Q$ then $A=A^{\dagger}$ and $B^2=-\lvert\vec q'\rvert^2$, so $iB$ is real and $\mathsf M_2(\vec\Xi)=(A-Q_t\mathrm I_2)/(iB)$ is Hermitian. There the two projectors are the orthogonal projectors of the Hermitian matrix. For a general complex element they are not, and $\rho_\pm^{\dagger}$ is the projector of the conjugate direction: the spectral projectors of a complex element are not orthogonal projectors.
+**When they are Hermitian.** The projectors satisfy $\rho_\pm^{\dagger}=\rho_\pm$ exactly when $\mathsf M_2(\vec{Ζ})$ is Hermitian. This holds on the Hermitian strata: if $\tilde Q^{*}=\tilde Q$ then $A=A^{\dagger}$ and $B^2=-\lvert\vec q'\rvert^2$, so $iB$ is real and $\mathsf M_2(\vec{Ζ})=(A-Q_t\mathrm I_2)/(iB)$ is Hermitian. There the two projectors are the orthogonal projectors of the Hermitian matrix. For a general complex element they are not, and $\rho_\pm^{\dagger}$ is the projector of the conjugate direction: the spectral projectors of a complex element are not orthogonal projectors.
 
 **The degenerate case.** When $B^2=0$ the two eigenvalues coincide and the formula has no limit. The element is then either scalar, with minimal polynomial $t-Q_t$, or non-scalar with a single eigenvalue and a nontrivial Jordan block, and the two projectors do not exist. The rest of this section is about the regular case $B^2\neq0$.
 
@@ -818,7 +818,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k^2=-e_t$ |
 | $\tilde Q=Q_te_t+\vec Q$ | an element, $Q_\mu=q_\mu+iq'_\mu$ |
 | $B^2$, $\langle\tilde Q\rangle_{\natural}$ | $Q_x^2+Q_y^2+Q_z^2$ and $Q_t^2+B^2$ |
-| $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
+| $\vec{Ζ}=i\vec e_z$ | the root, $\vec{Ζ}^2=e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the standard idempotents |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the standard nilpotents |
 | $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the Peirce frame |
@@ -834,7 +834,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\mathrm{J}$ | the matrix transpose, $\mathrm{J}(A)=A^{\mathsf T}$ |
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
-| $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$ | the spectral projectors of the element, $\vec\Xi=-i\vec Q/B$ |
+| $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec{Ζ}))$ | the spectral projectors of the element, $\vec{Ζ}=-i\vec Q/B$ |
 | $\mathsf C_Q$ | the diagonalising matrix, $\mathsf C_Q^{-1}A\mathsf C_Q=\operatorname{diag}(\lambda_+,\lambda_-)$ |
 | $\operatorname{adj}A=(\operatorname{Tr}A)\mathrm I_2-A$ | the adjugate, the image of $\tilde Q^{\natural}$ |
 | $P,N,H,K$ | the four norms: plain, quaternionic, Hermitian, Krein |

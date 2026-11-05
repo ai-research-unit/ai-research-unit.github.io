@@ -451,7 +451,7 @@ $$
 
 **Factorization of the Laplacian.** $\bar{D} D = \Delta$.
 
-**Ellipticity.** The symbol of $D$ is $\sigma_D(\xi) = \xi_t + \vec e_x \xi_x + \vec e_y \xi_y + \vec e_z \xi_z$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.
+**Ellipticity.** The symbol of $D$ is $\sigma_D(\zeta) = \zeta_t + \vec e_x \zeta_x + \vec e_y \zeta_y + \vec e_z \zeta_z$, which is invertible for every non-zero $\zeta \in \mathbb{R}^4$. So $D$ is elliptic.
 
 **Fundamental solution.** The fundamental solution of $D$ is
 

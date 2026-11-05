@@ -47,7 +47,7 @@ as a homogeneous space, and the isotropy representation of $SO(n)$ on the tangen
 
 ## The One-Parameter Subgroups
 
-**Definition.** A **one-parameter subgroup** of the isometry group is a continuous homomorphism $t \mapsto g_t$ from the additive group $\mathbb{R}$ into $\operatorname{Isom}(\mathbb{H}^n)$; it is the exponential of an element $\xi$ of the Lie algebra $\mathfrak{so}(n,1)$, $g_t = \exp(t\xi)$, and it acts on $\mathbb{H}^n$ as a one-parameter group of isometries. The one-parameter subgroups are the **one-sided operators** of the hyperbolic space, the two-sided operators being the general isometries.
+**Definition.** A **one-parameter subgroup** of the isometry group is a continuous homomorphism $t \mapsto g_t$ from the additive group $\mathbb{R}$ into $\operatorname{Isom}(\mathbb{H}^n)$; it is the exponential of an element $\zeta$ of the Lie algebra $\mathfrak{so}(n,1)$, $g_t = \exp(t\zeta)$, and it acts on $\mathbb{H}^n$ as a one-parameter group of isometries. The one-parameter subgroups are the **one-sided operators** of the hyperbolic space, the two-sided operators being the general isometries.
 
 **Theorem.** A one-parameter subgroup of $SO^+(n,1)$ is, up to conjugacy, of exactly one of the three types:
 

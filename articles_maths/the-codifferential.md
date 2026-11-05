@@ -34,9 +34,9 @@ $$
 \delta\alpha = -\operatorname{div}\alpha^\sharp,
 $$
 
-minus the divergence of the metric dual field. Its principal symbol is $\sigma_1(\delta)(x,\xi) = -\iota_{\xi^\flat}$, minus the contraction with the metric dual of $\xi$.
+minus the divergence of the metric dual field. Its principal symbol is $\sigma_1(\delta)(x,\zeta) = -\iota_{\zeta^\flat}$, minus the contraction with the metric dual of $\zeta$.
 
-*Proof.* The Hodge star is a pointwise algebraic operator and the exterior derivative is first order, so the composition is first order; the local formula is the standard identity obtained by expanding the star in an orthonormal frame, and it is checked on a $1$-form by comparing with $\star d\star\alpha$ and using $\star\star=\pm1$ and the sign of the top-degree formula. For the symbol, the star is zeroth order, so $\sigma_1(\delta)(\xi)$ is the composition of the symbol of $d$ with the star; on the exterior algebra the star intertwines the multiplication by $\xi$ with the contraction by $\xi^\flat$ up to the sign $(-1)^{k(n-k)}$, which is the displayed $-\iota_{\xi^\flat}$.
+*Proof.* The Hodge star is a pointwise algebraic operator and the exterior derivative is first order, so the composition is first order; the local formula is the standard identity obtained by expanding the star in an orthonormal frame, and it is checked on a $1$-form by comparing with $\star d\star\alpha$ and using $\star\star=\pm1$ and the sign of the top-degree formula. For the symbol, the star is zeroth order, so $\sigma_1(\delta)(\zeta)$ is the composition of the symbol of $d$ with the star; on the exterior algebra the star intertwines the multiplication by $\zeta$ with the contraction by $\zeta^\flat$ up to the sign $(-1)^{k(n-k)}$, which is the displayed $-\iota_{\zeta^\flat}$.
 
 **Corollary.** $\delta^2 = 0$, so the codifferential is a coboundary of the **dual complex**
 
@@ -72,7 +72,7 @@ $$
 
 The exponent $k + n(k+1)+1 = n(k+1)+k+1 = (n+1)(k+1)$ is even when $n$ is odd and when $n$ is even has the parity of $k+1$; the standard cancellation of the two signs of the star, $\alpha\wedge\star\delta\beta = \langle\alpha,\delta\beta\rangle\mathrm{vol}_g$ up to the same sign, gives $\langle d\alpha,\beta\rangle\mathrm{vol}_g = d(\alpha\wedge\star\beta) + \langle\alpha,\delta\beta\rangle\mathrm{vol}_g$ with the signs arranged as in the reference; integrating and applying Stokes' theorem, the boundary term $\int_M d(\alpha\wedge\star\beta)$ vanishes on a closed manifold and for compact support, leaving the identity.
 
-**Corollary.** The codifferential is the formal adjoint of $d$, so its symbol is minus the transpose of the symbol of $d$, $\sigma_1(\delta)(\xi) = -\bigl(\xi\wedge\cdot\bigr)^{*} = -\iota_{\xi^\flat}$, in agreement with the local formula. The Laplace–de Rham operator $\Delta = d\delta+\delta d$ is formally self-adjoint.
+**Corollary.** The codifferential is the formal adjoint of $d$, so its symbol is minus the transpose of the symbol of $d$, $\sigma_1(\delta)(\zeta) = -\bigl(\zeta\wedge\cdot\bigr)^{*} = -\iota_{\zeta^\flat}$, in agreement with the local formula. The Laplace–de Rham operator $\Delta = d\delta+\delta d$ is formally self-adjoint.
 
 ## The Laplace–de Rham Operator
 
@@ -129,12 +129,12 @@ where $\nabla^*\nabla = -\sum_i\nabla_{e_i}\nabla_{e_i} + \cdots$ is the connect
 **Proposition.** The Laplace–de Rham operator has principal symbol
 
 $$
-\sigma_2(\Delta)(x,\xi) = -\lvert\xi\rvert_g^2\,\mathrm{id}_{\Lambda^kT^*_xM},
+\sigma_2(\Delta)(x,\zeta) = -\lvert\zeta\rvert_g^2\,\mathrm{id}_{\Lambda^kT^*_xM},
 $$
 
-invertible for $\xi \neq 0$; hence $\Delta$ is elliptic, and so is the de Rham complex of which it is the Laplace-type operator. Its ellipticity is the exactness of the symbol sequence of the exterior derivative, the identity $\iota_\eta(\xi\wedge\alpha)+\xi\wedge\iota_\eta\alpha=\alpha$ of *The Exterior Derivative*; the two formulations are the same statement read on the complex and on the operator.
+invertible for $\zeta \neq 0$; hence $\Delta$ is elliptic, and so is the de Rham complex of which it is the Laplace-type operator. Its ellipticity is the exactness of the symbol sequence of the exterior derivative, the identity $\iota_\eta(\zeta\wedge\alpha)+\zeta\wedge\iota_\eta\alpha=\alpha$ of *The Exterior Derivative*; the two formulations are the same statement read on the complex and on the operator.
 
-*Proof.* The symbol of $d$ is $\xi\wedge\cdot$ and the symbol of $\delta$ is $-\iota_{\xi^\flat}$; the symbol of the composition $d\delta+\delta d$ is therefore $-(\xi\wedge\iota_{\xi^\flat}+\iota_{\xi^\flat}\xi\wedge) = -\lvert\xi\rvert^2\mathrm{id}$ by the fundamental identity of a Clifford algebra with $\langle\xi,\xi^\flat\rangle = \lvert\xi\rvert^2$. The displayed symbol is a negative multiple of the identity, invertible off the zero section.
+*Proof.* The symbol of $d$ is $\zeta\wedge\cdot$ and the symbol of $\delta$ is $-\iota_{\zeta^\flat}$; the symbol of the composition $d\delta+\delta d$ is therefore $-(\zeta\wedge\iota_{\zeta^\flat}+\iota_{\zeta^\flat}\zeta\wedge) = -\lvert\zeta\rvert^2\mathrm{id}$ by the fundamental identity of a Clifford algebra with $\langle\zeta,\zeta^\flat\rangle = \lvert\zeta\rvert^2$. The displayed symbol is a negative multiple of the identity, invertible off the zero section.
 
 ## The Codifferential in the Cartan Calculus
 
@@ -158,9 +158,9 @@ with the divergence of the previous entry of this group; the formula is the inte
 
 ## Summary
 
-The codifferential is $\delta = (-1)^{n(k+1)+1}\star d\star$, the formal adjoint of the exterior derivative; it is a first-order operator with the local formula $\delta\omega = -\sum_i\iota_{e_i}\nabla_{e_i}\omega$, minus the divergence on the $1$-forms, and with the symbol $-\iota_{\xi^\flat}$. It satisfies $\delta^2=0$ and $\int\langle d\alpha,\beta\rangle\,\mathrm{vol} = \int\langle\alpha,\delta\beta\rangle\,\mathrm{vol}$ by integration by parts, the identity that fixes its sign convention.
+The codifferential is $\delta = (-1)^{n(k+1)+1}\star d\star$, the formal adjoint of the exterior derivative; it is a first-order operator with the local formula $\delta\omega = -\sum_i\iota_{e_i}\nabla_{e_i}\omega$, minus the divergence on the $1$-forms, and with the symbol $-\iota_{\zeta^\flat}$. It satisfies $\delta^2=0$ and $\int\langle d\alpha,\beta\rangle\,\mathrm{vol} = \int\langle\alpha,\delta\beta\rangle\,\mathrm{vol}$ by integration by parts, the identity that fixes its sign convention.
 
-With $d$ it forms the Laplace–de Rham operator $\Delta = d\delta+\delta d$, which is formally self-adjoint and nonnegative, $\langle\Delta\alpha,\alpha\rangle = \lVert d\alpha\rVert^2+\lVert\delta\alpha\rVert^2$, and which commutes with both $d$ and $\delta$. Its kernel is the space of harmonic forms, the intersection of the closed and the coclosed; on a closed manifold the Hodge theorem identifies it with the de Rham cohomology and gives the orthogonal Hodge decomposition. The Weitzenböck formula $\Delta = \nabla^*\nabla+\mathcal R$ writes the operator through the covariant derivative and a curvature term, and the Bochner argument reads the vanishing of the harmonic forms — and hence of the Betti numbers — from the positivity of $\mathcal R$. The principal symbol is $-\lvert\xi\rvert_g^2$, so $\Delta$, and with it the de Rham complex, is elliptic; the exactness of the symbol sequence of $d$ is the same statement.
+With $d$ it forms the Laplace–de Rham operator $\Delta = d\delta+\delta d$, which is formally self-adjoint and nonnegative, $\langle\Delta\alpha,\alpha\rangle = \lVert d\alpha\rVert^2+\lVert\delta\alpha\rVert^2$, and which commutes with both $d$ and $\delta$. Its kernel is the space of harmonic forms, the intersection of the closed and the coclosed; on a closed manifold the Hodge theorem identifies it with the de Rham cohomology and gives the orthogonal Hodge decomposition. The Weitzenböck formula $\Delta = \nabla^*\nabla+\mathcal R$ writes the operator through the covariant derivative and a curvature term, and the Bochner argument reads the vanishing of the harmonic forms — and hence of the Betti numbers — from the positivity of $\mathcal R$. The principal symbol is $-\lvert\zeta\rvert_g^2$, so $\Delta$, and with it the de Rham complex, is elliptic; the exactness of the symbol sequence of $d$ is the same statement.
 
 ## Summary of Notation
 
@@ -169,7 +169,7 @@ With $d$ it forms the Laplace–de Rham operator $\Delta = d\delta+\delta d$, wh
 | $\star$, $\alpha\wedge\star\beta = \langle\alpha,\beta\rangle_g\,\mathrm{vol}_g$ | Hodge star; $\star\star = (-1)^{k(n-k)}$ on $\Omega^k$ |
 | $\delta = (-1)^{n(k+1)+1}\star d\star$ | Codifferential; lowers the degree by one |
 | $\delta\omega = -\sum_i\iota_{e_i}\nabla_{e_i}\omega$ | Local formula; minus the divergence on $1$-forms |
-| $\sigma_1(\delta)(\xi) = -\iota_{\xi^\flat}$ | Principal symbol of the codifferential |
+| $\sigma_1(\delta)(\zeta) = -\iota_{\zeta^\flat}$ | Principal symbol of the codifferential |
 | $\delta^2 = 0$ | Dual complex $0 \to \Omega^n \xrightarrow{\delta} \cdots \to \Omega^0 \to 0$ |
 | $\int\langle d\alpha,\beta\rangle = \int\langle\alpha,\delta\beta\rangle$ | Adjointness; integration by parts |
 | $\Delta = d\delta+\delta d$ | Laplace–de Rham operator; order two, self-adjoint, nonnegative |
@@ -177,7 +177,7 @@ With $d$ it forms the Laplace–de Rham operator $\Delta = d\delta+\delta d$, wh
 | $\mathcal H^k(M)$ | Harmonic $k$-forms; $\mathcal H^k \cong H^k_{dR}(M)$ |
 | $\Omega^k = \mathcal H^k\oplus d\Omega^{k-1}\oplus\delta\Omega^{k+1}$ | Hodge decomposition |
 | $\Delta = \nabla^*\nabla+\mathcal R$ | Weitzenböck formula; $\mathcal R=\operatorname{Ric}$ on $1$-forms |
-| $\sigma_2(\Delta)(\xi) = -\lvert\xi\rvert_g^2\,\mathrm{id}$ | Symbol; ellipticity of $\Delta$ and of the de Rham complex |
+| $\sigma_2(\Delta)(\zeta) = -\lvert\zeta\rvert_g^2\,\mathrm{id}$ | Symbol; ellipticity of $\Delta$ and of the de Rham complex |
 | $\mathcal L_X^* = -\mathcal L_X-\operatorname{div}X$ | $L^2$ adjoint of the Lie derivative |
 
 ## Further Reading

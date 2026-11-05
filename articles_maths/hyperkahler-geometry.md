@@ -79,7 +79,7 @@ $$
 \mu = (\mu_1,\mu_2,\mu_3) : M \longrightarrow \mathrm{K}^*\otimes\mathbb{R}^3,
 $$
 
-where each $\mu_i:M\to\mathrm{K}^*$ is a moment map for the action on the symplectic manifold $(M,\Omega_i)$, and $\mathrm{K}$ is the Lie algebra of $K$. Its components satisfy $d\langle\mu_i, \xi\rangle = \iota_{\xi_M}\Omega_i$ for the fundamental vector field $\xi_M$ of $\xi\in\mathrm{K}$, the sign convention of *Symplectic Geometry*.
+where each $\mu_i:M\to\mathrm{K}^*$ is a moment map for the action on the symplectic manifold $(M,\Omega_i)$, and $\mathrm{K}$ is the Lie algebra of $K$. Its components satisfy $d\langle\mu_i, \zeta\rangle = \iota_{\zeta_M}\Omega_i$ for the fundamental vector field $\zeta_M$ of $\zeta\in\mathrm{K}$, the sign convention of *Symplectic Geometry*.
 
 **Theorem (hyperkähler quotient).** Let $K$ act on a hyperkähler manifold $M$ with a hyperkähler moment map $\mu$, and let the action be free and proper on the common zero locus $\mu^{-1}(0)$. Then the quotient
 

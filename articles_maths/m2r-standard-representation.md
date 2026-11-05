@@ -243,7 +243,7 @@ P_\pm=\frac{\mathsf{M}_2(\tilde q)-\lambda_\mp I}{\lambda_+-\lambda_-},
 P_+^2=P_+,\quad P_-^2=P_-,\quad P_+P_-=0,\quad P_++P_-=I,
 $$
 
-and they are rank-one, of trace one and determinant zero. They are the images of the two idempotents of the algebra constructed by the halving map: if $\tilde\xi^2=e_t$ then $\tilde\pi=\tfrac12(e_t+\tilde\xi)$ is idempotent, and every nontrivial idempotent arises this way from a pure root of one, $\tilde\xi=\vec v$ with $\langle\vec v\rangle_{\natural}=-1$. In the model the condition is $\det P=0$ with $\operatorname{tr}P=1$ and $P^2=P$, which is the same thing.
+and they are rank-one, of trace one and determinant zero. They are the images of the two idempotents of the algebra constructed by the halving map: if $\tilde\zeta^2=e_t$ then $\tilde\pi=\tfrac12(e_t+\tilde\zeta)$ is idempotent, and every nontrivial idempotent arises this way from a pure root of one, $\tilde\zeta=\vec v$ with $\langle\vec v\rangle_{\natural}=-1$. In the model the condition is $\det P=0$ with $\operatorname{tr}P=1$ and $P^2=P$, which is the same thing.
 
 **The idempotent hyperboloid.** The pure roots of one satisfy $v_x^2-v_y^2-v_z^2=-1$, that is $v_y^2+v_z^2=v_x^2+1$, a connected one-sheeted hyperboloid inside $V$. Its image under the halving map is the connected two-dimensional family of nontrivial idempotents, and the model carries it to the connected family of rank-one projections of trace one.
 
@@ -323,7 +323,7 @@ $$
 \mathbb{H}^{\mathrm{spl}}\tilde x=\{X:\operatorname{Im}X\subseteq L\},
 $$
 
-and the line $L$ depends only on the ideal. Such a set is two-dimensional, spanned by $u\xi_1^{\mathsf T}$ and $u\xi_2^{\mathsf T}$ for a generator $u$ of $L$, so it is a minimal left ideal; the minimal left ideals are therefore parametrised by the lines of $\mathbb{R}^2$, that is by $\mathbb{P}^1(\mathbb{R})$, and the same argument on the right gives the minimal right ideals, parametrised by the lines of the dual, which is again $\mathbb{P}^1(\mathbb{R})$.
+and the line $L$ depends only on the ideal. Such a set is two-dimensional, spanned by $u\zeta_1^{\mathsf T}$ and $u\zeta_2^{\mathsf T}$ for a generator $u$ of $L$, so it is a minimal left ideal; the minimal left ideals are therefore parametrised by the lines of $\mathbb{R}^2$, that is by $\mathbb{P}^1(\mathbb{R})$, and the same argument on the right gives the minimal right ideals, parametrised by the lines of the dual, which is again $\mathbb{P}^1(\mathbb{R})$.
 
 **The action.** The units act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of ${\mathbb{H}^{\mathrm{spl}}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is
 
@@ -333,7 +333,7 @@ $$
 
 and the action of the algebra's automorphism group on its minimal left ideals is faithful. This is the geometric content of the previous section's abstract statement that the automorphisms are inner.
 
-**The chart and the Möbius formula.** On the chart $t=\xi_1/\xi_2$ of a line $[\xi]$ with $\xi_2\neq0$, a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts by
+**The chart and the Möbius formula.** On the chart $t=\zeta_1/\zeta_2$ of a line $[\zeta]$ with $\zeta_2\neq0$, a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ acts by
 
 $$
 t\longmapsto\frac{at+b}{ct+d},

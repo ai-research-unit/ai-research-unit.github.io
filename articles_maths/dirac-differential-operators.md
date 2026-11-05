@@ -13,13 +13,13 @@ The boundaries are these. The flat Cauchy–Riemann operator of the corpus, with
 
 ### Clifford Multiplication and the Definition
 
-Let $M$ be a Riemannian manifold of dimension $m$ with metric $g$, and let $S\to M$ be a bundle of modules over the Clifford bundle $\mathrm{Cl}(TM,g)$; the fibre $S_x$ is a Clifford module over $\mathrm{Cl}(T_xM,g_x)$, as in *Clifford Modules and the Twisted Cauchy–Riemann Operator*. Write $c(\xi)$ for Clifford multiplication by a tangent vector $\xi$, so that
+Let $M$ be a Riemannian manifold of dimension $m$ with metric $g$, and let $S\to M$ be a bundle of modules over the Clifford bundle $\mathrm{Cl}(TM,g)$; the fibre $S_x$ is a Clifford module over $\mathrm{Cl}(T_xM,g_x)$, as in *Clifford Modules and the Twisted Cauchy–Riemann Operator*. Write $c(\zeta)$ for Clifford multiplication by a tangent vector $\zeta$, so that
 
 $$
-c(\xi)c(\eta)+c(\eta)c(\xi)=-2g(\xi,\eta)\,1_S ,
+c(\zeta)c(\eta)+c(\eta)c(\zeta)=-2g(\zeta,\eta)\,1_S ,
 $$
 
-the sign convention being the one of the flat Euclidean Clifford algebra with $e_i^2=-1$ used throughout the corpus. Suppose $S$ carries a Hermitian metric $\langle\cdot,\cdot\rangle$ with respect to which every $c(\xi)$ is skew, $c(\xi)^*=-c(\xi)$; such a metric exists for a Clifford module and is the metric in which the theory below is stated. Let $\nabla$ be a connection on $S$ compatible with the Clifford action, meaning $\nabla_\xi(c(\eta)s)=c(\nabla^{TM}_\xi\eta)s+c(\eta)\nabla_\xi s$, where $\nabla^{TM}$ is the Levi-Civita connection.
+the sign convention being the one of the flat Euclidean Clifford algebra with $e_i^2=-1$ used throughout the corpus. Suppose $S$ carries a Hermitian metric $\langle\cdot,\cdot\rangle$ with respect to which every $c(\zeta)$ is skew, $c(\zeta)^*=-c(\zeta)$; such a metric exists for a Clifford module and is the metric in which the theory below is stated. Let $\nabla$ be a connection on $S$ compatible with the Clifford action, meaning $\nabla_\zeta(c(\eta)s)=c(\nabla^{TM}_\zeta\eta)s+c(\eta)\nabla_\zeta s$, where $\nabla^{TM}$ is the Levi-Civita connection.
 
 **Definition.** The **Dirac operator** associated with the pair $(S,\nabla)$ is the composition of the connection with Clifford multiplication,
 
@@ -29,7 +29,7 @@ $$
 
 where $e_1,\dots,e_m$ is a local orthonormal frame; the sum is independent of the frame. An operator is of **Dirac type** if it is $D$ plus an endomorphism of $S$ (a zeroth-order term).
 
-**Remark (why the definition is framed this way).** Three properties are built into it. The coefficients are Clifford multiplications, so the symbol of $D$ is $c(\xi)$ and satisfies $c(\xi)^2=-|\xi|^2$, which is elliptic and makes the square of the symbol a scalar; the connection is compatible, so differentiating a Clifford product obeys the Leibniz rule; and the fibre metric makes each coefficient skew, which is exactly the condition for $D$ to be formally self-adjoint. Any one of the three is a hypothesis that fails in an interesting way for a general first-order operator, and the corpus's Cauchy–Riemann operator fails the third, as the last section records.
+**Remark (why the definition is framed this way).** Three properties are built into it. The coefficients are Clifford multiplications, so the symbol of $D$ is $c(\zeta)$ and satisfies $c(\zeta)^2=-|\zeta|^2$, which is elliptic and makes the square of the symbol a scalar; the connection is compatible, so differentiating a Clifford product obeys the Leibniz rule; and the fibre metric makes each coefficient skew, which is exactly the condition for $D$ to be formally self-adjoint. Any one of the three is a hypothesis that fails in an interesting way for a general first-order operator, and the corpus's Cauchy–Riemann operator fails the third, as the last section records.
 
 **Remark (the geometric input).** A spin structure on $M$ and the spinor bundle $\Sigma M$ give the fundamental pair $(S,\nabla)$ with $S=\Sigma M$ and $\nabla$ the spin connection; the resulting $D$ is the **spin Dirac operator**, the operator of *Spin Geometry*. A Clifford module and a Clifford connection give the twisted operator $D_E$ of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, whose square carries the curvature of the twist, and whose associated elliptic complex has an index. The spin construction is Part IV's and the twisted operator is this Part's; what the present article does with them is to analyse the operator.
 
@@ -76,14 +76,14 @@ so the graph norm $\|f\|^2+\|Df\|^2$ is equivalent to the $H^1$ norm. A symmetri
 **Theorem (the spectrum of the flat model).** The self-adjoint operator $D$ has spectrum $\mathbb{R}$, purely absolutely continuous, with no eigenvalues; the unitary Fourier transform diagonalises it,
 
 $$
-\boxed{\;\widehat{Df}(\xi) = i\,\sigma(\xi)\,(\mathcal F f)(\xi) , \qquad \sigma(\xi)=\sum_{j=1}^{m}e_j\xi_j\;} ,
+\boxed{\;\widehat{Df}(\zeta) = i\,\sigma(\zeta)\,(\mathcal F f)(\zeta) , \qquad \sigma(\zeta)=\sum_{j=1}^{m}e_j\zeta_j\;} ,
 $$
 
-and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
+and the multiplier $i\sigma(\zeta)$ is Hermitian with eigenvalues $\pm|\zeta|$.
 
-*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial/\partial x_j$ into multiplication by $i\xi_j$, hence $D$ into multiplication by $i\sigma(\xi)$. Since $\sigma(\xi)^2=-|\xi|^2$ and $e_j$ is skew, $i\sigma(\xi)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\xi|^2$, namely $\pm|\xi|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\xi}\{-|\xi|,|\xi|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\xi\neq0$; absolute continuity follows from the explicit direct-integral form.
+*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial/\partial x_j$ into multiplication by $i\zeta_j$, hence $D$ into multiplication by $i\sigma(\zeta)$. Since $\sigma(\zeta)^2=-|\zeta|^2$ and $e_j$ is skew, $i\sigma(\zeta)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\zeta|^2$, namely $\pm|\zeta|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\zeta}\{-|\zeta|,|\zeta|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\zeta\neq0$; absolute continuity follows from the explicit direct-integral form.
 
-**Corollary (Weyl-type asymptotics on a torus).** On the flat torus $\mathbb{T}^m=\mathbb{R}^m/\mathbb{Z}^m$, with the same operator acting on smooth sections, the spectrum is $\{\pm|\xi|:\xi\in\mathbb{Z}^m\}$ with the multiplicities of the fibre eigenvalues, and the counting function satisfies $\#\{\text{eigenvalues of }|D|\le\lambda\}\sim c_m\lambda^m$ with $c_m$ the volume of the unit ball; this is Weyl's law for a first-order elliptic operator, in which the exponent is the dimension, not half of it.
+**Corollary (Weyl-type asymptotics on a torus).** On the flat torus $\mathbb{T}^m=\mathbb{R}^m/\mathbb{Z}^m$, with the same operator acting on smooth sections, the spectrum is $\{\pm|\zeta|:\zeta\in\mathbb{Z}^m\}$ with the multiplicities of the fibre eigenvalues, and the counting function satisfies $\#\{\text{eigenvalues of }|D|\le\lambda\}\sim c_m\lambda^m$ with $c_m$ the volume of the unit ball; this is Weyl's law for a first-order elliptic operator, in which the exponent is the dimension, not half of it.
 
 *Proof.* The spectrum of the torus operator is the union of the spectra of the constant-coefficient operators on the Fourier modes, which are the fibres at integer frequencies; the counting statement is the standard lattice-point count for the ball of radius $\lambda$, with the multiplicity of the Clifford module as a constant.
 
@@ -101,9 +101,9 @@ and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
 **Theorem (compact resolvent and discreteness).** Let $M$ be closed and let $D$ be a Dirac-type operator on a Clifford module. Then $D$ is self-adjoint with domain $H^1(M;S)$, its resolvent is compact, its spectrum is a discrete subset of $\mathbb{R}$ without finite accumulation point, each eigenspace is finite-dimensional, and the eigenvalues form an unbounded two-sided sequence $\lambda_1\le\lambda_2\le\cdots$, $\lambda_k\to+\infty$ and $\lambda_{-k}\to-\infty$.
 
-*Proof.* A self-adjoint elliptic operator on a closed manifold has compact resolvent: the domain embeds compactly in $L^2$ by the Rellich–Kondrachov theorem, so the resolvent is the composition of a bounded map into $H^1$ with a compact embedding. Compact self-adjointness gives a discrete spectrum with finite-dimensional eigenspaces; ellipticity gives the regularity of the eigenfunctions, and the two-sidedness follows from $c(\xi)\mapsto -c(\xi)$ symmetry.
+*Proof.* A self-adjoint elliptic operator on a closed manifold has compact resolvent: the domain embeds compactly in $L^2$ by the Rellich–Kondrachov theorem, so the resolvent is the composition of a bounded map into $H^1$ with a compact embedding. Compact self-adjointness gives a discrete spectrum with finite-dimensional eigenspaces; ellipticity gives the regularity of the eigenfunctions, and the two-sidedness follows from $c(\zeta)\mapsto -c(\zeta)$ symmetry.
 
-**Definition.** Suppose $S=S^+\oplus S^-$ is a $\mathbb{Z}_2$-grading by which every $c(\xi)$ reverses the summands — the **chirality** splitting. Then $D$ is odd with respect to the grading,
+**Definition.** Suppose $S=S^+\oplus S^-$ is a $\mathbb{Z}_2$-grading by which every $c(\zeta)$ reverses the summands — the **chirality** splitting. Then $D$ is odd with respect to the grading,
 
 $$
 D = \begin{pmatrix}0&D^-\\ D^+&0\end{pmatrix} , \qquad D^\pm:\Gamma(S^\pm)\to\Gamma(S^\mp) ,
@@ -123,7 +123,7 @@ is unchanged by continuous deformations of the operator within the class of Dira
 
 **Remark (the index as a spectral asymmetry).** The index of $D^+$ measures the asymmetry of the spectrum of $D$ about the origin: it is the difference between the number of zero eigenvalues in the two chiral halves. The heat-kernel proof of the index theorem computes it from the small-time asymptotics of the heat kernel of $D^2$; the local form of the computation and the characteristic classes that appear are Part IV's. For the spin Dirac operator on a spin manifold, the index of $D^+$ is the $\hat A$-genus, and the Lichnerowicz corollary of the Weitzenböck identity shows that it vanishes whenever the scalar curvature is positive.
 
-**Example (spectra on low-dimensional closed manifolds).** On $S^1$ the spectrum of $D=i\,d/d\theta$ is $\mathbb{Z}$, as above. On the flat torus $\mathbb{T}^m$ the spectrum is $\{\pm|\xi|:\xi\in\mathbb{Z}^m\}$. On the round sphere $S^2$ with its spin structure the Dirac operator has spectrum the nonzero integers $\pm1,\pm2,\dots$, again symmetric about zero and growing linearly; there is no zero eigenvalue, as the Lichnerowicz corollary requires, since the round sphere has positive scalar curvature, and the vanishing of the index in dimension two is the symmetry of the spectrum about the origin rather than the presence of a harmonic spinor. On $S^4$ the same computation exhibits a nonzero index for the twisted operator with a suitable twist, which is the analytic content of the index theorem in that dimension.
+**Example (spectra on low-dimensional closed manifolds).** On $S^1$ the spectrum of $D=i\,d/d\theta$ is $\mathbb{Z}$, as above. On the flat torus $\mathbb{T}^m$ the spectrum is $\{\pm|\zeta|:\zeta\in\mathbb{Z}^m\}$. On the round sphere $S^2$ with its spin structure the Dirac operator has spectrum the nonzero integers $\pm1,\pm2,\dots$, again symmetric about zero and growing linearly; there is no zero eigenvalue, as the Lichnerowicz corollary requires, since the round sphere has positive scalar curvature, and the vanishing of the index in dimension two is the symmetry of the spectrum about the origin rather than the presence of a harmonic spinor. On $S^4$ the same computation exhibits a nonzero index for the twisted operator with a suitable twist, which is the analytic content of the index theorem in that dimension.
 
 ## The Flat Cauchy–Riemann Operator
 
@@ -143,7 +143,7 @@ so $D^*=-\partial$, where $\partial=\partial/\partial x_0-\sum_je_j\partial/\par
 
 ## Summary
 
-A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Clifford multiplication by an orthonormal frame and a Clifford connection, the coefficients being skew for the fibre metric; the spin Dirac operator and the twisted Dirac operator of a Clifford module are the two fundamental examples, and the constructions of the bundles and the Lichnerowicz formula as a geometric identity are Part IV's. The Weitzenböck identity $D^2=\nabla^*\nabla+\mathcal R$ makes the square a Laplace-type operator; for the spin Dirac operator $\mathcal R=\tfrac14\mathrm{scal}$, and positive scalar curvature kills the harmonic spinors. The flat model $D=\sum_je_j\partial/\partial x_j$ on $\mathbb{R}^m$ is essentially self-adjoint on $C_c^\infty$, with closure the self-adjoint operator on $H^1$ and with $D^2=-\Delta$; its spectrum is all of $\mathbb{R}$, purely absolutely continuous, with no eigenvalues, and the Fourier transform diagonalises it as multiplication by the Hermitian multiplier $i\sigma(\xi)$ with $\sigma(\xi)=\sum_je_j\xi_j$ and eigenvalues $\pm|\xi|$. On a closed manifold a Dirac-type operator is self-adjoint with compact resolvent, hence has discrete spectrum, finite-dimensional eigenspaces and finite-dimensional kernel; with a chirality grading it is odd, and the index of its chiral part is a deformation invariant computed by the Atiyah–Singer theorem, with the Fredholm theory supplied by *Fredholm Theory* and the spectral theory by *Unbounded Operators and Spectral Measures*. The corpus's Cauchy–Riemann operator $\sum_\mu\,e_\mu\partial/\partial x_\mu$ is the flat elliptic operator with one Hermitian coefficient; it is not symmetric, its self-adjoint part is the vector operator $\sum e_j\partial/\partial x_j$, and the two are the two faces of the factorisation of the Laplacian, the first producing $\Delta$ as $D\bar D$ and the second as $D_{\mathrm{sa}}^2$.
+A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Clifford multiplication by an orthonormal frame and a Clifford connection, the coefficients being skew for the fibre metric; the spin Dirac operator and the twisted Dirac operator of a Clifford module are the two fundamental examples, and the constructions of the bundles and the Lichnerowicz formula as a geometric identity are Part IV's. The Weitzenböck identity $D^2=\nabla^*\nabla+\mathcal R$ makes the square a Laplace-type operator; for the spin Dirac operator $\mathcal R=\tfrac14\mathrm{scal}$, and positive scalar curvature kills the harmonic spinors. The flat model $D=\sum_je_j\partial/\partial x_j$ on $\mathbb{R}^m$ is essentially self-adjoint on $C_c^\infty$, with closure the self-adjoint operator on $H^1$ and with $D^2=-\Delta$; its spectrum is all of $\mathbb{R}$, purely absolutely continuous, with no eigenvalues, and the Fourier transform diagonalises it as multiplication by the Hermitian multiplier $i\sigma(\zeta)$ with $\sigma(\zeta)=\sum_je_j\zeta_j$ and eigenvalues $\pm|\zeta|$. On a closed manifold a Dirac-type operator is self-adjoint with compact resolvent, hence has discrete spectrum, finite-dimensional eigenspaces and finite-dimensional kernel; with a chirality grading it is odd, and the index of its chiral part is a deformation invariant computed by the Atiyah–Singer theorem, with the Fredholm theory supplied by *Fredholm Theory* and the spectral theory by *Unbounded Operators and Spectral Measures*. The corpus's Cauchy–Riemann operator $\sum_\mu\,e_\mu\partial/\partial x_\mu$ is the flat elliptic operator with one Hermitian coefficient; it is not symmetric, its self-adjoint part is the vector operator $\sum e_j\partial/\partial x_j$, and the two are the two faces of the factorisation of the Laplacian, the first producing $\Delta$ as $D\bar D$ and the second as $D_{\mathrm{sa}}^2$.
 
 ## Summary of Notation
 
@@ -151,13 +151,13 @@ A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Cliffor
 |---|---|
 | $M$, $g$, $m$ | Riemannian manifold, metric, dimension |
 | $S$, $\mathcal{S}$ | Clifford module bundle over $M$; its fibre |
-| $c(\xi)$ | Clifford multiplication, $c(\xi)^2=-|\xi|^2$, $c(\xi)^*=-c(\xi)$ |
+| $c(\zeta)$ | Clifford multiplication, $c(\zeta)^2=-|\zeta|^2$, $c(\zeta)^*=-c(\zeta)$ |
 | $\nabla$, $\nabla^*\nabla$ | Clifford connection and connection Laplacian |
 | $D=\sum_jc(e_j)\nabla_{e_j}$ | Dirac operator |
 | $D^2=\nabla^*\nabla+\mathcal R$ | Weitzenböck identity; $\mathcal R=\frac14\mathrm{scal}$ in the spin case |
 | $S^\pm$, $D^\pm$ | Chirality splitting and chiral parts |
 | $H^1(M;S)$ | Sobolev domain of the closure |
-| $\sigma(\xi)=\sum_je_j\xi_j$ | Symbol in the flat case |
+| $\sigma(\zeta)=\sum_je_j\zeta_j$ | Symbol in the flat case |
 | $\operatorname{ind}D^+$ | Analytic index, $\dim\ker D^+-\dim\ker D^-$ |
 | $\sum_\mu\,e_\mu\partial/\partial x_\mu$, $\partial/\partial x_0+\sum_je_j\partial/\partial x_j$ | Cauchy–Riemann operator of the corpus (flat, non-symmetric) |
 | $D_{\mathrm{sa}}=\sum_je_j\partial/\partial x_j$ | Self-adjoint vector part |

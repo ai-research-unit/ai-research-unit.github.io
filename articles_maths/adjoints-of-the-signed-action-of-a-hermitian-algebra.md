@@ -80,7 +80,7 @@ so the graded commutator of the two signed actions is adjoint to the graded comm
 
 ## The Modular Operator and the Sign Rule
 
-**Theorem (the conjugation by the Tomita operator).** On the dense subspace $A\xi$,
+**Theorem (the conjugation by the Tomita operator).** On the dense subspace $A\zeta$,
 
 $$
 \boxed{\;S\,\Lambda^{\alpha}_x\,S = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad S\,\mathrm{P}^{\alpha}_x\,S = \Lambda^{\alpha}_{x^{\dagger}}\;} ,
@@ -88,7 +88,7 @@ $$
 
 so the Tomita operator exchanges the signed actions and turns each into the signed action of the involution on the other side.
 
-**Proof.** $S\Lambda^{\alpha}_xS(y\xi) = S\Lambda^{\alpha}_x(y^{\dagger}\xi) = S(\alpha(x)y^{\dagger}\xi) = (\alpha(x)y^{\dagger})^{\dagger}\xi = y\alpha(x)^{\dagger}\xi = y\alpha(x^{\dagger})\xi = \mathrm{P}^{\alpha}_{x^{\dagger}}(y\xi)$; the second identity is the same computation with the roles of the two sides exchanged.
+**Proof.** $S\Lambda^{\alpha}_xS(y\zeta) = S\Lambda^{\alpha}_x(y^{\dagger}\zeta) = S(\alpha(x)y^{\dagger}\zeta) = (\alpha(x)y^{\dagger})^{\dagger}\zeta = y\alpha(x)^{\dagger}\zeta = y\alpha(x^{\dagger})\zeta = \mathrm{P}^{\alpha}_{x^{\dagger}}(y\zeta)$; the second identity is the same computation with the roles of the two sides exchanged.
 
 **Corollary (the adjoint as a conjugation of the other side).** Combining with the theorem on adjoints,
 
@@ -150,7 +150,7 @@ so the adjoint operation and the modular flow are interchangeable on the signed 
 
 ### A Matrix Algebra with a Grading
 
-Let $A = M_2(\mathbb{C})$ with the form $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$, the involution $a^{\dagger} = a^{*}$ and the grading $\alpha(a) = \gamma a\gamma$ with $\gamma = \mathrm{diag}(1,-1)$. For an odd $a$ the signed left action is $-L_a$, its adjoint is $\Lambda^{\alpha}_{a^{\dagger}} = -L_{a^{*}}$, and the Tomita operator is $S(b\xi) = b^{*}\xi$ with $\jmath(b\xi) = b^{*}\xi$, so that $\jmath\Lambda^{\alpha}_a\jmath = \mathrm{P}^{\alpha}_{a^{\dagger}}$ reduces to the conjugation of the left multiplication into the right multiplication by $a^{*}$.
+Let $A = M_2(\mathbb{C})$ with the form $\langle a,b\rangle = \mathrm{tr}(b^{*}a)$, the involution $a^{\dagger} = a^{*}$ and the grading $\alpha(a) = \gamma a\gamma$ with $\gamma = \mathrm{diag}(1,-1)$. For an odd $a$ the signed left action is $-L_a$, its adjoint is $\Lambda^{\alpha}_{a^{\dagger}} = -L_{a^{*}}$, and the Tomita operator is $S(b\zeta) = b^{*}\zeta$ with $\jmath(b\zeta) = b^{*}\zeta$, so that $\jmath\Lambda^{\alpha}_a\jmath = \mathrm{P}^{\alpha}_{a^{\dagger}}$ reduces to the conjugation of the left multiplication into the right multiplication by $a^{*}$.
 
 ### The Group Algebra
 

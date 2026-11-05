@@ -70,9 +70,9 @@ $$ \boxed{\; \partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/
 
 *Proof.* Multiply out $\sum_\mu\,e_\mu\partial/\partial Q_\mu(f_0+\vec f)$ term by term, using $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$ for pure quaternions: the scalar part collects $\partial/\partial Q_t\,f_0-\mathrm{div}\,\vec f$, and the vector part collects $\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f$. Both parts must vanish.
 
-**Corollary.** The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2e_t$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.
+**Corollary.** The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\zeta) = \sum_\mu\zeta_\mu e_\mu$, which satisfies $s(\zeta)s^{\natural}(\zeta) = |\zeta|^2e_t$ for every real covector $\zeta\neq0$, so the system is elliptic and its solutions are real-analytic.
 
-*Proof.* The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.
+*Proof.* The principal symbol is invertible with inverse $s^{\natural}(\zeta)/|\zeta|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.
 
 ## Examples and Closure Properties
 
@@ -128,7 +128,7 @@ so that $D_3\phi = \mathrm{grad}\phi$ on a scalar; and $D_3^2 = -\Delta_3$, the 
 
 *Proof.* The split is the three-dimensional case of the computation of the section above, with the $\partial/\partial Q_t$ terms removed. For the square, the $j=k$ terms give $\sum_k\vec e_k^2\partial^2/\partial Q_k^2 = -\Delta_3$ and the $j\neq k$ terms pair as $(\vec e_j \vec e_k+\vec e_k \vec e_j)\partial^2/\partial Q_j\partial Q_k = 0$.
 
-**Remark (why the dimension matters).** The four-dimensional operator needs its conjugate to factor the Laplacian, and the square shows why: the mixed terms $2\partial/\partial Q_t\,D_3$ that the conjugate cancels are exactly those the fourth coordinate contributes. In three dimensions there is no such term, $D_3$ factorises the Laplacian alone, and the operator is elliptic with symbol $s(\xi) = \xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z$, whose square is $-|\xi|^2$.
+**Remark (why the dimension matters).** The four-dimensional operator needs its conjugate to factor the Laplacian, and the square shows why: the mixed terms $2\partial/\partial Q_t\,D_3$ that the conjugate cancels are exactly those the fourth coordinate contributes. In three dimensions there is no such term, $D_3$ factorises the Laplacian alone, and the operator is elliptic with symbol $s(\zeta) = \zeta_x\vec e_x+\zeta_y\vec e_y+\zeta_z\vec e_z$, whose square is $-|\zeta|^2$.
 
 **Definition (the logarithmic derivative).** For a scalar $\phi$ that does not vanish, the **logarithmic derivative** of Marchenko is
 
@@ -492,7 +492,7 @@ The Fueter construction and the slice description of regular functions are in *F
 | $fD = 0$, $\bar Df = 0$ | Right-regular and anti-regular functions |
 | $\mathrm{div}, \mathrm{grad}, \mathrm{rot}$ | Vector-calculus operators in the decomposition of $Df$ |
 | $\partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f$, $\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0$ | Cauchy–Riemann–Fueter system |
-| $s(\xi) = \sum_\mu\xi_\mu e_\mu$ | Principal symbol, $s s^{\natural} = \lvert\xi\rvert^2$ |
+| $s(\zeta) = \sum_\mu\zeta_\mu e_\mu$ | Principal symbol, $s s^{\natural} = \lvert\zeta\rvert^2$ |
 | $A = q_t+\vec e_xq_x$ | Single-plane complex variable, $\partial/\partial\bar A = \tfrac12(\partial/\partial Q_t+\vec e_x\partial/\partial Q_x)$ |
 | $G(\tilde q) = \tilde q^{\natural}/\lvert \tilde q\rvert^4$ | Cauchy kernel; $DG = 2\pi^2\delta_0e_t$ |
 | $D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Moisil–Theodoresco operator; $D_3^2 = -\Delta_3$ |

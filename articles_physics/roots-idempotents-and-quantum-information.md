@@ -5,7 +5,7 @@
 The nontrivial Hermitian idempotents of the biquaternion algebra are the pure states of the informational sector, and the Hermitian roots of $+1$ are its involutive observables. The halving map
 
 $$
-\tilde\Pi=\tfrac12(e_t+\tilde\Xi),\qquad \tilde\Xi=2\tilde\Pi-e_t
+\tilde\Pi=\tfrac12(e_t+\tilde{Ζ}),\qquad \tilde{Ζ}=2\tilde\Pi-e_t
 $$
 
 passes from one to the other. That dictionary was built in *Roots, Idempotents and Observables*. This article reads the same objects through the questions of quantum information: which observables can be measured together, what a measurement with unsharp outcomes is, what protects a state from error, which bases are mutually unbiased, and what a shared entangled state accomplishes.
@@ -207,7 +207,7 @@ The nontrivial Hermitian idempotents are the pure states and the Hermitian roots
 | $\mathbb{M}_+$ | The Hermitian (informational) sector |
 | $\tilde\Pi$ | An idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The two rank-one Hermitian idempotents along a unit vector $\vec u$ |
-| $\tilde\Xi$ | A root of $+1$; $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ |
+| $\tilde{Ζ}$ | A root of $+1$; $\tilde\Pi=\tfrac12(e_t+\tilde{Ζ})$ |
 | $\operatorname{Tr}$ | The trace, with $\operatorname{Tr}e_t=2$ |
 | $[\tilde 0,e_t]$ | The order interval of effects |
 | $\tilde\Pi_\epsilon$ | A Bell idempotent of $\mathbb{B}\otimes\mathbb{B}$ |

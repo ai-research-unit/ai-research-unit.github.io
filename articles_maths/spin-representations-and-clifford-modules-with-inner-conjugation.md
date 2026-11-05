@@ -47,7 +47,7 @@ $$
 
 Its dimension is $2^m$.
 
-The Clifford action is defined on the two summands separately. For $w\in W$, let $\varepsilon(w)\colon\Lambda^{\bullet}W\to\Lambda^{\bullet}W$ be exterior multiplication, $\varepsilon(w)\xi=w\wedge\xi$. For $w'\in W'$, let $\iota(w')\colon\Lambda^{\bullet}W\to\Lambda^{\bullet}W$ be the contraction characterised by the pairing, $\iota(w')(w_1\wedge\cdots\wedge w_k)=\sum_{j}(-1)^{j-1}\beta(w_j,w')w_1\wedge\cdots\widehat{w_j}\cdots\wedge w_k$; the form $\beta=2g$ rather than $g$ is the pairing that carries the Clifford relation, because $\mathfrak{Q}(w+w')=2g(w,w')$ for $w,w'$ isotropic. Extend to all of $V$ by
+The Clifford action is defined on the two summands separately. For $w\in W$, let $\varepsilon(w)\colon\Lambda^{\bullet}W\to\Lambda^{\bullet}W$ be exterior multiplication, $\varepsilon(w)\zeta=w\wedge\zeta$. For $w'\in W'$, let $\iota(w')\colon\Lambda^{\bullet}W\to\Lambda^{\bullet}W$ be the contraction characterised by the pairing, $\iota(w')(w_1\wedge\cdots\wedge w_k)=\sum_{j}(-1)^{j-1}\beta(w_j,w')w_1\wedge\cdots\widehat{w_j}\cdots\wedge w_k$; the form $\beta=2g$ rather than $g$ is the pairing that carries the Clifford relation, because $\mathfrak{Q}(w+w')=2g(w,w')$ for $w,w'$ isotropic. Extend to all of $V$ by
 
 $$
 c(w+w')=\varepsilon(w)+\iota(w').

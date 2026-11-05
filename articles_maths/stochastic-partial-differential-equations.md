@@ -41,7 +41,7 @@ $$
 
 the series converging almost surely in $H$; it is a Gaussian process with mean zero and covariance $\mathbb{E}\langle W^\Sigma_s,x\rangle\langle W^\Sigma_t,y\rangle = (s\wedge t)\langle \Sigma x,y\rangle$, and it has a version with continuous paths.
 
-**Remark (white noise and the diagonal case).** For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a **space-time white noise**, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\xi(t,x)\xi(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.
+**Remark (white noise and the diagonal case).** For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a **space-time white noise**, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\zeta(t,x)\zeta(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.
 
 ### The Hilbert–Schmidt Integral
 
@@ -218,7 +218,7 @@ A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+
 | $W_A(t)$ | Stochastic convolution $\int_0^tS(t-s)\Phi_s\,dW^\Sigma_s$ |
 | $\Sigma_t$, $\Sigma_\infty$ | Convolution covariance; invariant covariance |
 | $\mathcal{L}$ | Kolmogorov operator with the trace correction |
-| $\xi$ | Space-time white noise |
+| $\zeta$ | Space-time white noise |
 | Lyapunov | $A\Sigma_\infty+\Sigma_\infty A^*+\Sigma=0$ |
 
 ## Further Reading

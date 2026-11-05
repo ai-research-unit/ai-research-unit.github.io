@@ -39,7 +39,7 @@ $$
 
 $$
 [\sigma_D]\in K^{0}(T^{*}M),\qquad
-\sigma_D(x,\xi)=D_{1}(x,\xi)
+\sigma_D(x,\zeta)=D_{1}(x,\zeta)
 $$
 
 of the principal symbol, an element of the $K$-theory of the cotangent bundle with compact supports; the **fundamental class** of the tangent bundle is

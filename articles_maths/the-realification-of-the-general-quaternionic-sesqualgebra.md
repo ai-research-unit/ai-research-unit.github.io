@@ -110,7 +110,7 @@ The rest of the block's body is unchanged, and the reason is the dictionary: the
 $$
 \tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1\ \text{in the real vector subspace};
 $$
-the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_t+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\vec u$ a real unit vector, of which $e_t+i\vec e_x$ is the witness; and the plain invertibility criterion $C(\tilde Q_2)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
+the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_t+\tilde{Ζ})$, with $\lambda\in\mathbb{C}$ and $\vec u$ a real unit vector, of which $e_t+i\vec e_x$ is the witness; and the plain invertibility criterion $C(\tilde Q_2)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
 
 ## Summary
 

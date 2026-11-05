@@ -166,8 +166,8 @@ For $B^2\neq0$ the spectral frame gives
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,\qquad
 \lambda_\pm=Q_t\pm iB,\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
-\vec\Xi=-\frac{i\vec Q}{B},
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
+\vec{Ζ}=-\frac{i\vec Q}{B},
 $$
 
 and the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ with the two mixed generators of the corners. The element is diagonal in that basis, and its diagonal values are $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ for the left action.
@@ -273,7 +273,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_
 | $p_{\tilde Q}(X)=(X-Q_t)^2+B^2$ | the characteristic polynomial |
 | $m_{\tilde Q}$ | the minimal polynomial |
 | $\tilde Q_s,\vec\Upsilon$ | the semisimple and nilpotent parts of $\tilde Q$ |
-| $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, $\vec\Xi=-i\vec Q/B$ | the spectral idempotents, for $B^2\neq0$ |
+| $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$, $\vec{Ζ}=-i\vec Q/B$ | the spectral idempotents, for $B^2\neq0$ |
 | $e,e'$ | a defective frame, with $\vec Q\in e\mathbb{B}e'$ |
 | $\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau$ | a Peirce corner |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | the mixed generators of the standard frame |

@@ -66,15 +66,15 @@ so that they form the single chain $\mathrm{Alt}(A,\sigma)\subseteq\mathrm{Skew}
 
 *Proof.* The conditions $\sigma(x) = x$ and $\sigma(x) = -x$ are the same since $-1 = 1$; and for the images, $x+\sigma(x) = x-\sigma(x)$ for the same reason, so the two image submodules coincide as well. The containment of the alternating in the skew is the proposition above, and the properness is witnessed on a matrix algebra in the examples below.
 
-**Proposition (the map $\xi$).** The map $\mathrm{id}+\sigma$ kills $\mathrm{Alt}(A,\sigma)$ and is onto $\mathrm{Symd}(A,\sigma)$, so it induces a surjection
+**Proposition (the map $\zeta$).** The map $\mathrm{id}+\sigma$ kills $\mathrm{Alt}(A,\sigma)$ and is onto $\mathrm{Symd}(A,\sigma)$, so it induces a surjection
 
 $$
-\xi : A/\mathrm{Alt}(A,\sigma) \twoheadrightarrow \mathrm{Symd}(A,\sigma),
+\zeta : A/\mathrm{Alt}(A,\sigma) \twoheadrightarrow \mathrm{Symd}(A,\sigma),
 $$
 
 whose kernel is $\mathrm{Skew}(A,\sigma)/\mathrm{Alt}(A,\sigma)$; the quotient $A/\mathrm{Alt}(A,\sigma)$ is the home of the semi-traces.
 
-*Proof.* The kernel of $\mathrm{id}+\sigma$ is $\mathrm{Skew}$ and its image is $\mathrm{Symd}$ by definition, and $\mathrm{Alt}$ lies in the kernel by the containment above, so $\xi$ is the induced map of the first isomorphism theorem.
+*Proof.* The kernel of $\mathrm{id}+\sigma$ is $\mathrm{Skew}$ and its image is $\mathrm{Symd}$ by definition, and $\mathrm{Alt}$ lies in the kernel by the containment above, so $\zeta$ is the induced map of the first isomorphism theorem.
 
 **Remark (what is lost in characteristic two).** The dimensions of the symmetric and the skew parts are no longer available to separate the orthogonal type from the symplectic type of *Involutions of a Central Simple Algebra*; the two parts no longer add up to the algebra; and the symmetric elements no longer carry a Jordan structure, while the skew ones still carry their Lie structure, as *Involutive Algebras* records. This is the deficiency that the semi-trace repairs, and it is the reason the pair and not the involution is the right object.
 
@@ -128,7 +128,7 @@ by the $R$-linearity of the reduced trace and its invariance under $\sigma$; and
 
 **Definition.** An involution $\sigma$ is **locally quadratic** when the unit is a symmetrized element, $1_A \in \mathrm{Symd}(A,\sigma)$.
 
-**Theorem (the classification of the semi-traces).** The semi-traces for $\sigma$ are in bijection with the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, the semi-trace attached to $\lambda$ being
+**Theorem (the classification of the semi-traces).** The semi-traces for $\sigma$ are in bijection with the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\zeta(\lambda) = 1_A$, the semi-trace attached to $\lambda$ being
 
 $$
 \boxed{\;f_\lambda(s) = \operatorname{Trd}(\ell\,s), \qquad s \in \mathrm{sym}(A,\sigma)\;},
@@ -136,7 +136,7 @@ $$
 
 for any lift $\ell$ of $\lambda$ in $A$. In particular a semi-trace exists exactly when $\sigma$ is locally quadratic.
 
-*Proof (of the construction and of the well-definedness).* Let $\ell$ lift $\lambda$ with $\xi(\lambda) = 1_A$, that is $\ell+\sigma(\ell) = 1_A$. For $a \in A$,
+*Proof (of the construction and of the well-definedness).* Let $\ell$ lift $\lambda$ with $\zeta(\lambda) = 1_A$, that is $\ell+\sigma(\ell) = 1_A$. For $a \in A$,
 
 $$
 f_\ell\bigl(a+\sigma(a)\bigr) = \operatorname{Trd}\bigl(\ell a\bigr)+\operatorname{Trd}\bigl(\ell\,\sigma(a)\bigr) = \operatorname{Trd}\bigl((\ell+\sigma(\ell))a\bigr) = \operatorname{Trd}(a),
@@ -223,7 +223,7 @@ $$
 $$
 
 $$
-0 \to \mathrm{Skew}(A,\sigma)/\mathrm{Alt}(A,\sigma) \to A/\mathrm{Alt}(A,\sigma) \xrightarrow{\ \xi\ } \mathrm{Symd}(A,\sigma) \to 0 .
+0 \to \mathrm{Skew}(A,\sigma)/\mathrm{Alt}(A,\sigma) \to A/\mathrm{Alt}(A,\sigma) \xrightarrow{\ \zeta\ } \mathrm{Symd}(A,\sigma) \to 0 .
 $$
 
 The image of the unit $1_A \in \mathrm{Symd}(A,\sigma)$ under the connecting map of the first sequence is the **strong obstruction** $\Omega(A,\sigma)$, and under that of the second the **weak obstruction** $\omega(A,\sigma)$. The strong obstruction vanishes exactly when there is a linear map $A \to \mathcal{O}_X$ whose restriction to the symmetric elements is a semi-trace, and the weak obstruction vanishes exactly when $\sigma$ can be equipped with a semi-trace, that is, exactly when $\sigma$ is locally quadratic. The strong obstruction therefore controls whether a semi-trace extends to the whole algebra and the weak one whether a semi-trace exists at all.
@@ -266,7 +266,7 @@ The counterpoint of the whole construction is the question of what happens when 
 
 ## Summary
 
-Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the skew ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the skew elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the **semi-trace**, an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting **quadratic pair** $(\sigma,f)$ and **quadratic triple** $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $\psi_1\otimes\psi_2$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is a unit or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.
+Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the skew ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the skew elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the **semi-trace**, an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting **quadratic pair** $(\sigma,f)$ and **quadratic triple** $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\zeta(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $\psi_1\otimes\psi_2$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is a unit or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.
 
 ## Summary of Notation
 
@@ -283,8 +283,8 @@ Over a base in which two is invertible the involutions of a central simple algeb
 | $\mathrm{sym}=\mathrm{Skew}$, $\mathrm{Symd}=\mathrm{Alt}$ | The collapses, characteristic two |
 | $f : \mathrm{sym}(A,\sigma) \to R$ | A semi-trace, $f(a+\sigma(a)) = \operatorname{Trd}(a)$ |
 | $(A,\sigma,f)$ | A quadratic triple; $(\sigma,f)$ a quadratic pair |
-| $\xi : A/\mathrm{Alt}\to\mathrm{Symd}$ | The surjection induced by $\mathrm{id}+\sigma$ |
-| $\lambda$, $\ell$ | A class with $\xi(\lambda) = 1_A$, and a lift of it |
+| $\zeta : A/\mathrm{Alt}\to\mathrm{Symd}$ | The surjection induced by $\mathrm{id}+\sigma$ |
+| $\lambda$, $\ell$ | A class with $\zeta(\lambda) = 1_A$, and a lift of it |
 | $f_\lambda(s) = \operatorname{Trd}(\ell s)$ | The semi-trace attached to $\lambda$ |
 | $1_A \in \mathrm{Symd}(A,\sigma)$ | The locally quadratic condition |
 | $a \mapsto \operatorname{Trd}(a)1_A-a$ | The canonical involution of a degree-two algebra |

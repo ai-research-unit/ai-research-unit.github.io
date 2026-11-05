@@ -107,7 +107,7 @@ $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
 
-**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde\Xi=i\vec u_p$, a root of the central value $+1$, $\tilde\Xi^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 
@@ -125,7 +125,7 @@ $$
 \boxed{\;\tilde\Psi_L=\frac1m\,\tilde\nabla\tilde\Psi_R=\frac{i}{m}\,\tilde P\,\tilde\Psi_R\;}
 $$
 
-The part $\tilde\Psi_R$ is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: left multiplication by $\tilde\Xi$ commutes with left multiplication by $\tilde P$, as it does with every left multiplication by an element that commutes with $\tilde\Xi$, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
+The part $\tilde\Psi_R$ is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: left multiplication by $\tilde{Ζ}$ commutes with left multiplication by $\tilde P$, as it does with every left multiplication by an element that commutes with $\tilde{Ζ}$, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
 
 **The amplitudes.** Along a helicity eigenstate the two parts have unequal size, and the ratio is fixed. Writing $\langle\tilde Q\rangle_{*}$ for the Hermitian norm,
 
@@ -201,7 +201,7 @@ $$
 \langle\tilde w_\pm,\tilde v_\pm\rangle_{\mathrm D}=0,
 $$
 
-and opposite helicities are orthogonal for the same reason, $\langle\tilde w_+,\tilde w_-\rangle_{\mathrm D}=0$, since the two right parts are eigenvectors of $\tilde\Xi$ with opposite values.
+and opposite helicities are orthogonal for the same reason, $\langle\tilde w_+,\tilde w_-\rangle_{\mathrm D}=0$, since the two right parts are eigenvectors of $\tilde{Ζ}$ with opposite values.
 
 **The Hermitian products.** The untwisted product is the positive one and does not cancel:
 
@@ -252,8 +252,8 @@ $$
 For $m=0$ the dispersion is $E=\lvert\vec p\rvert$ and the wave element is null, $\tilde P\tilde P^{\natural}=0$, so the left multiplication by $\tilde P$ loses rank and its kernel is of two complex dimensions. Every element of that kernel carries helicity $+1$:
 
 $$
-\tilde P\,\tilde F=0\ \Longrightarrow\ \tilde\Xi\,\tilde F=+\tilde F,\qquad
-\tilde P^{\natural}\,\tilde F=0\ \Longrightarrow\ \tilde\Xi\,\tilde F=-\tilde F .
+\tilde P\,\tilde F=0\ \Longrightarrow\ \tilde{Ζ}\,\tilde F=+\tilde F,\qquad
+\tilde P^{\natural}\,\tilde F=0\ \Longrightarrow\ \tilde{Ζ}\,\tilde F=-\tilde F .
 $$
 
 So the labels are locked to the members: **the field annihilated by $\tilde\nabla$ carries positive helicity and the field annihilated by $\tilde\nabla^{\natural}$ negative helicity.** The mass is the only term that couples the two members, and setting it to zero decouples them; the two kernels are of two complex dimensions each and meet only at zero, so together they account for the four complex dimensions of the carrier.
@@ -287,7 +287,7 @@ so its spectrum is $+1,+1,-1,-1$ and the part of value $+1$, written $\tilde Q_R
 **The action on the two parts.** A left multiplication keeps the value, because the reading multiplies on the right and the two sides commute; a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values, because those two units anticommute with $\vec e_z$; a product takes the value of its right factor. Write $\mathbb B_L$ and $\mathbb B_R$ for the two parts, the elements of value $-1$ and of value $+1$. Then
 
 $$
-\tilde\Xi\,\tilde Q_L\in\mathbb B_L,\qquad
+\tilde{Ζ}\,\tilde Q_L\in\mathbb B_L,\qquad
 \tilde Q_L\,\vec e_x\in\mathbb B_R,\qquad
 \tilde Q_R\,\vec e_y\in\mathbb B_L,
 $$
@@ -346,10 +346,10 @@ The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequenc
 **The helicity grading.** For $\vec p\neq0$ put
 
 $$
-\tilde\Xi=i\,\vec u_p,\qquad \tilde\Xi^2=i^2\,\vec u_p^{\,2}=(-1)(-e_t)=e_t ,
+\tilde{Ζ}=i\,\vec u_p,\qquad \tilde{Ζ}^2=i^2\,\vec u_p^{\,2}=(-1)(-e_t)=e_t ,
 $$
 
-so that left multiplication by $\tilde\Xi$ has eigenvalues $\pm1$, each twice, and its two eigenspaces are two-dimensional. It commutes with the symbol: both are left multiplications by elements, and the two elements commute because $\vec u_p$ is proportional to $\vec k$. Left multiplications by commuting elements therefore commute, and the symbol keeps the two eigenspaces of $\tilde\Xi$. Each carries a two-dimensional piece of the carrier, one of each value.
+so that left multiplication by $\tilde{Ζ}$ has eigenvalues $\pm1$, each twice, and its two eigenspaces are two-dimensional. It commutes with the symbol: both are left multiplications by elements, and the two elements commute because $\vec u_p$ is proportional to $\vec k$. Left multiplications by commuting elements therefore commute, and the symbol keeps the two eigenspaces of $\tilde{Ζ}$. Each carries a two-dimensional piece of the carrier, one of each value.
 
 **The piece determinant.** On a piece the pair, written on the two parts, has the two diagonal entries $-m$ and the two off-diagonal entries $i\tilde P$ and $i\tilde P^{\natural}$. The four are left multiplications by elements, and the elements commute, so the determinant of the pair is the determinant of the entries taken as numbers of that commutative algebra:
 
@@ -377,9 +377,9 @@ the square of the Klein–Gordon symbol. The two pieces carry the same pair of e
 
 **Worked case, on the shell.** For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each piece determinant is zero, each piece spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the pair has rank two, with a one-dimensional kernel per helicity.
 
-**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde\Xi$ was at most $5.4\times10^{-16}$; $\tilde K^{\natural}\tilde K$ and $\tilde P\tilde P^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde\Xi^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^2-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
+**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $\tilde K^{\natural}\tilde K$ and $\tilde P\tilde P^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^2-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
 
-**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde\Xi$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde\Psi_R=m\tilde\Psi_L$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
+**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde\Psi_R=m\tilde\Psi_L$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
 
 ## Summary
 
@@ -391,7 +391,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla$ keeps one helicity and the field annihilated by $\tilde\nabla^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the quaternionic-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
-7. **Helicity pieces.** The scalar square of the wave is $\tilde K^{\natural}\tilde K=p^2$; the symbol commutes with left multiplication by $\tilde\Xi=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^2-p^2$; the pieces are isospectral, the determinant of the pair is $(m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
+7. **Helicity pieces.** The scalar square of the wave is $\tilde K^{\natural}\tilde K=p^2$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^2-p^2$; the pieces are isospectral, the determinant of the pair is $(m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not given in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-reading element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.
 
@@ -415,7 +415,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 | $p^2=E^2-\vec p^{\,2}$ | Interval of the four-momentum, $\hbar=c=1$ |
 | $m^2-p^2$ | Piece determinant, repeated on the two pieces |
-| $\tilde\Xi=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\tilde\Xi^2=e_t$; its two values grade the carrier |
+| $\tilde{Ζ}=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\tilde{Ζ}^2=e_t$; its two values grade the carrier |
 | $-m\pm\sqrt{p^2}$ | Spectrum of the pair on a helicity piece |
 
 ## Further Reading

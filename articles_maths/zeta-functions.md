@@ -65,7 +65,7 @@ where $\gamma$ is Euler's constant. The continuation is unique.
 
 **Theorem (Jacobi's functional equation for theta).** For $t > 0$, $\vartheta^{\mathrm{thf}}(1/t) = \sqrt{t}\,\vartheta^{\mathrm{thf}}(t)$.
 
-**Proof sketch.** Both sides are the value at $0$ of the periodisation of the Gaussian $\exp(-\pi t x^2)$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $\exp(-\pi t x^2)$ has Fourier transform $t^{-1/2}\exp(-\pi \xi^2/t)$.
+**Proof sketch.** Both sides are the value at $0$ of the periodisation of the Gaussian $\exp(-\pi t x^2)$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $\exp(-\pi t x^2)$ has Fourier transform $t^{-1/2}\exp(-\pi \zeta^2/t)$.
 
 **Theorem (functional equation of the zeta function).** For all $s \in \mathbb{C}$,
 $$

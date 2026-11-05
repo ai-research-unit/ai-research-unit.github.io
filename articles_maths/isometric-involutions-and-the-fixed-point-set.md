@@ -31,7 +31,7 @@ a closed subset of $M$, and the **fixed component** of a point $p \in \Sigma$ is
 **Definition.** At a point $p$ of the fixed set the tangent space splits as $T_pM = V_+\oplus V_-$ with $V_+ = T_p\Sigma$ and $V_-$ the **normal direction**; the **normal bundle** is $\nu\Sigma$, the union of the $V_-$, and the **normal exponential map** is
 
 $$
-\exp^{\perp} : \nu\Sigma \longrightarrow M, \qquad \exp^{\perp}(p, \xi) = \exp_p(\xi).
+\exp^{\perp} : \nu\Sigma \longrightarrow M, \qquad \exp^{\perp}(p, \zeta) = \exp_p(\zeta).
 $$
 
 **Theorem (the tube theorem).** The normal exponential map is a diffeomorphism of a neighbourhood of the zero section of $\nu\Sigma$ onto a tubular neighbourhood of $\Sigma$ in $M$; in the coordinates it defines, the metric splits along $\Sigma$ as
@@ -54,13 +54,13 @@ where $y$ are the normal coordinates and $g_\Sigma$ is the induced metric of $\S
 
 **Proof.** Let $\sigma_1, \sigma_2$ be two such involutions and let $\tau = \sigma_1^{-1}\sigma_2$. Then $\tau$ fixes every point of $\Sigma$, and at a point $p \in \Sigma$ its differential is $d\tau_p = (d\sigma_1)_p^{-1}(d\sigma_2)_p$, which is $\mathrm{id}$ on $V_+$ and $(-\mathrm{id})^{-1}(-\mathrm{id}) = \mathrm{id}$ on $V_-$, hence the identity on $T_pM$. An isometry with a fixed point and identity differential there is the identity on the connected manifold $M$, by the faithfulness of *Isometries as Operators*; hence $\sigma_1=\sigma_2$.
 
-**Proposition.** A reflection in $\Sigma$ commutes with the geodesic symmetries of the points of $\Sigma$ when those exist, and it preserves the normal bundle; conversely a reflection is determined by the involution it induces on the normal bundle, that is by the local action $\xi\mapsto-\xi$. In a space of constant curvature every connected totally geodesic submanifold is reflective, the reflection in a great subsphere of the sphere, in a hyperbolic subspace or in a Euclidean subspace being the restriction of the linear reflection of the ambient model space.
+**Proposition.** A reflection in $\Sigma$ commutes with the geodesic symmetries of the points of $\Sigma$ when those exist, and it preserves the normal bundle; conversely a reflection is determined by the involution it induces on the normal bundle, that is by the local action $\zeta\mapsto-\zeta$. In a space of constant curvature every connected totally geodesic submanifold is reflective, the reflection in a great subsphere of the sphere, in a hyperbolic subspace or in a Euclidean subspace being the restriction of the linear reflection of the ambient model space.
 
 **Proof.** If $\Sigma$ contains $p$ and $\sigma$ is a reflection in $\Sigma$, then at the fixed point $p$ both $\sigma$ and the geodesic symmetry $\sigma_p$ are involutions with differential $-\mathrm{id}$ and both fix $p$; the composition $\sigma\sigma_p$ then fixes $p$ with differential $\mathrm{id}$, so it is constant on the connected component, and the local symmetries therefore commute with the reflection where both are defined. The constant-curvature statement is the reflection of the model space, which is an isometry of the model and fixes its subspace pointwise with the normal action $-1$.
 
 ### When a Submanifold is a Mirror
 
-**Theorem.** Let $\Sigma$ be a connected totally geodesic submanifold and let $M$ be simply connected. Then $\Sigma$ is reflective if and only if the normal reflection of the local model, $\exp^\perp(p, \xi)\mapsto\exp^\perp(p, -\xi)$, is a local isometry of $M$ near $\Sigma$; equivalently, if and only if the metric in the normal coordinates is an even function of the normal coordinates along $\Sigma$. This fails in general: there are totally geodesic submanifolds of a Riemannian manifold that are not reflective.
+**Theorem.** Let $\Sigma$ be a connected totally geodesic submanifold and let $M$ be simply connected. Then $\Sigma$ is reflective if and only if the normal reflection of the local model, $\exp^\perp(p, \zeta)\mapsto\exp^\perp(p, -\zeta)$, is a local isometry of $M$ near $\Sigma$; equivalently, if and only if the metric in the normal coordinates is an even function of the normal coordinates along $\Sigma$. This fails in general: there are totally geodesic submanifolds of a Riemannian manifold that are not reflective.
 
 **Proof.** The normal reflection is defined on a tubular neighbourhood of $\Sigma$ by the formula, and it is an isometry there exactly when the metric coefficients are even in the normal coordinates, which is the condition of the tube theorem. If the normal reflection is a local isometry then it extends to a global isometry of the simply connected complete manifold $M$ by the monodromy argument of *The Geodesic Symmetry and Locally Symmetric Spaces*, and it is the reflection. The failure in general is the same as the failure of the local symmetry for a general metric, and the classical counterexamples are the non-symmetric spaces; the details are in the references.
 

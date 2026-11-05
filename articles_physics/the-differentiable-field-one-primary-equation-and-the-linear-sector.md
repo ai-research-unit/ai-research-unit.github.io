@@ -65,7 +65,7 @@ This also dissolves the most obvious objection to a nonlinear primary equation. 
 
 ### The Fields as Semi-Derivatives
 
-What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\eta=\Phi\,dZ\,\xi$, with $\Phi$ the left semi-derivative carrying the gauge field and $\eta,\xi$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
+What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\eta=\Phi\,dZ\,\zeta$, with $\Phi$ the left semi-derivative carrying the gauge field and $\eta,\zeta$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection it generates is weakly self-dual — the self-dual part of its curvature vanishes on the solutions rather than identically — so that its Bianchi identity is the field equation. That construction is *The Algebrodynamical Programme*, §*The Generating System and the Gauge Fields*, and it is not repeated here.
 
 The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the gauge principle is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No gauge principle is assumed.
 
@@ -210,8 +210,8 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | $\Sigma$ | One component of a differentiable function |
 | $\mathsf D\Sigma$ | The two-by-two array of its four coordinate derivatives |
 | $L$, $R$ | The left and right semi-derivatives in $dF=L\,dZ\,R$ |
-| $\Phi$ | The left semi-derivative in the spinor splitting $d\eta=\Phi\,dZ\,\xi$ |
-| $\eta$, $\xi$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
+| $\Phi$ | The left semi-derivative in the spinor splitting $d\eta=\Phi\,dZ\,\zeta$ |
+| $\eta$, $\zeta$ | The two $SL(2,\mathbb{C})$-spinors of that splitting |
 | $\Pi$, $G$ | The generating function and the projective coordinate it resolves |
 | $F_{\mu\nu}$, $A_\mu$ | The curvature and the potential of the connection the condition carries |
 | $q$ | The electric charge, $q=N/4$ in the programme's units, $N$ the winding number and not the norm |

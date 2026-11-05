@@ -165,7 +165,7 @@ $\mathcal{T}_\Omega(Df)=0$.
 
 **Remark (the volume transform on all of $\mathbb{R}^{m+1}$).** On the whole space the Teodorescu
 transform is the convolution with $E$, the distributional inverse of $D$; it is the operator whose
-symbol is $\sigma(\xi)^{-1}$ in the sense of *The Dirac Operator*, and its study on
+symbol is $\sigma(\zeta)^{-1}$ in the sense of *The Dirac Operator*, and its study on
 $\mathbb{R}^{m+1}$ is the study of the elliptic operator $D$ by its parametrix, as in *Harmonic
 Analysis over Hypercomplex Systems*.
 

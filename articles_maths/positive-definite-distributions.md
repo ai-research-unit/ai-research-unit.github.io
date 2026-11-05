@@ -86,15 +86,15 @@ the theorem below shows that they contain nothing wilder than a positive measure
 ### The Bochner–Schwartz Theorem
 
 **Definition.** A positive measure $\mu$ on $\mathbb R^n$ is **tempered** if
-$\int_{\mathbb R^n}(1+\lvert\xi\rvert)^{-N}d\mu(\xi)<\infty$ for some $N$; equivalently, if it is the
+$\int_{\mathbb R^n}(1+\lvert\zeta\rvert)^{-N}d\mu(\zeta)<\infty$ for some $N$; equivalently, if it is the
 Fourier transform of a tempered distribution, i.e. if the function
-$\hat\mu(x)=\int \exp(-2\pi ix\cdot\xi)d\mu(\xi)$ is a tempered distribution.
+$\hat\mu(x)=\int \exp(-2\pi ix\cdot\zeta)d\mu(\zeta)$ is a tempered distribution.
 
 **Theorem (Bochner–Schwartz).** A distribution $T\in\mathcal D'(\mathbb R^n)$ is positive definite if and
 only if there is a unique positive tempered measure $\mu$ with $T=\hat\mu$; that is,
 $$
-\boxed{\;\langle T,\varphi\rangle=\int_{\mathbb R^n}\\mathcal F\\varphi(\xi)\,d\mu(\xi)
-=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)\exp(-2\pi ix\cdot\xi)dx\Bigr)d\mu(\xi)\;} .
+\boxed{\;\langle T,\varphi\rangle=\int_{\mathbb R^n}\\mathcal F\\varphi(\zeta)\,d\mu(\zeta)
+=\int_{\mathbb R^n}\Bigl(\int_{\mathbb R^n}\varphi(x)\exp(-2\pi ix\cdot\zeta)dx\Bigr)d\mu(\zeta)\;} .
 $$
 Equivalently, the Fourier transform is a bijection between the positive definite distributions and the
 positive tempered measures, and it carries the positive definite distributions onto a cone which is the
@@ -105,7 +105,7 @@ image of the positive cone of the measures.
 **Proof sketch.** Suppose first that $T=\hat\mu$ with $\mu\geq0$ tempered. Then for
 $\varphi\in C_c^\infty$,
 $$
-\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\\mathcal F\\varphi(\xi)\rvert^2\,d\mu(\xi)\geq0 ,
+\langle T,\varphi*\varphi^{*}\rangle=\int\lvert\\mathcal F\\varphi(\zeta)\rvert^2\,d\mu(\zeta)\geq0 ,
 $$
 because $\widehat{\varphi*\varphi^{*}}=\lvert\\mathcal F\\varphi\rvert^2$ by the convolution and involution
 identities of the Fourier article; so $T$ is positive definite. Conversely let $T$ be positive definite, and
@@ -122,7 +122,7 @@ $T_\epsilon=\hat\mu_\epsilon$ with $\mu_\epsilon\geq0$ a finite measure. As $\ep
 $T_\epsilon\to T$ in $\mathcal D'$; the measures $\mu_\epsilon$ converge weakly, after passing to a
 subsequence, to a positive measure $\mu$, and the temperedness of $T$ — the fact that $T$ is a distribution
 of finite order — bounds the growth of the masses $\mu_\epsilon$ on the balls and forces
-$\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for $N$ large enough, so that $\mu$ is tempered and
+$\int(1+\lvert\zeta\rvert)^{-N}d\mu<\infty$ for $N$ large enough, so that $\mu$ is tempered and
 $T=\hat\mu$. Uniqueness is the injectivity of the Fourier transform on tempered distributions. The
 details of the growth control and the weak convergence belong to *Measure Theory and Integration* and
 *Distributions and Fundamental Solutions*.
@@ -147,7 +147,7 @@ Bochner–Schwartz, and the positivity and temperedness of the measures are pres
 
 **Theorem (order and the measure).** A positive definite distribution has a well-defined **order**, and the
 growth of its spectral measure is tied to it: if $T$ is of order at most $N$, then
-$\int(1+\lvert\xi\rvert)^{-2N-n-1}d\mu<\infty$. In particular, the positive definite distributions of finite
+$\int(1+\lvert\zeta\rvert)^{-2N-n-1}d\mu<\infty$. In particular, the positive definite distributions of finite
 order are exactly the transforms of the positive measures with the corresponding polynomial growth, and a
 bounded continuous positive definite function is exactly a positive definite distribution whose measure is
 finite (Bochner's theorem in the function case).
@@ -163,16 +163,16 @@ the finite-measure case is Bochner's theorem for bounded continuous functions.
 $$
 \langle\delta_0,\varphi*\varphi^{*}\rangle=(\varphi*\varphi^{*})(0)=\int_{\mathbb R^n}\lvert\varphi(x)\rvert^2dx\geq0 ,
 $$
-and its spectral measure is the Lebesgue measure $d\mu=d\xi$; conversely the constant function $T=1$ is
+and its spectral measure is the Lebesgue measure $d\mu=d\zeta$; conversely the constant function $T=1$ is
 positive definite with spectral measure $\delta_0$, since $\langle1,\varphi*\varphi^{*}\rangle=\lvert\int\varphi\rvert^2\geq0$.
 The pair is the extreme case of Bochner–Schwartz: the distribution transform of the Lebesgue measure is the
 Dirac mass and conversely.
 
 **Example (positive definite functions).** A positive measure $\mu$ with a density gives the positive
-definite function $\hat\mu$; for the Gaussian density $\sqrt t\,\exp(-\pi t\lvert\xi\rvert^2)$ this is the
-positive definite function $\exp(-\pi\lvert x\rvert^2/t)$, and for the measure $\frac12(\delta_\xi+\delta_{-\xi})$
-it is the cosine $\cos(2\pi x\cdot\xi)$. Every character $\exp(2\pi ix\cdot\xi)$ is positive definite with
-spectral measure $\delta_\xi$, and every finite positive combination of characters with coefficients is
+definite function $\hat\mu$; for the Gaussian density $\sqrt t\,\exp(-\pi t\lvert\zeta\rvert^2)$ this is the
+positive definite function $\exp(-\pi\lvert x\rvert^2/t)$, and for the measure $\frac12(\delta_\zeta+\delta_{-\zeta})$
+it is the cosine $\cos(2\pi x\cdot\zeta)$. Every character $\exp(2\pi ix\cdot\zeta)$ is positive definite with
+spectral measure $\delta_\zeta$, and every finite positive combination of characters with coefficients is
 positive definite, with the corresponding discrete measure.
 
 **Example (a Hermitian distribution that is not positive definite).** The tempered distribution
@@ -206,8 +206,8 @@ function is exactly the case of a finite measure.
 | $T^{*}(\varphi)=\overline{T(\varphi^{*})}$ | Adjoint involution on distributions |
 | $\bar T$, value-conjugation | $\bar T(\varphi)=\overline{T(\bar\varphi)}$, distinct from $T^{*}$ |
 | $\langle T,\varphi*\varphi^{*}\rangle\geq0$ | Positive definiteness of a distribution |
-| $\hat\mu(x)=\int \exp(-2\pi ix\cdot\xi)d\mu(\xi)$ | Transform of a measure |
-| $\mu$ tempered | $\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for some $N$ |
+| $\hat\mu(x)=\int \exp(-2\pi ix\cdot\zeta)d\mu(\zeta)$ | Transform of a measure |
+| $\mu$ tempered | $\int(1+\lvert\zeta\rvert)^{-N}d\mu<\infty$ for some $N$ |
 | $T=\hat\mu$ | Bochner–Schwartz representation |
 
 ## Further Reading

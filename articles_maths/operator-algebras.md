@@ -155,7 +155,7 @@ $$
 
 **Theorem (von Neumann bicommutant theorem).** A $*$-subalgebra $\mathcal{M} \subseteq B(H)$ containing $1$ is a von Neumann algebra if and only if $\mathcal{M} = \mathcal{M}''$.
 
-*Proof (sketch).* The inclusion $\mathcal{M} \subseteq \mathcal{M}''$ is immediate. For the converse one shows that the weak operator closure of $\mathcal{M}$ equals $\mathcal{M}''$: a vector $\xi \in H$ and an operator $T \in \mathcal{M}''$ are compared by applying the double commutant to the closure of $\mathcal{M}\xi$, which is $\mathcal{M}''\xi$; the strong closure of $\mathcal{M}$ contains every operator in $\mathcal{M}''$ by a Kaplansky density argument together with the fact that the unit ball is compact in the weak operator topology.
+*Proof (sketch).* The inclusion $\mathcal{M} \subseteq \mathcal{M}''$ is immediate. For the converse one shows that the weak operator closure of $\mathcal{M}$ equals $\mathcal{M}''$: a vector $\zeta \in H$ and an operator $T \in \mathcal{M}''$ are compared by applying the double commutant to the closure of $\mathcal{M}\zeta$, which is $\mathcal{M}''\zeta$; the strong closure of $\mathcal{M}$ contains every operator in $\mathcal{M}''$ by a Kaplansky density argument together with the fact that the unit ball is compact in the weak operator topology.
 
 **Proposition (the centre and the decomposition).** The centre of a von Neumann algebra $\mathcal{M}$ is $Z(\mathcal{M}) = \mathcal{M} \cap \mathcal{M}'$, and it is a commutative von Neumann algebra; hence $Z(\mathcal{M}) \cong C(X)$ for a compact hyperstonean space $X$, and $\mathcal{M}$ decomposes as a direct integral of **factors**, von Neumann algebras with trivial centre.
 
@@ -253,7 +253,7 @@ $$
 
 the second equality because $JaJ \in \mathcal{M}'$ commutes with $\Delta_\omega^{it}$ by the relation above. Hence $JaJ \in \mathcal{M}'$ implies $\Delta_\omega^{it}a\Delta_\omega^{-it} \in J\mathcal{M}'J = \mathcal{M}$, and applying the same argument with $-t$ gives the reverse inclusion.
 
-**Remark (notation).** The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\xi)$ of the Cauchy–Riemann operator, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian and its companions; the two are unrelated operators and appear in different articles.
+**Remark (notation).** The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\zeta)$ of the Cauchy–Riemann operator, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian and its companions; the two are unrelated operators and appear in different articles.
 
 **Theorem (the KMS condition).** The modular group of $\omega$ is determined by the following property: for all $a, b \in \mathcal{M}$ there is a function $F_{a,b}$ bounded and continuous on the closed strip $0 \leq \mathrm{Im}\,z \leq 1$ and holomorphic on its interior such that
 

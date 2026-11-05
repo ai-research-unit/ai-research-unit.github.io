@@ -294,17 +294,17 @@ $$
 **Proposition.** $\mathcal{S}$ is a Fréchet space, stable under differentiation and under multiplication by polynomials, and the Fourier transform
 
 $$
-\hat f(\xi)=\int_{\mathbb{R}^{50}}f(x)e^{-2\pi i\langle\xi,x\rangle}\,dx
+\hat f(\zeta)=\int_{\mathbb{R}^{50}}f(x)e^{-2\pi i\langle\zeta,x\rangle}\,dx
 $$
 
 maps $\mathcal{S}$ into itself.
 
-**Proof.** The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
+**Proof.** The derivatives of $\hat f$ multiply by powers of $\zeta$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
 
 **Corollary.** The Fourier transform extends to a $*$-unitary operator on $L^2(\mathbb{R}^{50})$ (Plancherel), and the inversion formula holds:
 
 $$
-f(x)=\int_{\mathbb{R}^{50}}\hat f(\xi)e^{2\pi i\langle\xi,x\rangle}\,d\xi .
+f(x)=\int_{\mathbb{R}^{50}}\hat f(\zeta)e^{2\pi i\langle\zeta,x\rangle}\,d\zeta .
 $$
 
 **Proof.** The inversion and Plancherel theorems for the Euclidean Fourier transform; the Gaussian is the standard test function.
@@ -319,7 +319,7 @@ $$
 
 **Proof.** The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; the unitarity follows from the inversion and the $L^2$ pairing.
 
-**Corollary.** The Fourier transform converts differentiation into multiplication: $\widehat{\partial f/\partial x_j}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.
+**Corollary.** The Fourier transform converts differentiation into multiplication: $\widehat{\partial f/\partial x_j}(\zeta)=2\pi i\zeta_j\hat f(\zeta)$, and convolution into product.
 
 **Proof.** Integration by parts; the convolution theorem is the standard one.
 
@@ -328,10 +328,10 @@ $$
 **Proposition.** The Gaussian Fourier transform is
 
 $$
-\int_{\mathbb{R}^{50}}e^{-\pi|x|^2}e^{-2\pi i\langle\xi,x\rangle}\,dx=e^{-\pi|\xi|^2}.
+\int_{\mathbb{R}^{50}}e^{-\pi|x|^2}e^{-2\pi i\langle\zeta,x\rangle}\,dx=e^{-\pi|\zeta|^2}.
 $$
 
-**Proof.** The integral factors over the $50$ coordinates; the one-dimensional formula $\int_{\mathbb{R}}e^{-\pi x^2}e^{-2\pi i\xi x}dx=e^{-\pi\xi^2}$ is the standard Gaussian integral.
+**Proof.** The integral factors over the $50$ coordinates; the one-dimensional formula $\int_{\mathbb{R}}e^{-\pi x^2}e^{-2\pi i\zeta x}dx=e^{-\pi\zeta^2}$ is the standard Gaussian integral.
 
 **Corollary.** The heat kernel on $\mathbb{R}^{50}$ is
 
@@ -341,7 +341,7 @@ $$
 
 and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.
 
-**Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t|\xi|^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
+**Proof.** The Fourier transform of $p_t$ is $e^{-4\pi^2t|\zeta|^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.
 
 **Remark.** **The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_5$.** It uses the additive structure of $\mathbb{C}^{25}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(5)$ is a different object, defined by the irreducible representations; it is not needed here.
 
@@ -394,7 +394,7 @@ D\exp_A(H)=e^A\sum_{m\ge0}\frac{(-1)^m}{(m+1)!}\operatorname{ad}_A^m(H).
 $$
 
 $$
-\boxed{\ f(A)=\frac{1}{2\pi i}\oint_\Gamma f(z)(zI-A)^{-1}dz;\qquad P=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz;\qquad \widehat f(\xi)=\int f(x)e^{-2\pi i\langle\xi,x\rangle}dx.\ }
+\boxed{\ f(A)=\frac{1}{2\pi i}\oint_\Gamma f(z)(zI-A)^{-1}dz;\qquad P=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz;\qquad \widehat f(\zeta)=\int f(x)e^{-2\pi i\langle\zeta,x\rangle}dx.\ }
 $$
 
 The Wirtinger calculus gives the holomorphic functions; the holomorphic functional calculus gives the spectral projectors and the spectral mapping theorem; the Fourier transform on $\mathbb{C}^{25}$ gives the Schwartz space, the inversion, the Plancherel theorem, the Gaussian and the heat kernel. The field $\mathbb{C}$ has no zero divisors; the algebra $M_5$ has the nilpotent zero divisors; the ordinary matrix analysis is the analysis over the field, and the boundary against Fueter theory is the quaternionic/Clifford structure that $M_5$ does not carry.
@@ -410,7 +410,7 @@ The Wirtinger calculus gives the holomorphic functions; the holomorphic function
 | Derivative of exponential | $e^A\sum(-1)^m\operatorname{ad}_A^m(H)/(m+1)!$ |
 | Resolvent | $(zI-A)^{-1}$ |
 | Riesz projector | $\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz$ |
-| Fourier transform | $\int f(x)e^{-2\pi i\langle\xi,x\rangle}dx$ |
+| Fourier transform | $\int f(x)e^{-2\pi i\langle\zeta,x\rangle}dx$ |
 
 ## Summary of Notation
 

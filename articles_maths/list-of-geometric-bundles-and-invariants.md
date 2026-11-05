@@ -15,7 +15,7 @@ A fibre bundle is a map that is locally a product, and the structure of the bund
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| a fibre bundle $\pi : E \to B$ | locally a product $\Xi\times F$, with fibre $F$ | *Fibre Bundles, Connections and Curvature* |
+| a fibre bundle $\pi : E \to B$ | locally a product $Ζ\times F$, with fibre $F$ | *Fibre Bundles, Connections and Curvature* |
 | the transition functions $g_{\alpha\beta}$ | the clutching data, with $g_{\alpha\beta}g_{\beta\gamma} = g_{\alpha\gamma}$ | *Fibre Bundles, Connections and Curvature* |
 | a principal $G$-bundle $P \to M$ | a bundle with a free transitive right action of the structure group $G$ | *Fibre Bundles, Connections and Curvature* |
 | the associated bundle $P\times_G F$ | the bundle with fibre $F$ built from a $G$-space and a principal bundle | *Fibre Bundles, Connections and Curvature* |

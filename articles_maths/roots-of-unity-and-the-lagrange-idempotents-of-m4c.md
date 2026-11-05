@@ -420,7 +420,7 @@ $$
 P_+=\frac{I+H}{2},\qquad P_-=\frac{I-H}{2},\qquad H=P_+-P_- .
 $$
 
-These are the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ of *The Peirce Decomposition of $M_4(\mathbb{C})$*, with $H=\tilde\Xi$ and $I=e_t$. The order-two root is the biquaternion root of $+1$; it is the case $n=2$ of the order-four construction, not a separate principle.
+These are the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde{Ζ})/2$ of *The Peirce Decomposition of $M_4(\mathbb{C})$*, with $H=\tilde{Ζ}$ and $I=e_t$. The order-two root is the biquaternion root of $+1$; it is the case $n=2$ of the order-four construction, not a separate principle.
 
 **The old "second root" is the gauge.** In the biquaternion article the frame was presented as a root of $+1$ together with a second root anticommuting with it. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What it supplies is a vector in each mixed Peirce line, equivalently the normalisation of the two nilpotents. That is the gauge parameter $\lambda$ of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*, and at $n=2$ it is one complex number. There is no second primitive element. For $n=4$ the gauge has three parameters, one per simple nilpotent, and no single second root plays the role of $\lambda$.
 

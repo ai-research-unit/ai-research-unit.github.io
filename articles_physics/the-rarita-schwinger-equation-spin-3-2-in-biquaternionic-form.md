@@ -207,7 +207,7 @@ and the vector condition removes exactly the spin-$\tfrac12$ piece of dimension 
 
 *In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $\tilde K=K_0e_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z$, is a zero divisor. The null condition is its quaternion norm, $\tilde K\tilde K^{\natural}=K_0^2+K_x^2+K_y^2+K_z^2=0$, which for $K_0=i\varpi$ and real $\vec k$ is $\varpi^2=\vec k^2$ and not $\varpi^2=-\vec k^2$. Then left multiplication by $\tilde K$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
-*The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\chi_k=\vec e_k\tilde\xi$, it fixes every family with $\sum_k\vec e_k\tilde\chi_k=0$, and its rank over the vector index is two.
+*The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\chi_k=\vec e_k\tilde\zeta$, it fixes every family with $\sum_k\vec e_k\tilde\chi_k=0$, and its rank over the vector index is two.
 
 ## The Transverse Condition on the Vector Index
 
@@ -221,7 +221,7 @@ $$
 \sum_k\vec e_k\,T(\tilde\chi)_k=\sum_k\vec e_k\tilde\chi_k+\tfrac13\Bigl(\sum_k\vec e_k\vec e_k\Bigr)\sum_j\vec e_j\tilde\chi_j=\sum_k\vec e_k\tilde\chi_k-\sum_j\vec e_j\tilde\chi_j=0 .
 $$
 
-**Its kernel is the longitudinal family, and its fixed families are the constrained ones.** The equation $T(\tilde\chi)=0$ reads $\tilde\chi_k=-\tfrac13\vec e_k\sum_j\vec e_j\tilde\chi_j$, which is the longitudinal family $\tilde\chi_k=\vec e_k\tilde\xi$ with one element $\tilde\xi$ for the three directions, the spin-$\tfrac12$ admixture; and every family that satisfies the condition is carried into itself. Its rank over the vector index is $3-1=2$, so it keeps two of the three directions, and with the two complex parameters of each it leaves the four states of spin $\tfrac32$.
+**Its kernel is the longitudinal family, and its fixed families are the constrained ones.** The equation $T(\tilde\chi)=0$ reads $\tilde\chi_k=-\tfrac13\vec e_k\sum_j\vec e_j\tilde\chi_j$, which is the longitudinal family $\tilde\chi_k=\vec e_k\tilde\zeta$ with one element $\tilde\zeta$ for the three directions, the spin-$\tfrac12$ admixture; and every family that satisfies the condition is carried into itself. Its rank over the vector index is $3-1=2$, so it keeps two of the three directions, and with the two complex parameters of each it leaves the four states of spin $\tfrac32$.
 
 **The covariant form refers the same map to the four-momentum.** The standard transverse condition of the theory is the condition above with the fixed direction replaced by the four-momentum $p_\mu$; at $p_\mu=(m,0,0,0)$ the two agree. In the biquaternion framework a boost is a rotor conjugation, so the covariant form is the rotor conjugate of the rest-frame map, and the algebra supplies the boost without a separate construction.
 

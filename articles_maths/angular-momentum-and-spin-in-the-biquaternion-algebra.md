@@ -417,13 +417,13 @@ and the four descendants obtained by applying $\operatorname{ad}_{\tilde S_-}\ot
 
 ## Real Forms and the Rotation Subgroup
 
-The algebra is real, and its complexification by the central root of $-1$, $\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, is
+The algebra is real, and its complexification by the central root of $-1$, $\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, is
 
 $$
-\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde\Xi_{\mathrm{ad}},\qquad \chi^2=+e_t.
+\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde{Ζ}_{\mathrm{ad}},\qquad \chi^2=+e_t.
 $$
 
-The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *The Unpolarized Module of the Biquaternion Algebra*. Its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
+The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *The Unpolarized Module of the Biquaternion Algebra*. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
 
 The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
 
@@ -460,7 +460,7 @@ At a fixed axis, right multiplication by the mixed unit $\vec\Upsilon_{+-}$ carr
 
 ### Chirality Is Central but Not a Spin
 
-In the double, the chirality has the central form $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §*Real Forms and the Rotation Subgroup*. Both halves carry the same rotation content: chirality separates the two Lorentz chiralities, not two values of $s$.
+In the double, the chirality has the central form $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §*Real Forms and the Rotation Subgroup*. Both halves carry the same rotation content: chirality separates the two Lorentz chiralities, not two values of $s$.
 
 The three signs are therefore distinct. A central sign in $\mathbb{B}$ marks integer against half-integer; an inner non-central sign separates two copies of one half-integer carrier; a central sign in the double separates two Lorentz halves. Only the first tracks the integrality of a spin, and none of the three is a value of $s$.
 

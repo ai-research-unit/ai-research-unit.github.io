@@ -9,7 +9,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
+Here the quaternion norm is positive definite, every non-zero $\zeta$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
 
 ## The Additive Group and Its Characters
 
@@ -18,16 +18,16 @@ Here the quaternion norm is positive definite, every non-zero $\xi$ is invertibl
 The quaternion space $\mathbb{H}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$. Its **characters** are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{H}$ is just $\mathbb{R}^4$, the characters are the ordinary four-dimensional Fourier characters:
 
 $$
-\chi_\xi(\tilde q) = \exp(2\pi i \operatorname{Re}(\xi^{\natural} \tilde q)), \qquad \xi \in \mathbb{H},
+\chi_\zeta(\tilde q) = \exp(2\pi i \operatorname{Re}(\zeta^{\natural} \tilde q)), \qquad \zeta \in \mathbb{H},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
 
 $$
-\langle \xi, \tilde q \rangle = \operatorname{Re}(\xi^{\natural} \tilde q) = \xi_t q_t + \xi_x q_x + \xi_y q_y + \xi_z q_z.
+\langle \zeta, \tilde q \rangle = \operatorname{Re}(\zeta^{\natural} \tilde q) = \zeta_t q_t + \zeta_x q_x + \zeta_y q_y + \zeta_z q_z.
 $$
 
-Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_t - \vec\xi$ gives $\xi^{\natural} \tilde q = (\xi_t - \vec\xi)(q_t + \vec q)$, whose real part is $\xi_t q_t + \vec\xi \cdot \vec q$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
+Note the sign: the quaternion conjugation $\zeta^{\natural} = \zeta_t - \vec\zeta$ gives $\zeta^{\natural} \tilde q = (\zeta_t - \vec\zeta)(q_t + \vec q)$, whose real part is $\zeta_t q_t + \vec\zeta \cdot \vec q$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
 
 So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.
 
@@ -36,13 +36,13 @@ So at the level of the additive group, quaternion harmonic analysis is the same 
 The **quaternion characters** are the homomorphisms into the multiplicative group of $\mathbb{H}$:
 
 $$
-\chi_\xi(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)), \qquad \xi \in \mathbb{H},
+\chi_\zeta(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)), \qquad \zeta \in \mathbb{H},
 $$
 
 where $\omega$ is a fixed unit pure quaternion and the exponential is the quaternion exponential. Because $\omega^2 = -1$, this is
 
 $$
-\chi_\xi(\tilde q) = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) + \omega \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
+\chi_\zeta(\tilde q) = \cos(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)) + \omega \sin(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)).
 $$
 
 These characters are **bounded** in the quaternion norm, because they take values on the unit sphere $\mathbb{S}^3$. This is the fundamental difference from the split complex case, where the characters are unbounded, and the similarity with the complex case, where the characters take values in the compact circle.
@@ -56,16 +56,16 @@ So the quaternion case is intermediate between the complex case and the split co
 The **quaternion Fourier transform** of a function $f : \mathbb{H} \to \mathbb{H}$ is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{H}} f(\tilde q) \exp(-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq,
+(\mathcal F f)(\zeta) = \int_{\mathbb{H}} f(\tilde q) \exp(-2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)) \, dq,
 $$
 
 where $dq$ is Lebesgue measure on $\mathbb{H} \cong \mathbb{R}^4$, $\omega$ is a fixed unit pure quaternion, and the exponential is the quaternion exponential.
 
 Because the exponential depends on the choice of $\omega$, there are infinitely many quaternion Fourier transforms, one for each unit pure quaternion. The most common choices are:
 
-- **Left-sided transform.** $(\mathcal F f)(\xi) = \int f(\tilde q) \exp(-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq$, with the exponential on the right.
-- **Right-sided transform.** $(\mathcal F f)(\xi) = \int \exp(-2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) f(\tilde q) \, dq$, with the exponential on the left.
-- **Two-sided transform.** $(\mathcal F f)(\xi) = \int \exp(-2\pi \omega_1 \operatorname{Re}(\xi^{\natural} \tilde q)) f(\tilde q) \exp(-2\pi \omega_2 \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.
+- **Left-sided transform.** $(\mathcal F f)(\zeta) = \int f(\tilde q) \exp(-2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)) \, dq$, with the exponential on the right.
+- **Right-sided transform.** $(\mathcal F f)(\zeta) = \int \exp(-2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)) f(\tilde q) \, dq$, with the exponential on the left.
+- **Two-sided transform.** $(\mathcal F f)(\zeta) = \int \exp(-2\pi \omega_1 \operatorname{Re}(\zeta^{\natural} \tilde q)) f(\tilde q) \exp(-2\pi \omega_2 \operatorname{Re}(\zeta^{\natural} \tilde q)) \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.
 
 The three transforms are related but not equivalent, and the choice depends on the application. The two-sided transform is the most general, and it is the one that diagonalizes the quaternion Cauchy–Riemann operator.
 
@@ -76,13 +76,13 @@ Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) \vec e_x + f_2(\tilde q) \vec
 For the simplest case $\omega = \vec e_x$, the kernel is
 
 $$
-\exp(-2\pi \vec e_x \operatorname{Re}(\xi^{\natural} \tilde q)) = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) - \vec e_x \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
+\exp(-2\pi \vec e_x \operatorname{Re}(\zeta^{\natural} \tilde q)) = \cos(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)) - \vec e_x \sin(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)).
 $$
 
 So the transform is
 
 $$
-(\mathcal F f)(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq - \vec e_x \int f(\tilde q) \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq.
+(\mathcal F f)(\zeta) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)) \, dq - \vec e_x \int f(\tilde q) \sin(2\pi \operatorname{Re}(\zeta^{\natural} \tilde q)) \, dq.
 $$
 
 The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.
@@ -91,19 +91,19 @@ The first integral is the cosine transform, and the second is the sine transform
 
 **Linearity.** The transform is linear over $\mathbb{R}$, but not over $\mathbb{H}$, because $\mathbb{H}$ is non-commutative.
 
-**Translation.** If $f_a(\tilde q) = f(\tilde q - a)$, then $\mathcal F f_a(\xi) = (\mathcal F f)(\xi) \exp(-2\pi \omega \operatorname{Re}(\xi^{\natural} a))$ for the transform defined above, the kernel factor multiplying on the right because the kernel itself stands on the right.
+**Translation.** If $f_a(\tilde q) = f(\tilde q - a)$, then $\mathcal F f_a(\zeta) = (\mathcal F f)(\zeta) \exp(-2\pi \omega \operatorname{Re}(\zeta^{\natural} a))$ for the transform defined above, the kernel factor multiplying on the right because the kernel itself stands on the right.
 
-**Modulation.** If $f_\xi(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) f(\tilde q)$, then $\mathcal F f_\xi(\eta) = (\mathcal F f)(\eta - \xi)$.
+**Modulation.** If $f_\zeta(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)) f(\tilde q)$, then $\mathcal F f_\zeta(\eta) = (\mathcal F f)(\eta - \zeta)$.
 
 **Scaling.** If $f_\lambda(\tilde q) = f(\lambda \tilde q)$ for $\lambda \in \mathbb{H}^\times$, then
 
 $$
-\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} (\mathcal F f)(\bar{\lambda}^{-1}\xi).
+\widehat{f_\lambda}(\zeta) = \frac{1}{|\lambda|^4} (\mathcal F f)(\bar{\lambda}^{-1}\zeta).
 $$
 
-**Conjugation equivariance.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\mathcal F f_u(\xi) = (\mathcal F f)(u \xi u^{-1})$. The transform commutes with the conjugation action of the unit group.
+**Conjugation equivariance.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\mathcal F f_u(\zeta) = (\mathcal F f)(u \zeta u^{-1})$. The transform commutes with the conjugation action of the unit group.
 
-**Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
+**Conjugation.** $\widehat{\bar{f}}(\zeta) = \overline{(\mathcal F f)(-\zeta)}$.
 
 ### The Plancherel Theorem
 
@@ -123,7 +123,7 @@ This is the Plancherel theorem for $\mathbb{R}^4$, written in quaternion notatio
 
 **Theorem.** If $f \in L^1(\mathbb{H})$ and $\mathcal F f \in L^1(\mathbb{H})$, then
 
-$$ \boxed{\; f(\tilde q) = \int_{\mathbb{H}} (\mathcal F f)(\xi) \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q)) \, d\xi \;} $$
+$$ \boxed{\; f(\tilde q) = \int_{\mathbb{H}} (\mathcal F f)(\zeta) \exp(2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q)) \, d\zeta \;} $$
 
 for almost every $\tilde q$.
 
@@ -274,7 +274,7 @@ where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^4$.
 
 **Convolution theorem.** For functions for which the quaternion Fourier transform is defined,
 
-$$ \boxed{\; \widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi) \;} ,$$
+$$ \boxed{\; \widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta) \;} ,$$
 
 with the same ordering on both sides for the left-sided transform. For the two-sided transform, the statement is more complicated, because the two kernels do not commute.
 
@@ -379,7 +379,7 @@ $$
 **Fourier multiplier.** In terms of the quaternion Fourier transform,
 
 $$
-\widehat{Hf}(\xi) = -\omega \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
+\widehat{Hf}(\zeta) = -\omega \operatorname{sgn}(\zeta) (\mathcal F f)(\zeta),
 $$
 
 where $\operatorname{sgn}$ is the sign function on the real part.
@@ -537,7 +537,7 @@ $$
 The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{H}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|^4} \, d\xi < \infty,
+C_\psi = \int_{\mathbb{H}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|^4} \, d\zeta < \infty,
 $$
 
 where $\hat{\psi}$ is the quaternion Fourier transform.
@@ -588,7 +588,7 @@ The section on the structure principle states what organises the subject: whenev
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | General quaternion |
 | $\omega$ | Unit pure quaternion |
-| $\chi_\xi(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q))$ | Quaternion character |
+| $\chi_\zeta(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\zeta^{\natural} \tilde q))$ | Quaternion character |
 | $\mathcal F f$ | Quaternion Fourier transform |
 | $\mathcal{F}(f)(\omega_1,\omega_2)$ | Two-dimensional quaternion Fourier transform, one unit per variable |
 | $\Phi_0,\dots,\Phi_3$ | The four terms of the two-dimensional kernel |

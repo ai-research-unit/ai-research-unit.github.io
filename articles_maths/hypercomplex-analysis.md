@@ -184,22 +184,22 @@ Four features of the algebra obstruct the programme, and they are logically inde
 
 **The one-sided module structure.** The space of $A$-valued functions on $\Omega$ is a module over $A$ for multiplication of the values by a constant, but $D(af) = a\,Df$ requires $a$ to commute with the coefficients $B_\alpha$; the space of regular functions is therefore a module over the centre of $A$, and not over $A$ itself. Together with non-commutativity this produces the left and the right theory, and the two are exchanged by an anti-automorphism rather than identified.
 
-**The dimension.** The symbol $\sigma(\xi) = \xi_t + \sum_{k\geq1}B_k\xi_k$ must be invertible for every real $\xi \neq 0$ if the operator is to be elliptic, and the factorisation $D\bar D = \Delta$ requires the Clifford relations. Over a degenerate algebra this fails, and with it the whole elliptic apparatus: the characteristic variety meets the real space, the plane waves are real exponentials rather than oscillatory, and the components of a regular function satisfy a wave or transport equation in place of Laplace's equation.
+**The dimension.** The symbol $\sigma(\zeta) = \zeta_t + \sum_{k\geq1}B_k\zeta_k$ must be invertible for every real $\zeta \neq 0$ if the operator is to be elliptic, and the factorisation $D\bar D = \Delta$ requires the Clifford relations. Over a degenerate algebra this fails, and with it the whole elliptic apparatus: the characteristic variety meets the real space, the plane waves are real exponentials rather than oscillatory, and the components of a regular function satisfy a wave or transport equation in place of Laplace's equation.
 
-**Proposition (elliptic and degenerate systems).** Let $A$ have dimension $m$ and let $D = \partial/\partial Q_t + \sum_{k\geq1}B_k\partial/\partial Q_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = |\xi|^2\cdot 1$ and $D$ is elliptic. By contrast:
+**Proposition (elliptic and degenerate systems).** Let $A$ have dimension $m$ and let $D = \partial/\partial Q_t + \sum_{k\geq1}B_k\partial/\partial Q_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = |\zeta|^2\cdot 1$ and $D$ is elliptic. By contrast:
 
-- for $\mathbb{C}^{\mathrm{spl}}$ with $D = \partial/\partial Q_t + j\partial/\partial Q_x$, the product $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_t^2 - \xi_x^2$ vanishes on the two real lines $\xi_t = \pm\xi_x$;
-- for $\mathbb{C}^{\mathrm{dln}}$ with $D = \partial/\partial Q_t + \varepsilon\partial/\partial Q_x$, the same product is $\xi_t^2$ and vanishes on the hyperplane $\xi_t = 0$.
+- for $\mathbb{C}^{\mathrm{spl}}$ with $D = \partial/\partial Q_t + j\partial/\partial Q_x$, the product $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = \zeta_t^2 - \zeta_x^2$ vanishes on the two real lines $\zeta_t = \pm\zeta_x$;
+- for $\mathbb{C}^{\mathrm{dln}}$ with $D = \partial/\partial Q_t + \varepsilon\partial/\partial Q_x$, the same product is $\zeta_t^2$ and vanishes on the hyperplane $\zeta_t = 0$.
 
 In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.
 
-**Example (the degenerate systems solved explicitly).** For $\mathbb{C}^{\mathrm{spl}}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\xi_\pm = x_t \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\xi_+ + \partial/\partial\xi_-$ and $\partial/\partial Q_x = \partial/\partial\xi_+ - \partial/\partial\xi_-$ and therefore $\Pi_x\partial/\partial\xi_+ + \Pi_y\partial/\partial\xi_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then
+**Example (the degenerate systems solved explicitly).** For $\mathbb{C}^{\mathrm{spl}}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\zeta_\pm = x_t \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\zeta_+ + \partial/\partial\zeta_-$ and $\partial/\partial Q_x = \partial/\partial\zeta_+ - \partial/\partial\zeta_-$ and therefore $\Pi_x\partial/\partial\zeta_+ + \Pi_y\partial/\partial\zeta_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then
 
 $$
-D = \partial/\partial Q_t + j\partial/\partial Q_x = 2\bigl(\Pi_x\partial/\partial\xi_+ + \Pi_y\partial/\partial\xi_-\bigr),
+D = \partial/\partial Q_t + j\partial/\partial Q_x = 2\bigl(\Pi_x\partial/\partial\zeta_+ + \Pi_y\partial/\partial\zeta_-\bigr),
 $$
 
-so $f$ is left regular exactly when $f_+$ is a function of $\xi_-$ alone and $f_-$ is a function of $\xi_+$ alone. The regular functions of $\mathbb{C}^{\mathrm{spl}}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
+so $f$ is left regular exactly when $f_+$ is a function of $\zeta_-$ alone and $f_-$ is a function of $\zeta_+$ alone. The regular functions of $\mathbb{C}^{\mathrm{spl}}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
 
 $$
 f(x_t + jx_1) = \exp(-(x_t - jx_1)^2) = \exp(-(x_t^2+x_1^2))\bigl(\cosh(2x_tx_1) + j\sinh(2x_tx_1)\bigr)
@@ -245,7 +245,7 @@ Both proofs are the honest generalisation of the complex-analytic arguments: the
 
 **Theorem (existence of a fundamental solution).** Every nonzero constant-coefficient differential operator on $\mathbb{R}^m$ has a fundamental solution. In particular every generalised Cauchy–Riemann operator $D$ has one, and the kernel depends on the coefficients $B_\alpha$.
 
-*Proof.* This is the Malgrange–Ehrenpreis theorem; the case at hand is the constant-coefficient case, where the fundamental solution may be taken as a finite combination of distributions of the form $P(\xi)^{-1}$ under the Fourier transform, with the singularities of the symbol handled by a suitable cut-off.
+*Proof.* This is the Malgrange–Ehrenpreis theorem; the case at hand is the constant-coefficient case, where the fundamental solution may be taken as a finite combination of distributions of the form $P(\zeta)^{-1}$ under the Fourier transform, with the singularities of the symbol handled by a suitable cut-off.
 
 **Theorem (Cauchy–Pompeiu formula).** Let $\Omega \subseteq A$ be a bounded domain with smooth boundary $\partial\Omega$, oriented by the outward normal, and let $E$ be a Cauchy kernel for $D$. Then for $f$ of class $C^1$ on $\bar\Omega$ and $x \in \Omega$,
 
@@ -343,7 +343,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $L_A$ | Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$ |
 | $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ | Split complex numbers, $j^2=+1$; degenerate for $D = \partial/\partial Q_t + j\partial/\partial Q_x$ |
 | $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, $\varepsilon^2=0$; degenerate for $D = \partial/\partial Q_t+\varepsilon\partial/\partial Q_x$ |
-| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\xi_\pm = x_t\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$ |
 
 
 

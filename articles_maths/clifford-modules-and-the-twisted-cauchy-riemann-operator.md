@@ -99,15 +99,15 @@ and if $s>0$ pointwise then $D$ has no harmonic spinors, $\ker D=0$, since $\int
 
 ## Ellipticity and the Elliptic Complex
 
-**Theorem.** The principal symbol of $D_E$ at a covector $\xi\in T_x^*M$ is Clifford multiplication by $i\xi$,
+**Theorem.** The principal symbol of $D_E$ at a covector $\zeta\in T_x^*M$ is Clifford multiplication by $i\zeta$,
 
 $$
-\sigma(D_E)(x,\xi)=i\,c(\xi)\colon E_x\to E_x,
+\sigma(D_E)(x,\zeta)=i\,c(\zeta)\colon E_x\to E_x,
 $$
 
-and this endomorphism is invertible for every $\xi\neq0$. Hence $D_E$ is elliptic.
+and this endomorphism is invertible for every $\zeta\neq0$. Hence $D_E$ is elliptic.
 
-**Proof.** The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\xi_i=c(\xi)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\xi)^2=-|\xi|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\xi)/|\xi|^2$ for $\xi\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.
+**Proof.** The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\zeta_i=c(\zeta)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\zeta)^2=-|\zeta|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\zeta)/|\zeta|^2$ for $\zeta\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.
 
 **Theorem.** On a closed spin Riemannian manifold with a $\mathbb{Z}/2$-graded twisted Clifford module bundle $E=E_+\oplus E_-$, the operator restricts to an elliptic operator
 
@@ -175,7 +175,7 @@ $$
 D_E=\sum_ic(e_i)\nabla^E_{e_i},
 $$
 
-well defined, geometric, and, on a $\mathbb{Z}/2$-graded module, odd. Its symbol is $i\,c(\xi)$, invertible for $\xi\neq0$, so $D_E$ is elliptic; on a closed manifold the graded operator $D_+\colon\Gamma(E_+)\to\Gamma(E_-)$ has finite-dimensional kernel and cokernel and a well-defined index.
+well defined, geometric, and, on a $\mathbb{Z}/2$-graded module, odd. Its symbol is $i\,c(\zeta)$, invertible for $\zeta\neq0$, so $D_E$ is elliptic; on a closed manifold the graded operator $D_+\colon\Gamma(E_+)\to\Gamma(E_-)$ has finite-dimensional kernel and cokernel and a well-defined index.
 
 The square of the operator satisfies the Weitzenböck formula $D_E^2=\nabla^{E,*}\nabla^E+\mathcal{R}^E$, with $\mathcal{R}^E=\tfrac14s+c(F^W)$; in the untwisted case this is the Lichnerowicz formula, and positive scalar curvature forces the kernel to vanish. The index is computed by the McKean–Singer supertrace, independent of $t$, and the local index theorem gives
 
@@ -196,7 +196,7 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 | $E_\pm$ | Half-modules, eigenspaces of the chirality operator |
 | $\nabla^S,\nabla^W,\nabla^E$ | Spin, twisting and tensor connections |
 | $D_E=\sum_ic(e_i)\nabla^E_{e_i}$ | Twisted Cauchy–Riemann operator |
-| $\sigma(D_E)(x,\xi)=i\,c(\xi)$ | Principal symbol, invertible for $\xi\neq0$ |
+| $\sigma(D_E)(x,\zeta)=i\,c(\zeta)$ | Principal symbol, invertible for $\zeta\neq0$ |
 | $D_+:\Gamma(E_+)\to\Gamma(E_-)$ | Graded operator whose index is taken |
 | $\operatorname{ind}(D_+)$ | $\dim\ker D_+-\dim\operatorname{coker}D_+$ |
 | $D_E^2=\nabla^{E,*}\nabla^E+\mathcal{R}^E$ | Weitzenböck formula |

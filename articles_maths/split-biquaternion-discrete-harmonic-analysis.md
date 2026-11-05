@@ -227,10 +227,10 @@ $$
 
 where $W_N(n, u) = \exp(-2\pi \rho nu/N)$ and $\rho$ is a unit pure real quaternion.
 
-The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_t, \rho, \nu, \xi\}$:
+The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\zeta$ such that $\{\rho, \nu, \zeta\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_t, \rho, \nu, \zeta\}$:
 
 $$
-g[n] = g_0[n] e_t + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
+g[n] = g_0[n] e_t + g_\rho[n] \rho + g_\nu[n] \nu + g_\zeta[n] \zeta, \qquad g_\bullet[n] \in \mathbb{C}.
 $$
 
 The quaternion Fourier transform then decomposes into **four complex Fourier transforms**, one for each complex coefficient, as discussed in the biquaternion discrete harmonic analysis article.

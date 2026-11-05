@@ -74,7 +74,7 @@ The subgroups relevant to the series sit inside it as follows.
 
 | Element | Characterization | Sector |
 |---|---|---|
-| Pure boost $\tilde U_{\mathrm b}=\cosh\frac{\xi}{2}\,e_t+i\sinh\frac{\xi}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{M}_+$ |
+| Pure boost $\tilde U_{\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{M}_+$ |
 | Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{H}_{\mathbb{B}}$ |
 | General $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
 
@@ -123,10 +123,10 @@ No two-sided action appears. That is the defining feature of the module: one fac
 
 ### Boosts and Rotations as Exponentials
 
-A boost along the direction $\vec u_{\mathrm b}$ with rapidity $\xi$ is the exponential of its generator, because the generator squares to the unit:
+A boost along the direction $\vec u_{\mathrm b}$ with rapidity $\zeta$ is the exponential of its generator, because the generator squares to the unit:
 
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(\frac{\xi}{2}\,i\vec u_{\mathrm b}\Bigr),
+\tilde U_{\mathrm b}=\exp\Bigl(\frac{\zeta}{2}\,i\vec u_{\mathrm b}\Bigr),
 \qquad (i\vec u_{\mathrm b})^2=e_t .
 $$
 

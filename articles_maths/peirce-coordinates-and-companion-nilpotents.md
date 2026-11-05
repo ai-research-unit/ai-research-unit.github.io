@@ -119,13 +119,13 @@ $$
 
 *Proof.* If $x=ae$ then $xe=ae^2=ae=x$; conversely $xe=x$ gives $x=xe\in Ae$. The Peirce decomposition of $x\in Ae$ has only the corners with right index $+$, that is $A_{++}$ and $A_{-+}$. If $x\in Ae$ then $(ax)e=a(xe)=ax$, so $ax\in Ae$.
 
-**Theorem (coordinates).** Let $(\nu_1,\dots,\nu_s)$ generate $A_{-+}$ over $D$. Then every $\xi\in C(e)$ is of the form
+**Theorem (coordinates).** Let $(\nu_1,\dots,\nu_s)$ generate $A_{-+}$ over $D$. Then every $\zeta\in C(e)$ is of the form
 
 $$
-\xi=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_0,d_1,\dots,d_s\in D,
+\zeta=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_0,d_1,\dots,d_s\in D,
 $$
 
-and the expression is unique when $(\nu_1,\dots,\nu_s)$ is a $D$-basis of $A_{-+}$. In that case the **coordinate vector** of $\xi$ is
+and the expression is unique when $(\nu_1,\dots,\nu_s)$ is a $D$-basis of $A_{-+}$. In that case the **coordinate vector** of $\zeta$ is
 
 $$
 (d_0;d_1,\dots,d_s)\in D^{1+s},
@@ -147,10 +147,10 @@ x\nu_i=q_{0i}+\sum_{j=1}^{s}\nu_jq_{ji},
 \qquad p_j,q_{ji}\in D .
 $$
 
-Then for $\xi=d_0+\sum_i\nu_id_i$,
+Then for $\zeta=d_0+\sum_i\nu_id_i$,
 
 $$
-x\xi=\Bigl(p_0d_0+\sum_iq_{0i}d_i\Bigr)
+x\zeta=\Bigl(p_0d_0+\sum_iq_{0i}d_i\Bigr)
 +\sum_j\nu_j\Bigl(p_jd_0+\sum_iq_{ji}d_i\Bigr).
 $$
 
@@ -169,7 +169,7 @@ P(x)\,(d_0,d_1,\dots,d_s)^{\mathsf T}
 =(d_0',d_1',\dots,d_s')^{\mathsf T}.
 $$
 
-*Proof.* Expand $x\xi=x(ed_0)+\sum_i x(\nu_id_i)=(xe)d_0+\sum_i(x\nu_i)d_i$ by associativity, substitute the two expansions, and collect the coefficients of $e$ and of the $\nu_j$.
+*Proof.* Expand $x\zeta=x(ed_0)+\sum_i x(\nu_id_i)=(xe)d_0+\sum_i(x\nu_i)d_i$ by associativity, substitute the two expansions, and collect the coefficients of $e$ and of the $\nu_j$.
 
 **Example (the biquaternion).** Let $A=\mathbb{B}$, $e=\tilde\Pi_+$, $f=\tilde\Pi_-$, $\nu_1=\vec\Upsilon_y$. Then $D=\mathbb{C}\tilde\Pi_+\cong\mathbb{C}$ and
 

@@ -25,32 +25,32 @@ The phase gate of the gate articles is a rotation about $\vec e_z$, a non-centra
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
-**The special glyphs are notational.** A root $\tilde\Xi$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
+**The special glyphs are notational.** A root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
 
 ### The Root Convention
 
-The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
+The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of an Element*; the roots the series uses are the roots of $1$.
+A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of an Element*; the roots the series uses are the roots of $1$.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, no tilde being written where there is no quaternionic factor. The layer fixes the glyph.
+**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{Ζ}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\zeta}$; those of the complex, split-complex and dual layers carry the plain capital, $Ζ$; and those of the reduced biquaternion layer carry the same plain capital, $Ζ$, no tilde being written where there is no quaternionic factor. The layer fixes the glyph.
 
-**The coordinates carry the letter of the root**: in $\mathbb{B}$ the root is $\tilde{\Xi} = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.
+**The coordinates carry the letter of the root**: in $\mathbb{B}$ the root is $\tilde{Ζ} = Ζ_te_t + Ζ_x\vec e_x + Ζ_y\vec e_y + Ζ_z\vec e_z$ with $Ζ_\mu = \zeta_\mu + i\zeta'_\mu$, its scalar part $Ζ_t$ and its vector part $\vec{Ζ} = \vec\zeta + i\vec\zeta'$; in $\mathbb{H}$ it is $\tilde\zeta = \zeta_te_t + \zeta_x\vec e_x + \zeta_y\vec e_y + \zeta_z\vec e_z$ with real $\zeta_\mu$.
 
-**It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
+**It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde{Ζ}_1, \tilde{Ζ}_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde\Xi_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The chirality is the cell $\mathsf{V}^{\mathrm{vol}}$ of §*The Chirality Convention*; its central form is $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it.
+**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde{Ζ}_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The chirality is the cell $\mathsf{V}^{\mathrm{vol}}$ of §*The Chirality Convention*; its central form is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it.
 
 The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\Xi$ | A root of $1$ of the complex, split-complex or dual layer, where no tilde is written |
-| $\Xi_\pm$ | A root of $1$ of the reduced biquaternion layer, where no tilde is written |
-| $\tilde{\xi}$ | A root of $1$ of the quaternion or split-quaternion layer |
-| $\tilde{\Xi}$ | A root of $1$ of the biquaternion or split-biquaternion layer |
+| $Ζ$ | A root of $1$ of the complex, split-complex or dual layer, where no tilde is written |
+| $Ζ_\pm$ | A root of $1$ of the reduced biquaternion layer, where no tilde is written |
+| $\tilde{\zeta}$ | A root of $1$ of the quaternion or split-quaternion layer |
+| $\tilde{Ζ}$ | A root of $1$ of the biquaternion or split-biquaternion layer |
 
 ### The Idempotent Convention
 
@@ -128,7 +128,7 @@ a pure right multiplier of the axis-free frame, where the four gammas are that f
 $$
 s=\hbar^{-1}\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
 $$
-a scalar label and not a vector. The two sentences agree on every carrier the corpus uses, and the algebraic one is the sentence an article computes with (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the cell of §*The Chirality Convention*, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification.
+a scalar label and not a vector. The two sentences agree on every carrier the corpus uses, and the algebraic one is the sentence an article computes with (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the cell of §*The Chirality Convention*, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexification.
 
 ### The Spinor Convention
 
@@ -152,7 +152,7 @@ for a declared unit imaginary direction $\vec u$, and each part is an elementary
 
 Multiplication by $i$ is one map. On the centre it is the global phase; on the complex space sector it is the duality rotation; on the real and imaginary halves it is the Wick rotation, and on the two sectors it is the material–informational exchange. The generator satisfies $(ie_t)^2=-e_t$, and the group $\exp(i\theta)e_t$ of the centre interpolates between the four values. The map is a rotation and not a projection, a collapse or a measurement, and it acts through the centre rather than through the quaternion directions.
 
-The special glyphs are notational: a root $\tilde\Xi$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Unit, Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
+The special glyphs are notational: a root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Unit, Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 
 The chirality is the cell of a frame and not an element of the algebra. Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, a pure right multiplier of the axis-free frame, $i$ times the product of the four cells of the frame, of spectrum $+1,+1,-1,-1$ on the elements. The subscript of an element takes the two values $L$ and $R$, read from that cell and from the declared frame. The central form of the chirality is the sign of the double, and a Peirce sign is neither the cell nor its central form.
 
@@ -165,7 +165,7 @@ An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm
 | Symbol | Meaning |
 |---|---|
 | $i\,\cdot$ | One central complex-linear map; its restrictions are the global phase, the duality rotation, the Wick rotation and the sector exchange |
-| $\tilde\Xi$ | A root, $\tilde\Xi^2=e_t$ in the product the statement names |
+| $\tilde{Ζ}$ | A root, $\tilde{Ζ}^2=e_t$ in the product the statement names |
 | $\tilde\Pi$ | An idempotent, $\tilde\Pi^2=\tilde\Pi$; in the reduced layer written $\Pi_\pm$ |
 | $\tilde\nu$, $\tilde\Upsilon$ | A nilpotent, $\tilde\nu^2=0$; the biquaternion layer writes $\tilde\Upsilon$ |
 | $\vec\Upsilon_1,\vec\Upsilon_2$ | The standard Peirce pair, $\tfrac12(i\vec e_x\mp\vec e_y)$, pure and written with the arrow |

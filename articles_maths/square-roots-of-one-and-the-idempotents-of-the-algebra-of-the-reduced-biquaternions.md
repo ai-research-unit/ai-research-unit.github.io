@@ -4,19 +4,19 @@
 
 Of the four products of *The Four Products, Their Forms and Their Algebraic Norms*, exactly one makes the underlying complex space of $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Algebra of the Reduced Biquaternions*, and its multiplication is the general plain bilinear product of two reduced biquaternions, $\breve Q_{1}\breve Q_{2}$. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\Xi\in\mathbb{B}^{\mathrm{red}}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $Ζ\in\mathbb{B}^{\mathrm{red}}$ with
 
 $$
-\Xi^{2}=1 .
+Ζ^{2}=1 .
 $$
 
 The second is the idempotents of the algebra, the elements $\Pi$ with $\Pi^{2}=\Pi$. The two subjects are one subject, because the **halving map**
 
 $$
-H(\Xi)=\tfrac12(1+\Xi),\qquad \Xi^{2}=1,
+H(Ζ)=\tfrac12(1+Ζ),\qquad Ζ^{2}=1,
 $$
 
-is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-\Xi$; with $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=\Pi_{+}(-\Xi)$, the two are a complete orthogonal pair, $\Pi_{+}(\Xi)+\Pi_{-}(\Xi)=1$ and $\Pi_{+}(\Xi)\Pi_{-}(\Xi)=0$, and the root is their difference, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$. The reason is a two-line computation: if $\Xi^{2}=1$ then $\Pi^{2}=\tfrac14(1+2\Xi+1)=\Pi$, and if $\Pi^{2}=\Pi$ then $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
+is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-Ζ$; with $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=\Pi_{+}(-Ζ)$, the two are a complete orthogonal pair, $\Pi_{+}(Ζ)+\Pi_{-}(Ζ)=1$ and $\Pi_{+}(Ζ)\Pi_{-}(Ζ)=0$, and the root is their difference, $Ζ=\Pi_{+}(Ζ)-\Pi_{-}(Ζ)$. The reason is a two-line computation: if $Ζ^{2}=1$ then $\Pi^{2}=\tfrac14(1+2Ζ+1)=\Pi$, and if $\Pi^{2}=\Pi$ then $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.
 
 **The results.** The roots of $+1$ are exactly the four elements
 
@@ -30,7 +30,7 @@ $$
 \Pi_{\pm}=\tfrac12(1\pm j).
 $$
 
-The trivial idempotents are Hermitian, fixed by the star; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two complex equations $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, each with two solutions, hence four roots. The roots of $+1$ form the four-element group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$; they are not the roots of $+1$.
+The trivial idempotents are Hermitian, fixed by the star; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two complex equations $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, each with two solutions, hence four roots. The roots of $+1$ form the four-element group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$; they are not the roots of $+1$.
 
 The following table collects the results at a glance.
 
@@ -42,12 +42,12 @@ The following table collects the results at a glance.
 | Idempotents | $0,1,\Pi_{+},\Pi_{-}$ | four elements |
 | Hermitian idempotents | $0,1$, the star fixing them | two elements |
 | Non-Hermitian idempotents | $\Pi_{+},\Pi_{-}$, the star exchanging them | two elements |
-| Halving map | bijection $H(\Xi)=\tfrac12(1+\Xi)$ | two-to-one on unordered pairs |
+| Halving map | bijection $H(Ζ)=\tfrac12(1+Ζ)$ | two-to-one on unordered pairs |
 | Standard pair | $\Pi_{\pm}=\tfrac12(1\pm j)$, central, primitive, complete and orthogonal | two elements |
 | Zero divisors | the non-trivial idempotents and their nonzero complex multiples | two lines |
 | Involutions | the tessarine sign and the star exchange $\Pi_{+}$ and $\Pi_{-}$; the bar fixes both; the flat sends each to the negative of the other | four involutions |
 
-The article is algebraic. It does not treat the roots of the general quadratic $\Xi^{2}=Q$, which is *Square Roots of a General Element in the Algebra of the Reduced Biquaternions*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*; the structure of the zero-divisor set, which is *Zero Divisors of the Algebra of the Reduced Biquaternions*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The subsection §*The Roots of Minus One* records the roots of $-1$; it is a remark, it is used nowhere, and it opens nothing.
+The article is algebraic. It does not treat the roots of the general quadratic $Ζ^{2}=Q$, which is *Square Roots of a General Element in the Algebra of the Reduced Biquaternions*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*; the structure of the zero-divisor set, which is *Zero Divisors of the Algebra of the Reduced Biquaternions*; or the ideals the standard idempotents generate, which are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The subsection §*The Roots of Minus One* records the roots of $-1$; it is a remark, it is used nowhere, and it opens nothing.
 
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products are *The Four Products, Their Forms and Their Algebraic Norms*.
 
@@ -55,51 +55,51 @@ The equations name a product, so the roots and the idempotents are relative to i
 
 **The roots of $+1$ are exactly $\pm1$ and $\pm j$; there are no others.**
 
-A **root of $+1$** is an element $\Xi\in\mathbb{B}^{\mathrm{red}}$ with $\Xi^{2}=1$, the square being the one of the general plain bilinear product.
+A **root of $+1$** is an element $Ζ\in\mathbb{B}^{\mathrm{red}}$ with $Ζ^{2}=1$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
 Write the root in the idempotent coordinates,
 
 $$
-\Xi=\Xi_{+}\Pi_{+}+\Xi_{-}\Pi_{-},\qquad \Xi_{\pm}=\Xi_{\blacktriangle}\pm\Xi_{\blacktriangledown},
+Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-},\qquad Ζ_{\pm}=Ζ_{\blacktriangle}\pmΖ_{\blacktriangledown},
 $$
 
-with $\Xi_{\blacktriangle},\Xi_{\blacktriangledown}\in\mathbb{C}$. Because the product is componentwise in the idempotent basis and $\Pi_{\pm}^{2}=\Pi_{\pm}$, $\Pi_{+}\Pi_{-}=0$, the square is
+with $Ζ_{\blacktriangle},Ζ_{\blacktriangledown}\in\mathbb{C}$. Because the product is componentwise in the idempotent basis and $\Pi_{\pm}^{2}=\Pi_{\pm}$, $\Pi_{+}\Pi_{-}=0$, the square is
 
 $$
-\Xi^{2}=\Xi_{+}^{2}\Pi_{+}+\Xi_{-}^{2}\Pi_{-}.
+Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-}.
 $$
 
-The equation $\Xi^{2}=1=\Pi_{+}+\Pi_{-}$ is therefore equivalent to the **pair of complex equations**
+The equation $Ζ^{2}=1=\Pi_{+}+\Pi_{-}$ is therefore equivalent to the **pair of complex equations**
 
 $$
-\Xi_{+}^{2}=1,\qquad \Xi_{-}^{2}=1.
+Ζ_{+}^{2}=1,\qquad Ζ_{-}^{2}=1.
 $$
 
 The two equations are collected in the table.
 
 | Case | Equation | Solutions |
 |---|---|---|
-| $\Xi_{+}$ | $\Xi_{+}^{2}=1$ | $\Xi_{+}=+1$ or $\Xi_{+}=-1$ |
-| $\Xi_{-}$ | $\Xi_{-}^{2}=1$ | $\Xi_{-}=+1$ or $\Xi_{-}=-1$ |
+| $Ζ_{+}$ | $Ζ_{+}^{2}=1$ | $Ζ_{+}=+1$ or $Ζ_{+}=-1$ |
+| $Ζ_{-}$ | $Ζ_{-}^{2}=1$ | $Ζ_{-}=+1$ or $Ζ_{-}=-1$ |
 
 There is no coupling between the two coordinates: the root problem splits into two independent one-dimensional root problems over $\mathbb{C}$, each with the two solutions $\pm1$. The four combinations are the four roots.
 
 **Remark (the coordinate form).** In the basis $1,j$ the same equations read
 
 $$
-\Xi_{\blacktriangle}^{2}+\Xi_{\blacktriangledown}^{2}=1,\qquad 2\Xi_{\blacktriangle}\Xi_{\blacktriangledown}=0,
+Ζ_{\blacktriangle}^{2}+Ζ_{\blacktriangledown}^{2}=1,\qquad 2Ζ_{\blacktriangle}Ζ_{\blacktriangledown}=0,
 $$
 
-because $\Xi^{2}=(\Xi_{\blacktriangle}^{2}+\Xi_{\blacktriangledown}^{2})+2\Xi_{\blacktriangle}\Xi_{\blacktriangledown}j$. Over $\mathbb{C}$ the second equation forces $\Xi_{\blacktriangle}=0$ or $\Xi_{\blacktriangledown}=0$; the first then gives $\Xi_{\blacktriangle}=\pm1$ with $\Xi_{\blacktriangledown}=0$, or $\Xi_{\blacktriangle}=0$ with $\Xi_{\blacktriangledown}=\pm1$. The four solutions are $\pm1$ and $\pm j$.
+because $Ζ^{2}=(Ζ_{\blacktriangle}^{2}+Ζ_{\blacktriangledown}^{2})+2Ζ_{\blacktriangle}Ζ_{\blacktriangledown}j$. Over $\mathbb{C}$ the second equation forces $Ζ_{\blacktriangle}=0$ or $Ζ_{\blacktriangledown}=0$; the first then gives $Ζ_{\blacktriangle}=\pm1$ with $Ζ_{\blacktriangledown}=0$, or $Ζ_{\blacktriangle}=0$ with $Ζ_{\blacktriangledown}=\pm1$. The four solutions are $\pm1$ and $\pm j$.
 
 ### The Trivial Roots
 
 The two **trivial roots** are
 
 $$
-\Xi=+1,\qquad \Xi=-1 .
+Ζ=+1,\qquad Ζ=-1 .
 $$
 
 They are the roots in the complex line $\mathbb{C}1$, and they are the only roots with vanishing $j$-part. They give the trivial idempotents $1$ and $0$ under the halving map.
@@ -109,10 +109,10 @@ They are the roots in the complex line $\mathbb{C}1$, and they are the only root
 The two **non-trivial roots** are
 
 $$
-\Xi=+j,\qquad \Xi=-j .
+Ζ=+j,\qquad Ζ=-j .
 $$
 
-They are the roots in the line $j\mathbb{C}$, with vanishing scalar part; they are anti-fixed by the star, $\Xi^{*}=-\Xi$, hence non-Hermitian, while the bar fixes them. They give the standard idempotents $\Pi_{+}$ and $\Pi_{-}$ under the halving map.
+They are the roots in the line $j\mathbb{C}$, with vanishing scalar part; they are anti-fixed by the star, $Ζ^{*}=-Ζ$, hence non-Hermitian, while the bar fixes them. They give the standard idempotents $\Pi_{+}$ and $\Pi_{-}$ under the halving map.
 
 ### Statement of the Theorem
 
@@ -124,13 +124,13 @@ $$
 \;}.
 $$
 
-**Proof.** The reduction gives $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, hence $\Xi_{+}\in\{+1,-1\}$ and $\Xi_{-}\in\{+1,-1\}$. The four combinations are
+**Proof.** The reduction gives $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, hence $Ζ_{+}\in\{+1,-1\}$ and $Ζ_{-}\in\{+1,-1\}$. The four combinations are
 
 $$
-\Xi=1\Pi_{+}+1\Pi_{-}=1,\qquad
-\Xi=1\Pi_{+}-1\Pi_{-}=j,\qquad
-\Xi=-1\Pi_{+}+1\Pi_{-}=-j,\qquad
-\Xi=-1\Pi_{+}-1\Pi_{-}=-1,
+Ζ=1\Pi_{+}+1\Pi_{-}=1,\qquad
+Ζ=1\Pi_{+}-1\Pi_{-}=j,\qquad
+Ζ=-1\Pi_{+}+1\Pi_{-}=-j,\qquad
+Ζ=-1\Pi_{+}-1\Pi_{-}=-1,
 $$
 
 where the second and third use $2\Pi_{+}-1=j$ and $2\Pi_{-}-1=-j$. There are no others, because the reduction is an equivalence.
@@ -139,8 +139,8 @@ The roots fall into the two following families.
 
 | Family | Form | Real parameters | Size | Position | Fixed by the star? |
 |---|---|---|---|---|---|
-| Trivial roots | $\Xi=\pm1$ | none | two elements | the complex line $\mathbb{C}1$ | yes |
-| Non-trivial roots | $\Xi=\pm j$ | none | two elements | the line $j\mathbb{C}$ | no |
+| Trivial roots | $Ζ=\pm1$ | none | two elements | the complex line $\mathbb{C}1$ | yes |
+| Non-trivial roots | $Ζ=\pm j$ | none | two elements | the line $j\mathbb{C}$ | no |
 
 ### Verification
 
@@ -155,13 +155,13 @@ The verification is the whole computation: the split sign $j^{2}=+1$ is what mak
 
 ### The Roots of Minus One
 
-**Proposition (the roots of $-1$).** The equation $\Xi^{2}=-1$ has the four solutions
+**Proposition (the roots of $-1$).** The equation $Ζ^{2}=-1$ has the four solutions
 
 $$
-\Xi=+i,\qquad \Xi=-i,\qquad \Xi=+ij,\qquad \Xi=-ij .
+Ζ=+i,\qquad Ζ=-i,\qquad Ζ=+ij,\qquad Ζ=-ij .
 $$
 
-**Proof.** In the idempotent coordinates the equation is $\Xi_{+}^{2}=-1$ and $\Xi_{-}^{2}=-1$, so $\Xi_{+}\in\{+i,-i\}$ and $\Xi_{-}\in\{+i,-i\}$. The four combinations are
+**Proof.** In the idempotent coordinates the equation is $Ζ_{+}^{2}=-1$ and $Ζ_{-}^{2}=-1$, so $Ζ_{+}\in\{+i,-i\}$ and $Ζ_{-}\in\{+i,-i\}$. The four combinations are
 
 $$
 (i,i)=i,\qquad (i,-i)=ij,\qquad (-i,i)=-ij,\qquad (-i,-i)=-i,
@@ -173,7 +173,7 @@ The result is collected in the table.
 
 | Equation | Solutions | Size | Relation to the roots of $+1$ |
 |---|---|---|---|
-| $\Xi^{2}=-1$ | $i,-i,ij,-ij$ | four elements | $i\{1,-1,j,-j\}$ |
+| $Ζ^{2}=-1$ | $i,-i,ij,-ij$ | four elements | $i\{1,-1,j,-j\}$ |
 
 The four roots of $-1$ are the roots of $+1$ multiplied by $i$:
 
@@ -193,11 +193,11 @@ $$
 
 is a subgroup of the group of units of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
-**Proof.** The product of two roots is a root, because $(\Xi B)^{2}=\Xi^{2}B^{2}=1$ and the algebra is commutative; the unit is $1$; and each element is its own inverse, $\Xi^{2}=1$. The group is abelian of order four with every non-identity element of order two, hence $(\mathbb{Z}/2\mathbb{Z})^{2}$.
+**Proof.** The product of two roots is a root, because $(Ζ B)^{2}=Ζ^{2}B^{2}=1$ and the algebra is commutative; the unit is $1$; and each element is its own inverse, $Ζ^{2}=1$. The group is abelian of order four with every non-identity element of order two, hence $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
-**Proposition (the roots are units).** Every root of $+1$ is a unit, with $\Xi^{-1}=\Xi$, and no root is a zero divisor.
+**Proposition (the roots are units).** Every root of $+1$ is a unit, with $Ζ^{-1}=Ζ$, and no root is a zero divisor.
 
-**Proof.** $\Xi^{2}=1$ reads $\Xi\Xi=1$, so $\Xi$ is invertible with inverse $\Xi$. A unit is not a zero divisor.
+**Proof.** $Ζ^{2}=1$ reads $ΖΖ=1$, so $Ζ$ is invertible with inverse $Ζ$. A unit is not a zero divisor.
 
 **Corollary (the real form).** In the real coordinates the roots are $1=(1,0,0,0)$, $-1=(-1,0,0,0)$, $j=(0,0,1,0)$ and $-j=(0,0,-1,0)$; all four lie in the real subalgebra $\mathbb{R}\{1,j\}$.
 
@@ -207,7 +207,7 @@ The status of the roots is collected in the table.
 |---|---|
 | Closed under multiplication? | yes, the product of two roots is a root |
 | Group? | yes, $(\mathbb{Z}/2\mathbb{Z})^{2}$ |
-| Units? | yes, $\Xi^{-1}=\Xi$ |
+| Units? | yes, $Ζ^{-1}=Ζ$ |
 | Zero divisors? | no |
 | Position | all four in the real subalgebra $\mathbb{R}\{1,j\}$ |
 
@@ -235,29 +235,29 @@ $$
 \mathbb{B}^{\mathrm{red}}=\mathbb{B}^{\mathrm{red}}\Pi\oplus\mathbb{B}^{\mathrm{red}}(1-\Pi),\qquad \mathbb{B}^{\mathrm{red}}=\Pi\mathbb{B}^{\mathrm{red}}\oplus(1-\Pi)\mathbb{B}^{\mathrm{red}},
 $$
 
-the same on the left and on the right because the algebra is commutative. Every idempotent is the member attached to $+1$ of the pair of a root: for $\Pi$ idempotent the element $\Xi=2\Pi-1$ is a root of $+1$, and $\Pi_{+}(\Xi)=\Pi$ while $\Pi_{-}(\Xi)=1-\Pi$.
+the same on the left and on the right because the algebra is commutative. Every idempotent is the member attached to $+1$ of the pair of a root: for $\Pi$ idempotent the element $Ζ=2\Pi-1$ is a root of $+1$, and $\Pi_{+}(Ζ)=\Pi$ while $\Pi_{-}(Ζ)=1-\Pi$.
 
 ### The Two Idempotents of a Root
 
-**A root $\Xi$ of $+1$ carries the two idempotents $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=1-\Pi_{+}(\Xi)$; they are complete and orthogonal, their difference is the root, and the value of the pair map is an ordered complete orthogonal pair.**
+**A root $Ζ$ of $+1$ carries the two idempotents $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=1-\Pi_{+}(Ζ)$; they are complete and orthogonal, their difference is the root, and the value of the pair map is an ordered complete orthogonal pair.**
 
-**Theorem (the two idempotents of a root).** For a root $\Xi$ of $+1$, the elements
+**Theorem (the two idempotents of a root).** For a root $Ζ$ of $+1$, the elements
 
 $$
-\Pi_{+}(\Xi)=\tfrac12(1+\Xi),\qquad \Pi_{-}(\Xi)=\tfrac12(1-\Xi)
+\Pi_{+}(Ζ)=\tfrac12(1+Ζ),\qquad \Pi_{-}(Ζ)=\tfrac12(1-Ζ)
 $$
 
 are idempotent, complete and orthogonal; the identities are collected in the table.
 
 | Identity | Value |
 |---|---|
-| $\Pi_{+}(\Xi)^{2}$ | $\Pi_{+}(\Xi)$ |
-| $\Pi_{-}(\Xi)^{2}$ | $\Pi_{-}(\Xi)$ |
-| $\Pi_{+}(\Xi)\Pi_{-}(\Xi)$ | $0$ |
-| $\Pi_{+}(\Xi)+\Pi_{-}(\Xi)$ | $1$ |
-| $\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$ | $\Xi$ |
+| $\Pi_{+}(Ζ)^{2}$ | $\Pi_{+}(Ζ)$ |
+| $\Pi_{-}(Ζ)^{2}$ | $\Pi_{-}(Ζ)$ |
+| $\Pi_{+}(Ζ)\Pi_{-}(Ζ)$ | $0$ |
+| $\Pi_{+}(Ζ)+\Pi_{-}(Ζ)$ | $1$ |
+| $\Pi_{+}(Ζ)-\Pi_{-}(Ζ)$ | $Ζ$ |
 
-**Proof.** The idempotence is the two-line computation of the introduction; the sum is $\tfrac12(1+\Xi)+\tfrac12(1-\Xi)=1$; the product is $\tfrac14(1-\Xi^{2})=0$; and the difference is $\tfrac12(1+\Xi)-\tfrac12(1-\Xi)=\Xi$.
+**Proof.** The idempotence is the two-line computation of the introduction; the sum is $\tfrac12(1+Ζ)+\tfrac12(1-Ζ)=1$; the product is $\tfrac14(1-Ζ^{2})=0$; and the difference is $\tfrac12(1+Ζ)-\tfrac12(1-Ζ)=Ζ$.
 
 **Corollary (the standard pair).** The standard idempotents are the pair of the root $j$: $\Pi_{+}(j)=\Pi_{+}$ and $\Pi_{-}(j)=\Pi_{-}$.
 
@@ -274,19 +274,19 @@ The four products of the pair are collected in the multiplication table.
 
 so the pair is orthogonal and each member is idempotent.
 
-For a root $\Xi$ and the two idempotents $\Pi_{\pm}=\tfrac12(1\pm\Xi)$, the root acts on the pair by the two signs:
+For a root $Ζ$ and the two idempotents $\Pi_{\pm}=\tfrac12(1\pmΖ)$, the root acts on the pair by the two signs:
 
 $$
-\Xi\Pi_{+}=\Pi_{+},\qquad \Xi\Pi_{-}=-\Pi_{-}.
+Ζ\Pi_{+}=\Pi_{+},\qquad Ζ\Pi_{-}=-\Pi_{-}.
 $$
 
 The action is collected in the table.
 
-| Multiplication by $\Xi$ | On $\Pi_{+}$ | On $\Pi_{-}$ |
+| Multiplication by $Ζ$ | On $\Pi_{+}$ | On $\Pi_{-}$ |
 |---|---|---|
 | left or right | $+1$ | $-1$ |
 
-So the root is $+1$ on the first idempotent and $-1$ on the second, and the algebra decomposes under multiplication by $\Xi$ into the two eigenspaces $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$ with eigenvalues $+1$ and $-1$. The pair $\Pi_{\pm}$ is the spectral resolution of the root.
+So the root is $+1$ on the first idempotent and $-1$ on the second, and the algebra decomposes under multiplication by $Ζ$ into the two eigenspaces $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$ with eigenvalues $+1$ and $-1$. The pair $\Pi_{\pm}$ is the spectral resolution of the root.
 
 The subalgebra spanned by the pair and the root is therefore the algebra $\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}\cong\mathbb{C}\times\mathbb{C}$, and the root is the element $(+1,-1)$ of that algebra. In the idempotent coordinates the pair is $(1,0)$ and $(0,1)$, and the root is $(1,-1)$; the four roots are the four sign choices on the two coordinates.
 
@@ -344,12 +344,12 @@ $$
 
 ### The Correspondence with the Roots of One
 
-**The halving map $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $\Xi\mapsto(\Pi_{+}(\Xi),\Pi_{-}(\Xi))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{\Xi,-\Xi\}$ gives the same unordered pair.**
+**The halving map $H(Ζ)=\tfrac12(1+Ζ)$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $Ζ\mapsto(\Pi_{+}(Ζ),\Pi_{-}(Ζ))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{Ζ,-Ζ\}$ gives the same unordered pair.**
 
 **Theorem (the halving map).** The map
 
 $$
-H(\Xi)=\tfrac12(1+\Xi)
+H(Ζ)=\tfrac12(1+Ζ)
 $$
 
 restricts to a bijection from the roots of $+1$ onto the idempotents, with
@@ -360,30 +360,30 @@ $$
 
 and the inverse on the idempotents is $\Pi\mapsto 2\Pi-1$.
 
-**Proof.** The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_{+}$, $\tfrac12(1-j)=\Pi_{-}$. If $\Xi^{2}=1$ then $H(\Xi)^{2}=\tfrac14(1+2\Xi+\Xi^{2})=\tfrac14(2+2\Xi)=H(\Xi)$, so $H$ maps roots of $+1$ into idempotents; if $\Pi^{2}=\Pi$ then $2\Pi-1$ has $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$, so $2\Pi-1$ is a root of $+1$; and the two maps are inverse, since $H(2\Pi-1)=\tfrac12(1+2\Pi-1)=\Pi$.
+**Proof.** The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_{+}$, $\tfrac12(1-j)=\Pi_{-}$. If $Ζ^{2}=1$ then $H(Ζ)^{2}=\tfrac14(1+2Ζ+Ζ^{2})=\tfrac14(2+2Ζ)=H(Ζ)$, so $H$ maps roots of $+1$ into idempotents; if $\Pi^{2}=\Pi$ then $2\Pi-1$ has $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$, so $2\Pi-1$ is a root of $+1$; and the two maps are inverse, since $H(2\Pi-1)=\tfrac12(1+2\Pi-1)=\Pi$.
 
 **Theorem (the pair map).** The map
 $$
-\Xi\longmapsto(\Pi_{+}(\Xi),\Pi_{-}(\Xi))
+Ζ\longmapsto(\Pi_{+}(Ζ),\Pi_{-}(Ζ))
 $$
 is a bijection from the roots of $+1$ onto the ordered pairs of idempotents that are complete and orthogonal, $\Pi_{+}+\Pi_{-}=1$ and $\Pi_{+}\Pi_{-}=0$.
 
-**Proof.** The pair of a root is complete and orthogonal by §*The Two Idempotents of a Root*, so the map is well defined. It is injective because the root is recovered from the pair, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$. It is surjective because an ordered complete orthogonal pair $(\Pi_{+},\Pi_{-})$ gives $\Xi=\Pi_{+}-\Pi_{-}$, and
+**Proof.** The pair of a root is complete and orthogonal by §*The Two Idempotents of a Root*, so the map is well defined. It is injective because the root is recovered from the pair, $Ζ=\Pi_{+}(Ζ)-\Pi_{-}(Ζ)$. It is surjective because an ordered complete orthogonal pair $(\Pi_{+},\Pi_{-})$ gives $Ζ=\Pi_{+}-\Pi_{-}$, and
 $$
-\Xi^{2}=\Pi_{+}^{2}-\Pi_{+}\Pi_{-}-\Pi_{-}\Pi_{+}+\Pi_{-}^{2}=\Pi_{+}+\Pi_{-}=1,
+Ζ^{2}=\Pi_{+}^{2}-\Pi_{+}\Pi_{-}-\Pi_{-}\Pi_{+}+\Pi_{-}^{2}=\Pi_{+}+\Pi_{-}=1,
 $$
-so $\Xi$ is a root of $+1$ and the pair is its pair.
+so $Ζ$ is a root of $+1$ and the pair is its pair.
 
 The pair map is a bijection, so the idempotent classification and the root classification are the same classification read through it. The four roots and the two idempotents they carry correspond as follows.
 
-| Family | Root $\Xi$ | $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ | $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)$ | Unordered pair |
+| Family | Root $Ζ$ | $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ | $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)$ | Unordered pair |
 |---|---|---|---|---|
 | Trivial roots | $1$ | $1$ | $0$ | $\{0,1\}$ |
 | Trivial roots | $-1$ | $0$ | $1$ | $\{0,1\}$ |
 | Non-trivial roots | $j$ | $\Pi_{+}$ | $\Pi_{-}$ | $\{\Pi_{+},\Pi_{-}\}$ |
 | Non-trivial roots | $-j$ | $\Pi_{-}$ | $\Pi_{+}$ | $\{\Pi_{+},\Pi_{-}\}$ |
 
-The root column is a bijection onto the idempotents; the last column is two-to-one. The root is recovered from the ordered pair as the difference of its members, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$, and the unordered pair loses the sign of the root and nothing else. The roots of $+1$ and the idempotents meet in the single element $1$, the fixed point of the halving map.
+The root column is a bijection onto the idempotents; the last column is two-to-one. The root is recovered from the ordered pair as the difference of its members, $Ζ=\Pi_{+}(Ζ)-\Pi_{-}(Ζ)$, and the unordered pair loses the sign of the root and nothing else. The roots of $+1$ and the idempotents meet in the single element $1$, the fixed point of the halving map.
 
 ### The Families of Idempotents
 
@@ -523,7 +523,7 @@ The trivial idempotents $0$ and $1$ are fixed by the bar, the tessarine sign and
 | Idempotents | $0,1,\Pi_{+},\Pi_{-}$ |
 | Hermitian idempotents | $0,1$, the star fixing them |
 | Non-Hermitian idempotents | $\Pi_{+},\Pi_{-}$, the star exchanging them |
-| Halving map | bijection $H(\Xi)=\tfrac12(1+\Xi)$, inverse $H^{-1}(\Pi)=2\Pi-1$ |
+| Halving map | bijection $H(Ζ)=\tfrac12(1+Ζ)$, inverse $H^{-1}(\Pi)=2\Pi-1$ |
 | Standard pair | central, primitive, complete and orthogonal; $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$ |
 | Zero divisors | the non-trivial idempotents and their nonzero complex multiples |
 | Involutions | the tessarine sign and the star exchange $\Pi_{+}$ and $\Pi_{-}$; the bar fixes both; the flat sends each to the negative of the other |
@@ -548,7 +548,7 @@ $$
 \Pi_{+}^{2}=\Pi_{+},\qquad \Pi_{-}^{2}=\Pi_{-},\qquad \Pi_{+}\Pi_{-}=0,\qquad \Pi_{+}+\Pi_{-}=1 .
 $$
 
-Each root $\Xi$ of $+1$ carries the two idempotents $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=1-\Pi_{+}(\Xi)$, a complete orthogonal pair whose difference is the root; the **halving map** $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$, and the class $\{\Xi,-\Xi\}$ gives the same unordered pair. The four roots give the two unordered pairs $\{0,1\}$ and $\{\Pi_{+},\Pi_{-}\}$.
+Each root $Ζ$ of $+1$ carries the two idempotents $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=1-\Pi_{+}(Ζ)$, a complete orthogonal pair whose difference is the root; the **halving map** $H(Ζ)=\tfrac12(1+Ζ)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$, and the class $\{Ζ,-Ζ\}$ gives the same unordered pair. The four roots give the two unordered pairs $\{0,1\}$ and $\{\Pi_{+},\Pi_{-}\}$.
 
 Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, with $P_{\Pi}^{2}=P_{\Pi}$, $P_{+}+P_{-}=\mathrm{id}$ and $P_{+}P_{-}=0$; the explicit projections are $P_{+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}$ and $P_{-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-}$, and they give the resolution of the identity and the decomposition $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$. The two lines are the two minimal ideals, and the standard pair is central, primitive and complete. The trivial idempotents are Hermitian, fixed by the star, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero complex multiple of one of them. The **tessarine sign** and the **star** both exchange the two non-trivial idempotents, $\Pi_{+,\mathrm{ts}}=\Pi_{-}=\Pi_{+}^{*}$ and $\Pi_{-,\mathrm{ts}}=\Pi_{+}=\Pi_{-}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{+}}=\Pi_{+}$ and $\overline{\Pi_{-}}=\Pi_{-}$.
 
@@ -558,16 +558,16 @@ Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, wit
 |---|---|
 | $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | The reduced biquaternion algebra, with basis $1,i,j,ij$ |
 | ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ | The star, the intrinsic involution |
-| $\Xi$ | A root of $+1$, $\Xi^{2}=1$ |
+| $Ζ$ | A root of $+1$, $Ζ^{2}=1$ |
 | $\mathcal{R}_{+1}=\{1,-1,j,-j\}$ | The four roots of $+1$, a group $(\mathbb{Z}/2\mathbb{Z})^{2}$ |
-| $\Xi_{\pm}$ | The idempotent coordinates of the root $\Xi$ |
+| $Ζ_{\pm}$ | The idempotent coordinates of the root $Ζ$ |
 | $\Pi$ | An idempotent, $\Pi^{2}=\Pi$ |
 | Hermitian idempotent | An idempotent fixed by the star, $\Pi^{*}=\Pi$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | The standard idempotents |
-| $\Pi_{\pm}(\Xi)=\tfrac12(1\pm\Xi)$ | The two idempotents carried by the root $\Xi$ |
-| $\Pi_{+}(\Xi)+\Pi_{-}(\Xi)=1$, $\Pi_{+}(\Xi)\Pi_{-}(\Xi)=0$ | Completeness and orthogonality of the pair |
-| $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$ | The root as the difference of its pair |
-| $H(\Xi)=\tfrac12(1+\Xi)$ | The halving map from the roots of $+1$ to the idempotents |
+| $\Pi_{\pm}(Ζ)=\tfrac12(1\pmΖ)$ | The two idempotents carried by the root $Ζ$ |
+| $\Pi_{+}(Ζ)+\Pi_{-}(Ζ)=1$, $\Pi_{+}(Ζ)\Pi_{-}(Ζ)=0$ | Completeness and orthogonality of the pair |
+| $Ζ=\Pi_{+}(Ζ)-\Pi_{-}(Ζ)$ | The root as the difference of its pair |
+| $H(Ζ)=\tfrac12(1+Ζ)$ | The halving map from the roots of $+1$ to the idempotents |
 | $H^{-1}(\Pi)=2\Pi-1$ | The inverse halving map |
 | $P_{\Pi}(\breve Q)=\Pi\breve Q$ | The projector carried by an idempotent |
 | $P_{+}+P_{-}=\mathrm{id}$ | The resolution of the identity |
@@ -579,7 +579,7 @@ Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, wit
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the action of the four maps on the idempotents.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), above this article, for the two lines the idempotents generate.
 - [Annihilators of the Algebra of the Reduced Biquaternions](annihilators-of-the-algebra-of-the-reduced-biquaternions.html), above this article, for the annihilators of the idempotent lines.
-- [Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions](square-roots-of-zero-and-the-nilpotents-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the companion equation $\Xi^{2}=0$.
+- [Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions](square-roots-of-zero-and-the-nilpotents-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the companion equation $Ζ^{2}=0$.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article in this category, for the full Peirce decomposition.
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), the real commutative case, where the same four-point pattern is read over $\mathbb{R}$.
 - [Idempotents](idempotents.html), the non-commutative counterpart, where the roots of $+1$ and the idempotents form larger families.

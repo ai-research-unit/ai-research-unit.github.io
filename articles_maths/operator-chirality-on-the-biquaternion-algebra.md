@@ -253,7 +253,7 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 
 | Object | What it is | Why operator chirality does not need it |
 |---|---|---|
-| a root | an element $\tilde\Xi$ with $\tilde\Xi^2=e_t$ | $\mathsf{V}^{\mathrm{vol}}$ is a cell of the frame, and a root is an element chosen later |
+| a root | an element $\tilde{Ζ}$ with $\tilde{Ζ}^2=e_t$ | $\mathsf{V}^{\mathrm{vol}}$ is a cell of the frame, and a root is an element chosen later |
 | an idempotent | an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$ | the operator satisfies $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$, which is not $(\mathsf{V}^{\mathrm{vol}})^2=\mathsf{V}^{\mathrm{vol}}$ |
 | a Peirce decomposition | the four lines $\mathbb{B}_{st}$ of a pair of idempotents | the sides are two, the Peirce lines are four, and none of the four is a side |
 | a Peirce basis | the units of one Peirce decomposition | a basis is a coordinate choice on $\mathbb{B}$, and the side is read without one |
@@ -278,7 +278,7 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 
 **Why no anticommutation gives it.** A reader might expect the chirality operator to be characterised by anticommuting with the frame. It cannot be, and the reason is one line: $L(e_t)=\mathrm I$ is one of the operators that a candidate would have to anticommute with, and an operator that anticommutes with the identity is zero. So the sign in this algebra is never produced by an anticommutator; it is produced by the side, which is what the slots supply and what no Clifford relation can supply.
 
-**The one coincidence, and why it matters.** There is a single place where the two families of notions touch, and it must be stated or the whole section is misleading. For the root aligned with the volume direction, $\tilde\Xi=i\vec e_z$, the Peirce sign is
+**The one coincidence, and why it matters.** There is a single place where the two families of notions touch, and it must be stated or the whole section is misleading. For the root aligned with the volume direction, $\tilde{Ζ}=i\vec e_z$, the Peirce sign is
 $$
 P=R_{i\vec e_z}=iR_{\vec e_z}=-\mathsf{V}^{\mathrm{vol}},
 $$
@@ -286,7 +286,7 @@ and the projector on the ideal of $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is
 $$
 R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}}).
 $$
-So for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not: with $\tilde\Xi=i\vec e_x$ the Peirce projector is $\tfrac12(\mathrm I+iR_{\vec e_x})$, which is neither $\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}})$ nor $\tfrac12(\mathrm I+\mathsf{V}^{\mathrm{vol}})$.
+So for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not: with $\tilde{Ζ}=i\vec e_x$ the Peirce projector is $\tfrac12(\mathrm I+iR_{\vec e_x})$, which is neither $\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}})$ nor $\tfrac12(\mathrm I+\mathsf{V}^{\mathrm{vol}})$.
 
 **The moral.** The coincidence is a coincidence of arrays for one root out of the projective line, and it is the origin of every statement in the corpus that the Peirce sign and the chirality operator agree up to a phase. The two notions share a value there and share no definition: one is a subspace choice, the other is a side. Writing the side first, as this article does, keeps the shared value visible as a coincidence instead of letting it stand as an identity.
 

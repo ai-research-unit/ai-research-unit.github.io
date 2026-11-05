@@ -93,21 +93,21 @@ A nonzero idempotent is primitive exactly when it cannot be written as a sum of 
 
 ## The Absence of a Bijection With the Roots of Minus One
 
-In the biquaternion algebra $\mathbb{B}$, the idempotents are in bijection with the roots of $-1$: every idempotent has the form $\tfrac{1}{2}(e_t + \tilde\Xi i)$ for a unique root $\tilde\Xi$ of $-1$, and the root set is large. That correspondence **fails completely** in $\mathbb{B}^{\mathrm{spl}}$, and the failure is quantitative.
+In the biquaternion algebra $\mathbb{B}$, the idempotents are in bijection with the roots of $-1$: every idempotent has the form $\tfrac{1}{2}(e_t + \tilde{Ζ} i)$ for a unique root $\tilde{Ζ}$ of $-1$, and the root set is large. That correspondence **fails completely** in $\mathbb{B}^{\mathrm{spl}}$, and the failure is quantitative.
 
 **Theorem.** The roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ form the set
 
 $$
 \boxed{\;
-\{\tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2 : \mu_\pm \text{ unit pure real quaternions}\}
+\{\tilde{Ζ} = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2 : \mu_\pm \text{ unit pure real quaternions}\}
 \;},
 $$
 
 a set of real dimension $4$, parametrised by a pair of unit pure real quaternions. That the set is the topological product $S^2 \times S^2$, and its manifold structure, are established in *Split-Biquaternion Analysis*. The idempotents of $\mathbb{B}^{\mathrm{spl}}$ number $4$. Hence there is no bijection between the two sets.
 
-**Proof.** The classification of the roots of $-1$ is the content of *Split-Biquaternion Roots of Minus One*: the equation $\tilde\Xi^2 = -1$, written in the idempotent basis as $\xi_+^2 \tilde\Pi_1 + \xi_-^2 \tilde\Pi_2 = -\tilde\Pi_1 - \tilde\Pi_2$, is equivalent to $\xi_\pm^2 = -1$ in $\mathbb{H}$, whose solutions are the unit pure real quaternions, a two-sphere. The product is two-dimensional over each of the two components, so the root set has real dimension $2 + 2 = 4$. Since the idempotent set is the four-point set of the previous section, no bijection exists.
+**Proof.** The classification of the roots of $-1$ is the content of *Split-Biquaternion Roots of Minus One*: the equation $\tilde{Ζ}^2 = -1$, written in the idempotent basis as $\zeta_+^2 \tilde\Pi_1 + \zeta_-^2 \tilde\Pi_2 = -\tilde\Pi_1 - \tilde\Pi_2$, is equivalent to $\zeta_\pm^2 = -1$ in $\mathbb{H}$, whose solutions are the unit pure real quaternions, a two-sphere. The product is two-dimensional over each of the two components, so the root set has real dimension $2 + 2 = 4$. Since the idempotent set is the four-point set of the previous section, no bijection exists.
 
-The reason for the failure is the same rigidity that produced the classification theorem. In $\mathbb{B}$ the construction $\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$ turns a root $\tilde\Xi$ of $-1$ into an idempotent because the central unit $i$ is available to convert the vector part into a scalar direction. In $\mathbb{B}^{\mathrm{spl}}$ there is no central scalar imaginary — the only central units are $1$ and $j$, with $j^2 = +1$ — and the obstruction $|\vec v|^2 = -1/4$ in the proof above is unavailable. The idempotents of $\mathbb{B}^{\mathrm{spl}}$ are therefore confined to the centre, and they cannot be parametrised by the roots of $-1$.
+The reason for the failure is the same rigidity that produced the classification theorem. In $\mathbb{B}$ the construction $\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde{Ζ} i$ turns a root $\tilde{Ζ}$ of $-1$ into an idempotent because the central unit $i$ is available to convert the vector part into a scalar direction. In $\mathbb{B}^{\mathrm{spl}}$ there is no central scalar imaginary — the only central units are $1$ and $j$, with $j^2 = +1$ — and the obstruction $|\vec v|^2 = -1/4$ in the proof above is unavailable. The idempotents of $\mathbb{B}^{\mathrm{spl}}$ are therefore confined to the centre, and they cannot be parametrised by the roots of $-1$.
 
 ## Idempotents and Direct Sum Decompositions
 
@@ -196,7 +196,7 @@ There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and
 | $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | The two minimal left (and two-sided) ideals, each $\cong \mathbb{H}$ |
 | $\tilde\Pi_1^{*} = \tilde\Pi_2$, $\tilde\Pi_2^{*} = \tilde\Pi_1$ | The Hermitian conjugation exchanges the idempotents |
 | $\mathrm{Ann}(\tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$, $\mathrm{Ann}(\tilde\Pi_2) = \mathbb{H} \tilde\Pi_1$ | Annihilator of an idempotent |
-| $\tilde\Xi$, $\mu_\pm$ | Root of $-1$; unit pure real quaternion components |
+| $\tilde{Ζ}$, $\mu_\pm$ | Root of $-1$; unit pure real quaternion components |
 | $S^2 \times S^2$ | The topological product form of the root set, established in *Split-Biquaternion Analysis* |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm, named only; the subject of *Split-Biquaternion Norm and Invertibility* |
 

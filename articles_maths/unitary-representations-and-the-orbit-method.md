@@ -16,60 +16,60 @@ The article assumes the Lie group, its Lie algebra and the adjoint representatio
 **Definition.** Let $\mathrm{G}$ be the Lie algebra of $G$ and $\mathrm{G}^{*}$ its dual. The **coadjoint representation** is the action
 
 $$
-\operatorname{Ad}^{*} : G \longrightarrow \mathrm{GL}(\mathrm{G}^{*}), \qquad \langle \operatorname{Ad}^{*}_g\xi, X\rangle = \langle \xi, \operatorname{Ad}_{g^{-1}}X\rangle ,
+\operatorname{Ad}^{*} : G \longrightarrow \mathrm{GL}(\mathrm{G}^{*}), \qquad \langle \operatorname{Ad}^{*}_g\zeta, X\rangle = \langle \zeta, \operatorname{Ad}_{g^{-1}}X\rangle ,
 $$
 
-and its orbits are the **coadjoint orbits** $\mathcal{O}_\xi = \{\operatorname{Ad}^{*}_g\xi : g\in G\}$; the orbit is the **coadjoint orbit through** $\xi$.
+and its orbits are the **coadjoint orbits** $\mathcal{O}_\zeta = \{\operatorname{Ad}^{*}_g\zeta : g\in G\}$; the orbit is the **coadjoint orbit through** $\zeta$.
 
-**Proposition.** The coadjoint orbits are the orbits of a smooth action on the vector space $\mathrm{G}^{*}$, each is a homogeneous space $G/G_\xi$ with $G_\xi$ the stabiliser, and the dimension of $\mathcal{O}_\xi$ is $\dim\mathrm{G} - \dim\mathrm{G}_\xi$. The differential of the coadjoint action is the coadjoint representation of the Lie algebra, $\operatorname{ad}^{*}_X\xi = -\xi\circ\operatorname{ad}_X$.
+**Proposition.** The coadjoint orbits are the orbits of a smooth action on the vector space $\mathrm{G}^{*}$, each is a homogeneous space $G/G_\zeta$ with $G_\zeta$ the stabiliser, and the dimension of $\mathcal{O}_\zeta$ is $\dim\mathrm{G} - \dim\mathrm{G}_\zeta$. The differential of the coadjoint action is the coadjoint representation of the Lie algebra, $\operatorname{ad}^{*}_X\zeta = -\zeta\circ\operatorname{ad}_X$.
 
 *Proof.* The coadjoint action is the dual of the adjoint action, so its orbits are the orbits of a smooth action; the orbit is the quotient by the stabiliser and its dimension is the codimension of the stabiliser; the differential is the dual of $\operatorname{ad}_X$, with the sign from the inverse in the definition.
 
 ### The Symplectic Structure
 
-**Theorem (Kirillov--Kostant--Souriau).** Every coadjoint orbit $\mathcal{O}\subset\mathrm{G}^{*}$ carries a canonical $G$-invariant symplectic form $\omega$, the **KKS form**, defined at $\xi\in\mathcal{O}$ by
+**Theorem (Kirillov--Kostant--Souriau).** Every coadjoint orbit $\mathcal{O}\subset\mathrm{G}^{*}$ carries a canonical $G$-invariant symplectic form $\omega$, the **KKS form**, defined at $\zeta\in\mathcal{O}$ by
 
 $$
-\boxed{\;\omega_\xi(\operatorname{ad}^{*}_X\xi, \operatorname{ad}^{*}_Y\xi) = \langle \xi, [X,Y]\rangle\;} ,
+\boxed{\;\omega_\zeta(\operatorname{ad}^{*}_X\zeta, \operatorname{ad}^{*}_Y\zeta) = \langle \zeta, [X,Y]\rangle\;} ,
 $$
 
 and the form is non-degenerate because its kernel is the annihilator of the stabiliser, which is the tangent space of the orbit.
 
-*Proof.* The formula is well defined because the right side depends only on the images of $X$ and $Y$ in $\mathrm{G}/\mathfrak{g}_\xi$, and it is alternating and bilinear; the closedness is the Jacobi identity, and the non-degeneracy is the vanishing of the annihilator of the stabiliser. The manifold theory of the symplectic form is Part IV, and the present article uses the form only through the associated moment map and the polarisations.
+*Proof.* The formula is well defined because the right side depends only on the images of $X$ and $Y$ in $\mathrm{G}/\mathfrak{g}_\zeta$, and it is alternating and bilinear; the closedness is the Jacobi identity, and the non-degeneracy is the vanishing of the annihilator of the stabiliser. The manifold theory of the symplectic form is Part IV, and the present article uses the form only through the associated moment map and the polarisations.
 
 **Corollary (the moment map).** The inclusion $\mathcal{O}\hookrightarrow\mathrm{G}^{*}$ is a moment map for the coadjoint action, the orbit is the set of the coadjoint translates of a point, and the Casimir elements of the enveloping algebra are constant on each orbit; hence the invariants of the orbit are the invariants of the representation attached to it.
 
-*Proof.* The moment map property is the defining identity $\langle \mu(\xi),X\rangle = \langle\xi,X\rangle$ with the coadjoint action, which the inclusion satisfies; the constancy of an invariant polynomial on an orbit is the invariance of the polynomial under the coadjoint action.
+*Proof.* The moment map property is the defining identity $\langle \mu(\zeta),X\rangle = \langle\zeta,X\rangle$ with the coadjoint action, which the inclusion satisfies; the constancy of an invariant polynomial on an orbit is the invariance of the polynomial under the coadjoint action.
 
 ## The Kirillov Correspondence
 
 ### The Polarisation
 
-**Definition.** Let $\xi\in\mathrm{G}^{*}$ and let $\mathfrak{g}_\xi$ be its stabiliser. A **polarisation** of $\xi$ is a subalgebra $\mathfrak{p}\subseteq\mathrm{G}$ that is maximal among the isotropic subalgebras for the alternating form $B_\xi(X,Y) = \langle\xi,[X,Y]\rangle$ and contains $\mathfrak{g}_\xi$; it is **real** when it is a real subalgebra, and there always exists a complex polarisation for the complexification.
+**Definition.** Let $\zeta\in\mathrm{G}^{*}$ and let $\mathfrak{g}_\zeta$ be its stabiliser. A **polarisation** of $\zeta$ is a subalgebra $\mathfrak{p}\subseteq\mathrm{G}$ that is maximal among the isotropic subalgebras for the alternating form $B_\zeta(X,Y) = \langle\zeta,[X,Y]\rangle$ and contains $\mathfrak{g}_\zeta$; it is **real** when it is a real subalgebra, and there always exists a complex polarisation for the complexification.
 
-**Proposition.** A polarisation $\mathfrak{p}$ of $\xi$ is a subalgebra with $\langle\xi,[\mathfrak{p},\mathfrak{p}]\rangle = 0$, so the linear functional $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ is a character of the group $P$ with algebra $\mathfrak{p}$; the dimension of $\mathfrak{p}$ satisfies $\dim\mathfrak{p} = \frac12(\dim\mathrm{G}+\dim\mathfrak{g}_\xi)$.
+**Proposition.** A polarisation $\mathfrak{p}$ of $\zeta$ is a subalgebra with $\langle\zeta,[\mathfrak{p},\mathfrak{p}]\rangle = 0$, so the linear functional $\chi_\zeta(X) = 2\pi i\langle\zeta,X\rangle$ is a character of the group $P$ with algebra $\mathfrak{p}$; the dimension of $\mathfrak{p}$ satisfies $\dim\mathfrak{p} = \frac12(\dim\mathrm{G}+\dim\mathfrak{g}_\zeta)$.
 
-*Proof.* The isotropy is the vanishing of the form on $\mathfrak{p}$; hence $\chi_\xi$ is multiplicative on $P$ because the commutator of two elements of $\mathfrak{p}$ lies in the kernel of $\xi$; the dimension formula is the maximality of the isotropic subspace and the inclusion of the stabiliser.
+*Proof.* The isotropy is the vanishing of the form on $\mathfrak{p}$; hence $\chi_\zeta$ is multiplicative on $P$ because the commutator of two elements of $\mathfrak{p}$ lies in the kernel of $\zeta$; the dimension formula is the maximality of the isotropic subspace and the inclusion of the stabiliser.
 
 ### The Corresponding Representation
 
-**Theorem (Kirillov).** Let $G$ be a connected simply connected nilpotent Lie group, let $\xi\in\mathrm{G}^{*}$, and let $\mathfrak{p}$ be a real polarisation of $\xi$. Then the induced representation
+**Theorem (Kirillov).** Let $G$ be a connected simply connected nilpotent Lie group, let $\zeta\in\mathrm{G}^{*}$, and let $\mathfrak{p}$ be a real polarisation of $\zeta$. Then the induced representation
 
 $$
-\boxed{\;\pi_\xi = \operatorname{Ind}_P^G\chi_\xi\;}
+\boxed{\;\pi_\zeta = \operatorname{Ind}_P^G\chi_\zeta\;}
 $$
 
-is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\xi$ and not on the polarisation, and the assignment $\mathcal{O}\mapsto\pi_\xi$ is a bijection from the coadjoint orbits onto the unitary dual $\widehat{G}$.
+is irreducible, its equivalence class depends only on the orbit $\mathcal{O}_\zeta$ and not on the polarisation, and the assignment $\mathcal{O}\mapsto\pi_\zeta$ is a bijection from the coadjoint orbits onto the unitary dual $\widehat{G}$.
 
 *Proof (sketch).* The irreducibility is proved by computing the commutant with the theory of the induced representations and the nilpotency, which makes the orbit method exact; the independence of the polarisation is the theorem that two polarisations of the same functional give equivalent representations; the surjectivity and the injectivity of the assignment are the Kirillov orbit bijection. The complete proof is in the references.
 
-**Theorem (the character formula).** For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $(\mathcal F f)(\xi) = \int_{\mathrm{G}}f(X)\exp(-2\pi i\langle\xi,X\rangle)\,dX$ on the algebra,
+**Theorem (the character formula).** For $G$ nilpotent and $f\in C_c^\infty(G)$ with Fourier transform $(\mathcal F f)(\zeta) = \int_{\mathrm{G}}f(X)\exp(-2\pi i\langle\zeta,X\rangle)\,dX$ on the algebra,
 
 $$
-\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}(\mathcal F f)(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
+\operatorname{tr}\pi_\zeta(f) = \int_{\mathcal{O}_\zeta}(\mathcal F f)(\eta)\,\frac{d\beta(\eta)}{(2\pi)^{n}} ,
 $$
 
-where $\beta$ is the Liouville measure of the symplectic form on the orbit and $2n$ is its dimension; equivalently the character of $\pi_\xi$ is the Fourier transform of the invariant measure on the orbit.
+where $\beta$ is the Liouville measure of the symplectic form on the orbit and $2n$ is its dimension; equivalently the character of $\pi_\zeta$ is the Fourier transform of the invariant measure on the orbit.
 
 *Proof (sketch).* Both sides are invariant distributions, they agree on the Zariski-dense set of the functionals with a polarisation of a fixed type, and the agreement extends by continuity; the proof is the computation of the character on the orbit through the Fourier transform, and it is in the references.
 
@@ -77,7 +77,7 @@ where $\beta$ is the Liouville measure of the symplectic form on the orbit and $
 
 ### The Exponential Solvable Case
 
-**Theorem.** Let $G$ be a connected simply connected exponential solvable Lie group. Then the orbit method is an exact bijection between the coadjoint orbits and the unitary dual, the induced representations $\operatorname{Ind}_P^G\chi_\xi$ are irreducible, and the Kirillov character formula holds; the Pukanszky condition, that the orbit of $\xi$ under the adjoint action of $P$ is closed, is necessary and sufficient for the irreducibility in the solvable case.
+**Theorem.** Let $G$ be a connected simply connected exponential solvable Lie group. Then the orbit method is an exact bijection between the coadjoint orbits and the unitary dual, the induced representations $\operatorname{Ind}_P^G\chi_\zeta$ are irreducible, and the Kirillov character formula holds; the Pukanszky condition, that the orbit of $\zeta$ under the adjoint action of $P$ is closed, is necessary and sufficient for the irreducibility in the solvable case.
 
 *Proof (sketch).* The exponential solvable groups are the class for which the orbit method survives the passage from nilpotent to solvable; the Pukanszky condition is the criterion for the irreducibility of the induced representation, and the character formula is proved as in the nilpotent case. The details are in the references.
 
@@ -97,15 +97,15 @@ where $\beta$ is the Liouville measure of the symplectic form on the orbit and $
 
 ### The Moment Map
 
-**Theorem.** Let $\mathcal{O}_\xi\subseteq\mathrm{G}^{*}$ be a coadjoint orbit with the KKS form $\omega_\xi$. The inclusion $\mathcal{O}_\xi\hookrightarrow\mathrm{G}^{*}$ is equivariant for the coadjoint action and is a **moment map**: for every $X\in\mathrm{G}$ the function $\mu_X(\eta) = \langle\eta,X\rangle$ on the orbit has Hamiltonian vector field the fundamental vector field of $X$, that is
+**Theorem.** Let $\mathcal{O}_\zeta\subseteq\mathrm{G}^{*}$ be a coadjoint orbit with the KKS form $\omega_\zeta$. The inclusion $\mathcal{O}_\zeta\hookrightarrow\mathrm{G}^{*}$ is equivariant for the coadjoint action and is a **moment map**: for every $X\in\mathrm{G}$ the function $\mu_X(\eta) = \langle\eta,X\rangle$ on the orbit has Hamiltonian vector field the fundamental vector field of $X$, that is
 
 $$
-d\mu_X = \omega_\xi(X_{\mathcal{O}},\cdot) , \qquad X_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{X}\eta ,
+d\mu_X = \omega_\zeta(X_{\mathcal{O}},\cdot) , \qquad X_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{X}\eta ,
 $$
 
 so the orbit is a homogeneous Hamiltonian $\mathrm{G}$-space, and the moment map is unique up to the addition of a constant on the central directions.
 
-*Proof.* The derivative of $\mu_X$ at $\eta$ in the direction $Y_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{Y}\eta$ is $\langle-\operatorname{ad}^{*}_{Y}\eta,X\rangle = \langle\eta,[Y,X]\rangle$, which is $\omega_\xi(Y_{\mathcal{O}},X_{\mathcal{O}})$ by the definition of the KKS form; the identification of the Hamiltonian field follows, and the equivariance is the invariance of the form.
+*Proof.* The derivative of $\mu_X$ at $\eta$ in the direction $Y_{\mathcal{O}}(\eta) = -\operatorname{ad}^{*}_{Y}\eta$ is $\langle-\operatorname{ad}^{*}_{Y}\eta,X\rangle = \langle\eta,[Y,X]\rangle$, which is $\omega_\zeta(Y_{\mathcal{O}},X_{\mathcal{O}})$ by the definition of the KKS form; the identification of the Hamiltonian field follows, and the equivariance is the invariance of the form.
 
 ### The Convexity Theorem
 
@@ -127,7 +127,7 @@ a convex polytope whose vertices are the weights $w\lambda$; the orbit is the or
 
 ### The Heisenberg Group
 
-For the three-dimensional Heisenberg group the coadjoint orbits are the points of the centre-annihilator plane and the planes $\langle\xi,Z\rangle = c\neq0$; the orbit with $c$ the nonzero central value is a plane of dimension two, its polarisation is the span of $X$ and $Z$, and the induced representation is the infinite-dimensional Schrödinger representation acting on $L^2(\mathbb{R})$; the point orbits give the characters of the abelian quotient, so the unitary dual is the line of the infinite-dimensional representations together with the plane of the characters.
+For the three-dimensional Heisenberg group the coadjoint orbits are the points of the centre-annihilator plane and the planes $\langle\zeta,Z\rangle = c\neq0$; the orbit with $c$ the nonzero central value is a plane of dimension two, its polarisation is the span of $X$ and $Z$, and the induced representation is the infinite-dimensional Schrödinger representation acting on $L^2(\mathbb{R})$; the point orbits give the characters of the abelian quotient, so the unitary dual is the line of the infinite-dimensional representations together with the plane of the characters.
 
 ### The Affine Group
 
@@ -143,21 +143,21 @@ For a semisimple group with a non-compact Cartan subgroup the orbit method is no
 
 ## Summary
 
-The **coadjoint action** of a Lie group on the dual of its Lie algebra has orbits that carry a canonical invariant symplectic form, the **KKS form**, defined by $\omega_\xi(\operatorname{ad}^{*}_X\xi,\operatorname{ad}^{*}_Y\xi) = \langle\xi,[X,Y]\rangle$; the inclusion of the orbit in the dual is a moment map, and the invariants of the enveloping algebra are constant on each orbit. A **polarisation** of $\xi$ is a maximal isotropic subalgebra containing the stabiliser, and the functional $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ is then a character of the corresponding subgroup, so the induced representation $\operatorname{Ind}_P^G\chi_\xi$ is defined; the **orbit method** of Kirillov states that for a connected simply connected nilpotent group this representation is irreducible, independent of the polarisation, and that the assignment of the orbit to the representation is a bijection onto the unitary dual, with the **character formula** expressing the character as the Fourier transform of the Liouville measure of the orbit. The method is exact for the exponential solvable groups, where the Pukanszky condition decides the irreducibility, and for compact groups it becomes the Borel--Weil realisation of the irreducible representations on the integral orbits with the Weyl character formula; for a general group the method is not exact, and the failures are the orbits with no representation, the representations on several orbits and the representations on no orbit, the tempered dual being the part described by the orbits of maximal dimension. The symplectic and the quantisation geometry of the orbits as objects of study belong to Part IV.
+The **coadjoint action** of a Lie group on the dual of its Lie algebra has orbits that carry a canonical invariant symplectic form, the **KKS form**, defined by $\omega_\zeta(\operatorname{ad}^{*}_X\zeta,\operatorname{ad}^{*}_Y\zeta) = \langle\zeta,[X,Y]\rangle$; the inclusion of the orbit in the dual is a moment map, and the invariants of the enveloping algebra are constant on each orbit. A **polarisation** of $\zeta$ is a maximal isotropic subalgebra containing the stabiliser, and the functional $\chi_\zeta(X) = 2\pi i\langle\zeta,X\rangle$ is then a character of the corresponding subgroup, so the induced representation $\operatorname{Ind}_P^G\chi_\zeta$ is defined; the **orbit method** of Kirillov states that for a connected simply connected nilpotent group this representation is irreducible, independent of the polarisation, and that the assignment of the orbit to the representation is a bijection onto the unitary dual, with the **character formula** expressing the character as the Fourier transform of the Liouville measure of the orbit. The method is exact for the exponential solvable groups, where the Pukanszky condition decides the irreducibility, and for compact groups it becomes the Borel--Weil realisation of the irreducible representations on the integral orbits with the Weyl character formula; for a general group the method is not exact, and the failures are the orbits with no representation, the representations on several orbits and the representations on no orbit, the tempered dual being the part described by the orbits of maximal dimension. The symplectic and the quantisation geometry of the orbits as objects of study belong to Part IV.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{Ad}^{*}_g\xi$ | the coadjoint action on $\mathrm{G}^{*}$ |
-| $\mathcal{O}_\xi$ | the coadjoint orbit through $\xi$ |
-| $G_\xi$, $\mathfrak{g}_\xi$ | the stabiliser of $\xi$ in the group and in the algebra |
-| $\omega_\xi$ | the KKS symplectic form on the orbit |
-| $B_\xi(X,Y) = \langle\xi,[X,Y]\rangle$ | the alternating form of the polarisation |
-| $\mathfrak{p}$ | a polarisation, maximal isotropic containing $\mathfrak{g}_\xi$ |
-| $\chi_\xi(X) = 2\pi i\langle\xi,X\rangle$ | the character of the polarisation subgroup |
-| $\pi_\xi = \operatorname{Ind}_P^G\chi_\xi$ | the representation of the orbit |
-| $\operatorname{tr}\pi_\xi(f) = \int_{\mathcal{O}_\xi}\mathcal F f\,d\beta/(2\pi)^n$ | the Kirillov character formula |
+| $\operatorname{Ad}^{*}_g\zeta$ | the coadjoint action on $\mathrm{G}^{*}$ |
+| $\mathcal{O}_\zeta$ | the coadjoint orbit through $\zeta$ |
+| $G_\zeta$, $\mathfrak{g}_\zeta$ | the stabiliser of $\zeta$ in the group and in the algebra |
+| $\omega_\zeta$ | the KKS symplectic form on the orbit |
+| $B_\zeta(X,Y) = \langle\zeta,[X,Y]\rangle$ | the alternating form of the polarisation |
+| $\mathfrak{p}$ | a polarisation, maximal isotropic containing $\mathfrak{g}_\zeta$ |
+| $\chi_\zeta(X) = 2\pi i\langle\zeta,X\rangle$ | the character of the polarisation subgroup |
+| $\pi_\zeta = \operatorname{Ind}_P^G\chi_\zeta$ | the representation of the orbit |
+| $\operatorname{tr}\pi_\zeta(f) = \int_{\mathcal{O}_\zeta}\mathcal F f\,d\beta/(2\pi)^n$ | the Kirillov character formula |
 | Pukanszky condition | the closedness of the orbit of $P$, the irreducibility criterion |
 
 ## Further Reading

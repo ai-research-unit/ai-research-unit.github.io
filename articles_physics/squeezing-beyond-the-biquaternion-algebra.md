@@ -33,12 +33,12 @@ $$
 Both $x$ and $p=-i\hbar\partial/\partial x$ are central operators: $x$ multiplies by a real scalar and $p$ is the central imaginary times a real derivative. Hence $a$ and $a^\dagger$ are central, and the **squeeze operator**
 
 $$
-S(\xi)=\exp\left[\tfrac12\left(\bar\xi\,a^2-\xi\,a^{\dagger 2}\right)\right],
+S(\zeta)=\exp\left[\tfrac12\left(\bar\zeta\,a^2-\zeta\,a^{\dagger 2}\right)\right],
 \qquad
-\xi=r\exp(\,i\theta),
+\zeta=r\exp(\,i\theta),
 $$
 
-is a central element of $\mathbb{B}$. Its generator $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$ is anti-Hermitian, so $S$ is $*$-unitary in the framework's sense,
+is a central element of $\mathbb{B}$. Its generator $\tfrac12(\bar\zeta a^2-\zeta a^{\dagger2})$ is anti-Hermitian, so $S$ is $*$-unitary in the framework's sense,
 
 $$
 S\,S^{*}=e_t ,
@@ -66,11 +66,11 @@ $$
 S^{*}xS=\sqrt{\frac{\hbar}{2m\omega}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta)a^\dagger+\exp(-i\theta)a\big)\Big],
 $$
 
-which for real $\xi$ ($\theta=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
+which for real $\zeta$ ($\theta=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
 
 ### The squeezed vacuum and the uncertainty product
 
-The squeezed vacuum is $S(\xi)|0\rangle$, a Gaussian whose width in $x$ is reduced by $\exp(-r)$. In the position representation it is
+The squeezed vacuum is $S(\zeta)|0\rangle$, a Gaussian whose width in $x$ is reduced by $\exp(-r)$. In the position representation it is
 
 $$
 \psi_r(x)=\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}\exp(\,r/2)
@@ -104,7 +104,7 @@ Both rows reproduce the closed forms to eight decimals, and the product is $\hba
 
 ### The biquaternion reading of the squeeze
 
-The whole squeezing construction lives in the centre. The generator is $\tfrac12(\bar\xi a^2-\xi a^{\dagger2})$, a central anti-Hermitian element; the squeeze operator is a central $*$-unitary; the quadrature dilation is a central automorphism; the squeezed vacuum's Gaussian envelope is a central real function; the uncertainty product is fixed by a central commutator. In the framework's vocabulary, squeezing is an operation of the **classical sector** on the envelope: it is a symmetry of the central oscillator algebra that changes the shape of the state without changing its module content. This is why squeezing appears in the spin-0 subcategory at all, and it is the sense in which it is "inside" the algebra.
+The whole squeezing construction lives in the centre. The generator is $\tfrac12(\bar\zeta a^2-\zeta a^{\dagger2})$, a central anti-Hermitian element; the squeeze operator is a central $*$-unitary; the quadrature dilation is a central automorphism; the squeezed vacuum's Gaussian envelope is a central real function; the uncertainty product is fixed by a central commutator. In the framework's vocabulary, squeezing is an operation of the **classical sector** on the envelope: it is a symmetry of the central oscillator algebra that changes the shape of the state without changing its module content. This is why squeezing appears in the spin-0 subcategory at all, and it is the sense in which it is "inside" the algebra.
 
 ### Composition and two-mode squeezing
 
@@ -113,7 +113,7 @@ Squeezes compose by adding their rapidities in the same direction: $S(r_1\vec u)
 A two-mode version is also inside the algebra and is worth recording because it is the strongest central correlation available. For two oscillator modes $a_1,a_2$ the two-mode squeeze operator
 
 $$
-S_{12}(\xi)=\exp\left[\bar\xi\,a_1a_2-\xi\,a_1^\dagger a_2^\dagger\right]
+S_{12}(\zeta)=\exp\left[\bar\zeta\,a_1a_2-\zeta\,a_1^\dagger a_2^\dagger\right]
 $$
 
 has a central generator and is a central $*$-unitary, and it creates correlations between the two modes — the two-mode squeezed vacuum is the standard entangled state of quantum optics. In the framework the statement is that the algebra supports central correlations between modes (a correlation between two envelopes, each a scalar function), but not correlations *inside* a single spin-0 module, which is the boundary of the next section. The two-mode operator is central; the operation that would entangle the two components of one module is not.
@@ -253,7 +253,7 @@ The table is the article's answer: envelope squeezing is available, module squee
 
 ## Summary
 
-Squeezing is generated by $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central $*$-unitary, $SS^{*}=e_t$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\psi_r\propto \exp(-(m\omega/2\hbar)\exp(2r)x^2)$ has variances $\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r)$, $\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r)$, $\Delta x\Delta p=\hbar/2$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\hbar/2$.
+Squeezing is generated by $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$, whose generator is built from the central operators $a,a^\dagger$ and is therefore central. $S$ is a central $*$-unitary, $SS^{*}=e_t$, and it acts on the state module as $S\otimes I_2$: it squeezes the envelope and leaves the module orientation untouched. The squeezed vacuum $\psi_r\propto \exp(-(m\omega/2\hbar)\exp(2r)x^2)$ has variances $\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r)$, $\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r)$, $\Delta x\Delta p=\hbar/2$, verified by direct quadrature at $r=0.5$ and $r=0.7$ to eight decimals with the product equal to $\hbar/2$.
 
 Squeezing the **module** is beyond the spin-0 reach: a central $*$-unitary cannot change the relative weights of the two module components, and a module squeeze requires a non-central generator, which is a spin rotation and belongs to the sibling spin subcategories.
 
@@ -274,8 +274,8 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\langle x\rangle_{\natural}=x x^{\natural}$ | Biquaternion norm |
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_t$ |
-| $S(\xi)=\exp[\frac12(\bar\xi a^2-\xi a^{\dagger2})]$ | Squeeze operator; central $*$-unitary |
-| $\xi=r\exp(i\theta)$ | Squeeze parameter |
+| $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$ | Squeeze operator; central $*$-unitary |
+| $\zeta=r\exp(i\theta)$ | Squeeze parameter |
 | $S^{*} aS=a\cosh r-\exp(i\theta)\sinh r\,a^\dagger$ | Bogoliubov transformation |
 | $\Delta x^2=\frac{\hbar}{2m\omega}\exp(-2r)$, $\Delta p^2=\frac{\hbar m\omega}{2}\exp(2r)$ | Squeezed-vacuum variances |
 | $E_\mu=\epsilon \vec e_\mu$ | Contracting basis |

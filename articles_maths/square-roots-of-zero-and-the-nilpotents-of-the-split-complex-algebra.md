@@ -4,15 +4,15 @@
 
 Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $Ζ\in\mathbb{C}^{\mathrm{spl}}$ with
 
 $$
-\Xi^{2}=0 .
+Ζ^{2}=0 .
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the roots of the general quadratic $\Xi^{2}=Q$ are *Square Roots of a General Element in the Split-Complex Algebra*.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the roots of the general quadratic $Ζ^{2}=Q$ are *Square Roots of a General Element in the Split-Complex Algebra*.
 
-**The results.** The roots of $0$ are exactly the origin: the equation $\Xi^{2}=0$ forces both idempotent coordinates of $\Xi$ to vanish. There are **no nonzero nilpotents**. The nilpotent cone is the single point $\{0\}$, of real dimension $0$; the nilpotent set is empty; and the algebra is **reduced**. No element has index two or any higher index. No nilpotent is a zero divisor, because there are none; no nilpotent is an idempotent; the square-zero element $0$ is an idempotent and is not a nilpotent; the conjugation fixes the only square-zero element; and under the regular matrix model the square-zero elements are the zero matrix alone, in contrast with the nonzero nilpotent matrices of $M_2(\mathbb{R})$.
+**The results.** The roots of $0$ are exactly the origin: the equation $Ζ^{2}=0$ forces both idempotent coordinates of $Ζ$ to vanish. There are **no nonzero nilpotents**. The nilpotent cone is the single point $\{0\}$, of real dimension $0$; the nilpotent set is empty; and the algebra is **reduced**. No element has index two or any higher index. No nilpotent is a zero divisor, because there are none; no nilpotent is an idempotent; the square-zero element $0$ is an idempotent and is not a nilpotent; the conjugation fixes the only square-zero element; and under the regular matrix model the square-zero elements are the zero matrix alone, in contrast with the nonzero nilpotent matrices of $M_2(\mathbb{R})$.
 
 The article is algebraic. The zero-divisor set and its two families are *Zero Divisors of the Split-Complex Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the ideals are *Ideals and Peirce Decomposition of the Split-Complex Algebra*; and the square-root problem for a general radicand is *Square Roots of a General Element in the Split-Complex Algebra*. The comparison with the dual numbers, where $\varepsilon^{2}=0$ has the nonzero root $\varepsilon$, is *The Specificities of the Split-Complex Algebra*.
 
@@ -22,29 +22,29 @@ The equations name a product, so the roots and the nilpotents are relative to it
 
 **The roots of $0$ are exactly the origin; the nonzero roots are the nilpotents, and there are none.**
 
-A **root of $0$** is an element $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with $\Xi^{2}=0$, the square being the one of the general plain bilinear product.
+A **root of $0$** is an element $Ζ\in\mathbb{C}^{\mathrm{spl}}$ with $Ζ^{2}=0$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
 Write the root in the idempotent coordinates,
 
 $$
-\Xi=\Xi_{+}\Pi_{+}+\Xi_{-}\Pi_{-},\qquad \Xi_{\pm}=x\pm x',
+Ζ=Ζ_{+}\Pi_{+}+Ζ_{-}\Pi_{-},\qquad Ζ_{\pm}=x\pm x',
 $$
 
 with $x,x'\in\mathbb{R}$. The square is
 
 $$
-\Xi^{2}=\Xi_{+}^{2}\Pi_{+}+\Xi_{-}^{2}\Pi_{-},
+Ζ^{2}=Ζ_{+}^{2}\Pi_{+}+Ζ_{-}^{2}\Pi_{-},
 $$
 
-so the equation $\Xi^{2}=0$ is equivalent to the **pair of real equations**
+so the equation $Ζ^{2}=0$ is equivalent to the **pair of real equations**
 
 $$
-\Xi_{+}^{2}=0,\qquad \Xi_{-}^{2}=0.
+Ζ_{+}^{2}=0,\qquad Ζ_{-}^{2}=0.
 $$
 
-Over $\mathbb{R}$ each equation has the single solution $\Xi_{\pm}=0$, hence $\Xi=0$. There is no coupling and no room for a nonzero solution: the two coordinates must vanish separately.
+Over $\mathbb{R}$ each equation has the single solution $Ζ_{\pm}=0$, hence $Ζ=0$. There is no coupling and no room for a nonzero solution: the two coordinates must vanish separately.
 
 **Remark (the scalar form).** In the basis $1,j$ the same equation reads
 
@@ -52,18 +52,18 @@ $$
 x^{2}+x'^{2}=0,\qquad 2xx'=0,
 $$
 
-because $\Xi^{2}=(x^{2}+x'^{2})+2xx'j$. The first equation forces $x=x'=0$ over $\mathbb{R}$, since both squares are non-negative; the second is then automatic. The scalar form shows the same result without the idempotent basis.
+because $Ζ^{2}=(x^{2}+x'^{2})+2xx'j$. The first equation forces $x=x'=0$ over $\mathbb{R}$, since both squares are non-negative; the second is then automatic. The scalar form shows the same result without the idempotent basis.
 
 ### The Zero Element
 
-The **zero element** $\Xi=0$ is a root of $0$: $0^{2}=0$. It is the only root. It is not a zero divisor under the convention that both factors be nonzero, even though it annihilates every element; it is an idempotent, because $0^{2}=0$; and it is not a nilpotent under the corpus convention, which reserves the word for a nonzero element.
+The **zero element** $Ζ=0$ is a root of $0$: $0^{2}=0$. It is the only root. It is not a zero divisor under the convention that both factors be nonzero, even though it annihilates every element; it is an idempotent, because $0^{2}=0$; and it is not a nilpotent under the corpus convention, which reserves the word for a nonzero element.
 
 ### The Nilpotent Cone
 
 The **nilpotent cone** of the algebra is the set
 
 $$
-\mathcal{N}_{0}=\{\Xi:\Xi^{2}=0\}.
+\mathcal{N}_{0}=\{Ζ:Ζ^{2}=0\}.
 $$
 
 The reduction gives
@@ -76,9 +76,9 @@ a single point, of real dimension $0$. There is no nonzero cone and no isotropic
 
 ### Statement of the Theorem
 
-**Theorem (the roots of $0$).** The equation $\Xi^{2}=0$ has exactly one solution in $\mathbb{C}^{\mathrm{spl}}$, the element $\Xi=0$.
+**Theorem (the roots of $0$).** The equation $Ζ^{2}=0$ has exactly one solution in $\mathbb{C}^{\mathrm{spl}}$, the element $Ζ=0$.
 
-**Proof.** The reduction gives $\Xi_{+}^{2}=0$ and $\Xi_{-}^{2}=0$; over $\mathbb{R}$ this gives $\Xi_{+}=\Xi_{-}=0$, hence $\Xi=0$. The element $0$ satisfies $0^{2}=0$.
+**Proof.** The reduction gives $Ζ_{+}^{2}=0$ and $Ζ_{-}^{2}=0$; over $\mathbb{R}$ this gives $Ζ_{+}=Ζ_{-}=0$, hence $Ζ=0$. The element $0$ satisfies $0^{2}=0$.
 
 ### Verification
 
@@ -89,7 +89,7 @@ The verification is immediate: $0^{2}=0$. The content of the theorem is the conv
 The roots of $0$ are the origin together with the square-zero elements; since there are no nonzero square-zero elements, the two sets are
 
 $$
-\boxed{\;\{\Xi:\Xi^{2}=0\}=\{0\},\qquad \{\text{nilpotents}\}=\varnothing\;}.
+\boxed{\;\{Ζ:Ζ^{2}=0\}=\{0\},\qquad \{\text{nilpotents}\}=\varnothing\;}.
 $$
 
 The word **nilpotent** is defined for a nonzero element in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, so the nilpotent set is empty and the root set is the singleton $\{0\}$. The article keeps the two notions separate: $0$ is a root of $0$ and is not a nilpotent.
@@ -106,7 +106,7 @@ $$
 \Upsilon^{n}=0 .
 $$
 
-The smallest such $n$ is the **index of nilpotency** of $\Upsilon$. A **square-zero element** is an element $\Xi$ with $\Xi^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.
+The smallest such $n$ is the **index of nilpotency** of $\Upsilon$. A **square-zero element** is an element $Ζ$ with $Ζ^{2}=0$; the nonzero square-zero elements are exactly the nilpotents of index two.
 
 ### The Criterion
 
@@ -176,7 +176,7 @@ The real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, the split imaginary line
 
 ## Summary
 
-The roots of $0$ in the split-complex algebra are exactly the origin: $\Xi^{2}=0$ forces both idempotent coordinates to vanish, and the only square-zero element is $0$. There are **no nonzero nilpotents**, so the nilpotent set is empty, the nilpotent cone is the single point $\{0\}$ of real dimension $0$, and the algebra is reduced. No element has index two or any higher index; no nilpotent is a zero divisor; no nilpotent is an idempotent; the square-zero element $0$ is an idempotent and not a nilpotent; the conjugation fixes the only square-zero element; the regular matrix model has the zero matrix alone as its square-zero element; and there is no nonzero nilpotent ideal, the radical being zero.
+The roots of $0$ in the split-complex algebra are exactly the origin: $Ζ^{2}=0$ forces both idempotent coordinates to vanish, and the only square-zero element is $0$. There are **no nonzero nilpotents**, so the nilpotent set is empty, the nilpotent cone is the single point $\{0\}$ of real dimension $0$, and the algebra is reduced. No element has index two or any higher index; no nilpotent is a zero divisor; no nilpotent is an idempotent; the square-zero element $0$ is an idempotent and not a nilpotent; the conjugation fixes the only square-zero element; the regular matrix model has the zero matrix alone as its square-zero element; and there is no nonzero nilpotent ideal, the radical being zero.
 
 The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0$ has the nonzero root $\varepsilon$, and with the biquaternion algebra, where the nilpotent cone is a four-real-parameter cone. In the split-complex algebra the two idempotent coordinates are real and their squares cannot cancel, so the cone collapses to its apex; the zero divisors are the null cone minus that apex, and the two classes of element are disjoint.
 
@@ -185,9 +185,9 @@ The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
-| $\Xi$ | A root of $0$, or a square-zero element |
+| $Ζ$ | A root of $0$, or a square-zero element |
 | $\Upsilon$ | A nilpotent |
-| $\mathcal{N}_{0}=\{\Xi:\Xi^{2}=0\}=\{0\}$ | The nilpotent cone |
+| $\mathcal{N}_{0}=\{Ζ:Ζ^{2}=0\}=\{0\}$ | The nilpotent cone |
 | $\{\text{nilpotents}\}=\varnothing$ | The nilpotent set |
 | $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ | The zero-divisor set, disjoint from the nilpotents |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | The idempotents, none nilpotent |
@@ -196,7 +196,7 @@ The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0
 ## Further Reading
 
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), for the companion central value $+1$ and the four idempotents.
-- [Square Roots of a General Element in the Split-Complex Algebra](square-roots-of-a-general-element-in-the-split-complex-algebra.html), for the roots of $\Xi^{2}=Q$.
+- [Square Roots of a General Element in the Split-Complex Algebra](square-roots-of-a-general-element-in-the-split-complex-algebra.html), for the roots of $Ζ^{2}=Q$.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the null cone, which contains the nilpotent cone as its apex.
 - [Norm and Invertibility in the Split-Complex Algebra](norm-and-invertibility-in-the-split-complex-algebra.html), for the plain algebraic norm, whose vanishing set is also the origin.
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the radical and the semisimplicity of the algebra.

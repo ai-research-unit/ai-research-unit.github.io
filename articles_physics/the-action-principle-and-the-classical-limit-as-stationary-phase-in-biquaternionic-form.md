@@ -195,13 +195,13 @@ $$
 \mathcal{J}\delta\tilde q=-m\,d^2(\delta\tilde q)/d{t'}^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
 $$
 
-and the vanishing of the second variation on a nontrivial field, $\mathcal{J}\,\xi=0$, is the **Jacobi equation** for the deviation field $\xi(t')$,
+and the vanishing of the second variation on a nontrivial field, $\mathcal{J}\,\zeta=0$, is the **Jacobi equation** for the deviation field $\zeta(t')$,
 
 $$
-m\,d^2\xi/d{t'}^2+\frac{d^2V}{d\tilde q^2}(\tilde q_c)\,\xi=0 .
+m\,d^2\zeta/d{t'}^2+\frac{d^2V}{d\tilde q^2}(\tilde q_c)\,\zeta=0 .
 $$
 
-This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t'_2$ at which a nontrivial solution with $\xi(t'_1)=0$ also satisfies $\xi(t'_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $\frac{d^2V}{d\tilde q^2}=0$ and the Jacobi equation reduces to $d^2\xi/d{t'}^2=0$, whose solutions are linear in $t'$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
+This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t'_2$ at which a nontrivial solution with $\zeta(t'_1)=0$ also satisfies $\zeta(t'_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $\frac{d^2V}{d\tilde q^2}=0$ and the Jacobi equation reduces to $d^2\zeta/d{t'}^2=0$, whose solutions are linear in $t'$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
 
 **Stability.** The sign of the second variation is the classical stability statement: positive for a stable extremum, a change of sign at a conjugate point. Nothing here is quantum; the second variation is the Hessian of a function on a function space, and its degeneracy is the classical Morse-theoretic datum.
 
@@ -354,7 +354,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=\langle\tilde p\rangle_{\natural}/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\varpi_2-\varpi_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ has Hamilton's equations as its critical-point equations.
-- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{t'}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/d{t'}^2+\frac{d^2V}{d\tilde q^2}\,\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
+- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{t'}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\zeta/d{t'}^2+\frac{d^2V}{d\tilde q^2}\,\zeta=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
 - The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dt'$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{t'}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t')=\tilde u(0)\exp(+\tfrac12\vec\omega_bt')$: the free rigid body's motion.
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]/\hbar)$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial t'\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.
@@ -373,7 +373,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $S_{\mathrm{ps}}=\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ | Phase-space action |
 | $\delta^2S$ | Second variation |
 | $\mathcal{J}$ | Jacobi (fluctuation) operator |
-| $\xi$ | Deviation field; $\mathcal{J}\xi=0$ is the Jacobi/geodesic-deviation equation |
+| $\zeta$ | Deviation field; $\mathcal{J}\zeta=0$ is the Jacobi/geodesic-deviation equation |
 | $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotor configuration |
 | $\vec\omega_b,\vec\omega_s$ | Body- and space-frame angular velocities |

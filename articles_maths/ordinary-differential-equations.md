@@ -356,14 +356,14 @@ and the coefficients are generated from $X_1^{(0)} = X_2^{(0)} \equiv 1$ by the 
 $$
 X_1^{(n)}(x)=
 \begin{cases}
-n\displaystyle\int_0^xX_1^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
-n\displaystyle\int_0^xX_1^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{even},
+n\displaystyle\int_0^xX_1^{(n-1)}(\zeta)\,g^{2}(\zeta)\,d\zeta, & n\ \text{odd},\\[6pt]
+n\displaystyle\int_0^xX_1^{(n-1)}(\zeta)\,g^{-2}(\zeta)\,d\zeta, & n\ \text{even},
 \end{cases}
 \qquad
 X_2^{(n)}(x)=
 \begin{cases}
-n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
-n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{even}.
+n\displaystyle\int_0^xX^{(n-1)}(\zeta)\,g^{-2}(\zeta)\,d\zeta, & n\ \text{odd},\\[6pt]
+n\displaystyle\int_0^xX^{(n-1)}(\zeta)\,g^{2}(\zeta)\,d\zeta, & n\ \text{even}.
 \end{cases}
 $$
 

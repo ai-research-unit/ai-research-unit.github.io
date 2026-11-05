@@ -144,7 +144,7 @@ and $\|u\| \le m^{-1}\|F\|_{H^*}$.
 **Definition.** Let $\Omega$ be bounded with Lipschitz boundary, let $f \in L^2(\Omega)$ and let $A$ be a bounded measurable matrix field on $\Omega$ satisfying the ellipticity condition
 
 $$
-\lambda|\xi|^2 \le \xi\cdot A(x)\xi \le \Lambda|\xi|^2 \qquad (x \in \Omega,\ \xi \in \mathbb{R}^n)
+\lambda|\zeta|^2 \le \zeta\cdot A(x)\zeta \le \Lambda|\zeta|^2 \qquad (x \in \Omega,\ \zeta \in \mathbb{R}^n)
 $$
 
 for constants $0<\lambda\le\Lambda$. A function $u \in H^1_0(\Omega)$ is a **weak solution** of the Dirichlet problem

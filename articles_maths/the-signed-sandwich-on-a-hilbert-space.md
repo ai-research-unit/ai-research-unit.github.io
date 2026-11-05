@@ -36,7 +36,7 @@ $$
 
 the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\|\mathcal{T}_{A,B}\|_{HS}=\|A\|\,\|B\|$.
 
-*Proof.* $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\xi\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\|\cdot\|_{\mathrm{HS}}$ in place of $\|\cdot\|$.
+*Proof.* $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\zeta\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\|\cdot\|_{\mathrm{HS}}$ in place of $\|\cdot\|$.
 
 **Proposition (relation to the unsigned sandwich and the coset).** Every signed sandwich is the unsigned sandwich composed with the involution,
 

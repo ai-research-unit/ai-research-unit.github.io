@@ -19,11 +19,11 @@ $$
 \tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\alpha), \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec\Xi=-i\vec U$ is the pure root of $+1$ that *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the eigenbasis, with its two nilpotents — carries the four basis elements and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
+This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec{Ζ}=-i\vec U$ is the pure root of $+1$ that *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the eigenbasis, with its two nilpotents — carries the four basis elements and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
 
 The pairing is **partial**: its second factor is a single exponential only where the axis $\vec U=\vec Q/B$ is defined, which requires the vector part to be non-null. It is partial in both the factorisation and the construction, unlike the quaternion pairing, which is partial in the construction only. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*.
 
-**The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and its two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It inserts, between the two factors and the existence theorem, the eigenbasis and the two spinor spaces, where the Hamilton data are the diagonal values. It adds a second half, the **root reading**, which reads the same word at the roots of one and collects the four-factor form, the two-exponent form, the single exponential and the idempotent exponential in one table. The first half is the Hamilton representation itself; the second is the same representation at the elements where the non-central factors close. The two halves are related by $\vec\Xi=-i\vec U$: multiplying the axis by $-i$ gives the pure root of $+1$ attached to the element. The four factors are taken from *The Polar Decomposition of an N-Regular Biquaternion*, and the exponential and the logarithm from *Biquaternion Elementary Functions*; the imported proofs are cited rather than repeated. No physics is invoked.
+**The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and its two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It inserts, between the two factors and the existence theorem, the eigenbasis and the two spinor spaces, where the Hamilton data are the diagonal values. It adds a second half, the **root reading**, which reads the same word at the roots of one and collects the four-factor form, the two-exponent form, the single exponential and the idempotent exponential in one table. The first half is the Hamilton representation itself; the second is the same representation at the elements where the non-central factors close. The two halves are related by $\vec{Ζ}=-i\vec U$: multiplying the axis by $-i$ gives the pure root of $+1$ attached to the element. The four factors are taken from *The Polar Decomposition of an N-Regular Biquaternion*, and the exponential and the logarithm from *Biquaternion Elementary Functions*; the imported proofs are cited rather than repeated. No physics is invoked.
 
 **The result.** On the complement of the null cone and of the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural}=0$, the element factors as $\Rho\exp(\vec U\Theta)$, with $\Rho$ the complex modulus, $\vec U=\vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle. The pairing is collected in the table.
 
@@ -49,12 +49,12 @@ The article takes the following results as established and does not prove them a
 |---|---|---|
 | the four factors, their ranges and their order | *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\Rho\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
-| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec\Xi$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
+| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec{Ζ}$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
 | the roots of one and their idempotents | *Idempotents*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
 | the eigenbasis, its nilpotents and the spinor spaces | *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, and *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
 | the hyperbolic form of a non-trivial root | *Idempotents*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
-| the idempotent exponential form and the extraction $-i\tilde\Xi$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Idempotents*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
+| the idempotent exponential form and the extraction $-i\tilde{Ζ}$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Idempotents*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
 | the Peirce decomposition | *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions* | the idempotents and the four corners |
 | the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the classical limit |
 
@@ -144,7 +144,7 @@ The factor is a single exponential on the whole domain, but its exponent is not 
 
 ## The Eigenbasis and the Spinor Spaces
 
-**The basis.** The Hamilton data are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, read in the eigenbasis of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. The pure root of $+1$ attached to the axis is $\vec\Xi=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
+**The basis.** The Hamilton data are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, read in the eigenbasis of *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. The pure root of $+1$ attached to the axis is $\vec{Ζ}=-i\vec U$, the eigenprojections are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, and the two mixed Peirce corners are the complex lines spanned by the nilpotents $\vec\Upsilon_+\in\mathbb{B}_{-+}$ and $\vec\Upsilon_-\in\mathbb{B}_{+-}$, normalised by
 
 $$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad \vec\Upsilon_\pm^2=0 .
@@ -218,7 +218,7 @@ $$
 \left\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0 \ \text{ and } \ \langle\vec Q,\vec Q\rangle_{\natural}\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
+which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec{Ζ}=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
 
 ## The Three Pairings
 
@@ -286,22 +286,22 @@ The consistency of the second row is a consequence of $\langle\bar{\tilde Q}\ran
 
 ## The Root Reading
 
-The second half reads the same four-factor word at the elements where it closes, $\tilde\Xi^2=e_t$. The classification of the roots is that of *Idempotents*, and the exponential forms are read here on the polar word. The readings are collected in the table.
+The second half reads the same four-factor word at the elements where it closes, $\tilde{Ζ}^2=e_t$. The classification of the roots is that of *Idempotents*, and the exponential forms are read here on the polar word. The readings are collected in the table.
 
 | reading | object | form | what it shows |
 |---|---|---|---|
 | four factors | $\tilde Q$ | $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word that is bracketed |
-| non-central root | $\tilde\Xi$ | $i\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word at a root of $+1$ of norm $-e_t$ |
+| non-central root | $\tilde{Ζ}$ | $i\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word at a root of $+1$ of norm $-e_t$ |
 | two exponents | $\mathcal H,\mathcal R$ | $i\frac{\psi}{2}\vec u_{\mathrm b}$, $\frac{\theta}{2}\vec u_{\mathrm r}$ | the factors are exponentials; their bracket measures the failure of additivity |
-| single exponential | $-i\tilde\Xi$ | $\exp(\vec U'\frac{\pi}{2})=\vec U'$ | the product is one exponential, with a real angle on the root set |
-| idempotent | $\tilde\Xi$ | $\exp(i\pi\tilde\Pi_-)$ | one exponential of an idempotent |
-| bridge | $\tilde\Xi$, $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $-i\tilde\Xi=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the two forms determine each other |
+| single exponential | $-i\tilde{Ζ}$ | $\exp(\vec U'\frac{\pi}{2})=\vec U'$ | the product is one exponential, with a real angle on the root set |
+| idempotent | $\tilde{Ζ}$ | $\exp(i\pi\tilde\Pi_-)$ | one exponential of an idempotent |
+| bridge | $\tilde{Ζ}$, $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the two forms determine each other |
 
 The first row is the word of the first half; the other five are the readings of this half, and the table is the order of the subsections. The classification, the hyperbolic form, the idempotent form and the bridge are cited; the bracket of the two exponents and the single exponential on the whole domain are what this half adds.
 
 ### The Word at a Root of One
 
-The roots of $+1$ are classified in *Idempotents*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec\Xi$ with $\vec\Xi^2=e_t$. Taking norms in $\tilde\Xi^2=e_t$ gives $\langle\tilde\Xi\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
+The roots of $+1$ are classified in *Idempotents*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec{Ζ}$ with $\vec{Ζ}^2=e_t$. Taking norms in $\tilde{Ζ}^2=e_t$ gives $\langle\tilde{Ζ}\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
 
 | norm | word | condition on the factors |
 |---|---|---|
@@ -312,16 +312,16 @@ The first row is the central pair. A root of unit norm has $r=1$ and $\alpha=0$,
 
 ### The Root From Its Coordinates
 
-The coordinates give the two factors directly. Write $\Xi_\mu=\xi_\mu+i\xi'_\mu$ and collect the real triples $\vec\xi=(\xi_x,\xi_y,\xi_z)$ and $\vec\xi'=(\xi'_x,\xi'_y,\xi'_z)$. The single complex equation $\Xi_x^2+\Xi_y^2+\Xi_z^2=-1$ is the pair
+The coordinates give the two factors directly. Write $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$ and collect the real triples $\vec\zeta=(\zeta_x,\zeta_y,\zeta_z)$ and $\vec\zeta'=(\zeta'_x,\zeta'_y,\zeta'_z)$. The single complex equation $Ζ_x^2+Ζ_y^2+Ζ_z^2=-1$ is the pair
 
 $$
-\vec\xi\cdot\vec\xi'=0,\qquad \lvert\vec\xi'\rvert^2-\lvert\vec\xi\rvert^2=1,
+\vec\zeta\cdot\vec\zeta'=0,\qquad \lvert\vec\zeta'\rvert^2-\lvert\vec\zeta\rvert^2=1,
 $$
 
-so the two triples are orthogonal and the imaginary one is the longer. In the hyperbolic form $\tilde\Xi=\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n}$ read from these coordinates, the two halves are $\vec\xi=-\sinh t\,\vec u_{\mathrm b}\vec u_{\mathrm n}$ and $\vec\xi'=\cosh t\,\vec u_{\mathrm n}$, so the reading is
+so the two triples are orthogonal and the imaginary one is the longer. In the hyperbolic form $\tilde{Ζ}=\exp(t\,i\vec u_{\mathrm b})\,i\vec u_{\mathrm n}$ read from these coordinates, the two halves are $\vec\zeta=-\sinh t\,\vec u_{\mathrm b}\vec u_{\mathrm n}$ and $\vec\zeta'=\cosh t\,\vec u_{\mathrm n}$, so the reading is
 
 $$
-\cosh t=\lvert\vec\xi'\rvert,\qquad \sinh t=\lvert\vec\xi\rvert,\qquad \vec u_{\mathrm n}=\frac{\vec\xi'}{\lvert\vec\xi'\rvert},\qquad \vec u_{\mathrm b}=\Bigl(\frac{\vec\xi}{\lvert\vec\xi\rvert}\Bigr)\vec u_{\mathrm n}.
+\cosh t=\lvert\vec\zeta'\rvert,\qquad \sinh t=\lvert\vec\zeta\rvert,\qquad \vec u_{\mathrm n}=\frac{\vec\zeta'}{\lvert\vec\zeta'\rvert},\qquad \vec u_{\mathrm b}=\Bigl(\frac{\vec\zeta}{\lvert\vec\zeta\rvert}\Bigr)\vec u_{\mathrm n}.
 $$
 
 The imaginary triple therefore carries the rotor axis, $\vec u_{\mathrm r}=\vec u_{\mathrm n}$, and the real triple the boost axis; the rapidity of the polar word is $\psi=2t$. The reconstruction of the root from the two triples is the hyperbolic form itself, which the cited article proves. The polar word names the same two factors and adds nothing on the root set.
@@ -341,10 +341,10 @@ $$
 
 The Hermitian exponent is the real $\frac{\psi}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* reads at the level of the element.
 
-**The root on the exponents.** On the root set the rotor is pure, so $\theta=\pi$ and the rotor exponent is the same quarter turn $\mathcal R=\frac{\pi}{2}\vec u_{\mathrm r}$ for every root; the roots are separated by the rapidity inside $\mathcal H$ and by the two directions, and the closing condition $\tilde\Xi^2=e_t$ is exactly their orthogonality,
+**The root on the exponents.** On the root set the rotor is pure, so $\theta=\pi$ and the rotor exponent is the same quarter turn $\mathcal R=\frac{\pi}{2}\vec u_{\mathrm r}$ for every root; the roots are separated by the rapidity inside $\mathcal H$ and by the two directions, and the closing condition $\tilde{Ζ}^2=e_t$ is exactly their orthogonality,
 
 $$
-\tilde\Xi=i\exp(\mathcal H)\exp(\mathcal R),\qquad \tilde\Pi_\pm=\frac12\bigl(e_t\pm i\exp(\mathcal H)\exp(\mathcal R)\bigr).
+\tilde{Ζ}=i\exp(\mathcal H)\exp(\mathcal R),\qquad \tilde\Pi_\pm=\frac12\bigl(e_t\pm i\exp(\mathcal H)\exp(\mathcal R)\bigr).
 $$
 
 **The bracket.** The two exponents do not commute in general, and their bracket is
@@ -409,10 +409,10 @@ $$
 
 with the same root $\vec U$ of $-e_t$ and the same complex $\Theta$ as the element, its exponent $\Theta\vec U$ being a complex multiple of a root. The single exponential is thus the reward of the norm being one, which is general, and not of the commutativity, which is exceptional; what commutativity buys is only the identity of the exponent $\Theta\vec U$ with the sum $\mathcal H+\mathcal R$ of the two given exponents.
 
-**On the root set the complex number collapses to a real one.** The extracted element $-i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is pure, so $\cos\Theta = 0$, the complex angle is the real quarter turn $\Theta = \frac{\pi}{2}$, and the extracted element, a unit-norm root of $-e_t$, is its own quarter-turn exponential,
+**On the root set the complex number collapses to a real one.** The extracted element $-i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is pure, so $\cos\Theta = 0$, the complex angle is the real quarter turn $\Theta = \frac{\pi}{2}$, and the extracted element, a unit-norm root of $-e_t$, is its own quarter-turn exponential,
 
 $$
--i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\Bigl(\vec U'\frac{\pi}{2}\Bigr) = \vec U' , \qquad \vec U' = -i\tilde\Xi .
+-i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\Bigl(\vec U'\frac{\pi}{2}\Bigr) = \vec U' , \qquad \vec U' = -i\tilde{Ζ} .
 $$
 
 The non-Hermitian roots of one are therefore the elements furthest from the aligned case and, at the same time, the elements whose single exponential carries a real number in place of the complex one. The complex angle is not lost with them: it is the aligned words that carry the genuinely complex number $\frac{\theta}{2}+\epsilon i\frac{\psi}{2}$ of the subsection above.
@@ -422,23 +422,23 @@ The non-Hermitian roots of one are therefore the elements furthest from the alig
 Every root of one is the exponential of its halving idempotent. Since $\tilde\Pi_-$ is idempotent the exponential series truncates,
 
 $$
-\exp(i\pi\tilde\Pi_-)=e_t+\bigl(\exp(i\pi)-1\bigr)\tilde\Pi_-=e_t-2\tilde\Pi_-=\tilde\Xi,
+\exp(i\pi\tilde\Pi_-)=e_t+\bigl(\exp(i\pi)-1\bigr)\tilde\Pi_-=e_t-2\tilde\Pi_-=\tilde{Ζ},
 $$
 
 so
 
 $$
-\tilde\Xi=\exp(i\pi\tilde\Pi_-),\qquad \tilde\Pi_-=\tfrac12(e_t-\tilde\Xi)
+\tilde{Ζ}=\exp(i\pi\tilde\Pi_-),\qquad \tilde\Pi_-=\tfrac12(e_t-\tilde{Ζ})
 $$
 
-The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *Idempotents*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde\Xi=e_t$ gives $\tilde\Pi_-=0$, and $\tilde\Xi=-e_t$ gives $\tilde\Pi_-=e_t$.
+The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *Idempotents*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde{Ζ}=e_t$ gives $\tilde\Pi_-=0$, and $\tilde{Ζ}=-e_t$ gives $\tilde\Pi_-=e_t$.
 
 ### The Bridge Between the Two Forms
 
-The two forms are tied by the product of the last two factors. On a root of norm $-e_t$ the word is $\tilde\Xi=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, so left multiplication by $-i$ extracts that product, and the halving idempotent and the exponent split as
+The two forms are tied by the product of the last two factors. On a root of norm $-e_t$ the word is $\tilde{Ζ}=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, so left multiplication by $-i$ extracts that product, and the halving idempotent and the exponent split as
 
 $$
--i\tilde\Xi=\tilde U_{\mathrm b}\tilde u_{\mathrm r},\qquad
+-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r},\qquad
 \tilde\Pi_-=\tfrac12\bigl(e_t-i\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),\qquad
 i\pi\tilde\Pi_-=\tfrac{i\pi}{2}e_t+\tfrac{\pi}{2}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
@@ -446,21 +446,21 @@ $$
 The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §*The Idempotent Exponential Form of a Root*; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\Rho=i$ on the norm $-e_t$ family,
 
 $$
-\tilde U^{\mathrm{lor}}=\frac{\tilde\Xi}{\Rho}=-i\tilde\Xi=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde U^{\mathrm{lor}}=\frac{\tilde{Ζ}}{\Rho}=-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
 ### The Hermitian Roots
 
-The roots of one that are Hermitian, $\tilde\Xi^{*}=\tilde\Xi$, are the zero-rapidity case. On a root of norm $-e_t$ the word is $\tilde\Xi=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ pure and the axes orthogonal, and
+The roots of one that are Hermitian, $\tilde{Ζ}^{*}=\tilde{Ζ}$, are the zero-rapidity case. On a root of norm $-e_t$ the word is $\tilde{Ζ}=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ pure and the axes orthogonal, and
 
 $$
-\tilde\Xi^{*}-\tilde\Xi=2\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},
+\tilde{Ζ}^{*}-\tilde{Ζ}=2\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},
 $$
 
 which vanishes exactly when the boost is trivial. The Hermitian roots are therefore the central pair and the purely imaginary family,
 
 $$
-\tilde\Xi=\pm e_t,\qquad \tilde\Xi=i\vec u_{\mathrm n}\quad(\vec u_{\mathrm n}\in\mathcal{A}),
+\tilde{Ζ}=\pm e_t,\qquad \tilde{Ζ}=i\vec u_{\mathrm n}\quad(\vec u_{\mathrm n}\in\mathcal{A}),
 $$
 
 as in *Idempotents*, §*The Roots of One*. In the idempotent form the halving element of a Hermitian root is Hermitian.
@@ -470,7 +470,7 @@ as in *Idempotents*, §*The Roots of One*. In the idempotent form the halving el
 **The two directions.** The root set is generated by two orthogonal unit pure real quaternions and one rapidity: the rotor axis $\vec u_{\mathrm r}$, the boost axis $\vec u_{\mathrm b}$ and $\psi\ge0$. Their product $\vec u_{\mathrm b}\vec u_{\mathrm r}$ is the third unit pure direction, perpendicular to both, and
 
 $$
-\tilde\Xi=i\cosh\tfrac{\psi}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde\Xi^2=e_t,\qquad \langle\tilde\Xi\rangle_{\natural}=-e_t
+\tilde{Ζ}=i\cosh\tfrac{\psi}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde{Ζ}^2=e_t,\qquad \langle\tilde{Ζ}\rangle_{\natural}=-e_t
 $$
 
 (§*The Root From Its Coordinates* above, and *Idempotents*, §*The Non-Hermitian Roots*). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.
@@ -481,9 +481,9 @@ $$
 \tilde Q=r\exp(i\alpha)\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
-An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,r\exp(i\alpha)\,\tilde\Xi$ of it; in general the element carries its own two factors, of the same kind.
+An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,r\exp(i\alpha)\,\tilde{Ζ}$ of it; in general the element carries its own two factors, of the same kind.
 
-**The idempotents and the spinor spaces.** The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde\Xi)$, and the Peirce decomposition of *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, splits the algebra into the four corners. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus
+**The idempotents and the spinor spaces.** The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$, and the Peirce decomposition of *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, splits the algebra into the four corners. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus
 
 $$
 \text{two pure directions}\;\longrightarrow\;\text{the root}\;\longrightarrow\;\text{the idempotents}\;\longrightarrow\;\text{the Peirce corners and the spinor spaces},
@@ -557,16 +557,16 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=
 Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$ and a boost axis orthogonal to it, $\vec u_{\mathrm b} = (\vec e_x-\vec e_y)/\sqrt2$, with the rapidity fixed by $\cosh\tfrac{\psi}{2} = \tfrac{5}{4}$ and $\sinh\tfrac{\psi}{2} = \tfrac{3}{4}$. The two axes multiply to the third pure direction, $\vec u_{\mathrm b}\vec u_{\mathrm r} = \vec e_z$, and the root is
 
 $$
-\tilde\Xi = i\cosh\tfrac{\psi}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r} = 0.883883476\,i\,\vec e_x+0.883883476\,i\,\vec e_y-0.75\,\vec e_z , \qquad \tilde\Xi^2 = e_t , \qquad \langle\tilde\Xi\rangle_{\natural} = -e_t .
+\tilde{Ζ} = i\cosh\tfrac{\psi}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r} = 0.883883476\,i\,\vec e_x+0.883883476\,i\,\vec e_y-0.75\,\vec e_z , \qquad \tilde{Ζ}^2 = e_t , \qquad \langle\tilde{Ζ}\rangle_{\natural} = -e_t .
 $$
 
 Its halving idempotent and the product of the last two factors of the word are
 
 $$
-\tilde\Pi_- = \tfrac12(e_t-\tilde\Xi) = 0.5\,e_t-0.441941738\,i\,\vec e_x-0.441941738\,i\,\vec e_y+0.375\,\vec e_z , \qquad -i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tfrac{5}{4}\vec u_{\mathrm r}+i\tfrac{3}{4}\,\vec e_z ,
+\tilde\Pi_- = \tfrac12(e_t-\tilde{Ζ}) = 0.5\,e_t-0.441941738\,i\,\vec e_x-0.441941738\,i\,\vec e_y+0.375\,\vec e_z , \qquad -i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tfrac{5}{4}\vec u_{\mathrm r}+i\tfrac{3}{4}\,\vec e_z ,
 $$
 
-and the root is the single exponential of its halving idempotent, $\tilde\Xi = \exp(i\pi\tilde\Pi_-)$. The element is Hermitian only at zero rapidity, where it reduces to $i\vec u_{\mathrm r}$.
+and the root is the single exponential of its halving idempotent, $\tilde{Ζ} = \exp(i\pi\tilde\Pi_-)$. The element is Hermitian only at zero rapidity, where it reduces to $i\vec u_{\mathrm r}$.
 
 *The two exponents and the bracket.* The exponents of the word are
 
@@ -618,7 +618,7 @@ so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,
 
 The Hamilton pairing groups the scale with the phase into the complex modulus $\Rho=r\exp(i\alpha)$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.
 
-The second half reads the same word at a root of one, $\tilde\Xi^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde\Xi=\exp(i\pi\tilde\Pi_-)$ of its halving idempotent.
+The second half reads the same word at a root of one, $\tilde{Ζ}^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde{Ζ}=\exp(i\pi\tilde\Pi_-)$ of its halving idempotent.
 
 ### The Roots of One
 
@@ -642,9 +642,9 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\psi}{2}\vec u_{
 | $\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar decomposition |
 | $\vec U = \vec Q/B$ | the Hamilton axis, the root of $-1$ parallel to the vector part |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ on $\mathbb{B}$; $L_{\tilde Q}$ is diagonal in the eigenbasis, $R_{\tilde Q}$ has the left ideals $S_\pm$ as eigenspaces |
-| $\vec\Xi = -i\vec U$ | the pure root of $+1$ attached to the axis |
+| $\vec{Ζ} = -i\vec U$ | the pure root of $+1$ attached to the axis |
 | $\lambda_\pm = Q_t\pm iB = \Rho\exp(\pm i\Theta)$ | the eigenvalues, the coefficients of the eigenvalue decomposition |
-| $\tilde\Pi_\pm = \frac12(e_t\pm\vec\Xi)$ | the eigenprojections, primitive orthogonal idempotents |
+| $\tilde\Pi_\pm = \frac12(e_t\pm\vec{Ζ})$ | the eigenprojections, primitive orthogonal idempotents |
 | $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$ | the nilpotents of the eigenbasis, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces, the Peirce carriers (minimal left ideals here), the two columns of $\mathsf M_2^Q$ |
 | $\mathsf M_2^Q$ | the matrix model in the eigenbasis, with $\mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ |
@@ -655,11 +655,11 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\psi}{2}\vec u_{
 | $\tilde q_r$, $\tilde q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi$ | the quaternion modulus and the quaternion angle of the companion pairing |
 | $Q_\mu = q_\mu+iq'_\mu$ | the four complex coefficients of $\tilde{Q}$, split into their real and imaginary parts |
-| $\Xi_\mu = \xi_\mu+i\xi'_\mu$ | the four complex coefficients of a root of one $\tilde\Xi$ |
+| $Ζ_\mu = \zeta_\mu+i\zeta'_\mu$ | the four complex coefficients of a root of one $\tilde{Ζ}$ |
 | $\exp(\tilde{Q})$ | the exponential; its Hamilton data $\exp(Q_t)$ and $B$ are generally not those of $\tilde{Q}$ |
-| $\tilde\Xi$ | a root of one, $\tilde\Xi^2 = e_t$; the pure root attached to the Hamilton axis is $\vec\Xi=-i\vec U$ |
-| $\tilde\Pi_- = \tfrac12(e_t-\tilde\Xi)$ | the halving idempotent of a root of one, whose exponential is the root |
-| $-i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the product of the last two factors of the polar word, read from a root of norm $-e_t$ |
+| $\tilde{Ζ}$ | a root of one, $\tilde{Ζ}^2 = e_t$; the pure root attached to the Hamilton axis is $\vec{Ζ}=-i\vec U$ |
+| $\tilde\Pi_- = \tfrac12(e_t-\tilde{Ζ})$ | the halving idempotent of a root of one, whose exponential is the root |
+| $-i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the product of the last two factors of the polar word, read from a root of norm $-e_t$ |
 | $\mathcal H = i\frac{\psi}{2}\vec u_{\mathrm b}$ | the exponent of the boost, Hermitian, in $\mathbb{M}_+$, the real $\frac{\psi}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$ |
 | $\mathcal R = \frac{\theta}{2}\vec u_{\mathrm r}$ | the exponent of the rotor, real pure, in $\mathbb{M}_-\cap\mathrm{Vect}(\mathbb{B})$, the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$ |
 | $[\mathcal H,\mathcal R] = i\frac{\psi\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$ | the bracket of the two exponents, vanishing exactly on the aligned words |

@@ -76,17 +76,17 @@ so the signed action agrees with the ordinary action on the even part of the alg
 
 ## The Module Involution and the Sign Rule
 
-**Definition.** Let $\xi$ be cyclic and separating for the action, so that $x\cdot\xi = 0$ forces $x = 0$, and let $S_M(x\cdot\xi) = x^{\dagger}\cdot\xi$ be the module involution of *The Hermitian Adjoint on a Hermitian Module*, with polar decomposition $\bar S_M = \jmath_M\Delta_M^{1/2}$.
+**Definition.** Let $\zeta$ be cyclic and separating for the action, so that $x\cdot\zeta = 0$ forces $x = 0$, and let $S_M(x\cdot\zeta) = x^{\dagger}\cdot\zeta$ be the module involution of *The Hermitian Adjoint on a Hermitian Module*, with polar decomposition $\bar S_M = \jmath_M\Delta_M^{1/2}$.
 
 **Proposition (the involution conjugates the signed action).** On the bimodule case, where the right action $\sigma$ of the algebra is defined, the module involution satisfies
 
 $$
-\boxed{\;S_M\,\rho^{\alpha}(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) \quad\text{on } A\cdot\xi\;} ,
+\boxed{\;S_M\,\rho^{\alpha}(x)\,S_M = \sigma^{\alpha}(x^{\dagger}) \quad\text{on } A\cdot\zeta\;} ,
 $$
 
 where $\sigma^{\alpha}(y)$ is the signed right action, $s\mapsto s\cdot\alpha(y)$; so the conjugation by the module involution turns the signed left action into the signed right action of the involution.
 
-**Proof.** $S_M\rho^{\alpha}(x)S_M(y\cdot\xi) = S_M(\alpha(x)y^{\dagger}\cdot\xi) = (\alpha(x)y^{\dagger})^{\dagger}\cdot\xi = y\alpha(x)^{\dagger}\cdot\xi = y\alpha(x^{\dagger})\cdot\xi = \sigma^{\alpha}(x^{\dagger})(y\cdot\xi)$, using that the dagger is even.
+**Proof.** $S_M\rho^{\alpha}(x)S_M(y\cdot\zeta) = S_M(\alpha(x)y^{\dagger}\cdot\zeta) = (\alpha(x)y^{\dagger})^{\dagger}\cdot\zeta = y\alpha(x)^{\dagger}\cdot\zeta = y\alpha(x^{\dagger})\cdot\zeta = \sigma^{\alpha}(x^{\dagger})(y\cdot\zeta)$, using that the dagger is even.
 
 **Corollary (the sign rule is preserved by the conjugation).** For homogeneous $x$ the conjugation carries the scalar $\varepsilon_x$ across,
 
@@ -114,7 +114,7 @@ with $\sigma_t$ the modular automorphism of the algebra; the flow preserves the 
 
 ### The Regular Module
 
-For $M = A$ with the form $(s,t) = \langle s,t\rangle$ and $\xi = 1$, the signed action is the signed left multiplication $\Lambda^{\alpha}_x$ and the theorem is the identity $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$; the conjugation by the module involution is $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$, the signed right multiplication.
+For $M = A$ with the form $(s,t) = \langle s,t\rangle$ and $\zeta = 1$, the signed action is the signed left multiplication $\Lambda^{\alpha}_x$ and the theorem is the identity $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$; the conjugation by the module involution is $S\Lambda^{\alpha}_xS = \mathrm{P}^{\alpha}_{x^{\dagger}}$, the signed right multiplication.
 
 ### The Vector Module
 

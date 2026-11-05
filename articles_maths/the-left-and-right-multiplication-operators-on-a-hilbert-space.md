@@ -6,10 +6,10 @@ A Hilbert space carries bounded operators, and those operators act on one anothe
 
 This article fixes the two one-sided multiplications, computes their adjoints with respect to the Hilbert–Schmidt form, develops the rank-one decomposition that makes the computation transparent, and identifies the algebra they generate together with its commutant. The algebra $B(H)$ and the Hilbert–Schmidt class are *Bounded Operators on a Hilbert Space* and *Compact Operators*; the multiplication operators of an abstract algebra are *The Left and Right Multiplication Operators on a Banach Algebra* (Part II) and their Hilbert-algebra form is *The Adjoint of the Left Multiplication on a Hermitian Algebra*. The signed versions with a grade involution are *The Signed Left Multiplication on a Hilbert Space* and *The Adjoint of the Left Multiplication on a Hilbert Space* below.
 
-Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, and for $\xi,\eta\in H$ the **rank-one operator** is
+Throughout, $H$ is a Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with inner product $\langle\cdot,\cdot\rangle$ linear in the first argument, $S_2(H)$ is the Hilbert–Schmidt class with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\operatorname{tr}(ST^*)$, and for $\zeta,\eta\in H$ the **rank-one operator** is
 
 $$
-\xi\otimes\bar\eta:H\longrightarrow H,\qquad (\xi\otimes\bar\eta)(x)=\langle x,\eta\rangle\,\xi .
+\zeta\otimes\bar\eta:H\longrightarrow H,\qquad (\zeta\otimes\bar\eta)(x)=\langle x,\eta\rangle\,\zeta .
 $$
 
 The left and right multiplications are $L_A(T)=AT$ and $R_B(T)=TB$ on $S_2(H)$, and the adjoint with respect to $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is written $L_A^*$, $R_B^*$.
@@ -36,7 +36,7 @@ $$
 L_AL_C=L_{AC},\quad R_BR_D=R_{BD},\quad L_I=R_I=I .
 $$
 
-*Proof.* For a rank-one $\xi\otimes\bar\eta$ one has $\|\xi\otimes\bar\eta\|_{\mathrm{HS}}=\|\xi\|\|\eta\|$ and $L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$, $R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$; hence $\|L_A(\xi\otimes\bar\eta)\|_{\mathrm{HS}}=\|A\xi\|\|\eta\|\le\|A\|\|\xi\|\|\eta\|=\|A\|\|\xi\otimes\bar\eta\|_{\mathrm{HS}}$. Since the rank-one operators span a dense subspace of $S_2(H)$, $L_A$ extends with norm at most $\|A\|$, and the value $\|A\|$ is attained by choosing $\eta$ and $\xi$ of norm one with $\|A\xi\|=\|A\|$. Products and the identity follow from associativity, and faithfulness from the density of the rank-one operators.
+*Proof.* For a rank-one $\zeta\otimes\bar\eta$ one has $\|\zeta\otimes\bar\eta\|_{\mathrm{HS}}=\|\zeta\|\|\eta\|$ and $L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta$, $R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta}$; hence $\|L_A(\zeta\otimes\bar\eta)\|_{\mathrm{HS}}=\|A\zeta\|\|\eta\|\le\|A\|\|\zeta\|\|\eta\|=\|A\|\|\zeta\otimes\bar\eta\|_{\mathrm{HS}}$. Since the rank-one operators span a dense subspace of $S_2(H)$, $L_A$ extends with norm at most $\|A\|$, and the value $\|A\|$ is attained by choosing $\eta$ and $\zeta$ of norm one with $\|A\zeta\|=\|A\|$. Products and the identity follow from associativity, and faithfulness from the density of the rank-one operators.
 
 **Proposition (the commutant relation).** The two one-sided families commute:
 
@@ -73,28 +73,28 @@ The same four statements hold for $R_B$ with $B$ in place of $A$.
 
 ## The Rank-One Decomposition
 
-**Definition.** The **rank-one decomposition** of $S_2(H)$ is the expression of an operator as a norm-convergent sum of rank-one operators $T=\sum_n\xi_n\otimes\bar\eta_n$; the coefficient vectors are the singular vectors of $T$ and the sum is the singular-value expansion.
+**Definition.** The **rank-one decomposition** of $S_2(H)$ is the expression of an operator as a norm-convergent sum of rank-one operators $T=\sum_n\zeta_n\otimes\bar\eta_n$; the coefficient vectors are the singular vectors of $T$ and the sum is the singular-value expansion.
 
-**Proposition (the multiplications on rank-one operators).** For $\xi,\eta,x\in H$,
+**Proposition (the multiplications on rank-one operators).** For $\zeta,\eta,x\in H$,
 
 $$
-L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta,\qquad R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta},\qquad
-\xi\otimes\bar\eta = \text{the operator } x\mapsto\langle x,\eta\rangle\xi .
+L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta,\qquad R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta},\qquad
+\zeta\otimes\bar\eta = \text{the operator } x\mapsto\langle x,\eta\rangle\zeta .
 $$
 
 Consequently the left multiplication acts on the first index and the right multiplication acts on the second, and $L_A$ and $R_B$ leave the set of rank-one operators invariant.
 
-*Proof.* $L_A(\xi\otimes\bar\eta)(x)=A(\langle x,\eta\rangle\xi)=\langle x,\eta\rangle A\xi$, which is $A\xi\otimes\bar\eta$; $R_B(\xi\otimes\bar\eta)(x)=B(\langle x,\eta\rangle\xi)=\langle x,\eta\rangle B\xi$, and one computes $\langle x,\eta\rangle B\xi=\langle x,B^*\eta\rangle\xi$, so the second factor receives $B^*$.
+*Proof.* $L_A(\zeta\otimes\bar\eta)(x)=A(\langle x,\eta\rangle\zeta)=\langle x,\eta\rangle A\zeta$, which is $A\zeta\otimes\bar\eta$; $R_B(\zeta\otimes\bar\eta)(x)=B(\langle x,\eta\rangle\zeta)=\langle x,\eta\rangle B\zeta$, and one computes $\langle x,\eta\rangle B\zeta=\langle x,B^*\eta\rangle\zeta$, so the second factor receives $B^*$.
 
 **Theorem (the span and the inner product).** The rank-one operators span a dense subspace of $S_2(H)$, and the Hilbert–Schmidt inner product of two of them is
 
 $$
-\langle \xi\otimes\bar\eta,\ \xi'\otimes\bar\eta'\rangle_{\mathrm{HS}}=\langle \xi,\xi'\rangle\,\langle\eta',\eta\rangle .
+\langle \zeta\otimes\bar\eta,\ \zeta'\otimes\bar\eta'\rangle_{\mathrm{HS}}=\langle \zeta,\zeta'\rangle\,\langle\eta',\eta\rangle .
 $$
 
-Hence every $T\in S_2(H)$ has a norm-convergent expansion $T=\sum_n s_n\,\xi_n\otimes\bar\eta_n$ with orthonormal families $(\xi_n)$, $(\eta_n)$ and singular values $s_n$, and the multiplications act termwise on the expansion.
+Hence every $T\in S_2(H)$ has a norm-convergent expansion $T=\sum_n s_n\,\zeta_n\otimes\bar\eta_n$ with orthonormal families $(\zeta_n)$, $(\eta_n)$ and singular values $s_n$, and the multiplications act termwise on the expansion.
 
-*Proof.* The pairings follow from $(\xi\otimes\bar\eta)(\xi'\otimes\bar\eta')^*=\xi\otimes\bar\eta\circ\eta'\otimes\bar\xi'$, whose trace is $\langle\xi,\xi'\rangle\langle\eta',\eta\rangle$; the expansion is the singular-value decomposition of the compact operator $T$ recalled from *Compact Operators*, and the density of the span is the density of the finite-rank operators in $S_2$.
+*Proof.* The pairings follow from $(\zeta\otimes\bar\eta)(\zeta'\otimes\bar\eta')^*=\zeta\otimes\bar\eta\circ\eta'\otimes\bar\zeta'$, whose trace is $\langle\zeta,\zeta'\rangle\langle\eta',\eta\rangle$; the expansion is the singular-value decomposition of the compact operator $T$ recalled from *Compact Operators*, and the density of the span is the density of the finite-rank operators in $S_2$.
 
 ## The Generated Algebra and Its Commutant
 
@@ -121,7 +121,7 @@ so the multiplication algebra is the commutant of each one-sided family. In fini
 
 ## Summary
 
-On the Hilbert–Schmidt space $S_2(H)$ of a Hilbert space the bounded operators of $H$ act by the left multiplication $L_A(T)=AT$ and the right multiplication $R_B(T)=TB$, both bounded with $\|L_A\|=\|A\|$ and $\|R_B\|=\|B\|$, and the two representations $A\mapsto L_A$, $B\mapsto R_B$ are isometric and multiplicative. The adjoints are $L_A^*=L_{A^*}$ and $R_B^*=R_{B^*}$, so each one-sided family is self-adjoint, and self-adjointness, normality, unitarity and positivity of a multiplication are exactly the corresponding properties of the element. The two families commute, and they act on the rank-one operators $\xi\otimes\bar\eta$ by shifting the two vectors, $L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$ and $R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$; since the rank-one operators span $S_2(H)$ densely, this decomposes every Hilbert–Schmidt operator into a singular-value expansion and reduces every computation to the rank-one case. The algebra generated by both families is the multiplication algebra $\mathcal{M}(H)$, the commutant of each one-sided family, equal to all of $B(S_2(H))$ in finite dimension.
+On the Hilbert–Schmidt space $S_2(H)$ of a Hilbert space the bounded operators of $H$ act by the left multiplication $L_A(T)=AT$ and the right multiplication $R_B(T)=TB$, both bounded with $\|L_A\|=\|A\|$ and $\|R_B\|=\|B\|$, and the two representations $A\mapsto L_A$, $B\mapsto R_B$ are isometric and multiplicative. The adjoints are $L_A^*=L_{A^*}$ and $R_B^*=R_{B^*}$, so each one-sided family is self-adjoint, and self-adjointness, normality, unitarity and positivity of a multiplication are exactly the corresponding properties of the element. The two families commute, and they act on the rank-one operators $\zeta\otimes\bar\eta$ by shifting the two vectors, $L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta$ and $R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta}$; since the rank-one operators span $S_2(H)$ densely, this decomposes every Hilbert–Schmidt operator into a singular-value expansion and reduces every computation to the rank-one case. The algebra generated by both families is the multiplication algebra $\mathcal{M}(H)$, the commutant of each one-sided family, equal to all of $B(S_2(H))$ in finite dimension.
 
 ## Summary of Notation
 
@@ -133,9 +133,9 @@ On the Hilbert–Schmidt space $S_2(H)$ of a Hilbert space the bounded operators
 | $\|L_A\|=\|A\|$, $\|R_B\|=\|B\|$ | isometric representations |
 | $L_A^*=L_{A^*}$, $R_B^*=R_{B^*}$ | adjoints for the Hilbert–Schmidt form |
 | $L_AR_B=R_BL_A$ | the two sides commute |
-| $\xi\otimes\bar\eta$ | rank-one operator, $x\mapsto\langle x,\eta\rangle\xi$ |
-| $L_A(\xi\otimes\bar\eta)=A\xi\otimes\bar\eta$ | action on the first index |
-| $R_B(\xi\otimes\bar\eta)=\xi\otimes\bar{B^*\eta}$ | action on the second index |
+| $\zeta\otimes\bar\eta$ | rank-one operator, $x\mapsto\langle x,\eta\rangle\zeta$ |
+| $L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta$ | action on the first index |
+| $R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta}$ | action on the second index |
 | $\mathcal{M}(H)$ | multiplication algebra, the commutant of each one-sided family |
 
 ## Further Reading

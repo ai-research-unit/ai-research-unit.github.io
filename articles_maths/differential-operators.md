@@ -50,31 +50,31 @@ The Cauchy–Riemann operator is complex, and it is the first-order operator who
 
 ## The Symbol
 
-**Definition.** The **symbol** of the operator $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ is the polynomial in $\xi \in \mathbb{R}^n$,
+**Definition.** The **symbol** of the operator $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ is the polynomial in $\zeta \in \mathbb{R}^n$,
 
 $$
-\sigma_L(x,\xi) = \sum_{|\alpha|\le m} a_\alpha(x)\,\xi^\alpha , \qquad \xi^\alpha = \xi_1^{\alpha_1}\cdots\xi_n^{\alpha_n} ,
+\sigma_L(x,\zeta) = \sum_{|\alpha|\le m} a_\alpha(x)\,\zeta^\alpha , \qquad \zeta^\alpha = \zeta_1^{\alpha_1}\cdots\zeta_n^{\alpha_n} ,
 $$
 
 and its **principal symbol** is the homogeneous part of degree $m$ alone,
 
 $$
-\sigma_m(x,\xi) = \sum_{|\alpha| = m} a_\alpha(x)\,\xi^\alpha .
+\sigma_m(x,\zeta) = \sum_{|\alpha| = m} a_\alpha(x)\,\zeta^\alpha .
 $$
 
-The symbol is a function of $x$ and of the frequency vector $\xi$; it is the total symbol when lower-order terms are kept. The correspondence $L \leftrightarrow \sigma_L$ is one to one, because the coefficient $a_\alpha$ is recovered as the coefficient of $\xi^\alpha$, and the order of $L$ is the degree of $\sigma_L$ in $\xi$.
+The symbol is a function of $x$ and of the frequency vector $\zeta$; it is the total symbol when lower-order terms are kept. The correspondence $L \leftrightarrow \sigma_L$ is one to one, because the coefficient $a_\alpha$ is recovered as the coefficient of $\zeta^\alpha$, and the order of $L$ is the degree of $\sigma_L$ in $\zeta$.
 
-**Proposition (the symbol of a derivative is multiplication by $\xi$).** The symbol of the partial derivative $\partial/\partial x_i$ is $\sigma_{\partial/\partial x_i}(x,\xi) = \xi_i$, that of the identity is $1$, and that of the multiplication $M_a : u\mapsto a u$ is $\sigma_{M_a}(x,\xi) = a(x)$.
+**Proposition (the symbol of a derivative is multiplication by $\zeta$).** The symbol of the partial derivative $\partial/\partial x_i$ is $\sigma_{\partial/\partial x_i}(x,\zeta) = \zeta_i$, that of the identity is $1$, and that of the multiplication $M_a : u\mapsto a u$ is $\sigma_{M_a}(x,\zeta) = a(x)$.
 
-*Proof.* Each is read from the definition: the derivative brings the exponents of $\xi$ and the multiplication brings the coefficient.
+*Proof.* Each is read from the definition: the derivative brings the exponents of $\zeta$ and the multiplication brings the coefficient.
 
 **Theorem (the symbol of a composition).** Let $L_1$ and $L_2$ have symbols $\sigma_1$ and $\sigma_2$ and orders $m_1$ and $m_2$. Then the symbol of the composition is
 
 $$
-\boxed{\;\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi)\;} ,
+\boxed{\;\sigma_{L_1L_2}(x,\zeta) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\zeta^\gamma\,\sigma_1(x,\zeta)\,\partial/\partial x^\gamma\,\sigma_2(x,\zeta)\;} ,
 $$
 
-the sum being finite because $\partial/\partial\xi^\gamma\,\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\xi)\sigma_{m_2}(x,\xi)$ of the principal symbols.
+the sum being finite because $\partial/\partial\zeta^\gamma\,\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\zeta)\sigma_{m_2}(x,\zeta)$ of the principal symbols.
 
 *Proof.* It is enough to verify the identity for two monomials $a\,\partial^\alpha$ and $b\,\partial^\beta$ and to sum. By the Leibniz rule,
 
@@ -82,23 +82,23 @@ $$
 \partial^\alpha(b\,\partial^\beta u) = \sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}\partial^{\alpha-\gamma}b\,\partial^{\beta+\gamma}u ,
 $$
 
-so the symbol of the composition is $\sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}a\,\partial^{\alpha-\gamma}b\,\xi^{\beta+\gamma}$. On the other side, $\partial/\partial\xi^\gamma (\xi^\alpha) = \frac{\alpha!}{(\alpha-\gamma)!}\xi^{\alpha-\gamma}$ when $\gamma\le\alpha$ and $0$ otherwise, and $\partial/\partial x^\gamma(\xi^\beta) = 0$ unless $\gamma=0$; hence for a general pair the right-hand side is $\sum_\gamma\frac{1}{\gamma!}\bigl(\partial/\partial\xi^\gamma\,\sum_\alpha a_\alpha\xi^\alpha\bigr)\bigl(\partial/\partial x^\gamma\,\sum_\beta b_\beta\xi^\beta\bigr) = \sum_{\alpha,\beta}\sum_{\gamma\le\alpha}\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}a_\alpha\partial^{\alpha-\gamma}b_\beta\,\xi^{\beta+\gamma}$, whose binomial factor $\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}$ is exactly the coefficient found above. The principal part is the term with $\gamma=0$.
+so the symbol of the composition is $\sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}a\,\partial^{\alpha-\gamma}b\,\zeta^{\beta+\gamma}$. On the other side, $\partial/\partial\zeta^\gamma (\zeta^\alpha) = \frac{\alpha!}{(\alpha-\gamma)!}\zeta^{\alpha-\gamma}$ when $\gamma\le\alpha$ and $0$ otherwise, and $\partial/\partial x^\gamma(\zeta^\beta) = 0$ unless $\gamma=0$; hence for a general pair the right-hand side is $\sum_\gamma\frac{1}{\gamma!}\bigl(\partial/\partial\zeta^\gamma\,\sum_\alpha a_\alpha\zeta^\alpha\bigr)\bigl(\partial/\partial x^\gamma\,\sum_\beta b_\beta\zeta^\beta\bigr) = \sum_{\alpha,\beta}\sum_{\gamma\le\alpha}\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}a_\alpha\partial^{\alpha-\gamma}b_\beta\,\zeta^{\beta+\gamma}$, whose binomial factor $\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}$ is exactly the coefficient found above. The principal part is the term with $\gamma=0$.
 
-**Example.** For $L_1 = \partial/\partial x$ and $L_2 = M_a$ on $\mathbb{R}$, the composition is $\partial/\partial x a = a\,\partial/\partial x + a'$, whose symbol is $a(x)\xi + a'(x)$; the formula gives $\xi\cdot a + 1\cdot a'$, the same. For $L_1=L_2=\partial/\partial x$ only the terms $\gamma=0$ and $\gamma=1$ contribute and the symbol is $\xi^2$, as it must be.
+**Example.** For $L_1 = \partial/\partial x$ and $L_2 = M_a$ on $\mathbb{R}$, the composition is $\partial/\partial x a = a\,\partial/\partial x + a'$, whose symbol is $a(x)\zeta + a'(x)$; the formula gives $\zeta\cdot a + 1\cdot a'$, the same. For $L_1=L_2=\partial/\partial x$ only the terms $\gamma=0$ and $\gamma=1$ contribute and the symbol is $\zeta^2$, as it must be.
 
 **Definition.** The operator $L$ is **elliptic** at $x$ if its principal symbol does not vanish away from the origin,
 
 $$
-\sigma_m(x,\xi)\neq0 \qquad \text{for every } \xi\in\mathbb{R}^n,\ \xi\neq0 ,
+\sigma_m(x,\zeta)\neq0 \qquad \text{for every } \zeta\in\mathbb{R}^n,\ \zeta\neq0 ,
 $$
 
-and **elliptic on $\Omega$** if it is elliptic at every point of $\Omega$. The **characteristic set** of $L$ at $x$ is the zero set $\{\xi : \sigma_m(x,\xi)=0\}$ of the principal symbol, and a vector in it is a **characteristic vector**. For a real principal symbol the equation $\sigma_m(x,\xi)=0$ is the characteristic equation of *Partial Differential Equations*.
+and **elliptic on $\Omega$** if it is elliptic at every point of $\Omega$. The **characteristic set** of $L$ at $x$ is the zero set $\{\zeta : \sigma_m(x,\zeta)=0\}$ of the principal symbol, and a vector in it is a **characteristic vector**. For a real principal symbol the equation $\sigma_m(x,\zeta)=0$ is the characteristic equation of *Partial Differential Equations*.
 
-**Proposition (the two model cases).** The Laplacian $\Delta$ is elliptic, with $\sigma_2(x,\xi) = |\xi|^2$; the wave operator $\Box = \partial^2/\partial t^2-\Delta$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\xi : \xi_t^2 = |\xi_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.
+**Proposition (the two model cases).** The Laplacian $\Delta$ is elliptic, with $\sigma_2(x,\zeta) = |\zeta|^2$; the wave operator $\Box = \partial^2/\partial t^2-\Delta$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\zeta : \zeta_t^2 = |\zeta_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.
 
-*Proof.* For the Laplacian, $\sigma_2(x,\xi) = \sum_i\xi_i^2$, which vanishes only at $\xi=0$; for the wave operator, $\sigma_2(x,\xi) = \xi_t^2 - |\xi_x|^2$, whose zero set is the stated cone; the product statement is the multiplicativity of the principal symbol and the fact that a product of nonzero complex numbers is nonzero.
+*Proof.* For the Laplacian, $\sigma_2(x,\zeta) = \sum_i\zeta_i^2$, which vanishes only at $\zeta=0$; for the wave operator, $\sigma_2(x,\zeta) = \zeta_t^2 - |\zeta_x|^2$, whose zero set is the stated cone; the product statement is the multiplicativity of the principal symbol and the fact that a product of nonzero complex numbers is nonzero.
 
-The symbol is defined on the frequencies at a point; the invariant reading, in which $\xi$ is a covector and the symbol lives on the cotangent bundle, is not available until the manifold is introduced, and it is *Differential Operators on a Manifold* that gives it. What the symbol decides in the flat setting — the classification of a second-order operator and the existence of a parametrix in the elliptic case — is used in *Partial Differential Equations* and *Distributions and Fundamental Solutions* respectively, and is not repeated here.
+The symbol is defined on the frequencies at a point; the invariant reading, in which $\zeta$ is a covector and the symbol lives on the cotangent bundle, is not available until the manifold is introduced, and it is *Differential Operators on a Manifold* that gives it. What the symbol decides in the flat setting — the classification of a second-order operator and the existence of a parametrix in the elliptic case — is used in *Partial Differential Equations* and *Distributions and Fundamental Solutions* respectively, and is not repeated here.
 
 ## The Transpose and the Formal Adjoint
 
@@ -185,7 +185,7 @@ The distinction between the expression and the operator is the one the rest of t
 
 ## Summary
 
-A differential equation is read through its operator $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ on an open set of $\mathbb{R}^n$, an expression that is linear and local and is determined by its coefficient family. Its order is the highest number of derivatives, its principal part the sum of the terms of highest order, and its symbol the polynomial $\sigma_L(x,\xi)=\sum_{|\alpha|\le m}a_\alpha(x)\xi^\alpha$ whose degree is the order and whose top part is the principal symbol. The symbol composes by the Leibniz rule, $\sigma_{L_1L_2}=\sum_\gamma\frac{1}{\gamma!}\partial^\gamma_\xi\sigma_1\,\partial^\gamma_x\sigma_2$, with the product of the principal symbols as its principal part, and the operator is elliptic when its principal symbol vanishes only at $\xi=0$; the Laplacian is elliptic with principal symbol $|\xi|^2$, and the wave operator is not, its characteristic set being the cone $\xi_t^2=|\xi|^2$.
+A differential equation is read through its operator $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ on an open set of $\mathbb{R}^n$, an expression that is linear and local and is determined by its coefficient family. Its order is the highest number of derivatives, its principal part the sum of the terms of highest order, and its symbol the polynomial $\sigma_L(x,\zeta)=\sum_{|\alpha|\le m}a_\alpha(x)\zeta^\alpha$ whose degree is the order and whose top part is the principal symbol. The symbol composes by the Leibniz rule, $\sigma_{L_1L_2}=\sum_\gamma\frac{1}{\gamma!}\partial^\gamma_\zeta\sigma_1\,\partial^\gamma_x\sigma_2$, with the product of the principal symbols as its principal part, and the operator is elliptic when its principal symbol vanishes only at $\zeta=0$; the Laplacian is elliptic with principal symbol $|\zeta|^2$, and the wave operator is not, its characteristic set being the cone $\zeta_t^2=|\zeta|^2$.
 
 The transpose $L^{t}=\sum(-1)^{|\alpha|}\partial^\alpha(a_\alpha\,\cdot\,)$ and the formal adjoint $L^{\dagger}=\sum(-1)^{|\alpha|}\partial^\alpha(\bar a_\alpha\,\cdot\,)$ are the operators defined by the integration by parts of $\int (Lu)v$ and $\int (Lu)\bar v$ against compactly supported test functions, and they are characterised by those identities. The formation of the formal adjoint is an involution, it reverses products and is additive, and an operator is formally self-adjoint when it equals it: the Laplacian and the real divergence form with symmetric matrix are, the first derivative and the heat operator are not. The formal adjoint is an expression and not yet an operator adjoint; the passage requires the choice of a domain, and it is the domain and not the expression that decides self-adjointness, the maximal realisation of $-\Delta$ on a bounded domain having distinct self-adjoint restrictions given by distinct boundary conditions.
 
@@ -198,9 +198,9 @@ The transpose $L^{t}=\sum(-1)^{|\alpha|}\partial^\alpha(a_\alpha\,\cdot\,)$ and 
 | $a_\alpha$ | Coefficient of the derivative $\partial^\alpha$ |
 | $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ | Linear differential operator of order at most $m$ |
 | $m$ | Order of $L$ |
-| $\sigma_L(x,\xi)$ | Symbol of $L$, $\sum_{|\alpha|\le m}a_\alpha(x)\xi^\alpha$ |
-| $\sigma_m(x,\xi)$ | Principal symbol, the terms with $|\alpha|=m$ alone |
-| elliptic | $\sigma_m(x,\xi)\neq0$ for every $\xi\neq0$ |
+| $\sigma_L(x,\zeta)$ | Symbol of $L$, $\sum_{|\alpha|\le m}a_\alpha(x)\zeta^\alpha$ |
+| $\sigma_m(x,\zeta)$ | Principal symbol, the terms with $|\alpha|=m$ alone |
+| elliptic | $\sigma_m(x,\zeta)\neq0$ for every $\zeta\neq0$ |
 | characteristic set | the zero set of the principal symbol at $x$ |
 | $L^{t}$, $L^{\dagger}$ | Transpose and formal adjoint of $L$ |
 | $\langle u,v\rangle = \int_\Omega u\bar v\,dx$ | Hermitian pairing, linear in the first argument |

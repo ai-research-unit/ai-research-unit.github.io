@@ -245,7 +245,7 @@ $$
 Right multiplication by a unit is an automorphism of the left module $\mathbb{B}$, so it carries minimal left ideals to minimal left ideals. On the parameter it is the natural action on lines: for $L=\mathbb{B}\tilde\Pi$ with $\ker\tilde\Pi=\ell$ one has $L\tilde Q^{-1}=\mathbb{B}(\tilde\Pi\tilde Q^{-1})$ and $\ker(\tilde\Pi\tilde Q^{-1})=\tilde Q\ell$. Left multiplication cannot serve as the action, because $\tilde Q\,\mathbb{B}\tilde\Pi=\mathbb{B}\tilde\Pi$ for every unit $\tilde Q$: it fixes every left ideal setwise, and the parametrisation would be trivial. In the model the action is that of the matrix $P=\mathsf M_2(\tilde Q)$ on the lines of $\mathbb{C}^2$,
 
 $$
-\tilde Q\cdot[\xi]=[P\xi].
+\tilde Q\cdot[\zeta]=[P\zeta].
 $$
 
 **The kernel is the centre.** An element acts trivially on every line exactly when every vector of $S$ is carried to a multiple of itself, and a matrix with that property is scalar; hence the kernel of the action is $\mathbb{C}^\times e_t$. The action therefore factors through
@@ -256,10 +256,10 @@ $$
 
 the last isomorphism being that of *Biquaternion Automorphisms and Derivations*. On idempotents the action reads $\tilde\Pi\mapsto\tilde Q\tilde\Pi\tilde Q^{-1}$, which is the conjugation action of the automorphism group; the two descriptions agree because $\mathbb{B}\tilde\Pi\tilde Q^{-1}=\mathbb{B}(\tilde Q\tilde\Pi\tilde Q^{-1})$, using $\mathbb{B}\tilde Q=\mathbb{B}$.
 
-**The chart and the Möbius formula.** Write a line by the column $\xi=(z,1)^{\mathsf T}$, with $z=\xi_1/\xi_2$, and let $P=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. Then
+**The chart and the Möbius formula.** Write a line by the column $\zeta=(z,1)^{\mathsf T}$, with $z=\zeta_1/\zeta_2$, and let $P=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. Then
 
 $$
-P\xi=\begin{pmatrix}az+b\\ cz+d\end{pmatrix},
+P\zeta=\begin{pmatrix}az+b\\ cz+d\end{pmatrix},
 \qquad
 z'=\frac{az+b}{cz+d},
 $$

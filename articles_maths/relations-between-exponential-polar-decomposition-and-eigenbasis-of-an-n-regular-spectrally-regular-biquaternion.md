@@ -11,9 +11,9 @@ $$
 \qquad
 \lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2},
 \quad
-\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi),
+\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ}),
 \quad
-\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
+\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
 with $\lambda_\pm$ the complex eigenvalues and $\tilde\Pi_\pm$ the eigenprojections. The square root is the branch fixed by the labelling of the two eigenvalues; the other branch exchanges $\lambda_+$ with $\lambda_-$ and $\tilde\Pi_+$ with $\tilde\Pi_-$. The **exponential polar decomposition** of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* writes every invertible $\tilde Q$ as
@@ -56,7 +56,7 @@ This is one complex equation for the three real data $(\psi,\theta,\vec u_{\math
 |---|---|
 | Element | $\tilde Q=Q_te_t+\vec Q$ |
 | Eigenvalues | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ |
-| Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$; variable |
+| Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$; variable |
 | Polar parameters | $r>0$, $\alpha$, $\psi\ge0$, $\theta\in[0,2\pi]$, axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
 | Scalar factor from eigenvalues | $r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$, $\alpha=\tfrac12\operatorname{Arg}(\lambda_+\lambda_-)$ |
 | Unit factor from eigenvalues | $\lambda_\pm/(re^{i\alpha})=U_t\pm i(\vec U\cdot\vec U)^{1/2}$ |
@@ -82,12 +82,12 @@ The eigenvalues are distinct exactly when $Q_x^2+Q_y^2+Q_z^2\neq0$. In that case
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,
 \qquad
-\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi),
+\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ}),
 \qquad
-\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
+\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec\Xi$, and $\vec\Xi=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec{Ζ}$, and $\vec{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -95,7 +95,7 @@ with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They de
 | Sum | $\lambda_++\lambda_-=2Q_t$ |
 | Product | $\lambda_+\lambda_-=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff Q_x^2+Q_y^2+Q_z^2\neq0$ |
-| Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ |
+| Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ |
 | Decomposition | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ in the distinct case |
 
 ### The Exponential Polar Decomposition
@@ -289,13 +289,13 @@ $$
 \tilde\Pi_\pm
 =\frac{\tilde U-\bigl(U_t\mp i(\vec U\cdot\vec U)^{1/2}\bigr)e_t}
 {\pm2i\bigl(\vec U\cdot\vec U\bigr)^{1/2}}
-=\frac12(e_t\pm\vec\Xi),
+=\frac12(e_t\pm\vec{Ζ}),
 \qquad
-\vec\Xi=-i\frac{\vec Q}{\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}}
+\vec{Ζ}=-i\frac{\vec Q}{\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}}
 =-i\frac{\vec U}{\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 $$
 
-where $U_x,U_y,U_z$ are the vector coefficients of $\tilde U$. The formula requires $\vec U\cdot\vec U\neq0$; when the denominator vanishes there is no eigenprojection. The eigenprojections depend only on $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not on the scalar factor $re^{i\alpha}$. In the polar word they are therefore functions of $(\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$, and at the boundary they become the idempotents of the pure root $\vec\Xi$.
+where $U_x,U_y,U_z$ are the vector coefficients of $\tilde U$. The formula requires $\vec U\cdot\vec U\neq0$; when the denominator vanishes there is no eigenprojection. The eigenprojections depend only on $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not on the scalar factor $re^{i\alpha}$. In the polar word they are therefore functions of $(\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$, and at the boundary they become the idempotents of the pure root $\vec{Ζ}$.
 
 The two decompositions see the unit factor in two different ways:
 
@@ -451,9 +451,9 @@ Then
 $$
 \lambda_\pm=r e^{i\alpha}\Bigl(U_t\pm i\bigl(\vec U\cdot\vec U\bigr)^{1/2}\Bigr),
 \qquad
-\vec\Xi=-i\frac{\vec U}{\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
+\vec{Ζ}=-i\frac{\vec U}{\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 \qquad
-\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec\Xi\bigr),
+\tilde\Pi_\pm=\frac12\bigl(e_t\pm\vec{Ζ}\bigr),
 $$
 
 and
@@ -485,14 +485,14 @@ The denominator $(\vec U\cdot\vec U)^{1/2}$ is the only obstruction: when it van
 |---|---|---|---|
 | $\lambda_+\lambda_-$ | scale and phase | $r e^{i\alpha}=(\lambda_+\lambda_-)^{1/2}$ | — |
 | $\lambda_\pm/(r e^{i\alpha})$ | the two eigenvalues of $\tilde U$ | $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ | one real degree in $\psi,\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and three in the pair of axes |
-| $\tilde\Pi_\pm$, equivalently $\vec\Xi$ | the eigendirections of $\tilde U$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the two axis directions separately |
+| $\tilde\Pi_\pm$, equivalently $\vec{Ζ}$ | the eigendirections of $\tilde U$ | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the two axis directions separately |
 | $\lambda_\pm$ and $\tilde\Pi_\pm$ | the whole unit factor | $\tilde U=\dfrac{\lambda_+}{r e^{i\alpha}}\tilde\Pi_+ +\dfrac{\lambda_-}{r e^{i\alpha}}\tilde\Pi_-$ | — |
 | $\tilde U$ | boost and rotor | $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | — |
 | $\tilde U_{\mathrm b}$ | rapidity and boost axis | $\psi=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\psi/2))$ | axis if $\psi=0$ |
 | $\tilde u_{\mathrm r}$ | rotor angle and rotor axis | $\theta=2\arccos(\operatorname{Sc}\tilde u_{\mathrm r})$, $\vec u_{\mathrm r}=\operatorname{Vect}\tilde u_{\mathrm r}/\sin(\theta/2)$ | axis if $\theta\in\{0,2\pi\}$ |
 | $\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the eigenvalues and eigenprojections | the formulas of §*The Spectral Data from the Polar Factors* | — |
 
-Read down the table for the direction spectral to polar and up for the direction polar to spectral. The eigenvalues carry the scalar factor and the two eigenvalues of the unit factor; the eigenprojections carry the eigendirections. The angles and axes are a second coordinate system on the same six real dimensions: $U_t$ (two real) and $\vec\Xi$ (four real) on one side, $\psi,\theta$ and two unit vectors (six real) on the other. The nonlinear dictionary is the content of the scalar-part formula and of the Cartan square root.
+Read down the table for the direction spectral to polar and up for the direction polar to spectral. The eigenvalues carry the scalar factor and the two eigenvalues of the unit factor; the eigenprojections carry the eigendirections. The angles and axes are a second coordinate system on the same six real dimensions: $U_t$ (two real) and $\vec{Ζ}$ (four real) on one side, $\psi,\theta$ and two unit vectors (six real) on the other. The nonlinear dictionary is the content of the scalar-part formula and of the Cartan square root.
 
 ### The Parallel-Axis Case
 
@@ -683,7 +683,7 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 | Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $r\to0$, $\psi\to\infty$, $r e^{\psi/2}\to R$ |
 | Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
-For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Idempotents* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
+For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Idempotents* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
 
 The polar word reaches the boundary with $r\to0$ and $\psi\to\infty$ at the rate $r e^{\psi/2}\to R$ with $0<R<\infty$. The limit is
 
@@ -867,7 +867,7 @@ The table collects the formulas in one place.
 
 ### The Dictionary Across the Three Algebras
 
-The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\alpha})$ is the unit factor and $\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.
+The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\alpha})$ is the unit factor and $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
@@ -894,8 +894,8 @@ Read down a column for one algebra and across a row for one concept. The first t
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion |
 | $Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |
 | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ | the eigenvalues |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections |
-| $\vec\Xi=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ | the pure root of $+1$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections |
+| $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ | the pure root of $+1$ |
 | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=\lambda_+\lambda_-$ | the reduced product |
 | $r=\bigl\lvert Q_t^2+Q_x^2+Q_y^2+Q_z^2\bigr\rvert^{1/2}$ | the scale |
 | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | the phase |

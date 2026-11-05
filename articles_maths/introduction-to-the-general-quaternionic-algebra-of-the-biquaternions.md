@@ -250,7 +250,7 @@ $$
 
 **Proof.** A square lies in $\mathbb{C}e_t$ by the preceding subsection, so an idempotent lies in $\mathbb{C}e_t$, say $\tilde Q=Q_te_t$; the equation $\tilde Q\star\tilde Q=\tilde Q$ then reads $Q_t^2e_t=Q_te_t$, that is $Q_t\in\{0,1\}$.
 
-**Remark.** The multiplication therefore has only the two trivial idempotents, and it has them by the same computation that shows the square to be a scalar. The nontrivial idempotents of the algebra, the elements $\tfrac12(e_t+\xi i)$ with $\xi$ a root of $-1$ of *Idempotents of the General Plain Algebra*, are not idempotent here, and they fail to be so in the strongest way: being zero divisors (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*), they have $\sum_\mu Q_\mu^2=0$, so by the proposition below their squares in the multiplication vanish rather than returning the elements themselves. The contrast with the sesquilinear reading is sharp: the fourth product of the four has a two-parameter family of idempotents, and it is the subject of *Introduction to the General Quaternionic Sesqualgebra*.
+**Remark.** The multiplication therefore has only the two trivial idempotents, and it has them by the same computation that shows the square to be a scalar. The nontrivial idempotents of the algebra, the elements $\tfrac12(e_t+\zeta i)$ with $\zeta$ a root of $-1$ of *Idempotents of the General Plain Algebra*, are not idempotent here, and they fail to be so in the strongest way: being zero divisors (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*), they have $\sum_\mu Q_\mu^2=0$, so by the proposition below their squares in the multiplication vanish rather than returning the elements themselves. The contrast with the sesquilinear reading is sharp: the fourth product of the four has a two-parameter family of idempotents, and it is the subject of *Introduction to the General Quaternionic Sesqualgebra*.
 
 ### The Nilpotents and the Zero Divisors
 
@@ -360,5 +360,5 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the associative unital reading of the plain product, its centre and its presentation.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the units and the invertibility criterion.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the zero divisor cone, the two families of zero divisors and the idempotents that lie in it.
-- [Idempotents](idempotents.html), for the idempotents $\tfrac12(e_t+\xi i)$ of the algebra, which are not idempotent for the multiplication of this article.
+- [Idempotents](idempotents.html), for the idempotents $\tfrac12(e_t+\zeta i)$ of the algebra, which are not idempotent for the multiplication of this article.
 - [Non-Associative Algebras and the Property Ladder](non-associative-algebras-and-the-property-ladder.html), for the alternative, flexible and degree-three identities and the place of this multiplication on the ladder.

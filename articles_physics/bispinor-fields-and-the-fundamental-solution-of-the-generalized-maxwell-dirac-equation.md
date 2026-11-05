@@ -143,7 +143,7 @@ The source draws the right conclusion from this — that the additional term "si
 
 ## The Homogeneous Equation and the Class Question
 
-The source's Theorem 5 states that for $\operatorname{Re}m \neq 0$ the homogeneous KGFSh equation has only the zero solution for $\tau \geq 0$, and proves it by Fourier transformation: the symbol $\xi^2 - (\omega + im)^2$ does not vanish for real $(\omega,\vec\xi)$, so the transform vanishes and the solution does. The symbolic step is correct, and the conclusion is correct **in the class of solutions whose Fourier transform exists**. As a statement about all solutions it is false, and the counterexample is the substitution identity of two sections above:
+The source's Theorem 5 states that for $\operatorname{Re}m \neq 0$ the homogeneous KGFSh equation has only the zero solution for $\tau \geq 0$, and proves it by Fourier transformation: the symbol $\zeta^2 - (\omega + im)^2$ does not vanish for real $(\omega,\vec\zeta)$, so the transform vanishes and the solution does. The symbolic step is correct, and the conclusion is correct **in the class of solutions whose Fourier transform exists**. As a statement about all solutions it is false, and the counterexample is the substitution identity of two sections above:
 
 $$
 u(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(-m\tau)\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mp |\vec k|\tau)) ,
@@ -158,7 +158,7 @@ The d'Alembertian article states the same dichotomy from the corpus's side in th
 For the corpus's real $\kappa = \rho$, that is for the source's $m = i\rho$, the homogeneous solutions not only exist but are the source's producing family,
 
 $$
-\psi_\rho(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(-i\rho\tau)\int_{\mathbb{R}^3} f(\vec\xi)\,\exp(i(\vec\xi\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \pm |\vec\xi|\tau))\,d^3\xi ,
+\psi_\rho(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(-i\rho\tau)\int_{\mathbb{R}^3} f(\vec\zeta)\,\exp(i(\vec\zeta\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \pm |\vec\zeta|\tau))\,d^3\zeta ,
 \qquad f \in L^1(\mathbb{R}^3),
 $$
 
@@ -202,16 +202,16 @@ The plane harmonic waves are
 
 $$
 \boxed{\;
-\psi^{\pm}_{\vec\xi}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(i(\vec\xi\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - (\rho \pm |\vec\xi|)\tau)) ,
+\psi^{\pm}_{\vec\zeta}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(i(\vec\zeta\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - (\rho \pm |\vec\zeta|)\tau)) ,
 \qquad \Longrightarrow \qquad
-\omega = \rho \pm |\vec\xi|\;},
+\omega = \rho \pm |\vec\zeta|\;},
 $$
 
-and the dispersion relation is **exact and linear**. It was checked against its alternative: the linear law solves the equation at the difference-scheme floor, while the relativistic form $\omega^2 = \vec\xi^2 + \rho^2$ gives a residual $7.4$, four million times larger. Three consequences deserve to be stated plainly.
+and the dispersion relation is **exact and linear**. It was checked against its alternative: the linear law solves the equation at the difference-scheme floor, while the relativistic form $\omega^2 = \vec\zeta^2 + \rho^2$ gives a residual $7.4$, four million times larger. Three consequences deserve to be stated plainly.
 
-- **The group velocity is exactly $1$ on both branches**, $|d\omega/d|\vec\xi|| = 1$ in units of $c$, at every wave number. Nothing in this family transports a signal faster than the massless speed, and the family has no anomalous dispersion.
-- **The phase velocity is not**, $V = \omega/|\vec\xi| = 1 \pm \rho/|\vec\xi|$. It is superluminal on the upper branch, subluminal on the lower, and the source's "supersonic / subsonic" language is a statement about this phase velocity. The corpus's articles on superluminal phase velocities in other settings make the same point; it is worth repeating here that a superluminal phase velocity is not a superluminal signal, and that the source's own group-velocity content is c.
-- **There is a mode of zero phase velocity.** At $|\vec\xi| = \rho$ the two branches have $\omega = 2\rho$ and $\omega = 0$: the second is a spatial pattern that does not oscillate in time, and the source's section on static bispinors is that mode. A "mass" $\rho$ that shifts the light cone rather than curving it produces, at one particular wave number, a frozen field.
+- **The group velocity is exactly $1$ on both branches**, $|d\omega/d|\vec\zeta|| = 1$ in units of $c$, at every wave number. Nothing in this family transports a signal faster than the massless speed, and the family has no anomalous dispersion.
+- **The phase velocity is not**, $V = \omega/|\vec\zeta| = 1 \pm \rho/|\vec\zeta|$. It is superluminal on the upper branch, subluminal on the lower, and the source's "supersonic / subsonic" language is a statement about this phase velocity. The corpus's articles on superluminal phase velocities in other settings make the same point; it is worth repeating here that a superluminal phase velocity is not a superluminal signal, and that the source's own group-velocity content is c.
+- **There is a mode of zero phase velocity.** At $|\vec\zeta| = \rho$ the two branches have $\omega = 2\rho$ and $\omega = 0$: the second is a spatial pattern that does not oscillate in time, and the source's section on static bispinors is that mode. A "mass" $\rho$ that shifts the light cone rather than curving it produces, at one particular wave number, a frozen field.
 
 The source's interpretation of the same formulas is the *shifted cone*, which the d'Alembertian article already verified: the symbol $\bigl(\omega/c - \kappa\bigr)^2 - \|\vec k\|^2$ vanishes on $\omega/c = \kappa \pm \|\vec k\|$, and with $\kappa = \rho$ that is the linear law above. The corpus should be explicit that this is a shift of the massless cone, not the corpus's mass shell: the corpus's on-shell condition is the hyperboloid $\langle\tilde{P}\rangle_{\natural} = -\mu^2$, and a family of plane waves shifted linearly has no hyperboloid and no threshold. The programme's "mass" is a frequency offset, and the corpus's is a curvature; the two agree only at $\rho = 0$.
 
@@ -221,33 +221,33 @@ The source's most quotable result is about the amplitude of the plane-wave bispi
 
 $$
 \begin{aligned}
-\bigl(\nabla^\pm + i\rho\bigr)\psi^{\pm}_{\vec\xi} &= \mp\,|\vec\xi|\,\bigl(i + \hat\xi\bigr)\psi^{\pm}_{\vec\xi} ,\\[2pt]
-\bigl(\nabla^\pm + i\rho\bigr)\psi^{\mp}_{\vec\xi} &= \pm\,|\vec\xi|\,\bigl(i - \hat\xi\bigr)\psi^{\mp}_{\vec\xi} ,
+\bigl(\nabla^\pm + i\rho\bigr)\psi^{\pm}_{\vec\zeta} &= \mp\,|\vec\zeta|\,\bigl(i + \hat\zeta\bigr)\psi^{\pm}_{\vec\zeta} ,\\[2pt]
+\bigl(\nabla^\pm + i\rho\bigr)\psi^{\mp}_{\vec\zeta} &= \pm\,|\vec\zeta|\,\bigl(i - \hat\zeta\bigr)\psi^{\mp}_{\vec\zeta} ,
 \end{aligned}
-\qquad \hat\xi = \vec\xi/|\vec\xi| ,
+\qquad \hat\zeta = \vec\zeta/|\vec\zeta| ,
 $$
 
-the two signs being independent, each line carrying one sign throughout: the sign in $\nabla$ is the sign in the bracket, and the branch label on $\psi$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\xi|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\xi|\,i\tilde\Pi_2(\hat\xi)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\hat\xi)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\xi|\,i\tilde\Pi_1(\hat\xi)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
+the two signs being independent, each line carrying one sign throughout: the sign in $\nabla$ is the sign in the bracket, and the branch label on $\psi$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\zeta|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\zeta|\,i\tilde\Pi_2(\hat\zeta)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\hat\zeta)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\zeta|\,i\tilde\Pi_1(\hat\zeta)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
 
 $$
-S^{\pm}_{\vec\xi} = \tfrac{1}{2}\bigl(i + \hat\xi\bigr)\,\psi^{\pm}_{\vec\xi} ,
+S^{\pm}_{\vec\zeta} = \tfrac{1}{2}\bigl(i + \hat\zeta\bigr)\,\psi^{\pm}_{\vec\zeta} ,
 $$
 
 and the identification is exact and worth writing without a factor of $i$ out of place:
 
 $$
 \boxed{\;
-\tfrac{1}{2}\bigl(i + \hat\xi\bigr) = i\,\tilde{\Pi}_2(\hat\xi) ,
+\tfrac{1}{2}\bigl(i + \hat\zeta\bigr) = i\,\tilde{\Pi}_2(\hat\zeta) ,
 \qquad
 \tilde{\Pi}_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr)\;},
 $$
 
-where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent, the **pure state** of the informational sector, and $\vec u$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_t$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \hat\xi) = i\tilde{\Pi}_2(\hat\xi)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
+where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent, the **pure state** of the informational sector, and $\vec u$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_t$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \hat\zeta) = i\tilde{\Pi}_2(\hat\zeta)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
 
-1. **The harmonic bispinor lies in a Peirce carrier, a minimal left ideal here.** Since $S = i\tilde{\Pi}_2(\hat\xi)\psi$ and the phase $i\psi$ is central, $S \in \mathbb{B}\tilde{\Pi}_2(\hat\xi)$: checked as $S\tilde{\Pi}_2 = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
+1. **The harmonic bispinor lies in a Peirce carrier, a minimal left ideal here.** Since $S = i\tilde{\Pi}_2(\hat\zeta)\psi$ and the phase $i\psi$ is central, $S \in \mathbb{B}\tilde{\Pi}_2(\hat\zeta)$: checked as $S\tilde{\Pi}_2 = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
 2. **The amplitude is in the material sector.** $\tilde{\Pi}_2$ is Hermitian, $\tilde{\Pi}_2^{*} = \tilde{\Pi}_2$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
-3. **The harmonic bispinor is $N$-degenerate.** With the corpus's norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$, $\langle S\rangle_{\natural} = \tfrac14(i^2) + \tfrac14|\hat\xi|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either interpretation the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
-4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \hat\xi)\,\psi = \sqrt2\,i\,\tilde{\Pi}_2(\hat\xi)\,\psi$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
+3. **The harmonic bispinor is $N$-degenerate.** With the corpus's norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$, $\langle S\rangle_{\natural} = \tfrac14(i^2) + \tfrac14|\hat\zeta|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either interpretation the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
+4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \hat\zeta)\,\psi = \sqrt2\,i\,\tilde{\Pi}_2(\hat\zeta)\,\psi$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
 5. **The stationary family has the same structure.** For $B = B(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega\tau)$ the source sets $\nabla^\pm_\omega = \omega \pm \nabla$ and obtains the $\omega$-spinors
 
 $$
@@ -279,8 +279,8 @@ Established, and verified above by recomputation.
 1. The composition lemma $\nabla^-\nabla^+ = \nabla^+\nabla^- = \Box_{\text{s}}$, and the shifted square $\bigl(\nabla^\mp + m\bigr)\bigl(\nabla^\pm + m\bigr) = \Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau + m)^2 - \Delta$.
 2. The exponential-substitution identity, hence the fundamental solution of the KGFSh operator as $\exp(-m\tau)$ times the wave kernel, hence the **sharp, light-cone-supported kernel** with a $\delta$ profile — the source's Eq. (36), with the correction that both light-cone terms carry the common factor $\exp(-m\tau)$ and the advanced term therefore carries $\exp(+mR)$.
 3. The general solution of the inhomogeneous equation, $B = B_0 + (\nabla^\mp + m)(F * \psi_m)$, by the defining property of the kernel, with $B_0$ in the kernel of the first-order operator $(\nabla^\pm + m)$ — a space populated in both cases the programme treats, by plane waves on the shifted cone and by the singular solutions of the real-mass case, so that it is not the trivial space of the class question.
-4. The monogenic completion of a scalar potential into a bispinor, and the exact plane-wave family: the linear dispersion $\omega = \rho \pm |\vec\xi|$, unit group velocity, phase velocities $1 \pm \rho/|\vec\xi|$, and the stationary mode $\omega = 0$ at $|\vec\xi| = \rho$.
-5. The nullity of the harmonic bispinor's amplitude; its identity with $i\tilde{\Pi}_2(\hat\xi)$; its membership in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, a minimal left ideal here; and its placement in the material sector $\mathbb{M}_-$.
+4. The monogenic completion of a scalar potential into a bispinor, and the exact plane-wave family: the linear dispersion $\omega = \rho \pm |\vec\zeta|$, unit group velocity, phase velocities $1 \pm \rho/|\vec\zeta|$, and the stationary mode $\omega = 0$ at $|\vec\zeta| = \rho$.
+5. The nullity of the harmonic bispinor's amplitude; its identity with $i\tilde{\Pi}_2(\hat\zeta)$; its membership in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, a minimal left ideal here; and its placement in the material sector $\mathbb{M}_-$.
 6. The stationary route, the Helmholtz kernel with its exponent restored, and the $\omega$-spinors with the same null amplitude.
 
 Not established, or corrected in the source.
@@ -295,9 +295,9 @@ Not established, or corrected in the source.
 
 The immediate problem is set by the companion article. *The Biquaternion D'Alembertian and Its Green's Functions* had established the shifted gradient, the generalized Maxwell–Dirac equation, the Klein–Gordon–Fock–Schrödinger operator, its symbol and the convention crossing $\kappa = -im$, and had explicitly declined to state the source's fundamental solution because the text in hand could not be checked. The present article closes that gap from the source's later journal paper, whose text layer is usable, and it does so by verification rather than by transcription.
 
-The operator's square, $(\nabla^\mp+m)(\nabla^\pm+m) = (\partial/\partial\tau+m)^2-\Delta$, is a conjugation of the wave operator, $\exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$. That single identity gives everything in this article. It makes the fundamental solution $\exp(-m\tau)$ times the massless kernel, hence supported exactly on the light cone with a $\delta$ profile where the corpus's massive scalar kernel carries a Bessel tail inside the cone: the programme's first-order term buys Huygens' principle at the price of self-adjointness. It makes the general solution of the homogeneous equation $\exp(-m\tau)$ times an arbitrary wave, which is why the source's theorem that no non-trivial homogeneous solution exists for $\operatorname{Re}m \neq 0$ holds only in the tempered class, and why the counterexample is one line. And it makes the plane-wave family's dispersion exactly linear, $\omega = \rho \pm |\vec\xi|$: a shifted cone, not a curved mass shell, with unit group velocity, phase velocities $1 \pm \rho/|\vec\xi|$ and a stationary mode at $|\vec\xi| = \rho$.
+The operator's square, $(\nabla^\mp+m)(\nabla^\pm+m) = (\partial/\partial\tau+m)^2-\Delta$, is a conjugation of the wave operator, $\exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$. That single identity gives everything in this article. It makes the fundamental solution $\exp(-m\tau)$ times the massless kernel, hence supported exactly on the light cone with a $\delta$ profile where the corpus's massive scalar kernel carries a Bessel tail inside the cone: the programme's first-order term buys Huygens' principle at the price of self-adjointness. It makes the general solution of the homogeneous equation $\exp(-m\tau)$ times an arbitrary wave, which is why the source's theorem that no non-trivial homogeneous solution exists for $\operatorname{Re}m \neq 0$ holds only in the tempered class, and why the counterexample is one line. And it makes the plane-wave family's dispersion exactly linear, $\omega = \rho \pm |\vec\zeta|$: a shifted cone, not a curved mass shell, with unit group velocity, phase velocities $1 \pm \rho/|\vec\zeta|$ and a stationary mode at $|\vec\zeta| = \rho$.
 
-The bispinors carry the algebra's own content. The amplitude of a plane-wave bispinor is $\tfrac12(i+\hat\xi)$, which is $i\tilde{\Pi}_2(\hat\xi)$, the central phase times one of the corpus's rank-one Hermitian idempotents — a pure state of the informational sector. So the programme's harmonic bispinor lies in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, which is the minimal left ideal here; it is anti-Hermitian and therefore in the material sector $\mathbb{M}_-$, and it is null, hence a zero divisor, under the corpus's norm and under the source's pseudonorm alike. A bispinor of a "massive" first-order equation is an element of the null cone: that, and not the borrowed words *boson* and *lepton*, is what the algebra says. The normalisation the source states is off by $\sqrt2$, the static amplitude it prints does not follow from its own formula, and the exponent of its Helmholtz kernel has lost an $i$; the corpus records the corrections and keeps the structure.
+The bispinors carry the algebra's own content. The amplitude of a plane-wave bispinor is $\tfrac12(i+\hat\zeta)$, which is $i\tilde{\Pi}_2(\hat\zeta)$, the central phase times one of the corpus's rank-one Hermitian idempotents — a pure state of the informational sector. So the programme's harmonic bispinor lies in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, which is the minimal left ideal here; it is anti-Hermitian and therefore in the material sector $\mathbb{M}_-$, and it is null, hence a zero divisor, under the corpus's norm and under the source's pseudonorm alike. A bispinor of a "massive" first-order equation is an element of the null cone: that, and not the borrowed words *boson* and *lepton*, is what the algebra says. The normalisation the source states is off by $\sqrt2$, the static amplitude it prints does not follow from its own formula, and the exponent of its Helmholtz kernel has lost an $i$; the corpus records the corrections and keeps the structure.
 
 ## Summary of Notation
 
@@ -311,8 +311,8 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 | $\psi_m = \frac{\exp(-m\tau)}{4\pi R}\delta(\tau-R)$, $R=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | Retarded fundamental solution; the source's Eq. (36); supported on the cone |
 | $B = B_0 + (\nabla^\mp+m)(F*\psi_m)$ | General solution of the inhomogeneous equation, $B_0$ solving the first-order equation |
 | $\Psi_\rho = (\nabla^\mp + i\rho)\psi_\rho$ | Bispinor of the scalar potential $\psi_\rho$ (monogenic completion) |
-| $\omega = \rho \pm\lvert\vec\xi\rvert$ | Exact linear dispersion of the plane-wave family; unit group velocity |
-| $S^{\pm}_{\vec\xi} = \tfrac12(i+\hat\xi)\psi^{\pm}_{\vec\xi} = i\tilde{\Pi}_2(\hat\xi)\psi^{\pm}_{\vec\xi}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{M}_-$ |
+| $\omega = \rho \pm\lvert\vec\zeta\rvert$ | Exact linear dispersion of the plane-wave family; unit group velocity |
+| $S^{\pm}_{\vec\zeta} = \tfrac12(i+\hat\zeta)\psi^{\pm}_{\vec\zeta} = i\tilde{\Pi}_2(\hat\zeta)\psi^{\pm}_{\vec\zeta}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{M}_-$ |
 | $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | The corpus's idempotents: pure states, Hermitian, null |
 | $D_j$, $j=0,\dots,3$ | The source's $4\times4$ matrices: $D_0=I$, $D_j$ the matrix of left multiplication by $ie_j$; $D_j^2=I$ |
 | $\nabla^\pm_\omega = \omega \pm \nabla$, $k = \omega+\rho$ | Stationary (monochromatic) operators and wave number |

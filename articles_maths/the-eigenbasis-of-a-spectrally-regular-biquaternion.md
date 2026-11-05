@@ -6,7 +6,7 @@ The eigenbasis of a biquaternion is a basis of the algebra that depends on the b
 
 **Place among the Peirce decompositions.** This article is the regular particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisations below fix it.
 
-The construction has three steps. The root $\vec\Xi=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple
+The construction has three steps. The root $\vec{Ζ}=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple
 
 $$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
@@ -51,26 +51,26 @@ On $B^2=0$ the element is $Q_te_t+\vec Q$ with $\vec Q^2=0$. For $\vec Q\neq0$ i
 **Proposition (the root).** Let $B^2\neq0$ and
 
 $$
-\vec\Xi=-\frac{i\vec Q}{B}.
+\vec{Ζ}=-\frac{i\vec Q}{B}.
 $$
 
-Then $\vec\Xi$ is pure, $\vec\Xi^2=e_t$, and
+Then $\vec{Ζ}$ is pure, $\vec{Ζ}^2=e_t$, and
 
 $$
-\tilde Q=Q_te_t+iB\vec\Xi.
+\tilde Q=Q_te_t+iB\vec{Ζ}.
 $$
 
-*Proof.* Since $\vec Q^2=-B^2e_t$, one has $\vec\Xi^2=(-i)^2\vec Q^2/B^2=-(-B^2e_t)/B^2=e_t$. The element is pure because $\vec Q$ is pure. The last identity is $\vec Q=iB\vec\Xi$.
+*Proof.* Since $\vec Q^2=-B^2e_t$, one has $\vec{Ζ}^2=(-i)^2\vec Q^2/B^2=-(-B^2e_t)/B^2=e_t$. The element is pure because $\vec Q$ is pure. The last identity is $\vec Q=iB\vec{Ζ}$.
 
-The root is the vector part scaled to square $e_t$, up to the factor $-i$. It depends on $\vec Q$ only through its direction: replacing $\vec Q$ by $a\vec Q$ and $B$ by $aB$ leaves $\vec\Xi$ unchanged.
+The root is the vector part scaled to square $e_t$, up to the factor $-i$. It depends on $\vec Q$ only through its direction: replacing $\vec Q$ by $a\vec Q$ and $B$ by $aB$ leaves $\vec{Ζ}$ unchanged.
 
 ### The Idempotents
 
-**Theorem (the spectral idempotents).** With $\vec\Xi$ as above, put
+**Theorem (the spectral idempotents).** With $\vec{Ζ}$ as above, put
 
 $$
-\tilde\Pi_+=\frac{e_t+\vec\Xi}{2},\qquad
-\tilde\Pi_-=\frac{e_t-\vec\Xi}{2}.
+\tilde\Pi_+=\frac{e_t+\vec{Ζ}}{2},\qquad
+\tilde\Pi_-=\frac{e_t-\vec{Ζ}}{2}.
 $$
 
 Then $\tilde\Pi_\pm$ are non-zero idempotents, orthogonal, complete, and
@@ -81,11 +81,11 @@ $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-.
 $$
 
-*Proof.* The idempotence is $\tilde\Pi_\pm^2=(e_t\pm2\vec\Xi+\vec\Xi^2)/4=\tilde\Pi_\pm$, the orthogonality is $\tilde\Pi_+\tilde\Pi_-=(e_t-\vec\Xi^2)/4=0$, and the sum is $e_t$. The action is
+*Proof.* The idempotence is $\tilde\Pi_\pm^2=(e_t\pm2\vec{Ζ}+\vec{Ζ}^2)/4=\tilde\Pi_\pm$, the orthogonality is $\tilde\Pi_+\tilde\Pi_-=(e_t-\vec{Ζ}^2)/4=0$, and the sum is $e_t$. The action is
 
 $$
-\tilde Q\tilde\Pi_+=(Q_te_t+iB\vec\Xi)\frac{e_t+\vec\Xi}{2}
-=\frac{(Q_t+iB)(e_t+\vec\Xi)}{2}=\lambda_+\tilde\Pi_+,
+\tilde Q\tilde\Pi_+=(Q_te_t+iB\vec{Ζ})\frac{e_t+\vec{Ζ}}{2}
+=\frac{(Q_t+iB)(e_t+\vec{Ζ})}{2}=\lambda_+\tilde\Pi_+,
 $$
 
 and the other sign is the same. Adding the two identities gives the decomposition.
@@ -102,7 +102,7 @@ and they are the unique spectral idempotents of $\tilde Q$.
 
 ### The Two Branches
 
-Replacing $B$ by $-B$ replaces $\vec\Xi$ by $-\vec\Xi$. This exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and exchanges $\lambda_+$ and $\lambda_-$. The unordered pair of idempotents and the unordered spectrum are unchanged. The branch is therefore a labelling choice, not a second construction; throughout the article the square root is fixed by the convention of the chart, and the labels follow from it.
+Replacing $B$ by $-B$ replaces $\vec{Ζ}$ by $-\vec{Ζ}$. This exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and exchanges $\lambda_+$ and $\lambda_-$. The unordered pair of idempotents and the unordered spectrum are unchanged. The branch is therefore a labelling choice, not a second construction; throughout the article the square root is fixed by the convention of the chart, and the labels follow from it.
 
 ## The Corners and the Nilpotents
 
@@ -220,13 +220,13 @@ $$
 
 is an admissible pair.
 
-*Proof.* Write $V=V_\parallel+V_\perp$, with $V_\parallel=((V,\vec Q)/B^2)\vec Q$ proportional to $\vec Q$ and hence commuting with $\vec\Xi$. The component $V_\parallel$ commutes with both idempotents, so it contributes only to the diagonal corners and drops out of $u_\pm$. For $V_\perp$ one expands
+*Proof.* Write $V=V_\parallel+V_\perp$, with $V_\parallel=((V,\vec Q)/B^2)\vec Q$ proportional to $\vec Q$ and hence commuting with $\vec{Ζ}$. The component $V_\parallel$ commutes with both idempotents, so it contributes only to the diagonal corners and drops out of $u_\pm$. For $V_\perp$ one expands
 
 $$
-u_\pm=\frac12\left(V_\perp\pm V_\perp\times\vec\Xi+(V_\perp,\vec\Xi)\vec\Xi\right),
+u_\pm=\frac12\left(V_\perp\pm V_\perp\times\vec{Ζ}+(V_\perp,\vec{Ζ})\vec{Ζ}\right),
 $$
 
-using $V_\perp\times\vec\Xi=\tfrac12(V_\perp\vec\Xi-\vec\Xi V_\perp)$. Multiplying the two expressions and using $\vec\Xi^2=e_t$ and $(V_\perp,\vec\Xi)=0$ gives $u_+u_-=V_\perp^2\tilde\Pi_-$. The other product is the same computation with the signs exchanged.
+using $V_\perp\times\vec{Ζ}=\tfrac12(V_\perp\vec{Ζ}-\vec{Ζ} V_\perp)$. Multiplying the two expressions and using $\vec{Ζ}^2=e_t$ and $(V_\perp,\vec{Ζ})=0$ gives $u_+u_-=V_\perp^2\tilde\Pi_-$. The other product is the same computation with the signs exchanged.
 
 **Corollary (the closed forms).** Take $V=\vec w=\vec e_x+\vec e_y+\vec e_z$ and $\Sigma=Q_x+Q_y+Q_z$. Then $V_\perp^2=(\Sigma^2-3B^2)/B^2$, and, off the exceptional cone $\Sigma^2=3B^2$,
 
@@ -376,7 +376,7 @@ The table is the corner rule written out. It shows that the basis is a system of
 
 ### The Fourier Reading of the Basis
 
-Put $\rho=i\vec\Xi=\vec Q/B$, a pure root of $-1$. Choose a pure $\nu$ with $\nu^2=1$ and $\nu\cdot\rho=0$, and put $\xi=\rho\nu$; then $(e_t,\rho,\nu,\xi)$ is the root-adapted basis of *Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*, and
+Put $\rho=i\vec{Ζ}=\vec Q/B$, a pure root of $-1$. Choose a pure $\nu$ with $\nu^2=1$ and $\nu\cdot\rho=0$, and put $\zeta=\rho\nu$; then $(e_t,\rho,\nu,\zeta)$ is the root-adapted basis of *Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*, and
 
 $$
 L_\rho\sim
@@ -392,28 +392,28 @@ the block of the complex structure repeated on the two planes.
 
 **Proposition (the Fourier form of the eigenbasis).** With
 $$
-u_-=\tilde\Pi_+\nu=\tfrac12(\nu-i\xi),
+u_-=\tilde\Pi_+\nu=\tfrac12(\nu-i\zeta),
 \qquad
-u_+=\tilde\Pi_-\nu=\tfrac12(\nu+i\xi),
+u_+=\tilde\Pi_-\nu=\tfrac12(\nu+i\zeta),
 $$
 the quadruple $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is an eigenbasis of $L_{\tilde Q}$ with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, and $\rho u_-=+iu_-$, $\rho u_+=-iu_+$.
 
-*Proof.* Since $\vec\Xi=-i\rho$ and $\rho\nu=\xi$, we have $\vec\Xi\nu=-i\xi$, so $\tilde\Pi_+\nu=\tfrac12(\nu-i\xi)=u_-$ and $\tilde\Pi_-\nu=\tfrac12(\nu+i\xi)=u_+$. From $\rho\nu=\xi$ and $\rho\xi=-\nu$, $\rho u_-=\tfrac12(\xi+i\nu)=iu_-$ and $\rho u_+=\tfrac12(\xi-i\nu)=-iu_+$. Left multiplication by $\tilde Q=Q_te_t+B\rho$ is $Q_t\mathrm{id}+BL_\rho$, which gives the stated eigenvalues.
+*Proof.* Since $\vec{Ζ}=-i\rho$ and $\rho\nu=\zeta$, we have $\vec{Ζ}\nu=-i\zeta$, so $\tilde\Pi_+\nu=\tfrac12(\nu-i\zeta)=u_-$ and $\tilde\Pi_-\nu=\tfrac12(\nu+i\zeta)=u_+$. From $\rho\nu=\zeta$ and $\rho\zeta=-\nu$, $\rho u_-=\tfrac12(\zeta+i\nu)=iu_-$ and $\rho u_+=\tfrac12(\zeta-i\nu)=-iu_+$. Left multiplication by $\tilde Q=Q_te_t+B\rho$ is $Q_t\mathrm{id}+BL_\rho$, which gives the stated eigenvalues.
 
 **The two cuts.** In the matrix model of §*The Matrix Model*, the first Fourier plane is the diagonal subspace and the second is the off-diagonal subspace. The spectral eigenspaces are the two rows: $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ is the first row, $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$ the second. Each row meets each Fourier plane in one line, so neither decomposition refines the other. The Fourier factorization keeps the planes and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue.
 
 ### The Four Labels
 
-Each basis vector is a joint eigenvector of four operators: left and right multiplication by $\tilde Q$ and by $\vec\Xi$. The labels are the corner indices.
+Each basis vector is a joint eigenvector of four operators: left and right multiplication by $\tilde Q$ and by $\vec{Ζ}$. The labels are the corner indices.
 
-| vector | corner | left ideal | $L_{\tilde Q}$ | $R_{\tilde Q}$ | $L_{\vec\Xi}$ | $R_{\vec\Xi}$ |
+| vector | corner | left ideal | $L_{\tilde Q}$ | $R_{\tilde Q}$ | $L_{\vec{Ζ}}$ | $R_{\vec{Ζ}}$ |
 |---|---|---|---|---|---|---|
 | $\tilde\Pi_+$ | $\mathbb{B}_{++}$ | $S_+$ | $\lambda_+$ | $\lambda_+$ | $+1$ | $+1$ |
 | $\vec\Upsilon_-$ | $\mathbb{B}_{+-}$ | $S_-$ | $\lambda_+$ | $\lambda_-$ | $+1$ | $-1$ |
 | $\vec\Upsilon_+$ | $\mathbb{B}_{-+}$ | $S_+$ | $\lambda_-$ | $\lambda_+$ | $-1$ | $+1$ |
 | $\tilde\Pi_-$ | $\mathbb{B}_{--}$ | $S_-$ | $\lambda_-$ | $\lambda_-$ | $-1$ | $-1$ |
 
-The identity $\tilde Q=Q_te_t+iB\vec\Xi$ explains the table: the left value is $Q_t+iBs$, the right value is $Q_t+iBt$, where $s$ and $t$ are the two signs. The two gradings, by left index and by right index, are independent, and the four rows are their four combinations.
+The identity $\tilde Q=Q_te_t+iB\vec{Ζ}$ explains the table: the left value is $Q_t+iBs$, the right value is $Q_t+iBt$, where $s$ and $t$ are the two signs. The two gradings, by left index and by right index, are independent, and the four rows are their four combinations.
 
 ### The Matrix Model
 
@@ -522,7 +522,7 @@ The expansion of a general $\tilde Q_2$ is not a diagonalisation of $\tilde Q_2$
 2. $\tilde Q_2\in\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$;
 3. $\tilde Q_2\in\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$.
 
-*Proof.* The diagonal elements are $Q_{2,11}\tilde\Pi_++Q_{2,22}\tilde\Pi_-$, which is the second statement. Since $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ and $\vec\Xi=(\tilde Q-Q_te_t)/(iB)$, this is the plane spanned by $e_t$ and $\tilde Q$.
+*Proof.* The diagonal elements are $Q_{2,11}\tilde\Pi_++Q_{2,22}\tilde\Pi_-$, which is the second statement. Since $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$ and $\vec{Ζ}=(\tilde Q-Q_te_t)/(iB)$, this is the plane spanned by $e_t$ and $\tilde Q$.
 
 Thus the eigenbasis of $\tilde Q$ diagonalises simultaneously the whole pencil $\{a\tilde Q+b e_t\}$, and no other elements. This is the precise sense in which the basis is attached to $\tilde Q$: it is attached to the two-dimensional commutative subalgebra generated by $\tilde Q$.
 
@@ -598,10 +598,10 @@ $$
 *Proof.* The vector part of $\tilde Q'$ is $a\vec Q$, so $B'^2=a^2B^2$ and, by the scaling rule of the chart, $B'=aB$. Hence
 
 $$
-\vec\Xi'=-\frac{i(a\vec Q)}{aB}=\vec\Xi.
+\vec{Ζ}'=-\frac{i(a\vec Q)}{aB}=\vec{Ζ}.
 $$
 
-The idempotents depend on $\vec\Xi$ only. The closed forms are homogeneous of degree zero in $(\vec Q,B)$, so the pair is unchanged. The eigenvalues are $Q_t'\pm iB'=(aQ_t+b)\pm iaB=a\lambda_\pm+b$.
+The idempotents depend on $\vec{Ζ}$ only. The closed forms are homogeneous of degree zero in $(\vec Q,B)$, so the pair is unchanged. The eigenvalues are $Q_t'\pm iB'=(aQ_t+b)\pm iaB=a\lambda_\pm+b$.
 
 **Corollary (the projective reading).** The eigenbasis is a function on the complement of the conic $B^2=0$ in $\mathbb{P}^2$, the projective space of the vector part. The element $\tilde Q$ projects to the point $[\vec Q]$, and the fibre of the projection is the affine line $\{a\tilde Q+b e_t\}$. On that fibre the eigenbasis is constant and the spectrum is affine. The spectral cone is the conic $B^2=0$, and it is exactly the locus where the construction stops.
 
@@ -624,7 +624,7 @@ The closed-form normalisation is not exactly equivariant, because the auxiliary 
 
 ### The Boundary
 
-The basis is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\mathcal S=\{B^2=0\}$. The gauge of §*The Gauge from the Antisymmetric Part* stops earlier, on the normal locus inside $\{B^2\neq0\}$. On the cone the two eigenvalues coalesce, the root $\vec\Xi=-i\vec Q/B$ is undefined, and the two spectral idempotents have no limit independent of the path: a sequence of spectral-regular elements converging to a point of the cone produces idempotents whose limit depends on the path. The cone is not one case but three, and each stratum has canonical data of its own.
+The basis is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\mathcal S=\{B^2=0\}$. The gauge of §*The Gauge from the Antisymmetric Part* stops earlier, on the normal locus inside $\{B^2\neq0\}$. On the cone the two eigenvalues coalesce, the root $\vec{Ζ}=-i\vec Q/B$ is undefined, and the two spectral idempotents have no limit independent of the path: a sequence of spectral-regular elements converging to a point of the cone produces idempotents whose limit depends on the path. The cone is not one case but three, and each stratum has canonical data of its own.
 
 **The scalar stratum.** $\vec Q=0$. Then $\tilde Q=Q_te_t$ and $L_{\tilde Q}=Q_t\mathrm{id}$; every basis is an eigenbasis, and the one-term writing $\tilde Q=Q_te_t$ is canonical. No refinement is canonical: every idempotent commutes with $\tilde Q$, so every complete pair $(e,f)$ gives the trivial Peirce form
 
@@ -711,9 +711,9 @@ $$
 The two spaces are the two columns of the matrix model: $S_+$ is the first column and $S_-$ the second. They are isomorphic as left $\mathbb{B}$-modules, by right multiplication by $\vec\Upsilon_-$ with inverse right multiplication by $\vec\Upsilon_+$:
 
 $$
-S_+\longrightarrow S_-,\quad \xi_+\longmapsto \xi_+\vec\Upsilon_-,
+S_+\longrightarrow S_-,\quad \zeta_+\longmapsto \zeta_+\vec\Upsilon_-,
 \qquad
-S_-\longrightarrow S_+,\quad \xi_-\longmapsto \xi_-\vec\Upsilon_+.
+S_-\longrightarrow S_+,\quad \zeta_-\longmapsto \zeta_-\vec\Upsilon_+.
 $$
 
 The two maps are inverse because $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. They are distinct subspaces of $\mathbb{B}$ nevertheless. The copy index is therefore not an invariant of the left module; it is a property of the embedding of the module in the algebra.
@@ -723,13 +723,13 @@ The two maps are inverse because $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and 
 A spinor of the first Peirce copy is
 
 $$
-\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
+\zeta_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 $$
 
 with coordinates $(Q_{2,11},Q_{2,21})$, the first column. Under left multiplication by $\tilde Q$,
 
 $$
-\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
+\tilde Q\zeta_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
 $$
 
 so the coordinate pair is sent to $(\lambda_+Q_{2,11},\lambda_-Q_{2,21})$. In the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, the left action is
@@ -741,13 +741,13 @@ $$
 A spinor of the second Peirce copy is
 
 $$
-\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+\zeta_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 $$
 
 with coordinates $(Q_{2,12},Q_{2,22})$, the second column. In the basis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$,
 
 $$
-\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
+\tilde Q\zeta_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
 \qquad
 L_{\tilde Q}|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
@@ -759,11 +759,11 @@ The same diagonal matrix acts on the two Peirce copies. Each Peirce copy therefo
 Right multiplication by $\tilde Q$ is scalar on each spinor space:
 
 $$
-\xi_+\tilde Q=\lambda_+\xi_+\quad(\xi_+\in S_+),\qquad
-\xi_-\tilde Q=\lambda_-\xi_-\quad(\xi_-\in S_-).
+\zeta_+\tilde Q=\lambda_+\zeta_+\quad(\zeta_+\in S_+),\qquad
+\zeta_-\tilde Q=\lambda_-\zeta_-\quad(\zeta_-\in S_-).
 $$
 
-Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular the cell of the frame is $-R_{\vec\Xi}=-iR_{\vec u}$ with $\vec u=-i\vec\Xi$, so it is $-1$ on $S_+$ and $+1$ on $S_-$ (*Operator Chirality on the Biquaternion Algebra*), and the two letters $L$ and $R$ name its two values. The values separate the copies, and they are the values of a copy index: they are not a chirality of the module, because the two halves are the same module (*The Polarized Module of the Biquaternion Algebra*).
+Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular the cell of the frame is $-R_{\vec{Ζ}}=-iR_{\vec u}$ with $\vec u=-i\vec{Ζ}$, so it is $-1$ on $S_+$ and $+1$ on $S_-$ (*Operator Chirality on the Biquaternion Algebra*), and the two letters $L$ and $R$ name its two values. The values separate the copies, and they are the values of a copy index: they are not a chirality of the module, because the two halves are the same module (*The Polarized Module of the Biquaternion Algebra*).
 
 **Proposition (the two gradings).** The following two decompositions coexist:
 
@@ -848,8 +848,8 @@ In the language of physics, the element whose two columns these are is a Dirac s
 |---|---|
 | hypothesis | $B^2\neq0$; the central scalar is irrelevant |
 | domain | $B^2\neq0$, the complement of the spectral cone |
-| root | $\vec\Xi=-i\vec Q/B$, $\vec\Xi^2=e_t$, $\tilde Q=Q_te_t+iB\vec\Xi$ |
-| idempotents | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, unique |
+| root | $\vec{Ζ}=-i\vec Q/B$, $\vec{Ζ}^2=e_t$, $\tilde Q=Q_te_t+iB\vec{Ζ}$ |
+| idempotents | $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$, unique |
 | nilpotents | $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$, $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
 | scale | determined up to $(\mu,\mu^{-1})$; fixed by the chart, or by the gauge off the normal locus up to sign |
 | gauge | $n=i\Omega/|\Omega|$ with $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)=\vec Q\times\overline{\vec Q}$; exists exactly when $\tilde Q$ is not normal |
@@ -875,11 +875,11 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the spectral discriminant |
 | $B$ | a fixed square root of $B^2$ |
-| $\vec\Xi=-i\vec Q/B$ | the root, a pure square root of $e_t$ |
+| $\vec{Ζ}=-i\vec Q/B$ | the root, a pure square root of $e_t$ |
 | $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)$ | the antisymmetric sesquilinear square, $\vec Q\times\overline{\vec Q}=\tilde Q_1\wedge_{\natural*}\tilde Q_2(\tilde Q,\tilde Q)$ |
 | $n=i\Omega/|\Omega|$ | the real unit normal, the gauge direction off the normal locus |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents |
+| $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$ | the spectral idempotents |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
 | $\vec\Upsilon_\pm$ | the normalised nilpotents, $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$ |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone, the boundary of the construction |

@@ -115,15 +115,15 @@ for $\mu$-almost every $x$ — the **Lebesgue–Besicovitch differentiation theo
 
 **Definition.** For an open set $\Omega\subseteq\mathbb{R}^n$ the space of **$m$-dimensional currents** is the dual of the space $\mathcal{D}^m(\Omega)$ of smooth $m$-forms with compact support, with the topology of the test functions. A current of the form
 $$
-T(\omega) = \int_M\langle\omega(x),\xi(x)\rangle\,d\mathcal{H}^m(x)
+T(\omega) = \int_M\langle\omega(x),\zeta(x)\rangle\,d\mathcal{H}^m(x)
 $$
-with $M$ countably rectifiable and $\xi$ an $L^1(M;\Lambda_m)$ field of $m$-vectors is written $[M,\xi]$ and called **rectifiable**; the **mass** is
+with $M$ countably rectifiable and $\zeta$ an $L^1(M;\Lambda_m)$ field of $m$-vectors is written $[M,\zeta]$ and called **rectifiable**; the **mass** is
 $$
-\mathbf{M}(T) = \sup_{\lvert\omega\rvert\leq1}T(\omega) = \int_M\lvert\xi\rvert\,d\mathcal{H}^m ,
+\mathbf{M}(T) = \sup_{\lvert\omega\rvert\leq1}T(\omega) = \int_M\lvert\zeta\rvert\,d\mathcal{H}^m ,
 $$
 and the **boundary** is defined by Stokes' theorem, $(\partial T)(\omega) = T(d\omega)$. A current is **integral** if it and its boundary are rectifiable of finite mass; the **flat norm** is $\mathcal{F}(T) = \inf\{\mathbf{M}(A)+\mathbf{M}(B) : T = A+\partial B\}$.
 
-**Theorem.** The boundary operator satisfies $\partial\partial = 0$; the mass is lower semicontinuous with respect to the flat convergence; a rectifiable current of finite mass has rectifiable boundary of finite mass when $\mathcal{H}^{m-1}(\partial M)$ is finite and the orientation matches, in which case $\partial[M,\xi] = [\partial M,\xi']$ with the induced orientation; and the mass is a convex functional of the current, so that the direct method of *Convex Analysis* applies to it.
+**Theorem.** The boundary operator satisfies $\partial\partial = 0$; the mass is lower semicontinuous with respect to the flat convergence; a rectifiable current of finite mass has rectifiable boundary of finite mass when $\mathcal{H}^{m-1}(\partial M)$ is finite and the orientation matches, in which case $\partial[M,\zeta] = [\partial M,\zeta']$ with the induced orientation; and the mass is a convex functional of the current, so that the direct method of *Convex Analysis* applies to it.
 
 **Proof sketch.** $\partial\partial = 0$ is $d^2 = 0$ for forms. The lower semicontinuity is the Banach–Steinhaus argument applied to the defining supremum. The identification of the boundary with the boundary of the set is the Stokes theorem for rectifiable currents, proved by smoothing the forms and applying the classical theorem on the pieces of the Lipschitz graphs.
 
@@ -175,7 +175,7 @@ The Hausdorff $s$-measure of a set is the infimum over coverings by sets of diam
 | $\mathcal{D}^m(E,x)$ | $m$-dimensional density of $E$ at $x$ |
 | $\partial^*E$ | Reduced boundary of a set of finite perimeter |
 | $\mathcal{D}^m(\Omega)$ | Smooth $m$-forms with compact support |
-| $T$, $[M,\xi]$ | Current, rectifiable current |
+| $T$, $[M,\zeta]$ | Current, rectifiable current |
 | $\mathbf{M}(T)$, $\partial T$ | Mass and boundary of a current |
 | $\mathcal{F}(T)$ | Flat norm |
 | $\delta\mathbf{M}(T)$ | First variation of the mass |

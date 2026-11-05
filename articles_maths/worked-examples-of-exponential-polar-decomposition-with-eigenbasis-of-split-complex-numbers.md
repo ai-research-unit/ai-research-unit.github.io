@@ -170,7 +170,7 @@ the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second 
 |---|---|
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two idempotents |
 | $S_\pm=\mathbb{R}\Pi_\pm$ | the two spinor spaces, real lines |
-| $\xi_+=a_1\Pi_+$, $\xi_-=a_2\Pi_-$ | the two spinors |
+| $\zeta_+=a_1\Pi_+$, $\zeta_-=a_2\Pi_-$ | the two spinors |
 | $a_1,a_2\in\mathbb{R}$ | the spinor coordinates, complex after complexification |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues of $Q=q+jq'$ |
 | $[L_Q]$ | the matrix of multiplication by $Q$ in the eigenbasis |

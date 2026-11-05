@@ -212,8 +212,8 @@ have $B^2=1$, and the product has $B^2=0$. So the regular case is not a subgroup
 **Theorem (existence).** Let $B^2\neq0$ and put
 
 $$
-\vec\Xi=-\frac{i\vec Q}{B},\qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},\qquad
+\vec{Ζ}=-\frac{i\vec Q}{B},\qquad
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},\qquad
 \lambda_\pm=Q_t\pm iB.
 $$
 
@@ -224,11 +224,11 @@ $$
 \tilde Q\tilde\Pi_\pm=\lambda_\pm\tilde\Pi_\pm.
 $$
 
-*Proof.* Since $\vec Q^2=-B^2e_t$, one has $\vec\Xi^2=e_t$ and $\vec Q=iB\vec\Xi$. Hence $\tilde\Pi_\pm^2=(e_t\pm2\vec\Xi+e_t)/4=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=(e_t-\vec\Xi^2)/4=0$, and the sum is $e_t$. The idempotents are non-zero because $\vec\Xi$ has zero scalar part, so $\vec\Xi\neq\pm e_t$. For the action, $\vec Q\vec\Xi=(-i/B)\vec Q^2=iBe_t$, hence
+*Proof.* Since $\vec Q^2=-B^2e_t$, one has $\vec{Ζ}^2=e_t$ and $\vec Q=iB\vec{Ζ}$. Hence $\tilde\Pi_\pm^2=(e_t\pm2\vec{Ζ}+e_t)/4=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=(e_t-\vec{Ζ}^2)/4=0$, and the sum is $e_t$. The idempotents are non-zero because $\vec{Ζ}$ has zero scalar part, so $\vec{Ζ}\neq\pm e_t$. For the action, $\vec Q\vec{Ζ}=(-i/B)\vec Q^2=iBe_t$, hence
 
 $$
-\tilde Q\tilde\Pi_+=\frac{(Q_t e_t+\vec Q)(e_t+\vec\Xi)}{2}
-=\frac{(Q_t+iB)(e_t+\vec\Xi)}{2}=\lambda_+\tilde\Pi_+,
+\tilde Q\tilde\Pi_+=\frac{(Q_t e_t+\vec Q)(e_t+\vec{Ζ})}{2}
+=\frac{(Q_t+iB)(e_t+\vec{Ζ})}{2}=\lambda_+\tilde\Pi_+,
 $$
 
 and $\tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_-$ the same way. Adding the two identities multiplied by the eigenvalues gives the decomposition.
@@ -241,7 +241,7 @@ $$
 
 and the spectral decomposition is unique.
 
-*Proof.* The first identity is the computation $\tilde Q-\lambda_-=iB(e_t+\vec\Xi)$, and its analogue with the signs exchanged. For uniqueness, the minimal polynomial $(X-\lambda_+)(X-\lambda_-)$ has distinct roots, so the Chinese remainder theorem gives $\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/((X-\lambda_+)(X-\lambda_-))\cong\mathbb{C}\times\mathbb{C}$; the idempotents of that product are $0,e_t,\tilde\Pi_+,\tilde\Pi_-$, and every spectral idempotent lies in the centraliser $\mathbb{C}[\tilde Q]$.
+*Proof.* The first identity is the computation $\tilde Q-\lambda_-=iB(e_t+\vec{Ζ})$, and its analogue with the signs exchanged. For uniqueness, the minimal polynomial $(X-\lambda_+)(X-\lambda_-)$ has distinct roots, so the Chinese remainder theorem gives $\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/((X-\lambda_+)(X-\lambda_-))\cong\mathbb{C}\times\mathbb{C}$; the idempotents of that product are $0,e_t,\tilde\Pi_+,\tilde\Pi_-$, and every spectral idempotent lies in the centraliser $\mathbb{C}[\tilde Q]$.
 
 **Corollary (spectral projectors).** $L_{\tilde\Pi_+}$ is the projector onto the $\lambda_+$-eigenspace: it sends $X$ to $\tilde\Pi_+X$, with image $\tilde\Pi_+\mathbb{B}$ and kernel $\tilde\Pi_-\mathbb{B}$. The same statement holds with the two signs exchanged.
 
@@ -255,7 +255,7 @@ $$
 
 a right ideal of complex dimension $2$. Each eigenvalue therefore has multiplicity two.
 
-*Proof.* Since $\tilde Q-\lambda_+=iB(\vec\Xi-e_t)=-2iB\tilde\Pi_-$, the equation $(\tilde Q-\lambda_+)X=0$ is $\tilde\Pi_-X=0$, that is $X=\tilde\Pi_+X$, that is $X\in\tilde\Pi_+\mathbb{B}$. In a basis in which $\tilde\Pi_+=\operatorname{diag}(1,0)$, the ideal $\tilde\Pi_+\mathbb{B}$ is the set of matrices whose second row vanishes, of complex dimension $2$.
+*Proof.* Since $\tilde Q-\lambda_+=iB(\vec{Ζ}-e_t)=-2iB\tilde\Pi_-$, the equation $(\tilde Q-\lambda_+)X=0$ is $\tilde\Pi_-X=0$, that is $X=\tilde\Pi_+X$, that is $X\in\tilde\Pi_+\mathbb{B}$. In a basis in which $\tilde\Pi_+=\operatorname{diag}(1,0)$, the ideal $\tilde\Pi_+\mathbb{B}$ is the set of matrices whose second row vanishes, of complex dimension $2$.
 
 **Corollary (eigenbasis).** Choose non-zero $\vec\Upsilon_-\in\tilde\Pi_+\mathbb{B}\tilde\Pi_-$ and $\vec\Upsilon_+\in\tilde\Pi_-\mathbb{B}\tilde\Pi_+$. Then
 
@@ -388,7 +388,7 @@ The biquaternion algebra carries many quadratic conditions; the one studied here
 
 The eigenvalue problem is stated without a module and without an acting operator: an eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, an eigenvector lies in the left annihilator, and a spectral idempotent is an idempotent commuting with the element. The criterion proves that $\lambda$ is an eigenvalue exactly when $\tilde Q-\lambda e_t$ is a non-unit, exactly when $(\lambda-Q_t)^2+B^2=0$. The determinant of the matrix model is the same scalar, not the proof; the proof is the conjugate product $a a^{\natural}=(a_t^2+B^2)e_t$. The eigenspace of a non-scalar element has complex dimension $2$; Cayley–Hamilton gives the inverse whenever the determinant does not vanish. The same condition reads on the operators: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $R_{\tilde Q}=Q_t\,\mathrm{id}+R_{\vec Q}$, with $L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id}$. Off the spectral-degenerate cone the directional part is a complex structure; on the spectral-degenerate cone it is nilpotent.
 
-The regular case is $B^2\neq0$. The eigenvalues are distinct, the element is semisimple, and its left multiplication is diagonalisable. The spectral idempotents are the Lagrange idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$, which coincide with $(e_t\pm\vec\Xi)/2$ for $\vec\Xi=-i\vec Q/B$; the decomposition is unique, and an eigenbasis exists with diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
+The regular case is $B^2\neq0$. The eigenvalues are distinct, the element is semisimple, and its left multiplication is diagonalisable. The spectral idempotents are the Lagrange idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$, which coincide with $(e_t\pm\vec{Ζ})/2$ for $\vec{Ζ}=-i\vec Q/B$; the decomposition is unique, and an eigenbasis exists with diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
 The degeneracy case is the spectral-degenerate cone $B^2=0$, of complex dimension $3$ and real dimension $6$, the product of the scalar line and the isotropic cone of the vector subspace, smooth off the scalar vertex. On it the two eigenvalues have coalesced at $Q_t$. The spectral-degenerate cone splits into the scalar vertex and the Jordan part, the latter carrying the nilpotent and unipotent strata; their normal forms, minimal polynomials, ranks, centralisers and spectral data are in *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*. The condition is blind to the scalar part, so the whole centre is degenerate, and no case is stable under multiplication. The spectral condition and the zero-divisor condition are independent: a Hermitian idempotent has $B^2=-\tfrac14$ and is a zero divisor.
 
@@ -410,8 +410,8 @@ The degeneracy case is the spectral-degenerate cone $B^2=0$, of complex dimensio
 | $\mathcal S^{\mathrm{s}},\ \mathcal S^{\mathrm{n}},\ \mathcal S^{\mathrm{u}}$ | the scalar, nilpotent and unipotent strata of $\mathcal S$ |
 | $L_{\tilde Q}(X)=\tilde QX,\ R_{\tilde Q}(X)=X\tilde Q$ | left and right multiplication |
 | $\operatorname{Ann}_{\ell}(a)=\{v:av=0\}$ | the left annihilator, a right ideal |
-| $\vec\Xi=-i\vec Q/B$ | the pure root, with $\vec\Xi^2=e_t$ |
-| $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents, equal to $(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$ |
+| $\vec{Ζ}=-i\vec Q/B$ | the pure root, with $\vec{Ζ}^2=e_t$ |
+| $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$ | the spectral idempotents, equal to $(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$ |
 
 ## Further Reading
 

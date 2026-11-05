@@ -114,7 +114,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Peirce Decompositions of the Biquaternion Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde{Ζ} i)$ over the roots $\tilde{Ζ}$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Peirce Decompositions of the Biquaternion Algebra*.
 
 ---
 
@@ -153,7 +153,7 @@ The three central values the biquaternion algebra singles out are $-1$, $+1$ and
 
 **Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde Q\star\tilde Q=a$; the roots of a central value are the special case $a=\lambda e_t$.
 
-The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of an Element*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
+The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of an Element*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
 ---
 
@@ -203,7 +203,7 @@ The four general products are four definitions to a class, and the table says wh
 |---|---|---|---|---|---|
 | unit | $e_t$ two-sided | right only | left only | none | differ |
 | zero divisor | $\mathcal{N}\setminus\{0\}$ | same | same | same | **coincide** |
-| idempotent | $\tfrac12(e_t+\tilde\Xi i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | differ |
+| idempotent | $\tfrac12(e_t+\tilde{Ζ} i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | differ |
 | square-zero | the pure cone | $\{0\}$ | the whole cone | $\{\overline{\tilde Q}\tilde Q=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |

@@ -130,7 +130,7 @@ $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis.
+**No eigenbasis.** The construction needs a root $\vec{Ζ}=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis.
 
 ## The Origin
 

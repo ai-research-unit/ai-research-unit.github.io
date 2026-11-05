@@ -38,15 +38,15 @@ $$
 $$
 So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant, and the anomaly is the statement that the quantum effective action is not.
 
-**When the classical trace vanishes.** For a massless scalar with the conformal coupling $\xi=(d-2)/(4(d-1))$, for the massless Dirac field, and for the Maxwell field in $d=4$, the classical action is Weyl invariant, and $T_\mu{}_\mu=0$ on shell. A mass term, a curvature coupling with non-critical coefficient, and a dimensionful coupling all break the invariance explicitly; those breakings are not anomalous, because they are already present classically and their coefficients are fixed by the classical action rather than by the regulator. The anomaly is the part that cannot be removed.
+**When the classical trace vanishes.** For a massless scalar with the conformal coupling $\zeta=(d-2)/(4(d-1))$, for the massless Dirac field, and for the Maxwell field in $d=4$, the classical action is Weyl invariant, and $T_\mu{}_\mu=0$ on shell. A mass term, a curvature coupling with non-critical coefficient, and a dimensionful coupling all break the invariance explicitly; those breakings are not anomalous, because they are already present classically and their coefficients are fixed by the classical action rather than by the regulator. The anomaly is the part that cannot be removed.
 
 **The improved tensor.** For a scalar the canonical tensor is not traceless even for the massless action at the conformal coupling; adding the improvement term
 $$
-T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\chi^2 ,
+T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\chi^2 ,
 \qquad
-\xi=\frac{d-2}{4(d-1)},
+\zeta=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\xi(d-1)\Box\chi^2$, which on shell is $2\xi(d-1)\sum_\mu(\partial\chi/\partial Q_\mu)^2$, because $\Box\chi^2=2\sum_\mu(\partial\chi/\partial Q_\mu)^2+2\chi\,\Box\chi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\chi/\partial Q_\mu)^2$; the value $\xi=(d-2)/(4(d-1))$ cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\zeta(d-1)\Box\chi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\chi/\partial Q_\mu)^2$, because $\Box\chi^2=2\sum_\mu(\partial\chi/\partial Q_\mu)^2+2\chi\,\Box\chi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\chi/\partial Q_\mu)^2$; the value $\zeta=(d-2)/(4(d-1))$ cancels the two, giving $\zeta=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
 **The $ict'$ interpretation.** The flat metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the level-2 interpretation of the level-1 form is the material reading $Q_t=ict'$, $Q_k=x_k$, as *Frame and Metric Conventions* fixes. The trace $T_\mu{}_\mu$ is the contraction with $\delta_{\mu\nu}$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
@@ -202,7 +202,7 @@ The first identity is exact, so the second and third are exact; a central differ
 
 **Open.**
 
-- Whether the framework has a natural definition of the conformal coupling $\xi=\tfrac16$ beyond its transcription is not addressed here; the improvement term is used as in the standard theory.
+- Whether the framework has a natural definition of the conformal coupling $\zeta=\tfrac16$ beyond its transcription is not addressed here; the improvement term is used as in the standard theory.
 - The anomaly of a genuinely non-central biquaternion operator, and whether its eta-invariant part has a framework-specific form, is left to the $\theta$-vacuum article.
 - The scheme-independent coefficients of the biquaternion field are not computed here; only the counting that fixes them is identified.
 
@@ -234,7 +234,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
-| $\xi=(d-2)/(4(d-1))$ | Improvement coupling; $\xi=1/6$ at $d=4$ |
+| $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
 | $\operatorname{tr}(\tilde Q\mapsto a\tilde Q b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}(\tilde Q\mapsto\tilde Q)=4$ |
 | $\tilde\Psi\mapsto m\,\tilde\Psi(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
 | $\tilde\Psi_L$, $\tilde\Psi_R$ | The two chirality values: the $-1$ part and the $+1$ part of an element |

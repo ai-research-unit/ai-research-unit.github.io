@@ -14,7 +14,7 @@ $$
 \mathcal S=\{B^2=0\}.
 $$
 
-This article studies that sector and the spectral basis it carries. On the complement $B^2\neq0$ the two eigenvalues are distinct, and *The Eigenbasis of a Spectrally Regular Biquaternion* builds an eigenbasis. On $\mathcal S$ they coincide; on its defective part no eigenbasis exists, because the eigenspace has complex dimension two and four eigenvectors cannot be found. The root $\vec\Xi=-i\vec Q/B$ of the regular construction diverges at $B=0$, and the two spectral idempotents have no limit.
+This article studies that sector and the spectral basis it carries. On the complement $B^2\neq0$ the two eigenvalues are distinct, and *The Eigenbasis of a Spectrally Regular Biquaternion* builds an eigenbasis. On $\mathcal S$ they coincide; on its defective part no eigenbasis exists, because the eigenspace has complex dimension two and four eigenvectors cannot be found. The root $\vec{Ζ}=-i\vec Q/B$ of the regular construction diverges at $B=0$, and the two spectral idempotents have no limit.
 
 The sector is not without a basis. Off the scalar line the element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$, and the **flag** replaces the root. It selects a complete orthogonal pair of idempotents $\tilde\Pi_\pm$, and with them the two corner generators $\vec\Upsilon_\pm$; the pair is chosen, and the Jordan form does not depend on the choice. The quadruple
 
@@ -239,7 +239,7 @@ Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q
 
 **Remark (the choice is real).** The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_-(b)=e_t-\tilde\Pi_+(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed for the product alone. The definite Hermitian form selects one, and it is constructed in the next subsection.
 
-**Remark (not a limit).** The idempotents are not the limits of the regular spectral idempotents $(e_t\pm\vec\Xi)/2$, which diverge as $B\to0$. They are a new pair, attached to the flag of $\vec Q$ and to the chosen complement.
+**Remark (not a limit).** The idempotents are not the limits of the regular spectral idempotents $(e_t\pm\vec{Ζ})/2$, which diverge as $B\to0$. They are a new pair, attached to the flag of $\vec Q$ and to the chosen complement.
 
 ### The Canonical Frame
 
@@ -639,9 +639,9 @@ $$
 \Sigma_{01}=\{\det\tilde Q=0,\ B^2\neq0\}.
 $$
 
-On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec\Xi=-i\vec Q/B$ exists, and the eigenbasis of *The Eigenbasis of a Spectrally Regular Biquaternion* is constructed. The root and the eigenbasis do not cross the boundary; the defective part of the sector has the Jordan basis instead, selected by an adapted frame. The two constructions are separated by the single equation $B^2=0$, and the passage from one to the other is the collapse of the two eigenvalues.
+On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec{Ζ}=-i\vec Q/B$ exists, and the eigenbasis of *The Eigenbasis of a Spectrally Regular Biquaternion* is constructed. The root and the eigenbasis do not cross the boundary; the defective part of the sector has the Jordan basis instead, selected by an adapted frame. The two constructions are separated by the single equation $B^2=0$, and the passage from one to the other is the collapse of the two eigenvalues.
 
-The regular article reads its basis in a root-adapted Fourier form. There is no such reading here: the Fourier form needs the pure root $\rho=i\vec\Xi$ with $\rho^2=-1$, and the degenerate vector part is nilpotent. The counterpart is the truncated exponential, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, of §*Multiplication, Inversion, and the Exponential*.
+The regular article reads its basis in a root-adapted Fourier form. There is no such reading here: the Fourier form needs the pure root $\rho=i\vec{Ζ}$ with $\rho^2=-1$, and the degenerate vector part is nilpotent. The counterpart is the truncated exponential, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, of §*Multiplication, Inversion, and the Exponential*.
 
 The four cells are collected in the table.
 
@@ -656,7 +656,7 @@ The four cells are collected in the table.
 
 ## Consequences
 
-- **No splitting, no root, no frequency.** The two eigenvalues coincide at $Q_t$; the discriminant $-4B^2$ vanishes; the root $\vec\Xi=-i\vec Q/B$ and the frequency $B$ are undefined; the spectral projectors and the two-term spectral decomposition do not exist.
+- **No splitting, no root, no frequency.** The two eigenvalues coincide at $Q_t$; the discriminant $-4B^2$ vanishes; the root $\vec{Ζ}=-i\vec Q/B$ and the frequency $B$ are undefined; the spectral projectors and the two-term spectral decomposition do not exist.
 - **No eigenbasis off the scalar line.** The eigenspace has complex dimension two, the minimal polynomial is $(X-Q_t)^2$, and the isotropic line admits no canonical complement. Only the scalar line carries an eigenbasis, and there it is every basis.
 - **A flag survives, and a complement is chosen.** The canonical objects are the line $\mathbb{C}\vec Q$, the plane $\vec Q^{\perp}$, the kernel–image space $\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}$, and the two flags they form. A complement of the line inside the kernel is not canonical; an adapted frame supplies one.
 - **A Jordan basis replaces the eigenbasis.** An adapted frame supplies two idempotents and two generators, and the quadruple $\mathcal{J}(\tilde Q)$ is determined by the frame. In it the left and the right actions are each two Jordan blocks $J_2(Q_t)$, with different pairings, and every biquaternion has a unique expansion.
@@ -681,7 +681,7 @@ Both sector articles use a basis of this shape. They differ only in the pair, an
 
 | | general Peirce | spectrally regular, $B^2\neq0$ | spectrally degenerate, $B^2=0$, $\vec Q\neq0$ |
 |---|---|---|---|
-| pair | any complete orthogonal pair | the spectral pair $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, $\vec\Xi=-i\vec Q/B$ | a chosen adapted pair $\tilde\Pi_+,\tilde\Pi_-$ |
+| pair | any complete orthogonal pair | the spectral pair $\tilde\Pi_\pm=(e_t\pm\vec{Ζ})/2$, $\vec{Ζ}=-i\vec Q/B$ | a chosen adapted pair $\tilde\Pi_+,\tilde\Pi_-$ |
 | relation to $\tilde Q$ | none required | $[\tilde\Pi_\pm,\tilde Q]=0$ | $\tilde Q\tilde\Pi_+=Q_t\tilde\Pi_+$, $\tilde\Pi_+\tilde Q=Q_t\tilde\Pi_++\vec\Upsilon_-$ |
 | Peirce matrix $\mathsf M_{\tilde\Pi}(\tilde Q)$ | any matrix, with trace $2Q_t$ | $\operatorname{diag}(\lambda_+,\lambda_-)$ | $J_2(Q_t)$ |
 | each couple | two spinors | two eigenvectors | a Jordan chain |
@@ -712,8 +712,8 @@ The two constructions are compared in the table.
 
 | | regular, $B^2\neq0$ | degenerate, $B^2=0$, $\vec Q\neq0$ |
 |---|---|---|
-| root | $\vec\Xi=-i\vec Q/B$, with $\vec\Xi^2=e_t$ | none |
-| idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the canonical pair of §*The Canonical Frame* |
+| root | $\vec{Ζ}=-i\vec Q/B$, with $\vec{Ζ}^2=e_t$ | none |
+| idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the canonical pair of §*The Canonical Frame* |
 | generators | a pair, up to reciprocal rescaling, then one normalisation | $\vec\Upsilon_-=\vec Q$, and $\vec\Upsilon_+$ is the unique element with $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ |
 | left action | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$ |
 | right action | $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$, other pairing |
@@ -748,7 +748,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 | $\vec\Upsilon_-=\vec Q$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ | the generators of the mixed corners, unique given the frame |
 | $\mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ | the Jordan basis, chain by chain; the corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |
 | $\mathsf M_2^{\tilde Q}$ | the coordinate model of the Jordan basis, with $\mathsf M_2^{\tilde Q}(\tilde Q)=J_2(Q_t)$ |
-| $\vec\Xi=-i\vec Q/B$ | the root of the regular sector, undefined on $\mathcal S$ |
+| $\vec{Ζ}=-i\vec Q/B$ | the root of the regular sector, undefined on $\mathcal S$ |
 
 ## Further Reading
 

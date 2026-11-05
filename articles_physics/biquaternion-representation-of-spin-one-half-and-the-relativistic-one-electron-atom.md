@@ -368,7 +368,7 @@ $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\vec e_z\right),
 $$
 
-which is the second member of the pair with its left field read as $-i\overline{F}\vec e_z$: a conjugation and a fixed direction, nothing else. That is what the right multiplier carries — the second chirality slot, which the one-sided form holds in a second field, the two-sided form holds in the side of the action. The dictionary is recorded in *The Dirac Equation in Biquaternionic Form*. The chirality cell is $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+which is the second member of the pair with its left field read as $-i\overline{F}\vec e_z$: a conjugation and a fixed direction, nothing else. That is what the right multiplier carries — the second chirality slot, which the one-sided form holds in a second field, the two-sided form holds in the side of the action. The dictionary is recorded in *The Dirac Equation in Biquaternionic Form*. The chirality cell is $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

@@ -4,13 +4,13 @@
 
 Of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *The Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde{Ζ}\in\mathbb{B}$ with
 
 $$
-\tilde\Xi^2=0 .
+\tilde{Ζ}^2=0 .
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ are the companion article *Idempotents*; the roots of the general quadratic $\tilde\Xi^2=\tilde Q$ are *Square Roots of an Element*.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ are the companion article *Idempotents*; the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$ are *Square Roots of an Element*.
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
@@ -26,79 +26,79 @@ $$
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2.
 $$
 
-The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
+The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde{Ζ}$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ## The Roots of Zero
 
-**The roots of $0$ are exactly the origin and the nilpotent cone, the pure biquaternions with $(\vec\Xi,\vec\Xi)=0$, a four-real-parameter family; the nonzero roots are the nilpotents.**
+**The roots of $0$ are exactly the origin and the nilpotent cone, the pure biquaternions with $(\vec{Ζ},\vec{Ζ})=0$, a four-real-parameter family; the nonzero roots are the nilpotents.**
 
-A **root of $0$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=0$, the square being the one of the general plain bilinear product.
+A **root of $0$** is an element $\tilde{Ζ}\in\mathbb{B}$ with $\tilde{Ζ}^2=0$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
 Write the root in scalar and vector parts,
 
 $$
-\tilde\Xi=\Xi_te_t+\vec\Xi,\qquad \vec\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_k\in\mathbb{C}.
+\tilde{Ζ}=Ζ_te_t+\vec{Ζ},\qquad \vec{Ζ}=Ζ_x\vec e_x+Ζ_y\vec e_y+Ζ_z\vec e_z,\qquad Ζ_k\in\mathbb{C}.
 $$
 
 The square of a biquaternion is given by the product formula,
 
 $$
-\tilde\Xi^2=\bigl(\Xi_t^2-(\vec\Xi,\vec\Xi)\bigr)e_t+2\Xi_t\vec\Xi,\qquad (\vec\Xi,\vec\Xi)=\Xi_x^2+\Xi_y^2+\Xi_z^2,
+\tilde{Ζ}^2=\bigl(Ζ_t^2-(\vec{Ζ},\vec{Ζ})\bigr)e_t+2Ζ_t\vec{Ζ},\qquad (\vec{Ζ},\vec{Ζ})=Ζ_x^2+Ζ_y^2+Ζ_z^2,
 $$
 
-so equating $\tilde\Xi^2$ to $0$ splits the equation into a vector part and a scalar part,
+so equating $\tilde{Ζ}^2$ to $0$ splits the equation into a vector part and a scalar part,
 
 $$
-2\Xi_t\vec\Xi=0,
+2Ζ_t\vec{Ζ}=0,
 $$
 
 $$
-\Xi_t^2-(\vec\Xi,\vec\Xi)=0 .
+Ζ_t^2-(\vec{Ζ},\vec{Ζ})=0 .
 $$
 
-Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_t=0$ or $\vec\Xi=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_t=0$.
+Since $\mathbb{C}$ is a field, the vector equation holds exactly when $Ζ_t=0$ or $\vec{Ζ}=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\vec{Ζ}=0$, or the root is pure, $Ζ_t=0$.
 
 ### The Zero Element
 
-In the scalar case $\tilde\Xi=\Xi_te_t$ and the scalar equation reads $\Xi_t^2=0$; since $\mathbb{C}$ is a field, $\Xi_t=0$. The root in this case is the single element
+In the scalar case $\tilde{Ζ}=Ζ_te_t$ and the scalar equation reads $Ζ_t^2=0$; since $\mathbb{C}$ is a field, $Ζ_t=0$. The root in this case is the single element
 
 $$
-\tilde\Xi=0,
+\tilde{Ζ}=0,
 $$
 
 the origin.
 
 ### The Null Cone
 
-In the pure case $\tilde\Xi=\vec\Xi$ and the scalar equation reads
+In the pure case $\tilde{Ζ}=\vec{Ζ}$ and the scalar equation reads
 
 $$
-(\vec\Xi,\vec\Xi)=\Xi_x^2+\Xi_y^2+\Xi_z^2=0 .
+(\vec{Ζ},\vec{Ζ})=Ζ_x^2+Ζ_y^2+Ζ_z^2=0 .
 $$
 
-Write the complex coefficients as $\Xi_k=\xi_k+i\xi'_k$ with real $\xi_k,\xi'_k$, so that
+Write the complex coefficients as $Ζ_k=\zeta_k+i\zeta'_k$ with real $\zeta_k,\zeta'_k$, so that
 
 $$
-\vec\Xi=\vec\xi+i\vec\xi',\qquad \vec\xi=\xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z,\qquad \vec\xi'=\xi'_x\vec e_x+\xi'_y\vec e_y+\xi'_z\vec e_z .
+\vec{Ζ}=\vec\zeta+i\vec\zeta',\qquad \vec\zeta=\zeta_x\vec e_x+\zeta_y\vec e_y+\zeta_z\vec e_z,\qquad \vec\zeta'=\zeta'_x\vec e_x+\zeta'_y\vec e_y+\zeta'_z\vec e_z .
 $$
 
 Then
 
 $$
-(\vec\Xi,\vec\Xi)=\sum_k(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
+(\vec{Ζ},\vec{Ζ})=\sum_k(\zeta_k+i\zeta'_k)^2=\bigl(\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2\bigr)+2i\bigl(\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z\bigr),
 $$
 
-so the single complex equation $(\vec\Xi,\vec\Xi)=0$ is the two real equations
+so the single complex equation $(\vec{Ζ},\vec{Ζ})=0$ is the two real equations
 
 $$
-\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0,\qquad \xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0 .
+\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=0,\qquad \zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0 .
 $$
 
-Six real coefficients carry two constraints, so the roots in this case form a **four-real-parameter family**, the **null cone** of the pure subspace; equivalently its two real vector parts $\vec\xi$ and $\vec\xi'$ satisfy $\vec\xi\cdot\vec\xi'=0$ and $\vec\xi\cdot\vec\xi=\vec\xi'\cdot\vec\xi'$. Its nonzero elements are the nilpotents of the algebra.
+Six real coefficients carry two constraints, so the roots in this case form a **four-real-parameter family**, the **null cone** of the pure subspace; equivalently its two real vector parts $\vec\zeta$ and $\vec\zeta'$ satisfy $\vec\zeta\cdot\vec\zeta'=0$ and $\vec\zeta\cdot\vec\zeta=\vec\zeta'\cdot\vec\zeta'$. Its nonzero elements are the nilpotents of the algebra.
 
 ### Statement of the Theorem
 
@@ -107,27 +107,27 @@ Six real coefficients carry two constraints, so the roots in this case form a **
 **The origin.** The element
 
 $$
-\tilde\Xi=0 .
+\tilde{Ζ}=0 .
 $$
 
 **The null cone.** The pure biquaternions of vanishing complex square, a four-real-parameter family,
 
 $$
 \boxed{\;
-\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_x^2+\Xi_y^2+\Xi_z^2=0
+\tilde{Ζ}=Ζ_x\vec e_x+Ζ_y\vec e_y+Ζ_z\vec e_z,\qquad Ζ_x^2+Ζ_y^2+Ζ_z^2=0
 \;},
 $$
 
-that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$. Its nonzero elements are the nilpotents of the algebra.
+that is, writing $Ζ_k=\zeta_k+i\zeta'_k$, the pair of real equations $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=0$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$. Its nonzero elements are the nilpotents of the algebra.
 
 ### Verification
 
-For a pure $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=0$ the scalar part of $\tilde\Xi^2$ is $-(\vec\Xi,\vec\Xi)=0$ and the vector part is $2\Xi_t\vec\Xi=0$, since $\Xi_t=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $\Xi_t=0$ or $\vec\Xi=0$.
+For a pure $\tilde{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=0$ the scalar part of $\tilde{Ζ}^2$ is $-(\vec{Ζ},\vec{Ζ})=0$ and the vector part is $2Ζ_t\vec{Ζ}=0$, since $Ζ_t=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $Ζ_t=0$ or $\vec{Ζ}=0$.
 
 A worked instance is
 
 $$
-\tilde\Xi=\vec e_x+i\vec e_y,\qquad (\vec e_x+i\vec e_y)^2=\vec e_x^2+i^2\vec e_y^2+i(\vec e_x\vec e_y+\vec e_y\vec e_x)=-1+1+0=0 .
+\tilde{Ζ}=\vec e_x+i\vec e_y,\qquad (\vec e_x+i\vec e_y)^2=\vec e_x^2+i^2\vec e_y^2+i(\vec e_x\vec e_y+\vec e_y\vec e_x)=-1+1+0=0 .
 $$
 
 ### The Roots of Zero and the Nilpotents
@@ -300,7 +300,7 @@ The entries are forced: the centre, the quaternion subspace and the anti-quatern
 
 ## Summary
 
-The general plain bilinear product of *The Four General Products and Their Relations over the Biquaternion Algebra* is the multiplication of the algebra $\mathbb{B}$ of *The Biquaternion Algebra*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ with $\Xi_x^2+\Xi_y^2+\Xi_z^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
+The general plain bilinear product of *The Four General Products and Their Relations over the Biquaternion Algebra* is the multiplication of the algebra $\mathbb{B}$ of *The Biquaternion Algebra*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde{Ζ}=Ζ_x\vec e_x+Ζ_y\vec e_y+Ζ_z\vec e_z$ with $Ζ_x^2+Ζ_y^2+Ζ_z^2=0$, a four-real-parameter family; writing $Ζ_k=\zeta_k+i\zeta'_k$, the two real equations are $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=0$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
 
 The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, so every nilpotent is pure and its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over pairs of real vectors with $\vec u_p\cdot\vec u_{p'}=0$ and $\vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1$. The algebra has no nilpotent of index three: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 
@@ -313,8 +313,8 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 | $\mathbb{B}$ | Biquaternion algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\tilde\Xi$ | A root of $0$, $\tilde\Xi^2=0$ |
-| $\tilde\Xi=\Xi_te_t+\vec\Xi$, $\vec\Xi=\vec\xi+i\vec\xi'$ | Scalar and vector parts of a root; $\vec\xi,\vec\xi'$ real pure |
+| $\tilde{Ζ}$ | A root of $0$, $\tilde{Ζ}^2=0$ |
+| $\tilde{Ζ}=Ζ_te_t+\vec{Ζ}$, $\vec{Ζ}=\vec\zeta+i\vec\zeta'$ | Scalar and vector parts of a root; $\vec\zeta,\vec\zeta'$ real pure |
 | $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ | Complex dot product of two vector parts |
 | $C(\tilde Q_1)=\sum_\mu Q_{1\mu}^2$ | The central square, $\tilde Q_1\tilde Q_1^{\natural}=C(\tilde Q_1)e_t$ |
 | $\tilde\Upsilon$ | A nilpotent, $\tilde\Upsilon^2=0$ |
@@ -329,7 +329,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
 - [Idempotents](idempotents.html), for the roots of $+1$ and the idempotents, the other two central element classes.
-- [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.
+- [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $0$ here are one case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce basis.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same problem read in all twelve products.

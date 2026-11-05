@@ -167,7 +167,7 @@ $$
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no eigenbasis is attached to it.
+**No eigenbasis.** The construction needs a root $\vec{Ζ}=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no eigenbasis is attached to it.
 
 ## Multiplication and Inversion
 

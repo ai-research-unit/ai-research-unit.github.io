@@ -353,7 +353,7 @@ $$
 D\bar D = \bar D D = \partial^2/\partial q'^2 ,
 $$
 
-the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\xi_{q'} - i\xi_q\varepsilon$, is invertible exactly when $\xi_{q'} \neq 0$, so the characteristic set of $D$ is the line $\xi_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.
+the one-dimensional operator in the nilpotent coordinate rather than $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$; this is the ellipticity failure in operator form. The symbol of $D$, the algebra element $i\zeta_{q'} - i\zeta_q\varepsilon$, is invertible exactly when $\zeta_{q'} \neq 0$, so the characteristic set of $D$ is the line $\zeta_{q'} = 0$, the conormal of the fibre direction, and the operator is not elliptic.
 
 **Theorem.** A fundamental solution of $D$ on the plane with Lebesgue measure is
 
@@ -486,7 +486,7 @@ The differences are consequences of the single relation $\varepsilon^2 = 0$ agai
 | Property | Complex | Dual |
 |---|---|---|
 | Coefficient ring | field, no zero divisors, no nilpotents | local ring, nilpotent $\varepsilon$ |
-| Cauchy–Riemann operator | $\partial/\partial a + i\partial/\partial a'$, elliptic | $\partial/\partial q' - \varepsilon\partial/\partial q$, characteristic set $\xi_{q'} = 0$ |
+| Cauchy–Riemann operator | $\partial/\partial a + i\partial/\partial a'$, elliptic | $\partial/\partial q' - \varepsilon\partial/\partial q$, characteristic set $\zeta_{q'} = 0$ |
 | Second-order square | Laplacian $\Delta$ | $D\bar D = \bar D D = \partial^2/\partial q'^2$ |
 | Section of the singular set | a point | a fibre, a whole line |
 | Fundamental solution | $1/(\pi A)$, singular at a point | supported on a ray of the fibre |
@@ -522,7 +522,7 @@ $$
 
 which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.
 
-The consequences are those of the preceding sections. The general **Cauchy–Goursat** theorem applies to the dual system, because $\mathbb{C}^{\mathrm{dln}}$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general **residue theory** and **Cauchy integral formula**, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\xi = 0\}$, for $\mathbb{C}^{\mathrm{spl}}$ it is the null cone, and for $\mathbb{C}^{\mathrm{dln}}$ it is the line $\xi_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of units modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.
+The consequences are those of the preceding sections. The general **Cauchy–Goursat** theorem applies to the dual system, because $\mathbb{C}^{\mathrm{dln}}$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general **residue theory** and **Cauchy integral formula**, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\zeta = 0\}$, for $\mathbb{C}^{\mathrm{spl}}$ it is the null cone, and for $\mathbb{C}^{\mathrm{dln}}$ it is the line $\zeta_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of units modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.
 
 ## Summary
 

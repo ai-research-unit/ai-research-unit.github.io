@@ -10,30 +10,30 @@ The article assumes *Algebra and Element Conventions*, whose §*The Conjugations
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
-**The special glyphs are notational.** A root $\tilde\Xi$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
+**The special glyphs are notational.** A root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
 
 ### The Root Convention
 
-The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*) and the nilpotent $\tilde\nu$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
+The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*) and the nilpotent $\tilde\nu$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of an Element*.
+A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of an Element*.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, no tilde being written where there is no quaternionic factor.
+**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{Ζ}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\zeta$; those of the complex, split-complex and dual layers carry the plain capital, $Ζ$; and those of the reduced biquaternion layer carry the same plain capital, $Ζ$, no tilde being written where there is no quaternionic factor.
 
-**The coordinates carry the letter of the root**: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.
+**The coordinates carry the letter of the root**: in $\mathbb{B}$ the root is $\tilde{Ζ} = Ζ_te_t + Ζ_x\vec e_x + Ζ_y\vec e_y + Ζ_z\vec e_z$ with $Ζ_\mu = \zeta_\mu + i\zeta'_\mu$, its scalar part $Ζ_t$ and its vector part $\vec{Ζ} = \vec\zeta + i\vec\zeta'$; in $\mathbb{H}$ it is $\tilde\zeta = \zeta_te_t + \zeta_x\vec e_x + \zeta_y\vec e_y + \zeta_z\vec e_z$ with real $\zeta_\mu$.
 
-**It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
+**It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde{Ζ}_1, \tilde{Ζ}_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
 The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\Xi$ | A root of $1$ of the complex, split-complex or dual layer, where no tilde is written |
-| $\Xi_\pm$ | A root of $1$ of the reduced biquaternion layer, where no tilde is written |
-| $\tilde\xi$ | A root of $1$ of the quaternion or split-quaternion layer |
-| $\tilde\Xi$ | A root of $1$ of the biquaternion or split-biquaternion layer |
+| $Ζ$ | A root of $1$ of the complex, split-complex or dual layer, where no tilde is written |
+| $Ζ_\pm$ | A root of $1$ of the reduced biquaternion layer, where no tilde is written |
+| $\tilde\zeta$ | A root of $1$ of the quaternion or split-quaternion layer |
+| $\tilde{Ζ}$ | A root of $1$ of the biquaternion or split-biquaternion layer |
 
 ### The Idempotent Convention
 
@@ -47,7 +47,7 @@ The involution here is the star on the elements, as *The Conjugations* fixes it,
 
 **The coordinates carry the letter of the idempotent**: in $\mathbb{B}$ the idempotent is $\tilde\Pi = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.
 
-**It is allowed to add subscripts when several idempotents are used.** **The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is **complete**, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The split-complex and reduced biquaternion layers write their complete pair with the signs throughout, $\Pi_\pm$. The Peirce indices of the reduced biquaternion layer are the same signs, $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ with $\sigma,\tau\in\{+,-\}$, the two signs a pair read on the left and on the right, so that a corner such as $\mathbb{B}_{++}$ is never a coordinate and never a doubled label. The coordinates of the element in that pair are the **idempotent coordinates**, written with the sign of the member, $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$; the sign marks a coordinate of the idempotent pair and the triangle a basis coordinate, so that a numbered element is read the same way, $Q_{1+}$ and $Q_{1-}$ for the idempotent coordinates of $\breve Q_{1}$ and $Q_{1\blacktriangle}$ and $Q_{1\blacktriangledown}$ for its basis coordinates.
+**It is allowed to add subscripts when several idempotents are used.** **The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde{Ζ})$. When a pair is **complete**, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The split-complex and reduced biquaternion layers write their complete pair with the signs throughout, $\Pi_\pm$. The Peirce indices of the reduced biquaternion layer are the same signs, $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ with $\sigma,\tau\in\{+,-\}$, the two signs a pair read on the left and on the right, so that a corner such as $\mathbb{B}_{++}$ is never a coordinate and never a doubled label. The coordinates of the element in that pair are the **idempotent coordinates**, written with the sign of the member, $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$; the sign marks a coordinate of the idempotent pair and the triangle a basis coordinate, so that a numbered element is read the same way, $Q_{1+}$ and $Q_{1-}$ for the idempotent coordinates of $\breve Q_{1}$ and $Q_{1\blacktriangle}$ and $Q_{1\blacktriangledown}$ for its basis coordinates.
 
 A non-zero idempotent $\tilde\Pi$ generates the **minimal left ideal** $\mathbb{B}\tilde\Pi$; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents of the General Plain Algebra* and its companions.
 
@@ -167,7 +167,7 @@ $E_{ij}$ is written only when the objects are matrices. In an abstract algebra t
 | $\Upsilon_{ij}$ | An off-diagonal Peirce unit, a nilpotent |
 | $E_{ij}$ | A matrix unit, only in $M_n$ |
 | $Q_{ij}$, $\psi_j$ | A Peirce coordinate, and the entry of a spinor |
-| $\Xi$ | A root of unity, by the case rule |
+| $Ζ$ | A root of unity, by the case rule |
 
 **The summary sentence.** The family gives the components, the decomposition is canonical, the basis is chosen, the gauge is its freedom, and the spinor is a tuple of coordinates in that basis.
 
@@ -287,7 +287,7 @@ for a declared unit imaginary direction $\vec u$, and each part is an elementary
 
 ## Summary
 
-A **root** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2=1$, and a root of a central value $\lambda$ is an element with $\tilde\Xi^2=\lambda e_t$; the square is read in a named product, the algebra product unless the statement names another. The glyph is split by the case rule: $\Xi$ in the tilde-free layers, $\tilde\xi$ in the quaternion and split-quaternion layers, $\tilde\Xi$ in the biquaternion and split-biquaternion layers, the reduced biquaternion layer writing the sign pair $\Xi_\pm$. The coordinates carry the letter of the root, and the subscript counts when it only distinguishes occurrences and names when it is a role label.
+A **root** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2=1$, and a root of a central value $\lambda$ is an element with $\tilde{Ζ}^2=\lambda e_t$; the square is read in a named product, the algebra product unless the statement names another. The glyph is split by the case rule: $Ζ$ in the tilde-free layers, $\tilde\zeta$ in the quaternion and split-quaternion layers, $\tilde{Ζ}$ in the biquaternion and split-biquaternion layers, the reduced biquaternion layer writing the sign pair $Ζ_\pm$. The coordinates carry the letter of the root, and the subscript counts when it only distinguishes occurrences and names when it is a role label.
 
 An **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. An idempotent fixed by the star is **Hermitian**, and the rank-one Hermitian idempotents of $\mathbb{M}_+$ are the **pure states**. The glyph is $\Pi$ in the tilde-free layers, $\tilde\pi$ in the quaternion and split-quaternion layers, $\tilde\Pi$ in the biquaternion and split-biquaternion layers; the two members of a complete sign pair are $\Pi_\pm$ and take the sign rather than a number. A non-zero idempotent generates the minimal left ideal $\mathbb{B}\tilde\Pi$.
 
@@ -301,12 +301,12 @@ The **spin** of an irreducible unitary carrier is the largest eigenvalue of $\ve
 
 | Symbol | Meaning |
 |---|---|
-| $\Xi$, $\tilde\xi$, $\tilde\Xi$ | A root of $1$ in the tilde-free, quaternion and biquaternion layers |
-| $\Xi_\pm$ | A root of $1$ of the reduced biquaternion layer, the two signs |
+| $Ζ$, $\tilde\zeta$, $\tilde{Ζ}$ | A root of $1$ in the tilde-free, quaternion and biquaternion layers |
+| $Ζ_\pm$ | A root of $1$ of the reduced biquaternion layer, the two signs |
 | $\Pi$, $\tilde\pi$, $\tilde\Pi$ | An idempotent in the tilde-free, quaternion and biquaternion layers; $\tilde\Pi$ also the pure state and the left ideal $\mathbb{B}\tilde\Pi$ |
 | $\Pi_\pm$ | The two members of a complete sign pair of idempotents |
 | $\Upsilon$, $\tilde\nu$, $\tilde\Upsilon$ | A nilpotent in the tilde-free, quaternion and biquaternion layers |
-| $\vec\Xi$, $\vec\nu$, $\vec\Upsilon$ | A pure root and a pure nilpotent |
+| $\vec{Ζ}$, $\vec\nu$, $\vec\Upsilon$ | A pure root and a pure nilpotent |
 | $\tilde\Pi_1,\dots,\tilde\Pi_n$ | A complete, orthogonal and idempotent family |
 | $A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ | A Peirce component; the left index first |
 | $A_{ij}A_{jq}\subseteq A_{iq}$ | The multiplication rule of the components |

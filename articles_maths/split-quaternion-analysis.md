@@ -101,7 +101,7 @@ $$
 
 which is the zero divisor set of the algebra in the vector subspace.
 
-**Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $\vec e_x \xi_1 + \vec e_y \xi_2 + \vec e_z \xi_3$, whose square is $-\xi_1^2 + \xi_2^2 + \xi_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, the null cone of the vector subspace is the zero divisor set.
+**Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $\vec e_x \zeta_1 + \vec e_y \zeta_2 + \vec e_z \zeta_3$, whose square is $-\zeta_1^2 + \zeta_2^2 + \zeta_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, the null cone of the vector subspace is the zero divisor set.
 
 **Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions. Every solution of $Df = 0$ solves the wave equation $\Box_{(2,1)}f = 0$, because $D^2 = \Box_{(2,1)}$, but not conversely: the scalar function $f = q_x q_y$ satisfies $\Box_{(2,1)}f = 0$ while $Df = q_y\,\vec e_x + q_x\,\vec e_y \neq 0$. The monogenic class is therefore a proper subclass of the wave solutions, it is not closed under the operations of the elliptic theory, and its members have neither the mean-value property nor the maximum principle nor the elliptic regularity of *Clifford Analysis*; the zero divisors of the algebra are exactly the characteristic directions of the operator.
 

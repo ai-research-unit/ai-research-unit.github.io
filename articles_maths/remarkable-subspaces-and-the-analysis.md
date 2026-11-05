@@ -79,7 +79,7 @@ This is a sum of squares of complex derivatives and is not the Laplacian of $\ma
 
 **The null set.** The norm is $\langle\tilde{Q}\rangle_{\natural} = \sum_k Q_k^2$, whose vanishing set is the complex cone $\sum_k Q_k^2 = 0$. The cone is non-empty: $\vec e_x + i\vec e_y$ lies on it, since $1^2 + i^2 = 0$. Its points are exactly the zero divisors of the subspace, the pure ones of *Subspaces and Decompositions*, and the analysis degenerates on them.
 
-**The operator is not elliptic.** The principal symbol of $\Box$ on the vector subspace is $\tfrac14\sum_k(\xi_k - i\eta_k)^2$, and it vanishes at the null covectors of the cone: for $(\xi_x, \xi_y, \xi_z) = (1, 0, 0)$ and $(\eta_1, \eta_2, \eta_3) = (0, 1, 0)$ the sum is $1^2 + (-i)^2 = 0$. The same computation in one complex variable has no nonzero null covector, which is why the centre is the elliptic case among the two complex subspaces and the vector subspace is not.
+**The operator is not elliptic.** The principal symbol of $\Box$ on the vector subspace is $\tfrac14\sum_k(\zeta_k - i\eta_k)^2$, and it vanishes at the null covectors of the cone: for $(\zeta_x, \zeta_y, \zeta_z) = (1, 0, 0)$ and $(\eta_1, \eta_2, \eta_3) = (0, 1, 0)$ the sum is $1^2 + (-i)^2 = 0$. The same computation in one complex variable has no nonzero null covector, which is why the centre is the elliptic case among the two complex subspaces and the vector subspace is not.
 
 ## The Quaternion Subspace
 
@@ -97,7 +97,7 @@ $$
 \boxed{\; \Box\big|_{\mathbb{H}_{\mathbb{B}}} = e_t\left(\frac{\partial^2}{\partial q_t^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2}\right) = e_t\,\Delta_4 \;}.
 $$
 
-Its principal symbol is $\sum_\mu\xi_\mu^2$, that is the norm $\langle\cdot\rangle_{\natural}$ restricted to the subspace, which is positive definite: the operator is **elliptic**.
+Its principal symbol is $\sum_\mu\zeta_\mu^2$, that is the norm $\langle\cdot\rangle_{\natural}$ restricted to the subspace, which is positive definite: the operator is **elliptic**.
 
 **The analysis.** This is the case of *Biquaternion Analysis* and of *Biquaternion Integration* verbatim. The quaternion subspace is the one of the remarkable subspaces on which the Cauchy integral formula, the mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates and the residue theory are all stated in the house articles, and the reason is the one that makes $\mathbb{H}_{\mathbb{B}}$ a division algebra: the norm is definite, hence there is no null element and no zero divisor, and the analysis meets no obstruction. The contour theory is the one of *Biquaternion Integration*, over a three-dimensional boundary, with the fundamental solutions $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ for the gradient and $G_\Box(\tilde{Q}) = -e_t/(4\pi^2\|\tilde{Q}\|_E^2)$ for the second-order operator.
 
@@ -113,7 +113,7 @@ $$
 \Box\big|_{i\mathbb{H}_{\mathbb{B}}} = -e_t\,\Delta_4 .
 $$
 
-The principal symbol is $-\sum_\mu\xi_\mu^2$, that is $-N$ on the subspace, which is negative definite: the operator is **elliptic** as well.
+The principal symbol is $-\sum_\mu\zeta_\mu^2$, that is $-N$ on the subspace, which is negative definite: the operator is **elliptic** as well.
 
 **The analysis.** The substitution $\tilde{Q} = i\tilde{Q}'$ identifies $i\mathbb{H}_{\mathbb{B}}$ with $\mathbb{H}_{\mathbb{B}}$ and transports the whole analysis of the quaternion subspace to it, with two signs: the gradient is multiplied by $-i$ and the second-order operator by $-1$. Every statement of the quaternion case therefore has an anti-quaternion mirror, and the sign of the norm — positive definite on $\mathbb{H}_{\mathbb{B}}$, negative definite on $i\mathbb{H}_{\mathbb{B}}$ — is the only structural difference. There is no null element here either, and the contour theory is the one of the quaternion subspace carried by the substitution.
 
@@ -129,7 +129,7 @@ $$
 \Box\big|_{\mathbb{M}_+} = e_t\left(\frac{\partial^2}{\partial q_t^2} - \sum_{k=1}^{3}\frac{\partial^2}{\partial (q'_k)^2}\right).
 $$
 
-The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdot\rangle_{\natural}$ on the subspace, of signature $(1,3)$: the second-order operator on the Hermitian subspace is the **wave operator** in the four real variables. It is not elliptic, and a null covector is $(\xi_t, \xi_x, \xi_y, \xi_z) = (1, 1, 0, 0)$.
+The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdot\rangle_{\natural}$ on the subspace, of signature $(1,3)$: the second-order operator on the Hermitian subspace is the **wave operator** in the four real variables. It is not elliptic, and a null covector is $(\zeta_t, \zeta_x, \zeta_y, \zeta_z) = (1, 1, 0, 0)$.
 
 **The null set.** The norm vanishes on the cone $q_t^2 = \sum_k (q'_k)^2$, of real dimension $3$, and its points are exactly the zero divisors of the subspace, the non-pure ones of *Subspaces and Decompositions*, namely the nonzero real multiples of the Hermitian idempotents.
 
@@ -163,7 +163,7 @@ $$
 
 **Corollary (the type of the operator).** On a real form the principal symbol of $\Box$ is the norm $\langle\cdot\rangle_{\natural}$ of the subspace, of signature $(4,0)$ on $\mathbb{H}_{\mathbb{B}}$, $(0,4)$ on $i\mathbb{H}_{\mathbb{B}}$, $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$. Hence $\Box$ is elliptic on the quaternion and the anti-quaternion subspaces, where $\langle\cdot\rangle_{\natural}$ is definite, and of wave type on the two Hermitian subspaces, where $\langle\cdot\rangle_{\natural}$ is indefinite.
 
-**The two complex subspaces.** On the centre and the vector subspace the operator is instead the square of a complex derivative, $e_t\,\partial^2/\partial Q_t^2$ and $e_t\sum_k\partial^2/\partial Q_k^2$, and its principal symbol is $\tfrac14(\xi - i\eta)^2$ and $\tfrac14\sum_k(\xi_k - i\eta_k)^2$. In one complex variable the symbol vanishes only at the origin, so the operator is elliptic; in three it vanishes on the complex null cone $\sum_k z_k^2 = 0$, so it is not. The real part of the symbol, read in the real coordinates, is $\sum_j s_j\xi_j^2$ with $s_j = +1$ on the coordinate vectors $e_\mu$ and $s_j = -1$ on the vectors $ie_\mu$, and this is the real part of $\langle\cdot\rangle_{\natural}$; its signatures are $(1,1)$ on the centre and $(3,3)$ on the vector subspace, as in *Remarkable Subspaces under the General Quaternionic Algebra*.
+**The two complex subspaces.** On the centre and the vector subspace the operator is instead the square of a complex derivative, $e_t\,\partial^2/\partial Q_t^2$ and $e_t\sum_k\partial^2/\partial Q_k^2$, and its principal symbol is $\tfrac14(\zeta - i\eta)^2$ and $\tfrac14\sum_k(\zeta_k - i\eta_k)^2$. In one complex variable the symbol vanishes only at the origin, so the operator is elliptic; in three it vanishes on the complex null cone $\sum_k z_k^2 = 0$, so it is not. The real part of the symbol, read in the real coordinates, is $\sum_j s_j\zeta_j^2$ with $s_j = +1$ on the coordinate vectors $e_\mu$ and $s_j = -1$ on the vectors $ie_\mu$, and this is the real part of $\langle\cdot\rangle_{\natural}$; its signatures are $(1,1)$ on the centre and $(3,3)$ on the vector subspace, as in *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 **Corollary (ellipticity and the zero divisors).** $\Box$ is elliptic exactly on the centre, the quaternion subspace and the anti-quaternion subspace — exactly the three of the remarkable subspaces that contain no zero divisor — and non-elliptic on the vector subspace, the Hermitian subspace and the anti-Hermitian subspace, whose null cones are non-empty. On the four real forms the criterion is the definiteness of $\langle\cdot\rangle_{\natural}$; on the two complex subspaces it is the vanishing of the complex symbol, which holds in one variable and fails in three. The three subspaces without a zero divisor are therefore also the three on which the second-order analysis is of elliptic type, though for two different reasons: definiteness of the norm on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the field property of the centre.
 

@@ -51,10 +51,10 @@ The equation is the linearization of the Einstein equation about flat space, and
 The linearized theory is invariant under the gauge transformation
 
 $$
-h_{\mu\nu}\;\longmapsto\;h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu ,
+h_{\mu\nu}\;\longmapsto\;h_{\mu\nu}+\partial/\partial Q_\mu\,\zeta_\nu+\partial/\partial Q_\nu\,\zeta_\mu ,
 $$
 
-with $\xi_\mu$ an arbitrary vector field. The transformation is the linearization of a diffeomorphism, and it is the spin-two analogue of the abelian gauge transformation: the parameter is a vector rather than a scalar, and the field shifts by its symmetric gradient. The gauge-invariant content of the linearized field is the linearized Riemann tensor
+with $\zeta_\mu$ an arbitrary vector field. The transformation is the linearization of a diffeomorphism, and it is the spin-two analogue of the abelian gauge transformation: the parameter is a vector rather than a scalar, and the field shifts by its symmetric gradient. The gauge-invariant content of the linearized field is the linearized Riemann tensor
 
 $$
 \mathrm{Riem}_{\mu\nu\rho\sigma} = \tfrac12\left(\partial/\partial Q_\nu\,\partial/\partial Q_\rho h_{\mu\sigma}+\partial/\partial Q_\mu\,\partial/\partial Q_\sigma h_{\nu\rho}
@@ -65,19 +65,19 @@ which is invariant under the shift because the shift is a gradient, and which is
 
 ### The Gauge Symmetry as Coordinate Freedom
 
-The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\xi_\mu$ is the infinitesimal displacement of a coordinate transformation, $x_\mu\mapsto x_\mu+\xi_\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
+The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\zeta_\mu$ is the infinitesimal displacement of a coordinate transformation, $x_\mu\mapsto x_\mu+\zeta_\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.
 
 The framework's interpretation is that the gauge parameter is a **material vector**: the coordinate displacement lies in the same representation as the field's indices, and the transformation is the symmetric gradient of that vector. This is the structural difference from the vector field's gauge symmetry, whose parameter is a scalar function, and from the non-abelian case, whose parameter is a Lie-algebra element; for the graviton the parameter and the field live in the same material representation, which is why the gauge structure is the one of diffeomorphisms rather than of an internal group. What the framework does not supply is the interpretation: that the redundancy is coordinate freedom, and that it is the equivalence principle, are imported statements about gravity, not algebraic consequences.
 
 ### The Residual Gauge and the Physical Content
 
-The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box\xi_\mu=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
+The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box\zeta_\mu=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
 
 ## The Count of Degrees of Freedom
 
 ### The Component Count
 
-A symmetric tensor $h_{\mu\nu}$ has ten independent components. The gauge transformation $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ removes four, the four components of $\xi_\mu$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving
+A symmetric tensor $h_{\mu\nu}$ has ten independent components. The gauge transformation $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\zeta_\nu+\partial/\partial Q_\nu\,\zeta_\mu$ removes four, the four components of $\zeta_\mu$, leaving six. The field equation is second order and the gauge conditions are the constraints that remove four more on shell — the four components of the de Donder condition, one of which is the Hamiltonian constraint and three of which are the momentum constraints — leaving
 
 $$
 \boxed{\;10-4-4 = 2\;}
@@ -100,12 +100,12 @@ $$
 \qquad
 \mathrm{tr}\,P = 2 ,
 \qquad
-P_{ij,kl}\left(k_k\xi_l+k_l\xi_k\right) = 0 ,
+P_{ij,kl}\left(k_k\zeta_l+k_l\zeta_k\right) = 0 ,
 \qquad
 P_{ij,kl}\,\delta_{kl} = 0\;},
 $$
 
-idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\xi_j+k_j\xi_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
+idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\zeta_j+k_j\zeta_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
 
 $$
 6-4 = 2 ,
@@ -259,7 +259,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 ## Summary
 
-The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
+The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\zeta_\nu+\partial/\partial Q_\nu\,\zeta_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
 In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec k)]=(2\pi)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
@@ -272,7 +272,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$ |
 | $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, $\kappa^2=16\pi G$ | Metric perturbation and the coupling of its source |
 | $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ | Trace and trace-reversed field |
-| $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ | Linearized gauge symmetry |
+| $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\zeta_\nu+\partial/\partial Q_\nu\,\zeta_\mu$ | Linearized gauge symmetry |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
 | $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |

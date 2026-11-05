@@ -77,9 +77,9 @@ $$
 
 The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a $*$-unitary. The central phase $e^{i\theta}e_t$ is likewise a $*$-unitary, and its logarithm $i\theta e_t$ is a coefficient, not a band element with a negative square.
 
-**Theorem (no clock element).** The band has no element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi=-e_t$. The central values with a root in the band are exactly the non-negative real numbers.
+**Theorem (no clock element).** The band has no element $\tilde{Ζ}$ with $\tilde{Ζ}\star\tilde{Ζ}=-e_t$. The central values with a root in the band are exactly the non-negative real numbers.
 
-*Proof.* If $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}$ is central, its scalar part is $\sum_\mu\lvert\Xi_\mu\rvert^{2}$, non-negative and zero only at the origin, and its vector part vanishes; the value is a non-negative real scalar.
+*Proof.* If $\tilde{Ζ}\star\tilde{Ζ}=\tilde{Ζ}\tilde{Ζ}^{*}$ is central, its scalar part is $\sum_\mu\lvertΖ_\mu\rvert^{2}$, non-negative and zero only at the origin, and its vector part vanishes; the value is a non-negative real scalar.
 
 ### The Clock Is Owned by the Composition Band
 
@@ -132,7 +132,7 @@ The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $ict
 The band has no nonzero element whose square vanishes. The square is the Hermitian square, whose scalar part is $\sum_\mu\lvert Q_\mu\rvert^{2}$; that scalar vanishes only at the origin, and a vanishing Hermitian square has a vanishing scalar part. The root set of $0$ is therefore $\{0\}$ alone:
 
 $$
-\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=0\}=\{0\}.
+\{\tilde{Ζ}:\tilde{Ζ}\star\tilde{Ζ}=0\}=\{0\}.
 $$
 
 The band has no nilpotent of index two. This is the first difference from the composition band, where the pure null elements are square-zero and the index is two; the band's square is $\tilde Q\tilde Q^{*}$ rather than $\tilde Q^{2}$, and it is positive semidefinite.

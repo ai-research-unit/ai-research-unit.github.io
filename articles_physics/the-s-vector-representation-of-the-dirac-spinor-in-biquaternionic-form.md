@@ -453,7 +453,7 @@ Each is an action with both elements written in the arrow; $\gamma_0$ and $\gamm
 
 The field of the older literature is a four-component spinor, a column of a minimal left ideal, and the arrays of this section are its matrices; the corpus writes the same field as an element of $\mathbb{B}$ and keeps the array as a display, which is why no $\gamma$ symbol and no column appears in the body of the article.
 
-$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is the right action $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ written in the frame; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame.
+$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is the right action $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ written in the frame; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame.
 
 ## Summary
 

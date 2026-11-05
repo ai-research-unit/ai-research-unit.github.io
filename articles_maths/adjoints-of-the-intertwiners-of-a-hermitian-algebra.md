@@ -54,7 +54,7 @@ $$
 
 ### The Group Algebra
 
-For $A = \mathbb{C}[G]$ with the standard form, the commutant of the left regular representation is the right regular representation, and the modular conjugation is the bounded antiunitary $J(g\xi) = g^{-1}\xi$; the adjoint on the commutant is $\bar R_g^{*} = \bar R_{g^{-1}}$, while the modular transpose is $\bar R_g^{\flat} = \bar L_g$, the left multiplication, so the two operations coincide on the commutant exactly for the central involutions.
+For $A = \mathbb{C}[G]$ with the standard form, the commutant of the left regular representation is the right regular representation, and the modular conjugation is the bounded antiunitary $J(g\zeta) = g^{-1}\zeta$; the adjoint on the commutant is $\bar R_g^{*} = \bar R_{g^{-1}}$, while the modular transpose is $\bar R_g^{\flat} = \bar L_g$, the left multiplication, so the two operations coincide on the commutant exactly for the central involutions.
 
 ### The Non-Tracial Case
 

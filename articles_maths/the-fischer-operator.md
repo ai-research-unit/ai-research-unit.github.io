@@ -67,7 +67,7 @@ $\Delta:\mathcal{P}_k\to\mathcal{P}_{k-2}$ is surjective, and multiplication by 
 $\mathcal{P}_{k-2}$ injectively with image meeting $\mathcal{H}_k$ only at $0$.
 
 *Proof.* The surjectivity follows from the map of the divisor: with the complexified symbol,
-$\Delta$ is induced by the quadratic form $\sum_\mu\xi_\mu^2$, which is nondegenerate, so the
+$\Delta$ is induced by the quadratic form $\sum_\mu\zeta_\mu^2$, which is nondegenerate, so the
 multiplication $\mathcal{P}_{k-2}\to\mathcal{P}_k$, $Q\mapsto|x|^2Q$, has kernel $0$ and the
 orthogonality is by the argument of *Regularity and the Cauchy–Riemann Operator*, where the lemma is
 stated and proved.

@@ -114,7 +114,7 @@ R_\mu f(n)=\frac{1}{\mu+\lambda}\sum_{k\ge0}\Bigl(\frac{\lambda}{\mu+\lambda}\Bi
 $$
 and the semigroup has no invariant probability, the process drifting to infinity.
 
-**Example (Brownian motion and the heat semigroup).** For the standard Brownian motion on $\mathbb R^d$ the semigroup is the **heat semigroup** $P_tf(x)=\int_{\mathbb R^d}(2\pi t)^{-d/2}\exp(-|x-y|^2/2t)f(y)\,dy$, with the Fourier multiplier $\widehat{P_tf}(\xi)=\exp(-t|\xi|^2/2)(\mathcal F f)(\xi)$ and the generator
+**Example (Brownian motion and the heat semigroup).** For the standard Brownian motion on $\mathbb R^d$ the semigroup is the **heat semigroup** $P_tf(x)=\int_{\mathbb R^d}(2\pi t)^{-d/2}\exp(-|x-y|^2/2t)f(y)\,dy$, with the Fourier multiplier $\widehat{P_tf}(\zeta)=\exp(-t|\zeta|^2/2)(\mathcal F f)(\zeta)$ and the generator
 $$
 L=\tfrac12\Delta,
 $$
@@ -150,7 +150,7 @@ A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0
 | $P_t=\exp(tL)$, $\partial/\partial t u=Lu$ | exponential formula and Kolmogorov backward equation |
 | $q_{xy}$, $Q$ | generator matrix and its action on finitely supported functions |
 | $\pi P_t=\pi$, $\pi(Lf)=0$ | invariant measure, its generator characterisation |
-| $\widehat{P_tf}(\xi)=\exp(-t|\xi|^2/2)\mathcal F f$ | heat semigroup on $\mathbb R^d$ |
+| $\widehat{P_tf}(\zeta)=\exp(-t|\zeta|^2/2)\mathcal F f$ | heat semigroup on $\mathbb R^d$ |
 | $L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial^2/\partial x^2-\theta x\partial/\partial x$ | Brownian and Ornstein–Uhlenbeck generators |
 
 ## Further Reading

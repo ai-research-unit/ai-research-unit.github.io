@@ -24,10 +24,10 @@ A **rooted tree** in general is a tree with a distinguished vertex, its vertices
 
 ### The Boundary of the Tree
 
-**Definition.** The **boundary** $\partial\mathcal{T}$ is the set $X^{\omega}$ of infinite words $\xi = x_1x_2x_3\cdots$ in the alphabet $X$. For a finite word $v$ the **cylinder** is
+**Definition.** The **boundary** $\partial\mathcal{T}$ is the set $X^{\omega}$ of infinite words $\zeta = x_1x_2x_3\cdots$ in the alphabet $X$. For a finite word $v$ the **cylinder** is
 
 $$
-[v] = \{\xi \in X^{\omega} : \xi\ \text{begins with } v\},
+[v] = \{\zeta \in X^{\omega} : \zeta\ \text{begins with } v\},
 $$
 
 and the boundary is given the topology whose basis is the family of cylinders; a sequence of infinite words converges exactly when, for every bound $n$, the length-$n$ prefixes are eventually constant. The **level** of the boundary at a vertex $v$ is the cylinder $[v]$, and the cylinders $[v]$ over the words of a fixed length $n$ form a partition of $X^{\omega}$ into $d^n$ closed open sets.
@@ -39,10 +39,10 @@ and the boundary is given the topology whose basis is the family of cylinders; a
 **Definition.** The **ultrametric** of the boundary is
 
 $$
-d(\xi, \eta) = 2^{-n(\xi,\eta)}, \qquad n(\xi,\eta) = \sup\{n : x_i = y_i\ \text{for } i \leq n\},
+d(\zeta, \eta) = 2^{-n(\zeta,\eta)}, \qquad n(\zeta,\eta) = \sup\{n : x_i = y_i\ \text{for } i \leq n\},
 $$
 
-where $n(\xi,\eta)$ is the length of the longest common prefix, with $d(\xi,\xi) = 0$. It satisfies the ultrametric inequality $d(\xi,\varkappa^{\mathrm{crd}}) \leq \max\{d(\xi,\eta), d(\eta,\varkappa^{\mathrm{crd}})\}$, its balls are the cylinders, and it is complete.
+where $n(\zeta,\eta)$ is the length of the longest common prefix, with $d(\zeta,\zeta) = 0$. It satisfies the ultrametric inequality $d(\zeta,\varkappa^{\mathrm{crd}}) \leq \max\{d(\zeta,\eta), d(\eta,\varkappa^{\mathrm{crd}})\}$, its balls are the cylinders, and it is complete.
 
 The distance of *Metric, Uniform and Complete Spaces* is placed on the boundary here; the ultrametric form is the one the tree supplies, and the two properties used below are that the balls are exactly the cylinders and that the space is compact. The boundary with its measure — the uniform measure that assigns to a cylinder $[v]$ the mass $d^{-|v|}$ — is a probability space, and the action of a self-similar group on it by measure-preserving transformations is the object whose ergodic theory and whose group-measure-space algebra belong to Part III; this article uses the boundary only as a compact topological space with the group action.
 
@@ -158,7 +158,7 @@ that is, $a = (\mathrm{id}, a)\,\varepsilon$ in the recursion, with $\varepsilon
 
 **Theorem.** The group $\langle a\rangle$ is infinite cyclic, and the action is level-transitive and self-replicating. The power $a^k$ acts trivially on the level $n$ exactly when $2^n$ divides $k$; in particular $a^{2^n}$ is the first power that fixes the level $n$, and $a$ has infinite order.
 
-**Proof sketch.** Reading $\xi \in X^{\omega}$ as the dyadic number $\sum_i x_i 2^{i-1}$, the recursion gives $a(\xi) = \xi + 1$ in the $2$-adic integers, whence the statement about the powers: adding $1$ exactly $2^n$ times is adding $2^n$, which changes nothing modulo $2^n$, that is, on the first $n$ digits, while $a^{k}$ with $0 < k < 2^n$ moves some word of length $n$ by the standard carry. Transitivity on $X^n$ is the statement that the residues modulo $2^n$ are all reached, and self-replication is by the recursion. The computations quoted were verified on the levels up to six.
+**Proof sketch.** Reading $\zeta \in X^{\omega}$ as the dyadic number $\sum_i x_i 2^{i-1}$, the recursion gives $a(\zeta) = \zeta + 1$ in the $2$-adic integers, whence the statement about the powers: adding $1$ exactly $2^n$ times is adding $2^n$, which changes nothing modulo $2^n$, that is, on the first $n$ digits, while $a^{k}$ with $0 < k < 2^n$ moves some word of length $n$ by the standard carry. Transitivity on $X^n$ is the statement that the residues modulo $2^n$ are all reached, and self-replication is by the recursion. The computations quoted were verified on the levels up to six.
 
 **Example (the portraits).** The portrait of $a$ has the transposition at the root, the identity along the left spine, and the transposition again at every vertex of the right spine; the adding machine is thus the automorphism that adds one, and it is the standard example of *Metric, Uniform and Complete Spaces* for the $p$-adic integers specialised to the boundary of the binary tree.
 
@@ -222,7 +222,7 @@ with $\varepsilon$ the root swap. Then $p$ is the root swap with sections $q$ at
 
 **Theorem.** The group $\langle p, q\rangle$ is the **lamplighter group** $(\mathbb{Z}/2)^{\mathbb{Z}} \rtimes \mathbb{Z}$ of *Infinite Groups*; the action is self-similar and level-transitive, and it is not contracting. It is the standard example showing that self-similarity and level-transitivity alone do not force the contraction of the next article.
 
-**Proof sketch.** The identification with the lamplighter group is that of *From fractal groups to fractal sets*: the boundary is read as the formal power series $\xi = x_1x_2\cdots \mapsto \sum_i x_i t^{i-1}$ over $\mathbb{Z}/2$, the generators act on it as the addition of $1$ together with the shift of the base, and the group generated is the semidirect product of the finitely supported configurations with that shift. Level-transitivity is visible one level down: $p$ is the transposition at the root, so on the second level it is the four-cycle $(00\ 10\ 01\ 11)$, and the transitivity on the levels up to six was verified directly. The action is not contracting: the sections of a product are products of sections, so the sections of the elements of the group generate new elements and no finite set can contain them all, which is what the criterion of the next article asks.
+**Proof sketch.** The identification with the lamplighter group is that of *From fractal groups to fractal sets*: the boundary is read as the formal power series $\zeta = x_1x_2\cdots \mapsto \sum_i x_i t^{i-1}$ over $\mathbb{Z}/2$, the generators act on it as the addition of $1$ together with the shift of the base, and the group generated is the semidirect product of the finitely supported configurations with that shift. Level-transitivity is visible one level down: $p$ is the transposition at the root, so on the second level it is the four-cycle $(00\ 10\ 01\ 11)$, and the transitivity on the levels up to six was verified directly. The action is not contracting: the sections of a product are products of sections, so the sections of the elements of the group generate new elements and no finite set can contain them all, which is what the criterion of the next article asks.
 
 The verification of the recursion confirms that $p$ and $q$ have infinite order; the failure of level-transitivity is read off the action on the $2$-adic integers, where the coordinate $x_1$ is preserved by both generators.
 
@@ -295,7 +295,7 @@ A level-transitive group is **weakly branch** when no rigid stabiliser is trivia
 | $\mathcal{T}$, $\mathcal{T}_v$ | The regular rooted tree and the subtree at the vertex $v$ |
 | $\partial\mathcal{T} = X^{\omega}$ | The boundary of the tree, a Cantor space |
 | $[v]$ | The cylinder of infinite words with prefix $v$ |
-| $d(\xi,\eta) = 2^{-n(\xi,\eta)}$ | The ultrametric of the boundary, $n$ the length of the longest common prefix |
+| $d(\zeta,\eta) = 2^{-n(\zeta,\eta)}$ | The ultrametric of the boundary, $n$ the length of the longest common prefix |
 | $\operatorname{Aut}(\mathcal{T})$, $\operatorname{Aut}(\mathcal{T}_n)$ | The automorphisms of the tree and of its truncation at level $n$ |
 | $g\|_v$ | The section of $g$ at $v$, with $g(vw) = g(v)\,g\|_v(w)$ |
 | $(gh)\|_v = g\|_{h(v)}h\|_v$ | The multiplication rule of the sections |

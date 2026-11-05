@@ -286,10 +286,10 @@ $$
 where the remainder is
 
 $$
-R_n(b) = \frac{f^{(n)}(\xi)}{n!} (b - a)^n
+R_n(b) = \frac{f^{(n)}(\zeta)}{n!} (b - a)^n
 $$
 
-for some $\xi$ between $a$ and $b$.
+for some $\zeta$ between $a$ and $b$.
 
 **Corollary.** If $f^{(n+1)} = 0$ on an interval, $f$ is a polynomial of degree at most $n$ there.
 
@@ -476,10 +476,10 @@ All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(a) > 0$ for $
 
 ### Definition
 
-Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{c_0, \dots, c_n\}$ and tags $\xi_i \in [c_{i-1}, c_i]$, the **Riemann–Stieltjes sum** is
+Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{c_0, \dots, c_n\}$ and tags $\zeta_i \in [c_{i-1}, c_i]$, the **Riemann–Stieltjes sum** is
 
 $$
-S(f, g, P, \xi) = \sum_{i=1}^n f(\xi_i) (g(c_i) - g(c_{i-1})).
+S(f, g, P, \zeta) = \sum_{i=1}^n f(\zeta_i) (g(c_i) - g(c_{i-1})).
 $$
 
 If the limit exists as the mesh of $P$ tends to $0$, it is the **Riemann–Stieltjes integral**

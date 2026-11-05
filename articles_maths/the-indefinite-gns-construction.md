@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The GNS construction turns a state on a $\ast$-algebra into a representation: from a positive linear functional $\omega$ one forms the sesquilinear form $\omega(y^{\dagger}x)$, divides by its radical and completes, obtaining a Hilbert space with a cyclic vector $\xi_{\omega}$ and a $\ast$-representation $\pi_{\omega}$ for which $\omega(x) = \langle\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}\rangle$. Every axiom of the construction depends on the positivity of $\omega$: it is positivity that makes the form an inner product and the radical what it is.
+The GNS construction turns a state on a $\ast$-algebra into a representation: from a positive linear functional $\omega$ one forms the sesquilinear form $\omega(y^{\dagger}x)$, divides by its radical and completes, obtaining a Hilbert space with a cyclic vector $\zeta_{\omega}$ and a $\ast$-representation $\pi_{\omega}$ for which $\omega(x) = \langle\pi_{\omega}(x)\zeta_{\omega},\zeta_{\omega}\rangle$. Every axiom of the construction depends on the positivity of $\omega$: it is positivity that makes the form an inner product and the radical what it is.
 
-The **indefinite GNS construction** drops positivity and keeps the rest. From a linear functional $\omega$ for which $\omega(x^{\dagger}x)$ is real but may be negative — an **indefinite state**, or a **weight** — the form $[x,y]_{\omega} = \omega(y^{\dagger}x)$ is Hermitian and invariant under the left multiplication, but it is indefinite, and the quotient of the algebra by its radical is a pre-Krein space rather than a pre-Hilbert one. Completing it in a majorant produces a **Krein space**, the left regular representation becomes a $\ast$-representation preserving the indefinite form, and $\omega$ is recovered as the diagonal matrix element $[\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}]$.
+The **indefinite GNS construction** drops positivity and keeps the rest. From a linear functional $\omega$ for which $\omega(x^{\dagger}x)$ is real but may be negative — an **indefinite state**, or a **weight** — the form $[x,y]_{\omega} = \omega(y^{\dagger}x)$ is Hermitian and invariant under the left multiplication, but it is indefinite, and the quotient of the algebra by its radical is a pre-Krein space rather than a pre-Hilbert one. Completing it in a majorant produces a **Krein space**, the left regular representation becomes a $\ast$-representation preserving the indefinite form, and $\omega$ is recovered as the diagonal matrix element $[\pi_{\omega}(x)\zeta_{\omega},\zeta_{\omega}]$.
 
 What the construction adds beyond the positive case is a choice. The indefinite form has no norm, so the completion has to be taken in a **majorant** — a positive definite form with $|[x,y]_{\omega}| \leq c\,\|x\|\,\|y\|$ — and different majorants give different, though equivalent, Krein spaces with different fundamental symmetries $J$. So the datum of an indefinite GNS representation is the pair (indefinite state, majorant), and the positive definite inner product, the topology, and the $J$ of the resulting Krein space are exactly what the majorant supplies. This is the precise sense in which the fundamental symmetry selects the positive definite inner product, and it is the difference from the classical construction, where the positive form is the majorant and there is nothing to choose.
 
@@ -54,10 +54,10 @@ $$
 \pi_{\omega} : A\to\mathcal{L}(K_{\omega}), \qquad \pi_{\omega}(x)(y + N_{\omega}) = xy + N_{\omega} ,
 $$
 
-which preserves the indefinite form, and the class $\xi_{\omega} = 1 + N_{\omega}$ is **cyclic** with
+which preserves the indefinite form, and the class $\zeta_{\omega} = 1 + N_{\omega}$ is **cyclic** with
 
 $$
-\boxed{\;[\pi_{\omega}(x)\xi_{\omega}, \xi_{\omega}] = \omega(x), \qquad [\pi_{\omega}(x)\xi_{\omega}, \pi_{\omega}(y)\xi_{\omega}] = \omega(y^{\dagger}x)\;}.
+\boxed{\;[\pi_{\omega}(x)\zeta_{\omega}, \zeta_{\omega}] = \omega(x), \qquad [\pi_{\omega}(x)\zeta_{\omega}, \pi_{\omega}(y)\zeta_{\omega}] = \omega(y^{\dagger}x)\;}.
 $$
 
 **Proof.** The form descends to the quotient because the radical is exactly the set orthogonal to everything; it is Hermitian and invariant there; the majorant makes the quotient a pre-Hilbert space whose completion is a Krein space with the form extended by continuity, which is possible because the majorant bounds it; the left multiplication descends because $N_{\omega}$ is a left ideal, and the invariance of the form is the adjoint axiom for the representation. Cyclicity is the density of the image of $A$, and the two displayed identities are the definitions.
@@ -72,9 +72,9 @@ $$
 
 - the **quotient**: it is taken by the radical of an indefinite form, which need not be the null set $\{x : \omega(x^{\dagger}x) = 0\}$;
 - the **completion**: the indefinite form has no norm, so a majorant, hence an extra datum, is required, and the completion is a Krein space and not a Hilbert space;
-- the **cyclic vector**: $\xi_{\omega}$ is cyclic but not of norm one, and $[\xi_{\omega},\xi_{\omega}] = \omega(1)$ may be negative or zero.
+- the **cyclic vector**: $\zeta_{\omega}$ is cyclic but not of norm one, and $[\zeta_{\omega},\zeta_{\omega}] = \omega(1)$ may be negative or zero.
 
-**Proof.** Each statement is the corresponding difference in the theorem; the vanishing of $[\xi_{\omega},\xi_{\omega}]$ happens when $\omega(1) = 0$, in which case the cyclic vector is neutral.
+**Proof.** Each statement is the corresponding difference in the theorem; the vanishing of $[\zeta_{\omega},\zeta_{\omega}]$ happens when $\omega(1) = 0$, in which case the cyclic vector is neutral.
 
 **Remark (what positivity did).** In the positive case the state supplies its own majorant, the radical is the null set, the completion is canonical and the cyclic vector may be normalised; every one of these conveniences is a consequence of the Cauchy–Schwarz inequality, which an indefinite state does not have. The indefinite construction is therefore not a weakening but a genuinely different construction, indexed by an extra choice.
 
@@ -104,15 +104,15 @@ Let $A = \mathbb{C}^{2}$ with the pointwise product and the conjugation involuti
 
 ### A Negative Weight
 
-On the same algebra let $\omega(a,b) = -b$. Then $[x,y]_{\omega} = -x_{2}\bar y_{2}$ has radical $\{x : x_{2} = 0\}$, the quotient is one-dimensional, and the completed Krein space is $\mathbb{C}^{0,1}$ with $[\xi_{\omega},\xi_{\omega}] = \omega(1) = -1$.
+On the same algebra let $\omega(a,b) = -b$. Then $[x,y]_{\omega} = -x_{2}\bar y_{2}$ has radical $\{x : x_{2} = 0\}$, the quotient is one-dimensional, and the completed Krein space is $\mathbb{C}^{0,1}$ with $[\zeta_{\omega},\zeta_{\omega}] = \omega(1) = -1$.
 
 ### The Positive Case
 
-For a state, say $\omega(a,b) = a$ on the same algebra, the construction yields the one-dimensional Hilbert space of the GNS representation of *The GNS Construction*, with $\xi_{\omega}$ of norm one; this is the boundary case in which the choice of majorant disappears.
+For a state, say $\omega(a,b) = a$ on the same algebra, the construction yields the one-dimensional Hilbert space of the GNS representation of *The GNS Construction*, with $\zeta_{\omega}$ of norm one; this is the boundary case in which the choice of majorant disappears.
 
 ## Summary
 
-The **indefinite GNS construction** starts from an **indefinite state**, a linear functional $\omega$ with $\omega(x^{\dagger}x)$ real but not necessarily positive, and forms the Hermitian, left-invariant but indefinite form $[x,y]_{\omega} = \omega(y^{\dagger}x)$. Dividing the algebra by the **radical** of that form and completing in a **majorant** — a positive definite form that bounds it — produces a **Krein space** $K_{\omega}$ on which the left regular representation is a $\ast$-representation preserving the form, with a cyclic vector $\xi_{\omega}$ satisfying $[\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}] = \omega(x)$ and $[\pi_{\omega}(x)\xi_{\omega},\pi_{\omega}(y)\xi_{\omega}] = \omega(y^{\dagger}x)$. It differs from the classical construction of *The GNS Construction* in three points: the quotient is by the radical of an indefinite form and not by the null set; the completion requires an extra datum, the majorant, and yields a Krein space; and the cyclic vector need not have norm one and may be neutral. The **fundamental symmetry** is the operator of the chosen majorant, $[x,y] = \langle Jx,y\rangle$, so the datum of the construction is the pair (indefinite state, majorant), the state fixing the representation up to $J$ and $J$ fixing the topology. The indefinite form and $J$ are *Krein Algebras* and *The Fundamental Symmetry*, the positive case is *The GNS Construction*, and the operator algebras are *Krein–von Neumann Algebras*.
+The **indefinite GNS construction** starts from an **indefinite state**, a linear functional $\omega$ with $\omega(x^{\dagger}x)$ real but not necessarily positive, and forms the Hermitian, left-invariant but indefinite form $[x,y]_{\omega} = \omega(y^{\dagger}x)$. Dividing the algebra by the **radical** of that form and completing in a **majorant** — a positive definite form that bounds it — produces a **Krein space** $K_{\omega}$ on which the left regular representation is a $\ast$-representation preserving the form, with a cyclic vector $\zeta_{\omega}$ satisfying $[\pi_{\omega}(x)\zeta_{\omega},\zeta_{\omega}] = \omega(x)$ and $[\pi_{\omega}(x)\zeta_{\omega},\pi_{\omega}(y)\zeta_{\omega}] = \omega(y^{\dagger}x)$. It differs from the classical construction of *The GNS Construction* in three points: the quotient is by the radical of an indefinite form and not by the null set; the completion requires an extra datum, the majorant, and yields a Krein space; and the cyclic vector need not have norm one and may be neutral. The **fundamental symmetry** is the operator of the chosen majorant, $[x,y] = \langle Jx,y\rangle$, so the datum of the construction is the pair (indefinite state, majorant), the state fixing the representation up to $J$ and $J$ fixing the topology. The indefinite form and $J$ are *Krein Algebras* and *The Fundamental Symmetry*, the positive case is *The GNS Construction*, and the operator algebras are *Krein–von Neumann Algebras*.
 
 ## Summary of Notation
 
@@ -123,8 +123,8 @@ The **indefinite GNS construction** starts from an **indefinite state**, a linea
 | $N_{\omega}$ | Radical of the form; the quotient is by it |
 | $\langle\cdot,\cdot\rangle$, $c$ | Majorant and its bound $|[x,y]_{\omega}|\leq c\|x\|\|y\|$ |
 | $K_{\omega}$ | The completed Krein space |
-| $\pi_{\omega}$, $\xi_{\omega}$ | Representation and cyclic vector |
-| $[\pi_{\omega}(x)\xi_{\omega},\xi_{\omega}] = \omega(x)$ | Recovery of the state |
+| $\pi_{\omega}$, $\zeta_{\omega}$ | Representation and cyclic vector |
+| $[\pi_{\omega}(x)\zeta_{\omega},\zeta_{\omega}] = \omega(x)$ | Recovery of the state |
 | $J$, $[x,y] = \langle Jx,y\rangle$ | Fundamental symmetry attached to the majorant |
 
 ## Further Reading

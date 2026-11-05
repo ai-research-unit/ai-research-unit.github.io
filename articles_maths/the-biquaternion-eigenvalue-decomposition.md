@@ -14,7 +14,7 @@ $$
 B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2},
 $$
 
-with the two primitive idempotents $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi)$ of the pure root $\vec\Xi=-i\vec Q/B$. In the Clifford reading, $i$ is the volume element $\omega$, the biquaternion vector part $\vec Q$ is a bivector, the root $\vec\Xi$ is a unit vector, and the idempotents are the standard vector idempotents of grades $0$ and $1$. The eigenvalues are central elements of grades $0$ and $3$. The article develops this reading, records the Peirce and spinor structure that it makes visible, and treats the two degenerate regimes.
+with the two primitive idempotents $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec{Ζ})$ of the pure root $\vec{Ζ}=-i\vec Q/B$. In the Clifford reading, $i$ is the volume element $\omega$, the biquaternion vector part $\vec Q$ is a bivector, the root $\vec{Ζ}$ is a unit vector, and the idempotents are the standard vector idempotents of grades $0$ and $1$. The eigenvalues are central elements of grades $0$ and $3$. The article develops this reading, records the Peirce and spinor structure that it makes visible, and treats the two degenerate regimes.
 
 The algebra and its four conjugations are from *The Biquaternion Algebra*; the spectrum and the characteristic polynomial are *The Spectrum*, §*The Spectral Criterion*; the normality criterion and the spectral theorem are §*The Hermitian Case* below; the roots of one and the idempotents are *Idempotents*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is §*The Eigenprojectors* below; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
 
@@ -88,20 +88,20 @@ $$
 as in *The Spectrum*, §*The Spectral Criterion*. Let $B$ be a square root of $Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ and assume $B\neq0$. Put
 
 $$
-\vec U=\frac{\vec Q}{B}, \qquad \vec\Xi=-i\vec U=-\frac{i\vec Q}{B}.
+\vec U=\frac{\vec Q}{B}, \qquad \vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B}.
 $$
 
-In the Clifford dictionary, $\vec Q$ is a bivector, $i=\omega$ is the volume element, and $\omega\vec Q$ is a vector; hence $\vec\Xi$ is a **Clifford vector**. Its square is
+In the Clifford dictionary, $\vec Q$ is a bivector, $i=\omega$ is the volume element, and $\omega\vec Q$ is a vector; hence $\vec{Ζ}$ is a **Clifford vector**. Its square is
 
 $$
-\vec\Xi^{2}=(-i)^{2}\frac{\vec Q^{2}}{B^{2}}=(-1)\frac{-B^{2}}{B^{2}}=1,
+\vec{Ζ}^{2}=(-i)^{2}\frac{\vec Q^{2}}{B^{2}}=(-1)\frac{-B^{2}}{B^{2}}=1,
 $$
 
-so $\vec\Xi$ is a unit vector, and it is a pure root of $+1$ in the sense of *Idempotents*, §*The Roots of One*. The choice of $B$ is two-fold, and the replacement $B\mapsto-B$ replaces $\vec\Xi$ by $-\vec\Xi$; only the unordered pair is determined by $\tilde Q$.
+so $\vec{Ζ}$ is a unit vector, and it is a pure root of $+1$ in the sense of *Idempotents*, §*The Roots of One*. The choice of $B$ is two-fold, and the replacement $B\mapsto-B$ replaces $\vec{Ζ}$ by $-\vec{Ζ}$; only the unordered pair is determined by $\tilde Q$.
 
 ### The Eigenvalues
 
-Since $\vec Q=iB\vec\Xi$,
+Since $\vec Q=iB\vec{Ζ}$,
 
 $$
 (\tilde Q-Q_{t}e_{t})^{2}=\vec Q^{2}=-B^{2}e_{t},
@@ -134,10 +134,10 @@ so the eigenvalues are distinct exactly when $B\neq0$, and the minimal polynomia
 Put
 
 $$
-\tilde\Pi_{+}=\tfrac12(e_{t}+\vec\Xi), \qquad \tilde\Pi_{-}=\tfrac12(e_{t}-\vec\Xi).
+\tilde\Pi_{+}=\tfrac12(e_{t}+\vec{Ζ}), \qquad \tilde\Pi_{-}=\tfrac12(e_{t}-\vec{Ζ}).
 $$
 
-These are the two idempotents of the root $\vec\Xi$ under the halving map of *Idempotents*, §*The Idempotents*. In the Clifford reading they are the **standard vector idempotents** of the unit vector $\vec\Xi$: they are idempotent, orthogonal and complete, and their grade support is $\{0,1\}$. They are primitive, and the pair is the complete orthogonal pair of *Peirce Decompositions of the Biquaternion Algebra*, §*Idempotents and Orthogonal Idempotents*.
+These are the two idempotents of the root $\vec{Ζ}$ under the halving map of *Idempotents*, §*The Idempotents*. In the Clifford reading they are the **standard vector idempotents** of the unit vector $\vec{Ζ}$: they are idempotent, orthogonal and complete, and their grade support is $\{0,1\}$. They are primitive, and the pair is the complete orthogonal pair of *Peirce Decompositions of the Biquaternion Algebra*, §*Idempotents and Orthogonal Idempotents*.
 
 The eigenvalue relations are
 
@@ -146,16 +146,16 @@ $$
 \tilde Q\tilde\Pi_{-}=\lambda_{-}\tilde\Pi_{-}.
 $$
 
-Indeed, since $\tilde Q=Q_{t}+\vec Q=Q_{t}+iB\vec\Xi$ and $\vec\Xi^{2}=1$,
+Indeed, since $\tilde Q=Q_{t}+\vec Q=Q_{t}+iB\vec{Ζ}$ and $\vec{Ζ}^{2}=1$,
 
 $$
 \tilde Q\tilde\Pi_{+}
-=(Q_{t}+iB\vec\Xi)\tfrac12(1+\vec\Xi)
-=\tfrac12(Q_{t}+iB)(1+\vec\Xi)
+=(Q_{t}+iB\vec{Ζ})\tfrac12(1+\vec{Ζ})
+=\tfrac12(Q_{t}+iB)(1+\vec{Ζ})
 =\lambda_{+}\tilde\Pi_{+},
 $$
 
-and the other relation is the same with $iB$ replaced by $-iB$ and $\vec\Xi$ by $-\vec\Xi$. Equivalently, by the Lagrange–Sylvester formula of *The Lagrange–Sylvester Eigenprojector Formula*, §*The Eigenprojector Formula*,
+and the other relation is the same with $iB$ replaced by $-iB$ and $\vec{Ζ}$ by $-\vec{Ζ}$. Equivalently, by the Lagrange–Sylvester formula of *The Lagrange–Sylvester Eigenprojector Formula*, §*The Eigenprojector Formula*,
 
 $$
 \tilde\Pi_{+}=\frac{\tilde Q-\lambda_{-}}{\lambda_{+}-\lambda_{-}}, \qquad
@@ -175,7 +175,7 @@ $$
 This is the eigenvalue decomposition of §*The Eigenprojectors* above, read in the Clifford algebra. The eigenvalues are distinct, the idempotents are nonzero, orthogonal and complete, and the resolution is unique up to the swap of the two signs. The scalar-vector form is
 
 $$
-\tilde Q=Q_{t}e_{t}+B\vec U=Q_{t}e_{t}+iB\vec\Xi,
+\tilde Q=Q_{t}e_{t}+B\vec U=Q_{t}e_{t}+iB\vec{Ζ},
 $$
 
 and the grade decomposition reads $Q_{t}$ in grade $0$, $B\vec U$ in grade $2$, and the eigenvalue $iB$ in grade $3$ when $Q_{t}$ and $B$ are real; for complex coefficients the four grades are read as in §*The Grades of the Biquaternion Components*. The idempotents are of grades $0$ and $1$, and the grade-$1$ parts cancel in the sum.
@@ -192,7 +192,7 @@ $$
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},
 $$
 
-and each corner is one complex line: the diagonal corners are $\mathbb{C}\tilde\Pi_{+}$ and $\mathbb{C}\tilde\Pi_{-}$, and the mixed corners are square-zero. This is the decomposition of *Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, attached to the root $\vec\Xi=-i\vec Q/B$.
+and each corner is one complex line: the diagonal corners are $\mathbb{C}\tilde\Pi_{+}$ and $\mathbb{C}\tilde\Pi_{-}$, and the mixed corners are square-zero. This is the decomposition of *Peirce Decompositions of the Biquaternion Algebra*, §*The Biquaternion Case*, attached to the root $\vec{Ζ}=-i\vec Q/B$.
 
 The diagonal part is
 
@@ -249,23 +249,23 @@ and the pair is not determined by $\tilde Q$. The two-projector writing is there
 
 Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$; the conjugations are those of *Algebra and Element Conventions*, §*The Conjugations*. In the Clifford reading, the star is the Clifford conjugation composed with the appropriate grade operations, and a Hermitian biquaternion is a normal element whose spectral projectors are fixed by the star.
 
-**Proposition.** Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_{\pm}$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec\Xi$ is purely imaginary; (iv) $\tilde Q$ is normal.
+**Proposition.** Let $B\neq0$. The following are equivalent: (i) $\tilde\Pi_{\pm}$ are Hermitian; (ii) $\vec U$ is real; (iii) $\vec{Ζ}$ is purely imaginary; (iv) $\tilde Q$ is normal.
 
-*Proof.* (ii)$\iff$(iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec\Xi=-i\vec U=-\omega\vec U$ is its Hodge dual vector, so $\vec U$ is real exactly when $\vec\Xi$ is purely imaginary. For (i), $\tilde\Pi_\pm^{*}=\tfrac12(e_t\pm\vec\Xi^{*})$ with $\vec\Xi^{*}=-\overline{\vec\Xi}$, so the projectors are Hermitian exactly when $\vec\Xi=-\overline{\vec\Xi}$, which is (iii). For (iv), the matrix model turns $[\tilde Q,\tilde Q^{*}]=0$ into $\vec U\times\overline{\vec U}=0$, with $\times$ the complex bilinear cross product: normality forces the vector part to be parallel to its conjugate. If $\overline{\vec U}=\alpha\vec U$, conjugating $\vec U\cdot\vec U=1$ gives $\alpha^{2}=1$, and $\alpha=-1$ would give $\vec U\cdot\vec U=-1$; hence $\alpha=1$ and $\vec U$ is real. This proves (iv)$\iff$(ii) and closes the cycle.
+*Proof.* (ii)$\iff$(iii) is the Clifford dictionary: $\vec U$ is a bivector and $\vec{Ζ}=-i\vec U=-\omega\vec U$ is its Hodge dual vector, so $\vec U$ is real exactly when $\vec{Ζ}$ is purely imaginary. For (i), $\tilde\Pi_\pm^{*}=\tfrac12(e_t\pm\vec{Ζ}^{*})$ with $\vec{Ζ}^{*}=-\overline{\vec{Ζ}}$, so the projectors are Hermitian exactly when $\vec{Ζ}=-\overline{\vec{Ζ}}$, which is (iii). For (iv), the matrix model turns $[\tilde Q,\tilde Q^{*}]=0$ into $\vec U\times\overline{\vec U}=0$, with $\times$ the complex bilinear cross product: normality forces the vector part to be parallel to its conjugate. If $\overline{\vec U}=\alpha\vec U$, conjugating $\vec U\cdot\vec U=1$ gives $\alpha^{2}=1$, and $\alpha=-1$ would give $\vec U\cdot\vec U=-1$; hence $\alpha=1$ and $\vec U$ is real. This proves (iv)$\iff$(ii) and closes the cycle.
 
 **Theorem (the spectral theorem for a normal biquaternion).** Let $B\neq0$. Then $\tilde Q$ is normal exactly when $\vec U$ is real, and in that case $\tilde\Pi_\pm$ are Hermitian, $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$ is an orthogonal decomposition for the Hermitian form, with each summand of complex dimension two, and $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ is its spectral resolution. The diagonal part $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ is the centraliser of $\tilde Q$, of complex dimension two, not the whole algebra. A normal biquaternion is Hermitian exactly when its spectrum is real.
 
-When the conditions hold, the projectors are the standard idempotents of the pure root $\vec\Xi=-i\vec u$ over a real unit vector $\vec u$. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
+When the conditions hold, the projectors are the standard idempotents of the pure root $\vec{Ζ}=-i\vec u$ over a real unit vector $\vec u$. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
 
 ### The Grade Reading of the Hermitian Case
 
-The Hermitian condition has a grade reading. The biquaternion star fixes the real scalar part and the imaginary vector part, and negates the real vector part and the imaginary scalar part; in the Clifford grading, it fixes grades $0$ and $1$ and negates grades $2$ and $3$ up to the appropriate conjugation. A Hermitian element therefore has its grade-$0$ and grade-$1$ components real and its grade-$2$ and grade-$3$ components imaginary, which is the statement that $\vec Q=i\vec q'$ with $\vec q'$ real. The pure root $\vec\Xi=-\omega\vec U$ is then purely imaginary, equal to $-i\vec u$ for a real unit vector $\vec u$, and the projectors $\frac12(1\pm\vec\Xi)$ are the Hermitian idempotents of that pure root. The spectral resolution is the orthogonal decomposition of the Hermitian form.
+The Hermitian condition has a grade reading. The biquaternion star fixes the real scalar part and the imaginary vector part, and negates the real vector part and the imaginary scalar part; in the Clifford grading, it fixes grades $0$ and $1$ and negates grades $2$ and $3$ up to the appropriate conjugation. A Hermitian element therefore has its grade-$0$ and grade-$1$ components real and its grade-$2$ and grade-$3$ components imaginary, which is the statement that $\vec Q=i\vec q'$ with $\vec q'$ real. The pure root $\vec{Ζ}=-\omega\vec U$ is then purely imaginary, equal to $-i\vec u$ for a real unit vector $\vec u$, and the projectors $\frac12(1\pm\vec{Ζ})$ are the Hermitian idempotents of that pure root. The spectral resolution is the orthogonal decomposition of the Hermitian form.
 
 **Remark.** The Hermitian case is the case in which the internal eigenvalue is real. The eigenvalues $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ lie in $\mathbb{R}\subset\mathbb{C}=Z(\mathbb{B})$, and the projectors are Hermitian. The general internal case, with complex $\vec U$, has complex eigenvalues in $Z$ and non-Hermitian projectors; the spectral theorem still holds in the complex algebra, but the projectors are not fixed by the star.
 
 **Remark (the flow).** The theorem characterises normality by the orthogonality of the spectral projectors. It does not characterise unitarity of the flow. The projectors are Hermitian exactly when the root is real, whereas $e^{\theta\tilde Q}$ is unitary for real $\theta$ exactly when $\tilde Q^*=-\tilde Q$, which is the material sector and is strictly stronger; the self-adjoint flow is the Hermitian sector. The exact criteria, together with the Hermitian norm of the flow and the norm deficit $\lVert\vec U\rVert^2\ge1$, are stated in *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*Normality, Unitarity and the Hermitian Norm of the Flow*.
 
-**Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec\Xi$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
+**Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec{Ζ}$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -290,12 +290,12 @@ $$
 \qquad
 \lambda_{\pm}=Q_{t}\pm iB=Q_{t}\pm B\omega,
 \qquad
-\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi),
+\tilde\Pi_{\pm}=\tfrac12(1\pm\vec{Ζ}),
 $$
 
-with $\vec\Xi=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$. The eigenvalues are central elements of grades $0$ and $3$; the projectors are standard vector idempotents of grades $0$ and $1$. The decomposition is the internal non-scalar case of the Clifford spectral theory: the imaginary unit is the volume element, not an external scalar.
+with $\vec{Ζ}=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$. The eigenvalues are central elements of grades $0$ and $3$; the projectors are standard vector idempotents of grades $0$ and $1$. The decomposition is the internal non-scalar case of the Clifford spectral theory: the imaginary unit is the volume element, not an external scalar.
 
-The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two Peirce carriers, and the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec\Xi=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
+The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two Peirce carriers, and the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec{Ζ}=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
 
 The spectrum and the similarity classification are *The Spectrum*, §*The Spectral Criterion* and §*The Similarity Classification*; the coordinate formulas and the projectors are §*The Eigenprojectors* above; the roots and idempotents are *Idempotents*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
 
@@ -311,9 +311,9 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 | $\tilde Q=Q_{t}e_{t}+\vec Q$ | a biquaternion, with $\vec Q=Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z}$ |
 | $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ | the square of the vector norm |
 | $\vec U=\vec Q/B$ | the unit bivector |
-| $\vec\Xi=-i\vec U$ | the pure root, a unit vector |
+| $\vec{Ζ}=-i\vec U$ | the pure root, a unit vector |
 | $\lambda_{\pm}=Q_{t}\pm iB$ | the eigenvalues, central of grades $0$ and $3$ |
-| $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi)$ | the eigenprojectors, grades $0$ and $1$ |
+| $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec{Ζ})$ | the eigenprojectors, grades $0$ and $1$ |
 | $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ | the Peirce corners |
 | $I_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ | the Peirce carriers, the minimal left ideals, the spinor spaces |
 

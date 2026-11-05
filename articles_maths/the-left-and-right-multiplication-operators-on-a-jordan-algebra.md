@@ -150,16 +150,16 @@ In an associative commutative Jordan algebra the quadratic representation is aga
 
 ### The Spin Factor
 
-Let $J = R\oplus V$ be the spin factor of *Jordan Algebras*, with $V$ a finite-dimensional space carrying the standard form $B$, and let $a = (\alpha, v)$. Writing $U_a = 2L_a^2 - L_{a^2}$ and using the product $(\alpha,v)\bullet(\beta,w) = (\alpha\beta+B(v,w),\ \alpha w+\beta v)$, one obtains for $x = (\xi, z)$
+Let $J = R\oplus V$ be the spin factor of *Jordan Algebras*, with $V$ a finite-dimensional space carrying the standard form $B$, and let $a = (\alpha, v)$. Writing $U_a = 2L_a^2 - L_{a^2}$ and using the product $(\alpha,v)\bullet(\beta,w) = (\alpha\beta+B(v,w),\ \alpha w+\beta v)$, one obtains for $x = (\zeta, z)$
 
 $$
-U_a(x) = \Bigl((\alpha^2+B(v,v))\xi + 2\alpha\,B(v,z),\ \ (\alpha^2-B(v,v))z + 2\alpha\xi v + 2B(v,z)v\Bigr) .
+U_a(x) = \Bigl((\alpha^2+B(v,v))\zeta + 2\alpha\,B(v,z),\ \ (\alpha^2-B(v,v))z + 2\alpha\zeta v + 2B(v,z)v\Bigr) .
 $$
 
 For the unit $a = (1,0)$ this is the identity. For a symmetry $a = (0,u)$ with $B(u,u) = 1$ it simplifies to
 
 $$
-U_a(\xi, z) = \bigl(\xi,\ 2B(u,z)u - z\bigr),
+U_a(\zeta, z) = \bigl(\zeta,\ 2B(u,z)u - z\bigr),
 $$
 
 the identity on the scalar line and the reflection in the hyperplane $u^{\perp}$ on the vector part, as computed for $JSpin_2$ in *The Jordan Multiplication Operators*. The operator $U_a$ is thus an automorphism of order two of the spin factor, and it is the model of the reflections that *Reflections as Signed Two-Sided Operators on a Jordan Algebra* twists by a grade involution.

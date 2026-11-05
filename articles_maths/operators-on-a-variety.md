@@ -17,7 +17,7 @@ $$
 \mathcal{E}nd(\mathcal{O}_X) = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X),
 $$
 
-whose sections over an open $\Xi$ are the $\mathcal{O}_X(\Xi)$-linear endomorphisms of $\mathcal{O}_X(\Xi)$, with composition as product. Its global sections form the $k$-algebra $\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)$.
+whose sections over an open $Ζ$ are the $\mathcal{O}_X(Ζ)$-linear endomorphisms of $\mathcal{O}_X(Ζ)$, with composition as product. Its global sections form the $k$-algebra $\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)$.
 
 **Theorem (the operator layer is the structure sheaf).** The map
 $$
@@ -29,7 +29,7 @@ $$
 $$
 a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.
 
-*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $\Xi$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $\Xi$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
+*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $Ζ$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $Ζ$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
 
 **Remark (the two readings of "endomorphism").** The theorem is about the operators **linear over the structure sheaf**, and those are the multiplications. The ring endomorphisms of $\mathcal{O}_X$ as a sheaf of rings, which need not be $\mathcal{O}_X$-linear, are a different and larger object, and they are treated in *Endomorphisms and Automorphisms of the Structure Sheaf* below. The two must be kept apart: a multiplication $m_s$ is never an automorphism of the pair $(X,\mathcal{O}_X)$ unless $s$ is a unit, while an automorphism of the variety is a ring automorphism that is almost never $\mathcal{O}_X$-linear.
 
@@ -37,7 +37,7 @@ a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the 
 
 ## Vector Fields
 
-**Definition.** A **derivation** of $\mathcal{O}_X$ over $k$ is a $k$-linear map $D : \mathcal{O}_X(\Xi)\to\mathcal{O}_X(\Xi)$ on each open $\Xi$, compatible with restriction, satisfying the Leibniz rule
+**Definition.** A **derivation** of $\mathcal{O}_X$ over $k$ is a $k$-linear map $D : \mathcal{O}_X(Ζ)\to\mathcal{O}_X(Ζ)$ on each open $Ζ$, compatible with restriction, satisfying the Leibniz rule
 $$
 D(fg) = f\,D(g) + D(f)\,g .
 $$
@@ -46,11 +46,11 @@ $$
 \mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X).
 $$
 
-**Theorem (the operator structure of the vector fields).** On each open $\Xi$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(\Xi))$ form a Lie algebra under the commutator
+**Theorem (the operator structure of the vector fields).** On each open $Ζ$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(Ζ))$ form a Lie algebra under the commutator
 $$
 \boxed{\;[D_1,D_2] = D_1D_2 - D_2D_1\;},
 $$
-and a module over the ring $\mathcal{O}_X(\Xi)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
+and a module over the ring $\mathcal{O}_X(Ζ)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
 $$
 [fD_1,\,gD_2] = fg\,[D_1,D_2] + f\,D_1(g)\,D_2 - g\,D_2(f)\,D_1 ,
 $$

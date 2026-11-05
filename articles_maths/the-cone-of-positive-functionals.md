@@ -75,7 +75,7 @@ so every state is a weak-$\ast$ limit of convex combinations of pure states; the
 
 **Theorem (the pure states and the maximal left ideals).** In a unital C\*-algebra the pure states are exactly the states whose associated left ideals $N_\varphi = \{a : \varphi(a^{*}a) = 0\}$ are maximal; equivalently, the pure states are the states whose Gelfand–Naimark–Segal representation is irreducible, and the equivalence classes of the pure states are the unitary equivalence classes of the irreducible representations.
 
-*Proof.* The Gelfand–Naimark–Segal construction associates to a state $\varphi$ a representation $\pi_\varphi$ with cyclic vector $\xi$ and $N_\varphi$ as its kernel; the representation is irreducible exactly when $N_\varphi$ is maximal, and a state is a convex combination of two states exactly when its representation is a direct sum, so the irreducibility is equivalent to the purity. This is the standard theorem of the theory, and the details belong to *Operator Algebras*.
+*Proof.* The Gelfand–Naimark–Segal construction associates to a state $\varphi$ a representation $\pi_\varphi$ with cyclic vector $\zeta$ and $N_\varphi$ as its kernel; the representation is irreducible exactly when $N_\varphi$ is maximal, and a state is a convex combination of two states exactly when its representation is a direct sum, so the irreducibility is equivalent to the purity. This is the standard theorem of the theory, and the details belong to *Operator Algebras*.
 
 **Corollary (the commutative case).** When $A$ is a commutative unital C\*-algebra the pure states are exactly the **characters**, the multiplicative functionals; the state space is the set of the probability measures on the Gelfand spectrum $X$ of $A$, and the pure states are the point masses,
 

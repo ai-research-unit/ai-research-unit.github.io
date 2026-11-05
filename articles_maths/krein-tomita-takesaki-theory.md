@@ -10,7 +10,7 @@ The modular data itself — the Tomita operator, the $J$-modular operator and th
 
 ## The Modular Group of a Krein–von Neumann Algebra
 
-**Definition.** Let $\mathcal{M}$ be a Krein–von Neumann algebra on $K$ with a modular vector $\xi$, $J$-modular operator $\Delta$ and $J$-modular conjugation $\jmath$, in the sense of *The Indefinite Modular Operator*. The **$J$-modular automorphism group** is
+**Definition.** Let $\mathcal{M}$ be a Krein–von Neumann algebra on $K$ with a modular vector $\zeta$, $J$-modular operator $\Delta$ and $J$-modular conjugation $\jmath$, in the sense of *The Indefinite Modular Operator*. The **$J$-modular automorphism group** is
 
 $$
 \boxed{\;\sigma_t = \mathrm{Ad}\,\Delta^{it} : \mathcal{M}\to\mathcal{M}, \qquad \sigma_t(x) = \Delta^{it}x\Delta^{-it}\;} .
@@ -40,7 +40,7 @@ So the $J$-modular conjugation is an anti-isomorphism of the algebra onto its co
 
 **Proof.** The first identity is the classical conjugation theorem transported by $J$: since the polar decomposition of $\bar S$ is $\jmath\Delta^{1/2}$ and $S$ is defined by the involution, the map $x\mapsto\jmath x\jmath$ reverses products and carries $\mathcal{M}$ to the operators commuting with $\mathcal{M}$; the second identity follows from $S^{2} = \mathrm{id}$ on the dense domain and the uniqueness of the polar decomposition; the third is the $J$-commutation of $\jmath$ established in *The Indefinite Modular Operator*.
 
-**Corollary (the standard form).** In the triple $(\mathcal{M}, K, \xi)$ the algebra acts on $K$, the commutant is its $J$-modular image, and the vector is $J$-cyclic for both; this is the indefinite **standard form** of the algebra.
+**Corollary (the standard form).** In the triple $(\mathcal{M}, K, \zeta)$ the algebra acts on $K$, the commutant is its $J$-modular image, and the vector is $J$-cyclic for both; this is the indefinite **standard form** of the algebra.
 
 **Proof.** Cyclicity for $\mathcal{M}$ and for $\mathcal{M}^{c}$ is the modular hypothesis, and the image statement is the theorem.
 
@@ -58,7 +58,7 @@ for all real $t$.
 
 **Theorem ($J$-KMS characterisation).** For a $J$-positive faithful weight $\omega$ with $J$-modular group $\sigma$, the functional $\omega$ is $J$-KMS at $\beta$ with respect to $\sigma$; conversely, a strongly continuous group of $J$-automorphisms of $\mathcal{M}$ satisfying the $J$-KMS condition for $\omega$ coincides with the $J$-modular group of $\omega$.
 
-**Proof.** The direct statement is the classical KMS computation for $\omega(x) = [\pi(x)\xi,\xi]$, read with the indefinite adjoint: the analytic continuation of $t\mapsto[\pi(x\sigma_t(y))\xi,\xi]$ to the strip is the content of the modular relation, and $J$-positivity replaces positivity so that the boundary values used are the $J$-positive ones. The converse is the uniqueness of the modular group, which is the second half of the classical theorem and is transported by $J$ as in the proof of the $J$-modular group.
+**Proof.** The direct statement is the classical KMS computation for $\omega(x) = [\pi(x)\zeta,\zeta]$, read with the indefinite adjoint: the analytic continuation of $t\mapsto[\pi(x\sigma_t(y))\zeta,\zeta]$ to the strip is the content of the modular relation, and $J$-positivity replaces positivity so that the boundary values used are the $J$-positive ones. The converse is the uniqueness of the modular group, which is the second half of the classical theorem and is transported by $J$ as in the proof of the $J$-modular group.
 
 **Proposition (the definite case).** For $J = \mathrm{id}$ the $J$-KMS condition is the KMS condition of *The Modular Group and the KMS Condition*, the theorem is the Tomita–Takesaki theorem of *The Modular Operator and Tomita-Takesaki Theory*, and the modular conjugation is the classical conjugation with $\jmath\mathcal{M}\jmath = \mathcal{M}'$.
 
@@ -74,7 +74,7 @@ Let $K = L^{2}$-type Hilbert space of *The Modular Operator and Tomita-Takesaki 
 
 ### A Pontryagin Algebra
 
-Let $K = \mathbb{C}^{1,1}$ with $\mathcal{M}$ the diagonal matrices, $J = \mathrm{diag}(1,-1)$ and $\xi = e_1+e_2$. The $J$-modular operator is the identity, the $J$-modular group is trivial, and the $J$-modular conjugation is the antilinear coordinate exchange, which carries $\mathcal{M}$ to $\mathcal{M}^{c} = \mathcal{M}$ and commutes with $J$; the $J$-KMS condition is satisfied by every $J$-positive functional at every $\beta$, since the flow is trivial.
+Let $K = \mathbb{C}^{1,1}$ with $\mathcal{M}$ the diagonal matrices, $J = \mathrm{diag}(1,-1)$ and $\zeta = e_1+e_2$. The $J$-modular operator is the identity, the $J$-modular group is trivial, and the $J$-modular conjugation is the antilinear coordinate exchange, which carries $\mathcal{M}$ to $\mathcal{M}^{c} = \mathcal{M}$ and commutes with $J$; the $J$-KMS condition is satisfied by every $J$-positive functional at every $\beta$, since the flow is trivial.
 
 ### The Definite Case
 

@@ -24,9 +24,9 @@ $$
 $$
 so that $\varphi\circ\sigma_x=\mathrm{id}$ for every $x\in X$ and $\varphi^{-1}(\{y\})=\{\sigma_x(y):x\in X\}$ counted with multiplicity; the branches are the contractions of the coding map of the group, and the tile $T_v$ is the image of $\mathcal{J}_G$ under the composition of the branches along $v$.
 
-**Proposition (the coding).** The coding map $\pi:\partial\mathcal{T}\to\mathcal{J}_G$ intertwines the shift of the boundary with $\varphi$: $\pi(x\xi)=\sigma_x(\pi(\xi))$ and $\varphi(\pi(x\xi))=\pi(\xi)$. In particular the diagram of the boundary and of the limit space commutes, and the two systems are conjugate when the coding is injective.
+**Proposition (the coding).** The coding map $\pi:\partial\mathcal{T}\to\mathcal{J}_G$ intertwines the shift of the boundary with $\varphi$: $\pi(x\zeta)=\sigma_x(\pi(\zeta))$ and $\varphi(\pi(x\zeta))=\pi(\zeta)$. In particular the diagram of the boundary and of the limit space commutes, and the two systems are conjugate when the coding is injective.
 
-*Proof.* The tiles are nested, $T_{x\xi}\subset T_x$, and the contraction of the composition $S_{x_1}\cdots S_{x_n}$ tends to zero, so the coded point satisfies the two identities; the conjugation is the identification of the two shifts when the coding is injective, which is the case when the group is self-replicating and the action is faithful. The statement is that of *Limit Spaces and Schreier Graphs*.
+*Proof.* The tiles are nested, $T_{x\zeta}\subset T_x$, and the contraction of the composition $S_{x_1}\cdots S_{x_n}$ tends to zero, so the coded point satisfies the two identities; the conjugation is the identification of the two shifts when the coding is injective, which is the case when the group is self-replicating and the action is faithful. The statement is that of *Limit Spaces and Schreier Graphs*.
 
 ### The Local Degree
 

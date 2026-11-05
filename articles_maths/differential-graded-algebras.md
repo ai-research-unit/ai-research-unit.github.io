@@ -129,7 +129,7 @@ $$
 \Omega(C) = T_k(\bar C[-1]) ,
 $$
 
-the tensor algebra on the desuspension of $\bar C$, with the unique derivation extending $d(\xi) = -d_C(\xi)$ for $\xi\in\bar C$ on the generators; the sign is chosen so that the deconcatenation of the coalgebra and the concatenation of the algebra are adjoint.
+the tensor algebra on the desuspension of $\bar C$, with the unique derivation extending $d(\zeta) = -d_C(\zeta)$ for $\zeta\in\bar C$ on the generators; the sign is chosen so that the deconcatenation of the coalgebra and the concatenation of the algebra are adjoint.
 
 **Theorem (bar–cobar adjunction, standard).** The bar and cobar constructions form an adjoint pair
 

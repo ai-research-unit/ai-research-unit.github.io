@@ -224,7 +224,7 @@ No arrow of time, no preferred generator and no thermal reading are supplied. Th
 | $B=\sqrt{(\vec Q,\vec Q)}$ | the complex norm of the vector part |
 | $\vec U=\vec Q/B$ | the axis, a pure root of $-1$, defined for $B\neq0$ |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the eigenprojections, $\vec\Xi=-i\vec U$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, $\vec{Ζ}=-i\vec U$ |
 | $\ker\exp$ | the exponents that exponentiate to $e_t$ |
 | $L=\pi i m\,e_t+\pi n\,\vec U$, $m\equiv n\pmod2$ | the parity-matched lattice |
 | $\operatorname{Log}\tilde Q$ | the principal logarithm |

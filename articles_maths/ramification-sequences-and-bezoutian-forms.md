@@ -263,7 +263,7 @@ so that $g_2$ is irreducible with $g_2(0) = a = 2$ and residue field $F_{g_2} = 
 The class
 
 $$
-\xi = \{g_1, a\} + \{g_2, ab\} = \{g_1,2\} + \{g_2,6\} \in k_2(\mathbb{Q}(t))
+\zeta = \{g_1, a\} + \{g_2, ab\} = \{g_1,2\} + \{g_2,6\} \in k_2(\mathbb{Q}(t))
 $$
 
 has the ramification sequence

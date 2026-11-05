@@ -363,7 +363,7 @@ The classification supplies a second reading of the same eight operations: they 
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\psi\mapsto\psi\Gamma=-i\psi\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |
 | $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$; $\mathbb{D}^2=\Box I$; $(\mathbb{D}-m)\Psi=0$ is the pair |
 | $\tilde K=-E_{\vec p}e_t+i\vec p$ | Symbol of $\tilde\nabla$ on $e^{-ip\cdot x}$; $\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2$ |
-| $J=\bar{\cdot}$, $\tilde\Xi^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
+| $J=\bar{\cdot}$, $\tilde{Ζ}^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
 | $C[\tilde\Psi]=(-\tilde\Psi_R^{\,J},\tilde\Psi_L^{\,J})$ | Charge conjugation (anti-linear, exchanges the entries, internal factor $\Gamma$, $C^2=-e_t$) |
 | $P[\tilde\Psi](t',\vec x)=(\tilde\Psi_R,\tilde\Psi_L)(t',-\vec x)$ | Parity (linear, exchanges the entries, no internal factor, $P^2=\mathrm{id}$) |
 | $T[\tilde\Psi](t',\vec x)=(\tilde\Psi_L^{\,J},\tilde\Psi_R^{\,J})(-t',\vec x)$ | Time reversal (anti-linear, keeps the entries, no internal factor, $T^2=\mathrm{id}$) |

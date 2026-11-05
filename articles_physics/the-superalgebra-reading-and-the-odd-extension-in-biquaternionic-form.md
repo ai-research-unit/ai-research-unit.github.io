@@ -116,7 +116,7 @@ $$
 
 **Remark (why the two behave differently).** The adjoint reverses the order of the two factors, and the graded bracket distinguishes the two orders by the sign $(-1)^{\lvert a\rvert\lvert b\rvert}$ exactly in the odd-odd case, where the bracket is symmetric: a symmetric bracket is preserved by the reversal, an antisymmetric one is negated. The statement is therefore not an accident of the ambient algebra but the interaction of two signs, the order reversal of the adjoint and the Koszul sign of the bracket. On the even part, where the bracket is the Lie bracket of the framework, the rule reads $\bigl([a,b]\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]$, so the bracket of two anti-Hermitian elements is anti-Hermitian: the anti-Hermitian part is a Lie subalgebra, the compact form of the framework, while the Hermitian generators enter it with the conventional factor $i$.
 
-**Remark (the Koszul-signed convention and what the star is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(\xi\eta)^{*}=(-1)^{\lvert\xi\rvert\lvert\eta\rvert}\eta^{*}\xi^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is **not** of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has
+**Remark (the Koszul-signed convention and what the star is not).** A superalgebra is often equipped with a super-* satisfying the Koszul-signed rule $(\zeta\eta)^{*}=(-1)^{\lvert\zeta\rvert\lvert\eta\rvert}\eta^{*}\zeta^{*}$. For such a structure the bracket-adjoint identity reads $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}}$ without the extra parity sign, and the two rules agree on a mixed pair and differ on an odd-odd one. The star of the corpus is **not** of that kind: on two generators $v_0$ and $v_1$, both odd and both anti-Hermitian, one has
 
 $$
 (v_0v_1)^{*}=v_1^{*}v_0^{*}=(-v_1)(-v_0)=v_1v_0=-v_0v_1 ,
@@ -311,10 +311,10 @@ $$
 
 and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.
 
-**The central grading and the cell.** The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that
+**The central grading and the cell.** The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that
 
 $$
-\chi^2=i^2\,\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
+\chi^2=i^2\,\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
 $$
 
 by $i^2=-1$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\chi)$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.
@@ -362,7 +362,7 @@ so it reverses a commutator and preserves an anticommutator: the star reverses t
 
 A **supercharge** is an odd element, paired either with **itself**, $\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, which is the square of the ambient algebra and needs $\mathcal{Q}^{2}\neq0$, or with its **star**, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$, which is the nilpotent pairing of the corpus's supersymmetric quantum physics and is Hermitian and even because the star is an involution. The two agree for a Hermitian supercharge and are reconciled by $i^{2}=-1$ otherwise. In the module $A^{1}=\mathbb{B}u$ a supercharge is $\mathcal{Q}=su$ with adjoint $\mathcal{Q}^{*}=-us^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$, an even element; the symmetric form $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ holds when $s$ has a definite $u$-parity, and only the evenness and the Hermiticity hold in general. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form, $-q(u)\langle s,t\rangle_{*}$, which is the form of $\mathbb{B}$ for a spacelike $u$ and its negative for a timelike one.
 
-The matrix frame is the frame of the actions written as letters, and it is confined to *The Legacy Pauli Gamma Formulation*: the five cells, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided cell equation, whose chirality sits in the side of the action.
+The matrix frame is the frame of the actions written as letters, and it is confined to *The Legacy Pauli Gamma Formulation*: the five cells, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided cell equation, whose chirality sits in the side of the action.
 
 ## Summary of Notation
 
@@ -389,7 +389,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
 | $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
+| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial t'+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 

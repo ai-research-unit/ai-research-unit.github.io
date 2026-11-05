@@ -8,10 +8,10 @@ This article introduces harmonic analysis on the real line and on Euclidean spac
 The treatment is mathematically honest: every claim is either proved or stated as a definition. The real analysis of the companion article *Real Analysis*, together with Lebesgue measure and integration, is assumed; no abstract topology is invoked. Complex analysis enters only through the elementary identity theorem for holomorphic functions in the qualitative uncertainty principle. The Fourier transform is normalized so that the factor $2\pi$ sits in the exponent and no prefactor appears in either the transform or its inverse:
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{R}} f(a) \exp(-2\pi i \xi a) \, da.
+(\mathcal F f)(\zeta) = \int_{\mathbb{R}} f(a) \exp(-2\pi i \zeta a) \, da.
 $$
 
-With this normalization the transform is an isometry of $L^2$ and the inversion and Plancherel theorems carry no constants. The real line is treated first, and the definitions are then extended verbatim to $\mathbb{R}^n$ with the pairing $\xi \cdot a$ in place of the product $\xi a$.
+With this normalization the transform is an isometry of $L^2$ and the inversion and Plancherel theorems carry no constants. The real line is treated first, and the definitions are then extended verbatim to $\mathbb{R}^n$ with the pairing $\zeta \cdot a$ in place of the product $\zeta a$.
 
 ## Fourier Series on the Circle
 
@@ -70,7 +70,7 @@ $$
 For $f \in L^1(\mathbb{R})$ the **Fourier transform** is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{R}} f(a) \exp(-2\pi i \xi a) \, da.
+(\mathcal F f)(\zeta) = \int_{\mathbb{R}} f(a) \exp(-2\pi i \zeta a) \, da.
 $$
 
 The integral converges absolutely and $\|\mathcal F f\|_\infty \le \|f\|_1$.
@@ -79,17 +79,17 @@ The integral converges absolutely and $\|\mathcal F f\|_\infty \le \|f\|_1$.
 
 **Linearity.** $\widehat{af + bg} = a \mathcal F f + b \mathcal F g$.
 
-**Translation.** If $f_a(b) = f(b - a)$, then $\mathcal F f_a(\xi) = \exp(-2\pi i \xi a) (\mathcal F f)(\xi)$.
+**Translation.** If $f_a(b) = f(b - a)$, then $\mathcal F f_a(\zeta) = \exp(-2\pi i \zeta a) (\mathcal F f)(\zeta)$.
 
-**Modulation.** If $g(a) = \exp(2\pi i \eta a) f(a)$, then $(\mathcal F g)(\xi) = (\mathcal F f)(\xi - \eta)$.
+**Modulation.** If $g(a) = \exp(2\pi i \eta a) f(a)$, then $(\mathcal F g)(\zeta) = (\mathcal F f)(\zeta - \eta)$.
 
-**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda \neq 0$, then $\widehat{f_\lambda}(\xi) = |\lambda|^{-1} (\mathcal F f)(\xi/\lambda)$.
+**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda \neq 0$, then $\widehat{f_\lambda}(\zeta) = |\lambda|^{-1} (\mathcal F f)(\zeta/\lambda)$.
 
-**Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
+**Conjugation.** $\widehat{\bar{f}}(\zeta) = \overline{(\mathcal F f)(-\zeta)}$.
 
-**Differentiation.** If $f$ is absolutely continuous with $\frac{df}{dx} \in L^1(\mathbb{R})$, then $\widehat{\frac{df}{dx}}(\xi) = 2\pi i \xi \, (\mathcal F f)(\xi)$.
+**Differentiation.** If $f$ is absolutely continuous with $\frac{df}{dx} \in L^1(\mathbb{R})$, then $\widehat{\frac{df}{dx}}(\zeta) = 2\pi i \zeta \, (\mathcal F f)(\zeta)$.
 
-**Multiplication by the variable.** If $f \in L^1(\mathbb{R})$ and $a f(a) \in L^1(\mathbb{R})$, then $\mathcal F f$ is differentiable and $\widehat{a f}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} (\mathcal F f)(\xi)$.
+**Multiplication by the variable.** If $f \in L^1(\mathbb{R})$ and $a f(a) \in L^1(\mathbb{R})$, then $\mathcal F f$ is differentiable and $\widehat{a f}(\zeta) = \frac{i}{2\pi} \frac{d}{d\zeta} (\mathcal F f)(\zeta)$.
 
 **Theorem (Riemann–Lebesgue).** If $f \in L^1(\mathbb{R})$, then $\mathcal F f \in C_0(\mathbb{R})$ and $\|\mathcal F f\|_\infty \le \|f\|_1$. The transform of an interval indicator is computed explicitly; the span of step functions is dense in $L^1$, and $C_0(\mathbb{R})$ is closed.
 
@@ -99,12 +99,12 @@ The integral converges absolutely and $\|\mathcal F f\|_\infty \le \|f\|_1$.
 
 **Theorem (Inversion).** If $f \in L^1(\mathbb{R})$ and $\mathcal F f \in L^1(\mathbb{R})$, then
 
-$$ \boxed{\;f(a) = \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(2\pi i \xi a) \, d\xi\;}
+$$ \boxed{\;f(a) = \int_{\mathbb{R}} (\mathcal F f)(\zeta) \exp(2\pi i \zeta a) \, d\zeta\;}
 $$
 
 for almost every $a$, and for every $a$ if $f$ is continuous.
 
-**Proof.** For $\epsilon > 0$ define $f_\epsilon(a) = \int (\mathcal F f)(\xi) \exp(-\pi \epsilon^2 \xi^2) \exp(2\pi i \xi a) d\xi$. Since $\mathcal F f \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} \exp(-\pi a^2/\epsilon^2)$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int (\mathcal F f)(\xi) \exp(2\pi i \xi a) d\xi$ at every $a$.
+**Proof.** For $\epsilon > 0$ define $f_\epsilon(a) = \int (\mathcal F f)(\zeta) \exp(-\pi \epsilon^2 \zeta^2) \exp(2\pi i \zeta a) d\zeta$. Since $\mathcal F f \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} \exp(-\pi a^2/\epsilon^2)$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int (\mathcal F f)(\zeta) \exp(2\pi i \zeta a) d\zeta$ at every $a$.
 
 ### The Plancherel Theorem
 
@@ -125,28 +125,28 @@ For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated in
 For $f \in L^1(\mathbb{R}^n)$ the **Fourier transform** is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{R}^n} f(a) \exp(-2\pi i \xi \cdot a) \, da, \qquad \xi \cdot a = \sum_{j=1}^{n} \xi_j a_j.
+(\mathcal F f)(\zeta) = \int_{\mathbb{R}^n} f(a) \exp(-2\pi i \zeta \cdot a) \, da, \qquad \zeta \cdot a = \sum_{j=1}^{n} \zeta_j a_j.
 $$
 
 ### Basic Properties
 
-**Translation.** If $f_a(b) = f(b - a)$, then $\mathcal F f_a(\xi) = \exp(-2\pi i \xi \cdot a) (\mathcal F f)(\xi)$.
+**Translation.** If $f_a(b) = f(b - a)$, then $\mathcal F f_a(\zeta) = \exp(-2\pi i \zeta \cdot a) (\mathcal F f)(\zeta)$.
 
-**Modulation.** If $g(a) = \exp(2\pi i \eta \cdot a) f(a)$, then $(\mathcal F g)(\xi) = (\mathcal F f)(\xi - \eta)$.
+**Modulation.** If $g(a) = \exp(2\pi i \eta \cdot a) f(a)$, then $(\mathcal F g)(\zeta) = (\mathcal F f)(\zeta - \eta)$.
 
-**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\xi) = \lambda^{-n} (\mathcal F f)(\xi/\lambda)$.
+**Scaling.** If $f_\lambda(a) = f(\lambda a)$ for $\lambda > 0$, then $\widehat{f_\lambda}(\zeta) = \lambda^{-n} (\mathcal F f)(\zeta/\lambda)$.
 
-**Rotation invariance.** If $R$ is orthogonal and $f_R(a) = f(Ra)$, then $\mathcal F f_R(\xi) = (\mathcal F f)(R\xi)$; the transform commutes with rotations.
+**Rotation invariance.** If $R$ is orthogonal and $f_R(a) = f(Ra)$, then $\mathcal F f_R(\zeta) = (\mathcal F f)(R\zeta)$; the transform commutes with rotations.
 
-**Differentiation.** For a multi-index $\alpha$, $\widehat{\partial^\alpha f}(\xi) = (2\pi i)^{|\alpha|} \xi^\alpha (\mathcal F f)(\xi)$ whenever the derivatives lie in $L^1$. In particular the Laplacian has symbol $-4\pi^2 |\xi|^2$:
+**Differentiation.** For a multi-index $\alpha$, $\widehat{\partial^\alpha f}(\zeta) = (2\pi i)^{|\alpha|} \zeta^\alpha (\mathcal F f)(\zeta)$ whenever the derivatives lie in $L^1$. In particular the Laplacian has symbol $-4\pi^2 |\zeta|^2$:
 
 $$
-\widehat{\Delta f}(\xi) = -4\pi^2 |\xi|^2 (\mathcal F f)(\xi).
+\widehat{\Delta f}(\zeta) = -4\pi^2 |\zeta|^2 (\mathcal F f)(\zeta).
 $$
 
 ### Inversion and Plancherel on $\mathbb{R}^n$
 
-**Theorem (Inversion).** If $f \in L^1(\mathbb{R}^n)$ and $\mathcal F f \in L^1(\mathbb{R}^n)$, then $f(a) = \int_{\mathbb{R}^n} (\mathcal F f)(\xi) \exp(2\pi i \xi \cdot a) d\xi$ for almost every $a$, and everywhere if $f$ is continuous.
+**Theorem (Inversion).** If $f \in L^1(\mathbb{R}^n)$ and $\mathcal F f \in L^1(\mathbb{R}^n)$, then $f(a) = \int_{\mathbb{R}^n} (\mathcal F f)(\zeta) \exp(2\pi i \zeta \cdot a) d\zeta$ for almost every $a$, and everywhere if $f$ is continuous.
 
 **Theorem (Plancherel).** The Fourier transform extends uniquely to a $*$-unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,
 
@@ -182,10 +182,10 @@ In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_r \le \|f\|_1 \|g
 
 **Theorem.** If $f, g \in L^1(\mathbb{R}^n)$, then $f * g \in L^1(\mathbb{R}^n)$ and
 
-$$ \boxed{\;\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)\;}.
+$$ \boxed{\;\widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta)\;}.
 $$
 
-**Proof.** By Fubini, $\widehat{f * g}(\xi) = \int g(b) \exp(-2\pi i \xi \cdot b) \big( \int f(a - b) \exp(-2\pi i \xi \cdot (a - b)) da \big) db$, and the inner integral is $(\mathcal F f)(\xi)$.
+**Proof.** By Fubini, $\widehat{f * g}(\zeta) = \int g(b) \exp(-2\pi i \zeta \cdot b) \big( \int f(a - b) \exp(-2\pi i \zeta \cdot (a - b)) da \big) db$, and the inner integral is $(\mathcal F f)(\zeta)$.
 
 The theorem extends to $L^2$ and to tempered distributions in the sense described below.
 
@@ -209,7 +209,7 @@ The last condition says that the mass of $\phi_\epsilon$ concentrates near the o
 
 The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ with $\|\phi\|_{\alpha, \beta} = \sup_a |a^\alpha \partial^\beta \phi(a)| < \infty$ for all multi-indices $\alpha, \beta$. The seminorms $\|\cdot\|_{\alpha, \beta}$ make $\mathcal{S}(\mathbb{R}^n)$ a Fréchet space, closed under differentiation and multiplication by polynomials.
 
-**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \xi^\alpha \hat{\phi}$ and $\widehat{a^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
+**Theorem.** The Fourier transform is a bijection $\mathcal{F} : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n)$. Indeed $\widehat{\partial^\alpha \phi} = (2\pi i)^{|\alpha|} \zeta^\alpha \hat{\phi}$ and $\widehat{a^\alpha \phi} = (-2\pi i)^{-|\alpha|} \partial^\alpha \hat{\phi}$, so the seminorms of $\hat{\phi}$ are controlled by those of $\phi$ and conversely. The inversion formula and Plancherel's identity hold on $\mathcal{S}(\mathbb{R}^n)$ with no further hypotheses.
 
 ### Tempered Distributions
 
@@ -221,7 +221,7 @@ A **tempered distribution** is a continuous linear functional on $\mathcal{S}(\m
 
 These extend the classical operations, and the Fourier transform is a bijection $\mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n)$.
 
-**Examples.** The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\xi)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\xi|^{\alpha - n}$.
+**Examples.** The delta distribution $\langle \delta, \phi \rangle = \phi(0)$ has $\hat{\delta} = 1$ and $\hat{1} = \delta$. The principal value $\mathrm{p.v.}(1/a)$ has Fourier transform $-i\pi \, \mathrm{sgn}(\zeta)$. For $0 < \alpha < n$, the transform of $|a|^{-\alpha}$ is a constant multiple of $|\zeta|^{\alpha - n}$.
 
 ## The Hardy–Littlewood Maximal Function
 
@@ -276,20 +276,20 @@ The singular integral converges almost everywhere for $f$ in $L^{r}$, $1 \le r <
 **Theorem.** On $L^2(\mathbb{R})$ the Hilbert transform is given by the multiplier
 
 $$
-\widehat{Hf}(\xi) = -i \, \mathrm{sgn}(\xi) \, (\mathcal F f)(\xi).
+\widehat{Hf}(\zeta) = -i \, \mathrm{sgn}(\zeta) \, (\mathcal F f)(\zeta).
 $$
 
 **Proof.** Let $K_\epsilon(a) = \frac{1}{\pi a} \mathbf{1}_{|a| > \epsilon}$ and $H_\epsilon f = f * K_\epsilon$. A computation gives
 
 $$
-\hat{K}_\epsilon(\xi) = -i \, \mathrm{sgn}(\xi) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\xi| \epsilon) \right),
+\hat{K}_\epsilon(\zeta) = -i \, \mathrm{sgn}(\zeta) \left( 1 - \frac{2}{\pi} \mathrm{Si}(2\pi |\zeta| \epsilon) \right),
 $$
 
-where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\xi)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$.
+where $\mathrm{Si}(t) = \int_0^t \frac{\sin s}{s} ds$ is the sine integral. These multipliers are bounded uniformly in $\epsilon$ and converge pointwise to $-i \, \mathrm{sgn}(\zeta)$; Plancherel gives $\|H_\epsilon f\|_2 \le C \|f\|_2$, and the convolution theorem with dominated convergence identifies the limit on a dense subset of $L^2$.
 
 ### Basic Properties
 
-**Isometry on $L^2$.** Since $|-i \, \mathrm{sgn}(\xi)| = 1$ for $\xi \neq 0$, Plancherel gives
+**Isometry on $L^2$.** Since $|-i \, \mathrm{sgn}(\zeta)| = 1$ for $\zeta \neq 0$, Plancherel gives
 
 $$
 \|Hf\|_2 = \|f\|_2, \qquad H^2 = -I, \qquad H^* = -H,
@@ -335,7 +335,7 @@ The endpoints are sharp: at $r = 1$ the transform is bounded but need not be int
 
 ### The Littlewood–Paley Decomposition
 
-Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\xi| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{\psi}(2^{-j} \xi) = 1$ for $\xi \neq 0$. Set $\widehat{\Delta_j f}(\xi) = \hat{\psi}(2^{-j} \xi) (\mathcal F f)(\xi)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\xi| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.
+Choose $\psi \in \mathcal{S}(\mathbb{R}^n)$ whose Fourier transform is supported in the annulus $\{1/2 \le |\zeta| \le 2\}$ and satisfies $\sum_{j \in \mathbb{Z}} \hat{\psi}(2^{-j} \zeta) = 1$ for $\zeta \neq 0$. Set $\widehat{\Delta_j f}(\zeta) = \hat{\psi}(2^{-j} \zeta) (\mathcal F f)(\zeta)$, so $\Delta_j f$ has frequency support in the annulus $2^{j-1} \le |\zeta| \le 2^{j+1}$, and $f = \sum_j \Delta_j f$ for $f$ in a suitable space.
 
 ### The Square Function
 
@@ -351,17 +351,17 @@ $$
 c_{n,r} \|f\|_r \le \|S f\|_r \le C_{n,r} \|f\|_r.
 $$
 
-For $r = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\xi)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
+For $r = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\zeta)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
 
 ### Bernstein Inequalities
 
-**Theorem (Bernstein).** Suppose the Fourier transform of $f$ is supported in $\{|\xi| \le R\}$. Then for every multi-index $\alpha$ and all $1 \le r \le s \le \infty$,
+**Theorem (Bernstein).** Suppose the Fourier transform of $f$ is supported in $\{|\zeta| \le R\}$. Then for every multi-index $\alpha$ and all $1 \le r \le s \le \infty$,
 
 $$
 \|\partial^\alpha f\|_s \le C R^{|\alpha| + n(1/r - 1/s)} \|f\|_r,
 $$
 
-with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\xi| \le 2R\}$, then $\|\partial^\alpha f\|_r \ge c R^{|\alpha|} \|f\|_r$ for a constant $c > 0$ independent of $R$ and $f$.
+with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\zeta| \le 2R\}$, then $\|\partial^\alpha f\|_r \ge c R^{|\alpha|} \|f\|_r$ for a constant $c > 0$ independent of $R$ and $f$.
 
 These inequalities are the mechanism by which Littlewood–Paley theory converts frequency localization into size estimates; they underlie multiplier theorems and Sobolev embedding.
 
@@ -382,12 +382,12 @@ for $r < \infty$, and the corresponding supremum for $r = \infty$.
 For $r = 2$ the Fourier transform gives a complete description. For real $s$, the **Sobolev space** $H^s(\mathbb{R}^n)$ is the set of tempered distributions $f$ with
 
 $$
-\|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\xi|^2)^s \, |(\mathcal F f)(\xi)|^2 \, d\xi < \infty.
+\|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\zeta|^2)^s \, |(\mathcal F f)(\zeta)|^2 \, d\zeta < \infty.
 $$
 
-**Theorem.** For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a $*$-unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.
+**Theorem.** For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\zeta|^2)^s (\mathcal F f)(\zeta) \overline{(\mathcal F g)(\zeta)} d\zeta$, and the Fourier transform is a $*$-unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\zeta|^2)^s d\zeta)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.
 
-The **homogeneous** Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\xi|^{2s} |(\mathcal F f)(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.
+The **homogeneous** Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\zeta|^{2s} |(\mathcal F f)(\zeta)|^2 d\zeta$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.
 
 ### Sobolev Embedding
 
@@ -395,11 +395,11 @@ The **homogeneous** Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\ma
 
 **Theorem.** If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.
 
-**Proof.** By Cauchy–Schwarz, $\int |\mathcal F f| = \int (1 + |\xi|^2)^{-s/2} (1 + |\xi|^2)^{s/2} |\mathcal F f| \le \big( \int (1 + |\xi|^2)^{-s} d\xi \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$.
+**Proof.** By Cauchy–Schwarz, $\int |\mathcal F f| = \int (1 + |\zeta|^2)^{-s/2} (1 + |\zeta|^2)^{s/2} |\mathcal F f| \le \big( \int (1 + |\zeta|^2)^{-s} d\zeta \big)^{1/2} \|f\|_{H^s}$, and the first factor is finite exactly when $2s > n$.
 
 ### The Riesz Potential
 
-For $0 < \alpha < n$ the **Riesz potential** of order $\alpha$ is the operator $\widehat{I_\alpha f}(\xi) = |\xi|^{-\alpha} (\mathcal F f)(\xi)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.
+For $0 < \alpha < n$ the **Riesz potential** of order $\alpha$ is the operator $\widehat{I_\alpha f}(\zeta) = |\zeta|^{-\alpha} (\mathcal F f)(\zeta)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.
 
 **Theorem (Hardy–Littlewood–Sobolev).** If $0 < \alpha < n$, $1 < r < s < \infty$, and $\frac{1}{s} = \frac{1}{r} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_s \le C_{n, \alpha, r} \|f\|_r$.
 
@@ -409,23 +409,23 @@ The Riesz potential saturates the Sobolev embedding: it maps $L^{r}$ into $L^{s}
 
 ### The Heisenberg Inequality
 
-**Theorem (Heisenberg).** Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $a f \in L^2(\mathbb{R})$, and $\xi \mathcal F f \in L^2(\mathbb{R})$. Then
+**Theorem (Heisenberg).** Let $f \in L^2(\mathbb{R})$ with $\|f\|_2 = 1$, $a f \in L^2(\mathbb{R})$, and $\zeta \mathcal F f \in L^2(\mathbb{R})$. Then
 
 $$ \boxed{\;\left( \int_{\mathbb{R}} a^2 |f(a)|^2 \, da \right)^{\!1/2}
-\left( \int_{\mathbb{R}} \xi^2 |(\mathcal F f)(\xi)|^2 \, d\xi \right)^{\!1/2}
+\left( \int_{\mathbb{R}} \zeta^2 |(\mathcal F f)(\zeta)|^2 \, d\zeta \right)^{\!1/2}
 \ge \frac{1}{4\pi}\;}.
 $$
 
-Equivalently, for any centres $a_0, \xi_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\xi - \xi_0)^2$.
+Equivalently, for any centres $a_0, \zeta_0 \in \mathbb{R}$ the same lower bound holds with $(a - a_0)^2$ and $(\zeta - \zeta_0)^2$.
 
-**Proof.** By translation and modulation one may take $a_0 = \xi_0 = 0$. Integration by parts and Plancherel give
+**Proof.** By translation and modulation one may take $a_0 = \zeta_0 = 0$. Integration by parts and Plancherel give
 
 $$
 1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} a \, \frac{d}{da} |f|^2 \, da \le 2 \int_{\mathbb{R}} |a| \, |f| \, |\frac{df}{dx}| \, da
 \le 2 \left( \int_{\mathbb{R}} a^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |\frac{df}{dx}|^2 \right)^{\!1/2},
 $$
 
-and $\|\frac{df}{dx}\|_2 = 2\pi \|\xi \mathcal F f\|_2$ by Plancherel and the differentiation rule.
+and $\|\frac{df}{dx}\|_2 = 2\pi \|\zeta \mathcal F f\|_2$ by Plancherel and the differentiation rule.
 
 Equality holds if and only if $f(b) = c \, \exp(-a b^2)$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.
 
@@ -433,7 +433,7 @@ Equality holds if and only if $f(b) = c \, \exp(-a b^2)$ for some $a > 0$ and $c
 
 **Theorem.** There is no nonzero $f \in L^2(\mathbb{R})$ such that both $f$ and $\mathcal F f$ are compactly supported.
 
-**Proof.** If $f$ is compactly supported, then $(\mathcal F f)(\xi) = \int f(a) \exp(-2\pi i \xi a) da$ extends to an entire function of the complex variable $\xi$; if $\mathcal F f$ were also compactly supported, the identity theorem for holomorphic functions would force $\mathcal F f \equiv 0$.
+**Proof.** If $f$ is compactly supported, then $(\mathcal F f)(\zeta) = \int f(a) \exp(-2\pi i \zeta a) da$ extends to an entire function of the complex variable $\zeta$; if $\mathcal F f$ were also compactly supported, the identity theorem for holomorphic functions would force $\mathcal F f \equiv 0$.
 
 **Theorem (Amrein–Berthier–Benedicks).** If $f \in L^2(\mathbb{R})$ and both $f$ and $\mathcal F f$ are supported on sets of finite Lebesgue measure, then $f = 0$.
 
@@ -441,7 +441,7 @@ These statements are the qualitative counterparts of the Heisenberg inequality: 
 
 ## Summary
 
-Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $(\mathcal F f)(\xi) = \int_{\mathbb{R}} f(a)\exp(-2\pi i\xi a)\,da$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
+Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $(\mathcal F f)(\zeta) = \int_{\mathbb{R}} f(a)\exp(-2\pi i\zeta a)\,da$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
 
 Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^{r}$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.
 
@@ -454,7 +454,7 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 | $\mathbb{T} = \mathbb{R}/\mathbb{Z}$ | Circle, identified with $[0, 1]$ |
 | $(\mathcal F f)(n)$ | Fourier coefficient on the circle |
 | $D_N, F_N$ | Dirichlet, Fejér kernels |
-| $(\mathcal F f)(\xi) = \int f(a) \exp(-2\pi i \xi \cdot a) da$ | Fourier transform on $\mathbb{R}^n$ |
+| $(\mathcal F f)(\zeta) = \int f(a) \exp(-2\pi i \zeta \cdot a) da$ | Fourier transform on $\mathbb{R}^n$ |
 | $\mathcal{F}$ | Fourier transform operator |
 | $f * g$ | Convolution |
 | $\phi_\epsilon$ | Approximate identity |

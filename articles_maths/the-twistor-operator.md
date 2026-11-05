@@ -14,13 +14,13 @@ The construction has three ingredients, each of which is an operator. The **Clif
 **Definition.** The **Clifford contraction** is the bundle map induced by the Clifford multiplication,
 
 $$
-c : T^*M\otimes\mathcal{S}\longrightarrow\mathcal{S}, \qquad c(\xi\otimes\sigma) = \xi^{\sharp}\cdot\sigma ,
+c : T^*M\otimes\mathcal{S}\longrightarrow\mathcal{S}, \qquad c(\zeta\otimes\sigma) = \zeta^{\sharp}\cdot\sigma ,
 $$
 
-where $\xi^{\sharp}$ is the tangent vector dual to $\xi$ under $g$ and the dot is the Clifford action. Its metric adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ is computed in a local orthonormal coframe $(\theta_1,\dots,\theta_n)$ by
+where $\zeta^{\sharp}$ is the tangent vector dual to $\zeta$ under $g$ and the dot is the Clifford action. Its metric adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ is computed in a local orthonormal coframe $(\theta_1,\dots,\theta_n)$ by
 
 $$
-c^*\sigma = -\sum_{i=1}^{n}\theta_i\otimes(e_i\cdot\sigma), \qquad c(\xi\otimes\sigma) = \sum_i \xi(e_i)\,e_i\cdot\sigma .
+c^*\sigma = -\sum_{i=1}^{n}\theta_i\otimes(e_i\cdot\sigma), \qquad c(\zeta\otimes\sigma) = \sum_i \zeta(e_i)\,e_i\cdot\sigma .
 $$
 
 **Proposition.** The maps $c$ and $c^*$ are adjoint for the tensor product of $g$ and the fibre form $h$, $c$ is a surjection, and
@@ -31,7 +31,7 @@ $$
 
 Consequently $\pi = \operatorname{id} - \frac1n c^*c$ is the orthogonal projector of $T^*M\otimes\mathcal{S}$ onto $\ker c$, and $\frac1n c^*c$ is the projector onto $\operatorname{im}c^*$; the two subbundles are orthogonal complements and are both parallel only in the flat case.
 
-**Proof.** Adjointness is the comparison of the two displays, using that the Clifford action by $e_i$ is skew-adjoint for $h$ and that the metric identifies $T^*M$ with $TM$; $c$ is surjective because $c(\xi\otimes(\xi\cdot\sigma)) = -g(\xi,\xi)\sigma$ for $\xi\ne0$. Then $cc^*\sigma = -\sum_ie_i\cdot(e_i\cdot\sigma)=\sum_i g(e_i,e_i)\sigma=n\sigma$. The identity $cc^*=n\operatorname{id}$ with $c$ surjective gives $\operatorname{im}c^*=(\ker c)^{\perp}$: for $\tau\in\ker c$, $h(c^*\sigma,\tau) = h(\sigma,c\tau)=0$, giving $\operatorname{im}c^*\subseteq(\ker c)^\perp$, and the dimensions agree because $c^*$ is injective (from $cc^*=n\operatorname{id}$). Hence $\pi$ is the orthogonal projector onto $\ker c$, and the two projectors sum to the identity. Both subbundles are parallel exactly when $\nabla$ preserves them, which in the flat case it does.
+**Proof.** Adjointness is the comparison of the two displays, using that the Clifford action by $e_i$ is skew-adjoint for $h$ and that the metric identifies $T^*M$ with $TM$; $c$ is surjective because $c(\zeta\otimes(\zeta\cdot\sigma)) = -g(\zeta,\zeta)\sigma$ for $\zeta\ne0$. Then $cc^*\sigma = -\sum_ie_i\cdot(e_i\cdot\sigma)=\sum_i g(e_i,e_i)\sigma=n\sigma$. The identity $cc^*=n\operatorname{id}$ with $c$ surjective gives $\operatorname{im}c^*=(\ker c)^{\perp}$: for $\tau\in\ker c$, $h(c^*\sigma,\tau) = h(\sigma,c\tau)=0$, giving $\operatorname{im}c^*\subseteq(\ker c)^\perp$, and the dimensions agree because $c^*$ is injective (from $cc^*=n\operatorname{id}$). Hence $\pi$ is the orthogonal projector onto $\ker c$, and the two projectors sum to the identity. Both subbundles are parallel exactly when $\nabla$ preserves them, which in the flat case it does.
 
 **Remark.** The number $n$ in $cc^*=n\operatorname{id}$ is the dimension of the manifold; it is the normalisation that makes $\pi$ a projection, and it is the reason the twistor operator has the constant $1/n$ in its definition.
 
@@ -61,15 +61,15 @@ the first term lying in $\operatorname{im}c^*$ and the second in $\ker c$; the t
 
 **Proof.** The definition gives $\mathcal{T}=\nabla-\tfrac1n c^*c\nabla$; and $c\nabla = D$ by definition of $D$, so $c^*c\nabla = c^*D$. Hence $\tfrac1n c^*c\nabla = \tfrac1n c^*D$ lies in $\operatorname{im}c^*$ and $\mathcal{T}\sigma$ lies in $\ker c$, because $c\mathcal{T}\sigma = c\nabla\sigma - \frac1n cc^*D\sigma = D\sigma - \frac1n n D\sigma = 0$. The two terms are orthogonal by the proposition above, and the decomposition is unique.
 
-**Proposition (the symbol and the overdetermined ellipticity).** The principal symbol of $\mathcal{T}$ at a covector $\xi$ is
+**Proposition (the symbol and the overdetermined ellipticity).** The principal symbol of $\mathcal{T}$ at a covector $\zeta$ is
 
 $$
-\sigma_{\mathcal{T}}(x,\xi) = \pi\circ(\xi\otimes\,\cdot\,) : \mathcal{S}_x\longrightarrow\ker c_{\xi}\subseteq T_x^*M\otimes\mathcal{S}_x ,
+\sigma_{\mathcal{T}}(x,\zeta) = \pi\circ(\zeta\otimes\,\cdot\,) : \mathcal{S}_x\longrightarrow\ker c_{\zeta}\subseteq T_x^*M\otimes\mathcal{S}_x ,
 $$
 
-which is injective for $\xi\ne0$ and has image $\ker c_\xi$, of rank $(n-1)\dim\mathcal{S}$. The twistor operator is therefore overdetermined elliptic and not elliptic: its symbol is injective but not invertible.
+which is injective for $\zeta\ne0$ and has image $\ker c_\zeta$, of rank $(n-1)\dim\mathcal{S}$. The twistor operator is therefore overdetermined elliptic and not elliptic: its symbol is injective but not invertible.
 
-**Proof.** The symbol is the highest-order part, computed by freezing the coefficient of $\mathcal{T}_X\sigma=\nabla_X\sigma+\frac1nX\cdot D\sigma$: the first term contributes $\xi(X)\sigma$ and the second $\frac1nX\cdot(\xi\cdot\sigma)$, whose sum over the frame is $\pi(\xi\otimes\sigma)$ by the computation of the symbol of $\pi$. If $\pi(\xi\otimes\sigma_0)=0$ then $\xi\otimes\sigma_0\in\operatorname{im}c^*$, so $\xi\otimes\sigma_0=-\frac1n c^*(\xi\cdot\sigma_0)$; applying $c$ gives $\xi\cdot\sigma_0 = -\frac1n n(\xi\cdot\sigma_0) = -\xi\cdot\sigma_0$, hence $\xi\cdot\sigma_0=0$ and then $\xi\otimes\sigma_0=0$, so either $\xi=0$ or $\sigma_0=0$. Thus the symbol is injective for $\xi\ne0$, and its image is $\pi(\mathcal{S})$ tensored with $\xi$, namely $\ker c_\xi$.
+**Proof.** The symbol is the highest-order part, computed by freezing the coefficient of $\mathcal{T}_X\sigma=\nabla_X\sigma+\frac1nX\cdot D\sigma$: the first term contributes $\zeta(X)\sigma$ and the second $\frac1nX\cdot(\zeta\cdot\sigma)$, whose sum over the frame is $\pi(\zeta\otimes\sigma)$ by the computation of the symbol of $\pi$. If $\pi(\zeta\otimes\sigma_0)=0$ then $\zeta\otimes\sigma_0\in\operatorname{im}c^*$, so $\zeta\otimes\sigma_0=-\frac1n c^*(\zeta\cdot\sigma_0)$; applying $c$ gives $\zeta\cdot\sigma_0 = -\frac1n n(\zeta\cdot\sigma_0) = -\zeta\cdot\sigma_0$, hence $\zeta\cdot\sigma_0=0$ and then $\zeta\otimes\sigma_0=0$, so either $\zeta=0$ or $\sigma_0=0$. Thus the symbol is injective for $\zeta\ne0$, and its image is $\pi(\mathcal{S})$ tensored with $\zeta$, namely $\ker c_\zeta$.
 
 **Remark (why not elliptic, and why that is the point).** An injective but non-invertible symbol means that the twistor equation is an **overdetermined** system: it constrains the first derivatives, and its solutions are few. This is the analytic form of the geometric statement that a conformal structure singles out a special class of spinors, and it is the reason the twistor equation has a finite-dimensional solution space on a closed manifold in the conformally flat case, computed below.
 
@@ -153,20 +153,20 @@ On a complete Einstein spin manifold with nonzero scalar curvature, the theorem 
 
 ## Summary
 
-The **Clifford contraction** $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ is the bundle map $\xi\otimes\sigma\mapsto\xi^{\sharp}\cdot\sigma$, a surjection whose adjoint $c^*$ satisfies $cc^*=n\operatorname{id}$ and whose kernel is $\ker c=\operatorname{im}c^*$ with the projector $\pi=\operatorname{id}-\frac1n c^*c$. The covariant derivative splits orthogonally as $\nabla\sigma=\frac1n c^*D\sigma+\mathcal{T}\sigma$, with $D=c\nabla$ the Cauchy–Riemann operator, and the second term is the **twistor operator** $\mathcal{T}\sigma=\nabla\sigma+\frac1n c(\cdot)\,D\sigma$; its symbol is $\pi(\xi\otimes\cdot)$, injective but not invertible, so the twistor operator is overdetermined elliptic and not elliptic. The twistor operator is **conformally covariant**, and the equation $\mathcal{T}\sigma=0$ is the **twistor equation**, whose solutions are the twistor spinors; on the conformally flat model the solution space has dimension $2\dim\Delta_n$, and on a complete Einstein manifold every twistor spinor is a sum of Killing spinors, parallel in the Ricci-flat case. On a four-dimensional anti-self-dual conformal manifold the twistor spinors correspond to holomorphic objects on the twistor space $Z(M)=\mathbb{P}(\mathcal{S}^-)$, and the correspondence is the twistor transform quoted from *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*. The adjoint of the twistor operator is *The Adjoint of the Twistor Operator*, and the conformally invariant form of the equation is *The Penrose Operator*.
+The **Clifford contraction** $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ is the bundle map $\zeta\otimes\sigma\mapsto\zeta^{\sharp}\cdot\sigma$, a surjection whose adjoint $c^*$ satisfies $cc^*=n\operatorname{id}$ and whose kernel is $\ker c=\operatorname{im}c^*$ with the projector $\pi=\operatorname{id}-\frac1n c^*c$. The covariant derivative splits orthogonally as $\nabla\sigma=\frac1n c^*D\sigma+\mathcal{T}\sigma$, with $D=c\nabla$ the Cauchy–Riemann operator, and the second term is the **twistor operator** $\mathcal{T}\sigma=\nabla\sigma+\frac1n c(\cdot)\,D\sigma$; its symbol is $\pi(\zeta\otimes\cdot)$, injective but not invertible, so the twistor operator is overdetermined elliptic and not elliptic. The twistor operator is **conformally covariant**, and the equation $\mathcal{T}\sigma=0$ is the **twistor equation**, whose solutions are the twistor spinors; on the conformally flat model the solution space has dimension $2\dim\Delta_n$, and on a complete Einstein manifold every twistor spinor is a sum of Killing spinors, parallel in the Ricci-flat case. On a four-dimensional anti-self-dual conformal manifold the twistor spinors correspond to holomorphic objects on the twistor space $Z(M)=\mathbb{P}(\mathcal{S}^-)$, and the correspondence is the twistor transform quoted from *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*. The adjoint of the twistor operator is *The Adjoint of the Twistor Operator*, and the conformally invariant form of the equation is *The Penrose Operator*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{S}$, $c(v)$, $h$ | Spinor bundle, Clifford multiplication $c(v)^2=-g(v,v)$, fibre form |
-| $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$ |
+| $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$ | Clifford contraction, $c(\zeta\otimes\sigma)=\zeta^{\sharp}\cdot\sigma$ |
 | $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$ | Adjoint, $c^*\sigma=-\sum_i\theta_i\otimes(e_i\cdot\sigma)$ |
 | $cc^*=n\operatorname{id}$, $\ker c=\operatorname{im}c^*$ | The trace identity and the orthogonal decomposition |
 | $\pi=\operatorname{id}-\frac1nc^*c$ | Projector onto $\ker c$ |
 | $D=c\circ\nabla$ | Cauchy–Riemann operator of the manifold |
 | $\mathcal{T}=\pi\circ\nabla$, $\mathcal{T}_X\sigma=\nabla_X\sigma+\frac1nX\cdot D\sigma$ | Twistor operator |
-| $\sigma_{\mathcal{T}}(\xi)=\pi\circ(\xi\otimes\cdot)$ | Symbol; injective, not invertible |
+| $\sigma_{\mathcal{T}}(\zeta)=\pi\circ(\zeta\otimes\cdot)$ | Symbol; injective, not invertible |
 | $\mathcal{T}\sigma=0$ | Twistor equation; $\sigma$ a twistor spinor |
 | $\hat g=\Omega^2g$ | Conformal change; $\mathcal{T}$ is conformally covariant |
 | $Z(M)=\mathbb{P}(\mathcal{S}^-)$ | Twistor space of a four-dimensional conformal manifold |

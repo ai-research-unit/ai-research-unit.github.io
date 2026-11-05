@@ -22,9 +22,9 @@ So the adjoint of the left multiplication by $x$ is the left multiplication by t
 
 **Proof.** On $A$ the identity is the adjoint axiom, $\langle L_xy,z\rangle = \langle y,L_{x^{\dagger}}z\rangle$; both sides are bounded and agree on the dense set $A$, hence extend to the same operator on $H$.
 
-**Proposition (the action on the cyclic vector).** With $\xi = \iota(1)$ the adjoint is determined at $\xi$: $\bar L_x^{*}\xi = \iota(x^{\dagger})$, whereas $\bar L_x\xi = \iota(x)$. So the adjoint moves the cyclic vector to the involution, which is the reason the involution is not a bounded map of $H$ in general.
+**Proposition (the action on the cyclic vector).** With $\zeta = \iota(1)$ the adjoint is determined at $\zeta$: $\bar L_x^{*}\zeta = \iota(x^{\dagger})$, whereas $\bar L_x\zeta = \iota(x)$. So the adjoint moves the cyclic vector to the involution, which is the reason the involution is not a bounded map of $H$ in general.
 
-**Proof.** $\bar L_{x^{\dagger}}\xi = \iota(x^{\dagger})$ and $\bar L_x\xi = \iota(x)$; the difference between the two orbits is the closure of the involution.
+**Proof.** $\bar L_{x^{\dagger}}\zeta = \iota(x^{\dagger})$ and $\bar L_x\zeta = \iota(x)$; the difference between the two orbits is the closure of the involution.
 
 **Proposition (positivity of the adjoint pairing).** For every $x$ one has $\langle\bar L_x\bar L_x^{*}u,u\rangle = \|\bar L_x^{*}u\|^{2}\geq0$; so the operators $\bar L_x\bar L_x^{*}$ and $\bar L_x^{*}\bar L_x$ are positive, and the left multiplications form a $\ast$-closed family of operators whose positive parts are the ones of *Self-Adjoint Elements and the Positive Cone*.
 
@@ -64,7 +64,7 @@ $$
 
 ### The Tracial Case
 
-When the form is tracial the modular conjugation is the operator $x\xi\mapsto x^{*}\xi$ extended, and the exchange theorem reads $JL_xJ = R_{x^{\dagger}}$ with $J$ simultaneously the modular conjugation and the involution: the two operations coincide and the symmetry is transparent.
+When the form is tracial the modular conjugation is the operator $x\zeta\mapsto x^{*}\zeta$ extended, and the exchange theorem reads $JL_xJ = R_{x^{\dagger}}$ with $J$ simultaneously the modular conjugation and the involution: the two operations coincide and the symmetry is transparent.
 
 ## Summary
 
@@ -76,7 +76,7 @@ The adjoint of the **left multiplication** is the left multiplication by the inv
 |---|---|
 | $\bar L_x^{*} = \bar L_{x^{\dagger}}$ | Adjoint of the left multiplication |
 | $\bar R_x^{*} = \bar R_{x^{\dagger}}$ | Adjoint of the right multiplication |
-| $\bar L_x^{*}\xi = \iota(x^{\dagger})$ | The adjoint on the cyclic vector |
+| $\bar L_x^{*}\zeta = \iota(x^{\dagger})$ | The adjoint on the cyclic vector |
 | $\bar L_x\bar L_x^{*}\geq0$ | Positivity of the adjoint products |
 | $\jmath\bar L_x^{*}\jmath = \bar R_x$ | Adjunction plus conjugation = passage to the right |
 

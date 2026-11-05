@@ -27,14 +27,14 @@ and consequently $h(c(v)\sigma,c(v)\tau)=g(v,v)h(\sigma,\tau)$: the multiplicati
 
 ## The Adjoint of the Contraction
 
-**Definition.** The **Clifford contraction** is $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, whose adjoint for the tensor product of $g^{-1}$ and $h$ is
+**Definition.** The **Clifford contraction** is $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\zeta\otimes\sigma)=\zeta^{\sharp}\cdot\sigma$, whose adjoint for the tensor product of $g^{-1}$ and $h$ is
 
 $$
 \boxed{\;c^* : \mathcal{S}\longrightarrow T^*M\otimes\mathcal{S} , \qquad
 c^*\sigma = -\sum_{i=1}^{n}\theta_i\otimes(e_i\cdot\sigma)\;} .
 $$
 
-**Proposition.** The contraction satisfies $cc^*=n\operatorname{id}_{\mathcal{S}}$ and $\ker c=\operatorname{im}c^*$; the contraction is a surjection with the symbol $c(\xi)=$ Clifford multiplication by $\xi^{\sharp}$, and the adjoint has the symbol $c^*(\xi)=-(\xi\wedge\text{-type})$ contraction, so the two symbols are adjoint at every covector.
+**Proposition.** The contraction satisfies $cc^*=n\operatorname{id}_{\mathcal{S}}$ and $\ker c=\operatorname{im}c^*$; the contraction is a surjection with the symbol $c(\zeta)=$ Clifford multiplication by $\zeta^{\sharp}$, and the adjoint has the symbol $c^*(\zeta)=-(\zeta\wedge\text{-type})$ contraction, so the two symbols are adjoint at every covector.
 
 **Proof.** $cc^*\sigma=-\sum_ie_i\cdot(e_i\cdot\sigma)=\sum_ig(e_i,e_i)\sigma=n\sigma$; the surjectivity of $c$ and the identity give the orthogonal decomposition; the symbol statements are the linear-algebra part of the two displays, and they are adjoint because the bundle maps are. This is *The Twistor Operator*, where the orthogonality is used to split the covariant derivative.
 

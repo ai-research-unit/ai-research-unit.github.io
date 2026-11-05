@@ -14,7 +14,7 @@ $$
 of an idempotent $e$. The diagonal corner $D=eAe$ is the algebra of coefficients; the companion corner $fAe$ is square-zero and its elements are the companion nilpotents. If $(\nu_1,\dots,\nu_s)$ generates $fAe$ over $D$, every element of $C(e)$ is written
 
 $$
-\xi=d_0+\nu_1d_1+\dots+\nu_sd_s,
+\zeta=d_0+\nu_1d_1+\dots+\nu_sd_s,
 \qquad d_i\in D,
 $$
 
@@ -32,7 +32,7 @@ Four results organise the article. First, a spinor is an element of a Peirce car
 
 *Proof.* This is *Peirce Coordinates and Companion Nilpotents*, §*The Carrier and Its Coordinates*: the Peirce expansion of $x\in Ae$ has only the corners with right index $+$, and $(ax)e=a(xe)=ax$.
 
-**Definition.** A **companion frame** of $e$ is a family $(\nu_1,\dots,\nu_s)$ of elements of $fAe$ that generates $fAe$ over $D$ with $s$ minimal. The **coordinate vector** of $\xi\in C(e)$ is the list $(d_0;d_1,\dots,d_s)$ of the expansion above; it is unique when the companion family is a $D$-basis.
+**Definition.** A **companion frame** of $e$ is a family $(\nu_1,\dots,\nu_s)$ of elements of $fAe$ that generates $fAe$ over $D$ with $s$ minimal. The **coordinate vector** of $\zeta\in C(e)$ is the list $(d_0;d_1,\dots,d_s)$ of the expansion above; it is unique when the companion family is a $D$-basis.
 
 **Proposition.** If $D$ is a division ring, then $fAe$ is free over $D$, the companion frame is a basis, and $C(e)\cong D^{1+s}$.
 
