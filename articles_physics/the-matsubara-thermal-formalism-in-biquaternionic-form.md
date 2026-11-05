@@ -6,7 +6,7 @@ The **Matsubara formalism** is the Euclidean formulation of quantum field theory
 
 This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is one structural identification and a set of transcriptions, stated at the outset.
 
-- **Established (framework).** The compactified direction is a **material-sector direction**. The imaginary time that Matsubara's circle winds around is not an auxiliary device introduced for convergence: it is the intrinsic imaginary direction of the material sector $\mathbb{M}_-$, the same direction that appears as $ict'$ in the biquaternionic gradient and as the KMS analyticity strip in *The KMS Condition and the Biquaternion Framework*. The KMS strip has width $\beta$ and the Matsubara circle has circumference $\beta$, and these are the same $\beta$ because they are the same complexified material time. Concretely, for two elements $\tilde Q_1,\tilde Q_2$ of the algebra, the analytic strip $0<\mathrm{Im}\,t'<\beta$ of the KMS boundary relation
+- **Established (framework).** The compactified direction is a **material-sector direction**. The imaginary time that Matsubara's circle winds around is not an auxiliary device introduced for convergence: it is the intrinsic imaginary direction of the material sector $\mathbb{M}_-$, the same direction that appears as $i c r'_t$ in the biquaternionic gradient and as the KMS analyticity strip in *The KMS Condition and the Biquaternion Framework*. The KMS strip has width $\beta$ and the Matsubara circle has circumference $\beta$, and these are the same $\beta$ because they are the same complexified material time. Concretely, for two elements $\tilde Q_1,\tilde Q_2$ of the algebra, the analytic strip $0<\mathrm{Im}\,t'<\beta$ of the KMS boundary relation
 $$
 F_{\tilde Q_1\tilde Q_2}(t'+i\beta) = F_{\tilde Q_2\tilde Q_1}(-t')
 $$
@@ -41,7 +41,7 @@ The article proceeds as follows. The next section records the standard Wick rout
 
 The Matsubara formalism is usually reached by a Wick rotation, and it is reached here without one. Both routes are recorded, and so is the reason the second is used.
 
-**The standard route: the Wick rotation, quoted.** The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the material-time coefficient $ict'$ becomes the real $c\tau$, the material interval $-\varepsilon_\mu\delta_{\mu\nu}$ becomes the unit form $\delta_{\mu\nu}=(1,1,1,1)$, and the wave biquaternion is read on the real scalar axis,
+**The standard route: the Wick rotation, quoted.** The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the material-time coefficient $i c r'_t$ becomes the real $c\tau$, the material interval $-\varepsilon_\mu\delta_{\mu\nu}$ becomes the unit form $\delta_{\mu\nu}=(1,1,1,1)$, and the wave biquaternion is read on the real scalar axis,
 $$
 \tilde P_E = -\omega_n e_t+\vec p ,
 \qquad
@@ -49,7 +49,7 @@ $$
 $$
 This is the framework's level-2 to level-1 passage and it is standard (*Interpretation of the Wick Rotation in the Biquaternion Universe*; *The Functional Integral in Biquaternionic Form* uses the same identification). The norm of the rotated element is positive there, and the standard route takes the positivity from that rotated metric. It is correct, and it is what the literature does.
 
-**The alternative route: the material sector, no rotation.** The same result is obtained without leaving $\mathbb{M}_-$, by complexifying the material time along its own imaginary direction instead of rotating the axes. The material-time coefficient is $ict'$, along the imaginary scalar direction of $\mathbb{M}_-$, and the physical time $t'$ is real while the coefficient carries the $i$. Thermal equilibrium complexifies this coordinate, $t'\mapsto t'+is$ with $0<s<\beta$ the KMS strip of the boundary relation above, and the periodic identification builds the circle out of that imaginary displacement itself. No coordinate leaves $\mathbb{M}_-$, and the thermal frequency is the conjugate variable of the compactified material time, placed along the same imaginary scalar direction,
+**The alternative route: the material sector, no rotation.** The same result is obtained without leaving $\mathbb{M}_-$, by complexifying the material time along its own imaginary direction instead of rotating the axes. The material-time coefficient is $i c r'_t$, along the imaginary scalar direction of $\mathbb{M}_-$, and the physical time $t'$ is real while the coefficient carries the $i$. Thermal equilibrium complexifies this coordinate, $t'\mapsto t'+is$ with $0<s<\beta$ the KMS strip of the boundary relation above, and the periodic identification builds the circle out of that imaginary displacement itself. No coordinate leaves $\mathbb{M}_-$, and the thermal frequency is the conjugate variable of the compactified material time, placed along the same imaginary scalar direction,
 $$
 \boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_-\;}.
 $$
@@ -71,7 +71,7 @@ is the operator-exchange identity whose resolution is periodicity for the bosoni
 $$
 \tilde{Ξ}_{\text{boson}}(\tau+\beta) = +\tilde{Ξ}_{\text{boson}}(\tau),
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}_{\text{fermion}}(\tau+\beta) = -\tilde{Ξ}^{\mathrm{spn}}_{\text{fermion}}(\tau).
+\tilde{Ξ}^{\mathrm{sp}}_{\text{fermion}}(\tau+\beta) = -\tilde{Ξ}^{\mathrm{sp}}_{\text{fermion}}(\tau).
 $$
 The framework's grading is the even/odd decomposition of the algebra and of the spinor module, so the two periodicity classes are the two grading classes; this is the finite-temperature face of *The Spin–Statistics Theorem in Biquaternionic Form*, and no new input is needed beyond the grading and the KMS relation.
 
@@ -242,13 +242,13 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 
 ## The Euclidean and Thermal Splits in the Algebra
 
-The identifying statement of the article is that the compactified direction is the material time $ict'$, a direction of the material sector $\mathbb{M}_-$. The Euclidean-versus-thermal distinction is therefore read **inside** $\mathbb{M}_-$ and does not move the element to another sector. Two forms live on that one sector: the indefinite interval $\langle\cdot\rangle_{\natural}$, whose one negative direction is the time $ict'$, and the positive Hermitian form $\langle\cdot,\cdot\rangle_{*}$, definite there and equal to the Euclidean square, $\langle\tilde R,\tilde R\rangle_{*}=c^2{t'}^2+x^2+y^2+z^2$. The Euclidean reading of the thermal theory is the reading of the material sector through the form: the direction $\langle\cdot\rangle_{\natural}$ makes negative is the direction that was compactified, and the form is positive on it and on the rest. What is called the Euclidean section is, on the standard route, the rotated copy reached by $t'\to-i\tau$; on the route taken here it is the same material elements read with the definite form. The circle is the compactification of the one direction $\langle\cdot\rangle_{\natural}$ makes negative, and the form is what makes the corresponding frequencies positive.
+The identifying statement of the article is that the compactified direction is the material time $i c r'_t$, a direction of the material sector $\mathbb{M}_-$. The Euclidean-versus-thermal distinction is therefore read **inside** $\mathbb{M}_-$ and does not move the element to another sector. Two forms live on that one sector: the indefinite interval $\langle\cdot\rangle_{\natural}$, whose one negative direction is the time $i c r'_t$, and the positive Hermitian form $\langle\cdot,\cdot\rangle_{*}$, definite there and equal to the Euclidean square, $\langle\tilde R_\varphi,\tilde R_\varphi\rangle_{*}=c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$. The Euclidean reading of the thermal theory is the reading of the material sector through the form: the direction $\langle\cdot\rangle_{\natural}$ makes negative is the direction that was compactified, and the form is positive on it and on the rest. What is called the Euclidean section is, on the standard route, the rotated copy reached by $t'\to-i\tau$; on the route taken here it is the same material elements read with the definite form. The circle is the compactification of the one direction $\langle\cdot\rangle_{\natural}$ makes negative, and the form is what makes the corresponding frequencies positive.
 
 This is why the article's computations are done in $\mathbb{M}_-$ and not in a real-quaternion slice. The material sector already carries both forms, the interval that fixes the causal cone and the probability form that fixes the weights, and it is the second that the thermal propagator needs. The block structure $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ reads the same object through the central $i$, and its owner is *The Biquaternion Space, the Group of Involutions and the Six Subspaces*; it is a place to put the result, whereas the result itself is a statement about $\mathbb{M}_-$.
 
 ## Summary
 
-The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $ict'$. The standard route to it is the Wick rotation $t'\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{M}_-$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $t'\sim t'+i\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
+The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i c r'_t$. The standard route to it is the Wick rotation $t'\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{M}_-$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $t'\sim t'+i\beta$ has circumference $\beta=\hbar/(k_BT)$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
 $$
 \boxed{\;\tilde P_E = i\omega_n e_t+\vec p \in \mathbb{M}_- ,
 \qquad
@@ -274,7 +274,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
+| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $t'\sim t'+i\beta$ | Thermal circle $S^1_\beta$: the complexified material time, compactified |
 | $\beta=\hbar/(k_BT)$ | Inverse temperature; circle circumference; KMS width |
 | $\tau$ | real parameter along the thermal circle |

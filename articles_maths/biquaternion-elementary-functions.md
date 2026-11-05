@@ -296,7 +296,7 @@ a convergent series of iterated brackets. Thus $\exp(a)\exp(b)$ differs from $\e
 
 ### The Exponential in the Two Real Directions
 
-Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_t$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\psi\, i\vec u$, with $\theta, \psi \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+Let $\vec u$ be a real unit vector part, so that $\vec u^2 = -e_t$. The two real three-dimensional families of exponents — the bivector directions $\theta\vec u$ and the vector directions $\theta^{\mathrm{rpd}}\, i\vec u$, with $\theta, \theta^{\mathrm{rpd}} \in \mathbb{R}$ — exponentiate in closed form. They are the two real summands of the trace-free subalgebra of $\mathbb{B}$, developed in *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 **The bivector directions.** For real $\theta$,
 
@@ -306,13 +306,13 @@ $$
 
 a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $\langle\exp(\theta\vec u)\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_t$, and at the half-period $\exp(\pi\vec u) = -e_t$.
 
-**The vector directions.** With $(i\vec u)^2 = +e_t$ and real parameter $\psi \in \mathbb{R}$,
+**The vector directions.** With $(i\vec u)^2 = +e_t$ and real parameter $\theta^{\mathrm{rpd}} \in \mathbb{R}$,
 
 $$
-\exp(\psi\, i\vec u) = \cosh\psi\, e_t + \sinh\psi\, i\vec u.
+\exp(\theta^{\mathrm{rpd}}\, i\vec u) = \cosh\theta^{\mathrm{rpd}}\, e_t + \sinh\theta^{\mathrm{rpd}}\, i\vec u.
 $$
 
-This element is Hermitian, lies in $\mathbb{M}_+$, and has $\langle\exp(\psi\,i\vec u)\rangle_{\natural} = \cosh^2\psi - \sinh^2\psi = 1$. Unlike the bivector family it is not periodic and is unbounded as $\psi \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
+This element is Hermitian, lies in $\mathbb{M}_+$, and has $\langle\exp(\theta^{\mathrm{rpd}}\,i\vec u)\rangle_{\natural} = \cosh^2\theta^{\mathrm{rpd}} - \sinh^2\theta^{\mathrm{rpd}} = 1$. Unlike the bivector family it is not periodic and is unbounded as $\theta^{\mathrm{rpd}} \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
 
 **Comparison.** A general exponent is $\tilde{Q} = \vec q + i\vec q'$ with $\vec q, \vec q'$ real vector parts; the two families commute only when $\vec q$ and $\vec q'$ are parallel, since $[\vec q, i\vec q'] = 2i\,(\vec q \times \vec q')$, and in general the closed form of §*The Exponential* with $Q_t = 0$ mixes the two families.
 

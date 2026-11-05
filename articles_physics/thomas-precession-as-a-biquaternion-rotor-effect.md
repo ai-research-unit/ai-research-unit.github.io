@@ -128,7 +128,7 @@ The interval rotor makes precise in what sense the Thomas precession is a rotor 
 The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dt'\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}+d\theta^{\mathrm{rpd}}$ and $\theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}}$, and let $\theta$ be the angle between them, so that $\theta=\pi-\delta$ with
 
 $$
-\delta=\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^{2}),
+\delta=\frac{|\vec a_\perp|}{v}\,dt'+O(d{r'_{t}}^{2}),
 \qquad
 \vec a_\perp=\vec a-\frac{\vec a\cdot\vec v}{v^{2}}\vec v,
 $$
@@ -136,17 +136,17 @@ $$
 the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\theta^{\mathrm{rpd}}=\gamma^2(\vec a\cdot\vec u_v)dt'/c$, and to leading order
 
 $$
-\sin\theta=\delta+O(d{t'}^{3}),
+\sin\theta=\delta+O(d{r'_{t}}^{3}),
 \qquad
-\cos\theta=-1+O(d{t'}^{2}).
+\cos\theta=-1+O(d{r'_{t}}^{2}).
 $$
 
-Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{t'}^{2})$, the $d\theta^{\mathrm{rpd}}$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{t'}^{2})$. Hence
+Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{r'_{t}}^{2})$, the $d\theta^{\mathrm{rpd}}$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{r'_{t}}^{2})$. Hence
 
 $$
-\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{t'}^{2})
+\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{r'_{t}}^{2})
 \;\Longrightarrow\;
-\theta_W=(\gamma-1)\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^{2}),
+\theta_W=(\gamma-1)\frac{|\vec a_\perp|}{v}\,dt'+O(d{r'_{t}}^{2}),
 $$
 
 where $2\sinh^{2}\tfrac{\theta^{\mathrm{rpd}}}{2}=\cosh\theta^{\mathrm{rpd}}-1=\gamma-1$. The angular velocity is therefore
@@ -359,7 +359,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ | Thomas rotor (half-angle) |
 | $\vec r=\sum_\mu r_\mu\vec e_\mu$ | Material spatial vector |
 | $g$, $\gamma_g=gq/2m$ | Gyromagnetic factor and ratio |
-| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ |
+| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde P\tilde R_\psi)=2\,\mathrm{Sc}(\tilde P\tilde R_\psi) = 2\langle\tilde{P},\tilde R_\psi\rangle$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

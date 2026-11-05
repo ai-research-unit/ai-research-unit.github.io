@@ -138,7 +138,7 @@ The assignment of the three second derivatives to the three components is the so
 $$
 G=\frac{\bar w}{z+r},
 \qquad
-r=\sqrt{w\bar w+z^2}=\sqrt{x^2+y^2+z^2},
+r=\sqrt{w\bar w+z^2}=\sqrt{r_x^2+r_y^2+r_z^2},
 $$
 
 which satisfies $\Box G=0$ and the eikonal, and which is the stereographic projection $S^2\to\mathbb{C}$ from one pole. The potential is
@@ -272,7 +272,7 @@ The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\v
 | $E_{+},E_{3},E_{-}$ | $E_{1}+iE_{2}$, $E_{3}$, $E_{1}-iE_{2}$; the spinor of the field strength |
 | $ϙ$ | Electric charge; the Coulomb family has $\mathrm{ϙ}=4ϙ$ |
 | $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$ | The Coulomb family; $\mathrm{ϙ}=1$ gives the elementary charge $\lvertϙ\rvert=\tfrac14$ |
-| $r=\sqrt{x^2+y^2+z^2}$ | Radial coordinate |
+| $r=\sqrt{r_x^2+r_y^2+r_z^2}$ | Radial coordinate |
 | $\vec E_r,\vec E_i$ | Real and imaginary parts of $\vec E$; each is a real Maxwell field carrying its own energy |
 | $\vec E\cdot\vec E+\vec H\cdot\vec H$ | The bilinear density, without conjugation; it is the invariant combination and vanishes on a duality-pure field |
 | $I_1,I_2$ | The two invariants, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$; the bilinear's scalar part is $-\epsilon(I_1+2icI_2)$ |

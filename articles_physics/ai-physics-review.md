@@ -38,18 +38,18 @@ $$
 The two sectors are its two fixed spaces:
 
 $$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \{q_te_t + i(q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z)\}, \qquad
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \{iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\}.
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \{c r_t e_t + i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)\}, \qquad
+\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \{i c r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z\}.
 $$
 
 So $\mathbb{M}_-$ is imaginary scalar, real vector and $\mathbb{M}_+$ is real scalar, imaginary vector, and on the physical coordinates the same two spaces read
 
 $$
-\mathbb{M}_- = \{ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z\}, \qquad
-\mathbb{M}_+ = \{ct\,e_t + i(x'\vec e_x + y'\vec e_y + z'\vec e_z)\},
+\mathbb{M}_- = \{i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z\}, \qquad
+\mathbb{M}_+ = \{ct\,e_t + i(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z)\},
 $$
 
-with $c$ the speed of light and $t',x,y,z$ and $t,x',y',z'$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $ict'$ and $ct$ and the spaces $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ without identifying them.
+with $c$ the speed of light and $t',x,y,z$ and $t,r'_{x},r'_{y},r'_{z}$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $i c r'_t$ and $c r_t$ and the spaces $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ without identifying them.
 
 Each sector is four-real-dimensional, they meet only at $0$, together they span the algebra, and multiplication by $i$ exchanges them:
 
@@ -77,10 +77,10 @@ It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{
 
 **The scalar part.** $\mathrm{Sc}$ is the coefficient of $e_t$. It is defined on $\mathbb{B}$ before any matrix is chosen, and it turns the product into a number. No representation enters.
 
-**The restriction to $\mathbb{M}_+$.** An element of the sector is $\tilde H=h_te_t+i\vec h$ with $h_t,\vec h$ real, so $\tilde H^{*}=\tilde H$. The Hermitian form therefore equals the plain form there,
+**The restriction to $\mathbb{M}_+$.** An element of the sector is $\tilde R_\psi=h_te_t+i\vec h$ with $h_t,\vec h$ real, so $\tilde R_\psi^{*}=\tilde R_\psi$. The Hermitian form therefore equals the plain form there,
 
 $$
-\langle\tilde H_1,\tilde H_2\rangle_{*}=\mathrm{Sc}(\tilde H_1\tilde H_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2 ,
+\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2 ,
 $$
 
 the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from the imaginary coefficients. The plain form is the restriction, not a second pairing.
@@ -95,15 +95,15 @@ $$
 \mathrm{Sc}(\tilde{Ϛ})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12.
 $$
 
-**The weight.** With $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and $\tilde H=h_te_t+i\vec h$,
+**The weight.** With $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and $\tilde R_\psi=h_te_t+i\vec h$,
 
 $$
-p=\frac{\langle\tilde{Ϛ},\tilde H\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+p=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
 =h_t+\vec r\cdot\vec h.
 $$
 
-The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}$ and $\tilde H$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
+The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}$ and $\tilde R_\psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde R_\psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
 
 #### The quaternionic form: the interval
 
@@ -119,10 +119,10 @@ $$
 \langle\tilde Q\rangle_\natural=\langle\tilde Q,\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
 $$
 
-**The interval.** On $\mathbb{M}_-$, with $\tilde R=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z$,
+**The interval.** On $\mathbb{M}_-$, with $\tilde R_\varphi=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$,
 
 $$
-\langle\tilde R\rangle_\natural=-c^2t'^2+x^2+y^2+z^2,
+\langle\tilde R_\varphi\rangle_\natural=-c^2t'^2+r_x^2+r_y^2+r_z^2,
 $$
 
 of signature $(3,1)$.
@@ -156,7 +156,7 @@ $$
 
 This is the trace reading of the Hermitian form, not a fifth form. It is used only at normalisation; the Born weight itself is stated in the quantum section as the normalised Hermitian form, and its trace reading is recorded there, last.
 
-**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}^{1/2}\tilde H\tilde{Ϛ}^{1/2})\ge0$ for $\tilde{Ϛ},\tilde H\ge0$; that non-negativity is the reason the star belongs in the probability reading.
+**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}^{1/2}\tilde R_\psi\tilde{Ϛ}^{1/2})\ge0$ for $\tilde{Ϛ},\tilde R_\psi\ge0$; that non-negativity is the reason the star belongs in the probability reading.
 
 ### One operation, three uses
 
@@ -187,7 +187,7 @@ $$
 The commutator always lands in the material sector and the anticommutator in the informational one. On $\mathbb{M}_-$ the commutator is explicit and minimal,
 
 $$
-[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r \qquad (\tilde{Q}_1 = iq'_te_t+\vec q,\ \tilde{Q}_2 = ir'_te_t+\vec r),
+[\tilde R_{\varphi,1},\tilde R_{\varphi,2}] = 2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2} \qquad (\tilde R_{\varphi,1} = i c r'_{1t}e_t+\vec r_{\varphi,1},\ \tilde R_{\varphi,2} = i c r'_{2t}e_t+\vec r_{\varphi,2}),
 $$
 
 twice the spatial cross product, with the time direction absent: the time axis is central for the bracket. Hence $\mathbb{M}_-$ is closed under the commutator and is a Lie algebra, $\mathfrak{u}(2) = \mathbb{R}ie_t\oplus\mathfrak{su}(2)$, of dimension four; $\mathbb{M}_+$ is closed under the anticommutator and is a Jordan algebra, not a Lie algebra. Neither sector is closed under the product, so both the rotor group and the state module live in the full algebra.
@@ -196,19 +196,19 @@ twice the spatial cross product, with the time direction absent: the time axis i
 
 Five reasons, in increasing order of strength.
 
-1. **It is a four-dimensional real space with a real form of the right signature.** On $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the biquaternion norm reads
+1. **It is a four-dimensional real space with a real form of the right signature.** On $\mathbb{M}_-$, with $\tilde R_\varphi = i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the biquaternion norm reads
 $$
-\boxed{\;\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2\;},
+\boxed{\;\langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;},
 $$
 a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentum, four-current and four-potential are all elements of this one subspace, so the kinematical content of relativity — that these are one kind of object — is a statement about the algebra.
 
-2. **The Lorentzian signature is derived, not postulated.** The biquaternion norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, in which all four directions enter on an equal footing: there is no minus sign in the form itself and none is needed. A minus appears only when a real coordinate is put on a direction whose coefficient carries an $i$, which is exactly the $ict'$ convention, and then it comes from $i^2 = -1$ alone. Nothing about the metric has to be assumed at the start, not even the choice of which direction is timelike. A direction is timelike because its coefficient is imaginary. That is a labelling of the coordinate, not a commitment of the form.
+2. **The Lorentzian signature is derived, not postulated.** The biquaternion norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, in which all four directions enter on an equal footing: there is no minus sign in the form itself and none is needed. A minus appears only when a real coordinate is put on a direction whose coefficient carries an $i$, which is exactly the $i c r'_t$ convention, and then it comes from $i^2 = -1$ alone. Nothing about the metric has to be assumed at the start, not even the choice of which direction is timelike. A direction is timelike because its coefficient is imaginary. That is a labelling of the coordinate, not a commitment of the form.
 
 3. **The invariance group comes for free, and it is the Lorentz group.** A form that multiplies always brings its own isometry group: the elements of unit norm. Those are the biquaternions with $\langle\tilde{U}\rangle_{\natural} = 1$, they form $SL(2,\mathbb{C})$, and they act on $\mathbb{M}_-$ by $\Gamma$ above. That action is the double cover of the proper orthochronous Lorentz group. Lorentz invariance is therefore not an axiom added to the algebra; it is the invariance group of the algebra's own norm. This is the strongest single reason to call $\mathbb{M}_-$ the relativistic sector, because it is the one place where the framework produces a physical symmetry group rather than naming one.
 
 4. **The causal structure is an algebraic locus.** $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone. Its nonzero elements are precisely the elements with no inverse — $3ie_t+\vec e_x+2\vec e_y+2\vec e_z$ has $\langle\tilde{Q}\rangle_{\natural}=-9+1+4+4=0$, so it is a zero divisor. So the light cone, massless propagation and the failure of division are one fact seen three ways.
 
-5. **Rotations are the bracket.** $[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r$, so angular momentum and the rotation generators are the commutator of the sector, and the Lie algebra is $\mathfrak{u}(2)$.
+5. **Rotations are the bracket.** $[\tilde R_{\varphi,1},\tilde R_{\varphi,2}] = 2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2}$, so angular momentum and the rotation generators are the commutator of the sector, and the Lie algebra is $\mathfrak{u}(2)$.
 
 **What the material sector does not supply.** No scale, no preferred time direction, no Hamiltonian and no equation of motion. The kinematics of relativity is in the algebra; its dynamics comes from outside.
 
@@ -220,17 +220,17 @@ Seven reasons. The first is decisive.
 
 2. **The sector is the observable algebra of a two-state system, exactly.** $\mathsf{M}_2(\mathbb{M}_+)$ is the Hermitian $2\times2$ matrices; an element is
 $$
-\boxed{\;\mathsf{M}_2(\tilde{H}) = h_tI_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde{H} = h_te_t + i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)\;},
+\boxed{\;\mathsf{M}_2(\tilde R_\psi) = h_tI_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde R_\psi = h_te_t + i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)\;},
 $$
 with real $h_t,\vec h$, and its spectrum is $h_t+\lvert\vec h\rvert$ and $h_t-\lvert\vec h\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.
 
-3. **The probability weight is the normalised Hermitian form, and on $\mathbb{M}_+$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{M}_+$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{M}_+$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$; and the weight of an outcome with effect $\tilde{H}$ is
+3. **The probability weight is the normalised Hermitian form, and on $\mathbb{M}_+$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{M}_+$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{M}_+$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$; and the weight of an outcome with effect $\tilde R_\psi$ is
 $$
-\boxed{\;p=\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+\boxed{\;p=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
 =h_t+\vec r\cdot\vec h\;}.
 $$
-In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=h_t+\vec r\cdot\vec h$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Tr}(\tilde{Ϛ})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{M}_+$ the star in the numerator is inert, since $\tilde H^{*}=\tilde H$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde H\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
+In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})=h_t+\vec r\cdot\vec h$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Tr}(\tilde{Ϛ})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{M}_+$ the star in the numerator is inert, since $\tilde R_\psi^{*}=\tilde R_\psi$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde R_\psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
 
 4. **The state space is not added: it is the positive cone of the sector.** The pure states are the algebra's own idempotents,
 $$
@@ -260,7 +260,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 |---|---|
 | Maxwell's equations | The four collapse into one, $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, of vanishing scalar part and mixed real and imaginary vector part, so it lies in neither sector |
 | The Klein–Gordon and Dirac equations | The two relativistic wave equations are the one factorisation $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$: the Dirac pair $\mathcal{D}_{\mp}$ is the first-order factor, a $2\times2$ matrix of gradients with $\mathcal{D}_{-}\mathcal{D}_{+} = (\Box - m^{2})I$, and the mass is the term that splits the massive case from the massless one |
-| The interval and its group | $\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2$; **the unit-norm elements are $SL(2,\mathbb{C})$ acting by $\Gamma$**, the double cover of the Lorentz group |
+| The interval and its group | $\langle i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; **the unit-norm elements are $SL(2,\mathbb{C})$ acting by $\Gamma$**, the double cover of the Lorentz group |
 | The light cone | $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone; its nonzero points are the zero divisors of $\mathbb{B}$ |
 | The state module | Left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi},\tilde\Upsilon\}$, Gram matrix $\tfrac12I_2$, amplitudes add |
 | The oscillator obstruction | $[\tilde{Q}_1,\tilde{Q}_2] = i\hbar\,e_t$ **has no solution** with $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{M}_+$: the commutator of two Hermitian elements is a pure real quaternion of zero scalar part, while $i\hbar\,e_t$ is purely scalar. The algebra therefore carries no oscillator beyond the two-level one, and the canonical commutator must be imported |
@@ -278,7 +278,7 @@ Every row is a theorem about $\mathbb{B}$ and its subspaces alone, provable from
 | The sectors are the fixed spaces | $\mathbb{M}_-$ is the fixed space of $-{}^{*}$, $\mathbb{M}_+$ of ${}^{*}$; each of four real dimensions; $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $i$ exchanges them |
 | The biquaternion norm | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; real on each sector, of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$; multiplicative |
 | The matrix dictionary | $\mathsf{M}_2$ is an isomorphism onto $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$; $\mathbb{M}_+\mapsto$ Hermitian, $\mathbb{M}_-\mapsto$ skew-Hermitian |
-| The bracket of the material sector | $[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r$; $\mathbb{M}_-\cong\mathfrak{u}(2)$ as a Lie algebra |
+| The bracket of the material sector | $[\tilde R_{\varphi,1},\tilde R_{\varphi,2}] = 2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2}$; $\mathbb{M}_-\cong\mathfrak{u}(2)$ as a Lie algebra |
 | The interlock | On two elements of one sector: commutator in $\mathbb{M}_-$, anticommutator in $\mathbb{M}_+$; the square of an element of either sector lies in $\mathbb{M}_+$ |
 | One action form | $\langle\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{*}\rangle_{\natural} = \langle\tilde{Q}_2\rangle_{\natural}$ for $\langle\tilde{Q}_1\rangle_{\natural} = 1$; $\Gamma$ preserves both sectors |
 
@@ -296,7 +296,7 @@ These are new as statements about the physics. The first states the identificati
 | The Born rule from the normalised Hermitian form | The corpus separates what it derives from what it restates. Derived from the algebra and its Hermitian subspace: a canonical positive-definite pairing, the Hermitian form, fixed by positivity and by the unit $e_t$, with the matrix trace as its $2\times2$ reading and the plain form as its restriction to $\mathbb{M}_+$; the rank-one Hermitian idempotents as the pure states; reality, positivity and normalisation of the state–idempotent pairing, hence a probability distribution for a projective measurement; the expectation value and the transition probability with their manifest symmetry; the extension to effects. An interpretation, not a derivation: the identification of that number with empirical frequency, which is the rule's empirical content and which no algebra supplies. The new part is **the derivation of the form of the rule and of the objects it relates**, together with an exact agreement with the Hilbert-space formulas that is now a theorem about the algebra rather than a coincidence. |
 | The improvement of the quaternionic quantum theory | The corpus places its framework against the earlier programme of Finkelstein, Jauch, Schiminovich, Speiser and Adler, in which the quaternion algebra is the scalar field, and it states the difference as one change: the biquaternion theory takes the complex numbers as its scalars and keeps the quaternion units as elements of the algebra, where they generate the rotations and act on the state module through $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Under that change **three of the programme's five limits are removed outright** — the non-commuting scalars, the conjugacy-class spectrum, and the phase group $SU(2)$; the fourth is repaired in its scalar form, since $\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}$, and remains in its algebra form, $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})$, which is the non-closure every matrix algebra shares and which is carried on the module; and the fifth, the complex structure the programme's own analysis found to be forced, is adopted and proved as a theorem of the successor, since a unit that preserves the Hermitian norm for every Hermitian generator is forced into the centre. The quaternions are not discarded: $\mathbb{H}$ is a real form of $\mathbb{B}$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is a subalgebra isomorphic to it. The comparison is a theorem about the algebra together with an interpretation of which limits are physical; the price, stated openly, is empirical equivalence with ordinary quantum mechanics rather than a departure from it. |
 | Interpretation of the Wick rotation | The corpus reads the Wick rotation as **a transfer between two four-dimensional subspaces of one algebra, from the material sector to the quaternion subspace**. The properties of that subspace explain both why the technique works and why it fails: it is elliptic, positive definite, free of zero divisors and with a compact symmetry group, and it buys this by giving up the light cone and the causal order. The interpretation classifies the applications — harmless where the physics is about correlations and equilibrium, destructive where it is about causality and dynamics — and **the split reproduces the observed practice**: the equilibrium uses succeed, and real-time transport, the sign problem and quantum gravity resist. This is **the corpus's most concrete new result**, because it explains a known pattern of successes and failures in a standard technique. Proposed: the algebra does not prove it, and it makes no measurement prediction. |
-| The Matsubara thermal formalism without the Wick rotation | In the equilibrium case the rotation is not merely harmless; it is **unnecessary**, and the corpus now does the Matsubara thermal formalism inside $\mathbb{M}_-$ with no rotation at all. The imaginary time is not introduced for convergence: it is the intrinsic imaginary direction of $\mathbb{M}_-$, the same direction that appears as $ict'$; thermal equilibrium complexifies it, $t'\mapsto t'+is$ along the KMS strip, and the thermal circle is its compactification, $t'\sim t'+i\beta$. The wave biquaternion stays in the sector, $\tilde P_E=i\omega_n e_t+\vec p\in\mathbb{M}_-$, and the mass-shell denominator is the Hermitian form of that element, $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2$, positive because $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is definite, not because a metric was rotated. The two routes agree by an identity, $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*}=\langle -\omega_n e_t+\vec p\rangle_{\natural}$, and the biquaternion norm of the material element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve: the interval and the probability are two forms of one element. The thermal correlator's positivity is then the **central-root case of the Bochner theorem** — the kernel $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, and the central root is degenerate, so the transform of a positive measure is positive definite there without qualification. Proved from the definitions as an identity, and an interpretation in that it says which route is the proper one; its content is that the case the rotation was thought to need is done without it, and that the positive work is done by the Hermitian form and not by the norm. |
+| The Matsubara thermal formalism without the Wick rotation | In the equilibrium case the rotation is not merely harmless; it is **unnecessary**, and the corpus now does the Matsubara thermal formalism inside $\mathbb{M}_-$ with no rotation at all. The imaginary time is not introduced for convergence: it is the intrinsic imaginary direction of $\mathbb{M}_-$, the same direction that appears as $i c r'_t$; thermal equilibrium complexifies it, $t'\mapsto t'+is$ along the KMS strip, and the thermal circle is its compactification, $t'\sim t'+i\beta$. The wave biquaternion stays in the sector, $\tilde P_E=i\omega_n e_t+\vec p\in\mathbb{M}_-$, and the mass-shell denominator is the Hermitian form of that element, $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2$, positive because $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is definite, not because a metric was rotated. The two routes agree by an identity, $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*}=\langle -\omega_n e_t+\vec p\rangle_{\natural}$, and the biquaternion norm of the material element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve: the interval and the probability are two forms of one element. The thermal correlator's positivity is then the **central-root case of the Bochner theorem** — the kernel $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, and the central root is degenerate, so the transform of a positive measure is positive definite there without qualification. Proved from the definitions as an identity, and an interpretation in that it says which route is the proper one; its content is that the case the rotation was thought to need is done without it, and that the positive work is done by the Hermitian form and not by the norm. |
 | The renormalization group without the Wick rotation | In the regulator the rotation is unnecessary too, and the same Hermitian form that carries the thermal positivity carries the cutoff. The cutoff is imposed on a material element, $\tilde{P}_E=ik_{E,0}e_t+\vec p\in\mathbb{M}_-$, and the invariant is the Hermitian form of that element, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}=(k_{E,0})^2+\vec p^2=k_E^2\ge 0$, positive because $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is definite and not because a metric was rotated; the cutoff is the condition $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}\le\Lambda^2$, and the shell is $\Lambda/b<\sqrt{\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}}<\Lambda$. The two routes agree by the identity $\langle ik_{E,0}e_t+\vec p,\,ik_{E,0}e_t+\vec p\rangle_{*}=\langle -k_{E,0}e_t+\vec p\rangle_{\natural}$ — the same identity as the thermal case — and the biquaternion norm of the material element, $\langle ik_{E,0}e_t+\vec p\rangle_{\natural}=-(k_{E,0})^2+\vec p^2$, is indefinite and cannot serve: the interval and the invariant of the cutoff are two forms of one element. The gain is real and not cosmetic, because the value of $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is a real scalar by construction, so the sector-blind argument no longer needs the separate fact that $\tilde{P}\tilde{P}^{\natural}$ has vanishing vector part. The limit is stated: the form gives the invariant and its positivity, not the Euclidean signature in which the Wetterich equation is written, so that equation is retained as it stands. Proved from the definitions as an identity, and an interpretation in that it says which route is the proper one; its content is that the case the rotation was thought to need is done without it, and that the new part is the **scope** of the fact — the same form, now carrying the scale of the flow as well as the thermal weight. |
 
 ### In mathematics
@@ -334,8 +334,8 @@ The project keeps its own list of proven obstructions. These are the ones that c
 ## Common Misreadings
 
 1. **The material sector is the anti-Hermitian one.** The more familiar convention would take the Hermitian subspace as the physical one. Here it is the other way round, and the reason is stated above: the four-vectors must multiply, the readings must be real.
-2. **The prime marks the $i$, not the sector.** The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{M}_-$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $ict' = iq'_t$; in $\mathbb{M}_+$ it sits on the vector, so the informational positions are the primed slots, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.
-3. **The material time enters as an imaginary coefficient and the informational time as a real one.** $ict'$ against $ct$. The minus of the metric comes from $i^2 = -1$ in $ict'$ and from nowhere else.
+2. **The prime marks the $i$, not the sector.** The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{M}_-$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $i c r'_t = iq'_t$; in $\mathbb{M}_+$ it sits on the vector, so the informational positions are the primed slots, $i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.
+3. **The material time enters as an imaginary coefficient and the informational time as a real one.** $i c r'_t$ against $c r_t$. The minus of the metric comes from $i^2 = -1$ in $i c r'_t$ and from nowhere else.
 4. **Two forms, two jobs, never conflated.** The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ answers the probability question: it is real and positive definite on the whole algebra, and it does not multiply. On $\mathbb{M}_+$ it equals the plain form $\langle\cdot,\cdot\rangle$, which is the reading used for the sector computations, while the Born weight keeps the star. The quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ answers the interval question on $\mathbb{M}_-$: it is indefinite, it multiplies, and its zero set is the light cone. In particular $\langle\tilde{Q}\rangle_{\natural} = 0$ does not mean $\tilde{Q} = 0$. A state is normalised by the linear condition $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, equivalently $\mathrm{Sc}(\tilde{Ϛ})=\tfrac12$, never by the quadratic norm.
 5. **The interval is the biquaternion norm, not the square.** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; the bare $\tilde{Q}^2$ is not a scalar and is not the interval.
 6. **Neither sector is a subalgebra.** Neither is closed under the product: a product of two elements of one sector generally has components in both. That is why the rotor group and the state module live in the full algebra.
@@ -368,8 +368,8 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\mathrm{Sc}$ | Scalar part: the coefficient of $e_t$, defined on $\mathbb{B}$ with no matrix |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The corpus's one bracket for its four forms: the subscript records the two conjugations, the one applied to the first argument and the one applied to the second, and the value is the scalar part of the corresponding general product |
 | ${}^{\natural}$, ${}^{*}$ | Quaternion conjugation; Hermitian conjugation ($\mathbb{C}$-antilinear, fixes $\mathbb{M}_+$) |
-| $\mathbb{M}_-$ | Material sector: imaginary scalar, real vector, $ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
-| $\mathbb{M}_+$ | Informational sector: real scalar, imaginary vector, $ct\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ |
+| $\mathbb{M}_-$ | Material sector: imaginary scalar, real vector, $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
+| $\mathbb{M}_+$ | Informational sector: real scalar, imaginary vector, $ct\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = \sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\varepsilon = (1,-1,-1,-1)$ | The plain form: $\mathbb{C}$-bilinear, defined with no matrix, not multiplicative; the restriction of the Hermitian form to $\mathbb{M}_+$, where its normalised value against the unit is the Born weight |
 | $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{Q}^2) = Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | The diagonal of the plain form, which the corpus also calls the plain norm: signature $(4,0)$ on $\mathbb{M}_+$, $(0,4)$ on $\mathbb{M}_-$. Quadratic, so it does not normalise states; it is not the biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_\mu Q_{1\mu}Q_{2\mu}$ | The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$: complex in general, real of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$, multiplicative; the interval; the norm of the framework |
@@ -381,8 +381,8 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
 | $\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading |
 | $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading; the Bloch ball |
-| $\tilde{H} = h_te_t+i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)$ | Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h\rvert$ |
+| $\tilde R_\psi = h_te_t+i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)$ | Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h\rvert$ |
 | $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ | Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module |
-| $c$ | Speed of light; $ict'$ is the material time coordinate |
+| $c$ | Speed of light; $i c r'_t$ is the material time coordinate |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace: real scalar, real vector, signature $(4,0)$, elliptic; the Wick target |
 | $\varsigma$ | An involution of the base ring; part of the datum of a sesqualgebra |

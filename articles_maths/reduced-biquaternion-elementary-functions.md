@@ -109,7 +109,7 @@ It is the bridge between the exponential and the trigonometric and hyperbolic fu
 $$
 \exp(i\theta)=\cos\theta+i\sin\theta,\qquad
 \exp(ij\beta)=\cos\beta+ij\sin\beta,\qquad
-\exp(j\phi)=\cosh\phi+j\sinh\phi.
+\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}.
 $$
 
 The first two are the elliptic directions, the third the hyperbolic direction.
@@ -233,27 +233,27 @@ where $\operatorname{Log}$ on the right is the principal complex logarithm, with
 
 For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm.
 
-| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\rho,\phi,\alpha,\beta)$ |
+| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\rho,\theta^{\mathrm{rpd}},\alpha,\beta)$ |
 |---|---|---|---|
 | $q_{\log\blacktriangle}$ | logarithmic scale | $\tfrac12\ln\lvert \lambda_1\lambda_2\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$ | $\ln\rho$ |
 | $q'_{\log\blacktriangle}$ | scalar phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)+\operatorname{Arg}(\lambda_2)\bigr)$ | $\alpha$ |
-| $q_{\log\blacktriangledown}$ | boost | $\tfrac12\ln\lvert \lambda_1/\lambda_2\rvert$ | $\phi$ |
+| $q_{\log\blacktriangledown}$ | boost | $\tfrac12\ln\lvert \lambda_1/\lambda_2\rvert$ | $\theta^{\mathrm{rpd}}$ |
 | $q'_{\log\blacktriangledown}$ | split phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)-\operatorname{Arg}(\lambda_2)\bigr)$ | $\beta$ |
 
 Here $\rho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,
 
 $$
 \breve Q_{\log}=q_{\log\blacktriangle}+jq_{\log\blacktriangledown}+iq'_{\log\blacktriangle}+ijq'_{\log\blacktriangledown}
-=\ln\rho+j\phi+i\alpha+ij\beta,
+=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta,
 $$
 
 and the exponential reassembles them:
 
 $$
-\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\phi+j\sinh\phi\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
 $$
 
-The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\phi$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
+The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
 
 **Example.** For $\breve Q=3+4i+j(1-i)$ the coefficients are $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$, so $\lambda_1=4+3i$ and $\lambda_2=2+5i$. The principal complex logarithms are
 
@@ -720,8 +720,8 @@ The table compares the elementary functions across the three algebras; in the bi
 | $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$ | the bar |
 | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm |
 | $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ | the squared Euclidean norm |
-| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\phi+i\beta$ |
-| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\rho,\alpha,\phi,\beta$ |
+| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}+i\beta$ |
+| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\rho,\alpha,\theta^{\mathrm{rpd}},\beta$ |
 | $\exp\breve Q=\exp(Q_{\blacktriangle})(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ | the exponential |
 | $\operatorname{Log}\breve Q$ | the principal logarithm |
 | $D$ | the principal diamond $\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$ |

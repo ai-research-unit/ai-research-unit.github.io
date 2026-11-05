@@ -73,7 +73,7 @@ $$
 
 with $U$ a $*$-unitary biquaternion, $U\bar{U} = 1$ in the sense above, and with the overline the quaternion conjugate and the star the complex conjugate. The text extraction of the PDF drops the overlines, as it does in the sibling paper; the two are restored here and the placement was settled by recomputation, not by reading. Of the $64$ ways to place a conjugate or its absence on each of the three equations, exactly four close under a covariant test, and the printed one is among them. The placement matters: the paper's group action preserves the indefinite interval, and the conjugation form $UZU^{-1}$, which a reader coming from the corpus's rotor conjugation might expect, is not even real in this algebra; it was checked and fails on both counts.
 
-Two caveats about the action belong here, both recomputed. First, $Z_2 = U^{*}ZU$ does preserve ${t'}^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random $*$-unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a *parametrization* it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = \exp(\theta)$ with $\theta$ complex, is what makes the star do work elsewhere.
+Two caveats about the action belong here, both recomputed. First, $Z_2 = U^{*}ZU$ does preserve ${r'_{t}}^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random $*$-unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a *parametrization* it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = \exp(\theta)$ with $\theta$ complex, is what makes the star do work elsewhere.
 
 ### The Biquaternionic Quadratic Form
 
@@ -361,7 +361,7 @@ No external source was consulted for the mathematics.
 |---|---|
 | (14.24) product, with $s_2\vec q_y$ corrected to $s_2\vec q_x$ | Sound; the correction is forced by associativity and matches the sibling article's equation (1) |
 | Basis (14.27), $\vec e_\mu^2 = +e_t$; dictionary to the corpus's basis | Exact; $\vec e_\mu^{\text{source}} = i\vec e_\mu^{\text{corpus}}$, so a source triple $\vec q$ is the corpus triple $i\vec q$ |
-| $Z_2 = U^{*}ZU$ preserves ${t'}^2 - \lvert\vec r\rvert^2$ | $8.4 \times 10^{-15}$ |
+| $Z_2 = U^{*}ZU$ preserves ${r'_{t}}^2 - \lvert\vec r\rvert^2$ | $8.4 \times 10^{-15}$ |
 | $Z_2 = U^{*}ZU$ as a parametrization composes under multiplication | Fails on the real parameters (boost/rotation); a bookkeeping matter, recorded |
 | (3.1) $\tfrac12F^{*}dZF$ is real-valued | Imaginary part $1.3 \times 10^{-15}$ |
 | (3.1), (3.4) covariance under $F^{\mathrm{lor}} = \bar UFU$, $dZ_2 = UdZU$, $d\Sigma_2 = Ud\Sigma U$ | $2.0 \times 10^{-14}$; exactly four of the $64$ conjugation placements close, the printed one among them |

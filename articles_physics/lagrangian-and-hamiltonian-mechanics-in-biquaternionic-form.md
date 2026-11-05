@@ -89,7 +89,7 @@ $$
 \frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\left(dq_{i}/dt'\right)}-\frac{\partial \mathrm{Lag}}{\partial q_i}=-\frac{\partial F}{\partial\left(dq_{i}/dt'\right)},
 $$
 
-with **Rayleigh's dissipation function** $F=\tfrac12\sum_{ij}b_{ij}\,dq_i/dt'\,dq_j/dt'$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/d{t'}^2+bdq/dt'+dV/dq(q)=0$. The energy $E=\sum_i dq_i/dt'\,\partial \mathrm{Lag}/\partial\left(dq_i/dt'\right)-\mathrm{Lag}$ is no longer conserved; it decreases at the rate
+with **Rayleigh's dissipation function** $F=\tfrac12\sum_{ij}b_{ij}\,dq_i/dt'\,dq_j/dt'$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/d{r'_{t}}^2+bdq/dt'+dV/dq(q)=0$. The energy $E=\sum_i dq_i/dt'\,\partial \mathrm{Lag}/\partial\left(dq_i/dt'\right)-\mathrm{Lag}$ is no longer conserved; it decreases at the rate
 
 $$
 \frac{dE}{dt'}=-\sum_i dq_i/dt'\,\frac{\partial F}{\partial\left(dq_i/dt'\right)}=-2F,
@@ -174,12 +174,12 @@ $$
 
 This single quaternion equation is the four real Euler–Lagrange equations, one for each component $q_\mu$.
 
-**Free particle.** For $L_0=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}$ the gradient is $\partial L_0/\partial\left(d\tilde q/dt'\right)=m\,d\tilde q/dt'$ and $\partial L_0/\partial\tilde q=0$, so the equation is $md^2\tilde q/d{t'}^2=0$: straight-line motion at constant velocity, as it must be.
+**Free particle.** For $L_0=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}$ the gradient is $\partial L_0/\partial\left(d\tilde q/dt'\right)=m\,d\tilde q/dt'$ and $\partial L_0/\partial\tilde q=0$, so the equation is $md^2\tilde q/d{r'_{t}}^2=0$: straight-line motion at constant velocity, as it must be.
 
 **Central potential.** For $\mathrm{Lag}=\tfrac{1}{2}m\langle d\tilde q/dt'\rangle_{\natural}-V(\tilde q)$, the equation is
 
 $$
-md^2\tilde q/d{t'}^2=-\partial V/\partial\tilde q .
+md^2\tilde q/d{r'_{t}}^2=-\partial V/\partial\tilde q .
 $$
 
 When $V$ is a function of the real-quaternion modulus $\langle\tilde q\rangle_{\natural}$ alone, the right-hand side is $-\partial V/\partial\tilde q=-2\,\frac{dV}{d\langle\tilde q\rangle_{\natural}}\,\tilde q$, a central force. The biquaternion equation is then the vector equation of a central-force problem; the specific force laws belong to the subcategory on effects without intrinsic magnetism, and are not developed here.
@@ -256,7 +256,7 @@ $$
 
 **Check on the free particle.** $H_0=\langle\tilde p\rangle_{\natural}/2m$ gives $\partial H_0/\partial\tilde p=\tilde p/m=d\tilde q/dt'$ and $\partial H_0/\partial\tilde q=0$, hence $d\tilde p/dt'=0$: constant momentum.
 
-**Check on the oscillator.** With $H$ as above, $d\tilde q/dt'=\tilde p/m$ and $d\tilde p/dt'=-m\omega^2\tilde q$, whose second-order form is $d^2\tilde q/d{t'}^2=-\omega^2\tilde q$. The flow is a rotation of the $(\tilde q,\tilde p)$ plane at frequency $\omega$, and after a quarter period the configuration has become the momentum divided by $m\omega$, and the momentum has become minus $m\omega$ times the configuration. In the biquaternion picture this exchange is the action of the complex structure, as the next section states.
+**Check on the oscillator.** With $H$ as above, $d\tilde q/dt'=\tilde p/m$ and $d\tilde p/dt'=-m\omega^2\tilde q$, whose second-order form is $d^2\tilde q/d{r'_{t}}^2=-\omega^2\tilde q$. The flow is a rotation of the $(\tilde q,\tilde p)$ plane at frequency $\omega$, and after a quarter period the configuration has become the momentum divided by $m\omega$, and the momentum has become minus $m\omega$ times the configuration. In the biquaternion picture this exchange is the action of the complex structure, as the next section states.
 
 ### The Routhian: the Partial Legendre Transform
 
@@ -269,10 +269,10 @@ $$
 in which the $s$ transformed coordinates obey Hamilton's equations and the $n-s$ others obey Lagrange's. The Routhian has the form of a Hamiltonian and the role of a Lagrangian: the remaining coordinates satisfy the same Lagrange equations as a system of $n-s$ degrees of freedom whose potential is shifted by the momenta that were removed. A central potential shows the mechanism. The angle $\theta$ is cyclic, its momentum $p_\theta=\ell$ is conserved, and the Routhian is a function of $r$ alone, whose Lagrange equation is
 
 $$
-md^2r/d{t'}^2=-dV/dr(r)+\frac{\ell^2}{mr^3},
+md^2r/d{r'_{t}}^2=-dV/dr(r)+\frac{\ell^2}{mr^3},
 $$
 
-the centrifugal term appearing as a consequence of the transform rather than as an inserted fictitious force. The partition is arbitrary — nothing requires the transformed coordinates to be the cyclic ones, and choosing them so is a convenience. This article applies the transform to the whole configuration, which is the case $s=n$; the partial case is recorded because it is the general form, and because it shows that which variable is eliminated is a choice of description and not of physics. The other classical reformulation worth naming is **Appell's**, whose equations of motion are written in the **generalized accelerations** $\alpha_r=d^2q_{r}/d{t'}^2$ rather than in the generalized velocities, with the generalized forces of D'Alembert's principle.
+the centrifugal term appearing as a consequence of the transform rather than as an inserted fictitious force. The partition is arbitrary — nothing requires the transformed coordinates to be the cyclic ones, and choosing them so is a convenience. This article applies the transform to the whole configuration, which is the case $s=n$; the partial case is recorded because it is the general form, and because it shows that which variable is eliminated is a choice of description and not of physics. The other classical reformulation worth naming is **Appell's**, whose equations of motion are written in the **generalized accelerations** $\alpha_r=d^2q_{r}/d{r'_{t}}^2$ rather than in the generalized velocities, with the generalized forces of D'Alembert's principle.
 
 ## Phase Space as a Single Biquaternion
 
@@ -313,7 +313,7 @@ so that the two vector parts separate as configuration and momentum while the tw
 The phase-space biquaternion $\tilde Q_3=\tilde q+i\tilde p$ packages the **configuration** with the **momentum**. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the **four-Hamiltonian**
 
 $$
-\Pi = \left[H(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\pi)\,;\,-i\vec\pi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right],
+\Pi = \left[H(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\pi)\,;\,-i\vec\pi(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right],
 $$
 
 a bireal — that is, Hermitian — biquaternion whose scalar part is the Hamiltonian and whose vector part carries the canonical momentum. For $n$ point particles in a time-independent external field it is assembled from the four-momenta and the potential,
@@ -336,7 +336,7 @@ $$
 \oint dX\circ\Pi = 0 ,
 $$
 
-which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'=d H/d\vec\pi$, $d\vec\pi/dt'=-d H/d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$.
+which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dt'=d H/d\vec\pi$, $d\vec\pi/dt'=-d H/d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
 **Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Q_3$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Q_3$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
 
@@ -442,7 +442,7 @@ The transcription is exact within its domain, and the domain is worth stating pl
 
 **What it does not give.** The algebra is finite dimensional; it cannot carry the configuration space of a system with more than a few degrees of freedom, nor an infinite-dimensional field configuration except through its coefficients. The Poisson bracket is a scalar projection of a quaternion product, and the vector part it discards is not a second bracket. And the canonical Heisenberg sector is absent: there is no pair $\tilde q,\tilde p$ inside $\mathbb{B}$ whose commutator is a nonzero central constant, as the companion articles *Similitudes Between the Poisson Bracket and the Quantum Commutator* and *The Harmonic Oscillator in Biquaternionic Form* prove. None of these limitations is a defect of the transcription; they are properties of the algebra, and they mark where the biquaternion language is a convenience and where it is a constraint.
 
-**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\xi^{\mathrm{scp}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi(\vec y)\}=\delta^3(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
+**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\xi^{\mathrm{scp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
 
 ## Summary
 

@@ -271,12 +271,12 @@ $$
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R ,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R ,
 $$
 
-one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays.
+one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays.
 
 In the isospin limit the divergence is the mass bilinear,
 
@@ -335,7 +335,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, at least $\operatorname{rank}c(M)$ in number.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, at least $\operatorname{rank}c(M)$ in number.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -436,7 +436,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame cell of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the volume cell, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |

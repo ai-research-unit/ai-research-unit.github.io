@@ -146,7 +146,7 @@ Both are reflections, with determinant $-1$; the identity component is the even 
 $$
 \eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \eta_P=iR_{\vec e_x}^{\mathrm{axf}},\qquad \eta_T=-L_{\vec e_y}^{\mathrm{axf}} ,
 $$
-acting as $C[\tilde{Ξ}^{\mathrm{spn}}]=\eta_C\tilde{Ξ}^{\mathrm{spn}*}$, $P[\tilde{Ξ}^{\mathrm{spn}}]=\eta_P\tilde{Ξ}^{\mathrm{spn}}(-\vec x)$ and $T[\tilde{Ξ}^{\mathrm{spn}}]=\eta_T\tilde{Ξ}^{\mathrm{spn}*}(-t')$, with $\tilde{Ξ}^{\mathrm{spn}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
+acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec x)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-t')$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
 
 | operation | internal factor | its generator factors | coordinates reversed | determinant | induced map |
 |---|---|---|---|---|---|
@@ -216,7 +216,7 @@ $$
 $$
 where the four scalar factors of $\omega$ multiply to $i^4=1$, so that $\omega$ is a pure product of cells. That product is the pseudoscalar of the frame, $\omega^2=-I_4$, and the chirality cell is a single right multiplication whose square is $I_4$.
 
-**The letter.** An element is $L$ when the chirality cell gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde{Ξ}^{\mathrm{spn}}_R$.
+**The letter.** An element is $L$ when the chirality cell gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$.
 
 **Which cells keep it and which exchange it.** A cell acts through its right multiplier: a product takes the letter of its right factor, and left multiplication keeps the letter of its operand. Every even cell has right multiplier $e_t$ or $\vec e_z$ and keeps the letter. Every generator has right multiplier $\vec e_x$ or $\vec e_y$ and exchanges it, so a generator carries the $R$ part into the $L$ part and the $L$ part into the $R$ part.
 
@@ -224,20 +224,20 @@ Combined with the split established above, the statement is: **rotations keep th
 
 The mass is where the two parts are coupled, and the coupling is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L , \qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L , \qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R ,
 $$
 in which every derivative is the gradient and acts by left multiplication. The pair is written once as an operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,
 $$
-\tilde{Ξ}^{\mathrm{spn}}=(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R),\qquad
-\mathbb{D}\tilde{Ξ}^{\mathrm{spn}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L\bigr),
+\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R),\qquad
+\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr),
 $$
-and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{spn}}=0$. The pair operator is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
+and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. The pair operator is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
 $$
-\mathbb{D}^2\tilde{Ξ}^{\mathrm{spn}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{spn}} ,
+\mathbb{D}^2\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{sp}} ,
 $$
 with $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.
 
-The consequence is immediate. Set $\tilde{Ξ}^{\mathrm{spn}}_R=0$ in a massive field: the first member reads $0=m\tilde{Ξ}^{\mathrm{spn}}_L$, so $\tilde{Ξ}^{\mathrm{spn}}_L=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
+The consequence is immediate. Set $\tilde{Ξ}^{\mathrm{sp}}_R=0$ in a massive field: the first member reads $0=m\tilde{Ξ}^{\mathrm{sp}}_L$, so $\tilde{Ξ}^{\mathrm{sp}}_L=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -248,8 +248,8 @@ under which a finite-dimensional representation is labelled by a pair $(j_1,j_2)
 | object | label | letter |
 |---|---|---|
 | a scalar | $(0,0)$ | in neither copy; no letter exists |
-| $\tilde{Ξ}^{\mathrm{spn}}_L$ | $(\tfrac12,0)$ | in the first copy alone |
-| $\tilde{Ξ}^{\mathrm{spn}}_R$ | $(0,\tfrac12)$ | in the second copy alone |
+| $\tilde{Ξ}^{\mathrm{sp}}_L$ | $(\tfrac12,0)$ | in the first copy alone |
+| $\tilde{Ξ}^{\mathrm{sp}}_R$ | $(0,\tfrac12)$ | in the second copy alone |
 | a vector | $(\tfrac12,\tfrac12)$ | in both copies equally |
 
 This is the precise sense in which the letter is tied to spin $\tfrac12$: the two parts are the two smallest nontrivial representations of the two copies, and $L$ *means* $(\tfrac12,0)$. A scalar has no letter because it sits in neither copy, and a vector is blind to it because it sits in both equally. The link is not a coincidence to be explained: each part is a minimal representation of one copy, and the cell is what tells the two copies apart.
@@ -303,16 +303,16 @@ The claims of this article, in order.
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | even half, odd half | The cells with an even and with an odd number of generator factors; the even half is the image of $\mathbb{B}$ |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the four generators: the biquaternion norm on the Hermitian basis |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=ict'$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
-| $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}^{\mathrm{spn}} = a\tilde{Ξ}^{\mathrm{spn}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
+| $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}^{\mathrm{sp}} = a\tilde{Ξ}^{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
 | the four frame cells | The generator cells: $iR_{\vec e_x}^{\mathrm{axf}}$, and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=1,2,3$ |
 | $\omega = iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Pseudoscalar, $\omega^2 = -I_4$; its four factors of $i$ multiply to $i^4=1$ |
 | $-iR_{\vec e_z}^{\mathrm{axf}} = i\omega = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, $(-iR_{\vec e_z}^{\mathrm{axf}})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality cell |
-| $\tilde{Ξ}^{\mathrm{spn}}_{L,R}$ | The two parts of a field |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, whose subscripts name the two members |
-| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L)$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots |
+| $\tilde{Ξ}^{\mathrm{sp}}_{L,R}$ | The two parts of a field |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members |
+| $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots |
 | $iR_{\vec e_x}^{\mathrm{axf}}$ | The frame cell; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd unit cell on the vectors; $u^2=\epsilon(u)I_4$ |
 | Reversal $\mathrm{rev}$ | The anti-automorphism that reverses the order of the factors; on an array it is the transpose, and on the biquaternions it is quaternion conjugation |

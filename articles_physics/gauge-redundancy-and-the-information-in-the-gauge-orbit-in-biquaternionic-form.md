@@ -62,7 +62,7 @@ These two facts are the whole geometry of the orbit: it is a flat affine space m
 
 ### The Orbit in Fourier Space
 
-The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_0,k_1,k_2,k_3)$ on the $ict'$ coordinates, so that a gradient acts as left multiplication by $iK$ with
+The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_0,k_1,k_2,k_3)$ on the $i c r'_t$ coordinates, so that a gradient acts as left multiplication by $iK$ with
 
 $$
 K = \sum_{\mu\in\{t,x,y,z\}}k_\mu e_\mu .
@@ -74,12 +74,12 @@ The rank is the count of gauge directions per mode, and subtracting it from the 
 
 ### The Orbit and the Covariant Derivative
 
-The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}^{\mathrm{spn}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
+The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}^{\mathrm{sp}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}_2 = \lambda\tilde{Ξ}^{\mathrm{spn}},
+\tilde{Ξ}^{\mathrm{sp}}_2 = \lambda\tilde{Ξ}^{\mathrm{sp}},
 \qquad
 \lambda = \exp(i ϙ\Gamma/\hbar).
 $$
@@ -87,20 +87,20 @@ $$
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
 $$
-D_2\tilde{Ξ}^{\mathrm{spn}}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}^{\mathrm{spn}}
-= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{Ξ}^{\mathrm{spn}}
-= \lambda\,D\tilde{Ξ}^{\mathrm{spn}},
+D_2\tilde{Ξ}^{\mathrm{sp}}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}^{\mathrm{sp}}
+= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{Ξ}^{\mathrm{sp}}
+= \lambda\,D\tilde{Ξ}^{\mathrm{sp}},
 $$
 
-the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}^{\mathrm{spn}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}^{\mathrm{spn}} + \lambda\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
+the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}^{\mathrm{sp}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}^{\mathrm{sp}} + \lambda\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
 
 $$
 D_2 = \lambda\,D\,\lambda^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{spn}})$ and the pair $(\tilde{A}_2,\tilde{Ξ}^{\mathrm{spn}}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}^{\mathrm{spn}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{sp}})$ and the pair $(\tilde{A}_2,\tilde{Ξ}^{\mathrm{sp}}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}^{\mathrm{sp}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
 
-Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{spn}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
+Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{sp}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
 ## The Orbit Is the Fibre of the Curvature Map
 
@@ -130,7 +130,7 @@ $$
 
 so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the coordinate along the fibre.
 
-Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict'$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
+Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = i c r'_t$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
 
 $$
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,

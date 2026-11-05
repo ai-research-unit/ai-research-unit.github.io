@@ -12,7 +12,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ car
 
 The article is classical throughout. The Hermitian pairing is the form that the companion articles on $\mathbb{M}_+$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=ict'$, and the d'Alembertian of the series is $\Box=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i c r'_t$, and the d'Alembertian of the series is $\Box=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta$.
 
 The companion articles are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the phase-space biquaternion and the Poisson bracket.
@@ -268,13 +268,13 @@ The algebra's reason for caring about the cone is that its points are the **zero
 
 ### The Material Light Cone
 
-The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$,
+The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$,
 
 $$
-\boxed{\;\langle\tilde{R}\rangle_{\natural}=(ict')^2+x^2+y^2+z^2=-c^2{t'}^2+x^2+y^2+z^2\;},
+\boxed{\;\langle\tilde R_\varphi\rangle_{\natural}=(i c r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;},
 $$
 
-which is the Minkowski interval; its zero set $\langle\tilde{R}\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
+which is the Minkowski interval; its zero set $\langle\tilde R_\varphi\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
 
@@ -358,7 +358,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$ | Symplectic potential, $d\varpi=\omega$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\vec Z,\vec W\rangle=\mathrm{Sc}(\vec Z\vec W^{\natural}) = \langle\vec Z,\vec W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
-| $\langle\tilde{R}\rangle_{\natural}=0$, $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Light cone of the material sector |
+| $\langle\tilde R_\varphi\rangle_{\natural}=0$, $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Light cone of the material sector |
 | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P=\frac{i\omega}{c}e_t+\vec k$ | Characteristic cone of $\Box$ |
 | $\langle\vec S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |

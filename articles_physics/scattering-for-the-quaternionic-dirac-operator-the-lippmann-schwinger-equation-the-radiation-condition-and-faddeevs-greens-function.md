@@ -96,11 +96,11 @@ Maxwell's equations reduce to second-order equations, and the reduction is a fac
 The four-dimensional identity is
 
 $$
-\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} - \Delta
+\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} - \Delta
 = \left(\frac{1}{c}\frac{\partial}{\partial t'} + iD_3\right)\left(\frac{1}{c}\frac{\partial}{\partial t'} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta + \partial^2/\partial Q_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial {t'}^2+\Delta+2ic^{-1}\partial/\partial t'D_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t')$ so that $\partial/\partial t'$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta + \partial^2/\partial Q_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial {r'_{t}}^2+\Delta+2ic^{-1}\partial/\partial t'D_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t')$ so that $\partial/\partial t'$ acts as $i\omega$, the factorisation is
 
 $$
 -\Delta - \frac{\omega^2}{c^2} = (D_3+k)(D_3-k), \qquad k=\frac{\omega}{c},
@@ -147,13 +147,13 @@ Applying the shifted operator to the Helmholtz kernel gives the fundamental solu
 
 $$
 -D_{-k}F_k = C_k, \qquad
-C_k(x) = \left(k+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
+C_k(x) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
 $$
 
 obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in *Electromagnetism in Media — The Local Complex Structure at Work*,
 
 $$
-\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
+\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$
 
 read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\mathrm{Sd}_k=\mathcal K_{+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal K_{\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal K_{+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
@@ -179,7 +179,7 @@ with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statement
 The condition that selects the outgoing solution is the source's Proposition 7.3, attributed to Kravchenko–Castillo. If $f\in H^1_{\mathrm{loc}}(G^{c})$ lies in $\ker(D_3+k)(G^{c})$ and satisfies the radiation condition
 
 $$
-\Bigl(k-\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}}+ik\vec u_x\Bigr)f(x) = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
+\Bigl(k-\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}+ik\vec u_x\Bigr)f(x) = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
 $$
 
 then $f = -C_k[f]$ for every $x\in G^{c}$, the middle bracket being a two-line fraction in the printed text. If instead $f$ lies in the kernel of the shifted operator and satisfies

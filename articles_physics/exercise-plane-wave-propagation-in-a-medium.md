@@ -12,13 +12,13 @@ the constitutive relations $\vec D = \epsilon\vec E$ and $\vec B = \mu\vec H$, s
 $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S;
 $$
-and the Hermitian form with its trace reading is that of *Norm and Pairing Conventions*, with the star inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde H)$ real, and non-negative when $\tilde H\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. 
+and the Hermitian form with its trace reading is that of *Norm and Pairing Conventions*, with the star inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. 
 
 **What is to be shown.** Five things. (1) The four algebraic plane-wave conditions the parent states, and the dispersion relation $k = \omega/c$, follow from the single biquaternionic equation $\tilde{\nabla}\tilde{F} = 0$. (2) The amplitude $\tilde{F}_0$ is a null field, hence a zero divisor, and it is annihilated by the (null) four-wavevector biquaternion. (3) The impedance relation and the balance of the two normalised halves of $\tilde{F}_0$. (4) The energy density, the energy flux, their time averages, and the energy–momentum biquaternion of the wave. (5) The dispersive case: phase velocity, group velocity, the spectral complex structure, and the vacuum limit. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
 **The result.** For a source-free monochromatic plane wave
 $$
-\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \tilde{F}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
 $$
@@ -48,17 +48,17 @@ Two points of discipline are kept in view. First, the field strength is a pure v
 
 ## Problem 1: The Plane-Wave Conditions and the Dispersion Relation
 
-**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
+**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
 
 **Solution (a).** The partial derivatives act on the exponential by
 $$
-\partial/\partial Q_t\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')) = -\frac{\omega}{c}\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
+\partial/\partial Q_t\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')) = -\frac{\omega}{c}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')),
 \qquad
-\partial/\partial Q_j\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')) = i k_j\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
+\partial/\partial Q_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')) = i k_j\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')),
 $$
 using $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$ and $\partial/\partial t' \to -i\omega$. Hence
 $$
-\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
+\tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k\right)\tilde{F}_0\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')),
 \qquad
 \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
 $$
@@ -204,7 +204,7 @@ $$
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.
 
-**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \mathrm{Re}[\vec E_0 \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))]$, the time averages over a period are
+**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \mathrm{Re}[\vec E_0 \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))]$, the time averages over a period are
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon\,|\vec E_0|^2 + \mu\,|\vec H_0|^2\right),
 \qquad
@@ -228,7 +228,7 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \boxed{\;\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
-This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\theta^{\mathrm{pha}} = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ and $W = W(\theta^{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta^{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\theta^{\mathrm{pha}}\,\tilde P$, with $W_\theta^{\mathrm{pha}} = \partial/\partial\theta^{\mathrm{pha}}\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta^{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta^{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\theta^{\mathrm{pha}}\tilde P$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\theta^{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t'$ and $W = W(\theta^{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta^{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\theta^{\mathrm{pha}}\,\tilde P$, with $W_\theta^{\mathrm{pha}} = \partial/\partial\theta^{\mathrm{pha}}\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta^{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta^{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_\theta^{\mathrm{pha}}\tilde P$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
 = W_\theta^{\mathrm{pha}}\,\tilde P\left(e_t + i\vec u_k\right).
@@ -256,7 +256,7 @@ So the energy–momentum biquaternion of the wave is itself a **zero divisor**, 
 $$
 \partial/\partial Q_t = -\frac{i}{c(\omega)}\,\partial/\partial t' \;\longrightarrow\; -\frac{i}{c(\omega)}\,(-i\omega) = -\frac{\omega}{c(\omega)},
 $$
-a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $ict' = i\,c(\omega)\,t'$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
+a **real** eigenvalue, so that the operator eigenvalue is $-\frac{\omega}{c(\omega)}e_t + i\vec k$. The imaginary time axis $i c r'_t = i\,c(\omega)\,t'$ is scaled by $c(\omega)$, which is different at each frequency; the algebra $\mathbb{B}$ and the scalar $i$ are fixed, and only the embedding of physical time into the imaginary direction changes. This is the precise sense in which the local complex structure is spectral as well as spatial, and it is why the dispersion relation must be imposed frequency by frequency.
 
 **Solution (b).** With $n(\omega) = c_0/c(\omega)$ and $k = \frac{n(\omega)\omega}{c_0}$, the phase velocity is
 $$
@@ -278,7 +278,7 @@ an envelope $\cos(\Delta k\,z-\Delta\omega\,t')$ modulating the carrier. The env
 
 ## Problem 5: The Monochromatic and Stationary Field
 
-**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega t')$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega t')$ and wave number $k = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
 
 **Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial Q_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial Q_t=-c^{-1}\partial/\partial t'$. For the harmonic dependence $\partial/\partial Q_t=-k$, so
 
@@ -300,8 +300,8 @@ $$
 with $\rho$ fixed by charge conservation. Its radiating solution is
 
 $$
-4\pi\tilde F(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\int \frac{\exp(ikR)}{R}\,\vec{\mathcal S}(\vec y)\,d^3 y,
-\qquad R = \|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y\|,
+4\pi\tilde F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\int \frac{\exp(ikR)}{R}\,\vec{\mathcal S}(\vec y)\,d^3 y,
+\qquad R = \|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y\|,
 $$
 
 unique in the class of solutions satisfying the Sommerfeld radiation condition. The medium enters only through $k = \omega/c$: the single constant $c$ replaces the pair $(\epsilon,\mu)$, exactly as in the parent's plane-wave dispersion.
@@ -312,7 +312,7 @@ $$
 \boxed{\;\Delta\tilde F = \mathrm{rot}\,\vec j + \mathrm{grad}\,R_0\;},
 $$
 
-whose solution decaying at infinity is $\tilde F = -(4\pi R)^{-1} * (\mathrm{rot}\,\vec j + \mathrm{grad}\,R_0)$. With $\tilde F = c(\mathrm{grad}\,Ξ - \mathrm{rot}\,\tilde{Ξ}^{\mathrm{spn}})$ and $\mathrm{div}\,\tilde{Ξ}^{\mathrm{spn}} = 0$, the two potentials solve $\DeltaΞ = R_0/c$ and $\Delta\tilde{Ξ}^{\mathrm{spn}} = -\vec j/c$, so each is a Newton potential of its source. The energy density is $\tfrac{1}{2}\|\tilde F\|^2 = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\tilde F\times\tilde F^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.
+whose solution decaying at infinity is $\tilde F = -(4\pi R)^{-1} * (\mathrm{rot}\,\vec j + \mathrm{grad}\,R_0)$. With $\tilde F = c(\mathrm{grad}\,Ξ - \mathrm{rot}\,\tilde{Ξ}^{\mathrm{sp}})$ and $\mathrm{div}\,\tilde{Ξ}^{\mathrm{sp}} = 0$, the two potentials solve $\DeltaΞ = R_0/c$ and $\Delta\tilde{Ξ}^{\mathrm{sp}} = -\vec j/c$, so each is a Newton potential of its source. The energy density is $\tfrac{1}{2}\|\tilde F\|^2 = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$, and the Poynting vector is $\tfrac{1}{2} i c\,\tilde F\times\tilde F^*$. This is the frequency-domain and static counterpart of Problems 1–3: the same complex vector carries the electric and magnetic halves, and the two limits make the "single constant $c$" reading of the medium concrete.
 
 ## Where the Parent Leaves a Gap
 
@@ -342,11 +342,11 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 **6. A wave packet and the group velocity.** Construct a normalised Gaussian superposition of plane waves around $\omega_0$ in a medium with a prescribed $n(\omega)$, compute the envelope motion to first order in the bandwidth, and check that it travels at $v_g$. Then ask whether the spectral family of embeddings $t' \mapsto i\,c(\omega)\,t'$ has any content beyond the bookkeeping of a family of distinct monochromatic problems.
 
-**7. The chiral medium and the two wavenumbers.** Replace the constitutive relations of Problem 1 by the Drude–Born–Fedorov form $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ of the parent's section *A Chiral Medium*. Show that a circularly polarized plane wave with $\vec u\times\vec E_0=-is\,\vec E_0$, $s=\pm1$, satisfies the two curl equations for the single wavenumber $k_{s,2}=k/(1-\beta ks)$, so that the two handednesses carry the two refractive indices $n_s=1/(1-s\beta\omega/c)$ and the medium is circularly birefringent; check that at $\beta=0$ the two branches collapse to Problem 1. Then diagonalize the system by setting $Ξ=\vec E/\sqrt{\mu}+i\vec H/\sqrt{\epsilon}$ and $\tilde{Ξ}^{\mathrm{spn}}=\vec E/\sqrt{\mu}-i\vec H/\sqrt{\epsilon}$: show that $Ξ$ and $\tilde{Ξ}^{\mathrm{spn}}$ are the field strength $\tilde F$ and its complex conjugate $\tilde F^{*}$ up to one constant, that they solve $(D_3-\alpha_2)Ξ=0$ and $(D_3+\alpha_1)\tilde{Ξ}^{\mathrm{spn}}=0$ with $\alpha_1=k/(1+k\beta)$, $\alpha_2=k/(1-k\beta)$, and that each is divergence-free and an eigenvector of the curl. Finally determine which of the plane-wave conclusions of Problems 1–3 survive the change of constitutive relations: the transversality conditions are unchanged, the nullness $\langle\tilde F_0\rangle_{\natural}=0$ survives for each circular polarization, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$ is replaced by a handedness-dependent one.
+**7. The chiral medium and the two wavenumbers.** Replace the constitutive relations of Problem 1 by the Drude–Born–Fedorov form $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ of the parent's section *A Chiral Medium*. Show that a circularly polarized plane wave with $\vec u\times\vec E_0=-is\,\vec E_0$, $s=\pm1$, satisfies the two curl equations for the single wavenumber $k_{s,2}=k/(1-\beta ks)$, so that the two handednesses carry the two refractive indices $n_s=1/(1-s\beta\omega/c)$ and the medium is circularly birefringent; check that at $\beta=0$ the two branches collapse to Problem 1. Then diagonalize the system by setting $Ξ=\vec E/\sqrt{\mu}+i\vec H/\sqrt{\epsilon}$ and $\tilde{Ξ}^{\mathrm{sp}}=\vec E/\sqrt{\mu}-i\vec H/\sqrt{\epsilon}$: show that $Ξ$ and $\tilde{Ξ}^{\mathrm{sp}}$ are the field strength $\tilde F$ and its complex conjugate $\tilde F^{*}$ up to one constant, that they solve $(D_3-\alpha_2)Ξ=0$ and $(D_3+\alpha_1)\tilde{Ξ}^{\mathrm{sp}}=0$ with $\alpha_1=k/(1+k\beta)$, $\alpha_2=k/(1-k\beta)$, and that each is divergence-free and an eigenvector of the curl. Finally determine which of the plane-wave conclusions of Problems 1–3 survive the change of constitutive relations: the transversality conditions are unchanged, the nullness $\langle\tilde F_0\rangle_{\natural}=0$ survives for each circular polarization, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$ is replaced by a handedness-dependent one.
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P\tilde{F}_0 = 0$, where $\tilde P = \frac{i\omega}{c}e_t + \vec k \in \mathbb{M}_-$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P\tilde{F}_0 = 0$, where $\tilde P = \frac{i\omega}{c}e_t + \vec k \in \mathbb{M}_-$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad
@@ -381,7 +381,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |
 | $k = \omega/c$ | Wave number |
-| $Ξ, \tilde{Ξ}^{\mathrm{spn}}$ | Scalar and vector potentials of the stationary field |
+| $Ξ, \tilde{Ξ}^{\mathrm{sp}}$ | Scalar and vector potentials of the stationary field |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the source is $\sqrt{\mu}\,\tilde J$ |
 | $\vec N = \vec E + ic\vec B$, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ | Riemann–Silberstein vector and the field strength |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (complex scalar) |
@@ -390,7 +390,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
 | $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
 | $v_p = \omega/k = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
-| $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace formula |
+| $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace formula |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

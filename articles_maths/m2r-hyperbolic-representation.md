@@ -338,10 +338,10 @@ $$
 with components labelled by the pair of signs of the two idempotent coordinates $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$; in the matrix picture they are the four components of $O(1,1)$, distinguished by the sign of the determinant and by the timelike or spacelike nature of the two columns. The identity component is
 
 $$
-SO^{+}(1,1)=\left\{\begin{pmatrix}\cosh\phi&\sinh\phi\\ \sinh\phi&\cosh\phi\end{pmatrix}:\phi\in\mathbb{R}\right\}=\{\mathsf{M}_2(e^{\phi j})\},
+SO^{+}(1,1)=\left\{\begin{pmatrix}\cosh\theta^{\mathrm{rpd}}&\sinh\theta^{\mathrm{rpd}}\\ \sinh\theta^{\mathrm{rpd}}&\cosh\theta^{\mathrm{rpd}}\end{pmatrix}:\theta^{\mathrm{rpd}}\in\mathbb{R}\right\}=\{\mathsf{M}_2(e^{\theta^{\mathrm{rpd}} j})\},
 $$
 
-the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1,1)$ is to this category what $SO(2)$ was to the complex one, and the exponential of $j\phi$ is the parametrisation of its identity component.
+the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1,1)$ is to this category what $SO(2)$ was to the complex one, and the exponential of $j\theta^{\mathrm{rpd}}$ is the parametrisation of its identity component.
 
 **The non-compactness.** $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of units follows from the signature of the determinant.
 

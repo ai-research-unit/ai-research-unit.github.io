@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The electron is the object on which the relativistic quantum theory of this series is calibrated. It is the particle of Dirac's 1928 equation, the spin-$\tfrac{1}{2}$ field whose magnetic moment is measured to twelve significant figures, and the fermion whose two values of the chirality the Standard Model treats differently. In the biquaternion framework of these articles the electron is the **biquaternion Dirac field** $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$: an element of the algebra whose two chirality parts satisfy the pair
+The electron is the object on which the relativistic quantum theory of this series is calibrated. It is the particle of Dirac's 1928 equation, the spin-$\tfrac{1}{2}$ field whose magnetic moment is measured to twelve significant figures, and the fermion whose two values of the chirality the Standard Model treats differently. In the biquaternion framework of these articles the electron is the **biquaternion Dirac field** $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$: an element of the algebra whose two chirality parts satisfy the pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
 with $m = m_e$ the electron mass. At $m=0$ the pair splits into the two one-sided equations
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = 0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = 0,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = 0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = 0,
 $$
 
-one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}^{\mathrm{spn}}_{L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term.
+one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}^{\mathrm{sp}}_{L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term.
 
 A framework that reformulates known physics can be read in two very different ways. Read generously, every correct statement about the electron becomes a statement the framework "contains"; read carefully, most of those statements are properties of the Dirac equation that the framework merely transcribes, and the specific numbers attached to the electron must be inserted by hand. This article takes the second interpretation and asks a single question: **which properties of the electron are consequences of the biquaternion structure, which are consequences of the Dirac equation the framework contains, which are parameters inserted from outside, and which lie outside the framework altogether?**
 
@@ -32,14 +32,14 @@ A second, less comfortable point belongs in the introduction. Almost every state
 
 | Electron datum | Biquaternion object |
 |---|---|
-| The field | the element $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$ |
-| Free equation | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m_e\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m_e\tilde{Ξ}^{\mathrm{spn}}_R$ |
+| The field | the element $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$ |
+| Free equation | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m_e\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m_e\tilde{Ξ}^{\mathrm{sp}}_R$ |
 | Mass | the coefficient $m_e$ of the chirality-off-diagonal pair |
 | Charge | the coupling $ϙ=-e$ in the gauge-covariant derivative (see below) |
 | Spin state | the state $\tilde{Ϛ}(\vec u)\in\mathbb{M}_+$ along a declared unit direction $\vec u$ |
-| Spin observables | Hermitian elements $\tilde{H} = i \sum_k h_k\vec e_k\in\mathbb{M}_+$ |
+| Spin observables | Hermitian elements $\tilde R_\psi = i \sum_k h_k\vec e_k\in\mathbb{M}_+$ |
 | Conserved current | $\tilde{J} = ic\,j_0 e_t + \vec j\in\mathbb{M}_-$, with $j_0\ge0$ |
-| Chirality parts | the parts $\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde{Ξ}^{\mathrm{spn}}_R$, the two values of the subscript |
+| Chirality parts | the parts $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$, the two values of the subscript |
 
 The placement of these objects already contains the article's main structural observation: the electron's state-like data (its spin) and its field-strength-like data (its Coulomb field) are $\mathbb{M}_+$ objects, its current is an $\mathbb{M}_-$ object, the algebra's real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two values of the chirality, and it is the rest-energy phase that rotates one sector into the other. There is no single sector of the algebra in which "the electron" lives.
 
@@ -48,8 +48,8 @@ The placement of these objects already contains the article's main structural ob
 The electron mass appears in the free equation as the coefficient of the chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L, \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R .
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L, \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R .
 $$
 
 Three statements are worth separating — how the mass couples the two values of the chirality, how the algebra's real structure acts on the two sectors, and what phase the mass puts between the sectors — and a fourth, negative statement closes the section.
@@ -88,8 +88,8 @@ $$
 with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $\tilde\nabla^{\mathrm{gco}}$ of *Operator and Calculus Conventions* and its conjugate $\tilde\nabla^{\mathrm{gco},\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation
 
 $$
-\tilde\nabla^{\mathrm{gco}}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L, \qquad
-\tilde\nabla^{\mathrm{gco},\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde\nabla^{\mathrm{gco}}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L, \qquad
+\tilde\nabla^{\mathrm{gco},\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
 and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
@@ -103,10 +103,10 @@ Four statements are worth separating.
 **The electron's Coulomb field is an $\mathbb{M}_+$ object.** For a point charge $ϙ$ at rest the field-strength biquaternion is, from the companion article on Maxwell's equations,
 
 $$
-\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{i\,ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2},
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{i\,ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2},
 $$
 
-a purely imaginary vector, hence an element of the Hermitian subspace $\mathbb{M}_+$, with $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ the radial unit vector. The electron's charge shows itself, in the framework, through a field in the informational sector, while its current lies in the material sector. The two faces of the same charge sit in opposite halves of the algebra.
+a purely imaginary vector, hence an element of the Hermitian subspace $\mathbb{M}_+$, with $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$ the radial unit vector. The electron's charge shows itself, in the framework, through a field in the informational sector, while its current lies in the material sector. The two faces of the same charge sit in opposite halves of the algebra.
 
 **What is derived once the coupling is inserted.** The minimal substitution yields the magnetic coupling with the coefficient $1/2m_e$, and hence the sign relation $\vec\mu_e = -(e/m_e)\vec S$: the electron's magnetic moment is anti-parallel to its spin because its charge is negative. The magnitude, however, is dimensional and carries $e$ and $\hbar$.
 
@@ -116,15 +116,15 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible left action, on a complex space of dimension two, and the group of unit elements of the quaternionic norm is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group (*Norm and Pairing Conventions*). A field in that space carries the representation $(\tfrac12,0)$; the field of this article splits by the chirality into two such parts and carries $(\tfrac12,0)\oplus(0,\tfrac12)$. In either case the spin is $\tfrac12$: a rotation by $2\pi$ acts as $-e_t$ on the two-dimensional space and as $+e_t$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a consequence of where the field lives, not an independent postulate. The spin rotations are the real unit quaternions, forming $SU(2)$.
 
-**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}(\vec u)\in\mathbb{M}_+$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_k h_k\vec e_k\in\mathbb{M}_+$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde{H} = i\sum_k h_k\vec e_k$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
+**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}(\vec u)\in\mathbb{M}_+$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_k h_k\vec e_k\in\mathbb{M}_+$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde R_\psi = i\sum_k h_k\vec e_k$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
 
 **Inserted: the magnitude.** The spin element is $\tilde S_k = \tfrac{\hbar}{2}(i\vec e_k)$. The element $i\vec e_k$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
-The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m_e\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m_e\tilde{Ξ}^{\mathrm{spn}}_R$. The plane-wave solutions are computed in the companion solutions article, in the algebra's own objects. They come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp\!\big(-i(Et'-\vec p\cdot\vec r)/\hbar\big)$ and the negative-frequency $v^{(r)}(\vec p)\exp\!\big(+i(Et'-\vec p\cdot\vec r)/\hbar\big)$, with $\vec r = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label. Together they span a complex space of dimension four, one pair for each value of the chirality; the dimension two of each pair is the dimension of the irreducible action, and the count is the count of the two values. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
+The electron's relativistic dynamics is the chirality pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m_e\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m_e\tilde{Ξ}^{\mathrm{sp}}_R$. The plane-wave solutions are computed in the companion solutions article, in the algebra's own objects. They come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp\!\big(-i(Et'-\vec p\cdot\vec r)/\hbar\big)$ and the negative-frequency $v^{(r)}(\vec p)\exp\!\big(+i(Et'-\vec p\cdot\vec r)/\hbar\big)$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label. Together they span a complex space of dimension four, one pair for each value of the chirality; the dimension two of each pair is the dimension of the irreducible action, and the count is the count of the two values. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
 
-**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $ict'$ convention,
+**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $i c r'_t$ convention,
 
 $$
 \tilde P/\hbar = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
@@ -139,11 +139,11 @@ with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm
 
 The article carries two Dirac equations, and they must not be read as one. They use the same mass coefficient; they differ in which side of the field the derivative acts and in where the mass sits.
 
-The **one-sided equation** is the corpus's definition: the chirality pair above. The gradient acts by left multiplication, the field is the algebra element $\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$, and the mass is the off-diagonal pairing of the two chirality parts,
+The **one-sided equation** is the corpus's definition: the chirality pair above. The gradient acts by left multiplication, the field is the algebra element $\tilde{Ξ}^{\mathrm{sp}} = \tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$, and the mass is the off-diagonal pairing of the two chirality parts,
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\,\tilde{Ξ}^{\mathrm{spn}}_L, \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\,\tilde{Ξ}^{\mathrm{spn}}_R .
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\,\tilde{Ξ}^{\mathrm{sp}}_L, \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\,\tilde{Ξ}^{\mathrm{sp}}_R .
 $$
 
 This is the form in which the chirality is visible, and it is the form the sections on mass and on the two chirality values use.
@@ -160,8 +160,8 @@ in natural units, with $\vec\nabla = \sum_k\vec e_k\,\partial/\partial Q_k$ and 
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | $\mathcal{N}F=0$, as displayed |
-| Field | the element $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$ | the element $F\in\mathbb{B}$ |
+| Equation | $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | $\mathcal{N}F=0$, as displayed |
+| Field | the element $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$ | the element $F\in\mathbb{B}$ |
 | Mass | the off-diagonal pairing of the two chirality values | $-mi\,\overline{F}\,\vec e_z$: a conjugation and a direction |
 | Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $\vec\nabla$; right by $\vec e_z$ in the mass |
 | Chirality | the subscript, the two values $L$ and $R$ | the same two values, carried by the right multiplication by $\vec e_z$ in the mass |
@@ -213,12 +213,12 @@ The framework's temptation is to read the trembling as the observable face of th
 The chirality of the electron field is the subscript of the element, and it takes two values. The field is written
 
 $$
-\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_L + \tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde{Ξ}^{\mathrm{sp}} = \tilde{Ξ}^{\mathrm{sp}}_L + \tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
-where $\tilde{Ξ}^{\mathrm{spn}}_L$ is the part of value $L$ and $\tilde{Ξ}^{\mathrm{spn}}_R$ the part of value $R$; only the zero element carries both. Each part is carried by a complex space of dimension two, and the pair is what the Standard Model calls the left-handed and the right-handed halves of the field.
+where $\tilde{Ξ}^{\mathrm{sp}}_L$ is the part of value $L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$ the part of value $R$; only the zero element carries both. Each part is carried by a complex space of dimension two, and the pair is what the Standard Model calls the left-handed and the right-handed halves of the field.
 
-Two facts about products carry the whole structure, and they are stated in words because that is all they are. **Left multiplication keeps the value**: for every element $a$, the product $a\tilde{Ξ}^{\mathrm{spn}}_L$ has value $L$ and $a\tilde{Ξ}^{\mathrm{spn}}_R$ has value $R$. **A product takes the value of its right factor**: when the factor on the right carries a value, so does the product, and it is that value. Two consequences follow at once. The massless pair splits into one equation per value, because each of the two one-sided equations above carries a single value through. And the mass term, which is a left multiplication on the field and an off-diagonal coupling of the two values, is the only term that relates them — the same statement as the chirality-mixing of the mass section, read from the other side.
+Two facts about products carry the whole structure, and they are stated in words because that is all they are. **Left multiplication keeps the value**: for every element $a$, the product $a\tilde{Ξ}^{\mathrm{sp}}_L$ has value $L$ and $a\tilde{Ξ}^{\mathrm{sp}}_R$ has value $R$. **A product takes the value of its right factor**: when the factor on the right carries a value, so does the product, and it is that value. Two consequences follow at once. The massless pair splits into one equation per value, because each of the two one-sided equations above carries a single value through. And the mass term, which is a left multiplication on the field and an off-diagonal coupling of the two values, is the only term that relates them — the same statement as the chirality-mixing of the mass section, read from the other side.
 
 **Derived.** The two-value structure is a consequence of the representation: the field is the direct sum of the two inequivalent two-dimensional representations of $SL(2,\mathbb{C})$, and the mass term is the unique Lorentz-invariant coupling between them. For a massless electron the value of the chirality coincides with helicity, so the two branches become the two definite chiralities. This is a genuine structural consequence of the algebra and of the equation.
 
@@ -270,7 +270,7 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-$\gamma_5$ is the cell of the chirality operator $\Gamma:\tilde{Ξ}^{\mathrm{spn}}\mapsto -i\,e_t\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_z = -iR_{\vec e_z}^{\mathrm{pau}}$, which acts on the Dirac module. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}_{\mathbb{B}}$ ($\tilde{Ζ}_{\mathrm{ad}}^2=-1$, $[\tilde{Ζ}_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\xi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
+$\gamma_5$ is the cell of the chirality operator $\Gamma:\tilde{Ξ}^{\mathrm{sp}}\mapsto -i\,e_t\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z = -iR_{\vec e_z}^{\mathrm{pau}}$, which acts on the Dirac module. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}_{\mathbb{B}}$ ($\tilde{Ζ}_{\mathrm{ad}}^2=-1$, $[\tilde{Ζ}_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\xi^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\xi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The four generator cells of the older display are these gammas, $\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
 
@@ -300,7 +300,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-The electron is the biquaternion Dirac field $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m_e\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m_e\tilde{Ξ}^{\mathrm{spn}}_R$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-im_ec^2t'/\hbar) = \cos(m_ec^2t'/\hbar)e_t - \sin(m_ec^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
+The electron is the biquaternion Dirac field $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$: one element whose two chirality parts satisfy the pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m_e\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m_e\tilde{Ξ}^{\mathrm{sp}}_R$. The mass is the coefficient of the off-diagonal coupling of the two values; the algebra's real structure $\flat={}-{}^{*}$ acts on the two sectors with opposite signs; and the rest-energy phase $\exp(-im_ec^2t'/\hbar) = \cos(m_ec^2t'/\hbar)e_t - \sin(m_ec^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. The charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current then lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible action of $\mathbb{B}\cong M_2(\mathbb{C})$ on a complex space of dimension two, and the spin state and observable structure from the state of $\mathbb{M}_+$ with the Born pairing; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small part, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two values of the chirality and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
@@ -310,7 +310,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 
 | Symbol | Meaning |
 |---|---|
-| $Q_t=ict'$, $Q_k=x,y,z$ | Coordinates; $t'$ the real time of the material sector |
+| $Q_t=i c r'_t$, $Q_k=x,y,z$ | Coordinates; $t'$ the real time of the material sector |
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The four units of the coefficient basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
@@ -319,15 +319,15 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\tilde{\nabla}$ | Biquaternionic gradient, of *Operator and Calculus Conventions* |
 | $\Box$ | Central d'Alembertian |
-| $\tilde{Ξ}^{\mathrm{spn}}$ | Biquaternion Dirac field |
-| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The parts of the field of value $L$ and of value $R$ |
+| $\tilde{Ξ}^{\mathrm{sp}}$ | Biquaternion Dirac field |
+| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The parts of the field of value $L$ and of value $R$ |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | The algebra's real structure (not the mass term) |
 | $\tilde{Ϛ}(\vec u)$ | Spin state along a declared unit direction, in $\mathbb{M}_+$ |
 | $\mathrm{Sc}$, $\mathrm{Vect}$ | Scalar and vector parts of an algebra element |
 | $\langle\tilde Q\rangle_\natural = \tilde Q\tilde Q^\natural$ | Quaternionic norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ | Trace pairing, read as $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ at normalisation |
 | $\tilde{J} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
-| $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$; $\vec u_x$ the radial unit vector |
+| $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$; $\vec u_x$ the radial unit vector |
 | $\tilde P/\hbar = i(\omega/c)\,e_t + \vec k$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{M}_-$ frame; metric in the closing section |
 | $m_e$, $e$, $\hbar$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |

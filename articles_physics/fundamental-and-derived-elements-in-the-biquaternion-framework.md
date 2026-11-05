@@ -151,7 +151,7 @@ $$
 Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
 
 $$
-\mathbb{M}_+=\{q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z\ :\ q_t,q'_k\in\mathbb{R}\}.
+\mathbb{M}_+=\{c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
 $$
 
 **Solving for $\mathbb{M}_-$.** The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads
@@ -163,7 +163,7 @@ $$
 so $Q_{1t}$ is purely imaginary and the vector coefficients are real:
 
 $$
-\mathbb{M}_-=\{iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q'_t,q_k\in\mathbb{R}\}.
+\mathbb{M}_-=\{i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
 $$
 
 Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,
@@ -186,7 +186,7 @@ since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q_1)^{*}=-i\tilde Q_1^{*}$ 
 
 But the split is forced only *relative to the base*, and the real form the base fixes is a posit (it is the content of the complexification). If the algebra is regarded as a bare real algebra, its real structures include one whose fixed set is $M_2(\mathbb{R})$; that real form is not isomorphic to $\mathbb{H}_{\mathbb{B}}$, since $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}_{\mathbb{B}}$ does not, so no algebra automorphism carries it to the framework's real form. The Hermitian conjugation ${}^{*}$ is built from the real structure, so the sector decomposition inherits this dependence. The correct statement is therefore: **the two-sector split is a theorem about the algebra together with its real form, and the real form is an input.** The split is a consequence of the framework's posit of the quaternion real form, not a consequence of the algebra alone. This is the fact about the framework that the title of this section asks for.
 
-**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $ict'$ to $\mathbb{M}_-$ rather than to $\mathbb{M}_+$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{M}_-$ and of the qubit operators with $\mathbb{M}_+$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
+**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i c r'_t$ to $\mathbb{M}_-$ rather than to $\mathbb{M}_+$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{M}_-$ and of the qubit operators with $\mathbb{M}_+$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
 
 ## Derived: The Trace Form
 
@@ -212,16 +212,16 @@ $$
 
 This is the trace formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ in $\mathbb{M}_+$,
+**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{R}_{\psi,1}=h_{1t}e_t+i\vec h_1$ and $\tilde{R}_{\psi,2}=h_{2t}e_t+i\vec h_2$ in $\mathbb{M}_+$,
 
 $$
-\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr),
+\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr),
 $$
 
-which is real and positive definite; for $\tilde R_1=i r_{1t}e_t+\vec r_1$ and $\tilde R_2=i r_{2t}e_t+\vec r_2$ in $\mathbb{M}_-$,
+which is real and positive definite; for $\tilde{R}_{\varphi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\varphi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{M}_-$,
 
 $$
-\mathrm{Tr}(\tilde R_1\tilde R_2)=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
+\mathrm{Tr}(\tilde{R}_{\varphi,1}\tilde{R}_{\varphi,2})=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
 $$
 
 which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{M}_+$, negative definite on $\mathbb{M}_-$, and the two sectors are orthogonal for it:
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_te_t+i\vec h$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\psi=h_te_t+i\vec h$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=h_t+\mu\cdot\vec h,
+\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=h_t+\mu\cdot\vec h,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.
@@ -288,13 +288,13 @@ $$
 
 which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.
 
-**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}^{\mathrm{spn}}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ}^{\mathrm{spn}})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ}^{\mathrm{spn}})$ with $i$ the central root. Again every ingredient is derived, and the reconstruction
+**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}^{\mathrm{sp}}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ}^{\mathrm{sp}})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ}^{\mathrm{sp}})$ with $i$ the central root. Again every ingredient is derived, and the reconstruction
 
 $$
-Q\exp(i\tilde{Ξ}^{\mathrm{spn}})=Q\cos\tilde{Ξ}^{\mathrm{spn}}+iQ\sin\tilde{Ξ}^{\mathrm{spn}}=Q_r+iQ_i=\tilde Q_1
+Q\exp(i\tilde{Ξ}^{\mathrm{sp}})=Q\cos\tilde{Ξ}^{\mathrm{sp}}+iQ\sin\tilde{Ξ}^{\mathrm{sp}}=Q_r+iQ_i=\tilde Q_1
 $$
 
-uses the commutativity of the functions of $\tilde{Ξ}^{\mathrm{spn}}$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.
+uses the commutativity of the functions of $\tilde{Ξ}^{\mathrm{sp}}$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.
 
 **No new posit.** The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar decompositions therefore leave the base unchanged.
 

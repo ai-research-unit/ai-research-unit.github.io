@@ -8,7 +8,7 @@ This is one of the exercises in the electromagnetism series. It applies the appa
 
 **What is to be shown.** Problem 1 derives the retarded time and its two derivatives, distinguishes the field point from the source point at retarded time, and assembles the Liénard–Wiechert potential as a single biquaternion. Problem 2 performs the differentiation $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$ and exhibits the exact split of the field into a part independent of $d\vec\beta/dt'_r$ and a part linear in $d\vec\beta/dt'_r$. Problem 3 treats the velocity field, Problem 4 the acceleration field, and each verifies its falloff law ($1/R^2$ and $1/R$) by recomputation rather than assertion. Problem 5 fixes the boost-rotor direction convention and establishes how the *field* transforms under a boost, which is not the four-vector rule. Problem 6 checks the retarded denominator $\kappa = 1-\vec u_R\cdot\vec\beta$ and the charge sign on two independent cases, uniform motion and motion with nonzero acceleration.
 
-**The result.** Writing $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$ for the retarded separation, $R = |\vec R|$, $\vec u_R = \vec R/R$, and
+**The result.** Writing $\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$ for the retarded separation, $R = |\vec R|$, $\vec u_R = \vec R/R$, and
 $$
 D = R - \vec R\cdot\vec\beta = R\kappa, \qquad \kappa = 1 - \vec u_R\cdot\vec\beta,
 $$
@@ -30,15 +30,15 @@ with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is no
 
 The retarded solution of the biquaternionic Maxwell equation is
 $$
-\tilde{A}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma,
+\tilde{A}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma,
 $$
 and the parent's statement is that $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$ yields the two component formulas displayed above. The retarded time is defined *implicitly*, by
 $$
 t'_r = t' - \frac{R}{c},
 \qquad
-R = \left|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right|,
+R = \left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right|,
 $$
-so that the observation point $(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ enters both directly and through the emission point $(t'_r,(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_r$ and $\nabla t'_r$ and the resulting biquaternion $\tilde{\nabla}^{\natural}t'_r$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
+so that the observation point $(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_r,(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_r$ and $\nabla t'_r$ and the resulting biquaternion $\tilde{\nabla}^{\natural}t'_r$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
 
 Numerical checks quoted below were performed on subluminal worldlines with a Newton-solved retarded time, and the reported figures are the maximum componentwise discrepancies. All source quantities are evaluated at the retarded time.
 
@@ -54,7 +54,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 $$
 with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\xi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\xi^{\mathrm{scp}}$.
 
-**Solution (a).** Differentiate $t'_r = t' - R/c$ at fixed field point. Since $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)|$,
+**Solution (a).** Differentiate $t'_r = t' - R/c$ at fixed field point. Since $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)|$,
 $$
 \frac{\partial R}{\partial t'} = -\vec u_R\cdot\vec v\,\frac{\partial t'_r}{\partial t'},
 $$
@@ -137,7 +137,7 @@ N\!\left(-ie_t+\vec u_R\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
 $$
 The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t'_r$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K^{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).
 
-**Solution (b).** The denominator $D$ is *not* a function of $t'_r$ alone: at fixed $t'_r$ it still depends explicitly on $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $t'_r$ and its action through $t'_r$,
+**Solution (b).** The denominator $D$ is *not* a function of $t'_r$ alone: at fixed $t'_r$ it still depends explicitly on $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $t'_r$ and its action through $t'_r$,
 $$
 \tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde K^{\mathrm{ret}}dD/dt'_r ,
 \qquad
@@ -259,7 +259,7 @@ $$
 \qquad
 \,d\vec\beta_{\perp}/dt'_r \equiv \,d\vec\beta/dt'_r - \vec u_R\left(\vec u_R\cdot\,d\vec\beta/dt'_r\right).
 $$
-The acceleration field opposes the retarded transverse acceleration, and it is $1/R$. Choosing a worldline with $\vec v(0)=0$, $d\vec v/dt'_r = a\vec u_y$ and observing at $t' = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|/c$ so that $t'_r = 0$ exactly, the numerical field matched $-\frac{ϙ}{4\pi\epsilon c}\left(d\vec\beta_{\perp}/dt'_r\right)/R$ to $7\times10^{-18}$; $\vec u_R\cdot\vec E_a$ and $I_{1,a}$, $I_{2,a}$ vanished to better than $10^{-18}$.
+The acceleration field opposes the retarded transverse acceleration, and it is $1/R$. Choosing a worldline with $\vec v(0)=0$, $d\vec v/dt'_r = a\vec u_y$ and observing at $t' = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|/c$ so that $t'_r = 0$ exactly, the numerical field matched $-\frac{ϙ}{4\pi\epsilon c}\left(d\vec\beta_{\perp}/dt'_r\right)/R$ to $7\times10^{-18}$; $\vec u_R\cdot\vec E_a$ and $I_{1,a}$, $I_{2,a}$ vanished to better than $10^{-18}$.
 
 **Solution (d).** Since the two falloffs differ by one power of $R$, there is a radius beyond which $|\vec E_a|>|\vec E_v|$ for fixed retarded direction and velocity. In the scaling run the crossover occurred near $R\approx5$. In the far zone one may therefore replace $\vec E$ by $\vec E_a$ alone; the resulting field is null and transverse, and its Poynting flux integrates to the relativistic Larmor power of the parent article. The velocity field, by contrast, carries the energy permanently bound to the charge and does not escape.
 
@@ -378,7 +378,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
 | $ϙ$, $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$, $\vec v(t')$ | Charge, worldline, coordinate velocity |
 | $t'_r = t' - R/c$ | Retarded time (implicit) |
-| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
+| $\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
 | $\vec\beta = \vec v/c$ | Retarded coordinate velocity over $c$ |
 | $d\vec\beta/dt'_r$ | Retarded-time acceleration (derivative $d/dt'_r$ throughout) |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor of the retarded velocity |

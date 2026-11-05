@@ -14,7 +14,7 @@ The conventions are those of the foundational articles. The biquaternion algebra
 
 ### Definition
 
-For a steady current distribution of density $\vec j(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the **magnetic moment** is
+For a steady current distribution of density $\vec j(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the **magnetic moment** is
 
 $$
 \vec\mu = \frac{1}{2}\int \vec r\times\vec j\,d^3x .
@@ -44,7 +44,7 @@ $$
 \vec B = B_x \vec e_x + B_y \vec e_y + B_z \vec e_z \in \mathbb{H}_{\mathbb{B}} .
 $$
 
-This is the same slot that carries the three real spatial directions $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ of the material coordinate $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The moment and the induction are therefore elements of the *same* real subspace, and their bilinears can be formed with the ordinary quaternion product.
+This is the same slot that carries the three real spatial directions $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ of the material coordinate $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The moment and the induction are therefore elements of the *same* real subspace, and their bilinears can be formed with the ordinary quaternion product.
 
 For a pure real quaternion $\vec a$ and a pure real quaternion $\vec b$, the quaternion product splits into a scalar and a vector part,
 
@@ -325,7 +325,7 @@ For a rigid rotor with proportional charge and mass densities, the moment and th
 
 ## Relation to the Quantum Treatment
 
-The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde{H} = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$ with $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_x\rangle=\langle\tilde{Ϛ},\tilde S_x\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{S}_x^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{S}_x^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde S_x\ge0$. The evolved Bloch vector is $\vec r(t') = \cos(\gamma B t')\vec e_x - \sin(\gamma B t')\vec e_y$, which is the precession derived here, with the same frequency and the same sense.
+The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde R_\psi = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$ with $\tilde{U}(t') = \exp(-i Ht'/\hbar)$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_x\rangle=\langle\tilde{Ϛ},\tilde S_x\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{S}_x^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{S}_x^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde S_x\ge0$. The evolved Bloch vector is $\vec r(t') = \cos(\gamma B t')\vec e_x - \sin(\gamma B t')\vec e_y$, which is the precession derived here, with the same frequency and the same sense.
 
 The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{H}_{\mathbb{B}}$ as a real pure quaternion and is rotated by $\tilde u_L(t') = \exp(-\tfrac{1}{2}\gamma B t'\,\vec u_{B,k} \vec e_k)$; the quantum state lives in $\mathbb{M}_+$ and is rotated by $\tilde{U}(t')$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
 

@@ -220,15 +220,15 @@ For $Q = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the
 
 ## Relation to the Two Partial Forms
 
-The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\psi = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
+The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\theta^{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
 \boxed{\;
-\rho \longrightarrow |q|, \qquad \theta \text{ or } \psi \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\psi j) \longrightarrow 1 + s\varepsilon
+\rho \longrightarrow |q|, \qquad \theta \text{ or } \theta^{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta^{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
 \;}.
 $$
 
-The two transcendental functions $\theta$ and $\psi$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
+The two transcendental functions $\theta$ and $\theta^{\mathrm{rpd}}$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
 
 ## The Series of Polar Decompositions
 
@@ -237,7 +237,7 @@ The polar decompositions of the number systems of the corpus form a series, of w
 | Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
 | $\mathbb{C}$ | $a^2 + a'^2$ | $\sqrt{a^2+a'^2}$ | $\exp(i\theta)$ | elliptic |
-| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $\exp(\psi j)$ | hyperbolic |
+| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $\exp(\theta^{\mathrm{rpd}} j)$ | hyperbolic |
 | $\mathbb{C}^{\mathrm{dln}}$ | $q^2$ | $|q|$ | $1 + s\varepsilon$ | parabolic |
 
 The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the rule is exhaustive for a generator of a one-parameter group.

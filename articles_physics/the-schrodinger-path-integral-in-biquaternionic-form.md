@@ -10,18 +10,18 @@ The biquaternion content of the Schrödinger path integral is therefore a statem
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The coordinate $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
 
 ## From the State-Vector Equation to a Sum over Paths
 
 ### The evolution operator and the position kernel
 
-The biquaternion Schrödinger equation $i\hbar\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}}=H\tilde{Ξ}^{\mathrm{spn}}$ is solved formally by
+The biquaternion Schrödinger equation $i\hbar\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}=H\tilde{Ξ}^{\mathrm{sp}}$ is solved formally by
 
 $$
 \tilde Q(t') = \exp(-iH t'/\hbar),
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}(t') = \tilde Q(t')\,\tilde{Ξ}^{\mathrm{spn}}(0),
+\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q(t')\,\tilde{Ξ}^{\mathrm{sp}}(0),
 $$
 
 and because $H$ is central, $\tilde Q(t')$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,
@@ -47,7 +47,7 @@ $$
 and the state at time $t'_f$ is obtained by the scalar convolution
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f) = \int d^3x_i\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)\,\tilde{Ξ}^{\mathrm{spn}}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i),
+\tilde{Ξ}^{\mathrm{sp}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f) = \int d^3x_i\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)\,\tilde{Ξ}^{\mathrm{sp}}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i),
 $$
 
 in which the kernel multiplies the module factor by a scalar. Whatever the initial module orientation, it is propagated unchanged. This is the same statement as in the free-particle article, now promoted to the general kernel of any central Hamiltonian.
@@ -64,11 +64,11 @@ $$
 the position matrix element is the momentum integral
 
 $$
-K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \int\frac{d^3p}{(2\pi\hbar)^3}\,
-\exp(\,i\vec p\cdot(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))/\hbar)\,
+\exp(\,i\vec p\cdot(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))/\hbar)\,
 \exp(-i\varepsilon p^2/2m\hbar)\,
-\exp(-i\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\hbar)\,e_t
+\exp(-i\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\,e_t
 + O(\varepsilon^2),
 $$
 
@@ -79,15 +79,15 @@ $$
 = \left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
 \exp\left(\frac{im|\vec\Delta|^2}{2\hbar\varepsilon}\right),
 \qquad
-\vec\Delta = x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) ,
+\vec\Delta = x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
 so that
 
 $$
-K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t
+\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t
 + O(\varepsilon^2).
 $$
 
@@ -112,7 +112,7 @@ K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,
 \exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|x_{k+1}\,\vec e_x+y_{k+1}\,\vec e_y+z_{k+1}\,\vec e_z-(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)\right)\right]e_t,
 $$
 
-with $\varepsilon=t'/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{t'} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
+with $\varepsilon=t'/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
 \boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
@@ -128,21 +128,21 @@ The measure $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ is defined by the limit a
 For $V=0$ the short-time kernel is exact for every $\varepsilon$, and the Trotter product telescopes. The momentum integral can be done once for all time,
 
 $$
-\boxed{\;K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
-= \int\frac{d^3p}{(2\pi\hbar)^3}\,\exp(\,i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\hbar)\,\exp(-i\varepsilon p^2/2m\hbar)\Big|_{\varepsilon\to t'}
+\boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')
+= \int\frac{d^3p}{(2\pi\hbar)^3}\,\exp(\,i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\,\exp(-i\varepsilon p^2/2m\hbar)\Big|_{\varepsilon\to t'}
 = \left(\frac{m}{2\pi i\hbar t'}\right)^{3/2}
-\exp\left(\frac{im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2}{2\hbar t'}\right)\;},
+\exp\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2\hbar t'}\right)\;},
 $$
 
-which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2t'$ over $\hbar$. The squared modulus is the spreading density $|K_0|^2=(m/2\pi\hbar t')^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
+which is the free kernel of the free-particle article. It is central, and its phase is the classical free action $S_{\mathrm{cl}}=m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2t'$ over $\hbar$. The squared modulus is the spreading density $|K_0|^2=(m/2\pi\hbar t')^3$, constant in space, which is the statement that a point source spreads uniformly in free space.
 
 ### Composition
 
 The free kernel satisfies
 
 $$
-\int d^3y\;K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y,T_2)\,K_0(\vec y-(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),T_1)
-= K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),T_1+T_2),
+\int d^3y\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y,T_2)\,K_0(\vec y-(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),T_1)
+= K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),T_1+T_2),
 $$
 
 which follows from the Gaussian convolution formula
@@ -212,7 +212,7 @@ $$
 which is the Boltzmann-weighted oscillator kernel at inverse temperature $\beta=\tau/\hbar$,
 
 $$
-K_\omega^E(x,\tau;x_0,0) = \sum_n \tilde{Ξ}^{\mathrm{spn}}_n(x)\tilde{Ξ}^{\mathrm{spn}}_n(x_0)\,\exp(-\omega\tau(n+\frac12)) ,
+K_\omega^E(x,\tau;x_0,0) = \sum_n \tilde{Ξ}^{\mathrm{sp}}_n(x)\tilde{Ξ}^{\mathrm{sp}}_n(x_0)\,\exp(-\omega\tau(n+\frac12)) ,
 $$
 
 so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $\exp(-\omega\tau/2)$ times the ground-state projector. In the interpretation of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
@@ -222,17 +222,17 @@ so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than remov
 The kernel determines the dynamics, so it must contain the Schrödinger equation. The derivation is the infinitesimal-time version of the composition law. For an infinitesimal step,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(x,t'+\varepsilon)=\int dy\;K_\varepsilon(x,y)\,\tilde{Ξ}^{\mathrm{spn}}(y,t'),
+\tilde{Ξ}^{\mathrm{sp}}(x,t'+\varepsilon)=\int dy\;K_\varepsilon(x,y)\,\tilde{Ξ}^{\mathrm{sp}}(y,t'),
 $$
 
 and inserting the short-time kernel and expanding the smooth wave function about $y=x$,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(x,t'+\varepsilon)
+\tilde{Ξ}^{\mathrm{sp}}(x,t'+\varepsilon)
 =\left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{1/2}
 \int dy\;\exp(\,im(y-x)^2/2\hbar\varepsilon)
 \exp(-i\varepsilon V(y)/\hbar)
-\left[\tilde{Ξ}^{\mathrm{spn}}(x)+(y-x)\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}(x)+\tfrac12(y-x)^2\frac{\partial^2\tilde{Ξ}^{\mathrm{spn}}}{\partial x^2}(x)+\cdots\right].
+\left[\tilde{Ξ}^{\mathrm{sp}}(x)+(y-x)\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}(x)+\tfrac12(y-x)^2\frac{\partial^2\tilde{Ξ}^{\mathrm{sp}}}{\partial x^2}(x)+\cdots\right].
 $$
 
 The Gaussian moments are
@@ -246,17 +246,17 @@ $$
 and the linear term vanishes by symmetry. Collecting,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(x,t'+\varepsilon)=\tilde{Ξ}^{\mathrm{spn}}(x)-\frac{i\varepsilon}{\hbar}V(x)\tilde{Ξ}^{\mathrm{spn}}(x)+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{spn}}}{\partial x^2}(x)+O(\varepsilon^2),
+\tilde{Ξ}^{\mathrm{sp}}(x,t'+\varepsilon)=\tilde{Ξ}^{\mathrm{sp}}(x)-\frac{i\varepsilon}{\hbar}V(x)\tilde{Ξ}^{\mathrm{sp}}(x)+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{sp}}}{\partial x^2}(x)+O(\varepsilon^2),
 $$
 
 which rearranges to
 
 $$
-i\hbar\,\frac{\tilde{Ξ}^{\mathrm{spn}}(x,t'+\varepsilon)-\tilde{Ξ}^{\mathrm{spn}}(x,t')}{\varepsilon}
-=\left(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2+V(x)\right)\tilde{Ξ}^{\mathrm{spn}}+O(\varepsilon),
+i\hbar\,\frac{\tilde{Ξ}^{\mathrm{sp}}(x,t'+\varepsilon)-\tilde{Ξ}^{\mathrm{sp}}(x,t')}{\varepsilon}
+=\left(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2+V(x)\right)\tilde{Ξ}^{\mathrm{sp}}+O(\varepsilon),
 $$
 
-that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\tilde{Ξ}^{\mathrm{spn}}+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{spn}}}{\partial x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
+that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\tilde{Ξ}^{\mathrm{sp}}+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{sp}}}{\partial x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
 
 ## The Semiclassical Kernel
 
@@ -265,7 +265,7 @@ that is, in the limit, the biquaternion Schrödinger equation for the envelope. 
 For small $\hbar$ the path integral is dominated by the stationary points of the action. The stationary path is the classical trajectory from $(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)$ to $(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f)$, and expanding the action about it,
 
 $$
-S[(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_{\mathrm{cl}}+\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]=S_{\mathrm{cl}}+\tfrac12\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\frac{\delta^2S}{\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}\cdot\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)+\cdots,
+S[(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_{\mathrm{cl}}+\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]=S_{\mathrm{cl}}+\tfrac12\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\cdot\frac{\delta^2S}{\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}\cdot\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\cdots,
 $$
 
 the quadratic fluctuation integral is Gaussian and gives the **van Vleck kernel**
@@ -318,21 +318,21 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(t')=\exp(-iHt'/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
-K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
+\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
 $$
 
 and the Trotter product of these kernels gives the sum over paths $K=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\,\exp(iS[x,y,z]/\hbar)e_t$.
 
-The free kernel is $K_0=(m/2\pi i\hbar t')^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t')$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
+The free kernel is $K_0=(m/2\pi i\hbar t')^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2\hbar t')$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
 $$
 K_\omega=\left(\frac{m\omega}{2\pi i\hbar\sin\omega t'}\right)^{1/2}
 \exp\left[\frac{im\omega}{2\hbar\sin\omega t'}\Big((x^2+x_0^2)\cos\omega t'-2xx_0\Big)\right],
 $$
 
-central, with caustic poles at $\omega t'=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}^{\mathrm{spn}}(x,t'+\varepsilon)=\tilde{Ξ}^{\mathrm{spn}}-\frac{i\varepsilon}{\hbar}V\tilde{Ξ}^{\mathrm{spn}}+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{spn}}}{\partial x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
+central, with caustic poles at $\omega t'=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}^{\mathrm{sp}}(x,t'+\varepsilon)=\tilde{Ξ}^{\mathrm{sp}}-\frac{i\varepsilon}{\hbar}V\tilde{Ξ}^{\mathrm{sp}}+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\tilde{Ξ}^{\mathrm{sp}}}{\partial x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
 The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\pi i\hbar)^{-3/2}|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 
@@ -349,16 +349,16 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
 | $\tilde Q(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central $*$-unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)=Ke_t$ | Position kernel; central |
-| $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(\mathrm{Lag}\varepsilon)$ |
+| $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(\mathrm{Lag}\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
 | $S[x,y,z]=\int \mathrm{Lag}\,dt'$ | Action; real scalar |
-| $K_0=(m/2\pi i\hbar t')^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t')$ | Free kernel |
+| $K_0=(m/2\pi i\hbar t')^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2\hbar t')$ | Free kernel |
 | $K_\omega$ | Oscillator kernel; poles at $\omega t'=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega t'}[(x^2+x_0^2)\cos\omega t'-2xx_0]$ | Oscillator classical action |
 | $K_\omega^E$ | Mehler kernel; image of $K_\omega$ under $t'\to-i\tau$ |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |
 | $t'\mapsto-i\tau$ | Wick rotation; $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ |
-| $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
+| $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading

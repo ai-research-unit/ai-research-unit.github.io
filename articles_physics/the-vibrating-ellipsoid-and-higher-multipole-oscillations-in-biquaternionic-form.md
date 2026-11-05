@@ -99,7 +99,7 @@ for $l\geq1$. They are ordinary scalar functions of time — real if real spheri
 For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,
 
 $$
-\left(d^2a_{lm}/d{t'}^2\right)(t') + \omega_l^2\,a_{lm}(t') = 0 ,
+\left(d^2a_{lm}/d{r'_{t}}^2\right)(t') + \omega_l^2\,a_{lm}(t') = 0 ,
 $$
 
 with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(t') = A_{lm}\cos(\omega_l t' + \theta^{\mathrm{pha}}_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
@@ -236,7 +236,7 @@ Two structural comments belong here, because they are where the framework's book
 
 ### The Velocity Field Is a Vector Element
 
-The motion of the medium is described by a velocity field $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$, and in the algebra it is a pure real vector element,
+The motion of the medium is described by a velocity field $\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$, and in the algebra it is a pure real vector element,
 
 $$
 \vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
@@ -275,7 +275,7 @@ The moments $\mathrm{Sd}_{ij}(t')$, $\mathrm{Sd}_{ijk}(t'), \dots$ are the sourc
 
 ### Power Scaling
 
-The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{t'}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t'$ this gives $d^3Q/d{t'}^3\propto\omega^3$ and
+The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{r'_{t}}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t'$ this gives $d^3Q/d{r'_{t}}^3\propto\omega^3$ and
 
 $$
 P \;\propto\; \omega^6 .
@@ -314,7 +314,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $Y_{lm}$ | Spherical harmonics |
 | $r(\theta,\theta^{\mathrm{azm}},t') = R_0[1+\sum a_{lm}Y_{lm}]$ | Shape function of the deformed body |
 | $a_{lm}(t')$ | Normal-mode amplitude (a scalar) |
-| $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ | Velocity field |
+| $\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$ | Velocity field |
 | $\rho_m$, $\sigma$, $M$ | Mass density, surface tension, total mass |
 | $M_l, K_l$ | Mode inertia and restoring coefficients, $\omega_l^2 = K_l/M_l$ |
 | $\omega_l$ | Frequency of the $l$-th mode |

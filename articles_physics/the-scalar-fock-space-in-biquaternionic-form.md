@@ -171,8 +171,8 @@ the density in which every creation operator stands to the left of every annihil
 $$
 N_{\vec p}={a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p} ,
 \qquad
-\langle\tilde{Ξ}^{\mathrm{spn}}|N_{\vec p}|\tilde{Ξ}^{\mathrm{spn}}\rangle
-=\big\|a^{\mathrm{fop}}_{\vec p}\tilde{Ξ}^{\mathrm{spn}}\big\|^2\ge0 ,
+\langle\tilde{Ξ}^{\mathrm{sp}}|N_{\vec p}|\tilde{Ξ}^{\mathrm{sp}}\rangle
+=\big\|a^{\mathrm{fop}}_{\vec p}\tilde{Ξ}^{\mathrm{sp}}\big\|^2\ge0 ,
 $$
 
 so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.
@@ -209,10 +209,10 @@ The consequence for the title of the article is plain. The scalar Fock space is 
 
 ## The Informational Sector and the Trace Formula
 
-The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is
+The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde R_\psi\in\mathbb{M}_+$ is
 
 $$
-\boxed{\;\langle\tilde H\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde H)\;}.
+\boxed{\;\langle\tilde R_\psi\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde R_\psi)\;}.
 $$
 
 For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{k,l}\rho_{kl}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
@@ -275,7 +275,7 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $\mathrm{sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
 | $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied idempotents (contrast case) |
-| $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace reading at normalisation (Born rule), for finite truncations |
+| $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace reading at normalisation (Born rule), for finite truncations |
 | $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
 

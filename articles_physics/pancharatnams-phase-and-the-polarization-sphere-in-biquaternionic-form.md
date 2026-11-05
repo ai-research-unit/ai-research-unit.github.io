@@ -78,7 +78,7 @@ $$
 =\tfrac14\left(S_0^2-\vec S^2\right).
 $$
 
-This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_t+i \sum_k x_k\vec e_k$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=x_0^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
+This is the algebra's **indefinite** form on $\mathbb{M}_+$: with $\tilde{Q}=x_0e_t+i \sum_k x_k\vec e_k$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=x_0^2-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
 
 $$
 P^2=1-\frac{4\langle\tilde{Ϛ}\rangle_{\natural}}{S_0^2}.

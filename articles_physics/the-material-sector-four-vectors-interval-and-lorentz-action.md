@@ -32,13 +32,13 @@ $$
 the fixed space of the reversal. In coordinates it is the set of elements with an imaginary scalar coefficient and real vector coefficients,
 
 $$
-\tilde Q=i q'_t\,e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,
+\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
 $$
 
-with $q'_t,q_x,q_y,q_z\in\mathbb{R}$. On the physical dictionary $q'_t=c t'$ and $(q_x,q_y,q_z)=(x,y,z)$, so the general element is
+with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r'_t=t'$ and $(r_x,r_y,r_z)=(x,y,z)$, so the general element is
 
 $$
-\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z.
+\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z.
 $$
 
 The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the imaginary scalar block $A_2=\mathbb{R}(ie_t)$ and the real vector block $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.
@@ -46,17 +46,17 @@ The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The 
 The sector is **not a subalgebra**. The product of two anti-Hermitian elements is Hermitian, because ${}^{*}$ is an anti-automorphism: $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=(-\tilde Q_2)(-\tilde Q_1)=\tilde Q_2\tilde Q_1$. The square of an element is therefore in $\mathbb{M}_+$, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The commutator nevertheless stays in $\mathbb{M}_-$, so the sector is closed under the bracket; the anticommutator goes to $\mathbb{M}_+$. In coordinates,
 
 $$
-[\tilde Q_1,\tilde Q_2]=2\,\vec q\times\vec r,
+[\tilde R_{\varphi,1},\tilde R_{\varphi,2}]=2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2},
 $$
 
-with $\vec q=(q_x,q_y,q_z)$ and $\vec r=(r_x,r_y,r_z)$. The time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$.
+with $\vec r_{\varphi,1}=(r_{1x},r_{1y},r_{1z})$ and $\vec r_{\varphi,2}=(r_{2x},r_{2y},r_{2z})$ the material space vectors of the two elements. The time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$.
 
 ### The Norm, the Units and the Cone
 
 The quaternionic norm on the sector is
 
 $$
-\boxed{\;\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2\;}.
+\boxed{\;\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde R_\varphi^{\natural}=-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;}.
 $$
 
 It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is
@@ -69,22 +69,22 @@ so an element is $N$-regular exactly when its norm is non-zero. The **set of uni
 
 ### The Four Forms
 
-The four forms of the algebra are all real on $\mathbb{M}_-$. Every element of the sector is its own material part, $\tilde Q=\tilde Q_{\mathrm A}$, so writing $\tilde Q_1=i q'_t e_t+\vec q$ and $\tilde Q_2=i r'_t e_t+\vec r$, they read
+The four forms of the algebra are all real on $\mathbb{M}_-$. Every element of the sector is its own material part, $\tilde Q=\tilde R_\varphi$, so writing $\tilde R_{\varphi,1}=i c r'_{1t} e_t+\vec r_{\varphi,1}$ and $\tilde R_{\varphi,2}=i c r'_{2t} e_t+\vec r_{\varphi,2}$, they read
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle=-(q'_t r'_t)-(\vec q,\vec r),
-$$
-
-$$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=-(q'_t r'_t)+(\vec q,\vec r),
+\langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle=-c^2r'_{1t}r'_{2t}-(\vec r_{\varphi,1},\vec r_{\varphi,2}),
 $$
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}=+(q'_t r'_t)+(\vec q,\vec r),
+\langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle_{\natural}=-c^2r'_{1t}r'_{2t}+(\vec r_{\varphi,1},\vec r_{\varphi,2}),
 $$
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=+(q'_t r'_t)-(\vec q,\vec r).
+\langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle_{*}=+c^2r'_{1t}r'_{2t}+(\vec r_{\varphi,1},\vec r_{\varphi,2}),
+$$
+
+$$
+\langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle_{\natural*}=+c^2r'_{1t}r'_{2t}-(\vec r_{\varphi,1},\vec r_{\varphi,2}).
 $$
 
 The first is negative definite of signature $(0,4)$, the second is the interval of signature $(3,1)$, the third is positive definite of signature $(4,0)$, and the fourth is the negative interval of signature $(1,3)$. The two sesquilinear forms are the negatives of the two bilinear ones, because the star is minus the identity on the sector. The sector carries **no area pairing**: the alternating companion of the forms vanishes identically on it, since multiplication by the central imaginary carries $\mathbb{M}_-$ out of itself, $i\mathbb{M}_-=\mathbb{M}_+$, and no conjugate pair of directions lies inside the sector.
@@ -121,20 +121,20 @@ The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{
 
 ### The Sector Is Spacetime
 
-The element $i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,
+The element $i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ is a spacetime event. Its norm is the squared interval,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2=s^2,
+\langle\tilde Q\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2=s^2,
 $$
 
 with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.
 
-The temporal coordinate enters as $i c t'$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c t'$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
+The temporal coordinate enters as $i c r'_t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c r'_t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
 
 For a timelike worldline the proper time is
 
 $$
-d\tau=\frac{1}{c}\sqrt{-\langle d\tilde Q\rangle_{\natural}}=\sqrt{d{t'}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
+d\tau=\frac{1}{c}\sqrt{-\langle d\tilde Q\rangle_{\natural}}=\sqrt{d{r'_{t}}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
 $$
 
 and it is the parameter along the worldline. For a null worldline the proper time vanishes, and the worldline is a light ray. The causal structure is the sign of the norm; the future and past cones are its two sheets.
@@ -157,7 +157,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=\tilde Q_{\mathrm A}=i c t'\,e_t+\vec x$ | $(ct',x,y,z)$ | $s^2=-c^2{t'}^2+\lvert\vec x\rvert^2$ |
+| four-position | $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+\vec x$ | $(c r'_{t},x,y,z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec x\rvert^2$ |
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -218,14 +218,14 @@ The rotor is defined up to a sign: $\tilde U^{\mathrm{lor}}$ and $-\tilde U^{\ma
 The commutator of two material elements is twice the cross product of their spatial parts,
 
 $$
-[\tilde Q_1,\tilde Q_2]=2\,\vec q\times\vec r.
+[\tilde R_{\varphi,1},\tilde R_{\varphi,2}]=2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2}.
 $$
 
 It has no time component, so the time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$, and the anticommutator goes to $\mathbb{M}_+$; the product of two material elements is Hermitian exactly when their spatial parts are collinear, because the cross product vanishes then and only then.
 
 The bracket is the compact Lie algebra $\mathfrak{u}(2)$, whose traceless part is the Lie algebra of the spatial rotations; it is not the full Lorentz algebra. The boost generators do not lie in $\mathbb{M}_-$; they lie in $\mathbb{M}_+$ as the Hermitian elements $i\vec h$, and the full Lorentz algebra is generated by the rotations of $\mathbb{M}_-$ together with the boosts of $\mathbb{M}_+$. The material sector is therefore a Lie algebra for the compact part and not for the full group.
 
-The square of a material element is in $\mathbb{M}_+$, because $\{\tilde Q,\tilde Q\}=2\tilde Q^2$ and the two arguments lie in one sector. Its scalar part is the negative Euclidean square, $-(q'_t)^2-\lvert\vec q\rvert^2$, not the interval; the interval is the quaternionic norm, which is a different form. The two must not be conflated: the square is an informational element, and its scalar part is a Euclidean weight, not a causal interval.
+The square of a material element is in $\mathbb{M}_+$, because $\{\tilde Q,\tilde Q\}=2\tilde Q^2$ and the two arguments lie in one sector. Its scalar part is the negative Euclidean square, $-c^2(r'_t)^2-\lvert\vec r_\varphi\rvert^2$, not the interval; the interval is the quaternionic norm, which is a different form. The two must not be conflated: the square is an informational element, and its scalar part is a Euclidean weight, not a causal interval.
 
 **The boundary.** The bracket is not the physical composition of four-vectors. Its traceless part is the Lie algebra of the spatial part, and the time direction is central to it. The failure of the material sector to be closed under the product is the algebraic reason a product of two four-vectors is not generally a four-vector.
 
@@ -271,7 +271,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Summary
 
-- The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
+- The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
 - The light cone is the $N$-degenerate set; its non-zero points are the zero divisors; on it the elements have no inverse; and it is the characteristic cone of the wave operator.
 - The set of units of the sector is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
@@ -289,7 +289,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector |
-| $\tilde Q=\tilde Q_{\mathrm A}=i q'_t e_t+\vec q$ | a material element, with $q'_t=c t'$; it is its own material part |
+| $\tilde R_\varphi=i c r'_t e_t+\vec r_\varphi$ | a material element, with $r'_t=t'$; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |
@@ -298,7 +298,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | $\tilde u_{\mathrm r}$ | the unit real quaternion rotation factor |
 | $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the boost factor of the opposite, rotation-first, word |
 | $\tilde Q_2=\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$ | the Lorentz action by rotor conjugation |
-| $[\tilde Q_1,\tilde Q_2]=2\vec q\times\vec r$ | the commutator on the sector |
+| $[\tilde R_{\varphi,1},\tilde R_{\varphi,2}]=2\vec r_{\varphi,1}\times\vec r_{\varphi,2}$ | the commutator on the sector |
 | $\langle\cdot,\cdot\rangle_{\natural}$ | the quaternionic form, the interval |
 | $\langle\cdot,\cdot\rangle_{*}$ | the Hermitian form, the Euclidean square |
 

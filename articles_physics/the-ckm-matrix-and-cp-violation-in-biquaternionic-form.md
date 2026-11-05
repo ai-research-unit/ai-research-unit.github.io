@@ -4,7 +4,7 @@
 
 The **Cabibbo–Kobayashi–Maskawa (CKM) matrix** is the unitary matrix that relates the quark mass eigenstates to the weak-interaction eigenstates. It is the origin of quark mixing and, through its single complex phase, of CP violation in the quark sector. In the Standard Model it is a $3\times3$ unitary matrix with four physical parameters — three angles and one phase — and its measured entries and phase are among the most precisely known quantities in particle physics.
 
-In the biquaternion framework the CKM matrix is a **flavour-factor operator**. The framework carries the generation as a label on the field: the field of type $t$ and generation $a$ is an element $\tilde{Ξ}^{\mathrm{spn}}_{t,a}$ of $\mathbb{B}$, and the algebra acts on it without knowing $a$ (the companion article on the number of generations establishes this). The mixing is an operator on the labels alone, an element $V$ of the $*$-unitary group $\mathrm{U}(N_g)$ of the factor $\mathcal{F}=\mathbb{C}^{N_g}$. Its entries are complex numbers, and the complex numbers are central in $\mathbb{B}$, so the mixing multiplies the element by a number and leaves the algebra factor untouched: $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,b}\mapsto\sum_a V_{ab}\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u,a}$.
+In the biquaternion framework the CKM matrix is a **flavour-factor operator**. The framework carries the generation as a label on the field: the field of type $t$ and generation $a$ is an element $\tilde{Ξ}^{\mathrm{sp}}_{t,a}$ of $\mathbb{B}$, and the algebra acts on it without knowing $a$ (the companion article on the number of generations establishes this). The mixing is an operator on the labels alone, an element $V$ of the $*$-unitary group $\mathrm{U}(N_g)$ of the factor $\mathcal{F}=\mathbb{C}^{N_g}$. Its entries are complex numbers, and the complex numbers are central in $\mathbb{B}$, so the mixing multiplies the element by a number and leaves the algebra factor untouched: $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}\mapsto\sum_a V_{ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a}$.
 
 The framework's contribution is therefore the placement of the mixing on the generation label, and one structural fact that the counting alone does not give: the CP-violating phase cannot live in the algebra's centre, because the centre acts on every generation in the same way, and it must live in the flavour factor. The parameter count itself is the standard count of $\mathrm{U}(N_g)$. The article states these and is explicit that the framework does not determine the entries.
 
@@ -28,8 +28,8 @@ The framework results used here are those of the companion articles:
 $$
 \mathcal{L}_{W}\supset
 \frac{g}{\sqrt2}\,W^+_\mu\sum_{a,b}V_{ab}\;
-\tilde{Ξ}^{\mathrm{spn}\dagger}_{\mathrm u,a}\,
-i\Big(i\,e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,b,L}\,\vec e_{\nu(\mu)}\Big)\vec e_x
+\tilde{Ξ}^{\mathrm{sp}\dagger}_{\mathrm u,a}\,
+i\Big(i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b,L}\,\vec e_{\nu(\mu)}\Big)\vec e_x
 +\text{h.c.},
 $$
 
@@ -86,9 +86,9 @@ the split of the $N_g^2$ coordinates of $\mathrm{U}(N_g)$ into the $\frac{N_g(N_
 **The diagonalisation.** The mixing matrix arises from the mismatch between the up- and down-type mass matrices. In the framework a mass term multiplies the field by a central number, and with generations the number becomes a matrix on the labels: the mass operator leaves the element alone and mixes the generations,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u,b}\longmapsto\sum_a M^{\mathcal{F}}_{u,ab}\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u,a},
+\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,b}\longmapsto\sum_a M^{\mathcal{F}}_{u,ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a},
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,b}\longmapsto\sum_a M^{\mathcal{F}}_{d,ab}\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,a},
+\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}\longmapsto\sum_a M^{\mathcal{F}}_{d,ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,a},
 $$
 
 with the algebra factor common to the two types. The matrices $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ are general complex $N_g\times N_g$ matrices, so each factorises as $M^{\mathcal{F}}=XDY^\dagger$ with $X,Y$ unitary and $D$ diagonal and positive. The arrays of this article are the operators on $\mathcal{F}$ — the mass operators, $V$, and the Hermitian products below — because $\mathcal{F}$ is a complex vector space and no element of $\mathbb{B}$ stands behind them. The mixing depends on the left-handed unitaries alone, and the CP invariant on those and the masses, through the Hermitian products
@@ -354,17 +354,17 @@ The framework's definite structural contribution is the location of the phase. T
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{C}_{\mathbb{B}}$ | Material sector (the frame of the closing section); centre |
-| $\tilde{Ξ}^{\mathrm{spn}}_{t,a}\in\mathbb{B}$ | The field of type $t$ and generation $a$; an element of the algebra |
+| $\tilde{Ξ}^{\mathrm{sp}}_{t,a}\in\mathbb{B}$ | The field of type $t$ and generation $a$; an element of the algebra |
 | $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ | The generator of the coordinate $x_\mu$, written as the action it is |
-| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The two parts of an element, by the label $L$ or $R$ |
+| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two parts of an element, by the label $L$ or $R$ |
 | $\gamma_\mu$, $\gamma_5$ | The generators under their older names (closing section only) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $V\in \mathrm{U}(N_g)$, $V_{ab}$ | The CKM matrix, multiplying the generation label |
 | $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ | Up- and down-type mass matrices on $\mathcal{F}$ |
 | $H_u=M_u^{\mathcal{F}}M_u^{\mathcal{F}\dagger}$, $H_d=M_d^{\mathcal{F}}M_d^{\mathcal{F}\dagger}$ | Hermitian mass products; their eigenvalues are the squared masses |
 | $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
-| $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u,a}$, $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,b}$; $\tilde{Ξ}^{\mathrm{spn}\dagger}$, with the factor $i\vec e_x$ | Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint |
-| $\tilde{Ξ}^{\mathrm{spn}\dagger}i(ie_\mu\tilde{Ξ}^{\mathrm{spn}}_L\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$ | The charged-current term |
+| $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a}$, $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}$; $\tilde{Ξ}^{\mathrm{sp}\dagger}$, with the factor $i\vec e_x$ | Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint |
+| $\tilde{Ξ}^{\mathrm{sp}\dagger}i(ie_\mu\tilde{Ξ}^{\mathrm{sp}}_L\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$ | The charged-current term |
 | the unit on the labels | Gauge vertices; flavour universality (GIM) |
 | $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |

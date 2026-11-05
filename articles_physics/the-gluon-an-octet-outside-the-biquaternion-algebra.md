@@ -294,7 +294,7 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $M_2(\mathbb{B})\cong M_4(\mathbb{C})\supset \mathrm{U}(4)\supset \mathrm{U}(3)\supset SU(3)$ | Enlarged carrier; colour index external |
 | $\mathcal{A}_\mu=g_s\sum_a G_{\mu a}\lambda_a/2$ | Gauge potential in the embedded $\mathfrak{su}(3)$; a $3\times3$ traceless anti-Hermitian block of the enlarged carrier |
 | $\mathrm{U}(1)\times SU(2)$ | The framework's gauge sector; the electroweak factor |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, written low; every contraction is an explicit sum |
 

@@ -18,7 +18,7 @@ e_t+\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z,
 2e_t+2\vec e_x+2i\vec e_y.
 $$
 
-Each element is written as $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, and as $\tilde Q=r e^{i\alpha}\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$.
+Each element is written as $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, and as $\tilde Q=r e^{i\alpha}\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$.
 
 ## The Chain, the Block and the Factors
 
@@ -118,7 +118,7 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 
 - The Jordan chain is explicit in every case; its vectors are not normalized, and the chain is not unique.
 - The element and the unit factor are triangular in the chain, but the polar factors are not.
-- The polar factors have distinct eigenvalues $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$; the element has the double eigenvalue $Q_t$ and the unit factor has the double eigenvalue $\varepsilon$.
+- The polar factors have distinct eigenvalues $e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$; the element has the double eigenvalue $Q_t$ and the unit factor has the double eigenvalue $\varepsilon$.
 - The scalar line is the only locus on which the chain and the polar frame can be chosen to agree.
 
 ## Summary
@@ -159,7 +159,7 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 | $v,w$ | a Jordan chain, $Nw=v$ and $Nv=0$ |
 | $\mathsf M_{(v,w)}$ | the matrix in the basis $(v,w)$ |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\psi,\theta$ | the rapidity and the rotor angle |
+| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 
 ## Further Reading
 

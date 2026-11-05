@@ -30,7 +30,7 @@ $$
 \mu_\pm=\frac{\lambda_\pm}{\Rho}.
 $$
 
-In the normal case $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$; in the non-normal case the moduli of $\mu_\pm$ need not be $e^{\mp\psi/2}$, and that failure is the spectral gap of the sector.
+In the normal case $\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$; in the non-normal case the moduli of $\mu_\pm$ need not be $e^{\mp\theta^{\mathrm{rpd}}/2}$, and that failure is the spectral gap of the sector.
 
 ## The Eight Cases
 
@@ -45,7 +45,7 @@ In the normal case $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$; in the non-normal c
 | 7 | $(1+i)(e_t+\vec e_x)$ | $2i$ | $2$ | $\frac{1+i}{\sqrt2}$ | $\frac{1-i}{\sqrt2}$ | $-i\vec e_x$ |
 | 8 | $\vec e_x+\vec e_y$ | $i\sqrt2$ | $-i\sqrt2$ | $i$ | $-i$ | $-i\frac{\vec e_x+\vec e_y}{\sqrt2}$ |
 
-The cases 1 to 4 and 7 are normal; their axes are the eigenlines, and $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$ with the parameters of the polar word. The cases 5 and 6 are non-normal; their eigenlines are not the polar axes, and the eigenvalues of the unit factor do not determine the two angles.
+The cases 1 to 4 and 7 are normal; their axes are the eigenlines, and $\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$ with the parameters of the polar word. The cases 5 and 6 are non-normal; their eigenlines are not the polar axes, and the eigenvalues of the unit factor do not determine the two angles.
 
 ### The Non-Normal Eigenvectors
 
@@ -93,7 +93,7 @@ $$
 
 with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
 
-The polar word has $r=1$, $\alpha=0$, $\psi=1.762747174$, $\theta=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
+The polar word has $r=1$, $\alpha=0$, $\theta^{\mathrm{rpd}}=1.762747174$, $\theta=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
 
 ## Case 3 in Full
 
@@ -111,10 +111,10 @@ $$
 \lambda_-=1.707107-1.707107i,
 $$
 
-and the eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $r=1$, $\alpha=0$, $\psi=1.762747174$, $\theta=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
+and the eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $r=1$, $\alpha=0$, $\theta^{\mathrm{rpd}}=1.762747174$, $\theta=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
 
 $$
-\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}
+\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}
 =e^{\mp0.881374}e^{\pm i\pi/4},
 $$
 
@@ -138,8 +138,8 @@ which reproduces the values above. The eigenbasis and the polar frame agree, and
 | eigenprojectors | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
 | eigenvector | $\vec{Ζ}=-i\vec Q/B$, $\vec{Ζ}^2=-e_t$ |
 | unit eigenvalues | $\mu_\pm=\lambda_\pm/\Rho$ |
-| normal factorisation | $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$ |
-| non-normal gap | the moduli of $\mu_\pm$ need not be $e^{\mp\psi/2}$ |
+| normal factorisation | $\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$ |
+| non-normal gap | the moduli of $\mu_\pm$ need not be $e^{\mp\theta^{\mathrm{rpd}}/2}$ |
 | reconstruction | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ |
 
 ### The Cases
@@ -167,7 +167,7 @@ which reproduces the values above. The eigenbasis and the polar frame agree, and
 | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the eigenprojectors |
 | $\Rho$ | the modulus |
 | $\mu_\pm=\lambda_\pm/\Rho$ | the eigenvalues of the unit factor |
-| $\psi,\theta$ | the rapidity and the rotor angle |
+| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 
 ## Further Reading
 

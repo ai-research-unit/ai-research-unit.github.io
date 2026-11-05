@@ -10,7 +10,7 @@ The consequence is a **structural identification**:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
-This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, the star being inert and the unstarred trace real, and non-negative when $\tilde H\ge0$. The $*$-unitary biquaternions of $SU(2)$ are the spin rotation operators.
+This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised Hermitian form $\langle\tilde\Pi,\tilde R_\psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. The $*$-unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
@@ -24,13 +24,13 @@ A **two-state quantum system** is a quantum system whose state space is a two-di
 
 ### States
 
-A **pure state** is a unit vector $\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
+A **pure state** is a unit vector $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
 
 $$
-\rho_{\mathrm{spn}} = |\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
 $$
 
-which satisfies $\rho_{\mathrm{spn}}^2 = \rho_{\mathrm{spn}}$ (idempotent), $\rho_{\mathrm{spn}}^\dagger = \rho_{\mathrm{spn}}$ (Hermitian), and $\mathrm{Tr}(\rho_{\mathrm{spn}}) = 1$.
+which satisfies $\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$ (idempotent), $\rho_{\mathrm{sp}}^\dagger = \rho_{\mathrm{sp}}$ (Hermitian), and $\mathrm{Tr}(\rho_{\mathrm{sp}}) = 1$.
 
 A general (mixed) state is a positive semidefinite Hermitian operator with trace 1. The pure states are the extreme points of the convex set of states.
 
@@ -58,7 +58,7 @@ $$
 \langle A \rangle_\rho = \mathrm{Tr}(\rho A).
 $$
 
-For a pure state $\rho_{\mathrm{spn}} = |\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ}^{\mathrm{spn}} | A | \tilde{Ξ}^{\mathrm{spn}} \rangle$.
+For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ}^{\mathrm{sp}} | A | \tilde{Ξ}^{\mathrm{sp}} \rangle$.
 
 ### Spin-1/2
 
@@ -112,10 +112,10 @@ So the map preserves the multiplication rules. The scalar imaginary $i$ maps to 
 
 Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.
 
-**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde{H} = h_t e_t + i h_x \vec e_x + i h_y \vec e_y + i h_z \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
+**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde R_\psi = h_t e_t + i h_x \vec e_x + i h_y \vec e_y + i h_z \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
-\tilde{H} \mapsto h_t I_2 + h_x \sigma_1 + h_y \sigma_2 + h_z \sigma_3.
+\tilde R_\psi \mapsto h_t I_2 + h_x \sigma_1 + h_y \sigma_2 + h_z \sigma_3.
 $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
@@ -142,7 +142,7 @@ The identification of $\mathbb{M}_+$ with the observables is direct.
 
 **Statement.** The Hermitian subspace $\mathbb{M}_+$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.
 
-**Proof.** Under the isomorphism of the previous section, an element $\tilde{H} \in \mathbb{M}_+$ with components $(h_t, h_x, h_y, h_z)$ maps to the Hermitian matrix $h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
+**Proof.** Under the isomorphism of the previous section, an element $\tilde R_\psi \in \mathbb{M}_+$ with components $(h_t, h_x, h_y, h_z)$ maps to the Hermitian matrix $h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
 
 ### Corollaries
 
@@ -187,42 +187,42 @@ So **every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb
 
 The expectation value of an observable in a state is given by the normalised Hermitian form.
 
-**Statement.** For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity
+**Statement.** For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde R_\psi \in \mathbb{M}_+$ (an observable), the quantity
 
 $$
-\boxed{\;\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})\;}
+\boxed{\;\langle \tilde R_\psi \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde R_\psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})\;}
 $$
 
-is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
+is **real** and is the **Born-rule expectation value** of $\tilde R_\psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$.
 
-**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}| H) = \tfrac12\langle\tilde{Ξ}^{\mathrm{spn}}|H|\tilde{Ξ}^{\mathrm{spn}}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}^{\mathrm{spn}}|H|\tilde{Ξ}^{\mathrm{spn}}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.
+**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|$ and $\tilde R_\psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}| H) = \tfrac12\langle\tilde{Ξ}^{\mathrm{sp}}|H|\tilde{Ξ}^{\mathrm{sp}}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}^{\mathrm{sp}}|H|\tilde{Ξ}^{\mathrm{sp}}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.
 
 ### Example
 
-Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde{H} = i \vec e_x$ (the spin observable along the $x$ axis). Then
+Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde R_\psi = i \vec e_x$ (the spin observable along the $x$ axis). Then
 
 $$
-\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
+\tilde\Pi_+ \tilde R_\psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
 $$
 
 Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}^{*}) = 2 \cdot 0 = 0,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde R_\psi^{*}) = 2 \cdot 0 = 0,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
 
-Take instead $\tilde{H} = i\vec e_z$ (the spin observable along the $z$ axis):
+Take instead $\tilde R_\psi = i\vec e_z$ (the spin observable along the $z$ axis):
 
 $$
-\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
+\tilde\Pi_+ \tilde R_\psi = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
 $$
 
 Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}^{*}) = 2 \cdot \tfrac{1}{2} = 1,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde R_\psi^{*}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization).
@@ -300,20 +300,20 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R\;},
+\boxed{\;\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R\;},
 $$
 
-where $\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_L + \tilde{Ξ}^{\mathrm{spn}}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
+where $\tilde{Ξ}^{\mathrm{sp}} = \tilde{Ξ}^{\mathrm{sp}}_L + \tilde{Ξ}^{\mathrm{sp}}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}} = 0,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = 0,
 $$
 
-which is a first-order equation for the field $\tilde{Ξ}^{\mathrm{spn}}$.
+which is a first-order equation for the field $\tilde{Ξ}^{\mathrm{sp}}$.
 
 ### The Interpretation as a Spinor Field
 
-The biquaternion field $\tilde{Ξ}^{\mathrm{spn}}$ is a **spinor field** on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
+The biquaternion field $\tilde{Ξ}^{\mathrm{sp}}$ is a **spinor field** on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
 
 The Dirac equation is the equation of motion for a single spin-1/2 field. Its solutions describe relativistic spin-1/2 particles: electrons, muons, quarks, and other fermions.
 
@@ -322,14 +322,14 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 The biquaternionic Dirac equation contains:
 
 - The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ for plane-wave solutions.
-- The **spin structure**: the polarization biquaternion $\tilde{Ξ}^{\mathrm{spn}}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{Ξ}^{\mathrm{spn}}_{L,R}$, which couples the two chiral components of the spinor.
+- The **spin structure**: the polarization biquaternion $\tilde{Ξ}^{\mathrm{sp}}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
+- The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{Ξ}^{\mathrm{sp}}_{L,R}$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
 
 The biquaternionic Dirac equation, as presented, does not contain:
 
-- **Quantization**: the promotion of the classical field $\tilde{Ξ}^{\mathrm{spn}}$ to an operator-valued field $\tilde{Ξ}^{\mathrm{fop}}$ on Fock space.
+- **Quantization**: the promotion of the classical field $\tilde{Ξ}^{\mathrm{sp}}$ to an operator-valued field $\tilde{Ξ}^{\mathrm{fop}}$ on Fock space.
 - **The full four-component Dirac spinor**: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.
 - **Many-body structure**: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.
 - **Interactions beyond electromagnetism**: the weak and strong interactions require additional structure beyond the biquaternion algebra.
@@ -344,7 +344,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 2. **The pure states.** The idempotents of $\mathbb{M}_+$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.
 
-3. **The Born rule.** The normalised Hermitian form $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
+3. **The Born rule.** The normalised Hermitian form $\langle\tilde\Pi,\tilde R_\psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$.
 
 4. **The spin rotation group.** The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.
 
@@ -394,7 +394,7 @@ These questions are open.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised Hermitian form $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born rule; its $2\times2$ reading is the trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised Hermitian form $\langle\tilde\Pi,\tilde R_\psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born rule; its $2\times2$ reading is the trace formula $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$.
 
 The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
@@ -413,11 +413,11 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
-| $\tilde{H} = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
-| $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*})$ |
+| $\tilde R_\psi = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
+| $\langle\tilde\Pi,\tilde R_\psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

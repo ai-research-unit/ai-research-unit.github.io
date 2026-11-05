@@ -105,10 +105,10 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{Ξ}(x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')), \qquad \tilde{Ξ}_0\in\mathbb{C},
+\tilde{Ξ}(x)=\tilde{Ξ}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t')), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {t'}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2\mu^2=c^2k^2+\frac{m^2c^4}{\hbar^2} .
@@ -127,44 +127,44 @@ $$
 The operator $\Delta-\mu^2$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
 
 $$
-G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{\exp(-\mu r)}{4\pi r}, \qquad
-\left(\Delta-\mu^2\right)G_\mu=-\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) ,
+G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-\mu r)}{4\pi r}, \qquad
+\left(\Delta-\mu^2\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
-with $r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$. The scale $\mu^{-1}$ is the **range** of the field: beyond a few $\mu^{-1}$ the field is exponentially suppressed, while in the massless case $\mu=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
+with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\mu^{-1}$ is the **range** of the field: beyond a few $\mu^{-1}$ the field is exponentially suppressed, while in the massless case $\mu=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
 
 ## The Static Central Solution
 
 ### The Point Source
 
-Let the source be a point of strength $Ϙ$ at the origin, $\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=Ϙ\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The static field is
+Let the source be a point of strength $Ϙ$ at the origin, $\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=Ϙ\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The static field is
 
 $$
-\boxed{\ \xi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=gQ\,G_\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
+\boxed{\ \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=gQ\,G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
 \qquad\text{that is}\qquad
-\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t ,
 $$
 
 the **Yukawa field**. In the massless limit,
 
 $$
-\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\frac{gQ}{4\pi r}\,e_t ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ}{4\pi r}\,e_t ,
 $$
 
 the $1/r$ potential that the central-force articles treat as the inverse-square force's potential energy.
 
-Two properties of the solution matter for what follows. It is **static** and **spherically symmetric**, being a function of $r=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ alone, and its value at every point lies in the centre, so it commutes with the rotation generators and carries no direction. A distribution of sources superposes: for $\rho=\sum_aQ_a\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z))$ the field is the sum of the individual Yukawa fields, because the equation is linear and the centre is closed under addition.
+Two properties of the solution matter for what follows. It is **static** and **spherically symmetric**, being a function of $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ alone, and its value at every point lies in the centre, so it commutes with the rotation generators and carries no direction. A distribution of sources superposes: for $\rho=\sum_aQ_a\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z))$ the field is the sum of the individual Yukawa fields, because the equation is linear and the centre is closed under addition.
 
 ### The Field of a Moving Source
 
-It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(x)={\delta(t'_2-t'+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
+It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(x)={\delta(t'_2-t'+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
 
 $$
-\tilde{Ξ}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
 \qquad
-R=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)|,\quad
+R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)|,\quad
 \vec\beta=\frac{\vec v_s}{c},\quad
-\vec u=\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)}{R},
+\vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)}{R},
 $$
 
 evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
@@ -226,7 +226,7 @@ which is exactly the inverse-square force of the central-force articles, with $\
 The force is central for an algebraic reason. The field $\tilde{Ξ}=\xi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:
 
 $$
-\vec F(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=-\nabla E(r)=g_{\mathrm t}\,\nabla\xi(r)=g_{\mathrm t}\,\frac{d\xi}{dr}\,\vec u_r ,
+\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm t}\,\nabla\xi(r)=g_{\mathrm t}\,\frac{d\xi}{dr}\,\vec u_r ,
 $$
 
 a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a **central scalar**, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.

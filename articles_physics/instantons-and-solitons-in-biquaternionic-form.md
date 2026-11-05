@@ -7,7 +7,7 @@ The companion article *Non-Abelian Gauge Fields in Biquaternionic Form* closes w
 - **Instantons** are **Euclidean** objects. They are defined on the Euclidean continuation of spacetime, they are classified by an integer topological charge, and the classical route to them is the **self-duality** condition $F=\star F$, which replaces the second-order equation of motion by a first-order equation. The word "instanton" is not a synonym for "localised solution of the Lorentzian theory"; an instanton is not a configuration that propagates in time.
 - **Solitons** are **Lorentzian** objects. They are static, finite-energy, localised field configurations of the Lorentzian theory. Calling one *stable* is a claim that requires an argument — a conserved topological sector or a Bogomolny bound — and this article gives the argument or records its absence; it does not call a configuration stable for being stationary.
 
-The distinction is not a matter of taste. In Lorentzian signature the Hodge star on two-forms satisfies $\star^2=-1$, so $F=\star F$ forces $F=0$ on real fields: there are no nonzero real self-dual two-forms, and therefore no instantons, in the Lorentzian theory. In Euclidean signature the star satisfies $\star^2=+1$, the six-dimensional space of two-forms splits into a self-dual and an anti-self-dual three-dimensional half, and the instanton exists. The framework's own $ict'$ convention makes the point concrete: the factor $i$ in the time coordinate *is* the Lorentzian structure, and the Wick rotation of the companion article — the identification of $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ by relabelling $ict'$ as a real coordinate — is exactly the passage from the Lorentzian star to the Euclidean one.
+The distinction is not a matter of taste. In Lorentzian signature the Hodge star on two-forms satisfies $\star^2=-1$, so $F=\star F$ forces $F=0$ on real fields: there are no nonzero real self-dual two-forms, and therefore no instantons, in the Lorentzian theory. In Euclidean signature the star satisfies $\star^2=+1$, the six-dimensional space of two-forms splits into a self-dual and an anti-self-dual three-dimensional half, and the instanton exists. The framework's own $i c r'_t$ convention makes the point concrete: the factor $i$ in the time coordinate *is* the Lorentzian structure, and the Wick rotation of the companion article — the identification of $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ by relabelling $i c r'_t$ as a real coordinate — is exactly the passage from the Lorentzian star to the Euclidean one.
 
 The article is organised around four questions, and it keeps the affirmative answers and the gaps apart.
 
@@ -18,7 +18,7 @@ The article is organised around four questions, and it keeps the affirmative ans
 
 ## Two Signatures, Two Kinds of Localised Solution
 
-The framework's differential operators are Lorentzian. With the material coordinates $(ict',x,y,z)$,
+The framework's differential operators are Lorentzian. With the material coordinates $(i c r'_t,x,y,z)$,
 
 $$
 \tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z,
@@ -27,15 +27,15 @@ $$
 = + \partial^2/\partial Q_t^2+\nabla^2,
 $$
 
-where $\partial/\partial Q_t=\partial/\partial(ict')$, so that $\partial^2/\partial Q_t^2=-\partial^2/\partial {t'}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
+where $\partial/\partial Q_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial Q_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
 
-The **Wick rotation** is the substitution $t'\mapsto-i\tau$, under which the material coordinate $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ becomes the real-quaternion element
+The **Wick rotation** is the substitution $t'\mapsto-i\tau$, under which the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
 
 $$
-\tilde R_{\mathbb H}=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
+\tilde{R}_{\varphi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
 $$
 
-and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=ict'$ becomes $Q_t=c\tau$, and the four terms of
+and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=i c r'_t$ becomes $Q_t=c\tau$, and the four terms of
 
 $$
 \tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3
@@ -73,7 +73,7 @@ The two families are contrasted in the following table.
 | | Instanton | Soliton |
 |---|---|---|
 | Signature | Euclidean ($\star^2=+1$) | Lorentzian ($\star^2=-1$) |
-| Coordinates | $(x_4,x_1,x_2,x_3)$ real | $(ict',x,y,z)$ |
+| Coordinates | $(x_4,x_1,x_2,x_3)$ real | $(i c r'_t,x,y,z)$ |
 | Defining equation | first order, $F=\pm\star F$ | second order, equation of motion |
 | Boundary data | finite action; gauge field a map $S^3\to SU(2)$ at infinity | static, finite energy; fields approach vacuum at spatial infinity |
 | Charge | Pontryagin number $Ϙ\in\mathbb Z$ | topological sector; e.g. magnetic charge |
@@ -106,7 +106,7 @@ $$
 = \frac{1}{2}\,\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 =
 \begin{cases}
-\dfrac{2i}{c}\,I_2 & \text{(Lorentzian, } ict'\text{ convention)},\\[2mm]
+\dfrac{2i}{c}\,I_2 & \text{(Lorentzian, } i c r'_t\text{ convention)},\\[2mm]
 2\,I_2 & \text{(Euclidean)},
 \end{cases}
 \qquad
@@ -133,7 +133,7 @@ $$
 \langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 $$
 
-as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $ict'$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
+as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $i c r'_t$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial Q_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial Q_\mu F_{\nu\rho}+\partial/\partial Q_\nu F_{\rho\mu}+\partial/\partial Q_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial Q_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
 
 The non-abelian identity is the same statement one integration by parts further along. With $F=d\mathcal{A}+i\kappa\,\mathcal{A}\wedge\mathcal{A}$,
 
@@ -300,7 +300,7 @@ $$
 
 for a quaternion-valued $g$, with $D_3 = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ the three-dimensional Cauchy–Riemann operator of *Quaternion Regular Functions*. The equation is a time-dependent companion of the Riccati PDE of *Integrable Systems*, and it is quoted from that source rather than derived here; what is structural is that the operator is the same and that the solutions of the ansatz are generated from the kernel of the Fueter-type operator $\partial/\partial t'+D_3$. The instanton problem is thus one of the places where the quaternion function theory of the mathematics Part enters the physics Part directly, rather than through a reformulation of an already-written equation.
 
-One convention point belongs here because it is a signature effect and not a detail. The parent article's curvature carries an explicit factor $i$ in the commutator term, $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, tied to the $ict'$ structure of the Lorentzian convention. On the Euclidean slice the curvature is written without it, as above, with the $i$ either dropped or absorbed into Hermitian generators and a real coupling. Keeping the Lorentzian factor literally, on anti-Hermitian $\mathcal{A}_\mu$ and with $\kappa=1$, the BPST configuration is *not* self-dual: the same numerical check gives $\max|F-\star F|\approx 0.54$ and $\max|F+\star F|\approx 0.60$. The Euclidean continuation of the framework's non-abelian curvature is therefore fixed only up to the placement of the factor $i$, and the placement that carries the instanton is the one without it in the commutator. This is the same signature split that governs the whole article, appearing once more at the level of the equations: the factor $i$ is a Lorentzian structure, and the Euclidean solution does not carry it. The exact form of the continuation — whether the factor migrates into the generators or into the coupling — is a convention question that this article leaves visible rather than resolves.
+One convention point belongs here because it is a signature effect and not a detail. The parent article's curvature carries an explicit factor $i$ in the commutator term, $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, tied to the $i c r'_t$ structure of the Lorentzian convention. On the Euclidean slice the curvature is written without it, as above, with the $i$ either dropped or absorbed into Hermitian generators and a real coupling. Keeping the Lorentzian factor literally, on anti-Hermitian $\mathcal{A}_\mu$ and with $\kappa=1$, the BPST configuration is *not* self-dual: the same numerical check gives $\max|F-\star F|\approx 0.54$ and $\max|F+\star F|\approx 0.60$. The Euclidean continuation of the framework's non-abelian curvature is therefore fixed only up to the placement of the factor $i$, and the placement that carries the instanton is the one without it in the commutator. This is the same signature split that governs the whole article, appearing once more at the level of the equations: the factor $i$ is a Lorentzian structure, and the Euclidean solution does not carry it. The exact form of the continuation — whether the factor migrates into the generators or into the coupling — is a convention question that this article leaves visible rather than resolves.
 
 The biquaternion packaging of the solution is the parent's, $\mathcal{F}=\tfrac12\sum_{\mu,\nu} F_{\mu\nu}\bar{e}_\mu e_\nu$. The representative is a single biquaternion; the instanton therefore has a biquaternionic form, and the self-duality condition can be read as a condition on it. But, as the previous section showed, the *invariant* content of $\mathcal{F}$ is its matrix trace, not its biquaternion norm: the representative is the framework's object, and the topological density is not the framework's invariant. The instanton is thus expressible in the framework, while its charge is computed by the one bilinear the framework's invariant calculus does not supply.
 
@@ -350,8 +350,8 @@ This is a gap in the framework's field content, not a defect in its algebra. The
 
 This article has treated the localised finite-energy solutions of the biquaternion framework in the two settings in which they occur, and has kept the settings apart.
 
-- **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$, is the passage between the two stars, and the explicit factor $i$ of the $ict'$ convention is the Lorentzian structure that the Euclidean solution does not carry.
-- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $ict'$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
+- **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$, is the passage between the two stars, and the explicit factor $i$ of the $i c r'_t$ convention is the Lorentzian structure that the Euclidean solution does not carry.
+- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $i c r'_t$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
 - **The framework's invariants supply the abelian density.** $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4iI_2/c$ (Lorentzian) and $=4I_2$ (Euclidean) were recomputed; the imaginary part of the biquaternion norm, $I_2=\vec E\cdot\vec B$, *is* the abelian topological density. In the non-abelian case the density needs the matrix trace, and the rank-two, single-slot biquaternion norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$; this was checked numerically. That the framework's invariant apparatus does not produce the non-abelian topological density is recorded as a gap.
 - **There is no abelian instanton.** For finite-action abelian fields on $\mathbb R^4$ the charge is a vanishing surface term; instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)$ factor inside $\mathbb{M}_-$.
 - **An explicit solution exists and was checked.** The $SU(2)$ BPST instanton in the framework's $\mathrm{SU}(2)$ satisfies $F=\pm\star F$ (residual at the arithmetic level) and $D_\mu F_{\mu\nu}=0$ (to finite-difference accuracy). It saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$ that self-duality establishes, and its charge is $|Ϙ|=1$.
@@ -370,7 +370,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, the Euclidean slice |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=ict'$, elliptic on $Q_t=c\tau$ |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i c r'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |

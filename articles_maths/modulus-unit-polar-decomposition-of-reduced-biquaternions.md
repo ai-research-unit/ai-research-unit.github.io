@@ -115,9 +115,9 @@ Conversely,
 
 $$
 \breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2}
-=\rho\bigl(\cosh\phi+j\sinh\phi\bigr),
+=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr),
 \qquad
-\rho=\sqrt{\rho_+\rho_-},\qquad \phi=\operatorname{artanh}\frac{\rho_+-\rho_-}{\rho_++\rho_-}.
+\rho=\sqrt{\rho_+\rho_-},\qquad \theta^{\mathrm{rpd}}=\operatorname{artanh}\frac{\rho_+-\rho_-}{\rho_++\rho_-}.
 $$
 
 *Proof.* Since $\breve r^2=q+jq'$ and $\breve r^2=(x^2+y^2)+2xyj$, one has $x^2+y^2=q$ and $2xy=q'$. Hence
@@ -126,7 +126,7 @@ $$
 (x+y)^2=x^2+y^2+2xy=q+q'=|Q_{+}|^2,
 $$
 
-because $|Q_{+}|^2=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2+2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=q+q'$; and similarly $(x-y)^2=q-q'=|Q_{-}|^2$. Both $x\pm y$ are positive because $x>|y|$, so $\rho_\pm=|Q_{\pm}|$. The product is $\rho_+\rho_-=x^2-y^2=\sqrt{q^2-q'^2}$. The parametrisation is the identity $\cosh\phi\pm\sinh\phi=e^{\pm\phi}$ applied to $\rho_\pm=\rho e^{\pm\phi}$.
+because $|Q_{+}|^2=|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2+2\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=q+q'$; and similarly $(x-y)^2=q-q'=|Q_{-}|^2$. Both $x\pm y$ are positive because $x>|y|$, so $\rho_\pm=|Q_{\pm}|$. The product is $\rho_+\rho_-=x^2-y^2=\sqrt{q^2-q'^2}$. The parametrisation is the identity $\cosh\theta^{\mathrm{rpd}}\pm\sinh\theta^{\mathrm{rpd}}=e^{\pm\theta^{\mathrm{rpd}}}$ applied to $\rho_\pm=\rho e^{\pm\theta^{\mathrm{rpd}}}$.
 
 The modulus therefore carries two positive scales, $\rho_+$ and $\rho_-$. The reduced norm sees only their product $\rho_+\rho_-$, and the Euclidean norm only their sum of squares $\rho_+^2+\rho_-^2$; neither form distinguishes the two scales from their interchange, and the pair carries the sign of the boost, which both forms lose. No scalar modulus exists, and the modulus is genuinely two-dimensional.
 
@@ -189,7 +189,7 @@ The three sets coincide only in the complex algebra, where the norm is definite 
 
 ### The Count of the Parameters
 
-A unit carries four real parameters. The modulus carries two, the scales $\rho_+,\rho_-$, equivalently the radius $\rho>0$ and the boost $\phi\in\mathbb{R}$. The unit factor carries two, the two circles of $T^2$. The counts add:
+A unit carries four real parameters. The modulus carries two, the scales $\rho_+,\rho_-$, equivalently the radius $\rho>0$ and the boost $\theta^{\mathrm{rpd}}\in\mathbb{R}$. The unit factor carries two, the two circles of $T^2$. The counts add:
 
 $$
 4=2+2.
@@ -238,7 +238,7 @@ $$
 
 The first identity follows from $(\breve Q_1\breve Q_2)\overline{(\breve Q_1\breve Q_2)}=\breve Q_1\bar{\breve Q}_1\breve Q_2\bar{\breve Q}_2=\breve r_1^2\breve r_2^2$ and from $\breve r_1\breve r_2\in P$; the second is the definition of $u$ and the cancellation of the moduli.
 
-Since $P\cong\mathbb{R}_{>0}\times\mathbb{R}$ under $(\rho,\phi)\mapsto\rho(\cosh\phi+j\sinh\phi)$, and $T^2\cong S^1\times S^1$,
+Since $P\cong\mathbb{R}_{>0}\times\mathbb{R}$ under $(\rho,\theta^{\mathrm{rpd}})\mapsto\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$, and $T^2\cong S^1\times S^1$,
 
 $$
 {\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{R}_{>0}\times\mathbb{R}\times T^2\cong\mathbb{R}^2\times T^2.
@@ -252,7 +252,7 @@ $$
 
 **Theorem.** The torus $T^2$ is the maximal compact subgroup of ${\mathbb{B}^{\mathrm{red}}}^{\times}$.
 
-*Proof.* Let $K\subset{\mathbb{B}^{\mathrm{red}}}^{\times}$ be a compact subgroup. The modulus map $\breve Q\mapsto\breve r$ is a continuous homomorphism onto $P$, so its image is a compact subgroup of $P$. A compact subgroup of $P$ is trivial: in the coordinates $(\rho,\phi)$ of $P\cong\mathbb{R}_{>0}\times\mathbb{R}$, a nontrivial element has $\phi\neq0$ or $\rho\neq1$; its powers have $|n\phi|\to\infty$ or $\rho^n\to0$ or $\infty$, and no such sequence stays in a compact set. Hence every element of $K$ has modulus $1$, that is $K\subset T^2$. The torus is compact, so it is maximal.
+*Proof.* Let $K\subset{\mathbb{B}^{\mathrm{red}}}^{\times}$ be a compact subgroup. The modulus map $\breve Q\mapsto\breve r$ is a continuous homomorphism onto $P$, so its image is a compact subgroup of $P$. A compact subgroup of $P$ is trivial: in the coordinates $(\rho,\theta^{\mathrm{rpd}})$ of $P\cong\mathbb{R}_{>0}\times\mathbb{R}$, a nontrivial element has $\theta^{\mathrm{rpd}}\neq0$ or $\rho\neq1$; its powers have $|n\theta^{\mathrm{rpd}}|\to\infty$ or $\rho^n\to0$ or $\infty$, and no such sequence stays in a compact set. Hence every element of $K$ has modulus $1$, that is $K\subset T^2$. The torus is compact, so it is maximal.
 
 The compact factor is two-dimensional, not one-dimensional as in $\mathbb{C}$ and not zero-dimensional as in the split-complex algebra. The rank of the compact group is two.
 
@@ -338,7 +338,7 @@ and the $n$-th roots of a unit have modulus $\breve r^{1/n}$ and $n^2$ choices o
 
 *Proof.* The power is the repeated product. On the torus, an $n$-th root is a pair $(u_{+},u_{-})$ whose $n$-th powers are the two prescribed circular components of the target unit factor; each of the two complex equations has $n$ roots, and the choices are independent, giving $n^2$.
 
-The unit group in polar form is the product of the cone and the torus, and the product law multiplies the scales and the unit factors. The algebra is commutative, so the unit factor carries no rotor: the compact directions are the two scalar phases, and the split unit $j$ acts only through the relative scale $\rho_+/\rho_-=e^{2\phi}$. This is the reason the polar word is a pair of complex polar words and not a richer object.
+The unit group in polar form is the product of the cone and the torus, and the product law multiplies the scales and the unit factors. The algebra is commutative, so the unit factor carries no rotor: the compact directions are the two scalar phases, and the split unit $j$ acts only through the relative scale $\rho_+/\rho_-=e^{2\theta^{\mathrm{rpd}}}$. This is the reason the polar word is a pair of complex polar words and not a richer object.
 
 ## The Two Axes
 
@@ -346,7 +346,7 @@ The unit group in polar form is the product of the cone and the torus, and the p
 
 The bar fixes $1$ and $j$ and negates $i$ and $ij$, so its fixed space is the **scale plane** $\mathbb{R}\{1,j\}$ and its anti-fixed space is the **angle plane** $\mathbb{R}\{i,ij\}$.
 
-The algebra is the direct sum $\mathbb{B}^{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Exponential Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\phi\in\mathbb{R}\{1,j\}$ and $i\Theta=i\alpha+ij\beta\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
+The algebra is the direct sum $\mathbb{B}^{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Exponential Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}\in\mathbb{R}\{1,j\}$ and $i\Theta=i\alpha+ij\beta\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
 
 ### The Roots of Plus One, Zero and Minus One
 
@@ -513,23 +513,23 @@ $$
 
 ### The Hyperbolic Line
 
-For $\breve Q=\exp(j\phi)=\cosh\phi+j\sinh\phi$ the coefficients are $Q_{\blacktriangle}=\cosh\phi$ and $Q_{\blacktriangledown}=\sinh\phi$, so
+For $\breve Q=\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}$ the coefficients are $Q_{\blacktriangle}=\cosh\theta^{\mathrm{rpd}}$ and $Q_{\blacktriangledown}=\sinh\theta^{\mathrm{rpd}}$, so
 
 $$
-Q_{+}=e^{\phi},\qquad Q_{-}=e^{-\phi},\qquad
-\rho_+=e^{\phi},\qquad \rho_-=e^{-\phi}.
+Q_{+}=e^{\theta^{\mathrm{rpd}}},\qquad Q_{-}=e^{-\theta^{\mathrm{rpd}}},\qquad
+\rho_+=e^{\theta^{\mathrm{rpd}}},\qquad \rho_-=e^{-\theta^{\mathrm{rpd}}}.
 $$
 
 The modulus is
 
 $$
-\breve r=\frac{e^{\phi}+e^{-\phi}}{2}+j\,\frac{e^{\phi}-e^{-\phi}}{2}=\cosh\phi+j\sinh\phi=\breve Q,
+\breve r=\frac{e^{\theta^{\mathrm{rpd}}}+e^{-\theta^{\mathrm{rpd}}}}{2}+j\,\frac{e^{\theta^{\mathrm{rpd}}}-e^{-\theta^{\mathrm{rpd}}}}{2}=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}=\breve Q,
 $$
 
 and the unit factor is $1$. The relative scale is
 
 $$
-\frac{\rho_+}{\rho_-}=e^{2\phi},
+\frac{\rho_+}{\rho_-}=e^{2\theta^{\mathrm{rpd}}},
 $$
 
 which is the boost parameter of the split-complex companion. There is no separate boost factor: the split unit $j$ is absorbed into the two scales, and the boost is their ratio.
@@ -626,7 +626,7 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 | $P=\{x+jy:x>\lvert y\rvert\}$ | the positive cone of the modulus |
 | $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ | the modulus, an element of $P$ |
 | $\rho_+=\lvert Q_{+}\rvert$, $\rho_-=\lvert Q_{-}\rvert$ | the two scales |
-| $\breve r=\rho(\cosh\phi+j\sinh\phi)$ | the modulus in radius and boost |
+| $\breve r=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$ | the modulus in radius and boost |
 | $u=\breve r^{-1}\breve Q$ | the unit factor |
 | $T^2=\{u:u\bar u=1\}$ | the unit torus |
 | ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong P\times T^2$ | the polar splitting of the group of units |

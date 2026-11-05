@@ -70,9 +70,9 @@ $$
 
 which is $Q_t$ times a unipotent element. This is the sector condition in the pairing.
 
-**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\psi/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\alpha\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
+**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\theta^{\mathrm{rpd}}/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\alpha\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
 
-*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\psi/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\alpha}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
+*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta^{\mathrm{rpd}}/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\alpha}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
 
 The factors are diagonalizable, and the product is not. They cannot commute: if they did, their product would be normal and hence diagonalizable, contradicting the non-scalar Jordan block. The non-commutativity of $\tilde H$ and $\tilde V$ is therefore exactly the defect of the element, read in the Cartan pairing.
 
@@ -142,7 +142,7 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 | positive factor | $\tilde H=r\tilde U_{\mathrm b}$, determinant $r^2$ |
 | $*$-unitary factor | $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$, determinant $e^{2i\alpha}$ |
 | product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
-| factor eigenvalues | $r e^{\pm\psi/2}$ and $e^{i(\alpha\pm\theta/2)}$ |
+| factor eigenvalues | $r e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{i(\alpha\pm\theta/2)}$ |
 | product eigenvalue | $\varepsilon$, double |
 | commutator | nonzero on the Jordan part |
 | availability | all of $\Sigma_{10}$ |
@@ -166,7 +166,7 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde H=r\tilde U_{\mathrm b}$ | the positive Hermitian factor |
 | $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ | the $*$-unitary factor |
-| $\psi,\theta$ | the rapidity and the rotor angle |
+| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\varepsilon=\pm1$ | the sign of the scalar part of the unit factor |
 
 ## Further Reading

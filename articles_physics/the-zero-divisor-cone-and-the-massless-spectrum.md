@@ -72,16 +72,16 @@ The corpus also reads the wall as an **information barrier**: the boundary at wh
 A material four-vector is anti-Hermitian,
 
 $$
-\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,
+\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
 $$
 
 and its norm is the interval
 
 $$
-\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert x\vec e_x+y\vec e_y+z\vec e_z\rvert^2,
+\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+\lvert r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\rvert^2,
 $$
 
-of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the **null cone** $c^2{t'}^2=\lvert\vec r\rvert^2$.
+of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the **null cone** $c^2{r'_{t}}^2=\lvert\vec r\rvert^2$.
 
 The mass shell is a level set of the norm of the **four-momentum**, not of the position. With
 
@@ -97,7 +97,7 @@ $$
 \langle\tilde P\rangle_{\natural}=-m^2c^2
 $$
 
-is the **mass shell**, $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. The mass is the value of the momentum norm, up to the sign and the factor $c^2$, and the massless case is the value zero. The level sets of the position norm are the hyperboloids of constant interval; for a timelike displacement, $c^2{t'}^2-\lvert\vec r\rvert^2=c^2\tau^2$. They are not mass shells.
+is the **mass shell**, $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. The mass is the value of the momentum norm, up to the sign and the factor $c^2$, and the massless case is the value zero. The level sets of the position norm are the hyperboloids of constant interval; for a timelike displacement, $c^2{r'_{t}}^2-\lvert\vec r\rvert^2=c^2\tau^2$. They are not mass shells.
 
 Two facts about the cut carry the reading.
 
@@ -234,10 +234,10 @@ The polar decomposition is defined off the cone and has no value on it. It has a
 **The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\varkappa^{\mathrm{phs}}$ a unit complex number and $R>0$, and set
 
 $$
-\tilde Q(\tilde{Ξ}^{\mathrm{spn}})=R\exp\left(-\frac{\tilde{Ξ}^{\mathrm{spn}}}{2}\right)\varkappa^{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}^{\mathrm{spn}}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}^{\mathrm{spn}}>0.
+\tilde Q(\tilde{Ξ}^{\mathrm{sp}})=R\exp\left(-\frac{\tilde{Ξ}^{\mathrm{sp}}}{2}\right)\varkappa^{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}^{\mathrm{sp}}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}^{\mathrm{sp}}>0.
 $$
 
-Every $\tilde Q(\tilde{Ξ}^{\mathrm{spn}})$ is a unit, and as $\tilde{Ξ}^{\mathrm{spn}}\to\infty$ it converges to
+Every $\tilde Q(\tilde{Ξ}^{\mathrm{sp}})$ is a unit, and as $\tilde{Ξ}^{\mathrm{sp}}\to\infty$ it converges to
 
 $$
 \boxed{\;\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
@@ -286,8 +286,8 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$ |
 | $\sigma=\lVert\tilde Q\rVert_{\mathrm F}$ | the Frobenius scale of a nonzero null element |
 | $\tilde\Pi_{\mathrm i},\tilde\Pi_{\mathrm f}$ | the initial and final projections of the partial isometry |
-| $\mathbb{M}_-$ | the material sector, $\tilde R=ict'\,e_t+\vec r$ |
-| $\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
+| $\mathbb{M}_-$ | the material sector, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ |
+| $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
 | $-m^2c^2$ | the mass-shell level of the four-momentum norm |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |
 | $\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\zeta\zeta^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |

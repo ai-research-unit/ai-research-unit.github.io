@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ c
 $$
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
 $$
-A general element splits as $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{M}_-$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{M}_+$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{M}_-$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
+A general element splits as $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{M}_-$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{M}_+$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{M}_-$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
 
 The question is sharp because the two things that a superselection structure is expected to supply are both present in a weak form and both absent in the strong form. Present: the split is the eigenspace decomposition of an involutive charge, no operation of the framework of the conjugation type maps one summand into the other, and the relative phase between the two summands is unobservable. Absent: the framework is central simple, its only central idempotents are $0$ and $e_t$, and it therefore admits no decomposition into non-interfering branches of the standard algebraic kind. The thesis of this article is that both statements are exact, that they do not conflict, and that the correct interpretation of the split is as a **superselection structure of a real form** — a grading carried by the algebra's antilinear real structure $\flat = -{}^{*}$ rather than by its centre.
 
@@ -58,8 +58,8 @@ $$
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
-\tilde Q_{\mathrm H}=\tilde{H} = h_t\,e_t + i\vec h, \qquad \vec h = h_x\vec e_x+h_y\vec e_y+h_z\vec e_z, \qquad
-\tilde Q_{\mathrm A} = i x_t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad h_t,h_x,h_y,h_z,x_t,x,y,z\in\mathbb{R},
+\tilde R_\psi = h_t\,e_t + i\vec h, \qquad \vec h = h_x\vec e_x+h_y\vec e_y+h_z\vec e_z, \qquad
+\tilde R_\varphi = i x_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad h_t,h_x,h_y,h_z,x_t,x,y,z\in\mathbb{R},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{M}_-$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
@@ -85,7 +85,7 @@ These projections are **not** elements of $\mathbb{B}$. They are real-linear ope
 
 **Proposition.** If $\tilde Q_4\in\mathbb{B}$ satisfies $\tilde Q_4\mathbb{M}_+ \subseteq \mathbb{M}_+$, then $\tilde Q_4\in\mathbb{R}e_t$; the same holds with $\mathbb{M}_-$ in place of $\mathbb{M}_+$. Consequently no element of $\mathbb{B}$ implements a sector projection by left multiplication.
 
-**Proof.** Let $\tilde{H}\in\mathbb{M}_+$, so that $\tilde{H}^{*} = \tilde{H}$. The condition reads $(\tilde Q_4\tilde{H})^{*} = \tilde Q_4\tilde{H}$, that is $\tilde{H}\tilde Q_4^{*} = \tilde Q_4\tilde{H}$. Taking $\tilde{H} = e_t$ gives $\tilde Q_4^{*} = \tilde Q_4$, so $\tilde Q_4\in\mathbb{M}_+$, and then $\tilde{H}\tilde Q_4 = \tilde Q_4\tilde{H}$ for every Hermitian $\tilde{H}$, which says $\tilde Q_4$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde Q_4$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{M}_-$ is identical after $\tilde Q_4\to i\tilde Q_4$.
+**Proof.** Let $\tilde R_\psi\in\mathbb{M}_+$, so that $\tilde R_\psi^{*} = \tilde R_\psi$. The condition reads $(\tilde Q_4\tilde R_\psi)^{*} = \tilde Q_4\tilde R_\psi$, that is $\tilde R_\psi\tilde Q_4^{*} = \tilde Q_4\tilde R_\psi$. Taking $\tilde R_\psi = e_t$ gives $\tilde Q_4^{*} = \tilde Q_4$, so $\tilde Q_4\in\mathbb{M}_+$, and then $\tilde R_\psi\tilde Q_4 = \tilde Q_4\tilde R_\psi$ for every Hermitian $\tilde R_\psi$, which says $\tilde Q_4$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde Q_4$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{M}_-$ is identical after $\tilde Q_4\to i\tilde Q_4$.
 
 The proposition says that the sector decomposition, although it decomposes the algebra as a real vector space, is invisible to the algebra's own left action: there is no element whose module action measures the sectors, and the only elements that preserve a sector by left multiplication are the real scalars.
 
@@ -256,7 +256,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R}=\tilde Q_{\mathrm A}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R}=\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -295,8 +295,8 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
-| $\tilde Q_{\mathrm H} = h_te_t + i\vec h$ | General Hermitian element, the informational part |
-| $\tilde Q_{\mathrm A} = ix_te_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | General anti-Hermitian element, the material part |
+| $\tilde R_\psi = h_te_t + i\vec h$ | General Hermitian element, the informational part |
+| $\tilde R_\varphi = ix_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |

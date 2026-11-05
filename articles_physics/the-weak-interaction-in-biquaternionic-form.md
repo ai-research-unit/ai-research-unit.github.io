@@ -12,13 +12,13 @@ This article treats the process level, and not the bosons. The companion *The W 
 
 The article is organised as follows. The next section transcribes the process, the contact and the rates. A section then writes the charged current as a cell, derives the multiplier table, and proves the square identity and the nilpotency criterion. A section turns the criterion on the neutral current and shows that the measured $Z$ coupling sits away from the null point, with the parity-violating asymmetry as the size of the departure. A section treats parity, the mass bilinear and what nilpotency means for a fermion line. A closing section separates what the framework supplies from what it imports, and names the one gauge construction that would close the gap. The summary, the notation table and the literature follow.
 
-Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **cell**, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$, and applying a cell twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$. The frame cells and the chirality cell are those of the companions,
+Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **cell**, $L_aR_b\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}} b$, and applying a cell twice gives $a^2\tilde{Ξ}^{\mathrm{sp}} b^2$. The frame cells and the chirality cell are those of the companions,
 
 $$
 \Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \xi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=c r'_{t}$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -27,7 +27,7 @@ the label $\mathrm{axf}$ naming the axis-free frame of the regular representatio
 The weak charged current carries one unit of charge and one unit of the weak isospin ladder. In the standard notation, read in the frame declared above, with $u$ the upper and $d$ the lower member of a doublet,
 
 $$
-J^{+}_\mu=\tilde{Ξ}^{\mathrm{spn}\dagger}_{\mathrm u}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d},
+J^{+}_\mu=\tilde{Ξ}^{\mathrm{sp}\dagger}_{\mathrm u}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d},
 $$
 
 and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $\varepsilon_\mu\delta_{\mu\nu}/M_W^2$ and leaves a contact,
@@ -101,7 +101,7 @@ Every left multiplier in the table lies in the informational sector $\mathbb{M}_
 
 ### The square identity
 
-The square of a cell is the cell of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$ twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$. For the chiral vertex the right multiplier is $\vec\Upsilon_1$ or $\vec\Upsilon_2$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
+The square of a cell is the cell of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\tilde{Ξ}^{\mathrm{sp}}\mapsto a\tilde{Ξ}^{\mathrm{sp}} b$ twice gives $a^2\tilde{Ξ}^{\mathrm{sp}} b^2$. For the chiral vertex the right multiplier is $\vec\Upsilon_1$ or $\vec\Upsilon_2$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
 
 $$
 (g_Vi\vec e_x-g_A\vec e_y)^2=-g_V^2\vec e_x^2+g_A^2\vec e_y^2=g_V^2-g_A^2 ,
@@ -141,7 +141,7 @@ with $\tilde\Pi_+$ Hermitian. The product of the two right multipliers, in the n
 
 ## The Neutral Current Is Not Null
 
-The neutral current has the same shape, $J_{Z\mu}=\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}\,\Gamma_\mu(g_V-g_A\xi)\tilde{Ξ}^{\mathrm{spn}}$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
+The neutral current has the same shape, $J_{Z\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}\,\Gamma_\mu(g_V-g_A\xi)\tilde{Ξ}^{\mathrm{sp}}$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
 
 $$
 \Big|\frac{g_A}{g_V}\Big|=\Big|1-4\sin^2\theta_W\Big|^{-1},
@@ -174,7 +174,7 @@ A theory is parity invariant when its vertex is its own image, which requires $g
 The Dirac mass term pairs the two chiralities, so it is odd under $\xi$ and vanishes on a field of definite chirality; the companion article derives this and the selection rule that follows, the two chiral charges equal for a gauge-invariant bare mass. This article adds only where the two facts meet. Both are properties of the one element $\xi$. The projectors are idempotent, $P_L^2=P_L$, and the adjoint passes through them to the other side, $P_LR_{\vec e_x}=R_{\vec e_x}P_R$, verified, so the bilinear of two left-handed fields is
 
 $$
-\tilde{Ξ}^{\mathrm{spn}\dagger}_LiR_{\vec e_x}\tilde{Ξ}^{\mathrm{spn}}_L=\tilde{Ξ}^{\mathrm{spn}\dagger}P_L\,iR_{\vec e_x}P_L\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}P_RP_L\tilde{Ξ}^{\mathrm{spn}}=0 ,
+\tilde{Ξ}^{\mathrm{sp}\dagger}_LiR_{\vec e_x}\tilde{Ξ}^{\mathrm{sp}}_L=\tilde{Ξ}^{\mathrm{sp}\dagger}P_L\,iR_{\vec e_x}P_L\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}P_RP_L\tilde{Ξ}^{\mathrm{sp}}=0 ,
 $$
 
 a mass term with nothing to pair. The same cell supplies the vertex its nilpotent multiplier. A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off the one idempotent.
@@ -227,7 +227,7 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the spatial units |
 | $i$ | Central imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
-| $L_aR_b$ | Cell, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$; applying it twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$ |
+| $L_aR_b$ | Cell, $L_aR_b\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}} b$; applying it twice gives $a^2\tilde{Ξ}^{\mathrm{sp}} b^2$ |
 | $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\xi=-iR_{\vec e_z}$ | Chirality cell, $\xi^2=I_4$, the image of $\gamma_5$ |
 | $P_L=\tfrac12(I_4-\xi)$, $P_R=\tfrac12(I_4+\xi)$ | Chiral projectors, $P_LP_R=0$ |
@@ -235,8 +235,8 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |
 | $\Gamma_\mu(g_V-g_A\xi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
 | $\big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
-| $J^{+}_\mu=\tilde{Ξ}^{\mathrm{spn}\dagger}_{\mathrm u}iR_{\vec e_x}\Gamma_\mu(1-\xi)\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
-| $\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}$ | Dirac adjoint |
+| $J^{+}_\mu=\tilde{Ξ}^{\mathrm{sp}\dagger}_{\mathrm u}iR_{\vec e_x}\Gamma_\mu(1-\xi)\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
+| $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu$ | Four-fermion contact |
 | $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | Contact coefficient |
 | $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ | Fermi constant |

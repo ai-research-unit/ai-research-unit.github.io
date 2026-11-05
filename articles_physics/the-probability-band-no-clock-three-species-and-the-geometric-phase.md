@@ -100,12 +100,12 @@ The probability band owns the same centre but reads it as a modulus: it has the 
 The probability band's square is a **ruler**: the Hermitian norm is definite, it measures a length and it supplies the Born weight. The neighbouring quaternionic form is a **clock**: the interval is indefinite, it separates timelike from spacelike, and its zero set is the light cone. One element carries both because the grid carries both metrics. On the material sector the two read
 
 $$
-\langle\tilde R\rangle_{*}=c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R_\varphi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
 \qquad
-\langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
 $$
 
-so the ruler and the clock differ by twice the squared time, $\langle\tilde R\rangle_{*}-\langle\tilde R\rangle_{\natural}=2c^{2}{t'}^{2}$.
+so the ruler and the clock differ by twice the squared time, $\langle\tilde R_\varphi\rangle_{*}-\langle\tilde R_\varphi\rangle_{\natural}=2c^{2}{r'_{t}}^{2}$.
 
 The reading is the instrument pair: the interval tells which events can be causally connected and how much proper time a worldline carries; the Hermitian square tells how long a vector is and, on the state slice, supplies the Born weight. The same algebra carries both because the four general products put the two forms on the same eight real coordinates. The pair is the transversal form of the no-clock theorem: the band has no clock element, but it has the ruler, and the clock is the interval of the neighbouring band.
 
@@ -119,7 +119,7 @@ The neighbour that carries the interval makes the split the probability band can
 
 *Proof.* By the injectivity of the parameter map, $L_{\tilde Q^{\natural}}=L_{\tilde Q}$ is $\tilde Q^{\natural}=\tilde Q$, which is centrality; and $L_{\tilde Q^{\natural}}=-L_{\tilde Q}$ is $\tilde Q^{\natural}=-\tilde Q$, which is purity.
 
-The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $ict'$ and $ct$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
+The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $i c r'_t$ and $c r_t$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
 
 **The interpretation.** The causality band's operator layer splits the interval into a central time plane and a pure spatial part: the self-adjoint parameter is time, the skew-adjoint parameter is space, and the bracket lives in the space. The probability band has no such split because its square is a modulus.
 
@@ -337,42 +337,42 @@ The square is not the only map that crosses. The fourth power crosses, and every
 Write a material four-vector in the physical coordinates,
 
 $$
-\tilde Q=ict'\,e_t+\vec x,
+\tilde Q=i c r'_t\,e_t+\vec x,
 \qquad
-\vec x=x\vec e_x+y\vec e_y+z\vec e_z .
+\vec x=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 
 Its square and its negative are
 
 $$
-\tilde Q^{2}=-\bigl(c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t+2ict'\,\vec x,
+\tilde Q^{2}=-\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t+2i c r'_t\,\vec x,
 \qquad
--\tilde Q^{2}=\bigl(c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t-2ict'\,\vec x .
+-\tilde Q^{2}=\bigl(c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t-2i c r'_t\,\vec x .
 $$
 
 The scalar part of $-\tilde Q^{2}$ is the Hermitian norm,
 
 $$
-\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}
+\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2}
 =\langle\tilde Q\rangle_{*},
 $$
 
 the Euclidean weight of the four-vector. The vector part is
 
 $$
-\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2ict'\,\vec x=-2Q_t\vec Q,
+\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2i c r'_t\,\vec x=-2Q_t\vec Q,
 $$
 
 the phase vector of the material element. The interval is not the square: it is the quaternionic norm,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde Q\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec x\rvert^{2},
 $$
 
 and the gap between the two metrics on the material side is
 
 $$
-\langle\tilde Q\rangle_{*}-\langle\tilde Q\rangle_{\natural}=2c^{2}{t'}^{2}.
+\langle\tilde Q\rangle_{*}-\langle\tilde Q\rangle_{\natural}=2c^{2}{r'_{t}}^{2}.
 $$
 
 The square gives the weight and the axis; the norm gives the interval.
@@ -391,11 +391,11 @@ The sign is the sector. On the material sector the plain square is negative semi
 
 ### The Amplitude and Its Two Parts
 
-Let $\tilde{Ξ}^{\mathrm{spn}}_1$ and $\tilde{Ξ}^{\mathrm{spn}}_2$ be two spinors of the module, and let the amplitude be the band's pairing,
+Let $\tilde{Ξ}^{\mathrm{sp}}_1$ and $\tilde{Ξ}^{\mathrm{sp}}_2$ be two spinors of the module, and let the amplitude be the band's pairing,
 
 $$
-A=\langle\tilde{Ξ}^{\mathrm{spn}}_1,\tilde{Ξ}^{\mathrm{spn}}_2\rangle_{*}
-=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{spn}}_1\tilde{Ξ}^{\mathrm{spn}*}_2\bigr).
+A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
+=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}}_1\tilde{Ξ}^{\mathrm{sp}*}_2\bigr).
 $$
 
 The squared modulus is the probability of the transition, and the argument is the phase. The amplitude is a complex number; the phase is its argument, and the axis about which it turns is a property of the two rays, not of the amplitude.
@@ -403,9 +403,9 @@ The squared modulus is the probability of the transition, and the argument is th
 Under a central phase on each spinor,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}_1\mapsto e^{i\alpha_1}\tilde{Ξ}^{\mathrm{spn}}_1,
+\tilde{Ξ}^{\mathrm{sp}}_1\mapsto e^{i\alpha_1}\tilde{Ξ}^{\mathrm{sp}}_1,
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}_2\mapsto e^{i\alpha_2}\tilde{Ξ}^{\mathrm{spn}}_2,
+\tilde{Ξ}^{\mathrm{sp}}_2\mapsto e^{i\alpha_2}\tilde{Ξ}^{\mathrm{sp}}_2,
 $$
 
 the amplitude transforms as
@@ -433,12 +433,12 @@ For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta
 
 ### The Loop Is the Gauge-Invariant Phase
 
-Take a closed sequence of states $\tilde{Ξ}^{\mathrm{spn}}_1,\tilde{Ξ}^{\mathrm{spn}}_2,\dots,\tilde{Ξ}^{\mathrm{spn}}_n,\tilde{Ξ}^{\mathrm{spn}}_1$ and the product of the overlaps around the loop,
+Take a closed sequence of states $\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2,\dots,\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1$ and the product of the overlaps around the loop,
 
 $$
-\Gamma=\arg\Bigl(\langle\tilde{Ξ}^{\mathrm{spn}}_1,\tilde{Ξ}^{\mathrm{spn}}_2\rangle_{*}
-\langle\tilde{Ξ}^{\mathrm{spn}}_2,\tilde{Ξ}^{\mathrm{spn}}_3\rangle_{*}\cdots
-\langle\tilde{Ξ}^{\mathrm{spn}}_n,\tilde{Ξ}^{\mathrm{spn}}_1\rangle_{*}\Bigr).
+\Gamma=\arg\Bigl(\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
+\langle\tilde{Ξ}^{\mathrm{sp}}_2,\tilde{Ξ}^{\mathrm{sp}}_3\rangle_{*}\cdots
+\langle\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1\rangle_{*}\Bigr).
 $$
 
 Under a change of representative the factors shift by the telescoping phases $\alpha_{k}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
@@ -488,7 +488,7 @@ The three grades of coefficient reality are the complex, central and real specie
 | $\{Q_1,Q_2,Q_3\}=Q_1Q_2^{*}Q_3$ | the ternary product of the band |
 | $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |
 | $P$, $I$ | the probability norm and the interval norm on the state slice |
-| $A=\langle\tilde{Ξ}^{\mathrm{spn}}_1,\tilde{Ξ}^{\mathrm{spn}}_2\rangle_{*}$ | the amplitude |
+| $A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}$ | the amplitude |
 | $\Gamma$ | the Pancharatnam phase of a closed circuit |
 
 ## Further Reading

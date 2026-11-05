@@ -74,7 +74,7 @@ $$
 \qquad \tilde{Q}\in\mathbb{H}_{\mathbb{B}} .
 $$
 
-For a pure vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
+For a pure vector $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
 
 $$
 \vec e_{k,b}=\tilde u\,\vec e_k\,\tilde u^{*},

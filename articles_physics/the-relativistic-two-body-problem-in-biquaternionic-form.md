@@ -75,7 +75,7 @@ $$
 \langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \vec p_1\cdot\vec p_2,
 $$
 
-which is the Minkowski inner product of the two four-momenta in the $ict'$ convention, with real time components $E_a/c$. In particular, for the four-velocities,
+which is the Minkowski inner product of the two four-momenta in the $i c r'_t$ convention, with real time components $E_a/c$. In particular, for the four-velocities,
 
 $$
 \frac{\langle \tilde{V}_1, \tilde{V}_2\rangle}{c^2} = -\gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).

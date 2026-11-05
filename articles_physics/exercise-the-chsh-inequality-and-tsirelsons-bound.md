@@ -123,10 +123,10 @@ for the Bell state with sign pattern $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3
 
 | Bell state | $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ | $T=-\mathrm{diag}(\epsilon)$ | $E(\vec a_1,\vec b_1)$ |
 |---|---|---|---|
-| $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $(+1,+1,+1)$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec a_1\cdot\vec b_1$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $(+1,+1,+1)$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec a_1\cdot\vec b_1$ |
 | $\lvertΞ^{+}\rangle$ | $(-1,+1,-1)$ | $\mathrm{diag}(+1,-1,+1)$ | $a_{11}b_{11}-a_{12}b_{12}+a_{13}b_{13}$ |
 | $\lvertΞ^{-}\rangle$ | $(+1,-1,-1)$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_{11}b_{11}+a_{12}b_{12}+a_{13}b_{13}$ |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $(-1,-1,+1)$ | $\mathrm{diag}(+1,+1,-1)$ | $a_{11}b_{11}+a_{12}b_{12}-a_{13}b_{13}$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ | $(-1,-1,+1)$ | $\mathrm{diag}(+1,+1,-1)$ | $a_{11}b_{11}+a_{12}b_{12}-a_{13}b_{13}$ |
 
 Only the singlet has $T=-I$ and hence the rotationally invariant correlation $E=-\vec a_1\cdot\vec b_1$. The other three have a correlation matrix with one diagonal entry of the opposite sign; their correlations depend on the directions.
 
@@ -139,13 +139,13 @@ $$
 For the singlet, $\epsilon_j=+1$ for all $j$, so
 
 $$
-S_{\mathrm{spn}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
+S_{\mathrm{sp}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
 = -\vec a_1\cdot(\vec b_1-\vec b_2) - \vec a_2\cdot(\vec b_1+\vec b_2).
 $$
 
 ### Step 4: The optimal configuration and the value $2\sqrt{2}$
 
-Consider first the singlet. With $\vec b_1$ and $\vec b_2$ held fixed, the two terms in $S_{\mathrm{spn}^-}$ involve $\vec a_1$ and $\vec a_2$ separately, so each can be maximized independently over the unit sphere:
+Consider first the singlet. With $\vec b_1$ and $\vec b_2$ held fixed, the two terms in $S_{\mathrm{sp}^-}$ involve $\vec a_1$ and $\vec a_2$ separately, so each can be maximized independently over the unit sphere:
 
 $$
 \max_{|\vec a_1|=1}\bigl[-\vec a_1\cdot(\vec b_1-\vec b_2)\bigr] = |\vec b_1-\vec b_2|,
@@ -156,7 +156,7 @@ $$
 Therefore
 
 $$
-\max_{|\vec a_1|=|\vec a_2|=1} S_{\mathrm{spn}^-} = |\vec b_1-\vec b_2| + |\vec b_1+\vec b_2|
+\max_{|\vec a_1|=|\vec a_2|=1} S_{\mathrm{sp}^-} = |\vec b_1-\vec b_2| + |\vec b_1+\vec b_2|
 = \sqrt{2-2c} + \sqrt{2+2c} = \sqrt{2}\left(\sqrt{1-c}+\sqrt{1+c}\right),
 $$
 
@@ -167,7 +167,7 @@ $$
 \vec b_1=\frac{\vec u_x+\vec u_z}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_x+\vec u_z}{\sqrt{2}}
 $$
 
-realize this configuration, and direct substitution gives $S_{\mathrm{spn}^-}=-2\sqrt{2}$; reversing the signs of $\vec a_1$ and $\vec a_2$ gives $+2\sqrt{2}$.
+realize this configuration, and direct substitution gives $S_{\mathrm{sp}^-}=-2\sqrt{2}$; reversing the signs of $\vec a_1$ and $\vec a_2$ gives $+2\sqrt{2}$.
 
 Now consider the other three Bell states. They are related to the singlet by **local $*$-unitary operations**: the parent article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* shows that conjugating $\tilde\Pi_{Ξ^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-$*$-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local $*$-unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.
 
@@ -178,7 +178,7 @@ $$
 \vec b_1=\frac{\vec u_j+\vec u_k}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_k}{\sqrt{2}} .
 $$
 
-Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
+Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
 
 ### Step 5: Tsirelson's bound
 
@@ -275,7 +275,7 @@ $$
 which is exactly the standard expression of Step 3. For the singlet, $\epsilon_j=+1$, and
 
 $$
-S_{\mathrm{spn}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
+S_{\mathrm{sp}^-} = -\vec a_1\cdot\vec b_1 + \vec a_1\cdot\vec b_2 - \vec a_2\cdot\vec b_1 - \vec a_2\cdot\vec b_2
 = -\vec a_1\cdot(\vec b_1-\vec b_2) - \vec a_2\cdot(\vec b_1+\vec b_2).
 $$
 
@@ -425,7 +425,7 @@ Compute its correlation matrix and show that the maximal CHSH value is $2\sqrt{2
 
 The CHSH inequality is the two-settings-per-party form of Bell's theorem, and this exercise derived its classical bound, its quantum bound, and the quantum correlators that produce it.
 
-In the **standard formulation**, the CHSH combination is the expectation of the Bell operator $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$. Every local hidden-variable model gives $|S|\le2$, because for each value of the shared variable one of the combinations $B_1-B_2$, $B_1+B_2$ vanishes. The Bell-state correlators $E(\vec a_1,\vec b_1)=-\sum_j\epsilon_j a_{1j}b_{1j}$ give $S_{\mathrm{spn}^-}=-\vec a_1\cdot(\vec b_1-\vec b_2)-\vec a_2\cdot(\vec b_1+\vec b_2)$ for the singlet, whose maximum over directions is $|\vec b_1-\vec b_2|+|\vec b_1+\vec b_2|=\sqrt2(\sqrt{1-c}+\sqrt{1+c})\le2\sqrt2$. The exact operator identity $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]$, evaluated with $[A_1,A_2]=2i(u\cdot\boldsymbol{\sigma})$, $[B_1,B_2]=2i(v\cdot\boldsymbol{\sigma})$, gives eigenvalues bounded by $2\sqrt2$ for every state. This is Tsirelson's bound, and it is saturated by all four Bell states at $\vec a_1\perp\vec a_2$, $\vec b_1\perp\vec b_2$.
+In the **standard formulation**, the CHSH combination is the expectation of the Bell operator $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$. Every local hidden-variable model gives $|S|\le2$, because for each value of the shared variable one of the combinations $B_1-B_2$, $B_1+B_2$ vanishes. The Bell-state correlators $E(\vec a_1,\vec b_1)=-\sum_j\epsilon_j a_{1j}b_{1j}$ give $S_{\mathrm{sp}^-}=-\vec a_1\cdot(\vec b_1-\vec b_2)-\vec a_2\cdot(\vec b_1+\vec b_2)$ for the singlet, whose maximum over directions is $|\vec b_1-\vec b_2|+|\vec b_1+\vec b_2|=\sqrt2(\sqrt{1-c}+\sqrt{1+c})\le2\sqrt2$. The exact operator identity $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]$, evaluated with $[A_1,A_2]=2i(u\cdot\boldsymbol{\sigma})$, $[B_1,B_2]=2i(v\cdot\boldsymbol{\sigma})$, gives eigenvalues bounded by $2\sqrt2$ for every state. This is Tsirelson's bound, and it is saturated by all four Bell states at $\vec a_1\perp\vec a_2$, $\vec b_1\perp\vec b_2$.
 
 In the **biquaternion formulation**, the CHSH combination is the Born pairing of the state with the single Hermitian element
 
@@ -454,7 +454,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathrm{Tr}_\mathbb{B}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace on a single factor |
+| $\mathrm{Tr}_\mathbb{B}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace on a single factor |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $e_t\mapsto I_2,\ \vec e_k\mapsto-i\sigma_k$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_k$ is $\sigma_k$ |
 | $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ | Alice's and Bob's measurement directions |

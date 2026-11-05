@@ -44,7 +44,7 @@ The article is organized as follows. The next section fixes the Schwarzschild ho
 The exterior Schwarzschild line element, in the coordinates $(t',r,\theta,\xi^{\mathrm{scl}})$, is
 
 $$
-ds^2 = -f c^2\,d{t'}^2 + f^{-1}dr^2 + r^2\,d\Omega^2,
+ds^2 = -f c^2\,d{r'_{t}}^2 + f^{-1}dr^2 + r^2\,d\Omega^2,
 \qquad
 f(r) = 1-\frac{r_s}{r},
 \qquad
@@ -154,7 +154,7 @@ $$
 The $(t',r)$ part of the line element becomes
 
 $$
-ds^2_{(t',r)} = -f c^2 d{t'}^2 + f^{-1}dr^2
+ds^2_{(t',r)} = -f c^2 d{r'_{t}}^2 + f^{-1}dr^2
 = -\rho^2\left(\frac{c\,dt'}{2r_s}\right)^2 + d\rho^2
 = -\rho^2\,d(\kappa_\omega t')^2 + d\rho^2,
 $$
@@ -163,7 +163,7 @@ with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization
 
 ### The Same KMS Statement in Different Coordinates
 
-The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|ct'|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\hbar a/(2\pi c k_B)$. The KMS condition is the parent's boundary relation $F_{\tilde Q_2\tilde Q_1}(t'+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t')$ with the strip $0<\mathrm{Im}\,t'<\beta$.
+The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|c r'_{t}|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\hbar a/(2\pi c k_B)$. The KMS condition is the parent's boundary relation $F_{\tilde Q_2\tilde Q_1}(t'+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t')$ with the strip $0<\mathrm{Im}\,t'<\beta$.
 
 The Hawking statement is the same condition, stated on the same kind of flow. For the vacuum of a collapsing background — the **Unruh vacuum**, empty on past null infinity, or the **Hartle–Hawking vacuum**, regular on the horizon and thermal on both sides — restricted to the exterior region, the KMS condition holds with respect to the horizon-generating Killing flow $\partial/\partial t'$ at
 
@@ -204,7 +204,7 @@ F_{\tilde Q_2\tilde Q_1}(t'+i\beta) = F_{\tilde Q_1\tilde Q_2}(-t'),
 \beta=\frac{\hbar}{k_BT},
 $$
 
-and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{M}_-$'s time coordinate is $ict'$, not an analytic continuation), and the modular Hamiltonian $K=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{M}_+$. The temperature above is exactly $\beta=\hbar/(k_BT)$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{M}_-$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{M}_+$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
+and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{M}_-$'s time coordinate is $i c r'_t$, not an analytic continuation), and the modular Hamiltonian $K=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{M}_+$. The temperature above is exactly $\beta=\hbar/(k_BT)$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{M}_-$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{M}_+$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
 
 ## What the Framework Carries and What It Imports
 
@@ -213,7 +213,7 @@ and records two algebraic facts that this article uses unchanged: the imaginary 
 - *The field lives in $\mathbb{M}_-$.* The quantized scalar field and its four-vector kinematics are material-sector objects: a mode is a function on spacetime valued in $\mathbb{M}_-$, and its wave equation is that sector's Klein–Gordon equation. The in and out modes are material-sector modes; the Bogoliubov coefficients that mix them are ordinary complex numbers, not elements of $\mathbb{B}$.
 - *The modular generator is in $\mathbb{M}_+$.* The horizon flow's Hamiltonian is represented, as in the sibling article, by a Hermitian element of the informational sector. For a boost in the $\vec e_x$ direction the generator is $G_1=i\vec e_x\in\mathbb{M}_+$, and its action on $\mathbb{M}_-$ is the **two-sided** rotor conjugation $G_1\tilde{Q}+\tilde{Q}G_1$, not the commutator $[G_1,\tilde{Q}]$, which for a Hermitian generator is a rotation and not a boost. This is *Curved Spacetime and the Biquaternion Framework*'s caution, and it is load-bearing at the horizon: the boost is the flow that the thermal statement refers to.
 - *The local light cone is the zero-divisor cone.* At each point of the horizon, the local null directions are the zero divisors of that point's copy of $\mathbb{M}_-$; the horizon's tangent null surface is the zero-divisor cone of the tangent space. This is a local, pointwise statement. The horizon as a global surface is not an object of the pointwise algebra; the sibling article's identification of the *Rindler* horizon with the zero-divisor cone is available here only in the near-horizon approximation, where the geometry is Rindler.
-- *The imaginary time is intrinsic.* The Euclidean continuation $t'\to-it'$ that makes the thermal period manifest is a continuation along the $ict'$ direction of $\mathbb{M}_-$, the same direction in which the parent's KMS strip extends. The framework does not perform the continuation; it is the sector in which the continuation is natural.
+- *The imaginary time is intrinsic.* The Euclidean continuation $t'\to-it'$ that makes the thermal period manifest is a continuation along the $i c r'_t$ direction of $\mathbb{M}_-$, the same direction in which the parent's KMS strip extends. The framework does not perform the continuation; it is the sector in which the continuation is natural.
 
 **What it imports.**
 
@@ -441,7 +441,7 @@ $$
 
 in agreement with the surface-gravity route. The two computations are independent: one differentiates the metric function on the horizon, the other asks for the periodicity of the Euclidean section; that they agree is a check on the whole construction and not a restatement.
 
-This is also the point where the framework's intrinsic imaginary time does real work. The circumference $\beta$ is a period along the **imaginary time direction of $\mathbb{M}_-$**, the direction of the $ict'$ coefficient; the parent's KMS strip has width $\beta=\hbar/(k_BT)$, and the Euclidean regularity condition fixes that width from the metric alone. The framework does not produce the periodicity, but it is the sector in which the periodicity is expressed as a geometric property of the material coordinate rather than as an analytic continuation introduced by hand. This was checked on the explicit near-horizon expansion: $f=\rho^2/(4r_s^2)$ and the coefficient $c\tau/(2r_s)$ reproduce $\beta=8\pi GM/c^3=2\pi c/\kappa$ exactly.
+This is also the point where the framework's intrinsic imaginary time does real work. The circumference $\beta$ is a period along the **imaginary time direction of $\mathbb{M}_-$**, the direction of the $i c r'_t$ coefficient; the parent's KMS strip has width $\beta=\hbar/(k_BT)$, and the Euclidean regularity condition fixes that width from the metric alone. The framework does not produce the periodicity, but it is the sector in which the periodicity is expressed as a geometric property of the material coordinate rather than as an analytic continuation introduced by hand. This was checked on the explicit near-horizon expansion: $f=\rho^2/(4r_s^2)$ and the coefficient $c\tau/(2r_s)$ reproduce $\beta=8\pi GM/c^3=2\pi c/\kappa$ exactly.
 
 ### Independent Check: the Mass Scaling
 
@@ -479,7 +479,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 
 **Established (algebra).**
 
-- The material sector $\mathbb{M}_-$ with intrinsic imaginary time $ict'$, and its zero-divisor cone as the local light cone.
+- The material sector $\mathbb{M}_-$ with intrinsic imaginary time $i c r'_t$, and its zero-divisor cone as the local light cone.
 - The modular Hamiltonian $K=-\log\Delta$ as a Hermitian element of $\mathbb{M}_+$, and the two-sided action of the boost generator $i\vec e_x$ on $\mathbb{M}_-$.
 - The single fermionic mode and its parity grading in $\mathbb{B}$, which supplies the two-valued occupation underlying the fermionic geometric sum.
 
@@ -534,8 +534,8 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
-| $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}$ | Biquaternion norm, $-c^2{t'}^2+x^2+y^2+z^2$ |
+| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
+| $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}$ | Biquaternion norm, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $M$ | Black-hole mass |
 | $r_s=2GM/c^2$ | Schwarzschild radius |

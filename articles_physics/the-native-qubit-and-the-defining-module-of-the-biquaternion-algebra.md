@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the normalised Hermitian form $\langle\tilde H_1,\tilde H_2\rangle_{*}/\langle\tilde H_1,e_t\rangle_{*}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
+The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the normalised Hermitian form $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}/\langle\tilde{R}_{\psi,1},e_t\rangle_{*}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
 
 The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$; the rank-one projectors on $S$ correspond exactly to the idempotents of $\mathbb{M}_+$ that are normalised by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ (trace one in the image); and the inner product that quantum physics requires is the algebra's own Hermitian form, whose matrix reading is the trace pairing, restricted to the module.
 
@@ -64,10 +64,10 @@ $$
 M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$
 
-so that the Hermitian element $\tilde{H} = h_te_t + i(h_x\vec e_x + h_y\vec e_y + h_z\vec e_z)$ with real $h_\mu$ maps to
+so that the Hermitian element $\tilde R_\psi = h_te_t + i(h_x\vec e_x + h_y\vec e_y + h_z\vec e_z)$ with real $h_\mu$ maps to
 
 $$
-M(\tilde{H}) = \begin{pmatrix} h_t + h_z & h_x - ih_y \\ h_x + ih_y & h_t - h_z \end{pmatrix}
+M(\tilde R_\psi) = \begin{pmatrix} h_t + h_z & h_x - ih_y \\ h_x + ih_y & h_t - h_z \end{pmatrix}
 = h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3 .
 $$
 
@@ -89,7 +89,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$
 
-Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_te_t + i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
+Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde R_\psi = h_te_t + i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
 
 ## The Defining Module
 
@@ -157,19 +157,19 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
 $$
 
-positive exactly when $|\vec r|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \vec r\cdot\boldsymbol{\sigma})$. The **Hermitian form** between a state and an observable $\tilde{H}\in\mathbb{M}_+$ is
+positive exactly when $|\vec r|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \vec r\cdot\boldsymbol{\sigma})$. The **Hermitian form** between a state and an observable $\tilde R_\psi\in\mathbb{M}_+$ is
 
 $$
-\langle\tilde{Ϛ},\tilde{H}\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*}),
+\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*}),
 $$
 
-and the Born weight is $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. For a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
+and the Born weight is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. For a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
 
 $$
-\boxed{\;\frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
+\boxed{\;\frac{\langle\tilde\Pi,\tilde R_\psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
 $$
 
-where $H$ is the matrix image of $\tilde{H}$. On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The normalisation is $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$; the trace appears only as its $2\times2$ reading, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
+where $H$ is the matrix image of $\tilde R_\psi$. On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde R_\psi)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The normalisation is $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$; the trace appears only as its $2\times2$ reading, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = \langle u|H|u\rangle$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
 
 ### Mixed states and the density-operator correspondence
 
@@ -192,13 +192,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
 $$
 
-On $\mathbb{M}_+$, writing $\tilde{H} = h_te_t + i\vec h$ with real $h_t,\vec h$, it evaluates to
+On $\mathbb{M}_+$, writing $\tilde R_\psi = h_te_t + i\vec h$ with real $h_t,\vec h$, it evaluates to
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \bigl(h_t^2 - |\vec h|^2\bigr)e_t ,
+\langle\tilde R_\psi\rangle_{\natural} = \bigl(h_t^2 - |\vec h|^2\bigr)e_t ,
 $$
 
-which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{H}\rangle_{\natural} = \det M(\tilde{H})\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state
+which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde R_\psi\rangle_{\natural} = \det M(\tilde R_\psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state
 
 $$
 \boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.
@@ -229,7 +229,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state;
 - **The carrier is forced, not chosen.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^2$, so the elementary informational unit is two-dimensional over $\mathbb{C}$ and is read off the algebra.
 - **The inner product is native.** The Hilbert-space inner product on $S$ is the Hermitian form of the algebra, whose $2\times2$ reading is the trace, $\langle u|v\rangle = 2\,\mathrm{Sc}(|v\rangle\langle u|)=\mathrm{Tr}(|v\rangle\langle u|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{M}_+$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
-- **The Born rule is a module pairing.** The normalised Hermitian form and the module expectation value are the same operation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$, with the trace used only to normalise the state.
+- **The Born rule is a module pairing.** The normalised Hermitian form and the module expectation value are the same operation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = \langle u|H|u\rangle$, with the trace used only to normalise the state.
 - **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the normalised positive slice of $\mathbb{M}_+$ (trace one in the image), its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.
 
 **What it does not supply.**
@@ -245,7 +245,7 @@ The first of the open questions below can be given a partial answer, and the ans
 
 ### The amplitude array and its determinant
 
-A two-qubit state vector is $|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{A_1,A_2}c_{A_1A_2}|A_1A_2\rangle$ with $A_1,A_2\in\{0,1\}$. Its four amplitudes form the array $\mathbf c=(c_{A_1A_2})$, and the linear isomorphism $\mathbb{C}^2\otimes\mathbb{C}^2\to\mathrm{End}(\mathbb{C}^2)$ sends $|u\rangle\otimes|v\rangle$ to the rank-one operator $|u\rangle\langle v|$. The determinant of the array,
+A two-qubit state vector is $|\tilde{Ξ}^{\mathrm{sp}}\rangle=\sum_{A_1,A_2}c_{A_1A_2}|A_1A_2\rangle$ with $A_1,A_2\in\{0,1\}$. Its four amplitudes form the array $\mathbf c=(c_{A_1A_2})$, and the linear isomorphism $\mathbb{C}^2\otimes\mathbb{C}^2\to\mathrm{End}(\mathbb{C}^2)$ sends $|u\rangle\otimes|v\rangle$ to the rank-one operator $|u\rangle\langle v|$. The determinant of the array,
 
 $$
 \mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10},
@@ -253,7 +253,7 @@ $$
 
 is the **hyperdeterminant of format $2\times2$**, the generator of the polynomial invariants of $\mathbb{C}^2\otimes\mathbb{C}^2$ under the local group $SL(2,\mathbb{C})\times SL(2,\mathbb{C})$.
 
-**Proposition (separability is the rank-one condition).** $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is a product $|u\rangle\otimes|v\rangle$ if and only if $\operatorname{rank}\mathbf c=1$, if and only if $\mathrm{Det}(\mathbf c)=0$.
+**Proposition (separability is the rank-one condition).** $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a product $|u\rangle\otimes|v\rangle$ if and only if $\operatorname{rank}\mathbf c=1$, if and only if $\mathrm{Det}(\mathbf c)=0$.
 
 **Proof.** A product gives $\mathbf c=|u\rangle\langle v|$, of rank one. Conversely an array of rank one is $|u\rangle\langle v|$ for a nonzero column $|u\rangle$ and a nonzero row $\langle v|$, and the corresponding vector is $|u\rangle\otimes|v\rangle$. An array has rank at most one exactly when its $2\times2$ minor vanishes, and there is one minor.
 
@@ -315,7 +315,7 @@ The module question is settled by the algebra; the composition question is not. 
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})=2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde R_\psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})=2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive. The composition can be tested, and the test is negative in a precise sense. The array of amplitudes of a two-qubit state is a $2\times2$ matrix whose hyperdeterminant $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ vanishes exactly on the product states and whose modulus, normalised, is the concurrence; the product states are the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$, and the maximally entangled states are a copy of $\mathbb{RP}^3$. The hyperdeterminant is not the biquaternion norm of anything, the two quadratic forms on the four coefficients are not related by an automorphism of the algebra, and the rank and the determinant of $\mathsf M_2$ do not track separability at all: the matrix image of $|00\rangle$ is the identity. The carrier is native, the composition is not, and the difference is a named invariant rather than a vague reservation.
 
@@ -335,7 +335,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\langle\tilde\Pi,\tilde H\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
+| $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
 | $r_k = 2\langle\tilde{Ϛ},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\mathbf c=(c_{A_1A_2})$ | Amplitude array of a two-qubit state, the $2\times2$ matrix of the four amplitudes |

@@ -6,13 +6,13 @@ An **electric dipole moment** (EDM) is a permanent electric dipole along the spi
 
 $$
 \mathcal{L}_{\mathrm{EDM}}
-= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x
-\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_z\bigr)\vec e_x,
+= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x
+\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr)\vec e_x,
 \qquad
 H_{\mathrm{NR}} = -\,d\sum_k E_k\,i\vec e_k ,
 $$
 
-where $\tilde{Ξ}^{\mathrm{spn}}$ is a field of the biquaternion algebra $\mathbb{B}$, $d$ is the EDM, the three $\vec e_k$ are the spatial units of the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, and $i\vec e_k$ is twice the spin of *Special Element Conventions*, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, the element that the magnetic and electric dipole couplings multiply by. The coefficient has the dimensions of charge times length, it is the canonical **CP-odd** observable of a spin-$\tfrac12$ system, and its measurement is a search for physics beyond the Standard Model: its present bounds are among the tightest in particle physics.
+where $\tilde{Ξ}^{\mathrm{sp}}$ is a field of the biquaternion algebra $\mathbb{B}$, $d$ is the EDM, the three $\vec e_k$ are the spatial units of the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, and $i\vec e_k$ is twice the spin of *Special Element Conventions*, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, the element that the magnetic and electric dipole couplings multiply by. The coefficient has the dimensions of charge times length, it is the canonical **CP-odd** observable of a spin-$\tfrac12$ system, and its measurement is a search for physics beyond the Standard Model: its present bounds are among the tightest in particle physics.
 
 **The insertion is an element.** Every interaction of this article multiplies the field by an element of the algebra, and that element is the whole of the structure. An action that multiplies by $a$ on the left has the adjoint that multiplies by $a^{*}$ on the left, so the Hermiticity of the interaction is the class of one element under the star: the EDM insertion multiplies by $-\vec e_k$, the magnetic insertion multiplies by $i\vec e_k$, the spatial unit is anti-Hermitian and $i\vec e_k$ is Hermitian, and the two insertions therefore lie on opposite sides of the framework's split. The other two insertions of the article carry a right factor as well, $\vec e_z$, and the classes of the two factors under the star decide their class by the same rule.
 
@@ -40,11 +40,11 @@ so that $\varepsilon_0=+1$ and $\varepsilon_k=-1$. The weight $\varepsilon_\rho$
 **The two Dirac equations.** The mass is the linear Dirac pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
 $$
 
 $$
-\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
 and the two displays are two equations, not one. Each is one-sided — the algebra acts by left multiplication on the field — and the pair is the chirality split of a single operator: the left-handed equation and the right-handed equation, coupled by the mass. The second member uses the conjugate gradient $\tilde{\nabla}^{\natural}$, a different element of the algebra; it is not the conjugate of the field, and the antilinear real structure $\flat=-{}^{*}$ is a third object, separate from both.
@@ -65,8 +65,8 @@ The framework results used here are those of the companion articles:
 
 $$
 \mathcal{L}_{\mathrm{EDM}}
-= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x
-\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_z\bigr)\vec e_x ,
+= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x
+\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr)\vec e_x ,
 $$
 
 and its nonrelativistic limit is the Hamiltonian
@@ -188,7 +188,7 @@ $$
 
 The scalar $i$ and the element $i\vec e_k$ are different objects: $i$ is central and anti-Hermitian, $i\vec e_k$ is not central and is Hermitian, and the product $i\,(i\vec e_k)=-\vec e_k$ is what carries one sector into the other.
 
-**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\tilde{Ξ}^{\mathrm{spn}*}i(-\vec e_k\tilde{Ξ}^{\mathrm{spn}})\vec e_x$ is anti-Hermitian as a classical bilinear, and the Lagrangian density is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
+**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\tilde{Ξ}^{\mathrm{sp}*}i(-\vec e_k\tilde{Ξ}^{\mathrm{sp}})\vec e_x$ is anti-Hermitian as a classical bilinear, and the Lagrangian density is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
 
 ## The Nonrelativistic Reduction
 
@@ -215,15 +215,15 @@ The element $i\vec e_k$ is twice the spin of *Special Element Conventions*, $\ti
 **The factor of two and the sign.** The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,k)$ and as $(k,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0k}=E_k$ the Lagrangian therefore contains
 
 $$
-\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\mathcal{O}_{0k}\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x
-= -\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(-\,\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x .
+\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\mathcal{O}_{0k}\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x
+= -\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(-\,\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x .
 $$
 
 Since $-\vec e_k=i(i\vec e_k)$ and $(-i)(i)=+1$, the insertion's minus and the coupling's $i$ spend to a plus, and the same term reads with the spin,
 
 $$
--\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(-\,\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x
-= +\,d\,E_k\,\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl((i\vec e_k)\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x .
+-\,i\,d\,E_k\,\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(-\,\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x
+= +\,d\,E_k\,\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl((i\vec e_k)\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x .
 $$
 
 For a positive-energy field normalized to one the bilinear is the spin density, the expectation of the spin $i\vec e_k$ on the field, whose two values are $\pm1$, so
@@ -245,26 +245,26 @@ the stated nonrelativistic limit. The chain is a derivation of the limit from th
 **The bilinears.** The sixteen bilinears fall into five shapes — scalar, vector, tensor, axial vector, pseudoscalar — and the chirality cell pairs the two that carry one free index and the two that carry two: the vector with the axial vector, the tensor with the pseudotensor. The four that enter here are
 
 $$
-\text{(vector)}\ \tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(i\,e_\mu\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_{\nu(\mu)}\bigr)\vec e_x,\qquad
-\text{(tensor)}\ \tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x,
+\text{(vector)}\ \tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\bigr)\vec e_x,\qquad
+\text{(tensor)}\ \tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x,
 $$
 
 $$
-\text{(axial)}\ \tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(i\,e_\mu\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_{\nu(\mu)}\vec e_z\bigr)\vec e_x,\qquad
-\text{(pseudotensor)}\ \tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x .
+\text{(axial)}\ \tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\vec e_z\bigr)\vec e_x,\qquad
+\text{(pseudotensor)}\ \tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x .
 $$
 
 Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\nu(\mu)}$ that *Matrix Representations Conventions* attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
-| $\tilde{Ξ}^{\mathrm{spn}*}i(i e_\mu\tilde{Ξ}^{\mathrm{spn}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
-| $\tilde{Ξ}^{\mathrm{spn}*}i(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}})\vec e_x\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\mathcal{G}_{ij}$, Hermitian |
-| $i\,\tilde{Ξ}^{\mathrm{spn}*}i(\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0k}$, anti-Hermitian |
+| $\tilde{Ξ}^{\mathrm{sp}*}i(i e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
+| $\tilde{Ξ}^{\mathrm{sp}*}i(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\mathcal{G}_{ij}$, Hermitian |
+| $i\,\tilde{Ξ}^{\mathrm{sp}*}i(\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0k}$, anti-Hermitian |
 
 The EDM is the pseudotensor bilinear, the tensor times the chirality cell, and the table is the parity bookkeeping of the Hodge duality: the chirality cell is what flips the parity and the CP character, and the factor $i$ that accompanies it is what keeps the Hermiticity class.
 
-**Two operators, not four.** The list has two entries because the tensor and the pseudotensor are duals, not independent: the EDM insertion is $i$ times the dual of the tensor, and contracting a dual bivector with $F$ is the same as contracting the bivector with the dual of $F$. A Hermitian Lagrangian therefore carries two dimension-five couplings of different parity, and both coefficients are real: $\frac{1}{2}\mu\,\tilde{Ξ}^{\mathrm{spn}*}i(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}})\vec e_xF_{\mu\nu}$ and $\frac{1}{2}d\,\tilde{Ξ}^{\mathrm{spn}*}i\bigl(\mathcal{D}(\mathcal{G}_{\mu\nu})\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_xF_{\mu\nu}$. Written with the chirality cell instead of the dual, the second is $-i\,d$ times the insertion built on the bivector, and the $i$ of that writing is the duality's, not a separate phase. The other two combinations of bilinear and field are their conjugates. This is why the EDM is *the* CP-odd electromagnetic observable at this order, and why its bound is the sharpest test of new CP violation in the fermion sector. The anapole and the charge-radius terms join the list one dimension higher, are CP-even, and are not dipole moments.
+**Two operators, not four.** The list has two entries because the tensor and the pseudotensor are duals, not independent: the EDM insertion is $i$ times the dual of the tensor, and contracting a dual bivector with $F$ is the same as contracting the bivector with the dual of $F$. A Hermitian Lagrangian therefore carries two dimension-five couplings of different parity, and both coefficients are real: $\frac{1}{2}\mu\,\tilde{Ξ}^{\mathrm{sp}*}i(\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}})\vec e_xF_{\mu\nu}$ and $\frac{1}{2}d\,\tilde{Ξ}^{\mathrm{sp}*}i\bigl(\mathcal{D}(\mathcal{G}_{\mu\nu})\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_xF_{\mu\nu}$. Written with the chirality cell instead of the dual, the second is $-i\,d$ times the insertion built on the bivector, and the $i$ of that writing is the duality's, not a separate phase. The other two combinations of bilinear and field are their conjugates. This is why the EDM is *the* CP-odd electromagnetic observable at this order, and why its bound is the sharpest test of new CP violation in the fermion sector. The anapole and the charge-radius terms join the list one dimension higher, are CP-even, and are not dipole moments.
 
 **The framework's real structure and CP.** The framework's conjugation enters the bilinears through the real structure of the algebra: a CP transformation is a charge conjugation accompanied by a parity reflection, and it uses the antilinear real structure. The EDM's bilinear is the one that changes sign under this operation, and the coefficient that keeps the action invariant is the real number $d$ on the dual insertion, which is $-i\,d$ on the chirality-cell one. The framework statement is therefore precise: the EDM is the coefficient of a CP-odd, anti-Hermitian, material-sector bilinear, and its measurement is the measurement of a central imaginary's coupling to the spin.
 
@@ -273,10 +273,10 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality cell, and t
 **The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p_2-p_1$, is
 
 $$
-\Gamma_\mu(p_2,p_1)\,\tilde{Ξ}^{\mathrm{spn}}
-= i\,e_\mu\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
-+ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\,F_2(k^2)
-+ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\,F_3(k^2) + \cdots ,
+\Gamma_\mu(p_2,p_1)\,\tilde{Ξ}^{\mathrm{sp}}
+= i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
++ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\,F_2(k^2)
++ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\,F_3(k^2) + \cdots ,
 $$
 
 with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,
@@ -384,7 +384,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
@@ -460,8 +460,8 @@ The electric dipole moment is the CP-odd, dimension-five coupling of a spin-$\tf
 
 $$
 \mathcal{L}_{\mathrm{EDM}}
-= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\bigr)\vec e_x
-\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{spn}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_z\bigr)\vec e_x,
+= i\,d\sum_k E_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\bigr)\vec e_x
+\;+\; i\,d\sum_k B_k\;\tilde{Ξ}^{\mathrm{sp}*}i\,\bigl(\vec e_k\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr)\vec e_x,
 \qquad
 H_{\mathrm{NR}} = -\,d\sum_k E_k\,i\vec e_k .
 $$
@@ -482,10 +482,10 @@ and the sign is the product of the cell's involution with $(-i)^2=-1$, verified 
 The form-factor decomposition
 
 $$
-\Gamma_\mu(p_2,p_1)\,\tilde{Ξ}^{\mathrm{spn}}
-= i\,e_\mu\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_{\nu(\mu)}\,F_1
-+ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\,F_2
-+ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}\,F_3 + \cdots
+\Gamma_\mu(p_2,p_1)\,\tilde{Ξ}^{\mathrm{sp}}
+= i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1
++ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\,F_2
++ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}\,F_3 + \cdots
 $$
 
 exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta^{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.
@@ -508,7 +508,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $\mathcal{O}_{\mu\nu}=i\,\mathcal{D}(\mathcal{G}_{\mu\nu})$ | The EDM insertion as $i$ times the dual of the bivector; on the timelike pair, $i\,(i\vec e_k)=-\vec e_k$ |
 | $\varepsilon_\rho$ | The plain weight of *Frame and Metric Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ | The field strength components |
-| $\mathcal{L}_{\mathrm{EDM}}=i\,d\sum_kE_k\tilde{Ξ}^{\mathrm{spn}*}i(\vec e_k\tilde{Ξ}^{\mathrm{spn}})\vec e_x + i\,d\sum_kB_k\tilde{Ξ}^{\mathrm{spn}*}i(\vec e_k\tilde{Ξ}^{\mathrm{spn}}\vec e_z)\vec e_x$ | EDM Lagrangian |
+| $\mathcal{L}_{\mathrm{EDM}}=i\,d\sum_kE_k\tilde{Ξ}^{\mathrm{sp}*}i(\vec e_k\tilde{Ξ}^{\mathrm{sp}})\vec e_x + i\,d\sum_kB_k\tilde{Ξ}^{\mathrm{sp}*}i(\vec e_k\tilde{Ξ}^{\mathrm{sp}}\vec e_z)\vec e_x$ | EDM Lagrangian |
 | $H_{\mathrm{NR}}=-d\sum_kE_k\,i\vec e_k$ | EDM nonrelativistic Hamiltonian |
 | $F_1,F_2,F_3$ | Charge, anomalous magnetic moment, EDM form factors |
 | $d=\tfrac{e}{2m}F_3(0)$, $\mu=\tfrac{e}{2m}(1+F_2(0))$ | EDM and magnetic moment |

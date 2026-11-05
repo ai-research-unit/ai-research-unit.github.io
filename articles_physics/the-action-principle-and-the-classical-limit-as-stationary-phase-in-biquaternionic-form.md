@@ -33,14 +33,14 @@ Because $\mathrm{Lag}$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\math
 
 ### The Domain of the Principle: Discrete and Continuous
 
-The statement is written for a finite list of coordinates, and this article uses it that way throughout. Nothing in it requires a finite list. A deformable body, or a field, has infinitely many degrees of freedom: its state is a function of position and time rather than a finite tuple $q(t')$, and the Lagrangian is replaced by a **density** $\mathcal{L}$, the action becoming $S=\int\mathcal{L}\,d^3x\,dt'$. The stationarity statement is unchanged, and its Euler–Lagrange equations are field equations rather than ordinary differential equations. In the biquaternion formulation the configuration is then an algebra-valued field $\tilde q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ and the action a spacetime integral of a central-valued density, which is the form the companion articles *The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form* use.
+The statement is written for a finite list of coordinates, and this article uses it that way throughout. Nothing in it requires a finite list. A deformable body, or a field, has infinitely many degrees of freedom: its state is a function of position and time rather than a finite tuple $q(t')$, and the Lagrangian is replaced by a **density** $\mathcal{L}$, the action becoming $S=\int\mathcal{L}\,d^3x\,dt'$. The stationarity statement is unchanged, and its Euler–Lagrange equations are field equations rather than ordinary differential equations. In the biquaternion formulation the configuration is then an algebra-valued field $\tilde q(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$ and the action a spacetime integral of a central-valued density, which is the form the companion articles *The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form* use.
 
 For a string of density $\rho$ and tension $\mathcal{T}$ with displacement $u(x,t')$, the action is
 $$
 S=\tfrac12\iint\left[\rho\left(\partial u/\partial t'\right)^2-\mathcal{T}\left(\partial u/\partial x\right)^2\right]dx\,dt',\qquad c^2=\mathcal{T}/\rho ,
 $$
 
-the first variation is $2\times10^{-10}$ at a solution of the wave equation $\partial^2 u/\partial {t'}^2=c^2\,\partial^2 u/\partial x^2$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation. The Hamiltonian side of the same field action — the conjugate momentum field, the Hamiltonian density as the energy density, the bracket on functionals and the continuity equation for the energy flux — is developed in the companion article *Hamiltonian Field Theory in Biquaternionic Form*, which extends the Legendre transform, the bracket and the conservation law of the preceding article from a finite list of coordinates to a density.
+the first variation is $2\times10^{-10}$ at a solution of the wave equation $\partial^2 u/\partial {r'_{t}}^2=c^2\,\partial^2 u/\partial x^2$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation. The Hamiltonian side of the same field action — the conjugate momentum field, the Hamiltonian density as the energy density, the bracket on functionals and the continuity equation for the energy flux — is developed in the companion article *Hamiltonian Field Theory in Biquaternionic Form*, which extends the Legendre transform, the bracket and the conservation law of the preceding article from a finite list of coordinates to a density.
 
 The statement is also independent of the coordinates in which it is written, which is what allows the coordinates to be generalized away altogether. Newton's law is recovered from a variational statement, in coordinates in which it is not obvious; the form of the statement, not the coordinates, is what carries the physics.
 
@@ -54,7 +54,7 @@ $$
 L_t=\exp(\gamma t')\left(\tfrac12\left(dq/dt'\right)^{2}-\tfrac12\omega_0^2q^2\right),
 $$
 
-whose Euler–Lagrange equation is $d^2q/d{t'}^2+\gamma\,dq/dt'+\omega_0^2q=0$, verified to $1.3\times10^{-9}$ along the damped motion. The price is that $L_t$ is neither $T-V$ nor invariant under time translation, so the quantity it would call the energy is not conserved. The plain framework can be made to hold, but it stops being one in which energy means what it meant.
+whose Euler–Lagrange equation is $d^2q/d{r'_{t}}^2+\gamma\,dq/dt'+\omega_0^2q=0$, verified to $1.3\times10^{-9}$ along the damped motion. The price is that $L_t$ is neither $T-V$ nor invariant under time translation, so the quantity it would call the energy is not conserved. The plain framework can be made to hold, but it stops being one in which energy means what it meant.
 
 **Herglotz's principle** is the systematic alternative, and it changes what the action *is* rather than adding a term to it. The action is defined not by the integral $\int \mathrm{Lag}\,dt'$ but as the solution of the differential equation
 
@@ -75,7 +75,7 @@ $$
 \mathrm{Lag}=\tfrac12\left(dq/dt'\right)^{2}-\tfrac12\omega_0^2q^2-\gamma S,\qquad \,dS/dt'=\mathrm{Lag} ,
 $$
 
-the equation of motion is $d^2q/d{t'}^2+\gamma\,dq/dt'+\omega_0^2q=0$, matching the analytic damped solution to $1.7\times10^{-14}$, while the same $\mathrm{Lag}$ evaluated on the *undamped* motion leaves a residual of $0.30$. The $S$-dependence is what produces the damping, and the check separates the two motions rather than confirming both.
+the equation of motion is $d^2q/d{r'_{t}}^2+\gamma\,dq/dt'+\omega_0^2q=0$, matching the analytic damped solution to $1.7\times10^{-14}$, while the same $\mathrm{Lag}$ evaluated on the *undamped* motion leaves a residual of $0.30$. The $S$-dependence is what produces the damping, and the check separates the two motions rather than confirming both.
 
 **What replaces the energy.** Dissipation does not remove the conservation law; it weights it. For a time-translation symmetry the conserved quantity acquires the exponential of $\int\partial \mathrm{Lag}/\partial S$,
 
@@ -92,7 +92,7 @@ dq_{i}/dt'=\frac{\partial H}{\partial p_i},\qquad
 \,dS/dt'=\sum_ip_i\frac{\partial H}{\partial p_i}-H
 $$
 
-reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $\mathrm{Lag}$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/d{t'}^2+f(q)\left(dq/dt'\right)^{2}+g(t')dq/dt'+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $\mathrm{Lag}=\tfrac12\left(dq/dt'\right)^{2}-[2f(q)dq/dt'+g(t')]S-U(q)$ for the $U$ solving $dU/dq+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
+reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $\mathrm{Lag}$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/d{r'_{t}}^2+f(q)\left(dq/dt'\right)^{2}+g(t')dq/dt'+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $\mathrm{Lag}=\tfrac12\left(dq/dt'\right)^{2}-[2f(q)dq/dt'+g(t')]S-U(q)$ for the $U$ solving $dU/dq+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
 
 ### The First Variation and the Boundary Term
 
@@ -192,16 +192,16 @@ $$
 and $\mathcal{J}$ is the **Jacobi operator** of the problem. For a Lagrangian quadratic in the velocities, $\mathrm{Lag}=\tfrac12 m \langle\,d\tilde q/dt'\rangle_{\natural}-V(\tilde q)$, the Jacobi operator is
 
 $$
-\mathcal{J}\delta\tilde q=-m\,d^2(\delta\tilde q)/d{t'}^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
+\mathcal{J}\delta\tilde q=-m\,d^2(\delta\tilde q)/d{r'_{t}}^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
 $$
 
 and the vanishing of the second variation on a nontrivial field, $\mathcal{J}\,\zeta=0$, is the **Jacobi equation** for the deviation field $\zeta(t')$,
 
 $$
-m\,d^2\zeta/d{t'}^2+\frac{d^2V}{d\tilde q^2}(\tilde q_c)\,\zeta=0 .
+m\,d^2\zeta/d{r'_{t}}^2+\frac{d^2V}{d\tilde q^2}(\tilde q_c)\,\zeta=0 .
 $$
 
-This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t'_2$ at which a nontrivial solution with $\zeta(t'_1)=0$ also satisfies $\zeta(t'_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $\frac{d^2V}{d\tilde q^2}=0$ and the Jacobi equation reduces to $d^2\zeta/d{t'}^2=0$, whose solutions are linear in $t'$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
+This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t'_2$ at which a nontrivial solution with $\zeta(t'_1)=0$ also satisfies $\zeta(t'_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $\frac{d^2V}{d\tilde q^2}=0$ and the Jacobi equation reduces to $d^2\zeta/d{r'_{t}}^2=0$, whose solutions are linear in $t'$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
 
 **Stability.** The sign of the second variation is the classical stability statement: positive for a stable extremum, a change of sign at a conjugate point. Nothing here is quantum; the second variation is the Hessian of a function on a function space, and its degeneracy is the classical Morse-theoretic datum.
 
@@ -215,7 +215,7 @@ $$
 S_0[\tilde q]=\frac{m}{2}\int \langle\,d\tilde q/dt'\rangle_{\natural}\,dt' ,
 $$
 
-is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $d^2\tilde q/d{t'}^2=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{\langle d\tilde q\rangle_{\natural}}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
+is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $d^2\tilde q/d{r'_{t}}^2=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{\langle d\tilde q\rangle_{\natural}}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
 
 The geodesic interpretation has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
@@ -225,7 +225,7 @@ $$
 
 the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dt'=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dt'=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
-The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ has the indefinite norm $\langle\tilde{R}\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=ict'$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
+The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ has the indefinite norm $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=i c r'_t$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
 ### The Rotor Action
 
@@ -240,17 +240,17 @@ the rotational kinetic energy of a body with a single principal moment $\lambda$
 
 $$
 \delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(d\tilde u/dt'\,(\delta\,d\tilde u/dt')^{\natural}\right)dt'
-=-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/d{t'}^2\,(\delta\tilde u)^{\natural}\right)dt'
-=\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{t'}^2\;\delta\vec\theta\right)dt' ,
+=-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/d{r'_{t}}^2\,(\delta\tilde u)^{\natural}\right)dt'
+=\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{r'_{t}}^2\;\delta\vec\theta\right)dt' ,
 $$
 
 using $\delta\tilde u=\tilde u\,\delta\vec\theta$, $(\delta\tilde u)^{\natural}=-\delta\vec\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\vec\theta$ gives
 
 $$
-\mathrm{Ve}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{t'}^2\right)=0 ,
+\mathrm{Ve}\!\left(\tilde u^{\natural}\,d^2\tilde u/d{r'_{t}}^2\right)=0 ,
 $$
 
-the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt'$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt'}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{t'}^2=d\vec\eta/dt'+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt'$ vanishes, and since $\vec\eta$ is pure real for all $t'$ this is $d\vec\eta/dt'=0$. Equivalently, the equation with the constraint is $\frac{d}{dt'}(\tilde u^{\natural}d\tilde u/dt')=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
+the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt'$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt'}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{r'_{t}}^2=d\vec\eta/dt'+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt'$ vanishes, and since $\vec\eta$ is pure real for all $t'$ this is $d\vec\eta/dt'=0$. Equivalently, the equation with the constraint is $\frac{d}{dt'}(\tilde u^{\natural}d\tilde u/dt')=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
 \boxed{\;\tilde u(t')=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b t'\right),\qquad \vec\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-\;},
@@ -300,7 +300,7 @@ Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The
 
 The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and its regularized determinant is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
 
-For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{t'}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi t'/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
+For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{r'_{t}}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi t'/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
 
 $$
 \zeta_{\mathcal J}(s)=\sum_{n\ge1}\lambda_n^{-s}
@@ -354,8 +354,8 @@ The action principle and the classical limit as stationary phase take the follow
 - The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=\langle\tilde p\rangle_{\natural}/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\varpi_2-\varpi_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ has Hamilton's equations as its critical-point equations.
-- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{t'}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\zeta/d{t'}^2+\frac{d^2V}{d\tilde q^2}\,\zeta=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
-- The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dt'$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{t'}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t')=\tilde u(0)\exp(+\tfrac12\vec\omega_bt')$: the free rigid body's motion.
+- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{r'_{t}}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\zeta/d{r'_{t}}^2+\frac{d^2V}{d\tilde q^2}\,\zeta=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
+- The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dt'$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{r'_{t}}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t')=\tilde u(0)\exp(+\tfrac12\vec\omega_bt')$: the free rigid body's motion.
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]/\hbar)$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial t'\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.
 

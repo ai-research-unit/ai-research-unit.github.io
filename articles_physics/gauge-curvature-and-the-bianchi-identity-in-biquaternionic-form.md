@@ -13,7 +13,7 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The identity $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ with $F_{\mu\nu}$ a definite element of the algebra; that the commutator is zeroth order (multiplication); the antisymmetry $F_{\mu\nu}=-F_{\nu\mu}$; the Bianchi identity $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$; its identification with the operator Jacobi identity; and the algebraic Jacobi identity used in the coordinate proof. All were recomputed exactly on $\mathrm{SU}(2)$ with generic non-commuting, position-dependent connections, on all index pairs and all index triples, and on two independent random families. The abelian case was also recomputed, and is reported as *not* evidence.
 - **Scope limitation, reported rather than smoothed over.** The reduction "operator commutator $=$ algebra element" is exact. The stronger interpretation "the curvature *is* a single algebra commutator" is not: $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ contains the exterior-derivative term, which is not a commutator of algebra elements. It is a single commutator of the connection components only when the curl $\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu$ vanishes. This is stated where it arises and carried into the open questions.
-- **Inherited, and not settled here.** The reality class of the connection in the $ict'$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
+- **Inherited, and not settled here.** The reality class of the connection in the $i c r'_t$ direction, and which compact gauge algebra the framework selects, are taken unchanged from the non-abelian article; nothing here resolves them.
 
 ## The Covariant Derivative and the Curvature It Defines
 
@@ -25,10 +25,10 @@ $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
 $$
 D_\mu = \partial/\partial Q_\mu + i\kappa\,\mathcal{A}_\mu, \qquad
-D_\mu\tilde{Ξ}^{\mathrm{spn}} = \partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{spn}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{spn}} ,
+D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}} ,
 \qquad \kappa = \frac{ϙ}{\hbar}.
 $$
-This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $ict'$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
+This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i c r'_t$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
 \mathcal{A}_{\mathrm g,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
@@ -47,7 +47,7 @@ $$
 \qquad
 F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu] \in \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}).
 $$
-Acting on any field, $[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{spn}} = i\kappa\,F_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is **multiplication by an element of the finite-dimensional algebra** $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_\mu,D_\nu](f\tilde{Ξ}^{\mathrm{spn}}) = f\,[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{spn}}$ for an arbitrary scalar function $f$.
+Acting on any field, $[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}} = i\kappa\,F_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}$. The commutator of the two first-order operators is therefore not a second-order operator and not even a first-order one: it has no derivative at all. It is **multiplication by an element of the finite-dimensional algebra** $\mathbb{B}$. This was recomputed exactly on generic non-commuting, position-dependent connections, for all six independent index pairs, with the residual identically zero; and the zeroth-order character was checked separately by verifying $[D_\mu,D_\nu](f\tilde{Ξ}^{\mathrm{sp}}) = f\,[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}}$ for an arbitrary scalar function $f$.
 
 Two immediate properties fix the index structure.
 
@@ -100,7 +100,7 @@ $$
 where on the left $\tilde{Q}$ is understood as multiplication by the algebra element $\tilde{Q}$. The bracket is a **commutator**, $\mathcal{A}_\lambda \tilde{Q} - \tilde{Q}\mathcal{A}_\lambda$: the action is two-sided in the two matrix indices of $\tilde{Q}$, and it cannot be collapsed to a one-sided multiplication. This is the first of the traps this article guards against, and the two actions are genuinely different:
 
 $$
-\underbrace{D_\mu\tilde{Ξ}^{\mathrm{spn}} = \partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{spn}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{spn}}}_{\text{matter field: one-sided (left)}},
+\underbrace{D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial Q_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}}}_{\text{matter field: one-sided (left)}},
 \qquad
 \underbrace{D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa\,[\mathcal{A}_\lambda, \tilde{Q}]}_{\text{adjoint-valued curvature: two-sided}} .
 $$
@@ -213,7 +213,7 @@ The two Jacobi identities are not the same statement. The operator identity is a
 
 Everything above was checked by explicit substitution on $\mathrm{SU}(2)$ with the non-commuting generators $\vec e_x,\vec e_y,\vec e_z$ and the rule $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, on connections with generic real polynomial coefficients in all four components. The following were confirmed.
 
-- **The reduction.** $[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{spn}} = i\kappa F_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}}$ for all six independent index pairs, and the commutator is zeroth order, $[D_\mu,D_\nu](f\tilde{Ξ}^{\mathrm{spn}}) = f[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{spn}}$.
+- **The reduction.** $[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}} = i\kappa F_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}}$ for all six independent index pairs, and the commutator is zeroth order, $[D_\mu,D_\nu](f\tilde{Ξ}^{\mathrm{sp}}) = f[D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}}$.
 - **The Bianchi identity.** The cyclic sum vanishes identically for all $64$ ordered triples, with individual terms of order unity, so the vanishing is a genuine cancellation and not a sum of zeros.
 - **The Jacobi identification.** The operator Jacobi sum equals $i\kappa$ times the Bianchi cyclic sum identically, and the three term classes of the coordinate proof (second derivatives, derivative-of-commutator, nested commutators) each vanish for the stated reason.
 - **The non-vacuity controls.** The wrong cyclic order is generically nonzero; the one-sided replacement $\partial/\partial Q_\lambda F_{\mu\nu}+i\kappa\mathcal{A}_\lambda F_{\mu\nu}$ gives a generically nonzero cyclic sum; and $F_{\mu\nu}$ differs from $i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ for position-dependent connections.
@@ -313,7 +313,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = ϙ/\hbar$ | Coupling |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
-| $\partial/\partial Q_t = -i\partial/\partial t'$ | $ict'$ time derivative |
+| $\partial/\partial Q_t = -i\partial/\partial t'$ | $i c r'_t$ time derivative |
 | $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
 | $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |

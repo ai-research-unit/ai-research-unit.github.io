@@ -4,19 +4,19 @@
 
 The Tomita–Takesaki theory attaches to a cyclic and separating vector $\Omega$ on a von Neumann algebra $M$ a canonical one-parameter group of automorphisms, the **modular flow**
 $$
-\sigma_{t'}(A)=\Delta^{it'}A\Delta^{-it'},
+\sigma_{r'_{t}}(A)=\Delta^{it'}A\Delta^{-it'},
 $$
 built from the modular operator $\Delta=S^*S$ of the Tomita involution $S$. The companion article *The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework* constructs $S$, $\Delta$ and $J$ in the biquaternion algebra $\mathbb{B}$ and verifies the resulting flow identities by recomputation. It records, but does not develop, the **operator that generates the flow**. The present article is about that operator, the **modular Hamiltonian** $\tilde{K}^{\mathrm{mod}}$.
 
 Writing $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$ — equivalently $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ — the modular flow is Hamiltonian evolution under $\tilde{K}^{\mathrm{mod}}$,
 $$
-\sigma_{t'}(\tilde Q_3)=\exp(-i\tilde{K}^{\mathrm{mod}}t')\,\tilde Q_3\,\exp(i\tilde{K}^{\mathrm{mod}}t'),
+\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\tilde{K}^{\mathrm{mod}}t')\,\tilde Q_3\,\exp(i\tilde{K}^{\mathrm{mod}}t'),
 \qquad
-\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3],
+\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3],
 $$
-and the KMS state of *The KMS Condition and the Biquaternion Framework* is the **thermal state of $\tilde{K}^{\mathrm{mod}}$**: the state is Gibbs with respect to the modular Hamiltonian. This is the content of the Takesaki–Winnink theorem, quoted by the modular-theory parent and used here unchanged. The modular Hamiltonian is therefore to the modular flow what the Hamiltonian is to ordinary time evolution, and the two roles can be separated: the physical Hamiltonian $\tilde H$ is what appears in the Gibbs weight, while $\tilde{K}^{\mathrm{mod}}$ is the shifted and rescaled operator whose flow the state is KMS with respect to, $\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ for a Gibbs state.
+and the KMS state of *The KMS Condition and the Biquaternion Framework* is the **thermal state of $\tilde{K}^{\mathrm{mod}}$**: the state is Gibbs with respect to the modular Hamiltonian. This is the content of the Takesaki–Winnink theorem, quoted by the modular-theory parent and used here unchanged. The modular Hamiltonian is therefore to the modular flow what the Hamiltonian is to ordinary time evolution, and the two roles can be separated: the physical Hamiltonian $\tilde R_\psi$ is what appears in the Gibbs weight, while $\tilde{K}^{\mathrm{mod}}$ is the shifted and rescaled operator whose flow the state is KMS with respect to, $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$ for a Gibbs state.
 
-The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\Delta$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde{K}^{\mathrm{mod}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde{K}^{\mathrm{mod}}$ to $\tilde H$. This article does three things the parents do not. It defines $\tilde{K}^{\mathrm{mod}}$ from $\Delta$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\Delta$, and the **strict positivity** of $\Delta$, without which $-\log\Delta$ does not exist. It fixes the **sign convention** in $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$ and holds it, because the sign of $\tilde{K}^{\mathrm{mod}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde{K}^{\mathrm{mod}}$ is a **local** operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).
+The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\Delta$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde{K}^{\mathrm{mod}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde{K}^{\mathrm{mod}}$ to $\tilde R_\psi$. This article does three things the parents do not. It defines $\tilde{K}^{\mathrm{mod}}$ from $\Delta$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\Delta$, and the **strict positivity** of $\Delta$, without which $-\log\Delta$ does not exist. It fixes the **sign convention** in $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$ and holds it, because the sign of $\tilde{K}^{\mathrm{mod}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde{K}^{\mathrm{mod}}$ is a **local** operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).
 
 Three features organize what follows.
 
@@ -44,11 +44,11 @@ Since the logarithm is taken on a positive operator, $\tilde{K}^{\mathrm{mod}}$ 
 $$
 \Delta^{it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t'),
 \qquad
-\sigma_{t'}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t'),
+\sigma_{r'_{t}}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t'),
 \qquad
-\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3].
+\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3].
 $$
-The last identity is the statement that the modular flow is Hamiltonian evolution with generator $\tilde{K}^{\mathrm{mod}}$. The flow is trivial, $\sigma_{t'}=\mathrm{id}$, exactly when $\Delta=1$, i.e. exactly when $\tilde{K}^{\mathrm{mod}}$ is central; in the finite-dimensional model this is the tracial state, as the parent records.
+The last identity is the statement that the modular flow is Hamiltonian evolution with generator $\tilde{K}^{\mathrm{mod}}$. The flow is trivial, $\sigma_{r'_{t}}=\mathrm{id}$, exactly when $\Delta=1$, i.e. exactly when $\tilde{K}^{\mathrm{mod}}$ is central; in the finite-dimensional model this is the tracial state, as the parent records.
 
 ### The Hypotheses Are Inherited, Not Assumed Afresh
 
@@ -62,16 +62,16 @@ $$
 $$
 The kernel of $\Delta$ equals the kernel of $S$, so $\Delta>0$ is again the faithfulness hypothesis: a non-faithful state gives $\Delta$ a zero eigenvalue, and at that eigenvalue $-\log\Delta$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\Delta$ rather than off the vector. Section "Verification: $\tilde{K}^{\mathrm{mod}}$ Generates the Modular Flow" exhibits the failure explicitly.
 
-**Self-adjointness and unitarity.** Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}^{\mathrm{mod}}$; the $*$-unitary group $\exp(-i\tilde{K}^{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is $*$-unitary. The flow $\sigma_{t'}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}^{\mathrm{mod}}$ is the self-adjoint generator of the $*$-unitary group that implements it.
+**Self-adjointness and unitarity.** Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}^{\mathrm{mod}}$; the $*$-unitary group $\exp(-i\tilde{K}^{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is $*$-unitary. The flow $\sigma_{r'_{t}}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}^{\mathrm{mod}}$ is the self-adjoint generator of the $*$-unitary group that implements it.
 
 ### The Sign Convention, Fixed and Held
 
 The relation between $\Delta$ and $\tilde{K}^{\mathrm{mod}}$ is a convention, and the two choices are inequivalent. This article uses
 $$
 \Delta=\exp(-\tilde{K}^{\mathrm{mod}}),\qquad \Delta^{it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t'),\qquad
-\sigma_{t'}(\tilde Q_3)=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t').
+\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t').
 $$
-The opposite choice, $\Delta=\exp(+\tilde{K}^{\mathrm{mod}})$ with $\Delta^{it'}=\exp(+i\tilde{K}^{\mathrm{mod}}t')$, is the same equation with $\tilde{K}^{\mathrm{mod}}\mapsto-\tilde{K}^{\mathrm{mod}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t'}$, not $\sigma_{t'}$, and reversing the sign of $\tilde{K}^{\mathrm{mod}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}=\exp(-\tilde{K}^{\mathrm{mod}})$ and $\sigma_{t'}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\tilde{Ϛ}^{-it'}$, which is the parent's convention; the generator identity $\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it'}=\exp(+i\tilde{K}^{\mathrm{mod}}t')$ together with $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it'}=\Delta^{-it'}$ — and the sign is fixed here once, in the direction above, and held.
+The opposite choice, $\Delta=\exp(+\tilde{K}^{\mathrm{mod}})$ with $\Delta^{it'}=\exp(+i\tilde{K}^{\mathrm{mod}}t')$, is the same equation with $\tilde{K}^{\mathrm{mod}}\mapsto-\tilde{K}^{\mathrm{mod}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t'}$, not $\sigma_{r'_{t}}$, and reversing the sign of $\tilde{K}^{\mathrm{mod}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}=\exp(-\tilde{K}^{\mathrm{mod}})$ and $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\tilde{Ϛ}^{-it'}$, which is the parent's convention; the generator identity $\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_3)|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it'}=\exp(+i\tilde{K}^{\mathrm{mod}}t')$ together with $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it'}=\Delta^{-it'}$ — and the sign is fixed here once, in the direction above, and held.
 
 ### The State Is Thermal with Respect to $\tilde{K}^{\mathrm{mod}}$
 
@@ -85,11 +85,11 @@ $$
 $$
 so the state is the Gibbs state of $\tilde{K}^{\mathrm{mod}}$ at unit temperature. The physical Hamiltonian is recovered by rescaling: for a Gibbs state at inverse temperature $\beta$,
 $$
-\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t,
+\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t,
 \qquad
-Z=\mathrm{Tr}\big(\exp(-\beta\tilde H)\big),
+Z=\mathrm{Tr}\big(\exp(-\beta H)\big),
 $$
-so $\tilde{K}^{\mathrm{mod}}$ differs from $\beta\tilde H$ by the additive scalar $\log Z$ that normalizes the state. The modular Hamiltonian is thus not the physical Hamiltonian; it is the operator whose unit-temperature Gibbs state is the given state, and the normalization $\log Z$ — hence the free energy $F=-\beta^{-1}\log Z$ — is carried by its scalar part.
+so $\tilde{K}^{\mathrm{mod}}$ differs from $\beta\tilde R_\psi$ by the additive scalar $\log Z$ that normalizes the state. The modular Hamiltonian is thus not the physical Hamiltonian; it is the operator whose unit-temperature Gibbs state is the given state, and the normalization $\log Z$ — hence the free energy $F=-\beta^{-1}\log Z$ — is carried by its scalar part.
 
 ## The Modular Hamiltonian in the Biquaternion Algebra
 
@@ -112,7 +112,7 @@ $$
 \qquad
 J(\tilde Q_3)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde Q_3^{*}e^{\tilde K^{\mathrm{mod}}/2},
 \qquad
-\sigma_{t'}(\tilde Q_3)=e^{-it'\tilde K^{\mathrm{mod}}}\tilde Q_3\,e^{it'\tilde K^{\mathrm{mod}}}.
+\sigma_{r'_{t}}(\tilde Q_3)=e^{-it'\tilde K^{\mathrm{mod}}}\tilde Q_3\,e^{it'\tilde K^{\mathrm{mod}}}.
 $$
 Since $\tilde{Ϛ}>0$, its logarithm is defined and
 $$
@@ -182,7 +182,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec r|^2\bi
 $$
 This is the explicit operator: a real scalar part fixed by the determinant of the state, and an imaginary vector part along the Bloch vector, with magnitude the logarithm of the eigenvalue ratio. Two limits are immediate. The tracial state $\vec r=0$ gives $\lambda_+=\lambda_-$, hence
 $$
-\tilde{K}^{\mathrm{mod}}=(\log 2)e_t,\qquad \Delta=1,\qquad \sigma_{t'}=\mathrm{id},
+\tilde{K}^{\mathrm{mod}}=(\log 2)e_t,\qquad \Delta=1,\qquad \sigma_{r'_{t}}=\mathrm{id},
 $$
 the trivial modular flow the parent identifies. A pure state $|\vec r|\to1$ gives $\lambda_-\to0$, so $\det\tilde{Ϛ}\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\Delta$ acquires the eigenvalue $0$, and $-\log\Delta$ does not exist.
 
@@ -226,23 +226,23 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $\Delta$ eigenvalues $\lambda_+/\lambda_-$, $\lambda_-/\lambda_+$ | $3.333849$, $0.299954$, both $>0$ |
 | $\tilde{K}^{\mathrm{mod}}$ Hermitian, components real | $a_0=0.864392$, $\vec a=(-0.335401,-0.447202,0.223601)$ |
 | $a_0=-\tfrac12\log\det\tilde{Ϛ}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
-| $\sigma_{t'}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\tilde{Ϛ}^{-it'}$ equals $\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t')$, 12 random $(\tilde Q_3,t')$ | max error $0$ |
-| $\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
+| $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\tilde{Ϛ}^{-it'}$ equals $\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t')$, 12 random $(\tilde Q_3,t')$ | max error $0$ |
+| $\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_3)|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $\mathrm{Tr}(\exp(-\tilde{K}^{\mathrm{mod}}))=\mathrm{Tr}(\tilde{Ϛ})=1$ | $1.0$ to $10^{-39}$ |
 
-The second state is the single-mode thermal state of the partition-function article, $\tilde H=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
+The second state is the single-mode thermal state of the partition-function article, $\tilde R_\psi=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
-\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t,
+\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t,
 \qquad
 Z=1+\exp(-\beta\omega)=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H=h_te_t+i\vec h$ at inverse temperature $\beta$, the same identity $\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ was checked on the independent data $h_t=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde R_\psi=h_te_t+i\vec h$ at inverse temperature $\beta$, the same identity $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$ was checked on the independent data $h_t=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
 Z=2\exp(-\beta h_t)\cosh(\beta|\vec h|)=1.547753
 $$
-and $\tilde{K}^{\mathrm{mod}}-(\beta\tilde H+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
+and $\tilde{K}^{\mathrm{mod}}-(\beta\tilde R_\psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
 **The failure when positivity is dropped.** If $\tilde{Ϛ}$ is not positive definite — say $\tilde{Ϛ}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde Q_3)=e^{-\tilde K^{\mathrm{mod}}}\tilde Q_3\,e^{\tilde K^{\mathrm{mod}}}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde{K}^{\mathrm{mod}}$ is exactly the hypothesis carried by $\Delta$.
 
@@ -252,7 +252,7 @@ The verification was run on the state that was chosen for its genericity and on 
 
 The plain form, read as the trace formula, inherited from the read list,
 $$
-\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\langle\tilde H_1,\tilde H_2\rangle_{*} = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*}),
+\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*}),
 \qquad
 \mathrm{Tr}(e_t)=2,
 $$
@@ -270,9 +270,9 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$. With $\tilde H=h_te_t+i\vec h$,
+Second, the physical Gibbs form follows by the shift $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$. With $\tilde R_\psi=h_te_t+i\vec h$,
 $$
-Z=\mathrm{Tr}\big(\exp(-\beta\tilde H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)
+Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
 =2\exp(-\beta h_t)\cosh(\beta|\vec h|),
 $$
 and the scalar and vector parts of $\tilde{K}^{\mathrm{mod}}$ have direct thermodynamic interpretations:
@@ -283,7 +283,7 @@ $$
 $$
 the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h$. The trace formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde{K}^{\mathrm{mod}})$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{M}_+$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h)^2=|\vec h|^2e_t$, so $\vec h$ and $e_t$ commute and the exponential splits.
 
-One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta\tilde H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde{K}^{\mathrm{mod}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a^{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
+One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde{K}^{\mathrm{mod}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a^{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
 
 ## Is the Modular Hamiltonian Local?
 
@@ -297,7 +297,7 @@ For a general region $V$ of Minkowski space, the modular Hamiltonian of the vacu
 $$
 \tilde{K}^{\mathrm{mod}}_{V}\ \not\approx\ \int_V f(x)\,\mathcal O(x)\,d^3x ,
 $$
-for any local operator $\mathcal O$ and weight $f$; for a free field it contains bilocal terms, quadratic in the field at two separated points, and the obstruction to removing them is physical rather than technical. Second, and more invariantly, the modular flow $\sigma_{t'}$ of a general region does **not** map $\mathcal A(V)$ to itself: it is not a geometric flow of the region, and an operator localized in $V$ is, under the flow, spread outside it. This is the precise sense in which $\tilde{K}^{\mathrm{mod}}_{V}$ is nonlocal — not that it fails to be an operator, but that it is not tied to the local algebra of $V$ the way a Hamiltonian density is.
+for any local operator $\mathcal O$ and weight $f$; for a free field it contains bilocal terms, quadratic in the field at two separated points, and the obstruction to removing them is physical rather than technical. Second, and more invariantly, the modular flow $\sigma_{r'_{t}}$ of a general region does **not** map $\mathcal A(V)$ to itself: it is not a geometric flow of the region, and an operator localized in $V$ is, under the flow, spread outside it. This is the precise sense in which $\tilde{K}^{\mathrm{mod}}_{V}$ is nonlocal — not that it fails to be an operator, but that it is not tied to the local algebra of $V$ the way a Hamiltonian density is.
 
 The nonlocality is also why the Tomita–Takesaki theory is not a tool for computing a local energy: $\tilde{K}^{\mathrm{mod}}_{V}$ is defined for every region and state, but its content is generally as complicated as the entanglement structure of the state across the boundary of $V$.
 
@@ -338,11 +338,11 @@ $$
 $$
 and the modular flow is the boost by rapidity $2\pi s$ in the modular parameter $s$. The two wedges have opposite orientation: the boost generator whose flow is future-directed on the right wedge is past-directed on the left, so $\tilde{K}^{\mathrm{mod}}_{L}=-\tilde{K}^{\mathrm{mod}}_{R}$ and "the wedge modular Hamiltonian" is wedge-dependent, as the Unruh article records; the norm $|\tilde{K}^{\mathrm{mod}}_{W}|$ is what enters the temperature and is the same for both.
 
-Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde{Q}=iq'_te_t+q_x\vec e_x$ (with $q'_t=ct'$, and the other components untouched),
+Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde{Q}=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=ct'$, and the other components untouched),
 $$
-q'_t\longmapsto q'_t\cosh\theta^{\mathrm{rpd}}-q_x\sinh\theta^{\mathrm{rpd}},
+c r'_t\longmapsto c r'_t\cosh\theta^{\mathrm{rpd}}-r_x\sinh\theta^{\mathrm{rpd}},
 \qquad
-q_x\longmapsto q_x\cosh\theta^{\mathrm{rpd}}-q'_t\sinh\theta^{\mathrm{rpd}},
+r_x\longmapsto r_x\cosh\theta^{\mathrm{rpd}}-c r'_t\sinh\theta^{\mathrm{rpd}},
 \qquad
 \langle\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}.
 $$
@@ -351,10 +351,10 @@ $$
 \frac{d}{d\theta^{\mathrm{rpd}}}\Big(\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\Big)\Big|_{\theta^{\mathrm{rpd}}=0}
 =\tfrac12\{G_1,\tilde{Q}\}=\tfrac12\big(G_1\tilde{Q}+\tilde{Q}G_1\big),
 $$
-and exponentiating this derivation reproduces the finite rotor action, $\exp(\theta^{\mathrm{rpd}}\,\delta_{G_1})\tilde{Q}=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $q_y=q_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
+and exponentiating this derivation reproduces the finite rotor action, $\exp(\theta^{\mathrm{rpd}}\,\delta_{G_1})\tilde{Q}=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $r_y=r_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
 $$
-[G_1,\tilde{Q}]=\big(0,\,0,\,-2i\,q_z,\,2i\,q_y\big)
-\quad\text{for}\quad \tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z .
+[G_1,\tilde{Q}]=\big(0,\,0,\,-2i\,r_z,\,2i\,r_y\big)
+\quad\text{for}\quad \tilde{Q}=ic r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 So the modular Hamiltonian's action here is two-sided, not an inner commutator: writing $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ identifies the algebra element, and the flow it generates on $\mathbb{M}_-$ is the rotor conjugation above. This is the same warning the curved-spacetime and Lorentz-transformation companions give for boosts, and the wedge is a case where it is load-bearing — a reader who generates the flow by $-i[\tilde{K}^{\mathrm{mod}}_{W},\cdot]$ obtains a rotation about $\vec e_x$, not the boost.
 
@@ -371,7 +371,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 
 **Established (recomputed here).**
 
-- $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ is defined by $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$; with this convention $\Delta^{it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')$ and $d\sigma_{t'}/dt'|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
+- $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ is defined by $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$; with this convention $\Delta^{it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')$ and $d\sigma_{r'_{t}}/dt'|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde{K}^{\mathrm{mod}}$ does not exist for a non-faithful one.
 - $\tilde{K}^{\mathrm{mod}}$ generates the same flow as $\Delta^{it'}$: verified symbolically and numerically on a generic rotated state and a thermal state.
 - $\mathrm{Tr}(\exp(-\tilde{K}^{\mathrm{mod}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde{K}^{\mathrm{mod}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h$.
@@ -396,9 +396,9 @@ There is a structural reason the wedge case looks different from the finite-dime
 
 The modular Hamiltonian is the operator that generates the modular flow. Writing $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$, equivalently $\tilde{K}^{\mathrm{mod}}=-\log\Delta$, the flow is Hamiltonian evolution,
 $$
-\sigma_{t'}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3\,\exp(i\tilde{K}^{\mathrm{mod}}t'),
+\sigma_{r'_{t}}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3\,\exp(i\tilde{K}^{\mathrm{mod}}t'),
 \qquad
-\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3],
+\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3],
 $$
 and the KMS state is the thermal state of $\tilde{K}^{\mathrm{mod}}$ at unit temperature. The definition inherits the whole hypothesis of the Tomita–Takesaki construction — $\Omega$ cyclic and separating, equivalently the state faithful — and strict positivity of $\Delta$ is that same hypothesis read off the spectrum: $\Delta=S^*S\ge0$ is automatic, but $-\log\Delta$ exists only when $\Delta>0$, and a non-faithful state leaves an eigenvalue $0$ at which the logarithm diverges. The sign in $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$ is a convention that reverses which flow is KMS; it is fixed here as in the parents and held.
 
@@ -412,7 +412,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde{K}^{\mathrm{mod}}$ generates the same flow as $\Delta^{it'}$, that $\mathrm{Tr}(\exp(-\tilde{K}^{\mathrm{mod}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\langle\tilde H_1,\tilde H_2\rangle_{*} = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde{K}^{\mathrm{mod}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde{K}^{\mathrm{mod}}$ generates the same flow as $\Delta^{it'}$, that $\mathrm{Tr}(\exp(-\tilde{K}^{\mathrm{mod}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde{K}^{\mathrm{mod}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{M}_+$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde{K}^{\mathrm{mod}}_{W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde{K}^{\mathrm{mod}}\in\mathbb{M}_+$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 
@@ -425,12 +425,12 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
-| $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\langle\tilde H_1,\tilde H_2\rangle_{*} = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $S=J\Delta^{1/2}$ | Tomita operator and its polar decomposition |
 | $\Delta=S^*S\ge0$ | Modular operator; $\Delta>0$ iff the state is faithful |
 | $\tilde{K}^{\mathrm{mod}}=-\log\Delta$ | Modular Hamiltonian; $\Delta=\exp(-\tilde{K}^{\mathrm{mod}})$ |
-| $\sigma_{t'}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t')$ | Modular flow |
-| $d\sigma_{t'}/dt'|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ | Generator identity (sign convention fixed here) |
+| $\sigma_{r'_{t}}(\tilde Q_3)=\Delta^{it'}\tilde Q_3\Delta^{-it'}=\exp(-i\tilde{K}^{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}^{\mathrm{mod}}t')$ | Modular flow |
+| $d\sigma_{r'_{t}}/dt'|_{t'=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde Q_3]$ | Generator identity (sign convention fixed here) |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state, positive definite, trace one |
 | $\tilde Q_{\mathrm n}=\tilde{Ϛ}^{1/2}$ | Bracket-normalised Cartan amplitude of the state, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_*=\tfrac12$ |
 | $\tilde K^{\mathrm{mod}}=-2\log\tilde Q_{\mathrm n}$ | Modular Hamiltonian from the amplitude; $\tilde K^{\mathrm{mod}}=-2\log\tilde Q_H+\log(2\langle\tilde Q_H,\tilde Q_H\rangle_*)e_t$ for an unnormalised $\tilde Q_H$ |
@@ -438,7 +438,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}$ |
 | $a_0=-\tfrac12\log\det\tilde{Ϛ}$ | Scalar part of $\tilde{K}^{\mathrm{mod}}$ |
 | $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | Vector part of $\tilde{K}^{\mathrm{mod}}$ |
-| $\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
+| $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
 | $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
@@ -450,7 +450,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 
 - Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde{K}^{\mathrm{mod}}$.
-- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde{K}^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$.
+- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
 - Companion article [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.

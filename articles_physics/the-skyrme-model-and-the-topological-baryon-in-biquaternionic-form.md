@@ -50,7 +50,7 @@ $$
 \tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$
 
-where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to e_t$ as $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
+where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to e_t$ as $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
 **The current.** The Maurer–Cartan form of the companion article is
 
@@ -93,10 +93,10 @@ The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms o
 
 A static soliton in more than two spatial dimensions needs a term of higher order than the kinetic energy, and the reason is a scaling argument.
 
-**Derrick's scaling.** Let $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
+**Derrick's scaling.** Let $\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
 
 $$
-\tilde U_\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde U(\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)) .
+\tilde U_\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde U(\lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) .
 $$
 
 The two-derivative energy scales as
@@ -169,11 +169,11 @@ is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the c
 **The hedgehog reduction.** For a configuration of the **hedgehog** form
 
 $$
-\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \cos F(r)\,e_t + \sin F(r)\,\vec u_r ,
+\tilde U(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \cos F(r)\,e_t + \sin F(r)\,\vec u_r ,
 \qquad
 \vec u_r = \frac{1}{r}\sum_a x_a e_a ,
 \qquad
-r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
+r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| ,
 $$
 
 which is the most general spherically symmetric map with the identity embedded at the origin, the winding-number density is
@@ -284,7 +284,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |
 | $F(0) = \pi$, $F(\infty) = 0$ | Boundary conditions of the unit-charge skyrmion |
 | Wess–Zumino–Witten term | Topological term fixing the soliton's statistics (imported) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 
 ## Further Reading

@@ -152,11 +152,11 @@ form the two combinations
 $$
 Ξ:=\vec E+b\,\vec H,
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}:=\vec E-b\,\vec H,
+\tilde{Ξ}^{\mathrm{sp}}:=\vec E-b\,\vec H,
 \qquad
-\vec E=\tfrac12(Ξ+\tilde{Ξ}^{\mathrm{spn}}),
+\vec E=\tfrac12(Ξ+\tilde{Ξ}^{\mathrm{sp}}),
 \qquad
-\vec H=\frac{1}{2b}(Ξ-\tilde{Ξ}^{\mathrm{spn}}).
+\vec H=\frac{1}{2b}(Ξ-\tilde{Ξ}^{\mathrm{sp}}).
 \tag{10}
 $$
 
@@ -177,11 +177,11 @@ The verification is two lines. The first row of $CN$ is $\bigl(D_3-b\sigma,\ -i\
 $$
 \bigl(D_3-\alpha\bigr)Ξ=0,
 \qquad
-\bigl(D_3+\alpha\bigr)\tilde{Ξ}^{\mathrm{spn}}=0 ,
+\bigl(D_3+\alpha\bigr)\tilde{Ξ}^{\mathrm{sp}}=0 ,
 \tag{12}
 $$
 
-and with sources they read $(D_3-\alpha)Ξ=-\rho/\epsilon+b\,\vec j$ and $(D_3+\alpha)\tilde{Ξ}^{\mathrm{spn}}=-\rho/\epsilon-b\,\vec j$, the pair of scalar equations into which $(7)$ factors.
+and with sources they read $(D_3-\alpha)Ξ=-\rho/\epsilon+b\,\vec j$ and $(D_3+\alpha)\tilde{Ξ}^{\mathrm{sp}}=-\rho/\epsilon-b\,\vec j$, the pair of scalar equations into which $(7)$ factors.
 
 Each of equations $(12)$ is an equation of the shifted or **$\alpha$-hyperholomorphic** type — the class $\ker(D_3\mp\alpha)$ — whose function theory is the subject of *Biquaternion Regular Functions* and its physics companion. The operators $D_3-\alpha$ and $D_3+\alpha$ are the **mutually conjugate** Cauchy–Riemann operators of the paper, and their squares are the scalar Helmholtz operators of opposite sign,
 
@@ -192,7 +192,7 @@ $$
 
 which is $(8)$ seen through the diagonalisation: the two factors multiply to the Helmholtz operator, and each is a square root of it up to the conjugation. The factorisation $(\Delta+\alpha^2)=-(D_3+\alpha)(D_3-\alpha)$ is the three-dimensional case of $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and it is the exact computation that makes the time-harmonic Maxwell system a pair of hyperholomorphic problems.
 
-This gives the paper's central theorem. Because $(11)$ is invertible, the pairs annihilated by $N$ are in bijection with the pairs annihilated by the diagonal operator, that is, with the pairs $(Ξ,\tilde{Ξ}^{\mathrm{spn}})$ whose first component is $\alpha$-hyperholomorphic and whose second is $\alpha$-hyperholomorphic for the conjugate operator:
+This gives the paper's central theorem. Because $(11)$ is invertible, the pairs annihilated by $N$ are in bijection with the pairs annihilated by the diagonal operator, that is, with the pairs $(Ξ,\tilde{Ξ}^{\mathrm{sp}})$ whose first component is $\alpha$-hyperholomorphic and whose second is $\alpha$-hyperholomorphic for the conjugate operator:
 
 $$
 \boxed{\;
@@ -209,10 +209,10 @@ The lossless normalised variables of the chiral article are the special case $\s
 $$
 Ξ\propto\tilde E+i\tilde H,
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}\propto\tilde E-i\tilde H,
+\tilde{Ξ}^{\mathrm{sp}}\propto\tilde E-i\tilde H,
 $$
 
-which are precisely the two circularly polarised combinations $Ξ,\tilde{Ξ}^{\mathrm{spn}}$ of the chiral reduction at $\beta=0$. The Beltrami vector form follows from $(5)$: on a pure vector, $(D_3\mp\alpha)\vec f=0$ is $\mathrm{rot}\,\vec f=\pm\alpha\vec f$ together with the divergence condition, so $(12)$ is the pair of Beltrami equations of the ordinary medium, and the classical vector form is recovered from the quaternionic one. The reformulation is thus the $\beta=0$ case of the chiral reduction of the series, with the function theory attached, and it is the function theory — not the vector form — that is new.
+which are precisely the two circularly polarised combinations $Ξ,\tilde{Ξ}^{\mathrm{sp}}$ of the chiral reduction at $\beta=0$. The Beltrami vector form follows from $(5)$: on a pure vector, $(D_3\mp\alpha)\vec f=0$ is $\mathrm{rot}\,\vec f=\pm\alpha\vec f$ together with the divergence condition, so $(12)$ is the pair of Beltrami equations of the ordinary medium, and the classical vector form is recovered from the quaternionic one. The reformulation is thus the $\beta=0$ case of the chiral reduction of the series, with the function theory attached, and it is the function theory — not the vector form — that is new.
 
 ## The Helmholtz Null-Set as Two Rotated Copies of the Maxwell Null-Set
 
@@ -247,7 +247,7 @@ so that the general solution of the Helmholtz system is the sum of two **rotated
 The time-dependent version of the same decomposition is stated in the book and makes the shape of $(16)$ clear:
 
 $$
-\ker\Bigl(\frac{1}{c^2}\partial^2/\partial {t'}^2-\Delta\Bigr)
+\ker\Bigl(\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
 =\ker\Bigl(\frac{1}{c}\partial/\partial t'+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t'-iD_3\Bigr),
 \tag{17}
 $$
@@ -276,7 +276,7 @@ $$
 \tag{19}
 $$
 
-the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
+the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(4\pi\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
 
 The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,
 
@@ -332,7 +332,7 @@ $$
 
 and the corresponding formula for $\vec H$, which is the **Stratton–Chu formula** of classical electromagnetic theory. The interpretation is the point of the reformulation: the Stratton–Chu formula is the Cauchy integral formula for the electromagnetic field, its kernel is the fundamental solution of the first-order quaternionic operator, and the "source terms" are the Teodorescu transform of the current. The survey of the programme states the interpretation in exactly these words — the Stratton–Chu integrals "in their biquaternionic representation" are "a convolution of a biquaternionic fundamental solution of the Maxwell operator with the electromagnetic field", and their meaning "as a Cauchy integral formula for the electromagnetic field becomes transparent". What the vector form does not show, and what the quaternionic form makes explicit, is that the kernel is a single function rather than a matrix and that the boundary combination is the boundary value of a holomorphic object in a four-component algebra.
 
-The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\vec E,\vec H)$ satisfying $(1)$ in the sourceless case inside $\Omega$ and Hölder boundary values $\vec E_\Gamma=\vec E|_\Gamma$, $\vec H_\Gamma=\vec H|_\Gamma$ — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $Ξ|_\Gamma=\vec E_\Gamma+b\,\vec H_\Gamma$ and $\tilde{Ξ}^{\mathrm{spn}}|_\Gamma=\vec E_\Gamma-b\,\vec H_\Gamma$, the two conditions are
+The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\vec E,\vec H)$ satisfying $(1)$ in the sourceless case inside $\Omega$ and Hölder boundary values $\vec E_\Gamma=\vec E|_\Gamma$, $\vec H_\Gamma=\vec H|_\Gamma$ — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $Ξ|_\Gamma=\vec E_\Gamma+b\,\vec H_\Gamma$ and $\tilde{Ξ}^{\mathrm{sp}}|_\Gamma=\vec E_\Gamma-b\,\vec H_\Gamma$, the two conditions are
 
 $$
 Q_{-\alpha}\bigl(\vec E_\Gamma+b\,\vec H_\Gamma\bigr)=0,
@@ -351,9 +351,9 @@ The note states the same criterion in its announced form — the boundary data a
 For the exterior problem the same representation is closed by the **Silver–Müller radiation condition**,
 
 $$
-\vec E\wedge\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert}+W\,\vec H=o\!\left(\frac{1}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert}\right),
+\vec E\wedge\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}+W\,\vec H=o\!\left(\frac{1}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert}\right),
 \qquad
-\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert\to\infty ,
+\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert\to\infty ,
 \qquad
 W=\sqrt{\frac{\mu}{\epsilon}} ,
 \tag{26}
@@ -398,7 +398,7 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $M$ | Physical time-harmonic Maxwell operator, defined on solenoidal pairs |
 | $b=i\omega\mu/\alpha$ | Coherence factor of the diagonalisation; $b=iZ$ when $\sigma_*=0$ |
 | $C$ | Diagonalising matrix $(11)$; $CNC^{-1}=\mathrm{diag}(D_3-\alpha,D_3+\alpha)$ |
-| $Ξ,\tilde{Ξ}^{\mathrm{spn}}$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
+| $Ξ,\tilde{Ξ}^{\mathrm{sp}}$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
 | $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta+\lambda)I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
 | $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
@@ -418,5 +418,5 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 - V. V. Kravchenko, "Quaternion-valued integral representations of the harmonic electromagnetic and spinor fields", *Doklady Mathematics* **51** (1995), no. 2, 287–289 (translated from *Doklady Akademii Nauk* **341** (1995), no. 5, 603–605), the short announcement of the theory of this article: for the unifying statement that one parametric system is the time-harmonic Maxwell system at one value of its parameter and the time-harmonic Dirac system at another; for the announced form of the boundary-value criterion (its equations $(7)$ and $(8)$) and the comparison with the vector conditions of the geophysical integral theory, which require in addition the differentiability of the tangential components on $\Gamma$; and for the spinor half — the dictionary, the helicity interpretation of the two projectors, and the Cauchy integral formula, Plemelj–Sokhotski formulas and boundary-value criterion for the harmonic spinor field, recorded in *The Dirac Equation in Biquaternionic Form*. The predecessor of the general system is V. V. Kravchenko and M. V. Shapiro, *Doklady Akademii Nauk* **329** (1993), no. 5, 547–549, which the note cites as its reference $[1]$ for the system, the Cauchy-type integral and the three theorems of the parametric theory.
 - K. V. Khmelnytskaya and V. V. Kravchenko, "Biquaternions for analytic and numerical solution of equations of electrodynamics", arXiv:0902.3490v1 [math-ph] (2009), for the survey of the programme and for the interpretation of the Stratton–Chu formulas as a Cauchy integral formula for the electromagnetic field quoted in the section *The Integral Representations of the Field*.
 - V. V. Kravchenko and H. Oviedo, "On a quaternionic reformulation of Maxwell's equations for chiral media and its applications", *Zeitschrift für Analysis und ihre Anwendungen* **22** (2003) 569–589, for the chiral extension $\beta\neq0$ of the diagonalisation, the two wavenumbers and the optical activity, recorded in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*.
-- M. V. Shapiro and N. L. Vasilevski, "Quaternionic $\tilde{Ξ}^{\mathrm{spn}}$-hyperholomorphic functions, singular integral operators and boundary value problems I. $\tilde{Ξ}^{\mathrm{spn}}$-hyperholomorphic function theory", *Complex Variables* **27** (1995) 17–46, for the $\alpha$-hyperholomorphic function theory, its Cauchy kernel, its singular integral operators and the boundary-value problems in the general parameter.
+- M. V. Shapiro and N. L. Vasilevski, "Quaternionic $\tilde{Ξ}^{\mathrm{sp}}$-hyperholomorphic functions, singular integral operators and boundary value problems I. $\tilde{Ξ}^{\mathrm{sp}}$-hyperholomorphic function theory", *Complex Variables* **27** (1995) 17–46, for the $\alpha$-hyperholomorphic function theory, its Cauchy kernel, its singular integral operators and the boundary-value problems in the general parameter.
 - D. Colton and R. Kress, *Inverse Acoustic and Electromagnetic Scattering Theory* (Applied Mathematical Sciences 93, Springer, 1992), for the Stratton–Chu formulas and the boundary integral equations of electromagnetic scattering in their classical vector form.

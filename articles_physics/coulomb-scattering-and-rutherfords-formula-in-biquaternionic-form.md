@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $r$ is the argument of the field.
 
 ## The Coulomb Problem in Biquaternion Form
 
@@ -34,7 +34,7 @@ $$
 H=\left[-\frac{\hbar^2}{2m}\nabla^2+\frac{\alpha}{r}\right]e_t
 $$
 
-is central, so the stationary equation $H\tilde{Ξ}^{\mathrm{spn}}=E\tilde{Ξ}^{\mathrm{spn}}$ reduces to the scalar equation for the envelope, and every stationary state is $\tilde{Ξ}^{\mathrm{spn}}=\xi^{\mathrm{scl}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\xi$ with $\xi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\xi^{\mathrm{scl}}$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.
+is central, so the stationary equation $H\tilde{Ξ}^{\mathrm{sp}}=E\tilde{Ξ}^{\mathrm{sp}}$ reduces to the scalar equation for the envelope, and every stationary state is $\tilde{Ξ}^{\mathrm{sp}}=\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\xi^{\mathrm{scl}}$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.
 
 ### The Coulomb parameter
 
@@ -325,7 +325,7 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2)$ | Momentum transfer |
 | $f_B=-\frac{2m\alpha}{\hbar^2\lvert\vec k_2-\vec k\rvert^2}$ | First Born amplitude |
 | $\frac{d\sigma}{d\Omega}=\frac{\alpha^2}{16E^2\sin^4(\theta/2)}$ | Rutherford cross section |
-| $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
+| $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace convention |
 
 ## Further Reading
 

@@ -69,15 +69,15 @@ These four postulates are the foundation of the theory. Everything else — the 
 A **pure state** is a state that cannot be written as a nontrivial convex combination of two other states. In the density matrix formalism, pure states are rank-one projectors:
 
 $$
-\rho_{\mathrm{spn}} = |\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
 $$
 
-where $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).
+where $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).
 
 Pure states satisfy
 
 $$
-\rho_{\mathrm{spn}}^2 = \rho_{\mathrm{spn}},
+\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}},
 $$
 
 i.e., they are **idempotent**. This is the algebraic characterization of purity: a state is pure if and only if it is idempotent.
@@ -87,10 +87,10 @@ i.e., they are **idempotent**. This is the algebraic characterization of purity:
 A **mixed state** is a state that can be written as a convex combination of pure states:
 
 $$
-\rho = \sum_i p_i\, \rho_{\mathrm{spn}_i}, \qquad p_i \geq 0, \quad \sum_i p_i = 1.
+\rho = \sum_i p_i\, \rho_{\mathrm{sp}_i}, \qquad p_i \geq 0, \quad \sum_i p_i = 1.
 $$
 
-The mixed state describes a statistical ensemble: with probability $p_i$, the system is in the pure state $\rho_{\mathrm{spn}_i}$. The mixture reflects our ignorance of the preparation, not a fundamental indeterminacy.
+The mixed state describes a statistical ensemble: with probability $p_i$, the system is in the pure state $\rho_{\mathrm{sp}_i}$. The mixture reflects our ignorance of the preparation, not a fundamental indeterminacy.
 
 Mixed states are not idempotent: $\rho^2 \neq \rho$. The **purity** of a state is the quantity
 
@@ -167,7 +167,7 @@ Its most famous realization is the **spin-1/2** of an electron, whose spin along
 A **pure state** of a qubit is a unit vector
 
 $$
-|\tilde{Ξ}^{\mathrm{spn}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
+|\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
 $$
 
 where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.
@@ -254,16 +254,16 @@ i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
 
 ### The Schrödinger Picture
 
-In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$, the evolution is governed by the **Schrödinger equation**:
+In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = H\, |\tilde{Ξ}^{\mathrm{spn}}(t')\rangle\;},
+\boxed{\;i\hbar\, \frac{\partial}{\partial t'}|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(t')\rangle\;},
 $$
 
 where $H$ is the Hamiltonian. The solution is
 
 $$
-|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = U(t', t'_0)\, |\tilde{Ξ}^{\mathrm{spn}}(t'_0)\rangle,
+|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = U(t', t'_0)\, |\tilde{Ξ}^{\mathrm{sp}}(t'_0)\rangle,
 $$
 
 with $U(t', t'_0) = \exp\left(-\tfrac{i}{\hbar}H(t' - t'_0)\right)$ for a time-independent Hamiltonian.
@@ -371,7 +371,7 @@ A **pure** state that is **not** a product state is called **entangled**. For mi
 The canonical examples of entangled states are the **Bell states** of two qubits:
 
 $$
-|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{spn}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{sp}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
 $$
 
 These are maximally entangled states. They violate Bell inequalities, and they cannot be written as a convex combination of product states.
@@ -448,7 +448,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 |---|---|
 | $\mathcal{H}$ | Complex Hilbert space of the system |
 | $\rho$ | Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$ |
-| $\rho_{\mathrm{spn}} = \lvert\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}\rvert$ | Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{spn}}^2 = \rho_{\mathrm{spn}}$) |
+| $\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}\rvert$ | Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$) |
 | $\mathrm{Tr}$, $\mathrm{Tr}_B$ | Trace, and partial trace over subsystem $B$ |
 | $A$, $A^\dagger$ | Observable (self-adjoint operator) and its adjoint |
 | $[A,B] = AB - BA$ | Commutator; $A$ and $B$ are compatible if and only if $[A,B] = 0$ |
@@ -458,7 +458,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $U(t',t'_0)$ | $*$-Unitary evolution operator, $U(t'_0,t'_0) = I$ |
 | $H$ | Hamiltonian |
 | $\hbar$ | Reduced Planck constant |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
 | $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
 | $\vec r$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ |
 | $S^2$, $B^3$ | Bloch sphere (pure states) and Bloch ball (all states) |
@@ -466,7 +466,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $K_i$, $Ξ$ | Kraus operators and the channel $Ξ(\rho) = \sum_i K_i \rho K_i^\dagger$ |
 | $\mathcal{H}_A \otimes \mathcal{H}_B$ | Tensor-product space of a bipartite system |
 | $\rho_A = \mathrm{Tr}_B(\rho)$ | Reduced state of subsystem $A$ |
-| $\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{spn}\pm}\rangle$ | Bell states of two qubits |
+| $\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{sp}\pm}\rangle$ | Bell states of two qubits |
 
 ## Further Reading
 

@@ -8,7 +8,7 @@ The physics is standard and the framework's role is once again delimiting. A bac
 
 Three statements organise the article.
 
-1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde Q_5(\tilde R)=\xi(\tilde R)e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
+1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
 2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$; its generator commutes with the $\mathrm{U}(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\vec k}|^2$. The framework's canonical continuous symmetry — the central $\mathrm{U}(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
 3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the biquaternion-norm interpretation of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
 
@@ -27,7 +27,7 @@ The article is organised as follows. The next section sets up the background and
 A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ shifts the mass term. Write the background as a central-valued classical field,
 
 $$
-\tilde Q_5(\tilde R)=\xi(\tilde R)\,e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t\in\mathbb{C}_{\mathbb{B}},
 \qquad
 \mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\xi ,
 $$
@@ -35,19 +35,19 @@ $$
 so that the effective equation of motion is
 
 $$
-\left(\Box-\mu^2-g\,\xi(\tilde R)\right)\tilde{Ξ}=0 .
+\left(\Box-\mu^2-g\,\xi(\tilde R_\varphi)\right)\tilde{Ξ}=0 .
 $$
 
 If the background is **homogeneous**, $\xi=\xi(t')$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
-\xi^{\mathrm{scl}}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+\xi^{\mathrm{scl}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
 
 with the mode functions satisfying
 
 $$
-\boxed{\;d^2u_{\vec k}/d{t'}^2+\omega_{\vec k}^2(t')\,u_{\vec k}=0,
+\boxed{\;d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(t')\,u_{\vec k}=0,
 \qquad
 \omega_{\vec k}^2(t')=\vec k^2+\mu^2+g\,\xi(t')\;}.
 $$
@@ -64,7 +64,7 @@ equivalently $\mu^2+g\,\xi(t')=-\mathrm{Sc}(\langle\tilde P_{\vec k}(t')\rangle_
 
 Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+(\vec k^2+a^2(\eta)\mu^2)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(t')$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
-If the background is not homogeneous, $\xi=\xi(\tilde R)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
+If the background is not homogeneous, $\xi=\xi(\tilde R_\varphi)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
 
 ## In and Out Regions and the Bogoliubov Transformation
 
@@ -249,7 +249,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/d{t'}^2+\omega_{\vec k}^2(t')u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\xi(t')$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\xi=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde Q_5=\xi e_t$ coupling through $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/d{r'_{t}}^2+\omega_{\vec k}^2(t')u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\xi(t')$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\xi=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
 
 The transformation is charge neutral: its generator $G_{\vec k}={a^{\mathrm{fop}}_{\vec k}}^\dagger {b^{\mathrm{fop}}_{-\vec k}}^\dagger-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k}$ commutes with the $\mathrm{U}(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec k}|^2=1/(1+|\beta_{\vec k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\vec k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 

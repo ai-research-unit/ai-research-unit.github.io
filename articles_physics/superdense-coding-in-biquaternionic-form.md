@@ -30,7 +30,7 @@ $$
 The four idempotents correspond to the four Bell states
 
 $$
-|\tilde{Ξ}^{\mathrm{spn}-}\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}^{\mathrm{spn}+}\rangle
+|\tilde{Ξ}^{\mathrm{sp}-}\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}^{\mathrm{sp}+}\rangle
 $$
 
 according to the sign pattern $\epsilon$; the companion article fixes the correspondence. The resource shared by Alice and Bob is one of these, conventionally $\tilde\Pi_{Ξ^+}$.
@@ -72,8 +72,8 @@ Conjugation by $\vec e_k\otimes e_t$ permutes the four Bell idempotents. Explici
 | $\text{operation}$ | $\text{state received by Bob}$ |
 |---|---|
 | $e_t\ \ (I)$ | $\tilde\Pi_{Ξ^+}$ |
-| $\vec e_x\ \ (\sigma_1)$ | $\tilde\Pi_{\mathrm{spn}^+}$ |
-| $\vec e_y\ \ (\sigma_2)$ | $\tilde\Pi_{\mathrm{spn}^-}$ |
+| $\vec e_x\ \ (\sigma_1)$ | $\tilde\Pi_{\mathrm{sp}^+}$ |
+| $\vec e_y\ \ (\sigma_2)$ | $\tilde\Pi_{\mathrm{sp}^-}$ |
 | $\vec e_z\ \ (\sigma_3)$ | $\tilde\Pi_{Ξ^-}$ |
 
 so that the four operations produce the four distinct Bell states, one for each. The map $k\mapsto$ (Bell state) is a bijection of the four-element encoding set onto the four-element Bell basis: the encoding is the **regular action** of the Klein four-group on its own elements, a sharply transitive abelian group of permutations. Each operation acts as an involution, since conjugation by $\vec e_k$ twice is conjugation by the central element $\vec e_k^2 = -e_t$, which is trivial; the codeword is the group element Alice applied.
@@ -83,7 +83,7 @@ so that the four operations produce the four distinct Bell states, one for each.
 The crucial property for decoding is that the four codewords are mutually orthogonal:
 
 $$
-\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{spn}^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{spn}^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{Ξ^-}\bigr) = 0\;},
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{Ξ^-}\bigr) = 0\;},
 $$
 
 and likewise among all pairs, with the diagonal equal to one. Orthogonal states are perfectly distinguishable, so a single measurement on Bob's two qubits can identify the codeword with certainty. This is why the protocol transmits two bits and not merely one: the four codewords live in a four-dimensional space and are orthogonal there, while any four states confined to a single qubit could not be.
@@ -161,7 +161,7 @@ The capacity formula is standard (the Bennett–Shor–Smolin–Thapliyal formul
 
 All the algebraic claims above were verified by direct computation in the tensor-product algebra.
 
-**The four encoded states.** Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}^{\mathrm{spn}+}\rangle$, $\vec e_y\to|\tilde{Ξ}^{\mathrm{spn}-}\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.
+**The four encoded states.** Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}^{\mathrm{sp}+}\rangle$, $\vec e_y\to|\tilde{Ξ}^{\mathrm{sp}-}\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.
 
 **Orthogonality.** The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon,\epsilon_{\mathrm{alt}}}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.
 
@@ -220,7 +220,7 @@ read in the two directions. It is a statement about the tensor-product algebra: 
 Superdense coding transmits two classical bits by sending one qubit, given a shared maximally entangled pair. In the biquaternion framework the resource is a Bell idempotent $\tilde\Pi_{Ξ^+}$ of the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, whose partial traces are both maximally mixed; the encoding is conjugation on one factor by the four unit quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$, i.e. by the Pauli operations $I,\sigma_1,\sigma_2,\sigma_3$ up to central phase, which permute the four Bell idempotents as
 
 $$
-\boxed{\;e_t \to \tilde\Pi_{Ξ^+}, \quad \vec e_x \to \tilde\Pi_{\mathrm{spn}^+}, \quad \vec e_y \to \tilde\Pi_{\mathrm{spn}^-}, \quad \vec e_z \to \tilde\Pi_{Ξ^-} ;\;}
+\boxed{\;e_t \to \tilde\Pi_{Ξ^+}, \quad \vec e_x \to \tilde\Pi_{\mathrm{sp}^+}, \quad \vec e_y \to \tilde\Pi_{\mathrm{sp}^-}, \quad \vec e_z \to \tilde\Pi_{Ξ^-} ;\;}
 $$
 
 and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.

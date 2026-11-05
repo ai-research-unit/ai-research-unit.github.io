@@ -15,7 +15,7 @@ The article is organised as follows. The standard mean-field theory of the spin-
 The condensate is described by a macroscopic wave function with three internal components,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta(\vec r))\,
+\tilde{Ξ}^{\mathrm{sp}}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta(\vec r))\,
 \vec\varkappa^{\mathrm{ord}}(\vec r),\qquad
 \vec\varkappa^{\mathrm{ord}}=\begin{pmatrix}\varkappa^{\mathrm{ord}}_+\\ \varkappa^{\mathrm{ord}}_0\\ \varkappa^{\mathrm{ord}}_-\end{pmatrix},\qquad
 {\vec\varkappa^{\mathrm{ord}}}^{\dagger}\vec\varkappa^{\mathrm{ord}}=1 ,
@@ -49,7 +49,7 @@ that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; t
 For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,
 
 $$
-\boxed{\;\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\tilde{Ξ}^{\mathrm{spn}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
+\boxed{\;\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\tilde{Ξ}^{\mathrm{sp}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
 +p\,\langle F_z\rangle+q\,\langle F_z^2\rangle\;},
 $$
 
@@ -275,7 +275,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}^{\mathrm{spn}}=\sqrt n\,\exp(i\theta)\vec\varkappa^{\mathrm{ord}}$ | Condensate wave function; $n$ density, $\theta$ phase |
+| $\tilde{Ξ}^{\mathrm{sp}}=\sqrt n\,\exp(i\theta)\vec\varkappa^{\mathrm{ord}}$ | Condensate wave function; $n$ density, $\theta$ phase |
 | $\vec\varkappa^{\mathrm{ord}}=(\varkappa^{\mathrm{ord}}_+,\varkappa^{\mathrm{ord}}_0,\varkappa^{\mathrm{ord}}_-)^T$ | Spinor order parameter, ${\vec\varkappa^{\mathrm{ord}}}^{\dagger}\vec\varkappa^{\mathrm{ord}}=1$ |
 | $F_k$ | Dimensionless spin-one operators, eigenvalues $\pm1,0$; $\vec F^2=2I_3$ |
 | $\langle\vec F\rangle$ | Magnetic (vector) order parameter |

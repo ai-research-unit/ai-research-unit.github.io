@@ -45,7 +45,7 @@ Two features of this construction govern everything below. First, the **statisti
 
 In the biquaternion framework the one-particle space is a module. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one nontrivial irreducible module, the two-dimensional complex **spinor module** on which it acts by matrix multiplication; the isomorphism $\mathbb{B}\cong\mathrm{End}(\mathbb{C}^2)$ of the algebraic-representations article is exactly this statement. The one-particle space of the Dirac field is a module of this type: at each momentum the positive-frequency solutions span a two-dimensional complex space, the antiparticle branch is a second copy, and the full one-particle space is the completion of the solution space over all momenta. The many-particle space is its **antisymmetric tensor algebra**, as the Dirac quantization article establishes.
 
-The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its **symmetric** algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\tilde{Ξ}^{\mathrm{spn}}\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.
+The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its **symmetric** algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\tilde{Ξ}^{\mathrm{sp}}\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.
 
 The structural point is the same for both:
 
@@ -298,7 +298,7 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ | Annihilation and creation operators (general) |

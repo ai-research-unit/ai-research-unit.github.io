@@ -23,7 +23,7 @@ $$
 with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Algebra and Element Conventions*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
 
 $$
-\boxed{\;-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')\;},
+\boxed{\;-\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')\;},
 \tag{1}
 $$
 
@@ -36,7 +36,7 @@ D^2 = \sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\part
 \tag{2}
 $$
 
-because the antisymmetric part $\sum_{\mu\neq \nu} \vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu$ vanishes by the symmetry of the mixed partials. The two sign choices of the first-order factor then produce the second time derivative, $(i\partial/\partial t')(-i\partial/\partial t') = +\partial^2/\partial {t'}^2$, and (1) follows. Formulas (1) and (2) were recomputed exactly; see the closing section.
+because the antisymmetric part $\sum_{\mu\neq \nu} \vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu$ vanishes by the symmetry of the mixed partials. The two sign choices of the first-order factor then produce the second time derivative, $(i\partial/\partial t')(-i\partial/\partial t') = +\partial^2/\partial {r'_{t}}^2$, and (1) follows. Formulas (1) and (2) were recomputed exactly; see the closing section.
 
 ### The Dictionary with the Corpus
 
@@ -61,11 +61,11 @@ $$
 and the two parabolic Dirac operators are the corpus's gradient and the negative of its conjugate, read in **real time**:
 
 $$
--\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = -\tilde{\nabla}^{\natural}\tilde{\nabla} = -\Box.
+-\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = -\tilde{\nabla}^{\natural}\tilde{\nabla} = -\Box.
 \tag{3}
 $$
 
-The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box$ carries $\partial^2/\partial Q_t^2 = -\partial^2/\partial {t'}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta + \partial^2/\partial {t'}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic signature throughout, so the null set of $\Box$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of *Biquaternion Analysis* are consequently not available, and the source does not use them.
+The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box$ carries $\partial^2/\partial Q_t^2 = -\partial^2/\partial {r'_{t}}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta + \partial^2/\partial {r'_{t}}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic signature throughout, so the null set of $\Box$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of *Biquaternion Analysis* are consequently not available, and the source does not use them.
 
 ## The Kernel as a Div-Curl System
 
@@ -104,31 +104,31 @@ so the real and imaginary quaternionic parts vanish separately, $Dg = \pm\partia
 
 ### Cauchy–Riemann-Type Coupling of the Real and Imaginary Parts
 
-The system (4) is the source's interpretation of the kernel as a **Cauchy–Riemann-type coupling**: the scalar part of the real half drives the divergence of the imaginary vector, the divergence of the real vector drives the imaginary scalar, and the two curl equations couple the vectors to the time derivatives of the scalars. It is the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system for $\tilde{\nabla}$, which reads $\partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F$ and $\partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0$ for a single biquaternion-valued $F$. Substituting $Q_t = ict'$ in the corpus's system produces the same two scalar equations that (4) carries, with the temporal slot distributed over the real and imaginary halves rather than collected in one $i\partial/\partial t'$. The source's own words for this are the standard ones — it "generalises the harmonic conjugation process" of complex analysis — and that is the correct description of the mechanism: one half of the function determines the other through the operator $D$ and the time integral, as harmonic conjugation gives the imaginary part of a holomorphic function from the real part.
+The system (4) is the source's interpretation of the kernel as a **Cauchy–Riemann-type coupling**: the scalar part of the real half drives the divergence of the imaginary vector, the divergence of the real vector drives the imaginary scalar, and the two curl equations couple the vectors to the time derivatives of the scalars. It is the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system for $\tilde{\nabla}$, which reads $\partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F$ and $\partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0$ for a single biquaternion-valued $F$. Substituting $Q_t = i c r'_t$ in the corpus's system produces the same two scalar equations that (4) carries, with the temporal slot distributed over the real and imaginary halves rather than collected in one $i\partial/\partial t'$. The source's own words for this are the standard ones — it "generalises the harmonic conjugation process" of complex analysis — and that is the correct description of the mechanism: one half of the function determines the other through the operator $D$ and the time integral, as harmonic conjugation gives the imaginary part of a holomorphic function from the real part.
 
 ### The Harmonic-Conjugate Construction
 
-The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial^2/\partial {t'}^2)g = 0$, then
+The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial^2/\partial {r'_{t}}^2)g = 0$, then
 
 $$
-b(x,t') := \int_0^{t'} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\xi(x)
+b(x,t') := \int_0^{r'_{t}} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\xi(x)
 \tag{6}
 $$
 
 makes $g + iv$ an element of $\ker(D + i\partial/\partial t')$ and $g - iv$ an element of $\ker(D - i\partial/\partial t')$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\xi$ any time-independent harmonic function. The proof is the telescoping computation
 
 $$
-Dv = -\int_0^{t'} \Delta g(x,s)\,ds - \partial/\partial t' g(x,0) = -\bigl(\partial/\partial t' g(x,t') - \partial/\partial t' g(x,0)\bigr) - \partial/\partial t' g(x,0) = -\partial/\partial t' g(x,t'),
+Dv = -\int_0^{r'_{t}} \Delta g(x,s)\,ds - \partial/\partial t' g(x,0) = -\bigl(\partial/\partial t' g(x,t') - \partial/\partial t' g(x,0)\bigr) - \partial/\partial t' g(x,0) = -\partial/\partial t' g(x,t'),
 $$
 
-using $\Delta g = \partial^2/\partial {t'}^2 g$ in the first step. When $g$ is a **scalar** solution $g_0$, the construction specialises to the purely vectorial complement
+using $\Delta g = \partial^2/\partial {r'_{t}}^2 g$ in the first step. When $g$ is a **scalar** solution $g_0$, the construction specialises to the purely vectorial complement
 
 $$
-\mathcal{V}[g_0](x,t') := i\int_0^{t'} \mathrm{grad}\,g_0(x,s)\,ds - i\,T_\Omega[\partial/\partial t' g_0](x,0),
+\mathcal{V}[g_0](x,t') := i\int_0^{r'_{t}} \mathrm{grad}\,g_0(x,s)\,ds - i\,T_\Omega[\partial/\partial t' g_0](x,0),
 \tag{7}
 $$
 
-and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\xi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{t'}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
+and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\xi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{r'_{t}}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
 
 ## The Quaternionic Exponential and the Fourier Characterisation
 
@@ -171,7 +171,7 @@ with reason $\exp(\mp 2\pi k t') = \exp\bigl(\mp 2\pi|k|t'\,\hat{g_k}\bigr)$ for
 Because $Ξ$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
 
 $$
-L_{\mathcal{C}}R_{\pm}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi (t'-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm}[w](x,t') := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi (t'-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
 \tag{10}
 $$
 
@@ -202,10 +202,10 @@ which rearranges to $(D \pm i\partial/\partial t')L_{\mathcal{C}}R_{\pm}[w] = \p
 
 ### The Correction of the Inverse's Scalar Part
 
-One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta + \partial^2/\partial {t'}^2)$ to $L_{\mathcal{C}}R_{\pm}[\mp i w]$ gives not $w$ but
+One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta + \partial^2/\partial {r'_{t}}^2)$ to $L_{\mathcal{C}}R_{\pm}[\mp i w]$ gives not $w$ but
 
 $$
-(-\Delta + \partial^2/\partial {t'}^2)L_{\mathcal{C}}R_{\pm}[\mp i w] = (D \mp i\partial/\partial t')w,
+(-\Delta + \partial^2/\partial {r'_{t}}^2)L_{\mathcal{C}}R_{\pm}[\mp i w] = (D \mp i\partial/\partial t')w,
 $$
 
 so the scalar part of $L_{\mathcal{C}}R_{\pm}[\mp i w]$ solves the homogeneous wave equation if and only if the scalar part of $(D \mp i\partial/\partial t')w$ vanishes, that is if and only if $\mathrm{div}\,\vec{w} \pm i\partial/\partial t' w_0 = 0$. In the time-independent case this is exactly the condition that the vector field be solenoidal, which is the class the heterogeneous div-curl literature requires. The vector part of the right-hand side need not vanish, so it is only the scalar part of the transform that is a wave solution without further correction; the correction itself is the completion (7) of the previous section.
@@ -262,11 +262,11 @@ a **purely vectorial** solution of (13), whose real part is the electric field $
 The source repeats the analysis for the slightly perturbed operator $D \pm i\lambda\partial/\partial t'$ with $\lambda \in \mathbb{R}$, whose kernel is characterised by (4) with $\partial/\partial t'$ replaced by $\lambda\partial/\partial t'$ (its Corollary 14) and whose right inverse is the $\lambda$-scaled transform
 
 $$
-L_{\mathcal{C}}R_{\pm,\lambda}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(t'-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
+L_{\mathcal{C}}R_{\pm,\lambda}[w](x,t') := \int_0^{r'_{t}}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi\lambda^{-1}(t'-s)k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
 \tag{16}
 $$
 
-with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial/\partial t')$ whenever $g_0$ solves $(-\Delta + \lambda^2\partial^2/\partial {t'}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
+with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial/\partial t')$ whenever $g_0$ solves $(-\Delta + \lambda^2\partial^2/\partial {r'_{t}}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
 
 $$
 \mathrm{div}\,\vec{E} = \frac{\rho}{\epsilon}, \qquad
@@ -276,7 +276,7 @@ $$
 \tag{17}
 $$
 
-reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{spn}}$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial t'\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial t'\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial t'\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial t'\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{spn}}$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
+reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{sp}}$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial t'\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial t'\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial t'\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial t'\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{sp}}$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
 
 ## What Is Verified and What Is Not
 
@@ -286,7 +286,7 @@ reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')
 
 ## Summary
 
-The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial Q_t = -i\partial/\partial t'$. The kernel of $D \pm i\partial/\partial t'$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial t')L_{\mathcal{C}}R_{\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial t' T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
+The source's wave-operator factorisation $-\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial t')(D - i\partial/\partial t') = (D - i\partial/\partial t')(D + i\partial/\partial t')$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial Q_t = -i\partial/\partial t'$. The kernel of $D \pm i\partial/\partial t'$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial t')L_{\mathcal{C}}R_{\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial t' T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
 
 ## Summary of Notation
 

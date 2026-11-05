@@ -4,12 +4,12 @@
 
 A **Majorana fermion** is a fermion that equals its own antiparticle. Two consequences follow at once: the field carries no conserved charge, and it carries half the coefficients of a Dirac field, because equality with its own conjugate is a condition and not a second field. The equation of such a field is the Dirac equation with the mass term pairing the field with its conjugate instead of with the other chiral half.
 
-This article asks what the biquaternion framework supplies for that equation, in the notation of the companion articles. The carrier is the algebra $\mathbb{B}$. The field is an **element** $\tilde{Ξ}^{\mathrm{spn}}$, a general element is written $\tilde Q$, and every statement below is a statement about elements, their products, the gradient and two conjugations. Nothing below is written as a component list, and no product of such a list enters the body.
+This article asks what the biquaternion framework supplies for that equation, in the notation of the companion articles. The carrier is the algebra $\mathbb{B}$. The field is an **element** $\tilde{Ξ}^{\mathrm{sp}}$, a general element is written $\tilde Q$, and every statement below is a statement about elements, their products, the gradient and two conjugations. Nothing below is written as a component list, and no product of such a list enters the body.
 
 The presentation is organized around one question — *where can the mass term sit?* — and the answer is split, at the outset, into the three categories the corpus uses.
 
 - **Established, and recomputed below.** The equation is one element equation, with the derivative from the left and the mass from the right, through $\vec e_z$ and the coefficient conjugation,
-$$i\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\vec e_z=0 .$$
+$$i\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,\vec e_z=0 .$$
 This is the corpus's two-sided form, the dictionary of Kravchenko used throughout the series (*The Dirac Equation in Biquaternionic Form*). Its plane waves sit on the ordinary shell, $k_0^{2}-\vec k^{2}=m^{2}$; the warrant is the nullity table of §*Why the Mass Sits on the Right*, which also shows that the two obvious alternatives — the mass as a bare conjugation, and the mass through the star — put their solutions on the spacelike locus instead.
 - **Sharpened here.** The mass is on the right because a letter cannot be moved from the left: left multiplication keeps the letter of its operand, so a mass inside the left slot applies one factor to both letters and couples nothing. The mass term of an $L$ part is an $R$ element, and the same display read on its two letters is a pair of equations, each carrying the conjugate of the other letter. That is the biquaternionic form of the chiral pair, with one field and no second one.
 - **Gap, left visible.** Equality with the conjugate is a reality condition, and the algebra's conjugations are classified here: the coefficient conjugation and the star are involutions with four-real-dimensional fixed spaces, and the unit-sandwiched conjugations that exchange the two letters are involutions of the same size. None of them commutes with the equation — the sixteen bar-sandwiched forms were tested — so the condition is not propagated at the level of the algebra, and the physical Majorana field is defined by the construction of *The Neutrino and Majorana Fermions in Biquaternionic Form*. The companion *Antilinear Structure and the Two Kinds of Mass* owns the diagnosis, and the present article states only its algebraic content.
@@ -22,18 +22,18 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The units satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
 
-**The frame.** Every display is written in the $\mathbb{M}_-$ frame, where $Q_t=ict'$ and $t'$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-c^{2}t'^{2}+x^{2}+y^{2}+z^{2}$ (*Frame and Metric Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
+**The frame.** Every display is written in the $\mathbb{M}_-$ frame, where $Q_t=i c r'_t$ and $t'$ is the time in seconds; the metric coefficient is $g_{tt}=-c^{2}$ and the quadratic form is $\langle\tilde Q\rangle_{\natural}=-c^{2}t'^{2}+x^{2}+y^{2}+z^{2}$ (*Frame and Metric Conventions*). The factor $c$ is restored only where a dimensional statement needs it, and the displays below set $c=1$.
 
 **The two operators.** The gradient $\tilde\nabla$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its natural conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
 **The letters.** The chirality of a frame is the action of right multiplication by the third unit with the phase $-i$,
 $$
-\tilde{Ξ}^{\mathrm{spn}}\longmapsto-i\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_z ,
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto-i\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z ,
 $$
-a pure right multiplier that squares to the identity and splits the coefficient space two and two (*Special Element Conventions*, §*The Chirality Convention*). The part of value $-1$ is written $\tilde{Ξ}^{\mathrm{spn}}_L$ and the part of value $+1$ is written $\tilde{Ξ}^{\mathrm{spn}}_R$; the letters are the Dirac ones, and they are a subscript on an element and not a property of a display. Two rules come with the letters, and the article uses both:
+a pure right multiplier that squares to the identity and splits the coefficient space two and two (*Special Element Conventions*, §*The Chirality Convention*). The part of value $-1$ is written $\tilde{Ξ}^{\mathrm{sp}}_L$ and the part of value $+1$ is written $\tilde{Ξ}^{\mathrm{sp}}_R$; the letters are the Dirac ones, and they are a subscript on an element and not a property of a display. Two rules come with the letters, and the article uses both:
 
 - a product takes the letter of its right factor;
-- **left multiplication keeps the letter**, because $(a\tilde{Ξ}^{\mathrm{spn}})\vec e_z=a(\tilde{Ξ}^{\mathrm{spn}}\vec e_z)$ for every element $a$.
+- **left multiplication keeps the letter**, because $(a\tilde{Ξ}^{\mathrm{sp}})\vec e_z=a(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)$ for every element $a$.
 
 The second is the identity the whole of §*Why the Mass Sits on the Right* rests on, and it is one line of associativity. It was checked on elements of each letter against a hundred random multipliers, with residual $0$.
 
@@ -54,7 +54,7 @@ The equation is one equation, and the three forms of the literature are three re
 **The element form.** The equation is
 
 $$
-i\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\vec e_z=0 ,
+i\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,\vec e_z=0 ,
 $$
 
 which is the corpus's two-sided form on the algebra: the derivative from the left, and the mass from the right through the spatial unit. Three actions sit in it, and none is decoration.
@@ -68,9 +68,9 @@ The conjugation is what makes the mass antilinear; the right multiplication is w
 **The letter form.** Read on the two letters, the equation is a pair. The mass of an $L$ part is an $R$ element, and the mass of an $R$ part is an $L$ element, so each member of the pair acts on one letter and carries the conjugate of the other:
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=-mi\,\overline{\tilde{Ξ}^{\mathrm{spn}}_R}\,\vec e_z ,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=-mi\,\overline{\tilde{Ξ}^{\mathrm{sp}}_R}\,\vec e_z ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_R=-mi\,\overline{\tilde{Ξ}^{\mathrm{spn}}_L}\,\vec e_z .
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_R=-mi\,\overline{\tilde{Ξ}^{\mathrm{sp}}_L}\,\vec e_z .
 $$
 
 The two lines are the equation of the display above, split; nothing is added. Each is an equation for one letter, and each carries the conjugate of the other, which is the precise sense in which the mass couples the letters and not a side of one of them. The mass terms are elements of the opposite letter, and that was checked on elements of each letter: the mass of an $L$ part is an $R$ element and the mass of an $R$ part is an $L$ element, exactly.
@@ -81,7 +81,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 
 ## Why the Mass Sits on the Right
 
-**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $m\tilde{Ξ}^{\mathrm{spn}}$, or a conjugation $mJ(\tilde{Ξ}^{\mathrm{spn}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
+**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $m\tilde{Ξ}^{\mathrm{sp}}$, or a conjugation $mJ(\tilde{Ξ}^{\mathrm{sp}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
 
 **The right slot can move it.** A right multiplication by an element takes the letter of its right factor, so a mass term that ends in a right multiplication acts on the two letters with two different factors. The mass term of the display above ends in $\vec e_z$, and the split of §*The Equation and Its Three Forms* is the result: the mass of an $L$ part is an $R$ element.
 
@@ -89,9 +89,9 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 
 | mass term | timelike, $k_0^{2}-\vec k^{2}=m^{2}$ | spacelike, $\vec k^{2}-k_0^{2}=m^{2}$ |
 |---|---|---|
-| $mi\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\vec e_z$, the mass from the right | $8$ | $0$ |
-| $m\,\bar{\tilde{Ξ}}^{\mathrm{spn}}$, a bare coefficient conjugation | $0$ | $8$ |
-| $m\,\tilde{Ξ}^{\mathrm{spn}*}$, the star | $0$ | $4$ |
+| $mi\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,\vec e_z$, the mass from the right | $8$ | $0$ |
+| $m\,\bar{\tilde{Ξ}}^{\mathrm{sp}}$, a bare coefficient conjugation | $0$ | $8$ |
+| $m\,\tilde{Ξ}^{\mathrm{sp}*}$, the star | $0$ | $4$ |
 
 Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the signature of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
 
@@ -99,20 +99,20 @@ Only the first row has its solutions on the ordinary shell. The second is the eq
 
 ## The Conjugation and the Count
 
-**The conjugation of the mass is not a reality condition.** The mass term of the display pairs $\tilde{Ξ}^{\mathrm{spn}}$ with $\bar{\tilde{Ξ}}^{\mathrm{spn}}\vec e_z$, so the conjugation it carries is the map
+**The conjugation of the mass is not a reality condition.** The mass term of the display pairs $\tilde{Ξ}^{\mathrm{sp}}$ with $\bar{\tilde{Ξ}}^{\mathrm{sp}}\vec e_z$, so the conjugation it carries is the map
 $$
-\mathcal{C}(\tilde{Ξ}^{\mathrm{spn}})=\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\vec e_z .
+\mathcal{C}(\tilde{Ξ}^{\mathrm{sp}})=\bar{\tilde{Ξ}}^{\mathrm{sp}}\,\vec e_z .
 $$
-Applied twice it returns minus the field, $\mathcal{C}(\mathcal{C}(\tilde{Ξ}^{\mathrm{spn}}))=-\tilde{Ξ}^{\mathrm{spn}}$: the bar is an involution and the two right multiplications by $\vec e_z$ multiply to $-1$. It is therefore a **square root of minus one** and not an involution. No non-zero element equals its own conjugate under it, and what it produces is a second field of the same size. That is the exact reason the two-sided form is the Dirac equation: its mass pairs the field with a second field, and the phase acts on the two linearly.
+Applied twice it returns minus the field, $\mathcal{C}(\mathcal{C}(\tilde{Ξ}^{\mathrm{sp}}))=-\tilde{Ξ}^{\mathrm{sp}}$: the bar is an involution and the two right multiplications by $\vec e_z$ multiply to $-1$. It is therefore a **square root of minus one** and not an involution. No non-zero element equals its own conjugate under it, and what it produces is a second field of the same size. That is the exact reason the two-sided form is the Dirac equation: its mass pairs the field with a second field, and the phase acts on the two linearly.
 
 **The involutions the algebra does supply.** The bar and the star are involutions, each with a fixed space of four real dimensions: the coefficient-real elements for the bar, the Hermitian elements for the star. The unit-sandwiched conjugations
 $$
-\tilde{Ξ}^{\mathrm{spn}}\longmapsto a\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,b ,
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto a\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,b ,
 \qquad a,b\in\{e_t,\vec e_x,\vec e_y,\vec e_z\} ,
 $$
-are the conjugations that exchange the two letters, because the bar exchanges them and the two multipliers are units. Of the sixteen such forms, ten are involutions, and each of the ten has a fixed space of four real dimensions. The map $\tilde{Ξ}^{\mathrm{spn}}\mapsto\bar{\tilde{Ξ}}^{\mathrm{spn}}\vec e_z$ of the mass term is one of the six that are not.
+are the conjugations that exchange the two letters, because the bar exchanges them and the two multipliers are units. Of the sixteen such forms, ten are involutions, and each of the ten has a fixed space of four real dimensions. The map $\tilde{Ξ}^{\mathrm{sp}}\mapsto\bar{\tilde{Ξ}}^{\mathrm{sp}}\vec e_z$ of the mass term is one of the six that are not.
 
-**The count.** An antilinear involution on an eight-real-dimensional algebra has eigenspaces of four real dimensions each, and this is structural rather than a coincidence of a basis: the map is antilinear, so $\mathcal{C}(i\tilde{Ξ}^{\mathrm{spn}})=-i\,\mathcal{C}(\tilde{Ξ}^{\mathrm{spn}})$, and multiplication by the central $i$ carries the $+1$ eigenspace onto the $-1$ eigenspace; the two therefore have equal dimension, and their sum is the whole space. The count is
+**The count.** An antilinear involution on an eight-real-dimensional algebra has eigenspaces of four real dimensions each, and this is structural rather than a coincidence of a basis: the map is antilinear, so $\mathcal{C}(i\tilde{Ξ}^{\mathrm{sp}})=-i\,\mathcal{C}(\tilde{Ξ}^{\mathrm{sp}})$, and multiplication by the central $i$ carries the $+1$ eigenspace onto the $-1$ eigenspace; the two therefore have equal dimension, and their sum is the whole space. The count is
 
 $$
 \boxed{\;\text{Dirac field}: 8 \text{ real coefficients}, \qquad
@@ -129,37 +129,37 @@ and the Majorana field is the fixed space of such a conjugation: a carrier of ha
 
 **The phase is not available.** The fixed space of an antilinear conjugation is not closed under multiplication by a phase. For a real $\alpha$ one has
 $$
-\mathcal{C}\bigl(e^{i\alpha}\tilde{Ξ}^{\mathrm{spn}}\bigr)=e^{-i\alpha}\,\mathcal{C}(\tilde{Ξ}^{\mathrm{spn}}) ,
+\mathcal{C}\bigl(e^{i\alpha}\tilde{Ξ}^{\mathrm{sp}}\bigr)=e^{-i\alpha}\,\mathcal{C}(\tilde{Ξ}^{\mathrm{sp}}) ,
 $$
-so $e^{i\alpha}\tilde{Ξ}^{\mathrm{spn}}$ lies in the fixed space only when $\alpha$ is a multiple of $\pi$; at $\alpha=\pi$ it lies in it, with the opposite sign. A field that equals its conjugate therefore carries no continuous phase, and a continuous phase is what a conserved charge is. The neutrality of the Majorana field is a property of the conjugation, and the algebra is not made smaller to obtain it.
+so $e^{i\alpha}\tilde{Ξ}^{\mathrm{sp}}$ lies in the fixed space only when $\alpha$ is a multiple of $\pi$; at $\alpha=\pi$ it lies in it, with the opposite sign. A field that equals its conjugate therefore carries no continuous phase, and a continuous phase is what a conserved charge is. The neutrality of the Majorana field is a property of the conjugation, and the algebra is not made smaller to obtain it.
 
 **One field and not two.** The two eigenspaces of a conjugation are of the same size and are exchanged by $i$; the fixed space is not one member of a pair of fields. The reading of the two eigenspaces as the two signs of a charge-conjugation eigenvalue belongs to the companion articles, where that operator is constructed; on the algebra the two eigenspaces are one space and its rotation by $i$, and the equation of the display above does not distinguish them.
 
-**No vector current.** A Dirac field carries the current of the two-sided form, $i[\tilde{Ξ}^{\mathrm{spn}*}(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}})-(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}*})\tilde{Ξ}^{\mathrm{spn}}]$ in the products of *Product and Form Conventions*; a field equal to its conjugate has no independent second factor to put there, and the bilinear collapses. The statement is qualitative here and computed in the companion articles; what the algebra supplies is the reason, which is that the fixed space is real and the current needs a phase.
+**No vector current.** A Dirac field carries the current of the two-sided form, $i[\tilde{Ξ}^{\mathrm{sp}*}(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}*})\tilde{Ξ}^{\mathrm{sp}}]$ in the products of *Product and Form Conventions*; a field equal to its conjugate has no independent second factor to put there, and the bilinear collapses. The statement is qualitative here and computed in the companion articles; what the algebra supplies is the reason, which is that the fixed space is real and the current needs a phase.
 
 ## Solutions and the Counting of States
 
-**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_0\exp(i\theta)$ with $\theta=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ and $\tilde P=ik_0e_t+\vec k$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_0e_t+i\vec k$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The solutions are therefore two-frequency superpositions,
+**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_0\exp(i\theta)$ with $\theta=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ and $\tilde P=ik_0e_t+\vec k$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_0e_t+i\vec k$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The solutions are therefore two-frequency superpositions,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_0\exp(i\theta)+\tilde{Ξ}^{\mathrm{spn}}_1\exp(-i\theta) ,
+\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_0\exp(i\theta)+\tilde{Ξ}^{\mathrm{sp}}_1\exp(-i\theta) ,
 $$
 
-and the equation becomes a real linear system for the pair $(\tilde{Ξ}^{\mathrm{spn}}_0,\tilde{Ξ}^{\mathrm{spn}}_1)$ of amplitudes.
+and the equation becomes a real linear system for the pair $(\tilde{Ξ}^{\mathrm{sp}}_0,\tilde{Ξ}^{\mathrm{sp}}_1)$ of amplitudes.
 
 **The system.** Matching the two exponentials gives
 
 $$
-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}^{\mathrm{spn}}_0=mi\,\overline{\tilde{Ξ}^{\mathrm{spn}}_1}\,\vec e_z ,
+\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}^{\mathrm{sp}}_0=mi\,\overline{\tilde{Ξ}^{\mathrm{sp}}_1}\,\vec e_z ,
 \qquad
--\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}^{\mathrm{spn}}_1=mi\,\overline{\tilde{Ξ}^{\mathrm{spn}}_0}\,\vec e_z ,
+-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}^{\mathrm{sp}}_1=mi\,\overline{\tilde{Ξ}^{\mathrm{sp}}_0}\,\vec e_z ,
 $$
 
 sixteen real equations in the sixteen real parameters of the two amplitudes. The second line is the first with the sign of the amplitude reversed, which is what the two exponentials do to a derivative that is first order; the two lines are one equation and not two. Its nullity is the one tabulated in §*Why the Mass Sits on the Right*.
 
-**The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}^{\mathrm{spn}}_0$ is free and the conjugate amplitude $\tilde{Ξ}^{\mathrm{spn}}_1$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
+**The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}^{\mathrm{sp}}_0$ is free and the conjugate amplitude $\tilde{Ξ}^{\mathrm{sp}}_1$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
 
-**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}^{\mathrm{spn}}=m^{2}\tilde{Ξ}^{\mathrm{spn}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table.
+**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}^{\mathrm{sp}}=m^{2}\tilde{Ξ}^{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table.
 
 **What the pair is not.** The pair is not a second equation. The two lines are the two exponentials of one equation, and a reader who counts them as two fields counts the field and its conjugate twice.
 
@@ -193,7 +193,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -238,12 +238,12 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 ## Summary
 
 The Majorana equation is the relativistic equation of a field equal to its own conjugate, and its biquaternionic form is one element equation: the derivative acts from the left, and the mass from the right, through the spatial unit $\vec e_z$ and the coefficient conjugation,
-$$i\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{spn}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\vec e_z=0 .$$
+$$i\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial t'}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_k}-mi\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,\vec e_z=0 .$$
 The three forms of the literature are three readings of it and not three laws. Read on the two letters it is a pair, each member acting on one letter and carrying the conjugate of the other, which is the chiral pair with one field and no second one. Read on the fixed space of the coefficient bar it is a real equation on four real coefficients.
 
 The mass sits in the right slot and not in the left, and that is a statement about letters: left multiplication keeps the letter of its operand, so a mass written as a left action is diagonal on the letters and couples nothing; a right multiplication takes the letter of its factor and couples them. The nullity table is the measurement: the mass from the right has eight real solutions on the timelike shell and none on the spacelike one, a bare conjugation has none on the timelike shell and eight on the spacelike one, and the star has none and four.
 
-The conjugation carried by the mass term is $\tilde{Ξ}^{\mathrm{spn}}\mapsto\bar{\tilde{Ξ}}^{\mathrm{spn}}\vec e_z$, and it is a square root of minus one, not an involution: no field equals its own conjugate under it, and the two-sided form pairs the field with a second field of the same size. The involutions the algebra supplies are the coefficient bar, the star, and the unit-sandwiched conjugations that exchange the two letters; each has a fixed space of four real dimensions, and the count is four against eight, with the two eigenspaces exchanged by the central $i$. None of them commutes with the equation, so the fixed space is not preserved by the flow and the reality condition is not propagated at the level of the algebra; the condition that is propagated is built on the state space, where the conjugation carries an operator of its own.
+The conjugation carried by the mass term is $\tilde{Ξ}^{\mathrm{sp}}\mapsto\bar{\tilde{Ξ}}^{\mathrm{sp}}\vec e_z$, and it is a square root of minus one, not an involution: no field equals its own conjugate under it, and the two-sided form pairs the field with a second field of the same size. The involutions the algebra supplies are the coefficient bar, the star, and the unit-sandwiched conjugations that exchange the two letters; each has a fixed space of four real dimensions, and the count is four against eight, with the two eigenspaces exchanged by the central $i$. None of them commutes with the equation, so the fixed space is not preserved by the flow and the reality condition is not propagated at the level of the algebra; the condition that is propagated is built on the state space, where the conjugation carries an operator of its own.
 
 A field equal to its conjugate carries no continuous phase, and a continuous phase is what a conserved charge is; the neutrality is a property of the conjugation and not a truncation of the algebra. A single plane wave is never a solution, because the conjugation conjugates the phase; the solutions are two-frequency superpositions whose amplitude and conjugate amplitude carry four real coefficients each, and the shell is the ordinary one. Whether a given fermion is a Majorana fermion, and the neutrino mass and phases, are outside the algebra.
 
@@ -251,18 +251,18 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}^{\mathrm{spn}}$, $\tilde Q$ | The field, and a general element of $\mathbb{B}$ |
-| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The two letters; the $-1$ and $+1$ parts under $\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ |
+| $\tilde{Ξ}^{\mathrm{sp}}$, $\tilde Q$ | The field, and a general element of $\mathbb{B}$ |
+| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two letters; the $-1$ and $+1$ parts under $\tilde{Ξ}^{\mathrm{sp}}\mapsto-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z$ |
 | $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$ | The units of the algebra; $\vec e_z$ is the unit whose right multiplication reads the letter |
 | $\bar\cdot$ | The coefficient conjugation: an automorphism, antilinear over $\mathbb{C}$, an involution |
 | ${}^{*}$ | The Hermitian conjugation: an anti-automorphism, antilinear, an involution |
 | $\tilde\nabla$, $\Box$ | The gradient and the d'Alembertian, as the series fixes them |
-| $\mathbb{M}_-$ | The frame with $Q_t=ict'$ and $g_{tt}=-c^{2}$ |
+| $\mathbb{M}_-$ | The frame with $Q_t=i c r'_t$ and $g_{tt}=-c^{2}$ |
 | $\theta$, $\tilde P$ | The phase $\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ and the momentum element $ik_0e_t+\vec k$ |
 | $k_0e_t+i\vec k$ | The derivative of the display on $\exp(i\theta)$, as a left multiplication |
-| $\tilde{Ξ}^{\mathrm{spn}}_0$, $\tilde{Ξ}^{\mathrm{spn}}_1$ | The amplitudes of $\exp(i\theta)$ and $\exp(-i\theta)$ |
-| $\mathcal{C}(\tilde{Ξ}^{\mathrm{spn}})=\bar{\tilde{Ξ}}^{\mathrm{spn}}\vec e_z$ | The conjugation of the mass term; $\mathcal{C}^{2}=-1$ |
-| $a\,\bar{\tilde{Ξ}}^{\mathrm{spn}}\,b$ | The unit-sandwiched conjugations; ten of the sixteen are involutions |
+| $\tilde{Ξ}^{\mathrm{sp}}_0$, $\tilde{Ξ}^{\mathrm{sp}}_1$ | The amplitudes of $\exp(i\theta)$ and $\exp(-i\theta)$ |
+| $\mathcal{C}(\tilde{Ξ}^{\mathrm{sp}})=\bar{\tilde{Ξ}}^{\mathrm{sp}}\vec e_z$ | The conjugation of the mass term; $\mathcal{C}^{2}=-1$ |
+| $a\,\bar{\tilde{Ξ}}^{\mathrm{sp}}\,b$ | The unit-sandwiched conjugations; ten of the sixteen are involutions |
 | four real dimensions | The fixed space of every antilinear involution on $\mathbb{B}$ |
 | $8$ against $4$ | The real coefficients of a Dirac field and of a Majorana field |
 | the nullity table | $8$ and $0$ for the mass from the right; $0$ and $8$ for the bare conjugation; $0$ and $4$ for the star |

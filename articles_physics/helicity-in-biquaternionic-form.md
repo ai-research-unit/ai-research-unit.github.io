@@ -75,10 +75,10 @@ This is the proposition of *Spinors and Dirac Spinors in the Biquaternion Algebr
 
 **One refinement, on the word eigenvector.** The operator is a left multiplication, and on the whole algebra its eigenspaces are not the left ideals but the right ideals $\tilde\Pi_\pm(\vec u_p)\mathbb{B}$, each of complex dimension two. The left ideals are the eigenspaces of the right multiplier $R(i\vec u_p)$, with the value $+1$ on $S_+(\vec u_p)$ and $-1$ on $S_-(\vec u_p)$ (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). A state lives in a left ideal, so the statement above is the physical one: inside its own carrier the state's operator has the two values, and their vectors are the pure state and its companion nilpotent.
 
-**The Dirac carrier.** A Dirac spinor is $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
+**The Dirac carrier.** A Dirac spinor is $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
 
 - The two parts are two copies of one carrier, not two different carriers: the index that separates them is a copy index, and in adapted bases the same left multiplication has the same matrix on both.
-- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde{Ξ}^{\mathrm{spn}}_L$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}^{\mathrm{spn}}_R$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
+- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde{Ξ}^{\mathrm{sp}}_L$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}^{\mathrm{sp}}_R$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
 
 **Why the mass does not undo the cut.** The mass term is the only term of the Dirac equation that names the other part, and it does so on the right, while the helicity element multiplies on the left (*Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation*, §*The Gradient and the Two Parts*). Left and right multiplications commute, so the mass couples the two parts and leaves the helicity split of each intact. At $m=0$ the parts decouple altogether into two Weyl equations, one per part, and the helicity is then locked to the part.
 
@@ -163,15 +163,15 @@ $$
 \mathsf{M}_2(\tilde P)=i\left(\frac{E}{c}I_2-\vec p\cdot\boldsymbol\sigma\right),
 $$
 
-of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $ict'$ convention; with $\tilde H=-i\tilde P\in\mathbb{M}_+$ one has $\mathsf{M}_2(\tilde H)=p_{\alpha\bar\beta}$ exactly.
+of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i c r'_t$ convention; with $\tilde R_\psi=-i\tilde P\in\mathbb{M}_+$ one has $\mathsf{M}_2(\tilde R_\psi)=p_{\alpha\bar\beta}$ exactly.
 
 ## Rank One Is Factorisability
 
 The passage from rank one to a product of two spinors is a lemma of linear algebra, and it is the reason the algebra needs no separate spinor-helicity postulate.
 
-**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\lambda,\bar\lambda\in\mathbb{C}^2$ with $M=\lambda\bar\lambda^{T}$. The pair is determined up to the scaling $(\lambda,\bar\lambda)\mapsto(t'\lambda,{t'}^{-1}\bar\lambda)$, $t'\in\mathbb{C}^\times$.
+**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there are nonzero columns $\lambda,\bar\lambda\in\mathbb{C}^2$ with $M=\lambda\bar\lambda^{T}$. The pair is determined up to the scaling $(\lambda,\bar\lambda)\mapsto(t'\lambda,{r'_{t}}^{-1}\bar\lambda)$, $t'\in\mathbb{C}^\times$.
 
-*Proof.* If $M=\lambda\bar\lambda^{T}$ with both factors nonzero, every column is a multiple of $\lambda$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\lambda$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^{T}$ read off any nonzero row; then $M=\lambda\bar\lambda^{T}$. The scaling is the elementary ambiguity, $(t'\lambda)({t'}^{-1}\bar\lambda)^{T}=\lambda\bar\lambda^{T}$.
+*Proof.* If $M=\lambda\bar\lambda^{T}$ with both factors nonzero, every column is a multiple of $\lambda$, so the column space is one-dimensional and the rank is one. Conversely, if the rank is one, take a nonzero column $\lambda$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^{T}$ read off any nonzero row; then $M=\lambda\bar\lambda^{T}$. The scaling is the elementary ambiguity, $(t'\lambda)({r'_{t}}^{-1}\bar\lambda)^{T}=\lambda\bar\lambda^{T}$.
 
 Applying it to the null momentum,
 
@@ -194,7 +194,7 @@ which is the reality condition of the real slice. For a complexified momentum th
 
 ## The Brackets as the Invariant Pairing
 
-The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ}^{\mathrm{spn}},\xi^{\mathrm{alt}})=\tilde{Ξ}^{\mathrm{spn}T}\epsilon\,\xi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
+The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ}^{\mathrm{sp}},\xi^{\mathrm{alt}})=\tilde{Ξ}^{\mathrm{sp}T}\epsilon\,\xi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
 
 $$
 \langle ij\rangle=\lambda_i^{T}\epsilon\,\lambda_j=-\langle ji\rangle,
@@ -210,11 +210,11 @@ The calculus built on these objects — the momentum-conservation constraints, t
 
 The scaling freedom of the factorisation is the kinematic little group, and the helicity is its weight. This is where the two levels of the article meet.
 
-**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$ and one sends $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto{t'}^{-1}\bar\lambda$ with $t'\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P$ is unchanged. The scaling is exactly the ambiguity of the lemma.
+**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$ and one sends $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto{r'_{t}}^{-1}\bar\lambda$ with $t'\in\mathbb{C}^\times$, the product is unchanged, so $\tilde P$ is unchanged. The scaling is exactly the ambiguity of the lemma.
 
 **From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition fixes the modulus of $t'$ and leaves its phase, so the freedom is a $U(1)$. That $U(1)$ is realized inside the algebra as the rotation about $\vec p$: the rotor $\tilde u_{\mathrm r}=\cos(\theta/2)+\sin(\theta/2)\vec u_p$ commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$, and it acts on the spinor module by the phase $e^{\pm i\theta/2}$. The little-group scaling is therefore not an abstract relabelling; it is the rotation about the momentum axis acting on the two factors.
 
-**The weight is the helicity.** An object of helicity $h$ scales as ${t'}^{-2h}$, so a monomial of $\lambda$-degree $d_\lambda$ and $\bar\lambda$-degree $d_{\bar\lambda}$ in a particle of definite helicity has
+**The weight is the helicity.** An object of helicity $h$ scales as ${r'_{t}}^{-2h}$, so a monomial of $\lambda$-degree $d_\lambda$ and $\bar\lambda$-degree $d_{\bar\lambda}$ in a particle of definite helicity has
 
 $$
 h=\tfrac12\bigl(d_{\bar\lambda}-d_\lambda\bigr).
@@ -254,7 +254,7 @@ The two words name different things and coincide at one mass.
 
 So the two differ in kind. Chirality is a fixed side, the same in every frame and for every momentum. Helicity is a projection, and it needs a momentum to exist. At $m=0$ the two labels agree on a positive-energy state, because the little group is then all that remains of the Lorentz action and both reduce to the same weight; on a negative-energy state they are opposite, which is the same statement read on the antiparticle.
 
-**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde H]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
+**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde R_\psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
 
 In the algebra the mass is the off-diagonal pair that exchanges the two chiral parts, central in coefficient and odd under the cell (*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*). At $m=0$ the pair decouples into two Weyl equations, one per part, and that decoupling is why the two labels agree there.
 
@@ -301,7 +301,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\tilde P=\frac{iE}{c}e_t+\vec p$ | The four-momentum, null when $\langle\tilde P\rangle_{\natural}=0$ |
 | $\lambda,\ \bar\lambda$ | In the factorisation sections only: the two spinors with $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$; not the operator |
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
-| $t'$ | The little-group scaling, $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto {t'}^{-1}\bar\lambda$; $\lvert t'\rvert=1$ for a real momentum |
+| $t'$ | The little-group scaling, $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert t'\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\hbar h$ |
 | $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a pure right multiplier; not the helicity |
 

@@ -90,12 +90,12 @@ The external states satisfy the massive Dirac equation, and in the biquaternion 
 **The chiral pair.** It is the pair of one-sided equations of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.
+with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.
 
 **The two-sided form.** Read on the whole algebra rather than one-sidedly, the same physics is the single equation
 
@@ -303,7 +303,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
-The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$.
+The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .

@@ -10,11 +10,11 @@ This is an exercise in the electromagnetism series. It is the exactly solvable s
 $$
 t'_r = t' - \frac{R}{c},
 \qquad
-R = \left|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right|,
+R = \left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right|,
 $$
 and writing
 $$
-\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r), \qquad R = |\vec R|, \qquad \vec u_R = \frac{\vec R}{R},
+\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r), \qquad R = |\vec R|, \qquad \vec u_R = \frac{\vec R}{R},
 \qquad
 \kappa = 1 - \vec u_R\cdot\vec\beta,
 \qquad
@@ -42,7 +42,7 @@ $$
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
-\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z), \qquad d = |\vec d|, \qquad \vec u_d = \frac{\vec d}{d},
+\vec d = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z), \qquad d = |\vec d|, \qquad \vec u_d = \frac{\vec d}{d},
 $$
 with the components parallel and perpendicular to the (constant) velocity, $\vec u_v = \vec v/v$ the unit vector along it,
 $$
@@ -67,7 +67,7 @@ with $\gamma = (1-\beta^2)^{-1/2}$. The electric field is radial *from the prese
 
 ## The Problem
 
-The parent gives the velocity field in terms of the retarded separation $\vec R$ and the retarded denominator $\kappa$. For a charge in uniform motion that description is not the most economical one: the retarded time equation can be solved exactly, so $\vec R$, $R$ and $\kappa$ can all be eliminated in favour of the present separation $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, which is the quantity a laboratory observer actually measures. The exercise is to carry out that elimination and then to *verify* the closed form rather than assert it. The specific demands are:
+The parent gives the velocity field in terms of the retarded separation $\vec R$ and the retarded denominator $\kappa$. For a charge in uniform motion that description is not the most economical one: the retarded time equation can be solved exactly, so $\vec R$, $R$ and $\kappa$ can all be eliminated in favour of the present separation $\vec d = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, which is the quantity a laboratory observer actually measures. The exercise is to carry out that elimination and then to *verify* the closed form rather than assert it. The specific demands are:
 
 1. derive the retarded position $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r) = x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z - \vec\beta R$ in closed form, including the quadratic that fixes $R$ and the choice of its root (the two traps being that the retarded position is **not** the present position, and that for uniform motion it nevertheless has a closed form);
 2. substitute into the parent's velocity field to obtain the Heaviside ellipsoid field, and check the direction of $\vec E$ and the $1/d^2$ falloff;
@@ -83,7 +83,7 @@ The numerical checks quoted below were performed under `/home/hp/.venvs/verify/b
 $$
 \vec R = \vec d + \vec\beta R,
 \qquad
-\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z).
+\vec d = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z).
 $$
 (b) Square it to obtain the quadratic $(1-\beta^2)R^2 - 2\beta d_\parallel R - d^2 = 0$ and show that its physical root is
 $$
@@ -100,7 +100,7 @@ $$
 
 **Solution (a).** For constant $\vec v$ the worldline is $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r) = x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z - \vec v(t'-t'_r)$: between emission and observation the charge has travelled for a time $t'-t'_r$ at the constant velocity $\vec v$. The retarded-time definition gives $t'-t'_r = R/c$, so $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r) = x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z - \vec\beta R$, and therefore
 $$
-\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z) + \vec\beta R = \vec d + \vec\beta R .
+\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z) + \vec\beta R = \vec d + \vec\beta R .
 $$
 Two remarks belong here. First, the retarded position is **not** the present position: the two differ by $\vec\beta R$, and Problem 1(d) shows that this offset is not small. Second, the identity $\vec R = \vec d+\vec\beta R$ is exact rather than a first-order approximation — that exactness is precisely what makes uniform motion solvable.
 
@@ -138,7 +138,7 @@ This is the key to the whole exercise: the retarded combination $\vec u_R-\vec\b
 $$
 \left|x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right| = \beta R
 $$
-along $\vec u_v$ since emission. This is not a small correction at relativistic speeds. For the representative case $\vec\beta = 0.9\,(1,1,1)/\sqrt{3}$, $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z = \vec\beta c t'$ and observation at $ct' = 3$, $(x,y,z)=(2,-1.3,0.7)$ (units $c=1$), the closed form gives
+along $\vec u_v$ since emission. This is not a small correction at relativistic speeds. For the representative case $\vec\beta = 0.9\,(1,1,1)/\sqrt{3}$, $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z = \vec\beta c t'$ and observation at $c r'_{t} = 3$, $(x,y,z)=(2,-1.3,0.7)$ (units $c=1$), the closed form gives
 $$
 R = 2.362563, \qquad \kappa = 0.910632, \qquad D = 2.151426, \qquad d = 3.0175, \qquad \beta R = 2.1263 :
 $$
@@ -367,7 +367,7 @@ The field is of electric type, is **not** null, and is not a zero divisor: $\lan
 
 ## Summary
 
-The field of a charge in uniform motion is the exactly solvable case of the parent's Liénard–Wiechert problem, and the reason it is solvable is that the retarded position is available in closed form. With $R = c(t'-t'_r)$ and the present separation $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, the identity $\vec R = \vec d+\vec\beta R$ gives the quadratic $(1-\beta^2)R^2-2\beta d_\parallel R-d^2=0$, whose physical root is the plus branch; from it follow
+The field of a charge in uniform motion is the exactly solvable case of the parent's Liénard–Wiechert problem, and the reason it is solvable is that the retarded position is available in closed form. With $R = c(t'-t'_r)$ and the present separation $\vec d = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, the identity $\vec R = \vec d+\vec\beta R$ gives the quadratic $(1-\beta^2)R^2-2\beta d_\parallel R-d^2=0$, whose physical root is the plus branch; from it follow
 $$
 D = R\kappa = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2}
 \qquad\text{and}\qquad
@@ -406,10 +406,10 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
 | $ϙ$, $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$, $\vec v(t')$ | Charge, worldline, coordinate velocity |
 | $t'_r = t' - R/c$ | Retarded time (defined implicitly) |
-| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
+| $\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
 | $\vec\beta = \vec v/c$ | Coordinate velocity over $c$ (constant in this exercise) |
 | $\kappa = 1-\vec u_R\cdot\vec\beta$, $D = R\kappa$ | Retarded denominator (inherited) |
-| $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, $d = |\vec d|$, $\vec u_d = \vec d/d$ | Present separation from the charge's present position |
+| $\vec d = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z)$, $d = |\vec d|$, $\vec u_d = \vec d/d$ | Present separation from the charge's present position |
 | $\vec u_v = \vec v/v$, $d_\parallel = \vec u_v\cdot\vec d$, $\vec d_\perp = \vec d-d_\parallel\vec u_v$, $d_\perp^2 = d^2-d_\parallel^2$ | Unit vector along the motion; components parallel and perpendicular to it |
 | $D = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2} = \sqrt{d_\parallel^2+d_\perp^2/\gamma^2}$ | Retarded denominator in closed form |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor of the (constant) velocity |

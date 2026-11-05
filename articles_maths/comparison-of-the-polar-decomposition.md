@@ -24,11 +24,11 @@ Every factor of every column is the exponential of an element of its algebra, an
 
 $$
 \boxed{\;
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)
 \;},
 $$
 
-with the rapidity $\psi \in \mathbb{R}$, $\psi\ge0$, of the boost and its unit axis $\vec u_{\mathrm b} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$), and the rotation angle $\theta \in [0,2\pi]$ of the rotor and its unit axis $\vec u_{\mathrm r} \in \mathcal{A}$; the other seven columns write their word the same way with as many exponentials as they have factors, and the number of the exponentials is the number of factors counted in the table below. For an element $\nu$ of the algebra in view and a real $t \in \mathbb{R}$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
+with the rapidity $\theta^{\mathrm{rpd}} \in \mathbb{R}$, $\theta^{\mathrm{rpd}}\ge0$, of the boost and its unit axis $\vec u_{\mathrm b} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$), and the rotation angle $\theta \in [0,2\pi]$ of the rotor and its unit axis $\vec u_{\mathrm r} \in \mathcal{A}$; the other seven columns write their word the same way with as many exponentials as they have factors, and the number of the exponentials is the number of factors counted in the table below. For an element $\nu$ of the algebra in view and a real $t \in \mathbb{R}$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
 
 $$
 \boxed{\;
@@ -53,7 +53,7 @@ The following table writes the word of each algebra as a product of exponentials
 | $\mathbb{C}^{\mathrm{dln}}$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the unit group |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
 | $\mathbb{H}^{\mathrm{spl}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
-| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
+| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
 | $\mathbb{B}^{\mathrm{spl}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_t$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
 
 The table is the exponential reading of the two parametrisation tables. Three features of it are worth separating.

@@ -34,9 +34,9 @@ The formalism begins with a contour and produces a doubling; the doubling is wha
 
 **The contour.** The **closed-time path** $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
 $$
-\tilde{Ξ}_+(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde{Ξ}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
+\tilde{Ξ}_+(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
 \qquad
-\tilde{Ξ}_-(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde{Ξ}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
+\tilde{Ξ}_-(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \equiv \tilde{Ξ}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
 $$
 The generating functional is
 $$

@@ -6,7 +6,7 @@ The **KMS condition** — named after Kubo, Martin, and Schwinger — is the cor
 
 The KMS condition has imaginary time built into its structure. The analytic continuation $t' \to t' + i\beta$ is not a convenience; it is the content of the condition. This suggests that a framework in which imaginary time is **intrinsic** — not an analytic continuation, but the natural coordinate — might be a natural setting for the condition.
 
-The material sector $\mathbb{M}_-$ of the biquaternion algebra is such a framework. Its time coordinate is $ict'$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.
+The material sector $\mathbb{M}_-$ of the biquaternion algebra is such a framework. Its time coordinate is $i c r'_t$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.
 
 The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{M}_-$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the interpretation and with directions for future work.
 
@@ -16,13 +16,13 @@ The conventions are those of the companion articles. The biquaternion algebra is
 
 ### Statement
 
-Consider a quantum system at inverse temperature $\beta = \hbar/(k_B T)$, described by a state $\omega_\beta$ and a one-parameter group of time translations $\alpha_{t'}$ (the Heisenberg evolution). For any two operators $A, B$ in the algebra of observables, define the thermal correlation function
+Consider a quantum system at inverse temperature $\beta = \hbar/(k_B T)$, described by a state $\omega_\beta$ and a one-parameter group of time translations $\alpha_{r'_{t}}$ (the Heisenberg evolution). For any two operators $A, B$ in the algebra of observables, define the thermal correlation function
 
 $$
-F_{AB}(t') = \omega_\beta\big(A\, \alpha_{t'}(B)\big).
+F_{AB}(t') = \omega_\beta\big(A\, \alpha_{r'_{t}}(B)\big).
 $$
 
-This is a **complex-valued** function of the real variable $t'$: the state $\omega_\beta$ is a linear functional on the algebra, so the value of $\omega_\beta$ on the algebra element $A\,\alpha_{t'}(B)$ is a complex number.
+This is a **complex-valued** function of the real variable $t'$: the state $\omega_\beta$ is a linear functional on the algebra, so the value of $\omega_\beta$ on the algebra element $A\,\alpha_{r'_{t}}(B)$ is a complex number.
 
 The **KMS condition** at inverse temperature $\beta$ states that:
 
@@ -88,17 +88,17 @@ So the KMS condition is intrinsically an imaginary-time statement. Without imagi
 The material sector $\mathbb{M}_-$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form
 
 $$
-\tilde R = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
+\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
-The first coefficient is **imaginary** ($i q'_t$), and the three remaining coefficients are **real**. In the physical identification, $q'_t = c t'$ where $t'$ is time, so the first coefficient is $i c t'$.
+The first coefficient is **imaginary** ($i c r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t = t'$ is the material time, so the first coefficient is $i c t'$.
 
 The imaginary character of the time coordinate is **intrinsic** to the material sector. It is not introduced by analytic continuation, and it is not the result of a Wick rotation. It is the algebraic structure of the subspace: the time coordinate multiplies the imaginary unit $i$, which is the fundamental scalar of the biquaternion algebra.
 
 The d'Alembertian on $\mathbb{M}_-$ is
 
 $$
-\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} + \Delta,
+\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
 $$
 
 which is the ordinary Lorentzian wave operator. The wave operator has the same form as in standard relativistic physics, but the imaginary time is now an algebraic feature of the framework, not a computational device.
@@ -110,10 +110,10 @@ which is the ordinary Lorentzian wave operator. The wave operator has the same f
 Let $\tilde Q_1$ and $\tilde Q_2$ be elements of the biquaternion algebra $\mathbb{B}$ (interpreted as observables), and let $\omega_\beta$ be a thermal state on the algebra, i.e., a positive linear functional $\omega_\beta : \mathbb{B} \to \mathbb{C}$ with $\omega_\beta(e_t) = 1$. Define the thermal correlation function
 
 $$
-F_{\tilde Q_1\tilde Q_2}(t') = \omega_\beta\big(\tilde Q_1\, \alpha_{t'}(\tilde Q_2)\big),
+F_{\tilde Q_1\tilde Q_2}(t') = \omega_\beta\big(\tilde Q_1\, \alpha_{r'_{t}}(\tilde Q_2)\big),
 $$
 
-where $\alpha_{t'}$ is the Heisenberg evolution in the time direction of $\mathbb{M}_-$.
+where $\alpha_{r'_{t}}$ is the Heisenberg evolution in the time direction of $\mathbb{M}_-$.
 
 **A note on the notation.** The correlation function $F_{\tilde Q_1\tilde Q_2}(t')$ is **complex-valued**, not biquaternion-valued: the state $\omega_\beta$ is a complex-valued functional on the algebra. The biquaternion content is in the **operators** $\tilde Q_1$ and $\tilde Q_2$, which lie in the algebra. This is the standard setting of the KMS condition, and the biquaternion framework provides a specific realization of the algebra on which the state is defined.
 
@@ -136,7 +136,7 @@ This is the same condition as in the standard formulation, with the operators ta
 
 The KMS condition acquires a natural algebraic interpretation in the material sector for three reasons.
 
-**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{M}_-$ is $ict'$, which is imaginary by construction. The shift $t' \to t' + i\beta$ moves the real parameter $t'$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $ict'$ of the material sector; the real part of the complexified time is spanned by the coefficient $ct$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
+**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{M}_-$ is $i c r'_t$, which is imaginary by construction. The shift $t' \to t' + i\beta$ moves the real parameter $t'$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $i c r'_t$ of the material sector; the real part of the complexified time is spanned by the coefficient $c r_t$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
 **Second, the complexified time direction has a natural algebraic realization.** The complexification of $\mathbb{M}_-$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:
 
@@ -144,7 +144,7 @@ $$
 \boxed{\;\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}\;}.
 $$
 
-The complexified time direction of $\mathbb{M}_-$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $ict'$ of $\mathbb{M}_-$ and the real time coefficient $ct$ of $\mathbb{M}_+$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.
+The complexified time direction of $\mathbb{M}_-$ — the direction in which the KMS continuation takes place — is therefore a specific 2-dimensional complex subspace of $\mathbb{B}$, spanned by the imaginary time coefficient $i c r'_t$ of $\mathbb{M}_-$ and the real time coefficient $c r_t$ of $\mathbb{M}_+$. The KMS condition, which requires analyticity in this complexified direction, has a natural home in the algebra.
 
 **Third, the modular Hamiltonian lives in $\mathbb{M}_+$.** In the algebraic formulation of the KMS condition, the modular Hamiltonian $K = -\log \Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $K = -\log \rho$. The density matrix is a positive Hermitian element of the algebra, so $K = -\log \rho$ is a **Hermitian element** of the algebra, and therefore lies in the Hermitian subspace $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields.
 
@@ -152,7 +152,7 @@ The complexified time direction of $\mathbb{M}_-$ — the direction in which the
 
 The thermal formalism downstream of the KMS condition is usually reached by a Wick rotation, and it is reached without one. This is where the condition's intrinsic imaginary time has a precise consequence.
 
-**The standard route, quoted.** The usual treatment continues the real time, $\tau = it'$ with $t' = -i\tau$: the material-time coefficient $ict'$ becomes the real $c\tau$, the $ict'$ metric becomes the Euclidean metric, and the wave biquaternion is read on the real scalar axis, where its biquaternion norm is definite. This is correct, and it is what the literature does (*Interpretation of the Wick Rotation in the Biquaternion Universe*).
+**The standard route, quoted.** The usual treatment continues the real time, $\tau = it'$ with $t' = -i\tau$: the material-time coefficient $i c r'_t$ becomes the real $c\tau$, the $i c r'_t$ metric becomes the Euclidean metric, and the wave biquaternion is read on the real scalar axis, where its biquaternion norm is definite. This is correct, and it is what the literature does (*Interpretation of the Wick Rotation in the Biquaternion Universe*).
 
 **The alternative route, which needs no rotation.** The imaginary direction is already in the material sector, so the thermal construction can stay there. The wave biquaternion is kept as the material element
 $$
@@ -182,7 +182,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 
 **Established (algebra).**
 
-- The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time coordinate $ict'$.
+- The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time coordinate $i c r'_t$.
 - The complexification of $\mathbb{M}_-$ as the full algebra $\mathbb{B}$.
 - The modular Hamiltonian $K = -\log \rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{M}_+$.
 - The identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
@@ -221,7 +221,7 @@ The KMS condition is the correct abstract characterization of thermal equilibriu
 
 The KMS condition has imaginary time built into it. The analytic continuation $t' \to t' + i\beta$ is not a convenience; it is the content of the condition.
 
-The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict'$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t' \to t' + i\beta$ is a shift in the coefficient $q'_t = ct'$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
+The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $i c r'_t$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t' \to t' + i\beta$ is a shift in the coefficient $q'_t = c r'_{t}$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
 The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
 
@@ -241,7 +241,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $t'$ | Time coordinate |
 | $\beta = \hbar/(k_B T)$ | Inverse temperature |
 | $\omega_\beta$ | Thermal state at inverse temperature $\beta$ |
-| $\alpha_{t'}$ | Heisenberg evolution |
+| $\alpha_{r'_{t}}$ | Heisenberg evolution |
 | $F_{AB}(t')$ | Thermal correlation function (complex-valued) |
 | $F_{AB}(t' + i\beta) = F_{BA}(-t')$ | KMS condition |
 | $\tilde{P}_E = i\omega_n e_t+\vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |

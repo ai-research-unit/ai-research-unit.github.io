@@ -29,13 +29,13 @@ $$
 and that the physically correct solution is the **retarded** one, built by convolution over the past light cone. The scalar Green's function of this second-order equation, distinct from the scalar part of that article's biquaternion-valued retarded Green's function (a first-order kernel of the opposite sign), is the familiar retarded kernel of the d'Alembertian,
 
 $$
-G_{\Box}(\tilde{Q}) = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right), \qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|,
+G_{\Box}(\tilde{Q}) = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right), \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|,
 $$
 
 so that
 
 $$
-\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde R_2)\,\tilde J(\tilde R_2)\,d^4R_2 .
+\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde{R}_{\varphi,2})\,\tilde J(\tilde{R}_{\varphi,2})\,d^4R_2 .
 $$
 
 We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(t')$, the source is
@@ -48,19 +48,19 @@ $$
 and therefore
 
 $$
-\tilde J(\tilde R_2) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
+\tilde J(\tilde{R}_{\varphi,2}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$
 
 Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the **retarded time** $t'_r$ defined implicitly by
 
 $$
-t'_r = t' - \frac{\left|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(t'_r)\right|}{c}.
+t'_r = t' - \frac{\left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_q(t'_r)\right|}{c}.
 $$
 
-Writing $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(s)|/c - t'$, one has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, so the delta function contributes the Jacobian
+Writing $h(s) = s + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_q(s)|/c - t'$, one has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, so the delta function contributes the Jacobian
 
 $$
-\delta\!\left(t' - \frac{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(s)|}{c} - s\right)
+\delta\!\left(t' - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_q(s)|}{c} - s\right)
 = \frac{1}{1 - \vec u_R\cdot\vec\beta}\,\delta(s - t'_r).
 $$
 
@@ -73,7 +73,7 @@ $$
 where from here on all source quantities are understood to be evaluated at the retarded time, and
 
 $$
-\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(t'_r), \qquad R = |\vec R|, \qquad
+\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_q(t'_r), \qquad R = |\vec R|, \qquad
 \vec u_R = \frac{\vec R}{R}, \qquad \vec\beta = \frac{\vec v(t'_r)}{c}.
 $$
 
@@ -165,7 +165,7 @@ $$
 \frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
 $$
 
-where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $ict'$ convention, with $(iR\,e_t+\vec R)^{\natural} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
+where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $i c r'_t$ convention, with $(iR\,e_t+\vec R)^{\natural} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
 
 $$
 \mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,(iR\,e_t+\vec R)^{\natural}\right)
@@ -562,8 +562,8 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity part and acceleration (radiation) part of the field |
 | $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current of the potential wave equation |
-| $t'_r$ | Retarded time, $t'_r = t' - \lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t'_r)\rvert/c$ |
-| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t'_r)$, $R = \lvert\vec R\rvert$ | Retarded separation |
+| $t'_r$ | Retarded time, $t'_r = t' - \lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(t'_r)\rvert/c$ |
+| $\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(t'_r)$, $R = \lvert\vec R\rvert$ | Retarded separation |
 | $\vec u_R = \vec R/R$ | Unit retarded direction |
 | $iR\,e_t + \vec R$ | Retarded null biquaternion, $\langle iR\,e_t+\vec R\rangle_{\natural}=0$ |
 | $\tilde{V}/\gamma = ic\,e_t + \vec v(t'_r)$ | Coordinate velocity, the four-velocity divided by $\gamma$ |
@@ -605,6 +605,6 @@ The construction is explicit enough that the two downstream exercises are direct
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations and their retarded solutions.
 - Cornelius Lanczos, *The Functional Theoretical Relationships of the Maxwell Aether Equations* (doctoral dissertation, Budapest, handwritten 1919), for the interpretation of the homogeneous Maxwell equation as a quaternion function theory and the charged particle as its singularity.
 - A. Gsponer and J.-P. Hurni, "Cornelius Lanczos's Derivation of the Usual Action Integral of Classical Electrodynamics," *Foundations of Physics* **35** (2005) 865–880, for the derivation of the standard action from Lanczos's and the finite self-interaction and mass of the singularity model; and their "Lanczos's Functional Theory of Electrodynamics: A Commentary on Lanczos's PhD Dissertation" (1998).
-- A. Gsponer and J.-P. Hurni, "The Physical Heritage of Sir W. R. Hamilton", arXiv:math-ph/0201058, for the biquaternion dictionary (the conjugations, the four-position $X = [ict';x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]$ and the four-velocity), the spinor square root of the four-velocity, Synge's *minquat* and *nullquat* names, and the historical record of Weiss's retarded-null factorisation.
+- A. Gsponer and J.-P. Hurni, "The Physical Heritage of Sir W. R. Hamilton", arXiv:math-ph/0201058, for the biquaternion dictionary (the conjugations, the four-position $X = [i c r'_t;r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z]$ and the four-velocity), the spinor square root of the four-velocity, Synge's *minquat* and *nullquat* names, and the historical record of Weiss's retarded-null factorisation.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for biquaternionic treatments of the electromagnetic field and its energy–momentum.
 - I. Białynicki-Birula and Z. Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the null complex-vector characterization of radiation.

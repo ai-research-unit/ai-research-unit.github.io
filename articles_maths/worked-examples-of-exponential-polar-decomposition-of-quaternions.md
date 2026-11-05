@@ -32,7 +32,7 @@ $$
 
 The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the sandwich is $2\theta$. This is the convention of *Exponential Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
 
-The quaternion case has no phase $\alpha$, no rapidity $\psi$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
+The quaternion case has no phase $\alpha$, no rapidity $\theta^{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
 **The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data and its check. The boundary is treated separately (§*The Real Axis Family*). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§*Summary*).
 
@@ -193,7 +193,7 @@ $$
 | scale | $rI$ | $r^2$ | $r,r$ |
 | rotor | $\mathsf M(\tilde u_{\mathrm r})$ | $1$ | $e^{\pm i\theta}$ |
 
-The two singular values of $\mathsf M(\tilde q)$ are both $r$. In the biquaternion case they are $r e^{\pm\psi/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.
+The two singular values of $\mathsf M(\tilde q)$ are both $r$. In the biquaternion case they are $r e^{\pm\theta^{\mathrm{rpd}}/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.
 
 ### The Boundary
 
@@ -708,11 +708,11 @@ The two architectures compare as follows.
 | coordinates | $Q_t,Q_x,Q_y,Q_z\in\mathbb{C}$ | $q_t,q_x,q_y,q_z\in\mathbb{R}$ |
 | modulus | $re^{i\alpha}$, principal square root | $r>0$ |
 | unit factor | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, Hermitian times $*$-unitary | $\tilde u_{\mathrm r}$, a rotor |
-| angles and axes | $\psi,\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | $\theta$; $\vec n$ |
-| polar word | $re^{i\alpha}\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
+| angles and axes | $\theta^{\mathrm{rpd}},\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | $\theta$; $\vec n$ |
+| polar word | $re^{i\alpha}\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
 | defect of one element's polar word | the cross term when the axes are non-parallel | zero |
 | boundary | the null cone, where no polar word exists | the open negative real axis, where no principal exponent exists |
-| matrix scales | $re^{\pm\psi/2}$ | $r,r$ |
+| matrix scales | $re^{\pm\theta^{\mathrm{rpd}}/2}$ | $r,r$ |
 
 The quaternion case is the definite compact companion of the biquaternion case: the phase, the rapidity, the Hermitian factor and the second axis are absent, and the four-factor word of the biquaternion case collapses to one exponential for a single element. What survives is the noncommutativity, and it appears in the product of two elements rather than in the decomposition of one.
 

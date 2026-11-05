@@ -83,7 +83,7 @@ the row naming the declared unit and the time unit and no other spatial unit at 
 
 **A change of display keeps every invariant.** The two bases are carried into one another by the conjugation $C_\Pi$ (*Matrix Representations Conventions*, §*The Switch Between the Two Frames*), and a conjugation by $C_\Pi$ changes no product, no commutator, no trace and no determinant. Every identity below is therefore a statement about elements, and it holds in both displays; the closing section prints one of them beside the other.
 
-**Chirality is the subscript, and it takes two values.** An element is written $\tilde Q_L$ or $\tilde Q_R$: $\tilde Q_L$ is the element of value the minus one and $\tilde Q_R$ the element of value the plus one, and that is the whole definition. The two values are exactly two, and only the zero element carries both. The subscript is a function of the element and of the declared axis; a product takes the letter of its right factor, and left multiplication keeps the letter (*Special Element Conventions*, §*The Chirality Convention*). In this article the two values name the parts of the field of the closing section, $\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde{Ξ}^{\mathrm{spn}}_R$, and no other object of the article carries them.
+**Chirality is the subscript, and it takes two values.** An element is written $\tilde Q_L$ or $\tilde Q_R$: $\tilde Q_L$ is the element of value the minus one and $\tilde Q_R$ the element of value the plus one, and that is the whole definition. The two values are exactly two, and only the zero element carries both. The subscript is a function of the element and of the declared axis; a product takes the letter of its right factor, and left multiplication keeps the letter (*Special Element Conventions*, §*The Chirality Convention*). In this article the two values name the parts of the field of the closing section, $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$, and no other object of the article carries them.
 
 ## The Many-Site Map
 
@@ -254,7 +254,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are cells of the same two-sided operator algebra that the one-site identification used, and the chirality cell is the right multiplication by $\vec e_z$ that separated the two carriers there.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 The four frame cells are the four coordinates, with the factor $i$ belonging to the cell:
 
@@ -333,11 +333,11 @@ $$
 and $\xi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\xi)/2-(e_t-\xi)/2=\xi$. The cell represents $\xi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L ,
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R .
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R .
 $$
 
 The two act from the left; what separates them is the conjugation $\natural$, not a change of side. The mass is the one term of the pair that mixes the two chiralities.

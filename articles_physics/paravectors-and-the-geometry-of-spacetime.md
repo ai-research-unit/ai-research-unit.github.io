@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is, as a real algebra, the **algebra of physical space**: the real algebra $\mathrm{Cl}_{3,0}$, which is also $M_2(\mathbb{C})$. The corpus records the identification, but it works throughout in the material sector $\mathbb{M}_-$, whose time coordinate is the imaginary $ict'$. This article works instead in the **paravectors** of the algebra of physical space: the four-dimensional real space spanned by the scalar $e_t$ and the three positive-definite generators. That space is exactly the Hermitian subspace $\mathbb{M}_+$ of the corpus, and the material sector is its central-imaginary multiple, $\mathbb{M}_-=i\mathbb{M}_+$. A paravector is thus a spacetime vector written with a **real** time; the $i$ of the $ict'$ convention is not removed but relocated, and the geometry becomes a geometry of physical space and its null elements.
+The biquaternion algebra is, as a real algebra, the **algebra of physical space**: the real algebra $\mathrm{Cl}_{3,0}$, which is also $M_2(\mathbb{C})$. The corpus records the identification, but it works throughout in the material sector $\mathbb{M}_-$, whose time coordinate is the imaginary $i c r'_t$. This article works instead in the **paravectors** of the algebra of physical space: the four-dimensional real space spanned by the scalar $e_t$ and the three positive-definite generators. That space is exactly the Hermitian subspace $\mathbb{M}_+$ of the corpus, and the material sector is its central-imaginary multiple, $\mathbb{M}_-=i\mathbb{M}_+$. A paravector is thus a spacetime vector written with a **real** time; the $i$ of the $i c r'_t$ convention is not removed but relocated, and the geometry becomes a geometry of physical space and its null elements.
 
 The purpose of the article is threefold. First, it fixes the dictionary between the source's paravectors and the corpus's objects, so that results written in the algebra of physical space can be read in the series' conventions. Second, it states and proves the source's **boost rule**, $p\mapsto\tilde V_{\mathrm p}p_\parallel+p_\perp$, the computational device that replaces the rotor sandwich by a single multiplication, and shows it to be exactly the rotor congruence already used on the material sector. Third, it records the interpretation of **biparavectors** as spacetime planes, which is what makes the electromagnetic field a plane-valued object and which the field-strength article then uses.
 
@@ -20,7 +20,7 @@ $$
 (i\vec p)(i\vec p)=+\left(\vec p\cdot\vec p\right)e_t ,
 $$
 
-the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\theta^{\mathrm{rpd}}$ the rapidity.
+the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R_\varphi$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\theta^{\mathrm{rpd}}$ the rapidity.
 
 ## The Algebra of Physical Space Inside the Biquaternions
 
@@ -59,7 +59,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle i\,p\rangle_{\natural}=i^2\langle p\rangle_{\natural}=-\left(p_t^2-\vec p\cdot\vec p\right),
 $$
 
-because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=ict'$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
+because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i c r'_t$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
 
 **The dictionary.** The two readings name the same eight dimensions, one row to an object:
 
@@ -68,21 +68,21 @@ because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corp
 | scalar unit $1$ | time unit | $e_t$ |
 | vector $e_k$, $e_k^2=+e_t$ | imaginary vector | $i\vec e_k$ |
 | paravector $p_t+p_xe_x+p_ye_y+p_ze_z$ | Hermitian element | $p_te_t+i\vec p$ |
-| material four-vector $ct'+\vec x$ | element of $\mathbb{M}_-$ | $i\,p^{\natural}$ |
+| material four-vector $c r'_{t}+\vec x$ | element of $\mathbb{M}_-$ | $i\,p^{\natural}$ |
 | the source's overbar $\bar p$ | quaternion conjugation | $p^{\natural}$ |
 | the source's dagger $p^\dagger$ | Hermitian conjugation ${}^{*}$, the identity on $\mathbb{M}_+$ | $p^{*}=p$ |
 | volume element $e_1e_2e_3$ | central imaginary | $i$ |
 | interval $p\bar p$ | quaternionic norm of the material element, sign reversed | $\langle i\,p^{\natural}\rangle_{\natural}=-(p_t^2-\vec p\cdot\vec p)$ |
 
-The material four-vectors are $\tilde R=i\,p^{\natural}$ with $p$ a paravector. In coordinates, $\tilde R=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z$ corresponds to
+The material four-vectors are $\tilde R_\varphi=i\,p^{\natural}$ with $p$ a paravector. In coordinates, $\tilde R_\varphi=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ corresponds to
 
 $$
-p=ct'e_t+i\left(x\vec e_x+y\vec e_y+z\vec e_z\right),
+p=c r'_{t}e_t+i\left(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\right),
 \qquad\text{so that}\qquad
-i\,p^{\natural}=ict'e_t+x\vec e_x+y\vec e_y+z\vec e_z .
+i\,p^{\natural}=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 
-That is $p_t=ct'$ and $\vec p=(x,y,z)$: the two readings carry the **same** numbers, the paravector with a real time and the material element with an imaginary one.
+That is $p_t=c r'_{t}$ and $\vec p=(x,y,z)$: the two readings carry the **same** numbers, the paravector with a real time and the material element with an imaginary one.
 
 **Why the conjugation.** Multiplication by the central $i$ alone exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, but it does not preserve the labels: it sends the space generator $i\vec e_k$ to $-\vec e_k$. The dictionary that keeps the labels is $i$ **composed with the quaternion conjugation**, $\tilde Q=i\,p^{\natural}$, because ${}^{\natural}$ negates the imaginary vector part and the multiplication negates it back. The plain dual $ip$ is the material element of the **parity-reflected** event. This is the whole cost of the change of time convention: the factor $i$ alone carries the space part to the wrong sign, and ${}^{\natural}$ is what undoes it.
 
@@ -192,7 +192,7 @@ $$
 
 because $(i\vec e_j)(i\vec e_k)=-\vec e_j\vec e_k$ is a real vector for $j\neq k$: $(i\vec e_y)(i\vec e_x)=\vec e_z$, and the cyclic images give $\vec e_x$ and $\vec e_y$. The first triple consists of the planes that contain the time direction, the **timelike** (boost) planes; the second triple consists of the **spacelike** (rotation) planes. The biparavector space is therefore the corpus's six-dimensional **pure** subspace $\mathrm{Vect}(\mathbb{B})$, the space of the elements with no scalar part. A biparavector with a part in each triple generates a general Lorentz transformation: the timelike planes boost and the spacelike planes rotate.
 
-Two consequences are worth stating, because they are what the paravector reading contributes to the rest of the series. First, the six planes are exactly the union of the vector parts of the two sectors: $i\vec e_k$ is the vector part of the paravector $p\in\mathbb{M}_+$, and $\vec e_k$ is the vector part of the material element $\tilde Q\in\mathbb{M}_-$. A plane is thus a vector part read in whichever sector one is working in, which is the algebraic reason a boost and a rotation are two readings of one six-dimensional object. Second, the **field strength** is a biparavector. Baylis writes it as $F=\vec E+ic\vec B$, one element of each triple, and the corpus's pure-vector field strength $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is the same object up to normalization: multiplying $\tilde F$ by $-i/\sqrt{\epsilon}$ and using $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$ gives $\vec E+i\vec B/\sqrt{\epsilon\mu}=\vec E+ic\vec B$. The two readings put the factor $i$ on opposite halves. The source's $F$ makes the electric part real and the magnetic part imaginary; the corpus's $\tilde F$ makes the electric part imaginary and the magnetic part real, because in the $ict'$ convention the electric field carries the time index. The two triples are exchanged, and that exchange is the algebraic content of the asymmetry that *The Field-Strength Biquaternion and Its Invariants* records.
+Two consequences are worth stating, because they are what the paravector reading contributes to the rest of the series. First, the six planes are exactly the union of the vector parts of the two sectors: $i\vec e_k$ is the vector part of the paravector $p\in\mathbb{M}_+$, and $\vec e_k$ is the vector part of the material element $\tilde Q\in\mathbb{M}_-$. A plane is thus a vector part read in whichever sector one is working in, which is the algebraic reason a boost and a rotation are two readings of one six-dimensional object. Second, the **field strength** is a biparavector. Baylis writes it as $F=\vec E+ic\vec B$, one element of each triple, and the corpus's pure-vector field strength $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is the same object up to normalization: multiplying $\tilde F$ by $-i/\sqrt{\epsilon}$ and using $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$ gives $\vec E+i\vec B/\sqrt{\epsilon\mu}=\vec E+ic\vec B$. The two readings put the factor $i$ on opposite halves. The source's $F$ makes the electric part real and the magnetic part imaginary; the corpus's $\tilde F$ makes the electric part imaginary and the magnetic part real, because in the $i c r'_t$ convention the electric field carries the time index. The two triples are exchanged, and that exchange is the algebraic content of the asymmetry that *The Field-Strength Biquaternion and Its Invariants* records.
 
 ## The Grading, the Two Sectors, and the Compactness
 
@@ -285,7 +285,7 @@ For **non-collinear** boosts the product $\tilde V_{\mathrm p,BA}\tilde V_{\math
 
 **It adds three things.** A **real time**: the geometry is posed on a four-dimensional real space with an indefinite form, and the null cone is a cone in that space rather than the image of one under multiplication by $i$. A **computational rule**: the boost is a product with the proper velocity, $p\mapsto\tilde V_{\mathrm p}p_\parallel+p_\perp$, one multiplication instead of a congruence, together with a plane-geometric bookkeeping in which a boost is a function of the timelike plane and a rotation a function of the spacelike plane. And a **plane-valued field**: the field strength is a biparavector, a sum of the two triples, which is the algebraic reason the electric and magnetic parts are not on the same footing.
 
-**It does not add a different theory.** The paravector space is the Hermitian subspace $\mathbb{M}_+$, its conjugation is the quaternion conjugation ${}^{\natural}$, the star is the identity there, and the Lorentz group is the same group of unit-norm biquaternions. Every external result written in the algebra of physical space is a result of the corpus in a different basis, and the dictionary above is the whole of the translation. The corpus's choice of the material sector, with its $ict'$ and its real vectors, is the choice to write the *anti-Hermitian* reading of the same four-vector; the paravector interpretation writes the *Hermitian* one, and the two are exchanged by the central $i$ composed with ${}^{\natural}$.
+**It does not add a different theory.** The paravector space is the Hermitian subspace $\mathbb{M}_+$, its conjugation is the quaternion conjugation ${}^{\natural}$, the star is the identity there, and the Lorentz group is the same group of unit-norm biquaternions. Every external result written in the algebra of physical space is a result of the corpus in a different basis, and the dictionary above is the whole of the translation. The corpus's choice of the material sector, with its $i c r'_t$ and its real vectors, is the choice to write the *anti-Hermitian* reading of the same four-vector; the paravector interpretation writes the *Hermitian* one, and the two are exchanged by the central $i$ composed with ${}^{\natural}$.
 
 The one genuinely new object in the source's programme is not a change of basis at all: the **electromagnetic plane wave as a rotation and a dilation**, an identity of the null cone treated in its own article (*The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*). The paravector reading is what makes that identity one line of algebra.
 
@@ -366,9 +366,9 @@ The paravector calculus is therefore the calculus of *one-sided* cells of a thre
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
+L_{\tilde\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
 \qquad
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,

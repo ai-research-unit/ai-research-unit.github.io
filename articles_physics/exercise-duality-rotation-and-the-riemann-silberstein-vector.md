@@ -19,7 +19,7 @@ $$
 W = \tfrac12\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad \vec S = \vec E\times\vec H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde H$, $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$; the star is inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde H)$ is real, and non-negative when $\tilde H\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde R_\psi$, $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the star is inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ is real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
 
 **What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec N\mapsto \exp(-i\theta)\vec N$, hence $\tilde F\mapsto \exp(-i\theta)\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $\exp(-2i\theta)$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph pairs $\vec N$ with its complex conjugate $\vec N^*$ and not with the quaternion conjugate $\vec N^{\natural}$; the two carry opposite duality phases and must not be interchanged. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
@@ -62,7 +62,7 @@ $$
 = (\cos\theta - i\sin\theta)\left(\vec E + ic\vec B\right)
 = \exp(-i\theta)\,\vec N .
 $$
-The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $ict'$; it is central, so it commutes with the quaternion units.
+The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $i c r'_t$; it is central, so it commutes with the quaternion units.
 
 **Solution (c).** The field-strength biquaternion is $\tilde F = i\sqrt{\epsilon}\vec N$, so part (b) gives immediately
 $$
@@ -340,7 +340,7 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 4. **Duality and the invariant classification.** Show that duality preserves the type of the field (null, electric, magnetic, generic) determined by $(I_1,I_2)$ in the parent's classification, and compute the orbit of the generic magnitudes $(E_0,B_0)$ under the doubled-angle rotation. Identify the duality angle that maps a purely electric field to a purely magnetic one, and the angle that leaves a given non-null field's type but reverses the sign of $I_1$.
 
-5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $\exp(-i\theta)$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $ict'$ gradient — are related in the complexified setting.
+5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $\exp(-i\theta)$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $i c r'_t$ gradient — are related in the complexified setting.
 
 6. **Duality and a deformed arena.** Everything above is a symmetry of Maxwell's equations in a linear *medium*, that is, in a commutative arena with a linear constitutive relation. Show that the rotation is not a symmetry when the coordinates cease to commute. The companion article *Maxwell's Theory on Non-Commutative Spaces and Quaternions* records exactly this for a fixed antisymmetric background $\vec\theta$: the potentials keep their form, but the dual transformation is broken by the $\vec\theta$-terms, and the breaking vanishes when $\vec\theta\to0$. Since the rotation is linear in the fields and the deformed equations are not, two questions follow. Is broken duality a *diagnostic* of the non-linearity, and could a non-linear theory retain the symmetry? The corpus's answer matters because it currently uses duality as a test of the arena and not of the dynamics.
 
@@ -382,7 +382,7 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{M}_+$) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Electric four-current; enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$ | Biquaternionic Maxwell equation |
-| $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace reading at normalisation (Born rule) |
+| $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace reading at normalisation (Born rule) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

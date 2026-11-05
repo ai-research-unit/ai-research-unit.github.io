@@ -133,12 +133,12 @@ The sign is not optional. In the convention above, the formula was checked on th
 The coherent states turn the Fock space into a space of functions of an odd variable. Write a general state as
 
 $$
-|\tilde{Ξ}^{\mathrm{spn}}\rangle=\tilde{Ξ}^{\mathrm{spn}}_0|0\rangle+\tilde{Ξ}^{\mathrm{spn}}_1|1\rangle
+|\tilde{Ξ}^{\mathrm{sp}}\rangle=\tilde{Ξ}^{\mathrm{sp}}_0|0\rangle+\tilde{Ξ}^{\mathrm{sp}}_1|1\rangle
 \qquad\longleftrightarrow\qquad
-\tilde{Ξ}^{\mathrm{spn}}(\varkappa^*)=\tilde{Ξ}^{\mathrm{spn}}_0+\tilde{Ξ}^{\mathrm{spn}}_1\varkappa^* ,
+\tilde{Ξ}^{\mathrm{sp}}(\varkappa^*)=\tilde{Ξ}^{\mathrm{sp}}_0+\tilde{Ξ}^{\mathrm{sp}}_1\varkappa^* ,
 $$
 
-with $\tilde{Ξ}^{\mathrm{spn}}_0,\tilde{Ξ}^{\mathrm{spn}}_1\in\mathbb{C}$ (or, in the biquaternion setting, coefficients valued in the even part). Then the mode operators become
+with $\tilde{Ξ}^{\mathrm{sp}}_0,\tilde{Ξ}^{\mathrm{sp}}_1\in\mathbb{C}$ (or, in the biquaternion setting, coefficients valued in the even part). Then the mode operators become
 
 $$
 \boxed{\;a^{\mathrm{fop}}=\frac{\partial}{\partial\varkappa^*} ,
@@ -157,7 +157,7 @@ The verification is the Leibniz rule on the two-dimensional space of polynomials
 **The inner product is the Berezin integral.** With the convention above,
 
 $$
-\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle=\int d\varkappa^*d\varkappa\;\exp(-\varkappa^*\varkappa)\;\overline{\tilde{Ξ}^{\mathrm{spn}}(\varkappa^*)}\,\xi^{\mathrm{alt}}(\varkappa^*) ,
+\langle\tilde{Ξ}^{\mathrm{sp}}|\xi^{\mathrm{alt}}\rangle=\int d\varkappa^*d\varkappa\;\exp(-\varkappa^*\varkappa)\;\overline{\tilde{Ξ}^{\mathrm{sp}}(\varkappa^*)}\,\xi^{\mathrm{alt}}(\varkappa^*) ,
 $$
 
 and the identity was checked: the two basis states are orthonormal, $\langle0|0\rangle=1$, $\langle1|1\rangle=1$, $\langle0|1\rangle=0$, in the convention $\int d\varkappa^*d\varkappa\,\exp(-\varkappa^*\varkappa)=1$ and $\int d\varkappa^*d\varkappa\,\varkappa^*\varkappa=-1$. This is the positive-definite Hermitian form of the Fock space expressed as a Berezin integral; the apparent minus signs are the covariance of the Grassmann measure, and they are what makes the form positive.
@@ -227,7 +227,7 @@ Since $\exp(-\beta H)|\varkappa\rangle=|0\rangle+\exp(-\beta\varepsilon)\varkapp
 The larger lesson of the thermal kernel is the boundary condition. The Grassmann variables of the path-integral representation of the trace must be **antiperiodic** in imaginary time:
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{spn}}(\tau) ,
+\tilde{Ξ}^{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{sp}}(\tau) ,
 $$
 
 which is the statement that the Matsubara frequencies of a fermion are the half-integer ones $\omega_n=(2n+1)\pi/\beta$. The antiperiodicity was checked directly: for $n=0,1,2$ and $\beta=2.7$, $\tau=0.83$, the ratio $\exp(i\omega_n(\tau+\beta))/\exp(i\omega_n\tau)$ equals $-1$ to nine decimal places. The sign is the fermionic one and is the same sign as the anticommutator; the companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
@@ -288,7 +288,7 @@ The biquaternion interpretation is that the label is odd while the density matri
 | $\rho_\varkappa=|\varkappa\rangle\langle\varkappa|\in\mathbb{M}_+$ | State as an even algebra element |
 | $\langle O\rangle_\varkappa=2\,\mathrm{Sc}(\tilde{Ϛ}_\varkappa O)$ | Expectation as the trace reading of the Hermitian form |
 | $(-1)^{N}|\varkappa\rangle_{*}=|-\varkappa\rangle$ | Parity as the label reflection |
-| $\tilde{Ξ}^{\mathrm{spn}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{spn}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic Matsubara boundary condition |
+| $\tilde{Ξ}^{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}^{\mathrm{sp}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic Matsubara boundary condition |
 
 ## Further Reading
 

@@ -46,10 +46,10 @@ $$
 \begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}\;}.
 $$
 
-The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t$ is real and $Q_k=iq'_k$ with $q'_k$ real, the same formula reads
+The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=c r_t$ is real and $Q_k=i r'_k$ with $r'_k$ real, the same formula reads
 
 $$
-\mathsf M_2(\tilde Q)=q_t\mathrm I_2+q'_x\sigma_1+q'_y\sigma_2+q'_z\sigma_3 ,
+\mathsf M_2(\tilde R_\psi)=c r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
 $$
 
 with no factor and no sign. The four real numbers of a Hermitian element are the coefficients of the identity and the three Pauli matrices.
@@ -132,8 +132,8 @@ The determinant of the matrix is the quaternionic norm, $\det\mathsf M_2(\tilde 
 
 | sector | element | determinant | signature |
 | --- | --- | --- | --- |
-| material | $iq'_te_t+\sum_k q_k\vec e_k$ | $-(q'_t)^2+q_x^2+q_y^2+q_z^2$ | $(3,1)$ |
-| informational | $q_te_t+iq'_k\vec e_k$ | $q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$ | $(1,3)$ |
+| material | $i c r'_t e_t+\sum_k r_k\vec e_k$ | $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
+| informational | $c r_t e_t+i r'_k\vec e_k$ | $c^2r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$ | $(1,3)$ |
 | state slice | $\tfrac12(e_t+i\vec r)$ | $\tfrac14(1-\lvert\vec r\rvert^2)$ | positivity |
 
 The same algebraic function is the interval on the material sector, the causal type and the positivity test on the informational sector, and the mixedness on the trace-one slice. The zero set is one object in the three readings: the light cone, the boundary of the state space, and the set of pure states.
@@ -184,12 +184,12 @@ The boundary is that the reading requires a diagonalisable element matrix and a 
 
 ### The Hermitian Elements Are the Observables
 
-An element $\tilde H\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde H$.
+An element $\tilde R_\psi\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\psi$.
 
 The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde H)\bigr)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=h_t+\vec r\cdot\vec h ,
 $$
 
 for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
@@ -198,7 +198,7 @@ The boundary is that the word *observable* uses the involution ${}^{*}$, which b
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde H=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\psi=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
 
 $$
 [\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k

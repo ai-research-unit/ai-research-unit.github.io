@@ -186,7 +186,7 @@ $$
 
 $$
 \boxed{\;
-\mathrm{U}(\mathbb{B}^{\mathrm{spl}}) = \left\{u\,\exp(\psi j) : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad \exp(\psi j) = \cosh\psi + j\sinh\psi
+\mathrm{U}(\mathbb{B}^{\mathrm{spl}}) = \left\{u\,\exp(\theta^{\mathrm{rpd}} j) : u\in Sp(1),\ \theta^{\mathrm{rpd}}\in\mathbb{R}\right\}, \qquad \exp(\theta^{\mathrm{rpd}} j) = \cosh\theta^{\mathrm{rpd}} + j\sinh\theta^{\mathrm{rpd}}
 \;},
 $$
 
@@ -196,16 +196,16 @@ $$
 v\longmapsto u\,v\,u^{\natural} ,
 $$
 
-so that the image is the group $SO(3)$ of rotations of the spacelike three-plane. The factor $\exp(\psi j)$ lies in the kernel of the action.
+so that the image is the group $SO(3)$ of rotations of the spacelike three-plane. The factor $\exp(\theta^{\mathrm{rpd}} j)$ lies in the kernel of the action.
 
-*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde{S}^{*} = (aa^{\natural} - bb^{\natural}) + j(ba^{\natural} - ab^{\natural}) = e_t$ gives the two conditions $aa^{\natural} - bb^{\natural} = 1$ and $ab^{\natural} = ba^{\natural}$; the second says $ab^{\natural}$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = \exp(\psi j)$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde{Q} = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde{Q}\in\mathbb{M}_-$. Then $\tilde{Q}^{*} = -a' - jb' = -\tilde{Q}$, and
+*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde{S}^{*} = (aa^{\natural} - bb^{\natural}) + j(ba^{\natural} - ab^{\natural}) = e_t$ gives the two conditions $aa^{\natural} - bb^{\natural} = 1$ and $ab^{\natural} = ba^{\natural}$; the second says $ab^{\natural}$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\theta^{\mathrm{rpd}} + j\sinh\theta^{\mathrm{rpd}})$ with $\sinh\theta^{\mathrm{rpd}} = t$, and since $j$ is central the factor $\cosh\theta^{\mathrm{rpd}} + j\sinh\theta^{\mathrm{rpd}} = \exp(\theta^{\mathrm{rpd}} j)$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde{Q} = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde{Q}\in\mathbb{M}_-$. Then $\tilde{Q}^{*} = -a' - jb' = -\tilde{Q}$, and
 
 $$
-\tilde S\tilde{Q}\tilde{S}^{*} = u(a' + jb')\exp(\psi j)\big(u^{\natural} - ju^{\natural}\,\sinh\psi\big)
+\tilde S\tilde{Q}\tilde{S}^{*} = u(a' + jb')\exp(\theta^{\mathrm{rpd}} j)\big(u^{\natural} - ju^{\natural}\,\sinh\theta^{\mathrm{rpd}}\big)
 = u a'u^{\natural} + j\,b' ,
 $$
 
-because $j$ is central, $\exp(\psi j)$ is central with $\exp(\psi j)\exp(\psi j){}^{*} = \exp(-\psi j)\exp(\psi j) = e_t$, and $b'$ is real and therefore commutes with $u$. Hence the first component is the adjoint action $a'\mapsto ua'u^{\natural}$ on the imaginary quaternions and the second is unchanged. The adjoint action of $Sp(1)$ on $\operatorname{Im}\mathbb{H}$ is the standard surjection $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, by *Quaternion Rotations and Reflections*, so the image is $SO(3)$. Preservation of $g$ follows because the displayed formula has $g$-norms $\lvert a'\rvert^2 - (b')^2$ unchanged. Finally the action of $\exp(\psi j)$ alone is trivial, so this factor lies in the kernel.
+because $j$ is central, $\exp(\theta^{\mathrm{rpd}} j)$ is central with $\exp(\theta^{\mathrm{rpd}} j)\exp(\theta^{\mathrm{rpd}} j){}^{*} = \exp(-\theta^{\mathrm{rpd}} j)\exp(\theta^{\mathrm{rpd}} j) = e_t$, and $b'$ is real and therefore commutes with $u$. Hence the first component is the adjoint action $a'\mapsto ua'u^{\natural}$ on the imaginary quaternions and the second is unchanged. The adjoint action of $Sp(1)$ on $\operatorname{Im}\mathbb{H}$ is the standard surjection $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, by *Quaternion Rotations and Reflections*, so the image is $SO(3)$. Preservation of $g$ follows because the displayed formula has $g$-norms $\lvert a'\rvert^2 - (b')^2$ unchanged. Finally the action of $\exp(\theta^{\mathrm{rpd}} j)$ alone is trivial, so this factor lies in the kernel.
 
 The $*$-unitary group therefore realises the **elliptic** part of the Lorentz group: the compact subgroup $SO(3)\subset SO^{+}(3,1)$ of spacelike rotations, which fixes the timelike direction $je_t$ and acts on the spacelike three-plane. The rotations obtained are exactly the conjugates of the quaternion rotations into the split biquaternion algebra.
 
@@ -253,7 +253,7 @@ $$
 
 fixing a null vector and no other, with $\langle\cdot\rangle_{\natural}$ nilpotent.
 
-The elliptic type is realised in the algebra by the exponentials of the quaternion vector fields in the $*$-unitary group of the preceding subsection; the hyperbolic type is realised by the split complex units $\exp(\psi j)$ and by their conjugates; both are exponents of elements with square $-e_t$ and $+e_t$ respectively in the algebra, in the sense of the exponentials of *Split-Biquaternion Roots of Minus One*. The parabolic type is not realised in the algebra at all, and the reason is structural:
+The elliptic type is realised in the algebra by the exponentials of the quaternion vector fields in the $*$-unitary group of the preceding subsection; the hyperbolic type is realised by the split complex units $\exp(\theta^{\mathrm{rpd}} j)$ and by their conjugates; both are exponents of elements with square $-e_t$ and $+e_t$ respectively in the algebra, in the sense of the exponentials of *Split-Biquaternion Roots of Minus One*. The parabolic type is not realised in the algebra at all, and the reason is structural:
 
 **Proposition.** The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ contains no non-zero nilpotent element, and consequently no element of $\mathbb{B}^{\mathrm{spl}}$ exponentiates to a parabolic one-parameter subgroup; the parabolic one-parameter subgroups exist only in the isometry group of the Lorentzian form, not in the algebra acting on itself.
 
@@ -402,7 +402,7 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 | $\operatorname{H}_{\tilde U}(\tilde Q) = \tilde U\tilde Q\tilde U^{*}$ | The bilinear sandwich of a general unit; the inner automorphism on the $*$-unitary subgroup |
 | $\langle\tilde U\rangle_{\natural,+}\langle\tilde U\rangle_{\natural,-}$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
 | kernel of $\operatorname{H}$ | The central $*$-unitary group, the split complex units of modulus one |
-| $\exp(\psi j) = \cosh\psi + j\sinh\psi$ | Split complex unit, hyperbolic one-parameter group |
+| $\exp(\theta^{\mathrm{rpd}} j) = \cosh\theta^{\mathrm{rpd}} + j\sinh\theta^{\mathrm{rpd}}$ | Split complex unit, hyperbolic one-parameter group |
 | $S(\mathbb{B}^{\mathrm{spl}})\cong S^3\times S^3$ | Norm-one unit sphere |
 | $C_0$, $C_{\pm1}$ | Null cone and hyperboloids in $\mathbb{M}_-$ |
 | $\mathbb{H}\tilde\Pi_1$, $\mathbb{H}\tilde\Pi_2$ | The two ideals, the set of zero divisors |

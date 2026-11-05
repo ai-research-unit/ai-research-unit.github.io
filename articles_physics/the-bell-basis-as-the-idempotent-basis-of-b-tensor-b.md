@@ -86,8 +86,8 @@ This is a **vector-space** identification only: the algebra product on $\mathbb{
 |---|---|---|
 | $\lvertΞ^{+}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert00\rangle+\lvert11\rangle)$ | $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ |
 | $\lvertΞ^{-}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert00\rangle-\lvert11\rangle)$ | $\tfrac{1}{\sqrt2}(e_t-\vec e_z)$ |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle+\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x+\vec e_y)$ |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x-\vec e_y)$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle+\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x+\vec e_y)$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x-\vec e_y)$ |
 
 At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
 
@@ -109,7 +109,7 @@ In the standard Hilbert-space formulation, the four Bell states of two spin-$\tf
 
 $$
 |Ξ^{\pm}\rangle=\frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle\pm|\downarrow\downarrow\rangle\right),\qquad
-|\tilde{Ξ}^{\mathrm{spn}\pm}\rangle=\frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle\pm|\downarrow\uparrow\rangle\right).
+|\tilde{Ξ}^{\mathrm{sp}\pm}\rangle=\frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle\pm|\downarrow\uparrow\rangle\right).
 $$
 
 In the biquaternion formulation each is an idempotent of $\mathbb{B}\otimes\mathbb{B}$. Following *Exercise: The Correlation Function of the Bell States*, write
@@ -128,10 +128,10 @@ There are exactly four such triples, and they correspond to the four Bell states
 
 | Bell state | $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ | Biquaternion idempotent $\tilde\Pi_\epsilon$ |
 |---|---|---|
-| $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t+\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z)$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t+\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z)$ |
 | $\lvertΞ^{+}\rangle$ | $(-1,+1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ |
 | $\lvertΞ^{-}\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t+\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t-\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z)$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t-\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z)$ |
 
 The first row is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ already fixed by the entangled-subsystems article; the other three rows are its companions. *Exercise: The Correlation Function of the Bell States* verified that each $\tilde\Pi_\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3=+1$ is idempotent and of trace one, so we do not repeat that computation. Two further properties are worth recording.
 
@@ -157,7 +157,7 @@ $$
 \tilde\Pi_\epsilon\;\longmapsto\;\tfrac{1}{4}\left(I\otimes I-\epsilon_1\,\sigma_1\otimes\sigma_1-\epsilon_2\,\sigma_2\otimes\sigma_2-\epsilon_3\,\sigma_3\otimes\sigma_3\right),
 $$
 
-which is exactly the standard Bell projector for the sign pattern in the table. For example, the singlet $\epsilon=(+1,+1,+1)$ gives $\tfrac14(I\otimes I-\sum_\mu\sigma_\mu\otimes\sigma_\mu)$, the projector onto $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$, in agreement with the entangled-subsystems article. The general idempotency condition $\epsilon_1\epsilon_2\epsilon_3=+1$ is the algebraic reflection of the fact that there are exactly four Bell states.
+which is exactly the standard Bell projector for the sign pattern in the table. For example, the singlet $\epsilon=(+1,+1,+1)$ gives $\tfrac14(I\otimes I-\sum_\mu\sigma_\mu\otimes\sigma_\mu)$, the projector onto $|\tilde{Ξ}^{\mathrm{sp}-}\rangle$, in agreement with the entangled-subsystems article. The general idempotency condition $\epsilon_1\epsilon_2\epsilon_3=+1$ is the algebraic reflection of the fact that there are exactly four Bell states.
 
 ## Orthogonality and Completeness
 
@@ -261,10 +261,10 @@ Equivalently, $\tilde\Pi_\epsilon$ is a joint eigen-idempotent of the two stabil
 
 | Bell state | $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ | $S_1=-\vec e_x\otimes \vec e_x$ | $S_3=-\vec e_z\otimes \vec e_z$ |
 |---|---|---|---|
-| $\lvert\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $(+1,+1,+1)$ | $-1$ | $-1$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $(+1,+1,+1)$ | $-1$ | $-1$ |
 | $\lvertΞ^{+}\rangle$ | $(-1,+1,-1)$ | $+1$ | $+1$ |
 | $\lvertΞ^{-}\rangle$ | $(+1,-1,-1)$ | $-1$ | $+1$ |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $(-1,-1,+1)$ | $+1$ | $-1$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ | $(-1,-1,+1)$ | $+1$ | $-1$ |
 
 The four eigenvalue pairs $(-\epsilon_1,-\epsilon_3)$ are all distinct, so the joint spectrum of $\{S_1,S_3\}$ is non-degenerate. In the language of quantum measurement, $\{S_1,S_3\}$ is a **complete set of commuting observables** (a CSCO), and the Bell idempotents are exactly the elements of its joint eigenbasis. The statement "the Bell basis is the eigenbasis of the stabiliser operators" is therefore not an analogy: it is the statement that a two-element CSCO of tensor-product observables has the four Bell idempotents as its spectral resolution.
 
@@ -280,7 +280,7 @@ $$
 
 form a Klein four-group, and each acts on $\tilde\Pi_\epsilon$ with eigenvalue $+1$. Indeed $-\epsilon_1S_1 \tilde\Pi_\epsilon=(-\epsilon_1)(-\epsilon_1)\tilde\Pi_\epsilon=\tilde\Pi_\epsilon$, and similarly for the other generators; the product acts with eigenvalue $(-\epsilon_1)(-\epsilon_3)=\epsilon_1\epsilon_3$, which is compensated by the explicit sign in front. This is the standard stabiliser group of a Bell state, expressed in the algebra $\mathbb{B}\otimes\mathbb{B}$.
 
-The stabiliser eigenvalues are also the entries of the correlation matrix of *Exercise: The Correlation Function of the Bell States*. That article defined $T_{\nu\mu}=\langle\tilde{Ξ}^{\mathrm{spn}}|\sigma_\nu\otimes\sigma_\mu|\tilde{Ξ}^{\mathrm{spn}}\rangle$ and found $T_{\nu\nu}=-\epsilon_\nu$ with vanishing off-diagonal entries. Since $S_\nu=-\vec e_\nu\otimes \vec e_\nu$ corresponds to $\sigma_\nu\otimes\sigma_\nu$, the diagonal entry $T_{\nu\nu}$ is exactly the eigenvalue of $S_\nu$ on $\tilde\Pi_\epsilon$. The correlation data and the stabiliser data are the same data, read in two ways.
+The stabiliser eigenvalues are also the entries of the correlation matrix of *Exercise: The Correlation Function of the Bell States*. That article defined $T_{\nu\mu}=\langle\tilde{Ξ}^{\mathrm{sp}}|\sigma_\nu\otimes\sigma_\mu|\tilde{Ξ}^{\mathrm{sp}}\rangle$ and found $T_{\nu\nu}=-\epsilon_\nu$ with vanishing off-diagonal entries. Since $S_\nu=-\vec e_\nu\otimes \vec e_\nu$ corresponds to $\sigma_\nu\otimes\sigma_\nu$, the diagonal entry $T_{\nu\nu}$ is exactly the eigenvalue of $S_\nu$ on $\tilde\Pi_\epsilon$. The correlation data and the stabiliser data are the same data, read in two ways.
 
 ## Maximal Entanglement and the Diagonal Tensor Structure
 
@@ -344,8 +344,8 @@ The four Bell idempotents are also a single orbit of one another. Conjugating $\
 
 $$
 \tilde\Pi_{Ξ^+}\xrightarrow{\,e_t\,}\tilde\Pi_{Ξ^+},\quad
-\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_x\,}\tilde\Pi_{\mathrm{spn}^+},\quad
-\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_y\,}\tilde\Pi_{\mathrm{spn}^-},\quad
+\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_x\,}\tilde\Pi_{\mathrm{sp}^+},\quad
+\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_y\,}\tilde\Pi_{\mathrm{sp}^-},\quad
 \tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_z\,}\tilde\Pi_{Ξ^-}.
 $$
 
@@ -360,7 +360,7 @@ The preceding section showed that the maximally entangled pure states form a con
 For a normalised pure two-qubit state
 
 $$
-\lvert\tilde{Ξ}^{\mathrm{spn}}\rangle=c_1\lvert00\rangle+c_2\lvert01\rangle+c_3\lvert10\rangle+c_4\lvert11\rangle ,
+\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle=c_1\lvert00\rangle+c_2\lvert01\rangle+c_3\lvert10\rangle+c_4\lvert11\rangle ,
 $$
 
 the **concurrence** is $C=2\lvert c_1c_4-c_2c_3\rvert$, and $C=1$ exactly when the state is maximally entangled in the partial-trace sense of this article. Thus maximal entanglement is the single equation
@@ -374,7 +374,7 @@ Obojska (*Journal of Physics Communications* **4** (2020) 055018), working in th
 **The premise already implies a continuum.** The proof of the corollary begins from the concurrence equation above, whose solution set is the entire continuum of maximally entangled states. The clearest family of solutions is
 
 $$
-\lvert\tilde{Ξ}^{\mathrm{spn}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle\right),\qquad \theta^{\mathrm{pha}}\in[0,2\pi),
+\lvert\tilde{Ξ}^{\mathrm{sp}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle\right),\qquad \theta^{\mathrm{pha}}\in[0,2\pi),
 $$
 
 for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}\exp(i\theta^{\mathrm{pha}})$, $c_2=c_3=0$, so $c_1c_4=\tfrac12 \exp(i\theta^{\mathrm{pha}})$, $\lvert c_1c_4-c_2c_3\rvert=\tfrac12$, and $C=1$ for every $\theta^{\mathrm{pha}}$. Every member of the family is maximally entangled. The source's own first case — $\lvert c_1\rvert=\lvert c_4\rvert$, $c_2=c_3=0$ — is exactly this family, so the free relative phase $\theta^{\mathrm{pha}}$ is already present in the source's case analysis.
@@ -382,7 +382,7 @@ for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}\exp(i\theta^{\mathrm{p
 **What the patterns select.** The twelve written patterns do not enumerate this family. They are obtained from the additional assumption — not part of the concurrence equation — that the quotient of the two amplitudes in the division lies in $\{-i,i,-1\}$. In every one of the twelve forms the relative phase of the two nonzero amplitudes is thereby fixed to one of the four values $0,\pm\pi/2,\pi$. A member of the family with $\theta^{\mathrm{pha}}=\pi/4$, say
 
 $$
-\lvert\tilde{Ξ}^{\mathrm{spn}}_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\pi/4)\lvert11\rangle\right),
+\lvert\tilde{Ξ}^{\mathrm{sp}}_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\pi/4)\lvert11\rangle\right),
 $$
 
 has $C=1$ and is of none of the twelve forms: its relative phase lies outside the discrete set. **Corollary 1 is therefore false as stated.** The twelve patterns are a proper subset of the maximally entangled states, namely the part admitted by the extra quotient assumption. (The source itself remarks that there are "uncountably many" such states, so the corollary can only be read as an exhaustiveness claim; that interpretation is what fails.)
@@ -453,7 +453,7 @@ The article established the following structure.
 - **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The partial trace of every Bell idempotent is the maximally mixed state, $\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.
 - **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)$ has concurrence zero — and never carries entanglement.
-- **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\tilde{Ξ}^{\mathrm{spn}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle)$ is maximally entangled for every $\theta^{\mathrm{pha}}$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
+- **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\tilde{Ξ}^{\mathrm{sp}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle)$ is maximally entangled for every $\theta^{\mathrm{pha}}$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
 
 All of this is standard finite-dimensional algebra, expressed in the conventions of the companion articles. The construction presupposes the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$; whether that algebra is canonical for the framework is an open question inherited from the companion articles and is left unresolved.
 
@@ -466,7 +466,7 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 | $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathbb{C}^4\cong\mathbb{B}$ | Two-qubit state space (state vectors) |
 | $\tfrac{1}{\sqrt2}(e_t\pm \vec e_z),\ \tfrac{1}{\sqrt2}(\vec e_x\pm \vec e_y)$ | Bell vectors written in the algebra basis |
 | $C=2\lvert c_1c_4-c_2c_3\rvert$ | Concurrence of a two-qubit pure state |
-| $\lvert\tilde{Ξ}^{\mathrm{spn}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\theta^{\mathrm{pha}}$ |
+| $\lvert\tilde{Ξ}^{\mathrm{sp}}_{\theta^{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\theta^{\mathrm{pha}})\lvert11\rangle)$ | Maximally entangled family, $C=1$ for every $\theta^{\mathrm{pha}}$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |

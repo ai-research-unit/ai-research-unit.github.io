@@ -21,7 +21,7 @@ Cosmology is a specific application of gravity, and it is worth stating the appl
 **The FLRW line element and its two functions.** A homogeneous and isotropic universe is described by the Friedmann–Lemaître–Robertson–Walker line element
 
 $$
-ds^2 = -c^2\,d{t'}^2 + a(t')^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
+ds^2 = -c^2\,d{r'_{t}}^2 + a(t')^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
 $$
 
 with a function and a parameter: the **scale factor** $a(t')$, which carries the expansion, and the **spatial-curvature parameter** $k \in \{-1,0,+1\}$, which selects the open, flat, or closed spatial geometry. This is standard cosmology, not framework content. It is the metric the framework's carrier would have to be able to write.
@@ -30,7 +30,7 @@ with a function and a parameter: the **scale factor** $a(t')$, which carries the
 
 $$\boxed{\;H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
-\frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
+\frac{d^2a/d{r'_{t}}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3}\;},$$
 
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\sum_\mu\nabla_\mu T_{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
 
@@ -85,13 +85,13 @@ The FLRW assumptions are imposed symmetries, and the two of them have different 
 The framework's own proposal for locality is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis, not the frame. In its derivative-rule interpretation (Reading B of *Curved Spacetime and the Biquaternion Framework*) it produces
 
 $$
-g_{\mu\nu} = \mathrm{diag}\left(-c_{\mathrm{loc}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2, 1, 1, 1\right), \qquad c_{\mathrm{loc}} = c,
+g_{\mu\nu} = \mathrm{diag}\left(-c_{\mathrm{loc}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)^2, 1, 1, 1\right), \qquad c_{\mathrm{loc}} = c,
 $$
 
 a class with one free function, no shift, and **flat spatial slices** $g_{ij} = \delta_{ij}$. Two consequences were recomputed here.
 
 - **A time-dependent local $c$ produces no expansion.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(t')$, the metric $g = \mathrm{diag}(-c_{\mathrm{loc}}(t')^2,1,1,1)$ is **flat**: the substitution $d\tau = c_{\mathrm{loc}}(t')\,dt'$ turns it into $-d\tau^2 +dx^2+dy^2+dz^2$, and a direct computation for $c_{\mathrm{loc}} = 2 + \sin t'$ gives an identically vanishing Riemann tensor. A "local scale on the imaginary time axis" is a reparametrisation of time; it cannot produce a scale factor or a Hubble rate, because the spatial metric is untouched.
-- **A spatially varying local $c$ produces curvature, but not an FLRW metric.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ the class is genuinely curved — recomputed here on the independent case $c_{\mathrm{loc}} = 2 + \cos y$, where the Riemann tensor is nonzero, a statement independent of the Riemann sign convention, and the parent's closed forms read $\mathrm{Ric}_{00} = c_{\mathrm{loc}}\,\Delta c_{\mathrm{loc}}$, $\mathrm{Ric}_{ij} = -\partial^2/\partial Q_i\partial Q_j c_{\mathrm{loc}}/c_{\mathrm{loc}}$, $R = -2\,\Delta c_{\mathrm{loc}}/c_{\mathrm{loc}}$ in the corpus's curvature convention, the convention of *Curvature and Geodesics* and of the linearized-gravity and gravitational-wave articles — but the spatial slices remain flat, $g_{ij} = \delta_{ij}$, so no member is FLRW with a non-constant scale factor or non-zero spatial curvature. Within the class, Ricci-flatness forces $c_{\mathrm{loc}}$ to be affine in the spatial coordinates and the metric to be flat (the parent's result). The opposite Riemann signature convention reverses every sign quoted here and nothing else; the convention is fixed once in the companion.
+- **A spatially varying local $c$ produces curvature, but not an FLRW metric.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ the class is genuinely curved — recomputed here on the independent case $c_{\mathrm{loc}} = 2 + \cos y$, where the Riemann tensor is nonzero, a statement independent of the Riemann sign convention, and the parent's closed forms read $\mathrm{Ric}_{00} = c_{\mathrm{loc}}\,\Delta c_{\mathrm{loc}}$, $\mathrm{Ric}_{ij} = -\partial^2/\partial Q_i\partial Q_j c_{\mathrm{loc}}/c_{\mathrm{loc}}$, $R = -2\,\Delta c_{\mathrm{loc}}/c_{\mathrm{loc}}$ in the corpus's curvature convention, the convention of *Curvature and Geodesics* and of the linearized-gravity and gravitational-wave articles — but the spatial slices remain flat, $g_{ij} = \delta_{ij}$, so no member is FLRW with a non-constant scale factor or non-zero spatial curvature. Within the class, Ricci-flatness forces $c_{\mathrm{loc}}$ to be affine in the spatial coordinates and the metric to be flat (the parent's result). The opposite Riemann signature convention reverses every sign quoted here and nothing else; the convention is fixed once in the companion.
 
 The conclusion is a negative but an exact one: **the framework's own locality device cannot produce the FLRW line element.** If a cosmological metric enters the framework, it enters by the frame route, which abandons the local complex structure as the carrier of curvature.
 
@@ -103,10 +103,10 @@ The decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ is a pointwise d
 
 *The Partition Function in Biquaternionic Form* reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.
 
-For a Hermitian Hamiltonian $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
+For a Hermitian Hamiltonian $\tilde R_\psi = h_te_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
 
 $$
-Z = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta\tilde{H})\right)=Z,
+Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
 $$
 
 the ordinary partition function of a **two-level system** with energies $h_t \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.

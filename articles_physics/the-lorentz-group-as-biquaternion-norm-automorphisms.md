@@ -162,16 +162,16 @@ $$
 the biquaternion norm is real and indefinite:
 
 $$
-\boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +x^2+y^2+z^2\ }\ .
+\boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $Q_t=ix_0$, $Q_k=x_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. Identifying $x_0 = ct'$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $Q_t=ix_0$, $Q_k=x_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. Identifying $x_0 = c r'_{t}$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
 | $\mathbb{H}_{\mathbb{B}}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $i\mathbb{H}_{\mathbb{B}}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
-| $\mathbb{M}_-$ | $ix_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $-x_0^2+x^2+y^2+z^2$ | $(3,1)$, timelike $x_0$ direction |
+| $\mathbb{M}_-$ | $ix_0e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-x_0^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $x_0$ direction |
 | $\mathbb{M}_+$ | $q_te_t+i\vec q$ | $q_t^2-\vec q^2$ | $(1,3)$, the mirror of $\mathbb{M}_-$ |
 
 The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{M}_-$.
@@ -336,7 +336,7 @@ $$
 T \longmapsto T , \qquad \vec X \longmapsto R\,\vec X ,
 $$
 
-a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}^{\mathrm{spn}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
+a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}^{\mathrm{sp}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
 
 $$
 T \longmapsto \cosh 2\theta^{\mathrm{rpd}}\,T + \sinh 2\theta^{\mathrm{rpd}}\,X_3 , \qquad
@@ -506,7 +506,7 @@ $$
 realized by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$ with $A,B\in SL(2,\mathbb{C})$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
 
 $$
-\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2 ,
+\langle i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2 ,
 $$
 
 so the automorphisms preserving the slice form $O(1,3)$, with identity component the restricted Lorentz group. That component is exactly the group of Hermitian sandwiches,
@@ -568,7 +568,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=ict'$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U^{\mathrm{lor}}$, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |

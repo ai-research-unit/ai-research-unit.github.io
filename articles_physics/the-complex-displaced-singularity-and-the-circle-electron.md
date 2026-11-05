@@ -15,10 +15,10 @@ The article is in three steps. It fixes the singular set of the displaced potent
 In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,
 
 $$
-\tilde{A} = i\,a'_t\,e_t \in \mathbb{M}_-, \qquad Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|},
+\tilde{A} = i\,a'_t\,e_t \in \mathbb{M}_-, \qquad Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|},
 $$
 
-where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.
+where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.
 
 Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\zeta,\eta,\upsilon)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
 
@@ -32,23 +32,23 @@ $$
 \Delta\tilde{Q} = \upsilon\,\vec e_z = -i\varrho\,\vec e_z .
 $$
 
-**The displacement is informational.** The element $-i\varrho \vec e_z$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $z' = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an **imaginary direction of the vector coefficient** — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.
+**The displacement is informational.** The element $-i\varrho \vec e_z$ has a purely imaginary vector coefficient, so it is an element of the informational sector $\mathbb{M}_+$, and in that sector's own coordinates it is the displacement $r'_{z} = -\varrho$ along the third informational axis. Lanczos's phrase "displacing the electron into complexified space" is, in the corpus's terms, displacing the singularity along an **imaginary direction of the vector coefficient** — that is, along $\mathbb{M}_+$. The field points themselves remain material: they are the real elements $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and the potential is evaluated on them. The construction therefore places the singularity in one sector and reads its field in the other.
 
 ### The Square of the Distance and the Ring
 
 With $\vec r_0 = -i\varrho \vec e_z$ the squared Euclidean separation is
 
 $$
-\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(x^2+y^2+z^2-\varrho^2\bigr) + 2i\,z\varrho ,
+\|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(r_x^2+r_y^2+r_z^2-\varrho^2\bigr) + 2i\,z\varrho ,
 $$
 
 a **complex** number, and the potential is the reciprocal square root of it,
 
 $$
-Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
+Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
 $$
 
-The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
+The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=r_x^2+r_y^2+r_z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
 
 $$
 \boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
@@ -79,7 +79,7 @@ The single-valued physical statement that survives is this: **the singular locus
 Because the potential is complex, its gradient is complex, and the field of the configuration
 
 $$
-\vec E(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\mathrm{grad}\,Ξ(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\bigl(\partial/\partial Q_xΞ\,\vec e_x + \partial/\partial Q_yΞ\,\vec e_y + \partial/\partial Q_zΞ\,\vec e_z\bigr)
+\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\mathrm{grad}\,Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\bigl(\partial/\partial Q_xΞ\,\vec e_x + \partial/\partial Q_yΞ\,\vec e_y + \partial/\partial Q_zΞ\,\vec e_z\bigr)
 $$
 
 has both a real and an imaginary part at every point off the ring and off the disk. Writing $Ξ=Ξ_R+iΞ_I$, the real part $-\mathrm{grad}\,Ξ_R$ is the electric field of the configuration and the imaginary part $-\mathrm{grad}\,Ξ_I$ is a second field that survives from the displacement into $\mathbb{M}_+$. The imaginary part is not an artefact of the bookkeeping: it is nonzero at generic points, as it must be whenever $\varrho\neq0$, and it vanishes identically at $\varrho=0$, where the point electron is recovered and the field is purely electric.
@@ -92,7 +92,7 @@ An electric field that acquires an imaginary component under a displacement of t
 
 The corpus records both statements and keeps them apart. What is certain is the algebra: the displacement into $\mathbb{M}_+$ produces a second field whose transformation character differs from that of the ordinary magnetic field. Whether it is called magnetic, mesomagnetic, or a mere imaginary part of a complexified electric field is a question of **physical interpretation** that the algebra does not decide.
 
-**The far field is the point field.** The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$. The ring is invisible from far away.
+**The far field is the point field.** The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|$. The ring is invisible from far away.
 
 ## The Ring in Imaginary Motion
 
@@ -246,7 +246,7 @@ The ring is also the static member of a family. Kassandrov's congruence construc
 |---|---|
 | $Ξ$ | Scalar potential; the displaced Coulomb potential $1/\sqrt{x^2+y^2+(z+i\varrho)^2}$, up to the charge factor |
 | $\vec r_0 = -i\varrho \vec e_z$ | Position of the singularity, displaced into the informational sector |
-| $\Delta\tilde{Q} = -i\varrho \vec e_z$ | The displacement itself; an element of $\mathbb{M}_+$ with $z'=-\varrho$ |
+| $\Delta\tilde{Q} = -i\varrho \vec e_z$ | The displacement itself; an element of $\mathbb{M}_+$ with $r'_{z}=-\varrho$ |
 | $\varrho$ | Magnitude of the imaginary displacement; radius of the circle electron |
 | $r_*=r+i\varrho\cos\theta$ | Displaced distance in the oblate spheroidal coordinates $(r,\theta)$ of the Kerr solution, $r_*^2=x^2+y^2+(z+i\varrho)^2$; its two signs are Kerr's two sheets |
 | $\lambda$ | Length of a constant imaginary shift $z\mapsto z+i\lambda$; $a=J/(Mc)$ for the Kerr ring, $\lvert a\rvert=\hbar/2Mc$ in the algebrodynamical ring, $\varrho$ here |

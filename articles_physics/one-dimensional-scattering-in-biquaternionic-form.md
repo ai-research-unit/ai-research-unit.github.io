@@ -14,7 +14,7 @@ a multiple of the identity, because a scalar potential couples to the scalar slo
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the Hermitian form, read through the trace. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -23,18 +23,18 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 For a particle of mass $m$ in a real potential $V(x)$, the stationary equation is
 
 $$
-H\,\tilde{Ξ}^{\mathrm{spn}} = E\,\tilde{Ξ}^{\mathrm{spn}},
+H\,\tilde{Ξ}^{\mathrm{sp}} = E\,\tilde{Ξ}^{\mathrm{sp}},
 \qquad
 H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_t(x)\,e_t,
 $$
 
-with $\tilde{Ξ}^{\mathrm{spn}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
+with $\tilde{Ξ}^{\mathrm{sp}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
 -\frac{\hbar^2}{2m}\frac{d^2\xi^{\mathrm{scl}}}{dx^2}(x) + V(x)\xi^{\mathrm{scl}}(x) = E\,\xi^{\mathrm{scl}}(x)
 $$
 
-for the scalar envelope $\xi^{\mathrm{scl}}$, and every solution has the form $\tilde{Ξ}^{\mathrm{spn}} = \xi^{\mathrm{scl}}\,\xi$ with $\xi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
+for the scalar envelope $\xi^{\mathrm{scl}}$, and every solution has the form $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\,\xi$ with $\xi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
 
 Away from the points where $V$ jumps, the potential is constant on each interval, and the solutions are exponentials. Writing $V = V_j$ and
 
@@ -55,10 +55,10 @@ A potential that is piecewise constant is therefore solved by matching the coeff
 The one-dimensional current is the reduction of the general current of the free-particle article. For a stationary state it is
 
 $$
-J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}\dagger} \frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}\right)^\dagger \tilde{Ξ}^{\mathrm{spn}}\right),
+J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger} \frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}\right)^\dagger \tilde{Ξ}^{\mathrm{sp}}\right),
 $$
 
-For a factorised field $\tilde{Ξ}^{\mathrm{spn}} = \xi^{\mathrm{scl}}\,\xi$ with $\mathrm{Tr}(\xi^\dagger\xi)=1$ this reduces to the familiar scalar expression
+For a factorised field $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\,\xi$ with $\mathrm{Tr}(\xi^\dagger\xi)=1$ this reduces to the familiar scalar expression
 
 $$
 J = \frac{\hbar}{2mi}\left({\xi^{\mathrm{scl}}}^*\frac{d\xi^{\mathrm{scl}}}{dx} - \left(\frac{d\xi^{\mathrm{scl}}}{dx}\right)^*\xi^{\mathrm{scl}}\right)
@@ -83,7 +83,7 @@ $$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$
 
-The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}^{\mathrm{spn}\dagger}$ with $\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}) = |\xi^{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
+The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}^{\mathrm{sp}\dagger}$ with $\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) = |\xi^{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
 
 ## The Scattering Problem
 
@@ -368,7 +368,7 @@ There is no spin-flip amplitude, and more: there is no spin-dependent amplitude 
 The attractive delta well and the finite square well possess normalisable bound states at $E<0$. In the biquaternion form these are fields in the state module with an exponential envelope,
 
 $$
-\tilde{Ξ}^{\mathrm{spn}}(x) = \xi^{\mathrm{scl}}_b(x)\,\xi,
+\tilde{Ξ}^{\mathrm{sp}}(x) = \xi^{\mathrm{scl}}_b(x)\,\xi,
 \qquad
 \xi^{\mathrm{scl}}_b \in L^2(\mathbb{R}),
 $$
@@ -398,7 +398,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 **What the biquaternion notation provides.**
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
-- **A flux from the plain form.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{spn}})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
+- **A flux from the plain form.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{sp}})$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
 - **One notion of unit resolved.** The $S$-matrix is $*$-unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
@@ -421,9 +421,9 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Summary
 
-The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\tilde{Ξ}^{\mathrm{spn}} = E\tilde{Ξ}^{\mathrm{spn}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}^{\mathrm{spn}} = \xi^{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
+The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\tilde{Ξ}^{\mathrm{sp}} = E\tilde{Ξ}^{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{spn}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
 The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
@@ -440,12 +440,12 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
 | $H = [-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x)]e_t$ | Central Hamiltonian |
-| $\tilde{Ξ}^{\mathrm{spn}} = \xi^{\mathrm{scl}}\,\xi$ | Factorised stationary state |
+| $\tilde{Ξ}^{\mathrm{sp}} = \xi^{\mathrm{scl}}\,\xi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |
-| $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{spn}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{spn}})$ | One-dimensional current |
+| $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}^{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}^{\mathrm{sp}})$ | One-dimensional current |
 | $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
-| $\rho = \mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}) = |\xi^{\mathrm{scl}}|^2$ | Density |
+| $\rho = \mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) = |\xi^{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
 | $\beta = m\lambda/\hbar^2 k$ | Dimensionless delta-potential coupling |
@@ -453,7 +453,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $M$ | Transfer matrix; preserves the flux form |
 | $\tau_W = \hbar\,d\arg t/dE$ | Wigner time delay; a scalar |
 | $\tilde S = S\otimes I_2$ | Scattering matrix central in the module |
-| $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
+| $\mathrm{Tr}(\tilde R_\psi) = 2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading

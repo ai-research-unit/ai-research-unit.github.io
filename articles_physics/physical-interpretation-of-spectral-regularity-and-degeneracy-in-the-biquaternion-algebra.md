@@ -109,7 +109,7 @@ The identity $L_{\vec Q}^2=-B^2\,\mathrm{id}$ is the algebraic core of the whole
 
 This is the sense in which $B$ is **operator-linked**. It is the coefficient of the complex structure of the operator, not the speed of a motion of the element. The word *clock* is a name for that structure: $J_{\tilde Q}$ has period $2\pi$ in the flow parameter, and the element's rate $B$ converts the period to $2\pi/B$. At $B=0$ the clock stops, and the flow becomes a unipotent translation.
 
-**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $-i\tilde H$ in the convention $e^{-i\tilde Ht}$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics. The complex structure $J_{\tilde Q}$ is internal: it is a root of $-\mathrm{id}$ on $\mathbb{B}$, not the local complex structure of the material sector, which is a choice of real slice and imaginary-time direction.
+**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $-i H$ in the convention $e^{-i\tilde R_\psit}$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics. The complex structure $J_{\tilde Q}$ is internal: it is a root of $-\mathrm{id}$ on $\mathbb{B}$, not the local complex structure of the material sector, which is a choice of real slice and imaginary-time direction.
 
 ### The Four Sectors
 
@@ -364,17 +364,17 @@ The real part is a dilation, the imaginary part a phase. Both are central: they 
 
 **Boundary.** A global phase is not an observable, and a scale is not a physical field. The interpretation is licensed for the centre; it does not say that every scalar is a gauge transformation, and it does not supply a gauge field.
 
-**Interpretation 2: the rest frame and time-only displacement.** In the material sector the scalar is $Q_t=ict'$, so
+**Interpretation 2: the rest frame and time-only displacement.** In the material sector the scalar is $Q_t=i c r'_t$, so
 
 $$
-\tilde X=ict'e_t,
+\tilde X=i c r'_te_t,
 \qquad
 \langle\tilde X\rangle_{\natural}=-c^2t'^2.
 $$
 
 The element is a purely temporal displacement: a worldline with no spatial part. The four-velocity of a particle at rest is the same kind of element, $ic\,e_t$. The physical interpretation is **time only**: a clock reading with no direction in space, and no spatial momentum. For a four-momentum it is the rest frame, because $B^2=\lvert\vec p\rvert^2$ vanishes exactly at $\vec p=0$; for a general material element it is the whole time axis.
 
-**Boundary.** A rest frame exists only for a massive particle; the algebra gives the interval, not the mass. The scalar $ict'$ is a displacement, not a duration measured by a particular clock; the identification of $t'$ with a physical time is the material-sector dictionary, not a consequence of the spectrum.
+**Boundary.** A rest frame exists only for a massive particle; the algebra gives the interval, not the mass. The scalar $i c r'_t$ is a displacement, not a duration measured by a particular clock; the identification of $t'$ with a physical time is the material-sector dictionary, not a consequence of the spectrum.
 
 **Interpretation 3: the trivial observable and the maximally mixed state.** In the informational sector a Hermitian scalar $h_te_t$ is a multiple of the identity. Every state is an eigenstate with the same outcome $h_t$, and no measurement basis is selected. The trace-one scalar $\tfrac12e_t$ is the maximally mixed state; the scalar line is where the Bloch vector vanishes.
 
@@ -402,7 +402,7 @@ The last identity is the sharp one: the element $\vec N$ is a zero divisor, but 
 
 **Interpretation 2: a null translation.** The identity $\vec N^2=0$ says that the displacement is square-zero: the generator applied twice vanishes, so the exponential truncates at first order. The exponential $e_t+\theta\vec N$ is a one-parameter group of unipotent transformations whose generator is a zero divisor. The physical interpretation is a **reversible translation with a non-invertible generator**: the motion can be undone, the velocity cannot be inverted.
 
-**Boundary.** The physical lightlike displacement is real and has $Q_t=ict'\neq0$ and $B=\lvert\vec x\rvert\neq0$ away from the origin; it is spectrally regular, not nilpotent. The nilpotent is the complex isotropic model of a null direction; the two must not be identified. This is the same distinction as *the nilpotent is not a four-momentum*, stated for displacements rather than momenta.
+**Boundary.** The physical lightlike displacement is real and has $Q_t=i c r'_t\neq0$ and $B=\lvert\vec x\rvert\neq0$ away from the origin; it is spectrally regular, not nilpotent. The nilpotent is the complex isotropic model of a null direction; the two must not be identified. This is the same distinction as *the nilpotent is not a four-momentum*, stated for displacements rather than momenta.
 
 **Interpretation 3: a zero-frequency one-way coupling.** The matrix normal form is a Jordan block at zero,
 

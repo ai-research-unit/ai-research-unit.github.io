@@ -10,7 +10,7 @@ The distinction between one Kraus operator, an instrument, and a channel is the 
 
 This article is the pilot of the polar programme in the physics corpus: the object is the Kraus operator of a measurement outcome, the examples are two-dimensional, and every numerical claim is checked in the matrix model. It does not derive the measurement postulate or classify channels; it tests the grammar of the generalized Cartan pairing on the object where that grammar has the most work to do.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{M}_+$, the anti-Hermitian subspace is $\mathbb{M}_-$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde K_H$ and the partial isometry $\tilde K_0$; they are the $\tilde K_H$ and $\tilde K_0$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde H_R$ and the $*$-unitary element $\tilde K_0$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{M}_+$, the anti-Hermitian subspace is $\mathbb{M}_-$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde K_H$ and the partial isometry $\tilde K_0$; they are the $\tilde K_H$ and $\tilde K_0$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{R}_{\psi,R}$ and the $*$-unitary element $\tilde K_0$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
 
 ## The Results It Uses
 
@@ -118,7 +118,7 @@ and $\tilde K$ is $*$-unitary. Conversely, if $\tilde K_H=e_t$ and $\tilde K_0$ 
 
 > A one-Kraus channel is trace preserving if and only if its positive factor is trivial; the channel is then conjugation by a $*$-unitary biquaternion.
 
-This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde H_R\in\mathbb{M}_+$ generates the $*$-unitary factor through $\tilde K_0=\exp(-i\tilde H_Rt'/\hbar)$, and the generator $-i\tilde H_R/\hbar$ lies in $\mathbb{M}_-$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
+This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde{R}_{\psi,R}\in\mathbb{M}_+$ generates the $*$-unitary factor through $\tilde K_0=\exp(-i H_{R}t'/\hbar)$, and the generator $-i H_{R}/\hbar$ lies in $\mathbb{M}_-$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
 
 ### What Trace Preservation Does Not Say
 
@@ -293,10 +293,10 @@ The order is fixed by the word: the $*$-unitary factor acts first, then the posi
 
 ### A Worked Unsharp Outcome
 
-Take the strength $\tilde H_0=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde K=\tilde Q_{\mathrm{ba}}\tilde H_0$. The polar factors are
+Take the strength $\tilde{R}_{\psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde K=\tilde Q_{\mathrm{ba}}\tilde{R}_{\psi,0}$. The polar factors are
 
 $$
-\tilde K_H=\tilde Q_{\mathrm{ba}}\tilde H_0\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad
+\tilde K_H=\tilde Q_{\mathrm{ba}}\tilde{R}_{\psi,0}\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad
 \tilde K_0=\tilde Q_{\mathrm{ba}},
 $$
 
@@ -304,7 +304,7 @@ and the amplitude is $\tilde K=0.692820323e_t+0.4\vec e_x+0.1i\vec e_y-0.1732050
 The effect is
 
 $$
-\boxed{\;\tilde E=\tilde K^{*}\tilde K=\tilde H_0^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z}\;},
+\boxed{\;\tilde E=\tilde K^{*}\tilde K=\tilde{R}_{\psi,0}^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z}\;},
 $$
 
 with eigenvalues $0.36$ and $1$. The outcome is unsharp: the effect is full rank, no direction is annihilated, and the backaction is a rotation by $60^{\circ}$ about $\vec e_x$. The strength is the pair $\{0.6,1\}$; the effect sees its squares. The complement $e_t-\tilde E=0.64\tilde\Pi_{\vec e_z}$ is rank one, with Kraus operator $0.8\tilde\Pi_{\vec e_z}$, which is null. The two outcomes resolve the identity: one is unsharp and invertible, the other is rank one and on the cone. The example shows the boundary in a single instrument.
@@ -317,13 +317,13 @@ A channel is a sum of terms, and the polar decomposition applies to each term se
 
 $$
 Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}
-=\sum_l\tilde H_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}\tilde U_{\mathrm{p},l}^{*}\tilde H_{\mathrm{pos},l}.
+=\sum_l\tilde R_\psi_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}\tilde U_{\mathrm{p},l}^{*}\tilde R_\psi_{\mathrm{pos},l}.
 $$
 
 Trace preservation is
 
 $$
-\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
+\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde R_\psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
 $$
 
 The polar decomposition of the sum is not the sum of the polar decompositions. The object decomposed here is each Kraus operator; the channel is a completely positive map, and its own polar decomposition as an operator on the Hilbert–Schmidt space is a different statement, not made here.
@@ -347,7 +347,7 @@ $$
 \tilde K_1=\sqrt{\tfrac p2}\,Z,\qquad Z=i\vec e_z,
 $$
 
-with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
+with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde R_\psi_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde R_\psi_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
 
 The example states the article's negative thesis. The reversibility of a channel is not the triviality of a single strength and not the unitarity of a single backaction. It is the minimal number of terms in the sum.
 
@@ -386,7 +386,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | sharp outcome | $\tilde K=\tilde\Pi$: $\tilde K_H=\tilde K_0=\tilde\Pi$, $\tilde E=\tilde\Pi$, on the null cone |
 | soft rank-one outcome | $\tilde K=\sigma\tilde\Pi$: $\tilde K_H=\sigma\tilde\Pi$, $\tilde K_0=\tilde\Pi$, $\tilde E=\sigma^{2}\tilde\Pi$ |
 | unsharp outcome | $\tilde K$ invertible: $\tilde K_H>0$, $\tilde K_0$ $*$-unitary, $\tilde E>0$ |
-| channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
+| channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde R_\psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
 | dephasing | two scalar strengths and two $*$-unitary backactions, minimal Kraus rank two, irreversible for $p>0$ |
 
 ## Summary of Notation

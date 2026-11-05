@@ -40,10 +40,10 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $\langle d\tilde{R}\rangle_{\natural}=-c^2d{t'}^2+dx^2+dy^2+dz^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=h_t+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
+| Relativistic point mechanics | $\langle d\tilde R_\varphi\rangle_{\natural}=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$; massless case $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}=0$ | Dirac equation, mass term |
+| Dirac field | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$; massless case $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\pi^2\hbar c/(240a^4)$, attractive | Standard Casimir force, reproduced |
@@ -95,13 +95,13 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
 
-**The framework-specific quantity.** The local speed $c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=1/\sqrt{\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$.
+**The framework-specific quantity.** The local speed $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=1/\sqrt{\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$.
 
 **Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
 
 **The existing bound.** None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure interpretation, because that interpretation makes no claim about their values.
 
-**Verdict.** Not a signature. The *locality* of the complex structure is inherited entirely from the standard locality of $c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so any observable sensitive to it is already an observable of standard medium electromagnetism.
+**Verdict.** Not a signature. The *locality* of the complex structure is inherited entirely from the standard locality of $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so any observable sensitive to it is already an observable of standard medium electromagnetism.
 
 ### A Second Light Cone, or Vacuum Birefringence
 
@@ -203,9 +203,9 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### An External Programme That Varies the Speed of Light
 
-**The candidate.** A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.
+**The candidate.** A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.
 
-**The framework-specific quantity.** None of the framework's. The programme uses the four-velocity biquaternion, the semi-biquaternion product, and the complexified four-position, which the corpus's companion articles read as a rewriting of standard four-vector kinematics. Its distinctive content is the added hypothesis that $c$ varies with position and that the line element is $ds^2=-f^2c_0^2\,d{t'}^2+(dr^2+r^2d\Omega^2)/f^2$. The algebra does not force either.
+**The framework-specific quantity.** None of the framework's. The programme uses the four-velocity biquaternion, the semi-biquaternion product, and the complexified four-position, which the corpus's companion articles read as a rewriting of standard four-vector kinematics. Its distinctive content is the added hypothesis that $c$ varies with position and that the line element is $ds^2=-f^2c_0^2\,d{r'_{t}}^2+(dr^2+r^2d\Omega^2)/f^2$. The algebra does not force either.
 
 **Derived or posited.** Mixed, and the split is the point. The profile is **fitted**, not derived: it comes from setting the model's force law equal to Newton's, so Newton's law is the input. The inverse squaring of the spatial part of the line element is a **second posit**, independent of the profile, and it is what carries the construction to the Schwarzschild form. The consequence is checkable and worth stating: at the profile the paper derives, $f=\exp(-r_s/(2r))$, the metric is **not** Ricci-flat ($\mathrm{Ric}_{11}=-r_s^2/(2r^4)$ in the corpus's curvature convention, recomputed here), so it is not a vacuum solution of Einstein's equations. The Schwarzschild metric is the first-order truncation of that profile, which is why the classical tests come out right at leading order and differ only at order $(r_s/r)^2$.
 
@@ -269,7 +269,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
-| $\tilde{H}=h_te_t+i\vec h$ | Hermitian element (observable) |
+| $\tilde R_\psi=h_te_t+i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace reading of the Hermitian form (on which the Born rule is written) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

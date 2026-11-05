@@ -14,7 +14,7 @@ $$
 
 so it reverses a commutator and preserves an anticommutator, the reason being that the order reversal of the adjoint and the Koszul sign of the bracket multiply, and cancel exactly on an odd-odd pair. The third is that this is a statement about the *convention*: the Koszul-signed rule of a super-* would make the star an anti-automorphism of the bracket without the extra sign, and the corpus's star does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses — and why it has to be that one: on the other convention the square of a Hermitian odd element is anti-Hermitian, so the Hamiltonian would be imaginary.
 
-The body is written in **elements**. The field is an element $\tilde{Ξ}^{\mathrm{spn}}$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in *The Legacy Pauli Gamma Formulation*, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.
+The body is written in **elements**. The field is an element $\tilde{Ξ}^{\mathrm{sp}}$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in *The Legacy Pauli Gamma Formulation*, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.
 
 The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are restated here in the form the physics uses; the parity interpretation of the ambient algebra and the sectors are *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*; the supercharge pair and the chirality label are *Supersymmetric Quantum Physics in the Biquaternion Framework*; the Grassmann envelope is *Grassmann Coherent States in Biquaternionic Form* and *BRST Symmetry in Biquaternionic Form*; the commutator bracket and the trace-free part are *Symmetric and Antisymmetric Decomposition of the Four General Products*; the one-mode parity is *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. Nothing owned by those articles is re-derived.
 
@@ -322,8 +322,8 @@ by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempoten
 **The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R ,
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
@@ -390,7 +390,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | The one-sided Dirac equation, the chiral pair |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial t'+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 
 ## Further Reading

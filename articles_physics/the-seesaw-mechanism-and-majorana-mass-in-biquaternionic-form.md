@@ -10,7 +10,7 @@ $$
 
 so that a Dirac mass of the electroweak scale and a heavy mass near $10^{14}$–$10^{15}$ GeV produce a light mass of order $0.05$ eV. The mechanism is not a model of the light mass alone but a statement about two masses of different kinds: the **Dirac mass**, which pairs two independent chiralities and conserves fermion number, and the **Majorana mass**, which pairs a field with its own conjugate and violates fermion number by two units. The seesaw is the mixing of the two.
 
-The biquaternion framework has already separated the two kinds, and that separation is the reason this article can be written at all. The framework's Dirac mass is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, through which the vector central phase passes; the framework's antilinear object is the real structure $\flat=-{}^{*}$, and the genuinely conjugate pairing built on it is a separate equation. The companion articles on antilinear structure and on the neutrino establish the distinction and the module reality condition $\mathcal{C}:\tilde{Ξ}^{\mathrm{spn}}\mapsto K\tilde{Ξ}^{\mathrm{spn}*}$ with $\mathcal{C}^2=1$. This article asks what the framework supplies for the seesaw, and states the answer in the corpus's three categories.
+The biquaternion framework has already separated the two kinds, and that separation is the reason this article can be written at all. The framework's Dirac mass is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, through which the vector central phase passes; the framework's antilinear object is the real structure $\flat=-{}^{*}$, and the genuinely conjugate pairing built on it is a separate equation. The companion articles on antilinear structure and on the neutrino establish the distinction and the module reality condition $\mathcal{C}:\tilde{Ξ}^{\mathrm{sp}}\mapsto K\tilde{Ξ}^{\mathrm{sp}*}$ with $\mathcal{C}^2=1$. This article asks what the framework supplies for the seesaw, and states the answer in the corpus's three categories.
 
 - **Established, and recomputed below.** The seesaw requires both masses, and the framework has both: the Dirac block of the mass matrix is the linear chiral pair, and the heavy Majorana block is the conjugate pairing on the module's real structure (or, for the single-field equation, on the algebra's real structure $\flat$). The light eigenvalue of the one-generation mass matrix is $m_\nu=-m_D^2/M_R$ to leading order in $m_D/M_R$, and the heavy one is $M_R$; the mixing is of order $m_D/M_R$. The $2\times2$ eigenvalues were computed exactly, and the light-mass suppression was verified.
 - **Standard, transcribed.** The type-I seesaw matrix and its block diagonalisation, the general formula $m_\nu\simeq-m_DM_R^{-1}m_D^{T}$, the dimension-five Weinberg operator, and the scale $v^2/\Lambda$ are standard. They are stated in the framework's notation and the one-generation and diagonal cases are verified.
@@ -30,12 +30,12 @@ The framework results used here are those of the companion articles:
 **The Dirac mass is the linear chiral pair.** The framework's massive Dirac fermion is
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m_D\tilde{Ξ}^{\mathrm{spn}}_L , \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m_D\tilde{Ξ}^{\mathrm{spn}}_R ,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m_D\tilde{Ξ}^{\mathrm{sp}}_L , \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m_D\tilde{Ξ}^{\mathrm{sp}}_R ,
 $$
 
 which couples the two independent chiral halves and conserves the vector (fermion-number) central phase: the phase $\exp(i\alpha)$ passes through $m_D$ because it is central, and the mass is invariant. In the module language the Dirac mass is a bilinear pairing $S$ with $\bar{S}$, and the fermion number $L-R$ is conserved.
 
-**The Majorana mass is a self-conjugate pairing.** A Majorana mass pairs a field with its own charge conjugate, $\tilde{Ξ}^{\mathrm{spn}c}=\mathcal{C}\tilde{Ξ}^{\mathrm{spn}}$, which is an antilinear involution on the module with $\mathcal{C}^2=1$; its fixed space has real dimension four. Such a mass term is permitted — the module's real structure commutes with the kinetic operator — but it violates fermion number by two units, because it converts a fermion into an antifermion. In the framework the antilinear object is the real structure, and the companion articles keep it strictly separate from the linear chiral pair; the present article does not conflate them.
+**The Majorana mass is a self-conjugate pairing.** A Majorana mass pairs a field with its own charge conjugate, $\tilde{Ξ}^{\mathrm{sp}c}=\mathcal{C}\tilde{Ξ}^{\mathrm{sp}}$, which is an antilinear involution on the module with $\mathcal{C}^2=1$; its fixed space has real dimension four. Such a mass term is permitted — the module's real structure commutes with the kinetic operator — but it violates fermion number by two units, because it converts a fermion into an antifermion. In the framework the antilinear object is the real structure, and the companion articles keep it strictly separate from the linear chiral pair; the present article does not conflate them.
 
 **Why the seesaw needs both.** The mechanism has three ingredients, and each is a different object.
 
@@ -109,7 +109,7 @@ a complex symmetric $3\times3$ matrix whose eigenvalues are the light masses. Th
 **The mass matrix in the framework's objects.** The three blocks of the seesaw matrix are three different framework objects.
 
 - The **upper-left zero** is the absence of a renormalisable Majorana pairing for $\nu_L\in S$; the module's gauge quantum numbers forbid it at the renormalisable level.
-- The **off-diagonal $m_D$** is the linear chiral pair, the coefficient of $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m_D\tilde{Ξ}^{\mathrm{spn}}_L$, with the central phase passing through it.
+- The **off-diagonal $m_D$** is the linear chiral pair, the coefficient of $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m_D\tilde{Ξ}^{\mathrm{sp}}_L$, with the central phase passing through it.
 - The **lower-right $M_R$** is the conjugate self-pairing on the singlet, the Majorana mass built on the real structure; it is the object that violates fermion number by two and that the companion articles keep separate from the linear pair.
 
 The seesaw is therefore not a single biquaternion equation but a **mixing of the two kinds of mass**; the framework's separation of the two is what makes the mixing expressible. The light eigenvalue is the double suppression of the linear pairing by the conjugate pairing.
@@ -122,7 +122,7 @@ The seesaw is therefore not a single biquaternion equation but a **mixing of the
 
 ## The Majorana Condition and the Counting of States
 
-**The condition halves the components.** A four-component Dirac spinor carries four complex components, and charge conjugation maps it to a different spinor. The Majorana condition $\tilde{Ξ}^{\mathrm{spn}c}=\mathcal{C}\tilde{Ξ}^{\mathrm{spn}}$ identifies a spinor with its conjugate, and the fixed space of the antilinear involution $\mathcal{C}$ on $\Delta$ has real dimension four, i.e. the Majorana spinor carries **two** independent complex components — one Weyl spinor. The counting is the framework's own: the real structure on the module has a real fixed space of half the real dimension, and the companion article on the neutrino establishes the algebra of $\mathcal{C}$ on $\Delta$.
+**The condition halves the components.** A four-component Dirac spinor carries four complex components, and charge conjugation maps it to a different spinor. The Majorana condition $\tilde{Ξ}^{\mathrm{sp}c}=\mathcal{C}\tilde{Ξ}^{\mathrm{sp}}$ identifies a spinor with its conjugate, and the fixed space of the antilinear involution $\mathcal{C}$ on $\Delta$ has real dimension four, i.e. the Majorana spinor carries **two** independent complex components — one Weyl spinor. The counting is the framework's own: the real structure on the module has a real fixed space of half the real dimension, and the companion article on the neutrino establishes the algebra of $\mathcal{C}$ on $\Delta$.
 
 **Two Majorana fields are one Dirac field.** A Dirac field is equivalent to two Majorana fields of equal mass, and the equivalence is the statement that the module splits, through the real structure, into two copies of the fixed space. The type-I seesaw is a precise realisation of this counting. When the self-conjugate mass vanishes, $M_R=0$, the mass matrix is $\begin{pmatrix}0&m_D\\ m_D&0\end{pmatrix}$, whose eigenvalues are $\pm m_D$: the light and heavy Majorana states are degenerate and reassemble into one Dirac field of mass $m_D$. A nonzero $M_R$ splits the degeneracy and separates the pair into a light and a heavy Majorana state, which is the seesaw. The reassembly works exactly when the self-conjugate mass vanishes, because the degeneracy is what permits the pair to be combined into a single four-component field.
 
@@ -177,19 +177,19 @@ The observed light neutrino mass scale, inferred from the atmospheric and solar 
 **The tree-level matching.** The light mass can be derived rather than diagonalised. Take the renormalisable Lagrangian of one generation with a singlet $N_R$,
 
 $$
-\mathcal{L} = y\,\bar{L}\tilde{H}N_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
+\mathcal{L} = y\,\bar{L}\tilde R_\psiN_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
 $$
 
-where $y$ is the Yukawa coupling, $\tilde{H}=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is
+where $y$ is the Yukawa coupling, $\tilde R_\psi=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is
 
 $$
-\overline{N_R^{c}} = -\frac{y}{M_R}\,\bar{L}\tilde{H} ,
+\overline{N_R^{c}} = -\frac{y}{M_R}\,\bar{L}\tilde R_\psi ,
 $$
 
 which is algebraic, so the heavy field can be eliminated exactly at tree level. Substituting it back gives a dimension-five operator among the light fields alone,
 
 $$
-\mathcal{L}_5 = -\frac{y^2}{M_R}\,(\bar{L}\tilde{H})(\tilde{H}^{T}L^{c}) + \text{h.c.},
+\mathcal{L}_5 = -\frac{y^2}{M_R}\,(\bar{L}\tilde R_\psi)(\tilde R_\psi^{T}L^{c}) + \text{h.c.},
 $$
 
 the Weinberg operator, with coefficient $c_5/\Lambda = y^2/M_R$. After electroweak symmetry breaking the operator generates the light Majorana mass
@@ -247,7 +247,7 @@ which is the leading result of the matrix diagonalisation, obtained now by elimi
 
 ## Summary
 
-The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the **Dirac mass** is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m_D\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m_D\tilde{Ξ}^{\mathrm{spn}}_R$, which conserves fermion number; the **Majorana mass** is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_L,\nu_R^{c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\lambda_-\simeq-m_D^2/M_R$ and the heavy one is $\lambda_+\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_\nu=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_\nu\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.
+The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the **Dirac mass** is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m_D\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m_D\tilde{Ξ}^{\mathrm{sp}}_R$, which conserves fermion number; the **Majorana mass** is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_L,\nu_R^{c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\lambda_-\simeq-m_D^2/M_R$ and the heavy one is $\lambda_+\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_\nu=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_\nu\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.
 
 The right-handed singlet that the mechanism needs is a gauge singlet and contributes nothing to any anomaly cancellation condition, so the heavy state is unconstrained by the consistency of the spectrum. Below the heavy scale the mechanism is the unique dimension-five Weinberg operator $(LH)(LH)/\Lambda$, which gives $m_\nu=v^2/\Lambda$; with $v=174$ GeV this is $0.03$ eV at $\Lambda=10^{15}$ GeV, the observed order of magnitude. The framework supplies the distinction between the two masses and the carrier of each, and thereby the possibility of the mixing; it does not fix $m_D$, $M_R$, or $\Lambda$, does not select among the type-I, type-II, and type-III variants (whose differences are gauge representations it does not generate, and the type-II agent belongs to the spin-$0$ subcategory), and does not predict the light masses.
 
@@ -259,9 +259,9 @@ The right-handed singlet that the mechanism needs is a gauge singlet and contrib
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\Delta=S\oplus\bar{S}$, $S=\mathbb{C}^2=(\tfrac12,0)$ | Dirac module; left-handed Weyl module |
 | $\nu_L\in S$, $\nu_R^{c}=\mathcal{C}\nu_L$ | Left-handed neutrino and its conjugate |
-| $\mathcal{C}:\tilde{Ξ}^{\mathrm{spn}}\mapsto K\tilde{Ξ}^{\mathrm{spn}*}$, $KK^{*}=I_4$ | Module real structure; charge conjugation |
-| $\tilde{Ξ}^{\mathrm{spn}c}=\tilde{Ξ}^{\mathrm{spn}}$ | Majorana condition (fixed space, real dimension four) |
-| $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m_D\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m_D\tilde{Ξ}^{\mathrm{spn}}_R$ | Linear Dirac mass pair |
+| $\mathcal{C}:\tilde{Ξ}^{\mathrm{sp}}\mapsto K\tilde{Ξ}^{\mathrm{sp}*}$, $KK^{*}=I_4$ | Module real structure; charge conjugation |
+| $\tilde{Ξ}^{\mathrm{sp}c}=\tilde{Ξ}^{\mathrm{sp}}$ | Majorana condition (fixed space, real dimension four) |
+| $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m_D\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m_D\tilde{Ξ}^{\mathrm{sp}}_R$ | Linear Dirac mass pair |
 | $m_D$, $M_R$ | Dirac mass and heavy Majorana mass |
 | $\begin{pmatrix}0&m_D\\ m_D&M_R\end{pmatrix}$ | Type-I mass matrix in $(\nu_L,\nu_R^{c})$ |
 | $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2})$ | Exact eigenvalues |

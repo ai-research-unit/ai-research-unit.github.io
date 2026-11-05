@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The harmonic oscillator is the first system in this subcategory with a **restoring force**. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the **two-sector structure** of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.
+The harmonic oscillator is the first system in this subcategory with a **restoring force**. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the **two-sector structure** of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.
 
 The observation the article develops is the following. The state of a one-dimensional oscillator is a pair of conjugate real numbers, the displacement $x$ and the momentum $p$, or, in the normalization that makes the motion a rigid rotation, the complex amplitude
 
@@ -26,16 +26,16 @@ The article is organized as follows. The oscillator is first written in the mate
 
 ### The Equation of Motion
 
-A particle of mass $m$ bound to the origin by the linear restoring force $\vec F = -k(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, with $k = m\omega^2$, obeys
+A particle of mass $m$ bound to the origin by the linear restoring force $\vec F = -k(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, with $k = m\omega^2$, obeys
 
 $$
-md^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2 = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z), \qquad \,d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2 + \omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = 0 .
+md^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z), \qquad \,d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 + \omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0 .
 $$
 
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde{R}(t') = ic\,t'\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z, \qquad (x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z) = x(t')\,\vec e_x + y(t')\,\vec e_y + z(t')\,\vec e_z ,
+\tilde R_\varphi(t') = i c r'_{t}\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z, \qquad (x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z) = x(t')\,\vec e_x + y(t')\,\vec e_y + z(t')\,\vec e_z ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_t$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
@@ -50,15 +50,15 @@ with amplitude $A$ and phase $\theta^{\mathrm{pha}}$. The general motion is a su
 
 ### The Restoring Force as a Central Material Vector
 
-The force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real pure quaternion: it lies in the vector part of the material sector, the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$. It is proportional and opposite to the position, so it is a **central force** in the mechanical sense of being directed along the radius from the origin; the oscillator is therefore the simplest member of the family of central-force problems that the later articles of this subcategory treat. Its force law is linear rather than inverse-square, and its orbits are the closed ellipses of the phase plane rather than the conic sections of the Kepler problem, but the structural placement is the same: a real force vector in $\mathbb{M}_-$ acting on a real position vector in $\mathbb{M}_-$.
+The force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real pure quaternion: it lies in the vector part of the material sector, the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$. It is proportional and opposite to the position, so it is a **central force** in the mechanical sense of being directed along the radius from the origin; the oscillator is therefore the simplest member of the family of central-force problems that the later articles of this subcategory treat. Its force law is linear rather than inverse-square, and its orbits are the closed ellipses of the phase plane rather than the conic sections of the Kepler problem, but the structural placement is the same: a real force vector in $\mathbb{M}_-$ acting on a real position vector in $\mathbb{M}_-$.
 
 Because the force is a pure vector, its product with the position is a pure quaternion with both a scalar and a vector part,
 
 $$
-\vec F\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\vec F\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + \vec F\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = m\omega^2|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2\,e_t + 0 ,
+\vec F\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\vec F\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + \vec F\times(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = m\omega^2|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2\,e_t + 0 ,
 $$
 
-the vector part vanishing because $\vec F$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ are parallel. The scalar part of the product is the negative of the potential energy's double, $-\vec F\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = m\omega^2|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2$, and the vanishing of the vector part is the algebraic statement that the force is central: a force is central about the origin exactly when its product with the position has no vector part, equivalently when $\vec F$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ commute, $[\vec F, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z] = 0$. The later articles of this subcategory develop this criterion; for the oscillator it is immediate.
+the vector part vanishing because $\vec F$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ are parallel. The scalar part of the product is the negative of the potential energy's double, $-\vec F\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = m\omega^2|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2$, and the vanishing of the vector part is the algebraic statement that the force is central: a force is central about the origin exactly when its product with the position has no vector part, equivalently when $\vec F$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ commute, $[\vec F, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z] = 0$. The later articles of this subcategory develop this criterion; for the oscillator it is immediate.
 
 ### Energy
 
@@ -241,7 +241,7 @@ A genuinely two-oscillator structure would require two independent complex ampli
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{R} = ic\,t'\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z$ with $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\varphi = i c r'_{t}\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -273,9 +273,9 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_t\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_t\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |
-| $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Worldline, in $\mathbb{M}_-$ |
+| $\tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Worldline, in $\mathbb{M}_-$ |
 | $\omega$, $k = m\omega^2$ | Angular frequency; spring constant |
-| $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]=0$ |
+| $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z]=0$ |
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |
 | $a = x + i\varpi \in \mathbb{C}$ | Complex amplitude |
 | $\tilde{A} = a\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Central embedding of the amplitude |

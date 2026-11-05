@@ -24,24 +24,24 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The field, the chirality and the lattice
 
-**The field.** The field is the biquaternion $\tilde{Ξ}^{\mathrm{spn}}$, an element of $\mathbb{B}$; $\tilde{Ξ}^{\mathrm{spn}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=ict'$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
+**The field.** The field is the biquaternion $\tilde{Ξ}^{\mathrm{sp}}$, an element of $\mathbb{B}$; $\tilde{Ξ}^{\mathrm{sp}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=i c r'_t$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
 
 **The dynamics is the chiral pair of the gradient**,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
-with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}^{\mathrm{spn}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation.
+with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}^{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation.
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
-**The lattice.** A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_\mu$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four coordinate directions. The field becomes a Grassmann-valued element $\tilde{Ξ}^{\mathrm{spn}}_n$ at each site, with $\tilde{Ξ}^{\mathrm{spn}*}_n$ an independent Grassmann variable and not its conjugate, and each coordinate derivative is replaced by the **symmetric difference**
+**The lattice.** A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_\mu$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four coordinate directions. The field becomes a Grassmann-valued element $\tilde{Ξ}^{\mathrm{sp}}_n$ at each site, with $\tilde{Ξ}^{\mathrm{sp}*}_n$ an independent Grassmann variable and not its conjugate, and each coordinate derivative is replaced by the **symmetric difference**
 
 $$
-D_\mu\tilde{Ξ}^{\mathrm{spn}}_n=\frac{\tilde{Ξ}^{\mathrm{spn}}_{n+\vec u_\mu}-\tilde{Ξ}^{\mathrm{spn}}_{n-\vec u_\mu}}{2a},
+D_\mu\tilde{Ξ}^{\mathrm{sp}}_n=\frac{\tilde{Ξ}^{\mathrm{sp}}_{n+\vec u_\mu}-\tilde{Ξ}^{\mathrm{sp}}_{n-\vec u_\mu}}{2a},
 \qquad
 D_\mu\ \text{replaces}\ \frac{\partial}{\partial Q_\mu}.
 $$
@@ -55,16 +55,16 @@ $$
 and the naive action is the scalar part of the field contracted with it,
 
 $$
-S_F^L[\tilde{Ξ}^{\mathrm{spn}}] = a^4\sum_n \mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{spn}*}_n\,\tilde\nabla^{L}\tilde{Ξ}^{\mathrm{spn}}_n\bigr],
+S_F^L[\tilde{Ξ}^{\mathrm{sp}}] = a^4\sum_n \mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}_n\,\tilde\nabla^{L}\tilde{Ξ}^{\mathrm{sp}}_n\bigr],
 $$
 
-the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial Q_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4x\,\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{spn}*}\,\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
+the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial Q_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4x\,\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}\,\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
-**The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=ct'$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.
+**The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=c r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.
 
 ### The propagator and the doubler poles
 
-**The symbol.** On a plane wave $\tilde{Ξ}^{\mathrm{spn}}_n\propto e^{ip\cdot x}$ the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
+**The symbol.** On a plane wave $\tilde{Ξ}^{\mathrm{sp}}_n\propto e^{ip\cdot x}$ the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol
 
 $$
 \tilde K(p)=a^{-1}\sum_{\mu}\sin(p_\mu a)\,e_\mu ,
@@ -138,7 +138,7 @@ so the shift reverses the sign of some of the four units and does nothing else.
 
 The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling, and its content is a statement about **one chiral species**: a lattice theory cannot carry a single Weyl field. Whatever the kernel, the $L$ and the $R$ species come in equal numbers, so a lone $L$ drags in an $R$ however the action is written.
 
-**Hamiltonian form.** Take $H=\sum_{x,y}\tilde{Ξ}^{\mathrm{spn}\dagger}(x)F(x,y)\tilde{Ξ}^{\mathrm{spn}}(y)$ with a conserved charge $Q$, where $\tilde{Ξ}^{\mathrm{spn}}$ is the spinor column, $\tilde{Ξ}^{\mathrm{spn}\dagger}$ its column adjoint and $F(x,y)$ a matrix on that column: the theorem's own kernel is a matrix, and no element of $\mathbb{B}$ is meant here. The numbers of $L$ and $R$ fermions are equal for every set of charges, provided that
+**Hamiltonian form.** Take $H=\sum_{x,y}\tilde{Ξ}^{\mathrm{sp}\dagger}(x)F(x,y)\tilde{Ξ}^{\mathrm{sp}}(y)$ with a conserved charge $Q$, where $\tilde{Ξ}^{\mathrm{sp}}$ is the spinor column, $\tilde{Ξ}^{\mathrm{sp}\dagger}$ its column adjoint and $F(x,y)$ a matrix on that column: the theorem's own kernel is a matrix, and no element of $\mathbb{B}$ is meant here. The numbers of $L$ and $R$ fermions are equal for every set of charges, provided that
 
 - **translation invariance** holds, $F(x,y)=F(x-y)$;
 - **locality** holds, meaning $F(x-y)$ decays fast enough for its Fourier transform to have continuous derivatives;
@@ -150,10 +150,10 @@ The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubli
 $$
 \tilde F(x,y)=\sum_{\mu}F_\mu(x,y)\,e_\mu ,
 \qquad
-S=\sum_{x,y}\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{spn}*}_R(x)\,\tilde F(x,y)\,\tilde{Ξ}^{\mathrm{spn}}_R(y)\bigr],
+S=\sum_{x,y}\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}_R(x)\,\tilde F(x,y)\,\tilde{Ξ}^{\mathrm{sp}}_R(y)\bigr],
 $$
 
-under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}^{\mathrm{spn}}_R$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_\mu$ are its coordinates, and the four coordinate directions are the units.
+under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}^{\mathrm{sp}}_R$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_\mu$ are its coordinates, and the four coordinate directions are the units.
 
 **General form, all regularizations.** No regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of $L$ and $R$ Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. The Standard Model therefore cannot be put on a lattice without violating one of these conditions, and a chirally invariant regularization makes the chiral anomaly vanish, which is wrong.
 
@@ -233,12 +233,12 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | Symbol | Meaning |
 |---|---|
 | $a$, $n$, $\vec u_\mu$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
-| $\tilde{Ξ}^{\mathrm{spn}}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}^{\mathrm{spn}}$ its four-component coordinate column |
+| $\tilde{Ξ}^{\mathrm{sp}}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}^{\mathrm{sp}}$ its four-component coordinate column |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The biquaternionic gradient, its natural conjugate and the d'Alembertian, of *Operator and Calculus Conventions* |
 | $\tilde\nabla^{L}$, $D_\mu$ | The lattice gradient $\sum_\mu e_\mu D_\mu$ and the symmetric difference replacing $\partial/\partial Q_\mu$ |
 | $\tilde K(p)$ | The element symbol of the lattice gradient, $a^{-1}\sum_\mu\sin(p_\mu a)e_\mu$; the symbol of $\tilde\nabla^{L}$ is $i\tilde K(p)$ |
 | $\xi$ | The chirality, $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ |
-| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The two values of the chirality subscript; these letters label chirality, not the multiplications $L_b$ and $R_b$ |
+| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two values of the chirality subscript; these letters label chirality, not the multiplications $L_b$ and $R_b$ |
 | $S_F^L$ | Naive lattice fermion action |
 | $\mathcal S(p)$ | Naive lattice propagator in the chiral-block form; its scalar denominator is the single-column propagator's |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |

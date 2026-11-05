@@ -52,10 +52,10 @@ which is the standard transport formula expressed through the rotor.
 
 ### The Fictitious Forces as Commutators
 
-Newton's second law in the inertial frame, $md^2\vec r_{\text{in}}/d{t'}^2 = \vec F$, becomes in the rotating frame an equation with two extra terms. Applying the transport formula twice,
+Newton's second law in the inertial frame, $md^2\vec r_{\text{in}}/d{r'_{t}}^2 = \vec F$, becomes in the rotating frame an equation with two extra terms. Applying the transport formula twice,
 
 $$
-md^2\vec\rho/d{t'}^2 = \vec F - 2m\,\vec\Omega\times\,d\vec\rho/dt' - m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) ,
+md^2\vec\rho/d{r'_{t}}^2 = \vec F - 2m\,\vec\Omega\times\,d\vec\rho/dt' - m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) ,
 $$
 
 where $\vec\rho$ is the position in the rotating frame. The two fictitious terms are the Coriolis force and the centrifugal force, and in the quaternion algebra each is a **commutator with the angular velocity**. The Coriolis term is
@@ -89,13 +89,13 @@ in these axes: the component along the local vertical is $\Omega\sin\theta^{\mat
 For small horizontal displacements $\vec\rho = x\vec u_x + y\vec u_y$ the restoring force of the pendulum is $-m\omega_0^2\vec\rho$, with $\omega_0 = \sqrt{g/\ell}$ the pendulum frequency, and the equation of motion in the rotating frame is
 
 $$
-d^2\vec\rho/d{t'}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt' .
+d^2\vec\rho/d{r'_{t}}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt' .
 $$
 
 Now $\vec\Omega\times\,d\vec\rho/dt'$ has the vertical component; projecting onto the horizontal plane, the contributions of $\vec\Omega_x$ and $\vec\Omega_y$ are along the vertical and drop out, and only $\Omega_z = \Omega\sin\theta^{\mathrm{foc}}$ survives:
 
 $$
-d^2x/d{t'}^2 = -\omega_0^2 x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dt', \qquad \,d^2y/d{t'}^2 = -\omega_0^2 y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dt' .
+d^2x/d{r'_{t}}^2 = -\omega_0^2 x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dt', \qquad \,d^2y/d{r'_{t}}^2 = -\omega_0^2 y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dt' .
 $$
 
 This is a pair of linear equations with a gyroscopic coupling, and the coupling constant is the vertical component of the Earth's rotation. The centrifugal term is omitted here; it is restored in the estimate below, which also fixes the size of its effect on the precession.
@@ -105,10 +105,10 @@ This is a pair of linear equations with a gyroscopic coupling, and the coupling 
 Introduce the complex horizontal coordinate $z = x + iy$. The two real equations combine into
 
 $$
-d^2z/d{t'}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_0^2 z = 0 .
+d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_0^2 z = 0 .
 $$
 
-Writing $z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\,w(t')$ removes the first-derivative term: $w$ satisfies $d^2w/d{t'}^2 + \omega^2 w = 0$ with
+Writing $z(t') = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,t')\,w(t')$ removes the first-derivative term: $w$ satisfies $d^2w/d{r'_{t}}^2 + \omega^2 w = 0$ with
 
 $$
 \omega^2 = \omega_0^2 + \Omega^2\sin^2\theta^{\mathrm{foc}} .
@@ -147,14 +147,14 @@ $$
 the east component being the full $\Omega^2\rho$ because the east direction is perpendicular to the Earth's axis, and the north component being reduced by $\sin^2\theta^{\mathrm{foc}}$. Restoring it, the horizontal equations become
 
 $$
-d^2x/d{t'}^2 = -\left(\omega_0^2-\Omega^2\right)x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dt' , \qquad
-\,d^2y/d{t'}^2 = -\left(\omega_0^2-\Omega^2\sin^2\theta^{\mathrm{foc}}\right)y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dt' ,
+d^2x/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\right)x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dt' , \qquad
+\,d^2y/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\sin^2\theta^{\mathrm{foc}}\right)y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dt' ,
 $$
 
 which in the complex coordinate is
 
 $$
-d^2z/d{t'}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_s^2 z = \epsilon\,\bar z , \qquad
+d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_s^2 z = \epsilon\,\bar z , \qquad
 \omega_s^2 = \omega_0^2 - \tfrac12\Omega^2\left(1+\sin^2\theta^{\mathrm{foc}}\right) , \qquad
 \epsilon = \tfrac12\Omega^2\cos^2\theta^{\mathrm{foc}} .
 $$
@@ -269,9 +269,9 @@ $$
 For a pendulum of frequency $\omega_0$ at latitude $\theta^{\mathrm{foc}}$, the horizontal motion satisfies
 
 $$
-d^2\vec\rho/d{t'}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt',
+d^2\vec\rho/d{r'_{t}}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dt',
 \qquad
-\,d^2z/d{t'}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_0^2 z = 0,
+\,d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dt' + \omega_0^2 z = 0,
 $$
 
 with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$,

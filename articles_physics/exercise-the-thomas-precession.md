@@ -82,20 +82,20 @@ $$
 
 *The angle $\theta^{\mathrm{btw}}$.* The direction $\vec u_y=-\vec u_v$ is fixed; the direction $\vec u_x=\vec u_{\vec v+d\vec v}$ turns away from $\vec u_v$ by the small angle $\theta^{\mathrm{dfl}}$ with
 $$
-\theta^{\mathrm{dfl}}=\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^2).
+\theta^{\mathrm{dfl}}=\frac{|\vec a_\perp|}{v}\,dt'+O(d{r'_{t}}^2).
 \tag{7}
 $$
 Hence $\theta^{\mathrm{btw}}=\pi-\theta^{\mathrm{dfl}}$, so
 $$
-\sin\theta^{\mathrm{btw}}=\sin\theta^{\mathrm{dfl}}=\theta^{\mathrm{dfl}}+O(d{t'}^3),
+\sin\theta^{\mathrm{btw}}=\sin\theta^{\mathrm{dfl}}=\theta^{\mathrm{dfl}}+O(d{r'_{t}}^3),
 \qquad
-\cos\theta^{\mathrm{btw}}=-\cos\theta^{\mathrm{dfl}}=-1+O(d{t'}^2).
+\cos\theta^{\mathrm{btw}}=-\cos\theta^{\mathrm{dfl}}=-1+O(d{r'_{t}}^2).
 \tag{8}
 $$
 
 *The rapidity $\theta^{\mathrm{rpd}}_1$.* Since $\tanh\theta^{\mathrm{rpd}}=v/c$, the change of rapidity under $v\mapsto v+(\vec a\cdot\vec u_v)dt'$ is
 $$
-d\theta^{\mathrm{rpd}}=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma^2}{c}(\vec a\cdot\vec u_v)\,dt'+O(d{t'}^2),
+d\theta^{\mathrm{rpd}}=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma^2}{c}(\vec a\cdot\vec u_v)\,dt'+O(d{r'_{t}}^2),
 \qquad\text{so}\qquad \theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}+d\theta^{\mathrm{rpd}},\quad \theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}} .
 \tag{9}
 $$
@@ -105,7 +105,7 @@ The perpendicular part of the acceleration does not change the speed and hence d
 $$
 \sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta^{\mathrm{btw}}
 =\left[\sinh\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}\right]\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{t'}^2),
+=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
 \tag{10}
 $$
 because the $d\theta^{\mathrm{rpd}}$ term multiplies the already first-order $\theta^{\mathrm{dfl}}$.
@@ -113,29 +113,29 @@ because the $d\theta^{\mathrm{rpd}}$ term multiplies the already first-order $\t
 *The denominator of (4).* To zeroth order, $\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}=1$. The first-order $d\theta^{\mathrm{rpd}}$ terms cancel between the two products,
 $$
 \cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}
-=\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta^{\mathrm{rpd}}}{2}\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{t'}^2),
+=\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta^{\mathrm{rpd}}}{2}\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2),
 $$
 $$
 \sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\sinh\frac{\theta^{\mathrm{rpd}}}{2}\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{t'}^2),
+=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\sinh\frac{\theta^{\mathrm{rpd}}}{2}\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2),
 $$
-and multiplying the second by $\cos\theta^{\mathrm{btw}}=-1+O(d{t'}^2)$ gives
+and multiplying the second by $\cos\theta^{\mathrm{btw}}=-1+O(d{r'_{t}}^2)$ gives
 $$
 \cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta^{\mathrm{btw}}
-=1+O(d{t'}^2).
+=1+O(d{r'_{t}}^2).
 \tag{11}
 $$
-The two $d\theta^{\mathrm{rpd}}$ terms cancel exactly; the residual $O(d{t'}^2)$ comes from $\cos\theta^{\mathrm{btw}}=-1+\tfrac12{\theta^{\mathrm{dfl}}}^2+\cdots$, which is already second order.
+The two $d\theta^{\mathrm{rpd}}$ terms cancel exactly; the residual $O(d{r'_{t}}^2)$ comes from $\cos\theta^{\mathrm{btw}}=-1+\tfrac12{\theta^{\mathrm{dfl}}}^2+\cdots$, which is already second order.
 
 *The angle.* Combining (10) and (11),
 $$
-\tan\frac{\theta_W}{2}=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{t'}^2)
+\tan\frac{\theta_W}{2}=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2)
 \ \Longrightarrow\
-\theta_W=2\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{t'}^2)=(\cosh\theta^{\mathrm{rpd}}-1)\,\theta^{\mathrm{dfl}}+O(d{t'}^2),
+\theta_W=2\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2)=(\cosh\theta^{\mathrm{rpd}}-1)\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
 $$
 where $2\sinh^2(\theta^{\mathrm{rpd}}/2)=\cosh\theta^{\mathrm{rpd}}-1$. With $\cosh\theta^{\mathrm{rpd}}=\gamma$ and (7),
 $$
-\theta_W=(\gamma-1)\,\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^2).
+\theta_W=(\gamma-1)\,\frac{|\vec a_\perp|}{v}\,dt'+O(d{r'_{t}}^2).
 \tag{12}
 $$
 The Thomas precession angular velocity is therefore
@@ -194,10 +194,10 @@ $$
 \vec\omega_T=-\frac{\gamma^2}{\gamma+1}\frac{av}{c^2}\,\vec e_z .
 \tag{16}
 $$
-Directly from the parent's formula: here $d\vec v=a\,dt'\,\vec e_y$, $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}}+O(d{t'}^2)$ (the acceleration is perpendicular to $\vec v$, so $d\theta^{\mathrm{rpd}}=0$ by (9)), $\theta^{\mathrm{dfl}}=a\,dt'/v$, and $\theta^{\mathrm{btw}}=\pi-\theta^{\mathrm{dfl}}$. Then (4) collapses to
+Directly from the parent's formula: here $d\vec v=a\,dt'\,\vec e_y$, $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2)$ (the acceleration is perpendicular to $\vec v$, so $d\theta^{\mathrm{rpd}}=0$ by (9)), $\theta^{\mathrm{dfl}}=a\,dt'/v$, and $\theta^{\mathrm{btw}}=\pi-\theta^{\mathrm{dfl}}$. Then (4) collapses to
 $$
 \tan\frac{\theta_W}{2}=\frac{\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\sin\theta^{\mathrm{dfl}}}{\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\cos\theta^{\mathrm{dfl}}}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{t'}^2),
+=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
 $$
 and the parent's axis rule places the rotation along $-(\vec u_x\times\vec u_y)$: in the basis used, $\vec u_x=\vec u_{\vec v+d\vec v}=\vec e_x+\frac{a\,dt'}{v}\vec e_y$ is the direction of the first factor $\tilde U_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v=-\vec e_x$ that of the second factor $\tilde U_{\vec v}^{\natural}$, and
 $$
@@ -308,7 +308,7 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\theta_W$ | Thomas–Wigner rotation angle of the interval |
 | $\vec\omega_T$ | Thomas precession angular velocity |
 | $\vec\Omega=\Omega\,\vec e_z$ | Orbital angular velocity (circular motion) |
-| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ |
+| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

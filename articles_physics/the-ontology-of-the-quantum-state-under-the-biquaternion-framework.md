@@ -8,7 +8,7 @@ The framework's answer is a split one, and the split is the subject of the artic
 
 This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The interpretive statements are labelled as interpretations, and where an interpretation is not forced by the algebra, that is said rather than smoothed over.
 
-The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (the trace-one hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image), with $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
+The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (the trace-one hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde R_\psi\rangle_{\natural}=\tilde R_\psi\tilde R_\psi^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image), with $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological interpretations the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
@@ -80,29 +80,29 @@ Two consequences follow.
 A general observable of the informational sector is an element
 
 $$
-\tilde{H}=h_t e_t+i\,\vec h,\qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
+\tilde R_\psi=h_t e_t+i\,\vec h,\qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
 of the same subspace $\mathbb{M}_+$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $h_t=\tfrac12$ and $\vec h=\tfrac12\vec r$, positive and normalised, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$. **States are positive normalised observables** (trace one in the $2\times2$ image). The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and normalisation, imposed on elements of one four-dimensional real space.
 
-Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})$ is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
+Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
 
 $$
-\boxed{\;\frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=h_t+\vec r\cdot\vec h\;},
+\boxed{\;\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=h_t+\vec r\cdot\vec h\;},
 $$
 
-and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})=h_t+\vec r\cdot\vec h$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
+and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=h_t+\vec r\cdot\vec h$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
 
 $$
-\tilde{Ϛ}\ \longmapsto\ \left(\tilde{H}\mapsto \frac{\langle\tilde{Ϛ},\tilde{H}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}\right)
+\tilde{Ϛ}\ \longmapsto\ \left(\tilde R_\psi\mapsto \frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}\right)
 $$
 
 is injective: an element of $\mathbb{M}_+$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{M}_+$ is its own dual under the plain form (equivalently under the trace in the $2\times2$ image), and there is no second space in which the state lives.
 
-That the state is a *positive* functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_t\geq|\vec h|$, then
+That the state is a *positive* functional is part of the same structure. If $\tilde R_\psi\geq0$, meaning $h_t\geq|\vec h|$, then
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})=h_t+\vec r\cdot\vec h\ \geq\ |\vec h|-|\vec r|\,|\vec h|=\left(1-|\vec r|\right)|\vec h|\ \geq\ 0 .
+\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=h_t+\vec r\cdot\vec h\ \geq\ |\vec h|-|\vec r|\,|\vec h|=\left(1-|\vec r|\right)|\vec h|\ \geq\ 0 .
 $$
 
 Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
@@ -163,7 +163,7 @@ of a measurement along $\vec u_h$, and nothing about which outcome occurs. No el
 
 The complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ assigns the state to the informational side. The four-vectors of relativistic physics — position, velocity, momentum, potential, current — lie in $\mathbb{M}_-$, with imaginary scalar part and real vector part; the state has real scalar part and imaginary vector part, so it lies in $\mathbb{M}_+$ and has zero component in $\mathbb{M}_-$. The state is therefore not a configuration in spacetime and not a four-vector; it is an element of the complementary sector. Its relation to the material sector is not that of a configuration but that of an operator: the elements of $\mathbb{M}_+$ act on $\mathbb{M}_-$ by conjugation, and the biquaternion-norm-preserving, unit-norm ones among them are the Lorentz boost rotors. A state is not one of them. Its biquaternion norm is $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-|\vec r|^2)\in[0,\tfrac14]$, never $1$, so no state has unit norm; the state is not an action on spacetime either, but a normalized positive element of the operator subspace.
 
-The state is equally not a spinor ray. In the correspondence of *The Informational Sector: States, Observables and Probability*, the spinor module of $\mathbb{B}$ corresponds to the Hilbert space $\mathbb{C}^2$ and the pure states correspond to the rank-one density operators. The framework's state is the second object, not the first: the pure state is the idempotent $\tilde\Pi_{1,2}(\vec u)$, and the passage from a module element to a state is the rank-one projection onto it. A central phase $\tilde{Ξ}^{\mathrm{spn}}\mapsto \exp(i\theta)\tilde{Ξ}^{\mathrm{spn}}$ leaves the idempotent unchanged, because $\exp(i\theta)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; the phase of the spinor is therefore not part of the state. So the framework's state is not a vector and not a ray: it is the idempotent built from the ray, with the phase already quotiented out, and for a mixed state there is no spinor to build it from at all.
+The state is equally not a spinor ray. In the correspondence of *The Informational Sector: States, Observables and Probability*, the spinor module of $\mathbb{B}$ corresponds to the Hilbert space $\mathbb{C}^2$ and the pure states correspond to the rank-one density operators. The framework's state is the second object, not the first: the pure state is the idempotent $\tilde\Pi_{1,2}(\vec u)$, and the passage from a module element to a state is the rank-one projection onto it. A central phase $\tilde{Ξ}^{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}^{\mathrm{sp}}$ leaves the idempotent unchanged, because $\exp(i\theta)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; the phase of the spinor is therefore not part of the state. So the framework's state is not a vector and not a ray: it is the idempotent built from the ray, with the phase already quotiented out, and for a mixed state there is no spinor to build it from at all.
 
 **Established.** These are statements about which subspace the state lies in and which object the framework calls the state. The interpretive consequence — that a "wavefunction ontology" and a "density-operator ontology" are not merely two interpretations of one object but, in this framework, interpretations of two different objects — is an interpretation, and it is labelled as one.
 
@@ -216,7 +216,7 @@ $$
 \tilde{Ϛ}=\tfrac12\left(e_t+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ},\tilde{H}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=h_t+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})=h_t+\vec r\cdot\vec h$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=h_t+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=h_t+\vec r\cdot\vec h$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out. It is the Hermitian square of a positive amplitude, $\tilde{Ϛ}_Q=\tilde Q_{\mathrm n}^{2}$, and the passage from the operator to the state forgets the $*$-unitary fibre.
 
@@ -234,12 +234,12 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar centre |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $\lvert\vec r\rvert\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
-| $\tilde{H} = h_te_t + i\vec h$ | Observable (general Hermitian element) |
-| $\langle\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
+| $\tilde R_\psi = h_te_t + i\vec h$ | Observable (general Hermitian element) |
+| $\langle\tilde R_\psi\rangle_{\natural} = \tilde R_\psi\tilde R_\psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = h_t + \vec r\cdot\vec h$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{H})$ | Born rule; form first, trace at normalisation last |
+| $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = h_t + \vec r\cdot\vec h$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ | Born rule; form first, trace at normalisation last |
 | $\lambda_\pm = \tfrac12(1\pm\lvert\vec r\rvert)$ | Eigenvalues of $\tilde{Ϛ}$ |
 | $\vec u, \vec u, \vec u_h, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |

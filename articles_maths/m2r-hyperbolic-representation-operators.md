@@ -75,35 +75,35 @@ so every nonzero member of the family is a conformal map of the Minkowski plane,
 **The polar word.** Writing
 
 $$
-Q=r\,\epsilon\,\exp(\phi j),\qquad r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \phi\in\mathbb{R},
+Q=r\,\epsilon\,\exp(\theta^{\mathrm{rpd}} j),\qquad r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \theta^{\mathrm{rpd}}\in\mathbb{R},
 $$
 
 the operator inherits the word factor by factor:
 
 $$
-M_Q=r\,M_\epsilon\,\exp(\phi M_j),\qquad M_j=J,\qquad \exp(\phi J)=\cosh\phi\,I_2+\sinh\phi\,J .
+M_Q=r\,M_\epsilon\,\exp(\theta^{\mathrm{rpd}} M_j),\qquad M_j=J,\qquad \exp(\theta^{\mathrm{rpd}} J)=\cosh\theta^{\mathrm{rpd}}\,I_2+\sinh\theta^{\mathrm{rpd}}\,J .
 $$
 
 In the spectral frame, where $J=\operatorname{diag}(1,-1)$ and $M_\epsilon=\operatorname{diag}(\epsilon_+,\epsilon_-)$,
 
 $$
-M_Q=\operatorname{diag}\bigl(r\epsilon_+e^{\phi},\,r\epsilon_-e^{-\phi}\bigr)=\operatorname{diag}(\lambda_+,\lambda_-).
+M_Q=\operatorname{diag}\bigl(r\epsilon_+e^{\theta^{\mathrm{rpd}}},\,r\epsilon_-e^{-\theta^{\mathrm{rpd}}}\bigr)=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
 
-**The three factors and their roles.** The scale acts as $r$ and not as $r^{2}$; the sign is a discrete diagonal sign; the boost acts as $e^{\pm\phi}$ on the two Peirce lines, with opposite exponents. All three are visible to the one-sided operator, and this is the whole of the polar content of the category:
+**The three factors and their roles.** The scale acts as $r$ and not as $r^{2}$; the sign is a discrete diagonal sign; the boost acts as $e^{\pm\theta^{\mathrm{rpd}}}$ on the two Peirce lines, with opposite exponents. All three are visible to the one-sided operator, and this is the whole of the polar content of the category:
 
 - the modulus is the geometric mean of the absolute values of the two eigenvalues;
 - the sign is the pair $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$, which is the component label of the unit group;
-- the boost is the half-difference of their logarithms, $\phi=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$.
+- the boost is the half-difference of their logarithms, $\theta^{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$.
 
-**The exponent is the full angle.** The eigenvalues of the boost are $e^{\pm\phi}$, not $e^{\pm\phi/2}$, and the polar word writes $\phi$ and not $\phi/2$. The reason is that the two exponents are the two eigenvalue logarithms, and the eigenvalues are the idempotent coordinates $\lambda_\pm = r e^{\pm\phi}$, which are *linear* in the polar data. A half angle would require $\lambda_\pm = r e^{\pm\phi/2}$, that is $Q = r\exp(\tfrac{\phi}{2}j)$, which is a different element. So the category has no half angle in its spectrum, and the geometric half angle that appeared in the model article was the axis of a Euclidean reflection, not a weight.
+**The exponent is the full angle.** The eigenvalues of the boost are $e^{\pm\theta^{\mathrm{rpd}}}$, not $e^{\pm\theta^{\mathrm{rpd}}/2}$, and the polar word writes $\theta^{\mathrm{rpd}}$ and not $\theta^{\mathrm{rpd}}/2$. The reason is that the two exponents are the two eigenvalue logarithms, and the eigenvalues are the idempotent coordinates $\lambda_\pm = r e^{\pm\theta^{\mathrm{rpd}}}$, which are *linear* in the polar data. A half angle would require $\lambda_\pm = r e^{\pm\theta^{\mathrm{rpd}}/2}$, that is $Q = r\exp(\tfrac{\theta^{\mathrm{rpd}}}{2}j)$, which is a different element. So the category has no half angle in its spectrum, and the geometric half angle that appeared in the model article was the axis of a Euclidean reflection, not a weight.
 
 **The explicit matrices.**
 
 $$
-Q=r\epsilon\,e^{\phi j}:\quad M_Q=r\epsilon\begin{pmatrix}\cosh\phi&\sinh\phi\\ \sinh\phi&\cosh\phi\end{pmatrix},
+Q=r\epsilon\,e^{\theta^{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\cosh\theta^{\mathrm{rpd}}&\sinh\theta^{\mathrm{rpd}}\\ \sinh\theta^{\mathrm{rpd}}&\cosh\theta^{\mathrm{rpd}}\end{pmatrix},
 \qquad
-Q=r\epsilon\,j\,e^{\phi j}:\quad M_Q=r\epsilon\begin{pmatrix}\sinh\phi&\cosh\phi\\ \cosh\phi&\sinh\phi\end{pmatrix}.
+Q=r\epsilon\,j\,e^{\theta^{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\sinh\theta^{\mathrm{rpd}}&\cosh\theta^{\mathrm{rpd}}\\ \cosh\theta^{\mathrm{rpd}}&\sinh\theta^{\mathrm{rpd}}\end{pmatrix}.
 $$
 
 The first is the boost, the second the boost composed with the reflection $J$; the two families are the two components of $O(1,1)$ with positive and negative determinant, and the sign $\epsilon=\pm1$ multiplies both.
@@ -166,9 +166,9 @@ $$
 \operatorname{spec}K_{Q,\bar Q}=\{\lambda_+^{2},\ N,\ N,\ \lambda_-^{2}\}.
 $$
 
-**The reading, in the polar word.** With $\lambda_\pm=r\epsilon_\pm e^{\pm\phi}$ and $N=r^{2}\epsilon_+\epsilon_-$:
+**The reading, in the polar word.** With $\lambda_\pm=r\epsilon_\pm e^{\pm\theta^{\mathrm{rpd}}}$ and $N=r^{2}\epsilon_+\epsilon_-$:
 
-- on the two **pure** directions the eigenvalue is $\lambda_\pm^{2}=r^{2}e^{\pm2\phi}$: the scale is squared and the boost is **doubled**, the rapidity $2\phi$ in place of $\phi$;
+- on the two **pure** directions the eigenvalue is $\lambda_\pm^{2}=r^{2}e^{\pm2\theta^{\mathrm{rpd}}}$: the scale is squared and the boost is **doubled**, the rapidity $2\theta^{\mathrm{rpd}}$ in place of $\theta^{\mathrm{rpd}}$;
 - on the two **mixed** directions the eigenvalue is $N=r^{2}\epsilon_+\epsilon_-$: the scale is squared and the boost **cancels**, exactly as it cancels on the carrier.
 
 So the ambient sandwich acts as a double boost on the diagonal corners of the tensor square and as a pure dilation on the off-diagonal corners. It is the exact analogue of the $2\theta$ of the complex category, in the hyperbolic parameter, and it is the only doubling of an angle in the whole block.
@@ -331,7 +331,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 **What it does not buy: a group action.** In the biquaternion category the sandwich is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the units is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the unit group on the algebra is the multiplication, which is the one-sided layer.
 
-**What it does not buy: the half angle and the cover.** The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\phi}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.
+**What it does not buy: the half angle and the cover.** The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\theta^{\mathrm{rpd}}}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.
 
 **What it does not buy: nilpotents.** There is no nilpotent in the algebra, so there is no Jordan block, no maximal ideal of the form $(X^{2})$, and no unipotent one-parameter subgroup. The whole nilpotent apparatus of the reduced biquaternion category — the Jordan decomposition, the non-semisimple sector, the $\Sigma_{00}$ stratum — is empty here, and it is empty for the reason $x^{2}-1$ has distinct roots.
 
@@ -341,7 +341,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 1. The carrier is $\mathbb{C}^{\mathrm{spl}}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
-3. The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=rM_\epsilon\exp(\phi J)$, with eigenvalues $r\epsilon_\pm e^{\pm\phi}$; the angle is full, the sign is a discrete label, and no cover appears.
+3. The polar word $Q=r\epsilon\exp(\theta^{\mathrm{rpd}} j)$ reads $M_Q=rM_\epsilon\exp(\theta^{\mathrm{rpd}} J)$, with eigenvalues $r\epsilon_\pm e^{\pm\theta^{\mathrm{rpd}}}$; the angle is full, the sign is a discrete label, and no cover appears.
 4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
 5. The sandwich is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
 6. On the ambient the same formula is not scalar: $K_{Q,\bar Q}$ has eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$, doubling the rapidity on the two pure corners and killing it on the two mixed ones.
@@ -360,7 +360,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)\otimes\mathsf{M}_2(Q)$ | this article |
 | $g$ | the split form $\operatorname{diag}(1,-1)$, implementing the conjugation by congruence | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues, the idempotent coordinates | *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* |
-| $r,\epsilon,\phi$ | modulus, component sign, hyperbolic angle | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
+| $r,\epsilon,\theta^{\mathrm{rpd}}$ | modulus, component sign, hyperbolic angle | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |
 | $c(Q,P)$ | the coefficient array of the pair, of rank one | this article |
 | $\operatorname{Ann}(Q)$ | the annihilator, the kernel of $M_Q$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |

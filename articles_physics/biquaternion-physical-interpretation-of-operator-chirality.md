@@ -75,15 +75,15 @@ A left multiplier and a right multiplier never fail to commute. The chirality op
 
 **The chirality of a field.** Since $\mathsf{V}^{\mathrm{vol}}$ is an operator on $\mathbb{B}$, every biquaternion splits into two chiral halves,
 $$
-\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_++\tilde{Ξ}^{\mathrm{spn}}_-,\qquad \mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{spn}}_\pm=\pm\tilde{Ξ}^{\mathrm{spn}}_\pm,
+\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_++\tilde{Ξ}^{\mathrm{sp}}_-,\qquad \mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{sp}}_\pm=\pm\tilde{Ξ}^{\mathrm{sp}}_\pm,
 $$
-with $\tilde{Ξ}^{\mathrm{spn}}_\pm=\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})\tilde{Ξ}^{\mathrm{spn}}$. The two halves are two-dimensional over $\mathbb{C}$ and each is closed under left multiplication, so each is a copy of the simple left module $S$. That sentence is the whole physical content and the whole physical limit of the construction: the halves exist, and they are copies. §*What the Algebra Does Not Supply* takes it up.
+with $\tilde{Ξ}^{\mathrm{sp}}_\pm=\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})\tilde{Ξ}^{\mathrm{sp}}$. The two halves are two-dimensional over $\mathbb{C}$ and each is closed under left multiplication, so each is a copy of the simple left module $S$. That sentence is the whole physical content and the whole physical limit of the construction: the halves exist, and they are copies. §*What the Algebra Does Not Supply* takes it up.
 
 ## The Dirac Equation Reads the Sides
 
 **The equation.** The biquaternion Dirac equation is the chiral pair
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,\qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 in which both operators act by left multiplication: the first by $\tilde\nabla$, the second by its natural conjugate $\tilde\nabla^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
@@ -91,17 +91,17 @@ $$
 $$
 so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is the point recorded where the corpus separates its three forms of the equation — the pair written on the algebra holds without any choice of module.
 
-**The massless case, and the chirality split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $\mathsf{V}^{\mathrm{vol}}$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under $\mathsf{V}^{\mathrm{vol}}$, so a solution of definite chirality can be chosen.
+**The massless case, and the chirality split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $\mathsf{V}^{\mathrm{vol}}$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under $\mathsf{V}^{\mathrm{vol}}$, so a solution of definite chirality can be chosen.
 
-**Why the two displays do not conflict.** In the Clifford display the Dirac operator anticommutes with $\mathsf{V}^{\mathrm{vol}}$; in the cell display it commutes, because a left multiplier commutes with a right one. The two are consistent and they say the same physical thing from opposite sides. Anticommutation means the operator exchanges the two halves of the space it acts on; commutation means it preserves the two halves of $\mathbb{B}$. In both displays the conclusion for a solution is identical: if $\tilde{Ξ}^{\mathrm{spn}}$ is a massless solution then $\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{spn}}$ is one too, so the solution space is stable under the chirality operator and the two signs are available on it. The physical statement is therefore independent of the display, which is what the operator reading is for.
+**Why the two displays do not conflict.** In the Clifford display the Dirac operator anticommutes with $\mathsf{V}^{\mathrm{vol}}$; in the cell display it commutes, because a left multiplier commutes with a right one. The two are consistent and they say the same physical thing from opposite sides. Anticommutation means the operator exchanges the two halves of the space it acts on; commutation means it preserves the two halves of $\mathbb{B}$. In both displays the conclusion for a solution is identical: if $\tilde{Ξ}^{\mathrm{sp}}$ is a massless solution then $\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{sp}}$ is one too, so the solution space is stable under the chirality operator and the two signs are available on it. The physical statement is therefore independent of the display, which is what the operator reading is for.
 
 **The mass is the term with no side.** The mass term multiplies the field by the scalar $m$, and a central scalar is the one operator that is simultaneously a left multiplier and a right multiplier. It is therefore the only term of the equation that has no side, and it is exactly the term that couples the two sides. The algebra says this without any computation: a term that couples the sides cannot itself belong to one of them.
 
 | Term | Multiplier | Slot |
 | --- | --- | --- |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R$ | left by $\tilde\nabla$ | left |
-| $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L$ | left by the conjugate | left |
-| $m\tilde{Ξ}^{\mathrm{spn}}$ | central scalar | both, hence no side |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$ | left by $\tilde\nabla$ | left |
+| $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L$ | left by the conjugate | left |
+| $m\tilde{Ξ}^{\mathrm{sp}}$ | central scalar | both, hence no side |
 
 ## The Eight Objects the Physics Does Not Need
 
@@ -164,7 +164,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 
 **So what has been gained.** The operator chirality supplies, without adjoining anything, the object that the physics calls $\mathsf{V}^{\mathrm{vol}}$: an involution of the algebra, of trace zero, with two equal halves, commuting with the Dirac operator and anticommuting with the frame. That is what a Lagrangian needs in order to write a chiral projector, a chiral current or an axial anomaly coefficient. What it does not supply is the inequivalence of the two halves, and no operator of $\mathbb{B}$ can supply it, because every operator of $\mathbb{B}$ grades copies.
 
-**A biquaternion field.** A field $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$ therefore does carry a chirality, in the precise sense that $\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{spn}}_\pm=\pm\tilde{Ξ}^{\mathrm{spn}}_\pm$; and both halves are left-handed in the Lorentz sense, since both are copies of $S$. A reader who wants the Standard Model pair must pass to $\Delta=S\oplus S^{\mathrm{c}}$, where the same array grades two inequivalent modules and the same operator does the physical work.
+**A biquaternion field.** A field $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$ therefore does carry a chirality, in the precise sense that $\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{sp}}_\pm=\pm\tilde{Ξ}^{\mathrm{sp}}_\pm$; and both halves are left-handed in the Lorentz sense, since both are copies of $S$. A reader who wants the Standard Model pair must pass to $\Delta=S\oplus S^{\mathrm{c}}$, where the same array grades two inequivalent modules and the same operator does the physical work.
 
 ## Limits
 
@@ -212,7 +212,7 @@ The limit is stated once and it is not small: the two chiral halves of $\mathbb{
 | $\tilde\nabla^{\natural}$ | its natural conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
 | $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ | the chirality operator of the frame, a pure right multiplier |
 | $\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})$ | the chiral projectors, derived from the sign |
-| $\tilde{Ξ}^{\mathrm{spn}}_\pm$ | the two chiral halves of a biquaternion field |
+| $\tilde{Ξ}^{\mathrm{sp}}_\pm$ | the two chiral halves of a biquaternion field |
 | $S$ | the simple left module; both halves of $\mathbb{B}$ are copies of it |
 | $S^{\mathrm{c}}$ | the conjugate module, inequivalent to $S$ over $\mathbb{C}$ |
 | $\Delta=S\oplus S^{\mathrm{c}}$ | the Dirac module, where the same array grades two inequivalent modules |

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-For a pure state $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
+For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
 
 $$
-i\hbar\,\partial/\partial t'|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = H\,|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle,
+i\hbar\,\partial/\partial t'|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle = H\,|\tilde{Ξ}^{\mathrm{sp}}(t')\rangle,
 $$
 
 and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t'\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(t')$ obeying $i\hbar\,d\tilde Q/dt' = \tilde{H}\tilde Q$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(t')$ obeying $i\hbar\,d\tilde Q/dt' = \tilde R_\psi\tilde Q$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [H,\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -71,13 +71,13 @@ so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M
 
 ## The Scalar Imaginary Exchanges the Two Sectors
 
-The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,
+The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde R_\psi = h_te_t + i\vec h \in \mathbb{M}_+$, using $\tilde R_\psi^{*} = \tilde R_\psi$, $i^{*} = -i$, and the centrality of $i$,
 
 $$
-(i\tilde{H})^{*} = \tilde{H}^{*} i^{*} = \tilde{H}\,(-i) = -i\tilde{H}.
+(i\tilde R_\psi)^{*} = \tilde R_\psi^{*} i^{*} = \tilde R_\psi\,(-i) = -i\tilde R_\psi.
 $$
 
-So $i\tilde{H} \in \mathbb{M}_-$: the map $\tilde{H} \mapsto i\tilde{H}$ is a real-linear isomorphism $\mathbb{M}_+ \to \mathbb{M}_-$ with inverse $\tilde{Q} \mapsto -i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. For example, with $\tilde{H} = i\,\vec e_x$ (Hermitian, since $(i\vec e_x)^{*} = i\vec e_x$), one has $i\tilde{H} = i\,(i\vec e_x) = -\vec e_x$, and $-\vec e_x$ is anti-Hermitian because $(-\vec e_x)^{*} = -(-\vec e_x)$. This is the elementary observation on which everything below rests.
+So $i\tilde R_\psi \in \mathbb{M}_-$: the map $\tilde R_\psi \mapsto i\tilde R_\psi$ is a real-linear isomorphism $\mathbb{M}_+ \to \mathbb{M}_-$ with inverse $\tilde{Q} \mapsto -i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. For example, with $\tilde R_\psi = i\,\vec e_x$ (Hermitian, since $(i\vec e_x)^{*} = i\vec e_x$), one has $i\tilde R_\psi = i\,(i\vec e_x) = -\vec e_x$, and $-\vec e_x$ is anti-Hermitian because $(-\vec e_x)^{*} = -(-\vec e_x)$. This is the elementary observation on which everything below rests.
 
 ## The Wave Function Is a Spinor in the State Module
 
@@ -95,78 +95,78 @@ $$
 \mathbb{B}\tilde\Pi = \{\tilde{Q}\tilde\Pi : \tilde{Q} \in \mathbb{B}\}
 $$
 
-is the state module; in the matrix picture it is the space of matrices with only the first column nonzero, i.e. the column spinors $\mathbb{C}^2$. An element $\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{B}\tilde\Pi$ is a **spinor**, characterized by $\tilde{Ξ}^{\mathrm{spn}}\tilde\Pi = \tilde{Ξ}^{\mathrm{spn}}$.
+is the state module; in the matrix picture it is the space of matrices with only the first column nonzero, i.e. the column spinors $\mathbb{C}^2$. An element $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{B}\tilde\Pi$ is a **spinor**, characterized by $\tilde{Ξ}^{\mathrm{sp}}\tilde\Pi = \tilde{Ξ}^{\mathrm{sp}}$.
 
 ### Why the wave function is not a generic element of $\mathbb{M}_+$
 
-The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{M}_+$ the product $\tilde{H}\tilde{Ξ}^{\mathrm{spn}}$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}$ does not define a flow on $\mathbb{M}_+$.
+The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the product $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ does not define a flow on $\mathbb{M}_+$.
 
-That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{M}_+$ the derivative $\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}}$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{M}_-$ at every instant, and $\tilde{H}\tilde{Ξ}^{\mathrm{spn}}$ need not be Hermitian. Take $\tilde{H} = i\,\vec e_x$ and
-
-$$
-\tilde{Ξ}^{\mathrm{spn}}(t') = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{t'}{\hbar}.
-$$
-
-Then $\tilde{Ξ}^{\mathrm{spn}\dagger} = \tilde{Ξ}^{\mathrm{spn}}$, so $\tilde{Ξ}^{\mathrm{spn}}$ is Hermitian at every $t'$, and
+That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_+$ the derivative $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{M}_-$ at every instant, and $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ need not be Hermitian. Take $\tilde R_\psi = i\,\vec e_x$ and
 
 $$
-i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}^{\mathrm{spn}},
+\tilde{Ξ}^{\mathrm{sp}}(t') = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{r'_{t}}{\hbar}.
+$$
+
+Then $\tilde{Ξ}^{\mathrm{sp}\dagger} = \tilde{Ξ}^{\mathrm{sp}}$, so $\tilde{Ξ}^{\mathrm{sp}}$ is Hermitian at every $t'$, and
+
+$$
+i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\tilde{Ξ}^{\mathrm{sp}},
 $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
 
-What disqualifies this $\tilde{Ξ}^{\mathrm{spn}}$ is not the equation but the requirement that a wave function be a state: $\langle \tilde{Ξ}^{\mathrm{spn}}\rangle_{\natural} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\natural} = -e_t$, so $\tilde{Ξ}^{\mathrm{spn}}$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\tilde{Ξ}^{\mathrm{spn}}\tilde\Pi = \tilde{Ξ}^{\mathrm{spn}}$, hence $\tilde{Ξ}^{\mathrm{spn}}(e_t - \tilde\Pi) = 0$ with $e_t - \tilde\Pi \neq 0$: every nonzero element of $\mathbb{B}\tilde\Pi$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ — which is $\tilde\Pi$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde\Pi$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ is a zero divisor too, and $\tilde{Q}\tilde\Pi = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde\Pi = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+What disqualifies this $\tilde{Ξ}^{\mathrm{sp}}$ is not the equation but the requirement that a wave function be a state: $\langle \tilde{Ξ}^{\mathrm{sp}}\rangle_{\natural} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\natural} = -e_t$, so $\tilde{Ξ}^{\mathrm{sp}}$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\tilde{Ξ}^{\mathrm{sp}}\tilde\Pi = \tilde{Ξ}^{\mathrm{sp}}$, hence $\tilde{Ξ}^{\mathrm{sp}}(e_t - \tilde\Pi) = 0$ with $e_t - \tilde\Pi \neq 0$: every nonzero element of $\mathbb{B}\tilde\Pi$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ — which is $\tilde\Pi$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde\Pi$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ is a zero divisor too, and $\tilde{Q}\tilde\Pi = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde\Pi = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-The correct relation between the two kinds of state is bilinear. From $\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{B}\tilde\Pi$ one forms
+The correct relation between the two kinds of state is bilinear. From $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{B}\tilde\Pi$ one forms
 
 $$
-\tilde{Ϛ} = \frac{\tilde{Ξ}^{\mathrm{spn}}\,\tilde{Ξ}^{\mathrm{spn}\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})} \in \mathbb{M}_+,
+\tilde{Ϛ} = \frac{\tilde{Ξ}^{\mathrm{sp}}\,\tilde{Ξ}^{\mathrm{sp}\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})} \in \mathbb{M}_+,
 $$
 
-which is Hermitian, positive, and trace one — an element of the Bloch ball, hence a state in the sense of the companion article. The wave function and the density matrix are not the same object; they are related by $\tilde{Ξ}^{\mathrm{spn}} \mapsto \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}$, and the same element $i$ acts as complex structure on the spinor while exchanging the sectors in which the operator is expressed.
+which is Hermitian, positive, and trace one — an element of the Bloch ball, hence a state in the sense of the companion article. The wave function and the density matrix are not the same object; they are related by $\tilde{Ξ}^{\mathrm{sp}} \mapsto \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$, and the same element $i$ acts as complex structure on the spinor while exchanging the sectors in which the operator is expressed.
 
 ## The Schrödinger Equation and Its Solution
 
 With these objects separated, the equation reads
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}}(t') = \tilde{H}\,\tilde{Ξ}^{\mathrm{spn}}(t'),
+\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}}(t'),
 \qquad
-\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+,
+\tilde R_\psi = h_te_t + i\vec h \in \mathbb{M}_+,
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}(t') \in \mathbb{B}\tilde\Pi\;},
+\tilde{Ξ}^{\mathrm{sp}}(t') \in \mathbb{B}\tilde\Pi\;},
 $$
 
-where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\tilde{Ξ}^{\mathrm{spn}} \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
+where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde R_\psii$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
 
-**Solution.** Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,
+**Solution.** Since $-i\tilde R_\psi = -ih_te_t + \vec h$ and the scalar and vector parts commute,
 
 $$
-\boxed{\;\tilde Q(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
+\boxed{\;\tilde Q(t') = \exp\!\left(-i Ht'/\hbar\right)
 = \exp(-ih_tt'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
 \theta = \frac{|\vec h|t'}{\hbar}\;},
 $$
 
-and $\tilde{Ξ}^{\mathrm{spn}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{spn}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})$ is preserved: with $\tilde{Ξ}^{\mathrm{spn}}(t') = \tilde Q\tilde{Ξ}^{\mathrm{spn}}(0)$,
+and $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{sp}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved: with $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q\tilde{Ξ}^{\mathrm{sp}}(0)$,
 
 $$
-\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}}(t')^\dagger\tilde{Ξ}^{\mathrm{spn}}(t')\right)
-= \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}}(0)^\dagger \tilde Q^{*}\tilde Q\,\tilde{Ξ}^{\mathrm{spn}}(0)\right)
-= \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}}(0)^\dagger\tilde{Ξ}^{\mathrm{spn}}(0)\right).
+\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(t')^\dagger\tilde{Ξ}^{\mathrm{sp}}(t')\right)
+= \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(0)^\dagger \tilde Q^{*}\tilde Q\,\tilde{Ξ}^{\mathrm{sp}}(0)\right)
+= \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}}(0)^\dagger\tilde{Ξ}^{\mathrm{sp}}(0)\right).
 $$
 
-Differentiating the solution gives $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = i\hbar(-i\tilde{H}/\hbar)\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}$, so it is the required solution.
+Differentiating the solution gives $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = i\hbar(-i H/\hbar)\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$, so it is the required solution.
 
-**Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde Q(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde Q(t')$ is $*$-unitary, and $\tilde{H}\tilde Q = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde Q/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde R_\psi = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde Q(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde Q(t')$ is $*$-unitary, and $\tilde R_\psi\tilde Q = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde Q/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}$ and using $\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = -i\tilde{H}\tilde{Ξ}^{\mathrm{spn}}/\hbar$, $\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}\dagger} = i\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ and using $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -i\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}/\hbar$, $\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}\dagger} = i\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde R_\psi/\hbar$ (valid because $\tilde R_\psi^{*} = \tilde R_\psi$) gives
 
 $$
-\boxed{\;\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
-= -\frac{i}{\hbar}[\tilde{H},\tilde{Ϛ}],
+\boxed{\;\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde R_\psi
+= -\frac{i}{\hbar}[H,\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]\;},
+i\hbar\,\partial/\partial t'\tilde{Ϛ} = [H,\tilde{Ϛ}]\;},
 $$
 
 which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
@@ -175,72 +175,72 @@ $$
 p_+ = \frac{\langle\tilde\Pi_1(\vec u),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac12\left(1 + \vec u\cdot\vec r\right).
 $$
 
-For the up-state spinor $\tilde{Ξ}^{\mathrm{spn}} = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = \vec e_z$, and $p_+ = \tfrac12(1 + \vec u\cdot \vec e_z)$, the standard result.
+For the up-state spinor $\tilde{Ξ}^{\mathrm{sp}} = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = \vec e_z$, and $p_+ = \tfrac12(1 + \vec u\cdot \vec e_z)$, the standard result.
 
 ## Why the Scalar Imaginary, and Not a Quaternion Unit
 
 It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -1$ is used in place of $i$:
 
 $$
-\hbar\,\tilde{Ζ}\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}
+\hbar\,\tilde{Ζ}\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}
 \qquad\Longrightarrow\qquad
-\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = -\frac{1}{\hbar}\tilde{Ζ}\tilde{H}\,\tilde{Ξ}^{\mathrm{spn}},
+\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -\frac{1}{\hbar}\tilde{Ζ}\tilde R_\psi\,\tilde{Ξ}^{\mathrm{sp}},
 $$
 
-so the generator of the flow is $-\hbar^{-1}\tilde{Ζ}\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'\tilde{Ζ}\tilde{H})$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde{Ζ}\tilde{H}$ is anti-Hermitian, which is the condition
+so the generator of the flow is $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'\tilde{Ζ}\tilde R_\psi)$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ is anti-Hermitian, which is the condition
 
 $$
-(\tilde{Ζ}\tilde{H})^{*} = -\tilde{Ζ}\tilde{H}
+(\tilde{Ζ}\tilde R_\psi)^{*} = -\tilde{Ζ}\tilde R_\psi
 \qquad\Longleftrightarrow\qquad
-\tilde{H}\tilde{Ζ}^\dagger = -\tilde{Ζ}\tilde{H}
-\quad\text{for all Hermitian } \tilde{H}.
+\tilde R_\psi\tilde{Ζ}^\dagger = -\tilde{Ζ}\tilde R_\psi
+\quad\text{for all Hermitian } \tilde R_\psi.
 $$
 
-Taking $\tilde{H} = e_t$ gives $\tilde{Ζ}^\dagger = -\tilde{Ζ}$, so $\tilde{Ζ}$ must be anti-Hermitian; the condition then becomes $\tilde{H}\tilde{Ζ} = \tilde{Ζ}\tilde{H}$ for every Hermitian $\tilde{H}$. Take $\tilde{H} = i\,\vec e_\mu$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_\mu \tilde{Ζ} = \tilde{Ζ}\vec e_\mu$, so $\tilde{Ζ}$ commutes with the quaternion units. Writing $\tilde{Ζ} = q_t e_t + \sum_\mu q_\mu \vec e_\mu$ with $\mu=x,y,z$, the relations $\vec e_x\tilde{Ζ} = \tilde{Ζ}\vec e_x$ and $\vec e_y\tilde{Ζ} = \tilde{Ζ}\vec e_y$ give $q_y = q_z = 0$ and then $q_x = 0$, leaving $\tilde{Ζ} = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde{Ζ}$ is central. Then $\tilde{Ζ}^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the *unique* choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.
+Taking $\tilde R_\psi = e_t$ gives $\tilde{Ζ}^\dagger = -\tilde{Ζ}$, so $\tilde{Ζ}$ must be anti-Hermitian; the condition then becomes $\tilde R_\psi\tilde{Ζ} = \tilde{Ζ}\tilde R_\psi$ for every Hermitian $\tilde R_\psi$. Take $\tilde R_\psi = i\,\vec e_\mu$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_\mu \tilde{Ζ} = \tilde{Ζ}\vec e_\mu$, so $\tilde{Ζ}$ commutes with the quaternion units. Writing $\tilde{Ζ} = q_t e_t + \sum_\mu q_\mu \vec e_\mu$ with $\mu=x,y,z$, the relations $\vec e_x\tilde{Ζ} = \tilde{Ζ}\vec e_x$ and $\vec e_y\tilde{Ζ} = \tilde{Ζ}\vec e_y$ give $q_y = q_z = 0$ and then $q_x = 0$, leaving $\tilde{Ζ} = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde{Ζ}$ is central. Then $\tilde{Ζ}^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the *unique* choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.
 
-**A counterexample for a quaternion unit.** Take $\vec{Ζ} = \vec e_z$ (a root of $-1$) and the Hermitian $\tilde{H} = i\,\vec e_x$. Then
+**A counterexample for a quaternion unit.** Take $\vec{Ζ} = \vec e_z$ (a root of $-1$) and the Hermitian $\tilde R_\psi = i\,\vec e_x$. Then
 
 $$
-\vec{Ζ}\tilde{H} = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
+\vec{Ζ}\tilde R_\psi = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
 $$
 
-using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec{Ζ}\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'\vec{Ζ}\tilde{H})$ is not $*$-unitary. Explicitly, at $t' = \pi\hbar/2$,
+using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec{Ζ}\tilde R_\psi = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'\vec{Ζ}\tilde R_\psi)$ is not $*$-unitary. Explicitly, at $t' = \pi\hbar/2$,
 
 $$
 \tilde Q^{*}\tilde Q = \exp\!\left(-i\pi \vec e_y\right)
 = \cosh(\pi)\,e_t - i\sinh(\pi)\,\vec e_y \neq e_t,
 $$
 
-so the norm is not preserved by this "Schrödinger equation". The failure is generic: a non-central $\vec{Ζ}$ fails as soon as $\tilde{H}$ does not commute with it.
+so the norm is not preserved by this "Schrödinger equation". The failure is generic: a non-central $\vec{Ζ}$ fails as soon as $\tilde R_\psi$ does not commute with it.
 
-There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}^{\mathrm{spn}}$ and $\tilde{Ξ}^{\mathrm{spn}} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
+There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}^{\mathrm{sp}}$ and $\tilde{Ξ}^{\mathrm{sp}} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
 
-**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde{H}$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde{H}$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde{H} = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde{H} = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation.
+**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde R_\psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde R_\psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde R_\psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde R_\psi = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation.
 
 ## The $\mathbb{M}_-$ and $\mathbb{M}_+$ Readings of the Equation
 
 The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $i\hbar$,
 
 $$
-\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = -\frac{i}{\hbar}\tilde{H}\tilde{Ξ}^{\mathrm{spn}},
+\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = -\frac{i}{\hbar}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}},
 \qquad
--\frac{i}{\hbar}\tilde{H} = \frac{\vec h - i h_t e_t}{\hbar} \in \mathbb{M}_-.
+-\frac{i}{\hbar}\tilde R_\psi = \frac{\vec h - i h_t e_t}{\hbar} \in \mathbb{M}_-.
 $$
 
-The generator $-i\tilde{H}/\hbar$ is anti-Hermitian; this is the general reason the exponential is $*$-unitary. The two interpretations are then:
+The generator $-i H/\hbar$ is anti-Hermitian; this is the general reason the exponential is $*$-unitary. The two interpretations are then:
 
-- **$\mathbb{M}_+$ interpretation.** The Hamiltonian $\tilde{H} \in \mathbb{M}_+$ is a Hermitian observable — an energy. The equation says that the dynamics is generated by that observable, read through the intertwiner $i$.
-- **$\mathbb{M}_-$ interpretation.** The generator $-i\tilde{H}/\hbar \in \mathbb{M}_-$ lies in the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector; multiplying it by $i\hbar$ returns the Hermitian observable $\tilde{H}$.
+- **$\mathbb{M}_+$ interpretation.** The Hamiltonian $\tilde R_\psi \in \mathbb{M}_+$ is a Hermitian observable — an energy. The equation says that the dynamics is generated by that observable, read through the intertwiner $i$.
+- **$\mathbb{M}_-$ interpretation.** The generator $-i H/\hbar \in \mathbb{M}_-$ lies in the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector; multiplying it by $i\hbar$ returns the Hermitian observable $\tilde R_\psi$.
 
-In the von Neumann form the split is even cleaner. For $\tilde{H}, \tilde{Ϛ} \in \mathbb{M}_+$,
+In the von Neumann form the split is even cleaner. For $\tilde R_\psi, \tilde{Ϛ} \in \mathbb{M}_+$,
 
 $$
-\left([\tilde{H},\tilde{Ϛ}]\right)^\dagger = \tilde{Ϛ}\tilde{H} - \tilde{H}\tilde{Ϛ} = -[\tilde{H},\tilde{Ϛ}],
+\left([H,\tilde{Ϛ}]\right)^\dagger = \tilde{Ϛ}\tilde R_\psi - \tilde R_\psi\tilde{Ϛ} = -[H,\tilde{Ϛ}],
 $$
 
-so $[\tilde{H},\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t'\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[H,\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t'\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
-A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{spn}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}$, not $\tilde{Ξ}^{\mathrm{spn}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{sp}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$, not $\tilde{Ξ}^{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
@@ -250,7 +250,7 @@ A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{spn}}$
 
 1. *The complex structure is supplied, not chosen.* Since $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ contains the central element $i$ by construction, the complex structure of the state module is fixed by the algebra. In a purely quaternionic formulation — wave functions valued in $\mathbb{H}$, with no complexifying factor — there is no central imaginary unit, and one must *choose* a complex structure on the state space, so the choice becomes extra input. Here the algebra supplies it, and the quaternion units, being non-central, are not candidates. This is definitional — $\mathbb{C}$ was put into $\mathbb{B}$ by fiat — but the content is that the same algebra contains both the quaternion units and the central root of $-1$, unique up to sign, that quantum physics requires.
 
-2. *The observable/generator split is intrinsic.* $\mathbb{M}_+$ and $\mathbb{M}_-$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde{H} \mapsto -i\tilde{H}/\hbar$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde{H}$ is Hermitian iff $-i\tilde{H}$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.
+2. *The observable/generator split is intrinsic.* $\mathbb{M}_+$ and $\mathbb{M}_-$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde R_\psi \mapsto -i H/\hbar$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde R_\psi$ is Hermitian iff $-i H$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.
 
 3. *The roots of $-1$ are separated by role.* The central roots $\pm i$ are the complex structure; the non-central roots $\vec u$ are state axes and rotation generators. A formulation that writes the Schrödinger equation with a quaternion unit destroys the first while leaving the second in place, and the counterexample above shows how. The biquaternion form keeps the two apart by construction.
 
@@ -273,16 +273,16 @@ A structural caution belongs here. The wave function $\tilde{Ξ}^{\mathrm{spn}}$
 The Schrödinger equation in biquaternionic form is
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}\;},
+\boxed{\;i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}\;},
 $$
 
-with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\tilde{Ξ}^{\mathrm{spn}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
+with $\tilde R_\psi = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\tilde{Ξ}^{\mathrm{sp}}$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [H,\tilde{Ϛ}]$.
 
-Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\hbar^{-1}\tilde{Ζ}\tilde{H}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
+Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde R_\psi = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
-Read in the two sectors, the equation says that the Hermitian observable $\tilde{H} \in \mathbb{M}_+$ generates, through the intertwiner $i$, a flow whose generator $-i\tilde{H}/\hbar$ lies in the material sector $\mathbb{M}_-$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.
+Read in the two sectors, the equation says that the Hermitian observable $\tilde R_\psi \in \mathbb{M}_+$ generates, through the intertwiner $i$, a flow whose generator $-i H/\hbar$ lies in the material sector $\mathbb{M}_-$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.
 
 ## Summary of Notation
 
@@ -292,15 +292,15 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
-| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}} = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}$ has $\tilde{H} \in \mathbb{M}_+$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): the generator is $-i\tilde{H}/\hbar \in \mathbb{M}_-$ |
+| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ has $\tilde R_\psi \in \mathbb{M}_+$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): the generator is $-i H/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
-| $\tilde{H} = h_te_t + i\vec h$ | Hermitian element (Hamiltonian) |
+| $\tilde R_\psi = h_te_t + i\vec h$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
-| $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\tilde{Ξ}^{\mathrm{spn}}$ |
-| $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})$ | Density matrix associated to a spinor |
-| $\tilde Q(t') = \exp(-i\tilde{H}t'/\hbar)$ | $*$-Unitary evolution, $\tilde{Ξ}^{\mathrm{spn}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{spn}}(0)$ |
-| $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}^{*}) = h_t + \vec u\cdot\vec h = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde{H}^{*})$ | Trace reading last / Born rule |
+| $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\tilde{Ξ}^{\mathrm{sp}}$ |
+| $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ | Density matrix associated to a spinor |
+| $\tilde Q(t') = \exp(-i Ht'/\hbar)$ | $*$-Unitary evolution, $\tilde{Ξ}^{\mathrm{sp}}(t') = \tilde Q(t')\tilde{Ξ}^{\mathrm{sp}}(0)$ |
+| $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde R_\psi^{*}) = h_t + \vec u\cdot\vec h = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde R_\psi^{*})$ | Trace reading last / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

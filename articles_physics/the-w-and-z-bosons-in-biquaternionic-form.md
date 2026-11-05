@@ -15,7 +15,7 @@ $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 $$
 of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplication table of *Algebra and Element Conventions* and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S^{(\mathrm{adj})}_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
-Spacetime indices are written low and every contraction is an explicit sum, in the $ict'$ device of *Unit, Index and Notation Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=ict'$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions.
+Spacetime indices are written low and every contraction is an explicit sum, in the $i c r'_t$ device of *Unit, Index and Notation Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i c r'_t$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -126,19 +126,19 @@ the effective angle being the asymmetry result, the second the $\overline{\mathr
 
 The currents below are written with the action of the frame on the field and with the two values of the chirality subscript. The generator of the coordinate $x_\mu$ acts by
 $$
-\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_\mu\,\vec e_{\nu(\mu)},
+\tilde{Ξ}^{\mathrm{sp}}\longmapsto i\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_\mu\,\vec e_{\nu(\mu)},
 \qquad
 \nu(t)=x,\quad \nu(k)=y ,
 $$
-and the Dirac adjoint is the pairing $\tilde{Ξ}^{\mathrm{spn}\dagger}i\vec e_x$, written with its right factor in position. The chirality of a field is its subscript: a field is $L$ or $R$, $L$ is the $-1$ value of the volume cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ of the frame and $R$ the $+1$ value, every field is a sum of one of each, and only the zero field is both. Left multiplication keeps the letter and a product takes the letter of its right factor, so
+and the Dirac adjoint is the pairing $\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x$, written with its right factor in position. The chirality of a field is its subscript: a field is $L$ or $R$, $L$ is the $-1$ value of the volume cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ of the frame and $R$ the $+1$ value, every field is a sum of one of each, and only the zero field is both. Left multiplication keeps the letter and a product takes the letter of its right factor, so
 $$
-\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}=\tfrac12\big(\tilde{Ξ}^{\mathrm{spn}}+i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\big),
+\tilde{Ξ}^{\mathrm{sp}}_{\mathrm L}=\tfrac12\big(\tilde{Ξ}^{\mathrm{sp}}+i\tilde{Ξ}^{\mathrm{sp}}\vec e_z\big),
 \qquad
-\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}=\tfrac12\big(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\big),
+\tilde{Ξ}^{\mathrm{sp}}_{\mathrm R}=\tfrac12\big(\tilde{Ξ}^{\mathrm{sp}}-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z\big),
 \qquad
-i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}\,\vec e_{\nu(\mu)}\ \text{is of letter } R,
+i\vec e_\mu\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm L}\,\vec e_{\nu(\mu)}\ \text{is of letter } R,
 \qquad
-i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}\,\vec e_{\nu(\mu)}\ \text{is of letter } L .
+i\vec e_\mu\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm R}\,\vec e_{\nu(\mu)}\ \text{is of letter } L .
 $$
 A frame cell therefore carries each part of a field into the other, and the $L$ part of a frame cell applied to an $L$ field is zero. A term built from one field alone is consequently not chiral; the coupling of the W is chiral because it reads one part of one of the two fields of a doublet. The two letter statements were verified on the four frame cells as maps of the algebra.
 
@@ -146,9 +146,9 @@ The charged current interaction is
 $$
 \mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\Big(\sum_\mu W^+_\mu J^{+}_\mu+\mathrm{h.c.}\Big),
 \qquad
-J^+_\mu=\sum_{\text{doublets}}\mathrm{Sc}\Big(\tilde{Ξ}^{\mathrm{spn}*}_{\mathrm u}\,i\,\big(i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}\,\vec e_{\nu(\mu)}\big)\vec e_x\Big),
+J^+_\mu=\sum_{\text{doublets}}\mathrm{Sc}\Big(\tilde{Ξ}^{\mathrm{sp}*}_{\mathrm u}\,i\,\big(i\vec e_\mu\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,\mathrm L}\,\vec e_{\nu(\mu)}\big)\vec e_x\Big),
 $$
-with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u}$ and $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d}$ the up and down members of a doublet, and $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}$ the $L$ part of the down field. The selection is what makes the coupling chiral: it is applied to the down field, so that of the two parts of that field only the $L$ one reaches the W. The neutral current interaction is
+with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u}$ and $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d}$ the up and down members of a doublet, and $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,\mathrm L}$ the $L$ part of the down field. The selection is what makes the coupling chiral: it is applied to the down field, so that of the two parts of that field only the $L$ one reaches the W. The neutral current interaction is
 $$
 \mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_\mu Z_\mu J_{Z\mu} ,
 \qquad
@@ -288,7 +288,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -382,9 +382,9 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}$ | The centre of the algebra; the abelian factor |
-| $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$; $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame cells, written as actions on a field: the time cell, a generator cell, and the volume cell whose two values are the chirality |
-| $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}=\tfrac12(\tilde{Ξ}^{\mathrm{spn}}+i\tilde{Ξ}^{\mathrm{spn}}\vec e_z)$, $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}=\tfrac12(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}^{\mathrm{vol}}$, $R$ the $+1$ value |
-| $\tilde{Ξ}^{\mathrm{spn}\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
+| $\tilde{Ξ}^{\mathrm{sp}}\mapsto i\tilde{Ξ}^{\mathrm{sp}}\vec e_x$; $\tilde{Ξ}^{\mathrm{sp}}\mapsto i\tilde{Ξ}^{\mathrm{sp}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame cells, written as actions on a field: the time cell, a generator cell, and the volume cell whose two values are the chirality |
+| $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm L}=\tfrac12(\tilde{Ξ}^{\mathrm{sp}}+i\tilde{Ξ}^{\mathrm{sp}}\vec e_z)$, $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm R}=\tfrac12(\tilde{Ξ}^{\mathrm{sp}}-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}^{\mathrm{vol}}$, $R$ the $+1$ value |
+| $\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra |
 | $T_a=\tfrac12e_a$, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ | The generators of the compact factor and their commutator |
@@ -399,7 +399,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
 | $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
-| $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}*}_{\mathrm u}\,i\,(i\vec e_\mu\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
+| $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{sp}*}_{\mathrm u}\,i\,(i\vec e_\mu\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\nu(\mu)})\vec e_x\big)$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial Q_\mu-\partial\mathcal{A}_{\mu a}/\partial Q_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
 | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |

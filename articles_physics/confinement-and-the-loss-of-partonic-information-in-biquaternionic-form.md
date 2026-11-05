@@ -265,17 +265,17 @@ Two biquaternionic forms of the massive Dirac equation are in play here, and the
 **The one-sided pair.** The corpus's equation is the chiral pair on the element-valued field,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
+\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$
 
-Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}^{\mathrm{spn}}_L$ carries the $L$ value and $\tilde{Ξ}^{\mathrm{spn}}_R$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
+Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}^{\mathrm{sp}}_L$ carries the $L$ value and $\tilde{Ξ}^{\mathrm{sp}}_R$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0,
+\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0,
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=0,
+\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=0,
 $$
 
 one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.
@@ -294,11 +294,11 @@ $$
 \mathcal NF=-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0 .
 $$
 
-The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=\mu\tilde{Ξ}^{\mathrm{spn}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
+The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=\mu\tilde{Ξ}^{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
 
 ### The Linear Bag Model
 
-Let $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
+Let $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
 
 $$
 Ξ(t',\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega t'},
@@ -325,9 +325,9 @@ $$
 A(iΞ) = -A(Ξ)\,\vec e_z ,
 $$
 
-that is $\tilde{Ξ}^{\mathrm{spn}}\mapsto-\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
+that is $\tilde{Ξ}^{\mathrm{sp}}\mapsto-\tilde{Ξ}^{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
 
-**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
+**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
 
 $$
 R = D_3 + i\frac{\partial}{\partial t'}\,M_{i\vec e_x} - m M_{\vec e_y}
@@ -487,7 +487,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}$ | The trace, twice the scalar part, *Norm and Pairing Conventions* |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |

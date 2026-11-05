@@ -29,7 +29,7 @@ The article is the analysis article of *Biquaternion Physical Interpretation of 
 
 ### The Derivative Conventions
 
-The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial Q_\mu$. On the material sector, where $Q_t=ict'$ and $Q_k=q_k$, the time derivative is the **imaginary-time derivative**,
+The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial Q_\mu$. On the material sector, where $Q_t=i c r'_t$ and $Q_k=q_k$, the time derivative is the **imaginary-time derivative**,
 
 $$
 \frac{\partial}{\partial Q_t}=-\frac{i}{c}\frac{\partial}{\partial t'},
@@ -83,8 +83,8 @@ At the two equal arguments the four forms give two operators:
 
 | Norm | Operator | On the material sector |
 | --- | --- | --- |
-| quaternionic bilinear and Hermitian | $\Box=\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {t'}^2}$ |
-| plain bilinear and Krein | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {t'}^2}-\Delta$ |
+| quaternionic bilinear and Hermitian | $\Box=\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}$ |
+| plain bilinear and Krein | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}-\Delta$ |
 
 The d'Alembertian is the quaternionic bilinear and the Hermitian norm:
 
@@ -92,7 +92,7 @@ $$
 \boxed{\;\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q\;}.
 $$
 
-The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-c^{-2}\partial^2/\partial {t'}^2$ and $-c^{-2}\partial^2/\partial {t'}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.
+The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ and $-c^{-2}\partial^2/\partial {r'_{t}}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.
 
 ### The Determinant of the First-Order Operator
 
@@ -202,7 +202,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\h
 
     and on the material sector, where the field is written $\xi^{\mathrm{scl}}$, this is $-c^{-2}\lvert\partial\xi^{\mathrm{scl}}/\partial t'\rvert^2+\lvert\nabla\xi^{\mathrm{scl}}\rvert^2$. The kinetic Lagrangian is its negative, so the signature of the kinetic term is the signature of the Hermitian form on the gradient; the overall sign is a convention. Boundary: the identification is the Klein–Gordon Lagrangian interpretation; the value of the Hermitian form on the gradient is not positive, because the time derivative is imaginary on the material sector; no dynamics is derived.
 
-- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-c^{-2}\partial^2/\partial {t'}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial Q_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
+- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial Q_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
 
 - **The wave operator is the determinant of the first-order operator.** The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$. The second-order wave equation is therefore the determinant of a first-order matrix, and the square of a first-order equation. Boundary: this is the determinant of the regular matrix, a matrix computation; the doubling is the regular representation's two chiral copies, not a prediction of doubled particles, and the substitution of the derivative for the coefficient is the legitimate substitution of commuting partial derivatives.
 
@@ -235,7 +235,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\h
 
 ## Summary
 
-The analysis block has one first-order operator, the gradient $\tilde\nabla$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial Q_t^2+\Delta_Q$, and on the material sector it is $\Delta-c^{-2}\partial^2/\partial {t'}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
+The analysis block has one first-order operator, the gradient $\tilde\nabla$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial Q_t^2+\Delta_Q$, and on the material sector it is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
 
 The Fourier transform is generated by a root of $-1$: the root is the clock, the frequency is its rate, the conjugate axis is an imaginary direction of the algebra, and the interval is the symbol of the d'Alembertian, with the mass shell as its level set. The transform is a change of description, not a measurement; it is invertible where the transform pair holds, and it does not make the informational sector the Fourier dual of the material one. The transform of a positive measure is not positive definite for the biquaternion norm, because the norm is indefinite and negative on the centre; with the Hermitian form, positivity holds exactly for the degenerate roots and fails for the genuinely complex ones. The vanishing norm marks the cone where the transform is not guaranteed to be invertible; the precise condition is open.
 
@@ -256,7 +256,7 @@ The Fourier transform is generated by a root of $-1$: the root is the clock, the
 | $\rho$, $\rho^2=-e_t$ | Root of $-1$; families $\pm i$, $\pm\hat\mu$, $b\hat\mu+d\hat\nu i$ |
 | $W(t',\omega)=\exp(-2\pi\rho\omega t')$ | Fourier kernel; $\cos(2\pi\omega t')e_t-\sin(2\pi\omega t')\rho$ |
 | $F(\omega)$, $f(t')$ | Transform and inverse transform |
-| $\mathbb{M}_-$, $\tilde R=ict'\,e_t+\vec r$ | Material sector and material coordinate |
+| $\mathbb{M}_-$, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | Material sector and material coordinate |
 | $\omega_\mu$; $\omega$, $\vec k$ | Frequencies conjugate to $Q_\mu$; physical frequency and wavevector |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace and its imaginary translate |
 

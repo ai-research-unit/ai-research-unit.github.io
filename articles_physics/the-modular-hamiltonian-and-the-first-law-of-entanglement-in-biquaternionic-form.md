@@ -30,7 +30,7 @@ Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular oper
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{t'}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde K_\sigma}\,\cdot\,e^{\tilde K_\sigma}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{r'_{t}}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde K_\sigma}\,\cdot\,e^{\tilde K_\sigma}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
@@ -38,7 +38,7 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 
 - **It is the state's logarithm.** $\sigma$ and $K_\sigma$ carry the same information; the entropy is $S(\sigma)=\mathrm{Tr}(\sigma K_\sigma)=\langle K_\sigma\rangle_\sigma$, the state's modular energy.
 - **It is defined by the state.** Different states have different modular Hamiltonians, and the difference of two modular Hamiltonians is the logarithm of the relative modular operator of the relative-entropy companion article.
-- **It generates the modular flow.** The commutation relation $\frac{d}{dt'}\sigma_{t'}(\tilde Q_1)|_{t'=0}=-i[K_\sigma,\tilde Q_1]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
+- **It generates the modular flow.** The commutation relation $\frac{d}{dt'}\sigma_{r'_{t}}(\tilde Q_1)|_{t'=0}=-i[K_\sigma,\tilde Q_1]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
 
 ### The Modular Hamiltonian of a Biquaternion State
 
@@ -182,7 +182,7 @@ The framework's terms make the mechanism transparent, and it is worth stating be
 
 ## The Entanglement Hamiltonian of a Subsystem
 
-The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}^{\mathrm{spn}}$ is the reduced state of a subsystem $A$ of a larger system. Then $K_A=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
+The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}^{\mathrm{sp}}$ is the reduced state of a subsystem $A$ of a larger system. Then $K_A=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
 $$
 \sigma_A=\frac{\exp(-K_A)}{\mathrm{Tr}\,\exp(-K_A)},
 $$

@@ -114,7 +114,7 @@ The table is exhaustive: every element lies in exactly one cell. The cells are t
 
 ### Mass in Motion: $\Sigma_{11}$
 
-The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}^{\mathrm{spn}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.
+The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}^{\mathrm{sp}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.
 
 The physical content is the **two-mode picture**: two invariant planes, a mode basis, a beat, and a unique decomposition of the element into two null components. It is the regime in which a particle has both a mass and a direction of motion, and in which the mass shell is a level set rather than the cell itself.
 
@@ -142,12 +142,12 @@ The table is a table of the full algebra. A physical four-momentum is a point of
 
 ### The Material Slice
 
-On $\mathbb{M}_-$ the coordinates are $Q_t=ict'$ and $\vec Q=(x,y,z)$ real. Hence
+On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(x,y,z)$ real. Hence
 
 $$
-B^2=x^2+y^2+z^2\ge0,
+B^2=r_x^2+r_y^2+r_z^2\ge0,
 \qquad
-N=-c^2t'^2+x^2+y^2+z^2 .
+N=-c^2t'^2+r_x^2+r_y^2+r_z^2 .
 $$
 
 The vector square is non-negative and vanishes exactly at the spatial origin. The material slice therefore meets the four cells as follows.
@@ -165,15 +165,15 @@ The table also shows what is **not** on the real slice: the Jordan part of $\Sig
 
 ### The Informational Slice
 
-On $\mathbb{M}_+$ the coordinates are $Q_t=ct$ real and $\vec Q=i(x',y',z')$. Hence
+On $\mathbb{M}_+$ the coordinates are $Q_t=c r_t$ real and $\vec Q=i(r'_{x},r'_{y},r'_{z})$. Hence
 
 $$
-B^2=-(x'^2+y'^2+z'^2)\le0,
+B^2=-(r'_{x}^2+r'_{y}^2+r'_{z}^2)\le0,
 \qquad
-N=c^2t^2-x'^2-y'^2-z'^2 .
+N=c^2t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2 .
 $$
 
-The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $x'=y'=z'=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.
+The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $r'_{x}=r'_{y}=r'_{z}=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.
 
 The sign reversal is the content of the sector bridge. The same $B^2$ is non-negative on matter and non-positive on information, and the same norm is the interval on one and minus the interval on the other. The four-cell partition is the same partition on both slices; the mirror reverses the signs, not the cells.
 
@@ -245,8 +245,8 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 | $\mathcal N=\{N=0\}$ | the null cone, the zero-divisor cone |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{ij}$ | the cell with $N=0$ iff $i=0$ and $B^2=0$ iff $j=0$ |
-| $\mathbb{M}_-$ | the material slice, $Q_t=ict'$, $\vec Q$ real |
-| $\mathbb{M}_+$ | the informational slice, $Q_t=ct$, $\vec Q$ imaginary |
+| $\mathbb{M}_-$ | the material slice, $Q_t=i c r'_t$, $\vec Q$ real |
+| $\mathbb{M}_+$ | the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the four-momentum chart |
 | $m$, $\vec p$, $\theta^{\mathrm{rpd}}$ | mass, momentum, rapidity |
 

@@ -8,13 +8,13 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, a Lorentz rotor, with $\tanh\theta^{\mathrm{rpd}} = v_b/c$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}^{*}$; the Poincaré pair $(\tilde U_{\mathrm b},\tilde{R}_0)$ acting by $\tilde{R}\mapsto\tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}^{*}+\tilde{R}_0$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The plain form is the trace formula of *Norm and Pairing Conventions*, and it is inherited unchanged.
+The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, a Lorentz rotor, with $\tanh\theta^{\mathrm{rpd}} = v_b/c$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the rotor conjugation $\tilde R_\varphi \mapsto \tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}$; the Poincaré pair $(\tilde U_{\mathrm b},\tilde{R}_{\varphi,0})$ acting by $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}+\tilde{R}_{\varphi,0}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The plain form is the trace formula of *Norm and Pairing Conventions*, and it is inherited unchanged.
 
 **What is to be shown.** The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.
 
@@ -50,7 +50,7 @@ $$
 \mathrm{Vect}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
 \iff \sum_a \vec p_a = \sum_f \vec p_f .
 $$
-These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $ict'$ convention is what puts them there.
+These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $i c r'_t$ convention is what puts them there.
 
 **Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *complex* algebra while the difference lies in the four-dimensional *real* subspace $\mathbb{M}_-$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{M}_-$-valued equation, and since $\mathbb{M}_-$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.
 
@@ -68,7 +68,7 @@ $$
 $$
 If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.
 
-*Translation.* A Poincaré translation $(\tilde U^{\mathrm{lor}},\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
+*Translation.* A Poincaré translation $(\tilde U^{\mathrm{lor}},\tilde{R}_{\varphi,0})$ acts on the four-position by $\tilde R_\varphi\mapsto\tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_{\varphi,0}$. The four-momentum of a free body is built from its four-velocity, $d\tilde R_\varphi/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
 
 **Solution (d).** Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
@@ -340,7 +340,7 @@ as the sum rule requires.
 $$
 \tilde{P}_a = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_t + m_a\vec v_a + O(v^3/c^3).
 $$
-The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $ict'$ convention packing them into one element of $\mathbb{M}_-$.
+The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i c r'_t$ convention packing them into one element of $\mathbb{M}_-$.
 
 **Solution (b).** In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+K_1$ gives $s = (m_1+m_2)^2c^4 + 2K_1m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
 $$
@@ -399,7 +399,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\tilde{V}_a = \gamma_a(ic\,e_t+\vec v_a)$ | Four-velocity, $\langle\tilde{V}_a\rangle_{\natural}=-c^2$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ |
-| $(\tilde U^{\mathrm{lor}},\tilde{R}_0)$ | Poincaré transformation, $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_0$ |
+| $(\tilde U^{\mathrm{lor}},\tilde{R}_{\varphi,0})$ | Poincaré transformation, $\tilde R_\varphi\mapsto\tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_{\varphi,0}$ |
 | $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ | Boost biquaternion, laboratory to COM frame |
 | $\tilde U^{\natural}_{\rm CM}$ | Quaternion conjugate, COM frame to laboratory |
 | $s,t,u$ | Mandelstam invariants, $s=-c^2\langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$, etc. |

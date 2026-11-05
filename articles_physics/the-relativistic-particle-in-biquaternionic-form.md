@@ -6,10 +6,10 @@ The relativistic particle is the simplest physical object the biquaternion frame
 
 Two facts from the algebra organize the whole account, and they are worth stating at the outset.
 
-**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
+**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2d{t'}^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article *Algebra and Element Conventions*, and no metric is introduced here beyond them.
@@ -23,31 +23,31 @@ The article is organized as follows. The next section fixes the worldline and th
 A relativistic particle is described by a curve in the material sector,
 
 $$
-\tilde{R}(\lambda) : \lambda \longmapsto \tilde{R}(\lambda) = ic\,t'(\lambda)\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)(\lambda) \in \mathbb{M}_- ,
+\tilde R_\varphi(\lambda) : \lambda \longmapsto \tilde R_\varphi(\lambda) = i c r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{M}_- ,
 $$
 
 with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form
 
 $$
-d\tilde{R} = ic\,dt'\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+d\tilde R_\varphi = ic\,dt'\,e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
 
 whose biquaternion norm is
 
 $$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = -c^2d{t'}^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
 $$
 
-Off the null set, $\langle d\tilde{R}\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
+Off the null set, $\langle d\tilde R_\varphi\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
 
 $$
-\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde{R}\rangle_{\natural} = c^2d{t'}^2 -(dx^2+dy^2+dz^2) \;}
+\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde R_\varphi\rangle_{\natural} = c^2d{r'_{t}}^2 -(dx^2+dy^2+dz^2) \;}
 \qquad\Longrightarrow\qquad
 d\tau = dt'\sqrt{1 - \frac{\vec v^2}{c^2}},
-\qquad \vec v = \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'} .
+\qquad \vec v = \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dt'} .
 $$
 
-The definition is real precisely when the worldline is timelike, $\langle d\tilde{R}\rangle_{\natural} < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:
+The definition is real precisely when the worldline is timelike, $\langle d\tilde R_\varphi\rangle_{\natural} < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:
 
 $$
 \text{timelike: } N<0,
@@ -59,15 +59,15 @@ $$
 
 Two structural remarks. First, $d\tau$ is real and positive for a future-directed timelike curve, and it is a scalar under the rotor conjugation that implements the Lorentz group (the companion article *The Lorentz Transformation as a Biquaternionic Rotation*), because $\langle\cdot\rangle_{\natural}$ is preserved by that action; this is what makes it a usable parameter. Second, the definition is invariant under reparametrization, so a worldline carries a canonical affine parameter up to an additive constant, and it is by $d\tau$ that the four-velocity is normalized below.
 
-The curve is **causal** if $\langle d\tilde{R}\rangle_{\natural} \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The curve is **causal** if $\langle d\tilde R_\varphi\rangle_{\natural} \leq 0$ everywhere and **timelike** if the inequality is strict. A physical particle has a timelike worldline, and the statement that no signal exceeds $c$ is the statement that its tangent never leaves the interior of the null cone. Nothing in this article requires the curve to be straight; acceleration is admitted, and the four-force that produces it is treated in the companion articles *The Lorentz Force in Biquaternion Form* and *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Four-Velocity and the Rapidity
 
 The **four-velocity** is the tangent with respect to proper time,
 
 $$
-\boxed{\ \tilde{V} = \frac{d\tilde{R}}{d\tau}
-= \frac{dt'}{d\tau}\left(ic\,e_t + \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'}\right)
+\boxed{\ \tilde{V} = \frac{d\tilde R_\varphi}{d\tau}
+= \frac{dt'}{d\tau}\left(ic\,e_t + \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dt'}\right)
 = \gamma\left(ic\,e_t + \vec v\right)\ },
 \qquad
 \gamma = \frac{dt'}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
@@ -147,7 +147,7 @@ $$
 \qquad (m > 0),
 $$
 
-and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $ict'$ convention.
+and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $i c r'_t$ convention.
 
 Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. As $v\ll c$ the energy separates into the rest energy and the kinetic term,
 
@@ -162,7 +162,7 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{R}\ \longmapsto\ \tilde U^{\mathrm{lor}}\,\tilde{R}\,\tilde U^{\mathrm{lor}}{}^{*},
+\tilde R_\varphi\ \longmapsto\ \tilde U^{\mathrm{lor}}\,\tilde R_\varphi\,\tilde U^{\mathrm{lor}}{}^{*},
 \qquad
 \tilde U^{\mathrm{lor}}\in\mathbb{B},
 \qquad
@@ -177,7 +177,7 @@ $$
 \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} ,
 $$
 
-with $\theta^{\mathrm{rpd}}$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\theta^{\mathrm{rpd}}\,\vec u$ to the rest four-velocity $ic\,e_t$.
+with $\theta^{\mathrm{rpd}}$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\theta^{\mathrm{rpd}}\,\vec u$ to the rest four-velocity $ic\,e_t$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\theta^{\mathrm{rpd}}_1$ and the second $\theta^{\mathrm{rpd}}_2$ along the same direction, the product is the boost of rapidity $\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2$, and the composed velocity is
 
@@ -204,8 +204,8 @@ For **non-collinear** boosts the rotors do not commute, and their product is not
 The action of a free relativistic particle is the invariant length of its worldline, measured in units of $mc$:
 
 $$
-\boxed{\ S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
-= -mc\int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}
+\boxed{\ S[\tilde R_\varphi] = -mc\int\sqrt{-\,d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}
+= -mc\int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}
 = -mc^2\int\frac{dt'}{\gamma}\ }\ .
 $$
 
@@ -215,7 +215,7 @@ $$
 \mathrm{Lag}(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma} .
 $$
 
-The canonical momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the vector part of the four-momentum,
+The canonical momentum conjugate to $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the vector part of the four-momentum,
 
 $$
 \frac{\partial \mathrm{Lag}}{\partial\vec v}
@@ -232,12 +232,12 @@ $$
 so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
 
 $$
-\frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde{R}}{d\tau^2} = 0 ,
+\frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde R_\varphi}{d\tau^2} = 0 ,
 $$
 
 the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article *Noether's Theorem in Biquaternionic Form* derives the charge from the translation invariance of this action.
 
-The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde{R}\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
+The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde R_\varphi\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of *The Relativistic Particle in an External Field, in Biquaternionic Form*.
 
 ## The Non-Relativistic Limit
 
@@ -314,15 +314,15 @@ The conventions of the construction are those of the following companion article
 The relativistic particle is a timelike worldline in the material sector $\mathbb{M}_-$,
 
 $$
-\tilde{R}(\tau) = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
+\tilde R_\varphi(\tau) = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
-d\tau^2 = -\frac{1}{c^2}\langle d\tilde{R}\rangle_{\natural} = d{t'}^2 - \frac{dx^2+dy^2+dz^2}{c^2},
+d\tau^2 = -\frac{1}{c^2}\langle d\tilde R_\varphi\rangle_{\natural} = d{r'_{t}}^2 - \frac{dx^2+dy^2+dz^2}{c^2},
 $$
 
 along which the four-velocity
 
 $$
-\tilde{V} = \frac{d\tilde{R}}{d\tau} = \gamma\left(ic\,e_t + \vec v\right),
+\tilde{V} = \frac{d\tilde R_\varphi}{d\tau} = \gamma\left(ic\,e_t + \vec v\right),
 \qquad
 \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}},
 $$
@@ -340,7 +340,7 @@ $$
 satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\theta^{\mathrm{rpd}}$, with $v = c\tanh\theta^{\mathrm{rpd}}$ and $\gamma = \cosh\theta^{\mathrm{rpd}}$, makes the four-velocity $\tilde{V} = ic\cosh\theta^{\mathrm{rpd}}\,e_t + c\sinh\theta^{\mathrm{rpd}}\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
-S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
+S[\tilde R_\varphi] = -mc\int\sqrt{-\,d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}
 = -mc^2\int\frac{dt'}{\gamma},
 \qquad
 \mathrm{Lag}(\vec v) = -\frac{mc^2}{\gamma},
@@ -360,8 +360,8 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (centre) |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*},\ {}^\flat=-{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
-| $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
-| $d\tau^2 = -\langle d\tilde{R}\rangle_{\natural}/c^2$ | Proper time |
+| $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
+| $d\tau^2 = -\langle d\tilde R_\varphi\rangle_{\natural}/c^2$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $\theta^{\mathrm{rpd}}$, $v = c\tanh\theta^{\mathrm{rpd}}$, $\gamma=\cosh\theta^{\mathrm{rpd}}$ | Rapidity |
@@ -369,8 +369,8 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
-| $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
+| $\tilde R_\varphi\mapsto\tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $S = -mc\int\sqrt{-d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

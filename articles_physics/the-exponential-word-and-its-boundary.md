@@ -80,14 +80,14 @@ $$
 The defect is the Baker–Campbell–Hausdorff correction. To first order,
 
 $$
-\operatorname{Log}\left(\exp\tilde H\exp\tilde K\right)
-=\tilde H+\tilde K+\frac12[\tilde H,\tilde K]+\cdots,
+\operatorname{Log}\left(\exp\tilde R_\psi\exp\tilde K\right)
+=\tilde R_\psi+\tilde K+\frac12[\tilde R_\psi,\tilde K]+\cdots,
 $$
 
-and for $\tilde H=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde K=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is
+and for $\tilde R_\psi=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde K=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is
 
 $$
-\frac12[\tilde H,\tilde K]
+\frac12[\tilde R_\psi,\tilde K]
 =\frac{i\theta^{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$
 

@@ -39,7 +39,7 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde H = h_t e_t + i\vec h$ the Born pairing is $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})/\mathrm{Sc}(\tilde{Ϛ}) = h_t + \vec r\cdot\vec h$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real, and non-negative when $\tilde H\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
+and for a Hermitian observable $\tilde R_\psi = h_t e_t + i\vec h$ the Born pairing is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ}) = h_t + \vec r\cdot\vec h$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
 ### Why the carrier is forced
 
@@ -148,7 +148,7 @@ $$
 $$
 \tilde{\mathcal L}(u) = \tfrac{i}{2}\,e_t - \tfrac12\,\vec r ,
 $$
-so in the four-vector coordinates $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ its time component is $ct' = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ its time component is $c r'_{t} = \tfrac12 > 0$ and its spatial direction is
 $$
 \vec u_p = -\vec u_r .
 $$
@@ -263,11 +263,11 @@ The frame dependence of everything that follows enters through the momentum argu
 
 ## Observables, Generators, and the Two Sectors
 
-**Observables.** The observables of the qubit are the Hermitian elements $\tilde{H} = h_te_t + i\vec h$, with the spin operators
+**Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\psi = h_te_t + i\vec h$, with the spin operators
 $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k , \qquad [\tilde{S}_j,\tilde{S}_k] = i\hbar\,\epsilon_{jkl}\tilde{S}_l ,
 $$
-and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.
+and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
 **Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$

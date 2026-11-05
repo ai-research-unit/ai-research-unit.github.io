@@ -132,7 +132,7 @@ On the Peirce carrier the generator is a left multiplication, a cell with a triv
 $$
 \gamma_k=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
 $$
-and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
+and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\tilde{Ξ}=a\tilde{Ξ}b$ and $L_{a}R_{e_t}=L_a$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the generators $i\vec e_k$ span $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$ and the basis $\vec e_k$ spans $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
 

@@ -15,12 +15,12 @@ The word is the four-factor product
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr),
+\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition, computes the closed forms, and reads the word against the spectral decomposition.
+with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition, computes the closed forms, and reads the word against the spectral decomposition.
 
 The spectral reading is the subject that distinguishes this article from the general theory. The element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis. The unit factor is diagonal in that basis, with eigenvalues $\mu_\pm=\lambda_\pm/\Rho$. The polar factors are diagonal in the same basis exactly when the element is normal, and that is exactly the case in which the two axes are parallel and the word collapses to a single exponential. In the general, non-normal case the eigenbasis is not a polar basis: the spectrum determines the two eigenvalues of the unit factor, but it does not determine the rapidity, the rotor angle or the axes. The worked examples show the gap numerically.
 
@@ -47,13 +47,13 @@ On the sector $N\neq0$ and $B^2\neq0$. Here $\operatorname{Arg}$ is the principa
 
 $$
 \boxed{\;\tilde Q=r e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
+=r e^{i\alpha}\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
 with the two unit factors
 
 $$
-\boxed{\;\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},\qquad
+\boxed{\;\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},\qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\;}
 $$
 
@@ -68,11 +68,11 @@ $$
 $$
 
 $$
-\boxed{\;\cosh\psi=\frac{\lVert\tilde Q\rVert_E^2}{|N|},\qquad \psi=\operatorname{arcosh}\frac{\lVert\tilde Q\rVert_E^2}{|N|}\;}
+\boxed{\;\cosh\theta^{\mathrm{rpd}}=\frac{\lVert\tilde Q\rVert_E^2}{|N|},\qquad \theta^{\mathrm{rpd}}=\operatorname{arcosh}\frac{\lVert\tilde Q\rVert_E^2}{|N|}\;}
 $$
 
 $$
-\boxed{\;C=\sqrt{\frac{\lVert\tilde Q\rVert_E^2+|N|}{2}},\qquad S=\sqrt{\frac{\lVert\tilde Q\rVert_E^2-|N|}{2}},\qquad \cosh\frac{\psi}{2}=\frac{C}{\sqrt{|N|}},\qquad \sinh\frac{\psi}{2}=\frac{S}{\sqrt{|N|}}\;}
+\boxed{\;C=\sqrt{\frac{\lVert\tilde Q\rVert_E^2+|N|}{2}},\qquad S=\sqrt{\frac{\lVert\tilde Q\rVert_E^2-|N|}{2}},\qquad \cosh\frac{\theta^{\mathrm{rpd}}}{2}=\frac{C}{\sqrt{|N|}},\qquad \sinh\frac{\theta^{\mathrm{rpd}}}{2}=\frac{S}{\sqrt{|N|}}\;}
 $$
 
 $$
@@ -96,7 +96,7 @@ $$
 \boxed{\;\vec u_{\mathrm r}=\frac{e^{-i\alpha}\bigl(C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\bigr)}{\bigl\lVert C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\bigr\rVert}\;}
 $$
 
-The boost axis is undefined when $\psi=0$; the rotor axis is undefined when $\theta\in\{0,2\pi\}$. The vector $\mathrm{Vect}\tilde u_{\mathrm r}$ is the vector part of $\tilde u_{\mathrm r}$. At $\psi=0$ the boost is $e_t$, and the box for $\tilde u_{\mathrm r}$ reduces to $\tilde u_{\mathrm r}=\tilde Q/\Rho$.
+The boost axis is undefined when $\theta^{\mathrm{rpd}}=0$; the rotor axis is undefined when $\theta\in\{0,2\pi\}$. The vector $\mathrm{Vect}\tilde u_{\mathrm r}$ is the vector part of $\tilde u_{\mathrm r}$. At $\theta^{\mathrm{rpd}}=0$ the boost is $e_t$, and the box for $\tilde u_{\mathrm r}$ reduces to $\tilde u_{\mathrm r}=\tilde Q/\Rho$.
 
 *Proof.*
 
@@ -139,19 +139,19 @@ $$
 \tilde U\tilde U^*=\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}^2.
 $$
 
-With $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ and $\vec u_{\mathrm b}^2=-1$,
+With $\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\vec u_{\mathrm b}^2=-1$,
 
 $$
-\tilde U_{\mathrm b}^2=\cosh\psi\,e_t+i\sinh\psi\,\vec u_{\mathrm b}.
+\tilde U_{\mathrm b}^2=\cosh\theta^{\mathrm{rpd}}\,e_t+i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}.
 $$
 
-Comparing the scalar parts gives $\cosh\psi=\lVert\tilde Q\rVert_E^2/|N|$ and $\psi=\operatorname{arcosh}(\lVert\tilde Q\rVert_E^2/|N|)$; the argument is real because $\lVert\tilde Q\rVert_E^2\ge|N|$ by Cauchy–Schwarz. Comparing the vector parts gives $\sinh\psi\,\vec u_{\mathrm b}=\vec a$, hence $\vec u_{\mathrm b}=\vec a/\lVert\vec a\rVert$ when $\psi>0$. The box for $\tilde U_{\mathrm b}$ follows from $\cosh\frac{\psi}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2+|N|)/(2|N|)}$ and $\sinh\frac{\psi}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2-|N|)/(2|N|)}$.
+Comparing the scalar parts gives $\cosh\theta^{\mathrm{rpd}}=\lVert\tilde Q\rVert_E^2/|N|$ and $\theta^{\mathrm{rpd}}=\operatorname{arcosh}(\lVert\tilde Q\rVert_E^2/|N|)$; the argument is real because $\lVert\tilde Q\rVert_E^2\ge|N|$ by Cauchy–Schwarz. Comparing the vector parts gives $\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}=\vec a$, hence $\vec u_{\mathrm b}=\vec a/\lVert\vec a\rVert$ when $\theta^{\mathrm{rpd}}>0$. The box for $\tilde U_{\mathrm b}$ follows from $\cosh\frac{\theta^{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2+|N|)/(2|N|)}$ and $\sinh\frac{\theta^{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2-|N|)/(2|N|)}$.
 
-**The rotor.** The boost is Hermitian of norm one, so $\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{\natural}=\cosh\frac{\psi}{2}e_t-i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$. Therefore
+**The rotor.** The boost is Hermitian of norm one, so $\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{\natural}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t-i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$. Therefore
 
 $$
 \tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U
-=\frac{1}{\Rho}\Bigl(\cosh\frac{\psi}{2}e_t-i\sinh\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde Q.
+=\frac{1}{\Rho}\Bigl(\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t-i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\tilde Q.
 $$
 
 Substituting the half-angle values, and using $\Rho=re^{i\alpha}$ and $r^2=|N|$, gives the box for $\tilde u_{\mathrm r}$.
@@ -166,7 +166,7 @@ $$
 
 Taking the real part of the scalar part gives the box for $\theta$. Taking the norm of the vector part gives $\sin\frac{\theta}{2}=\lVert C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\rVert/|N|$, and $\vec u_{\mathrm r}=\mathrm{Vect}\tilde u_{\mathrm r}/\sin\frac{\theta}{2}$ is the box for $\vec u_{\mathrm r}$.
 
-**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/\Rho$, which is the word.
+**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/\Rho$, which is the word.
 
 **Check.** For
 
@@ -174,7 +174,7 @@ $$
 \tilde Q=\Bigl(1-\frac{i}{2}\Bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z,
 $$
 
-one has $N=1$ and $\lVert\tilde Q\rVert_E^2=3$, hence $r=1$, $\alpha=0$, $\psi=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
+one has $N=1$ and $\lVert\tilde Q\rVert_E^2=3$, hence $r=1$, $\alpha=0$, $\theta^{\mathrm{rpd}}=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
 
 $$
 \tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
@@ -248,10 +248,10 @@ $$
 \boxed{\;
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 =r\,e^{i\alpha}\,
-\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 \qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr),\quad
+\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\quad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)
 \;}
 $$
@@ -261,7 +261,7 @@ with
 $$
 r>0,\qquad
 \alpha\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
-\psi\ge0,\qquad
+\theta^{\mathrm{rpd}}\ge0,\qquad
 \theta\in[0,2\pi],
 $$
 
@@ -277,7 +277,7 @@ The factors have closed forms in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$.
 |---|---|---|---|
 | scale | $\ln r$ | $r$ | $r>0$ |
 | phase | $i\alpha$ | $e^{i\alpha}$ | $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$ |
-| boost | $i\frac{\psi}{2}\vec u_{\mathrm b}$ | $\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}$ | $\psi\ge0$ |
+| boost | $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | $\theta^{\mathrm{rpd}}\ge0$ |
 | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ |
 
 The boost is Hermitian positive of norm one; the rotor is a unit real quaternion. The product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is the unit factor of $\tilde Q$, and
@@ -295,9 +295,9 @@ The modulus $\Rho$ is the principal square root of $N$, in the branch with non-n
 Let
 
 $$
-c_{\mathrm b}=\cosh\frac{\psi}{2},
+c_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2},
 \qquad
-s_{\mathrm b}=\sinh\frac{\psi}{2},
+s_{\mathrm b}=\sinh\frac{\theta^{\mathrm{rpd}}}{2},
 \qquad
 c_{\mathrm r}=\cos\frac{\theta}{2},
 \qquad
@@ -344,7 +344,7 @@ The data are
 $$
 \underbrace{1}_{\ln r}
 +\underbrace{1}_{\alpha}
-+\underbrace{1+2}_{\psi,\vec u_{\mathrm b}}
++\underbrace{1+2}_{\theta^{\mathrm{rpd}},\vec u_{\mathrm b}}
 +\underbrace{1+2}_{\theta,\vec u_{\mathrm r}}
 =8,
 $$
@@ -482,22 +482,22 @@ In this case the common axis is $\pm i\vec{Ζ}$ whenever it is defined, and
 
 $$
 \boxed{\;
-\tilde Q=r e^{i\alpha}\exp\Bigl(\frac{\theta+i\psi}{2}\vec u\Bigr),
+\tilde Q=r e^{i\alpha}\exp\Bigl(\frac{\theta+i\theta^{\mathrm{rpd}}}{2}\vec u\Bigr),
 \qquad
 \vec u=\pm i\vec{Ζ},
 \;}
 $$
 
-with the sign chosen so that $\psi\ge0$. The eigenvalues of the unit factor are
+with the sign chosen so that $\theta^{\mathrm{rpd}}\ge0$. The eigenvalues of the unit factor are
 
 $$
-\boxed{\mu_\pm=e^{\mp\frac{\psi}{2}}e^{\pm i\frac{\theta}{2}}},
+\boxed{\mu_\pm=e^{\mp\frac{\theta^{\mathrm{rpd}}}{2}}e^{\pm i\frac{\theta}{2}}},
 $$
 
 and the spectrum of $\tilde U$ determines the two angles,
 
 $$
-\psi=\ln\Bigl\lvert\frac{\mu_-}{\mu_+}\Bigr\rvert,
+\theta^{\mathrm{rpd}}=\ln\Bigl\lvert\frac{\mu_-}{\mu_+}\Bigr\rvert,
 \qquad
 \theta=2\arg\mu_+\pmod{2\pi}.
 $$
@@ -512,9 +512,9 @@ $$
 
 which gives 1. If 3 holds, both factors are functions of $\tilde U$, hence diagonal in its eigenbasis, so their axes are the two eigenlines, which are $\pm i\vec{Ζ}$; this gives 4. If 4 holds, the two exponents commute, so the product is the exponential of their sum, which gives 5. If 5 holds, $\tilde Q$ is a scalar multiple of the exponential of a complex multiple of a real pure vector, and such an exponential is normal; this gives 1.
 
-For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\psi}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\psi/2}e^{i\theta/2}$ and $e^{\psi/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\psi/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments.
+For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\theta^{\mathrm{rpd}}}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\theta^{\mathrm{rpd}}/2}e^{i\theta/2}$ and $e^{\theta^{\mathrm{rpd}}/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments.
 
-The display is the **amalgamation** of the four factors into one exponential. The complex angle is $\frac{\theta+i\psi}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.
+The display is the **amalgamation** of the four factors into one exponential. The complex angle is $\frac{\theta+i\theta^{\mathrm{rpd}}}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.
 
 **Remark (the axes in the normal case).** The common axis is $\pm i\vec{Ζ}$. Since $\vec{Ζ}=-i\vec Q/B$ and $\vec Q=\omega\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.
 
@@ -530,11 +530,11 @@ $$
 [\tilde u_{\mathrm r},\tilde Q]\neq0,
 $$
 
-and the axes are not the eigenlines. The eigenvalues $\mu_\pm$ still determine the unordered pair $\{\mu_+,\mu_-\}$, but they do not determine $\psi$, $\theta$, $\vec u_{\mathrm b}$ or $\vec u_{\mathrm r}$.
+and the axes are not the eigenlines. The eigenvalues $\mu_\pm$ still determine the unordered pair $\{\mu_+,\mu_-\}$, but they do not determine $\theta^{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$ or $\vec u_{\mathrm r}$.
 
-*Proof.* The factors commute with $\tilde Q$ exactly when the element is normal, by the theorem. If they do not commute, they are not diagonal in the eigenbasis, so their axes cannot be the eigenlines. The eigenvalues of $\tilde U$ are functions of $U_t$ alone, by $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$; the word parameters also depend on the relative angle of the axes, through $\operatorname{Sc}\tilde U=c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. There are different triples $(\psi,\theta,c)$ with the same $U_t$, hence the same spectrum, and with different words.
+*Proof.* The factors commute with $\tilde Q$ exactly when the element is normal, by the theorem. If they do not commute, they are not diagonal in the eigenbasis, so their axes cannot be the eigenlines. The eigenvalues of $\tilde U$ are functions of $U_t$ alone, by $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$; the word parameters also depend on the relative angle of the axes, through $\operatorname{Sc}\tilde U=c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. There are different triples $(\theta^{\mathrm{rpd}},\theta,c)$ with the same $U_t$, hence the same spectrum, and with different words.
 
-The last sentence is the precise statement of the gap. In the normal case $c=\pm1$, and the pair $(\psi,\theta)$ is recovered from the spectrum. In the non-normal case $c$ is a third unknown, and the spectrum is one complex equation for three real unknowns.
+The last sentence is the precise statement of the gap. In the normal case $c=\pm1$, and the pair $(\theta^{\mathrm{rpd}},\theta)$ is recovered from the spectrum. In the non-normal case $c$ is a third unknown, and the spectrum is one complex equation for three real unknowns.
 
 **Example.** Let $\tilde Q=\bigl(1-\frac{i}{2}\bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$. It is N-regular and spectrally regular, and non-normal, because
 
@@ -546,7 +546,7 @@ $$
 Its word has
 
 $$
-\psi=1.7627471740,
+\theta^{\mathrm{rpd}}=1.7627471740,
 \qquad
 \vec u_{\mathrm b}=\vec e_x,
 \qquad
@@ -557,7 +557,7 @@ $$
 c=\frac{1}{\sqrt2}.
 $$
 
-The eigenvalues of the unit factor have moduli $0.480533816$ and $2.081019$, and arguments $\pm0.674888846$. The normal-case formulas would give $\psi=1.466$ and $\theta=1.350$, not the true $1.763$ and $1.571$. The spectrum is the same; the reading is not.
+The eigenvalues of the unit factor have moduli $0.480533816$ and $2.081019$, and arguments $\pm0.674888846$. The normal-case formulas would give $\theta^{\mathrm{rpd}}=1.466$ and $\theta=1.350$, not the true $1.763$ and $1.571$. The spectrum is the same; the reading is not.
 
 The example is case 5 of the worked examples. The gap is not a rounding effect: the ratio of the two moduli is $4.331$, whose logarithm is $1.466$, while the rapidity is $1.763$.
 
@@ -570,7 +570,7 @@ The comparison is a count of real data.
 | $N$, $B^2$ | $4$ | $r,\alpha,U_t$ |
 | spectrum $\{\lambda_+,\lambda_-\}$ | $4$ | the same, in spectral form |
 | eigenprojectors $\tilde\Pi_\pm$ | $4$ | the eigenlines; the polar axes only in the normal case |
-| word $(r,\alpha,\psi,\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})$ | $8$ | the element |
+| word $(r,\alpha,\theta^{\mathrm{rpd}},\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})$ | $8$ | the element |
 
 The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(r,\alpha,U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.
 
@@ -586,7 +586,7 @@ $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\psi>0$ and $\theta\notin\{0,2\pi\}$.
+with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta^{\mathrm{rpd}}>0$ and $\theta\notin\{0,2\pi\}$.
 
 *Proof.* The modulus $\Rho$ is the principal square root of $N$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$. The global Cartan decomposition
 
@@ -598,18 +598,18 @@ P=\{\text{positive Hermitian of determinant }1\},
 K=SU(2),
 $$
 
-gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
+gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta^{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
 
 The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the companion article can repeat the same theorem verbatim.
 
-**The degeneracies.** The boost axis is undefined at $\psi=0$, where the boost is the identity. The rotor axis is undefined at $\theta=0$, where the rotor is the identity, and at $\theta=2\pi$, where the rotor is $-e_t$ for every axis. These are the usual coordinate singularities of polar coordinates; the element is smooth there and the word is unique.
+**The degeneracies.** The boost axis is undefined at $\theta^{\mathrm{rpd}}=0$, where the boost is the identity. The rotor axis is undefined at $\theta=0$, where the rotor is the identity, and at $\theta=2\pi$, where the rotor is $-e_t$ for every axis. These are the usual coordinate singularities of polar coordinates; the element is smooth there and the word is unique.
 
 | Parameter | Range | Unique? |
 |---|---|---|
 | $r$ | $(0,\infty)$ | yes |
 | $\alpha$ | $(-\frac{\pi}{2},\frac{\pi}{2}]$ | yes: the branch |
-| $\psi$ | $[0,\infty)$ | yes |
-| $\vec u_{\mathrm b}$ | $S^2$ | no: undefined at $\psi=0$ |
+| $\theta^{\mathrm{rpd}}$ | $[0,\infty)$ | yes |
+| $\vec u_{\mathrm b}$ | $S^2$ | no: undefined at $\theta^{\mathrm{rpd}}=0$ |
 | $\theta$ | $[0,2\pi]$ | yes |
 | $\vec u_{\mathrm r}$ | $S^2$ | no: undefined at $\theta\in\{0,2\pi\}$ |
 
@@ -622,7 +622,7 @@ At a degeneracy the word is still unique as an element of the group, but the coo
 Write $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and put
 
 $$
-\tilde H=\operatorname{Log}\tilde U_{\mathrm b}=i\frac{\psi}{2}\vec u_{\mathrm b},
+\tilde H=\operatorname{Log}\tilde U_{\mathrm b}=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
 \tilde K=\operatorname{Log}\tilde u_{\mathrm r}=\frac{\theta}{2}\vec u_{\mathrm r}.
 $$
@@ -658,14 +658,14 @@ where the last term is a logarithm inside $\mathfrak{gl}(2,\mathbb{C})$, not ins
 The **formal exponent** is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
 $$
 
 It is not the single logarithm in general. The **log defect** is the Baker–Campbell–Hausdorff correction, whose first term is
 
 $$
 \frac12[\tilde H,\tilde K]
-=\frac{i\psi\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}
+=\frac{i\theta^{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}
 \in\mathfrak{p}.
 $$
 
@@ -678,9 +678,9 @@ The exponential is not injective. Its kernel contains the central periods $2\pi 
 The polar parameters do not cut the fibre of the exponential to one point: the four exponents sum to the formal exponent, which is not a logarithm. What they cut to one point, up to the axis degeneracies, is the fibre of the **word map**
 
 $$
-(r,\alpha,\psi,\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})
+(r,\alpha,\theta^{\mathrm{rpd}},\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})
 \longmapsto
-r e^{i\alpha}\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+r e^{i\alpha}\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
@@ -753,15 +753,15 @@ of real dimensions $4$ and $4$. The scale and the boost lie in $\mathfrak H$; th
 | positive real scalar | scale | $1$ | $r$ |
 | unit complex scalar | phase | $1$ | $e^{i\alpha}$ |
 
-The two scales of the matrix are $r e^{\psi/2}$ and $r e^{-\psi/2}$, each with multiplicity one in the regular sector. Their product is $r^2=|\Rho|^2$, and their ratio is $e^{\psi}$. The determinant is $N=\Rho^2$, of modulus $r^2$.
+The two scales of the matrix are $r e^{\theta^{\mathrm{rpd}}/2}$ and $r e^{-\theta^{\mathrm{rpd}}/2}$, each with multiplicity one in the regular sector. Their product is $r^2=|\Rho|^2$, and their ratio is $e^{\theta^{\mathrm{rpd}}}$. The determinant is $N=\Rho^2$, of modulus $r^2$.
 
 ## The Exponential Coordinates
 
-The parameters $r,\alpha,\psi,\theta$ and the two axes are coordinates on the group of units. Their ranges make the map a bijection up to the axis degeneracies. The coordinate lines are the four one-parameter families:
+The parameters $r,\alpha,\theta^{\mathrm{rpd}},\theta$ and the two axes are coordinates on the group of units. Their ranges make the map a bijection up to the axis degeneracies. The coordinate lines are the four one-parameter families:
 
 - the **scale line** $r\mapsto r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a half-line;
 - the **phase circle** $\alpha\mapsto r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a circle cut to a half-open interval by the branch;
-- the **boost hyperbola** $\psi\mapsto r e^{i\alpha}\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\tilde u_{\mathrm r}$, a non-compact ray;
+- the **boost hyperbola** $\theta^{\mathrm{rpd}}\mapsto r e^{i\alpha}\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\tilde u_{\mathrm r}$, a non-compact ray;
 - the **rotor arc** $\theta\mapsto r e^{i\alpha}\tilde U_{\mathrm b}\exp(\frac{\theta}{2}\vec u_{\mathrm r})$, a great semicircle from $e_t$ to $-e_t$.
 
 The positive cone $P$ is homeomorphic to $\mathbb{R}^3$ and the rotor group $K=SU(2)$ is $S^3$, so
@@ -792,7 +792,7 @@ The sector is the complement of the union of two cones.
 
 | Wall | Equation | Stratum | What happens to the word |
 |---|---|---|---|
-| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $r\to0$, $\psi\to\infty$ |
+| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $r\to0$, $\theta^{\mathrm{rpd}}\to\infty$ |
 | spectral cone | $B^2=0$ | $\Sigma_{10}\cup\Sigma_{00}$ | word finite, eigenbasis degenerates |
 
 The two cones meet at $\Sigma_{00}$, the nilpotent stratum. The two walls behave differently, and the difference is the subject of this section.
@@ -802,21 +802,21 @@ The two cones meet at $\Sigma_{00}$, the nilpotent stratum. The two walls behave
 On the null cone the modulus vanishes and no unit factor exists. A nonzero element of the cone is a zero divisor of rank one. As an element of the sector approaches the cone with $B^2$ bounded away from zero, the rapidity diverges and the scale collapses. The standard family is
 
 $$
-\tilde Q(\psi)=R e^{-\psi/2}\,\omega\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
+\tilde Q(\theta^{\mathrm{rpd}})=R e^{-\theta^{\mathrm{rpd}}/2}\,\omega\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\tilde u_{\mathrm r},
 \qquad
-\psi>0,
+\theta^{\mathrm{rpd}}>0,
 $$
 
-with $R>0$, $|\omega|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\psi/2}$, and its word has rapidity $\psi$. The limit is
+with $R>0$, $|\omega|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\theta^{\mathrm{rpd}}/2}$, and its word has rapidity $\theta^{\mathrm{rpd}}$. The limit is
 
 $$
-\tilde Q(\psi)\longrightarrow
+\tilde Q(\theta^{\mathrm{rpd}})\longrightarrow
 \frac{R\omega}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 \qquad
-\psi\to\infty,
+\theta^{\mathrm{rpd}}\to\infty,
 $$
 
-a nonzero null element of rank one. It is nilpotent exactly when $\tilde u_{\mathrm r}$ anticommutes with $\vec u_{\mathrm b}$, and it has nonzero scalar part otherwise. The scale vanishes as $e^{-\psi/2}$ and the boost diverges as $e^{\psi/2}$; the product stays finite.
+a nonzero null element of rank one. It is nilpotent exactly when $\tilde u_{\mathrm r}$ anticommutes with $\vec u_{\mathrm b}$, and it has nonzero scalar part otherwise. The scale vanishes as $e^{-\theta^{\mathrm{rpd}}/2}$ and the boost diverges as $e^{\theta^{\mathrm{rpd}}/2}$; the product stays finite.
 
 ### The Spectral Cone
 
@@ -851,19 +851,19 @@ The contrast is the exact content of the difference between the two articles. Th
 | Object | Formula |
 |---|---|
 | domain | $N\neq0$, $B^2\neq0$ |
-| word | $\tilde Q=r e^{i\alpha}\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$ |
+| word | $\tilde Q=r e^{i\alpha}\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$ |
 | modulus | $\Rho=r e^{i\alpha}=(N)^{1/2}$ in the branch |
 | unit factor | $\tilde U=\tilde Q/\Rho=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
-| boost | $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ |
+| boost | $\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ |
 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ |
 | component form | $\tilde U=(c_{\mathrm b}c_{\mathrm r}-is_{\mathrm b}s_{\mathrm r}c)e_t+is_{\mathrm b}c_{\mathrm r}\vec u_{\mathrm b}+c_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm r}+is_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ |
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
 | eigenbasis | $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
 | unit-factor eigenvalues | $\mu_\pm=\lambda_\pm/\Rho=U_t\pm i\sqrt{1-U_t^2}$ |
-| normal case | $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$, axes $\pm i\vec{Ζ}$ |
+| normal case | $\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$, axes $\pm i\vec{Ζ}$ |
 | normal criterion | $\vec Q\times\overline{\vec Q}=0$ |
 | spectral wall | $B^2=0\iff U_t=\pm1$ |
-| explicit data | §*The Result in Terms of the Coordinates*: boxes for $r,\alpha,\psi,\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta,\vec u_{\mathrm r}$ |
+| explicit data | §*The Result in Terms of the Coordinates*: boxes for $r,\alpha,\theta^{\mathrm{rpd}},\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta,\vec u_{\mathrm r}$ |
 
 ### The Comparison
 
@@ -871,7 +871,7 @@ The contrast is the exact content of the difference between the two articles. Th
 |---|---|---|
 | decomposition of | the element $\tilde Q$ | the unit factor $\tilde U$ |
 | factors | two idempotents | positive Hermitian times $*$-unitary |
-| coefficients | $\lambda_\pm$ | exponentials of $\psi,\theta$ |
+| coefficients | $\lambda_\pm$ | exponentials of $\theta^{\mathrm{rpd}},\theta$ |
 | diagonal in the eigenbasis | always | exactly when normal |
 | survives $B^2\to0$ | no on the Jordan part | yes |
 | real dimension | $8$ | $8$ |
@@ -898,7 +898,7 @@ The contrast is the exact content of the difference between the two articles. Th
 | $\Rho=r e^{i\alpha}$ | the modulus, principal square root of $N$ |
 | $\tilde U=\tilde Q/\Rho$ | the unit factor |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the Hermitian positive factor and the rotor, $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
-| $\psi$ | the rapidity |
+| $\theta^{\mathrm{rpd}}$ | the rapidity |
 | $\theta$ | the rotor angle |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the two axes |
 | $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | the cosine between the axes |
@@ -911,8 +911,8 @@ The contrast is the exact content of the difference between the two articles. Th
 | $\mathsf M(\tilde Q)$ | the matrix $Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z$ |
 | $c_{\mathrm b},s_{\mathrm b},c_{\mathrm r},s_{\mathrm r}$ | the half-angle cosines and sines |
 | $\lVert\tilde Q\rVert_E^2=|Q_t|^2+|\vec Q|^2$ | the Euclidean norm squared of the coordinates |
-| $\vec a$ | the vector $\sinh\psi\,\vec u_{\mathrm b}$ |
-| $C,S$ | the half-angle numerators, $\cosh\frac{\psi}{2}=C/\sqrt{|N|}$, $\sinh\frac{\psi}{2}=S/\sqrt{|N|}$ |
+| $\vec a$ | the vector $\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$ |
+| $C,S$ | the half-angle numerators, $\cosh\frac{\theta^{\mathrm{rpd}}}{2}=C/\sqrt{|N|}$, $\sinh\frac{\theta^{\mathrm{rpd}}}{2}=S/\sqrt{|N|}$ |
 | $\mathrm{Vect}\tilde X$ | the vector part of $\tilde X$ |
 
 ## Further Reading

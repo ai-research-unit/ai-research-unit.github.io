@@ -8,14 +8,14 @@ This is an exercise in the electromagnetism series. It takes the wave equation f
 
 **What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi^{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
-**The result.** With $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta + \partial^2/\partial Q_t^2$ is
+**The result.** With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta + \partial^2/\partial Q_t^2$ is
 $$
-\boxed{\;G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right), \qquad \Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\;}
+\boxed{\;G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right), \qquad \Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
 and the retarded solution of the potential equation $\Box\tilde{A} = -\mu\tilde J$ is
 $$
-\boxed{\;\tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec y|\;},
+\boxed{\;\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y,
+\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y|\;},
 $$
 whose scalar and vector parts are the standard retarded potentials
 $$
@@ -34,7 +34,7 @@ and the companion article observes that "the physically correct solution is the 
 
 The problem is an inverse problem. The operator $\Box$ is a linear differential operator with constant coefficients, and a Green's function is a distributional inverse: a kernel $G$ such that $\Box_{\tilde{Q}} G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q})$, so that convolution with a source produces a solution. Two features make this more than bookkeeping, and both are traps.
 
-First, the kernel is concentrated on the light cone, and the delta function that concentrates it is a delta function of an *argument that vanishes on the cone*. When that argument is $t' - R/c$ the coefficient is $1/(4\pi R)$; when it is written as the invariant ${t'}^2 - R^2/c^2$ the coefficient is $1/(2\pi c)$, and the two are related by the Jacobian $\left|d({t'}^2 - R^2/c^2)/dt'\right| = 2R/c$ evaluated at the future root. A derivation that drops the Jacobian gets the wrong power of $R$ and the wrong constant. The exercise makes this step explicit and checks it numerically.
+First, the kernel is concentrated on the light cone, and the delta function that concentrates it is a delta function of an *argument that vanishes on the cone*. When that argument is $t' - R/c$ the coefficient is $1/(4\pi R)$; when it is written as the invariant ${r'_{t}}^2 - R^2/c^2$ the coefficient is $1/(2\pi c)$, and the two are related by the Jacobian $\left|d({r'_{t}}^2 - R^2/c^2)/dt'\right| = 2R/c$ evaluated at the future root. A derivation that drops the Jacobian gets the wrong power of $R$ and the wrong constant. The exercise makes this step explicit and checks it numerically.
 
 Second, the defining equation does not determine the kernel. Both the retarded kernel (supported on the future cone) and the advanced kernel (supported on the past cone) satisfy $\Box G = -\delta^{(4)}$, and they differ by a solution of the homogeneous wave equation. What selects the retarded one is a *boundary condition* — no incoming radiation from the past — not an algebraic property of $\Box$. The exercise states the condition, exhibits the advanced kernel that the equation alone admits, and shows which contour prescription implements which choice.
 
@@ -42,15 +42,15 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial {t'}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R_2)\tilde J(\tilde R_2)\,d^3y\,dt'_2$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
+**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\varphi,2})\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dt'_2$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
 
 **Solution.** (a) Since $\partial/\partial Q_t = \frac{1}{ic}\partial/\partial t' = -\frac{i}{c}\partial/\partial t'$,
 $$
-\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t'\right)^2 = -\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2},
+\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t'\right)^2 = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2},
 \qquad\text{so}\qquad
-\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} .
+\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
-The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'))$, the operator has symbol
+The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t'))$, the operator has symbol
 $$
 \Box \;\longmapsto\; -k^2 + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - k^2 .
 $$
@@ -59,32 +59,32 @@ $$
 $$
 \Box_{\tilde{Q}}\,G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q}),
 \qquad
-\delta^{(4)}(\tilde{Q}) = \delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\delta^{(4)}(\tilde{Q}) = \delta(t')\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
 with the physical measure $d^3y\,dt'_2$ for the convolution (the parent writes $d^4R_2$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dt'_2$). The minus sign is not free: the potential equation carries $-\mu\tilde J$ on the right, so a kernel with $\Box G = -\delta^{(4)}$ gives that sign directly. With $\Box G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
 
 (c) Differentiation under the convolution integral gives
 $$
 \Box_{\tilde{Q}}\tilde{A}(\tilde{Q})
-= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde R_2)\,\tilde J(\tilde R_2)\,d^3y\,dt'_2
-= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde R_2)\bigr)\tilde J(\tilde R_2)\,d^3y\,dt'_2
+= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{R}_{\varphi,2})\,\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dt'_2
+= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{R}_{\varphi,2})\bigr)\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dt'_2
 = -\mu\,\tilde J(\tilde{Q}),
 $$
-where in the last step the delta picks out $\tilde R_2 = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde R_2) = \Box_{\tilde R_2}G(\tilde{Q}-\tilde R_2)$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
+where in the last step the delta picks out $\tilde{R}_{\varphi,2} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{R}_{\varphi,2}) = \Box_{\tilde{R}_{\varphi,2}}G(\tilde{Q}-\tilde{R}_{\varphi,2})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
 
 ## Problem 2: The Retarded Green's Function and the Light-Cone Jacobian
 
-**Statement.** (a) Show that $G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\delta(t' - R/c)$, with $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, satisfies the defining equation, by applying $\Box$ to it directly and identifying the two cancellations that make it work. (b) Derive the same kernel from the invariant delta on the light cone, exhibiting the Jacobian factor that converts the invariant argument into $t' - R/c$. (c) Confirm the coefficient by the Fourier representation with the retarded contour. Check the result on a case other than the one that suggested it.
+**Statement.** (a) Show that $G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{1}{4\pi R}\delta(t' - R/c)$, with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, satisfies the defining equation, by applying $\Box$ to it directly and identifying the two cancellations that make it work. (b) Derive the same kernel from the invariant delta on the light cone, exhibiting the Jacobian factor that converts the invariant argument into $t' - R/c$. (c) Confirm the coefficient by the Fourier representation with the retarded contour. Check the result on a case other than the one that suggested it.
 
 **Solution. (a) Applying the operator to the kernel.** Let $g = t' - R/c$ and, for a smooth function $u$, consider
 $$
-G_u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{u(g)}{4\pi R}.
+G_u(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{u(g)}{4\pi R}.
 $$
 Write $\xi^{\mathrm{scp}} = 1/(4\pi R)$, so that $G_u = \xi^{\mathrm{scp}}\, u(g)$. The chain rule gives
 $$
 \Delta G_u = u\,\Delta\xi^{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\xi^{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi^{\mathrm{scp}}\,\Delta g + \frac{d^2u}{dg^2}\,\xi^{\mathrm{scp}}\,(\nabla g)^2,
 \qquad
-\partial^2/\partial {t'}^2 G_u = \frac{d^2u}{dg^2}\,\xi^{\mathrm{scp}},
+\partial^2/\partial {r'_{t}}^2 G_u = \frac{d^2u}{dg^2}\,\xi^{\mathrm{scp}},
 $$
 and therefore, with $\Box = \Delta + \partial^2/\partial Q_t^2$,
 $$
@@ -99,62 +99,62 @@ $$
 \qquad
 2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta g = 0,
 \qquad
-\Delta\frac{1}{R} = -4\pi\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z).
+\Delta\frac{1}{R} = -4\pi\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
 $$
 The first says the coefficient of $\frac{d^2u}{dg^2}$ vanishes; the second says the coefficient of $\frac{du}{dg}$ vanishes; the third converts the coefficient of $u$ into a source at the origin. Hence
 $$
-\Box G_u = -u(g)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -u(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\Box G_u = -u(g)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -u(t')\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
-the last equality because $\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ forces $R = 0$, where $g = t'$. Taking $u$ to be a nascent delta and passing to the limit gives
+the last equality because $\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ forces $R = 0$, where $g = t'$. Taking $u$ to be a nascent delta and passing to the limit gives
 $$
-G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\delta(t' - R/c)}{4\pi R},
+G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{\delta(t' - R/c)}{4\pi R},
 \qquad
-\Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
+\Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
 $$
 
 Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
 
 **(b) The light-cone delta and its Jacobian.** The same kernel is a distribution concentrated on the light cone. The cone is the zero set of the invariant
 $$
-\sigma(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = {t'}^2 - \frac{R^2}{c^2},
+\sigma(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = {r'_{t}}^2 - \frac{R^2}{c^2},
 $$
 and the retarded (future-cone) distribution with the correct normalization is
 $$
-G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right),
+G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({r'_{t}}^2 - \frac{R^2}{c^2}\right),
 \qquad
 \mathrm{H}^{\mathrm{hvs}}(t') = \begin{cases} 1, & t' > 0,\\ 0, & t' < 0. \end{cases}
 $$
-To convert the invariant delta into a delta of $t' - R/c$ one uses the composition rule $\delta(f(t')) = \sum_i \delta(t' - t'_i)/\left|\frac{df}{dt'}(t'_i)\right|$ at the roots $t'_i$ of $f$. For $f(t') = {t'}^2 - R^2/c^2$ the roots are $t' = \pm R/c$, and at the future root the Jacobian is
+To convert the invariant delta into a delta of $t' - R/c$ one uses the composition rule $\delta(f(t')) = \sum_i \delta(t' - t'_i)/\left|\frac{df}{dt'}(t'_i)\right|$ at the roots $t'_i$ of $f$. For $f(t') = {r'_{t}}^2 - R^2/c^2$ the roots are $t' = \pm R/c$, and at the future root the Jacobian is
 $$
-\left|\frac{d}{dt'}\left({t'}^2 - \frac{R^2}{c^2}\right)\right|_{t' = R/c} = 2t'\Big|_{t'=R/c} = \frac{2R}{c}.
+\left|\frac{d}{dt'}\left({r'_{t}}^2 - \frac{R^2}{c^2}\right)\right|_{t' = R/c} = 2t'\Big|_{t'=R/c} = \frac{2R}{c}.
 $$
 Therefore, on $t'>0$ where only the future root contributes,
 $$
-\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right) = \frac{c}{2R}\,\delta\!\left(t' - \frac{R}{c}\right),
+\delta\!\left({r'_{t}}^2 - \frac{R^2}{c^2}\right) = \frac{c}{2R}\,\delta\!\left(t' - \frac{R}{c}\right),
 $$
 and hence
 $$
-\frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right)
+\frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({r'_{t}}^2 - \frac{R^2}{c^2}\right)
 = \frac{1}{2\pi c}\cdot\frac{c}{2R}\,\delta\!\left(t' - \frac{R}{c}\right)
 = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = G^{\mathrm{ret}} .
 $$
 This is the Jacobian the exercise warns about: the factor $c/(2R)$ is what turns the invariant coefficient $1/(2\pi c)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi c}\delta(t'-R/c)$, or as $\frac{1}{2\pi R}\delta(t'-R/c)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $\frac{du}{dg}$ term does not cancel, except for the middle form, whose $\frac{du}{dg}$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
 $$
 G(\vec k,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
 \qquad
-G(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \int\frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,
-\frac{c^2\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))}{c^2 k^2 - \omega^2},
+G(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \int\frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,
+\frac{c^2\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))}{c^2 k^2 - \omega^2},
 $$
 where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $t'>0$ (and in the upper half-plane, with no poles, for $t'<0$) gives
 $$
 \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\omega t')}{c^2 k^2 - \omega^2}
 = \frac{c}{k}\,\sin(ckt')\,\mathrm{H}^{\mathrm{hvs}}(t').
 $$
-The angular integral of $\exp(i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
+The angular integral of $\exp(i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
 $$
-G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
+G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')
 = \frac{c}{2\pi^2 R}\int_0^\infty \sin(kR)\,\sin(ckt')\,dk
 = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right),
 $$
@@ -166,11 +166,11 @@ using $\int_0^\infty \sin(kR)\sin(ckt')\,dk = \frac{\pi}{2c}\bigl[\delta(t' - R/
 
 **Solution. (a) The advanced kernel.** The computation of Problem 2(a) used only $g = t' - R/c$. With $g_+ = t' + R/c$ one has $\nabla g_+ = +\vec u_R/c$, so $(\nabla g_+)^2 = 1/c^2$ and the bracket $2\nabla(1/R)\cdot\nabla g_+ + (1/R)\Delta g_+$ has the opposite sign of $\nabla g_+$ relative to $\nabla(1/R)$ but is again zero, because $\nabla(1/R)$ is parallel to $\vec u_R$ while the two terms of the bracket are equal and opposite. Hence the same argument gives
 $$
-G_{\mathrm{adv}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right),
+G_{\mathrm{adv}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right),
 \qquad
 \Box\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{Q}),
 $$
-with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(-t')\delta({t'}^2 - R^2/c^2)$, and the Jacobian at the past root $t' = -R/c$ is again $2R/c$.
+with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(-t')\delta({r'_{t}}^2 - R^2/c^2)$, and the Jacobian at the past root $t' = -R/c$ is again $2R/c$.
 
 **(b) The homogeneous difference.** Since $\Box$ is linear, $\Box(G^{\mathrm{ret}} - G_{\mathrm{adv}}) = 0$:
 $$
@@ -186,15 +186,15 @@ The exercise's answer to "why is the physically relevant Green's function the re
 
 ## Problem 4: The Retarded Potentials from the Green's Function
 
-**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.
+**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.
 
-**Solution. (a) The retarded convolution.** With $G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y,\,t'-t'_2) = \frac{1}{4\pi R}\delta(t' - t'_2 - R/c)$ and $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|$,
+**Solution. (a) The retarded convolution.** With $G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y,\,t'-t'_2) = \frac{1}{4\pi R}\delta(t' - t'_2 - R/c)$ and $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|$,
 $$
-\tilde{A}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')
+\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')
 = \mu\int \frac{\delta\!\left(t' - t'_2 - R/c\right)}{4\pi R}\,\tilde J(\vec y,t'_2)\,d^3y\,dt'_2
 = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,t' - R/c)}{R}\,d^3y
 $$
-the $t'_2$ integral having been performed against the delta. Every source contribution is evaluated at its own *retarded time* $t' - R/c$: the field at $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.
+the $t'_2$ integral having been performed against the delta. Every source contribution is evaluated at its own *retarded time* $t' - R/c$: the field at $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t')$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.
 
 **(b) The component potentials.** The four-current is $\tilde J = ic\rho\,e_t + \vec J$, with scalar part $ic\rho$ and vector part $\vec J$. The scalar part of $\tilde{A}$ is $A_0 = i\,a'_t$, so
 $$
@@ -208,7 +208,7 @@ $$
 $$
 where $\rho^{\mathrm{ret}} = \rho(\vec y, t' - R/c)$ and $\vec J^{\mathrm{ret}} = \vec J(\vec y, t' - R/c)$. These are the standard retarded potentials, obtained here from a single biquaternionic convolution rather than from four component equations.
 
-A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t' - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(s)|/c - t'$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
+A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t' - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(s)|/c - t'$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
 
 **(c) The Lorenz gauge is automatic.** Write the gauge scalar
 $$
@@ -226,18 +226,18 @@ where the last equality is the conservation of charge, and where the derivatives
 
 **Solution. (a) The static reduction.** If $\partial/\partial t'\,\rho = 0$ and $\partial/\partial t'\,\vec J = 0$, then $\rho(\vec y, t' - R/c) = \rho(\vec y)$ and $\vec J(\vec y, t' - R/c) = \vec J(\vec y)$, and the retarded time drops out of the integrand:
 $$
-\xi^{\mathrm{scp}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon}\int\frac{\rho(\vec y)}{R}\,d^3y,
+\xi^{\mathrm{scp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon}\int\frac{\rho(\vec y)}{R}\,d^3y,
 \qquad
-\vec A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{\mu}{4\pi}\int\frac{\vec J(\vec y)}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|.
+\vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\mu}{4\pi}\int\frac{\vec J(\vec y)}{R}\,d^3y,
+\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|.
 $$
 The kernel that was $\frac{\delta(t'-R/c)}{4\pi R}$ becomes the Newton kernel $\frac{1}{4\pi R}$ after the time integral, so the static potentials are the retarded ones with the source frozen.
 
-**(b) The static equations and the known solutions.** With $\partial/\partial t' \to 0$ the operator reduces to the Laplacian, $\Box \to \Delta$, and the identity $\Delta\frac{1}{R} = -4\pi\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$ gives
+**(b) The static equations and the known solutions.** With $\partial/\partial t' \to 0$ the operator reduces to the Laplacian, $\Box \to \Delta$, and the identity $\Delta\frac{1}{R} = -4\pi\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ gives
 $$
-\Delta\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{\epsilon},
+\Delta\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\epsilon},
 $$
-and likewise $\Delta\vec A = -\mu\vec J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde J$, which is the static limit of $\Box\tilde{A} = -\mu\tilde J$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
+and likewise $\Delta\vec A = -\mu\vec J(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde J$, which is the static limit of $\Box\tilde{A} = -\mu\tilde J$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
 \boxed{\;\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon R},
 \qquad
@@ -275,29 +275,29 @@ The parent and its companion are correct where they are defined, and the derivat
 
 3. **The dispersive kernel.** Replace the constant $c$ by $c(\omega)$ and determine whether the inverse of the dispersive wave operator admits a kernel with support on a single (frequency-dependent) cone, or whether dispersion spreads the support off the light cone. This is the natural continuation of gap 4.
 
-4. **Inhomogeneous media.** For $\epsilon = \epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, $\mu = \mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, write the operator and show that the free kernel of this exercise is the leading term of the geometric-optics approximation; identify the transport correction that the gradient of $c$ forces.
+4. **Inhomogeneous media.** For $\epsilon = \epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, $\mu = \mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, write the operator and show that the free kernel of this exercise is the leading term of the geometric-optics approximation; identify the transport correction that the gradient of $c$ forces.
 
 5. **The far-zone fall-off.** For a localized source, show from the retarded potential alone that the radiated part of the field falls as $1/R$ while the bound part falls as $1/R^2$, without introducing a moving charge. This isolates the light-cone structure of the kernel from the worldline kinematics.
 
-6. **The chiral kernel, which is not this kernel.** For the Drude–Born–Fedorov chiral medium the reduction of the medium article *A Chiral Medium: One Quaternionic Equation* gives the quaternionic operator $M=\beta\sqrt{\epsilon\mu}\,\partial/\partial t'\,D+\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$, whose fundamental solution is causal but is **not** obtained from $G_\Box$ by substitution. $M$ is of *second* order in the derivatives — the term $\partial/\partial t'\,D$ is what raises it above the first-order non-chiral reduction — and $MM^{*}$ is fourth order, so its kernel is neither the delta-on-the-cone $G_\Box$ of this exercise nor the parent's unverified first-order $\tilde{G}_{\tilde{\nabla}}$: it is a third kind of object, and one the corpus can actually construct, since Kravchenko's $K_\alpha$ is the worked example of a first-order quaternionic kernel with a radiation condition. At each fixed frequency the symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$, so the kernel is built from $K_{\alpha(\omega)}$; but the prefactor degenerates at $\omega=c/\beta$, where the transform carries a **double** pole together with an essential singularity through $\exp(ic(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(\omega-a))$, and the causal kernel is a Heaviside function times a series rather than a delta on the cone. Determine how far the light-cone support of this exercise survives when $\beta\neq0$, and whether it is restored in the limit $\beta\to0$ together with the one-parameter family. This separates the part of the retarded structure that belongs to the quaternionic first-order operator from the part that belongs to the second-order wave operator.
+6. **The chiral kernel, which is not this kernel.** For the Drude–Born–Fedorov chiral medium the reduction of the medium article *A Chiral Medium: One Quaternionic Equation* gives the quaternionic operator $M=\beta\sqrt{\epsilon\mu}\,\partial/\partial t'\,D+\sqrt{\epsilon\mu}\,\partial/\partial t'-iD$, whose fundamental solution is causal but is **not** obtained from $G_\Box$ by substitution. $M$ is of *second* order in the derivatives — the term $\partial/\partial t'\,D$ is what raises it above the first-order non-chiral reduction — and $MM^{*}$ is fourth order, so its kernel is neither the delta-on-the-cone $G_\Box$ of this exercise nor the parent's unverified first-order $\tilde{G}_{\tilde{\nabla}}$: it is a third kind of object, and one the corpus can actually construct, since Kravchenko's $K_\alpha$ is the worked example of a first-order quaternionic kernel with a radiation condition. At each fixed frequency the symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$, so the kernel is built from $K_{\alpha(\omega)}$; but the prefactor degenerates at $\omega=c/\beta$, where the transform carries a **double** pole together with an essential singularity through $\exp(ic(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(\omega-a))$, and the causal kernel is a Heaviside function times a series rather than a delta on the cone. Determine how far the light-cone support of this exercise survives when $\beta\neq0$, and whether it is restored in the limit $\beta\to0$ together with the one-parameter family. This separates the part of the retarded structure that belongs to the quaternionic first-order operator from the part that belongs to the second-order wave operator.
 
 ## Summary
 
-The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2}$, has the retarded Green's function
+The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2}$, has the retarded Green's function
 $$
-G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right),
+G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,t') = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right),
 \qquad
-\Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|,
+\Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|,
 $$
-derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t'-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(t')\delta({t'}^2 - R^2/c^2)$ by the Jacobian conversion $\delta({t'}^2 - R^2/c^2) = \frac{c}{2R}\delta(t'-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
+derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t'-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(t')\delta({r'_{t}}^2 - R^2/c^2)$ by the Jacobian conversion $\delta({r'_{t}}^2 - R^2/c^2) = \frac{c}{2R}\delta(t'-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
 
 The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t'+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
 \boxed{\;\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
 \qquad
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J^{\mathrm{ret}}}{R}\,d^3y,
-\qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|\;}
+\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|\;}
 $$
 with all sources at the retarded time $t' - R/c$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box S = -\mu(\partial/\partial t'\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
 
@@ -312,19 +312,19 @@ with all sources at the retarded time $t' - R/c$; the retarded solution is autom
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$ | Temporal component of the gradient |
-| $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2}$ | Wave operator (d'Alembertian) |
-| $\delta^{(4)}(\tilde{Q}) = \delta(t')\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Four-dimensional Dirac delta |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2}$ | Wave operator (d'Alembertian) |
+| $\delta^{(4)}(\tilde{Q}) = \delta(t')\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Four-dimensional Dirac delta |
 | $G(\tilde{Q})$ | Green's function, $\Box G = -\delta^{(4)}$ |
 | $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$ | Retarded Green's function |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t' + R/c)$ | Advanced Green's function |
-| $\sigma = {t'}^2 - R^2/c^2$ | Light-cone invariant (argument of the invariant delta) |
+| $\sigma = {r'_{t}}^2 - R^2/c^2$ | Light-cone invariant (argument of the invariant delta) |
 | $\mathrm{H}^{\mathrm{hvs}}(t')$ | Heaviside step function |
 | $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current of the potential equation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $R = \lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y\rvert$ | Retarded separation (spatial) |
+| $R = \lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y\rvert$ | Retarded separation (spatial) |
 | $t' - R/c$ | Retarded time |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
 | $\vec u_R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |

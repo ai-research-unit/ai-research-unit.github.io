@@ -8,7 +8,7 @@ This article takes up that deferral, and only as far as the linearized approxima
 
 The findings are worth separating at the outset, because one of them is negative and is easy to mistake for a defect of the exposition.
 
-- **Established, and recomputed below.** The harmonic condition $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0$ does not exhaust the gauge freedom: it is preserved by exactly those residual transformations with $\Box\zeta_\nu = 0$. Counting the physical content therefore requires the residual freedom, and with it the count $10 \to 6 \to 2$ is justified rather than asserted: the ten components of $h_{\mu\nu}$ reduce to six under the four harmonic conditions, and the six-dimensional space is the direct sum of the two-dimensional transverse-traceless space and the four-dimensional image of the residual gauge freedom. The two polarizations are transverse-traceless, and both the transversality and the tracelessness are verified on an explicit plane-wave ansatz, together with $\mathrm{Ric}_{\mu\nu} = 0$ and $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$ for each of the plus and cross amplitudes. The quadrupole formula $P = \frac{G}{5c^5}\langle \,d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3\rangle$ is verified by matching it, on the equal-mass circular binary, to the standard result $\frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}$; the radiation is quadrupole because the monopole and dipole moments are conserved, and the mass dipole's second derivative vanishes by momentum conservation.
+- **Established, and recomputed below.** The harmonic condition $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0$ does not exhaust the gauge freedom: it is preserved by exactly those residual transformations with $\Box\zeta_\nu = 0$. Counting the physical content therefore requires the residual freedom, and with it the count $10 \to 6 \to 2$ is justified rather than asserted: the ten components of $h_{\mu\nu}$ reduce to six under the four harmonic conditions, and the six-dimensional space is the direct sum of the two-dimensional transverse-traceless space and the four-dimensional image of the residual gauge freedom. The two polarizations are transverse-traceless, and both the transversality and the tracelessness are verified on an explicit plane-wave ansatz, together with $\mathrm{Ric}_{\mu\nu} = 0$ and $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$ for each of the plus and cross amplitudes. The quadrupole formula $P = \frac{G}{5c^5}\langle \,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ is verified by matching it, on the equal-mass circular binary, to the standard result $\frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}$; the radiation is quadrupole because the monopole and dipole moments are conserved, and the mass dipole's second derivative vanishes by momentum conservation.
 - **The framework's contribution, and its limit.** The algebra supplies the wave operator $\Box$ and the shape of the gauge transformation, both inherited from the parent, and it supplies the residual gauge freedom as the condition $\Box\tilde Q_{\mathrm d} = 0$ on a material four-vector. It supplies **no natural handle on the polarization count**: the step $6 \to 2$ is a dynamical statement about which of the harmonic-gauge components propagate, and the algebra does not generate it. The physical polarization amplitudes are carried by a symmetric traceless rank-two object, and the algebra's natural single-biquaternion packaging of that object collapses to its trace, which vanishes — so the two polarizations are precisely what a single biquaternion cannot hold. The quadrupole moment is the same kind of object, and the same collapse applies to it; the source $T_{\mu\nu}$ belongs to the same class. Consequently the quadrupole formula is transcribed into the framework's notation, not derived from it, and the prefactor $G/5c^5$ is not fixed by the algebra.
 - **What is not claimed.** Linearized general relativity is not derived from the biquaternion algebra. No action, no field equation, and no representation of diffeomorphism invariance is supplied here; these are the parent's gaps, and nothing in the radiation theory closes them. The framework predicts no deviation from standard gravitational-wave physics.
 
@@ -16,7 +16,7 @@ The findings are worth separating at the outset, because one of them is negative
 
 This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$ and the real coordinates $x_\mu=(ct',x,y,z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=ict'$, $-c^2t'^2+x^2+y^2+z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The **trace-reversed** perturbation is
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$ and the real coordinates $x_\mu=(c r'_{t},x,y,z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2t'^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The **trace-reversed** perturbation is
 
 $$
 \bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0k} = h_{0k}, \qquad \bar{h}_{kl} = h_{kl} - \tfrac{1}{2}h\,\delta_{kl}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
@@ -140,7 +140,7 @@ $$
 -k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, x, y, z)$, so that the phase is $\omega(z/c - t')$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
@@ -166,14 +166,14 @@ $$
 gives, for the plus amplitude,
 
 $$
-R_{txtx} = -R_{tyty} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct')\right),
+R_{txtx} = -R_{tyty} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - c r'_{t})\right),
 \qquad R_{tztz} = 0,
 $$
 
 and, for the cross amplitude,
 
 $$
-R_{txty} = R_{txyz} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct')\right),
+R_{txty} = R_{txyz} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - c r'_{t})\right),
 \qquad R_{txtx} = R_{tyty} = R_{tztz} = 0 .
 $$
 
@@ -194,24 +194,24 @@ The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}
 **The amplitude.** For an isolated, slowly moving source, the far-field transverse-traceless perturbation is
 
 $$
-h_{ij}^{\mathrm{TT}}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{t'}^2\right)(t' - r/c), \qquad
+h_{ij}^{\mathrm{TT}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2\right)(t' - r/c), \qquad
 \mathcal{Q}_{ij} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(x_{2,i}x_{2,j} - \tfrac{1}{3}r_2^2\delta_{ij}\right)d^3x_2,
 $$
 
-where $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $\mathcal{Q}_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
+where $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, $\mathcal{Q}_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
 
-**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dt' = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dt' = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{t'}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
+**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dt' = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dt' = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{r'_{t}}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
 
 **The power.** The radiated power, averaged over a period, is
 
 $$
-\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{t'}^3\,d^3\mathcal{Q}_{ij}/d{t'}^3 \right\rangle\;},
+\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 \right\rangle\;},
 $$
 
 with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,
 
 $$
-P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/d{t'}^3 d^3I_{ij}/d{t'}^3 - \tfrac{1}{3}\left(d^3I_{kk}/d{t'}^3\right)^2 \right\rangle,
+P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/d{r'_{t}}^3 d^3I_{ij}/d{r'_{t}}^3 - \tfrac{1}{3}\left(d^3I_{kk}/d{r'_{t}}^3\right)^2 \right\rangle,
 $$
 
 which reduces to the traceless form because $I_{ij} = \mathcal{Q}_{ij} + \tfrac13\delta_{ij}I_{kk}$.
@@ -224,7 +224,7 @@ $$
 \mathcal{Q}_{xy} = mR^2\sin 2\omega t',
 $$
 
-whose third derivatives give $d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3 = 128\,m^2R^4\omega^6$, a constant. Then
+whose third derivatives give $d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 = 128\,m^2R^4\omega^6$, a constant. Then
 
 $$
 P = \frac{G}{5c^5}\cdot128\,m^2R^4\omega^6
@@ -292,7 +292,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 2. **A faithful biquaternion carrier of the quadrupole moment.** No single biquaternion carries the symmetric traceless $\mathcal{Q}_{ij}$: the natural packaging collapses it to its vanishing trace, exactly as it collapses $h_{\mu\nu}$ to the trace that does not propagate. The electromagnetic energy–momentum tensor is carried not by a single biquaternion but by a bilinear, and the exercise on that object shows how. Is the same true of $\mathcal{Q}_{ij}$ — is there a bilinear of two $\mathbb{M}_-$ elements, or of a matter field, whose symmetric traceless part is the quadrupole moment and whose transformation under the Lorentz group is correct? A positive answer would give the framework a place to stand in the generation problem; a negative answer would explain why the quadrupole formula resists transcription into a single algebra element.
 
-3. **The retarded solution and the null cone.** The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \,d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{t'}^2$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.
+3. **The retarded solution and the null cone.** The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \,d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.
 
 4. **The Weyl tensor, helicity, and the two sectors.** The gauge-invariant content of the wave is the Weyl tensor, naturally packaged through self-dual and anti-self-dual bivectors. Does the decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise the Weyl bivectors, and do the five Newman–Penrose scalars appear as components of biquaternion objects? The two helicities of the graviton are the two circular polarizations of the radiation; whether the algebra distinguishes them, or sees only their sum, is open. The twistor formulation of the biquaternions is the natural place to look.
 
@@ -306,7 +306,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 Gravitational radiation in the linearized theory has been written in the biquaternion framework, and each step has been identified as either framework content or transcribed standard theory.
 
-The trace-reversed perturbation $\bar{h}_{00} = h_{00}+\tfrac12h$ and $\bar{h}_{kl} = h_{kl}-\tfrac12h\,\delta_{kl}$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\zeta_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
+The trace-reversed perturbation $\bar{h}_{00} = h_{00}+\tfrac12h$ and $\bar{h}_{kl} = h_{kl}-\tfrac12h\,\delta_{kl}$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\zeta_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
 
 The framework's reach was drawn. It supplies the wave operator and its null cone; the carrier of the wave as an $\mathbb{M}_-$-valued one-form; the gauge transformation whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the count $16 = 10 + 6$ and the removal of the four gauge directions from the ten; and the bivector packaging of the curvature, whose values lie in the complex pure-vector subspace and so in neither sector. It does not supply the dynamics that selects two of the six harmonic-gauge components: the framework has no natural handle on the polarization count, and the number two is inherited. The physical polarization amplitudes are exactly the components the algebra's natural single-biquaternion packaging annihilates, as is the traceless quadrupole moment, and the energy–momentum source is the rank-two object no single biquaternion carries. The quadrupole formula, and the coupling constant within it, are therefore transcribed rather than derived. The distinction between the electromagnetic field strength, which is a bivector outside $\mathbb{M}_-$ despite the material potential it comes from, and the graviton, which is a symmetric rank-two object belonging to no sector at all, has been kept explicit; the two are not to be identified by the accident that both field strengths leave the material sector.
 
@@ -319,9 +319,9 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\varepsilon_\mu$ | Material basis of $\mathbb{M}_-$: $\varepsilon_0=ie_t$ and $\varepsilon_k=\vec e_k$; the natural form on it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=ict'$, and its one minus is the square of the $i$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=i c r'_t$, and its one minus is the square of the $i$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{M}_-$, $Q_t=ict'$ and $Q_k=x_k$; $x_\mu=(ct',x,y,z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
+| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{M}_-$, $Q_t=i c r'_t$ and $Q_k=x_k$; $x_\mu=(c r'_{t},x,y,z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial Q_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0k}=h_{0k}$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{kl}$, $\bar{h} = -h$ | Trace-reversed perturbation |
@@ -335,8 +335,8 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$, $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{Q}_{3,\mu\nu} = \tfrac12\sum_{\rho,\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
 | $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
-| $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{t'}^2$, $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3\rangle$ | Quadrupole amplitude and power |
-| $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the Hermitian form on the informational sector |
+| $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2$, $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ | Quadrupole amplitude and power |
+| $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
 
 ## Further Reading
 

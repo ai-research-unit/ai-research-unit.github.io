@@ -16,7 +16,7 @@ and each is written as
 
 $$
 \tilde Q=r\,e^{i\alpha}\,
-\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
@@ -70,7 +70,7 @@ The **defect** of a case is
 $$
 \delta=\bigl\lVert\exp(\tilde Q_{\log})-\tilde Q\bigr\rVert,
 \qquad
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
 $$
 
 where the norm is the maximum modulus of the four coordinates. It is zero exactly in the normal cases and positive in the non-normal ones.
@@ -119,7 +119,7 @@ $$
 \tilde u_{\mathrm r}=\vec e_x.
 $$
 
-The boost is the identity, with $\psi=0$ and an undefined axis. The rotor is
+The boost is the identity, with $\theta^{\mathrm{rpd}}=0$ and an undefined axis. The rotor is
 
 $$
 \tilde u_{\mathrm r}=\vec e_x=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr),
@@ -133,7 +133,7 @@ $$
 \tilde Q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr).
 $$
 
-The word has $r=1$, $\alpha=0$, $\psi=0$, $\theta=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
+The word has $r=1$, $\alpha=0$, $\theta^{\mathrm{rpd}}=0$, $\theta=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
 
 ### The Spectral Data
 
@@ -194,21 +194,21 @@ $$
 The rotor is the identity, with $\theta=0$ and an undefined axis. The boost is
 
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec e_x,
+\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x,
 \qquad
-\cosh\frac{\psi}{2}=\sqrt2,
+\cosh\frac{\theta^{\mathrm{rpd}}}{2}=\sqrt2,
 \qquad
-\sinh\frac{\psi}{2}=1,
+\sinh\frac{\theta^{\mathrm{rpd}}}{2}=1,
 $$
 
-so $\psi=2\ln(1+\sqrt2)=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$.
+so $\theta^{\mathrm{rpd}}=2\ln(1+\sqrt2)=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$.
 
 ### The Word
 
 $$
-\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr),
+\tilde Q=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x\Bigr),
 \qquad
-\psi=2\ln(1+\sqrt2).
+\theta^{\mathrm{rpd}}=2\ln(1+\sqrt2).
 $$
 
 ### The Spectral Data
@@ -230,7 +230,7 @@ The element is normal, and the eigenvalues of the unit factor are real and recip
 The true logarithm is
 
 $$
-\operatorname{Log}\tilde Q=i\frac{\psi}{2}\vec e_x=i\ln(1+\sqrt2)\vec e_x=i\,0.88137359\vec e_x,
+\operatorname{Log}\tilde Q=i\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x=i\ln(1+\sqrt2)\vec e_x=i\,0.88137359\vec e_x,
 $$
 
 and the formal exponent is the same, with defect $0$.
@@ -266,15 +266,15 @@ $$
 \tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
-The Hermitian factor is the one of case 2, with $\psi=2\ln(1+\sqrt2)$ and $\vec u_{\mathrm b}=\vec e_x$. The rotor is the quarter-turn about $\vec e_x$, with $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
+The Hermitian factor is the one of case 2, with $\theta^{\mathrm{rpd}}=2\ln(1+\sqrt2)$ and $\vec u_{\mathrm b}=\vec e_x$. The rotor is the quarter-turn about $\vec e_x$, with $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
 
 ### The Word
 
 $$
-\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr)\exp\Bigl(\frac{\pi}{4}\vec e_x\Bigr)
-=\exp\Bigl(\Bigl(\frac{\pi}{4}+i\frac{\psi}{2}\Bigr)\vec e_x\Bigr),
+\tilde Q=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x\Bigr)\exp\Bigl(\frac{\pi}{4}\vec e_x\Bigr)
+=\exp\Bigl(\Bigl(\frac{\pi}{4}+i\frac{\theta^{\mathrm{rpd}}}{2}\Bigr)\vec e_x\Bigr),
 \qquad
-\psi=2\ln(1+\sqrt2).
+\theta^{\mathrm{rpd}}=2\ln(1+\sqrt2).
 $$
 
 The two axes are equal, so the word is a single exponential of the complex angle $\frac{\pi}{4}+i\ln(1+\sqrt2)$.
@@ -298,9 +298,9 @@ $$
 The element is normal. The eigenbasis is the polar frame, and the eigenvalues of the unit factor are
 
 $$
-\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2},
+\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2},
 \qquad
-\psi=1.762747174,
+\theta^{\mathrm{rpd}}=1.762747174,
 \qquad
 \theta=\frac{\pi}{2}.
 $$
@@ -346,7 +346,7 @@ $$
 \tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
-The boost is the identity, with $\psi=0$. The rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
+The boost is the identity, with $\theta^{\mathrm{rpd}}=0$. The rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
 
 ### The Spectral Data
 
@@ -358,7 +358,7 @@ $$
 \mu_\pm=e^{\pm i\pi/4}.
 $$
 
-The element is normal, the axes are the same, and the eigenvalues of the unit factor have modulus one. The formula $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$ gives $e^{\pm i\pi/4}$.
+The element is normal, the axes are the same, and the eigenvalues of the unit factor have modulus one. The formula $\mu_\pm=e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$ gives $e^{\pm i\pi/4}$.
 
 ### The Checks
 
@@ -396,7 +396,7 @@ $$
 =\frac{e_t}{\sqrt2}+\frac{\vec e_x+\vec e_y}{2}.
 $$
 
-Its scalar part is $1/\sqrt2=\cos\frac{\pi}{4}$, so $\theta=\frac{\pi}{2}$, and its vector part is $\frac12(\vec e_x+\vec e_y)=\frac{1}{\sqrt2}\frac{\vec e_x+\vec e_y}{\sqrt2}$, so $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$. The boost is the one of case 2, with $\psi=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$. The angle between the axes is
+Its scalar part is $1/\sqrt2=\cos\frac{\pi}{4}$, so $\theta=\frac{\pi}{2}$, and its vector part is $\frac12(\vec e_x+\vec e_y)=\frac{1}{\sqrt2}\frac{\vec e_x+\vec e_y}{\sqrt2}$, so $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$. The boost is the one of case 2, with $\theta^{\mathrm{rpd}}=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$. The angle between the axes is
 
 $$
 c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=\frac{1}{\sqrt2}.
@@ -405,10 +405,10 @@ $$
 ### The Word
 
 $$
-\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr)
+\tilde Q=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x\Bigr)
 \exp\Bigl(\frac{\pi}{4}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr),
 \qquad
-\psi=2\ln(1+\sqrt2).
+\theta^{\mathrm{rpd}}=2\ln(1+\sqrt2).
 $$
 
 The two axes are neither parallel nor antiparallel, and both angles are nonzero. The element is non-normal:
@@ -434,14 +434,14 @@ $$
 \mu_-=2.081019\,e^{-0.674888846i}.
 $$
 
-The eigenbasis is not the polar frame. The common-axis formula fails: the moduli of $\mu_\pm$ are not $e^{\mp\psi/2}$, and the arguments are not $\pm\theta/2$.
+The eigenbasis is not the polar frame. The common-axis formula fails: the moduli of $\mu_\pm$ are not $e^{\mp\theta^{\mathrm{rpd}}/2}$, and the arguments are not $\pm\theta/2$.
 
 ### The Spectral Gap
 
 The normal-case reading would give
 
 $$
-\psi_{\mathrm{spec}}=\ln\frac{2.081019}{0.480533816}=1.4657,
+\theta^{\mathrm{rpd}}_{\mathrm{spec}}=\ln\frac{2.081019}{0.480533816}=1.4657,
 \qquad
 \theta_{\mathrm{spec}}=2(0.674888846)=1.3498,
 $$
@@ -449,7 +449,7 @@ $$
 while the true word has
 
 $$
-\psi=1.7627,
+\theta^{\mathrm{rpd}}=1.7627,
 \qquad
 \theta=1.5708.
 $$
@@ -517,7 +517,7 @@ $$
 The word has
 
 $$
-\psi=0.696809291,
+\theta^{\mathrm{rpd}}=0.696809291,
 \qquad
 \vec u_{\mathrm b}=(0,-0.316227766,-0.948683298),
 \qquad
@@ -557,12 +557,12 @@ $$
 The normal-case reading would give
 
 $$
-\psi_{\mathrm{spec}}=\bigl\lvert\ln\frac{0.868492475}{1.15142045}\bigr\rvert=0.2820,
+\theta^{\mathrm{rpd}}_{\mathrm{spec}}=\bigl\lvert\ln\frac{0.868492475}{1.15142045}\bigr\rvert=0.2820,
 \qquad
 \theta_{\mathrm{spec}}=2(0.828222573)=1.6564,
 $$
 
-while the true word has $\psi=0.6968$ and $\theta=1.7436$. The gap is larger than in case 5, because the axes are farther from parallel.
+while the true word has $\theta^{\mathrm{rpd}}=0.6968$ and $\theta=1.7436$. The gap is larger than in case 5, because the axes are farther from parallel.
 
 ### The Checks
 
@@ -618,7 +618,7 @@ $$
 \tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
-The element is the phase $2e^{i\pi/4}$ times the quarter-turn rotor. The boost is the identity, with $\psi=0$; the rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
+The element is the phase $2e^{i\pi/4}$ times the quarter-turn rotor. The boost is the identity, with $\theta^{\mathrm{rpd}}=0$; the rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.
 
 ### The Spectral Data
 
@@ -675,7 +675,7 @@ $$
 \tilde u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}.
 $$
 
-The boost is the identity, with $\psi=0$. The rotor is a half-turn about the diagonal, with $\theta=\pi$ and $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$.
+The boost is the identity, with $\theta^{\mathrm{rpd}}=0$. The rotor is a half-turn about the diagonal, with $\theta=\pi$ and $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$.
 
 ### The Spectral Data
 
@@ -706,7 +706,7 @@ and the formal exponent is the same, with defect $0$.
 
 ### The Normal Cases
 
-| Case | Element | $\psi$ | $\theta$ | Axes | Defect |
+| Case | Element | $\theta^{\mathrm{rpd}}$ | $\theta$ | Axes | Defect |
 |---|---|---|---|---|---|
 | 1 | $\vec e_x$ | $0$ | $\pi$ | undefined, $\vec e_x$ | $0$ |
 | 2 | $\sqrt2e_t+i\vec e_x$ | $2\ln(1+\sqrt2)$ | $0$ | $\vec e_x$, undefined | $0$ |
@@ -715,16 +715,16 @@ and the formal exponent is the same, with defect $0$.
 | 7 | $(1+i)(e_t+\vec e_x)$ | $0$ | $\frac{\pi}{2}$ | undefined, $\vec e_x$ | $0$ |
 | 8 | $\vec e_x+\vec e_y$ | $0$ | $\pi$ | undefined, $\frac{\vec e_x+\vec e_y}{\sqrt2}$ | $0$ |
 
-In every normal case the formal exponent is a logarithm, the axes coincide when both are defined, and the eigenvalues of the unit factor are $e^{\mp\psi/2}e^{\pm i\theta/2}$.
+In every normal case the formal exponent is a logarithm, the axes coincide when both are defined, and the eigenvalues of the unit factor are $e^{\mp\theta^{\mathrm{rpd}}/2}e^{\pm i\theta/2}$.
 
 ### The Non-Normal Cases
 
-| Case | Element | $\psi$ | $\theta$ | $c$ | $\psi_{\mathrm{spec}}$ | $\theta_{\mathrm{spec}}$ | Defect |
+| Case | Element | $\theta^{\mathrm{rpd}}$ | $\theta$ | $c$ | $\theta^{\mathrm{rpd}}_{\mathrm{spec}}$ | $\theta_{\mathrm{spec}}$ | Defect |
 |---|---|---|---|---|---|---|---|
 | 5 | $1-\frac{i}{2}+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$ | $1.7627$ | $1.5708$ | $0.7071$ | $1.4657$ | $1.3498$ | $0.5000$ |
 | 6 | $(1+i)(e_t+\vec e_x)+\vec e_y+\frac12\vec e_z$ | $0.6968$ | $1.7436$ | $-0.3830$ | $0.2820$ | $1.6564$ | $0.4222$ |
 
-The two columns $\psi_{\mathrm{spec}},\theta_{\mathrm{spec}}$ are the values extracted from the eigenvalues of the unit factor by the normal-case formulas. They disagree with the true word in both cases. The defect is nonzero in both.
+The two columns $\theta^{\mathrm{rpd}}_{\mathrm{spec}},\theta_{\mathrm{spec}}$ are the values extracted from the eigenvalues of the unit factor by the normal-case formulas. They disagree with the true word in both cases. The defect is nonzero in both.
 
 ### The Eigenvalues of the Unit Factor
 
@@ -739,7 +739,7 @@ The two columns $\psi_{\mathrm{spec}},\theta_{\mathrm{spec}}$ are the values ext
 | 7 | $e^{i\pi/4}$ | $e^{-i\pi/4}$ | $1$ | $\frac{\pi}{4}$ |
 | 8 | $i$ | $-i$ | $1$ | $\frac{\pi}{2}$ |
 
-The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 8 the moduli and arguments are $e^{\mp\psi/2}$ and $\pm\theta/2$. In cases 5 and 6 they are not.
+The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 8 the moduli and arguments are $e^{\mp\theta^{\mathrm{rpd}}/2}$ and $\pm\theta/2$. In cases 5 and 6 they are not.
 
 ## Summary
 
@@ -758,7 +758,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 
 ### The Word Data
 
-| Case | $r$ | $\alpha$ | $\psi$ | $\vec u_{\mathrm b}$ | $\theta$ | $\vec u_{\mathrm r}$ |
+| Case | $r$ | $\alpha$ | $\theta^{\mathrm{rpd}}$ | $\vec u_{\mathrm b}$ | $\theta$ | $\vec u_{\mathrm r}$ |
 |---|---|---|---|---|---|---|
 | 1 | $1$ | $0$ | $0$ | -- | $\pi$ | $\vec e_x$ |
 | 2 | $1$ | $0$ | $1.762747174$ | $\vec e_x$ | $0$ | -- |
@@ -772,7 +772,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 ### What the Examples Show
 
 - The word exists in every case, with $N\neq0$ and $B^2\neq0$.
-- In the normal cases the axes coincide when both are defined, the word is a single exponential, the formal exponent is the logarithm, and the spectrum gives the two angles by $\psi=\ln\lvert\mu_-/\mu_+\rvert$ and $\theta=2\arg\mu_+$.
+- In the normal cases the axes coincide when both are defined, the word is a single exponential, the formal exponent is the logarithm, and the spectrum gives the two angles by $\theta^{\mathrm{rpd}}=\ln\lvert\mu_-/\mu_+\rvert$ and $\theta=2\arg\mu_+$.
 - In the non-normal cases the axes are not the eigenlines, the formal exponent is not the logarithm, the defect is positive, and the spectrum does not give the two angles. The gap is visible in the table: $1.4657$ against $1.7627$ in case 5, and $0.2820$ against $0.6968$ in case 6.
 - The two factors commute with the element exactly in the normal cases; the norm of the commutator is zero there and $1.41$ and $0.954$ in the two non-normal cases.
 - The eigenvalues of the unit factor are the same function of $U_t$ in all cases; what changes is whether the word's angles can be read from them.
@@ -789,7 +789,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 | $\tilde U$ | the unit factor |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive factor |
 | $\tilde u_{\mathrm r}$ | the rotor |
-| $\psi,\vec u_{\mathrm b}$ | the rapidity and the boost axis |
+| $\theta^{\mathrm{rpd}},\vec u_{\mathrm b}$ | the rapidity and the boost axis |
 | $\theta,\vec u_{\mathrm r}$ | the rotor angle and the rotor axis |
 | $c$ | the cosine between the axes |
 | $\lambda_\pm$ | the eigenvalues of $\tilde Q$ |

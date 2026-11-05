@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.
+The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A **Dirac spinor** is an element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.
 
 This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.
 
@@ -13,7 +13,7 @@ The article is the spinor counterpart of *Angular Momentum and Spin in the Biqua
 The two families of operators are the left and the right multiplications,
 
 $$
-L_a\psi=a\psi,\qquad R_b\psi=\psi b .
+L_a\tilde{Ξ}=a\tilde{Ξ},\qquad R_b\tilde{Ξ}=\tilde{Ξ}b .
 $$
 
 They commute, $L_aR_b=R_bL_a$, because the product is associative: both sides are $a\psi b$. That one line is the engine of everything below, and its consequence is a rule about subspaces.
@@ -71,7 +71,7 @@ and the elementary spinor is multiplied by that element on the left. The multipl
 
 ## The Dirac Spinor
 
-**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
+**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
 
 $$
 \mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
@@ -192,14 +192,14 @@ No left multiplication moves between the parts, so the coupling of the parts is 
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, $M_2(\mathbb{C})$, complex dimension four |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
-| $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Left and right multiplication; they commute |
+| $L_a\tilde{Ξ}=a\tilde{Ξ}$, $R_b\tilde{Ξ}=\tilde{Ξ}b$ | Left and right multiplication; they commute |
 | $\tilde S_k=\tfrac12 i\vec e_k$ | The spin generators, Hermitian, with eigenvalues $\pm\tfrac12$ on a carrier |
 | $\vec S$ | The same generators read as one vector, $\vec u\cdot\vec S=u_k\tilde S_k$; pure, so arrowed and without the tilde |
 | $\vec u$ | A unit real vector, the declared direction |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents at the axis; $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis, $\mathbb{B}=S_+\oplus S_-$ |
 | $(d_0;d_1)$ | The coordinates of an elementary spinor on its carrier |
-| $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | A Dirac spinor, one part in each carrier |
+| $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ | A Dirac spinor, one part in each carrier |
 | $R(i\vec u)$ | The grading of the two parts, $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$; $\tfrac12(\mathrm{id}+R(i\vec u))$ is the projector $R(\tilde\Pi_+(\vec u))$ |
 | $S^{\mathrm{c}}$ | The conjugate module, on which $Q$ acts as $\bar Q$ |
 | $\mathsf{M}_2$, $\sigma_k$ | The matrix model, $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(i\vec e_k)=\sigma_k$, with $\sigma_k$ the Pauli matrices |
