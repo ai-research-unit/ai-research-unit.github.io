@@ -25,7 +25,7 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 ## The State Space and Its Two Forms
 
-An element of the Hermitian subspace is $\tilde R_\psi=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
+An element of the Hermitian subspace is $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
 \{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{M}_+:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
 \qquad
@@ -35,17 +35,17 @@ whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ})=2\langle\tilde{Ϛ},e_t\rang
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
 
-**The plain form.** For two Hermitian elements $\tilde{R}_{\psi,1}=h_{1t}e_t+i\vec h_1$ and $\tilde{R}_{\psi,2}=h_{2t}e_t+i\vec h_2$,
+**The plain form.** For two Hermitian elements $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$,
 $$
-\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*}\bigr)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2
+\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*}\bigr)=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}
 $$
 is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}$, the Euclidean pairing on $\mathbb{R}^4$ with $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
 **The biquaternion norm and its polarization.**
 $$
-\langle\tilde{R}_{\psi,1}\rangle_{\natural} = \langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,1}\rangle_{\natural}=\tilde{R}_{\psi,1}\tilde{R}_{\psi,1}^{\natural}=\bigl(h_{1t}^2-|\vec h_1|^2\bigr)e_t,
+\langle\tilde{R}_{\psi,1}\rangle_{\natural} = \langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,1}\rangle_{\natural}=\tilde{R}_{\psi,1}\tilde{R}_{\psi,1}^{\natural}=\bigl(c r_{t,1}^2-|\vec r_{\psi,1}|^2\bigr)e_t,
 \qquad
-\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural}+\tilde{R}_{\psi,2}\tilde{R}_{\psi,1}^{\natural}\bigr)=\bigl(h_{1t}h_{2t}-\vec h_1\cdot\vec h_2\bigr)e_t,
+\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural}+\tilde{R}_{\psi,2}\tilde{R}_{\psi,1}^{\natural}\bigr)=\bigl(c^2 r_{t,1}r_{t,2}-\vec r_{\psi,1}\cdot\vec r_{\psi,2}\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
@@ -214,7 +214,7 @@ $$
 \qquad\text{so}\qquad
 J_{\vec{u}}(v)=\tfrac12\,[\vec{u},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$, $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec h_1\times\vec h_2)$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$, $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\vec{u}\cdot\delta_2\vec{u}$ is invariant under $J$, because $J$ is a rotation:
 $$

@@ -91,7 +91,7 @@ $$
 \tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
-The first coefficient is **imaginary** ($i c r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t = t'$ is the material time, so the first coefficient is $i c t'$.
+The first coefficient is **imaginary** ($i c r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t = t'$ is the material time, so the first coefficient is $i c r'_t$.
 
 The imaginary character of the time coordinate is **intrinsic** to the material sector. It is not introduced by analytic continuation, and it is not the result of a Wick rotation. It is the algebraic structure of the subspace: the time coordinate multiplies the imaginary unit $i$, which is the fundamental scalar of the biquaternion algebra.
 

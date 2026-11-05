@@ -225,7 +225,7 @@ The bracket shows how the sector split interacts with the flow. The energy is a 
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega t')a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega t')a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec r_\psi\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
 
 ## One Oscillator or Two?
 
@@ -269,7 +269,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{M}_\pm = \mathbb{M}_\mp$ |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector: $h_te_t + i\vec h$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector: $c r_t\,e_t + i\vec r_\psi$ |
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_t\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_t\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |

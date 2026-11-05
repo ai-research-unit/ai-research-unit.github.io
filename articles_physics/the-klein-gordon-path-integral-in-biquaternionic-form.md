@@ -77,7 +77,7 @@ $$
 which is the Klein–Gordon equation of the companion article. The derivation was checked against three independent on-shell modes: for the superposition
 
 $$
-\xi(t',x,y,z)=\sum_{n=1}^{3}a_n\cos(\vec k_n\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\Omega_n t'),
+\xi(r'_t,r_x,r_y,r_z)=\sum_{n=1}^{3}a_n\cos(\vec k_n\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\Omega_n t'),
 \qquad
 \Omega_n=\sqrt{\vec k_n^2+\mu^2},
 $$
@@ -321,7 +321,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $Z[J]$ | Generating functional; $\tilde{J}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-\mu^2)G=-\delta^{(4)}$ and $(-\Delta_E+\mu^2)G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

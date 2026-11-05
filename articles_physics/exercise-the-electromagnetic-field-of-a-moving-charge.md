@@ -30,7 +30,7 @@ with $\vec E = \vec E_v+\vec E_a$. The velocity field falls as $1/R^2$ and is no
 
 The retarded solution of the biquaternionic Maxwell equation is
 $$
-\tilde{A}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma,
+\tilde{A}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma,
 $$
 and the parent's statement is that $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$ yields the two component formulas displayed above. The retarded time is defined *implicitly*, by
 $$
@@ -38,7 +38,7 @@ t'_r = t' - \frac{R}{c},
 \qquad
 R = \left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)\right|,
 $$
-so that the observation point $(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_r,(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_r$ and $\nabla t'_r$ and the resulting biquaternion $\tilde{\nabla}^{\natural}t'_r$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
+so that the observation point $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_r,(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_r$ and $\nabla t'_r$ and the resulting biquaternion $\tilde{\nabla}^{\natural}t'_r$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
 
 Numerical checks quoted below were performed on subluminal worldlines with a Newton-solved retarded time, and the reported figures are the maximum componentwise discrepancies. All source quantities are evaluated at the retarded time.
 

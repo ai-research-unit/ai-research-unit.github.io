@@ -133,7 +133,7 @@ whose real part is the informational time and whose imaginary part is the materi
 The informational sector is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$, and its general element is
 
 $$
-\tilde Q_+ = ct\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) = ct\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_+ ,
+\tilde Q_+ = c r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_+ ,
 $$
 
 with $t, r'_{x}, r'_{y}, r'_{z}$ real. The placement of the $i$ is the mirror of the material one: here the **temporal** coefficient is real and the three **spatial** coefficients are imaginary. The scalar direction carries a real number and the vector directions carry imaginary ones, exactly opposite to the material element $i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$.
@@ -200,7 +200,7 @@ The base of the biquaternion algebra carries one unit unlike the others. The tem
 
 On the material sector the temporal coefficient is imaginary. The four-position is $i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the signature of the interval is the square of the imaginary coefficient, and the reading already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action* is that the imaginary coefficient is the mark of a coordinate that is measured but not touched: the three real coefficients are the directions a material body extends along, and the one imaginary coefficient is the direction it is merely at.
 
-The framework carries a second temporal coefficient, the real $c r_t$ of the informational sector, whose element is $ct\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ — the mirror of the material one, with the $i$ on the spatial directions instead of the temporal one. The informational time $c r_t$ is the single positive direction of the sector's natural norm and a positive direction of its probability form, and the reading this article offers is that it is the sector's **storage direction**: the record can be touched and recovered because $c r_t$ is real, and the time cannot because $i c r'_t$ is imaginary. The reading is an interpretation, it inherits the informational-sector hypothesis, it adds no dynamics, and it claims no arrow.
+The framework carries a second temporal coefficient, the real $c r_t$ of the informational sector, whose element is $c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ — the mirror of the material one, with the $i$ on the spatial directions instead of the temporal one. The informational time $c r_t$ is the single positive direction of the sector's natural norm and a positive direction of its probability form, and the reading this article offers is that it is the sector's **storage direction**: the record can be touched and recovered because $c r_t$ is real, and the time cannot because $i c r'_t$ is imaginary. The reading is an interpretation, it inherits the informational-sector hypothesis, it adds no dynamics, and it claims no arrow.
 
 All of the mathematics the article uses is verified: $e_t$ is the identity and central, the rotations fix it while the boosts carry it into $\mathbb{M}_+$ and the Lorentz action preserves the norm, the material element is anti-Hermitian with imaginary scalar coefficient, the informational element is Hermitian with real scalar coefficient, the natural norm has the signatures claimed on the two sectors, and the Hermitian form is positive definite with the informational time positive. What remains an interpretation is what the placements are worth physically, and that is what the article's three readings state.
 
@@ -212,7 +212,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $c r_t = ct$ and $c r'_t = ct'$ |
 | $Q_t = c r_t + i c r'_t$ | The central coordinate, the coefficient of $Q_te_t$: real part the informational time $c r_t$, imaginary part the material time $i c r'_t$ |
 | $\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material element, $\mathbb{M}_-$: imaginary scalar coefficient, real vector coefficients |
-| $\tilde Q_+ = ct\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, $\mathbb{M}_+$: real scalar coefficient, imaginary vector coefficients |
+| $\tilde Q_+ = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, $\mathbb{M}_+$: real scalar coefficient, imaginary vector coefficients |
 | $\mathbb{M}_- = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$ | Anti-Hermitian subspace, the material sector |
 | $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ | Hermitian subspace, the informational sector |
 | $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$ | Biquaternion norm; $(1,3)$ on $\mathbb{M}_+$, the temporal direction positive |

@@ -36,7 +36,7 @@ $$
 
 a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the **zero divisors**: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde Q_2$ with $\tilde{Q}\tilde Q_2 = 0$ (or with $\tilde Q_2\tilde{Q} = 0$).
 
-On the **real material slice**, writing $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $(t',x,y,z)\in\mathbb{R}^4$, the form becomes
+On the **real material slice**, writing $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $(r'_t,r_x,r_y,r_z)\in\mathbb{R}^4$, the form becomes
 
 $$
 \boxed{\ \langle\tilde R_\varphi\rangle_{\natural} = (i c r'_{t})^2 +r_x^2+r_y^2+r_z^2 = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2\ } ,

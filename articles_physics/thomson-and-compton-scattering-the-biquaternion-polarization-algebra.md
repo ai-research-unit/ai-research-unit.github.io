@@ -420,7 +420,7 @@ $$
 
 with the interval and the orientation
 $$
--c^2t'^2+r_x^2+r_y^2+r_z^2,\qquad \epsilon_{0123}=+1 .
+-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2,\qquad \epsilon_{0123}=+1 .
 $$
 The four directions carry the unit metric $\delta_{\mu\nu}$, and the one minus of the interval is the square of the $i$ in $Q_t=i c r'_t$. The time generator is a **right** multiplication, the three spatial ones are **left-times-right**, and the mass unit $L_{e_t}^{\mathrm{pau}}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P$ enter the cell formulation with one generator of each type.
 

@@ -136,7 +136,7 @@ The ideas, collected by difficulty.
 |---|---|---|
 | 1 Time a parameter | 3, the signature from $i^2=-1$ | $\langle\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ with $Q_{1t}=i c r'_t$ |
 | 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the exchange as an internal clock |
-| 2 Born rule an axiom | 1, states and observables in one subspace | $\langle\tilde R_\psi\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ})=h_t+\vec r\cdot\vec h$; for $\tilde R_\psi=\tilde\Pi_{1,2}(\vec u)$ this is $\tfrac12(1\pm\vec u\cdot\vec r)$ |
+| 2 Born rule an axiom | 1, states and observables in one subspace | $\langle\tilde R_\psi\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ})=c r_t+\vec r\cdot\vec r_\psi$; for $\tilde R_\psi=\tilde\Pi_{1,2}(\vec u)$ this is $\tfrac12(1\pm\vec u\cdot\vec r)$ |
 | 3 Spin–statistics | 6, two classes of representation | $-e_t$ acts as $\pm\mathrm{id}$ by module |
 | 4 Two evolutions | 5, two classes of acting element | $*$-Unitary and idempotent elements of one biquaternion space |
 | 5 Quantisation a recipe | no numbered idea; see Programme 3 | $\mathfrak{sl}(2,\mathbb{C})$ as the natural bracket algebra |
@@ -227,14 +227,14 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\flat=-{}^{*}$ | Real structure with fixed space $\mathbb{M}_-$; not an involution of the ring |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | The central element exchanges the sectors |
 | $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; $\mathrm{Tr}(e_t)=2$ |
-| $\tilde R_\psi=h_te_t+i\vec h$ | Hermitian element (observable), vector part $\vec h$ |
+| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | Hermitian element (observable), vector part $\vec r_\psi$ |
 | $\vec u$ | Unit vector, the axis of an idempotent |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | State (Bloch ball), Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
-| $\langle\tilde R_\psi\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ})=h_t+\vec r\cdot\vec h$ | Born rule, the normalised Hermitian form; for $\tilde R_\psi=\tilde\Pi_{1,2}(\vec u)$, $\tfrac12(1\pm\vec u\cdot\vec r)$ |
+| $\langle\tilde R_\psi\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ})=c r_t+\vec r\cdot\vec r_\psi$ | Born rule, the normalised Hermitian form; for $\tilde R_\psi=\tilde\Pi_{1,2}(\vec u)$, $\tfrac12(1\pm\vec u\cdot\vec r)$ |
 | $\langle\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_\mu Q_{1,\mu}^{2}$ | Biquaternion norm; indefinite, complex in general; $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ on $\mathbb{M}_-$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
-| $\langle\tilde R_\psi\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde R_\psi=h_te_t+i\vec h$ |
+| $\langle\tilde R_\psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\psi\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ |
 | $\langle\tilde{Q}_1\rangle_{\natural}=0$ | Zero-divisor cone; its material real slice is the light cone, and the trace-one slice of its informational real slice is the Bloch sphere |
 | $\tilde\Pi^{\natural}=e_t-\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ | On a Hermitian idempotent: conjugation returns the complement, and the norm vanishes |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}_1)=\tilde{Q}_3\tilde{Q}_1\tilde{Q}_3^{*}$ | One action form; Lorentz, $*$-unitary and idempotent cases |

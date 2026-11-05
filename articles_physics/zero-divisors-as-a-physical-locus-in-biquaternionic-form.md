@@ -181,10 +181,10 @@ The material cone is the light cone of $i c r'_t$-Minkowski space, and in the re
 
 ## Null Solutions of the Free Equation
 
-The solution space of the free Schrödinger equation inherits the locus. The equation is central and linear, so if $q(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a complex scalar solution and $\tilde Q$ is any constant biquaternion, then
+The solution space of the free Schrödinger equation inherits the locus. The equation is central and linear, so if $q(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a complex scalar solution and $\tilde Q$ is any constant biquaternion, then
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=q(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\tilde Q
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=q(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\tilde Q
 $$
 
 is again a solution, and its biquaternion norm is

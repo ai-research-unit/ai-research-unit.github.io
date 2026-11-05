@@ -24,7 +24,7 @@ g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+\left(1-\frac{1}{n^2}\right)v_\mu v_\nu 
 \qquad
 \sum_\mu v_\mu v_\mu=-1 .
 $$
-Here $\delta_{\mu\nu}=(1,1,1,1)$ is the unit metric on the four $Q_\mu$, and the metric is a quadratic form in those, $\sum_{\mu,\nu}g^{\mathrm J}_{\mu\nu}Q_\mu Q_\nu$; the intervals are written below in the real coordinates $(t',x,y,z)$, with $Q_t=i\,c\,t'$ and $c=c_0=1$ in this section. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
+Here $\delta_{\mu\nu}=(1,1,1,1)$ is the unit metric on the four $Q_\mu$, and the metric is a quadratic form in those, $\sum_{\mu,\nu}g^{\mathrm J}_{\mu\nu}Q_\mu Q_\nu$; the intervals are written below in the real coordinates $(r'_t,r_x,r_y,r_z)$, with $Q_t=i\,c\,t'$ and $c=c_0=1$ in this section. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
 
 ### The static case
 
@@ -82,7 +82,7 @@ The same loss appears for an anisotropic crystal, whose dielectric tensor $\epsi
 
 The scale of the local complex structure is $c^2=1/(\epsilon\mu)$, and its sign is the sign of $\epsilon\mu$. Two regimes follow, and the difference is a change of the signature of the metric:
 
-| Regime | $\epsilon\mu$ | $c^2$ | the interval $-c^2t'^2+r_x^2+r_y^2+r_z^2$ | Inertia |
+| Regime | $\epsilon\mu$ | $c^2$ | the interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | Inertia |
 |---|---|---|---|---|
 | Transparent dielectric | $>0$ | $>0$ | one minus on $t'^2$; spatial part positive | $(3,1)$ |
 | Plasma or metal below cutoff | $<0$ | $<0$ | no minus, all four terms positive | $(4,0)$ |
@@ -126,7 +126,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; null cone $N=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds |
 | $n=c_0/c$ | Refractive index |
-| $\delta_{\mu\nu}=(1,1,1,1)$, $Q_t=i\,c\,t'$ | The one metric; the framework's interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$, $Q_t=i\,c\,t'$ | The one metric; the framework's interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$, $\sum_\mu v_\mu v_\mu=-1$ | Gordon's optical metric |
 | $g^{\mathrm{J}}_{ti}$ | Drag terms; zero for a static medium, nonzero for a moving one |
 | $\epsilon(\omega)=\epsilon_0(1-\omega_p^2/\omega^2)$ | Ideal plasma permittivity; negative below $\omega_p$ |

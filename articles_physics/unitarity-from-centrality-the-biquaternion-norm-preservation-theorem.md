@@ -49,7 +49,7 @@ a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coeffic
 $$
 \langle\tilde Q_1\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},
 $$
-and it is indefinite on $\mathbb{M}_+$: for $\tilde R_\psi=h_te_t+i\vec h$ one has $\langle\tilde R_\psi\rangle_{\natural}=(h_t^2-|\vec h|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
+and it is indefinite on $\mathbb{M}_+$: for $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ one has $\langle\tilde R_\psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\psi|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
 
 The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.
 
@@ -245,7 +245,7 @@ $$
 $$
 The biquaternion norm scales as $\langle\Gamma_{\tilde Q}\tilde Q_1\rangle_{\natural}=\lambda_t^4\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\bigl|\lambda_t^2\bigr|^2\langle\tilde Q_1\rangle_{\natural}$, in agreement with Theorem 2 with $|\langle\tilde Q\rangle_{\natural}|=|\lambda_t^2|=\lambda_t^2$. The Hermitian norm scales by $\lambda_t^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_t$ must be normalized to be $\pm i$.
 
-**Example 3: a non-central root of $-e_t$.** Take $\vec{Ζ}=\vec e_z$, so $\vec{Ζ}^2=-e_t$, and take the Hermitian generator $\tilde R_\psi=i \vec e_x$ (i.e. $\vec h=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}\vec{Ζ}\tilde R_\psi$,
+**Example 3: a non-central root of $-e_t$.** Take $\vec{Ζ}=\vec e_z$, so $\vec{Ζ}^2=-e_t$, and take the Hermitian generator $\tilde R_\psi=i \vec e_x$ (i.e. $\vec r_\psi=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}\vec{Ζ}\tilde R_\psi$,
 $$
 G=-\hbar^{-1}\vec e_z\,i\vec e_x=-\hbar^{-1}i\,\vec e_z \vec e_x=-\hbar^{-1}i\,\vec e_y .
 $$

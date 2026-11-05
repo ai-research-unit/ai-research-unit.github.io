@@ -66,13 +66,13 @@ $$
 H = \frac{p^{2}}{2m}\,e_t = -\frac{\hbar^2}{2m}\nabla^2 e_t\;},
 $$
 
-with $\tilde{Ξ}^{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
+with $\tilde{Ξ}^{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = c r_t e_t$ with $c r_t = -\frac{\hbar^2}{2m}\nabla^2$, the equation reads
 
 $$
-i\hbar\,\partial/\partial t' \tilde{Ξ}^{\mathrm{sp}} = h_t e_t \tilde{Ξ}^{\mathrm{sp}} = h_t \tilde{Ξ}^{\mathrm{sp}},
+i\hbar\,\partial/\partial t' \tilde{Ξ}^{\mathrm{sp}} = c r_t e_t \tilde{Ξ}^{\mathrm{sp}} = c r_t \tilde{Ξ}^{\mathrm{sp}},
 $$
 
-and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = h_t I_2$. The generator of the free evolution,
+and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = c r_t I_2$. The generator of the free evolution,
 
 $$
 -iH/\hbar = \frac{i\hbar}{2m}\nabla^2 e_t \in \mathbb{M}_-,
@@ -87,7 +87,7 @@ lies in the **material sector**, as every generator of a $*$-unitary flow does i
 Take the plane-wave ansatz
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_{\vec k}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t')),
+\tilde{Ξ}^{\mathrm{sp}}_{\vec k}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t')),
 \qquad
 \xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k \in \mathbb{R}^3,
 $$
@@ -162,7 +162,7 @@ For the non-relativistic dispersion the wave four-vector is **spacelike** for ev
 On a box of side $L$ with periodic boundary conditions, the normalised plane waves are
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_{\vec k}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))\,\xi,
+\tilde{Ξ}^{\mathrm{sp}}_{\vec k}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))\,\xi,
 \qquad
 \mathrm{Tr}(\xi^\dagger\xi) = 1,
 $$
@@ -202,7 +202,7 @@ The zero divisor cone therefore carries the states, while the positive trace for
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\tilde{Ξ}^{\mathrm{sp}}_0(\vec k)\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k) t')),
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k}{(2\pi)^3}\;\tilde{Ξ}^{\mathrm{sp}}_0(\vec k)\,\exp(\,i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k) t')),
 \qquad
 \tilde{Ξ}^{\mathrm{sp}}_0(\vec k) \in \mathbb{B}\tilde\Pi .
 $$
@@ -216,7 +216,7 @@ $$
 because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\tilde{Ξ}^{\mathrm{sp}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a fixed constant spinor, then
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\xi
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\xi
 $$
 
 for all times, where $Ξ$ solves the **scalar** free Schrödinger equation. The module factor is frozen: the free particle carries its spinor orientation unchanged, and the two components of $\tilde{Ξ}^{\mathrm{sp}}$ satisfy identical scalar equations. This is the precise sense in which the free problem is spin-0 scalar mechanics in this framework.
@@ -350,7 +350,7 @@ which gives $A + B = \frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B
 Because the kernel is central, it commutes with every biquaternion. The evolution of an arbitrary initial spinor field is therefore
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3x_0\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z), t')\,\tilde{Ξ}^{\mathrm{sp}}(0,x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3x_0\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z), t')\,\tilde{Ξ}^{\mathrm{sp}}(0,x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),
 $$
 
 in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.
@@ -379,7 +379,7 @@ The framework's state module $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ is the alg
 
 Two further structural points belong to this section.
 
-**The position is not an algebraic observable.** The field $\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a function on the material sector's configuration space; $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ labels points of that space. There is no pair $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2} \in \mathbb{M}_+$ whose commutator is $i\hbar e_t$: the companion article on the harmonic oscillator shows that the equation $[\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}] = i\hbar e_t$ has no solution for Hermitian $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ in the finite-dimensional algebra. The position-space description is thus an extension of the framework — the algebra supplies the fiber and the phase, and the configuration space supplies the base. This is the same status that the position has in the hydrogen article, and the same gap that the path-integral article records for the space of paths.
+**The position is not an algebraic observable.** The field $\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a function on the material sector's configuration space; $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ labels points of that space. There is no pair $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2} \in \mathbb{M}_+$ whose commutator is $i\hbar e_t$: the companion article on the harmonic oscillator shows that the equation $[\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}] = i\hbar e_t$ has no solution for Hermitian $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ in the finite-dimensional algebra. The position-space description is thus an extension of the framework — the algebra supplies the fiber and the phase, and the configuration space supplies the base. This is the same status that the position has in the hydrogen article, and the same gap that the path-integral article records for the space of paths.
 
 **The module is not the spin.** The two components of $\tilde{Ξ}^{\mathrm{sp}}$ are a kinematic doubling of the scalar amplitude. A spin-0 particle has one amplitude; the framework's module has two components because the algebra acts on a two-dimensional space. The reduction from the module to a single scalar is effected by fixing a constant spinor $\xi$, and the free dynamics does not distinguish the resulting one-component descriptions. This is why the free problem, and every problem with a central Hamiltonian treated in this subcategory, has a scalar read-off: the module is present but idle.
 
@@ -389,7 +389,7 @@ Two further structural points belong to this section.
 
 **What the biquaternion notation provides.**
 
-- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = h_t e_t \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{C}_{\mathbb{B}}$.
+- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = c r_t e_t \in \mathbb{C}_{\mathbb{B}}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{C}_{\mathbb{B}}$.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega t'))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
 - **A material-sector location for the dispersion.** The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$, and its biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.

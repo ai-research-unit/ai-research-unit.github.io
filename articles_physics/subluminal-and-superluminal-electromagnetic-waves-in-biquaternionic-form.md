@@ -105,7 +105,7 @@ Throughout, the time coordinate is written $t'$ — the source's $t$ — for the
 The source takes the Hertz potential to be the bivector $\pi=Ξ\,\vec e_z$; the factor $\vec e_z$ multiplies on the **left**, and $Ξ$ is a function of the phase $\omega\Omega t'$ alone, so it commutes with the bivector. The scalar part is separated as
 
 $$
-Ξ(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\exp(\omega\Omega t'),
+Ξ(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\exp(\omega\Omega t'),
 $$
 
 so that the wave equation becomes the Helmholtz equation $\nabla^2\xi+\Omega^2\xi=0$. The simplest solution is the spherical one $\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=C\,\sin(\Omega r)/r$, and the resulting stationary field $F_0$ is **regular at the origin** and **vanishes at infinity** — a localised field configuration at rest in the adapted frame. Written in the electric–magnetic split $F_0=\vec E_0+\omega\vec B_0$ it is
@@ -177,7 +177,7 @@ The connection with the subluminal family is that the free stationary field $F_0
 The same Hertz-potential device produces **superluminal** solutions. The scalar seed is taken from the family of **X-waves**,
 
 $$
-Ξ_{X_n}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(in\theta)\int_0^\infty B(k)\,J_n(k\rho\sin\theta^{\mathrm{axc}})\,\exp(-k[a_0-i(z\cos\theta^{\mathrm{axc}}-t')])\,dk,
+Ξ_{X_n}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(in\theta)\int_0^\infty B(k)\,J_n(k\rho\sin\theta^{\mathrm{axc}})\,\exp(-k[a_0-i(z\cos\theta^{\mathrm{axc}}-t')])\,dk,
 $$
 
 with $\theta^{\mathrm{axc}}$ the **axicon angle** and $J_n$ the Bessel function. With $B(k)=a_0$ the integral is elementary, and the source's closed form is

@@ -106,7 +106,7 @@ ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dt'\sum_i\frac{\partial c}{\partial x_i}\,
 + dx^2+dy^2+dz^2 ,
 $$
 
-with $i$ running over $x,y,z$ and with $c$ independent of $t'$; a time-dependent $c$ replaces $c$ by $c+t'\,\partial c/\partial t'$ in the $e_t$ coefficient and in $\det g$. The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t',x,y,z)$ — but it is **flat**. The map $(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(r_x^2+r_y^2+r_z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
+with $i$ running over $x,y,z$ and with $c$ independent of $t'$; a time-dependent $c$ replaces $c$ by $c+t'\,\partial c/\partial t'$ in the $e_t$ coefficient and in $\det g$. The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(r'_t,r_x,r_y,r_z)$ — but it is **flat**. The map $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(r_x^2+r_y^2+r_z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
 
 **Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial Q_t = -(i/c)\partial/\partial t'$ and the four-position is written with a single complex coordinate $i c r'_t$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(i c r'_t) = ic\,dt'$. Then
 
@@ -277,7 +277,7 @@ $$
 The four properties usually listed for the class are the single vanishing $N_{\tilde k}^2 = 0$, read in four places.
 
 - **The deformation is affine in $h$.** The quadratic term is $k_\mu k_\nu\langle\tilde k\rangle_\natural$ and it vanishes with the null condition, so the family is a straight line through the flat form $\delta_{\mu\nu}$ and not a nonlinear orbit. This is what makes the class an ansatz at all, and it is the null condition read at second order.
-- **The metric is unimodular.** $T$ is unipotent, $\det T = \exp(h\,\mathrm{tr}\,N_{\tilde k}) = 1$, hence $\det g = (\det T)^2\det\delta = \det\delta = 1$ in the components of the coordinate $Q_\mu$; in the real coordinates $(t',x,y,z)$ the same determinant reads $-1$, because the $i$ of $Q_t$ squares the time slot, and there $\sqrt{-\det g} = 1$, so the Laplace–Beltrami operator of the Dirac section loses its measure factor. Unimodularity is the tracelessness of $N_{\tilde k}$, which is the null condition read as a trace.
+- **The metric is unimodular.** $T$ is unipotent, $\det T = \exp(h\,\mathrm{tr}\,N_{\tilde k}) = 1$, hence $\det g = (\det T)^2\det\delta = \det\delta = 1$ in the components of the coordinate $Q_\mu$; in the real coordinates $(r'_t,r_x,r_y,r_z)$ the same determinant reads $-1$, because the $i$ of $Q_t$ squares the time slot, and there $\sqrt{-\det g} = 1$, so the Laplace–Beltrami operator of the Dirac section loses its measure factor. Unimodularity is the tracelessness of $N_{\tilde k}$, which is the null condition read as a trace.
 - **The inverse is the flat inverse with the sign of the correction reversed.** $T^{-1} = \exp(-hN_{\tilde k}) = \mathrm{id} - hN_{\tilde k}$, so the metric of the inverse frame is $\delta_{\mu\nu} - 2h\,k_\mu k_\nu$: the flat inverse array with the correction's sign reversed. The square, once more.
 - **The direction is fixed, and it stays null.** $N_{\tilde k}\tilde k = \tilde k\langle\tilde k\rangle_\natural = 0$, so $T\tilde k = \tilde k$: the shear does not move the null element at all. The norm $\langle\tilde k\rangle_\natural$ carries no frame, so $\tilde k$ is null for the deformed metric exactly as it was for the flat one. At the level of arrays, the inverse array sends $k_\mu$ to the same vector the flat array sends it to, because its correction is $-2h\,k_\mu$ times the vanishing scalar $\sum_\nu k_\nu^2$; nullity is what makes the two agree, not an approximation. That is why the congruence of a Kerr–Schild solution is carried into the curved metric unchanged.
 
@@ -383,7 +383,7 @@ The honest summary is that this is a different framework, not an extension of th
 
 The connection of the previous section was built for the material sector, where the field is a four-vector and the group acts by the two-sided rotor conjugation. The Dirac field is a different kind of object — an element $\tilde{Ξ}^{\mathrm{sp}}$ of $\mathbb{B}$, multiplied from the left by the group, not a four-vector acted on by rotor conjugation — and the difference in the kind of action is exactly what the curved Dirac equation turns on. This section writes that equation in the framework's own notation. It is the item the agenda below records as the curved-space form of the biquaternion Dirac equation.
 
-**Frame note.** The operator below is built from the material frame $\tilde E_\mu\in\mathbb{M}_-$ of Route Two, indexed by the physical coordinates $x_\mu=(t',x,y,z)$. The cell transcription uses the informational frame $F^{\mathrm{inf}}_\mu$, built from $e^{\mathrm{inf}}_0=e_t$ and $\vec e^{\mathrm{inf}}_k=i\vec e_k$. The two frames are related but not interchangeable: the time leg of the material frame is $ie_t$, the time leg of the informational frame is $e_t$, and only the informational frame has legs that contract with the four frame cells weighted by $e_{\mu a}$. The relation is stated in the Lorentz-gauging section, and the two flat limits are computed below.
+**Frame note.** The operator below is built from the material frame $\tilde E_\mu\in\mathbb{M}_-$ of Route Two, indexed by the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$. The cell transcription uses the informational frame $F^{\mathrm{inf}}_\mu$, built from $e^{\mathrm{inf}}_0=e_t$ and $\vec e^{\mathrm{inf}}_k=i\vec e_k$. The two frames are related but not interchangeable: the time leg of the material frame is $ie_t$, the time leg of the informational frame is $e_t$, and only the informational frame has legs that contract with the four frame cells weighted by $e_{\mu a}$. The relation is stated in the Lorentz-gauging section, and the two flat limits are computed below.
 
 ### The One-Sided Field Derivative
 
@@ -408,7 +408,7 @@ which is the inhomogeneous transformation expected of a connection on the field.
 
 ### The Curved Dirac Operator and the Equation
 
-The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(t',x,y,z)$, and in units with $c=1$, it is
+The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, and in units with $c=1$, it is
 $$
 \tilde\nabla = -i\,e_t\,\partial/\partial t' + \sum_k\,\vec e_k\,\partial/\partial x_k,
 $$
@@ -418,7 +418,7 @@ $$
 \qquad
 \tilde F_0=-ie_t,\qquad \tilde F_k=\vec e_k,
 $$
-with $g_{\mu\nu}$ the flat form, whose interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$. The curved object is
+with $g_{\mu\nu}$ the flat form, whose interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$. The curved object is
 
 $$
 \tilde F_\mu D_\mu,
@@ -686,7 +686,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$; in the material reading its interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$; in the material reading its interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$ | The general quaternionic bilinear form, the polar form of the norm, on $\mathbb{M}_-$; the interval |

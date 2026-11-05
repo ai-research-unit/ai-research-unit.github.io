@@ -308,19 +308,28 @@ $$
 
 and a reader who does not know the letters computes either half from that line.
 
-**The operator reading.** Quantum physics writes the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters are named $h_t, h_x, h_y, h_z$ in place of $r_t, r'_x, r'_y, r'_z$, and the element is
+<!-- retired notation, kept for reference -->
+**The operator reading is retired.** Earlier versions of this series wrote the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters were named $h_t, h_x, h_y, h_z$ in place of $c r_t, r'_x, r'_y, r'_z$, and the element was written
 
 $$
-H = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R},
+H = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R}.
 $$
 
-or, with the vector part assembled,
+That second name is gone. It was the licence to write one number two ways, and a pair of names for one number is a defect, not a notation. The element has one name on each side of the split: $\tilde R_\psi$ for the informational half and $\tilde R_\varphi$ for the material half. The parameters are the position letters,
 
 $$
-H = h_te_t + i\vec h , \qquad \vec h = h_x\vec e_x + h_y\vec e_y + h_z\vec e_z ,
+\tilde R_\psi = c r_t\,e_t + i\vec r_\psi, \qquad \vec r_\psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z ,
 $$
 
-with $h_t = c r_t$ and $h_k = r'_k$. **This bridge is the only one the series uses**, and it is written once, here. It equates numbers, not units: $c r_t$ is a length, so $h_t$ is a length as well, and it is read as an energy only when $\hbar$ is carried in the reading. In the articles that read it as one, the $\hbar$ sits in the exponent $\exp(-iHt'/\hbar)$ and not in the coefficient. This is the informational coordinate $c r_t\,e_t + i(r'_x\,\vec e_x+r'_y\,\vec e_y+r'_z\,\vec e_z)$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_tI_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. **The tilde is not carried**, because $H$ here is not a second element: it is $\tilde R_\psi$ read as an energy, and the letters $h_t$ and $\vec h$ are the reading of the parameters $c r_t$ and $\vec r_\psi$. A bare $h$ without a subscript remains the Planck constant.
+with $r'_t$ the material time and $r_t$ the informational one. Under the unit images of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $c r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The readable part of the old convention survives: the coefficient of $e_t$ is a length, $c r_t$, and it is read as an energy only when $\hbar$ is carried in the reading, in the exponent $\exp(-i\tilde R_\psi t'/\hbar)$ and not in the coefficient.
+
+**One abbreviation is allowed.** In an article that does evolution, $H$ may be written for $\tilde R_\psi$ in its energy reading, and it must be declared at first use as
+
+$$
+H := \tilde R_\psi, \qquad H = c r_t\,e_t + i\vec r_\psi ,
+$$
+
+with the $\hbar$ in the exponent and not in the coefficient. The tilde is not carried, because $H$ is not a second element. A bare $h$ without a subscript remains the Planck constant, and $\vec r_\psi$ stays distinct from the Bloch vector $\vec r$ of the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$.
 
 ## The Conjugations
 
@@ -455,7 +464,7 @@ The table lists the fields most often written as biquaternions. A scalar field i
 | Symbol | Name | Formula | Space | Meaning |
 |---|---|---|---|---|
 | $\tilde{Ϛ}$ | State (density) element | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | $\mathbb{M}_+$ | The state of the Bloch ball: Hermitian, positive, $2\,\mathrm{Sc}(\tilde{Ϛ})=1$, read in the $2\times2$ image as $\mathrm{Tr}(\tilde{Ϛ})=1$. The glyph is the upper-case stigma, U+03DA, because the majuscule of rho is the four-momentum $\tilde P$; the rho and varrho spellings are not used. Its matrix image $\mathsf{M}_2(\tilde{Ϛ})$ carries no tilde |
-| $H$ | General Hermitian observable | $h_te_t+ih_k\vec e_k$, $h_t,h_k\in\mathbb{R}$ | $\mathbb{M}_+$ | The Born pairing is $2\langle\tilde{Ϛ},H\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)$, read at normalisation in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$; the tilde belongs to this object only |
+| $\tilde R_\psi$ | General Hermitian observable | $c r_t\,e_t+i\vec r_\psi$, $r_t,r'_k\in\mathbb{R}$ | $\mathbb{M}_+$ | The Born pairing is $2\langle\tilde{Ϛ},e_t\rangle_{*}$-normalised at $2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$; $H$ is the same element under its energy reading and is declared where used |
 | $\tilde S$ | Spin operators | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | $\mathbb{M}_+$ | The vector slots of $\mathbb{M}_+$. The total of several angular momenta is $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$ or a sum of factor spins, never a bare $\tilde S$ |
 | $\tilde E$ | Effect of a measurement | $0\le\tilde E\le e_t$, $\tilde E\in\mathbb{M}_+$; $\tilde E_y=\tilde K_y^{*}\tilde K_y$ | $\mathbb{M}_+$ | The outcome of a POVM; a rank-one effect is the idempotent $\tilde\Pi$ |
 | $\tilde K_y,\tilde K_l,\tilde K_i,\tilde K_\epsilon,\tilde K_{1,2},\tilde K_0,\tilde K_1,\tilde K_2,\tilde K_k$ | Kraus operator | $\tilde E_y=\tilde K_y^{*}\tilde K_y$; $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$ | $\mathbb{B}$ | The Kraus operators of a channel or an instrument: each is an element of $\mathbb{B}$, multiplied on both sides of the state, not an array; its matrix image $\mathsf{M}_2(\tilde K_y)$ carries no tilde. The resolution is $\sum_y\tilde K_y^{*}\tilde K_y=e_t$, and the three rank-one articles write the single operator bare, $\tilde K=\tilde U$. The outcome label is an index, $y$, $l$, $i$, $\epsilon$ or a numbered pair; the count includes the two articles that label the outcomes $\epsilon$ and $(1,2)$ |

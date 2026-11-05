@@ -823,7 +823,7 @@ The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which 
 **Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
 
 - The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=i c r'_t$ and $Q_k=q_k$, so $Q_t^2=-(c r'_{t})^2$. Its metric is the unit metric, $(1,1,1,1)$ on the four $Q_\mu$, and every cell of this display squares to $+I_4$.
-- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=c r'_{t}$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is the same unit metric; the interval reads $-c^2t'^2+r_x^2+r_y^2+r_z^2$, and the plain weight of the cells is $(1,-1,-1,-1)$, which is not a metric.
+- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=c r'_{t}$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is the same unit metric; the interval reads $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and the plain weight of the cells is $(1,-1,-1,-1)$, which is not a metric.
 
 The five frame cells are the ones of §*The Clifford Structure* in the $\mathbb{M}_-$ frame, and their three spatial squares are $-I_4$ there. In the $\mathbb{B}$ frame the four cells that all square to $+I_4$ are
 $$

@@ -41,7 +41,7 @@ $$
 If the background is **homogeneous**, $\xi=\xi(t')$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
-\xi^{\mathrm{scl}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
+\xi^{\mathrm{scl}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t')\,\exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
 
 with the mode functions satisfying

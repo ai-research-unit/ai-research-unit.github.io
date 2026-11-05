@@ -357,7 +357,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ | Mass-shell operator, the inverse propagator; real central on real momenta |
 | $\mathcal{M}(\tilde P)=0\iff E_{\vec p}^2=\vec p^{\,2}+m^2$ | Mass shell, a biquaternion-norm level set |
 | $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*), with symbol $p^2$ on the material sector |
-| $i c r'_t$ | The time coefficient of the material reading; its square, $(i c r'_t)^2=-c^2t'^2$, supplies the one minus of the d'Alembertian on the time direction |
+| $i c r'_t$ | The time coefficient of the material reading; its square, $(i c r'_t)^2=-c^2{r'_{t}}^2$, supplies the one minus of the d'Alembertian on the time direction |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | The anti-Hermitian and Hermitian sectors (*Algebra and Element Conventions*); $\tilde{Ξ}_\pm$ are the two sector parts |
 | $\flat$ | The anti-Hermitian conjugation (*Algebra and Element Conventions*), antilinear |
 | $D_F(\tilde P)=1/(\mathcal{M}(\tilde P)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$ | Feynman propagator (momentum space) |

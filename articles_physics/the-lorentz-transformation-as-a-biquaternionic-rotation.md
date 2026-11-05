@@ -398,7 +398,7 @@ We are now in a position to discuss the subtleties of working over the complex n
 
 ### Real vs. Complex Rotations
 
-The Lorentz transformation is a **real** transformation of the real coordinates $(t', x, y, z)$. But in the $i c r'_t$ convention, the time coordinate is $i c r'_t$, which is **imaginary** in the real slice. So the transformation that acts on $(i c r'_t, x, y, z)$ is a **complex** rotation, even though the original transformation on $(t', x, y, z)$ is real.
+The Lorentz transformation is a **real** transformation of the real coordinates $(r'_t,r_x,r_y,r_z)$. But in the $i c r'_t$ convention, the time coordinate is $i c r'_t$, which is **imaginary** in the real slice. So the transformation that acts on $(i c r'_t, x, y, z)$ is a **complex** rotation, even though the original transformation on $(r'_t,r_x,r_y,r_z)$ is real.
 
 The complex nature of the rotation appears in the following places:
 

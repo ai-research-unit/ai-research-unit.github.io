@@ -147,7 +147,7 @@ On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(x,y,z)$ real. 
 $$
 B^2=r_x^2+r_y^2+r_z^2\ge0,
 \qquad
-N=-c^2t'^2+r_x^2+r_y^2+r_z^2 .
+N=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2 .
 $$
 
 The vector square is non-negative and vanishes exactly at the spatial origin. The material slice therefore meets the four cells as follows.
@@ -170,7 +170,7 @@ On $\mathbb{M}_+$ the coordinates are $Q_t=c r_t$ real and $\vec Q=i(r'_{x},r'_{
 $$
 B^2=-(r'_{x}^2+r'_{y}^2+r'_{z}^2)\le0,
 \qquad
-N=c^2t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2 .
+N=c^2 r_t^2-r'_{x}^2-r'_{y}^2-r'_{z}^2 .
 $$
 
 The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $r'_{x}=r'_{y}=r'_{z}=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.

@@ -40,7 +40,7 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=h_t+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
+| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=c r_t+\vec r\cdot\vec r_\psi$; sandwich update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $\langle d\tilde R_\varphi\rangle_{\natural}=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$; massless case $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}=0$ | Dirac equation, mass term |
@@ -269,7 +269,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
-| $\tilde R_\psi=h_te_t+i\vec h$ | Hermitian element (observable) |
+| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace reading of the Hermitian form (on which the Born rule is written) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

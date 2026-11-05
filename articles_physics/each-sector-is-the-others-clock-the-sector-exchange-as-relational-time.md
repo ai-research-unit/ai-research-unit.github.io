@@ -21,7 +21,7 @@ $$
 the anti-Hermitian material sector and the Hermitian informational sector. In coordinates,
 
 $$
-\tilde{Q}_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) \in \mathbb{M}_+,
+\tilde{Q}_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = c r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) \in \mathbb{M}_+,
 $$
 
 with $t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i c r'_t$ dictionary of *Algebra and Element Conventions*.
@@ -45,10 +45,10 @@ $$
 so $i\tilde{Q}_- \in \mathbb{M}_+$, and the same computation run backwards sends $\mathbb{M}_+$ to $\mathbb{M}_-$. In coordinates the exchange is
 
 $$
-i\bigl(i c r'_t\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) = -c r'_{t}\,e_t + i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(ct\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)\bigr) = ict\,e_t - (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_- .
+i\bigl(i c r'_t\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) = -c r'_{t}\,e_t + i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)\bigr) = i c r_t\,e_t - (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_- .
 $$
 
-Read on the coefficients, the material element $(t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(t = -t',\ (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ is carried to the material element $(t' = t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(t = -t',\ (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ is carried to the material element $(t' = t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
 \boxed{\;z \mapsto i z = -c r'_{t} + i\,ct\;}

@@ -189,7 +189,7 @@ An element $\tilde R_\psi\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian
 The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=h_t+\vec r\cdot\vec h ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\psi ,
 $$
 
 for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
@@ -198,7 +198,7 @@ The boundary is that the word *observable* uses the involution ${}^{*}$, which b
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde R_\psi=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\psi=i\vec r_\psi$ with $\vec r_\psi\in\mathbb R^3$, and its matrix is $\vec r_\psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
 
 $$
 [\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k

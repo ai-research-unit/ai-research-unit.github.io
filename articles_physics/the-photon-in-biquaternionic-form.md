@@ -24,7 +24,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 $$
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{i c r'_t\,e_t, \vec e_x, \vec e_y, \vec e_z\},
 \qquad
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{ct\,e_t, i r'_{x}\,\vec e_x, i r'_{y}\,\vec e_y, i r'_{z}\,\vec e_z\},
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{c r_t\,e_t, i r'_{x}\,\vec e_x, i r'_{y}\,\vec e_y, i r'_{z}\,\vec e_z\},
 $$
 
 with $t',r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i c r'_t$ and $Q_k=x_k$.
@@ -68,7 +68,7 @@ with $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma^{\mathrm{met
 The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=Q_te_t+\vec q$ with $Q_t=i c r'_t$ and $\vec q$ a real pure quaternion, its biquaternion norm is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = |\vec q|^2 - c^2t'^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = |\vec q|^2 - c^2{r'_{t}}^2 ,
 $$
 
 an indefinite quadratic form whose one minus is the square of the $i$ in $Q_t=i c r'_t$. The four directions are $e_t$ (the timelike direction, matching $\epsilon^{(0)}$, with the coefficient $Q_t=i c r'_t$) and $\vec e_x,\vec e_y,\vec e_z$ (the spatial directions, matching $\epsilon^{(1)},\epsilon^{(2)},\epsilon^{(3)}$). So:
@@ -237,7 +237,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Summary
 
-The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\sigma^{\mathrm{met}}$, with $\sigma^{\mathrm{met}}_0=-1$ and $\sigma^{\mathrm{met}}_k=+1$, is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=|\vec q|^2-c^2t'^2$ of that sector, its one minus the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon^{\mathrm{fop}(r)}_i\varepsilon^{\mathrm{fop}(r)}_j=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
+The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\sigma^{\mathrm{met}}$, with $\sigma^{\mathrm{met}}_0=-1$ and $\sigma^{\mathrm{met}}_k=+1$, is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=|\vec q|^2-c^2{r'_{t}}^2$ of that sector, its one minus the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon^{\mathrm{fop}(r)}_i\varepsilon^{\mathrm{fop}(r)}_j=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
 
 Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\varepsilon^{\mathrm{fop}}_\pm=\tfrac{1}{\sqrt2}(\varepsilon^{\mathrm{fop}}_1\pm i\varepsilon^{\mathrm{fop}}_2)$ are the eigenvectors of left multiplication by $\vec u_k$, with $\vec u_k\varepsilon^{\mathrm{fop}}_\pm=\mp i\varepsilon^{\mathrm{fop}}_\pm$. The helicity operator is $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}=i\,\mathrm{Vect}(\vec u_k\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\vec u_k$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\vec E+ic\vec B$ or on $\vec E-ic\vec B$, never both.
 
@@ -251,7 +251,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{i c r'_t\,e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{ct\,e_t,i r'_{x}\,\vec e_x,i r'_{y}\,\vec e_y,i r'_{z}\,\vec e_z\}$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{c r_t\,e_t,i r'_{x}\,\vec e_x,i r'_{y}\,\vec e_y,i r'_{z}\,\vec e_z\}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |

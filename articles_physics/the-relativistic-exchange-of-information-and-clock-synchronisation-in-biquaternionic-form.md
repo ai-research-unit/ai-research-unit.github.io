@@ -8,13 +8,13 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t'^{\mathrm{ret}} = t' - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t' + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t'^{\mathrm{ret}} = t' - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t' + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t'_2 = (t'_1+t'_3)/2$, and the distance is $L = c(t'_3-t'_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
-- **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t' = \gamma v_b\,\Delta x_2/c^2$.
+- **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$.
 - **A transported clock runs slow.** The interpretation of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dt' \le t'_B-t'_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
-- **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta t' \simeq 4\vec\Omega\cdot\vec A/c^2$, so synchronising around a closed loop in the two directions gives two different results.
+- **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta r'_t \simeq 4\vec\Omega\cdot\vec A/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
@@ -25,14 +25,14 @@ The exchange discussed here is the classical exchange of signals. It is not the 
 Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i c r'_{t}_A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i c r'_{t}_B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
 
 $$
-\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta t'\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
-\qquad \Delta t' = t'_B - t'_A, \quad \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z - (x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z),
+\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\qquad \Delta r'_t = t'_B - t'_A, \quad \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z - (x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z),
 $$
 
-with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\Delta t')^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
+with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\Delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
-\boxed{\;|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta t',
+\boxed{\;|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t,
 \qquad
 \langle\tilde{Q}_{BA}\rangle_{\natural} = 0\;}
 $$
@@ -42,10 +42,10 @@ $$
 Writing the propagation direction as the real unit vector $\vec u_{\mathrm s}$, the null condition becomes the vector equation
 
 $$
-\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s},
+\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s},
 $$
 
-the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\mathrm s}$ or along $-\vec u_{\mathrm s}$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\Delta t' > 0$ the displacement is future-directed.
+the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\mathrm s}$ or along $-\vec u_{\mathrm s}$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\Delta r'_t > 0$ the displacement is future-directed.
 
 ### Retarded and Advanced Coordinates
 
@@ -68,10 +68,10 @@ independent of $t'$, while $t'_{\mathrm{adv}}$ increases at rate $2$; and conver
 For a displacement whose spatial part is collinear with $\vec u_{\mathrm s}$ — which is the case for a signal along $\vec u_{\mathrm s}$ — the biquaternion norm factorizes in these coordinates:
 
 $$
-\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta t'^{\mathrm{ret}}\,\Delta t'_{\mathrm{adv}} .
+\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_t^{\mathrm{ret}}\,\Delta r'_t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta t'^{\mathrm{ret}} = 0$ or $\Delta t'_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta r'_t^{\mathrm{ret}} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega t' = -\omega\left(t' - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,t'^{\mathrm{ret}},
@@ -248,7 +248,7 @@ $$
 \tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
-of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta t'$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
+of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
 a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
@@ -258,17 +258,17 @@ $$
 
 the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
 
-Now apply this to two events that are simultaneous in $S_2$ and separated along the boost direction by $\Delta x_2$. Then $a_2 = c\,\Delta t'_2 = 0$ and $A_{2,\parallel} = \Delta x_2$, so
+Now apply this to two events that are simultaneous in $S_2$ and separated along the boost direction by $\Delta x_2$. Then $a_2 = c\,\Delta r'_t_2 = 0$ and $A_{2,\parallel} = \Delta x_2$, so
 
 $$
-\Delta t' = \frac{\gamma\,\beta\,\Delta x_2}{c} = \frac{\gamma\,v_b\,\Delta x_2}{c^2}.
+\Delta r'_t = \frac{\gamma\,\beta\,\Delta x_2}{c} = \frac{\gamma\,v_b\,\Delta x_2}{c^2}.
 $$
 
 The two events are not simultaneous in $S$: their time separation is proportional to their spatial separation in $S_2$. A direct rotor computation in the coefficient representation reproduces this value for $\beta = 0.3, 0.6, -0.8$ and both signs of $\Delta x_2$, so the sign convention of the boost is fixed consistently with the Doppler article. In SI units, two clocks one metre apart in a frame moving at $\beta = 0.6$ are desynchronised, as seen from the frame at rest, by $\gamma v_b/c^2 \cdot 1\,\mathrm{m} \approx 2.5\times10^{-9}\,\mathrm{s}$.
 
 ### What the Desynchronisation Means
 
-The relation $\Delta t' = \gamma v_b\,\Delta x_2/c^2$ is the quantitative form of the **relativity of simultaneity**. Its content is that the set of events that $S_2$ calls simultaneous — a surface of constant $t'_2$ — is tilted with respect to the surfaces of constant $t'$, by an amount proportional to the separation along the motion. A grid of clocks that $S_2$ has synchronised by the radar method is therefore not a grid of synchronised clocks as judged by $S$, and the two judgements differ by a term that is first order in $v_b/c$ and linear in the separation. This is the reason a boost cannot be a Galilean transformation, and the reason the composition of two non-collinear boosts carries a rotation; the latter belongs to the kinematics of the relativity series and is not developed here.
+The relation $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$ is the quantitative form of the **relativity of simultaneity**. Its content is that the set of events that $S_2$ calls simultaneous — a surface of constant $t'_2$ — is tilted with respect to the surfaces of constant $t'$, by an amount proportional to the separation along the motion. A grid of clocks that $S_2$ has synchronised by the radar method is therefore not a grid of synchronised clocks as judged by $S$, and the two judgements differ by a term that is first order in $v_b/c$ and linear in the separation. This is the reason a boost cannot be a Galilean transformation, and the reason the composition of two non-collinear boosts carries a rotation; the latter belongs to the kinematics of the relativity series and is not developed here.
 
 There is one invariant statement that survives the frame dependence: the round-trip time between two clocks is the same in every frame, and so is the proper time along a given worldline. The relativity of simultaneity is the price of converting these invariants into a global time coordinate, and the conversion is a convention. Once the convention is fixed by the radar rule in each frame, the two frames differ by exactly the desynchronisation computed above.
 
@@ -314,13 +314,13 @@ $$
 for the counter-rotating beam, and the difference is
 
 $$
-\Delta t' = t'_+ - t'_- = \frac{4\pi R^2\,\Omega}{c^2}\left(1 + O\!\left(\frac{\Omega^2R^2}{c^2}\right)\right)
+\Delta r'_t = t'_+ - t'_- = \frac{4\pi R^2\,\Omega}{c^2}\left(1 + O\!\left(\frac{\Omega^2R^2}{c^2}\right)\right)
 = \frac{4\,\vec\Omega\cdot\vec A}{c^2},
 $$
 
-where $\vec A = \pi R^2\,\vec u_{\mathrm s}$ is the vector area of the loop. For $R = 1\,\mathrm{m}$ and $\Omega = 1\,\mathrm{rad\,s^{-1}}$ direct evaluation gives $\Delta t' \approx 1.398\times10^{-16}\,\mathrm{s}$, corresponding to an optical phase $2\pi c\,\Delta t'/\lambda \approx 0.416\,\mathrm{rad}$ at $\lambda = 632.8\,\mathrm{nm}$; the first-order formula reproduces the exact round-trip difference to better than one part in $10^{7}$, the residual being floating-point cancellation in the difference of the two nearly equal times.
+where $\vec A = \pi R^2\,\vec u_{\mathrm s}$ is the vector area of the loop. For $R = 1\,\mathrm{m}$ and $\Omega = 1\,\mathrm{rad\,s^{-1}}$ direct evaluation gives $\Delta r'_t \approx 1.398\times10^{-16}\,\mathrm{s}$, corresponding to an optical phase $2\pi c\,\Delta r'_t/\lambda \approx 0.416\,\mathrm{rad}$ at $\lambda = 632.8\,\mathrm{nm}$; the first-order formula reproduces the exact round-trip difference to better than one part in $10^{7}$, the residual being floating-point cancellation in the difference of the two nearly equal times.
 
-The consequence for clock synchronisation is immediate. Take a ring of clocks around the loop and synchronise each neighbouring pair by the Einstein rule, going once around in one direction; then the closure of the chain disagrees with the initial clock by $\Delta t'$, and synchronising in the opposite direction gives the opposite disagreement. There is no assignment of clock readings that is Einstein-synchronised around both directions at once, so **Einstein synchronisation on a rotating platform is not transitive**. The exchange of information is perfectly well defined for every pair, and the round-trip times are measurable; what fails is the global conversion of the round-trip data into a single-valued time coordinate. On a rotating platform the failure is physical and not merely a convention, because the two directions are physically distinguishable by the interference of the two beams. The effect is the standard Sagnac effect, and its relativistic treatment is cited below.
+The consequence for clock synchronisation is immediate. Take a ring of clocks around the loop and synchronise each neighbouring pair by the Einstein rule, going once around in one direction; then the closure of the chain disagrees with the initial clock by $\Delta r'_t$, and synchronising in the opposite direction gives the opposite disagreement. There is no assignment of clock readings that is Einstein-synchronised around both directions at once, so **Einstein synchronisation on a rotating platform is not transitive**. The exchange of information is perfectly well defined for every pair, and the round-trip times are measurable; what fails is the global conversion of the round-trip data into a single-valued time coordinate. On a rotating platform the failure is physical and not merely a convention, because the two directions are physically distinguishable by the interference of the two beams. The effect is the standard Sagnac effect, and its relativistic treatment is cited below.
 
 The moral is the one the whole article has developed. An exchange of information requires only the null displacements, and they are local, directed, and always available inside the cone. A global common time requires in addition that the exchange be integrated into a single-valued coordinate, and that integration is a convention which can succeed globally only when the round-trip data are reciprocal. Inertially they are; on a rotating platform they are not.
 
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta t'$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded coordinate $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega t'^{\mathrm{ret}}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega t'^{\mathrm{ret}}$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt'$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
@@ -349,11 +349,11 @@ The exchange of information and the synchronisation of clocks are built from the
 
 4. **The k-factor.** The ratio of received to emitted intervals is $k = 1/[\gamma(1-\beta)] = \sqrt{(1+\beta)/(1-\beta)}$ for a receding pair, with reciprocal $k^{-1}$ for an approaching pair. The velocity is recovered as $\beta = (k^2-1)/(k^2+1)$, a round trip gives the factor $k^2$, and $k$-factors multiply: $k_{AC} = k_{AB}k_{BC}$, which reproduces the relativistic velocity-addition law.
 
-5. **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that two events simultaneous in the moving frame are separated in time in the rest frame by $\Delta t' = \gamma v_b\,\Delta x_2/c^2$. A synchronised grid in one frame is desynchronised in another.
+5. **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that two events simultaneous in the moving frame are separated in time in the rest frame by $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$. A synchronised grid in one frame is desynchronised in another.
 
 6. **Transport and the twin effect.** A transported clock reads $\Delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dt' \le t'_B-t'_A$, with equality only for a clock at rest. Between two timelike-separated events the inertial worldline maximizes the proper time. Slow transport agrees with Einstein synchronisation in the limit of vanishing transport speed.
 
-7. **Non-transitivity on a rotating platform.** The Sagnac round-trip difference is $\Delta t' = 4\vec\Omega\cdot\vec A/c^2$ to first order, so Einstein synchronisation is not transitive around a closed loop and no single-valued global time exists on the rotating platform, although every individual exchange remains well defined.
+7. **Non-transitivity on a rotating platform.** The Sagnac round-trip difference is $\Delta r'_t = 4\vec\Omega\cdot\vec A/c^2$ to first order, so Einstein synchronisation is not transitive around a closed loop and no single-valued global time exists on the rotating platform, although every individual exchange remains well defined.
 
 ## Summary of Notation
 
@@ -380,9 +380,9 @@ The exchange of information and the synchronisation of clocks are built from the
 | $t'_1,t'_2,t'_3$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $t'_2=t'_1+\varepsilon(t'_3-t'_1)$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |
-| $\Delta t' = \gamma v_b\,\Delta x_2/c^2$ | Desynchronisation of a moving frame |
+| $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$ | Desynchronisation of a moving frame |
 | $\vec\Omega$, $\vec A$ | Angular velocity and vector area of a rotating loop |
-| $\Delta t' = 4\vec\Omega\cdot\vec A/c^2$ | Sagnac round-trip difference (first order) |
+| $\Delta r'_t = 4\vec\Omega\cdot\vec A/c^2$ | Sagnac round-trip difference (first order) |
 
 ## Further Reading
 

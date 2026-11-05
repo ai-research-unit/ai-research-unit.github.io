@@ -298,13 +298,13 @@ The companion articles express quantum physics in the biquaternion algebra $\mat
 
 **The observables.** In the framework the observables of a two-state system are the Hermitian elements
 $$
-\tilde R_\psi = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R}, \quad \vec h=(h_x,h_y,h_z)\in\mathbb{R}^3,
+\tilde R_\psi = c r_t\,e_t + i\,\vec r_\psi, \qquad c r_t\in\mathbb{R}, \quad \vec r_\psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3,
 $$
-of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde{R}_{\psi,1}=h_{1t}e_t+i\vec h_1$ and $\tilde{R}_{\psi,2}=h_{2t}e_t+i\vec h_2$, their **commutator** is
+of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$, their **commutator** is
 $$
-\boxed{\;[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}] = -2\,(\vec h_1\times\vec h_2)\;},
+\boxed{\;[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}] = -2\,(\vec r_{\psi,1}\times\vec r_{\psi,2})\;},
 $$
-a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $h_{1t}e_t$ and $h_{2t}e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\hbar$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
+a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\hbar$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
 
 **The angular-momentum resemblance, made exact.** The spin observables are the Hermitian elements
 $$
@@ -316,7 +316,7 @@ $$
 \qquad\text{so}\qquad
 \frac{1}{i\hbar}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
 $$
-which is term for term the operator image of the classical bracket $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec h_1\times\vec h_2)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
@@ -344,7 +344,7 @@ $$
 $$
 so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
-In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec h_1\times\vec h_2)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
+In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
 
 ## Summary of Notation
 
@@ -368,14 +368,14 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $e_t,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_k^2=-e_t$); scalar imaginary ($i^2=-1$) |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (observables) and anti-Hermitian (generators) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde R_\psi=h_te_t+i\vec h$ | Hermitian observable |
-| $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec h_1\times\vec h_2)$ | Biquaternion commutator ($\hbar$-free) |
+| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | Hermitian observable |
+| $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ | Biquaternion commutator ($\hbar$-free) |
 | $\tilde S_k=(\hbar/2)i\vec e_k$ | Spin-$\tfrac12$ observables |
 | $\mathrm{Tr}(\tilde Q\tilde R_\psi)=2\,\mathrm{Sc}(\tilde Q\tilde R_\psi)$ | Trace formula |
 
 ## Further Reading
 
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec h_1\times\vec h_2)$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
 - [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the proof that $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.

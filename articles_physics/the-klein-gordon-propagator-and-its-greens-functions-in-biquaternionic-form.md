@@ -147,7 +147,7 @@ which is the frequency-space form of the time-ordered two-point function: the tw
 Assembling the frequency integral with the spatial measure gives the retarded kernel in position space,
 
 $$
-G_R(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+G_R(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\mathrm{H}^{\mathrm{hvs}}(t')\int\frac{d^3p}{(2\pi)^3}\,
 \frac{\sin(\Omega_{\vec p}t')}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
@@ -452,7 +452,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\langle\tilde P\rangle_{\natural}=-\mu^2$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\mathrm{H}^{\mathrm{hvs}}(t'),\mathrm{sgn}(t')$ | Heaviside step and sign functions |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2t'^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

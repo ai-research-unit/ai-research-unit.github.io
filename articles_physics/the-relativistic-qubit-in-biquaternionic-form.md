@@ -39,7 +39,7 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde R_\psi = h_t e_t + i\vec h$ the Born pairing is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ}) = h_t + \vec r\cdot\vec h$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
+and for a Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ the Born pairing is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})/\mathrm{Sc}(\tilde{Ϛ}) = c r_t + \vec r\cdot\vec r_\psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
 ### Why the carrier is forced
 
@@ -263,7 +263,7 @@ The frame dependence of everything that follows enters through the momentum argu
 
 ## Observables, Generators, and the Two Sectors
 
-**Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\psi = h_te_t + i\vec h$, with the spin operators
+**Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$, with the spin operators
 $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k , \qquad [\tilde{S}_j,\tilde{S}_k] = i\hbar\,\epsilon_{jkl}\tilde{S}_l ,
 $$

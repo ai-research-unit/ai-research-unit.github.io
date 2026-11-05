@@ -49,7 +49,7 @@ $$
 \boxed{\;T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}}{2m}e_t\;}.
 $$
 
-The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde R_\psi\rangle_{\natural}=h_t^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
+The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde R_\psi\rangle_{\natural}=c^2 r_t^2-|\vec r_\psi|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
 
 ### The potential
 
@@ -68,10 +68,10 @@ Adding the two terms,
 $$
 \boxed{\;H = T+\tilde{Ξ}
 = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t
-= h_t\,e_t, \qquad h_t = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\;}.
+= c r_t\,e_t, \qquad c r_t = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\;}.
 $$
 
-The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\vec h=0$ in the general form $\tilde R_\psi=h_te_t+i\vec h$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
+The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\vec r_\psi=0$ in the general form $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
 
 The generator of the Schrödinger equation is
 
@@ -87,7 +87,7 @@ and it lies along the time-like direction $ie_t$ of the material sector, as the 
 The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here. A position-space treatment requires a spinor **field**,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
 $$
 
 a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the **argument** of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.
@@ -220,7 +220,7 @@ a spinor field whose orbital factor is the familiar exponential and whose spin f
 
 ## Correspondence with the Standard Solution
 
-Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}^{\mathrm{sp}}$ is a two-component column, the central Hamiltonian acts as $h_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
+Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}^{\mathrm{sp}}$ is a two-component column, the central Hamiltonian acts as $c r_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
@@ -290,7 +290,7 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{M}_+$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\hbar^2\nabla^2e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
-H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t = h_te_t \in \mathbb{M}_+,
+H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t = c r_t\,e_t \in \mathbb{M}_+,
 \qquad
 -\frac{i}{\hbar}H = i\left(\frac{\hbar}{2m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{M}_- .
 $$
@@ -320,7 +320,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde p=-i\hbar\nabla=\sum_k \vec e_k p_k$, $p_k=-i\hbar\partial/\partial Q_k$ | Momentum, Hermitian, in $\mathbb{M}_+$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
-| $H=h_te_t$, $h_t=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |
+| $H=c r_t\,e_t$, $c r_t=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |
 | $-iH/\hbar\in\mathbb{M}_-$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\hbar^2/(m\kappa)$ | Bohr radius |

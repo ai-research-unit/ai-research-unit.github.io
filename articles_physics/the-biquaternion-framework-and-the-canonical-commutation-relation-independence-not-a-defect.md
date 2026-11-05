@@ -41,7 +41,7 @@ In the framework the obstruction is immediate and is worth stating in its own no
 
 **Theorem.** There are no $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{R}_{\psi,1}=h_{1t}e_t+i\vec h_1$ and $\tilde{R}_{\psi,2}=h_{2t}e_t+i\vec h_2$ with $h_{1t},h_{2t}\in\mathbb{R}$ and $\vec h_1,\vec h_2\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$; the cross terms contribute the symmetric $\vec h_1\cdot\vec h_2$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\psi,1},\vec r_{\psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$; the cross terms contribute the symmetric $\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]\bigr)=0\;}.
 $$
@@ -192,7 +192,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{R}_{\psi,1}=h_{1t}e_t+i\vec h_1$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$ |
+| $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |

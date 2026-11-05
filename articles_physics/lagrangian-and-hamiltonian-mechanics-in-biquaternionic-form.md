@@ -313,7 +313,7 @@ so that the two vector parts separate as configuration and momentum while the tw
 The phase-space biquaternion $\tilde Q_3=\tilde q+i\tilde p$ packages the **configuration** with the **momentum**. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the **four-Hamiltonian**
 
 $$
-\Pi = \left[H(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\pi)\,;\,-i\vec\pi(t',r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right],
+\Pi = \left[H(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\pi)\,;\,-i\vec\pi(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right],
 $$
 
 a bireal — that is, Hermitian — biquaternion whose scalar part is the Hamiltonian and whose vector part carries the canonical momentum. For $n$ point particles in a time-independent external field it is assembled from the four-momenta and the potential,

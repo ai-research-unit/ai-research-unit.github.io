@@ -153,7 +153,7 @@ The real part of $B$ is half the difference of the damping rates, in the order $
 | case | element | eigenvalues | interpretation of $B$ |
 | --- | --- | --- | --- |
 | material four-momentum | $i\frac{E}{c}e_t+\vec p$ | $i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)$ | $B=\lvert\vec p\rvert$: the momentum magnitude; the pair is the Doppler pair |
-| Hermitian observable | $h_t+i\vec h$ | $h_t\mp\lvert\vec h\rvert$ | $B=i\lvert\vec h\rvert$: the half-gap is $\lvert\vec h\rvert$ |
+| Hermitian observable | $c r_t+i\vec r_\psi$ | $c r_t\mp\lvert\vec r_\psi\rvert$ | $B=i\lvert\vec r_\psi\rvert$: the half-gap is $\lvert\vec r_\psi\rvert$ |
 | normal, real $B$ | $\vec Q$ real, $B$ real | $Q_t\pm iB$ | real half-gap; the damping sits in $Q_t$ |
 | normal, complex $B$ | $\vec Q$ a complex multiple of a real vector, $B$ complex | complex | complex half-gap; orthogonal modes, growing norm |
 | non-normal | $\vec Q$ not a complex multiple of a real vector | real or complex | biorthogonal modes; non-normality alone does not force growth |
@@ -194,7 +194,7 @@ is the biquaternion Fourier kernel of *Biquaternion Continuous Harmonic Analysis
 
 **Which sector carries it.** The construction follows $B^2$ and not $N$: it is available on $\Sigma_{11}$ and on $\Sigma_{01}$, the massless zero divisors included, and unavailable on $\Sigma_{10}$ and $\Sigma_{00}$ except on the scalar line, where every basis is an eigenbasis but none is attached to the element. A massless momentum has the real root $\vec p/\lvert\vec p\rvert$ and a $*$-unitary Fourier character even though it is a zero divisor.
 
-**Which character is $*$-unitary.** The kernel is $*$-unitary for the natural conjugation for every pure root, $\rho^{\natural}=-\rho$. The positive Hermitian form — the form the Born rule uses — is more restrictive: the character is $*$-unitary for it exactly when $\rho^{*}=-\rho$, which for a pure root means that $\rho$ is real (*The Bochner Theorem for the Biquaternion Transform*, §*Unitarity of the Character and the Root*). For $\rho=\vec Q/B$ this is equivalent to the normality of the vector part: $\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel. The material vector part is real and the Hermitian vector part is purely imaginary, so both physical sectors are normal. The two sectors differ in the sign of $B^2$: for the material element $B$ is real and the flow oscillates, while for the Hermitian element $B=i\lvert\vec h\rvert$ is imaginary and the flow is a boost. A non-normal $\vec Q$ gives a non-real root and a non-$*$-unitary character, hence the biorthogonal modes of *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*; it does not by itself give damping. The unitarity criterion of the character is normality, not Hermiticity: it holds on both physical sectors and fails on a non-normal element. The unitarity of the flow is stronger: it is the material sector alone, $\tilde Q^*=-\tilde Q$. The self-adjoint flow is the Hermitian sector, $\tilde Q^*=\tilde Q$, and it is normal. Normality implies neither unitarity nor self-adjointness, and it does not make the norm constant.
+**Which character is $*$-unitary.** The kernel is $*$-unitary for the natural conjugation for every pure root, $\rho^{\natural}=-\rho$. The positive Hermitian form — the form the Born rule uses — is more restrictive: the character is $*$-unitary for it exactly when $\rho^{*}=-\rho$, which for a pure root means that $\rho$ is real (*The Bochner Theorem for the Biquaternion Transform*, §*Unitarity of the Character and the Root*). For $\rho=\vec Q/B$ this is equivalent to the normality of the vector part: $\operatorname{Re}\vec Q$ and $\operatorname{Im}\vec Q$ are parallel. The material vector part is real and the Hermitian vector part is purely imaginary, so both physical sectors are normal. The two sectors differ in the sign of $B^2$: for the material element $B$ is real and the flow oscillates, while for the Hermitian element $B=i\lvert\vec r_\psi\rvert$ is imaginary and the flow is a boost. A non-normal $\vec Q$ gives a non-real root and a non-$*$-unitary character, hence the biorthogonal modes of *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*; it does not by itself give damping. The unitarity criterion of the character is normality, not Hermiticity: it holds on both physical sectors and fails on a non-normal element. The unitarity of the flow is stronger: it is the material sector alone, $\tilde Q^*=-\tilde Q$. The self-adjoint flow is the Hermitian sector, $\tilde Q^*=\tilde Q$, and it is normal. Normality implies neither unitarity nor self-adjointness, and it does not make the norm constant.
 
 **Boundary.** The flow parameter $\theta$ is not a physical time, and $B$ is the rate relative to the chosen root, not the Fourier variable of a signal. The transform is a change of description and not a measurement. The algebra supplies the kernel and the rate; it does not supply the dynamics, the signal or the clock.
 
@@ -369,14 +369,14 @@ The real part is a dilation, the imaginary part a phase. Both are central: they 
 $$
 \tilde X=i c r'_te_t,
 \qquad
-\langle\tilde X\rangle_{\natural}=-c^2t'^2.
+\langle\tilde X\rangle_{\natural}=-c^2{r'_{t}}^2.
 $$
 
 The element is a purely temporal displacement: a worldline with no spatial part. The four-velocity of a particle at rest is the same kind of element, $ic\,e_t$. The physical interpretation is **time only**: a clock reading with no direction in space, and no spatial momentum. For a four-momentum it is the rest frame, because $B^2=\lvert\vec p\rvert^2$ vanishes exactly at $\vec p=0$; for a general material element it is the whole time axis.
 
 **Boundary.** A rest frame exists only for a massive particle; the algebra gives the interval, not the mass. The scalar $i c r'_t$ is a displacement, not a duration measured by a particular clock; the identification of $t'$ with a physical time is the material-sector dictionary, not a consequence of the spectrum.
 
-**Interpretation 3: the trivial observable and the maximally mixed state.** In the informational sector a Hermitian scalar $h_te_t$ is a multiple of the identity. Every state is an eigenstate with the same outcome $h_t$, and no measurement basis is selected. The trace-one scalar $\tfrac12e_t$ is the maximally mixed state; the scalar line is where the Bloch vector vanishes.
+**Interpretation 3: the trivial observable and the maximally mixed state.** In the informational sector a Hermitian scalar $c r_t\,e_t$ is a multiple of the identity. Every state is an eigenstate with the same outcome $c r_t$, and no measurement basis is selected. The trace-one scalar $\tfrac12e_t$ is the maximally mixed state; the scalar line is where the Bloch vector vanishes.
 
 **Boundary.** The observable interpretation and the state interpretation are two identifications of the same central element, not one derivation of the other. The spectrum alone says *central*; it does not say *observable* or *state*. The state interpretation belongs to *The Informational Sector: States, Observables and Probability*.
 
@@ -450,7 +450,7 @@ The element is a unit. It has the repeated eigenvalue $Q_t$, the minimal polynom
 
 **Interpretation 2: two coalesced modes with locked hands.** In the matrix model the element has one eigenline and one generalised eigenvector; the two modes have the same complex frequency and are coupled one way. The physical interpretation is a **clock with locked hands**: the two hands have the same rate and cannot be separated, because the second is not an eigenvector. The Petermann factor of the pair diverges as the coalescence is approached, which is the quantitative form of the locking.
 
-**Boundary.** The interpretation needs a non-Hermitian description. No Hermitian element and no real-vector element lies on the stratum: for a Hermitian $H$, $B^2=-\lvert\vec h\rvert^2$ vanishes only at $\vec h=0$, which is the scalar line; for a real vector part, $B^2=\lvert\vec Q\rvert^2$ vanishes only at $\vec Q=0$. The stratum is complex.
+**Boundary.** The interpretation needs a non-Hermitian description. No Hermitian element and no real-vector element lies on the stratum: for a Hermitian $H$, $B^2=-\lvert\vec r_\psi\rvert^2$ vanishes only at $\vec r_\psi=0$, which is the scalar line; for a real vector part, $B^2=\lvert\vec Q\rvert^2$ vanishes only at $\vec Q=0$. The stratum is complex.
 
 **Interpretation 3: reversible but not normal.** The element is a unit, so its action can be undone; it is not diagonalisable, so it has no orthogonal eigenbasis. The physical interpretation is a **reversible process with no normal mode basis**: the inverse exists, and it is defective too, $Q_t^{-1}(e_t-\vec\Upsilon)$. Reversibility is not diagonalisability.
 

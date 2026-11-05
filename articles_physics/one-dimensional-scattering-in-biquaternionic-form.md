@@ -25,7 +25,7 @@ For a particle of mass $m$ in a real potential $V(x)$, the stationary equation i
 $$
 H\,\tilde{Ξ}^{\mathrm{sp}} = E\,\tilde{Ξ}^{\mathrm{sp}},
 \qquad
-H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = h_t(x)\,e_t,
+H = \left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2} + V(x)\right]e_t = c r_t(x)\,e_t,
 $$
 
 with $\tilde{Ξ}^{\mathrm{sp}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation

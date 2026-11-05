@@ -474,7 +474,7 @@ $$
 
 so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial t'\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
-*Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $h_tI_2+\vec h\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_te_t+i\vec h\in\mathbb M_+$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
+*Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $c r_t\,I_2+\vec r_\psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $c r_t\,e_t+i\vec r_\psi\in\mathbb M_+$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
 
 | Term of $H$ | Biquaternion representative | Sector |
 |---|---|---|

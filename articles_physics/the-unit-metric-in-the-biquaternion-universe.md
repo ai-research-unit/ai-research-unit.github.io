@@ -112,7 +112,7 @@ This is the Minkowski interval. The minus is $i^2=-1$: it appears at the squarin
 With $Q_t=c r_t$ and $Q_k=i r'_{x_k}$,
 
 $$
-\bigl\langle\tilde Q_+\bigr\rangle_\natural=c^2t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2 .
+\bigl\langle\tilde Q_+\bigr\rangle_\natural=c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2 .
 $$
 
 One positive direction and three negative, $(1,3)$. The mirror of the material case: the $i$ has moved from the temporal slot to the three spatial ones, and the three minuses have moved with it.
@@ -126,7 +126,7 @@ On $\mathbb{B}$ the four coefficients are complex and the value of the norm is c
 | $\mathbb{B}$ | $Q_\mu\in\mathbb{C}$ | complex in general | none until a sector is imposed |
 | $\mathbb{H}_{\mathbb{B}}$ | $q_\mu\in\mathbb{R}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ |
 | $\mathbb{M}_-$ | $Q_t=i c r'_t$, $Q_k=x_k$ | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
-| $\mathbb{M}_+$ | $Q_t=c r_t$, $Q_k=i r'_{x_k}$ | $c^2t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
+| $\mathbb{M}_+$ | $Q_t=c r_t$, $Q_k=i r'_{x_k}$ | $c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
 
 **The metric did not move.** In all four rows the coefficient tuple is $\delta_{\mu\nu}=(1,1,1,1)$; the column that changes is the coordinate. So the answer to the question *how does a metric of $1,1,1,1$ give $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$* is: it gives the four coefficients $+1$, and the sign is delivered by the coordinate. The metric does its work as a coefficient, and the $i$ does the rest.
 
@@ -259,7 +259,7 @@ There is one metric in the series, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, 
 
 The order of the two objects is inverted with respect to the textbook. The interval is a norm, a product of the element with its own conjugate, and the metric is read off afterwards. That removes an input and, with it, the freedom to mistype one.
 
-The Lorentzian interval follows from the same metric, with the sign delivered by the coordinate rather than by the metric. With $Q_t=i c r'_t$ the norm is $(i c r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: the minus is the square of the $i$ in the coordinate, the real form has signature $(3,1)$, and the coefficient tuple is still $\delta_{\mu\nu}$. The informational reading gives the mirror, $c^2t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$, with signature $(1,3)$, from the same metric and a different coordinate.
+The Lorentzian interval follows from the same metric, with the sign delivered by the coordinate rather than by the metric. With $Q_t=i c r'_t$ the norm is $(i c r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: the minus is the square of the $i$ in the coordinate, the real form has signature $(3,1)$, and the coefficient tuple is still $\delta_{\mu\nu}$. The informational reading gives the mirror, $c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$, with signature $(1,3)$, from the same metric and a different coordinate.
 
 The alternative is stated and refused. Absorbing the $i$ into a metric on the material sector gives $g=\mathrm{diag}(-1,1,1,1)$, which is $-\varepsilon$, and it recovers the Clifford metric after $\gamma\mapsto i\gamma$. It is equivalent, and it is the textbooks' language. It is refused because it relocates the $i$ into an object instead of removing it, because it makes a frame carry a metric again, because it replaces one substitution by a congruence law, because it brings back the index machinery, because it makes the minus un-auditable, because it removes the anchor of the material reading, and because it opens the door to a mixed text whose symptom is a time term of $+c^2{r'_{t}}^2$.
 
@@ -278,7 +278,7 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $i c r'_t$ 
 | $Q_t=i c r'_t$, $Q_k=x_k$ | The material coordinate; the source of the minus of the interval |
 | $Q_t=c r_t$, $Q_k=i r'_{x_k}$ | The informational coordinate; the $i$ on the three space slots |
 | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | The material interval, signature $(3,1)$ |
-| $c^2t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | The informational interval, signature $(1,3)$ |
+| $c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | The informational interval, signature $(1,3)$ |
 | $g=\mathrm{diag}(-1,1,1,1)$ | The absorbed metric of the rejected alternative; equal to $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | The Clifford map of the series; $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$ |
 | $\gamma'_\mu=i\gamma_\mu$ | The generators that give $+2g_{\mu\nu}$; the $i$ inside the array |
@@ -288,7 +288,7 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $i c r'_t$ 
 
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover), for the interval and the union of space and time.
 - Paul A. M. Dirac, *The Principles of Quantum Mechanics*, 4th edition (Oxford, 1958), for the gamma algebra in the form the textbooks inherited.
-- Charles W. Misner, Kip S. Thorne, John A. Wheeler, *Gravitation* (Freeman, 1973), §2.3 and §3.1, for the metric as the leading object and for the fate of the $ict$ convention.
+- Charles W. Misner, Kip S. Thorne, John A. Wheeler, *Gravitation* (Freeman, 1973), §2.3 and §3.1, for the metric as the leading object and for the fate of the $i c r_t$ convention.
 - David Hestenes, *Space-Time Algebra*, 2nd edition (Birkhäuser, 2015), for the school that puts the signature into the frame and the generators rather than into a coefficient, the nearest systematic contrast to the choice made here.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 11 and 18, for the complex structure of spacetime and the place of the metric among the structures.
 - The corpus articles cited above: [Frame and Metric Conventions](frame-and-metric-conventions.html), [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), [Why Complexify Spacetime?](why-complexify-spacetime.html), [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), [Product and Form Conventions](product-and-form-conventions.html), [Unit, Index and Notation Conventions](unit-index-and-notation-conventions.html), [Matrix Representations Conventions](matrix-representations-conventions.html), and [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the conventions, the frames, the sector readings and the curved case.
