@@ -85,11 +85,11 @@ $$
 \tilde P \to \tilde P - ϙ\tilde A, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
 $$
 
-with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $D$ of *Operator and Calculus Conventions* and its conjugate $\bar D$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation
+with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $D$ of *Operator and Calculus Conventions* and its conjugate $D^{\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation
 
 $$
 D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
-\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+D^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
 and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.

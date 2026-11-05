@@ -83,6 +83,8 @@ Both are additive subgroups, and $\ell(a)$ is a left ideal while $r(a)$ is a rig
 
 **Proof.** For invertibility, if $L_a$ is bijective then $a = L_a(1)$ has a left inverse by surjectivity and is not a zero divisor by injectivity, hence is a unit; conversely $L_aL_{a^{-1}} = L_{aa^{-1}} = L_1 = \mathrm{id}$. The right case is identical.
 
+**Remark (the zero-divisor criterion as the singularity of the multiplication operator).** The definition of a zero divisor is a definition with a witness — a nonzero $z$ killed by a nonzero partner $w$ — so it is exactly the statement that $\ker L_z \neq 0$, and the criterion of the corollary is the singular character of $L_z$ read on the operator. The operator reading also names the side, which the bare word does not: $z$ is a left zero divisor exactly when $\ker L_z \neq 0$ and a right zero divisor exactly when $\ker R_z \neq 0$. In finite dimension a nonzero kernel and the failure of invertibility are the same thing, so there a zero divisor is exactly an element whose multiplication operator is singular; the two criteria separate in infinite dimension, where $L_z$ may be injective without being surjective, as the diagonal operator $\operatorname{diag}(1/2, 1/3, \dots)$ of *Centre, Units, Zero Divisors and Division Algebras* shows.
+
 ### The endomorphisms of the regular module
 
 The two families are the two natural actions of $A$ and of its opposite on the additive group $A$, and the $A$-linear maps are exactly one of them.

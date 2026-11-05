@@ -20,9 +20,9 @@ $$
 
 The commutator is a derivation of a *noncommutative* algebra, with the same formal Leibniz rule $[f,g h] = [f,g]h + g[f,h]$. The two derivations can share their structure constants and still not be the same structure, because a derivation is a derivation *of* an algebra, and the algebras differ in the one property that matters here: whether products commute.
 
-Second, **the map that is supposed to relate them is not a homomorphism for products**. Writing $\widehat{\phantom{f}}$ for a quantization map, one has $\widehat f\,\widehat g \neq \widehat{fg}$ in general. The two properties that would make the correspondence an isomorphism — products to products, brackets to brackets — are mutually inconsistent. The classical algebra is commutative and the quantum algebra is not, so no product-preserving map can send $\{q,p\}=1$ to $[q,p]=i\hbar$. What survives in place of an isomorphism is a **deformation**: the operator product is the classical product corrected by a series in $\hbar$ whose first term is the Poisson bracket itself, and the residual mismatch appears at order $\hbar^2$.
+Second, **the map that is supposed to relate them is not a homomorphism for products**. Writing $\operatorname{weyl}$ for a quantization map, one has $\operatorname{weyl}(f)\,\operatorname{weyl}(g) \neq \operatorname{weyl}(fg)$ in general. The two properties that would make the correspondence an isomorphism — products to products, brackets to brackets — are mutually inconsistent. The classical algebra is commutative and the quantum algebra is not, so no product-preserving map can send $\{q,p\}=1$ to $[q,p]=i\hbar$. What survives in place of an isomorphism is a **deformation**: the operator product is the classical product corrected by a series in $\hbar$ whose first term is the Poisson bracket itself, and the residual mismatch appears at order $\hbar^2$.
 
-The article verifies the correspondence on two independent pairs of observables — the canonical pair, and the components of angular momentum — and checks the normalization and the sign explicitly, since the sign of a bracket is the classic error. It then exhibits the failure on an explicit pair of cubic observables, states the $\hbar\to0$ limit carefully, and closes by locating the resemblance inside the biquaternion framework of the companion articles. That last location is a restricted one: the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is finite-dimensional, and it carries the angular-momentum bracket but not the canonical one.
+The article verifies the correspondence on two independent pairs of observables — the canonical pair, and the components of angular momentum — and checks the normalization and the sign explicitly, since the sign of a bracket is the classic error. It then exhibits the failure twice: in the square of a single angular-momentum component, where the bracket correspondence is still exact and only the product fails, and in an explicit pair of cubic observables, where the bracket itself fails. It states the $\hbar\to0$ limit carefully, and closes by locating the resemblance inside the biquaternion framework of the companion articles. That last location is a restricted one: the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is finite-dimensional, and it carries the angular-momentum bracket but not the canonical one.
 
 ## The Classical Bracket
 
@@ -78,7 +78,7 @@ $$
 
 Two features of this display must be read correctly before anything is computed from it.
 
-First, the two sides are **objects of different kinds**: the left side is an operator and the right side is a function on phase space. The arrow is therefore not an equality of elements but a statement about a **quantization map** $f\mapsto\widehat f$. Whether such a map can be chosen to make the statement exact is the question of the article, and the answer is that it cannot, except in a limiting sense.
+First, the two sides are **objects of different kinds**: the left side is an operator and the right side is a function on phase space. The arrow is therefore not an equality of elements but a statement about a **quantization map** $f\mapsto\operatorname{weyl}(f)$. Whether such a map can be chosen to make the statement exact is the question of the article, and the answer is that it cannot, except in a limiting sense.
 
 Second, the normalization is not free. The factor $1/(i\hbar)$ — with the $i$ *in the denominator*, equivalently $-i/\hbar$ — is what makes the canonical pair come out with the standard sign. This is checked in the next section.
 
@@ -114,7 +114,7 @@ $$
 So if one associated $\{f,g\}$ with $(1/i\hbar)[g,f]$ instead — the opposite order — the canonical bracket would come out as $-\delta_{ij}$ and the correspondence would carry the wrong sign throughout. The overall sign of the correspondence is thus a genuine convention, and the convention that agrees with the textbook Poisson bracket is the one with $+1$ on $\{q_i,p_j\}$ and the commutator $[q_i,p_j]$ in the same order. Written as an operator identity for the canonical pair, the correspondence reads
 
 $$
-[q_i,p_j] = i\hbar\,\widehat{\{q_i,p_j\}},
+[q_i,p_j] = i\hbar\,\operatorname{weyl}(\{q_i,p_j\}),
 $$
 
 which is the form in which the $i\hbar$ and the order are both manifest.
@@ -175,7 +175,7 @@ It is worth stating exactly what the two successful checks establish, because th
 
 **The correspondence is exact for quadratic observables.** For the Weyl quantization used below, the difference between the Moyal bracket and the Poisson bracket begins at order $\hbar^2$ and involves third derivatives of the observables. Consequently, **if either argument is at most quadratic in the canonical variables, all corrections vanish and the two brackets agree exactly**:
 $$
-f \text{ or } g \text{ at most quadratic} \quad\Longrightarrow\quad \frac{1}{i\hbar}[f,g] = \widehat{\{f,g\}}.
+f \text{ or } g \text{ at most quadratic} \quad\Longrightarrow\quad \frac{1}{i\hbar}[f,g] = \operatorname{weyl}(\{f,g\}).
 $$
 This single statement covers both checks of the previous sections: the canonical pair is linear, and the angular-momentum components are quadratic. It also explains why the correspondence looked like an isomorphism: the examples one reaches for first are exactly the examples on which it is one.
 
@@ -185,25 +185,25 @@ This single statement covers both checks of the previous sections: the canonical
 
 Everything that goes wrong is already contained in one question: does the correspondence respect **products**? The Poisson bracket is built from a commutative product, and its Leibniz rule is a statement about that product. The quantum bracket is built from a noncommutative product. A correspondence that preserved products would have to send commuting classical observables to commuting operators, which is impossible.
 
-**The obstruction.** Suppose a quantization map $\widehat{\phantom{f}}$ satisfied $\widehat{fg}=\widehat f\,\widehat g$ for all observables. Since classical multiplication is commutative, $\widehat{fg}=\widehat{gf}$, hence $\widehat f\,\widehat g=\widehat g\,\widehat f$ for all $f,g$. In particular $[q,p]=0$. But the correspondence requires $[q,p]=i\hbar\widehat{\{q,p\}}=i\hbar\neq0$. Therefore no product-preserving map can implement the correspondence: **the homomorphism property and the bracket correspondence are mutually exclusive.** The failure is not a defect of a particular quantization scheme; it is forced by the commutativity of the classical algebra.
+**The obstruction.** Suppose a quantization map $\operatorname{weyl}$ satisfied $\operatorname{weyl}(fg)=\operatorname{weyl}(f)\,\operatorname{weyl}(g)$ for all observables. Since classical multiplication is commutative, $\operatorname{weyl}(fg)=\operatorname{weyl}(gf)$, hence $\operatorname{weyl}(f)\,\operatorname{weyl}(g)=\operatorname{weyl}(g)\,\operatorname{weyl}(f)$ for all $f,g$. In particular $[q,p]=0$. But the correspondence requires $[q,p]=i\hbar\operatorname{weyl}(\{q,p\})=i\hbar\neq0$. Therefore no product-preserving map can implement the correspondence: **the homomorphism property and the bracket correspondence are mutually exclusive.** The failure is not a defect of a particular quantization scheme; it is forced by the commutativity of the classical algebra.
 
 **A concrete instance.** The classical observable $qp$ is real, so its quantum image must be Hermitian. The symmetric (Weyl) image is
 $$
-\widehat{qp} = \tfrac12\left(q p+pq\right) = q p - \tfrac{i\hbar}{2},
+\operatorname{weyl}(qp) = \tfrac12\left(q p+pq\right) = q p - \tfrac{i\hbar}{2},
 $$
-using $[q,p]=i\hbar$, i.e. $pq=q p-i\hbar$. But the product of the images is $\widehat q\,\widehat p=q p$. Hence
+using $[q,p]=i\hbar$, i.e. $pq=q p-i\hbar$. But the product of the images is $\operatorname{weyl}(q)\,\operatorname{weyl}(p)=q p$. Hence
 $$
-\widehat q\,\widehat p-\widehat{qp} = \tfrac{i\hbar}{2}\neq0.
+\operatorname{weyl}(q)\,\operatorname{weyl}(p)-\operatorname{weyl}(qp) = \tfrac{i\hbar}{2}\neq0.
 $$
 The mismatch is exactly the order-$\hbar$ term. It appears because the commutative product $xp$ carries no ordering, while the operator product does; the quantization must symmetrize to keep the image Hermitian, and symmetrization is not multiplication.
 
 **The general expansion.** For the Weyl map the failure has a uniform form:
 $$
-\widehat f\,\widehat g = \widehat{fg} + \frac{i\hbar}{2}\,\widehat{\{f,g\}} + O(\hbar^2).
+\operatorname{weyl}(f)\,\operatorname{weyl}(g) = \operatorname{weyl}(fg) + \frac{i\hbar}{2}\,\operatorname{weyl}(\{f,g\}) + O(\hbar^2).
 $$
 The leading correction to the product is the Poisson bracket itself. This is the precise sense in which the bracket is a derived object: it *measures* the failure of the quantum product to be commutative. It is not an additional structure imposed on top of the product, and it is not independent of it.
 
-**Why the derivation property does not transfer.** The commutator satisfies $[f,g h]=[f,g]h+g[f,h]$, which is the Leibniz rule for a derivation of the *operator* algebra. To read this as the quantum image of the classical Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$ one has to replace the products $g h$ and $\widehat{gh}$ by each other — that is, one has to use the homomorphism property, which is exactly what fails. So Leibniz survives as a formal identity in each theory, and fails as a statement about the correspondence between them. The derivation structure is not what is being matched; only the induced Lie bracket is.
+**Why the derivation property does not transfer.** The commutator satisfies $[f,g h]=[f,g]h+g[f,h]$, which is the Leibniz rule for a derivation of the *operator* algebra. To read this as the quantum image of the classical Leibniz rule $\{f,gh\}=\{f,g\}h+g\{f,h\}$ one has to replace the products $g h$ and $\operatorname{weyl}(gh)$ by each other — that is, one has to use the homomorphism property, which is exactly what fails. So Leibniz survives as a formal identity in each theory, and fails as a statement about the correspondence between them. The derivation structure is not what is being matched; only the induced Lie bracket is.
 
 **Concrete products of the canonical pair.** The same failure shows up when the classical Leibniz rule is applied to a degree-two example. Classically,
 $$
@@ -213,7 +213,7 @@ and the operator bracket is
 $$
 \frac{1}{i\hbar}[q^2,p^2] = 2\left(q p+pq\right).
 $$
-The right side is the Weyl image of $4qp$, since $\widehat{4qp}=4\cdot\tfrac12(q p+pq)$. It is *not* $4q p$: the naive product exceeds the Weyl image by $2i\hbar$. The correspondence is repaired only by the symmetrization, and the symmetrization is precisely the acknowledgement that the map is not a homomorphism.
+The right side is the Weyl image of $4qp$, since $\operatorname{weyl}(4qp)=4\cdot\tfrac12(q p+pq)$. It is *not* $4q p$: the naive product exceeds the Weyl image by $2i\hbar$. The correspondence is repaired only by the symmetrization, and the symmetrization is precisely the acknowledgement that the map is not a homomorphism.
 
 ## Where It Breaks: Deformation and the Order-$\hbar^2$ Term
 
@@ -257,6 +257,16 @@ $$
 $$
 Here the correction is not a constant but the phase-space function $-24\hbar^2 qp$, again of order $\hbar^2$. The pattern is the same, and it was checked on a different pair from the one that suggested it: the first correction in the Moyal bracket is $O(\hbar^2)$, is built from third derivatives of the observables, and is therefore invisible exactly when one of them is at most quadratic.
 
+**The failure already sits at a lower degree than these examples.** The exactness stated for quadratic observables concerns the bracket and not the symbol, and composing two quadratic observables shows the difference. The symbol of the square of a single component is its star square,
+$$
+L_z^{\mathrm{orb}}\star L_z^{\mathrm{orb}} = \big(L_z^{\mathrm{orb}}\big)^2 + \tfrac{i\hbar}{2}\{L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\} - \tfrac{\hbar^2}{8}\Lambda^2\big(L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\big) = \big(L_z^{\mathrm{orb}}\big)^2 - \tfrac{\hbar^2}{2},
+$$
+The first-order term vanishes because $\{L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\}=0$. The series stops at the second order because each application of $\Lambda$ differentiates each slot once and a quadratic survives only two. The second-order coefficient is $-\tfrac{\hbar^2}{8}$, and $\Lambda^2(L_z^{\mathrm{orb}},L_z^{\mathrm{orb}})=4$, so the term is $-\tfrac{\hbar^2}{2}$. Summing the three components,
+$$
+\sum_i\big(\operatorname{weyl}(L_i^{\mathrm{orb}})\big)^2 = \operatorname{weyl}(L^2) - \tfrac{3}{2}\hbar^2 ,
+$$
+where the subtracted term is the constant $\tfrac32\hbar^2$ times the identity operator and $L^2=\sum_i(L_i^{\mathrm{orb}})^2$. The sum of the three operator squares is therefore not the Weyl image of the classical $L^2$; it is that image shifted by $-\tfrac32\hbar^2$. No bracket sees the shift, because a constant has zero Poisson bracket with everything: $\{L^2-\tfrac32\hbar^2,\cdot\}=\{L^2,\cdot\}$. The shift is invisible to the two exact checks above and to every other bracket, and it is visible only in the product of two images. That is the article's thesis in its smallest instance: on quadratic observables the bracket correspondence holds, and the product correspondence already fails. Groenewold's theorem excludes an exact bracket correspondence over all polynomials; this offset shows that even where the correspondence holds, the product does not follow the bracket.
+
 **What the deformation is and is not.** The star product is an associative product on the same vector space of functions, deforming the pointwise product. The passage
 $$
 \text{commutative pointwise product} \;\longrightarrow\; \text{star product}
@@ -269,9 +279,9 @@ The phrase "$\hbar\to0$" needs care, because $\hbar$ is a dimensionful constant 
 
 **The limit of the normalized bracket.** In the position representation $p_j=-i\hbar\partial/\partial q_j$ depends on $\hbar$, so the operators $f$ do too. The commutator is of order $\hbar$, and the normalized quantity $(1/i\hbar)[f,g]$ has a finite limit in the following sense: for polynomial observables and Weyl quantization,
 $$
-\boxed{\;\lim_{\hbar\to0}\operatorname{symb}\!\left(\frac{1}{i\hbar}[f,g]\right) = \{f,g\}\;},
+\boxed{\;\lim_{\hbar\to0}\operatorname{weyl}^{-1}\!\left(\frac{1}{i\hbar}[f,g]\right) = \{f,g\}\;},
 $$
-where $\operatorname{symb}$ denotes the Weyl symbol, and the approach is controlled by the Moyal bracket: the error is $O(\hbar^2)$. So the Poisson bracket is the leading term of the deformation, and the correspondence becomes exact as a statement about leading terms.
+where $\operatorname{weyl}^{-1}$ is the Weyl symbol, read off the operator, and the approach is controlled by the Moyal bracket: the error is $O(\hbar^2)$. So the Poisson bracket is the leading term of the deformation, and the correspondence becomes exact as a statement about leading terms.
 
 **Why the limit is formal.** What "$\hbar\to0$" means is an expansion in the dimensionless ratio (typical action)$/\hbar$, not a physical process in which a constant of nature is varied. The perturbative terms are the powers of that ratio. The limit is therefore asymptotic in character: it says that a quantum bracket is a classical bracket plus a series, not that classical mechanics is a regime in which the series' later terms are absent.
 
@@ -324,11 +334,15 @@ $$
 $$
 is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=i\hbar\delta_{ij}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ against $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\hbar\epsilon_{ijk}L_k^{\mathrm{orb}}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
 
-It is **not an isomorphism**, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\widehat q\,\widehat p-\widehat{qp}=i\hbar/2$, and in general $\widehat f\,\widehat g=\widehat{fg}+(i\hbar/2)\widehat{\{f,g\}}+O(\hbar^2)$. What replaces the isomorphism is a **deformation**: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
+It is **not an isomorphism**, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\operatorname{weyl}(q)\,\operatorname{weyl}(p)-\operatorname{weyl}(qp)=i\hbar/2$, and in general $\operatorname{weyl}(f)\,\operatorname{weyl}(g)=\operatorname{weyl}(fg)+(i\hbar/2)\operatorname{weyl}(\{f,g\})+O(\hbar^2)$. What replaces the isomorphism is a **deformation**: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
 $$
 \{\{f,g\}\} = \{f,g\} + O(\hbar^2).
 $$
-The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
+The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The product fails one degree earlier than the bracket: the two checks that came out exact are checks of brackets between quadratic observables, and the square of a single component carries the offset
+$$
+\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big)\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big) = \operatorname{weyl}\Big(\big(L_z^{\mathrm{orb}}\big)^2\Big) - \tfrac{\hbar^2}{2},
+$$
+so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
 In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde H_1,\tilde H_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
 
@@ -343,7 +357,7 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $\delta_{ij}, \epsilon_{ijk}$ | Kronecker delta; Levi-Civita symbol |
 | $L_i^{\mathrm{orb}}=\epsilon_{ijk}q_jp_k$ | Orbital angular momentum components |
 | $q_i, p_j=-i\hbar\partial/\partial q_j$ | Position and momentum operators |
-| $\widehat{\phantom{f}}$ | Quantization map (Weyl ordering) |
+| $\operatorname{weyl}(f)$ | Quantization map (Weyl ordering) |
 | $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Classical angular-momentum Poisson algebra |
 | $\star$ | Star product (deformation of the pointwise product) |
 | $\{\{f,g\}\}=(1/i\hbar)(f\star g-g\star f)$ | Moyal bracket |

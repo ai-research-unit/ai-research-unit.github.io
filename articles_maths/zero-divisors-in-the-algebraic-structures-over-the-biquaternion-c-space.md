@@ -36,6 +36,14 @@ $$
 
 So an element is a unit exactly when it lies off the cone, and a zero divisor exactly when it lies on the cone and not at the apex. The cone is the complement of the group of units, and the zero-divisor set together with the origin is that complement read as the cone.
 
+**Remark (the criterion is the singularity of the multiplication operator).** The defining equation is one with a witness, $\tilde Q_1\tilde Q_2=0$ with $\tilde Q_2\neq0$, so the zero divisors of the plain product are exactly the elements whose left multiplication $L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ has a nonzero kernel, that kernel being the left annihilator (*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). Finite dimension makes the kernel criterion and the invertibility criterion coincide, and the operator carries the norm of the element in its determinant: $L(\tilde Q_1)=\mathrm I_2\otimes\mathsf M_2(\tilde Q_1)$ with $\det\mathsf M_2(\tilde Q_1)=\mathrm{Norm}(\tilde Q_1)$ (*$M_2(\mathbb{C})$ Pauli Representation*), hence
+
+$$
+\det L_{\tilde Q_1}=\mathrm{Norm}(\tilde Q_1)^{2},
+$$
+
+the square because the regular matrix is the repetition $\mathrm I_2\otimes\mathsf M_2(\tilde Q_1)$, so each eigenvalue of the block is counted once for each Peirce plane. The cone is thus the zero set of the determinant of the multiplication operator, and the singularity there is exact rather than generic: $\mathrm{Norm}(\tilde Q_1)=0$ exactly when $L_{\tilde Q_1}$ is not invertible.
+
 ## The Twelve Structures and the Cone
 
 The four general products split into the twelve structures through the class-preserving exchange (*Symmetric and Antisymmetric Decomposition of the Four General Products*). A zero divisor names its product, so each of the twelve carries a zero-divisor set of its own; the table of §*Results* records them, one family to a block and, inside a block, the general structure first, the product written by its defining formula.
