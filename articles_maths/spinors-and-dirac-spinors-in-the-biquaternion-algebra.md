@@ -65,7 +65,7 @@ $$
 =\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u ,
 $$
 
-and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\alpha}{2}+\vec u\sin\tfrac{\alpha}{2}$ turns a vector through $+\alpha$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), and that is the multiplier above at $\alpha=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*).
+and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\theta}{2}+\vec u\sin\tfrac{\theta}{2}$ turns a vector through $+\theta$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), and that is the multiplier above at $\theta=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*).
 
 **Coordinates.** In the carrier $S_+(\vec u)$ an element is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair of complex numbers, a coordinate vector $(d_0;d_1)$ on the carrier. The number is two because the spin is $\tfrac12$; it is not a free choice of the model.
 
@@ -126,13 +126,13 @@ The two parts are stable under every left multiplication, and only a right one m
 
 *Proof.* $S_\pm(\vec u)$ are left ideals, and a left multiplication preserves a left ideal by the definition.
 
-**Proposition (what a right multiplier does to the axis).** Let $\vec v=\cos\alpha\,\vec u+\sin\alpha\,\vec n$ with $\vec n$ a unit real vector perpendicular to $\vec u$. Then right multiplication by $i\vec v$ carries $S_+(\vec u)$ onto $S_+(\vec w)$ with
+**Proposition (what a right multiplier does to the axis).** Let $\vec v=\cos\theta\,\vec u+\sin\theta\,\vec n$ with $\vec n$ a unit real vector perpendicular to $\vec u$. Then right multiplication by $i\vec v$ carries $S_+(\vec u)$ onto $S_+(\vec w)$ with
 
 $$
-\vec w=\cos2\alpha\,\vec u+\sin2\alpha\,\vec n,
+\vec w=\cos2\theta\,\vec u+\sin2\theta\,\vec n,
 $$
 
-so it preserves the part at $\alpha=0$, exchanges the two parts at $\alpha=\tfrac{\pi}{2}$, where $\vec w=-\vec u$ and $S_+(-\vec u)=S_-(\vec u)$, and otherwise carries it to a carrier at a different axis, which is a third carrier beside the two at $\vec u$. The same holds with $S_+$ replaced by $S_-$.
+so it preserves the part at $\theta=0$, exchanges the two parts at $\theta=\tfrac{\pi}{2}$, where $\vec w=-\vec u$ and $S_+(-\vec u)=S_-(\vec u)$, and otherwise carries it to a carrier at a different axis, which is a third carrier beside the two at $\vec u$. The same holds with $S_+$ replaced by $S_-$.
 
 *Proof.* Put $q=\tilde\Pi_+(\vec u)i\vec v$, which is nonzero and of rank one, so $\mathbb{B}q$ is a minimal left ideal; it equals $S_+(\vec w)$ exactly when $q\in S_+(\vec w)$, because one minimal left ideal that meets another is that other. A carrier has the description
 
@@ -144,11 +144,11 @@ the $+1$ eigenspace of $R(i\vec w)$, which in the matrix model is the set of arr
 
 $$
 \mathsf{M}_2(q)=\mathsf{M}_2\bigl(\tfrac12(i\vec v-\vec e_z\vec v)\bigr)
-=\tfrac12\bigl(\cos\alpha\,(I_2+\sigma_3)+\sin\alpha\,(\sigma_1+i\sigma_2)\bigr)
-=\begin{pmatrix}\cos\alpha & \sin\alpha\\ 0 & 0\end{pmatrix},
+=\tfrac12\bigl(\cos\theta\,(I_2+\sigma_3)+\sin\theta\,(\sigma_1+i\sigma_2)\bigr)
+=\begin{pmatrix}\cos\theta & \sin\theta\\ 0 & 0\end{pmatrix},
 $$
 
-whose rows lie in the line at angle $\alpha$ from the first coordinate axis. The $+1$ eigenline of $\vec w\cdot\vec\sigma$ is the spinor line at half the angle of $\vec w$, so the line at angle $\alpha$ belongs to $\vec w$ at angle $2\alpha$, that is $\vec w=\cos2\alpha\,\vec e_z+\sin2\alpha\,\vec e_x$; the identity $q\,i\vec w=q$ confirms it, and with it $q\in S_+(\vec w)$. The general pair $(\vec u,\vec n)$ is carried to this frame by a left multiplication with a unit, which maps carriers onto carriers and conjugates a right multiplier into a right multiplier. The special values follow by substitution, and $S_+(-\vec u)=S_-(\vec u)$ because $\tilde\Pi_+(-\vec u)=\tilde\Pi_-(\vec u)$.
+whose rows lie in the line at angle $\theta$ from the first coordinate axis. The $+1$ eigenline of $\vec w\cdot\vec\sigma$ is the spinor line at half the angle of $\vec w$, so the line at angle $\theta$ belongs to $\vec w$ at angle $2\theta$, that is $\vec w=\cos2\theta\,\vec e_z+\sin2\theta\,\vec e_x$; the identity $q\,i\vec w=q$ confirms it, and with it $q\in S_+(\vec w)$. The general pair $(\vec u,\vec n)$ is carried to this frame by a left multiplication with a unit, which maps carriers onto carriers and conjugates a right multiplier into a right multiplier. The special values follow by substitution, and $S_+(-\vec u)=S_-(\vec u)$ because $\tilde\Pi_+(-\vec u)=\tilde\Pi_-(\vec u)$.
 
 **Proposition (the exchange is unique up to a scalar).** Let $\vec v$ and $\vec v'$ be unit real vectors perpendicular to $\vec u$. Then $R(i\vec v)$ and $R(i\vec v')$ agree on the whole of $S_+(\vec u)$ up to one nonzero complex scalar, and the same holds on $S_-(\vec u)$. Consequently the space of left-linear maps from one part to the other is a complex line.
 

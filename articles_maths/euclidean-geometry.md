@@ -101,13 +101,13 @@ $$
 a^2 + b^2 = (m + n)c = c^2 .
 $$
 
-**Theorem (law of cosines).** In a triangle with sides $a, b, c$ and the angle $\gamma$ between the sides $a$ and $b$,
+**Theorem (law of cosines).** In a triangle with sides $a, b, c$ and the angle $\theta$ between the sides $a$ and $b$,
 
 $$
-\boxed{\;c^2 = a^2 + b^2 - 2ab\cos\gamma\;} .
+\boxed{\;c^2 = a^2 + b^2 - 2ab\cos\theta\;} .
 $$
 
-For $\gamma = \pi/2$ this is Pythagoras, and the law is the synthetic statement of the polarisation identity for the inner product. In the analytic language it is the immediate computation $|x - y|^2 = |x|^2 + |y|^2 - 2\langle x, y\rangle$ with $\langle x, y\rangle = ab\cos\gamma$.
+For $\theta = \pi/2$ this is Pythagoras, and the law is the synthetic statement of the polarisation identity for the inner product. In the analytic language it is the immediate computation $|x - y|^2 = |x|^2 + |y|^2 - 2\langle x, y\rangle$ with $\langle x, y\rangle = ab\cos\gamma$.
 
 **Theorem (Thales).** An angle inscribed in a semicircle is a right angle: if $A, B$ are the ends of a diameter of a circle and $C$ a point on the circle, then the angle at $C$ between $CA$ and $CB$ is a right angle.
 

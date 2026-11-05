@@ -57,7 +57,7 @@ $$
 
 is a surjective continuous group homomorphism from $(\mathbb{R}, +)$ onto $\mathrm{U}(1)$ with kernel $2\pi\mathbb{Z}$. Hence $\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ as topological groups.
 
-**Proof.** Since $\exp(i(\theta+\varphi)) = \exp(i\theta) \exp(i\varphi)$, it is a homomorphism. Every unit is $\exp(i\phi)$ for some $\phi$ modulo $2\pi$, so it is surjective, and $\exp(i\theta) = 1$ exactly when $\theta \in 2\pi\mathbb{Z}$. The first isomorphism theorem for topological groups gives the quotient.
+**Proof.** Since $\exp(i(\theta+\varphi)) = \exp(i\theta) \exp(i\varphi)$, it is a homomorphism. Every unit is $\exp(i\theta)$ for some $\theta$ modulo $2\pi$, so it is surjective, and $\exp(i\theta) = 1$ exactly when $\theta \in 2\pi\mathbb{Z}$. The first isomorphism theorem for topological groups gives the quotient.
 
 The parameter $\theta$ is the **angle** of the unit $u = \exp(i\theta)$. It is defined modulo $2\pi$; no continuous single-valued function $\mathrm{U}(1) \to \mathbb{R}$ selects it, and the multivalued argument is discussed below.
 
@@ -142,17 +142,17 @@ $$
 S_u(S_u(Q)) = u\overline{u\bar Q} = u\bar u Q = |u|^2 Q = Q,
 $$
 
-so $S_u$ is an involution. For the determinant, write $u = \exp(2i\alpha)$; then $S_u$ sends $1$ to $\exp(2i\alpha)$ and $i$ to $\exp(2i\alpha)(-i) = -\exp(2i\alpha) i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$.
+so $S_u$ is an involution. For the determinant, write $u = \exp(2i\theta^{\mathrm{lna}})$; then $S_u$ sends $1$ to $\exp(2i\theta^{\mathrm{lna}})$ and $i$ to $\exp(2i\theta^{\mathrm{lna}})(-i) = -\exp(2i\theta^{\mathrm{lna}}) i$, so on the real basis $\{1, i\}$ it acts by the linear map of determinant $-\lvert u\rvert^2 = -1$.
 
-**Theorem (fixed line).** Write $u = \exp(2i\alpha)$. The fixed-point set of $S_u$ is the line through the origin of direction $\exp(i\alpha)$:
+**Theorem (fixed line).** Write $u = \exp(2i\theta^{\mathrm{lna}})$. The fixed-point set of $S_u$ is the line through the origin of direction $\exp(i\theta^{\mathrm{lna}})$:
 
 $$
-\{Q \in \mathbb{C} : S_u(Q) = Q\} = \{t \exp(i\alpha) : t \in \mathbb{R}\}.
+\{Q \in \mathbb{C} : S_u(Q) = Q\} = \{t \exp(i\theta^{\mathrm{lna}}) : t \in \mathbb{R}\}.
 $$
 
-**Proof.** The equation $u\bar Q = Q$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar Q = \bar u Q$. Write $Q = r\exp(i\phi)$ with $r \ge 0$; then $\exp(-i\phi) = \exp(-2i\alpha) \exp(i\phi)$, that is, $\exp(2i\phi) = \exp(2i\alpha)$, so $\phi \equiv \alpha \pmod \pi$. Conversely every $Q = t\exp(i\alpha)$ with $t$ real satisfies $u\bar Q = \exp(2i\alpha)t \exp(-i\alpha) = t \exp(i\alpha) = Q$.
+**Proof.** The equation $u\bar Q = Q$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar Q = \bar u Q$. Write $Q = r\exp(i\theta)$ with $r \ge 0$; then $\exp(-i\theta) = \exp(-2i\theta^{\mathrm{lna}}) \exp(i\theta)$, that is, $\exp(2i\theta) = \exp(2i\theta^{\mathrm{lna}})$, so $\theta \equiv \theta^{\mathrm{lna}} \pmod \pi$. Conversely every $Q = t\exp(i\theta^{\mathrm{lna}})$ with $t$ real satisfies $u\bar Q = \exp(2i\theta^{\mathrm{lna}})t \exp(-i\theta^{\mathrm{lna}}) = t \exp(i\theta^{\mathrm{lna}}) = Q$.
 
-Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\alpha$, where $u = \exp(2i\alpha)$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $\exp(i(\alpha + \pi/2))$ it acts as $-1$, since $S_u(\exp(i(\alpha+\pi/2))) = \exp(2i\alpha) \exp(-i(\alpha+\pi/2)) = \exp(i(\alpha - \pi/2)) = -\exp(i(\alpha+\pi/2))$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
+Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\theta^{\mathrm{lna}}$, where $u = \exp(2i\theta^{\mathrm{lna}})$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $\exp(i(\theta^{\mathrm{lna}} + \pi/2))$ it acts as $-1$, since $S_u(\exp(i(\theta^{\mathrm{lna}}+\pi/2))) = \exp(2i\theta^{\mathrm{lna}}) \exp(-i(\theta^{\mathrm{lna}}+\pi/2)) = \exp(i(\theta^{\mathrm{lna}} - \pi/2)) = -\exp(i(\theta^{\mathrm{lna}}+\pi/2))$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
 
 **Example.** For $u = 1$ the reflection $S_1(Q) = \bar Q$ is complex conjugation, with fixed line the real axis. For $u = -1$ the reflection $S_{-1}(Q) = -\bar Q$ has fixed line the imaginary axis. The first is the nontrivial field automorphism of $\mathbb{C}$; the second is its composition with the rotation by $\pi$, and it is not a field automorphism, since it sends $1$ to $-1$.
 
@@ -197,17 +197,17 @@ $$
 S_u(S_v(Q)) = u\overline{v\bar Q} = u\bar v Q = R_{u\bar v}(Q).
 $$
 
-**Corollary (the angle).** Let $S_u$ be the reflection in the line at angle $\alpha$ and $S_v$ the reflection in the line at angle $\beta$, so that $u = \exp(2i\alpha)$ and $v = \exp(2i\beta)$. Then
+**Corollary (the angle).** Let $S_u$ be the reflection in the line at angle $\theta^{\mathrm{lna}}$ and $S_v$ the reflection in the line at angle $\theta^{\mathrm{lnb}}$, so that $u = \exp(2i\theta^{\mathrm{lna}})$ and $v = \exp(2i\theta^{\mathrm{lnb}})$. Then
 
 $$
-S_u \circ S_v = R_{\exp(2i(\alpha - \beta))},
+S_u \circ S_v = R_{\exp(2i(\theta^{\mathrm{lna}} - \theta^{\mathrm{lnb}}))},
 $$
 
-the rotation through the angle $2(\alpha - \beta)$.
+the rotation through the angle $2(\theta^{\mathrm{lna}} - \theta^{\mathrm{lnb}})$.
 
-**Proof.** $u \bar v = \exp(2i\alpha) \exp(-2i\beta) = \exp(2i(\alpha-\beta))$.
+**Proof.** $u \bar v = \exp(2i\theta^{\mathrm{lna}}) \exp(-2i\theta^{\mathrm{lnb}}) = \exp(2i(\theta^{\mathrm{lna}}-\theta^{\mathrm{lnb}}))$.
 
-Two reflections in lines meeting at angle $\phi = \alpha - \beta$ therefore compose to a rotation through $2\phi$, twice the angle between the lines. When the lines coincide, $\phi = 0$ and the composition is the identity, consistent with $S_u^2 = \mathrm{id}$.
+Two reflections in lines meeting at angle $\theta = \theta^{\mathrm{lna}} - \theta^{\mathrm{lnb}}$ therefore compose to a rotation through $2\theta$, twice the angle between the lines. When the lines coincide, $\theta = 0$ and the composition is the identity, consistent with $S_u^2 = \mathrm{id}$.
 
 **Theorem (Cartan–Dieudonné, dimension two).** Every element of $O(2)$ is a composition of at most two reflections: a reflection is already such a composition, and a rotation is
 
@@ -356,7 +356,7 @@ The unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ is a compact 
 
 Multiplication by a unit, $R_u(Q) = uQ$, is an $\mathbb{R}$-linear isometry fixing the origin, the rotation through the angle $\theta$ when $u = \exp(i\theta)$; it has determinant $1$ and trace $2\cos\theta$, and its eigenvalues are $\exp(\pm i\theta)$. The map $u \mapsto R_u$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$. The sandwich $Q \mapsto uQu^{-1}$ does nothing, because $\mathbb{C}$ is commutative; conjugation by a unit is an inner automorphism acting trivially on the centre. Indeed $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\mathrm{id}, \bar{\cdot}\}$ is finite, so the rotation group is not visible in the algebra alone: it is visible in the multiplication together with the norm $\langle Q\rangle_{*} = Q\bar Q$. Multiplication, not conjugation, is the natural action.
 
-The reflections are the maps $S_u(Q) = u\bar Q$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\alpha$ when $u = \exp(2i\alpha)$. They form the coset $\mathrm{U}(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\alpha$ and $\beta$ compose to the rotation through $2(\alpha - \beta)$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
+The reflections are the maps $S_u(Q) = u\bar Q$; each is an orientation-reversing involution with a line of fixed points through the origin, the line at angle $\theta^{\mathrm{lna}}$ when $u = \exp(2i\theta^{\mathrm{lna}})$. They form the coset $\mathrm{U}(1)\bar{\cdot}$, they are all conjugate to complex conjugation, and the composition of two reflections is the rotation $S_u \circ S_v = R_{u\bar v}$: reflections in lines at angles $\theta^{\mathrm{lna}}$ and $\theta^{\mathrm{lnb}}$ compose to the rotation through $2(\theta^{\mathrm{lna}} - \theta^{\mathrm{lnb}})$. Cartan–Dieudonné in dimension two states that every element of $O(2)$ is a product of at most two reflections.
 
 The orthogonal group is $O(2) = \mathrm{U}(1) \cup \mathrm{U}(1)\bar{\cdot}$, with determinant homomorphism onto $\{\pm 1\}$ and kernel $SO(2) = \mathrm{U}(1)$ of index $2$. It is the semidirect product $O(2) \cong \mathrm{U}(1) \rtimes \mathbb{Z}/2\mathbb{Z}$ with the generator acting by inversion $u \mapsto \bar u$, it is compact with two circle components, and its identity component is the rotation group. The exponential identifies $\mathrm{SO}(2) \cong \mathbb{R}$ with the Lie algebra of $SO(2)$ and $\mathrm{U}(1) = i\mathbb{R}$ with that of $\mathrm{U}(1)$. Adding translations gives $\operatorname{Isom}(\mathbb{C}) \cong \mathbb{C} \rtimes O(2)$, in which the linear part is an element of $O(2)$ and the orientation is the sign of its determinant.
 

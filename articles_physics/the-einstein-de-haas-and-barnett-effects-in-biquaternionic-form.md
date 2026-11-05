@@ -85,11 +85,11 @@ $$
 For a rotation at constant rate about a fixed unit axis $\vec u$, the rotor is
 
 $$
-\tilde{u}(t') = \exp\!\left(\frac{\omega t'}{2}\,\sum_k \vec u_k\vec e_k\right)
-= \cos\frac{\omega t'}{2}\,e_t + \sin\frac{\omega t'}{2}\,\sum_k \vec u_k\vec e_k ,
+\tilde{u}(t') = \exp\!\left(\frac{\\theta^{\mathrm{rat}}}{2}\,\sum_k \vec u_k\vec e_k\right)
+= \cos\frac{\\theta^{\mathrm{rat}}}{2}\,e_t + \sin\frac{\\theta^{\mathrm{rat}}}{2}\,\sum_k \vec u_k\vec e_k ,
 $$
 
-and it rotates every body vector through the angle $\omega t'$ about $\vec u$ in the right-handed sense. The rotor is normalized, $\langle\tilde{u}\rangle_{\natural} = \langle\tilde{u},\tilde{u}\rangle_{\natural} = \tilde{u}\tilde{u}^{\natural} = e_t$, and it is a **double cover** of the rotation: $\tilde{u}(\theta + 2\pi,\vec u) = -\tilde{u}(\theta,\vec u)$, so that $\pm\tilde{u}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$.
+and it rotates every body vector through the angle $\\theta^{\mathrm{rat}}$ about $\vec u$ in the right-handed sense. The rotor is normalized, $\langle\tilde{u}\rangle_{\natural} = \langle\tilde{u},\tilde{u}\rangle_{\natural} = \tilde{u}\tilde{u}^{\natural} = e_t$, and it is a **double cover** of the rotation: $\tilde{u}(\theta + 2\pi,\vec u) = -\tilde{u}(\theta,\vec u)$, so that $\pm\tilde{u}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$.
 
 ### The Angular Velocity
 

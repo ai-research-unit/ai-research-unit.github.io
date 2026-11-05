@@ -150,6 +150,31 @@ so $q_\mu$ multiplies $e_\mu$ and $q'_\mu$ multiplies $ie_\mu$, the same rule fo
 
 **A logarithm carries the glyph of its element and the subscript $\log$.** The logarithm is a solution of the exponential equation in the same algebra, not an object of a new kind, so it carries the glyph of the element and the subscript, and the definition reads $\exp(\tilde Q_{\log}) = \tilde Q$. The glyph is $\tilde Q_{\log}$ in this algebra, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\breve Q_{\log}$ in the reduced biquaternions, and $Q_{\log}$ in the complex, split-complex and dual ones. The subscript is a word, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$. The subscript is dropped when the logarithm is written as an operator, $\log\tilde Q$ or $\operatorname{Log}\tilde Q$. The coordinates of a logarithm follow the coefficient rule: in the complex, split-complex and dual layers, $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case, and the prime marks the imaginary coordinate alone. The logarithm of a real number is the ordinary real logarithm, written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.
 
+## The Angle and Its Two Cases
+
+**A real angle is $\theta$ and a complex angle is $\Theta$, and the case is the field.** The rule is the one the case already states for an element: an upper-case glyph has a sector larger than the reals, a lower-case one has the reals. For the angle the sector is the field of the argument.
+
+$$
+\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
+$$
+
+**The prime marks the slot that carries the $i$**, as it does in a coefficient, $Q_t=q_t+iq'_t$ and $q'_t=\phi/c$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are one angle read at a real and at an imaginary argument.
+
+**The central phase is the real case.** $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same case at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
+
+**The boost factor is the pure imaginary case.** The four-vector element carries $\mathcal B$ with $\tilde U_{\mathrm b}^{-2}=\cosh\psi\,e_t-i\sinh\psi\,\vec u_{\mathrm b}$, which is $e^{\vec U\Theta}$ at $\Theta=-i\psi$: in the two-parameter form $\theta=0$ and $\theta'=\psi$. The sign is the article's and it carries the direction of the boost; the magnitude of the imaginary part is the rapidity.
+
+**The circle and the hyperbola are one formula.** With $\Theta=\theta+i\theta'$,
+
+$$
+\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
+\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
+$$
+
+At $\theta'=0$ this is $\cos\theta$ and $\sin\theta$; at $\theta=0$ it is $\cosh\theta'$ and $i\sinh\theta'$. A rotation, a boost and the intermediate case are three readings of one letter, and the case of the letter states which of them is meant.
+
+**Neither glyph carries a second role.** The roles that once shared the letter have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the sandwich is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}^{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta^{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
+
 ## The Remarkable Subspaces of Biquaternions
 
 The eight real parameters of a general element group into **remarkable subspaces**: the centre, the vector subspace, the two halves of the coefficient split, and the two sectors. Each is cut out by a conjugation:
@@ -361,7 +386,7 @@ The governing rule: **only the Q family is generic, and only an element carries 
 | $\mathcal B$ | Four-vector boost factor | $\tilde U_{\mathrm b}^{-2}=\cosh\psi\,e_t-i\sinh\psi\,\vec u_{\mathrm b}$ | $\mathbb{M}_+$, $\det=1$ | The factor a four-vector element carries; equal to $e^{\vec U\Theta}$ with $\Theta=-i\psi$. It is not the acting rotor: the word's factor is $\tilde U_{\mathrm b}$ for a transformation and $\mathcal B$ for a four-vector |
 | $\tilde u_{\mathrm r}$ | Unit real quaternion rotor | $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\mathbb{H}_{\mathbb{B}}$, norm one | The rotor of the polar word and of every rotation here, the rotating frame included; half-angle $\theta/2$, axis $\vec u_{\mathrm r}$; $*$-unitary under every product |
 | $\tilde U^{\mathrm{lor}}$ | Unit-norm biquaternion, the product of the two factors above | $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$ | $\mathbb{B}$, norm one; $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ | The product of the boost and the rotor, in that order; it is a Lorentz transformation. The series fixes this order, the factors do not commute, and the decomposition is unique when the boost is positive definite. The opposite polar order is recorded in the note below the table |
-| $\tilde u_H$ | Evolution rotor | $\exp(-i\tilde H_Rt'/\hbar)=\exp(-\frac{\Omega t'}{2}\vec u_R)$ | $\mathbb{H}_{\mathbb{B}}$, norm one | The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\Omega t'$ |
+| $\tilde u_H$ | Evolution rotor | $\exp(-i\tilde H_Rt'/\hbar)=\exp(-\frac{\theta^{\mathrm{rat}}}{2}\vec u_R)$ | $\mathbb{H}_{\mathbb{B}}$, norm one | The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\theta^{\mathrm{rat}}$ |
 | $\tilde U_{\mathrm{int}}$ | Bound unit element: the Thomas interval rotor | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | $\mathbb{B}$, norm one | The unit-norm biquaternion that carries the rest frame at $t'$ to the rest frame at $t'+dt'$. It takes the glyph of the U family because it is of norm one; the role label $\mathrm{int}$ fixes it |
 
 **The two polar orders.** The table fixes the word with the Hermitian positive boost on the left, $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The opposite word is equally valid and is used where the right polar decomposition is the natural one:
@@ -424,31 +449,6 @@ The two words are the left and the right polar decompositions of the same rotor.
 **The angular-momentum labels are lower-case Latin, and the total takes the role subscript.** A spin label is $s$, its weight $s_z$, and the operator carries the tilde, $\tilde S_k$. An orbital label is $l$, its weight $l_z$, with $\tilde L_k$. The total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$, its weight $s_{\mathrm{tot},z}$, and its operator $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$. A coupled pair writes $s_1,s_{1z},s_2,s_{2z}$ and its total $s_{\mathrm{tot}},s_{\mathrm{tot},z}$; the final multiplet of a tensor operator is $s_{\mathrm{fin}}$, with weight $s_{\mathrm{fin},z}$, and its reduced matrix element is $\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$. A representation of spin $s$ is $V_s$, of dimension $2s+1$. The letter $j$ is not used for any of these: it is the hyperbolic unit of the reduced layer, and it never denotes an angular momentum or a weight. The letter $m$ is not used for a weight either: it is the mass, and a magnetic weight is written $s_z$, $l_z$ or $s_{\mathrm{tot},z}$. The operator index and the projection are read apart in *Unit, Index and Notation Conventions*, §*The Subscripts*.
 
 **The state takes the stigma, because the majuscule of rho is taken.** The case rule asks a complex element for an upper-case glyph, and the upper-case rho is drawn as $P$ and names the four-momentum $\tilde P$, which the series never writes otherwise. The state therefore takes a capital that names nothing else in the corpus, the **stigma** $Ϛ$ (U+03DA). The glyph is bound to the state and is never generic; the earlier lowercase rho spelling, and the varrho variant with it, are retired, and the corpus uses neither. Bare $\rho$ is not the state: it keeps its other roles, the charge density and the radial coordinate among them. The matrix image takes no tilde, as for every element.
-
-## The Angle and Its Two Cases
-
-**A real angle is $\theta$ and a complex angle is $\Theta$, and the case is the field.** The rule is the one the case already states for an element: an upper-case glyph has a sector larger than the reals, a lower-case one has the reals. For the angle the sector is the field of the argument.
-
-$$
-\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
-$$
-
-**The prime marks the slot that carries the $i$**, as it does in a coefficient, $Q_t=q_t+iq'_t$ and $q'_t=\phi/c$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are one angle read at a real and at an imaginary argument.
-
-**The central phase is the real case.** $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same case at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
-
-**The boost factor is the pure imaginary case.** The four-vector element carries $\mathcal B$ with $\tilde U_{\mathrm b}^{-2}=\cosh\psi\,e_t-i\sinh\psi\,\vec u_{\mathrm b}$, which is $e^{\vec U\Theta}$ at $\Theta=-i\psi$: in the two-parameter form $\theta=0$ and $\theta'=\psi$. The sign is the article's and it carries the direction of the boost; the magnitude of the imaginary part is the rapidity.
-
-**The circle and the hyperbola are one formula.** With $\Theta=\theta+i\theta'$,
-
-$$
-\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
-\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
-$$
-
-At $\theta'=0$ this is $\cos\theta$ and $\sin\theta$; at $\theta=0$ it is $\cosh\theta'$ and $i\sinh\theta'$. A rotation, a boost and the intermediate case are three readings of one letter, and the case of the letter states which of them is meant.
-
-**Neither glyph carries a second role.** The roles that once shared the letter have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the sandwich is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}^{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta^{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
 
 ## Summary
 

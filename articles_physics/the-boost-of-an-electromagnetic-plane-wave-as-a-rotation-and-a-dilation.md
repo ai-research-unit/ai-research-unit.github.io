@@ -104,25 +104,25 @@ $$
 contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_k$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k = -\vec q\cdot\vec k + \vec q\times\vec k$ it separates into its scalar and vector parts,
 
 $$
-\vec u\vec u_k \;=\; -\cos\alpha\,e_t + \vec u\times\vec u_k,
+\vec u\vec u_k \;=\; -\cos\theta^{\mathrm{wav}}\,e_t + \vec u\times\vec u_k,
 \qquad
-\cos\alpha = \vec u\cdot\vec u_k,
+\cos\theta^{\mathrm{wav}} = \vec u\cdot\vec u_k,
 $$
 
-so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)e_t + \sinh\frac{w}{2}\,\vec u\times\vec u_k$ is a scalar plus a real vector, with
+so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta^{\mathrm{wav}}\right)e_t + \sinh\frac{w}{2}\,\vec u\times\vec u_k$ is a scalar plus a real vector, with
 
 $$
-\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)^2e_t + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_k\right|^2 e_t
-= \left(\cosh w - \sinh w\cos\alpha\right)e_t ,
+\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta^{\mathrm{wav}}\right)^2e_t + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_k\right|^2 e_t
+= \left(\cosh w - \sinh w\cos\theta^{\mathrm{wav}}\right)e_t ,
 $$
 
-using $|\vec u\times\vec u_k|^2 = \sin^2\alpha$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = \exp(d/2)\tilde{u}$ with
+using $|\vec u\times\vec u_k|^2 = \sin^2\theta^{\mathrm{wav}}$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = \exp(d/2)\tilde{u}$ with
 
 $$
-\boxed{\; \exp(d) \;=\; \cosh w - \cos\alpha\,\sinh w \;},
+\boxed{\; \exp(d) \;=\; \cosh w - \cos\theta^{\mathrm{wav}}\,\sinh w \;},
 $$
 
-the relativistic Doppler factor of a wave propagating at angle $\alpha$ to the boost, and $\tilde{u}$ a unit real quaternion — a rotation rotor of physical space (*Biquaternion Rotations and Lorentz Transformations*).
+the relativistic Doppler factor of a wave propagating at angle $\theta^{\mathrm{wav}}$ to the boost, and $\tilde{u}$ a unit real quaternion — a rotation rotor of physical space (*Biquaternion Rotations and Lorentz Transformations*).
 
 ## The Rotation and the Dilation, Explicitly
 
@@ -131,24 +131,24 @@ Writing $\vec u_b$ for the unit real vector along $\vec u\times\vec u_k$ (when t
 $$
 \tilde{u} \;=\; \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_b,
 \qquad
-\tan\frac{\theta}{2} \;=\; \frac{\sinh\frac{w}{2}\,\sin\alpha}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha},
+\tan\frac{\theta}{2} \;=\; \frac{\sinh\frac{w}{2}\,\sin\theta^{\mathrm{wav}}}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta^{\mathrm{wav}}},
 $$
 
-with $\sin\alpha = |\vec u\times\vec u_k|$ and $\theta$ the rotation angle, taken with the sense of $\vec u_b$. The formulas are read off from $\tilde{D} = \exp(d/2)\tilde{u}$ by comparing the scalar parts and the magnitudes of the vector parts.
+with $\sin\theta^{\mathrm{wav}} = |\vec u\times\vec u_k|$ and $\theta$ the rotation angle, taken with the sense of $\vec u_b$. The formulas are read off from $\tilde{D} = \exp(d/2)\tilde{u}$ by comparing the scalar parts and the magnitudes of the vector parts.
 
 The rotation acts on the propagation direction by rotating it **in the plane of $\vec u$ and $\vec u_k$**, which is the algebraic form of aberration:
 
 $$
 \tilde{u}\,\vec u_k\,\tilde{u}^{*} \;=\; \cos\theta\,\vec u_k - \sin\theta\,\vec u_e,
 \qquad
-\vec u_e \;=\; \frac{\vec u - \cos\alpha\,\vec u_k}{\sin\alpha},
+\vec u_e \;=\; \frac{\vec u - \cos\theta^{\mathrm{wav}}\,\vec u_k}{\sin\theta^{\mathrm{wav}}},
 $$
 
-where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_k$, perpendicular to $\vec u_k$ and pointing from $\vec u_k$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_k$, normalized; in particular $\vec u = \cos\alpha\,\vec u_k + \sin\alpha\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_k = 0$ this reduces to the source's $\tilde{u}\vec u_k\tilde{u}^{*} = \vec u_k\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.
+where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_k$, perpendicular to $\vec u_k$ and pointing from $\vec u_k$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_k$, normalized; in particular $\vec u = \cos\theta^{\mathrm{wav}}\,\vec u_k + \sin\theta^{\mathrm{wav}}\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_k = 0$ this reduces to the source's $\tilde{u}\vec u_k\tilde{u}^{*} = \vec u_k\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.
 
 The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U_{\mathrm b}$ points opposite to the velocity, so that $\vec u_k$ moves *away* from $\vec u$ and hence *toward* the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P$ and on the field $\tilde{F}$ through the same sandwich, and since $\tilde{u}^{*} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.
 
-**The transverse case.** When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_k = 0$, so $\cos\alpha = 0$ and the formulas simplify to the ones the source exhibits:
+**The transverse case.** When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_k = 0$, so $\cos\theta^{\mathrm{wav}} = 0$ and the formulas simplify to the ones the source exhibits:
 
 $$
 \exp(d) = \cosh w = \gamma,
@@ -180,8 +180,8 @@ Two consequences deserve recording. First, the electric and magnetic fields are 
 
 The identity turns the kinematics of a boosted wave into three interpretations of one formula:
 
-- **Frequency.** The coefficient of $i$ in $\tilde P_2$ is $\exp(d)\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
-- **Direction.** The rotation $\tilde{u}$ carries $\vec u_k$ to $\cos\theta\,\vec u_k - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\alpha\,\vec u_k)/\sin\alpha$ the transverse direction of $\vec u$, so that $\vec u_k$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_k\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.
+- **Frequency.** The coefficient of $i$ in $\tilde P_2$ is $\exp(d)\omega = \left(\cosh w - \cos\theta^{\mathrm{wav}}\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
+- **Direction.** The rotation $\tilde{u}$ carries $\vec u_k$ to $\cos\theta\,\vec u_k - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\theta^{\mathrm{wav}}\,\vec u_k)/\sin\theta^{\mathrm{wav}}$ the transverse direction of $\vec u$, so that $\vec u_k$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_k\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.
 - **Amplitude and polarisation.** The field is rotated by $\tilde{u}$ and scaled by $\exp(d)$, so the Poynting vector and the energy density inherit the same similarity.
 
 What the identity does **not** say is equally worth stating. The rotation $\tilde{u}$ is a rotation of physical space, not a Lorentz transformation of spacetime; the Lorentz character of the boost has been entirely absorbed into the dilation $\exp(d)$ and the rotation $\tilde{u}$, and this is possible only because the wave is null. For a massive particle the same boost cannot be so reduced: the boost of a timelike four-velocity mixes the temporal and spatial components irreducibly, and there is no dilation and rotation of three-space that reproduces it. The reduction is thus a property of light, not of the Lorentz group.
@@ -199,14 +199,14 @@ $$
 leaving a real quaternion $\tilde{D} = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_k$, a scalar plus a real vector, which is $\exp(d/2)\tilde{u}$ with
 
 $$
-\exp(d) = \cosh w - \cos\alpha\,\sinh w,
+\exp(d) = \cosh w - \cos\theta^{\mathrm{wav}}\,\sinh w,
 \qquad
 \tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_b,
 \qquad
-\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\alpha}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha},
+\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\theta^{\mathrm{wav}}}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta^{\mathrm{wav}}},
 $$
 
-where $\alpha$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then
+where $\theta^{\mathrm{wav}}$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then
 
 $$
 \boxed{\;\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{*},
@@ -229,10 +229,10 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 | $\tilde U_{\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |
 | $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_b$ | Spatial rotation rotor, unit real quaternion |
 | $\vec u_b$ | Unit real vector along $\vec u\times\vec u_k$ |
-| $\exp(d)$ | Dilation factor, $= \cosh w - \cos\alpha\sinh w$ (Doppler factor) |
-| $\alpha$ | Angle between $\vec u$ and $\vec u_k$, $\cos\alpha = \vec u\cdot\vec u_k$ |
-| $\vec u_e = (\vec u-\cos\alpha\,\vec u_k)/\sin\alpha$ | Unit in-plane vector transverse to $\vec u_k$, pointing toward $\vec u$ |
-| $\theta$ | Rotation angle, $\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\alpha}{\cosh\frac{w}{2}-\sinh\frac{w}{2}\cos\alpha}$ |
+| $\exp(d)$ | Dilation factor, $= \cosh w - \cos\theta^{\mathrm{wav}}\sinh w$ (Doppler factor) |
+| $\theta^{\mathrm{wav}}$ | Angle between $\vec u$ and $\vec u_k$, $\cos\theta^{\mathrm{wav}} = \vec u\cdot\vec u_k$ |
+| $\vec u_e = (\vec u-\cos\theta^{\mathrm{wav}}\,\vec u_k)/\sin\theta^{\mathrm{wav}}$ | Unit in-plane vector transverse to $\vec u_k$, pointing toward $\vec u$ |
+| $\theta$ | Rotation angle, $\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\theta^{\mathrm{wav}}}{\cosh\frac{w}{2}-\sinh\frac{w}{2}\cos\theta^{\mathrm{wav}}}$ |
 | $c = c_0$ | Vacuum speed of light (the field statement is a vacuum statement) |
 
 ## Further Reading

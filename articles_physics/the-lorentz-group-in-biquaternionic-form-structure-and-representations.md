@@ -143,18 +143,18 @@ $$
 \tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad \tilde U_{\mathrm b}\in\mathcal{B},\quad \tilde u_{\mathrm r}\in SU(2).
 $$
-The factor $\tilde U_{\mathrm b}$ is a boost; the factor $\tilde u_{\mathrm r}$ is the **Thomas–Wigner rotation**. If $\theta\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\delta$ is determined by
+The factor $\tilde U_{\mathrm b}$ is a boost; the factor $\tilde u_{\mathrm r}$ is the **Thomas–Wigner rotation**. If $\theta\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\theta^{\mathrm{wgn}}$ is determined by
 $$
-\boxed{\ \tan\frac{\delta}{2}
+\boxed{\ \tan\frac{\theta^{\mathrm{wgn}}}{2}
 =\frac{\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\sin\theta}
 {\cosh\frac{\psi_1}{2}\,\cosh\frac{\psi_2}{2}
 +\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\cos\theta}\ }
 $$
-and the rotation axis is the line through $\vec u_x\times\vec u_y$. With the rotation rotor written as $\tilde u_{\mathrm r}=\cos(\delta/2)+\sin(\delta/2)\vec u_{\mathrm r}$, the axis for the product $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$ in the order written is
+and the rotation axis is the line through $\vec u_x\times\vec u_y$. With the rotation rotor written as $\tilde u_{\mathrm r}=\cos(\theta^{\mathrm{wgn}}/2)+\sin(\theta^{\mathrm{wgn}}/2)\vec u_{\mathrm r}$, the axis for the product $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$ in the order written is
 $$
 \vec u_{\mathrm r}=-\frac{\vec u_x\times\vec u_y}{|\vec u_x\times\vec u_y|};
 $$
-reversing the order of the two boosts reverses the sense of the rotation, while leaving the angle $\delta$ unchanged.
+reversing the order of the two boosts reverses the sense of the rotation, while leaving the angle $\theta^{\mathrm{wgn}}$ unchanged.
 
 The boost factor $\tilde U_{\mathrm b}$ has rapidity $\psi_{\mathrm c}$ fixed by the usual composite-rapidity relation
 $$
@@ -165,14 +165,14 @@ that is, the rapidity of the relativistic composition of the two boost velocitie
 
 Several special cases are worth recording.
 
-- **Collinear boosts** ($\theta=0$ or $\theta=\pi$): $\sin\theta=0$, so $\delta=0$ and the product is a pure boost. For $\theta=0$ the rapidities add, $\psi_{\mathrm c}=\psi_1+\psi_2$; for $\theta=\pi$ they subtract, $\psi_{\mathrm c}=|\psi_1-\psi_2|$. In both cases rapidities combine exactly as for collinear velocities.
-- **One trivial boost** ($\psi_1=0$ or $\psi_2=0$): $\delta=0$, as it must be.
+- **Collinear boosts** ($\theta=0$ or $\theta=\pi$): $\sin\theta=0$, so $\theta^{\mathrm{wgn}}=0$ and the product is a pure boost. For $\theta=0$ the rapidities add, $\psi_{\mathrm c}=\psi_1+\psi_2$; for $\theta=\pi$ they subtract, $\psi_{\mathrm c}=|\psi_1-\psi_2|$. In both cases rapidities combine exactly as for collinear velocities.
+- **One trivial boost** ($\psi_1=0$ or $\psi_2=0$): $\theta^{\mathrm{wgn}}=0$, as it must be.
 - **Small velocities.** For $v_1,v_2\ll c$, expanding the formula gives
 $$
-\delta\approx\frac{1}{2}\frac{|\vec v_1\times\vec v_2|}{c^2},
+\theta^{\mathrm{wgn}}\approx\frac{1}{2}\frac{|\vec v_1\times\vec v_2|}{c^2},
 $$
-the familiar leading Thomas-precession angle. For two boosts of $0.01\,c$ at right angles this gives $\delta\approx5.0\times10^{-5}$ rad.
-- **Large rapidities.** If $\psi_1,\psi_2\to\infty$ at fixed $\theta\in(0,\pi)$, the formula gives $\tan(\delta/2)\to\tan(\theta/2)$, hence $\delta\to\theta$. The limiting Wigner angle is the angle between the two boost directions.
+the familiar leading Thomas-precession angle. For two boosts of $0.01\,c$ at right angles this gives $\theta^{\mathrm{wgn}}\approx5.0\times10^{-5}$ rad.
+- **Large rapidities.** If $\psi_1,\psi_2\to\infty$ at fixed $\theta\in(0,\pi)$, the formula gives $\tan(\theta^{\mathrm{wgn}}/2)\to\tan(\theta/2)$, hence $\theta^{\mathrm{wgn}}\to\theta$. The limiting Wigner angle is the angle between the two boost directions.
 
 The composition law of a boost $\tilde U_{\mathrm b}$ and a rotation $\tilde u_{\mathrm r}$ is immediate: $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\tilde u_{\mathrm r}\tilde U_{\mathrm b}$ are both unit-norm biquaternions and both correspond to general Lorentz transformations, but they are generally different elements of the group, differing by the rotation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{-1}\tilde u_{\mathrm r}\tilde U_{\mathrm b}$; the non-commutativity of boosts and rotations is the group-level statement of the same non-closure.
 
@@ -209,8 +209,8 @@ The exponential map and its failure of surjectivity are treated in the companion
 
 **The Killing form.** The Lie algebra is semisimple, and its Killing form is nondegenerate. In the basis $(\vec e_x,\vec e_y,\vec e_z,K_1,K_2,K_3)$ it is diagonal,
 $$
-B(\vec e_j,\vec e_k)=-16\,\delta_{jk},\qquad
-B(K_j,K_k)=+16\,\delta_{jk},\qquad
+B(\vec e_j,\vec e_k)=-16\,\\delta_{jk},\qquad
+B(K_j,K_k)=+16\,\\delta_{jk},\qquad
 B(\vec e_j,K_k)=0,
 $$
 (computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.
@@ -424,7 +424,7 @@ The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of 
 
 Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
-\tan\frac{\delta}{2}
+\tan\frac{\theta^{\mathrm{wgn}}}{2}
 =\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta}
 {\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
 $$
@@ -451,7 +451,7 @@ The group that carries the transformations is represented as follows. The group 
 | $\tilde U_{\mathrm b}=\cosh\frac\psi2+i\sinh\frac\psi2\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r}=\cos\frac\theta2+\sin\frac\theta2\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\psi$ | Rapidity, $\tanh\psi=v_b/c$ |
-| $\delta$ | Thomas–Wigner rotation angle |
+| $\theta^{\mathrm{wgn}}$ | Thomas–Wigner rotation angle |
 | $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Cartan (polar) decomposition: boost times rotation |
 | $\vec e_k$, $K_k=i\vec e_k$ | Rotation and boost generators |
 | $[\vec e_j,\vec e_k]=2\varepsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l$ | Lie brackets |

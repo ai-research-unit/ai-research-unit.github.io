@@ -11,7 +11,7 @@ The findings are stated in advance.
 1. **The Wigner rotation is the compact part of a composed boost.** For unit-norm boost rotors $\tilde U_{\mathrm b,1},\tilde U_{\mathrm b,2}$ the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is again unit-norm, but it is Hermitian only when the two boost directions commute; in general it factors as $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde U_{\mathrm b}\tilde{W}$ with $\tilde{W}$ a unit real quaternion, i.e. a rotation.
 2. **It is a cocycle.** The Wigner rotation satisfies $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\,\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$, the cocycle condition of a little-group bundle; a boost is a connection on that bundle and the rotation is its parallel transport.
 3. **A boost is a controlled rotation.** On a momentum superposition the boost acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$, a momentum-controlled $*$-unitary on the spin; it cannot be written as a momentum operation times a momentum-independent spin operation, and this is exactly why it can change spin entanglement while remaining globally $*$-unitary.
-4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\alpha)/2)$.
+4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\theta^{\mathrm{wgn}})/2)$.
 5. **A closed loop of boosts leaves a rotation.** The product of boosts around a closed path in velocity space is a pure rotation about the normal to the path, with an angle that grows with the area; this is the Thomas–Wigner holonomy, the curvature of the boost connection, and the relativistic content of Thomas precession.
 
 The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf M_2$ with $\vec e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
@@ -81,14 +81,14 @@ $$
 $$
 satisfies $\tilde{W}(ic\,e_t)\tilde{W}^{*} = ic\,e_t$, hence lies in the stabilizer; being unit-norm it is a unit real quaternion,
 $$
-\tilde{W}\in SU(2), \qquad \tilde{W} = \cos\frac{\alpha}{2}e_t + \sin\frac{\alpha}{2}\vec u_{\mathrm r} .
+\tilde{W}\in SU(2), \qquad \tilde{W} = \cos\frac{\theta^{\mathrm{wgn}}}{2}e_t + \sin\frac{\theta^{\mathrm{wgn}}}{2}\vec u_{\mathrm r} .
 $$
 This is the Wigner rotation, and it is the **unique** correction in the decomposition: any other choice differs by a little-group element that is already included in $\tilde{W}$.
 
 **A worked composition.** Take $\tilde U_{\mathrm b,1}$ a boost along $x$ with rapidity $1$ and $\tilde U_{\mathrm b,2}$ a boost along $y$ with rapidity $0.5$. Their product factors as a pure boost to the net four-velocity times the rotation
 $$
 \tilde{W} = 0.99366\,e_t + 0.11246\,\vec e_z ,
-\qquad \alpha = 12.9146^\circ , \qquad \vec u_{\mathrm r} = \vec u_z ,
+\qquad \theta^{\mathrm{wgn}} = 12.9146^\circ , \qquad \vec u_{\mathrm r} = \vec u_z ,
 $$
 a rotation about the axis normal to the plane of the two boost directions, by an angle that grows with both rapidities. The rotation is compact, $*$-unitary, and has determinant one: it is the same kind of object as an ordinary spatial rotation, and it is the only part of the composed boost that acts on the spin as a quantum operation.
 
@@ -120,10 +120,10 @@ $$
 The commutator is a real pure quaternion, hence a rotation generator, and its magnitude is the half-angle of the leading Wigner rotation. The leading angle is therefore
 
 $$
-\alpha\simeq\frac{\psi_1\psi_2}{2}\sin\vartheta,
+\theta^{\mathrm{wgn}}\simeq\frac{\psi_1\psi_2}{2}\sin\theta^{\mathrm{wgn}},
 $$
 
-where $\vartheta$ is the angle between the two boost directions. For small rapidities this is the $\alpha\approx\frac12\psi\chi\sin\theta$ recorded in the summary, and for right angles and $\psi_1=1,\psi_2=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
+where $\theta^{\mathrm{wgn}}$ is the angle between the two boost directions. For small rapidities this is the $\theta^{\mathrm{wgn}}\approx\frac12\psi\chi\sin\theta$ recorded in the summary, and for right angles and $\psi_1=1,\psi_2=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
 
 **The exact factor.** The Cartan decomposition of the product is the exact statement,
 
@@ -186,11 +186,11 @@ then the spin operation would be momentum-independent, the cocycle would be a ho
 
 The information content of a boost, in its narrowest sense, is the rotation it imprints on a spin, and the amount is governed by the Wigner angle. For a boost of rapidity $\psi$ and a particle of rapidity $\chi = \mathrm{atanh}(v/c)$ at angle $\theta$ to the boost axis, the angle vanishes at $\theta = 0,\pi$ and is largest for transverse momentum, and for $\theta = \pi/2$ it is given exactly by
 $$
-\boxed{\ \tan\alpha = \frac{\sinh\psi\,\sinh\chi}{\cosh\psi + \cosh\chi} .\ }
+\boxed{\ \tan\theta^{\mathrm{wgn}} = \frac{\sinh\psi\,\sinh\chi}{\cosh\psi + \cosh\chi} .\ }
 $$
-For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\alpha$ and the entropy $h((1+\cos\alpha)/2)$ that the boost imprints on a transverse spin:
+For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\theta^{\mathrm{wgn}}$ and the entropy $h((1+\cos\theta^{\mathrm{wgn}})/2)$ that the boost imprints on a transverse spin:
 
-| $\psi$ | $\alpha$ | $\cos\alpha$ | $h\!\left(\frac{1+\cos\alpha}{2}\right)$ |
+| $\psi$ | $\theta^{\mathrm{wgn}}$ | $\cos\theta^{\mathrm{wgn}}$ | $h\!\left(\frac{1+\cos\theta^{\mathrm{wgn}}}{2}\right)$ |
 |---:|---:|---:|---:|
 | $0.25$ | $3.81681^\circ$ | $0.997782$ | $0.012486$ |
 | $0.50$ | $7.50939^\circ$ | $0.991423$ | $0.039902$ |
@@ -199,13 +199,13 @@ For a particle of speed $0.5c$ this gives the following values, with the dephasi
 | $2.00$ | $23.06780^\circ$ | $0.920042$ | $0.242196$ |
 | $3.00$ | $27.26584^\circ$ | $0.888891$ | $0.309540$ |
 
-The rotation angle grows with the rapidity and saturates at a finite value; the dephasing factor falls and the entropy rises. The asymptotics are worth recording: for large $\psi$ and fixed $\chi$, $\tan\alpha\to\sinh\chi$, so the angle saturates at $\arctan(\sinh\chi)$ — the same finite angle for every transverse spin of the particle, in agreement with the velocity-addition limit — and the dephasing factor saturates at $\cos(\arctan(\sinh\chi)) = 1/\cosh\chi = \sqrt{1-v^2/c^2}$. Only in the ultrarelativistic limit $\chi\to\infty$ does this reach zero and the entropy approach one bit; for $v = 0.5c$ the saturating angle is $30^\circ$, the dephasing factor $0.8660$, and the entropy $0.3546$. For small rapidities the angle is $\alpha\approx\tfrac12\psi\chi\sin\theta$, so the information a slow boost imprints on a spin is second order in the velocities.
+The rotation angle grows with the rapidity and saturates at a finite value; the dephasing factor falls and the entropy rises. The asymptotics are worth recording: for large $\psi$ and fixed $\chi$, $\tan\theta^{\mathrm{wgn}}\to\sinh\chi$, so the angle saturates at $\arctan(\sinh\chi)$ — the same finite angle for every transverse spin of the particle, in agreement with the velocity-addition limit — and the dephasing factor saturates at $\cos(\arctan(\sinh\chi)) = 1/\cosh\chi = \sqrt{1-v^2/c^2}$. Only in the ultrarelativistic limit $\chi\to\infty$ does this reach zero and the entropy approach one bit; for $v = 0.5c$ the saturating angle is $30^\circ$, the dephasing factor $0.8660$, and the entropy $0.3546$. For small rapidities the angle is $\theta^{\mathrm{wgn}}\approx\tfrac12\psi\chi\sin\theta$, so the information a slow boost imprints on a spin is second order in the velocities.
 
-**The parameters of a boost and of its rotation.** A boost has three parameters — a direction and a rapidity — while, once the momentum is fixed, its Wigner rotation has its axis determined by the two directions: the axis is perpendicular to both, so the whole rotation is summarised by the single angle $\alpha(\psi,\theta)$. The map from boosts to rotations is therefore not injective, and a spin measurement cannot recover the boost completely: a boost and its rotation share the transverse plane, the rapidity is encoded only through the angle, and many boosts share a Wigner angle. A spin collinear with the boost conveys no information about the boost at all, up to phase.
+**The parameters of a boost and of its rotation.** A boost has three parameters — a direction and a rapidity — while, once the momentum is fixed, its Wigner rotation has its axis determined by the two directions: the axis is perpendicular to both, so the whole rotation is summarised by the single angle $\theta^{\mathrm{wgn}}(\psi,\theta)$. The map from boosts to rotations is therefore not injective, and a spin measurement cannot recover the boost completely: a boost and its rotation share the transverse plane, the rapidity is encoded only through the angle, and many boosts share a Wigner angle. A spin collinear with the boost conveys no information about the boost at all, up to phase.
 
-**How well can a boost be read from a spin?** The transverse spin states produced by two different boosts are the dephased states with Bloch vectors of length $\cos\alpha_1$ and $\cos\alpha_2$ along the Wigner axis, and for qubits the trace distance between two such states is one half the Euclidean distance of their Bloch vectors,
+**How well can a boost be read from a spin?** The transverse spin states produced by two different boosts are the dephased states with Bloch vectors of length $\cos\theta^{\mathrm{wgn}}_1$ and $\cos\theta^{\mathrm{wgn}}_2$ along the Wigner axis, and for qubits the trace distance between two such states is one half the Euclidean distance of their Bloch vectors,
 $$
-D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12|\vec r_1-\vec r_2| = \tfrac12|\cos\alpha_1 - \cos\alpha_2| .
+D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12|\vec r_1-\vec r_2| = \tfrac12|\cos\theta^{\mathrm{wgn}}_1 - \cos\theta^{\mathrm{wgn}}_2| .
 $$
 For a particle of speed $0.5c$ at transverse momentum, boosts of rapidity $1$ and $1.5$ give angles $14.11732^\circ$ and $19.31699^\circ$, hence $D = \tfrac12(0.969798-0.943703) = 0.013048$: a single spin measurement distinguishes them with a bias of about one and a third per cent. Even the widely separated rapidities $0.5$ and $2$ give $D = \tfrac12(0.991423-0.920042) = 0.035691$, a bias of under four per cent. The rapidity is thus carried by the spin only weakly at moderate speed, and a boost is much more efficiently read out from the momentum of a particle than from its spin; the information content of the boost is concentrated in the transverse spin component, where the Wigner rotation acts.
 
@@ -217,7 +217,7 @@ Four distinct notions of information content can be attached to a boost, and the
 
 **The parameter information.** The boost is labelled by a rapidity and a direction, a point of three-dimensional hyperbolic space. The parameter information is the classical information in that label: distinguishable boosts are distinguishable parameters, and the parameter manifold is a smooth three-dimensional space with a hyperbolic metric — the same space on which the velocity of a relativistic particle lives.
 
-**The channel information.** The boost is a quantum channel on the spin once the momentum is traced, and its information content is the set of states it can produce from a given input. For a single-particle transverse spin this is the dephasing channel of the previous section, whose output is determined by $\cos\alpha$; two boosts with the same Wigner rotation act identically on every transverse spin and are indistinguishable by spin measurements alone.
+**The channel information.** The boost is a quantum channel on the spin once the momentum is traced, and its information content is the set of states it can produce from a given input. For a single-particle transverse spin this is the dephasing channel of the previous section, whose output is determined by $\cos\theta^{\mathrm{wgn}}$; two boosts with the same Wigner rotation act identically on every transverse spin and are indistinguishable by spin measurements alone.
 
 **The correlation information.** The boost can transfer information from the momentum to the spin, creating spin–momentum correlation; the amount transferred is the entropy $h((1+r_{\mathrm{red}})/2)$ of the reduced spin state, which is the entropy of the correlation the boost has created. This is the only sense in which a boost creates information rather than moving it, and it is bounded by one bit per qubit per boost by the ordinary bounds on a two-level system.
 
@@ -248,9 +248,9 @@ with rotors $\tilde{P} = 0.99821\,e_t + 0.05988\,\vec e_z$, $0.99366\,e_t + 0.11
 
 **The angle is the area.** For small rapidities the holonomy angle is bilinear in the two loop parameters,
 $$
-\boxed{\ \alpha \simeq \tfrac12\,a\,b\ },
+\boxed{\ \theta^{\mathrm{wgn}} \simeq \tfrac12\,a\,b\ },
 $$
-and $\tfrac12 ab$ is exactly the area enclosed by the loop in velocity space: the vertices of the path are at rapidities $(0,0)$, $(a,0)$, and $(a,b)$ in the $(v_x,v_y)$ plane, and the enclosed area is $\tfrac12 ab$. The coefficient has been confirmed numerically, giving $\alpha/(ab) = 0.499792$ at $a = b = 0.05$ and drifting slowly below $1/2$ as the rapidities grow, through $0.497921$ at $(0.2,0.1)$ to $0.492514$ at $(0.3,0.3)$. The holonomy is therefore the **curvature integral**: the rotation angle accumulated around a loop is the area the loop encloses, the discrete statement of Gauss–Bonnet for the boost connection, and the reason the Thomas precession rate is proportional to the area swept by the velocity per unit time.
+and $\tfrac12 ab$ is exactly the area enclosed by the loop in velocity space: the vertices of the path are at rapidities $(0,0)$, $(a,0)$, and $(a,b)$ in the $(v_x,v_y)$ plane, and the enclosed area is $\tfrac12 ab$. The coefficient has been confirmed numerically, giving $\theta^{\mathrm{wgn}}/(ab) = 0.499792$ at $a = b = 0.05$ and drifting slowly below $1/2$ as the rapidities grow, through $0.497921$ at $(0.2,0.1)$ to $0.492514$ at $(0.3,0.3)$. The holonomy is therefore the **curvature integral**: the rotation angle accumulated around a loop is the area the loop encloses, the discrete statement of Gauss–Bonnet for the boost connection, and the reason the Thomas precession rate is proportional to the area swept by the velocity per unit time.
 
 This is the **holonomy** of the boost connection. Its defining property is that it is *path-dependent*: the endpoints of the path are the same point — rest — and yet the transformation is not the identity. A closed path in velocity space with a different shape gives a different rotation, with the same endpoints, so the rotation is a function of the path and not of the point. That is the defining property of a curvature, and it is why the boost parameter space cannot be treated as a flat arena in which frames are simply relabelled.
 
@@ -268,7 +268,7 @@ The information interpretation of the holonomy is the sharpest statement availab
 
 The structural companion's split reads the Wigner rotation sharply. The boost generators are the pure elements $i\vec e_k$ of the traceless **informational** sector, while the rotation they generate lies in the traceless **material** sector,
 $$
-\tilde{W} = \cos\frac{\alpha}{2}e_t + \sin\frac{\alpha}{2}\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r}\cdot\mathbf{e}\in\mathbb{M}_-^{0} .
+\tilde{W} = \cos\frac{\theta^{\mathrm{wgn}}}{2}e_t + \sin\frac{\theta^{\mathrm{wgn}}}{2}\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r}\cdot\mathbf{e}\in\mathbb{M}_-^{0} .
 $$
 A boost is therefore an informational generator whose observable residue is a material rotation, and the map between them is the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$ that carries the informational sector into the material one. The information content of a boost, read this way, is the material image of an informational operation: the rapidity, which is the parameter of an element of the informational sector, appears to an observer as an angle in the material sector, and it does so through a map that is a cocycle rather than a homomorphism. The same structure appeared in the relativistic-qubit article as the null-vector map, which carries an informational state to a material light direction; here it appears at the level of the generators, and the compact, material character of the image is what makes it observable as a rotation rather than as a boost.
 
@@ -287,7 +287,7 @@ $$
 $$
 obeying the cocycle condition $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$. For a boost along $x$ of rapidity $1$ followed by one along $y$ of rapidity $0.5$, the rotation is $0.99366\,e_t+0.11246\,\vec e_z$, an angle of $12.9146^\circ$ about $\vec u_z$.
 
-Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$; it grows with the rapidity towards $\arctan(\sinh\chi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\alpha)/2)$, approaches $h((1+1/\cosh\chi)/2)$ and reaches one bit only in the ultrarelativistic limit, while for small rapidities $\alpha\approx\tfrac12\psi\chi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
+Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\theta^{\mathrm{wgn}} = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$; it grows with the rapidity towards $\arctan(\sinh\chi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\theta^{\mathrm{wgn}})/2)$, approaches $h((1+1/\cosh\chi)/2)$ and reaches one bit only in the ultrarelativistic limit, while for small rapidities $\theta^{\mathrm{wgn}}\approx\tfrac12\psi\chi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
 
 Because the boost parameter space is curved, a closed path of boosts that returns the four-velocity to its starting value returns the spin only up to a rotation. For the loop $0\to\vec v_1\to\vec v_2\to0$ with a boost along $x$ of rapidity $a$ and one along $y$ of rapidity $b$, the holonomy is a rotation about $\vec u_z$ by $6.86557^\circ$, $12.91464^\circ$, $24.10915^\circ$, and $32.71532^\circ$ for $(a,b) = (0.5,0.5)$, $(1,0.5)$, $(1,1)$, $(1.5,1)$. This is the Thomas–Wigner holonomy, and its rate form is Thomas precession; it is the information a path of boosts carries beyond the information in its endpoints.
 
@@ -305,13 +305,13 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$ | Non-closure of the boosts |
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde{W}(\tilde U_{\mathrm b},\tilde{V})$ | Wigner rotation, $\in SU(2)$ |
-| $\alpha$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
+| $\theta^{\mathrm{wgn}}$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
 | $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\psi/2$ | Hamilton data of a boost on the Hermitian axis |
 | $\frac12[\tilde H_2,\tilde H_1]=\frac{\psi_1\psi_2}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$ | Cocycle condition |
 | $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$ | Boost as a controlled rotation |
-| $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$ | Exact angle at $\theta = \pi/2$ |
-| $h\!\left(\frac{1+\cos\alpha}{2}\right)$ | Spin entropy imprinted on a transverse spin |
+| $\tan\theta^{\mathrm{wgn}} = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$ | Exact angle at $\theta = \pi/2$ |
+| $h\!\left(\frac{1+\cos\theta^{\mathrm{wgn}}}{2}\right)$ | Spin entropy imprinted on a transverse spin |
 | $\tilde{P} = \tilde U_{\vec v_2}\tilde U_{\mathrm b,y}(b)\tilde U_{\mathrm b,x}(a)$ | Holonomy of a closed velocity loop |
 | $d\vec\Omega_{\mathrm{T}}/dt' = -\frac{\gamma-1}{v^2}\vec v\times\,d\vec v/dt'$ | Thomas precession rate |
 

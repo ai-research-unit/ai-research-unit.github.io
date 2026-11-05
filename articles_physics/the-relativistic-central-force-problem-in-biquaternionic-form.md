@@ -17,7 +17,7 @@ is derived, where $E$ is the conserved total energy, $L$ the conserved angular m
 $$
 r(\theta)=\frac{p}{1+e\cos\omega(\theta-\theta_0)}, \qquad \omega^2=1-\frac{\kappa^2}{c^2L^2},
 $$
-with $p=c^2L^2\omega^2/(\kappa E)$ and the eccentricity fixed by the energy. The orbit is a conic in the rescaled angle $\omega\theta$, so it is a conic that precesses; the advance per revolution is $\Delta=2\pi(1/\omega-1)$, which for small $\kappa^2/(c^2L^2)$ is $\pi\kappa^2/(c^2L^2)$.
+with $p=c^2L^2\omega^2/(\kappa E)$ and the eccentricity fixed by the energy. The orbit is a conic in the rotating-frame angle $\theta^{\mathrm{azm}}=\omega\theta$, so it is a conic that precesses; the advance per revolution is $\Delta=2\pi(1/\omega-1)$, which for small $\kappa^2/(c^2L^2)$ is $\pi\kappa^2/(c^2L^2)$.
 - **The bound-orbit condition.** Bound orbits without a fall into the centre require $L>\kappa/c$, and the circular orbit is exact, with $E=mc^2\omega$ and $r_c=L^2\omega/(m\kappa)$. The condition is genuinely relativistic: in the non-relativistic problem every positive angular momentum admits a bound orbit.
 
 The article is deliberately parallel to its non-relativistic counterparts. *Central Forces and the Classical Kepler Problem in Biquaternionic Form* solves the inverse-square orbit and exhibits the Runge–Lenz vector; *The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form* develops its symmetry algebra; *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form* fixes the algebraic criterion for a force to be central and derives Binet's equation. The present article re-derives the relativistic orbit equation from the mass-shell relation rather than importing it, and it locates the one structural difference between the two problems: the relativistic mass is a function of the state, so the effective force is not central in the non-relativistic sense and the closed orbit opens into a precessing one.
@@ -204,7 +204,7 @@ $$
 \boxed{\ r(\theta)=\frac{p}{1+e\cos\omega(\theta-\theta_0)}\ } ,
 $$
 
-a **conic in the rescaled angle** $\varphi=\omega\theta$. In the plane coordinatized by $(r,\varphi)$ it is an ordinary Kepler conic with its focus at the centre; in the physical plane the apsidal line advances by
+a **conic in the rescaled angle** $\theta^{\mathrm{azm}}=\omega\theta$. In the plane coordinatized by $(r,\theta^{\mathrm{azm}})$ it is an ordinary Kepler conic with its focus at the centre; in the physical plane the apsidal line advances by
 
 $$
 \boxed{\ \Delta=\frac{2\pi}{\omega}-2\pi=2\pi\left(\frac{1}{\sqrt{1-\kappa^2/(c^2L^2)}}-1\right)\ }
@@ -286,11 +286,11 @@ which is one sixth of the general-relativistic perihelion advance $6\pi GM/(c^2a
 
 The non-relativistic inverse-square problem conserves, besides $\vec L$, the Runge–Lenz vector $\vec A=\vec p\times\vec L-m\kappa\vec u_r$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathrm{SO}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
 
-The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem conserves the energy and the angular momentum as any planar central-force problem does, and the shape of the orbit is fixed by them; only the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
+The orbit remains a conic **in the rotating frame** $\theta^{\mathrm{azm}}=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem conserves the energy and the angular momentum as any planar central-force problem does, and the shape of the orbit is fixed by them; only the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
 A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_\varphi/r^2$ from the force and a term $\alpha\,d\vec u_r/dt'=\alpha L\,\vec u_\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 
-What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\varphi)$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
+What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\theta^{\mathrm{azm}})$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
 
 ## The Algebraic Reading
 
@@ -391,7 +391,7 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | $r_1,r_2$ | Periapsis and apoapsis (roots of the radial constraint) |
 | $\Delta=2\pi(1/\omega-1)$ | Apsidal advance per revolution |
 | $r_c=L^2\omega/(m\kappa)$, $E_c=mc^2\omega$ | Circular orbit radius and energy |
-| $\varphi=\omega\theta$ | Rotating-frame angle of the precessing conic |
+| $\theta^{\mathrm{azm}}=\omega\theta$ | Rotating-frame angle of the precessing conic |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

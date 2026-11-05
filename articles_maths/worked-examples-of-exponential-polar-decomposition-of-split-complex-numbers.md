@@ -7,7 +7,7 @@ This article computes the exponential polar decomposition of eight split-complex
 Each case is read from the two coordinates $q$ and $q'$ of $Q=q+jq'$. The modulus, the angle and the component sign are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
 $$
-Q=r\,\epsilon\,e^{\phi j}.
+Q=r\,\epsilon\,e^{\theta j}.
 $$
 
 The eight cases cover the four open components, the pure discrete unit, the two scalar directions and the boundary.
@@ -18,7 +18,7 @@ The eight cases cover the four open components, the pure discrete unit, the two 
 | Right wedge | $3+5j$ | the same modulus and angle as $5+3j$, $\epsilon=j$ |
 | Past cone | $-5-3j$ | the same modulus and angle, $\epsilon=-1$ |
 | Left wedge | $1-2j$ | a negative angle, $\epsilon=-j$ |
-| Discrete unit | $j$ | a pure component sign, $\phi=0$ |
+| Discrete unit | $j$ | a pure component sign, $\theta=0$ |
 | Positive scalar | $2$ | a pure scale, $\epsilon=1$ |
 | Negative scalar | $-2$ | the same exponent as $2$, $\epsilon=-1$ |
 | Null cone | $1+j$ | $(q+q')(q-q')=0$, but no polar word |
@@ -35,7 +35,7 @@ $$
 r=\sqrt{\lvert q^2-q'^2\rvert}
 =\sqrt{\lvert(q+q')(q-q')\rvert},
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
+\theta=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
 $$
 
 The component sign is read from the quadrant of the pair $(q,q')$:
@@ -52,9 +52,9 @@ The four conditions are exclusive and cover every unit. In every row the product
 The two combinations are recovered from the polar data by
 
 $$
-\boxed{\; r\,e^{\phi}=\lvert q+q'\rvert,
+\boxed{\; r\,e^{\theta}=\lvert q+q'\rvert,
 \qquad
-r\,e^{-\phi}=\lvert q-q'\rvert \;}
+r\,e^{-\theta}=\lvert q-q'\rvert \;}
 $$
 
 These two identities are the check used in every case.
@@ -64,12 +64,12 @@ These two identities are the check used in every case.
 The polar word is
 
 $$
-\boxed{\; Q=\epsilon\,r\,e^{\phi j}=r\,\epsilon\bigl(\cosh\phi+j\sinh\phi\bigr),
+\boxed{\; Q=\epsilon\,r\,e^{\theta j}=r\,\epsilon\bigl(\cosh\theta+j\sinh\theta\bigr),
 \qquad
-Q_{\log}=\ln r+j\phi \;}
+Q_{\log}=\ln r+j\theta \;}
 $$
 
-The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\phi j}$ are read separately, and the reconstruction is the scale $r$ times the unit factor. The check is the multiplication.
+The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\theta j}$ are read separately, and the reconstruction is the scale $r$ times the unit factor. The check is the multiplication.
 
 ### The Matrix Picture
 
@@ -110,19 +110,19 @@ Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.
 $$
 r=\sqrt{16}=4,
 \qquad
-\phi=\tfrac12\ln\frac{8}{2}=\ln2,
+\theta=\tfrac12\ln\frac{8}{2}=\ln2,
 \qquad
 \epsilon=1.
 $$
 
-The two combinations check: $r e^{\phi}=4\cdot2=8=q+q'$ and $r e^{-\phi}=4\cdot\tfrac12=2=q-q'$.
+The two combinations check: $r e^{\theta}=4\cdot2=8=q+q'$ and $r e^{-\theta}=4\cdot\tfrac12=2=q-q'$.
 
 **The word.** The exponent and the unit factor are
 
 $$
 Q_{\log}=\ln4+j\ln2,
 \qquad
-\epsilon e^{\phi j}=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34j.
+\epsilon e^{\theta j}=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34j.
 $$
 
 Therefore
@@ -168,12 +168,12 @@ Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.
 $$
 r=\sqrt{\lvert-16\rvert}=4,
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
+\theta=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
 \qquad
 \epsilon=j.
 $$
 
-The two combinations check: $r e^{\phi}=8=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.
+The two combinations check: $r e^{\theta}=8=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.
 
 **The word.** The exponent is the same string as in case 1,
 
@@ -184,7 +184,7 @@ $$
 but the unit factor is different:
 
 $$
-\epsilon e^{\phi j}=j\left(\tfrac54+\tfrac34j\right)=\tfrac34+\tfrac54j.
+\epsilon e^{\theta j}=j\left(\tfrac54+\tfrac34j\right)=\tfrac34+\tfrac54j.
 $$
 
 Therefore
@@ -230,17 +230,17 @@ Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.
 $$
 r=4,
 \qquad
-\phi=\ln2,
+\theta=\ln2,
 \qquad
 \epsilon=-1.
 $$
 
-The two combinations check: $r e^{\phi}=8=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.
+The two combinations check: $r e^{\theta}=8=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.
 
 **The word.** The exponent is again $\ln4+j\ln2$, and the unit factor is
 
 $$
-\epsilon e^{\phi j}=-\left(\tfrac54+\tfrac34j\right).
+\epsilon e^{\theta j}=-\left(\tfrac54+\tfrac34j\right).
 $$
 
 Therefore
@@ -280,12 +280,12 @@ Since $q'<-\lvert q\rvert$, the component sign is $\epsilon=-j$.
 $$
 r=\sqrt{\lvert-3\rvert}=\sqrt3,
 \qquad
-\phi=\tfrac12\ln\left\lvert\frac{-1}{3}\right\rvert=-\tfrac12\ln3,
+\theta=\tfrac12\ln\left\lvert\frac{-1}{3}\right\rvert=-\tfrac12\ln3,
 \qquad
 \epsilon=-j.
 $$
 
-The two combinations check: $r e^{\phi}=\sqrt3\cdot\tfrac{1}{\sqrt3}=1=\lvert q+q'\rvert$ and $r e^{-\phi}=\sqrt3\cdot\sqrt3=3=\lvert q-q'\rvert$.
+The two combinations check: $r e^{\theta}=\sqrt3\cdot\tfrac{1}{\sqrt3}=1=\lvert q+q'\rvert$ and $r e^{-\theta}=\sqrt3\cdot\sqrt3=3=\lvert q-q'\rvert$.
 
 **The word.** The exponent is
 
@@ -296,7 +296,7 @@ $$
 and the unit factor is
 
 $$
-\epsilon e^{\phi j}=-j\left(\frac{2}{\sqrt3}-\frac{1}{\sqrt3}j\right)
+\epsilon e^{\theta j}=-j\left(\frac{2}{\sqrt3}-\frac{1}{\sqrt3}j\right)
 =\frac{1}{\sqrt3}-\frac{2}{\sqrt3}j.
 $$
 
@@ -343,14 +343,14 @@ Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.
 $$
 r=1,
 \qquad
-\phi=0,
+\theta=0,
 \qquad
 \epsilon=j.
 $$
 
-The two combinations check: $r e^{\phi}=1=\lvert q+q'\rvert$ and $r e^{-\phi}=1=\lvert q-q'\rvert$.
+The two combinations check: $r e^{\theta}=1=\lvert q+q'\rvert$ and $r e^{-\theta}=1=\lvert q-q'\rvert$.
 
-**The word.** The exponent is $Q_{\log}=0$, and the unit factor is $\epsilon e^{\phi j}=j$. Therefore
+**The word.** The exponent is $Q_{\log}=0$, and the unit factor is $\epsilon e^{\theta j}=j$. Therefore
 
 $$
 Q=1\cdot j=j.
@@ -387,12 +387,12 @@ Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.
 $$
 r=2,
 \qquad
-\phi=0,
+\theta=0,
 \qquad
 \epsilon=1.
 $$
 
-The two combinations check: $r e^{\phi}=2=q+q'$ and $r e^{-\phi}=2=q-q'$.
+The two combinations check: $r e^{\theta}=2=q+q'$ and $r e^{-\theta}=2=q-q'$.
 
 **The word.** The exponent is
 
@@ -431,12 +431,12 @@ Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.
 $$
 r=2,
 \qquad
-\phi=0,
+\theta=0,
 \qquad
 \epsilon=-1.
 $$
 
-The two combinations check: $r e^{\phi}=2=\lvert q+q'\rvert$ and $r e^{-\phi}=2=\lvert q-q'\rvert$.
+The two combinations check: $r e^{\theta}=2=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.
 
 **The word.** The exponent is the same as in case 6,
 
@@ -495,14 +495,14 @@ Its coordinates give
 $$
 r=\sqrt{\delta(2+\delta)},
 \qquad
-\phi=\tfrac12\ln\frac{2+\delta}{\delta},
+\theta=\tfrac12\ln\frac{2+\delta}{\delta},
 \qquad
 \epsilon=1,
 $$
 
-and the two combinations are $r e^{\phi}=2+\delta$ and $r e^{-\phi}=\delta$. The table gives the approach.
+and the two combinations are $r e^{\theta}=2+\delta$ and $r e^{-\theta}=\delta$. The table gives the approach.
 
-| $\delta$ | $r$ | $\phi$ | $r e^{\phi}$ | $r e^{-\phi}$ |
+| $\delta$ | $r$ | $\theta$ | $r e^{\theta}$ | $r e^{-\theta}$ |
 |---|---|---|---|---|
 | $0.1$ | $0.4582575695$ | $1.522261219$ | $2.1$ | $0.1$ |
 | $0.01$ | $0.1417744688$ | $2.651652454$ | $2.01$ | $0.01$ |
@@ -514,7 +514,7 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ### Main Results
 
-| Case | $Q$ | $q$ | $q'$ | $q^2-q'^2$ | $\epsilon$ | $r$ | $\phi$ | $Q_{\log}$ |
+| Case | $Q$ | $q$ | $q'$ | $q^2-q'^2$ | $\epsilon$ | $r$ | $\theta$ | $Q_{\log}$ |
 |---|---|---|---|---|---|---|---|---|
 | $1$ | $5+3j$ | $5$ | $3$ | $16$ | $1$ | $4$ | $\ln2$ | $\ln4+j\ln2$ |
 | $2$ | $3+5j$ | $3$ | $5$ | $-16$ | $j$ | $4$ | $\ln2$ | $\ln4+j\ln2$ |
@@ -527,7 +527,7 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ### The Reconstruction Table
 
-| Case | $Q$ | Unit factor $\epsilon e^{\phi j}$ | $r$ times the unit factor | Error |
+| Case | $Q$ | Unit factor $\epsilon e^{\theta j}$ | $r$ times the unit factor | Error |
 |---|---|---|---|---|
 | $1$ | $5+3j$ | $\tfrac54+\tfrac34j$ | $5+3j$ | $0$ |
 | $2$ | $3+5j$ | $\tfrac34+\tfrac54j$ | $3+5j$ | $0$ |
@@ -540,12 +540,12 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ### What the Cases Show
 
-- Cases 1 to 3 share the modulus $r=4$ and the angle $\phi=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.
+- Cases 1 to 3 share the modulus $r=4$ and the angle $\theta=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.
 - Cases 2 and 3 have $\exp(Q_{\log})=\epsilon Q$, not $Q$. The exponent is the logarithm of the element pushed into the future cone.
 - Case 4 has $q>0$ but $q+q'<0$, so the component is the left wedge, not the future cone. The sign of $q$ does not determine the component.
 - Cases 6 and 7 have the same exponent $\ln2$ and differ only by $\epsilon$. The discrete factor is not a period: the kernel of the exponential is $\{0\}$.
-- Case 5 is the pure discrete factor, with $r=1$ and $\phi=0$.
-- Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $r\to0$, $\phi\to\infty$ with $r e^{\phi}\to2$.
+- Case 5 is the pure discrete factor, with $r=1$ and $\theta=0$.
+- Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $r\to0$, $\theta\to\infty$ with $r e^{\theta}\to2$.
 
 ## Summary of Notation
 
@@ -557,8 +557,8 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 | $q^2-q'^2=(q+q')(q-q')$ | the product $Q\bar Q$ |
 | $\epsilon\in\{1,-1,j,-j\}$ | the component sign |
 | $r=\sqrt{\lvert q^2-q'^2\rvert}$ | the modulus |
-| $\phi$ | the hyperbolic angle |
-| $Q_{\log}=\ln r+j\phi$ | the exponent, a logarithm of $\epsilon Q$ |
+| $\theta$ | the hyperbolic angle |
+| $Q_{\log}=\ln r+j\theta$ | the exponent, a logarithm of $\epsilon Q$ |
 | $F,R,L$ | the future cone and the two spacelike wedges |
 | $M_Q$ | the real symmetric matrix of multiplication by $Q$ |
 | $\delta$ | the parameter of the boundary family of case 8 |

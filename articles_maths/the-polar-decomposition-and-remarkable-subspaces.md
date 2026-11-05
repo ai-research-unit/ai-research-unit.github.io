@@ -24,26 +24,26 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
+The symbols $r$, $\zeta$, $\theta^{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
 ## The Four Exponents of the Word
 
-Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\alpha=\arg\zeta$, and the square of the root decides the character of the factor. The four factors and their exponents are
+Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta^{\mathrm{pha}}=\arg\zeta$, and the square of the root decides the character of the factor. The four factors and their exponents are
 
 $$
 \boxed{\; \tilde{Q}=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \bigl(r,\zeta,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
 \longleftrightarrow
-\bigl(\ln r,\,i\alpha,\,i\tfrac{\psi}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) \;}.
+\bigl(\ln r,\,i\theta^{\mathrm{pha}},\,i\tfrac{\psi}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) \;}.
 $$
 
 | factor | exponent | root | square of the root | character |
 |---|---|---|---|---|
 | $r$ | $\ln r$ | $e_t$ | $+e_t$ | hyperbolic, degenerate |
-| $\zeta$ | $i\alpha$ | $i$ | $-e_t$ | trigonometric, central |
+| $\zeta$ | $i\theta^{\mathrm{pha}}$ | $i$ | $-e_t$ | trigonometric, central |
 | $\tilde U_{\mathrm b}$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $+e_t$ | hyperbolic |
 | $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $-e_t$ | trigonometric |
 
@@ -66,13 +66,13 @@ The two scalar blocks $A_1,A_2$ have real dimension one, the two vector blocks $
 | exponent | block | the block | factor |
 |---|---|---|---|
 | $\ln r$ | $A_1 = \mathbb{R}e_t$ | the real scalar line | the scale |
-| $i\alpha$ | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar line | the central phase |
+| $i\theta^{\mathrm{pha}}$ | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar line | the central phase |
 | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block | the rotor |
 | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | the imaginary vector block | the boost |
 
 **Theorem (the block reading of the polar word).** For a generic polar word, each one of the four exponents lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.
 
-**Proof.** The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\alpha$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.
+**Proof.** The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\theta^{\mathrm{pha}}$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.
 
 The additivity of the dimensions of the blocks is the block form of the count of the four factors,
 
@@ -92,7 +92,7 @@ Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ in which $i\vec e_x,
 |---|---|---|---|---|
 | grade | $0$ | $1$ | $2$ | $3$ |
 | basis | $e_t$ | $i\vec e_x,i\vec e_y,i\vec e_z$ | $\vec e_x,\vec e_y,\vec e_z$ | $ie_t$ |
-| exponent it carries | $\ln r$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $i\alpha$ |
+| exponent it carries | $\ln r$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $i\theta^{\mathrm{pha}}$ |
 | factor | the scale | the boost | the rotor | the central phase |
 
 **The four factors of the polar word are the four Clifford grades, one factor to a grade**, and the order of the grades is not the order of the word: the word is written scale, phase, boost, rotor, which is grade $0$, grade $3$, grade $1$, grade $2$.
@@ -112,7 +112,7 @@ $$
 because $\vec e_x = -(i\vec e_y)(i\vec e_z)$, $\vec e_y = -(i\vec e_z)(i\vec e_x)$ and $\vec e_z = -(i\vec e_x)(i\vec e_y)$. The scale exponent is the scalar and the phase exponent the pseudoscalar,
 
 $$
-\ln r\in\mathbb{R} , \qquad i\alpha = \alpha\,ie_t ,
+\ln r\in\mathbb{R} , \qquad i\theta^{\mathrm{pha}} = \theta^{\mathrm{pha}}\,ie_t ,
 $$
 
 since $ie_t = (i\vec e_x)(i\vec e_y)(i\vec e_z)$ is the product of the three generators.
@@ -143,7 +143,7 @@ The block reading of the word and the block reading of the subspaces give the in
 | exponent | its block | the subspaces that contain it |
 |---|---|---|
 | $\ln r$ (scale) | $A_1$ | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ |
-| $i\alpha$ (phase) | $A_2$ | $\mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ |
+| $i\theta^{\mathrm{pha}}$ (phase) | $A_2$ | $\mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ |
 | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ (boost) | $B_2$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ |
 | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ (rotor) | $B_1$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ |
 
@@ -155,12 +155,12 @@ Read subspace by subspace, the incidence gives the pair of exponents each subspa
 
 | subspace | the two exponents it carries | names |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\ln r$, $i\alpha$ | the modulus |
+| $\mathbb{C}_{\mathbb{B}}$ | $\ln r$, $i\theta^{\mathrm{pha}}$ | the modulus |
 | $\mathrm{Vect}(\mathbb{B})$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the two axes |
 | $\mathbb{H}_{\mathbb{B}}$ | $\ln r$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the scale and the rotor |
-| $i\mathbb{H}_{\mathbb{B}}$ | $i\alpha$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | the phase and the boost |
+| $i\mathbb{H}_{\mathbb{B}}$ | $i\theta^{\mathrm{pha}}$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | the phase and the boost |
 | $\mathbb{M}_+$ | $\ln r$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | the hyperbolic pair |
-| $\mathbb{M}_-$ | $i\alpha$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the trigonometric pair |
+| $\mathbb{M}_-$ | $i\theta^{\mathrm{pha}}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the trigonometric pair |
 
 Three consequences follow at once.
 
@@ -174,7 +174,7 @@ The incidence also matches the Hermitian split of the exponents of *The Cartan H
 
 The incidence says which exponents a subspace can carry. The polar data of an element of a subspace say more: which of the four factors are trivial there, and what the phase is.
 
-The behaviour of the phase is decided by the norm alone. The phase is $\alpha = \tfrac{1}{2}\arg \langle\tilde{Q}\rangle_{\natural}$, so it is constant on a subspace exactly when the argument of the norm is constant there, and the six subspaces realise the possible behaviours.
+The behaviour of the phase is decided by the norm alone. The phase is $\theta^{\mathrm{pha}} = \tfrac{1}{2}\arg \langle\tilde{Q}\rangle_{\natural}$, so it is constant on a subspace exactly when the argument of the norm is constant there, and the six subspaces realise the possible behaviours.
 
 | subspace | the norm $\langle\tilde{Q}\rangle_{\natural}$ | the phase |
 |---|---|---|
@@ -479,12 +479,12 @@ $$
 
 so a vanishing norm stays vanishing and a non-vanishing one stays non-vanishing. The factors themselves transform as follows.
 
-| conjugation | the scale $r$ | the phase angle $\alpha$ | the boost | the rotor |
+| conjugation | the scale $r$ | the phase angle $\theta^{\mathrm{pha}}$ | the boost | the rotor |
 |---|---|---|---|---|
-| $\overline{\tilde{Q}}$ | unchanged | $-\alpha$ | $\tilde U_{\mathrm b}^{\natural}$ | $\tilde u_{\mathrm r}$ |
+| $\overline{\tilde{Q}}$ | unchanged | $-\theta^{\mathrm{pha}}$ | $\tilde U_{\mathrm b}^{\natural}$ | $\tilde u_{\mathrm r}$ |
 | $\tilde{Q}^{\natural}$ | unchanged | unchanged | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
-| $\tilde{Q}^{*}$ | unchanged | $-\alpha$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
-| $\tilde{Q}^{\flat}$ | unchanged | $-\alpha$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $-\tilde u_{\mathrm r}^{-1}$ |
+| $\tilde{Q}^{*}$ | unchanged | $-\theta^{\mathrm{pha}}$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
+| $\tilde{Q}^{\flat}$ | unchanged | $-\theta^{\mathrm{pha}}$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $-\tilde u_{\mathrm r}^{-1}$ |
 
 The complex conjugation is the one that preserves the shape of the word. Its effect is the coefficientwise conjugation of each factor, and since the rotor is a real quaternion and the boost has one real and three purely imaginary coefficients,
 
@@ -514,9 +514,9 @@ The reversal is the Hermitian conjugate followed by the central sign, $\tilde{Q}
 
 ## Worked Examples
 
-**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\Rho = 1.2-0.5i$, so $r = 1.3$ and $\alpha = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.
+**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\Rho = 1.2-0.5i$, so $r = 1.3$ and $\theta^{\mathrm{pha}} = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.
 
-**The quaternion subspace.** For $\tilde q = 0.7+1.1\vec e_x-0.4\vec e_y+0.9\vec e_z$ the norm is the positive real $2.67$, so $\alpha = 0$, the boost is $e_t$, and the rotor is the normalised element,
+**The quaternion subspace.** For $\tilde q = 0.7+1.1\vec e_x-0.4\vec e_y+0.9\vec e_z$ the norm is the positive real $2.67$, so $\theta^{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the normalised element,
 
 $$
 \tilde u_{\mathrm r} = 0.428393043\,e_t+0.673189067\,\vec e_x-0.244796025\,\vec e_y+0.550791055\,\vec e_z ,
@@ -524,15 +524,15 @@ $$
 
 of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $r = 1.634013464$.
 
-**The anti-quaternion subspace.** The same element multiplied by $i$ has norm $-2.67$, so $\alpha = \pi/2$, the boost is again $e_t$, and the rotor is the same unit real quaternion; only the phase has moved, by the quarter turn.
+**The anti-quaternion subspace.** The same element multiplied by $i$ has norm $-2.67$, so $\theta^{\mathrm{pha}} = \pi/2$, the boost is again $e_t$, and the rotor is the same unit real quaternion; only the phase has moved, by the quarter turn.
 
-**The real vector block.** For $\vec\Rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\alpha = 0$, the boost is $e_t$, and the rotor is the direction $\vec\Rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\alpha = \pi/2$, the same boost and the same rotor.
+**The real vector block.** For $\vec\Rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\theta^{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the direction $\vec\Rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\theta^{\mathrm{pha}} = \pi/2$, the same boost and the same rotor.
 
-**A generic complex vector.** For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\alpha = 0.387081341$. The boost has rapidity $\psi = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.
+**A generic complex vector.** For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\theta^{\mathrm{pha}} = 0.387081341$. The boost has rapidity $\psi = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.
 
-**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\alpha = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.
+**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\theta^{\mathrm{pha}} = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.
 
-**The product of two boosts.** For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\alpha = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\psi = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.
+**The product of two boosts.** For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\theta^{\mathrm{pha}} = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\psi = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -569,8 +569,8 @@ The two products of the series are the product of two boosts, which is a boost t
 | $\tilde{Q} = r \zeta \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
 | $r$, $\zeta$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\Rho = r\zeta = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
-| $\alpha$ | the phase angle, $\alpha=\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
-| $\ln r$, $i\alpha$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
+| $\theta^{\mathrm{pha}}$ | the phase angle, $\theta^{\mathrm{pha}}=\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
+| $\ln r$, $i\theta^{\mathrm{pha}}$, $i\tfrac{\psi}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
 | $A_1 = \mathbb{R}e_t$ | the real scalar block, home of the scale exponent |
 | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar block, home of the phase exponent |
 | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block, home of the rotor exponent |

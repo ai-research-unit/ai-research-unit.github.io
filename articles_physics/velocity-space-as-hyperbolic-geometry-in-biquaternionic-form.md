@@ -159,11 +159,11 @@ Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(
 
 A boost is a point of velocity space, and a path of boosts is a path in it; the statement that a closed path of boosts need not be a closed path of frames is the statement that the connection has curvature, and the Wigner rotation is its holonomy. The holonomy has a closed geometric value.
 
-**Proposition.** Let $\tilde U_{\mathrm b,1}$ have rapidity $a$ along $\vec u_x$ and $\tilde U_{\mathrm b,2}$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$. Then, in rapidity units,
+**Proposition.** Let $\tilde U_{\mathrm b,1}$ have rapidity $a$ along $\vec u_x$ and $\tilde U_{\mathrm b,2}$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\theta^{\mathrm{wgn}}$ be the angle of the Wigner rotation of the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$. Then, in rapidity units,
 $$
-\boxed{\ \alpha = \pi-(A+B+C)\ } ,
+\boxed{\ \theta^{\mathrm{wgn}} = \pi-(A+B+C)\ } ,
 $$
-the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\alpha$ is the **hyperbolic area** of that triangle. In physical units the angle is the area divided by $c^2$, $\alpha = A^{\mathrm{hyp}}/c^2$.
+the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\theta^{\mathrm{wgn}}$ is the **hyperbolic area** of that triangle. In physical units the angle is the area divided by $c^2$, $\theta^{\mathrm{wgn}} = A^{\mathrm{hyp}}/c^2$.
 
 The triangle is the **rapidity triangle** of the loop: its sides are the three rapidities, and its existence is the triangle inequality of the geometry, $\rho<a+b$. The proposition says that the whole of the rotation produced by a closed path of boosts is measured by the hyperbolic area the three rapidities span, which is the Gauss–Bonnet theorem for the boost connection.
 
@@ -173,11 +173,11 @@ A sharpening of the companion article's interpretation is worth stating, because
 
 For small rapidities the defect has the expansion
 $$
-\alpha = \frac{ab}{2}-\frac{ab\,(a^2+b^2)}{24}+\cdots ,
+\theta^{\mathrm{wgn}} = \frac{ab}{2}-\frac{ab\,(a^2+b^2)}{24}+\cdots ,
 $$
-so the Euclidean area $\tfrac12 ab$ is the leading term and the hyperbolic area is smaller, by an amount of order $a^4$. The companion article on the Wigner rotation records the ratio $\alpha/(ab)$ at three small loops and observes it drifting *below* $\tfrac12$ without identifying the cause:
+so the Euclidean area $\tfrac12 ab$ is the leading term and the hyperbolic area is smaller, by an amount of order $a^4$. The companion article on the Wigner rotation records the ratio $\theta^{\mathrm{wgn}}/(ab)$ at three small loops and observes it drifting *below* $\tfrac12$ without identifying the cause:
 
-| $(a,b)$ | $\alpha/(ab)$ recorded | $\tfrac12-\tfrac{a^2+b^2}{24}$ |
+| $(a,b)$ | $\theta^{\mathrm{wgn}}/(ab)$ recorded | $\tfrac12-\tfrac{a^2+b^2}{24}$ |
 |---|---|---|
 | $(0.05,0.05)$ | $0.499792$ | $0.4997917$ |
 | $(0.2,0.1)$ | $0.497921$ | $0.4979167$ |
@@ -209,9 +209,9 @@ The absolute of velocity space is the light cone, and in the algebra the light c
 
 The geometry belongs to the material sector, and its curvature is measured in the informational one, which is worth separating.
 
-The velocity hyperboloid is a quadric in $\mathbb{M}_-$, the material sector, where the four-velocities live; the distance $d$ between two velocities is a material quantity, computed from the biquaternion norm $\langle\cdot\rangle_{\natural}$ of two elements of $\mathbb{M}_-$. The boost rotor is Hermitian, an element of $\mathbb{M}_+$; the holonomy is $*$-unitary, an element of the rotation group inside $\mathbb{M}_-^{0}$; and the angle $\alpha$ is read off the trace of the $*$-unitary part, which is a statement about the informational sector's operator algebra. So the curvature of the boost connection is the one place in the relativity series where a geometric quantity of the material sector — an area — is literally equal to an operator-theoretic quantity of the informational sector — a rotation angle. The equality is the content of the statement that the two sectors are the two signatures of the same form, and the Gauss–Bonnet theorem is the bridge between them.
+The velocity hyperboloid is a quadric in $\mathbb{M}_-$, the material sector, where the four-velocities live; the distance $d$ between two velocities is a material quantity, computed from the biquaternion norm $\langle\cdot\rangle_{\natural}$ of two elements of $\mathbb{M}_-$. The boost rotor is Hermitian, an element of $\mathbb{M}_+$; the holonomy is $*$-unitary, an element of the rotation group inside $\mathbb{M}_-^{0}$; and the angle $\theta^{\mathrm{wgn}}$ is read off the trace of the $*$-unitary part, which is a statement about the informational sector's operator algebra. So the curvature of the boost connection is the one place in the relativity series where a geometric quantity of the material sector — an area — is literally equal to an operator-theoretic quantity of the informational sector — a rotation angle. The equality is the content of the statement that the two sectors are the two signatures of the same form, and the Gauss–Bonnet theorem is the bridge between them.
 
-For a spin the area statement has the operational interpretation of the companion article: a transverse loop of boosts imprints on the spin a rotation of angle equal to the area, and the entropy it can imprint is $h((1+\cos\alpha)/2)$, so the hyperbolic area is a bound on the information a closed path of frame changes can carry to the spin.
+For a spin the area statement has the operational interpretation of the companion article: a transverse loop of boosts imprints on the spin a rotation of angle equal to the area, and the entropy it can imprint is $h((1+\cos\theta^{\mathrm{wgn}})/2)$, so the hyperbolic area is a bound on the information a closed path of frame changes can carry to the spin.
 
 ## What the Framework Supplies and What It Transcribes
 
@@ -245,8 +245,8 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 | $\cosh\rho = \cosh a\cosh b+\cos\theta\sinh a\sinh b$ | Composition law of two boosts (spherical type) |
 | $\cosh\frac{d}{c} = \cosh\psi_1\cosh\psi_2-\cos\theta\sinh\psi_1\sinh\psi_2$ | Relative velocity (hyperbolic law of cosines) |
 | $c\mapsto ic$ | Sommerfeld interchange of the hyperbolic and spherical representations |
-| $\alpha = \pi-(A+B+C) = A^{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
-| $\alpha = \frac{ab}{2}-\frac{ab(a^2+b^2)}{24}+\cdots$ | Small-loop expansion; the Euclidean area is the leading term |
+| $\theta^{\mathrm{wgn}} = \pi-(A+B+C) = A^{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
+| $\theta^{\mathrm{wgn}} = \frac{ab}{2}-\frac{ab(a^2+b^2)}{24}+\cdots$ | Small-loop expansion; the Euclidean area is the leading term |
 | $\lvert\vec v\rvert = c$, $\langle\tilde{Q}\rangle_{\natural} = 0$ | Boundary at infinity = light cone = zero-divisor cone |
 
 ## Further Reading

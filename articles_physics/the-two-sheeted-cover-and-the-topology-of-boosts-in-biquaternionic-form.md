@@ -238,16 +238,16 @@ and its third homotopy group is $\pi_3(S^3) = \mathbb{Z}$, carried by the compac
 Boosts do not form a group. The product of two boost rotors is a unit-norm rotor, hence by the right polar decomposition a rotation times a boost,
 
 $$
-B(\psi_1,\vec u_x)\,B(\psi_2,\vec u_y) = \tilde u_{\mathrm r}(\omega,\vec u_{\mathrm r2})\,B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}),
+B(\psi_1,\vec u_x)\,B(\psi_2,\vec u_y) = \tilde u_{\mathrm r}(\theta^{\mathrm{wgn}},\vec u_{\mathrm r2})\,B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}),
 $$
 
-where $\tilde u_{\mathrm r}$ is the rotation factor and $B_{\mathrm{right}}$ is the right polar boost, the rotation-conjugate of the corpus boost $\tilde U_{\mathrm b}$; the angle $\omega$ is the same in either word. The rotation factor is present whenever the two boost directions are not collinear. This rotation is the **Thomas–Wigner rotation**; it is the group-theoretic statement that the boost manifold is not a subgroup, and it is the physical face of the fact recorded above, that the topology and the non-closure both come from the rotation directions.
+where $\tilde u_{\mathrm r}$ is the rotation factor and $B_{\mathrm{right}}$ is the right polar boost, the rotation-conjugate of the corpus boost $\tilde U_{\mathrm b}$; the angle $\theta^{\mathrm{wgn}}$ is the same in either word. The rotation factor is present whenever the two boost directions are not collinear. This rotation is the **Thomas–Wigner rotation**; it is the group-theoretic statement that the boost manifold is not a subgroup, and it is the physical face of the fact recorded above, that the topology and the non-closure both come from the rotation directions.
 
-For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the Wigner rotation axis is the normal to the plane of the two directions and the Wigner angle $\omega$ is given by
+For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the Wigner rotation axis is the normal to the plane of the two directions and the Wigner angle $\theta^{\mathrm{wgn}}$ is given by
 
 $$
 \boxed{\;
-\tan\frac{\omega}{2} = \frac{\sinh^2\dfrac{\psi}{2}\,\sin\theta}
+\tan\frac{\theta^{\mathrm{wgn}}}{2} = \frac{\sinh^2\dfrac{\psi}{2}\,\sin\theta}
 {\cosh^2\dfrac{\psi}{2} + \sinh^2\dfrac{\psi}{2}\,\cos\theta} \;}
 $$
 
@@ -268,10 +268,10 @@ B_1B_2 = \left(c^2 + s^2\cos\theta\right)
 + i\,sc\left(1+\cos\theta\right)\vec e_z .
 $$
 
-The rotation part of this product is a rotation about $\vec e_y$, the normal to the plane, so write $\tilde u_{\mathrm r} = \cos\frac{\omega}{2} + \sin\frac{\omega}{2}\vec u_{\mathrm r2}$ with $\vec u_{\mathrm r2} = \pm \vec e_y$. The configuration is symmetric under the reflection that fixes the $\vec e_x$–$\vec e_z$ plane and reverses $\vec e_y$, so the right polar boost carries no $\vec e_y$ component and $\tilde u_{\mathrm r}$ lies along $e_t$ and $\vec e_y$; the numerical polar decomposition below confirms both. Writing $B_{\mathrm{eff}} = B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}) = \cosh\frac{\psi_{\mathrm{eff}}}{2} + i\sinh\frac{\psi_{\mathrm{eff}}}{2}\vec u_{\mathrm{eff}}$ with $\vec u_{\mathrm{eff}}$ in the $\vec e_x$–$\vec e_z$ plane, and writing $M_\mu$ for the coefficient of $\vec e_\mu$ in a biquaternion $M$, the scalar and $\vec e_y$ components of $L = \tilde u_{\mathrm r} B_{\mathrm{eff}}$ are therefore
+The rotation part of this product is a rotation about $\vec e_y$, the normal to the plane, so write $\tilde u_{\mathrm r} = \cos\frac{\theta^{\mathrm{wgn}}}{2} + \sin\frac{\theta^{\mathrm{wgn}}}{2}\vec u_{\mathrm r2}$ with $\vec u_{\mathrm r2} = \pm \vec e_y$. The configuration is symmetric under the reflection that fixes the $\vec e_x$–$\vec e_z$ plane and reverses $\vec e_y$, so the right polar boost carries no $\vec e_y$ component and $\tilde u_{\mathrm r}$ lies along $e_t$ and $\vec e_y$; the numerical polar decomposition below confirms both. Writing $B_{\mathrm{eff}} = B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}) = \cosh\frac{\psi_{\mathrm{eff}}}{2} + i\sinh\frac{\psi_{\mathrm{eff}}}{2}\vec u_{\mathrm{eff}}$ with $\vec u_{\mathrm{eff}}$ in the $\vec e_x$–$\vec e_z$ plane, and writing $M_\mu$ for the coefficient of $\vec e_\mu$ in a biquaternion $M$, the scalar and $\vec e_y$ components of $L = \tilde u_{\mathrm r} B_{\mathrm{eff}}$ are therefore
 
 $$
-\mathrm{Sc}(L) = \cos\frac{\omega}{2}\,\cosh\frac{\psi_{\mathrm{eff}}}{2},
+\mathrm{Sc}(L) = \cos\frac{\theta^{\mathrm{wgn}}}{2}\,\cosh\frac{\psi_{\mathrm{eff}}}{2},
 \qquad
 L_2 = \cosh\frac{\psi_{\mathrm{eff}}}{2}\,(\tilde u_{\mathrm r})_2 ,
 $$
@@ -279,7 +279,7 @@ $$
 because the vector parts of $\tilde u_{\mathrm r}$ (along $\vec e_y$) and of $B_{\mathrm{eff}}$ (in the $\vec e_x$–$\vec e_z$ plane) are orthogonal, and because the product of $\vec e_y$ with the $\vec e_x$–$\vec e_z$ part of $B_{\mathrm{eff}}$ lies in the $\vec e_x$–$\vec e_z$ plane. Comparing with the expansion above, whose scalar part is $c^2+s^2\cos\theta$ and whose $\vec e_y$ coefficient is $-s^2\sin\theta$, the common factor $\cosh\frac{\psi_{\mathrm{eff}}}{2}$ cancels in the ratio and
 
 $$
-\tan\frac{\omega}{2} = \frac{s^2\sin\theta}{c^2 + s^2\cos\theta},
+\tan\frac{\theta^{\mathrm{wgn}}}{2} = \frac{s^2\sin\theta}{c^2 + s^2\cos\theta},
 $$
 
 which is the displayed formula in terms of $c = \cosh(\psi/2)$ and $s = \sinh(\psi/2)$. The verification below confirms it numerically.
@@ -287,18 +287,18 @@ which is the displayed formula in terms of $c = \cosh(\psi/2)$ and $s = \sinh(\p
 **Limits.** The formula has two instructive limits. For small rapidity, $\sinh(\psi/2)\approx\psi/2$ and $\cosh(\psi/2)\approx1$, so
 
 $$
-\omega\approx\frac{\psi^2}{2}\sin\theta
+\theta^{\mathrm{wgn}}\approx\frac{\psi^2}{2}\sin\theta
 \qquad(\psi\ll1),
 $$
 
 a purely relativistic effect: it vanishes as $v^2/c^2$. For large rapidity, $\sinh(\psi/2)\approx\cosh(\psi/2)\approx \exp(\psi/2)/2$, so the ratio tends to $\sin\theta/(1+\cos\theta) = \tan(\theta/2)$ and
 
 $$
-\omega\ \longrightarrow\ \theta
+\theta^{\mathrm{wgn}}\ \longrightarrow\ \theta
 \qquad(\psi\to\infty),
 $$
 
-the Wigner angle saturating at the angle between the two boost directions. The verification confirmed both limits: at $\psi = 20$ and $\theta = 1.0$ the formula gave $\omega = 0.9999999955$, and at $\psi = 0.001$ it gave $\omega = 4.2\times10^{-7}$.
+the Wigner angle saturating at the angle between the two boost directions. The verification confirmed both limits: at $\psi = 20$ and $\theta = 1.0$ the formula gave $\theta^{\mathrm{wgn}} = 0.9999999955$, and at $\psi = 0.001$ it gave $\theta^{\mathrm{wgn}} = 4.2\times10^{-7}$.
 
 The interpretation of the limit is worth stating, because it is purely kinematic and non-quantum. A single boost is a boost; two boosts in different directions are a boost accompanied by a rotation whose angle grows with the rapidity from zero and saturates at the angle between the directions. The composition of frame transformations is therefore path-dependent in the boost directions, and the rotation that closes the gap is the holonomy of the boost manifold. It lies in the same compact subgroup that generates the nontrivial loop of the previous sections, now read as the obstruction to boosts forming a subgroup.
 
@@ -370,12 +370,12 @@ $$
 contractible and carrying none of the topology; the decomposition of the group into rotations and boosts is the fibration $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$, whose contractible base leaves the entire $\mathbb{Z}/2$ in the rotation fiber. Boosts do not form a subgroup: for two equal-rapidity boosts separated by $\theta$,
 
 $$
-B_1B_2 = \tilde u_{\mathrm r}(\omega,\vec u_{\mathrm r2})\,B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}),
+B_1B_2 = \tilde u_{\mathrm r}(\theta^{\mathrm{wgn}},\vec u_{\mathrm r2})\,B_{\mathrm{right}}(\psi_{\mathrm{eff}},\vec u_{\mathrm{eff}}),
 \qquad
-\tan\frac{\omega}{2} = \frac{\sinh^2\tfrac{\psi}{2}\sin\theta}{\cosh^2\tfrac{\psi}{2}+\sinh^2\tfrac{\psi}{2}\cos\theta},
+\tan\frac{\theta^{\mathrm{wgn}}}{2} = \frac{\sinh^2\tfrac{\psi}{2}\sin\theta}{\cosh^2\tfrac{\psi}{2}+\sinh^2\tfrac{\psi}{2}\cos\theta},
 $$
 
-with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\to\theta$ as $\psi\to\infty$. The two-sheeted cover and the Wigner rotation are the same compact structure seen from the topological and the compositional side.
+with $\theta^{\mathrm{wgn}}\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\theta^{\mathrm{wgn}}\to\theta$ as $\psi\to\infty$. The two-sheeted cover and the Wigner rotation are the same compact structure seen from the topological and the compositional side.
 
 ## Summary of Notation
 
@@ -394,8 +394,8 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 | $\tilde U_{\mathrm b}(\psi,\vec u) = \sqrt{\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{*}}$ | Left polar boost of the corpus word $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; $\tilde U_{\mathrm b}\neq B_{\mathrm{right}}$ |
 | $\mathcal{B}\cong\mathbb{R}^3\cong\mathbb{H}^3\cong SL(2,\mathbb{C})/SU(2)$ | Boost manifold (hyperbolic three-space), contractible |
 | $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$ | Fibration; topology carried by the rotation fiber |
-| $\tan\frac{\omega}{2} = \frac{\sinh^2(\psi/2)\sin\theta}{\cosh^2(\psi/2)+\sinh^2(\psi/2)\cos\theta}$ | Wigner angle for two equal-rapidity boosts |
-| $\omega\to\frac{\psi^2}{2}\sin\theta$ ($\psi\ll1$), $\omega\to\theta$ ($\psi\to\infty$) | Small- and large-rapidity limits |
+| $\tan\frac{\theta^{\mathrm{wgn}}}{2} = \frac{\sinh^2(\psi/2)\sin\theta}{\cosh^2(\psi/2)+\sinh^2(\psi/2)\cos\theta}$ | Wigner angle for two equal-rapidity boosts |
+| $\theta^{\mathrm{wgn}}\to\frac{\psi^2}{2}\sin\theta$ ($\psi\ll1$), $\theta^{\mathrm{wgn}}\to\theta$ ($\psi\to\infty$) | Small- and large-rapidity limits |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

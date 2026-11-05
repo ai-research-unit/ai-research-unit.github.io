@@ -117,11 +117,11 @@ The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enter
 
 The angle depends on which factor of the word the element carries, and the factor of two is the most common error in the corpus.
 
-- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, whose exponent angle is $\psi/2$. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\psi}{2}$.
-- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\psi\hat p)$, whose exponent angle is $-\psi$. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\psi$, not $-i\psi/2$.
+- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, whose exponent is $\psi/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\psi}{2}$.
+- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\psi\hat p)$, whose exponent is $-\psi$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\psi$, not $-i\psi/2$.
 - The **word parameter** of a four-vector element is $\psi_w=2\psi$, because the word stores the boost twice.
 
-Three statements follow, and each is a check. Do not write $\Theta=i\psi$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\psi/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent angle of the spinor word with the exponent angle of the four-vector word; they differ by a factor of two and a sign.
+Three statements follow, and each is a check. Do not write $\Theta=i\psi$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\psi/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent of the spinor word with the exponent of the four-vector word; they differ by a factor of two and a sign.
 
 ### The Angle Is Not the Rapidity
 
@@ -238,8 +238,8 @@ The reading that changes the theory most is the identification of the modulus wi
 | $\Theta$ | the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$ |
 | $\psi$ | the kinematic rapidity of a four-momentum |
-| $\tilde U_{\mathrm b}(\psi)$ | the frame rotor, exponent angle $\psi/2$ |
-| $\mathcal B=\tilde U_{\mathrm b}^{-2}$ | the four-vector boost factor, exponent angle $-\psi$ |
+| $\tilde U_{\mathrm b}(\psi)$ | the frame rotor, exponent $\psi/2$ |
+| $\mathcal B=\tilde U_{\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\psi$ |
 | $\tilde P=i(E/c)e_t+\vec p$ | the four-momentum, $\Rho=i mc$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |

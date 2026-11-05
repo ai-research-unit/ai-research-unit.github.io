@@ -146,9 +146,9 @@ $$
 The amplitude's polarization dependence is therefore a single pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical cross-section is the modulus squared of an amplitude. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\varepsilon^{\mathrm{fop}}_{\mathrm{out}}\cdot\varepsilon^{\mathrm{fop}}$. And its sum over the outgoing polarizations is a **projector**: using the completeness relation gives
 $$
 \sum_{\lambda_{\mathrm{out}}}\bigl|\varepsilon^{\mathrm{fop}}\cdot\varepsilon^{\mathrm{fop}(\lambda_{\mathrm{out}})}_{\mathrm{out}}\bigr|^2
-= 1 - \bigl(\varepsilon^{\mathrm{fop}}\cdot\vec u_{k,\mathrm{out}}\bigr)^2 = \sin^2\vartheta ,
+= 1 - \bigl(\varepsilon^{\mathrm{fop}}\cdot\vec u_{k,\mathrm{out}}\bigr)^2 = \sin^2\theta^{\mathrm{sct}} ,
 $$
-where $\vartheta$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on one hundred random geometries to $10^{-15}$. For an incident beam polarized **in** the scattering plane, $\vartheta$ is the complement of the scattering angle, the sum is $\cos^2\theta$, and it vanishes at $90^\circ$ — no light is scattered along the direction of the incident polarization, which is the dipole's null axis. For an incident beam polarized **perpendicular** to the plane, $\vartheta = \pi/2$ and the sum is one at every angle, so the scattered light stays fully polarized in that direction.
+where $\theta^{\mathrm{sct}}$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on one hundred random geometries to $10^{-15}$. For an incident beam polarized **in** the scattering plane, $\theta^{\mathrm{sct}}$ is the complement of the scattering angle, the sum is $\cos^2\theta$, and it vanishes at $90^\circ$ — no light is scattered along the direction of the incident polarization, which is the dipole's null axis. For an incident beam polarized **perpendicular** to the plane, $\theta^{\mathrm{sct}} = \pi/2$ and the sum is one at every angle, so the scattered light stays fully polarized in that direction.
 
 ### The helicity amplitudes
 

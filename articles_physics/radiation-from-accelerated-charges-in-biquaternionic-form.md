@@ -420,7 +420,7 @@ $$
 \kappa = 1 - \beta\cos\theta ,
 $$
 
-and an azimuthal angle $\phi$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.
+and an azimuthal angle $\\theta^{\\mathrm{azm}}$ that measures the orientation of $\vec u_R$ around the direction of $\vec\beta$.
 
 For **linear acceleration**, $d\vec\beta/dt'_r\parallel\vec\beta$, the vector triple product collapses. Since $\vec\beta\times\,d\vec\beta/dt'_r = 0$, one has $\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r = \vec u_R\times\,d\vec\beta/dt'_r$ and therefore
 
@@ -441,14 +441,14 @@ For **circular motion**, $d\vec\beta/dt'_r\perp\vec\beta$. Choosing $\vec\beta$ 
 
 $$
 \left|\vec u_R\times\left[\left(\vec u_R-\vec\beta\right)\times\,d\vec\beta/dt'_r\right]\right|^2
-= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right],
+= \left(d\beta/dt'_r\right)^{2}\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right],
 $$
 
 and hence
 
 $$
 \frac{dP}{d\Omega} = \frac{ϙ^2\left(d\beta/dt'_r\right)^{2}}{16\pi^2\epsilon c\,\kappa^6}
-\left[\kappa^2 - \frac{\sin^2\theta\cos^2\phi}{\gamma^2}\right].
+\left[\kappa^2 - \frac{\\sin^2\\theta\\cos^2\\theta^{\mathrm{azm}}}{\gamma^2}\right].
 $$
 
 Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
@@ -582,7 +582,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Field invariants |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $dP/d\Omega$ | Power per unit solid angle (per observer time) |
-| $\theta, \phi$ | Polar angle from $\vec\beta$, azimuthal angle |
+| $\\theta, \\theta^{\\mathrm{azm}}$ | Polar angle from $\vec\beta$, azimuthal angle |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Medium permittivity, permeability, speed of light |
 | $ϙ, m$ | Charge and mass of the radiating particle |
 | $K_{\mathrm{rad}\,\mu}$ | Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $K_\mu$ |

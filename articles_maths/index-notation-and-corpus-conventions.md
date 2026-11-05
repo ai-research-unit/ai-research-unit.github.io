@@ -66,7 +66,13 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 ### The Three-Letter Labels
 
-The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article. The table indexes the caret, where seventy-eight of its rows stand; the seventy-ninth, $\mathrm{lcm}$, is written by its operator name and never as a label. Sixty-nine labels stand only in the low slot and are outside the table, and they, with the thirteen that stand in both slots, are counted in *The Lower Labels and the Obstruction to the Caret*. **Every label is written in lowercase.** The caret is set at superscript size, where the case of a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that forbids the two-letter $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to length.
+The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article.
+
+**The section holds two tables.** The first indexes the caret for the labels that name an object, a construction, a frame or a variant, and it carries seventy-nine rows, one of which, $\mathrm{lcm}$, is written by its operator name and never as a label. The second table carries the thirty angle labels.
+
+**The split is the rule of the angle applied to the caret.** Where one formula holds two angles the first keeps the bare $\theta$ and the second takes a label, so an angle label names a role and not an object, and the two tables never share a row: a label of an object may stand in either slot, an angle label stands only in the caret of $\theta$. Sixty-nine labels stand only in the low slot and are outside both tables, and they, with the thirteen that stand in both slots, are counted in *The Lower Labels and the Obstruction to the Caret*.
+
+**Every label is written in lowercase.** The caret is set at superscript size, where the case of a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that forbids the two-letter $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to length.
 
 **No three-letter token in the caret carries a capital.** The rule is total, and it reaches two families. A label, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$. And an **operator name** written in the caret with its argument, $\gamma_n^{\operatorname{sym}}$ on a divided-power structure, and the fixed field $K^{\operatorname{gal}(K/F)}$ — here the caret carries the acting group as $K^{\sigma}$ carries an automorphism, so the word does not name a variant of $K$ and stays out of the table below. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own. A code is written in the caret, on the object it qualifies: $h^{\mathrm{tpl}}$ the topological entropy, $\Lambda^{\mathrm{top}}$ the top exterior power. The low slot of a code is a defect, as a capital in the caret is. A capital in any of these positions is a defect. **Six codes of a second kind separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. The caret therefore carries six codes in all, and every one of them is lowercase.
 
@@ -153,6 +159,43 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{tpl}$ | the topological entropy and susceptibility, $h^{\mathrm{tpl}}$ |
 | $\mathrm{vol}$ | the volume cell of a frame, $\mathsf{V}^{\mathrm{vol}}$, the chirality operator of the frame |
 | $\mathrm{wkb}$ | the WKB approximation |
+
+**The second table is the angle family.** Each row is a role that a second angle plays in one formula, and the glyph is the same in every row: the label is what tells one angle from another. The table reads alphabetically by the label, and no angle label names an object — the object is the element and the angle is one of its coordinates.
+
+| Label | Names |
+|---|---|
+| $\theta^{\mathrm{axc}}$ | the axicon angle of a Bessel beam |
+| $\theta^{\mathrm{axr}}$ | the rotation angle about an arbitrary axis |
+| $\theta^{\mathrm{axs}}$ | the rotation angle about $\vec u_y$ in the Majorana chart |
+| $\theta^{\mathrm{azm}}$ | the azimuthal angle |
+| $\theta^{\mathrm{blc}}$ | the angle the Bloch vector turns |
+| $\theta^{\mathrm{btw}}$ | the angle between two directions |
+| $\theta^{\mathrm{dfl}}$ | the small deflection angle |
+| $\theta^{\mathrm{drb}}$ | the angle from the Darboux to the Frenet frame |
+| $\theta^{\mathrm{drc}}$ | the direction angle of a unit vector |
+| $\theta^{\mathrm{dua}}$ | the duality-rotation angle of an electromagnetic wave |
+| $\theta^{\mathrm{eul}}$ | the spin angle of a symmetric top |
+| $\theta^{\mathrm{foc}}$ | the colatitude of a point on the sphere |
+| $\theta^{\mathrm{hpa}}$ | the hyperbolic angle of a split-complex number |
+| $\theta^{\mathrm{intr}}$ | the rotation angle of the internal clock |
+| $\theta^{\mathrm{lna}}$ | the angle of the line $a$ |
+| $\theta^{\mathrm{lnb}}$ | the angle of the line $b$ |
+| $\theta^{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
+| $\theta^{\mathrm{pha}}$ | the phase angle of a complex number |
+| $\theta^{\mathrm{pla}}$ | the angle in the first invariant plane |
+| $\theta^{\mathrm{plb}}$ | the angle in the second invariant plane |
+| $\theta^{\mathrm{prc}}$ | the precession angle of a gyroscope |
+| $\theta^{\mathrm{rat}}$ | the angle a rate forms with time, $\omega t'$ |
+| $\theta^{\mathrm{rgp}}$ | the second rotation angle about one axis |
+| $\theta^{\mathrm{sct}}$ | the scattering angle |
+| $\theta^{\mathrm{sol}}$ | the solid angle |
+| $\theta^{\mathrm{stk}}$ | the rotation angle in Stokes space |
+| $\theta^{\mathrm{tnp}}$ | the rotation angle in the tangent plane |
+| $\theta^{\mathrm{vac}}$ | the vacuum angle of a gauge field |
+| $\theta^{\mathrm{wav}}$ | the angle between a wave vector and a boost |
+| $\theta^{\mathrm{wgn}}$ | the Wigner angle of a boost product |
+
+**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,330 occurrences in the two corpora; the largest, $\theta^{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
 
 **A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, and §*The Subscripts* rules on the low slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.
 

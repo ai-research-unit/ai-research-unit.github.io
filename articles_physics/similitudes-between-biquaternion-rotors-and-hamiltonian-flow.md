@@ -130,7 +130,7 @@ $$
 \vec S(t') \;=\; R(t')\,\vec S\,R(t')^\dagger ,
 $$
 
-which is rotation of $\vec S$ about $\vec u_{\mathrm r}$ by angle $\omega t'$. The generators agree **exactly**: with $\vec S$ treated as a pure quaternion,
+which is rotation of $\vec S$ about $\vec u_{\mathrm r}$ by angle $\\theta^{\mathrm{rat}}$. The generators agree **exactly**: with $\vec S$ treated as a pure quaternion,
 
 $$
 \boxed{\;[G, \vec S] \;=\; 2\,G\times\vec S \;=\; \omega\,\vec u_{\mathrm r}\times\vec S \;=\; \{\vec S, H\}\;}

@@ -82,13 +82,13 @@ This article takes the second view. The technical problems are real, but they ar
 
 The arguments above are not the invention of this series. They were put and answered by others, and the exchange is worth recording, because it shows which parts of the case are contested and which are settled.
 
-The defence of $ict'$ rests on the observation that the substitution $Q_t = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\chi$ the identities
+The defence of $ict'$ rests on the observation that the substitution $Q_t = ict'$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\theta$ the identities
 
 $$
-\cos i\chi = \cosh\chi, \qquad \sin i\chi = i\sinh\chi
+\cos i\theta = \cosh\theta, \qquad \sin i\theta = i\sinh\theta
 $$
 
-turn a rotation by $i\chi$ into a boost of rapidity $\chi$. The hyperbolic form of the boost, the velocity-addition theorem as the tangent addition formula, and the interpretation of the transformation as a rotation in a plane are all consequences. This interpretation goes back to Sommerfeld's 1909 treatment, which is the source through which Minkowski's own presentation is usually read. One claim made in the $ict'$ defence is sharper than the rest and is worth stating on its own: that $ict'$ does not *hide* the non-compactness of the Lorentz group but **reveals** it, since $\cosh$ and $\sinh$ are precisely where the unboundedness enters. Every identity in this paragraph is exact.
+turn a rotation by $i\theta$ into a boost of rapidity $\theta$. The hyperbolic form of the boost, the velocity-addition theorem as the tangent addition formula, and the interpretation of the transformation as a rotation in a plane are all consequences. This interpretation goes back to Sommerfeld's 1909 treatment, which is the source through which Minkowski's own presentation is usually read. One claim made in the $ict'$ defence is sharper than the rest and is worth stating on its own: that $ict'$ does not *hide* the non-compactness of the Lorentz group but **reveals** it, since $\cosh$ and $\sinh$ are precisely where the unboundedness enters. Every identity in this paragraph is exact.
 
 The objections are the ones this article already treats as real. The first is that the device is tied to a global inertial frame and does not generalise to a curved metric — the objection that decided the question in gravitational physics. The second is subtler: if a rotation by an imaginary angle is taken at face value, it invites reading Minkowski space as a complexified $\mathbb{C}^4$, and the extra real directions that appear carry nothing observable. That objection is not about the algebra of the substitution, which is exact, but about what one is tempted to make of it.
 

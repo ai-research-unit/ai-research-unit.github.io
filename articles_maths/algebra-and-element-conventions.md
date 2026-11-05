@@ -115,6 +115,27 @@ and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as *Produc
 
 **A point of the space is not written $z$.** The articles of the Duo-Complex Numbers category write a point as $Q$ and do not use $z$ for it, in agreement with *Several Complex Variables*, which writes a point of $\mathbb{C}^n$ as $Q$. The glyph of the point and the glyph of the complex element are the same, and the pair tells them apart: a bare $Q$ with no triangle is the complex number $Q=q+iq'$, and a point is always written as the pair.
 
+## The Angle and Its Two Cases
+
+**The case names the field of the angle, as it names the scalar sector of an element.** A real angle is $\theta$ and a complex angle is $\Theta$: one letter, two cases, the same rule that writes $q$ real and $Q$ complex.
+
+$$
+\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
+$$
+
+**The prime marks the slot that carries the $i$**, exactly as in $Q=q+iq'$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are the same angle read at a real and at an imaginary argument, and neither is a new kind of object.
+
+**The circle and the hyperbola are the two cases.** With $\Theta=\theta+i\theta'$,
+
+$$
+\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
+\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
+$$
+
+At $\theta'=0$ the pair reduces to $\cos\theta$ and $\sin\theta$, the rotation; at $\theta=0$ it reduces to $\cosh\theta'$ and $i\sinh\theta'$, the boost. A rotation is the real case and a boost is the pure imaginary case, and the letter keeps its case through the analytic continuation.
+
+**Neither glyph carries a second role.** The uses that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the sandwich is $\mathrm{Sd}$; the congruence relation is $\vartheta^{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta^{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
+
 ## The Remarkable Subspaces of Biquaternions
 
 The eight real parameters of a general element group into **remarkable subspaces**: the centre, the vector subspace, the quaternion and antiquaternion halves, and the Hermitian and anti-Hermitian halves. Each is cut out by a conjugation:
@@ -255,27 +276,6 @@ $$
 $$
 
 The maps of the layer are the bar, the tessarine sign, the star that is their composite, and the derived anti-Hermitian sign; the natural sign is not written on it.
-
-## The Angle and Its Two Cases
-
-**The case names the field of the angle, as it names the scalar sector of an element.** A real angle is $\theta$ and a complex angle is $\Theta$: one letter, two cases, the same rule that writes $q$ real and $Q$ complex.
-
-$$
-\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
-$$
-
-**The prime marks the slot that carries the $i$**, exactly as in $Q=q+iq'$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are the same angle read at a real and at an imaginary argument, and neither is a new kind of object.
-
-**The circle and the hyperbola are the two cases.** With $\Theta=\theta+i\theta'$,
-
-$$
-\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
-\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
-$$
-
-At $\theta'=0$ the pair reduces to $\cos\theta$ and $\sin\theta$, the rotation; at $\theta=0$ it reduces to $\cosh\theta'$ and $i\sinh\theta'$, the boost. A rotation is the real case and a boost is the pure imaginary case, and the letter keeps its case through the analytic continuation.
-
-**Neither glyph carries a second role.** The uses that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the sandwich is $\mathrm{Sd}$; the congruence relation is $\vartheta^{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta^{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
 
 ## Summary
 

@@ -6,13 +6,13 @@ This article treats the **exponential polar decomposition** of an invertible spl
 
 $$
 Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
-q_{\log}=\ln r, \quad q'_{\log}=\phi,
+q_{\log}=\ln r, \quad q'_{\log}=\theta,
 $$
 
-with $r>0$ the modulus, $\phi$ the hyperbolic angle, $\ln r$ the logarithmic scale, and $\epsilon\in\{\pm1,\pm j\}$ the component sign. Equivalently,
+with $r>0$ the modulus, $\theta$ the hyperbolic angle, $\ln r$ the logarithmic scale, and $\epsilon\in\{\pm1,\pm j\}$ the component sign. Equivalently,
 
 $$
-Q=r\,\epsilon\exp(\phi j).
+Q=r\,\epsilon\exp(\theta j).
 $$
 
 The decomposition is the exponential form of the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, which writes every invertible split-complex number as
@@ -21,7 +21,7 @@ $$
 Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}^{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
-with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\epsilon\exp(\phi j)$, with $\epsilon$ the component sign.
+with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\epsilon\exp(\theta j)$, with $\epsilon$ the component sign.
 
 The exponential and the logarithm are those of *Split-Complex Elementary Functions*: the exponential is injective with image the future cone $F$, and the logarithm on $F$ is its two-sided inverse. §*The Analytic Setting* states them in the form used below, and they are not derived again. What the article owns is the decomposition itself, the component sign, its existence and uniqueness, the matrix picture and the exponential coordinates.
 
@@ -35,10 +35,10 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 |---|---|
 | Algebra | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ |
 | Domain | ${\mathbb{C}^{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}=q^{2}-q'^{2}\neq0\}$ |
-| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j)$ |
-| Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
-| Unit factor | $\epsilon\exp(\phi j)=Q/r$, with $\lvert\langle u\rangle_{*}\rvert=1$ |
-| Exponent | $Q_{\log}=\ln r+j\phi$, the logarithm of $\epsilon Q\in F$ |
+| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j)$ |
+| Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
+| Unit factor | $\epsilon\exp(\theta j)=Q/r$, with $\lvert\langle u\rangle_{*}\rvert=1$ |
+| Exponent | $Q_{\log}=\ln r+j\theta$, the logarithm of $\epsilon Q\in F$ |
 | Existence | every unit has a decomposition |
 | Uniqueness | $\epsilon$ and $Q_{\log}$ are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
@@ -107,7 +107,7 @@ $$
 {\mathbb{C}^{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$
 
-the discrete factor being the component and the two real coordinates being $(\ln r,\phi)$. The isomorphism is made explicit in §*The Group Law*.
+the discrete factor being the component and the two real coordinates being $(\ln r,\theta)$. The isomorphism is made explicit in §*The Group Law*.
 
 ## The Decomposition
 
@@ -141,30 +141,30 @@ which is the formula of *Split-Complex Elementary Functions*, §*The Logarithm*,
 $$
 r=\exp\Bigl(\tfrac12\ln \langle Q\rangle_{*}\Bigr)=\sqrt{\langle Q\rangle_{*}}>0,
 \qquad
-\phi=\operatorname{artanh}\frac{q'}{q}\in\mathbb{R},
+\theta=\operatorname{artanh}\frac{q'}{q}\in\mathbb{R},
 $$
 
 gives the same number in the three forms
 
 $$
-Q=r\bigl(\cosh\phi+j\sinh\phi\bigr)=r\exp(\phi j)=\exp(Q_{\log}).
+Q=r\bigl(\cosh\theta+j\sinh\theta\bigr)=r\exp(\theta j)=\exp(Q_{\log}).
 $$
 
-The reconstruction is immediate from the closed form: $\exp(Q_{\log})=\exp(q_{\log})(\cosh q'_{\log}+j\sinh q'_{\log})$, and the two coordinates are $\ln r$ and $\phi$. The first form is the modulus–unit form; the last is the exponential polar decomposition, with component sign $\epsilon=1$.
+The reconstruction is immediate from the closed form: $\exp(Q_{\log})=\exp(q_{\log})(\cosh q'_{\log}+j\sinh q'_{\log})$, and the two coordinates are $\ln r$ and $\theta$. The first form is the modulus–unit form; the last is the exponential polar decomposition, with component sign $\epsilon=1$.
 
 The exponent has two real components, and they play different roles.
 
 | Component | Exponent | Range | Factor | Character |
 |---|---|---|---|---|
 | Scale | $q_{\log}=\operatorname{Re}Q_{\log}=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert$ | $\mathbb{R}$ | $\exp(q_{\log})=r$ | real, central; one value, no branch |
-| Angle | $q'_{\log}=\operatorname{Im}Q_{\log}=\operatorname{artanh}\dfrac{q'}{q}$ if $\langle Q\rangle_{*}>0$, $\operatorname{artanh}\dfrac{q}{q'}$ if $\langle Q\rangle_{*}<0$ | $\mathbb{R}$ | $\exp(q'_{\log}j)=\cosh\phi+j\sinh\phi$ | hyperbolic, central; one value on each component, no period |
+| Angle | $q'_{\log}=\operatorname{Im}Q_{\log}=\operatorname{artanh}\dfrac{q'}{q}$ if $\langle Q\rangle_{*}>0$, $\operatorname{artanh}\dfrac{q}{q'}$ if $\langle Q\rangle_{*}<0$ | $\mathbb{R}$ | $\exp(q'_{\log}j)=\cosh\theta+j\sinh\theta$ | hyperbolic, central; one value on each component, no period |
 
 The first coordinate is the same on the four components: it is fixed by the norm, $q_{\log}=\ln r=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert$, and carries the scale. The second depends on the component: the ratio is $q'/q$ on the two timelike components and $q/q'$ on the two spacelike ones, and it carries the hyperbolic angle. On each component the pair is unique, with no lattice of alternative values and no branch cut.
 
 Read backwards, the pair gives the element:
 
 $$
-r=\exp(q_{\log})=\sqrt{\lvert \langle Q\rangle_{*}\rvert}, \qquad \phi=q'_{\log}, \qquad Q=r\,\epsilon\exp(\phi j).
+r=\exp(q_{\log})=\sqrt{\lvert \langle Q\rangle_{*}\rvert}, \qquad \theta=q'_{\log}, \qquad Q=r\,\epsilon\exp(\theta j).
 $$
 
 The exponent is a point $(q_{\log},q'_{\log})\in\mathbb{R}^2$, not a class modulo a lattice; the discrete data are the separate factor $\epsilon$.
@@ -192,17 +192,17 @@ In every case $\epsilon^2=1$. The sign is not a period of the exponential, becau
 The decomposition is also a product of a positive scale and a unit factor:
 
 $$
-Q=r\,\epsilon\exp(\phi j), \qquad
+Q=r\,\epsilon\exp(\theta j), \qquad
 r=\exp(\ln r)=\sqrt{\lvert \langle Q\rangle_{*}\rvert}, \qquad
-\epsilon\exp(\phi j)=\frac{Q}{r}.
+\epsilon\exp(\theta j)=\frac{Q}{r}.
 $$
 
-The scale is positive. The unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, because $\langle\epsilon\exp(\phi j)\rangle_{*}=\langle\epsilon\rangle_{*}=\pm1$ according to the component, so it lies in the unit set $\{\lvert\langle u\rangle_{*}\rvert=1\}$. The four choices of $\epsilon$ label the four branches of that set, and $\phi$ is a coordinate on each branch. The table records the factors.
+The scale is positive. The unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, because $\langle\epsilon\exp(\theta j)\rangle_{*}=\langle\epsilon\rangle_{*}=\pm1$ according to the component, so it lies in the unit set $\{\lvert\langle u\rangle_{*}\rvert=1\}$. The four choices of $\epsilon$ label the four branches of that set, and $\theta$ is a coordinate on each branch. The table records the factors.
 
 | Factor | Formula | Range | Exponent | Parameter |
 |---|---|---|---|---|
 | Modulus | $r=\exp(q_{\log})$ | $(0,\infty)$ | $q_{\log}=\ln r$ | $r>0$ |
-| Unit factor | $\epsilon\exp(\phi j)=Q/r$ | four branches, $\lvert\langle\epsilon\exp(\phi j)\rangle_{*}\rvert=1$ | $jq'_{\log}=j\phi$ | $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
+| Unit factor | $\epsilon\exp(\theta j)=Q/r$ | four branches, $\lvert\langle\epsilon\exp(\theta j)\rangle_{*}\rvert=1$ | $jq'_{\log}=j\theta$ | $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 
 The unit factor is exactly the modulus–unit factor of *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, written in the exponential chart of its branch. The scale is non-compact and the unit factor is non-compact too: its identity branch is a line, not a circle.
 
@@ -214,7 +214,7 @@ $$
 Q=\epsilon\exp(q_{\log})\exp(q'_{\log}j)=\epsilon\exp(Q_{\log}).
 $$
 
-The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\log}+Q_{2\log})$ and the commutativity of $\mathbb{C}^{\mathrm{spl}}$: the two scalar exponents $\ln r$ and $\phi j$ commute. The finite factor $\epsilon$ cannot be absorbed into the continuous exponential, because it changes the component. The decomposition therefore has one continuous exponent and one discrete component label.
+The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\log}+Q_{2\log})$ and the commutativity of $\mathbb{C}^{\mathrm{spl}}$: the two scalar exponents $\ln r$ and $\theta j$ commute. The finite factor $\epsilon$ cannot be absorbed into the continuous exponential, because it changes the component. The decomposition therefore has one continuous exponent and one discrete component label.
 
 ## Existence and Uniqueness
 
@@ -222,13 +222,13 @@ The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\lo
 
 $$
 \boxed{\; Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
-q_{\log}=\ln r, \quad q'_{\log}=\phi \;}
+q_{\log}=\ln r, \quad q'_{\log}=\theta \;}
 $$
 
-with $\epsilon\in\{\pm1,\pm j\}$, $r>0$ and $\phi\in\mathbb{R}$; equivalently
+with $\epsilon\in\{\pm1,\pm j\}$, $r>0$ and $\theta\in\mathbb{R}$; equivalently
 
 $$
-Q=r\,\epsilon\exp(\phi j), \qquad r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}.
+Q=r\,\epsilon\exp(\theta j), \qquad r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}.
 $$
 
 The data are those of §*The Four Components* and §*The Component Sign*:
@@ -243,9 +243,9 @@ q'_{\log}=
 \end{cases}
 $$
 
-**Existence.** §*The Four Components* gives $\epsilon$ with $\epsilon Q\in F$. §*The Exponent and Its Components* gives a number $Q_{\log}$ with $\exp(Q_{\log})=\epsilon Q$. Then $Q=\epsilon\exp(Q_{\log})=r\epsilon\exp(\phi j)$.
+**Existence.** §*The Four Components* gives $\epsilon$ with $\epsilon Q\in F$. §*The Exponent and Its Components* gives a number $Q_{\log}$ with $\exp(Q_{\log})=\epsilon Q$. Then $Q=\epsilon\exp(Q_{\log})=r\epsilon\exp(\theta j)$.
 
-**Uniqueness.** Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}^{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\phi=q'_{\log}$.
+**Uniqueness.** Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}^{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\theta=q'_{\log}$.
 
 The decomposition is defined exactly on ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of units, not the set of nonzero elements. The parameters and their ranges are collected in one table.
 
@@ -253,7 +253,7 @@ The decomposition is defined exactly on ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q:
 |---|---|---|
 | $\epsilon$ | $\{\pm1,\pm j\}$ | yes: the component sign of $Q$ |
 | $q_{\log}=\ln r$ | $\mathbb{R}$ | yes: $\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert$ |
-| $q'_{\log}=\phi$ | $\mathbb{R}$ | yes: the angle of $\epsilon Q$ on its component |
+| $q'_{\log}=\theta$ | $\mathbb{R}$ | yes: the angle of $\epsilon Q$ on its component |
 
 ## The Logarithm
 
@@ -389,7 +389,7 @@ The derivative of the logarithm at $Q\in F$ is left multiplication by $Q^{-1}$, 
 |---|---|---|---|---|---|---|
 | modulus–unit | $Q=ru$ | $r>0$, $\lvert\langle u\rangle_{*}\rvert=1$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ | unique | square root | $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2$ |
 | rational-chart | $Q=r\epsilon\dfrac{1-sj}{1+sj}$ | $r>0$, $\epsilon\in\{1,j,-j\}$, $s\neq\pm1$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ minus the negative real axis | unique on the chart | rational | local |
-| exponential | $Q=r\epsilon\exp(\phi j)$ | $r>0$, $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ | unique | exponential and logarithm | $(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
+| exponential | $Q=r\epsilon\exp(\theta j)$ | $r>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ | unique | exponential and logarithm | $(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
 
 ### The Modulus–Unit Form
 
@@ -408,12 +408,12 @@ a bijection from $\mathbb{R}\setminus\{\pm1\}$ onto $\{\langle u\rangle_{*}=1\}\
 
 ### The Change of Coordinates
 
-On the identity branch, comparing $u(s)$ with $u=\exp(\phi j)$ gives
+On the identity branch, comparing $u(s)$ with $u=\exp(\theta j)$ gives
 
 $$
 \frac{1-sj}{1+sj}=\exp\bigl(-2j\operatorname{artanh}s\bigr),
 \qquad
-s=-\tanh\frac{\phi}{2}, \quad \phi=-2\operatorname{artanh}s.
+s=-\tanh\frac{\theta}{2}, \quad \theta=-2\operatorname{artanh}s.
 $$
 
 On this branch $s$ runs over $(-1,1)$. The endpoints are the null directions, and the value $s=\pm\infty$ corresponds to the missing point $u=-1$. The hyperbolic angle is not periodic, so the chart is a coordinate on a line, not on a circle.
@@ -435,7 +435,7 @@ In a noncommutative algebra the amalgamation into one exponential fails; in the 
 | Group law | componentwise product | tangent addition | addition, with the signs multiplying |
 | Logarithm | none: a square root is used | none: the chart is rational | the exponent $Q_{\log}$, unique on each component |
 
-The Euclidean polar factor of $M_Q$ is $M_\epsilon$: it is $I$ on the future cone, $-I$ on the past cone, and a reflection on the spacelike region. The continuous factor $\exp(\phi j)$ is absorbed into the positive factor. The algebraic unit factor $\epsilon\exp(\phi j)$ and the Euclidean orthogonal factor $M_\epsilon$ are therefore different objects: the algebraic one contains the hyperbolic angle, the Euclidean one contains only the discrete sign. The matrix polar decomposition is treated in *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*The Matrix Polar Decomposition*.
+The Euclidean polar factor of $M_Q$ is $M_\epsilon$: it is $I$ on the future cone, $-I$ on the past cone, and a reflection on the spacelike region. The continuous factor $\exp(\theta j)$ is absorbed into the positive factor. The algebraic unit factor $\epsilon\exp(\theta j)$ and the Euclidean orthogonal factor $M_\epsilon$ are therefore different objects: the algebraic one contains the hyperbolic angle, the Euclidean one contains only the discrete sign. The matrix polar decomposition is treated in *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*The Matrix Polar Decomposition*.
 
 ## The Exponential Coordinates
 
@@ -446,14 +446,14 @@ For each component sign $\epsilon$, the map
 $$
 \mathbb{R}^2\longrightarrow\epsilon\cdot(\text{future cone}),
 \qquad
-(\ln r,\phi)\longmapsto Q=\epsilon\exp(\ln r+\phi j)
+(\ln r,\theta)\longmapsto Q=\epsilon\exp(\ln r+\theta j)
 $$
 
-is a diffeomorphism: the inverse displayed below is smooth and the Jacobian is non-zero. The coordinates are the logarithmic scale $\ln r$ and the hyperbolic angle $\phi$; they are the coordinates $q_{\log}=\ln r$ and $q'_{\log}=\phi$ of the exponent. For $\epsilon Q=x+yj$ in the future cone, the inverse is
+is a diffeomorphism: the inverse displayed below is smooth and the Jacobian is non-zero. The coordinates are the logarithmic scale $\ln r$ and the hyperbolic angle $\theta$; they are the coordinates $q_{\log}=\ln r$ and $q'_{\log}=\theta$ of the exponent. For $\epsilon Q=x+yj$ in the future cone, the inverse is
 
 $$
 \ln r=\tfrac12\ln(x^2-y^2), \qquad
-\phi=\operatorname{artanh}\frac{y}{x}.
+\theta=\operatorname{artanh}\frac{y}{x}.
 $$
 
 The four charts cover ${\mathbb{C}^{\mathrm{spl}}}^\times$; their images are the four components, and their closures meet on the null cone, which is excluded.
@@ -463,41 +463,41 @@ On the identity component the coordinate lines are as follows.
 | coordinate | image | geometry |
 |---|---|---|
 | $\ln r=\text{const}$ | $x^2-y^2=r^2$ | a hyperbola branch, a level set of the norm |
-| $\phi=\text{const}$ | the ray $t(\cosh\phi,\sinh\phi)$, $t>0$ | a ray from the origin |
+| $\theta=\text{const}$ | the ray $t(\cosh\theta,\sinh\theta)$, $t>0$ | a ray from the origin |
 
-The other components are obtained by multiplying by $\epsilon$. The grid is hyperbolic polar. The curves of constant $\ln r$ are the hyperbolas of constant norm; the curves of constant $\phi$ are the rays of constant rapidity. There is no angular periodicity: $\phi$ runs over the whole line.
+The other components are obtained by multiplying by $\epsilon$. The grid is hyperbolic polar. The curves of constant $\ln r$ are the hyperbolas of constant norm; the curves of constant $\theta$ are the rays of constant rapidity. There is no angular periodicity: $\theta$ runs over the whole line.
 
 ### The Jacobian and the Volume Element
 
-The Jacobian of $(\ln r,\phi)\mapsto(x,y)=\exp(\ln r+\phi j)$ is
+The Jacobian of $(\ln r,\theta)\mapsto(x,y)=\exp(\ln r+\theta j)$ is
 
 $$
-J=\begin{pmatrix}\partial x/\partial\ln r&\partial x/\partial\phi\\ \partial y/\partial\ln r&\partial y/\partial\phi\end{pmatrix}
+J=\begin{pmatrix}\partial x/\partial\ln r&\partial x/\partial\theta\\ \partial y/\partial\ln r&\partial y/\partial\theta\end{pmatrix}
 =\begin{pmatrix}x&y\\y&x\end{pmatrix},
 \qquad
 \det J=x^2-y^2=\langle\epsilon Q\rangle_{*}=r^2>0.
 $$
 
-For the full map $Q=\epsilon\exp(\ln r+\phi j)$ the Jacobian is multiplied by $M_\epsilon$, whose determinant is $+1$ for $\epsilon=\pm1$ and $-1$ for $\epsilon=\pm j$. The signed Jacobian is therefore $\det M_\epsilon\,r^2=\langle Q\rangle_{*}$: positive on the timelike components and negative on the spacelike ones.
+For the full map $Q=\epsilon\exp(\ln r+\theta j)$ the Jacobian is multiplied by $M_\epsilon$, whose determinant is $+1$ for $\epsilon=\pm1$ and $-1$ for $\epsilon=\pm j$. The signed Jacobian is therefore $\det M_\epsilon\,r^2=\langle Q\rangle_{*}$: positive on the timelike components and negative on the spacelike ones.
 
 The pullback of the indefinite metric on the chart is
 
 $$
-dx^2-dy^2=\langle\epsilon Q\rangle_{*}\bigl(d(\ln r)^2-d\phi^2\bigr)
-=r^2\bigl(d(\ln r)^2-d\phi^2\bigr),
+dx^2-dy^2=\langle\epsilon Q\rangle_{*}\bigl(d(\ln r)^2-d\theta^2\bigr)
+=r^2\bigl(d(\ln r)^2-d\theta^2\bigr),
 $$
 
-because $dx=x\,d(\ln r)+y\,d\phi$ and $dy=y\,d(\ln r)+x\,d\phi$ cancel their cross terms. The chart is conformal for the indefinite metric with factor $\langle\epsilon Q\rangle_{*}=r^2>0$; on the full component the signed factor is $\langle Q\rangle_{*}$. There is no Euclidean conformal claim. The area element of the chart is
+because $dx=x\,d(\ln r)+y\,d\theta$ and $dy=y\,d(\ln r)+x\,d\theta$ cancel their cross terms. The chart is conformal for the indefinite metric with factor $\langle\epsilon Q\rangle_{*}=r^2>0$; on the full component the signed factor is $\langle Q\rangle_{*}$. There is no Euclidean conformal claim. The area element of the chart is
 
 $$
-dx\wedge dy=r^{2}\,d(\ln r)\wedge d\phi,
+dx\wedge dy=r^{2}\,d(\ln r)\wedge d\theta,
 $$
 
 with the sign of $\langle Q\rangle_{*}$ on the full component.
 
 ### The Harmonic Reading
 
-The coordinates $\ln r$ and $\phi$ are linear, hence harmonic for the indefinite Laplacian $\square=\partial^2/\partial(\ln r)^2-\partial^2/\partial\phi^2$. The pair $(\ln r,\phi)$ is the global coordinate supplied by the logarithm on each component, and the exponential is its inverse. The logarithm is not global because its domain is one component of four; the obstruction is the discrete quotient $(\mathbb{Z}/2\mathbb{Z})^2$, not a period.
+The coordinates $\ln r$ and $\theta$ are linear, hence harmonic for the indefinite Laplacian $\square=\partial^2/\partial(\ln r)^2-\partial^2/\partial\theta^2$. The pair $(\ln r,\theta)$ is the global coordinate supplied by the logarithm on each component, and the exponential is its inverse. The logarithm is not global because its domain is one component of four; the obstruction is the discrete quotient $(\mathbb{Z}/2\mathbb{Z})^2$, not a period.
 
 ## Summary
 
@@ -506,10 +506,10 @@ The coordinates $\ln r$ and $\phi$ are linear, hence harmonic for the indefinite
 | Result | Statement |
 |---|---|
 | Domain | $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times$, that is $\langle Q\rangle_{*}=q^2-q'^2\neq0$ |
-| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j)$ |
-| Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\phi\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
-| Unit factor | $\epsilon\exp(\phi j)$ with $\lvert\langle u\rangle_{*}\rvert=1$ |
-| Exponent | $Q_{\log}=\ln r+j\phi$, the logarithm of $\epsilon Q\in F$ |
+| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j)$ |
+| Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
+| Unit factor | $\epsilon\exp(\theta j)$ with $\lvert\langle u\rangle_{*}\rvert=1$ |
+| Exponent | $Q_{\log}=\ln r+j\theta$, the logarithm of $\epsilon Q\in F$ |
 | Existence | every unit has a decomposition |
 | Uniqueness | the component sign and the exponent are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
@@ -517,9 +517,9 @@ The coordinates $\ln r$ and $\phi$ are linear, hence harmonic for the indefinite
 | Group law | the signs multiply and the two coordinates add |
 | Group | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
 | Matrix picture | $M_Q=qI+q'K=M_\epsilon\exp(q_{\log}I+q'_{\log}K)$ |
-| Coordinates | $(\ln r,\phi)$ on each component, with signed Jacobian $\det M_\epsilon\,r^2=\langle Q\rangle_{*}$ |
+| Coordinates | $(\ln r,\theta)$ on each component, with signed Jacobian $\det M_\epsilon\,r^2=\langle Q\rangle_{*}$ |
 | Quotient | ${\mathbb{C}^{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2$ |
-| Conformal factor | $dx^2-dy^2=r^2\bigl(d(\ln r)^2-d\phi^2\bigr)$; conformal for the indefinite metric only |
+| Conformal factor | $dx^2-dy^2=r^2\bigl(d(\ln r)^2-d\theta^2\bigr)$; conformal for the indefinite metric only |
 
 ### Formulas
 
@@ -527,10 +527,10 @@ The coordinates $\ln r$ and $\phi$ are linear, hence harmonic for the indefinite
 |---|---|
 | Element | $Q=q+jq'$ |
 | Norm | $\langle Q\rangle_{*}=q^2-q'^2$ |
-| Exponent | $Q_{\log}=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert+j\phi$ |
+| Exponent | $Q_{\log}=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert+j\theta$ |
 | Modulus | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ |
-| Unit factor | $\epsilon\exp(\phi j)$ |
-| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j)$ |
+| Unit factor | $\epsilon\exp(\theta j)$ |
+| Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j)$ |
 | Kernel | $\ker\exp=\{0\}$ |
 | Image | $F=\{\langle Q\rangle_{*}>0,\ q>0\}$ |
 | Group law | $\epsilon$ multiplies in $(\mathbb{Z}/2\mathbb{Z})^2$, the exponent adds |
@@ -547,12 +547,12 @@ and there is no branch, no period, and the kernel is $\{0\}$.
 Every invertible split-complex number has exactly one exponential polar decomposition
 
 $$
-Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j),
+Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j),
 \qquad
-Q_{\log}=q_{\log}+jq'_{\log}, \quad q_{\log}=\ln r=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert, \quad q'_{\log}=\phi,
+Q_{\log}=q_{\log}+jq'_{\log}, \quad q_{\log}=\ln r=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert, \quad q'_{\log}=\theta,
 $$
 
-with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. The unit factor $\epsilon\exp(\phi j)$ has norm of modulus $1$. The group law is componentwise on $\epsilon$ and additive on the exponent, so ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
+with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. The unit factor $\epsilon\exp(\theta j)$ has norm of modulus $1$. The group law is componentwise on $\epsilon$ and additive on the exponent, so ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
 
 The logarithm exists on one component and fails on the other three. The decomposition applies the logarithm to $\epsilon Q$, not to $Q$; this is the exact opposite of the complex case, where the logarithm exists everywhere and fails to be unique.
 
@@ -567,7 +567,7 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
 | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus, a positive real |
 | $q_{\log}=\ln r=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert$ | the logarithmic scale, the real coordinate of the exponent |
-| $q'_{\log}=\phi$ | the hyperbolic angle, or rapidity, the $j$-coordinate of the exponent |
+| $q'_{\log}=\theta$ | the hyperbolic angle, or rapidity, the $j$-coordinate of the exponent |
 | $\epsilon\in\{\pm1,\pm j\}$ | the component sign |
 | $Q_{\log}=q_{\log}+jq'_{\log}$ | the exponent of the decomposition: the logarithm of $\epsilon Q$, and of $Q$ itself when $\epsilon=1$ |
 | $F=\{q>\lvert q'\rvert\}$ | the future cone, the image of the exponential |

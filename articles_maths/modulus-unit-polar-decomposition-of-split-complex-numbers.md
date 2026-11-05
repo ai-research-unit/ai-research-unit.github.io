@@ -76,21 +76,21 @@ $$
 {\mathbb{C}^{\mathrm{spl}}}^{(\pm1)} = \{\,u \in \mathbb{C}^{\mathrm{spl}} : \lvert \langle u\rangle_{*}\rvert = 1\,\} = \{\langle u\rangle_{*} = 1\} \sqcup \{\langle u\rangle_{*} = -1\},
 $$
 
-the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\phi \in \mathbb{R}$,
+the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\theta \in \mathbb{R}$,
 
 $$
-\langle u\rangle_{*} = +1: \quad u = \pm\exp(\phi j) = \pm\bigl(\cosh\phi + j\sinh\phi\bigr),
+\langle u\rangle_{*} = +1: \quad u = \pm\exp(\theta j) = \pm\bigl(\cosh\theta + j\sinh\theta\bigr),
 $$
 
 $$
-\langle u\rangle_{*} = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
+\langle u\rangle_{*} = -1: \quad u = \pm j\exp(\theta j) = \pm\bigl(\sinh\theta + j\cosh\theta\bigr).
 $$
 
-The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
+The sign in front of the exponential is the branch sign, and $\theta$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 
-The decomposition has two real parameters on each component: the modulus $r>0$ and the branch coordinate $\phi\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.
+The decomposition has two real parameters on each component: the modulus $r>0$ and the branch coordinate $\theta\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.
 
 ## Existence and Uniqueness
 
@@ -125,28 +125,28 @@ the future cone of the indefinite form. It is the image of the exponential, trea
 Every invertible element can be written in the normal form
 
 $$
-\boxed{\;Q = r\,\epsilon\,\exp(\phi j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \phi \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}\;}.
+\boxed{\;Q = r\,\epsilon\,\exp(\theta j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \theta \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}\;}.
 $$
 
-The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\phi)$ is the continuous part, and the triple $(r,\phi,\epsilon)$ is unique. The multiplication law is
+The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\theta)$ is the continuous part, and the triple $(r,\theta,\epsilon)$ is unique. The multiplication law is
 
 $$
-\boxed{\;(r_1,\phi_1,\epsilon_1)(r_2,\phi_2,\epsilon_2) = (r_1r_2,\ \phi_1+\phi_2,\ \epsilon_1\epsilon_2)\;},
+\boxed{\;(r_1,\theta_1,\epsilon_1)(r_2,\theta_2,\epsilon_2) = (r_1r_2,\ \theta_1+\theta_2,\ \epsilon_1\epsilon_2)\;},
 $$
 
 with $\epsilon_1\epsilon_2$ computed in the four-element group $\{\pm1,\pm j\}$, where $j^2 = 1$. Hence the polar decomposition read as a map is a group isomorphism
 
 $$
-\boxed{\;{\mathbb{C}^{\mathrm{spl}}}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon)\;}.
+\boxed{\;{\mathbb{C}^{\mathrm{spl}}}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\theta,\epsilon)\;}.
 $$
 
-Equivalently, the map $(Q_+,Q_-)\mapsto(r,\phi,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\phi=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.
+Equivalently, the map $(Q_+,Q_-)\mapsto(r,\theta,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\theta=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.
 
 ### The Maximal Compact Subgroup
 
 **Theorem.** The maximal compact subgroup of ${\mathbb{C}^{\mathrm{spl}}}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
 
-**Proof.** Let $K\subset{\mathbb{C}^{\mathrm{spl}}}^\times$ be compact and let $Q = r\epsilon\exp(\phi j)$ be its polar form. The modulus $r : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\phi : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\phi(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\phi=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
+**Proof.** Let $K\subset{\mathbb{C}^{\mathrm{spl}}}^\times$ be compact and let $Q = r\epsilon\exp(\theta j)$ be its polar form. The modulus $r : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\theta : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\theta(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\theta=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
 
 The contrast with the complex case is exact. There the group of units is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.
 
@@ -158,7 +158,7 @@ $$
 H : [0,1]\times{\mathbb{C}^{\mathrm{spl}}}^\times \longrightarrow {\mathbb{C}^{\mathrm{spl}}}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
 $$
 
-is continuous, fixes every point of ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\phi j)\mapsto \epsilon\exp((1-t)\phi j)$ contracts each branch to its vertex, so ${\mathbb{C}^{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.
+is continuous, fixes every point of ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\theta j)\mapsto \epsilon\exp((1-t)\theta j)$ contracts each branch to its vertex, so ${\mathbb{C}^{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.
 
 ## The Two Axes
 
@@ -237,7 +237,7 @@ $$
 
 which equals $I$ only when $x^2+y^2 = 1$ and $xy = 0$, that is only for $u\in\{\pm1,\pm j\}$. The algebraic unit factor and the orthogonal matrix factor of the Euclidean polar decomposition are different objects. In the complex case the two coincide because $M_u\in SO(2)$; in the split case they do not.
 
-For a unit of norm $+1$ on the identity component, $x = \cosh\phi$ and $y = \sinh\phi$, so the eigenvalues are $\exp(\phi)$ and $\exp(-\phi)$, both positive. The matrix is symmetric positive definite; it is not orthogonal for the Euclidean metric, but it preserves the indefinite form because $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$.
+For a unit of norm $+1$ on the identity component, $x = \cosh\theta$ and $y = \sinh\theta$, so the eigenvalues are $\exp(\theta)$ and $\exp(-\theta)$, both positive. The matrix is symmetric positive definite; it is not orthogonal for the Euclidean metric, but it preserves the indefinite form because $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$.
 
 ### The Matrix Polar Decomposition
 
@@ -261,16 +261,16 @@ $$
 r = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad \langle u\rangle_{*} = 1.5625-0.5625 = 1.
 $$
 
-The angle is fixed by $\tanh\phi = q'/q = 3/5$, hence
+The angle is fixed by $\tanh\theta = q'/q = 3/5$, hence
 
 $$
-\phi = \operatorname{artanh}\frac35 = \ln 2 = 0.6931471805599453,
+\theta = \operatorname{artanh}\frac35 = \ln 2 = 0.6931471805599453,
 $$
 
 and
 
 $$
-\exp(\phi j) = \cosh\phi + j\sinh\phi = 1.25+0.75j = u.
+\exp(\theta j) = \cosh\theta + j\sinh\theta = 1.25+0.75j = u.
 $$
 
 In the idempotent coordinates $Q_+ = 8$ and $Q_- = 2$, the modulus is the geometric mean $\sqrt{16} = 4$, and the angle is half the logarithm of their ratio, $\tfrac12\ln4 = \ln2$. The reconstruction $4(1.25+0.75j)$ is exact in the data.
@@ -283,19 +283,19 @@ $$
 r = \sqrt3 = 1.7320508075688772, \qquad u = \frac{1+2j}{\sqrt3} = 0.5773502691896258 + 1.1547005383792517\,j,
 $$
 
-and $\langle u\rangle_{*} = 1/3 - 4/3 = -1$. Here $u = j\exp(\phi j)$ with
+and $\langle u\rangle_{*} = 1/3 - 4/3 = -1$. Here $u = j\exp(\theta j)$ with
 
 $$
-\phi = \operatorname{arsinh}\frac{1}{\sqrt3} = \operatorname{artanh}\frac{1}{2} = 0.5493061443340549,
+\theta = \operatorname{arsinh}\frac{1}{\sqrt3} = \operatorname{artanh}\frac{1}{2} = 0.5493061443340549,
 $$
 
-so that $\sinh\phi = 1/\sqrt3$ and $\cosh\phi = 2/\sqrt3$. The element $Q$ cannot be written with a unit factor of norm $+1$, because the sign of the norm is a regime.
+so that $\sinh\theta = 1/\sqrt3$ and $\cosh\theta = 2/\sqrt3$. The element $Q$ cannot be written with a unit factor of norm $+1$, because the sign of the norm is a regime.
 
 ### A Table of Examples
 
 The following table applies the decomposition to elements of the four components and to the null cone.
 
-| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u$ | $\langle u\rangle_{*}$ | $\epsilon$ | $\phi$ |
+| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u$ | $\langle u\rangle_{*}$ | $\epsilon$ | $\theta$ |
 |---|---|---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $+1$ | $1$ | $0$ |
 | $-2$ | $4$ | $2$ | $-1$ | $+1$ | $-1$ | $0$ |
@@ -327,7 +327,7 @@ The split column is the only one in which the norm is indefinite and the unit se
 
 ## Summary
 
-Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\phi j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\phi\in\mathbb{R}$.
+Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\theta j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\theta\in\mathbb{R}$.
 
 The group of units splits as
 
@@ -352,7 +352,7 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
 | $u = Q/r$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $\epsilon$ | the component sign, an element of $\{\pm1,\pm j\}$ |
-| $\phi$ | the hyperbolic angle or rapidity, $\phi\in\mathbb{R}$ |
+| $\theta$ | the hyperbolic angle or rapidity, $\theta\in\mathbb{R}$ |
 | ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ | the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$, four branches |
 | ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$ | the group of units |
 | $({\mathbb{C}^{\mathrm{spl}}}^\times)_0 = \{q>\lvert q'\rvert\}$ | the identity component, the future cone |

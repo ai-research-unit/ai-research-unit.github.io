@@ -109,9 +109,9 @@ For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, w
 
 ## Problem 3: Non-Collinear Boosts and the Thomas–Wigner Rotation
 
-**Statement.** Let $\tilde U_{\mathrm b,1}$ have rapidity $\psi_1$ along $\vec u_y$ and $\tilde U_{\mathrm b,2}$ rapidity $\psi_2$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\phi$ and $0<\phi<\pi$.
+**Statement.** Let $\tilde U_{\mathrm b,1}$ have rapidity $\psi_1$ along $\vec u_y$ and $\tilde U_{\mathrm b,2}$ rapidity $\psi_2$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\theta^{\mathrm{btw}}$ and $0<\theta^{\mathrm{btw}}<\pi$.
 
-**(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\phi\in\{0,\pi\}$; for $0<\phi<\pi$ it is not a pure boost.
+**(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\theta^{\mathrm{btw}}\in\{0,\pi\}$; for $0<\theta^{\mathrm{btw}}<\pi$ it is not a pure boost.
 
 **(b)** Show that $P$ admits the decomposition $P = \tilde{H}\tilde u_{\mathrm r}$ with $\tilde{H}$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\Psi$, the Wigner angle $\theta_W$, and the rotation axis.
 
@@ -119,17 +119,17 @@ For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, w
 
 **Solution. (a)** With $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$, $\vec\Xi_i = \vec {u_y}_i$, and the quaternion product identity $\vec\Xi_2\vec\Xi_1 = -\vec\Xi_2\cdot \vec\Xi_1 + \vec\Xi_2\times \vec\Xi_1$ for unit pure quaternions,
 $$
-(i\vec\Xi_2)(i\vec\Xi_1) = -\vec\Xi_2\vec\Xi_1 = \cos\phi + \vec\Xi_1\times \vec\Xi_2 .
+(i\vec\Xi_2)(i\vec\Xi_1) = -\vec\Xi_2\vec\Xi_1 = \cos\theta^{\mathrm{btw}} + \vec\Xi_1\times \vec\Xi_2 .
 $$
 Hence
 $$
 P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
-= \underbrace{\left(c_1c_2 + s_1s_2\cos\phi\right)}_{a}
+= \underbrace{\left(c_1c_2 + s_1s_2\cos\theta^{\mathrm{btw}}\right)}_{a}
 + \underbrace{s_1s_2\,\vec u_y\times\vec u_z}_{\vec q}
 + i\underbrace{\left(c_2s_1\vec u_y + c_1s_2\vec u_z\right)}_{\vec w},
 \tag{5}
 $$
-where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\phi$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\phi = 0$. For nonzero rapidities this means $\sin\phi = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
+where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\theta^{\mathrm{btw}}$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\theta^{\mathrm{btw}} = 0$. For nonzero rapidities this means $\sin\theta^{\mathrm{btw}} = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
 
 **(b)** Write $P = a + \vec q + i\vec w$. Its biquaternion norm is, using $\vec q\cdot\vec w=0$,
 $$
@@ -154,7 +154,7 @@ $$
 $$
 Expanding $\Sigma = a^2 + |\vec q|^2 + |\vec w|^2$ with the definitions (5) and simplifying gives the standard total rapidity
 $$
-\cosh\Psi = \cosh\psi_1\cosh\psi_2 + \sinh\psi_1\sinh\psi_2\cos\phi .
+\cosh\Psi = \cosh\psi_1\cosh\psi_2 + \sinh\psi_1\sinh\psi_2\cos\theta^{\mathrm{btw}} .
 \tag{8}
 $$
 The residual element
@@ -178,16 +178,16 @@ $$
 Because $\tilde u_{\mathrm r}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
 $$
 \cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\Psi}{2}}
-= \frac{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}{\cosh\frac{\Psi}{2}},
+= \frac{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta^{\mathrm{btw}}}{\cosh\frac{\Psi}{2}},
 \tag{9}
 $$
-and, since $|\vec q|^2 = \sinh^2\frac{\psi_1}{2}\sinh^2\frac{\psi_2}{2}\sin^2\phi$ and $\sin\frac{\theta_W}{2} = |\vec q|/\cosh\frac{\Psi}{2}$,
+and, since $|\vec q|^2 = \sinh^2\frac{\psi_1}{2}\sinh^2\frac{\psi_2}{2}\sin^2\theta^{\mathrm{btw}}$ and $\sin\frac{\theta_W}{2} = |\vec q|/\cosh\frac{\Psi}{2}$,
 $$
 \boxed{\;\tan\frac{\theta_W}{2} = \frac{|\vec q|}{a}
-= \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}\;}
+= \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta^{\mathrm{btw}}}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta^{\mathrm{btw}}}\;}
 \tag{10}
 $$
-The numerator is non-negative for $0<\phi<\pi$ and the denominator $a$ is positive for every $\phi$, since $a\ge\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} - \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2} = \cosh\frac{\psi_1-\psi_2}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
+The numerator is non-negative for $0<\theta^{\mathrm{btw}}<\pi$ and the denominator $a$ is positive for every $\theta^{\mathrm{btw}}$, since $a\ge\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} - \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2} = \cosh\frac{\psi_1-\psi_2}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
 $$
 \vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}},
 \tag{11}
@@ -203,7 +203,7 @@ $$
 $$
 The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde H_2$ with $\tilde H_2 = \tilde u_{\mathrm r}^{-1}\tilde{H}\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
-**(c)** For equal orthogonal rapidities, $\psi_1 = \psi_2 = \psi$ and $\phi = \pi/2$, so $\cosh\Psi = \cosh^2\psi$ and $a = \cosh^2\frac{\psi}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\psi}{2}\big/\cosh\frac{\Psi}{2}$, and (10) collapses to
+**(c)** For equal orthogonal rapidities, $\psi_1 = \psi_2 = \psi$ and $\theta^{\mathrm{btw}} = \pi/2$, so $\cosh\Psi = \cosh^2\psi$ and $a = \cosh^2\frac{\psi}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\psi}{2}\big/\cosh\frac{\Psi}{2}$, and (10) collapses to
 $$
 \tan\frac{\theta_W}{2} = \frac{\sinh^2\frac{\psi}{2}}{\cosh^2\frac{\psi}{2}} = \tanh^2\frac{\psi}{2}.
 \tag{13}
@@ -350,7 +350,7 @@ We have applied the boost biquaternion and the rotor conjugation to four-velocit
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (v_{b_1}+v_{b_2})/(1+v_{b_1}v_{b_2}/c^2)$.
 
-3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
+3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta^{\mathrm{btw}}}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta^{\mathrm{btw}}}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
 
 4. **The parent's square-root relation.** $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t$ and $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde U_{\mathrm b}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
 
@@ -376,11 +376,11 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u_x$ | Boost biquaternion, $\tanh\psi_b = v_b/c$ |
 | $\psi_v$, $\psi_1$, $\psi_2$ | Rapidities |
 | $\vec v_b$, $\vec {u_y}_i$ | Boost velocity, boost directions |
-| $\phi$ | Angle between $\vec u_y$ and $\vec u_z$ |
+| $\theta^{\mathrm{btw}}$ | Angle between $\vec u_y$ and $\vec u_z$ |
 | $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
 | $\tilde{H}$, $\tilde u_{\mathrm r}$ | Boost part and rotation part of $P = \tilde{H}\tilde u_{\mathrm r}$ |
-| $\Psi$ | Total rapidity, $\cosh\Psi = \cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\phi$ |
+| $\Psi$ | Total rapidity, $\cosh\Psi = \cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta^{\mathrm{btw}}$ |
 | $\theta_W$ | Thomas–Wigner angle |
 | $\vec u_4$ | Axis of the boost part $\tilde{H}$ |
 | $\vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ | Axis of the Wigner rotation |

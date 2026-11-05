@@ -76,19 +76,19 @@ $$
 
 The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\psi_k}{2}$, $s_k=\sinh\tfrac{\psi_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
-For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\omega$ of $\tilde{u}$ is
+For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\\theta^{\\mathrm{wgn}}$ of $\tilde{u}$ is
 
 $$
-\boxed{\ \tan\frac{\omega}{2}
+\boxed{\ \\tan\\frac{\\theta^{\\mathrm{wgn}}}{2}
 =\frac{\sinh^{2}\dfrac{\psi}{2}\,\sin\theta}
 {\cosh^{2}\dfrac{\psi}{2}+\sinh^{2}\dfrac{\psi}{2}\,\cos\theta}\ } ,
 $$
 
-and its axis is the normal to the plane of the two boost directions. The general case of unequal rapidities is the same formula with two different rapidities, and it is derived in Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the composition law and the finite Wigner angle. The formula has two instructive limits: for small rapidity it gives $\omega\approx\tfrac{1}{2}\psi^{2}\sin\theta$, a purely relativistic effect vanishing as $v^{2}/c^{2}$, and for large rapidity it saturates at $\omega\to\theta$, the angle between the two directions.
+and its axis is the normal to the plane of the two boost directions. The general case of unequal rapidities is the same formula with two different rapidities, and it is derived in Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the composition law and the finite Wigner angle. The formula has two instructive limits: for small rapidity it gives $\theta^{\mathrm{wgn}}\approx\tfrac{1}{2}\psi^{2}\sin\theta$, a purely relativistic effect vanishing as $v^{2}/c^{2}$, and for large rapidity it saturates at $\theta^{\mathrm{wgn}}\to\theta$, the angle between the two directions.
 
 Two features of this composition law matter for what follows. First, the **rotation factor is a compact-group element**, an element of the same $SU(2)$ that carries the topology of the cover; the boost part is contractible, and every obstruction in the composition of boosts is carried by the rotation directions. Second, the rotation factor is **absent for a single boost**: a boost is Hermitian, its polar rotation factor is trivial, and no orientation is generated. The Wigner rotation is a property of a pair, or of a path, and it is the compositional side of the same compact structure whose topological side is the two-sheeted cover.
 
-At equal rapidity $\psi=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\omega=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\psi_1,\psi_2,\varphi)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
+At equal rapidity $\psi=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\theta^{\mathrm{wgn}}=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\psi_1,\psi_2,\varphi)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
 
 ## The Rotor Between Neighbouring Rest Frames
 
@@ -307,7 +307,7 @@ $$
 and a single boost contains no rotation. The composition of two non-collinear boosts is a unit-norm biquaternion with polar decomposition $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\tilde{u}$, and the rotation factor $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ is the Thomas–Wigner rotation, of exact angle
 
 $$
-\tan\frac{\omega}{2}
+\\tan\\frac{\\theta^{\\mathrm{wgn}}}{2}
 =\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\varphi}
 {\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\varphi},
 $$
@@ -351,7 +351,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde U_{\vec v}$ | Lab-to-rest rotor, $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t$ |
 | $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\tilde{u}$ | Polar decomposition of a composition of boosts |
 | $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ | Thomas–Wigner rotation (unit real quaternion) |
-| $\varphi$, $\theta_W$, $\omega$ | Angle between boost directions; Wigner angle |
+| $\varphi$, $\theta_W$, $\theta^{\mathrm{wgn}}$ | Angle between boost directions; Wigner angle |
 | $\vec a=d\vec v/dt'$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ | Interval rotor between neighbouring rest frames |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |

@@ -73,10 +73,10 @@ It is the source's imaginary unit and not the corpus's central $i$; the central 
 **The decomposition.** Hestenes decomposes the field as a rotation, a density and an angle, and in the biquaternion alphabet the decomposition is the polar word of *Conventions of the Norms and the Pairings* read with a central phase:
 
 $$
-\boxed{\;\psi=\sqrt{\rho}\,e^{i\beta/2}R\;},\qquad R\tilde R=e_t,
+\boxed{\;\psi=\sqrt{\rho}\,e^{i\theta/2}R\;},\qquad R\tilde R=e_t,
 $$
 
-where $R$ is a **rotor**, that is a rotation of norm one, $\tilde R$ is its reverse — for an even element the reverse is the quaternion conjugate $R^{\natural}$, a derived form the source's letter $\tilde{}$ requires and the article states here rather than importing — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle, the Yvon–Takabayasi angle, zero for a pure electron state. The source writes the phase factor with the pseudoscalar, $(\rho e^{\beta v_0v_1v_2v_3})^{1/2}$, which is the same factor: the pseudoscalar is the central imaginary, so $e^{\beta v_0v_1v_2v_3}=e^{i\beta}$, and the factor is central, commutes with $R$, and leaves the order of the two factors immaterial. The counting is exact: $R$ has the six parameters of a rotation, $\rho$ and $\beta$ add two, and the total is the eight real components of the field. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
+where $R$ is a **rotor**, that is a rotation of norm one, $\tilde R$ is its reverse — for an even element the reverse is the quaternion conjugate $R^{\natural}$, a derived form the source's letter $\tilde{}$ requires and the article states here rather than importing — $\rho\ge0$ is a scalar **density**, and $\theta$ is a scalar angle, the Yvon–Takabayasi angle, zero for a pure electron state. The source writes the phase factor with the pseudoscalar, $(\rho e^{\theta v_0v_1v_2v_3})^{1/2}$, which is the same factor: the pseudoscalar is the central imaginary, so $e^{\theta v_0v_1v_2v_3}=e^{i\theta}$, and the factor is central, commutes with $R$, and leaves the order of the two factors immaterial. The counting is exact: $R$ has the six parameters of a rotation, $\rho$ and $\theta$ add two, and the total is the eight real components of the field. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
 
 ## The Dirac–Hestenes Equation
 
@@ -126,16 +126,16 @@ with $J_\mu$ the components and $\tilde\psi$ the reverse of the field, which is 
 $$
 S=\psi\,\omega\tilde\psi ,
 \qquad
-\mathrm{Sc}(JS)=0 \quad(\beta=0),
+\mathrm{Sc}(JS)=0 \quad(\theta=0),
 $$
 
 built with the same fixed plane that multiplies the derivative term of the equation, and orthogonal to the current for a pure electron state. The density bilinear is
 
 $$
-\psi\tilde\psi=\rho\,e^{i\beta}=\rho\cos\beta+\rho\sin\beta\,i ,
+\psi\tilde\psi=\rho\,e^{i\theta}=\rho\cos\theta+\rho\sin\theta\,i ,
 $$
 
-whose scalar part is $\rho\cos\beta$ and whose central-imaginary part is $\rho\sin\beta$; the density is the modulus $\rho$, and $\beta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb M_-$ of the Maxwell article, and the minimal-coupling article records that it is not a product of two elements of $\mathbb B$: it needs one factor the even alphabet does not supply, written there as the right multiplication by $i\vec e_x$. The Dirac–Hestenes current $J=\psi v_0\tilde\psi$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.
+whose scalar part is $\rho\cos\theta$ and whose central-imaginary part is $\rho\sin\theta$; the density is the modulus $\rho$, and $\theta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb M_-$ of the Maxwell article, and the minimal-coupling article records that it is not a product of two elements of $\mathbb B$: it needs one factor the even alphabet does not supply, written there as the right multiplication by $i\vec e_x$. The Dirac–Hestenes current $J=\psi v_0\tilde\psi$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.
 
 ## The Two Equations of the Corpus
 
@@ -288,7 +288,7 @@ where $\varphi$ is an element of the algebra on the same eight real parameters, 
 
 2. **The right action.** If the physical Dirac field is the STA field, then the framework's equation must be rewritten to act on the right for the spin plane, the mass and the gauge phase. What, algebraically, distinguishes the left from the right action here, and does the framework's sector split select one? The two-sided form of Kravchenko's equation is the other side of the same question.
 
-3. **The decomposition.** Hestenes' $\psi=\sqrt{\rho}\,e^{i\beta/2}R$ singles out a rotation, a density and an angle as the physical content. Does the framework's field admit the same decomposition, and does its norm $\langle\tilde Q\rangle_{\natural}$ play the role of the density $\rho$?
+3. **The decomposition.** Hestenes' $\psi=\sqrt{\rho}\,e^{i\theta/2}R$ singles out a rotation, a density and an angle as the physical content. Does the framework's field admit the same decomposition, and does its norm $\langle\tilde Q\rangle_{\natural}$ play the role of the density $\rho$?
 
 4. **Charge conjugation.** Charge conjugation is antilinear, and its factor is the one operation of the three that multiplies on both sides, $-\vec e_y(\cdot)\vec e_y$; the parity's factor is the one-sided right multiplication by $i\vec e_x$. The framework's conjugation articles build charge conjugation from the real structure $\flat$. Are the two the same operation in different normalisations?
 
@@ -304,7 +304,7 @@ $$
 \tilde\nabla\psi\,\omega-eA\psi=m\psi v_0
 $$
 
-is the Dirac equation rewritten in it as one real equation for an even element. The field has eight real components; it decomposes as $\psi=\sqrt{\rho}\,e^{i\beta/2}R$ into a rotation, a density and an angle; and the current is the geometric vector $J=\psi v_0\tilde\psi$. The older four-component display is the same equation read on a carrier of four components, and it is fixed once in *Conventions of the Matrix Models*; this article prints no array.
+is the Dirac equation rewritten in it as one real equation for an even element. The field has eight real components; it decomposes as $\psi=\sqrt{\rho}\,e^{i\theta/2}R$ into a rotation, a density and an angle; and the current is the geometric vector $J=\psi v_0\tilde\psi$. The older four-component display is the same equation read on a carrier of four components, and it is fixed once in *Conventions of the Matrix Models*; this article prints no array.
 
 The corpus carries two Dirac equations, and the Dirac–Hestenes equation is a third form placed against both. The **one-sided chiral pair** $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ carries the field in its two parts. **Kravchenko's two-sided equation** $\mathcal NF=0$ carries the derivative on the left, the mass on the right through $\vec e_z$, and a conjugation in the mass term. The Dirac–Hestenes equation carries the derivative on the left and the spin plane and the mass on the right, and it is the STA face of the chiral equation, not a rewriting of Kravchenko's.
 
@@ -321,10 +321,10 @@ The correspondence with the biquaternion framework is the closest in this series
 | $i\omega=-i\vec e_z$ | The chirality, the frame's volume cell; the two parts of the field are its two values |
 | $\psi$ | The field of the Dirac–Hestenes equation, an even element |
 | $\psi_L$, $\psi_R$ | Its two parts; their values are the minus one and the plus one |
-| $\psi=\sqrt{\rho}\,e^{i\beta/2}R$ | Rotation, density and angle; $R\tilde R=e_t$ |
+| $\psi=\sqrt{\rho}\,e^{i\theta/2}R$ | Rotation, density and angle; $R\tilde R=e_t$ |
 | $v_0$ | Fixed timelike vector, $v_0^2=+1$; odd, so not an element of $\mathbb B$; mass and current, right multiplication |
 | $J=\psi v_0\tilde\psi$ | Dirac current, a vector with $J^2=\rho^2$ |
-| $S=\psi\,\omega\tilde\psi$ | Spin density, a bivector with $\mathrm{Sc}(JS)=0$ at $\beta=0$ |
+| $S=\psi\,\omega\tilde\psi$ | Spin density, a bivector with $\mathrm{Sc}(JS)=0$ at $\theta=0$ |
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra $=$ even part of $\mathrm{Cl}_{1,3}$ |
 | $i$ | Framework's central imaginary unit, kept free; the source's unit is $\omega$ |
 

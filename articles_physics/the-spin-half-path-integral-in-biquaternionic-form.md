@@ -15,7 +15,7 @@ whose value over a closed loop is $-\hbar$ times one half the oriented solid ang
 This article establishes:
 
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|dz/dt'\rangle - \langle z|\tilde{H}|z\rangle)dt'$, and the measure.
-2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dt'\rangle\,dt' = -\Omega^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
+2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dt'\rangle\,dt' = -\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dt' = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = 1$; the two forms are related by the change of variables $\zeta = \psi_2/\psi_1$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
@@ -118,12 +118,12 @@ Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise
 $$
 \boxed{\;S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle\,dt'
 = -\hbar\cdot 2\pi\sin^2\frac{\theta_0}{2}
-= -\hbar\cdot\frac{\Omega}{2},
+= -\hbar\cdot\frac{\theta^{\mathrm{sol}}}{2},
 \qquad
-\Omega = 2\pi(1-\cos\theta_0)\;}.
+\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)\;}.
 $$
 
-The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dt'\rangle dt'$ equals $-\Omega/2$ for every value.
+The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dt'\rangle dt'$ equals $-\theta^{\mathrm{sol}}/2$ for every value.
 
 This is the central structural fact of the spin path integral. The "kinetic" term of the action is not a total derivative and is not expressible in terms of the star $\vec u$ alone; it is the phase of the spinor. The path integral does not merely accommodate the geometric phase — it is built from it.
 
@@ -211,7 +211,7 @@ $$
 \left|\int_{S^2}\omega\right| = 2\pi\hbar,
 $$
 
-the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $s$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\Omega/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
+the flux of a unit charge, and the Chern number of the spin-1/2 band is non-zero. The Wess–Zumino term is therefore a **topological term** — a theta term — whose coefficient is the spin $s$ in units of $\hbar$; for spin-1/2 the coefficient gives the half-integer phase $\theta^{\mathrm{sol}}/2$. The quantisation problem of a spin is the quantisation of a phase space with a non-exact symplectic form, and the spin-1/2 phase is the simplest case.
 
 ### Spin Tunnelling and Its Quenching
 
@@ -255,8 +255,8 @@ $$
 with the invariant measure $\frac{2}{\pi}\frac{d^2z}{(1+|z|^2)^2}$ from the resolution of identity. The kinetic term is the **Wess–Zumino term**, and over a closed loop it equals
 
 $$
-\boxed{\;S_{WZ} = -\hbar\cdot\frac{\Omega}{2},
-\qquad \Omega = 2\pi(1-\cos\theta_0)\;},
+\boxed{\;S_{WZ} = -\hbar\cdot\frac{\theta^{\mathrm{sol}}}{2},
+\qquad \theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)\;},
 $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
@@ -279,7 +279,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\zeta = \tan\tfrac{\theta}{2}\exp(i\phi) = \psi_2/\psi_1$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
-| $S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle dt' = -\hbar\tfrac{\Omega}{2}$ | Wess–Zumino term |
+| $S_{WZ} = i\hbar\oint\langle z|\partial/\partial t'|z\rangle dt' = -\hbar\tfrac{\theta^{\mathrm{sol}}}{2}$ | Wess–Zumino term |
 | $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ | Symplectic form of the sphere |
 | $d\vec r/dt' = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}},\psi$ | Grassmann spinor variables, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi=1$ |

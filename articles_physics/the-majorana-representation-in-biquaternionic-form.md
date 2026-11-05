@@ -106,14 +106,14 @@ $$
 \zeta \longmapsto \frac{a^*\zeta - b^*}{b\zeta + a} .
 $$
 
-The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. For the rotation about $\vec u_y$ by angle $\beta$ the rotor is $\tilde{u} = \exp(\beta \vec e_y/2)$, whose matrix is
+The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. For the rotation about $\vec u_y$ by angle $\theta^{\mathrm{axs}}$ the rotor is $\tilde{u} = \exp(\theta^{\mathrm{axs}} \vec e_y/2)$, whose matrix is
 
 $$
-g = \begin{pmatrix} \cos\tfrac{\beta}{2} & -\sin\tfrac{\beta}{2}\\ \sin\tfrac{\beta}{2} & \cos\tfrac{\beta}{2}\end{pmatrix},
-\qquad a = \cos\tfrac{\beta}{2},\quad b = -\sin\tfrac{\beta}{2},
+g = \begin{pmatrix} \cos\tfrac{\theta^{\mathrm{axs}}}{2} & -\sin\tfrac{\theta^{\mathrm{axs}}}{2}\\ \sin\tfrac{\theta^{\mathrm{axs}}}{2} & \cos\tfrac{\theta^{\mathrm{axs}}}{2}\end{pmatrix},
+\qquad a = \cos\tfrac{\theta^{\mathrm{axs}}}{2},\quad b = -\sin\tfrac{\theta^{\mathrm{axs}}}{2},
 $$
 
-and the Möbius image of $\zeta$ reconstructs the vector obtained by applying the $SO(3)$ rotation about $\vec u_y$ by $\beta$ to $\vec u_x$, to machine precision, for $\beta = 0.9$ and several initial states.
+and the Möbius image of $\zeta$ reconstructs the vector obtained by applying the $SO(3)$ rotation about $\vec u_y$ by $\theta^{\mathrm{axs}}$ to $\vec u_x$, to machine precision, for $\theta^{\mathrm{axs}} = 0.9$ and several initial states.
 
 ### The Rotor and Its Two Faces
 
