@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pair Operator: An Inventory of the Glyph — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pair-operator-an-inventory-of-the-glyph"><strong>The Pair Operator: An Inventory of the Glyph</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The glyph $\mathbb{D}$ names two different operators in this corpus, and they are not interchangeable. One acts on the pair $\mathbb{B}\oplus\mathbb{B}$ and squares to $\Box I$. The other acts on one element and squares to $\Box$. Both are called the pair operator, both are written with the same glyph, and both exchange the two chiral values. Twenty-seven articles use the glyph: twenty-two use the first, five use the second, and two of the five also print the first.</p>
+<p>The definitions live in one place. <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, under the heading <strong>The pair operator</strong>, fixes the object:</p>
+<p>$$
+\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),
+$$</p>
+<p>with $\Psi=(\Psi_L,\Psi_R)$, $\mathbb{D}^2=\Box I$, the massive equation $(\mathbb{D}-m)\Psi=0$, and the Green matrix $\mathcal{S}=(\mathbb{D}+m)G$ with $(\Box-m^2)G=\delta$. An article that writes $\mathbb{D}$ and cites that section is using this object. An article that writes $\mathbb{D}$ on a single element without the subscript has switched carrier, and the glyph alone does not say so.</p>
+<p><strong>What the article establishes.</strong> The inventory, with a link and the equation for every entry. The count of the two carriers and the count of the three spellings of the square. The reason the two carriers cannot be one array, which is a dimension count and a check. And the four places where $\mathbb{D}$ is not this operator at all.</p>
+<p><strong>What it does not claim.</strong> It does not claim that the one-element form is wrong. <em>The Quantized Dirac Field in Biquaternionic Form</em> states the passage between the two explicitly, and gives the reading that makes it work. What the inventory records is that the passage is a change of carrier, and that six articles print the square of the pair as $\Box$ without the identity.</p>
+<h2 id="the-definition-and-the-carrier">The Definition and the Carrier</h2>
+<p><strong>The pair.</strong> $\mathbb{B}\oplus\mathbb{B}$ has complex dimension eight. On it the operator is the block matrix</p>
+<p>$$
+\mathbb{D}(\tilde K)=\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix},\qquad \mathbb{D}(\tilde K)(\psi_L,\psi_R)=\bigl(\tilde K\psi_R,\ \tilde K^{\natural}\psi_L\bigr),
+$$</p>
+<p>which is the form <em>The First-Order Root of the Biquaternion d'Alembertian</em> prints, with $\tilde K$ standing for $\tilde\nabla$ in the derivative case and for the momentum in the symbol case. The block form makes the two properties immediate: the off-diagonal blocks exchange the two values, and the square is diagonal because the two products are the same scalar.</p>
+<p><strong>The square, recomputed.</strong> With the corpus product table $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$,</p>
+<p>$$
+\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box .
+$$</p>
+<p>I checked this on a polynomial field carrying mixed monomials such as $Q_xQ_t$, with analytic derivatives rather than finite differences: the residual is $9.2\times10^{-16}$ against $\Box=\sum_\mu\partial^2/\partial Q_\mu^2$. The cross terms cancel pairwise, the time term against each spatial one, and the diagonal terms give $\varepsilon_\mu e_\mu e_\mu=\varepsilon_\mu^{2}e_t=e_t$ for every $\mu$. This is the identity every entry in the tables below leans on.</p>
+<p><strong>Why the pair is written at all.</strong> The two chiral equations are two equations on two fields. Written as one operator they become one equation on one object, and the mass becomes a shift. The article states the consequence: the mass term "is the pairing of the two parts and a zeroth-order term", so the operator's symbol is untouched by it. That is what makes $\mathbb{D}-m$ invertible exactly where $\Box-m^2$ is.</p>
+<h2 id="type-a-the-pair-on-the-pair-space">Type A: The Pair on the Pair Space</h2>
+<p>Twenty-two articles write the pair on $\mathbb{B}\oplus\mathbb{B}$. The equation column gives the display in which the glyph appears.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr)$; $\mathbb{D}^2=\Box I$; $(\mathbb{D}-m)\Psi=0$; $\mathcal{S}=(\mathbb{D}+m)G$, $(\Box-m^2)G=\delta$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>$\mathbb{D}(\tilde\Psi_L,\tilde\Psi_R)=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$; $(\mathbb{D}-m)(\mathbb{D}+m)(\tilde\Psi_L,\tilde\Psi_R)=\bigl((\Box-m^2)\tilde\Psi_L,\ (\Box-m^2)\tilde\Psi_R\bigr)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td>$\mathbb{D}(\Psi_L,\Psi_R)=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr)$, $\mathbb{D}^2=\Box I$, $(\mathbb{D}-m)\Psi=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$, $\mathbb{D}^2=\Box\,I$, $(\mathbb{D}-\mu)\Psi=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td>$\mathbb{D}\tilde\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$; $\mathbb{D}^2\tilde\Psi=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde\Psi_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde\Psi_R\bigr)=\Box\,\tilde\Psi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>$\mathbb{D}(\tilde\Psi_L,\tilde\Psi_R)=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$, $\mathbb{D}^2=\Box e_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$; $\det\bigl(\mathbb{D}(\tilde K)-\mu\bigr)=\bigl(k_0^2-\lvert\vec k\rvert^2-\mu^2\bigr)^4$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\mathbb{D}:(\tilde\Psi_L,\tilde\Psi_R)\longmapsto\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$; $\mathbb{D}_p:(w_L,w_R)\longmapsto\bigl(\tilde K\,w_R,\ \tilde K^{\natural}w_L\bigr)$; $Z=\det(\mathbb{D}-m)\exp\big[-\bar\eta\,M^{-1}\eta\big]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>$\bigl(\mathbb{D}-\mu\bigr)\mathcal S=i\,\delta^{(4)}$; $\mathbb{D}^2=\Box$; $\mathcal S=\bigl(\mathbb{D}+\mu\bigr)\Delta_F$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>$(\mathbb{D}-m)S_F=i\,\delta^{(4)}(x-y)$, $S_F=(\mathbb{D}+m)G_F$, $(\Box-m^2)G_F=i\,\delta^{(4)}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></td>
+<td>$\int\mathcal{D}\psi^{\dagger}\mathcal{D}\psi\,\exp\big(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\mathbb{D}-m)\psi\big)=\det(\mathbb{D}-m)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a></td>
+<td>$\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\,\exp\big(\tilde\Psi^{\natural}\mathcal{F}\tilde\Psi\big)=\det\mathcal{F}$, $\mathcal{F}=\mathbb{D}-m$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>$\mathbb{D}^2=\Box I$; the pair is "the two equations written once", with the mass as the pairing of the two parts</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path Integral Anomaly in Biquaternionic Form</a></td>
+<td>$\mathbb{D}(\psi_L,\psi_R)=\bigl(\tilde\nabla\psi_R,\ \tilde\nabla^{\natural}\psi_L\bigr)$, $\mathbb{D}^2=\Box\,I$; $Z[A]=\det\bigl(\mathbb{D}-m\bigr)$; $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=-2\,\mathrm{ind}(\mathbb{D})$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified Field Fibre Bundle</a></td>
+<td>$\mathbb{D}(\tilde\Psi_L,\tilde\Psi_R)=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$, and "squares to $\Box$"</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework: A Research Agenda</a></td>
+<td>$\mathbb{D}^2=\Box$, $(\mathbb{D}-m)\tilde\Psi=0$, on the pair $(\tilde\Psi_L,\tilde\Psi_R)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>$\mathbb{D}\tilde\Psi=m\tilde\Psi$, $\mathbb{D}^2=\Box$; $\mathbb{D}^{\dagger}=-\mathbb{D}$, so $i\mathbb{D}$ is the Hermitian representative</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>$\mathbb{D}\tilde{\Psi}=m_p\,\tilde{\Psi}$, $\mathbb{D}^2=\Box$, $\bigl(\mathbb{D}-m_p\bigr)\tilde{\Psi}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation, Spin 3/2, in Biquaternionic Form</a></td>
+<td>no display; the pair operator and its square are inherited from §<em>The Gradient</em> by reference</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element, Nilpotency, Mode Differential and Supercharge</a></td>
+<td>no display; the table records $\mathcal{D}=Q+Q^{\dagger}$, "written $\mathbb{D}$ in the companion articles"</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>no $\mathbb{D}$ display; the article works with the momentum symbol of the pair, $\mathcal{A}_p^{2}\tilde\Psi=p^{2}\tilde\Psi$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion d'Alembertian</a></td>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr)$; $\mathbb{D}^2=\Box I$, $(\mathbb{D}-m)(\mathbb{D}+m)=\bigl(\Box-m^2\bigr)I$; $\mathbb{D}(\tilde K)=\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The entries fall into three groups, and the grouping is informative.</strong> Six articles state the operator and its square as their own notation: the conventions page, the CPT theorem, the Dirac oscillator, the Klein–Gordon square, the spectral triple and the unified fibre bundle. Seven use it as the operator whose determinant or propagator they compute: the fermionic path integral, the functional integral, the functional determinant, the Feynman propagator, the Dirac path integral, the index theorem and the Fujikawa anomaly. The rest quote it for a square or a symbol.</p>
+<p><strong>One article gives the operator a Hermiticity, and the block form supplies the reason.</strong> <em>Supersymmetric Quantum Physics</em> writes $\mathbb{D}^{\dagger}=-\mathbb{D}$ and calls the operator anti-Hermitian, with $i\mathbb{D}$ the Hermitian representative. The spectral triple article supplies the missing step, $\tilde\nabla^{\dagger}=-\tilde\nabla^{\natural}$, and then each block of $\mathbb{D}^{\dagger}$ is minus the corresponding block of $\mathbb{D}$, so $\mathbb{D}^{\dagger}=-\mathbb{D}$ holds block by block. The two statements are one statement, and neither article cites the other. No other article states the adjoint.</p>
+<h2 id="type-b-the-same-glyph-on-one-element">Type B: The Same Glyph on One Element</h2>
+<p>Five articles write the glyph as an operator on a single element, with the right multipliers carrying the frame. It is the same square and a different carrier.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>$\mathbb{D}:\tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde X}{\partial Q_k}\vec e_y$; $\mathbb{D}_p:\tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y$; $\mathbb{D}^2=\Box$, $\mathbb{D}_p^2=p^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
+<td>$\mathbb{D}:\tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y$; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr)$, $\mathbb{D}^2=\Box$; and $\mathbb{D}:\tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>$\mathbb{D}\psi:=-\sum_\mu\varepsilon_\mu\,e_\mu\frac{\partial\psi}{\partial x_\mu}\vec e_{\nu(\mu)}$; $\mathbb{D}_p\psi:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\psi\,\vec e_{\nu(\mu)}\,p_\mu$; $(\mathbb{D}-m)\psi_\mu=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td>$\mathbb{D}\psi=-\sum_\mu e_\mu\frac{\partial\psi}{\partial x_\mu}\vec e_{\nu(\mu)}$; $\mathbb{D}^{2}=-\sum_\mu\varepsilon_\mu\frac{\partial^{2}}{\partial x_\mu^{2}}=\Box$; $\chi\,\mathbb{D}\,\chi^{-1}=-\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The map $\nu(\mu)$ is what makes the one-element form work.</strong> In the quantized Dirac article the time term carries $\vec e_x$ on the right and each spatial term carries $\vec e_y$; in the Rarita–Schwinger quantization the index is written $\nu(\mu)$ and left implicit. The two multipliers are both spatial, so each squares to $-e_t$, and the diagonal of the square is $-\sum_\mu\varepsilon_\mu\partial_\mu^2$ with $\varepsilon=(1,-1,-1,-1)$, which is $\Box$ after the sign of the time term.</p>
+<p><strong>The square, recomputed on the symbol.</strong> For the symbol $\mathbb{D}_p\tilde X=iE\tilde X\vec e_x-i\sum_k p_k\vec e_k\tilde X\vec e_y$ I get</p>
+<p>$$
+\mathbb{D}_p^{2}\tilde X=\bigl(E^{2}-\lvert\vec p\rvert^{2}\bigr)\tilde X ,
+$$</p>
+<p>with residual $1.3\times10^{-15}$ over a random element and a random momentum. The cross terms cancel between the time term and the three spatial ones, which is the cancellation the article describes. The carrier here is four-dimensional, so this cannot be the same array as the Type A operator, whose carrier is eight-dimensional.</p>
+<p><strong>The article that states the passage.</strong> <em>The Quantized Dirac Field</em> prints both: it defines the pair on $\mathbb{B}\oplus\mathbb{B}$, then writes "read on one element, which is the carrier of the field", and gives the one-element form. It adds the reason the two agree in square: "the two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units". The passage is therefore a documented reading and not an oversight; what it is not is an identity of arrays.</p>
+<h2 id="the-three-spellings-of-the-square">The Three Spellings of the Square</h2>
+<p>The pair is defined with $\mathbb{D}^2=\Box I$. Articles print three spellings, and the difference is not cosmetic: $\Box I$ is an operator on the pair, $\Box$ is a scalar, and $\Box e_t$ is an element.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spelling</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}^2=\Box I$</td>
+<td><em>Operator and Calculus Conventions</em>, <em>The CPT Theorem</em>, <em>The Dirac Oscillator</em>, <em>The Index Theorem</em>, <em>The First-Order Root of the Biquaternion d'Alembertian</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}^2=\Box e_t$</td>
+<td><em>The Spectral Triple of the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\mathbb{D}^2=\Box$</td>
+<td><em>The Proton</em>, <em>Supersymmetric Quantum Physics</em>, <em>The Reflection and the Rotation</em>, <em>The Dirac Path Integral</em>, <em>Quantum Chromodynamics</em>, <em>The Biquaternion Basis of a Unified Field Fibre Bundle</em>, and the five Type B articles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$\Box e_t$ is exact and the other two are abbreviations.</strong> $\Box$ is a complex scalar, so $\Box I$ is the scalar times the identity and $\Box e_t$ is the same multiple of the algebra unit; $e_t$ is the unit of $\mathbb{B}$, so on a single element the two agree. On the pair only $\Box I$ is correct. The five articles that write $\Box I$ are those that keep the operator on the pair space explicit. The articles that write $\Box$ either act on one element, where the identity is invisible, or abbreviate the pair by dropping the $I$.</p>
+<p><strong>The square is never written as a matrix in the physics articles.</strong> The block form of §<em>The Definition and the Carrier</em> is the only matrix display of the square, and it appears once, in the mathematics article.</p>
+<h2 id="the-two-carriers-cannot-be-one-array">The Two Carriers Cannot Be One Array</h2>
+<p><strong>The dimension argument.</strong> $\mathbb{B}$ is a complex vector space of dimension four; $\mathbb{B}\oplus\mathbb{B}$ has dimension eight. A $\mathbb{C}$-linear operator on one cannot be a $\mathbb{C}$-linear operator on the other. The two forms therefore differ in carrier before they differ in formula, and no rewriting of the letters makes them equal.</p>
+<p><strong>What they share, and why the confusion is reasonable.</strong> Both square to $\Box$; both are first order; both exchange the two chiral values, one by exchanging the two slots of the pair and the other by the two frame multipliers $\vec e_x$ and $\vec e_y$; and both have the momentum symbol whose square is $p_0^2-\lvert\vec p\rvert^2$. Four properties in common and one difference of carrier is exactly the situation in which a glyph gets shared.</p>
+<p><strong>The check that separates them.</strong> I built both arrays from the corpus product table and squared each. On the pair the square is $p^{2}I_8$; on one element it is the scalar $p_0^{2}-\lvert\vec p\rvert^{2}$. Both are the mass shell and neither array is the other. The determinant separates them numerically in the same way, by its exponent.</p>
+<p><strong>What a reader should do.</strong> Read the carrier from the equation, not from the glyph. A $\Psi$ with two subscripts, or a two-tuple on the right, means Type A. An $\tilde X$ or a $\tilde\Psi$ with two values and no tuple means the pair written on one element, and then the square is $\Box$.</p>
+<h2 id="the-momentum-symbol">The Momentum Symbol</h2>
+<p>The symbol is the operator with each derivative replaced by its plane-wave value, and it is written $\mathbb{D}_p$ in five articles. It is the object that carries the determinant and the propagator, so it is where the physics is.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\mathbb{D}_p:(w_L,w_R)\longmapsto\bigl(\tilde K\,w_R,\ \tilde K^{\natural}w_L\bigr)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
+<td>$\mathbb{D}_p:\tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y$, $\mathbb{D}_p^2=m^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>the same two lines, with $\mathbb{D}_p^2=p^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>$\mathbb{D}_p\psi:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\psi\,\vec e_{\nu(\mu)}\,p_\mu$; $\Sigma(\mathbb{D}_p\psi)=2\,p\cdot\psi-\mathbb{D}_p\,\Sigma(\psi)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>$\mathbb{D}(\tilde K)$, with $\det(\mathbb{D}(\tilde K)-\mu)=(k_0^2-\lvert\vec k\rvert^2-\mu^2)^4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The exponent four is the dimension of the carrier, and it can be computed.</strong> On the eight-dimensional pair the block matrix has $\mathbb{D}_p^{2}=p^{2}I$, so its eigenvalues are $\pm\sqrt{p^{2}}$, each with multiplicity four, and</p>
+<p>$$
+\det\bigl(\mathbb{D}_p-\mu\bigr)=\bigl(p^{2}-\mu^{2}\bigr)^{4}.
+$$</p>
+<p>I built the $8\times8$ matrix from the corpus product table and got residual $7\times10^{-15}$ against $(p^{2}-\mu^{2})^{4}$; the same construction on the four-dimensional Type B carrier gives $(p_0^{2}-\lvert\vec p\rvert^{2}-\mu^{2})^{2}$ instead, with residual $7\times10^{-18}$. The printed exponent four is therefore the fingerprint of the pair carrier, and it is the quickest way to tell which carrier an article's determinant belongs to.</p>
+<h2 id="where-the-glyph-is-not-the-pair-operator">Where the Glyph Is Not the Pair Operator</h2>
+<p>Five other glyphs carry $\mathbb{D}$ or its calligraphic cousin in this corpus. Four are mathematics, one is a table entry in a physics article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>object</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}^2$</td>
+<td>the unit disc of $\mathbb{C}$, $\{z:\lvert z\rvert<1\}$</td>
+<td><em>Hyperbolic Geometry</em>, line 74, and the other hyperbolic-geometry articles</td>
+</tr>
+<tr>
+<td>$K_{\mathbb{D}}$</td>
+<td>the Bergman kernel of the disc</td>
+<td><em>The Bergman Operator</em>, line 56</td>
+</tr>
+<tr>
+<td>$\mathbb{D}(G/K)$</td>
+<td>the commutative algebra of $G$-invariant differential operators on a symmetric space</td>
+<td><em>The Convolution Operator on a Symmetric Space</em>, line 72</td>
+</tr>
+<tr>
+<td>$g_{\mathbb{D}}$</td>
+<td>the Poincaré disc metric $4\lvert dz\rvert^{2}/(1-\lvert z\rvert^{2})^{2}$</td>
+<td><em>Hyperbolic Geometry</em>, lines 77 and 316</td>
+</tr>
+<tr>
+<td>$\mathcal{D}=Q+Q^{\dagger}$</td>
+<td>the Dirac operator as the Hermitian sum of the supercharge and its adjoint, "written $\mathbb{D}$ in the companion articles"</td>
+<td><em>The Square-Zero Element, Nilpotency, Mode Differential and Supercharge</em>, line 742</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the one that needs care, and it is a pointer, not a definition.</strong> The article does not use $\mathbb{D}$ itself; it says the companion articles do. Read against the companion articles, the object is the one-element form of Type B, since the supercharge is nilpotent on one element and its adjoint is taken there. Read alone, the row would suggest a third operator, and there is none.</p>
+<p><strong>One stale label, in an internal note.</strong> <em>The Gradient, the D'Alembertian and the Frame Generators</em> states that the conventions write $\mathbb{C}^{\mathrm{spl}}$ for the pair on $\mathbb{B}\oplus\mathbb{B}$. The conventions now write $\mathbb{D}$ and contain no $\mathbb{C}^{\mathrm{spl}}$ at all, and <em>Product and Form Conventions</em> uses $\mathbb{C}^{\mathrm{spl}}$ for the split-complex numbers. The label in that internal note is out of date, and this article is the current record. I did not rewrite the older note.</p>
+<h2 id="the-counts">The Counts</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type A, the pair on $\mathbb{B}\oplus\mathbb{B}$</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Type B, the one-element form</td>
+<td>5</td>
+</tr>
+<tr>
+<td>both forms printed in one article</td>
+<td>2 (the quantized Dirac field, the canonical quantization of the Dirac field)</td>
+</tr>
+<tr>
+<td><strong>distinct articles</strong></td>
+<td><strong>27</strong></td>
+</tr>
+<tr>
+<td>of which in <code>articles_physics</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td>of which in <code>articles_maths</code></td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count of 27 is the count of articles that use the glyph, not of articles that define it.</strong> One article defines it, <em>Operator and Calculus Conventions</em>. One states the passage between the two carriers, <em>The Quantized Dirac Field</em>. Six articles state the square as an identity and nothing else. The rest quote it.</p>
+<p><strong>The glyph is used far more often than it is defined, and that is the finding.</strong> Sixteen mathematics articles write $\mathbb{D}$ for objects that have nothing to do with this one, and a glyph count over the two corpora returns forty-three files where the operator has twenty-seven.</p>
+<h2 id="summary">Summary</h2>
+<p>The glyph $\mathbb{D}$ names two operators with one square. Type A acts on $\mathbb{B}\oplus\mathbb{B}$ and squares to $\Box I$; Type B acts on $\mathbb{B}$ and squares to $\Box$. Both are first order, both exchange the chiral values, both have the momentum symbol whose square is $p_0^2-\lvert\vec p\rvert^2$.</p>
+<p>The count is 27 articles: 22 Type A, 5 Type B, with 2 articles printing both. One article defines the operator, one states the passage between the carriers, five state the square as an identity.</p>
+<p>The square is spelled three ways. $\Box I$ is exact and appears in the five articles that treat the pair as an operator on the pair space; $\Box e_t$ appears once and is exact for the same reason; $\Box$ is an abbreviation that is exact only on one element.</p>
+<p>Five other glyphs carry $\mathbb{D}$: four mathematics and one table entry that points at the companion articles, and the older internal note that calls the pair $\mathbb{C}^{\mathrm{spl}}$ is out of date.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>the pair operator; on $\mathbb{B}\oplus\mathbb{B}$ in Type A, on $\mathbb{B}$ in Type B; the carrier is read from the equation, not from the glyph</td>
+</tr>
+<tr>
+<td>$\Psi=(\Psi_L,\Psi_R)$</td>
+<td>the pair, an element of $\mathbb{B}\oplus\mathbb{B}$; the two subscripts are the chiral values</td>
+</tr>
+<tr>
+<td>$\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L\bigr)$</td>
+<td>the definition of Type A; the two members exchange the values</td>
+</tr>
+<tr>
+<td>$\mathbb{D}(\tilde K)$</td>
+<td>the block matrix $\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix}$ with the derivative replaced by $\tilde K$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_p$</td>
+<td>the momentum symbol; each derivative replaced by its plane-wave value; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2$</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$</td>
+</tr>
+<tr>
+<td>$\Box I$</td>
+<td>the scalar $\Box$ times the identity on $\mathbb{B}\oplus\mathbb{B}$; the exact square of Type A</td>
+</tr>
+<tr>
+<td>$\Box e_t$</td>
+<td>the same multiple of the algebra unit; the exact square in <em>The Spectral Triple</em></td>
+</tr>
+<tr>
+<td>$\nu(\mu)$</td>
+<td>the frame index of the right multiplier in the Type B form: $\vec e_x$ for $\mu=t$ and $\vec e_y$ for the three spatial values</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the chirality element, $\chi\mathbb{D}\chi^{-1}=-\mathbb{D}$ in <em>The Chiral Condensate</em></td>
+</tr>
+<tr>
+<td>$\mathcal{S}$, $S_F$, $G$</td>
+<td>the Green matrix, the Feynman propagator and the scalar Green function, $\mathcal{S}=(\mathbb{D}+m)G$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}=Q+Q^{\dagger}$</td>
+<td>the Dirac operator of the supersymmetry article, pointing at the companion articles' $\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em>, under <strong>The pair operator</strong>, for the definition, the square and the Green matrix.</li>
+<li><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a>, for the passage from the pair to the one-element form.</li>
+<li><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion d'Alembertian</a>, for the block-matrix form and the determinant on the symbol.</li>
+<li><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a>, for the factorisation $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ on the pair.</li>
+<li><a href="the-gradient-the-dalembertian-and-the-frame-generators.html">The Gradient, the D'Alembertian and the Frame Generators</a>, for the gradient and the frame generators, with the stale label noted in §<em>Where the Glyph Is Not the Pair Operator</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

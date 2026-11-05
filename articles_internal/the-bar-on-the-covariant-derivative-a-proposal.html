@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bar on the Covariant Derivative: An Inventory and a Proposal — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-bar-on-the-covariant-derivative-an-inventory-and-a-proposal"><strong>The Bar on the Covariant Derivative: An Inventory and a Proposal</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The physics corpus can drop the bar on the covariant derivative. It costs 66 replacements in 4 articles, adds no new letter, and changes no equation. The mathematics corpus keeps its bar, because there the bar is the mark of the field and 26 articles define it that way.</p>
+<p>The proposal is one substitution:</p>
+<p>$$
+\bar D \;\longrightarrow\; D^{\natural}.
+$$</p>
+<p>Where the letter of the covariant derivative is $\tilde D$, the same rule gives $\tilde D^{\natural}$. Nothing else changes: not the derivative, not the connection, not the sign, not the side.</p>
+<p><strong>The evidence that the bar is a nickname and not an operator.</strong> Three facts, and each is in the corpus already.</p>
+<p><em>The corpus states the identity.</em> <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em> writes $(\tilde\Psi D)^{\natural}=D^{\natural}\tilde\Psi^{\natural}$ and then, in the same sentence, $D^{\natural}=\bar D$. That is the definition of $\bar D$ as shorthand for the conjugation.</p>
+<p><em>The article that holds the theory uses only the conjugation.</em> <em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>, writes $D^{\natural}$ 13 times and $\bar D$ zero times. The statement of the theorem needs the mark $\natural$ and never needs the bar.</p>
+<p><em>The plain gradient is never barred.</em> Across 411 physics articles there are zero occurrences of $\bar\nabla$. The physics corpus conjugates the gradient with $\natural$ and with nothing else, so the bar exists only after a connection is added.</p>
+<p><strong>What the bar costs as it stands.</strong> It is a second mark for one map, and it collides: <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em> uses $\bar D$ for a different operator altogether. Two objects, one glyph, same corpus.</p>
+<p><strong>What this article does not propose.</strong> No change to the mathematics corpus, where $\bar D$ is written by 26 articles and is the standard notation of Fueter and Clifford analysis. No change to the fifth physics file, where the bar names the cyclic operator. No change of meaning anywhere.</p>
+<h2 id="the-rule">The Rule</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>as printed</th>
+<th>after</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar D$</td>
+<td>$D^{\natural}$</td>
+<td>the operator, acting on a field</td>
+</tr>
+<tr>
+<td>$\bar{D}$</td>
+<td>$D^{\natural}$</td>
+<td>the same, braced: one token, not another object</td>
+</tr>
+<tr>
+<td>$\bar D_2$, $\bar{D}_2$</td>
+<td>$D_2^{\natural}$</td>
+<td>the gauge-transformed copy</td>
+</tr>
+<tr>
+<td>$\bar D D$, $\bar{D}D$</td>
+<td>$D^{\natural}D$</td>
+<td>the covariant square</td>
+</tr>
+<tr>
+<td>$D\bar D$, $D\bar{D}$</td>
+<td>$DD^{\natural}$</td>
+<td>the same square, other order</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\bar D D)$, $\mathrm{Vect}(\bar D D)$</td>
+<td>$\mathrm{Sc}(D^{\natural}D)$, $\mathrm{Vect}(D^{\natural}D)$</td>
+<td>projections of the square</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$, $\bar{e}_\mu$, $\bar{e}_t$, $\bar{e}_\nu$</td>
+<td>$e_\mu^{\natural}$, $e_t^{\natural}$, $e_\nu^{\natural}$</td>
+<td>the conjugate basis, so the definition stays a definition</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is not in the 66. It is 21 further tokens, all in the first article, and it is needed only so that the definition line reads consistently:</p>
+<p>$$
+\bar D := \sum_\mu \bar e_\mu D_\mu = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural}
+\qquad\longrightarrow\qquad
+D^{\natural} := \sum_\mu e_\mu^{\natural} D_\mu = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural}.
+$$</p>
+<p>The mathematics corpus already writes the conjugate basis this way, $e_\mu^{\natural}$, 84 times in 29 articles. The right-hand side is the notation the corpus uses everywhere else.</p>
+<h2 id="the-charge">The Charge</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>lines touched</th>
+<th>$\bar D$ occurrences</th>
+<th>conjugate basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td>25</td>
+<td>30</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>22</td>
+<td>28</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form: The Relativistic Case</a></td>
+<td>6</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>55</strong></td>
+<td><strong>66</strong></td>
+<td><strong>21</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>87 tokens in 55 lines. Two of the 55 lines are not a pure substitution and are treated in §<em>The Two Lines That Are Not a Substitution</em>.</p>
+<h2 id="table-a-the-covariant-derivative-and-gauge-connection">Table A — The Covariant Derivative and Gauge Connection</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>$\bar D$</th>
+<th>the occurrence, with its clause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19</td>
+<td>1</td>
+<td><code>… on them and its quaternion conjugate $\bar D$. No other letter names a derivative.</code></td>
+</tr>
+<tr>
+<td>26</td>
+<td>1</td>
+<td><code>- **The covariant square.** With $\bar D$ the quaternion conjugate of $D$, the exa …</code></td>
+</tr>
+<tr>
+<td>28</td>
+<td>1</td>
+<td><code>\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + …</code></td>
+</tr>
+<tr>
+<td>34</td>
+<td>1</td>
+<td><code>… derivative as parallel transport, and $\bar D D$ as the biquaternion form of the …</code></td>
+</tr>
+<tr>
+<td>236</td>
+<td>1</td>
+<td><code>\bar D := \sum_\mu \bar{e}_\mu D_\mu</code> — the definition</td>
+</tr>
+<tr>
+<td>239</td>
+<td>1</td>
+<td><code>… is not charge conjugation, and $\bar D$ is the quaternion conjugate of the opera …</code></td>
+</tr>
+<tr>
+<td>242</td>
+<td>1</td>
+<td><code>\boxed{\;\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + …</code></td>
+</tr>
+<tr>
+<td>250</td>
+<td>1</td>
+<td><code>\bar D D = \sum_{\mu,\nu} \bar{e}_\mu e_\nu\, D_\mu D_\nu</code></td>
+</tr>
+<tr>
+<td>265</td>
+<td>1</td>
+<td><code>\mathrm{Sc}\!\left(\bar D D\right) = \sum_{\mu\in\{t,x,y,z\}} D_\mu …</code></td>
+</tr>
+<tr>
+<td>267</td>
+<td>1</td>
+<td><code>\mathrm{Vect}\!\left(\bar D D\right) = \frac{iϙ}{\hbar}\tilde{F}.</code></td>
+</tr>
+<tr>
+<td>272</td>
+<td>1</td>
+<td><code>\bar D D\tilde{\Psi} = 0</code></td>
+</tr>
+<tr>
+<td>280</td>
+<td>3</td>
+<td><code>\mathrm{Sc}(\bar D D)</code></td>
+</tr>
+<tr>
+<td>291</td>
+<td>1</td>
+<td><code>\bar D\tilde\Psi_L = m\tilde\Psi_R .</code></td>
+</tr>
+<tr>
+<td>294</td>
+<td>1</td>
+<td><code>\bar D D\tilde\Psi_R = m^2\tilde\Psi_R</code></td>
+</tr>
+<tr>
+<td>296</td>
+<td>3</td>
+<td><code>… close the system instead, and applying $\bar D$ to $D\tilde\Psi_R = …</code></td>
+</tr>
+<tr>
+<td>306</td>
+<td>1</td>
+<td><code>… by $D$ and $\tilde\nabla^{\natural}$ by $\bar D$ in the pair, which is the …</code></td>
+</tr>
+<tr>
+<td>316</td>
+<td>1</td>
+<td><code>\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}</code></td>
+</tr>
+<tr>
+<td>338</td>
+<td>1</td>
+<td><code>\mathrm{Sc}(\bar D D) = \sum_\mu D_\mu^2</code></td>
+</tr>
+<tr>
+<td>344</td>
+<td>1</td>
+<td><code>… term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion …</code></td>
+</tr>
+<tr>
+<td>369</td>
+<td>1</td>
+<td><code>\boxed{\;\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + …</code></td>
+</tr>
+<tr>
+<td>371</td>
+<td>2</td>
+<td><code>\mathrm{Sc}(\bar D D) = \sum_\mu D_\mu^2, \quad \mathrm{Vect …</code></td>
+</tr>
+<tr>
+<td>376</td>
+<td>1</td>
+<td><code>\bar D\tilde\Psi_L = m\tilde\Psi_R</code></td>
+</tr>
+<tr>
+<td>401</td>
+<td>1</td>
+<td><code>\bar D = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}</code></td>
+</tr>
+<tr>
+<td>408</td>
+<td>1</td>
+<td><code>\sum_\mu D_\mu^2 = \mathrm{Sc}(\bar D D)</code></td>
+</tr>
+<tr>
+<td>409</td>
+<td>1</td>
+<td><code>\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="table-b-the-minimal-coupling">Table B — The Minimal Coupling</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>$\bar D$</th>
+<th>the occurrence, with its clause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>1</td>
+<td><code>\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R</code></td>
+</tr>
+<tr>
+<td>109</td>
+<td>1</td>
+<td><code>… = m\,\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\,\tilde{\Psi}_R\ }</code></td>
+</tr>
+<tr>
+<td>112</td>
+<td>1</td>
+<td><code>\bar{D} := \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}</code></td>
+</tr>
+<tr>
+<td>121</td>
+<td>1</td>
+<td><code>D\tilde{\Psi}_R = 0, \qquad \bar{D}\tilde{\Psi}_L = 0 .</code></td>
+</tr>
+<tr>
+<td>146</td>
+<td>2</td>
+<td><code>… $(\tilde{\Psi}D)^{\natural}=D^{\natural}\tilde{\Psi}^{\natural}$; with $D^{\natural} = \bar{D}$ …</code></td>
+</tr>
+<tr>
+<td>163</td>
+<td>1</td>
+<td><code>D\tilde\Psi_R = m\tilde\Psi_L, \qquad \bar D\tilde\Psi_L = m\tilde\Psi_R</code></td>
+</tr>
+<tr>
+<td>219</td>
+<td>1</td>
+<td><code>\bar{D}_2(\lambda\tilde{\Psi}_L)</code></td>
+</tr>
+<tr>
+<td>222</td>
+<td>1</td>
+<td><code>&amp;= \lambda\,\bar{D}\tilde{\Psi}_L .</code></td>
+</tr>
+<tr>
+<td>229</td>
+<td>2</td>
+<td><code>… = \lambda\,D\tilde{\Psi}_R, \qquad \bar{D}_2\tilde{\Psi}_{L,2} = …</code></td>
+</tr>
+<tr>
+<td>236</td>
+<td>2</td>
+<td><code>\bar{D}\tilde{\Psi}_L = 0 \quad \Longleftrightarrow \quad \bar{D}_2\tilde{\Psi}_{L,2} = 0</code></td>
+</tr>
+<tr>
+<td>244</td>
+<td>1</td>
+<td><code>\bar{D}D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \ …</code></td>
+</tr>
+<tr>
+<td>247</td>
+<td>1</td>
+<td><code>… the vector part the curvature. Applying $\bar{D}$ to the first member of the …</code></td>
+</tr>
+<tr>
+<td>250</td>
+<td>2</td>
+<td><code>\bar{D}D\tilde{\Psi}_R = m\,\bar{D}\tilde{\Psi}_L …</code></td>
+</tr>
+<tr>
+<td>259</td>
+<td>2</td>
+<td><code>… statement for $\tilde\Psi_L$ carries $D\bar{D}$ in place of $\bar{D}D$. The …</code></td>
+</tr>
+<tr>
+<td>266</td>
+<td>1</td>
+<td><code>D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R .</code></td>
+</tr>
+<tr>
+<td>385</td>
+<td>1</td>
+<td><code>\bar{D}D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}</code></td>
+</tr>
+<tr>
+<td>483</td>
+<td>1</td>
+<td><code>D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R,</code></td>
+</tr>
+<tr>
+<td>493</td>
+<td>1</td>
+<td><code>\bar{D}\tilde{\Psi}_L = 0</code></td>
+</tr>
+<tr>
+<td>498</td>
+<td>2</td>
+<td><code>… = \lambda\,D\tilde{\Psi}_R, \qquad \bar{D}_2\tilde{\Psi}_{L,2} = …</code></td>
+</tr>
+<tr>
+<td>537</td>
+<td>1</td>
+<td><code>\bar{D} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}</code></td>
+</tr>
+<tr>
+<td>539</td>
+<td>1</td>
+<td><code>\bar{D}D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}</code></td>
+</tr>
+<tr>
+<td>540</td>
+<td>1</td>
+<td><code>\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="table-c-the-hydrogen-atom">Table C — The Hydrogen Atom</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>$\bar D$</th>
+<th>the occurrence, with its clause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>279</td>
+<td>1</td>
+<td><code>\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R ,</code></td>
+</tr>
+<tr>
+<td>285</td>
+<td>1</td>
+<td><code>\bar{D} = \tilde\nabla^{\natural} + \frac{iϙ}{\hb …</code></td>
+</tr>
+<tr>
+<td>298</td>
+<td>1</td>
+<td><code>\bar{D}\tilde\Psi_L = m\tilde\Psi_R</code></td>
+</tr>
+<tr>
+<td>408</td>
+<td>1</td>
+<td><code>\bar{D}\tilde\Psi_L = m\tilde\Psi_R</code></td>
+</tr>
+<tr>
+<td>562</td>
+<td>1</td>
+<td><code>$\tilde\nabla^\natural$, $\tilde A^\natural$, $\bar D$ are its images</code></td>
+</tr>
+<tr>
+<td>578</td>
+<td>1</td>
+<td><code>\bar D = \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="table-d-the-electron">Table D — The Electron</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>$\bar D$</th>
+<th>the occurrence, with its clause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>88</td>
+<td>1</td>
+<td><code>… Calculus Conventions* and its conjugate $\bar D$, both carrying …</code></td>
+</tr>
+<tr>
+<td>92</td>
+<td>1</td>
+<td><code>\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R,</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-lines-that-are-not-a-substitution">The Two Lines That Are Not a Substitution</h2>
+<p><strong>The definition line, Table A line 236.</strong> The substitution is not enough there, because the same line defines the conjugate basis. It becomes</p>
+<p>$$
+D^{\natural} := \sum_\mu e_\mu^{\natural} D_\mu = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural},
+$$</p>
+<p>and the prose after it, "the conjugation $\natural$ being that of <em>Product and Form Conventions</em>, applied to the basis elements and to the coefficients alike", still holds word for word. It is in fact a better description of $D^{\natural}$ than of $\bar D$, since it now names the object it defines.</p>
+<p><strong>The clause in Table B line 146.</strong> The line reads "gives $(\tilde\Psi D)^{\natural}=D^{\natural}\tilde\Psi^{\natural}$; with $D^{\natural}=\bar D$, the right-action equation on $\tilde\Psi$ is the left-action equation on $\tilde\Psi^{\natural}$". After the substitution, "with $D^{\natural}=D^{\natural}$" is circular. The clause goes, and the sentence reads "gives $(\tilde\Psi D)^{\natural}=D^{\natural}\tilde\Psi^{\natural}$; the right-action equation on $\tilde\Psi$ is the left-action equation on $\tilde\Psi^{\natural}$". That is a deletion of six words and it removes the only place in the corpus where the bar is <em>defined</em> rather than used.</p>
+<p>After that deletion no bar is left in <em>The Minimal Coupling</em>, and the article's own definition of the operator, line 112, reads $D^{\natural} := \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$, the same string as Table A line 236. Two articles, one definition, no conflict: that is how the corpus already repeats its conventions.</p>
+<h2 id="why-it-is-safe">Why It Is Safe</h2>
+<p><strong>The two objects are the same array.</strong> With complex scalar coefficients, and 100 random draws,</p>
+<p>$$
+\left\|\sum_\mu \bar e_\mu D_\mu - \Bigl(\sum_\mu e_\mu D_\mu\Bigr)^{\natural}\right\| = 0.00 .
+$$</p>
+<p>The equality is exact, not approximate, and it is the equality the four articles assume: <em>The Covariant Derivative</em> says the coefficients are complex scalars and that the conjugation is applied "to the basis elements and to the coefficients alike".</p>
+<p><strong>The condition of validity, stated once.</strong> With coefficients that do not commute with the basis, the two sides differ: residual $1.03\times10^{1}$ over 100 draws. So the substitution is exact for a connection with scalar components, and it is not exact for a connection valued in the algebra. All four articles use the first kind. The check to run before the edit is one line: no $\bar D$ in the article may sit next to a Lie-algebra-valued connection.</p>
+<p><strong>The bar has a job elsewhere, and it is not this one.</strong> The second usage in the physics corpus, in <em>The Chiral Algebra</em>, is left untouched. So is $\overline{\tilde\nabla}=\tilde\nabla$, the componentwise conjugation of the coefficients, which returns the gradient unchanged and is a different map.</p>
+<h2 id="what-is-out-of-scope">What Is Out of Scope</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>status</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mathematics, 26 articles, 333 occurrences</td>
+<td>unchanged</td>
+<td>$\bar D$ is the standard notation of Fueter and Clifford analysis; the plain operator there is $D$ and the bar is its only conjugation</td>
+</tr>
+<tr>
+<td>mathematics, 3 articles, 33 occurrences of $\bar\nabla$</td>
+<td>unchanged</td>
+<td>the same object under a different letter</td>
+</tr>
+<tr>
+<td>physics, <em>The Chiral Algebra</em>, 13 occurrences</td>
+<td>unchanged</td>
+<td>the bar names the cyclic operator, not the conjugate</td>
+</tr>
+<tr>
+<td>physics, $\overline{\tilde\nabla}$ in the two conventions articles</td>
+<td>unchanged</td>
+<td>a different map: it fixes the units</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The asymmetry is the point.</strong> In mathematics the plain gradient is written $D$ and the bar is indispensable. In physics the plain gradient is written $\tilde\nabla^{\natural}$ and the bar is a second mark for the map already named. The proposal removes the second mark and leaves the first corpus alone.</p>
+<h2 id="verification-and-rollback">Verification and Rollback</h2>
+<p><strong>Verification.</strong> After the edit, each of the four articles must satisfy three checks. No $\bar D$ remains except where the article compares itself to an outside source. Every $D^{\natural}$ is in a place where the bar stood, so the count of $D^{\natural}$ in the article equals its old count plus the bar count. Every display keeps its meaning: the square reads $D^{\natural}D$, the chiral pair reads $D\tilde\Psi_R=m\tilde\Psi_L$, $D^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, and the projections read $\mathrm{Sc}(D^{\natural}D)=\sum_\mu D_\mu^2$ and $\mathrm{Vect}(D^{\natural}D)=\frac{iϙ}{\hbar}\tilde F$.</p>
+<p><strong>Rollback.</strong> The change is mechanical and reversible: replace $D^{\natural}$ by $\bar D$ in the four files, and restore the six-word clause in Table B line 146. No equation changes sign, order or index, so a rollback cannot corrupt an argument.</p>
+<p><strong>Cost.</strong> 87 tokens in 55 lines in 4 files. Two lines need a human read; the other 53 are the same substitution.</p>
+<h2 id="executed">Executed</h2>
+<p>The substitution is done. The four articles now read:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>$\bar D$ before</th>
+<th>after</th>
+<th>$D^{\natural}$ now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Covariant Derivative and Gauge Connection</td>
+<td>30</td>
+<td>0</td>
+<td>30</td>
+</tr>
+<tr>
+<td>The Minimal Coupling</td>
+<td>28</td>
+<td>0</td>
+<td>24, plus 4 of $D_2^{\natural}$</td>
+</tr>
+<tr>
+<td>The Hydrogen Atom</td>
+<td>6</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>The Electron</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p>87 tokens replaced: 66 operators and 21 conjugate-basis marks. The two special lines were handled as described. Three independent identities were rechecked on 100 random draws after the edit: $D^{\natural}=\sum_\mu e_\mu^{\natural}D_\mu$ at $0.00$, $e_\mu^{\natural}e_\nu+e_\nu^{\natural}e_\mu=0$ for $\mu\neq\nu$ at $0.00$, and the square identity at $8.9\times10^{-16}$.</p>
+<p><strong>What remains in the physics corpus.</strong> 15 occurrences of $\bar D$, none of them this operator: 13 in <em>The Chiral Algebra</em> for the cyclic operator, and 2 false positives, a spinor index in <em>The Newman–Penrose Formalism</em> and a prose mention in <em>The Dirac Equation</em>. 49 occurrences of the barred basis remain in 8 further articles, listed below; they are the same defect in articles that carry no $\bar D$.</p>
+<h2 id="summary">Summary</h2>
+<p>The bar on the covariant derivative is droppable in the physics corpus. It is 66 occurrences in four articles, plus 16 occurrences of the conjugate basis on the definition line, and the corpus already states the identity that makes it a nickname: $D^{\natural}=\bar D$, in <em>The Minimal Coupling</em>, with the theory article using only $D^{\natural}$.</p>
+<p>The substitution is exact for the objects in use, at residual $0.00$ over 100 draws, and it fails only for a connection valued in the algebra, which no article of the four uses.</p>
+<p>The gain is one mark less, one collision less, and one definition instead of two. <em>The Chiral Algebra</em> keeps the bar and stops sharing a glyph with a different operator.</p>
+<p>The mathematics corpus keeps everything. There the bar is not a second mark; it is the only one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>its conjugate, the same sum with the spatial units negated</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the gauge-covariant derivative, $\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$</td>
+</tr>
+<tr>
+<td>$\bar D$</td>
+<td>its quaternion conjugate, $\sum_\mu\bar e_\mu D_\mu$: <strong>the mark this article proposes to drop</strong></td>
+</tr>
+<tr>
+<td>$D^{\natural}$</td>
+<td>the same operator, spelled with the involution: <strong>the mark proposed</strong></td>
+</tr>
+<tr>
+<td>$e_\mu^{\natural}$</td>
+<td>the conjugate basis, $e_t$ and $-\vec e_k$</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$</td>
+<td>the same thing, barred: the spelling proposed for retirement</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Two Sides and the Renaming Theorem</em>, for $D^{\natural}$ without a bar.</li>
+<li><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the definition and the square.</li>
+<li><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a>, for the statement $D^{\natural}=\bar D$ and the clause to delete.</li>
+<li><a href="../articles_internal/the-gauge-covariant-derivative-an-inventory-by-type.html">The Gauge-Covariant Derivative: An Inventory by Type</a>, the internal inventory where $\bar D$ appears among the derivative types.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

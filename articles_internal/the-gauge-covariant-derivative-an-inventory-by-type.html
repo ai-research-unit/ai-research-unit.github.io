@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gauge-Covariant Derivative: An Inventory by Type — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gauge-covariant-derivative-an-inventory-by-type"><strong>The Gauge-Covariant Derivative: An Inventory by Type</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>One operator is written in nine shapes in this corpus, across thirty-four articles. The shapes are not spellings of one array. They differ in what the connection is (a central scalar, an algebra element, a matrix, a link variable), in which side the field is multiplied from, and in whether the derivative is taken before or after the field is split into two chiral halves. Two articles on the same subject can be written in two different shapes, and a reader who takes the letter for the object will substitute one for the other and be wrong.</p>
+<p>The object itself is fixed. The covariant derivative is the gradient with the connection added, and the reason it exists is stated in <em>The Gauge Principle in Biquaternionic Form</em>: requiring $D_2(\lambda\tilde\Psi)=\lambda D\tilde\Psi$ for a central phase forces $\tilde A_2=\tilde A-\tilde\nabla\Gamma$, and the connection is the price of that requirement. Everything else in this inventory is a variation on where the connection sits and on which side the multiplication acts.</p>
+<p>The count is worth stating at the head, because the figures move. Thirty-seven statements in thirty-four articles. Three articles carry two shapes each: the gauge principle states the abelian derivative and previews the non-abelian one, and the gauge-curvature and Yang–Mills articles each write the non-abelian derivative and its adjoint form. The nine shapes are tabulated below, each with the article, a link, and the equation as the article prints it.</p>
+<p>Two findings organise the record, and neither is a matter of taste.</p>
+<p><strong>The letter does not fix the object.</strong> $D_\mu$ names the covariant derivative in the gauge articles and the gauge propagator in <em>The Stueckelberg Mechanism</em>. $\mathcal D$ names the covariant derivative in the anomaly article and the functional measure in every path-integral article. §<em>Where the Letter Is Not a Covariant Derivative</em> lists the seven collisions with a line reference for each.</p>
+<p><strong>The side is carried by position, and it moves the object.</strong> In the abelian gauge articles the derivative multiplies the field from the left, $D\tilde\Psi$. In the chiral articles the charge sits on the right, $D_\mu Q=\partial Q/\partial Q_\mu+\frac{i}{\hbar}A_\mu Qb$. In the spin-connection articles the connection multiplies from both sides, $D_\mu\tilde Q=\partial/\partial x_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$. The three are not related by a change of letter.</p>
+<h2 id="the-object-and-its-layers">The Object and Its Layers</h2>
+<p><strong>The definition.</strong> The covariant derivative is the sum of the gradient and the connection,</p>
+<p>$$
+\tilde D=\tilde\nabla+i\kappa\mathcal A,\qquad \kappa=\frac{ϙ}{\hbar},
+$$</p>
+<p>with $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>. The assembled operator carries the tilde because its $e_t$ coefficient is $\partial/\partial Q_t+i\kappa\mathcal A_t$, a scalar part; the component carries none.</p>
+<p><strong>The four writings, in one place.</strong> <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> prints the assembled operator, its expansion, its action, and its component side by side:</p>
+<p>$$
+D=\tilde{\nabla}+\frac{iϙ}{\hbar}\tilde{A}=\sum_{\mu\in\{t,x,y,z\}}e_\mu\left(\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu\right)=:\sum_{\mu\in\{t,x,y,z\}}e_\mu D_\mu,
+$$</p>
+<p>$$
+D\tilde{\Psi}=\tilde{\nabla}\tilde{\Psi}+\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},\qquad D_\mu\tilde{\Psi}=\partial/\partial Q_\mu\,\tilde{\Psi}+\frac{iϙ}{\hbar}A_\mu\tilde{\Psi}.
+$$</p>
+<p><strong>Three properties, and each is a warrant for one of the shapes below.</strong> First, it is a derivation on central scalars, $D(f\tilde\Psi)=fD\tilde\Psi+(\tilde\nabla f)\tilde\Psi$; the connection term passes through $f$ because $f$ is central. Second, its commutator with a function is the plain derivative, $[D_\mu,f]=\partial/\partial Q_\mu f$. Third, its commutator with itself closes on the algebra, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$, and that is the only one of the three that produces an element rather than an operator.</p>
+<p><strong>The square, where the shape is the abelian one.</strong> With $\bar D=\sum_\mu\bar e_\mu D_\mu=\tilde\nabla^{\natural}+i\kappa\tilde A^{\natural}$ the quaternion conjugate of the operator, the identity</p>
+<p>$$
+\bar D D=\sum_{\mu\in\{t,x,y,z\}}D_\mu^{2}+\frac{iϙ}{\hbar}\tilde F
+$$</p>
+<p>separates the covariant d'Alembertian from the curvature. The article states that it was checked on random connections and random fields, on constant and on non-constant potentials. The derivation is three lines: the diagonal of $\sum_{\mu,\nu}\bar e_\mu e_\nu D_\mu D_\nu$ gives $e_t\sum_\mu D_\mu^{2}$ because $\bar e_\mu e_\mu=e_t$, and each off-diagonal pair collapses onto the commutator, $\bar e_\mu e_\nu D_\mu D_\nu+\bar e_\nu e_\mu D_\nu D_\mu=\bar e_\mu e_\nu[D_\mu,D_\nu]$, because the anticommutator coefficient vanishes term by term. I did not re-verify the identity here; I take the article's statement. $\bar D$ is the quaternion conjugate of the operator, not the operator of the opposite charge; the article says so, because $\tilde A^{\natural}\neq-\tilde A$ in general.</p>
+<h2 id="type-1-the-abelian-connection-acting-on-the-left">Type 1: The Abelian Connection, Acting on the Left</h2>
+<p>The connection is central. It is a biquaternion, in practice in $\mathbb{M}_-$, and it multiplies the field from the left. This is the shape of the gauge principle and of every article that quantises or perturbs the abelian field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>$D\tilde\Psi=\tilde{\nabla}\tilde\Psi+\frac{iϙ}{\hbar}\tilde{A}\tilde\Psi$, $D_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$; $[D_\mu,D_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td>$D=\tilde{\nabla}+\frac{iϙ}{\hbar}\tilde{A}$, $\bar D D=\sum_{\mu}D_\mu^{2}+\frac{iϙ}{\hbar}\tilde{F}$; $[D_\mu,f]=\partial/\partial Q_\mu f$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$; $D\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L=m\tilde{\Psi}_R$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form: The Relativistic Case</a></td>
+<td>$D\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L=m\tilde{\Psi}_R$; $\bar{D}=\tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>$D\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L=m\tilde{\Psi}_R$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field in Biquaternionic Form</a></td>
+<td>$D=\tilde{\nabla}+\frac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$; no component display, the letter is used in prose</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework: A Research Agenda</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$; $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a></td>
+<td>$D_\mu\tilde{\Phi}=\partial/\partial Q_\mu\,\tilde{\Phi}+\frac{iϙ}{\hbar}A_\mu\tilde{\Phi}$; $D_\mu\tilde{\Phi}\big|_{\mathrm{vac}}=\frac{iϙ}{\hbar}A_\mu\langle\tilde{\Phi}\rangle$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
+<td>$D_\mu\varphi\big|_{\mathrm{vac}}=\frac{iϙ}{\hbar}A_\mu\frac{v}{\sqrt{2}}$; $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\varphi)^{*}(D_\nu\varphi)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$, $\kappa=ϙ/\hbar$; $D_\mu\varphi=\frac{1}{\sqrt2}e^{i\vartheta}\big[\partial/\partial Q_\mu\,\rho+i(\rho+v)(\partial/\partial Q_\mu\,\vartheta+\kappa A_\mu)\big]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a></td>
+<td>no display; the notation table fixes $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$, $\kappa=ϙ/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a></td>
+<td>no display; the notation table fixes $D_\mu=\partial/\partial x_\mu+i\kappa\mathcal A_\mu$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
+<td>$D=\tilde{\nabla}+i\kappa\tilde{A}$, $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>$\tilde D\tilde F=\tilde\nabla\tilde F+[\mathcal{A},\tilde F]=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>$\tilde D=\tilde\nabla+i\kappa\mathcal A$; $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>no equation; $\tilde D$ is named among the glyphs read with their scalar part, beside $\tilde p$ and $\tilde\nabla$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two conventions articles are the anchor, and they differ in scope.</strong> <em>Algebra and Element Conventions</em> gives the formula and its use on the curvature. <em>Operator and Calculus Conventions</em> only lists the glyph, and it does so to fix the tilde: the operator is read with its scalar part, and the component $D_\mu$ carries no tilde. An article that writes $\tilde D$ without a formula is therefore following the second, not defining anything.</p>
+<p><strong>The pair $\bar D$ belongs to this type and is not a second operator.</strong> It is the quaternion conjugate of $D$, and the chiral Dirac pair is written with it. <em>The Minimal Coupling</em> is the article that states the pair and checks its covariance; <em>The Hydrogen Atom</em> and <em>The Electron</em> use it without re-deriving it.</p>
+<h2 id="type-2-the-algebra-valued-connection">Type 2: The Algebra-Valued Connection</h2>
+<p>The connection is an element of $\mathbb{B}$, not a central scalar. Order now matters, a commutator term appears in the curvature, and the derivative acts on its own curvature through the adjoint, which is the next type.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal{A}_\mu$, $D=\tilde{\nabla}+i\kappa\,\mathcal{A}$; $[D_\mu,D_\nu]=i\kappa\,F_{\mu\nu}$, $F_{\mu\nu}=\partial/\partial Q_\mu\mathcal{A}_\nu-\partial/\partial Q_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$; $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td>$\sum_\mu D_\mu F_{\mu\nu}=J_\nu$; $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal{A},\tilde F]$, $\tilde J:=\tilde D\tilde F$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a></td>
+<td>$[D_\mu,D_\nu]=i\kappa\,F_{\mu\nu}$, $F_{\mu\nu}=\partial/\partial Q_\mu\mathcal{A}_\nu-\partial/\partial Q_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$; $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$; $\mathcal{A}_{\mu a}\longmapsto\mathcal{A}_{\mu a}-(D_\mu\Gamma)_a$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework: A Research Agenda</a></td>
+<td>$[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$; $D_\lambda F_{\mu\nu}+D_\mu F_{\nu\lambda}+D_\nu F_{\lambda\mu}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
+<td>$\big\langle\big(\sum_\mu D_\mu F_{\mu\nu}\big)_a\big\rangle=\langle J_{\mathrm{gf},\nu a}\rangle+\langle J_{\mathrm{gh},\nu a}\rangle$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a></td>
+<td>$sA_{\mu a}=(D_\mu c)_a=\partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b}c_c$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>the preview: $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu+\frac{iϙ}{\hbar}[A_\mu,A_\nu]$; $D_\mu D_\nu\tilde\Psi-D_\nu D_\mu\tilde\Psi=\frac{iϙ}{\hbar}F_{\mu\nu}\tilde\Psi$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The gauge-principle article appears twice, and the second entry is a preview, not a result.</strong> It says so in its own words: the non-abelian case "belongs to the planned companion articles", and what it states is the commutator identity and the gap in the reality condition. The exact treatment is in <em>Non-Abelian Gauge Fields</em>, which recomputes everything on $\mathrm{SU}(2)$ and on generic non-commuting connections.</p>
+<p><strong>One shape, two carriers.</strong> In these articles $F_{\mu\nu}$ is an algebra element rotated by the gauge group. <em>Non-Abelian Gauge Fields</em> makes the point its first claim: a component of the field strength is not a number, and every other non-abelian feature is downstream of that.</p>
+<h2 id="type-3-the-adjoint-action">Type 3: The Adjoint Action</h2>
+<p>The derivative acts on an element that transforms in the adjoint, so the connection multiplies from both sides and the two multipliers are the connection and its conjugate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a></td>
+<td>$D_\mu\Psi=\partial/\partial Q_\mu\Psi+i\kappa\mathcal{A}_\mu\Psi$ on matter; $D_\lambda\tilde{Q}=\partial/\partial Q_\lambda\tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ on the adjoint; $D_\mu\tilde{Q}=\partial/\partial Q_\mu\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td>$D_\mu\bigl(F_{\mu\nu}e_\nu\bigr)=\bigl(D_\mu F_{\mu\nu}\bigr)e_\nu+i\kappa\,F_{\mu\nu}\,[\mathcal{A}_\mu,e_\nu]$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The article prints the two side by side, and that is the cleanest statement of the distinction in the corpus.</strong> Its display labels the matter field "one-sided (left)" and the adjoint-valued curvature "two-sided", in the same bracket. The third line is the three-term form with the two frame multipliers, which is the shape of the next type; the article writes it as the bivector form of the same action.</p>
+<h2 id="type-4-the-spin-connection-two-sided">Type 4: The Spin Connection, Two-Sided</h2>
+<p>The connection is a frame element $\vec\Gamma_\mu\in\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\subset\mathbb{B}$, and it multiplies from both sides. The derivative of a field that carries one index keeps one multiplier; the derivative of an element keeps both.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>$D_\mu\tilde{Q}=\partial/\partial x_\mu\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$; $D_\mu\tilde\Psi=\partial/\partial x_\mu\tilde\Psi+\vec\Gamma_\mu\tilde\Psi$; $\tilde F_\mu D_\mu\tilde\Psi_R=m\tilde\Psi_L$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td>$D_\mu\tilde Q=\partial/\partial x_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$; $D_\mu\psi=\partial/\partial x_\mu\psi+\vec\Gamma_\mu\psi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework: A Research Agenda</a></td>
+<td>$D_\mu\tilde{Q}=\partial/\partial Q_\mu\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$; $D_\mu=\partial/\partial Q_\mu+\tfrac{iϙ}{\hbar}A_\mu$, $D_\mu\tilde\Psi=\partial/\partial Q_\mu\tilde\Psi+\tfrac{iϙ}{\hbar}A_\mu\tilde\Psi$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>These three articles carry both an abelian and a two-sided derivative, and they keep them apart by the connection, not by the letter.</strong> <em>Quantum Gravity</em> uses $A_\mu$ for the abelian case and $\vec\Gamma_\mu$ for the frame case, and the two derivatives are both written $D_\mu$. <em>Torsion, Contorsion and the Spin Connection</em> adds the warning that the abbreviation $D_\mu=\partial/\partial x_\mu+[\vec\Gamma_\mu,\cdot]$ is wrong for the boosts, which is a statement about the two-sided form and not about the torsion.</p>
+<h2 id="type-5-the-chiral-charge-acting-on-the-right">Type 5: The Chiral Charge Acting on the Right</h2>
+<p>The charge is not a scalar but an element $b$, and it multiplies the field from the right, so one letter carries two charges and the two halves see different ones.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>$D_\mu Q=\partial Q/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Qb$, with $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework: A Research Agenda</a></td>
+<td>$\psi\longmapsto\psi b$; $D_\mu:\psi\longmapsto\frac{\partial}{\partial Q_\mu}\psi+\tfrac{i}{\hbar}A_\mu(\psi b)$; $[D_\mu,D_\nu]:\psi\longmapsto\tfrac{i}{\hbar}F_{\mu\nu}(\psi b)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>$D_\mu\tilde\Psi=\frac{\partial\tilde\Psi}{\partial Q_\mu}+\frac{i}{\hbar}A_\mu\tilde\PsiϘ$, the charge element $Ϙ$ sitting on the right</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The same article that introduces this shape states why it is not the abelian one.</strong> <em>Electroweak Theory</em> writes that the chiral action "coincides with a left multiplication — and hence with the framework's $\mathbb{B}$-valued connection — only when $ϙ_L=ϙ_R$, where $b$ is central". The chirality cell is not central, so the right multiplier does not fold into the connection, and the commutator closes on two multipliers rather than on one element.</p>
+<h2 id="type-6-the-transcribed-standard-model-derivative">Type 6: The Transcribed Standard-Model Derivative</h2>
+<p>One article writes the derivative of the Standard Model as it stands, with the gauge matrices as matrices and not as algebra elements. It is a different object and it is labelled as such.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>$D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+ig_{\mathrm{Y}}Y_\phi B_\mu$, entering through the kinetic term $\lvert D_\mu\phi\rvert^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it is not Type 2.</strong> The $T_a$ are the generators of the gauge group in the representation carried by $\phi$, and they are not elements of $\mathbb{B}$; $g$ and $g_{\mathrm Y}$ are two couplings, not one. The article uses the abelian shape $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ in its own biquaternionic computation and the transcribed shape only where the two couplings must be displayed separately.</p>
+<h2 id="type-7-the-derivative-in-a-representation">Type 7: The Derivative in a Representation</h2>
+<p>The derivative is twisted by a representation $R$, and the index is taken of the twisted operator. This is the only article in the corpus that writes the subscript.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>$\tilde D_R=\sum_{\mu}e_\mu D_\mu$, $D_\mu\psi=\frac{\partial\psi}{\partial Q_\mu}+i\kappa\mathcal{A}_\mu\psi$; $[D_\mu,D_\nu]\psi=i\kappa F_{\mu\nu}\psi$; $\mathrm{ind}\,\tilde D_R=\int_M\hat A(TM)\wedge\mathrm{ch}(E_R)=\frac{1}{8\pi^2}\int_{\mathbb{R}^4}\mathrm{Tr}_R(F\wedge F)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The subscript $R$ is a representation label and not a side.</strong> The article says so where it introduces the symbol. It also fixes which trace it means, in its own words: "the trace is the matrix trace, and the framework's biquaternion norm does not supply it", writing $\mathrm{Tr}_R$ in the index.</p>
+<h2 id="type-8-the-lattice-derivative">Type 8: The Lattice Derivative</h2>
+<p>On a lattice there is no derivative, so the covariant derivative is a finite difference and the connection is a link variable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
+<td>$(D_\mu\phi)(n)\longmapsto\frac{1}{a}\Big(\tilde U_\mu(n)\phi(n+\vec u_\mu)-\phi(n)\Big)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td>$D_\mu\tilde\Psi_n=\frac{\tilde\Psi_{n+\vec u_\mu}-\tilde\Psi_{n-\vec u_\mu}}{2a}$, $\tilde\nabla^{L}=\sum_{\mu}e_\mu D_\mu$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two articles discretise different things, and the difference is the subject of the pair.</strong> The lattice-gauge article keeps the link and drops the difference to first order, which is the gauge-covariant choice; the fermion-doubling article uses the centred difference, which carries no link variable and is therefore not gauge-covariant at nonzero coupling, and that is the situation the doubling theorem is about. A reader who takes $D_\mu$ for one thing across the two will miss that.</p>
+<h2 id="type-9-inside-an-action-or-a-determinant">Type 9: Inside an Action or a Determinant</h2>
+<p>The derivative appears as a factor of an operator whose determinant or trace is taken, so what matters is its square and its eigenfunctions rather than its action on a field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>complete equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path Integral Anomaly in Biquaternionic Form</a></td>
+<td>$Z[A]=\int\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}\exp\big(i\int d^4x\,\psi^{\dagger}(\tilde D-m)\psi\big)$; $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Note the two glyphs in the first equation.</strong> The two $\mathcal D$ are the functional measure; the $\tilde D$ inside the parentheses is the covariant derivative. The article writes both letters, and this is the one place in the corpus where the measure and the derivative meet inside a single display.</p>
+<h2 id="the-counts">The Counts</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>articles</th>
+<th>of which also appear in another type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1, abelian and left</td>
+<td>16</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2, algebra-valued</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3, adjoint</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4, spin connection</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5, chiral charge on the right</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6, transcribed Standard Model</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7, in a representation</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8, lattice</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9, inside an action</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>37 statements</strong></td>
+<td><strong>34 distinct articles</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three articles that carry two shapes are the ones to read twice.</strong> <em>The Gauge Principle</em> states the abelian derivative and previews the non-abelian one. <em>Gauge Curvature and the Bianchi Identity</em> writes the matter derivative, the adjoint derivative and the two-sided derivative in one display. <em>The Yang–Mills Equation</em> writes the equation of motion and the derivative of the curvature. In each case the shapes are distinguished by what the derivative acts on, not by a change of letter.</p>
+<p><strong>What is not in the count, and why.</strong> Path-integral articles that write only $\mathcal D\tilde A$ as a measure, articles that use $D_\mu$ for a propagator, and articles that name the derivative without an equation are excluded. The exclusions are listed below with a line reference, because a count that silently drops them is not a count of anything.</p>
+<h2 id="where-the-letter-is-not-a-covariant-derivative">Where the Letter Is Not a Covariant Derivative</h2>
+<p>Seven objects carry one of the letters, and none is the covariant derivative. Each entry gives the article and the object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>object</th>
+<th>article and line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_{\mu\nu}(p)$</td>
+<td>the gauge propagator, $\frac{i}{p^2-\mu^2}\big(g_{\mu\nu}[\mathbb{M}_-]-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\big)$</td>
+<td><em>The Stueckelberg Mechanism</em>, line 137; <em>Wilson Loops in Biquaternionic Form</em>, line 124</td>
+</tr>
+<tr>
+<td>$\mathcal{D}\tilde{A}$, $\mathcal{D}\psi$</td>
+<td>the functional measure</td>
+<td><em>The Gauge Field Path Integral in Biquaternionic Form</em>, line 23; <em>The Fermionic Path Integral in Biquaternionic Form</em>, line 130</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>a boost rotor, $\cosh\frac{w}{2}+\sinh\frac{w}{2}\vec u\vec u_k$</td>
+<td><em>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation</em>, line 101</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>a central unit, $\tilde D=\lambda e_t$ with $\lambda\in\mathbb{C}^{\times}$</td>
+<td><em>The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</em>, line 174</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>a generic element of the algebra, in a two-sided product $L_{\tilde A}R_{\tilde B}=L_{\tilde C}R_{\tilde D}$</td>
+<td><em>Element and Operator Representations: The Three Actions</em>, line 259</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>a dilation vector field, $D_\mu=\sum_\nu\Theta_{\mu\nu}x_\nu$</td>
+<td><em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em>, line 195</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>the convective derivative, $\tilde D=\tilde S^{\natural}\tilde\nabla$, in the biquaternion-analysis articles</td>
+<td><em>Biquaternion Analysis</em> and <em>Split-Biquaternion Analysis</em>, line 425 and line 372; eight articles of that group in all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the one that matters most for a search.</strong> The glyph $\tilde D$ occurs in ten physics articles as the gauge-covariant derivative, in eight mathematics articles as the convective derivative, and in two more mathematics articles as a generic element. The tilde and the position are the same in all three. The mathematics articles use $\bar s_\mu$ and $\hat s$ for the multipliers, so the object is a directional derivative in the direction of an element, not a connection. Anything counted by glyph alone will add the two together.</p>
+<p><strong>The measure is the easiest collision to avoid, because the letter is calligraphic and the covariant derivative is not.</strong> The corpus writes $\mathcal{D}$ for the measure and $D$ or $\tilde D$ for the operator, and it keeps the two apart everywhere except in the Fujikawa display, where both occur in one equation and the context separates them.</p>
+<h2 id="summary">Summary</h2>
+<p>The corpus writes one object in nine shapes and thirty-seven statements, in thirty-four articles. The abelian shape dominates with sixteen articles; the algebra-valued shape follows with eight, of which two also carry the adjoint form. The remaining shapes are few and each belongs to one task: the spin connection to gravity, the chiral charge to the electroweak sector, the transcribed form to the Standard Model comparison, the twisted form to the index theorem, the lattice form to the regularisation articles, and the operator-in-a-determinant form to the anomaly computation.</p>
+<p>The shapes differ in three respects, and each is visible in the equation rather than in the letter. The connection is central or algebra-valued. The multiplication is one-sided or two-sided. The carrier is a continuous space or a lattice. The letter $D$ is the same in all of them, and so is the tilde on the assembled operator.</p>
+<p>The collisions are seven, and one of them is systematic: in the mathematics articles $\tilde D$ is a convective derivative, so a glyph count over the two corpora is wrong by ten articles. The others are local: a propagator, a measure, a rotor, a central unit, a generic element, a dilation field.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde D$</td>
+<td>the gauge-covariant derivative, $\tilde\nabla+i\kappa\mathcal A$; assembled, read with its scalar part; in the mathematics articles the convective derivative $\tilde S^{\natural}\tilde\nabla$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the same operator written without the tilde, where the assembled form is not needed</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>the component, $\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$; never carries the tilde; also the gauge propagator $D_{\mu\nu}$ in two articles</td>
+</tr>
+<tr>
+<td>$\bar D$</td>
+<td>the quaternion conjugate, $\sum_\mu\bar e_\mu D_\mu=\tilde\nabla^{\natural}+i\kappa\tilde A^{\natural}$; not the operator of the opposite charge</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$</td>
+<td>the conjugate basis, $\bar e_t=e_t$ and $\bar e_k=-\vec e_k$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the coupling, $\kappa=ϙ/\hbar$; the corpus writes both letters for one number</td>
+</tr>
+<tr>
+<td>$\mathcal A$, $\tilde A$</td>
+<td>the connection; the script letter where the non-abelian case is meant, the tilde where the element is</td>
+</tr>
+<tr>
+<td>$\tilde A^{\natural}$</td>
+<td>its quaternion conjugate; not $-\tilde A$, so $\bar D$ is not charge conjugation</td>
+</tr>
+<tr>
+<td>$F_{\mu\nu}$</td>
+<td>the curvature, $\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$</td>
+</tr>
+<tr>
+<td>$b$, $Ϙ$</td>
+<td>the charge element of the chiral sector, multiplying the field from the right</td>
+</tr>
+<tr>
+<td>$\vec\Gamma_\mu$</td>
+<td>the spin connection, an element of $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\subset\mathbb{B}$, multiplying from both sides</td>
+</tr>
+<tr>
+<td>$\tilde D_R$</td>
+<td>the derivative twisted by a representation $R$; the subscript is a label, not a side</td>
+</tr>
+<tr>
+<td>$\tilde U_\mu(n)$</td>
+<td>the lattice link variable, the connection on the discretised carrier</td>
+</tr>
+<tr>
+<td>$\mathcal{D}$</td>
+<td>the functional measure; the same glyph as the covariant derivative only in the Fujikawa display</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the derivation of the connection from the localised central phase.</li>
+<li><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the operator, its square and the covariant curvature identity.</li>
+<li><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a>, for the algebra-valued connection and the recomputation on $\mathrm{SU}(2)$.</li>
+<li><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a>, for the three shapes side by side in one display.</li>
+<li><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a>, for the twisted operator and the index.</li>
+<li><a href="the-gradient-the-dalembertian-and-the-frame-generators.html">The Gradient, the D'Alembertian and the Frame Generators</a>, for the gradient and its conjugates, of which every entry above is a sum with a connection.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
