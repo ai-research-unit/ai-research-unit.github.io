@@ -19,7 +19,7 @@ A symplectic manifold is a smooth manifold with a closed nondegenerate two-form,
 | the symplectic form $\omega$ | closed, $d\omega = 0$, and nondegenerate, $\omega^{\flat}$ an isomorphism | *Symplectic Geometry* |
 | the standard form $\omega_0 = \sum_i dx_i\wedge dy_i$ | the symplectic form of $\mathbb{R}^{2m}$, the local model | *Symplectic Geometry* |
 | the symplectic volume form $\omega^{\wedge m}/m!$ | the volume the form defines; a symplectic manifold is orientable | *Symplectic Geometry* |
-| the cotangent bundle $T^*Q$ with $\omega = -d\theta$ | the phase space of a mechanical system, a symplectic manifold | *Symplectic Geometry*; *Lagrangian and Hamiltonian Systems* |
+| the cotangent bundle $T^*Q$ with $\omega = -d\varpi$ | the phase space of a mechanical system, a symplectic manifold | *Symplectic Geometry*; *Lagrangian and Hamiltonian Systems* |
 | a Lagrangian submanifold | an isotropic submanifold of the maximal dimension $m$ | *Symplectic Geometry* |
 | the conormal bundle $\nu^*N$ of a submanifold | a Lagrangian submanifold of $T^*Q$ | *Symplectic Geometry* |
 | an isotropic or coisotropic submanifold | $\omega\vert_L = 0$, or $TL^{\perp}\subseteq TL$ | *Symplectic Geometry* |
@@ -119,7 +119,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $\omega$, $\omega_0$, $\omega^{\wedge m}/m!$ | Symplectic form, standard form, symplectic volume |
-| $T^*Q$, $\theta = \sum_i p_i\,dq_i$ | Cotangent bundle and tautological form |
+| $T^*Q$, $\varpi = \sum_i p_i\,dq_i$ | Cotangent bundle and tautological form |
 | $X_f$, $\{f,g\}$ | Hamiltonian vector field, Poisson bracket |
 | $(P,\pi)$, Schouten bracket, Casimir | Poisson manifold and its structures |
 | $\mu : M \to \mathrm{G}^*$, $M/\!/G$ | Moment map, symplectic quotient |

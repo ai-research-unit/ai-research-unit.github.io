@@ -84,10 +84,10 @@ The symmetric part of an involutive algebra with this Jordan product is treated 
 **Proposition.** Let $M=A^n$ with the standard sesquilinear pairing and identify $E=\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{opp}})$. Then the involution is the transpose-entrywise map
 
 $$
-\Theta(X)_{ij}=\sigma(X_{ji}),
+\mathrm{J}(X)_{ij}=\sigma(X_{ji}),
 $$
 
-of *Modules over an Involutive Algebra*, so the self-adjoint matrices are those with $\Theta(X)=X$ and the skew-adjoint matrices those with $\Theta(X)=-X$.
+of *Modules over an Involutive Algebra*, so the self-adjoint matrices are those with $\mathrm{J}(X)=X$ and the skew-adjoint matrices those with $\mathrm{J}(X)=-X$.
 
 *Proof.* The adjoint with respect to the standard pairing is the transpose-entrywise map, as computed in *The Adjoint of a Module Homomorphism*.
 
@@ -195,7 +195,7 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 ## Summary
 
-A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\Theta(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
+A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
 
 ## Summary of Notation
 
@@ -211,7 +211,7 @@ A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M
 | $\langle u(m),u(n)\rangle=\langle m,n\rangle$ | the isometry characterisation of unitarity |
 | $Z(E)$ | the centre of the endomorphism ring |
 | first kind, second kind | involution fixing or moving the centre |
-| $\Theta(X)_{ij}=\sigma(X_{ji})$ | the matrix form on a free module |
+| $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$ | the matrix form on a free module |
 | $L_a^{*}=L_{\sigma(a)}$ | the adjoint of a left multiplication |
 
 ## Further Reading

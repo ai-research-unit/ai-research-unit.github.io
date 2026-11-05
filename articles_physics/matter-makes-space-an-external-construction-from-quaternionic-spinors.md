@@ -221,7 +221,7 @@ a coefficient $2\kappa=16\pi G$ where the printed target $G_{\mu\nu}=8\pi G T_{\
 
 ## The Teleparallel Sector
 
-Section 9.1 adds a Lagrange multiplier $\Theta_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab}=-\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
+Section 9.1 adds a Lagrange multiplier $\mathrm{Sd}_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab}=-\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
 $$
 \Gamma_{\lambda\mu\nu}=\sum_a e_{a\lambda}\,\frac{\partial \exp(a){}_\nu}{\partial x_\mu}
 $$
@@ -277,7 +277,7 @@ for every $\Psi$. It is the gradient of $-t$ and of nothing else, it carries no 
 
 The rest of that section is the retarded kernel and the bilocal action
 $$
-K(x-y)=\ell_c^{-2}\,\Theta(x_0-y_0)\,\Delta_m(x-y),
+K(x-y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
 \qquad
 \Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
 \qquad \frac{\partial}{\partial x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
@@ -339,7 +339,7 @@ J_{S0}=\alpha\,\epsilon_{0123}\,T_{123}=\alpha\,x_0,
 \qquad
 \frac{\partial J_{S\mu}}{\partial x_\mu}=\alpha\,\epsilon_{0123}\,\frac{\partial T_{123}}{\partial x^0}=\alpha\ne0 ,
 $$
-verified directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma}=\epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\theta$ with $\Box\theta=0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
+verified directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma}=\epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\vartheta^{\mathrm{fld}}$ with $\Box\vartheta^{\mathrm{fld}}=0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
 
 A separate objection, which would stand even if the wave equation had been derived: since the torsion is *defined* from the field by Eq. (5) and carries no independent dynamics, $\Box T=0$ is not an independent wave equation but a constraint on $\Psi$; and Eq. (5)'s $T$ has three nonzero components, all of them the same bilinear $-\kappa\mathrm{ReTr}\langle\Psi,\,\Psi\rangle$. The source's step 4 reads this as a virtue, calling the torsion waves "genuine emergent, massless degrees of freedom" that propagate "without enlarging the field content". The second half of that is right and is exactly the difficulty: nothing is added because nothing independent is there. A field whose every component is one and the same bilinear of $\Psi$ has the dynamics of $\Psi$ and none of its own, so "degrees of freedom" in the counting sense is the wrong description of it.
 
@@ -461,7 +461,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $K_{\mu ab}$ | the source's composite contorsion, Eq. (6) |
 | $\Sigma_{\lambda\mu\nu}$ | the corpus’s spin density, $\langle\Psi,\operatorname{Alt}[C_\lambda C_\mu C_\nu]\Psi\rangle$, equal to $\kappa^{-1}T_{\lambda\mu\nu}$ on the source’s own solutions; $\Sigma_{\rho\mu\nu}$ is the same object carrying the index of the torsion it is matched to |
 | $A_\rho$ | the axial bilinear $\langle\Psi,\mathsf{V}^{\mathrm{vol}} C_\rho\Psi\rangle$ |
-| $\Theta_{\mu\nu ab}$ | the source's teleparallel Lagrange multiplier |
+| $\mathrm{Sd}_{\mu\nu ab}$ | the source's teleparallel Lagrange multiplier |
 | $\lambda_{\mu a}$, $\Lambda_{\mu ab}$ | the source's Lagrange multipliers |
 | $q_5=q_1q_2q_3$ | in the source, "the imaginary unit"; in fact the central scalar $-1$ |
 | $\tau=\mathrm{Arg}_{\mathbb{H}}\Psi$ | the source's Kozyrev time field |

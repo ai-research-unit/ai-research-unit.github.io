@@ -29,20 +29,20 @@ The set of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$, a
 **Theorem.** The unitary elements form a subgroup $\mathrm{U}(A) \leq A^\times$. Precisely, the map
 
 $$
-\theta : A^\times \longrightarrow A^\times, \qquad \theta(g) = (g^*)^{-1} = \sigma(g)^{-1},
+\mathrm{J} : A^\times \longrightarrow A^\times, \qquad \mathrm{J}(g) = (g^*)^{-1} = \sigma(g)^{-1},
 $$
 
-is an automorphism of the group of units with $\theta^2 = \mathrm{id}$, and
+is an automorphism of the group of units with $\mathrm{J}^2 = \mathrm{id}$, and
 
 $$
-\boxed{\;\mathrm{U}(A) = \{g \in A^\times : \theta(g) = g\}\;}
+\boxed{\;\mathrm{U}(A) = \{g \in A^\times : \mathrm{J}(g) = g\}\;}
 $$
 
 is its fixed subgroup.
 
-*Proof.* The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\theta$ is an automorphism; $\theta^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\theta$ has order two. An element is fixed by $\theta$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $\mathrm{U}(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
+*Proof.* The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\mathrm{J}$ is an automorphism; $\mathrm{J}^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\mathrm{J}$ has order two. An element is fixed by $\mathrm{J}$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $\mathrm{U}(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
 
-**Corollary.** $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\theta)$ in the sense of *Involutive Groups*, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\theta)$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\theta$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.
+**Corollary.** $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\mathrm{J})$ in the sense of *Involutive Groups*, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\mathrm{J})$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\mathrm{J}$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.
 
 ## The Self-Adjoint Elements of a Unitary
 
@@ -92,7 +92,7 @@ Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X
 
 ## Summary
 
-For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\theta(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **skew** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the skew part, its Lie algebra, the tangent space and the Cayley transform are *The Skew Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
+For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **skew** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the skew part, its Lie algebra, the tangent space and the Cayley transform are *The Skew Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
 
 ## Summary of Notation
 
@@ -105,7 +105,7 @@ For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elem
 | $A^+ = H(A)$ | the self-adjoint elements, $h^* = h$ |
 | $A^-$ | the skew elements, $k^* = -k$ |
 | $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$ | the unitary elements, $u^*u = uu^* = 1$ |
-| $\theta(g) = (g^*)^{-1}$ | the order-two automorphism of $A^\times$ |
+| $\mathrm{J}(g) = (g^*)^{-1}$ | the order-two automorphism of $A^\times$ |
 | $O_n(k)$ | the orthogonal group, for the transpose |
 
 ## Further Reading

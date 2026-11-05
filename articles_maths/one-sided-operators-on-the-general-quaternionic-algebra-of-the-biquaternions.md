@@ -9,7 +9,7 @@ $$
 L_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\tilde Q_1,\qquad R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2 .
 $$
 
-Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+Every two-sided operator is a product of one left and one right multiplication, and the twisted two-sided operator of the algebra, the conjugation sandwich $\mathrm{Sd}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, is the member of that family selected by the natural conjugation. This article treats the pair: the two composition laws, the commutation of the left and the right action, the two adjoints, the norm of a multiplication, and the criterion that decides which two-sided products are multiplicative. The two-sided operator itself is *Two-Sided Operators on the General Quaternionic Algebra*; the general Clifford theory of the one-sided families is *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, of which this is the biquaternion instance; the corresponding one-sided operators over the dagger are *One-Sided Operators on the General Plain Sesqualgebra*; and the form that supplies the adjoints is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Two Multiplications
 
@@ -45,7 +45,7 @@ $$
 
 ## The Two-Sided Products and the Sign
 
-**Definition.** A **two-sided operator** is a product $L_{\tilde Q_6}R_{\tilde Q_2}$; the **twisted two-sided operator** is the member $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$.
+**Definition.** A **two-sided operator** is a product $L_{\tilde Q_6}R_{\tilde Q_2}$; the **twisted two-sided operator** is the member $\mathrm{Sd}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$.
 
 **Proposition (the criterion).** For all $\tilde Q_1,\tilde Q_3$ the product satisfies
 
@@ -60,11 +60,11 @@ so it is multiplicative up to the scalar $\tilde Q_2\tilde Q_6$ exactly when $\t
 **Proposition (the sign, and the factorisation).** For every element,
 
 $$
-\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6}\quad(\tilde Q_6\text{ a unit}),\qquad
-\Theta_{\tilde Q_6}(\tilde Q_1)\Theta_{\tilde Q_6}(\tilde Q_3)=\langle\tilde Q_6\rangle_{\natural}\,\Theta_{\tilde Q_6}(\tilde Q_1\tilde Q_3),
+\mathrm{Sd}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6}\quad(\tilde Q_6\text{ a unit}),\qquad
+\mathrm{Sd}_{\tilde Q_6}(\tilde Q_1)\mathrm{Sd}_{\tilde Q_6}(\tilde Q_3)=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Sd}_{\tilde Q_6}(\tilde Q_1\tilde Q_3),
 $$
 
-and $\Theta_{\tilde Q_6}\Theta_{\tilde Q_2}=\Theta_{\tilde Q_6\tilde Q_2}$. The right factor is the inverse right multiplication up to the norm, $R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}R_{\tilde Q_6^{-1}}$ on a unit, so it is the left factor $L_{\tilde Q_6}$ that carries the conjugation, and the norm scalar that appears in the multiplication law is the price of that choice.
+and $\mathrm{Sd}_{\tilde Q_6}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q_6\tilde Q_2}$. The right factor is the inverse right multiplication up to the norm, $R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}R_{\tilde Q_6^{-1}}$ on a unit, so it is the left factor $L_{\tilde Q_6}$ that carries the conjugation, and the norm scalar that appears in the multiplication law is the price of that choice.
 
 *Proof.* Each identity is the corresponding identity of *Two-Sided Operators on the General Quaternionic Algebra*, read in the one-sided notation; the factorisation $R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}R_{\tilde Q_6^{-1}}$ is $\tilde Q_6^{\natural}=\langle\tilde Q_6\rangle_{\natural}\tilde Q_6^{-1}$ for a unit.
 
@@ -136,7 +136,7 @@ $$
 
 **A scalar parameter.** For $\tilde Q_6=\lambda e_t$ the multiplications are scalars, $L_{\tilde Q_6}=R_{\tilde Q_6}=\lambda\,\mathrm{id}$; they are self-adjoint for every $\lambda$, since a scalar parameter is central, and a form-preserving map exactly for $\lambda^{2}=1$, that is $\lambda=\pm1$.
 
-**A vector parameter.** For $\tilde Q_5=\vec e_x$, $\langle\tilde Q_5\rangle_{\natural}=1$ and $\tilde Q_5^{\natural}=-\vec e_x$, so $L_{\tilde Q_5}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde Q_5}$ has the same two properties, and $L_{\tilde Q_5}R_{\tilde Q_5}=\Theta_{\tilde Q_5}$ is the reflection-like operator of the two-sided layer.
+**A vector parameter.** For $\tilde Q_5=\vec e_x$, $\langle\tilde Q_5\rangle_{\natural}=1$ and $\tilde Q_5^{\natural}=-\vec e_x$, so $L_{\tilde Q_5}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde Q_5}$ has the same two properties, and $L_{\tilde Q_5}R_{\tilde Q_5}=\mathrm{Sd}_{\tilde Q_5}$ is the reflection-like operator of the two-sided layer.
 
 **A null parameter.** For $\tilde Q_6=\vec e_x+i\vec e_y$, $\langle\tilde Q_6\rangle_{\natural}=0$: both multiplications are nonzero, neither is invertible, and both collapse the form, $\langle L_{\tilde Q_6}\tilde Q_4\rangle_{\natural}=0$ for every $\tilde Q_4$.
 
@@ -144,7 +144,7 @@ $$
 
 ## Summary
 
-The one-sided operators of the biquaternion algebra are the left and right multiplications $L_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\tilde Q_1$ and $R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2$: linear and injective in the parameter, invertible exactly for units, with the composition laws $L_{\tilde Q_6}L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2}$, $R_{\tilde Q_6}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_6}$ and $L_{\tilde Q_6}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q_6}$. The operators commuting with all left multiplications are exactly the right multiplications, and the operators commuting with both families are the scalars. For the general quaternionic bilinear form the adjoints are $(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}}$ and $(R_{\tilde Q_2})^{N}=R_{\tilde Q_2^{\natural}}$; a left multiplication is self-adjoint exactly for a central parameter, skew-adjoint exactly for a pure one, and a form-preserving map exactly for norm one, and each multiplication scales the form by the norm of its parameter. For the Hermitian form the adjoints are the same with ${}^{*}$, with the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ and unitarity on the slice $a^{*}a=e_t$. The two-sided products $L_{\tilde Q_6}R_{\tilde Q_2}$ are multiplicative up to the scalar $\tilde Q_2\tilde Q_6$ exactly when $\tilde Q_2\tilde Q_6$ is central and strictly multiplicative exactly when $\tilde Q_2\tilde Q_6=e_t$, that is, up to scalars, exactly for the twisted two-sided operators $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, whose multiplicativity holds up to the norm.
+The one-sided operators of the biquaternion algebra are the left and right multiplications $L_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\tilde Q_1$ and $R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2$: linear and injective in the parameter, invertible exactly for units, with the composition laws $L_{\tilde Q_6}L_{\tilde Q_2}=L_{\tilde Q_6\tilde Q_2}$, $R_{\tilde Q_6}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_6}$ and $L_{\tilde Q_6}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q_6}$. The operators commuting with all left multiplications are exactly the right multiplications, and the operators commuting with both families are the scalars. For the general quaternionic bilinear form the adjoints are $(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}}$ and $(R_{\tilde Q_2})^{N}=R_{\tilde Q_2^{\natural}}$; a left multiplication is self-adjoint exactly for a central parameter, skew-adjoint exactly for a pure one, and a form-preserving map exactly for norm one, and each multiplication scales the form by the norm of its parameter. For the Hermitian form the adjoints are the same with ${}^{*}$, with the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ and unitarity on the slice $a^{*}a=e_t$. The two-sided products $L_{\tilde Q_6}R_{\tilde Q_2}$ are multiplicative up to the scalar $\tilde Q_2\tilde Q_6$ exactly when $\tilde Q_2\tilde Q_6$ is central and strictly multiplicative exactly when $\tilde Q_2\tilde Q_6=e_t$, that is, up to scalars, exactly for the twisted two-sided operators $\mathrm{Sd}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, whose multiplicativity holds up to the norm.
 
 ## Summary of Notation
 
@@ -156,7 +156,7 @@ The one-sided operators of the biquaternion algebra are the left and right multi
 | $(L_{\tilde Q_6})^{N}=L_{\tilde Q_6^{\natural}}$, $(R_{\tilde Q_2})^{N}=R_{\tilde Q_2^{\natural}}$ | The adjoints for the general quaternionic bilinear form |
 | $(L_{\tilde Q_6})^{*}=L_{\tilde Q_6^{*}}$, $(R_{\tilde Q_2})^{*}=R_{\tilde Q_2^{*}}$ | The adjoints for the Hermitian form |
 | $\langle L_{\tilde Q_6}\tilde Q_4\rangle_{\natural}=\langle\tilde Q_6\rangle_{\natural}\langle\tilde Q_4\rangle_{\natural}$, $\det L_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}^{2}$ | The conformal factor and the determinant |
-| $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | The twisted two-sided product |
+| $\mathrm{Sd}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ | The twisted two-sided product |
 | $\tilde Q_2\tilde Q_6$ central; $=e_t$ | $L_{\tilde Q_6}R_{\tilde Q_2}$ multiplicative up to the scalar $\tilde Q_2\tilde Q_6$; strictly multiplicative for $\tilde Q_2\tilde Q_6=e_t$ |
 
 ## Further Reading

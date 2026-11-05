@@ -184,11 +184,11 @@ with equality when $\breve Q'\breve P'$ is a unit; so the rank is nonincreasing 
 
 **The plain sandwich.** For a parameter $\breve Q$ and a variable $\breve X$,
 $$
-\Theta_{\breve Q}(\breve X)=\breve Q\breve X\breve Q=\breve Q^{2}\breve X=L_{\breve Q^{2}}(\breve X),
+\mathrm{Sd}_{\breve Q}(\breve X)=\breve Q\breve X\breve Q=\breve Q^{2}\breve X=L_{\breve Q^{2}}(\breve X),
 $$
-so the sandwich operators are exactly the left multiplications by the squares, and the map $\breve Q\mapsto\Theta_{\breve Q}$ is the composition of the squaring map with the model. Its **kernel is trivial**: $\Theta_{\breve Q}=0$ means $Q_{+}^{2}=Q_{-}^{2}=0$ means $\breve Q=0$. It is **not injective**, because the squaring map is not: $\Theta_{\breve Q}=\Theta_{\breve Q'}$ exactly when $\breve Q'^{2}=\breve Q^{2}$, that is when $Q'_{\pm}=\pm Q_{\pm}$ with the two signs independent, so the fibre is the four-element group $\{\pm1,\pm j\}$ acting by multiplication and the sandwich of a unit has four preimages. In the dual-number category the kernel was trivial for the same reason, $q^{2}=0$ implying $q=0$ over a field of characteristic zero, and there the fibre was the pair $\pm Q$.
+so the sandwich operators are exactly the left multiplications by the squares, and the map $\breve Q\mapsto\mathrm{Sd}_{\breve Q}$ is the composition of the squaring map with the model. Its **kernel is trivial**: $\mathrm{Sd}_{\breve Q}=0$ means $Q_{+}^{2}=Q_{-}^{2}=0$ means $\breve Q=0$. It is **not injective**, because the squaring map is not: $\mathrm{Sd}_{\breve Q}=\mathrm{Sd}_{\breve Q'}$ exactly when $\breve Q'^{2}=\breve Q^{2}$, that is when $Q'_{\pm}=\pm Q_{\pm}$ with the two signs independent, so the fibre is the four-element group $\{\pm1,\pm j\}$ acting by multiplication and the sandwich of a unit has four preimages. In the dual-number category the kernel was trivial for the same reason, $q^{2}=0$ implying $q=0$ over a field of characteristic zero, and there the fibre was the pair $\pm Q$.
 
-**The image of the plain sandwich.** The set $\{\Theta_{\breve Q}\}$ is $\{L_{\breve R}:\breve R\text{ a square}\}$, which is not a linear subspace: the squares of an algebra of the form $\mathbb{C}\times\mathbb{C}$ are the elements with both idempotent coordinates... every element is a square, because every complex number has a square root, so the squaring map is **surjective** and the image of the plain sandwich is the whole family. This is the semisimple face of the same fact that made the sandwich of the dual-number category a strict family: there $q^{2}$ could not reach the elements with a prescribed linear term.
+**The image of the plain sandwich.** The set $\{\mathrm{Sd}_{\breve Q}\}$ is $\{L_{\breve R}:\breve R\text{ a square}\}$, which is not a linear subspace: the squares of an algebra of the form $\mathbb{C}\times\mathbb{C}$ are the elements with both idempotent coordinates... every element is a square, because every complex number has a square root, so the squaring map is **surjective** and the image of the plain sandwich is the whole family. This is the semisimple face of the same fact that made the sandwich of the dual-number category a strict family: there $q^{2}$ could not reach the elements with a prescribed linear term.
 
 **The modulus sandwich.** The bar-sandwich
 $$
@@ -377,7 +377,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 | $L_{\breve Q}R_{\breve P}$ | the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$ | this article |
 | $L_{e_{\mu}}R_{e_{\nu}}$ | the four basis products, with $L_{e_1}R_{e_1}=L_{e_2}R_{e_2}$ and $L_{e_1}R_{e_2}=L_{e_2}R_{e_1}$ | this article |
 | $\mathsf K(\breve Q,\breve P)$ | the Kronecker display $\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q)$ | this article |
-| $\Theta_{\breve Q}$ | the plain sandwich, $=L_{\breve Q^{2}}$ | this article |
+| $\mathrm{Sd}_{\breve Q}$ | the plain sandwich, $=L_{\breve Q^{2}}$ | this article |
 | $\Phi_{\breve Q}$ | the modulus sandwich, $=\operatorname{diag}(\lvert Q_{+}\rvert^{2},\lvert Q_{-}\rvert^{2})$ in the frame | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the family and undefined outside | this article |
 | $J=\operatorname{diag}(1,-1)$ | the conjugating element realising the tessarine sign | *$M_{2}(\mathbb{C})$ Reduced Representation* |

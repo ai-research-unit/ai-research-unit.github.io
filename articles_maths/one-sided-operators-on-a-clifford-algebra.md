@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves, in the general theory in which no involution of the base is assumed. A **one-sided operator** is a left multiplication $y\mapsto \theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $y\mapsto y\,c(x)$, attached to an anti-automorphism $c$. The one-sided operators are the elementary operators out of which the two-sided family is built, they are the operators that carry the regular representations of the algebra and of its opposite, and their images are the ideals of the algebra, so they are where the module theory of the Clifford algebra begins.
+Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves, in the general theory in which no involution of the base is assumed. A **one-sided operator** is a left multiplication $y\mapsto \mathrm{J}(x)\,y$, attached to an automorphism $\mathrm{J}$, or a right multiplication $y\mapsto y\,c(x)$, attached to an anti-automorphism $c$. The one-sided operators are the elementary operators out of which the two-sided family is built, they are the operators that carry the regular representations of the algebra and of its opposite, and their images are the ideals of the algebra, so they are where the module theory of the Clifford algebra begins.
 
 Two facts organise the theory. The first is that the left family and the twisted right family are separately **multiplicative in the same order**, while the plain right multiplication is **anti-multiplicative**: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{opp}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,\mathfrak{Q})$ is central simple over $F$, and it is a proper subalgebra otherwise.
 
@@ -15,23 +15,23 @@ The algebra, the parity grading and the intrinsic anti-involutions are *Clifford
 
 ### Definitions
 
-**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are the $F$-linear maps
+**Definition.** Let $\mathrm{J}$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are the $F$-linear maps
 
 $$
-\Lambda^{\theta}_x(y)=\theta(x)\,y, \qquad \qquad \mathrm P^{c}_x(y)=y\,c(x).
+\Lambda^{\mathrm{J}}_x(y)=\mathrm{J}(x)\,y, \qquad \qquad \mathrm P^{c}_x(y)=y\,c(x).
 $$
 
-With $\theta=\mathrm{id}$ this gives the left multiplication $L_x=\Lambda^{\mathrm{id}}_x$, and with $\theta=\alpha$ the signed left multiplication $L_{\alpha(x)}=\Lambda^{\alpha}_x$. With $c=r$ it gives the reversion-twisted right multiplication $R_{x^{r}}=\mathrm P^{r}_x$, and with $c=\bar\cdot$ the conjugation-twisted one $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$. The plain right multiplication $R_x$ is $\mathrm P^{\mathrm{id}}_x$, and the identity is an automorphism and not an anti-automorphism, which is the source of the exception in the composition law below. The inverse variants are defined on the units.
+With $\mathrm{J}=\mathrm{id}$ this gives the left multiplication $L_x=\Lambda^{\mathrm{id}}_x$, and with $\mathrm{J}=\alpha$ the signed left multiplication $L_{\alpha(x)}=\Lambda^{\alpha}_x$. With $c=r$ it gives the reversion-twisted right multiplication $R_{x^{r}}=\mathrm P^{r}_x$, and with $c=\bar\cdot$ the conjugation-twisted one $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$. The plain right multiplication $R_x$ is $\mathrm P^{\mathrm{id}}_x$, and the identity is an automorphism and not an anti-automorphism, which is the source of the exception in the composition law below. The inverse variants are defined on the units.
 
 ### The Composition Laws
 
-**Proposition.** Let $\theta$ be an automorphism and let $c$ be an anti-automorphism. Then
+**Proposition.** Let $\mathrm{J}$ be an automorphism and let $c$ be an anti-automorphism. Then
 
 $$
-\Lambda^{\theta}_{xz}=\Lambda^{\theta}_x\circ\Lambda^{\theta}_z, \qquad \qquad \mathrm P^{c}_{xz}=\mathrm P^{c}_x\circ\mathrm P^{c}_z .
+\Lambda^{\mathrm{J}}_{xz}=\Lambda^{\mathrm{J}}_x\circ\Lambda^{\mathrm{J}}_z, \qquad \qquad \mathrm P^{c}_{xz}=\mathrm P^{c}_x\circ\mathrm P^{c}_z .
 $$
 
-**Proof.** For the left family, $\Lambda^{\theta}_x(\Lambda^{\theta}_z(y))=\theta(x)\theta(z)\,y=\theta(xz)\,y$. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y))=\mathrm P^{c}_x\bigl(y\,c(z)\bigr)=y\,c(z)c(x)=y\,c(xz)$, where the reversal in $c$ is compensated by the reversal of the order of composition.
+**Proof.** For the left family, $\Lambda^{\mathrm{J}}_x(\Lambda^{\mathrm{J}}_z(y))=\mathrm{J}(x)\mathrm{J}(z)\,y=\mathrm{J}(xz)\,y$. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y))=\mathrm P^{c}_x\bigl(y\,c(z)\bigr)=y\,c(z)c(x)=y\,c(xz)$, where the reversal in $c$ is compensated by the reversal of the order of composition.
 
 **Proposition (the plain right multiplication is anti-multiplicative).** The identity $R_{xz}=R_x\circ R_z$ of the previous proposition **fails** for the identity automorphism; instead
 
@@ -52,22 +52,22 @@ so $x\mapsto R_x$ is a homomorphism from the **opposite algebra** $\mathrm{Cl}(V
 **Proposition.** The left and the right families commute,
 
 $$
-\Lambda^{\theta}_x\circ\mathrm P^{c}_z=\mathrm P^{c}_z\circ\Lambda^{\theta}_x ,
+\Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_z=\mathrm P^{c}_z\circ\Lambda^{\mathrm{J}}_x ,
 $$
 
 and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product,
 
 $$
-\Phi^{\theta,c}_x=\Lambda^{\theta}_x\circ\mathrm P^{c}_x=L_{\theta(x)}\,R_{c(x)} .
+\Phi^{\mathrm{J},c}_x=\Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_x=L_{\mathrm{J}(x)}\,R_{c(x)} .
 $$
 
-**Proof.** $\bigl(\theta(x)y\bigr)c(z)=\theta(x)\bigl(y\,c(z)\bigr)$ by associativity, and the two-sided operator is the product by its definition.
+**Proof.** $\bigl(\mathrm{J}(x)y\bigr)c(z)=\mathrm{J}(x)\bigl(y\,c(z)\bigr)$ by associativity, and the two-sided operator is the product by its definition.
 
-**Corollary (the composition law, again).** The law $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ follows from the two one-sided laws: $\Phi_x\Phi_z=\Lambda^{\theta}_x\mathrm P^{c}_x\Lambda^{\theta}_z\mathrm P^{c}_z=\Lambda^{\theta}_{xz}\mathrm P^{c}_{xz}=\Phi_{xz}$. So the multiplicativity of the two-sided family is inherited from the multiplicativity of its factors, and the commutation of the two factors is what makes the product unambiguous.
+**Corollary (the composition law, again).** The law $\Phi^{\mathrm{J},c}_{xz}=\Phi^{\mathrm{J},c}_x\circ\Phi^{\mathrm{J},c}_z$ follows from the two one-sided laws: $\Phi_x\Phi_z=\Lambda^{\mathrm{J}}_x\mathrm P^{c}_x\Lambda^{\mathrm{J}}_z\mathrm P^{c}_z=\Lambda^{\mathrm{J}}_{xz}\mathrm P^{c}_{xz}=\Phi_{xz}$. So the multiplicativity of the two-sided family is inherited from the multiplicativity of its factors, and the commutation of the two factors is what makes the product unambiguous.
 
 ### The Value at the Unit and the Parity
 
-**Proposition.** For every $x$ one has $\Lambda^{\theta}_x(1)=\theta(x)$ and $\mathrm P^{c}_x(1)=c(x)$; in particular $L_x(1)=R_x(1)=x$. The members are therefore told apart by their value at the unit.
+**Proposition.** For every $x$ one has $\Lambda^{\mathrm{J}}_x(1)=\mathrm{J}(x)$ and $\mathrm P^{c}_x(1)=c(x)$; in particular $L_x(1)=R_x(1)=x$. The members are therefore told apart by their value at the unit.
 
 | operator | value at $1$ |
 |---|---|
@@ -77,7 +77,7 @@ $$
 | $R_{x^{r}}=\mathrm P^{r}_x$ | $x^{r}$ |
 | $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$ | $x^{\natural}$ |
 
-**Proposition (the parity).** The left multiplication $L_x$, and likewise $R_x$, preserves the parity grading when $x$ is even and interchanges its two components when $x$ is odd; in general $\Lambda^{\theta}_x(\mathrm{Cl}^{i})\subseteq\mathrm{Cl}^{i+|\theta(x)|}$, the exponent read modulo two.
+**Proposition (the parity).** The left multiplication $L_x$, and likewise $R_x$, preserves the parity grading when $x$ is even and interchanges its two components when $x$ is odd; in general $\Lambda^{\mathrm{J}}_x(\mathrm{Cl}^{i})\subseteq\mathrm{Cl}^{i+|\mathrm{J}(x)|}$, the exponent read modulo two.
 
 **Proof.** A product of two basis blades is again a basis blade, of degree the sum of the two degrees modulo two; a general element is a sum of homogeneous components.
 
@@ -204,7 +204,7 @@ In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ the maps $L_aR
 
 ## Summary
 
-A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\theta}_x(y)=\theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $\mathrm P^{c}_x(y)=y\,c(x)$, attached to an anti-automorphism $c$. The two families **commute**, and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product, $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$, so the composition law of the two-sided family is inherited from its factors. The left family and the twisted right family are **multiplicative in the same order**, because the reversal inside $c$ cancels the reversal of the order of composition; the **plain right multiplication is anti-multiplicative**, $R_{xz}=R_zR_x$, so $x\mapsto R_x$ is a representation of the opposite algebra. The members are separated by their value at the unit, $L_x(1)=R_x(1)=x$ and $L_{\alpha(x)}(1)=\alpha(x)$, $R_{x^{r}}(1)=x^{r}$, $R_{x^{\natural}}(1)=x^{\natural}$; a one-sided operator preserves the parity when its element is even and interchanges the two components when it is odd.
+A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\mathrm{J}}_x(y)=\mathrm{J}(x)\,y$, attached to an automorphism $\mathrm{J}$, or a right multiplication $\mathrm P^{c}_x(y)=y\,c(x)$, attached to an anti-automorphism $c$. The two families **commute**, and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product, $\Phi^{\mathrm{J},c}_x=\Lambda^{\mathrm{J}}_x\mathrm P^{c}_x$, so the composition law of the two-sided family is inherited from its factors. The left family and the twisted right family are **multiplicative in the same order**, because the reversal inside $c$ cancels the reversal of the order of composition; the **plain right multiplication is anti-multiplicative**, $R_{xz}=R_zR_x$, so $x\mapsto R_x$ is a representation of the opposite algebra. The members are separated by their value at the unit, $L_x(1)=R_x(1)=x$ and $L_{\alpha(x)}(1)=\alpha(x)$, $R_{x^{r}}(1)=x^{r}$, $R_{x^{\natural}}(1)=x^{\natural}$; a one-sided operator preserves the parity when its element is even and interchanges the two components when it is odd.
 
 The graded and twisted members are the conjugates of the plain multiplications by the intrinsic anti-involutions, $L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{x^{\natural}}=\bar\cdot\,L_x\,\bar\cdot$ and $L_{x^{r}}=rR_xr$. The maps $a\mapsto L_a$ and $a\mapsto R_a$ are injective, their kernels are the annihilators $\ell(a)$ and $r(a)$, and their images are the right ideal $a\cdot\mathrm{Cl}$ and the left ideal $\mathrm{Cl}\cdot a$; the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$. The left and right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, and together they generate the image of the enveloping algebra $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}}$, which is all of $\mathrm{End}_F(\mathrm{Cl})$ exactly when the Clifford algebra is **central simple** and is a proper subalgebra otherwise, of dimension half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})$. Finally, the only left multiplications preserving the space of vectors are the scalars, so the geometry of $V$ requires the pairing of the two factors; the one-sided operators are the ones that act on the module, and their Hermitian adjoints belong to the Hermitian group.
 
@@ -212,13 +212,13 @@ The graded and twisted members are the conjugates of the plain multiplications b
 
 | Symbol | Meaning |
 |---|---|
-| $\Lambda^{\theta}_x(y)=\theta(x)y$ | Left one-sided operator, $\theta$ an automorphism |
+| $\Lambda^{\mathrm{J}}_x(y)=\mathrm{J}(x)y$ | Left one-sided operator, $\mathrm{J}$ an automorphism |
 | $\mathrm P^{c}_x(y)=y\,c(x)$ | Right one-sided operator, $c$ an anti-automorphism |
 | $L_x=\Lambda^{\mathrm{id}}_x$, $L_{\alpha(x)}=\Lambda^{\alpha}_x$ | Plain and signed left multiplication |
 | $R_x=\mathrm P^{\mathrm{id}}_x$, $R_{x^{r}}=\mathrm P^{r}_x$, $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$ | Plain, reversion-twisted and conjugation-twisted right multiplication |
-| $\Lambda^{\theta}_{xz}=\Lambda^{\theta}_x\Lambda^{\theta}_z$, $\mathrm P^{c}_{xz}=\mathrm P^{c}_x\mathrm P^{c}_z$ | Composition laws for the two families |
+| $\Lambda^{\mathrm{J}}_{xz}=\Lambda^{\mathrm{J}}_x\Lambda^{\mathrm{J}}_z$, $\mathrm P^{c}_{xz}=\mathrm P^{c}_x\mathrm P^{c}_z$ | Composition laws for the two families |
 | $R_{xz}=R_zR_x$ | Plain right multiplication is anti-multiplicative |
-| $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$ | Two-sided operator as a product of one-sided ones |
+| $\Phi^{\mathrm{J},c}_x=\Lambda^{\mathrm{J}}_x\mathrm P^{c}_x$ | Two-sided operator as a product of one-sided ones |
 | $L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{x^{\natural}}=\bar\cdot L_x\bar\cdot$ | The variants as conjugates by the anti-involutions |
 | $\ell(a)$, $r(a)$ | Left and right annihilator, the kernels of $L_a$ and $R_a$ |
 | $a\cdot\mathrm{Cl}$, $\mathrm{Cl}\cdot a$ | Right and left ideals, the images of $L_a$ and $R_a$ |

@@ -4,7 +4,7 @@
 
 The isometries of the general quaternionic sesquilinear form make up the **Krein isometry group** $U_{J}(\mathbb{B})$ of the biquaternion algebra, and its shape is the surprise of the indefinite theory: it is not compact, it is not the group $\mathrm{U}(2)$ that the two-sided structure of the algebra might suggest, and it contains the Lorentz boosts of the Lorentzian slices among its elements. The group is $\mathrm{U}(1,3)$; this article computes it on the elements and on the operators, and the two readings are the two halves of its Cartan theory. On the elements: the definition and the criterion, the algebraic isometries among the three operator families of the corpus, the spectrum, the boosts and the transitive actions. On the operators: the three adjoints of the operator algebra, the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew and the $J$-self-adjoint operators, the two involutions of the group, the trace form and the $J$-contractions.
 
-The two involutions are the point of the article. The **Krein involution** $\theta_{J}(T)=(T^{\dagger})^{-1}$ is built from the indefinite adjoint $T^{\dagger}=JT^{*}J$, and its fixed group is $U_{J}(\mathbb{B})$ itself: it is not a Cartan involution, since its fixed group is non-compact. The **Cartan involution** $\theta_{0}(T)=(T^{*})^{-1}$ is built from the definite adjoint, and its restriction to $U_{J}(\mathbb{B})$ has the maximal compact group $\mathrm{U}(1)\times \mathrm{U}(3)$ for fixed group; its symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of *The Krein Level Sets and the Hyperbolic Structure*. The two involutions carry the same group, one as the fixed group and one as the ambient group, and the comparison of their fixed algebras is the comparison of $\mathfrak{u}(1,3)$ with $\mathfrak{u}(4)$.
+The two involutions are the point of the article. The **Krein involution** $\mathrm{J}_{J}(T)=(T^{\dagger})^{-1}$ is built from the indefinite adjoint $T^{\dagger}=JT^{*}J$, and its fixed group is $U_{J}(\mathbb{B})$ itself: it is not a Cartan involution, since its fixed group is non-compact. The **Cartan involution** $\mathrm{J}_{0}(T)=(T^{*})^{-1}$ is built from the definite adjoint, and its restriction to $U_{J}(\mathbb{B})$ has the maximal compact group $\mathrm{U}(1)\times \mathrm{U}(3)$ for fixed group; its symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of *The Krein Level Sets and the Hyperbolic Structure*. The two involutions carry the same group, one as the fixed group and one as the ambient group, and the comparison of their fixed algebras is the comparison of $\mathfrak{u}(1,3)$ with $\mathfrak{u}(4)$.
 
 The general theory of isometries is *Unitary and Isometric Operators of the Form*, which proves that the isometry monoid is the $*$-unitary group in finite dimension; the general theory of $\mathrm{U}(n,m)$, its Cartan involution and its bounded realisation is *The Unitary Group and the Hermitian Symmetric Space*; the four pairings, their Gram matrices and their isometry groups are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the adjoints of the three families and the indefinite spectral data are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the form and its Gram matrix are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the null set and the Krein cone are *K-Regularity and Degeneracy in the Biquaternion Algebra*; and the indefinite sandwich that uses the group is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra*.
 
@@ -46,12 +46,12 @@ L_{\tilde{Q}_1}\ \text{is }J\text{-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
 R_{\tilde{Q}_1}\ \text{is }J\text{-unitary}\iff\tilde{Q}_1\in S^{1}e_t,
 \qquad
-\Theta_{\tilde{Q}_1}\ \text{is }J\text{-unitary}\iff\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1\;},
+\mathrm{Sd}_{\tilde{Q}_1}\ \text{is }J\text{-unitary}\iff\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1\;},
 $$
 
 where $S^{1}e_t$ is the circle of central phases.
 
-*Proof.* $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde Q_2\mapsto\tilde{Q}_1\tilde Q_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, write $\tilde{Q}_1=\lambda\tilde{U}$ with $\lambda^{2}=\langle\tilde{Q}_1\rangle_{\natural}$ and $\tilde{U}\in SL_2(\mathbb{C})$ when the norm is nonzero. Then $\Theta_{\tilde{Q}_1}=\lvert\lambda\rvert^{2}\Theta_{\tilde{U}}$: the sandwich depends on $\tilde{Q}_1$ only through $\tilde{U}$ and $\lvert\det\tilde{Q}_1\rvert$. A parameter $\tilde U\in SL_2(\mathbb{C})$ preserves the form, because in the matrix model $\operatorname{adj}(\Theta_{\tilde U}(X))=\operatorname{adj}(U)^{-1}\operatorname{adj}(X)\operatorname{adj}(U)$ and $(\Theta_{\tilde U}(Y))^{*}=UY^{*}U^{*}$, so the trace of $\operatorname{adj}(X)Y^{*}$ is unchanged by cyclicity; the scalar factor of $\Theta_{\tilde{Q}_1}$ is $\lvert\det\tilde{Q}_1\rvert^{2}$. Hence $\Theta_{\tilde{Q}_1}$ is an isometry exactly when $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$.
+*Proof.* $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde Q_2\mapsto\tilde{Q}_1\tilde Q_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, write $\tilde{Q}_1=\lambda\tilde{U}$ with $\lambda^{2}=\langle\tilde{Q}_1\rangle_{\natural}$ and $\tilde{U}\in SL_2(\mathbb{C})$ when the norm is nonzero. Then $\mathrm{Sd}_{\tilde{Q}_1}=\lvert\lambda\rvert^{2}\mathrm{Sd}_{\tilde{U}}$: the sandwich depends on $\tilde{Q}_1$ only through $\tilde{U}$ and $\lvert\det\tilde{Q}_1\rvert$. A parameter $\tilde U\in SL_2(\mathbb{C})$ preserves the form, because in the matrix model $\operatorname{adj}(\mathrm{Sd}_{\tilde U}(X))=\operatorname{adj}(U)^{-1}\operatorname{adj}(X)\operatorname{adj}(U)$ and $(\mathrm{Sd}_{\tilde U}(Y))^{*}=UY^{*}U^{*}$, so the trace of $\operatorname{adj}(X)Y^{*}$ is unchanged by cyclicity; the scalar factor of $\mathrm{Sd}_{\tilde{Q}_1}$ is $\lvert\det\tilde{Q}_1\rvert^{2}$. Hence $\mathrm{Sd}_{\tilde{Q}_1}$ is an isometry exactly when $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$.
 
 **Corollary (the compact algebraic subgroup).** The central phases and the $*$-unitary sandwiches generate the compact subgroup
 
@@ -61,9 +61,9 @@ $$
 
 of real dimension $4$: the phases are the scalar isometries, and the $*$-unitary sandwiches are the inner automorphisms $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}_1$ in $\mathrm{U}(2)/\mathrm{U}(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
 
-*Proof.* On the $*$-unitary group the kernel of the map $\tilde{Q}_1\mapsto\Theta_{\tilde{Q}_1}$ is the central circle $\mathrm{U}(1)$, so its image is $\mathrm{U}(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\Theta_{\tilde{Q}_1}$ is scalar only for $\tilde{Q}_1$ a scalar of modulus one, in which case $\Theta_{\tilde{Q}_1}=\mathrm{id}$.
+*Proof.* On the $*$-unitary group the kernel of the map $\tilde{Q}_1\mapsto\mathrm{Sd}_{\tilde{Q}_1}$ is the central circle $\mathrm{U}(1)$, so its image is $\mathrm{U}(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\mathrm{Sd}_{\tilde{Q}_1}$ is scalar only for $\tilde{Q}_1$ a scalar of modulus one, in which case $\mathrm{Sd}_{\tilde{Q}_1}=\mathrm{id}$.
 
-**Remark (the norm-one slice is not a family of automorphisms).** For $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$ the map $\Theta_{\tilde{Q}_1}(X)=\tilde{Q}_1X\tilde{Q}_1^{*}$ is multiplicative only when $\tilde{Q}_1^{*}\tilde{Q}_1$ is central, and inside $SL_2(\mathbb{C})$ that forces $\tilde{Q}_1$ $*$-unitary. So the non-$*$-unitary members of the norm-one slice are Krein isometries that are **not** automorphisms of the algebra, and the slice is not an enlargement of the inner automorphism group. The maps of the slice form the group $PSL_2(\mathbb{C})\cong SO^{+}(1,3)$, of real dimension $6$ and non-compact, the proper orthochronous Lorentz group of the Lorentzian slice acting on the algebra.
+**Remark (the norm-one slice is not a family of automorphisms).** For $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$ the map $\mathrm{Sd}_{\tilde{Q}_1}(X)=\tilde{Q}_1X\tilde{Q}_1^{*}$ is multiplicative only when $\tilde{Q}_1^{*}\tilde{Q}_1$ is central, and inside $SL_2(\mathbb{C})$ that forces $\tilde{Q}_1$ $*$-unitary. So the non-$*$-unitary members of the norm-one slice are Krein isometries that are **not** automorphisms of the algebra, and the slice is not an enlargement of the inner automorphism group. The maps of the slice form the group $PSL_2(\mathbb{C})\cong SO^{+}(1,3)$, of real dimension $6$ and non-compact, the proper orthochronous Lorentz group of the Lorentzian slice acting on the algebra.
 
 ## The Spectrum and the Boosts
 
@@ -110,9 +110,9 @@ $$
 namely the **transpose** $M^{\mathsf T}$ for the general quaternionic bilinear form, the **Hermitian adjoint** $M^{*}$ for the general plain sesquilinear form, and the **Krein adjoint** $M^{\dagger}=JM^{*}J$ for the general quaternionic sesquilinear form; in the coefficient basis these are the transpose, the conjugate transpose and the conjugate transpose conjugated by $E$. Each gives an involution of $\mathfrak{g}$,
 
 $$
-\theta_{\mathsf T}(M)=-M^{\mathsf T},\qquad
-\theta_{*}(M)=-M^{*},\qquad
-\theta_{J}(M)=-M^{\dagger}=-JM^{*}J .
+\mathrm{J}_{\mathsf T}(M)=-M^{\mathsf T},\qquad
+\mathrm{J}_{*}(M)=-M^{*},\qquad
+\mathrm{J}_{J}(M)=-M^{\dagger}=-JM^{*}J .
 $$
 
 *Proof.* The three adjoints exist because the three forms are non-degenerate with invertible Gram matrices $\mathrm{I}_4,\mathrm{I}_4,E$, and the formulas in the basis are the standard ones for a bilinear, a sesquilinear and an $E$-sesquilinear form. The maps are $\mathbb{R}$-linear involutions of $\mathfrak{g}$. The plain bilinear form is not one of the three: its Gram matrix is $E$, and its adjoint is $EM^{\mathsf T}E$, which is conjugate to $M^{\mathsf T}$ and carries the same classical algebra.
@@ -120,20 +120,20 @@ $$
 **Theorem (the three fixed algebras).** The fixed algebras of the three involutions are the classical Lie algebras
 
 $$
-\boxed{\;\mathfrak{g}^{\theta_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
+\boxed{\;\mathfrak{g}^{\mathrm{J}_{\mathsf T}}=\{M:M^{\mathsf T}=-M\}=\mathfrak{so}_4(\mathbb{C}),
 \qquad
-\mathfrak{g}^{\theta_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4),
+\mathfrak{g}^{\mathrm{J}_{*}}=\{M:M^{*}=-M\}=\mathfrak{u}(4),
 \qquad
-\mathfrak{g}^{\theta_{J}}=\{M:M^{\dagger}=-M\}=\mathfrak{u}(1,3)\;}
+\mathfrak{g}^{\mathrm{J}_{J}}=\{M:M^{\dagger}=-M\}=\mathfrak{u}(1,3)\;}
 $$
 
 of real dimensions $12$, $16$ and $16$; each is closed under the commutator bracket, and the three are the Lie algebras of the isometry groups $O_4(\mathbb{C})$, $\mathrm{U}(4)$ and $\mathrm{U}(1,3)$ of the three pairings.
 
-*Proof.* The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket. Each of the three maps is an anti-automorphism of the associative product composed with the sign, $(MN)^{\mathsf T}=N^{\mathsf T}M^{\mathsf T}$, $(MN)^{*}=N^{*}M^{*}$ and $(MN)^{\dagger}=N^{\dagger}M^{\dagger}$; the reversal cancels between the two terms of the commutator, so $\theta([M,N])=[\theta M,\theta N]$ for each of the three.
+*Proof.* The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket. Each of the three maps is an anti-automorphism of the associative product composed with the sign, $(MN)^{\mathsf T}=N^{\mathsf T}M^{\mathsf T}$, $(MN)^{*}=N^{*}M^{*}$ and $(MN)^{\dagger}=N^{\dagger}M^{\dagger}$; the reversal cancels between the two terms of the commutator, so $\mathrm{J}([M,N])=[\mathrm{J} M,\mathrm{J} N]$ for each of the three.
 
 ## The Krein Decomposition
 
-**Definition.** The **Krein decomposition** of $\mathfrak{g}$ is the eigenspace decomposition of the involution $\theta_{J}$,
+**Definition.** The **Krein decomposition** of $\mathfrak{g}$ is the eigenspace decomposition of the involution $\mathrm{J}_{J}$,
 
 $$
 \mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p},
@@ -172,14 +172,14 @@ since $(JN)^{\dagger}=-JN$ exactly when $N$ is skew-Hermitian; the identificatio
 **Definition.** On the group $GL(\mathbb{B})\cong GL_4(\mathbb{C})$ of invertible operators define
 
 $$
-\theta_{J}(T)=\bigl(T^{\dagger}\bigr)^{-1}.
+\mathrm{J}_{J}(T)=\bigl(T^{\dagger}\bigr)^{-1}.
 $$
 
-**Theorem (the fixed group is $\mathrm{U}(1,3)$).** The map $\theta_{J}$ is an involution with fixed group exactly the Krein isometry group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$; its differential at the identity is the involution $\theta_{J}(M)=-M^{\dagger}$ of $\mathfrak{g}$ and its fixed algebra is $\mathfrak{k}=\mathfrak{u}(1,3)$.
+**Theorem (the fixed group is $\mathrm{U}(1,3)$).** The map $\mathrm{J}_{J}$ is an involution with fixed group exactly the Krein isometry group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$; its differential at the identity is the involution $\mathrm{J}_{J}(M)=-M^{\dagger}$ of $\mathfrak{g}$ and its fixed algebra is $\mathfrak{k}=\mathfrak{u}(1,3)$.
 
-*Proof.* $\theta_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$; the fixed condition $\theta_{J}(T)=T$ is $T^{\dagger}T=\mathrm{id}$, the definition of $J$-unitarity, and the group is $\mathrm{U}(1,3)$.
+*Proof.* $\mathrm{J}_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$; the fixed condition $\mathrm{J}_{J}(T)=T$ is $T^{\dagger}T=\mathrm{id}$, the definition of $J$-unitarity, and the group is $\mathrm{U}(1,3)$.
 
-**Theorem (the involution is not Cartan).** The fixed group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ of $\theta_{J}$ is non-compact, so $\theta_{J}$ is not a Cartan involution of $GL(\mathbb{B})$: the fixed group of a Cartan involution is compact by definition.
+**Theorem (the involution is not Cartan).** The fixed group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ of $\mathrm{J}_{J}$ is non-compact, so $\mathrm{J}_{J}$ is not a Cartan involution of $GL(\mathbb{B})$: the fixed group of a Cartan involution is compact by definition.
 
 *Proof.* $\mathrm{U}(1,3)$ contains the boosts of §*The Spectrum and the Boosts*, which are unbounded.
 
@@ -188,10 +188,10 @@ $$
 **Theorem (the Cartan involution).** The restriction to $U_{J}(\mathbb{B})$ of the definite involution
 
 $$
-\theta_{0}(T)=(T^{*})^{-1}
+\mathrm{J}_{0}(T)=(T^{*})^{-1}
 $$
 
-is the inner automorphism $T\mapsto JTJ$ of the Krein isometry group, and it is a Cartan involution of $\mathrm{U}(1,3)$; its fixed group is the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$, and its differential $\theta_{0}(M)=-M^{*}$ splits
+is the inner automorphism $T\mapsto JTJ$ of the Krein isometry group, and it is a Cartan involution of $\mathrm{U}(1,3)$; its fixed group is the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$, and its differential $\mathrm{J}_{0}(M)=-M^{*}$ splits
 
 $$
 \boxed{\;\mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
@@ -258,7 +258,7 @@ The cone $\mathcal{P}_J$ is closed and convex, contains $J$, and does not contai
 
 **$J$ itself.** $J={}^{\natural}$ is a Krein isometry, of spectrum $\{+1,-1\}$; it is the fundamental symmetry of the canonical decomposition.
 
-**A phase and a sandwich.** $L_{ce_t}$ with $\lvert c\rvert=1$ is a Krein isometry with the single eigenvalue $c$; $\Theta_{\vec e_x}$ has $\lvert\langle \vec e_x,\vec e_x\rangle_{\natural}\rvert=1$, is a Krein isometry and an inner automorphism, of spectrum $\{+1,-1\}$.
+**A phase and a sandwich.** $L_{ce_t}$ with $\lvert c\rvert=1$ is a Krein isometry with the single eigenvalue $c$; $\mathrm{Sd}_{\vec e_x}$ has $\lvert\langle \vec e_x,\vec e_x\rangle_{\natural}\rvert=1$, is a Krein isometry and an inner automorphism, of spectrum $\{+1,-1\}$.
 
 **A boost.** $T_{t}$ with $t=1$ is a Krein isometry of spectrum $\{e,e^{-1},1,1\}$, off the unit circle, realising the Lorentz boost of the Lorentzian slice.
 
@@ -266,13 +266,13 @@ The cone $\mathcal{P}_J$ is closed and convex, contains $J$, and does not contai
 
 **A non-isometry that is not a contraction.** $L_{2e_t}$ has $\mathrm{id}-L^{\dagger}L=-3\,\mathrm{id}$, whose image under $J$ is $-3J$, not in the definite positive cone, so $L_{2e_t}$ is neither a contraction nor an isometry.
 
-**The three involutions of the identity.** For $M=\mathrm{id}$ one has $M^{\mathsf T}=M^{*}=M^{\dagger}=\mathrm{id}$ and $\theta(\mathrm{id})=-\mathrm{id}$ for each of the three involutions of §*The Three Adjoints of the Operator Algebra*.
+**The three involutions of the identity.** For $M=\mathrm{id}$ one has $M^{\mathsf T}=M^{*}=M^{\dagger}=\mathrm{id}$ and $\mathrm{J}(\mathrm{id})=-\mathrm{id}$ for each of the three involutions of §*The Three Adjoints of the Operator Algebra*.
 
 **A $J$-skew element.** $M=JL$ with $L$ definite-skew has $M^{\dagger}=-M$, so $M\in\mathfrak{k}=\mathfrak{u}(1,3)$.
 
 ## Summary
 
-The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{*}ET=E\}$ is $\mathrm{U}(1,3)$: real dimension $16$, non-compact, centre the scalar phases $\mathrm{U}(1)$, maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}_1}$, $\tilde{Q}_1\in S^{1}e_t$, and the $*$-unitary sandwiches $\Theta_{\tilde{Q}_1}$, $\tilde{Q}_1\in\mathrm{U}(2)$; together they form the compact subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The sandwiches with $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$ are isometries too, but the non-$*$-unitary ones are not automorphisms of the algebra, and the slice forms the non-compact group $PSL_2(\mathbb{C})\cong SO^{+}(1,3)$. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $\exp(\pm t),1,1$ and are the one-parameter subgroups realising the Lorentz boosts. The group acts transitively on the isotropic lines, on the positive lines and on the maximal totally isotropic complex subspaces.
+The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{*}ET=E\}$ is $\mathrm{U}(1,3)$: real dimension $16$, non-compact, centre the scalar phases $\mathrm{U}(1)$, maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}_1}$, $\tilde{Q}_1\in S^{1}e_t$, and the $*$-unitary sandwiches $\mathrm{Sd}_{\tilde{Q}_1}$, $\tilde{Q}_1\in\mathrm{U}(2)$; together they form the compact subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The sandwiches with $\lvert\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert=1$ are isometries too, but the non-$*$-unitary ones are not automorphisms of the algebra, and the slice forms the non-compact group $PSL_2(\mathbb{C})\cong SO^{+}(1,3)$. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $\exp(\pm t),1,1$ and are the one-parameter subgroups realising the Lorentz boosts. The group acts transitively on the isotropic lines, on the positive lines and on the maximal totally isotropic complex subspaces.
 
 On the operators, the three pairings give the transpose, the Hermitian adjoint and the Krein adjoint $M^{\dagger}=JM^{*}J$, whose involutions $M\mapsto-M_{\sigma}$ have the fixed algebras $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$, of real dimensions $12$, $16$ and $16$. The Krein involution splits $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew operators $\mathfrak{k}=\mathfrak{u}(1,3)$ and the $J$-self-adjoint operators $\mathfrak{p}=J\cdot\operatorname{Herm}_4$, each of dimension $16$; $\mathfrak{k}$ is a Lie algebra, $\mathfrak{p}$ a Jordan algebra, and the bracket of $\mathfrak{k}$ with $\mathfrak{p}$ stays in $\mathfrak{p}$. On the group the involution $T\mapsto(T^{\dagger})^{-1}$ has fixed group the non-compact $\mathrm{U}(1,3)$, so it is not a Cartan involution; the Cartan involution is the restriction of $T\mapsto(T^{*})^{-1}$, whose fixed group is the maximal compact $\mathrm{U}(1)\times \mathrm{U}(3)$, with $\dim\mathfrak{k}_{0}=10$ and $\dim\mathfrak{p}_{0}=6$, and whose symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of real dimension $6$. The trace form of $\mathfrak{u}(1,3)$ has signature $(6,10)$, positive on the hyperbolic part and negative on the compact part; the $J$-positive cone sits inside the Jordan algebra $\mathfrak{p}$ but is not its cone of squares. Finally the $J$-contractions, defined by the $J$-positivity of their defect, are invariant under conjugation by the group; their model is the projection onto the vector subspace, whose defect is the projection onto the centre, while a scalar multiplication is a contraction only when it is an isometry.
 
@@ -283,19 +283,19 @@ On the operators, the three pairings give the transpose, the Hermitian adjoint a
 | $U_{J}(\mathbb{B})=\{T:T^{*}ET=E\}$ | The Krein isometry group, $\cong \mathrm{U}(1,3)$ |
 | $\dim_{\mathbb{R}}U_{J}(\mathbb{B})=16$ | The real dimension; the group is non-compact |
 | $\mathrm{U}(1)$ | Its centre, the scalar phases |
-| $\mathrm{U}(1)\times \mathrm{U}(3)$ | Its maximal compact subgroup; fixed group of $\theta_{0}$ |
+| $\mathrm{U}(1)\times \mathrm{U}(3)$ | Its maximal compact subgroup; fixed group of $\mathrm{J}_{0}$ |
 | $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ | The Krein isometries among the algebra's families |
 | $PSL_2(\mathbb{C})\cong SO^{+}(1,3)$ | The norm-one sandwiches; non-compact, dimension $6$ |
 | $\lambda\leftrightarrow1/\bar\lambda$ | The symmetry of the spectrum of a Krein isometry |
 | $T_{t}$, $\operatorname{spec}=\{\exp(t),\exp(-t),1,1\}$ | The boosts; non-compactness; the Lorentz boosts |
 | $\mathfrak{g}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong\mathfrak{gl}_4(\mathbb{C})$ | The operator algebra; real dimension $32$ |
 | $M^{\mathsf T}$, $M^{*}$, $M^{\dagger}=JM^{*}J$ | The three adjoints |
-| $\theta_{\mathsf T},\theta_{*},\theta_{J}$ | The three involutions $M\mapsto-M_{\sigma}$ |
+| $\mathrm{J}_{\mathsf T},\mathrm{J}_{*},\mathrm{J}_{J}$ | The three involutions $M\mapsto-M_{\sigma}$ |
 | $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$, $\mathfrak{u}(1,3)$ | The three fixed algebras; dimensions $12$, $16$, $16$ |
 | $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ | The Krein decomposition |
 | $\mathfrak{k}=\mathfrak{u}(1,3)$, $\mathfrak{p}=J\cdot\operatorname{Herm}_4$ | The $J$-skew and $J$-self-adjoint parts |
-| $\theta_{J}(T)=(T^{\dagger})^{-1}$ | The group involution; fixed group $\mathrm{U}(1,3)$, non-compact |
-| $\theta_{0}(T)=(T^{*})^{-1}$, $\mathrm{U}(1)\times \mathrm{U}(3)$ | The Cartan involution and its fixed group |
+| $\mathrm{J}_{J}(T)=(T^{\dagger})^{-1}$ | The group involution; fixed group $\mathrm{U}(1,3)$, non-compact |
+| $\mathrm{J}_{0}(T)=(T^{*})^{-1}$, $\mathrm{U}(1)\times \mathrm{U}(3)$ | The Cartan involution and its fixed group |
 | $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))\cong\mathbb{CH}^{3}$ | The symmetric space of real dimension $6$ |
 | $(6,10)$ | The signature of the trace form of $\mathfrak{u}(1,3)$ |
 | $\mathrm{id}-T^{\dagger}T\in\mathcal{P}_{J}$ | $J$-contraction and defect |

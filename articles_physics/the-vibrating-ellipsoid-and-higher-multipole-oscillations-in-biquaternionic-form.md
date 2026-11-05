@@ -123,7 +123,7 @@ For a homogeneous ellipsoid with semi-axes $a, b, c$ along the principal axes, t
 The quadrupole tensor of a mass distribution is, by the convention of the preceding article,
 
 $$
-\Theta_{ij} = \int \rho_m(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3x_2 ,
+\mathrm{Sd}_{ij} = \int \rho_m(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3x_2 ,
 $$
 
 symmetric and traceless. For a uniform ellipsoid of mass $M$ and semi-axes $a, b, c$ aligned with the axes, the principal second moments are $\int x^2\,dV = Ma^2/5$ and its cyclic relatives. The value follows from the substitution to the unit ball. Setting $x = a u_x$, $y = b u_y$, $z = c u_z$, the volume element is $dV = abc\,du_1\,du_2\,du_3$ and the unit ball is $u_x^2+u_y^2+u_z^2\leq 1$, so
@@ -141,17 +141,17 @@ $$
 as quoted. Therefore
 
 $$
-\boxed{\;\Theta_{xx} = 3\cdot\frac{Ma^2}{5} - \frac{M(a^2+b^2+c^2)}{5} = \frac{M}{5}\left(2a^2 - b^2 - c^2\right)\;},
+\boxed{\;\mathrm{Sd}_{xx} = 3\cdot\frac{Ma^2}{5} - \frac{M(a^2+b^2+c^2)}{5} = \frac{M}{5}\left(2a^2 - b^2 - c^2\right)\;},
 $$
 
-with $\Theta_{yy}$ and $\Theta_{zz}$ by cyclic permutation, and $\Theta_{ij} = 0$ for $i \neq j$. The trace vanishes identically, $\Theta_{xx}+\Theta_{yy}+\Theta_{zz} = 0$. The result has been verified by deterministic quadrature rather than by sampling: a tensor Gauss–Legendre rule of $48^3$ nodes in the spherical coordinates of the unit ball — the radial and polar integrands are polynomials and the azimuthal one a trigonometric polynomial of degree one, so the rule is exact to roundoff — reproduces each $\int x_{i,2}^{\,2}dV$ and hence $\Theta_{xx}$ at four axis triples, including a strongly triaxial one, with relative error below $10^{-13}$.
+with $\mathrm{Sd}_{yy}$ and $\mathrm{Sd}_{zz}$ by cyclic permutation, and $\mathrm{Sd}_{ij} = 0$ for $i \neq j$. The trace vanishes identically, $\mathrm{Sd}_{xx}+\mathrm{Sd}_{yy}+\mathrm{Sd}_{zz} = 0$. The result has been verified by deterministic quadrature rather than by sampling: a tensor Gauss–Legendre rule of $48^3$ nodes in the spherical coordinates of the unit ball — the radial and polar integrands are polynomials and the azimuthal one a trigonometric polynomial of degree one, so the rule is exact to roundoff — reproduces each $\int x_{i,2}^{\,2}dV$ and hence $\mathrm{Sd}_{xx}$ at four axis triples, including a strongly triaxial one, with relative error below $10^{-13}$.
 
 ### The Linearised Moment
 
 For a small deformation about the sphere, $a_i = R_0(1+\epsilon_i)$ with trace-free $\epsilon_i$, expanding to first order gives
 
 $$
-\boxed{\;\Theta_{ij} = \frac{6MR_0^2}{5}\,\epsilon_{ij} + O(\epsilon^2)\;},
+\boxed{\;\mathrm{Sd}_{ij} = \frac{6MR_0^2}{5}\,\epsilon_{ij} + O(\epsilon^2)\;},
 $$
 
 on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The relation has been verified for small random trace-free strains: the exact moment and the linear expression agree to $O(\epsilon^2)$ with $\epsilon \sim 2\times 10^{-3}$, the residual being of the expected second order. The content is that the quadrupole moment is **linear** in the shape deformation: the $l = 2$ shape mode and the $l = 2$ moment are the same physical quantity in two units.
@@ -161,7 +161,7 @@ on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The 
 Combining the two results, a single quadrupole mode $a_2(t') = A\cos\omega_2 t'$ produces a strain $\epsilon_{ij}(t')\propto a_2(t')$ and hence a quadrupole moment
 
 $$
-\boxed{\;\Theta_{ij}(t') = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t'\;},
+\boxed{\;\mathrm{Sd}_{ij}(t') = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t'\;},
 $$
 
 oscillating at the **mode frequency** $\omega_2$. The body's quadrupole moment is thus a harmonic oscillator. A general vibration is a superposition of modes $l = 2, 3, \dots$, and its multipole moments oscillate at the corresponding mode frequencies — the tower of oscillation frequencies is the same tower as the multipole series.
@@ -171,7 +171,7 @@ oscillating at the **mode frequency** $\omega_2$. The body's quadrupole moment i
 The quadrupole can be decomposed into two equal and opposite dipoles, and this makes its relation to the algebra transparent. The decomposition is a statement about the geometric kernel $3x_ix_j - r^2\delta_{ij}$ alone and is independent of the nature of the source; writing $ϙ_p$ for the strength of a pole — a symbol reserved here to keep it distinct from the monopole moment $ϙ$ of the preceding article — take a dipole of moment $\vec p = ϙ_p\vec d$ centred at $+\vec a/2$, namely $+ϙ_p$ at $+\vec a/2 + \vec d/2$ and $-ϙ_p$ at $+\vec a/2 - \vec d/2$, together with its opposite $-\vec p$ centred at $-\vec a/2$, namely $-ϙ_p$ at $-\vec a/2 + \vec d/2$ and $+ϙ_p$ at $-\vec a/2 - \vec d/2$. The monopole and the dipole of the four poles cancel, and the quadrupole moment is
 
 $$
-\Theta_{ij} = ϙ_p\left(3d_ia_j + 3d_ja_i - 2(\vec d\cdot\vec a)\,\delta_{ij}\right),
+\mathrm{Sd}_{ij} = ϙ_p\left(3d_ia_j + 3d_ja_i - 2(\vec d\cdot\vec a)\,\delta_{ij}\right),
 $$
 
 verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from **products of two vectors**, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $ϙ_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.
@@ -271,7 +271,7 @@ It is worth stating exactly where the tower sits in the framework, because this 
 
 ### Time-Dependent Multipole Fields
 
-The moments $\Theta_{ij}(t')$, $\Theta_{ijk}(t'), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
+The moments $\mathrm{Sd}_{ij}(t')$, $\mathrm{Sd}_{ijk}(t'), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
 
 ### Power Scaling
 
@@ -291,7 +291,7 @@ In the framework the source is a time-dependent moment, a tensor; the field it p
 
 A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its shape is a scalar function on the sphere, expanded in spherical harmonics, and each order $l$ is a normal mode with a frequency $\omega_l$ independent of the azimuthal index $m$; for Rayleigh's liquid drop, $\omega_l^2 = (\sigma/\rho_m R_0^3)\,l(l-1)(l+2)$, so the quadrupole mode has $\omega_2^2 = 8\sigma/(\rho_m R_0^3)$.
 
-The quadrupole moment of a homogeneous ellipsoid is $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\Theta_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m_2 = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
+The quadrupole moment of a homogeneous ellipsoid is $\mathrm{Sd}_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\mathrm{Sd}_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m_2 = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
 
 In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t')e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
 
@@ -319,10 +319,10 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $M_l, K_l$ | Mode inertia and restoring coefficients, $\omega_l^2 = K_l/M_l$ |
 | $\omega_l$ | Frequency of the $l$-th mode |
 | $\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}l(l-1)(l+2)$ | Rayleigh drop-mode frequency |
-| $\Theta_{ij}$ | Quadrupole tensor (symmetric traceless) |
+| $\mathrm{Sd}_{ij}$ | Quadrupole tensor (symmetric traceless) |
 | $ϙ_p$ | Pole strength in the two-dipole decomposition of the quadrupole |
 | $\lambda_1, \lambda_2, \lambda_3$ | Principal values of the body-frame quadrupole, $\sum_i\lambda_i = 0$ |
-| $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ | Quadrupole of a homogeneous ellipsoid |
+| $\mathrm{Sd}_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ | Quadrupole of a homogeneous ellipsoid |
 | $\epsilon_{ij}$ | Traceless symmetric strain |
 | $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |

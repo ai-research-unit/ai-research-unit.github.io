@@ -31,22 +31,22 @@ $$
 is an involutive automorphism of $G$ whose fixed subgroup contains the identity component of $K$, and the differential at the identity,
 
 $$
-\theta = d\Phi_e : \mathfrak{g} \longrightarrow \mathfrak{g},
+\mathrm{J} = d\Phi_e : \mathfrak{g} \longrightarrow \mathfrak{g},
 $$
 
 is an involutive automorphism of the Lie algebra, the **Cartan involution** of the pair $(G, K)$.
 
-**Proof.** Since $\sigma_p$ is an involutive isometry, conjugation by it is an involutive automorphism of the group of isometries; it preserves $G$ because it is continuous and fixes the identity. If $g \in K$ then $g(p)=p$ and $\sigma_pg\sigma_p(p) = \sigma_pg(p) = \sigma_p(p) = p$, so $\Phi(g)\in K$; hence $\Phi$ preserves $K$ and its fixed subgroup contains the identity component of $K$, with equality when the pair is effective and the space is not of the Euclidean type. The differential of an involutive automorphism is an involutive automorphism of the Lie algebra, which is the definition of $\theta$.
+**Proof.** Since $\sigma_p$ is an involutive isometry, conjugation by it is an involutive automorphism of the group of isometries; it preserves $G$ because it is continuous and fixes the identity. If $g \in K$ then $g(p)=p$ and $\sigma_pg\sigma_p(p) = \sigma_pg(p) = \sigma_p(p) = p$, so $\Phi(g)\in K$; hence $\Phi$ preserves $K$ and its fixed subgroup contains the identity component of $K$, with equality when the pair is effective and the space is not of the Euclidean type. The differential of an involutive automorphism is an involutive automorphism of the Lie algebra, which is the definition of $\mathrm{J}$.
 
 ## The Cartan Decomposition
 
 ### The Eigenspaces of the Involution
 
-**Theorem.** Let $\theta$ be the Cartan involution of the symmetric pair $(G, K)$. The Lie algebra decomposes as the sum of the eigenspaces of $\theta$,
+**Theorem.** Let $\mathrm{J}$ be the Cartan involution of the symmetric pair $(G, K)$. The Lie algebra decomposes as the sum of the eigenspaces of $\mathrm{J}$,
 
 $$
 \boxed{\;\mathfrak{g} = \mathfrak{k}\oplus\mathfrak{p}, \qquad
-\theta = +\mathrm{id} \ \text{on}\ \mathfrak{k}, \qquad \theta = -\mathrm{id}\ \text{on}\ \mathfrak{p}\;},
+\mathrm{J} = +\mathrm{id} \ \text{on}\ \mathfrak{k}, \qquad \mathrm{J} = -\mathrm{id}\ \text{on}\ \mathfrak{p}\;},
 $$
 
 where $\mathfrak{k}$ is the Lie algebra of $K$; the decomposition is orthogonal for the Killing form and satisfies
@@ -59,7 +59,7 @@ $$
 
 The subspace $\mathfrak{p}$ is identified with the tangent space at the base point by the evaluation at the identity of the infinitesimal action, and the isotropy representation of $K$ on $\mathfrak{p}$ is the adjoint action. The decomposition and the bracket relations are the **Cartan decomposition** of the symmetric pair.
 
-**Proof.** An involutive automorphism has the eigenvalues $+1$ and $-1$, and the decomposition is direct; the eigenspaces are orthogonal for the Killing form $B$, because $B(\theta X,\theta Y) = B(X,Y)$ and hence $B(\mathfrak{k},\mathfrak{p}) = B(\theta\mathfrak{k},\mathfrak{p}) = B(\mathfrak{k},-\mathfrak{p}) = -B(\mathfrak{k},\mathfrak{p})$, forcing the vanishing of the pairing when $B$ is nondegenerate. The bracket relations follow from the eigenvalue of $\theta$ on a bracket: $\theta[A,B] = [\theta A,\theta B]$, so the $(-1)$-eigenvalue of $\theta$ on $[A,B]$ is the product of the eigenvalues of $A$ and $B$; this gives the three inclusions by inspecting the signs. The identification of $\mathfrak{p}$ with the tangent space is the orbit map of the homogeneous space, and the adjoint action of $K$ on $\mathfrak{p}$ is the isotropy representation, as in *Homogeneous Spaces*.
+**Proof.** An involutive automorphism has the eigenvalues $+1$ and $-1$, and the decomposition is direct; the eigenspaces are orthogonal for the Killing form $B$, because $B(\mathrm{J} X,\mathrm{J} Y) = B(X,Y)$ and hence $B(\mathfrak{k},\mathfrak{p}) = B(\mathrm{J}\mathfrak{k},\mathfrak{p}) = B(\mathfrak{k},-\mathfrak{p}) = -B(\mathfrak{k},\mathfrak{p})$, forcing the vanishing of the pairing when $B$ is nondegenerate. The bracket relations follow from the eigenvalue of $\mathrm{J}$ on a bracket: $\mathrm{J}[A,B] = [\mathrm{J} A,\mathrm{J} B]$, so the $(-1)$-eigenvalue of $\mathrm{J}$ on $[A,B]$ is the product of the eigenvalues of $A$ and $B$; this gives the three inclusions by inspecting the signs. The identification of $\mathfrak{p}$ with the tangent space is the orbit map of the homogeneous space, and the adjoint action of $K$ on $\mathfrak{p}$ is the isotropy representation, as in *Homogeneous Spaces*.
 
 ### The Geodesics and the Curvature
 
@@ -95,15 +95,15 @@ for the invariant metric whose inner product on $\mathfrak{p}$ is the negative o
 
 ## Examples
 
-**Example (the rank-one spaces).** For the sphere $S^n = \mathrm{SO}(n+1)/\mathrm{SO}(n)$ the involution is $\theta(A) = I_{1,n}A\,I_{1,n}$ with the diagonal matrix of signature $(1,n)$, the space $\mathfrak{p}$ is the set of the matrices with a single nonzero row and column, the geodesics through the base point are the great circles, and the sectional curvature is the constant $+1$. For the hyperbolic space $\mathbb{H}^n = \mathrm{SO}(n,1)^0/\mathrm{SO}(n)$ the same construction with the signature $(n,1)$ gives the constant curvature $-1$. For Euclidean space $\mathbb{R}^n$ the pair is the semidirect product of the translations with $\mathrm{SO}(n)$, the space $\mathfrak{p}$ is the translation part, the bracket vanishes, and the curvature is zero; these are the three rank-one models.
+**Example (the rank-one spaces).** For the sphere $S^n = \mathrm{SO}(n+1)/\mathrm{SO}(n)$ the involution is $\mathrm{J}(A) = I_{1,n}A\,I_{1,n}$ with the diagonal matrix of signature $(1,n)$, the space $\mathfrak{p}$ is the set of the matrices with a single nonzero row and column, the geodesics through the base point are the great circles, and the sectional curvature is the constant $+1$. For the hyperbolic space $\mathbb{H}^n = \mathrm{SO}(n,1)^0/\mathrm{SO}(n)$ the same construction with the signature $(n,1)$ gives the constant curvature $-1$. For Euclidean space $\mathbb{R}^n$ the pair is the semidirect product of the translations with $\mathrm{SO}(n)$, the space $\mathfrak{p}$ is the translation part, the bracket vanishes, and the curvature is zero; these are the three rank-one models.
 
 **Example (the Grassmannians).** The Grassmannian $\mathrm{Gr}_k(\mathbb{R}^n) = \mathrm{O}(n)/(\mathrm{O}(k)\times\mathrm{O}(n-k))$ is symmetric, the geodesic symmetry at a subspace $W$ being induced by the reflection $v\mapsto v$ on $W$ and $v\mapsto -v$ on $W^{\perp}$; it is of compact type, of rank $\min(k, n-k)$, and its curvature is computed from the brackets of the corresponding matrices. The complex and the quaternionic Grassmannians and the exceptional spaces are constructed the same way, and their geometry is *Grassmannians and Stiefel Manifolds* and *Symmetric Spaces* elsewhere in this Part.
 
-**Example (the noncompact group manifolds).** The space $\mathrm{SL}(n, \mathbb{R})/\mathrm{SO}(n)$ of the positive definite symmetric matrices of determinant one, with the metric $\operatorname{tr}(H^{-1}dH)^2$, is a symmetric space of noncompact type; the involution is $g\mapsto (g^{-1})^{\top}$, that is $\theta(X) = -X^{\top}$ on the Lie algebra, the Cartan decomposition is the split of a traceless matrix into its antisymmetric part $\mathfrak{k} = \mathfrak{so}(n)$ and its symmetric traceless part $\mathfrak{p}$, and the geodesics through the identity are $t\mapsto \exp(tX)$ with $X$ symmetric traceless. The curvature is nonpositive, and the space is the model of the symmetric spaces of noncompact type in the same way that the sphere is the model of the compact ones.
+**Example (the noncompact group manifolds).** The space $\mathrm{SL}(n, \mathbb{R})/\mathrm{SO}(n)$ of the positive definite symmetric matrices of determinant one, with the metric $\operatorname{tr}(H^{-1}dH)^2$, is a symmetric space of noncompact type; the involution is $g\mapsto (g^{-1})^{\top}$, that is $\mathrm{J}(X) = -X^{\top}$ on the Lie algebra, the Cartan decomposition is the split of a traceless matrix into its antisymmetric part $\mathfrak{k} = \mathfrak{so}(n)$ and its symmetric traceless part $\mathfrak{p}$, and the geodesics through the identity are $t\mapsto \exp(tX)$ with $X$ symmetric traceless. The curvature is nonpositive, and the space is the model of the symmetric spaces of noncompact type in the same way that the sphere is the model of the compact ones.
 
 ## Summary
 
-A **symmetric space** is a connected Riemannian manifold with, at every point $p$, an involutive isometry $\sigma_p$ fixing $p$ with $d(\sigma_p)_p=-\mathrm{id}$; such a space is complete, and it is **homogeneous**, the symmetry at the midpoint of a geodesic joining $p$ to $q$ carrying $p$ to $q$. It is therefore the quotient $G/K$ of a Lie group of isometries by the isotropy at a point, and the conjugation by $\sigma_p$ is an involutive automorphism of $G$ with fixed subgroup containing the isotropy; its differential is the **Cartan involution** $\theta$ of the pair.
+A **symmetric space** is a connected Riemannian manifold with, at every point $p$, an involutive isometry $\sigma_p$ fixing $p$ with $d(\sigma_p)_p=-\mathrm{id}$; such a space is complete, and it is **homogeneous**, the symmetry at the midpoint of a geodesic joining $p$ to $q$ carrying $p$ to $q$. It is therefore the quotient $G/K$ of a Lie group of isometries by the isotropy at a point, and the conjugation by $\sigma_p$ is an involutive automorphism of $G$ with fixed subgroup containing the isotropy; its differential is the **Cartan involution** $\mathrm{J}$ of the pair.
 
 The Cartan involution gives the **Cartan decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$, orthogonal for the Killing form, with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$; the subspace $\mathfrak{p}$ is identified with the tangent space at the base point, the isotropy representation of $K$ on it is the adjoint action, the geodesics through the base point are the images of the one-parameter subgroups of $\mathfrak{p}$, and the curvature is $R(X,Y)Z=-[[X,Y],Z]$ for $X, Y, Z\in\mathfrak{p}$, with the sectional curvature $K(X,Y)=\langle[X,Y],[X,Y]\rangle/|X\wedge Y|^2$. The curvature is parallel, in agreement with the local condition $\nabla R=0$. A symmetric space splits into a flat Euclidean factor, a **compact type** factor of nonnegative curvature and a **noncompact type** factor of nonpositive curvature, the two nondegenerate types being linked by the **duality** that passes to the compact real form and reverses the sign of the curvature while preserving the isotropy representation. The sphere, the hyperbolic space and Euclidean space are the rank-one models; the Grassmannians are the compact classical examples; the space of the positive definite symmetric matrices of determinant one is the noncompact model. The classification, the rank and the restricted roots are *Symmetric Spaces* of a later category of this Part.
 
@@ -114,8 +114,8 @@ The Cartan involution gives the **Cartan decomposition** $\mathfrak{g}=\mathfrak
 | $\sigma_p$ | Geodesic symmetry at $p$; involutive isometry with $d\sigma_p=-\mathrm{id}$ |
 | $G$, $K=\operatorname{Isom}_p$ | Isometry group and isotropy; symmetric space $M=G/K$ |
 | $\Phi(g)=\sigma_pg\sigma_p$ | Involution of $G$ given by conjugation by the symmetry |
-| $\theta = d\Phi_e$ | Cartan involution of the Lie algebra |
-| $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ | Cartan decomposition; $(+1)$ and $(-1)$ eigenspaces of $\theta$ |
+| $\mathrm{J} = d\Phi_e$ | Cartan involution of the Lie algebra |
+| $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ | Cartan decomposition; $(+1)$ and $(-1)$ eigenspaces of $\mathrm{J}$ |
 | $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ | Bracket relations of the decomposition |
 | $\mathfrak{p}\cong T_pM$ | Tangent space at the base point |
 | $R(X,Y)Z=-[[X,Y],Z]$ | Curvature from the bracket, $X,Y,Z\in\mathfrak{p}$ |

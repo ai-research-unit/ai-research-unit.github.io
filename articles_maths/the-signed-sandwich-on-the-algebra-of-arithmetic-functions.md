@@ -29,15 +29,15 @@ and $S^\alpha_{a,b}$ depends on $a$ and $b$ only through the product $a*b$.
 
 **Theorem (the signed adjoint).** With respect to the form of the category, the adjoint of the signed sandwich is
 $$
-\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^{*} = \alpha\circ\Theta_{a*b}\;},
+\boxed{\;\bigl(S^\alpha_{a,b}\bigr)^{*} = \alpha\circ\mathrm{Sd}_{a*b}\;},
 $$
-where $\Theta_c=L_c^*$ is the transposed multiplication,
+where $\mathrm{Sd}_c=L_c^*$ is the transposed multiplication,
 $$
-(\Theta_cg)(k)=\sum_{m\ge1}\overline{c(m)}\,g(mk).
+(\mathrm{Sd}_cg)(k)=\sum_{m\ge1}\overline{c(m)}\,g(mk).
 $$
 Equivalently $\bigl(S^\alpha_{a,b}\bigr)^{*}(g)(k)=\lambda(k)\sum_{m}\overline{(a*b)(m)}\,g(mk)$.
 
-**Proof.** The grade involution is self-adjoint for the coefficient form: $\langle\alpha f,g\rangle=\sum_n\lambda(n)f(n)\overline{g(n)}=\sum_nf(n)\overline{\lambda(n)g(n)}=\langle f,\alpha g\rangle$, because $\lambda$ is real and $\lambda^2=1$. Hence $\alpha^*=\alpha$. The adjoint of a product is the product of the adjoints in the reverse order, $\bigl(L_{a*b}\alpha\bigr)^*=\alpha^*L_{a*b}^*=\alpha\Theta_{a*b}$. The explicit expression follows from $\Theta_cg=\lambda^\prime\ldots$ computed directly: $(\Theta_cg)(k)=\sum_m\overline{c(m)}g(mk)$, and $\alpha\Theta_cg=\lambda(k)\sum_m\overline{c(m)}g(mk)$.
+**Proof.** The grade involution is self-adjoint for the coefficient form: $\langle\alpha f,g\rangle=\sum_n\lambda(n)f(n)\overline{g(n)}=\sum_nf(n)\overline{\lambda(n)g(n)}=\langle f,\alpha g\rangle$, because $\lambda$ is real and $\lambda^2=1$. Hence $\alpha^*=\alpha$. The adjoint of a product is the product of the adjoints in the reverse order, $\bigl(L_{a*b}\alpha\bigr)^*=\alpha^*L_{a*b}^*=\alpha\mathrm{Sd}_{a*b}$. The explicit expression follows from $\mathrm{Sd}_cg=\lambda^\prime\ldots$ computed directly: $(\mathrm{Sd}_cg)(k)=\sum_m\overline{c(m)}g(mk)$, and $\alpha\mathrm{Sd}_cg=\lambda(k)\sum_m\overline{c(m)}g(mk)$.
 
 **Corollary (comparison with the two-sided case).** The signed sandwich is that two-sided operator in which the grade involution is inserted between two multiplications; in the noncommutative case of *The Signed Sandwich on a Ring* the adjoint is the sandwich $S^\alpha_{\delta(a),\delta(b)}$ with $\delta=\sigma\alpha$, whereas here the adjoint is the left multiplication by $\delta(a*b)$ composed with $\alpha$. The difference is the commutativity of the algebra: the product $a*b$ carries all the information, and the sandwich cannot distinguish the two sides.
 
@@ -47,29 +47,29 @@ Equivalently $\bigl(S^\alpha_{a,b}\bigr)^{*}(g)(k)=\lambda(k)\sum_{m}\overline{(
 
 **Theorem.** Write $c=a*b$. Then
 $$
-\boxed{\;S^\alpha_{a,b}\ \text{is self-adjoint} \iff \alpha\Theta_c=\alpha L_c \iff \Theta_c=L_c\;},
+\boxed{\;S^\alpha_{a,b}\ \text{is self-adjoint} \iff \alpha\mathrm{Sd}_c=\alpha L_c \iff \mathrm{Sd}_c=L_c\;},
 $$
 and
 $$
-\boxed{\;S^\alpha_{a,b}\ \text{is an isometry} \iff \Theta_cL_c=\mathrm{id},\qquad S^\alpha_{a,b}\ \text{is unitary} \iff c=\gamma\varepsilon \text{ with } |\gamma|=1\;},
+\boxed{\;S^\alpha_{a,b}\ \text{is an isometry} \iff \mathrm{Sd}_cL_c=\mathrm{id},\qquad S^\alpha_{a,b}\ \text{is unitary} \iff c=\gamma\varepsilon \text{ with } |\gamma|=1\;},
 $$
 the first equivalence holding because $\alpha$ is unitary and $\|S^\alpha_{a,b}f\|=\|L_cf\|$, and the second because a unitary convolution operator is a scalar multiple of the identity.
 
-**Proof.** Self-adjointness is the equality $\alpha\Theta_c=\alpha L_c$, which is $\Theta_c=L_c$ after applying the invertible $\alpha$. Since $\alpha$ is unitary, $\|Sf\|=\|L_cf\|$, so $S$ is an isometry exactly when $\Theta_cL_c=\mathrm{id}$; it is unitary exactly when also $L_c\Theta_c=\mathrm{id}$, and applying that identity to $\delta_1$ gives $\overline{c(1)}\,c=\delta_1$, whence $c=\gamma\delta_1$ with $|\gamma|=1$.
+**Proof.** Self-adjointness is the equality $\alpha\mathrm{Sd}_c=\alpha L_c$, which is $\mathrm{Sd}_c=L_c$ after applying the invertible $\alpha$. Since $\alpha$ is unitary, $\|Sf\|=\|L_cf\|$, so $S$ is an isometry exactly when $\mathrm{Sd}_cL_c=\mathrm{id}$; it is unitary exactly when also $L_c\mathrm{Sd}_c=\mathrm{id}$, and applying that identity to $\delta_1$ gives $\overline{c(1)}\,c=\delta_1$, whence $c=\gamma\delta_1$ with $|\gamma|=1$.
 
-**Corollary (the balanced sandwiches).** If $a*b=\varepsilon$ then $S^\alpha_{a,b}=\alpha$, and $\alpha$ is unitary and self-adjoint. If $c=\gamma\delta_p$ for a prime $p$ and a scalar $\gamma$ with $|\gamma|=1$, then $\Theta_cL_c=\mathrm{id}$ and $S^\alpha_{a,b}$ is a nonunitary isometry with $S^\alpha_{a,b}(S^\alpha_{a,b})^*=P_p$; the unitary signed sandwiches are exactly the maps $\gamma\alpha$ with $|\gamma|=1$, obtained from $c=\gamma\varepsilon$.
+**Corollary (the balanced sandwiches).** If $a*b=\varepsilon$ then $S^\alpha_{a,b}=\alpha$, and $\alpha$ is unitary and self-adjoint. If $c=\gamma\delta_p$ for a prime $p$ and a scalar $\gamma$ with $|\gamma|=1$, then $\mathrm{Sd}_cL_c=\mathrm{id}$ and $S^\alpha_{a,b}$ is a nonunitary isometry with $S^\alpha_{a,b}(S^\alpha_{a,b})^*=P_p$; the unitary signed sandwiches are exactly the maps $\gamma\alpha$ with $|\gamma|=1$, obtained from $c=\gamma\varepsilon$.
 
-**Proof.** If $c=\varepsilon$ then $L_c=\mathrm{id}$ and $S^\alpha=\alpha$. If $c=\gamma\delta_p$ then $\Theta_cL_c=|\gamma|^2\mathrm{id}$ and $L_c\Theta_c=|\gamma|^2P_p$, by the computation for the shifts of *The Shift Operator on the Coefficients*; the first is the identity when $|\gamma|=1$ but the second is not, so the operator is an isometry and not unitary. The conditions $c*c=\varepsilon$ for an involution and $c=\gamma\varepsilon$ for a unitary are the two extreme cases of the general system.
+**Proof.** If $c=\varepsilon$ then $L_c=\mathrm{id}$ and $S^\alpha=\alpha$. If $c=\gamma\delta_p$ then $\mathrm{Sd}_cL_c=|\gamma|^2\mathrm{id}$ and $L_c\mathrm{Sd}_c=|\gamma|^2P_p$, by the computation for the shifts of *The Shift Operator on the Coefficients*; the first is the identity when $|\gamma|=1$ but the second is not, so the operator is an isometry and not unitary. The conditions $c*c=\varepsilon$ for an involution and $c=\gamma\varepsilon$ for a unitary are the two extreme cases of the general system.
 
 ### The general unitarity condition
 
-**Proposition.** For finite support $c$ the equation $\Theta_cL_c=\mathrm{id}$ is equivalent to
+**Proposition.** For finite support $c$ the equation $\mathrm{Sd}_cL_c=\mathrm{id}$ is equivalent to
 $$
 \sum_{m\ge1}|c(m)|^2=1 \quad\text{and}\quad \sum_{\substack{m\ge1:\ s\mid mk}}\overline{c(m)}\,c(mk/s)=0 \quad\text{for all } k\ge1 \text{ and } s\ne k.
 $$
 In particular a finite-support function always has finite-dimensional adjoint and the condition is a finite system of quadratic equations in the coefficients.
 
-**Proof.** Expand $\Theta_cL_cf(k)=\sum_{s\mid\cdot}f(s)\sum_{m:s\mid mk}\overline{c(m)}c(mk/s)$; for the coefficient of $f(k)$ the sum is $\sum_m|c(m)|^2$, and for $s\ne k$ it is the second sum. Setting all coefficients of nonidentity $f$ to zero gives the displayed system.
+**Proof.** Expand $\mathrm{Sd}_cL_cf(k)=\sum_{s\mid\cdot}f(s)\sum_{m:s\mid mk}\overline{c(m)}c(mk/s)$; for the coefficient of $f(k)$ the sum is $\sum_m|c(m)|^2$, and for $s\ne k$ it is the second sum. Setting all coefficients of nonidentity $f$ to zero gives the displayed system.
 
 ## Worked Examples
 
@@ -77,7 +77,7 @@ In particular a finite-support function always has finite-dimensional adjoint an
 
 **Example (the unit-generated sandwiches).** For $a=\delta_p$, $b=\varepsilon$: $c=\delta_p$, $S^\alpha_{\delta_p,\varepsilon}=\alpha D_p$, unitary by the corollary; it is the signed left multiplication of *The Signed Left Multiplication on the Algebra of Arithmetic Functions*.
 
-**Example (a nonunitary sandwich).** For $a=b=\mathbf 1$: $c=d$, the divisor function, and $S^\alpha_{\mathbf 1,\mathbf 1}=\alpha\,M_d$ with $M_d$ the convolution with $d$; it is neither self-adjoint nor unitary, because $\Theta_dL_d\ne\mathrm{id}$ and $\Theta_d\ne L_d$.
+**Example (a nonunitary sandwich).** For $a=b=\mathbf 1$: $c=d$, the divisor function, and $S^\alpha_{\mathbf 1,\mathbf 1}=\alpha\,M_d$ with $M_d$ the convolution with $d$; it is neither self-adjoint nor unitary, because $\mathrm{Sd}_dL_d\ne\mathrm{id}$ and $\mathrm{Sd}_d\ne L_d$.
 
 ## Failure of the Degenerate Cases
 
@@ -85,7 +85,7 @@ Three degeneracies are intrinsic to the commutative case. First, the sandwich de
 
 ## Summary
 
-For $a,b$ in the algebra of arithmetic functions the signed sandwich is $S^\alpha_{a,b}(f)=a*\alpha(f)*b$, with $\alpha(f)=\lambda f$ the grade involution; on the commutative algebra it factors as $S^\alpha_{a,b}=\alpha L_{a*b}=L_{a*b}\alpha$ and depends on $a,b$ only through $a*b$. With respect to the coefficient form of the category its adjoint is $(S^\alpha_{a,b})^*=\alpha\Theta_{a*b}$, where $\Theta_c$ is the transposed multiplication $(\Theta_cg)(k)=\sum_m\overline{c(m)}g(mk)$; the sandwich is self-adjoint exactly when $\Theta_c=L_c$, an isometry exactly when $\Theta_cL_c=\mathrm{id}$, and unitary exactly when $c=\gamma\varepsilon$ with $|\gamma|=1$; the balanced sandwiches with $a*b=\varepsilon$ give the grade involution, and the sandwiches with $c=\gamma\delta_p$, $|\gamma|=1$, are nonunitary isometries. The noncommutative adjoint formula $S^\alpha_{\delta(a),\delta(b)}$ fails over the commutative algebra, and no nondegenerate form restores it: the only form for which both the convolution-invariance and the self-adjointness of $\alpha$ hold is the rank-one augmentation form.
+For $a,b$ in the algebra of arithmetic functions the signed sandwich is $S^\alpha_{a,b}(f)=a*\alpha(f)*b$, with $\alpha(f)=\lambda f$ the grade involution; on the commutative algebra it factors as $S^\alpha_{a,b}=\alpha L_{a*b}=L_{a*b}\alpha$ and depends on $a,b$ only through $a*b$. With respect to the coefficient form of the category its adjoint is $(S^\alpha_{a,b})^*=\alpha\mathrm{Sd}_{a*b}$, where $\mathrm{Sd}_c$ is the transposed multiplication $(\mathrm{Sd}_cg)(k)=\sum_m\overline{c(m)}g(mk)$; the sandwich is self-adjoint exactly when $\mathrm{Sd}_c=L_c$, an isometry exactly when $\mathrm{Sd}_cL_c=\mathrm{id}$, and unitary exactly when $c=\gamma\varepsilon$ with $|\gamma|=1$; the balanced sandwiches with $a*b=\varepsilon$ give the grade involution, and the sandwiches with $c=\gamma\delta_p$, $|\gamma|=1$, are nonunitary isometries. The noncommutative adjoint formula $S^\alpha_{\delta(a),\delta(b)}$ fails over the commutative algebra, and no nondegenerate form restores it: the only form for which both the convolution-invariance and the self-adjointness of $\alpha$ hold is the rank-one augmentation form.
 
 ## Summary of Notation
 
@@ -94,10 +94,10 @@ For $a,b$ in the algebra of arithmetic functions the signed sandwich is $S^\alph
 | $\alpha(f)(n)=\lambda(n)f(n)$ | Grade involution |
 | $S^\alpha_{a,b}(f)=a*\alpha(f)*b$ | Signed sandwich |
 | $S^\alpha_{a,b}=\alpha L_{a*b}=L_{a*b}\alpha$ | Factorisation over a commutative algebra |
-| $(S^\alpha_{a,b})^*=\alpha\Theta_{a*b}$ | The signed adjoint |
-| $\Theta_cg(k)=\sum_m\overline{c(m)}g(mk)$ | Transposed multiplication |
-| $\Theta_c=L_c$ | Self-adjointness condition |
-| $\Theta_cL_c=\mathrm{id}$ | Unitarity condition |
+| $(S^\alpha_{a,b})^*=\alpha\mathrm{Sd}_{a*b}$ | The signed adjoint |
+| $\mathrm{Sd}_cg(k)=\sum_m\overline{c(m)}g(mk)$ | Transposed multiplication |
+| $\mathrm{Sd}_c=L_c$ | Self-adjointness condition |
+| $\mathrm{Sd}_cL_c=\mathrm{id}$ | Unitarity condition |
 | $S^\alpha_{u,u^{-1}}=\alpha$ | Balanced sandwich |
 | $\delta=\sigma\alpha$ | The composite involution |
 

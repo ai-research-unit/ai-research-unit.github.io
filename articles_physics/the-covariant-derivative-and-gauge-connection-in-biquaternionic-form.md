@@ -67,10 +67,10 @@ The following table collects the components and their meanings.
 | Gradient | $\tilde{\nabla}$ | The ordinary derivative of *Operator and Calculus Conventions* |
 | Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ | Compensating field |
 | Covariant derivative | $\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu \tilde\nabla^{\mathrm{gco}}_\mu$ | $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ |
-| Time component $\mu = t$ | $\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ\phi}{\hbar c}$ | $A_t = i\phi/c$ |
+| Time component $\mu = t$ | $\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ a'_t}{\hbar}$ | $A_t = i\,a'_t$ |
 | Space components $\mu = k$ | $\tilde\nabla^{\mathrm{gco}}_k = \partial/\partial x_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
 
-The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\phi/c$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ\phi}{\hbar c}$. The three spatial components keep their imaginary unit, because $A_k$ is real.
+The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\,a'_t$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ a'_t}{\hbar}$. The three spatial components keep their imaginary unit, because $A_k$ is real.
 
 ## The Covariant Derivative as a Derivation
 
@@ -195,7 +195,7 @@ $$
 d\vec x = \vec e_x\,dx + \vec e_y\,dy + \vec e_z\,dz ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\phi/c$ giving $-\phi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\,a'_t$ giving $-\phi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -390,7 +390,7 @@ The identity is the square of the chiral pair $\tilde\nabla^{\mathrm{gco}}\tilde
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k}$ | Square of the gradient; not scalar, and not $\Box$ |
 | $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$ | Laplacian in the three vector coordinates |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase (abelian) |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |

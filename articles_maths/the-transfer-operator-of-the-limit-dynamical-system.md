@@ -106,7 +106,7 @@ so $L_\varphi U_\varphi=d\,U_\varphi\ \cdot$ the identity of the fibres, the loc
 $$
 \boxed{\;C_n(f,g)=\int f\circ\varphi^n\,g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int g\,d\mu\Bigr)\;}
 $$
-decay exponentially, $|C_n(f,g)|\le C\theta^n$, and the central limit theorem holds for the Birkhoff sums.
+decay exponentially, $|C_n(f,g)|\le C\varrho^n$, and the central limit theorem holds for the Birkhoff sums.
 
 *Proof sketch.* The eigenvalue $1$ corresponds to the invariant functions; simplicity is the ergodicity and the simplicity on the two-sided natural extension is the mixing, both of *Ergodic Theory*. The decay is the spectral gap: the resolvent of $L_\varphi$ on the H\"older space is analytic on a disc containing the unit circle except at $1$, and the correlations are the Fourier coefficients of the resolvent; the central limit theorem follows from the same gap. The statements are those of *The Transfer Operator* and *Ergodic Theory*, applied to the limit system.
 
@@ -130,7 +130,7 @@ is the transpose of the **Koopman operator** $U_\varphi f=f\circ\varphi$ with re
 | $L_\varphi^*\mu=\varphi_*\mu$, $L_\varphi^*\mu=\mu$ | The dual action and the invariant measures |
 | $h=L_\varphi h$ | The invariant density |
 | $P(t)$, $P(-s\log\|\varphi'\|)=0$ | The pressure and the Bowen equation |
-| $C_n(f,g)\le C\theta^n$ | The decay of correlations |
+| $C_n(f,g)\le C\varrho^n$ | The decay of correlations |
 
 ## Further Reading
 

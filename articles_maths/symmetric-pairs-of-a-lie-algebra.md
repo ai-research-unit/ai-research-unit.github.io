@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **symmetric pair** is a pair $(\mathrm{G},\mathrm{K})$ consisting of a Lie algebra $\mathrm{G}$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\theta}$ of an involution $\theta$; equivalently it is a Lie algebra with a decomposition
+A **symmetric pair** is a pair $(\mathrm{G},\mathrm{K})$ consisting of a Lie algebra $\mathrm{G}$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\mathrm{J}}$ of an involution $\mathrm{J}$; equivalently it is a Lie algebra with a decomposition
 
 $$
 \mathrm{G}=\mathrm{K}\oplus\mathrm{P},\qquad
@@ -14,15 +14,15 @@ $$
 
 where $\mathrm{K}$ is the $+1$-eigenspace and $\mathrm{P}$ the $-1$-eigenspace of the involution. The quotient $\mathrm{G}/\mathrm{K}$, read through the identification with $\mathrm{P}$, is the **infinitesimal symmetric space** of the pair, and its structure is governed by the bracket $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, which plays the role of the curvature. This article, the eighth and last entry of the `- * Theory` group of the category, defines symmetric pairs, derives the decomposition and the curvature identity, describes the infinitesimal symmetric space, and states the **classification** of the symmetric pairs of a semisimple Lie algebra by the involutions up to conjugacy, equivalently by the real forms and the Satake and Vogan diagrams. The Cartan involution and the Cartan decomposition are *The Cartan Involution and the Cartan Decomposition*; the real forms are *Real Forms of a Complex Lie Algebra*; the graded structure is *Graded Lie Algebras with an Involution*; the group theory and the global symmetric spaces belong to later Parts and are named only.
 
-The base is a field $K$ of characteristic not two; the Lie algebra is $\mathrm{G}$ and the involution $\theta$; the article uses the eigenspace decomposition and the bracket only, and takes no topological or geometric reading.
+The base is a field $K$ of characteristic not two; the Lie algebra is $\mathrm{G}$ and the involution $\mathrm{J}$; the article uses the eigenspace decomposition and the bracket only, and takes no topological or geometric reading.
 
 ## Symmetric Pairs and the Decomposition
 
-**Definition.** A **symmetric pair** is a pair $(\mathrm{G},\mathrm{K})$ with $\mathrm{G}$ a Lie algebra and $\mathrm{K}$ the fixed subalgebra of an involution $\theta$ of $\mathrm{G}$; a **morphism** of symmetric pairs is a Lie homomorphism carrying one involution to the other, and an **isomorphism** is a bijective morphism.
+**Definition.** A **symmetric pair** is a pair $(\mathrm{G},\mathrm{K})$ with $\mathrm{G}$ a Lie algebra and $\mathrm{K}$ the fixed subalgebra of an involution $\mathrm{J}$ of $\mathrm{G}$; a **morphism** of symmetric pairs is a Lie homomorphism carrying one involution to the other, and an **isomorphism** is a bijective morphism.
 
 **Proposition.** A pair $(\mathrm{G},\mathrm{K})$ is symmetric if and only if there is a direct decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with the three bracket relations displayed above; the involution is then $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and it is unique for the decomposition.
 
-**Proof.** An involution gives the decomposition by its eigenspaces and the bracket relations by applying $\theta$ to the bracket; conversely a decomposition with the bracket relations defines the map which is $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and the bracket relations are exactly the statement that this map is an automorphism of order two.
+**Proof.** An involution gives the decomposition by its eigenspaces and the bracket relations by applying $\mathrm{J}$ to the bracket; conversely a decomposition with the bracket relations defines the map which is $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and the bracket relations are exactly the statement that this map is an automorphism of order two.
 
 **Corollary.** A symmetric pair is the same thing as a Lie algebra with an involution, that is a Lie algebra with a $\mathbb{Z}/2$-grading whose grade involution is an automorphism of the algebra; the pair is the graded object of *Graded Lie Algebras with an Involution* in the $\mathbb{Z}/2$ case.
 
@@ -76,15 +76,15 @@ For $\mathrm{G}=\mathrm{sl}(3,\mathbb{C})$ the three involutions correspond to $
 
 ## Summary
 
-A **symmetric pair** $(\mathrm{G},\mathrm{K})$ is a Lie algebra with an involution $\theta$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\theta}$, equivalently a decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$; it is the $\mathbb{Z}/2$-graded object whose grade involution is the symmetry. The bracket on $\mathrm{P}$ is the **curvature** $\mathrm{R}(x,y)=[x,y]\in\mathrm{K}$, antisymmetric and satisfying the Bianchi identity, and $(\mathrm{K},\mathrm{P},\mathrm{R})$ is the **infinitesimal symmetric space** with tangent module $\mathrm{P}$ and the involution acting as $-1$ on the tangent directions. Isomorphism classes of symmetric pairs are conjugacy classes of involutions, and over $\mathbb{C}$ they are classified by the Satake and Vogan diagrams, equivalently by the real forms, with the rank and the index read off the diagram; the compact and split real forms correspond to the all-black and all-white diagrams. For $\mathrm{sl}(2,\mathbb{C})$ there are two pairs and for $\mathrm{sl}(3,\mathbb{C})$ three, matching the real forms. The group-level symmetric spaces belong to Part II and are named only; the operator layer belongs to the `- * Operator Theory` group.
+A **symmetric pair** $(\mathrm{G},\mathrm{K})$ is a Lie algebra with an involution $\mathrm{J}$ and the fixed subalgebra $\mathrm{K}=\mathrm{G}^{\mathrm{J}}$, equivalently a decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$; it is the $\mathbb{Z}/2$-graded object whose grade involution is the symmetry. The bracket on $\mathrm{P}$ is the **curvature** $\mathrm{R}(x,y)=[x,y]\in\mathrm{K}$, antisymmetric and satisfying the Bianchi identity, and $(\mathrm{K},\mathrm{P},\mathrm{R})$ is the **infinitesimal symmetric space** with tangent module $\mathrm{P}$ and the involution acting as $-1$ on the tangent directions. Isomorphism classes of symmetric pairs are conjugacy classes of involutions, and over $\mathbb{C}$ they are classified by the Satake and Vogan diagrams, equivalently by the real forms, with the rank and the index read off the diagram; the compact and split real forms correspond to the all-black and all-white diagrams. For $\mathrm{sl}(2,\mathbb{C})$ there are two pairs and for $\mathrm{sl}(3,\mathbb{C})$ three, matching the real forms. The group-level symmetric spaces belong to Part II and are named only; the operator layer belongs to the `- * Operator Theory` group.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{G}$ | a Lie algebra with an involution |
-| $\theta$ | the involution |
-| $\mathrm{K}=\mathrm{G}^{\theta}$ | the fixed subalgebra |
+| $\mathrm{J}$ | the involution |
+| $\mathrm{K}=\mathrm{G}^{\mathrm{J}}$ | the fixed subalgebra |
 | $\mathrm{P}$ | the anti-fixed complement, the tangent module |
 | $\mathrm{R}(x,y)=[x,y]$ | the curvature |
 | $(\mathrm{K},\mathrm{P},\mathrm{R})$ | the infinitesimal symmetric space |

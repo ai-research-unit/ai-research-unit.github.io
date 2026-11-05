@@ -119,7 +119,7 @@ a_2 = \gamma\left(a - \frac{\vec v_b\cdot\vec A}{c}\right),
 \qquad
 \vec A_2 = \vec A + \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec A\right)\vec v_b - \gamma\frac{a}{c}\,\vec v_b .
 $$
-For the four-potential ($a = \phi/c$, $\vec A$ the vector potential) these are precisely the component formulas that the parent *The Lorentz Transformation as a Biquaternionic Rotation* verifies against the rotor conjugation. The same rotor acts on every element of $\mathbb{M}_-$ — the parent states this for the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current — so the component action holds for any four-vector, and in particular for the four-wavevector.
+For the four-potential ($a = a'_t = \phi/c$, $\vec A$ the vector potential) these are precisely the component formulas that the parent *The Lorentz Transformation as a Biquaternionic Rotation* verifies against the rotor conjugation. The same rotor acts on every element of $\mathbb{M}_-$ — the parent states this for the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current — so the component action holds for any four-vector, and in particular for the four-wavevector.
 
 The scalar component is easily checked directly. Because $\mathrm{Sc}$ is cyclic,
 $$

@@ -116,7 +116,7 @@ $$
 =\mathrm{Sc}(\tilde p^{\natural}_2\,d\tilde q_2)-\mathrm{Sc}(\tilde p^{\natural}_1\,d\tilde q_1).
 $$
 
-The quantity $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is the **symplectic potential** in biquaternion form, and the boundary term says that the on-shell action is a **generating function** of the canonical transformation between the initial and final phase-space points: $dS=\theta_2-\theta_1$. The exterior derivative of this potential is the symplectic form up to the standard sign convention of the symplectic potential — explicitly, $d\theta=d\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=d\vec p\wedge d\vec q=-\omega$ for the canonical form $\omega=\sum_k dq_k\wedge dp_k$ — and the symplectic form, with its conventions fixed, is the subject of the next article; here it is enough to record that the boundary term of the action variation already contains it.
+The quantity $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is the **symplectic potential** in biquaternion form, and the boundary term says that the on-shell action is a **generating function** of the canonical transformation between the initial and final phase-space points: $dS=\varpi_2-\varpi_1$. The exterior derivative of this potential is the symplectic form up to the standard sign convention of the symplectic potential — explicitly, $d\varpi=d\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=d\vec p\wedge d\vec q=-\omega$ for the canonical form $\omega=\sum_k dq_k\wedge dp_k$ — and the symplectic form, with its conventions fixed, is the subject of the next article; here it is enough to record that the boundary term of the action variation already contains it.
 
 ### The Phase-Space Action
 
@@ -352,7 +352,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations.
 - A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by **Herglotz's principle**, whose action solves $dS/dt'=\mathrm{Lag}$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.
 - The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=\langle\tilde p\rangle_{\natural}/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
-- Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
+- Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\varpi_2-\varpi_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{t'}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/d{t'}^2+\frac{d^2V}{d\tilde q^2}\,\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
 - The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dt'$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{t'}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t')=\tilde u(0)\exp(+\tfrac12\vec\omega_bt')$: the free rigid body's motion.
@@ -369,7 +369,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\omega_0$, $\gamma$ | Oscillator frequency and damping coefficient |
 | $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$ | Lagrangian density; string displacement, density and tension of the continuum example |
 | $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$ | Conjugate momentum |
-| $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ | Symplectic potential (boundary term) |
+| $\varpi=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ | Symplectic potential (boundary term) |
 | $S_{\mathrm{ps}}=\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ | Phase-space action |
 | $\delta^2S$ | Second variation |
 | $\mathcal{J}$ | Jacobi (fluctuation) operator |

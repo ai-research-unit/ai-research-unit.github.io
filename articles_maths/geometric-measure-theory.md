@@ -79,9 +79,9 @@ $$
 
 **Definition.** A set $E\subseteq\mathbb{R}^n$ is **countably $\mathcal{H}^m$-rectifiable** if there are Lipschitz maps $f_j:\mathbb{R}^m\to\mathbb{R}^n$ with $\mathcal{H}^m\bigl(E\setminus\bigcup_jf_j(\mathbb{R}^m)\bigr) = 0$; it is **$\mathcal{H}^m$-rectifiable** if in addition $\mathcal{H}^m(E)<\infty$. A **rectifiable set** is a countably rectifiable set, together with the convention that all the statements below hold up to a set of $\mathcal{H}^m$ measure zero.
 
-**Definition.** The $m$-dimensional **approximate tangent plane** of $E$ at $x$ is the subspace $T$ such that the blow-ups $(E-x)/r$ converge to $T$ in the sense of the weak* convergence of the measures $\mathcal{H}^m\llcorner E$: precisely, $\mathcal{H}^m\llcorner E$ scaled to the unit ball converges to $\mathcal{H}^m\llcorner T$ locally; the **density** is $\Theta^m(E,x) = \lim_{r\downarrow0}\mathcal{H}^m(E\cap B(x,r))/(\omega_mr^m)$ when the limit exists.
+**Definition.** The $m$-dimensional **approximate tangent plane** of $E$ at $x$ is the subspace $T$ such that the blow-ups $(E-x)/r$ converge to $T$ in the sense of the weak* convergence of the measures $\mathcal{H}^m\llcorner E$: precisely, $\mathcal{H}^m\llcorner E$ scaled to the unit ball converges to $\mathcal{H}^m\llcorner T$ locally; the **density** is $\mathcal{D}^m(E,x) = \lim_{r\downarrow0}\mathcal{H}^m(E\cap B(x,r))/(\omega_mr^m)$ when the limit exists.
 
-**Theorem.** A countably $\mathcal{H}^m$-rectifiable set has an approximate tangent $m$-plane at $\mathcal{H}^m$-almost every point of $E$, unique, and the density exists and equals $1$ at $\mathcal{H}^m$-almost every point; conversely, if $\mathcal{H}^m(E)<\infty$ and the density $\Theta^m(E,x)$ exists and is finite and positive at $\mathcal{H}^m$-almost every point, then $E$ is rectifiable, by the theorem of Preiss.
+**Theorem.** A countably $\mathcal{H}^m$-rectifiable set has an approximate tangent $m$-plane at $\mathcal{H}^m$-almost every point of $E$, unique, and the density exists and equals $1$ at $\mathcal{H}^m$-almost every point; conversely, if $\mathcal{H}^m(E)<\infty$ and the density $\mathcal{D}^m(E,x)$ exists and is finite and positive at $\mathcal{H}^m$-almost every point, then $E$ is rectifiable, by the theorem of Preiss.
 
 **Proof sketch.** For the forward direction one uses that a Lipschitz image has the tangent plane of the image of the differential wherever the differential has rank $m$, which holds almost everywhere by Rademacher, and that the multiplicity is countable almost everywhere by the area formula; the density statement is the behaviour of the $\mathcal{H}^m$ measure of a Lipschitz image near a point of full rank. The converse uses the growth bound of the measure obtained from the density and the projection theorem to produce a Lipschitz graph over a positive measure set of directions.
 
@@ -89,7 +89,7 @@ $$
 $$
 \lim_{r\downarrow0}\frac{1}{\mu(B(x,r))}\int_{B(x,r)}f\,d\mu = f(x)
 $$
-for $\mu$-almost every $x$ — the **Lebesgue–Besicovitch differentiation theorem**, obtained by replacing the Vitali covering theorem of the Euclidean theory by the **Besicovitch covering theorem**, which applies to arbitrary Radon measures. Moreover, if $E$ is countably $\mathcal{H}^m$-rectifiable then $\Theta^m(\mathcal{H}^m\llcorner E,x) = 1$ at $\mathcal{H}^m$-almost every point of $E$, so that $\mathcal{H}^m$-almost every point of $E$ is a Lebesgue point of $\mathcal{H}^m\llcorner E$.
+for $\mu$-almost every $x$ — the **Lebesgue–Besicovitch differentiation theorem**, obtained by replacing the Vitali covering theorem of the Euclidean theory by the **Besicovitch covering theorem**, which applies to arbitrary Radon measures. Moreover, if $E$ is countably $\mathcal{H}^m$-rectifiable then $\mathcal{D}^m(\mathcal{H}^m\llcorner E,x) = 1$ at $\mathcal{H}^m$-almost every point of $E$, so that $\mathcal{H}^m$-almost every point of $E$ is a Lebesgue point of $\mathcal{H}^m\llcorner E$.
 
 **Proof sketch.** The Besicovitch covering theorem gives a covering of a set by balls with a bounded number of families, each consisting of pairwise disjoint balls, which is what the proof of the differentiation theorem needs in place of the doubling hypothesis; the density statements follow from the differentiation theorem applied to the indicator of the set.
 
@@ -129,7 +129,7 @@ and the **boundary** is defined by Stokes' theorem, $(\partial T)(\omega) = T(d\
 
 **Definition.** The **first variation** of the mass at $T$ in the direction of a smooth vector field $X$ is $\delta\mathbf{M}(T)(X) = \frac{d}{dt}\bigl[\mathbf{M}((\chi_t)_\#T)\bigr]\big|_{t=0}$, where $\chi_t$ is the flow of $X$; a current is **stationary** if the first variation vanishes for every $X$, and a set of finite perimeter is **minimal** if it is stationary.
 
-**Theorem (the monotonicity formula; the tangent cone).** A stationary integral current satisfies the monotonicity of the density ratios $\mathbf{M}(T\cap B(x,r))/(\omega_mr^m)\ \uparrow$; hence the density $\Theta^m(T,x)$ exists at every point, and the blow-ups of a stationary current at a point have a limit that is a stationary cone — the **tangent cone** of $T$ at $x$. A stationary current that is a cone and is smooth away from the origin is a minimal cone, and the possible singular tangent cones are the subject of the regularity theory.
+**Theorem (the monotonicity formula; the tangent cone).** A stationary integral current satisfies the monotonicity of the density ratios $\mathbf{M}(T\cap B(x,r))/(\omega_mr^m)\ \uparrow$; hence the density $\mathcal{D}^m(T,x)$ exists at every point, and the blow-ups of a stationary current at a point have a limit that is a stationary cone — the **tangent cone** of $T$ at $x$. A stationary current that is a cone and is smooth away from the origin is a minimal cone, and the possible singular tangent cones are the subject of the regularity theory.
 
 **Proof sketch.** The first variation of the mass of a cone is computed explicitly and is nonnegative exactly when the cone is stationary; the monotonicity is the differential inequality obtained from the first variation formula for the radial vector field.
 
@@ -172,7 +172,7 @@ The Hausdorff $s$-measure of a set is the infimum over coverings by sets of diam
 | $\pi_V$ | Orthogonal projection onto the subspace $V$ |
 | $J_mf$ | $m$-Jacobian of the Lipschitz map $f$ |
 | $N(f,A,y)$ | Multiplicity of $f$ over $y$ on $A$ |
-| $\Theta^m(E,x)$ | $m$-dimensional density of $E$ at $x$ |
+| $\mathcal{D}^m(E,x)$ | $m$-dimensional density of $E$ at $x$ |
 | $\partial^*E$ | Reduced boundary of a set of finite perimeter |
 | $\mathcal{D}^m(\Omega)$ | Smooth $m$-forms with compact support |
 | $T$, $[M,\xi]$ | Current, rectifiable current |

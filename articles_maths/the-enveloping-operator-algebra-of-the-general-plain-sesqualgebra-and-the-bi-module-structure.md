@@ -154,13 +154,13 @@ so that $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the left action of $\m
 
 $$
 R_{\tilde Q_6}=\varphi\bigl(e_t\otimes(\tilde Q_6^{*})^{\mathrm{opp}}\bigr),\qquad
-\Theta_{\tilde Q_2}=\varphi\bigl(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}}\bigr),\qquad
+\mathrm{Sd}_{\tilde Q_2}=\varphi\bigl(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}}\bigr),\qquad
 L_{\tilde Q_6}=\varphi\bigl(\tilde Q_6\otimes e_t^{\mathrm{opp}}\bigr)\circ\eta ,
 $$
 
 where $\varphi(\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}})$ is the sandwich action of $\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}$.
 
-**Proof.** $\varphi(e_t\otimes(\tilde Q_6^{*})^{\mathrm{opp}})(\tilde Q_3)=e_t\tilde Q_3\tilde Q_6^{*}=\tilde Q_3\tilde Q_6^{*}=R_{\tilde Q_6}(\tilde Q_3)$, so the right multiplications are the envelope's right-sided elements with the conjugated parameter. The sandwich $\Theta_{\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}=\tilde Q_2\tilde Q_3\tilde Q_2^{*}$ is $\varphi(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}})$, the elementary tensor whose two parameters are conjugate. Finally $\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})(\tilde Q_3)=\tilde Q_6\tilde Q_3$, so $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\tilde Q_3^{*}=(\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})\circ\eta)(\tilde Q_3)$.
+**Proof.** $\varphi(e_t\otimes(\tilde Q_6^{*})^{\mathrm{opp}})(\tilde Q_3)=e_t\tilde Q_3\tilde Q_6^{*}=\tilde Q_3\tilde Q_6^{*}=R_{\tilde Q_6}(\tilde Q_3)$, so the right multiplications are the envelope's right-sided elements with the conjugated parameter. The sandwich $\mathrm{Sd}_{\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}=\tilde Q_2\tilde Q_3\tilde Q_2^{*}$ is $\varphi(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}})$, the elementary tensor whose two parameters are conjugate. Finally $\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})(\tilde Q_3)=\tilde Q_6\tilde Q_3$, so $L_{\tilde Q_6}(\tilde Q_3)=\tilde Q_6\tilde Q_3^{*}=(\varphi(\tilde Q_6\otimes e_t^{\mathrm{opp}})\circ\eta)(\tilde Q_3)$.
 
 **Remark (the pair generation).** The corollary explains the block's composition laws. The product of two right multiplications stays among the envelope's right-sided elements, $R_{\tilde Q_6}R_{\tilde Q_4}=\varphi(e_t\otimes(\tilde Q_4^{*}\tilde Q_6^{*})^{\mathrm{opp}})=R_{\tilde Q_6\tilde Q_4}$; the product of two left multiplications leaves the conjugate-linear operators and is the elementary tensor $L_{\tilde Q_6}L_{\tilde Q_4}=L_{\tilde Q_6}R_{\tilde Q_4^{*}}$, that is $\varphi(\tilde Q_6\otimes\tilde Q_4^{\mathrm{opp}})$ read with the conjugated parameter; and a mixed product is a left multiplication or a sandwich according to the order. So the even products of the block's own one-sided multiplications span the envelope, and a single one-sided multiplication never lies in it: a single one is not $\mathbb{C}$-linear, and the pairs are. In the notation of §*The Conjugate-Indexed Family and the Sandwich Monoid*, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$, $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$ and $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$.
 
@@ -249,9 +249,9 @@ and the twisted actions **do not commute**: $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\ti
 
 ### The Two-Sided Operators and the Diagonal
 
-**Corollary.** The two-sided operators of the block are the diagonal of the sandwich family, $\Theta_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}=\varphi(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}})$, that is the subfamily in which the two parameters are conjugate.
+**Corollary.** The two-sided operators of the block are the diagonal of the sandwich family, $\mathrm{Sd}_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}=\varphi(\tilde Q_2\otimes(\tilde Q_2^{*})^{\mathrm{opp}})$, that is the subfamily in which the two parameters are conjugate.
 
-**Proof.** $\Theta_{\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3\tilde Q_2^{*}=W_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)$.
+**Proof.** $\mathrm{Sd}_{\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3\tilde Q_2^{*}=W_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)$.
 
 ### The Left-versus-Right Question
 
@@ -270,7 +270,7 @@ The claims of the article were recomputed on the model $\mathsf{M}_2$ at no more
 - **The span.** The complex span of the sixteen operators $L_{e_\mu}R_{e_\nu}$ over the basis is all of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and the real span of the sandwich operators over the real basis is thirty-two.
 - **The properness of the image.** The operator $D(\tilde Q_3)=E_{11}\tilde Q_3E_{11}+E_{22}\tilde Q_3E_{22}$ has coefficient matrix $\operatorname{diag}(1,0,0,1)$ of rank two in the tensor basis $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$, so it is not an elementary tensor; and the equations of the proof were checked on the matrix units, where $PE_{11}Q=E_{11}$ forces the first column of $P$ and the first row of $Q$ nonzero, $PE_{12}Q=0$ then forces the second row of $Q$ to vanish, and $PE_{22}Q=E_{22}$ forces it not to.
 - **The envelope axioms.** The sandwich action is a left action (residual zero on a hundred triples), the unit acts as the identity, the map $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, and the identity operator is $L_{e_t}R_{e_t}$.
-- **The block's operators in the envelope.** The identities $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$, $\Theta_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$, $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$ and the witness $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_z$, $R_{\vec e_y}L_{\vec e_x}(e_t)=-\vec e_z$ were each verified with residual zero.
+- **The block's operators in the envelope.** The identities $R_{\tilde Q_6}=W_{e_t,\tilde Q_6}$, $\mathrm{Sd}_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$, $L_{\tilde Q_6}=W_{\tilde Q_6,e_t}\circ\eta$, $L_{\tilde Q_6}L_{\tilde Q_4}=W_{\tilde Q_6,\tilde Q_4}$ and the witness $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_z$, $R_{\vec e_y}L_{\vec e_x}(e_t)=-\vec e_z$ were each verified with residual zero.
 
 ## Summary
 
@@ -290,7 +290,7 @@ The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}
 | $L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$ | the ordinary two-sided multiplication, $\mathbb{C}$-linear |
 | $\mathcal{T}_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*}$ | the sandwich, $\mathbb{C}$-conjugate-linear |
 | $W_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2^{*}}$ | the conjugate-indexed family, the block's own sandwich |
-| $\Theta_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$ | the two-sided operator $\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}$, the diagonal |
+| $\mathrm{Sd}_{\tilde Q_2}=W_{\tilde Q_2,\tilde Q_2}$ | the two-sided operator $\tilde Q_2\tilde Q_3\tilde Q_2^{\dagger}$, the diagonal |
 | $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ | the enveloping algebra of the block, with the sandwich action |
 | $\overline{\mathbb{B}}$ | the conjugate algebra, $\overline{\mathbb{B}}\cong\mathbb{B}^{\mathrm{opp}}$ by $\tilde Q_2\mapsto\tilde Q_2^{*}$ |
 | $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | the four idempotents of the envelope's Peirce family |
@@ -301,7 +301,7 @@ The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}
 - [The Left and Right Multiplications of the Biquaternion Sesqualgebra](the-left-and-right-multiplications-of-the-biquaternion-sesqualgebra.html) — the parities, the composition laws and the four families.
 - [The Sesquilinear Sandwich on the Biquaternion](the-sesquilinear-sandwich-on-the-biquaternion.html) — the sandwich $\mathcal{T}_{\tilde Q_1,\tilde Q_2}$ and its composition table.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html) — the block's one-sided operators and the double centraliser.
-- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html) — the sandwich $\Theta_{\tilde Q_2}$ and its square law.
+- [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html) — the sandwich $\mathrm{Sd}_{\tilde Q_2}$ and its square law.
 - [The Left and Right Multiplication Operators of a Sesqualgebra](the-left-and-right-multiplication-operators-of-a-sesqualgebra.html) — the general operator theory of a sesqualgebra.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) — the twin, with the algebra's envelope, its Peirce decomposition and the bi-module.
 - [Ideals and Peirce Decomposition of the General Plain Sesqualgebra](ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html) — the four Peirce lines of the block that the envelope cuts out.

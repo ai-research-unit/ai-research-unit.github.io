@@ -367,7 +367,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
-| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Abelian connection (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{M}_-$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Abelian gauge transformation |
 | $D = \tilde{\nabla} + \tfrac{iϙ}{\hbar}\tilde{A}$ | Abelian covariant derivative |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{M}_-$ |

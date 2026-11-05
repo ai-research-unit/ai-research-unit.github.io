@@ -87,7 +87,7 @@ $$
 L_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta}{2}\,L_{\vec u_{\mathrm r}}\Bigr)
 \ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{i\theta/2}\alpha,\ e^{-i\theta/2}\beta),
 \qquad
-\Theta_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta}{2}\,\mathrm{ad}_{\vec u_{\mathrm r}}\Bigr)
+\mathrm{Sd}_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta}{2}\,\mathrm{ad}_{\vec u_{\mathrm r}}\Bigr)
 \ \Longrightarrow\ \vec v\longmapsto R_{\vec u_{\mathrm r}}(\theta)\vec v
 \; }.
 $$
@@ -97,7 +97,7 @@ $$
 L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\psi}{2}\,L_{\vec u_{\mathrm b}}\Bigr)
 \ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{-\psi/2}\alpha,\ e^{\psi/2}\beta),
 \qquad
-\Theta_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\psi
+\mathrm{Sd}_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\psi
 \; }.
 $$
 A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* of *The Sandwich of an N-Regular, Spectrally Regular Biquaternion* and §*The Pure Factors and the Full Spin* of *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.

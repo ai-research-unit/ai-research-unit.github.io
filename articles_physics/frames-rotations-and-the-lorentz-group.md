@@ -218,7 +218,7 @@ For a real unit vector $v\in\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, so that $
 $$
 \boxed{\;\rho_v(\tilde Q_3)=v\,\tilde Q_3\,v^{*}\;}.
 $$
-The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\Theta_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\mathrm{Sd}_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$
 v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
 $$

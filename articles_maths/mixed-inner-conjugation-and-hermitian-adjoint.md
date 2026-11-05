@@ -13,33 +13,33 @@ The Clifford algebra and its two-sided operators are *Two-Sided Operators on a C
 
 ### The Four Operators
 
-**Definition.** Let $\theta$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,\mathfrak{Q})$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be a unit. The **two-sided operator** with left twist $\theta$ and right factor $\rho$ is
+**Definition.** Let $\mathrm{J}$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,\mathfrak{Q})$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be a unit. The **two-sided operator** with left twist $\mathrm{J}$ and right factor $\rho$ is
 
 $$
-\Phi^{\theta,\rho}_{x}(y) = \theta(x)\,y\,\rho(x) .
+\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)\,y\,\rho(x) .
 $$
 
 The four members of the family are the **inner conjugation** $\Phi^{\mathrm{id},\mathrm{inv}}_{x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi^{\alpha,\mathrm{inv}}_{x}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_{x}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian sandwich** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint. The last two are the **bilinear sandwich** and its signed version in the vocabulary of the biquaternion layer. The superscript $\dagger$ on $\Phi$ marks the slot that carries the adjoint; it is not part of the operator's name.
 
-**Proposition (multiplicativity in $x$).** For each fixed pair $(\theta,\rho)$ the assignment $x\mapsto\Phi^{\theta,\rho}_{x}$ is multiplicative on the group of units:
+**Proposition (multiplicativity in $x$).** For each fixed pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the group of units:
 
 $$
-\Phi^{\theta,\rho}_{xy} = \Phi^{\theta,\rho}_{x}\circ\Phi^{\theta,\rho}_{y} ,
+\Phi^{\mathrm{J},\rho}_{xy} = \Phi^{\mathrm{J},\rho}_{x}\circ\Phi^{\mathrm{J},\rho}_{y} ,
 $$
 
-because $\theta$ is a homomorphism and $\rho(xy) = \rho(y)\rho(x)$ for both $\rho$. This was checked for all four pairs on the units of $\mathrm{Cl}_{0,3}(\mathbb{R})$.
+because $\mathrm{J}$ is a homomorphism and $\rho(xy) = \rho(y)\rho(x)$ for both $\rho$. This was checked for all four pairs on the units of $\mathrm{Cl}_{0,3}(\mathbb{R})$.
 
 ### The Horizontal Defect
 
-**Theorem (dagger versus inverse).** For a unit $x$ and both twists $\theta$,
+**Theorem (dagger versus inverse).** For a unit $x$ and both twists $\mathrm{J}$,
 
 $$
-\Phi^{\theta,\dagger}_{x}\circ\bigl(\Phi^{\theta,\mathrm{inv}}_{x}\bigr)^{-1} = R_{xx^{\dagger}} ,
+\Phi^{\mathrm{J},\dagger}_{x}\circ\bigl(\Phi^{\mathrm{J},\mathrm{inv}}_{x}\bigr)^{-1} = R_{xx^{\dagger}} ,
 $$
 
-the **right multiplication** by the element $x\,x^{\dagger}$; equivalently $\Phi^{\theta,\dagger}_{x} = R_{xx^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}_{x}$.
+the **right multiplication** by the element $x\,x^{\dagger}$; equivalently $\Phi^{\mathrm{J},\dagger}_{x} = R_{xx^{\dagger}}\circ\Phi^{\mathrm{J},\mathrm{inv}}_{x}$.
 
-**Proof.** $(\Phi^{\theta,\mathrm{inv}}_{x})^{-1}(w) = \theta(x)^{-1}w\,x$, and applying $\Phi^{\theta,\dagger}_{x}$ gives $\theta(x)\theta(x)^{-1}w\,x\,x^{\dagger} = w\,xx^{\dagger}$.
+**Proof.** $(\Phi^{\mathrm{J},\mathrm{inv}}_{x})^{-1}(w) = \mathrm{J}(x)^{-1}w\,x$, and applying $\Phi^{\mathrm{J},\dagger}_{x}$ gives $\mathrm{J}(x)\mathrm{J}(x)^{-1}w\,x\,x^{\dagger} = w\,xx^{\dagger}$.
 
 **Corollary.** The two right factors $\mathrm{inv}$ and $\dagger$ give the same operator exactly when $xx^{\dagger}$ acts trivially on the algebra, that is exactly when $x$ lies in the unitary slice $U$ of *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*: on $U$ the two right multiplications by $x^{-1}$ and by $x^{\dagger}$ coincide, and only there. For the dagger of a Hermitian Clifford module the element $xx^{\dagger}$ is the **defect** of the right factor, and it is the identity precisely on the slice.
 
@@ -84,7 +84,7 @@ and in every case $\Phi^{\mathrm{id},\rho}_{x}$ is the **inner conjugation** $\m
 **Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the bilinear sandwich is the bilinear sandwich of $x^{\dagger}$,
 
 $$
-\boxed{\;\bigl(\Phi^{\theta,\dagger}_{x}\bigr)^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}} \qquad (\theta = \mathrm{id},\alpha)\;},
+\boxed{\;\bigl(\Phi^{\mathrm{J},\dagger}_{x}\bigr)^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}} \qquad (\mathrm{J} = \mathrm{id},\alpha)\;},
 $$
 
 which was checked for both twists.
@@ -94,18 +94,18 @@ which was checked for both twists.
 **Theorem (isometry).** The bilinear sandwich is an isometry of the module form for every $x$ in the unitary slice,
 
 $$
-\boxed{\;x\in U \ \Longrightarrow \ \bigl(\Phi^{\theta,\dagger}_{x}(y),\Phi^{\theta,\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z\;} ,
+\boxed{\;x\in U \ \Longrightarrow \ \bigl(\Phi^{\mathrm{J},\dagger}_{x}(y),\Phi^{\mathrm{J},\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z\;} ,
 $$
 
 and an isometry can occur only when the two positive insertions multiply to the identity,
 
 $$
-\Phi^{\theta,\dagger}_{x}\ \text{an isometry} \iff \theta(x^{\dagger}x)\cdot x^{\dagger}x = 1 ,
+\Phi^{\mathrm{J},\dagger}_{x}\ \text{an isometry} \iff \mathrm{J}(x^{\dagger}x)\cdot x^{\dagger}x = 1 ,
 $$
 
 which for the unsigned twist is exactly $x^{\dagger}x = 1$, that is $x\in U$. In the tested definite algebras the signed condition coincided with the slice as well: over five hundred tests per twist, with $x\in U$ every test was an isometry, with $x = \lambda u$, $|\lambda|\neq1$, none was, and no third case occurred.
 
-**Proof.** $\bigl(\Phi^{\theta,\dagger}_{x}(y),\Phi^{\theta,\dagger}_{x}(z)\bigr) = \mathrm{Sc}\bigl(x\,y^{\dagger}\,\theta(x)^{\dagger}\theta(x)\,z\,x^{\dagger}\bigr) = \mathrm{Sc}\bigl(y^{\dagger}\,\theta(x^{\dagger}x)\,(x^{\dagger}x)\,z\bigr)$ by cyclicity of the scalar part. Since the trace form is non-degenerate, equality with $\mathrm{Sc}(y^{\dagger}z)$ for all $y,z$ is equivalent to $\theta(x^{\dagger}x)\,(x^{\dagger}x)\,z = z$ for all $z$, that is to $\theta(x^{\dagger}x)\,x^{\dagger}x = 1$; for $x\in U$ both insertions are $1$, and for the unsigned twist the condition is $x^{\dagger}x = 1$ because $x^{\dagger}x$ is positive.
+**Proof.** $\bigl(\Phi^{\mathrm{J},\dagger}_{x}(y),\Phi^{\mathrm{J},\dagger}_{x}(z)\bigr) = \mathrm{Sc}\bigl(x\,y^{\dagger}\,\mathrm{J}(x)^{\dagger}\mathrm{J}(x)\,z\,x^{\dagger}\bigr) = \mathrm{Sc}\bigl(y^{\dagger}\,\mathrm{J}(x^{\dagger}x)\,(x^{\dagger}x)\,z\bigr)$ by cyclicity of the scalar part. Since the trace form is non-degenerate, equality with $\mathrm{Sc}(y^{\dagger}z)$ for all $y,z$ is equivalent to $\mathrm{J}(x^{\dagger}x)\,(x^{\dagger}x)\,z = z$ for all $z$, that is to $\mathrm{J}(x^{\dagger}x)\,x^{\dagger}x = 1$; for $x\in U$ both insertions are $1$, and for the unsigned twist the condition is $x^{\dagger}x = 1$ because $x^{\dagger}x$ is positive.
 
 ### Algebra Homomorphisms
 
@@ -125,7 +125,7 @@ and on the slice it is the inner conjugation $\mathrm{Ad}_x$, an automorphism; t
 
 ### The Definite Algebra $\mathrm{Cl}_{0,3}(\mathbb{R})$
 
-With the dagger positive, the slice $U$ contains every unit vector and every bivector exponential $\exp(\theta e_ie_j)$. For a unit vector $v$ (odd), the family is $\Phi^{\mathrm{id},\rho}_{v} = \mathrm{Ad}_v$ and $\Phi^{\alpha,\rho}_{v} = -\mathrm{Ad}_v$, the reflection in the hyperplane orthogonal to $v$ up to the sign; for a bivector exponential $u = \exp(\theta e_1e_2)$ (even), the family is $\Phi^{\mathrm{id},\rho}_{u} = \Phi^{\alpha,\rho}_{u} = \mathrm{Ad}_u$, the rotation. The horizontal defect $xx^{\dagger}$ is $1$ on $U$ and equals $|\lambda|^{2}$ for $x = \lambda u$; the vertical defect $\alpha(x)x^{-1}$ is $+1$ on the even part and $-1$ on the odd part. So the two defects together record the two ways an element of the algebra can fail to be a slice element of definite parity.
+With the dagger positive, the slice $U$ contains every unit vector and every bivector exponential $\exp(\mathrm{J} e_ie_j)$. For a unit vector $v$ (odd), the family is $\Phi^{\mathrm{id},\rho}_{v} = \mathrm{Ad}_v$ and $\Phi^{\alpha,\rho}_{v} = -\mathrm{Ad}_v$, the reflection in the hyperplane orthogonal to $v$ up to the sign; for a bivector exponential $u = \exp(\mathrm{J} e_1e_2)$ (even), the family is $\Phi^{\mathrm{id},\rho}_{u} = \Phi^{\alpha,\rho}_{u} = \mathrm{Ad}_u$, the rotation. The horizontal defect $xx^{\dagger}$ is $1$ on $U$ and equals $|\lambda|^{2}$ for $x = \lambda u$; the vertical defect $\alpha(x)x^{-1}$ is $+1$ on the even part and $-1$ on the odd part. So the two defects together record the two ways an element of the algebra can fail to be a slice element of definite parity.
 
 ### The Biquaternion Algebra
 
@@ -133,23 +133,23 @@ In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is 
 
 ## Summary
 
-The family $\Phi^{\theta,\rho}_{x}(y) = \theta(x)y\rho(x)$, with $\theta\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian sandwich** and the **signed Hermitian sandwich**, and for each pair $(\theta,\rho)$ the assignment $x\mapsto\Phi^{\theta,\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\theta,\dagger}_{x}\circ(\Phi^{\theta,\mathrm{inv}}_{x})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi^{\mathrm{id},\rho}_{x}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
+The family $\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)y\rho(x)$, with $\mathrm{J}\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian sandwich** and the **signed Hermitian sandwich**, and for each pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi^{\mathrm{J},\mathrm{inv}}_{x})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi^{\mathrm{id},\rho}_{x}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
 
-Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear sandwich has adjoint $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\theta(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
+Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear sandwich has adjoint $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\mathrm{J}(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Phi^{\theta,\rho}_{x}(y)=\theta(x)y\rho(x)$ | Two-sided operator, $\theta\in\{\mathrm{id},\alpha\}$, $\rho\in\{\mathrm{inv},\dagger\}$ |
+| $\Phi^{\mathrm{J},\rho}_{x}(y)=\mathrm{J}(x)y\rho(x)$ | Two-sided operator, $\mathrm{J}\in\{\mathrm{id},\alpha\}$, $\rho\in\{\mathrm{inv},\dagger\}$ |
 | $\Phi^{\mathrm{id},\mathrm{inv}}_{x} = \mathrm{Ad}_x$ | Inner conjugation |
 | $\Phi^{\alpha,\mathrm{inv}}_{x}$ | Signed inner conjugation |
 | $\Phi^{\mathrm{id},\dagger}_{x}$, $\Phi^{\alpha,\dagger}_{x}$ | Hermitian sandwich, signed Hermitian sandwich |
-| $\Phi^{\theta,\dagger}_{x}\circ(\Phi^{\theta,\mathrm{inv}}_{x})^{-1} = R_{xx^{\dagger}}$ | Horizontal defect |
+| $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi^{\mathrm{J},\mathrm{inv}}_{x})^{-1} = R_{xx^{\dagger}}$ | Horizontal defect |
 | $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi^{\mathrm{id},\rho}_{x}$ | Vertical defect |
 | $\alpha(x)x^{-1} = (-1)^{|x|}$ | Vertical defect for homogeneous $x$ |
 | $x\in U$: family collapses onto $\mathrm{Ad}_x$ | Slice agreement |
-| $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$ | Adjoint of the bilinear sandwich |
+| $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$ | Adjoint of the bilinear sandwich |
 
 ## Further Reading
 

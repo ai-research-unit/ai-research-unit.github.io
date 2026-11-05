@@ -105,21 +105,21 @@ $$
 
 **Remark.** So the slice $U$ acts on the one-sided operators by $*$-automorphisms, and this action extends to the whole operator algebra; on the image of $\rho$ it is the adjoint action inside the algebra, and on the module it is the unitary action of the slice. This is the operator-algebraic form of the statement that the slice acts by operators and not by isometries of the quadratic space.
 
-**Theorem (the adjoint of a two-sided operator is the operator at the dagger).** The standard maps $\mathrm{id}$, $\alpha$, $r$, $\bar\cdot$ and ${}^{\dagger}$ commute pairwise and each commutes with the dagger, so for the two-sided operator $\Phi^{\theta,c}_x = L_{\theta(x)}R_{c(x)}$ with $\theta$ and $c$ among them one has
+**Theorem (the adjoint of a two-sided operator is the operator at the dagger).** The standard maps $\mathrm{id}$, $\alpha$, $r$, $\bar\cdot$ and ${}^{\dagger}$ commute pairwise and each commutes with the dagger, so for the two-sided operator $\Phi^{\mathrm{J},c}_x = L_{\mathrm{J}(x)}R_{c(x)}$ with $\mathrm{J}$ and $c$ among them one has
 
 $$
-\boxed{\;\bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}}\;} .
+\boxed{\;\bigl(\Phi^{\mathrm{J},c}_x\bigr)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}\;} .
 $$
 
 In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x^{\dagger}}$ has adjoint $\Phi^{\mathrm{id},\dagger}_{x^{\dagger}} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi^{\mathrm{id},\dagger}_x)^{*}\Phi^{\mathrm{id},\dagger}_x = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* uses.
 
-**Proof.** $(\Phi^{\theta,c}_x)^{*} = (L_{\theta(x)}R_{c(x)})^{*} = R_{c(x)}^{*}L_{\theta(x)}^{*} = R_{c(x)^{\dagger}}L_{\theta(x)^{\dagger}} = L_{\theta(x)^{\dagger}}R_{c(x)^{\dagger}}$; and because each of the maps commutes with the dagger, $\theta(x)^{\dagger} = \theta(x^{\dagger})$ and $c(x)^{\dagger} = c(x^{\dagger})$, giving $\Phi^{\theta,c}_{x^{\dagger}}$.
+**Proof.** $(\Phi^{\mathrm{J},c}_x)^{*} = (L_{\mathrm{J}(x)}R_{c(x)})^{*} = R_{c(x)}^{*}L_{\mathrm{J}(x)}^{*} = R_{c(x)^{\dagger}}L_{\mathrm{J}(x)^{\dagger}} = L_{\mathrm{J}(x)^{\dagger}}R_{c(x)^{\dagger}}$; and because each of the maps commutes with the dagger, $\mathrm{J}(x)^{\dagger} = \mathrm{J}(x^{\dagger})$ and $c(x)^{\dagger} = c(x^{\dagger})$, giving $\Phi^{\mathrm{J},c}_{x^{\dagger}}$.
 
 ## Summary
 
 The **adjoint of the one-sided action** is the one-sided action of the dagger: for the action $\rho$ of a Clifford algebra on a Hermitian Clifford module, $\rho(x)^{*} = \rho(x^{\dagger})$, so $\rho$ is a $*$-homomorphism of the daggered algebra into the $*$-algebra of operators on the module. On the regular module this is the identity $L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$ of the one-sided operators; for the vectors it is the **skew-adjointness** $\rho(v)^{*} = -\rho(v)$, since the dagger negates the vectors; and for an element it gives the criteria: self-adjoint, skew-adjoint, normal or unitary exactly as the element is self-adjoint, skew-adjoint, normal or in the **unitary slice** $U$.
 
-The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial/\partial x_j$ with skew coefficients and skew derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\theta,c}_x)^{*} = \Phi^{\theta,c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian sandwich is unitary.
+The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on the operator algebra. For a composite operator it gives $(\sum_i\rho(a_i)T_i)^{*} = \sum_i T_i^{*}\rho(a_i^{\dagger})$, and applying it to the flat Dirac-type operator $D = \sum_j\rho(e_j)\partial/\partial x_j$ with skew coefficients and skew derivatives produces $D^{*} = D$: the two sign flips cancel and the operator is **formally self-adjoint**, which is the algebraic core of the analysis of *Dirac Differential Operators*, the failure of the corpus's Cauchy–Riemann operator being exactly its one self-adjoint scalar coefficient. Finally the **unitary slice acts by inner $*$-automorphisms** $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ preserving the adjoint, and a **two-sided operator** has its adjoint at the dagger, $(\Phi^{\mathrm{J},c}_x)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}$, because the standard involutions commute pairwise; on the slice the Hermitian sandwich is unitary.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ The adjoint is an involutive, $\sigma$-antilinear, anti-multiplicative map on th
 | $\bigl(\sum_i\rho(a_i)T_i\bigr)^{*} = \sum_iT_i^{*}\rho(a_i^{\dagger})$ | Adjoint of a composite operator |
 | $D = \sum_j\rho(e_j)\partial/\partial x_j$, $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$ | Flat Dirac-type operator, formally self-adjoint |
 | $\mathrm{Ad}_u(T) = \rho(u)T\rho(u)^{-1}$ | Inner $*$-automorphism by the slice |
-| $\bigl(\Phi^{\theta,c}_x\bigr)^{*} = \Phi^{\theta,c}_{x^{\dagger}}$ | Adjoint of a two-sided operator |
+| $\bigl(\Phi^{\mathrm{J},c}_x\bigr)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}$ | Adjoint of a two-sided operator |
 
 ## Further Reading
 

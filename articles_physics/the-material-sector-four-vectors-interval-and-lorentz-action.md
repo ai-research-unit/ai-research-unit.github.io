@@ -161,7 +161,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
-| four-potential | $\tilde A=i\frac{\varphi}{c}\,e_t+\vec A$ | $(\varphi/c,\vec A)$ | gauge-dependent |
+| four-potential | $\tilde A=i\,a'_t\,e_t+\vec A$ | $(a'_t,\vec A)$ | gauge-dependent |
 | four-current | $\tilde J=i c\rho\,e_t+\vec j$ | $(c\rho,\vec j)$ | not fixed |
 | four-force | $\tilde K_{\mathrm f}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f$ | $(\gamma\vec f\cdot\vec v/c,\gamma\vec f)$ | not fixed |
 

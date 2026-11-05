@@ -14,10 +14,10 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 ### Minimal coupling and the step
 
-A static electrostatic potential $\phi(x)$ is the time component of the four-potential, $\tilde{A} = \frac{i\phi}{c}e_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
+A static electrostatic potential $\phi(x)$ is the time component of the four-potential, $\tilde{A} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
-D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A} = \tilde\nabla + \frac{iϙ}{\hbar}\cdot\frac{i\phi}{c}e_t = \tilde\nabla - \frac{ϙ\phi}{\hbar c}e_t .
+D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A} = \tilde\nabla + \frac{iϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla - \frac{ϙ a'_t}{\hbar}e_t .
 $$
 
 The added term is a **central scalar multiple of $e_t$**. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.
@@ -25,7 +25,7 @@ The added term is a **central scalar multiple of $e_t$**. This is the algebraic 
 A **step** is the potential
 
 $$
-ϙ\phi(x) = V_0\,\theta(x),
+ϙ\phi(x) = V_0\,\mathrm{H}^{\mathrm{hvs}}(x),
 $$
 
 constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a barrier that repels the electron. On each half-line the covariant derivative is a constant-shift of the gradient, so the equation has plane-wave solutions there and the problem reduces to matching across $x = 0$.
@@ -40,7 +40,7 @@ i\hbar c\,\frac{d\psi_2}{dx} = \left[E - mc^2 - V(x)\right]\psi_1,
 i\hbar c\,\frac{d\psi_1}{dx} = \left[E + mc^2 - V(x)\right]\psi_2 ,
 $$
 
-in which $E$ is the total energy, $V(x) = V_0\theta(x)$ the potential energy, and the pair $(\psi_1, \psi_2)$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
+in which $E$ is the total energy, $V(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\psi_1, \psi_2)$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
 
 ## The Matching Problem
 
@@ -172,7 +172,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 ## Summary
 
-The Klein step is the Dirac equation with a central potential $ϙ\phi(x) = V_0\theta(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
+The Klein step is the Dirac equation with a central potential $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.
 
 The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P\tilde P^{\natural} = -m^2c^2$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.
 
@@ -184,8 +184,8 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient |
 | $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (minimal coupling) |
-| $\tilde{A} = \frac{i\phi}{c}e_t$ | Electrostatic potential biquaternion |
-| $V_0$, $ϙ\phi(x) = V_0\theta(x)$ | Step height and potential energy |
+| $\tilde{A} = i\,a'_te_t$ | Electrostatic potential biquaternion |
+| $V_0$, $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ | Step height and potential energy |
 | $E$, $k$, $k_2$ | Energy, incident momentum, transmitted momentum |
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |

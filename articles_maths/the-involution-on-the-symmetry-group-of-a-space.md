@@ -21,7 +21,7 @@ The article has five sections: the involution on the symmetry group; the induced
 
 ### Examples of Involutions
 
-**Example (the Cartan involution).** For the unitary group $\mathrm{U}(n,m)$ the involution $\theta(g) = JgJ^{-1}$ has fixed subgroup $K = \mathrm{U}(n)\times \mathrm{U}(m)$ and is central when $J$ is central for the pair; it is the Cartan involution, *Unitary Groups and Their Involution*, and its analogue for the orthogonal group is *The Orthogonal Group and the Involutive Automorphism*, the previous article.
+**Example (the Cartan involution).** For the unitary group $\mathrm{U}(n,m)$ the involution $\mathrm{J}(g) = JgJ^{-1}$ has fixed subgroup $K = \mathrm{U}(n)\times \mathrm{U}(m)$ and is central when $J$ is central for the pair; it is the Cartan involution, *Unitary Groups and Their Involution*, and its analogue for the orthogonal group is *The Orthogonal Group and the Involutive Automorphism*, the previous article.
 
 **Example (the conjugation of a real structure).** For the complex general linear group with the conjugating involution $\sigma(g) = \overline{g}$ of the matrix entries, the fixed subgroup is $GL_n(\mathbb{R})$, the **real points**; the general theory of the fixed subgroup here is Part I, and the geometric reading is the real forms of *Real Forms of a Complex Lie Group and the Cartan Involution*.
 
@@ -79,9 +79,9 @@ the set of points fixed by $\sigma_X$.
 
 ## The Fixed Subgroup and the Coset Space
 
-**Proposition.** The fixed subgroup $G^{\sigma}$ acts on the fixed set $X^{\sigma}$, and the action makes each connected component of $X^{\sigma}$ a homogeneous space for the identity component of $G^{\sigma}$. When $X = G/K$ is a symmetric space and $\sigma$ is its Cartan involution, $G^{\sigma} = K$ and the induced map is the **geodesic symmetry** at the base point, $s_o(gK) = \theta(g)K$; conversely every symmetric space arises this way from its Cartan involution, so the symmetric spaces of a symmetry group are exactly the coset spaces of its involutions.
+**Proposition.** The fixed subgroup $G^{\sigma}$ acts on the fixed set $X^{\sigma}$, and the action makes each connected component of $X^{\sigma}$ a homogeneous space for the identity component of $G^{\sigma}$. When $X = G/K$ is a symmetric space and $\sigma$ is its Cartan involution, $G^{\sigma} = K$ and the induced map is the **geodesic symmetry** at the base point, $s_o(gK) = \mathrm{J}(g)K$; conversely every symmetric space arises this way from its Cartan involution, so the symmetric spaces of a symmetry group are exactly the coset spaces of its involutions.
 
-**Proof.** The fixed subgroup preserves the fixed set because $\sigma_X(g\cdot x) = \sigma(g)\cdot\sigma_X(x) = g\cdot x$ for $g \in G^{\sigma}$ and $x \in X^{\sigma}$; for the Cartan involution the fixed subgroup is $K$ by definition and the induced map is $gK \mapsto \theta(g)K = s_o(gK)$; the converse is the general construction of a symmetric space from a symmetric pair, *Riemannian Symmetric Spaces and the Involution*.
+**Proof.** The fixed subgroup preserves the fixed set because $\sigma_X(g\cdot x) = \sigma(g)\cdot\sigma_X(x) = g\cdot x$ for $g \in G^{\sigma}$ and $x \in X^{\sigma}$; for the Cartan involution the fixed subgroup is $K$ by definition and the induced map is $gK \mapsto \mathrm{J}(g)K = s_o(gK)$; the converse is the general construction of a symmetric space from a symmetric pair, *Riemannian Symmetric Spaces and the Involution*.
 
 **Proposition (the base point and the isolated case).** The base point $o$ is fixed by $\sigma_X$; when $X$ is a symmetric space of noncompact type and $\sigma_X$ is the geodesic symmetry at $o$, the fixed set is the single point $\{o\}$, the exponential map being a diffeomorphism and the geodesic symmetry reversing every geodesic through $o$; for a symmetric space of compact type the fixed set may be larger, and for the round sphere it is the equator.
 
@@ -89,13 +89,13 @@ the set of points fixed by $\sigma_X$.
 
 ## Worked Cases
 
-**Example (the sphere).** Let $S^n = SO(n+1)/SO(n)$ with the involution $\theta(g) = I_{1,n}gI_{1,n}^{-1}$, $I_{1,n} = \operatorname{diag}(-1,I_n)$; the fixed subgroup is $SO(n)$, the induced map is the reflection in the equator, $\sigma_X(x) = -I_{1,n}x$, and its fixed set is the equator $S^{n-1}$, a totally geodesic submanifold. The equator is the symmetric subspace $SO(n)/SO(n-1)$, and the example shows that the fixed set of an isometric involution can be a whole submanifold.
+**Example (the sphere).** Let $S^n = SO(n+1)/SO(n)$ with the involution $\mathrm{J}(g) = I_{1,n}gI_{1,n}^{-1}$, $I_{1,n} = \operatorname{diag}(-1,I_n)$; the fixed subgroup is $SO(n)$, the induced map is the reflection in the equator, $\sigma_X(x) = -I_{1,n}x$, and its fixed set is the equator $S^{n-1}$, a totally geodesic submanifold. The equator is the symmetric subspace $SO(n)/SO(n-1)$, and the example shows that the fixed set of an isometric involution can be a whole submanifold.
 
-**Example (the Cartan involution).** Let $X = \mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m))$ with the Cartan involution $\theta(g) = JgJ^{-1}$; the induced map is the geodesic symmetry $s_o$, the fixed set is the single point $\{o\}$, and the fixed subgroup is $K = \mathrm{U}(n)\times \mathrm{U}(m)$. The example is the noncompact case, where the geodesic symmetry has the isolated fixed point the symmetric space is built on.
+**Example (the Cartan involution).** Let $X = \mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m))$ with the Cartan involution $\mathrm{J}(g) = JgJ^{-1}$; the induced map is the geodesic symmetry $s_o$, the fixed set is the single point $\{o\}$, and the fixed subgroup is $K = \mathrm{U}(n)\times \mathrm{U}(m)$. The example is the noncompact case, where the geodesic symmetry has the isolated fixed point the symmetric space is built on.
 
 **Example (the complex conjugation).** Let $X = SU(n,m)/S(\mathrm{U}(n)\times \mathrm{U}(m))$ with the conjugation of a real structure; the fixed set is the real Grassmannian of negative $m$-planes, a totally geodesic submanifold of the complex symmetric space, and the fixed subgroup is the real form $SO(n,m)$ of $SU(n,m)$. The induced involution is the **real structure** of the space, and its fixed set is the real locus.
 
-**Example (an inner involution).** Let $z$ be an element of the centre of the isotropy of a symmetric pair, so that the Cartan involution is $\theta = \operatorname{Ad}(z)$; this is the Hermitian case of *Hermitian Symmetric Spaces and the Group Involution*. The induced involution on $X = G/K$ is then the action of the element $z$ itself, and it is the rotation by $\pi$ in the invariant complex structure: the geodesic symmetry of a Hermitian symmetric space is the action of the central element, so the involution on the elements is realised by a single element of the group, and its fixed set is the base point.
+**Example (an inner involution).** Let $z$ be an element of the centre of the isotropy of a symmetric pair, so that the Cartan involution is $\mathrm{J} = \operatorname{Ad}(z)$; this is the Hermitian case of *Hermitian Symmetric Spaces and the Group Involution*. The induced involution on $X = G/K$ is then the action of the element $z$ itself, and it is the rotation by $\pi$ in the invariant complex structure: the geodesic symmetry of a Hermitian symmetric space is the action of the central element, so the involution on the elements is realised by a single element of the group, and its fixed set is the base point.
 
 ## Summary
 
@@ -112,8 +112,8 @@ An involution of a symmetry group is an automorphism $\sigma$ with $\sigma^2 = \
 | $o = eK$ | the base point, fixed by $\sigma_X$ |
 | $X^{\sigma}$ | the fixed-point set; a union of totally geodesic submanifolds |
 | $d\sigma_X$ | the differential; $-\mathrm{id}$ on $\mathfrak{n}$ for a Cartan involution |
-| $s_o$ | the geodesic symmetry, $s_o(gK) = \theta(g)K$ |
-| $\theta(g) = JgJ^{-1}$ | the Cartan involution of a classical group |
+| $s_o$ | the geodesic symmetry, $s_o(gK) = \mathrm{J}(g)K$ |
+| $\mathrm{J}(g) = JgJ^{-1}$ | the Cartan involution of a classical group |
 | $\overline{g}$ | the conjugation of a real structure; fixed subgroup the real form |
 | $\alpha(g) = \varepsilon(g)g$ | the grade involution of a graded group |
 

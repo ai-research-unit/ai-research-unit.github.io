@@ -92,7 +92,7 @@ Abelian, and the self-adjoint unitary members are the unimodular $\alpha$-Hermit
 
 ### The arithmetic contrast
 
-**Theorem (the comparison with the arithmetic case).** Over the algebra of arithmetic functions under the coefficient form the adjoint of $L_a\alpha$ is the transposed multiplication $\Theta_a$ composed with $\alpha$, and it is a signed left multiplication only when $\alpha(a)$ is a unit; here the adjoint is a signed left multiplication for every $a$. The discrepancy is the invariance of the expectation form, which returns $L_{a^*}$ for the adjoint of $L_a$ instead of the transpose.
+**Theorem (the comparison with the arithmetic case).** Over the algebra of arithmetic functions under the coefficient form the adjoint of $L_a\alpha$ is the transposed multiplication $\mathrm{Sd}_a$ composed with $\alpha$, and it is a signed left multiplication only when $\alpha(a)$ is a unit; here the adjoint is a signed left multiplication for every $a$. The discrepancy is the invariance of the expectation form, which returns $L_{a^*}$ for the adjoint of $L_a$ instead of the transpose.
 
 *Proof.* The arithmetic statement is that of *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, written, and *The Signed Left Multiplication on the Algebra of Arithmetic Functions*, written; the difference is the invariance of the form, which is the traciality of the state in the commutative algebra.
 

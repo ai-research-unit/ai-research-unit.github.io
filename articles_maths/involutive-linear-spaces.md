@@ -2,10 +2,10 @@
 
 ## Introduction
 
-An **involution of a linear space** $V$ over a field $F$ is a map $\theta : V \to V$ of order two that is compatible with the linear structure. Two kinds occur, and they are told apart by what $\theta$ does to the scalars. A **linear involution** is an $F$-linear map of order two, and a **semilinear involution** satisfies
+An **involution of a linear space** $V$ over a field $F$ is a map $\mathrm{J} : V \to V$ of order two that is compatible with the linear structure. Two kinds occur, and they are told apart by what $\mathrm{J}$ does to the scalars. A **linear involution** is an $F$-linear map of order two, and a **semilinear involution** satisfies
 
 $$
-\theta(\lambda b + \mu w) = \varsigma(\lambda)\theta(b) + \varsigma(\mu)\theta(w)
+\mathrm{J}(\lambda b + \mu w) = \varsigma(\lambda)\mathrm{J}(b) + \varsigma(\mu)\mathrm{J}(w)
 $$
 
 for a field involution $\varsigma$ of $F$. When $\varsigma$ is the identity the two notions coincide, and the case $\varsigma \neq \mathrm{id}$, with $F = \mathbb{C}$ and $\varsigma$ the conjugation, is the one that carries a genuinely new datum.
@@ -222,37 +222,37 @@ $$
 
 ### Semilinear Involutions
 
-**Definition.** Let $\varsigma$ be an involution of the field $F$, that is a field automorphism with $\varsigma^2 = \mathrm{id}$, so that $F$ is a field with an involution in the sense of *Involutive Rings*. A map $\theta : V \to V$ is **$\varsigma$-semilinear** if
+**Definition.** Let $\varsigma$ be an involution of the field $F$, that is a field automorphism with $\varsigma^2 = \mathrm{id}$, so that $F$ is a field with an involution in the sense of *Involutive Rings*. A map $\mathrm{J} : V \to V$ is **$\varsigma$-semilinear** if
 
 $$
-\theta(\lambda b + \mu w) = \varsigma(\lambda)\theta(b) + \varsigma(\mu)\theta(w) \qquad \text{for all } \lambda, \mu \in F, \ b, w \in V ,
+\mathrm{J}(\lambda b + \mu w) = \varsigma(\lambda)\mathrm{J}(b) + \varsigma(\mu)\mathrm{J}(w) \qquad \text{for all } \lambda, \mu \in F, \ b, w \in V ,
 $$
 
-and a **semilinear involution** is such a map with $\theta^2 = \mathrm{id}$. When $\varsigma = \mathrm{id}$ this is exactly a linear involution, and the two notions coincide; when $\varsigma \neq \mathrm{id}$ the map is not linear, and it is not an involution of the underlying linear space.
+and a **semilinear involution** is such a map with $\mathrm{J}^2 = \mathrm{id}$. When $\varsigma = \mathrm{id}$ this is exactly a linear involution, and the two notions coincide; when $\varsigma \neq \mathrm{id}$ the map is not linear, and it is not an involution of the underlying linear space.
 
 **Remark.** The semilinear involution is the analogue, for a linear space, of the anti-automorphism that a ring involution is. A ring involution reverses the product, so it is not an automorphism unless the ring is commutative; a linear space has only the one operation, and its additive group is abelian, so an involution of it can reverse nothing. What can be twisted is the action of the scalars, and the twist is exactly a semilinear map. This is why the linear case is so rigid: the only twisted maps available are the semilinear ones.
 
 ### The Two Signs of the Antilinear Case
 
-The case that matters is $F = \mathbb{C}$ with $\varsigma$ the complex conjugation, where a $\varsigma$-semilinear map is called **conjugate-linear** or **antilinear**. The two signs of $\theta^2 = \pm\mathrm{id}$ give two different structures, and only the first of them is an involution.
+The case that matters is $F = \mathbb{C}$ with $\varsigma$ the complex conjugation, where a $\varsigma$-semilinear map is called **conjugate-linear** or **antilinear**. The two signs of $\mathrm{J}^2 = \pm\mathrm{id}$ give two different structures, and only the first of them is an involution.
 
-**Proposition.** Let $V$ be a complex linear space and $\theta$ an antilinear map with $\theta^2 = \mathrm{id}$. Then the fixed set $V^\theta$ is a real subspace of $V$, and
+**Proposition.** Let $V$ be a complex linear space and $\mathrm{J}$ an antilinear map with $\mathrm{J}^2 = \mathrm{id}$. Then the fixed set $V^\mathrm{J}$ is a real subspace of $V$, and
 
 $$
-V = V^\theta \oplus i V^\theta
+V = V^\mathrm{J} \oplus i V^\mathrm{J}
 $$
 
-as a real direct sum, so that $\dim_\mathbb{R} V^\theta = \dim_\mathbb{C} V$. Such a $\theta$ is called a **real structure** on $V$.
+as a real direct sum, so that $\dim_\mathbb{R} V^\mathrm{J} = \dim_\mathbb{C} V$. Such a $\mathrm{J}$ is called a **real structure** on $V$.
 
-**Proof.** The fixed set is a real subspace, since $\theta$ is additive and $\mathbb{R}$-homogeneous. For $b \in V$ the vectors $\frac12(b + \theta b)$ and $i w$ with $w = -\frac{i}{2}(b - \theta b)$ lie in $V^\theta$: indeed $\theta(w) = \overline{(-i/2)}\,\theta(b - \theta b) = (i/2)(\theta b - b) = w$, using $\theta^2 = \mathrm{id}$. Their sum is $b$, so $V = V^\theta + iV^\theta$. The sum is direct because if $u = i w$ with $u, w \in V^\theta$ then $\theta u = u$ and also $\theta(iw) = -i\theta w = -iw = -u$, so $u = -u$ and $u = 0$. The two spaces are real-isomorphic, so the dimensions agree.
+**Proof.** The fixed set is a real subspace, since $\mathrm{J}$ is additive and $\mathbb{R}$-homogeneous. For $b \in V$ the vectors $\frac12(b + \mathrm{J} b)$ and $i w$ with $w = -\frac{i}{2}(b - \mathrm{J} b)$ lie in $V^\mathrm{J}$: indeed $\mathrm{J}(w) = \overline{(-i/2)}\,\mathrm{J}(b - \mathrm{J} b) = (i/2)(\mathrm{J} b - b) = w$, using $\mathrm{J}^2 = \mathrm{id}$. Their sum is $b$, so $V = V^\mathrm{J} + iV^\mathrm{J}$. The sum is direct because if $u = i w$ with $u, w \in V^\mathrm{J}$ then $\mathrm{J} u = u$ and also $\mathrm{J}(iw) = -i\mathrm{J} w = -iw = -u$, so $u = -u$ and $u = 0$. The two spaces are real-isomorphic, so the dimensions agree.
 
-**Proposition.** Let $V$ be a complex linear space and $\theta$ an antilinear map with $\theta^2 = -\mathrm{id}$. Then $V^\theta = 0$, and for every $b \neq 0$ the vectors $b$ and $\theta b$ are linearly independent over $\mathbb{R}$; consequently $\dim_\mathbb{R} V$ is even and $V$ is a direct sum of two-dimensional real subspaces each stable under $\theta$. Such a $\theta$ is not an involution, its order being four.
+**Proposition.** Let $V$ be a complex linear space and $\mathrm{J}$ an antilinear map with $\mathrm{J}^2 = -\mathrm{id}$. Then $V^\mathrm{J} = 0$, and for every $b \neq 0$ the vectors $b$ and $\mathrm{J} b$ are linearly independent over $\mathbb{R}$; consequently $\dim_\mathbb{R} V$ is even and $V$ is a direct sum of two-dimensional real subspaces each stable under $\mathrm{J}$. Such a $\mathrm{J}$ is not an involution, its order being four.
 
-**Proof.** If $\theta b = b$ then $-b = \theta^2 b = b$, so $b = 0$. If $b$ and $\theta b$ were $\mathbb{R}$-dependent with $b \neq 0$, there would be a real $c$ with $\theta b = c b$; applying $\theta$ would give $-b = \theta^2 b = c\,\theta b = c^2 b$, so $c^2 = -1$, which no real number satisfies because the square of a real number is not negative. Hence $b$ and $\theta b$ span a real plane, and $\theta(\theta b) = -b$, so the plane is $\theta$-stable.
+**Proof.** If $\mathrm{J} b = b$ then $-b = \mathrm{J}^2 b = b$, so $b = 0$. If $b$ and $\mathrm{J} b$ were $\mathbb{R}$-dependent with $b \neq 0$, there would be a real $c$ with $\mathrm{J} b = c b$; applying $\mathrm{J}$ would give $-b = \mathrm{J}^2 b = c\,\mathrm{J} b = c^2 b$, so $c^2 = -1$, which no real number satisfies because the square of a real number is not negative. Hence $b$ and $\mathrm{J} b$ span a real plane, and $\mathrm{J}(\mathrm{J} b) = -b$, so the plane is $\mathrm{J}$-stable.
 
-**Example.** On $\mathbb{C}^2$ the map $\theta(z,w) = (\bar z, \bar w)$ has $\theta^2 = \mathrm{id}$ and fixes $\mathbb{R}^2$, a real structure of real dimension two; the map $\theta(z,w) = (-\bar w, \bar z)$ has $\theta^2 = -\mathrm{id}$, has no nonzero fixed vector, and carries every nonzero vector to an $\mathbb{R}$-independent one. The two maps differ only in the sign of the prescribed square, and they are of different kinds.
+**Example.** On $\mathbb{C}^2$ the map $\mathrm{J}(z,w) = (\bar z, \bar w)$ has $\mathrm{J}^2 = \mathrm{id}$ and fixes $\mathbb{R}^2$, a real structure of real dimension two; the map $\mathrm{J}(z,w) = (-\bar w, \bar z)$ has $\mathrm{J}^2 = -\mathrm{id}$, has no nonzero fixed vector, and carries every nonzero vector to an $\mathbb{R}$-independent one. The two maps differ only in the sign of the prescribed square, and they are of different kinds.
 
-**Remark (the boundary).** The algebra generated by an antilinear map with $\theta^2 = -\mathrm{id}$, together with the complex structure, is the division algebra of Hamilton, whose article is *Division Algebras*, later in Part I. Nothing of that algebra is used here: the statement proved is about the map $\theta$ and the real dimension of $V$ alone, and the reader who wants the algebra is sent to that article.
+**Remark (the boundary).** The algebra generated by an antilinear map with $\mathrm{J}^2 = -\mathrm{id}$, together with the complex structure, is the division algebra of Hamilton, whose article is *Division Algebras*, later in Part I. Nothing of that algebra is used here: the statement proved is about the map $\mathrm{J}$ and the real dimension of $V$ alone, and the reader who wants the algebra is sent to that article.
 
 ### The Instance from Extension of Scalars
 
@@ -282,7 +282,7 @@ The comparison with the three companion articles is sharp, and it is the reason 
 
 A linear involution of a linear space $V$ over a field $F$ is an $F$-linear map $T$ with $T^2 = \mathrm{id}$; it lies in $\operatorname{GL}(V)$. When $2 \neq 0$ in $F$ the operators $P_\pm = \frac12(\mathrm{id}\pm T)$ are complementary idempotents and $V = V_+ \oplus V_-$, the fixed and the negated summands, so an involution, its fixed and negated subspaces, and an idempotent are three descriptions of one datum; with $p = \dim V_+$ and $q = \dim V_-$, the type $(n,m)$ is a complete conjugacy invariant, there are $n+1$ types, $\operatorname{tr}T = p-q$, $\det T = (-1)^m$, the minimal polynomial divides $x^2-1$, every involution is diagonalisable over $F$ itself, and the stabiliser of $T$ is $\operatorname{GL}(V_+)\times\operatorname{GL}(V_-)$, so the orbit is the corresponding set of cosets. The maps $T$ and $-T$ exchange the two summands and the types $(n,m)$ and $(q,p)$. Over a finite field of odd order the involutions of type $(n,m)$ number $\lvert \operatorname{GL}_n \rvert/(\lvert \operatorname{GL}_p \rvert \lvert \operatorname{GL}_q \rvert)$, which is $\binom{n}{p}_\ell \ell^{nq}$. In characteristic two the identity $x^2-1 = (x-1)^2$ makes every involution unipotent, $T = \mathrm{id} + N$ with $N^2 = 0$, the two summands coincide, the type is not defined, and the classes of the involutions are the classes of the nilpotents of square zero; the swap over $\mathbb{Q}$ and over $\mathbb{F}_2$ shows that the type belongs to the matrix together with the field.
 
-An involution propagates to direct sums, with the type adding; to the dual space, with the same type; to tensor products, with type $(pr+qs, ps+qr)$; to the tensor and exterior powers, with the binomial types above; and to $\operatorname{End}_F(V)$ by conjugation, with type $(n^2+m^2, 2nm)$ and trace $(n-m)^2$. A semilinear involution is defined relative to an involution of the field; over $\mathbb{C}$ the antilinear case splits into the sign $\theta^2 = \mathrm{id}$, a real structure with $V = V^\theta \oplus iV^\theta$, and the sign $\theta^2 = -\mathrm{id}$, which is not an involution, has no nonzero fixed vector, and makes the real dimension even; the map $\kappa$ of the complexification is the computed instance of the first sign.
+An involution propagates to direct sums, with the type adding; to the dual space, with the same type; to tensor products, with type $(pr+qs, ps+qr)$; to the tensor and exterior powers, with the binomial types above; and to $\operatorname{End}_F(V)$ by conjugation, with type $(n^2+m^2, 2nm)$ and trace $(n-m)^2$. A semilinear involution is defined relative to an involution of the field; over $\mathbb{C}$ the antilinear case splits into the sign $\mathrm{J}^2 = \mathrm{id}$, a real structure with $V = V^\mathrm{J} \oplus iV^\mathrm{J}$, and the sign $\mathrm{J}^2 = -\mathrm{id}$, which is not an involution, has no nonzero fixed vector, and makes the real dimension even; the map $\kappa$ of the complexification is the computed instance of the first sign.
 
 ## Summary of Notation
 
@@ -298,8 +298,8 @@ An involution propagates to direct sums, with the type adding; to the dual space
 | $V^{\otimes k}$, $S^kV$, $\Lambda^kV$ | tensor, symmetric and exterior powers |
 | $\Phi_T$ | conjugation by $T$ on $\operatorname{End}_F(V)$, $X \mapsto TXT$ |
 | $\varsigma$ | an involution of the field $F$ |
-| $\theta$ | a $\varsigma$-semilinear map, with $\theta^2 = \mathrm{id}$ when it is an involution |
-| $V^\theta$ | the fixed set of an antilinear $\theta$ over $\mathbb{C}$, a real subspace |
+| $\mathrm{J}$ | a $\varsigma$-semilinear map, with $\mathrm{J}^2 = \mathrm{id}$ when it is an involution |
+| $V^\mathrm{J}$ | the fixed set of an antilinear $\mathrm{J}$ over $\mathbb{C}$, a real subspace |
 | $\kappa$ | the conjugate-linear involution of $V_{\mathbb{C}}$ of *Extension of Scalars* |
 
 ## Further Reading

@@ -87,10 +87,10 @@ physical polarizations. These two are the transverse-traceless modes: transverse
 
 ### The Transverse-Traceless Projector
 
-The projection is performed by the transverse-traceless projector. For a wave vector $\vec k$ with transverse metric $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$, the projector on symmetric spatial tensors is
+The projection is performed by the transverse-traceless projector. For a wave vector $\vec k$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$, the projector on symmetric spatial tensors is
 
 $$
-P_{ij,kl} = \tfrac12\left(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk}\right)-\tfrac12\,\theta_{ij}\theta_{kl} ,
+P_{ij,kl} = \tfrac12\left(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk}\right)-\tfrac12\,\Pi_{ij}\Pi_{kl} ,
 $$
 
 and it has the defining properties
@@ -259,7 +259,7 @@ of dimension five. The decomposition $6=1+5$ is therefore the statement that the
 
 ## Summary
 
-The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
+The graviton is the massless spin-two field of the linearized Einstein theory, with the gauge symmetry $h_{\mu\nu}\mapsto h_{\mu\nu}+\partial/\partial Q_\mu\,\xi_\nu+\partial/\partial Q_\nu\,\xi_\mu$ and the linearized Riemann tensor as its gauge-invariant field strength. A symmetric tensor has ten components; the gauge removes four and the constraints four more, leaving the two transverse-traceless polarizations of helicity $\pm2$. The transverse-traceless projector $P_{ij,kl}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{kl}$ is idempotent, has trace two, kills the pure-gauge and trace modes, and has a transverse-traceless complement of dimension two; all of these were verified to machine precision, and the two polarizations were verified to be its fixed points.
 
 In the biquaternion framework the carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$ with $6=1+5$: the trace is the spin-zero singlet and the trace-free part is the spin-two carrier of dimension five, the trace being removed with the algebra's bilinear form. The massless gauge then removes three of the five, leaving the two helicities $\pm2$. The canonical quantization gives the transverse-traceless mode expansion with two polarizations, the bosonic commutators $[a_r(\vec p),a_s^\dagger(\vec k)]=(2\pi)^3\delta_{rs}\delta^{(3)}$, and the Fock space; the covariant quantization requires the de Donder gauge fixing and Faddeev–Popov vector ghosts, with the standard BRST structure. The propagator's numerator is the standard de Donder structure, and the massive Fierz–Pauli theory has five polarizations whose massless limit exhibits the van Dam–Veltman–Zakharov discontinuity.
 
@@ -276,8 +276,8 @@ The framework's statement about the graviton is therefore the same as its statem
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
 | $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
-| $\theta_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse metric |
-| $P_{ij,kl}=\tfrac12(\theta_{ik}\theta_{jl}+\theta_{il}\theta_{jk})-\tfrac12\theta_{ij}\theta_{kl}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
+| $\Pi_{ij}=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse metric |
+| $P_{ij,kl}=\tfrac12(\Pi_{ik}\Pi_{jl}+\Pi_{il}\Pi_{jk})-\tfrac12\Pi_{ij}\Pi_{kl}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
 | $\varepsilon^{+}_{ij},\varepsilon^{\times}_{ij}$ | Two polarizations; helicities $\pm2$ |
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |
 | $h_{ij}^{\mathrm{TT}}(x)$ | Transverse-traceless mode expansion |

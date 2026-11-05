@@ -145,7 +145,7 @@ $$
 This is the central object of the retarded theory. Its scalar part is the scalar potential and its vector part the vector potential:
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_t + \vec A,
+\tilde{A} = i\,a'_t\,e_t + \vec A,
 \qquad
 \phi = \frac{ϙ}{4\pi\epsilon D}, \qquad
 \vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\phi .
@@ -560,7 +560,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity part and acceleration (radiation) part of the field |
-| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current of the potential wave equation |
 | $t'_r$ | Retarded time, $t'_r = t' - \lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t'_r)\rvert/c$ |
 | $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(t'_r)$, $R = \lvert\vec R\rvert$ | Retarded separation |

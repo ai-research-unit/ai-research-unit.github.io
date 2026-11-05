@@ -27,7 +27,7 @@ $$
 
 so the adjoint action is **unitary** for the trace form and the adjoint operation is compatible with the inversion of the parameter; equivalently, $\mathrm{Ad}_{a}$ is an isometry of the trace form.
 
-**Proof.** $\mathrm{Ad}_{a} = \Theta^{\alpha}_{a,a^{-1}}$ with $\alpha = \mathrm{id}$, and the unsigned sandwich has adjoint $\Phi_{a^{-1},a} = \mathrm{Ad}_{a^{-1}}$ by *The Adjoint of the Left Multiplication on a Topological Vector Space*; since $\mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1}$ and $(\mathrm{Ad}_{a})^{\dagger}\mathrm{Ad}_{a} = \mathrm{id}$, the action is unitary. Alternatively, $\langle axa^{-1}, y\rangle = \tau(axa^{-1}y) = \tau(xa^{-1}ya) = \langle x, a^{-1}ya\rangle$.
+**Proof.** $\mathrm{Ad}_{a} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}$ with $\alpha = \mathrm{id}$, and the unsigned sandwich has adjoint $\Phi_{a^{-1},a} = \mathrm{Ad}_{a^{-1}}$ by *The Adjoint of the Left Multiplication on a Topological Vector Space*; since $\mathrm{Ad}_{a^{-1}} = (\mathrm{Ad}_{a})^{-1}$ and $(\mathrm{Ad}_{a})^{\dagger}\mathrm{Ad}_{a} = \mathrm{id}$, the action is unitary. Alternatively, $\langle axa^{-1}, y\rangle = \tau(axa^{-1}y) = \tau(xa^{-1}ya) = \langle x, a^{-1}ya\rangle$.
 
 **Proposition (the adjoint action preserves self-adjointness and unitarity).** Conjugation by an invertible element sends the $\dagger$-self-adjoint operators to $\dagger$-self-adjoint operators and the unitary operators to unitary operators of the trace form; for the adjoint action of $a$ the image of the involution is $S \mapsto aSa^{-1}$, and $(aSa^{-1})^{\dagger} = aS^{\dagger}a^{-1}$.
 
@@ -58,12 +58,12 @@ for a homogeneous unit this always holds, because then $a^{-1}\alpha(a) = \pm 1$
 **Proposition (the adjoint action on the grade involution).** For invertible $a$,
 
 $$
-\mathrm{Ad}_{a}\,\alpha = \alpha_{a}\,\alpha , \qquad \alpha_{a}\alpha(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x) ,
+\mathrm{Ad}_{a}\,\alpha = \alpha_{a}\,\alpha , \qquad \alpha_{a}\alpha(x) = a\alpha(x)a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x) ,
 $$
 
 so the conjugate of the grade involution is the signed inner sandwich of $a$; when $a$ is an involution this is the grade involution $\alpha_{a}$ attached to $a$, and the adjoint action of an involution reproduces the reflection's graded structure.
 
-**Proof.** $\mathrm{Ad}_{a}\alpha(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x)$ is the definition of the signed inner sandwich; for $a^{2} = 1$ it is the grade involution of *Reflections as Signed Two-Sided Operators on a Topological Vector Space*.
+**Proof.** $\mathrm{Ad}_{a}\alpha(x) = a\alpha(x)a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x)$ is the definition of the signed inner sandwich; for $a^{2} = 1$ it is the grade involution of *Reflections as Signed Two-Sided Operators on a Topological Vector Space*.
 
 ## The Module Case and the Sign Rule
 
@@ -100,7 +100,7 @@ The adjoint action $\mathrm{Ad}_{a}(x) = axa^{-1}$ of the invertible elements of
 | $(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}}$ | the trace-adjoint, unitary |
 | $\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i + p}$ | parity $p$ of the conjugating unit |
 | $a^{-1}\alpha(a) \in Z(E)$ | grading-preservation condition |
-| $\mathrm{Ad}_{a}\alpha = \Theta^{\alpha}_{a,a^{-1}}$ | conjugate of the grade involution |
+| $\mathrm{Ad}_{a}\alpha = \mathrm{Sd}^{\alpha}_{a,a^{-1}}$ | conjugate of the grade involution |
 | $M = M_{0}\oplus M_{1}$, $\beta$ | graded module and its grade involution |
 | $\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta$ | the module compatibility, $x \in E_{i}$ |
 | $Z(E)$ | centre; inner automorphisms modulo it |

@@ -35,10 +35,10 @@ The article assumes the real and the complex Lie group, the complexification of 
 
 ### The Twisted Form
 
-**Definition.** Let $\mathrm{G}$ be a real semisimple Lie algebra and $B$ its Killing form. An **involution** is an automorphism $\theta$ of $\mathrm{G}$ with $\theta^2 = \mathrm{id}$. It is a **Cartan involution** when the **twisted form**
+**Definition.** Let $\mathrm{G}$ be a real semisimple Lie algebra and $B$ its Killing form. An **involution** is an automorphism $\mathrm{J}$ of $\mathrm{G}$ with $\mathrm{J}^2 = \mathrm{id}$. It is a **Cartan involution** when the **twisted form**
 
 $$
-B_\theta(X,Y) = -B(X,\theta Y)
+B_\mathrm{J}(X,Y) = -B(X,\mathrm{J} Y)
 $$
 
 is positive definite.
@@ -46,32 +46,32 @@ is positive definite.
 **Definition.** The **Cartan decomposition** is the eigenspace decomposition
 
 $$
-\boxed{\;\mathrm{G} = \mathrm{K}\oplus\mathrm{P}, \qquad \mathrm{K} = \{X : \theta X = X\}, \quad \mathrm{P} = \{X : \theta X = -X\}\;} .
+\boxed{\;\mathrm{G} = \mathrm{K}\oplus\mathrm{P}, \qquad \mathrm{K} = \{X : \mathrm{J} X = X\}, \quad \mathrm{P} = \{X : \mathrm{J} X = -X\}\;} .
 $$
 
 Its structure — the bracket relations, the maximal compact subgroup and the global decomposition of the group — is the subject of *The Cartan Decomposition and the Cartan Involution*, and the present article uses the definition and the existence.
 
-**Theorem (existence and conjugacy).** Every real semisimple Lie algebra has a Cartan involution, and any two Cartan involutions are conjugate by an inner automorphism. The fixed algebra $\mathrm{K}$ is a maximal compactly embedded subalgebra, and the form $B_\theta$ is invariant under $\theta$ and positive definite on $\mathrm{G}$.
+**Theorem (existence and conjugacy).** Every real semisimple Lie algebra has a Cartan involution, and any two Cartan involutions are conjugate by an inner automorphism. The fixed algebra $\mathrm{K}$ is a maximal compactly embedded subalgebra, and the form $B_\mathrm{J}$ is invariant under $\mathrm{J}$ and positive definite on $\mathrm{G}$.
 
-*Proof (sketch).* The existence is proved by writing the automorphism group as the fixed set of a Cartan involution of a larger algebra and using the polar decomposition; the conjugacy is the statement that the positive definite forms of the type $B_\theta$ form a single orbit under the adjoint action, which is the convexity of the space of such forms; the positivity on $\mathrm{G}$ is the definition, and the compactness of $\mathrm{K}$ follows from the negative definiteness of $B$ on $\mathrm{K}$.
+*Proof (sketch).* The existence is proved by writing the automorphism group as the fixed set of a Cartan involution of a larger algebra and using the polar decomposition; the conjugacy is the statement that the positive definite forms of the type $B_\mathrm{J}$ form a single orbit under the adjoint action, which is the convexity of the space of such forms; the positivity on $\mathrm{G}$ is the definition, and the compactness of $\mathrm{K}$ follows from the negative definiteness of $B$ on $\mathrm{K}$.
 
 **Corollary.** On a compact real form $\mathrm{K}$ the Killing form is negative definite, and the identity is a Cartan involution; conversely a semisimple algebra with negative definite Killing form is compact and the identity is its Cartan involution.
 
-*Proof.* The form $B_\theta$ for $\theta = \mathrm{id}$ is $-B$, which is positive definite exactly when $B$ is negative definite; the characterisation of compactness by the negative definiteness of the Killing form is that of *Structure of Lie Algebras*.
+*Proof.* The form $B_\mathrm{J}$ for $\mathrm{J} = \mathrm{id}$ is $-B$, which is positive definite exactly when $B$ is negative definite; the characterisation of compactness by the negative definiteness of the Killing form is that of *Structure of Lie Algebras*.
 
 ### The Compact Real Form
 
-**Theorem (the compact form is unique).** A complex semisimple Lie algebra has exactly one real form up to conjugacy whose Killing form is negative definite, the **compact real form**; every real form $\mathrm{G}$ has a Cartan involution $\theta$, and the subalgebra $\mathrm{K}\oplus i\mathrm{P}$ of $\mathrm{G}_{\mathbb{C}}$ is a compact real form.
+**Theorem (the compact form is unique).** A complex semisimple Lie algebra has exactly one real form up to conjugacy whose Killing form is negative definite, the **compact real form**; every real form $\mathrm{G}$ has a Cartan involution $\mathrm{J}$, and the subalgebra $\mathrm{K}\oplus i\mathrm{P}$ of $\mathrm{G}_{\mathbb{C}}$ is a compact real form.
 
-*Proof.* The algebra $\mathrm{K}\oplus i\mathrm{P}$ is closed under the bracket because $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$ and $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, and on it $B$ is negative definite: on $\mathrm{K}$ it is so by the compactness of $\mathrm{K}$ and on $i\mathrm{P}$ it is the negative of the positive form $B_\theta$. Uniqueness is the conjugacy of the Cartan involutions.
+*Proof.* The algebra $\mathrm{K}\oplus i\mathrm{P}$ is closed under the bracket because $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$ and $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$, and on it $B$ is negative definite: on $\mathrm{K}$ it is so by the compactness of $\mathrm{K}$ and on $i\mathrm{P}$ it is the negative of the positive form $B_\mathrm{J}$. Uniqueness is the conjugacy of the Cartan involutions.
 
 ## The Classification
 
 ### The Classification of the Real Forms
 
-**Theorem (classification).** Let $\mathrm{G}_{\mathbb{C}}$ be a complex semisimple Lie algebra and $\mathrm{G}_u$ its compact real form. The real forms of $\mathrm{G}_{\mathbb{C}}$ are in bijection with the conjugacy classes of involutions of $\mathrm{G}_u$, under the assignment $\mathrm{G} = \{X \in \mathrm{G}_u : \theta(\bar X) = X\}$ to a Cartan involution $\theta$ read on $\mathrm{G}_u$.
+**Theorem (classification).** Let $\mathrm{G}_{\mathbb{C}}$ be a complex semisimple Lie algebra and $\mathrm{G}_u$ its compact real form. The real forms of $\mathrm{G}_{\mathbb{C}}$ are in bijection with the conjugacy classes of involutions of $\mathrm{G}_u$, under the assignment $\mathrm{G} = \{X \in \mathrm{G}_u : \mathrm{J}(\bar X) = X\}$ to a Cartan involution $\mathrm{J}$ read on $\mathrm{G}_u$.
 
-*Proof.* A real form $\mathrm{G}$ has a Cartan involution $\theta$ and a compact form $\mathrm{K}\oplus i\mathrm{P} = \mathrm{G}_u$; the involution $\theta$ extends to a complex-linear involution of $\mathrm{G}_{\mathbb{C}}$ commuting with the conjugation, hence restricts to an involution of $\mathrm{G}_u$; conversely an involution $\theta$ of $\mathrm{G}_u$ extended complex-linearly and composed with the conjugation of $\mathrm{G}_u$ produces an anti-linear involution whose fixed algebra is the real form. The two assignments are inverse, and conjugacy corresponds to conjugacy.
+*Proof.* A real form $\mathrm{G}$ has a Cartan involution $\mathrm{J}$ and a compact form $\mathrm{K}\oplus i\mathrm{P} = \mathrm{G}_u$; the involution $\mathrm{J}$ extends to a complex-linear involution of $\mathrm{G}_{\mathbb{C}}$ commuting with the conjugation, hence restricts to an involution of $\mathrm{G}_u$; conversely an involution $\mathrm{J}$ of $\mathrm{G}_u$ extended complex-linearly and composed with the conjugation of $\mathrm{G}_u$ produces an anti-linear involution whose fixed algebra is the real form. The two assignments are inverse, and conjugacy corresponds to conjugacy.
 
 **Corollary (the classification is finite).** There are finitely many real forms of a complex semisimple Lie algebra, one for each conjugacy class of involutions of the compact form, and the classification is read in the root data as the **Satake diagrams**, the Dynkin diagram with the vertices fixed by the involution and the arrows recording the restricted root data.
 
@@ -79,15 +79,15 @@ Its structure — the bracket relations, the maximal compact subgroup and the gl
 
 ### The Symmetric Space
 
-**Definition.** Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be the Cartan decomposition. The **symmetric space** attached to $\mathrm{G}$ is the homogeneous space $G/K$, where $K$ is the connected subgroup with algebra $\mathrm{K}$ and $G$ is a corresponding Lie group; it is a Riemannian symmetric space when the form $B_\theta$ is transported to the tangent space $T_{eK}G/K \cong \mathrm{P}$.
+**Definition.** Let $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ be the Cartan decomposition. The **symmetric space** attached to $\mathrm{G}$ is the homogeneous space $G/K$, where $K$ is the connected subgroup with algebra $\mathrm{K}$ and $G$ is a corresponding Lie group; it is a Riemannian symmetric space when the form $B_\mathrm{J}$ is transported to the tangent space $T_{eK}G/K \cong \mathrm{P}$.
 
 **Theorem.** The symmetric space $G/K$ has an involutive geodesic symmetry at each point, the curvature tensor at the base point is $R(X,Y)Z = -[[X,Y],Z]$ for $X,Y,Z\in\mathrm{P}$, and the isotropy representation of $K$ on $\mathrm{P}$ is the adjoint action.
 
-*Proof.* The involution $\theta$ of $G$ defined by the Cartan involution of the algebra fixes $K$ and induces the geodesic symmetry $gK\mapsto \theta(g)K$; the curvature is computed from the Cartan decomposition and the Maurer--Cartan equation, the components of the bracket of two elements of $\mathrm{P}$ lying in $\mathrm{K}$ and the double commutator being the standard expression. The geometric development — the exponential coordinates, the Weyl group and the restricted root system — belongs to Part IV, and the operator-theoretic counterpart is *The Convolution Operator on a Symmetric Space* of the analysis on groups.
+*Proof.* The involution $\mathrm{J}$ of $G$ defined by the Cartan involution of the algebra fixes $K$ and induces the geodesic symmetry $gK\mapsto \mathrm{J}(g)K$; the curvature is computed from the Cartan decomposition and the Maurer--Cartan equation, the components of the bracket of two elements of $\mathrm{P}$ lying in $\mathrm{K}$ and the double commutator being the standard expression. The geometric development — the exponential coordinates, the Weyl group and the restricted root system — belongs to Part IV, and the operator-theoretic counterpart is *The Convolution Operator on a Symmetric Space* of the analysis on groups.
 
 ### The Satake Diagram
 
-**Definition.** Let $\mathrm{G}$ be a real form of the complex semisimple algebra $\mathrm{G}_{\mathbb{C}}$ with Cartan involution $\theta$ and let $\mathrm{G}_{\mathbb{C}} = \mathrm{K}_{\mathbb{C}}\oplus\mathrm{P}_{\mathbb{C}}$ be the decomposition of the complexification by $\theta$. The **Satake diagram** of $\mathrm{G}$ is the Dynkin diagram of $\mathrm{G}_{\mathbb{C}}$ together with the data: a node is **black** when the corresponding root is annihilated by the complexified Cartan subalgebra of $\mathrm{K}$, and two nodes are joined by an arrow when the corresponding roots are exchanged by the involution of the diagram induced by $\theta$.
+**Definition.** Let $\mathrm{G}$ be a real form of the complex semisimple algebra $\mathrm{G}_{\mathbb{C}}$ with Cartan involution $\mathrm{J}$ and let $\mathrm{G}_{\mathbb{C}} = \mathrm{K}_{\mathbb{C}}\oplus\mathrm{P}_{\mathbb{C}}$ be the decomposition of the complexification by $\mathrm{J}$. The **Satake diagram** of $\mathrm{G}$ is the Dynkin diagram of $\mathrm{G}_{\mathbb{C}}$ together with the data: a node is **black** when the corresponding root is annihilated by the complexified Cartan subalgebra of $\mathrm{K}$, and two nodes are joined by an arrow when the corresponding roots are exchanged by the involution of the diagram induced by $\mathrm{J}$.
 
 **Theorem.** Two real forms of $\mathrm{G}_{\mathbb{C}}$ are isomorphic if and only if their Satake diagrams coincide after the symmetries of the diagram, and the real form is determined by its Satake diagram; the number of the white nodes is the restricted rank of the real form, that is the dimension of a maximal abelian subspace of $\mathrm{P}$.
 
@@ -111,11 +111,11 @@ Its structure — the bracket relations, the maximal compact subgroup and the gl
 
 ### The Algebra of Rank One
 
-For $\mathrm{G}_{\mathbb{C}} = \mathrm{sl}_2(\mathbb{C})$ the real forms are $\mathrm{su}(2)$ (compact, the Killing form negative definite), $\mathrm{sl}_2(\mathbb{R})$ (the form $\mathrm{K}\oplus\mathrm{P}$ with $\mathrm{K} = \mathrm{so}(2)$ and $\mathrm{P}$ two-dimensional), and $\mathrm{su}(1,1)\cong\mathrm{sl}_2(\mathbb{R})$; the Cartan involution of $\mathrm{sl}_2(\mathbb{R})$ is $\theta(X) = -X^t$ on the traceless matrices, whose fixed set is $\mathrm{so}(2)$ and whose symmetric space is the hyperbolic plane of Part IV.
+For $\mathrm{G}_{\mathbb{C}} = \mathrm{sl}_2(\mathbb{C})$ the real forms are $\mathrm{su}(2)$ (compact, the Killing form negative definite), $\mathrm{sl}_2(\mathbb{R})$ (the form $\mathrm{K}\oplus\mathrm{P}$ with $\mathrm{K} = \mathrm{so}(2)$ and $\mathrm{P}$ two-dimensional), and $\mathrm{su}(1,1)\cong\mathrm{sl}_2(\mathbb{R})$; the Cartan involution of $\mathrm{sl}_2(\mathbb{R})$ is $\mathrm{J}(X) = -X^t$ on the traceless matrices, whose fixed set is $\mathrm{so}(2)$ and whose symmetric space is the hyperbolic plane of Part IV.
 
 ### The Orthogonal Algebras
 
-For $\mathrm{G}_{\mathbb{C}} = \mathrm{so}(N,\mathbb{C})$ the real forms are $\mathrm{so}(n,m)$ with $n+m = N$, up to the order of the two numbers; the Cartan involution is $\theta(X) = -X^t$ with respect to the standard nondegenerate form of signature $(n,m)$, the fixed algebra is $\mathrm{so}(n)\oplus\mathrm{so}(m)$ and the symmetric space is the Grassmannian of the $n$-planes of definite parity, the geometry of which belongs to Part IV.
+For $\mathrm{G}_{\mathbb{C}} = \mathrm{so}(N,\mathbb{C})$ the real forms are $\mathrm{so}(n,m)$ with $n+m = N$, up to the order of the two numbers; the Cartan involution is $\mathrm{J}(X) = -X^t$ with respect to the standard nondegenerate form of signature $(n,m)$, the fixed algebra is $\mathrm{so}(n)\oplus\mathrm{so}(m)$ and the symmetric space is the Grassmannian of the $n$-planes of definite parity, the geometry of which belongs to Part IV.
 
 ### The Compact Forms
 
@@ -123,7 +123,7 @@ A compact real form has no non-trivial symmetric space of the type above: the Ca
 
 ## Summary
 
-A real form of a complex Lie algebra $\mathrm{G}_{\mathbb{C}}$ is a real subalgebra $\mathrm{G}$ with $\mathrm{G}_{\mathbb{C}} = \mathrm{G}\oplus i\mathrm{G}$, and the real forms are in bijection with the anti-linear involutions, the conjugations, by $\mathrm{G} = \mathrm{G}^{\sigma}$; equivalently they are classified up to equivalence by the conjugacy classes of the conjugations. A real semisimple algebra carries a **Cartan involution** $\theta$, an automorphism of order two for which the twisted Killing form $B_\theta(X,Y) = -B(X,\theta Y)$ is positive definite; any two Cartan involutions are conjugate by an inner automorphism, the fixed algebra $\mathrm{K}$ is a maximal compactly embedded subalgebra, and $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ is the Cartan decomposition. The compact real form is the unique one with negative definite Killing form, and the general real form is obtained from it by an involution of the compact form; the classification is the finite list of conjugacy classes of such involutions, read as the Satake diagrams. The pair $(\mathrm{G},\theta)$ determines the symmetric space $G/K$, whose geodesic symmetries are the involutions and whose curvature at the base point is the double bracket on $\mathrm{P}$; the geometric development of the symmetric space belongs to Part IV and its harmonic analysis to the later articles of this category.
+A real form of a complex Lie algebra $\mathrm{G}_{\mathbb{C}}$ is a real subalgebra $\mathrm{G}$ with $\mathrm{G}_{\mathbb{C}} = \mathrm{G}\oplus i\mathrm{G}$, and the real forms are in bijection with the anti-linear involutions, the conjugations, by $\mathrm{G} = \mathrm{G}^{\sigma}$; equivalently they are classified up to equivalence by the conjugacy classes of the conjugations. A real semisimple algebra carries a **Cartan involution** $\mathrm{J}$, an automorphism of order two for which the twisted Killing form $B_\mathrm{J}(X,Y) = -B(X,\mathrm{J} Y)$ is positive definite; any two Cartan involutions are conjugate by an inner automorphism, the fixed algebra $\mathrm{K}$ is a maximal compactly embedded subalgebra, and $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ is the Cartan decomposition. The compact real form is the unique one with negative definite Killing form, and the general real form is obtained from it by an involution of the compact form; the classification is the finite list of conjugacy classes of such involutions, read as the Satake diagrams. The pair $(\mathrm{G},\mathrm{J})$ determines the symmetric space $G/K$, whose geodesic symmetries are the involutions and whose curvature at the base point is the double bracket on $\mathrm{P}$; the geometric development of the symmetric space belongs to Part IV and its harmonic analysis to the later articles of this category.
 
 ## Summary of Notation
 
@@ -133,8 +133,8 @@ A real form of a complex Lie algebra $\mathrm{G}_{\mathbb{C}}$ is a real subalge
 | $\sigma$ | a conjugation, an anti-linear involutive automorphism |
 | $\mathrm{G}^{\sigma} = \{X : \sigma X = X\}$ | the real form fixed by a conjugation |
 | $B$ | the Killing form |
-| $\theta$ | a Cartan involution, an automorphism with $\theta^2 = \mathrm{id}$ |
-| $B_\theta(X,Y) = -B(X,\theta Y)$ | the twisted form, positive definite |
+| $\mathrm{J}$ | a Cartan involution, an automorphism with $\mathrm{J}^2 = \mathrm{id}$ |
+| $B_\mathrm{J}(X,Y) = -B(X,\mathrm{J} Y)$ | the twisted form, positive definite |
 | $\mathrm{G} = \mathrm{K}\oplus\mathrm{P}$ | the Cartan decomposition |
 | $\mathrm{K}$ | the fixed algebra, a maximal compactly embedded subalgebra |
 | $\mathrm{G}_u = \mathrm{K}\oplus i\mathrm{P}$ | the compact real form of $\mathrm{G}_{\mathbb{C}}$ |

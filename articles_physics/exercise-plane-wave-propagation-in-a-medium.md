@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It applies the conventions of *Electromagnetism in Media — The Local Complex Structure at Work*, the article that fixes the medium objects and whose plane-wave section declares that it "fixes the conventions for the later exercise on plane-wave propagation in a medium". The exercise uses the field-strength biquaternion, the source, the medium speed and impedance, and the medium gradient exactly as that article fixes them, with the algebra of the three universal articles and of *Maxwell's Equations in the Biquaternionic Formulation* inherited unchanged. Nothing is renamed and nothing is rederived from the algebra; what is rederived is what the parent asserts about a plane wave.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (a pure vector), the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised source is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the medium speed and impedance
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (a pure vector), the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised source is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, the Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, the potential $\tilde{A} = i\,a'_te_t + \vec A$, and the medium speed and impedance
 $$
 c = \frac{1}{\sqrt{\epsilon\mu}}, \qquad Z = \sqrt{\frac{\mu}{\epsilon}}, \qquad c_0 = \frac{1}{\sqrt{\epsilon_0\mu_0}}, \qquad n(\omega) = \frac{c_0}{c(\omega)};
 $$
@@ -378,7 +378,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $n(\omega) = c_0/c(\omega)$ | Refractive index |
 | $\vec k, \omega, \vec u_k = \vec k/\lvert\vec k\rvert$ | Wavevector, angular frequency, unit wavevector |
 | $\tilde P = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{M}_-$ |
-| $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ | Potential biquaternion |
+| $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |
 | $k = \omega/c$ | Wave number |
 | $\Phi, \Psi$ | Scalar and vector potentials of the stationary field |

@@ -134,21 +134,21 @@ $$
 Taking the imaginary part and defining
 
 $$
-\theta=\tfrac{1}{2}\,\mathrm{Im}\,\mathrm{Sc}\!\left(\vec Z^{*} d\vec Z\right)
+\varpi=\tfrac{1}{2}\,\mathrm{Im}\,\mathrm{Sc}\!\left(\vec Z^{*} d\vec Z\right)
 =\tfrac{1}{2}\left(\vec q\cdot d\vec p-\vec p\cdot d\vec q\right),
 $$
 
 one finds
 
 $$
-d\theta=\tfrac{1}{2}\left(d\vec q\wedge d\vec p-d\vec p\wedge d\vec q\right)
+d\varpi=\tfrac{1}{2}\left(d\vec q\wedge d\vec p-d\vec p\wedge d\vec q\right)
 =d\vec q\wedge d\vec p=\omega .
 $$
 
-The boundary term of the action of the preceding article, $\theta_{\mathrm{bdry}}=\mathrm{Sc}(\vec p^{\natural}\,d\vec q)=\vec p\cdot d\vec q$, is the canonical potential in the same sense but with the opposite sign: $d\theta_{\mathrm{bdry}}=d\vec p\wedge d\vec q=-\omega$, so it is $-\theta_{\mathrm{bdry}}$, not $\theta_{\mathrm{bdry}}$, that is a potential for the same $\omega$ as $\theta$. Comparing the two potentials for $\omega$,
+The boundary term of the action of the preceding article, $\varpi_{\mathrm{bdry}}=\mathrm{Sc}(\vec p^{\natural}\,d\vec q)=\vec p\cdot d\vec q$, is the canonical potential in the same sense but with the opposite sign: $d\varpi_{\mathrm{bdry}}=d\vec p\wedge d\vec q=-\omega$, so it is $-\varpi_{\mathrm{bdry}}$, not $\varpi_{\mathrm{bdry}}$, that is a potential for the same $\omega$ as $\varpi$. Comparing the two potentials for $\omega$,
 
 $$
-\theta-\left(-\theta_{\mathrm{bdry}}\right)
+\varpi-\left(-\varpi_{\mathrm{bdry}}\right)
 =\tfrac{1}{2}\left(\vec q\cdot d\vec p-\vec p\cdot d\vec q\right)+\vec p\cdot d\vec q
 =\tfrac{1}{2}\,d(\vec q\cdot\vec p),
 $$
@@ -339,7 +339,7 @@ The symplectic form and the biquaternion-norm cone are the two canonical quadrat
 
 - For the phase-space biquaternion $\vec Z=\vec q+i\vec p$, the Hermitian scalar pairing satisfies $\mathrm{Sc}(\vec Z^{*}\vec W)=g(\vec Z,\vec W)+i\omega(\vec Z,\vec W)$, with $g$ the Euclidean metric of phase space and $\omega$ the symplectic form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$.
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$.
-- The symplectic potential is $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$, with $d\theta=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, while $d\vec Z\wedge d\vec Z=0$.
+- The symplectic potential is $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$, with $d\varpi=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, while $d\vec Z\wedge d\vec Z=0$.
 - The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^{*}\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
 - The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
@@ -355,7 +355,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $g(\vec Z,\vec W)=\vec q\cdot\vec r+\vec p\cdot\vec s$ | Euclidean metric of phase space |
 | $\omega(\vec Z,\vec W)=\vec q\cdot\vec s-\vec p\cdot\vec r$ | Symplectic form, $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ |
 | $i$ | Central scalar imaginary; the Kähler $J$ |
-| $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$ | Symplectic potential, $d\theta=\omega$ |
+| $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$ | Symplectic potential, $d\varpi=\omega$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\vec Z,\vec W\rangle=\mathrm{Sc}(\vec Z\vec W^{\natural}) = \langle\vec Z,\vec W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $\langle\tilde{R}\rangle_{\natural}=0$, $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Light cone of the material sector |

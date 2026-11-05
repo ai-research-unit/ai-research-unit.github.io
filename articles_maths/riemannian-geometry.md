@@ -79,7 +79,7 @@ $$
 \Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$
 
-which are symmetric in $i, j$, and the connection form is $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$.
+which are symmetric in $i, j$, and the connection form is $A_{ij} = \sum_k \Gamma_{ijk}dx_k$.
 
 **Remark.** The symmetry $\Gamma_{kij} = \Gamma_{kji}$ is exactly the torsion-freeness, and the vanishing of $\nabla g$ is exactly the metricity. Both are visible in the Koszul formula and neither survives if the metric is dropped: a general connection has neither property, and the pair of properties is what makes the Levi-Civita connection canonical.
 
@@ -91,7 +91,7 @@ $$
 R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X, Y]}Z,
 $$
 
-and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = d\theta + \theta\wedge\theta$, by the structure equation, and $\Omega$ is never used for it here.
+and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = dA + A\wedgeA$, by the structure equation, and $\Omega$ is never used for it here.
 
 **Theorem (symmetries and Bianchi identities).**
 
@@ -315,9 +315,9 @@ The isometry group of a connected Riemannian manifold is a Lie group by the Myer
 | $ds^2 = \sum_{i,j}g_{ij}dx_i dx_j$ | First fundamental form |
 | $L_g(\gamma)$, $d_g(n,m)$ | Length of a curve; Riemannian distance |
 | $\operatorname{Isom}(M,g)$ | Isometry group; a Lie group by Myers–Steenrod |
-| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$ | Levi-Civita connection; Christoffel symbols; connection form |
+| $\nabla$, $\Gamma_{kij}$, $A_{ij}$ | Levi-Civita connection; Christoffel symbols; connection form |
 | $R(X,Y)Z$, $R(X,Y,Z,W)$ | Curvature tensor and its fully covariant form |
-| $\mathcal{R} = d\theta+\theta\wedge\theta$ | Curvature $2$-form in a frame; no bare $\Omega$ is used |
+| $\mathcal{R} = dA+A\wedgeA$ | Curvature $2$-form in a frame; no bare $\Omega$ is used |
 | $K(\sigma)$ | Sectional curvature of the two-plane $\sigma$ |
 | $\operatorname{Ric}$, $S$, $G = \operatorname{Ric}-\frac12Sg$ | Ricci tensor, scalar curvature, Einstein tensor |
 | Einstein manifold | $\operatorname{Ric} = \lambda g$; then $\lambda = S/n$ |

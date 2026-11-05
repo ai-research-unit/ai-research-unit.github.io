@@ -58,14 +58,14 @@ and the orbits partition $X$, because the relation $x \sim y$ iff $y \in G\cdot 
 **Definition.** The **orbit map** is the surjection
 
 $$
-\theta : X \longrightarrow X/G, \qquad \theta(x) = G \cdot x,
+\mathrm{J} : X \longrightarrow X/G, \qquad \mathrm{J}(x) = G \cdot x,
 $$
 
-onto the set $X/G$ of orbits, and its fibres are the orbits. The map is $G$-equivariant when $X/G$ carries the trivial action, $\theta(Tx) = \theta(x)$.
+onto the set $X/G$ of orbits, and its fibres are the orbits. The map is $G$-equivariant when $X/G$ carries the trivial action, $\mathrm{J}(Tx) = \mathrm{J}(x)$.
 
-**Proposition.** For a group action the orbit map is the universal $G$-invariant map out of $X$: a map $f : X \to Y$ is invariant, $f(Tx) = f(x)$ for all $T \in G$, exactly when it factors as $f = \bar f \circ \theta$ through a map $\bar f : X/G \to Y$. Hence the invariant functions on $X$ are exactly the functions on the orbit space $X/G$, and the orbit space is the sharpest quotient on which the symmetry acts trivially.
+**Proposition.** For a group action the orbit map is the universal $G$-invariant map out of $X$: a map $f : X \to Y$ is invariant, $f(Tx) = f(x)$ for all $T \in G$, exactly when it factors as $f = \bar f \circ \mathrm{J}$ through a map $\bar f : X/G \to Y$. Hence the invariant functions on $X$ are exactly the functions on the orbit space $X/G$, and the orbit space is the sharpest quotient on which the symmetry acts trivially.
 
-**Proof.** If $f$ is invariant it is constant on each orbit, so $\bar f$ is well defined on $X/G$; conversely a map through $\theta$ is invariant because $\theta$ is. The identification of invariant functions with functions on $X/G$ is the same statement for $Y$ the scalars.
+**Proof.** If $f$ is invariant it is constant on each orbit, so $\bar f$ is well defined on $X/G$; conversely a map through $\mathrm{J}$ is invariant because $\mathrm{J}$ is. The identification of invariant functions with functions on $X/G$ is the same statement for $Y$ the scalars.
 
 **Remark.** The quotient $X/G$ is a set, not in general a space with the structure of $X$: it is a smooth manifold when the action is free and proper, and otherwise an orbifold or a stratified space, and the regularity of the quotient is the content of the differentiable slice theorem, *Group Actions and Structure* for the finite case and *Transformation Groups* for the smooth one. The set-theoretic statement above needs no regularity and is what the invariants see.
 
@@ -131,7 +131,7 @@ No involution on the elements of the group and no adjoint of an operator is take
 | $\operatorname{sym}(X)$, $\operatorname{O}(V,\mathfrak{Q})$ | the symmetry group; the orthogonal group |
 | $\operatorname{Aut}(X,\text{structure})$ | the automorphisms of a coarser structure |
 | $G \cdot x$, $G_x$ | the orbit and the stabiliser of $x$ |
-| $X/G$, $\theta$ | the orbit space and the orbit map |
+| $X/G$, $\mathrm{J}$ | the orbit space and the orbit map |
 | $\mathcal{F}(X)^G$ | the invariant functions |
 | $k[V]^G$ | the ring of invariant polynomials |
 | $\frac{1}{\lvert G\rvert}\sum_T \pi(T)$ | the averaging projector onto the invariants |

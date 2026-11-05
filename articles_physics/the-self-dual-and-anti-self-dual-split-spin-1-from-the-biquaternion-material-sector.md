@@ -17,7 +17,7 @@ The article is organised as follows. The first section recalls why integer spin 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial Q_t^2 + \Delta$. The potential and field strength are
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_t + \vec A, \qquad
+\tilde{A} = i\,a'_t\,e_t + \vec A, \qquad
 \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
@@ -305,7 +305,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathrm{Vect}(\mathbb{B})$ | Complex three-dimensional vector part, real dimension six |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ |
-| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Four-potential biquaternion |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion |
 | $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
 | $\vec E, \vec H, \vec B=\mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c=1/\sqrt{\epsilon\mu}$ | Medium constants and speed of light in the medium |

@@ -21,7 +21,7 @@ The order follows the dependence. The family letters come first, because the nam
 | left | $L$ | $L_{\tilde Q}$ | one |
 | right | $R$ | $R_{\tilde Q}$ | one |
 | two-sided | $LR$ | $L_{\tilde Q}R_{\tilde P}$ | two |
-| sandwich | $\Theta$ | $\Theta_{\tilde Q}$ | one |
+| sandwich | $\Theta$ | $\mathrm{Sd}_{\tilde Q}$ | one |
 
 **The letter is upright, the parameter is in the subscript.** The letter names the family and is a capital roman; the subscript names the element and keeps that element's own mark, the tilde included. $L_{\tilde Q}$ is read as one glyph: the operator of the left family whose parameter is $\tilde Q$. The tilde is never moved to the letter, and the letter never takes a tilde of its own.
 
@@ -39,11 +39,11 @@ In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the
 
 **The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $L$ and $R$ are always the two multipliers.
 
-**The sandwich has one free slot.** The sandwich is $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde P}$, never $\Theta$.
+**The sandwich has one free slot.** The sandwich is $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde P}$, never $\Theta$.
 
 ### The Index of a Basis Operator
 
-A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
+A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\mathrm{Sd}_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
 
 ### The Slot Label, Which Is the Chirality
 
@@ -74,7 +74,7 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 | $\operatorname{End}_L(\mathbb{B})$ | $L_{\tilde Q}$ | the left multipliers |
 | $\operatorname{End}_R(\mathbb{B})$ | $R_{\tilde Q}$ | the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$ | $L_{\tilde Q}R_{\tilde P}$ | the two-sided operators |
-| $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\Theta_{\tilde Q}$ | the sandwiches |
+| $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\mathrm{Sd}_{\tilde Q}$ | the sandwiches |
 
 **The subscript is the family's.** The subscript of a set repeats the letters of the family that populates it and is not a tensor slot. The star in $\operatorname{End}_{LR\ast}$ repeats the star of the sandwich's second slot; it is part of the name.
 
@@ -203,8 +203,8 @@ The strata are labelled by two bits, the norm first and the square of the vector
 |---|---|
 | $L_{\tilde Q}$, $R_{\tilde P}$ | The left and the right multiplier |
 | $L_{\tilde Q}R_{\tilde P}$ | The two-sided operator, left multiplier first |
-| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
-| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\Theta_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
+| $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
+| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\mathrm{Sd}_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
 | left slot, right slot, both slots | The operator chirality: the side on which an operator multiplies, read from the cell |
 | $\mathsf{V}^{\mathrm{vol}}$ | The volume cell of a frame, the chirality operator; $-iR_{\vec e_z}$ in the axis-free frame. The gamma display writes the same cell $\gamma_5$ |
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |

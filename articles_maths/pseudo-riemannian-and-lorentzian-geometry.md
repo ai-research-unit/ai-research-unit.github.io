@@ -83,7 +83,7 @@ $$
 
 ### Curvature in the Indefinite Case
 
-**Definition.** The **curvature tensor** is $R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$, with $R(X, Y, Z, W) = g(R(X, Y)Z, W)$, and the curvature form is $\mathcal{R} = d\theta + \theta\wedge\theta$ in a frame.
+**Definition.** The **curvature tensor** is $R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$, with $R(X, Y, Z, W) = g(R(X, Y)Z, W)$, and the curvature form is $\mathcal{R} = dA + A\wedgeA$ in a frame.
 
 **Theorem (symmetries).** The tensor satisfies
 
@@ -194,7 +194,7 @@ The sectional curvature is defined only on nondegenerate two-planes, so it no lo
 | Cauchy surface | Closed acausal set met once by every inextendible causal curve |
 | $L_g(\gamma) = \int\sqrt{|g(\gamma',\gamma')|}\,dt$ | Lorentzian length of a causal curve |
 | $d_g(n,m) = \sup_\gamma L_g(\gamma)$ | Lorentzian distance; not a metric, reverse triangle inequality |
-| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$, $\mathcal{R}$ | Levi-Civita connection, Christoffel symbols, connection form, curvature $2$-form |
+| $\nabla$, $\Gamma_{kij}$, $A_{ij}$, $\mathcal{R}$ | Levi-Civita connection, Christoffel symbols, connection form, curvature $2$-form |
 | $R(X,Y,Z,W)$ | Curvature tensor with the standard symmetries and Bianchi identities |
 | $K(\sigma)$ | Sectional curvature of a nondegenerate two-plane $\sigma$; undefined on degenerate planes |
 | $\operatorname{Ric}$, $S$, $G = \operatorname{Ric}-\frac12Sg$ | Ricci tensor, scalar curvature, Einstein tensor |

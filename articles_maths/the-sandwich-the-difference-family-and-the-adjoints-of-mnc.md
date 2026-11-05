@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The three questions.** Three constructions sit beside the two-sided products and are read through them: the **adjoints**, which are the two-sided products taken with respect to a form; the **sandwich** $\Theta_{A}=L_{A}R_{A^{*}}$, which is the member whose second parameter is the star of the first; and the **difference family** $L_{A}-R_{B}$, which is the operator $X\mapsto AX-XB$ and is the general Sylvester operator. This article computes the three and relates them to the cone of products.
+**The three questions.** Three constructions sit beside the two-sided products and are read through them: the **adjoints**, which are the two-sided products taken with respect to a form; the **sandwich** $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$, which is the member whose second parameter is the star of the first; and the **difference family** $L_{A}-R_{B}$, which is the operator $X\mapsto AX-XB$ and is the general Sylvester operator. This article computes the three and relates them to the cone of products.
 
 **The result in one line.** The transpose, the plain adjoint and the Hilbert–Schmidt adjoint act on the parameters and never exchange the two slots; the sandwich is a monoid under composition, positive only on its Hermitian part, of rank $(\operatorname{rank}A)^{2}$; and the difference family is a subspace of dimension $2n^{2}-1$ whose members are the intertwiners of the pair.
 
@@ -142,27 +142,27 @@ of real dimension $2n^{2}-1$. At $n=2$ the real dimension is $7$, equal to the c
 
 **Definition.** The **sandwich** by $A$ is
 $$
-\Theta_{A}=L_{A}R_{A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
+\mathrm{Sd}_{A}=L_{A}R_{A^{*}},\qquad \mathrm{Sd}_{A}(X)=AXA^{*}.
 $$
 
 **Theorem (the sandwich family is a monoid).** For all $A$ and $B$,
 $$
-\Theta_{A}\Theta_{B}=\Theta_{AB},\qquad \Theta_{\mathrm I_{n}}=\mathrm I_{N}.
+\mathrm{Sd}_{A}\mathrm{Sd}_{B}=\mathrm{Sd}_{AB},\qquad \mathrm{Sd}_{\mathrm I_{n}}=\mathrm I_{N}.
 $$
 
 *Proof.* By the composition law, $L_{A}R_{A^{*}}L_{B}R_{B^{*}}=L_{AB}R_{\,B^{*}A^{*}}=L_{AB}R_{(AB)^{*}}$. The identity is the sandwich of the identity.
 
 **The composition is not reversed.** The sandwich is the subfamily on which the two slots are tied by the star, and the reversal of the second slot is exactly undone by the star: $(AB)^{*}=B^{*}A^{*}$. **The sandwich family is the quotient of the multiplicative monoid of the algebra by the unit circle, inside the monoid of all products.**
 
-**The two-sided nature of the tie.** The map $A\mapsto\Theta_{A}$ is not injective: $\Theta_{A}=\Theta_{B}$ for nonzero $A,B$ exactly when $B=\lambda A$ with $|\lambda|=1$, by the fibre theorem and the reality of the star. The image is therefore a real cone of real dimension $2n^{2}-1$, and it is the **Hermitian subcone** of the complex cone.
+**The two-sided nature of the tie.** The map $A\mapsto\mathrm{Sd}_{A}$ is not injective: $\mathrm{Sd}_{A}=\mathrm{Sd}_{B}$ for nonzero $A,B$ exactly when $B=\lambda A$ with $|\lambda|=1$, by the fibre theorem and the reality of the star. The image is therefore a real cone of real dimension $2n^{2}-1$, and it is the **Hermitian subcone** of the complex cone.
 
 ### The Invariants
 
 **Theorem.** Let $r=\operatorname{rank}A$. Then
 $$
-\operatorname{rank}\Theta_{A}=r^{2},\qquad
-\operatorname{tr}\Theta_{A}=|\operatorname{tr}A|^{2},\qquad
-\det\Theta_{A}=|\det A|^{2n}.
+\operatorname{rank}\mathrm{Sd}_{A}=r^{2},\qquad
+\operatorname{tr}\mathrm{Sd}_{A}=|\operatorname{tr}A|^{2},\qquad
+\det\mathrm{Sd}_{A}=|\det A|^{2n}.
 $$
 
 *Proof.* The matrix is $A^{*\mathsf T}\otimes A=\bar A\otimes A$, whose rank is $r^{2}$, whose trace is $\operatorname{tr}\bar A\operatorname{tr}A$ and whose determinant is $(\det\bar A\det A)^{n}$.
@@ -175,26 +175,26 @@ $$
 
 **Theorem (the self-adjoint and the positive sandwiches).** The adjoint of a sandwich is the sandwich of the adjoint,
 $$
-\Theta_{A}^{\dagger}=\Theta_{A^{*}},
+\mathrm{Sd}_{A}^{\dagger}=\mathrm{Sd}_{A^{*}},
 $$
-so $\Theta_{A}$ is self-adjoint for the Hilbert–Schmidt form exactly when $A$ is a scalar multiple of a Hermitian matrix. In that case, with eigenvalues $a_{1},\dots,a_{n}$ in an orthonormal eigenbasis,
+so $\mathrm{Sd}_{A}$ is self-adjoint for the Hilbert–Schmidt form exactly when $A$ is a scalar multiple of a Hermitian matrix. In that case, with eigenvalues $a_{1},\dots,a_{n}$ in an orthonormal eigenbasis,
 $$
-\langle \Theta_{A}X,X\rangle_{\mathrm{HS}}=\operatorname{tr}(AX^{*}AX)=\sum_{k,i}a_{k}a_{i}|X_{ki}|^{2},
+\langle \mathrm{Sd}_{A}X,X\rangle_{\mathrm{HS}}=\operatorname{tr}(AX^{*}AX)=\sum_{k,i}a_{k}a_{i}|X_{ki}|^{2},
 $$
 and the form is positive semidefinite exactly when the $a_{k}$ have one sign, that is when $A$ is a scalar multiple of a positive or negative semidefinite matrix. In every case
 $$
-\ker\Theta_{A}=\{X:AXA^{*}=0\},\qquad \dim\ker\Theta_{A}=n^{2}-r^{2}.
+\ker\mathrm{Sd}_{A}=\{X:AXA^{*}=0\},\qquad \dim\ker\mathrm{Sd}_{A}=n^{2}-r^{2}.
 $$
 
-*Proof.* The adjoint of $L_{A}R_{B}$ is $L_{A^{*}}R_{B^{*}}$, so $(\Theta_{A})^{\dagger}=L_{A^{*}}R_{A}=\Theta_{A^{*}}$, and $L_{A^{*}}R_{A}=L_{A}R_{A^{*}}$ requires $A^{*}=\lambda A$ with $|\lambda|=1$ by the fibre theorem, that is $A$ a scalar multiple of a Hermitian matrix. For a Hermitian $A$, diagonalise it; the entry $(k,i)$ of $\Theta_{A}X$ is $a_{k}X_{ki}a_{i}$ and the scalar product with $X$ gives the sum of the display, which is a sum of real terms of the sign of $a_{k}a_{i}$. If two eigenvalues have opposite signs the terms $a_{k}a_{i}|X_{ki}|^{2}$ take both signs, so the form is indefinite; if they have one sign it is semidefinite, and it vanishes only on the block of the support of $A$. The kernel is $\{X:AXA^{*}=0\}$, that is the set of $X$ carrying the row space of $A$ into the kernel of $A$; in the Hermitian case at hand it is $\{X:PXP=0\}$ for $P$ the support projection of $A$, and its dimension is $n^{2}-r^{2}$ by the rank formula above. In the semidefinite case it is also the isotropic set of the form, by the equality case of Cauchy–Schwarz.
+*Proof.* The adjoint of $L_{A}R_{B}$ is $L_{A^{*}}R_{B^{*}}$, so $(\mathrm{Sd}_{A})^{\dagger}=L_{A^{*}}R_{A}=\mathrm{Sd}_{A^{*}}$, and $L_{A^{*}}R_{A}=L_{A}R_{A^{*}}$ requires $A^{*}=\lambda A$ with $|\lambda|=1$ by the fibre theorem, that is $A$ a scalar multiple of a Hermitian matrix. For a Hermitian $A$, diagonalise it; the entry $(k,i)$ of $\mathrm{Sd}_{A}X$ is $a_{k}X_{ki}a_{i}$ and the scalar product with $X$ gives the sum of the display, which is a sum of real terms of the sign of $a_{k}a_{i}$. If two eigenvalues have opposite signs the terms $a_{k}a_{i}|X_{ki}|^{2}$ take both signs, so the form is indefinite; if they have one sign it is semidefinite, and it vanishes only on the block of the support of $A$. The kernel is $\{X:AXA^{*}=0\}$, that is the set of $X$ carrying the row space of $A$ into the kernel of $A$; in the Hermitian case at hand it is $\{X:PXP=0\}$ for $P$ the support projection of $A$, and its dimension is $n^{2}-r^{2}$ by the rank formula above. In the semidefinite case it is also the isotropic set of the form, by the equality case of Cauchy–Schwarz.
 
-**The positivity is not a property of the family.** The sandwich of a general element is not self-adjoint and the form $\langle\Theta_{A}X,X\rangle_{\mathrm{HS}}$ is not even real: the identity $\Theta_{A}^{\dagger}=\Theta_{A^{*}}$ shows that the sandwich of $A$ is the adjoint of the sandwich of $A^{*}$ and not of itself. **Only the Hermitian part of the family is a family of positive operators, and the sandwich of a positive element is the operator of a positive quadratic form.** The complex cone of products has no positivity at all.
+**The positivity is not a property of the family.** The sandwich of a general element is not self-adjoint and the form $\langle\mathrm{Sd}_{A}X,X\rangle_{\mathrm{HS}}$ is not even real: the identity $\mathrm{Sd}_{A}^{\dagger}=\mathrm{Sd}_{A^{*}}$ shows that the sandwich of $A$ is the adjoint of the sandwich of $A^{*}$ and not of itself. **Only the Hermitian part of the family is a family of positive operators, and the sandwich of a positive element is the operator of a positive quadratic form.** The complex cone of products has no positivity at all.
 
 **The eigenstructure.** Let $A$ be diagonalisable with eigenbasis $u_{1},\dots,u_{n}$ and eigenvalues $\lambda_{1},\dots,\lambda_{n}$. The $n^{2}$ rank-one matrices $u_{i}u_{j}^{*}$ are a basis of the algebra and satisfy
 $$
-\Theta_{A}\bigl(u_{i}u_{j}^{*}\bigr)=\lambda_{i}\bar\lambda_{j}\,u_{i}u_{j}^{*},
+\mathrm{Sd}_{A}\bigl(u_{i}u_{j}^{*}\bigr)=\lambda_{i}\bar\lambda_{j}\,u_{i}u_{j}^{*},
 $$
-so the spectrum of the sandwich is the $n^{2}$ numbers $\lambda_{i}\bar\lambda_{j}$ and the sandwich is diagonal in that basis. The eigenspace of $\Theta_{A}$ at the value $\lambda_{i}\bar\lambda_{j}$ is spanned by the $L_{P_{i}}R_{P_{j}}$ of the pairs with that product, and those operators are mutually orthogonal projectors, $L_{P_{i}}R_{P_{j}}L_{P_{k}}R_{P_{l}}=\delta_{ik}\delta_{jl}L_{P_{i}}R_{P_{j}}$; the spectral projector is their sum, and it is the single term $L_{P_{i}}R_{P_{j}}$ exactly when the products $\lambda_{i}\bar\lambda_{j}$ are distinct. **The sandwich carries the spectral data of the element into the two-sided operators, with one index on each side.**
+so the spectrum of the sandwich is the $n^{2}$ numbers $\lambda_{i}\bar\lambda_{j}$ and the sandwich is diagonal in that basis. The eigenspace of $\mathrm{Sd}_{A}$ at the value $\lambda_{i}\bar\lambda_{j}$ is spanned by the $L_{P_{i}}R_{P_{j}}$ of the pairs with that product, and those operators are mutually orthogonal projectors, $L_{P_{i}}R_{P_{j}}L_{P_{k}}R_{P_{l}}=\delta_{ik}\delta_{jl}L_{P_{i}}R_{P_{j}}$; the spectral projector is their sum, and it is the single term $L_{P_{i}}R_{P_{j}}$ exactly when the products $\lambda_{i}\bar\lambda_{j}$ are distinct. **The sandwich carries the spectral data of the element into the two-sided operators, with one index on each side.**
 
 ## The Difference Family
 
@@ -254,7 +254,7 @@ With $\operatorname{tr}L_{A^{2}}=n\operatorname{tr}A^{2}$ and $\operatorname{tr}
 
 The transpose of a two-sided operator is $L_{A^{\mathsf T}}R_{B^{\mathsf T}}$ and is also its adjoint for the trace bilinear form; the Hilbert–Schmidt adjoint is $L_{A^{*}}R_{B^{*}}$. Both conjugate the two parameters and neither exchanges the slots, and this is the contrast with the quaternionic plain form, whose adjoint is the slot exchange. The isometry groups are $\mathrm{O}(n,\mathbb{C})\times\mathrm{O}(n,\mathbb{C})$ modulo the scalars for the trace form and $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars for the Hilbert–Schmidt form, of complex dimension $n^{2}-n$ and real dimension $2n^{2}-1$.
 
-The sandwich $\Theta_{A}=L_{A}R_{A^{*}}$ is a monoid under composition, $\Theta_{A}\Theta_{B}=\Theta_{AB}$, of rank $r^{2}$, of trace $|\operatorname{tr}A|^{2}$, of determinant $|\det A|^{2n}$, and of kernel dimension $n^{2}-r^{2}$. Its image is the real cone of real dimension $2n^{2}-1$. **It is self-adjoint only for $A$ a multiple of a Hermitian matrix, and positive semidefinite only for $A$ a multiple of a semidefinite one**, since $\Theta_{A}^{\dagger}=\Theta_{A^{*}}$.
+The sandwich $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ is a monoid under composition, $\mathrm{Sd}_{A}\mathrm{Sd}_{B}=\mathrm{Sd}_{AB}$, of rank $r^{2}$, of trace $|\operatorname{tr}A|^{2}$, of determinant $|\det A|^{2n}$, and of kernel dimension $n^{2}-r^{2}$. Its image is the real cone of real dimension $2n^{2}-1$. **It is self-adjoint only for $A$ a multiple of a Hermitian matrix, and positive semidefinite only for $A$ a multiple of a semidefinite one**, since $\mathrm{Sd}_{A}^{\dagger}=\mathrm{Sd}_{A^{*}}$.
 
 The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kernel the intertwiners, invertible exactly for disjoint spectra, and spanning a subspace of dimension $2n^{2}-1$. The polarisation $2L_{A}R_{B}=(L_{A}+R_{B})^{2}-L_{A^{2}}-R_{B^{2}}$ writes every product as a quadratic expression in the difference family. **The products are a cone, the differences a subspace, the sandwiches a monoid with a positive part; the three objects carry the same dimension count and three different structures.**
 
@@ -267,8 +267,8 @@ The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kern
 | ${}^{\approx}$ | the adjoint for the trace form, equal to the transpose |
 | $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y)$ | the Hilbert–Schmidt form, definite |
 | ${}^{\dagger}$ | the Hilbert–Schmidt adjoint, $L_{A^{*}}R_{B^{*}}$ |
-| $\Theta_{A}=L_{A}R_{A^{*}}$ | the sandwich, $X\mapsto AXA^{*}$ |
-| $r$ | the rank of $A$, giving $\operatorname{rank}\Theta_{A}=r^{2}$ |
+| $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the sandwich, $X\mapsto AXA^{*}$ |
+| $r$ | the rank of $A$, giving $\operatorname{rank}\mathrm{Sd}_{A}=r^{2}$ |
 | $L_{A}-R_{B}$ | the Sylvester operator $X\mapsto AX-XB$ |
 | $2n^{2}-1$ | the complex dimension of the cone and of the difference span; the real dimension of the sandwich cone and of the skew sector |
 

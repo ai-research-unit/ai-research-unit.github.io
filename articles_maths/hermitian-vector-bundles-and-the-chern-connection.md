@@ -65,10 +65,10 @@ $$
 where $\omega^*$ is the conjugate transpose of the matrix of $1$-forms. The metric-compatible connections on $E$ form an affine space modelled on the sections of $T^*M \otimes \mathfrak{u}(E,h)$, the $h$-anti-Hermitian endomorphism-valued $1$-forms:
 
 $$
-\omega' = \omega + \theta, \qquad \theta^* = -\theta .
+\omega' = \omega + A, \qquad A^* = -A .
 $$
 
-*Proof.* Differentiating $h(s,t) = \bar s^T H t$ and substituting $\nabla = d+\omega$ gives $dh(s,t) = \overline{(ds+\omega s)}^T H t + \bar s^T H(dt + \omega t)$, and comparing with $h(\nabla s,t)+h(s,\nabla t)$ the terms $ds, dt$ cancel and leave $dH = \omega^*H + H\omega$. If $\omega'$ is another metric-compatible form, then $\theta = \omega'-\omega$ satisfies $\theta^*H + H\theta = 0$, that is, $H^{-1}\theta^* H = -\theta$, which is the anti-Hermitian condition for the $\theta$ read through the metric; and every such $\theta$ preserves the equation.
+*Proof.* Differentiating $h(s,t) = \bar s^T H t$ and substituting $\nabla = d+\omega$ gives $dh(s,t) = \overline{(ds+\omega s)}^T H t + \bar s^T H(dt + \omega t)$, and comparing with $h(\nabla s,t)+h(s,\nabla t)$ the terms $ds, dt$ cancel and leave $dH = \omega^*H + H\omega$. If $\omega'$ is another metric-compatible form, then $A = \omega'-\omega$ satisfies $A^*H + HA = 0$, that is, $H^{-1}A^* H = -A$, which is the anti-Hermitian condition for the $A$ read through the metric; and every such $A$ preserves the equation.
 
 ### The Adjoint Interpretation
 
@@ -125,26 +125,26 @@ of type $(1,0)$, that is, $\nabla = \partial + \bar\partial + H^{-1}\partial H$ 
 **Theorem.** The curvature of the Chern connection is
 
 $$
-\boxed{\;\Theta = d\omega + \omega\wedge\omega = \bar\partial\bigl(H^{-1}\partial H\bigr)\;},
+\boxed{\;\Omega = d\omega + \omega\wedge\omega = \bar\partial\bigl(H^{-1}\partial H\bigr)\;},
 $$
 
 it has no component of type $(0,2)$, and it is of type $(1,1)$ and $h$-skew-Hermitian,
 
 $$
-\Theta = \Theta^{1,1}, \qquad \Theta^* = -\Theta .
+\Omega = \Omega^{1,1}, \qquad \Omega^* = -\Omega .
 $$
 
-*Proof.* The $(0,2)$-part of $d\omega+\omega\wedge\omega$ is $\bar\partial\omega^{0,1}+\omega^{0,1}\wedge\omega^{0,1}$, and in a holomorphic frame $\omega^{0,1}=0$, so only $\bar\partial(H^{-1}\partial H)$ survives, which is of type $(1,1)$ because it is $\bar\partial$ of a $(1,0)$-form. For the skew-Hermitian property, differentiate the metric-compatibility equation $dH = \omega^*H+H\omega$ and use the definition of the curvature to obtain $\Theta^*H + H\Theta = 0$, which is the anti-Hermitian condition; the details are the standard computation of the curvature of a metric connection, as in *Fibre Bundles, Connections and Curvature*.
+*Proof.* The $(0,2)$-part of $d\omega+\omega\wedge\omega$ is $\bar\partial\omega^{0,1}+\omega^{0,1}\wedge\omega^{0,1}$, and in a holomorphic frame $\omega^{0,1}=0$, so only $\bar\partial(H^{-1}\partial H)$ survives, which is of type $(1,1)$ because it is $\bar\partial$ of a $(1,0)$-form. For the skew-Hermitian property, differentiate the metric-compatibility equation $dH = \omega^*H+H\omega$ and use the definition of the curvature to obtain $\Omega^*H + H\Omega = 0$, which is the anti-Hermitian condition; the details are the standard computation of the curvature of a metric connection, as in *Fibre Bundles, Connections and Curvature*.
 
-**Corollary.** On a holomorphic line bundle, the curvature is $\Theta = \bar\partial\partial\log h = -\partial\bar\partial\log h$ with $h$ the metric in a holomorphic frame; the form $\frac{i}{2\pi}\Theta$ is real and closed, so it defines a real cohomology class, the first Chern class of the Hermitian line bundle, and the computation of the Chern classes from this curvature is the next article of the group.
+**Corollary.** On a holomorphic line bundle, the curvature is $\Omega = \bar\partial\partial\log h = -\partial\bar\partial\log h$ with $h$ the metric in a holomorphic frame; the form $\frac{i}{2\pi}\Omega$ is real and closed, so it defines a real cohomology class, the first Chern class of the Hermitian line bundle, and the computation of the Chern classes from this curvature is the next article of the group.
 
-**Example.** Let $M = \mathbb{C}$ with the standard complex structure and let $E$ be the trivial line bundle with the metric $h(z) = \exp(-\lvert z\rvert^2)$. In the holomorphic frame the Chern connection form is $\omega = h^{-1}\partial h = -\bar z\,dz$, the curvature is $\Theta = \bar\partial(-\bar z\,dz) = dz\wedge d\bar z$, and the first Chern form is $\frac{i}{2\pi}dz\wedge d\bar z$, the area form of the plane carried by the bundle metric; the curvature measures the failure of the metric to be the constant one, and it is the local model of the Fubini–Study connection.
+**Example.** Let $M = \mathbb{C}$ with the standard complex structure and let $E$ be the trivial line bundle with the metric $h(z) = \exp(-\lvert z\rvert^2)$. In the holomorphic frame the Chern connection form is $\omega = h^{-1}\partial h = -\bar z\,dz$, the curvature is $\Omega = \bar\partial(-\bar z\,dz) = dz\wedge d\bar z$, and the first Chern form is $\frac{i}{2\pi}dz\wedge d\bar z$, the area form of the plane carried by the bundle metric; the curvature measures the failure of the metric to be the constant one, and it is the local model of the Fubini–Study connection.
 
 ## Summary
 
 A Hermitian metric on a complex vector bundle is a smooth family of inner products, locally a positive-definite Hermitian matrix $H$ transforming by $H'=g^*Hg$; it is equivalent to a reduction of the structure group to $\mathrm{U}(k)$, and it is a conjugate-linear isomorphism $\flat:\bar E\to E^*$, the involution that this group of the Part records. A connection is metric-compatible when $d\,h(s,t)=h(\nabla s,t)+h(s,\nabla t)$, equivalently $dH=\omega^*H+H\omega$; the metric-compatible connections form an affine space modelled on the $h$-anti-Hermitian endomorphism-valued $1$-forms, and the condition is the self-adjointness of the connection with respect to the fibrewise metric.
 
-A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, the integrability condition; a holomorphic frame is one in which it is the componentwise $\bar\partial$. On a holomorphic Hermitian bundle there is a unique connection compatible with both the metric and the holomorphic structure, the Chern connection; in a holomorphic frame its connection form is $\omega=H^{-1}\partial H$, of type $(1,0)$, and its curvature is $\Theta=\bar\partial(H^{-1}\partial H)$, of type $(1,1)$ and skew-Hermitian. On a line bundle $\Theta=\bar\partial\partial\log h$, the local model of the first Chern form, and the general Chern forms of the Hermitian bundle are the subject of the next article.
+A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, the integrability condition; a holomorphic frame is one in which it is the componentwise $\bar\partial$. On a holomorphic Hermitian bundle there is a unique connection compatible with both the metric and the holomorphic structure, the Chern connection; in a holomorphic frame its connection form is $\omega=H^{-1}\partial H$, of type $(1,0)$, and its curvature is $\Omega=\bar\partial(H^{-1}\partial H)$, of type $(1,1)$ and skew-Hermitian. On a line bundle $\Omega=\bar\partial\partial\log h$, the local model of the first Chern form, and the general Chern forms of the Hermitian bundle are the subject of the next article.
 
 ## Summary of Notation
 
@@ -158,12 +158,12 @@ A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, 
 | $\mathrm{U}(k)$, unitary frame bundle | Reduction of the structure group by a Hermitian metric |
 | $d\,h(s,t) = h(\nabla s,t)+h(s,\nabla t)$ | Metric compatibility |
 | $dH = \omega^*H + H\omega$ | Metric compatibility in a frame; $\omega^*=\bar\omega^{\,T}$ |
-| $\mathfrak{u}(E,h)$, $\theta^*=-\theta$ | The affine space of metric connections; anti-Hermitian difference |
+| $\mathfrak{u}(E,h)$, $A^*=-A$ | The affine space of metric connections; anti-Hermitian difference |
 | $\bar\partial_E$, $\bar\partial_E^2=0$ | Holomorphic structure and its integrability |
 | $(n,m)$-forms, $\Omega^{0,1}(M;E)$ | Type decomposition; forward reference to Part IV |
 | Chern connection | The unique $\nabla$ with $\nabla^{0,1}=\bar\partial_E$ and $\nabla$ metric-compatible |
 | $\omega = H^{-1}\partial H$ | Chern connection form in a holomorphic frame; type $(1,0)$ |
-| $\Theta = d\omega+\omega\wedge\omega = \bar\partial(H^{-1}\partial H)$ | Curvature of the Chern connection; type $(1,1)$, skew-Hermitian |
+| $\Omega = d\omega+\omega\wedge\omega = \bar\partial(H^{-1}\partial H)$ | Curvature of the Chern connection; type $(1,1)$, skew-Hermitian |
 
 ## Further Reading
 

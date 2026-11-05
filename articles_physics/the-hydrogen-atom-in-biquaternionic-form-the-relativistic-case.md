@@ -26,7 +26,7 @@ The title covers the relativistic case as the framework's algebraic structures r
 The framework's four-potential is the material-sector object
 
 $$
-\tilde A = \frac{i\phi}{c}\,e_t + \vec A \in \mathbb{M}_-,
+\tilde A = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-,
 $$
 
 and a static point nucleus is the special case $\vec A = 0$ with $\phi = \mathfrak{Z}e/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $ϙ$ in it is $ϙ\phi$, which for the electron, $ϙ = -e$, is $ϙ\phi = -e\mathfrak{Z}e/(4\pi\epsilon_0 r) = -\kappa/r$. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is **input**: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling
@@ -560,7 +560,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde Q^\natural$ | Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $\tilde\nabla^\natural$, $\tilde A^\natural$, $\tilde\nabla^{\mathrm{gco},\natural}$ are its images |
-| $\tilde A = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ | Electromagnetic four-potential |
+| $\tilde A = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Electromagnetic four-potential |
 | $V(r) = ϙ\phi = -\kappa/r$ | Coulomb potential energy |
 | $\kappa = \mathfrak{Z}e^2/(4\pi\epsilon_0) = \mathfrak{Z}\alpha\,\hbar c$ | Coulomb coupling |
 | $\mathfrak{Z}$ | Nuclear charge number; $\kappa=\mathfrak{Z}\alpha\hbar c$ |

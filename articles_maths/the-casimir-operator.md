@@ -76,15 +76,15 @@ The Casimir element is the image of a canonical invariant tensor, and under the 
 **Definition.** The **invariant tensor** of the Killing form is
 
 $$
-\theta=\sum_{i=1}^{m}x_i\otimes \check x_i\in\mathrm{G}\otimes_K\mathrm{G}.
+\vartheta^{\mathrm{cas}}=\sum_{i=1}^{m}x_i\otimes \check x_i\in\mathrm{G}\otimes_K\mathrm{G}.
 $$
 
-It is independent of the basis, and it is invariant under the diagonal action of $\mathrm{G}$: $(\operatorname{ad}_x\otimes1+1\otimes\operatorname{ad}_x)\theta=0$.
+It is independent of the basis, and it is invariant under the diagonal action of $\mathrm{G}$: $(\operatorname{ad}_x\otimes1+1\otimes\operatorname{ad}_x)\vartheta^{\mathrm{cas}}=0$.
 
-**Proposition.** Under the linear isomorphism $\mathrm{G}\otimes_K\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ that sends $u\otimes v$ to the operator $z\mapsto\kappa(v,z)\,u$, the tensor $\theta$ corresponds to the identity:
+**Proposition.** Under the linear isomorphism $\mathrm{G}\otimes_K\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ that sends $u\otimes v$ to the operator $z\mapsto\kappa(v,z)\,u$, the tensor $\vartheta^{\mathrm{cas}}$ corresponds to the identity:
 
 $$
-\theta\longmapsto \mathrm{id}_{\mathrm{G}}.
+\vartheta^{\mathrm{cas}}\longmapsto \mathrm{id}_{\mathrm{G}}.
 $$
 
 **Proof.** The image of $z$ is $\sum_i\kappa(\check x_i,z)x_i$. Writing $z=\sum_j z_jx_j$, the dual-basis property gives $\kappa(\check x_i,z)=z_i$, so the image is $\sum_i z_ix_i=z$.
@@ -101,7 +101,7 @@ $$
 \Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[\check x_i,x]]=x\;} .
 $$
 
-**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[\check x_i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$.
+**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[\check x_i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\vartheta^{\mathrm{cas}},\vartheta^{\mathrm{cas}}+2\rho)$, with $\vartheta^{\mathrm{cas}}$ the highest root, and the normalisation of the Killing form makes this equal to $1$.
 
 
 ## Tensor Products
@@ -150,7 +150,7 @@ one has $ef+fe=\mathrm{id}$ and $h^2=\mathrm{id}$, so $\Omega=\tfrac14\mathrm{id
 
 The **Casimir operator** of a representation $\pi$ of a semisimple Lie algebra is the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(\check x_i)$ attached to the Casimir element $\Omega$ of $\mathrm{U}(\mathrm{G})$; it is independent of the choice of basis, and it commutes with the action, $[\Omega_\pi,\pi(x)]=0$, so it is a $\mathrm{G}$-module endomorphism. It therefore preserves every submodule and descends to every quotient, and on an irreducible module it is a scalar, namely $(\lambda,\lambda+2\rho)$ for $V(\lambda)$. Because the eigenvalues of distinct highest weights are distinct, the eigenspaces of $\Omega_\pi$ on a completely reducible module are exactly the isotypic components, so the Casimir operator separates them and its eigenspace projections are the isotypic projections.
 
-The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otimes \check x_i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(\check x_i)$. In the regular representation it is left multiplication by $\Omega$, hence an element of $\operatorname{End}_{\mathrm{U}(\mathrm{G})}(\mathrm{U}(\mathrm{G}))$, and it is the quadratic generator of the centre of $\mathrm{U}(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
+The Casimir element is the image of the invariant tensor $\vartheta^{\mathrm{cas}}=\sum_ix_i\otimes \check x_i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(\check x_i)$. In the regular representation it is left multiplication by $\Omega$, hence an element of $\operatorname{End}_{\mathrm{U}(\mathrm{G})}(\mathrm{U}(\mathrm{G}))$, and it is the quadratic generator of the centre of $\mathrm{U}(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
 
 ## Summary of Notation
 

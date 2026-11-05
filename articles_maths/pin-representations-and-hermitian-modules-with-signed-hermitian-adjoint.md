@@ -25,9 +25,9 @@ $$
 by the self-adjointness axiom; consequently the elements of the **unitary slice** act by unitary operators, $\rho(x)^{*}=\rho(x)^{-1}$ for $x\in U$, and the two-sided operator that the module naturally produces is the Hermitian sandwich
 
 $$
-\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
+\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\mathrm{Sd}_x(v)\bigr),
 \qquad\text{hence}\qquad
-\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
+\rho\bigl(\mathrm{Sd}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
 $$
 
 with $\varepsilon_x=(-1)^{k}$ the parity sign of $x$. The signed Hermitian sandwich of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* is therefore the two-sided operator whose action on $V$ matches the module conjugation **up to the parity sign**, exactly as in the inverse formulation, and the odd part of the pin group is again the part that the unsigned operator cannot describe.
@@ -97,14 +97,14 @@ $$
 **Proposition (the intertwining identities).** Let $v\in V$ and $x\in\mathrm{Pin}(V,\mathfrak{Q})$. Then
 
 $$
-\boxed{\;\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
+\boxed{\;\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\mathrm{Sd}_x(v)\bigr),
 \qquad
-\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*}\;},
+\rho\bigl(\mathrm{Sd}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*}\;},
 $$
 
-with $\varepsilon_x=(-1)^{k}$ the parity sign. For $x\in U$ the first identity reads $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\Theta_x(v))$.
+with $\varepsilon_x=(-1)^{k}$ the parity sign. For $x\in U$ the first identity reads $\rho(x)\rho(v)\rho(x)^{-1}=\rho(\mathrm{Sd}_x(v))$.
 
-*Proof.* $\rho(x)\rho(v)\rho(x)^{*}=\rho(x)\rho(v)\rho(x^{\dagger})=\rho(x\,v\,x^{\dagger})=\rho(\Theta_x(v))$ by the adjoint proposition and the multiplicativity of $\rho$. The second identity is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$.
+*Proof.* $\rho(x)\rho(v)\rho(x)^{*}=\rho(x)\rho(v)\rho(x^{\dagger})=\rho(x\,v\,x^{\dagger})=\rho(\mathrm{Sd}_x(v))$ by the adjoint proposition and the multiplicativity of $\rho$. The second identity is $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$.
 
 **Corollary (the reflection in the module).** Let $a\in V$ with $\mathfrak{Q}(a)\neq0$ and let $\rho_a$ be the reflection in $a^{\perp}$. Then for every $v\in V$
 
@@ -114,7 +114,7 @@ $$
 
 and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$: the odd element of the pin group realises the reflection in the module exactly when it is a slice-normalised vector.
 
-*Proof.* $\Theta_a=-\mathfrak{Q}(a)\rho_a$ by the vector proposition of the two-sided article, and $\rho(a)^{*}=\rho(a^{\dagger})=-\rho(\sigma(a))$; the slice statement is the reflection proposition of the group article.
+*Proof.* $\mathrm{Sd}_a=-\mathfrak{Q}(a)\rho_a$ by the vector proposition of the two-sided article, and $\rho(a)^{*}=\rho(a^{\dagger})=-\rho(\sigma(a))$; the slice statement is the reflection proposition of the group article.
 
 **Proposition (the odd elements are square roots).** For $a\in V$ one has $\rho(a)^{2}=\rho(a^{2})=\mathfrak{Q}(a)\mathrm{id}_S$, and for a product $x=a_1\cdots a_k\in\mathrm{Pin}$ one has $\rho(x)^{2}=\prod_iq(a_i)\,\mathrm{id}_S$, an invertible scalar. For $a$ on the slice $\rho(a)^{2}=-\mathrm{id}_S$, so $\rho(a)$ is a complex structure on the module.
 
@@ -130,16 +130,16 @@ and on the unitary slice, $\mathfrak{Q}(a)=-1$, this is $\rho(a)\rho(v)\rho(a)^{
 
 **Remark (the definite case).** For a definite real form the standard module form of *Hermitian Algebras* makes each Clifford coefficient skew-adjoint, $(e_j\cdot s,t)=-(s,e_j\cdot t)$, so an even element of $\mathrm{Pin}$ acts by an orthogonal operator and an odd element by the composition of an odd number of skew operators, with $\rho(a)^{2}=\mathfrak{Q}(a)\mathrm{id}_S$ of the sign of $\mathfrak{Q}(a)$. In the negative definite convention of the corpus, $\mathfrak{Q}(a)=-1$ on the slice, and the slice elements — the normalised roots of the reflection-group article among them — act unitarily, and their products span the compact groups. The compact real form is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
-**Remark (the dictionary with the inverse formulation).** Whenever $\sigma=\mathrm{id}$ and the elements considered lie on the slice, the two formulations give the same representation: $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$, and the intertwining identities above are those of *Pin Representations and Clifford Modules with Signed Inner Conjugation*. The Hermitian reading adds the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$, the unitarity on the slice, and the coupling of the module form to the algebra form; it adds no new representation.
+**Remark (the dictionary with the inverse formulation).** Whenever $\sigma=\mathrm{id}$ and the elements considered lie on the slice, the two formulations give the same representation: $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$, and the intertwining identities above are those of *Pin Representations and Clifford Modules with Signed Inner Conjugation*. The Hermitian reading adds the adjoint $\rho(x)^{*}=\rho(x^{\dagger})$, the unitarity on the slice, and the coupling of the module form to the algebra form; it adds no new representation.
 
 ## Summary
 
 The pin representation of a Hermitian Clifford module is the restriction of the algebra action to the pin group, $\rho(x)s=x\cdot s$, and it is one-sided by construction. The Hermitian structure contributes its **adjoint**, $\rho(x)^{*}=\rho(x^{\dagger})$, so the elements of the unitary slice act by unitary operators and the two-sided operator that the module produces is the Hermitian sandwich,
 
 $$
-\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\Theta_x(v)\bigr),
+\rho(x)\,\rho(v)\,\rho(x)^{*}=\rho\bigl(\mathrm{Sd}_x(v)\bigr),
 \qquad
-\rho\bigl(\Theta^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
+\rho\bigl(\mathrm{Sd}^{\alpha}_x(v)\bigr)=\varepsilon_x\,\rho(x)\,\rho(v)\,\rho(x)^{*},
 $$
 
 with $\varepsilon_x=(-1)^{k}$. The module conjugation intertwines the unsigned sandwich on the even part and its negative on the odd part, so the **signed** Hermitian sandwich is the operator whose action on $V$ agrees with the module action up to the parity sign; for a slice-normalised vector $a$, $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$, so the odd elements of the pin group realise the reflections in the module exactly on the slice, and $\rho(a)^{2}=-\mathrm{id}_S$ is a complex structure there. Chirality, irreducibility, the kernel and the real forms are as in the inverse formulation: the odd elements interchange the two chiral summands, which are Hermitian-orthogonal, the pin representation is irreducible where the spin representation splits into the two half-spin representations, and the kernel is the intersection of the pin group with the annihilator of the module. A pinor is a spinor of the whole algebra, a half-spinor one of the even part, and the Hermitian form restricts to each half and pairs them trivially.
@@ -152,8 +152,8 @@ with $\varepsilon_x=(-1)^{k}$. The module conjugation intertwines the unsigned s
 | $(x\cdot s,t)=(s,x^{\dagger}\cdot t)$ | Hermitian Clifford module, self-adjointness |
 | $\rho(x)^{*}=\rho(x^{\dagger})$ | Adjoint of the group action |
 | $\rho(x)^{*}=\rho(x)^{-1}$, $x\in U$ | Unitary operators on the slice |
-| $\rho(x)\rho(v)\rho(x)^{*}=\rho(\Theta_x(v))$ | Intertwining by the unsigned sandwich |
-| $\rho(\Theta^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$ | The parity sign |
+| $\rho(x)\rho(v)\rho(x)^{*}=\rho(\mathrm{Sd}_x(v))$ | Intertwining by the unsigned sandwich |
+| $\rho(\mathrm{Sd}^{\alpha}_x(v))=\varepsilon_x\rho(x)\rho(v)\rho(x)^{*}$ | The parity sign |
 | $\rho(a)\rho(v)\rho(a)^{-1}=\rho(\rho_a(v))$, $\mathfrak{Q}(a)=-1$ | Reflection in the module on the slice |
 | $\mathrm{Cl}^1\cdot S^{\pm}\subseteq S^{\mp}$ | Odd elements reverse chirality |
 

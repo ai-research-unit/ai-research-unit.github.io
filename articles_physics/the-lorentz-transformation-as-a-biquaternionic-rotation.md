@@ -196,7 +196,7 @@ and these differ by the insertion of $\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\ma
 
 ### Verification Against Component Formulas
 
-The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$, and apply the rotor conjugation with $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$.
+The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A$, and apply the rotor conjugation with $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$.
 
 The scalar part of $\tilde{A}_2$ is
 

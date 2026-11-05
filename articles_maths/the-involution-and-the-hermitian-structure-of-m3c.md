@@ -70,7 +70,7 @@ The Lie algebra of $U(3)$ is $\mathfrak{u}(3)$ and the Lie algebra of $SU(3)$ is
 
 **The Cartan involution.** The map
 $$
-\theta(A)=-A^{*}
+\mathrm{J}(A)=-A^{*}
 $$
 is a real-linear involution of $M_{3}(\mathbb{C})$. Its $+1$ eigenspace is $\mathfrak{u}(3)$ and its $-1$ eigenspace is $\operatorname{Herm}_{3}$; the decomposition
 $$
@@ -248,7 +248,7 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 | $U(3),SU(3)$ | the $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite Hermitian trace form |
 | $\|A\|_{\mathrm{F}}$ | the Frobenius norm |
-| $\theta(A)=-A^{*}$ | the Cartan involution |
+| $\mathrm{J}(A)=-A^{*}$ | the Cartan involution |
 
 ## Further Reading
 

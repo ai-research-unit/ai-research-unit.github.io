@@ -337,7 +337,7 @@ so the axial charge transported in a background is twice the index, the minus be
 | The functional measure $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ and the determinant | **Not supplied**; the fermionic path-integral apparatus, cited |
 | The Fujikawa coefficient, the Seeley–DeWitt expansion, and the index relation | **Transcribed**; standard |
 | The index theorem and the zero-mode count | **Outside**; the general gauge apparatus |
-| The $\theta$ parameter and the vacuum angle | **Outside**; the general gauge apparatus |
+| The $\theta^{\mathrm{vac}}$ parameter and the vacuum angle | **Outside**; the general gauge apparatus |
 | The rotation as the axial symmetry of the linear chiral pair | **Supplied**; the anomaly is the failure of that rotation to preserve the measure |
 
 ## Open Questions
@@ -350,7 +350,7 @@ so the axial charge transported in a background is twice the index, the minus be
 
 4. **The algebraic index.** The integrated anomaly is the index of the operator, and the index theorem is a statement about elliptic operators on manifolds. Whether the biquaternion formulation admits an algebraic index statement — a pairing between a class of the algebra and a cyclic cocycle — is a question of the corpus's general gauge apparatus and is not attempted here.
 
-5. **The $\theta$ dependence and the vacuum.** The anomaly makes the vacuum energy depend on a topological angle, and the resolution of the $\mathrm{U}(1)_A$ problem and the strong-CP problem involve that angle. Both belong to the general gauge apparatus; this article states the fermion-sector divergence and stops.
+5. **The $\theta^{\mathrm{vac}}$ dependence and the vacuum.** The anomaly makes the vacuum energy depend on a topological angle, and the resolution of the $\mathrm{U}(1)_A$ problem and the strong-CP problem involve that angle. Both belong to the general gauge apparatus; this article states the fermion-sector divergence and stops.
 
 ## Summary
 

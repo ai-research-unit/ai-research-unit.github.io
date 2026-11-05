@@ -33,7 +33,7 @@ The fundamental theorem of Riemannian geometry gives the metric a unique torsion
 |---|---|---|
 | the Levi-Civita connection $\nabla$ | the unique connection with $\nabla g = 0$ and zero torsion | *Riemannian Geometry*; *Curvature and Geodesics* |
 | the Christoffel symbols $\Gamma_{kij}$ | the coefficients of the connection in a chart | *Curvature and Geodesics* |
-| the connection form $\theta_{ij}$ | the connection in a frame, matrix-valued | *Curvature and Geodesics* |
+| the connection form $A_{ij}$ | the connection in a frame, matrix-valued | *Curvature and Geodesics* |
 | parallel transport $P_\gamma$ | the isometry of tangent spaces along a curve, defined by $\nabla$ | *Curvature and Geodesics* |
 | the holonomy group $\operatorname{Hol}_p$ | the group of parallel transports around the loops at $p$ | *Curvature and Geodesics* |
 | the geodesic equation $\nabla_{\gamma'}\gamma' = 0$ | the equation of a curve whose velocity is parallel | *Curvature and Geodesics* |
@@ -51,7 +51,7 @@ The curvature tensor is the failure of second covariant derivatives to commute, 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | the curvature tensor $R(X,Y)Z$ | the commutator of covariant derivatives, an algebraic curvature tensor | *Curvature and Geodesics* |
-| the curvature form $\mathcal{R} = d\theta + \theta\wedge\theta$ | the matrix-valued two-form of the connection in a frame | *Curvature and Geodesics* |
+| the curvature form $\mathcal{R} = dA + A\wedgeA$ | the matrix-valued two-form of the connection in a frame | *Curvature and Geodesics* |
 | the sectional curvature $K(\sigma) = R(v,w,w,v)$ | the curvature of a two-plane, the value that determines $R$ | *Curvature and Geodesics* |
 | the Ricci tensor $\operatorname{Ric}(X,Y)$ | the trace of the curvature, the average of the sectional curvatures | *Curvature and Geodesics* |
 | the scalar curvature $S$ | the trace of the Ricci tensor | *Curvature and Geodesics* |
@@ -127,7 +127,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $(M,g)$, $g_{ij}$, $ds^2$ | Riemannian manifold, metric coefficients, first fundamental form |
 | $L_g$, $d_g$, $\mathrm{vol}_g$ | Length, distance, volume form |
-| $\nabla$, $\Gamma_{kij}$, $\theta_{ij}$ | Levi-Civita connection, Christoffel symbols, connection form |
+| $\nabla$, $\Gamma_{kij}$, $A_{ij}$ | Levi-Civita connection, Christoffel symbols, connection form |
 | $R$, $\mathcal{R}$, $K(\sigma)$ | Curvature tensor, curvature form, sectional curvature |
 | $\operatorname{Ric}$, $S$, $G$ | Ricci tensor, scalar curvature, Einstein tensor |
 | $\exp_p$, $\operatorname{inj}(p)$ | Exponential map, injectivity radius |

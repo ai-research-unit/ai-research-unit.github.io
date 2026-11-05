@@ -7,7 +7,7 @@ The one-sided companion of the signed sandwich is the **signed left multiplicati
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X),
 $$
-obtained by taking the right factor of the signed sandwich $\Theta^{\alpha}_{a,b}(X) = a\alpha(X)b$ to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so it is the case $b = 1$ of the signed sandwich, its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are the solutions of $a\alpha(X) = X$. When the grade involution comes from a **unitary self-adjoint involution** $T$ of a Hermitian space $V$ and the element $a$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form of $E$, so that the one-sided signed operators of the geometry are the isometric ones; the unsigned left multiplication is the case of the trivial involution, and the difference between the two is the sign carried by $\alpha$.
+obtained by taking the right factor of the signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}(X) = a\alpha(X)b$ to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so it is the case $b = 1$ of the signed sandwich, its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are the solutions of $a\alpha(X) = X$. When the grade involution comes from a **unitary self-adjoint involution** $T$ of a Hermitian space $V$ and the element $a$ is unitary, the signed left multiplication is an isometry of the Hermitian trace form of $E$, so that the one-sided signed operators of the geometry are the isometric ones; the unsigned left multiplication is the case of the trivial involution, and the difference between the two is the sign carried by $\alpha$.
 
 The article has three sections: the signed left multiplication and its laws; the fixed elements and their computation through the involution; and the relation to the unsigned left multiplication, with the isometries. The unsigned and signed sandwiches are *The Signed Sandwich on a Complex Vector Space*, the previous articles of this group; the endomorphism algebra and its trace are *Algebras of Endomorphisms*; the fixed part of an involution and its dimension are *Involutive Linear Spaces*; the unitary group and the involution are *The Unitary and Symplectic Groups* and *Hermitian Geometry and the Unitary Group*. The unsigned case with its adjoint is *The Adjoint of the Left Multiplication on a Complex Vector Space*, the signed adjoint is *The Signed Adjoint of the Left Multiplication on a Complex Vector Space*, and the module-level variant is *The Graded Action on a Module over a Complex Vector Space*, all of this group. The group-level analogue is *The Signed Left Multiplication on a Symmetry Group*.
 
@@ -20,7 +20,7 @@ $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X) .
 $$
 
-**Proposition (the two factorisations).** $\Lambda^{\alpha}_{a}$ is the signed sandwich with right factor the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and
+**Proposition (the two factorisations).** $\Lambda^{\alpha}_{a}$ is the signed sandwich with right factor the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
 $$
 \boxed{\;\Lambda^{\alpha}_{a} = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}\;} ,
 $$

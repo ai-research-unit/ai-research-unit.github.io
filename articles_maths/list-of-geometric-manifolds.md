@@ -61,7 +61,7 @@ In dimension three the classification is by decomposition into geometric pieces,
 | $\mathbb{CP}^2$ and $\overline{\mathbb{CP}^2}$ | $4$ | — | intersection forms of rank $1$ | *Low-Dimensional Topology*; *Kähler Geometry* |
 | a $K3$ surface | $4$ | Ricci-flat | $b_2 = 22$, $h^{1,1} = 20$, $\chi = 24$ | *Calabi–Yau Manifolds* |
 | a Calabi–Yau threefold | $6$ | Ricci-flat | Hodge numbers $h^{1,1}, h^{2,1}$; $c_1 = 0$ | *Calabi–Yau Manifolds* |
-| a homotopy sphere $\Sigma \in \Theta_n$ | $n$ | — | $\Theta_n$ class; bounding obstruction $bP_{n+1}$ | *Cobordism and Surgery Theory* |
+| a homotopy sphere $\Sigma \in \mathrm{Sph}_n$ | $n$ | — | $\mathrm{Sph}_n$ class; bounding obstruction $bP_{n+1}$ | *Cobordism and Surgery Theory* |
 | a spin manifold | $n$ | — | spin structure; $\hat A$-genus; Dirac operator | *Spin Geometry* |
 
 The three-dimensional case is governed by Thurston's geometrisation theorem, proved by Perelman's Ricci flow, so that every closed three-manifold decomposes into pieces each of which is the quotient of one of the eight model geometries. The four-dimensional case is exceptional: the topological classification of the simply connected case is Freedman's, by the intersection form, while the smooth classification is obstructed by the gauge-theoretic invariants of Donaldson and Seiberg–Witten, and the two do not agree.
@@ -93,7 +93,7 @@ A topological manifold may carry several smooth structures, and the corpus recor
 |---|---|---|
 | a smooth structure on a topological manifold | a maximal compatible atlas, classifying the smooth manifolds | *Smooth Manifolds and Differential Geometry* |
 | an exotic sphere | a homotopy sphere homeomorphic but not diffeomorphic to $S^n$ | *Cobordism and Surgery Theory* |
-| the group $\Theta_n$ of homotopy spheres | the oriented homotopy $n$-spheres under connected sum, finite for $n \neq 4$ | *Cobordism and Surgery Theory* |
+| the group $\mathrm{Sph}_n$ of homotopy spheres | the oriented homotopy $n$-spheres under connected sum, finite for $n \neq 4$ | *Cobordism and Surgery Theory* |
 | an exotic $\mathbb{R}^4$ | a smooth structure on $\mathbb{R}^4$ not diffeomorphic to the standard one | *Low-Dimensional Topology* |
 | the failure of the $h$-cobordism theorem in dimension four | the obstruction that makes dimension four exceptional | *Low-Dimensional Topology* |
 | a wild manifold | a space that is not a manifold but shares some of its properties | *Wild and Exotic Manifolds* (planned) |
@@ -129,7 +129,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $S^n/\Gamma$, $\mathbf{H}^n/\Gamma$, $N/\Gamma$ | Spherical, hyperbolic and nilmanifold quotients |
 | $L(n,m)$ | Lens space |
 | $\chi$, $b_i$, $h^{n,m}$ | Euler characteristic, Betti numbers, Hodge numbers |
-| $\Theta_n$, $bP_{n+1}$ | Group of homotopy spheres; boundary of the parallelizable case |
+| $\mathrm{Sph}_n$, $bP_{n+1}$ | Group of homotopy spheres; boundary of the parallelizable case |
 | $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $Sp(n)\cdot Sp(1)$, $G_2$, $\mathrm{Spin}(7)$ | Holonomy groups |
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{C})$ | Grassmannian and flag manifold |
 | $\mathbb{Z}$ | The standard number systems of the corpus |

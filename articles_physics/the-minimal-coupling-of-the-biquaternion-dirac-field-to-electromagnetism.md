@@ -528,7 +528,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde\Psi_L, \tilde\Psi_R$ | The two parts of the field; the subscript takes two values and no more |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$, $\tilde{\Psi}^{*} = \overline{\tilde{\Psi}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Free biquaternion Dirac equation (massive chiral pair) |
-| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $\varkappa$ | A second central constant, in the relative phase $\tilde\Psi_R\mapsto\varkappa\tilde\Psi_R$, $\tilde\Psi_L\mapsto\varkappa^{-1}\tilde\Psi_L$ |

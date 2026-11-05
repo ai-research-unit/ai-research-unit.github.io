@@ -57,9 +57,9 @@ each to six decimal places, these being the exact ordinates of zeros of $\zeta$ 
 
 **Proof sketch (the method).** The Riemann–Siegel formula, obtained from the saddle-point analysis of the integral representation of $\zeta$, gives
 $$
-Z(t) = 2\sum_{n\leq N}\frac{\cos(\theta(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
+Z(t) = 2\sum_{n\leq N}\frac{\cos(\vartheta^{\mathrm{thf}}(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
 $$
-for the function $Z(t) = \exp(i\theta(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.
+for the function $Z(t) = \exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.
 
 **Remark (the extent of the verification).** The numerical verification of the hypothesis has reached the first $10^{13}$ zeros in computations without rigorous error bounds, and all the zeros with $\lvert\gamma\rvert < 3\cdot10^{12}$ in a rigorous computation; no zero off the line has ever been found, and none has ever been proved to exist.
 
@@ -111,7 +111,7 @@ $$
 
 **Proof sketch.** Expanding the logarithm of the Hadamard product for $\xi$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.
 
-**Theorem (Nyman–Beurling criterion).** For $0<\theta<1$ let $\rho_\theta(x) = \{\theta/x\}-\theta\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\theta$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.
+**Theorem (Nyman–Beurling criterion).** For $0<\vartheta^{\mathrm{nym}}<1$ let $\rho_\vartheta^{\mathrm{nym}}(x) = \{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\vartheta^{\mathrm{nym}}$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.
 
 **Remark (Weil's positivity criterion).** The explicit formula of *The Prime Number Theorem*, in Weil's form, expresses the sum $\sum_\rho h(\gamma)$ over the nontrivial zeros, for a suitable test function $h$, as an explicit distribution $W(h)$ whose terms involve the archimedean factor and the sum over the primes. The criterion, proved by Weil and reformulated by Bombieri, is that the Riemann hypothesis is equivalent to the positivity
 $$
@@ -226,11 +226,11 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 | $\Lambda(s)$ | $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
 | $N(T)$, $N(\sigma,T)$ | Number of zeros with $0<\gamma\leq T$; with $\beta>\sigma$, $\lvert\gamma\rvert\leq T$ |
 | $S(T)$ | $\frac1\pi\arg\zeta(\tfrac12+iT)$, the fluctuation in the count |
-| $Z(t)$, $\theta(t)$ | Riemann–Siegel function $\exp(i\theta(t))\zeta(\tfrac12+it)$ and its phase |
+| $Z(t)$, $\vartheta^{\mathrm{thf}}(t)$ | Riemann–Siegel function $\exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$ and its phase |
 | $M(x)$ | Mertens function $\sum_{n\leq x}\mu(n)$ |
 | $\sigma(n)$, $H_n$ | Divisor sum, $n$-th harmonic number |
 | $\lambda_n$ | Li coefficients, $\lambda_n = \sum_\rho(1-(1-1/\rho)^n)$ |
-| $\rho_\theta$ | Nyman–Beurling function $\{\theta/x\}-\theta\{1/x\}$ |
+| $\rho_\vartheta^{\mathrm{nym}}$ | Nyman–Beurling function $\{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$ |
 | $W(h)$, $h^{\mathrm{refl}}$ | Weil positivity functional and the reflection $h\mapsto h^{\mathrm{refl}}(x)=\overline{h(-x)}$ |
 | $H_\lambda$, $\Lambda$ | de Bruijn–Newman family, de Bruijn–Newman constant |
 | $F(\alpha,T)$ | Montgomery's pair-correlation function |

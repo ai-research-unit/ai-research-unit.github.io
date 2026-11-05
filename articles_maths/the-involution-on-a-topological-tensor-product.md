@@ -3,25 +3,25 @@
 
 ## Introduction
 
-Two involutions, one on each factor of a topological tensor product, induce an involution of the product by the formula $x \otimes y \mapsto \theta x \otimes \omega y$, and this induced involution is continuous for the projective and the injective topology and extends to both completions; a single involution of $E$ acting on $E \otimes E$ commutes with the **flip** $\tau(x \otimes y) = y \otimes x$, so it preserves the symmetric and the antisymmetric parts into which $E \otimes E$ splits when $2$ is invertible, and the involution of the product has fixed and negated parts computed from the four pieces of the two factors. Without nuclearity the projective and injective completions differ, and the induced involution is carried by each of them, with the flip continuous for both topologies and the symmetric and antisymmetric parts closed in each completion.
+Two involutions, one on each factor of a topological tensor product, induce an involution of the product by the formula $x \otimes y \mapsto \mathrm{J} x \otimes \omega y$, and this induced involution is continuous for the projective and the injective topology and extends to both completions; a single involution of $E$ acting on $E \otimes E$ commutes with the **flip** $\tau(x \otimes y) = y \otimes x$, so it preserves the symmetric and the antisymmetric parts into which $E \otimes E$ splits when $2$ is invertible, and the involution of the product has fixed and negated parts computed from the four pieces of the two factors. Without nuclearity the projective and injective completions differ, and the induced involution is carried by each of them, with the flip continuous for both topologies and the symmetric and antisymmetric parts closed in each completion.
 
 This article develops the involution of a topological tensor product. The projective and injective topologies, the canonical map, the universal property and the completions are *Topological Tensor Products*; the nuclear case, where the two completions coincide, is *Involutive Nuclear Spaces*; the continuous involution, the splitting and the extension to the completion are *Involutive Topological Linear Spaces* and *Locally Convex Spaces with an Involution*; the closed graph and the strong dual are *Involutive Fréchet Spaces* and *Duality Theory*. The graded tensor product and the sign rule of the graded category are *The Graded Action on a Module over a Topological Vector Space* and the graded-algebra category of this Part. No form, no adjoint and no Hilbert structure is used.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $E$ and $F$ are Hausdorff locally convex spaces over $\mathbb{K}$, $\theta$ and $\omega$ are continuous $\varsigma$-semilinear involutions of $E$ and $F$, the linear case is written $T$ and $S$, the summands are $E_{+} = E^{\theta}$, $E_{-} = E^{-}$, $F_{+} = F^{\omega}$, $F_{-} = F^{-}$, the flip is $\tau$, and the completions are $E \widehat{\otimes}_\pi F$ and $E \widehat{\otimes}_\varepsilon F$.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $E$ and $F$ are Hausdorff locally convex spaces over $\mathbb{K}$, $\mathrm{J}$ and $\omega$ are continuous $\varsigma$-semilinear involutions of $E$ and $F$, the linear case is written $T$ and $S$, the summands are $E_{+} = E^{\mathrm{J}}$, $E_{-} = E^{-}$, $F_{+} = F^{\omega}$, $F_{-} = F^{-}$, the flip is $\tau$, and the completions are $E \widehat{\otimes}_\pi F$ and $E \widehat{\otimes}_\varepsilon F$.
 
 ## The Involution on the Algebraic Tensor Product
 
-**Definition.** For continuous involutions $\theta$ of $E$ and $\omega$ of $F$ with the same scalar involution $\varsigma$, the **induced involution** is the map $\theta \otimes \omega$ on $E \otimes F$ determined by
+**Definition.** For continuous involutions $\mathrm{J}$ of $E$ and $\omega$ of $F$ with the same scalar involution $\varsigma$, the **induced involution** is the map $\mathrm{J} \otimes \omega$ on $E \otimes F$ determined by
 
 $$
-(\theta \otimes \omega)(x \otimes y) = \theta x \otimes \omega y ,
+(\mathrm{J} \otimes \omega)(x \otimes y) = \mathrm{J} x \otimes \omega y ,
 $$
 
-extended $\varsigma$-semilinearly to the whole tensor product; it is $\varsigma$-semilinear, hence linear when both factors are linear and antilinear when both are antilinear. (The map is well defined for $\varsigma$-semilinear factors precisely because the two bilinear relations give the same image, $\varsigma(r)\theta x\otimes\omega y$.)
+extended $\varsigma$-semilinearly to the whole tensor product; it is $\varsigma$-semilinear, hence linear when both factors are linear and antilinear when both are antilinear. (The map is well defined for $\varsigma$-semilinear factors precisely because the two bilinear relations give the same image, $\varsigma(r)\mathrm{J} x\otimes\omega y$.)
 
-**Proposition (the induced map is an involution).** The map $\theta \otimes \omega$ is an involution of $E \otimes F$ of the same kind as the factors, and it is continuous for the projective and the injective topology.
+**Proposition (the induced map is an involution).** The map $\mathrm{J} \otimes \omega$ is an involution of $E \otimes F$ of the same kind as the factors, and it is continuous for the projective and the injective topology.
 
-**Proof.** On a decomposable tensor $(\theta \otimes \omega)^{2}(x \otimes y) = \theta^{2}x \otimes \omega^{2}y = x \otimes y$, and the decomposable tensors span; the kind is read from the semilinearity. Continuity for the projective topology follows because $\theta \otimes \omega$ is the tensor product of the continuous maps $\theta$ and $\omega$, and for the injective topology because the topology is induced by the duality with the bounded bilinear forms and the involution acts continuously on those, by *Topological Tensor Products*.
+**Proof.** On a decomposable tensor $(\mathrm{J} \otimes \omega)^{2}(x \otimes y) = \mathrm{J}^{2}x \otimes \omega^{2}y = x \otimes y$, and the decomposable tensors span; the kind is read from the semilinearity. Continuity for the projective topology follows because $\mathrm{J} \otimes \omega$ is the tensor product of the continuous maps $\mathrm{J}$ and $\omega$, and for the injective topology because the topology is induced by the duality with the bounded bilinear forms and the involution acts continuously on those, by *Topological Tensor Products*.
 
 **Theorem (the signature of the product).** Let $T$ and $S$ be linear involutions. Then the induced involution of $E \otimes F$ has
 
@@ -52,15 +52,15 @@ the closures being taken in the completion.
 
 **Proof.** The flip is the canonical isomorphism of *Topological Tensor Products*, continuous for both topologies, and its square is the identity; the averaging maps $\frac12(\mathrm{id}\pm\tau)$ are continuous linear projections when $2$ is invertible, and the completion of a topological direct sum is the direct sum of the closures.
 
-**Theorem (the induced involution commutes with the flip).** For a continuous involution $\theta$ of $E$ the induced involution $\theta \otimes \theta$ of $E \otimes E$ commutes with the flip,
+**Theorem (the induced involution commutes with the flip).** For a continuous involution $\mathrm{J}$ of $E$ the induced involution $\mathrm{J} \otimes \mathrm{J}$ of $E \otimes E$ commutes with the flip,
 
 $$
-\boxed{\;(\theta \otimes \theta)\,\tau = \tau\,(\theta \otimes \theta)\;} ,
+\boxed{\;(\mathrm{J} \otimes \mathrm{J})\,\tau = \tau\,(\mathrm{J} \otimes \mathrm{J})\;} ,
 $$
 
-so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{sym}^{2}(E)$ the fixed part is $\mathrm{sym}^{2}(E_{+}) \oplus \mathrm{sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.
+so the symmetric and antisymmetric parts are $\mathrm{J} \otimes \mathrm{J}$-stable; on $\mathrm{sym}^{2}(E)$ the fixed part is $\mathrm{sym}^{2}(E_{+}) \oplus \mathrm{sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.
 
-**Proof.** $(\theta \otimes \theta)\tau(x \otimes y) = \theta y \otimes \theta x = \tau(\theta x \otimes \theta y) = \tau(\theta \otimes \theta)(x \otimes y)$, so the two commute; hence $\ker(\tau \mp \mathrm{id})$ is preserved. On a symmetrised product $x_{+}\otimes x_{+}' + x_{+}' \otimes x_{+}$ with both factors in $E_{+}$ the involution is the identity, and likewise for $E_{-}$; a cross term $x_{+}\otimes x_{-} + x_{-}\otimes x_{+}$ is sent to its negative, since $\theta x_{\pm} = \pm x_{\pm}$.
+**Proof.** $(\mathrm{J} \otimes \mathrm{J})\tau(x \otimes y) = \mathrm{J} y \otimes \mathrm{J} x = \tau(\mathrm{J} x \otimes \mathrm{J} y) = \tau(\mathrm{J} \otimes \mathrm{J})(x \otimes y)$, so the two commute; hence $\ker(\tau \mp \mathrm{id})$ is preserved. On a symmetrised product $x_{+}\otimes x_{+}' + x_{+}' \otimes x_{+}$ with both factors in $E_{+}$ the involution is the identity, and likewise for $E_{-}$; a cross term $x_{+}\otimes x_{-} + x_{-}\otimes x_{+}$ is sent to its negative, since $\mathrm{J} x_{\pm} = \pm x_{\pm}$.
 
 **Corollary (the involution on the symmetric and the antisymmetric tensor powers).** The induced involution restricts to involutions of the symmetric and the antisymmetric square, of the same kind, and their fixed and negated parts are those of the restrictions; over $\mathbb{K} = \mathbb{C}$ with an antilinear involution the restricted involutions are antilinear with the same signature, computed over $\mathbb{R}$.
 
@@ -77,9 +77,9 @@ $$
 
 **Proof.** The induced involution is continuous on the algebraic tensor product for each topology, so it extends to the completion by *Involutive Topological Linear Spaces*, uniquely because the tensor product is dense; the fixed and negated subspaces of the extension are the closures of those of the dense subspace, by the extension theorem of *Involutive Banach Spaces*, carried over to the locally convex setting.
 
-**Proposition (the tensor algebra).** For a continuous involution $\theta$ of $E$ the induced involutions on the tensor powers $E^{\otimes n}$ assemble into an involution of the tensor algebra $\bigotimes E$ and, by continuity, of its completion, and the flip and the involution together generate a finite group acting on each tensor power; the graded commutative structure and the sign rule are those of the graded-algebra category and are named, not used.
+**Proposition (the tensor algebra).** For a continuous involution $\mathrm{J}$ of $E$ the induced involutions on the tensor powers $E^{\otimes n}$ assemble into an involution of the tensor algebra $\bigotimes E$ and, by continuity, of its completion, and the flip and the involution together generate a finite group acting on each tensor power; the graded commutative structure and the sign rule are those of the graded-algebra category and are named, not used.
 
-**Proof.** The involution on $E^{\otimes n}$ is the tensor power of $\theta$, compatible with the multiplication $E^{\otimes m} \otimes E^{\otimes n} \to E^{\otimes(m+n)}$ because the tensor product of the involutions corresponds to the induced involution on the product; the compatibility with the completion is the extension theorem, and the group statement is that $\tau$ and $\theta \otimes \theta$ commute and are involutions.
+**Proof.** The involution on $E^{\otimes n}$ is the tensor power of $\mathrm{J}$, compatible with the multiplication $E^{\otimes m} \otimes E^{\otimes n} \to E^{\otimes(m+n)}$ because the tensor product of the involutions corresponds to the induced involution on the product; the compatibility with the completion is the extension theorem, and the group statement is that $\tau$ and $\mathrm{J} \otimes \mathrm{J}$ commute and are involutions.
 
 ## Examples
 
@@ -91,15 +91,15 @@ $$
 
 ## Summary
 
-Two continuous involutions of the factors of a topological tensor product induce an involution $\theta \otimes \omega$ of the algebraic tensor product, of the same kind as the two factors, continuous for the projective and the injective topology and extending uniquely to both completions; the product of two linear involutions has fixed part $(E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ and negated part $(E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$, of type $(pr+qs, ps+qr)$, while for a pair of antilinear involutions the induced map is antilinear with real fixed part $E_{+}\otimes F_{+}$ and negated part $i(E_{+}\otimes F_{+})$, the two pieces of the linear formula coinciding because $E_{-} = iE_{+}$. The flip $\tau$ is a continuous involution of $E \otimes E$, extends to the completions, and decomposes each completion into the closures of the symmetric and antisymmetric parts when $2$ is invertible; a single involution $\theta$ of $E$ induces $\theta \otimes \theta$, which commutes with the flip, so the symmetric and antisymmetric parts are stable, their fixed parts being the symmetric and antisymmetric squares of the summands and the cross terms negated. The induced involutions on the tensor powers assemble into an involution of the tensor algebra and of its completion. The tensor square of the plane with the diagonal involution, the tensor product of two gradings and the antilinear case of two conjugations are the standard examples. When a factor is nuclear the two completions coincide, and the account of *Involutive Nuclear Spaces* applies.
+Two continuous involutions of the factors of a topological tensor product induce an involution $\mathrm{J} \otimes \omega$ of the algebraic tensor product, of the same kind as the two factors, continuous for the projective and the injective topology and extending uniquely to both completions; the product of two linear involutions has fixed part $(E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ and negated part $(E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$, of type $(pr+qs, ps+qr)$, while for a pair of antilinear involutions the induced map is antilinear with real fixed part $E_{+}\otimes F_{+}$ and negated part $i(E_{+}\otimes F_{+})$, the two pieces of the linear formula coinciding because $E_{-} = iE_{+}$. The flip $\tau$ is a continuous involution of $E \otimes E$, extends to the completions, and decomposes each completion into the closures of the symmetric and antisymmetric parts when $2$ is invertible; a single involution $\mathrm{J}$ of $E$ induces $\mathrm{J} \otimes \mathrm{J}$, which commutes with the flip, so the symmetric and antisymmetric parts are stable, their fixed parts being the symmetric and antisymmetric squares of the summands and the cross terms negated. The induced involutions on the tensor powers assemble into an involution of the tensor algebra and of its completion. The tensor square of the plane with the diagonal involution, the tensor product of two gradings and the antilinear case of two conjugations are the standard examples. When a factor is nuclear the two completions coincide, and the account of *Involutive Nuclear Spaces* applies.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $E$, $F$ | Hausdorff locally convex spaces over $\mathbb{K}$ |
-| $\theta$, $\omega$, $T$, $S$ | Continuous involutions of the factors |
-| $\theta \otimes \omega$ | Induced involution of $E \otimes F$ |
+| $\mathrm{J}$, $\omega$, $T$, $S$ | Continuous involutions of the factors |
+| $\mathrm{J} \otimes \omega$ | Induced involution of $E \otimes F$ |
 | $E_{+}$, $E_{-}$ | Fixed and negated summands of $E$ |
 | $(E\otimes F)^{+} = (E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ | Fixed part of the product |
 | $(E\otimes F)^{-} = (E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$ | Negated part of the product |

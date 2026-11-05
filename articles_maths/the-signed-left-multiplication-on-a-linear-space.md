@@ -4,7 +4,7 @@
 
 The one-sided companion of the signed sandwich is the **signed left multiplication** $\Lambda^{\alpha}_{a} = L_a\circ\alpha$, the operator $X \mapsto a\alpha(X)$ on $E = \operatorname{End}_F(V)$, obtained from the signed sandwich by taking the right factor to be the identity. It is the composite of the ordinary left multiplication with the grade involution, so its products are ordinary left multiplications, its inverse is again signed, and its fixed elements are computed from the composite; it is the case $b=1$ of the signed sandwich and the one-sided member of the signed family.
 
-*The Signed Sandwich on a Linear Space* supplies the signed sandwich $\Theta^{\alpha}_{a,b}$ and its laws; *Left and Right Multiplication in a Group* and the one-sided operators supply the group-level analogue; *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned case with the trace pairing, and *The Signed Adjoint of the Left Multiplication on a Linear Space* the signed adjoint. *The Graded Action on a Module over a Linear Space* treats the module-level variant. No form is used.
+*The Signed Sandwich on a Linear Space* supplies the signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ and its laws; *Left and Right Multiplication in a Group* and the one-sided operators supply the group-level analogue; *The Adjoint of the Left Multiplication on a Linear Space* supplies the unsigned case with the trace pairing, and *The Signed Adjoint of the Left Multiplication on a Linear Space* the signed adjoint. *The Graded Action on a Module over a Linear Space* treats the module-level variant. No form is used.
 
 Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-linear space, $E = \operatorname{End}_F(V)$, and $\alpha$ is the grade involution of $E$, $\alpha(X) = TXT$ for a linear involution $T$ of $V$, an algebra automorphism of order two.
 
@@ -16,7 +16,7 @@ $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad \Lambda^{\alpha}_{a}(X) = a\,\alpha(X) .
 $$
 
-**Proposition.** $\Lambda^{\alpha}_{a}$ is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and
+**Proposition.** $\Lambda^{\alpha}_{a}$ is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
 
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha = \alpha\circ L_{\alpha(a)} ,

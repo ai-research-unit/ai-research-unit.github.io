@@ -105,7 +105,7 @@ that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an invol
 
 ## Failure of the Degenerate Cases
 
-The representation $h\mapsto M_h$ is an isomorphism of algebras on the module $\mathcal{A}$, but it is **not** a representation of the involutive algebra on $\mathcal{H}$: the involution on the elements is $h\mapsto h^*$ and the adjoint on the operators is $M_h^*=\Theta_h$, with $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$, and the two agree only when $h$ is a scalar function $h=c\varepsilon$. The computation is the one of *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, later in this category, and it is repeated there. The degenerate case in which they do agree is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one, under which every $M_h$ has adjoint $M_{h^*}$; the coefficient form used here is the nondegenerate form and does not share the property. The naive expectation that "multiplying by $h$" should have adjoint "multiplying by $h^*$" is therefore false on the whole algebra, and the discrepancy is exactly the difference between the two structures.
+The representation $h\mapsto M_h$ is an isomorphism of algebras on the module $\mathcal{A}$, but it is **not** a representation of the involutive algebra on $\mathcal{H}$: the involution on the elements is $h\mapsto h^*$ and the adjoint on the operators is $M_h^*=\mathrm{Sd}_h$, with $(\mathrm{Sd}_hg)(k)=\sum_m\overline{h(m)}g(mk)$, and the two agree only when $h$ is a scalar function $h=c\varepsilon$. The computation is the one of *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, later in this category, and it is repeated there. The degenerate case in which they do agree is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one, under which every $M_h$ has adjoint $M_{h^*}$; the coefficient form used here is the nondegenerate form and does not share the property. The naive expectation that "multiplying by $h$" should have adjoint "multiplying by $h^*$" is therefore false on the whole algebra, and the discrepancy is exactly the difference between the two structures.
 
 ## Summary
 
@@ -117,7 +117,7 @@ For $h\in\mathcal{A}$ the multiplication operator is $M_hf=h*f$, and $L(M_hf,s)=
 |---|---|
 | $M_h$ | Multiplication operator $f\mapsto h*f$ |
 | $L(M_hf,s)=L(h,s)L(f,s)$ | The $L$-function identity |
-| $\Theta_h=M_h^*$, $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$ | The adjoint on $\mathcal{H}$ |
+| $\mathrm{Sd}_h=M_h^*$, $(\mathrm{Sd}_hg)(k)=\sum_m\overline{h(m)}g(mk)$ | The adjoint on $\mathcal{H}$ |
 | $\mathcal{A}_p$, $M_{h_p}$ | $p$-primary component; local Toeplitz factor |
 | $M_h=\prod_pM_{h_p}$ | Euler product as an operator product |
 | $\Lambda_f(s)=N^{s/2}\prod_j\Gamma(s+\mu_j)L(f,s)$ | Completion |

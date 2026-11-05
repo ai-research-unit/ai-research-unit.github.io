@@ -51,11 +51,11 @@ It is an involutive unitary operator on the graded module, it satisfies $P\rho_a
 
 **Theorem.** On the regular module with the coefficient form, the adjoint of the graded action is
 $$
-\boxed{\;\rho_a^*=\alpha^{|a|}\,\Theta_a\;} ,
+\boxed{\;\rho_a^*=\alpha^{|a|}\,\mathrm{Sd}_a\;} ,
 $$
-that is $\rho_a^*=\Theta_a$ for even $a$ and $\rho_a^*=\alpha\Theta_a$ for odd $a$, where $\Theta_c$ is the transposed multiplication, $(\Theta_cg)(k)=\sum_m\overline{c(m)}g(mk)$.
+that is $\rho_a^*=\mathrm{Sd}_a$ for even $a$ and $\rho_a^*=\alpha\mathrm{Sd}_a$ for odd $a$, where $\mathrm{Sd}_c$ is the transposed multiplication, $(\mathrm{Sd}_cg)(k)=\sum_m\overline{c(m)}g(mk)$.
 
-**Proof.** For even $a$, $\rho_a=L_a$ and $L_a^*=\Theta_a$. For odd $a$, $\rho_a=L_a\alpha$ and $(L_a\alpha)^*=\alpha\Theta_a$, by the computation for the signed left multiplication. The display collects the two cases.
+**Proof.** For even $a$, $\rho_a=L_a$ and $L_a^*=\mathrm{Sd}_a$. For odd $a$, $\rho_a=L_a\alpha$ and $(L_a\alpha)^*=\alpha\mathrm{Sd}_a$, by the computation for the signed left multiplication. The display collects the two cases.
 
 **Corollary (the two structures).** The involution on the elements, $a\mapsto a^*$, and the adjoint on the operators, $\rho_a\mapsto\rho_a^*$, do not coincide: in general $\rho_a^*$ is neither $\rho_{a^*}$ nor $\rho_{\alpha(a)}$. The equality $\rho_a^*=\rho_{a^*}$ holds for all $a$ only for the augmentation form, of rank one, and it fails for the coefficient form used here; this is the same obstruction as in *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*. In the graded setting the two structures are independent, and the article proves their relation rather than assuming it.
 
@@ -78,15 +78,15 @@ Hence $\mathcal{A}$ is graded-commutative exactly when its odd part consists of 
 
 **Example (a module of rank one).** If $M=\mathcal{A}\cdot m$ with $m$ even, then the graded action of $a$ is $(-1)^{|a||m|}=1$ times $a\cdot m$, so the action is the ordinary one and the grading does not act; this is the degenerate module in which the Koszul sign is trivial.
 
-**Example (the module of Dirichlet series).** The space of formal Dirichlet series with coefficients in $\mathbb{C}$ is a graded module over $\mathcal{A}$ by $M_h$, and the graded action of an odd $h$ is the signed multiplication $M_h\circ\alpha$; its adjoint is $\alpha\Theta_h$, so the adjoint of the graded multiplication by an odd element is not the graded multiplication by $h^*$.
+**Example (the module of Dirichlet series).** The space of formal Dirichlet series with coefficients in $\mathbb{C}$ is a graded module over $\mathcal{A}$ by $M_h$, and the graded action of an odd $h$ is the signed multiplication $M_h\circ\alpha$; its adjoint is $\alpha\mathrm{Sd}_h$, so the adjoint of the graded multiplication by an odd element is not the graded multiplication by $h^*$.
 
 ## Failure of the Degenerate Cases
 
-The graded action over the commutative algebra has four degenerate boundaries. First, the product law carries the nonzero cocycle $(-1)^{|a||b|}$ on the pairs of odd elements, so the action is not a representation but only a projective one; the cocycle is not a coboundary in general, and it cannot be removed by rescaling the action. Second, the graded commutator is twice the product on the odd part, so the algebra is not graded-commutative although it is commutative; the "graded" structure changes the answer by the factor $2$ and nothing else. Third, the module may fail to be graded and the grading of $M$ may be incompatible with the grading of $\mathcal{A}$; in that case the Koszul sign is not defined and the graded action reduces to the ordinary one. Fourth, the adjoint of the graded action is $\alpha^{|a|}\Theta_a$, which is a graded action only for the degenerate modules on which the grading is trivial; on the regular module the graded action of an odd element is not adjointable to a graded action of an element of $\mathcal{A}$. These four are the boundary cases of the graded family over a commutative algebra.
+The graded action over the commutative algebra has four degenerate boundaries. First, the product law carries the nonzero cocycle $(-1)^{|a||b|}$ on the pairs of odd elements, so the action is not a representation but only a projective one; the cocycle is not a coboundary in general, and it cannot be removed by rescaling the action. Second, the graded commutator is twice the product on the odd part, so the algebra is not graded-commutative although it is commutative; the "graded" structure changes the answer by the factor $2$ and nothing else. Third, the module may fail to be graded and the grading of $M$ may be incompatible with the grading of $\mathcal{A}$; in that case the Koszul sign is not defined and the graded action reduces to the ordinary one. Fourth, the adjoint of the graded action is $\alpha^{|a|}\mathrm{Sd}_a$, which is a graded action only for the degenerate modules on which the grading is trivial; on the regular module the graded action of an odd element is not adjointable to a graded action of an element of $\mathcal{A}$. These four are the boundary cases of the graded family over a commutative algebra.
 
 ## Summary
 
-For a graded module $M$ over the algebra of arithmetic functions, graded by the parity of $\Omega$, the graded action is $\rho_a(m)=(-1)^{|a||m|}a\cdot m$; it satisfies the projective product law $\rho_a\rho_b=(-1)^{|a||b|}\rho_{a*b}$, so it is a representation exactly when the Koszul sign is trivial on the relevant pairs, and it is the ordinary action on the even part. The action of $\varepsilon$ is the parity operator $P$, an involutive unitary operator commuting with $\rho_a$ up to the sign $(-1)^{|a|}$, equal to the grade involution on the regular module. The adjoint on the regular module with the coefficient form is $\rho_a^*=\alpha^{|a|}\Theta_a$, which is not the graded action of $a^*$; the involution on the elements and the adjoint on the operators are two independent structures. The graded commutator is $[a,b]_{gr}=2ab$ on the odd part and $0$ otherwise, so the commutative algebra is not graded-commutative, and the degenerate modules are those whose grading is trivial.
+For a graded module $M$ over the algebra of arithmetic functions, graded by the parity of $\Omega$, the graded action is $\rho_a(m)=(-1)^{|a||m|}a\cdot m$; it satisfies the projective product law $\rho_a\rho_b=(-1)^{|a||b|}\rho_{a*b}$, so it is a representation exactly when the Koszul sign is trivial on the relevant pairs, and it is the ordinary action on the even part. The action of $\varepsilon$ is the parity operator $P$, an involutive unitary operator commuting with $\rho_a$ up to the sign $(-1)^{|a|}$, equal to the grade involution on the regular module. The adjoint on the regular module with the coefficient form is $\rho_a^*=\alpha^{|a|}\mathrm{Sd}_a$, which is not the graded action of $a^*$; the involution on the elements and the adjoint on the operators are two independent structures. The graded commutator is $[a,b]_{gr}=2ab$ on the odd part and $0$ otherwise, so the commutative algebra is not graded-commutative, and the degenerate modules are those whose grading is trivial.
 
 ## Summary of Notation
 
@@ -96,7 +96,7 @@ For a graded module $M$ over the algebra of arithmetic functions, graded by the 
 | $\rho_a(m)=(-1)^{|a||m|}a\cdot m$ | Graded action |
 | $\rho_a\rho_b=(-1)^{|a||b|}\rho_{a*b}$ | Projective product law |
 | $P=\rho_\varepsilon$, $P(m)=(-1)^{|m|}m$ | Parity operator |
-| $\rho_a^*=\alpha^{|a|}\Theta_a$ | Adjoint of the graded action |
+| $\rho_a^*=\alpha^{|a|}\mathrm{Sd}_a$ | Adjoint of the graded action |
 | $[a,b]_{gr}=a*b-(-1)^{|a||b|}b*a$ | Graded commutator |
 | $[a,b]_{gr}=2ab$ on the odd part | The graded commutator of $\mathcal{A}$ |
 | $\alpha$, $\sigma$, $\delta=\sigma\alpha$ | The involutions |

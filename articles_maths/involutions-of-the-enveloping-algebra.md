@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The involutions of the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ — the extension $\Theta$ of an involution $\theta$ of $\mathrm{G}$, the principal anti-automorphism $\sigma$ with $x\mapsto-x$ and reversed products, and the star $\tau=\Theta\sigma$ — are $K$-linear operators on the infinite-dimensional space $\mathrm{U}(\mathrm{G})$, and as operators they have adjoints with respect to a bilinear form on that space. This article, the second of the `- * Operator Theory` group of the category, is the **operator-theoretic reading** of *Involutions of the Universal Enveloping Algebra*: it fixes the class of invariant forms on $\mathrm{U}(\mathrm{G})$ for which the adjoint is defined, proves that the extension $\Theta$ of an involution is **self-adjoint** with respect to any $\Theta$-invariant form, computes the adjoint of the principal anti-automorphism and of the star, and relates the self-adjointness to the invariance of the Casimir element of *The Casimir Operator and the Involution*. The enveloping algebra and its involutions are the entry of that name; the adjoint operation on a Hilbert space and the unitary representations belong to the analysis of a later Part and are named only; the form is used algebraically and no norm is formed from it.
+The involutions of the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ — the extension $\mathrm{J}$ of an involution $\mathrm{J}$ of $\mathrm{G}$, the principal anti-automorphism $\sigma$ with $x\mapsto-x$ and reversed products, and the star $\tau=\mathrm{J}\sigma$ — are $K$-linear operators on the infinite-dimensional space $\mathrm{U}(\mathrm{G})$, and as operators they have adjoints with respect to a bilinear form on that space. This article, the second of the `- * Operator Theory` group of the category, is the **operator-theoretic reading** of *Involutions of the Universal Enveloping Algebra*: it fixes the class of invariant forms on $\mathrm{U}(\mathrm{G})$ for which the adjoint is defined, proves that the extension $\mathrm{J}$ of an involution is **self-adjoint** with respect to any $\mathrm{J}$-invariant form, computes the adjoint of the principal anti-automorphism and of the star, and relates the self-adjointness to the invariance of the Casimir element of *The Casimir Operator and the Involution*. The enveloping algebra and its involutions are the entry of that name; the adjoint operation on a Hilbert space and the unitary representations belong to the analysis of a later Part and are named only; the form is used algebraically and no norm is formed from it.
 
-The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensional Lie algebra, $\mathrm{U}(\mathrm{G})$ its enveloping algebra with the PBW basis of *Universal Enveloping Algebras*; the maps are $\theta,\Theta,\sigma,\tau$ as in *Involutions of the Universal Enveloping Algebra*, and the form is written $\mathfrak{b}$ with adjoint written ${}^{\dagger}$.
+The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensional Lie algebra, $\mathrm{U}(\mathrm{G})$ its enveloping algebra with the PBW basis of *Universal Enveloping Algebras*; the maps are $\mathrm{J},\mathrm{J},\sigma,\tau$ as in *Involutions of the Universal Enveloping Algebra*, and the form is written $\mathfrak{b}$ with adjoint written ${}^{\dagger}$.
 
 ## Forms on the Enveloping Algebra
 
@@ -19,15 +19,15 @@ The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensiona
 
 ## Adjoints of the Involutions
 
-**Theorem.** Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension, and let $\mathfrak{b}$ be a $\Theta$-invariant symmetric form, $b(\Theta u,\Theta v)=\mathfrak{b}(u,v)$. Then $\Theta$ is self-adjoint:
+**Theorem.** Let $\mathrm{J}$ be an involution of $\mathrm{G}$ and $\mathrm{J}$ its extension, and let $\mathfrak{b}$ be a $\mathrm{J}$-invariant symmetric form, $b(\mathrm{J} u,\mathrm{J} v)=\mathfrak{b}(u,v)$. Then $\mathrm{J}$ is self-adjoint:
 
 $$
-\boxed{\;\Theta^{\dagger}=\Theta\;} .
+\boxed{\;\mathrm{J}^{\dagger}=\mathrm{J}\;} .
 $$
 
-**Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=\mathfrak{b}(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=\mathfrak{b}(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$.
+**Proof.** Since $\mathrm{J}^2=\mathrm{id}$ and the form is $\mathrm{J}$-invariant, $b(\mathrm{J} u,v)=b(\mathrm{J}^2u,\mathrm{J} v)=\mathfrak{b}(u,\mathrm{J} v)$; comparing with the defining equation $b(\mathrm{J} u,v)=\mathfrak{b}(u,\mathrm{J}^{\dagger}v)$ gives $\mathrm{J}^{\dagger}=\mathrm{J}$.
 
-**Corollary.** With respect to the PBW form and with respect to the trace form of a module on which $\Theta$ acts by an isometry, the extension of any involution is self-adjoint; in particular the extension of the Cartan involution is self-adjoint, and the $\pm1$-eigenspaces of $\Theta$ in $\mathrm{U}(\mathrm{G})$, the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$, are the subalgebra and the complement of the induced decomposition.
+**Corollary.** With respect to the PBW form and with respect to the trace form of a module on which $\mathrm{J}$ acts by an isometry, the extension of any involution is self-adjoint; in particular the extension of the Cartan involution is self-adjoint, and the $\pm1$-eigenspaces of $\mathrm{J}$ in $\mathrm{U}(\mathrm{G})$, the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\mathrm{J})$, are the subalgebra and the complement of the induced decomposition.
 
 **Theorem.** The principal anti-automorphism satisfies, with respect to a symmetric invariant form,
 
@@ -39,32 +39,32 @@ and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are sel
 
 **Proof.** For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $\mathfrak{b}$ under the anti-automorphism: $b(\sigma u,\sigma w)=\mathfrak{b}(u,w)$ when $\mathfrak{b}$ is compatible with $\sigma$ (the **$\sigma$-invariance** of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint.
 
-**Remark.** The self-adjointness is not automatic: it holds exactly for the forms invariant under the operator in question. The PBW form is invariant under $\Theta$ when $\theta$ permutes the PBW monomials of each degree, which holds for the involutions induced by the automorphisms of $\mathrm{G}$ that preserve the chosen basis; for a general invariant form the adjoint of $\Theta$ is $\Theta^{-1}$ conjugated by the form, and $\Theta^{-1}=\Theta$.
+**Remark.** The self-adjointness is not automatic: it holds exactly for the forms invariant under the operator in question. The PBW form is invariant under $\mathrm{J}$ when $\mathrm{J}$ permutes the PBW monomials of each degree, which holds for the involutions induced by the automorphisms of $\mathrm{G}$ that preserve the chosen basis; for a general invariant form the adjoint of $\mathrm{J}$ is $\mathrm{J}^{-1}$ conjugated by the form, and $\mathrm{J}^{-1}=\mathrm{J}$.
 
 ## The Star and the Casimir Operator
 
-**Proposition.** The Casimir element $\Omega$ of *The Casimir Operator and the Involution* is fixed by $\Theta,\sigma,\tau$ and is therefore self-adjoint with respect to any invariant form for which these maps are self-adjoint; the operator of left multiplication by $\Omega$ satisfies $L_\Omega^{\dagger}=L_\Omega$.
+**Proposition.** The Casimir element $\Omega$ of *The Casimir Operator and the Involution* is fixed by $\mathrm{J},\sigma,\tau$ and is therefore self-adjoint with respect to any invariant form for which these maps are self-adjoint; the operator of left multiplication by $\Omega$ satisfies $L_\Omega^{\dagger}=L_\Omega$.
 
 **Proof.** $\Omega$ is central, so $L_\Omega=R_\Omega$ and $L_\Omega$ commutes with the maps; the invariance of the form under $\Omega$ and the self-adjointness of $L_\Omega$ follow from the centrality and the theorem.
 
-**Corollary.** The adjoint of the extension of an involution and the adjoint of the star coincide on the image of the centre, since both fix $\Omega$; the eigenspaces of the adjoint action are the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$ and the associated decomposition is the one used by the symmetric pair.
+**Corollary.** The adjoint of the extension of an involution and the adjoint of the star coincide on the image of the centre, since both fix $\Omega$; the eigenspaces of the adjoint action are the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\mathrm{J})$ and the associated decomposition is the one used by the symmetric pair.
 
-## The $\Theta$-Grading of the Operators
+## The $\mathrm{J}$-Grading of the Operators
 
-**Proposition.** The algebra $\operatorname{End}_K(\mathrm{U}(\mathrm{G}))$ of operators is $\mathbb{Z}/2$-graded by the conjugation by $\Theta$, with even operators those commuting with $\Theta$ and odd those anticommuting; the involutions $\Theta,\sigma,\tau$ are even, $\Theta$ because it commutes with itself, and $\sigma,\tau$ because they commute with $\Theta$ as shown in *Involutions of the Universal Enveloping Algebra*.
+**Proposition.** The algebra $\operatorname{End}_K(\mathrm{U}(\mathrm{G}))$ of operators is $\mathbb{Z}/2$-graded by the conjugation by $\mathrm{J}$, with even operators those commuting with $\mathrm{J}$ and odd those anticommuting; the involutions $\mathrm{J},\sigma,\tau$ are even, $\mathrm{J}$ because it commutes with itself, and $\sigma,\tau$ because they commute with $\mathrm{J}$ as shown in *Involutions of the Universal Enveloping Algebra*.
 
-**Proof.** The conjugation $T\mapsto\Theta T\Theta$ is an automorphism of order two of the operator algebra, giving the grading; the three maps are fixed by it.
+**Proof.** The conjugation $T\mapsto\mathrm{J} T\mathrm{J}$ is an automorphism of order two of the operator algebra, giving the grading; the three maps are fixed by it.
 
-**Corollary.** The adjoint operation ${}^{\dagger}$ with respect to a $\Theta$-invariant form commutes with the $\mathbb{Z}/2$-grading: the adjoint of an even operator is even and of an odd operator is odd, and the self-adjoint involutions are even.
+**Corollary.** The adjoint operation ${}^{\dagger}$ with respect to a $\mathrm{J}$-invariant form commutes with the $\mathbb{Z}/2$-grading: the adjoint of an even operator is even and of an odd operator is odd, and the self-adjoint involutions are even.
 
 ## Worked Case: $\mathrm{U}(\mathrm{sl}(2,K))$
 
-Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $\mathfrak{b}$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\Theta$ of the Cartan involution $\theta(x)=-x^{t}$ permutes the monomials of each degree and preserves $\mathfrak{b}$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\theta$-symmetric and $\theta$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $\mathfrak{b}$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\Theta\sigma$ is self-adjoint and fixes the Casimir element $\Omega$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.
+Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $\mathfrak{b}$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\mathrm{J}$ of the Cartan involution $\mathrm{J}(x)=-x^{t}$ permutes the monomials of each degree and preserves $\mathfrak{b}$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\mathrm{J}$-symmetric and $\mathrm{J}$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $\mathfrak{b}$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\mathrm{J}\sigma$ is self-adjoint and fixes the Casimir element $\Omega$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.
 
 
 ## Summary
 
-The involutions of $\mathrm{U}(\mathrm{G})$ are linear operators, and with respect to a **symmetric invariant form** they are **self-adjoint**: the extension $\Theta$ of an involution of $\mathrm{G}$ satisfies $\Theta^{\dagger}=\Theta$ whenever the form is $\Theta$-invariant, the principal anti-automorphism $\sigma$ and the star $\tau=\Theta\sigma$ are likewise self-adjoint for forms compatible with them, and the Casimir element $\Omega$, being fixed by all of them and central, gives a self-adjoint operator of left multiplication. The operator algebra $\operatorname{End}_K(\mathrm{U}(\mathrm{G}))$ carries the $\mathbb{Z}/2$-grading by conjugation with $\Theta$, and the three involutions are even in that grading; the adjoint operation preserves the grading. Self-adjointness is not automatic and holds exactly for the invariant forms, the PBW form and the trace form of the natural modules being the examples. The analysis of the spectrum and the unitary representations belongs to a later Part.
+The involutions of $\mathrm{U}(\mathrm{G})$ are linear operators, and with respect to a **symmetric invariant form** they are **self-adjoint**: the extension $\mathrm{J}$ of an involution of $\mathrm{G}$ satisfies $\mathrm{J}^{\dagger}=\mathrm{J}$ whenever the form is $\mathrm{J}$-invariant, the principal anti-automorphism $\sigma$ and the star $\tau=\mathrm{J}\sigma$ are likewise self-adjoint for forms compatible with them, and the Casimir element $\Omega$, being fixed by all of them and central, gives a self-adjoint operator of left multiplication. The operator algebra $\operatorname{End}_K(\mathrm{U}(\mathrm{G}))$ carries the $\mathbb{Z}/2$-grading by conjugation with $\mathrm{J}$, and the three involutions are even in that grading; the adjoint operation preserves the grading. Self-adjointness is not automatic and holds exactly for the invariant forms, the PBW form and the trace form of the natural modules being the examples. The analysis of the spectrum and the unitary representations belongs to a later Part.
 
 ## Summary of Notation
 
@@ -72,7 +72,7 @@ The involutions of $\mathrm{U}(\mathrm{G})$ are linear operators, and with respe
 |---|---|
 | $K$ | the base field, of characteristic zero |
 | $\mathrm{U}(\mathrm{G})$ | the universal enveloping algebra |
-| $\Theta,\sigma,\tau$ | the extension, the principal anti-automorphism, the star |
+| $\mathrm{J},\sigma,\tau$ | the extension, the principal anti-automorphism, the star |
 | $\mathfrak{b}$ | a symmetric invariant form |
 | $T^{\dagger}$ | the adjoint of $T$ with respect to $\mathfrak{b}$ |
 | $\Omega$ | the Casimir element |

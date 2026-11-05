@@ -256,12 +256,12 @@ with the biquaternionic Maxwell operator $(1/c)\partial/\partial t'+iD_3$ of the
 
 ## The Maxwell–Cauchy Kernel and the Integral Operators
 
-The integral theory begins with the kernel of the first-order operators. Let $\Theta_\alpha$ be the outgoing fundamental solution of the Helmholtz operator,
+The integral theory begins with the kernel of the first-order operators. Let $\mathrm{Sd}_\alpha$ be the outgoing fundamental solution of the Helmholtz operator,
 
 $$
-\Theta_\alpha(x)=-\frac{\exp(\,i\alpha\lvert x\rvert)}{4\pi\lvert x\rvert},
+\mathrm{Sd}_\alpha(x)=-\frac{\exp(\,i\alpha\lvert x\rvert)}{4\pi\lvert x\rvert},
 \qquad
-(\Delta+\alpha^2)\Theta_\alpha=\delta ,
+(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta ,
 \qquad
 \operatorname{Im}\alpha\ge0 ,
 \tag{18}
@@ -270,13 +270,13 @@ $$
 the kernel already used by the chiral article, with the branch fixed by the radiation condition. The fundamental solutions of the two conjugate Cauchy–Riemann operators are then obtained from it by one application of the operator itself:
 
 $$
-\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha ,
+\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha ,
 \qquad
 (D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=\delta ,
 \tag{19}
 $$
 
-the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\Theta_\alpha=(\Delta+\alpha^2)\Theta_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
+the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\mathrm{Sd}_\alpha=(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
 
 The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,
 
@@ -323,9 +323,9 @@ so the boundary values determine a quaternionic monochromatic function, and the 
 Translated back to the fields, the Cauchy formula $(23)$ becomes an integral representation, and its vector form is a classical one. The Cauchy-type operator is the boundary integral of the field and the normal against the Maxwell kernel, and the Teodorescu term is the volume integral of the current; written out in vectors and separated into the electric and magnetic parts, the boundary part of the representation is
 
 $$
-\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\vec u(y)\rangle\tilde E(y)
-+\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\vec u(y)],\tilde E(y)\bigr]
-+i\omega\,\Theta_\alpha(x-y)[\vec u(y),\tilde H(y)]\Bigr\}d\Gamma_y
+\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\mathrm{Sd}_\alpha(x-y),\vec u(y)\rangle\tilde E(y)
++\bigl[[\mathrm{grad}_x\mathrm{Sd}_\alpha(x-y),\vec u(y)],\tilde E(y)\bigr]
++i\omega\,\mathrm{Sd}_\alpha(x-y)[\vec u(y),\tilde H(y)]\Bigr\}d\Gamma_y
 +\text{source terms},
 \tag{24}
 $$
@@ -379,7 +379,7 @@ The ordinary time-harmonic Maxwell system in a homogeneous isotropic medium, pos
 
 The diagonalisation $(11)$ by the matrix $C$, with the coherence factor $b=i\omega\mu/\alpha$, turns $N$ into the direct sum of the two mutually conjugate Cauchy–Riemann operators $D_3\mp\alpha$, whose squares are the scalar Helmholtz operators of $(13)$. Consequently the time-harmonic fields are in one-to-one correspondence with pairs of mutually conjugate hyperholomorphic functions, $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$; in the lossless normalised variables the two combinations are the circularly polarised $\tilde E\pm i\tilde H$ of the chiral reduction at $\beta=0$; and the Helmholtz null-set itself is the direct sum of the two rotated copies of $\ker N$ of $(16)$, which is the time-harmonic analogue of the splitting of the wave operator into its two first-order factors.
 
-The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(18)$ and its two Cauchy–Riemann descendants $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$; the Maxwell kernel $K_N$ of $(20)$ is the same object carried through the diagonalising rotation, and the Cauchy-type and Teodorescu-type operators built from it satisfy the Borel–Pompeiu formula, the right-inverse formula and the Cauchy integral formula $(22,23)$. Translated back to the fields, the Cauchy formula is the integral representation $(24)$, whose vector form is the classical **Stratton–Chu formula**: the Stratton–Chu kernel is the fundamental solution of the first-order quaternionic Maxwell operator, and the Stratton–Chu representation is a Cauchy integral formula for the electromagnetic field. The Dirichlet problem is solved by the same theory, its solvability governed by the two Plemelj conditions $(25)$, whose quaternionic form carries the scalar component that the vector formulation drops, and the exterior problem is closed by the Silver–Müller condition $(26)$. The parametric system of the source is not specific to the electromagnetic field: at another value of its parameter it is the time-harmonic **Dirac** system, and the same Cauchy integral formula, the same Plemelj–Sokhotski formulas and the same boundary-value criterion then hold for the harmonic spinor field. That statement of the source's announcement, and the spinor half of the theory, are recorded in *The Dirac Equation in Biquaternionic Form*.
+The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ of $(18)$ and its two Cauchy–Riemann descendants $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$; the Maxwell kernel $K_N$ of $(20)$ is the same object carried through the diagonalising rotation, and the Cauchy-type and Teodorescu-type operators built from it satisfy the Borel–Pompeiu formula, the right-inverse formula and the Cauchy integral formula $(22,23)$. Translated back to the fields, the Cauchy formula is the integral representation $(24)$, whose vector form is the classical **Stratton–Chu formula**: the Stratton–Chu kernel is the fundamental solution of the first-order quaternionic Maxwell operator, and the Stratton–Chu representation is a Cauchy integral formula for the electromagnetic field. The Dirichlet problem is solved by the same theory, its solvability governed by the two Plemelj conditions $(25)$, whose quaternionic form carries the scalar component that the vector formulation drops, and the exterior problem is closed by the Silver–Müller condition $(26)$. The parametric system of the source is not specific to the electromagnetic field: at another value of its parameter it is the time-harmonic **Dirac** system, and the same Cauchy integral formula, the same Plemelj–Sokhotski formulas and the same boundary-value criterion then hold for the harmonic spinor field. That statement of the source's announcement, and the spinor half of the theory, are recorded in *The Dirac Equation in Biquaternionic Form*.
 
 ## Summary of Notation
 
@@ -401,8 +401,8 @@ The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(1
 | $\Phi,\Psi$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
 | $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta+\lambda)I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
-| $\Theta_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
-| $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
+| $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
+| $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
 | $K_N$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{K}_\alpha,\mathcal{K}_{-\alpha})$ |
 | $\mathcal{K}_N,\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |
 | $P_\alpha=\tfrac12(I+S_\alpha)$, $Q_\alpha=I-P_\alpha$ | Plemelj projectors of the shifted theory |

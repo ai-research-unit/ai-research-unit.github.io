@@ -48,21 +48,21 @@ and the assignment is conjugate-linear and involutive.
 
 **Proposition (the one-sided operators as degenerate sandwiches).** The signed left multiplication is the signed sandwich with the right parameter equal to the identity,
 $$
-\boxed{\;\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \Theta^{\alpha}_{\mathrm{id},b}\;},
+\boxed{\;\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,\mathrm{id}}, \qquad \rho^{\alpha}_{b} = \mathrm{Sd}^{\alpha}_{\mathrm{id},b}\;},
 $$
 and its adjoint is the signed sandwich of the transported adjoint and the identity,
 $$
-\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}}\;} ;
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{\dagger}),\mathrm{id}}\;} ;
 $$
-the two-sided signed sandwich is the composite $\Theta^{\alpha}_{a,b} = \Lambda^{\alpha}_{a}\circ\rho^{\alpha}_{b}$.
+the two-sided signed sandwich is the composite $\mathrm{Sd}^{\alpha}_{a,b} = \Lambda^{\alpha}_{a}\circ\rho^{\alpha}_{b}$.
 
-**Proof.** $\Theta^{\alpha}_{a,\mathrm{id}}(X) = a\alpha(X)\mathrm{id} = \Lambda^{\alpha}_{a}(X)$, and the adjoint follows from the general formula $\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}$ with $b = \mathrm{id}$ and $\alpha(\mathrm{id}) = \mathrm{id}$; the composite is $\Lambda^{\alpha}_{a}\rho^{\alpha}_{b}(X) = a\alpha(\alpha(X)b) = aX\alpha(b)$, which is the signed sandwich read with the parameters $a,\alpha(b)$. The signed sandwich and its adjoint are *The Signed Sandwich on a Complex Vector Space* and *The Signed Adjoint Sandwich on a Complex Vector Space*.
+**Proof.** $\mathrm{Sd}^{\alpha}_{a,\mathrm{id}}(X) = a\alpha(X)\mathrm{id} = \Lambda^{\alpha}_{a}(X)$, and the adjoint follows from the general formula $\bigl(\mathrm{Sd}^{\alpha}_{a,b}\bigr)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}$ with $b = \mathrm{id}$ and $\alpha(\mathrm{id}) = \mathrm{id}$; the composite is $\Lambda^{\alpha}_{a}\rho^{\alpha}_{b}(X) = a\alpha(\alpha(X)b) = aX\alpha(b)$, which is the signed sandwich read with the parameters $a,\alpha(b)$. The signed sandwich and its adjoint are *The Signed Sandwich on a Complex Vector Space* and *The Signed Adjoint Sandwich on a Complex Vector Space*.
 
 **Remark (the one-sided versus the two-sided adjoint).** The one-sided case of the adjoint formula is the case in which the unitarity condition of the signed sandwich degenerates to the unitarity of a single parameter, since the identity is unitary; the self-adjointness of the reflections, the conjugations and the involutions of the group all reduce to the one-sided criteria when the other side is the identity, which is why the one-sided signed adjoints are the building blocks of the two-sided ones.
 
 ## Summary
 
-For the endomorphism algebra of a Hermitian space with the trace form, the adjoint of the signed left multiplication is $\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}$, of the signed right multiplication $\bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})}$, proved from the self-adjointness of the grade involution and the unsigned law $L_a^{*}=L_{a^{\dagger}}$; the signed one-sided operators are the plain ones conjugated by $\alpha$, $\Lambda^{\alpha}_{a} = \alpha L_{\alpha(a)}$. The signed left multiplication is self-adjoint exactly when $a = \alpha(a^{\dagger})$ (i.e. $aT$ Hermitian), normal exactly when $a$ is normal, and unitary exactly when $a$ is unitary, in which case the adjoint is the inverse; on $\mathrm{U}(h)$ the map $a\mapsto\Lambda^{\alpha}_{a}$ is a faithful unitary representation. The signed left multiplication is the signed sandwich $\Theta^{\alpha}_{a,\mathrm{id}}$, and the two-sided sandwich is the composite of the two one-sided ones. The signed sandwich and its laws are *The Signed Sandwich on a Complex Vector Space* and *The Signed Left Multiplication on a Complex Vector Space*; the unsigned adjoint law is *The Adjoint of the Left Multiplication on a Complex Vector Space*; the signed adjoint sandwich is *The Signed Adjoint Sandwich on a Complex Vector Space*.
+For the endomorphism algebra of a Hermitian space with the trace form, the adjoint of the signed left multiplication is $\bigl(\Lambda^{\alpha}_{a}\bigr)^{*} = \Lambda^{\alpha}_{\alpha(a^{\dagger})}$, of the signed right multiplication $\bigl(\rho^{\alpha}_{b}\bigr)^{*} = \rho^{\alpha}_{\alpha(b^{\dagger})}$, proved from the self-adjointness of the grade involution and the unsigned law $L_a^{*}=L_{a^{\dagger}}$; the signed one-sided operators are the plain ones conjugated by $\alpha$, $\Lambda^{\alpha}_{a} = \alpha L_{\alpha(a)}$. The signed left multiplication is self-adjoint exactly when $a = \alpha(a^{\dagger})$ (i.e. $aT$ Hermitian), normal exactly when $a$ is normal, and unitary exactly when $a$ is unitary, in which case the adjoint is the inverse; on $\mathrm{U}(h)$ the map $a\mapsto\Lambda^{\alpha}_{a}$ is a faithful unitary representation. The signed left multiplication is the signed sandwich $\mathrm{Sd}^{\alpha}_{a,\mathrm{id}}$, and the two-sided sandwich is the composite of the two one-sided ones. The signed sandwich and its laws are *The Signed Sandwich on a Complex Vector Space* and *The Signed Left Multiplication on a Complex Vector Space*; the unsigned adjoint law is *The Adjoint of the Left Multiplication on a Complex Vector Space*; the signed adjoint sandwich is *The Signed Adjoint Sandwich on a Complex Vector Space*.
 
 ## Summary of Notation
 
@@ -73,7 +73,7 @@ For the endomorphism algebra of a Hermitian space with the trace form, the adjoi
 | $(\Lambda^{\alpha}_{a})^{*}=\Lambda^{\alpha}_{\alpha(a^{\dagger})}$ | the signed adjoint |
 | $\Lambda^{\alpha}_{a}=\alpha L_{\alpha(a)}$ | the rectangular relation |
 | $a=\alpha(a^{\dagger})$ | self-adjointness ($aT$ Hermitian) |
-| $\Lambda^{\alpha}_{a}=\Theta^{\alpha}_{a,\mathrm{id}}$ | the degenerate signed sandwich |
+| $\Lambda^{\alpha}_{a}=\mathrm{Sd}^{\alpha}_{a,\mathrm{id}}$ | the degenerate signed sandwich |
 
 ## Further Reading
 

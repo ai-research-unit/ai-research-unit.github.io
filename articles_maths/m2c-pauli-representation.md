@@ -360,9 +360,9 @@ $$
 Equivalently,
 $$
 \kappa_L\circ L=\mathsf M_2,\qquad
-\kappa_R\circ R=\Theta\circ\mathsf M_2,
+\kappa_R\circ R=\mathrm{J}\circ\mathsf M_2,
 $$
-where $\Theta(A)=A^{\mathsf T}$. The first composition is an algebra isomorphism; the second is an anti-isomorphism, because $R$ is anti-multiplicative and $\Theta$ is an anti-automorphism.
+where $\mathrm{J}(A)=A^{\mathsf T}$. The first composition is an algebra isomorphism; the second is an anti-isomorphism, because $R$ is anti-multiplicative and $\mathrm{J}$ is an anti-automorphism.
 
 **The fixed-order extraction is not multiplicative.** The block extraction in a fixed order is not an algebra map on the ambient $M_4(\mathbb{C})$. Let $\kappa_0$ be the extraction of the block in rows and columns $1,2$ of the matrix-unit order, and let $F_{ij}$ be the $4\times4$ matrix units. Then $\kappa_0(F_{13})=\kappa_0(F_{31})=0$, while $F_{13}F_{31}=F_{11}$ has block $E_{11}$:
 $$
@@ -831,7 +831,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $\mathsf M_2(e_\mu)$ | the images of the four units: $\mathrm I_2$ and $-i\sigma_k$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
 | $\varrho$ | the anti-automorphism fixing $e_t,\vec e_x,\vec e_z$ and negating $\vec e_y$ |
-| $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |
+| $\mathrm{J}$ | the matrix transpose, $\mathrm{J}(A)=A^{\mathsf T}$ |
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |
 | $\rho_\pm=\tfrac12(\mathrm I_2\pm\mathsf M_2(\vec\Xi))$ | the spectral projectors of the element, $\vec\Xi=-i\vec Q/B$ |

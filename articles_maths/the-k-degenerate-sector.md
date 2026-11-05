@@ -249,7 +249,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 **Left multiplication.** If $\tilde Q\in\mathcal K_{\mathrm u}$ it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q\in\mathcal K_{\mathrm d}$ is non-zero it is a zero divisor, and $L_{\tilde Q}$ has rank $2$; at the origin it has rank $0$. The rank follows the algebraic norm and not the Krein norm: it is constant on $\mathcal K_{\mathrm u}$ and on each point of $\mathcal K_{\mathrm d}$ it is the algebraic rank, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*.
 
-**The sandwich.** The operator $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the sandwich separates them, and it does so through the algebraic norm.
+**The sandwich.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the sandwich separates them, and it does so through the algebraic norm.
 
 **The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -289,7 +289,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 | $iS^2$ | the set of pure imaginary unit vectors, $B^2=-1$ |
 | $\mathbb{C}(e_t+i\vec u)$, $\vec u\in S^2$ | the doubly null Peirce lines |
 | $\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$ | the Hermitian idempotent of the Peirce line |
-| $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
+| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
 
 ## Further Reading
 

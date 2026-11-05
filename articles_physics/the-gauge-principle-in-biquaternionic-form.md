@@ -116,7 +116,7 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 
 **The transformation law is the one already in the corpus.** The law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of *Maxwell's Equations in the Biquaternionic Formulation*. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.
 
-**The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\phi/c$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
+**The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
 \tilde{\nabla}\Gamma = e_t\,\partial/\partial Q_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial Q_k\,\Gamma,

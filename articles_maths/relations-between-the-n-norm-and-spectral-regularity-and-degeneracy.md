@@ -232,20 +232,20 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 **Definition (the sandwich).** The **sandwich** of $\tilde Q$ is the $\mathbb{C}$-linear operator
 
 $$
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},
 $$
 
 where ${}^{*}$ is the Hermitian conjugate of the matrix model.
 
-**Theorem (the sandwich is singular on the null cone).** $\Theta_{\tilde Q}$ is singular exactly on $\mathcal N$.
+**Theorem (the sandwich is singular on the null cone).** $\mathrm{Sd}_{\tilde Q}$ is singular exactly on $\mathcal N$.
 
 *Proof.* If $N=0$ and $\tilde Q\neq0$, then $\tilde Q^{\natural}\neq0$ and
 
 $$
-\Theta_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\tilde Q^{\natural}\tilde Q^{*}=N\tilde Q^{*}=0.
+\mathrm{Sd}_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\tilde Q^{\natural}\tilde Q^{*}=N\tilde Q^{*}=0.
 $$
 
-At the origin the operator is zero. Off the origin on the null cone, $\tilde Q$ has rank one in the matrix model; writing $\mathsf M_2(\tilde Q)=uv^{*}$ for column vectors $u,v$, with $v^{*}u=0$ because $\tilde Q^2=0$, gives $\Theta_{\tilde Q}(\tilde X)=(v^{*}\tilde Xv)\,uu^{*}$, so the image is the line $\mathbb{C}\tilde Q\tilde Q^{*}$ and the rank is one. Conversely, if $N\neq0$ then $\tilde Q$ is a unit and $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$.
+At the origin the operator is zero. Off the origin on the null cone, $\tilde Q$ has rank one in the matrix model; writing $\mathsf M_2(\tilde Q)=uv^{*}$ for column vectors $u,v$, with $v^{*}u=0$ because $\tilde Q^2=0$, gives $\mathrm{Sd}_{\tilde Q}(\tilde X)=(v^{*}\tilde Xv)\,uu^{*}$, so the image is the line $\mathbb{C}\tilde Q\tilde Q^{*}$ and the rank is one. Conversely, if $N\neq0$ then $\tilde Q$ is a unit and $\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}$.
 
 **Definition (the inner derivation).** The **inner derivation** of $\tilde Q$ is
 
@@ -271,7 +271,7 @@ If $B^{2}=0$ then $\mathrm{ad}_{\vec Q}^{3}=0$. If $B^{2}\neq0$ then $\vec Q\neq
 
 **The three operator readings in the sectors.**
 
-| sector | rank $L_{\tilde Q}$ | $\Theta_{\tilde Q}$ | $\mathrm{ad}_{\tilde Q}$ |
+| sector | rank $L_{\tilde Q}$ | $\mathrm{Sd}_{\tilde Q}$ | $\mathrm{ad}_{\tilde Q}$ |
 |---|---|---|---|
 | $\Sigma_{11}$ | $4$ | invertible | not nilpotent |
 | $\Sigma_{10}$ | $4$ | invertible | nilpotent, zero on $\Sigma_{10}^{\mathrm{s}}$ and of index $3$ on $\Sigma_{10}^{\mathrm{J}}$ |
@@ -311,7 +311,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 | $\Rho,\tilde U$ | the modulus and the unit factor, $\tilde Q=\Rho\tilde U$ with $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ |
 | $\vec\Upsilon$ | a non-zero pure nilpotent, $\vec\Upsilon^2=0$ |
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ | left multiplication; rank $4$ on the units, $2$ on the non-zero null elements, $0$ at the origin |
-| $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, singular exactly on $\mathcal N$ |
+| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, singular exactly on $\mathcal N$ |
 | $\mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q$ | the inner derivation, nilpotent exactly on $\mathcal S$ |
 
 ## Further Reading

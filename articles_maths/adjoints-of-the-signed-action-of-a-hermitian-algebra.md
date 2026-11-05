@@ -144,7 +144,7 @@ so the adjoint operation and the modular flow are interchangeable on the signed 
 
 **Proof.** The criteria of the theorem involve only the involution and the even products $x^{\dagger}x$, $xx^{\dagger}$; on an odd parameter $\Lambda^{\alpha}_u = -L_u$, a real rescaling, which preserves self-adjointness, skew-adjointness, normality and unitarity, and reverses positivity.
 
-**Remark (the value at the unit).** The signed left action at the unit is $\Lambda^{\alpha}_x(1) = \alpha(x)$, equal to $x$ on the even part and to $-x$ on the odd part; this is the simplest place where the sign is visible, and it is the one-sided statement of the value $\Theta^{\alpha}_x(1) = \varepsilon_xxx^{\dagger}$ of the two-sided operator.
+**Remark (the value at the unit).** The signed left action at the unit is $\Lambda^{\alpha}_x(1) = \alpha(x)$, equal to $x$ on the even part and to $-x$ on the odd part; this is the simplest place where the sign is visible, and it is the one-sided statement of the value $\mathrm{Sd}^{\alpha}_x(1) = \varepsilon_xxx^{\dagger}$ of the two-sided operator.
 
 ## Worked Cases
 

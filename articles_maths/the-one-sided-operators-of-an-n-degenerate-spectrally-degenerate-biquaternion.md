@@ -576,7 +576,7 @@ $$
 L_{\tilde\nu}=2\lvert c_0\rvert\,L_{\tilde Q_0}.
 $$
 
-The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert$ is positive and phase-blind. The sandwich of the companion article is $4\lvert c_0\rvert^{2}\Theta_{\tilde Q_0}$, also phase-blind. This is the cleanest illustration of the one-sided/two-sided contrast in the sector.
+The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert$ is positive and phase-blind. The sandwich of the companion article is $4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}$, also phase-blind. This is the cleanest illustration of the one-sided/two-sided contrast in the sector.
 
 ## Summary
 

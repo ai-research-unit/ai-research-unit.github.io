@@ -6,7 +6,7 @@
 The **reflection** of a graded algebra is the signed conjugation
 
 $$
-\tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x) ,
+\tau_a(x) = a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x) ,
 $$
 
 the signed sandwich with the parameter $b = a^{-1}$; it is an involution exactly when $a$ is a **reflection element**, $\alpha(a) = a^{-1}$. The article computes its **adjoint** for the trace form by specialising the adjoint of the signed sandwich:
@@ -26,7 +26,7 @@ The reflections and the reflection elements are *Reflections as Signed Two-Sided
 **Definition.** The **reflected signed two-sided operator** (the reflection) is
 
 $$
-\tau_a : A\to A, \qquad \tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,\,a^{-1}}(x) ;
+\tau_a : A\to A, \qquad \tau_a(x) = a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,\,a^{-1}}(x) ;
 $$
 
 it is the signed conjugation by $a$, and it is an **involution** exactly when $a$ is a reflection element, $\alpha(a) = a^{-1}$.
@@ -39,9 +39,9 @@ $$
 
 in particular the adjoint of a reflection is again a reflection, the adjoint of $\tau_a$ is the ordinary conjugation by $a^{*}$ when the grade involution is the identity, and the family of the reflections is **closed under the adjoint**.
 
-*Proof.* Apply the adjoint formula of the signed sandwich to $\Theta^{\alpha}_{a,a^{-1}}$:
+*Proof.* Apply the adjoint formula of the signed sandwich to $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$:
 $$
-(\tau_a)^{*} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
+(\tau_a)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
 $$
 using $\alpha((a^{-1})^{*}) = \alpha(a^{-1})^{*} = \alpha(a^{*})^{-1}$ and the definition of the reflection. The identity grade involution gives $(\tau_a)^{*} = \tau_{a^{*}}$, the conjugation by the adjoint.
 
@@ -95,7 +95,7 @@ $$
 
 If the grade involution is not positive then the reflection of positive parameters need not be positive, and the obstruction is the sign of $\alpha$ on the odd part of the cone.
 
-*Proof.* The reflection is the signed sandwich $\Theta^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of *The Adjoint of a Positive Operator*. The failure in the non-positive case is the positivity proposition of the signed sandwich.
+*Proof.* The reflection is the signed sandwich $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of *The Adjoint of a Positive Operator*. The failure in the non-positive case is the positivity proposition of the signed sandwich.
 
 **Corollary (the order and the outer class).** The reflections that are positive form a subset of the realised reflections closed under the adjoint; the order-reversing reflections are the ones whose adjoint is their negative up to the centre; and the adjoint action on the realised reflections preserves both the positive and the order-reversing classes, because it preserves the positivity of the operators. This is the order-theoretic statement of the outer-class computation: the adjoint is an order automorphism of the reflection family whose action on the outer classes is the $\alpha$-twist of the parameter.
 
@@ -117,7 +117,7 @@ Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and its positive g
 
 ## Summary
 
-The **reflection** $\tau_a(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x)$ of a graded ordered involutive algebra has, for the trace form, the adjoint
+The **reflection** $\tau_a(x) = a\alpha(x)a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x)$ of a graded ordered involutive algebra has, for the trace form, the adjoint
 
 $$
 (\tau_a)^{*} = \tau_{\alpha(a^{*})} ,

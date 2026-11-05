@@ -242,7 +242,7 @@ $$
 **Corollary (the Cartan decomposition).** The Cartan involution
 
 $$
-\theta(A)=-A^*
+\mathrm{J}(A)=-A^*
 $$
 
 is an involution of the real Lie algebra $\mathfrak{gl}_6(\mathbb{C})$, with fixed set $\mathfrak{u}(6)$ and $-1$ eigenspace $\mathrm i\mathfrak{u}(6)$, the Hermitian matrices. Hence
@@ -253,7 +253,7 @@ $$
 
 as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the space of positive definite Hermitian matrices.
 
-**Proof.** $\theta$ is an involution because $(A^*)^*=A$; $\theta(X)=X$ iff $X^*=-X$; $\theta(X)=-X$ iff $X^*=X$. The quotient is the symmetric space of the Cartan involution, identified with the positive definite Hermitian matrices by the polar decomposition.
+**Proof.** $\mathrm{J}$ is an involution because $(A^*)^*=A$; $\mathrm{J}(X)=X$ iff $X^*=-X$; $\mathrm{J}(X)=-X$ iff $X^*=X$. The quotient is the symmetric space of the Cartan involution, identified with the positive definite Hermitian matrices by the polar decomposition.
 
 ### The Special $*$-Unitary Form
 
@@ -356,7 +356,7 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 | $\mathfrak{su}(6)$ | the traceless skew-Hermitian Lie algebra, dimension $35$ |
 | $\langle A,B\rangle$ | the Hermitian trace form $\operatorname{tr}(A^*B)$ |
 | $\lVert A\rVert_F$ | the Frobenius norm |
-| $\theta(A)=-A^*$ | the Cartan involution |
+| $\mathrm{J}(A)=-A^*$ | the Cartan involution |
 | $\mathbb{B}$ | the biquaternion algebra |
 
 ## Further Reading

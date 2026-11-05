@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that *Maxwell's Equations in the Biquaternionic Formulation* states in the Lorenz gauge, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_\Box = \frac{1}{4\pi R}\,\delta(t' - R/c)$ and the retarded convolution are stated, but not derived, in the companion article *Radiation from Accelerated Charges in Biquaternionic Form*, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the *inverse* of the wave operator: the object that turns a source into a field.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$; the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box\tilde{A} = -\mu\tilde J$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A} = i\,a'_te_t + \vec A$; the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box\tilde{A} = -\mu\tilde J$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
 
 **What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\phi$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
@@ -120,9 +120,9 @@ $$
 $$
 and the retarded (future-cone) distribution with the correct normalization is
 $$
-G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{2\pi c}\,\Theta(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right),
+G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right),
 \qquad
-\Theta(t') = \begin{cases} 1, & t' > 0,\\ 0, & t' < 0. \end{cases}
+\mathrm{H}^{\mathrm{hvs}}(t') = \begin{cases} 1, & t' > 0,\\ 0, & t' < 0. \end{cases}
 $$
 To convert the invariant delta into a delta of $t' - R/c$ one uses the composition rule $\delta(f(t')) = \sum_i \delta(t' - t'_i)/\left|\frac{df}{dt'}(t'_i)\right|$ at the roots $t'_i$ of $f$. For $f(t') = {t'}^2 - R^2/c^2$ the roots are $t' = \pm R/c$, and at the future root the Jacobian is
 $$
@@ -134,7 +134,7 @@ $$
 $$
 and hence
 $$
-\frac{1}{2\pi c}\,\Theta(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right)
+\frac{1}{2\pi c}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta\!\left({t'}^2 - \frac{R^2}{c^2}\right)
 = \frac{1}{2\pi c}\cdot\frac{c}{2R}\,\delta\!\left(t' - \frac{R}{c}\right)
 = \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = G^{\mathrm{ret}} .
 $$
@@ -150,7 +150,7 @@ $$
 where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $t'>0$ (and in the upper half-plane, with no poles, for $t'<0$) gives
 $$
 \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\omega t')}{c^2 k^2 - \omega^2}
-= \frac{c}{k}\,\sin(ckt')\,\Theta(t').
+= \frac{c}{k}\,\sin(ckt')\,\mathrm{H}^{\mathrm{hvs}}(t').
 $$
 The angular integral of $\exp(i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ over the directions of $\vec k$ introduces $\sin(kR)/(kR)$, so
 $$
@@ -170,7 +170,7 @@ G_{\mathrm{adv}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\,\de
 \qquad
 \Box\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{Q}),
 $$
-with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi c}\Theta(-t')\delta({t'}^2 - R^2/c^2)$, and the Jacobian at the past root $t' = -R/c$ is again $2R/c$.
+with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(-t')\delta({t'}^2 - R^2/c^2)$, and the Jacobian at the past root $t' = -R/c$ is again $2R/c$.
 
 **(b) The homogeneous difference.** Since $\Box$ is linear, $\Box(G^{\mathrm{ret}} - G_{\mathrm{adv}}) = 0$:
 $$
@@ -196,9 +196,9 @@ $$
 $$
 the $t'_2$ integral having been performed against the delta. Every source contribution is evaluated at its own *retarded time* $t' - R/c$: the field at $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.
 
-**(b) The component potentials.** The four-current is $\tilde J = ic\rho\,e_t + \vec J$, with scalar part $ic\rho$ and vector part $\vec J$. The scalar part of $\tilde{A}$ is $A_0 = i\phi/c$, so
+**(b) The component potentials.** The four-current is $\tilde J = ic\rho\,e_t + \vec J$, with scalar part $ic\rho$ and vector part $\vec J$. The scalar part of $\tilde{A}$ is $A_0 = i\,a'_t$, so
 $$
-\frac{i\phi}{c} = \frac{\mu}{4\pi}\int\frac{ic\,\rho^{\mathrm{ret}}}{R}\,d^3y
+i\,a'_t = \frac{\mu}{4\pi}\int\frac{ic\,\rho^{\mathrm{ret}}}{R}\,d^3y
 \;\Longrightarrow\;
 \phi = \frac{\mu c^2}{4\pi}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y = \frac{1}{4\pi\epsilon}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
 $$
@@ -290,7 +290,7 @@ G^{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{1}{4\pi R}\,\de
 \Box\,G^{\mathrm{ret}} = -\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 \qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|,
 $$
-derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t'-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\Theta(t')\delta({t'}^2 - R^2/c^2)$ by the Jacobian conversion $\delta({t'}^2 - R^2/c^2) = \frac{c}{2R}\delta(t'-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
+derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t'-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\mathrm{H}^{\mathrm{hvs}}(t')\delta({t'}^2 - R^2/c^2)$ by the Jacobian conversion $\delta({t'}^2 - R^2/c^2) = \frac{c}{2R}\delta(t'-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
 
 The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t'+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
@@ -318,8 +318,8 @@ with all sources at the retarded time $t' - R/c$; the retarded solution is autom
 | $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$ | Retarded Green's function |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t' + R/c)$ | Advanced Green's function |
 | $\sigma = {t'}^2 - R^2/c^2$ | Light-cone invariant (argument of the invariant delta) |
-| $\Theta(t')$ | Heaviside step function |
-| $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ | Potential biquaternion |
+| $\mathrm{H}^{\mathrm{hvs}}(t')$ | Heaviside step function |
+| $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current of the potential equation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |

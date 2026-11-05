@@ -721,7 +721,7 @@ This interpretation is the origin of the *triality construction* recorded in the
 
 6. **The relation to the biquaternion Maxwell equation.** The two equations have the same form. Is there a deeper sense in which the photon and the electron are the same biquaternion field in different representations, or is the identity purely formal? **Partly answered**, in the section *The Lanczos Route: Maxwell with Feedback*: the shared object is the **operator** and the Dirac equation is the **closed** (feedback) way of obeying it, so the identity is structural rather than merely formal, and the fermionic statistics follow from the complex conjugation in the Lanczos form. What remains open is the feedback itself — the framework represents the mass feedback but does not derive it.
 
-7. **The minimal coupling to electromagnetism.** The standard Dirac equation couples to the electromagnetic field through the minimal coupling $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$. How this coupling reads in the biquaternion framework, given the biquaternion form of the four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$, is treated in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
+7. **The minimal coupling to electromagnetism.** The standard Dirac equation couples to the electromagnetic field through the minimal coupling $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$. How this coupling reads in the biquaternion framework, given the biquaternion form of the four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A$, is treated in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
 
 These questions are open.
 

@@ -5,90 +5,90 @@
 **The operator.** For $\tilde Q\in\mathbb{B}$, the **Hermitian sandwich** is
 
 $$
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
-It is the two-sided operator $L_{\tilde Q}R_{\tilde Q^{*}}$: the second slot is tied to the first by the involution. The two-sided family is a complex cone of complex dimension seven; the sandwich is the graph of the involution inside it, a **real** cone of real dimension seven. The phase of the parameter cancels, $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for $|\omega|=1$, and the square of the modulus is the only scale. The image is not a complex subspace: the sandwich is quadratic in $\tilde Q$, and a complex rescaling of $\tilde Q$ rescales the operator by the square of the modulus, a positive real number.
+It is the two-sided operator $L_{\tilde Q}R_{\tilde Q^{*}}$: the second slot is tied to the first by the involution. The two-sided family is a complex cone of complex dimension seven; the sandwich is the graph of the involution inside it, a **real** cone of real dimension seven. The phase of the parameter cancels, $\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for $|\omega|=1$, and the square of the modulus is the only scale. The image is not a complex subspace: the sandwich is quadratic in $\tilde Q$, and a complex rescaling of $\tilde Q$ rescales the operator by the square of the modulus, a positive real number.
 
-**The results.** The article states five things. The sandwich is multiplicative up to the order of the factors, $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
+**The results.** The article states five things. The sandwich is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
 
-**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Conventions of the Operator Families*: $\Theta_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde P}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{M}_+$ and $\mathbb{M}_-$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
+**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Conventions of the Operator Families*: $\mathrm{Sd}_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde P}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{M}_+$ and $\mathbb{M}_-$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
 
-**The real cone.** The set $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\Theta_{\tilde Q}:\tilde Q\in\mathbb{B}\}$ is a cone: it is closed under multiplication by nonnegative real numbers, and it is not closed under addition. It is a real cone of real dimension seven, not a complex cone. The two-sided cone $\operatorname{End}_{LR}(\mathbb{B})$ is complex of complex dimension seven, and the sandwich is a real slice of it, a proper subset, the slice on which the two parameters are conjugate.
+**The real cone.** The set $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\mathrm{Sd}_{\tilde Q}:\tilde Q\in\mathbb{B}\}$ is a cone: it is closed under multiplication by nonnegative real numbers, and it is not closed under addition. It is a real cone of real dimension seven, not a complex cone. The two-sided cone $\operatorname{End}_{LR}(\mathbb{B})$ is complex of complex dimension seven, and the sandwich is a real slice of it, a proper subset, the slice on which the two parameters are conjugate.
 
-## The Operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$
+## The Operator $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$
 
 ### The Definition
 
-**Definition.** For $\tilde Q\in\mathbb{B}$, $\Theta_{\tilde Q}$ is the map
+**Definition.** For $\tilde Q\in\mathbb{B}$, $\mathrm{Sd}_{\tilde Q}$ is the map
 
 $$
-\Theta_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
 It is the composite $L_{\tilde Q}R_{\tilde Q^{*}}$ of a left multiplication and a right multiplication. It is $\mathbb{C}$-linear in $\tilde X$, because $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ are $\mathbb{C}$-linear. It is invertible exactly when $\tilde Q$ is a unit, and then
 
 $$
-\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}.
+\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}.
 $$
 
 If $\tilde Q$ is not a unit, the map has a nonzero kernel: a nonzero $\tilde X$ with $\tilde Q\tilde X=0$ or $\tilde X\tilde Q^{*}=0$ is sent to zero.
 
-**The zero and the identity.** $\Theta_0=0$, and $\Theta_{e_t}=\mathrm{id}$. The identity is the sandwich of the unit, and the identity operator is also $\Theta_{\omega e_t}$ for every central phase $\omega$ of modulus one. The map $\tilde Q\mapsto\Theta_{\tilde Q}$ is not linear: it is quadratic, with the cross terms $\tilde Q\tilde X\tilde P^{*}+\tilde P\tilde X\tilde Q^{*}$ in $\Theta_{\tilde Q+\tilde P}$.
+**The zero and the identity.** $\mathrm{Sd}_0=0$, and $\mathrm{Sd}_{e_t}=\mathrm{id}$. The identity is the sandwich of the unit, and the identity operator is also $\mathrm{Sd}_{\omega e_t}$ for every central phase $\omega$ of modulus one. The map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is not linear: it is quadratic, with the cross terms $\tilde Q\tilde X\tilde P^{*}+\tilde P\tilde X\tilde Q^{*}$ in $\mathrm{Sd}_{\tilde Q+\tilde P}$.
 
 **The scaling.** For $\lambda\in\mathbb{C}$,
 
 $$
-\Theta_{\lambda\tilde Q}=|\lambda|^{2}\,\Theta_{\tilde Q},
+\mathrm{Sd}_{\lambda\tilde Q}=|\lambda|^{2}\,\mathrm{Sd}_{\tilde Q},
 $$
 
-because $(\lambda\tilde Q)^{*}=\bar\lambda\tilde Q^{*}$. The phase of $\lambda$ cancels and the modulus squared remains. In particular $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for every $\omega$ with $|\omega|=1$.
+because $(\lambda\tilde Q)^{*}=\bar\lambda\tilde Q^{*}$. The phase of $\lambda$ cancels and the modulus squared remains. In particular $\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for every $\omega$ with $|\omega|=1$.
 
 ### The Member $L_{\tilde Q}R_{\tilde Q^{*}}$
 
 **The two-sided family.** The sandwich is the member of the two-sided family whose parameters are tied:
 
 $$
-\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}.
+\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}.
 $$
 
 The two-sided family is the set of decomposable tensors $\tilde Q\otimes\tilde P^{\mathrm{opp}}$, a complex cone of complex dimension seven in the complex sixteen-dimensional algebra. The sandwich is the graph of the involution $\tilde P=\tilde Q^{*}$ inside that cone.
 
 **The graph is real, not complex.** For $\lambda\in\mathbb{C}^{\times}$ the pair $(\lambda\tilde Q,(\lambda\tilde Q)^{*})=(\lambda\tilde Q,\bar\lambda\tilde Q^{*})$ is not $\lambda(\tilde Q,\tilde Q^{*})$ unless $\lambda$ is real. The graph is therefore not a complex subcone: a complex rescaling of the pair leaves the graph, while the sandwich itself rescales by $|\lambda|^{2}$. The image is a real cone of real dimension seven. Its complex span is the whole endomorphism algebra: the graph is a real form of $\mathbb{B}\times\mathbb{B}$, and the bilinear map $T$ is surjective by the generation theorem of *Two-Sided Operators on the Biquaternion Algebra*; the complex cone generated by a single sandwich is only a complex line, so the real cone is not the complex cone. Over $\mathbb{R}$ the sandwich cone is a proper subset of the ambient space: it is a real cone of real dimension seven, not a real vector space, and its complex span is the whole algebra.
 
-**The member.** The set is named in *Conventions of the Operator Families*; this article proves the row: $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\Theta_{\tilde Q}\}$ is a real cone of real dimension seven, contained in $\operatorname{End}_{LR}(\mathbb{B})$ and meeting each one-sided family in the closed ray of the identity. The sections below give the proofs.
+**The member.** The set is named in *Conventions of the Operator Families*; this article proves the row: $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\mathrm{Sd}_{\tilde Q}\}$ is a real cone of real dimension seven, contained in $\operatorname{End}_{LR}(\mathbb{B})$ and meeting each one-sided family in the closed ray of the identity. The sections below give the proofs.
 
 ## Multiplicativity
 
-### $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$
+### $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}$
 
 **Proposition (multiplicativity).** For all $\tilde Q,\tilde P\in\mathbb{B}$,
 
 $$
-\Theta_{\tilde Q}\,\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}.
+\mathrm{Sd}_{\tilde Q}\,\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}.
 $$
 
 *Proof.* For every $\tilde X$,
 
 $$
-\Theta_{\tilde Q}\bigl(\Theta_{\tilde P}(\tilde X)\bigr)
+\mathrm{Sd}_{\tilde Q}\bigl(\mathrm{Sd}_{\tilde P}(\tilde X)\bigr)
 =\tilde Q\,\tilde P\,\tilde X\,\tilde P^{*}\,\tilde Q^{*}
 =(\tilde Q\tilde P)\,\tilde X\,(\tilde Q\tilde P)^{*},
 $$
 
-because $(\tilde Q\tilde P)^{*}=\tilde P^{*}\tilde Q^{*}$. The right-hand side is $\Theta_{\tilde Q\tilde P}(\tilde X)$.
+because $(\tilde Q\tilde P)^{*}=\tilde P^{*}\tilde Q^{*}$. The right-hand side is $\mathrm{Sd}_{\tilde Q\tilde P}(\tilde X)$.
 
-**The order.** The composition is $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$; the map $\tilde Q\mapsto\Theta_{\tilde Q}$ is therefore a homomorphism from the opposite algebra $\mathbb{B}^{\mathrm{opp}}$ to $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, not from $\mathbb{B}$. The reversal is the involution: the star reverses the order of the factors. In particular the image is a group anti-isomorphic to the unit group, and $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$ is the inverse in the image.
+**The order.** The composition is $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}$; the map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is therefore a homomorphism from the opposite algebra $\mathbb{B}^{\mathrm{opp}}$ to $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, not from $\mathbb{B}$. The reversal is the involution: the star reverses the order of the factors. In particular the image is a group anti-isomorphic to the unit group, and $\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}$ is the inverse in the image.
 
-**The kernel of the parameter map.** If $\Theta_{\tilde Q}=\mathrm{id}$, then $\tilde Q\tilde X\tilde Q^{*}=\tilde X$ for all $\tilde X$. At $\tilde X=e_t$ this gives $\tilde Q\tilde Q^{*}=e_t$; the parameter is a unit of norm one. The identity sandwich is $\Theta_{\omega e_t}$ for every central phase $\omega$ with $|\omega|=1$, and these are all: the kernel of the parameter map on the unit group is the central $U(1)$. The proof of the exact kernel is in §*The Parameter Modulo $\mathrm{U}(1)$*.
+**The kernel of the parameter map.** If $\mathrm{Sd}_{\tilde Q}=\mathrm{id}$, then $\tilde Q\tilde X\tilde Q^{*}=\tilde X$ for all $\tilde X$. At $\tilde X=e_t$ this gives $\tilde Q\tilde Q^{*}=e_t$; the parameter is a unit of norm one. The identity sandwich is $\mathrm{Sd}_{\omega e_t}$ for every central phase $\omega$ with $|\omega|=1$, and these are all: the kernel of the parameter map on the unit group is the central $U(1)$. The proof of the exact kernel is in §*The Parameter Modulo $\mathrm{U}(1)$*.
 
 ### The Defect of an Automorphism
 
 **The defect.** The sandwich is not an algebra automorphism in general. For all $\tilde X,\tilde Y$,
 
 $$
-\Theta_{\tilde Q}(\tilde X\tilde Y)-\Theta_{\tilde Q}(\tilde X)\,\Theta_{\tilde Q}(\tilde Y)
+\mathrm{Sd}_{\tilde Q}(\tilde X\tilde Y)-\mathrm{Sd}_{\tilde Q}(\tilde X)\,\mathrm{Sd}_{\tilde Q}(\tilde Y)
 =\tilde Q\,\tilde X\,\bigl(e_t-\tilde Q^{*}\tilde Q\bigr)\,\tilde Y\,\tilde Q^{*}.
 $$
 
@@ -97,13 +97,13 @@ The **defect** is the element $e_t-\tilde Q^{*}\tilde Q$, placed between the two
 **The scaled case.** If $\tilde Q^{*}\tilde Q=\lambda e_t$ with $\lambda>0$, then
 
 $$
-\Theta_{\tilde Q}(\tilde X)\,\Theta_{\tilde Q}(\tilde Y)
-=\lambda\,\Theta_{\tilde Q}(\tilde X\tilde Y),
+\mathrm{Sd}_{\tilde Q}(\tilde X)\,\mathrm{Sd}_{\tilde Q}(\tilde Y)
+=\lambda\,\mathrm{Sd}_{\tilde Q}(\tilde X\tilde Y),
 $$
 
 so the sandwich is a scalar multiple of an algebra automorphism; it is an automorphism exactly when $\lambda=1$. The central multiples of real unit quaternions with a nontrivial scale preserve the subspace structure of §*The Two Halves* but are not algebra automorphisms. The defect $e_t-\tilde Q^{*}\tilde Q=(1-\lambda)e_t$ measures the scale.
 
-**The two laws.** The composition law $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$ holds for every pair, and it concerns the composition of two sandwiches. The automorphism law $\Theta_{\tilde Q}(\tilde X\tilde Y)=\Theta_{\tilde Q}(\tilde X)\Theta_{\tilde Q}(\tilde Y)$ holds only under the defect criterion $\tilde Q^{*}\tilde Q=e_t$, not under the weaker subspace criterion. The two laws are different; the first is the multiplication of the parameter, the second is the preservation of the algebra's product.
+**The two laws.** The composition law $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}$ holds for every pair, and it concerns the composition of two sandwiches. The automorphism law $\mathrm{Sd}_{\tilde Q}(\tilde X\tilde Y)=\mathrm{Sd}_{\tilde Q}(\tilde X)\mathrm{Sd}_{\tilde Q}(\tilde Y)$ holds only under the defect criterion $\tilde Q^{*}\tilde Q=e_t$, not under the weaker subspace criterion. The two laws are different; the first is the multiplication of the parameter, the second is the preservation of the algebra's product.
 
 ## The Two Halves
 
@@ -126,11 +126,11 @@ $$
 =\pm\tilde Q\tilde X\tilde Q^{*}.
 $$
 
-So $\Theta_{\tilde Q}$ preserves each half for every $\tilde Q$, without a unit or norm-one hypothesis. The two statements are consequences of the involution, not of the norm.
+So $\mathrm{Sd}_{\tilde Q}$ preserves each half for every $\tilde Q$, without a unit or norm-one hypothesis. The two statements are consequences of the involution, not of the norm.
 
 **The exchange.** Multiplication by the central $i$ exchanges the halves: $\tilde X\in\mathbb{M}_+$ iff $i\tilde X\in\mathbb{M}_-$. The sandwich commutes with the exchange, because $i$ is central:
 $$
-\Theta_{\tilde Q}(i\tilde X)=i\,\Theta_{\tilde Q}(\tilde X).
+\mathrm{Sd}_{\tilde Q}(i\tilde X)=i\,\mathrm{Sd}_{\tilde Q}(\tilde X).
 $$
 The two halves are one action read in two real forms; the Lorentz transformation on $\mathbb{M}_-$ is the congruence on $\mathbb{M}_+$ composed with the exchange.
 
@@ -140,7 +140,7 @@ The two halves are one action read in two real forms; the Lorentz transformation
 
 **Theorem (the criterion).** For a unit $\tilde Q$, the following are equivalent:
 
-1. $\Theta_{\tilde Q}$ maps each of the six remarkable subspaces to itself;
+1. $\mathrm{Sd}_{\tilde Q}$ maps each of the six remarkable subspaces to itself;
 2. $\tilde Q=\tilde A\,\tilde u$ with $\tilde A$ central and $\tilde u$ a real unit quaternion;
 3. $\tilde Q\tilde Q^{*}$ is a positive real multiple of $e_t$;
 4. $\tilde Q^{*}\tilde Q$ is a positive real multiple of $e_t$.
@@ -155,12 +155,12 @@ For a general element the same equivalences hold with $\tilde Q$ replaced by its
 
 ## The Norm
 
-### $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$
+### $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$
 
 **Proposition (the norm scaling).** For all $\tilde Q,\tilde X\in\mathbb{B}$,
 
 $$
-\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}
+\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}
 =|\langle\tilde Q\rangle_{\natural}|^{2}\,\langle\tilde X\rangle_{\natural}.
 $$
 
@@ -178,7 +178,7 @@ $$
 **The phase of the parameter.** For $\omega\in\mathrm{U}(1)$,
 
 $$
-\Theta_{\omega\tilde Q}=\Theta_{\tilde Q},\qquad
+\mathrm{Sd}_{\omega\tilde Q}=\mathrm{Sd}_{\tilde Q},\qquad
 \langle\omega\tilde Q\rangle_{\natural}=\omega^{2}\langle\tilde Q\rangle_{\natural}.
 $$
 
@@ -192,9 +192,9 @@ The phase of $\tilde Q$ cancels in the operator, and the phase of the norm cance
 
 ### The Real Dimension Seven
 
-**The action.** The group $\mathrm{U}(1)=\{\omega e_t:|\omega|=1\}$ acts on the parameter by $\tilde Q\mapsto\omega\tilde Q$. The sandwich is invariant, by §*The Cancellation of the Phase*. The map $\tilde Q\mapsto\Theta_{\tilde Q}$ factors through the quotient $\mathbb{B}/\mathrm{U}(1)$.
+**The action.** The group $\mathrm{U}(1)=\{\omega e_t:|\omega|=1\}$ acts on the parameter by $\tilde Q\mapsto\omega\tilde Q$. The sandwich is invariant, by §*The Cancellation of the Phase*. The map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ factors through the quotient $\mathbb{B}/\mathrm{U}(1)$.
 
-**The fibre.** Suppose $\Theta_{\tilde Q}=\Theta_{\tilde P}$ with $\tilde Q,\tilde P\neq0$. Then $L_{\tilde Q}R_{\tilde Q^{*}}=L_{\tilde P}R_{\tilde P^{*}}$. By the fibre theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Scaling Orbit*, the two pairs are proportional:
+**The fibre.** Suppose $\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde P}$ with $\tilde Q,\tilde P\neq0$. Then $L_{\tilde Q}R_{\tilde Q^{*}}=L_{\tilde P}R_{\tilde P^{*}}$. By the fibre theorem of *Two-Sided Operators on the Biquaternion Algebra*, §*The Scaling Orbit*, the two pairs are proportional:
 
 $$
 \tilde P=\lambda\tilde Q,\qquad \tilde P^{*}=\lambda^{-1}\tilde Q^{*}
@@ -220,7 +220,7 @@ $$
 
 The ray is the closed ray of nonnegative multiples of the identity; the identity is the point $t=1$, and the zero operator is the point $t=0$.
 
-**The proof.** Write $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$. If $\Theta_{\tilde Q}=L_{\tilde A}$, then $R_{\tilde Q^{*}}=L_{\tilde A}L_{\tilde Q}^{-1}$ when $\tilde Q$ is a unit, so $R_{\tilde Q^{*}}$ lies in $L(\mathbb{B})\cap R(\mathbb{B})$. The intersection of the two one-sided families is the scalars, by *The One-Sided Operators on the Biquaternion Algebra*, so $R_{\tilde Q^{*}}$ is a scalar; hence $\tilde Q^{*}$ is central and $\tilde Q$ is central. If $\tilde Q$ is not a unit and $\Theta_{\tilde Q}=L_{\tilde A}$, evaluating at $e_t$ gives $\tilde A=\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{\natural}e_t$; if $\tilde Q$ is a null element this is zero, and then $\Theta_{\tilde Q}=0$, which forces $\tilde Q=0$. In every case $\tilde Q=\lambda e_t$, and $\Theta_{\tilde Q}=|\lambda|^{2}\mathrm{I}$ is a nonnegative multiple of the identity. The same argument with the roles exchanged gives the intersection with $R(\mathbb{B})$.
+**The proof.** Write $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$. If $\mathrm{Sd}_{\tilde Q}=L_{\tilde A}$, then $R_{\tilde Q^{*}}=L_{\tilde A}L_{\tilde Q}^{-1}$ when $\tilde Q$ is a unit, so $R_{\tilde Q^{*}}$ lies in $L(\mathbb{B})\cap R(\mathbb{B})$. The intersection of the two one-sided families is the scalars, by *The One-Sided Operators on the Biquaternion Algebra*, so $R_{\tilde Q^{*}}$ is a scalar; hence $\tilde Q^{*}$ is central and $\tilde Q$ is central. If $\tilde Q$ is not a unit and $\mathrm{Sd}_{\tilde Q}=L_{\tilde A}$, evaluating at $e_t$ gives $\tilde A=\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{\natural}e_t$; if $\tilde Q$ is a null element this is zero, and then $\mathrm{Sd}_{\tilde Q}=0$, which forces $\tilde Q=0$. In every case $\tilde Q=\lambda e_t$, and $\mathrm{Sd}_{\tilde Q}=|\lambda|^{2}\mathrm{I}$ is a nonnegative multiple of the identity. The same argument with the roles exchanged gives the intersection with $R(\mathbb{B})$.
 
 **The ray is not a subspace.** The ray is a half-line, not a line: the negative multiples of the identity are not in the cone, because they would require $|\lambda|^{2}<0$. The ray is a boundary face of the cone along the central direction; it is the only part of the sandwich cone that is one-sided. The two intersections are the same ray.
 
@@ -230,7 +230,7 @@ The ray is the closed ray of nonnegative multiples of the identity; the identity
 
 ### The Four Products $\lambda_i\bar\lambda_j$
 
-**The statement.** Let $\lambda_1,\lambda_2$ be the eigenvalues of the $2\times2$ matrix $\mathsf M_2(\tilde Q)$. The eigenvalues of $\Theta_{\tilde Q}$ on $\mathbb{B}$ are the four products
+**The statement.** Let $\lambda_1,\lambda_2$ be the eigenvalues of the $2\times2$ matrix $\mathsf M_2(\tilde Q)$. The eigenvalues of $\mathrm{Sd}_{\tilde Q}$ on $\mathbb{B}$ are the four products
 
 $$
 \lambda_i\bar\lambda_j,\qquad i,j\in\{1,2\}.
@@ -239,8 +239,8 @@ $$
 The trace and the determinant follow:
 
 $$
-\operatorname{Tr}\Theta_{\tilde Q}=|\lambda_1+\lambda_2|^{2}=4|Q_t|^{2},\qquad
-\det\Theta_{\tilde Q}=|\lambda_1\lambda_2|^{4}=|\langle\tilde Q\rangle_{\natural}|^{4}.
+\operatorname{Tr}\mathrm{Sd}_{\tilde Q}=|\lambda_1+\lambda_2|^{2}=4|Q_t|^{2},\qquad
+\det\mathrm{Sd}_{\tilde Q}=|\lambda_1\lambda_2|^{4}=|\langle\tilde Q\rangle_{\natural}|^{4}.
 $$
 
 **The reading.** The diagonal products $\lambda_i\bar\lambda_i=|\lambda_i|^{2}$ are nonnegative real; the two off-diagonal products are conjugate to each other. The spectrum is invariant under the phase of $\tilde Q$, and it depends only on the eigenvalues of the $2\times2$ model. If $\tilde Q$ is a unit, all four products are nonzero; if $\tilde Q$ is a null element, at least one eigenvalue is zero, and at least two products vanish. If $\tilde Q$ is central, $\lambda_1=\lambda_2=\lambda$, and all four products are $|\lambda|^{2}$; the sandwich is the scalar $|\lambda|^{2}\mathrm{I}$.
@@ -256,8 +256,8 @@ $$
 **The parameter map on the unit group.** The map
 
 $$
-\Theta:\mathbb{B}^{\times}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\tilde Q\longmapsto\Theta_{\tilde Q}
+\mathrm{J}:\mathbb{B}^{\times}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\tilde Q\longmapsto\mathrm{Sd}_{\tilde Q}
 $$
 
 is a group anti-homomorphism. Its kernel is the central $\mathrm{U}(1)=\{\omega e_t:|\omega|=1\}$, by §*The Parameter Modulo $\mathrm{U}(1)$*. Its image, read on the anti-Hermitian half, is the conformal group
@@ -266,11 +266,11 @@ $$
 CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3),
 $$
 
-of real dimension seven. The general element $\tilde Q=r\zeta\tilde U$ with $r>0$, $|\zeta|=1$ and $|\langle\tilde U\rangle_{\natural}|=1$ gives $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U}$: the phase cancels, the modulus squared is the dilation, and the unit part is the Lorentz transformation.
+of real dimension seven. The general element $\tilde Q=r\zeta\tilde U$ with $r>0$, $|\zeta|=1$ and $|\langle\tilde U\rangle_{\natural}|=1$ gives $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U}$: the phase cancels, the modulus squared is the dilation, and the unit part is the Lorentz transformation.
 
-**The kernel of the linear map.** The kernel of the linear map $\Theta_{\tilde Q}$ for a fixed $\tilde Q$ is a different object. It is $\{0\}$ exactly when $\tilde Q$ is a unit; if $\tilde Q$ is a null element, the kernel is nonzero. The kernel of the parameter map is the $\mathrm{U}(1)$ orbit; the kernel of the linear map is $\{\tilde X:\tilde Q\tilde X\tilde Q^{*}=0\}$. The two kernels are stated separately, and neither is the other.
+**The kernel of the linear map.** The kernel of the linear map $\mathrm{Sd}_{\tilde Q}$ for a fixed $\tilde Q$ is a different object. It is $\{0\}$ exactly when $\tilde Q$ is a unit; if $\tilde Q$ is a null element, the kernel is nonzero. The kernel of the parameter map is the $\mathrm{U}(1)$ orbit; the kernel of the linear map is $\{\tilde X:\tilde Q\tilde X\tilde Q^{*}=0\}$. The two kernels are stated separately, and neither is the other.
 
-**The image of the linear map.** For a unit $\tilde Q$, $\Theta_{\tilde Q}$ is a linear isomorphism of $\mathbb{B}$; for a null element it has a nonzero kernel and a proper image. The image of the parameter map is the cone of §*The Real Cone*; the image of the linear map is the whole algebra or a proper subspace, according to the rank of $\tilde Q$. The rank of $\Theta_{\tilde Q}$ is the square of the rank of $\tilde Q$: the image is $\tilde Q\mathbb{B}\tilde Q^{*}$, of complex dimension $\operatorname{rank}(\tilde Q)^{2}$.
+**The image of the linear map.** For a unit $\tilde Q$, $\mathrm{Sd}_{\tilde Q}$ is a linear isomorphism of $\mathbb{B}$; for a null element it has a nonzero kernel and a proper image. The image of the parameter map is the cone of §*The Real Cone*; the image of the linear map is the whole algebra or a proper subspace, according to the rank of $\tilde Q$. The rank of $\mathrm{Sd}_{\tilde Q}$ is the square of the rank of $\tilde Q$: the image is $\tilde Q\mathbb{B}\tilde Q^{*}$, of complex dimension $\operatorname{rank}(\tilde Q)^{2}$.
 
 ### $SL_2(\mathbb{C})\to SO^{+}(1,3)$ on the Norm-One Slice
 
@@ -278,27 +278,27 @@ of real dimension seven. The general element $\tilde Q=r\zeta\tilde U$ with $r>0
 
 $$
 SL_2(\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad
-\tilde Q\longmapsto\Theta_{\tilde Q},
+\tilde Q\longmapsto\mathrm{Sd}_{\tilde Q},
 $$
 
 a twofold cover. The kernel is $\{\pm e_t\}$; the image is the identity component of the Lorentz group; both groups have real dimension six. The kernel and the image are stated per slice: on $\mathbb{B}^{\times}$ the kernel is $\mathrm{U}(1)$ and the image is $CO^{+}(1,3)$; on $\mathbb{B}_1^{\times}$ the kernel is $\{\pm e_t\}$ and the image is $SO^{+}(1,3)$.
 
 **The Lorentz action.** The anti-Hermitian half is a real four-dimensional space with the Minkowski form of signature $(3,1)$. A unit-norm sandwich preserves the form, because the norm scales by $|\langle\tilde Q\rangle_{\natural}|^{2}=1$. The map is continuous, $SL_2(\mathbb{C})$ is connected, and the kernel is $\{\pm e_t\}$; hence the image is the identity component $SO^{+}(1,3)$. The Hermitian half carries the same action composed with the exchange by $i$, with the opposite sign of the form. The matrix verification is in the two model articles cited in §*The Spectrum*.
 
-**The conformal extension.** For a general unit $\tilde Q=r\zeta\tilde U$, the sandwich is $r^{2}\Theta_{\tilde U}$: a Lorentz transformation composed with the dilation of ratio $r^{2}$ on the algebra, $r^{4}$ on the norm and $r^{8}$ on the $4\times4$ determinant. The image is the conformal group $CO^{+}(1,3)$; the kernel remains the central $\mathrm{U}(1)$, and the scale is the positive real factor. The unit-norm slice is the subgroup on which the dilation is one; the general unit group adds the dilation and the phase, and the phase is the kernel.
+**The conformal extension.** For a general unit $\tilde Q=r\zeta\tilde U$, the sandwich is $r^{2}\mathrm{Sd}_{\tilde U}$: a Lorentz transformation composed with the dilation of ratio $r^{2}$ on the algebra, $r^{4}$ on the norm and $r^{8}$ on the $4\times4$ determinant. The image is the conformal group $CO^{+}(1,3)$; the kernel remains the central $\mathrm{U}(1)$, and the scale is the positive real factor. The unit-norm slice is the subgroup on which the dilation is one; the general unit group adds the dilation and the phase, and the phase is the kernel.
 
 ## Summary
 
-The Hermitian sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
+The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the two-sided family. It is a real cone of real dimension seven, the graph of the involution inside the complex two-sided cone; the phase of the parameter cancels, and complex rescaling acts by the square of the modulus. It is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde P}=\mathrm{Sd}_{\tilde Q\tilde P}$, and its defect from an algebra automorphism is $e_t-\tilde Q^{*}\tilde Q$; the defect vanishes exactly on the central multiples of real unit quaternions. It preserves the Hermitian and anti-Hermitian halves for every parameter, and the finer subspace structure exactly on that same set. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, preserves the null cone and the sign of the norm, and sees only the modulus of the norm. The parameter is defined modulo the central $\mathrm{U}(1)$, which gives the real dimension seven. The sandwich meets each one-sided family in the closed ray of nonnegative multiples of the identity. Its spectrum is the four products $\lambda_i\bar\lambda_j$ of the eigenvalues of the $2\times2$ model with their conjugates; the trace is $4|Q_t|^{2}$ and the determinant is $|\langle\tilde Q\rangle_{\natural}|^{4}$. On the unit group the parameter map has kernel $\mathrm{U}(1)$ and image $CO^{+}(1,3)$; on the norm-one slice it is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
-| $L_{\tilde Q}R_{\tilde P}$ | the two-sided operator; $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ |
+| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
+| $L_{\tilde Q}R_{\tilde P}$ | the two-sided operator; $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian halves, real dimension four each |
-| $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm; $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$ |
+| $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm; $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$ |
 | $\mathrm{U}(1)$ | the central phase $\{\omega e_t:|\omega|=1\}$ |
 | $\operatorname{End}_{LR\ast}(\mathbb{B})$ | the real cone of sandwiches, real dimension seven |
 | $L(\mathbb{B}),R(\mathbb{B})$ | the left and right regular families |

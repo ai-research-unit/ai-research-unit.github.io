@@ -33,7 +33,7 @@ An exotic structure is a smooth structure on a topological manifold that is not 
 | a topological manifold with no smooth structure | a topological manifold carrying no smooth atlas, such as the $E_8$ manifold | *Low-Dimensional Topology*, §Four-Manifolds and the Intersection Form |
 | a non-smoothable intersection form | a form realised by a topological four-manifold but by no smooth one; the obstruction is the Donaldson invariant | *Low-Dimensional Topology* |
 
-The exotic spheres are detected by the signature of a bounding manifold through the Hirzebruch signature theorem, and the class $\Theta_7 \cong \mathbb{Z}/28$ counts them; the exotic structures on $\mathbb{R}^4$ and the non-smoothability of the $E_8$ manifold show that the same phenomenon occurs in dimension four for the simplest topological manifolds. The Whitehead manifold fails a different property: it is contractible and simply connected at infinity in a weaker sense, so its homotopy type does not determine its homeomorphism type.
+The exotic spheres are detected by the signature of a bounding manifold through the Hirzebruch signature theorem, and the class $\mathrm{Sd}_7 \cong \mathbb{Z}/28$ counts them; the exotic structures on $\mathbb{R}^4$ and the non-smoothability of the $E_8$ manifold show that the same phenomenon occurs in dimension four for the simplest topological manifolds. The Whitehead manifold fails a different property: it is contractible and simply connected at infinity in a weaker sense, so its homotopy type does not determine its homeomorphism type.
 
 ## Failures of the Manifold Condition
 
@@ -105,7 +105,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $S^2$, $S^3$, $S^7$ | Sphere of the wild embedding, the complement and the exotic structure |
 | $\mathbb{R}^3$, $\mathbb{R}^4$ | Euclidean spaces of the Whitehead manifold and the exotic structures |
-| $\Theta_7$ | Group of the smooth structures on the topological seven-sphere, $\Theta_7 \cong \mathbb{Z}/28$ |
+| $\mathrm{Sd}_7$ | Group of the smooth structures on the topological seven-sphere, $\mathrm{Sd}_7 \cong \mathbb{Z}/28$ |
 | $\mathbb{RP}^2$, $N_k$ | Projective plane, connected sum of $k$ projective planes |
 | $w_1$, $w_2$ | First and second Stiefel–Whitney classes, the obstructions to orientation and to a spin structure |
 | $\mathbb{R}^n/\Gamma$ | Compact flat orbifold of a crystallographic group |
@@ -116,7 +116,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 ## Further Reading
 
 - Robion Kirby and Laurence Taylor, "A Survey of 4-Manifolds through the Eyes of Surgery", in *Surveys on Surgery Theory* (Princeton University Press, 2000), for the exotic smooth structures on four-manifolds and the failure of smoothing.
-- John Milnor, "On Manifolds Homeomorphic to the 7-Sphere", *Annals of Mathematics* 64 (1956), for the exotic spheres and the computation of $\Theta_7$.
+- John Milnor, "On Manifolds Homeomorphic to the 7-Sphere", *Annals of Mathematics* 64 (1956), for the exotic spheres and the computation of $\mathrm{Sd}_7$.
 - Michael H. Freedman and Frank Quinn, *Topology of 4-Manifolds* (Princeton University Press, 1990), for the topological classification, the $E_8$ manifold and the non-smoothability.
 - J. H. C. Whitehead, "A Certain Open Manifold whose Group is Unity", *Quarterly Journal of Mathematics* 6 (1935), 268–279, for the Whitehead manifold.
 - Ralph H. Fox and Emil Artin, "Some Wild Cells and Spheres in Three-Dimensional Space", *Annals of Mathematics* 49 (1948), 979–990, for the horned sphere and the wild embeddings.

@@ -63,7 +63,7 @@ $$
 \Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\Bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\Bigr),
 $$
 
-where $(g^{-1})_{kl}$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta_{ij})$ of $1$-forms with $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.
+where $(g^{-1})_{kl}$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $A = (A_{ij})$ of $1$-forms with $A_{ij} = \sum_k \Gamma_{ijk}dx_k$; the connection-form letter is $A$ and not $\omega$, which is reserved for the symplectic form.
 
 ### Parallel Transport
 
@@ -155,7 +155,7 @@ $$
 
 a $(1, 3)$-tensor, and the associated $(0, 4)$-tensor is $R(X, Y, Z, W) = g(R(X, Y)Z, W)$.
 
-The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = d\theta + \theta \wedge \theta$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.
+The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = dA + A \wedge A$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.
 
 **Theorem (symmetries).** The $(0,4)$-curvature tensor satisfies
 
@@ -323,11 +323,11 @@ The complete simply connected manifolds of constant curvature are the round sphe
 |---|---|
 | $(M, g)$, $g_{ij}$, $(g^{-1})_{ij}$ | Riemannian manifold; metric coefficients and their inverse matrix |
 | $\nabla$, $\nabla_XY$ | Levi-Civita connection; covariant derivative of $Y$ along $X$ |
-| $\theta = (\theta_{ij})$, $\Gamma_{kij}$ | Connection form and Christoffel symbols; $\theta$ is the connection-form letter of half A |
+| $A = (A_{ij})$, $\Gamma_{kij}$ | Connection form and Christoffel symbols; $A$ is the connection-form letter of half A |
 | $P_\gamma$ | Parallel transport along the curve $\gamma$; an isometry of tangent spaces |
 | $\operatorname{Hol}_p$ | Holonomy group at $p$; its Lie algebra is spanned by the curvature |
 | $R(X,Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$ | Curvature tensor |
-| $\mathcal{R} = d\theta + \theta\wedge\theta$ | Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used |
+| $\mathcal{R} = dA + A\wedgeA$ | Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used |
 | $K(\sigma) = R(v,w,w,v)$ | Sectional curvature of the two-plane $\sigma$ with orthonormal basis $v,w$ |
 | $\operatorname{Ric}(X,Y) = \sum_i R(e_i,X,Y,e_i)$ | Ricci tensor; average of sectional curvatures |
 | $S = \sum_i \operatorname{Ric}(e_i,e_i)$ | Scalar curvature |

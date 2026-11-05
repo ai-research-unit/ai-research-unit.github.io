@@ -65,12 +65,12 @@ which follows from taking the divergence of the Ampère–Maxwell law and substi
 The electromagnetic field is described by a **potential biquaternion**
 
 $$
-\tilde{A} = A_0 + \vec A, \qquad A_0 = \frac{i\phi}{c},
+\tilde{A} = A_0 + \vec A, \qquad A_0 = i\,a'_t,
 $$
 
-where $\phi$ is the scalar potential and $\vec A$ is the vector potential. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
+where $a'_t=\phi/c$ is the temporal parameter, the scalar potential in the unit of $\vec A$, and $\vec A$ is the vector potential. The coefficient of $e_t$ is $A_t=i\,a'_t$, the imaginary case of the general $A_t=a_t+i\,a'_t$. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
 
-The scalar part $A_0 = i\phi/c$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
+The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
 
 The coordinate representation of $\tilde{A}$ as a four-vector potential is
 
@@ -81,7 +81,7 @@ $$
 with the four $e_\mu$ the coefficient basis of *Algebra and Element Conventions*, §*The Base and Its Units*, and
 
 $$
-A_0 = \frac{i\phi}{c}, \qquad (A_1, A_2, A_3) = \vec A.
+A_0 = i\,a'_t, \qquad (A_1, A_2, A_3) = \vec A.
 $$
 
 The four-vector representation is a coordinate representation of the biquaternion, not the fundamental object.
@@ -96,7 +96,7 @@ $$
 \frac{\partial}{\partial Q_t} = -\frac{i}{c}\,\frac{\partial}{\partial t'},
 $$
 
-the substitution fixed in §*Conventions for Derivation* of the same article; that factor is the one that combines with $A_0 = i\phi/c$ below, where the product of the two factors of $i$ is a sign. And the product of the gradient with its conjugate is the **d'Alembertian** times the unit,
+the substitution fixed in §*Conventions for Derivation* of the same article; that factor is the one that combines with $A_0 = i\,a'_t$ below, where the product of the two factors of $i$ is a sign. And the product of the gradient with its conjugate is the **d'Alembertian** times the unit,
 
 $$
 \tilde{\nabla}^{\natural}\tilde{\nabla} = \tilde{\nabla}\tilde{\nabla}^{\natural} = \Box\,e_t ,
@@ -142,7 +142,7 @@ $$
 =-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial t'}+\nabla\phi\Bigr),
 $$
 
-using $A_0 = i\phi/c$ and $i^2=-1$. With $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,
+using $A_0 = i\,a'_t$, $a'_t=\phi/c$ and $i^2=-1$. With $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,
 
 $$
 \mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)
@@ -166,7 +166,7 @@ $$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)\Bigr)\;}.
 $$
 
-In Heaviside–Lorentz units, where $\epsilon=\mu=1$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the form quoted in the companion articles; in a medium with $\sqrt{\mu}\neq1$ the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\phi/c$ fixes the imaginary electric part, and the opposite choice would reverse it.
+In Heaviside–Lorentz units, where $\epsilon=\mu=1$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the form quoted in the companion articles; in a medium with $\sqrt{\mu}\neq1$ the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\,a'_t$ fixes the imaginary electric part, and the opposite choice would reverse it.
 
 **The same object in tensor language.** The four-potential has components $A_\mu$, and the field tensor is
 
@@ -328,10 +328,10 @@ $$
 where $\vec D = \epsilon \vec E$ and $\vec H = \vec B/\mu$ are the usual static fields. In biquaternionic form, the static equation is
 
 $$
-\tilde{\nabla}_{\mathrm{stat}} \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \tilde{\nabla}_{\mathrm{stat}} = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z,
+\vec\nabla \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \vec\nabla = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z,
 $$
 
-where $\tilde{\nabla}_{\mathrm{stat}}$ is the biquaternionic gradient restricted to the spatial directions. The equation is purely spatial, and the time coordinate plays no role.
+where $\vec\nabla$ is the vector part of the biquaternionic gradient, the three spatial terms of $\tilde\nabla$ alone. The equation is purely spatial, and the time coordinate plays no role.
 
 The static solution is given by the **gradient of the Newton kernel**, not by the Newton kernel itself, because the static equation is first order. Write $\vec x = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ for the field point and $\vec y$ for the source point. Then
 
@@ -395,11 +395,11 @@ which means
 
 $$
 S=\frac{\partial A_0}{\partial Q_t} + \mathrm{div}\,\vec A
-=-\frac{i}{c}\frac{\partial}{\partial t'}\Bigl(\frac{i\phi}{c}\Bigr)+\mathrm{div}\,\vec A
+=-\frac{i}{c}\frac{\partial}{\partial t'}\Bigl(i\,a'_t\Bigr)+\mathrm{div}\,\vec A
 =\frac{1}{c^2}\frac{\partial\phi}{\partial t'}+\mathrm{div}\,\vec A=0,
 $$
 
-where the two factors of $i$ give $i^2=-1$ and the sign of the second term. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
+where the two factors of $i$ give $i^2=-1$, $a'_t=\phi/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
 
 $$
 \Box \tilde{A} = -\mu \tilde J,
@@ -701,7 +701,7 @@ $$
 and the potential biquaternion becomes
 
 $$
-\tilde{A} = \frac{i\phi}{c_0} + \vec A.
+\tilde{A} = i\,a'_t + \vec A.
 $$
 
 The complex time coordinate becomes $ic_0 t'$, recovering the familiar $ict'$ form with the vacuum speed of light. The structure of the equations is unchanged. This is the content of the statement that the vacuum is a special case of a medium: the same equations describe both, with different values of $\epsilon$ and $\mu$.
@@ -797,7 +797,7 @@ The corpus records the invariance and the three interpretations as the source's 
 
 ## Beyond the Minkowski Subspace: Complexified Spacetime
 
-Up to this point the potential has been taken in the **anti-Hermitian subspace** $\mathbb{M}_-$ (the material sector): with $A_0 = i\phi/c$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.
+Up to this point the potential has been taken in the **anti-Hermitian subspace** $\mathbb{M}_-$ (the material sector): with $A_0 = i\,a'_t$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.
 
 The electric half $i\sqrt{\epsilon}\,\vec E$ is the Hermitian part of the field and the magnetic half $-\sqrt{\mu}\,\vec H$ the anti-Hermitian part, which is the sector split of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, read on $\tilde F$. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
 

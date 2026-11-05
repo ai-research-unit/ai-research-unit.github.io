@@ -86,19 +86,19 @@ the **Gauss–Kuzmin–Wirsing operator**. Its fixed point is the Gauss density 
 
 ### Quasi-Compactness and the Spectral Gap
 
-**Definition.** A bounded operator $\mathcal{P}$ on a Banach space $E$ is **quasi-compact** if $E$ decomposes as $E=F\oplus V$ with $F$ finite-dimensional, $\mathcal{P}F\subseteq F$ and $\|\mathcal{P}^n|_{V}\|\le C\theta^n$ for some $\theta<1$. Its **essential spectral radius** is $r_{\mathrm{ess}}(\mathcal{P})=\inf\{\rho(\mathcal{P}|_W):W \text{ closed invariant, } \mathcal{P}|_W \text{ quasi-nilpotent on } E/W\}$.
+**Definition.** A bounded operator $\mathcal{P}$ on a Banach space $E$ is **quasi-compact** if $E$ decomposes as $E=F\oplus V$ with $F$ finite-dimensional, $\mathcal{P}F\subseteq F$ and $\|\mathcal{P}^n|_{V}\|\le C\varrho^n$ for some $\varrho<1$. Its **essential spectral radius** is $r_{\mathrm{ess}}(\mathcal{P})=\inf\{\rho(\mathcal{P}|_W):W \text{ closed invariant, } \mathcal{P}|_W \text{ quasi-nilpotent on } E/W\}$.
 
-**Theorem (Lasota–Yorke inequality).** Let $T$ be a piecewise $C^2$ expanding map of the interval, with $|T'|\ge\lambda>1$ and bounded distortion. Then there are constants $C>0$ and $\theta<1$ such that, for every $h$ of bounded variation,
+**Theorem (Lasota–Yorke inequality).** Let $T$ be a piecewise $C^2$ expanding map of the interval, with $|T'|\ge\lambda>1$ and bounded distortion. Then there are constants $C>0$ and $\varrho<1$ such that, for every $h$ of bounded variation,
 
 $$
-\boxed{\;\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\theta^n\|h\|_{\mathrm{BV}}\;} ;
+\boxed{\;\|\mathcal{P}_T^n h\|_{\mathrm{BV}}\le C\|\mathcal{P}_T^n h\|_1+\varrho^n\|h\|_{\mathrm{BV}}\;} ;
 $$
 
-consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded variation is quasi-compact, its essential spectral radius is at most $\theta$, its peripheral spectrum consists of the simple eigenvalue $1$ and finitely many roots of unity, and the Fourier coefficients of the correlations decay at rate at most $\theta$.
+consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded variation is quasi-compact, its essential spectral radius is at most $\varrho$, its peripheral spectrum consists of the simple eigenvalue $1$ and finitely many roots of unity, and the Fourier coefficients of the correlations decay at rate at most $\varrho$.
 
-*Proof (sketch).* The variation of each branch contribution is estimated from the chain rule and the mean value theorem: the variation of $h\circ y_i/|T'\!\circ y_i|$ is at most the variation of $h$ times $\sup|y_i'|$, plus a term proportional to $\|h\circ y_i/|T'\circ y_i|\|_\infty$, and $\sup|y_i'|\le1/\lambda$; summing over the branches gives the displayed inequality with $\theta=1/\lambda$ up to the distortion constants, and the quasi-compactness is the standard Hennion/Nussbaum argument for an operator satisfying such an inequality.
+*Proof (sketch).* The variation of each branch contribution is estimated from the chain rule and the mean value theorem: the variation of $h\circ y_i/|T'\!\circ y_i|$ is at most the variation of $h$ times $\sup|y_i'|$, plus a term proportional to $\|h\circ y_i/|T'\circ y_i|\|_\infty$, and $\sup|y_i'|\le1/\lambda$; summing over the branches gives the displayed inequality with $\varrho=1/\lambda$ up to the distortion constants, and the quasi-compactness is the standard Hennion/Nussbaum argument for an operator satisfying such an inequality.
 
-**Remark (the gap and the statistics).** The spectral gap is exactly the quantitative input of the statistical theory: the eigenvalue $1$ gives the invariant density, the remainder of the spectrum inside the disc of radius $\theta$ gives the exponential decay of correlations $\langle \Omega_T^nf,g\rangle-\mu(f)\mu(g)=O(\theta^n)$ for functions in the space, and the analyticity of the resolvent across the spectral disc yields the central limit theorem and the large deviations by the perturbation theory of the operator. The transfer operator is thus the operator whose spectrum contains the statistical behaviour of the system.
+**Remark (the gap and the statistics).** The spectral gap is exactly the quantitative input of the statistical theory: the eigenvalue $1$ gives the invariant density, the remainder of the spectrum inside the disc of radius $\varrho$ gives the exponential decay of correlations $\langle \Omega_T^nf,g\rangle-\mu(f)\mu(g)=O(\varrho^n)$ for functions in the space, and the analyticity of the resolvent across the spectral disc yields the central limit theorem and the large deviations by the perturbation theory of the operator. The transfer operator is thus the operator whose spectrum contains the statistical behaviour of the system.
 
 ## The Weighted Transfer Operator and the Pressure
 

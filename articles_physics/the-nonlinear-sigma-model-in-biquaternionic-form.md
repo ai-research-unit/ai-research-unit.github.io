@@ -76,21 +76,21 @@ whose vacuum sits at $\phi_1 = \sqrt2\,v_0$, $\phi_2 = 0$, and whose two real co
 $$
 \phi_1 = \sqrt2\,v_0 + h,
 \qquad
-\phi_2 = \theta ,
+\phi_2 = \vartheta^{\mathrm{fld}} ,
 $$
 
-the kinetic term is canonical, $\mathcal{L}^{\mathrm{kin}} = \frac12[(\partial h)^2 + (\partial\theta)^2]$, and the potential depends on the modulus alone, so the angular field $\theta$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\theta$ involves $h$, the resulting Lagrangian for $\theta$ alone contains only derivatives, and its lowest-order term is
+the kinetic term is canonical, $\mathcal{L}^{\mathrm{kin}} = \frac12[(\partial h)^2 + (\partial\vartheta^{\mathrm{fld}})^2]$, and the potential depends on the modulus alone, so the angular field $\vartheta^{\mathrm{fld}}$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\vartheta^{\mathrm{fld}}$ involves $h$, the resulting Lagrangian for $\vartheta^{\mathrm{fld}}$ alone contains only derivatives, and its lowest-order term is
 
 $$
-\mathcal{L}_\text{eff} = \frac12\left[(\partial/\partial t'\theta)^2 - (\nabla\theta)^2\right] + \cdots
+\mathcal{L}_\text{eff} = \frac12\left[(\partial/\partial t'\vartheta^{\mathrm{fld}})^2 - (\nabla\vartheta^{\mathrm{fld}})^2\right] + \cdots
 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\partial/\partial Q_{1,\mu}\,\tilde U\right) + \cdots,
 \qquad
-\tilde U = \exp(i\theta/f)e_t ,
+\tilde U = \exp(i\vartheta^{\mathrm{fld}}/f)e_t ,
 \qquad
 f = \sqrt2\,v_0 ,
 $$
 
-with the shift symmetry $\theta\to\theta+\text{const}$ realised nonlinearly. The constant $f$ is the order parameter in the units fixed by the kinetic term — it does not appear in the canonical kinetic energy, only in the nonlinear field and in the current — and the dynamics of the radial sector is relegated to the dimensionless coefficients of the omitted higher-derivative terms. This is the abelian nonlinear sigma model with target $\mathbb{S}^1$: the field is a phase, the target is a circle, and the shift is its isometry.
+with the shift symmetry $\vartheta^{\mathrm{fld}}\to\vartheta^{\mathrm{fld}}+\text{const}$ realised nonlinearly. The constant $f$ is the order parameter in the units fixed by the kinetic term — it does not appear in the canonical kinetic energy, only in the nonlinear field and in the current — and the dynamics of the radial sector is relegated to the dimensionless coefficients of the omitted higher-derivative terms. This is the abelian nonlinear sigma model with target $\mathbb{S}^1$: the field is a phase, the target is a circle, and the shift is its isometry.
 
 The two facts to retain are that the nonlinear field is the exponential of the broken direction,
 
@@ -330,7 +330,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\tilde U = \exp(\vec\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_t$ |
 | $f$ | Decay constant of the broken symmetry |
 | $\rho = \mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)$, $V = \frac{\lambda}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |
-| $\phi_1 = \sqrt2 v_0 + h$, $\phi_2 = \theta$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
+| $\phi_1 = \sqrt2 v_0 + h$, $\phi_2 = \vartheta^{\mathrm{fld}}$ | Radial and Goldstone components; $f = \sqrt2 v_0$ |
 | $j^R_\mu = \tilde U^{*}\partial/\partial Q_{1,\mu}\,\tilde U$, $j^L_\mu = \partial/\partial Q_{1,\mu}\,\tilde U\,\tilde U^{*}$ | Maurer–Cartan currents |
 | $\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) of the group-valued field |
 | $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Left–right global symmetry; diagonal $SU(2)_V$ unbroken |

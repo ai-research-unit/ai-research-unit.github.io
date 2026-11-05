@@ -136,17 +136,17 @@ Two comments fix the interpretation. First, the tower is infinite because the sp
 In the $ict'$ convention the four-potential is an element of the material sector,
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_t + \vec A \in \mathbb{M}_- ,
+\tilde{A} = i\,a'_t\,e_t + \vec A \in \mathbb{M}_- ,
 \qquad \vec A = A_1\vec e_x + A_2\vec e_y + A_3\vec e_z ,
 $$
 
-whose scalar coefficient is imaginary and whose vector part is real. In the electrostatic limit $\vec A = 0$, and the four-potential reduces to the purely imaginary central element $(i\phi/c)\,e_t$, still an element of $\mathbb{M}_-$: the scalar part of a four-potential is imaginary, and it is that imaginary scalar coefficient that marks the sector. The constant factor $i/c$ plays no role in the statics, and it is convenient to work with the rescaled central element
+whose scalar coefficient is imaginary and whose vector part is real. In the electrostatic limit $\vec A = 0$, and the four-potential reduces to the purely imaginary central element $(i\,a'_t)\,e_t$, still an element of $\mathbb{M}_-$: the scalar part of a four-potential is imaginary, and it is that imaginary scalar coefficient that marks the sector. The constant factor $i/c$ plays no role in the statics, and it is convenient to work with the rescaled central element
 
 $$
 \tilde{\Phi} = \Phi\,e_t ,
 $$
 
-a real, Hermitian central element. It is not itself the four-potential — that is $(i\phi/c)\,e_t$ — but the scalar potential, and the gradients below are the same for either normalisation.
+a real, Hermitian central element. It is not itself the four-potential — that is $(i\,a'_t)\,e_t$ — but the scalar potential, and the gradients below are the same for either normalisation.
 
 The spatial derivative operator is the vector part of the biquaternionic gradient,
 
@@ -343,7 +343,7 @@ The algebra is a **value algebra** of finite dimension, and it carries exactly t
 
 ## Summary
 
-The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\phi/c\,e_t + \vec A\in\mathbb{M}_-$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
+The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{M}_-$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
 
 The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -365,7 +365,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$ | Biquaternionic gradient |
 | $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | Spatial vector gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian (series convention) |
-| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |

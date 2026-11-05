@@ -272,7 +272,7 @@ The same manifold, read as the structure group $SU(2)$, classifies the instanton
 | $\mathcal a=i\,a$, $\mathcal f=iF$ | Connection and curvature in the algebra |
 | $SU(2)=\mathrm{span}$-generated unit quaternions | Structure group; compact factor of $\mathbb M_-$ |
 | $[g_\infty]\in\pi_3(SU(2))\cong\mathbb Z$ | Instanton number; boundary winding |
-| $\tilde A=i\phi/c\,e_t+\vec A$ | Abelian biquaternionic potential |
+| $\tilde A=i\,a'_t\,e_t+\vec A$ | Abelian biquaternionic potential |
 | $D_\mu=\partial/\partial x_\mu+i\kappa\mathcal A_\mu$ | Covariant derivative on the associated bundle |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 

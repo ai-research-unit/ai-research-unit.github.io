@@ -28,11 +28,11 @@ $$
 
 ## The Twist by an Automorphism
 
-**Definition.** For an algebra automorphism $\theta$ of $\mathrm{Cl}(V,\mathfrak{Q})$ and a module $S$, the **twist** $S^{\theta}$ is the module with the action $x\cdot_{\theta}s = \theta(x)\cdot s$.
+**Definition.** For an algebra automorphism $\mathrm{J}$ of $\mathrm{Cl}(V,\mathfrak{Q})$ and a module $S$, the **twist** $S^{\mathrm{J}}$ is the module with the action $x\cdot_{\mathrm{J}}s = \mathrm{J}(x)\cdot s$.
 
-**Proposition (the criterion for isomorphism).** The twist $S^{\theta}$ is isomorphic to $S$ for every module $S$ if $\theta$ is inner, that is $\theta = \mathrm{Ad}_u$ for a unit $u$; the isomorphism is the operator of $u$ on $S$. If $\theta$ is not inner, there are modules for which $S^{\theta}$ is not isomorphic to $S$; and if $\theta$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.
+**Proposition (the criterion for isomorphism).** The twist $S^{\mathrm{J}}$ is isomorphic to $S$ for every module $S$ if $\mathrm{J}$ is inner, that is $\mathrm{J} = \mathrm{Ad}_u$ for a unit $u$; the isomorphism is the operator of $u$ on $S$. If $\mathrm{J}$ is not inner, there are modules for which $S^{\mathrm{J}}$ is not isomorphic to $S$; and if $\mathrm{J}$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.
 
-**Proof.** If $\theta(x) = uxu^{-1}$ then $\theta(x)\cdot s = u\cdot(x\cdot(u^{-1}\cdot s))$, so the operator of $u^{-1}$ intertwines the two actions. The converse and the outer case are the standard module theory of an automorphism.
+**Proof.** If $\mathrm{J}(x) = uxu^{-1}$ then $\mathrm{J}(x)\cdot s = u\cdot(x\cdot(u^{-1}\cdot s))$, so the operator of $u^{-1}$ intertwines the two actions. The converse and the outer case are the standard module theory of an automorphism.
 
 **Corollary (the signed action is a twist).** The signed action is the twist by $\alpha$: $S^{\alpha}$ is the twist of $S$ by the grade involution. So the question "is the signed action equivalent to the ordinary one?" is the question "is $\alpha$ inner?".
 

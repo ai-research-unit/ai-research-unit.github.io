@@ -628,7 +628,7 @@ the factor four being the doubling of the weights of one multiplier; and in the 
 
 ### The Sandwich
 
-**The weights of the sandwich.** The sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is the two-sided operator of the pair $(\tilde Q,\tilde Q^{*})$, and the two elements have the same weights, since the star conjugates the coefficients and the weights are moduli. Its weights are therefore
+**The weights of the sandwich.** The sandwich $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is the two-sided operator of the pair $(\tilde Q,\tilde Q^{*})$, and the two elements have the same weights, since the star conjugates the coefficients and the weights are moduli. Its weights are therefore
 
 $$
 \rho_1^{2}\ \geq\ \rho_1\rho_2\ \geq\ \rho_1\rho_2\ \geq\ \rho_2^{2},
@@ -636,7 +636,7 @@ $$
 
 with $\rho_k=\rho_k(\tilde Q)$: the extremes are the squares, the two middle weights are equal, and the repeated middle weight is the geometric mean of the extremes. The sandwich is the member of the two-sided family whose weight pattern is a geometric progression, and the pattern records that the second multiplier is the star of the first.
 
-**It is not self-adjoint.** Its adjoint is $L_{\tilde Q^{*}}R_{\tilde Q}$, a different operator unless the two multipliers coincide, so the sandwich is not self-adjoint in general and its weights are not its eigenvalues. The distinction is visible at $\tilde Q=\vec e_x$, where the sandwich is minus the conjugation by $\vec e_x$, $\Theta_{\vec e_x}(X)=-\vec e_xX\vec e_x$, and has eigenvalues $1,1,-1,-1$ with all four weights equal to one: an operator can be an isometry and carry a negative eigenvalue at the same time, and the weights do not see the sign.
+**It is not self-adjoint.** Its adjoint is $L_{\tilde Q^{*}}R_{\tilde Q}$, a different operator unless the two multipliers coincide, so the sandwich is not self-adjoint in general and its weights are not its eigenvalues. The distinction is visible at $\tilde Q=\vec e_x$, where the sandwich is minus the conjugation by $\vec e_x$, $\mathrm{Sd}_{\vec e_x}(X)=-\vec e_xX\vec e_x$, and has eigenvalues $1,1,-1,-1$ with all four weights equal to one: an operator can be an isometry and carry a negative eigenvalue at the same time, and the weights do not see the sign.
 
 ### The Weights Are Products in the Model
 
@@ -707,7 +707,7 @@ The two normalisations of a singular vector are different conditions, and the ar
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | The complex square of the vector part |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | The left and the right multiplier |
 | $L_{\tilde Q_1}R_{\tilde Q_2}$ | The two-sided operator, left multiplier first |
-| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | The sandwich |
+| $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | The sandwich |
 | $\mathcal P_{\tilde U_1,\tilde U_2}$ | The elementary endomorphism, $\tilde X\mapsto\tilde U_1\langle\tilde X,\tilde U_2\rangle_{*}$ |
 | $\rho_k(F)$ | The $k$-th weight of the endomorphism $F$ |
 | $\rho_1(\tilde Q),\rho_2(\tilde Q)$ | The two weights of the element $\tilde Q$ |

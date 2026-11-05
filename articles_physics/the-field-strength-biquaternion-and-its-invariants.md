@@ -37,7 +37,7 @@ so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $
 
 The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.
 
-The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\phi/c + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$. The construction is
+The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$. The construction is
 
 $$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr).
@@ -55,7 +55,7 @@ F_{0k} = \frac{iE_k}{c},
 F_{jk} = \epsilon_{jkl}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\phi/c$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 

@@ -77,9 +77,9 @@ and the adjoint operation is an involution exchanging the two sides, $\mathcal{L
 
 **Proof.** $S$ commutes with $T$ iff $\langle STx, y\rangle = \langle TSx, y\rangle$ for all $x, y$, which by the definition of the adjoints is $S^{*}$ commuting with $T^{*}$; the Hilbert statement is the special case.
 
-**Proposition (the pairing adjoint for an involution).** If the dual pair carries a $\varsigma$-semilinear involution $\theta$ of $E$, then the adjoint of $\theta$ with respect to the pairing is the transposed involution $\theta^{t}$ of *The Involution and the Dual Pairing*, of the same kind, and the adjoint of a weakly continuous operator that commutes with $\theta$ commutes with $\theta^{t}$; the pairing-adjoint operation and the transposed involution are compatible.
+**Proposition (the pairing adjoint for an involution).** If the dual pair carries a $\varsigma$-semilinear involution $\mathrm{J}$ of $E$, then the adjoint of $\mathrm{J}$ with respect to the pairing is the transposed involution $\mathrm{J}^{\mathrm{t}}$ of *The Involution and the Dual Pairing*, of the same kind, and the adjoint of a weakly continuous operator that commutes with $\mathrm{J}$ commutes with $\mathrm{J}^{\mathrm{t}}$; the pairing-adjoint operation and the transposed involution are compatible.
 
-**Proof.** The defining relations $\langle\theta x, y\rangle = \varsigma(\langle x, \theta^{t}y\rangle)$ and $\langle\theta x, y\rangle = \langle x, \theta^{*}y\rangle$ agree, so $\theta^{*} = \theta^{t}$ up to the scalar involution; compatibility with the commuting is the commutant duality.
+**Proof.** The defining relations $\langle\mathrm{J} x, y\rangle = \varsigma(\langle x, \mathrm{J}^{\mathrm{t}}y\rangle)$ and $\langle\mathrm{J} x, y\rangle = \langle x, \mathrm{J}^{*}y\rangle$ agree, so $\mathrm{J}^{*} = \mathrm{J}^{\mathrm{t}}$ up to the scalar involution; compatibility with the commuting is the commutant duality.
 
 ## Examples
 
@@ -105,7 +105,7 @@ For a dual pair $\langle E, F\rangle$ a weakly continuous operator $T$ of $E$ ha
 | $T'$ | transpose on the dual, always defined |
 | $T^{*} = \iota_{E}^{-1}T''\iota_{E}$ | adjoint as double transpose in the reflexive case |
 | $T^{*} = R^{-1}T'R$ | Hilbert case, Riesz identification |
-| $\theta^{t}$ | transposed involution, the adjoint of an involution |
+| $\mathrm{J}^{\mathrm{t}}$ | transposed involution, the adjoint of an involution |
 
 ## Further Reading
 

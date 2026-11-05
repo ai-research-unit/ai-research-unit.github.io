@@ -114,7 +114,7 @@ $$
 
 which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta$ and $\theta+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta\to\theta+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Ϙ\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
 
-The small-$\theta$ dependence of the vacuum energy is the same as in the semiclassical article,
+The small-$\theta^{\mathrm{vac}}$ dependence of the vacuum energy is the same as in the semiclassical article,
 
 $$
 \mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots ,

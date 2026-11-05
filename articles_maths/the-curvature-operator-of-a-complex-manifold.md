@@ -11,7 +11,7 @@ and both the complex structure $J$ and the curvature of a Hermitian or Kähler m
 
 The article has four sections: the curvature operator and the action of the complex structure on bivectors; the Chern curvature and the first Chern form; the Kähler curvature and its symmetries; and the decomposition of the operator by the unitary group. The Riemannian curvature operator, the bivectors, its self-adjointness and its scalar-triple decomposition are *The Curvature Operator*, earlier in this Part, which defers the complex and Hermitian case to this article; the Hermitian metric and the Chern connection are *Hermitian Geometry and Almost Complex Structures* and *Hermitian Metrics and the Levi-Civita Connection*; the Kähler metric and the fundamental form are *Kähler Geometry*, and the closedness of the Kähler form and the Kähler identities are *Kähler Manifolds and the Hermitian Form*, later in this category; the first Chern class and the curvature of a connection are *Characteristic Classes*; the Hodge star splitting of the curvature operator in dimension four is *The Involution on the Curvature Operator*. None of that is re-derived. The particular case of the curvature operator of a Kähler surface and its relation to the invariant decomposition is named and not used.
 
-Throughout, $(M,J,g)$ is a complex manifold of complex dimension $n$ with a Hermitian metric $g$, $T_pM$ is a tangent space with the almost complex structure $J$, $\Lambda^2T_pM\otimes\mathbb C$ is the complexified second exterior power, $\mathcal{R}$ is the Riemannian curvature operator of the metric, $\nabla$ is the Chern connection, $\Theta = \nabla^2$ is its curvature, and $\rho$ is the Ricci form.
+Throughout, $(M,J,g)$ is a complex manifold of complex dimension $n$ with a Hermitian metric $g$, $T_pM$ is a tangent space with the almost complex structure $J$, $\Lambda^2T_pM\otimes\mathbb C$ is the complexified second exterior power, $\mathcal{R}$ is the Riemannian curvature operator of the metric, $\nabla$ is the Chern connection, $\Omega = \nabla^2$ is its curvature, and $\rho$ is the Ricci form.
 
 ## The Curvature Operator and the Complex Structure
 
@@ -33,15 +33,15 @@ so $\mathcal{R}$ preserves the type of bivectors and decomposes into a Hermitian
 
 ## The Chern Curvature
 
-**Definition.** On a Hermitian manifold the **Chern connection** is the unique connection $\nabla$ on $TM$ that is metric for $g$, has $\nabla^{0,1} = \bar\partial$ as its $(0,1)$-part, and satisfies $\nabla J = 0$ in its $(1,1)$-part; its **curvature** is $\Theta = \nabla^2 \in \Omega^{1,1}(\operatorname{End}TM)$, a $(1,1)$-form with values in the skew-Hermitian endomorphisms $\mathfrak{u}(n)$ of each tangent space.
+**Definition.** On a Hermitian manifold the **Chern connection** is the unique connection $\nabla$ on $TM$ that is metric for $g$, has $\nabla^{0,1} = \bar\partial$ as its $(0,1)$-part, and satisfies $\nabla J = 0$ in its $(1,1)$-part; its **curvature** is $\Omega = \nabla^2 \in \Omega^{1,1}(\operatorname{End}TM)$, a $(1,1)$-form with values in the skew-Hermitian endomorphisms $\mathfrak{u}(n)$ of each tangent space.
 
-**Proposition (the Chern curvature operator preserves type).** The curvature of the Chern connection is of type $(1,1)$ with values in $\mathfrak u(n)$; its operator $R^{\mathbb C} = \Theta$ on $\Lambda^2T_pM\otimes\mathbb C$ acts as a complex-linear map preserving the bidegree, $R^{\mathbb C}(\Lambda^{n,m})\subseteq\Lambda^{n,m}$, and its action on $\Lambda^{1,1}$ is the Hermitian part of the curvature operator,
+**Proposition (the Chern curvature operator preserves type).** The curvature of the Chern connection is of type $(1,1)$ with values in $\mathfrak u(n)$; its operator $R^{\mathbb C} = \Omega$ on $\Lambda^2T_pM\otimes\mathbb C$ acts as a complex-linear map preserving the bidegree, $R^{\mathbb C}(\Lambda^{n,m})\subseteq\Lambda^{n,m}$, and its action on $\Lambda^{1,1}$ is the Hermitian part of the curvature operator,
 $$
-\langle R^{\mathbb C}(X\wedge\bar Y), Z\wedge\bar W\rangle = \Theta(X,\bar Y; Z,\bar W) ;
+\langle R^{\mathbb C}(X\wedge\bar Y), Z\wedge\bar W\rangle = \Omega(X,\bar Y; Z,\bar W) ;
 $$
 in local holomorphic coordinates the components $R_{i\bar jkl}$ with
 $$
-\Theta_{\bar jkl} = \sum_i R_{i\bar jkl}\,dz_i
+\mathrm{Sd}_{\bar jkl} = \sum_i R_{i\bar jkl}\,dz_i
 $$
 are the Chern curvature coefficients.
 
@@ -49,13 +49,13 @@ are the Chern curvature coefficients.
 
 **Proposition (the first Chern form).** The trace form
 $$
-\boxed{\;c_1(g) = \frac{i}{2\pi}\operatorname{tr}\Theta\;}
+\boxed{\;c_1(g) = \frac{i}{2\pi}\operatorname{tr}\Omega\;}
 $$
 is a closed real $(1,1)$-form whose de Rham class is the first Chern class $c_1(M)$, independent of the Hermitian metric; in a holomorphic frame of a line bundle the form is $\frac{i}{2\pi}\partial\bar\partial\log\|s\|^2$, and for the tangent bundle it is the Ricci form of the chosen metric up to a factor.
 
 **Proof.** The trace of a $\mathfrak u(n)$-valued $(1,1)$-form is a real $(1,1)$-form, closed by the Bianchi identity of the connection, and its class is the Chern class by the Chern–Weil construction; the change of a Hermitian metric on a line bundle multiplies a local frame by a positive function, and the difference of two first Chern forms is $\frac{i}{2\pi}\partial\bar\partial\log(f)$, which is exact. The Chern–Weil theory is *Characteristic Classes*.
 
-**Remark (the Ricci form).** For the tangent bundle with the metric $g$ the trace of $\Theta$ in a unitary frame is the **Ricci form**
+**Remark (the Ricci form).** For the tangent bundle with the metric $g$ the trace of $\Omega$ in a unitary frame is the **Ricci form**
 $$
 \rho = i\sum_{j,k}R_{i\bar j k\bar k}\,dz_i\wedge d\bar z_j,
 $$
@@ -104,7 +104,7 @@ and the first three are determined by the scalar curvature, the traceless Ricci 
 
 ## Summary
 
-On a complex manifold the complexified second exterior power splits into the pieces of type $(2,0)$, $(1,1)$ and $(0,2)$, and the complex structure $\mathcal J$ acts on them with eigenvalues $2i,0,-2i$. The Riemannian curvature operator commutes with $\mathcal J$, $[\mathcal R,\mathcal J]=0$, exactly for a Kähler metric, so that it preserves the type; for a Hermitian metric the type-preserving curvature is that of the Chern connection, a $(1,1)$-form with values in $\mathfrak u(n)$ whose trace $c_1(g)=\frac{i}{2\pi}\operatorname{tr}\Theta$ is the first Chern form, of class $c_1(M)$, and whose contraction is the Ricci form $\rho = i\,\partial\bar\partial\log\det g$ with $[\rho]=2\pi c_1(M)$. For a Kähler metric the Chern connection is the Levi-Civita connection, the curvature tensor satisfies $R_{i\bar j k\bar l}=\overline{R_{j\bar i l\bar k}}=R_{k\bar l i\bar j}=R_{i\bar l k\bar j}$, it is determined by the mixed components, and the holomorphic sectional curvature $H(X)=R(X,\bar X,X,\bar X)/g(X,\bar X)^2$, when constant, forces $R_{i\bar j k\bar l}=\frac{c}{4}(g_{i\bar j}g_{k\bar l}+g_{i\bar l}g_{k\bar j})$ with $\mathbb C^n$, $\mathbb{CP}^n$ and the complex hyperbolic space as the models. Under the unitary group the operator decomposes into the scalar, traceless-Ricci, Bochner and Weyl parts, the Kähler space forms being those with only the scalar part. The Riemannian operator and its $O(2n)$-decomposition are *The Curvature Operator*; the complex and Hermitian structures are *Hermitian Geometry and Almost Complex Structures*, *Hermitian Metrics and the Levi-Civita Connection* and *Kähler Geometry*; the Chern classes are *Characteristic Classes*; the four-dimensional splitting is *The Involution on the Curvature Operator*.
+On a complex manifold the complexified second exterior power splits into the pieces of type $(2,0)$, $(1,1)$ and $(0,2)$, and the complex structure $\mathcal J$ acts on them with eigenvalues $2i,0,-2i$. The Riemannian curvature operator commutes with $\mathcal J$, $[\mathcal R,\mathcal J]=0$, exactly for a Kähler metric, so that it preserves the type; for a Hermitian metric the type-preserving curvature is that of the Chern connection, a $(1,1)$-form with values in $\mathfrak u(n)$ whose trace $c_1(g)=\frac{i}{2\pi}\operatorname{tr}\Omega$ is the first Chern form, of class $c_1(M)$, and whose contraction is the Ricci form $\rho = i\,\partial\bar\partial\log\det g$ with $[\rho]=2\pi c_1(M)$. For a Kähler metric the Chern connection is the Levi-Civita connection, the curvature tensor satisfies $R_{i\bar j k\bar l}=\overline{R_{j\bar i l\bar k}}=R_{k\bar l i\bar j}=R_{i\bar l k\bar j}$, it is determined by the mixed components, and the holomorphic sectional curvature $H(X)=R(X,\bar X,X,\bar X)/g(X,\bar X)^2$, when constant, forces $R_{i\bar j k\bar l}=\frac{c}{4}(g_{i\bar j}g_{k\bar l}+g_{i\bar l}g_{k\bar j})$ with $\mathbb C^n$, $\mathbb{CP}^n$ and the complex hyperbolic space as the models. Under the unitary group the operator decomposes into the scalar, traceless-Ricci, Bochner and Weyl parts, the Kähler space forms being those with only the scalar part. The Riemannian operator and its $O(2n)$-decomposition are *The Curvature Operator*; the complex and Hermitian structures are *Hermitian Geometry and Almost Complex Structures*, *Hermitian Metrics and the Levi-Civita Connection* and *Kähler Geometry*; the Chern classes are *Characteristic Classes*; the four-dimensional splitting is *The Involution on the Curvature Operator*.
 
 ## Summary of Notation
 
@@ -113,7 +113,7 @@ On a complex manifold the complexified second exterior power splits into the pie
 | $\Lambda^{2,0}\oplus\Lambda^{1,1}\oplus\Lambda^{0,2}$ | the type decomposition of the complexified bivectors |
 | $\mathcal J$ | the complex structure induced on bivectors |
 | $\mathcal R$ | the Riemannian curvature operator |
-| $\nabla$, $\Theta=\nabla^2$ | the Chern connection and its curvature |
+| $\nabla$, $\Omega=\nabla^2$ | the Chern connection and its curvature |
 | $R_{i\bar j k\bar l}$ | the Kähler curvature components |
 | $\rho=i\,\partial\bar\partial\log\det g$ | the Ricci form, $[\rho]=2\pi c_1(M)$ |
 | $H(X)=R(X,\bar X,X,\bar X)/g(X,\bar X)^2$ | holomorphic sectional curvature |

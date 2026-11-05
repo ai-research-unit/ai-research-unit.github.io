@@ -8,7 +8,7 @@ The result that organises the article is that, in the biquaternion algebra, **po
 
 Positivity is not only consistent here, it is simple, and that simplicity is the second theme. Because the form $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ is positive definite, every subspace of $\mathbb{B}$ inherits a positive definite restriction, so no subspace is isotropic and the module theory of the companion article needs no correction (*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*). And because the algebra is a full complex matrix algebra, the cone is a **symmetric cone**: self-dual for the scalar form, with the positive definite elements as interior, and the group of units decomposing as $\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ along the Cartan involution.
 
-The cone of the two-sided operators is described in *Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*, where $\{\Theta_{\tilde{Q}_1}(e_t)\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ is read as the image of the identity; the present article is its dedicated counterpart, and it does not repeat the operator statements. The scalar and the algebra-valued forms are *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*; the Jordan structure of $\mathbb{M}_+$ and its isotropic cone are *Remarkable Subspaces and the Four General Products, Forms and Norms* and *Remarkable Subspaces and the Analysis*; the symmetric space is cited from *Symmetric Spaces*; and the general theory, with the exchange of sides and the Cartan involution, is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
+The cone of the two-sided operators is described in *Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*, where $\{\mathrm{Sd}_{\tilde{Q}_1}(e_t)\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ is read as the image of the identity; the present article is its dedicated counterpart, and it does not repeat the operator statements. The scalar and the algebra-valued forms are *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*; the Jordan structure of $\mathbb{M}_+$ and its isotropic cone are *Remarkable Subspaces and the Four General Products, Forms and Norms* and *Remarkable Subspaces and the Analysis*; the symmetric space is cited from *Symmetric Spaces*; and the general theory, with the exchange of sides and the Cartan involution, is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
 
 ## Self-Adjoint and Skew Elements
 
@@ -120,7 +120,7 @@ $$
 
 the pair $(\tilde E)$ being determined up to a nonzero complex scalar; so the extreme rays are parametrised by the projective line $\mathbb{P}^{1}(\mathbb{C})$. On the boundary each element is a product $\pm \tilde E\tilde{E}^{*}$ of a spinor and its conjugate, which is the factorisation of a null element, and the parametrisation is the projective line of the spinor (*The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*, §*The Factorisation*).
 
-**Remark (the cone and the two-sided operators).** The cone appeared in the operator family as the image of the identity, $\Theta_{\tilde{Q}_1}(e_t)=\tilde{Q}_1\tilde{Q}_1^{*}$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*), and as the positive cone over which the completely positive maps are defined (*Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*, §*The Biquaternion Instance*). What is added here is the intrinsic description: $P$ is the cone of squares of the involution, the forward cone of the interval form, and the symmetric cone of the Jordan algebra $\mathbb{M}_+$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*), the three being one object read three ways.
+**Remark (the cone and the two-sided operators).** The cone appeared in the operator family as the image of the identity, $\mathrm{Sd}_{\tilde{Q}_1}(e_t)=\tilde{Q}_1\tilde{Q}_1^{*}$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*), and as the positive cone over which the completely positive maps are defined (*Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*, §*The Biquaternion Instance*). What is added here is the intrinsic description: $P$ is the cone of squares of the involution, the forward cone of the interval form, and the symmetric cone of the Jordan algebra $\mathbb{M}_+$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*), the three being one object read three ways.
 
 ## The Polar Decomposition
 
@@ -165,18 +165,18 @@ a real scalar, and $\lvert\tilde{Q}_1\rvert=\lvert \langle\tilde{Q}_1,\tilde{Q}_
 **Definition.** On the group of units $\mathbb{B}^{\times}=GL(2,\mathbb{C})$ put
 
 $$
-\theta(\tilde{Q}_1)=\bigl(\tilde{Q}_1^{*}\bigr)^{-1}.
+\mathrm{J}(\tilde{Q}_1)=\bigl(\tilde{Q}_1^{*}\bigr)^{-1}.
 $$
 
-**Proposition (an automorphism of order two).** $\theta$ is an automorphism of the group of units of order two, its fixed set is exactly the $*$-unitary slice,
+**Proposition (an automorphism of order two).** $\mathrm{J}$ is an automorphism of the group of units of order two, its fixed set is exactly the $*$-unitary slice,
 
 $$
-\theta(\tilde{Q}_1)=\tilde{Q}_1\iff\tilde{Q}_1^{*}\tilde{Q}_1=e_t\iff\tilde{Q}_1\in \mathrm{U}(2),
+\mathrm{J}(\tilde{Q}_1)=\tilde{Q}_1\iff\tilde{Q}_1^{*}\tilde{Q}_1=e_t\iff\tilde{Q}_1\in \mathrm{U}(2),
 $$
 
-and its differential at the identity is $\mathrm{d}\theta=-{}^{*}$, which is $+1$ on the anti-Hermitian sector and $-1$ on the Hermitian sector.
+and its differential at the identity is $\mathrm{d}\mathrm{J}=-{}^{*}$, which is $+1$ on the anti-Hermitian sector and $-1$ on the Hermitian sector.
 
-*Proof.* $\theta(\tilde{Q}_1\tilde{Q}_2)=((\tilde{Q}_1\tilde{Q}_2)^{\dagger})^{-1}=(\tilde{Q}_2^{*}\tilde{Q}_1^{*})^{-1}=(\tilde{Q}_1^{*})^{-1}(\tilde{Q}_2^{*})^{-1}=\theta(\tilde{Q}_1)\theta(\tilde{Q}_2)$, so $\theta$ is an automorphism; $\theta^{2}(\tilde{Q}_1)=(((\tilde{Q}_1^{*})^{-1})^{\dagger})^{-1}=(\tilde{Q}_1^{-1})^{-1}=\tilde{Q}_1$, so it has order two. Its fixed set is $\{\tilde{Q}_1:(\tilde{Q}_1^{*})^{-1}=\tilde{Q}_1\}=\{\tilde{Q}_1:\tilde{Q}_1^{*}\tilde{Q}_1=e_t\}$, the slice. For the differential, $\theta(e_t+t \tilde Q_3)\equiv e_t-t \tilde{Q}_3^{*}$ to first order, so $\mathrm{d}\theta(\tilde Q_3)=-\tilde{Q}_3^{*}$, which is $\tilde Q_3$ on $\mathbb{M}_-$ and $-\tilde Q_3$ on $\mathbb{M}_+$.
+*Proof.* $\mathrm{J}(\tilde{Q}_1\tilde{Q}_2)=((\tilde{Q}_1\tilde{Q}_2)^{\dagger})^{-1}=(\tilde{Q}_2^{*}\tilde{Q}_1^{*})^{-1}=(\tilde{Q}_1^{*})^{-1}(\tilde{Q}_2^{*})^{-1}=\mathrm{J}(\tilde{Q}_1)\mathrm{J}(\tilde{Q}_2)$, so $\mathrm{J}$ is an automorphism; $\mathrm{J}^{2}(\tilde{Q}_1)=(((\tilde{Q}_1^{*})^{-1})^{\dagger})^{-1}=(\tilde{Q}_1^{-1})^{-1}=\tilde{Q}_1$, so it has order two. Its fixed set is $\{\tilde{Q}_1:(\tilde{Q}_1^{*})^{-1}=\tilde{Q}_1\}=\{\tilde{Q}_1:\tilde{Q}_1^{*}\tilde{Q}_1=e_t\}$, the slice. For the differential, $\mathrm{J}(e_t+t \tilde Q_3)\equiv e_t-t \tilde{Q}_3^{*}$ to first order, so $\mathrm{d}\mathrm{J}(\tilde Q_3)=-\tilde{Q}_3^{*}$, which is $\tilde Q_3$ on $\mathbb{M}_-$ and $-\tilde Q_3$ on $\mathbb{M}_+$.
 
 **Theorem (Cartan decomposition).** With the commutator bracket $\langle\tilde D,\tilde Q_3\rangle_{\natural*}=\tilde Q_3\tilde D-\tilde D\tilde Q_3$,
 
@@ -190,7 +190,7 @@ $$
 
 *Proof.* For $\tilde{Q}_3^{*}=-\tilde Q_3$ and $\tilde{D}^{*}=-\tilde D$, $\langle\tilde D,\tilde Q_3\rangle_{\natural*}^{\dagger}=(\tilde Q_3\tilde D-\tilde D\tilde Q_3)^{\dagger}=\tilde{D}^{*}\tilde{Q}_3^{*}-\tilde{Q}_3^{*}\tilde{D}^{*}=\tilde D\tilde Q_3-\tilde Q_3\tilde D=-\langle\tilde D,\tilde Q_3\rangle_{\natural*}$, giving the first inclusion; the other two are the same computation with the signs of one or both arguments changed.
 
-**Corollary (the group decomposition and the symmetric space).** The anticommuting eigenspaces of $\mathrm{d}\theta$ give the Cartan decomposition of the Lie algebra,
+**Corollary (the group decomposition and the symmetric space).** The anticommuting eigenspaces of $\mathrm{d}\mathrm{J}$ give the Cartan decomposition of the Lie algebra,
 
 $$
 \mathfrak{gl}(2,\mathbb{C})=\mathbb{M}_-\oplus\mathbb{M}_+\cong u(2)\oplus H_2(\mathbb{C}),
@@ -208,7 +208,7 @@ every invertible element being uniquely a $*$-unitary times the exponential of a
 
 *Proof.* The exponential of a Hermitian element is positive definite, the exponential of the whole sector $\mathbb{M}_+$ is the whole interior of the cone, and the decomposition $\tilde{Q}_1=\tilde Q_0\exp(H)$ is the polar decomposition, since $\lvert\tilde{Q}_1\rvert=\exp(H)$ for a unique Hermitian $H$; that the stabiliser of the quotient is exactly $\mathrm{U}(2)$ is the proposition above, so the quotient is the interior of the cone.
 
-**Remark (the trap of the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$ the involution ${}^{*}$ is the quaternion conjugation and $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{\natural})^{-1}=\tilde{Q}_1/\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}$, which is not the identity and not the conjugation of the slice; the automorphism of the slice given by the conjugation is a different map. The Cartan involution is an operation of the full complexification, and restricting it to the real-quaternion slice changes what it is.
+**Remark (the trap of the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$ the involution ${}^{*}$ is the quaternion conjugation and $\mathrm{J}(\tilde{Q}_1)=(\tilde{Q}_1^{\natural})^{-1}=\tilde{Q}_1/\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}$, which is not the identity and not the conjugation of the slice; the automorphism of the slice given by the conjugation is a different map. The Cartan involution is an operation of the full complexification, and restricting it to the real-quaternion slice changes what it is.
 
 ## Summary
 
@@ -216,7 +216,7 @@ The dagger of the biquaternion algebra is a **positive involution**: $\mathrm{Sc
 
 The **Hermitian cone** $P=\{\tilde{Q}_1^{*}\tilde{Q}_1\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ is the positive semidefinite Hermitian cone $H_2(\mathbb{C})_{\succeq0}$: closed, convex, pointed, of real dimension four, generating $\mathbb{M}_+$, and **self-dual** for the scalar form. Its interior is the image of the units, $P^{\circ}=\{\tilde{Q}_1^{*}\tilde{Q}_1:\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0\}$, and in the interval form $N=t^{2}-\lvert\vec q_a\rvert^{2}$ on $\mathbb{M}_+$ it is the **forward null cone** $t\ge\lvert\vec q_a\rvert$, whose boundary is the forward part of the isotropic cone and whose extreme rays are the rank-one squares $\tilde E\tilde{E}^{*}$, parametrised by $\mathbb{P}^{1}(\mathbb{C})$. The word is not the older one of the series: the *isotropic cone* of $\mathbb{M}_+$ is the null set of $\langle\cdot\rangle$ there, the boundary of $P$ together with the boundary of $-P$, and it is indefinite; $P$ meets the null set only along its own boundary, the forward half.
 
-Every element has a **polar decomposition** $\tilde{Q}_1=\tilde Q_0\lvert\tilde{Q}_1\rvert$ with $\lvert\tilde{Q}_1\rvert=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}\in P$ and $\tilde Q_0\in \mathrm{U}(2)$, unique exactly off the null cone, and distinct from the polar decomposition although defined on the same set; $\langle\lvert\tilde{Q}_1\rvert,\lvert\tilde{Q}_1\rvert\rangle_{\natural}=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert$, and on the real-quaternion slice it reduces to the quaternion polar decomposition, the cone meeting the slice in the ray $\mathbb{R}_{\ge0}e_t$. The **Cartan involution** $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ is an automorphism of the group of units of order two with fixed set the $*$-unitary slice $\mathrm{U}(2)$ and differential $-{}^{*}$, and its eigen-decomposition is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\langle\mathbb{M}_-,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_-$, $\langle\mathbb{M}_+,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_+$, $\langle\mathbb{M}_+,\mathbb{M}_+\rangle_{\natural*}\subseteq\mathbb{M}_-$; at the group level $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ and $\mathbb{B}^{\times}/\mathrm{U}(2)\cong P^{\circ}$.
+Every element has a **polar decomposition** $\tilde{Q}_1=\tilde Q_0\lvert\tilde{Q}_1\rvert$ with $\lvert\tilde{Q}_1\rvert=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}\in P$ and $\tilde Q_0\in \mathrm{U}(2)$, unique exactly off the null cone, and distinct from the polar decomposition although defined on the same set; $\langle\lvert\tilde{Q}_1\rvert,\lvert\tilde{Q}_1\rvert\rangle_{\natural}=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert$, and on the real-quaternion slice it reduces to the quaternion polar decomposition, the cone meeting the slice in the ray $\mathbb{R}_{\ge0}e_t$. The **Cartan involution** $\mathrm{J}(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ is an automorphism of the group of units of order two with fixed set the $*$-unitary slice $\mathrm{U}(2)$ and differential $-{}^{*}$, and its eigen-decomposition is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\langle\mathbb{M}_-,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_-$, $\langle\mathbb{M}_+,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_+$, $\langle\mathbb{M}_+,\mathbb{M}_+\rangle_{\natural*}\subseteq\mathbb{M}_-$; at the group level $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ and $\mathbb{B}^{\times}/\mathrm{U}(2)\cong P^{\circ}$.
 
 ## Summary of Notation
 
@@ -229,7 +229,7 @@ Every element has a **polar decomposition** $\tilde{Q}_1=\tilde Q_0\lvert\tilde{
 | $t\ge\lvert\vec q_a\rvert$ in $H=te_t+i\vec q_a$ | $P$ as the forward cone of the interval form on $\mathbb{M}_+$ |
 | $\tilde E\tilde{E}^{*}$, $\tilde E\neq0$, up to scalar | Extreme rays; parametrised by $\mathbb{P}^{1}(\mathbb{C})$ |
 | $\lvert\tilde{Q}_1\rvert=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}$, $\tilde{Q}_1=\tilde Q_0\lvert\tilde{Q}_1\rvert$ | Polar decomposition; unique off the null cone |
-| $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ | Cartan involution; fixed set $U=\mathrm{U}(2)$ |
+| $\mathrm{J}(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ | Cartan involution; fixed set $U=\mathrm{U}(2)$ |
 | $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ | Cartan decomposition; $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ |
 
 ## Further Reading

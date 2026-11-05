@@ -45,7 +45,7 @@ $$
 
 *Proof.* $(L_aL_b)(\tilde Q_3)=a(b\tilde Q_3)=(ab)\tilde Q_3=L_{ab}(\tilde Q_3)$; $(R_aR_b)(\tilde Q_3)=(\tilde Q_3 b)a=\tilde Q_3(ba)=R_{ba}(\tilde Q_3)$; and $(L_aR_b)(\tilde Q_3)=a(\tilde Q_3 b)=(a\tilde Q_3)b=(R_bL_a)(\tilde Q_3)$. The last identity is associativity and needs no commutativity.
 
-So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the sandwich $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.
+So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the sandwich $\mathrm{Sd}_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.
 
 **Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
 
@@ -104,7 +104,7 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 *Proof.* The four coefficient units $e_\mu$ are a basis of $\mathbb B$, so the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are a basis of $\mathbb B^{\mathrm e}$. Their images are the sixteen operators $X\mapsto e_\mu Xe_\nu$, the operators written $e_\mu[\,]e_\nu$ in §*The Conway Operator Basis*. By *Two-Sided Operators on the Biquaternion Algebra*, §*The Sixteen Products as a Basis*, these sixteen are a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$. A linear map that carries a basis to a basis is an isomorphism; the identification $\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$ is the choice of the canonical frame.
 
-**Corollary (the two-sided operators are the elementary tensors).** The mixed operator $L_aR_b$ is the image of the elementary tensor $a\otimes b^{\mathrm{opp}}$, and the sandwich $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ is the image of $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
+**Corollary (the two-sided operators are the elementary tensors).** The mixed operator $L_aR_b$ is the image of the elementary tensor $a\otimes b^{\mathrm{opp}}$, and the sandwich $\mathrm{Sd}_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ is the image of $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
 
 ### The Peirce Decomposition of the Enveloping Algebra
 
@@ -301,7 +301,7 @@ The enveloping algebra is a **luxury of the associative unital case**. The const
 
 1. **The physical assignment.** Which tensor factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers of the physical Dirac field? The algebra settles the existence of both actions; the assignment is the remaining physical question, and the conserved-current constraint of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is the natural tool.
 
-2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q_1}$ are the elementary tensors $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, $*$-unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
+2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\mathrm{Sd}_{\tilde Q_1}$ are the elementary tensors $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, $*$-unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
 
 3. **The enveloping algebra and the trace.** The trace form $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear pairing. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
 
@@ -351,7 +351,7 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 | $(\tilde Q_1\otimes \tilde Q_2^{\mathrm{opp}})\cdot \tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2$ | The sandwich action |
 | $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ | The main theorem |
 | ${}_{\mathbb B}\mathbb B_{\mathbb B}$ | The regular bi-module; a left $\mathbb B^{\mathrm e}$-module |
-| $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$ |
+| $\mathrm{Sd}_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$ |
 | $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | The four idempotents of $\mathbb B^{\mathrm e}$, cutting it into sixteen corners |
 | $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi_2$ |
 

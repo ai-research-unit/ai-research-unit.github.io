@@ -130,14 +130,14 @@ in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expre
 Time ordering for a fermion field carries the anticommutation sign:
 
 $$
-S_F(x-y)=\theta(x_0-y_0)\,W_+(x-y)-\theta(y_0-x_0)\,W_-(x-y),
+S_F(x-y)=\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,W_+(x-y)-\mathrm{H}^{\mathrm{hvs}}(y_0-x_0)\,W_-(x-y),
 $$
 
 an equality of actions, read on a generic element. The relative minus is not a convention; it is the statement that the two field operators anticommute. Every sign in what follows traces back to it, and it is the quantity a recomputation must reproduce.
 
 ## The Pole Structure and the Contour
 
-The two $\theta$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
+The two $\mathrm{H}^{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
 
 $$
 \boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\;
@@ -217,8 +217,8 @@ which is the negative-frequency numerator of $W_-$ with a minus. The single cova
 Three things are conflated in the phrase "the $i\epsilon$ does the time ordering", and they are worth separating.
 
 1. The $i\epsilon$ fixes which pole lies in which half-plane; that is the boundary condition, and its sign is the choice of propagator.
-2. The overall $i$ fixes the normalization of the amplitude relative to the two $\theta$ terms.
-3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+m$ and $\mathcal{A}_p-m$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\theta W_++\theta W_-$.
+2. The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}^{\mathrm{hvs}}$ terms.
+3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+m$ and $\mathcal{A}_p-m$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}^{\mathrm{hvs}}W_++\mathrm{H}^{\mathrm{hvs}}W_-$.
 
 **A recomputation on a case chosen for it.** Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=p^2\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-m)(\mathcal{A}_p+m)=(p^2-m^2)\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
 

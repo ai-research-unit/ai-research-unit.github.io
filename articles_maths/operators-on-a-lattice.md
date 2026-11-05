@@ -158,43 +158,43 @@ $\operatorname{Aut}(\mathbf{2})$ has two elements.
 
 ### Congruences and Quotients
 
-**Definition.** A **congruence** on a lattice $L$ is an equivalence relation $\theta$ on $L$ that is
+**Definition.** A **congruence** on a lattice $L$ is an equivalence relation $\vartheta^{\mathrm{cng}}$ on $L$ that is
 compatible with the operations:
 
 $$
-x \mathrel{\theta} x' \ \text{and} \ y \mathrel{\theta} y'
+x \mathrel{\vartheta^{\mathrm{cng}}} x' \ \text{and} \ y \mathrel{\vartheta^{\mathrm{cng}}} y'
 \quad\Longrightarrow\quad
-(x \vee y) \mathrel{\theta} (x' \vee y') \ \text{and} \ (x \wedge y) \mathrel{\theta} (x' \wedge y').
+(x \vee y) \mathrel{\vartheta^{\mathrm{cng}}} (x' \vee y') \ \text{and} \ (x \wedge y) \mathrel{\vartheta^{\mathrm{cng}}} (x' \wedge y').
 $$
 
 The set of congruences of $L$, ordered by inclusion of relations, is written $\operatorname{Con}(L)$.
 
-**Proposition.** The quotient set $L/\theta$ carries a unique lattice structure for which the
-quotient map $\pi : L \to L/\theta$, $x \mapsto [x]$, is a lattice homomorphism.
+**Proposition.** The quotient set $L/\vartheta^{\mathrm{cng}}$ carries a unique lattice structure for which the
+quotient map $\pi : L \to L/\vartheta^{\mathrm{cng}}$, $x \mapsto [x]$, is a lattice homomorphism.
 
 **Proof.** Define $[x] \vee [y] = [x \vee y]$ and $[x] \wedge [y] = [x \wedge y]$. The compatibility
-of $\theta$ is exactly the statement that these definitions do not depend on the representatives.
-The lattice axioms for $L/\theta$ — idempotence, commutativity, associativity and absorption in the
+of $\vartheta^{\mathrm{cng}}$ is exactly the statement that these definitions do not depend on the representatives.
+The lattice axioms for $L/\vartheta^{\mathrm{cng}}$ — idempotence, commutativity, associativity and absorption in the
 form of *Order Theory and Lattices* — are read off from those of $L$ class by class, and $\pi$ is a
-homomorphism by construction. Uniqueness is clear, since a lattice structure on $L/\theta$ for which
+homomorphism by construction. Uniqueness is clear, since a lattice structure on $L/\vartheta^{\mathrm{cng}}$ for which
 $\pi$ is a homomorphism must satisfy these equations.
 
-Thus a congruence is the same thing as a **kernel**: the relation $x \mathrel{\theta} y$, and the
-quotient $L/\theta$ is the image of the operator $\pi$. The word *kernel* is used in the
+Thus a congruence is the same thing as a **kernel**: the relation $x \mathrel{\vartheta^{\mathrm{cng}}} y$, and the
+quotient $L/\vartheta^{\mathrm{cng}}$ is the image of the operator $\pi$. The word *kernel* is used in the
 set-theoretic sense here — the relation that a map collapses — and not in the sense of a group
 homomorphism, which belongs to *Groups*; for lattices the relation determines the map up to the
 obvious identification, and the quotient is the lattice it presents.
 
-**Definition.** For $a \in L$ the **principal congruence** $\theta(a)$ is the smallest congruence
+**Definition.** For $a \in L$ the **principal congruence** $\vartheta^{\mathrm{cng}}(a)$ is the smallest congruence
 identifying $a$ with the least element $0$, when $L$ is bounded; more generally, for $a, b \in L$ the
-principal congruence $\theta(a, b)$ is the smallest congruence with $a \mathrel{\theta} b$.
+principal congruence $\vartheta^{\mathrm{cng}}(a, b)$ is the smallest congruence with $a \mathrel{\vartheta^{\mathrm{cng}}} b$.
 
 **Proposition.** The intersection of a family of congruences is a congruence, and the congruences
 of $L$ form a complete lattice in which
 
 $$
-\boxed{\;\bigwedge_i \theta_i = \bigcap_i \theta_i, \qquad
-\bigvee_i \theta_i = \text{the smallest congruence containing } \textstyle\bigcup_i \theta_i\;} .
+\boxed{\;\bigwedge_i \vartheta^{\mathrm{cng}}_i = \bigcap_i \vartheta^{\mathrm{cng}}_i, \qquad
+\bigvee_i \vartheta^{\mathrm{cng}}_i = \text{the smallest congruence containing } \textstyle\bigcup_i \vartheta^{\mathrm{cng}}_i\;} .
 $$
 
 **Proof.** The intersection of equivalence relations is an equivalence relation, and it inherits
@@ -217,8 +217,8 @@ $$
 $$
 
 **Proposition.** For every lattice homomorphism $h : L \to M$ the relation $\ker h$ is a congruence
-on $L$, and for every congruence $\theta$ on $L$ the quotient map $\pi : L \to L/\theta$ satisfies
-$\ker \pi = \theta$.
+on $L$, and for every congruence $\vartheta^{\mathrm{cng}}$ on $L$ the quotient map $\pi : L \to L/\vartheta^{\mathrm{cng}}$ satisfies
+$\ker \pi = \vartheta^{\mathrm{cng}}$.
 
 **Proof.** The relation $\ker h$ is the kernel of the underlying function and is therefore an
 equivalence relation. If $h(x) = h(x')$ and $h(y) = h(y')$ then $h(x \vee y) = h(x) \vee h(y) =
@@ -249,10 +249,10 @@ categories.
 ### The Lattice of Congruences
 
 **Theorem (Funayama–Nakayama).** The congruence lattice $\operatorname{Con}(L)$ of a lattice $L$ is
-distributive: for congruences $\theta_1, \theta_2, \theta_3$,
+distributive: for congruences $\vartheta^{\mathrm{cng}}_1, \vartheta^{\mathrm{cng}}_2, \vartheta^{\mathrm{cng}}_3$,
 
 $$
-\boxed{\;\theta_1 \wedge (\theta_2 \vee \theta_3) = (\theta_1 \wedge \theta_2) \vee (\theta_1 \wedge \theta_3)\;}.
+\boxed{\;\vartheta^{\mathrm{cng}}_1 \wedge (\vartheta^{\mathrm{cng}}_2 \vee \vartheta^{\mathrm{cng}}_3) = (\vartheta^{\mathrm{cng}}_1 \wedge \vartheta^{\mathrm{cng}}_2) \vee (\vartheta^{\mathrm{cng}}_1 \wedge \vartheta^{\mathrm{cng}}_3)\;}.
 $$
 
 The theorem is quoted from the literature; its proof is not reproduced, and the finite instances are
@@ -269,19 +269,19 @@ the identity, the two that identify one adjacent pair, and the universal relatio
 four-element Boolean lattice.
 
 **Example.** The diamond $M_3$ is **simple**: its congruence lattice is the two-element chain. Let
-$\theta \neq \mathrm{id}$, so $x \mathrel{\theta} y$ for two distinct elements $x, y$.
+$\vartheta^{\mathrm{cng}} \neq \mathrm{id}$, so $x \mathrel{\vartheta^{\mathrm{cng}}} y$ for two distinct elements $x, y$.
 
-- If $0 \mathrel{\theta} a$ with $a$ a coatom, then for any other coatom $c$ the compatibility with
-  the join gives $c = 0 \vee c \mathrel{\theta} a \vee c = 1$, so every coatom other than $a$ is
-  identified with $1$. In particular $b \mathrel{\theta} 1$ for a coatom $b \neq a$, and
-  compatibility with the meet then gives $0 = b \wedge c \mathrel{\theta} 1 \wedge c = c$ for a third
-  coatom $c$; so $0 \mathrel{\theta} c$, and with $c \mathrel{\theta} 1$ from the first step,
-  transitivity gives $0 \mathrel{\theta} 1$ and $\theta$ is universal. The case $1 \mathrel{\theta}
+- If $0 \mathrel{\vartheta^{\mathrm{cng}}} a$ with $a$ a coatom, then for any other coatom $c$ the compatibility with
+  the join gives $c = 0 \vee c \mathrel{\vartheta^{\mathrm{cng}}} a \vee c = 1$, so every coatom other than $a$ is
+  identified with $1$. In particular $b \mathrel{\vartheta^{\mathrm{cng}}} 1$ for a coatom $b \neq a$, and
+  compatibility with the meet then gives $0 = b \wedge c \mathrel{\vartheta^{\mathrm{cng}}} 1 \wedge c = c$ for a third
+  coatom $c$; so $0 \mathrel{\vartheta^{\mathrm{cng}}} c$, and with $c \mathrel{\vartheta^{\mathrm{cng}}} 1$ from the first step,
+  transitivity gives $0 \mathrel{\vartheta^{\mathrm{cng}}} 1$ and $\vartheta^{\mathrm{cng}}$ is universal. The case $1 \mathrel{\vartheta^{\mathrm{cng}}}
   a$ is dual.
-- If $a \mathrel{\theta} b$ with $a \neq b$ two coatoms, then $a \vee b = 1$ gives $1 \mathrel{\theta}
-  b$, compatibility with the meet gives $c = 1 \wedge c \mathrel{\theta} b \wedge c = 0$ for the third
-  coatom $c$, and compatibility with the join gives $1 = c \vee a \mathrel{\theta} 0 \vee a = a$; so
-  $0 \mathrel{\theta} c$ and $c \mathrel{\theta} 1$, whence $0 \mathrel{\theta} 1$ and $\theta$ is
+- If $a \mathrel{\vartheta^{\mathrm{cng}}} b$ with $a \neq b$ two coatoms, then $a \vee b = 1$ gives $1 \mathrel{\vartheta^{\mathrm{cng}}}
+  b$, compatibility with the meet gives $c = 1 \wedge c \mathrel{\vartheta^{\mathrm{cng}}} b \wedge c = 0$ for the third
+  coatom $c$, and compatibility with the join gives $1 = c \vee a \mathrel{\vartheta^{\mathrm{cng}}} 0 \vee a = a$; so
+  $0 \mathrel{\vartheta^{\mathrm{cng}}} c$ and $c \mathrel{\vartheta^{\mathrm{cng}}} 1$, whence $0 \mathrel{\vartheta^{\mathrm{cng}}} 1$ and $\vartheta^{\mathrm{cng}}$ is
   universal.
 
 Every nontrivial congruence is therefore universal, and $M_3$ is simple. A **simple lattice** is one
@@ -295,7 +295,7 @@ $\operatorname{Con}(L)$, and the quotient is the operator that carries a congrue
 The two descriptions are joined by the kernel–image correspondence:
 
 $$
-\theta \;\longmapsto\; L/\theta, \qquad h \;\longmapsto\; \ker h,
+\vartheta^{\mathrm{cng}} \;\longmapsto\; L/\vartheta^{\mathrm{cng}}, \qquad h \;\longmapsto\; \ker h,
 $$
 
 which are inverse up to isomorphism on the congruences and the surjective endomorphic images, and
@@ -305,7 +305,7 @@ isomorphic congruence lattices satisfy the same lattice of quotient operators.
 **Definition.** The **operator view** of a lattice $L$ is the data of the monoid
 $\operatorname{End}(L)$ acting on $L$ by evaluation, together with the lattice
 $\operatorname{Con}(L)$ of kernels of that action. A **lattice congruence** of the operator view is
-a congruence in the sense above, and a **quotient operator** is the map $L \to L/\theta$.
+a congruence in the sense above, and a **quotient operator** is the map $L \to L/\vartheta^{\mathrm{cng}}$.
 
 The operator view is what makes the theory of lattices available to the rest of the corpus: a
 statement about a homomorphic image of a lattice is a statement about an operator on it, and the
@@ -330,7 +330,7 @@ $\operatorname{End}(L)$, whose group of units is the automorphism group $\operat
 the constants are endomorphisms, so the monoid is large and its units are few.
 
 A congruence of a lattice is an equivalence relation compatible with the meet and the join; it is
-exactly the kernel of a lattice homomorphism, the quotient $L/\theta$ carries a unique lattice
+exactly the kernel of a lattice homomorphism, the quotient $L/\vartheta^{\mathrm{cng}}$ carries a unique lattice
 structure making the quotient map a homomorphism, and the first isomorphism theorem identifies a
 surjective homomorphic image with the quotient by its kernel. The congruences form a complete
 lattice under inclusion, in which the meet is the intersection and the join is the smallest
@@ -352,13 +352,13 @@ kernel–image correspondence is the algebraic content of the first isomorphism 
 | $\operatorname{End}(L)$ | Monoid of lattice endomorphisms of $L$ under composition |
 | $\operatorname{End}_\vee(L)$, $\operatorname{End}_\wedge(L)$ | Monoids of join-preserving and of meet-preserving self-maps of $L$ |
 | $\operatorname{Aut}(L)$ | Automorphism group of $L$, the group of units of $\operatorname{End}(L)$ |
-| $\theta$ | A congruence of $L$: an equivalence compatible with $\wedge$ and $\vee$ |
-| $L/\theta$, $\pi$ | Quotient lattice and quotient map $x \mapsto [x]$ |
+| $\vartheta^{\mathrm{cng}}$ | A congruence of $L$: an equivalence compatible with $\wedge$ and $\vee$ |
+| $L/\vartheta^{\mathrm{cng}}$, $\pi$ | Quotient lattice and quotient map $x \mapsto [x]$ |
 | $\ker h$ | Kernel of a homomorphism, $\{(x,y) : h(x) = h(y)\}$ |
 | $\operatorname{Con}(L)$ | Lattice of congruences of $L$, ordered by inclusion |
-| $\theta(a), \theta(a,b)$ | Principal congruences |
+| $\vartheta^{\mathrm{cng}}(a), \vartheta^{\mathrm{cng}}(a,b)$ | Principal congruences |
 | $\mathbf{2}$ | The two-element lattice, the simplest congruence lattice and target of the maps $L \to \mathbf{2}$ |
-| $\bigvee_i \theta_i$ | Join of congruences, the smallest congruence containing their union |
+| $\bigvee_i \vartheta^{\mathrm{cng}}_i$ | Join of congruences, the smallest congruence containing their union |
 
 ## Further Reading
 

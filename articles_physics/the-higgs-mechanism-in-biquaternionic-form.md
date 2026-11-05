@@ -77,18 +77,18 @@ Two features of this minimum are the whole content of "spontaneous" symmetry bre
 **2. The vacuum is a scalar with a constant magnitude.** Write
 
 $$
-\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,\exp(\,i\theta(\tilde{Q})/v),
+\varphi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,\exp(\,i\vartheta^{\mathrm{fld}}(\tilde{Q})/v),
 $$
 
-with $h$ and $\theta$ real. Here $h$ is the **radial** fluctuation away from the minimum and $\theta$ is the **angular** fluctuation along it. The potential depends on $|\varphi| = \frac{1}{\sqrt{2}}|v+h|$ alone, so it is independent of $\theta$: expanding, $V = \beta v^2h^2 + O(h^3)$, giving the radial mode the mass
+with $h$ and $\vartheta^{\mathrm{fld}}$ real. Here $h$ is the **radial** fluctuation away from the minimum and $\vartheta^{\mathrm{fld}}$ is the **angular** fluctuation along it. The potential depends on $|\varphi| = \frac{1}{\sqrt{2}}|v+h|$ alone, so it is independent of $\vartheta^{\mathrm{fld}}$: expanding, $V = \beta v^2h^2 + O(h^3)$, giving the radial mode the mass
 
 $$
 \boxed{\;m_h^2 = 2\beta v^2\;}
 $$
 
-The angular field $\theta$ has **no potential at all**. It is the massless mode that the vacuum's degeneracy makes inevitable — the **would-be Goldstone boson**. Its value is a coordinate on the circle of minima, and a change of $\theta$ is a gauge transformation, which is why it cannot carry a physical mass of its own. The next two sections show that it does not disappear; it is absorbed.
+The angular field $\vartheta^{\mathrm{fld}}$ has **no potential at all**. It is the massless mode that the vacuum's degeneracy makes inevitable — the **would-be Goldstone boson**. Its value is a coordinate on the circle of minima, and a change of $\vartheta^{\mathrm{fld}}$ is a gauge transformation, which is why it cannot carry a physical mass of its own. The next two sections show that it does not disappear; it is absorbed.
 
-The two real fields $h$ and $\theta$ are the two real degrees of freedom of the complex scalar $\varphi$. Before any gauge field is considered, the scalar alone contributes $2$ real degrees of freedom, and the vacuum leaves one massive ($h$) and one massless ($\theta$).
+The two real fields $h$ and $\vartheta^{\mathrm{fld}}$ are the two real degrees of freedom of the complex scalar $\varphi$. Before any gauge field is considered, the scalar alone contributes $2$ real degrees of freedom, and the vacuum leaves one massive ($h$) and one massless ($\vartheta^{\mathrm{fld}}$).
 
 ## The Mass from the Scalar Kinetic Term
 
@@ -153,7 +153,7 @@ the middle expression being the $ict'$ form of the biquaternion norm and the las
 
 ## The Would-Be Goldstone Mode and the Count
 
-The mass term above was obtained in the gauge in which $\varphi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\theta$, and it is worth seeing where it goes. The answer is the second half of the mechanism.
+The mass term above was obtained in the gauge in which $\varphi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\vartheta^{\mathrm{fld}}$, and it is worth seeing where it goes. The answer is the second half of the mechanism.
 
 **The phase is a gauge direction.** The parametrization $\varphi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing
 
@@ -161,15 +161,15 @@ $$
 \Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙv}\,\theta(\tilde{Q})
 $$
 
-gives $\varphi\mapsto \exp(iϙ\Gamma/\hbar)\varphi = \exp(-i\theta/v)\varphi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
+gives $\varphi\mapsto \exp(iϙ\Gamma/\hbar)\varphi = \exp(-i\vartheta^{\mathrm{fld}}/v)\varphi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
 
 **Where the phase went.** The gauge transformation that removes $\theta$ also shifts the connection,
 
 $$
-A_{2,\mu} = A_\mu - \partial/\partial Q_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial Q_\mu\,\theta ,
+A_{2,\mu} = A_\mu - \partial/\partial Q_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}} ,
 $$
 
-so the combination $A_\mu + \frac{\hbar}{ϙv}\partial/\partial Q_\mu\,\theta$ is gauge invariant and the mass term depends on it, not on $A_\mu$ alone. The two terms are not separately physical: what the gauge field gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial Q_\mu\,\theta$ is that component. The would-be Goldstone boson is **absorbed** by the gauge field, which is why it does not appear in the physical spectrum, and why the counting below balances.
+so the combination $A_\mu + \frac{\hbar}{ϙv}\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}$ is gauge invariant and the mass term depends on it, not on $A_\mu$ alone. The two terms are not separately physical: what the gauge field gained as a mass is exactly the longitudinal component it did not have as a massless field, and $\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}$ is that component. The would-be Goldstone boson is **absorbed** by the gauge field, which is why it does not appear in the physical spectrum, and why the counting below balances.
 
 **The degree-of-freedom count.** Count the real, physical, on-shell degrees of freedom before and after the breaking, in four dimensions.
 
@@ -219,9 +219,9 @@ The gap above is a gap of *this* framework as developed in the read list. It is 
 - **Class 1, point-like partons.** Two families, **quarks and leptons**, with the correct fractional and integral electric charges and with **baryonic charge**, and with the **neutrino and the u-quark masses zero by eigenvalue equations**.
 - **Class 2, extended hadrons.** No simple mass eigenvalue equation exists, and the **strong interaction is essentially non-local**; the pion mass and the pion–nucleon coupling are said to determine the remaining properties.
 
-The striking sentence is the one about the electroweak sector: it is claimed to be **the same as the Standard Model's, with the same two free parameters $e$ and $\sin^2\theta$**, and to need **no Higgs symmetry-breaking mechanism**. The masses that the Standard Model obtains from Yukawa couplings and a vacuum expectation value are obtained here instead as eigenvalues of the generalized mass operator.
+The striking sentence is the one about the electroweak sector: it is claimed to be **the same as the Standard Model's, with the same two free parameters $e$ and $\sin^2\vartheta^{\mathrm{fld}}$**, and to need **no Higgs symmetry-breaking mechanism**. The masses that the Standard Model obtains from Yukawa couplings and a vacuum expectation value are obtained here instead as eigenvalues of the generalized mass operator.
 
-**What is genuinely different, and what is not.** The claim is easy to misread, and the paper's own accounting is the corrective. The electroweak sector is claimed **identical** to the Standard Model, with the *same two* parameters; nothing is derived about the couplings. The novelty is confined to **mass generation** — the masses become eigenvalues rather than Yukawa couplings — and to the hadron class, where the paper concedes that no simple eigenvalue equation exists and that the strong interaction is non-local. So the claim is not "the framework computes $e$ and $\sin^2\theta$"; it is "mass comes from an eigenvalue problem, so no Higgs is needed." Both halves matter for this article.
+**What is genuinely different, and what is not.** The claim is easy to misread, and the paper's own accounting is the corrective. The electroweak sector is claimed **identical** to the Standard Model, with the *same two* parameters; nothing is derived about the couplings. The novelty is confined to **mass generation** — the masses become eigenvalues rather than Yukawa couplings — and to the hadron class, where the paper concedes that no simple eigenvalue equation exists and that the strong interaction is non-local. So the claim is not "the framework computes $e$ and $\sin^2\vartheta^{\mathrm{fld}}$"; it is "mass comes from an eigenvalue problem, so no Higgs is needed." Both halves matter for this article.
 
 **The mechanism's character: parity violation, not a scalar.** The source states its algebraic basis in one sentence, and it is worth keeping: "The generalization (9) is obtained by the substitution $Am\to AE$ in the Lagrangian leading to (1). Therefore, mass-generation is linked to a maximally parity violating field." The Einstein–Mayer–Lanczos Lagrangian is printed as their eq. (8), with an overall scalar-part bracket and the same $(\ldots)^{+}$ completion the corpus records for the Proca current and the energy–momentum tensor:
 
@@ -289,7 +289,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; $\partial/\partial Q_t = -i\partial/\partial t'/c$ |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ | Connection; $A_0$ imaginary, $\vec A$ real |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_\mu$ | Complex connection coefficients (central, abelian) |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase |

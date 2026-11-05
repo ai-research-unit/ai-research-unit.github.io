@@ -90,12 +90,12 @@ $$
 A local action cannot mix sectors, since $Ϙ$ is topological, but the vacuum need not be a definite-$Ϙ$ state. The theta vacuum is the superposition
 
 $$
-\boxed{\;|\theta\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
+\boxed{\;|\theta^{\mathrm{vac}}\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
 \qquad
 Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ\;},
 $$
 
-the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta\rangle=-i\partial/\partial\theta|\theta\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta\rangle$ superposition is the unique one that is, up to the standard subtleties.
+the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta^{\mathrm{vac}}\rangle=-i\partial/\partial\theta|\theta^{\mathrm{vac}}\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta^{\mathrm{vac}}\rangle$ superposition is the unique one that is, up to the standard subtleties.
 
 The theta dependence enters through the combination
 
@@ -201,7 +201,7 @@ $$
 Z_1^{\mathrm{cl}}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
 $$
 
-with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\chi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
+with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\chi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
 The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
@@ -217,7 +217,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ|$ | Saturated (Bogomolny) classical action |
 | $Z=\int\mathcal D\mathcal A\,\exp(-S)$ | Euclidean partition function |
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
-| $|\theta\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
+| $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function |
 | $\mathcal E(\theta)$, $\chi_t$ | Vacuum energy density and topological susceptibility |
 | $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |

@@ -13,37 +13,37 @@ The algebra and the dagger are *Hermitian Algebras*; the two-sided family and th
 
 ### Definitions
 
-**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, with $c(xz) = c(z)c(x)$ and $c(1) = 1$. For $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are
+**Definition.** Let $\mathrm{J}$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, with $c(xz) = c(z)c(x)$ and $c(1) = 1$. For $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the **left one-sided operator** and the **right one-sided operator** attached to $x$ are
 
 $$
-\Lambda^{\theta}_x(y) = \theta(x)\,y, \qquad \qquad \mathrm P^{c}_x(y) = y\,c(x).
+\Lambda^{\mathrm{J}}_x(y) = \mathrm{J}(x)\,y, \qquad \qquad \mathrm P^{c}_x(y) = y\,c(x).
 $$
 
-With $\theta = \mathrm{id}$ and $\theta = \alpha$ this gives the left multiplications $L_x$ and the signed left multiplication $L_{\alpha(x)}$; with $c = \mathrm{id}$, $c = r$, $c = \bar\cdot$ and $c = {}^{\dagger}$ it gives the right multiplications $R_x$, $R_{x^{r}}$, $R_{x^{\natural}}$ and $R_{x^{\dagger}}$. The inverse variants $y\mapsto y\,x^{-1}$ are defined on the units.
+With $\mathrm{J} = \mathrm{id}$ and $\mathrm{J} = \alpha$ this gives the left multiplications $L_x$ and the signed left multiplication $L_{\alpha(x)}$; with $c = \mathrm{id}$, $c = r$, $c = \bar\cdot$ and $c = {}^{\dagger}$ it gives the right multiplications $R_x$, $R_{x^{r}}$, $R_{x^{\natural}}$ and $R_{x^{\dagger}}$. The inverse variants $y\mapsto y\,x^{-1}$ are defined on the units.
 
 **Proposition (composition laws).** Both families are multiplicative with the same order:
 
 $$
-\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\circ\Lambda^{\theta}_z, \qquad \qquad \mathrm P^{c}_{xz} = \mathrm P^{c}_x\circ\mathrm P^{c}_z .
+\Lambda^{\mathrm{J}}_{xz} = \Lambda^{\mathrm{J}}_x\circ\Lambda^{\mathrm{J}}_z, \qquad \qquad \mathrm P^{c}_{xz} = \mathrm P^{c}_x\circ\mathrm P^{c}_z .
 $$
 
-**Proof.** For the left family, $\Lambda^{\theta}_x(\Lambda^{\theta}_z(y)) = \theta(x)\theta(z)y = \theta(xz)y$, using that $\theta$ is an automorphism. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y)) = \mathrm P^{c}_x(y\,c(z)) = y\,c(z)c(x) = y\,c(xz)$, using that $c$ is an anti-automorphism; the reversal in $c$ is compensated by the reversal of the order of composition, which is the reason both families compose in the same order.
+**Proof.** For the left family, $\Lambda^{\mathrm{J}}_x(\Lambda^{\mathrm{J}}_z(y)) = \mathrm{J}(x)\mathrm{J}(z)y = \mathrm{J}(xz)y$, using that $\mathrm{J}$ is an automorphism. For the right family, $\mathrm P^{c}_x(\mathrm P^{c}_z(y)) = \mathrm P^{c}_x(y\,c(z)) = y\,c(z)c(x) = y\,c(xz)$, using that $c$ is an anti-automorphism; the reversal in $c$ is compensated by the reversal of the order of composition, which is the reason both families compose in the same order.
 
 **Proposition (commutation, and the two-sided operator).** Left and right one-sided operators commute,
 
 $$
-\Lambda^{\theta}_x\circ\mathrm P^{c}_z = \mathrm P^{c}_z\circ\Lambda^{\theta}_x ,
+\Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_z = \mathrm P^{c}_z\circ\Lambda^{\mathrm{J}}_x ,
 $$
 
 and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product,
 
 $$
-\Phi^{\theta,c}_x = \Lambda^{\theta}_x\circ\mathrm P^{c}_x = L_{\theta(x)}\,R_{c(x)} .
+\Phi^{\mathrm{J},c}_x = \Lambda^{\mathrm{J}}_x\circ\mathrm P^{c}_x = L_{\mathrm{J}(x)}\,R_{c(x)} .
 $$
 
-**Proof.** $(\theta(x)y)c(z) = \theta(x)(yc(z))$ by associativity, and the two-sided operator is the product by its definition.
+**Proof.** $(\mathrm{J}(x)y)c(z) = \mathrm{J}(x)(yc(z))$ by associativity, and the two-sided operator is the product by its definition.
 
-**Corollary (composition of two-sided operators, again).** The composition law $\Phi^{\theta,c}_{xz} = \Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ follows from the two composition laws above and the commutation: $\Phi_x\Phi_z = \Lambda^{\theta}_x\mathrm P^{c}_x\Lambda^{\theta}_z\mathrm P^{c}_z = \Lambda^{\theta}_{xz}\mathrm P^{c}_{xz} = \Phi_{xz}$. So the multiplicativity of the two-sided family is a consequence of the multiplicativity of its two one-sided factors, and the order of the factors in the composite is immaterial.
+**Corollary (composition of two-sided operators, again).** The composition law $\Phi^{\mathrm{J},c}_{xz} = \Phi^{\mathrm{J},c}_x\circ\Phi^{\mathrm{J},c}_z$ follows from the two composition laws above and the commutation: $\Phi_x\Phi_z = \Lambda^{\mathrm{J}}_x\mathrm P^{c}_x\Lambda^{\mathrm{J}}_z\mathrm P^{c}_z = \Lambda^{\mathrm{J}}_{xz}\mathrm P^{c}_{xz} = \Phi_{xz}$. So the multiplicativity of the two-sided family is a consequence of the multiplicativity of its two one-sided factors, and the order of the factors in the composite is immaterial.
 
 ## The Hermitian Adjoint of a One-Sided Operator
 
@@ -52,7 +52,7 @@ $$
 **Theorem.** With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ of the regular module, the adjoint of a one-sided operator is the one-sided operator of the dagger:
 
 $$
-\boxed{\;\bigl(\Lambda^{\theta}_x\bigr)^{*} = \Lambda^{\theta}_{x^{\dagger}} , \qquad \qquad \bigl(\mathrm P^{c}_x\bigr)^{*} = \mathrm P^{c}_{x^{\dagger}}\;} .
+\boxed{\;\bigl(\Lambda^{\mathrm{J}}_x\bigr)^{*} = \Lambda^{\mathrm{J}}_{x^{\dagger}} , \qquad \qquad \bigl(\mathrm P^{c}_x\bigr)^{*} = \mathrm P^{c}_{x^{\dagger}}\;} .
 $$
 
 In particular $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$.
@@ -69,7 +69,7 @@ $$
 (R_bx, y) = \mathrm{Sc}\bigl((xb)^{\dagger}y\bigr) = \mathrm{Sc}\bigl(b^{\dagger}x^{\dagger}y\bigr) = \mathrm{Sc}\bigl(x^{\dagger}\,y\,b^{\dagger}\bigr) = (x, R_{b^{\dagger}}y),
 $$
 
-where the middle equality moves the factor $b^{\dagger}$ past the product by two applications of cyclicity of the scalar part. The statements for $\Lambda^{\theta}$ and $\mathrm P^{c}$ follow by substituting $a = \theta(x)$ and $b = c(x)$.
+where the middle equality moves the factor $b^{\dagger}$ past the product by two applications of cyclicity of the scalar part. The statements for $\Lambda^{\mathrm{J}}$ and $\mathrm P^{c}$ follow by substituting $a = \mathrm{J}(x)$ and $b = c(x)$.
 
 **Remark (why the dagger and not the conjugate element).** The adjoint is the one-sided operator of the **dagger** of the element, not of the element itself and not of the other anti-involution: reversion gives the adjoint for the blade form, the dagger gives the adjoint for the form of the dagger, and the two differ by the parity sign as in *The Blade Form and the Hermitian Structure with Hermitian Adjoint*. A sibling must use the dagger for the form $\mathrm{Sc}(x^{\dagger}y)$ and reversion for the form $\mathrm{Sc}(x^{r}y)$.
 
@@ -159,7 +159,7 @@ a skew-adjoint involution; it is not unitary, and its action on the form reverse
 
 ## Summary
 
-A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\theta}_x(y) = \theta(x)y$ or a right multiplication $\mathrm P^{c}_x(y) = y\,c(x)$ attached to an automorphism $\theta$ and an anti-automorphism $c$. Both families are **multiplicative with the same order**, $\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\Lambda^{\theta}_z$ and $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$, because the reversal inside $c$ is cancelled by the reversal of the order of composition; left and right operators commute, and the two-sided operator is their product, $\Phi^{\theta,c}_x = \Lambda^{\theta}_x\mathrm P^{c}_x$, so the multiplicativity of the two-sided family is inherited from its factors.
+A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\mathrm{J}}_x(y) = \mathrm{J}(x)y$ or a right multiplication $\mathrm P^{c}_x(y) = y\,c(x)$ attached to an automorphism $\mathrm{J}$ and an anti-automorphism $c$. Both families are **multiplicative with the same order**, $\Lambda^{\mathrm{J}}_{xz} = \Lambda^{\mathrm{J}}_x\Lambda^{\mathrm{J}}_z$ and $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$, because the reversal inside $c$ is cancelled by the reversal of the order of composition; left and right operators commute, and the two-sided operator is their product, $\Phi^{\mathrm{J},c}_x = \Lambda^{\mathrm{J}}_x\mathrm P^{c}_x$, so the multiplicativity of the two-sided family is inherited from its factors.
 
 With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ the **adjoint of a one-sided operator is the one-sided operator of the dagger**, $L_a^{*} = L_{a^{\dagger}}$ and $R_b^{*} = R_{b^{\dagger}}$, whence a one-sided operator is self-adjoint, skew-adjoint or unitary exactly when its element is self-adjoint, skew-adjoint or in the unitary slice; every vector acts by a skew-adjoint operator, and in the positive case by a skew-adjoint unitary complex structure. The left multiplications give the **regular $*$-representation**, the right multiplications its commutant, and the two together generate the image of the enveloping algebra $\mathrm{Cl}\otimes_F\mathrm{Cl}^{\mathrm{opp}}$, which is all of $\mathrm{End}_F(\mathrm{Cl}(V,\mathfrak{Q}))$ exactly when the Clifford algebra is central simple and a proper subalgebra otherwise. Finally $L_a(1) = R_a(1) = a$, so both maps are injective; the kernel of a one-sided operator is an annihilator and its image an ideal, and the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$.
 
@@ -167,11 +167,11 @@ With respect to the form $(x,y) = \mathrm{Sc}(x^{\dagger}y)$ the **adjoint of a 
 
 | Symbol | Meaning |
 |---|---|
-| $\Lambda^{\theta}_x(y) = \theta(x)y$ | Left one-sided operator |
+| $\Lambda^{\mathrm{J}}_x(y) = \mathrm{J}(x)y$ | Left one-sided operator |
 | $\mathrm P^{c}_x(y) = y\,c(x)$ | Right one-sided operator |
 | $L_a$, $R_b$ | Ordinary left and right multiplication |
-| $\Lambda^{\theta}_{xz} = \Lambda^{\theta}_x\Lambda^{\theta}_z$, $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$ | Composition laws |
-| $\Phi^{\theta,c}_x = \Lambda^{\theta}_x\mathrm P^{c}_x$ | Two-sided operator as a product of one-sided ones |
+| $\Lambda^{\mathrm{J}}_{xz} = \Lambda^{\mathrm{J}}_x\Lambda^{\mathrm{J}}_z$, $\mathrm P^{c}_{xz} = \mathrm P^{c}_x\mathrm P^{c}_z$ | Composition laws |
+| $\Phi^{\mathrm{J},c}_x = \Lambda^{\mathrm{J}}_x\mathrm P^{c}_x$ | Two-sided operator as a product of one-sided ones |
 | $L_a^{*} = L_{a^{\dagger}}$, $R_b^{*} = R_{b^{\dagger}}$ | Adjoints with respect to $\mathrm{Sc}(x^{\dagger}y)$ |
 | $\langle L_a, R_b\rangle = \mathrm{Im}(\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}})$ | Generated algebra; $=\mathrm{End}_F$ iff central simple |
 | $\mathrm{Cl}\cdot a$, $a\cdot\mathrm{Cl}$ | Left and right ideals, images of $R_a$ and $L_a$ |

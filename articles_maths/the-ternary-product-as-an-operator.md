@@ -5,7 +5,7 @@
 A sesqualgebra carries its identities at the ternary level. The associator of the binary product is a defect with no identity attached to it, and the ternary product $\{x,y,z\}=xy^{*}z$ is the operation that carries the Jordan triple identity, as *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras* record. The present article reads that ternary product as an **operator**. For a pair $(x,y)$ the third slot is the variable, and
 
 $$
-\Theta_{x,y}(z)=\{x,y,z\}=xy^{*}z
+\mathrm{Sd}_{x,y}(z)=\{x,y,z\}=xy^{*}z
 $$
 
 is a linear operator on $A$. The article computes the parities of the pair-dependence, shows that the operator is a familiar one-sided operator in each of the three slots of the ternary product, and identifies the family that the pairs generate. Over a unital sesqualgebra the third-slot operators are the plain left multiplications, so that slot carries no new operator and what the ternary product adds is the reading of the same operation in its other two slots. The companion operator of the Lie layer, the inner derivation $z\mapsto[[x,y],z]$, is treated in the same breath, because it is the other ternary operation of the sesquilinear kind, and the contrast is the point of the article: the family of the Jordan layer consists of one-sided operators, the family of the Lie layer of derivations, and the two families are the operator forms of the two ternary products of the sesquilinear kind, the Jordan triple of *The Sesquilinear Associator and the Ternary Product* and the Lie triple of *Lie Algebras of Sesqualgebras*.
@@ -19,18 +19,18 @@ Throughout, $R$ is a commutative ring with $1$, $\varsigma$ is an involution of 
 **Definition.** For $x,y\in A$ let
 
 $$
-\Theta_{x,y}:A\longrightarrow A,\qquad \Theta_{x,y}(z)=xy^{*}z .
+\mathrm{Sd}_{x,y}:A\longrightarrow A,\qquad \mathrm{Sd}_{x,y}(z)=xy^{*}z .
 $$
 
-The operator is called the **ternary operator** of the pair $(x,y)$, and the assignment $(x,y)\mapsto \Theta_{x,y}$ the pair map of the ternary product.
+The operator is called the **ternary operator** of the pair $(x,y)$, and the assignment $(x,y)\mapsto \mathrm{Sd}_{x,y}$ the pair map of the ternary product.
 
-**Proposition (parities).** The operator $\Theta_{x,y}$ is $R$-linear, and the pair map is $R$-bilinear with a $\varsigma$-semilinear second slot:
+**Proposition (parities).** The operator $\mathrm{Sd}_{x,y}$ is $R$-linear, and the pair map is $R$-bilinear with a $\varsigma$-semilinear second slot:
 
 $$
-\Theta_{\lambda x,y}=\lambda\,\Theta_{x,y}, \qquad \Theta_{x,\lambda y}=\varsigma(\lambda)\,\Theta_{x,y}, \qquad \lambda\in R .
+\mathrm{Sd}_{\lambda x,y}=\lambda\,\mathrm{Sd}_{x,y}, \qquad \mathrm{Sd}_{x,\lambda y}=\varsigma(\lambda)\,\mathrm{Sd}_{x,y}, \qquad \lambda\in R .
 $$
 
-**Proof.** The variable $z$ enters through the plain product on the right, so $\Theta_{x,y}(\lambda z+\mu w)=\lambda \Theta_{x,y}(z)+\mu \Theta_{x,y}(w)$ and $\Theta_{x,y}\in\operatorname{End}_R(A)$. In the first parameter, $(\lambda x)y^{*}z=\lambda(xy^{*}z)$; in the second, $x(\lambda y)^{*}z=x\,\varsigma(\lambda)y^{*}z=\varsigma(\lambda)xy^{*}z$ by the scalar rule of the involution.
+**Proof.** The variable $z$ enters through the plain product on the right, so $\mathrm{Sd}_{x,y}(\lambda z+\mu w)=\lambda \mathrm{Sd}_{x,y}(z)+\mu \mathrm{Sd}_{x,y}(w)$ and $\mathrm{Sd}_{x,y}\in\operatorname{End}_R(A)$. In the first parameter, $(\lambda x)y^{*}z=\lambda(xy^{*}z)$; in the second, $x(\lambda y)^{*}z=x\,\varsigma(\lambda)y^{*}z=\varsigma(\lambda)xy^{*}z$ by the scalar rule of the involution.
 
 **Remark.** The parities are those of the ternary product, read with one slot promoted to a parameter: the ternary product is $R$-linear in its first and its third slot and $\varsigma$-semilinear in its middle slot, as *The Sesquilinear Associator and the Ternary Product* records. The parameter $x$ is therefore linear, the parameter $y$ is conjugate-linear and the variable $z$ is linear, and the pair map is the only place where the conjugate-linearity of the middle slot survives.
 
@@ -43,14 +43,14 @@ The ternary product has three slots and the variable may be put in any of them. 
 **Theorem (the three readings).** For all $x,y,z\in A$,
 
 $$
-\boxed{\;\Theta_{x,y}(z)=L_{x\star y}R_{\,1}(z)=\mathcal{T}_{x,z}(y)=L_{1}R_{\,y^{*}z}(x)\;}.
+\boxed{\;\mathrm{Sd}_{x,y}(z)=L_{x\star y}R_{\,1}(z)=\mathcal{T}_{x,z}(y)=L_{1}R_{\,y^{*}z}(x)\;}.
 $$
 
 **Proof.** The first identity is $xy^{*}z=(x\star y)z$, the product being read as the plain left multiplication by the derived product $x\star y$; the second is $xy^{*}z=\mathcal{T}_{x,z}(y)$ by the definition of the sandwich; the third is $xy^{*}z=x(y^{*}z)=L_{1}R_{\,y^{*}z}(x)$, the product read as the plain right multiplication by the element $y^{*}z$.
 
 **Remark.** The third slot gives a plain left multiplication, the first slot a plain right multiplication, and the middle slot a sandwich. The middle reading is the only one that is not $R$-linear in the parameters, because the sandwich is $\varsigma$-semilinear in its own parameter, and that is the same statement as the $\varsigma$-semilinearity of the pair map in its second slot. The three readings are three operators of the earlier entries of the group, and the content of the theorem is that the ternary product introduces no operator that those entries had not already named.
 
-**Corollary (the middle reading is the sandwich).** With $x$ and $z$ fixed, the map $y\mapsto x y^{*} z$ is the sandwich operator $\mathcal{T}_{x,z}$, hence $\varsigma$-semilinear and of the parity of the sandwich; the ternary operator of the pair and the sandwich are therefore related by the exchange of the last two slots, $\Theta_{x,y}(z)=\mathcal{T}_{x,z}(y)$.
+**Corollary (the middle reading is the sandwich).** With $x$ and $z$ fixed, the map $y\mapsto x y^{*} z$ is the sandwich operator $\mathcal{T}_{x,z}$, hence $\varsigma$-semilinear and of the parity of the sandwich; the ternary operator of the pair and the sandwich are therefore related by the exchange of the last two slots, $\mathrm{Sd}_{x,y}(z)=\mathcal{T}_{x,z}(y)$.
 
 ## The Operators the Pairs Generate
 
@@ -59,10 +59,10 @@ $$
 **Theorem (the pair enters through the derived product).** For all $x,y\in A$,
 
 $$
-\Theta_{x,y}=L_{x\star y}R_{\,1}.
+\mathrm{Sd}_{x,y}=L_{x\star y}R_{\,1}.
 $$
 
-Consequently $\Theta_{x,y}=0$ if and only if $x\star y=0$, and $\Theta_{x,y}=\Theta_{u,v}$ if and only if $x\star y=u\star v$; the pair $(x,y)$ is seen by the operator only through the derived product.
+Consequently $\mathrm{Sd}_{x,y}=0$ if and only if $x\star y=0$, and $\mathrm{Sd}_{x,y}=\mathrm{Sd}_{u,v}$ if and only if $x\star y=u\star v$; the pair $(x,y)$ is seen by the operator only through the derived product.
 
 **Proof.** The identity is the first reading above. For the kernels, $L_{a}R_{1}$ is the plain left multiplication by $a$, and over a unital $A$ the left multiplication by $a$ vanishes identically only for $a=0$, since $L_{a}R_{1}(1)=a$; the same evaluation at the unit gives $L_{a}R_{1}=L_{c}R_{1}$ only for $a=c$.
 
@@ -70,23 +70,23 @@ Consequently $\Theta_{x,y}=0$ if and only if $x\star y=0$, and $\Theta_{x,y}=\Th
 
 **Proof.** The composition law is $L_{a}R_{1}\bigl(L_{c}R_{1}(z)\bigr)=a(cz)=(ac)z=L_{ac}R_{1}(z)$; the unit is $L_{1}R_{1}(z)=z$; the kernel is trivial by the evaluation at $1$ above. The identity $x\star 1=x1^{*}=x$ uses $1^{*}=1$ and the unit of the algebra.
 
-**Remark.** The theorem is the reason the ternary operator of the third slot is invisible: it is a plain one-sided operator, and over a unital sesqualgebra the pairs generate the whole left regular family. What the reading does carry is the parity: the map $(x,y)\mapsto \Theta_{x,y}$ is $R$-bilinear on $A\times A^{\varsigma}$ and not on $A\times A$, so the derived product is visible in the pair map and not in the operators it produces.
+**Remark.** The theorem is the reason the ternary operator of the third slot is invisible: it is a plain one-sided operator, and over a unital sesqualgebra the pairs generate the whole left regular family. What the reading does carry is the parity: the map $(x,y)\mapsto \mathrm{Sd}_{x,y}$ is $R$-bilinear on $A\times A^{\varsigma}$ and not on $A\times A$, so the derived product is visible in the pair map and not in the operators it produces.
 
 ### The Bracket and the Lie Triple System
 
 **Theorem (the operators under the commutator).** For all $x,y,u,v,p,q\in A$,
 
 $$
-\boxed{\;[\Theta_{x,y},\Theta_{u,v}]=L_{[x\star y}R_{\,u\star v],\,1}\;},
+\boxed{\;[\mathrm{Sd}_{x,y},\mathrm{Sd}_{u,v}]=L_{[x\star y}R_{\,u\star v],\,1}\;},
 $$
 
-the bracket being the commutator of the endomorphism algebra $\operatorname{End}_R(A)$. Consequently the $R$-span of the operators $\Theta_{x,y}$ is a Lie subalgebra of $\operatorname{End}_R(A)$ isomorphic to $A$ under the commutator, and it is closed under the triple commutator
+the bracket being the commutator of the endomorphism algebra $\operatorname{End}_R(A)$. Consequently the $R$-span of the operators $\mathrm{Sd}_{x,y}$ is a Lie subalgebra of $\operatorname{End}_R(A)$ isomorphic to $A$ under the commutator, and it is closed under the triple commutator
 
 $$
-[[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}]=L_{[[x\star y}R_{\,u\star v],\,p\star q],\,1}.
+[[\mathrm{Sd}_{x,y},\mathrm{Sd}_{u,v}],\mathrm{Sd}_{p,q}]=L_{[[x\star y}R_{\,u\star v],\,p\star q],\,1}.
 $$
 
-**Proof.** By the factorisation, $\Theta_{x,y}=L_{a}R_{1}$ with $a=x\star y$ and $\Theta_{u,v}=L_{c}R_{1}$ with $c=u\star v$; then $L_{a}R_{1}L_{c}R_{1}=L_{ac}R_{1}$ by the corollary, so the commutator is $L_{ac-ca}R_{1}$; the second identity is the first applied twice.
+**Proof.** By the factorisation, $\mathrm{Sd}_{x,y}=L_{a}R_{1}$ with $a=x\star y$ and $\mathrm{Sd}_{u,v}=L_{c}R_{1}$ with $c=u\star v$; then $L_{a}R_{1}L_{c}R_{1}=L_{ac}R_{1}$ by the corollary, so the commutator is $L_{ac-ca}R_{1}$; the second identity is the first applied twice.
 
 **Remark.** The triple commutator is the operation of the Lie triple system of *Lie Algebras of Sesqualgebras*, read with the Lie algebra of the operators as its Lie algebra. The triple system is therefore present twice in the sesquilinear kind: once on the elements, where it is $\{x,y,z\}_{\mathrm{L}}=[[x,y],z]$, and once on the operators of this article, where it is the triple commutator of the one-sided operators produced by the derived products.
 
@@ -131,7 +131,7 @@ and the $R$-span of the operators $\mathrm{ad}_{[x,y]}$ is the image of the comm
 
 The two families answer the same question, the pair acting on the algebra, and they differ in what the action is made of.
 
-| | the Jordan layer $\Theta_{x,y}$ | the Lie layer $\mathrm{ad}_{[x,y]}$ |
+| | the Jordan layer $\mathrm{Sd}_{x,y}$ | the Lie layer $\mathrm{ad}_{[x,y]}$ |
 |---|---|---|
 | definition | $z\mapsto xy^{*}z=\{x,y,z\}$ | $z\mapsto[[x,y],z]$ |
 | what it reads | the derived product $x\star y$ | the commutator $[x,y]$ |
@@ -149,7 +149,7 @@ The ternary operator of the pair $(x,x)$ is the quadratic object of the Jordan t
 **Theorem (the quadratic representation).** Let $A$ be commutative and let $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, so that the derived operation is the product. Then
 
 $$
-\boxed{\;\Theta_{x,x}(z)=x^{2}z=\mathrm{Jor}_x(z), \qquad \{x,z,x\}=xzx=\mathrm{Jor}_x(z)\;},
+\boxed{\;\mathrm{Sd}_{x,x}(z)=x^{2}z=\mathrm{Jor}_x(z), \qquad \{x,z,x\}=xzx=\mathrm{Jor}_x(z)\;},
 $$
 
 where $\mathrm{Jor}_x$ is the quadratic representation of the Jordan algebra of the product; equivalently
@@ -162,13 +162,13 @@ the operator $L_{x}R_{1}$ being the plain left multiplication, $L_{x}R_{1}(z)=xz
 
 **Proof.** With $*=\mathrm{id}$ the ternary product is $xy^{*}z=xyz$ and the commutativity gives $xyz=x^{2}z$ for $y=x$; the middle slot gives $xzx=x^{2}z$. The identity $\mathrm{Jor}_x=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}$ is the classical form of the quadratic representation in a commutative associative algebra, read on $z$: $2x(xz)-x^{2}z=x^{2}z$.
 
-**Remark.** The quadratic representation is therefore the diagonal of the pair map, the case $x=y$ of the ternary operator, and the two readings of the theorem are the two slots in which the quadratic variable may sit. In the sesquilinear case the diagonal $\Theta_{x,x}$ is the plain left multiplication by $x\star x=xx^{*}$, the square of the element in the derived sense, and it is the operator $z\mapsto xx^{*}z$ and not the classical $z\mapsto xzx$; the difference is the involution, and it is what the degenerate case recovers.
+**Remark.** The quadratic representation is therefore the diagonal of the pair map, the case $x=y$ of the ternary operator, and the two readings of the theorem are the two slots in which the quadratic variable may sit. In the sesquilinear case the diagonal $\mathrm{Sd}_{x,x}$ is the plain left multiplication by $x\star x=xx^{*}$, the square of the element in the derived sense, and it is the operator $z\mapsto xx^{*}z$ and not the classical $z\mapsto xzx$; the difference is the involution, and it is what the degenerate case recovers.
 
 ## Worked Cases
 
 ### The Complex Matrices
 
-Let $A=M_n(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the conjugation, the standard example of *Sesqualgebras*. The derived products $x\star y=xy^{*}$ fill $M_n(\mathbb{C})$, since $x\star 1=x$; so the third-slot operators $\Theta_{x,y}=L_{x\star y}R_{1}$ are all the plain left multiplications, and the family is the left regular family isomorphic to $M_n(\mathbb{C})$. The middle reading gives the sandwiches $\mathcal{T}_{x,z}$ for all pairs, the family of *The Sesquilinear Sandwich Operator*, and the first reading gives the plain right multiplications. The Lie companion gives the inner derivations $\mathrm{ad}_{[x,y]}$; the commutator subalgebra is $[A,A]=\mathfrak{sl}_n$, the traceless matrices, the adjoint map is injective on it, and the family is $\mathrm{ad}(\mathfrak{sl}_n)\cong\mathfrak{sl}_n$, while the adjoint map on the whole algebra has kernel the scalars $\mathbb{C}1$.
+Let $A=M_n(\mathbb{C})$ with the conjugate transpose and $\varsigma$ the conjugation, the standard example of *Sesqualgebras*. The derived products $x\star y=xy^{*}$ fill $M_n(\mathbb{C})$, since $x\star 1=x$; so the third-slot operators $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$ are all the plain left multiplications, and the family is the left regular family isomorphic to $M_n(\mathbb{C})$. The middle reading gives the sandwiches $\mathcal{T}_{x,z}$ for all pairs, the family of *The Sesquilinear Sandwich Operator*, and the first reading gives the plain right multiplications. The Lie companion gives the inner derivations $\mathrm{ad}_{[x,y]}$; the commutator subalgebra is $[A,A]=\mathfrak{sl}_n$, the traceless matrices, the adjoint map is injective on it, and the family is $\mathrm{ad}(\mathfrak{sl}_n)\cong\mathfrak{sl}_n$, while the adjoint map on the whole algebra has kernel the scalars $\mathbb{C}1$.
 
 ### The Biquaternion Algebra
 
@@ -176,20 +176,20 @@ Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the conjugation
 
 ## Summary
 
-The ternary product of a sesqualgebra is an operator attached to a pair, $\Theta_{x,y}(z)=\{x,y,z\}=xy^{*}z$, linear in its argument, linear in the first parameter and $\varsigma$-semilinear in the second, so that the pair map is $R$-bilinear on $A\times A^{\varsigma}$. Read in its third slot it is the plain left multiplication by the derived product, $\Theta_{x,y}=L_{x\star y}R_{1}$; read in its middle slot it is the sandwich $\mathcal{T}_{x,z}$; read in its first slot it is the plain right multiplication by $y^{*}z$. The pair is visible in the operator only through the derived product, and over a unital sesqualgebra the pairs produce the whole left regular family, an algebra isomorphic to $A$, so the third slot carries no new operator. The operators are closed under the commutator, where $[\Theta_{x,y},\Theta_{u,v}]=L_{[x\star y}R_{u\star v],1}$, hence under the triple commutator, and they are the operator form of the Lie triple system of *Lie Algebras of Sesqualgebras*. The companion of the Lie layer, $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$, is an inner derivation, the difference of a plain left and a plain right multiplication, and the pairs produce the image of the commutator subalgebra under the adjoint map, isomorphic to $[A,A]/([A,A]\cap Z(A))$. The contrast is the content of the article: the Jordan layer produces one-sided operators and the Lie layer produces derivations, and the involution is visible in the pair of the first family and absent from the second. In the commutative degenerate case the diagonal $\Theta_{x,x}$ is the quadratic representation $\mathrm{Jor}_x=2P_x^{2}-P_{x^{2}}$, and the classical form $z\mapsto xzx$ is the middle-slot reading of the same operator.
+The ternary product of a sesqualgebra is an operator attached to a pair, $\mathrm{Sd}_{x,y}(z)=\{x,y,z\}=xy^{*}z$, linear in its argument, linear in the first parameter and $\varsigma$-semilinear in the second, so that the pair map is $R$-bilinear on $A\times A^{\varsigma}$. Read in its third slot it is the plain left multiplication by the derived product, $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$; read in its middle slot it is the sandwich $\mathcal{T}_{x,z}$; read in its first slot it is the plain right multiplication by $y^{*}z$. The pair is visible in the operator only through the derived product, and over a unital sesqualgebra the pairs produce the whole left regular family, an algebra isomorphic to $A$, so the third slot carries no new operator. The operators are closed under the commutator, where $[\mathrm{Sd}_{x,y},\mathrm{Sd}_{u,v}]=L_{[x\star y}R_{u\star v],1}$, hence under the triple commutator, and they are the operator form of the Lie triple system of *Lie Algebras of Sesqualgebras*. The companion of the Lie layer, $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$, is an inner derivation, the difference of a plain left and a plain right multiplication, and the pairs produce the image of the commutator subalgebra under the adjoint map, isomorphic to $[A,A]/([A,A]\cap Z(A))$. The contrast is the content of the article: the Jordan layer produces one-sided operators and the Lie layer produces derivations, and the involution is visible in the pair of the first family and absent from the second. In the commutative degenerate case the diagonal $\mathrm{Sd}_{x,x}$ is the quadratic representation $\mathrm{Jor}_x=2P_x^{2}-P_{x^{2}}$, and the classical form $z\mapsto xzx$ is the middle-slot reading of the same operator.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\Theta_{x,y}(z)=xy^{*}z$ | the ternary operator of the pair $(x,y)$, the third slot the variable |
-| $\Theta_{x,y}=L_{x\star y}R_{1}$ | the factorisation of the ternary operator through the derived product |
+| $\mathrm{Sd}_{x,y}(z)=xy^{*}z$ | the ternary operator of the pair $(x,y)$, the third slot the variable |
+| $\mathrm{Sd}_{x,y}=L_{x\star y}R_{1}$ | the factorisation of the ternary operator through the derived product |
 | $\mathcal{T}_{x,z}(y)=xy^{*}z$ | the middle-slot reading, the sandwich of the pair $(x,z)$ |
 | $L_{1}R_{\,y^{*}z}(x)$ | the first-slot reading, the plain right multiplication by $y^{*}z$ |
-| $[\Theta_{x,y},\Theta_{u,v}]=L_{[x\star y}R_{u\star v],1}$ | the operators under the commutator |
+| $[\mathrm{Sd}_{x,y},\mathrm{Sd}_{u,v}]=L_{[x\star y}R_{u\star v],1}$ | the operators under the commutator |
 | $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$ | the Lie companion of the pair, the inner derivation of the pair |
 | $\mathrm{ad}_{[x,y]}=L_{[x}R_{y],1}-L_{1}R_{[x,y]}$ | the Lie companion as a difference of one-sided operators |
-| $\mathrm{Jor}_x=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}=\Theta_{x,x}$ | the quadratic representation in the commutative degenerate case |
+| $\mathrm{Jor}_x=2L_{x}R_{1}^{2}-L_{x^{2}}R_{1}=\mathrm{Sd}_{x,x}$ | the quadratic representation in the commutative degenerate case |
 | $\{x,y,z\}$ | the ternary product, owned by *The Sesquilinear Associator and the Ternary Product* |
 
 ## Further Reading

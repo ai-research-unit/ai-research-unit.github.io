@@ -7,10 +7,10 @@ The biquaternion algebra is the even part of the ambient algebra of Minkowski sp
 This article states the grading once, in the Hermitian form that the rest of the corpus uses. The operator is the **Hermitian sandwich**
 
 $$
-\Theta_x(y)=x\,y\,x^{*},
+\mathrm{Sd}_x(y)=x\,y\,x^{*},
 $$
 
-with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\Theta_x$, which is why the physics never needs them.
+with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\mathrm{Sd}_x$, which is why the physics never needs them.
 
 The generators act on the algebra on both sides, and each carries one factor $i$:
 
@@ -69,7 +69,7 @@ $$
 \boxed{\;\langle x\,y\,x^{*}\rangle_{\natural}=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural}\;}
 $$
 
-so the operator scales the quaternionic norm by the factor $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and it preserves the norm exactly on the norm-one slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The inner conjugation $x\,y\,x^{-1}$ preserves the norm exactly, with ratio $1$. The two maps differ by a multiplication on the right, $\Theta_x(y)=x\,y\,x^{-1}\,(xx^{*})$, the inner conjugation followed by the multiplication on the right by $xx^{*}$, which is Hermitian of norm $\lvert\langle x\rangle_{\natural}\rvert^{2}$; on the norm-one slice both preserve the norm, and as maps they coincide exactly when $x x^{*}=e_t$, that is on the $*$-unitary slice $\mathcal{U}=\{x:x^{*}x=e_t\}$ defined below.
+so the operator scales the quaternionic norm by the factor $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and it preserves the norm exactly on the norm-one slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The inner conjugation $x\,y\,x^{-1}$ preserves the norm exactly, with ratio $1$. The two maps differ by a multiplication on the right, $\mathrm{Sd}_x(y)=x\,y\,x^{-1}\,(xx^{*})$, the inner conjugation followed by the multiplication on the right by $xx^{*}$, which is Hermitian of norm $\lvert\langle x\rangle_{\natural}\rvert^{2}$; on the norm-one slice both preserve the norm, and as maps they coincide exactly when $x x^{*}=e_t$, that is on the $*$-unitary slice $\mathcal{U}=\{x:x^{*}x=e_t\}$ defined below.
 
 ## The Parity Sign Is the Conjugation by the Pseudoscalar
 
@@ -104,7 +104,7 @@ $$
 **Corollary (the sign is invisible on the algebra).** Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on it and
 
 $$
-\Theta_x(y)=x\,y\,x^{*}\qquad\text{for every }x\in\mathbb{B}.
+\mathrm{Sd}_x(y)=x\,y\,x^{*}\qquad\text{for every }x\in\mathbb{B}.
 $$
 
 There is no signed Hermitian sandwich on the bosonic sector: the sign multiplies the parameter and not the operator.
@@ -112,12 +112,12 @@ There is no signed Hermitian sandwich on the bosonic sector: the sign multiplies
 **Proposition (the composition).** For all $x,z$,
 
 $$
-\boxed{\;\Theta_x\circ\Theta_z=\Theta_{xz}\;}
+\boxed{\;\mathrm{Sd}_x\circ\mathrm{Sd}_z=\mathrm{Sd}_{xz}\;}
 $$
 
 with no correction factor.
 
-*Proof.* $\Theta_{xz}(y)=x z\,y\,z^{*}x^{*}=\Theta_x(\Theta_z(y))$, the dagger being an anti-automorphism.
+*Proof.* $\mathrm{Sd}_{xz}(y)=x z\,y\,z^{*}x^{*}=\mathrm{Sd}_x(\mathrm{Sd}_z(y))$, the dagger being an anti-automorphism.
 
 **Corollary (two odd steps give an even one).** If $x$ and $z$ are both odd then $xz$ is even and the composite is the sandwich by a bosonic parameter. The parity of the parameter is the sum of the parities; the operator itself carries no parity, and the composition needs no sign because the sign was never in the operator.
 
@@ -149,14 +149,14 @@ The odd slot is where the parity sign is visible, and the simplest odd elements 
 **Proposition (the vector identity).** Let $a,v$ be real vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $b$ its polar form, $a^2=q(a)$ and $av+va=2b(a,v)$, and let $\rho_a(v)=v-2b(a,v)a/q(a)$ be the reflection. Then
 
 $$
-\boxed{\;\Theta_a(v)=q(a)\,\rho_a(v)\;}.
+\boxed{\;\mathrm{Sd}_a(v)=q(a)\,\rho_a(v)\;}.
 $$
 
-*Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2b(a,v)\,a+a^{2}v=q(a)\,v-2b(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
+*Proof.* $\mathrm{Sd}_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2b(a,v)\,a+a^{2}v=q(a)\,v-2b(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
 **Corollary (which reflection carries which sign).** On the timelike generator $q=+1$ and the sandwich is the reflection itself; on each spatial generator $q=-1$ and the sandwich is minus the reflection. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the worked case below, where two odd steps compose to a rotation.
 
-**Remark (the same statement on the algebra).** The algebra carries a Euclidean quadratic structure of its own on the three Hermitian elements $i\vec e_k$ of the informational sector, each of which squares to $+e_t$; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
+**Remark (the same statement on the algebra).** The algebra carries a Euclidean quadratic structure of its own on the three Hermitian elements $i\vec e_k$ of the informational sector, each of which squares to $+e_t$; there the vector identity reads $\mathrm{Sd}_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
 ## What the Grading Does and Does Not Explain
 
@@ -264,11 +264,11 @@ The metric sits in the raised index and nowhere else: with every index low the s
 
 ## Summary
 
-The ambient algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The operator of the article is the **Hermitian sandwich** $\Theta_x(y)=x\,y\,x^{*}$: the Hermitian adjoint on the right, one parameter, and no second factor. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
+The ambient algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The operator of the article is the **Hermitian sandwich** $\mathrm{Sd}_x(y)=x\,y\,x^{*}$: the Hermitian adjoint on the right, one parameter, and no second factor. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
 
 The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$, so the condition for equality is $\sigma(x)=\sigma(\langle x\rangle_{\natural})x$. In particular the two coincide on the real-quaternion slice of norm one, and the sandwich multiplies the quaternionic norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}$, being norm-preserving exactly on the norm-one slice. The $*$-unitary slice is a compact group of real dimension four, while the inverse slice is the group of units and the route to the Lorentz group.
 
-The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the grade involution is its conjugation by the volume element, $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$. It is **invisible on the algebra**, $\varepsilon_x=+1$ for $x\in\mathbb{B}$, so there is no signed sandwich on the bosonic sector and the composition $\Theta_x\Theta_z=\Theta_{xz}$ is exact. On the odd slot the sign is physical: on the vectors $\Theta_a=q(a)\rho_a$, so the time reflection is the sandwich exactly and the spatial reflections are minus it, with the sign carried by the signature $q(a)=\pm1$ and not by a parity factor of the operator.
+The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the grade involution is its conjugation by the volume element, $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$. It is **invisible on the algebra**, $\varepsilon_x=+1$ for $x\in\mathbb{B}$, so there is no signed sandwich on the bosonic sector and the composition $\mathrm{Sd}_x\mathrm{Sd}_z=\mathrm{Sd}_{xz}$ is exact. On the odd slot the sign is physical: on the vectors $\mathrm{Sd}_a=q(a)\rho_a$, so the time reflection is the sandwich exactly and the spatial reflections are minus it, with the sign carried by the signature $q(a)=\pm1$ and not by a parity factor of the operator.
 
 ## Summary of Notation
 
@@ -282,9 +282,9 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The quaternionic norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
 | $\mathcal{U}=\{x:x^{*}x=e_t\}$ | The $*$-unitary slice; compact, real dimension four, Lie algebra $\mathbb{M}_-$ |
 | $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$, $\varepsilon_x=(-1)^{\lvert x\rvert}$ | The grade involution as a scalar sign |
-| $\Theta_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
-| $\Theta_x\Theta_z=\Theta_{xz}$ | Exact composition; no sign correction |
-| $\Theta_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
+| $\mathrm{Sd}_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
+| $\mathrm{Sd}_x\mathrm{Sd}_z=\mathrm{Sd}_{xz}$ | Exact composition; no sign correction |
+| $\mathrm{Sd}_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
 | $\mathrm{Cl}^1=u\mathbb{B}$, $\langle su,tu\rangle=-q(u)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
 

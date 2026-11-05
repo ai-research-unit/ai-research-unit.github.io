@@ -85,12 +85,12 @@ with $|x|$ the positive square root and $u$ in the unitary slice. The decomposit
 **Definition.** On the group of units of the algebra let
 
 $$
-\theta(x) = \bigl(x^{\dagger}\bigr)^{-1}.
+\mathrm{J}(x) = \bigl(x^{\dagger}\bigr)^{-1}.
 $$
 
-**Proposition.** $\theta$ is an automorphism of order two of the group of units, and its fixed set is exactly the unitary slice $U = \{x : x^{\dagger}x = 1\}$. Its differential at the identity is $\mathrm{d}\theta = -{}^{\dagger}$, which is $+1$ on the skew part and $-1$ on the self-adjoint part.
+**Proposition.** $\mathrm{J}$ is an automorphism of order two of the group of units, and its fixed set is exactly the unitary slice $U = \{x : x^{\dagger}x = 1\}$. Its differential at the identity is $\mathrm{d}\mathrm{J} = -{}^{\dagger}$, which is $+1$ on the skew part and $-1$ on the self-adjoint part.
 
-**Proof.** $\theta(xy) = ((xy)^{\dagger})^{-1} = (y^{\dagger}x^{\dagger})^{-1} = (x^{\dagger})^{-1}(y^{\dagger})^{-1} = \theta(x)\theta(y)$, so $\theta$ is an automorphism. For the order, $((x^{\dagger})^{-1})^{\dagger} = ((x^{\dagger})^{\dagger})^{-1} = x^{-1}$, so $\theta^{2}(x) = (x^{-1})^{-1} = x$. The fixed set is $\{x : (x^{\dagger})^{-1} = x\} = \{x : x^{\dagger}x = 1\} = U$. For the differential, $\theta(1 + tu) \equiv 1 - tu^{\dagger}$ to first order, so $\mathrm{d}\theta(u) = -u^{\dagger}$, which is $u$ on $\mathrm{Skew}$ and $-u$ on $\mathrm{Herm}$.
+**Proof.** $\mathrm{J}(xy) = ((xy)^{\dagger})^{-1} = (y^{\dagger}x^{\dagger})^{-1} = (x^{\dagger})^{-1}(y^{\dagger})^{-1} = \mathrm{J}(x)\mathrm{J}(y)$, so $\mathrm{J}$ is an automorphism. For the order, $((x^{\dagger})^{-1})^{\dagger} = ((x^{\dagger})^{\dagger})^{-1} = x^{-1}$, so $\mathrm{J}^{2}(x) = (x^{-1})^{-1} = x$. The fixed set is $\{x : (x^{\dagger})^{-1} = x\} = \{x : x^{\dagger}x = 1\} = U$. For the differential, $\mathrm{J}(1 + tu) \equiv 1 - tu^{\dagger}$ to first order, so $\mathrm{d}\mathrm{J}(u) = -u^{\dagger}$, which is $u$ on $\mathrm{Skew}$ and $-u$ on $\mathrm{Herm}$.
 
 **Theorem (Cartan decomposition).** For the Lie bracket $[u,v] = uv - vu$,
 
@@ -114,7 +114,7 @@ so $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$; the other two are th
 
 ## Summary
 
-The dagger makes a Clifford algebra an algebra with involution, with self-adjoint and skew parts and the splitting $\mathrm{Cl} = \mathrm{Herm}\oplus\mathrm{Skew}$ when $2$ is invertible, and with $x^{\dagger}x$ self-adjoint for every $x$. The **Hermitian cone** $P = \{x^{\dagger}x\}$ is the set of squares; the involution is **positive** exactly when the scalar form of the dagger is positive definite, which happens exactly for a negative definite quadratic form, where $\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2}$; a positive definite form instead makes reversion positive and exchanges the two sides by $e_i \mapsto ie_i$. When the involution is positive the algebra is a finite-dimensional $C^{*}$-algebra, $P$ is its positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ in the unitary slice, which is the quaternion polar decomposition when the algebra is $\mathbb{H}$. The **Cartan involution** $\theta(x) = (x^{\dagger})^{-1}$ is an automorphism of order two of the group of units whose fixed set is exactly the unitary slice, and the induced Lie-algebra decomposition is that of a symmetric space: $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$, $[\mathrm{Skew},\mathrm{Herm}] \subseteq \mathrm{Herm}$, $[\mathrm{Herm},\mathrm{Herm}] \subseteq \mathrm{Skew}$, so the skew part is the Lie algebra of the unitary group and the self-adjoint part is the tangent space of the symmetric space.
+The dagger makes a Clifford algebra an algebra with involution, with self-adjoint and skew parts and the splitting $\mathrm{Cl} = \mathrm{Herm}\oplus\mathrm{Skew}$ when $2$ is invertible, and with $x^{\dagger}x$ self-adjoint for every $x$. The **Hermitian cone** $P = \{x^{\dagger}x\}$ is the set of squares; the involution is **positive** exactly when the scalar form of the dagger is positive definite, which happens exactly for a negative definite quadratic form, where $\mathrm{Sc}(x^{\dagger}x) = \sum_I a_I^{2}$; a positive definite form instead makes reversion positive and exchanges the two sides by $e_i \mapsto ie_i$. When the involution is positive the algebra is a finite-dimensional $C^{*}$-algebra, $P$ is its positive cone, and every element has a polar decomposition $x = u|x|$ with $u$ in the unitary slice, which is the quaternion polar decomposition when the algebra is $\mathbb{H}$. The **Cartan involution** $\mathrm{J}(x) = (x^{\dagger})^{-1}$ is an automorphism of order two of the group of units whose fixed set is exactly the unitary slice, and the induced Lie-algebra decomposition is that of a symmetric space: $[\mathrm{Skew},\mathrm{Skew}] \subseteq \mathrm{Skew}$, $[\mathrm{Skew},\mathrm{Herm}] \subseteq \mathrm{Herm}$, $[\mathrm{Herm},\mathrm{Herm}] \subseteq \mathrm{Skew}$, so the skew part is the Lie algebra of the unitary group and the self-adjoint part is the tangent space of the symmetric space.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ The dagger makes a Clifford algebra an algebra with involution, with self-adjoin
 | $\mathrm{Sc}(x^{\dagger}x)$ | Scalar form of the dagger, positive definite iff $q$ is negative definite |
 | $|x| = (x^{\dagger}x)^{1/2}$ | Absolute value, for a positive involution |
 | $x = u|x|$ | Polar decomposition, $u^{\dagger}u = 1$ |
-| $\theta(x) = (x^{\dagger})^{-1}$ | Cartan involution of the group of units |
+| $\mathrm{J}(x) = (x^{\dagger})^{-1}$ | Cartan involution of the group of units |
 | $U$ | Its fixed set, the unitary slice |
 
 ## Further Reading

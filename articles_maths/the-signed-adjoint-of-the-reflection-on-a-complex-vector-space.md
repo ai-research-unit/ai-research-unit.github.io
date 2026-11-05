@@ -11,11 +11,11 @@ the reflection in the hyperplane orthogonal to the non-isotropic vector $u$; it 
 $$
 L_r^{*} = L_r, \qquad R_r^{*} = R_r, \qquad \mathrm{Ad}_r^{*} = \mathrm{Ad}_r,
 $$
-because $r^{\dagger} = r$; the signed inner sandwich of the reflection is the identity, $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, and the conjugation $\mathrm{Ad}_r$ is a self-adjoint involutive automorphism of $E$. The self-adjointness of all these operators is exactly the statement that the reflection is **real**, $r^{\dagger} = r$, in the sense of the Hermitian geometry; and the whole picture fails in the degenerate case, where the vector $u$ is isotropic, the reflection formula has no meaning, and the operators built from it lose their self-adjointness — the failure that the signed adjoint theory records as the failure of the criterion $a = \alpha(a^{\dagger})$.
+because $r^{\dagger} = r$; the signed inner sandwich of the reflection is the identity, $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, and the conjugation $\mathrm{Ad}_r$ is a self-adjoint involutive automorphism of $E$. The self-adjointness of all these operators is exactly the statement that the reflection is **real**, $r^{\dagger} = r$, in the sense of the Hermitian geometry; and the whole picture fails in the degenerate case, where the vector $u$ is isotropic, the reflection formula has no meaning, and the operators built from it lose their self-adjointness — the failure that the signed adjoint theory records as the failure of the criterion $a = \alpha(a^{\dagger})$.
 
 The article has three sections: the reflection and its adjoint on $V$; the signed adjoints of the operators the reflection defines on the endomorphism algebra; and the failure in the degenerate case. The reflections and their geometric theory are *Isometries and Orthogonal Transformations* and *Reflections as Signed Two-Sided Operators on a Complex Vector Space*, the latter of this Part; the signed sandwich and its adjoint are *The Signed Sandwich on a Complex Vector Space* and *The Signed Adjoint Sandwich on a Complex Vector Space*, the latter the preceding article of this group; the adjoint of a Hermitian operator is *The Adjoint of a Hermitian Operator*; the Hermitian forms, the unitary group and the signatures are *Hermitian Geometry and the Unitary Group*; the degeneracy of a form and the radical are *Bilinear Forms*. None of that is re-derived.
 
-Throughout, $V$ is a finite-dimensional complex vector space with a Hermitian form $h$, $r = \rho_u$ is a reflection of $V$, $T = r$ is the unitary self-adjoint involution of the grade involution, $\alpha_r(X) = rXr$, $\Lambda^{\alpha_r}_a$ and $\rho^{\alpha_r}_b$ and $\Theta^{\alpha_r}_{a,b}$ are the signed operators of the preceding articles, and $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$ is the Hermitian trace form of $E = \operatorname{End}_{\mathbb C}(V)$.
+Throughout, $V$ is a finite-dimensional complex vector space with a Hermitian form $h$, $r = \rho_u$ is a reflection of $V$, $T = r$ is the unitary self-adjoint involution of the grade involution, $\alpha_r(X) = rXr$, $\Lambda^{\alpha_r}_a$ and $\rho^{\alpha_r}_b$ and $\mathrm{Sd}^{\alpha_r}_{a,b}$ are the signed operators of the preceding articles, and $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$ is the Hermitian trace form of $E = \operatorname{End}_{\mathbb C}(V)$.
 
 ## The Reflection and Its Adjoint on $V$
 
@@ -39,11 +39,11 @@ so the reflection is a unitary self-adjoint involution; it fixes the hyperplane 
 
 **Proposition (the signed inner sandwich of the reflection).** With $\alpha_r(X) = rXr$ one has
 $$
-\boxed{\;\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \Theta^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\Theta^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r\;} ,
+\boxed{\;\mathrm{Sd}^{\alpha_r}_{r,r^{-1}} = \mathrm{id}, \qquad \bigl(\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}\bigr)^{*} = \mathrm{id}, \qquad \mathrm{Sd}^{\alpha_r}_{r,r} = \mathrm{Ad}_r, \qquad \bigl(\mathrm{Sd}^{\alpha_r}_{r,r}\bigr)^{*} = \mathrm{Ad}_r\;} ,
 $$
 so every signed operator of the reflection is self-adjoint, and the reflection is the fixed case of the signed adjoint criterion $a = \alpha_r(a^{\dagger})$.
 
-**Proof.** $\Theta^{\alpha_r}_{r,r^{-1}}(X) = r\alpha_r(X)r^{-1} = r(rXr)r = r^{2}Xr^{2} = X$, using $r^{-1}=r$ and $r^{2}=\mathrm{id}$; the same computation gives $\Theta^{\alpha_r}_{r,r}(X) = X$, so the two coincide for an involution, and the adjoint of the identity is the identity. The conjugation is $\mathrm{Ad}_r(X) = rXr$, which is $\Theta^{\alpha_r}_{r,r^{-1}}\circ\alpha_r(X) = r\alpha_r(\alpha_r(X))r = rXr$; its adjoint is itself because $r^{\dagger}=r$. The criterion $a = \alpha_r(a^{\dagger})$ with $a=r$ is $r = r r^{\dagger} r = r^{3} = r$, which holds. This is *The Signed Adjoint Sandwich on a Complex Vector Space* and *Reflections as Signed Two-Sided Operators on a Complex Vector Space*.
+**Proof.** $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}(X) = r\alpha_r(X)r^{-1} = r(rXr)r = r^{2}Xr^{2} = X$, using $r^{-1}=r$ and $r^{2}=\mathrm{id}$; the same computation gives $\mathrm{Sd}^{\alpha_r}_{r,r}(X) = X$, so the two coincide for an involution, and the adjoint of the identity is the identity. The conjugation is $\mathrm{Ad}_r(X) = rXr$, which is $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}\circ\alpha_r(X) = r\alpha_r(\alpha_r(X))r = rXr$; its adjoint is itself because $r^{\dagger}=r$. The criterion $a = \alpha_r(a^{\dagger})$ with $a=r$ is $r = r r^{\dagger} r = r^{3} = r$, which holds. This is *The Signed Adjoint Sandwich on a Complex Vector Space* and *Reflections as Signed Two-Sided Operators on a Complex Vector Space*.
 
 **Remark (the reflection as the geometric realisation of the involution).** The reflection is the geometric source of the grade involutions of the endomorphism algebra: every unitary self-adjoint involution $T$ is a product of reflections by the Cartan–Dieudonné theorem, so the grade involutions that the signed theory uses are the conjugations of products of reflections, and the self-adjointness of the operators of $T$ is assembled from the self-adjointness of the operators of the reflections. This is *Isometries and Orthogonal Transformations*.
 
@@ -71,7 +71,7 @@ A reflection $\rho_u$ of a Hermitian space is a unitary self-adjoint involution,
 | $\rho_u^2=\mathrm{id}$, $\rho_u^{\dagger}=\rho_u$ | unitary self-adjoint involution |
 | $\alpha_r(X)=rXr$ | the grade involution of the reflection |
 | $L_r^{*}=L_r$, $R_r^{*}=R_r$, $\mathrm{Ad}_r^{*}=\mathrm{Ad}_r$ | self-adjointness of the operators of $r$ |
-| $\Theta^{\alpha_r}_{r,r^{-1}}=\mathrm{id}$ | the signed inner sandwich of the reflection |
+| $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}=\mathrm{id}$ | the signed inner sandwich of the reflection |
 | $h(u,u)=0$ | the isotropic failure |
 
 ## Further Reading

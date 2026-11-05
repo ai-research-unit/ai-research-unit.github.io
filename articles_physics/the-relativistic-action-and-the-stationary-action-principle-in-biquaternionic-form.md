@@ -115,7 +115,7 @@ the straight worldline. A discrete check confirms it: stationarity of the discre
 
 ### The coupling to an external potential
 
-The coupling of a charge $ϙ$ to an external four-potential $\tilde{A} = i(\phi/c)e_t + \vec A$ is the standard line integral
+The coupling of a charge $ϙ$ to an external four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A$ is the standard line integral
 $$
 S_{\mathrm{int}} = -ϙ\sum_\mu\int A_\mu\,dx_\mu ,
 $$
@@ -324,7 +324,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Standard relativistic Lagrangian |
 | $\tilde{V} = d\tilde{R}/d\tau$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity and its normalisation |
 | $\tilde{P} = m\tilde{V}$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Four-momentum and the mass shell |
-| $\tilde{A} = i(\phi/c)e_t + \vec A$ | External four-potential |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | External four-potential |
 | $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})] - \mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$ | Scalar field Lagrangian |
 | $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_k=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |

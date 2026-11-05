@@ -96,26 +96,26 @@ Expand about the chosen minimum in the two real fields,
 $$
 \phi_1(x)=\sqrt2\,v+h(x),
 \qquad
-\phi_2(x)=\theta(x),
+\phi_2(x)=\vartheta^{\mathrm{fld}}(x),
 $$
 
-so that $h$ is the radial (Higgs) fluctuation and $\theta$ the angular one. The kinetic term is exactly diagonal and canonical,
+so that $h$ is the radial (Higgs) fluctuation and $\vartheta^{\mathrm{fld}}$ the angular one. The kinetic term is exactly diagonal and canonical,
 
 $$
-\mathcal{L}^{\mathrm{kin}}=\frac{1}{2}\left[(\partial h)^2+(\partial\theta)^2\right],
+\mathcal{L}^{\mathrm{kin}}=\frac{1}{2}\left[(\partial h)^2+(\partial\vartheta^{\mathrm{fld}})^2\right],
 $$
 
 and the potential becomes
 
 $$
-V=\frac{\lambda}{4}\left(\frac{(\sqrt2 v+h)^2+\theta^2}{2}-v^2\right)^2
-=\frac{\lambda}{4}\left(\sqrt2\,v\,h+\frac{h^2}{2}+\frac{\theta^2}{2}\right)^2 .
+V=\frac{\lambda}{4}\left(\frac{(\sqrt2 v+h)^2+\vartheta^{\mathrm{fld}}^2}{2}-v^2\right)^2
+=\frac{\lambda}{4}\left(\sqrt2\,v\,h+\frac{h^2}{2}+\frac{\vartheta^{\mathrm{fld}}^2}{2}\right)^2 .
 $$
 
 Expanding to second order in the fluctuations,
 
 $$
-\boxed{\;V=\frac{\lambda}{2}\,v^2 h^2+O(h^3,h\theta^2,\dots)
+\boxed{\;V=\frac{\lambda}{2}\,v^2 h^2+O(h^3,h\vartheta^{\mathrm{fld}}^2,\dots)
 \qquad\Longrightarrow\qquad
 m_h^2=\lambda v^2 ,
 \qquad
@@ -124,9 +124,9 @@ $$
 
 where the masses are read from $\mathcal L\supset-\frac12 m^2(\text{field})^2$. The **mass matrix** is diagonal with entries $(m_h^2,0)$: the radial mode is massive, with a mass that is nonzero for every $\lambda>0$ and every $v\ne0$, and the angular mode is **exactly massless**.
 
-The masslessness has a structural reason that the expansion makes visible. The potential depends on the fields only through $\phi_1^2+\phi_2^2$, so its restriction to the circle of minima is constant; the angular direction is a direction of exact flatness, not merely of small curvature. The angular fluctuation $\theta$ moves along the symmetry orbit, and the potential cannot give it a mass because the symmetry relates all points of the orbit. Equivalently, the $\theta$-dependence of $V$ enters only through the invariant, and at a point where the invariant is stationary in $\theta$, every $\theta$ derivative of $V$ vanishes. The field $\theta$ is the **Goldstone (Nambu–Goldstone) boson** of the broken $\mathrm{U}(1)$; it is a scalar, and in this framework it is central-valued like the field it comes from.
+The masslessness has a structural reason that the expansion makes visible. The potential depends on the fields only through $\phi_1^2+\phi_2^2$, so its restriction to the circle of minima is constant; the angular direction is a direction of exact flatness, not merely of small curvature. The angular fluctuation $\vartheta^{\mathrm{fld}}$ moves along the symmetry orbit, and the potential cannot give it a mass because the symmetry relates all points of the orbit. Equivalently, the $\vartheta^{\mathrm{fld}}$-dependence of $V$ enters only through the invariant, and at a point where the invariant is stationary in $\vartheta^{\mathrm{fld}}$, every $\vartheta^{\mathrm{fld}}$ derivative of $V$ vanishes. The field $\vartheta^{\mathrm{fld}}$ is the **Goldstone (Nambu–Goldstone) boson** of the broken $\mathrm{U}(1)$; it is a scalar, and in this framework it is central-valued like the field it comes from.
 
-The Goldstone field's low-energy interactions are of the derivative type. The potential's expansion contains no term linear in $\theta$ and no term $\propto\theta^2$; the first $\theta$-dependent terms are of the form $h\theta^2$ and $\theta^4$. The derivative couplings that suppress the Goldstone boson at low energy come from the kinetic term, where the shift symmetry acts nonlinearly, and are visible in the current below.
+The Goldstone field's low-energy interactions are of the derivative type. The potential's expansion contains no term linear in $\vartheta^{\mathrm{fld}}$ and no term $\propto\vartheta^{\mathrm{fld}}^2$; the first $\vartheta^{\mathrm{fld}}$-dependent terms are of the form $h\vartheta^{\mathrm{fld}}^2$ and $\vartheta^{\mathrm{fld}}^4$. The derivative couplings that suppress the Goldstone boson at low energy come from the kinetic term, where the shift symmetry acts nonlinearly, and are visible in the current below.
 
 ## The Goldstone Current and the Decay Constant
 
@@ -143,21 +143,21 @@ which in the real components is
 $$
 \tilde J=-\left(\phi_1\tilde\nabla\phi_2-\phi_2\tilde\nabla\phi_1\right)
 \;\xrightarrow{\ \text{expansion}\ } \;
-\tilde J=-\sqrt2\,v\,\tilde\nabla\theta+\theta\,\tilde\nabla h-h\,\tilde\nabla\theta ,
+\tilde J=-\sqrt2\,v\,\tilde\nabla\vartheta^{\mathrm{fld}}+\vartheta^{\mathrm{fld}}\,\tilde\nabla h-h\,\tilde\nabla\vartheta^{\mathrm{fld}} ,
 $$
 
-where the second line is the expansion about the minimum with $\phi_1=\sqrt2v+h$, $\phi_2=\theta$. To leading order in the fluctuations,
+where the second line is the expansion about the minimum with $\phi_1=\sqrt2v+h$, $\phi_2=\vartheta^{\mathrm{fld}}$. To leading order in the fluctuations,
 
 $$
-\boxed{\;\tilde J=-f\,\tilde\nabla\theta+O(\text{two fields}),
+\boxed{\;\tilde J=-f\,\tilde\nabla\vartheta^{\mathrm{fld}}+O(\text{two fields}),
 \qquad
 f=\sqrt2\,v\;},
 $$
 
-so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\theta/dt'$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
+so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\vartheta^{\mathrm{fld}}/dt'$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
 
 $$
-\boxed{\;\langle0|\tilde J(0)|\theta(p)\rangle=i f\,p_\mu\;},
+\boxed{\;\langle0|\tilde J(0)|\vartheta^{\mathrm{fld}}(p)\rangle=i f\,p_\mu\;},
 $$
 
 which is the statement that the current interpolates the Goldstone boson with strength $f$ and that no massive state contributes at zero momentum.
@@ -165,15 +165,15 @@ which is the statement that the current interpolates the Goldstone boson with st
 The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{M}_-$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\phi^{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.
 
 $$
--(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')=-fd\theta/dt'-\big(h\,d\theta/dt'-\theta\,dh/dt'\big),
+-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')=-fd\vartheta^{\mathrm{fld}}/dt'-\big(h\,d\vartheta^{\mathrm{fld}}/dt'-\vartheta^{\mathrm{fld}}\,dh/dt'\big),
 \qquad
 f=\sqrt2\,v,
 $$
-so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J_0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}^{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
+so the leading term is $-fd\vartheta^{\mathrm{fld}}/dt'$ and the remainder is the two-field term $-(hd\vartheta^{\mathrm{fld}}/dt'-\vartheta^{\mathrm{fld}}\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\vartheta^{\mathrm{fld}}(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\vartheta^{\mathrm{fld}}$ — where the exact current $J_0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\vartheta^{\mathrm{fld}}/dt'-(hd\vartheta^{\mathrm{fld}}/dt'-\vartheta^{\mathrm{fld}}\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}^{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\vartheta^{\mathrm{fld}})^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
 
 ## The Theorem and Its Proof
 
-Goldstone's theorem states: **if a continuous global symmetry is spontaneously broken, then for each generator of the broken symmetry there is a massless scalar particle.** For the $\mathrm{U}(1)$ of this article there is one generator $Ϙ^{\mathrm{fop}}$ and one Goldstone boson $\theta$. The proof has two standard forms, and both are worth stating because the framework's version uses both.
+Goldstone's theorem states: **if a continuous global symmetry is spontaneously broken, then for each generator of the broken symmetry there is a massless scalar particle.** For the $\mathrm{U}(1)$ of this article there is one generator $Ϙ^{\mathrm{fop}}$ and one Goldstone boson $\vartheta^{\mathrm{fld}}$. The proof has two standard forms, and both are worth stating because the framework's version uses both.
 
 **The current form.** If the symmetry is broken, the order parameter is nonzero, equivalently the charge does not annihilate the vacuum in the finite-volume sense discussed above, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$, so
 
@@ -187,7 +187,7 @@ $$
 F(x-y)=\langle0|\big[\tilde J(x),\phi^{\mathrm{fop}}(y)\big]|0\rangle ,
 $$
 
-which by translation invariance depends on the difference, and by Lorentz covariance is a sum of terms proportional to $p_\mu$ with Lorentz-invariant coefficients. Its Fourier transform carries a spectral weight $\rho(p^2)$, and the conservation of the current, $\sum_\mu\partial F_\mu/\partial Q_\mu=0$, requires $p^2\rho(p^2)=0$: the spectral weight is supported at $p^2=0$, that is, on the massless shell. A massive intermediate state would give a pole at $p^2=m^2\ne0$, which conservation forbids; only a massless state can saturate the non-vanishing commutator. The particle so forced into the spectrum is the Goldstone boson, and it couples to the current with the strength measured by the matrix element $\langle0|J_\mu(0)|\theta(p)\rangle=ifp_\mu$ discussed below. This is the standard spectral argument and is transcribed rather than re-derived.
+which by translation invariance depends on the difference, and by Lorentz covariance is a sum of terms proportional to $p_\mu$ with Lorentz-invariant coefficients. Its Fourier transform carries a spectral weight $\rho(p^2)$, and the conservation of the current, $\sum_\mu\partial F_\mu/\partial Q_\mu=0$, requires $p^2\rho(p^2)=0$: the spectral weight is supported at $p^2=0$, that is, on the massless shell. A massive intermediate state would give a pole at $p^2=m^2\ne0$, which conservation forbids; only a massless state can saturate the non-vanishing commutator. The particle so forced into the spectrum is the Goldstone boson, and it couples to the current with the strength measured by the matrix element $\langle0|J_\mu(0)|\vartheta^{\mathrm{fld}}(p)\rangle=ifp_\mu$ discussed below. This is the standard spectral argument and is transcribed rather than re-derived.
 
 **The effective-potential form.** If the symmetry is broken, the order parameter is a nonzero minimum of the effective potential. The effective potential is a function of the fields invariant under the symmetry, hence of $|\phi|^2$ alone at the renormalizable level; along the symmetry orbit it is constant, so the second derivative along the orbit vanishes. The second derivative of the effective potential is the mass-squared matrix at zero momentum, so the mode along the orbit has zero mass. This is the version verified numerically above, and it is the version that the framework's central-valued potential most directly supports: the potential is a function of the central invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, the orbit is the central circle of phases, and the flatness is exact.
 
@@ -213,30 +213,30 @@ The counting is a statement about the geometry of the vacuum manifold, not about
 
 ## The Effective Lagrangian and the Soft Limit
 
-Below the radial mass the massive mode can be integrated out, and the Goldstone field is governed by an effective Lagrangian in which every term is a derivative. Because the potential is flat along the orbit and the only non-derivative couplings of $\theta$ involve the radial field, the effective theory of $\theta$ alone is built from powers of $\tilde\nabla\theta$,
+Below the radial mass the massive mode can be integrated out, and the Goldstone field is governed by an effective Lagrangian in which every term is a derivative. Because the potential is flat along the orbit and the only non-derivative couplings of $\vartheta^{\mathrm{fld}}$ involve the radial field, the effective theory of $\vartheta^{\mathrm{fld}}$ alone is built from powers of $\tilde\nabla\vartheta^{\mathrm{fld}}$,
 
 $$
-\mathcal{L}_{\mathrm{eff}}=\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\theta\,\partial/\partial Q_\mu\,\theta
-+\frac{c_4}{f^4}\,\Bigl(\sum_\mu\partial/\partial Q_\mu\,\theta\,\partial/\partial Q_\mu\,\theta\Bigr)^2+\cdots ,
+\mathcal{L}_{\mathrm{eff}}=\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}
++\frac{c_4}{f^4}\,\Bigl(\sum_\mu\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}\,\partial/\partial Q_\mu\,\vartheta^{\mathrm{fld}}\Bigr)^2+\cdots ,
 \qquad
 f=\sqrt2\,v ,
 $$
 
-the field being the canonically normalized one used above, so that its kinetic term carries no factor of $f$, and the dimensionless coefficients $c_4,\dots$ of the higher-dimension operators being fixed by the details of the radial sector; the decay constant is their suppression scale, so the Goldstone interactions are weak at momenta small compared with $f$. Equivalently, in the dimensionless normalization of the phase — the canonical field being $f\theta$ — the same series reads $\frac{f^2}{2}(\partial\theta)^2+c_4(\partial\theta)^4+\cdots$, which is the standard coset form; it is in that normalization that the decay constant appears as the normalization of the kinetic term. With the symmetry realized **nonlinearly**, $\theta\to\theta+\text{const}$, the constant shift leaves $\mathcal{L}_{\mathrm{eff}}$ invariant because only derivatives appear. This is the standard coset construction of the Goldstone effective theory, and it is the low-energy face of the derivative coupling observed in the mass-matrix expansion above.
+the field being the canonically normalized one used above, so that its kinetic term carries no factor of $f$, and the dimensionless coefficients $c_4,\dots$ of the higher-dimension operators being fixed by the details of the radial sector; the decay constant is their suppression scale, so the Goldstone interactions are weak at momenta small compared with $f$. Equivalently, in the dimensionless normalization of the phase — the canonical field being $f\vartheta^{\mathrm{fld}}$ — the same series reads $\frac{f^2}{2}(\partial\vartheta^{\mathrm{fld}})^2+c_4(\partial\vartheta^{\mathrm{fld}})^4+\cdots$, which is the standard coset form; it is in that normalization that the decay constant appears as the normalization of the kinetic term. With the symmetry realized **nonlinearly**, $\vartheta^{\mathrm{fld}}\to\vartheta^{\mathrm{fld}}+\text{const}$, the constant shift leaves $\mathcal{L}_{\mathrm{eff}}$ invariant because only derivatives appear. This is the standard coset construction of the Goldstone effective theory, and it is the low-energy face of the derivative coupling observed in the mass-matrix expansion above.
 
 The derivative structure has a sharp consequence, the **soft limit**. The amplitude for a process with an additional Goldstone boson of momentum $k$ is proportional to $k$ at small momentum; in the limit $k\to0$ the amplitude with the extra Goldstone vanishes. The reason is visible in the effective Lagrangian: every Goldstone leg carries a derivative, so a leg with vanishing momentum contributes nothing, and the remaining amplitude is the amplitude without that leg. This "Adler zero" is the standard statement that softly emitted Goldstone bosons decouple, and it is why a broken continuous symmetry's low-energy theory is weakly coupled at low energy even when the underlying coupling is strong.
 
-At the level of the field algebra the breaking is expressed by the charge's action on the Goldstone field. In components the charge acts as $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_1]=-i\phi^{\mathrm{fop}}_2$ and $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_2]=+i\phi^{\mathrm{fop}}_1$, so for the fluctuation fields $h$ and $\theta^{\mathrm{fop}}$ defined about the minimum,
+At the level of the field algebra the breaking is expressed by the charge's action on the Goldstone field. In components the charge acts as $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_1]=-i\phi^{\mathrm{fop}}_2$ and $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_2]=+i\phi^{\mathrm{fop}}_1$, so for the fluctuation fields $h$ and $\vartheta^{\mathrm{fld}}^{\mathrm{fop}}$ defined about the minimum,
 
 $$
-\big[Ϙ^{\mathrm{fop}},h\big]=-i\theta^{\mathrm{fop}} ,
+\big[Ϙ^{\mathrm{fop}},h\big]=-i\vartheta^{\mathrm{fld}}^{\mathrm{fop}} ,
 \qquad
-\langle0|\big[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}(0)\big]|0\rangle=i f ,
+\langle0|\big[Ϙ^{\mathrm{fop}},\vartheta^{\mathrm{fld}}^{\mathrm{fop}}(0)\big]|0\rangle=i f ,
 \qquad
 f=\sqrt2\,v ,
 $$
 
-the second relation being a statement about the vacuum expectation value, since the full commutator is $[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}]=i(\sqrt2 v+h)$ and the fluctuation has vanishing expectation. The generator thus shifts the Goldstone field by a constant, which is the non-linear realization of the broken symmetry; $f$ is the order parameter in the normalization of the kinetic term. In the framework's terms the charge is the central $\mathrm{U}(1)$ generator of the companion articles, the Goldstone field is central-valued, and the c-number $if$ multiplies the central unit $e_t$; the non-linear realization and the soft limit are standard and are imported with the rest of the broken-symmetry apparatus.
+the second relation being a statement about the vacuum expectation value, since the full commutator is $[Ϙ^{\mathrm{fop}},\vartheta^{\mathrm{fld}}^{\mathrm{fop}}]=i(\sqrt2 v+h)$ and the fluctuation has vanishing expectation. The generator thus shifts the Goldstone field by a constant, which is the non-linear realization of the broken symmetry; $f$ is the order parameter in the normalization of the kinetic term. In the framework's terms the charge is the central $\mathrm{U}(1)$ generator of the companion articles, the Goldstone field is central-valued, and the c-number $if$ multiplies the central unit $e_t$; the non-linear realization and the soft limit are standard and are imported with the rest of the broken-symmetry apparatus.
 
 ## The Biquaternion Reading
 
@@ -254,7 +254,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## What Is Standard and What Is Open
 
-**Standard, and imported.** The definition of spontaneous symmetry breaking and the order parameter; the vacuum manifold and its degeneracy; the expansion about the minimum, the diagonal mass matrix, the massive radial mode and the massless angular mode; the derivative couplings of the Goldstone field, the non-linear realization, the effective Lagrangian $\frac{f^2}{2}(\partial\theta)^2+\cdots$ and the soft limit; the Noether current, the charge and the decay constant with the matrix element $ifp_\mu$ and the charge–field commutators $[Ϙ^{\mathrm{fop}},h]=-i\theta^{\mathrm{fop}}$, $\langle0|[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}]|0\rangle=if$; the non-implementation of a broken generator by a $*$-unitary operator on the Hilbert space; Goldstone's theorem in both its current and effective-potential forms; the counting rule $\dim(G/H)$ and the cases $\mathrm{U}(1)\to\{1\}$, $\mathrm{U}(1)\to \mathrm{U}(1)$ and $O(N)\to O(N-1)$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
+**Standard, and imported.** The definition of spontaneous symmetry breaking and the order parameter; the vacuum manifold and its degeneracy; the expansion about the minimum, the diagonal mass matrix, the massive radial mode and the massless angular mode; the derivative couplings of the Goldstone field, the non-linear realization, the effective Lagrangian $\frac{f^2}{2}(\partial\vartheta^{\mathrm{fld}})^2+\cdots$ and the soft limit; the Noether current, the charge and the decay constant with the matrix element $ifp_\mu$ and the charge–field commutators $[Ϙ^{\mathrm{fop}},h]=-i\vartheta^{\mathrm{fld}}^{\mathrm{fop}}$, $\langle0|[Ϙ^{\mathrm{fop}},\vartheta^{\mathrm{fld}}^{\mathrm{fop}}]|0\rangle=if$; the non-implementation of a broken generator by a $*$-unitary operator on the Hilbert space; Goldstone's theorem in both its current and effective-potential forms; the counting rule $\dim(G/H)$ and the cases $\mathrm{U}(1)\to\{1\}$, $\mathrm{U}(1)\to \mathrm{U}(1)$ and $O(N)\to O(N-1)$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
 
 **Open in the biquaternion framework.**
 
@@ -266,9 +266,9 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## Summary
 
-The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$, the order parameter $\langle\tilde\Phi^{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\phi_1=\sqrt2v+h$ and $\phi_2=\theta$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\theta$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
+The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$, the order parameter $\langle\tilde\Phi^{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\phi_1=\sqrt2v+h$ and $\phi_2=\vartheta^{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta^{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
 
-The Goldstone field's current is $\tilde J=-f\tilde\nabla\theta+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\phi^{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\theta(p)\rangle=ifp_\mu$; the low-energy couplings of $\theta$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
+The Goldstone field's current is $\tilde J=-f\tilde\nabla\vartheta^{\mathrm{fld}}+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\phi^{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\vartheta^{\mathrm{fld}}(p)\rangle=ifp_\mu$; the low-energy couplings of $\vartheta^{\mathrm{fld}}$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
 
 ## Summary of Notation
 
@@ -282,11 +282,11 @@ The Goldstone field's current is $\tilde J=-f\tilde\nabla\theta+O(\text{two fiel
 | $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$ | Invariant potential |
 | $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$ | Vacuum manifold ($\mathbb{S}^1$) |
 | $\langle\tilde\Phi^{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ | Order parameter (central condensate; modulus $v$) |
-| $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ | Radial (Higgs) and angular (Goldstone) fields |
+| $\phi_1=\sqrt2v+h$, $\phi_2=\vartheta^{\mathrm{fld}}$ | Radial (Higgs) and angular (Goldstone) fields |
 | $m_h^2=\lambda v^2$, $m_G^2=0$ | Mass matrix entries; Goldstone exactly massless |
 | $\tilde J\in\mathbb{M}_-$, $\tilde J=i(\phi^*\tilde\nabla\phi-\phi\tilde\nabla\phi^*)$ | Noether current, in the material sector |
-| $\tilde J=-f\tilde\nabla\theta+\ldots$, $f=\sqrt2v$ | Current and decay constant |
-| $\langle0\vert\tilde J(0)\vert\theta(p)\rangle=ifp_\mu$ | Defining matrix element of the decay constant |
+| $\tilde J=-f\tilde\nabla\vartheta^{\mathrm{fld}}+\ldots$, $f=\sqrt2v$ | Current and decay constant |
+| $\langle0\vert\tilde J(0)\vert\vartheta^{\mathrm{fld}}(p)\rangle=ifp_\mu$ | Defining matrix element of the decay constant |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $n_{\mathrm{NG}}=\dim G-\dim H$ | Goldstone counting rule |
 | $\mathrm{U}(1)\to\{1\}$; $O(N)\to O(N-1)$ | One Goldstone; $N-1$ Goldstones |

@@ -15,7 +15,7 @@ The article is in three steps. It fixes the singular set of the displaced potent
 In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_t \in \mathbb{M}_-, \qquad \phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|},
+\tilde{A} = i\,a'_t\,e_t \in \mathbb{M}_-, \qquad \phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{ϙ}{4\pi\epsilon}\,\frac{1}{\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|},
 $$
 
 where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\vec r_0$, a single point, and it is the kernel $1/\|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $ϙ/4\pi\epsilon$ and are set aside below.

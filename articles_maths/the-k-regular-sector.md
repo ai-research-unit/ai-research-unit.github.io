@@ -190,7 +190,7 @@ The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natura
 
 **Left multiplication.** If $\tilde Q$ is positive it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q$ is negative, $L_{\tilde Q}$ has rank $4$ when $\tilde Q$ is a unit and rank $2$ when it is a zero divisor, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*. The rank therefore follows the algebraic norm and not the Krein sign.
 
-**The sandwich.** The operator $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the positive region it is invertible throughout; on the negative region it is invertible exactly on the negative units and singular on the negative zero divisors.
+**The sandwich.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the positive region it is invertible throughout; on the negative region it is invertible exactly on the negative units and singular on the negative zero divisors.
 
 **The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. It therefore exists throughout the positive region, and on the negative region exactly off the zero divisors. The decomposition itself is *The Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -230,7 +230,7 @@ The sector is the metric interior and exterior of the null set, taken together. 
 | $\mathbb{B}^6_1$ | the open unit ball of $\mathbb{C}^3$ |
 | $D^2$, $S^5$ | the open unit disk and the unit sphere of $\mathbb{C}^3$ |
 | $P_K$ | the Krein cone, the closure of the positive region |
-| $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
+| $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ | the sandwich |
 
 ## Further Reading
 

@@ -3,56 +3,56 @@
 
 ## Introduction
 
-An involution of a space is measured against the dual pairing by its **transposed involution**: given a dual pair $\langle E, F\rangle$ and a $\varsigma$-semilinear involution $\theta$ of $E$, there is a unique $\varsigma$-semilinear involution $\theta^{t}$ of $F$ such that
+An involution of a space is measured against the dual pairing by its **transposed involution**: given a dual pair $\langle E, F\rangle$ and a $\varsigma$-semilinear involution $\mathrm{J}$ of $E$, there is a unique $\varsigma$-semilinear involution $\mathrm{J}^{t}$ of $F$ such that
 
 $$
-\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F),
+\langle \mathrm{J} x, y\rangle = \varsigma\bigl(\langle x, \mathrm{J}^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F),
 $$
 
-and the pairing is then invariant up to the scalar involution, $\langle \theta x, \theta^{t} y\rangle = \varsigma(\langle x, y\rangle)$. When the second space is the dual and the pairing is the evaluation, the transposed involution is the transpose of the earlier articles, and the fixed and negated parts are the annihilators of the negated and fixed parts. A form on $E$ is compatible with $\theta$ exactly when the operator it induces between $E$ and $F$ intertwines $\theta$ with $\theta^{t}$, so the compatibility of a form is a statement about the transposed involution and is read off from it.
+and the pairing is then invariant up to the scalar involution, $\langle \mathrm{J} x, \mathrm{J}^{t} y\rangle = \varsigma(\langle x, y\rangle)$. When the second space is the dual and the pairing is the evaluation, the transposed involution is the transpose of the earlier articles, and the fixed and negated parts are the annihilators of the negated and fixed parts. A form on $E$ is compatible with $\mathrm{J}$ exactly when the operator it induces between $E$ and $F$ intertwines $\mathrm{J}$ with $\mathrm{J}^{t}$, so the compatibility of a form is a statement about the transposed involution and is read off from it.
 
 This article develops the transposed involution of a dual pairing and the compatible forms. The dual pairs, the polar calculus, the weak topologies and the reflexivity are *Duality Theory*; the transposed involution on the dual is *Locally Convex Spaces with an Involution*; the topological involution itself is *Involutive Topological Linear Spaces*; the non-degenerate forms, their polarisation and their Hermitian property belong to the form theory of Part III and are named where they occur, not developed. The formulas of the sesquilinear case are those of *Involutive Linear Spaces* in Part I, transported to a pairing.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$ (the identity or the complex conjugation), $(E, F)$ is a dual pair over $\mathbb{K}$ with pairing $\langle\cdot, \cdot\rangle$, and $\theta$ is a $\varsigma$-semilinear involution of $E$ with $\theta^{2} = \mathrm{id}$; the linear case is $\varsigma = \mathrm{id}$ and is written $T$. The fixed and negated subspaces are $E^{\theta}$ and $E^{-}$.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$ (the identity or the complex conjugation), $(E, F)$ is a dual pair over $\mathbb{K}$ with pairing $\langle\cdot, \cdot\rangle$, and $\mathrm{J}$ is a $\varsigma$-semilinear involution of $E$ with $\mathrm{J}^{2} = \mathrm{id}$; the linear case is $\varsigma = \mathrm{id}$ and is written $T$. The fixed and negated subspaces are $E^{\mathrm{J}}$ and $E^{-}$.
 
 ## The Transposed Involution
 
-**Theorem (existence and uniqueness).** Let $\theta$ be a $\varsigma$-semilinear involution of $E$. Then there is a unique $\varsigma$-semilinear involution $\theta^{t}$ of $F$ with
+**Theorem (existence and uniqueness).** Let $\mathrm{J}$ be a $\varsigma$-semilinear involution of $E$. Then there is a unique $\varsigma$-semilinear involution $\mathrm{J}^{t}$ of $F$ with
 
 $$
-\boxed{\;\langle \theta x, y\rangle = \varsigma\bigl(\langle x, \theta^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F)\;} ,
+\boxed{\;\langle \mathrm{J} x, y\rangle = \varsigma\bigl(\langle x, \mathrm{J}^{t} y\rangle\bigr) \qquad (x \in E, \ y \in F)\;} ,
 $$
 
-and $(\theta^{t})^{2} = \mathrm{id}$. It is called the **transposed involution**, and it is linear exactly when $\theta$ is linear.
+and $(\mathrm{J}^{t})^{2} = \mathrm{id}$. It is called the **transposed involution**, and it is linear exactly when $\mathrm{J}$ is linear.
 
-**Proof.** For fixed $y \in F$ the map $x \mapsto \varsigma(\langle \theta x, y\rangle)$ is linear (the composition of the $\varsigma$-semilinear $\theta$ with the linear functional $\langle\cdot, y\rangle$ and the involution $\varsigma$), so by the non-degeneracy of the pairing it is $\langle x, y^{t}\rangle$ for a unique $y^{t} \in F$; set $\theta^{t}y = y^{t}$. Linearity of $y \mapsto \theta^{t}y$ is the bilinearity of the pairing, and semilinearity follows from $\varsigma^{2} = \mathrm{id}$. Applying the defining relation twice, $\langle\theta^{2}x, y\rangle = \varsigma(\langle\theta x, \theta^{t}y\rangle) = \varsigma^{2}(\langle x, (\theta^{t})^{2}y\rangle) = \langle x, (\theta^{t})^{2}y\rangle$, and $\theta^{2} = \mathrm{id}$ with non-degeneracy gives $(\theta^{t})^{2} = \mathrm{id}$.
+**Proof.** For fixed $y \in F$ the map $x \mapsto \varsigma(\langle \mathrm{J} x, y\rangle)$ is linear (the composition of the $\varsigma$-semilinear $\mathrm{J}$ with the linear functional $\langle\cdot, y\rangle$ and the involution $\varsigma$), so by the non-degeneracy of the pairing it is $\langle x, y^{t}\rangle$ for a unique $y^{t} \in F$; set $\mathrm{J}^{t}y = y^{t}$. Linearity of $y \mapsto \mathrm{J}^{t}y$ is the bilinearity of the pairing, and semilinearity follows from $\varsigma^{2} = \mathrm{id}$. Applying the defining relation twice, $\langle\mathrm{J}^{2}x, y\rangle = \varsigma(\langle\mathrm{J} x, \mathrm{J}^{t}y\rangle) = \varsigma^{2}(\langle x, (\mathrm{J}^{t})^{2}y\rangle) = \langle x, (\mathrm{J}^{t})^{2}y\rangle$, and $\mathrm{J}^{2} = \mathrm{id}$ with non-degeneracy gives $(\mathrm{J}^{t})^{2} = \mathrm{id}$.
 
 **Proposition (invariance of the pairing up to $\varsigma$).** For all $x \in E$ and $y \in F$,
 
 $$
-\langle \theta x, \theta^{t} y\rangle = \varsigma\bigl(\langle x, y\rangle\bigr) ,
+\langle \mathrm{J} x, \mathrm{J}^{t} y\rangle = \varsigma\bigl(\langle x, y\rangle\bigr) ,
 $$
 
-so the pairing is invariant when $\theta$ is linear and conjugate-invariant in the antilinear case; the same relation with the roles exchanged holds for the transposed involution of $F$.
+so the pairing is invariant when $\mathrm{J}$ is linear and conjugate-invariant in the antilinear case; the same relation with the roles exchanged holds for the transposed involution of $F$.
 
-**Proof.** Apply the defining relation with $y$ replaced by $\theta^{t}y$: $\langle\theta x, \theta^{t}y\rangle = \varsigma(\langle x, \theta^{t}\theta^{t}y\rangle) = \varsigma(\langle x, y\rangle)$.
+**Proof.** Apply the defining relation with $y$ replaced by $\mathrm{J}^{t}y$: $\langle\mathrm{J} x, \mathrm{J}^{t}y\rangle = \varsigma(\langle x, \mathrm{J}^{t}\mathrm{J}^{t}y\rangle) = \varsigma(\langle x, y\rangle)$.
 
-**Proposition (annihilators).** The fixed and negated subspaces of $\theta^{t}$ are the annihilators of the negated and fixed subspaces of $\theta$,
+**Proposition (annihilators).** The fixed and negated subspaces of $\mathrm{J}^{t}$ are the annihilators of the negated and fixed subspaces of $\mathrm{J}$,
 
 $$
-\boxed{\;F^{\theta^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\theta})^{\circ}\;} ,
+\boxed{\;F^{\mathrm{J}^{t}} = (E^{-})^{\circ}, \qquad F^{-} = (E^{\mathrm{J}})^{\circ}\;} ,
 $$
 
 and the bipolar theorem of *Duality Theory* recovers the summands; in particular the transposed involution is injective on $F$ exactly when the summands of $E$ are the whole space.
 
-**Proof.** $y$ is fixed under $\theta^{t}$ exactly when $\langle\theta x, y\rangle = \langle x, y\rangle$ for all $x$, which on $E^{-}$ reads $\langle -x, y\rangle = \langle x, y\rangle$ and forces $\langle x, y\rangle = 0$, and on $E^{\theta}$ is automatic; hence $F^{\theta^{t}}$ is the set of $y$ annihilating $E^{-}$. The rest is the annihilator calculus of *Duality Theory*.
+**Proof.** $y$ is fixed under $\mathrm{J}^{t}$ exactly when $\langle\mathrm{J} x, y\rangle = \langle x, y\rangle$ for all $x$, which on $E^{-}$ reads $\langle -x, y\rangle = \langle x, y\rangle$ and forces $\langle x, y\rangle = 0$, and on $E^{\mathrm{J}}$ is automatic; hence $F^{\mathrm{J}^{t}}$ is the set of $y$ annihilating $E^{-}$. The rest is the annihilator calculus of *Duality Theory*.
 
 ## Compatible Forms
 
-**Definition.** A bilinear form $B : E \times E \to \mathbb{K}$ is **$\theta$-compatible** (or **$\theta$-invariant**) when
+**Definition.** A bilinear form $B : E \times E \to \mathbb{K}$ is **$\mathrm{J}$-compatible** (or **$\mathrm{J}$-invariant**) when
 
 $$
-B(\theta x, \theta y) = B(x, y) \qquad (x, y \in E).
+B(\mathrm{J} x, \mathrm{J} y) = B(x, y) \qquad (x, y \in E).
 $$
 
 When $B$ is non-degenerate it induces the operator $\Phi : E \to F$ by
@@ -63,7 +63,7 @@ $$
 
 and compatibility is the intertwining of the two involutions.
 
-**Theorem (compatibility is intertwining, linear case).** Let $\theta = T$ be linear and let $B$ be a non-degenerate bilinear form on $E$ with induced isomorphism $\Phi : E \to F$, $B(x,y) = \langle x, \Phi y\rangle$. Then
+**Theorem (compatibility is intertwining, linear case).** Let $\mathrm{J} = T$ be linear and let $B$ be a non-degenerate bilinear form on $E$ with induced isomorphism $\Phi : E \to F$, $B(x,y) = \langle x, \Phi y\rangle$. Then
 
 $$
 \boxed{\;B(Tx, Ty) = B(x, y) \ \text{for all } x, y \iff \Phi\,T = T^{t}\,\Phi\;} ,
@@ -73,21 +73,21 @@ so a bilinear form is $T$-compatible exactly when its induced operator intertwin
 
 **Proof.** $B(Tx, Ty) = \langle Tx, \Phi Ty\rangle = \langle x, T^{t}\Phi Ty\rangle$ by the defining relation of the transposed involution, and $B(x,y) = \langle x, \Phi y\rangle$; non-degeneracy of the pairing gives $T^{t}\Phi T = \Phi$, which, multiplied on the right by $T$ and using $T^{2} = \mathrm{id}$, is $\Phi T = T^{t}\Phi$.
 
-**Remark (the antilinear case and Hermitian forms).** If $\theta$ is antilinear then $\theta^{t}$ is antilinear, and a bilinear form cannot be expressed by the intertwining above, because the relation would equate a linear and a conjugate-linear functional in each slot. The correct object in that case is a **sesquilinear** form $h$ on $E$, linear in the first argument and $\varsigma$-semilinear in the second, for which compatibility $h(\theta x, \theta y) = h(x, y)$ is equivalent to the induced semilinear map intertwining $\theta$ with $\theta^{t}$ up to the scalar involution. The sesquilinear and Hermitian forms are the subject of Part III and are named here, not developed.
+**Remark (the antilinear case and Hermitian forms).** If $\mathrm{J}$ is antilinear then $\mathrm{J}^{t}$ is antilinear, and a bilinear form cannot be expressed by the intertwining above, because the relation would equate a linear and a conjugate-linear functional in each slot. The correct object in that case is a **sesquilinear** form $h$ on $E$, linear in the first argument and $\varsigma$-semilinear in the second, for which compatibility $h(\mathrm{J} x, \mathrm{J} y) = h(x, y)$ is equivalent to the induced semilinear map intertwining $\mathrm{J}$ with $\mathrm{J}^{t}$ up to the scalar involution. The sesquilinear and Hermitian forms are the subject of Part III and are named here, not developed.
 
 ## The Pairing of an Involutive Space with its Dual
 
-**Proposition (the evaluation pairing).** For $F = E'$ with the evaluation pairing $\langle x, \varphi\rangle = \varphi(x)$, the transposed involution is the transpose $\theta'(\varphi) = \varphi \circ \theta$ of *Locally Convex Spaces with an Involution*, of the same kind as $\theta$; it is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\theta}$.
+**Proposition (the evaluation pairing).** For $F = E'$ with the evaluation pairing $\langle x, \varphi\rangle = \varphi(x)$, the transposed involution is the transpose $\mathrm{J}'(\varphi) = \varphi \circ \mathrm{J}$ of *Locally Convex Spaces with an Involution*, of the same kind as $\mathrm{J}$; it is continuous for the weak-star, weak and strong topologies, and its fixed and negated parts are the annihilators of $E^{-}$ and $E^{\mathrm{J}}$.
 
-**Proof.** The defining relation $\langle\theta x, \varphi\rangle = \varsigma(\langle x, \theta'\varphi\rangle)$ is $(\theta'\varphi)(\theta x) = \varsigma(\varphi(x))$, which is the transpose; continuity and the annihilator calculus are *Locally Convex Spaces with an Involution*.
+**Proof.** The defining relation $\langle\mathrm{J} x, \varphi\rangle = \varsigma(\langle x, \mathrm{J}'\varphi\rangle)$ is $(\mathrm{J}'\varphi)(\mathrm{J} x) = \varsigma(\varphi(x))$, which is the transpose; continuity and the annihilator calculus are *Locally Convex Spaces with an Involution*.
 
-**Proposition (involutive reflexivity).** If $E$ is reflexive then the transposed involution of $\theta^{t}$ on $E'' = E$ is $\theta$; the formation $(\theta, \theta^{t})$ is symmetric and the pair $(E, F)$ with the two involutions is a dual pair of involutive spaces, with the canonical identification carrying one involution to the other.
+**Proposition (involutive reflexivity).** If $E$ is reflexive then the transposed involution of $\mathrm{J}^{t}$ on $E'' = E$ is $\mathrm{J}$; the formation $(\mathrm{J}, \mathrm{J}^{t})$ is symmetric and the pair $(E, F)$ with the two involutions is a dual pair of involutive spaces, with the canonical identification carrying one involution to the other.
 
-**Proof.** The double transpose $(\theta^{t})^{t}$ acts on $E'' = E$ by the naturality of the transpose, and equals $\theta$ because $((\theta^{t})^{t}\varphi)(x) = \varphi(\theta x)$ under the identification $E'' = E$; the symmetry is the identity $(\theta^{t})^{t} = \theta$.
+**Proof.** The double transpose $(\mathrm{J}^{t})^{t}$ acts on $E'' = E$ by the naturality of the transpose, and equals $\mathrm{J}$ because $((\mathrm{J}^{t})^{t}\varphi)(x) = \varphi(\mathrm{J} x)$ under the identification $E'' = E$; the symmetry is the identity $(\mathrm{J}^{t})^{t} = \mathrm{J}$.
 
 ## Examples
 
-**Example (the standard pairing over $\mathbb{C}$).** On $E = F = \mathbb{C}^{n}$ with the bilinear pairing $\langle z, w\rangle = \sum_i z_iw_i$ and the componentwise conjugation $\theta(z) = \bar z$, the transposed involution is again the conjugation, $\theta^{t} = \theta$, and the pairing satisfies $\langle\theta z, \theta w\rangle = \overline{\langle z, w\rangle}$; the compatible forms are the real-bilinear forms whose induced operator commutes with the conjugation.
+**Example (the standard pairing over $\mathbb{C}$).** On $E = F = \mathbb{C}^{n}$ with the bilinear pairing $\langle z, w\rangle = \sum_i z_iw_i$ and the componentwise conjugation $\mathrm{J}(z) = \bar z$, the transposed involution is again the conjugation, $\mathrm{J}^{t} = \mathrm{J}$, and the pairing satisfies $\langle\mathrm{J} z, \mathrm{J} w\rangle = \overline{\langle z, w\rangle}$; the compatible forms are the real-bilinear forms whose induced operator commutes with the conjugation.
 
 **Example (the $\ell^{n}$-$\ell^{m}$ pairing).** On $E = \ell^{n}$ and $F = \ell^{m}$ with $1/n + 1/m = 1$ and the standard pairing, the transposed involution of the coordinatewise conjugation is the coordinatewise conjugation; the shift $R$ on $E$ has transpose $L$ on $F$, and the conjugation intertwines them, the pair being an involutive dual pair.
 
@@ -95,7 +95,7 @@ so a bilinear form is $T$-compatible exactly when its induced operator intertwin
 
 ## Summary
 
-For a dual pair $\langle E, F\rangle$ and a $\varsigma$-semilinear involution $\theta$ of $E$ there is a unique $\varsigma$-semilinear involution $\theta^{t}$ of $F$ with $\langle\theta x, y\rangle = \varsigma(\langle x, \theta^{t} y\rangle)$, the transposed involution, of the same kind as $\theta$; the pairing satisfies $\langle\theta x, \theta^{t} y\rangle = \varsigma(\langle x, y\rangle)$, so it is invariant in the linear case and conjugate-invariant in the antilinear one. The fixed and negated parts of $\theta^{t}$ are the annihilators of the negated and fixed parts of $\theta$, and the bipolar theorem recovers the summands. A non-degenerate bilinear form is $\theta$-compatible exactly when the operator it induces between $E$ and $F$ intertwines $\theta$ with $\theta^{t}$, so compatibility of a form is a statement about the transposed involution; in the Hermitian case the intertwiner is of Hermitian type and the fixed subspace is isotropic in the antilinear case. When $F$ is the dual with the evaluation pairing the transposed involution is the transpose, continuous for the weak-star, weak and strong topologies, and in the reflexive case the operation is symmetric, $(\theta^{t})^{t} = \theta$. The standard pairing of $\mathbb{C}^{n}$ and the $\ell^{n}$-$\ell^{m}$ pairing are the models.
+For a dual pair $\langle E, F\rangle$ and a $\varsigma$-semilinear involution $\mathrm{J}$ of $E$ there is a unique $\varsigma$-semilinear involution $\mathrm{J}^{t}$ of $F$ with $\langle\mathrm{J} x, y\rangle = \varsigma(\langle x, \mathrm{J}^{t} y\rangle)$, the transposed involution, of the same kind as $\mathrm{J}$; the pairing satisfies $\langle\mathrm{J} x, \mathrm{J}^{t} y\rangle = \varsigma(\langle x, y\rangle)$, so it is invariant in the linear case and conjugate-invariant in the antilinear one. The fixed and negated parts of $\mathrm{J}^{t}$ are the annihilators of the negated and fixed parts of $\mathrm{J}$, and the bipolar theorem recovers the summands. A non-degenerate bilinear form is $\mathrm{J}$-compatible exactly when the operator it induces between $E$ and $F$ intertwines $\mathrm{J}$ with $\mathrm{J}^{t}$, so compatibility of a form is a statement about the transposed involution; in the Hermitian case the intertwiner is of Hermitian type and the fixed subspace is isotropic in the antilinear case. When $F$ is the dual with the evaluation pairing the transposed involution is the transpose, continuous for the weak-star, weak and strong topologies, and in the reflexive case the operation is symmetric, $(\mathrm{J}^{t})^{t} = \mathrm{J}$. The standard pairing of $\mathbb{C}^{n}$ and the $\ell^{n}$-$\ell^{m}$ pairing are the models.
 
 ## Summary of Notation
 
@@ -103,14 +103,14 @@ For a dual pair $\langle E, F\rangle$ and a $\varsigma$-semilinear involution $\
 |---|---|
 | $\langle E, F\rangle$ | Dual pair over $\mathbb{K}$ |
 | $\varsigma$ | Involution of the scalars |
-| $\theta$, $T$ | $\varsigma$-semilinear involution; the linear case |
-| $\theta^{t}$ | Transposed involution of $F$ |
-| $\langle\theta x, \theta^{t} y\rangle = \varsigma\langle x, y\rangle$ | Invariance of the pairing |
-| $E^{\theta}$, $E^{-}$ | Fixed and negated parts |
-| $(E^{-})^{\circ}$, $(E^{\theta})^{\circ}$ | Annihilators, the summands of $F$ |
+| $\mathrm{J}$, $T$ | $\varsigma$-semilinear involution; the linear case |
+| $\mathrm{J}^{t}$ | Transposed involution of $F$ |
+| $\langle\mathrm{J} x, \mathrm{J}^{t} y\rangle = \varsigma\langle x, y\rangle$ | Invariance of the pairing |
+| $E^{\mathrm{J}}$, $E^{-}$ | Fixed and negated parts |
+| $(E^{-})^{\circ}$, $(E^{\mathrm{J}})^{\circ}$ | Annihilators, the summands of $F$ |
 | $B$, $\Phi$ | Compatible form and its induced operator |
 | $\Phi T = T^{t}\Phi$ | Intertwining, compatibility of a bilinear form (linear case) |
-| $(\theta^{t})^{t} = \theta$ | Symmetry in the reflexive case |
+| $(\mathrm{J}^{t})^{t} = \mathrm{J}$ | Symmetry in the reflexive case |
 
 ## Further Reading
 

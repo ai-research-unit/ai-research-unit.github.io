@@ -19,7 +19,7 @@ $$
 The word **N-degenerate** refers to $\langle\tilde Q\rangle_{\natural}=0$; the word **spectrally degenerate** to $B^{2}=0$. The sandwich is the Hermitian congruence
 
 $$
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$
 
 On this sector the sandwich has rank one and is square-zero. It is the maximal collapse of the sandwich: one Jordan block of size two at eigenvalue zero, and two further fixed zero directions. The polar pair of *The Polar Decomposition of an N-Degenerate Biquaternion* survives,
@@ -39,10 +39,10 @@ $$
 with $\tilde Q_0$ a **nilpotent** partial isometry. The main result is the scalar collapse
 
 $$
-\boxed{\;\Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0}\;}
+\boxed{\;\mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0}\;}
 $$
 
-with $\Theta_{\tilde Q_0}$ a nilpotent partial isometry. The non-zero singular value is $4a^{2}=(2a)^{2}$; the only eigenvalue is zero. The sandwich kills the whole algebra in two steps.
+with $\mathrm{Sd}_{\tilde Q_0}$ a nilpotent partial isometry. The non-zero singular value is $4a^{2}=(2a)^{2}$; the only eigenvalue is zero. The sandwich kills the whole algebra in two steps.
 
 The article is organized as follows. §*The Polar Pair* recalls the canonical Hermitian pair and the rank-one singular value decomposition. §*The Sandwich* computes the square, the rank, the spectrum, the image, the kernel and the explicit Jordan chain. §*The Polar Decomposition of the Sandwich* proves the scalar collapse and explains the phase cancellation. §*The Two Slots* gives the Peirce and singular-vector pictures. §*The Exponential* computes the unipotent flow. §*Worked Example* treats the standard nilpotent.
 
@@ -147,7 +147,7 @@ $$
 The two slots are orthogonal. The overlap $v^{\dagger}u$ vanishes; this is the matrix form of the spectral degeneration. The sandwich is computed from the same decomposition:
 
 $$
-\mathsf M_2\bigl(\Theta_{\tilde Q}(\tilde X)\bigr)
+\mathsf M_2\bigl(\mathrm{Sd}_{\tilde Q}(\tilde X)\bigr)
 =(2a)^{2}u v^{\dagger}\mathsf M_2(\tilde X)v u^{\dagger}
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$
@@ -160,57 +160,57 @@ Because $v^{\dagger}u=0$, applying the operator twice gives zero. The single cha
 
 **Proposition.** Let $\tilde Q,\tilde Q'\in\mathbb{B}$. Then:
 
-**(a)** $\Theta_{\tilde Q}$ is $\mathbb{C}$-linear;
+**(a)** $\mathrm{Sd}_{\tilde Q}$ is $\mathbb{C}$-linear;
 
-**(b)** $\Theta_{\tilde Q\tilde Q'}=\Theta_{\tilde Q}\circ\Theta_{\tilde Q'}$;
+**(b)** $\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}$;
 
-**(c)** $\Theta_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\Theta_{\tilde Q^{-1}}$;
+**(c)** $\mathrm{Sd}_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$;
 
-**(d)** $\Theta_{\tilde Q}$ preserves the real forms $\mathbb{M}_+$ and $\mathbb{M}_-$;
+**(d)** $\mathrm{Sd}_{\tilde Q}$ preserves the real forms $\mathbb{M}_+$ and $\mathbb{M}_-$;
 
-**(e)** the adjoint is $\Theta_{\tilde Q}^{*}=\Theta_{\tilde Q^{*}}$;
+**(e)** the adjoint is $\mathrm{Sd}_{\tilde Q}^{*}=\mathrm{Sd}_{\tilde Q^{*}}$;
 
 **(f)** the norm scales as
 
 $$
-\bigl\langle\Theta_{\tilde Q}(\tilde X)\bigr\rangle_{\natural}
+\bigl\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\bigr\rangle_{\natural}
 =\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}.
 $$
 
-On $\Sigma_{00}$ the element is a zero divisor, so $\Theta_{\tilde Q}$ is not invertible. The properties are those of *Operators of the Polar Word: The Common Framework*; the sector changes the values.
+On $\Sigma_{00}$ the element is a zero divisor, so $\mathrm{Sd}_{\tilde Q}$ is not invertible. The properties are those of *Operators of the Polar Word: The Common Framework*; the sector changes the values.
 
 ### The square, the rank and the spectrum
 
 **Theorem.** On $\Sigma_{00}$:
 
-**(a)** $\Theta_{\tilde Q}^{2}=0$;
+**(a)** $\mathrm{Sd}_{\tilde Q}^{2}=0$;
 
-**(b)** $\Theta_{\tilde Q}$ has complex rank $1$;
+**(b)** $\mathrm{Sd}_{\tilde Q}$ has complex rank $1$;
 
 **(c)** its only eigenvalue is $0$, with algebraic multiplicity $4$ and geometric multiplicity $3$;
 
 **(d)** its Jordan form is $J_2(0)\oplus0\oplus0$, with minimal polynomial $X^{2}$;
 
-**(e)** $\operatorname{tr}\Theta_{\tilde Q}=0$ and $\det\Theta_{\tilde Q}=0$;
+**(e)** $\operatorname{tr}\mathrm{Sd}_{\tilde Q}=0$ and $\det\mathrm{Sd}_{\tilde Q}=0$;
 
-**(f)** for every $\tilde X$, $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=0$; the image lies on the null cone.
+**(f)** for every $\tilde X$, $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=0$; the image lies on the null cone.
 
 *Proof.* In the matrix model,
 
 $$
-\Theta_{\tilde Q}(\tilde X)
+\mathrm{Sd}_{\tilde Q}(\tilde X)
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$
 
-The image is contained in the line $\mathbb{C}u u^{\dagger}$, and it is non-zero because $\Theta_{\tilde Q}(e_t)=\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+$. Hence the rank is one. Applying the formula twice,
+The image is contained in the line $\mathbb{C}u u^{\dagger}$, and it is non-zero because $\mathrm{Sd}_{\tilde Q}(e_t)=\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+$. Hence the rank is one. Applying the formula twice,
 
 $$
-\Theta_{\tilde Q}^{2}(\tilde X)
+\mathrm{Sd}_{\tilde Q}^{2}(\tilde X)
 =(4a^{2})^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)
 (v^{\dagger}u)(u^{\dagger}v)u u^{\dagger}=0,
 $$
 
-because $v^{\dagger}u=0$. The only eigenvalue of a square-zero operator is zero; the algebraic multiplicity is four, the geometric multiplicity is the dimension of the kernel, three; the Jordan form is one block of size two and two blocks of size one. The trace is zero and the determinant is zero. The norm is $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.
+because $v^{\dagger}u=0$. The only eigenvalue of a square-zero operator is zero; the algebraic multiplicity is four, the geometric multiplicity is the dimension of the kernel, three; the Jordan form is one block of size two and two blocks of size one. The trace is zero and the determinant is zero. The norm is $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.
 The image is a null line because $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.
 
 ### The image and the kernel
@@ -218,7 +218,7 @@ The image is a null line because $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\n
 The image is the null line
 
 $$
-\operatorname{im}\Theta_{\tilde Q}
+\operatorname{im}\mathrm{Sd}_{\tilde Q}
 =\mathbb{C}\tilde\Pi_+,
 \qquad
 \tilde\Pi_+=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}.
@@ -227,10 +227,10 @@ $$
 The kernel is the hyperplane
 
 $$
-\ker\Theta_{\tilde Q}
+\ker\mathrm{Sd}_{\tilde Q}
 =\bigl\{\tilde X:\tilde\nu\tilde X\tilde\nu^{*}=0\bigr\},
 \qquad
-\dim_{\mathbb{C}}\ker\Theta_{\tilde Q}=3.
+\dim_{\mathbb{C}}\ker\mathrm{Sd}_{\tilde Q}=3.
 $$
 
 In the matrix model it is $\{X:v^{\dagger}Xv=0\}$. The kernel contains the right annihilator $A(\tilde\nu)=\ker L_{\tilde\nu}$ and the left annihilator of $\tilde\nu^{*}$, because $\tilde\nu\tilde X=0$ or $\tilde X\tilde\nu^{*}=0$ implies $\tilde\nu\tilde X\tilde\nu^{*}=0$. The image is contained in the kernel, since the operator is square-zero; the kernel is strictly larger, because the rank is one.
@@ -241,12 +241,12 @@ The canonical Hermitian pair gives a very explicit chain. Since $\tilde\nu\tilde
 
 $$
 \boxed{\;
-\Theta_{\tilde Q}(\tilde\Pi_-)
+\mathrm{Sd}_{\tilde Q}(\tilde\Pi_-)
 =\tilde\nu\tilde\Pi_-\tilde\nu^{*}
 =\tilde\nu\tilde\nu^{*}
 =4a^{2}\tilde\Pi_+,
 \qquad
-\Theta_{\tilde Q}(\tilde\Pi_+)=0 .
+\mathrm{Sd}_{\tilde Q}(\tilde\Pi_+)=0 .
 \;}
 $$
 
@@ -259,9 +259,9 @@ $$
 is a chain of length two. The other two basis vectors are killed:
 
 $$
-\Theta_{\tilde Q}(\tilde\nu)=0,
+\mathrm{Sd}_{\tilde Q}(\tilde\nu)=0,
 \qquad
-\Theta_{\tilde Q}(\vec X)=0,
+\mathrm{Sd}_{\tilde Q}(\vec X)=0,
 $$
 
 where $\vec X$ is the corner vector spanning $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$. In the basis
@@ -274,7 +274,7 @@ the sandwich is therefore the single nilpotent block
 
 $$
 \boxed{\;
-\mathsf M\bigl(\Theta_{\tilde Q}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)=
 \begin{pmatrix}
 0&0&0&4a^{2}\\
 0&0&0&0\\
@@ -293,15 +293,15 @@ The chain crosses the Peirce diagram from the $(--)$ corner to the $(+,+)$ corne
 The only eigenvalue is zero. The non-zero singular value is $4a^{2}$: indeed
 
 $$
-\Theta_{\tilde Q}\Theta_{\tilde Q}^{*}
-=\Theta_{\tilde Q\tilde Q^{*}}
-=\Theta_{4a^{2}\tilde\Pi_+}
-=(4a^{2})^{2}\Theta_{\tilde\Pi_+},
+\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}
+=\mathrm{Sd}_{\tilde Q\tilde Q^{*}}
+=\mathrm{Sd}_{4a^{2}\tilde\Pi_+}
+=(4a^{2})^{2}\mathrm{Sd}_{\tilde\Pi_+},
 $$
 
-and $\Theta_{\tilde\Pi_+}$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The eigenvalue-to-singular-value ratio is zero. This is the maximal defect: the operator has a non-zero singular value but no non-zero eigenvalue, and its image is a null line.
+and $\mathrm{Sd}_{\tilde\Pi_+}$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The eigenvalue-to-singular-value ratio is zero. This is the maximal defect: the operator has a non-zero singular value but no non-zero eigenvalue, and its image is a null line.
 
-The operator $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the nilpotent partial isometry $\Theta_{\tilde Q_0}$.
+The operator $\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the nilpotent partial isometry $\mathrm{Sd}_{\tilde Q_0}$.
 
 ## The Polar Decomposition of the Sandwich
 
@@ -310,32 +310,32 @@ The operator $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$ is not a partial isom
 By the polar pair theorem, $\tilde Q=2a\tilde Q_0$ with $\tilde Q_0$ a nilpotent partial isometry. The multiplicativity of $\Theta$ gives
 
 $$
-\Theta_{\tilde Q}
-=\Theta_{2a\tilde Q_0}
-=4a^{2}\Theta_{\tilde Q_0}.
+\mathrm{Sd}_{\tilde Q}
+=\mathrm{Sd}_{2a\tilde Q_0}
+=4a^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$
 
 This is the scalar collapse. The canonical left polar factor is
 
 $$
-\lvert\Theta_{\tilde Q}\rvert
-=\bigl(\Theta_{\tilde Q}\Theta_{\tilde Q}^{*}\bigr)^{1/2}
-=\Theta_{\tilde Q_H}
-=4a^{2}\Theta_{\tilde\Pi_+},
+\lvert\mathrm{Sd}_{\tilde Q}\rvert
+=\bigl(\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}\bigr)^{1/2}
+=\mathrm{Sd}_{\tilde Q_H}
+=4a^{2}\mathrm{Sd}_{\tilde\Pi_+},
 $$
 
-which is positive semidefinite of rank one. On the image of $\Theta_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $\tilde\Pi_+\tilde Q_0=\tilde Q_0$ and therefore $\Theta_{\tilde\Pi_+}\Theta_{\tilde Q_0}=\Theta_{\tilde Q_0}$. Hence
+which is positive semidefinite of rank one. On the image of $\mathrm{Sd}_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $\tilde\Pi_+\tilde Q_0=\tilde Q_0$ and therefore $\mathrm{Sd}_{\tilde\Pi_+}\mathrm{Sd}_{\tilde Q_0}=\mathrm{Sd}_{\tilde Q_0}$. Hence
 
 $$
 \boxed{\;
-\Theta_{\tilde Q}
-=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0}
-=4a^{2}\Theta_{\tilde Q_0},
+\mathrm{Sd}_{\tilde Q}
+=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0}
+=4a^{2}\mathrm{Sd}_{\tilde Q_0},
 \qquad
-\Theta_{\tilde Q_0}\Theta_{\tilde Q_0}^{*}\Theta_{\tilde Q_0}
-=\Theta_{\tilde Q_0},
+\mathrm{Sd}_{\tilde Q_0}\mathrm{Sd}_{\tilde Q_0}^{*}\mathrm{Sd}_{\tilde Q_0}
+=\mathrm{Sd}_{\tilde Q_0},
 \qquad
-\Theta_{\tilde Q_0}^{2}=0 .
+\mathrm{Sd}_{\tilde Q_0}^{2}=0 .
 \;}
 $$
 
@@ -356,25 +356,25 @@ one has $a=\lvert c_0\rvert$ and
 $$
 \tilde Q_0=e^{i\beta}\frac{\vec e_x+i\vec e_y}{2},
 \qquad
-\Theta_{\tilde Q_0}
-=\Theta_{(\vec e_x+i\vec e_y)/2}
-=\frac14\Theta_{\vec e_x+i\vec e_y},
+\mathrm{Sd}_{\tilde Q_0}
+=\mathrm{Sd}_{(\vec e_x+i\vec e_y)/2}
+=\frac14\mathrm{Sd}_{\vec e_x+i\vec e_y},
 $$
 
 independent of the phase. The sandwich is
 
 $$
-\Theta_{\tilde Q}
-=4\lvert c_0\rvert^{2}\Theta_{\tilde Q_0}
-=\lvert c_0\rvert^{2}\Theta_{\vec e_x+i\vec e_y}
-=\Theta_{\tilde\nu},
+\mathrm{Sd}_{\tilde Q}
+=4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}
+=\lvert c_0\rvert^{2}\mathrm{Sd}_{\vec e_x+i\vec e_y}
+=\mathrm{Sd}_{\tilde\nu},
 $$
 
 so the phase has cancelled. The one-sided operator keeps the phase; the sandwich sees only $\lvert c_0\rvert^{2}$ and the canonical pair. The sign $\tilde\nu\mapsto-\tilde\nu$ also cancels.
 
 ### The polar pair of the element and of the operator
 
-The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2a\tilde\Pi_+$ positive of rank one and $\tilde Q_0$ a nilpotent partial isometry. The operator pair is $(\Theta_{\tilde Q_H},\Theta_{\tilde Q_0})$, with $\Theta_{\tilde Q_H}=4a^{2}\Theta_{\tilde\Pi_+}$ positive of rank one and $\Theta_{\tilde Q_0}$ a nilpotent partial isometry. The element pair is the rank-one singular value decomposition of the nilpotent; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$.
+The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2a\tilde\Pi_+$ positive of rank one and $\tilde Q_0$ a nilpotent partial isometry. The operator pair is $(\mathrm{Sd}_{\tilde Q_H},\mathrm{Sd}_{\tilde Q_0})$, with $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_{\tilde\Pi_+}$ positive of rank one and $\mathrm{Sd}_{\tilde Q_0}$ a nilpotent partial isometry. The element pair is the rank-one singular value decomposition of the nilpotent; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$.
 
 The spectral pair of the element does not exist off the origin: the element has only the eigenvalue zero, and no non-trivial idempotent commutes with it. The Hermitian form supplies the canonical pair $(\tilde\Pi_+,\tilde\Pi_-)$, and the polar decomposition uses exactly that pair. This is the precise sense in which the polar pair survives while the spectral decomposition fails.
 
@@ -385,7 +385,7 @@ The spectral pair of the element does not exist off the origin: the element has 
 In the canonical basis $(\tilde\Pi_+,\tilde\nu,\vec X,\tilde\Pi_-)$ the sandwich is the single block of §*The Explicit Jordan Chain*:
 
 $$
-\mathsf M\bigl(\Theta_{\tilde Q}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)=
 \begin{pmatrix}
 0&0&0&4a^{2}\\
 0&0&0&0\\
@@ -403,7 +403,7 @@ In the matrix model the two slots are the singular vectors $u$ and $v$, and they
 $$
 v^{\dagger}u=0,
 \qquad
-\Theta_{\tilde Q}(\tilde X)
+\mathrm{Sd}_{\tilde Q}(\tilde X)
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$
 
@@ -413,11 +413,11 @@ This is the extreme case of the two-slot structure. On $\Sigma_{01}$ the slots h
 
 ## The Exponential
 
-**The operator exponential.** Since $\Theta_{\tilde Q}^{2}=0$,
+**The operator exponential.** Since $\mathrm{Sd}_{\tilde Q}^{2}=0$,
 
 $$
 \boxed{\;
-\exp\bigl(t\Theta_{\tilde Q}\bigr)=I+t\Theta_{\tilde Q}
+\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)=I+t\mathrm{Sd}_{\tilde Q}
 \;}
 $$
 
@@ -438,11 +438,11 @@ $$
 Hence the exponential is a unit with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$). The element flow moves one wall away: it removes the norm degeneration and preserves the spectral one. Its sandwich is
 
 $$
-\Theta_{\exp(t\tilde\nu)}
-=\exp\bigl(t\Theta_{\tilde Q}\bigr),
+\mathrm{Sd}_{\exp(t\tilde\nu)}
+=\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr),
 $$
 
-a unipotent Lorentz flow of Jordan type $2+1+1$. It fixes the kernel hyperplane and shears along the single chain. The generator $\Theta_{\tilde Q}$ is singular; the one-parameter group it generates is invertible.
+a unipotent Lorentz flow of Jordan type $2+1+1$. It fixes the kernel hyperplane and shears along the single chain. The generator $\mathrm{Sd}_{\tilde Q}$ is singular; the one-parameter group it generates is invertible.
 
 The one-sided exponential of the companion article is a unipotent shear of the operator space, not a Lorentz transformation. The sandwich exponential is a unipotent Lorentz flow. The difference is the same as in the regular sector, at the level of the slots: the one-sided operator reads one slot and the sandwich pairs two. The analogy stops there. In the regular sector the one-sided slot carries the half-angle $\theta/2$; here there is no angle to halve, and the one-sided exponential is unipotent.
 
@@ -484,7 +484,7 @@ $$
 In the standard basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the sandwich is
 
 $$
-\mathsf M\bigl(\Theta_{\tilde\nu}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde\nu}\bigr)=
 \begin{pmatrix}
 2&0&0&2i\\
 0&0&0&0\\
@@ -508,7 +508,7 @@ $$
 In the basis $(\tilde\Pi_+,\tilde\nu,\vec X,\tilde\Pi_-)$,
 
 $$
-\mathsf M\bigl(\Theta_{\tilde\nu}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde\nu}\bigr)=
 \begin{pmatrix}
 0&0&0&4\\
 0&0&0&0\\
@@ -520,7 +520,7 @@ $$
 the single chain being $\tilde\Pi_-\to4\tilde\Pi_+\to0$. The exponential is
 
 $$
-\exp\bigl(t\Theta_{\tilde\nu}\bigr)=I+t\Theta_{\tilde\nu}.
+\exp\bigl(t\mathrm{Sd}_{\tilde\nu}\bigr)=I+t\mathrm{Sd}_{\tilde\nu}.
 $$
 
 ### A complex scalar multiple
@@ -538,8 +538,8 @@ the element has $a=\lvert c_0\rvert$, and
 $$
 \tilde Q_0=e^{i\beta}\frac{\vec e_x+i\vec e_y}{2},
 \qquad
-\Theta_{\tilde\nu}
-=4\lvert c_0\rvert^{2}\Theta_{\tilde Q_0}.
+\mathrm{Sd}_{\tilde\nu}
+=4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$
 
 The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\lvert c_0\rvert$ and the canonical pair; the one-sided operator of the companion article keeps the phase.
@@ -554,8 +554,8 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 | parameter | $\tilde\nu=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert=a>0$, $\vec A\cdot\vec B=0$ |
 | canonical pair | $\tilde\Pi_\pm=(e_t\pm i\vec c)/2$, $\vec c=\vec A\times\vec B/a^{2}$ |
 | polar pair | $\tilde Q_H=2a\tilde\Pi_+$, $\tilde Q_0=\tilde\nu/(2a)$, $\tilde Q_0^{2}=0$ |
-| sandwich | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ |
-| square | $\Theta_{\tilde Q}^{2}=0$ |
+| sandwich | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ |
+| square | $\mathrm{Sd}_{\tilde Q}^{2}=0$ |
 | rank | $1$ |
 | spectrum | $\{0\}$, algebraic multiplicity $4$, geometric multiplicity $3$ |
 | Jordan form | $J_2(0)\oplus0\oplus0$ |
@@ -566,8 +566,8 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 | image | the null line $\mathbb{C}\tilde\Pi_+$ |
 | kernel | $\{\tilde X:\tilde\nu\tilde X\tilde\nu^{*}=0\}$, a hyperplane |
 | chain | $\tilde\Pi_-\mapsto4a^{2}\tilde\Pi_+\mapsto0$ |
-| scalar collapse | $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$ |
-| exponential | $\exp(t\Theta_{\tilde Q})=I+t\Theta_{\tilde Q}$ |
+| scalar collapse | $\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$ |
+| exponential | $\exp(t\mathrm{Sd}_{\tilde Q})=I+t\mathrm{Sd}_{\tilde Q}$ |
 | element flow | $\exp(t\tilde\nu)=e_t+t\tilde\nu$, a unit in $\Sigma_{10}$ for every $t$ (at $t=0$ it is $e_t$) |
 
 ### What the Sandwich Shows
@@ -575,7 +575,7 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 - The norm degeneration fixes the rank: the sandwich has rank one and its image is a null line.
 - The spectral degeneration fixes the Jordan type: the sandwich is square-zero, with one block of size two and two further fixed zero directions.
 - The image is contained in the kernel; the algebra is a non-trivial extension, and the two-step collapse is visible in the single chain $\tilde\Pi_-\to\tilde\Pi_+\to0$.
-- The polar pair collapses to $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$ with $\Theta_{\tilde Q_0}$ a nilpotent partial isometry; the positive factor acts as the scalar $4a^{2}$ on the image.
+- The polar pair collapses to $\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$ with $\mathrm{Sd}_{\tilde Q_0}$ a nilpotent partial isometry; the positive factor acts as the scalar $4a^{2}$ on the image.
 - The non-zero singular value is $4a^{2}=(2a)^{2}$, the square of the one-sided singular value; the only eigenvalue is zero.
 - The phase and the sign cancel. The sandwich sees only $\lvert c_0\rvert^{2}$ and the canonical Hermitian pair.
 - The two slots are orthogonal; the angle $\theta=\pi/2$ and the eigenvalue-to-singular-value ratio $\cos^{2}\theta=0$ are the quantitative form of the spectral wall.
@@ -589,7 +589,7 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 | $a=\lVert\vec A\rVert=\lVert\vec B\rVert$ | the half singular value |
 | $\vec c=\vec A\times\vec B/a^{2}$ | the unit spectral direction |
 | $\tilde\Pi_\pm=(e_t\pm i\vec c)/2$ | the canonical Hermitian idempotents |
-| $\Theta_{\tilde Q}$ | the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
+| $\mathrm{Sd}_{\tilde Q}$ | the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
 | $\tilde Q_H=2a\tilde\Pi_+$ | the Hermitian factor |
 | $\tilde Q_0=\tilde\nu/(2a)$ | the nilpotent partial-isometry factor |
 | $L_{\tilde\nu},R_{\tilde\nu}$ | the one-sided operators of the companion article |

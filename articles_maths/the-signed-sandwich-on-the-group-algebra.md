@@ -43,7 +43,7 @@ that is, it conjugates the left and the right convolutions into those of the ima
 
 **Example (the sign character).** Let $\varepsilon : G\to\{\pm1\}$ be a continuous homomorphism and put $\alpha_\varepsilon(f)(x) = \varepsilon(x)f(x)$. Then $\alpha_\varepsilon$ is a grade involution, isometric, $\|\alpha_\varepsilon\| = 1$, with $\mathcal{A}^\pm$ the functions supported on the two parts of the splitting of $G$ by the kernel of $\varepsilon$; it is the **grade involution of the grading by the sign character**, and it is the canonical one when $G$ has an open subgroup of index two.
 
-**Example (the group automorphism).** Let $\theta$ be a continuous involutive automorphism of a unimodular group $G$ and put $\alpha_\theta(f) = f\circ\theta^{-1}$. Then $\alpha_\theta(f*g) = \alpha_\theta(f)*\alpha_\theta(g)$, $\alpha_\theta^2 = \mathrm{id}$ and $\|\alpha_\theta\| = 1$; it is the **grade involution induced by $\theta$**, and on the point masses $\alpha_\theta(\delta_g) = \delta_{\theta(g)}$ when $G$ is discrete.
+**Example (the group automorphism).** Let $\mathrm{J}$ be a continuous involutive automorphism of a unimodular group $G$ and put $\alpha_\mathrm{J}(f) = f\circ\mathrm{J}^{-1}$. Then $\alpha_\mathrm{J}(f*g) = \alpha_\mathrm{J}(f)*\alpha_\mathrm{J}(g)$, $\alpha_\mathrm{J}^2 = \mathrm{id}$ and $\|\alpha_\mathrm{J}\| = 1$; it is the **grade involution induced by $\mathrm{J}$**, and on the point masses $\alpha_\mathrm{J}(\delta_g) = \delta_{\mathrm{J}(g)}$ when $G$ is discrete.
 
 **Remark (two sources of the twist).** Both examples are isometric, so for them $\|\alpha\| = 1$ and the norm bounds below lose the factor $\|\alpha\|$; the general definition is kept because an arbitrary continuous involutive automorphism of $\mathcal{A}$ need not be isometric. The involution on the elements, $f\mapsto f^*$, is a different map — an anti-automorphism of order two, the structure of the `- * Theory` group — and is not the map $\alpha$ used here.
 
@@ -147,13 +147,13 @@ with $c_t(f) = t*f*t^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_
 
 ## The Group Instance
 
-**Example (the discrete group and the group automorphism).** Let $G$ be discrete and $\alpha = \alpha_\theta$ induced by a continuous involutive automorphism $\theta$ of $G$; the group algebra $\ell^1(G)$ is unital and $\delta_h$ is a unit for every $h$. Then
+**Example (the discrete group and the group automorphism).** Let $G$ be discrete and $\alpha = \alpha_\mathrm{J}$ induced by a continuous involutive automorphism $\mathrm{J}$ of $G$; the group algebra $\ell^1(G)$ is unital and $\delta_h$ is a unit for every $h$. Then
 
 $$
-\rho_{\delta_h}(\delta_g) = \delta_h*\delta_{\theta(g)}*\delta_{h^{-1}} = \delta_{h\theta(g)h^{-1}} , \qquad \delta_h*\alpha(\delta_h) = \delta_{h\theta(h)} ,
+\rho_{\delta_h}(\delta_g) = \delta_h*\delta_{\mathrm{J}(g)}*\delta_{h^{-1}} = \delta_{h\mathrm{J}(g)h^{-1}} , \qquad \delta_h*\alpha(\delta_h) = \delta_{h\mathrm{J}(h)} ,
 $$
 
-so $\rho_{\delta_h}$ is the signed conjugation of *Reflections as Signed Two-Sided Operators on a Topological Group* read on the point masses, and it is a reflection exactly when $h\theta(h) \in Z(G)$; the group-algebra theory is the linear extension of the group theory, and on the generators it reproduces it exactly.
+so $\rho_{\delta_h}$ is the signed conjugation of *Reflections as Signed Two-Sided Operators on a Topological Group* read on the point masses, and it is a reflection exactly when $h\mathrm{J}(h) \in Z(G)$; the group-algebra theory is the linear extension of the group theory, and on the generators it reproduces it exactly.
 
 **Example (the sign character).** Let $\alpha = \alpha_\varepsilon$ for a sign character $\varepsilon$. Then $\mathcal{T}_{a,b}(f) = a*(\varepsilon f)*b$ and $\rho_{\delta_h}(\delta_g) = \varepsilon(g)\,\delta_{hgh^{-1}}$: the reflection is an inner conjugation composed with the sign, and $\delta_h*\alpha(\delta_h) = \varepsilon(h)\,\delta_{h^2}$, which is central exactly when $h^2 \in Z(G)$; the sign character is invisible on the elements of even $\varepsilon$ and flips those of odd $\varepsilon$.
 
@@ -178,7 +178,7 @@ On the group algebra $\mathcal{A} = L^1(G)$ with a continuous involutive automor
 | $c_t(f) = t*f*t^{-1}$, $Z(\mathcal{A})$ | Inner automorphism; centre |
 | $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u^2 = c_{u*\alpha(u)}$ | Reflection; square; involution criterion |
 | $u*\alpha(u)\in Z(\mathcal{A})$ | Reflector condition |
-| $\alpha_\varepsilon$, $\alpha_\theta$ | Sign-character and group-automorphism grade involutions |
+| $\alpha_\varepsilon$, $\alpha_\mathrm{J}$ | Sign-character and group-automorphism grade involutions |
 
 ## Further Reading
 

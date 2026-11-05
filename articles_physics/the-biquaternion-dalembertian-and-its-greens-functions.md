@@ -194,14 +194,14 @@ $$
 $$
 where the Jacobian is $|dg/dt'| = 2c^2|t'| = 2cR$ at either root. Applying the future step function selects the forward cone,
 $$
-\Theta(t')\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t' - \frac{R}{c}\right) ,
+\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t' - \frac{R}{c}\right) ,
 \qquad\text{hence}\qquad
 \boxed{\;
-G^{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t')\,\delta(\rho^2)\;}.
+G^{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)\;}.
 $$
-The Jacobian identity was checked by smearing $\Theta(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
+The Jacobian identity was checked by smearing $\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
 $$
-G_{\mathrm{adv}}(\tilde{R}) = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(-t')\,\delta(\rho^2) .
+G_{\mathrm{adv}}(\tilde{R}) = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(-t')\,\delta(\rho^2) .
 $$
 
 The retarded kernel inverts the operator. Applying $\Box = \partial^2/\partial Q_t^2 + \Delta$ to $\frac{u(t' - R/c)}{4\pi R}$ and using the two radial identities
@@ -454,7 +454,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \nabla^\pm + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta = -\Box$ |
 | $\psi = \frac{1}{4\pi x}\exp(\pm i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
-| $\Theta(t')$ | Step function selecting the future cone |
+| $\mathrm{H}^{\mathrm{hvs}}(t')$ | Step function selecting the future cone |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ (not used in $\Box$) |
 
 ## Further Reading

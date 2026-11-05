@@ -11,21 +11,21 @@ The article is the third of the `* Operator Theory` group of this category. It a
 
 ### Definition and first examples
 
-**Definition.** An **involution** of $E$ is an $R$-linear map $\theta : E \to E$ with
+**Definition.** An **involution** of $E$ is an $R$-linear map $\mathrm{J} : E \to E$ with
 
 $$
-\boxed{\;\theta^{2}=\mathrm{id}, \qquad \theta(fg)=\theta(g)\theta(f) \qquad (f,g \in E)\;},
+\boxed{\;\mathrm{J}^{2}=\mathrm{id}, \qquad \mathrm{J}(fg)=\mathrm{J}(g)\mathrm{J}(f) \qquad (f,g \in E)\;},
 $$
 
-that is, an $R$-linear anti-automorphism of order two. The pair $(E,\theta)$ is an involutive $R$-algebra.
+that is, an $R$-linear anti-automorphism of order two. The pair $(E,\mathrm{J})$ is an involutive $R$-algebra.
 
 **Proposition.** Each of the following is an involution of the appropriate ring.
 
-**(a)** The **identity** $\theta=\mathrm{id}$ on every commutative $E$; its fixed part is all of $E$.
+**(a)** The **identity** $\mathrm{J}=\mathrm{id}$ on every commutative $E$; its fixed part is all of $E$.
 
-**(b)** The **transpose** $\theta(X)=X^{\mathsf{T}}$ on $E=M_n(B)$ with the entrywise product, when $B$ is commutative; its fixed part is the symmetric matrices.
+**(b)** The **transpose** $\mathrm{J}(X)=X^{\mathsf{T}}$ on $E=M_n(B)$ with the entrywise product, when $B$ is commutative; its fixed part is the symmetric matrices.
 
-**(c)** The **adjoint from a pairing**, $\theta(f)=f^{*}$ on $E=\operatorname{End}_A(M)$, for $M$ with a non-degenerate reflexive $\sigma$-sesquilinear pairing, when $\sigma=\mathrm{id}$ so that the adjoint is $R$-linear (see the next section for the general case).
+**(c)** The **adjoint from a pairing**, $\mathrm{J}(f)=f^{*}$ on $E=\operatorname{End}_A(M)$, for $M$ with a non-degenerate reflexive $\sigma$-sesquilinear pairing, when $\sigma=\mathrm{id}$ so that the adjoint is $R$-linear (see the next section for the general case).
 
 *Proof.* Direct verification in each case; the transpose is an anti-automorphism over a commutative coefficient ring because $(XY)^{\mathsf{T}}=Y^{\mathsf{T}}X^{\mathsf{T}}$.
 
@@ -33,27 +33,27 @@ For the adjoint of a $\sigma$-sesquilinear pairing the map $f \mapsto f^{*}$ is 
 
 ### Conjugation and isomorphism
 
-**Definition.** Two involutions $\theta$ and $\theta'$ of $E$ are **isomorphic** when there is an $R$-algebra automorphism $\varphi$ of $E$ with
+**Definition.** Two involutions $\mathrm{J}$ and $\mathrm{J}'$ of $E$ are **isomorphic** when there is an $R$-algebra automorphism $\varphi$ of $E$ with
 
 $$
-\theta'=\varphi\,\theta\,\varphi^{-1}.
+\mathrm{J}'=\varphi\,\mathrm{J}\,\varphi^{-1}.
 $$
 
 The group $E^{\times}$ acts on the set of involutions by **inner conjugation**,
 
 $$
-(\operatorname{Ad}_u\theta)(f)=u\,\theta(f)\,u^{-1} \qquad (u \in E^{\times}),
+(\operatorname{Ad}_u\mathrm{J})(f)=u\,\mathrm{J}(f)\,u^{-1} \qquad (u \in E^{\times}),
 $$
 
 and the involutions in one orbit are inner-isomorphic.
 
-**Proposition.** The action of $E^{\times}$ on the set of involutions is an action of the group on a set; its orbits are the inner-conjugacy classes, and $\theta$ is isomorphic to $\theta'$ exactly when $\theta'$ is in the orbit of $\theta$ under the full automorphism group $\operatorname{Aut}_{R\text{-alg}}(E)$.
+**Proposition.** The action of $E^{\times}$ on the set of involutions is an action of the group on a set; its orbits are the inner-conjugacy classes, and $\mathrm{J}$ is isomorphic to $\mathrm{J}'$ exactly when $\mathrm{J}'$ is in the orbit of $\mathrm{J}$ under the full automorphism group $\operatorname{Aut}_{R\text{-alg}}(E)$.
 
 *Proof.* $\operatorname{Ad}_u\operatorname{Ad}_v=\operatorname{Ad}_{uv}$ and $\operatorname{Ad}_1=\mathrm{id}$; the characterisation of isomorphism is the definition.
 
-**Proposition.** Inner conjugation preserves the fixed part up to the conjugating automorphism: $\operatorname{Fix}(\operatorname{Ad}_u\theta)=u\operatorname{Fix}(\theta)u^{-1}$.
+**Proposition.** Inner conjugation preserves the fixed part up to the conjugating automorphism: $\operatorname{Fix}(\operatorname{Ad}_u\mathrm{J})=u\operatorname{Fix}(\mathrm{J})u^{-1}$.
 
-*Proof.* $f$ is fixed by $\operatorname{Ad}_u\theta$ exactly when $u\theta(f)u^{-1}=f$, that is $\theta(f)=u^{-1}fu$, which says $u^{-1}fu \in \operatorname{Fix}(\theta)$.
+*Proof.* $f$ is fixed by $\operatorname{Ad}_u\mathrm{J}$ exactly when $u\mathrm{J}(f)u^{-1}=f$, that is $\mathrm{J}(f)=u^{-1}fu$, which says $u^{-1}fu \in \operatorname{Fix}(\mathrm{J})$.
 
 So isomorphic involutions have fixed parts of the same size, which is the first invariant that separates them.
 
@@ -87,21 +87,21 @@ The identity involution of a commutative $E$ is not a pairing involution in gene
 
 ### The fixed part
 
-**Theorem.** Let $\theta$ be a pairing involution. Then
+**Theorem.** Let $\mathrm{J}$ be a pairing involution. Then
 
 $$
-\boxed{\;\operatorname{Fix}(\theta)=\operatorname{sym}(M)\;}
+\boxed{\;\operatorname{Fix}(\mathrm{J})=\operatorname{sym}(M)\;}
 $$
 
 is an $R$-submodule closed under the Jordan product $f\bullet g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.
 
 *Proof.* This is *Module Operators with an Involution*.
 
-**Proposition.** The fixed part satisfies $E=\operatorname{Fix}(\theta)\oplus\operatorname{Fix}(-\theta)$, where $-\theta$ is the involution $f \mapsto -\theta(f)$ and its fixed part is $\operatorname{Skew}(M)$; hence the involution is recovered from its fixed part together with the skew part. Two involutions with the same fixed part are equal when $2$ is invertible.
+**Proposition.** The fixed part satisfies $E=\operatorname{Fix}(\mathrm{J})\oplus\operatorname{Fix}(-\mathrm{J})$, where $-\mathrm{J}$ is the involution $f \mapsto -\mathrm{J}(f)$ and its fixed part is $\operatorname{Skew}(M)$; hence the involution is recovered from its fixed part together with the skew part. Two involutions with the same fixed part are equal when $2$ is invertible.
 
-*Proof.* For every $f$, the decomposition $f=\frac12(f+\theta f)+\frac12(f-\theta f)$ exhibits $E$ as the sum of the two fixed parts, and the intersection is zero because $2$ is invertible; if two additive maps of order two have the same fixed part then they agree, since $f+\theta f=2f$ determines $\theta f=f$ on the fixed part and $\theta f=-f$ on the other summand.
+*Proof.* For every $f$, the decomposition $f=\frac12(f+\mathrm{J} f)+\frac12(f-\mathrm{J} f)$ exhibits $E$ as the sum of the two fixed parts, and the intersection is zero because $2$ is invertible; if two additive maps of order two have the same fixed part then they agree, since $f+\mathrm{J} f=2f$ determines $\mathrm{J} f=f$ on the fixed part and $\mathrm{J} f=-f$ on the other summand.
 
-Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ with $1 \in P$ and the property of being an anti-automorphism, encoded by the projections $\frac12(\mathrm{id}\pm\theta)$.
+Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ with $1 \in P$ and the property of being an anti-automorphism, encoded by the projections $\frac12(\mathrm{id}\pm\mathrm{J})$.
 
 ### The self-adjoint squares and the pairing
 
@@ -115,13 +115,13 @@ Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ wi
 
 The notion of an involution is wider than the notion of an adjoint of a pairing, and the simplest way to exhibit two inequivalent involutions is to look at a commutative endomorphism ring.
 
-**Proposition.** On $E=F\times F$ with the componentwise product, the **identity** $\mathrm{id}$ and the **exchange** $\theta(x,y)=(y,x)$ are involutions. Their fixed parts are $E$ and the diagonal $\Delta=\{(x,x)\}\cong F$, of dimensions $2$ and $1$, so the two involutions are not isomorphic.
+**Proposition.** On $E=F\times F$ with the componentwise product, the **identity** $\mathrm{id}$ and the **exchange** $\mathrm{J}(x,y)=(y,x)$ are involutions. Their fixed parts are $E$ and the diagonal $\Delta=\{(x,x)\}\cong F$, of dimensions $2$ and $1$, so the two involutions are not isomorphic.
 
 *Proof.* Both maps are $F$-linear anti-automorphisms of order two, because the product is componentwise and commutative. The fixed parts are read off, and an isomorphism of involutions carries the fixed part of one onto the fixed part of the other, so it preserves its dimension.
 
 ### The classification problem
 
-**Definition.** An involution $\theta$ of $E$ is **adjointable** when there is a non-degenerate reflexive pairing on $M$ whose adjoint involution is $\theta$. Every pairing involution is adjointable by definition, and the map from pairings to involutions is described in the section above.
+**Definition.** An involution $\mathrm{J}$ of $E$ is **adjointable** when there is a non-degenerate reflexive pairing on $M$ whose adjoint involution is $\mathrm{J}$. Every pairing involution is adjointable by definition, and the map from pairings to involutions is described in the section above.
 
 **Proposition.** Adjointability is not an isomorphism invariant at first sight, and the fixed part alone does not decide it: two involutions with fixed parts of the same dimension may be realised by pairings or not, and an involution isomorphic to an adjointable one is adjointable because an algebra automorphism carries a pairing to a pairing.
 
@@ -133,9 +133,9 @@ The general question — which involutions of an endomorphism ring are adjointab
 
 ### The induced involution on the centre
 
-**Proposition.** Every involution $\theta$ of $E$ restricts to an involution, in fact an automorphism of order two, of the centre $Z(E)$; the involution is of the **first kind** when this restriction is the identity and of the **second kind** otherwise.
+**Proposition.** Every involution $\mathrm{J}$ of $E$ restricts to an involution, in fact an automorphism of order two, of the centre $Z(E)$; the involution is of the **first kind** when this restriction is the identity and of the **second kind** otherwise.
 
-*Proof.* For $z \in Z(E)$ and $f \in E$, $\theta(z)f=\theta(z)\theta(\theta^{-1}(f))=\theta(\theta^{-1}(f)\,z)=\theta(z\,\theta^{-1}(f))=f\,\theta(z)$, where the second equality uses $\theta(a)\theta(b)=\theta(ba)$ and the third the centrality of $z$; hence $\theta(z)$ is central. So $\theta$ maps $Z(E)$ into itself, and it is an anti-automorphism of order two of the commutative ring $Z(E)$, that is an automorphism of order two.
+*Proof.* For $z \in Z(E)$ and $f \in E$, $\mathrm{J}(z)f=\mathrm{J}(z)\mathrm{J}(\mathrm{J}^{-1}(f))=\mathrm{J}(\mathrm{J}^{-1}(f)\,z)=\mathrm{J}(z\,\mathrm{J}^{-1}(f))=f\,\mathrm{J}(z)$, where the second equality uses $\mathrm{J}(a)\mathrm{J}(b)=\mathrm{J}(ba)$ and the third the centrality of $z$; hence $\mathrm{J}(z)$ is central. So $\mathrm{J}$ maps $Z(E)$ into itself, and it is an anti-automorphism of order two of the commutative ring $Z(E)$, that is an automorphism of order two.
 
 **Corollary.** A pairing involution induced by $\sigma$ restricts to $\sigma$ on the scalars, so it is of the first kind exactly when $\sigma$ fixes the centre of $E$, which for the regular module means $\sigma$ fixes $Z(A)$.
 
@@ -159,19 +159,19 @@ The general question — which involutions of an endomorphism ring are adjointab
 
 ## Summary
 
-An involution of $E=\operatorname{End}_A(M)$ is an $R$-linear anti-automorphism of order two; the identity, the transpose of a matrix ring and the adjoint of a pairing are the basic examples. The units act by inner conjugation and the automorphism group by conjugation, and isomorphic involutions have fixed parts of the same size. The involution induced by a non-degenerate reflexive pairing has fixed part the self-adjoint operators, a unital special Jordan subalgebra closed under the Jordan product $\frac12(fg+gf)$, and $E$ is the direct sum of the fixed part and the fixed part of $-\theta$, the skew-adjoint operators, when $2$ is invertible; an involution is determined by its fixed part. The map from pairings to involutions is unchanged by scaling and by change of basis, is not injective and is not constant: on $k^2$ the symmetric and the alternating form give fixed parts of dimensions $3$ and $1$, hence non-isomorphic involutions. The identity and the exchange involutions of $F\times F$ have fixed parts of dimensions $2$ and $1$ and are of the first and second kind respectively; deciding which involutions are adjointable, and by which pairings, is the classification problem, which over a field is the theory of forms and is deferred. Every involution restricts to an involution of the centre, and the first- or second-kind dichotomy is an isomorphism invariant. The classification of the adjointable involutions and of the pairings realising them is the theory of hermitian forms, *Hermitian Forms over an Involution Ring*.
+An involution of $E=\operatorname{End}_A(M)$ is an $R$-linear anti-automorphism of order two; the identity, the transpose of a matrix ring and the adjoint of a pairing are the basic examples. The units act by inner conjugation and the automorphism group by conjugation, and isomorphic involutions have fixed parts of the same size. The involution induced by a non-degenerate reflexive pairing has fixed part the self-adjoint operators, a unital special Jordan subalgebra closed under the Jordan product $\frac12(fg+gf)$, and $E$ is the direct sum of the fixed part and the fixed part of $-\mathrm{J}$, the skew-adjoint operators, when $2$ is invertible; an involution is determined by its fixed part. The map from pairings to involutions is unchanged by scaling and by change of basis, is not injective and is not constant: on $k^2$ the symmetric and the alternating form give fixed parts of dimensions $3$ and $1$, hence non-isomorphic involutions. The identity and the exchange involutions of $F\times F$ have fixed parts of dimensions $2$ and $1$ and are of the first and second kind respectively; deciding which involutions are adjointable, and by which pairings, is the classification problem, which over a field is the theory of forms and is deferred. Every involution restricts to an involution of the centre, and the first- or second-kind dichotomy is an isomorphism invariant. The classification of the adjointable involutions and of the pairings realising them is the theory of hermitian forms, *Hermitian Forms over an Involution Ring*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $E=\operatorname{End}_A(M)$ | the endomorphism ring of the module |
-| $\theta$ | an involution of $E$, $R$-linear, order two, anti-multiplicative |
-| $\operatorname{Fix}(\theta)$ | the fixed part, $\{f : \theta(f)=f\}$ |
-| $\operatorname{Ad}_u\theta$ | inner conjugation, $f\mapsto u\theta(f)u^{-1}$ |
+| $\mathrm{J}$ | an involution of $E$, $R$-linear, order two, anti-multiplicative |
+| $\operatorname{Fix}(\mathrm{J})$ | the fixed part, $\{f : \mathrm{J}(f)=f\}$ |
+| $\operatorname{Ad}_u\mathrm{J}$ | inner conjugation, $f\mapsto u\mathrm{J}(f)u^{-1}$ |
 | $f^{*}$ | the adjoint of a pairing, a pairing involution |
 | $\operatorname{sym}(M)$, $\operatorname{Skew}(M)$ | fixed parts of ${}^{*}$ and of $-{}^{*}$ |
-| first kind, second kind | the restriction of $\theta$ to $Z(E)$ is the identity or not |
+| first kind, second kind | the restriction of $\mathrm{J}$ to $Z(E)$ is the identity or not |
 | $J$ | the Gram matrix of the alternating form on $k^2$ |
 | adjointable | arising as the adjoint of a non-degenerate reflexive pairing |
 

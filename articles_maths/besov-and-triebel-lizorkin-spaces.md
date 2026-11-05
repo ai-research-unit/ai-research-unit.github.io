@@ -181,22 +181,22 @@ The atomic decomposition is the bridge from the Fourier description to the real-
 
 ### The Scale as the Interpolation of the Sobolev Spaces
 
-**Theorem (real interpolation).** Let $s_0,s_1 \in\mathbb{R}$ with $s_0 \neq s_1$, $0<p,q,q_0,q_1\le\infty$ and $\theta \in(0,1)$; put $s=(1-\theta)s_0+\theta s_1$. Then
+**Theorem (real interpolation).** Let $s_0,s_1 \in\mathbb{R}$ with $s_0 \neq s_1$, $0<p,q,q_0,q_1\le\infty$ and $\vartheta^{\mathrm{itp}} \in(0,1)$; put $s=(1-\vartheta^{\mathrm{itp}})s_0+\vartheta^{\mathrm{itp}} s_1$. Then
 
 $$
-\boxed{\;\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}, \qquad
-\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}\;}
+\boxed{\;\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\vartheta^{\mathrm{itp}},q}=B^{s}_{n,m}, \qquad
+\bigl(F^{s_0}_{p,q_0},F^{s_1}_{p,q_1}\bigr)_{\vartheta^{\mathrm{itp}},q}=B^{s}_{n,m}\;}
 $$
 
 with equivalent quasi-norms, the real method being taken in the sense of *Interpolation Theory*; the real interpolation of the two scales is therefore the Besov scale, whatever the originating family.
 
-*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\theta,q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.
+*Proof (sketch).* The $K$-functional of the pair is computed blockwise: the frequency blocks of the two spaces are Sobolev-type spaces of a single scale, and the $K$-functional of a piece $\varphi_j(D)f$ is comparable to $\min(2^{js_0},2^{js_1})$-weighted versions of its norm, so the $K$-functional of $f$ is equivalent to a mixed norm in the blocks; the $\vartheta^{\mathrm{itp}},q$ norm then produces the Besov norm with exponent $q$, and the equality of the two families follows from the comparison of the scales. The details are the standard ones of the theory.
 
-**Theorem (complex interpolation and the interpolation of the Sobolev scale).** Let $s_0 \neq s_1$, $0<p,q\le\infty$ and $\theta \in(0,1)$, and put $s=(1-\theta)s_0+\theta s_1$. Then
+**Theorem (complex interpolation and the interpolation of the Sobolev scale).** Let $s_0 \neq s_1$, $0<p,q\le\infty$ and $\vartheta^{\mathrm{itp}} \in(0,1)$, and put $s=(1-\vartheta^{\mathrm{itp}})s_0+\vartheta^{\mathrm{itp}} s_1$. Then
 
 $$
-\bigl[B^{s_0}_{p,q},B^{s_1}_{p,q}\bigr]_\theta=B^{s}_{n,m}, \qquad
-\bigl[F^{s_0}_{p,q},F^{s_1}_{p,q}\bigr]_\theta=F^{s}_{n,m},
+\bigl[B^{s_0}_{p,q},B^{s_1}_{p,q}\bigr]_\vartheta^{\mathrm{itp}}=B^{s}_{n,m}, \qquad
+\bigl[F^{s_0}_{p,q},F^{s_1}_{p,q}\bigr]_\vartheta^{\mathrm{itp}}=F^{s}_{n,m},
 $$
 
 the complex method preserving the family and the fine index; in particular the complex interpolation of the Sobolev spaces $H^{s_0}_p$ and $H^{s_1}_p$ is $H^{s}_{n}$, the classical interpolation theorem of the Sobolev scale.
@@ -234,7 +234,7 @@ The paraproduct is the standard tool of the nonlinear theory: the product estima
 
 The Besov spaces $B^{s}_{n,m}$ and the Triebel–Lizorkin spaces $F^{s}_{n,m}$ are the two three-parameter scales of smoothness obtained from a dyadic partition of unity $(\varphi_j)$ in the frequency variable. The Besov quasi-norm is $\bigl(\sum_j(2^{js}\|\varphi_j(D)f\|_{L^{n}})^q\bigr)^{1/q}$, the $\ell^{m}$ norm over the frequency blocks followed by the $L^{n}$ norm in space, and the Triebel–Lizorkin quasi-norm is $\bigl\|\bigl(\sum_j(2^{js}|\varphi_j(D)f|)^q\bigr)^{1/q}\bigr\|_{L^{n}}$, the same quantities with the two operations interchanged; they coincide when $p=q$, and in general $B^{s}_{n,\min(n,m)}\hookrightarrow F^{s}_{n,m}\hookrightarrow B^{s}_{n,\max(n,m)}$. The definitions are independent of the partition, the spaces are complete quasi-Banach (Banach for $p,q \ge1$), the lifting $I_\sigma=(1-\Delta)^{-\sigma/2}$ shifts the smoothness index by $\sigma$, and the scale is monotone in $q$. **Bernstein's inequalities** trade derivatives for powers of the frequency, and they are the analytic reason for the factor $2^{js}$.
 
-The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Bessel potential space, $F^k_{p,2}=W^{k,n}$ is the Sobolev space, $B^s_{\infty,\infty}=C^s$ is the Hölder–Zygmund space, $F^0_{1,2}=H^1$ is the real Hardy space and $F^0_{\infty,2}=\mathrm{BMO}$; the difference and heat-kernel characterisations identify the scale with the classical Besov definition by the modulus of continuity. The **Sobolev-type embeddings** hold with the exponent determined by $s-\frac np$, they are compact under the strict inequality (Rellich–Kondrachov), and for $s>\frac np$ the spaces are algebras; the **trace** on a hyperplane lands in the scale with the loss $\frac1p$, sharply, and the spaces on a domain are defined by restriction with the corresponding extension theorems. The **atomic and molecular decompositions** compute the quasi-norm from the coefficients of an expansion in localised oscillating pieces, and the wavelet characterisations are the orthonormal form of the same statement. **Real interpolation** of the scales gives the Besov scale, $\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\theta,q}=B^{s}_{n,m}$, and **complex interpolation** preserves the family and the fine index, so the Sobolev scale is closed under interpolation; the **Bony paraproduct** decomposes a product into the terms dominated by either factor and the comparable-frequency remainder, and the resulting product estimates make the spaces with $s>\frac np$ algebras and supply the nonlinear estimates of the theory of partial differential equations.
+The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Bessel potential space, $F^k_{p,2}=W^{k,n}$ is the Sobolev space, $B^s_{\infty,\infty}=C^s$ is the Hölder–Zygmund space, $F^0_{1,2}=H^1$ is the real Hardy space and $F^0_{\infty,2}=\mathrm{BMO}$; the difference and heat-kernel characterisations identify the scale with the classical Besov definition by the modulus of continuity. The **Sobolev-type embeddings** hold with the exponent determined by $s-\frac np$, they are compact under the strict inequality (Rellich–Kondrachov), and for $s>\frac np$ the spaces are algebras; the **trace** on a hyperplane lands in the scale with the loss $\frac1p$, sharply, and the spaces on a domain are defined by restriction with the corresponding extension theorems. The **atomic and molecular decompositions** compute the quasi-norm from the coefficients of an expansion in localised oscillating pieces, and the wavelet characterisations are the orthonormal form of the same statement. **Real interpolation** of the scales gives the Besov scale, $\bigl(B^{s_0}_{p,q_0},B^{s_1}_{p,q_1}\bigr)_{\vartheta^{\mathrm{itp}},q}=B^{s}_{n,m}$, and **complex interpolation** preserves the family and the fine index, so the Sobolev scale is closed under interpolation; the **Bony paraproduct** decomposes a product into the terms dominated by either factor and the comparable-frequency remainder, and the resulting product estimates make the spaces with $s>\frac np$ algebras and supply the nonlinear estimates of the theory of partial differential equations.
 
 ## Summary of Notation
 
@@ -254,8 +254,8 @@ The classical spaces are members of the scale: $F^{s}_{n,2}=H^{s}_{n}$ is the Be
 | $\Delta_h$ | difference operator, $\Delta_hf=f(\cdot+h)-f(\cdot)$ |
 | $\exp(t\Delta)$ | heat semigroup |
 | $I_\sigma$ | lifting, $(1-\Delta)^{-\sigma/2}$ |
-| $(\cdot,\cdot)_{\theta,q}$ | real interpolation functor |
-| $[\,\cdot,\cdot\,]_\theta$ | complex interpolation functor |
+| $(\cdot,\cdot)_{\vartheta^{\mathrm{itp}},q}$ | real interpolation functor |
+| $[\,\cdot,\cdot\,]_\vartheta^{\mathrm{itp}}$ | complex interpolation functor |
 | $T_fg$, $R(f,g)$ | Bony paraproduct terms |
 | $a_{j,\nu}$, $\lambda_{j,\nu}$ | atoms and coefficients |
 | $\psi_{j,\nu}$ | wavelet basis |

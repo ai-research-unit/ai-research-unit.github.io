@@ -112,10 +112,10 @@ The correspondence is obtained from the unitary extensions of the Cayley transfo
 **Example (the half-line Laplacian).** For $A=-\frac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$ the deficiency indices are $(1,1)$, so the self-adjoint extensions form a circle, and they are exactly the operators
 
 $$
-A_\theta=-\frac{d^2}{dx^2}, \qquad D(A_\theta)=\{u \in H^2(0,\infty):u'(0)=\theta\,u(0)\}, \quad \theta \in \mathbb{R},
+A_\vartheta^{\mathrm{bcp}}=-\frac{d^2}{dx^2}, \qquad D(A_\vartheta^{\mathrm{bcp}})=\{u \in H^2(0,\infty):u'(0)=\vartheta^{\mathrm{bcp}}\,u(0)\}, \quad \vartheta^{\mathrm{bcp}} \in \mathbb{R},
 $$
 
-together with the Dirichlet operator $u(0)=0$, corresponding to $\theta=\infty$. Each is self-adjoint, each has spectrum $[0,\infty)$ with a continuous part and possibly one negative eigenvalue when $\theta<0$, and the whole family is obtained from one of them by the boundary condition; the analysis of this family is the simplest instance of a spectral problem with a boundary condition.
+together with the Dirichlet operator $u(0)=0$, corresponding to $\vartheta^{\mathrm{bcp}}=\infty$. Each is self-adjoint, each has spectrum $[0,\infty)$ with a continuous part and possibly one negative eigenvalue when $\vartheta^{\mathrm{bcp}}<0$, and the whole family is obtained from one of them by the boundary condition; the analysis of this family is the simplest instance of a spectral problem with a boundary condition.
 
 ## The Spectral Theorem
 
@@ -234,7 +234,7 @@ are defined by strong integrals and satisfy $(A+i)x_+=iy$ and $(A-i)x_-=-iy$, as
 
 ## Summary
 
-A linear operator on a Hilbert space is a linear map on a dense domain; it is closed when its graph is closed, and a closed everywhere-defined operator is bounded. Its adjoint is defined on the vectors $y$ for which $x\mapsto\langle Ax,y\rangle$ is continuous, and $A$ is symmetric when $A \subseteq A^*$, self-adjoint when $A=A^*$ with equal domains, and essentially self-adjoint when its closure is self-adjoint. The same formula can be symmetric and not self-adjoint: $-i\,d/dx$ on $C_c^\infty(\mathbb{R})$ is essentially self-adjoint, on $C_c^\infty(0,\infty)$ it has unequal deficiency indices and no self-adjoint extension, and $-\frac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$ has deficiency indices $(1,1)$ and a circle of self-adjoint extensions, parametrised by the boundary condition $u'(0)=\theta u(0)$.
+A linear operator on a Hilbert space is a linear map on a dense domain; it is closed when its graph is closed, and a closed everywhere-defined operator is bounded. Its adjoint is defined on the vectors $y$ for which $x\mapsto\langle Ax,y\rangle$ is continuous, and $A$ is symmetric when $A \subseteq A^*$, self-adjoint when $A=A^*$ with equal domains, and essentially self-adjoint when its closure is self-adjoint. The same formula can be symmetric and not self-adjoint: $-i\,d/dx$ on $C_c^\infty(\mathbb{R})$ is essentially self-adjoint, on $C_c^\infty(0,\infty)$ it has unequal deficiency indices and no self-adjoint extension, and $-\frac{d^2}{dx^2}$ on $C_c^\infty(0,\infty)$ has deficiency indices $(1,1)$ and a circle of self-adjoint extensions, parametrised by the boundary condition $u'(0)=\vartheta^{\mathrm{bcp}} u(0)$.
 
 The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: $A$ is self-adjoint exactly when $n_+=n_-=0$, and von Neumann's theorem parametrises the self-adjoint extensions of a closed symmetric operator with $n_+=n_-$ by the unitary maps $N_+\to N_-$, the Cayley transform converting the analytic condition into the extension of an isometry to a unitary. The spectral theorem represents every self-adjoint $A$ as $A=\int\lambda\,dE(\lambda)$ with a unique projection-valued measure $E$ on $\mathbb{R}$ supported on $\sigma(A)$, and the same measure yields the Borel functional calculus $f(A)=\int f\,dE$, a $*$-homomorphism whose restriction to $C(\sigma(A))$ is isometric and whose spectral projections generate the von Neumann algebra of $A$. The operator is classified up to unitary equivalence by the multiplicity function of $E$, and the multiplication model realises it as a direct sum of multiplications by the variable. From the calculus comes the polar decomposition $A=U|A|$ of a closed operator, with $|A|=(A^*A)^{1/2}$. Finally Stone's theorem identifies the strongly continuous one-parameter unitary groups with the self-adjoint operators: the generator of $T(t)$ is self-adjoint and $T(t)=\exp(itA)$, and the theorem supplies the analytic form of a continuous dynamical system.
 
@@ -259,7 +259,7 @@ The deficiency indices $n_\pm=\dim\ker(A^*\mp i)$ decide the extension problem: 
 | $|A|=(A^*A)^{1/2}$, $A=U|A|$ | modulus and polar decomposition |
 | $T(t)$, $\exp(itA)$ | strongly continuous one-parameter unitary group |
 | $-\Delta$, $H_0^1$, $H^2$ | Laplacian and its Sobolev domains |
-| $\theta$ | boundary parameter of the half-line Laplacian |
+| $\vartheta^{\mathrm{bcp}}$ | boundary parameter of the half-line Laplacian |
 
 
 

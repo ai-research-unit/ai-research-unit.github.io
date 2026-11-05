@@ -13,21 +13,21 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition.** For every $a \in E$,
 
 $$
-\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \Theta^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
+\boxed{\;\bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger} = \mathrm{Sd}^{\alpha}_{1,\alpha(a)} = R_{\alpha(a)}\circ\alpha , \qquad
 \bigl(\Lambda^{\alpha}_{a}\bigr)^{\dagger}(Y) = \alpha(Y)\,\alpha(a)\;} .
 $$
 
-**Proof.** $\langle\Lambda^{\alpha}_{a}X,Y\rangle = \operatorname{tr}(a\alpha(X)Y) = \operatorname{tr}(\alpha(X)Ya) = \langle\alpha(X),Ya\rangle = \langle X,\alpha(Ya)\rangle = \langle X,\alpha(Y)\alpha(a)\rangle$, using the $\alpha$-invariance of the trace pairing and the multiplicativity $\alpha(Ya)=\alpha(Y)\alpha(a)$; the adjoint is unique because the trace pairing is non-degenerate. This is the case $b=1$ of the adjoint formula $(\Theta^{\alpha}_{a,b})^{\dagger}=\Theta^{\alpha}_{\alpha(b),\alpha(a)}$.
+**Proof.** $\langle\Lambda^{\alpha}_{a}X,Y\rangle = \operatorname{tr}(a\alpha(X)Y) = \operatorname{tr}(\alpha(X)Ya) = \langle\alpha(X),Ya\rangle = \langle X,\alpha(Ya)\rangle = \langle X,\alpha(Y)\alpha(a)\rangle$, using the $\alpha$-invariance of the trace pairing and the multiplicativity $\alpha(Ya)=\alpha(Y)\alpha(a)$; the adjoint is unique because the trace pairing is non-degenerate. This is the case $b=1$ of the adjoint formula $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$.
 
-**Corollary (relation to the signed sandwich).** Since $\Lambda^{\alpha}_{a}=\Theta^{\alpha}_{a,1}$, its adjoint is $\Theta^{\alpha}_{\alpha(1),\alpha(a)}=\Theta^{\alpha}_{1,\alpha(a)}$; taking adjoints twice returns $\Lambda^{\alpha}_{a}$ because $\Theta^{\alpha}_{\alpha(a),\alpha(1)}=\Theta^{\alpha}_{\alpha(a),1}$ and $\alpha^2=\mathrm{id}$, in agreement with the order-two property.
+**Corollary (relation to the signed sandwich).** Since $\Lambda^{\alpha}_{a}=\mathrm{Sd}^{\alpha}_{a,1}$, its adjoint is $\mathrm{Sd}^{\alpha}_{\alpha(1),\alpha(a)}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}$; taking adjoints twice returns $\Lambda^{\alpha}_{a}$ because $\mathrm{Sd}^{\alpha}_{\alpha(a),\alpha(1)}=\mathrm{Sd}^{\alpha}_{\alpha(a),1}$ and $\alpha^2=\mathrm{id}$, in agreement with the order-two property.
 
 **Corollary (the unsigned case).** For $\alpha=\mathrm{id}$ the signed left multiplication is the left multiplication and the statement reads $(L_a)^{\dagger}=R_a$, the trace-adjointness of *The Adjoint of the Left Multiplication on a Linear Space*; the signed statement is the image of the unsigned one under the grade involution.
 
-**Proof.** $\Theta^{\mathrm{id}}_{1,a}=R_a$ and $\Lambda^{\mathrm{id}}_{a}=L_a$.
+**Proof.** $\mathrm{Sd}^{\mathrm{id}}^{\mathrm{id}}_{1,a}=R_a$ and $\Lambda^{\mathrm{id}}_{a}=L_a$.
 
 **Corollary (self-adjointness).** $\Lambda^{\alpha}_{a}$ is self-adjoint, $(\Lambda^{\alpha}_{a})^{\dagger}=\Lambda^{\alpha}_{a}$, if and only if $a$ is central and even, $a \in Z(E)$ and $\alpha(a)=a$.
 
-**Proof.** $\Theta^{\alpha}_{1,\alpha(a)}=\Theta^{\alpha}_{a,1}$ says $\alpha(Y)\alpha(a)=a\alpha(Y)$ for all $Y$, so $a$ commutes with $\alpha(E)=E$ and $a$ is central; setting $Y=1$ gives $\alpha(a)=a$.
+**Proof.** $\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=\mathrm{Sd}^{\alpha}_{a,1}$ says $\alpha(Y)\alpha(a)=a\alpha(Y)$ for all $Y$, so $a$ commutes with $\alpha(E)=E$ and $a$ is central; setting $Y=1$ gives $\alpha(a)=a$.
 
 ## Unitarity and the Element Involution
 
@@ -39,7 +39,7 @@ $$
 
 ## Summary
 
-The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respect to the trace pairing is $\Theta^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication by $\alpha(a)$; this is the case $b=1$ of the adjoint of the signed sandwich, $(\Theta^{\alpha}_{a,b})^{\dagger}=\Theta^{\alpha}_{\alpha(b),\alpha(a)}$, and taking adjoints twice returns the operator because $\alpha$ has order two. For $\alpha=\mathrm{id}$ the statement reduces to the trace-adjointness $(L_a)^{\dagger}=R_a$ of the unsigned theory. The one-sided operator is self-adjoint exactly for central even $a$, and unitary exactly when $\alpha(a)$ is a central involution, the self-adjoint case being the element condition $u^{*}u=uu^{*}=1$ with $u=\alpha(a)$.
+The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respect to the trace pairing is $\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication by $\alpha(a)$; this is the case $b=1$ of the adjoint of the signed sandwich, $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$, and taking adjoints twice returns the operator because $\alpha$ has order two. For $\alpha=\mathrm{id}$ the statement reduces to the trace-adjointness $(L_a)^{\dagger}=R_a$ of the unsigned theory. The one-sided operator is self-adjoint exactly for central even $a$, and unitary exactly when $\alpha(a)$ is a central involution, the self-adjoint case being the element condition $u^{*}u=uu^{*}=1$ with $u=\alpha(a)$.
 
 ## Summary of Notation
 
@@ -50,8 +50,8 @@ The adjoint of the signed left multiplication $\Lambda^{\alpha}_{a}$ with respec
 | $\Lambda^{\alpha}_{a}(X)=a\alpha(X)$ | the signed left multiplication |
 | $\langle X,Y\rangle=\operatorname{tr}(XY)$ | the trace pairing |
 | ${}^{\dagger}$ | the trace-adjoint |
-| $(\Lambda^{\alpha}_{a})^{\dagger}=\Theta^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$ | the adjoint computation |
-| $(\Theta^{\alpha}_{a,b})^{\dagger}=\Theta^{\alpha}_{\alpha(b),\alpha(a)}$ | the signed sandwich case |
+| $(\Lambda^{\alpha}_{a})^{\dagger}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$ | the adjoint computation |
+| $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(b),\alpha(a)}$ | the signed sandwich case |
 | $Z(E)$ | the centre of $E$ |
 
 ## Further Reading

@@ -3,15 +3,15 @@
 
 ## Introduction
 
-A nuclear space is a locally convex space whose finite-dimensional-like behaviour makes the projective and the injective tensor product coincide, and an involution respects this behaviour: the fixed and negated subspaces of a continuous involution of a nuclear space are themselves nuclear, the topology and the completed tensor product are unambiguous, and the involution of a tensor product is well defined for the completed product without the choice between the two completions. On the tensor product the involution $\theta \otimes \omega$ has fixed and negated subspaces computed from the four pieces of the two factors, so that the signature of the product involution is the sum of the signatures of the factors; on the strong dual of a nuclear Fréchet space the transposed involution is again continuous, the dual being nuclear.
+A nuclear space is a locally convex space whose finite-dimensional-like behaviour makes the projective and the injective tensor product coincide, and an involution respects this behaviour: the fixed and negated subspaces of a continuous involution of a nuclear space are themselves nuclear, the topology and the completed tensor product are unambiguous, and the involution of a tensor product is well defined for the completed product without the choice between the two completions. On the tensor product the involution $\mathrm{J} \otimes \omega$ has fixed and negated subspaces computed from the four pieces of the two factors, so that the signature of the product involution is the sum of the signatures of the factors; on the strong dual of a nuclear Fréchet space the transposed involution is again continuous, the dual being nuclear.
 
 This article develops the theory of an involution on a nuclear space. The nuclear operators, the approximation numbers, the nuclear norm and the nuclearity of a space are *Nuclear Spaces*; the projective and the injective topologies, their completions and the coincidence theorem are *Topological Tensor Products*; the continuous involution, the closedness, the splitting and the extension to the completion are *Involutive Topological Linear Spaces* and *Locally Convex Spaces with an Involution*; the Banach and the Fréchet cases are the two preceding articles of this group. The forms, the kernels and the adjoints of the nuclear operators are Part III. No form and no Hilbert structure is used.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $E$ and $F$ are Hausdorff locally convex spaces over $\mathbb{K}$, $\theta$ and $\omega$ are continuous $\varsigma$-semilinear involutions of $E$ and $F$ with $\theta^{2} = \omega^{2} = \mathrm{id}$, the linear case is written $T$ and $S$, the summands are $E^{\theta} = E_{+}$, $E^{-}$ and $F^{\omega} = F_{+}$, $F^{-}$, and $E\widehat{\otimes} F$ is the completed tensor product, which is unambiguous when one factor is nuclear.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $E$ and $F$ are Hausdorff locally convex spaces over $\mathbb{K}$, $\mathrm{J}$ and $\omega$ are continuous $\varsigma$-semilinear involutions of $E$ and $F$ with $\mathrm{J}^{2} = \omega^{2} = \mathrm{id}$, the linear case is written $T$ and $S$, the summands are $E^{\mathrm{J}} = E_{+}$, $E^{-}$ and $F^{\omega} = F_{+}$, $F^{-}$, and $E\widehat{\otimes} F$ is the completed tensor product, which is unambiguous when one factor is nuclear.
 
 ## Nuclearity and the Summands
 
-**Theorem (the summands of a nuclear space are nuclear).** Let $E$ be a nuclear locally convex space and let $\theta$ be a continuous involution of $E$. Then the fixed subspace $E^{\theta}$ and the negated subspace $E^{-}$ are closed nuclear subspaces of $E$; each carries the induced locally convex structure and is nuclear, and when $2$ is invertible the topological direct sum $E^{\theta} \oplus E^{-}$ is nuclear.
+**Theorem (the summands of a nuclear space are nuclear).** Let $E$ be a nuclear locally convex space and let $\mathrm{J}$ be a continuous involution of $E$. Then the fixed subspace $E^{\mathrm{J}}$ and the negated subspace $E^{-}$ are closed nuclear subspaces of $E$; each carries the induced locally convex structure and is nuclear, and when $2$ is invertible the topological direct sum $E^{\mathrm{J}} \oplus E^{-}$ is nuclear.
 
 **Proof.** A subspace of a nuclear space is nuclear, by *Nuclear Spaces*; the summands are closed by *Involutive Topological Linear Spaces*, and the direct sum of two nuclear spaces is nuclear. The direct-sum topology is the induced one by the splitting of *Locally Convex Spaces with an Involution*.
 
@@ -19,7 +19,7 @@ Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the inv
 
 **Proof.** A nuclear Fréchet space is a Fréchet space, so the criteria of *Involutive Fréchet Spaces* apply; the nuclearity adds the behaviour of the tensor product below but not automatic continuity of an arbitrary involution.
 
-**Proposition (nuclear representations and the involution).** Let $\theta$ be continuous and let $T : E \to F$ be a nuclear map between involutive spaces. Then the composition with the involutions preserves nuclearity, $\theta_{F} \circ T \circ \theta_{E}$ is nuclear with the same nuclear norm, and the transposed map on the strong duals is nuclear.
+**Proposition (nuclear representations and the involution).** Let $\mathrm{J}$ be continuous and let $T : E \to F$ be a nuclear map between involutive spaces. Then the composition with the involutions preserves nuclearity, $\mathrm{J}_{F} \circ T \circ \mathrm{J}_{E}$ is nuclear with the same nuclear norm, and the transposed map on the strong duals is nuclear.
 
 **Proof.** A composite of a nuclear map with continuous linear maps is nuclear, with the nuclear norm bounded by the product of the operator norms by *Nuclear Spaces*; the involutions are topological isomorphisms of norm one in the isometric case, and semilinear in the antilinear case, where the composition is understood over the fixed field.
 
@@ -47,26 +47,26 @@ $$
 
 **Proof.** The coincidence of the two completions when a factor is nuclear is the theorem of *Topological Tensor Products*; the involution $T \otimes S$ is continuous for the projective topology because $T$ and $S$ are, so it extends to the completion $E\widehat{\otimes}_\pi F$ by *Involutive Topological Linear Spaces*, and the injective completion carries the same involution because the two completions are equal; the fixed and negated subspaces of the extension are the closures of the corresponding subspaces of the dense algebraic tensor product, by the extension theorem of *Involutive Banach Spaces*.
 
-**Corollary (the antilinear case).** If $\theta$ and $\omega$ are antilinear then $\theta \otimes \omega$ is antilinear, of the same kind as the factors, with
+**Corollary (the antilinear case).** If $\mathrm{J}$ and $\omega$ are antilinear then $\mathrm{J} \otimes \omega$ is antilinear, of the same kind as the factors, with
 
 $$
-\boxed{\;\ker\bigl((\theta\otimes\omega) - \mathrm{id}\bigr) = E_{+} \otimes F_{+} , \qquad
-\ker\bigl((\theta\otimes\omega) + \mathrm{id}\bigr) = i\,(E_{+} \otimes F_{+})\;} ,
+\boxed{\;\ker\bigl((\mathrm{J}\otimes\omega) - \mathrm{id}\bigr) = E_{+} \otimes F_{+} , \qquad
+\ker\bigl((\mathrm{J}\otimes\omega) + \mathrm{id}\bigr) = i\,(E_{+} \otimes F_{+})\;} ,
 $$
 
 read over $\mathbb{R}$; the two pieces $E_{+}\otimes F_{+}$ and $E_{-}\otimes F_{-}$ of the linear formula coincide here because $E_{-} = iE_{+}$ and $F_{-} = iF_{+}$. The completed tensor product of two involutive nuclear spaces is again an involutive nuclear space.
 
-**Proof.** The tensor product of two $\varsigma$-semilinear maps is $\varsigma$-semilinear, so $\theta\otimes\omega$ is antilinear, and $(\theta\otimes\omega)^{2} = \theta^{2}\otimes\omega^{2} = \mathrm{id}$. A fixed decomposable tensor satisfies $\theta x\otimes\omega y = x\otimes y$, which holds for $x\in E_{+}$, $y\in F_{+}$ and, on a negated-negated product, because $(-x_{-})\otimes(-y_{-}) = x_{-}\otimes y_{-}$, but the two real subspaces coincide since $E_{-} = iE_{+}$ and $F_{-} = iF_{+}$. The completed tensor product of nuclear spaces is nuclear by *Nuclear Spaces*, and its involution is the extension theorem.
+**Proof.** The tensor product of two $\varsigma$-semilinear maps is $\varsigma$-semilinear, so $\mathrm{J}\otimes\omega$ is antilinear, and $(\mathrm{J}\otimes\omega)^{2} = \mathrm{J}^{2}\otimes\omega^{2} = \mathrm{id}$. A fixed decomposable tensor satisfies $\mathrm{J} x\otimes\omega y = x\otimes y$, which holds for $x\in E_{+}$, $y\in F_{+}$ and, on a negated-negated product, because $(-x_{-})\otimes(-y_{-}) = x_{-}\otimes y_{-}$, but the two real subspaces coincide since $E_{-} = iE_{+}$ and $F_{-} = iF_{+}$. The completed tensor product of nuclear spaces is nuclear by *Nuclear Spaces*, and its involution is the extension theorem.
 
 ## The Dual
 
-**Proposition (the dual of an involutive nuclear space).** Let $E$ be a nuclear Fréchet space with a continuous involution $\theta$. Then the strong dual $E'_{b}$ is nuclear, the transposed involution $\theta'$ is continuous for the strong topology, and
+**Proposition (the dual of an involutive nuclear space).** Let $E$ be a nuclear Fréchet space with a continuous involution $\mathrm{J}$. Then the strong dual $E'_{b}$ is nuclear, the transposed involution $\mathrm{J}'$ is continuous for the strong topology, and
 
 $$
-\boxed{\;(E'_{b})^{\theta'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\theta})^{\circ}\;} ;
+\boxed{\;(E'_{b})^{\mathrm{J}'} = (E^{-})^{\circ}, \qquad (E'_{b})^{-} = (E^{\mathrm{J}})^{\circ}\;} ;
 $$
 
-the dual pair $(E, E'_{b})$ with the two involutions is a dual pair of involutive nuclear spaces, and when $E$ is reflexive the operation is an involution, $(\theta')' = \theta$.
+the dual pair $(E, E'_{b})$ with the two involutions is a dual pair of involutive nuclear spaces, and when $E$ is reflexive the operation is an involution, $(\mathrm{J}')' = \mathrm{J}$.
 
 **Proof.** The strong dual of a nuclear Fréchet space is nuclear, by *Nuclear Spaces*; the continuity of the transposed involution and the annihilator identification are *Involutive Fréchet Spaces* and *The Involution and the Dual Pairing*, and the reflexive statement is *Duality Theory*.
 
@@ -76,25 +76,25 @@ the dual pair $(E, E'_{b})$ with the two involutions is a dual pair of involutiv
 
 **Example (the rapidly decreasing sequences).** On $s$ the coordinatewise conjugation is an antilinear isometric involution with fixed subspace the real rapidly decreasing sequences; on the completed tensor product $s \widehat{\otimes} s$ the tensor product of the conjugations is the coordinatewise conjugation on the double sequence, with fixed subspace the real double sequences.
 
-**Example (distributions).** The strong dual $\mathcal{S}'(\mathbb{R}^{n})$ of the Schwartz space is nuclear, and the transposed involution of the conjugation is given by $\langle\theta' u, f\rangle = \varsigma(\langle u, \theta f\rangle)$; the fixed distributions are the real ones, $\overline{u} = u$, and the annihilator calculus identifies them with the distributions annihilating the odd test functions.
+**Example (distributions).** The strong dual $\mathcal{S}'(\mathbb{R}^{n})$ of the Schwartz space is nuclear, and the transposed involution of the conjugation is given by $\langle\mathrm{J}' u, f\rangle = \varsigma(\langle u, \mathrm{J} f\rangle)$; the fixed distributions are the real ones, $\overline{u} = u$, and the annihilator calculus identifies them with the distributions annihilating the odd test functions.
 
 ## Summary
 
-On a nuclear space a continuous involution has nuclear fixed and negated subspaces, closed and carrying the induced nuclear structure, and their direct sum is nuclear; a nuclear Fréchet space is a Fréchet space, so the four criteria of continuity of the preceding article continue to hold, and nuclearity adds no automatic continuity but makes the tensor product behave finitely. For linear involutions the tensor product involution $T \otimes S$ has fixed part $(E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ and negated part $(E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$, so the product has type $(pr+qs, ps+qr)$ in the types of the factors; the antilinear case composes to a linear involution up to the scalar involution, with the same signature over the real scalars. When one factor is nuclear the projective and injective completions coincide, the involution extends uniquely to the completed tensor product, and its summands are the closures of those of the algebraic tensor product. The strong dual of an involutive nuclear Fréchet space is nuclear and carries the transposed involution with the summands given by the annihilators, and reflexive nuclear spaces have the symmetry $(\theta')' = \theta$. The Schwartz space, the space of rapidly decreasing sequences and the space of tempered distributions are the standard examples. The completed tensor product with an involution in the general locally convex case is *The Involution on a Topological Tensor Product*.
+On a nuclear space a continuous involution has nuclear fixed and negated subspaces, closed and carrying the induced nuclear structure, and their direct sum is nuclear; a nuclear Fréchet space is a Fréchet space, so the four criteria of continuity of the preceding article continue to hold, and nuclearity adds no automatic continuity but makes the tensor product behave finitely. For linear involutions the tensor product involution $T \otimes S$ has fixed part $(E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ and negated part $(E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$, so the product has type $(pr+qs, ps+qr)$ in the types of the factors; the antilinear case composes to a linear involution up to the scalar involution, with the same signature over the real scalars. When one factor is nuclear the projective and injective completions coincide, the involution extends uniquely to the completed tensor product, and its summands are the closures of those of the algebraic tensor product. The strong dual of an involutive nuclear Fréchet space is nuclear and carries the transposed involution with the summands given by the annihilators, and reflexive nuclear spaces have the symmetry $(\mathrm{J}')' = \mathrm{J}$. The Schwartz space, the space of rapidly decreasing sequences and the space of tempered distributions are the standard examples. The completed tensor product with an involution in the general locally convex case is *The Involution on a Topological Tensor Product*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $E$, $F$ | Nuclear or locally convex spaces over $\mathbb{K}$ |
-| $\theta$, $\omega$, $T$, $S$ | Continuous involutions of $E$ and $F$ |
-| $E_{+} = E^{\theta}$, $E_{-} = E^{-}$ | Fixed and negated summands |
+| $\mathrm{J}$, $\omega$, $T$, $S$ | Continuous involutions of $E$ and $F$ |
+| $E_{+} = E^{\mathrm{J}}$, $E_{-} = E^{-}$ | Fixed and negated summands |
 | $T \otimes S$ | Tensor product involution on $E \otimes F$ |
 | $(E \otimes F)^{+} = (E_{+}\otimes F_{+}) \oplus (E_{-}\otimes F_{-})$ | Fixed part of the product |
 | $(E \otimes F)^{-} = (E_{+}\otimes F_{-}) \oplus (E_{-}\otimes F_{+})$ | Negated part of the product |
 | $(pr + qs,\, ps + qr)$ | Type of the product from the types of the factors |
 | $E \widehat{\otimes} F = E \widehat{\otimes}_\pi F = E \widehat{\otimes}_\varepsilon F$ | Completed tensor product, unambiguous for a nuclear factor |
-| $E'_{b}$, $\theta'$ | Strong dual and transposed involution, nuclear |
+| $E'_{b}$, $\mathrm{J}'$ | Strong dual and transposed involution, nuclear |
 
 ## Further Reading
 

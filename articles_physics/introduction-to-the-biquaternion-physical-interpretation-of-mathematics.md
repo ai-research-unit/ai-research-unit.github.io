@@ -66,7 +66,7 @@ $$
 
 The idempotents are a second case. A minimal Hermitian idempotent is a pure state, a rank-one projector and a choice of vacuum, depending on which structure is interpreted. The three interpretations agree on the element and disagree on the physics, which is why each is labelled.
 
-The sandwich is a third. $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is a change of frame for a unit-norm rotor and a rotation with a dilation for a general unit. For a minimal Hermitian idempotent and a state, $\Theta_{\tilde\Pi}(\tilde{Ϛ})=\tilde\Pi\tilde{Ϛ}\tilde\Pi$ is the unnormalised post-measurement state. The same operator, three regimes of its parameter.
+The sandwich is a third. $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is a change of frame for a unit-norm rotor and a rotation with a dilation for a general unit. For a minimal Hermitian idempotent and a state, $\mathrm{Sd}_{\tilde\Pi}(\tilde{Ϛ})=\tilde\Pi\tilde{Ϛ}\tilde\Pi$ is the unnormalised post-measurement state. The same operator, three regimes of its parameter.
 
 A reader who wants one interpretation per theorem will not find it here. A reader who wants to know which interpretation is meant will find the label and the boundary.
 
@@ -307,7 +307,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
 | $\tilde{Ϛ}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) |
 | $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
-| $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, the change of frame on the unit-norm slice |
+| $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, the change of frame on the unit-norm slice |
 
 ## Further Reading
 

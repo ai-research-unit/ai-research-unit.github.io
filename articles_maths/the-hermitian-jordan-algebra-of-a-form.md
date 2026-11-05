@@ -4,7 +4,7 @@
 
 The self-adjoint operators of *Self-Adjoint and Skew Operators of a Form* close under the anticommutator, and the resulting structure is a **Jordan algebra**: commutative, with the Jordan identity but without associativity. This article identifies it, computes its product and its unit, and links it to the two structures that surround it — the Lie algebra of the skew operators (*The Unitary Group of a Form and Its Lie Algebra*) and the Hermitian forms of the layer (*Polarisation and the Hermitian Square*).
 
-Three facts are the substance. The product $T \circ S = \tfrac{1}{2}(TS + ST)$ of two self-adjoint operators is self-adjoint by the sign rule, so the self-adjoint part of the operator algebra is closed under the symmetrised product; the identity operator is the unit; the Jordan identity holds because the underlying product of the operators is associative, which makes the structure a **special** Jordan algebra, that is, one embedded in an associative algebra under the symmetrised product. The correspondence $T \mapsto Q_{T}$, $Q_{T}(x) = h(Tx,x)$, identifies the self-adjoint operators with the Hermitian forms of the shape $h(T\cdot,\cdot)$, and it is additive: the Jordan algebra of the form is a space of Hermitian forms with the anticommutator transported to the forms. And the **sandwich** $\Theta_{T}(y) = TyT^{*}$ coincides with the **quadratic representation** $U_{T}(S) = TST$ of the Jordan theory exactly when $T$ is self-adjoint, which is the identity that carries the two-sided operators of the category into the Jordan structure.
+Three facts are the substance. The product $T \circ S = \tfrac{1}{2}(TS + ST)$ of two self-adjoint operators is self-adjoint by the sign rule, so the self-adjoint part of the operator algebra is closed under the symmetrised product; the identity operator is the unit; the Jordan identity holds because the underlying product of the operators is associative, which makes the structure a **special** Jordan algebra, that is, one embedded in an associative algebra under the symmetrised product. The correspondence $T \mapsto Q_{T}$, $Q_{T}(x) = h(Tx,x)$, identifies the self-adjoint operators with the Hermitian forms of the shape $h(T\cdot,\cdot)$, and it is additive: the Jordan algebra of the form is a space of Hermitian forms with the anticommutator transported to the forms. And the **sandwich** $\mathrm{Sd}_{T}(y) = TyT^{*}$ coincides with the **quadratic representation** $U_{T}(S) = TST$ of the Jordan theory exactly when $T$ is self-adjoint, which is the identity that carries the two-sided operators of the category into the Jordan structure.
 
 The Jordan algebra of the *elements* of a sesqualgebra — the self-adjoint elements with the symmetrised product — is *The Hermitian Jordan Algebra* and *Self-Adjoint Elements and the Positive Cone*; this article is the operator-level companion, and the positivity of the operators and the cone are Part II: *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* and *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*. Throughout, $(A,*,h)$ is a sesqualgebra with a form with $h$ nonsingular, $2$ is invertible in the fixed ring, and the operators are the $R$-linear endomorphisms of $A$ admitting an adjoint for $h$.
 
@@ -44,10 +44,10 @@ is an injective $R^{\varsigma}$-linear map onto the Hermitian forms of the shape
 
 **Definition.** The **quadratic representation** of an operator $T$ is $U_{T}(S) = TST$; it is an operator on the algebra of the operators.
 
-**Proposition.** The sandwich $\Theta_{T}(y) = TyT^{*}$ of *The Form-Adjoint of the Multiplications* coincides with the quadratic representation exactly when $T$ is self-adjoint:
+**Proposition.** The sandwich $\mathrm{Sd}_{T}(y) = TyT^{*}$ of *The Form-Adjoint of the Multiplications* coincides with the quadratic representation exactly when $T$ is self-adjoint:
 
 $$
-\boxed{\;T^{*} = T \implies \Theta_{T} = U_{T}, \qquad \text{and} \qquad \Theta_{T}(S) = TST^{*}\;} .
+\boxed{\;T^{*} = T \implies \mathrm{Sd}_{T} = U_{T}, \qquad \text{and} \qquad \mathrm{Sd}_{T}(S) = TST^{*}\;} .
 $$
 
 **Proof.** For a self-adjoint $T$ the definition of the sandwich gives $TyT^{*} = TyT$, which is the quadratic representation. The general statement is the definition of the sandwich read as an operator on the operator algebra.
@@ -89,7 +89,7 @@ On $\mathbb{B}$ with the dagger the self-adjoint operators are the Hermitian for
 | $\operatorname{Herm}(A,h)$ | the self-adjoint operators of the form |
 | $Q_{T}(x) = h(Tx,x)$ | the Hermitian form of a self-adjoint operator |
 | $U_{T}(S) = TST$ | the quadratic representation |
-| $\Theta_{T}(y) = TyT^{*}$ | the sandwich, equal to $U_{T}$ for self-adjoint $T$ |
+| $\mathrm{Sd}_{T}(y) = TyT^{*}$ | the sandwich, equal to $U_{T}$ for self-adjoint $T$ |
 
 ## Further Reading
 

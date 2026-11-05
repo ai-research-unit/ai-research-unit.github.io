@@ -112,7 +112,7 @@ The inverse transform then fixes the support, and this is the source's real resu
 
 $$
 \psi_m(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
-= \frac{\exp(-m\tau)}{4\pi R}\Bigl[a\,\Theta(\tau)\,\delta(\tau - R) + (1-a)\,\Theta(-\tau)\,\delta(\tau + R)\Bigr] + \psi^0_m ,
+= \frac{\exp(-m\tau)}{4\pi R}\Bigl[a\,\mathrm{H}^{\mathrm{hvs}}(\tau)\,\delta(\tau - R) + (1-a)\,\mathrm{H}^{\mathrm{hvs}}(-\tau)\,\delta(\tau + R)\Bigr] + \psi^0_m ,
 $$
 
 where $\psi^0_m$ solves the homogeneous equation. Two points of the source's display need correcting, and both follow from the derivation rather than from opinion.

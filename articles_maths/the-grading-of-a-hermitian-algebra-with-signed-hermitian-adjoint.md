@@ -7,7 +7,7 @@ A Clifford algebra carries a $\mathbb{Z}/2$-grading by the parity of the length 
 The subject is the interaction of the grading with the dagger. The dagger preserves the parity, $x^{\dagger}\in\mathrm{Cl}^{|x|}$, because both reversion and the coefficient involution are even; consequently the signed Hermitian sandwich is **even** in the sense that it preserves the parity of its argument, and the sign that separates it from the unsigned member is the sign character of the grading itself,
 
 $$
-\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x,\qquad \varepsilon_x=(-1)^{|x|},
+\mathrm{Sd}^{\alpha}_x=\varepsilon_x\,\mathrm{Sd}_x,\qquad \varepsilon_x=(-1)^{|x|},
 $$
 
 $\varepsilon$ being the algebra homomorphism $\mathrm{Cl}(V,\mathfrak{Q})\to\{\pm1\}$ that is $+1$ on the even part and $-1$ on the odd part.
@@ -25,12 +25,12 @@ The algebra, the grading and the three involutions are *Clifford Algebras* and *
 **Proposition (the parity sign, restated as a statement about the grading).** For homogeneous $x$ the twist is the sign character on the left factor, $\alpha(x)=\varepsilon_x x$, so
 
 $$
-\boxed{\;\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x\;} .
+\boxed{\;\mathrm{Sd}^{\alpha}_x=\varepsilon_x\,\mathrm{Sd}_x\;} .
 $$
 
 The operator family is therefore a graded deformation of the Hermitian family: the two agree on $\mathrm{Cl}^0$, the even part of the algebra of operators, and differ by $-1$ on $\mathrm{Cl}^1$.
 
-*Proof.* The grade involution is by definition multiplication by $(-1)^k$ on $\mathrm{Cl}^k$; substitute into the definition of $\Theta^{\alpha}_x$ and use centrality of the scalar.
+*Proof.* The grade involution is by definition multiplication by $(-1)^k$ on $\mathrm{Cl}^k$; substitute into the definition of $\mathrm{Sd}^{\alpha}_x$ and use centrality of the scalar.
 
 **Proposition (the sign is a homomorphism).** The assignment $x\mapsto\varepsilon_x$ defined on homogeneous elements is the nontrivial character of the grading,
 
@@ -49,38 +49,38 @@ so it extends to a monoid homomorphism on the whole algebra, and it induces an i
 **Proposition.** For all $x,z$ the family is exactly multiplicative,
 
 $$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz},
+\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}^{\alpha}_{xz},
 $$
 
 and written with the unsigned operator on the right the same statement reads
 
 $$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\;\Theta_{xz},
+\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=\varepsilon_x\varepsilon_z\;\mathrm{Sd}_{xz},
 $$
 
 so for homogeneous $x,z$ the composite is the **ordinary** Hermitian sandwich exactly when the two parities agree,
 
 $$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=
+\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=
 \begin{cases}
-\Theta_{xz}, & x,z \text{ both even or both odd},\\[2pt]
--\,\Theta_{xz}, & x,z \text{ of opposite parity}.
+\mathrm{Sd}_{xz}, & x,z \text{ both even or both odd},\\[2pt]
+-\,\mathrm{Sd}_{xz}, & x,z \text{ of opposite parity}.
 \end{cases}
 $$
 
-*Proof.* Multiplicativity $\Theta^{\alpha}_{uv}=\Theta^{\alpha}_u\Theta^{\alpha}_v$ is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; substituting the parity-sign identity $\Theta^{\alpha}_w=\varepsilon_w\Theta_w$ for $w=x,z,xz$ and using $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ gives the second form, and $\varepsilon_x\varepsilon_z=+1$ exactly when the parities agree.
+*Proof.* Multiplicativity $\mathrm{Sd}^{\alpha}_{uv}=\mathrm{Sd}^{\alpha}_u\mathrm{Sd}^{\alpha}_v$ is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; substituting the parity-sign identity $\mathrm{Sd}^{\alpha}_w=\varepsilon_w\mathrm{Sd}_w$ for $w=x,z,xz$ and using $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ gives the second form, and $\varepsilon_x\varepsilon_z=+1$ exactly when the parities agree.
 
 **Corollary (two odd steps give an ordinary step).** If $x$ and $z$ are both odd then $xz$ is even, $\varepsilon_{xz}=+1$, and
 
 $$
-\boxed{\;\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\Theta_{xz}\;},
+\boxed{\;\mathrm{Sd}^{\alpha}_x\circ\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}^{\alpha}_{xz}=\mathrm{Sd}_{xz}\;},
 $$
 
-an **ordinary** Hermitian sandwich. The square of an odd step is ordinary as well, $(\Theta^{\alpha}_x)^{2}=\Theta_{x^{2}}$.
+an **ordinary** Hermitian sandwich. The square of an odd step is ordinary as well, $(\mathrm{Sd}^{\alpha}_x)^{2}=\mathrm{Sd}_{x^{2}}$.
 
 *Proof.* The product of two odd elements is even, so the twist is trivial on it; the rest is the multiplicativity.
 
-**Remark (the family is graded, and one odd generator suffices).** Fix an odd $u$. Every odd $x$ is $x=us$ with $s$ even, so $\Theta^{\alpha}_x=\Theta^{\alpha}_u\circ\Theta^{\alpha}_s$: the odd operators are the composite of one fixed odd operator with the even ones, and the even ones are unsigned. The parity of the parameter is therefore the only new input, exactly as for the inverse member.
+**Remark (the family is graded, and one odd generator suffices).** Fix an odd $u$. Every odd $x$ is $x=us$ with $s$ even, so $\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}^{\alpha}_u\circ\mathrm{Sd}^{\alpha}_s$: the odd operators are the composite of one fixed odd operator with the even ones, and the even ones are unsigned. The parity of the parameter is therefore the only new input, exactly as for the inverse member.
 
 ## The Odd Part of the Unitary Group is a Coset
 
@@ -103,7 +103,7 @@ whenever the odd part is non-empty, which over $\mathbb{R}$ always holds since a
 
 *Proof.* The trivial involution makes the dagger the Clifford conjugation, so $U=\{x:N(x)=1\}=\mathrm{Pin}$, and $U^0=\mathrm{Spin}$; the coset statement is the proposition, and the reflection statement is the vector proposition of the companion article.
 
-**Remark.** The operator $\Theta^{\alpha}$ is not injective on $U$: on the slice it is the signed inner conjugation $\mathrm{Ad}^{\alpha}$, whose kernel is the scalars, so the odd coset is not separated by the operator from the even coset beyond the parity sign. What separates them is the determinant, in the next section but one.
+**Remark.** The operator $\mathrm{Sd}^{\alpha}$ is not injective on $U$: on the slice it is the signed inner conjugation $\mathrm{Ad}^{\alpha}$, whose kernel is the scalars, so the odd coset is not separated by the operator from the even coset beyond the parity sign. What separates them is the determinant, in the next section but one.
 
 ## The Two Components as Even Modules
 
@@ -128,14 +128,14 @@ with basis $\{1,e\}$. The dagger-form $\langle x,y\rangle_{\dagger}=\mathrm{Sc}(
 **Proposition.** For $x\in\Gamma(V,\mathfrak{Q})$ of parity $k$, the two Hermitian sandwiches act on the vectors as
 
 $$
-\Theta^{\alpha}_x\bigr|_{V}=\varepsilon_x\,\Theta_x\bigr|_{V},
+\mathrm{Sd}^{\alpha}_x\bigr|_{V}=\varepsilon_x\,\mathrm{Sd}_x\bigr|_{V},
 $$
 
 and on the unitary slice, where both reduce to conjugations, their determinants are
 
 $$
-\det\Theta^{\alpha}_x\bigr|_{V}=\varepsilon_x,\qquad
-\det\Theta_x\bigr|_{V}=(\varepsilon_x)^{n+1}=
+\det\mathrm{Sd}^{\alpha}_x\bigr|_{V}=\varepsilon_x,\qquad
+\det\mathrm{Sd}_x\bigr|_{V}=(\varepsilon_x)^{n+1}=
 \begin{cases}
 \varepsilon_x, & n \text{ even},\\[2pt]
 +1, & n \text{ odd}.
@@ -155,14 +155,14 @@ Consequently for $n$ even the two members reach the same two cosets of $SO(V,\ma
 In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ and $\sigma=\mathrm{id}$, let $u=e_1$ and $w=e_2$, both odd. Then $\varepsilon_u=\varepsilon_w=-1$ and
 
 $$
-\Theta^{\alpha}_{e_1}\circ\Theta^{\alpha}_{e_2}=\Theta^{\alpha}_{e_1e_2}=\Theta_{e_1e_2},
+\mathrm{Sd}^{\alpha}_{e_1}\circ\mathrm{Sd}^{\alpha}_{e_2}=\mathrm{Sd}^{\alpha}_{e_1e_2}=\mathrm{Sd}_{e_1e_2},
 $$
 
 the half-turn of the plane $\mathrm{span}(e_1,e_2)$ with $e_3$ fixed, of determinant $+1$: two signed Hermitian sandwiches, each the reflection $\rho_{e_1}$, $\rho_{e_2}$ of determinant $-1$, have composed into one ordinary Hermitian sandwich, a rotation.
 
 ### The Odd Coset of the Unitary Group
 
-In the same algebra $U=\mathrm{Pin}=\{x:N(x)=1\}$, with $\mathrm{Spin}=\{1,e_1e_2,e_2e_3,e_3e_1\}$ up to sign and the odd coset $e_1\,\mathrm{Spin}$. The element $e_1$ has $\varepsilon=-1$, and $\Theta^{\alpha}_{e_1}=\rho_{e_1}$ has determinant $-1$; the element $e_1e_2$ has $\varepsilon=+1$, and $\Theta^{\alpha}_{e_1e_2}=\Theta_{e_1e_2}$ has determinant $+1$. The sign of the operator is the determinant of the isometry, and it is constant along each coset.
+In the same algebra $U=\mathrm{Pin}=\{x:N(x)=1\}$, with $\mathrm{Spin}=\{1,e_1e_2,e_2e_3,e_3e_1\}$ up to sign and the odd coset $e_1\,\mathrm{Spin}$. The element $e_1$ has $\varepsilon=-1$, and $\mathrm{Sd}^{\alpha}_{e_1}=\rho_{e_1}$ has determinant $-1$; the element $e_1e_2$ has $\varepsilon=+1$, and $\mathrm{Sd}^{\alpha}_{e_1e_2}=\mathrm{Sd}_{e_1e_2}$ has determinant $+1$. The sign of the operator is the determinant of the isometry, and it is constant along each coset.
 
 ### The Hermitian Form is Even
 
@@ -170,9 +170,9 @@ In $\mathrm{Cl}_{0,3}$ the even part is spanned by $1,e_1e_2,e_2e_3,e_3e_1$ and 
 
 ## Summary
 
-The grading $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ interacts with the dagger in three ways. The dagger is **even**, so it preserves the parity; the twist is the **sign character** $\alpha(x)=\varepsilon_x x$, so the signed Hermitian sandwich is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$, agreeing with the unsigned member on the even part and differing by $-1$ on the odd part; and the sign is a **homomorphism** $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ of the parity quotient onto $\{\pm1\}$.
+The grading $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ interacts with the dagger in three ways. The dagger is **even**, so it preserves the parity; the twist is the **sign character** $\alpha(x)=\varepsilon_x x$, so the signed Hermitian sandwich is $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$, agreeing with the unsigned member on the even part and differing by $-1$ on the odd part; and the sign is a **homomorphism** $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ of the parity quotient onto $\{\pm1\}$.
 
-The composition is exactly multiplicative, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}$, equivalently $\Theta^{\alpha}_x\Theta^{\alpha}_z=\varepsilon_x\varepsilon_z\Theta_{xz}$: two operators with odd parameters compose to an **ordinary** Hermitian sandwich, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$, the two signs cancel, and the square of an odd step is ordinary. The odd part of the unitary group is a **coset** and not a subgroup, $U=U^0\sqcup uU^0$ with $U/U^0\cong\mathbb{Z}/2$, which for the trivial involution is $\mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2$; the odd coset is what carries the reflections. The algebra is a rank-two module over its even part, $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^0e$, and the Hermitian form is even, the orthogonal sum of the forms on the two components, so the Hermitian structure does not mix the parities while the multiplication does. On the slice the two Hermitian sandwiches are the two conjugations, with determinants $\varepsilon_x$ and $(\varepsilon_x)^{n+1}$, so in odd dimension only the signed member reaches the improper isometries: the parity of the parameter *is* the determinant of the isometry.
+The composition is exactly multiplicative, $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}^{\alpha}_{xz}$, equivalently $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\varepsilon_x\varepsilon_z\mathrm{Sd}_{xz}$: two operators with odd parameters compose to an **ordinary** Hermitian sandwich, $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}_{xz}$, the two signs cancel, and the square of an odd step is ordinary. The odd part of the unitary group is a **coset** and not a subgroup, $U=U^0\sqcup uU^0$ with $U/U^0\cong\mathbb{Z}/2$, which for the trivial involution is $\mathrm{Pin}/\mathrm{Spin}\cong\mathbb{Z}/2$; the odd coset is what carries the reflections. The algebra is a rank-two module over its even part, $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^0e$, and the Hermitian form is even, the orthogonal sum of the forms on the two components, so the Hermitian structure does not mix the parities while the multiplication does. On the slice the two Hermitian sandwiches are the two conjugations, with determinants $\varepsilon_x$ and $(\varepsilon_x)^{n+1}$, so in odd dimension only the signed member reaches the improper isometries: the parity of the parameter *is* the determinant of the isometry.
 
 ## Summary of Notation
 
@@ -180,13 +180,13 @@ The composition is exactly multiplicative, $\Theta^{\alpha}_x\Theta^{\alpha}_z=\
 |---|---|
 | $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The parity grading |
 | $\varepsilon_x=(-1)^{|x|}$ | The sign character, $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ |
-| $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ | Signed vs unsigned Hermitian sandwich |
-| $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta_{xz}$ ($x,z$ odd) | Two odd signs cancel |
+| $\mathrm{Sd}^{\alpha}_x=\varepsilon_x\mathrm{Sd}_x$ | Signed vs unsigned Hermitian sandwich |
+| $\mathrm{Sd}^{\alpha}_x\mathrm{Sd}^{\alpha}_z=\mathrm{Sd}_{xz}$ ($x,z$ odd) | Two odd signs cancel |
 | $U=U^0\sqcup uU^0$, $U/U^0\cong\mathbb{Z}/2$ | Odd part of the unitary group is a coset |
 | $\mathrm{Pin}=\mathrm{Spin}\sqcup(\text{odd coset})$ | The same for the pin group, $\sigma=\mathrm{id}$ |
 | $\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^0e$ | Rank-two module over the even part |
 | $\langle x,y\rangle_{\dagger}=\mathrm{Sc}(x^{\dagger}y)$ | Hermitian form, even, orthogonal on the two components |
-| $\det\Theta^{\alpha}_x|_V=\varepsilon_x$ on $U$ | The sign is the determinant |
+| $\det\mathrm{Sd}^{\alpha}_x|_V=\varepsilon_x$ on $U$ | The sign is the determinant |
 
 ## Further Reading
 

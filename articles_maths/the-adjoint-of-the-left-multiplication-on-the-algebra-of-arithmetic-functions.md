@@ -5,7 +5,7 @@
 
 The left multiplication $L_a(f)=a*f$ is the regular representation of the algebra of arithmetic functions under Dirichlet convolution, and the adjoint of $L_a$ with respect to the coefficient form is not the left multiplication by $a^*$. It is the **transposed multiplication**
 $$
-(\Theta_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk),
+(\mathrm{Sd}_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk),
 $$
 an operator that sums the coefficients of $g$ along the multiples of $k$; it is a right multiplication in the transposed algebra and it generates the two-structure problem of this corpus, the fact that the involution on the elements and the adjoint on the operators are different structures. This article computes the adjoint, states when it is a multiplication, and identifies the degenerate cases in which the coincidence fails or the form collapses. It is the arithmetic prototype of *The Adjoint of the Left Multiplication on a Ring* and the reference for the signed adjoints of this category. Nothing here reads a distance as an object.
 
@@ -15,14 +15,14 @@ an operator that sums the coefficients of $g$ along the multiples of $k$; it is 
 
 **Definition.** The **left multiplication** by $a\in\mathcal{A}$ is $L_a(f)=a*f$, and the **transposed multiplication** is
 $$
-\Theta_a=L_a^*,\qquad (\Theta_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk).
+\mathrm{Sd}_a=L_a^*,\qquad (\mathrm{Sd}_ag)(k)=\sum_{m\ge1}\overline{a(m)}\,g(mk).
 $$
 
-**Theorem.** With respect to the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$ on $\mathcal{H}=\ell^2$, the adjoint of $L_a$ is $\Theta_a$:
+**Theorem.** With respect to the coefficient form $\langle f,g\rangle=\sum_nf(n)\overline{g(n)}$ on $\mathcal{H}=\ell^2$, the adjoint of $L_a$ is $\mathrm{Sd}_a$:
 $$
-\boxed{\;\langle L_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)f(k)\Bigr)\overline{g(n)}=\sum_{m,k}a(m)f(k)\overline{g(mk)}=\langle f,\Theta_ag\rangle\;} .
+\boxed{\;\langle L_af,g\rangle=\sum_n\Bigl(\sum_{mk=n}a(m)f(k)\Bigr)\overline{g(n)}=\sum_{m,k}a(m)f(k)\overline{g(mk)}=\langle f,\mathrm{Sd}_ag\rangle\;} .
 $$
-The map $\Theta_a$ is anti-linear in $a$ and linear in $g$; it is a right multiplication in the transposed algebra, $\Theta_a\Theta_b=\Theta_b\Theta_a$, and $\Theta_\varepsilon=\mathrm{id}$.
+The map $\mathrm{Sd}_a$ is anti-linear in $a$ and linear in $g$; it is a right multiplication in the transposed algebra, $\mathrm{Sd}_a\mathrm{Sd}_b=\mathrm{Sd}_b\mathrm{Sd}_a$, and $\mathrm{Sd}_\varepsilon=\mathrm{id}$.
 
 **Proof.** The computation is the change of variables $n=mk$; the anti-linearity is the conjugation in the definition, and the composition law is the change of variables in the double sum. The transposed algebra is the algebra with the reversed product.
 
@@ -30,7 +30,7 @@ The map $\Theta_a$ is anti-linear in $a$ and linear in $g$; it is a right multip
 
 **Theorem.** In general $L_a^*\ne L_{a^*}$, and the equality holds exactly for the scalar multiples of the identity:
 $$
-\boxed{\;L_a^*=L_{a^*}\iff \Theta_a=L_{a^*}\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{C}\;}.
+\boxed{\;L_a^*=L_{a^*}\iff \mathrm{Sd}_a=L_{a^*}\iff a=\gamma\varepsilon,\ \gamma\in\mathbb{C}\;}.
 $$
 The operator $L_a$ is self-adjoint exactly when $a$ is a real scalar multiple of the identity,
 $$
@@ -40,41 +40,41 @@ and it is unitary exactly when $a$ is a unit scalar multiple of the identity,
 $$
 \boxed{\;L_a^*L_a=L_aL_a^*=\mathrm{id}\iff a=\gamma\varepsilon,\ |\gamma|=1\;}.
 $$
-The operator is an isometry exactly when $\Theta_aL_a=\mathrm{id}$, which holds in particular for $a=\gamma\delta_p$ with $|\gamma|=1$.
+The operator is an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which holds in particular for $a=\gamma\delta_p$ with $|\gamma|=1$.
 
-**Proof.** Test the identity on $\delta_1$: $\Theta_a\delta_1=\overline{a(1)}\delta_1$ while $L_{a^*}\delta_1=a^*=\overline a$, so equality forces $a=\gamma\delta_1$, and then both sides are $\overline\gamma\,\mathrm{id}$; the self-adjointness and unitarity computations are the same test applied to $\Theta_a=L_a$ and to the two products. This is the standard computation of the adjoint of a convolution operator, in *Convolution Operators*.
+**Proof.** Test the identity on $\delta_1$: $\mathrm{Sd}_a\delta_1=\overline{a(1)}\delta_1$ while $L_{a^*}\delta_1=a^*=\overline a$, so equality forces $a=\gamma\delta_1$, and then both sides are $\overline\gamma\,\mathrm{id}$; the self-adjointness and unitarity computations are the same test applied to $\mathrm{Sd}_a=L_a$ and to the two products. This is the standard computation of the adjoint of a convolution operator, in *Convolution Operators*.
 
-**Corollary (the Dirichlet inverse).** $L_a$ is invertible exactly when $a$ is a unit of $\mathcal{A}$, and then $L_a^{-1}=L_{a^{-1}}$; the adjoint of the inverse is $\Theta_{a^{-1}}$, and the operator is normal, $L_aL_a^*=L_a^*L_a$, exactly when $\Theta_a$ commutes with $L_a$, which happens for all $a$ in the degenerate rank-one case.
+**Corollary (the Dirichlet inverse).** $L_a$ is invertible exactly when $a$ is a unit of $\mathcal{A}$, and then $L_a^{-1}=L_{a^{-1}}$; the adjoint of the inverse is $\mathrm{Sd}_{a^{-1}}$, and the operator is normal, $L_aL_a^*=L_a^*L_a$, exactly when $\mathrm{Sd}_a$ commutes with $L_a$, which happens for all $a$ in the degenerate rank-one case.
 
 ## Worked Examples
 
-**Example ($a=\delta_m$).** $L_{\delta_m}=D_m$ is the section of *The Shift Operator on the Coefficients* and $\Theta_{\delta_m}=S_m$ is the division; the adjoint pair is the pair of the fundamental identities $S_mD_m=\mathrm{id}$, $D_mS_m=P_m$, and $L_{\delta_m}^*=S_m\ne L_{\delta_m}$.
+**Example ($a=\delta_m$).** $L_{\delta_m}=D_m$ is the section of *The Shift Operator on the Coefficients* and $\mathrm{Sd}_{\delta_m}=S_m$ is the division; the adjoint pair is the pair of the fundamental identities $S_mD_m=\mathrm{id}$, $D_mS_m=P_m$, and $L_{\delta_m}^*=S_m\ne L_{\delta_m}$.
 
-**Example ($a=\mathbf 1$).** $L_{\mathbf 1}f=d*f$ with $d$ the divisor function; the adjoint is $(\Theta_{\mathbf 1}g)(k)=\sum_mg(mk)$, the operator of the summatory function along the multiples of $k$. It is not a multiplication and not an involution.
+**Example ($a=\mathbf 1$).** $L_{\mathbf 1}f=d*f$ with $d$ the divisor function; the adjoint is $(\mathrm{Sd}_{\mathbf 1}g)(k)=\sum_mg(mk)$, the operator of the summatory function along the multiples of $k$. It is not a multiplication and not an involution.
 
-**Example ($a=\lambda$).** $L_\lambda$ is the grade involution as a convolution operator, and $\Theta_\lambda=\alpha\Theta_{\mathbf 1}\alpha$; it is not $L_\lambda$.
+**Example ($a=\lambda$).** $L_\lambda$ is the grade involution as a convolution operator, and $\mathrm{Sd}_\lambda=\alpha\mathrm{Sd}_{\mathbf 1}\alpha$; it is not $L_\lambda$.
 
-**Example ($a=\mu$).** $L_\mu$ is the inverse of $L_{\mathbf 1}$; its adjoint is $\Theta_\mu$, and $L_\mu\Theta_\mu=\mathrm{id}$ on the squarefree functions, so $L_\mu$ is an isometry on that subspace.
+**Example ($a=\mu$).** $L_\mu$ is the inverse of $L_{\mathbf 1}$; its adjoint is $\mathrm{Sd}_\mu$, and $L_\mu\mathrm{Sd}_\mu=\mathrm{id}$ on the squarefree functions, so $L_\mu$ is an isometry on that subspace.
 
 ## Failure of the Degenerate Cases
 
-The adjoint fails to be a multiplication in four degenerate configurations. First, $\Theta_a$ is a multiplication only when $a$ is a scalar multiple of the identity; for every other $a$ the operator $L_a$ is not normal, and the operator algebra generated by $L_a$ is the Toeplitz-like algebra of the monoid order. Second, the identity $L_a^*=L_{a^*}$ and the involution on the algebra are two structures that cannot be reconciled on any nondegenerate form: the only form for which the convolution-invariance $L_a^*=L_{a^*}$ holds is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one. Third, the operator $L_a$ is unbounded on the finitely supported functions when $a$ has infinite nonvanishing support in a suitable sense, and the adjoint is defined only on the domain of $\Theta_a$; the article works on $\mathcal{H}$ and on the weighted spaces $\mathcal{A}(\sigma)$. Fourth, on the weighted space $\mathcal{A}(\sigma)$ the adjoint is the transposed multiplication for the weighted form, and the weight changes which operators are bounded but not the identity $L_a^*=\Theta_a$. These are the boundary cases of the adjoint.
+The adjoint fails to be a multiplication in four degenerate configurations. First, $\mathrm{Sd}_a$ is a multiplication only when $a$ is a scalar multiple of the identity; for every other $a$ the operator $L_a$ is not normal, and the operator algebra generated by $L_a$ is the Toeplitz-like algebra of the monoid order. Second, the identity $L_a^*=L_{a^*}$ and the involution on the algebra are two structures that cannot be reconciled on any nondegenerate form: the only form for which the convolution-invariance $L_a^*=L_{a^*}$ holds is the augmentation form $\{f,g\}=f(1)\overline{g(1)}$, of rank one. Third, the operator $L_a$ is unbounded on the finitely supported functions when $a$ has infinite nonvanishing support in a suitable sense, and the adjoint is defined only on the domain of $\mathrm{Sd}_a$; the article works on $\mathcal{H}$ and on the weighted spaces $\mathcal{A}(\sigma)$. Fourth, on the weighted space $\mathcal{A}(\sigma)$ the adjoint is the transposed multiplication for the weighted form, and the weight changes which operators are bounded but not the identity $L_a^*=\mathrm{Sd}_a$. These are the boundary cases of the adjoint.
 
 ## Summary
 
-For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a*f$ has adjoint the transposed multiplication $\Theta_a=L_a^*$ with $(\Theta_ag)(k)=\sum_m\overline{a(m)}g(mk)$; it is a multiplication only for $a=\gamma\varepsilon$, and $L_a^*=L_{a^*}$ exactly for the scalar multiples of the identity, so the involution on the elements and the adjoint on the operators are different structures. The operator is self-adjoint exactly for the real scalars, unitary exactly for the unitary scalars, and an isometry exactly when $\Theta_aL_a=\mathrm{id}$; it is invertible exactly for the units with $L_a^{-1}=L_{a^{-1}}$. The degenerate cases are the non-normality of the general $L_a$, the rank-one augmentation form, the unboundedness of $L_a$ without a weight and the weighted adjoint.
+For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a*f$ has adjoint the transposed multiplication $\mathrm{Sd}_a=L_a^*$ with $(\mathrm{Sd}_ag)(k)=\sum_m\overline{a(m)}g(mk)$; it is a multiplication only for $a=\gamma\varepsilon$, and $L_a^*=L_{a^*}$ exactly for the scalar multiples of the identity, so the involution on the elements and the adjoint on the operators are different structures. The operator is self-adjoint exactly for the real scalars, unitary exactly for the unitary scalars, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$; it is invertible exactly for the units with $L_a^{-1}=L_{a^{-1}}$. The degenerate cases are the non-normality of the general $L_a$, the rank-one augmentation form, the unboundedness of $L_a$ without a weight and the weighted adjoint.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $L_a(f)=a*f$ | Left multiplication |
-| $\Theta_a=L_a^*$ | Transposed multiplication |
-| $(\Theta_ag)(k)=\sum_m\overline{a(m)}g(mk)$ | Explicit adjoint |
+| $\mathrm{Sd}_a=L_a^*$ | Transposed multiplication |
+| $(\mathrm{Sd}_ag)(k)=\sum_m\overline{a(m)}g(mk)$ | Explicit adjoint |
 | $L_a^*\ne L_{a^*}$ | The two-structure failure |
 | $L_a^*=L_a\iff a=\gamma\varepsilon$, $\gamma\in\mathbb{R}$ | Self-adjointness |
 | $L_a^*L_a=\mathrm{id}\iff a=\gamma\varepsilon$, $|\gamma|=1$ | Unitarity |
-| $\Theta_aL_a=\mathrm{id}$ | Isometry condition |
+| $\mathrm{Sd}_aL_a=\mathrm{id}$ | Isometry condition |
 | $L_a^{-1}=L_{a^{-1}}$ | Inverse for a unit |
 | $\mathcal{A}(\sigma)$ | Weighted space |
 

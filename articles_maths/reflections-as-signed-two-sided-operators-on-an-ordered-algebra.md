@@ -6,7 +6,7 @@
 A **reflection** of an algebra is an automorphism of order two, and a **reflection element** is an element $a$ that the grade involution inverts, $\alpha(a) = a^{-1}$. The previous article showed that every reflection element produces a reflection of the algebra, the **signed conjugation**
 
 $$
-\tau_a : x\mapsto a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,\alpha(a)^{-1}}(x),
+\tau_a : x\mapsto a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,\alpha(a)^{-1}}(x),
 $$
 
 which is a signed two-sided operator. This article reads the correspondence in both directions: the reflection elements form a group under the twisted product $(a,b)\mapsto a\alpha(b)$, the map $a\mapsto\tau_a$ is a **homomorphism** from that group onto the reflections of the algebra that the signed sandwich realises, and the homomorphism has a kernel — the **central reflection elements**, which act trivially — so that the correspondence is neither injective nor surjective. The **grade involution** itself is the reflection $\tau_1$ realised by the identity, which is the reason the graded structure sits inside the reflections; and the failure of the correspondence in the degenerate cases — central elements, an inner grade involution, and characteristic two — is stated exactly.
@@ -37,7 +37,7 @@ $$
 
 the sandwich with the **product parameter** $c = a\alpha(b)$; this product is again a **realised reflection** if and only if $c$ is again a reflection element, which happens exactly when $a$ and $b$ commute. Hence a set of pairwise commuting reflection elements is a group under the twisted product $a\cdot b = a\alpha(b)$, with inverse $a\mapsto\alpha(a) = a^{-1}$ and identity $1$, and the correspondence is a group homomorphism on it.
 
-*Proof.* By the composition law of the signed sandwich, $\tau_a\tau_b = \Theta^{\alpha}_{a\alpha(b),\,b^{-1}\alpha(a)^{-1}}$; the reflection-element identities $b^{-1} = \alpha(b)$ and $\alpha(a)^{-1} = a$ give $\Theta^{\alpha}_{a\alpha(b),\,b^{-1}a}$, which is $\tau_{a\alpha(b)}$ because $\alpha(a\alpha(b))^{-1} = (a^{-1}b)^{-1} = b^{-1}a$. The product parameter $c = a\alpha(b)$ is a reflection element exactly when $\alpha(c) = c^{-1}$, that is, $a^{-1}b = b\,a^{-1}$, which is the commutation of $a$ and $b$. When the elements commute pairwise, the closure, the associativity, the identity and the inverse make the set a group and the product formula makes $\tau$ a homomorphism.
+*Proof.* By the composition law of the signed sandwich, $\tau_a\tau_b = \mathrm{Sd}^{\alpha}_{a\alpha(b),\,b^{-1}\alpha(a)^{-1}}$; the reflection-element identities $b^{-1} = \alpha(b)$ and $\alpha(a)^{-1} = a$ give $\mathrm{Sd}^{\alpha}_{a\alpha(b),\,b^{-1}a}$, which is $\tau_{a\alpha(b)}$ because $\alpha(a\alpha(b))^{-1} = (a^{-1}b)^{-1} = b^{-1}a$. The product parameter $c = a\alpha(b)$ is a reflection element exactly when $\alpha(c) = c^{-1}$, that is, $a^{-1}b = b\,a^{-1}$, which is the commutation of $a$ and $b$. When the elements commute pairwise, the closure, the associativity, the identity and the inverse make the set a group and the product formula makes $\tau$ a homomorphism.
 
 ## The Correspondence
 
@@ -63,7 +63,7 @@ the **realised reflections**, and the grade involution is the reflection $\tau_1
 
 ### Positivity of the Reflections
 
-**Proposition.** A realised reflection $\tau_a$ is positive if and only if the signed sandwich $\Theta^{\alpha}_{a,\alpha(a)^{-1}}$ is positive; in particular, if the grade involution is positive and both $a$ and $\alpha(a)^{-1}$ are positive, then $\tau_a$ is positive, and if the grade involution is positive and $a$ is positive while $\alpha(a)^{-1} = \alpha(a^{-1})$ is negative, then $\tau_a$ is order reversing. In the graded case with parity $\varepsilon$ the reflection acts as
+**Proposition.** A realised reflection $\tau_a$ is positive if and only if the signed sandwich $\mathrm{Sd}^{\alpha}_{a,\alpha(a)^{-1}}$ is positive; in particular, if the grade involution is positive and both $a$ and $\alpha(a)^{-1}$ are positive, then $\tau_a$ is positive, and if the grade involution is positive and $a$ is positive while $\alpha(a)^{-1} = \alpha(a^{-1})$ is negative, then $\tau_a$ is order reversing. In the graded case with parity $\varepsilon$ the reflection acts as
 
 $$
 \boxed{\;\tau_a(x) = \varepsilon_x\,\operatorname{Inn}_a(x) \qquad (x \ \text{homogeneous})\;} ,
@@ -71,7 +71,7 @@ $$
 
 so it agrees with the ordinary inner conjugation on the even part and is its negative on the odd part.
 
-*Proof.* The first statement is the definition of the positivity of an operator; the positivity criteria are those of the positivity proposition of *The Signed Sandwich on an Ordered Algebra*; the parity formula is the parity formula of the same proposition applied to the sandwich $\Theta^\alpha_{a,\alpha(a)^{-1}}$.
+*Proof.* The first statement is the definition of the positivity of an operator; the positivity criteria are those of the positivity proposition of *The Signed Sandwich on an Ordered Algebra*; the parity formula is the parity formula of the same proposition applied to the sandwich $\mathrm{Sd}^\alpha_{a,\alpha(a)^{-1}}$.
 
 ## The Failure in the Degenerate Cases
 
@@ -103,7 +103,7 @@ Let $A$ be the Clifford algebra of a **nondegenerate** quadratic form on a vecto
 
 ## Summary
 
-A **reflection** of an algebra is an automorphism of order two, **positive** when it preserves the cone; a **reflection element** is an $a$ with $\alpha(a) = a^{-1}$. The reflected operator is the signed two-sided operator $\tau_a(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,\alpha(a)^{-1}}(x)$; the map $\tau : a\mapsto\tau_a$ takes the reflection elements into the reflections, two reflection elements give the same reflection exactly when their ratio is central — this is the **non-injectivity** — and $\tau$ is a group homomorphism for the **twisted product** $a\cdot b = a\alpha(b)$ exactly on a set of pairwise commuting reflection elements. The realised reflections are exactly the composites of the grade involution with the inner automorphisms, $\tau_a = \operatorname{Inn}_a\circ\alpha$; the reflections with a different outer class are **not** realised — this is the **non-surjectivity**. The **grade involution is the reflection $\tau_1$**. In the graded case $\tau_a(x) = \varepsilon_x\operatorname{Inn}_a(x)$, the ordinary conjugation on the even part and its negative on the odd part, and the correspondence **collapses** when the grade involution is inner, when the algebra is commutative, and in characteristic two. The signed sandwich and its composition law are *The Signed Sandwich on an Ordered Algebra*; the one-sided multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading is *Superalgebras and Graded Structures*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; and the adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra*.
+A **reflection** of an algebra is an automorphism of order two, **positive** when it preserves the cone; a **reflection element** is an $a$ with $\alpha(a) = a^{-1}$. The reflected operator is the signed two-sided operator $\tau_a(x) = a\alpha(x)a^{-1} = \mathrm{Sd}^{\alpha}_{a,\alpha(a)^{-1}}(x)$; the map $\tau : a\mapsto\tau_a$ takes the reflection elements into the reflections, two reflection elements give the same reflection exactly when their ratio is central — this is the **non-injectivity** — and $\tau$ is a group homomorphism for the **twisted product** $a\cdot b = a\alpha(b)$ exactly on a set of pairwise commuting reflection elements. The realised reflections are exactly the composites of the grade involution with the inner automorphisms, $\tau_a = \operatorname{Inn}_a\circ\alpha$; the reflections with a different outer class are **not** realised — this is the **non-surjectivity**. The **grade involution is the reflection $\tau_1$**. In the graded case $\tau_a(x) = \varepsilon_x\operatorname{Inn}_a(x)$, the ordinary conjugation on the even part and its negative on the odd part, and the correspondence **collapses** when the grade involution is inner, when the algebra is commutative, and in characteristic two. The signed sandwich and its composition law are *The Signed Sandwich on an Ordered Algebra*; the one-sided multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading is *Superalgebras and Graded Structures*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; and the adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra*.
 
 ## Summary of Notation
 

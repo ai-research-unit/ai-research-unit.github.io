@@ -10,7 +10,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The sandwich of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Sandwich of an N-Regular, Spectrally Regular Biquaternion*. This article reads the one-sided factors: the polar word
+The sandwich of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Sandwich of an N-Regular, Spectrally Regular Biquaternion*. This article reads the one-sided factors: the polar word
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -47,7 +47,7 @@ $$
 L_i(\tilde X)=i\tilde X,\qquad i\mathbb{M}_-=\mathbb{M}_+,\qquad i\mathbb{M}_+=\mathbb{M}_- .
 $$
 
-It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided sandwich cancels: $\Theta_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
+It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided sandwich cancels: $\mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
 
 The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -95,7 +95,7 @@ The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M
 The one-sided operators are $L_{\tilde Q}$ and $R_{\tilde Q}$ above. The **Hermitian sandwich** is
 
 $$
-\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},\qquad \Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},\qquad \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$
 
 The general algebra of the one-sided operators, without the polar word, is *One-Sided Operators on the General Plain Sesqualgebra*; the two-sided theory is *Two-Sided Operators on the General Plain Sesqualgebra*. Here only the polar specialisation is treated.
@@ -120,7 +120,7 @@ The general algebra of the one-sided operators, without the polar word, is *One-
 
 **Remark (multiplicativity).** The map $\tilde Q\mapsto L_{\tilde Q}$ is multiplicative into $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, but a single $L_{\tilde Q}$ is rarely an algebra endomorphism: $L_{\tilde Q}(\tilde X\tilde Y)=\tilde Q\tilde X\tilde Y$ while $L_{\tilde Q}(\tilde X)L_{\tilde Q}(\tilde Y)=\tilde Q\tilde X\tilde Q\tilde Y$, so multiplicativity forces $\tilde Q$ to be a central idempotent. In $\mathbb{B}$ the central idempotents are $0$ and $e_t$, so the only nonzero multiplicative left multiplication is the identity. The representation property is the composition law (b), not the multiplicativity of each $L_{\tilde Q}$.
 
-**Remark (linear versus quadratic).** The map $\tilde Q\mapsto L_{\tilde Q}$ is linear and faithful. The map $\tilde Q\mapsto\Theta_{\tilde Q}$ is quadratic, and on the unit group its kernel is $U(1)$, as the companion article proves. The one-sided operator carries the whole parameter; the two-sided operator carries the parameter up to a central phase. This is the first reason the phase is visible one-sided and invisible two-sided.
+**Remark (linear versus quadratic).** The map $\tilde Q\mapsto L_{\tilde Q}$ is linear and faithful. The map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is quadratic, and on the unit group its kernel is $U(1)$, as the companion article proves. The one-sided operator carries the whole parameter; the two-sided operator carries the parameter up to a central phase. This is the first reason the phase is visible one-sided and invisible two-sided.
 
 **Remark (left translation, not conjugation).** $L_{\tilde Q}$ is a left translation of the algebra. It is an automorphism only for a central parameter. The sandwich is an inner conjugation only when $\tilde Q\tilde Q^{*}=e_t$, where the right factor is the inverse; for a general invertible element it is a congruence by $\tilde U_{\mathrm b}$ and a conjugation by $\tilde u_{\mathrm r}$. The two-sided article treats that distinction in full.
 
@@ -505,8 +505,8 @@ and the image of $\mathbb{M}_-$ is the mixed real four-dimensional subspace on w
 **Proposition.** The two-sided sandwich of the pure phase is the identity:
 
 $$
-\Theta_i(\tilde X)=i\tilde X(-i)=\tilde X,\qquad
-\Theta_{\exp(i\alpha)}=\mathrm{id}.
+\mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X,\qquad
+\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}.
 $$
 
 In the block matrices,
@@ -615,7 +615,7 @@ of complex dimension four and real dimension eight. The kernel is trivial.
 
 The following table collects the comparison. The rank is the complex rank of the operator on $\mathbb{B}$.
 
-| | one-sided $L_{\tilde Q}$ | two-sided $\Theta_{\tilde Q}$ |
+| | one-sided $L_{\tilde Q}$ | two-sided $\mathrm{Sd}_{\tilde Q}$ |
 |---|---|---|
 | parameter map | linear, faithful | quadratic; kernel $U(1)$ on the units |
 | scale | $r$ | $r^{2}$ |
@@ -641,7 +641,7 @@ The image consists of the matrices $u r^{*}$ with $r^{*}$ an arbitrary row, that
 The sandwich of the same element is
 
 $$
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}
 =u\,(v^{*}\mathsf M_2(\tilde X)v)\,u^{*},
 $$
 
@@ -718,7 +718,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\natural$, $\bar\cdot$ | the quaternion and coefficient conjugations |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
-| $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian sandwich |
+| $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian sandwich |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
 | $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
 | $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |

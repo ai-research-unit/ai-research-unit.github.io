@@ -49,19 +49,19 @@ $$
 
 is closed, because its coefficients are constant, and nondegenerate, because its matrix in the coordinate basis is the invertible block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$. Every open subset of $\mathbb{R}^{2m}$ is symplectic with the restricted form, and the linear algebra of $\omega_0$ is that of *Symplectic Forms and Poisson Brackets*.
 
-**Example.** Let $Q$ be a smooth manifold and let $\pi : T^*Q \to Q$ be its cotangent bundle with the projection $\pi$. The **tautological $1$-form** $\theta \in \Omega^1(T^*Q)$ is defined at a covector $p \in T^*_qQ$ and a tangent vector $v \in T_p(T^*Q)$ by
+**Example.** Let $Q$ be a smooth manifold and let $\pi : T^*Q \to Q$ be its cotangent bundle with the projection $\pi$. The **tautological $1$-form** $\varpi \in \Omega^1(T^*Q)$ is defined at a covector $p \in T^*_qQ$ and a tangent vector $v \in T_p(T^*Q)$ by
 
 $$
-\theta_p(v) = p\,(d\pi_p\, v),
+\varpi_p(v) = p\,(d\pi_p\, v),
 $$
 
-so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q_1, \ldots, q_m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\theta = \sum_i p_i\, dq_i$. The form
+so that $\theta_p$ evaluates the covector on the projection of the tangent vector. In a chart with coordinates $(q_1, \ldots, q_m)$ on $Q$ and fibre coordinates $(p_1, \ldots, p_m)$, it reads $\varpi = \sum_i p_i\, dq_i$. The form
 
 $$
-\omega = -\,d\theta = \sum_{i=1}^{m} dq_i \wedge dp_i
+\omega = -\,d\varpi = \sum_{i=1}^{m} dq_i \wedge dp_i
 $$
 
-is closed because it is exact, and nondegenerate because in the coordinates $(q, p)$ it has the standard shape; so $(T^*Q, -d\theta)$ is a symplectic manifold, the **cotangent bundle** of $Q$. It is the source of the examples in mechanics and of the local model for a Lagrangian neighbourhood below.
+is closed because it is exact, and nondegenerate because in the coordinates $(q, p)$ it has the standard shape; so $(T^*Q, -d\varpi)$ is a symplectic manifold, the **cotangent bundle** of $Q$. It is the source of the examples in mechanics and of the local model for a Lagrangian neighbourhood below.
 
 **Example.** An oriented surface $\Sigma$ with an area form $\omega$ is symplectic: a $2$-form on a surface is automatically closed, and nondegeneracy is exactly the nowhere-vanishing condition. The symplectomorphisms are the area-preserving diffeomorphisms, and the symplectic volume is the area. In dimension two, symplectic geometry is thus the geometry of area, and the Darboux theorem says that any two area forms are locally the same; the global invariants are the total area and, more subtly, the isotopy class of the area form.
 
@@ -193,11 +193,11 @@ is exact, the last map sending $X$ to the class $[\iota_X\omega]$.
 
 **Proof.** At each point the tangent space $T_xL$ is an isotropic subspace of the symplectic vector space $T_xM$, so the dimension bound and the characterisation of the Lagrangian case are those of *Symplectic Forms and Poisson Brackets*. When $\dim L = m$ the isotropic subspace is maximal isotropic, hence equals its own orthogonal complement, and $TL^{\perp}/TL \cong T^*L$.
 
-**Example.** Let $Q$ be a manifold and let $Q_0 \subseteq T^*Q$ be the zero section, $Q_0 = \{(q, 0)\}$. Then $\theta$ restricts to zero on $Q_0$, since $p = 0$ there, so $\omega = -d\theta$ restricts to zero; hence $Q_0$ is Lagrangian. The same holds for the graph of a closed $1$-form $\beta$ on $Q$: the graph is the image of $s_\beta(q) = (q, \beta_q)$, and $s_\beta^*\omega = s_\beta^*(-d\theta) = -d(\beta) = 0$ exactly when $d\beta = 0$. Thus the closed $1$-forms on $Q$ parametrise the Lagrangian sections of $T^*Q$.
+**Example.** Let $Q$ be a manifold and let $Q_0 \subseteq T^*Q$ be the zero section, $Q_0 = \{(q, 0)\}$. Then $\varpi$ restricts to zero on $Q_0$, since $p = 0$ there, so $\omega = -d\varpi$ restricts to zero; hence $Q_0$ is Lagrangian. The same holds for the graph of a closed $1$-form $\beta$ on $Q$: the graph is the image of $s_\beta(q) = (q, \beta_q)$, and $s_\beta^*\omega = s_\beta^*(-d\varpi) = -d(\beta) = 0$ exactly when $d\beta = 0$. Thus the closed $1$-forms on $Q$ parametrise the Lagrangian sections of $T^*Q$.
 
 **Example.** Let $N \subseteq Q$ be a submanifold. Its **conormal bundle** $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q_{k+1} = \cdots = q_m = 0$, it is described by $q_{k+1} = \cdots = q_m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq_i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.
 
-**Theorem (Lagrangian neighbourhood theorem).** Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $\Xi$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : \Xi \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.
+**Theorem (Lagrangian neighbourhood theorem).** Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $\Xi$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : \Xi \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\varpi$ of its tautological form.
 
 **Proof sketch.** The bundle isomorphism $TL^{\perp} \cong T^*L$ identifies the normal bundle of $L$ with $T^*L$, and the exponential map of an auxiliary Riemannian metric provides a diffeomorphism from a neighbourhood of the zero section of $TL^{\perp}$ to a neighbourhood of $L$. Pulling $\omega$ back to $T^*L$ gives a closed form agreeing with the standard form along the zero section; the Moser argument of the Darboux theorem, applied with the linear homotopy between the two forms and the fact that they are cohomologous, produces a diffeomorphism of a possibly smaller neighbourhood correcting the difference.
 
@@ -251,7 +251,7 @@ where $i : \mu^{-1}(0) \hookrightarrow M$ is the inclusion and $\pi : \mu^{-1}(0
 
 ## Summary
 
-A symplectic manifold is a smooth manifold with a closed nondegenerate $2$-form $\omega$. Nondegeneracy makes $\omega^\flat : TM \to T^*M$ an isomorphism and forces the dimension to be even, and $\omega^{\wedge m}/m!$ is a nowhere vanishing volume form, so a symplectic manifold is oriented and a symplectomorphism preserves the volume. The standard examples are $\mathbb{R}^{2m}$, the cotangent bundle $T^*Q$ with $\omega = -d\theta$ for the tautological form, the oriented surfaces, and the coadjoint orbits with the Kirillov–Kostant–Souriau form.
+A symplectic manifold is a smooth manifold with a closed nondegenerate $2$-form $\omega$. Nondegeneracy makes $\omega^\flat : TM \to T^*M$ an isomorphism and forces the dimension to be even, and $\omega^{\wedge m}/m!$ is a nowhere vanishing volume form, so a symplectic manifold is oriented and a symplectomorphism preserves the volume. The standard examples are $\mathbb{R}^{2m}$, the cotangent bundle $T^*Q$ with $\omega = -d\varpi$ for the tautological form, the oriented surfaces, and the coadjoint orbits with the Kirillov–Kostant–Souriau form.
 
 The Darboux theorem says that about each point there are coordinates with $\omega = \sum_i dx_i\wedge dy_i$, so a symplectic form has no local invariants; the proof is the Moser argument, which uses the Poincaré lemma and the openness of nondegeneracy. The Hamiltonian vector field of a function is defined by $\iota_{X_f}\omega = df$, the Poisson bracket is $\{f,g\} = \omega(X_f, X_g)$, it is a derivation in each argument, and its Jacobi identity is equivalent to $d\omega = 0$. The map $f \mapsto X_f$ is a Lie algebra homomorphism from $C^\infty(M)$ with the bracket $-\{\cdot,\cdot\}$, with kernel the locally constant functions, and the group of symplectomorphisms has the symplectic vector fields for its Lie algebra, with the Hamiltonian fields as the exact part and the flux measuring the difference.
 
@@ -269,7 +269,7 @@ Lagrangian submanifolds are the isotropic submanifolds of half the dimension, an
 | $2m$ | The dimension of a symplectic manifold; $m$ half the dimension |
 | $\omega^{\flat} : TM \to T^*M$, $\omega^{\sharp}$ | Bundle isomorphism $X \mapsto \omega(X,\cdot)$ and its inverse |
 | $\mathrm{vol}_\omega = \omega^{\wedge m}/m!$ | Symplectic volume form; orients $M$ |
-| $\theta = \sum_i p_i\,dq_i$ | Tautological $1$-form on $T^*Q$; $\omega = -d\theta$ |
+| $\varpi = \sum_i p_i\,dq_i$ | Tautological $1$-form on $T^*Q$; $\omega = -d\varpi$ |
 | $F^*\omega = \omega$ | Symplectomorphism $F$; $\operatorname{Symp}(M,\omega)$ the group |
 | $X_f$, $\iota_{X_f}\omega = df$ | Hamiltonian vector field of $f$ |
 | $\{f,g\} = \omega(X_f,X_g)$ | Poisson bracket of functions on a symplectic manifold |

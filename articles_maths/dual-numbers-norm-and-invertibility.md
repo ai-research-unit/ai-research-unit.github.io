@@ -235,15 +235,15 @@ It is a group under multiplication with identity $1$.
 **Theorem.** Let $R$ be a commutative ring with $2$ invertible. The map
 
 $$
-\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dln}}_R)^\times, \qquad \Theta(q, s) = q(1 + s\varepsilon),
+\mathrm{J} : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dln}}_R)^\times, \qquad \mathrm{J}(q, s) = q(1 + s\varepsilon),
 $$
 
 is an isomorphism of groups.
 
-**Proof.** Every unit is $q(1 + s\varepsilon)$ with $q \in R^\times$ and $s = q^{-1}q'$, uniquely, so $\Theta$ is a bijection. It is a homomorphism because
+**Proof.** Every unit is $q(1 + s\varepsilon)$ with $q \in R^\times$ and $s = q^{-1}q'$, uniquely, so $\mathrm{J}$ is a bijection. It is a homomorphism because
 
 $$
-\Theta(q_1,s)\Theta(q_2,t) = q_1(1 + s\varepsilon)\,q_2(1 + t\varepsilon) = q_1 q_2\bigl(1 + (s + t)\varepsilon\bigr) = \Theta\bigl(q_1 q_2,\, s + t\bigr),
+\mathrm{J}(q_1,s)\mathrm{J}(q_2,t) = q_1(1 + s\varepsilon)\,q_2(1 + t\varepsilon) = q_1 q_2\bigl(1 + (s + t)\varepsilon\bigr) = \mathrm{J}\bigl(q_1 q_2,\, s + t\bigr),
 $$
 
 using $\varepsilon^2 = 0$ and the commutativity of $R$.
@@ -370,7 +370,7 @@ A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real par
 | $R_{\mathbb{C}^{\mathrm{dln}}}$ | Real submodule |
 | $(\mathbb{C}^{\mathrm{dln}}_k)^\times = \mathbb{C}^{\mathrm{dln}}_k \setminus \mathrm{M}$ | Group of units, over a field $k$ |
 | $1 + \mathrm{M}$ | Shear group, kernel of $(\mathbb{C}^{\mathrm{dln}}_R)^\times \to R^\times$ |
-| $\Theta : R^\times \times (R,+) \to (\mathbb{C}^{\mathrm{dln}}_R)^\times$ | Unit-group isomorphism, $\Theta(q,s) = q(1 + s\varepsilon)$ |
+| $\mathrm{J} : R^\times \times (R,+) \to (\mathbb{C}^{\mathrm{dln}}_R)^\times$ | Unit-group isomorphism, $\Theta(q,s) = q(1 + s\varepsilon)$ |
 | $H = \{Q : \langle Q\rangle = 1\}$ | Norm-one group, lines $q = \pm 1$ |
 
 ## Further Reading

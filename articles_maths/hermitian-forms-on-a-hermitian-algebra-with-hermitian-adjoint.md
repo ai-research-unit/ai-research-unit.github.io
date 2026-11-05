@@ -124,12 +124,12 @@ the unitary slice of *The Hermitian Sandwich on a Hermitian Algebra with Hermiti
 **Proposition.** The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ evaluated at the dagger:
 
 $$
-\Theta_x(1) = x\,x^{\dagger} = m_{\dagger}(x^{\dagger}), \qquad m_{\dagger}(u) = u^{\dagger}u .
+\mathrm{Sd}_x(1) = x\,x^{\dagger} = m_{\dagger}(x^{\dagger}), \qquad m_{\dagger}(u) = u^{\dagger}u .
 $$
 
-**Proof.** $(x^{\dagger})^{\dagger} = x$, so $m_{\dagger}(x^{\dagger}) = (x^{\dagger})^{\dagger}x^{\dagger} = x\,x^{\dagger} = \Theta_x(1)$.
+**Proof.** $(x^{\dagger})^{\dagger} = x$, so $m_{\dagger}(x^{\dagger}) = (x^{\dagger})^{\dagger}x^{\dagger} = x\,x^{\dagger} = \mathrm{Sd}_x(1)$.
 
-**Remark.** The cross-term of the form gives the operator: $h_{\dagger}(u,v) = u^{\dagger}v$, so that $\Theta_x(y) = x\,y\,x^{\dagger} = h_{\dagger}(x^{\dagger}, y)\,x^{\dagger}$ is the form applied to $x^{\dagger}$ and $y$, followed by right multiplication by $x^{\dagger}$. The forms of this article are thus the bilinear data of the operator of the previous one.
+**Remark.** The cross-term of the form gives the operator: $h_{\dagger}(u,v) = u^{\dagger}v$, so that $\mathrm{Sd}_x(y) = x\,y\,x^{\dagger} = h_{\dagger}(x^{\dagger}, y)\,x^{\dagger}$ is the form applied to $x^{\dagger}$ and $y$, followed by right multiplication by $x^{\dagger}$. The forms of this article are thus the bilinear data of the operator of the previous one.
 
 ## The Gram Matrix and Congruence
 
@@ -163,7 +163,7 @@ The construction $h_c(x,y) = c(x)y$ is the special case of a Hermitian form over
 
 For an anti-involution $c$ of a ring $R$ the map $h_c(x,y) = c(x)y$ is **Hermitian with respect to $c$**, its diagonal $m_c(x) = c(x)x$ is fixed by $c$, and its radical on $R$ is trivial, so the form never degenerates on the algebra itself. A Clifford algebra carries three such forms: the **Hermitian form** $h_{\dagger}(x,y) = x^{\dagger}y$ of the dagger, which is $\sigma$-semilinear in the first argument and needs an involution of the base; and the two **intrinsic** forms $h_{\bar\cdot}(x,y) = x^{\natural}\,y$ and $h_r(x,y) = x^{r}y$, which fix the coefficients and are therefore bilinear, and which need nothing of the base. All three satisfy $h(y,x) = c(h(x,y))$ in the sense of their own $c$, and all three have $c$-fixed diagonals.
 
-The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the unitary slice $U$, and for Clifford conjugation with $\sigma = \mathrm{id}$ it is the Pin group, so the intrinsic forms see the orthogonal geometry and the dagger sees the unitary one, which is the precise sense in which the involutive base adds to the algebra. The Gram matrix of a sesquilinear form satisfies $H^{\dagger} = H$ with $H^{\dagger} = \sigma(H)^{T}$ and transforms by congruence $H \mapsto S^{\dagger}HS$ under a change of basis, so the invariants are inertia and discriminant rather than spectrum; over $\mathbb{R}$ and $\mathbb{C}$ Sylvester's law gives the signature, and the scalar reduction of the dagger form has the signature of the geometric product, $(-1)^{|I|}\prod_{i\in I}e_i^{2}$ on the blades, which over a positive definite form reads $+1$ on the even blades and $-1$ on the odd ones. The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ at the dagger, $\Theta_x(1) = m_{\dagger}(x^{\dagger})$, which is how the forms of this article are the bilinear data of the operator.
+The isometry group of $h_c$ is $\{s : c(s)s = 1\}$; for the dagger this is the unitary slice $U$, and for Clifford conjugation with $\sigma = \mathrm{id}$ it is the Pin group, so the intrinsic forms see the orthogonal geometry and the dagger sees the unitary one, which is the precise sense in which the involutive base adds to the algebra. The Gram matrix of a sesquilinear form satisfies $H^{\dagger} = H$ with $H^{\dagger} = \sigma(H)^{T}$ and transforms by congruence $H \mapsto S^{\dagger}HS$ under a change of basis, so the invariants are inertia and discriminant rather than spectrum; over $\mathbb{R}$ and $\mathbb{C}$ Sylvester's law gives the signature, and the scalar reduction of the dagger form has the signature of the geometric product, $(-1)^{|I|}\prod_{i\in I}e_i^{2}$ on the blades, which over a positive definite form reads $+1$ on the even blades and $-1$ on the odd ones. The value at the unit of the Hermitian sandwich is the diagonal of $h_{\dagger}$ at the dagger, $\mathrm{Sd}_x(1) = m_{\dagger}(x^{\dagger})$, which is how the forms of this article are the bilinear data of the operator.
 
 ## Summary of Notation
 

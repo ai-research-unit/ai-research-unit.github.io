@@ -131,14 +131,14 @@ of dimension two, and the pair is a redundant parametrisation of the algebra.
 **The sandwich.** The sandwich is the case $P=\bar Q$:
 
 $$
-\Theta_Q(X)=QX\bar Q=\langle Q\rangle_{*}\,X .
+\mathrm{Sd}_Q(X)=QX\bar Q=\langle Q\rangle_{*}\,X .
 $$
 
 **Proof.** $Q\bar Q=\langle Q\rangle_{*}$ is central, so it commutes past $X$.
 
-**The reading, and the inversion.** $\Theta_Q$ is a **scalar operator**, equal to the norm. It is multiplicative, $\Theta_Q\circ\Theta_P=\Theta_{QP}$, and it is not faithful: it depends on $Q$ only through the norm, so its fibres are the level sets of $\langle\cdot\rangle_{*}$, which are the hyperbola branches. On the units the image is the group of nonzero scalar operators, of dimension one, and the kernel is the hyperbola $\{\langle Q\rangle_{*}=1\}$.
+**The reading, and the inversion.** $\mathrm{Sd}_Q$ is a **scalar operator**, equal to the norm. It is multiplicative, $\mathrm{Sd}_Q\circ\mathrm{Sd}_P=\mathrm{Sd}_{QP}$, and it is not faithful: it depends on $Q$ only through the norm, so its fibres are the level sets of $\langle\cdot\rangle_{*}$, which are the hyperbola branches. On the units the image is the group of nonzero scalar operators, of dimension one, and the kernel is the hyperbola $\{\langle Q\rangle_{*}=1\}$.
 
-**Why it collapses.** $\Theta_Q=\langle Q\rangle_{*}\operatorname{Ad}_Q$, where $\operatorname{Ad}_Q$ is the inner automorphism of the algebra; and the inner automorphism group of a commutative algebra is trivial. So the sandwich is the norm times the identity, and the whole of its non-triviality is the scalar. In the biquaternion category the same formula produced a Lorentz transformation, because the algebra was not commutative and the inner automorphisms were a three-dimensional group. Here there is nothing to conjugate.
+**Why it collapses.** $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{Ad}_Q$, where $\operatorname{Ad}_Q$ is the inner automorphism of the algebra; and the inner automorphism group of a commutative algebra is trivial. So the sandwich is the norm times the identity, and the whole of its non-triviality is the scalar. In the biquaternion category the same formula produced a Lorentz transformation, because the algebra was not commutative and the inner automorphisms were a three-dimensional group. Here there is nothing to conjugate.
 
 **What the sandwich forgets.** The boost. Two elements on the same hyperbola have the same sandwich; in particular $Q$ and $Q^{-1}$ have the same norm $1$ and the same sandwich, the identity, while their one-sided operators are inverse boosts. So the sandwich is strictly less informative than the one-sided operator, which is the inversion announced in the introduction: in the non-commutative categories the sandwich carried the vector action and the one-sided operator the spinor one; here the one-sided operator carries everything and the sandwich carries one number.
 
@@ -188,7 +188,7 @@ $$
 **The sign lost.** $K_{Q,P}=K_{-Q,-P}$, so the display is faithful on the pair only up to the simultaneous sign. It is not faithful on $Q$ alone: $K_{Q,\bar Q}$ determines $\lambda_\pm^{2}$ and $N$, hence $\lambda_\pm$ up to a common sign, hence $Q$ up to sign. So the ambient sandwich is faithful up to $\pm1$, and the carrier sandwich is faithful up to the hyperbola. The ladder of faithfulness is therefore
 
 $$
-\Theta:\ \text{norm}\ \succ\ K:\ \pm Q\ \succ\ M:\ Q,
+\mathrm{J}:\ \text{norm}\ \succ\ K:\ \pm Q\ \succ\ M:\ Q,
 $$
 
 with the one-sided operator the faithful end, which is the inverted order of the non-commutative categories.
@@ -343,7 +343,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
 3. The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=rM_\epsilon\exp(\phi J)$, with eigenvalues $r\epsilon_\pm e^{\pm\phi}$; the angle is full, the sign is a discrete label, and no cover appears.
 4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
-5. The sandwich is a scalar on the carrier, $\Theta_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
+5. The sandwich is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
 6. On the ambient the same formula is not scalar: $K_{Q,\bar Q}$ has eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$, doubling the rapidity on the two pure corners and killing it on the two mixed ones.
 7. The display is symmetric, of trace $4qp$, of determinant $\langle Q\rangle_{*}^{2}\langle P\rangle_{*}^{2}$ and of rank $\operatorname{rank}M_Q\operatorname{rank}M_P$, so its ladder is $\{0,1,2,4\}$.
 8. The Galois twist of the algebra is outer in the algebra and inner in the ambient, implemented by the reflection $g=\operatorname{diag}(1,-1)$, which is not in the image.
@@ -356,7 +356,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 |---|---|---|
 | $M_Q$ | the multiplication operator $X\mapsto QX$, equal to $L_Q$ and $R_Q$ | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $M_{QP}$ | this article |
-| $\Theta_Q$ | the sandwich $QX\bar Q=\langle Q\rangle_{*}X$ | this article |
+| $\mathrm{Sd}_Q$ | the sandwich $QX\bar Q=\langle Q\rangle_{*}X$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)\otimes\mathsf{M}_2(Q)$ | this article |
 | $g$ | the split form $\operatorname{diag}(1,-1)$, implementing the conjugation by congruence | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues, the idempotent coordinates | *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* |

@@ -31,9 +31,9 @@ abbreviated $\mathcal{L}_{\mu i} = \partial \mathcal{L}/\partial u_{i,\mu}$ for 
 **Theorem (the fundamental variation identity).** For any variation $\delta u_i$, the variation of the density is
 
 $$
-\delta \mathcal{L} = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\Theta_\mu ,
+\delta \mathcal{L} = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\mathrm{Sd}_\mu ,
 \qquad
-\Theta_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i .
+\mathrm{Sd}_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i .
 $$
 
 *Proof.* Expanding the variation and inserting the definition of $E_i$,
@@ -45,9 +45,9 @@ $$
 
 which is the stated identity.
 
-The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta_\mu$. Everything below is that identity read with a different kind of variation.
+The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\mathrm{Sd}_\mu$. Everything below is that identity read with a different kind of variation.
 
-**Stationarity.** Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int\sum_i E_i\delta u_i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\sum_\mu\Theta_\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of *The Calculus of Variations*; what is added here is the classification of the symmetries.
+**Stationarity.** Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int\sum_i E_i\delta u_i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\sum_\mu\mathrm{Sd}_\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of *The Calculus of Variations*; what is added here is the classification of the symmetries.
 
 **Definition.** A variation is a **symmetry of the action up to a divergence** when the density changes by a divergence,
 
@@ -307,7 +307,7 @@ Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u
 | $\partial/\partial x_\mu$ | Partial derivative with respect to $x_\mu$ |
 | $\mathcal{L}_{\mu i} = \partial \mathcal{L}/\partial u_{i,\mu}$ | Derivative of the density with respect to the gradient of the field |
 | $E_i = \partial \mathcal{L}/\partial u_i - \sum_\mu\partial/\partial x_\mu \mathcal{L}_{\mu i}$ | Euler–Lagrange expression |
-| $\Theta_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i$ | Boundary current of a variation |
+| $\mathrm{Sd}_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i$ | Boundary current of a variation |
 | $F_\mu$ | Divergence through which a symmetry changes the density, $\delta \mathcal{L}=\sum_\mu\partial/\partial x_\mu F_\mu$ |
 | $\xi_i$, $\xi_{ia}$ | Generator of a first-kind symmetry |
 | $a_{i\mu\alpha}$, $b_{i\alpha}$ | Coefficients of $\varepsilon$ and $\partial/\partial x_\mu\,\varepsilon$ in a second-kind symmetry |

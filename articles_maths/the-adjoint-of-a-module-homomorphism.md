@@ -141,7 +141,7 @@ The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$
 
 *Proof.* The identity $\langle Xx,y\rangle=\langle x,X^{\mathsf{T}}y\rangle$ is the definition of the transpose; conjugating by the Gram matrix replaces the standard pairing by a general one.
 
-In the $\sigma$-sesquilinear case the matrix description acquires $\sigma$: the adjoint of a matrix is the conjugate transpose, and its precise form for a module over an involutive algebra is the matrix involution $\Theta(X)_{ij}=\sigma(X_{ji})$ of *Modules over an Involutive Algebra* when the pairing is the standard one on $A^n$.
+In the $\sigma$-sesquilinear case the matrix description acquires $\sigma$: the adjoint of a matrix is the conjugate transpose, and its precise form for a module over an involutive algebra is the matrix involution $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$ of *Modules over an Involutive Algebra* when the pairing is the standard one on $A^n$.
 
 ## The Left and the Right Adjoint
 
@@ -175,7 +175,7 @@ Thus for the pairings used here the words *left adjoint* and *right adjoint* nam
 
 **(c) The regular pairing.** For $M=N=A$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the adjoint of the left multiplication $L_a$ is $L_{\sigma(a)}$, and the adjoint of the right multiplication $R_b$ is $R_{\sigma(b)}$; the pairing is reflexive with sign $\varepsilon=1$ when $\sigma$ fixes the coefficient ring.
 
-**(d) The involution induced by a free basis.** For $M=A^n$ with the standard sesquilinear pairing, the adjoint of a matrix is $\Theta(X)_{ij}=\sigma(X_{ji})$, the involution of *Modules over an Involutive Algebra*; the basis-independent description of that involution is exactly the adjoint with respect to the standard pairing.
+**(d) The involution induced by a free basis.** For $M=A^n$ with the standard sesquilinear pairing, the adjoint of a matrix is $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$, the involution of *Modules over an Involutive Algebra*; the basis-independent description of that involution is exactly the adjoint with respect to the standard pairing.
 
 ## Summary
 

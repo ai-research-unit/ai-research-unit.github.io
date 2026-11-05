@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article introduces the higher special functions of a biquaternion variable. It follows the article on biquaternion elementary functions, which defined the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and which established the two regimes: the **oscillatory regime** ($\theta \neq 0$) and the **nilpotent regime** ($\theta = 0$), where $\theta = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$ is the complex norm of the vector part.
+This article introduces the higher special functions of a biquaternion variable. It follows the article on biquaternion elementary functions, which defined the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and which established the two regimes: the **oscillatory regime** ($\lVert\vec Q\rVert \neq 0$) and the **nilpotent regime** ($\lVert\vec Q\rVert = 0$), where $\lVert\vec Q\rVert = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$ is the complex norm of the vector part.
 
 The goal is to define the Bessel functions, the orthogonal polynomials, the hypergeometric function, the gamma function, and the zeta function, and to establish their basic properties. The article is honest about what is fully understood and what is still open.
 
@@ -20,7 +20,7 @@ $$
 \tilde{Q} = Q_t e_t + \vec Q, \qquad \vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z.
 $$
 
-The complex norm of the vector part is $\theta = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$, and the axis is $\vec u = \vec Q/\theta$ when $\theta \neq 0$.
+The complex norm of the vector part is $\lVert\vec Q\rVert = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$, and the axis is $\vec u = \vec Q/\lVert\vec Q\rVert$ when $\lVert\vec Q\rVert \neq 0$.
 
 The higher special functions fall into two classes according to their definition:
 
@@ -48,16 +48,16 @@ Write $\tilde{Q} = Q_t e_t + \vec Q$. The scalar part $Q_t e_t$ commutes with $\
 However, there are two special cases in which the reduction works:
 
 - **Pure biquaternions.** If $Q_t = 0$, then $\tilde{Q} = \vec Q$, and the powers of $\vec Q$ simplify as in the elementary case.
-- **Biquaternions with a single direction.** If $\tilde{Q} = Q_t e_t + \theta \vec u$ with $\vec u$ fixed, the powers of $\tilde{Q}$ can be computed by the binomial expansion, but the binomial coefficients are biquaternions in general.
+- **Biquaternions with a single direction.** If $\tilde{Q} = Q_t e_t + \lVert\vec Q\rVert \vec u$ with $\vec u$ fixed, the powers of $\tilde{Q}$ can be computed by the binomial expansion, but the binomial coefficients are biquaternions in general.
 
 We treat the pure case in detail, and we state the general case as an open problem.
 
 ### The Pure Case, Oscillatory Regime
 
-Let $\tilde{Q} = \vec Q = \theta \vec u$ with $\theta \neq 0$ and $\vec u^2 = -e_t$. The powers of $\vec Q$ satisfy
+Let $\tilde{Q} = \vec Q = \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert \neq 0$ and $\vec u^2 = -e_t$. The powers of $\vec Q$ satisfy
 
 $$
-\vec Q^{2m+\nu} = \theta^{2m+\nu} \vec u^{2m+\nu}.
+\vec Q^{2m+\nu} = \lVert\vec Q\rVert^{2m+\nu} \vec u^{2m+\nu}.
 $$
 
 The powers of $\vec u$ alternate:
@@ -69,7 +69,7 @@ $$
 Substituting into the series and separating even and odd powers, we obtain
 
 $$
-J_\nu(\theta \vec u) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m \theta^{2m+\nu}}{m! \, \Gamma(m+\nu+1) 2^{2m+\nu}} \vec u^{2m+\nu}\right).
+J_\nu(\lVert\vec Q\rVert \vec u) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m \lVert\vec Q\rVert^{2m+\nu}}{m! \, \Gamma(m+\nu+1) 2^{2m+\nu}} \vec u^{2m+\nu}\right).
 $$
 
 The parity of $\vec u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an integer, the sum splits into two cases: $\nu$ even gives only the identity $e_t$, and $\nu$ odd gives only $\vec u$. In general, for non-integer $\nu$, the series does not split into two separate series.
@@ -77,14 +77,14 @@ The parity of $\vec u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an i
 For integer $\nu = n$, the result is
 
 $$
-\boxed{\; J_n(\theta \vec u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
+\boxed{\; J_n(\lVert\vec Q\rVert \vec u) = \begin{cases} (-1)^{n/2} I_n(\lVert\vec Q\rVert) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\lVert\vec Q\rVert) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$
 
-where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\vec u$.
+where $I_n(\lVert\vec Q\rVert)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\vec u$.
 
 ### The Pure Case, Nilpotent Regime
 
-Let $\tilde{Q} = \vec Q$ with $\theta = 0$ and $\vec Q \neq 0$. Then $\vec Q^2 = 0$, so $\vec Q^m = 0$ for all $m \geq 2$. The Bessel series truncates:
+Let $\tilde{Q} = \vec Q$ with $\lVert\vec Q\rVert = 0$ and $\vec Q \neq 0$. Then $\vec Q^2 = 0$, so $\vec Q^m = 0$ for all $m \geq 2$. The Bessel series truncates:
 
 $$
 J_\nu(\vec Q) = \frac{1}{\Gamma(\nu+1)} \left(\frac{\vec Q}{2}\right)^\nu + \frac{(-1)^1}{1! \, \Gamma(\nu+2)} \left(\frac{\vec Q}{2}\right)^{\nu+2} + \cdots
@@ -102,7 +102,7 @@ where for $n = 0$ the term is $e_t$ and for $n = 1$ the term is $\vec Q/2$. For 
 
 For a general biquaternion $\tilde{Q} = Q_t e_t + \vec Q$ with both $Q_t \neq 0$ and $\vec Q \neq 0$, the Bessel function does not reduce to a closed form in terms of elementary functions. The powers of $\tilde{Q}$ involve the non-commutative products of $Q_t e_t$ and $\vec Q$, and the series is a genuine biquaternion series.
 
-The general case is open. The natural approach would be to use the Hamilton polar form $\tilde{Q} = \exp(Q_t) \exp(\theta \vec u)$ and to express $J_\nu(\tilde{Q})$ in terms of $J_\nu$ evaluated at the polar factors, but the functional equation for the Bessel function under multiplication does not hold in general, because the Bessel function is not multiplicative.
+The general case is open. The natural approach would be to use the Hamilton polar form $\tilde{Q} = \exp(Q_t) \exp(\lVert\vec Q\rVert \vec u)$ and to express $J_\nu(\tilde{Q})$ in terms of $J_\nu$ evaluated at the polar factors, but the functional equation for the Bessel function under multiplication does not hold in general, because the Bessel function is not multiplicative.
 
 ### Modified Bessel Functions
 
@@ -134,13 +134,13 @@ with $P_0 = e_t$ and $P_1 = \tilde{Q}$.
 
 The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (the coefficients are the ordinary Legendre coefficients, embedded as real scalars). So they are defined for every $\tilde{Q} \in \mathbb{B}$ by the recurrence, and the recurrence involves only the multiplication and addition of biquaternions.
 
-**The pure oscillatory case.** For $\tilde{Q} = \theta \vec u$ with $\theta \neq 0$ and $\vec u^2 = -e_t$, the recurrence gives
+**The pure oscillatory case.** For $\tilde{Q} = \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert \neq 0$ and $\vec u^2 = -e_t$, the recurrence gives
 
 $$
-\boxed{\; P_n(\theta \vec u) = \begin{cases} P_n(i\theta) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
+\boxed{\; P_n(\lVert\vec Q\rVert \vec u) = \begin{cases} P_n(i\lVert\vec Q\rVert) \, e_t & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\lVert\vec Q\rVert) \, \vec u & \text{if } n \text{ is odd}, \end{cases} \;}
 $$
 
-where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\vec u$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. For instance $P_2(\theta\vec u) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\vec u$.
+where $P_n(i\lVert\vec Q\rVert)$ is the ordinary Legendre polynomial evaluated at the complex number $i\lVert\vec Q\rVert$. The generator $\vec u$ plays the role of the imaginary unit, so no reduction to $P_n(\lVert\vec Q\rVert)$ holds: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. For instance $P_2(\lVert\vec Q\rVert\vec u) = -(3\lVert\vec Q\rVert^2+1)/2$, whereas $P_2(\lVert\vec Q\rVert) = (3\lVert\vec Q\rVert^2-1)/2$. This follows from the recurrence and the alternating powers of $\vec u$.
 
 **The pure nilpotent case.** For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the recurrence involves powers of $\vec Q$ that truncate. In particular, $P_n(\vec Q)$ is a polynomial in $\vec Q$ of degree at most one, because $\vec Q^2 = 0$. The explicit form is obtained from the recurrence.
 
@@ -152,7 +152,7 @@ $$
 T_{n+1}(\tilde{Q}) = 2\tilde{Q} T_n(\tilde{Q}) - T_{n-1}(\tilde{Q}),
 $$
 
-with $T_0 = e_t$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $i\theta$ with $i$ replaced by $\vec u$ (so $T_n(\theta\vec u)$ is $T_n(i\theta)e_t$ or $\frac{1}{i}T_n(i\theta)\vec u$ according to the parity of $n$); in the pure nilpotent regime, the polynomials truncate.
+with $T_0 = e_t$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $i\lVert\vec Q\rVert$ with $i$ replaced by $\vec u$ (so $T_n(\lVert\vec Q\rVert\vec u)$ is $T_n(i\lVert\vec Q\rVert)e_t$ or $\frac{1}{i}T_n(i\lVert\vec Q\rVert)\vec u$ according to the parity of $n$); in the pure nilpotent regime, the polynomials truncate.
 
 ### Hermite Polynomials
 
@@ -178,7 +178,7 @@ with $L_0 = e_t$ and $L_1 = e_t - \tilde{Q}$. The same analysis applies.
 
 The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{B}$, and they reduce to the ordinary polynomials in the two pure regimes:
 
-- In the pure oscillatory regime, a polynomial of definite parity (Legendre, Chebyshev, Hermite) gives $P_n(\theta \vec u)=P_n(i\theta)e_t$ for even $n$ and $P_n(\theta \vec u)=\frac{1}{i}P_n(i\theta)\vec u$ for odd $n$; a polynomial without definite parity, such as Laguerre, gives $P_n(\theta \vec u)=\operatorname{Re}P_n(i\theta)e_t+\operatorname{Im}P_n(i\theta)\vec u$.
+- In the pure oscillatory regime, a polynomial of definite parity (Legendre, Chebyshev, Hermite) gives $P_n(\lVert\vec Q\rVert \vec u)=P_n(i\lVert\vec Q\rVert)e_t$ for even $n$ and $P_n(\lVert\vec Q\rVert \vec u)=\frac{1}{i}P_n(i\lVert\vec Q\rVert)\vec u$ for odd $n$; a polynomial without definite parity, such as Laguerre, gives $P_n(\lVert\vec Q\rVert \vec u)=\operatorname{Re}P_n(i\lVert\vec Q\rVert)e_t+\operatorname{Im}P_n(i\lVert\vec Q\rVert)\vec u$.
 - In the pure nilpotent regime, the polynomial truncates to a polynomial of degree at most one in $\vec Q$.
 
 The general case (with both $Q_t \neq 0$ and $\vec Q \neq 0$) does not reduce to a closed form, because the recurrence involves the non-commutative product $Q_t \vec Q$, and the polynomial is a genuine biquaternion polynomial.
@@ -197,13 +197,13 @@ where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in
 
 ### The Pure Oscillatory Case
 
-For $\tilde{Q} = \theta \vec u$ with $\theta \neq 0$ and $\vec u^2 = -e_t$, the powers of $\tilde{Q}$ alternate. Separating even and odd powers,
+For $\tilde{Q} = \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert \neq 0$ and $\vec u^2 = -e_t$, the powers of $\tilde{Q}$ alternate. Separating even and odd powers,
 
 $$
-{}_2F_1(a, b; c; \theta \vec u) = \left(\sum_{n=0}^{\infty} \frac{(a)_{2n} (b)_{2n}}{(c)_{2n}} \frac{(-1)^n \theta^{2n}}{(2n)!}\right) e_t + \left(\sum_{n=0}^{\infty} \frac{(a)_{2n+1} (b)_{2n+1}}{(c)_{2n+1}} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}\right) \vec u.
+{}_2F_1(a, b; c; \lVert\vec Q\rVert \vec u) = \left(\sum_{n=0}^{\infty} \frac{(a)_{2n} (b)_{2n}}{(c)_{2n}} \frac{(-1)^n \lVert\vec Q\rVert^{2n}}{(2n)!}\right) e_t + \left(\sum_{n=0}^{\infty} \frac{(a)_{2n+1} (b)_{2n+1}}{(c)_{2n+1}} \frac{(-1)^n \lVert\vec Q\rVert^{2n+1}}{(2n+1)!}\right) \vec u.
 $$
 
-The two series are not the ordinary hypergeometric function evaluated at $\theta$, because the Pochhammer symbols are evaluated at $2n$ and $2n+1$, not at $n$. They are the **even and odd parts** of the hypergeometric function, and they can be expressed in terms of ${}_2F_1$ with different parameters. The precise form is an open problem.
+The two series are not the ordinary hypergeometric function evaluated at $\lVert\vec Q\rVert$, because the Pochhammer symbols are evaluated at $2n$ and $2n+1$, not at $n$. They are the **even and odd parts** of the hypergeometric function, and they can be expressed in terms of ${}_2F_1$ with different parameters. The precise form is an open problem.
 
 ### The Pure Nilpotent Case
 
@@ -251,7 +251,7 @@ where $t$ is a positive real number, $t^{\tilde{Q}-1} = \exp((\tilde{Q}-1) \log 
 
 The integral is defined component-wise, but the integrand is a biquaternion-valued function of the real variable $t$, and the convergence of the integral depends on the growth of $t^{\tilde{Q}-1}$ as $t \to 0$ and as $t \to \infty$.
 
-**As $t \to 0$.** The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_t$ and on the vector part $\vec Q$. In the oscillatory regime, with $\vec Q=\theta\vec u$, the power is $t^{Q_t-1}(\cos(\theta\log t)\,e_t + \sin(\theta\log t)\,\vec u)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_t-1}(e_t + \log t\,\vec Q)$, which converges if $\operatorname{Re} Q_t > 0$.
+**As $t \to 0$.** The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_t$ and on the vector part $\vec Q$. In the oscillatory regime, with $\vec Q=\lVert\vec Q\rVert\vec u$, the power is $t^{Q_t-1}(\cos(\lVert\vec Q\rVert\log t)\,e_t + \sin(\lVert\vec Q\rVert\log t)\,\vec u)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_t-1}(e_t + \log t\,\vec Q)$, which converges if $\operatorname{Re} Q_t > 0$.
 
 **As $t \to \infty$.** The factor $\exp(-t)$ dominates, so the integral converges for all $\tilde{Q}$ with $\operatorname{Re} Q_t < \infty$.
 
@@ -293,7 +293,7 @@ where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the biquaternion power.
 
 ### The Obstruction
 
-The series is a series of biquaternions. The convergence depends on the behavior of $n^{\tilde{Q}}$ as $n \to \infty$. In the oscillatory regime, $n^{\tilde{Q}}$ involves $\cos(\theta \log n)$ and $\sin(\theta \log n)$, which oscillate. The series may converge conditionally or may not converge at all, depending on $\tilde{Q}$.
+The series is a series of biquaternions. The convergence depends on the behavior of $n^{\tilde{Q}}$ as $n \to \infty$. In the oscillatory regime, $n^{\tilde{Q}}$ involves $\cos(\lVert\vec Q\rVert \log n)$ and $\sin(\lVert\vec Q\rVert \log n)$, which oscillate. The series may converge conditionally or may not converge at all, depending on $\tilde{Q}$.
 
 In the nilpotent regime, $n^{\tilde{Q}} = n^{Q_t}(e_t + \log n \cdot \vec Q)$, and the series converges absolutely if $\operatorname{Re} Q_t > 1$.
 
@@ -339,7 +339,7 @@ $$
 
 It satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
-In the oscillatory regime, with $\theta$ real and $\vec u$ a root of $-1$, $G^{\mathrm{fn}}(\theta \vec u) = -\theta \vec u / (\theta^4 \|\vec u\|_E^4) = -\vec u/(\theta^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
+In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G^{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|_E^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
 In the nilpotent regime, $G^{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
 
@@ -385,7 +385,7 @@ The higher special functions of a biquaternion variable fall into two classes.
 
 **Functions from the analysis.** These arise as kernels and fundamental solutions of the differential operators of the analysis. The Cauchy kernel, the Poisson kernel, and the Green's function belong to this class. Their construction is standard, but their explicit forms and their properties are open in the general biquaternion case.
 
-The common thread is the **complex norm** $\theta$: the two regimes $\theta \neq 0$ and $\theta = 0$ determine the behavior of the powers of $\tilde{Q}$, and hence the behavior of every special function defined by a power series. The integral-defined functions depend on $\theta$ in a more complicated way, and their theory is less developed.
+The common thread is the **complex norm** $\lVert\vec Q\rVert$: the two regimes $\lVert\vec Q\rVert \neq 0$ and $\lVert\vec Q\rVert = 0$ determine the behavior of the powers of $\tilde{Q}$, and hence the behavior of every special function defined by a power series. The integral-defined functions depend on $\lVert\vec Q\rVert$ in a more complicated way, and their theory is less developed.
 
 ## Open Questions
 
@@ -405,13 +405,13 @@ The common thread is the **complex norm** $\theta$: the two regimes $\theta \neq
 
 The higher special functions of a biquaternion variable fall into three classes.
 
-**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions are the ordinary functions evaluated at the complex argument $i\theta$ with $i$ replaced by the axis $\vec u$ of the component (for the Bessel function this is the modified function $I_n(\theta)$ times the parity factor $\vec u^n$). In the pure nilpotent regime, the series truncate to polynomials in $\vec Q$ of degree at most one. The general case is open.
+**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions are the ordinary functions evaluated at the complex argument $i\lVert\vec Q\rVert$ with $i$ replaced by the axis $\vec u$ of the component (for the Bessel function this is the modified function $I_n(\lVert\vec Q\rVert)$ times the parity factor $\vec u^n$). In the pure nilpotent regime, the series truncate to polynomials in $\vec Q$ of degree at most one. The general case is open.
 
 **Integral-defined functions.** The gamma function and the zeta function are defined by integrals or series that require a notion of the biquaternion power for real arguments. The convergence and analyticity are established only in special cases, and the functional equations are open.
 
 **Functions from the analysis.** The Cauchy kernel, the Poisson kernel, and the Green's function are the kernels and fundamental solutions of the differential operators of the analysis. Their construction is standard, but their explicit forms and properties in the general biquaternion case are open.
 
-The common thread is the complex norm $\theta$: the two regimes $\theta \neq 0$ and $\theta = 0$ determine the behavior of the powers of $\tilde{Q}$, and hence the behavior of every special function defined by a power series. The integral-defined functions depend on $\theta$ in a more complicated way, and their theory is less developed.
+The common thread is the complex norm $\lVert\vec Q\rVert$: the two regimes $\lVert\vec Q\rVert \neq 0$ and $\lVert\vec Q\rVert = 0$ determine the behavior of the powers of $\tilde{Q}$, and hence the behavior of every special function defined by a power series. The integral-defined functions depend on $\lVert\vec Q\rVert$ in a more complicated way, and their theory is less developed.
 
 The biquaternion special functions are therefore a partially developed subject: the power-series functions in the two pure regimes are well understood, while the general case and the integral-defined functions are open problems.
 
@@ -421,10 +421,10 @@ The biquaternion special functions are therefore a partially developed subject: 
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\tilde{Q} = Q_t e_t + \vec Q$ | Biquaternion and its vector part $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ |
-| $\theta = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$ | Complex norm of the vector part |
-| $\vec u = \vec Q/\theta$ | Axis of the vector part, defined for $\theta \neq 0$ |
-| Oscillatory regime | $\theta \neq 0$: $Q_t e_t + \vec Q = Q_t e_t + \theta\vec u$, powers built on $\vec u^2 = -e_t$ |
-| Nilpotent regime | $\theta = 0$: $\vec Q$ is nilpotent, $\vec Q^2 = 0$, and power series truncate |
+| $\lVert\vec Q\rVert = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}$ | Complex norm of the vector part |
+| $\vec u = \vec Q/\lVert\vec Q\rVert$ | Axis of the vector part, defined for $\lVert\vec Q\rVert \neq 0$ |
+| Oscillatory regime | $\lVert\vec Q\rVert \neq 0$: $Q_t e_t + \vec Q = Q_t e_t + \lVert\vec Q\rVert\vec u$, powers built on $\vec u^2 = -e_t$ |
+| Nilpotent regime | $\lVert\vec Q\rVert = 0$: $\vec Q$ is nilpotent, $\vec Q^2 = 0$, and power series truncate |
 | $J_n, I_n$ | Bessel and modified Bessel functions of integral order |
 | $P_n, H_n, L_n$ | Legendre, Hermite and Laguerre polynomials (Chebyshev also treated) |
 | ${}_2F_1$ | Hypergeometric function |

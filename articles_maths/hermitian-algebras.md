@@ -10,7 +10,7 @@ $$
 
 The axiom says that the involution computes the adjoint of every multiplication operator. It is the algebraic content of the whole layer, and it needs nothing else: no positivity of the form, no completeness of the algebra, no norm and no convergence.
 
-This article is the base of the four operator groups of `Sesqualgebras with a degree-2 form`: the two-sided operators with the Hermitian sandwich $\Theta_x(y) = xyx^{\dagger}$, the one-sided operators, and their signed variants all take the dagger fixed here as their involution. It is the Part I companion of *Hilbert Algebras*, which adds the two hypotheses this article removes — the positive definiteness of the form and the completion of the algebra. Positivity, the cone, Cauchy–Schwarz, the completion and the modular theory are *Hilbert Algebras* and the later articles of Part II; the adjoint, the radical, the isometry group and the unitary slice are here.
+This article is the base of the four operator groups of `Sesqualgebras with a degree-2 form`: the two-sided operators with the Hermitian sandwich $\mathrm{Sd}_x(y) = xyx^{\dagger}$, the one-sided operators, and their signed variants all take the dagger fixed here as their involution. It is the Part I companion of *Hilbert Algebras*, which adds the two hypotheses this article removes — the positive definiteness of the form and the completion of the algebra. Positivity, the cone, Cauchy–Schwarz, the completion and the modular theory are *Hilbert Algebras* and the later articles of Part II; the adjoint, the radical, the isometry group and the unitary slice are here.
 
 The base is a commutative ring $F$ with an involution $\sigma$, and the collapse at $\sigma = \mathrm{id}$ returns the bilinear theory of *Algebras with a degree-2 form*.
 
@@ -139,14 +139,14 @@ It is a subgroup of the group of units: it is closed under the product because $
 
 **Proposition.** An element of the unitary slice acts by an isometry of the algebra under both the inner conjugation and the Hermitian sandwich.
 
-**Proof.** For $u \in U$ and the inner conjugation, $\langle uxu^{-1}, uyu^{-1}\rangle = \langle x, y\rangle$ is the statement that the form is invariant under the automorphism; for the Hermitian sandwich $\Theta_u(z) = uzu^{\dagger}$ the same computation with $u^{\dagger} = u^{-1}$ gives the identity. The two actions therefore agree on the slice, which is the reason the slice is the meeting point of the involutive structure and the orthogonal structure.
+**Proof.** For $u \in U$ and the inner conjugation, $\langle uxu^{-1}, uyu^{-1}\rangle = \langle x, y\rangle$ is the statement that the form is invariant under the automorphism; for the Hermitian sandwich $\mathrm{Sd}_u(z) = uzu^{\dagger}$ the same computation with $u^{\dagger} = u^{-1}$ gives the identity. The two actions therefore agree on the slice, which is the reason the slice is the meeting point of the involutive structure and the orthogonal structure.
 
 ## What Belongs Elsewhere
 
 - The **general theory of $\sigma$-sesquilinear and Hermitian forms** over an involution ring — the Gram matrix, congruence, the unitary Witt group and the Wall group — belongs to *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* and to *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*.
 - The **symmetric and antisymmetric decomposition of a form**, its dictionary of Hermitian, skew-Hermitian and alternating kinds, and the collapse at the trivial involution belong to *The Sesquilinear Form and the Conjugation*.
 - The **positivity of the form**, the **positive cone** $\{\sum_i x_i^{\dagger}x_i\}$, **Cauchy–Schwarz**, the **completion** and the **modular theory** are *Hilbert Algebras*, *Self-Adjoint Elements and the Positive Cone* and *The Modular Structure of a Hermitian Algebra* in Part II; nothing of that layer is used here.
-- The **operators built from the dagger** — the blade form, the Hermitian sandwich $\Theta_x(y) = xyx^{\dagger}$, the one-sided operators and their signed variants — are the four groups of this category that follow.
+- The **operators built from the dagger** — the blade form, the Hermitian sandwich $\mathrm{Sd}_x(y) = xyx^{\dagger}$, the one-sided operators and their signed variants — are the four groups of this category that follow.
 - The **Clifford algebra**, its grading, its intrinsic anti-involutions and the trace form are *Clifford Algebras*, *The Grading of the Clifford Algebra with Signed Inner Conjugation* and *Hilbert Algebras*.
 
 ## Summary
@@ -178,7 +178,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 | $\operatorname{rad}_l$, $\operatorname{rad}_r$ | the left and the right radical |
 | $\operatorname{Iso}(A, \mathfrak{Q})$ | the isometry group of the form |
 | $U$ | the unitary slice $\{x : x^{\dagger}x = xx^{\dagger} = 1\}$ |
-| $\Theta_x$ | the Hermitian sandwich $y \mapsto xyx^{\dagger}$ |
+| $\mathrm{Sd}_x$ | the Hermitian sandwich $y \mapsto xyx^{\dagger}$ |
 | $F^\sigma$ | the fixed ring of the base involution |
 
 ## Further Reading

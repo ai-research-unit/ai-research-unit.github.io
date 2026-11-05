@@ -13,10 +13,10 @@ $$
 one has $(TS)^{\star} = S^{\star}T^{\star}$, and applied to the multiplication operators it gives
 
 $$
-L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
+L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \mathrm{Sd}_x^{\star} = \mathrm{Sd}^{\alpha}_{x^{\dagger}} ,
 $$
 
-so the **super-adjoint of the ordinary family is the signed family**. The signed structure is therefore not a second structure grafted onto the ordinary one: it is the adjoint operation of the graded algebra, that is, the ordinary adjoint corrected by the parity sign. The grading of the Hermitian algebra is the same statement in the multiplicative form $\Theta^{\alpha}_x = \varepsilon_x\Theta_x$.
+so the **super-adjoint of the ordinary family is the signed family**. The signed structure is therefore not a second structure grafted onto the ordinary one: it is the adjoint operation of the graded algebra, that is, the ordinary adjoint corrected by the parity sign. The grading of the Hermitian algebra is the same statement in the multiplicative form $\mathrm{Sd}^{\alpha}_x = \varepsilon_x\mathrm{Sd}_x$.
 
 This article fixes graded operators and the parity of their adjoints, the super-adjoint and its sign rule for products and graded commutators, the super-adjoints of the regular representation, and the compatibility of the graded adjoint with the modular structure.
 
@@ -89,18 +89,18 @@ $$
 **Theorem (the super-adjoint of the multiplications).** For every $x$,
 
 $$
-\boxed{\;L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}}\;} ,
+\boxed{\;L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \mathrm{Sd}_x^{\star} = \mathrm{Sd}^{\alpha}_{x^{\dagger}}\;} ,
 $$
 
-where $\Lambda^{\alpha}$ and $\mathrm{P}^{\alpha}$ are the signed left and right multiplications and $\Theta^{\alpha}$ the signed Hermitian sandwich.
+where $\Lambda^{\alpha}$ and $\mathrm{P}^{\alpha}$ are the signed left and right multiplications and $\mathrm{Sd}^{\alpha}$ the signed Hermitian sandwich.
 
-**Proof.** The left multiplication has parity $|x|$ and adjoint $L_x^{*} = L_{x^{\dagger}}$, so $L_x^{\star} = (-1)^{|x|}L_{x^{\dagger}} = \varepsilon_xL_{x^{\dagger}} = \Lambda^{\alpha}_{x^{\dagger}}$, using $\varepsilon_{x^{\dagger}} = \varepsilon_x$ and the definition $\Lambda^{\alpha}_z = \varepsilon_zL_z$; the right-handed identity is the same computation with $R_{x^{\dagger}}$ and $\mathrm{P}^{\alpha}_z = \varepsilon_zR_z$; for the sandwich, $\Theta_x$ has parity $|x|$ and adjoint $\Theta_{x^{\dagger}}$, so $\Theta_x^{\star} = \varepsilon_x\Theta_{x^{\dagger}} = \Theta^{\alpha}_{x^{\dagger}}$.
+**Proof.** The left multiplication has parity $|x|$ and adjoint $L_x^{*} = L_{x^{\dagger}}$, so $L_x^{\star} = (-1)^{|x|}L_{x^{\dagger}} = \varepsilon_xL_{x^{\dagger}} = \Lambda^{\alpha}_{x^{\dagger}}$, using $\varepsilon_{x^{\dagger}} = \varepsilon_x$ and the definition $\Lambda^{\alpha}_z = \varepsilon_zL_z$; the right-handed identity is the same computation with $R_{x^{\dagger}}$ and $\mathrm{P}^{\alpha}_z = \varepsilon_zR_z$; for the sandwich, $\mathrm{Sd}_x$ has parity $|x|$ and adjoint $\mathrm{Sd}_{x^{\dagger}}$, so $\mathrm{Sd}_x^{\star} = \varepsilon_x\mathrm{Sd}_{x^{\dagger}} = \mathrm{Sd}^{\alpha}_{x^{\dagger}}$.
 
 **Corollary (the signed family is the graded adjoint of the ordinary one).** The signed left multiplication, the signed right multiplication and the signed Hermitian sandwich are the super-adjoints of the ordinary left multiplication, right multiplication and sandwich; so the signed structure of the corpus is exactly the adjoint operation of the graded algebra.
 
-**Proof.** The theorem, read with $x^{\dagger}$ in place of $x$ and the involution involutive: $\Lambda^{\alpha}_x = (L_{x^{\dagger}})^{\star}$, $\mathrm{P}^{\alpha}_x = (R_{x^{\dagger}})^{\star}$, $\Theta^{\alpha}_x = (\Theta_{x^{\dagger}})^{\star}$.
+**Proof.** The theorem, read with $x^{\dagger}$ in place of $x$ and the involution involutive: $\Lambda^{\alpha}_x = (L_{x^{\dagger}})^{\star}$, $\mathrm{P}^{\alpha}_x = (R_{x^{\dagger}})^{\star}$, $\mathrm{Sd}^{\alpha}_x = (\mathrm{Sd}_{x^{\dagger}})^{\star}$.
 
-**Corollary (the ordinary adjoint of the signed family).** Applying the ordinary adjoint to the theorem gives $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$ and $(\mathrm{P}^{\alpha}_x)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}}$ and $(\Theta^{\alpha}_x)^{*} = \Theta^{\alpha}_{x^{\dagger}}$, in agreement with *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* and *The Signed Adjoint of the Sandwich on a Hermitian Algebra*; so the signed family is stable under both adjoint operations.
+**Corollary (the ordinary adjoint of the signed family).** Applying the ordinary adjoint to the theorem gives $(\Lambda^{\alpha}_x)^{*} = \Lambda^{\alpha}_{x^{\dagger}}$ and $(\mathrm{P}^{\alpha}_x)^{*} = \mathrm{P}^{\alpha}_{x^{\dagger}}$ and $(\mathrm{Sd}^{\alpha}_x)^{*} = \mathrm{Sd}^{\alpha}_{x^{\dagger}}$, in agreement with *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* and *The Signed Adjoint of the Sandwich on a Hermitian Algebra*; so the signed family is stable under both adjoint operations.
 
 **Proof.** $(\Lambda^{\alpha}_x)^{*} = \varepsilon_xL_x^{*} = \varepsilon_xL_{x^{\dagger}} = \Lambda^{\alpha}_{x^{\dagger}}$; the other identities are the same computation with the right multiplication and with the sandwich.
 
@@ -163,7 +163,7 @@ $$
 with the **super-adjoint** $T^{\star}$ satisfying $T^{\star\star} = T$; the adjoint reverses the graded commutator with the Koszul sign, $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$, and the super-adjoint reverses it with the same Koszul sign, $[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$. On the regular representation the super-adjoint is the signed family of the corpus,
 
 $$
-L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
+L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \mathrm{Sd}_x^{\star} = \mathrm{Sd}^{\alpha}_{x^{\dagger}} ,
 $$
 
 so the **signed left multiplication, signed right multiplication and signed Hermitian sandwich are exactly the super-adjoints of the ordinary ones**: the signed structure is the adjoint operation of the graded algebra, not a second structure. **Self-adjointness** and **super-self-adjointness** coincide on the even part and differ by the global sign on the odd part. The **modular objects** are even, the modular adjoint $T^{\sharp} = \jmath T^{*}\jmath$ commutes with the super-adjoint, the modular flow carries the super-adjoint into itself, and the signed action satisfies $\jmath\Lambda^{\alpha}_x\jmath = \mathrm{P}^{\alpha}_{x^{\dagger}}$ and $\Delta^{it}\Lambda^{\alpha}_x\Delta^{-it} = \Lambda^{\alpha}_{\sigma_t(x)}$. The grading is *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint*, the signed multiplications are *The Graded Multiplication Operators* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, and the modular objects are *The Modular Operator and Tomita-Takesaki Theory*.
@@ -179,7 +179,7 @@ so the **signed left multiplication, signed right multiplication and signed Herm
 | $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$ | Graded commutator under the adjoint |
 | $[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$ | Graded commutator under the super-adjoint |
 | $T^{\star} = T$ | Super-self-adjointness |
-| $L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}}$, $R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}}$, $\Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}}$ | Super-adjoint of the regular representation |
+| $L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}}$, $R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}}$, $\mathrm{Sd}_x^{\star} = \mathrm{Sd}^{\alpha}_{x^{\dagger}}$ | Super-adjoint of the regular representation |
 | $\jmath$, $\Delta^{it}$ even; $(T^{\sharp})^{\star} = (T^{\star})^{\sharp}$ | Modular compatibility |
 
 ## Further Reading

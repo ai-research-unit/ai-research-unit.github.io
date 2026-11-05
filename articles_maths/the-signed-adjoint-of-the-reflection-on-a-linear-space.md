@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A reflection of a linear space is a linear involution of type $(n-1,1)$, and read as a signed two-sided operator it carries the grade involution $\alpha_r(X) = rXr$ that it defines. Its signed inner sandwich acts trivially, $\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, so the reflection is self-adjoint and unitary for its own signed sandwich; for an arbitrary grade involution the adjoint of the signed inner sandwich of $r$ is $\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, the sandwich by the inverse image of the parameter, and the sandwich is always unitary while being self-adjoint exactly when $\alpha(r)$ is an involution. This article records those facts and marks the degenerate cases in which they collapse.
+A reflection of a linear space is a linear involution of type $(n-1,1)$, and read as a signed two-sided operator it carries the grade involution $\alpha_r(X) = rXr$ that it defines. Its signed inner sandwich acts trivially, $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$, so the reflection is self-adjoint and unitary for its own signed sandwich; for an arbitrary grade involution the adjoint of the signed inner sandwich of $r$ is $\mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, the sandwich by the inverse image of the parameter, and the sandwich is always unitary while being self-adjoint exactly when $\alpha(r)$ is an involution. This article records those facts and marks the degenerate cases in which they collapse.
 
 *Involutive Subspaces and the Decomposition* supplies the form-free reflection and its fixed hyperplane; *Reflections as Signed Two-Sided Operators on a Linear Space* supplies the signed inner sandwich and the correspondence between reflections and sandwiched involutions; *The Signed Adjoint Sandwich on a Linear Space* supplies the adjoint computations. The pairing-based self-adjointness of a reflection — the orthogonal reflection — belongs to the symmetric and antisymmetric categories of this Part and to *Hilbert Algebras*, Part II.
 
@@ -10,25 +10,25 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 
 ## The Adjoint of the Reflection
 
-**Proposition (the reflection is self-adjoint for its own signed sandwich).** With $\alpha = \alpha_r$ one has $\Theta^{\alpha}_{r,r^{-1}} = \mathrm{id}$, and therefore
+**Proposition (the reflection is self-adjoint for its own signed sandwich).** With $\alpha = \alpha_r$ one has $\mathrm{Sd}^{\alpha}_{r,r^{-1}} = \mathrm{id}$, and therefore
 
 $$
-\boxed{\;\bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \Theta^{\alpha_r}_{r,r^{-1}}\;} ,
+\boxed{\;\bigl(\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \mathrm{Sd}^{\alpha_r}_{r,r^{-1}}\;} ,
 $$
 
 so the reflection is self-adjoint and unitary for the signed sandwich it defines.
 
-**Proof.** $\Theta^{\alpha_r}_{r,r^{-1}}(X) = r(rXr)r = X$ by $r^2=\mathrm{id}$, which is *Reflections as Signed Two-Sided Operators on a Linear Space*; the adjoint of the identity is the identity, and the identity is unitary.
+**Proof.** $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}(X) = r(rXr)r = X$ by $r^2=\mathrm{id}$, which is *Reflections as Signed Two-Sided Operators on a Linear Space*; the adjoint of the identity is the identity, and the identity is unitary.
 
 **Proposition (the adjoint for a general grade involution).** For an arbitrary grade involution $\alpha$,
 
 $$
-\boxed{\;\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}\;} ,
+\boxed{\;\bigl(\mathrm{Sd}^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}\;} ,
 $$
 
 and this sandwich is always unitary; it is self-adjoint if and only if $\alpha(r)$ is an involution, $\alpha(r)^2=1$.
 
-**Proof.** The adjoint formula of *The Signed Adjoint Sandwich on a Linear Space* with $a=r$ and $b=r^{-1}$ gives $\Theta^{\alpha}_{\alpha(r^{-1}),\alpha(r)}=\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$. The unitarity parameter of the adjoint sandwich is $\alpha(r^{-1})\alpha(r)=\alpha(r)^{-1}\alpha(r)=1$, a central involution, so the sandwich is unitary by the criterion; self-adjointness requires $\alpha(r^{-1})=\alpha(r)$, that is $\alpha(r)^{-1}=\alpha(r)$, which is $\alpha(r)^2=1$.
+**Proof.** The adjoint formula of *The Signed Adjoint Sandwich on a Linear Space* with $a=r$ and $b=r^{-1}$ gives $\mathrm{Sd}^{\alpha}_{\alpha(r^{-1}),\alpha(r)}=\mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$. The unitarity parameter of the adjoint sandwich is $\alpha(r^{-1})\alpha(r)=\alpha(r)^{-1}\alpha(r)=1$, a central involution, so the sandwich is unitary by the criterion; self-adjointness requires $\alpha(r^{-1})=\alpha(r)$, that is $\alpha(r)^{-1}=\alpha(r)$, which is $\alpha(r)^2=1$.
 
 **Corollary.** When $r$ commutes with $\alpha$, in particular when $\alpha=\alpha_r$, the signed inner sandwich of $r$ is self-adjoint; when $\alpha=\alpha_r$ it is the identity.
 
@@ -44,7 +44,7 @@ and this sandwich is always unitary; it is self-adjoint if and only if $\alpha(r
 
 ## Summary
 
-For a reflection $r$ of $V$ the signed inner sandwich $\Theta^{\alpha_r}_{r,r^{-1}}$ is the identity, so the reflection is self-adjoint and unitary for the grade involution it defines; for a general grade involution $\alpha$ the adjoint of $\Theta^{\alpha}_{r,r^{-1}}$ is the signed sandwich $\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)$ is an involution, which holds in particular when $r$ commutes with $\alpha$. As an element with respect to a pairing-based involution the reflection is self-adjoint exactly when it preserves the pairing; with respect to the trace pairing and the induced operator involution it is self-adjoint exactly when it is central and even. The statements collapse in characteristic two and when the grade involution is the identity.
+For a reflection $r$ of $V$ the signed inner sandwich $\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}$ is the identity, so the reflection is self-adjoint and unitary for the grade involution it defines; for a general grade involution $\alpha$ the adjoint of $\mathrm{Sd}^{\alpha}_{r,r^{-1}}$ is the signed sandwich $\mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)$ is an involution, which holds in particular when $r$ commutes with $\alpha$. As an element with respect to a pairing-based involution the reflection is self-adjoint exactly when it preserves the pairing; with respect to the trace pairing and the induced operator involution it is self-adjoint exactly when it is central and even. The statements collapse in characteristic two and when the grade involution is the identity.
 
 ## Summary of Notation
 
@@ -53,8 +53,8 @@ For a reflection $r$ of $V$ the signed inner sandwich $\Theta^{\alpha_r}_{r,r^{-
 | $F$, $V$, $E$ | the field, the space, the endomorphism algebra |
 | $r$ | a reflection, $r^2=\mathrm{id}$, $\operatorname{rk}(r-\mathrm{id})=n-1$ |
 | $\alpha_r(X)=rXr$ | the grade involution of $r$ |
-| $\Theta^{\alpha}_{r,r^{-1}}(X)=r\alpha(X)r^{-1}$ | the signed inner sandwich of $r$ |
-| $(\Theta^{\alpha}_{r,r^{-1}})^{\dagger}=\Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$ | its adjoint |
+| $\mathrm{Sd}^{\alpha}_{r,r^{-1}}(X)=r\alpha(X)r^{-1}$ | the signed inner sandwich of $r$ |
+| $(\mathrm{Sd}^{\alpha}_{r,r^{-1}})^{\dagger}=\mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$ | its adjoint |
 | $\langle X,Y\rangle=\operatorname{tr}(XY)$ | the trace pairing |
 
 ## Further Reading

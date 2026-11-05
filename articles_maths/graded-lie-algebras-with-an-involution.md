@@ -67,7 +67,7 @@ $$
 
 ## Worked Case: The Loop Algebra
 
-Let $\mathrm{G}=L\mathfrak{g}=\mathfrak{g}\otimes K[t,t^{-1}]$ with the grading by the exponent of $t$; let $\theta$ be an involution of $\mathfrak{g}$ and let $\omega(a\otimes t^n)=\theta(a)\otimes t^{-n}$. Then $\omega$ is an involution mapping $\mathrm{G}_n$ to $\mathrm{G}_{-n}$, an odd involution of degree $d=0$ in the $\mathbb{Z}$-grading read as a reflection $n\mapsto-n$: it is compatible with the grading in the reflected sense and its fixed subalgebra is the "twisted" subalgebra of $\theta$-fixed, $t$-symmetric elements. This is the algebraic form of the involution used in the theory of affine Lie algebras, and it shows that a grading-reversing involution is natural once the grading is not bounded below.
+Let $\mathrm{G}=L\mathfrak{g}=\mathfrak{g}\otimes K[t,t^{-1}]$ with the grading by the exponent of $t$; let $\mathrm{J}$ be an involution of $\mathfrak{g}$ and let $\omega(a\otimes t^n)=\mathrm{J}(a)\otimes t^{-n}$. Then $\omega$ is an involution mapping $\mathrm{G}_n$ to $\mathrm{G}_{-n}$, an odd involution of degree $d=0$ in the $\mathbb{Z}$-grading read as a reflection $n\mapsto-n$: it is compatible with the grading in the reflected sense and its fixed subalgebra is the "twisted" subalgebra of $\mathrm{J}$-fixed, $t$-symmetric elements. This is the algebraic form of the involution used in the theory of affine Lie algebras, and it shows that a grading-reversing involution is natural once the grading is not bounded below.
 
 
 ## Summary

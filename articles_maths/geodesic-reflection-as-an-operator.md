@@ -105,7 +105,7 @@ $$
 \boxed{\;\rho_a(x) = x - 2\,\frac{B(x,a)}{\mathfrak{Q}(a)}\,a\;} ,
 $$
 
-so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\Theta^{\alpha}_{a,a^{-1}}$ of *The Signed Sandwich on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
+so it is the reflection in the hyperplane $a^\perp$; the map $\rho_a$ is the signed two-sided operator $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$ of *The Signed Sandwich on an Ordered Algebra*, and it is the operator form of the geodesic reflection in the constant-curvature geometries.
 
 **Proof.** In the Clifford algebra the vector identity $ax + xa = 2B(x,a)$ holds; multiplying by $a^{-1}$ on the right gives $a x a^{-1} = 2B(x,a)\,a^{-1} - x = 2B(x,a)\,a/\mathfrak{Q}(a) - x$, since $a^{-1} = a/\mathfrak{Q}(a)$; the negative of this is the reflection formula. The identification with the signed sandwich is the definition of the reflection element $a$ with $a^{-1} = a/\mathfrak{Q}(a)$, and the geometric instances are the Euclidean and hyperbolic reflections of the previous sections.
 

@@ -8,7 +8,7 @@ $$
 H_{Q}(T) = Q\,T\,Q^{\dagger} ,
 $$
 
-the two-sided operator built from $Q$ and its indefinite adjoint. It is the indefinite counterpart of the sandwich $\Theta_x$ of a Hilbert algebra, and it is the operation that transports operators along the symmetry group of the form: for a $J$-unitary $Q$ the sandwich is the inner automorphism $\mathrm{Ad}_Q$, it preserves the indefinite form and the $J$-positivity, and it acts on self-adjointness and on the kernel and the image in a way that can be computed exactly.
+the two-sided operator built from $Q$ and its indefinite adjoint. It is the indefinite counterpart of the sandwich $\mathrm{Sd}_x$ of a Hilbert algebra, and it is the operation that transports operators along the symmetry group of the form: for a $J$-unitary $Q$ the sandwich is the inner automorphism $\mathrm{Ad}_Q$, it preserves the indefinite form and the $J$-positivity, and it acts on self-adjointness and on the kernel and the image in a way that can be computed exactly.
 
 The contrast with the Hilbert case is the interesting part. In Hilbert space the sandwich by a unitary $U$ is a unitary equivalence, so it preserves the Hilbert norm, the spectrum, the positive cone and every spectral subspace. In a Krein space the sandwich by a $J$-unitary $Q$ preserves the indefinite form but not the Hilbert inner product, because a $J$-unitary operator need not be Hilbert-unitary: it is a form-isometry of the indefinite geometry, and the Hilbert norm of the sandwich generally changes. What is preserved is the indefinite geometry — the form, the $J$-positivity, the $J$-self-adjointness, the $J$-unitarity — and what is not preserved is the Hilbert metric; the sandwich therefore fails to transport the spectrum, and this failure is the reason the indefinite theory needs the modular and spectral tools of *Spectral Theory on Krein Spaces* rather than the Hilbert spectral theorem.
 
@@ -36,7 +36,7 @@ $$
 
 **Proof.** $(\alpha Q)^{\dagger} = \bar\alpha Q^{\dagger}$ and $(\alpha Q)T(\bar\alpha Q^{\dagger}) = |\alpha|^{2}QTQ^{\dagger}$.
 
-**Remark (the Hilbert-algebra sandwich is the definite case).** When $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint, the bilinear sandwich is the sandwich $\Theta_Q(T) = QTQ^{*}$ of a Hilbert algebra, and every statement below reduces to the Hilbert one; the indefinite theory is the same family of operations read with a form of nonzero rank.
+**Remark (the Hilbert-algebra sandwich is the definite case).** When $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint, the bilinear sandwich is the sandwich $\mathrm{Sd}_Q(T) = QTQ^{*}$ of a Hilbert algebra, and every statement below reduces to the Hilbert one; the indefinite theory is the same family of operations read with a form of nonzero rank.
 
 ## Preservation of the Form and of J-Positivity
 
@@ -137,4 +137,4 @@ The **Hermitian sandwich** on a Krein space is $H_{Q}(T) = QTQ^{\dagger}$, with 
 - Tomas Ya. Azizov and I. S. Iokhvidov, *Linear Operators in Spaces with an Indefinite Metric* (Wiley, 1989), for the unitary group of a Krein space and its action.
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the matrix form of the sandwich and its invariants.
 - Peter Jonas, "On the spectral theory of operators on Krein spaces", in *Operator Theory: Advances and Applications* (Birkhäuser), for the limits of form-preserving equivalence.
-- Jacques Dixmier, *Von Neumann Algebras* (North-Holland, 1981), for the Hilbert-algebra sandwich $\Theta_x(y) = xyx^{\dagger}$ in the definite case.
+- Jacques Dixmier, *Von Neumann Algebras* (North-Holland, 1981), for the Hilbert-algebra sandwich $\mathrm{Sd}_x(y) = xyx^{\dagger}$ in the definite case.

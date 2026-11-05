@@ -185,7 +185,7 @@ The same element carries five descriptions, and they are worth setting side by s
 **The complex angle.** The element is central, so the Hamilton pairing does not apply. Its vector part is zero, $B=0$, while the pairing's domain is $B\neq0$ (*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Domain*); a central element has no axis and no Hamilton angle. The angle that remains is the exponent of the central evolution,
 
 $$
-\boxed{\;\Theta(t')=-\frac{i}{\hbar}z_\star t'=-\frac{\Gamma t'}{2\hbar}-\frac{iE_Rt'}{\hbar}\;}
+\boxed{\;\mathrm{H}^{\mathrm{hvs}}(t')=-\frac{i}{\hbar}z_\star t'=-\frac{\Gamma t'}{2\hbar}-\frac{iE_Rt'}{\hbar}\;}
 $$
 
 a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imaginary part is the phase. Its real part is not an angle: it is the decay exponent, the logarithm of the scale. In the Hamilton chart a real angle gives a periodic exponential and a purely imaginary one gives a monotone exponential. The resonance's exponent is central and complex: its imaginary part is the phase, its real part the decay. This is the non-compact regime of *The Exponential Word and Its Boundary*, §*The Two Regimes*, read on the centre.
@@ -193,7 +193,7 @@ a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imagina
 **The mass scale.** The pole is an energy, so it becomes a dimensionless angle only after a scale is chosen. In units of the mass $m$ of the decaying state, $\theta_\star=z_\star/(mc^2)$ and
 
 $$
-\Theta(t')=-i\,\theta_\star\,\frac{mc^2t'}{\hbar},
+\mathrm{H}^{\mathrm{hvs}}(t')=-i\,\theta_\star\,\frac{mc^2t'}{\hbar},
 $$
 
 so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary part is $-\Gamma/(2mc^2)$, the half-width in mass units, and its real part is the energy in mass units. The half-width is therefore the imaginary part of the mass-unit angle, and it appears with a minus sign in the real part of the exponent $\Theta$; the factor $-i$ between them swaps the two readings. Neither part is a Lorentz scalar; both are central, as the pole is.
@@ -362,7 +362,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Delta(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\Delta-\tfrac{i}{2}\Gamma$ |
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
-| $\Theta(t')=-iz_\star t'/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
+| $\mathrm{H}^{\mathrm{hvs}}(t')=-iz_\star t'/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
 | $\tilde A(t')=e^{-\Gamma t'/2\hbar}e_t$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
 | $\tilde U_\star(t')=\exp(-iz_\star t'/\hbar)$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
 | $\tau=\hbar/\Gamma$ | Lifetime |

@@ -38,10 +38,10 @@ $$
 \Box\big|_{\mathbb M_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
 $$
 
-and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial q_k$. Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$, so the gauged gradient is
+and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial q_k$. Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$, and with it the gradient:
 
 $$
-\tilde\nabla_A=\tilde\nabla-\frac{iq}{\hbar}\tilde A,
+\tilde\nabla\longmapsto\tilde\nabla-\frac{iq}{\hbar}\tilde A,
 \qquad
 \tilde A=\Phi e_t-\vec A,
 \qquad
@@ -50,7 +50,7 @@ $$
 \sum_k\vec e_k\pi_k=-i\hbar\,D_3^A ,
 $$
 
-with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iqA_k/\hbar)$ the pure part of $\tilde\nabla_A$. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=ct'$, replaces the gradient by the element
+with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iqA_k/\hbar)$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla^{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A=\Phi e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=ct'$, replaces the gradient by the element
 
 $$
 \tilde K=k_0-i\vec k,
@@ -276,7 +276,7 @@ which is the Pauli equation exactly as the parent reports it. The coefficient $1
 
 **Solution.**
 
-*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla_A=\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(\Phi,-\vec A)$ in this mostly-minus metric, so that $\tilde A=\Phi e_t-\vec A$. The time component gives
+*Step 1: the substitution.* The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(\Phi,-\vec A)$ in this mostly-minus metric, so that $\tilde A=\Phi e_t-\vec A$. The time component gives
 
 $$
 i\hbar\frac{\partial}{\partial t'}\ \longrightarrow\ i\hbar\frac{\partial}{\partial t'}-q\Phi ,
@@ -552,7 +552,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_k\vec e_k\partial/\partial q_k$, $D_3^A$ | Pure part of the gradient, free and gauged |
-| $\tilde\nabla_A=\tilde\nabla-iq\tilde A/\hbar$, $\tilde A=\Phi e_t-\vec A$ | Minimal substitution in the gradient |
+| $\tilde\nabla-iq\tilde A/\hbar$, $\tilde A=\Phi e_t-\vec A$ | The gauged gradient; minimal substitution |
 | $\tilde K=k_0-i\vec k$ | Symbol of the gradient on a plane wave; $\tilde K^{\natural}\tilde K=k_0^2-\lvert\vec k\rvert^2$ |
 | $F=F_L+F_R$; $\Gamma F=-iF\vec e_z$ | The field and its chirality, values $\mp1$ |
 | $\beta F=iF\vec e_x$, $\beta^2=1$, $\beta\Gamma=-\Gamma\beta$ | The mass grading; $\beta O=-O\beta$ |

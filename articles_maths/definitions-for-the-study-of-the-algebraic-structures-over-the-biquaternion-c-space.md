@@ -43,15 +43,15 @@ The definitions of this article are all of that form — $\tilde Q\star\tilde Q_
 
 The relativity has one structural counterpart, which is why two products may share a class without sharing the equation.
 
-**Proposition (transport).** Let $\star$ and $\star'$ be two products on $\mathbb{B}$ and let $\theta$ be a bijection of $\mathbb{B}$ with
+**Proposition (transport).** Let $\star$ and $\star'$ be two products on $\mathbb{B}$ and let $\mathrm{J}$ be a bijection of $\mathbb{B}$ with
 $$
-\boxed{\;\theta(x\star y)=\theta(x)\star'\theta(y) \qquad\text{for all } x,y\;}.
+\boxed{\;\mathrm{J}(x\star y)=\mathrm{J}(x)\star'\mathrm{J}(y) \qquad\text{for all } x,y\;}.
 $$
-Then $\theta$ carries every class of §2 to §5 from $\star$ onto the corresponding class of $\star'$: the $\star$-units onto the $\star'$-units, the $\star$-invertible elements onto the $\star'$-invertible elements with $\theta(x^{-1})=\theta(x)^{-1}$, the $\star$-idempotents onto the $\star'$-idempotents, the $\star$-nilpotents onto the $\star'$-nilpotents, and the $\star$-zero divisors onto the $\star'$-zero divisors.
+Then $\mathrm{J}$ carries every class of §2 to §5 from $\star$ onto the corresponding class of $\star'$: the $\star$-units onto the $\star'$-units, the $\star$-invertible elements onto the $\star'$-invertible elements with $\mathrm{J}(x^{-1})=\mathrm{J}(x)^{-1}$, the $\star$-idempotents onto the $\star'$-idempotents, the $\star$-nilpotents onto the $\star'$-nilpotents, and the $\star$-zero divisors onto the $\star'$-zero divisors.
 
-**Proof.** Apply $\theta$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\theta(x)\star'\theta(x)=\theta(x\star x)=\theta(x)$; if $x\star x=0$ then $\theta(x)\star'\theta(x)=\theta(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\theta(x)\star'\theta(y)=0$ with $\theta(x),\theta(y)\neq0$; and if $e$ is a unit of $\star$ then $\theta(e)\star'\theta(x)=\theta(e\star x)=\theta(x)$ and $\theta(x)\star'\theta(e)=\theta(x)$, so $\theta(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\theta(x)\star'\theta(y)=\theta(e)$.
+**Proof.** Apply $\mathrm{J}$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\mathrm{J}(x)\star'\mathrm{J}(x)=\mathrm{J}(x\star x)=\mathrm{J}(x)$; if $x\star x=0$ then $\mathrm{J}(x)\star'\mathrm{J}(x)=\mathrm{J}(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\mathrm{J}(x)\star'\mathrm{J}(y)=0$ with $\mathrm{J}(x),\mathrm{J}(y)\neq0$; and if $e$ is a unit of $\star$ then $\mathrm{J}(e)\star'\mathrm{J}(x)=\mathrm{J}(e\star x)=\mathrm{J}(x)$ and $\mathrm{J}(x)\star'\mathrm{J}(e)=\mathrm{J}(x)$, so $\mathrm{J}(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\mathrm{J}(x)\star'\mathrm{J}(y)=\mathrm{J}(e)$.
 
-Two products related by such a $\theta$ have the same element theory up to $\theta$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are *The Four General Products and Their Relations over the Biquaternion Algebra*.
+Two products related by such a $\mathrm{J}$ have the same element theory up to $\mathrm{J}$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
 ---
 

@@ -7,11 +7,11 @@ A descent datum on a sheaf — an action of a group, an involution, a Galois act
 
 The group acts on the cohomology through its action on the sheaf, the action commutes with the cup product, and the fixed part is computed by the transfer in the finite case and by the descent spectral sequence in general; the Galois case adds the semilinearity of the action on the coefficients and the identification $H^*(X,\mathcal{F}^{\Gamma})\cong H^*(X_K,\mathcal{F})^{\Gamma}$ of the invariants with the cohomology of the descended sheaf. This article is the third and last of the `- * Operator Theory` group and closes the category; the involution on the cohomology is *Cohomology with an Involution*, the descent of the sheaves is *Galois Descent for Sheaves* and *Equivariant Sheaves and Descent*, the spectral sequences are *Spectral Sequences*, the group cohomology is *Group Cohomology* of Part I, and the fixed-point formula for a general action is Part III.
 
-The article uses no analysis and no geometry: the actions are algebraic actions on sheaves of modules, the cohomology is the sheaf cohomology of Part II, the Galois theory is that of Part I, and no measure, no norm and no derivative occurs. Throughout, $G$ or $\Gamma$ is a group acting on $X$ with an equivariant structure on the sheaf $\mathcal{F}$, the action on the cohomology is written $\theta$ when it is an involution and $\gamma\mapsto\gamma^*$ in general, the fixed part is written $H^*(X,\mathcal{F})^{G}$, and the descended sheaf is $\mathcal{F}^{G}$ over the quotient $X/G$ or the fixed sheaf $\mathcal{F}^{\Gamma}$ over $X$.
+The article uses no analysis and no geometry: the actions are algebraic actions on sheaves of modules, the cohomology is the sheaf cohomology of Part II, the Galois theory is that of Part I, and no measure, no norm and no derivative occurs. Throughout, $G$ or $\Gamma$ is a group acting on $X$ with an equivariant structure on the sheaf $\mathcal{F}$, the action on the cohomology is written $\mathrm{J}$ when it is an involution and $\gamma\mapsto\gamma^*$ in general, the fixed part is written $H^*(X,\mathcal{F})^{G}$, and the descended sheaf is $\mathcal{F}^{G}$ over the quotient $X/G$ or the fixed sheaf $\mathcal{F}^{\Gamma}$ over $X$.
 
 ## The Action of the Descent Group on the Cohomology
 
-**Proposition (the action).** Let $G$ act on $X$ and let $\mathcal{F}$ carry a $G$-equivariant structure, as in *Equivariant Sheaves and Descent*. Then $G$ acts on the cohomology $H^*(X,\mathcal{F})$ by $\gamma^*=H^*(\gamma,\varphi_{\gamma})$, the action is functorial in the equivariant sheaf, and it commutes with the cup product of *The Cup Product on Sheaf Cohomology*: $\gamma^*(\alpha\smile\beta)=\gamma^*\alpha\smile\gamma^*\beta$. When $G=\mathbb{Z}/2$ with generator $\theta$, the action is an involution of the graded ring, $\theta^2=\mathrm{id}$, and its fixed part $H^*(X,\mathcal{F})^{\theta}$ is the invariant cohomology.
+**Proposition (the action).** Let $G$ act on $X$ and let $\mathcal{F}$ carry a $G$-equivariant structure, as in *Equivariant Sheaves and Descent*. Then $G$ acts on the cohomology $H^*(X,\mathcal{F})$ by $\gamma^*=H^*(\gamma,\varphi_{\gamma})$, the action is functorial in the equivariant sheaf, and it commutes with the cup product of *The Cup Product on Sheaf Cohomology*: $\gamma^*(\alpha\smile\beta)=\gamma^*\alpha\smile\gamma^*\beta$. When $G=\mathbb{Z}/2$ with generator $\mathrm{J}$, the action is an involution of the graded ring, $\mathrm{J}^2=\mathrm{id}$, and its fixed part $H^*(X,\mathcal{F})^{\mathrm{J}}$ is the invariant cohomology.
 
 *Proof.* The equivariant structure gives an isomorphism $\varphi_{\gamma}:\gamma_*\mathcal{F}\to\mathcal{F}$, and the functor $H^*(X,-)$ carries it to an isomorphism $H^*(X,\mathcal{F})\to H^*(X,\mathcal{F})$ that is the action; the composability of the equivariant structures makes the assignment a group homomorphism, and the naturality of the cup product makes it multiplicative. For an involution the square is the identity because the equivariant structure is of order two.
 
@@ -19,9 +19,9 @@ The article uses no analysis and no geometry: the actions are algebraic actions 
 
 *Proof.* The action is a ring action on the cohomology by the multiplicativity, so the fixed elements form a subring and the fixed part of the coefficients is a module over it.
 
-**Proposition (the sign convention of the graded case).** If the action is by a graded involution $\theta$ with a sign on the cohomological degree, that is $\theta\alpha=(-1)^{|\alpha|}\theta^*\alpha$ on a class of degree $|\alpha|$, the fixed part is the **even part** of the action and the anti-invariant part the odd part; the two conventions agree when the involution is not twisted by the degree, which is the case of an action on the space.
+**Proposition (the sign convention of the graded case).** If the action is by a graded involution $\mathrm{J}$ with a sign on the cohomological degree, that is $\mathrm{J}\alpha=(-1)^{|\alpha|}\mathrm{J}^*\alpha$ on a class of degree $|\alpha|$, the fixed part is the **even part** of the action and the anti-invariant part the odd part; the two conventions agree when the involution is not twisted by the degree, which is the case of an action on the space.
 
-*Proof.* The twisted action is the composition of the untwisted one with the degree sign; its fixed part is the set of classes with $\theta^*\alpha=(-1)^{|\alpha|}\alpha$, which is the even eigenspace of $\theta^*$ in degrees where $(-1)^{|\alpha|}=+1$. The two conventions are distinguished in practice and one must say which is meant, as in *Cohomology with an Involution*.
+*Proof.* The twisted action is the composition of the untwisted one with the degree sign; its fixed part is the set of classes with $\mathrm{J}^*\alpha=(-1)^{|\alpha|}\alpha$, which is the even eigenspace of $\mathrm{J}^*$ in degrees where $(-1)^{|\alpha|}=+1$. The two conventions are distinguished in practice and one must say which is meant, as in *Cohomology with an Involution*.
 
 ## The Fixed Part and the Descent Isomorphism
 
@@ -63,7 +63,7 @@ which describes the cohomology of the descended sheaf in terms of the invariants
 
 *Proof.* The spectral sequence is the Cartan–Leray spectral sequence of the quotient map, whose construction is *Spectral Sequences* and *Group Cohomology*: the double complex is the one of the equivariant Čech complex of a $G$-invariant cover, one differential being the Čech coboundary of *The Coboundary Operator* and the other the group differential, and the two spectral sequences of the double complex carry the two filtrations. The low-degree exact sequence is the standard exact sequence of the edge maps of a first-quadrant spectral sequence.
 
-**Proposition (the involution on the pages).** For $G=\mathbb{Z}/2$ the descent spectral sequence carries the involution $\theta$ of the cohomology on the $E_2$ page, $E_2^{n,m}=H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$ with the involution induced by the action on the coefficients and on the group, and the involution commutes with the differentials and converges to the involution induced by $\theta$ on $H^*(X/G,\mathcal{F}^{G})$; the fixed part of the abutment is computed from the fixed parts of the pages. A class of the abutment is invariant under the descended involution exactly when its representatives are invariant on the pages, the degeneration hypothesis of *The Involution on the Coboundary* being understood.
+**Proposition (the involution on the pages).** For $G=\mathbb{Z}/2$ the descent spectral sequence carries the involution $\mathrm{J}$ of the cohomology on the $E_2$ page, $E_2^{n,m}=H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$ with the involution induced by the action on the coefficients and on the group, and the involution commutes with the differentials and converges to the involution induced by $\mathrm{J}$ on $H^*(X/G,\mathcal{F}^{G})$; the fixed part of the abutment is computed from the fixed parts of the pages. A class of the abutment is invariant under the descended involution exactly when its representatives are invariant on the pages, the degeneration hypothesis of *The Involution on the Coboundary* being understood.
 
 *Proof.* The involution of the sheaf acts on the equivariant Čech complex and commutes with both differentials, so it induces an involution on the pages of the spectral sequence by *The Involution on the Coboundary*; the identification of the limit involution is the naturality of the edge maps, and the fixed part of the abutment is the limit of the fixed parts when the sequence degenerates.
 
@@ -79,15 +79,15 @@ which describes the cohomology of the descended sheaf in terms of the invariants
 
 *Proof.* The statement is the Galois form with $K/k=\mathbb{C}/\mathbb{R}$ and $\Gamma=\mathbb{Z}/2$; the computation for the constant sheaf uses the identification of the complexified cohomology with the cohomology of the constant sheaf $\mathbb{C}$ and the semilinear involution of the coefficients, whose fixed part is the real cohomology.
 
-**Proposition (the descent of an involution on the cohomology).** Let $\theta$ be an involution of $H^*(X_K,\mathcal{F})$ commuting with the Galois action and semilinear over the involution $\sigma$ of $K$, $\theta(\lambda\alpha)=\sigma(\lambda)\theta(\alpha)$. Then $\theta$ descends to an involution $\theta^{\Gamma}$ of the fixed part $H^*(X_K,\mathcal{F})^{\Gamma}\cong H^*(X,\mathcal{F}^{\Gamma})$, and the descended involution is the involution of the cohomology of the descended sheaf; the fixed part of the descended involution is the fixed part of the original one, computed on the invariants.
+**Proposition (the descent of an involution on the cohomology).** Let $\mathrm{J}$ be an involution of $H^*(X_K,\mathcal{F})$ commuting with the Galois action and semilinear over the involution $\sigma$ of $K$, $\mathrm{J}(\lambda\alpha)=\sigma(\lambda)\mathrm{J}(\alpha)$. Then $\mathrm{J}$ descends to an involution $\mathrm{J}^{\Gamma}$ of the fixed part $H^*(X_K,\mathcal{F})^{\Gamma}\cong H^*(X,\mathcal{F}^{\Gamma})$, and the descended involution is the involution of the cohomology of the descended sheaf; the fixed part of the descended involution is the fixed part of the original one, computed on the invariants.
 
-*Proof.* The involution preserves the invariants because it commutes with the Galois action, so it restricts to the fixed part; the restriction is an involution of the fixed part, and the identification of the fixed part with the cohomology of the descended sheaf transports it to the descended involution. The invariance of the construction is the functoriality of the fixed part, and the fixed part of the restriction is the fixed part of $\theta$ intersected with the invariants.
+*Proof.* The involution preserves the invariants because it commutes with the Galois action, so it restricts to the fixed part; the restriction is an involution of the fixed part, and the identification of the fixed part with the cohomology of the descended sheaf transports it to the descended involution. The invariance of the construction is the functoriality of the fixed part, and the fixed part of the restriction is the fixed part of $\mathrm{J}$ intersected with the invariants.
 
 ## Worked Cases
 
 ### The Involution of the Čech Complex and the Quotient
 
-For a free involution of the space and an invariant cover, the involution of the Čech complex of *The Involution on the Coboundary* computes the action on the cohomology at the level of cochains, and its invariant cochains compute the fixed part $H^*(X,\mathcal{F})^{\theta}=H^*(X/\theta,\mathcal{F}^{\theta})$ of the transfer; the descent spectral sequence degenerates and the descent isomorphism is read directly from the invariant cochains.
+For a free involution of the space and an invariant cover, the involution of the Čech complex of *The Involution on the Coboundary* computes the action on the cohomology at the level of cochains, and its invariant cochains compute the fixed part $H^*(X,\mathcal{F})^{\mathrm{J}}=H^*(X/\mathrm{J},\mathcal{F}^{\mathrm{J}})$ of the transfer; the descent spectral sequence degenerates and the descent isomorphism is read directly from the invariant cochains.
 
 ### The Galois Action on the Constant Sheaf
 
@@ -95,7 +95,7 @@ For $\Gamma$ acting on the constant sheaf $K$ over $X_K$, the action on the coho
 
 ### The Order-Two Case of the Spectral Sequence
 
-For $G=\mathbb{Z}/2$, the $E_2$ page of the descent spectral sequence is $H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$, and the low-degree exact sequence gives $0\to H^1(\mathbb{Z}/2,H^0)\to H^1(X/G,\mathcal{F}^{G})\to (H^1)^{\theta}\to H^2(\mathbb{Z}/2,H^0)$; the example shows how the invariants of the cohomology and the group cohomology combine, the group cohomology of $\mathbb{Z}/2$ being periodic of period one.
+For $G=\mathbb{Z}/2$, the $E_2$ page of the descent spectral sequence is $H^p(\mathbb{Z}/2,H^q(X,\mathcal{F}))$, and the low-degree exact sequence gives $0\to H^1(\mathbb{Z}/2,H^0)\to H^1(X/G,\mathcal{F}^{G})\to (H^1)^{\mathrm{J}}\to H^2(\mathbb{Z}/2,H^0)$; the example shows how the invariants of the cohomology and the group cohomology combine, the group cohomology of $\mathbb{Z}/2$ being periodic of period one.
 
 ## Summary
 
@@ -109,13 +109,13 @@ The passage from the invariants of the cohomology to the cohomology of the desce
 |---|---|
 | $G$, $\Gamma$ | descent group; Galois group $\operatorname{gal}(K/k)$ in the semilinear case |
 | $\gamma^*=H^*(\gamma,\varphi_{\gamma})$ | action on the cohomology; commutes with the cup product |
-| $H^*(X,\mathcal{F})^{G}$, $H^*(X,\mathcal{F})^{\theta}$ | fixed part of the cohomology; invariant cohomology |
+| $H^*(X,\mathcal{F})^{G}$, $H^*(X,\mathcal{F})^{\mathrm{J}}$ | fixed part of the cohomology; invariant cohomology |
 | $H^*(X/G,\mathcal{F}^{G})\cong H^*(X,\mathcal{F})^{G}$ | descent isomorphism; fixed part $=$ cohomology of the descended sheaf |
 | $H^*(X,\mathcal{F}^{\Gamma})\cong H^*(X_K,\mathcal{F})^{\Gamma}$ | Galois form; semilinear action over $K$ |
 | $E_2^{n,m}=H^p(G,H^q(X,\mathcal{F}))\Longrightarrow H^{p+q}(X/G,\mathcal{F}^{G})$ | descent spectral sequence |
 | $H^1(G,H^0)\to H^1(X/G,\mathcal{F}^{G})\to H^0(G,H^1)$ | low-degree edge sequence; the obstruction to descending a class |
 | $H^*(X_{\mathbb{C}},\mathbb{C})^{\Gamma}=H^*(X,\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}$ | the real case of the Galois invariants |
-| $\theta(\lambda\alpha)=\sigma(\lambda)\theta(\alpha)$ | semilinear involution; descends to $\theta^{\Gamma}$ on the invariants |
+| $\mathrm{J}(\lambda\alpha)=\sigma(\lambda)\mathrm{J}(\alpha)$ | semilinear involution; descends to $\mathrm{J}^{\Gamma}$ on the invariants |
 
 ## Further Reading
 

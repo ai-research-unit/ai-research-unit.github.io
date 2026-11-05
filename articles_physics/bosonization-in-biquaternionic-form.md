@@ -158,13 +158,13 @@ the second form exhibiting the sine-Gordon parameters $\beta=2\sqrt\pi$ and $\mu
 $$
 |m|\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr) \;\longleftrightarrow\; -\frac{|m|}{\pi\alpha}\cos\big(2\sqrt{\pi}\,\phi+\theta\big).
 $$
-The phase is therefore a **shift of the boson field**. In the framework the mass's phase is a central phase $\exp(i\theta)$, the same object as the $\theta$ vacuum's weighting of *The Theta Vacuum in Biquaternionic Form*, and the shift it induces is the two-dimensional instance of the statement that a $\theta$ angle is a bosonic vacuum angle. The framework's statement is therefore exact and structural: the central phase of the mass is the central phase of the vacuum, and bosonization realises it as a field shift.
+The phase is therefore a **shift of the boson field**. In the framework the mass's phase is a central phase $\exp(i\theta)$, the same object as the $\theta^{\mathrm{vac}}$ vacuum's weighting of *The Theta Vacuum in Biquaternionic Form*, and the shift it induces is the two-dimensional instance of the statement that a $\theta$ angle is a bosonic vacuum angle. The framework's statement is therefore exact and structural: the central phase of the mass is the central phase of the vacuum, and bosonization realises it as a field shift.
 
 **Why a cosine and not a phase.** The mass term pairs the two values of the label. The two real bilinears are the scalar $\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x)$ and the pseudoscalar
 $$
 i\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\,\vec e_x\tilde\Psi\,\vec e_z\,i\vec e_x\bigr),
 $$
-with the chirality inserted beside the timelike cell. The two insertions act on opposite values — the chirality keeps the value and the timelike cell exchanges it — and the scalar part of the resulting element is imaginary, so $i$ times it is real; the check is a recomputation on generic elements. A chiral rotation by $\theta$ rotates the two densities into one another, and a mass $m=|m|\exp(i\theta)$ selects the direction $\theta$ in that plane. In the arena the coefficient conjugation preserves each value, so the two densities are real with respect to it and the rotation is a real rotation; its bosonized image is the real, doubly-periodic shifted cosine of the previous paragraph, not a phase. In four dimensions the coefficient conjugation reverses the chirality and therefore exchanges the values, so a real element pairs a value with the conjugate of the other and the two values are not two independent real planes; the arena's cosine image has no four-dimensional analogue. A chiral rotation still exists in four dimensions, but it is anomalous and becomes a $\theta$ term rather than a shift of a boson. This is the algebraic face of the counting failure recorded below, and it was verified on the actions.
+with the chirality inserted beside the timelike cell. The two insertions act on opposite values — the chirality keeps the value and the timelike cell exchanges it — and the scalar part of the resulting element is imaginary, so $i$ times it is real; the check is a recomputation on generic elements. A chiral rotation by $\theta$ rotates the two densities into one another, and a mass $m=|m|\exp(i\theta)$ selects the direction $\theta$ in that plane. In the arena the coefficient conjugation preserves each value, so the two densities are real with respect to it and the rotation is a real rotation; its bosonized image is the real, doubly-periodic shifted cosine of the previous paragraph, not a phase. In four dimensions the coefficient conjugation reverses the chirality and therefore exchanges the values, so a real element pairs a value with the conjugate of the other and the two values are not two independent real planes; the arena's cosine image has no four-dimensional analogue. A chiral rotation still exists in four dimensions, but it is anomalous and becomes a $\theta^{\mathrm{vac}}$ term rather than a shift of a boson. This is the algebraic face of the counting failure recorded below, and it was verified on the actions.
 
 ## The Anomaly and the Central-Charge Matching
 
@@ -228,9 +228,9 @@ The non-abelian extension is stated and its status fixed.
 
 **The result.** A theory of fermions transforming in a representation of a group is equivalent to a sigma model on the group manifold with a Wess–Zumino term whose coefficient — the level $k$ — is fixed by the representation, $k=1$ for the fundamental representation of $SU(N)$ at the appropriate normalisation. The correspondence maps the fermion's symmetry currents to the sigma model's currents and the fermion's stress tensor to the Sugawara form of the current algebra. This is the standard non-abelian bosonization (Witten 1984), and it is cited.
 
-**The framework's status regarding it.** The group theory of the non-abelian case belongs to the framework's gauge-field material, not to this subcategory, and the level's quantisation belongs to the topology that the $\theta$-vacuum article discusses. What the framework contributes here is the same as in the abelian case: the fermionic side is an element of the algebra with its two values, and the bosonic side's group-valued field is exponentiated from central elements. The framework does not derive the Wess–Zumino term; it places it.
+**The framework's status regarding it.** The group theory of the non-abelian case belongs to the framework's gauge-field material, not to this subcategory, and the level's quantisation belongs to the topology that the $\theta^{\mathrm{vac}}$-vacuum article discusses. What the framework contributes here is the same as in the abelian case: the fermionic side is an element of the algebra with its two values, and the bosonic side's group-valued field is exponentiated from central elements. The framework does not derive the Wess–Zumino term; it places it.
 
-**The level and the anomaly.** The level's integrality and the anomaly's coefficient are the same kind of statement — a quantised coefficient read from a topological density — and the $\theta$-vacuum and instanton articles supply the topological objects. This enters the article only as a pointer, because the non-abelian bosonization is a gauge-field statement and is out of this subcategory's scope.
+**The level and the anomaly.** The level's integrality and the anomaly's coefficient are the same kind of statement — a quantised coefficient read from a topological density — and the $\theta^{\mathrm{vac}}$-vacuum and instanton articles supply the topological objects. This enters the article only as a pointer, because the non-abelian bosonization is a gauge-field statement and is out of this subcategory's scope.
 
 ## What Is Established and What Is Interpretation
 
@@ -256,7 +256,7 @@ The non-abelian extension is stated and its status fixed.
 **Interpretation.**
 
 - Reading bosonization as the element–centre correspondence is the framework's presentation of the standard equivalence; the equivalence is not derived here, and the dictionary's identities are the standard ones.
-- Reading the mass phase as a central phase of the same kind as the $\theta$ vacuum's weighting is the framework's identification of two appearances of the centre; the physical statement (a mass phase shifts the boson) is standard.
+- Reading the mass phase as a central phase of the same kind as the $\theta^{\mathrm{vac}}$ vacuum's weighting is the framework's identification of two appearances of the centre; the physical statement (a mass phase shifts the boson) is standard.
 
 **Open.**
 
@@ -349,7 +349,7 @@ $$
 \qquad
 \sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\phi}{\partial Q_\mu^2},
 $$
-and the framework's contribution is to name the two sides: the fermion is an element of the algebra, read in one value for the count, and the boson is a central scalar, so that the equivalence is a correspondence between the algebra's operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear mass — the exchange of the two values, carried in the arena by the right factor $\vec e_y$ — bosonizes to the cosine, and the mass's central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, the same central phase that weights the $\theta$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
+and the framework's contribution is to name the two sides: the fermion is an element of the algebra, read in one value for the count, and the boson is a central scalar, so that the equivalence is a correspondence between the algebra's operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear mass — the exchange of the two values, carried in the arena by the right factor $\vec e_y$ — bosonizes to the cosine, and the mass's central phase $\exp(i\theta)$ bosonizes to a shift of the boson field, the same central phase that weights the $\theta^{\mathrm{vac}}$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 
 ## Summary of Notation
 
@@ -370,7 +370,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
 | $\phi$ | The real boson field, central |
 | $\alpha$ | Short-distance cutoff in the dictionary |
-| $\theta$ | Phase of the mass, $m=|m|e^{i\theta}$; also the $\theta$-vacuum angle |
+| $\theta$ | Phase of the mass, $m=|m|e^{i\theta}$; also the $\theta^{\mathrm{vac}}$-vacuum angle |
 | $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box\phi=0$ |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
 | $:\!\exp(i\beta\phi)\!:$ | Vertex operator; dimension $\beta^2/4\pi$ on the full field and $\beta^2/8\pi$ on one half |

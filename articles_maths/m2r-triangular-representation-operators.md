@@ -129,13 +129,13 @@ $$
 **The sandwich, and the ray.** The two-sided operator with the conjugate on the right is
 
 $$
-\Theta_Q(X)=QX\bar Q=Q\bar Q\,X=q^{2}X,
+\mathrm{Sd}_Q(X)=QX\bar Q=Q\bar Q\,X=q^{2}X,
 $$
 
 a scalar multiple of the identity, with scalar $q^{2}$. So the sandwich family is
 
 $$
-\{\Theta_Q:Q\in\mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}\}=\{q^{2}\,\mathrm{id}:q\in\mathbb{R}\}=[0,\infty)\cdot\mathrm{id},
+\{\mathrm{Sd}_Q:Q\in\mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}\}=\{q^{2}\,\mathrm{id}:q\in\mathbb{R}\}=[0,\infty)\cdot\mathrm{id},
 $$
 
 a **ray** of the identity, and the set of parameters for which it is the identity is
@@ -146,7 +146,7 @@ $$
 
 two affine lines in the plane, of real dimension one and two components. The comparison with the two previous categories is the whole point of the display: the complex sandwich gave the ray $[0,\infty)$ with kernel the circle $|Q|=1$, the split sandwich gave the line $\mathbb{R}$ with kernel the hyperbola $\langle Q\rangle_{*}=1$ of two branches, and the dual sandwich gives the ray with kernel two *parallel* lines. The conic has degenerated. The kernel is not compact in any of the three cases, and here it is the simplest disconnected set possible: two parallel lines, each a coset of the shear group $1+\mathrm{M}$.
 
-**The vanishing of the sandwich.** The ray contains $0$, and $0$ is attained at a nonzero parameter, $\Theta_\varepsilon=0$. So the sandwich family is a monoid of scalings and not a group: it is closed under composition, it contains $0$, and its group of units is the half-line $(0,\infty)\cdot\mathrm{id}$. In the split category the same family was all of $\mathbb{R}$, and the difference is the sign of the norm form.
+**The vanishing of the sandwich.** The ray contains $0$, and $0$ is attained at a nonzero parameter, $\mathrm{Sd}_\varepsilon=0$. So the sandwich family is a monoid of scalings and not a group: it is closed under composition, it contains $0$, and its group of units is the half-line $(0,\infty)\cdot\mathrm{id}$. In the split category the same family was all of $\mathbb{R}$, and the difference is the sign of the norm form.
 
 ## The Kronecker Display
 
@@ -359,7 +359,7 @@ of dimensions two, one and one. The family is the multiplication; with the scala
 | $L_\varepsilon$ | the square-zero generator $E$ of the family | this article |
 | $L_{Q}R_{P}$ | $X\mapsto QXP$, equal to $L_{QP}$ | this article |
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)^{\mathsf{T}}\otimes\mathsf{M}_2(Q)$ | this article |
-| $\Theta_Q$ | the sandwich $X\mapsto QX\bar Q=q^{2}X$ | this article |
+| $\mathrm{Sd}_Q$ | the sandwich $X\mapsto QX\bar Q=q^{2}X$ | this article |
 | $c(T_Q)=(q,q')$ | the coefficient array of a member, a vector of length two | this article |
 | $c(Q,P)$ | the array of the pair, of rank one for a pair with both factors nonzero | this article |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |

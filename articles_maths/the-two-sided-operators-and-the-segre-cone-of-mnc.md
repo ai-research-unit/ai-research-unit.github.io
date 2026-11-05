@@ -197,7 +197,7 @@ of dimension $n^{2}$ each inside the cone of dimension $2n^{2}-1$. Their interse
 
 **The sandwich.** The **sandwich** is the member with the second parameter the conjugate transpose of the first,
 $$
-\Theta_{A}=L_{A}R_{A^{*}},\qquad \Theta_{A}(X)=AXA^{*}.
+\mathrm{Sd}_{A}=L_{A}R_{A^{*}},\qquad \mathrm{Sd}_{A}(X)=AXA^{*}.
 $$
 It is a real subcone of the complex cone, of real dimension $2n^{2}-1$, and it is the subject of *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. The word *Hermitian* in the biquaternion articles refers to the same choice of the second slot, and the subcone is real and not complex because the star is antilinear.
 
@@ -219,7 +219,7 @@ The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes 
 
 The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
-The two one-sided copies are the two rulings of the cone and meet in the scalars; the sandwich $\Theta_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
+The two one-sided copies are the two rulings of the cone and meet in the scalars; the sandwich $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
 
 ## Summary of Notation
 
@@ -231,7 +231,7 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 | $N=n^{2}$ | the dimension of the algebra |
 | $2n^{2}-1$ | the complex dimension of the cone |
 | $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$ | the Segre variety of the projectivised cone |
-| $\Theta_{A}=L_{A}R_{A^{*}}$ | the sandwich |
+| $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the sandwich |
 | $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$ | the group of units of the monoid |
 | $\ell$ | the length, treated in the companion article |
 

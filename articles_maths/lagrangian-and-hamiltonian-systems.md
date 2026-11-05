@@ -205,21 +205,21 @@ The Legendre transform pairs velocities with momenta, and with that pairing the 
 
 **Definition.** The **canonical momentum one-form** of $L$ is the $1$-form on the tangent bundle
 $$
-\theta_L = \sum_i p_i\,dq_i = \sum_i\frac{\partial L}{\partial\left(dq_i/dt\right)}\,dq_i ,
+\varpi_L = \sum_i p_i\,dq_i = \sum_i\frac{\partial L}{\partial\left(dq_i/dt\right)}\,dq_i ,
 $$
 the pullback of the tautological form $\sum_i p_i\,dq_i$ of the cotangent bundle by the Legendre transform. A vector field $X$ on $TQ$ is a **second-order field** if $X(q_i)=dq_i/dt$ for each $i$, that is, if its integral curves are the velocity lifts of their projections to $Q$.
 
 **Theorem (coordinate-free Euler–Lagrange equation).** Let $L$ be a regular Lagrangian, so that the Hessian $\bigl(\partial^2L/\partial\left(dq_i/dt\right)\partial\left(dq_j/dt\right)\bigr)$ is everywhere invertible. Then there is a unique second-order vector field $X$ on $TQ$ with
 $$
-\mathcal{L}_X\theta_L = dL ,
+\mathcal{L}_X\varpi_L = dL ,
 $$
 and the integral curves of $X$ are exactly the velocity lifts of the solutions of the Euler–Lagrange equations. The field $X$ is the field of the system, and the identity is the Euler–Lagrange equation in coordinate-free form.
 
 *Proof.* Write $X$ with $X(q_i)=dq_i/dt$ and unknown accelerations $X(dq_j/dt)$, and put $\alpha_i=X(p_i)$. Cartan's formula gives
 $$
-\mathcal{L}_X\theta_L = d(\iota_X\theta_L)+\iota_X d\theta_L = d\bigl(\sum_i p_i\,dq_i/dt\bigr)+\sum_i\alpha_i\,dq_i-\sum_i dq_i/dt\,dp_i = \sum_i p_i\,d(dq_i/dt)+\sum_i\alpha_i\,dq_i ,
+\mathcal{L}_X\varpi_L = d(\iota_X\varpi_L)+\iota_X d\varpi_L = d\bigl(\sum_i p_i\,dq_i/dt\bigr)+\sum_i\alpha_i\,dq_i-\sum_i dq_i/dt\,dp_i = \sum_i p_i\,d(dq_i/dt)+\sum_i\alpha_i\,dq_i ,
 $$
-the last step using $d\bigl(\sum_i p_i\,dq_i/dt\bigr)=\sum_i dq_i/dt\,dp_i+\sum_i p_i\,d(dq_i/dt)$. Equating coefficients with those of $dL = \sum_i\partial L/\partial q_i\,dq_i+\sum_i\partial L/\partial\left(dq_i/dt\right)\,d(dq_i/dt)$ gives $p_i=\partial L/\partial\left(dq_i/dt\right)$, which is the definition of $\theta_L$, and $\alpha_i=\partial L/\partial q_i$, that is
+the last step using $d\bigl(\sum_i p_i\,dq_i/dt\bigr)=\sum_i dq_i/dt\,dp_i+\sum_i p_i\,d(dq_i/dt)$. Equating coefficients with those of $dL = \sum_i\partial L/\partial q_i\,dq_i+\sum_i\partial L/\partial\left(dq_i/dt\right)\,d(dq_i/dt)$ gives $p_i=\partial L/\partial\left(dq_i/dt\right)$, which is the definition of $\varpi_L$, and $\alpha_i=\partial L/\partial q_i$, that is
 $$
 \frac{d}{dt}\Bigl(\frac{\partial L}{\partial\left(dq_i/dt\right)}\Bigr)=\frac{\partial L}{\partial q_i}
 $$
@@ -464,7 +464,7 @@ A distribution of initial conditions is therefore transported by the flow exactl
 
 ## Summary
 
-A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,dq/dt,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\left(dq_i/dt\right)$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\,dq_i/dt-L$ and Hamilton's equations $dq/dt=\partial H/\partial p$, $dp/dt=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq_i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\theta_L=\sum_i p_i\,dq_i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\theta_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.
+A Lagrangian system is given by a function $L$ on the tangent bundle of a configuration space $Q$, and its motions are the critical points of the action $S[q]=\int L(q,dq/dt,t)dt$, equivalently the solutions of the Euler–Lagrange equations; the momentum $p_i=\partial L/\partial\left(dq_i/dt\right)$ defines the Legendre transform, and when the transform is invertible the system is equivalently a Hamiltonian system on the cotangent bundle with $H=\sum p_i\,dq_i/dt-L$ and Hamilton's equations $dq/dt=\partial H/\partial p$, $dp/dt=-\partial H/\partial q$. The Hamiltonian formulation is the symplectic one: a symplectic manifold $(M,\omega)$, the Hamiltonian vector field defined by $\iota_{X_H}\omega=dH$, the Poisson bracket $\{f,g\}=\omega(X_f,X_g)$ with its Jacobi identity and Leibniz rule, and the local model of Darboux $\omega=\sum dq_i\wedge dp_i$; the flow preserves $\omega$ and the volume $\omega^n/n!$, which gives Liouville's theorem and Poincaré recurrence, and a symmetry of the Hamiltonian gives a conserved momentum map by Noether's theorem. A Hamiltonian system on a $2n$-dimensional manifold is completely integrable when it possesses $n$ independent integrals in involution; then, on a compact connected regular level set, the Liouville–Arnold theorem exhibits an invariant torus with linear (conditionally periodic) flow and action-angle coordinates in which $H$ depends only on the actions, so the system is solved by quadrature. The Euler top, the Kepler problem and the geodesic flow are the standard examples, and the theory is the finite-dimensional companion of the integrable systems of the preceding articles, whose travelling-wave reductions are systems of this kind. A coordinate on which the Lagrangian does not depend is cyclic, and its conjugate momentum is then conserved. The equation of a regular system can also be written without coordinates: the canonical momentum one-form $\varpi_L=\sum_i p_i\,dq_i$ is the pullback of the tautological form by the Legendre transform, the field of the system is the unique second-order vector field $X$ with $\mathcal{L}_X\varpi_L=dL$, and the integral curves of $X$ are the velocity lifts of the solutions.
 
 The mechanical origin of the equation is D'Alembert's principle, the statement that the impressed forces and the inertial terms do equal virtual work across every displacement consistent with the constraints; on generalised coordinates it becomes $\frac{d}{dt}\partial T/\partial\left(dq_j/dt\right)-\partial T/\partial q_j=\mathcal Q_j$, and for conservative forces the Euler–Lagrange equation of $L=T-V$. A constraint of the form $\phi(q,t)=0$ is holonomic and is used by elimination; a velocity constraint $\sum_j A_{aj}(q)dq_j/dt=0$ with no integrating factor is non-holonomic, and it is imposed by multipliers in the Lagrange–d'Alembert equations $\frac{d}{dt}\partial L/\partial\left(dq_j/dt\right)-\partial L/\partial q_j=\sum_a\lambda_a A_{aj}$, which are not the stationarity of an action but the transcription of D'Alembert's principle. The energy is still conserved for an autonomous Lagrangian and a velocity-homogeneous constraint, because the multiplier term is annihilated by the constraint; and the multiplier rule is the finite-dimensional form of the costate of optimal control.
 
@@ -481,8 +481,8 @@ Along the flow of $X_H$ a function evolves by $\frac{d}{dt}g=\{g,H\}+\partial g/
 | Euler–Lagrange | $\frac{d}{dt}\partial L/\partial\left(dq_i/dt\right)-\partial L/\partial q_i=0$ |
 | $p_i$, $\mathbb{F}L$ | Momentum and Legendre transform |
 | cyclic $q_k$ | $\partial L/\partial q_k=0$; $p_k$ conserved |
-| $\theta_L=\sum_i p_i\,dq_i$ | Canonical momentum one-form of $L$ |
-| $\mathcal{L}_X\theta_L=dL$ | Coordinate-free Euler–Lagrange equation |
+| $\varpi_L=\sum_i p_i\,dq_i$ | Canonical momentum one-form of $L$ |
+| $\mathcal{L}_X\varpi_L=dL$ | Coordinate-free Euler–Lagrange equation |
 | $\delta q$, $\mathcal Q_j$ | Virtual displacement and generalised force |
 | $A_{aj}$, $\lambda_a$ | Non-holonomic constraint matrix and its multipliers |
 | $H(q,p)$ | Hamiltonian, $\sum_i p_i\,dq_i/dt-L$ |

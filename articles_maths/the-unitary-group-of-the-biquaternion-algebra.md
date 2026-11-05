@@ -115,15 +115,15 @@ and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}
 
 The compact slice is not only the compact real form of the algebra; it is the double cover of the rotation group of the Hermitian subspace.
 
-**Theorem.** The inner conjugation $\tilde Q\mapsto\Theta_{\tilde Q}$, $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
+**Theorem.** The inner conjugation $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$, $\mathrm{Sd}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
 
 $$
-\mathrm{U}(\mathbb{B})\longrightarrow SO(3),\qquad \tilde Q\longmapsto \Theta_{\tilde Q}|_{\mathbb{M}_{+}},
+\mathrm{U}(\mathbb{B})\longrightarrow SO(3),\qquad \tilde Q\longmapsto \mathrm{Sd}_{\tilde Q}|_{\mathbb{M}_{+}},
 $$
 
 is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong PU(2)\cong SO(3)$.
 
-**Proof.** $\Theta_{\tilde Q}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde Q$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $\mathrm{U}(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
+**Proof.** $\mathrm{Sd}_{\tilde Q}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde Q$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $\mathrm{U}(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
 
 **Remark (the two covers).** The $*$-unitary group therefore sits between the two classical double covers of the corpus: $S^{3}\to SO(3)$ on the compact slice, and $S^{3}\times S^{3}\to SO(4)$ for the two-sided action (*Biquaternion Rotations and Lorentz Transformations*). Its full conjugation action on $\mathbb{B}$ is the adjoint action of $\mathrm{U}(2)$ on $M_2(\mathbb{C})$, whose orbits are the level sets of $\mathrm{Sc}$ and $\langle\cdot\rangle_{\natural}$.
 
@@ -153,7 +153,7 @@ The **$*$-unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde Q^{*}\tilde Q
 | $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the unit group |
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
-| $\Theta_{\tilde Q}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
+| $\mathrm{Sd}_{\tilde Q}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
 | $(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
 
 ## Further Reading

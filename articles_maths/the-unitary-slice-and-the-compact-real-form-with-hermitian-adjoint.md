@@ -30,7 +30,7 @@ so $U$ is closed under multiplication; it contains $1$; and if $x \in U$ then $(
 **Corollary (the two theories meet).** On $U$ the Hermitian sandwich is the inner conjugation,
 
 $$
-x \in U \ \Longrightarrow \ \Theta_x(y) = x\,y\,x^{-1} = \mathrm{Ad}^{\alpha}_x(y) \text{ for even } x ,
+x \in U \ \Longrightarrow \ \mathrm{Sd}_x(y) = x\,y\,x^{-1} = \mathrm{Ad}^{\alpha}_x(y) \text{ for even } x ,
 $$
 
 so the operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* restricts on the slice to the inverse sandwich of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.

@@ -6,16 +6,16 @@
 The **unsigned sandwich** of an algebra is the two-parameter operator
 
 $$
-\Theta_{a,b} : x\mapsto axb ,
+\mathrm{Sd}_{a,b} : x\mapsto axb ,
 $$
 
 the composition of a left multiplication and a right multiplication, which for $b = a^{-1}$ is an inner automorphism and for $a = b$ is a square. The **signed sandwich** twists the argument by the **grade involution** $\alpha$ of a graded algebra:
 
 $$
-\Theta^{\alpha}_{a,b} : x\mapsto a\,\alpha(x)\,b .
+\mathrm{Sd}^{\alpha}_{a,b} : x\mapsto a\,\alpha(x)\,b .
 $$
 
-The two are related by the grading: if $\Gamma$ is the operator that is $+1$ on the even part and $-1$ on the odd part, then $\Theta^{\alpha}_{a,b} = \Theta_{a,b}\circ\Gamma$, and when the grade involution is inner, $\alpha(x) = uxu^{-1}$, the signed sandwich is an unsigned sandwich with shifted parameters, $\Theta^{\alpha}_{a,b} = \Theta_{au,\,u^{-1}b}$. The signed sandwich therefore adds no new operator in those cases; what it adds is the **twist of the parity**, and its use is the study of the elements on which the twisted conjugation is an involution.
+The two are related by the grading: if $\Gamma$ is the operator that is $+1$ on the even part and $-1$ on the odd part, then $\mathrm{Sd}^{\alpha}_{a,b} = \mathrm{Sd}_{a,b}\circ\Gamma$, and when the grade involution is inner, $\alpha(x) = uxu^{-1}$, the signed sandwich is an unsigned sandwich with shifted parameters, $\mathrm{Sd}^{\alpha}_{a,b} = \mathrm{Sd}_{au,\,u^{-1}b}$. The signed sandwich therefore adds no new operator in those cases; what it adds is the **twist of the parity**, and its use is the study of the elements on which the twisted conjugation is an involution.
 
 An element $a$ with $\alpha(a) = a^{-1}$ makes the **signed conjugation**
 
@@ -25,7 +25,7 @@ $$
 
 an operator of order two, that is, a **reflection**. This is the phenomenon the article isolates; the correspondence between the reflections of the algebra and the elements that realise them is the subject of *Reflections as Signed Two-Sided Operators on an Ordered Algebra*, which follows. The article also states when the signed sandwich is **positive**, which is exactly when the grade involution preserves the cone and the parameters are positive.
 
-The ordered algebra, the left and right multiplications and their positivity are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading, the grade involution and the sign rule are *Superalgebras and Graded Structures* of Part I; the operator order is *Positive Operators on an Ordered Space*; and the involution of the corpus, which is an anti-automorphism and not the grade involution, is *Ordered Involutive Algebras* later in this category. The signed **Hermitian** sandwich $\Theta^{\alpha}_x(y) = \alpha(x)\,y\,x^{\dagger}$ of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* of Part II carries the grade involution on the **parameter**; the present article carries it on the **argument**, and the two conventions are different objects with the same name, which is stated in a remark and reconciled in the companion file. The adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra* at the end of this category.
+The ordered algebra, the left and right multiplications and their positivity are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading, the grade involution and the sign rule are *Superalgebras and Graded Structures* of Part I; the operator order is *Positive Operators on an Ordered Space*; and the involution of the corpus, which is an anti-automorphism and not the grade involution, is *Ordered Involutive Algebras* later in this category. The signed **Hermitian** sandwich $\mathrm{Sd}^{\alpha}_x(y) = \alpha(x)\,y\,x^{\dagger}$ of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* of Part II carries the grade involution on the **parameter**; the present article carries it on the **argument**, and the two conventions are different objects with the same name, which is stated in a remark and reconciled in the companion file. The adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra* at the end of this category.
 
 ## The Grade Involution and the Grading
 
@@ -52,43 +52,43 @@ the **even** and **odd** parts, when $2$ is invertible in the scalars; $A_{\bar 
 **Definition.** For $a,b\in A$ the **signed sandwich** is the operator
 
 $$
-\Theta^{\alpha}_{a,b} : A\to A, \qquad \Theta^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b .
+\mathrm{Sd}^{\alpha}_{a,b} : A\to A, \qquad \mathrm{Sd}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b .
 $$
 
-When $\alpha = \mathrm{id}$ it is the **unsigned sandwich** $\Theta_{a,b}(x) = axb$.
+When $\alpha = \mathrm{id}$ it is the **unsigned sandwich** $\mathrm{Sd}_{a,b}(x) = axb$.
 
-**Proposition.** $\Theta^{\alpha}_{a,b}$ is linear in $x$ and in each parameter; it is $\Theta_{a,b}\circ\Gamma = \Gamma_{l}\circ\Theta_{a,b}$ for the grading operator $\Gamma$ on the argument, so it factors through the unsigned sandwich; and
+**Proposition.** $\mathrm{Sd}^{\alpha}_{a,b}$ is linear in $x$ and in each parameter; it is $\mathrm{Sd}_{a,b}\circ\Gamma = \Gamma_{l}\circ\mathrm{Sd}_{a,b}$ for the grading operator $\Gamma$ on the argument, so it factors through the unsigned sandwich; and
 
 $$
-\Theta^{\alpha}_{a,b} = 0 \iff a = 0 \ \text{or}\ b = 0
+\mathrm{Sd}^{\alpha}_{a,b} = 0 \iff a = 0 \ \text{or}\ b = 0
 $$
 
 in a unital algebra.
 
-*Proof.* Linearity in the parameters is the bilinearity of the multiplication and the linearity of $\alpha$. The factorisation is $\alpha = \Gamma$ on the underlying vector space. The vanishing statement uses $\Theta^\alpha_{a,b}(1) = ab$ in a unital algebra, so $a = 0$ or $b = 0$.
+*Proof.* Linearity in the parameters is the bilinearity of the multiplication and the linearity of $\alpha$. The factorisation is $\alpha = \Gamma$ on the underlying vector space. The vanishing statement uses $\mathrm{Sd}^\alpha_{a,b}(1) = ab$ in a unital algebra, so $a = 0$ or $b = 0$.
 
 ### Composition and the Parameter Law
 
 **Theorem (the composition law).** The signed sandwiches compose by the twisted parameter rule
 
 $$
-\boxed{\;\Theta^{\alpha}_{a,b}\,\Theta^{\alpha}_{c,d} = \Theta^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b}\;} ,
+\boxed{\;\mathrm{Sd}^{\alpha}_{a,b}\,\mathrm{Sd}^{\alpha}_{c,d} = \mathrm{Sd}^{\alpha}_{a\,\alpha(c),\,\alpha(d)\,b}\;} ,
 $$
 
-which for $\alpha = \mathrm{id}$ is the unsigned law $\Theta_{a,b}\Theta_{c,d} = \Theta_{ac,\,db}$.
+which for $\alpha = \mathrm{id}$ is the unsigned law $\mathrm{Sd}_{a,b}\mathrm{Sd}_{c,d} = \mathrm{Sd}_{ac,\,db}$.
 
-*Proof.* Compute $\Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{c,d}(x)\bigr) = a\,\alpha\bigl(c\,\alpha(x)\,d\bigr)b = a\,\alpha(c)\,\alpha^2(x)\,\alpha(d)\,b = a\alpha(c)\,x\,\alpha(d)\,b$, using that $\alpha$ is an algebra homomorphism and $\alpha^2 = \mathrm{id}$; the result is $\Theta^{\alpha}_{a\alpha(c),\,\alpha(d)b}(x)$.
+*Proof.* Compute $\mathrm{Sd}^{\alpha}_{a,b}\bigl(\mathrm{Sd}^{\alpha}_{c,d}(x)\bigr) = a\,\alpha\bigl(c\,\alpha(x)\,d\bigr)b = a\,\alpha(c)\,\alpha^2(x)\,\alpha(d)\,b = a\alpha(c)\,x\,\alpha(d)\,b$, using that $\alpha$ is an algebra homomorphism and $\alpha^2 = \mathrm{id}$; the result is $\mathrm{Sd}^{\alpha}_{a\alpha(c),\,\alpha(d)b}(x)$.
 
 **Corollary (the parameter algebra).** With the composition as the product the signed sandwiches form a semigroup isomorphic to $A\times A$ with the twisted multiplication $(a,b)(c,d) = (a\alpha(c),\alpha(d)b)$; when $\alpha$ is inner, $\alpha(x) = uxu^{-1}$, the same law is the ordinary multiplication after the shift $(a,b)\mapsto(au,u^{-1}b)$, and the signed sandwiches are the unsigned sandwiches of the shifted pairs.
 
-*Proof.* The semigroup statement is the composition law. For the inner case, $a\alpha(c) = au c u^{-1}$ and $\alpha(d)b = u d u^{-1}b$, so $\Theta^\alpha_{a,b} = \Theta_{au,\,u^{-1}b}$ and the twisted law becomes the ordinary one.
+*Proof.* The semigroup statement is the composition law. For the inner case, $a\alpha(c) = au c u^{-1}$ and $\alpha(d)b = u d u^{-1}b$, so $\mathrm{Sd}^\alpha_{a,b} = \mathrm{Sd}_{au,\,u^{-1}b}$ and the twisted law becomes the ordinary one.
 
 ### Positivity
 
-**Proposition (positivity of the signed sandwich).** If the grade involution is **positive** and $a\geq0$, $b\geq0$, then $\Theta^{\alpha}_{a,b}\geq0$. If the grade involution is not positive the signed sandwich of positive parameters need not be positive, and the obstruction is exactly the sign of $\alpha$ on the odd part of the cone; in the graded case with the parity $\varepsilon$, the signed sandwich acts as
+**Proposition (positivity of the signed sandwich).** If the grade involution is **positive** and $a\geq0$, $b\geq0$, then $\mathrm{Sd}^{\alpha}_{a,b}\geq0$. If the grade involution is not positive the signed sandwich of positive parameters need not be positive, and the obstruction is exactly the sign of $\alpha$ on the odd part of the cone; in the graded case with the parity $\varepsilon$, the signed sandwich acts as
 
 $$
-\boxed{\;\Theta^{\alpha}_{a,b}(x) = \varepsilon_x\,\Theta_{a,b}(x) \quad (x \ \text{homogeneous})\;} ,
+\boxed{\;\mathrm{Sd}^{\alpha}_{a,b}(x) = \varepsilon_x\,\mathrm{Sd}_{a,b}(x) \quad (x \ \text{homogeneous})\;} ,
 $$
 
 so on the odd part it is the negative of the unsigned sandwich.
@@ -113,19 +113,19 @@ $$
 
 is an involution, $\tau_a^2 = \mathrm{id}$, if and only if $\alpha(a) = a^{-1}$. When $\alpha = \mathrm{id}$ the same operator is the ordinary inner conjugation $\tau_a(x) = axa^{-1}$, an automorphism of the algebra for every invertible $a$, and it is an involution if and only if $a^2$ is central.
 
-*Proof.* By the composition law, $\tau_a^2 = \Theta^{\alpha}_{a\alpha(a),\,a^{-1}\alpha(a)^{-1}}$, which is the identity exactly when $a\alpha(a) = 1$ and its inverse, that is, $\alpha(a) = a^{-1}$. In the unsigned case $\tau_a = \Theta_{a,a^{-1}}$ is the conjugation by $a$, and $\tau_a^2 = \Theta_{a^2,\,a^{-2}}$ is the identity exactly when $a^2$ is central.
+*Proof.* By the composition law, $\tau_a^2 = \mathrm{Sd}^{\alpha}_{a\alpha(a),\,a^{-1}\alpha(a)^{-1}}$, which is the identity exactly when $a\alpha(a) = 1$ and its inverse, that is, $\alpha(a) = a^{-1}$. In the unsigned case $\tau_a = \mathrm{Sd}_{a,a^{-1}}$ is the conjugation by $a$, and $\tau_a^2 = \mathrm{Sd}_{a^2,\,a^{-2}}$ is the identity exactly when $a^2$ is central.
 
-**Corollary (the odd reflections).** In a graded algebra whose odd part generates, an odd element $a$ with $a^2 = -1$ is a skew reflection element: $\alpha(a) = -a = a^{-1}$, so the signed conjugation $\tau_a(x) = a\alpha(x)a^{-1}$ is an involution, and it acts as the ordinary conjugation on the even part and as its negative on the odd part, $\tau_a = \Theta_{a,a^{-1}}\circ\Gamma$. A normalised even element $a$ with $a^2 = 1$ is a reflection element with $\alpha(a) = a = a^{-1}$, and it acts by the ordinary conjugation.
+**Corollary (the odd reflections).** In a graded algebra whose odd part generates, an odd element $a$ with $a^2 = -1$ is a skew reflection element: $\alpha(a) = -a = a^{-1}$, so the signed conjugation $\tau_a(x) = a\alpha(x)a^{-1}$ is an involution, and it acts as the ordinary conjugation on the even part and as its negative on the odd part, $\tau_a = \mathrm{Sd}_{a,a^{-1}}\circ\Gamma$. A normalised even element $a$ with $a^2 = 1$ is a reflection element with $\alpha(a) = a = a^{-1}$, and it acts by the ordinary conjugation.
 
 *Proof.* For odd $a$ with $a^2 = -1$ the inverse is $a^{-1} = -a = \alpha(a)$, so the involution condition holds, and the parity formula of the positivity proposition gives the two cases. For even $a$ with $a^2 = 1$ the inverse is $a = \alpha(a)$ and the signed conjugation is the ordinary one.
 
-**Remark (the boundary of the correspondence).** The theorem gives a reflection operator for every reflection element, but the converse is delicate: an involutive signed sandwich $\Theta^{\alpha}_{a,b}$ with $b\neq a^{-1}$ need not come from a reflection element, and in characteristic two every element is even and the involution condition collapses; the correspondence is therefore a statement about the elements and not about all involutive signed sandwiches, and it is the subject of the next article.
+**Remark (the boundary of the correspondence).** The theorem gives a reflection operator for every reflection element, but the converse is delicate: an involutive signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ with $b\neq a^{-1}$ need not come from a reflection element, and in characteristic two every element is even and the involution condition collapses; the correspondence is therefore a statement about the elements and not about all involutive signed sandwiches, and it is the subject of the next article.
 
 ## Worked Cases
 
 ### The Biquaternion Algebra
 
-Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the grade involution $\alpha$ the conjugation by $\operatorname{diag}(1,-1)$, the parity grading of the biquaternions. The even part is the span of $\operatorname{diag}(1,-1)$ and the identity, the odd part is the span of the off-diagonal matrix units, and an odd $a$ with $a^2 = -1$, such as an off-diagonal matrix unit with a suitable sign, realises the signed conjugation as an involution of order two. The signed sandwich $\Theta^{\alpha}_{a,b}$ with general parameters is an unsigned sandwich after the inner shift, since $\alpha$ is inner in $M_2(\mathbb{C})$; this is the model in which the signed and the unsigned sandwiches are the same operator family under a shift of the parameters, and it shows that the interest of the signed sandwich lies in the **fixed parameters**, not in the operator family.
+Let $A = \mathbb{B} = M_2(\mathbb{C})$ with the grade involution $\alpha$ the conjugation by $\operatorname{diag}(1,-1)$, the parity grading of the biquaternions. The even part is the span of $\operatorname{diag}(1,-1)$ and the identity, the odd part is the span of the off-diagonal matrix units, and an odd $a$ with $a^2 = -1$, such as an off-diagonal matrix unit with a suitable sign, realises the signed conjugation as an involution of order two. The signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ with general parameters is an unsigned sandwich after the inner shift, since $\alpha$ is inner in $M_2(\mathbb{C})$; this is the model in which the signed and the unsigned sandwiches are the same operator family under a shift of the parameters, and it shows that the interest of the signed sandwich lies in the **fixed parameters**, not in the operator family.
 
 ### The Group Algebra
 
@@ -133,11 +133,11 @@ Let $A = \mathbb{R}[G]$ for a group $G$ with a homomorphism $\lvert\cdot\rvert :
 
 ### The Self-Adjoint Matrices
 
-Let $A = H_n(\mathbb{R})$ as the ordered algebra of *Jordan Algebras and the Positive Cone*, with the grade involution the identity and the order the Loewner one. The signed sandwich is then the ordinary sandwich $\Theta_{a,b}(x) = axb$ of the symmetrised product, the reflection elements are the involutions $a = a^{-1}$, and the signed conjugation is the ordinary conjugation by an involution. The positivity of the sandwich is not automatic in the associative matrix algebra — the product of positive matrices is not symmetrised-positive — which is why the ordered matrix algebra is the Jordan structure and not the associative one.
+Let $A = H_n(\mathbb{R})$ as the ordered algebra of *Jordan Algebras and the Positive Cone*, with the grade involution the identity and the order the Loewner one. The signed sandwich is then the ordinary sandwich $\mathrm{Sd}_{a,b}(x) = axb$ of the symmetrised product, the reflection elements are the involutions $a = a^{-1}$, and the signed conjugation is the ordinary conjugation by an involution. The positivity of the sandwich is not automatic in the associative matrix algebra — the product of positive matrices is not symmetrised-positive — which is why the ordered matrix algebra is the Jordan structure and not the associative one.
 
 ## Summary
 
-A **grade involution** is an algebra automorphism $\alpha$ of order two; it decomposes the algebra into the **even** and **odd** parts, it is **inner** when it is a conjugation and **positive** when it preserves the cone, and the grading operator $\Gamma$ realises it on the underlying vector space. The **signed sandwich** $\Theta^{\alpha}_{a,b}(x) = a\alpha(x)b$ is linear, it factors as the unsigned sandwich $\Theta_{a,b}(x) = axb$ composed with $\Gamma$, it is an unsigned sandwich with shifted parameters when $\alpha$ is inner, and it composes by the twisted law $\Theta^\alpha_{a,b}\Theta^\alpha_{c,d} = \Theta^\alpha_{a\alpha(c),\,\alpha(d)b}$. It is **positive** exactly when the grade involution preserves the cone; in the graded case it is the unsigned sandwich on the even part and its negative on the odd part, $\Theta^\alpha_{a,b}(x) = \varepsilon_x\Theta_{a,b}(x)$. The **signed conjugation** $x\mapsto a\alpha(x)a^{-1}$ is an **involution exactly on the reflection elements** $\alpha(a) = a^{-1}$; odd skew elements with $a^2 = -1$ and even normalised elements with $a^2 = 1$ are the two classes, and the correspondence between the reflections and the elements that realise them is the subject of the next article. The unsigned sandwich and the one-sided multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading and the grade involution are *Superalgebras and Graded Structures*; the positivity is *Positive Operators on an Ordered Space*; the involution of the corpus is *Ordered Involutive Algebras*; the Hermitian signed sandwich of Part II is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; and the adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra*.
+A **grade involution** is an algebra automorphism $\alpha$ of order two; it decomposes the algebra into the **even** and **odd** parts, it is **inner** when it is a conjugation and **positive** when it preserves the cone, and the grading operator $\Gamma$ realises it on the underlying vector space. The **signed sandwich** $\mathrm{Sd}^{\alpha}_{a,b}(x) = a\alpha(x)b$ is linear, it factors as the unsigned sandwich $\mathrm{Sd}_{a,b}(x) = axb$ composed with $\Gamma$, it is an unsigned sandwich with shifted parameters when $\alpha$ is inner, and it composes by the twisted law $\mathrm{Sd}^\alpha_{a,b}\mathrm{Sd}^\alpha_{c,d} = \mathrm{Sd}^\alpha_{a\alpha(c),\,\alpha(d)b}$. It is **positive** exactly when the grade involution preserves the cone; in the graded case it is the unsigned sandwich on the even part and its negative on the odd part, $\mathrm{Sd}^\alpha_{a,b}(x) = \varepsilon_x\mathrm{Sd}_{a,b}(x)$. The **signed conjugation** $x\mapsto a\alpha(x)a^{-1}$ is an **involution exactly on the reflection elements** $\alpha(a) = a^{-1}$; odd skew elements with $a^2 = -1$ and even normalised elements with $a^2 = 1$ are the two classes, and the correspondence between the reflections and the elements that realise them is the subject of the next article. The unsigned sandwich and the one-sided multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the grading and the grade involution are *Superalgebras and Graded Structures*; the positivity is *Positive Operators on an Ordered Space*; the involution of the corpus is *Ordered Involutive Algebras*; the Hermitian signed sandwich of Part II is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*; and the adjoint of the signed sandwich is *The Signed Adjoint Sandwich on an Ordered Algebra*.
 
 ## Summary of Notation
 
@@ -147,9 +147,9 @@ A **grade involution** is an algebra automorphism $\alpha$ of order two; it deco
 | $A_{\bar 0}, A_{\bar 1}$ | Even and odd parts of the graded algebra |
 | $\lvert x\rvert$, $\varepsilon_x = (-1)^{\lvert x\rvert}$ | Parity and its sign |
 | $\Gamma$ | Grading operator, $\Gamma x = (-1)^{\lvert x\rvert}x$ |
-| $\Theta_{a,b}(x) = axb$ | Unsigned sandwich |
-| $\Theta^{\alpha}_{a,b}(x) = a\alpha(x)b$ | Signed sandwich |
-| $\Theta^\alpha_{a,b}\Theta^\alpha_{c,d} = \Theta^\alpha_{a\alpha(c),\,\alpha(d)b}$ | Composition law |
+| $\mathrm{Sd}_{a,b}(x) = axb$ | Unsigned sandwich |
+| $\mathrm{Sd}^{\alpha}_{a,b}(x) = a\alpha(x)b$ | Signed sandwich |
+| $\mathrm{Sd}^\alpha_{a,b}\mathrm{Sd}^\alpha_{c,d} = \mathrm{Sd}^\alpha_{a\alpha(c),\,\alpha(d)b}$ | Composition law |
 | $\tau_a(x) = a\alpha(x)a^{-1}$ | Signed conjugation |
 | $\alpha(a) = a^{-1}$ | Reflection element, making $\tau_a$ an involution |
 

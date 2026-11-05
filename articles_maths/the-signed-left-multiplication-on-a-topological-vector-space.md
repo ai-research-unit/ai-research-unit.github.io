@@ -15,7 +15,7 @@ $$
 
 ## The Signed Left Multiplication
 
-**Proposition (definition and continuity).** For every $a \in E$ the map $\Lambda^{\alpha}_{a}$ is a continuous linear operator on $E$; it is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1}$, and
+**Proposition (definition and continuity).** For every $a \in E$ the map $\Lambda^{\alpha}_{a}$ is a continuous linear operator on $E$; it is the signed sandwich with the right factor equal to the identity, $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1}$, and
 
 $$
 \boxed{\;\Lambda^{\alpha}_{a} = L_{a} \circ \alpha = \alpha \circ L_{\alpha(a)}\;} ,
@@ -69,7 +69,7 @@ For $a = 1$ the fixed set of $\Lambda^{\alpha}_{1} = \alpha$ is the fixed part $
 
 **Proof.** $a\alpha(x) = x$ is $\alpha(x) = a^{-1}x$ when $a$ is invertible, and the fixed points of the automorphism $a^{-1}\alpha$ are the kernel of $\mathrm{id} - a^{-1}\alpha$; the finite-dimensional dimension statement follows. For $a = 1$ the equation is $\alpha(x) = x$, i.e. $x \in E^{+}$, and $\Lambda^{\alpha}_{1} = \alpha$ with the splitting of the reflection article.
 
-**Corollary (the fixed set of the sandwich).** The signed sandwich $\Theta^{\alpha}_{a,b}$ fixes $x$ exactly when $a\alpha(x)b = x$; for invertible $a, b$ this is $\alpha(x) = a^{-1}xb^{-1}$, and the fixed set is the set of points of $E$ mapped to themselves by the automorphism $x \mapsto a^{-1}xb^{-1}$ composed with $\alpha$.
+**Corollary (the fixed set of the sandwich).** The signed sandwich $\mathrm{Sd}^{\alpha}_{a,b}$ fixes $x$ exactly when $a\alpha(x)b = x$; for invertible $a, b$ this is $\alpha(x) = a^{-1}xb^{-1}$, and the fixed set is the set of points of $E$ mapped to themselves by the automorphism $x \mapsto a^{-1}xb^{-1}$ composed with $\alpha$.
 
 **Proof.** Immediate from the definition and the invertibility of the factors.
 
@@ -90,7 +90,7 @@ On a unital topological algebra $E$ with a continuous grade involution $\alpha$ 
 | Symbol | Meaning |
 |---|---|
 | $\Lambda^{\alpha}_{a} = L_{a}\alpha$ | Signed left multiplication, $x \mapsto a\alpha(x)$ |
-| $\Lambda^{\alpha}_{a} = \Theta^{\alpha}_{a,1} = \alpha L_{\alpha(a)}$ | Sandwich and conjugate forms |
+| $\Lambda^{\alpha}_{a} = \mathrm{Sd}^{\alpha}_{a,1} = \alpha L_{\alpha(a)}$ | Sandwich and conjugate forms |
 | $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$ | Composition law |
 | $(\Lambda^{\alpha}_{a})^{-1} = \Lambda^{\alpha}_{\alpha(a)^{-1}}$ | Inverse |
 | $\mathrm{Fix}(\Lambda^{\alpha}_{a}) = \{x : a\alpha(x) = x\}$ | Fixed subspace, closed |

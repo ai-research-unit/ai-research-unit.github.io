@@ -64,7 +64,7 @@ so that $PGL(V)$ is the quotient of $GL(V)$ by its centre $K^\times$; the same s
 **Definition.** The group $PGL(V)$ acts on itself by the **left translation** $[T] \mapsto [A][T]$ and by the **right translation** $[T] \mapsto [T][B]$, for $[A], [B] \in PGL(V)$, and the two actions commute; the **sandwich** is the two-parameter operator
 
 $$
-\Theta_{[A],[B]}([T]) = [A]\,[T]\,[B] .
+\mathrm{Sd}_{[A],[B]}([T]) = [A]\,[T]\,[B] .
 $$
 
 The order of the two parameters matters, and the sandwich with $[B] = [A]^{-1}$ is the **conjugation** $[T] \mapsto [A][T][A]^{-1}$, the inner automorphism of the projective group.
@@ -175,7 +175,7 @@ for some $\lambda \in K^\times$; consequently the group of the quadric is the qu
 
 ## Summary
 
-The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\Theta_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,\mathfrak{Q})$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.
+The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\mathrm{Sd}_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,\mathfrak{Q})$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.
 
 ## Summary of Notation
 
@@ -189,7 +189,7 @@ The operators of a projective space $\mathbb{P}(V)$ are the collineations, and b
 | $PGL(V) = GL(V)/K^\times$ | Projective general linear group, the operator group |
 | $PSL(V)$ | Projective special linear group, the image of $SL(V)$ |
 | $P\Gamma L(V) = PGL(V)\rtimes\operatorname{gal}(K)$ | Collineation group; the operators in dimension at least two |
-| $\Theta_{[A],[B]}([T]) = [A][T][B]$ | Two-sided sandwich operator |
+| $\mathrm{Sd}_{[A],[B]}([T]) = [A][T][B]$ | Two-sided sandwich operator |
 | $[z_1:z_2:z_3:z_4]$ | Cross ratio of four points of the projective line |
 | $PGL(2,K)$ | Operator group of the projective line; fractional linear maps |
 | $Q = \{[v] : \mathfrak{Q}(v)=0\}$ | Projective quadric of a quadratic form $\mathfrak{Q}$ |

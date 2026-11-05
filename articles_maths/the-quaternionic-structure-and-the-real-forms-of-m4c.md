@@ -11,7 +11,7 @@ $$
 both of real dimension $16$. The first is the fixed algebra of the conjugation $A\mapsto\bar A$; the second is the fixed algebra of the **quaternionic structure**
 
 $$
-\theta(A)=J\bar A J^{-1},\qquad J^{2}=-I,
+\mathrm{J}(A)=J\bar A J^{-1},\qquad J^{2}=-I,
 $$
 
 for an antilinear involution $J$ of $\mathbb{C}^{4}$ with $J^{2}=-1$. The two are the two real forms of the Brauer class of $M_4$: the split form and the quaternionic form.
@@ -43,18 +43,18 @@ where the bar is the componentwise conjugation. Then $\sigma_0^{2}=1$ and $J_0^{
 
 ## The Induced Antilinear Automorphisms
 
-**Definition.** An antilinear automorphism of $M_4(\mathbb{C})$ is a bijection $\theta$ with
+**Definition.** An antilinear automorphism of $M_4(\mathbb{C})$ is a bijection $\mathrm{J}$ with
 
 $$
-\theta(A+B)=\theta(A)+\theta(B),\qquad
-\theta(\lambda A)=\bar\lambda\theta(A),\qquad
-\theta(AB)=\theta(A)\theta(B).
+\mathrm{J}(A+B)=\mathrm{J}(A)+\mathrm{J}(B),\qquad
+\mathrm{J}(\lambda A)=\bar\lambda\mathrm{J}(A),\qquad
+\mathrm{J}(AB)=\mathrm{J}(A)\mathrm{J}(B).
 $$
 
 **Proposition.** For every antilinear involution $\sigma$ of $\mathbb{C}^{4}$ with $\sigma^{2}=\pm1$, the map
 
 $$
-\theta_\sigma(A)=\sigma A\sigma^{-1}
+\mathrm{J}_\sigma(A)=\sigma A\sigma^{-1}
 $$
 
 is an antilinear automorphism of $M_4(\mathbb{C})$ of order two.
@@ -139,7 +139,7 @@ of complex dimension $8$, not $M_4(\mathbb{C})$. The real forms of $M_4(\mathbb{
 **Proposition.** Every antilinear automorphism of $M_4(\mathbb{C})$ is of the form
 
 $$
-\theta(A)=U\bar A U^{-1}
+\mathrm{J}(A)=U\bar A U^{-1}
 $$
 
 for some $U\in GL_4(\mathbb{C})$, and
@@ -148,7 +148,7 @@ $$
 \operatorname{Aut}_\mathbb{R}(M_4)=PGL_4(\mathbb{C})\rtimes\mathbb{Z}/2.
 $$
 
-**Proof.** Composing $\theta$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\theta(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset.
+**Proof.** Composing $\mathrm{J}$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\mathrm{J}(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset.
 
 **The real structures on the algebra.** The antilinear involutions of $M_4$ fall into two classes, according to whether the square is the identity or an inner automorphism of order two. The first class gives the real form $M_4(\mathbb{R})$, the second the quaternionic form $M_2(\mathbb{H})$. The classification of the classes is the classification of the real forms, and the two are exchanged by no automorphism of the complex algebra: they are the two elements of $Br(\mathbb{R})$.
 
@@ -176,8 +176,8 @@ The two real forms of $M_4(\mathbb{C})$ are $M_4(\mathbb{R})$ and $M_2(\mathbb{H
 |---|---|
 | $\sigma$ | a real structure, antilinear with $\sigma^{2}=1$ |
 | $J$ | a quaternionic structure, antilinear with $J^{2}=-1$ |
-| $\theta_\sigma(A)=\sigma A\sigma^{-1}$ | the induced antilinear automorphism |
-| $M_4^{\sigma}$ | the fixed algebra of $\theta_\sigma$ |
+| $\mathrm{J}_\sigma(A)=\sigma A\sigma^{-1}$ | the induced antilinear automorphism |
+| $M_4^{\sigma}$ | the fixed algebra of $\mathrm{J}_\sigma$ |
 | $Sp(2)$ | the quaternionic unitary group |
 | $Br(\mathbb{R})$ | the Brauer group $\mathbb{Z}/2$ |
 | $\mathbb{B}$ | the biquaternion algebra $M_2(\mathbb{C})$ |

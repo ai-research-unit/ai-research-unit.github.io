@@ -44,15 +44,15 @@ consists of the units of real part one; it is the fibre of the augmentation over
 **Theorem.** Let $R$ be a commutative ring. The map
 
 $$
-\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dln}}_R)^\times, \qquad \Theta(q, s) = q + qs\varepsilon = q(1 + s\varepsilon),
+\mathrm{J} : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dln}}_R)^\times, \qquad \mathrm{J}(q, s) = q + qs\varepsilon = q(1 + s\varepsilon),
 $$
 
 is an isomorphism of groups.
 
-**Proof.** $\Theta$ is bijective: given $q + \varepsilon q'$ with $q \in R^\times$, the unique preimage is $(q, q^{-1}q')$. It is a homomorphism, because
+**Proof.** $\mathrm{J}$ is bijective: given $q + \varepsilon q'$ with $q \in R^\times$, the unique preimage is $(q, q^{-1}q')$. It is a homomorphism, because
 
 $$
-\Theta(q_1,s)\Theta(q_2,t) = q_1(1+s\varepsilon)\,q_2(1+t\varepsilon) = q_1q_2\bigl(1 + (s+t)\varepsilon\bigr) = \Theta\bigl(q_1q_2,\, s+t\bigr),
+\mathrm{J}(q_1,s)\mathrm{J}(q_2,t) = q_1(1+s\varepsilon)\,q_2(1+t\varepsilon) = q_1q_2\bigl(1 + (s+t)\varepsilon\bigr) = \mathrm{J}\bigl(q_1q_2,\, s+t\bigr),
 $$
 
 using $\varepsilon^2 = 0$.

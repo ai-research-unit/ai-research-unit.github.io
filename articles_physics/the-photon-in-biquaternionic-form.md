@@ -45,7 +45,7 @@ The dictionary that places the photon's data in the algebra is the following.
 |---|---|
 | The field | $\tilde{F}=i\sqrt{\epsilon}\,\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
 | Free equation | $\tilde{\nabla}\tilde{F}=0$ |
-| Potential | $\tilde{A}=i\phi/c\,e_t+\vec A\in\mathbb{M}_-$ |
+| Potential | $\tilde{A}=i\,a'_t\,e_t+\vec A\in\mathbb{M}_-$ |
 | Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{M}_-$, the time coefficient carrying $Q_t=ict'$ |
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\vec u_k$ |
 | Helicity states | the $\pm1$ eigenvectors $\varepsilon^{\mathrm{fop}}_\pm$ of the $\mathbb{M}_+$ element $i\vec u_k$ |
@@ -255,7 +255,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\tilde{A}=i\phi/c\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{M}_-$ |
+| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{M}_-$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
 | $\vec u_k$ | Unit propagation direction (pure real quaternion) |

@@ -98,7 +98,7 @@ The complexification of $\mathfrak{su}(5)$ is $\mathfrak{sl}_5(\mathbb{C})$.
 
 **Corollary.** $\mathfrak{u}(5)$ is the **compact real form** of $\mathfrak{gl}_5(\mathbb{C})$, and $\mathfrak{su}(5)$ is the compact real form of $\mathfrak{sl}_5(\mathbb{C})$. The Hermitian matrices $i\mathfrak{u}(5)$ are the other real half of the complexification.
 
-**Proof.** The real form $\mathfrak{u}(5)$ is the fixed-point set of the Cartan involution $\theta(A)=-A^*$; the fixed points of $\theta$ are the skew-Hermitian matrices, and the $-1$ eigenspace is the Hermitian matrices. The form is compact because the Killing form is negative definite on $\mathfrak{u}(5)$.
+**Proof.** The real form $\mathfrak{u}(5)$ is the fixed-point set of the Cartan involution $\mathrm{J}(A)=-A^*$; the fixed points of $\mathrm{J}$ are the skew-Hermitian matrices, and the $-1$ eigenspace is the Hermitian matrices. The form is compact because the Killing form is negative definite on $\mathfrak{u}(5)$.
 
 ## The Hermitian Form on the Carrier
 
@@ -251,7 +251,7 @@ $$
 
 **Theorem.** The Lie algebra $\mathfrak{u}(5)$ is the compact real form of $\mathfrak{gl}_5(\mathbb{C})$, and the exponential map $\mathfrak{u}(5)\to U(5)$ is surjective.
 
-**Proof.** The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_5)V^*\in\mathfrak{u}(5)$.
+**Proof.** The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\mathrm{J}_1},\dots,e^{i\mathrm{J}_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\mathrm{J}_1,\dots,\mathrm{J}_5)V^*\in\mathfrak{u}(5)$.
 
 **Corollary.** Every $*$-unitary matrix is the exponential of a skew-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless skew-Hermitian matrix.
 

@@ -126,7 +126,7 @@ where $k^2 = -k\cdot k = -\lvert k\rvert^2$ is the quaternion square of the vect
 
 ### The outgoing Helmholtz kernel
 
-The fundamental solution of the Helmholtz equation used throughout is the corpus's $\Theta_\alpha$ at $\alpha=k$,
+The fundamental solution of the Helmholtz equation used throughout is the corpus's $\mathrm{Sd}_\alpha$ at $\alpha=k$,
 
 $$
 F_k(x-y) := -\frac{\exp(ik\lvert x-y\rvert)}{4\pi\lvert x-y\rvert}, \qquad x,y\in\mathbb{R}^3,\ x\ne y .
@@ -153,10 +153,10 @@ $$
 obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in *Electromagnetism in Media — The Local Complex Structure at Work*,
 
 $$
-\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha = \left(\alpha+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\Theta_\alpha ,
+\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$
 
-read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\Theta_k=\mathcal K_{+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal K_{\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal K_{+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\Theta_\alpha$, is the one with the minus, and it is the one used in this article.
+read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\mathrm{Sd}_k=\mathcal K_{+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal K_{\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal K_{+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
 
 ### The boundary representation
 
@@ -360,7 +360,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Transcribed from the corpus's own materials.**
 
-- The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\Theta_k=F_k$ and the shifted kernels $\mathcal K_{\pm k}$; the zero-divisor structure of the radiation condition. All of these are in *Biquaternion Regular Functions*, *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Electromagnetism in Media — The Local Complex Structure at Work*, and this article adds no formula to them.
+- The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\mathrm{Sd}_k=F_k$ and the shifted kernels $\mathcal K_{\pm k}$; the zero-divisor structure of the radiation condition. All of these are in *Biquaternion Regular Functions*, *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Electromagnetism in Media — The Local Complex Structure at Work*, and this article adds no formula to them.
 - The Maxwell reduction and the quaternionic reformulation in inhomogeneous media, which the corpus's electromagnetic articles own.
 
 **Transcribed from the source, not derived here.**
@@ -416,8 +416,8 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $L_kq=kq$, $R_kq=qk$ | Left and right multiplication; the letter names the side |
 | $D_\alpha=D_3+R_\alpha$ | The corpus's shift, constant parameter; a different object from the gradient-coefficient $D_\alpha=D_3+\operatorname{grad}\log\sqrt{\alpha}$ of the electromagnetic articles |
 | $k$ | Wave vector, identified with $k_1\vec e_x+k_2\vec e_y+k_3\vec e_z$; $k=\sqrt{k^2}$, $\operatorname{Im}(k)\ge0$; $k^2=-k\cdot k$ |
-| $\Theta_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_k$ at $\alpha=k$ |
-| $\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$ | Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal K_{+k}$ |
+| $\mathrm{Sd}_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_k$ at $\alpha=k$ |
+| $\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal K_{+k}$ |
 | $C_k=-D_{-k}F_k$ | Cauchy-type kernel of the Dirac-type operator, $(k+\vec u_x/\lvert x\rvert-ik\vec u_x)\exp(ik\lvert x\rvert)/(4\pi)$ |
 | $k f+\vec u_x fk=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\vec u_x$ is a zero divisor |
 | $m(x)$ | Quaternion-valued potential with compact support $G$ |

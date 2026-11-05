@@ -71,7 +71,7 @@ $$
 
 using $i\,dz\wedge d\bar z = 2\,dx\wedge dy$; so the flat metric is Kähler. The potential is not unique: $\varphi + f + \bar f$ gives the same form.
 
-**Remark.** The Kähler potential is the local primitive of the Kähler form and is thus the Kähler analogue of the existence of a symplectic potential $\theta$ with $\omega = -d\theta$; the difference is that the potential is a function rather than a $1$-form, because the Kähler form has the extra type. The equality $\Omega = i\partial\bar\partial\varphi$ is the reason the local theory of Kähler metrics is the theory of a single real function, and the reason the global existence of a potential is obstructed by the cohomology class $[\Omega]$.
+**Remark.** The Kähler potential is the local primitive of the Kähler form and is thus the Kähler analogue of the existence of a symplectic potential $\varpi$ with $\omega = -d\varpi$; the difference is that the potential is a function rather than a $1$-form, because the Kähler form has the extra type. The equality $\Omega = i\partial\bar\partial\varphi$ is the reason the local theory of Kähler metrics is the theory of a single real function, and the reason the global existence of a potential is obstructed by the cohomology class $[\Omega]$.
 
 **Proposition (Kähler normal coordinates).** Let $(M,J,g)$ be Kähler and let $n \in M$. There are holomorphic coordinates $z$ centred at $n$ with
 

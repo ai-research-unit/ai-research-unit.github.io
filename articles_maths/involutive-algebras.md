@@ -282,7 +282,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 **Rings.** *Involutive Rings* gives the same map with the field removed: there the involution of a ring is an anti-automorphism of order two, the datum is an order-two isomorphism $A \to A^{\mathrm{opp}}$, and the $\sigma$-ideals, the $\sigma$-prime notions and the reduced questions are its subject. The present article adds the field $F$, the $F$-linearity and the scalar twisting, and the $\varsigma$-semilinear case exists only here.
 
-**Linear spaces.** *Involutive Linear Spaces* gives a map of order two on a space that carries no product. An algebra involution is such a map on the underlying space, so every statement about the involution alone is the linear-space statement, as the corollary of the additive decomposition records; what the algebra adds is the decomposition into the two parts, the grading of the involutive automorphism and the two kinds through the centre. The second sign of the linear case, $\theta^2 = -\mathrm{id}$, disappears here, by the remark at the definition.
+**Linear spaces.** *Involutive Linear Spaces* gives a map of order two on a space that carries no product. An algebra involution is such a map on the underlying space, so every statement about the involution alone is the linear-space statement, as the corollary of the additive decomposition records; what the algebra adds is the decomposition into the two parts, the grading of the involutive automorphism and the two kinds through the centre. The second sign of the linear case, $\mathrm{J}^2 = -\mathrm{id}$, disappears here, by the remark at the definition.
 
 ---
 

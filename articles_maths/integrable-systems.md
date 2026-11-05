@@ -303,10 +303,10 @@ where $C$ is the $N\times N$ matrix with entries $C_{mn} = \frac{c_m(t)^2}{\kapp
 **Theorem (Its–Matveev, Dubrovin–Novikov).** The finite-gap solutions of KdV are exactly the solutions for which the spectrum of $L=-\partial^2/\partial x^2+w$ is a finite union of bands; they are given by the **Its–Matveev formula**
 
 $$
-w(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial^2/\partial x^2\,\log\Theta\bigl(\vec Ux + \vec Vt + \vec d\bigr) ,
+w(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial^2/\partial x^2\,\log\vartheta^{\mathrm{thf}}\bigl(\vec Ux + \vec Vt + \vec d\bigr) ,
 $$
 
-where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\vec U,\vec V$ are the periods of two Abelian differentials and $\vec d$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
+where $\vartheta^{\mathrm{thf}}$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\vec U,\vec V$ are the periods of two Abelian differentials and $\vec d$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
 
 *Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $w$ follows from the pole behaviour of the Baker–Akhiezer function at infinity.
 

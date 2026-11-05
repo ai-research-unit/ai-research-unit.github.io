@@ -77,16 +77,16 @@ so the projected measure has finite $t$-energy for almost every direction, and h
 **Definition.** For $0 \leq t \leq \dim_H E$ let
 
 $$
-\Theta_t(E) = \{\theta \in [0,\pi) : \dim_H \pi_\theta E < t\}
+\mathrm{Sd}_t(E) = \{\theta \in [0,\pi) : \dim_H \pi_\theta E < t\}
 $$
 
-be the set of the directions in which the projection is smaller than the threshold $t$. Marstrand's theorem says that $\Theta_s(E)$ has Lebesgue measure zero for $s = \min(\dim_H E, 1)$.
+be the set of the directions in which the projection is smaller than the threshold $t$. Marstrand's theorem says that $\mathrm{Sd}_s(E)$ has Lebesgue measure zero for $s = \min(\dim_H E, 1)$.
 
 **Theorem (the size of the exceptional set).**
 
-**(a)** (Kaufman, 1968) If $0 < t < \dim_H E < 1$, then $\dim_H \Theta_t(E) \leq t$.
+**(a)** (Kaufman, 1968) If $0 < t < \dim_H E < 1$, then $\dim_H \mathrm{Sd}_t(E) \leq t$.
 
-**(b)** (Oberlin; Bourgain) If $\dim_H E < 1$, then $\Theta_{\frac12\dim_H E}(E)$ has Hausdorff dimension zero: the projection has at least half the dimension of the set in almost every direction, in the full-measure sense.
+**(b)** (Oberlin; Bourgain) If $\dim_H E < 1$, then $\mathrm{Sd}_{\frac12\dim_H E}(E)$ has Hausdorff dimension zero: the projection has at least half the dimension of the set in almost every direction, in the full-measure sense.
 
 **(c)** (Falconer, 1982) If $\dim_H E > 1$, then the set of the directions in which the projection has Lebesgue measure zero has Hausdorff dimension at most $2 - \dim_H E$.
 
@@ -138,7 +138,7 @@ The orthogonal projection of a fractal onto a line is a linear contraction of no
 | $\pi_{V\#}\mu$ | Pushforward of the measure $\mu$; the inclusion is the adjoint of $\pi_V$ |
 | $G(n,m)$ | Grassmannian of the $m$-dimensional subspaces of $\mathbb{R}^n$ |
 | $\mathcal{I}_t(\mu)$, $s$-energy | $\iint\lvert x-y\rvert^{-t}d\mu\,d\mu$; the finiteness bounds the dimension below |
-| $\Theta_t(E)$ | The set of directions in which $\dim_H\pi_\theta E < t$ |
+| $\mathrm{Sd}_t(E)$ | The set of directions in which $\dim_H\pi_\theta E < t$ |
 | $\min(s,m)$ | The generic dimension of the projection of an $s$-set |
 | $s-m$ | The slicing bound for the sections by an $(n-m)$-dimensional subspace |
 | $C\times C$, $\log2/\log3$ | Product of two Cantor sets; the exceptional directions are the axes |

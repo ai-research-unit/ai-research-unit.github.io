@@ -13,10 +13,10 @@ The Clifford algebra, the fundamental relation and the parity grading are from *
 
 ### Definition
 
-**Definition.** Let $\theta$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **two-sided operator** attached to the pair $(\theta,c)$ is the map
+**Definition.** Let $\mathrm{J}$ be an automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$ and let $c$ be an anti-automorphism, so that $c(xz)=c(z)c(x)$ and $c(1)=1$. For $x\in\mathrm{Cl}(V,\mathfrak{Q})$ the **two-sided operator** attached to the pair $(\mathrm{J},c)$ is the map
 
 $$
-\boxed{\;\Phi^{\theta,c}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)\;}.
+\boxed{\;\Phi^{\mathrm{J},c}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)\;}.
 $$
 
 The left factor carries the element and the right factor carries its conjugate. The pairing of the two factors is what makes the family closed under composition.
@@ -24,28 +24,28 @@ The left factor carries the element and the right factor carries its conjugate. 
 **Remark.** Let $L_a(y)=ay$ and $R_b(y)=yb$ be left and right multiplication. These commute, and
 
 $$
-\Phi^{\theta,c}_x=L_{\theta(x)}\circ R_{c(x)}.
+\Phi^{\mathrm{J},c}_x=L_{\mathrm{J}(x)}\circ R_{c(x)}.
 $$
 
 Every member of the family is thus the product of a left translation and a right translation, and each is an $F$-linear endomorphism of the algebra.
 
 ### Multiplicativity
 
-**Proposition.** Let $\theta$ be an automorphism and $c$ an anti-automorphism. Then $\Phi^{\theta,c}_{xz}=\Phi^{\theta,c}_x\circ\Phi^{\theta,c}_z$ for all $x,z\in\mathrm{Cl}(V,\mathfrak{Q})$.
+**Proposition.** Let $\mathrm{J}$ be an automorphism and $c$ an anti-automorphism. Then $\Phi^{\mathrm{J},c}_{xz}=\Phi^{\mathrm{J},c}_x\circ\Phi^{\mathrm{J},c}_z$ for all $x,z\in\mathrm{Cl}(V,\mathfrak{Q})$.
 
 **Proof.** Evaluating the composition on $y$ and using the two defining properties of the pair,
 
 $$
-\Phi^{\theta,c}_x\bigl(\Phi^{\theta,c}_z(y)\bigr)=\theta(x)\bigl(\theta(z)\,y\,c(z)\bigr)c(x)=\theta(xz)\,y\,\bigl(c(z)c(x)\bigr)=\theta(xz)\,y\,c(xz).
+\Phi^{\mathrm{J},c}_x\bigl(\Phi^{\mathrm{J},c}_z(y)\bigr)=\mathrm{J}(x)\bigl(\mathrm{J}(z)\,y\,c(z)\bigr)c(x)=\mathrm{J}(xz)\,y\,\bigl(c(z)c(x)\bigr)=\mathrm{J}(xz)\,y\,c(xz).
 $$
 
-**Remark.** The assignment $x\mapsto\Phi^{\theta,c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.
+**Remark.** The assignment $x\mapsto\Phi^{\mathrm{J},c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.
 
 ### The Value at the Unit
 
 The members are told apart by their value on the algebra unit and by their behaviour on the parity.
 
-**Proposition.** For every $x$ one has $\Phi^{\theta,c}_x(1)=\theta(x)\,c(x)$. In particular, for the members of the family,
+**Proposition.** For every $x$ one has $\Phi^{\mathrm{J},c}_x(1)=\mathrm{J}(x)\,c(x)$. In particular, for the members of the family,
 
 | member | $\Phi_x(1)$ |
 |---|---|
@@ -60,7 +60,7 @@ The members are told apart by their value on the algebra unit and by their behav
 
 ### The Parity
 
-**Proposition.** Each member of the family preserves the parity grading: $\Phi^{\theta,c}_x(\mathrm{Cl}^0)\subseteq\mathrm{Cl}^0$ and $\Phi^{\theta,c}_x(\mathrm{Cl}^1)\subseteq\mathrm{Cl}^1$.
+**Proposition.** Each member of the family preserves the parity grading: $\Phi^{\mathrm{J},c}_x(\mathrm{Cl}^0)\subseteq\mathrm{Cl}^0$ and $\Phi^{\mathrm{J},c}_x(\mathrm{Cl}^1)\subseteq\mathrm{Cl}^1$.
 
 **Proof.** The maps $\mathrm{id}$ and $\alpha$ preserve the grading, and so do the anti-involutions $r$ and $\bar\cdot$ because their signs on a blade depend only on the degree. A product of two factors of the same parity is even.
 
@@ -90,13 +90,13 @@ The **signed inner conjugation** $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on t
 
 **Remark.** The two differ exactly on the odd part: for even $x$ the factors $\alpha(x)$ and $x$ coincide, and the two operators agree. This is why a rotation, carried by an even element, is described by either one, while a reflection, carried by an odd element, requires the graded form.
 
-**Remark (the general automorphism and the name).** The definition of the family allows an arbitrary automorphism $\theta$ as the left factor's map, and with the inverse to the right the general member is
+**Remark (the general automorphism and the name).** The definition of the family allows an arbitrary automorphism $\mathrm{J}$ as the left factor's map, and with the inverse to the right the general member is
 
 $$
-y\longmapsto \theta(x)\,y\,x^{-1},
+y\longmapsto \mathrm{J}(x)\,y\,x^{-1},
 $$
 
-the **graded inner conjugation**. The inner conjugation is the case $\theta=\mathrm{id}$ and the signed inner conjugation is the case $\theta=\alpha$; the name *signed* records that $\alpha$ is the sign character, equal to $-1$ on the odd part, and it is precisely that minus that makes an odd element give the reflection $\rho_u$ instead of its negative. The general member with an arbitrary $\theta$ is not used by the geometric layer, and the two cases above are the ones the corpus carries; the specialisation to $\theta=\alpha$ is the subject of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*.
+the **graded inner conjugation**. The inner conjugation is the case $\mathrm{J}=\mathrm{id}$ and the signed inner conjugation is the case $\mathrm{J}=\alpha$; the name *signed* records that $\alpha$ is the sign character, equal to $-1$ on the odd part, and it is precisely that minus that makes an odd element give the reflection $\rho_u$ instead of its negative. The general member with an arbitrary $\mathrm{J}$ is not used by the geometric layer, and the two cases above are the ones the corpus carries; the specialisation to $\mathrm{J}=\alpha$ is the subject of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*.
 
 ### The Anti-Involution Sandwiches
 
@@ -121,7 +121,7 @@ The **Hermitian sandwich** $y\mapsto x\,y\,x^{\dagger}$ has the dagger to the ri
 A two-sided operator acts on the whole algebra, and the ones that carry geometric information are those that send the subspace of vectors into itself,
 
 $$
-\Phi^{\theta,c}_x(V)\subseteq V.
+\Phi^{\mathrm{J},c}_x(V)\subseteq V.
 $$
 
 For the signed inner conjugation this condition is the definition of the Clifford group, and once it holds the restriction to $V$ is an isometry up to the scale that the Clifford norm records.
@@ -179,7 +179,7 @@ For the unit rotor $R=e_1e_2$ one has $N(R)=1$, so the norm-one slice applies: t
 
 ## Summary
 
-A **two-sided operator** on a Clifford algebra is the map $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$ attached to an automorphism $\theta$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the unit group on the units. Each member preserves the parity grading.
+A **two-sided operator** on a Clifford algebra is the map $\Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)$ attached to an automorphism $\mathrm{J}$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the unit group on the units. Each member preserves the parity grading.
 
 The family has five members, indexed by the right factor. The **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$ are defined on the units and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The **reversion sandwich** $x\,y\,x^{r}$ and the **conjugation sandwich** $x\,y\,x^{\natural}$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation sandwich at the unit is the Clifford norm. The **Hermitian sandwich** $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to *Hilbert Algebras*.
 
@@ -189,10 +189,10 @@ The members differ at the unit by a parity sign and a norm: the inner conjugatio
 
 | Symbol | Meaning |
 |---|---|
-| $\theta$ | Automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$, the left factor's map |
+| $\mathrm{J}$ | Automorphism of $\mathrm{Cl}(V,\mathfrak{Q})$, the left factor's map |
 | $c$ | Anti-automorphism, $c(xz)=c(z)c(x)$, $c(1)=1$ |
-| $\Phi^{\theta,c}_x(y)=\theta(x)\,y\,c(x)$ | Two-sided operator |
-| $L_a$, $R_b$ | Left and right translation, $\Phi^{\theta,c}_x=L_{\theta(x)}R_{c(x)}$ |
+| $\Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)$ | Two-sided operator |
+| $L_a$, $R_b$ | Left and right translation, $\Phi^{\mathrm{J},c}_x=L_{\mathrm{J}(x)}R_{c(x)}$ |
 | $x\,y\,x^{-1}$ | Inner conjugation, defined on the units |
 | $\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, defined on the units |
 | $x\,y\,x^{r}$ | Reversion sandwich, defined for every $x$ |

@@ -78,38 +78,38 @@ This is the quadratic form that the Fisher information will refine: the biquater
 
 ### Definition
 
-Let $\{p(x;\theta)\}$ be a family of probability distributions on a discrete outcome set, labelled by a real parameter $\theta$, and suppose the family is smooth and the distributions have common support. The **Fisher information** of the family with respect to $\theta$ is
+Let $\{p(x;\vartheta^{\mathrm{stt}})\}$ be a family of probability distributions on a discrete outcome set, labelled by a real parameter $\vartheta^{\mathrm{stt}}$, and suppose the family is smooth and the distributions have common support. The **Fisher information** of the family with respect to $\vartheta^{\mathrm{stt}}$ is
 
 $$
-F(\theta) = \sum_x p(x;\theta)\left(\frac{\partial \log p(x;\theta)}{\partial\theta}\right)^2
-= \sum_x \frac{\left(\partial/\partial\theta p(x;\theta)\right)^2}{p(x;\theta)} .
+F(\vartheta^{\mathrm{stt}}) = \sum_x p(x;\vartheta^{\mathrm{stt}})\left(\frac{\partial \log p(x;\vartheta^{\mathrm{stt}})}{\partial\vartheta^{\mathrm{stt}}}\right)^2
+= \sum_x \frac{\left(\partial/\partial\vartheta^{\mathrm{stt}} p(x;\vartheta^{\mathrm{stt}})\right)^2}{p(x;\vartheta^{\mathrm{stt}})} .
 $$
 
-For a multi-parameter family $p(x;\vec\theta)$ the information is the matrix
+For a multi-parameter family $p(x;\vec\vartheta^{\mathrm{stt}})$ the information is the matrix
 
 $$
-g_{ij}(\vec\theta) = \sum_x p(x;\vec\theta)\,\partial/\partial\theta_i\,\log p(x;\vec\theta)\,\partial/\partial\theta_j\,\log p(x;\vec\theta),
+g_{ij}(\vec\vartheta^{\mathrm{stt}}) = \sum_x p(x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_i\,\log p(x;\vec\vartheta^{\mathrm{stt}})\,\partial/\partial\vartheta^{\mathrm{stt}}_j\,\log p(x;\vec\vartheta^{\mathrm{stt}}),
 $$
 
 which is symmetric and positive semidefinite, and is the natural metric of the family. When the family is obtained by measuring a state that depends on the parameter, the information measures how much the measurement reveals about the parameter.
 
-The **Cramér–Rao bound** is the statement that an unbiased estimator $\theta^{\mathrm{est}}$ built from $m$ independent samples has variance bounded by the reciprocal of the information,
+The **Cramér–Rao bound** is the statement that an unbiased estimator $\vartheta^{\mathrm{stt}}{}^{\mathrm{est}}$ built from $m$ independent samples has variance bounded by the reciprocal of the information,
 
 $$
-\mathrm{Var}\!\left(\theta^{\mathrm{est}}\right) \ge \frac{1}{m\,F(\theta)} .
+\mathrm{Var}\!\left(\vartheta^{\mathrm{stt}}{}^{\mathrm{est}}\right) \ge \frac{1}{m\,F(\vartheta^{\mathrm{stt}})} .
 $$
 
 A large Fisher information means a sharply determined parameter; a divergent Fisher information means asymptotic exactness.
 
 ### The Statistical Distance
 
-The information is the infinitesimal form of a distance. If a parameter is rescaled so that $\theta$ measures path length in the metric, then the **statistical distance** between neighbouring members is
+The information is the infinitesimal form of a distance. If a parameter is rescaled so that $\vartheta^{\mathrm{stt}}$ measures path length in the metric, then the **statistical distance** between neighbouring members is
 
 $$
-ds^2 = \sum_{ij} g_{ij}(\vec\theta)\,d\theta_i d\theta_j ,
+ds^2 = \sum_{ij} g_{ij}(\vec\vartheta^{\mathrm{stt}})\,d\vartheta^{\mathrm{stt}}_i d\vartheta^{\mathrm{stt}}_j ,
 $$
 
-and the finite distance along a path is the integral of $ds$. The metric is invariant under reparametrisation of the family, which is why it is the geometric object and $F$ is only its coordinate expression. The Fisher information is also, by a standard theorem, the second derivative of the relative entropy along the family: for a family of states $\tilde{Ϛ}(\vec\theta)$, the second derivative of the relative entropy at coincidence is the information matrix. That theorem is used in the section on the relative entropy below, and it is what gives the metric its informational meaning.
+and the finite distance along a path is the integral of $ds$. The metric is invariant under reparametrisation of the family, which is why it is the geometric object and $F$ is only its coordinate expression. The Fisher information is also, by a standard theorem, the second derivative of the relative entropy along the family: for a family of states $\tilde{Ϛ}(\vec\vartheta^{\mathrm{stt}})$, the second derivative of the relative entropy at coincidence is the information matrix. That theorem is used in the section on the relative entropy below, and it is what gives the metric its informational meaning.
 
 ## Fisher Information in the Informational Sector
 
@@ -174,22 +174,22 @@ The comparison of the two measures is meaningful only in a stated normalization,
 
 ### The Measurement Family
 
-A complementary family is obtained by fixing a measurement axis $\vec u$ and varying the state along an arbitrary path $\vec r(\theta)$. The outcome distribution is
+A complementary family is obtained by fixing a measurement axis $\vec u$ and varying the state along an arbitrary path $\vec r(\vartheta^{\mathrm{stt}})$. The outcome distribution is
 
 $$
-p_\pm(\theta) = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r(\theta)\right),
+p_\pm(\vartheta^{\mathrm{stt}}) = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r(\vartheta^{\mathrm{stt}})\right),
 $$
 
 and the chain rule gives
 
 $$
-\boxed{\;F(\theta) = \sum_\pm \frac{\left(\partial/\partial\theta p_\pm\right)^2}{p_\pm}
-= \frac{\left(\vec u\cdot\,d\vec r/d\theta\right)^2}{1-\left(\vec u\cdot\vec r\right)^2}\;},
+\boxed{\;F(\vartheta^{\mathrm{stt}}) = \sum_\pm \frac{\left(\partial/\partial\vartheta^{\mathrm{stt}} p_\pm\right)^2}{p_\pm}
+= \frac{\left(\vec u\cdot\,d\vec r/d\vartheta^{\mathrm{stt}}\right)^2}{1-\left(\vec u\cdot\vec r\right)^2}\;},
 $$
 
-which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\vec u = \vec u_r$, the result reduces to $F = \left(dr/d\theta\right)^{2}/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its tangent, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
+which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\vec u = \vec u_r$, the result reduces to $F = \left(dr/d\vartheta^{\mathrm{stt}}\right)^{2}/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its tangent, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
 
-The measurement family also makes the divergence at the boundary transparent. As $\vec u\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial/\partial\theta\,(\vec u\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially to the sphere, at the point where the measurement axis meets it, so that $\partial/\partial\theta\,(\vec u\cdot\vec r)\to0$ at the same rate as $1-(\vec u\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\theta) = (1-\theta^2)(\cos\theta\,\vec e_x + \sin\theta\,\vec e_y)$ read along $\vec u = \vec e_x$ one has $\vec u\cdot\vec r = (1-\theta^2)\cos\theta$, and the information tends to $3$ as $\theta\to0$ even though the state tends to a pure state.
+The measurement family also makes the divergence at the boundary transparent. As $\vec u\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial/\partial\vartheta^{\mathrm{stt}}\,(\vec u\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially to the sphere, at the point where the measurement axis meets it, so that $\partial/\partial\vartheta^{\mathrm{stt}}\,(\vec u\cdot\vec r)\to0$ at the same rate as $1-(\vec u\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\vartheta^{\mathrm{stt}}) = (1-\vartheta^{\mathrm{stt}}^2)(\cos\vartheta^{\mathrm{stt}}\,\vec e_x + \sin\vartheta^{\mathrm{stt}}\,\vec e_y)$ read along $\vec u = \vec e_x$ one has $\vec u\cdot\vec r = (1-\vartheta^{\mathrm{stt}}^2)\cos\vartheta^{\mathrm{stt}}$, and the information tends to $3$ as $\vartheta^{\mathrm{stt}}\to0$ even though the state tends to a pure state.
 
 ## The Reciprocity and Its Meaning
 
@@ -215,7 +215,7 @@ $$
 which is the algebra's transcription of the classical Kullback–Leibler divergence; on the diagonal states it is the ordinary divergence of the two outcome distributions. The standard information-geometric theorem states that the Fisher information is the second derivative of this divergence along a family:
 
 $$
-g_{ij}(\vec\theta) = \left.\frac{\partial^2}{\partial\theta_i\partial\theta_j}\right|_{\vec\theta=\vec\theta_0} D\!\left(\tilde{Ϛ}(\vec\theta)\,\|\,\tilde{Ϛ}(\vec\theta_0)\right).
+g_{ij}(\vec\vartheta^{\mathrm{stt}}) = \left.\frac{\partial^2}{\partial\vartheta^{\mathrm{stt}}_i\partial\vartheta^{\mathrm{stt}}_j}\right|_{\vec\vartheta^{\mathrm{stt}}=\vec\vartheta^{\mathrm{stt}}_0} D\!\left(\tilde{Ϛ}(\vec\vartheta^{\mathrm{stt}})\,\|\,\tilde{Ϛ}(\vec\vartheta^{\mathrm{stt}}_0)\right).
 $$
 
 For the radial spectral family the divergence is
@@ -257,17 +257,17 @@ The metric is degenerate, however, and the degeneracy is the honest limitation o
 The classical Fisher information depends on the measurement. The standard theorem of Braunstein and Caves states that its maximum over all measurements of a family of states is the **quantum Fisher information** of the family,
 
 $$
-F(\theta) \le F_Q(\theta) \quad \text{for every measurement}, \qquad
-F_Q(\theta) = \max_{\text{measurements}} F(\theta) ,
+F(\vartheta^{\mathrm{stt}}) \le F_Q(\vartheta^{\mathrm{stt}}) \quad \text{for every measurement}, \qquad
+F_Q(\vartheta^{\mathrm{stt}}) = \max_{\text{measurements}} F(\vartheta^{\mathrm{stt}}) ,
 $$
 
-with equality attained for the measurement in the eigenbasis of the symmetric logarithmic derivative. For the pure-state family $\vec r(\theta)$ with $|\vec r(\theta)| = 1$ the quantum Fisher information is the squared speed of the Bloch vector,
+with equality attained for the measurement in the eigenbasis of the symmetric logarithmic derivative. For the pure-state family $\vec r(\vartheta^{\mathrm{stt}})$ with $|\vec r(\vartheta^{\mathrm{stt}})| = 1$ the quantum Fisher information is the squared speed of the Bloch vector,
 
 $$
-F_Q(\theta) = \left|\left(d\vec r/d\theta\right)(\theta)\right|^2 ,
+F_Q(\vartheta^{\mathrm{stt}}) = \left|\left(d\vec r/d\vartheta^{\mathrm{stt}}\right)(\vartheta^{\mathrm{stt}})\right|^2 ,
 $$
 
-which was checked numerically on the unit-speed family $\vec r(\theta) = (\sin\theta, 0, \cos\theta)$, where it equals $1$ and is attained by the optimal measurement while the classically wrong measurement returns $0$. The reader should note the division of labour: the **classical** information, its metric and its reciprocity with the biquaternion norm are the subject of this article, and they are the radial shadow of the full geometry; the **quantum** information, its relation to the Bures metric and to the Fubini–Study geometry, and the associated estimation theory are the subject of the sibling quantum category, and they are cited here as standard results rather than developed.
+which was checked numerically on the unit-speed family $\vec r(\vartheta^{\mathrm{stt}}) = (\sin\vartheta^{\mathrm{stt}}, 0, \cos\vartheta^{\mathrm{stt}})$, where it equals $1$ and is attained by the optimal measurement while the classically wrong measurement returns $0$. The reader should note the division of labour: the **classical** information, its metric and its reciprocity with the biquaternion norm are the subject of this article, and they are the radial shadow of the full geometry; the **quantum** information, its relation to the Bures metric and to the Fubini–Study geometry, and the associated estimation theory are the subject of the sibling quantum category, and they are cited here as standard results rather than developed.
 
 The bound also explains the rank-one degeneracy of the classical metric from the other side. The classical metric is bounded above by the rank-three quantum Fisher metric $g^{\rm Q}$ in the normalization fixed above, and the directions in which the classical metric vanishes are exactly those the quantum information fills. The biquaternion norm controls the radial direction; the angular directions are controlled by the quantum geometry, which the biquaternion norm does not see.
 
@@ -296,9 +296,9 @@ g_{ij} = \frac{\vec{u_r}_i\vec{u_r}_j}{1-|\vec r|^2}
 = \frac{\vec{u_r}_i\vec{u_r}_j}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
 $$
 
-whose single nonzero eigenvalue is the reciprocity above. For a measurement along a fixed axis $\vec u$ and a family $\vec r(\theta)$, the classical information is $F(\theta) = (\vec u\cdot\,d\vec r/d\theta)^2/(1-(\vec u\cdot\vec r)^2)$.
+whose single nonzero eigenvalue is the reciprocity above. For a measurement along a fixed axis $\vec u$ and a family $\vec r(\vartheta^{\mathrm{stt}})$, the classical information is $F(\vartheta^{\mathrm{stt}}) = (\vec u\cdot\,d\vec r/d\vartheta^{\mathrm{stt}})^2/(1-(\vec u\cdot\vec r)^2)$.
 
-The reciprocity is the sector's version of the identification of information with geometry. The biquaternion norm is maximal at the maximally mixed state, where the Fisher information is minimal, and it vanishes on the zero-divisor cone, where the Fisher information diverges; the entropy of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a third monotone interpretation of the same invariant. The Fisher information is also the Hessian of the relative entropy, $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D(\tilde{Ϛ}(\vec\theta)\|\tilde{Ϛ}(\vec\theta_0))$, so the biquaternion norm and the curvature of the divergence are inverses. The Fisher–Rao distance from the maximally mixed state to the pure sphere is $\pi/2$, finite even though the information diverges at the boundary.
+The reciprocity is the sector's version of the identification of information with geometry. The biquaternion norm is maximal at the maximally mixed state, where the Fisher information is minimal, and it vanishes on the zero-divisor cone, where the Fisher information diverges; the entropy of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a third monotone interpretation of the same invariant. The Fisher information is also the Hessian of the relative entropy, $g_{ij} = \partial^2/\partial\vartheta^{\mathrm{stt}}_i\partial\vartheta^{\mathrm{stt}}_j D(\tilde{Ϛ}(\vec\vartheta^{\mathrm{stt}})\|\tilde{Ϛ}(\vec\vartheta^{\mathrm{stt}}_0))$, so the biquaternion norm and the curvature of the divergence are inverses. The Fisher–Rao distance from the maximally mixed state to the pure sphere is $\pi/2$, finite even though the information diverges at the boundary.
 
 The classical metric is the radial shadow of the full quantum Fisher information metric, in the normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ of which the Bures metric of the standard geometry is one quarter; the angular directions and the optimal-measurement bound $F\le F_Q$ belong to the sibling quantum category and are cited as standard.
 
@@ -319,15 +319,15 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = \tfrac{1}{2}|\vec r-\vec s|^2$ | Hilbert–Schmidt distance |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Spectral (pointer) probabilities |
 | $\vec u_r = \vec r/|\vec r|$ | Bloch direction |
-| $F(\theta) = \sum_x (\partial/\partial\theta p)^2/p$ | Classical Fisher information |
-| $g_{ij}(\vec\theta)$ | Fisher information matrix (metric) |
+| $F(\vartheta^{\mathrm{stt}}) = \sum_x (\partial/\partial\vartheta^{\mathrm{stt}} p)^2/p$ | Classical Fisher information |
+| $g_{ij}(\vec\vartheta^{\mathrm{stt}})$ | Fisher information matrix (metric) |
 | $F_r = 1/(1-|\vec r|^2) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$ | Reciprocity of Fisher information and biquaternion norm |
 | $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-|\vec r|^2)$ | Rank-one information metric of the spectral family |
-| $F(\theta) = (\vec u\cdot\,d\vec r/d\theta)^2/(1-(\vec u\cdot\vec r)^2)$ | Measurement-family information |
+| $F(\vartheta^{\mathrm{stt}}) = (\vec u\cdot\,d\vec r/d\vartheta^{\mathrm{stt}})^2/(1-(\vec u\cdot\vec r)^2)$ | Measurement-family information |
 | $D(\tilde{Ϛ}_1\|\tilde{Ϛ}_2) = 2\,\mathrm{Sc}(\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2))$ | Relative entropy |
-| $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D$ | Fisher information as the Hessian of the relative entropy |
+| $g_{ij} = \partial^2/\partial\vartheta^{\mathrm{stt}}_i\partial\vartheta^{\mathrm{stt}}_j D$ | Fisher information as the Hessian of the relative entropy |
 | $d_{\rm FR}(r) = \arcsin r$ | Fisher–Rao distance from the maximally mixed state |
-| $F_Q(\theta) = |d\vec r/d\theta|^2$ (pure family) | Quantum Fisher information (standard, sibling category) |
+| $F_Q(\vartheta^{\mathrm{stt}}) = |d\vec r/d\vartheta^{\mathrm{stt}}|^2$ (pure family) | Quantum Fisher information (standard, sibling category) |
 | $g^{\rm Q}_{ij} = \delta_{ij} + r^2\vec{u_r}_i\vec{u_r}_j/(1-r^2)$ | Quantum Fisher information metric, normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ |
 | $g^{\rm Q}_{rr} = 1/(1-r^2)$, $g^{\rm Q}_{\Omega\Omega} = r^2$ | Its radial and tangential components |
 | $g^{\rm Q}_{ij} - g_{ij} = \delta_{ij} - \vec{u_r}_i\vec{u_r}_j$ | Tangential projection by which the classical metric is dominated |

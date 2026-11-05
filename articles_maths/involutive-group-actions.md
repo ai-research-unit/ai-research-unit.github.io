@@ -78,15 +78,15 @@ so the containment is strict, the image having index two in the fixed set of the
 **Proposition (an involution on the semidirect product).** Let $\Gamma$ act on $G$ preserving $\sigma$, and let $\Gamma$ carry an involution $\tau$. If the action is $\tau$-twisted, that is $\tau(\gamma)\cdot\tau(g)=\tau(\gamma\cdot g)$ for all $\gamma,g$, then
 
 $$
-\boxed{\;\Theta(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)\;}
+\boxed{\;\mathrm{J}(g,\gamma)=\bigl(\sigma(g),\ \tau(\gamma)\bigr)\;}
 $$
 
-is an involution of the semidirect product $G\rtimes\Gamma$, and its restriction to $G$ is $\sigma$. If $\tau=\mathrm{id}$ this reduces to $\Theta(g,\gamma)=(\sigma(g),\gamma)$.
+is an involution of the semidirect product $G\rtimes\Gamma$, and its restriction to $G$ is $\sigma$. If $\tau=\mathrm{id}$ this reduces to $\mathrm{J}(g,\gamma)=(\sigma(g),\gamma)$.
 
-**Proof.** That $\Theta$ is a bijection with $\Theta^{2}=\mathrm{id}$ is immediate from $\sigma^{2}=\tau^{2}=\mathrm{id}$. It is anti-multiplicative on the semidirect product, using that $\Gamma$ acts by automorphisms of $G$:
+**Proof.** That $\mathrm{J}$ is a bijection with $\mathrm{J}^{2}=\mathrm{id}$ is immediate from $\sigma^{2}=\tau^{2}=\mathrm{id}$. It is anti-multiplicative on the semidirect product, using that $\Gamma$ acts by automorphisms of $G$:
 
 $$
-\Theta\bigl((g,\gamma)(g',\gamma')\bigr)=\Theta\bigl(g\,(\gamma\cdot g'),\gamma\gamma'\bigr)
+\mathrm{J}\bigl((g,\gamma)(g',\gamma')\bigr)=\mathrm{J}\bigl(g\,(\gamma\cdot g'),\gamma\gamma'\bigr)
 =\bigl(\sigma(g\,(\gamma\cdot g')),\ \tau(\gamma\gamma')\bigr)
 =\bigl(\sigma(\gamma\cdot g')\sigma(g),\ \tau(\gamma')\tau(\gamma)\bigr),
 $$
@@ -94,7 +94,7 @@ $$
 while
 
 $$
-\Theta(g',\gamma')\Theta(g,\gamma)=\bigl(\sigma(g')\,(\tau(\gamma')\cdot\sigma(g)),\ \tau(\gamma')\tau(\gamma)\bigr).
+\mathrm{J}(g',\gamma')\mathrm{J}(g,\gamma)=\bigl(\sigma(g')\,(\tau(\gamma')\cdot\sigma(g)),\ \tau(\gamma')\tau(\gamma)\bigr).
 $$
 
 The two are equal when $\sigma(\gamma\cdot g')=\tau(\gamma')\cdot\sigma(g)$, which is the twisted compatibility applied to $\gamma\cdot g'$ and rearranged; with $\tau=\mathrm{id}$ it is the plain compatibility $\sigma(\gamma\cdot g')=\gamma'\cdot\sigma(g)$.
@@ -105,7 +105,7 @@ The two are equal when $\sigma(\gamma\cdot g')=\tau(\gamma')\cdot\sigma(g)$, whi
 
 An action of $\Gamma$ on an involutive group $(G,\sigma)$ **preserves the involution** when every operator commutes with $\sigma$, equivalently when the image of $\Gamma\to\operatorname{Aut}(G)$ lies in $C_{\operatorname{Aut}(G)}(\sigma)$; it then preserves $\sigma$, the associated automorphism $\alpha$, the fixed set $G^{\sigma}$ and the inverted set $I(\sigma)$. The **$\Gamma$-fixed points** $G^{\Gamma}$ are $\sigma$-stable, so $\sigma$ restricts to an involution of $G^{\Gamma}$, and the two fixed sets $G^{\sigma}$ and $G^{\Gamma}$ are mutually stable; their intersection carries both structures.
 
-For a normal subgroup $N$ that is both $\sigma$-stable and $\Gamma$-stable the involution and the action both descend to $G/N$, the descended action preserves the induced involution, and the projection is a morphism of involutive $\Gamma$-groups; the image of $G^{\sigma}$ lies in the fixed set of the quotient and the containment can be strict. The fixed-point constructions $G\mapsto G^{\sigma}$ and $G\mapsto G^{\Gamma}$ are functorial and left exact. Finally, an involutive group $\Gamma$ acting with a compatible involution $\tau$ makes $G\rtimes\Gamma$ an involutive group by $\Theta(g,\gamma)=(\sigma(g),\tau(\gamma))$, an extension of the involution of $G$.
+For a normal subgroup $N$ that is both $\sigma$-stable and $\Gamma$-stable the involution and the action both descend to $G/N$, the descended action preserves the induced involution, and the projection is a morphism of involutive $\Gamma$-groups; the image of $G^{\sigma}$ lies in the fixed set of the quotient and the containment can be strict. The fixed-point constructions $G\mapsto G^{\sigma}$ and $G\mapsto G^{\Gamma}$ are functorial and left exact. Finally, an involutive group $\Gamma$ acting with a compatible involution $\tau$ makes $G\rtimes\Gamma$ an involutive group by $\mathrm{J}(g,\gamma)=(\sigma(g),\tau(\gamma))$, an extension of the involution of $G$.
 
 ## Summary of Notation
 
@@ -117,7 +117,7 @@ For a normal subgroup $N$ that is both $\sigma$-stable and $\Gamma$-stable the i
 | $G^{\sigma}\cap G^{\Gamma}$ | points fixed by both structures |
 | $\bar\sigma(gN)=\sigma(g)N$ | induced involution on $G/N$, $N$ $\sigma$-stable |
 | $f\sigma=\tau f$ | involution-preserving equivariant map |
-| $\Theta(g,\gamma)=(\sigma(g),\tau(\gamma))$ | involution of the semidirect product |
+| $\mathrm{J}(g,\gamma)=(\sigma(g),\tau(\gamma))$ | involution of the semidirect product |
 
 ## Further Reading
 

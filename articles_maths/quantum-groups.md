@@ -133,7 +133,7 @@ The map $c$ makes the category of $H$-modules **braided monoidal**, and the Yang
 
 ### Ribbon elements and twists
 
-**Definition.** A quasitriangular Hopf algebra $H$ has a **ribbon element** if there is a central element $\theta$ with $S(\theta) = \theta$, $\varepsilon(\theta)=1$ and $\Delta(\theta) = (\mathcal{R}_{21}\mathcal{R})^{-1}(\theta\otimes\theta)$; a **modular** Hopf algebra is a ribbon Hopf algebra with a **twist** $v$ satisfying $v^2 = \theta^{-1}u$ where $u = \sum_i S(t_i)s_i$.
+**Definition.** A quasitriangular Hopf algebra $H$ has a **ribbon element** if there is a central element $\vartheta^{\mathrm{rib}}$ with $S(\vartheta^{\mathrm{rib}}) = \vartheta^{\mathrm{rib}}$, $\varepsilon(\vartheta^{\mathrm{rib}})=1$ and $\Delta(\vartheta^{\mathrm{rib}}) = (\mathcal{R}_{21}\mathcal{R})^{-1}(\vartheta^{\mathrm{rib}}\otimes\vartheta^{\mathrm{rib}})$; a **modular** Hopf algebra is a ribbon Hopf algebra with a **twist** $v$ satisfying $v^2 = \vartheta^{\mathrm{rib}}^{-1}u$ where $u = \sum_i S(t_i)s_i$.
 
 The modular structure is the algebraic input of the Reshetikhin–Turaev invariants and of the modular tensor categories; the topological constructions belong to Part II and the category-theoretic ones to *Monoidal Categories*, while the Hopf-algebraic data is what is produced here.
 
@@ -242,7 +242,7 @@ $U_q(\mathrm{G})$ is **quasitriangular**: the universal $\mathcal{R}$-matrix $\m
 | $\mathcal{R}$ | universal $\mathcal{R}$-matrix, $H\otimes_k H$ |
 | $\mathcal{R}_{12}, \mathcal{R}_{13}, \mathcal{R}_{23}$ | leg notations for $\mathcal{R}$ in $H^{\otimes3}$ |
 | $c_{M,N}$ | braiding of the module category |
-| $u, \theta, v$ | Drinfeld element, ribbon element, twist |
+| $u, \vartheta^{\mathrm{rib}}, v$ | Drinfeld element, ribbon element, twist |
 | $D(\mathrm{B})$ | Drinfeld double of a Hopf algebra |
 | $\operatorname{SL}_q(2)$, $k_q[x,y]$ | quantised coordinate algebra, quantum plane |
 | $U_{\mathbb{Z}}(\mathrm{G})$, $\mathcal{B}$ | integral form, crystal basis |

@@ -30,7 +30,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 ,
 $$
 
-the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
+the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -151,7 +151,7 @@ treating the $x_\mu$ as independent coordinates. Then $\partial/\partial Q_\mu\,
 
 The count of physical degrees of freedom now follows from the rank of the pure-gauge map.
 
-- The connection has **four real components** per point: the material-sector condition $\tilde{A}\in\mathbb{M}_-$ makes $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
+- The connection has **four real components** per point: the material-sector condition $\tilde{A}\in\mathbb{M}_-$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
 - The gauge function is one real function, and its gradient removes one real direction from the four per mode, as the rank of the pure-gauge map established above.
 - Off shell the physical content is therefore $4 - 1 = 3$ real components per mode.
 - The field equation supplies one further constraint. The $\nu = 0$ component of $\sum_\mu\varepsilon_\mu\,\partial F_{\mu\nu}/\partial Q_\mu = J_\nu$ — the Gauss law — contains no second time derivative, so it constrains the initial data rather than evolving it, and it removes one of the three components, leaving $4 - 1 - 1 = 2$ per mode: the two transverse polarizations.
@@ -313,7 +313,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_k\,\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_k\,\vec e_k\partial/\partial Q_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ | Connection, a material-sector one-form |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase |
 | $\kappa = ϙ/\hbar$ | Coupling |

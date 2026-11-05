@@ -92,9 +92,9 @@ that is, symmetric for the **twisted Hermitian form** $\langle f,g\rangle_R=\lan
 $$
 \boxed{\;C_n(f,g)=\int f\circ\varphi^n\,\bar g\,d\mu-\Bigl(\int f\,d\mu\Bigr)\Bigl(\int\bar g\,d\mu\Bigr)=\langle L_\varphi^{\,n}f,g\rangle-\langle f,1\rangle\langle1,g\rangle\;} ,
 $$
-and when the spectral gap of *The Transfer Operator of the Limit Dynamical System* holds the decay is exponential, $|C_n(f,g)|\le C\theta^n$, for $f$ and $g$ in the H\"older class.
+and when the spectral gap of *The Transfer Operator of the Limit Dynamical System* holds the decay is exponential, $|C_n(f,g)|\le C\varrho^n$, for $f$ and $g$ in the H\"older class.
 
-*Proof.* The first identity is the definition of the correlation and the duality $\langle L_\varphi^{\,n}f,g\rangle=\langle f,U_\varphi^{\,n}g\rangle$ of the adjoint; the decay is the spectral gap applied to the shifted operator $L_\varphi-\Pi$ with $\Pi f=\langle f,1\rangle$ the rank-one projection on the invariant function, whose powers decay by $\theta^n$. The central limit theorem follows from the same gap by the standard argument of *The Transfer Operator*.
+*Proof.* The first identity is the definition of the correlation and the duality $\langle L_\varphi^{\,n}f,g\rangle=\langle f,U_\varphi^{\,n}g\rangle$ of the adjoint; the decay is the spectral gap applied to the shifted operator $L_\varphi-\Pi$ with $\Pi f=\langle f,1\rangle$ the rank-one projection on the invariant function, whose powers decay by $\varrho^n$. The central limit theorem follows from the same gap by the standard argument of *The Transfer Operator*.
 
 ## The Two-Sided Limit
 

@@ -89,16 +89,16 @@ The theorem is what justifies calling the formalism a Hamiltonian formalism at a
 The canonical one-form of the one-variable theory is $\theta_L=\sum_i p_i\,dq_i$, and its exterior derivative is the symplectic form up to sign. The covariant generalisation replaces the scalar $p_i$ by the family $p_{\mu i}$ and the one-form $dq_i$ by the wedge with the interior product of the volume form,
 
 $$
-\Theta_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu ,
+\mathrm{Sd}_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu ,
 $$
 
 an $m$-form on the space of variables $(x,u,p)$. It is the **multimomentum form**, or the **De Donder–Weyl form**, and it is the field-theoretic Poincaré–Cartan form: for $m=1$ it is $\sum_i p_i\,du_i$, the canonical one-form of *Lagrangian and Hamiltonian Systems*. Its exterior derivative is the **multisymplectic form**
 
 $$
-\boxed{\;\Omega_{DW}=-d\Theta_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu\;} ,
+\boxed{\;\Omega_{DW}=-d\mathrm{Sd}_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu\;} ,
 $$
 
-a closed $(m+1)$-form, closed because it is exact. The sign is fixed by the one-variable case, where $\Omega_{DW}=\sum_i du_i\wedge dp_i$ is the symplectic form $\omega=\sum_i dq_i\wedge dp_i$ of *Lagrangian and Hamiltonian Systems* with $q=u$; a reader who prefers the opposite sign must reverse it in $\Theta_{DW}$ as well, since it is the derivative that is fixed and the form only up to a sign convention.
+a closed $(m+1)$-form, closed because it is exact. The sign is fixed by the one-variable case, where $\Omega_{DW}=\sum_i du_i\wedge dp_i$ is the symplectic form $\omega=\sum_i dq_i\wedge dp_i$ of *Lagrangian and Hamiltonian Systems* with $q=u$; a reader who prefers the opposite sign must reverse it in $\mathrm{Sd}_{DW}$ as well, since it is the derivative that is fixed and the form only up to a sign convention.
 
 
 ### The Polysymplectic Form
@@ -247,11 +247,11 @@ The comparison explains the two facts recorded in the introduction. The instanta
 
 For a variational problem in $m$ independent variables, the conjugate object is the **polymomentum** $p_{\mu i}=\partial L/\partial(\partial/\partial x_\mu\,u_i)$, one momentum per unknown per direction, and the Hamiltonian is the **De Donder–Weyl** function $H=\sum_{i,\mu}p_{\mu i}\partial/\partial x_\mu\,u_i-L$, defined when the Legendre map $(x,u,\partial u)\mapsto(x,u,p)$ is a diffeomorphism. The **De Donder–Weyl equations** $\partial/\partial x_\mu\,u_i=\partial H/\partial p_{\mu i}$, $\sum_\mu\partial/\partial x_\mu\,p_{\mu i}=-\partial H/\partial u_i$ are equivalent to the Euler–Lagrange equations for a hyperregular density, the first being the Legendre definition and the second the equation of motion; the equivalence is the envelope theorem applied to the definition of $H$.
 
-The symplectic two-form is replaced by the **multimomentum form** $\Theta_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu$ and its exterior derivative, the closed $(m+1)$-form $\Omega_{DW}=-d\Theta_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu$. Equivalently, in the **polysymplectic** reading the structure is the $\mathbb{R}^m$-valued two-form $\omega=\sum_{\mu,i}dp_{\mu i}\wedge du_i\otimes\partial/\partial x_\mu$. There is **no covariant Poisson bracket**: the equation that would define a Hamiltonian vector field equates forms of different degrees and requires an $(m-1)$-form that no canonical rule supplies, so the Hamiltonian vector field is replaced by a Hamiltonian distribution, and the bracket is recovered only when a direction is singled out. The conserved object of a symmetry is a form rather than a scalar; for translations it is the multimomentum current $J_{\mu\nu}=\sum_i p_{\mu i}\partial/\partial x_\nu\,u_i-L\delta_{\mu\nu}$, with $\sum_\mu\partial/\partial x_\mu\,J_{\mu\nu}=0$ on shell, which is $m$ copies of the Beltrami first integral.
+The symplectic two-form is replaced by the **multimomentum form** $\mathrm{Sd}_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu$ and its exterior derivative, the closed $(m+1)$-form $\Omega_{DW}=-d\mathrm{Sd}_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu$. Equivalently, in the **polysymplectic** reading the structure is the $\mathbb{R}^m$-valued two-form $\omega=\sum_{\mu,i}dp_{\mu i}\wedge du_i\otimes\partial/\partial x_\mu$. There is **no covariant Poisson bracket**: the equation that would define a Hamiltonian vector field equates forms of different degrees and requires an $(m-1)$-form that no canonical rule supplies, so the Hamiltonian vector field is replaced by a Hamiltonian distribution, and the bracket is recovered only when a direction is singled out. The conserved object of a symmetry is a form rather than a scalar; for translations it is the multimomentum current $J_{\mu\nu}=\sum_i p_{\mu i}\partial/\partial x_\nu\,u_i-L\delta_{\mu\nu}$, with $\sum_\mu\partial/\partial x_\mu\,J_{\mu\nu}=0$ on shell, which is $m$ copies of the Beltrami first integral.
 
 The variants of the formalism — Hamilton–De Donder, polysymplectic, multisymplectic, $k$-symplectic, Lepage — are readings of the same data, differing in degree, in values and in the class of densities admitted. Two examples carry the transformation exactly: a single unknown with a potential, where $p_\mu=\sum_\nu(g^{-1})_{\mu\nu}\partial/\partial x_\nu\,u$ and $H=\frac12\sum_{\mu,\nu}g_{\mu\nu}p_\mu p_\nu+V$, the De Donder–Weyl equations returning $\sum_{\mu,\nu}(g^{-1})_{\mu\nu}\partial^2/\partial x_\mu\partial x_\nu\,u+V'(u)=0$; and a vector of unknowns coupled through the antisymmetrised derivative, where $p_{a\mu\nu}=-F_{a\mu\nu}$ and $H=L$, the Legendre map having the exact shifts as its kernel and the equations being correspondingly weaker by that kernel.
 
-The case $m=1$ is the finite-dimensional theory: $\Theta_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$ is the symplectic form, $H$ is the Hamiltonian, and the De Donder–Weyl equations are Hamilton's equations. The case $m\ge2$ is the genuinely new one, and the single fact that makes it new is that the momenta point in $m$ directions at once. The instantaneous formalism is the covariant formalism with a direction chosen, its bracket existing precisely because the choice supplies the $(m-1)$-form that the covariant equation leaves free.
+The case $m=1$ is the finite-dimensional theory: $\mathrm{Sd}_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$ is the symplectic form, $H$ is the Hamiltonian, and the De Donder–Weyl equations are Hamilton's equations. The case $m\ge2$ is the genuinely new one, and the single fact that makes it new is that the momenta point in $m$ directions at once. The instantaneous formalism is the covariant formalism with a direction chosen, its bracket existing precisely because the choice supplies the $(m-1)$-form that the covariant equation leaves free.
 
 ## Summary of Notation
 
@@ -267,18 +267,18 @@ The case $m=1$ is the finite-dimensional theory: $\Theta_{DW}=p\,du$, $\Omega_{D
 | $\partial/\partial x_\mu\,u_i(x,u,p)$ | The derivative expressed as a function of the momenta on the Legendre surface |
 | $H=\sum_{i,\mu}p_{\mu i}\partial/\partial x_\mu\,u_i-L$ | The De Donder–Weyl Hamiltonian |
 | $\partial/\partial x_\mu\,u_i=\partial H/\partial p_{\mu i}$, $\sum_\mu\partial/\partial x_\mu\,p_{\mu i}=-\partial H/\partial u_i$ | The De Donder–Weyl equations |
-| $\Theta_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu$ | The multimomentum form, or De Donder–Weyl form; the field-theoretic Poincaré–Cartan form |
-| $\Omega_{DW}=-d\Theta_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu$ | The multisymplectic form, a closed $(m+1)$-form |
+| $\mathrm{Sd}_{DW}=\sum_{i,\mu}p_{\mu i}\,du_i\wedge\varpi_\mu$ | The multimomentum form, or De Donder–Weyl form; the field-theoretic Poincaré–Cartan form |
+| $\Omega_{DW}=-d\mathrm{Sd}_{DW}=-\sum_{i,\mu}dp_{\mu i}\wedge du_i\wedge\varpi_\mu$ | The multisymplectic form, a closed $(m+1)$-form |
 | $\omega=\sum_{\mu,i}dp_{\mu i}\wedge du_i\otimes\partial/\partial x_\mu$ | The polysymplectic form of Günther, an $\mathbb{R}^m$-valued two-form |
 | $J_{\mu\nu}=\sum_i p_{\mu i}\partial/\partial x_\nu\,u_i-L\delta_{\mu\nu}$ | The multimomentum current; $\sum_\mu\partial/\partial x_\mu\,J_{\mu\nu}=0$ on shell |
 | $F_{a\mu\nu}=\partial/\partial x_\mu\,u_{a\nu}-\partial/\partial x_\nu\,u_{a\mu}$ | The antisymmetrised derivative of the curl Lagrangian |
-| $m=1$ | The case that is the finite-dimensional Hamiltonian theory: $\Theta_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$ |
+| $m=1$ | The case that is the finite-dimensional Hamiltonian theory: $\mathrm{Sd}_{DW}=p\,du$, $\Omega_{DW}=du\wedge dp$ |
 
 ## Further Reading
 
 - Théophile De Donder, *Théorie invariantive du calcul des variations* (Gauthier-Villars, 1935), and Hermann Weyl, "Geodesic fields in the calculus of variations", *Annals of Mathematics* **36** (1935), for the independent arrival at the covariant Hamiltonian of the multi-variable problem.
 - Jerzy Kijowski, "A finite-dimensional canonical formalism in the classical field theory", *Communications in Mathematical Physics* **30** (1973), for the multisymplectic form and its conservation law.
-- Pedro L. García Pérez, "The Poincaré–Cartan invariant in the calculus of variations", *Symposia Mathematica* **14** (1974), for the $m$-form $\Theta_{DW}$ and the Lepage theory it generates.
+- Pedro L. García Pérez, "The Poincaré–Cartan invariant in the calculus of variations", *Symposia Mathematica* **14** (1974), for the $m$-form $\mathrm{Sd}_{DW}$ and the Lepage theory it generates.
 - Christian Günther, "The polysymplectic Hamiltonian formalism in field theory and the calculus of variations", *Journal of Differential Geometry* **25** (1987), for the $\mathbb{R}^m$-valued two-form and the polysymplectic non-degeneracy.
 - Olga Krupková, *The Geometry of Ordinary Variational Equations* (Springer, 1997), and "Hamiltonian field theory", *Journal of Geometry and Physics* **43** (2002), for the Hamilton–De Donder equations, the hyperregularity condition and the equivalence theorem.
 - Mark J. Gotay, James Isenberg, Jerrold E. Marsden and Richard Montgomery, "Momentum maps and classical relativistic fields" (1997/2004), for the multisymplectic Noether theorem and the multimomentum current.

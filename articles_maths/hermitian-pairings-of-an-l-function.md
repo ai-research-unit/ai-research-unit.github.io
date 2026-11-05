@@ -23,9 +23,9 @@ and for $\sigma=0$ it is the form of the category, $\langle f,g\rangle_0=\sum_nf
 
 **Theorem.** For the local operator $M_h$ of multiplication by $h$, the adjoint with respect to the coefficient pairing is
 $$
-\boxed{\;\langle M_hf,g\rangle_\sigma=\langle f,\Theta_hg\rangle_\sigma\;} ,
+\boxed{\;\langle M_hf,g\rangle_\sigma=\langle f,\mathrm{Sd}_hg\rangle_\sigma\;} ,
 $$
-with $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$; the adjoint of the multiplication by a completely multiplicative function $h$ with $|h(p)|=1$ is the multiplication by $\overline h$ composed with the transposed operator, and on the space of the functions supported on the squarefree integers with $|h(p)|=1$ the operator $M_h$ is unitary.
+with $(\mathrm{Sd}_hg)(k)=\sum_m\overline{h(m)}g(mk)$; the adjoint of the multiplication by a completely multiplicative function $h$ with $|h(p)|=1$ is the multiplication by $\overline h$ composed with the transposed operator, and on the space of the functions supported on the squarefree integers with $|h(p)|=1$ the operator $M_h$ is unitary.
 
 **Proof.** The first statement is the definition of the transposed multiplication; the second is the computation for the unitary case, in which the two sums coincide after the change of variables $n\mapsto mk$. The details are in *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*.
 
@@ -71,7 +71,7 @@ The pairings fail in four degenerate configurations. First, the coefficient pair
 
 ## Summary
 
-Every $L$-function carries the coefficient Hermitian pairing $\langle f,g\rangle_\sigma=\sum_nf(n)\overline{g(n)}n^{-\sigma}$, positive definite on the functions of finite norm and invariant under the shift, whose local adjoints are the transposed multiplications $\Theta_h$; and the completed pairing $\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\frac12)$ defined by the Rankin–Selberg convolution, Hermitian, positive definite on the cuspidal part, and compatible with the conjugate symmetry up to the root number. The rank-one and primitive cases recover the classical pairings, and the degenerate cases are the divergence at the critical line, the pole of the self-convolution, the non-cuspidal Eisenstein part and the shared ramified factors.
+Every $L$-function carries the coefficient Hermitian pairing $\langle f,g\rangle_\sigma=\sum_nf(n)\overline{g(n)}n^{-\sigma}$, positive definite on the functions of finite norm and invariant under the shift, whose local adjoints are the transposed multiplications $\mathrm{Sd}_h$; and the completed pairing $\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\frac12)$ defined by the Rankin–Selberg convolution, Hermitian, positive definite on the cuspidal part, and compatible with the conjugate symmetry up to the root number. The rank-one and primitive cases recover the classical pairings, and the degenerate cases are the divergence at the critical line, the pole of the self-convolution, the non-cuspidal Eisenstein part and the shared ramified factors.
 
 ## Summary of Notation
 
@@ -79,7 +79,7 @@ Every $L$-function carries the coefficient Hermitian pairing $\langle f,g\rangle
 |---|---|
 | $\langle f,g\rangle_\sigma=\sum_nf(n)\overline{g(n)}n^{-\sigma}$ | Coefficient pairing |
 | $\mathcal{H}=\ell^2$ | Space of the form at $\sigma=0$ |
-| $\Theta_h$ | Transposed multiplication |
+| $\mathrm{Sd}_h$ | Transposed multiplication |
 | $L(f\times\bar g,s)$ | Rankin–Selberg convolution |
 | $\Lambda(f\times\bar g,s)$ | Completed convolution |
 | $\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\frac12)$ | Completed pairing |

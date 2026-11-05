@@ -122,12 +122,12 @@ so it agrees with the unsigned left multiplication on the even part and is its n
 **Proposition.** The signed sandwich of *The Signed Sandwich on an Ordered Algebra* factorises through the signed one-sided multiplications,
 
 $$
-\boxed{\;\Theta^{\alpha}_{a,b} = L^{\alpha}_a\,R_{\alpha(b)} = L_a\,R^{\alpha}_{\alpha(b)}\;} ,
+\boxed{\;\mathrm{Sd}^{\alpha}_{a,b} = L^{\alpha}_a\,R_{\alpha(b)} = L_a\,R^{\alpha}_{\alpha(b)}\;} ,
 $$
 
 and the signed conjugation of the reflection article is $\tau_a = L^{\alpha}_a R_{\alpha(a)^{-1}}$, which for a reflection element is $L^{\alpha}_aR_a$. Consequently the two-sided operator is the composition of the two one-sided operators, and the one-sided operator is the two-sided one with the other factor equal to the identity.
 
-*Proof.* $L^{\alpha}_a(R_{\alpha(b)}x) = a\,\alpha\bigl(x\,\alpha(b)\bigr) = a\,\alpha(x)\,\alpha^2(b) = a\alpha(x)b = \Theta^{\alpha}_{a,b}(x)$; the second form is the same computation with the factors exchanged. For the conjugation, $R_{\alpha(a)^{-1}}x = x\alpha(a)^{-1}$ and $\alpha(\alpha(a)^{-1}) = a^{-1}$, so $L^{\alpha}_aR_{\alpha(a)^{-1}}x = a\alpha(x)a^{-1} = \tau_a(x)$; the reflection-element identity $\alpha(a)^{-1} = a$ gives $L^\alpha_aR_a$.
+*Proof.* $L^{\alpha}_a(R_{\alpha(b)}x) = a\,\alpha\bigl(x\,\alpha(b)\bigr) = a\,\alpha(x)\,\alpha^2(b) = a\alpha(x)b = \mathrm{Sd}^{\alpha}_{a,b}(x)$; the second form is the same computation with the factors exchanged. For the conjugation, $R_{\alpha(a)^{-1}}x = x\alpha(a)^{-1}$ and $\alpha(\alpha(a)^{-1}) = a^{-1}$, so $L^{\alpha}_aR_{\alpha(a)^{-1}}x = a\alpha(x)a^{-1} = \tau_a(x)$; the reflection-element identity $\alpha(a)^{-1} = a$ gives $L^\alpha_aR_a$.
 
 ## Worked Cases
 
@@ -145,7 +145,7 @@ Let $A = \mathbb{R}[G]$ with the parity grading. The signed left multiplication 
 
 ## Summary
 
-The **signed left multiplication** $L^{\alpha}_a x = a\alpha(x)$ is the left multiplication twisted by the grade involution, and it factors as $L^{\alpha}_a = L_a\circ\Gamma = \Gamma\circ L_a$ through the grading operator; the signed right multiplication is the mirror image. The composition law is the **twisted law** $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$, whose products are **unsigned** multiplications with the twisted parameter; consequently $\bigl(L^{\alpha}_a\bigr)^2 = L_{a\alpha(a)}$ is the identity exactly when $a$ is a **reflection element**, so the signed left multiplication is an involution of the underlying vector space on the reflection elements, while it is an algebra automorphism only trivially. The **fixed elements** are the eigenvectors of $L_a$ with the parity as eigenvalue — the fixed space on the even part and the $(-1)$-eigenspace on the odd part — and the operator is positive when the grade involution preserves the cone and $a$ is positive, being the unsigned multiplication on the even part and its negative on the odd part, $L^{\alpha}_ax = \varepsilon_x L_a x$. The signed sandwich is the two-sided completion, $\Theta^{\alpha}_{a,b} = L^{\alpha}_aR_{\alpha(b)}$, and the two-sided conjugation is $\tau_a = L^{\alpha}_aR_{\alpha(a)^{-1}}$, which for a reflection element is $L^{\alpha}_aR_a$. The unsigned multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the twisted law and the reflection elements are *The Signed Sandwich on an Ordered Algebra* and *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the grading is *Superalgebras and Graded Structures*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the module version is *The Graded Action on a Module over an Ordered Algebra*; and the adjoint is *The Signed Adjoint of the Left Multiplication on an Ordered Algebra*.
+The **signed left multiplication** $L^{\alpha}_a x = a\alpha(x)$ is the left multiplication twisted by the grade involution, and it factors as $L^{\alpha}_a = L_a\circ\Gamma = \Gamma\circ L_a$ through the grading operator; the signed right multiplication is the mirror image. The composition law is the **twisted law** $L^{\alpha}_aL^{\alpha}_b = L_{a\alpha(b)}$, whose products are **unsigned** multiplications with the twisted parameter; consequently $\bigl(L^{\alpha}_a\bigr)^2 = L_{a\alpha(a)}$ is the identity exactly when $a$ is a **reflection element**, so the signed left multiplication is an involution of the underlying vector space on the reflection elements, while it is an algebra automorphism only trivially. The **fixed elements** are the eigenvectors of $L_a$ with the parity as eigenvalue — the fixed space on the even part and the $(-1)$-eigenspace on the odd part — and the operator is positive when the grade involution preserves the cone and $a$ is positive, being the unsigned multiplication on the even part and its negative on the odd part, $L^{\alpha}_ax = \varepsilon_x L_a x$. The signed sandwich is the two-sided completion, $\mathrm{Sd}^{\alpha}_{a,b} = L^{\alpha}_aR_{\alpha(b)}$, and the two-sided conjugation is $\tau_a = L^{\alpha}_aR_{\alpha(a)^{-1}}$, which for a reflection element is $L^{\alpha}_aR_a$. The unsigned multiplications are *The Left and Right Multiplication Operators on an Ordered Algebra*; the twisted law and the reflection elements are *The Signed Sandwich on an Ordered Algebra* and *Reflections as Signed Two-Sided Operators on an Ordered Algebra*; the grading is *Superalgebras and Graded Structures*; the order is *Ordered Vector Spaces and the Order Unit* and *Positive Operators on an Ordered Space*; the module version is *The Graded Action on a Module over an Ordered Algebra*; and the adjoint is *The Signed Adjoint of the Left Multiplication on an Ordered Algebra*.
 
 ## Summary of Notation
 
@@ -158,7 +158,7 @@ The **signed left multiplication** $L^{\alpha}_a x = a\alpha(x)$ is the left mul
 | $\bigl(L^{\alpha}_a\bigr)^2 = L_{a\alpha(a)}$ | Square; an involution on a reflection element |
 | $\operatorname{Fix}(L^{\alpha}_a)$ | Elements with $a\alpha(x) = x$ |
 | $L^{\alpha}_ax = \varepsilon_x L_a x$ | Parity formula |
-| $\Theta^{\alpha}_{a,b} = L^{\alpha}_aR_{\alpha(b)}$ | The signed sandwich as a two-sided completion |
+| $\mathrm{Sd}^{\alpha}_{a,b} = L^{\alpha}_aR_{\alpha(b)}$ | The signed sandwich as a two-sided completion |
 | $\tau_a = L^{\alpha}_aR_{\alpha(a)^{-1}}$ | The reflected two-sided operator |
 
 ## Further Reading

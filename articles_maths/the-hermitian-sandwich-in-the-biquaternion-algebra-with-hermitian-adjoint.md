@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the one algebra in which every object of the Hermitian theory can be written down in coordinates and checked by hand. It is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, it is isomorphic to the algebra $M_2(\mathbb{C})$ of two-by-two complex matrices, its four conjugations form the Klein four-group of *The Group of Involutions*, and the Hermitian sandwich on it is the map that produces the Lorentz transformation of *Biquaternion Rotations and Lorentz Transformations*. This article is the example article of the Hermitian-adjoint group: it takes the general results — the operator $\Theta_x$, the identities on the Clifford group, the forms, positivity, the unitary slice, complete positivity — and instantiates them in $\mathbb{B}$, so that the reader has one algebra in which all of them are visible at once.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the one algebra in which every object of the Hermitian theory can be written down in coordinates and checked by hand. It is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, it is isomorphic to the algebra $M_2(\mathbb{C})$ of two-by-two complex matrices, its four conjugations form the Klein four-group of *The Group of Involutions*, and the Hermitian sandwich on it is the map that produces the Lorentz transformation of *Biquaternion Rotations and Lorentz Transformations*. This article is the example article of the Hermitian-adjoint group: it takes the general results — the operator $\mathrm{Sd}_x$, the identities on the Clifford group, the forms, positivity, the unitary slice, complete positivity — and instantiates them in $\mathbb{B}$, so that the reader has one algebra in which all of them are visible at once.
 
 The plan is to recall the dagger of the biquaternion algebra, to identify the general sandwich with the bilinear sandwich already used in the corpus, to read off the general identities of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in the coordinates of the involution lattice, to compute the two sectors and the unitary slice, to see that the dagger of this algebra is a positive involution in the sense of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, and to identify the slice as $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$. The article carries an example and points to the corpus for the applications.
 
@@ -36,7 +36,7 @@ so ${}^{*}$ is a positive involution of $\mathbb{B}$ and $\mathbb{B}$ is in the 
 **Proposition (the sandwich is the bilinear sandwich of the corpus).** The operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* specialized to $\mathbb{B}$ is the map
 
 $$
-\boxed{\;\Theta_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)\;}
+\boxed{\;\mathrm{Sd}_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)\;}
 $$
 
 of *The Sandwich of an N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*. Its two general laws read in this algebra as the composition
@@ -45,15 +45,15 @@ $$
 \mathrm{H}_{\tilde{Q}_1\tilde Q_2} = \mathrm{H}_{\tilde{Q}_1}\circ\mathrm{H}_{\tilde Q_2},
 $$
 
-which is $\Theta_{xz} = \Theta_x\circ\Theta_z$, and the central rule
+which is $\mathrm{Sd}_{xz} = \mathrm{Sd}_x\circ\mathrm{Sd}_z$, and the central rule
 
 $$
 \mathrm{H}_{z\tilde{Q}_1} = |z|^{2}\,\mathrm{H}_{\tilde{Q}_1} \quad (z \in \mathbb{C} \text{ central}),
 $$
 
-which is $\Theta_{ax} = a\,\sigma(a)\Theta_x$ with $\sigma$ the coefficient conjugation of $\mathbb{C}$ and $a = z$, $z\,\bar{z} = |z|^{2}$. Both are the general laws and neither is special to $\mathbb{B}$.
+which is $\mathrm{Sd}_{ax} = a\,\sigma(a)\mathrm{Sd}_x$ with $\sigma$ the coefficient conjugation of $\mathbb{C}$ and $a = z$, $z\,\bar{z} = |z|^{2}$. Both are the general laws and neither is special to $\mathbb{B}$.
 
-**Remark (why the central rule is the semilinearity).** The central rule is the biquaternion shadow of the fact that $\Theta_x$ is $A$-linear in its argument and only $\sigma$-semilinear in its parameter. In $\mathbb{B}$ the scalar field is $\mathbb{C}$ and the involution on it is the complex conjugation, so the rule $|z|^{2}$ is exactly the form $a\sigma(a)$ of the general statement; this is the example that makes the correction of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* visible, since with the exponent $+1$ in place of ${}^{*}$ the rule would have been $z^{2}$ and the operator would not have been invariant under a phase.
+**Remark (why the central rule is the semilinearity).** The central rule is the biquaternion shadow of the fact that $\mathrm{Sd}_x$ is $A$-linear in its argument and only $\sigma$-semilinear in its parameter. In $\mathbb{B}$ the scalar field is $\mathbb{C}$ and the involution on it is the complex conjugation, so the rule $|z|^{2}$ is exactly the form $a\sigma(a)$ of the general statement; this is the example that makes the correction of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* visible, since with the exponent $+1$ in place of ${}^{*}$ the rule would have been $z^{2}$ and the operator would not have been invariant under a phase.
 
 ## The Two Sectors and the Sectors of the Sandwich
 
@@ -110,7 +110,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermit
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Unit and quaternion units, $\vec e_k^{2}=-1$ |
 | $\bar\cdot$, $\bar{\cdot}$, ${}^{*} = \bar\cdot\circ\bar{\cdot}$, $\flat = -{}^{*}$ | The four conjugations |
-| $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ | Bilinear sandwich, $=\Theta_{\tilde{Q}_1}$ |
+| $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ | Bilinear sandwich, $=\mathrm{Sd}_{\tilde{Q}_1}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\langle\cdot\rangle_{\natural}$ | Quaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $U \cong \mathrm{U}(2)$ | Unitary slice, $\mathrm{SU}(2)$ its determinant-one part |
