@@ -8,6 +8,8 @@ The source is Sergey Y. Kotkovskiy, *Chiral algebra of Dirac equation*, the vers
 
 The article is written to separate three things. First, **the apparatus**, which is the real contribution: the isotropic basis, the four multiplication types, the three exchange conjugations, the cyclic conjugation and the two correspondences of the Appendix are all new to the corpus, and most of them are exactly verifiable. Second, **the reformulation**, which is a genuine equivalence: the component system the author writes out is exactly the two-line chiral pair under his correspondence, and this was verified. Third, **the physical interpretations**, which are the author's speculations and are labelled as such here — the rotation transformation, the identification of spin with the cyclic operation, the superluminal variant, and the interpretation of the Hadamard array and the genetic code.
 
+**Two senses of one word.** The corpus calls two different objects *chirality*, and the title of this article uses only the second. An operator is chiral by its **side**: a cell $L_aR_b$ multiplies on the left, on the right, or on both, and that label is operator chirality (*Operator Chirality on the Biquaternion Algebra*). An element is chiral by its **value**: a declared frame supplies the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ along its axis $\vec u$, an involution of spectrum $+1,+1,-1,-1$, and every element splits into its two eigenspaces. The paper names the second, and no operator of the paper is classified by a side. The body names the object each time the word appears.
+
 The plan is the basis, then the operations on it, then the representation, then the controls. The section *What Is Verified and What Is Not* collects every recomputation and every item that could not be read faithfully.
 
 ## The Chiral Algebra
@@ -100,11 +102,23 @@ $$
 \tag{6}
 $$
 
-Two remarks fix the relation to the corpus. The coordinates (5) are the corpus's **null coordinates** on the light cone, so the isotropic basis is the light-cone basis used as a *computational basis for the Dirac problem* — a choice the corpus does not make, although it uses null bases and the null quadric elsewhere (in particular in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, where the corpus notes that "$\mathbb{B}$ is the complexified quaternion algebra and its null cone is the obstacle"). And the decomposition (4) is the light-cone writing of the corpus's **split into the two values of the subscript**: the two elements $N$ and $\bar{N}$ are the light-cone representatives of the two values, and the paper multiplies by them on the right, which is what makes its signed parts the two chiral halves. The corpus reads its own split on the left, and a left split is a **copy index**, not a value; that object plays no part in the paper, and the two must not be confused.
+Two remarks fix the relation to the corpus. The coordinates (5) are the corpus's **null coordinates** on the light cone, so the isotropic basis is the light-cone basis used as a *computational basis for the Dirac problem* — a choice the corpus does not make, although it uses null bases and the null quadric elsewhere (in particular in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, where the corpus notes that "$\mathbb{B}$ is the complexified quaternion algebra and its null cone is the obstacle"). And the decomposition (4) is the light-cone writing of the corpus's **split into the two values** of the subscript. The frame along $\vec u$ supplies the chirality cell of *Operator Chirality on the Biquaternion Algebra*, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$, and right multiplication by the two longitudinal elements is the pair of projectors
+
+$$
+\tfrac12(\mathrm I+\mathsf{V}^{\mathrm{vol}})=R_{\bar N},\qquad \tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}})=R_N,
+$$
+
+with residual zero. So the right components $\mathcal{B}\odot\bar N$ and $\mathcal{B}\odot N$ are the two values of $\mathcal{B}$. The left components are a different split, and §*Signed Biquaternions* keeps the two apart.
 
 ### Signed Biquaternions
 
-Grouping the terms of (4) the other way gives the **signed** biquaternions: a *positive* signed biquaternion is of the form $\mathcal{B}^+ = \beta\vec q^* + \eta\bar{N}$, and a *negative* one is of the form $\mathcal{B}^- = \alpha\vec q + \xi N$. Every biquaternion is the sum of one of each, $\mathcal{B} = \mathcal{B}^+ + \mathcal{B}^-$, and the signed objects are the two **right components** of (4), $\mathcal{B}^+ = \mathcal{B}\bar{N}$ and $\mathcal{B}^- = \mathcal{B}N$: multiplication on the right by the two longitudinal elements. They are the two values of the chirality of the direction $\vec u$, as the paragraph after (7b) states.
+Grouping the terms of (4) the other way gives the **signed** biquaternions: a *positive* signed biquaternion is of the form $\mathcal{B}^+ = \beta\vec q^* + \eta\bar{N}$, and a *negative* one is of the form $\mathcal{B}^- = \alpha\vec q + \xi N$. Every biquaternion is the sum of one of each, $\mathcal{B} = \mathcal{B}^+ + \mathcal{B}^-$, and the signed objects are the two **left components** of (4),
+
+$$
+\mathcal{B}^+ = \bar N\odot\mathcal{B}, \qquad \mathcal{B}^- = N\odot\mathcal{B},
+$$
+
+multiplication on the left by the two longitudinal elements, verified on the printed product (8) with residual zero. Each signed part carries one transverse and one longitudinal amplitude, which is what makes the pair the two columns of the Weyl system. The two **values** of the chirality cell are the right components and not these; the paragraph after (7b) separates the two splits.
 
 The signed biquaternions are the two classes that the **crossing product** of the next section separates, but the two classes it preserves are not the two classes just named. With $\mathcal{P}^+ = \beta\vec q^* + \eta\bar{N}$ and $\mathcal{P}^- = \alpha\vec q + \xi N$, the crossing product defined in (8) gives, for every $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta\bar{N}$,
 
@@ -122,9 +136,24 @@ $$
 
 So the crossing product preserves the classes $\{\vec q,\bar{N}\}$ and $\{\vec q^*,N\}$, and it swaps them when the signed element moves from the left to the right; that is the precise content of the reversal the source states. The classes are **not** $\mathcal{B}^+$ and $\mathcal{B}^-$ of the line above, which are $\{\vec q^*,\bar{N}\}$ and $\{\vec q,N\}$: $\mathcal{P}^+\rightsquigarrow\mathcal{B}$ returns the coefficients $\xi,\alpha$ of $\mathcal{B}^-$, placed in the $\vec q,\bar{N}$ slots. The source writes the four relations with the labels $\mathcal{B}^{\pm}_{L,R}$, and the extraction does not settle the subscript convention; the algebra gives (7a)–(7b), and the labels of the source are the ones item (ii) of *What Is Verified* discusses. The article keeps the assignment (17) below, because that is the one that carries the two values.
 
-The correspondence with the corpus is exact. The paper's $N=\tfrac12(1+\vec u)$ and $\bar N=\tfrac12(1-\vec u)$ are the light-cone elements for the direction $\vec u$, and under the dictionary that carries the paper's product into the Hamilton product, $\vec u\mapsto i\vec u$, they become the corpus's two light-cone elements. Read through the corpus's **chirality operator of the frame along $\vec u$** — the operator whose two values are the subscript, fixed in *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*, and named $\chi_u$ below — the paper's two right components are the two values: $\mathcal{B}\bar N$ carries $R$ and $\mathcal{B}N$ carries $L$. The paper's signed split is therefore **the corpus's chirality split**, and the carrier of the split is the chirality operator of the frame along $\vec u$, not a second object beside it.
+The correspondence with the corpus is exact. The paper's $N=\tfrac12(1+\vec u)$ and $\bar N=\tfrac12(1-\vec u)$ are the light-cone elements for the direction $\vec u$, and under the dictionary that carries the paper's product into the Hamilton product, $\vec u\mapsto i\vec u$, they become the corpus's two light-cone elements. The frame along $\vec u$ carries the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ of *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*, and its values on the four basis elements are
 
-What is not the same is the corpus's older **left** split. The corpus's own two light-cone elements used on the left cut the algebra into two copies of one left-handed carrier, and that split is a copy index and not chirality. The paper's signed parts are right components, and they are chirality. The two splits are different, and only the second one is the one the paper needs.
+| Element | Value | Signed part |
+|---|---|---|
+| $\vec q$ | $R$, $+1$ | $\mathcal{B}^-$ |
+| $\bar N$ | $R$, $+1$ | $\mathcal{B}^+$ |
+| $\vec q^*$ | $L$, $-1$ | $\mathcal{B}^+$ |
+| $N$ | $L$, $-1$ | $\mathcal{B}^-$ |
+
+all four at residual zero. The values are therefore the two **right** components,
+
+$$
+\mathcal{B}\odot\bar N=\alpha\vec q+\eta\bar N \quad(R), \qquad \mathcal{B}\odot N=\beta\vec q^*+\xi N \quad(L),
+$$
+
+and the two projectors of §*The Isotropic (Light) Basis* say the same thing operator by operator. The last column is the point of the section: each signed part holds one element of each value, so the two splits are transversal and neither is a relabelling of the other. The four amplitudes form a two-by-two grid, with the source's sign on one axis and the value of the cell on the other.
+
+The left split is the corpus's **Peirce** split. Multiplying on the left by $N$ and by $\bar N$ cuts $\mathbb{B}$ into the two ideals $\mathbb{B}N$ and $\mathbb{B}\bar N$, both copies of the simple left module, and the index that separates them is a copy index: the two halves are isomorphic, an automorphism of the module moves the pair, and nothing inside the algebra tells them apart (*The Pauli Module of the Biquaternion Algebra*; *The Polarized Module of the Biquaternion Algebra*). The source's signed parts are that split. They are not the chirality. The two splits touch at one point, and it is the coincidence of arrays that *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*, records: the Peirce sign of the root aligned with the axis is $P=iR_{\vec u}=-\mathsf{V}^{\mathrm{vol}}$, so its projector $\tfrac12(\mathrm I+P)$ is $R_N$, the projector onto the minus value. One root of the projective line, one coincidence, and no identity of notions.
 
 ### The Four Multiplication Types
 
@@ -203,6 +232,8 @@ $$
 
 Each is a product of two disjoint transpositions — in cycle notation $(\alpha\beta)(\xi\eta)$, $(\alpha\xi)(\beta\eta)$ and $(\alpha\eta)(\beta\xi)$ — so none of them is a single transposition, and the third is the composition of the other two. Their structural properties were verified: each is self-inverse; $\bigstar \circ \bigstar\bigstar = \bigstar\bigstar \circ \bigstar = \mathcal{B}^{\bullet}$, so applying two different ones gives the third; and the three commute pairwise.
 
+The corpus has two maps of its own that exchange sides, and neither is one of these. The **swap** $\sigma(L_aR_b)=L_bR_a$ exchanges the two slots of a cell; it is an involution, it is anti-multiplicative, and it is defined on the sixteen cells without a frame. The **natural conjugation** $\mathsf C L(a^{\natural})\mathsf C=R(a)$, with $\mathsf C=\operatorname{diag}(1,-1,-1,-1)$, carries a left multiplier to a right multiplier and reverses the units. Both are maps of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, one on the operators and the other on their arrays. The paper's three maps are neither: they act on the elements of $\mathbb{B}$ and they change the product type, and no cell is moved by them (*Operator Chirality on the Biquaternion Algebra*, §*Conjugation Exchanges the Sides*, §*The Swap of the Two Sides*).
+
 These are **not** algebra anti-automorphisms of the kind the corpus uses. The corpus's conjugations are $\mathbb{R}$-linear maps of $\mathbb{B}$ that interact with the product by reversing it; the paper's exchange conjugations are coordinate permutations of the isotropic basis, and they interact with the products of (8) by **changing the product type** rather than by reversing the order. This distinction is the substance of the author's equation
 
 $$
@@ -277,7 +308,13 @@ u = f_\alpha, \qquad v = -f_\xi, \qquad u_2 = -f_\beta, \qquad v_2 = f_\eta,
 \tag{17}
 $$
 
-so that the right-chiral state is the positive signed part and the left-chiral state the negative one: $F^- \sim \psi_L$ and $F^+ \sim \psi_R$. This is the paper's central identification, and it is correct, though not under the name the author gives it. The two signed parts are **the two values of the chirality** of the frame along $\vec u$: the value is a property of the element and of the frame, a product takes the value of its right factor, and a left multiplication keeps it (*Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*). Read there, the part $F^+$ carries $R$ and the part $F^-$ carries $L$, which is the assignment (16) and the reason it is the one kept. The corpus reaches the same two halves through the chirality operator of the frame along $\vec u$, named $\chi_u$, and through the two chiral halves of *Exercise: Chirality and the Weyl Spinors*; there is one split here and one carrier, the chirality operator. What the source calls "the sign of the component" is the value of that operator. Multiplication on the right by $\bar N$ and by $N$ selects the two values; these are the chiral halves, not a split of a carrier by left multiplication. The corpus's older left split plays no part here. The corpus's *Chiral Fermions in the Biquaternion Framework* is about a different question again — which chiral representations the framework admits — and must not be confused with the paper's "chiral algebra", which is a computational basis choice.
+so that the source's right-chiral state is its positive signed part and its left-chiral state the negative one: $F^- \sim \psi_L$ and $F^+ \sim \psi_R$. The component correspondence is exact and was verified row by row. What it is not is a statement about the corpus's chirality cell. Each signed part holds one amplitude of each value — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\xi$ carry $L$ — so neither $F^+$ nor $F^-$ is an eigen-element of $\mathsf{V}^{\mathrm{vol}}$. The values cut the same field the other way, into
+
+$$
+F\odot\bar N = \vec qf_\alpha+\bar Nf_\eta \quad(R), \qquad F\odot N = \vec q^*f_\beta+Nf_\xi \quad(L),
+$$
+
+and those are the halves that the source's mass term couples: in (20) the mass pairs $f_\alpha$ with $f_\beta$ and $f_\xi$ with $f_\eta$, that is $R$ with $L$ in both cases. So the four amplitudes form a grid, the source's sign is one index and the value of the cell the other, and the mass term flips both at once. The carrier of the value is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec u}$ of the frame along $\vec u$, a pure right multiplier, which is why it commutes with the left action of the gradient (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*); the corpus's *Exercise: Chirality and the Weyl Spinors* works the same two values on the corpus's own field. The paper's *chiral algebra* is a computational basis, and the corpus's *Chiral Fermions in the Biquaternion Framework* is about a different question again — which chiral representations the framework admits.
 
 ### The Gradients
 
@@ -346,10 +383,10 @@ one line per value. Both gradients act by left multiplication, so the pair is on
 **The two-sided single equation.** Read on the algebra itself, the same physics is one equation with a left and a right side,
 
 $$
-\tilde\nabla^{\natural}F=m\,\chi\,\bar F ,
+\tilde\nabla^{\natural}F=m\,i\,\overline{F}\,\vec e_z ,
 $$
 
-with the derivative on the left and the mass on the right, through the chirality operator $\chi$ of the corpus's frame along $\vec e_z$ (*Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*) and the coefficient conjugate $\bar F$. The mass term is antilinear; the chirality sits in the right multiplication, not in a second field.
+with the derivative on the left and the mass on the right (*An Explicit Dictionary with Conjugation in the Mass Term*) and the coefficient conjugate $\bar F$. The right factor $i\vec e_z$ is $-i\mathsf{V}^{\mathrm{vol}}$, since $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$: the mass multiplies on the right by the cell of the frame up to the phase $i$, and that cell is a pure right multiplier, which is why it commutes with the gradient (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*; *Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*). The mass term is antilinear; the chirality sits in the right multiplication, not in a second field.
 
 **The cyclic form.** The source's (19) belongs to the first family. Its two products carry the two chiralities, exactly as the two lines of the pair do; its two gradient orderings, $\bar D$ on the right of $F^-$ and $D$ on the left of $F^+$, are the two one-sided actions; and the mass sits on the right-hand side through the **cyclic conjugation** of $F$, which is a four-cycle of the coordinates and not a right multiplication by an element. It is therefore neither the two-sided equation nor a new operator: it is the chiral pair compressed into one expression, with the cyclic conjugation in place of the second field.
 
@@ -357,10 +394,10 @@ with the derivative on the left and the mass on the right, through the chirality
 |---|---|---|---|
 | Field | one element, two values | $F\in\mathbb{B}$ | $F\in\mathbb{B}$ |
 | Derivative | left, by the gradient and its conjugate | left, by the conjugate gradient | two products, $\bar D$ and $D$ |
-| Mass | off-diagonal pairing of the two values | right, $m\chi\bar F$ | right, $im\overset{\curvearrowleft}{F}$ |
-| Chirality | the two lines | the operator $\chi$ | the two signed parts, $F^\pm$ |
+| Mass | off-diagonal pairing of the two values | right, $m\,i\bar F\vec e_z$, a right multiplication by the cell | right, $im\overset{\curvearrowleft}{F}$ |
+| Chirality | the two lines | the cell $\mathsf{V}^{\mathrm{vol}}$ of the frame | the source's signed parts $F^\pm$, which are the left components |
 
-The distinction matters for reading the source's claims. The two-sided equation's chirality is the frame's operator and its mass is a right multiplication with a conjugation; in the cyclic form the chirality is the same operator, read on the two signed parts $F^\pm$, and the mass is the cyclic conjugation. The two agree on the solutions — (20) is the two-line pair — and their mass terms are not the same operator. The corpus's *The Dirac Equation in Biquaternionic Form* states the pair, and the two-sided equation is stated in *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*; the cyclic form is a third writing of the first, differing from the two-sided equation in the mass and not in the chirality.
+The distinction matters for reading the source's claims. The two-sided equation's chirality is the frame's cell and its mass is a right multiplication with a conjugation; in the cyclic form the same cell grades the field term by term — $f_\alpha$ and $f_\eta$ carry $R$, $f_\beta$ and $f_\xi$ carry $L$ — the source's two signed parts are the left components, and the mass is the cyclic conjugation. The two agree on the solutions — (20) is the two-line pair — and their mass terms are not the same operator. The corpus's *The Dirac Equation in Biquaternionic Form* states the pair, and the two-sided equation is stated in *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*; the cyclic form is a third writing of the first, differing from the two-sided equation in the mass and not in the chirality.
 
 ### The Boost and the Energy–Momentum Operators
 
@@ -443,7 +480,7 @@ The printed amplitude relations of the source are garbled in the extraction; (29
 
 ### The Spin Operators and the Spin States
 
-The spin treatment is the paper's most concrete physical addition, and it rests on a **third correspondence**, this one for the diagonal product. The author places the four coefficients in the four slots of a two-by-two array in the order fixed by (17), and under that reading the diagonal product becomes the ordinary product of arrays and the operators below become the three Pauli arrays and the identity. No array is needed for the algebra: the operators are elements, and they act on the field by the diagonal product on the left,
+The spin treatment is the paper's most concrete physical addition, and it rests on a **third correspondence**, this one for the diagonal product. The author places the four coefficients in the four slots of a two-by-two array in the order fixed by (17), and under that reading the diagonal product becomes the ordinary product of arrays and the operators below become the three Pauli arrays and the identity. No array is needed for the algebra: the operators are elements, and they act on the field by the diagonal product on the left, which is the left of the paper's diagonal product and not a composition of cells — no operator chirality is at stake in this section, and no cell of a frame enters it.
 
 $$
 S_x = -(\vec q^* + N), \qquad S_y = i(\vec q^* - N), \qquad
@@ -487,7 +524,7 @@ whose longitudinal spin vanishes, $\langle s_z\rangle = 0$: computed from its fo
 
 The author computes what the cyclic conjugation (12) becomes when the wave function is written in the Cartesian components $(f_x, f_y, f_z, f_t)$ rather than in the isotropic ones. Using the inverse of (5), the four-cycle becomes an array with entries in $\{\pm1, \pm i\}$, and the author's point is that this array is a **complex Hadamard array** $H_4$, with $H_4H_4^\dagger = 4I$ and all entries of modulus $1$; he then reads this as an informational aspect of the Dirac equation and connects it to Walsh functions, to noise-resistant coding, and to a genetic-code model he has published elsewhere.
 
-The array is printed in the paper (equation (78)), and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is, up to the overall factor $2$, exactly the array of the four-cycle (12) in the Cartesian components. Reading the four-cycle through (5), with $f_\alpha = f_x-if_y$, $f_\beta=f_x+if_y$, $f_\xi=f_t+f_z$, $f_\eta=f_t-f_z$ and the inverse $f_y=(f_\beta-f_\alpha)/(2i)$, the cycle sends $(f_x,f_y,f_z,f_t)$ to $\tfrac12 H_4\,(f_x,f_y,f_z,f_t)$, and the factor $\tfrac12$ is the one already present in (5), not a second normalisation. The variant with the **second row negated** is what the opposite sign of $f_y$, $(f_\alpha-f_\beta)/(2i)$, produces: it is the four-cycle read with a reversal of the $y$ orientation, and it is not the transformation of (12). Since negating a row preserves both Hadamard properties, both arrays are Hadamard; the printed $H_4$ is the one the four-cycle gives, and the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds. Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
+The array is printed in the paper (equation (78)), and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is, up to the overall factor $2$, exactly the array of the four-cycle (12) in the Cartesian components. Reading the four-cycle through (5), with $f_\alpha = f_x-if_y$, $f_\beta=f_x+if_y$, $f_\xi=f_t+f_z$, $f_\eta=f_t-f_z$ and the inverse $f_y=(f_\beta-f_\alpha)/(2i)$, the cycle sends $(f_x,f_y,f_z,f_t)$ to $\tfrac12 H_4\,(f_x,f_y,f_z,f_t)$, and the factor $\tfrac12$ is the one already present in (5), not a second normalisation. The variant with the **second row negated** is what the opposite sign of $f_y$, $(f_\alpha-f_\beta)/(2i)$, produces: it is the four-cycle read with a reversal of the $y$ orientation, and it is not the transformation of (12). Since negating a row preserves both Hadamard properties, both arrays are Hadamard; the printed $H_4$ is the one the four-cycle gives, and the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds. The array is a statement about the display: it is the four-cycle written in the Cartesian components, and it is not the array of the cell of the frame, which is $-iR_{\vec u}$ in every display and is diagonal only in a basis chosen to diagonalise it (*Operator Chirality on the Biquaternion Algebra*, §*The Chirality Operator of the Frame*). Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
 
 ### The Lorentz Analogue, the Rotation Transformation and the Superluminal Variant
 

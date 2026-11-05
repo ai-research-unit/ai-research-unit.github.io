@@ -66,7 +66,7 @@ Since the finite critical point of $f_c$ is $0$ and $(f_c^n)'(0) = 0$ for $n \ge
 
 **Theorem (escape radius).** If $|z| > 2$ and $|z| \geq |c|$ then $|f_c(z)| > |z|$, and $f_c^n(z) \to \infty$; moreover the orbit escapes as soon as it leaves the closed disk of radius $2$, and $M$ is contained in that disk.
 
-**Proof.** $|f_c(z)| = |z^2+c| \geq |z|^2 - |c| \geq |z|^2 - |z| = |z|(|z| - 1) > |z|$ when $|z| > 2$ and $|c| \leq |z|$. Hence the orbit from such a $z$ is increasing in modulus and escapes; in particular if $|c| > 2$ the orbit of $0$ has $|f_c(0)| = |c| > 2$ and escapes, so $M \subseteq \overline{\mathbb{D}}(0,2)$. The full escape-radius statement, with the optimal radius $R(c) = \tfrac12\bigl(1+\sqrt{1+4|c|}\bigr)$, is in *The Escape Radius and the Green's Function*.
+**Proof.** $|f_c(z)| = |z^2+c| \geq |z|^2 - |c| \geq |z|^2 - |z| = |z|(|z| - 1) > |z|$ when $|z| > 2$ and $|c| \leq |z|$. Hence the orbit from such a $z$ is increasing in modulus and escapes; in particular if $|c| > 2$ the orbit of $0$ has $|f_c(0)| = |c| > 2$ and escapes, so $M \subseteq \overline{\mathbb{U}}(0,2)$. The full escape-radius statement, with the optimal radius $R(c) = \tfrac12\bigl(1+\sqrt{1+4|c|}\bigr)$, is in *The Escape Radius and the Green's Function*.
 
 **Corollary (escape-time algorithm).** For a parameter $c$ and a bound $N$, iterate $z_{n+1} = z_n^2+c$ from $z_0 = 0$ and stop at the first $n$ with $|z_n| > 2$. If no such $n \leq N$ occurs, declare $c$ a candidate member of $M$. The algorithm is exact for the points that escape before the bound and approximate for the rest; the escape time $n(c)$ is the number of steps to leave the disk of radius $2$.
 
@@ -134,7 +134,7 @@ which is independent of which of the two roots is chosen. The cycle is attractin
 
 **Definition.** A **hyperbolic component** of $M$ is a connected component of the interior of $M$; it is **of period $p$** if the corresponding map $f_c$ has an attracting cycle of exact period $p$.
 
-**Theorem (the multiplier map).** Let $H$ be a hyperbolic component of period $p$. The **multiplier map** $\lambda : H \to \mathbb{D}$, sending $c$ to the multiplier of the attracting cycle of period $p$, is a biholomorphism onto the unit disk; in particular $H$ contains exactly one parameter at which the cycle is superattracting, the **centre**, and exactly one parameter of each multiplier, and the closure of $H$ meets the rest of $M$ in finitely many points, the **roots**, at which the cycle is parabolic with multiplier a root of unity.
+**Theorem (the multiplier map).** Let $H$ be a hyperbolic component of period $p$. The **multiplier map** $\lambda : H \to \mathbb{U}$, sending $c$ to the multiplier of the attracting cycle of period $p$, is a biholomorphism onto the unit disk; in particular $H$ contains exactly one parameter at which the cycle is superattracting, the **centre**, and exactly one parameter of each multiplier, and the closure of $H$ meets the rest of $M$ in finitely many points, the **roots**, at which the cycle is parabolic with multiplier a root of unity.
 
 **Proof sketch.** The attracting cycle depends holomorphically on $c$ by the implicit function theorem, so $\lambda$ is holomorphic; it is a proper map onto the disk, because a cycle that reaches $|\lambda| = 1$ is no longer attracting and the component is left. The properness and the normality of the family give that $\lambda$ is a finite covering of the disk; the argument principle applied to the cycle of period $p$ shows that the covering is of degree one, hence a biholomorphism. The details are the theory of the multiplier and the hyperbolic components of *The Geometry of the Julia Sets*.
 
@@ -190,7 +190,7 @@ The Mandelbrot set is contained in the closed disk of radius $2$, its real slice
 | $\mathcal{C}$, $\mu$ | Main cardioid and the multiplier of its fixed point, $c = \mu/2-\mu^2/4$ |
 | $\lambda_2(c) = 4(c+1)$ | Multiplier of the period-two cycle |
 | hyperbolic component, centre, root | Component of $\mathring M$; its superattracting parameter; the parabolic parameters on its boundary |
-| $\lambda : H \to \mathbb{D}$ | Multiplier map, a biholomorphism |
+| $\lambda : H \to \mathbb{U}$ | Multiplier map, a biholomorphism |
 | $\partial M$, antenna | Boundary of $M$; the part $\partial M \cap \mathbb{R}$ |
 | $c_\infty$ | Feigenbaum accumulation parameter of the period-doubling cascade |
 

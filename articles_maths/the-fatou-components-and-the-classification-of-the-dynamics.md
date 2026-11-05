@@ -48,7 +48,7 @@ No physics is invoked.
 
 $$\boxed{\;\varphi(f(z)) = \varphi(z)^d , \qquad \varphi(z) \sim z \ \text{as } z \to \infty\;},$$
 
-the **Böttcher coordinate**. If $K(f)$ is connected then $\varphi$ extends conformally to the whole basin of $\infty$, $A(\infty) \to \hat{\mathbb{C}} \setminus \overline{\mathbb{D}}$, and the basin of $\infty$ is simply connected.
+the **Böttcher coordinate**. If $K(f)$ is connected then $\varphi$ extends conformally to the whole basin of $\infty$, $A(\infty) \to \hat{\mathbb{C}} \setminus \overline{\mathbb{U}}$, and the basin of $\infty$ is simply connected.
 
 **Proof sketch.** Near $\infty$ the map $f$ is conjugate, by the local coordinate $w = 1/z$, to a holomorphic map tangent to $w \mapsto w^d$ at $w = 0$; the local inverse branches and the estimate $\varphi_n(z) = f^n(z)^{1/d^n}$ converge locally uniformly off $K$, defining $\varphi$ as the limit of the root $d^n$-th of the iterates. The convergence and the functional equation are the content of the theorem; the extension to the basin when $K$ is connected is the monodromy of the root along the simply connected complement. The Green's function $G = \log|\varphi|$ is the subject of *The Escape Radius and the Green's Function*.
 

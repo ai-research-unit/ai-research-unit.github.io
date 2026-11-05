@@ -136,7 +136,7 @@ in the quasi-compact and quasi-separated case, under which affinoid algebras cor
 **Example (the adic unit disc).** Let $K$ be a complete non-Archimedean field. The adic unit disc is
 
 $$
-\mathbb{D}^{\mathrm{ad}} = \operatorname{Spa}(K\langle T\rangle, \mathcal{O}\langle T\rangle),
+\mathbb{U}^{\mathrm{ad}} = \operatorname{Spa}(K\langle T\rangle, \mathcal{O}\langle T\rangle),
 $$
 
 a Tate affinoid adic space whose analytic points are the Berkovich points of the disc of *Berkovich Spaces* and whose non-analytic points are the "residue disc" points coming from the reduction. Its rational subsets $\lvert f \rvert \leq \lvert g \rvert$ give the Weierstrass, Laurent and rational domains of the rigid theory.
@@ -172,7 +172,7 @@ The **structure sheaf** assigns to a rational subset the completion of the local
 | $O_{\operatorname{Spa}(A, A^+)}$ | Structure sheaf of complete topological rings |
 | $\mathcal{H}(x)$ | Completed residue field at a point |
 | $\widehat{O_x}$ | Completed local ring at a point |
-| $\mathbb{D}^{\mathrm{ad}}$, $\mathbb{A}^{1,\mathrm{ad}}$ | The adic unit disc and the adic affine line |
+| $\mathbb{U}^{\mathrm{ad}}$, $\mathbb{A}^{1,\mathrm{ad}}$ | The adic unit disc and the adic affine line |
 | $\mathcal{O}$, $\mathrm{M}$, $k$ | Valuation ring, maximal ideal and residue field of $K$ |
 | $A \widehat{\otimes}_B C$ | Completed tensor product of Huber rings |
 

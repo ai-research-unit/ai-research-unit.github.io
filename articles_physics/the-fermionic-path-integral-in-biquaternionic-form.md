@@ -373,7 +373,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $\tilde K=i\tilde P=-E\,e_t+i\vec p$, $\tilde K\tilde K^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
 | $\mathbb{D}_p:\ (w_L,w_R)\mapsto(\tilde K\,w_R,\tilde K^{\natural}w_L)$ | Symbol of the pair operator; its square is $p^2$ times the identity, with $p^2=E^2-|\vec p|^{2}$ |
-| $\mathbb{D}:\ (\tilde\Psi_L,\tilde\Psi_R)\mapsto(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$; $\mathbb{D}^2=\Box I$ |
+| $\mathbb{D}:\ (\tilde\Psi_L,\tilde\Psi_R)\mapsto(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, that is $\mathbb{D}_{\tilde\nabla}$: the factor is the material gradient, which is why no subscript is written; $\mathbb{D}^2=\Box I$ |
 | $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$ |
 | $\mathbb{D}_{\mathrm{E}}:\ (\tilde\Psi_L,\tilde\Psi_R)\mapsto(\tilde\nabla_{\mathrm{E}}\tilde\Psi_R,\ \tilde\nabla_{\mathrm{E}}^{\natural}\tilde\Psi_L)$ | The pair read at $t'=-i\tau$; $\mathbb{D}_{\mathrm{E}}^2=\Box_{\mathrm{E}}I$ |
 | $\det(\mathbb{D}-m)=(p^2-m^2)^4=\det(\Box-m^2)$ | Determinant; the four opposite eigenvalue pairs of the pair give the fourth power of the scalar mode factor |

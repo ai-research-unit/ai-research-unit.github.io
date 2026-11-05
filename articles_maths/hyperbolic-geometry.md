@@ -71,10 +71,10 @@ $$
 
 ### The Poincaré Disk Model
 
-**Definition.** The **Poincaré disk** is the unit disk $\mathbb{D}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric
+**Definition.** The **Poincaré disk** is the unit disk $\mathbb{U}^2 = \{z \in \mathbb{C} : |z| < 1\}$ with the metric
 
 $$
-g_{\mathbb{D}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
+g_{\mathbb{U}} = \frac{4\,|dz|^2}{(1 - |z|^2)^2}.
 $$
 
 **Theorem.** The **Cayley transform**
@@ -85,7 +85,7 @@ $$
 
 is a biholomorphic isometry from the upper half-plane model onto the Poincaré disk, with inverse $C^{-1}(w) = i(1 + w)/(1 - w)$.
 
-**Proof.** The Cayley transform is a Möbius transformation carrying the real axis to the unit circle and the upper half-plane to the disk; the identity $|C'(z)|/(1 - |C(z)|^2) = 1/(2\operatorname{Im} z)$ gives $C^*(g_{\mathbb{D}}) = g$.
+**Proof.** The Cayley transform is a Möbius transformation carrying the real axis to the unit circle and the upper half-plane to the disk; the identity $|C'(z)|/(1 - |C(z)|^2) = 1/(2\operatorname{Im} z)$ gives $C^*(g_{\mathbb{U}}) = g$.
 
 **Proposition (disk distance).** For $z, w$ in the disk,
 
@@ -313,7 +313,7 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 |---|---|
 | $\mathbb{H}^n$ | Hyperbolic $n$-space; the complete simply connected model of curvature $-1$ |
 | $g = y^{-2}\sum_i dx_i^2$ | Hyperbolic metric in the upper half-plane/half-space model |
-| $g_{\mathbb{D}} = 4|dz|^2/(1-|z|^2)^2$ | Hyperbolic metric in the Poincaré disk model |
+| $g_{\mathbb{U}} = 4|dz|^2/(1-|z|^2)^2$ | Hyperbolic metric in the Poincaré disk model |
 | $C(z) = (z-i)/(z+i)$ | Cayley transform, upper half-plane $\to$ disk |
 | $\cosh d(z,w) = 1 + |z-w|^2/(2\operatorname{Im}z\operatorname{Im}w)$ | Distance in the upper half-plane model |
 | $[z_1,z_2;z_3,z_4]$ | Cross-ratio; Möbius invariant, encodes distance and endpoints |

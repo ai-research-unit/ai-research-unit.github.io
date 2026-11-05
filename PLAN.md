@@ -5,7 +5,7 @@
 
 **CHECK THE PERSISTENT MEMORY FILE BEFORE EACH MESSAGE** /home/hp/.openhands/memory/MEMORY.md
 
-**CHECK THE PLAN GENERAL RULES BEFORE EACH MESSAGE*** /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/PLAN.md
+**CHECK THE PLAN GENERAL RULES BEFORE EACH MESSAGE** /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit/PLAN.md
 
 **DO NOT CREATE OR MODIFY ANY PERSISTENT MEMORY FILE OR ANY PLAN WITHOUT APPROBAL**
 
@@ -40,7 +40,7 @@ From time to time, strip the proof-end marks :
 grep -rnE '(\$\\square\$|\\\(\\square\\\)|\$\\blacksquare\$)[ \t]*$' articles_maths articles_physics | wc -l   # expect 0
 
 ################################
-### RULES DURING THE CHATTING PHASE
+### RULES DURING THE CHATTING MODE
 ################################
 
 
@@ -64,15 +64,75 @@ When there is an issue, explain it clearly.
 Avoid verbiage, jargon, over-engineering, complacency.
 
 
+
 ################################
-### RULES DURING THE WRITING PHASE
+### RULES DURING THE QUESTION MODE
 ################################
+
+The agent reads carefully the convention articles.
+
+He focuses on the questions asked. 
+
+He reads possible related articles of the corpus.
+
+He does not waste time doing other things, checking unrelated things.
+
+The agent answers the question in plain declarative prose.
+
+Sentences are short, active, one idea per paragraph.
+
+Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+
+
+################################
+### RULES DURING THE ANALYSIS MODE
+################################
+
+The agent reads carefully the convention articles.
+
+He analyses the subject. 
+
+He reads possible related articles of the corpus.
+
+The agent does not waste time doing other things, checking unrelated things.
+
+The agent renders its analysis in plain declarative prose.
+
+Sentences are short, active, one idea per paragraph.
+
+Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+
+
+################################
+### RULES DURING THE ENRICHMENT MODE
+################################
+
+The agent reads carefully the convention articles.
+
+He reads the paper provided.
+
+He reads possible related articles of the corpus.
+
+He evaluates the potential enrichment the paper could bring to the corpus, especially the new interesting ideas. 
+
+The agent does not waste time doing other things, checking unrelated things.
+
+The agent renders the potential new ideas the paper could brig in plain declarative prose.
+
+Sentences are short, active, one idea per paragraph.
+
+Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+
+
+################################
+### RULES DURING THE WRITING MODE
+################################
+
+The agent reads carefully the convention articles.
 
 The agent reads the subject of the article to write.
 
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
-
-For example, for a physics article, among the articles to read, they are always 4 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector, Conventions in the Biquaternion Universe.
 
 If needed, the agent then gathers interesting complementary information from the internet.
 
@@ -80,7 +140,7 @@ Then the agent writes the article .md file. Here are editorial preferences :
 
  - every article starts with the title line `# __Title__`, then `## Introduction`, then thematic `##` sections, closing with `## Summary`, `## Summary of Notation`, `## Further Reading`.
 
- - give every intersection a real ### heading, define before tabulating.
+ - give every intersection a ### heading, define before tabulating.
 
  - tables are Markdown, never LaTeX array.
 
@@ -98,8 +158,10 @@ Every claim carries a warrant: a proof, a check, or a stated reading of the conv
 
 Vocabulary is plain and consistent. No filler, no flourish.
 
+The agent does not waste time doing other things, checking unrelated things.
 
-During this phase, the agent modifies the article, and the menu if necessary.
+
+Under this mode, the agent modifies the article, and the menu if necessary.
 
 In case the agent spots an obious mistake in another related article, he can also patch it, and he reports about the change implemented.
 
@@ -107,9 +169,10 @@ This requires judgment and organization.
 
 
 ################################
-### RULES DURING THE REVIEWING PHASE
+### RULES DURING THE REVIEWING MODE
 ################################
 
+The agent reads carefully the convention articles.
 
 The agent reads the article to review.
 
@@ -133,7 +196,9 @@ Every claim carries a warrant: a proof, a check, or a stated reading of the conv
 
 Vocabulary is plain and consistent. No filler, no flourish.
 
-During this phase, the agent modifies the article, and the menu if necessary.
+The agent does not waste time doing other things, checking unrelated things.
+
+Under this mode, the agent modifies the article, and the menu if necessary.
 
 In case the agent spots an obious mistake in another related article, he can also patch it, and he reports about the change implemented.
 
@@ -142,9 +207,10 @@ This requires rigor, carefulness, and suspicion to check assertions.
 
 
 ################################
-### RULES DURING THE RESEARCH PHASE
+### RULES DURING THE RESEARCH MODE
 ################################
 
+The agent reads carefully the convention articles.
 
 The agent reads the article.
 
@@ -152,6 +218,7 @@ He searches in the menus (maths.md for maths articles and physics.md for physics
 
 For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
 
+The agent does not waste time doing other things, checking unrelated things.
 
 The agent report in chat the open questions, the suggestions, the speculations contained or suggested in the article that have not been implemented so far (nothing is excluded for being unproven).
 
@@ -163,9 +230,10 @@ This requires judgment and creativity.
 
 
 ################################
-### RULES DURING THE INNOVATION PHASE
+### RULES DURING THE INNOVATION MODE
 ################################
 
+The agent reads carefully the convention articles.
 
 The agent searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
@@ -177,7 +245,9 @@ If modifications are approved by the author, he writes them.
 
 The agent respects the format of the article.
 
-During this phase, the agent modifies the article.
+The agent does not waste time doing other things, checking unrelated things.
+
+Under this mode, the agent modifies the article.
 
 In case the agent spots an obious mistake in an article, he can also patch it, and he reports about the change implemented.
 

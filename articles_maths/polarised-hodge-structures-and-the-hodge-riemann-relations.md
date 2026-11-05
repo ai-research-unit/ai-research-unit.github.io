@@ -46,7 +46,7 @@ $$
 
 so that $C^2=(-1)^{k}\,\mathrm{id}$ on $V_{\mathbb{C}}$: it is an involution for even weight and a complex structure for odd weight. It commutes with the conjugation in the sense that $C\overline{x}=\overline{Cx}$, and the Hodge structure is recovered from $C$ together with the conjugation.
 
-**Theorem.** The Hodge structures of weight $k$ on $V$ correspond to the real representations of the group $\mathbb{U}(1)$ on $V$ of the form $z\mapsto z^{n}\bar z^{m}$ on $H^{n,m}$, and the Weil operator is the value of the representation at the element $i$; the operator $C$ determines the decomposition as its eigenspaces, and $C^2=(-1)^{k}$.
+**Theorem.** The Hodge structures of weight $k$ on $V$ correspond to the real representations of the group $mathrm{U}(1)$ on $V$ of the form $z\mapsto z^{n}\bar z^{m}$ on $H^{n,m}$, and the Weil operator is the value of the representation at the element $i$; the operator $C$ determines the decomposition as its eigenspaces, and $C^2=(-1)^{k}$.
 
 **Proof.** The representation $z\mapsto z^{n-m}$ on $H^{n,m}$ has derivative data that fix the bidegree; the operator $C$ is the value at $i$, whose eigenspaces are the $H^{n,m}$ because $i^{n-m}$ takes the value $i^{r}$ on the diagonal $n-m=r$; the sum of the eigenspaces is the complexification, and the conjugation condition is the reality of the representation.
 

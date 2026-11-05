@@ -108,7 +108,7 @@ $$
 a biholomorphic map from the upper half-plane onto the unit disc
 
 $$
-\mathbb{D} = \{w \in \mathbb{C} : |w| < 1\}.
+\mathbb{U} = \{w \in \mathbb{C} : |w| < 1\}.
 $$
 
 **Theorem (The Disc Model).** The Cayley transform carries the hyperbolic metric of the half-plane to the metric
@@ -195,7 +195,7 @@ The models are explicit. The eigenline map $\zeta(\tilde\xi) = (q_y-q_x)/(q_z+i)
 | $\mathbb{H}$ | the upper half-plane | *Hyperbolic Geometry* |
 | $M(A)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
 | $w = (\zeta-i)/(\zeta+i)$ | the Cayley transform to the disc | this article |
-| $\mathbb{D}$ | the unit disc, with metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ | this article |
+| $\mathbb{U}$ | the unit disc, with metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ | this article |
 | elliptic, hyperbolic, parabolic | the three types of isometry, by the trace | *Hyperbolic Geometry* |
 | ideal boundary | the projective null cone of $V$, a circle | this article |
 | $\mathcal{Q}$ | the null quadric of the algebra, a torus | *Split-Quaternion Geometry* |

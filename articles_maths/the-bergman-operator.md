@@ -51,11 +51,11 @@ and $K(\cdot, w) \in A^2(\Omega)$ for every $w$.
 
 **Proof.** For $f \in L^2$ the function $Pf \in A^2$ is reproduced by the kernel, $(Pf)(z) = \langle Pf, K(\cdot,z)\rangle = \langle f, P K(\cdot,z)\rangle = \langle f, K(\cdot,z)\rangle$, since $K(\cdot,z) \in A^2$ is fixed by $P$ and $P$ is self-adjoint; writing the inner product as an integral gives the display.
 
-**Example (the unit disc).** For $\Omega = \mathbb{D} \subseteq \mathbb{C}$ the monomials $\sqrt{(j+1)/\pi}\,z^j$, $j \ge 0$, are an orthonormal basis of $A^2(\mathbb{D})$, and
+**Example (the unit disc).** For $\Omega = \mathbb{U} \subseteq \mathbb{C}$ the monomials $\sqrt{(j+1)/\pi}\,z^j$, $j \ge 0$, are an orthonormal basis of $A^2(\mathbb{U})$, and
 $$
-K_{\mathbb{D}}(z, w) = \frac{1}{\pi}\sum_{j\ge0}(j+1)(z\bar w)^j = \frac{1}{\pi\,(1 - z\bar w)^2} .
+K_{\mathbb{U}}(z, w) = \frac{1}{\pi}\sum_{j\ge0}(j+1)(z\bar w)^j = \frac{1}{\pi\,(1 - z\bar w)^2} .
 $$
-The kernel is positive on the diagonal, $K_{\mathbb{D}}(z,z) = \pi^{-1}(1-|z|^2)^{-2}$, and the Bergman metric it generates, $\partial\bar\partial\log K(z,z)$, is the hyperbolic metric of the disc; the metric is developed in *Hermitian Symmetric Spaces and the Bergman Metric*.
+The kernel is positive on the diagonal, $K_{\mathbb{U}}(z,z) = \pi^{-1}(1-|z|^2)^{-2}$, and the Bergman metric it generates, $\partial\bar\partial\log K(z,z)$, is the hyperbolic metric of the disc; the metric is developed in *Hermitian Symmetric Spaces and the Bergman Metric*.
 
 ## The Operator Properties of the Projection
 
@@ -94,7 +94,7 @@ $$
 
 **Proof.** The conjugation statement is that $U_F$ preserves the subspace $A^2(\Omega)$ and hence the projection onto it; the metric statement is that $\partial\bar\partial\log K(z,z)$ transforms by the modulus of the holomorphic factor, which is a holomorphic reparametrisation of the Kähler potential. The automorphism group and the metric are *Hermitian Symmetric Spaces and the Bergman Metric*.
 
-**Example (unit disc invariance check).** For $F(z) = \exp(i\theta)z$ one has $\det F' = \exp(i\theta)$ and $K_{\mathbb{D}}(F(z),F(w)) = K_{\mathbb{D}}(z,w)$, so the transformation law reads $K_{\mathbb{D}}(z,w) = \exp(i\theta)K_{\mathbb{D}}(z,w)\exp(-i\theta)$, an identity; for the disc automorphism $F(z) = \tfrac{z-a}{1-\bar a z}$ the same computation reproduces $K_{\mathbb{D}}$ and shows the invariance of the hyperbolic metric.
+**Example (unit disc invariance check).** For $F(z) = \exp(i\theta)z$ one has $\det F' = \exp(i\theta)$ and $K_{\mathbb{U}}(F(z),F(w)) = K_{\mathbb{U}}(z,w)$, so the transformation law reads $K_{\mathbb{U}}(z,w) = \exp(i\theta)K_{\mathbb{U}}(z,w)\exp(-i\theta)$, an identity; for the disc automorphism $F(z) = \tfrac{z-a}{1-\bar a z}$ the same computation reproduces $K_{\mathbb{U}}$ and shows the invariance of the hyperbolic metric.
 
 ## Summary
 

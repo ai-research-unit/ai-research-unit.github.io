@@ -95,7 +95,7 @@ and the supremum is attained, at the spectral point. In particular the supremum 
 
 ### The Unit Disc
 
-**Definition.** For the Tate algebra $K\langle T\rangle$ the Berkovich spectrum $M(K\langle T\rangle)$ is the **closed unit disc** $\mathbb{D}^1$ of the Berkovich affine line. The **Gauss point** $\zeta \in \mathbb{D}^1$ is the point whose seminorm is the Gauss norm, $\lvert f \rvert_\zeta = \lVert f \rVert_G$.
+**Definition.** For the Tate algebra $K\langle T\rangle$ the Berkovich spectrum $M(K\langle T\rangle)$ is the **closed unit disc** $\mathbb{U}^1$ of the Berkovich affine line. The **Gauss point** $\zeta \in \mathbb{U}^1$ is the point whose seminorm is the Gauss norm, $\lvert f \rvert_\zeta = \lVert f \rVert_G$.
 
 **Theorem (classification of the points of the disc).** Let $K$ be algebraically closed and complete with dense value group. Every point $x \in M(K\langle T\rangle)$ is of exactly one of the following types.
 
@@ -238,7 +238,7 @@ The theory is geometry over a valued field and uses only the norm and the valuat
 | $\mathcal{H}(x)^{\mathrm{res}}$ | Residue field at $x$ |
 | $\Gamma_x = \lvert \mathcal{H}(x)^\times \rvert$ | Value group at $x$ |
 | $\lvert \cdot \rvert_{\mathrm{sup}}$ | Spectral seminorm and spectral point |
-| $\mathbb{D}^1 = M(K\langle T\rangle)$ | Closed unit disc |
+| $\mathbb{U}^1 = M(K\langle T\rangle)$ | Closed unit disc |
 | $\zeta$ | Gauss point, $\lvert f \rvert_\zeta = \lVert f \rVert_G$ |
 | $D(a,r)$ | Closed disc of centre $a$ and radius $r$ |
 | $\mathbb{A}^{1,\mathrm{an}}$, $\mathbb{P}^{1,\mathrm{an}}$ | Berkovich affine and projective lines |
