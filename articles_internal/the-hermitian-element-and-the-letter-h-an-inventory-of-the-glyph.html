@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Element and the Letter H: An Inventory of the Glyph — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-element-and-the-letter-h-an-inventory-of-the-glyph"><strong>The Hermitian Element and the Letter H: An Inventory of the Glyph</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The element $\tilde H = h_te_t + i\vec h$ is the general Hermitian element of the biquaternion algebra. It appears in fifty-seven physics articles, where the literal $h_t$ is printed. It has two spellings, both of them in the conventions. It has no name of its own, and it is sometimes called <em>quantum H</em> in conversation.</p>
+<p>This article gives it a name, inventories the fifty-seven uses, and records the expression that each article prints. The name it recommends is <strong>the Hermitian element</strong>, with the tilde always written. The informal name <em>quantum H</em> is rejected, and §<em>The Name</em> gives the reasons.</p>
+<p><strong>What the article establishes.</strong> The definition and the two spellings, with the four numbers they carry. The three readings that the corpus gives to those numbers, and the fact that the corpus does not arbitrate between them. Seven tables that hold all fifty-seven articles, each with the expression it prints. The counts, recomputed. Five variants and defects, with the repair of the one that is a misuse of the convention. And the naming rule, with the four candidates it rejects.</p>
+<p><strong>What it does not claim.</strong> It does not claim that the element is new, and it does not claim that any of the fifty-seven uses is wrong, except where §<em>The Variants and the Defects</em> says so. It does not settle which reading of the four slots governs, because the corpus does not settle it. It adds no physics.</p>
+<p><strong>How the inventory is organised.</strong> An article appears in exactly one table, the table of its principal use. Each table names its own criterion. The rows are read with that criterion in mind: an article that defines the element and also uses it appears once, under the definition.</p>
+<p><strong>How the links work.</strong> Every link in the tables is relative to the deployed root, in the form of the corpus, <code>../articles_physics/&lt;slug&gt;.html</code>. The absolute form adds one of three prefixes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mirror</th>
+<th>prefix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Pages</td>
+<td><code>https://ai-research-unit.github.io/</code></td>
+</tr>
+<tr>
+<td>GitLab Pages</td>
+<td><code>https://a-i-research-unit.gitlab.io/</code></td>
+</tr>
+<tr>
+<td>Codeberg Pages</td>
+<td><code>https://ai-research-unit.codeberg.page/</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>So the row for <em>Quantum Physics in Biquaternionic Form</em> links to <code>../articles_physics/quantum-physics-in-biquaternionic-form.html</code>, whose direct form is <code>https://ai-research-unit.github.io/articles_physics/quantum-physics-in-biquaternionic-form.html</code>. This article is internal. It is built with the others, but it is not listed in either menu, so it is reached by its own address or by these links.</p>
+<h2 id="the-definition-and-the-two-spellings">The Definition and the Two Spellings</h2>
+<p>The definition sits in one place. <em>Algebra and Element Conventions</em>, §<em>The Hermitian and Anti-Hermitian Subspaces</em>, fixes the element as the informational part of a general biquaternion, and then renames the four coefficients in the letters of an operator:</p>
+<p>$$
+\tilde Q_{\mathrm H} = \tilde{H} = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R},
+$$</p>
+<p>and, with the vector part assembled,</p>
+<p>$$
+\tilde Q_{\mathrm H} = \tilde{H} = h_te_t + i\vec h , \qquad \vec h = h_x\vec e_x + h_y\vec e_y + h_z\vec e_z .
+$$</p>
+<p>The two lines are one element. The only difference is the distribution of the central $i$: the first writes it on each of the three vector terms, the second factors it out of their sum. Nothing else changes, and the algebra of the element is the same in both.</p>
+<p><strong>Two spellings, one object.</strong> A reader who meets one spelling in an article and the other in its companion needs no translation. The four real coefficients are the four numbers, and the central $i$ multiplies the vector part.</p>
+<p>The same conventions section states the naming rule, and it is the sentence that decides the question of this article:</p>
+<blockquote>
+<p>The tilde is required, because $H$ without it is the Hamiltonian, and $h$ without a subscript is the Planck constant.</p>
+</blockquote>
+<p>The corpus therefore already separates the two objects, and it separates them by the tilde, not by a qualifier.</p>
+<p><strong>The image.</strong> Under the $2\times2$ representation ($\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_j)=-i\sigma_j$) the element is the general Hermitian matrix,</p>
+<p>$$
+\mathsf M_2(\tilde H) = h_tI_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3 ,
+$$</p>
+<p>which is the boxed identity of <em>AI Physics Review</em> and of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>. The image is what makes the element the general observable of a two-level system, and it is the object that most of the tables below compute with.</p>
+<h2 id="the-four-numbers-and-what-they-fix">The Four Numbers and What They Fix</h2>
+<p>The four real numbers $h_t,h_x,h_y,h_z$ carry a fixed list of quantities. Every entry of the list is a statement of the algebra alone, and every entry appears somewhere in the corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar part</td>
+<td>$\mathrm{Sc}(\tilde H)=h_t$</td>
+</tr>
+<tr>
+<td>trace, in the image</td>
+<td>$\mathrm{Tr}(\tilde H)=2h_t$</td>
+</tr>
+<tr>
+<td>vector part</td>
+<td>$i\vec h$, traceless in the image</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$h_t\pm\lvert\vec h\rvert$</td>
+</tr>
+<tr>
+<td>determinant of the image</td>
+<td>$h_t^2-\lvert\vec h\rvert^2$</td>
+</tr>
+<tr>
+<td>biquaternion norm</td>
+<td>$(h_t^2-\lvert\vec h\rvert^2)e_t$, of signature $(1,3)$</td>
+</tr>
+<tr>
+<td>Hermitian norm</td>
+<td>$h_t^2+\lvert\vec h\rvert^2$</td>
+</tr>
+<tr>
+<td>square</td>
+<td>$(h_t^2+\lvert\vec h\rvert^2)e_t+2h_t\,i\vec h$</td>
+</tr>
+<tr>
+<td>positivity</td>
+<td>$\tilde H\geq0$ exactly when $h_t\geq\lvert\vec h\rvert$</td>
+</tr>
+<tr>
+<td>idempotence</td>
+<td>$h_t^2+\lvert\vec h\rvert^2=1$ and $h_t\vec h=0$</td>
+</tr>
+<tr>
+<td>Born weight against $\tilde\varrho=\tfrac12(e_t+i\vec r)$</td>
+<td>$h_t+\vec r\cdot\vec h$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The check.</strong> Each entry was recomputed on sixty real quadruples drawn at random, with the corpus product rule $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$ and the image $\mathsf M_2(\vec e_j)=-i\sigma_j$. The largest residuals were: image exact, spectrum $8.9\times10^{-16}$, trace $4.4\times10^{-16}$, determinant $1.3\times10^{-15}$, biquaternion norm $8.9\times10^{-16}$, square $1.8\times10^{-15}$, Hermitian form $1.8\times10^{-15}$, Born weight exact, thermal operator $3.2\times10^{-12}$, partition function $3.6\times10^{-12}$, internal energy $6.7\times10^{-16}$, evolution operator $1.6\times10^{-15}$. Positivity failed in no case: on all sixty, $\tilde H\geq0$ held exactly when $h_t\geq\lvert\vec h\rvert$.</p>
+<p><strong>One case against the literature.</strong> For $h_t=0.7$, $\vec h=(0.3,-0.5,0.8)$ and $\beta=1.2$ the recomputation gives $\lvert\vec h\rvert=0.9899495$, levels $1.6899495$ and $-0.2899495$, and $Z=1.547752849$. <em>The Partition Function in Biquaternionic Form</em> and <em>The Modular Hamiltonian in Biquaternionic Form</em> both print $1.547753$. The agreement is to the digits they print.</p>
+<h2 id="the-three-readings-of-the-four-slots">The Three Readings of the Four Slots</h2>
+<p>The same four slots carry three different physical readings in the corpus, and the corpus does not give a dictionary between them.</p>
+<p><strong>The coordinate reading.</strong> In the conventions the slots are the informational coordinate: $h_t=ct$ and $h_k=x'_k$, so that the element is $ct\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$. Here $h_t$ is a time and $\vec h$ a position.</p>
+<p><strong>The quantum reading.</strong> In the quantum articles the slots are an energy and a spin polarization. The spectrum $h_t\pm\lvert\vec h\rvert$ is read as two energy levels, $h_t$ as the trace part of the Hamiltonian and $\vec h$ as the splitting vector. <em>Quantum Thermodynamics in Biquaternionic Form</em> writes the partition function $Z=2\exp(-\beta h_t)\cosh(\beta\lvert\vec h\rvert)$ with exactly that reading. <em>The Zeeman and Stark Effects in Biquaternionic Form</em> writes the magnetic coupling as $\tilde H_Z=-\tfrac{\hbar\omega_L}{2}i\vec e_z$, which is the same element with $h_t=0$.</p>
+<p><strong>The image reading.</strong> In <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em> the slots are the image of a material four-vector under $-\tfrac{i}{2}$: the same element carries $h_t=\tfrac12ct'$ and $\vec h=-\tfrac12(x\vec e_x+y\vec e_y+z\vec e_z)$.</p>
+<p><strong>The gap.</strong> The first reading says that $h_t$ is a time. The second says that $h_t$ is an energy. The third says that $h_t$ is half a time, from the other sector. No article states the dictionary that would reconcile them, and no article claims that one reading excludes the others. This is the sharpest open point about the element, and it is recorded here rather than repaired: a repair would be a physical claim, and this article makes none.</p>
+<p><strong>The objection, and the answer.</strong> The objection is that a name should say which of the three readings is meant. The answer is that the algebra fixes the linear structure only, and each article supplies the reading in its own sentences. A name that carried one reading would be false in most of the tables.</p>
+<h2 id="the-inventory-seven-tables">The Inventory: Seven Tables</h2>
+<p><strong>The criterion.</strong> An article appears once, in the table of its principal use. Where an article both defines the element and computes with it, it appears under the definition.</p>
+<h3 id="table-1-the-definition">Table 1: The Definition</h3>
+<p>The five articles that fix the element, or restate the fixing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it fixes</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>the canonical definition, both spellings, the dictionary $h_t=ct$, $h_k=x'_k$</td>
+<td>$\tilde Q_{\mathrm H}=\tilde H=h_te_t+ih_x\vec e_x+ih_y\vec e_y+ih_z\vec e_z$; $\tilde H=h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a></td>
+<td>the element as the observable of $\mathbb{M}_+$, both spellings, the expanded one called "the usual writing of quantum physics"</td>
+<td>$\tilde Q_{\mathrm H}=\tilde{H}=h_te_t+i\vec h$; $\tilde H=h_te_t+ih_x\vec e_x+ih_y\vec e_y+ih_z\vec e_z$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a></td>
+<td>the quantum definition; the scalar part as the trace part, the vector part as the traceless part</td>
+<td>$\tilde H=h_te_t+ih_x\vec e_x+ih_y\vec e_y+ih_z\vec e_z$, $h_\mu\in\mathbb{R}$; $\tilde H=h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td>the element and its matrix image</td>
+<td>$\tilde H=h_te_t+ih_x\vec e_x+ih_y\vec e_y+ih_z\vec e_z\mapsto h_tI_2+h_x\sigma_1+h_y\sigma_2+h_z\sigma_3$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td>the boxed form of the digest</td>
+<td>$\mathsf M_2(\tilde H)=h_tI_2+\vec h\cdot\boldsymbol{\sigma}$, $\tilde H=h_te_t+i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-2-the-observable-and-the-born-pairing">Table 2: The Observable and the Born Pairing</h3>
+<p>The eleven articles in which the element is an observable, that is, the second argument of the Hermitian form, and the row shows the pairing or the projectors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the pairing or the decomposition</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/decoherence-as-idempotent-projection.html">Decoherence as Idempotent Projection</a></td>
+<td>the trace pairing on the sector</td>
+<td>$\mathrm{Tr}(\tilde H\tilde Q)=2(h_tQ_t+\vec h\cdot\vec Q)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html">Fundamental and Derived Elements</a></td>
+<td>the trace form on $\mathbb{M}_+$ and the expectation value</td>
+<td>$\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)$; $\mathrm{Tr}(\tilde\varrho\tilde H^{*})=h_t+\mu\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a></td>
+<td>the Born weight as the normalised Hermitian form</td>
+<td>$p=\mathrm{Sc}(\tilde\varrho\tilde H^{*})/\mathrm{Sc}(\tilde\varrho)=h_t+\vec r\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form</a></td>
+<td>the spectral decomposition and the weights</td>
+<td>$\tilde H=h_te_t+i\vec h$; $\lambda_\pm=h_t\pm\lvert\vec h\rvert$; weight $h_t+\vec r\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a></td>
+<td>the closed-form spectrum and the effect interval</td>
+<td>$\lambda_\pm=h_t\pm\lvert\vec h\rvert$; $\langle\tilde H\rangle_\natural=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material–Informational Split as a Superselection Structure</a></td>
+<td>the two parts of one element</td>
+<td>$\tilde Q_{\mathrm H}=\tilde H=h_te_t+i\vec h$; $\tilde Q_{\mathrm A}=ix_te_t+x\vec e_x+y\vec e_y+z\vec e_z$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a></td>
+<td>the observable and its eigen-idempotents</td>
+<td>$\tilde H=h_te_t+i\vec h$; $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec u_h)$; $p_\pm=\langle\tilde\Pi_{1,2},\tilde\varrho\rangle_{*}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State</a></td>
+<td>the observable as a positive functional</td>
+<td>$\langle\tilde\varrho,\tilde H\rangle_{*}/\langle\tilde\varrho,e_t\rangle_{*}=h_t+\vec r\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html">The Pauli Correspondence and the Matrix Image</a></td>
+<td>the trace reading of the pairing</td>
+<td>$\mathrm{Tr}(\mathsf M_2(\tilde\varrho)\mathsf M_2(\tilde H))=2\langle\tilde\varrho,\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit</a></td>
+<td>the observables of the qubit and the Born pairing</td>
+<td>$\tilde H=h_te_t+i\vec h$; $\langle\tilde\varrho,\tilde H\rangle_{*}/\langle\tilde\varrho,e_t\rangle_{*}=h_t+\vec r\cdot\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-sectors-split-and-the-four-bridges.html">The Two Sectors Split and the Four Bridges</a></td>
+<td>the element paired with a material element</td>
+<td>$\mathrm{Sc}(\tilde R\tilde H)=i(ct'h_t-(\vec v,\vec h))$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-3-the-hamiltonian-the-evolution-and-the-thermal-operator">Table 3: The Hamiltonian, the Evolution and the Thermal Operator</h3>
+<p>The eleven articles in which the element generates something: the unitary flow, the commutator bracket, the thermal weight, or the perturbation added to a Hamiltonian. The column shows the generated object.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what is generated</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework</a></td>
+<td>the thermal weight and its partition function</td>
+<td>$\tilde H=h_te_t+i\vec h$; $Z=2\exp(-\beta h_t)\cosh(\beta\lvert\vec h\rvert)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible–Irreversible Dichotomy</a></td>
+<td>the one-parameter group</td>
+<td>$\tilde Q(t')=\exp(-ih_tt'/\hbar)(\cos(\lvert\vec h\rvert t'/\hbar)e_t+\sin(\lvert\vec h\rvert t'/\hbar)\vec u_h)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a></td>
+<td>the thermal state and the potentials</td>
+<td>$Z=2\exp(-\beta h_t)\cosh(\beta\lvert\vec h\rvert)$; $E=h_t-\lvert\vec h\rvert\tanh x$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes between the Poisson Bracket and the Quantum Commutator</a></td>
+<td>the commutator bracket</td>
+<td>$[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases</a></td>
+<td>the band structure and its degeneracy</td>
+<td>$\lambda_\pm=h_t\pm\lvert\vec h\rvert$; degeneracy exactly when $\vec h=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a></td>
+<td>the central phase of the trace part</td>
+<td>$\tilde Q(t')=\exp(-ih_tt'/\hbar)(\cos(\lvert\vec h\rvert t'/\hbar)e_t+\sin(\lvert\vec h\rvert t'/\hbar)\vec u_h)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian</a></td>
+<td>the modular generator</td>
+<td>$\tilde K^{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$; $\mathrm{Sc}(\tilde K^{\mathrm{mod}})=\beta h_t+\log Z$; $\vec a=\beta\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a></td>
+<td>the thermal operator</td>
+<td>$\exp(-\beta\tilde H)=\exp(-\beta h_t)(\cosh(\beta\lvert\vec h\rvert)e_t-i\sinh(\beta\lvert\vec h\rvert)\vec u_h)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td>the unitary flow and its generator</td>
+<td>$\tilde{H}=h_te_t+i\vec h\in\mathbb{M}_+$; $-i\tilde H=(\vec h-ih_te_t)/\hbar$; $\tilde Q(t')=\exp(-ih_tt'/\hbar)(\cos\theta\,e_t+\sin\theta\,\vec u_h)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html">The Unstable State and the Complex Energy Pole</a></td>
+<td>the non-Hermitian continuation</td>
+<td>$\tilde H=h_te_t+i\vec h$, $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zeeman-and-stark-effects-in-biquaternionic-form.html">The Zeeman and Stark Effects</a></td>
+<td>the two couplings</td>
+<td>$\tilde H_Z=-\tfrac{\hbar\omega_L}{2}i\vec e_z$; $\tilde H_S=-dE\,i\vec e_x$; general $\tilde H=h_te_t+i\vec h$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-4-positivity-the-cone-and-the-two-norms">Table 4: Positivity, the Cone and the Two Norms</h3>
+<p>The ten articles in which the element is measured by the biquaternion norm, or tested for positivity. The row shows the form that is evaluated.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the form</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/excitation-mode-function-and-the-informational-sector.html">Excitation Mode Function and the Informational Sector</a></td>
+<td>the norm on the sector, indefinite</td>
+<td>$\langle h_te_t+i\vec h\rangle_\natural=h_t^2-\lvert\vec h\rvert^2$, signature $(1,3)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>the norm of the rotated element</td>
+<td>$H=h_te_t+i\vec h$; $\langle V\rangle_\natural=\langle iH\rangle_\natural=-\langle H\rangle_\natural=-h_t^2+\lvert\vec h\rvert^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html">POVMs and the Positive Cone</a></td>
+<td>the positive cone</td>
+<td>$\tilde H\geq0\iff h_t\geq\lvert\vec h\rvert$; $\langle\tilde H\rangle_\natural=h_t^2-\lvert\vec h\rvert^2=\det M(\tilde H)$; $C_+=\{h_te_t+i\vec h: h_t\geq\lvert\vec h\rvert\}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td>the norm that the flow does not preserve</td>
+<td>$N(\tilde Q(t'))=\tilde Q(t')\tilde Q^{\natural}(t')=\exp(-2ih_tt'/\hbar)e_t\neq e_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td>the norm, the cone and the image of a material vector</td>
+<td>$h_t=\tfrac12ct'$, $\vec h=-\tfrac12(x\vec e_x+y\vec e_y+z\vec e_z)$; $\tilde H\geq0\iff h_t^2-\lvert\vec h\rvert^2\geq0$ and $h_t\geq0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.html">The Generalized Bloch Ball for Spin 1</a></td>
+<td>the same norm in the reference case</td>
+<td>$\langle\tilde H\rangle_\natural=h_t^2-\lvert\vec h\rvert^2$, positive elements are the closed future cone</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-krein-form-and-the-indefinite-structure.html">The Krein Form and the Indefinite Structure</a></td>
+<td>the value of the norm on each quaternion subspace</td>
+<td>$h_t^2-\lVert\vec h\rVert^2$, signature $(1,3)$ on both</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality</a></td>
+<td>the value of the norm and its null cone</td>
+<td>$\langle\tilde H\rangle_\natural=(h_t^2-\lvert\vec h\rvert^2)e_t$, signature $(1,3)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/von-neumann-entropy-and-the-biquaternion-norm.html">Von Neumann Entropy and the Biquaternion Norm</a></td>
+<td>the norm as the determinant</td>
+<td>$\langle\tilde H\rangle_\natural=h_t^2-\lvert\vec h\rvert^2=\det M(\tilde H)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do</a></td>
+<td>the null elements</td>
+<td>$\langle h_te_t+i\vec h\rangle_\natural=(h_t^2-\lvert\vec h\rvert^2)e_t$, null at $\tilde H=e_t+i\vec e_x$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-5-the-spectrum-the-trace-and-the-matrix-image">Table 5: The Spectrum, the Trace and the Matrix Image</h3>
+<p>The six articles in which the four numbers are read off the spectrum or carried to the $2\times2$ image.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the reading</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a></td>
+<td>the image over the three vector coefficients</td>
+<td>$\mathsf M_2(h_te_t+i\sum_k h_k\vec e_k)=h_tI_2+\sum_k h_k\sigma_k$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>the correspondence of the image with the element</td>
+<td>$h_tI_2+\vec h\cdot\boldsymbol{\sigma}\leftrightarrow h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy</a></td>
+<td>the spectrum and the half-gap</td>
+<td>$h_t+i\vec h$; eigenvalues $h_t\mp\lvert\vec h\rvert$; half-gap $\lvert\vec h\rvert$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/roots-idempotents-and-observables.html">Roots, Idempotents and Observables</a></td>
+<td>the square and the root condition</td>
+<td>$\tilde H^2=(h_t^2+\lvert\vec h\rvert^2)e_t+2h_t\,i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module</a></td>
+<td>the entry-by-entry image</td>
+<td>$M(\tilde H)=h_tI_2+h_x\sigma_1+h_y\sigma_2+h_z\sigma_3$, the general Hermitian $2\times2$ matrix</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wigner-eckart-theorem-and-tensor-operators-in-biquaternionic-form.html">The Wigner–Eckart Theorem and Tensor Operators</a></td>
+<td>the rank decomposition</td>
+<td>$\tilde H=h_te_t+iv_k\vec e_k$, a rank-$0$ term and a rank-$1$ term</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-6-the-central-case">Table 6: The Central Case</h3>
+<p>The six articles in which the vector part vanishes, or is written so that it can be dropped, and the coefficient is a scalar or an operator on scalars. The row shows the Hamiltonian.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the object</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a></td>
+<td>the central Hamiltonian with a space-dependent coefficient</td>
+<td>$H=\left[-\frac{\hbar^2}{2m}\frac{d^2}{dx^2}+V(x)\right]e_t=h_t(x)e_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
+<td>the factorisation of a central operator</td>
+<td>$\tilde H=h_te_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets</a></td>
+<td>the central free Hamiltonian</td>
+<td>$H=h_te_t$, $h_t=-\frac{\hbar^2}{2m}\nabla^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">The Hydrogen Atom, Non-Relativistic Case</a></td>
+<td>the central Coulomb Hamiltonian</td>
+<td>$H=\left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t=h_te_t$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom, Relativistic Case</a></td>
+<td>the central Hamiltonian that the corrections break</td>
+<td>$\tilde H=h_te_t$, whose vanishing vector part makes the spin a spectator</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html">The Vacuum State and the Casimir Effect</a></td>
+<td>the trace part as a central scalar</td>
+<td>the trace part $h_t$ of a Hamiltonian is a central scalar, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="table-7-the-element-printed-once">Table 7: The Element Printed Once</h3>
+<p>The eight articles that print the element once, in a read list or a summary table, and compute nothing with its coefficients. The row shows the context of the single print.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the context</th>
+<th>expression as printed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/exercise-measuring-spin-along-an-arbitrary-direction.html">Exercise: Measuring Spin Along an Arbitrary Direction</a></td>
+<td>the summary table</td>
+<td>$\tilde H=h_te_t+i\vec h$, "Hermitian element (observable)"</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M+</a></td>
+<td>the read list</td>
+<td>$\mathbb{M}_+$ consists of the elements $\tilde H=h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames</a></td>
+<td>the summary table</td>
+<td>$\mathbb{M}_+$: $h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html">The Classical Harmonic Oscillator and the Two-Sector Structure</a></td>
+<td>the summary table</td>
+<td>$\mathbb{M}_+$: $h_te_t+i\vec h$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td>the summary table</td>
+<td>$\tilde H=h_te_t+i\vec h$, "Hermitian element (observable)"</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td>the state hyperplane</td>
+<td>$\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td>the summary table</td>
+<td>$\tilde H=h_te_t+i\vec h$; Born weight $h_t+\vec r\cdot\vec h$; norm $h_t^2-\lvert\vec h\rvert^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment</a></td>
+<td>the read list</td>
+<td>the observables are $\tilde H=h_te_t+i\vec h\in\mathbb{M}_+$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-counts">The Counts</h2>
+<p>The seven tables hold five, eleven, eleven, ten, six, six and eight rows, which is fifty-seven. The recomputation of the spelling counts gives the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics articles printing $h_t$</td>
+<td>57</td>
+</tr>
+<tr>
+<td>printing $\tilde H$ anywhere</td>
+<td>56</td>
+</tr>
+<tr>
+<td>printing the compact form $i\vec h$</td>
+<td>50</td>
+</tr>
+<tr>
+<td>printing the four terms with a separate $i$ on each</td>
+<td>3</td>
+</tr>
+<tr>
+<td>printing the parenthesised sum $i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>printing $h_t$ with at least one of the three vector spellings</td>
+<td>47</td>
+</tr>
+<tr>
+<td>printing $h_t$ with no vector spelling at all</td>
+<td>10</td>
+</tr>
+<tr>
+<td>printing $h_x$</td>
+<td>11</td>
+</tr>
+<tr>
+<td>printing the general element without the tilde</td>
+<td>1</td>
+</tr>
+<tr>
+<td>mathematics articles using $h$ for a real quaternion</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the numbers do not add up.</strong> The spelling counts are per spelling, and six files print two of them. The three that print the four-term form are <em>Algebra and Element Conventions</em>, <em>Introduction to the Biquaternion Universe</em> and <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>; the last of them also prints the parenthesised sum. Within the fifty-seven the union is forty-seven, and ten files print $h_t$ in a product with $\vec h$ but never the compact $i\vec h$.</p>
+<p><strong>What lies outside the fifty-seven.</strong> The inventory is scoped to the literal spelling. One further article writes the element with subscripted coefficients only, $\tilde H_1=h_{1t}e_t+i\vec h_1$: <a href="../articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-independence-not-a-defect.html">The Biquaternion Framework and the Canonical Commutation Relation</a>. Two more write $i\vec h$ under the same tilde without ever naming $h_t$: <a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a> and <a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a>. The object is the same in all three; only the naming of the coefficients differs, and no table above needed changing to accommodate it.</p>
+<p><strong>The mathematics side.</strong> Six mathematics articles use $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ for a <em>real quaternion</em>, with no central $i$. The four subscripts are the same and the object is not: one is a quaternion and the other a Hermitian biquaternion. The count matters for the naming question of the last section.</p>
+<h2 id="the-variants-and-the-defects">The Variants and the Defects</h2>
+<p>Five things are recorded here. One is a misuse of the convention, two are tolerances, and two are reuses of a letter.</p>
+<p><strong>D1. The general element without the tilde.</strong> <em>Exercise: Chirality and the Weyl Spinors</em> writes "Write $H = h_te_t + i\vec h$" and then computes its norm. The element has a vector part, so it is not the Hamiltonian, and the conventions require the tilde. The repair is one character: $H$ becomes $\tilde H$ in that sentence. The other three untilded occurrences of the shape $H=h_te_t$ are correct, because they are the Hamiltonian: <em>The Free Particle and Wave Packets</em> twice, and <em>The Hydrogen Atom, Non-Relativistic Case</em> once.</p>
+<p><strong>D2. A temporal index on a spatial sum.</strong> <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> prints the summary row $\tilde H=h_te_t+ih_\mu\vec e_\mu$. The index runs over the three spatial units, since the scalar term is written separately, while the corpus uses $\mu$ for the four slots, as in $Q_\mu$ and in the same article's $\partial/\partial Q_\mu$. The reading is unambiguous from the sum, and the row would read $ih_k\vec e_k$ to match. This is a blemish of labelling, not of content.</p>
+<p><strong>D3. An operator where a real number is declared.</strong> Three articles put a differential operator in the scalar slot: $h_t=-\frac{\hbar^2}{2m}\nabla^2$ in <em>The Free Particle and Wave Packets</em>, $h_t=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ in <em>The Hydrogen Atom, Non-Relativistic Case</em>, and $h_t=h_t(x)$ in <em>One-Dimensional Scattering</em>. The declared domain $h_t\in\mathbb{R}$ is then false. The usage works because the operator is central: it commutes with every biquaternion, so every algebraic identity of the four numbers survives the substitution. The corpus does not say this anywhere, and the three articles rely on it.</p>
+<p><strong>D4. The letter reused with a subscript.</strong> Four articles write $\tilde H_{\mathrm{pos},l}$ for the positive factor of a Kraus operator, a different object that happens to be Hermitian. The subscript separates it, and no confusion arises. It is recorded because the glyph is the same and an inventory should say so.</p>
+<p><strong>D5. The letter $h$ is overloaded four times.</strong> It is the Planck constant in the conventions' own sentence. It is the trace of the metric perturbation, $h=g^{\mu\nu}h_{\mu\nu}$, in <em>Linearized Gravity in Biquaternionic Form</em> and <em>Gravitational Waves in Biquaternionic Form</em>. It is the areal constant, $h=L/m$, in <em>Central Forces and the Classical Kepler Problem</em>. And it is a generic real quaternion in the six mathematics articles of §<em>The Counts</em>. The four overloads are the reason the name of this article's subject cannot be built on the letter $h$.</p>
+<h2 id="the-name">The Name</h2>
+<p><strong>The type name.</strong> The element is <em>the Hermitian element of the biquaternion algebra</em>, and that name is true in every row of the seven tables. The symbol is $\tilde H$. When the coordinate reading is meant, the corpus also writes $\tilde Q_{\mathrm H}$, and the two symbols denote the same element under two readings of the slots.</p>
+<p><strong>Adopted for the project on 2026-11-05, and not yet applied.</strong> The symbol $\tilde H$ retires, and the element is written $\tilde{R}_H$, the informational half of one position $\tilde R$. The name <em>the Hermitian element</em> survives and the single-letter symbol does not. Nothing in the corpus has changed yet. §<em>The Project Migration</em> records it and its cost, and the tables above describe the corpus as it still stands, with $\tilde H$ and $\tilde Q_{\mathrm H}$ both printed.</p>
+<p><strong>The role names must be earned by the use.</strong> The corpus already names the roles in its sentences, and the names are not interchangeable. The element is <em>the Hamiltonian</em> when it generates a flow by $\exp(-i\tilde Ht'/\hbar)$. It is <em>an observable</em> when it is paired with a state by the Hermitian form. It is <em>the central Hamiltonian</em> when $\vec h=0$. It is <em>a coupling</em> when it is added to a Hamiltonian, as in the Zeeman and Stark article. The letters of the neighbouring roles are already taken: states are $\tilde\varrho$, effects are $\tilde E$, idempotents are $\tilde\Pi$.</p>
+<p><strong>The coefficient names.</strong> The corpus has settled these. $h_t$ is <em>the scalar coefficient</em>, and $h_te_t$ is <em>the trace part</em>; $\vec h$ is <em>the vector part</em>, and $i\vec h$ is <em>the traceless part</em>; $h_x,h_y,h_z$ are <em>the vector coefficients</em>. When the splitting direction matters, the corpus writes $\vec u_h=\vec h/\lvert\vec h\rvert$ and calls it the axis.</p>
+<p><strong>The four candidates rejected.</strong></p>
+<p><em>Quantum H.</em> The qualifier does not separate the two objects, because the Hamiltonian is quantum as well. The string does not occur in the corpus: the only matches of "quantum H" are "quantum Hall", "quantum Hawking" and "quantum Hamilton–Jacobi". And the conventions separate the two by the tilde in one sentence, which is a rule the corpus already follows everywhere but once.</p>
+<p><em>$H$ alone.</em> The conventions reserve it for the Hamiltonian, and three articles use it that way.</p>
+<p><em>$h$ alone.</em> It carries the four overloads of D5.</p>
+<p><em>The h-element.</em> It builds a name on the most overloaded letter available, and the six mathematics articles make $h$ mean a quaternion element. A reader of the corpus who meets "the h-element" must first decide which of five objects is meant.</p>
+<p><strong>The recommended usage.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>context</th>
+<th>name to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the type, in a definition or a summary</td>
+<td>the Hermitian element $\tilde H$</td>
+</tr>
+<tr>
+<td>the coordinate reading</td>
+<td>the informational element $\tilde Q_{\mathrm H}$</td>
+</tr>
+<tr>
+<td>generating an evolution</td>
+<td>the Hamiltonian $\tilde H$</td>
+</tr>
+<tr>
+<td>paired with a state</td>
+<td>the observable $\tilde H$</td>
+</tr>
+<tr>
+<td>with $\vec h=0$</td>
+<td>the central Hamiltonian $h_te_t$</td>
+</tr>
+<tr>
+<td>added to a Hamiltonian</td>
+<td>the coupling $\tilde H_Z$, $\tilde H_S$</td>
+</tr>
+<tr>
+<td>the four numbers</td>
+<td>the coefficients $h_t$ and $\vec h$</td>
+</tr>
+<tr>
+<td>the two parts</td>
+<td>the trace part $h_te_t$ and the traceless part $i\vec h$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The strongest objection.</strong> The objection is that "the Hermitian element" names a subspace and not a physics, so it tells the reader nothing about what the object does. The answer is that the object plays four roles across the fifty-seven articles, and a name that committed to one of them would be false in the other tables. The corpus's own practice is to name the role in the sentence and to keep the symbol neutral. This article follows that practice, and rejects the one candidate that pretends to a physics the element does not always have.</p>
+<h2 id="summary">Summary</h2>
+<p>The element is $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, the general element of $\mathbb{M}_+$. It is written in two spellings, and they differ only in where the central $i$ sits.</p>
+<p>Its four numbers fix the trace $2h_t$, the spectrum $h_t\pm\lvert\vec h\rvert$, the determinant $h_t^2-\lvert\vec h\rvert^2$, the positivity $h_t\geq\lvert\vec h\rvert$, and the Born weight $h_t+\vec r\cdot\vec h$. Every one of these was recomputed on sixty random quadruples with residuals at the rounding level.</p>
+<p>Fifty-seven physics articles print it. They fall into seven groups: five define it, eleven use it as an observable, eleven as a generator, ten as a norm or a positivity test, six as a spectrum, six in the central case, and eight print it once.</p>
+<p>The four slots carry three readings in the corpus, the coordinate reading, the energy-and-spin reading, and the image of a material four-vector. The corpus gives no dictionary between them, and this article records the gap instead of repairing it.</p>
+<p>The name to use is the Hermitian element $\tilde H$, with the role named in the sentence. <em>Quantum H</em> is rejected, and the letter $h$ cannot carry the name, because it already means the Planck constant, the metric trace, the areal constant and a real quaternion.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the units, $e_t=1$ and $\vec e_k^2=-e_t$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central scalar imaginary, $i^2=-e_t$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian sectors</td>
+</tr>
+<tr>
+<td>$\tilde H$</td>
+<td>the general Hermitian element</td>
+</tr>
+<tr>
+<td>$h_t$</td>
+<td>its scalar coefficient, the trace part</td>
+</tr>
+<tr>
+<td>$\vec h=(h_x,h_y,h_z)$</td>
+<td>its vector part, the traceless part</td>
+</tr>
+<tr>
+<td>$\lvert\vec h\rvert$</td>
+<td>the norm of the vector part</td>
+</tr>
+<tr>
+<td>$\vec u_h$</td>
+<td>$\vec h/\lvert\vec h\rvert$, the axis</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the $2\times2$ matrix image</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}$</td>
+<td>the trace, $2\,\mathrm{Sc}$ in the image</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_\natural$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_*$</td>
+<td>the Hermitian form</td>
+</tr>
+<tr>
+<td>$\tilde\varrho$</td>
+<td>a state, $\tfrac12(e_t+i\vec r)$ in the qubit case</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{1,2}(\vec u)$</td>
+<td>the eigen-idempotents, $\tfrac12(e_t\pm i\vec u)$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm$</td>
+<td>the eigenvalues $h_t\pm\lvert\vec h\rvert$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table records the notation of the seven tables. The project migration below replaces $\tilde H$ by $\tilde{R}_H$ and the coefficient letters by a single position letter $r$ with subscripts, so a reader of the plan should read every row of this table as pre-migration.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, §<em>The Hermitian and Anti-Hermitian Subspaces</em>, for the definition, the two spellings, the dictionary $h_t=ct$, $h_k=x'_k$ and the rule about the tilde.</li>
+<li><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, §<em>Observables</em>, for the quantum definition, the trace part and the traceless part.</li>
+<li><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a>, §<em>The 2×2 Matrix Representation</em>, for the image and the Born pairing on the module.</li>
+<li><a href="../articles_physics/the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the spectrum, the trace and the positive cone in one place.</li>
+<li><a href="the-pair-operator-an-inventory-of-the-glyph.html">The Pair Operator: An Inventory of the Glyph</a>, for the method this article follows: one glyph, its carriers, its counts and its defects.</li>
+<li><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a>, for the image reading of the four slots and the identity of the two cones.</li>
+</ul>
+<h2 id="the-project-migration-one-position-math289-and-its-two-halves">The Project Migration: One Position $\tilde R$ and Its Two Halves</h2>
+<p><strong>Status.</strong> Adopted for the project on 2026-11-05, in the $\tilde R$ form with one flat position letter. <strong>Not yet applied.</strong> No file in <code>articles_physics</code> has been edited, so every count below is current and every symbol below is still printed where it always was. The two carrier lists of §<em>The Carriers</em> are the work list.</p>
+<p><strong>The migration in one line.</strong> One symbol for position, $\tilde R$, read as the position in the biquaternion space. Its two halves are written $\tilde{R}_H$ and $\tilde{R}_A$. $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ are not introduced, and $\tilde H$ retires.</p>
+<p><strong>One letter, eight subscripts.</strong> The position is written with $r$ and a subscript that names the coordinate, so a slot is $r_u+i r_{u'}$ and never $u+iu'$ with the axis letter standing alone.</p>
+<h3 id="the-object">The Object</h3>
+<p>$\mathbb{B}$ has eight real dimensions, so a point of it carries eight real numbers. In four flat slots with complex values, the general point is</p>
+<p>$$ \tilde R=(r_t+i r_{t'})\,e_t+(r_x+i r_{x'})\,\vec e_x+(r_y+i r_{y'})\,\vec e_y+(r_z+i r_{z'})\,\vec e_z , $$</p>
+<p>and its Hermitian and anti-Hermitian parts are the two coordinates:</p>
+<p>$$ \tilde{R}_H=r_t\,e_t+i\bigl(r_{x'}\vec e_x+r_{y'}\vec e_y+r_{z'}\vec e_z\bigr)\in\mathbb{M}_+ $$</p>
+<p>$$ \tilde{R}_A=i\,r_{t'}\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\in\mathbb{M}_- $$</p>
+<p>Each complex slot carries one real coordinate from each sector. Writing $\vec{r}_H=(r_{x'},r_{y'},r_{z'})$ and $\vec{r}_A=(r_x,r_y,r_z)$, the two halves are</p>
+<p>$$ \tilde{R}_H=r_t\,e_t+i\,\vec{r}_H\!\cdot\vec e $$</p>
+<p>$$ \tilde{R}_A=i\,r_{t'}\,e_t+\vec{r}_A\!\cdot\vec e $$</p>
+<p><strong>The prime marks the space of the other half.</strong> In the time slot the unprimed coordinate is informational and the primed one material; in the three space slots it is the other way round. The asymmetry is not a slip. It is the signature that the two halves carry with opposite signs, and no assignment of primes to slots avoids it.</p>
+<h3 id="what-the-scheme-gives">What the Scheme Gives</h3>
+<p>Seven results follow from the definitions alone. Each was recomputed on forty random real octuples, and each residual was at the rounding level.</p>
+<p><strong>1. The halves are the real and the imaginary part, and the star is the reflection.</strong> The Hermitian conjugation satisfies $\tilde{R}_H^{*}=\tilde{R}_H$ and $\tilde{R}_A^{*}=-\tilde{R}_A$, so the point and its conjugate give</p>
+<p>$$ \tilde R^{*}=\tilde{R}_H-\tilde{R}_A, \qquad \tilde{R}_H=\tfrac12\bigl(\tilde R+\tilde R^{*}\bigr), \qquad \tilde{R}_A=\tfrac12\bigl(\tilde R-\tilde R^{*}\bigr). $$</p>
+<p>The star is therefore a reflection in the material half, and the two coordinates are its eigenspaces. No sentence is needed to say which part is which; the conjugation says it.</p>
+<p><strong>2. The matrix image is all of $M_2(\mathbb{C})$.</strong> The eight images of the eight real parameters — $I_2$, $iI_2$, the three $\sigma_k$ and the three $-i\sigma_k$ — are a real basis of $M_2(\mathbb{C})$. So $\tilde R$ is the general complex $2\times2$ matrix, $\tilde{R}_H$ its Hermitian part and $\tilde{R}_A$ its anti-Hermitian part. The corpus's image of an observable is the Hermitian half of a general matrix, which is a standard fact that the single symbol now makes visible.</p>
+<p><strong>3. The determinant is the biquaternion norm.</strong> With the complex slots $Q_t=r_t+i r_{t'}$ and $Q_k=r_k+i r_{k'}$, the image satisfies $\det\mathsf M_2(\tilde R)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, which is $\langle\tilde R\rangle_\natural$. On the two halves it splits into two real Minkowski forms of opposite sign.</p>
+<p><strong>4. Each half carries a Minkowski form, with opposite signs.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>half</th>
+<th>biquaternion norm</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{R}_H=r_t e_t+i\vec{r}_H$</td>
+<td>$\langle\tilde{R}_H\rangle_\natural=r_t^2-\lvert\vec{r}_H\rvert^2$</td>
+<td>the interval of the informational half, signature $(1,3)$ on $(r_t,\vec{r}_H)$</td>
+</tr>
+<tr>
+<td>$\tilde{R}_A=i r_{t'}e_t+\vec{r}_A$</td>
+<td>$\langle\tilde{R}_A\rangle_\natural=-r_{t'}^2+\lvert\vec{r}_A\rvert^2$</td>
+<td>the interval of the material half, the negative of the same form</td>
+</tr>
+<tr>
+<td>$\tilde R$</td>
+<td>$\mathrm{Re}\,\langle\tilde R\rangle_\natural=\langle\tilde{R}_H\rangle_\natural+\langle\tilde{R}_A\rangle_\natural$</td>
+<td>the two intervals add</td>
+</tr>
+<tr>
+<td>$\tilde R$</td>
+<td>$\mathrm{Im}\,\langle\tilde R\rangle_\natural=2\bigl(r_t r_{t'}+\vec{r}_H\cdot\vec{r}_A\bigr)$</td>
+<td>the cross term, which no single half carries</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two rows are the reason the scheme is worth having. The norm of a position is complex, and its imaginary part is twice the Euclidean pairing of the two four-vectors. A form that is real on each half is not real on the whole, and the whole is where the two sectors meet.</p>
+<p><strong>5. The two halves pair by the Minkowski product.</strong> The scalar part of the mixed product is</p>
+<p>$$ \mathrm{Sc}\bigl(\tilde{R}_A\tilde{R}_H\bigr)=i\bigl(r_t r_{t'}-\vec{r}_A\cdot\vec{r}_H\bigr), $$</p>
+<p>which is $i$ times the interval between $(r_t,\vec{r}_A)$ and $(r_{t'},\vec{r}_H)$. The pairing of the two coordinates is therefore the Minkowski inner product and not a norm, and it surfaces as a scalar part. The corpus states the same identity for an observable and a material element, $\mathrm{Sc}(\tilde R\tilde H)=i(r_th_{t'}-(\vec v,\vec h))$, and the scheme supplies the sentence that explains it.</p>
+<p><strong>6. Multiplication by $i$ turns one half into the other.</strong> $i\tilde{R}_A=-r_{t'}e_t+i\vec{r}_A\in\mathbb{M}_+$ and $i\tilde{R}_H=i r_te_t-\vec{r}_H\in\mathbb{M}_-$. On the slots the map is a quarter turn, $(r_t,r_{t'})\mapsto(-r_{t'},r_t)$ and $(r_k,r_{k'})\mapsto(-r_{k'},r_k)$. The exchange of sectors is therefore the rotation that the phase of a wavefunction generates.</p>
+<p><strong>7. The idempotents are null positions.</strong> $\det\mathsf M_2(\tilde R)=0$ exactly when the image has rank one. The normalised rank-one idempotents are $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\lvert\vec u\rvert=1$, which are $\tilde{R}_H$ at $r_t=\tfrac12$ and $\vec{r}_H=\pm\tfrac12\vec u$. The pure states are therefore the null elements of the informational half, and the Bloch ball is the normalised slice of their cone, as <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em> already states.</p>
+<h3 id="two-consequences-for-the-corpus">Two Consequences for the Corpus</h3>
+<p><strong>The old $\tilde R$ survives as a slice.</strong> Today $\tilde R$ is the material coordinate. Under the scheme it is $\tilde{R}_A$, which is the case $\tilde{R}_H=0$, that is $r_t=0$ and $\vec{r}_H=0$. The old object is a special case of the new one, not a different object behind the same name. This is the strongest argument for the scheme: a reader with the old habit reads $\tilde R$ as a position and is right, whereas $\tilde Q$ would ask the same reader to learn a symbol that names a subspace and carries no position at all.</p>
+<p><strong>A point of $\mathbb{B}$ is not a point of spacetime.</strong> Eight real coordinates, not four. The two halves are two four-planes through the origin, and a world line picks one of them. The scheme does not merge the two spacetimes; it names the eight-dimensional space in which both sit.</p>
+<h3 id="the-dictionary">The Dictionary</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>$\tilde{R}_H$</th>
+<th>$\tilde{R}_A$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>time</td>
+<td>$r_t$, real: the informational time</td>
+<td>$i r_{t'}$, imaginary: the material time</td>
+</tr>
+<tr>
+<td>space</td>
+<td>$i\vec{r}_H$, imaginary: the informational space</td>
+<td>$\vec{r}_A$, real: the material space</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One letter serves both halves, so the conventions need no dictionary.</strong> Today the conventions must say $h_t=ct$ and $h_k=x'_k$, because $\tilde H$ and $\tilde R$ are different letters. Under the flat scheme both halves are $r$ with a subscript, and the slot names are the coordinate names. The paragraph of the conventions that mapped the two alphabets can be deleted, not rewritten.</p>
+<p><strong>The operator reading keeps $h_t$ and $\vec h$.</strong> A quantum article reads the informational half as an energy and a splitting, not as a position, and writes $\tilde{R}_H=h_te_t+i\vec h$ with $h_t\equiv r_t$ and $\vec h\equiv\vec{r}_H$. That identity is the whole of the remaining dictionary, and §<em>One Open Point</em> is the one place where it fails.</p>
+<h3 id="the-cost-of-the-flat-letter">The Cost of the Flat Letter</h3>
+<p>$r_x,r_y,r_z$ are not free. The corpus already writes the Bloch vector with exactly those components.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>what it already means</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec r$</td>
+<td>the Bloch vector of a state, $\tilde\varrho=\tfrac12(e_t+i\vec r)$</td>
+<td>1717 in 104 files</td>
+</tr>
+<tr>
+<td>$\vec r=(r_x,r_y,r_z)$</td>
+<td>the same vector, spelled out in components</td>
+<td>6 in 2 files</td>
+</tr>
+<tr>
+<td>$r_t$, $r_{t'}$, $r_{x'}$, $r_{y'}$, $r_{z'}$</td>
+<td>nothing</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the radius</td>
+<td>4006 in 232 files</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these are cheap and one is not.</p>
+<p><strong>The component spelling costs two lines.</strong> Two files write $\vec r=(r_x,r_y,r_z)$, and one idempotent is printed $\tfrac12(e_t+i\vec r_x)$. They become $(\vec r)_x$ and so on, or the components are not spelled out. After that edit, $r$ with a subscript of $x,y,z$ always means a position component, and $\vec r$ with an arrow always means the Bloch vector.</p>
+<p><strong>The bare $r$ is the residue.</strong> The radius keeps the plain letter, so $r$ alone is a length and $r_t$ is a coordinate. The rule that keeps this readable is one sentence and it must be in the conventions: the position letter is never printed bare. It always carries a subscript, and a bare $r$ is a length. The alternative is to move the radius to $\rho$, which costs 3259 occurrences in 190 files, and the plan does not propose it.</p>
+<p><strong>Nothing else moves.</strong> $\hslash$, the Planck constant $h$, the metric trace, the areal constant $h=L/m$, the quaternion $h$ of the mathematics folder, the magnetic field $\vec H$, the Bloch vector $\vec r$ and the radius $r$ all stay. The new letter is used only in the subscripts $t,t',x,x',y,y',z,z'$, and the corpus prints none of them today except the six component spellings.</p>
+<h3 id="one-open-point">One Open Point</h3>
+<p>The operator reading is asserted and not derived. The conventions write $\tilde{R}_H=r_te_t+i\vec{r}_H$, the quantum articles read the same element with $h_t$ as an energy under $\exp(-iHt'/\hslash)$, and <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em> reads it through $\tilde{R}_H=-\tfrac{i}{2}\tilde{R}_A$, that is $r_t=\tfrac12r_{t'}$ and $\vec{r}_H=-\tfrac12\vec{r}_A$.</p>
+<p>Two namings of one element cost nothing while the symbols differ, and they cost a contradiction once both are written as $\tilde{R}_H$. The factor of two and the dimension of $h_t$ must be settled in the conventions before the $\tilde H$ passes begin. This scheme does not create the difficulty; it removes the notation that was hiding it.</p>
+<h3 id="what-changes-and-how-much">What Changes, and How Much</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>retired</th>
+<th>files</th>
+<th>occurrences</th>
+<th>replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde R$</td>
+<td>53</td>
+<td>665</td>
+<td>$\tilde{R}_A$</td>
+</tr>
+<tr>
+<td>$\tilde R_0$, $\tilde R_{0,1}$, $\tilde R_{0,2}$, $\tilde R_1$, $\tilde R_2$</td>
+<td>6</td>
+<td>127</td>
+<td>$\tilde{R}_{A,0}$ and so on</td>
+</tr>
+<tr>
+<td>$\tilde H$ in a definition</td>
+<td>27</td>
+<td>60</td>
+<td>$\tilde{R}_H$</td>
+</tr>
+<tr>
+<td>$\tilde H$ in the operator role</td>
+<td>56</td>
+<td>890</td>
+<td>$H$</td>
+</tr>
+<tr>
+<td>$\tilde H_Z$, $\tilde H_S$, $\tilde H_0$, $\tilde H_R$, $\tilde H_{ab}$, $\tilde H_m$, $\tilde H_{OAT}$, $\tilde H_{\mathrm H}$, $\tilde H_i$</td>
+<td>8</td>
+<td>86</td>
+<td>$H_Z$, $H_S$, $H_0$, $H_R$, and so on</td>
+</tr>
+<tr>
+<td>the conventions' dictionary $h_t=ct$, $h_k=x'_k$</td>
+<td>2</td>
+<td>3</td>
+<td>deleted: one letter serves both halves</td>
+</tr>
+<tr>
+<td>$\vec r=(r_x,r_y,r_z)$</td>
+<td>2</td>
+<td>6</td>
+<td>$(\vec r)_x$ and so on, so the subscripts are free</td>
+</tr>
+<tr>
+<td>prose naming the two coordinates</td>
+<td>35</td>
+<td>—</td>
+<td>rewritten, not substituted</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-carriers">The Carriers</h3>
+<p>Exactly two symbols move, and these are the files that print them. The counts are occurrences, and a numbered subscript counts once, so $\tilde R_0$ adds one to the $\tilde R$ column.</p>
+<p><strong>The 53 articles that print $\tilde R$.</strong> The column on the right records the $\tilde H$ count of the same file, because eleven articles print both and those are the ones where the two renamings meet.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>article</th>
+<th style="text-align: right;">$\tilde R$</th>
+<th style="text-align: right;">$\tilde H$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html">The Poincaré Group and the Biquaternion Frame</a></td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><a href="../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a></td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a></td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a></td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html">Exercise: Four-Momentum Conservation in a Collision</a></td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><a href="../articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><a href="../articles_physics/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><a href="../articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><a href="../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html">The Effective Optical Metric of the Local Complex Structure</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><a href="../articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><a href="../articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><a href="../articles_physics/the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td><a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td><a href="../articles_physics/the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html">The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><a href="../articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html">The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td><a href="../articles_physics/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">41</td>
+<td><a href="../articles_physics/the-action-principle-and-the-classical-limit-as-stationary-phase-in-biquaternionic-form.html">The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">42</td>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">43</td>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">44</td>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">45</td>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">46</td>
+<td><a href="../articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">47</td>
+<td><a href="../articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html">The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">48</td>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">49</td>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: right;">50</td>
+<td><a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">51</td>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">52</td>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">53</td>
+<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The 56 articles that print $\tilde H$.</strong> The eleven files that also print $\tilde R$ are the intersection of the two lists: <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, <em>Introduction to the Biquaternion Universe</em>, <em>The Material-Informational Split as a Superselection Structure</em>, <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, <em>The Klein–Gordon Equation in Biquaternionic Form</em>, <em>The Quantum–Relativity Tension and the Biquaternion Framework</em>, <em>AI Physics Review</em>, <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em>, <em>Larmor Precession and the Classical Magnetic Moment</em>, <em>The Empirical Status of the Biquaternion Framework</em>, <em>The Relativistic Qubit in Biquaternionic Form</em>. Those eleven are edited twice, in P3 and in P6, and they are the files a partially finished migration would leave inconsistent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: right;">#</th>
+<th>article</th>
+<th style="text-align: right;">$\tilde H$</th>
+<th style="text-align: right;">$\tilde R$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a></td>
+<td style="text-align: right;">147</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible/Irreversible Dichotomy</a></td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td><a href="../articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html">Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td><a href="../articles_physics/the-zeeman-and-stark-effects-in-biquaternionic-form.html">The Zeeman and Stark Effects in Biquaternionic Form</a></td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td><a href="../articles_physics/magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form.html">Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</a></td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td><a href="../articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a></td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html">POVMs and the Positive Cone in Biquaternionic Form</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td><a href="../articles_physics/von-neumann-entropy-and-the-biquaternion-norm.html">Von Neumann Entropy and the Biquaternion Norm</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td><a href="../articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.html">Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td><a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td><a href="../articles_physics/exercise-measuring-spin-along-an-arbitrary-direction.html">Exercise: Measuring Spin Along an Arbitrary Direction</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td><a href="../articles_physics/exercise-spin-precession-in-a-magnetic-field.html">Exercise: Spin Precession in a Magnetic Field</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><a href="../articles_physics/exercise-the-correlation-function-of-the-bell-states.html">Exercise: The Correlation Function of the Bell States</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td><a href="../articles_physics/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">31</td>
+<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">32</td>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">33</td>
+<td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">34</td>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">35</td>
+<td><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">36</td>
+<td><a href="../articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">37</td>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">38</td>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">39</td>
+<td><a href="../articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-independence-not-a-defect.html">The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">40</td>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">41</td>
+<td><a href="../articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.html">The Lyapunov Exponent and Information Loss in the Biquaternion Framework</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">42</td>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">43</td>
+<td><a href="../articles_physics/decoherence-as-idempotent-projection.html">Decoherence as Idempotent Projection</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">44</td>
+<td><a href="../articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M+</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">45</td>
+<td><a href="../articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">46</td>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">47</td>
+<td><a href="../articles_physics/the-aharonov-casher-effect-in-biquaternionic-form.html">The Aharonov–Casher Effect in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">48</td>
+<td><a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">49</td>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">50</td>
+<td><a href="../articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.html">Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">51</td>
+<td><a href="../articles_physics/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">52</td>
+<td><a href="../articles_physics/the-double-slit-experiment-in-biquaternionic-form.html">The Double-Slit Experiment in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">53</td>
+<td><a href="../articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html">The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">54</td>
+<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">55</td>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">56</td>
+<td><a href="../articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the two lists together say.</strong> Ninety-eight articles carry a retiring symbol, out of 411 in the category, and together they hold 1615 occurrences, which is $665+950$. The heaviest five — <em>Quantum Physics in Biquaternionic Form</em> at 147, <em>The Schrödinger Equation</em> at 92, <em>The Poincaré Group</em> at 86, <em>The Bloch Ball</em> at 80, <em>The Born Rule</em> at 72 — carry 477 of them, just under a third of the work in five files. A first session can be planned on those five alone, and it would settle the conventions of the new alphabet on the pages where they are most used.</p>
+<h3 id="the-passes">The Passes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pass</th>
+<th>scope</th>
+<th>rule</th>
+<th>files</th>
+<th>edits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0</td>
+<td>freeze</td>
+<td>tag the tree, record the counts of this section</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>the Bloch components</td>
+<td>$\vec r=(r_x,r_y,r_z)$ becomes $(\vec r)_x$ and so on, freeing the subscripts</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>conventions</td>
+<td>declare $\tilde R$ as the position, $\tilde{R}_H$ and $\tilde{R}_A$ as its halves, the subscript alphabet, the rule that a bare $r$ is a length, and the open point</td>
+<td>1</td>
+<td>—</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>$\tilde R$ in equations</td>
+<td>mechanical, the subscript folded into the label</td>
+<td>53</td>
+<td>665</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>$\tilde R$ in prose</td>
+<td>the 35 articles that name the material coordinate</td>
+<td>35</td>
+<td>—</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>the dictionary paragraph</td>
+<td>delete it; state $h_t\equiv r_t$ in the operator reading instead</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>$\tilde H$ in definitions</td>
+<td>$\tilde H\to\tilde{R}_H$ where the element is a coordinate</td>
+<td>27</td>
+<td>60</td>
+</tr>
+<tr>
+<td>P7</td>
+<td>$\tilde H$ in the operator role</td>
+<td>$\tilde H\to H$ where the element generates a flow</td>
+<td>56</td>
+<td>890</td>
+</tr>
+<tr>
+<td>P8</td>
+<td>rebuild and publish</td>
+<td>the gates below</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>P1, the small pass that comes first.</strong> It is six strings in two files, and it must precede the conventions, because the conventions cannot declare $r_x$ to be a position component while two articles use it for a Bloch component. It is the only edit in the plan that changes an existing meaning rather than a letter.</p>
+<p><strong>P3, the mechanical pass.</strong> <code>\tilde R</code> and <code>\tilde{R}</code> become <code>\tilde{R}_A</code>. Two shapes need care and both are countable. A following subscript, 127 occurrences, enters the label as <code>\tilde{R}_{A,0}</code>, because <code>\tilde{R}_A_0</code> renders as a double subscript. The natural conjugate, 46 occurrences of $\tilde R^{\natural}$ and 66 of $\langle\tilde R\rangle_\natural$, keeps its mark, and the material interval reads $\langle\tilde{R}_A\rangle_\natural=\lvert\vec{r}_A\rvert^2-r_{t'}^2$.</p>
+<p><strong>P7, the editorial pass.</strong> The mechanical step converts the 890 occurrences to $\tilde{R}_H$; the reading step returns the operator uses to $H$. An occurrence is the Hamiltonian when it sits in $\exp(-iHt'/\hslash)$, $\exp(-\beta H)$, $H\lvert\psi\rangle$ or a commutator, 19 shapes in all. It is the coordinate when it sits in a definition, in $\tilde{R}_H+\tilde{R}_A$, or in a matrix image. The rest is decided from the sentence.</p>
+<p><strong>P4, the prose pass.</strong> <em>Material coordinate</em> becomes <em>material coordinate $\tilde{R}_A$</em>. <em>Material four-position</em> becomes the same, or <em>the position $\tilde{R}_A$ of a world line</em>. <em>The two coordinates</em> stays, because the phrase was never wrong.</p>
+<h3 id="the-work-lists">The Work Lists</h3>
+<p>Every pass that touches files, with its list. A link opens the article as it stands, so a worker sees the passage before editing it. P3 and P7 are the 53 and the 56 of §<em>The Carriers</em>; the lists here are the finer cuts, the files where a mechanical rule alone does not decide the edit. The lists here name 75 distinct articles. Written out in full, P3 and P7 carry 53 and 56, and the migration touches 98.</p>
+<p><strong>P1 — 2 articles, 6 occurrences.</strong> The pass that comes first, because it frees the subscripts $r_x$, $r_y$, $r_z$ from the Bloch vector before the conventions claim them for a position.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it prints</th>
+<th style="text-align: right;">occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+<td>$\vec r=(r_x,r_y,r_z)$</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-holevo-bound-and-accessible-information-in-biquaternionic-form.html">The Holevo Bound and Accessible Information in Biquaternionic Form</a></td>
+<td>$\vec r_x$, a Bloch vector</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>P3 — the 6 articles where a subscript follows the glyph, 127 occurrences.</strong> The index enters the label, $\tilde R_0\to\tilde{R}_{A,0}$, because $\tilde{R}_A_0$ renders as a double subscript. These six carry every such occurrence in the corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html">The Poincaré Group and the Biquaternion Frame</a></td>
+<td style="text-align: right;">86</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html">Exercise: Four-Momentum Conservation in a Collision</a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>P4 — 35 articles, 52 occurrences of the prose phrase.</strong> The phrase is <em>material coordinate</em> or <em>material four-position</em>, and the edit is local: name the element beside the phrase. The list is alphabetical by title, for the worker, not by count.</p>
+<p><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, <a href="../articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a>, <a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>, <a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>, <a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, <a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>, <a href="../articles_physics/frame-conventions.html">Frame Conventions</a>, <a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, <a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>, <a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>, <a href="../articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a>, <a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>, <a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a>, <a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, <a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>, <a href="../articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html">The Biquaternion Space, the Group of Involutions and the Six Subspaces</a>, <a href="../articles_physics/the-coulomb-path-integral-and-the-duru-kleinert-transformation-in-biquaternionic-form.html">The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form</a>, <a href="../articles_physics/the-four-general-products-composition-probability-causality-gauge.html">The Four General Products: Composition, Probability, Causality, Gauge</a>, <a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>, <a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a>, <a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>, <a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, <a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>, <a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a>, <a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>, <a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a>, <a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a>, <a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a>, <a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a>, <a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a>, <a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></p>
+<p><strong>P5 — 2 articles, 3 occurrences.</strong> The dictionary sentence $h_t=ct$ is deleted and the identity $h_t\equiv r_t$ is stated in the operator reading instead. It precedes P6, or a coordinate sentence keeps the old letter.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>P6 — 27 articles, 60 occurrences.</strong> The definition $\tilde H=h_te_t+i\vec h$ is the mark. In each of these the glyph is a coordinate and becomes $\tilde{R}_H$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible/Irreversible Dichotomy</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-measuring-spin-along-an-arbitrary-direction.html">Exercise: Measuring Spin Along an Arbitrary Direction</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M+</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html">POVMs and the Positive Cone in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zeeman-and-stark-effects-in-biquaternionic-form.html">The Zeeman and Stark Effects in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/von-neumann-entropy-and-the-biquaternion-norm.html">Von Neumann Entropy and the Biquaternion Norm</a></td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>P7 — 13 articles, 30 occurrences where the operator shape prints.</strong> These are the files where $H$ is the Hamiltonian and the glyph must not survive as a coordinate symbol. The remaining 43 of the 56 carry $\tilde H$ in prose or in a symbol list, with no operator shape, and are read one sentence at a time.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">occurrences</th>
+<th>shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td>$\exp(-\beta H)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td style="text-align: right;">4</td>
+<td>$\exp(-\beta H)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</a></td>
+<td style="text-align: right;">4</td>
+<td>$[H,\cdot]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-path-integral-in-biquaternionic-form.html">The Schrödinger Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td style="text-align: right;">3</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-spin-precession-in-a-magnetic-field.html">Exercise: Spin Precession in a Magnetic Field</a></td>
+<td style="text-align: right;">2</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td>$[H,\cdot]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets in Biquaternionic Form</a></td>
+<td style="text-align: right;">2</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a></td>
+<td style="text-align: right;">1</td>
+<td>$[H,\cdot]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td style="text-align: right;">1</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td>$\exp(-iHt'/\hslash)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td>$[H,\cdot]$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a></td>
+<td style="text-align: right;">1</td>
+<td>$\exp(-\beta H)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="collision-register">Collision Register</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>hazard</th>
+<th>cause</th>
+<th>guard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{R}_A_0$</td>
+<td>subscript kept outside the label</td>
+<td>place it inside, as <code>,0</code></td>
+</tr>
+<tr>
+<td>$\vec H$</td>
+<td>dropping a tilde and keeping the arrow</td>
+<td>never substitute a tilde symbol without the diagonal</td>
+</tr>
+<tr>
+<td>$r_x$ as a Bloch component</td>
+<td>the two files of P1 not edited first</td>
+<td>P1 precedes the conventions</td>
+</tr>
+<tr>
+<td>a bare $r$ read as a position</td>
+<td>the position letter printed without a subscript</td>
+<td>the conventions state that a bare $r$ is a length</td>
+</tr>
+<tr>
+<td>$\vec r^{\,\prime}$ as a position vector</td>
+<td>borrowing the arrowed Bloch letter</td>
+<td>the space vectors are $\vec{r}_H$ and $\vec{r}_A$</td>
+</tr>
+<tr>
+<td>$H$ where a coordinate is meant</td>
+<td>the split applied too widely</td>
+<td>the coordinate is always $\tilde{R}_H$</td>
+</tr>
+<tr>
+<td>$\tilde{R}_H$ where the Hamiltonian is meant</td>
+<td>the split applied too narrowly</td>
+<td>the operator is always $H$</td>
+</tr>
+<tr>
+<td>$h_t$ in a coordinate sentence</td>
+<td>P5 done after P6</td>
+<td>P5 precedes P6</td>
+</tr>
+<tr>
+<td>a quaternion $h$ renamed</td>
+<td>the mathematics folder shares the letter</td>
+<td>the mathematics folder is out of scope</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What must not change.</strong> The build, the two menus, the deploy folder and the article slugs. The plan renames symbols, not files, so no link changes and no redirect is needed.</p>
+<h3 id="the-gates">The Gates</h3>
+<p><strong>G1, the counts.</strong> Over <code>articles_physics</code>: $\tilde H$ prints 0 times, $\tilde R$ prints only as $\tilde{R}_A$ or $\tilde{R}_H$, $h_t=ct$ prints 0 times, and $r$ with a subscript of $x,y,z$ prints only as a position component. The counts are those of §<em>The Counts</em>, recomputed with the same pattern before and after.</p>
+<p><strong>G2, the build.</strong> <code>build.py</code> completes with no warning, and <code>_reserve/convention_check.py</code> reports no new finding.</p>
+<p><strong>G3, the rendering.</strong> Every changed display is opened in the built page, not read in the source. A double subscript and a lost tilde are invisible in the source and obvious on the page, and $r_t$ against $r_{t'}$ is a difference of one prime.</p>
+<p><strong>G4, the prose.</strong> Each of the 56 articles is read once for the sentences that named the symbol, because a substitution cannot repair a sentence such as <em>the tilde is required, because $H$ without it is the Hamiltonian</em>, which becomes false the moment the tilde is retired.</p>
+<p><strong>G5, the invariance.</strong> The numbers do not move. Every display keeps its value: $Z=1.547753$ in the two thermal articles, $\langle\tilde{R}_A\rangle_\natural=\lvert\vec{r}_A\rvert^2-r_{t'}^2$, and $[\tilde{R}_{H,1},\tilde{R}_{H,2}]=-2(\vec h_1\times\vec h_2)$.</p>
+<p><strong>G6, the links.</strong> The three mirrors serve the same slugs, so no absolute link changes, and the internal article stays out of both menus.</p>
+<h3 id="order-effort-and-rollback">Order, Effort and Rollback</h3>
+<p><strong>Order.</strong> P0, then P1 and P2, because the subscripts must be free before the conventions claim them. P3 and P4 next, because the material half is independent of the open point. P5 before P6, because the dictionary decides what $\tilde{R}_H$ means. P7 last.</p>
+<p><strong>Effort.</strong> P1 is six strings. P3 is 665 edits in 53 files and takes one session with a script and a rendering check. P7 is 890 edits in 56 files, of which 19 shapes are mechanical and the rest need a sentence, so it is the long pole: about fifteen minutes a file. P4 is prose in 35 files. P5 is one deleted paragraph and one sentence.</p>
+<p><strong>Rollback.</strong> One commit per pass. P1, P3, P5 and P6 reverse by the inverse substitution, which is exact because the target strings do not occur in the corpus except where the migration put them. P7 does not reverse by substitution, so it is committed per article, and a bad article is restored from the tag. The tag is the only thing that must be made before the first edit.</p>
+<h3 id="acceptance">Acceptance</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>criterion</th>
+<th>measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>one symbol for position</td>
+<td>$\tilde R$ prints only as $\tilde{R}_H$ or $\tilde{R}_A$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>one letter for both halves</td>
+<td>every slot is $r_u+i r_{u'}$, and no slot is written with the axis letter alone</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the halves are the conjugation eigenspaces</td>
+<td>$\tilde{R}_H=\tfrac12(\tilde R+\tilde R^{*})$ and $\tilde{R}_A=\tfrac12(\tilde R-\tilde R^{*})$ hold in the conventions</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the subscripts are unambiguous</td>
+<td>a bare $r$ is a length, and $r_x$ is a position component in every file</td>
+</tr>
+<tr>
+<td>5</td>
+<td>no retired letter</td>
+<td>$\tilde H$ prints 0 times</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the algebra is unchanged</td>
+<td>G5 holds on every display</td>
+</tr>
+<tr>
+<td>7</td>
+<td>the corpus builds and the readers are not broken</td>
+<td>G2 and G6 hold</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
