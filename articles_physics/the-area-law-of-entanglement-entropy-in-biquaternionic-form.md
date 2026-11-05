@@ -62,11 +62,11 @@ The bound is sharp for states that saturate it, and it is the reason local groun
 
 ### Matrix-Product States
 
-The same content is expressed by the matrix-product representation. A chain state of **bond dimension** $\chi$ has
+The same content is expressed by the matrix-product representation. A chain state of **bond dimension** $\xi$ has
 $$
-S_A\le 2\log\chi
+S_A\le 2\log\xi
 $$
-for an interval $A$, and the bound is saturated when the transfer matrices are injective. The bond dimension is the number of states the entanglement across a bond can carry: a bond of dimension $\chi$ carries at most $\log\chi$ nats, and an interval's two boundaries carry at most $2\log\chi$ in total. The biquaternion chain has $\chi=2$, the dimension of the one-particle module, so each boundary contributes at most $\log2$ and an interval at most $2\log2$.
+for an interval $A$, and the bound is saturated when the transfer matrices are injective. The bond dimension is the number of states the entanglement across a bond can carry: a bond of dimension $\xi$ carries at most $\log\xi$ nats, and an interval's two boundaries carry at most $2\log\xi$ in total. The biquaternion chain has $\xi=2$, the dimension of the one-particle module, so each boundary contributes at most $\log2$ and an interval at most $2\log2$.
 
 The area law is thus the statement that the entanglement of a local state lives on the boundary, with at most $\log(\text{bond dimension})$ per boundary bond. That statement is exact in finite dimension, and it is the framework's version of the law.
 
@@ -88,10 +88,10 @@ where $|\partial A|$ is the number of bonds between $A$ and its complement, toge
 
 The simplest local state that attains the bound is the product of nearest-neighbour Bell pairs — a **dimer state** — in which each pair is maximally entangled and different pairs are uncorrelated. For four sites, label the pairs $(1,2)$ and $(3,4)$ and take
 $$
-\rho=\big|\Phi^+\big\rangle\big\langle\Phi^+\big|_{(1,2)}
-\ \otimes\ \big|\Phi^+\big\rangle\big\langle\Phi^+\big|_{(3,4)},
+\rho=\big|Ξ^{+}\big\rangle\big\langleΞ^{+}\big|_{(1,2)}
+\ \otimes\ \big|Ξ^{+}\big\rangle\big\langleΞ^{+}\big|_{(3,4)},
 \qquad
-\big|\Phi^+\big\rangle=\frac{1}{\sqrt2}\big(|00\rangle+|11\rangle\big).
+\big|Ξ^{+}\big\rangle=\frac{1}{\sqrt2}\big(|00\rangle+|11\rangle\big).
 $$
 Because the two dimers are uncorrelated, the entropy of a region is the number of dimers the region cuts, times $\log2$: a dimer that lies entirely inside or entirely outside contributes nothing, and a dimer that is cut contributes its full $\log2$.
 
@@ -120,7 +120,7 @@ Since the entropy of a state never exceeds the logarithm of its rank,
 $$
 S_A\ \le\ \log\mathrm{rank}\,\rho_A\ \le\ |\partial A|\log2,
 $$
-which is the discrete area law. The boundary appears and the volume does not because only the boundary bonds enter the rank bound. With a module of dimension $\chi$ the same argument gives $S_A\le|\partial A|\log\chi$, and the bound is attained when the boundary ancillas are maximally mixed and uncorrelated and each of them belongs to a bond the region cuts — the situation the dimer state realizes wherever its boundary bonds are the dimers it cuts. The framework's contribution to the area law is this rank argument: the entropy per boundary bond is bounded by the logarithm of the dimension of the module that carries the bond.
+which is the discrete area law. The boundary appears and the volume does not because only the boundary bonds enter the rank bound. With a module of dimension $\xi$ the same argument gives $S_A\le|\partial A|\log\xi$, and the bound is attained when the boundary ancillas are maximally mixed and uncorrelated and each of them belongs to a bond the region cuts — the situation the dimer state realizes wherever its boundary bonds are the dimers it cuts. The framework's contribution to the area law is this rank argument: the entropy per boundary bond is bounded by the logarithm of the dimension of the module that carries the bond.
 
 A state of the same four sites drawn at random would have $S_A\simeq\min(|A|,4-|A|)\log2$ nats at leading order — a volume law: for $A=\{1,2\}$ that is $2\log2$, where the dimer state gives $0$. The dimer state and the random state are the two extremes, and the gap between them is what the area law asserts about local ground states.
 
@@ -160,7 +160,7 @@ the **Page curve** (in nats, up to the standard subleading $-\tfrac12$ nat): the
 
 Locality suppresses this. A gapped local ground state has correlations that decay exponentially, its entanglement across a cut is carried by the boundary, and the entropy of a region is governed by $|\partial A|$ rather than by $n_A$. The framework exhibits both extremes in the same algebra: the random state of $\mathbb{B}^{\otimes N}$ has the Page behaviour, while the dimer state — or any state built by a bounded-depth local circuit — has the boundary behaviour $S_A=O(|\partial A|)$. The two differ not in the algebra or in the entropy formula but in how correlated the neighbouring factors are, and that is the whole content of the area law.
 
-The bond dimension quantifies the suppression. An interval of a chain in a matrix-product state of bond dimension $\chi$ satisfies $S_A\le2\log\chi$; a volume-law state requires $\chi$ growing exponentially with $N$, while a gapped ground state admits a $\chi$ independent of $N$. In the framework's chain the module fixes $\chi=2$ at the single-mode level, giving the smallest possible per-bond capacity, and the many-mode module would raise $\chi$ while preserving the boundary proportionality.
+The bond dimension quantifies the suppression. An interval of a chain in a matrix-product state of bond dimension $\xi$ satisfies $S_A\le2\log\xi$; a volume-law state requires $\xi$ growing exponentially with $N$, while a gapped ground state admits a $\xi$ independent of $N$. In the framework's chain the module fixes $\xi=2$ at the single-mode level, giving the smallest possible per-bond capacity, and the many-mode module would raise $\xi$ while preserving the boundary proportionality.
 
 ## The Area Law and Strong Subadditivity
 
@@ -223,8 +223,8 @@ What the framework cannot supply is the geometry: the metric, the dimension, the
 | $S_A$ | Entanglement entropy of the region |
 | $S_A=\kappa|\partial A|\epsilon^{-(d-1)}+\ldots$ | Field-theoretic area law |
 | $S_A\le|\partial A|\log2$ | Discrete area-law bound in the framework |
-| $\chi$ | Bond dimension; $\chi=2$ for the biquaternion module |
-| $|\Phi^+\rangle=\frac{1}{\sqrt2}(|00\rangle+|11\rangle)$ | Bell pair; dimer |
+| $\xi$ | Bond dimension; $\xi=2$ for the biquaternion module |
+| $|Ξ^{+}\rangle=\frac{1}{\sqrt2}(|00\rangle+|11\rangle)$ | Bell pair; dimer |
 | $S_{BH}=A_{\mathrm{hor}}/(4G\hbar)$ | Bekenstein–Hawking entropy |
 
 ## Further Reading

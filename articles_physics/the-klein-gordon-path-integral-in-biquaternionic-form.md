@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the **functional integral over field configurations**, weighted by the phase $\exp(iS[\chi]/\hbar)$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and states what the algebra contributes.
+The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the **functional integral over field configurations**, weighted by the phase $\exp(iS[\xi]/\hbar)$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and states what the algebra contributes.
 
 The division of labour with the companion path-integral article must be stated at once. The companion article *The Path Integral in Biquaternionic Form* analyses the **algebraic status of the phase**: it shows that the $i$ of $\exp(iS/\hbar)$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{M}_-$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the **relativistic field-theoretic** one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.
 
@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The scalar field is $\tilde{\Phi}=\chi\,e_t$ with $\chi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -26,17 +26,17 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 The field of the theory is a function on spacetime taking values in the centre,
 
 $$
-\tilde{\Phi}(\tilde{R})=\chi(\tilde{R})\,e_t,
+\tilde{Ξ}(\tilde{R})=\xi(\tilde{R})\,e_t,
 \qquad
-\chi:\mathbb{R}^{1,3}\to\mathbb{C},
+\xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-and the configuration space of the theory is the space of such functions. Because the centre is the fixed space of the framework's conjugations and the unique rotationally invariant subspace of the algebra, the field carries no index of any kind; this is the field-theoretic form of spin $0$, and it is the reason the configuration space is a space of *complex-valued* functions rather than a space of module-valued or algebra-valued ones. The real and imaginary parts of $\chi$ are the scalar parts of the two sectors,
+and the configuration space of the theory is the space of such functions. Because the centre is the fixed space of the framework's conjugations and the unique rotationally invariant subspace of the algebra, the field carries no index of any kind; this is the field-theoretic form of spin $0$, and it is the reason the configuration space is a space of *complex-valued* functions rather than a space of module-valued or algebra-valued ones. The real and imaginary parts of $\xi$ are the scalar parts of the two sectors,
 
 $$
-\chi=\chi_1+i\chi_2,
+\xi=\xi_1+i\xi_2,
 \qquad
-\tilde{\Phi}=\underbrace{\chi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\chi_2\,ie_t}_{\in\,\mathbb{M}_-},
+\tilde{Ξ}=\underbrace{\xi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{M}_-},
 $$
 
 so that the complex scalar is equivalent to two real scalars, one in each sector's scalar direction. The configuration space is therefore also the space of pairs of real functions, and the complex structure that makes it a single complex field is the central scalar imaginary.
@@ -46,50 +46,50 @@ so that the complex scalar is equivalent to two real scalars, one in each sector
 The Klein–Gordon action for the complex scalar field is the standard relativistic scalar action, written with the framework's d'Alembertian. In natural units,
 
 $$
-S[\tilde{\Phi}]
-=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\chi^*\,\partial/\partial Q_\mu\,\chi-\frac{1}{2}\mu^2\,|\chi|^2\right],
+S[\tilde{Ξ}]
+=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\xi^*\,\partial/\partial Q_\mu\,\xi-\frac{1}{2}\mu^2\,|\xi|^2\right],
 $$
 
-with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{\Phi}^{*}=\chi^*e_t$ and $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=|\chi|^2$, this is a central scalar functional,
+with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{Ξ}^{*}=\xi^*e_t$ and $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=|\xi|^2$, this is a central scalar functional,
 
 $$
-S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial Q_\mu\,\tilde{\Phi}^{*}\,\partial/\partial Q_\mu\,\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
+S[\tilde{Ξ}]=\int d^4x\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial Q_\mu\,\tilde{Ξ}^{*}\,\partial/\partial Q_\mu\,\tilde{Ξ}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
 $$
 
 The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the trace formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
 
-The equation of motion follows by variation. For a variation $\delta\tilde{\Phi}$ vanishing at the boundary,
+The equation of motion follows by variation. For a variation $\delta\tilde{Ξ}$ vanishing at the boundary,
 
 $$
 \delta S
-=\frac{1}{2}\int d^4x\left[-\sum_\mu\partial/\partial Q_\mu\,\delta\chi^*\,\partial/\partial Q_\mu\,\chi-\mu^2\,\delta\chi^*\,\chi\right]
-=\frac{1}{2}\int d^4x\;\delta\chi^*\left[\left(\Box-\mu^2\right)\chi\right],
+=\frac{1}{2}\int d^4x\left[-\sum_\mu\partial/\partial Q_\mu\,\delta\xi^*\,\partial/\partial Q_\mu\,\xi-\mu^2\,\delta\xi^*\,\xi\right]
+=\frac{1}{2}\int d^4x\;\delta\xi^*\left[\left(\Box-\mu^2\right)\xi\right],
 $$
 
 after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, the stationarity of the action is
 
 $$
-\boxed{\;\frac{\delta S}{\delta\chi^*}=0
+\boxed{\;\frac{\delta S}{\delta\xi^*}=0
 \qquad\Longleftrightarrow\qquad
-\left(\Box-\mu^2\right)\chi=0\;},
+\left(\Box-\mu^2\right)\xi=0\;},
 $$
 
 which is the Klein–Gordon equation of the companion article. The derivation was checked against three independent on-shell modes: for the superposition
 
 $$
-\chi(t',x,y,z)=\sum_{n=1}^{3}a_n\cos(\vec k_n\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\Omega_n t'),
+\xi(t',x,y,z)=\sum_{n=1}^{3}a_n\cos(\vec k_n\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\Omega_n t'),
 \qquad
 \Omega_n=\sqrt{\vec k_n^2+\mu^2},
 $$
 
-with $|\vec k_n|=(1.3,2.1,0.8)$ along the directions $(0.2,-0.5,0.7)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$ in turn, amplitudes $(a_1,a_2,a_3)=(1.0,0.7,-0.5)$ and $\mu=1.1$, the finite-difference evaluation of $(\Box-\mu^2)\chi$ at three generic events had a greatest residual of order $10^{-7}$, the residual being the truncation error of the difference stencil rather than a failure of the equation. The linearity of the equation makes the superposition a weak test; the test's content is in the signs, and it confirms that the sign conventions of the action, of $\Box$, and of the mass term are mutually consistent.
+with $|\vec k_n|=(1.3,2.1,0.8)$ along the directions $(0.2,-0.5,0.7)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$ in turn, amplitudes $(a_1,a_2,a_3)=(1.0,0.7,-0.5)$ and $\mu=1.1$, the finite-difference evaluation of $(\Box-\mu^2)\xi$ at three generic events had a greatest residual of order $10^{-7}$, the residual being the truncation error of the difference stencil rather than a failure of the equation. The linearity of the equation makes the superposition a weak test; the test's content is in the signs, and it confirms that the sign conventions of the action, of $\Box$, and of the mass term are mutually consistent.
 
 ### The biquaternion-norm reading of the quadratic form
 
 The quadratic part of the action can be written in a form that displays the algebra. Integrating the kinetic term by parts,
 
 $$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right),
+S[\tilde{Ξ}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right),
 $$
 
 so the operator in the exponent is exactly the Klein–Gordon operator whose Green's functions the companion article constructs. The mass shell is where the momentum-space symbol vanishes,
@@ -109,17 +109,17 @@ a level set of the biquaternion norm on the material four-wavevector $\tilde P=i
 The generating functional is
 
 $$
-Z[J]=\int\mathcal{D}\tilde{\Phi}\;\exp\left(iS[\tilde{\Phi}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{\Phi}\right)\right),
+Z[J]=\int\mathcal{D}\tilde{Ξ}\;\exp\left(iS[\tilde{Ξ}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{Ξ}\right)\right),
 $$
 
-with a central source $\tilde{J}=J\,e_t$ and a measure $\mathcal{D}\tilde{\Phi}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central $*$-unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
+with a central source $\tilde{J}=J\,e_t$ and a measure $\mathcal{D}\tilde{Ξ}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central $*$-unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
 
 ### The finite-dimensional Gaussian, exactly
 
 The rigorous content of the free functional integral is the finite-dimensional Gaussian identity, of which the continuum integral is the formal limit. On a lattice of $N$ sites with a real symmetric positive-definite quadratic form $A$, the integral
 
 $$
-Z_N[J]=\int\prod_{i=1}^{N}d\chi_i\;\exp\left(-\frac{1}{2}\chi^{T}A\chi+J^{T}\chi\right)
+Z_N[J]=\int\prod_{i=1}^{N}d\xi_i\;\exp\left(-\frac{1}{2}\xi^{T}A\xi+J^{T}\xi\right)
 $$
 
 evaluates to
@@ -132,7 +132,7 @@ $$
 and the two-point function is the inverse of the quadratic form,
 
 $$
-\langle\chi_i\chi_j\rangle=\left(A^{-1}\right)_{ij},
+\langle\xi_i\xi_j\rangle=\left(A^{-1}\right)_{ij},
 \qquad
 \partial/\partial J_i\,\partial/\partial J_j\,\ln Z_N\big|_{J=0}=\left(A^{-1}\right)_{ij}.
 $$
@@ -160,7 +160,7 @@ $$
 which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel
 
 $$
-\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^{*}(\tilde R_{E,2})\rangle
+\langle\tilde{Ξ}(\tilde{Q}_E)\tilde{Ξ}^{*}(\tilde R_{E,2})\rangle
 =G_E(\tilde{Q}_E-\tilde R_{E,2})\,e_t,
 $$
 
@@ -183,21 +183,21 @@ where $G$ is the Green's function of $(\Box-\mu^2)$, fixed by the boundary condi
 For a source, the classical field is the stationary point of the exponent,
 
 $$
-\frac{\delta}{\delta\chi^*}\left(S[\chi]+\int J^*\chi+\chi^* J\right)=0
+\frac{\delta}{\delta\xi^*}\left(S[\xi]+\int J^*\xi+\xi^* J\right)=0
 \qquad\Longleftrightarrow\qquad
-\left(\Box-\mu^2\right)\chi=-J,
+\left(\Box-\mu^2\right)\xi=-J,
 $$
 
-which is the Klein–Gordon equation with a source and is solved by the convolution with the retarded kernel of the companion article. Expanding about the classical field $\chi_{\mathrm{cl}}$,
+which is the Klein–Gordon equation with a source and is solved by the convolution with the retarded kernel of the companion article. Expanding about the classical field $\xi_{\mathrm{cl}}$,
 
 $$
-\chi=\chi_{\mathrm{cl}}+\zeta,
+\xi=\xi_{\mathrm{cl}}+\zeta,
 $$
 
 the exponent separates into the classical action, a linear term that vanishes by stationarity, and the quadratic fluctuation term $\frac{1}{2}\zeta(\Box-\mu^2)\zeta$. The one-loop approximation is the Gaussian integral over $\zeta$, giving
 
 $$
-Z[J]\simeq \exp(\,iS[\chi_{\mathrm{cl}}]+i\int J^*\chi_{\mathrm{cl}})\,
+Z[J]\simeq \exp(\,iS[\xi_{\mathrm{cl}}]+i\int J^*\xi_{\mathrm{cl}})\,
 \left[\det\left(\Box-\mu^2\right)\right]^{-1/2},
 $$
 
@@ -208,7 +208,7 @@ a central scalar phase times a central scalar determinant. The effective action 
 The classical equation's momentum-space form is the vanishing of the symbol of the quadratic form,
 
 $$
-\left(\frac{\omega^2}{c^2}-\vec k^2-\mu^2\right)\chi_{\mathrm{cl}}(\omega,\vec k)=-J(\omega,\vec k),
+\left(\frac{\omega^2}{c^2}-\vec k^2-\mu^2\right)\xi_{\mathrm{cl}}(\omega,\vec k)=-J(\omega,\vec k),
 $$
 
 so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the four-wavevector of a free mode lies on the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$ of the biquaternion norm of $\mathbb{M}_-$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.
@@ -228,9 +228,9 @@ $$
 On $\mathbb{H}_{\mathbb{B}}$ the biquaternion norm is positive definite, and this is exactly what the Euclidean functional integral needs. The action becomes
 
 $$
-S[\tilde{\Phi}]\;\longmapsto\;iS_E[\tilde{\Phi}],
+S[\tilde{Ξ}]\;\longmapsto\;iS_E[\tilde{Ξ}],
 \qquad
-S_E[\tilde{\Phi}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(-\Delta_E+\mu^2\right)\tilde{\Phi}\right),
+S_E[\tilde{Ξ}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(-\Delta_E+\mu^2\right)\tilde{Ξ}\right),
 $$
 
 and the phase factor becomes a decaying weight,
@@ -265,9 +265,9 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 
 ## Open Questions
 
-1. **The measure.** *Open for the author.* The functional measure $\mathcal{D}\tilde{\Phi}$ is defined here as the formal limit of the lattice measure, and the lattice measure is Lebesgue measure on the central-valued field at each site. Whether the framework supplies a canonical measure from its own structure — from the trace form, or from the biquaternion norm, or from the real structure $\flat$ — rather than inheriting the Lebesgue measure, is not settled here.
+1. **The measure.** *Open for the author.* The functional measure $\mathcal{D}\tilde{Ξ}$ is defined here as the formal limit of the lattice measure, and the lattice measure is Lebesgue measure on the central-valued field at each site. Whether the framework supplies a canonical measure from its own structure — from the trace form, or from the biquaternion norm, or from the real structure $\flat$ — rather than inheriting the Lebesgue measure, is not settled here.
 
-2. **Interactions.** The article has treated only the free Gaussian and the one-loop expansion about a source. A quartic interaction $\lambda|\chi|^4$ is central and preserves the centrality of every object; whether the framework's trace form suggests a preferred normalisation of the coupling, or a preferred class of interactions, is not considered.
+2. **Interactions.** The article has treated only the free Gaussian and the one-loop expansion about a source. A quartic interaction $\lambda|\xi|^4$ is central and preserves the centrality of every object; whether the framework's trace form suggests a preferred normalisation of the coupling, or a preferred class of interactions, is not considered.
 
 3. **The determinant and its phase.** The free determinant $[\det(\Box-\mu^2)]^{-1/2}$ is central, but its phase requires a regularisation and a choice of branch. Whether the framework's complex structure fixes the branch, or whether the standard $i\epsilon$ prescription is the only input, is not resolved.
 
@@ -279,19 +279,19 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 
 ## Summary
 
-The Klein–Gordon path integral is the functional integral over central-valued fields, $\tilde{\Phi}=\chi e_t$ with $\chi$ complex, weighted by the central phase $\exp(iS)$ with the action
+The Klein–Gordon path integral is the functional integral over central-valued fields, $\tilde{Ξ}=\xi e_t$ with $\xi$ complex, weighted by the central phase $\exp(iS)$ with the action
 
 $$
-S[\tilde{\Phi}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\left(\Box-\mu^2\right)\tilde{\Phi}\right)
-=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\chi^*\,\partial/\partial Q_\mu\,\chi-\frac{1}{2}\mu^2|\chi|^2\right].
+S[\tilde{Ξ}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right)
+=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\xi^*\,\partial/\partial Q_\mu\,\xi-\frac{1}{2}\mu^2|\xi|^2\right].
 $$
 
-Its variation gives the Klein–Gordon equation $(\Box-\mu^2)\chi=0$, verified on a superposition of three on-shell modes to a residual of order $10^{-7}$. The generating functional is defined with a central source, and the free Gaussian is evaluated exactly on a finite lattice,
+Its variation gives the Klein–Gordon equation $(\Box-\mu^2)\xi=0$, verified on a superposition of three on-shell modes to a residual of order $10^{-7}$. The generating functional is defined with a central source, and the free Gaussian is evaluated exactly on a finite lattice,
 
 $$
 Z_N[J]=(2\pi)^{N/2}(\det A)^{-1/2}\exp\!\left(\frac{1}{2}J^{T}A^{-1}J\right),
 \qquad
-\langle\chi_i\chi_j\rangle=(A^{-1})_{ij},
+\langle\xi_i\xi_j\rangle=(A^{-1})_{ij},
 $$
 
 verified by direct quadrature (relative error $4.8\times10^{-13}$) and by the lattice inverse ($A A^{-1}-I$ bounded by $5.6\times10^{-16}$). The free two-point function is the inverse of the Klein–Gordon quadratic form, i.e. the Green's function whose Minkowski continuation is the Feynman propagator of the companion article. In the continuum the same completion of the square gives a Gaussian in the source with the Green's function as its kernel, and the determinant is the free vacuum amplitude.
@@ -310,14 +310,14 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, target of the Wick rotation |
 | $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\in\mathbb{M}_-$ |
 | $\tilde{Q}_E=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{H}_{\mathbb{B}}$ |
-| $\tilde{\Phi}=\chi e_t$ | Scalar (spin-$0$) field, valued in the centre |
+| $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P=i\omega/c\,e_t+\vec k$ | Material four-wavevector, $\in\mathbb{M}_-$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde P\rangle_{\natural}=-\mu^2$ is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
 | $\mu=mc/\hbar$ | Mass parameter ($\mu=m$ in natural units) |
 | $\Omega_{\vec k}=\sqrt{\vec k^2+\mu^2}$ | On-shell frequency, natural units |
-| $S[\tilde{\Phi}]$ | Klein–Gordon action, central scalar |
-| $S_E[\tilde{\Phi}]$ | Euclidean action, $\ge0$ for $\mu^2\ge0$ |
+| $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
+| $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $\mu^2\ge0$ |
 | $Z[J]$ | Generating functional; $\tilde{J}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-\mu^2)G=-\delta^{(4)}$ and $(-\Delta_E+\mu^2)G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |

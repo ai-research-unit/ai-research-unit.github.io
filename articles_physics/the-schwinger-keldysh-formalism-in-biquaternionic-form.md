@@ -34,19 +34,19 @@ The formalism begins with a contour and produces a doubling; the doubling is wha
 
 **The contour.** The **closed-time path** $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
 $$
-\tilde\Phi_+(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
+\tilde{Ξ}_+(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde{Ξ}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
 \qquad
-\tilde\Phi_-(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
+\tilde{Ξ}_-(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde{Ξ}(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
 $$
 The generating functional is
 $$
-Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\exp(\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)),
+Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_+\tilde{Ξ}_+-\tilde J_-\tilde{Ξ}_-)),
 $$
 with the relative sign between the two branches. The two-branch action is the difference of two copies of the ordinary action, and the minus branch is integrated with the opposite orientation, which is what makes the formalism genuinely *in-in*: the final state is summed over, not fixed. This is standard (Schwinger 1961; Keldysh 1964; Kadanoff–Baym; see the cited reviews) and is transcribed.
 
 **The doubled Green's functions.** The basic objects are the branch-indexed two-point functions
 $$
-G_{ab}(x,y) = -i\big\langle T_{\mathcal{C}}\,\tilde\Phi_a(x)\,\tilde\Phi_b(y)\big\rangle ,
+G_{ab}(x,y) = -i\big\langle T_{\mathcal{C}}\,\tilde{Ξ}_a(x)\,\tilde{Ξ}_b(y)\big\rangle ,
 \qquad a,b\in\{+,-\},
 $$
 whose components are the time-ordered ($G_{++}$), anti-time-ordered ($G_{--}$), and mixed ($G_{+-}$, $G_{-+}$) functions. They are not independent: they satisfy the sum rules
@@ -59,7 +59,7 @@ G_{+-}-G_{--}=G^A ,
 $$
 which define the Keldysh, retarded, and advanced functions. These identities are algebraic and are the skeleton of the whole formalism; they hold for biquaternion-valued fields as they stand, because they involve only the branch index.
 
-**The two-branch action in the framework.** For the quadratic biquaternion action with central operator $K^{\mathrm{kin}}$ the two-branch action is $S[\tilde\Phi_+]-S[\tilde\Phi_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(\Phi_+,\Phi_-)$ basis is therefore
+**The two-branch action in the framework.** For the quadratic biquaternion action with central operator $K^{\mathrm{kin}}$ the two-branch action is $S[\tilde{Ξ}_+]-S[\tilde{Ξ}_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(Ξ_+,Ξ_-)$ basis is therefore
 $$
 G_0 = \begin{pmatrix} K^{\mathrm{kin}}{}^{-1} & 0 \\ 0 & -K^{\mathrm{kin}}{}^{-1}\end{pmatrix},
 $$
@@ -87,7 +87,7 @@ The branch matrix is made physical by a rotation whose entries are the classical
 
 **The rotation.** Define the classical and quantum fields by
 $$
-\begin{pmatrix}\tilde\Phi_{cl}\\\tilde\Phi_q\end{pmatrix} = R\begin{pmatrix}\tilde\Phi_+\\\tilde\Phi_-\end{pmatrix},
+\begin{pmatrix}\tilde{Ξ}_{cl}\\\tilde{Ξ}_q\end{pmatrix} = R\begin{pmatrix}\tilde{Ξ}_+\\\tilde{Ξ}_-\end{pmatrix},
 \qquad
 R=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
 $$
@@ -188,7 +188,7 @@ The generating-functional structure of the previous articles carries over with t
 $$
 J = \begin{pmatrix}\tilde J_+\\\tilde J_-\end{pmatrix},
 \qquad
-Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde\Phi_+\mathcal{D}\tilde\Phi_-\;\exp(\,iS[\tilde\Phi_+]-iS[\tilde\Phi_-]+i\int(\tilde J_+\tilde\Phi_+-\tilde J_-\tilde\Phi_-)) ,
+Z[\tilde J_+,\tilde J_-] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_+\tilde{Ξ}_+-\tilde J_-\tilde{Ξ}_-)) ,
 $$
 one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as its source derivatives; the Legendre transform in both sources gives the two-particle-irreducible effective action, whose stationarity is the Kadanoff–Baym equation. This is the contour version of *The Generating Functional and the Effective Action in Biquaternionic Form*, with the fields and sources taking values in the module and with one extra external index. The biquaternion content is unchanged: the sources are module-valued, the quadratic operator is the biquaternion-norm operator, and the sector factorization holds whenever the operator is central.
 
@@ -241,15 +241,15 @@ was checked for a model retarded function at $\beta=2$ and several frequencies; 
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathcal{C}=\mathcal{C}_+\cup\mathcal{C}_-$ | Closed-time-path contour (forward then backward) |
-| $\tilde\Phi_\pm$ | Field on the plus / minus branch |
+| $\tilde{Ξ}_\pm$ | Field on the plus / minus branch |
 | $\mathbb{C}^2_{\mathrm{br}}$, $a,b\in\{+,-\}$ | Branch space and branch index (external to $\mathbb{B}$) |
 | $\mathcal{V}_{\mathrm{CTP}}=\mathcal{V}_{\mathrm{field}}\otimes\mathbb{C}^2_{\mathrm{br}}$ | Doubled field space |
-| $G_{ab}=-i\langle T_{\mathcal{C}}\tilde\Phi_a\tilde\Phi_b\rangle$ | Branch-indexed Green's functions |
+| $G_{ab}=-i\langle T_{\mathcal{C}}\tilde{Ξ}_a\tilde{Ξ}_b\rangle$ | Branch-indexed Green's functions |
 | $G_{++},G_{--},G_{+-},G_{-+}$ | Time-ordered, anti-time-ordered, mixed functions |
 | $G^K=G_{++}+G_{--}=G_{+-}+G_{-+}$ | Keldysh component |
 | $G^R=G_{++}-G_{+-}$, $G^A=G_{+-}-G_{--}$ | Retarded and advanced functions |
 | $R=\frac{1}{\sqrt2}\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)\in O(2)$ | Keldysh rotation; $\det R=-1$, $R^2=I_2$ |
-| $\tilde\Phi_{cl},\tilde\Phi_q$ | Classical / quantum components |
+| $\tilde{Ξ}_{cl},\tilde{Ξ}_q$ | Classical / quantum components |
 | $\mathcal G=\left(\begin{smallmatrix}G^K&G^R\\G^A&0\end{smallmatrix}\right)$ | Rotated Green's-function matrix ($qq$ entry $0$) |
 | $A(\omega)=-i(G^R-G^A)$ | Spectral function, $A\ge0$ |
 | $G^K=\coth(\beta\omega/2)(G^R-G^A)$ | Fluctuation–dissipation relation |

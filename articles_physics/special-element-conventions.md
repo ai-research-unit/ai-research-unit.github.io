@@ -138,13 +138,13 @@ S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfra
 $$
 with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
 
-**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
+**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
 $$
 \mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$
 for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two. Every element of the algebra is a Dirac spinor and only the zero element has both parts zero, so the definition costs one declared axis and nothing else.
 
-**The two parts carry the chirality letters.** The decomposition is the decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ of §*The Chirality Convention* is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde\Psi_L\in S_+(\vec u)$ is the $L$ part and $\tilde\Psi_R\in S_-(\vec u)$ the $R$ part, and at $\vec u=\vec e_z$ the cell is $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$: the pair is unordered, and the definition orders it only to name the two parts.
+**The two parts carry the chirality letters.** The decomposition is the decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ of §*The Chirality Convention* is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde{Ξ}^{\mathrm{spn}}_L\in S_+(\vec u)$ is the $L$ part and $\tilde{Ξ}^{\mathrm{spn}}_R\in S_-(\vec u)$ the $R$ part, and at $\vec u=\vec e_z$ the cell is $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$: the pair is unordered, and the definition orders it only to name the two parts.
 
 **A column is a writing, not a definition.** A column of two components is an elementary spinor written in a chosen carrier, and a column of four is a Dirac spinor written in a matrix model, one pair per part. The count $4=2\times2$ multiplies the spin dimension by the number of parts, and the two factors have different origins. Neither column is a second definition, and the definitions need no Clifford relation, no gamma cell and no extra rotation triple.
 
@@ -158,7 +158,7 @@ The chirality is the cell of a frame and not an element of the algebra. Operator
 
 Spin is defined once, on a carrier: it is the largest eigenvalue of $\vec u\cdot\vec S$ in units of $\hbar$, a scalar in $\tfrac12\mathbb{Z}_{\ge0}$ that does not depend on the axis, and physically it is the intrinsic angular momentum of a particle, with $\tilde S^2=\hbar^2s(s+1)$, $\tilde S_z=\hbar s_z$ and helicity in the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
 
-An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ of complex dimension two with weights $\pm\tfrac12$; a **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, its two parts being the components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The two parts are the two values of the chirality, $\tilde\Psi_L$ in $S_+$ and $\tilde\Psi_R$ in $S_-$, and a column of two or of four components is a carrier element written in a basis and not a second definition.
+An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ of complex dimension two with weights $\pm\tfrac12$; a **Dirac spinor** is an element $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$ of $\mathbb{B}$, its two parts being the components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The two parts are the two values of the chirality, $\tilde{Ξ}^{\mathrm{spn}}_L$ in $S_+$ and $\tilde{Ξ}^{\mathrm{spn}}_R$ in $S_-$, and a column of two or of four components is a carrier element written in a basis and not a second definition.
 
 ## Summary of Notation
 
@@ -177,7 +177,7 @@ An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm
 | $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_k\tilde S_k$; pure, so arrowed and without the tilde |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | An elementary spinor's carrier, a minimal left ideal of complex dimension two |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
-| $\tilde\Psi$, $\tilde\Psi_L$, $\tilde\Psi_R$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |
+| $\tilde{Ξ}^{\mathrm{spn}}$, $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |
 
 ## Further Reading
 

@@ -37,7 +37,7 @@ $$
 = \tfrac12\left(\vec E^2-\vec B^2\right) + \tfrac12\mu^2\left(A_0^2-\vec A^2\right).
 $$
 
-The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{\Phi}=0$. Because $\sum_\mu A_\mu A_\mu=-A_0^2+\vec A^2$ with the time coefficient $A_t=iA_0$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ is $\tfrac12\mu^2(A_0^2-\vec A^2)$ in components. The mass term is a central real scalar times the biquaternion norm of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
+The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{Ξ}=0$. Because $\sum_\mu A_\mu A_\mu=-A_0^2+\vec A^2$ with the time coefficient $A_t=iA_0$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ is $\tfrac12\mu^2(A_0^2-\vec A^2)$ in components. The mass term is a central real scalar times the biquaternion norm of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
 
 The Euler–Lagrange equation is
 
@@ -154,15 +154,15 @@ Gauss's law **deformed by the mass term**. At $\mu=0$ this is the Maxwell compan
 The two constraints are
 
 $$
-\chi_1 = \pi_0 \approx 0,
+\xi_1 = \pi_0 \approx 0,
 \qquad
-\chi_2 = \sum_i \partial/\partial Q_i\,\pi_i + \mu^2A_0 \approx 0 .
+\xi_2 = \sum_i \partial/\partial Q_i\,\pi_i + \mu^2A_0 \approx 0 .
 $$
 
 Their Poisson bracket is
 
 $$
-\{\chi_1(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\chi_2(\vec y)\}
+\{\xi_1(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\xi_2(\vec y)\}
 = \mu^2\{\pi_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),A_0(\vec y)\}
 = -\mu^2\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y) \neq 0,
 $$
@@ -259,7 +259,7 @@ The massless limit of the numerator is singular, as it must be: $(\delta_{\mu\nu
 
 The massless limit is where the article's structural point is sharpest, so it is worth stating as a limit of the constraint analysis rather than as a limit of the propagator.
 
-At $\mu\neq0$ the two constraints $\chi_1=\pi_0$ and $\chi_2=\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0$ are second class, with $\{\chi_1,\chi_2\}=-\mu^2\delta^{(3)}\neq0$. As $\mu\to0$ the bracket vanishes, the constraints become **first class**, and the constraint pair no longer removes a physical direction but generates a gauge transformation. The gauge transformation it generates is the Maxwell one,
+At $\mu\neq0$ the two constraints $\xi_1=\pi_0$ and $\xi_2=\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0$ are second class, with $\{\xi_1,\xi_2\}=-\mu^2\delta^{(3)}\neq0$. As $\mu\to0$ the bracket vanishes, the constraints become **first class**, and the constraint pair no longer removes a physical direction but generates a gauge transformation. The gauge transformation it generates is the Maxwell one,
 
 $$
 \tilde{A}\;\longmapsto\;\tilde{A}-\tilde{\nabla}\Gamma,
@@ -299,7 +299,7 @@ The Proca field in biquaternionic form is the massive vector field, a material-s
 
 The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}(\tilde{\nabla}^{\natural}(\mu^2\tilde{A}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}=0$.
 
-The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\chi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
+The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
 
 The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 

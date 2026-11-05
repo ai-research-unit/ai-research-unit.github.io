@@ -10,7 +10,7 @@ The construction is the hyperbolic geometry of the velocity hyperboloid, in the 
 
 The findings are stated in advance.
 
-1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$, where $Q_t=ict'$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
+1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$, where $Q_t=ict'$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\theta^{\mathrm{rpd}} = \rho/c$.
 2. **The metric is the Beltrami–Klein metric** in the velocity coordinates, $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, and the distance between two velocities is the relative rapidity: $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$.
 3. **The addition of velocities is hyperbolic trigonometry.** The relative-velocity formula is the hyperbolic law of cosines in velocity space, and the composition law of two boosts is its spherical counterpart, the two being exchanged by $c\mapsto ic$ — the Sommerfeld spherical representation.
 4. **The Wigner rotation is the curvature of the boost connection.** Its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term, and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$.
@@ -22,10 +22,10 @@ $$
 $$
 and the boost rotor, the Lorentz rotor $\tilde U_{\mathrm b}$, is
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u = \exp((\psi/2)\,i\vec u),
-\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = 1,\qquad \tanh\psi = \frac{v_b}{c},
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u = \exp((\theta^{\mathrm{rpd}}/2)\,i\vec u),
+\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = 1,\qquad \tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
 $$
-Hermitian and of unit norm. Throughout, $c$ is the speed of light in the medium, $\vec v$ a particle velocity, $\rho$ the geodesic distance in velocity space and $\psi = \rho/c$ the rapidity.
+Hermitian and of unit norm. Throughout, $c$ is the speed of light in the medium, $\vec v$ a particle velocity, $\rho$ the geodesic distance in velocity space and $\theta^{\mathrm{rpd}} = \rho/c$ the rapidity.
 
 The companion articles supply the pieces:
 
@@ -64,7 +64,7 @@ c^2\Bigl(-\cosh^2\frac{\rho}{c}+\sinh^2\frac{\rho}{c}\Bigr) = -c^2 ,
 $$
 so the pair $(\rho,\vec u)$ does parametrise the sheet. Comparing with $\tilde{V} = \gamma(ic\,e_t+\vec v)$ gives the dictionary
 $$
-\gamma = \cosh\frac{\rho}{c},\qquad \vec v = c\tanh\frac{\rho}{c}\,\vec u,\qquad \rho = c\,\mathrm{artanh}\frac{v}{c} = c\psi ,
+\gamma = \cosh\frac{\rho}{c},\qquad \vec v = c\tanh\frac{\rho}{c}\,\vec u,\qquad \rho = c\,\mathrm{artanh}\frac{v}{c} = c\theta^{\mathrm{rpd}} ,
 $$
 which is the *hyperbolic velocity* of the classical account: it is what the ordinary velocity becomes when the additive variable is used, and it reduces to $v$ for $v\ll c$.
 
@@ -119,7 +119,7 @@ The boundary points are the lightlike ends of the chord, and this is why the met
 
 The classical formula that this packages is the relative velocity of two particles. Writing $\theta$ for the angle between the two velocities, the definition $v_{\mathrm{rel}} = c\tanh(d/c)$ inverts the proposition into
 $$
-\cosh\frac{d}{c} = \cosh\psi_1\cosh\psi_2-\cos\theta\,\sinh\psi_1\sinh\psi_2 ,
+\cosh\frac{d}{c} = \cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2-\cos\theta\,\sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2 ,
 $$
 and the relative speed is the fourth side of the relation, $v_{\mathrm{rel}} = c\tanh(d/c)$ with
 $$
@@ -135,7 +135,7 @@ Read as a statement of geometry rather than of kinematics, this is the **hyperbo
 
 For two boosts along the same line the composition is the degenerate triangle in which the three vertices are collinear in the geometry and the sides add. The rapidity is additive,
 $$
-\psi_{\mathrm{tot}} = \psi_1+\psi_2,\qquad v_{\mathrm{tot}} = c\tanh(\psi_1+\psi_2) = \frac{v_1+v_2}{1+v_1v_2/c^2},
+\theta^{\mathrm{rpd}}_{\mathrm{tot}} = \theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2,\qquad v_{\mathrm{tot}} = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2) = \frac{v_1+v_2}{1+v_1v_2/c^2},
 $$
 which is Einstein's addition law, and the statement that the additive variable is the *arc length* in velocity space and not the velocity is the statement that the composition is not vector addition: a vector space would give $\vec v_{\mathrm{tot}} = \vec v_1+\vec v_2$, and the geodesic parametrised by arc length gives the formula above instead. The bound $v<c$ is the statement that the geodesic does not reach the boundary in finite arc length.
 
@@ -199,7 +199,7 @@ the infinitesimal form of the statement that the area swept out per unit time is
 
 The ball $|\vec v|<c$ is the whole of velocity space and its boundary is the light cone. The distance from any velocity to the boundary is infinite, because the distance from $\vec v$ to a boundary point is $\rho$ with $v = c\tanh(\rho/c)$, and $\rho\to\infty$ as $v\to c$. So the light cone is the **boundary at infinity** of velocity space, and it is not a part of it: a photon is not a velocity with a large value, it is a point at infinity, and the reason $c$ cannot be reached by composing velocities is the trigonometrical one that no finite arc length reaches the boundary.
 
-The metric coefficient $\sinh^2(\rho/c)$ makes the circumference of the circle of radius $\rho$ grow exponentially, so velocity space opens so rapidly that the boundary is unreachable: the content of the statement that velocity space is *complete* as a Riemannian manifold while the ball of Euclidean geometry is not. A particle's rapidity can grow without bound while its velocity approaches $c$ asymptotically, and the energy grows as $\cosh\psi$ along the way; the divergence of the energy at $v = c$ is the infinite geodesic distance to the boundary.
+The metric coefficient $\sinh^2(\rho/c)$ makes the circumference of the circle of radius $\rho$ grow exponentially, so velocity space opens so rapidly that the boundary is unreachable: the content of the statement that velocity space is *complete* as a Riemannian manifold while the ball of Euclidean geometry is not. A particle's rapidity can grow without bound while its velocity approaches $c$ asymptotically, and the energy grows as $\cosh\theta^{\mathrm{rpd}}$ along the way; the divergence of the energy at $v = c$ is the infinite geodesic distance to the boundary.
 
 ### The zero divisors are the ideal points
 
@@ -235,15 +235,15 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 |---|---|
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$, future sheet of the hyperboloid in $\mathbb{M}_-$ |
 | $\rho$ | Geodesic distance in velocity space from rest; $\rho = c\,\mathrm{artanh}(v/c)$ |
-| $\psi = \rho/c$ | Rapidity; additive along a line |
+| $\theta^{\mathrm{rpd}} = \rho/c$ | Rapidity; additive along a line |
 | $\tilde{V} = c(\sinh\frac{\rho}{c}\vec u+i\cosh\frac{\rho}{c}e_t)$ | Weierstrass coordinates of the velocity hyperboloid |
 | $ds^2 = d\rho^2+c^2\sinh^2\frac{\rho}{c}\,d\Omega^2$ | Metric of velocity space, curvature $-1/c^2$ |
 | $ds^2 = c^2\frac{(c^2-\vec v^2)\lvert d\vec v\rvert^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2}$ | The same metric in the velocity (Beltrami–Klein) coordinates |
 | $\cosh\frac{d}{c} = \gamma_1\gamma_2(1-\frac{\vec v_1\cdot\vec v_2}{c^2})$ | Distance between two velocities = relative rapidity |
 | $d = \frac{c}{2}\lvert\log\frac{\lvert\vec v_1a\rvert\lvert\vec v_2b\rvert}{\lvert\vec v_1b\rvert\lvert\vec v_2a\rvert}\rvert$ | The same as a Cayley–Klein cross-ratio with the boundary |
-| $v_{\mathrm{tot}} = c\tanh(\psi_1+\psi_2)$ | Einstein addition, as the geodesic parametrisation |
+| $v_{\mathrm{tot}} = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2)$ | Einstein addition, as the geodesic parametrisation |
 | $\cosh\rho = \cosh a\cosh b+\cos\theta\sinh a\sinh b$ | Composition law of two boosts (spherical type) |
-| $\cosh\frac{d}{c} = \cosh\psi_1\cosh\psi_2-\cos\theta\sinh\psi_1\sinh\psi_2$ | Relative velocity (hyperbolic law of cosines) |
+| $\cosh\frac{d}{c} = \cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2-\cos\theta\sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2$ | Relative velocity (hyperbolic law of cosines) |
 | $c\mapsto ic$ | Sommerfeld interchange of the hyperbolic and spherical representations |
 | $\theta^{\mathrm{wgn}} = \pi-(A+B+C) = A^{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
 | $\theta^{\mathrm{wgn}} = \frac{ab}{2}-\frac{ab(a^2+b^2)}{24}+\cdots$ | Small-loop expansion; the Euclidean area is the leading term |

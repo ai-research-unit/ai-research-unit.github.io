@@ -221,7 +221,7 @@ The two objects are different and the series keeps both. The unit metric is the 
 
 *Without a metric you cannot form an invariant, and without a metric you cannot raise an index.*
 
-The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the natural conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then
+The invariant is the norm, and the norm is a product. A boost is a rotor, $B=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ for a unit real vector $\vec u$, and it acts by conjugation, $\tilde Q\mapsto B\tilde Q B^{*}$. That action leaves the norm fixed, and the proof uses no metric. A rotor has quaternionic norm one, $BB^\natural=1$, so $B^\natural=B^{-1}$. Because the natural conjugation is an involution and commutes with the bar, $(B^{*})^\natural=\bar B$, so $B^{*}\bar B=\langle B^{*}\rangle_\natural=1$. Then
 
 $$
 \bigl\langle B\tilde Q B^{*}\bigr\rangle_\natural=B\tilde Q B^{*}(B^{*})^\natural\tilde Q^\natural B^\natural=B\tilde Q\,\tilde Q^\natural B^{-1}=\langle\tilde Q\rangle_\natural ,
@@ -282,7 +282,7 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $ict'$ and 
 | $g=\mathrm{diag}(-1,1,1,1)$ | The absorbed metric of the rejected alternative; equal to $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | The Clifford map of the series; $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$ |
 | $\gamma'_\mu=i\gamma_\mu$ | The generators that give $+2g_{\mu\nu}$; the $i$ inside the array |
-| $B=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ | Boost rotor; it preserves the norm with no metric entering |
+| $B=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ | Boost rotor; it preserves the norm with no metric entering |
 
 ## Further Reading
 

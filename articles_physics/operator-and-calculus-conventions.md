@@ -36,23 +36,23 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 **The case follows the layer.** The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, the operator is written in its explicit form, $-i\hbar\vec\nabla$, because no subscript marks an operator: the two-letter form $\mathrm{op}$ is not a token of the corpus, and *Algebra and Element Conventions* states the rule (§*The Algebra and Its Basis*). The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
 
-**The mark of a part, and the side carried by position.** The only arrow on a glyph is the short one, and it marks the **pure part**: $\vec e_x$, $\vec p$. The long arrow that sits over an operator is a different mark and not a second arrow of the same kind: it is the mark of the transposed reading, fixed in §*The Transposition of the Gradient*. The side of an action is not marked at all. It is carried by position, $b\psi$ against $\psi b$, the actor written on the side from which it acts, and position is unambiguous because the operand is itself a glyph.
+**The mark of a part, and the side carried by position.** The only arrow on a glyph is the short one, and it marks the **pure part**: $\vec e_x$, $\vec p$. The long arrow that sits over an operator is a different mark and not a second arrow of the same kind: it is the mark of the transposed reading, fixed in §*The Transposition of the Gradient*. The side of an action is not marked at all. It is carried by position, $b\tilde{Ξ}^{\mathrm{spn}}$ against $\tilde{Ξ}^{\mathrm{spn}} b$, the actor written on the side from which it acts, and position is unambiguous because the operand is itself a glyph.
 
 **What names a side where position is not enough.** Three signs, each of which the corpus needs for a purpose of its own.
 
-- $\natural$ marks the conjugation of an element, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$, and it is what carries a change of side, because it is an anti-automorphism: $(ab)^{\natural}=b^{\natural}a^{\natural}$, hence $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, and a right action on $\psi$ is a left action on $\psi^{\natural}$. The theorem is below, §*The Two Sides and the Renaming Theorem*.
+- $\natural$ marks the conjugation of an element, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$, and it is what carries a change of side, because it is an anti-automorphism: $(ab)^{\natural}=b^{\natural}a^{\natural}$, hence $(\tilde{Ξ}^{\mathrm{spn}} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\mathrm{spn}\natural}$, and a right action on $\tilde{Ξ}^{\mathrm{spn}}$ is a left action on $\tilde{Ξ}^{\mathrm{spn}\natural}$. The theorem is below, §*The Two Sides and the Renaming Theorem*.
 - $L_a$ and $R_a$ name a side outright when a statement is about operators rather than about fields, and the cell $L_{a}R_{b}$ prints both sides at once. The label of the side of a cell is the **operator chirality** — the left slot, the right slot, or both — fixed in *Special Element Conventions*, §*The Chirality Convention*, and proved in *Operator Chirality on the Biquaternion Algebra*, of the mathematical corpus.
 - The superscript $R$ marks the one case that position alone leaves genuinely ambiguous: a derivative that differentiates the factor written to its left, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$. It is used only inside a product of two distinct factors, which is where the theorem below does not reach.
 
 **The dagger.** The dagger is the general adjoint of an operator, never of an element: $(L_a)^{\dagger}=L_{a^{*}}$. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. It is not a fifth conjugation: it belongs to the operators and not to the algebra. Where a dagger is written on an element the writing is an abuse: the mark that was meant is the star for the Hermitian conjugation, or the natural sign for the quaternion conjugation, according to the conjugation in view. The dagger is added to the glyph and does not replace the element's mark: the arrow states purity, which the adjoint preserves, so $\vec p^{\dagger}$ is again a pure operator; the tilde states a glyph read with its scalar part, which the adjoint also preserves, so $\tilde\nabla$ keeps its tilde. Where the adjoint in view is the one of the definite form and the operator carries no derivative, the two marks are written together, dagger first: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$. A derivative separates them: its dagger is the adjoint and carries the integration by parts, its star conjugates the units alone (§*The Gradient*); the series writes $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ for the star.
 
-**A Kraus operator is an element, not an array.** The Kraus operators of a channel or an instrument multiply the state on both sides, $\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$, so each $\tilde K_l$ is an element of $\mathbb{B}$ and carries the tilde of the element. It is not a matrix, and the ban on a tilde on an array does not apply to it. Where the same operator is read as an array, that array is its image $\mathsf{M}_2(\tilde K_l)$, which carries no tilde, and its adjoint is the dagger, $\mathsf{M}_2(\tilde K_l)^{\dagger}=\mathsf{M}_2(\tilde K_l^{*})$; the corpus does not use that reading, and the star on the element is not a matrix adjoint.
+**A Kraus operator is an element, not an array.** The Kraus operators of a channel or an instrument multiply the state on both sides, $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$, so each $\tilde K_l$ is an element of $\mathbb{B}$ and carries the tilde of the element. It is not a matrix, and the ban on a tilde on an array does not apply to it. Where the same operator is read as an array, that array is its image $\mathsf{M}_2(\tilde K_l)$, which carries no tilde, and its adjoint is the dagger, $\mathsf{M}_2(\tilde K_l)^{\dagger}=\mathsf{M}_2(\tilde K_l^{*})$; the corpus does not use that reading, and the star on the element is not a matrix adjoint.
 
 **The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Unit, Index and Notation Conventions*, §*The Superscripts*.
 
 ## The Two Sides and the Renaming Theorem
 
-**The statement.** Write $L_D\psi := D\psi$ and $R_D\psi := \psi D$ for the two one-sided actions on a field $\psi\in\mathbb{B}$. Then
+**The statement.** Write $L_D\tilde{Ξ}^{\mathrm{spn}} := D\tilde{Ξ}^{\mathrm{spn}}$ and $R_D\tilde{Ξ}^{\mathrm{spn}} := \tilde{Ξ}^{\mathrm{spn}} D$ for the two one-sided actions on a field $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$. Then
 
 $$
 R_D=\natural\circ L_{D^{\natural}}\circ\natural,
@@ -63,25 +63,25 @@ $$
 and on a field
 
 $$
-\boxed{\;(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}\;}
+\boxed{\;(\tilde{Ξ}^{\mathrm{spn}} D)^{\natural}=D^{\natural}\,\tilde{Ξ}^{\mathrm{spn}\natural}\;}
 $$
 
-**A right action on $\psi$ is a left action on $\psi^{\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
+**A right action on $\tilde{Ξ}^{\mathrm{spn}}$ is a left action on $\tilde{Ξ}^{\mathrm{spn}\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
 
 **The three properties.** Everything rests on them, and only the third is non-trivial.
 
 | property | statement | residual |
 |---|---|---|
 | involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
-| $\mathbb{C}$-linear | $\natural(i\psi)=i\,\natural(\psi)$ | $0$ |
+| $\mathbb{C}$-linear | $\natural(i\tilde{Ξ}^{\mathrm{spn}})=i\,\natural(\tilde{Ξ}^{\mathrm{spn}})$ | $0$ |
 | anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
 
 The first makes $\natural$ invertible with $\natural^{-1}=\natural$. The third makes it **reverse the order of a product**. The second lets the mass, which is central, pass through untouched. An involution that preserved the order would identify the two sides; one that reverses the order exchanges them. $\natural$ reverses, so it exchanges.
 
-**The proof is three symbols.** Applied to the two factors $\psi$ and $D$,
+**The proof is three symbols.** Applied to the two factors $\tilde{Ξ}^{\mathrm{spn}}$ and $D$,
 
 $$
-(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
+(\tilde{Ξ}^{\mathrm{spn}} D)^{\natural}=D^{\natural}\,\tilde{Ξ}^{\mathrm{spn}\natural}.
 $$
 
 Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.
@@ -97,17 +97,17 @@ $$
 
 $N$ is the change of basis that exchanges the two families, and $N^{\mathsf T}N=I$, $\det N=-1$.
 
-**On an equation.** Take $\psi D=m\chi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
+**On an equation.** Take $\tilde{Ξ}^{\mathrm{spn}} D=m\xi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
 
 $$
-D^{\natural}\,\psi^{\natural}=m\,\chi^{\natural}.
+D^{\natural}\,\tilde{Ξ}^{\mathrm{spn}\natural}=m\,\xi^{\natural}.
 $$
 
-The map $\Phi:(\psi,\chi)\mapsto(\psi^{\natural},\chi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
+The map $Ξ:(\tilde{Ξ}^{\mathrm{spn}},\xi)\mapsto(\tilde{Ξ}^{\mathrm{spn}\natural},\xi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
 
 $$
-\{\psi:\ \psi D=m\chi\}\ \xrightarrow{\ \Phi\ }\ \{u:\ D^{\natural}u=m\,\chi^{\natural}\},
-\qquad \Phi^{-1}=\Phi .
+\{\tilde{Ξ}^{\mathrm{spn}}:\ \tilde{Ξ}^{\mathrm{spn}} D=m\xi\}\ \xrightarrow{\ Ξ\ }\ \{u:\ D^{\natural}u=m\,\xi^{\natural}\},
+\qquad Ξ^{-1}=Ξ .
 $$
 
 Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a pair solved on the left at residual $1.1\times10^{-15}$, on all four basis solutions. Same solutions, relabelled.
@@ -122,11 +122,11 @@ so the two arrays differ and neither may be substituted for the other at sight. 
 
 **Where the theorem does not reach.** Three cases, and each is stated where it is used.
 
-1. **More than one field.** The anti-automorphism reverses the whole order, $(\psi D\chi)^{\natural}=\chi^{\natural}D^{\natural}\psi^{\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
-2. **A carrier without $\natural$.** On a column $\psi\in\mathbb{C}^{4}$ there is no natural conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
-3. **The side itself on display.** For the two-sided action $a\psi b$, the mirror coupling, or the exchange of the two slots of a cell, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
+1. **More than one field.** The anti-automorphism reverses the whole order, $(\tilde{Ξ}^{\mathrm{spn}} D\xi)^{\natural}=\xi^{\natural}D^{\natural}\tilde{Ξ}^{\mathrm{spn}\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
+2. **A carrier without $\natural$.** On a column $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{C}^{4}$ there is no natural conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
+3. **The side itself on display.** For the two-sided action $a\tilde{Ξ}^{\mathrm{spn}} b$, the mirror coupling, or the exchange of the two slots of a cell, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
 
-**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $\Phi=\tilde\Psi^{\natural}$, the pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $Ξ=\tilde{Ξ}^{\mathrm{spn}\natural}$, the pair $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
 
 ## Conventions for Derivation
 
@@ -203,15 +203,15 @@ $$
 \tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}\,e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
 $$
 
-**The dynamics.** The first-order dynamics of the series is the chiral pair $\tilde\nabla\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde\nabla^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with massless limit $\tilde\nabla\tilde{\Psi}=0$. Every component equation in the series is a **coordinate form** of that pair and not a second dynamics.
+**The dynamics.** The first-order dynamics of the series is the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$. Every component equation in the series is a **coordinate form** of that pair and not a second dynamics.
 
-**The pair operator.** The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\Psi=(\Psi_L,\Psi_R)$ and
+**The pair operator.** The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\tilde{Ξ}^{\mathrm{spn}}=(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R)$ and
 $$
-\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr).
+\mathbb{D}\tilde{Ξ}^{\mathrm{spn}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L\bigr).
 $$
-Then $\mathbb{D}^2=\Box I$, and the massive equation is $(\mathbb{D}-m)\Psi=0$. Its Green matrix is $\mathcal{S}=(\mathbb{D}+m)G$ with $(\Box-m^2)G=\delta$, so $(\mathbb{D}-m)\mathcal{S}=\delta I$. The operator is the pair written once; it is not a new object, and it contains no matrix generator.
+Then $\mathbb{D}^2=\Box I$, and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{spn}}=0$. Its Green matrix is $\mathcal{S}=(\mathbb{D}+m)G$ with $(\Box-m^2)G=\delta$, so $(\mathbb{D}-m)\mathcal{S}=\delta I$. The operator is the pair written once; it is not a new object, and it contains no matrix generator.
 
-**Plain $\mathbb{D}$ is $\mathbb{D}_{\tilde\nabla}$.** The glyph carries a subscript when the factor is not the material gradient, and it drops the subscript when it is: $\mathbb{D}_{p}$ for the constant momentum covector, so the symbol, and an element in parentheses, $\mathbb{D}(\tilde K)$, because a subscript on this glyph already means a factor while a letter on its right, $\mathbb{D}\Psi$, means the field acted on. The same rule governs the gradient itself, which is written $\tilde\nabla$ bare and takes $\natural$ or a sector label only where a second one is in play. Neither glyph takes a mark for a chart.
+**Plain $\mathbb{D}$ is $\mathbb{D}_{\tilde\nabla}$.** The glyph carries a subscript when the factor is not the material gradient, and it drops the subscript when it is: $\mathbb{D}_{p}$ for the constant momentum covector, so the symbol, and an element in parentheses, $\mathbb{D}(\tilde K)$, because a subscript on this glyph already means a factor while a letter on its right, $\mathbb{D}\tilde{Ξ}^{\mathrm{spn}}$, means the field acted on. The same rule governs the gradient itself, which is written $\tilde\nabla$ bare and takes $\natural$ or a sector label only where a second one is in play. Neither glyph takes a mark for a chart.
 
 **A continuation is a change of coordinate, not of operator.** The Wick rotation $t'\mapsto-i\tau$ sends $Q_t=ict'$ to $Q_t=c\tau$, and the four terms of $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ are untouched, each being the derivative with respect to the same coordinate under the same name; the list of coordinates is now $(c\tau,x,y,z)$, all real. What the continuation changes is one sign, $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$ on the material sector against $+\partial^2/\partial x_4^2$ on the real-quaternion slice, and that sign is the whole of the difference between the hyperbolic $\Box$ and the elliptic operator. So the gradient read on the continued slice is $\tilde\nabla$, and the d'Alembertian read there is $\Box$; the substitution is written on the *coordinate*, $t'\mapsto-i\tau$, and never on the operator.
 
@@ -332,13 +332,13 @@ $$
 a scalar, the **contraction** of the derivative with the **conjugated** field, all four signs plus because the conjugation and the derivative together supply the sign vector. Taken on the scalar field it gives the **kinetic density**, the scalar part of the product of the two conjugated gradients,
 
 $$
-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\Phi^{*}}{\partial Q_\mu}\frac{\partial\Phi}{\partial Q_\mu} ,
+\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\bigr]=\sum_{\mu\in\{t,x,y,z\}}\frac{\partialΞ^{*}}{\partial Q_\mu}\frac{\partialΞ}{\partial Q_\mu} ,
 $$
 
-in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the material sector, so that scalar part is $-c^{-2}\lvert\partial\chi^{\mathrm{scl}}/\partial t'\rvert^2+\lvert\nabla\chi^{\mathrm{scl}}\rvert^2$, and the kinetic term the series writes is
+in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the material sector, so that scalar part is $-c^{-2}\lvert\partial\xi^{\mathrm{scl}}/\partial t'\rvert^2+\lvert\nabla\xi^{\mathrm{scl}}\rvert^2$, and the kinetic term the series writes is
 
 $$
-\mathcal L^{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\frac{1}{c^2}\Bigl|\frac{\partial\chi^{\mathrm{scl}}}{\partial t'}\Bigr|^2-\lvert\nabla\chi^{\mathrm{scl}}\rvert^2 ,
+\mathcal L^{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\bigr]=\frac{1}{c^2}\Bigl|\frac{\partial\xi^{\mathrm{scl}}}{\partial t'}\Bigr|^2-\lvert\nabla\xi^{\mathrm{scl}}\rvert^2 ,
 $$
 
 the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the material sector** the form itself is $-\frac{i}{c}\frac{\partial\bar Q_{\mathrm{f}t}}{\partial t'}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$.
@@ -411,7 +411,7 @@ $$
 
 The label is written **before** the conjugation, in the order the operator is built: the family first, the involution second. The conjugate is not a second operator; it is the same sum with $\natural$ read on the units, and its coefficients are the same scalars.
 
-**The side.** Both members act from the left. The position of the operator names the side, as it does for every field of the series, and no glyph names it: a right action on $\psi$ is the left action of $\tilde\nabla^{\mathrm{gco},\natural}$ on $\psi^{\natural}$, by the exchange of §*The Two Sides and the Renaming Theorem*.
+**The side.** Both members act from the left. The position of the operator names the side, as it does for every field of the series, and no glyph names it: a right action on $\tilde{Ξ}^{\mathrm{spn}}$ is the left action of $\tilde\nabla^{\mathrm{gco},\natural}$ on $\tilde{Ξ}^{\mathrm{spn}\natural}$, by the exchange of §*The Two Sides and the Renaming Theorem*.
 
 **The curvature and the square.** The components do not commute, and their commutator carries no derivative:
 
@@ -449,15 +449,15 @@ $$
 
 **With a connection nothing changes.** The components of $\tilde\nabla^{\mathrm{gco}}$ are central scalars, so the same term-by-term computation gives $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla^{\mathrm{gco}}}\bigr)^{\natural}=\tilde\nabla^{\mathrm{gco},\natural}\tilde Q_1^{\natural}$, at the same residual, with $\natural$ again fixing the coefficients and reading the units alone.
 
-**The instance that hides the generality.** The chiral pair is the case usually quoted. From $\tilde\nabla^{\natural}\Psi_L=m\Psi_R$, transposing with $\tilde Q_1=\Psi_L^{\natural}$ and using $m^{\natural}=m$,
+**The instance that hides the generality.** The chiral pair is the case usually quoted. From $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, transposing with $\tilde Q_1=\tilde{Ξ}^{\mathrm{spn}\natural}_L$ and using $m^{\natural}=m$,
 
 $$
-\tilde\nabla^{\natural}\Psi_L=m\,\Psi_R
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\,\tilde{Ξ}^{\mathrm{spn}}_R
 \qquad\Longrightarrow\qquad
-\Psi_L^{\natural}\overleftarrow{\tilde\nabla}=m\,\Psi_R^{\natural},
+\tilde{Ξ}^{\mathrm{spn}\natural}_L\overleftarrow{\tilde\nabla}=m\,\tilde{Ξ}^{\mathrm{spn}\natural}_R,
 $$
 
-one line, with the derivative now written to the right of $\Psi_L^{\natural}$ and the same mass in place. Read alone, the pair suggests that the right action is a property of the Dirac equation. It is not: the two lines hold of $\tilde\nabla\Psi_R=m\Psi_L$ as well, of a massless field, and of any equation in which one field stands to the right of a derivative. The equation supplies the right-hand side; the identity does not depend on it.
+one line, with the derivative now written to the right of $\tilde{Ξ}^{\mathrm{spn}\natural}_L$ and the same mass in place. Read alone, the pair suggests that the right action is a property of the Dirac equation. It is not: the two lines hold of $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$ as well, of a massless field, and of any equation in which one field stands to the right of a derivative. The equation supplies the right-hand side; the identity does not depend on it.
 
 **Why the superscript $R$ is nevertheless written.** The identity holds for a field, and a product of fields is a field. What it does not do is move the derivative off one factor of a product while the other stays. On $\tilde Q_1\tilde Q_2$ the Leibniz rule gives
 
@@ -479,7 +479,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -501,9 +501,9 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator, the sandwich and the inner derivation. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the natural conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
+An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator, the sandwich and the inner derivation. The side of an action is position, $D\tilde{Ξ}^{\mathrm{spn}}$ against $\tilde{Ξ}^{\mathrm{spn}} D$; the two are exchanged by the natural conjugation, $(\tilde{Ξ}^{\mathrm{spn}} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\mathrm{spn}\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
 
-A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power or a name, never a frame slot: every coordinate, component, basis vector, frame cell and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial Q_\mu=\partial/\partial q_\mu+\partial/\partial(iq'_\mu)$. The gradient is $\tilde\nabla$, not pure. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, read on the material sector as $\Delta-c^{-2}\partial^2/\partial t'^2$, and every article uses this one operator with the mass equation $(\Box-m^2c^2/\hbar^2)\psi=0$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla^{\mathrm{gco}}=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$, and it carries a label rather than a letter of its own.
+A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power or a name, never a frame slot: every coordinate, component, basis vector, frame cell and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial Q_\mu=\partial/\partial q_\mu+\partial/\partial(iq'_\mu)$. The gradient is $\tilde\nabla$, not pure. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, read on the material sector as $\Delta-c^{-2}\partial^2/\partial t'^2$, and every article uses this one operator with the mass equation $(\Box-m^2c^2/\hbar^2)\tilde{Ξ}^{\mathrm{spn}}=0$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla^{\mathrm{gco}}=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$, and it carries a label rather than a letter of its own.
 
 The four forms remain four distinct conventions and the norms two, because each form conjugates its own slot. The four closing subsections read the same gradient through the plain, quaternionic, Hermitian and Krein products, each with its form and its norm, and the signs follow from the algebra rather than from a choice of metric.
 
@@ -521,7 +521,7 @@ The four forms remain four distinct conventions and the norms two, because each 
 | $\tilde\nabla^{\mathrm{gco}}$ | The gauge-covariant gradient, $\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$; its component $\tilde\nabla^{\mathrm{gco}}_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$, its conjugate $\tilde\nabla^{\mathrm{gco},\natural}$ |
 | $\Box$ | The d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ |
 | $^{\natural}$ | The natural conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
-| $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$ | The exchange of the two sides: a right action on $\psi$ is a left action on $\psi^{\natural}$ |
+| $(\tilde{Ξ}^{\mathrm{spn}} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\mathrm{spn}\natural}$ | The exchange of the two sides: a right action on $\tilde{Ξ}^{\mathrm{spn}}$ is a left action on $\tilde{Ξ}^{\mathrm{spn}\natural}$ |
 | $\nabla^{R}$ | The right gradient, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$; used only where a derivative meets two distinct factors |
 | $\overleftarrow{\ }$ | The long arrow over an operator: it acts on the factor written to its left, and the arrow points at that factor; it is not the short arrow of the pure part |
 | $\tilde Q_1\overleftarrow{\tilde\nabla}$ | The same gradient transposed, $\sum_\mu(\partial\tilde Q_1/\partial Q_\mu)e_\mu$; the right action, equal to $\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$ |

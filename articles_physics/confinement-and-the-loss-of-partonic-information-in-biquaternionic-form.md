@@ -171,7 +171,7 @@ with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3
 On general grounds the flow from an ultraviolet description to an infrared description is a **completely positive trace-preserving map** between state spaces, and relative entropy is monotone under it:
 
 $$
-S\bigl(\Phi(\tilde{Ϛ}_1)\,\big\|\,\Phi(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2).
+S\bigl(Ξ(\tilde{Ϛ}_1)\,\big\|\,Ξ(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2).
 $$
 
 The inequality is the precise sense in which the flow loses information: two partonic states that were distinguishable at the ultraviolet scale become less distinguishable, or indistinguishable, at the infrared scale. When the image of the map is a proper subalgebra — when distinct states are identified by it, as for the colour-singlet expectation of the next section — the inequality can be strict, and the left side vanishes identically whenever the two states share an image, however distinguishable they were under the full algebra. The restricted relative entropy computed above is exactly that case, and there the loss is total.
@@ -265,22 +265,22 @@ Two biquaternionic forms of the massive Dirac equation are in play here, and the
 **The one-sided pair.** The corpus's equation is the chiral pair on the element-valued field,
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R,
+\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
-Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde\Psi_L$ carries the $L$ value and $\tilde\Psi_R$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
+Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}^{\mathrm{spn}}_L$ carries the $L$ value and $\tilde{Ξ}^{\mathrm{spn}}_R$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
 
 $$
-\tilde\nabla\tilde\Psi_R=0,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0,
 \qquad
-\tilde\nabla^\natural\tilde\Psi_L=0,
+\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=0,
 $$
 
 one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.
 
-**The two-sided form.** The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries the source's four-component field $\Phi$ to a biquaternion-valued function $F=A[\Phi]$, under which the Dirac equation becomes the single equation
+**The two-sided form.** The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries the source's four-component field $Ξ$ to a biquaternion-valued function $F=A[Ξ]$, under which the Dirac equation becomes the single equation
 
 $$
 \mathcal NF=\left(i\frac{\partial}{\partial t'}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
@@ -294,40 +294,40 @@ $$
 \mathcal NF=-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0 .
 $$
 
-The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde\Psi=\mu\tilde\Psi$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
+The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=\mu\tilde{Ξ}^{\mathrm{spn}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
 
 ### The Linear Bag Model
 
-Let $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$, and let $\Phi$ be the source's four-component field, taken time-harmonic,
+Let $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
 
 $$
-\Phi(t',\vec q)=\Phi_\omega(\vec q)\,e^{\,i\omega t'},
+Ξ(t',\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega t'},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{\Phi_\omega e^{i\omega t'}}=\overline{\Phi_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega t'}}=\overline{Ξ_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_k u_k\vec e_k$,
 
 $$
-\left(\sum_{k=1}^{3}u_k\,\vec e_k\right)\Phi_\omega(\vec q)=i\,\Phi_\omega(\vec q)
+\left(\sum_{k=1}^{3}u_k\,\vec e_k\right)Ξ_\omega(\vec q)=i\,Ξ_\omega(\vec q)
 \qquad(\vec q\in\partial\Omega),
 $$
 
-where $\vec u$ is the unit outward normal. The source's operator carried a constant right factor beside the left one; no right factor is carried here, because the dictionary's spatial coefficient is left multiplication by $\vec e_k$ — the same coefficient that carries the spatial derivative in $\mathcal N$ above — and not a left factor times a fixed right one. For a unit normal the element squares to $-e_t$, so the condition is carried by the element $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$, which reads $\Phi_\omega=P_{\vec u}\Phi_\omega$: one half of the field is kept at the surface and one half is removed, and that removal is the ban on the flow. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $\Phi_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
+where $\vec u$ is the unit outward normal. The source's operator carried a constant right factor beside the left one; no right factor is carried here, because the dictionary's spatial coefficient is left multiplication by $\vec e_k$ — the same coefficient that carries the spatial derivative in $\mathcal N$ above — and not a left factor times a fixed right one. For a unit normal the element squares to $-e_t$, so the condition is carried by the element $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$, which reads $Ξ_\omega=P_{\vec u}Ξ_\omega$: one half of the field is kept at the surface and one half is removed, and that removal is the ban on the flow. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $Ξ_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
 
 ### The Biquaternionic Reduction
 
 The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work. Four letters of the source are operators and not elements, and they are flagged once here: $u^{\pm}$ are the two halves of the change of variables, acting on the pair (field, conjugate); $S^{\pm}$, $S_\alpha$ and $K_\alpha$ are operators on the module, the first two selecting a part of the boundary data and the third an integral operator; and $P_\alpha=\tfrac12(I+S_\alpha)$ is an operator, with $I$ the identity operator. None of them is an element of the algebra, and none of them is written as one.
 
-**A real-linear bijection of the source's module onto the algebra.** There is a bijection $A$ from the source's four-component functions $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, and it is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the central imaginary of the source's field becomes a right action of the algebra,
+**A real-linear bijection of the source's module onto the algebra.** There is a bijection $A$ from the source's four-component functions $Ξ: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[Ξ]$, and it is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the central imaginary of the source's field becomes a right action of the algebra,
 
 $$
-A(i\Phi) = -A(\Phi)\,\vec e_z ,
+A(iΞ) = -A(Ξ)\,\vec e_z ,
 $$
 
-that is $\psi\mapsto-\psi\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
+that is $\tilde{Ξ}^{\mathrm{spn}}\mapsto-\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
 
-**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\psi\mapsto\psi b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
+**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
 
 $$
 R = D_3 + i\frac{\partial}{\partial t'}\,M_{i\vec e_x} - m M_{\vec e_y}
@@ -453,7 +453,7 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 
 The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive.
 
-The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose subscripts $L$ and $R$ are the two values of the chirality and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\bigl(\sum_k u_k\vec e_k\bigr)\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
+The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose subscripts $L$ and $R$ are the two values of the chirality and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\bigl(\sum_k u_k\vec e_k\bigr)Ξ_\omega = iΞ_\omega$ on the surface, which bans the flow of the field out of the region.
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the source's four-component field to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the boundary condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
@@ -487,7 +487,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}$ | The trace, twice the scalar part, *Norm and Pairing Conventions* |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
@@ -497,7 +497,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in\mathcal Z \iff \omega^2 = m^2$ |
 | $\mathcal Z = \{\tilde Q\neq0 : \langle\tilde Q\rangle_{\natural}=0\}$ | Zero-divisor set; the mass shell in parameter space |
 | $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | The two complementary boundary operators of the module; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |
-| $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ | Element of the algebra, acting on the left; $\Phi_\omega=P_{\vec u}\Phi_\omega$ is the linear condition |
+| $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ | Element of the algebra, acting on the left; $Ξ_\omega=P_{\vec u}Ξ_\omega$ is the linear condition |
 | $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ | The bag reduced to one boundary integral equation |
 | **Standard QCD notation, not framework objects** | |
 | $SU(3)$, $N_c = 3$, $\mathbf{3}$, $\mathbf{8}$ | Colour group, number of colours, quark, gluon — no route yet |

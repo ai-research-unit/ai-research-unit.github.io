@@ -17,7 +17,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec v_b$ (or $\vec u_{\mathrm b}$) denotes a boost direction and $\psi$ a rapidity.
+and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec v_b$ (or $\vec u_{\mathrm b}$) denotes a boost direction and $\theta^{\mathrm{rpd}}$ a rapidity.
 
 ## Rotors, Boosts, and Rotations
 
@@ -38,11 +38,11 @@ because the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\nat
 
 Two families of rotors have a direct geometric meaning.
 
-A **pure boost** along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\vec u_{\mathrm b}^2=-e_t$) with **rapidity** $\psi$ is
+A **pure boost** along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\vec u_{\mathrm b}^2=-e_t$) with **rapidity** $\theta^{\mathrm{rpd}}$ is
 $$
-\tilde U_{\mathrm b}=\exp\!\left(\frac{\psi}{2}\,i\vec u_{\mathrm b}\right)
-=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
-\qquad \tanh\psi=\frac{v_b}{c},
+\tilde U_{\mathrm b}=\exp\!\left(\frac{\theta^{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right)
+=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad \tanh\theta^{\mathrm{rpd}}=\frac{v_b}{c},
 $$
 where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, hence lies in $\mathbb{M}_+$, and it has unit norm; with the positivity required by the polar word it is the boost factor of a general rotor. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
 $$
@@ -71,7 +71,7 @@ The identity is $e_t$, and the inverse is the quaternion conjugate,
 $$
 \tilde U^{\mathrm{lor}}{}^{-1}=\tilde U^{\mathrm{lor}}{}^{\natural},
 $$
-since $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=\tilde U^{\mathrm{lor}}{}^{\natural}\tilde U^{\mathrm{lor}}=\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U_{\mathrm b}(\vec u_{\mathrm b},\psi)^{-1}=\tilde U_{\mathrm b}(\vec u_{\mathrm b},-\psi)=\tilde U_{\mathrm b}^{\natural}$, and for a rotation $\tilde u_{\mathrm r}(\vec u_{\mathrm r},\theta)^{-1}=\tilde u_{\mathrm r}(\vec u_{\mathrm r},-\theta)$.
+since $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=\tilde U^{\mathrm{lor}}{}^{\natural}\tilde U^{\mathrm{lor}}=\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U_{\mathrm b}(\vec u_{\mathrm b},\theta^{\mathrm{rpd}})^{-1}=\tilde U_{\mathrm b}(\vec u_{\mathrm b},-\theta^{\mathrm{rpd}})=\tilde U_{\mathrm b}^{\natural}$, and for a rotation $\tilde u_{\mathrm r}(\vec u_{\mathrm r},\theta)^{-1}=\tilde u_{\mathrm r}(\vec u_{\mathrm r},-\theta)$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
@@ -117,11 +117,11 @@ Physically the unit group is the whole linear group of the framework: $GL_2(\mat
 
 The elementary reason that the boosts do not form a subgroup is visible in the product of two boost rotors. Let
 $$
-\tilde U^{\mathrm{lor}}_{1}=\cosh\frac{\psi_1}{2}+i\sinh\frac{\psi_1}{2}\vec u_x,
+\tilde U^{\mathrm{lor}}_{1}=\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\vec u_x,
 \qquad
-\tilde U^{\mathrm{lor}}_{2}=\cosh\frac{\psi_2}{2}+i\sinh\frac{\psi_2}{2}\vec u_y,
+\tilde U^{\mathrm{lor}}_{2}=\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\vec u_y,
 $$
-and write $c_i=\cosh(\psi_i/2)$, $s_i=\sinh(\psi_i/2)$. Using $\vec u_x\vec u_y=-\,\vec u_x\cdot\vec u_y+\vec u_x\times\vec u_y$ for pure real unit quaternions, the product is
+and write $c_i=\cosh(\theta^{\mathrm{rpd}}_i/2)$, $s_i=\sinh(\theta^{\mathrm{rpd}}_i/2)$. Using $\vec u_x\vec u_y=-\,\vec u_x\cdot\vec u_y+\vec u_x\times\vec u_y$ for pure real unit quaternions, the product is
 $$
 \tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}
 = \underbrace{\bigl(c_1c_2+s_1s_2\,\vec u_x\cdot\vec u_y\bigr)
@@ -146,9 +146,9 @@ $$
 The factor $\tilde U_{\mathrm b}$ is a boost; the factor $\tilde u_{\mathrm r}$ is the **Thomas–Wigner rotation**. If $\theta\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\theta^{\mathrm{wgn}}$ is determined by
 $$
 \boxed{\ \tan\frac{\theta^{\mathrm{wgn}}}{2}
-=\frac{\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\sin\theta}
-{\cosh\frac{\psi_1}{2}\,\cosh\frac{\psi_2}{2}
-+\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\cos\theta}\ }
+=\frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\,\sin\theta}
+{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}
++\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\,\cos\theta}\ }
 $$
 and the rotation axis is the line through $\vec u_x\times\vec u_y$. With the rotation rotor written as $\tilde u_{\mathrm r}=\cos(\theta^{\mathrm{wgn}}/2)+\sin(\theta^{\mathrm{wgn}}/2)\vec u_{\mathrm r}$, the axis for the product $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$ in the order written is
 $$
@@ -156,23 +156,23 @@ $$
 $$
 reversing the order of the two boosts reverses the sense of the rotation, while leaving the angle $\theta^{\mathrm{wgn}}$ unchanged.
 
-The boost factor $\tilde U_{\mathrm b}$ has rapidity $\psi_{\mathrm c}$ fixed by the usual composite-rapidity relation
+The boost factor $\tilde U_{\mathrm b}$ has rapidity $\theta^{\mathrm{rpd}}_{\mathrm c}$ fixed by the usual composite-rapidity relation
 $$
-\cosh\psi_{\mathrm c}
-=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta ,
+\cosh\theta^{\mathrm{rpd}}_{\mathrm c}
+=\cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2+\sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2\cos\theta ,
 $$
 that is, the rapidity of the relativistic composition of the two boost velocities. The rotation factor is the obstruction to the composed transformation being a pure boost.
 
 Several special cases are worth recording.
 
-- **Collinear boosts** ($\theta=0$ or $\theta=\pi$): $\sin\theta=0$, so $\theta^{\mathrm{wgn}}=0$ and the product is a pure boost. For $\theta=0$ the rapidities add, $\psi_{\mathrm c}=\psi_1+\psi_2$; for $\theta=\pi$ they subtract, $\psi_{\mathrm c}=|\psi_1-\psi_2|$. In both cases rapidities combine exactly as for collinear velocities.
-- **One trivial boost** ($\psi_1=0$ or $\psi_2=0$): $\theta^{\mathrm{wgn}}=0$, as it must be.
+- **Collinear boosts** ($\theta=0$ or $\theta=\pi$): $\sin\theta=0$, so $\theta^{\mathrm{wgn}}=0$ and the product is a pure boost. For $\theta=0$ the rapidities add, $\theta^{\mathrm{rpd}}_{\mathrm c}=\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2$; for $\theta=\pi$ they subtract, $\theta^{\mathrm{rpd}}_{\mathrm c}=|\theta^{\mathrm{rpd}}_1-\theta^{\mathrm{rpd}}_2|$. In both cases rapidities combine exactly as for collinear velocities.
+- **One trivial boost** ($\theta^{\mathrm{rpd}}_1=0$ or $\theta^{\mathrm{rpd}}_2=0$): $\theta^{\mathrm{wgn}}=0$, as it must be.
 - **Small velocities.** For $v_1,v_2\ll c$, expanding the formula gives
 $$
 \theta^{\mathrm{wgn}}\approx\frac{1}{2}\frac{|\vec v_1\times\vec v_2|}{c^2},
 $$
 the familiar leading Thomas-precession angle. For two boosts of $0.01\,c$ at right angles this gives $\theta^{\mathrm{wgn}}\approx5.0\times10^{-5}$ rad.
-- **Large rapidities.** If $\psi_1,\psi_2\to\infty$ at fixed $\theta\in(0,\pi)$, the formula gives $\tan(\theta^{\mathrm{wgn}}/2)\to\tan(\theta/2)$, hence $\theta^{\mathrm{wgn}}\to\theta$. The limiting Wigner angle is the angle between the two boost directions.
+- **Large rapidities.** If $\theta^{\mathrm{rpd}}_1,\theta^{\mathrm{rpd}}_2\to\infty$ at fixed $\theta\in(0,\pi)$, the formula gives $\tan(\theta^{\mathrm{wgn}}/2)\to\tan(\theta/2)$, hence $\theta^{\mathrm{wgn}}\to\theta$. The limiting Wigner angle is the angle between the two boost directions.
 
 The composition law of a boost $\tilde U_{\mathrm b}$ and a rotation $\tilde u_{\mathrm r}$ is immediate: $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\tilde u_{\mathrm r}\tilde U_{\mathrm b}$ are both unit-norm biquaternions and both correspond to general Lorentz transformations, but they are generally different elements of the group, differing by the rotation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{-1}\tilde u_{\mathrm r}\tilde U_{\mathrm b}$; the non-commutativity of boosts and rotations is the group-level statement of the same non-closure.
 
@@ -378,9 +378,9 @@ $$
 M=\{\operatorname{diag}(u,u^{-1}):|u|=1\}\cong \mathrm{U}(1),\qquad
 A=\{\operatorname{diag}(\exp(t/2),\exp(-t/2)):t\in\mathbb{R}\},
 $$
-and $N$ unipotent. For $m\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the $*$-unitary character $\chi_{m,\nu}(man)=u^m\exp(i\nu t)$ induces a $*$-unitary representation
+and $N$ unipotent. For $m\in\mathbb{Z}$ and $\nu\in\mathbb{R}$ the $*$-unitary character $\xi_{m,\nu}(man)=u^m\exp(i\nu t)$ induces a $*$-unitary representation
 $$
-\pi_{m,\nu}=\operatorname{Ind}_P^G(\chi_{m,\nu}),
+\pi_{m,\nu}=\operatorname{Ind}_P^G(\xi_{m,\nu}),
 $$
 the **principal series**: $*$-unitary by construction, irreducible for generic parameters and tempered for $\nu\in\mathbb{R}$, with $m$ a discrete parameter and $\nu$ a continuous one. Together with the **complementary series**, whose continuous parameter is purely imaginary and bounded, and the trivial representation, this is the $*$-unitary dual of $SL(2,\mathbb{C})$; the finite-dimensional polynomial representations are not in it, except for the trivial one. The compact subgroup $SU(2)$ supplies the finite-dimensional multiplets, and the passage from its discrete highest weights to the continuous parameter of the principal series is the complexification of the $*$-unitary dual.
 
@@ -425,10 +425,10 @@ The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of 
 Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
 \tan\frac{\theta^{\mathrm{wgn}}}{2}
-=\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta}
-{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
+=\frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta}
+{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta},
 $$
-about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation.
+about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\theta^{\mathrm{rpd}}_{\mathrm c}=\cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2+\sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation.
 
 The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $\vec e_k$ and boosts $K_k=i\vec e_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
 
@@ -448,9 +448,9 @@ The group that carries the transformations is represented as follows. The group 
 | $\tilde U^{\mathrm{lor}}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\tilde U_{\mathrm b}=\cosh\frac\psi2+i\sinh\frac\psi2\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm b}=\cosh\frac\theta^{\mathrm{rpd}}2+i\sinh\frac\theta^{\mathrm{rpd}}2\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r}=\cos\frac\theta2+\sin\frac\theta2\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
-| $\psi$ | Rapidity, $\tanh\psi=v_b/c$ |
+| $\theta^{\mathrm{rpd}}$ | Rapidity, $\tanh\theta^{\mathrm{rpd}}=v_b/c$ |
 | $\theta^{\mathrm{wgn}}$ | Thomas–Wigner rotation angle |
 | $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Cartan (polar) decomposition: boost times rotation |
 | $\vec e_k$, $K_k=i\vec e_k$ | Rotation and boost generators |
@@ -465,7 +465,7 @@ The group that carries the transformations is represented as follows. The group 
 | $(\lambda_1,\lambda_2)$ | Highest weight of an algebraic representation of $GL_2(\mathbb{C})$ |
 | $V_s$ | Irreducible representation of spin $s$, highest weight $2s$, dimension $2s+1$ |
 | $V_{1/2}^{\otimes N}$ | Ballot-number decomposition of the tensor powers of the spinor |
-| $\operatorname{Ind}_P^G(\chi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
+| $\operatorname{Ind}_P^G(\xi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
 | $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |

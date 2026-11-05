@@ -219,7 +219,7 @@ $$
 \tag{9.2}
 $$
 
-solves the nonlinear system. The paper calls $F$ the field **associated** with the linear field $F_0$, and notes the more general form $F = F_0\exp(i\Phi(t',\vec r))$ with $\Phi$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,
+solves the nonlinear system. The paper calls $F$ the field **associated** with the linear field $F_0$, and notes the more general form $F = F_0\exp(iΞ(t',\vec r))$ with $Ξ$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,
 
 $$
 DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial/\partial t'f - iF_0\times\nabla f\bigr),
@@ -228,7 +228,7 @@ $$
 
 together with the observation that the equations then reduce to its (9.4), which hold because the quantities $\tfrac12F\cdot F^{*}$, $\tfrac{i}{2}F\times F^{*}$ and $(F_0\vec k_1)F_0^{*} + (F_0^{*}\vec k_1)F_0$ are real. Both steps were checked. The expression (9.3) is exact for a **non-constant** Maxwell $F_0$ as well, to $9.9 \times 10^{-16}$: the terms in $DF_0$ that the product rule would appear to require cancel precisely because $F_0$ is Maxwell. And the conclusion (9.2) was verified at the floating-point floor on three different backgrounds: a static inhomogeneous Maxwell field, with an extra general phase, $1.2 \times 10^{-15}$; and sums of one, two and three Maxwell plane waves, each multiplied by a common extra phase, at worst $4.7 \times 10^{-15}$ over $100$ random samplings each. The theorem is a real one and it was not previously in the corpus.
 
-Its consequence for the solution set is large. Taking $F_0$ constant — a legitimate Maxwell field — gives $F = F_0\exp(i\Phi)$, that is, every constant-amplitude plane wave with an arbitrary real frequency and wave vector, which is the result quoted above. Taking $F_0$ to be any Maxwell field and $f = 1$ gives the embedding of the previous section. Between those extremes the theorem supplies a family far wider than either, and it explains why the examples of the later sections — the Coulomb wave, the plane wave, the standing structures of section 14 — are solutions without each needing its own check.
+Its consequence for the solution set is large. Taking $F_0$ constant — a legitimate Maxwell field — gives $F = F_0\exp(iΞ)$, that is, every constant-amplitude plane wave with an arbitrary real frequency and wave vector, which is the result quoted above. Taking $F_0$ to be any Maxwell field and $f = 1$ gives the embedding of the previous section. Between those extremes the theorem supplies a family far wider than either, and it explains why the examples of the later sections — the Coulomb wave, the plane wave, the standing structures of section 14 — are solutions without each needing its own check.
 
 ### The Central-Symmetric Solution and the Electromagnetic Charge
 
@@ -241,7 +241,7 @@ $$
 
 where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for **any** phase function, not only a linear one: with $\theta^{\mathrm{pha}}(t') = \cos(\omega t')$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta^{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial t'f\} = s\,\partial/\partial t's = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta^{\mathrm{pha}}_r = 0$ and $s = \alpha/r^3$. The **phase is therefore left completely free** — the equations fix the spatial profile and the static modulus, never $\theta^{\mathrm{pha}}(t')$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.
 
-The paper also gives the covariant form, its (12.11): $F = F_0\exp(i\Phi)$ with $F_0$ the Coulomb field transformed to the frame and $\Phi$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.
+The paper also gives the covariant form, its (12.11): $F = F_0\exp(iΞ)$ with $F_0$ the Coulomb field transformed to the frame and $Ξ$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.
 
 The paper also derives the charge from the singularity. Applying the gradient to the Coulomb field (12.10) in the rest frame gives its (13.16),
 

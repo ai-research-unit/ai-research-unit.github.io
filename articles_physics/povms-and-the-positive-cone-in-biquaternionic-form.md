@@ -154,7 +154,7 @@ $$
 \tilde{Ϛ}_y = \frac{\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}}{2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})},
 $$
 
-The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.
+The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $Ξ(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.
 
 ### The Polar Form of an Effect
 
@@ -173,7 +173,7 @@ $$
 =\tilde Q_{\mathrm{p},y}^{*}\tilde H_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}.
 $$
 
-The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde K_y$. For an invertible amplitude in the Cartan word $r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the singular values are $r e^{\pm\psi_w/2}$, so the effect has eigenvalues $r^{2}e^{\pm\psi_w}$: the scale and the rapidity survive and the angles drop out. The effect therefore sees the strength but not the backaction: $\tilde K_y$ and $\tilde W\tilde K_y$ with $\tilde W$ $*$-unitary have the same effect and different polar factors.
+The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde K_y$. For an invertible amplitude in the Cartan word $r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the singular values are $r e^{\pm\theta^{\mathrm{rpd}}_w/2}$, so the effect has eigenvalues $r^{2}e^{\pm\theta^{\mathrm{rpd}}_w}$: the scale and the rapidity survive and the angles drop out. The effect therefore sees the strength but not the backaction: $\tilde K_y$ and $\tilde W\tilde K_y$ with $\tilde W$ $*$-unitary have the same effect and different polar factors.
 
 The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=\tilde\Pi$; then $\tilde K_y=\tilde\Pi$, $\tilde H_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde K_y=\sqrt{\lambda}\,\tilde\Pi$, $\tilde H_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde E_y>0$; then $\tilde K_y$ is invertible, $\tilde H_{\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
 
@@ -215,15 +215,15 @@ since $\tilde{Ϛ}_k^2 = \tilde{Ϛ}_k$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_k) = 1$. A 
 
 ### Unambiguous discrimination
 
-Let two non-orthogonal pure states have overlap $c = |\langle\psi_0|\psi_1\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
+Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}^{\mathrm{spn}}_0|\tilde{Ξ}^{\mathrm{spn}}_1\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
 
 $$
-\tilde{E}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\psi_1^\perp\bigr), \qquad
-\tilde{E}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\psi_0^\perp\bigr), \qquad
+\tilde{E}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}^{\mathrm{spn}\perp}_1\bigr), \qquad
+\tilde{E}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}^{\mathrm{spn}\perp}_0\bigr), \qquad
 \tilde{E}_? = e_t-\tilde{E}_0-\tilde{E}_1 ,
 $$
 
-where $\tilde\Pi(\psi^\perp)$ is the idempotent orthogonal to $|\psi\rangle$. The effect $\tilde{E}_0$ annihilates $|\psi_1\rangle$, so the outcome $0$ certifies $|\psi_0\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_0+\tilde{E}_1$ is $1$ at this normalization, and the success probability for equal priors is
+where $\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}^{\mathrm{spn}}\rangle$. The effect $\tilde{E}_0$ annihilates $|\tilde{Ξ}^{\mathrm{spn}}_1\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}^{\mathrm{spn}}_0\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_0+\tilde{E}_1$ is $1$ at this normalization, and the success probability for equal priors is
 
 $$
 P_{\mathrm{succ}} = \mathrm{Sc}(\tilde{Ϛ}_0\tilde{E}_0^{*}) + \mathrm{Sc}(\tilde{Ϛ}_1\tilde{E}_1^{*})

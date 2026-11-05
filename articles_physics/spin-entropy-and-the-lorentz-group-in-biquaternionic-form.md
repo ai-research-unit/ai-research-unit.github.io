@@ -24,7 +24,7 @@ The findings are stated in advance.
 1. **The entropy is a function of the biquaternion norm alone.** For a state, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$ and $S = h((1+\sqrt{1-4N})/2)$; it vanishes on the pure states ($N = 0$) and equals one bit on the maximally mixed state ($N = \tfrac14$).
 2. **The compact subgroup leaves it invariant.** Conjugation by any $*$-unitary element preserves $\langle\cdot\rangle_{\natural}$ and hence $S$; since $SU(2)$ acts transitively on the spheres of the Bloch ball, the entropy is constant on every $SU(2)$ orbit and is a complete invariant of that orbit.
 3. **The physical Lorentz action leaves it invariant at sharp momentum.** The Wigner rotation is $*$-unitary, so $\langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ and the spin entropy is frame-independent for a momentum eigenstate.
-4. **The non-$*$-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\psi)/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
+4. **The non-$*$-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\theta^{\mathrm{rpd}})/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
@@ -136,20 +136,20 @@ $$
 N\!\left(\frac{\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*}}{\mathrm{Tr}(\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*})}\right)
 = \frac{\langle\tilde{Ϛ}\rangle_{\natural}}{\mathrm{Tr}(\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*})^2} .
 $$
-For the maximally mixed state the trace is $\cosh\psi$, and the normalized element has
+For the maximally mixed state the trace is $\cosh\theta^{\mathrm{rpd}}$, and the normalized element has
 $$
-N = \frac{1/4}{\cosh^2\psi}, \qquad
-|\vec r| = \sqrt{1-4N} = \tanh\psi ,
+N = \frac{1/4}{\cosh^2\theta^{\mathrm{rpd}}}, \qquad
+|\vec r| = \sqrt{1-4N} = \tanh\theta^{\mathrm{rpd}} ,
 $$
 so the congruence carries the maximally mixed state to the Bloch vector
 $$
-\vec r = \tanh\psi\,\vec u_{\mathrm b} ,
+\vec r = \tanh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} ,
 $$
-a state *closer to the pure boundary*, with entropy $h((1+\tanh\psi)/2)$ decreasing as the rapidity grows:
+a state *closer to the pure boundary*, with entropy $h((1+\tanh\theta^{\mathrm{rpd}})/2)$ decreasing as the rapidity grows:
 
-| $\psi$ | $0.2$ | $0.5$ | $1.0$ | $1.5$ | $2.5$ |
+| $\theta^{\mathrm{rpd}}$ | $0.2$ | $0.5$ | $1.0$ | $1.5$ | $2.5$ |
 |---|---|---|---|---|---|
-| $h\!\left(\frac{1+\tanh\psi}{2}\right)$ | $0.971713$ | $0.839942$ | $0.527065$ | $0.275360$ | $0.057967$ |
+| $h\!\left(\frac{1+\tanh\theta^{\mathrm{rpd}}}{2}\right)$ | $0.971713$ | $0.839942$ | $0.527065$ | $0.275360$ | $0.057967$ |
 
 A genuine quantum channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise its purity. The congruence does both, and the demonstration is decisive. The congruence is a map on the algebra — it is the correct action on the spinor ray and on the unnormalized idempotent — but it is not the transformation of the physical spin state, and the entropy is the quantity that exposes the difference most sharply.
 
@@ -161,7 +161,7 @@ $$
 $$
 The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is $*$-unitary — so the maximally mixed state is invariant; in the symmetric two-branch configuration below, the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
 
-| $\psi$ | $0.5$ | $1.0$ | $2.0$ | $3.0$ | $5.0$ |
+| $\theta^{\mathrm{rpd}}$ | $0.5$ | $1.0$ | $2.0$ | $3.0$ | $5.0$ |
 |---|---|---|---|---|---|
 | $\alpha$ | $7.50939^\circ$ | $14.11732^\circ$ | $23.06780^\circ$ | $27.26584^\circ$ | $29.61619^\circ$ |
 | $h\!\left(\frac{1+\cos\alpha}{2}\right)$ | $0.039902$ | $0.112969$ | $0.242196$ | $0.309540$ | $0.348220$ |
@@ -251,7 +251,7 @@ $$
 $$
 a function of the algebra's biquaternion norm alone. It vanishes on the pure states, where $N = 0$, and equals one bit on the maximally mixed state, where $N = \tfrac14$.
 
-The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\tilde{Ϛ}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ for every $*$-unitary $\tilde Q$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the $*$-unitary Wigner rotation $\tilde{Ϛ}\mapsto\tilde{W}\tilde{Ϛ}\tilde{W}^{*}$, and it is not invariant under the non-$*$-unitary congruence $\tilde{Ϛ}\mapsto\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ with entropy $h((1+\tanh\psi)/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
+The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\tilde{Ϛ}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ for every $*$-unitary $\tilde Q$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the $*$-unitary Wigner rotation $\tilde{Ϛ}\mapsto\tilde{W}\tilde{Ϛ}\tilde{W}^{*}$, and it is not invariant under the non-$*$-unitary congruence $\tilde{Ϛ}\mapsto\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$ with entropy $h((1+\tanh\theta^{\mathrm{rpd}})/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
 
 At uncertain momentum the boost acts by the unital mixed-$*$-unitary channel $\tilde{Ϛ}\mapsto\sum_iw_i\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
 
@@ -271,7 +271,7 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 | $\tilde{W}(\tilde U^{\mathrm{lor}},\tilde V)\in SU(2)$ | Wigner rotation |
 | $\tilde{Ϛ}\mapsto\tilde{W}\tilde{Ϛ}\tilde{W}^{*}$ | Physical spin action, entropy-preserving |
 | $\tilde{Ϛ}\mapsto\tilde U^{\mathrm{lor}}\tilde{Ϛ}\tilde U^{\mathrm{lor}}{}^{*}$ | Congruence, trace-changing, not a state map |
-| $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ | Image of the maximally mixed state under the congruence |
+| $\vec r = \tanh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | Image of the maximally mixed state under the congruence |
 | $\sum_iw_i\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}$ | Channel at uncertain momentum, unital |
 | $\alpha$ | Wigner angle |
 | $h((1+\cos\alpha)/2)$ | Dephased transverse-spin entropy |

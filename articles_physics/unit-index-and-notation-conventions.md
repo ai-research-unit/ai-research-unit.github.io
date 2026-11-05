@@ -31,7 +31,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 | Gravitational constant | $G$ | $\mathrm{m^3\,kg^{-1}\,s^{-2}}$ |
 | Permittivity and permeability | $\epsilon$, $\mu$ | $\mathrm{F\,m^{-1}}$, $\mathrm{H\,m^{-1}}$ |
 
-**The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\chi^{\mathrm{scp}}/c$ rather than $\chi^{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
+**The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi^{\mathrm{scp}}/c$ rather than $\xi^{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
 
 **The two writings of the temporal slot.** In the length coordinate the material position is $\tilde R = ict'\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $it'$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=ict'$ has $Q_t^2=-c^2{t'}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.
 
@@ -47,7 +47,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 
 - a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
 - a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
-- a transposition, $L^T$, $\psi^T$;
+- a transposition, $L^T$, $\tilde{Ξ}^{\mathrm{spn}T}$;
 - a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ (degree).
 
 **A low mark is the exclusive carrier of two things: an index and a label.**
@@ -80,7 +80,7 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 **The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Operator and Calculus Conventions*, §*The Operators*). The single exception is the **Fock layer**, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:
 
 $$
-a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad b^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Ϙ^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
+a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad b^{\mathrm{fop}\dagger},\quad \tilde{Ξ}^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Ϙ^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
 $$
 
 The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-i\hbar\nabla$ keeps its element glyph and never takes the Fock mark, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_k=\tfrac{\hbar}{2}\sigma_k$ is written $S_k$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no mark. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the mark, $a^{\mathrm{fop}}$.
@@ -89,9 +89,9 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 **The bar is the coefficient conjugation, and it is never the Dirac adjoint.** It is the involution of *Algebra and Element Conventions*, $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and it conjugates the coefficients of an element. The Dirac adjoint is not an involution of the algebra and takes no mark of its own: it is the adjoint of the column followed by the timelike frame cell, written as the two multipliers of that cell,
 $$
-\psi^{\dagger}\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} \;=\; \psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}} .
+\tilde{Ξ}^{\mathrm{spn}\dagger}\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} \;=\; \tilde{Ξ}^{\mathrm{spn}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}} .
 $$
-In a bilinear the cell multiplies the one that follows, $\psi^{\dagger}\bigl(iR_{\vec e_x}^{\mathrm{axf}}\Gamma\bigr)\psi$. No letter stands for the cell (*Matrix Representations Conventions*, §*The Clifford Structure*), and the bar is not reused for the composite: a display that writes $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ and reads it as the adjoint puts a conjugation and a frame cell under one mark. A display already written that way is read as the expression above, and the bar itself stays the conjugation, as in $\bar{\tilde Q}$.
+In a bilinear the cell multiplies the one that follows, $\tilde{Ξ}^{\mathrm{spn}\dagger}\bigl(iR_{\vec e_x}^{\mathrm{axf}}\Gamma\bigr)\tilde{Ξ}^{\mathrm{spn}}$. No letter stands for the cell (*Matrix Representations Conventions*, §*The Clifford Structure*), and the bar is not reused for the composite: a display that writes $\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ and reads it as the adjoint puts a conjugation and a frame cell under one mark. A display already written that way is read as the expression above, and the bar itself stays the conjugation, as in $\bar{\tilde Q}$.
 
 **The opposite algebra carries a different token.** The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an **algebra name**, where the Fock mark is written on a **Fock-operator glyph**. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.
 

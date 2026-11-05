@@ -578,16 +578,16 @@ This form does **not**, however, separate the two groups, and the point is worth
 **A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1 .
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = \cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta^{\mathrm{rpd}}}{2} = 1 .
 $$
 
 It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the state slice of the future light cone, with $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $\langle\tilde{Ϛ}\rangle_{\natural} = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ nor the plain form. On the maximally mixed state, for instance,
 
 $$
-\tilde U_{\mathrm b}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm b}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u_{\mathrm b}\right),
+\tilde U_{\mathrm b}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm b}^{*} = \tfrac{1}{2}\left(\cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}\right),
 $$
 
-whose trace is $\cosh\psi$, not $1$. A boost therefore maps the state cone into itself while moving the state off the state slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the finite-dimensional Lorentz transformation of a state is not $*$-unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean plain form.
+whose trace is $\cosh\theta^{\mathrm{rpd}}$, not $1$. A boost therefore maps the state cone into itself while moving the state off the state slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the finite-dimensional Lorentz transformation of a state is not $*$-unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean plain form.
 
 **The Wigner rotation.** The product of two boost rotors is not Hermitian in general — only when the two boosts are collinear. Its polar decomposition,
 

@@ -147,11 +147,11 @@ This is the central object of the retarded theory. Its scalar part is the scalar
 $$
 \tilde{A} = i\,a'_t\,e_t + \vec A,
 \qquad
-\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D}, \qquad
-\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
+\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D}, \qquad
+\vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\xi^{\mathrm{scp}} .
 $$
 
-The relation $\vec A = (\vec v/c^2)\chi^{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a **single biquaternion built from two elements of $\mathbb{M}_-$**, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.
+The relation $\vec A = (\vec v/c^2)\xi^{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a **single biquaternion built from two elements of $\mathbb{M}_-$**, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.
 
 ## The Spinor Square Root and the Invariant Retarded Distance
 
@@ -451,7 +451,7 @@ $$
 \left[\kappa^2 - \frac{\sin^2\theta\cos^2\theta^{\mathrm{azm}}}{\gamma^2}\right].
 $$
 
-Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\chi^{\mathrm{scp}}$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
+Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\xi^{\mathrm{scp}}$ vanishes for directions lying in the orbital plane (the plane containing $\vec\beta$ and $d\vec\beta/dt'_r$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
 
 **A remark on the temporal convention.** The distributions above are written per unit of the observer's time $t'$ and with $d\vec\beta/dt'_r$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t'_r$; because $dt' = \kappa\,dt'_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The physical total power is the same in either convention; the two distributions themselves are not, since they differ pointwise by the direction-dependent factor $\kappa$, so the sphere integral must be taken with that factor in the retarded-time form.
 

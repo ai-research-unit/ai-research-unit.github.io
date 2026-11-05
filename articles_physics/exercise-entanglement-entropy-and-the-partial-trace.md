@@ -18,15 +18,15 @@ is the binary entropy, with the convention $0\log 0=0$.
 
 ## The Exercise
 
-Two spin-$\tfrac{1}{2}$ particles are prepared in a pure state $|\psi\rangle$ of the two-qubit Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$. Let
+Two spin-$\tfrac{1}{2}$ particles are prepared in a pure state $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ of the two-qubit Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$. Let
 
 $$
-\rho=|\psi\rangle\langle\psi|,\qquad
+\rho=|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|,\qquad
 \rho_1=\mathrm{Tr}_2(\rho),\qquad
 \rho_2=\mathrm{Tr}_1(\rho),
 $$
 
-be the joint state and the two reduced states. The **entanglement entropy** of $|\psi\rangle$ is the von Neumann entropy of either reduced state,
+be the joint state and the two reduced states. The **entanglement entropy** of $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is the von Neumann entropy of either reduced state,
 
 $$
 S=-\,\mathrm{Tr}\!\left(\rho_1\log\rho_1\right).
@@ -38,7 +38,7 @@ The exercise has four parts.
 2. **A worked family.** For
 
 $$
-|\psi_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle,\qquad \theta\in[0,\tfrac{\pi}{4}],
+|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle,\qquad \theta\in[0,\tfrac{\pi}{4}],
 $$
 
 compute $\rho_1$ and $S$ explicitly, first in the standard formulation and then in the biquaternion formulation.
@@ -60,14 +60,14 @@ A fifth part, which is not a computation but a warning, is developed in the sect
 Write the pure state in the product basis,
 
 $$
-|\psi\rangle=\sum_{i,j\in\{0,1\}}M_{ij}\,|i\rangle|j\rangle,
+|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{i,j\in\{0,1\}}M_{ij}\,|i\rangle|j\rangle,
 \qquad |0\rangle=|\uparrow\rangle,\quad |1\rangle=|\downarrow\rangle,
 $$
 
 with a complex $2\times2$ coefficient matrix $M=(M_{ij})$. Normalisation is
 
 $$
-\langle\psi|\psi\rangle=\sum_{i,j}|M_{ij}|^2=\mathrm{Tr}(MM^\dagger)=1 .
+\langle\tilde{Ξ}^{\mathrm{spn}}|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{i,j}|M_{ij}|^2=\mathrm{Tr}(MM^\dagger)=1 .
 $$
 
 The partial traces are computed directly from this form. The matrix elements of $\rho_1$ are
@@ -98,10 +98,10 @@ $$
 M=U\Sigma V^\dagger,\qquad \Sigma=\mathrm{diag}(s_1,s_2),\quad s_1\ge s_2\ge 0,
 $$
 
-with $U,V$ $*$-unitary. The $s_i$ are the **Schmidt coefficients** of $|\psi\rangle$, and normalisation reads $s_1^2+s_2^2=1$. Substituting into $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives the **Schmidt decomposition**
+with $U,V$ $*$-unitary. The $s_i$ are the **Schmidt coefficients** of $|\tilde{Ξ}^{\mathrm{spn}}\rangle$, and normalisation reads $s_1^2+s_2^2=1$. Substituting into $|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives the **Schmidt decomposition**
 
 $$
-|\psi\rangle=s_1\,|u_x\rangle|v_1\rangle+s_2\,|u_y\rangle|v_2\rangle,
+|\tilde{Ξ}^{\mathrm{spn}}\rangle=s_1\,|u_x\rangle|v_1\rangle+s_2\,|u_y\rangle|v_2\rangle,
 $$
 
 where $|u_k\rangle=\sum_i U_{ik}|i\rangle$ and $|v_k\rangle=\sum_j V_{jk}|j\rangle$ are orthonormal bases of the two factors. The reduced states are then
@@ -123,8 +123,8 @@ using $s_1^2+s_2^2=1$ and $h(1-p)=h(p)$. The invariant on which the entanglement
 
 Two immediate consequences, which are part (c) of the exercise:
 
-- $S=0$ if and only if one Schmidt coefficient vanishes, i.e. $|\psi\rangle$ is a **product state** $|u\rangle|v\rangle$.
-- $S=\log 2$ if and only if $s_1=s_2=1/\sqrt2$, i.e. $|\psi\rangle$ is **maximally entangled**. The four Bell states are the canonical examples, but they are not the only ones: any state of the form $(\tilde{U}\otimes\tilde{V})|\Phi^+\rangle$ with local unitaries is maximally entangled.
+- $S=0$ if and only if one Schmidt coefficient vanishes, i.e. $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is a **product state** $|u\rangle|v\rangle$.
+- $S=\log 2$ if and only if $s_1=s_2=1/\sqrt2$, i.e. $|\tilde{Ξ}^{\mathrm{spn}}\rangle$ is **maximally entangled**. The four Bell states are the canonical examples, but they are not the only ones: any state of the form $(\tilde{U}\otimes\tilde{V})|Ξ^{+}\rangle$ with local unitaries is maximally entangled.
 
 The maximally entangled states are therefore a **continuum**, of three real dimensions among the six of the pure-state rays, and no finite catalogue exhausts them. A source that lists twelve patterns of maximally entangled states and claims they are all of them (Obojska, *Journal of Physics Communications* **4** (2020) 055018) is mistaken for exactly this reason: the twelve patterns are a measure-zero subset selected by an extra quotient rule on the amplitudes, and the family $\tfrac{1}{\sqrt2}(|00\rangle+\exp(i\theta^{\mathrm{pha}})|11\rangle)$ is a counterexample for every $\theta^{\mathrm{pha}}$ outside the discrete set the patterns allow. The computation is in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, in the section *A Claimed Enumeration of the Maximally Entangled States*.
 
@@ -134,9 +134,9 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 ### The biquaternion form of the worked family
 
-The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\psi_\theta\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
+The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
 
-For the state $|\psi_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
+For the state $|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
 
 $$
 R_{tt}=1,\qquad R_{tz}=R_{zt}=\cos 2\theta,\qquad R_{zz}=1,
@@ -145,7 +145,7 @@ $$
 R_{xx}=\sin 2\theta,\qquad R_{yy}=-\sin 2\theta,
 $$
 
-and all other $\mathrm{Ric}_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\psi_\theta\rangle\langle\psi_\theta|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
+and all other $\mathrm{Ric}_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle\langle\tilde{Ξ}^{\mathrm{spn}}_\theta|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
 
 $$
 \tilde\Pi_\theta=\tfrac14\Bigl(e_t\otimes e_t-\vec e_z\otimes \vec e_z
@@ -153,7 +153,7 @@ $$
 +i\cos2\theta\,\bigl(\vec e_z\otimes e_t+e_t\otimes \vec e_z\bigr)\Bigr).
 $$
 
-At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $\tilde\Pi_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.
+At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $\tilde\Pi_{Ξ^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|Ξ^{+}\rangle$.
 
 ### The partial trace
 
@@ -211,7 +211,7 @@ $$
 =h(\cos^2\theta)\;}.
 $$
 
-This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\psi_\theta\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{M}_+$.
+This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{M}_+$.
 
 At the endpoints:
 
@@ -222,7 +222,7 @@ $$
 \theta=\tfrac{\pi}{4}:\quad \tilde{Ϛ}_1=\tfrac12 e_t,\quad \vec r=0,\quad S=\log2 .
 $$
 
-The value at $\theta=\tfrac{\pi}{4}$ is $\log2$, the same entropy as the reduced state of the singlet computed in *Exercise: The Reduced State of an Entangled Subsystem*; here it appears as one endpoint of a continuous curve, at the maximally entangled Bell state $|\Phi^+\rangle$ rather than at the singlet.
+The value at $\theta=\tfrac{\pi}{4}$ is $\log2$, the same entropy as the reduced state of the singlet computed in *Exercise: The Reduced State of an Entangled Subsystem*; here it appears as one endpoint of a continuous curve, at the maximally entangled Bell state $|Ξ^{+}\rangle$ rather than at the singlet.
 
 ### The general biquaternion statement
 
@@ -303,10 +303,10 @@ Two qualifications belong with the verification, and neither is a defect of the 
 
 The fifth part of the exercise is a warning as much as a computation. The phrase "entanglement entropy" suggests that $S(\rho_1)$ measures the entanglement of the joint state. For **pure** joint states it does, by the Schmidt theorem. For **mixed** joint states it does not, and the counterexample is elementary.
 
-Consider the equal mixture of the two Bell idempotents $\tilde\Pi_{\Phi^+}$ and $\tilde\Pi_{\Phi^-}$,
+Consider the equal mixture of the two Bell idempotents $\tilde\Pi_{Ξ^+}$ and $\tilde\Pi_{Ξ^-}$,
 
 $$
-\tilde{Ϛ}^{\mathrm{mix}}=\tfrac12 \tilde\Pi_{\Phi^+}+\tfrac12 \tilde\Pi_{\Phi^-}.
+\tilde{Ϛ}^{\mathrm{mix}}=\tfrac12 \tilde\Pi_{Ξ^+}+\tfrac12 \tilde\Pi_{Ξ^-}.
 $$
 
 Its partial trace is $\tfrac12 e_t$ on each factor, since every Bell idempotent has $\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$ and the partial trace is linear. Hence
@@ -315,7 +315,7 @@ $$
 \tilde{Ϛ}_1=\tfrac12 e_t,\qquad |\vec r_1|=0,\qquad S(\tilde{Ϛ}_1)=\log2 .
 $$
 
-So the partial-trace entropy is maximal. But the joint state is **separable**. Using $\tilde\Pi_{\Phi^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
+So the partial-trace entropy is maximal. But the joint state is **separable**. Using $\tilde\Pi_{Ξ^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
 
 $$
 \tilde{Ϛ}^{\mathrm{mix}}=\tfrac14\left(e_t\otimes e_t-\vec e_z\otimes \vec e_z\right)
@@ -325,15 +325,15 @@ $$
 
 a classical mixture of the product states $|\uparrow\uparrow\rangle$ and $|\downarrow\downarrow\rangle$. Its entanglement is zero by any measure; its reduced entropy is maximal. The number $\log2$ here measures the mixedness of the *marginal*, not the entanglement of the *joint state*.
 
-The lesson is not that the partial trace is wrong but that its entropy has two roles that coincide only for pure states. For a pure $|\psi\rangle$, $S(\mathrm{Tr}_2|\psi\rangle\langle\psi|)$ is the entanglement entropy. For a mixed $\rho$, $S(\mathrm{Tr}_2\rho)$ is the entropy of a marginal; it is not an entanglement measure, and no function of $\rho_1$ alone can be one, because many joint states with different entanglement share the same marginals. The mixed-state measure — the entanglement of formation, or the relative entropy of entanglement — requires more than the partial trace, and is not developed in this series. That is a genuine gap, and it is the gap the title of this exercise does not close.
+The lesson is not that the partial trace is wrong but that its entropy has two roles that coincide only for pure states. For a pure $|\tilde{Ξ}^{\mathrm{spn}}\rangle$, $S(\mathrm{Tr}_2|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|)$ is the entanglement entropy. For a mixed $\rho$, $S(\mathrm{Tr}_2\rho)$ is the entropy of a marginal; it is not an entanglement measure, and no function of $\rho_1$ alone can be one, because many joint states with different entanglement share the same marginals. The mixed-state measure — the entanglement of formation, or the relative entropy of entanglement — requires more than the partial trace, and is not developed in this series. That is a genuine gap, and it is the gap the title of this exercise does not close.
 
 ## Further Problems
 
 The following problems extend the exercise. They are left to the reader; the first three are routine applications of the methods above, the last three raise the questions the methods do not settle.
 
-**P1 (the other real family).** For $|\psi\rangle=\cos\theta\,|\uparrow\downarrow\rangle+\sin\theta\,|\downarrow\uparrow\rangle$, compute $\rho_1$, $\rho_2$ and $S$. Show that $\rho_1$ and $S$ are *the same* as for the family of the worked solution, while $\rho_2$ has its two eigenvalues exchanged, so that the two families are indistinguishable by any measurement on the **first** particle, even though at $\theta=\tfrac{\pi}{4}$ they are the different Bell states $|\Psi^+\rangle$ and $|\Phi^+\rangle$. (Hint: the Schmidt coefficients are unchanged; the difference is in which factor carries which Schmidt vector, equivalently in the tensor terms of the idempotent.)
+**P1 (the other real family).** For $|\tilde{Ξ}^{\mathrm{spn}}\rangle=\cos\theta\,|\uparrow\downarrow\rangle+\sin\theta\,|\downarrow\uparrow\rangle$, compute $\rho_1$, $\rho_2$ and $S$. Show that $\rho_1$ and $S$ are *the same* as for the family of the worked solution, while $\rho_2$ has its two eigenvalues exchanged, so that the two families are indistinguishable by any measurement on the **first** particle, even though at $\theta=\tfrac{\pi}{4}$ they are the different Bell states $|\tilde{Ξ}^{\mathrm{spn}+}\rangle$ and $|Ξ^{+}\rangle$. (Hint: the Schmidt coefficients are unchanged; the difference is in which factor carries which Schmidt vector, equivalently in the tensor terms of the idempotent.)
 
-**P2 (general pure state).** For arbitrary $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$, express $S$ in terms of $\det M$. Show $S=h\!\left(\tfrac{1+\sqrt{1-4|\det M|^2}}{2}\right)$ and hence that $S$ is determined by $|\det M|$ alone. (For two qubits $s_1^2s_2^2=|\det M|^2$.)
+**P2 (general pure state).** For arbitrary $|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$, express $S$ in terms of $\det M$. Show $S=h\!\left(\tfrac{1+\sqrt{1-4|\det M|^2}}{2}\right)$ and hence that $S$ is determined by $|\det M|$ alone. (For two qubits $s_1^2s_2^2=|\det M|^2$.)
 
 **P3 (local invariance).** Show that under a local rotor conjugation $\tilde\Pi\mapsto(\tilde{U}_1\otimes\tilde{U}_2)\,\tilde\Pi\,(\tilde{U}_1^{*}\otimes\tilde{U}_2^{*})$ with $\tilde{U}_j\tilde{U}_j^{*}=e_t$, the reduced state transforms as $\tilde{Ϛ}_1\mapsto\tilde{U}_1\tilde{Ϛ}_1\tilde{U}_1^{*}$, and hence $S$ is invariant. In the biquaternion language, identify the induced action on the Bloch vectors $\vec r_1,\vec r_2$ and check that their lengths are unchanged.
 
@@ -352,7 +352,7 @@ $$
 
 which tends to $-\infty$ as $p\to1$. Interpret: as entanglement is switched on from a product state the entropy rises with an infinite slope in $p$, whereas at maximal entanglement ($p=\tfrac12$) the slope vanishes; the last increment of entanglement is entropically the cheapest.
 
-**P5 (the mixed-state question, unresolved).** For the Bell-diagonal mixture $\tilde{Ϛ}_p=p\tilde\Pi_{\Phi^+}+(1-p)\tilde\Pi_{\Phi^-}$, show that $\tilde{Ϛ}_1=\tfrac12 e_t$ and $S(\tilde{Ϛ}_1)=\log2$ for every $p\in[0,1]$, while the joint state is separable at least at $p=\tfrac12$. Determine the set of $p$ for which $\tilde{Ϛ}_p$ is entangled, and show that no function of $\tilde{Ϛ}_1$ can reproduce that set. What extra data about $\tilde{Ϛ}$ is needed? (The answer is the subject of the entanglement-of-formation literature; it is not developed in this series.)
+**P5 (the mixed-state question, unresolved).** For the Bell-diagonal mixture $\tilde{Ϛ}_p=p\tilde\Pi_{Ξ^+}+(1-p)\tilde\Pi_{Ξ^-}$, show that $\tilde{Ϛ}_1=\tfrac12 e_t$ and $S(\tilde{Ϛ}_1)=\log2$ for every $p\in[0,1]$, while the joint state is separable at least at $p=\tfrac12$. Determine the set of $p$ for which $\tilde{Ϛ}_p$ is entangled, and show that no function of $\tilde{Ϛ}_1$ can reproduce that set. What extra data about $\tilde{Ϛ}$ is needed? (The answer is the subject of the entanglement-of-formation literature; it is not developed in this series.)
 
 **P6 (purification).** Show that for any state $\tilde{Ϛ}_1$ of $\mathbb{M}_+$ there is a pure two-qubit idempotent $\tilde\Pi$ in $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Tr}_2(\tilde\Pi)=\tilde{Ϛ}_1$, and that the entanglement entropy of $\tilde\Pi$ equals $S(\tilde{Ϛ}_1)$. Conclude that the partial-trace entropy of a mixed state is the entanglement entropy of its **purification**, not of the state itself. This is the precise sense in which the partial trace does measure entanglement — of a larger, pure system.
 
@@ -373,13 +373,13 @@ The three exercises form a sequence: the first computes the reduced state, the s
 
 The entanglement entropy of a pure two-qubit state is the von Neumann entropy of either reduced state, $S=-\mathrm{Tr}(\rho_1\log\rho_1)$, and it is computed from the partial trace. The exercise worked the computation by two routes and reached the same number both times.
 
-**The Schmidt route.** Writing $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives $\rho_1=MM^\dagger$ and $\rho_2=M^\dagger M$. The singular values of $M$ are the Schmidt coefficients $s_1,s_2$, and the reduced states have the common spectrum $s_1^2,s_2^2$. Hence $S(\rho_1)=S(\rho_2)=h(s_1^2)$: the entropy depends on the Schmidt data alone, vanishes exactly on product states, and equals $\log2$ exactly on maximally entangled states.
+**The Schmidt route.** Writing $|\tilde{Ξ}^{\mathrm{spn}}\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives $\rho_1=MM^\dagger$ and $\rho_2=M^\dagger M$. The singular values of $M$ are the Schmidt coefficients $s_1,s_2$, and the reduced states have the common spectrum $s_1^2,s_2^2$. Hence $S(\rho_1)=S(\rho_2)=h(s_1^2)$: the entropy depends on the Schmidt data alone, vanishes exactly on product states, and equals $\log2$ exactly on maximally entangled states.
 
-**The biquaternion route.** For the family $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $\tilde\Pi_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\tilde{Ϛ}_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.
+**The biquaternion route.** For the family $|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $\tilde\Pi_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\tilde{Ϛ}_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.
 
 **The entropy functional.** The candidate of *The Informational Sector: States, Observables and Probability*, $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, is correct for states in the interior of the Bloch ball when the principal branch of the biquaternion logarithm is used. It is the trace formula in disguise, since $\mathrm{Tr}=2\,\mathrm{Sc}$. Two qualifications are recorded: the branch must be the principal one, and the logarithm — hence the formula — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension.
 
-**The limit of the interpretation.** For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $\tilde\Pi_{\Phi^+}$ and $\tilde\Pi_{\Phi^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.
+**The limit of the interpretation.** For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $\tilde\Pi_{Ξ^+}$ and $\tilde\Pi_{Ξ^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.
 
 ## Summary of Notation
 
@@ -397,7 +397,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace equals twice the scalar part |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Single-qubit idempotents |
 | $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
-| $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
+| $|\tilde{Ξ}^{\mathrm{spn}}_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $\tilde\Pi_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{M}_+$, $|\vec r|\le1$ |
 | $\tilde{Ϛ}_1=\mathrm{Tr}_2\tilde\Pi$ | Reduced state (Bloch vector $\vec r_1$) |

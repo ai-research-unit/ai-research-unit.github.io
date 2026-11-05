@@ -149,14 +149,14 @@ The AB and AC phases have the same mathematical shape. In the AB effect a charge
 
 $$
 \theta^{\mathrm{pha}}_{AB} = \frac{ϙ}{\hbar}\oint_{\mathcal{C}}\vec A\cdot d\vec r
-= \frac{ϙ}{\hbar}\Phi_B,
+= \frac{ϙ}{\hbar}Ξ_B,
 $$
 
 the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\theta^{\mathrm{pha}}_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
 
 | | Aharonov–Bohm | Aharonov–Casher |
 |---|---|---|
-| Source | magnetic flux $\Phi_B$ | electric field $\vec E$ |
+| Source | magnetic flux $Ξ_B$ | electric field $\vec E$ |
 | Coupling | electric charge $ϙ$ | magnetic dipole $\vec\mu$ |
 | Connection | $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$ | $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$ |
 | Structure group | $\mathrm{U}(1)$ | $SU(2)$ for spin-1/2 |

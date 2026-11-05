@@ -18,7 +18,7 @@ $$
 
 where $h$ is the binary entropy function. The entropy vanishes exactly on the null cone, that is, exactly on the zero divisors; it is maximal at the maximally mixed state; and it measures the depth of the state inside the future cone of the biquaternion norm. The functional and the biquaternion norm are thus the same information, read as a number and as a quadratic form.
 
-Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The **spectral** value $\mathcal{S}(\tilde{Ϛ})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The **coarse-grained** value $\mathcal{S}(\Phi(\tilde{Ϛ}))$ is the entropy of the image of the state under a coarse-graining $\Phi$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the *minimum* over all preparations of the state, and hence the least coarse description the state admits.
+Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The **spectral** value $\mathcal{S}(\tilde{Ϛ})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The **coarse-grained** value $\mathcal{S}(Ξ(\tilde{Ϛ}))$ is the entropy of the image of the state under a coarse-graining $Ξ$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the *minimum* over all preparations of the state, and hence the least coarse description the state admits.
 
 The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{Ϛ}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
@@ -192,10 +192,10 @@ Second, the entropy is a strictly increasing function of the biquaternion norm o
 
 Third, the entropy is invariant under every operation that preserves the biquaternion norm. In particular, it is invariant under the rotor conjugation of a reversible flow, which is the subject of a later section.
 
-The same identity holds for a coarse-grained state, since a coarse-grained state is a state. If $\Phi$ is a coarse-graining and $\tilde{Ϛ}_\Phi = \Phi(\tilde{Ϛ})$ is its image, then
+The same identity holds for a coarse-grained state, since a coarse-grained state is a state. If $Ξ$ is a coarse-graining and $\tilde{Ϛ}_{Ξ} = Ξ(\tilde{Ϛ})$ is its image, then
 
 $$
-\mathcal{S}(\tilde{Ϛ}_\Phi) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_\Phi\rangle_{\natural}}\right),
+\mathcal{S}(\tilde{Ϛ}_{Ξ}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{Ξ}\rangle_{\natural}}\right),
 $$
 
 so the whole information content of the coarse description is likewise carried by one scalar read from the biquaternion norm. This is what makes the coarse-grained entropy tractable: the second law for the sector reduces to a statement about the biquaternion norm of the image.
@@ -207,20 +207,20 @@ so the whole information content of the coarse description is likewise carried b
 A coarse-graining is a description that remembers less. In the language of the sector it is a map
 
 $$
-\Phi : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad \tilde{Ϛ} \longmapsto \Phi(\tilde{Ϛ}),
+Ξ : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad \tilde{Ϛ} \longmapsto Ξ(\tilde{Ϛ}),
 $$
 
 subject to four conditions, each of which has an operational interpretation.
 
-- **Linearity.** $\Phi(a\tilde{Ϛ}_1 + b\tilde{Ϛ}_2) = a\Phi(\tilde{Ϛ}_1) + b\Phi(\tilde{Ϛ}_2)$ for real $a,b$. A coarse-graining of a mixture is the mixture of the coarse-grainings, because the description acts on the preparation rather than on the individual outcome.
+- **Linearity.** $Ξ(a\tilde{Ϛ}_1 + b\tilde{Ϛ}_2) = aΞ(\tilde{Ϛ}_1) + bΞ(\tilde{Ϛ}_2)$ for real $a,b$. A coarse-graining of a mixture is the mixture of the coarse-grainings, because the description acts on the preparation rather than on the individual outcome.
 - **Positivity, in the strong form of complete positivity.** The map must remain positive when the sector is described jointly with any reference system, which is the condition that distinguishes a physical operation from a merely positive map, as the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* develops.
-- **Trace preservation.** $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $\Phi^{*}(e_t) = e_t$.
-- **Idempotency and unitality.** $\Phi \circ \Phi = \Phi$ and $\Phi(e_t) = e_t$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.
+- **Trace preservation.** $\mathrm{Tr}(Ξ(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $Ξ^{*}(e_t) = e_t$.
+- **Idempotency and unitality.** $Ξ \circ Ξ = Ξ$ and $Ξ(e_t) = e_t$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.
 
 A linear, completely positive, trace-preserving, idempotent, unital map is a **conditional expectation**: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\vec u)$ is the fully dephasing map
 
 $$
-\Phi_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_2(\vec u) .
+Ξ_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_2(\vec u) .
 $$
 
 This is the map of the companion article *Decoherence as Idempotent Projection* at $p = 1$. On the Bloch vector it acts by
@@ -240,10 +240,10 @@ It must be said plainly that a coarse-graining of a single qubit is **binary**. 
 With the coarse-graining fixed, the **coarse-grained entropy** is the entropy functional evaluated on the image,
 
 $$
-\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi\right] = \mathcal{S}\!\left(\Phi(\tilde{Ϛ})\right) = -2\,\mathrm{Sc}\!\left(\Phi(\tilde{Ϛ})\log\Phi(\tilde{Ϛ})\right).
+\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};Ξ\right] = \mathcal{S}\!\left(Ξ(\tilde{Ϛ})\right) = -2\,\mathrm{Sc}\!\left(Ξ(\tilde{Ϛ})\logΞ(\tilde{Ϛ})\right).
 $$
 
-For the pointer conditional expectation $\Phi_{\vec u}$, the image is $\tilde{Ϛ}_{\rm cg} = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose eigenvalues are
+For the pointer conditional expectation $Ξ_{\vec u}$, the image is $\tilde{Ϛ}_{\rm cg} = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose eigenvalues are
 
 $$
 p_\pm = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
@@ -252,7 +252,7 @@ $$
 the classical probabilities of the two pointer outcomes. The coarse-grained entropy is therefore the binary Shannon entropy
 
 $$
-\boxed{\;\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};\Phi_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right)\;}.
+\boxed{\;\mathcal{S}_{\rm cg}\!\left[\tilde{Ϛ};Ξ_{\vec u}\right] = -p_+\log p_+ - p_-\log p_- = h\!\left(|\vec u\cdot\vec r|\right)\;}.
 $$
 
 This is the article's second main formula. It is the entropy of the classical record the coarse description keeps, and it is manifestly a function of the retained component of the Bloch vector alone.
@@ -263,16 +263,16 @@ This is the article's second main formula. It is the entropy of the classical re
 
 Coarse-graining cannot decrease the entropy. The proof has two steps, and both are standard.
 
-The first step is that a unital, completely positive, trace-preserving map is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $\Phi$ one has $\Phi(\tilde{Q})^2 \leq \Phi(\tilde{Q}^2)$ in the matrix order. Taking the trace, and using trace preservation in the form $\mathrm{Tr}(\Phi(\tilde{Q}^2)) = \mathrm{Tr}(\tilde{Q}^2)$,
+The first step is that a unital, completely positive, trace-preserving map is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $Ξ$ one has $Ξ(\tilde{Q})^2 \leq Ξ(\tilde{Q}^2)$ in the matrix order. Taking the trace, and using trace preservation in the form $\mathrm{Tr}(Ξ(\tilde{Q}^2)) = \mathrm{Tr}(\tilde{Q}^2)$,
 
 $$
-\mathrm{Tr}\!\left(\Phi(\tilde{Q})^2\right) \le \mathrm{Tr}\!\left(\Phi(\tilde{Q}^2)\right) = \mathrm{Tr}\!\left(\tilde{Q}^2\right),
+\mathrm{Tr}\!\left(Ξ(\tilde{Q})^2\right) \le \mathrm{Tr}\!\left(Ξ(\tilde{Q}^2)\right) = \mathrm{Tr}\!\left(\tilde{Q}^2\right),
 $$
 
-and with $\tilde{Q} = \tilde{Ϛ}$ this is the purity inequality $\mathrm{Tr}(\Phi(\tilde{Ϛ})^2) \le \mathrm{Tr}(\tilde{Ϛ}^2)$. By the purity formula $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ this is exactly
+and with $\tilde{Q} = \tilde{Ϛ}$ this is the purity inequality $\mathrm{Tr}(Ξ(\tilde{Ϛ})^2) \le \mathrm{Tr}(\tilde{Ϛ}^2)$. By the purity formula $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ this is exactly
 
 $$
-|\vec r_\Phi| \le |\vec r| ,
+|\vec r_{Ξ}| \le |\vec r| ,
 $$
 
 the statement that the map does not push a state outward. Equivalently, and in the form used for classical mechanics, every completely positive trace-preserving map is a contraction in the trace distance, and for a qubit the trace distance between two states is half the Euclidean distance between their Bloch vectors; the contraction of the metric and the contraction of the radius are the same statement.
@@ -280,16 +280,16 @@ the statement that the map does not push a state outward. Equivalently, and in t
 The second step is the monotonicity of the entropy as a function of the radius, established above: $h$ is decreasing on $[0,1]$. Composing the two,
 
 $$
-\mathcal{S}\!\left(\Phi(\tilde{Ϛ})\right) = h\!\left(|\vec r_\Phi|\right) \ge h\!\left(|\vec r|\right) = \mathcal{S}\!\left(\tilde{Ϛ}\right),
+\mathcal{S}\!\left(Ξ(\tilde{Ϛ})\right) = h\!\left(|\vec r_{Ξ}|\right) \ge h\!\left(|\vec r|\right) = \mathcal{S}\!\left(\tilde{Ϛ}\right),
 $$
 
 or, in one line,
 
 $$
-\boxed{\;\mathcal{S}\!\left(\Phi(\tilde{Ϛ})\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}\right)\;}
+\boxed{\;\mathcal{S}\!\left(Ξ(\tilde{Ϛ})\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}\right)\;}
 $$
 
-for every coarse-graining $\Phi$. **Coarse-graining never creates information; it can only fail to retain it.** The inequality is strict unless the state already lies in the image of $\Phi$, so a genuine coarse-graining strictly increases the entropy of every state outside its image.
+for every coarse-graining $Ξ$. **Coarse-graining never creates information; it can only fail to retain it.** The inequality is strict unless the state already lies in the image of $Ξ$, so a genuine coarse-graining strictly increases the entropy of every state outside its image.
 
 The restriction to unital maps matters and is worth naming. A trace-preserving completely positive map that is *not* unital can lower the entropy of the state — that is refrigeration, which exports entropy to an environment — and such a map is not a coarse-graining in the sense used here. A coarse-graining discards distinctions *within* the description and keeps no ledger of what it exported; the environment, and with it the full accounting of the second law, is the subject of the companion articles *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Maxwell's Demon and the Informational Sector in Biquaternionic Form*.
 
@@ -347,13 +347,13 @@ $$
 
 and the biquaternion norm is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the biquaternion norm is the invariant that the correspondence preserves.
 
-**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$, the entropy of the coarse description,
+**Coarse-graining produces the increase.** If a fixed coarse-graining $Ξ$ is applied to the state of a reversible flow $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$, the entropy of the coarse description,
 
 $$
-\mathcal{S}_{\rm cg}(t') = \mathcal{S}\!\left(\Phi(\tilde{Ϛ}(t'))\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}(t')\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
+\mathcal{S}_{\rm cg}(t') = \mathcal{S}\!\left(Ξ(\tilde{Ϛ}(t'))\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}(t')\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
 $$
 
-is at least the fine-grained value at every instant, but it need not grow with $t'$: the rotor can carry the transverse component onto the pointer axis and back, and the coarse-grained entropy then oscillates with no trend. A single application of $\Phi$ raises the entropy once and then leaves it fixed, since $\Phi$ is idempotent. Neither a reversible flow nor a fixed coarse-graining produces a *monotone* increase on its own; what produces one is a **one-parameter family of contractions** applied along the flow. The dephasing semigroup is the canonical example — it is the curve $\Phi_{p(t')}$ from the identity at $t'=0$ towards the pointer coarse-graining as $t'\to\infty$ — and for it the entropy of the evolving state rises monotonically. Both the flow and the contraction are needed for the inequality to bite, and the second law of the sector is a statement about the pair. This is exactly the classical structure of the Gibbs and Boltzmann entropies, now written with the algebra's own instruments.
+is at least the fine-grained value at every instant, but it need not grow with $t'$: the rotor can carry the transverse component onto the pointer axis and back, and the coarse-grained entropy then oscillates with no trend. A single application of $Ξ$ raises the entropy once and then leaves it fixed, since $Ξ$ is idempotent. Neither a reversible flow nor a fixed coarse-graining produces a *monotone* increase on its own; what produces one is a **one-parameter family of contractions** applied along the flow. The dephasing semigroup is the canonical example — it is the curve $Ξ_{p(t')}$ from the identity at $t'=0$ towards the pointer coarse-graining as $t'\to\infty$ — and for it the entropy of the evolving state rises monotonically. Both the flow and the contraction are needed for the inequality to bite, and the second law of the sector is a statement about the pair. This is exactly the classical structure of the Gibbs and Boltzmann entropies, now written with the algebra's own instruments.
 
 The dephasing rate makes the statement quantitative: the fine-grained value $\mathcal{S}(\tilde{Ϛ}(0))$ is the conserved reference, the evolving state's entropy increases at rate $\Gamma\,(r_\perp(t')^2/r(t'))\,\mathrm{artanh}\,r(t')$, and the total production over an infinite time is $h(|\vec u\cdot\vec r(0)|) - h(|\vec r(0)|)$, the entropy of the retained classical bit less the entropy of the state.
 
@@ -393,7 +393,7 @@ The framework's own coarse-grainings sit in this picture as the conditional expe
 
 ## Summary
 
-A coarse-graining of the informational sector is a conditional expectation $\Phi$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
+A coarse-graining of the informational sector is a conditional expectation $Ξ$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
 
 The **biquaternion entropy functional** is
 
@@ -413,7 +413,7 @@ $$
 
 so the entropy vanishes exactly on the null (zero-divisor) cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone. The natural invariant of the algebra and the information content of the state are one quantity in two interpretations.
 
-The **coarse-grained entropy** is the functional evaluated on the image, $\mathcal{S}(\Phi(\tilde{Ϛ}))$; for the pointer conditional expectation it is the binary Shannon entropy $h(|\vec u\cdot\vec r|)$. Since a unital completely positive map contracts the Bloch ball, $|\vec r_\Phi|\le|\vec r|$, the coarse-grained entropy never falls below the fine-grained one, with equality only for states already in the image. The fine-grained entropy is invariant under reversible rotor flow — the biquaternion form of Liouville's theorem — and the increase appears only when a flow and a coarse-graining are composed. That composition is the second law of the sector.
+The **coarse-grained entropy** is the functional evaluated on the image, $\mathcal{S}(Ξ(\tilde{Ϛ}))$; for the pointer conditional expectation it is the binary Shannon entropy $h(|\vec u\cdot\vec r|)$. Since a unital completely positive map contracts the Bloch ball, $|\vec r_{Ξ}|\le|\vec r|$, the coarse-grained entropy never falls below the fine-grained one, with equality only for states already in the image. The fine-grained entropy is invariant under reversible rotor flow — the biquaternion form of Liouville's theorem — and the increase appears only when a flow and a coarse-graining are composed. That composition is the second law of the sector.
 
 The fine-grained value is also the minimum over all preparations of the state, $\mathcal{S}(\tilde{Ϛ}) = \min_w H(w)$, so it is the least coarse description the state admits and the correct reference for the accounting. The framework supplies the functional, its geometry, and its monotonicity; it does not supply the pointer axis, the environment, or the rate, and it predicts nothing beyond the classical entropy accounting it reformulates.
 
@@ -437,10 +437,10 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}) = h(|\vec r|)$ | Biquaternion entropy functional |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy function |
 | $\mathcal{S} = h\!\left(\sqrt{1-4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}}\right)$ | Entropy as a function of the biquaternion norm |
-| $\Phi$ | Coarse-graining (conditional expectation) |
-| $\Phi_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2$ | Pointer coarse-graining along $\vec u$ |
+| $Ξ$ | Coarse-graining (conditional expectation) |
+| $Ξ_{\vec u}(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2$ | Pointer coarse-graining along $\vec u$ |
 | $\vec r\mapsto(\vec u\cdot\vec r)\vec u$ | Action of the pointer coarse-graining |
-| $\mathcal{S}_{\rm cg}[\tilde{Ϛ};\Phi] = \mathcal{S}(\Phi(\tilde{Ϛ}))$ | Coarse-grained entropy |
+| $\mathcal{S}_{\rm cg}[\tilde{Ϛ};Ξ] = \mathcal{S}(Ξ(\tilde{Ϛ}))$ | Coarse-grained entropy |
 | $\mathcal{S}_{\rm cg} = h(|\vec u\cdot\vec r|)$ | Coarse-grained entropy, pointer basis |
 | $r_\parallel = \vec u\cdot\vec r$, $r_\perp(t') = \exp(-\Gamma t')r_\perp(0)$, $r(t')^2 = r_\parallel^2 + r_\perp(t')^2$ | Axial and instantaneous transverse components of the dephasing flow |
 | $\vec r\mapsto(1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing at strength $p\in[0,1]$ |

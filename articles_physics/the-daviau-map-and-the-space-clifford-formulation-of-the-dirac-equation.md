@@ -6,10 +6,10 @@ Daviau writes the Dirac equation as one equation for a general element of the bi
 
 **One algebra, not two.** The source builds its algebra on three vectors of three-dimensional Euclidean space. In the corpus those three vectors are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$: each squares to $+e_t$, any two anticommute, and the three generate the biquaternion algebra $\mathbb{B}$ (§*The Three Space Vectors and the Dictionary*). No second algebra is introduced, and no second multiplication is fixed.
 
-**The equation.** For a general element $\tilde\Psi$ of $\mathbb{B}$ the equation is
+**The equation.** For a general element $\tilde{Ξ}^{\mathrm{spn}}$ of $\mathbb{B}$ the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde\Psi\,(-\vec e_x)=m\,\overline{\tilde\Psi}+q\,\tilde A\,\tilde\Psi\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}^{\mathrm{spn}}\,(-\vec e_x)=m\,\overline{\tilde{Ξ}^{\mathrm{spn}}}+q\,\tilde A\,\tilde{Ξ}^{\mathrm{spn}}\;}
 $$
 
 with the elements $\mathfrak D$ and $\tilde A$ of §*The Daviau Equation*. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.
@@ -40,7 +40,7 @@ $$
 (i\vec e_x)(i\vec e_y)(i\vec e_z)=i^3\,\vec e_x\vec e_y\vec e_z=i^3(-e_t)=(-i)(-e_t)=i ,
 $$
 
-using $\vec e_x\vec e_y=\vec e_z$, $\vec e_z\vec e_z=-e_t$ and $i^3=-i$. That element is central, $i\tilde\Psi=\tilde\Psi i$, and its square is $-e_t$. So the pseudoscalar of the source and the central imaginary of the corpus are one element, and the source's algebra, read over the real field, is the whole algebra $\mathbb{B}$.
+using $\vec e_x\vec e_y=\vec e_z$, $\vec e_z\vec e_z=-e_t$ and $i^3=-i$. That element is central, $i\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} i$, and its square is $-e_t$. So the pseudoscalar of the source and the central imaginary of the corpus are one element, and the source's algebra, read over the real field, is the whole algebra $\mathbb{B}$.
 
 **The eight real units.** The four units of the coefficient basis together with their $i$-multiples are eight real elements,
 
@@ -79,12 +79,12 @@ $$
 u=a+ih,\qquad v=f+ib,\qquad w=c+ig,\qquad t=d+ie ,
 $$
 
-and the four entries of its array are $\chi_1=u+w$, $\chi_3=t-v$, $\chi_2=t+v$, $\chi_4=u-w$. The corpus's field $\tilde\Psi$ carries eight real functions too, one in $\mathbb H_{\mathbb B}$ and one in $i\mathbb H_{\mathbb B}$ for each of the four directions, and the Daviau map is the assignment of the eight of the source to the eight real units of §*The Three Space Vectors and the Dictionary*.
+and the four entries of its array are $\xi_1=u+w$, $\xi_3=t-v$, $\xi_2=t+v$, $\xi_4=u-w$. The corpus's field $\tilde{Ξ}^{\mathrm{spn}}$ carries eight real functions too, one in $\mathbb H_{\mathbb B}$ and one in $i\mathbb H_{\mathbb B}$ for each of the four directions, and the Daviau map is the assignment of the eight of the source to the eight real units of §*The Three Space Vectors and the Dictionary*.
 
 **Derived form (the expansion).** Read back through the corpus's matrix model, the four entries give
 
 $$
-\boxed{\;\tilde\Psi=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i\;}
+\boxed{\;\tilde{Ξ}^{\mathrm{spn}}=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i\;}
 $$
 
 with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\vec e_y,\,i\vec e_z,\,\vec e_x,\,\vec e_y,\,\vec e_z,\,i)$.
@@ -99,7 +99,7 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 
 ## The Star Conjugation
 
-**The map.** The star of the source is real-linear, involutive and multiplicative, and it reverses the phase: for a complex $\lambda$, the star of $\lambda\tilde\Psi$ is $\bar\lambda$ times the star of $\tilde\Psi$. It is therefore an algebra automorphism that reverses the phase. It is not the identity, it is not the quaternion conjugation, and it is not the Hermitian conjugation of the algebra.
+**The map.** The star of the source is real-linear, involutive and multiplicative, and it reverses the phase: for a complex $\lambda$, the star of $\lambda\tilde{Ξ}^{\mathrm{spn}}$ is $\bar\lambda$ times the star of $\tilde{Ξ}^{\mathrm{spn}}$. It is therefore an algebra automorphism that reverses the phase. It is not the identity, it is not the quaternion conjugation, and it is not the Hermitian conjugation of the algebra.
 
 **Notation.** The source writes the star with an asterisk. This article writes it $\overline{\cdot}$, because it is the corpus's complex conjugation; the corpus's ${}^{*}$ is a different map (§*It is not the Hermitian conjugation*).
 
@@ -119,14 +119,14 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 
 **Remark (the star is outer).** The star sends the central $i$ to $-i$. An inner automorphism of an algebra fixes the centre, and the centre of $\mathbb{B}$ is the complex line of $e_t$, so no element conjugates the star into itself. Enlarging the algebra does not help: $i$ remains central in every algebra that contains $\mathbb{B}$, and no inner automorphism of any of them moves it. What carries the star is its conjugate-linearity.
 
-**Remark (no multiplication implements it).** A multiplication by a fixed element, on the left or on the right, is complex-linear: it sends $i\tilde\Psi$ to $i$ times the image. The star is conjugate-linear. Hence neither a left multiplication nor a right multiplication is the star, whatever the fixed element.
+**Remark (no multiplication implements it).** A multiplication by a fixed element, on the left or on the right, is complex-linear: it sends $i\tilde{Ξ}^{\mathrm{spn}}$ to $i$ times the image. The star is conjugate-linear. Hence neither a left multiplication nor a right multiplication is the star, whatever the fixed element.
 
 ## The Daviau Equation
 
-**Definition.** With $\tilde\Psi$ a general element and $\mathfrak D$, $\tilde A$ the elements below, the equation is
+**Definition.** With $\tilde{Ξ}^{\mathrm{spn}}$ a general element and $\mathfrak D$, $\tilde A$ the elements below, the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde\Psi\,(-\vec e_x)=m\,\overline{\tilde\Psi}+q\,\tilde A\,\tilde\Psi\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}^{\mathrm{spn}}\,(-\vec e_x)=m\,\overline{\tilde{Ξ}^{\mathrm{spn}}}+q\,\tilde A\,\tilde{Ξ}^{\mathrm{spn}}\;}
 $$
 
 with
@@ -160,7 +160,7 @@ The corpus carries two Dirac equations, and the Daviau equation is a **third for
 **The one-sided equation, and chirality.** The corpus's own equation is the chiral pair
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,\qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R ,
 $$
 
 in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values.
@@ -178,10 +178,10 @@ where $t'$ is the physical time, related to the corpus's coordinate by $Q_t=ict'
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde\Psi(-\vec e_x)=m\overline{\tilde\Psi}+q\tilde A\tilde\Psi$ | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal NF=0$ |
+| Equation | $\mathfrak D\tilde{Ξ}^{\mathrm{spn}}(-\vec e_x)=m\overline{\tilde{Ξ}^{\mathrm{spn}}}+q\tilde A\tilde{Ξ}^{\mathrm{spn}}$ | $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | $\mathcal NF=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and by $D_3$, right by $\vec e_z$ |
-| Field | $\tilde\Psi\in\mathbb{B}$, a general element | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | $F\in\mathbb{B}$ |
-| Mass | $m\overline{\tilde\Psi}$, conjugate-linear | the pairing of the two values | $-mi\overline{F}\vec e_z$ |
+| Field | $\tilde{Ξ}^{\mathrm{spn}}\in\mathbb{B}$, a general element | $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$ | $F\in\mathbb{B}$ |
+| Mass | $m\overline{\tilde{Ξ}^{\mathrm{spn}}}$, conjugate-linear | the pairing of the two values | $-mi\overline{F}\vec e_z$ |
 | Chirality | the field carries both values; the right factor is a bivector | the two equations are the two values | the right factor is the fixed direction $\vec e_z$ |
 | Role in the corpus | the space formulation | the corpus's formulation | the dictionary and the Cauchy theory |
 
@@ -194,9 +194,9 @@ The other formulation writes the Dirac equation for a field of the algebra of fo
 **The comparison equation.** Fauser writes it with the three space vectors of that formulation multiplying the space derivatives, the pseudoscalar on the right of each derivative term, and the mass as minus the conjugation. In the corpus's elements the three space vectors of that formulation are the three quaternion units, and its pseudoscalar is the same $i$:
 
 $$
-\frac{\partial}{\partial Q_t}\tilde\Psi\,(i\vec e_z)
-+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial Q_k}\tilde\Psi\,(i\vec e_z)
-=-m\,\overline{\tilde\Psi}+q\Bigl(A_t+\sum_{k\in\{x,y,z\}}A_k\vec e_k\Bigr)\tilde\Psi .
+\frac{\partial}{\partial Q_t}\tilde{Ξ}^{\mathrm{spn}}\,(i\vec e_z)
++\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial Q_k}\tilde{Ξ}^{\mathrm{spn}}\,(i\vec e_z)
+=-m\,\overline{\tilde{Ξ}^{\mathrm{spn}}}+q\Bigl(A_t+\sum_{k\in\{x,y,z\}}A_k\vec e_k\Bigr)\tilde{Ξ}^{\mathrm{spn}} .
 $$
 
 The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.
@@ -209,7 +209,7 @@ $$
 
 with $z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: it permutes the three vector units cyclically, so it preserves $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; it satisfies $z^3=\mathrm{id}$ and $z^{-1}=z^2$; and it commutes with the complex conjugation, because it fixes $i$ and permutes the units with real coefficients. Applying $z^{-1}$ to the spacetime equation and flipping the sign of the mass yields the Daviau equation, and conversely $z$ and the reverse flip recover the other. The two formulations differ, therefore, only by the sign of the mass, the cyclic relabelling of the three space directions, and the star.
 
-*Proof sketch (transcription of Fauser's argument).* The two equations are written term by term, the images of the four kinds of element are matched with the Daviau gradient and potential, and the two fields are identified by $z^{-1}$. The mass signs are opposite because the two equations put the mass in different slots: a right multiplication by the time vector there, the conjugation here. The star is the same conjugation in both, and $z$ carries it to itself, $z(\overline{\tilde\Psi})=\overline{z(\tilde\Psi)}$. The three operations are read off from the two displayed equations.
+*Proof sketch (transcription of Fauser's argument).* The two equations are written term by term, the images of the four kinds of element are matched with the Daviau gradient and potential, and the two fields are identified by $z^{-1}$. The mass signs are opposite because the two equations put the mass in different slots: a right multiplication by the time vector there, the conjugation here. The star is the same conjugation in both, and $z$ carries it to itself, $z(\overline{\tilde{Ξ}^{\mathrm{spn}}})=\overline{z(\tilde{Ξ}^{\mathrm{spn}})}$. The three operations are read off from the two displayed equations.
 
 **What the equivalence says and does not say.** It says that the space formulation is not a different theory from the spacetime formulation, but the same theory written in the smaller algebra with a permuted space basis and the opposite mass sign. The dictionary between the corpus's own conventions and either formulation is the one of §*The Three Space Vectors and the Dictionary*; the equivalence then makes the three corpus formulations — matrix, spacetime algebra, space vectors — one formulation read three ways. It does not say which interpretation is physical, and it supplies no prediction, in keeping with the status of every equivalent rewriting in this series.
 
@@ -217,7 +217,7 @@ with $z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: i
 
 ## The Right Action and the Bi-module Reading
 
-The equation multiplies the field on the left, through the gradient and the coupling, and on the right, through the fixed bivector, at the same time. The two multiplications commute, because the algebra is associative: $\mathfrak D\bigl(\tilde\Psi(-\vec e_x)\bigr)=(\mathfrak D\tilde\Psi)(-\vec e_x)$. Fauser reads this as an action of the algebra on itself on both sides at once. The corpus develops that interpretation in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, where the two actions are exhibited as the two commuting regular representations inside the endomorphism algebra, and where it is shown that the enveloping algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}$ is the natural home of the pair.
+The equation multiplies the field on the left, through the gradient and the coupling, and on the right, through the fixed bivector, at the same time. The two multiplications commute, because the algebra is associative: $\mathfrak D\bigl(\tilde{Ξ}^{\mathrm{spn}}(-\vec e_x)\bigr)=(\mathfrak D\tilde{Ξ}^{\mathrm{spn}})(-\vec e_x)$. Fauser reads this as an action of the algebra on itself on both sides at once. The corpus develops that interpretation in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, where the two actions are exhibited as the two commuting regular representations inside the endomorphism algebra, and where it is shown that the enveloping algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}$ is the natural home of the pair.
 
 The physical point the corpus records is that the left-versus-right question of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is not, at the algebraic level, a choice between two theories. Daviau's equation uses both sides at once, and it is a Dirac equation. What the two sides say is that both multiplications are available and that they commute; what they do not say is which one carries which physical degree of freedom. Fauser's further caution, recorded in the paper, is that attempts to identify the right multiplication with the iso-spin degree of freedom are not warranted by the algebra alone. The corpus records the caution and does not pursue it here.
 
@@ -229,7 +229,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 3. **The four options of Parra.** Daviau's equation is one of four inequivalent forms of the real Dirac equation recorded by Parra. Which option is it, and how do the other three read in the corpus's conventions? This is the subject of the companion article *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.
 
-4. **The conjugation and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, used for the retired antilinear mass. Are the two related by the identification of §*The Three Space Vectors and the Dictionary*, and does the mass term $m\overline{\tilde\Psi}$ have an interpretation as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*?
+4. **The conjugation and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, used for the retired antilinear mass. Are the two related by the identification of §*The Three Space Vectors and the Dictionary*, and does the mass term $m\overline{\tilde{Ξ}^{\mathrm{spn}}}$ have an interpretation as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*?
 
 5. **Empirical contact.** None is claimed. The formulation is an equivalent rewriting, and the question, as everywhere, is whether it makes a structural fact of the framework easier to see, not whether it predicts anything new.
 
@@ -237,7 +237,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-No gamma symbol is used in the body of this article; the five appear here for reference, as cells of the full operator algebra. They are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+No gamma symbol is used in the body of this article; the five appear here for reference, as cells of the full operator algebra. They are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -259,7 +259,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The formulation writes the Dirac equation as one equation for a general element $\tilde\Psi$ of $\mathbb{B}$: a cyclically permuted gradient, a potential in the same basis, a fixed right bivector and a conjugate-linear mass. The three space vectors of the source are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$; their product is the central imaginary $i$; and the eight real functions of the source's field are the eight real coordinates of $\tilde\Psi$ on the real basis $e_t$, $i\vec e_k$, $\vec e_k$, $i$. The map is exact and carries no free choice.
+The formulation writes the Dirac equation as one equation for a general element $\tilde{Ξ}^{\mathrm{spn}}$ of $\mathbb{B}$: a cyclically permuted gradient, a potential in the same basis, a fixed right bivector and a conjugate-linear mass. The three space vectors of the source are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$; their product is the central imaginary $i$; and the eight real functions of the source's field are the eight real coordinates of $\tilde{Ξ}^{\mathrm{spn}}$ on the real basis $e_t$, $i\vec e_k$, $\vec e_k$, $i$. The map is exact and carries no free choice.
 
 The star of the source is the corpus's complex conjugation $\bar{\cdot}$, not the Hermitian conjugation ${}^{*}$. On the eight real units it fixes $e_t,\vec e_x,\vec e_y,\vec e_z$ and negates $i,i\vec e_x,i\vec e_y,i\vec e_z$, which is the definition of the complex conjugation. It is outer, and no multiplication by a fixed element implements it. This is the article's main algebraic point, and it is exact.
 
@@ -274,13 +274,13 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 | $i\vec e_x$, $i\vec e_y$, $i\vec e_z$ | The three space vectors of the formulation; squares $+e_t$, pairwise anticommuting |
 | $i$ | The pseudoscalar of the formulation; the corpus's central imaginary |
 | $e_t$, $i\vec e_k$, $\vec e_k$, $i$ | The eight real units the map uses |
-| $\tilde\Psi$ | The field, a general element of $\mathbb{B}$ |
+| $\tilde{Ξ}^{\mathrm{spn}}$ | The field, a general element of $\mathbb{B}$ |
 | $a,\dots,h$ | The eight real functions of the field |
-| $\tilde\Psi=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i$ | The Daviau map, on the eight real units |
-| $\overline{\tilde\Psi}$ | The star of the source: the corpus's complex conjugation, not ${}^{*}$ |
+| $\tilde{Ξ}^{\mathrm{spn}}=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i$ | The Daviau map, on the eight real units |
+| $\overline{\tilde{Ξ}^{\mathrm{spn}}}$ | The star of the source: the corpus's complex conjugation, not ${}^{*}$ |
 | $\mathfrak D=e_t\partial/\partial Q_t+i\vec e_y\partial/\partial Q_x+i\vec e_z\partial/\partial Q_y+i\vec e_x\partial/\partial Q_z$ | The cyclically permuted gradient |
 | $\tilde A=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x$ | The potential in the same basis |
-| $\mathfrak D\tilde\Psi(-\vec e_x)=m\overline{\tilde\Psi}+q\tilde A\tilde\Psi$ | The Daviau equation |
+| $\mathfrak D\tilde{Ξ}^{\mathrm{spn}}(-\vec e_x)=m\overline{\tilde{Ξ}^{\mathrm{spn}}}+q\tilde A\tilde{Ξ}^{\mathrm{spn}}$ | The Daviau equation |
 | $-\vec e_x$ | The fixed right factor; a bivector, even in both parities |
 | $z$ | The cyclic relabelling of the three space directions, $z^3=\mathrm{id}$ |
 | $\mathbb{B}$ | The biquaternion algebra; the algebra of the formulation |

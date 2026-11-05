@@ -37,7 +37,7 @@ $$
 Dropping the outcome label gives the **channel**
 
 $$
-\Phi(\tilde{Ϛ})=\sum_y\tilde K_y\tilde{Ϛ}\tilde K_y^{*}.
+Ξ(\tilde{Ϛ})=\sum_y\tilde K_y\tilde{Ϛ}\tilde K_y^{*}.
 $$
 
 A single Kraus operator is a channel only when it is the whole instrument, that is, when $\tilde K^{*}\tilde K=e_t$. Otherwise it is one outcome among several, and its effect is not the identity.
@@ -128,7 +128,7 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 
 ### The Word Off the Cone
 
-Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
+Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\theta^{\mathrm{rpd}}_w}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
 
 $$
 \tilde K=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
@@ -144,7 +144,7 @@ The grouping is the Cartan one: the scale sits with the boost and the phase with
 | --- | --- | --- | --- | --- |
 | scale | $r$ | $r>0$ | $1$ | $\tilde K_H$ |
 | phase | $e^{i\alpha}$ | $\alpha\in[0,2\pi)$ | $1$ | $\tilde K_0$ |
-| boost | $\tilde U_{\mathrm b}$ | $\psi_w\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde K_H$ |
+| boost | $\tilde U_{\mathrm b}$ | $\theta^{\mathrm{rpd}}_w\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde K_H$ |
 | rotor | $\tilde u_{\mathrm r}$ | $\theta\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde K_0$ |
 
 ### The Effect in the Word
@@ -157,13 +157,13 @@ $$
 =\tilde u_{\mathrm r}^{-1}\,r^{2}\tilde U_{\mathrm b}^{2}\,\tilde u_{\mathrm r}.
 $$
 
-The phase cancels because it is central. Since $\tilde U_{\mathrm b}^{2}=\exp(i\psi_w\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\psi_w}$, the effect has eigenvalues
+The phase cancels because it is central. Since $\tilde U_{\mathrm b}^{2}=\exp(i\theta^{\mathrm{rpd}}_w\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\theta^{\mathrm{rpd}}_w}$, the effect has eigenvalues
 
 $$
-r^{2}e^{+\psi_w}\quad\text{and}\quad r^{2}e^{-\psi_w}.
+r^{2}e^{+\theta^{\mathrm{rpd}}_w}\quad\text{and}\quad r^{2}e^{-\theta^{\mathrm{rpd}}_w}.
 $$
 
-Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\psi_w>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.
+Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta^{\mathrm{rpd}}_w>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.
 
 ### The Boost as a Bias
 
@@ -172,9 +172,9 @@ The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}=
 The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,
 
 $$
-a_2=a\cosh\psi_w+b_\parallel\sinh\psi_w,
+a_2=a\cosh\theta^{\mathrm{rpd}}_w+b_\parallel\sinh\theta^{\mathrm{rpd}}_w,
 \qquad
-b_{\parallel,2}=b_\parallel\cosh\psi_w+a\sinh\psi_w,
+b_{\parallel,2}=b_\parallel\cosh\theta^{\mathrm{rpd}}_w+a\sinh\theta^{\mathrm{rpd}}_w,
 \qquad
 \vec b_{\perp,2}=\vec b_\perp .
 $$
@@ -182,24 +182,24 @@ $$
 Normalising by $a_2$ gives the action on the Bloch ball,
 
 $$
-r'_\parallel=\frac{r_\parallel+\tanh\psi_w}{1+r_\parallel\tanh\psi_w},
+r'_\parallel=\frac{r_\parallel+\tanh\theta^{\mathrm{rpd}}_w}{1+r_\parallel\tanh\theta^{\mathrm{rpd}}_w},
 \qquad
-\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi_w+r_\parallel\sinh\psi_w},
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta^{\mathrm{rpd}}_w+r_\parallel\sinh\theta^{\mathrm{rpd}}_w},
 $$
 
-with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\psi_w$, and it is not a rotation of the ball.
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta^{\mathrm{rpd}}_w$, and it is not a rotation of the ball.
 
 ### The Contraction Bound
 
 An outcome is admissible when its effect lies below the identity. The eigenvalues above make this one inequality:
 
 $$
-\boxed{\;\tilde E\le e_t \iff r^{2}e^{\psi_w}\le1\;}
+\boxed{\;\tilde E\le e_t \iff r^{2}e^{\theta^{\mathrm{rpd}}_w}\le1\;}
 $$
 
-for $\psi_w\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.
+for $\theta^{\mathrm{rpd}}_w\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.
 
-The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\psi_w=\ln(1/0.6)=0.5108$; then $r^{2}e^{\psi_w}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.
+The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\theta^{\mathrm{rpd}}_w=\ln(1/0.6)=0.5108$; then $r^{2}e^{\theta^{\mathrm{rpd}}_w}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.
 
 ## Effects as Squares
 
@@ -316,7 +316,7 @@ with eigenvalues $0.36$ and $1$. The outcome is unsharp: the effect is full rank
 A channel is a sum of terms, and the polar decomposition applies to each term separately:
 
 $$
-\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}
+Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}
 =\sum_l\tilde H_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}\tilde U_{\mathrm{p},l}^{*}\tilde H_{\mathrm{pos},l}.
 $$
 
@@ -337,7 +337,7 @@ A channel is reversible exactly when it has a one-term Kraus representation, and
 The dephasing channel of *Quantum Channels and the Reversible/Irreversible Dichotomy* leaves the populations and scales the coherences by $1-p$. In the pointer basis it is
 
 $$
-\Phi_p(\tilde{Ϛ})=(1-p)\tilde{Ϛ}+p\left(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\right).
+Ξ_p(\tilde{Ϛ})=(1-p)\tilde{Ϛ}+p\left(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\right).
 $$
 
 The companion article displays the three-term representation $\tilde K_0=\sqrt{1-p}e_t$, $\tilde K_{1,2}=\sqrt p\tilde\Pi_{1,2}$. That representation is not minimal: because $e_t=\tilde\Pi_1+\tilde\Pi_2$, the same channel has the two-term form
@@ -381,7 +381,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | backaction | the partial isometry $\tilde K_0$, $*$-unitary off the cone, rank one on it |
 | effect | $\tilde E=\tilde K^{*}\tilde K=\tilde K_0^{*}\tilde K_H^{2}\tilde K_0$, eigenvalues $\sigma_i^{2}$ |
 | four factors | $\tilde K=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, $\tilde K_H=r\tilde U_{\mathrm b}$, $\tilde K_0=e^{i\alpha}\tilde u_{\mathrm r}$ |
-| effect in the word | eigenvalues $r^{2}e^{\pm\psi_w}$; admissible iff $r^{2}e^{\psi_w}\le1$ |
+| effect in the word | eigenvalues $r^{2}e^{\pm\theta^{\mathrm{rpd}}_w}$; admissible iff $r^{2}e^{\theta^{\mathrm{rpd}}_w}\le1$ |
 | one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ iff $\tilde K_H=e_t$ and $\tilde K_0=\tilde K$ $*$-unitary |
 | sharp outcome | $\tilde K=\tilde\Pi$: $\tilde K_H=\tilde K_0=\tilde\Pi$, $\tilde E=\tilde\Pi$, on the null cone |
 | soft rank-one outcome | $\tilde K=\sigma\tilde\Pi$: $\tilde K_H=\sigma\tilde\Pi$, $\tilde K_0=\tilde\Pi$, $\tilde E=\sigma^{2}\tilde\Pi$ |
@@ -401,12 +401,12 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde K_0=\tilde K_H^{+}\tilde K$ | partial-isometry (backaction) factor |
 | $\tilde K_H^{+}$ | Moore–Penrose inverse |
 | $\tilde E=\tilde K^{*}\tilde K=\tilde K_0^{*}\tilde K_H^{2}\tilde K_0$ | effect of the outcome |
-| $r,\alpha,\psi_w,\theta$ | scale, central phase, word rapidity, rotor angle |
+| $r,\alpha,\theta^{\mathrm{rpd}}_w,\theta$ | scale, central phase, word rapidity, rotor angle |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | positive Hermitian boost, unit real quaternion rotor |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | rank-one Hermitian idempotent, $\vec u$ a real unit vector |
 | $\tilde\Pi_{\mathrm i}=\tilde K_0^{*}\tilde K_0$, $\tilde\Pi_{\mathrm f}=\tilde K_0\tilde K_0^{*}$ | initial and final projections of $\tilde K_0$ |
 | $\sigma_i$ | singular values of $\tilde K$, eigenvalues of $\tilde K_H$ |
-| $\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$ | channel |
+| $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$ | channel |
 | $Z=i\vec e_z$ | the $*$-unitary Pauli-$z$ element, $Z^{2}=e_t$ |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | trace convention |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | biquaternion norm (determinant) |

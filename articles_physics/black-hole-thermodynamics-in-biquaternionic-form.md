@@ -49,9 +49,9 @@ T=\frac{\kappa}{2\pi},
 \qquad
 S=\frac{A}{4},
 \qquad
-dM=\frac{\kappa}{8\pi}\,dA+\Omega\,dJ+\Phi\,dϘ,
+dM=\frac{\kappa}{8\pi}\,dA+\Omega\,dJ+Ξ\,dϘ,
 \qquad
-M=2TS+2\Omega J+\Phi Ϙ .
+M=2TS+2\Omega J+Ξ Ϙ .
 $$
 
 The constants are restored in every physical result, and the restorations are
@@ -65,9 +65,9 @@ S=\frac{k_B c^3 A}{4G\hbar}=\frac{k_B A}{4\ell_P^2},
 $$
 
 $$
-d(Mc^2)=\frac{\kappa c^2}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ,
+d(Mc^2)=\frac{\kappa c^2}{8\pi G}\,dA+\Omega\,dJ+Ξ\,dϘ,
 \qquad
-Mc^2=2TS+2\Omega J+\Phi Ϙ .
+Mc^2=2TS+2\Omega J+Ξ Ϙ .
 $$
 
 Equivalently, if one sets $c=\hbar=k_B=1$ but keeps $G$ explicit, the same relations read
@@ -77,14 +77,14 @@ S=\frac{A}{4G},
 \qquad
 T=\frac{\kappa}{2\pi},
 \qquad
-dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ,
+dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+Ξ\,dϘ,
 \qquad
-M=\frac{\kappa A}{4\pi G}+2\Omega J+\Phi Ϙ .
+M=\frac{\kappa A}{4\pi G}+2\Omega J+Ξ Ϙ .
 $$
 
 The form with the explicit $1/G$ is the one in which the geometric coefficient is displayed; setting $G=1$ gives the Planck-unit form used below.
 
-The conjugate quantities are fixed by their physical meaning. $\Omega$ is the **angular velocity of the horizon**, $J$ the angular momentum, $\Phi$ the **electric potential** of the horizon relative to infinity, and $Ϙ$ the electric charge. The charge is normalized so that the Reissner–Nordström metric function is $f=1-2M/r+Ϙ^2/r^2$ and the potential is $\Phi=Ϙ/r_+$; the angular momentum is normalized so that the Kerr–Newman function has $a=J/M$ and $\Delta=r^2-2Mr+a^2+Ϙ^2$. With these normalizations the work terms are **positive** when angular momentum or charge of the same sign is added, which fixes the signs in the first law: $\Omega>0$ and $\Phi>0$ for a co-rotating, positively charged hole.
+The conjugate quantities are fixed by their physical meaning. $\Omega$ is the **angular velocity of the horizon**, $J$ the angular momentum, $Ξ$ the **electric potential** of the horizon relative to infinity, and $Ϙ$ the electric charge. The charge is normalized so that the Reissner–Nordström metric function is $f=1-2M/r+Ϙ^2/r^2$ and the potential is $Ξ=Ϙ/r_+$; the angular momentum is normalized so that the Kerr–Newman function has $a=J/M$ and $\Delta=r^2-2Mr+a^2+Ϙ^2$. With these normalizations the work terms are **positive** when angular momentum or charge of the same sign is added, which fixes the signs in the first law: $\Omega>0$ and $Ξ>0$ for a co-rotating, positively charged hole.
 
 Throughout, $M$ is the mass (the total energy in Planck units), $A$ the area of the horizon cross-section, $\beta=\hbar/(k_BT)$ the inverse temperature, and $r_\pm=M\pm\sqrt{M^2-a^2-Ϙ^2}$ the outer and inner horizon radii of the Kerr–Newman family.
 
@@ -95,7 +95,7 @@ The four laws of black hole mechanics were formulated by Bardeen, Carter, and Ha
 | Thermodynamics | Black-hole mechanics (geometric) |
 |---|---|
 | **Zeroth:** the temperature is uniform in equilibrium | the surface gravity $\kappa$ is constant over the horizon |
-| **First:** $dE=T\,dS+\text{work}$ | $dM=\dfrac{\kappa}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ$ |
+| **First:** $dE=T\,dS+\text{work}$ | $dM=\dfrac{\kappa}{8\pi G}\,dA+\Omega\,dJ+Ξ\,dϘ$ |
 | **Second:** $\delta S\ge 0$ | the horizon area is non-decreasing, $\delta A\ge 0$ |
 | **Third:** $T=0$ is unattainable | $\kappa=0$ (the extremal limit) is unattainable |
 
@@ -107,9 +107,9 @@ $$
 S=\frac{A}{4G}\;},
 $$
 
-the second being the Bekenstein–Hawking entropy (in units $c=\hbar=k_B=1$; the full restoration is in the Conventions). With it, the geometric first law becomes the thermodynamic one, $dM=T\,dS+\Omega\,dJ+\Phi\,dϘ$, provided the coefficient in the area term is $1/(8\pi G)$ and the entropy is the area over $4G$. This is the sense in which the four laws "are" thermodynamics: the dictionary is fixed by the temperature, and the first law then determines the entropy's conjugate coefficient.
+the second being the Bekenstein–Hawking entropy (in units $c=\hbar=k_B=1$; the full restoration is in the Conventions). With it, the geometric first law becomes the thermodynamic one, $dM=T\,dS+\Omega\,dJ+Ξ\,dϘ$, provided the coefficient in the area term is $1/(8\pi G)$ and the entropy is the area over $4G$. This is the sense in which the four laws "are" thermodynamics: the dictionary is fixed by the temperature, and the first law then determines the entropy's conjugate coefficient.
 
-**Why the horizon is a thermodynamic system at all.** A thermodynamic system is specified by a small number of state variables, with an entropy and a temperature that are functions of them. The **no-hair theorem** — the uniqueness of the Kerr–Newman family among stationary, asymptotically flat electrovacuum black holes (Israel, Carter, Robinson, with later completions) — is what makes the horizon such a system: its state is $(M,J,Ϙ)$ and nothing else. There are no additional "hair" variables on which the area, the surface gravity, or the potentials could depend. The thermodynamic functions $A(M,J,Ϙ)$, $\kappa(M,J,Ϙ)$, $\Omega(M,J,Ϙ)$, and $\Phi(M,J,Ϙ)$ are therefore functions on a three-dimensional state space, and the first law is a one-form identity on that space, checked in Section "The First Law, Term by Term".
+**Why the horizon is a thermodynamic system at all.** A thermodynamic system is specified by a small number of state variables, with an entropy and a temperature that are functions of them. The **no-hair theorem** — the uniqueness of the Kerr–Newman family among stationary, asymptotically flat electrovacuum black holes (Israel, Carter, Robinson, with later completions) — is what makes the horizon such a system: its state is $(M,J,Ϙ)$ and nothing else. There are no additional "hair" variables on which the area, the surface gravity, or the potentials could depend. The thermodynamic functions $A(M,J,Ϙ)$, $\kappa(M,J,Ϙ)$, $\Omega(M,J,Ϙ)$, and $Ξ(M,J,Ϙ)$ are therefore functions on a three-dimensional state space, and the first law is a one-form identity on that space, checked in Section "The First Law, Term by Term".
 
 **What is established here and what is read into it.** The zeroth law ($\kappa$ constant over a Killing horizon, under the dominant energy condition), the area theorem, the unattainability statement, and the first law are established results of general relativity; the entropy $S=A/4G$ is established by the Euclidean action and by Bekenstein's argument; the temperature is the parent's established result. The **interpretation** is the interpretation of this structure through the framework — the horizon flow as modular flow, the entropy as a geometric rather than a state-counted quantity. The interpretation changes no number in the geometric laws, and the section "What Is Established, What Is Interpretation, and the Gaps" separates the two.
 
@@ -197,14 +197,14 @@ The horizon is a null surface, and in the polar chart of the boost it is the loc
 **The collapse.** A static observer near a non-extremal Killing horizon is, in the near-horizon Rindler chart, related to the horizon's generator by a boost whose rapidity diverges as the horizon is approached. Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$:
 
 $$
-\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\,\tilde\Pi_+ + e^{-\psi/2}\,\tilde\Pi_- .
+\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=e^{\theta^{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\tilde{Ξ}^{\mathrm{spn}}/2}\,\tilde\Pi_- .
 $$
 
 The component along $\tilde\Pi_-$ vanishes and the component along $\tilde\Pi_+$ diverges, so the rotor has no limit. The renormalised rotor does:
 
 $$
-e^{-\psi/2}\,\tilde U_{\mathrm b}(\psi)\longrightarrow\tilde\Pi_+,
-\qquad \psi\to\infty,
+e^{-\tilde{Ξ}^{\mathrm{spn}}/2}\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
+\qquad \tilde{Ξ}^{\mathrm{spn}}\to\infty,
 $$
 
 a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as a unit.
@@ -234,12 +234,12 @@ and the coefficient $1/4$ is fixed by the Euclidean action, not by the collapse.
 The first law of black hole mechanics is
 
 $$
-\boxed{\;dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+\Phi\,dϘ
+\boxed{\;dM=\frac{\kappa}{8\pi G}\,dA+\Omega\,dJ+Ξ\,dϘ
 \qquad\longleftrightarrow\qquad
-dM=T\,dS+\Omega\,dJ+\Phi\,dϘ\;},
+dM=T\,dS+\Omega\,dJ+Ξ\,dϘ\;},
 $$
 
-in units $c=\hbar=k_B=1$, with the dictionary of the Conventions. In the explicit checks below we set $G=1$ as well — equivalently, $G$ is absorbed into the normalization of the mass and the area — so that the coefficient in the area term is $\kappa/8\pi$. Everything on the right is a function of the state $(M,J,Ϙ)$, and the statement is an identity among one-forms on that three-dimensional space. The coefficients are not free: the $\kappa/(8\pi G)$ multiplies $\delta A$, and $\Omega$ and $\Phi$ are the horizon's angular velocity and electric potential. This section checks all three terms on the general Kerr–Newman horizon.
+in units $c=\hbar=k_B=1$, with the dictionary of the Conventions. In the explicit checks below we set $G=1$ as well — equivalently, $G$ is absorbed into the normalization of the mass and the area — so that the coefficient in the area term is $\kappa/8\pi$. Everything on the right is a function of the state $(M,J,Ϙ)$, and the statement is an identity among one-forms on that three-dimensional space. The coefficients are not free: the $\kappa/(8\pi G)$ multiplies $\delta A$, and $\Omega$ and $Ξ$ are the horizon's angular velocity and electric potential. This section checks all three terms on the general Kerr–Newman horizon.
 
 ### The Kerr–Newman Horizon
 
@@ -262,7 +262,7 @@ A=4\pi\left(r_+^2+a^2\right),
 \qquad
 \Omega=\frac{a}{r_+^2+a^2},
 \qquad
-\Phi=\frac{Ϙ\,r_+}{r_+^2+a^2}.
+Ξ=\frac{Ϙ\,r_+}{r_+^2+a^2}.
 $$
 
 The first law is equivalent to the three derivative identities
@@ -272,7 +272,7 @@ $$
 \qquad
 \frac{\partial A}{\partial J}=-\frac{8\pi\,\Omega}{\kappa},
 \qquad
-\frac{\partial A}{\partial Ϙ}=-\frac{8\pi\,\Phi}{\kappa},
+\frac{\partial A}{\partial Ϙ}=-\frac{8\pi\,Ξ}{\kappa},
 $$
 
 obtained by comparing the coefficient of $dM$, $dJ$, and $dϘ$ on the two sides. All three were verified symbolically on the general Kerr–Newman family (with $M,J,Ϙ$ as independent parameters and $a=J/M$), and each vanishes identically. The signs are the content of the second and third: the area *decreases* when angular momentum or charge is added at fixed mass, which is why the work terms in $dM$ are positive and why the identities carry minus signs.
@@ -282,7 +282,7 @@ obtained by comparing the coefficient of $dM$, $dJ$, and $dϘ$ on the two sides.
 Each known case was checked separately, so that the general identity is not certified only by the case that suggested it.
 
 - **Schwarzschild** ($J=Ϙ=0$): $a=0$, $r_+=2M$, $A=16\pi M^2$, $\kappa=1/(4M)$, $T=1/(8\pi M)$, $S=4\pi M^2$. The first law reduces to $dM=T\,dS$: indeed $T\,dS=(1/8\pi M)\cdot 8\pi M\,dM=dM$.
-- **Reissner–Nordström** ($J=0$): $r_\pm=M\pm\sqrt{M^2-Ϙ^2}$, $A=4\pi r_+^2$, $\kappa=(r_+-r_-)/(2r_+^2)$, $\Phi=Ϙ/r_+$. The first law is $dM=(\kappa/8\pi)\,dA+\Phi\,dϘ$, and both derivative identities hold; the Smarr limit $M=2TS+\Phi Ϙ$ is verified below.
+- **Reissner–Nordström** ($J=0$): $r_\pm=M\pm\sqrt{M^2-Ϙ^2}$, $A=4\pi r_+^2$, $\kappa=(r_+-r_-)/(2r_+^2)$, $Ξ=Ϙ/r_+$. The first law is $dM=(\kappa/8\pi)\,dA+Ξ\,dϘ$, and both derivative identities hold; the Smarr limit $M=2TS+Ξ Ϙ$ is verified below.
 - **Kerr** ($Ϙ=0$): $r_+=M+\sqrt{M^2-a^2}$, $A=8\pi Mr_+$, $\Omega=a/(2Mr_+)$, and the first law is $dM=(\kappa/8\pi)\,dA+\Omega\,dJ$; the identity $\partial A/\partial J=-8\pi\Omega/\kappa$ holds.
 
 ### A Numerical Spot Check
@@ -293,7 +293,7 @@ $$
 A=44.4197\ldots,\quad
 \kappa=0.229830\ldots,\quad
 \Omega=0.141450\ldots,\quad
-\Phi=0.153819\ldots,
+Ξ=0.153819\ldots,
 $$
 
 $$
@@ -301,16 +301,16 @@ T=\frac{\kappa}{2\pi}=0.0365785\ldots,\qquad
 S=\frac{A}{4}=11.1049\ldots .
 $$
 
-The first law holds at this point: the three central-difference combinations $(\kappa/8\pi)\,\partial A/\partial M-1$, $(\kappa/8\pi)\,\partial A/\partial J+\Omega$, and $(\kappa/8\pi)\,\partial A/\partial Ϙ+\Phi$ vanish to better than $10^{-12}$ in a $30$-digit computation, and the same computation verifies the Smarr residual below to machine precision. The check uses the general charged and rotating case, not the Schwarzschild case from which the area law is easiest to guess.
+The first law holds at this point: the three central-difference combinations $(\kappa/8\pi)\,\partial A/\partial M-1$, $(\kappa/8\pi)\,\partial A/\partial J+\Omega$, and $(\kappa/8\pi)\,\partial A/\partial Ϙ+Ξ$ vanish to better than $10^{-12}$ in a $30$-digit computation, and the same computation verifies the Smarr residual below to machine precision. The check uses the general charged and rotating case, not the Schwarzschild case from which the area law is easiest to guess.
 
-**Sign convention, stated once.** The angular-velocity and potential terms are positive because $\Omega$ and $\Phi$ are the horizon values in the gauge where they vanish at infinity and because adding angular momentum or charge of the same sign increases the mass. A reader using the opposite sign for $\Phi$ (potential of infinity relative to the horizon) or the opposite convention for the direction of rotation must flip the corresponding term; the geometric identities above fix the convention, since $\kappa$, $A$, and $r_\pm$ are sign-definite.
+**Sign convention, stated once.** The angular-velocity and potential terms are positive because $\Omega$ and $Ξ$ are the horizon values in the gauge where they vanish at infinity and because adding angular momentum or charge of the same sign increases the mass. A reader using the opposite sign for $Ξ$ (potential of infinity relative to the horizon) or the opposite convention for the direction of rotation must flip the corresponding term; the geometric identities above fix the convention, since $\kappa$, $A$, and $r_\pm$ are sign-definite.
 
 ## The Smarr Relation, by Scaling
 
 The Smarr relation is often quoted as
 
 $$
-M=2TS+2\Omega J+\Phi Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+\Phi Ϙ,
+M=2TS+2\Omega J+Ξ Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+Ξ Ϙ,
 $$
 
 but it is not an independent law: it is the **Euler relation** for a weighted-homogeneous mass, and the weights are fixed by how the black-hole family scales. Deriving it that way shows both why it holds and where it fails.
@@ -338,7 +338,7 @@ T\to\frac{T}{\lambda},
 \qquad
 \Omega\to\frac{\Omega}{\lambda},
 \qquad
-\Phi\to\Phi,
+Ξ\toΞ,
 $$
 
 each verified symbolically: the radius and the area are lengths and areas, the surface gravity is an inverse length, the angular velocity is an inverse length, and the dimensionless potential is invariant.
@@ -357,20 +357,20 @@ $$
 2S\,\frac{\partial M}{\partial S}+2J\,\frac{\partial M}{\partial J}+Ϙ\,\frac{\partial M}{\partial Ϙ}=M.
 $$
 
-The first law supplies the partial derivatives: $T=\partial M/\partial S$, $\Omega=\partial M/\partial J$, and $\Phi=\partial M/\partial Ϙ$ are precisely its intensive coefficients. Substituting,
+The first law supplies the partial derivatives: $T=\partial M/\partial S$, $\Omega=\partial M/\partial J$, and $Ξ=\partial M/\partial Ϙ$ are precisely its intensive coefficients. Substituting,
 
 $$
-\boxed{\;M=2TS+2\Omega J+\Phi Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+\Phi Ϙ\;},
+\boxed{\;M=2TS+2\Omega J+Ξ Ϙ=\frac{\kappa A}{4\pi G}+2\Omega J+Ξ Ϙ\;},
 $$
 
 where the second form uses $T=\kappa/2\pi$ and $S=A/(4G)$, so that $2TS=\kappa A/(4\pi G)$. This is the Smarr relation, and it was obtained by scaling.
 
 ### Verification
 
-The relation was verified symbolically on the general Kerr–Newman family in the form $M-2TS-2\Omega J-\Phi Ϙ=0$ (with the horizon quantities as defined above), and separately on each specialisation:
+The relation was verified symbolically on the general Kerr–Newman family in the form $M-2TS-2\Omega J-Ξ Ϙ=0$ (with the horizon quantities as defined above), and separately on each specialisation:
 
 - **Schwarzschild:** $J=Ϙ=0$ gives $M=2TS$. With $T=1/(8\pi M)$ and $S=4\pi M^2$, $2TS=M$.
-- **Reissner–Nordström:** $M=2TS+\Phi Ϙ$; symbolically $2TS+\Phi Ϙ-M$ reduces to zero.
+- **Reissner–Nordström:** $M=2TS+Ξ Ϙ$; symbolically $2TS+Ξ Ϙ-M$ reduces to zero.
 - **Kerr:** $M=2TS+2\Omega J$, symbolically zero.
 - **Kerr–Newman:** the full four-term identity, symbolically zero and numerically zero at $M=1$, $J=0.5$, $Ϙ=0.3$.
 
@@ -397,7 +397,7 @@ $$
 and letting $V$ be its conjugate, the **extended first law** is
 
 $$
-dM=T\,dS+\Omega\,dJ+\Phi\,dϘ+V\,dP,
+dM=T\,dS+\Omega\,dJ+Ξ\,dϘ+V\,dP,
 \qquad
 V=\left(\frac{\partial M}{\partial P}\right)_{S,J,Ϙ},
 $$
@@ -405,7 +405,7 @@ $$
 and the mass is weighted-homogeneous in $(S,J,Ϙ,P)$ with weights $(2,2,1,-2)$ — the last being the weight of $P$ under the scaling. Euler's relation then gives the **corrected Smarr formula**
 
 $$
-\boxed{\;M=2TS+2\Omega J+\Phi Ϙ-2PV\;}.
+\boxed{\;M=2TS+2\Omega J+Ξ Ϙ-2PV\;}.
 $$
 
 The correction is therefore a term $-2PV$, absent in the asymptotically flat case, and it is not a small rescaling of the flat relation but a genuinely new term proportional to the volume conjugate to $\Lambda$.
@@ -432,19 +432,19 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 **Established (physics).**
 
-- The four laws of black hole mechanics: the constancy of $\kappa$ over a Killing horizon, the first law $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dϘ$, the area theorem $\delta A\ge0$ under the dominant energy condition, and the unattainability of $\kappa=0$.
+- The four laws of black hole mechanics: the constancy of $\kappa$ over a Killing horizon, the first law $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ$, the area theorem $\delta A\ge0$ under the dominant energy condition, and the unattainability of $\kappa=0$.
 - The no-hair theorem: a stationary, asymptotically flat electrovacuum black hole is a member of the Kerr–Newman family and its state is $(M,J,Ϙ)$.
 - The Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$ (the parent's result), including the Euclidean period $\beta=2\pi c/\kappa$.
 - The Bekenstein–Hawking entropy $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$, from the Euclidean action and Bekenstein's argument.
 - The first law, verified term by term for Kerr–Newman and each specialisation.
-- The Smarr relation $M=2TS+2\Omega J+\Phi Ϙ$, derived by scaling and verified; and its extension $M=2TS+2\Omega J+\Phi Ϙ-2PV$ with a cosmological constant, verified for Schwarzschild–AdS.
+- The Smarr relation $M=2TS+2\Omega J+Ξ Ϙ$, derived by scaling and verified; and its extension $M=2TS+2\Omega J+Ξ Ϙ-2PV$ with a cosmological constant, verified for Schwarzschild–AdS.
 
 **Established (algebra).**
 
 - The sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the complex scalars $\mathbb{C}_{\mathbb{B}}$, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and the plain form $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$, read as the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$.
 - The intrinsic imaginary time $ict'$ of $\mathbb{M}_-$, whose compactification period is the inverse temperature, and the KMS condition of the parent.
 - The modular Hamiltonian $K=-\log\tilde{Ϛ}$ of the horizon flow as a Hermitian element of $\mathbb{M}_+$.
-- The boost word in the two-term form $\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\tilde\Pi_+ + e^{-\psi/2}\tilde\Pi_-$, whose renormalised limit $\psi\to\infty$ is the null idempotent $\tilde\Pi_+$.
+- The boost word in the two-term form $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=e^{\theta^{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}^{\mathrm{spn}}/2}\tilde\Pi_-$, whose renormalised limit $\tilde{Ξ}^{\mathrm{spn}}\to\infty$ is the null idempotent $\tilde\Pi_+$.
 - The charges $(M,J,Ϙ)$ as material-sector Noether quantities: energy–momentum is an $\mathbb{M}_-$ four-vector, angular momentum the associated bivector, and charge the time component of the conserved current.
 
 **Interpretation.**
@@ -484,9 +484,9 @@ The four laws of black hole mechanics are the ordinary laws of thermodynamics ap
 
 The entropy is the **Bekenstein–Hawking entropy** $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$. It is the **area**, not a volume, and this is forced rather than coincidental: the area is a state function of $(M,J,Ϙ)$ while the interior volume is slicing-dependent; the first law's geometric conjugate to $\kappa$ is $\delta A$; dimensional analysis leaves $A/\ell_P^2$ as the only dimensionless combination; the Euclidean section localises the entropy at the codimension-two locus where the time circle shrinks; and the area is the monotone quantity of Bekenstein's second-law argument. The coefficient $1/4$ is fixed by $T\,dS=(\kappa/2\pi)(dA/4G)=\kappa\,dA/(8\pi G)$. The entropy is thermodynamic and geometric; it is not a count of microstates, and no such count is claimed.
 
-The **first law** $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dϘ=T\,dS+\Omega\,dJ+\Phi\,dϘ$ was checked term by term for the general Kerr–Newman horizon, with the area's derivatives in mass, angular momentum, and charge matching the conjugate quantities in magnitude and sign, and separately on the Schwarzschild, Reissner–Nordström, and Kerr specialisations and at a numerical point with both rotation and charge.
+The **first law** $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ=T\,dS+\Omega\,dJ+Ξ\,dϘ$ was checked term by term for the general Kerr–Newman horizon, with the area's derivatives in mass, angular momentum, and charge matching the conjugate quantities in magnitude and sign, and separately on the Schwarzschild, Reissner–Nordström, and Kerr specialisations and at a numerical point with both rotation and charge.
 
-The **Smarr relation** $M=2TS+2\Omega J+\Phi Ϙ=\kappa A/(4\pi G)+2\Omega J+\Phi Ϙ$ was derived by scaling: the Kerr–Newman family satisfies $(M,J,Ϙ)\to(\lambda M,\lambda^2J,\lambda Ϙ)$ under $g_{\mu\nu}\to\lambda^2g_{\mu\nu}$, so $M$ is weighted-homogeneous of weights $(2,2,1)$ and Euler's theorem gives the relation with the first law's conjugates. With the parent's temperature it fixes the entropy to $S=A/4$ for Schwarzschild, so the temperature, the first law, and the scaling homogeneity close the thermodynamics. A cosmological constant breaks the scaling and the relation acquires the correction $-2PV$, verified for Schwarzschild–AdS.
+The **Smarr relation** $M=2TS+2\Omega J+Ξ Ϙ=\kappa A/(4\pi G)+2\Omega J+Ξ Ϙ$ was derived by scaling: the Kerr–Newman family satisfies $(M,J,Ϙ)\to(\lambda M,\lambda^2J,\lambda Ϙ)$ under $g_{\mu\nu}\to\lambda^2g_{\mu\nu}$, so $M$ is weighted-homogeneous of weights $(2,2,1)$ and Euler's theorem gives the relation with the first law's conjugates. With the parent's temperature it fixes the entropy to $S=A/4$ for Schwarzschild, so the temperature, the first law, and the scaling homogeneity close the thermodynamics. A cosmological constant breaks the scaling and the relation acquires the correction $-2PV$, verified for Schwarzschild–AdS.
 
 The biquaternion framework houses the thermodynamics — the material sector $\mathbb{M}_-$ for the charges and the intrinsic imaginary time, the informational sector $\mathbb{M}_+$ for the modular Hamiltonian of the horizon flow — and it imports the geometry, the Euclidean action, and the area law. It contains no microstate count, no horizon state whose entropy is the area, and no correction to the standard numbers. The gaps are stated rather than filled.
 
@@ -510,16 +510,16 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $A=4\pi(r_+^2+a^2)$ | Horizon area |
 | $\kappa=(r_+-r_-)/(2(r_+^2+a^2))$ | Surface gravity (acceleration normalization) |
 | $\Omega=a/(r_+^2+a^2)$ | Horizon angular velocity |
-| $\Phi=Ϙr_+/(r_+^2+a^2)$ | Horizon electric potential |
+| $Ξ=Ϙr_+/(r_+^2+a^2)$ | Horizon electric potential |
 | $T=\hbar\kappa/(2\pi c k_B)$ | Hawking temperature (from the parent) |
 | $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$ | Bekenstein–Hawking entropy |
 | $\ell_P^2=\hbar G/c^3$ | Planck area |
 | $\beta=\hbar/(k_BT)=2\pi c/\kappa$ | Inverse temperature, Euclidean period |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\mathrm b}(\psi)=e^{\psi/2}\tilde\Pi_+ + e^{-\psi/2}\tilde\Pi_-$ | Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
-| $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dϘ$ | First law (units $c=\hbar=k_B=1$) |
-| $M=2TS+2\Omega J+\Phi Ϙ$ | Smarr relation |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=e^{\theta^{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}^{\mathrm{spn}}/2}\tilde\Pi_-$ | Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
+| $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ$ | First law (units $c=\hbar=k_B=1$) |
+| $M=2TS+2\Omega J+Ξ Ϙ$ | Smarr relation |
 | $\Lambda$, $P=-\Lambda/(8\pi G)$, $V$ | Cosmological constant, pressure, thermodynamic volume |
-| $M=2TS+2\Omega J+\Phi Ϙ-2PV$ | Smarr relation with a cosmological constant |
+| $M=2TS+2\Omega J+Ξ Ϙ-2PV$ | Smarr relation with a cosmological constant |
 | $K=-\log\tilde{Ϛ}$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$ | Idempotents of the horizon-generating boost; the renormalised rotor tends to $\tilde\Pi_+$ |
 | $(\beta,A)$ | Boundary datum: Euclidean period and horizon area |

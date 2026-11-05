@@ -74,12 +74,12 @@ The rank is the count of gauge directions per mode, and subtracting it from the 
 
 ### The Orbit and the Covariant Derivative
 
-The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{\Psi}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
+The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}^{\mathrm{spn}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 \qquad
-\tilde{\Psi}_2 = \lambda\tilde{\Psi},
+\tilde{Ξ}^{\mathrm{spn}}_2 = \lambda\tilde{Ξ}^{\mathrm{spn}},
 \qquad
 \lambda = \exp(i ϙ\Gamma/\hbar).
 $$
@@ -87,20 +87,20 @@ $$
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
 $$
-D_2\tilde{\Psi}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{\Psi}
-= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{\Psi}
-= \lambda\,D\tilde{\Psi},
+D_2\tilde{Ξ}^{\mathrm{spn}}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}^{\mathrm{spn}}
+= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{Ξ}^{\mathrm{spn}}
+= \lambda\,D\tilde{Ξ}^{\mathrm{spn}},
 $$
 
-the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{\Psi}) = (\tilde{\nabla}\lambda)\tilde{\Psi} + \lambda\tilde{\nabla}\tilde{\Psi}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
+the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}^{\mathrm{spn}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}^{\mathrm{spn}} + \lambda\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
 
 $$
 D_2 = \lambda\,D\,\lambda^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{\Psi})$ and the pair $(\tilde{A}_2,\tilde{\Psi}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{\Psi}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{spn}})$ and the pair $(\tilde{A}_2,\tilde{Ξ}^{\mathrm{spn}}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}^{\mathrm{spn}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
 
-Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{\Psi})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
+Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{spn}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
 ## The Orbit Is the Fibre of the Curvature Map
 
@@ -225,7 +225,7 @@ The information in the gauge orbit is, in this interpretation, the holonomy: the
 
 ### The Aharonov–Bohm Reading
 
-The clearest demonstration that the orbit carries information the curvature does not is the Aharonov–Bohm phase. Let a loop enclose a region of flux that is confined to a tube the loop does not touch, so that $\tilde{F}$ vanishes at every point of the loop. The curvature along the loop is then zero, and a local interpretation of the field strength would conclude that the loop encloses nothing. The holonomy is nevertheless $\tilde U(C) = \exp(i\Phi)$ with $\Phi$ the enclosed flux, because Stokes' theorem equates the loop integral to the flux through any surface it bounds, and the flux is concentrated on the surface rather than on the curve.
+The clearest demonstration that the orbit carries information the curvature does not is the Aharonov–Bohm phase. Let a loop enclose a region of flux that is confined to a tube the loop does not touch, so that $\tilde{F}$ vanishes at every point of the loop. The curvature along the loop is then zero, and a local interpretation of the field strength would conclude that the loop encloses nothing. The holonomy is nevertheless $\tilde U(C) = \exp(iΞ)$ with $Ξ$ the enclosed flux, because Stokes' theorem equates the loop integral to the flux through any surface it bounds, and the flux is concentrated on the surface rather than on the curve.
 
 Information-theoretically this is the sharp statement of the article's thesis. The curvature is a local density and is zero on the loop; the connection, evaluated along the loop, is not zero; the loop integral measures the second and not the first. So the redundancy — the fact that the connection is a point in an orbit rather than an invariant — is not an inefficiency of the description. The orbit is the carrier of a genuinely non-local, gauge-invariant phase, and it is the smallest object on which the orbit's structure becomes measurable. The Wilson loop of the companion article is precisely the gauge-invariant trace of this phase, and the Aharonov–Bohm effect is the case in which it is the *only* thing the loop measures.
 

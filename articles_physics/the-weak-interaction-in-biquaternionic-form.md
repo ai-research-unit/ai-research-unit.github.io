@@ -6,19 +6,19 @@ The **weak interaction** is the interaction that changes flavour. A neutron beco
 
 This article treats the process level, and not the bosons. The companion *The W and Z Bosons in Biquaternionic Form* settles what the framework reaches for the carriers — the Proca kinematics, the charges as eigenvalues of the adjoint action, the neutral mixing, the self-couplings — and states plainly that it stops at the chiral coupling. The present article starts there, asks what the framework has for the **current** itself and for the contact built from two of them, and answers in the three categories the corpus uses.
 
-- **Established, and derived below.** On the Dirac module the vector vertex $\Gamma_\mu$ and the axial vertex $\Gamma_\mu\chi$ are each a single cell. Their combination $\Gamma_\mu(g_V-g_A\chi)$ is again a single cell, with a right multiplier that is the sum of the two, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one, and the square of the whole operator is $(g_V^2-g_A^2)\Gamma_\mu^2$. It follows that the chiral vertex is **nilpotent exactly at $|g_A|=|g_V|$**, that is exactly for the two chiral mixtures $V-A$ and $V+A$, and invertible for every other pair of weights; and that at $g_A=+g_V$ and $g_A=-g_V$ the right multiplier is exactly $2\vec\Upsilon_1$ and $2\vec\Upsilon_2$, the two standard Peirce nilpotents of the algebra. The $V-A$ structure, which the Standard Model takes as input, is therefore one of the only two weight assignments that make the weak vertex a **null** element, the other being $V+A$, which differs from it only in the sign of the axial half; and the framework states the same identity that the Dirac matrices satisfy.
+- **Established, and derived below.** On the Dirac module the vector vertex $\Gamma_\mu$ and the axial vertex $\Gamma_\mu\xi$ are each a single cell. Their combination $\Gamma_\mu(g_V-g_A\xi)$ is again a single cell, with a right multiplier that is the sum of the two, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one, and the square of the whole operator is $(g_V^2-g_A^2)\Gamma_\mu^2$. It follows that the chiral vertex is **nilpotent exactly at $|g_A|=|g_V|$**, that is exactly for the two chiral mixtures $V-A$ and $V+A$, and invertible for every other pair of weights; and that at $g_A=+g_V$ and $g_A=-g_V$ the right multiplier is exactly $2\vec\Upsilon_1$ and $2\vec\Upsilon_2$, the two standard Peirce nilpotents of the algebra. The $V-A$ structure, which the Standard Model takes as input, is therefore one of the only two weight assignments that make the weak vertex a **null** element, the other being $V+A$, which differs from it only in the sign of the axial half; and the framework states the same identity that the Dirac matrices satisfy.
 - **Transcribed, and recomputed here.** The contact coefficient, $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$; the contact's accuracy at low momentum transfer; the muon lifetime, $2.1873$ microseconds at the tree level against the measured $2.1969811$; and the ratio of the two pion decay rates, $1.2833\times10^{-4}$ at the tree level against the measured $1.2300\times10^{-4}$, the difference being the radiative correction. These are standard results, and the framework neither improves nor spoils them.
 - **Not supplied, and left visible as a gap.** The framework does not derive the coupling, does not select the left-handed half, has no generation structure and no mixing matrix, and its own gauge group, the $*$-unitary part of the centre, acts as a scalar and is therefore vector-like on the module, a chiral gauge group requiring a non-central action that *Chiral Fermions in the Biquaternion Framework* records as the gap. The algebra supplies the *shape* of the vertex and not the *strength* with which nature uses it.
 
 The article is organised as follows. The next section transcribes the process, the contact and the rates. A section then writes the charged current as a cell, derives the multiplier table, and proves the square identity and the nilpotency criterion. A section turns the criterion on the neutral current and shows that the measured $Z$ coupling sits away from the null point, with the parity-violating asymmetry as the size of the departure. A section treats parity, the mass bilinear and what nilpotency means for a fermion line. A closing section separates what the framework supplies from what it imports, and names the one gauge construction that would close the gap. The summary, the notation table and the literature follow.
 
-Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **cell**, $L_aR_b\psi=a\psi b$, and applying a cell twice gives $a^2\psi b^2$. The frame cells and the chirality cell are those of the companions,
+Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **cell**, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$, and applying a cell twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$. The frame cells and the chirality cell are those of the companions,
 
 $$
-\Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \chi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \xi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -27,7 +27,7 @@ the label $\mathrm{axf}$ naming the axis-free frame of the regular representatio
 The weak charged current carries one unit of charge and one unit of the weak isospin ladder. In the standard notation, read in the frame declared above, with $u$ the upper and $d$ the lower member of a doublet,
 
 $$
-J^{+}_\mu=\psi^{\dagger}_{\mathrm u}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\psi_{\mathrm d},
+J^{+}_\mu=\tilde{Ξ}^{\mathrm{spn}\dagger}_{\mathrm u}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d},
 $$
 
 and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $\varepsilon_\mu\delta_{\mu\nu}/M_W^2$ and leaves a contact,
@@ -72,12 +72,12 @@ against the measured $1.2300\times10^{-4}$, which is $0.958$ times the tree-leve
 
 ### The vector and the axial vertex
 
-The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\chi$ is a cell as well; explicitly $\Gamma_t\chi=R_{\vec e_y}$ and $\Gamma_k\chi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\chi)^2=-\varepsilon_\mu I_4$, both verified exactly.
+The vector vertex is one cell, $\Gamma_\mu$, and it is the corpus's frame cell: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same cell followed by the chirality cell, and the product of two cells is a cell, so $\Gamma_\mu\xi$ is a cell as well; explicitly $\Gamma_t\xi=R_{\vec e_y}$ and $\Gamma_k\xi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\xi)^2=-\varepsilon_\mu I_4$, both verified exactly.
 
 The object the weak interaction uses is neither of these but their difference. It is a cell as well, this time by linearity of the right factor rather than by the product rule,
 
 $$
-\Gamma_\mu(g_V-g_A\chi)=g_V\Gamma_\mu-g_A\,\Gamma_\mu\chi ,
+\Gamma_\mu(g_V-g_A\xi)=g_V\Gamma_\mu-g_A\,\Gamma_\mu\xi ,
 $$
 
 whose two terms share the same left multiplier and differ only in the right one, so that the sum is the single cell with the summed right multiplier, $g_Vi\vec e_x-g_A\vec e_y$ in the time component and $g_Vi\vec e_y+g_A\vec e_x$ in a spatial one.
@@ -101,7 +101,7 @@ Every left multiplier in the table lies in the informational sector $\mathbb{M}_
 
 ### The square identity
 
-The square of a cell is the cell of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\psi\mapsto a\psi b$ twice gives $a^2\psi b^2$. For the chiral vertex the right multiplier is $\vec\Upsilon_1$ or $\vec\Upsilon_2$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
+The square of a cell is the cell of the squares, $L_aR_b\,L_aR_b=L_{a^2}R_{b^2}$, because applying $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$ twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$. For the chiral vertex the right multiplier is $\vec\Upsilon_1$ or $\vec\Upsilon_2$, and both square to zero, so the square vanishes. For general weights the right multiplier is $b=g_Vi\vec e_x-g_A\vec e_y$ in the time component, whose square is
 
 $$
 (g_Vi\vec e_x-g_A\vec e_y)^2=-g_V^2\vec e_x^2+g_A^2\vec e_y^2=g_V^2-g_A^2 ,
@@ -110,22 +110,22 @@ $$
 the cross term vanishing because distinct quaternion units anticommute. The same computation in a spatial component, with right multiplier $g_Vi\vec e_y+g_A\vec e_x$, gives the same value $g_V^2-g_A^2$, the difference between the two cases being carried by $\Gamma_k^2=-I_4$. Hence
 
 $$
-\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu\,(g_V^2-g_A^2)\,I_4 ,
+\big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu\,(g_V^2-g_A^2)\,I_4 ,
 $$
 
 an identity checked to $2.3\times10^{-16}$ for $(g_V,g_A)\in\{(1,0),(1,\tfrac12),(1,1),(1,-1),(1,2),(1,i),(1,0.3+0.4i),(1,2-i)\}$ and $\mu=t,x,y,z$. Three things follow, and they are the substance of this article.
 
 **The chiral vertex is nilpotent, and only the chiral one is.** The square vanishes if and only if $g_A^2=g_V^2$, that is for $V-A$ and $V+A$ and for no other ratio of the weights. For $g_A^2\ne g_V^2$ the operator is not merely non-null but invertible, with determinant $(g_V^2-g_A^2)^2$ in each component; the determinant was computed as $0.5625$ at $(g_V,g_A)=(1,\tfrac12)$ and $9$ at $(1,2)$, and vanishes at $g_A=\pm g_V$. The weak vertex therefore sits at one of the two ratios of the weights at which the algebra's own product degenerates, and the Standard Model's choice of $V-A$ is that value.
 
-**Two adjacent vertices annihilate, and the index does not matter.** The square identity uses one index twice, but the vanishing is stronger than the square shows. Since $\chi$ anticommutes with every frame cell, $P_L\Gamma_\nu=\Gamma_\nu P_R$, and two adjacent weak vertices collapse for **every** pair of Lorentz indices,
+**Two adjacent vertices annihilate, and the index does not matter.** The square identity uses one index twice, but the vanishing is stronger than the square shows. Since $\xi$ anticommutes with every frame cell, $P_L\Gamma_\nu=\Gamma_\nu P_R$, and two adjacent weak vertices collapse for **every** pair of Lorentz indices,
 
 $$
 \Gamma_\mu P_L\,\Gamma_\nu P_L=\Gamma_\mu\Gamma_\nu P_RP_L=0 ,
 $$
 
-verified for all sixteen pairs $(\mu,\nu)$ and likewise for $P_R$. The index plays no part; what does the work is the chirality flip, one projector at each vertex. The prohibition is therefore about **adjacency**. Anything between the two vertices removes it, and a single propagator is enough, because the momentum cell $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ anticommutes with $\chi$ and turns the projector back: with $p=(1,0.3,-0.2,0.1)$ the chain was $1.1$ in every component. A box diagram is unaffected for that reason, its two vertices standing at the two ends of one propagator rather than beside each other. This is the helicity selection rule read on one line rather than on one decay, and it is the same flip that the pion ratio measures.
+verified for all sixteen pairs $(\mu,\nu)$ and likewise for $P_R$. The index plays no part; what does the work is the chirality flip, one projector at each vertex. The prohibition is therefore about **adjacency**. Anything between the two vertices removes it, and a single propagator is enough, because the momentum cell $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ anticommutes with $\xi$ and turns the projector back: with $p=(1,0.3,-0.2,0.1)$ the chain was $1.1$ in every component. A box diagram is unaffected for that reason, its two vertices standing at the two ends of one propagator rather than beside each other. This is the helicity selection rule read on one line rather than on one decay, and it is the same flip that the pion ratio measures.
 
-**The identity is Dirac's, and the framework says why.** A reader who knows the Dirac algebra will recognise $(g_V^2-g_A^2)\Gamma_\mu^2$ as the statement that the axial matrix anticommutes with the vector one, $\Gamma_\mu\chi=-\chi\Gamma_\mu$, so that $\Gamma_\mu(g_V-g_A\chi)=(g_V+g_A\chi)\Gamma_\mu$ and the axial half reverses its sign as the vector passes through it; the square then returns $g_V^2-g_A^2$ times $\Gamma_\mu^2$. The framework's version of the reason is arithmetic on the units. The right multipliers of the vector and the axial vertex are $i\vec e_x$ and $\vec e_y$, two orthogonal quaternion units, so the cross terms of the square cancel whatever the weight. The squares themselves are $+1$ and $-1$: the first is positive because the central $i$ contributes $i^2=-1$ against $\vec e_x^2=-1$, and the second is negative because $\vec e_y^2=-1$ stands alone. The two contributions therefore carry opposite signs by construction, and they cancel exactly when the weights are equal in magnitude.
+**The identity is Dirac's, and the framework says why.** A reader who knows the Dirac algebra will recognise $(g_V^2-g_A^2)\Gamma_\mu^2$ as the statement that the axial matrix anticommutes with the vector one, $\Gamma_\mu\xi=-\xi\Gamma_\mu$, so that $\Gamma_\mu(g_V-g_A\xi)=(g_V+g_A\xi)\Gamma_\mu$ and the axial half reverses its sign as the vector passes through it; the square then returns $g_V^2-g_A^2$ times $\Gamma_\mu^2$. The framework's version of the reason is arithmetic on the units. The right multipliers of the vector and the axial vertex are $i\vec e_x$ and $\vec e_y$, two orthogonal quaternion units, so the cross terms of the square cancel whatever the weight. The squares themselves are $+1$ and $-1$: the first is positive because the central $i$ contributes $i^2=-1$ against $\vec e_x^2=-1$, and the second is negative because $\vec e_y^2=-1$ stands alone. The two contributions therefore carry opposite signs by construction, and they cancel exactly when the weights are equal in magnitude.
 
 ### The Peirce pair closes
 
@@ -141,7 +141,7 @@ with $\tilde\Pi_+$ Hermitian. The product of the two right multipliers, in the n
 
 ## The Neutral Current Is Not Null
 
-The neutral current has the same shape, $J_{Z\mu}=\psi^{\dagger}iR_{\vec e_x}\,\Gamma_\mu(g_V-g_A\chi)\psi$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
+The neutral current has the same shape, $J_{Z\mu}=\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}\,\Gamma_\mu(g_V-g_A\xi)\tilde{Ξ}^{\mathrm{spn}}$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
 
 $$
 \Big|\frac{g_A}{g_V}\Big|=\Big|1-4\sin^2\theta_W\Big|^{-1},
@@ -157,12 +157,12 @@ The observation is worth recording because it sharpens what "chiral" means in th
 
 ### Parity reverses the axial weight
 
-The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\eta_P=iR_{\vec e_x}$, which satisfies $\eta_PP_R=P_L\eta_P$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Upsilon_1\vec e_x=-\vec\Upsilon_2$ and $\vec e_x\vec\Upsilon_2\vec e_x=-\vec\Upsilon_1$, hence $\eta_P\chi\eta_P=-\chi$, and each cell $L_aR_{\vec\Upsilon_1}$ becomes $L_aR_{\vec\Upsilon_2}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
+The framework's parity operation reverses the three spatial directions and fixes time; on the Dirac module it is the internal factor $\eta_P=iR_{\vec e_x}$, which satisfies $\eta_PP_R=P_L\eta_P$ and so exchanges the two projectors, as *The Reflection and the Rotation in Biquaternionic Form* establishes. In the algebra the exchange is arithmetic on one unit: conjugation by $R_{\vec e_x}$ sends $\vec e_x\vec\Upsilon_1\vec e_x=-\vec\Upsilon_2$ and $\vec e_x\vec\Upsilon_2\vec e_x=-\vec\Upsilon_1$, hence $\eta_P\xi\eta_P=-\xi$, and each cell $L_aR_{\vec\Upsilon_1}$ becomes $L_aR_{\vec\Upsilon_2}$ with the left multiplier untouched. On a vertex of weights $(g_V,g_A)$ the effect is
 
 $$
-\eta_P\,\Gamma_t(g_V-g_A\chi)\,\eta_P=\Gamma_t(g_V+g_A\chi),
+\eta_P\,\Gamma_t(g_V-g_A\xi)\,\eta_P=\Gamma_t(g_V+g_A\xi),
 \qquad
-\eta_P\,\Gamma_k(g_V-g_A\chi)\,\eta_P=-\Gamma_k(g_V+g_A\chi),
+\eta_P\,\Gamma_k(g_V-g_A\xi)\,\eta_P=-\Gamma_k(g_V+g_A\xi),
 $$
 
 both verified exactly. Parity **reverses the axial weight**, $g_A\mapsto-g_A$, and the sign on the spatial components is the vector's own sign flip, $\Gamma_t\mapsto+\Gamma_t$ and $\Gamma_k\mapsto-\Gamma_k$. It does not annihilate a chiral vertex; it exchanges $V-A$ with $V+A$.
@@ -171,10 +171,10 @@ A theory is parity invariant when its vertex is its own image, which requires $g
 
 ### The mass bilinear is chirality-odd
 
-The Dirac mass term pairs the two chiralities, so it is odd under $\chi$ and vanishes on a field of definite chirality; the companion article derives this and the selection rule that follows, the two chiral charges equal for a gauge-invariant bare mass. This article adds only where the two facts meet. Both are properties of the one element $\chi$. The projectors are idempotent, $P_L^2=P_L$, and the adjoint passes through them to the other side, $P_LR_{\vec e_x}=R_{\vec e_x}P_R$, verified, so the bilinear of two left-handed fields is
+The Dirac mass term pairs the two chiralities, so it is odd under $\xi$ and vanishes on a field of definite chirality; the companion article derives this and the selection rule that follows, the two chiral charges equal for a gauge-invariant bare mass. This article adds only where the two facts meet. Both are properties of the one element $\xi$. The projectors are idempotent, $P_L^2=P_L$, and the adjoint passes through them to the other side, $P_LR_{\vec e_x}=R_{\vec e_x}P_R$, verified, so the bilinear of two left-handed fields is
 
 $$
-\psi_L^{\dagger}iR_{\vec e_x}\psi_L=\psi^{\dagger}P_L\,iR_{\vec e_x}P_L\psi=\psi^{\dagger}iR_{\vec e_x}P_RP_L\psi=0 ,
+\tilde{Ξ}^{\mathrm{spn}\dagger}_LiR_{\vec e_x}\tilde{Ξ}^{\mathrm{spn}}_L=\tilde{Ξ}^{\mathrm{spn}\dagger}P_L\,iR_{\vec e_x}P_L\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}P_RP_L\tilde{Ξ}^{\mathrm{spn}}=0 ,
 $$
 
 a mass term with nothing to pair. The same cell supplies the vertex its nilpotent multiplier. A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off the one idempotent.
@@ -188,7 +188,7 @@ The rule above is worth separating from two claims it does not make. It does not
 | Item | Status |
 |---|---|
 | The vector vertex as a cell | **Supplied.** $\Gamma_\mu$, the corpus's frame cell |
-| The axial vertex as a cell | **Supplied.** $\Gamma_\mu\chi$, a cell with a non-nilpotent multiplier |
+| The axial vertex as a cell | **Supplied.** $\Gamma_\mu\xi$, a cell with a non-nilpotent multiplier |
 | The chiral vertex as a single cell | **Supplied.** The multiplier table, verified exactly |
 | Nilpotency of the chiral vertex | **Supplied.** $(g_V^2-g_A^2)\Gamma_\mu^2$, zero at $|g_A|=|g_V|$ only |
 | The Peirce pair as the right multipliers | **Supplied.** $\vec\Upsilon_1$ for $L$, $\vec\Upsilon_2$ for $R$ |
@@ -207,10 +207,10 @@ One construction would change that, and the article names it without claiming it
 
 ## Summary
 
-The weak interaction at the process level is a four-fermion contact with a $V-A$ current, and the contact is accurate to a part per million for nuclear beta decay, so the process tests the vertex and not the carrier. The framework supplies the vertex exactly. The vector vertex $\Gamma_\mu$ is the corpus's frame cell and the axial vertex $\Gamma_\mu\chi$ is a cell too, and their combination $\Gamma_\mu(g_V-g_A\chi)$ is a single cell whose right multiplier is $g_Vi\vec e_x-g_A\vec e_y$ in the time component. Squaring gives
+The weak interaction at the process level is a four-fermion contact with a $V-A$ current, and the contact is accurate to a part per million for nuclear beta decay, so the process tests the vertex and not the carrier. The framework supplies the vertex exactly. The vector vertex $\Gamma_\mu$ is the corpus's frame cell and the axial vertex $\Gamma_\mu\xi$ is a cell too, and their combination $\Gamma_\mu(g_V-g_A\xi)$ is a single cell whose right multiplier is $g_Vi\vec e_x-g_A\vec e_y$ in the time component. Squaring gives
 
 $$
-\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4 ,
+\big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4 ,
 $$
 
 verified to $2.3\times10^{-16}$, so the chiral vertex is nilpotent if and only if $|g_A|=|g_V|$ and invertible otherwise. With the right multiplier normalised to the Peirce pair, the left multipliers are the informational-sector frame, $e_t$ and $-i\vec e_k$ for $P_L$ against $e_t$ and $+i\vec e_k$ for $P_R$, and the two chiralities differ only by the sign of that multiplier. The $V-A$ structure, which the Standard Model takes as input, is therefore exactly the condition that the weak vertex be null, and the identity it satisfies is Dirac's, derived here from the nilpotency of the Peirce element.
@@ -227,22 +227,22 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the spatial units |
 | $i$ | Central imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
-| $L_aR_b$ | Cell, $L_aR_b\psi=a\psi b$; applying it twice gives $a^2\psi b^2$ |
+| $L_aR_b$ | Cell, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$; applying it twice gives $a^2\tilde{Ξ}^{\mathrm{spn}} b^2$ |
 | $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
-| $\chi=-iR_{\vec e_z}$ | Chirality cell, $\chi^2=I_4$, the image of $\gamma_5$ |
-| $P_L=\tfrac12(I_4-\chi)$, $P_R=\tfrac12(I_4+\chi)$ | Chiral projectors, $P_LP_R=0$ |
+| $\xi=-iR_{\vec e_z}$ | Chirality cell, $\xi^2=I_4$, the image of $\gamma_5$ |
+| $P_L=\tfrac12(I_4-\xi)$, $P_R=\tfrac12(I_4+\xi)$ | Chiral projectors, $P_LP_R=0$ |
 | $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |
-| $\Gamma_\mu(g_V-g_A\chi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
-| $\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
-| $J^{+}_\mu=\psi^{\dagger}_{\mathrm u}iR_{\vec e_x}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
-| $\psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
+| $\Gamma_\mu(g_V-g_A\xi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
+| $\big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
+| $J^{+}_\mu=\tilde{Ξ}^{\mathrm{spn}\dagger}_{\mathrm u}iR_{\vec e_x}\Gamma_\mu(1-\xi)\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
+| $\tilde{Ξ}^{\mathrm{spn}\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu$ | Four-fermion contact |
 | $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | Contact coefficient |
 | $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ | Fermi constant |
 | $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV | Electroweak scale |
 | $g_V=T_3-2ϙ\sin^2\theta_W$, $g_A=T_3$ | Neutral current weights; the charged current has $g_V=g_A=1$ |
-| $\eta_P=iR_{\vec e_x}$ | Internal parity factor, $\eta_P^2=I_4$, $\eta_PP_R=P_L\eta_P$, $\eta_P\chi\eta_P=-\chi$ |
+| $\eta_P=iR_{\vec e_x}$ | Internal parity factor, $\eta_P^2=I_4$, $\eta_PP_R=P_L\eta_P$, $\eta_P\xi\eta_P=-\xi$ |
 | $Q_W=1-4\sin^2\theta_W=0.07512$ | Weak charge of the electron |
 | $\tau_\mu=192\pi^3/(G_{\mathrm F}^2m_\mu^5)$ | Muon lifetime at the tree level |
 | $\Gamma(\pi\to l\nu_l)=G_{\mathrm F}^2f_\pi^2m_\pi m_l^2(1-m_l^2/m_\pi^2)^2/(8\pi)$ | Pion decay rate, $f_\pi=130.2$ MeV |

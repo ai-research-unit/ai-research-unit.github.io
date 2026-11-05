@@ -111,11 +111,11 @@ The system (4) is the source's interpretation of the kernel as a **Cauchy–Riem
 The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial^2/\partial {t'}^2)g = 0$, then
 
 $$
-b(x,t') := \int_0^{t'} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\chi(x)
+b(x,t') := \int_0^{t'} Dg(x,s)\,ds - T_\Omega[\partial/\partial t' g](x,0) + \mathrm{grad}\,\xi(x)
 \tag{6}
 $$
 
-makes $g + iv$ an element of $\ker(D + i\partial/\partial t')$ and $g - iv$ an element of $\ker(D - i\partial/\partial t')$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\chi$ any time-independent harmonic function. The proof is the telescoping computation
+makes $g + iv$ an element of $\ker(D + i\partial/\partial t')$ and $g - iv$ an element of $\ker(D - i\partial/\partial t')$, where $T_\Omega$ is the Teodorescu transform (the right inverse of $D$ on a bounded domain $\Omega$) and $\xi$ any time-independent harmonic function. The proof is the telescoping computation
 
 $$
 Dv = -\int_0^{t'} \Delta g(x,s)\,ds - \partial/\partial t' g(x,0) = -\bigl(\partial/\partial t' g(x,t') - \partial/\partial t' g(x,0)\bigr) - \partial/\partial t' g(x,0) = -\partial/\partial t' g(x,t'),
@@ -128,7 +128,7 @@ $$
 \tag{7}
 $$
 
-and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\chi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{t'}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
+and $g_0 \pm \mathcal{V}[g_0]$ lies in the kernel of $D \pm i\partial/\partial t'$. The two worked examples of the source were checked: $g(x,t') = x + t'$ gives $Dg = -3$ and $b = -3t' + \tfrac{1}{3}x + \mathrm{grad}\,\xi$; $g_0 = x_1^2 + x_2^2 + x_3^2 + 3{t'}^2$ gives $\mathcal{V}[g_0] = 2it'x$. The relation between the two branches is the one the source prints: the sign in $g \pm iv$ is correlated with the sign in $D \pm i\partial/\partial t'$, and the first paragraph of the source's proof carries a spurious $\pm$ that is not needed, since both branches satisfy the same pair of relations $Dg = \partial/\partial t' b$, $Dv = -\partial/\partial t' g$.
 
 ## The Quaternionic Exponential and the Fourier Characterisation
 
@@ -141,10 +141,10 @@ $$
 \tag{8}
 $$
 
-with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\nabla w)(k) = 2\pi i k\,\mathcal{F}(w)(k)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $D\Phi = \mp i\partial/\partial t'\Phi$ of the kernel, using $\vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3 = k$ for the frequency vector, gives the linear equation
+with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\nabla w)(k) = 2\pi i k\,\mathcal{F}(w)(k)$ (*Biquaternion Continuous Harmonic Analysis*, *The Gradient*). Applying (8) to the equation $DΞ = \mp i\partial/\partial t'Ξ$ of the kernel, using $\vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3 = k$ for the frequency vector, gives the linear equation
 
 $$
-2\pi i k\,\mathcal{F}(\Phi_\pm)(k,t') \pm i\partial/\partial t' \mathcal{F}(\Phi_\pm)(k,t') = 0.
+2\pi i k\,\mathcal{F}(Ξ_\pm)(k,t') \pm i\partial/\partial t' \mathcal{F}(Ξ_\pm)(k,t') = 0.
 $$
 
 ### The Unit-Modulus Kernel
@@ -152,11 +152,11 @@ $$
 The solution is the **quaternionic exponential function**
 
 $$
-\boxed{\;\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr)\;},
+\boxed{\;\mathcal{F}(Ξ_\pm)(k,t') = \exp(\mp 2\pi k t') = \cos\bigl(2\pi|k|t'\bigr) \mp \frac{k}{|k|}\sin\bigl(2\pi|k|t'\bigr)\;},
 \tag{9}
 $$
 
-for $(k,t') \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(\Phi_\pm) = 0$ for $t' < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
+for $(k,t') \in \mathbb{R}^3 \times \mathbb{R}$, with the convention $\mathcal{F}(Ξ_\pm) = 0$ for $t' < 0$. The closed form is the quaternion interpretation of an exponential of a **pure vector**: since $k$ is a pure imaginary quaternion with $k^2 = -|k|^2$, the series splits into an even and an odd part and gives $\exp(b) = \cos|b| + (b/|b|)\sin|b|$ for any pure vector $b$. The decisive property for everything that follows is that this exponential has **unit quaternion modulus**,
 
 $$
 \bigl|\exp(\mp 2\pi k t')\bigr| = 1 \qquad \text{for every } (k,t'),
@@ -168,7 +168,7 @@ with reason $\exp(\mp 2\pi k t') = \exp\bigl(\mp 2\pi|k|t'\,\hat{g_k}\bigr)$ for
 
 ### Definition and the Spatial Isometry
 
-Because $\Phi$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
+Because $Ξ$ is not an $L^1$ object — the point taken up in *What Is Verified and What Is Not* — the source defines the **parabolic Teodorescu transform** directly from the multiplier:
 
 $$
 L_{\mathcal{C}}R_{\pm}[w](x,t') := \int_0^{t'}\int_{\mathbb{R}^3} \exp\bigl(2\pi i\langle x,k\rangle\bigr) \exp\bigl(\mp 2\pi (t'-s) k\bigr) \mathcal{F}(w)(k,s)\,dk\,ds,
@@ -224,14 +224,14 @@ $$
 \tag{12}
 $$
 
-with the compatibility condition $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\chi} = \vec{E} + i\vec{B}$ satisfies
+with the compatibility condition $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$, which is not an external constraint but the consistency condition the system carries. Its Proposition 12 states that $(\vec{E}, \vec{B})$ solves (12) if and only if the **biquaternionic field** $\vec{\xi} = \vec{E} + i\vec{B}$ satisfies
 
 $$
-(D - i\partial/\partial t')\vec{\chi} = -4\pi(\rho - i\vec{\jmath}).
+(D - i\partial/\partial t')\vec{\xi} = -4\pi(\rho - i\vec{\jmath}).
 \tag{13}
 $$
 
-This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation), so the source's $\vec{\chi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial t'$ and $\sqrt{\mu}\,\tilde{J} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ becomes
+This is the corpus's single equation, and the identification is exact. The corpus's field-strength biquaternion is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which in vacuum with $c = 1$ reads $\tilde{F} = i\vec E - \vec B = i(\vec E + i\vec B)$; the corpus's dual field strength is $-i\tilde{F} = \vec E + i\vec B$ (*Maxwell's Equations in the Biquaternionic Formulation*, Summary of Notation), so the source's $\vec{\xi}$ is the corpus's dual field strength. With $\tilde{\nabla} = D - i\partial/\partial t'$ and $\sqrt{\mu}\,\tilde{J} = i\rho + \vec{\jmath}$ in vacuum, the corpus's equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ becomes
 
 $$
 -i\,\tilde{\nabla}\tilde F = -(\rho - i\vec{\jmath}), \qquad \text{that is} \qquad (D - i\partial/\partial t')\tilde F = -i(\rho - i\vec{\jmath}).
@@ -251,7 +251,7 @@ $$
 so the transform is a particular solution of (13). It carries a scalar part $g_0 = \mathrm{Sc}\,L_{\mathcal{C}}R_{-}[-4\pi i(\rho - i\vec{\jmath})]$; by Corollary 11 and the compatibility condition, $g_0$ solves the wave equation, so by (7) the combination $g_0 - \mathcal{V}[g_0]$ lies in the kernel of $D - i\partial/\partial t'$. Subtracting it cancels the scalar part and leaves
 
 $$
-\boxed{\;\vec{\chi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
+\boxed{\;\vec{\xi} = \mathrm{Vec}\,L_{\mathcal{C}}R_{-}\bigl[-4\pi i(\rho - i\vec{\jmath})\bigr] + \mathcal{V}[g_0]\;},
 \tag{15}
 $$
 
@@ -276,11 +276,11 @@ $$
 \tag{17}
 $$
 
-reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')\Phi = -\Psi$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial t'\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial t'\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial t'\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial t'\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - \tfrac{i}{c}\partial/\partial t')\Phi = -\Psi$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
+reduced to a single equation of the form $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{spn}}$ with $c = 1/\sqrt{\epsilon\mu}$, solved with $\lambda = \sqrt{\epsilon\mu}$. **The constants of this section were not verified, and as extracted they do not all agree with the standard SI forms.** The extraction of the system (17) shows the ampèrian equation as $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \epsilon\,\partial/\partial t'\vec{E}$, whereas the standard SI form in terms of $\vec{B}$ is $\mathrm{rot}\,\vec{B} = \mu\vec{\jmath} + \mu\epsilon\,\partial/\partial t'\vec{E}$, the form that follows from $\mathrm{rot}\,\vec{H} = \vec{\jmath} + \partial/\partial t'\vec{D}$ with $\vec{B} = \mu\vec{H}$, $\vec{D} = \epsilon\vec{E}$; the factor $\mu$ is either dropped in the extraction or absent in the source, and it changes both the biquaternionic field that cancels the curl terms and the compatibility condition. The condition the source prints, $\mathrm{div}\,\vec{\jmath} + \sqrt{\epsilon\mu}\,\partial/\partial t'\rho = 0$, does not reduce to the plain conservation law $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation of (17), which is a second sign that the printed constants could not be read faithfully. What this section contributes is its **structure** — a single equation $(D - \tfrac{i}{c}\partial/\partial t')Ξ = -\tilde{Ξ}^{\mathrm{spn}}$ with the parameter $\lambda = \sqrt{\epsilon\mu}$ — and that structure should be re-derived from the published text before any constant from it is quoted.
 
 ## What Is Verified and What Is Not
 
-**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial t')\Phi_\pm = 0$ for $x \neq 0$, $t' \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $\Phi_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
+**Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial/\partial t')Ξ_\pm = 0$ for $x \neq 0$, $t' \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $Ξ_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $g_0 - \mathcal{V}[g_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $g_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial/\partial t'\rho = 0$ under either interpretation — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 
 **What the source does not do.** It does not solve a boundary-value problem: the domain is fixed, the transform is taken by zero extension, and the right inverse is global. It does not treat an inhomogeneous or chiral medium: the homogeneous medium enters only through the single constant $\lambda = \sqrt{\epsilon\mu}$, so the dispersive and magnetoelectric content of *Electromagnetism in Media — The Local Complex Structure at Work* is untouched. It does not quantise, and it makes no claim about the **physical interpretation** of the parabolic operators beyond their use as a computational route. Its stated aim is analytical efficiency, and its result should be read as a method, not as a physical model.
 
@@ -305,10 +305,10 @@ The source's wave-operator factorisation $-\Delta + \partial^2/\partial {t'}^2 =
 | $\mathcal{V}[g_0]$ | Purely vectorial complement (7) of a scalar wave solution |
 | $\mathcal{F}$ | Fourier transform in the space variables at fixed $t'$ |
 | $k$ | Frequency three-vector, read as the pure quaternion $\vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$ |
-| $\Phi_\pm$ | The source's kernel, $\mathcal{F}(\Phi_\pm)(k,t') = \exp(\mp 2\pi kt')$ |
+| $Ξ_\pm$ | The source's kernel, $\mathcal{F}(Ξ_\pm)(k,t') = \exp(\mp 2\pi kt')$ |
 | $L_{\mathcal{C}}R_{\pm}$, $L_{\mathcal{C}}R_{\pm,\lambda}$ | Parabolic Teodorescu transform (10) and its $\lambda$-scaled form (16) |
 | $\vec{E}, \vec{B}, \rho, \vec{\jmath}$ | Electric field, magnetic field, charge density, current density |
-| $\vec{\chi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
+| $\vec{\xi} = \vec{E} + i\vec{B}$ | Biquaternionic field of the source; the corpus's dual field strength $-i\tilde F$ |
 | $\tilde{F}, \tilde J, \tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box$ | Corpus field-strength biquaternion, four-current, biquaternionic gradient, its conjugate, d'Alembertian |
 | $\epsilon, \mu, c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium (SI section) |
 | $\lambda$ | Parameter of the perturbed operator $D \pm i\lambda\partial/\partial t'$; $\lambda = \sqrt{\epsilon\mu}$ for the homogeneous medium |

@@ -58,26 +58,26 @@ $$
 which is the Helmholtz operator. Hence every solution of the second-order equation
 
 $$
-\Delta\tilde{\Psi} + \omega^2\tilde{\Psi} = 0
+\Delta\tilde{Ξ}^{\mathrm{spn}} + \omega^2\tilde{Ξ}^{\mathrm{spn}} = 0
 $$
 
 generates a solution of the first-order equation through
 
 $$
-\boxed{\;\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\;}
+\boxed{\;\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \left(\omega - \nabla\right)\circ\,\tilde{Ξ}^{\mathrm{spn}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\;}
 $$
 
-and conversely every biamplitude is of that form for some $\tilde{\Psi}$.
+and conversely every biamplitude is of that form for some $\tilde{Ξ}^{\mathrm{spn}}$.
 
 This is the cleanest part of the programme and it is worth naming. The corpus has plane-wave solutions and it has the retarded-potential and Green-function machinery, but it has no account of the **monochromatic standing** sector of the charge–current field, and that sector is what the rest of the paper is built on. Two consequences follow immediately and are used throughout.
 
 - **A monochromatic charge–current field is equivalent to a Helmholtz potential.** The single operator $\omega - \nabla$ converts one into the other, so the classification of monochromatic solutions is the classification of Helmholtz potentials.
-- **The frequency is the Helmholtz eigenvalue in the usual sense, but there is no eigenproblem.** The equation $\Delta\tilde{\Psi} + \omega^2\tilde{\Psi} = 0$ on its own admits every $\omega$. A discrete spectrum requires a boundary condition, and the programme does not impose one. Everything discrete that appears later comes from elsewhere.
+- **The frequency is the Helmholtz eigenvalue in the usual sense, but there is no eigenproblem.** The equation $\Delta\tilde{Ξ}^{\mathrm{spn}} + \omega^2\tilde{Ξ}^{\mathrm{spn}} = 0$ on its own admits every $\omega$. A discrete spectrum requires a boundary condition, and the programme does not impose one. Everything discrete that appears later comes from elsewhere.
 
 The Helmholtz potentials themselves have a general integral form, which the paper gives as its equation (4): every function integrable on the sphere of radius $\omega$ generates a solution through
 
 $$
-\psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \int_{|\vec\zeta| = \omega} \chi(\vec\zeta,\omega)\, \exp(-i(\vec\zeta,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\, dS(\vec\zeta),
+\tilde{Ξ}^{\mathrm{spn}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \int_{|\vec\zeta| = \omega} \xi(\vec\zeta,\omega)\, \exp(-i(\vec\zeta,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\, dS(\vec\zeta),
 $$
 
 which is the superposition of plane waves whose wave vector has fixed length $\omega$. It is the precise sense in which the frequency is the length of the wave vector here, exactly as for a plane wave of speed $c$; the rest of the article uses the spherical solutions below, and this representation is recorded only to fix the meaning of $\omega$ and to show that the general monochromatic solution carries no further parameter.
@@ -85,12 +85,12 @@ which is the superposition of plane waves whose wave vector has fixed length $\o
 The regular solutions of the Helmholtz equation in spherical coordinates are products of a spherical Bessel function, a Legendre function and an azimuthal exponential,
 
 $$
-\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_n(\omega r)\,P_{nm}(\cos\theta)\,\exp(im\lambda),
+\tilde{Ξ}^{\mathrm{spn}}_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_n(\omega r)\,P_{nm}(\cos\theta)\,\exp(im\lambda),
 \qquad
 n = 0,1,2,\dots
 $$
 
-and it is these the programme takes as its building blocks. Their two properties that matter are the symmetry statement — among the Helmholtz solutions only $\psi_{00}$ is spherically symmetric — and the behaviour at the origin,
+and it is these the programme takes as its building blocks. Their two properties that matter are the symmetry statement — among the Helmholtz solutions only $\tilde{Ξ}^{\mathrm{spn}}_{00}$ is spherically symmetric — and the behaviour at the origin,
 
 $$
 j_n(z) \sim \frac{z^n}{(2n+1)!!},
@@ -101,25 +101,25 @@ which is the whole basis of the later particle classification. Both were verifie
 
 ## Pulsars and Spinors
 
-The programme divides its generating potentials into two classes. Taking the potential to be a **scalar**, $\tilde{\Psi} = \psi_{nm}$, gives what the paper calls a **pulsar**,
+The programme divides its generating potentials into two classes. Taking the potential to be a **scalar**, $\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_{nm}$, gives what the paper calls a **pulsar**,
 
 $$
 \tilde J_{\mathrm{eg},nm}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
-= \left(\omega - \nabla\right)\circ\,\psi_{nm}
-= \omega\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) - \mathrm{grad}\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+= \left(\omega - \nabla\right)\circ\,\tilde{Ξ}^{\mathrm{spn}}_{nm}
+= \omega\,\tilde{Ξ}^{\mathrm{spn}}_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) - \mathrm{grad}\,\tilde{Ξ}^{\mathrm{spn}}_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$
 
-because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a **vector** directed along a coordinate axis, $\tilde{\Psi} = \psi_{nm}\vec e_\mu$, gives a **spinor**,
+because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a **vector** directed along a coordinate axis, $\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu$, gives a **spinor**,
 
 $$
 \tilde J_{\mathrm{eg},nm}^{\,j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
-= \left(\omega - \nabla\right)\circ\left(\psi_{nm}\vec e_\mu\right)
-= \mathrm{div}\!\left(\psi_{nm}\vec e_\mu\right) + \omega\,\psi_{nm}\vec e_\mu - \mathrm{rot}\!\left(\psi_{nm}\vec e_\mu\right),
+= \left(\omega - \nabla\right)\circ\left(\tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu\right)
+= \mathrm{div}\!\left(\tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu\right) + \omega\,\tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu - \mathrm{rot}\!\left(\tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu\right),
 $$
 
 where the three terms on the right are the scalar part, the vector part and the vector part coming from the curl, as the expansion of the biquaternion product gives them. One interpretation caution applies to the source here. Its intermediate line for the spinor prints $\omega\,\frac{dj_0}{dz}(\omega r)\vec e_\mu$ where the expansion gives $\omega j_0(\omega r)\vec e_\mu$; the results the paper then states use $j_0$, so the prime is a slip of the transcription and is not carried below.
 
-The two classes are not on the same footing, and the difference is exactly the behaviour at the origin that the Bessel asymptotics fixes. For a pulsar the gradient term is finite or vanishing at $r = 0$ while the $\omega\psi_{nm}$ term survives whenever $n = 0$; for $n \geq 1$ the potential itself vanishes there, so the pulsar's density vanishes too. For a spinor the scalar part is built from the divergence, which carries the factor $j_1$ and vanishes at the origin, while the vector part carries $j_0$ and does not. So:
+The two classes are not on the same footing, and the difference is exactly the behaviour at the origin that the Bessel asymptotics fixes. For a pulsar the gradient term is finite or vanishing at $r = 0$ while the $\omega\tilde{Ξ}^{\mathrm{spn}}_{nm}$ term survives whenever $n = 0$; for $n \geq 1$ the potential itself vanishes there, so the pulsar's density vanishes too. For a spinor the scalar part is built from the divergence, which carries the factor $j_1$ and vanishes at the origin, while the vector part carries $j_0$ and does not. So:
 
 - among the **pulsars**, only the spherically symmetric one, $n = 0$, has a non-zero charge density at the centre;
 - among the **spinors**, none has a non-zero charge density at the centre, whatever $n$.
@@ -128,7 +128,7 @@ That single dichotomy is what the programme turns into bosons and leptons, and t
 
 ## The Spherical Harmonic Pulsar
 
-For the spherically symmetric scalar potential $\psi_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $\frac{dj_0}{dz}(z) = -j_1(z)$,
+For the spherically symmetric scalar potential $\tilde{Ξ}^{\mathrm{spn}}_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $\frac{dj_0}{dz}(z) = -j_1(z)$,
 
 $$
 \tilde J_{\mathrm{eg},00}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
@@ -185,7 +185,7 @@ Two structural facts about the radial profile are worth extracting, since they a
 
 ## The Spherical Spinor
 
-For the vector potential directed along the first axis, $\tilde{\Psi} = j_0(\omega r)\vec e_x$, the spinor amplitude also closes. Expanding the product gives
+For the vector potential directed along the first axis, $\tilde{Ξ}^{\mathrm{spn}} = j_0(\omega r)\vec e_x$, the spinor amplitude also closes. Expanding the product gives
 
 $$
 \tilde J_{\mathrm{eg},00}^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
@@ -314,7 +314,7 @@ The division is unusually clean, and it is worth stating as a list, because the 
 
 Established, and verified above by recomputation.
 
-1. The free charge–current equation factors monochromatically into $(\omega - \nabla)$ and $(\omega + \nabla)$, and $(\omega+\nabla)(\omega-\nabla) = \omega^2 + \Delta$; every monochromatic solution is $(\omega-\nabla)\tilde{\Psi}$ for a Helmholtz potential $\tilde{\Psi}$.
+1. The free charge–current equation factors monochromatically into $(\omega - \nabla)$ and $(\omega + \nabla)$, and $(\omega+\nabla)(\omega-\nabla) = \omega^2 + \Delta$; every monochromatic solution is $(\omega-\nabla)\tilde{Ξ}^{\mathrm{spn}}$ for a Helmholtz potential $\tilde{Ξ}^{\mathrm{spn}}$.
 2. The spherical pulsar has the closed form $\omega(j_0 + j_1\vec u_x)$, energy density $\tfrac12\omega^2(j_0^2+j_1^2)$, and vanishing Poynting biquaternion.
 3. The spherical spinor has the closed form $- \omega j_1 r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$, the **same** energy density as the pulsar, and vanishing Poynting biquaternion.
 4. The vanishing Poynting biquaternion is a general property of standing monochromatic solutions with real amplitude components, not a special feature of these two.
@@ -362,11 +362,11 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde J_{\mathrm{eg}} * K$ | Biquaternion convolution, with component convolutions; preserves solutions of the free equation |
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
 | $\tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\mathrm{eg}}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde J_{\mathrm{eg}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
-| $\tilde{\Psi}$ | Helmholtz potential, $\Delta\tilde{\Psi} + \omega^2\tilde{\Psi} = 0$ |
-| $\psi_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
+| $\tilde{Ξ}^{\mathrm{spn}}$ | Helmholtz potential, $\Delta\tilde{Ξ}^{\mathrm{spn}} + \omega^2\tilde{Ξ}^{\mathrm{spn}} = 0$ |
+| $\tilde{Ξ}^{\mathrm{spn}}_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
-| $\tilde J_{\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$ | Pulsar (scalar potential) |
-| $\tilde J_{\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$ | Spinor (vector potential) |
+| $\tilde J_{\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\tilde{Ξ}^{\mathrm{spn}}_{nm}$ | Pulsar (scalar potential) |
+| $\tilde J_{\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\tilde{Ξ}^{\mathrm{spn}}_{nm}\vec e_\mu)$ | Spinor (vector potential) |
 | $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$ | Radial unit vector |
 | $r_{,k} = x_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
 | $\tilde{\Sigma} = \tfrac12\tilde J_{\mathrm{eg}}\circ\tilde J_{\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |

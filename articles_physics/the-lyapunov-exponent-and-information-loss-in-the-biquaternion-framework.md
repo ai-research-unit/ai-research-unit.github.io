@@ -30,16 +30,16 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 
 ### Definition for a Flow
 
-Let $\chi^{\mathrm{flw}}_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \chi^{\mathrm{flw}}_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps
+Let $\xi^{\mathrm{flw}}_{t'}$ be a smooth flow on a manifold $M$ and let $x(t') = \xi^{\mathrm{flw}}_{t'}(x_0)$ be a trajectory. The linearisation of the flow about the trajectory is the family of tangent maps
 
 $$
-D\chi^{\mathrm{flw}}_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
+D\xi^{\mathrm{flw}}_{t'} : T_{x_0}M \longrightarrow T_{x(t')}M ,
 $$
 
 and for a tangent vector $v\in T_{x_0}M$ the **Lyapunov exponent** is
 
 $$
-\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\chi^{\mathrm{flw}}_{t'}\,v\right\|}{\left\|v\right\|},
+\lambda(v) = \lim_{t'\to\infty}\frac{1}{t'}\log\frac{\left\|D\xi^{\mathrm{flw}}_{t'}\,v\right\|}{\left\|v\right\|},
 $$
 
 whenever the limit exists. The **multiplicative ergodic theorem** of Oseledets guarantees that, for an invariant measure, the limit exists for almost every initial condition and takes finitely many values $\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_n$, the **Lyapunov spectrum** of the flow. A positive exponent is exponential divergence of nearby trajectories; a negative exponent is exponential contraction; a zero exponent is neutrality, and the direction of the flow itself is always neutral.
@@ -51,7 +51,7 @@ Three facts are used below, and each is transcribed from the standard theory rat
 **Divergence and volume.** The sum of the exponents is the average rate of change of the volume element,
 
 $$
-\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\chi^{\mathrm{flw}}_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
+\sum_k \lambda_k = \lim_{t'\to\infty}\frac{1}{t'}\log\left|\det D\xi^{\mathrm{flw}}_{t'}\right| = \left\langle \nabla\cdot f\right\rangle ,
 $$
 
 where $f$ is the vector field of the flow. For a Hamiltonian flow the divergence vanishes, the flow is volume-preserving, and the exponents come in pairs $\pm\lambda$ with the total zero. For a dissipative flow the sum is negative and the volume contracts.
@@ -115,7 +115,7 @@ The coadjoint-orbit picture of the companion article *Similitudes Between Biquat
 
 ## Irreversible Dynamics: Channel Semigroups Are Contractions
 
-Irreversibility enters the sector through coarse-graining, and the general form of a coarse-graining semigroup is known. A one-parameter semigroup $\Phi_{t'}$, $t'\ge0$, of completely positive trace-preserving maps with $\Phi_0 = \mathrm{id}$ and $\Phi_{s+t'} = \Phi_s\circ\Phi_{t'}$ acts on the Bloch vector affinely,
+Irreversibility enters the sector through coarse-graining, and the general form of a coarse-graining semigroup is known. A one-parameter semigroup $Ξ_{t'}$, $t'\ge0$, of completely positive trace-preserving maps with $Ξ_0 = \mathrm{id}$ and $Ξ_{s+t'} = Ξ_s\circΞ_{t'}$ acts on the Bloch vector affinely,
 
 $$
 \vec r \longmapsto \vec r(t') = L(t')\,\vec r(0) + \vec t(t'),
@@ -135,7 +135,7 @@ $$
 
 and for a semigroup $L(t') = \exp(t'A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.
 
-The physical constraint now does the work. Every completely positive trace-preserving map is a **contraction in the trace distance**, $\|\Phi(\rho)-\Phi(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence
+The physical constraint now does the work. Every completely positive trace-preserving map is a **contraction in the trace distance**, $\|Ξ(\rho)-Ξ(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence
 
 $$
 \left|L(t')\left(\vec r-\vec s\right)\right| \le \left|\vec r-\vec s\right| \quad\text{for all } t'\ge0 ,
@@ -278,7 +278,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\lambda_1\ge\lambda_2\ge\lambda_3$ | Lyapunov spectrum |
 | $\tilde u(t')$, $\tilde u\tilde u^{*} = e_t$ | Matrix-$*$-unitary rotor (reversible flow) |
 | $\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
-| $\Phi_{t'}$, $L(t')$, $\vec t(t')$ | Channel semigroup and its affine Bloch action |
+| $Ξ_{t'}$, $L(t')$, $\vec t(t')$ | Channel semigroup and its affine Bloch action |
 | $\vec r\mapsto L(t')\vec r+\vec t(t')$ | Affine Bloch action of a channel |
 | $\sigma_k(L(t'))$ | Singular values; $\lambda_k = \lim_t\tfrac{1}{t'}\log\sigma_k$ |
 | $\sigma_1(L(t'))\le1$ | Contraction (trace-distance contractivity of CPTP maps) |

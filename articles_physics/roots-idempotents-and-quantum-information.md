@@ -117,7 +117,7 @@ $$
 For the qubit the rank-one Hermitian idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a unit vector, and the Hilbert-space overlap of two rays is the normalised Hermitian form, read through the trace:
 
 $$
-\lvert\langle\psi|\chi^{\mathrm{alt}}\rangle\rvert^2=\operatorname{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr).
+\lvert\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\rvert^2=\operatorname{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr).
 $$
 
 Two bases are **mutually unbiased** when every overlap across them is $1/d$; for the qubit $d=2$, so every cross trace is $\tfrac12$. The three bases are the eigenbases of the three Hermitian involutions $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$. The units pairwise anticommute, and the normalised Hermitian form of idempotents from different bases, read as the trace pairing, is
@@ -148,7 +148,7 @@ $$
 
 Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is $*$-unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.
 
-The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{\Phi^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.
+The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{Ξ^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.
 
 **Interpretation.** The resource and the measurement are idempotents; the corrections are unitaries. Teleportation is the clearest place where the two classes of acting element are forced apart: an idempotent is a definite outcome and is not reversible, a $*$-unitary is reversible and is not an outcome. The Bell idempotents are the canonical idempotent basis of the two-qubit algebra relative to the tensor structure, and the protocol is their operational interpretation.
 

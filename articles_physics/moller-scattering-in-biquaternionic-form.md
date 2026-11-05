@@ -19,11 +19,11 @@ Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electro
 **The four insertions.** The four vertex insertions are the four actions
 
 $$
-\Phi_t:\ Q\mapsto iQ\vec e_x,\qquad
-\Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
+Ξ_t:\ Q\mapsto iQ\vec e_x,\qquad
+Ξ_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_k$ is minus the identity, and $Ξ_\muΞ_\nu+Ξ_\nuΞ_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
 
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
@@ -75,12 +75,12 @@ The external elements satisfy the massive Dirac equation, but in the biquaternio
 **The chiral pair.** It is first a pair of one-sided equations
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
-where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
+where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde{Ξ}^{\mathrm{spn}}_L$ is the part of value $L$, the minus one, and $\tilde{Ξ}^{\mathrm{spn}}_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
 
 **The mass on the right.** Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation
 
@@ -93,22 +93,22 @@ with $\bar F$ the coefficient conjugate. The derivative acts on the left, the ma
 **The momentum-space form.** In momentum space the pair is the single action equation
 
 $$
-P(p)\psi=m\psi
+P(p)\tilde{Ξ}^{\mathrm{spn}}=m\tilde{Ξ}^{\mathrm{spn}}
 $$
 
-on an element of momentum $p$: the insertion $P(p)$ applied to $\psi$ gives back $m\psi$. It is the pair written once, its two lines being the two parts $\tilde\Psi_L$ and $\tilde\Psi_R$, and the mass is here the scalar $m$ and not a right multiplication. The two positive-frequency elements of a momentum are written $\psi^{(1)}$ and $\psi^{(2)}$, and their spin sum is the action $D(p)$ of §*The Spin-Summed Matrix Element*.
+on an element of momentum $p$: the insertion $P(p)$ applied to $\tilde{Ξ}^{\mathrm{spn}}$ gives back $m\tilde{Ξ}^{\mathrm{spn}}$. It is the pair written once, its two lines being the two parts $\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde{Ξ}^{\mathrm{spn}}_R$, and the mass is here the scalar $m$ and not a right multiplication. The two positive-frequency elements of a momentum are written $\tilde{Ξ}^{\mathrm{spn}(1)}$ and $\tilde{Ξ}^{\mathrm{spn}(2)}$, and their spin sum is the action $D(p)$ of §*The Spin-Summed Matrix Element*.
 
 ### The two amplitudes and the minus sign
 
 The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and outgoing momentum $p_{\mathrm{out}}$ is the scalar
 
 $$
-J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar\psi(p_{\mathrm{out}})\,\Phi_\mu\psi(p_{\mathrm{in}})\bigr),
+J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar{\tilde{Ξ}}^{\mathrm{spn}}(p_{\mathrm{out}})\,Ξ_\mu\tilde{Ξ}^{\mathrm{spn}}(p_{\mathrm{in}})\bigr),
 \qquad
-\bar\psi:=\psi^{*}i\vec e_x,
+\bar{\tilde{Ξ}}^{\mathrm{spn}}:=\tilde{Ξ}^{\mathrm{spn}*}i\vec e_x,
 $$
 
-with $\Phi_\mu$ the insertion of the Lorentz index $\mu$ and $\bar\psi$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar\psi\,\Phi_\mu\psi$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
+with $Ξ_\mu$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}^{\mathrm{spn}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}^{\mathrm{spn}}\,Ξ_\mu\tilde{Ξ}^{\mathrm{spn}}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
 \mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{k=1}^3 J_k(p_3,p_1)J_k(p_4,p_2)\Bigr],
@@ -133,7 +133,7 @@ Squaring and averaging over the two initial spins and summing over the two final
 **The spin sum.** The two positive-frequency elements of a momentum $p$ satisfy the operator identity
 
 $$
-\sum_{r=1}^{2}\psi^{(r)}(p)\,\bar\psi^{(r)}(p)=D(p),
+\sum_{r=1}^{2}\tilde{Ξ}^{\mathrm{spn}(r)}(p)\,\bar{\tilde{Ξ}}^{\mathrm{spn}(r)}(p)=D(p),
 $$
 
 the sum of the two rank-one products being the action
@@ -144,27 +144,27 @@ $$
 
 that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.
 
-**The trace.** The traces below are the operator traces of composites of these actions, in the normalisation of *Matrix Representations Conventions*, where the identity action has trace four. The factorisation is a derived form, read off the two slots: with $\Phi_i$ the action $Q\mapsto a_iQb_i$, the trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,
+**The trace.** The traces below are the operator traces of composites of these actions, in the normalisation of *Matrix Representations Conventions*, where the identity action has trace four. The factorisation is a derived form, read off the two slots: with $Ξ_i$ the action $Q\mapsto a_iQb_i$, the trace of the composite $Ξ_1Ξ_2\cdotsΞ_n$ is four times the product of the scalar parts of the two multiplier strings,
 
 $$
-\operatorname{tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
+\operatorname{tr}\bigl[Ξ_1Ξ_2\cdotsΞ_n\bigr]
 =4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
 $$
 
-the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $\Phi^t=\Phi_t$ and $\Phi^k=-\Phi_k$, the three trace combinations are
+the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^{k}=-Ξ_k$, the three trace combinations are
 
 $$
-L_t:=\operatorname{tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
-$$
-
-$$
-L_u:=\operatorname{tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
+L_t:=\operatorname{tr}\bigl[Ξ^{\mu} D(p_1)Ξ^{\nu} D(p_3)\bigr]\,
+\operatorname{tr}\bigl[Ξ_\mu D(p_2)Ξ_\nu D(p_4)\bigr],
 $$
 
 $$
-L_{tu}:=\operatorname{tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
+L_u:=\operatorname{tr}\bigl[Ξ^{\mu} D(p_2)Ξ^{\nu} D(p_3)\bigr]\,
+\operatorname{tr}\bigl[Ξ_\mu D(p_1)Ξ_\nu D(p_4)\bigr],
+$$
+
+$$
+L_{tu}:=\operatorname{tr}\bigl[D(p_3)Ξ^{\mu} D(p_1)Ξ^{\nu} D(p_4)Ξ_\mu D(p_2)Ξ_\nu\bigr],
 $$
 
 with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then
@@ -177,8 +177,8 @@ $$
 The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the insertions alone,
 
 $$
-\operatorname{tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\operatorname{tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
+\operatorname{tr}(Ξ_\muΞ_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\operatorname{tr}(Ξ_\muΞ_\nuΞ_\rhoΞ_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
 $$
 
@@ -242,7 +242,7 @@ $$
 
 where $\sigma_L$ and $\sigma_R$ are the cross sections for left- and right-handed incident electrons.
 
-The $Z$ couples to the electron with $g_V^e=-\tfrac12Q_W^e$ and $g_A^e=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_V^e\Phi_\mu$ minus $g_A^e$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_V^eg_A^e=\tfrac14Q_W^e$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
+The $Z$ couples to the electron with $g_V^e=-\tfrac12Q_W^e$ and $g_A^e=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_V^eΞ_\mu$ minus $g_A^e$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_V^eg_A^e=\tfrac14Q_W^e$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
 
 At tree level the asymmetry is therefore
 
@@ -273,12 +273,12 @@ It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ par
 The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the pairing
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\psi^{*}i\vec e_x\,\Phi_\mu\psi\bigr),
+j_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{spn}*}i\vec e_x\,Ξ_\mu\tilde{Ξ}^{\mathrm{spn}}\bigr),
 \qquad
-\bar\psi=\psi^{*}i\vec e_x,
+\bar{\tilde{Ξ}}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}*}i\vec e_x,
 $$
 
-where $\Phi_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J\in\mathbb M_-$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J\in\mathbb M_-$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -314,7 +314,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above use, and nothing here is needed outside it.
 
-The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the insertions, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the insertions, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -330,7 +330,7 @@ The body's five actions are these: the time insertion is $\gamma_0$, the three s
 
 A single product is a pure tensor; in the sixteen-dimensional coefficient space the products form the seven-dimensional cone of coefficient rank at most one. A general element is a sum of at most four products; its **length** $\ell(M)$ is the least number of products in such a sum. The **matrix rank** of $M$ on the regular module is a different number: for a single cell $L_QR_P$ it is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)$, and it lies in $\{0,1,2,4\}$. The two numbers are independent.
 
-$\gamma_5$ is the chirality action itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the fifth action and the fifth gamma are one object seen in two readings. The central grading $\chi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\chi$ is the module representative of $\chi_{\mathrm{ad}}$.
+$\gamma_5$ is the chirality action itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the fifth action and the fifth gamma are one object seen in two readings. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\xi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\xi$ is the module representative of $\xi_{\mathrm{ad}}$.
 
 The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -392,14 +392,14 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
-| $\Phi_t:\ Q\mapsto iQ\vec e_x$, $\Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
-| $\Phi^t=\Phi_t$, $\Phi^k=-\Phi_k$ | Raised insertions |
+| $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_k:\ Q\mapsto i\vec e_kQ\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
+| $Ξ^{t}=Ξ_t$, $Ξ^{k}=-Ξ_k$ | Raised insertions |
 | $Q\mapsto-iQ\vec e_z$ | Chirality action |
 | $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_kp_ki\vec e_kQ\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
-| $\psi^{(r)}(p)$, $\bar\psi=\psi^{*}i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
-| $\tilde\Psi_L,\tilde\Psi_R$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
-| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar\psi_{\mathrm{out}}\Phi_\mu\psi_{\mathrm{in}})$ | Vertex current |
+| $\tilde{Ξ}^{\mathrm{spn}(r)}(p)$, $\bar{\tilde{Ξ}}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}*}i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
+| $\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
+| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar{\tilde{Ξ}}^{\mathrm{spn}}_{\mathrm{out}}Ξ_\mu\tilde{Ξ}^{\mathrm{spn}}_{\mathrm{in}})$ | Vertex current |
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |

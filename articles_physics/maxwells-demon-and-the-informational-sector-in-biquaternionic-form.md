@@ -99,7 +99,7 @@ so a biased record is cheaper to erase than a uniform one. Conditioned on a sing
 A demon that acts must have a **definite** record: it must know the bit, not be in a superposition of knowing and not knowing. If the record is represented by an element that carries coherence between the two pointer values, the coherence is unobservable to the demon's classical logic and must be removed. The removal is the **idempotent projection** onto the pointer basis:
 
 $$
-\Phi_{\vec u}(\tilde{Ϛ}_D) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}_D\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}_D\,\tilde\Pi_2(\vec u),
+Ξ_{\vec u}(\tilde{Ϛ}_D) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}_D\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}_D\,\tilde\Pi_2(\vec u),
 $$
 
 the fully dephasing conditional expectation of the companion article *Coarse-Graining and the Biquaternion Entropy Functional*, which is idempotent and unital and does not decrease the entropy. The projection is itself irreversible: it is a coarse-graining, and it maps a continuum of records to the classical diameter.
@@ -232,7 +232,7 @@ The cycle fails for a structural reason, and the framework states it exactly. Th
 |---|---|---|---|---|
 | Correlation (measure) | reversible permutation (rotor class) | yes | $0$ | record: $+k_B\log2$, offset by the correlation |
 | Feedback | reversible step (rotor class) | yes | $\le k_BT I$ | gas: $+k_B\log2$; bath: $-k_B\log2$ |
-| Registration (if charged) | idempotent projection $\Phi_{\vec u}$ | no | $\ge 0$ | record: $\ge 0$ |
+| Registration (if charged) | idempotent projection $Ξ_{\vec u}$ | no | $\ge 0$ | record: $\ge 0$ |
 | Erasure (standard charge) | non-unital reset $\mathcal{E}_{\vec u}$ | no | $\ge k_BT H(D)$ | memory: $-k_BH(D)$; bath: $+k_BH(D)$ |
 
 Each entry is the change of the object the row touches, and the reversible rows balance exactly within themselves: the gas gains what the bath loses, and the memory's debit is the bath's credit. At the close of the cycle the gas and the record have returned to their initial states, so the net entropy produced is the bath's own, $-k_B\,I + k_B\,H(D)$: it vanishes for the ideal cycle, where $I = H(D) = \log2$, and equals $k_BH_2(e)$ for the noisy demon, which must dump the shortfall as extra heat. Two entries carry a qualification. The gas's $+k_B\log2$ in the feedback row is a **coarse-grained** increase: the demon's description of the gas is the two-cell description "which half", and it is the entropy of that description which rises as the accessible volume widens, while the gas bit's marginal state in $\mathbb{M}_+$ — the maximally mixed state — is the same before and after, and the fine-grained (Gibbs) entropy of the gas is conserved by the underlying Hamiltonian evolution, as in the companion article *Coarse-Graining and the Biquaternion Entropy Functional*. The record's $+k_B\log2$ in the correlation row is likewise a marginal entropy, and it is returned as the correlation, so that the joint entropy of gas and record is unchanged by the copy.
@@ -291,7 +291,7 @@ with equality for the perfect demon, which breaks even at $k_BT\log2$ extracted 
 | $\tilde{P} = i(E/c)e_t + \vec p$ | Material four-momentum (gas, bath) |
 | $\mathcal{Q}$, $T$, $k_B$ | Heat, temperature, Boltzmann constant |
 | $\tilde u$, $\tilde u\tilde u^{*} = e_t$ | Rotor (algebraic representative of the reversible steps) |
-| $\Phi_{\vec u}$ | Idempotent projection onto the pointer basis (registration) |
+| $Ξ_{\vec u}$ | Idempotent projection onto the pointer basis (registration) |
 | $\mathcal{E}_{\vec u} : \tilde{Ϛ}_D\mapsto\tilde\Pi_1(\vec u)$ | Erasure (non-unital reset) |
 | $I(G\!:\!D) = H(G)+H(D)-H(G,D)$ | Mutual information of gas and record |
 | $I = \log 2 - H_2(e)$ | Mutual information of a record with error $e$ |

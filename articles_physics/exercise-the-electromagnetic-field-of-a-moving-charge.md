@@ -52,7 +52,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 \qquad
 \langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma^2},
 $$
-with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\chi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\chi^{\mathrm{scp}}$.
+with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right) \in \mathbb{M}_-$. (c) Extract $\xi^{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\xi^{\mathrm{scp}}$.
 
 **Solution (a).** Differentiate $t'_r = t' - R/c$ at fixed field point. Since $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_r)|$,
 $$
@@ -101,9 +101,9 @@ Thus the whole construction is built from one null and one timelike element of $
 
 **Solution (c).** Writing $\tilde{A} = i\,a'_te_t + \vec A$ and using $\epsilon\mu c^2 = 1$,
 $$
-\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D},
+\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D},
 \qquad
-\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\chi^{\mathrm{scp}} .
+\vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\xi^{\mathrm{scp}} .
 $$
 
 The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural})/c| \le 4\times10^{-16}$, $|\langle iR\,e_t+\vec R\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.
@@ -269,16 +269,16 @@ The acceleration field opposes the retarded transverse acceleration, and it is $
 
 **Solution (a).** The convention, fixed by the relativity exercises, is that
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u,
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u,
 \qquad
-\tanh\psi_b = \frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}}_b = \frac{v_b}{c},
 $$
 carries the *laboratory* to the frame moving with $+\vec v_b$. Applied to the rest four-velocity $\tilde{V}_0 = ic\,e_t$ it gives
 $$
 \tilde U_{\mathrm b}\,\tilde{V}_0\,\tilde U_{\mathrm b}^{*}
 = ic\,e_t\,\tilde U_{\mathrm b}^2
-= ic\left(\cosh\psi_b + i\sinh\psi_b\,\vec u\right)
-= ic\cosh\psi_b - c\sinh\psi_b\,\vec u,
+= ic\left(\cosh\theta^{\mathrm{rpd}}_b + i\sinh\theta^{\mathrm{rpd}}_b\,\vec u\right)
+= ic\cosh\theta^{\mathrm{rpd}}_b - c\sinh\theta^{\mathrm{rpd}}_b\,\vec u,
 $$
 whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$ generates the inverse (moving-to-lab) transformation.
 
@@ -390,7 +390,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{\mathcal L}^{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K^{\mathrm{ret}}$ is $-2\tilde{\mathcal L}^{\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |
-| $\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |
 | $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ | Boost transformation of the field (similarity, not conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |

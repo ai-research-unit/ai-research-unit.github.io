@@ -7,20 +7,20 @@ The **effective potential** is the part of the quantum effective action that sur
 This article works the effective potential of the scalar sector of the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the notation of the companion articles, and derives the Coleman–Weinberg result for the framework's scalar. The scalar sector has already been fixed by the read list. The framework's scalar is the **complex central field**
 
 $$
-\tilde{\Phi}(\tilde{Q}) = \chi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\},
+\tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\},
 $$
 
-with $\chi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus
+with $\xi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus
 
 $$
-\rho = \mathrm{Sc}\!\left(\tilde{\Phi}^{*} \tilde{\Phi}\right) = |\chi|^2 ,
+\rho = \mathrm{Sc}\!\left(\tilde{Ξ}^{*} \tilde{Ξ}\right) = |\xi|^2 ,
 $$
 
 and the tree-level potential, the vacuum manifold, the radial mode and the would-be Goldstone mode are those of the companion articles. The present article extends that potential to the loop level; it does not restate the tree-level mechanism.
 
 The findings are the following, and they are separated at the outset in the corpus's three-way form.
 
-- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $\frac{d^2V}{d\rho^2}(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
+- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $\frac{d^2V}{d\rho^2}(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
 - **Interpretation.** Interpreting the exponentially small scale as **dimensional transmutation** — a dimensionless coupling traded for a dimensionful vacuum scale — and reading the negative value of the potential at the minimum as the standard energy lowering of the broken phase is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
 - **Gap, left visible.** The loop integral, its regularization and its renormalization are standard field theory and are imported. The framework contributes the centrality of the fluctuation operator — which is what makes the effective potential a function of the central invariant and nothing else — and no native loop structure. Whether the framework's trace or biquaternion norm selects a preferred normalization of the renormalization scale, or a preferred value of the quartic coupling, is not shown here.
 
@@ -36,10 +36,10 @@ The findings are the following, and they are separated at the outset in the corp
 
 ## The Invariant Potential and Its Symmetry
 
-The scalar sector of the framework is a single complex central field, and its symmetry is the $*$-unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\chi\mapsto \exp(i\alpha)\chi$ and real as a density is an arbitrary function of the invariant $\rho = \chi^*\chi = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$,
+The scalar sector of the framework is a single complex central field, and its symmetry is the $*$-unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\xi\mapsto \exp(i\alpha)\xi$ and real as a density is an arbitrary function of the invariant $\rho = \xi^*\xi = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$,
 
 $$
-V(\tilde{\Phi}) = V(\rho), \qquad \rho = \mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right) = |\chi|^2 ,
+V(\tilde{Ξ}) = V(\rho), \qquad \rho = \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right) = |\xi|^2 ,
 $$
 
 truncated at quartic order,
@@ -51,7 +51,7 @@ $$
 the normalization of the companion articles. Its unique minimum is the circle
 
 $$
-\rho = v_0^2 \qquad\Longleftrightarrow\qquad |\chi| = v_0 ,
+\rho = v_0^2 \qquad\Longleftrightarrow\qquad |\xi| = v_0 ,
 $$
 
 and the companion article on the Higgs mechanism writes the same potential as $V = \beta(\rho - v^2/2)^2$, whose minimum sits at $\rho = v^2/2$ and whose radial mass is $2\beta v^2$. The two parametrisations describe one theory and are related by
@@ -62,7 +62,7 @@ v_0 = \frac{v}{\sqrt2} ,
 \lambda = 4\beta ,
 $$
 
-so that the physical vacuum value $|\chi| = v_0$ is the same number in both. Writing $\chi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta/(\sqrt2 v_0))$ with $h, \theta$ real gives the radial mass
+so that the physical vacuum value $|\xi| = v_0$ is the same number in both. Writing $\xi = \tfrac{1}{\sqrt2}(\sqrt2\,v_0 + h)\exp(i\theta/(\sqrt2 v_0))$ with $h, \theta$ real gives the radial mass
 
 $$
 m_h^2 = \left.\frac{d^2V_0}{dh^2}\right|_{h=0} = \lambda v_0^2 ,
@@ -79,58 +79,58 @@ The effective potential is a restriction of the effective action, and the restri
 The effective action is the Legendre transform of the connected generating functional of the central scalar,
 
 $$
-\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle \tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde\Phi_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
 $$
 
-and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\Phi_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
-For a **constant** classical field $\tilde\Phi_{\mathrm{cl}} = \chi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
+For a **constant** classical field $\tilde{Ξ}_{\mathrm{cl}} = \xi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
 $$
-V_\text{eff}(\chi_c) = -\frac{\Gamma[\chi_c]}{\text{vol}},
+V_\text{eff}(\xi_c) = -\frac{\Gamma[\xi_c]}{\text{vol}},
 \qquad
-\frac{\partial V_\text{eff}}{\partial \chi_c} = 0 \ \Longleftrightarrow\ \text{vacuum},
+\frac{\partial V_\text{eff}}{\partial \xi_c} = 0 \ \Longleftrightarrow\ \text{vacuum},
 \qquad
-\frac{\partial^2 V_\text{eff}}{\partial \chi_c\,\partial \chi_c^*} \ge 0 \ \Longleftrightarrow\ \text{stability}.
+\frac{\partial^2 V_\text{eff}}{\partial \xi_c\,\partial \xi_c^*} \ge 0 \ \Longleftrightarrow\ \text{stability}.
 $$
 
-Two consequences of the definition are used repeatedly below. The first is that the effective potential inherits the symmetry of the action: because the action is invariant under $\chi_c \mapsto \exp(i\alpha)\chi_c$, so is $\Gamma$, and therefore $V_\text{eff}$ is a function of the invariant $\rho_c = \chi_c^*\chi_c$ alone,
+Two consequences of the definition are used repeatedly below. The first is that the effective potential inherits the symmetry of the action: because the action is invariant under $\xi_c \mapsto \exp(i\alpha)\xi_c$, so is $\Gamma$, and therefore $V_\text{eff}$ is a function of the invariant $\rho_c = \xi_c^*\xi_c$ alone,
 
 $$
-\frac{\partial V_\text{eff}}{\partial \alpha}\Big|_{\chi_c = \exp(i\alpha)\sqrt{\rho_c}} = 0
+\frac{\partial V_\text{eff}}{\partial \alpha}\Big|_{\xi_c = \exp(i\alpha)\sqrt{\rho_c}} = 0
 \qquad\Longrightarrow\qquad
-V_\text{eff}(\chi_c) = \mathcal{V}_\text{eff}(\rho_c).
+V_\text{eff}(\xi_c) = \mathcal{V}_\text{eff}(\rho_c).
 $$
 
-The second is **convexity**: the generating functional $W$ is a convex functional of the source, so its Legendre transform $\Gamma$, and with it the effective potential restricted to constant fields, is convex in $\chi_c$ at the full quantum level. The truncated loop series below inherits that convexity only where the field-dependent masses are positive; where a mass-squared turns negative the one-loop expression acquires an imaginary part, and the convex envelope is the full answer. The one-loop correction below is therefore not an extra hypothesis about the vacuum; it is the leading term of the object that defines the vacuum.
+The second is **convexity**: the generating functional $W$ is a convex functional of the source, so its Legendre transform $\Gamma$, and with it the effective potential restricted to constant fields, is convex in $\xi_c$ at the full quantum level. The truncated loop series below inherits that convexity only where the field-dependent masses are positive; where a mass-squared turns negative the one-loop expression acquires an imaginary part, and the convex envelope is the full answer. The one-loop correction below is therefore not an extra hypothesis about the vacuum; it is the leading term of the object that defines the vacuum.
 
 ## The One-Loop Correction
 
 The one-loop term is the Gaussian determinant of the fluctuations about the constant background, and its evaluation is the whole computational content of the effective potential. Expand the action about the background,
 
 $$
-S[\tilde\Phi_{\mathrm{cl}} + \delta\tilde{\Phi}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{\Phi},\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
+S[\tilde{Ξ}_{\mathrm{cl}} + \delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{Ξ},\,S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\,\delta\tilde{Ξ}\right\rangle + O(\delta\tilde{Ξ}^{3}),
 $$
 
-and perform the Gaussian integral over $\delta\tilde{\Phi}$: the result is
+and perform the Gaussian integral over $\delta\tilde{Ξ}$: the result is
 
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]
-= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]),
+\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]
+= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]),
 $$
 
 the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator
 
 $$
-S^{(2)}[\chi_c] = -\,\Box + \mathcal{H}(\rho_c),
+S^{(2)}[\xi_c] = -\,\Box + \mathcal{H}(\rho_c),
 \qquad
-\chi = \frac{1}{\sqrt2}\left(\chi_1 + i\chi_2\right),
+\xi = \frac{1}{\sqrt2}\left(\xi_1 + i\xi_2\right),
 \qquad
 \mathcal{H} = \frac{\lambda}{2}
 \begin{pmatrix} 3\rho_c - v_0^2 & 0 \\ 0 & \rho_c - v_0^2 \end{pmatrix},
 $$
 
-acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\chi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the standard Coleman–Weinberg form,
+acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the standard Coleman–Weinberg form,
 
 $$
 \mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i\,m_i^4(\rho)\left[\ln\frac{m_i^2(\rho)}{\mu^2} - c_i\right],
@@ -140,7 +140,7 @@ where $i$ runs over the fields whose mass depends on the background, $n_i$ is th
 
 For the framework's central scalar the field content is the scalar itself and the central gauge field, and the two field-dependent masses are read off from the tree potential and from the Higgs mechanism of the companion article.
 
-- **The two real scalar modes.** With $\rho = \chi^*\chi$ and the potential $\frac{\lambda}{4}(\rho - v_0^2)^2$, the two real components of $\chi$ have the field-dependent masses
+- **The two real scalar modes.** With $\rho = \xi^*\xi$ and the potential $\frac{\lambda}{4}(\rho - v_0^2)^2$, the two real components of $\xi$ have the field-dependent masses
 $$
 m_1^2(\rho) = \frac{\lambda}{2}\left(3\rho - v_0^2\right),
 \qquad
@@ -218,7 +218,7 @@ so the broken vacuum lies below the symmetric one, as it must for the breaking t
 Three features of the result are standard and are worth separating.
 
 1. **Dimensional transmutation.** The location of the minimum is $\langle \rho\rangle = \mu^2 \exp(-1/2)\exp\!\left(-\lambda/(4B)\right)$, which depends on the dimensionless couplings $\lambda$ and $ϙ$ only through the combination $\lambda/B$, and is exponentially small when the couplings are perturbative. A dimensionless coupling has been traded for a dimensionful scale: the theory has no classical scale, and the scale of the vacuum is generated by the running of the couplings between $\mu$ and $\langle \rho\rangle$. This is the standard interpretation of the Coleman–Weinberg result.
-2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \frac{d^2\mathcal{V}}{d\chi_1^2} = \frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\chi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
+2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \frac{d^2\mathcal{V}}{d\xi_1^2} = \frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\xi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
 3. **The role of the gauge loop.** For $\lambda \ll ϙ^2$ the minimum is dominated by the gauge contribution, $\ln(\langle \rho\rangle/\mu^2) \approx -\lambda/(4B) \approx -\tfrac{4\pi^2\lambda}{3 ϙ^4}$, the standard Coleman–Weinberg relation. The sign of the effect is the sign of $B$, and a purely scalar theory would have $B = \tfrac{5\lambda^2}{128\pi^2} > 0$ as well; what the gauge field changes is not the sign but the relative size, and in the physically relevant regime it dominates.
 
 ## Renormalization-Scale Dependence
@@ -237,7 +237,7 @@ $$
 \left[\mu\frac{\partial}{\partial\mu} + \beta_\lambda\frac{\partial}{\partial\lambda} + \beta_ϙ\frac{\partial}{\partial ϙ} - \gamma_\rho\,\rho\frac{\partial}{\partial \rho}\right]\mathcal{V}_\text{eff}(\rho,\lambda,ϙ,\mu) = 0 ,
 $$
 
-up to the trace anomaly of the companion article, which is a higher-order effect for the scalar sector. The framework's contribution to this equation is again the centrality of the fluctuation operator, which is what makes the anomalous dimension a single number rather than a matrix: the field $\tilde\Phi$ is central, so its wave-function renormalization cannot mix it with a non-central operator, and $\gamma_\rho$, the anomalous dimension of the invariant $\rho$ (twice that of the field), is a scalar. The equation itself is standard.
+up to the trace anomaly of the companion article, which is a higher-order effect for the scalar sector. The framework's contribution to this equation is again the centrality of the fluctuation operator, which is what makes the anomalous dimension a single number rather than a matrix: the field $\tilde{Ξ}$ is central, so its wave-function renormalization cannot mix it with a non-central operator, and $\gamma_\rho$, the anomalous dimension of the invariant $\rho$ (twice that of the field), is a scalar. The equation itself is standard.
 
 **A caution on the scale.** The relation $\langle \rho\rangle = \mu^2\exp(-\tfrac12 - \lambda/(4B))$ is not a prediction of a number; it is the statement that the minimum is where the running coupling satisfies a definite condition. Quoting the minimum at one value of $\mu$ and the couplings at another is the standard way of producing a spurious scale dependence, and the companion article on the renormalization group records the same caution for the beta functions.
 
@@ -245,7 +245,7 @@ up to the trace anomaly of the companion article, which is a higher-order effect
 
 Four statements summarise what the framework contributes to the effective potential and to the Coleman–Weinberg mechanism.
 
-**The invariant is the central modulus.** The potential is a function of $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\chi|^2$, the modulus of the complex central field. The effective potential is a function of the same invariant, and the symmetry of the effective potential is exactly the symmetry of the action, because the fluctuation operator has central coefficients. The framework supplies the value space of the order parameter — the centre — and the statement that the correction respects it.
+**The invariant is the central modulus.** The potential is a function of $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = |\xi|^2$, the modulus of the complex central field. The effective potential is a function of the same invariant, and the symmetry of the effective potential is exactly the symmetry of the action, because the fluctuation operator has central coefficients. The framework supplies the value space of the order parameter — the centre — and the statement that the correction respects it.
 
 **The correction is a function of the invariant alone.** The fluctuation operator has central coefficients, so it commutes with the central phase and does not mix the sectors; its logarithm therefore depends on the background only through $\rho$, and the one-loop correction is a single real function of $\rho$ rather than a function on a module. This is a statement about the algebra, and it is exact. The two real components of the fluctuation lie one in each sector, with the distinct field-dependent masses $m_1^2(\rho)$ and $m_2^2(\rho)$, and the multiplicity of the correction is the component count, two.
 
@@ -269,7 +269,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 ## Summary
 
-The scalar sector of the biquaternion framework is the complex central field $\tilde{\Phi} = \chi\,e_t$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\chi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
+The scalar sector of the biquaternion framework is the complex central field $\tilde{Ξ} = \xi\,e_t$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = |\xi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
 
 For the classically scale-invariant case $v_0 = 0$ the one-loop potential is
 
@@ -303,19 +303,19 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
-| $\tilde{\Phi} = \chi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
-| $\tilde\Phi_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde\Phi_{\mathrm{cl}}=\chi_c\,e_t$ for a constant background |
-| $\delta\tilde{\Phi}$ | Fluctuation about the background, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde{\Phi}$ |
-| $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = \lvert\chi\rvert^2$ | Central invariant; the potential's argument |
+| $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
+| $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
+| $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
+| $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = \lvert\xi\rvert^2$ | Central invariant; the potential's argument |
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
-| $\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle\tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
-| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
+| $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
+| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
 | $V_\text{eff} = -\Gamma/\text{vol}$, $\mathcal{V}_\text{eff}(\rho)$ | Effective potential; its restriction to the invariant |
-| $S^{(2)}[\chi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
+| $S^{(2)}[\xi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
 | $\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i m_i^4[\ln(m_i^2/\mu^2) - c_i]$ | One-loop effective potential (Coleman–Weinberg form) |
 | $m_1^2(\rho) = \frac{\lambda}{2}(3\rho - v_0^2)$, $m_2^2(\rho) = \frac{\lambda}{2}(\rho - v_0^2)$ | Field-dependent masses of the two real scalar modes |
 | $m_1^2 = \frac32\lambda \rho$, $m_2^2 = \frac{\lambda}{2}\rho$ ($v_0 = 0$); $m_A^2(\rho) = 2ϙ^2\rho$ | Scale-invariant scalar masses; gauge mass; $n_A = 3$ (units $\hbar = c = 1$) |

@@ -51,7 +51,7 @@ The statement is exact and is worth one paragraph, because it is what makes the 
 
 A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; its two factors are the boost and the rotation,
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
 \tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
 $$
 and the unit-norm condition is $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$, hence $\tilde U^{\mathrm{lor}}{}^{-1} = \tilde U^{\mathrm{lor}}{}^{\natural}$, so the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
@@ -88,9 +88,9 @@ which is the unitarity condition. Among the unit-norm elements, $\tilde U^{\math
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde U_{\mathrm b}$ Hermitian one has $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
+A boost fails the condition maximally: for $\tilde U_{\mathrm b}$ Hermitian one has $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^2 = e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$, so
 $$
-\boxed{\;\langle\tilde U_{\mathrm b}u|\tilde U_{\mathrm b}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle\;}.
+\boxed{\;\langle\tilde U_{\mathrm b}u|\tilde U_{\mathrm b}u\rangle = \langle u|u\rangle + i\sinh\theta^{\mathrm{rpd}}\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle\;}.
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.
 
@@ -166,7 +166,7 @@ which is the statement that the diagram of the two actions commutes: the informa
 
 The null-vector map gives the relativistic qubit a geometric face and is the precise sense in which the two sectors of the structural companion are linked at the level of a single state. A pure spinor state *is* a light direction; the material sector receives an image of the informational state, and the image transforms covariantly. The correspondence is the biquaternion form of the standard spinor–helicity construction, in which a two-component Weyl spinor is the square root of a null momentum, and the celestial sphere of the pure states is the sphere of null directions. It is worth noting what the map is not: it is defined for pure states, it takes the ray and not the spinor (the two spinors $\pm|u\rangle$ give the same $\tilde{\mathcal L}$), and it carries no information about the normalization, which the boost changes. For mixed states there is no analogous map, because the element $i\tilde{Ϛ}$ of $\mathbb{M}_-$ is not null except on the boundary, and the natural invariant of a mixed state is $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)\geq0$, which measures the distance from the pure boundary rather than a direction.
 
-**A worked instance.** Take the spin-up state along $z$, $|u\rangle_{*} = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\psi = 0.6$. The spinor becomes
+**A worked instance.** Take the spin-up state along $z$, $|u\rangle_{*} = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\theta^{\mathrm{rpd}} = 0.6$. The spinor becomes
 $$
 \tilde U_{\mathrm b}|u\rangle = \bigl(\cosh 0.3,\ \sinh 0.3\bigr)^{\mathsf T} = \bigl(1.04534,\ 0.30452\bigr)^{\mathsf T},
 $$
@@ -193,18 +193,18 @@ This has the right formal properties — it preserves Hermiticity and the inerti
 $$
 \tilde U_{\mathrm b}\,\tfrac12 e_t\,\tilde U_{\mathrm b}^{*} = \tfrac12\tilde U_{\mathrm b}^2 ,
 \qquad
-\mathrm{Tr}\bigl(\tilde U_{\mathrm b}\tfrac12 e_t\tilde U_{\mathrm b}^{*}\bigr) = \cosh\psi \neq 1 ,
+\mathrm{Tr}\bigl(\tilde U_{\mathrm b}\tfrac12 e_t\tilde U_{\mathrm b}^{*}\bigr) = \cosh\theta^{\mathrm{rpd}} \neq 1 ,
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
-\vec r = \tanh\psi\ \vec u_{\mathrm b},
+\vec r = \tanh\theta^{\mathrm{rpd}}\ \vec u_{\mathrm b},
 $$
-not to itself. The centre is the case $\vec r=0$ of the general law. For a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$, the normalised congruence acts on the ball by velocity addition,
+not to itself. The centre is the case $\vec r=0$ of the general law. For a boost of rapidity $\theta^{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$, the normalised congruence acts on the ball by velocity addition,
 
 $$
-r'_\parallel=\frac{r_\parallel+\tanh\psi}{1+r_\parallel\tanh\psi},
+r'_\parallel=\frac{r_\parallel+\tanh\theta^{\mathrm{rpd}}}{1+r_\parallel\tanh\theta^{\mathrm{rpd}}},
 \qquad
-\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi+r_\parallel\sinh\psi},
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta^{\mathrm{rpd}}+r_\parallel\sinh\theta^{\mathrm{rpd}}},
 $$
 
 with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. The congruence is therefore a flow of the ball onto itself, not a symmetry of it: it preserves the ball but not the radius, while the compact subgroup preserves both. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-$*$-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the $*$-unitary group and by no larger one.

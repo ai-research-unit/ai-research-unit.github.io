@@ -76,13 +76,13 @@ which in the algebra is a product of unitaries in the limit of infinitesimal ste
 Define the rotating-frame state and observable by
 
 $$
-\psi_R(t') = \tilde u_{\mathrm r}(t')^{*}\,\psi(t'),
+\tilde{Ξ}^{\mathrm{spn}}_R(t') = \tilde u_{\mathrm r}(t')^{*}\,\tilde{Ξ}^{\mathrm{spn}}(t'),
 \qquad
 \tilde u_{\mathrm r}(t') = \exp\!\left(-\frac{\omega t'}{2}\vec e_z\right)
 = \cos\frac{\omega t'}{2}\,e_t - \sin\frac{\omega t'}{2}\,\vec e_z .
 $$
 
-The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\,d\psi/dt' = \tilde{H}\psi$ becomes $i\hbar\,d\psi_{R}/dt' = \tilde{H}_R\psi_R$ with
+The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $i\hbar\,d\tilde{Ξ}^{\mathrm{spn}}/dt' = \tilde{H}\tilde{Ξ}^{\mathrm{spn}}$ becomes $i\hbar\,d\tilde{Ξ}^{\mathrm{spn}}_{R}/dt' = \tilde{H}_R\tilde{Ξ}^{\mathrm{spn}}_R$ with
 
 $$
 \tilde{H}_R = \tilde u_{\mathrm r}^{*}\,\tilde{H}\,\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\,\partial/\partial t'\tilde u_{\mathrm r} .

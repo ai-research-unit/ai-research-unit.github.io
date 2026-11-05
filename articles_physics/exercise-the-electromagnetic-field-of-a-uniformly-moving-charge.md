@@ -32,11 +32,11 @@ with $\vec E_a$ linear in $d\vec\beta/dt'_r$. The velocity field is of electric 
 
 **The one convention used here, stated once.** The boost rotor
 $$
-\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\,\sinh\frac{\psi_b}{2}\,\vec u,
+\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\,\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\,\vec u,
 \qquad
 \vec u = \frac{\vec v_b}{v_b},
 \qquad
-\tanh\psi_b = \frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}}_b = \frac{v_b}{c},
 $$
 **carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U^{\mathrm{lor}}\tilde{F}\tilde U^{\mathrm{lor}}{}^{*}$, where $\tilde U^{\mathrm{lor}}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
 
@@ -170,7 +170,7 @@ because $\vec E\parallel\vec d$, and hence $\vec B = \frac{1}{c}\vec u_R\times\v
 $$
 |\vec E| = \frac{ϙ}{4\pi\epsilon}\,\frac{1-\beta^2}{d^2\left(\cos^2\theta + \sin^2\theta/\gamma^2\right)^{3/2}} \propto \frac{1}{d^2}.
 $$
-The falloff is therefore inverse-square about the present position, with no residual $\kappa$-dependence once the direction is held fixed. The surfaces of constant scalar potential, $\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D} = \text{const}$, are
+The falloff is therefore inverse-square about the present position, with no residual $\kappa$-dependence once the direction is held fixed. The surfaces of constant scalar potential, $\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D} = \text{const}$, are
 $$
 d_\parallel^2 + \frac{d_\perp^2}{\gamma^2} = D_0^2 ,
 $$
@@ -267,18 +267,18 @@ In this precise sense — the pancake at fixed impact parameter — the ultrarel
 
 **Solution (a).** We use the convention of the Introduction and of the parent: the rotor
 $$
-\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\,\sinh\frac{\psi_b}{2}\,\vec u,
+\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\,\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\,\vec u,
 \qquad
-\tanh\psi_b = \frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}}_b = \frac{v_b}{c},
 $$
 **carries the laboratory to the frame moving with $+\vec v_b$**. On the rest four-velocity $\tilde{V}_0 = ic\,e_t$, using $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$ (a pure boost is Hermitian),
 $$
 \tilde U_{\vec v_b}\,\tilde{V}_0\,\tilde U_{\vec v_b}^{*}
 = ic\,\tilde U_{\vec v_b}^2
-= ic\left(\cosh\psi_b + i\sinh\psi_b\,\vec u\right)
-= ic\cosh\psi_b - c\sinh\psi_b\,\vec u,
+= ic\left(\cosh\theta^{\mathrm{rpd}}_b + i\sinh\theta^{\mathrm{rpd}}_b\,\vec u\right)
+= ic\cosh\theta^{\mathrm{rpd}}_b - c\sinh\theta^{\mathrm{rpd}}_b\,\vec u,
 $$
-whose velocity is $-c\tanh\psi_b\,\vec u = -\vec v_b$. So the rotor built with $+\vec v_b$ carries the lab to the frame moving with $+\vec v_b$; a particle at rest in the lab appears in that frame to move with $-\vec v_b$.
+whose velocity is $-c\tanh\theta^{\mathrm{rpd}}_b\,\vec u = -\vec v_b$. So the rotor built with $+\vec v_b$ carries the lab to the frame moving with $+\vec v_b$; a particle at rest in the lab appears in that frame to move with $-\vec v_b$.
 
 **Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
@@ -416,7 +416,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\vec u_R-\vec\beta = \vec d/R$, $\vec u_R\cdot\vec d = D$ | Present-position identities of Problem 1 |
 | $\vec E, \vec B$ | Electric field and magnetic induction; $\vec B = \vec v\times\vec E/c^2$ |
 | $I_1 = \vec E^2-c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Field invariants |
-| $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$, $\tanh\psi_b = v_b/c$ | Boost rotor; carries the lab to the frame moving with $+\vec v_b$ |
+| $\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u$, $\tanh\theta^{\mathrm{rpd}}_b = v_b/c$ | Boost rotor; carries the lab to the frame moving with $+\vec v_b$ |
 | $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$ | Boost of the field (similarity, not rotor conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (recorded, not used) |

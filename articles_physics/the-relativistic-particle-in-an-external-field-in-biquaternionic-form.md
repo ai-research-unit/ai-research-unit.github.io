@@ -59,35 +59,35 @@ so that the prescription reads $\tilde P_{\mathrm{can}} \to \tilde P_{\mathrm{ca
 Expanding in components, with $\tilde P_{\mathrm{can}} = i(E_{\mathrm{can}}/c)\,e_t + \vec p_{\mathrm{can}}$ and $\tilde{A} = i\,a'_t\,e_t + \vec A$,
 
 $$
-\tilde{P}^{\mathrm{kin}} = i\,\frac{E_{\mathrm{can}} - ϙ\chi}{c}\,e_t + \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)
+\tilde{P}^{\mathrm{kin}} = i\,\frac{E_{\mathrm{can}} - ϙ\xi}{c}\,e_t + \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)
 = i\,\frac{E}{c}\,e_t + \vec p,
 $$
 
 so the scalar coefficient is the kinetic energy divided by $c$ and the vector coefficient is the kinetic three-momentum:
 
 $$
-E = E_{\mathrm{can}} - ϙ\chi, \qquad \vec p = \vec p_{\mathrm{can}} - ϙ\vec A.
+E = E_{\mathrm{can}} - ϙ\xi, \qquad \vec p = \vec p_{\mathrm{can}} - ϙ\vec A.
 $$
 
 The mass-shell relation $\langle\tilde{P}^{\mathrm{kin}}\rangle_{\natural} = -m^2c^2$ then reads
 
 $$
--\frac{\left(E_{\mathrm{can}} - ϙ\chi\right)^2}{c^2} + \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 = -m^2c^2,
+-\frac{\left(E_{\mathrm{can}} - ϙ\xi\right)^2}{c^2} + \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 = -m^2c^2,
 $$
 
 that is,
 
 $$
-\left(E_{\mathrm{can}} - ϙ\chi\right)^2 = \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2c^2 + m^2c^4 .
+\left(E_{\mathrm{can}} - ϙ\xi\right)^2 = \left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2c^2 + m^2c^4 .
 $$
 
 Solving for the canonical energy gives the **relativistic Hamiltonian**
 
 $$
-\boxed{\;E_{\mathrm{can}} = ϙ\chi + c\sqrt{\left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 + m^2c^2}\;}.
+\boxed{\;E_{\mathrm{can}} = ϙ\xi + c\sqrt{\left(\vec p_{\mathrm{can}} - ϙ\vec A\right)^2 + m^2c^2}\;}.
 $$
 
-This is the standard result: the potential energy $ϙ\chi$ is added, and the kinetic energy is built from the kinetic momentum $\vec p_{\mathrm{can}} - ϙ\vec A$, not from the canonical momentum $\vec p_{\mathrm{can}}$. The kinetic energy in the bracket is the one that would be computed for a free particle whose momentum is $\vec p = \vec p_{\mathrm{can}} - ϙ\vec A$.
+This is the standard result: the potential energy $ϙ\xi$ is added, and the kinetic energy is built from the kinetic momentum $\vec p_{\mathrm{can}} - ϙ\vec A$, not from the canonical momentum $\vec p_{\mathrm{can}}$. The kinetic energy in the bracket is the one that would be computed for a free particle whose momentum is $\vec p = \vec p_{\mathrm{can}} - ϙ\vec A$.
 
 ### The action form and the canonical momentum
 
@@ -120,7 +120,7 @@ $$
 
 that is, **canonical = kinetic + $ϙ\tilde{A}$**, which is exactly the component statement above. The prescription $\tilde P \to \tilde P - ϙ\tilde A$ of the mass-shell form and the conjugate momentum of the action form are the same equation read in opposite directions.
 
-**Sign convention.** The pair of signs used here is the one inherited from the gauge-principle article: the covariant derivative is $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, and at the classical level the corresponding canonical/kinetic relation is $\tilde P_{\mathrm{can}} = \tilde{P}^{\mathrm{kin}} + ϙ\tilde{A}$, equivalently $\tilde{P}^{\mathrm{kin}} = \tilde P_{\mathrm{can}} - ϙ\tilde{A}$. This is the standard classical sign (the interaction Lagrangian is $-ϙ\chi + ϙ\vec A\cdot\vec v$ in laboratory time), and it is *not* silently reversed anywhere below. The corpus's field-theoretic sign conventions for the Dirac field are recorded in the minimal-coupling article; the classical statement here is the same prescription on the same connection.
+**Sign convention.** The pair of signs used here is the one inherited from the gauge-principle article: the covariant derivative is $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, and at the classical level the corresponding canonical/kinetic relation is $\tilde P_{\mathrm{can}} = \tilde{P}^{\mathrm{kin}} + ϙ\tilde{A}$, equivalently $\tilde{P}^{\mathrm{kin}} = \tilde P_{\mathrm{can}} - ϙ\tilde{A}$. This is the standard classical sign (the interaction Lagrangian is $-ϙ\xi + ϙ\vec A\cdot\vec v$ in laboratory time), and it is *not* silently reversed anywhere below. The corpus's field-theoretic sign conventions for the Dirac field are recorded in the minimal-coupling article; the classical statement here is the same prescription on the same connection.
 
 ## Canonical Momentum Is Not Kinetic Momentum
 
@@ -217,7 +217,7 @@ the biquaternion form of $\sum_\mu\varepsilon_\mu K_\mu P_\mu = 0$: the Lorentz 
 
 The first independent check is a purely electric field. This case is *not* the one that suggested the formula — the derivation above used a general field — but it isolates the scalar potential and the electric contribution to the force.
 
-Take $\vec B = 0$ and a static, uniform electric field $\vec E = E_0\vec u_x$, described by the potential $\chi = -E_0 x$, $\vec A = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_t$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $p_{\mathrm{can},k} = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + ϙ\chi$. The contraction $\tilde{K}_{\mathrm{f}} = ϙ\sum_\nu F_{\mu\nu}U_\nu$ gives
+Take $\vec B = 0$ and a static, uniform electric field $\vec E = E_0\vec u_x$, described by the potential $\xi = -E_0 x$, $\vec A = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_t$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $p_{\mathrm{can},k} = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + ϙ\xi$. The contraction $\tilde{K}_{\mathrm{f}} = ϙ\sum_\nu F_{\mu\nu}U_\nu$ gives
 
 $$
 \boxed{\;\frac{d\vec p}{dt'} = ϙ\vec E = ϙE_0\,\vec u_x,
@@ -334,7 +334,7 @@ $$
 \left\langle\tilde P_{\mathrm{can}} - ϙ\tilde{A}\right\rangle_{\natural} = -m^2c^2.
 $$
 
-The object $\tilde P_{\mathrm{can}} - ϙ\tilde{A}$ is the **kinetic** four-momentum and $\tilde P_{\mathrm{can}}$ is the **canonical** four-momentum, $\tilde P_{\mathrm{can}} = \tilde{P}^{\mathrm{kin}} + ϙ\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = ϙ\chi + c\sqrt{(\vec p_{\mathrm{can}}-ϙ\vec A)^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-\langle d\tilde{R}/d\tau\rangle_{\natural}}\,d\tau + ϙ\int\mathrm{Sc}(\tilde{A}\,\overline{d\tilde R/d\tau})\,d\tau$ it yields the conjugate momentum $\tilde P_{\mathrm{can}} = m\,d\tilde{R}/d\tau + ϙ\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\vec v = \vec pc^2/E$.
+The object $\tilde P_{\mathrm{can}} - ϙ\tilde{A}$ is the **kinetic** four-momentum and $\tilde P_{\mathrm{can}}$ is the **canonical** four-momentum, $\tilde P_{\mathrm{can}} = \tilde{P}^{\mathrm{kin}} + ϙ\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = ϙ\xi + c\sqrt{(\vec p_{\mathrm{can}}-ϙ\vec A)^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-\langle d\tilde{R}/d\tau\rangle_{\natural}}\,d\tau + ϙ\int\mathrm{Sc}(\tilde{A}\,\overline{d\tilde R/d\tau})\,d\tau$ it yields the conjugate momentum $\tilde P_{\mathrm{can}} = m\,d\tilde{R}/d\tau + ϙ\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\vec v = \vec pc^2/E$.
 
 The equation of motion is the Lorentz force in its contracted form,
 
@@ -368,7 +368,7 @@ The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biq
 | $\tilde{P}^{\mathrm{kin}} = \tilde P_{\mathrm{can}} - ϙ\tilde{A} = \tilde{P}$ | Kinetic four-momentum (gauge-invariant) |
 | $ϙ$ | Charge (coupling constant, not fixed by the algebra) |
 | $\langle\tilde{P}^{\mathrm{kin}}\rangle_{\natural} = -m^2c^2$ | Minimal-coupling mass-shell relation |
-| $E_{\mathrm{can}} = ϙ\chi + c\sqrt{(\vec p_{\mathrm{can}} - ϙ\vec A)^2 + m^2c^2}$ | Canonical energy; $\vec p_{\mathrm{can}}$ the canonical three-momentum |
+| $E_{\mathrm{can}} = ϙ\xi + c\sqrt{(\vec p_{\mathrm{can}} - ϙ\vec A)^2 + m^2c^2}$ | Canonical energy; $\vec p_{\mathrm{can}}$ the canonical three-momentum |
 | $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ | Field tensor; $F_{0k} = iE_k/c$, $F_{jk} = \epsilon_{jkl}B_l$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\tilde{K}_{\mathrm{f}} = d\tilde{P}^{\mathrm{kin}}/d\tau$ | Four-force; $\tilde{K}_{\mathrm{f}} = ϙ\sum_\nu F_{\mu\nu}U_\nu = -ϙ\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ |

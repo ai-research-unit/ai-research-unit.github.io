@@ -44,9 +44,9 @@ $$
 $$
 is what makes the product of rotors compose Lorentz transformations, and it is the homogeneous half of the group law derived below.
 
-Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
+Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\theta^{\mathrm{rpd}}$,
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
 is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
 $$
@@ -106,7 +106,7 @@ $$
 \boxed{\;\mathrm{P}=\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\ \ltimes\ \mathbb{R}^4,
 \qquad [P_\mu,P_\nu]=0\;},
 $$
-with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(\sum_\mu a_\mu\partial/\partial Q_\mu)$, and on a plane wave of four-wavevector $\tilde P\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{R}_0)\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{\Phi}=\tilde{\Phi}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\rangle$, not $\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}) = \langle\tilde P,\tilde{R}_0\rangle_{\natural}$: for $\tilde P,\tilde{R}_0\in\mathbb{M}_-$ the latter equals $-(p_0a_0)+\vec p\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
+with the Lorentz generators acting on $P_\mu$ through the vector representation and the boosts not closing among themselves. On fields, the finite translation is the Taylor operator $\exp(\sum_\mu a_\mu\partial/\partial Q_\mu)$, and on a plane wave of four-wavevector $\tilde P\in\mathbb{M}_-$ it is multiplication by the central phase $\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{R}_0)\bigr)$ — a unit-modulus scalar in the algebra, not a biquaternion factor multiplying the field. With the series' plane-wave convention $\tilde{Ξ}=\tilde{Ξ}_0\exp\!\bigl(i\,\mathrm{Sc}(\tilde P\tilde{Q})\bigr)$ and shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$, the multiplier is $\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$; the shift in the opposite direction gives its conjugate. The pairing is $\mathrm{Sc}(\tilde P\tilde{R}_0) = \langle\tilde P,\tilde{R}_0\rangle$, not $\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}) = \langle\tilde P,\tilde{R}_0\rangle_{\natural}$: for $\tilde P,\tilde{R}_0\in\mathbb{M}_-$ the latter equals $-(p_0a_0)+\vec p\cdot\vec a$, which is real, so the factor $\exp(\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$ is a positive real number rather than a unit-modulus phase, and a translation multiplier must have unit modulus. So the translation is present in the infinitesimal algebra and acts finitely on field space, but it is not an element of the finite-dimensional rotor group.
 
 ## The Semidirect Structure
 
@@ -131,7 +131,7 @@ $$
 \qquad
 (e_t,\tilde{R}_0)\circ(\tilde U^{\mathrm{lor}},0)=(\tilde U^{\mathrm{lor}},\tilde{R}_0),
 $$
-and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U^{\mathrm{lor}})$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U^{\mathrm{lor}})\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde U_{\mathrm b}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde U_{\mathrm b})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
+and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U^{\mathrm{lor}})$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U^{\mathrm{lor}})\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde U_{\mathrm b}$ along $\vec e_x$ with rapidity $\theta^{\mathrm{rpd}}=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde U_{\mathrm b})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
 
 ## A Composition Checked Directly
 
@@ -145,7 +145,7 @@ $$
 \qquad
 \tilde U_{\mathrm b}=\cosh(0.45)+i\sinh(0.45)\,\vec e_x,
 $$
-a rotation about $\vec e_z$ by $\theta=0.8$ and a boost along $\vec e_x$ by rapidity $\psi=0.9$, and with displacements
+a rotation about $\vec e_z$ by $\theta=0.8$ and a boost along $\vec e_x$ by rapidity $\theta^{\mathrm{rpd}}=0.9$, and with displacements
 $$
 \tilde{R}_{0,1}=0.5\,i\,e_t+0.7\,\vec e_x,\qquad
 \tilde{R}_{0,2}=-0.3\,i\,e_t+0.6\,\vec e_y .
@@ -197,7 +197,7 @@ The honest summary is that the biquaternion frame answers the homogeneous questi
 
 ## Covariance of the Biwave Equation
 
-The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde\Phi = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde\Phi$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
+The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde{Ξ}$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
 
 **The conjugated gradient is the gradient in the rotated basis.** The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ of the section *The Frame Reading*, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
@@ -205,9 +205,9 @@ $$
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\boxed{\;\tilde{\nabla}^{\mathrm{Ad}}\left(\tilde U^{\mathrm{lor}}\tilde\Phi\tilde U^{\mathrm{lor}}{}^{*}\right) = \tilde U^{\mathrm{lor}}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U^{\mathrm{lor}}{}^{*}\;},
+\boxed{\;\tilde{\nabla}^{\mathrm{Ad}}\left(\tilde U^{\mathrm{lor}}\tilde{Ξ}\tilde U^{\mathrm{lor}}{}^{*}\right) = \tilde U^{\mathrm{lor}}\left(\tilde{\nabla}\tilde{Ξ}\right)\tilde U^{\mathrm{lor}}{}^{*}\;},
 $$
-which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}^{\mathrm{Ad}}\tilde\Phi_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde\Phi_{\mathrm{Ad}} = \tilde U^{\mathrm{lor}}\tilde\Phi\tilde U^{\mathrm{lor}}{}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U^{\mathrm{lor}}\tilde{G}\tilde U^{\mathrm{lor}}{}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
+which was checked on random rotors and random $\tilde{Ξ}$. The equation $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$ therefore maps to $\tilde{\nabla}^{\mathrm{Ad}}\tilde{Ξ}_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde{Ξ}_{\mathrm{Ad}} = \tilde U^{\mathrm{lor}}\tilde{Ξ}\tilde U^{\mathrm{lor}}{}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U^{\mathrm{lor}}\tilde{G}\tilde U^{\mathrm{lor}}{}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
 
 **Why it is a theorem and not a tautology.** Three facts carry the statement. The rotated elements $\tilde U^{\mathrm{lor}}e_\mu\tilde U^{\mathrm{lor}}{}^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U^{\mathrm{lor}}\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section *The Homogeneous Part, Recalled*, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.
 
@@ -242,7 +242,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\tilde U^{\mathrm{lor}}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\tilde U_{\mathrm b}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{R}_0\in\mathbb{M}_-$ | Translation (displacement) |
@@ -252,7 +252,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace formula (informational sector) |
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient (material four-vector of operators) |
 | $\tilde{\nabla}^{\mathrm{Ad}} = \sum_\mu(\tilde U^{\mathrm{lor}}e_\mu\tilde U^{\mathrm{lor}}{}^{-1})\partial/\partial Q_\mu$ | Conjugated gradient, the gradient in the rotated basis |
-| $\tilde{\nabla}\tilde\Phi = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
+| $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

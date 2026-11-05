@@ -130,7 +130,7 @@ The two-component column, and the spinor. A column of two components is an eleme
 
 The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth cell. Neither fact is stated anywhere on a page that prints the five matrices.
 
-The Dirac adjoint. The adjoint $\psi^{\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
+The Dirac adjoint. The adjoint $\tilde{Ξ}^{\mathrm{spn}\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
 
 The charge conjugation. The cell $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one cell serves is a fact of the frame; which cell it is, is a choice.
 
@@ -405,7 +405,7 @@ That trade is the whole content of the choice between the two displays. The Paul
 A matrix display is already a compromise. The object an equation of the corpus names is not an array but an action on an element:
 
 $$
-\psi\longmapsto a\,\psi\,b.
+\tilde{Ξ}^{\mathrm{spn}}\longmapsto a\,\tilde{Ξ}^{\mathrm{spn}}\,b.
 $$
 
 The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.
@@ -484,10 +484,10 @@ During this pass an array may stay only where the array is the object: a compari
 Replace every cell by what it does. The rule is one line, and it is the whole pass:
 
 $$
-\psi\longmapsto a\,\psi\,b.
+\tilde{Ξ}^{\mathrm{spn}}\longmapsto a\,\tilde{Ξ}^{\mathrm{spn}}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $m\psi$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication.
+The pass removes the operator symbol as well. A mass term is $m\tilde{Ξ}^{\mathrm{spn}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 
@@ -503,13 +503,13 @@ The three passes need a table, and one table serves all three. Each row gives th
 
 | Pauli or gamma name | object | $\mathrm{axf}$ array | action |
 |---|---|---|---|
-| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\psi\mapsto\psi$ |
+| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
-| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $iR^{\mathrm{axf}}_{\vec e_x}$ | $\psi\mapsto i\psi\vec e_x$ |
-| $\gamma_k[\mathbb{M}_-]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}$ | $\psi\mapsto i\vec e_k\psi\vec e_y$ |
-| $\gamma_5[\mathbb{M}_-]$ | $-iR_{\vec e_z}$ | $-iR^{\mathrm{axf}}_{\vec e_z}$ | $\psi\mapsto-i\psi\vec e_z$ |
-| the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\psi\mapsto m\psi$ |
-| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR^{\mathrm{axf}}_{\vec e_z}\bigr)$ | $\psi\mapsto\tfrac12\bigl(\psi-i\psi\vec e_z\bigr)$ |
+| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $iR^{\mathrm{axf}}_{\vec e_x}$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$ |
+| $\gamma_k[\mathbb{M}_-]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\vec e_k\tilde{Ξ}^{\mathrm{spn}}\vec e_y$ |
+| $\gamma_5[\mathbb{M}_-]$ | $-iR_{\vec e_z}$ | $-iR^{\mathrm{axf}}_{\vec e_z}$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ |
+| the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto m\tilde{Ξ}^{\mathrm{spn}}$ |
+| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR^{\mathrm{axf}}_{\vec e_z}\bigr)$ | $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tfrac12\bigl(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 
 The last row is the one that has no action, and that is the honest answer: the adjoint is not an operator on the element but a pairing of two elements.
@@ -555,7 +555,7 @@ The link test. Every cited title must resolve, and a rewritten section must not 
 
 ### The Rules of Use
 
-Write the action first, $\psi\mapsto a\psi b$, and name the operator only when the operator is the subject.
+Write the action first, $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$, and name the operator only when the operator is the subject.
 
 Write one term per line. A sum is a sum of terms, and each term is a pair.
 
@@ -583,7 +583,7 @@ The defect is a formal defect, and its source is physical. Physical space has no
 
 The $\mathrm{axf}$ display writes no direction. Its diagonal cells are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every cell is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the natural norm, and the transpose is the natural conjugation.
 
-The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\psi\mapsto a\psi b$, with no basis in the definition.
+The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b$, with no basis in the definition.
 
 The migration has three passes — arrays to cells, cells to actions, keep the axis-free array where an array is required — a dictionary, four traps and five checks.
 
@@ -603,8 +603,8 @@ The migration has three passes — arrays to cells, cells to actions, keep the a
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
 | the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the diagonal cells of the coefficient basis, a set unchanged by a permutation of the three spatial units |
-| $L_a$, $R_b$ | left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $L_aR_b$ | the two-sided operator, $L_aR_b\psi=a\psi b$ |
+| $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$ |
+| $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}} b$ |
 | $L^{\mathrm{axf}}(\tilde Q)$, $L^{\mathrm{pau}}(\tilde Q)$ | the left array of $\tilde Q$ in the axis-free and in the Pauli display; the label is a name, not an exponent |
 | $L^{\mathrm{axf}}_{e_\mu}$, $R^{\mathrm{axf}}_{e_\mu}$ | the arrays of the units in the axis-free display |
 | $C_{\Pi}$ | the change of basis from the coefficient basis to the Peirce frame, $\det C_{\Pi}=-\tfrac14$ |

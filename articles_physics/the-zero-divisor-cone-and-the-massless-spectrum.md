@@ -234,10 +234,10 @@ The polar decomposition is defined off the cone and has no value on it. It has a
 **The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\varkappa^{\mathrm{phs}}$ a unit complex number and $R>0$, and set
 
 $$
-\tilde Q(\psi)=R\exp\left(-\frac{\psi}{2}\right)\varkappa^{\mathrm{phs}}\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \psi>0.
+\tilde Q(\tilde{Ξ}^{\mathrm{spn}})=R\exp\left(-\frac{\tilde{Ξ}^{\mathrm{spn}}}{2}\right)\varkappa^{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}^{\mathrm{spn}}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}^{\mathrm{spn}}>0.
 $$
 
-Every $\tilde Q(\psi)$ is a unit, and as $\psi\to\infty$ it converges to
+Every $\tilde Q(\tilde{Ξ}^{\mathrm{spn}})$ is a unit, and as $\tilde{Ξ}^{\mathrm{spn}}\to\infty$ it converges to
 
 $$
 \boxed{\;\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},
@@ -245,7 +245,7 @@ $$
 
 a nonzero element of the cone. The limit is a complex multiple of a minimal idempotent when $\vec u_{\mathrm r}$ has a component in the plane spanned by $e_t$ and $\vec u_{\mathrm b}$, and it is a nilpotent exactly when $\vec u_{\mathrm r}$ is orthogonal to both. Every nonzero element of the cone is such a limit for some choice of the data.
 
-The physical reading is a massive family approaching the massless wall. The scale collapses as $\exp(-\psi/2)$ while the rapidity diverges, so the norm goes to zero at the same rate as the boost grows. The direction of the boost and the rotor decide which stratum is reached. A rotor with a component in that plane gives the idempotent stratum that carries the photon, and a rotor orthogonal to both gives the nilpotent stratum, which is not a four-momentum. The stratum is selected by the rotor, not by the rate, and the rate is the same for both.
+The physical reading is a massive family approaching the massless wall. The scale collapses as $\exp(-\theta^{\mathrm{rpd}}/2)$ while the rapidity diverges, so the norm goes to zero at the same rate as the boost grows. The direction of the boost and the rotor decide which stratum is reached. A rotor with a component in that plane gives the idempotent stratum that carries the photon, and a rotor orthogonal to both gives the nilpotent stratum, which is not a four-momentum. The stratum is selected by the rotor, not by the rate, and the rate is the same for both.
 
 The massless limit of a massive family is the physical instance of the theorem; it is worked out, with the rate and the two strata, in [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html).
 

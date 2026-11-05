@@ -141,14 +141,14 @@ is two-to-one.
 
 ### The Boost Rotor
 
-A boost along the unit real direction $\vec u$ of rapidity $\psi$ is the rotor
+A boost along the unit real direction $\vec u$ of rapidity $\theta^{\mathrm{rpd}}$ is the rotor
 $$
-\tilde U=\exp\!\left(\frac{\psi}{2}i\vec u\right)
-=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u,
+\tilde U=\exp\!\left(\frac{\theta^{\mathrm{rpd}}}{2}i\vec u\right)
+=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u,
 \qquad
-\tanh\psi=\frac{v}{c}.
+\tanh\theta^{\mathrm{rpd}}=\frac{v}{c}.
 $$
-It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\psi=0$. Its sandwich is
+It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\theta^{\mathrm{rpd}}=0$. Its sandwich is
 $$
 \mathrm{H}_{\tilde U}(\tilde Q_3)=\tilde U\,\tilde Q_3\,\tilde U,
 $$
@@ -156,28 +156,28 @@ the element on both sides rather than an element and its inverse.
 
 The boost moves the time axis. On the algebra unit,
 $$
-\mathrm{H}_{\tilde U}(e_t)=\tilde U^{2}=\cosh\psi\,e_t+i\sinh\psi\,\vec u,
+\mathrm{H}_{\tilde U}(e_t)=\tilde U^{2}=\cosh\theta^{\mathrm{rpd}}\,e_t+i\sinh\theta^{\mathrm{rpd}}\,\vec u,
 $$
 which is Hermitian and lies in $\mathbb{M}_{+}$; on the time axis,
 $$
-\mathrm{H}_{\tilde U}(ie_t)=i\tilde U^{2}=i\cosh\psi\,e_t-\sinh\psi\,\vec u,
+\mathrm{H}_{\tilde U}(ie_t)=i\tilde U^{2}=i\cosh\theta^{\mathrm{rpd}}\,e_t-\sinh\theta^{\mathrm{rpd}}\,\vec u,
 $$
 which is a four-vector with a spatial part. The centre is not preserved, the vector subspace is not preserved, and the product is not preserved:
 $$
 \mathrm{H}_{\tilde U}(\tilde Q_1\tilde Q_2)\neq
 \mathrm{H}_{\tilde U}(\tilde Q_1)\mathrm{H}_{\tilde U}(\tilde Q_2)
 $$
-for $\psi\neq0$, because the missing factor is $\tilde Q^{*}\tilde Q=\tilde Q^{2}$. The defect is first order in the rapidity, while the time dilation is second order.
+for $\theta^{\mathrm{rpd}}\neq0$, because the missing factor is $\tilde Q^{*}\tilde Q=\tilde Q^{2}$. The defect is first order in the rapidity, while the time dilation is second order.
 
 **A boost is a change to a moving frame.** The rotor stores half the rapidity, and the sandwich carries the four-position of a world line to its rest frame; the rapidity is additive for collinear boosts. Interpreted physically, the boost is the change of inertial frame, and the rotor is the element that performs it.
 
-**The boost spectrum is the Doppler pair.** As a $2\times2$ matrix the boost rotor is Hermitian of determinant one, and its eigenvalues are $e^{\pm\psi/2}$; their squares $e^{\pm\psi}$ are the red- and blue-shift factors of the frame change. The eigenvectors are the two spinors of the null directions along which the boost slides. Interpreted physically, the boost spectrum is the Doppler factor, and the doubling of the exponent is the two-way light travel.
+**The boost spectrum is the Doppler pair.** As a $2\times2$ matrix the boost rotor is Hermitian of determinant one, and its eigenvalues are $e^{\pm\theta^{\mathrm{rpd}}/2}$; their squares $e^{\pm\theta^{\mathrm{rpd}}}$ are the red- and blue-shift factors of the frame change. The eigenvectors are the two spinors of the null directions along which the boost slides. Interpreted physically, the boost spectrum is the Doppler factor, and the doubling of the exponent is the two-way light travel.
 
 **The boundary of the spectrum interpretation.** The eigenvalues are of the rotor, not of a four-vector, and the observed shift of a wave also depends on its direction. The algebra supplies the factor, not the emission or the observation.
 
 **A boost is a motion, not an automorphism.** The boost preserves the interval and the two sectors, but it does not preserve the product, the centre or the vector subspace. Interpreted physically, a boost is a motion of the form which is not a symmetry of the algebraic structure; a rotation is both, and a boost is only the former. The time axis and the spatial axis are mixed, and the mixing is exactly the failure of multiplicativity.
 
-**The time axis is frame-dependent.** The image of $ie_t$ is a four-vector with a spatial part $\sinh\psi$, and the image of $e_t$ leaves the centre for $\mathbb{M}_{+}$. Interpreted physically, the rest frame's time axis is not invariant; a boost carries it to the four-velocity of the moving frame, and the simultaneity plane tilts. The interval is what survives; the product of two events is not a frame-independent object.
+**The time axis is frame-dependent.** The image of $ie_t$ is a four-vector with a spatial part $\sinh\theta^{\mathrm{rpd}}$, and the image of $e_t$ leaves the centre for $\mathbb{M}_{+}$. Interpreted physically, the rest frame's time axis is not invariant; a boost carries it to the four-velocity of the moving frame, and the simultaneity plane tilts. The interval is what survives; the product of two events is not a frame-independent object.
 
 **Two boosts are not a boost.** The product of two non-collinear boost rotors is a rotor whose polar decomposition has a rotation factor, the Wigner rotation. Interpreted physically, two successive non-collinear boosts are a boost followed by a rotation, and the rotation is the Thomas precession. The set of boosts is not a subgroup; the group is generated by the boosts and the rotations together.
 
@@ -256,7 +256,7 @@ A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halve
 | $\mathrm{U}(1)e_t$ | kernel of the sandwich on the algebra |
 | $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
-| $\tilde U=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$ | boost rotor; Hermitian and norm-one |
+| $\tilde U=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u$ | boost rotor; Hermitian and norm-one |
 | $\rho_v(\tilde Q_3)=v\tilde Q_3v^{*}$ | reflection in $v^{\perp}$; $v$ real spatial unit vector |
 | $imc\,e_t$ | rest four-velocity; $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ |
 | $SO^{+}(1,3)$ | proper orthochronous Lorentz group; the frame group |

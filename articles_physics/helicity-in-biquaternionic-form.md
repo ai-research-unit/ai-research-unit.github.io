@@ -75,10 +75,10 @@ This is the proposition of *Spinors and Dirac Spinors in the Biquaternion Algebr
 
 **One refinement, on the word eigenvector.** The operator is a left multiplication, and on the whole algebra its eigenspaces are not the left ideals but the right ideals $\tilde\Pi_\pm(\vec u_p)\mathbb{B}$, each of complex dimension two. The left ideals are the eigenspaces of the right multiplier $R(i\vec u_p)$, with the value $+1$ on $S_+(\vec u_p)$ and $-1$ on $S_-(\vec u_p)$ (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). A state lives in a left ideal, so the statement above is the physical one: inside its own carrier the state's operator has the two values, and their vectors are the pure state and its companion nilpotent.
 
-**The Dirac carrier.** A Dirac spinor is $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
+**The Dirac carrier.** A Dirac spinor is $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_L+\tilde{Ξ}^{\mathrm{spn}}_R$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
 
 - The two parts are two copies of one carrier, not two different carriers: the index that separates them is a copy index, and in adapted bases the same left multiplication has the same matrix on both.
-- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde\Psi_L$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde\Psi_R$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
+- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde{Ξ}^{\mathrm{spn}}_L$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}^{\mathrm{spn}}_R$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
 
 **Why the mass does not undo the cut.** The mass term is the only term of the Dirac equation that names the other part, and it does so on the right, while the helicity element multiplies on the left (*Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation*, §*The Gradient and the Two Parts*). Left and right multiplications commute, so the mass couples the two parts and leaves the helicity split of each intact. At $m=0$ the parts decouple altogether into two Weyl equations, one per part, and the helicity is then locked to the part.
 
@@ -194,7 +194,7 @@ which is the reality condition of the real slice. For a complexified momentum th
 
 ## The Brackets as the Invariant Pairing
 
-The spinor module carries the invariant symplectic form $\varepsilon(\psi,\chi^{\mathrm{alt}})=\psi^{T}\epsilon\,\chi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
+The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ}^{\mathrm{spn}},\xi^{\mathrm{alt}})=\tilde{Ξ}^{\mathrm{spn}T}\epsilon\,\xi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
 
 $$
 \langle ij\rangle=\lambda_i^{T}\epsilon\,\lambda_j=-\langle ji\rangle,
@@ -248,7 +248,7 @@ The operator, by contrast, is continuous through the limit: it never divides by 
 
 The two words name different things and coincide at one mass.
 
-**Chirality** is the eigenvalue of the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz cells (*Chiral Fermions in the Biquaternion Framework*).
+**Chirality** is the eigenvalue of the chirality cell $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz cells (*Chiral Fermions in the Biquaternion Framework*).
 
 **Helicity** is the eigenvalue of $\lambda$, a projection on the momentum, fixed by the little group and dependent on it.
 
@@ -303,7 +303,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
 | $t'$ | The little-group scaling, $\lambda\mapsto t'\lambda$, $\bar\lambda\mapsto {t'}^{-1}\bar\lambda$; $\lvert t'\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\hbar h$ |
-| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a pure right multiplier; not the helicity |
+| $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a pure right multiplier; not the helicity |
 
 ## Further Reading
 

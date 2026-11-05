@@ -41,10 +41,10 @@ $$
 
 with the intrinsic moment's informational-sector representative $\mu_k\,i\vec e_k\in\mathbb{M}_+$ available when the moment is paired with the spin observable. The gyromagnetic relation is therefore a scalar proportionality between two elements of the *same* vector slot, and in the algebra the question of $g$ is the question of what fixes that scalar.
 
-Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{\Psi}\to \exp(i\alpha)\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
+Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $ϙ$ transforms as $\tilde{Ξ}^{\mathrm{spn}}\to \exp(i\alpha)\tilde{Ξ}^{\mathrm{spn}}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
-\tilde{\Psi} \;\longmapsto\; \tilde u(\theta,\vec u)\,\tilde{\Psi},
+\tilde{Ξ}^{\mathrm{spn}} \;\longmapsto\; \tilde u(\theta,\vec u)\,\tilde{Ξ}^{\mathrm{spn}},
 \qquad
 \tilde u(\theta,\vec u) = \exp\!\left(\frac{\theta}{2}\,\sum_k \vec u_k\vec e_k\right),
 $$
@@ -182,7 +182,7 @@ $$
 \tilde u(\theta + 4\pi,\vec u) = \tilde u(\theta,\vec u).
 $$
 
-A material vector is rotated by conjugation, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\tilde u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\tilde u^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde u\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
+A material vector is rotated by conjugation, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\tilde u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\tilde u^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde u\tilde{Ξ}^{\mathrm{spn}}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
 
 ### The Weights of the Two Couplings
 

@@ -33,15 +33,15 @@ The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quan
 
 ### The Klein–Gordon operator
 
-For a field $\tilde{\Phi}=\chi^{\mathrm{scl}}\,e_t$ taking values in the centre, the Klein–Gordon equation of the companion article is
+For a field $\tilde{Ξ}=\xi^{\mathrm{scl}}\,e_t$ taking values in the centre, the Klein–Gordon equation of the companion article is
 
 $$
-\left(\Box-\mu^2\right)\tilde{\Phi}=0,
+\left(\Box-\mu^2\right)\tilde{Ξ}=0,
 \qquad
 \mu=\frac{mc}{\hbar},
 $$
 
-and because both $\Box$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\chi^{\mathrm{scl}}$. On a plane wave with the material four-wavevector
+and because both $\Box$ and the mass term are central and scalar, the equation is the ordinary complex scalar equation for $\xi^{\mathrm{scl}}$. On a plane wave with the material four-wavevector
 
 $$
 \tilde P=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,
@@ -155,10 +155,10 @@ $$
 a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde R_2)$ the convolution
 
 $$
-\tilde{\Phi}(\tilde{R})=\int G_R(\tilde{R}-\tilde R_2)\,J(\tilde R_2)\,d^3y\,dt'_2
+\tilde{Ξ}(\tilde{R})=\int G_R(\tilde{R}-\tilde R_2)\,J(\tilde R_2)\,d^3y\,dt'_2
 $$
 
-then solves $(\Box-\mu^2)\tilde{\Phi}=-J$, by the same translation-invariance argument as in the massless exercise.
+then solves $(\Box-\mu^2)\tilde{Ξ}=-J$, by the same translation-invariance argument as in the massless exercise.
 
 ### The angular integral and its Bessel reduction
 
@@ -297,7 +297,7 @@ $$
 and normalize the field so that the field commutator, of which $G_C$ is the kernel, reads
 
 $$
-\left[\,\tilde{\Phi}(\tilde{R}),\,\tilde{\Phi}^{*}(\tilde R_2)\,\right]
+\left[\,\tilde{Ξ}(\tilde{R}),\,\tilde{Ξ}^{*}(\tilde R_2)\,\right]
 =G_C(\tilde{R}-\tilde R_2)\,e_t .
 $$
 
@@ -337,14 +337,14 @@ Its frequency integral was given above; its position-space content is the time-o
 
 $$
 G_F(\tilde{R})
-=\mathrm{H}^{\mathrm{hvs}}(t')\,\langle0|\tilde{\Phi}(\tilde{R})\tilde{\Phi}^{*}(0)|0\rangle
-+\mathrm{H}^{\mathrm{hvs}}(-t')\,\langle0|\tilde{\Phi}^{*}(0)\tilde{\Phi}(\tilde{R})|0\rangle,
+=\mathrm{H}^{\mathrm{hvs}}(t')\,\langle0|\tilde{Ξ}(\tilde{R})\tilde{Ξ}^{*}(0)|0\rangle
++\mathrm{H}^{\mathrm{hvs}}(-t')\,\langle0|\tilde{Ξ}^{*}(0)\tilde{Ξ}(\tilde{R})|0\rangle,
 $$
 
 which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $t'$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
 
 $$
-\boxed{\;\langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde R_2)\,|0\rangle
+\boxed{\;\langle0|\,T\,\tilde{Ξ}(\tilde{R})\,\tilde{Ξ}^{*}(\tilde R_2)\,|0\rangle
 =G_F(\tilde{R}-\tilde R_2)\,e_t\;},
 $$
 
@@ -404,7 +404,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 5. **The propagator on a non-constant background.** The closed forms above hold for constant $\epsilon,\mu$ and hence constant $c$. In a medium whose parameters vary, or in a background field, the operator has variable coefficients and these free kernels are only the leading geometric-optics approximation. The framework's local complex structure makes $c$ a field, and the form of the kernel in that setting is not settled here.
 
-6. **The composite scalar's kernel.** The structural article records that a scalar can also be built as a pairing of two module elements, through the symplectic form $\varepsilon(\psi,\chi)$ or the mixed pairing $\mathfrak{b}(\psi,\chi)$. The Green's function of a composite scalar is not the free kernel of this article, and whether the composite propagator inherits the free kernel's cone structure or acquires a different one is not considered here.
+6. **The composite scalar's kernel.** The structural article records that a scalar can also be built as a pairing of two module elements, through the symplectic form $\varepsilon(\tilde{Ξ}^{\mathrm{spn}},\xi)$ or the mixed pairing $\mathfrak{b}(\tilde{Ξ}^{\mathrm{spn}},\xi)$. The Green's function of a composite scalar is not the free kernel of this article, and whether the composite propagator inherits the free kernel's cone structure or acquires a different one is not considered here.
 
 ## Summary
 
@@ -421,7 +421,7 @@ $$
 
 in natural units. The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(t'-r)$ by the light-cone Jacobian $\delta(x^2)=\frac{1}{2r}\delta(t'-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $\mu\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.
 
-The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{\Phi},\tilde{\Phi}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{\Phi}(x)\tilde{\Phi}^{*}(y)|0\rangle=G_F(x-y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{\mu}{4\pi^2\sqrt{\rho_E^2}}K_1(\mu\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.
+The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{Ξ},\tilde{Ξ}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{Ξ}(x)\tilde{Ξ}^{*}(y)|0\rangle=G_F(x-y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{\mu}{4\pi^2\sqrt{\rho_E^2}}K_1(\mu\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.
 
 The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $\langle\tilde{R}\rangle_{\natural}=0$ of the material sector and the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.
 

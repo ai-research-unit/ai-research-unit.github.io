@@ -13,12 +13,12 @@ $$
 which is the Born rule. The accessible information is the classical mutual information of this channel, maximized over measurements; the Holevo quantity is the entropy difference
 
 $$
-\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
+\xi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x),
 \qquad
 \tilde{Ϛ}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_x ,
 $$
 
-and the Holevo bound is $I_{\mathrm{acc}}\leq\chi$.
+and the Holevo bound is $I_{\mathrm{acc}}\leq\xi$.
 
 The biquaternion interpretation locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its biquaternion norm, $S(\tilde{Ϛ}^{\natural}) = H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$, where $H(N)=h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$, so the Holevo quantity of a pure-state ensemble is a single norm function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.
 
@@ -83,7 +83,7 @@ where the entropies are the Shannon entropies of the distributions $p_x$, $p_y$,
 The **Holevo quantity** of the ensemble is
 
 $$
-\chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x).
+\xi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x).
 $$
 
 It is a difference of two entropies of states in $\mathbb{M}_+$. It is non-negative by the concavity of the entropy: the entropy of the average is at least the average of the entropies,
@@ -95,7 +95,7 @@ $$
 which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,
 
 $$
-\boxed{\;\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+\boxed{\;\xi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
 = H\bigl(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural}\bigr)\;},
 $$
 
@@ -121,7 +121,7 @@ the first by block diagonality and the trace property, and the third because tra
 $$
 I(X:Q) = S(\rho_X) + S(\rho_Q) - S(\rho_{XQ})
 = H(X) + S(\tilde{Ϛ}^{\natural}) - H(X) - \sum_x p_x S(\tilde{Ϛ}_x)
-= \chi.
+= \xi.
 $$
 
 This identity is the conceptual core: **the Holevo quantity is the mutual information between the source index and the quantum carrier, before any measurement is made.** A measurement is a further processing of the quantum system, and the Holevo bound says that it cannot increase this information. The register is bookkeeping external to $\mathbb{B}$; the quantum part of the state is an element of $\mathbb{M}_+$, and the identity uses only the trace and the block structure.
@@ -131,10 +131,10 @@ This identity is the conceptual core: **the Holevo quantity is the mutual inform
 Because the register entropy is at most $\log|\mathcal{X}|$ and the quantum entropy at most $\log\dim_{\mathbb{C}}S = \log 2$, the Holevo quantity obeys
 
 $$
-\boxed{\;0 \;\leq\; \chi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\}\;}.
+\boxed{\;0 \;\leq\; \xi \;\leq\; \min\bigl\{H(X),\ \log 2\bigr\}\;}.
 $$
 
-The lower bound is attained when the average state equals a pure state, so that the ensemble is trivial; the upper bound $\log2$ is the qubit's one-bit ceiling and is attained by an ensemble of two orthogonal pure states with equal weights, as the examples below show. The bound $\chi\leq H(X)$ is the statement that the source index's own entropy limits the information carried, and it is an instance of $I(X:Q)\leq H(X)$.
+The lower bound is attained when the average state equals a pure state, so that the ensemble is trivial; the upper bound $\log2$ is the qubit's one-bit ceiling and is attained by an ensemble of two orthogonal pure states with equal weights, as the examples below show. The bound $\xi\leq H(X)$ is the statement that the source index's own entropy limits the information carried, and it is an instance of $I(X:Q)\leq H(X)$.
 
 ## The Holevo Bound
 
@@ -143,13 +143,13 @@ The lower bound is attained when the average state equals a pure state, so that 
 For every ensemble $\mathcal{E}$ and every measurement $\{\tilde{E}_y\}$,
 
 $$
-\boxed{\;I(X:Y) \;\leq\; \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x)\;},
+\boxed{\;I(X:Y) \;\leq\; \xi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x\,S(\tilde{Ϛ}_x)\;},
 $$
 
 and therefore
 
 $$
-I_{\mathrm{acc}}(\mathcal{E}) = \max_{\{\tilde{E}_y\}} I(X:Y) \;\leq\; \chi(\mathcal{E}) .
+I_{\mathrm{acc}}(\mathcal{E}) = \max_{\{\tilde{E}_y\}} I(X:Y) \;\leq\; \xi(\mathcal{E}) .
 $$
 
 This is the Holevo bound, sometimes called the Holevo–Schumacher–Westmoreland information bound. Its content is that no measurement can extract more classical information about a quantum ensemble than the Holevo quantity, which is computed from the ensemble itself and involves no optimization over measurements.
@@ -161,31 +161,31 @@ The standard proof has two steps, both of which are theorems about entropy under
 **Step 1: the measurement is a quantum channel.** A measurement with POVM $\{\tilde{E}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde{K}_y = \tilde{E}_y^{1/2}$ gives $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ and
 
 $$
-\Phi(\tilde{Ϛ}) = \sum_y \mathrm{Tr}\bigl(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}\bigr)\,|y\rangle\langle y| ,
+Ξ(\tilde{Ϛ}) = \sum_y \mathrm{Tr}\bigl(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}\bigr)\,|y\rangle\langle y| ,
 $$
 
-a channel from $\mathbb{M}_+$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $\Phi(\tilde{Ϛ}^{\natural})$.
+a channel from $\mathbb{M}_+$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $Ξ(\tilde{Ϛ}^{\natural})$.
 
-**Step 2: the data-processing inequality.** For any channel $\Phi$ and any state $\rho_{XQ}$ with a classical register,
+**Step 2: the data-processing inequality.** For any channel $Ξ$ and any state $\rho_{XQ}$ with a classical register,
 
 $$
 I(X:Y) \;\leq\; I(X:Q),
 $$
 
-the **data-processing inequality** for the quantum mutual information: processing the quantum system cannot increase the information it shares with the register. Applying it to the state of the previous section and using $I(X:Q)=\chi$ gives the bound.
+the **data-processing inequality** for the quantum mutual information: processing the quantum system cannot increase the information it shares with the register. Applying it to the state of the previous section and using $I(X:Q)=\xi$ gives the bound.
 
-Both steps are standard. The first is the Stinespring form of a measurement, developed in this subcategory in the article on quantum channels; the second is a theorem about the relative entropy, whose standard form is that $S(\Phi(\rho)\|\Phi(\sigma))\leq S(\rho\|\sigma)$ for a trace-preserving completely positive map, together with the identity $I(X:Q) = S(\rho_{XQ}\|\rho_X\otimes\rho_Q)$. The biquaternion transcription changes the vocabulary — states and effects are elements of $\mathbb{M}_+$, the channel is a completely positive map on $\mathbb{B}\cong M_2(\mathbb{C})$ — but not the content.
+Both steps are standard. The first is the Stinespring form of a measurement, developed in this subcategory in the article on quantum channels; the second is a theorem about the relative entropy, whose standard form is that $S(Ξ(\rho)\|Ξ(\sigma))\leq S(\rho\|\sigma)$ for a trace-preserving completely positive map, together with the identity $I(X:Q) = S(\rho_{XQ}\|\rho_X\otimes\rho_Q)$. The biquaternion transcription changes the vocabulary — states and effects are elements of $\mathbb{M}_+$, the channel is a completely positive map on $\mathbb{B}\cong M_2(\mathbb{C})$ — but not the content.
 
 ### The biquaternion reading of the bound
 
 Collecting the ingredients, the Holevo bound in the framework says:
 
 - the **ensemble** is a convex decomposition of the average state in $\mathbb{M}_+$;
-- the **Holevo quantity** is the concave functional $\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ on that decomposition, which for pure-state ensembles is the biquaternion-norm function $H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$;
+- the **Holevo quantity** is the concave functional $\xi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ on that decomposition, which for pure-state ensembles is the biquaternion-norm function $H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$;
 - the **measurement** is a channel from $\mathbb{M}_+$ onto a commutative subalgebra generated by idempotents;
 - the **bound** is the monotonicity of the quantum mutual information under that channel.
 
-In this interpretation the Holevo quantity measures how much of the average state's mixedness is *classical* — attributable to the ensemble weights rather than to the individual states. If the ensemble states are pure, all of the average state's entropy is classical and $\chi = S(\tilde{Ϛ}^{\natural})$; if the states are themselves mixed, part of the average entropy is quantum, and that part is unavailable to any measurement.
+In this interpretation the Holevo quantity measures how much of the average state's mixedness is *classical* — attributable to the ensemble weights rather than to the individual states. If the ensemble states are pure, all of the average state's entropy is classical and $\xi = S(\tilde{Ϛ}^{\natural})$; if the states are themselves mixed, part of the average entropy is quantum, and that part is unavailable to any measurement.
 
 ## Worked Examples
 
@@ -201,23 +201,23 @@ $$
 The average state is $\tilde{Ϛ}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so
 
 $$
-\chi = S(\tfrac12 e_t) = \log 2 .
+\xi = S(\tfrac12 e_t) = \log 2 .
 $$
 
-The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_z)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \chi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
+The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_z)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \xi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
 
 ### Two non-orthogonal pure states
 
 Let the ensemble be two pure states with equal weights and overlap
 
 $$
-c = \bigl|\langle \psi_0|\psi_1\rangle\bigr| \in [0,1] .
+c = \bigl|\langle \tilde{Ξ}^{\mathrm{spn}}_0|\tilde{Ξ}^{\mathrm{spn}}_1\rangle\bigr| \in [0,1] .
 $$
 
 The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_t$ and
 
 $$
-\chi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+c}{2}\right).
+\xi = S(\tilde{Ϛ}^{\natural}) = h\!\left(\frac{1+c}{2}\right).
 $$
 
 The accessible information of this ensemble is known: for two pure states with equal priors the optimal measurement is the square-root measurement, which here coincides in value with the Helstrom minimum-error measurement, and it gives
@@ -228,7 +228,7 @@ $$
 
 The bound is not saturated for $0<c<1$. The following values were obtained by explicit computation of the two expressions; they use the natural logarithm, so the ceiling is $\log 2 = 0.693147$.
 
-| $c$ | $\chi = h\!\left(\frac{1+c}{2}\right)$ | $I_{\mathrm{acc}} = \log2 - h\!\left(\frac{1-\sqrt{1-c^2}}{2}\right)$ |
+| $c$ | $\xi = h\!\left(\frac{1+c}{2}\right)$ | $I_{\mathrm{acc}} = \log2 - h\!\left(\frac{1-\sqrt{1-c^2}}{2}\right)$ |
 |---|---|---|
 | $0.0$ | $0.693147$ | $0.693147$ |
 | $0.3$ | $0.647447$ | $0.583538$ |
@@ -248,10 +248,10 @@ $$
 The average is $\tfrac12 e_t$, so $S(\tilde{Ϛ}^{\natural}) = \log2$, while each state has entropy $h\!\left(\tfrac{1+r}{2}\right)$. Hence
 
 $$
-\chi = \log 2 - h\!\left(\frac{1+r}{2}\right),
+\xi = \log 2 - h\!\left(\frac{1+r}{2}\right),
 $$
 
-which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at $r=1$, where the members are pure and orthogonal, and vanishes at $r=0$, where both members are maximally mixed and the ensemble carries no information about the index at all. This shows the two contributions to $\chi$ explicitly: the biquaternion norm of the average state supplies the first term, and the biquaternion norms of the members supply the subtracted second term.
+which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at $r=1$, where the members are pure and orthogonal, and vanishes at $r=0$, where both members are maximally mixed and the ensemble carries no information about the index at all. This shows the two contributions to $\xi$ explicitly: the biquaternion norm of the average state supplies the first term, and the biquaternion norms of the members supply the subtracted second term.
 
 ## What Is Algebraic and What Is Standard
 
@@ -259,7 +259,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 - The ensemble and the measurement are both families of positive elements of $\mathbb{M}_+$, paired by the trace formula; the outcome probabilities are the Born rule.
 - The average state is an element of $\mathbb{M}_+$, and for a qubit its entropy is a function of its biquaternion norm, so the Holevo quantity of a pure-state ensemble is a biquaternion-norm function.
-- The Holevo quantity is the quantum mutual information of the classical-quantum state, $I(X:Q)=\chi$; the measurement is a channel onto a commutative subalgebra, and the bound is data processing.
+- The Holevo quantity is the quantum mutual information of the classical-quantum state, $I(X:Q)=\xi$; the measurement is a channel onto a commutative subalgebra, and the bound is data processing.
 - The maximal Holevo quantity of a qubit is $\log2$, attained by an orthogonal pure-state ensemble of maximal entropy average.
 
 **Standard, and imported.**
@@ -273,7 +273,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 **1. A biquaternion-norm inequality.** The Holevo quantity of a pure-state ensemble is $H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$, and the bound is $I_{\mathrm{acc}}\leq H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the trace pairing, without passing through the general data-processing inequality?
 
-**2. Many-qubit ensembles.** For $n$ qubits the average state lives in $\mathbb{M}_+^{\otimes n}$ and its entropy is no longer a function of a single norm. What replaces the biquaternion-norm interpretation of $\chi$, and is there a tensor-product biquaternion norm that controls it?
+**2. Many-qubit ensembles.** For $n$ qubits the average state lives in $\mathbb{M}_+^{\otimes n}$ and its entropy is no longer a function of a single norm. What replaces the biquaternion-norm interpretation of $\xi$, and is there a tensor-product biquaternion norm that controls it?
 
 **3. The role of entanglement.** The Holevo bound applies to an ensemble of *separable* states with no shared entanglement. With a shared entangled resource the accessible information can exceed the bound — this is the content of superdense coding — and the framework's algebraic account of that resource is a separate question.
 
@@ -286,16 +286,16 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised Hermitian form, read through the trace $p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
 
 $$
-\chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
+\xi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
 $$
 
 non-negative by concavity, equal to the quantum mutual information $I(X:Q)$ of the classical-quantum state, and equal for a pure-state ensemble to the entropy of the average state, which for a qubit is the biquaternion-norm function $H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$. The **Holevo bound** is
 
 $$
-I_{\mathrm{acc}}(\mathcal{E}) \;\leq\; \chi(\mathcal{E}) \;\leq\; \log 2 ,
+I_{\mathrm{acc}}(\mathcal{E}) \;\leq\; \xi(\mathcal{E}) \;\leq\; \log 2 ,
 $$
 
-its proof being the data-processing inequality applied to the measurement channel. The bound is saturated by an orthogonal pure-state ensemble, where $\chi = I_{\mathrm{acc}} = \log2$; for two non-orthogonal pure states with overlap $c$ it is not saturated, with $\chi = h\!\left(\tfrac{1+c}{2}\right)$ and $I_{\mathrm{acc}} = \log2 - h\!\left(\tfrac{1-\sqrt{1-c^2}}{2}\right)$. The framework locates the ensemble, the measurement, and the bound in the algebra of $\mathbb{M}_+$; the numerical content is the standard quantum information theory.
+its proof being the data-processing inequality applied to the measurement channel. The bound is saturated by an orthogonal pure-state ensemble, where $\xi = I_{\mathrm{acc}} = \log2$; for two non-orthogonal pure states with overlap $c$ it is not saturated, with $\xi = h\!\left(\tfrac{1+c}{2}\right)$ and $I_{\mathrm{acc}} = \log2 - h\!\left(\tfrac{1-\sqrt{1-c^2}}{2}\right)$. The framework locates the ensemble, the measurement, and the bound in the algebra of $\mathbb{M}_+$; the numerical content is the standard quantum information theory.
 
 ## Summary of Notation
 
@@ -309,14 +309,14 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\tilde{E}_y \geq 0$, $\sum_y\tilde{E}_y = e_t$ | POVM (effects) |
 | $p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_x\tilde{E}_y^{*})$ | Outcome probability (Born rule) |
 | $I_{\mathrm{acc}} = \max_{\{\tilde{E}_y\}} I(X:Y)$ | Accessible information |
-| $\chi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ | Holevo quantity |
+| $\xi = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x)$ | Holevo quantity |
 | $S(\tilde{Ϛ}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
 | $H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$ | Entropy as a function of the biquaternion norm |
 | $\langle\tilde{Ϛ}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$ | Biquaternion norm of the average state |
-| $\chi = H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
-| $\rho_{XQ} = \sum_x p_x|x\rangle_{*}\langle x|\otimes\tilde{Ϛ}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
-| $I(X:Y)\leq\chi\leq\log2$ | Holevo bound and qubit ceiling |
-| $c = |\langle\psi_0|\psi_1\rangle_{*}|$ | Overlap of two pure states |
+| $\xi = H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
+| $\rho_{XQ} = \sum_x p_x|x\rangle_{*}\langle x|\otimes\tilde{Ϛ}_x$ | Classical-quantum state, $I(X:Q)=\xi$ |
+| $I(X:Y)\leq\xi\leq\log2$ | Holevo bound and qubit ceiling |
+| $c = |\langle\tilde{Ξ}^{\mathrm{spn}}_0|\tilde{Ξ}^{\mathrm{spn}}_1\rangle_{*}|$ | Overlap of two pure states |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading

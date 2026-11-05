@@ -60,10 +60,10 @@ $$
 
 which for invertible $L,R$ and $\lambda\neq0$ is again a conformal map, now of complexified Minkowski space $\mathbb{C}M$. The interesting case is the one the source calls **degenerate**: when $\det L=0$ (or $\det R=0$) the scale factor vanishes and every differential $dF$ is a singular matrix, its values lying in the **null divisors** of the algebra — the complex null cone. These degenerate conformal maps are the ones the programme identifies with physical fields, and complexification is what makes the class large.
 
-In components the condition reads $\nabla_{AB}F_{CD}=L_{CA}R_{BD}$. Fixing a pair of function indices and writing $F_{CD}=\Sigma$, $L_{CA}=\psi_A$, $R_{BD}=\psi_B$ gives
+In components the condition reads $\nabla_{AB}F_{CD}=L_{CA}R_{BD}$. Fixing a pair of function indices and writing $F_{CD}=\Sigma$, $L_{CA}=\tilde{Ξ}^{\mathrm{spn}}_A$, $R_{BD}=\tilde{Ξ}^{\mathrm{spn}}_B$ gives
 
 $$
-\nabla_{AB}\Sigma = \psi_A\psi_B .
+\nabla_{AB}\Sigma = \tilde{Ξ}^{\mathrm{spn}}_A\tilde{Ξ}^{\mathrm{spn}}_B .
 $$
 
 The matrix of derivatives of $\Sigma$ is therefore a product of a column and a row — it has rank one — so its determinant vanishes identically:
@@ -92,13 +92,13 @@ the **complex eikonal equation** of complexified Minkowski space. The verificati
 
 ## The Twistor Solution of the Complex Eikonal
 
-The complex eikonal is solved algebraically, and the solution introduces the twistor. In the factorisation $\nabla_{AB}\Sigma=\psi_A\psi_B$, choose one spinor, say $\psi=\{\psi_B\}$, and define the second by the Klein–Penrose incidence relation
+The complex eikonal is solved algebraically, and the solution introduces the twistor. In the factorisation $\nabla_{AB}\Sigma=\tilde{Ξ}^{\mathrm{spn}}_A\tilde{Ξ}^{\mathrm{spn}}_B$, choose one spinor, say $\tilde{Ξ}^{\mathrm{spn}}=\{\tilde{Ξ}^{\mathrm{spn}}_B\}$, and define the second by the Klein–Penrose incidence relation
 
 $$
-\tau = Z\psi , \qquad \tau_A = \sum_B Z_{AB}\psi_B .
+\tau = Z\tilde{Ξ}^{\mathrm{spn}} , \qquad \tau_A = \sum_B Z_{AB}\tilde{Ξ}^{\mathrm{spn}}_B .
 $$
 
-The pair $\{\psi,\tau\}$ is a (projective) twistor of $\mathbb{C}M$ — the same incidence relation the corpus writes in *Twistor Theory and Biquaternions* and *Helicity in Biquaternionic Form*, with the modulus of the projective equivalence being the freedom to rescale $\psi$. Choosing the gauge $\psi_0=1$ and writing $G=\psi_1/\psi_0$ gives the three projective components
+The pair $\{\tilde{Ξ}^{\mathrm{spn}},\tau\}$ is a (projective) twistor of $\mathbb{C}M$ — the same incidence relation the corpus writes in *Twistor Theory and Biquaternions* and *Helicity in Biquaternionic Form*, with the modulus of the projective equivalence being the freedom to rescale $\tilde{Ξ}^{\mathrm{spn}}$. Choosing the gauge $\tilde{Ξ}^{\mathrm{spn}}_0=1$ and writing $G=\tilde{Ξ}^{\mathrm{spn}}_1/\tilde{Ξ}^{\mathrm{spn}}_0$ gives the three projective components
 
 $$
 G,\qquad \kappa_0 = wG+\upsilon,\qquad \kappa_1 = vG+p .
@@ -139,26 +139,26 @@ whose product is the same $G\Pi_1\Pi_2$, so the function $\Pi$ of the coordinate
 The physically relevant class of differentiable functions is obtained by a **spinor splitting** of the two-sided condition. Writing the function matrix as $F=\{\eta_1,\eta_2\}$ and the right semi-derivative as $R=\{\zeta_1,\zeta_2\}$ reduces the matrix condition to two equations of the same type,
 
 $$
-d\eta_a = \Phi\, dZ\, \zeta_a , \qquad a=1,2 ,
+d\eta_a = Ξ\, dZ\, \zeta_a , \qquad a=1,2 ,
 $$
 
-with a common field $\Phi$ (the left semi-derivative) transforming as a complex four-vector and $\eta,\zeta$ as $SL(2,\mathbb{C})$-spinors. Every solution of the full condition can be built from a solution of a **single** such spinor system with constant proportionality between the two pairs, so the physically nontrivial solutions all come from the **fundamental spinor system**
+with a common field $Ξ$ (the left semi-derivative) transforming as a complex four-vector and $\eta,\zeta$ as $SL(2,\mathbb{C})$-spinors. Every solution of the full condition can be built from a solution of a **single** such spinor system with constant proportionality between the two pairs, so the physically nontrivial solutions all come from the **fundamental spinor system**
 
 $$
-d\eta = \Phi\, dZ\, \zeta .
+d\eta = Ξ\, dZ\, \zeta .
 $$
 
-On the real slice $Z\mapsto X=X^{\dagger}$ with the Minkowski metric this is the **generating system of equations** (GSE) of the programme. It is a system of eight differential equations for six unknown functions — the two spinor components and the four components of $\Phi$ — and is therefore **over-determined**, which is the source of everything that follows.
+On the real slice $Z\mapsto X=X^{\dagger}$ with the Minkowski metric this is the **generating system of equations** (GSE) of the programme. It is a system of eight differential equations for six unknown functions — the two spinor components and the four components of $Ξ$ — and is therefore **over-determined**, which is the source of everything that follows.
 
-The over-determination is not a defect but the mechanism. Differentiating the equation and using it again gives an integrability condition whose natural object is a connection. The field $\Phi$ defines a $\mathbb{B}$-valued connection one-form
+The over-determination is not a defect but the mechanism. Differentiating the equation and using it again gives an integrability condition whose natural object is a connection. The field $Ξ$ defines a $\mathbb{B}$-valued connection one-form
 
 $$
-\Omega = \Psi\, dZ ,
+\Omega = \tilde{Ξ}^{\mathrm{spn}}\, dZ ,
 $$
 
-under which the spinor is covariantly constant, $d\zeta=\Omega\zeta$. This connection corresponds in the four-vector representation to an affine connection of Weyl–Cartan type, in which the Weyl non-metricity vector and the pseudotrace of the torsion are both expressed through $\Psi$. Exterior differentiation gives the integrability condition $R\zeta\equiv(d\Omega-\Omega\wedge\Omega)\zeta=0$, with the curvature two-form $R$.
+under which the spinor is covariantly constant, $d\zeta=\Omega\zeta$. This connection corresponds in the four-vector representation to an affine connection of Weyl–Cartan type, in which the Weyl non-metricity vector and the pseudotrace of the torsion are both expressed through $\tilde{Ξ}^{\mathrm{spn}}$. Exterior differentiation gives the integrability condition $R\zeta\equiv(d\Omega-\Omega\wedge\Omega)\zeta=0$, with the curvature two-form $R$.
 
-The curvature is not zero. For a connection of this special form it is $R=(d\Psi-\Psi dZ\Psi)\wedge dZ$, and requiring $R\zeta=0$ for the non-trivial spinor forces the **self-dual part of the curvature to vanish**. On the trace part, the electromagnetic field, the condition is written $\vec N=\vec E+i\vec H=0$,
+The curvature is not zero. For a connection of this special form it is $R=(d\tilde{Ξ}^{\mathrm{spn}}-\tilde{Ξ}^{\mathrm{spn}} dZ\tilde{Ξ}^{\mathrm{spn}})\wedge dZ$, and requiring $R\zeta=0$ for the non-trivial spinor forces the **self-dual part of the curvature to vanish**. On the trace part, the electromagnetic field, the condition is written $\vec N=\vec E+i\vec H=0$,
 
 $$
 \boxed{\;\vec N = 0\;},
@@ -166,7 +166,7 @@ $$
 
 on the solutions of the GSE — a property the source calls **weak (anti)self-duality**. The Bianchi identity then implies the free equations for the two pieces of the curvature: Maxwell's equations for its trace part, the electromagnetic field, and Yang–Mills equations for its trace-free part. In this sense the linear field equations are not postulated; they are the **integrability conditions of the primary nonlinear system**. Because the field is $\mathbb{C}$-valued but self-dual, it reduces to an ordinary real electromagnetic field by the algebraic relations $\Im\vec H=\Re\vec E$ and $\Im\vec E=-\Re\vec H$, which is a recomputation-verified equivalence, so the number of degrees of freedom is that of the real field.
 
-Two further features are worth recording because they differ from the standard theory. The GSE is not invariant under the ordinary $\mathrm{U}(1)$ gauge transformations $\zeta\mapsto \exp(i\alpha)\zeta$, $\Psi\mapsto\Psi-i\nabla\ln\alpha$; it has instead a **weak gauge symmetry** in which the parameter depends on the coordinates only through the twistor components of the transformed spinor. And the trace-free gauge field is not independent of the electromagnetic one and the spinor; it is expressible through them, and its real and imaginary parts separately do not obey free Yang–Mills equations, because those are nonlinear.
+Two further features are worth recording because they differ from the standard theory. The GSE is not invariant under the ordinary $\mathrm{U}(1)$ gauge transformations $\zeta\mapsto \exp(i\alpha)\zeta$, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}}-i\nabla\ln\alpha$; it has instead a **weak gauge symmetry** in which the parameter depends on the coordinates only through the twistor components of the transformed spinor. And the trace-free gauge field is not independent of the electromagnetic one and the spinor; it is expressible through them, and its real and imaginary parts separately do not obey free Yang–Mills equations, because those are nonlinear.
 
 **Physical interpretation.** This is the part of the programme most directly comparable with the corpus's gauge articles. The corpus derives the Maxwell and Yang–Mills equations from a **postulated** gauge principle, with the connection and curvature put in by hand (*The Gauge Principle in Biquaternionic Form*, *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*). The programme reverses the direction of explanation: the connection and its self-duality are forced by the over-determined nonlinear system, and the linear gauge equations are consequences. Whether that reversal is an advance or a reformulation is a judgement the corpus does not make; it is recorded as the programme's structural claim.
 
@@ -175,7 +175,7 @@ Two further features are worth recording because they differ from the standard t
 The programme's first full presentation, Kassandrov's 1995 paper *Biquaternion Electrodynamics and the Weyl–Cartan Geometry of Space-Time*, states the same construction geometrically, and it carries three results the later survey only recalls. Its setting is the spinor form of the primary equation. The fundamental spinor system is a parallel-transport condition,
 
 $$
-\partial/\partial x_\nu\,\psi = \Gamma_\nu(x)\,\psi(x), \qquad \Gamma_\nu(x) = G(x)\,\varsigma_\nu ,
+\partial/\partial x_\nu\,\tilde{Ξ}^{\mathrm{spn}} = \Gamma_\nu(x)\,\tilde{Ξ}^{\mathrm{spn}}(x), \qquad \Gamma_\nu(x) = G(x)\,\varsigma_\nu ,
 $$
 
 whose $\Gamma_\nu$ is a two-spinor connection of a special type: it is built from the field $G$ alone. (The source's basis is $\sigma_\nu$; it is written $\varsigma_\nu$ here because $\sigma$ is already the principal invariant of the complex three-space below.) Its opening geometric observation is Clifford-theoretic. The biquaternion algebra is the Clifford algebra $\mathrm{Cl}_{3,0}$ — the corpus's own identification, in *The Number Systems as Clifford Algebras* — of real dimension eight, and the source argues that it, and not the sixteen-dimensional $\mathrm{Cl}_{1,3}$, is the natural space-time algebra: the reduction from the full Clifford algebra to a physical four-dimensional space is, in its word, voluntaristic, and the signature of the generator space may be chosen in more than one way. (The corpus's Clifford article makes the same identification and records the competing labelling; what the source adds is the argument for $\mathrm{Cl}_{3,0}$ as primary rather than as the even part of $\mathrm{Cl}_{1,3}$.)
@@ -186,7 +186,7 @@ $$
 \Gamma_{\mu\nu\rho}(x) = 2\bigl(A_\nu\delta_{\mu\rho} + A_\rho\delta_{\mu\nu} - A_\mu\delta_{\nu\rho} - i\,\varepsilon_{\mu\nu\rho\alpha}A_\alpha\bigr),
 $$
 
-where $A_\mu = 2G_\mu$ is the electromagnetic four-potential identified in the preceding section and the potential fixes the whole connection: its Weyl part and its torsion alike. In this language the integrability condition of the spinor equation is $\mathrm{Ric}_{\mu\nu}\psi = 0$ with $\mathrm{Ric}_{\mu\nu} = \tfrac12\left(\partial/\partial x_\mu\,\Gamma_\nu-\partial/\partial x_\nu\,\Gamma_\mu\right) - [\Gamma_\mu,\Gamma_\nu]$, and the weak self-duality of the preceding section is the statement that the self-dual part of $\mathrm{Ric}_{\mu\nu}$ vanishes.
+where $A_\mu = 2G_\mu$ is the electromagnetic four-potential identified in the preceding section and the potential fixes the whole connection: its Weyl part and its torsion alike. In this language the integrability condition of the spinor equation is $\mathrm{Ric}_{\mu\nu}\tilde{Ξ}^{\mathrm{spn}} = 0$ with $\mathrm{Ric}_{\mu\nu} = \tfrac12\left(\partial/\partial x_\mu\,\Gamma_\nu-\partial/\partial x_\nu\,\Gamma_\mu\right) - [\Gamma_\mu,\Gamma_\nu]$, and the weak self-duality of the preceding section is the statement that the self-dual part of $\mathrm{Ric}_{\mu\nu}$ vanishes.
 
 **The $*$-unitary field, and why the geometry is real.** The connection just written is complex. Squaring the matrix field to the *$*$-unitary field* $\mathcal{U}(x)=F(x)F^{*}(x)$ replaces it by a real one. If $F$ obeys the covariant-constancy condition then $\mathcal{U}$ obeys the same-shaped condition,
 
@@ -277,10 +277,10 @@ the case $c=0$, $b=\tfrac43$, $a=\tfrac53$ giving $\mathrm{diag}(-\tfrac{16}{9},
 
 **What the coincidence then amounts to.** It is the statement that in the rest frame of the unit field the trace form of the structure constants is the **Euclidean** metric. That is the same content as the flat case of $g^{\mathrm{eff}}=\mathrm{diag}(1,1,1,1)$ recorded in the paragraph above, so it is not a second, independent derivation of the effective metric: $C$ is built from $g$ and $E$, and $g^*$ returns them in one particular frame. Whether an added term built from $E$, $g$ and $\varepsilon$ restores the identity for tilted $E$ the note does not ask, and if one exists the computation above says it must be quadratic in the spatial part of $E$. The part of the reading that survives is structural and does not depend on the identity: $g^{\mathrm{eff}}$ is the metric the connection below is built from, while $g^*$ is computed from the multiplication table alone. What does not survive is the claim that the same tensor arrives twice for a general unit field. This is a mathematical identity in one frame, and not a dynamical statement: nothing in the note makes $g^{\mathrm{eff}}$ the physical metric, and nothing in it selects $E$.
 
-**The induced connection, and its non-metricity.** The note's remaining new ingredient is the curved form of the differentiability condition. Where the flat case writes $dF=\Phi(X)\circ dX\circ F(X)$ with the ordinary differential, the curved case writes
+**The induced connection, and its non-metricity.** The note's remaining new ingredient is the curved form of the differentiability condition. Where the flat case writes $dF=Ξ(X)\circ dX\circ F(X)$ with the ordinary differential, the curved case writes
 
 $$
-\mathrm{D}F = \Phi(Z)\circ dX\circ F(Z) ,
+\mathrm{D}F = Ξ(Z)\circ dX\circ F(Z) ,
 $$
 
 with $\mathrm{D}$ the covariant differential with respect to $g$ — that is, with respect to the Levi-Civita connection $\gamma$ — and then, exactly as in the flat case, the condition says that a vector field is **covariantly constant** with respect to an induced connection $\Gamma$, which splits as
@@ -384,24 +384,24 @@ $$
 for every holomorphic $F$. Take the spinor from the pair $(\upsilon,w)$ — a different representation of the field from the $\ln G$ one above, which uses $(\upsilon,p)$, $(w,p)$ and $(v,w)$, so the two displays must not be read as the same components:
 
 $$
-\psi_{\upsilon\upsilon}=\frac{\partial^2F}{\partial\upsilon^2},\qquad \psi_{\upsilon w}=\frac{\partial^2F}{\partial w\,\partial\upsilon},\qquad \psi_{ww}=\frac{\partial^2F}{\partial w^2} .
+\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon}=\frac{\partial^2F}{\partial\upsilon^2},\qquad \tilde{Ξ}^{\mathrm{spn}}_{\upsilon w}=\frac{\partial^2F}{\partial w\,\partial\upsilon},\qquad \tilde{Ξ}^{\mathrm{spn}}_{ww}=\frac{\partial^2F}{\partial w^2} .
 $$
 
 The alignment condition is then the vanishing of
 
 $$
-\psi_{ww}-2G\,\psi_{\upsilon w}+G^2\psi_{\upsilon\upsilon}=\mathcal{D}^2F ,
+\tilde{Ξ}^{\mathrm{spn}}_{ww}-2G\,\tilde{Ξ}^{\mathrm{spn}}_{\upsilon w}+G^2\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon}=\mathcal{D}^2F ,
 $$
 
 which is the second derivative along the ray and vanishes because $\mathcal{D}F=0$ identically on the congruence: one application of the shear-free equation, with no further hypothesis. This is exactly the source's argument, whose quantity $M:=G\,\partial G/\partial\upsilon-\partial G/\partial w$ is $-\mathcal{D}G$. The Maxwell equations then hold for every $F$, on the eikonal and the wave equation displayed above; they were checked here at a numerical point for $F=G^{-1}$, $G$, $G^2$, $e^G$, $\tan G$ and $\ln G$. The choice $F=G^{-1}$ gives
 
 $$
-\psi_{\upsilon\upsilon}=\mp\frac{1}{4}\frac{w}{r^3},\qquad \psi_{\upsilon w}=\pm\frac{1}{4}\frac{z}{r^3},\qquad \psi_{ww}=\pm\frac{1}{4}\frac{p}{r^3},
+\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon}=\mp\frac{1}{4}\frac{w}{r^3},\qquad \tilde{Ξ}^{\mathrm{spn}}_{\upsilon w}=\pm\frac{1}{4}\frac{z}{r^3},\qquad \tilde{Ξ}^{\mathrm{spn}}_{ww}=\pm\frac{1}{4}\frac{p}{r^3},
 $$
 
 exactly, which is the Coulomb spinor of the elementary charge in the 1998 normalisation, and it is the only choice that inherits the spherical or axial symmetry of the congruence.
 
-**The negative statement, and its positive face.** The congruence does not fix the field, and neither does a Kerr–Schild background. For $g_{\mu\nu}=\delta_{\mu\nu}+h\,k_\mu k_\nu$ with $k$ null one has $\det g=\det\delta$ and $g^{\mu\nu}=\delta_{\mu\nu}-h\,k^\mu k^\nu$, so the contravariant field strength is unchanged iff $F_{\mu\nu}k^\nu\propto k_\mu$, which is exactly the alignment above. One congruence therefore carries a whole holomorphic function's worth of Maxwell fields, each of them a solution of the homogeneous equations in the same Kerr–Schild background — the reason the Coulomb field is the same in Reissner–Nordström as in flat space, and the reason a Maxwell field cannot be read off its background. These fields are **not null**: for $F=G^{-1}$ the spinor determinant is $\psi_{\upsilon\upsilon}\psi_{ww}-\psi_{\upsilon w}^2=-1/(16r^4)$, so the family is disjoint from the null one of *Null Electromagnetic Fields and the Shear-Free Congruence*, where the determinant vanishes identically.
+**The negative statement, and its positive face.** The congruence does not fix the field, and neither does a Kerr–Schild background. For $g_{\mu\nu}=\delta_{\mu\nu}+h\,k_\mu k_\nu$ with $k$ null one has $\det g=\det\delta$ and $g^{\mu\nu}=\delta_{\mu\nu}-h\,k^\mu k^\nu$, so the contravariant field strength is unchanged iff $F_{\mu\nu}k^\nu\propto k_\mu$, which is exactly the alignment above. One congruence therefore carries a whole holomorphic function's worth of Maxwell fields, each of them a solution of the homogeneous equations in the same Kerr–Schild background — the reason the Coulomb field is the same in Reissner–Nordström as in flat space, and the reason a Maxwell field cannot be read off its background. These fields are **not null**: for $F=G^{-1}$ the spinor determinant is $\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon}\tilde{Ξ}^{\mathrm{spn}}_{ww}-\tilde{Ξ}^{\mathrm{spn}2}_{\upsilon w}=-1/(16r^4)$, so the family is disjoint from the null one of *Null Electromagnetic Fields and the Shear-Free Congruence*, where the determinant vanishes identically.
 
 **Physical interpretation.** The Kerr–Schild deformation and the Kerr theorem are classical general-relativistic objects, and the corpus's *Curved Spacetime and the Biquaternion Framework* describes the framework's own relation to curvature separately. What is new here is not the geometry but the **generation**: the metric, the electromagnetic field and the Yang–Mills field all descend from one holomorphic function of a twistor, and their singularities coincide — with the qualifier of the preceding paragraph, that the twistor function fixes the congruence and the field only once $F$ is chosen.
 
@@ -475,13 +475,13 @@ $$
 
 which was verified here symbolically. The source records the first factor: the neutral ring of radius $\lvert a\rvert$ at $t'=0$, which expands at the speed of light and turns into a self-intersecting torus at $t'=\lvert a\rvert$. The second factor is a second torus, and both are caustics: at $t'=2$, $z=0$, $a=1$ the quadratic in $G$ has a double root at $x^2+y^2=9$ and again at $x^2+y^2=1$, checked numerically here. The second sheet meets the axis on $z^2=t'^2-a^2$, which is exactly where the two strings along the axis begin, so the string-like singularities that the source counts as additional to the electromagnetic one are attached to a second sheet of the same caustic. The electromagnetic field is singular there too, since its components carry inverse powers of the square root of the left-hand side of the caustic equation.
 
-**Why these two quadratic solutions, and no others.** The two members of the quadratic family sit at the two sections of one symmetry. The group of **complex rotations about the third axis** has one complex parameter $\chi=\theta+i\psi$ and acts on the twistor coordinates by
+**Why these two quadratic solutions, and no others.** The two members of the quadratic family sit at the two sections of one symmetry. The group of **complex rotations about the third axis** has one complex parameter $\xi=\theta+i\tilde{Ξ}^{\mathrm{spn}}$ and acts on the twistor coordinates by
 
 $$
-G\mapsto e^{-i\chi}G,\qquad \upsilon\mapsto e^{\psi}\upsilon,\qquad v\mapsto e^{-\psi}v,\qquad w\mapsto e^{i\theta}w,\qquad p\mapsto e^{-i\theta}p ,
+G\mapsto e^{-i\xi}G,\qquad \upsilon\mapsto e^{\theta^{\mathrm{rpd}}}\upsilon,\qquad v\mapsto e^{-\tilde{Ξ}^{\mathrm{spn}}}v,\qquad w\mapsto e^{i\theta}w,\qquad p\mapsto e^{-i\theta}p ,
 $$
 
-with $\theta$ the rotation angle and $\psi$ the rapidity, which are the real and the imaginary parts of $\chi$, the complex angle of the algebra (*The Exponential Word and Its Boundary*, *The Hamilton Pairing: Mass as Modulus and the Complex Angle*). The combination $\kappa_0\kappa_1/G$ is invariant under the whole group — verified here symbolically, and separately for $\theta$ and for $\psi$ alone — so the bisingular generator, which is $\kappa_0\kappa_1/G+b^2=0$, is invariant under the complex rotation, while the Kerr generator $G\kappa_0-\kappa_1-2bG$ is invariant under its real part alone and not under the boost. Axial symmetry and boost invariance are therefore one symmetry read at two sections, and the two quadratic solutions are those two sections.
+with $\theta$ the rotation angle and $\theta^{\mathrm{rpd}}$ the rapidity, which are the real and the imaginary parts of $\xi$, the complex angle of the algebra (*The Exponential Word and Its Boundary*, *The Hamilton Pairing: Mass as Modulus and the Complex Angle*). The combination $\kappa_0\kappa_1/G$ is invariant under the whole group — verified here symbolically, and separately for $\theta$ and for $\theta^{\mathrm{rpd}}$ alone — so the bisingular generator, which is $\kappa_0\kappa_1/G+b^2=0$, is invariant under the complex rotation, while the Kerr generator $G\kappa_0-\kappa_1-2bG$ is invariant under its real part alone and not under the boost. Axial symmetry and boost invariance are therefore one symmetry read at two sections, and the two quadratic solutions are those two sections.
 
 **The ring family.** The ring of the fundamental solution is the first of an explicit one-parameter family. For the static generating functions $\Pi=G^n/H$, with $H=wG^2+2(z+ia)G-\bar w$ and $w=x-iy$, $\bar w=x+iy$ (the $w,p$ of the notation table, $p=\bar w$; here $z$ is the third Cartesian coordinate, the table's $z_3$), the class-II singular locus is obtained by eliminating $G$ from $P=0$ together with the class-II branching condition
 
@@ -530,7 +530,7 @@ H_r \simeq \frac{2qa}{r^3}\cos\theta , \qquad
 H_\theta \simeq \frac{qa}{r^3}\sin\theta .
 $$
 
-The two electric expressions and the quadrupole coefficient were checked here and hold; the magnetic pair is exactly the dipole field of a moment $\mu=qa$ ($H_r=2\mu\cos\theta/r^3$, $H_\theta=\mu\sin\theta/r^3$). Reading the multipole moments off the potential, $\Phi=ϙ/r+\vartheta(3\cos^2\theta-1)/(4r^3)$, gives
+The two electric expressions and the quadrupole coefficient were checked here and hold; the magnetic pair is exactly the dipole field of a moment $\mu=qa$ ($H_r=2\mu\cos\theta/r^3$, $H_\theta=\mu\sin\theta/r^3$). Reading the multipole moments off the potential, $Ξ=ϙ/r+\vartheta(3\cos^2\theta-1)/(4r^3)$, gives
 
 $$
 \mu = qa, \qquad \vartheta = -2qa^2 .
@@ -542,7 +542,7 @@ $$
 \boxed{\;\vartheta = -\frac{2q\hbar^2}{4M^2c^2} = -\frac{q\hbar^2}{2M^2c^2}\;}.
 $$
 
-The sign is carried over from $\vartheta=-2qa^2$ and is negative for $q=+e$; the source states the result as a quadrupole *equal in magnitude* to $e\hbar^2/(2M^2c^2)$, and the magnitude is the whole of the comparison, since $\vartheta$ is measured against a sign convention fixed by $\Phi=q/r+\vartheta(3\cos^2\theta-1)/(4r^3)$. The source states this as a conjecture and explicitly calls it speculative, while noting that the possibility of an experimental test could be discussed; the corpus records it in that status. It is placed here because it is the one place in the programme where a free parameter is used up by a known quantity and what remains is a number rather than a structure.
+The sign is carried over from $\vartheta=-2qa^2$ and is negative for $q=+e$; the source states the result as a quadrupole *equal in magnitude* to $e\hbar^2/(2M^2c^2)$, and the magnitude is the whole of the comparison, since $\vartheta$ is measured against a sign convention fixed by $Ξ=q/r+\vartheta(3\cos^2\theta-1)/(4r^3)$. The source states this as a conjecture and explicitly calls it speculative, while noting that the possibility of an experimental test could be discussed; the corpus records it in that status. It is placed here because it is the one place in the programme where a free parameter is used up by a known quantity and what remains is a number rather than a structure.
 
 **A worked multiparticle example.** The source's test case for the dynamics uses the fourth-order generating function
 
@@ -586,7 +586,7 @@ Three further consequences are recorded because they mark the programme as genui
 
 ### The theorem
 
-Let the complex potential $C_\mu$ be analytic except on a set of one-dimensional "Dirac strings", let the complex field be self-dual, and let the field $\Psi$ that the potential couples to be single-valued everywhere outside the singularities of the field strengths. Then the electric charge of any bounded singular source — a **singular particle-like** solution, in the source's phrase — is either zero or an integer multiple of $ϙ_{\min}=1/(2b)$, where $b$ is the coupling constant of the gauge invariance $\Psi\mapsto e^{\alpha}\Psi$, $C_\mu\mapsto C_\mu+b^{-1}\,\partial\alpha/\partial x_\mu$ of the theory in which the potential appears through the lengthened derivative $(\partial/\partial x_\mu-bC_\mu)\Psi$.
+Let the complex potential $C_\mu$ be analytic except on a set of one-dimensional "Dirac strings", let the complex field be self-dual, and let the field $\tilde{Ξ}^{\mathrm{spn}}$ that the potential couples to be single-valued everywhere outside the singularities of the field strengths. Then the electric charge of any bounded singular source — a **singular particle-like** solution, in the source's phrase — is either zero or an integer multiple of $ϙ_{\min}=1/(2b)$, where $b$ is the coupling constant of the gauge invariance $\tilde{Ξ}^{\mathrm{spn}}\mapsto e^{\alpha}\tilde{Ξ}^{\mathrm{spn}}$, $C_\mu\mapsto C_\mu+b^{-1}\,\partial\alpha/\partial x_\mu$ of the theory in which the potential appears through the lengthened derivative $(\partial/\partial x_\mu-bC_\mu)\tilde{Ξ}^{\mathrm{spn}}$.
 
 ### The proof
 
@@ -606,10 +606,10 @@ $$
 4\pi m=\oint_\Sigma\vec H\cdot d\vec\sigma=\sum_L\oint_L C\cdot d\ell .
 $$
 
-Only the singular part of $C$ contributes, and that part must be pure gauge, $C_{\text{sing}}=\nabla\Lambda$: otherwise $\vec H$ itself would be singular on $L$, contrary to the hypothesis. Each loop integral is therefore the increment $\Delta\Lambda$ of a multivalued complex function. Gauge invariance and single-valuedness of $\Psi$ then give
+Only the singular part of $C$ contributes, and that part must be pure gauge, $C_{\text{sing}}=\nabla\Lambda$: otherwise $\vec H$ itself would be singular on $L$, contrary to the hypothesis. Each loop integral is therefore the increment $\Delta\Lambda$ of a multivalued complex function. Gauge invariance and single-valuedness of $\tilde{Ξ}^{\mathrm{spn}}$ then give
 
 $$
-\Delta\Lambda=b^{-1}\ln\Delta\Psi=b^{-1}\,2\pi i n,\qquad n\in\mathbb Z ,
+\Delta\Lambda=b^{-1}\ln\Delta\tilde{Ξ}^{\mathrm{spn}}=b^{-1}\,2\pi i n,\qquad n\in\mathbb Z ,
 $$
 
 so the flux is $4\pi m=2\pi i N/b$ with $N=\sum_L n$, and
@@ -618,7 +618,7 @@ $$
 ϙ=-im=\frac{N}{2b}.
 $$
 
-**The coupling constant, and the value $\tfrac14$.** The programme's gauge symmetry is the **weak**, or restricted, one: $\zeta\mapsto\alpha\zeta$, $\tau\mapsto\alpha\tau$ on the twistor and $C_\mu\mapsto C_\mu+2\,\partial\ln\alpha/\partial x_\mu$ on the potential, with the parameter allowed to depend on the coordinates only through the spinor and twistor components. The source states that a comparison of the two forms gives $b=2$, and with the theorem's $ϙ=N/(2b)$ that is $ϙ=N/4$. The comparison, however, needs the parameter to be identified, and it is not unique: if the field $\Psi$ of the general form is taken to be the spinor $\zeta$, the parameters are related by $\alpha_{(13)}=\ln\alpha_{(43)}$ and the matching of the potential terms gives $b^{-1}=2$, that is $b=\tfrac12$ and $ϙ_{\min}=1$; a field transforming with weight $k$, $\Psi\mapsto\alpha^{k}\Psi$, gives $b=k/2$, so the source's $b=2$ corresponds to weight four.
+**The coupling constant, and the value $\tfrac14$.** The programme's gauge symmetry is the **weak**, or restricted, one: $\zeta\mapsto\alpha\zeta$, $\tau\mapsto\alpha\tau$ on the twistor and $C_\mu\mapsto C_\mu+2\,\partial\ln\alpha/\partial x_\mu$ on the potential, with the parameter allowed to depend on the coordinates only through the spinor and twistor components. The source states that a comparison of the two forms gives $b=2$, and with the theorem's $ϙ=N/(2b)$ that is $ϙ=N/4$. The comparison, however, needs the parameter to be identified, and it is not unique: if the field $\tilde{Ξ}^{\mathrm{spn}}$ of the general form is taken to be the spinor $\zeta$, the parameters are related by $\alpha_{(13)}=\ln\alpha_{(43)}$ and the matching of the potential terms gives $b^{-1}=2$, that is $b=\tfrac12$ and $ϙ_{\min}=1$; a field transforming with weight $k$, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\alpha^{k}\tilde{Ξ}^{\mathrm{spn}}$, gives $b=k/2$, so the source's $b=2$ corresponds to weight four.
 
 What is derived is therefore the **lattice** — the charge is an integer multiple of a minimal value $1/(2b)$ fixed by the coupling, and the minimal value is attained rather than only approached — while the number $\tfrac14$ is the normalisation of the source's later papers. The two normalisations are consistent with the theorem and not with each other's arithmetic: $b=\tfrac12$ gives $ϙ_{\min}=1$, which is the 1995 value $A_0=\pm1/(2r)$ with $ϙ=\pm1$, and $b=2$ gives $ϙ_{\min}=\tfrac14$, which is the 1998 value $A_0=\pm1/(4r)$. The corpus keeps the two apart, as it already does for the potentials themselves, and records $\tfrac14$ as the programme's own unit rather than as a number the theorem produces. The restricted character of the symmetry does not weaken the argument: the proof uses gauge invariance and single-valuedness only, and both are available, so the derivation of integrality stands whatever the coupling is called.
 
@@ -723,7 +723,7 @@ Because the underlying field is multivalued, each point carries a set of locally
 
 ## The Ensemble of Duplicons
 
-The programme's particle picture rests on one construction that the twistor article defers to this one, and it is one of the few parts of the paper's closing sections that can be checked exactly. A particle is a singularity of the field, and the curve that carries it is a **complex** world line $z_\mu(\tau)$ with $\tau\in\mathbb{C}$, of which the real trajectory is a shadow. (The parameter $\tau$ of this section is the world-line parameter, not the twistor component $\tau_A=Z_{AB}\psi_B$ of *The Twistor Solution of the Complex Eikonal*.) The source shows that the twistor field — and with it the principal spinor and the biquaternionic field — takes equal values at two points of that curve when the two are connected by a complex null line, the equality holding along that line. Every other point of the curve that lies on the complex null cone of a given one therefore carries the same field, and that is what makes it a copy. The copies are the **duplicons**, and the condition that selects them is the null-cone equation
+The programme's particle picture rests on one construction that the twistor article defers to this one, and it is one of the few parts of the paper's closing sections that can be checked exactly. A particle is a singularity of the field, and the curve that carries it is a **complex** world line $z_\mu(\tau)$ with $\tau\in\mathbb{C}$, of which the real trajectory is a shadow. (The parameter $\tau$ of this section is the world-line parameter, not the twistor component $\tau_A=Z_{AB}\tilde{Ξ}^{\mathrm{spn}}_B$ of *The Twistor Solution of the Complex Eikonal*.) The source shows that the twistor field — and with it the principal spinor and the biquaternionic field — takes equal values at two points of that curve when the two are connected by a complex null line, the equality holding along that line. Every other point of the curve that lies on the complex null cone of a given one therefore carries the same field, and that is what makes it a copy. The copies are the **duplicons**, and the condition that selects them is the null-cone equation
 
 $$
 [z_1(\lambda)-z_1(\tau)]^2+[z_2(\lambda)-z_2(\tau)]^2+[z_3(\lambda)-z_3(\tau)]^2-[z_0(\lambda)-z_0(\tau)]^2=0 ,
@@ -751,7 +751,7 @@ $$
 
 the condition for maxima of interference in the relativistic case, with the phase lag proportional to the path difference and the Minkowski interval as the invariant measure.
 
-**The printed chain cannot hold as written, and the de Broglie endpoint decides which half of it is meant.** The two halves disagree by a factor two: with the free-particle action $A=Mc\int dS$ and $S$ the Minkowski interval, the condition $\Delta A/\hbar=2\pi N$ gives $\Delta\alpha=(Mc/\hbar)\int dS$, not $(2Mc/\hbar)$ times it. Recomputed here, with $S=\sqrt{c^2t'^2-L^2}$ for a path of length $L$ flown in a time $t'$ at speed $V=L/t'$, the derivative is $\partial S/\partial L=-V/(c\sqrt{1-V^2/c^2})$, so the fusion spacing at $\mathrm{Const}=2Mc/\hbar$ is $\lambda=h\sqrt{1-V^2/c^2}/(2MV)$, half the de Broglie wavelength, and at $\mathrm{Const}=Mc/\hbar$ it is $\lambda=h\sqrt{1-V^2/c^2}/(MV)$ exactly, the de Broglie wavelength, with non-relativistic limit $h/(MV)$. The corpus records the de Broglie relation as the source's claim and the factor as unreconciled: the printed $\mathrm{Const}=(\lambda_0/2)^{-1}$ and the printed $=\Delta A/\hbar$ cannot both be meant, and the chronon reading — a quantum of complex time of Compton order and not of Planck order — survives either way. The source notes its correspondence with Feynman's $\Psi=R\exp(iA/\hbar)$, whose phase is proportional to the classical action — for a free particle, to the proper time — and, expanding $dS$ in powers of $V/c$ and using the integrability of the zeroth-order term, recovers the ordinary de Broglie relation
+**The printed chain cannot hold as written, and the de Broglie endpoint decides which half of it is meant.** The two halves disagree by a factor two: with the free-particle action $A=Mc\int dS$ and $S$ the Minkowski interval, the condition $\Delta A/\hbar=2\pi N$ gives $\Delta\alpha=(Mc/\hbar)\int dS$, not $(2Mc/\hbar)$ times it. Recomputed here, with $S=\sqrt{c^2t'^2-L^2}$ for a path of length $L$ flown in a time $t'$ at speed $V=L/t'$, the derivative is $\partial S/\partial L=-V/(c\sqrt{1-V^2/c^2})$, so the fusion spacing at $\mathrm{Const}=2Mc/\hbar$ is $\lambda=h\sqrt{1-V^2/c^2}/(2MV)$, half the de Broglie wavelength, and at $\mathrm{Const}=Mc/\hbar$ it is $\lambda=h\sqrt{1-V^2/c^2}/(MV)$ exactly, the de Broglie wavelength, with non-relativistic limit $h/(MV)$. The corpus records the de Broglie relation as the source's claim and the factor as unreconciled: the printed $\mathrm{Const}=(\lambda_0/2)^{-1}$ and the printed $=\Delta A/\hbar$ cannot both be meant, and the chronon reading — a quantum of complex time of Compton order and not of Planck order — survives either way. The source notes its correspondence with Feynman's $\tilde{Ξ}^{\mathrm{spn}}=R\exp(iA/\hbar)$, whose phase is proportional to the classical action — for a free particle, to the proper time — and, expanding $dS$ in powers of $V/c$ and using the integrability of the zeroth-order term, recovers the ordinary de Broglie relation
 
 $$
 \Delta\int\frac{dL}{\lambda}=N ,
@@ -830,14 +830,14 @@ The programme's geometry is **induced**: the complex invariant $\sigma=(z_1)^2+(
 | $\Sigma$ | A component of a differentiable function; the eikonal potential |
 | $\partial/\partial\upsilon,\dots$ | Partial derivatives with respect to $\upsilon,v,w,p$ |
 | $\det\lVert\nabla_{AB}\Sigma\rVert=0$ | The nonlinear (complex-eikonal) equation |
-| $\psi,\tau$ | Spinor and incident twistor, $\tau=Z\psi$ |
+| $\tilde{Ξ}^{\mathrm{spn}},\tau$ | Spinor and incident twistor, $\tau=Z\tilde{Ξ}^{\mathrm{spn}}$ |
 | $z_\mu(\tau)$, $\lambda$ | Complex world line and the two parameters of the null-cone equation; here $\tau$ is the world-line parameter rather than the twistor component above, and $\lambda$ is neither the conformal scale factor of *The Two-Sided Derivative and Conformal Mappings* nor the de Broglie wavelength of *The Dimerous Electron and Quantum Interference* |
-| $G=\psi_1/\psi_0$ | The principal spinor ratio |
+| $G=\tilde{Ξ}^{\mathrm{spn}}_1/\tilde{Ξ}^{\mathrm{spn}}_0$ | The principal spinor ratio |
 | $\kappa_0=wG+\upsilon$, $\kappa_1=vG+p$ | Projective twistor components |
 | $\Pi(G,\kappa_0,\kappa_1)$ | Generating (world) function; the Kerr equation is $\Pi=0$ |
 | $P=d\Pi/dG$ | Singular-locus condition, $P=0$ |
 | $\Lambda=d^2\Pi/dG^2$ | Class-II branching condition; with $P=0$ it gives the singular locus |
-| $\mathcal{D}=\partial/\partial w-G\,\partial/\partial\upsilon$, $\psi_{\upsilon\upsilon},\psi_{\upsilon w},\psi_{ww}$ | Ray derivative, vanishing on $G$ by the shear-free equation; the Maxwell spinor $\psi_{\upsilon\upsilon}=\partial^2F/\partial\upsilon^2$, $\psi_{\upsilon w}=\partial^2F/\partial w\,\partial\upsilon$, $\psi_{ww}=\partial^2F/\partial w^2$ for a holomorphic $F(G)$, one field per $F$ on the same congruence |
+| $\mathcal{D}=\partial/\partial w-G\,\partial/\partial\upsilon$, $\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon},\tilde{Ξ}^{\mathrm{spn}}_{\upsilon w},\tilde{Ξ}^{\mathrm{spn}}_{ww}$ | Ray derivative, vanishing on $G$ by the shear-free equation; the Maxwell spinor $\tilde{Ξ}^{\mathrm{spn}}_{\upsilon\upsilon}=\partial^2F/\partial\upsilon^2$, $\tilde{Ξ}^{\mathrm{spn}}_{\upsilon w}=\partial^2F/\partial w\,\partial\upsilon$, $\tilde{Ξ}^{\mathrm{spn}}_{ww}=\partial^2F/\partial w^2$ for a holomorphic $F(G)$, one field per $F$ on the same congruence |
 | $H=wG^2+2(z+ia)G-\bar w$ | Static twistor generator; $w=x-iy$, $\bar w=x+iy$, $z$ the third Cartesian coordinate |
 | $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$, $\mathrm{ϙ}=4ϙ$ | The Coulomb family of the static superpotential; the first-order constraints force $\mathrm{ϙ}=1$ |
 | $r_*^2=x^2+y^2+(z+ia)^2$ | The $r_*$ of the static Kerr solution, of its $n=2$ class-II partner, and of the Appel potential $A_0=ϙ/r_*$; the radicand of the circle electron, with $a$ the corpus's $\varrho$ |
@@ -850,8 +850,8 @@ The programme's geometry is **induced**: the complex invariant $\sigma=(z_1)^2+(
 | $\varpi$, $A$ | Frequency and amplitude of the wave-like solution; the source writes the frequency $\Omega$, reserved here for the connection |
 | $1/(\varpi A e)$, $2\pi/\varpi$ | Radius and lead of the wave-like neutral-helix singular set |
 | $G^2\kappa_0^2+\kappa_1^2-b^2G^2$ | Generating function of the four-mode two-charge example, annihilating at $t'=b/\sqrt2$ |
-| $\eta,\zeta,\Phi$ | Biquaternion spinors and the complex four-vector of the fundamental spinor system |
-| $\Omega=\Psi\,dZ$ | $\mathbb{B}$-valued connection; $\Psi$ the gauge potential |
+| $\eta,\zeta,Ξ$ | Biquaternion spinors and the complex four-vector of the fundamental spinor system |
+| $\Omega=\tilde{Ξ}^{\mathrm{spn}}\,dZ$ | $\mathbb{B}$-valued connection; $\tilde{Ξ}^{\mathrm{spn}}$ the gauge potential |
 | $R=d\Omega-\Omega\wedge\Omega$ | Curvature; weakly self-dual on GSE solutions |
 | $\vec E$, $\vec H$ | Complex field strengths of the programme, the source's tilde; $\mathbb C$-valued throughout, and no real field appears in this article |
 | $\vec N=\vec E+i\vec H$ | The complex field as one vector; $\vec N=0$ is the self-duality condition, and on its solutions $\Im\vec H=\Re\vec E$, $\Im\vec E=-\Re\vec H$ |

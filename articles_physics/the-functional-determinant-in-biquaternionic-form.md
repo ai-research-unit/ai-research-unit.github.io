@@ -98,20 +98,20 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 
 The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.
 
-**The Gaussian.** For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
+**The Gaussian.** For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle)
+\int\mathcal{D}\tilde{Ξ}\;\exp(-\frac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle)
 = \big(\det K^{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.
 
 **The one-loop action.** Expanding about a classical field as in the previous article,
 $$
-S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde\Phi,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\delta\tilde\Phi\big\rangle+\cdots ,
+S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde{Ξ},S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\delta\tilde{Ξ}\big\rangle+\cdots ,
 $$
-the Gaussian integration of $\delta\tilde\Phi$ gives the one-loop effective action
+the Gaussian integration of $\delta\tilde{Ξ}$ gives the one-loop effective action
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] ,
+\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] ,
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
@@ -141,9 +141,9 @@ is the Ray–Singer torsion of the pair when the operators are Laplacians on a m
 
 The determinant's variation is the trace of the propagator against the variation of the operator,
 $$
-\frac{\delta}{\delta\chi}\log\det S^{(2)}[\chi] = \mathrm{Tr}\left( \big(S^{(2)}[\chi]\big)^{-1}\,\frac{\delta S^{(2)}[\chi]}{\delta\chi}\right),
+\frac{\delta}{\delta\xi}\log\det S^{(2)}[\xi] = \mathrm{Tr}\left( \big(S^{(2)}[\xi]\big)^{-1}\,\frac{\delta S^{(2)}[\xi]}{\delta\xi}\right),
 $$
-where $\chi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\chi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
+where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\xi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
 
 ## Regularization
 
@@ -171,9 +171,9 @@ and the small-$t'$ expansion $K(t')\sim(4\pi t')^{-d/2}\sum_n a_n {t'}^n$ gives 
 
 The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.
 
-**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
+**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
 $$
-\int\mathcal{D}\tilde\Psi^{\natural}\,\mathcal{D}\tilde\Psi\;\exp\big(\,\tilde\Psi^{\natural}\mathcal{F}\tilde\Psi\big) = \det\mathcal{F},
+\int\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\natural}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\;\exp\big(\,\tilde{Ξ}^{\mathrm{spn}\natural}\mathcal{F}\tilde{Ξ}^{\mathrm{spn}}\big) = \det\mathcal{F},
 \qquad
 \mathcal{F} = \mathbb{D} - m ,
 $$
@@ -250,8 +250,8 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | Determinant of an algebra element |
 | $L_{\tilde Q},R_{\tilde Q}$ | Left and right multiplication on the algebra |
 | $\det L_{\tilde Q}=\det R_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^2$ | Regular-representation determinant |
-| $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | Fluctuation operator on the module |
-| $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$ |
+| $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | Fluctuation operator on the module |
+| $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
 | $(\det K^{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |

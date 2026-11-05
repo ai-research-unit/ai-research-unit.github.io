@@ -144,7 +144,7 @@ The first pair says that in a free field the electric and the gravimagnetic char
 
 The source draws two further consequences for a free field, and the corpus records them as the programme's. The electric and the gravimagnetic charge density can each be of either sign; and under a **stationary vibration** — the monochromatic free solutions of the same law, developed in *Harmonic Elementary Particles and the Periodic System of Atoms* — the electric charge is said to pass into the gravimagnetic charge and back. The second claim sits in visible tension with the two separate conservation laws displayed just above, which forbid such an interchange in a free field; the source does not reconcile the two, and it gives no rate and no selection rule for the transfer.
 
-The source also writes the free charge–current as a **spinor**, $\tilde J_{\mathrm{eg}} = D^-\psi_0 + i\sum_\mu D^-(\psi_\mu \vec e_\mu)$ with $\Box\psi_j = 0$, naming a **pulsar** for a scalar potential and a **spinor** for a vector potential, and adding convolutions it calls **fibers**, **tissue** and **body** for matter on a line, on a surface and over a volume. That construction, its closed forms and its particle interpretation are developed in *Harmonic Elementary Particles and the Periodic System of Atoms*, which builds them from the same free-field law; the physical content of the free field recorded here is the pair of equations above.
+The source also writes the free charge–current as a **spinor**, $\tilde J_{\mathrm{eg}} = D^-\theta^{\mathrm{rpd}}_0 + i\sum_\mu D^-(\theta^{\mathrm{rpd}}_\mu \vec e_\mu)$ with $\Box\theta^{\mathrm{rpd}}_j = 0$, naming a **pulsar** for a scalar potential and a **spinor** for a vector potential, and adding convolutions it calls **fibers**, **tissue** and **body** for matter on a line, on a surface and over a volume. That construction, its closed forms and its particle interpretation are developed in *Harmonic Elementary Particles and the Periodic System of Atoms*, which builds them from the same free-field law; the physical content of the free field recorded here is the pair of equations above.
 
 ### The second law: the interaction equation
 
@@ -230,7 +230,7 @@ $$
 \theta = \tfrac12\,\mathrm{artanh}\,v,
 $$
 
-so that $U$ is exactly the corpus's boost rotor $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ with $\psi$ the rapidity. Read as a full rapidity the transformations do not reproduce the standard boost; read as a half-rapidity they do. Since the rotor is Hermitian, $U^\dagger = U$, so the model's transformation is the corpus's conjugation
+so that $U$ is exactly the corpus's boost rotor $\tilde{U} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ with $\theta^{\mathrm{rpd}}$ the rapidity. Read as a full rapidity the transformations do not reproduce the standard boost; read as a half-rapidity they do. Since the rotor is Hermitian, $U^\dagger = U$, so the model's transformation is the corpus's conjugation
 
 $$
 \tilde{Q}_2 = \tilde{U}\,\tilde{Q}\,\tilde{U}^{*},
@@ -326,7 +326,7 @@ while the mutual bigradients transform by the same conjugation — the paper's L
 
 **The reconciliation with the 2009 finding.** The corpus records both results and states the interpretation that makes them compatible. The 2009 finding is about a *condition*: the statement $M = 0$, that a single source is closed, is not a Lorentz-invariant statement, because a four-vector whose time component vanishes in one frame has a non-vanishing one in another. The 2017 theorem is about *equations*: the interaction system is covariant. An open system's equations can be covariant while the condition that a subsystem be closed is not, and the two statements are then about different objects. The 2009 scalar field $a$ is the programme's mechanism for the second and does not enter the 2017 proof of the first. The paper itself does not mention the 2009 conservation finding, so the corpus states this interpretation as its own and leaves open whether the invariance theorem is intended for the modified system.
 
-**The Lorentz condition, in a different role.** The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial/\partial \tau\chi^{\mathrm{scp}} = \mathrm{div}\,\vec\Phi$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of *Maxwell's Equations in the Biquaternionic Formulation* carries the cross-reference.
+**The Lorentz condition, in a different role.** The 2017 paper fixes the representation by requiring the potential to satisfy the Lorentz condition $\partial/\partial \tau\xi^{\mathrm{scp}} = \mathrm{div}\,\vecΞ$, imposed rather than chosen, and the ordinary Maxwell case $\alpha = 0$, $\rho_H = 0$ is recovered once it holds. The corpus's own Maxwell article treats the same condition as a free gauge fixing — "a choice of gauge, not a physical condition", with the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ a gauge artifact. The formula is the same; the logical role is not, and the corpus records the difference without choosing between the two. The gauge section of *Maxwell's Equations in the Biquaternionic Formulation* carries the cross-reference.
 
 ## The Static Limit and the Coupling
 
@@ -342,23 +342,23 @@ $$
 \mu\,\mathrm{div}\,\vec H = -\rho_H ,
 $$
 
-with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$, it becomes
+with $\alpha = \alpha_1 + i\alpha_2$, the two real weights being the source's $a_1, a_2$ in $\alpha = i\,a_1/\epsilon + a_2/\mu$, so that $\alpha_1 = a_2/\mu$ and $\alpha_2 = a_1/\epsilon$. The last equation is the one that carries gravity. Writing the potential part of $\vec H$ as the negative gradient of a Newtonian potential, $\vec H = -\mathrm{grad}\,\xi^{\mathrm{scp}}$, it becomes
 
 $$
-\boxed{\;\Delta\chi^{\mathrm{scp}} = \frac{\rho_H}{\mu}\;}
+\boxed{\;\Delta\xi^{\mathrm{scp}} = \frac{\rho_H}{\mu}\;}
 $$
 
-so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$ points towards its source: for a positive mass density the static field is **attractive**. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,
+so the potential of the gravitational field obeys Poisson's equation and the field $\vec H = -\mathrm{grad}\,\xi^{\mathrm{scp}}$ points towards its source: for a positive mass density the static field is **attractive**. At this point the identification $\rho_H \leftrightarrow \rho_{\text{mass}}$ becomes quantitative, because the strength of the Poisson equation fixes the field constant of the medium. The source states the choice,
 
 $$
 \mu = \frac{1}{4\pi G},
 $$
 
-with $G$ the gravitational constant (the source writes $\gamma$ for it), which is the ordinary Poisson equation $\Delta\chi^{\mathrm{scp}} = 4\pi G\,\rho_{\text{mass}}$.
+with $G$ the gravitational constant (the source writes $\gamma$ for it), which is the ordinary Poisson equation $\Delta\xi^{\mathrm{scp}} = 4\pi G\,\rho_{\text{mass}}$.
 
 This closes a gap the corpus had recorded. The identification of magnetic charge with mass is a choice, but once it is made the constant $\mu$ of the field is no longer free: reading $\rho_H$ as the mass density and demanding the Poisson limit ties $\mu$ to Newton's constant and fixes the sign of the static force as attraction. What it does **not** do is predict gravity. The value of $G$ enters by hand through $\mu$, exactly as the electric charge enters by hand through $\rho_E$; no relation in the model determines the strength of the gravitational coupling from the algebra. The revision fixes the identification and the sign, not the number.
 
-For a Gaussian mass density of unit total mass, the Newtonian potential $\chi^{\mathrm{scp}}(r) = -(G M/r)\,\mathrm{erf}\big(r/(\sqrt2\,\sigma)\big)$ satisfies $\Delta\chi^{\mathrm{scp}} = 4\pi G\rho$ to the finite-difference floor, and with $\mu = 1/(4\pi G)$ and $\vec H = -\mathrm{grad}\,\chi^{\mathrm{scp}}$ the static field satisfies $\mu\,\mathrm{div}\,\vec H = -\rho_H$ to $10^{-8}$.
+For a Gaussian mass density of unit total mass, the Newtonian potential $\xi^{\mathrm{scp}}(r) = -(G M/r)\,\mathrm{erf}\big(r/(\sqrt2\,\sigma)\big)$ satisfies $\Delta\xi^{\mathrm{scp}} = 4\pi G\rho$ to the finite-difference floor, and with $\mu = 1/(4\pi G)$ and $\vec H = -\mathrm{grad}\,\xi^{\mathrm{scp}}$ the static field satisfies $\mu\,\mathrm{div}\,\vec H = -\rho_H$ to $10^{-8}$.
 
 ## The Unified Field and the Interaction Energy
 
@@ -483,12 +483,12 @@ $$
 is solved by applying the conjugate bigradient to the source and convolving with the fundamental solution of the wave equation,
 
 $$
-K = D^{\mp}G * \psi,
+K = D^{\mp}G * \theta^{\mathrm{rpd}},
 \qquad
-\Box\psi = \delta(\tau)\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\Box\theta^{\mathrm{rpd}} = \delta(\tau)\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
 
-and with the **simple layer on the light cone** $\psi = (4\pi\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)^{-1}\delta(\tau - \|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)$ the convolution vanishes at $\tau = 0$, which is what makes the Cauchy data separable. This is the programme's route to its Cauchy problem: the inverse of a *first-order* operator is another first-order operator applied to the scalar wave kernel, so no second-order Green tensor is needed for the bigradient equations themselves. For given charge–current and initial data the field is then an integral of the source over its past cone,
+and with the **simple layer on the light cone** $\theta^{\mathrm{rpd}} = (4\pi\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)^{-1}\delta(\tau - \|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)$ the convolution vanishes at $\tau = 0$, which is what makes the Cauchy data separable. This is the programme's route to its Cauchy problem: the inverse of a *first-order* operator is another first-order operator applied to the scalar wave kernel, so no second-order Green tensor is needed for the bigradient equations themselves. For given charge–current and initial data the field is then an integral of the source over its past cone,
 
 $$
 4\pi\,\tilde F(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -iD^-\!\int_{\|\vec y-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|\le \tau}\frac{\tilde J_{\mathrm{eg}}(\tau-r,\vec y)}{r}\,dV(\vec y) + \tau^{-1}\!\int_{r=\tau}\!\tilde F_0\,dS - i\tau^{-1}\!\int_{r=\tau}\!\tilde J_{\mathrm{eg}}(0,\vec y)\,dS,
@@ -500,7 +500,7 @@ which is the Kirchhoff formula of the scalar wave equation written for the biqua
 The interaction is treated the same way and becomes a **system of integral equations**. Applying the inversion to the second law gives, for the source of one field,
 
 $$
-\kappa\,\tilde J_{\mathrm{eg}} = D^{+}\!\left\{H(\tau)\tilde{\mathcal F} * \psi\right\} + \tilde{\mathcal F}(0,\cdot) *_{x}\psi + \kappa\,D^{+}\!\left\{\tilde J_{\mathrm{eg},0} *_{x}\psi\right\},
+\kappa\,\tilde J_{\mathrm{eg}} = D^{+}\!\left\{H(\tau)\tilde{\mathcal F} * \theta^{\mathrm{rpd}}\right\} + \tilde{\mathcal F}(0,\cdot) *_{x}\theta^{\mathrm{rpd}} + \kappa\,D^{+}\!\left\{\tilde J_{\mathrm{eg},0} *_{x}\theta^{\mathrm{rpd}}\right\},
 $$
 
 with the convolution taken over the spatial variables only and $H$ the Heaviside function. The right side contains $\tilde J_{\mathrm{eg}}$ itself, through the force $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F_2$, so the equation is the integral form of the nonlinear second law and is solved by iteration; when one field dominates, the second field's equation is left out and the remaining one is linear in the weaker source, which is the form the programme's applications take. The corpus adds nothing here — the factorization $\Box = D^-D^+$, the simple-layer kernel and the Kirchhoff formula are standard, and the corpus's own Cauchy and layer material is in the article just named — but the transfer is exact, and it shows that the programme's nonlinear law is an integral equation of the second kind rather than a new evolution equation.
@@ -531,16 +531,16 @@ Hence the **shocks of the charge–current field are generally not transverse** 
 
 ## The General Front Condition of the Biwave Equation
 
-The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde\Phi$ and source $\tilde G$ of the biwave equation $\tilde\nabla^{\pm}\tilde\Phi = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
+The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde{Ξ}$ and source $\tilde G$ of the biwave equation $\tilde\nabla^{\pm}\tilde{Ξ} = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
 
 $$
-\tilde\nabla^{\pm}\tilde\Phi = \tilde\nabla^{\pm}\tilde\Phi + (n_{ict'} + \vec w)\circ[\tilde\Phi]_S\,\delta_S ,
+\tilde\nabla^{\pm}\tilde{Ξ} = \tilde\nabla^{\pm}\tilde{Ξ} + (n_{ict'} + \vec w)\circ[\tilde{Ξ}]_S\,\delta_S ,
 $$
 
-with $n_{ict'}$ the normal's time component and $\vec w$ its spatial part, in the corpus's $ict'$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict'}^2 + \|\vec w\|^2 = 0$, the normal is a zero divisor and $(n_{ict'} + \vec w)\circ[\tilde\Phi]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec w/\|\vec w\|$ for the unit spatial normal and $[\tilde\Phi]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
+with $n_{ict'}$ the normal's time component and $\vec w$ its spatial part, in the corpus's $ict'$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict'}^2 + \|\vec w\|^2 = 0$, the normal is a zero divisor and $(n_{ict'} + \vec w)\circ[\tilde{Ξ}]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec w/\|\vec w\|$ for the unit spatial normal and $[\tilde{Ξ}]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
 
 $$
-[\tilde\Phi]_S = i\,\vec m\circ[\tilde\Phi]_S ,
+[\tilde{Ξ}]_S = i\,\vec m\circ[\tilde{Ξ}]_S ,
 \qquad\text{equivalently}\qquad
 [k]_S = -i\,(\vec m, [\vec K]_S),
 \quad
@@ -563,7 +563,7 @@ $$
 
 together with the two transverse relations. The normal (longitudinal) components of the electric and magnetic jumps are therefore exactly the jumps of the two real parts of the scalar field; when $[\alpha]=0$ both vanish and the fronts are transverse, which is the classical Maxwell case. The source reads this as the statement that the scalar field "describes the property of attraction–resistance of the EGM-field to the movement of external charges and currents", and the corpus keeps the name **attraction–resistance field** for it. This is the mirror of the $\tilde J_{\mathrm{eg}}$-fronts: those are longitudinal when the charge jump is non-zero, and the field fronts are longitudinal when the scalar-field jump is non-zero.
 
-At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\psi_j = f(\eta)$ with $\eta = (\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega\tau$ and $\|\vec k\| = \omega$, and $A = D^-\psi_j$; the four modes are
+At the level of smooth solutions the programme constructs the corresponding waves from scalar plane potentials. Take $\theta^{\mathrm{rpd}}_j = f(\eta)$ with $\eta = (\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega\tau$ and $\|\vec k\| = \omega$, and $A = D^-\theta^{\mathrm{rpd}}_j$; the four modes are
 
 | Mode | Potential | $(\vec E,\vec k)$ | $(\vec H,\vec k)$ |
 |---|---|---|---|
@@ -620,7 +620,7 @@ The corpus's relation to the programme is the same as to every external completi
 | $\tilde{\Pi}_{kl}$ | Interaction energy–momentum of a pair of fields (from the field strengths) |
 | $\tilde{\Sigma}_{kl}$ | 2009 form of the same, from the charge–current biquaternions |
 | $\sigma^{H}_{ik},\ \sigma^{E}_{ik}$ | Stress pseudotensors of the gravimagnetic and electric halves |
-| $\psi = (4\pi\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)^{-1}\delta(\tau-\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)$ | Simple layer on the light cone, fundamental solution of $\Box$ |
+| $\theta^{\mathrm{rpd}} = (4\pi\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)^{-1}\delta(\tau-\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|)$ | Simple layer on the light cone, fundamental solution of $\Box$ |
 | $M, \vec F$ | Power density and force density (scalar and vector parts of $\tilde{\mathcal F}$) |
 | $U = \cosh\theta + i\sinh\theta\,\vec u$ | Boost biquaternion of the revision, $\theta$ the half-rapidity |
 | $\gamma = 1/\sqrt{1-v^2}$ | Lorentz factor, $\cosh 2\theta = \gamma$, $\sinh 2\theta = \gamma v$ |

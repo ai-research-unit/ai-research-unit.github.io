@@ -142,7 +142,7 @@ $$
 M \ge m_1 + m_2,
 $$
 
-with equality if and only if $\vec v_1 = \vec v_2$. Both follow below from $\cosh\psi_{\rm rel}\ge1$.
+with equality if and only if $\vec v_1 = \vec v_2$. Both follow below from $\cosh\theta^{\mathrm{rpd}}_{\rm rel}\ge1$.
 
 ## Conservation in the Biquaternion Formulation
 
@@ -195,7 +195,7 @@ $$
 \tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t\;}.
 $$
 
-Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde U_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^{\rm CM} = iMc\,e_t$ unchanged.
+Its rapidity $\theta^{\mathrm{rpd}}$ satisfies $\cosh\theta^{\mathrm{rpd}} = E_{\rm tot}/(Mc^2)$ and $\sinh\theta^{\mathrm{rpd}}\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde U_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^{\rm CM} = iMc\,e_t$ unchanged.
 
 ### Constituent Energies and Momentum
 
@@ -235,7 +235,7 @@ $$
 p^* = \frac{c}{2M}\sqrt{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]}.
 $$
 
-The radicand is non-negative when $M \ge m_1+m_2$: a pair with relative motion has at least the rest energy of its constituents. At $M = m_1+m_2$ the momentum vanishes and the two bodies are at relative rest. The speeds are $v_a^* = p^*c^2/E_a^*$, so $\tanh\psi_a^* = p^*c/E_a^*$ for the individual COM rapidities.
+The radicand is non-negative when $M \ge m_1+m_2$: a pair with relative motion has at least the rest energy of its constituents. At $M = m_1+m_2$ the momentum vanishes and the two bodies are at relative rest. The speeds are $v_a^* = p^*c^2/E_a^*$, so $\tanh(\theta^{\mathrm{rpd}})^{*}_a = p^*c/E_a^*$ for the individual COM rapidities.
 
 ## The Relative Four-Velocity and the Relative Rapidity
 
@@ -261,7 +261,7 @@ $$
 = \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
 $$
 
-This quantity is $\ge 1$, since it is a Lorentz factor, and it equals $1$ exactly when $\vec v_1 = \vec v_2$. Introducing the **relative rapidity** $\psi_{\rm rel}$ by $\cosh\psi_{\rm rel} = \gamma_{\rm rel}$, the relative speed is $v_{\rm rel} = c\tanh\psi_{\rm rel}$. In terms of the two velocities in an arbitrary frame,
+This quantity is $\ge 1$, since it is a Lorentz factor, and it equals $1$ exactly when $\vec v_1 = \vec v_2$. Introducing the **relative rapidity** $\theta^{\mathrm{rpd}}_{\rm rel}$ by $\cosh\theta^{\mathrm{rpd}}_{\rm rel} = \gamma_{\rm rel}$, the relative speed is $v_{\rm rel} = c\tanh\theta^{\mathrm{rpd}}_{\rm rel}$. In terms of the two velocities in an arbitrary frame,
 
 $$
 v_{\rm rel} = \frac{\sqrt{\left|\vec v_1-\vec v_2\right|^2 - \frac{1}{c^2}\left|\vec v_1\times\vec v_2\right|^2}}{1 - \vec v_1\cdot\vec v_2/c^2},
@@ -270,9 +270,9 @@ $$
 which reduces to the Galilean $|\vec v_2-\vec v_1|$ when both speeds are small compared with $c$. The rapidities compose additively along the common axis of relative motion:
 
 $$
-\psi_{\rm rel} = \psi_1^* + \psi_2^*,
+\theta^{\mathrm{rpd}}_{\rm rel} = (\theta^{\mathrm{rpd}})^{*}_1 + (\theta^{\mathrm{rpd}})^{*}_2,
 \qquad
-\tanh\psi_a^* = \frac{p^*c}{E_a^*},
+\tanh(\theta^{\mathrm{rpd}})^{*}_a = \frac{p^*c}{E_a^*},
 $$
 
 with the two bodies moving in opposite directions in the COM frame. This is the relativistic velocity-composition law: the relative rapidity is the sum of the two COM rapidities.
@@ -283,10 +283,10 @@ Combining the mass-shell relations with the polarization identity gives the inva
 
 $$
 \boxed{\;
-M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_1m_2c^4\cosh\psi_{\rm rel}\;}.
+M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_1m_2c^4\cosh\theta^{\mathrm{rpd}}_{\rm rel}\;}.
 $$
 
-This is the central relation of the two-body kinematics. It exhibits the three contributions to the pair's rest energy: the two rest energies and the relative kinetic energy, the latter encoded in $\cosh\psi_{\rm rel}$. Since $\cosh\psi_{\rm rel} \ge 1$, it immediately gives the subadditivity bound
+This is the central relation of the two-body kinematics. It exhibits the three contributions to the pair's rest energy: the two rest energies and the relative kinetic energy, the latter encoded in $\cosh\theta^{\mathrm{rpd}}_{\rm rel}$. Since $\cosh\theta^{\mathrm{rpd}}_{\rm rel} \ge 1$, it immediately gives the subadditivity bound
 
 $$
 M^2c^4 \ge \left(m_1^2 + m_2^2 + 2m_1m_2\right)c^4 = (m_1+m_2)^2c^4,
@@ -294,7 +294,7 @@ $$
 
 hence $M \ge m_1+m_2$, with equality if and only if the relative rapidity vanishes, that is, if and only if the two bodies are at relative rest. The pair's mass is thus the invariant that measures the energy locked in the relative motion.
 
-Two special cases are worth recording. First, if the two bodies are at relative rest, $\psi_{\rm rel} = 0$ and $M = m_1+m_2$: the masses add. Second, if body 2 is at rest in the chosen frame (a fixed-target configuration, with $\vec v_2 = 0$ and $\vec v_1 = \vec v$), then $\gamma_{\rm rel} = \gamma_1$ and
+Two special cases are worth recording. First, if the two bodies are at relative rest, $\theta^{\mathrm{rpd}}_{\rm rel} = 0$ and $M = m_1+m_2$: the masses add. Second, if body 2 is at rest in the chosen frame (a fixed-target configuration, with $\vec v_2 = 0$ and $\vec v_1 = \vec v$), then $\gamma_{\rm rel} = \gamma_1$ and
 
 $$
 M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_2E_1c^2,
@@ -339,9 +339,9 @@ which is the total kinetic energy of the daughters in the parent rest frame, spl
 If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the Hermitian sandwich $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$, where $\tilde U_{\mathrm b}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section. The middle factor is the four-momentum in the parent rest frame; it carries no star, since the star on the right factor is the conjugation that makes the sandwich:
 
 $$
-\tilde U_{\mathrm b} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
+\tilde U_{\mathrm b} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_V,
 \qquad
-\tanh\Psi = \frac{V}{c},
+\tanh\theta^{\mathrm{rpd}} = \frac{V}{c},
 $$
 
 the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$ and $\tilde U_{\mathrm b}^{*}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.
@@ -354,7 +354,7 @@ E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),
 \vec p_a = \vec p_a^* + \frac{\gamma-1}{V^2}\left(\vec V\cdot\vec p_a^*\right)\vec V + \gamma\frac{E_a^*}{c^2}\vec V,
 $$
 
-with $\gamma = \cosh\Psi$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, the lab energy takes the compact form
+with $\gamma = \cosh\theta^{\mathrm{rpd}}$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, the lab energy takes the compact form
 
 $$
 E_a = \gamma E_a^*\left(1 + \frac{Vv_a^*}{c^2}\cos\theta_a^*\right),
@@ -398,10 +398,10 @@ Thus the leading non-relativistic reduction is the familiar one: a fictitious bo
 
 The non-relativistic limit provides an independent consistency check against the known Newtonian two-body results. Let $\vec v_1, \vec v_2$ be small compared with $c$.
 
-**Invariant mass.** Expanding $\cosh\psi_{\rm rel} = 1 + \psi_{\rm rel}^2/2 + O(\psi_{\rm rel}^4)$ with $\psi_{\rm rel} \approx v_{\rm rel}/c$,
+**Invariant mass.** Expanding $\cosh\theta^{\mathrm{rpd}}_{\rm rel} = 1 + (\theta^{\mathrm{rpd}})^{2}_{\rm rel}/2 + O((\theta^{\mathrm{rpd}})^{4}_{\rm rel})$ with $\theta^{\mathrm{rpd}}_{\rm rel} \approx v_{\rm rel}/c$,
 
 $$
-M^2c^4 = (m_1+m_2)^2c^4 + m_1m_2c^4\,\psi_{\rm rel}^2 + O\!\left(v_{\rm rel}^4\right),
+M^2c^4 = (m_1+m_2)^2c^4 + m_1m_2c^4\,(\theta^{\mathrm{rpd}})^{2}_{\rm rel} + O\!\left(v_{\rm rel}^4\right),
 $$
 
 and taking the square root,
@@ -445,7 +445,7 @@ the light daughter carrying the larger share. The conservation law $\tilde{P}_A 
 Everything above is kinematic. The first systematic dynamics of two interacting relativistic spin-$\tfrac12$ particles is the **Breit equation** (Breit 1929), also called the **Dirac–Coulomb–Breit equation**. For $N$ particles it reads
 
 $$
-i\hbar\frac{\partial\Psi}{\partial t'} = \left(\sum_i H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j}B_{ij}\right)\Psi ,
+i\hbar\frac{\partial\theta^{\mathrm{rpd}}}{\partial t'} = \left(\sum_i H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j}B_{ij}\right)\theta^{\mathrm{rpd}} ,
 $$
 
 where $H_{\mathrm D}(i)$ is the one-particle Dirac Hamiltonian of particle $i$, the Coulomb term is instantaneous, and the **Breit operator**
@@ -454,7 +454,7 @@ $$
 B_{ij} = -\frac{1}{2r_{ij}}\left[\boldsymbol\alpha(i)\cdot\boldsymbol\alpha(j) + \frac{\left(\boldsymbol\alpha(i)\cdot\vec r_{ij}\right)\left(\boldsymbol\alpha(j)\cdot\vec r_{ij}\right)}{r_{ij}^2}\right]
 $$
 
-adds the magnetic and retardation corrections of order $1/c^2$. The wave function $\Psi$ is a $4^N$-component spinor, the tensor product of $N$ Dirac spinors.
+adds the magnetic and retardation corrections of order $1/c^2$. The wave function $\theta^{\mathrm{rpd}}$ is a $4^N$-component spinor, the tensor product of $N$ Dirac spinors.
 
 The one-particle Dirac Hamiltonians together with the instantaneous Coulomb term form the **Dirac–Coulomb** operator; adding $B$ gives the **Dirac–Coulomb–Breit** Hamiltonian $H_{\mathrm{DCB}}$. In the non-relativistic reduction it becomes the **Breit–Pauli** Hamiltonian, a sum of terms with distinct physical meanings: the non-relativistic kinetic term and potential $H_0$; the relativistic kinetic correction $H_1=-\frac{1}{8c^2}\sum_ip_i^4/m_i^3$; the orbit–orbit magnetic-dipole term $H_2$; the spin–orbit term $H_3$; the Darwin term $H_4$; the spin–spin term $H_5$, with a contact part proportional to $\delta(\vec r_{ij})$ (the Fermi contact interaction) and a dipole–dipole part; and the external-field coupling $H_6$. These are the terms by which the Breit Hamiltonian reproduces fine structure, the Darwin term and the spin–spin splitting of positronium.
 
@@ -484,7 +484,7 @@ The Breit equation is an approximation in both senses at once: quantum-mechanica
 
 The relativistic two-body problem in the biquaternion framework is expressed entirely through the three operations of the algebra restricted to the material sector $\mathbb{M}_-$: addition, the biquaternion norm, and the rotor conjugation. The two four-momenta $\tilde{P}_1, \tilde{P}_2$ are elements of $\mathbb{M}_-$; their sum $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ is again in $\mathbb{M}_-$, with norm $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$, which defines the invariant mass $M$ of the pair. Conservation of four-momentum is the single equation $\tilde{P}_1+\tilde{P}_2 = \text{constant}$, whose scalar and vector parts are energy and momentum conservation.
 
-The centre-of-momentum frame is reached by the boost biquaternion $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_t$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
+The centre-of-momentum frame is reached by the boost biquaternion $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_t$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\theta^{\mathrm{rpd}}_{\rm rel}$, defined by $\cosh\theta^{\mathrm{rpd}}_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\theta^{\mathrm{rpd}}_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.
 
 A two-body decay is the special case in which the total four-momentum is $\tilde{P}_A = iMc\,e_t$; the general results then give the daughter energies, the common momentum magnitude $p^*$, the threshold condition $M \ge m_1+m_2$, and the boost to the laboratory frame. The non-relativistic limit reproduces the Newtonian centre-of-mass motion, the reduced mass, and the partition of the released energy, confirming that the framework reduces correctly to the established theory.
 
@@ -504,8 +504,8 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$ | Invariant mass of the pair |
 | $\tilde{V}_{2|1}$ | Relative four-velocity (body 2 in the rest frame of body 1) |
-| $\gamma_{\rm rel} = \cosh\psi_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$ | Relative Lorentz factor |
-| $\psi_{\rm rel}$ | Relative rapidity, $v_{\rm rel} = c\tanh\psi_{\rm rel}$ |
+| $\gamma_{\rm rel} = \cosh\theta^{\mathrm{rpd}}_{\rm rel} = -\langle\tilde{V}_1,\tilde{V}_2\rangle/c^2$ | Relative Lorentz factor |
+| $\theta^{\mathrm{rpd}}_{\rm rel}$ | Relative rapidity, $v_{\rm rel} = c\tanh\theta^{\mathrm{rpd}}_{\rm rel}$ |
 | $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$ | Boost biquaternion to the centre-of-momentum frame |
 | $E_a^*,$ $\vec p_a^*$ | Energy and momentum in the centre-of-momentum frame |
 | $p^*$ | Common momentum magnitude, $\vec p_1^* = -\vec p_2^* = \vec p^*$ |

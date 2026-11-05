@@ -47,20 +47,20 @@ $$
 acting on a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ by **rotor conjugation**
 
 $$
-\Phi_{\tilde Q}(\tilde{Ϛ}) = \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*} .
+Ξ_{\tilde Q}(\tilde{Ϛ}) = \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*} .
 $$
 
 The image is again Hermitian, positive, and of trace one: since $\tilde{Ϛ}^{*} = \tilde{Ϛ}$ and $\tilde Q^{*}\tilde Q = e_t$,
 
 $$
-\Phi_{\tilde Q}(\tilde{Ϛ})^{*} = \tilde Q\tilde{Ϛ}\tilde Q^{*} = \Phi_{\tilde Q}(\tilde{Ϛ}),
+Ξ_{\tilde Q}(\tilde{Ϛ})^{*} = \tilde Q\tilde{Ϛ}\tilde Q^{*} = Ξ_{\tilde Q}(\tilde{Ϛ}),
 \qquad
-\mathrm{Tr}\!\left(\Phi_{\tilde Q}(\tilde{Ϛ})\right) = \mathrm{Tr}(\tilde{Ϛ}) = 1 .
+\mathrm{Tr}\!\left(Ξ_{\tilde Q}(\tilde{Ϛ})\right) = \mathrm{Tr}(\tilde{Ϛ}) = 1 .
 $$
 
 So a gate maps states to states.
 
-**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $\Phi_{\tilde Q}$ has the single Kraus operator $\tilde{K} = \tilde Q$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $\Phi_{\tilde Q}^{-1} = \Phi_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(\Phi_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
+**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde{K} = \tilde Q$ with $\tilde{K}^{*}\tilde{K} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ})^2) = \mathrm{Tr}(\tilde{Ϛ}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
 
 ### Why Matrix-Unitarity and Not Unit Norm
 
@@ -69,7 +69,7 @@ The condition $\tilde Q\tilde Q^{*} = e_t$ must not be confused with the unit-no
 The distinction is visible in a single example. A **boost biquaternion**
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
 $$
 
 is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and has unit norm, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$. Hence $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^2 \neq e_t$, and conjugation by $\tilde U_{\mathrm b}$ does not preserve the trace:
@@ -109,7 +109,7 @@ $$
 = \tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} .
 $$
 
-Hence the kernel of $\tilde Q\mapsto\Phi_{\tilde Q}$ is the unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, and the effective group of gates is
+Hence the kernel of $\tilde Q\mapstoΞ_{\tilde Q}$ is the unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, and the effective group of gates is
 
 $$
 \boxed{\;\mathrm{U}(2)/\mathrm{U}(1) \;\cong\; PU(2) \;\cong\; SO(3)\;},
@@ -242,7 +242,7 @@ $$
 So the composite gate is the **product** $\tilde{W} = \tilde{V}\tilde Q$, and the map on channels is
 
 $$
-\boxed{\;\Phi_{\tilde{V}} \circ \Phi_{\tilde Q} = \Phi_{\tilde{V}\tilde Q}\;}.
+\boxed{\;Ξ_{\tilde{V}} \circ Ξ_{\tilde Q} = Ξ_{\tilde{V}\tilde Q}\;}.
 $$
 
 The product is the biquaternion product (for several qubits, the product in $\mathbb{B}^{\otimes n}$). Because that product is associative, a circuit is well defined without any bracketing convention: it is one element, the ordered product of its gates, and its action is a single conjugation by that element. The identity gate is $e_t$; the inverse of $\tilde Q$ is $\tilde Q^{*} = \tilde Q^{-1}$; and the set of gates is closed under the product, which is the statement that the gate group is a group.
@@ -251,17 +251,17 @@ Two remarks make the product law precise.
 
 First, the order is the reverse of the circuit interpretation. If a diagram is read left to right, the algebraic product is written right to left, as above. This is the standard convention for operator composition and carries no biquaternion-specific content.
 
-Second, because the map $\tilde Q\mapsto\Phi_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde Q = \exp(i\theta^{\mathrm{pha}})\tilde{W}$, then $\Phi_{\tilde{V}}\circ\Phi_{\tilde Q} = \Phi_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
+Second, because the map $\tilde Q\mapstoΞ_{\tilde Q}$ has kernel $\mathrm{U}(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde Q = \exp(i\theta^{\mathrm{pha}})\tilde{W}$, then $Ξ_{\tilde{V}}\circΞ_{\tilde Q} = Ξ_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
 
 ### Worked Identities
 
 The Hadamard conjugation of the Pauli gates is a compact illustration. The identity $\tilde Q_{\mathrm{Had}}\tilde Q_z\tilde Q_{\mathrm{Had}} = \tilde Q_x$ already displayed says that the circuit "Hadamard, then $Z$, then Hadamard" realises the $X$ gate:
 
 $$
-\Phi_{\tilde Q_{\mathrm{Had}}}\circ\Phi_{\tilde Q_z}\circ\Phi_{\tilde Q_{\mathrm{Had}}} = \Phi_{\tilde Q_{\mathrm{Had}}\tilde Q_z\tilde Q_{\mathrm{Had}}} = \Phi_{\tilde Q_x}.
+Ξ_{\tilde Q_{\mathrm{Had}}}\circΞ_{\tilde Q_z}\circΞ_{\tilde Q_{\mathrm{Had}}} = Ξ_{\tilde Q_{\mathrm{Had}}\tilde Q_z\tilde Q_{\mathrm{Had}}} = Ξ_{\tilde Q_x}.
 $$
 
-The identity $\tilde Q_{\mathrm{Had}}\tilde Q_x\tilde Q_{\mathrm{Had}} = \tilde Q_z$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde Q_{\mathrm{Had}}\tilde Q_y\tilde Q_{\mathrm{Had}} = -\tilde Q_y$ holds only up to the central phase $-e_t$; as gates, $\Phi_{\tilde Q_{\mathrm{Had}}}\circ\Phi_{\tilde Q_y}\circ\Phi_{\tilde Q_{\mathrm{Had}}} = \Phi_{\tilde Q_y}$.
+The identity $\tilde Q_{\mathrm{Had}}\tilde Q_x\tilde Q_{\mathrm{Had}} = \tilde Q_z$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde Q_{\mathrm{Had}}\tilde Q_y\tilde Q_{\mathrm{Had}} = -\tilde Q_y$ holds only up to the central phase $-e_t$; as gates, $Ξ_{\tilde Q_{\mathrm{Had}}}\circΞ_{\tilde Q_y}\circΞ_{\tilde Q_{\mathrm{Had}}} = Ξ_{\tilde Q_y}$.
 
 Non-commuting gates give distinct circuits. For example, the two orderings of a Hadamard and a controlled gate differ, as they do in standard circuit notation; the framework expresses this as the failure of $\tilde Q_{\mathrm{Had}}\otimes e_t$ and the controlled gate to commute in $\mathbb{B}\otimes\mathbb{B}$. Composition is the algebra product, and the algebra is non-commutative.
 
@@ -408,7 +408,7 @@ $$
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
 $$
 
-The right-hand side is the **Bell idempotent** $\tilde\Pi_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|\Phi^+\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
+The right-hand side is the **Bell idempotent** $\tilde\Pi_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|Ξ^{+}\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
 
 The whole circuit is thus the single element $\tilde{W} = \tilde{Q}_{\tilde Q_x}(\tilde Q_{\mathrm{Had}}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
@@ -423,10 +423,10 @@ The output is not a product of idempotents; its partial trace is $\tfrac12 e_t$,
 
 The read list for this article closes with *Quantum Channels and the Reversible/Irreversible Dichotomy*, and the contrast between the two is the conceptual content of the gate formalism.
 
-A **state map** is a completely positive, trace-preserving map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and written in Kraus form $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:
+A **state map** is a completely positive, trace-preserving map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and written in Kraus form $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l\tilde{K}_l^{*}\tilde{K}_l = e_t$. The dichotomy is:
 
 $$
-\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde Q}\ \text{for a }{}^{*}\text{-unitary } \tilde Q \quad\Longleftrightarrow\quad \Phi \text{ is a gate.}
+\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad Ξ = Ξ_{\tilde Q}\ \text{for a }{}^{*}\text{-unitary } \tilde Q \quad\Longleftrightarrow\quad Ξ \text{ is a gate.}
 $$
 
 Equivalently, a channel is a gate if and only if it preserves purity, and if and only if it is an inner automorphism of the algebra. Three consequences organise the distinction.
@@ -436,7 +436,7 @@ Equivalently, a channel is a gate if and only if it preserves purity, and if and
 **Irreversibility is a sum.** A channel is irreversible precisely when its Kraus rank is at least two, i.e. when it is a *sum* of conjugations rather than one conjugation. The canonical example is **dephasing** along $\vec u_{\mathrm r}$,
 
 $$
-\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p\left(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\right),
+Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p\left(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\right),
 $$
 
 which acts on the Bloch vector as $\vec r\mapsto(1-p)\vec r + p(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r}$. Its Bloch matrix is $\operatorname{diag}(1-p,1-p,1)$ in the eigenbasis of $\vec u_{\mathrm r}$, of determinant $(1-p)^2$. A gate acts by a rotation, whose Bloch matrix has determinant $+1$ and is orthogonal; hence for $0<p\leq 1$ the dephasing map **is not a gate**, and no representative of it is a single $*$-unitary conjugation. It is the canonical irreversible channel, and the companion article on decoherence analyses its effect on idempotency in detail.
@@ -446,7 +446,7 @@ which acts on the Bloch vector as $\vec r\mapsto(1-p)\vec r + p(\vec u_{\mathrm 
 $$
 \tilde{Q}_{\tilde Q} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde Q \quad\text{(a gate)},
 \qquad
-\Phi(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2 \quad\text{(a channel)}.
+Ξ(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2 \quad\text{(a channel)}.
 $$
 
 In the first, the idempotents sit inside a **single $*$-unitary element** and the sum is over the two control branches; both branches survive, the coherence between them is retained, and the result is reversible. In the second, the state itself is replaced by the sum of its two projected pieces; the coherence between the branches is discarded, the map contracts the Bloch ball, and the result is irreversible. This is the algebraic content of the familiar statement that a controlled gate is a measurement made coherent: the difference is not in the idempotents but in whether the sum is taken inside one element or between two conjugated states. It is the same reversible/irreversible dichotomy the framework already expresses as $*$-unitary versus idempotent acting elements.
@@ -513,7 +513,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde\Pi_{1,2}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | Complementary idempotents |
 | $\tilde Q\tilde Q^{*}=e_t$ | Gate (matrix-unitary element); $\mathrm{U}(2)$ |
 | $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
-| $\Phi_{\tilde Q}(\tilde{Ϛ})=\tilde Q\tilde{Ϛ}\tilde Q^{*}$ | Rotor conjugation (gate action) |
+| $Ξ_{\tilde Q}(\tilde{Ϛ})=\tilde Q\tilde{Ϛ}\tilde Q^{*}$ | Rotor conjugation (gate action) |
 | $\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Pauli gates |
 | $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
@@ -523,8 +523,8 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{Q}_{\tilde Q}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde Q$ | Controlled gate |
 | $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
 | $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Swap gate |
-| $\Phi(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel (irreversible, not a gate) |
+| $Ξ(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
+| $Ξ^{\mathrm{deph}}_p$ | Dephasing channel (irreversible, not a gate) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

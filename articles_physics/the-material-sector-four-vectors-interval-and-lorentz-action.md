@@ -106,7 +106,7 @@ $$
 with the boost factor on the left. A pure boost is the Hermitian positive unit-norm element
 
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
 
 and a pure spatial rotation is the real quaternion
@@ -167,7 +167,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 Every entry has the same structure: an imaginary scalar part, which is the time component, and a real vector part, which is the spatial one. Every entry transforms by rotor conjugation, with a boost rotor for a change of velocity and a rotation rotor for a change of spatial frame. The norm is the invariant of the entry: the interval for the position, $-c^2$ for the velocity, $-m^2c^2$ for the momentum, zero for the wavevector of light.
 
-The **mass shell** is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** of the table is orthogonal to the four-velocity, $\tilde K_{\mathrm f}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.
+The **mass shell** is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\xi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** of the table is orthogonal to the four-velocity, $\tilde K_{\mathrm f}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.
 
 **The boundary.** The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.
 
@@ -253,13 +253,13 @@ The action preserves the norm when the acting element has unit norm, and then it
 
 **A light ray.** Take $\tilde Q=i e_t+\vec e_x$. Then $\langle\tilde Q\rangle_{\natural}=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.
 
-**A boost of a rest position.** Let $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then
+**A boost of a rest position.** Let $\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)+i\sinh(\theta^{\mathrm{rpd}}/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then
 
 $$
-\tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
+\tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\theta^{\mathrm{rpd}}\,e_t-c\tau\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
 $$
 
-the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
+the standard boost $t'_2=\tau\cosh\theta^{\mathrm{rpd}}$, $x_2=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 

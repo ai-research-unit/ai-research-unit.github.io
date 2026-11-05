@@ -63,7 +63,7 @@ The conditions of the introduction can be stated as a restriction on the algebra
 - a real vector $\vec r(t') \in \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$ for the position;
 - a real vector $\vec p(t')$ for the momentum, equal to $md\vec r/dt'$;
 - a real vector $\vec F = d\vec p/dt'$ for the force;
-- a **central scalar** potential $\tilde{\Phi} = V(|\vec r|)e_t \in \mathbb{M}_+$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
+- a **central scalar** potential $\tilde{Ξ} = V(|\vec r|)e_t \in \mathbb{M}_+$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
 - a central scalar energy $\tilde{E} = E e_t$.
 
 No element of this list has a nonzero vector part in $\mathbb{M}_+$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{M}_-$; the scalar data are entirely in the central part of $\mathbb{M}_+$.

@@ -42,16 +42,16 @@ $$
 
 The rest four-momentum $imc\,e_t$ is central, so the definition reads $\tilde{P} = imc\,\tilde U\tilde U^{*}$; the whole of the velocity is carried by the product $\tilde U\tilde U^{*}$.
 
-A word on signs, because this is where the translation from the source is easiest to get wrong. For a pure boost of rapidity $\psi$ along $\vec u$ the eigenspinor is
+A word on signs, because this is where the translation from the source is easiest to get wrong. For a pure boost of rapidity $\theta^{\mathrm{rpd}}$ along $\vec u$ the eigenspinor is
 
 $$
-\tilde U = \cosh\frac{\psi}{2}\,e_t - i\sinh\frac{\psi}{2}\,\vec u .
+\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u .
 $$
 
 This is the **quaternion conjugate** of the boost biquaternion
 
 $$
-\tilde U_{\text{lab}\to\text{mov}} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u
+\tilde U_{\text{lab}\to\text{mov}} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u
 $$
 
 of *The Lorentz Transformation as a Biquaternionic Rotation*, which carries the laboratory to the moving frame. The sign is fixed by the definition: the eigenspinor carries the **rest frame to the laboratory**, so it is the inverse of the lab-to-moving rotor, and $\tilde U^{\natural} = \tilde U^{-1}$ for a unit rotor.
@@ -221,7 +221,7 @@ $$
 \boxed{\;\tilde{P} = \tilde U\,\bigl(imc\,e_t\bigr)\,\tilde U^{*}\;}
 $$
 
-and it is the natural dynamical variable of a relativistic worldline. For a pure boost of rapidity $\psi$ along $\vec u$ it is $\tilde U = \cosh\frac{\psi}{2}e_t - i\sinh\frac{\psi}{2}\vec u$, the quaternion conjugate of the lab-to-moving boost biquaternion of the companion article.
+and it is the natural dynamical variable of a relativistic worldline. For a pure boost of rapidity $\theta^{\mathrm{rpd}}$ along $\vec u$ it is $\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, the quaternion conjugate of the lab-to-moving boost biquaternion of the companion article.
 
 It obeys the linear equation
 

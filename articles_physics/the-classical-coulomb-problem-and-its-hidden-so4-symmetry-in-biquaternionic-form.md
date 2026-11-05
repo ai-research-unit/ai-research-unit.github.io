@@ -24,7 +24,7 @@ $$
 V(r) = \frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{1}{r} , \qquad \vec F = \frac{ϙ_1ϙ_2}{4\pi\epsilon_0}\frac{\vec u_r}{r^2} .
 $$
 
-Writing $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ puts the force in the Kepler form $\vec F = -\kappa\vec u_r/r^2$: for opposite charges $ϙ_1ϙ_2 < 0$ so $\kappa > 0$ and the force is attractive, while for like charges $\kappa < 0$ and the force is repulsive. The potential $\tilde{\Phi} = V(r)e_t$ is a central scalar in $\mathbb{M}_+$, the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, and the whole central-scalar machinery of the preceding articles applies without change.
+Writing $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ puts the force in the Kepler form $\vec F = -\kappa\vec u_r/r^2$: for opposite charges $ϙ_1ϙ_2 < 0$ so $\kappa > 0$ and the force is attractive, while for like charges $\kappa < 0$ and the force is repulsive. The potential $\tilde{Ξ} = V(r)e_t$ is a central scalar in $\mathbb{M}_+$, the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, and the whole central-scalar machinery of the preceding articles applies without change.
 
 The two-body problem reduces to the one-body form by separating the centre of mass, exactly as in the gravitational case, with $m$ the reduced mass and $\vec r$ the relative coordinate. In the atomic case the heavy charge is a nucleus and the reduced mass is close to the electron mass.
 

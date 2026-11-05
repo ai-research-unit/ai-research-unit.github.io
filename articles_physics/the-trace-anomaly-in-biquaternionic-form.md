@@ -22,7 +22,7 @@ The article proceeds as follows. The next section fixes what is meant by the tra
 
 The classical statement is fixed first, because the anomaly is the deviation from it.
 
-**The stress tensor and its trace.** For a field theory with action $S[\Phi;g]$ on a background metric $g_{\mu\nu}$ the stress tensor is
+**The stress tensor and its trace.** For a field theory with action $S[Ξ;g]$ on a background metric $g_{\mu\nu}$ the stress tensor is
 $$
 T_{\mu\nu} = \frac{2}{\sqrt{|g|}}\frac{\delta S}{\delta g_{\mu\nu}} ,
 $$
@@ -42,11 +42,11 @@ So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant,
 
 **The improved tensor.** For a scalar the canonical tensor is not traceless even for the massless action at the conformal coupling; adding the improvement term
 $$
-T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\chi^2 ,
+T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\xi^2 ,
 \qquad
 \zeta=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\zeta(d-1)\Box\chi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\chi/\partial Q_\mu)^2$, because $\Box\chi^2=2\sum_\mu(\partial\chi/\partial Q_\mu)^2+2\chi\,\Box\chi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\chi/\partial Q_\mu)^2$; the value $\zeta=(d-2)/(4(d-1))$ cancels the two, giving $\zeta=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial Q_\mu\partial Q_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\zeta(d-1)\Box\xi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\xi/\partial Q_\mu)^2$, because $\Box\xi^2=2\sum_\mu(\partial\xi/\partial Q_\mu)^2+2\xi\,\Box\xi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\xi/\partial Q_\mu)^2$; the value $\zeta=(d-2)/(4(d-1))$ cancels the two, giving $\zeta=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
 **The $ict'$ interpretation.** The flat metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the level-2 interpretation of the level-1 form is the material reading $Q_t=ict'$, $Q_k=x_k$, as *Frame and Metric Conventions* fixes. The trace $T_\mu{}_\mu$ is the contraction with $\delta_{\mu\nu}$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
@@ -56,13 +56,13 @@ The one-loop effective action is the determinant of the second variation, and th
 
 **The one-loop trace.** From *The Generating Functional and the Effective Action in Biquaternionic Form* the one-loop effective action is
 $$
-\Gamma_1[\chi;g] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\chi;g] ,
+\Gamma_1[\xi;g] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\xi;g] ,
 $$
 with $S^{(2)}$ the second variation of the classical action. Its response to a Weyl transformation is
 $$
 T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
-and the anomaly is the statement that this is non-zero for a classically Weyl-invariant theory. In the path-integral language the same statement is that the measure $\mathcal{D}\Phi$ is not invariant under the rescaling, or equivalently that the regularised determinant is not; the two languages agree, and both are standard (Capper and Duff 1974; Deser, Duff, and Isham 1976; Duff 1994).
+and the anomaly is the statement that this is non-zero for a classically Weyl-invariant theory. In the path-integral language the same statement is that the measure $\mathcal{D}Ξ$ is not invariant under the rescaling, or equivalently that the regularised determinant is not; the two languages agree, and both are standard (Capper and Duff 1974; Deser, Duff, and Isham 1976; Duff 1994).
 
 **The heat-kernel origin.** Regulating the determinant with a proper-time cutoff, the trace of the heat kernel has the small-$t'$ expansion
 $$
@@ -148,13 +148,13 @@ where $O$ is the operator multiplying the coupling. The relation is standard (th
 
 ## The Chiral Pair and the Mass
 
-**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde\Psi_L$ is the $-1$ part and $\tilde\Psi_R$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
+**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}^{\mathrm{spn}}_L$ is the $-1$ part and $\tilde{Ξ}^{\mathrm{spn}}_R$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
 $$
 \tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k},
 $$
 where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_Q$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box$. Both identities are derived forms, read from the multiplication of the units.
 
-**The mass.** The mass term is the right multiplication $\tilde\Psi\mapsto m\,\tilde\Psi(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde\Psi_L$ into a multiple of $\tilde\Psi_R$ and $\tilde\Psi_R$ into a multiple of $\tilde\Psi_L$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
+**The mass.** The mass term is the right multiplication $\tilde{Ξ}^{\mathrm{spn}}\mapsto m\,\tilde{Ξ}^{\mathrm{spn}}(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}^{\mathrm{spn}}_L$ into a multiple of $\tilde{Ξ}^{\mathrm{spn}}_R$ and $\tilde{Ξ}^{\mathrm{spn}}_R$ into a multiple of $\tilde{Ξ}^{\mathrm{spn}}_L$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
 
 The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
@@ -208,7 +208,7 @@ The first identity is exact, so the second and third are exact; a central differ
 
 ## Summary
 
-The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\chi;g]$ has the conformal variation
+The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\xi;g]$ has the conformal variation
 $$
 \boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
@@ -228,7 +228,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $Q_t=ict'$, $Q_k=x_k$ | The material reading; the substitution is carried by $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | The biquaternionic gradient; on $\mathbb{M}_-$, $Q_t=ict'$ and $Q_k=x_k$, so $\partial/\partial Q_t=\partial/\partial ict'$ |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The chiral pair, the massive dynamics of the field |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | The chiral pair, the massive dynamics of the field |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
@@ -236,8 +236,8 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
 | $\operatorname{tr}(\tilde Q\mapsto a\tilde Q b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}(\tilde Q\mapsto\tilde Q)=4$ |
-| $\tilde\Psi\mapsto m\,\tilde\Psi(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
-| $\tilde\Psi_L$, $\tilde\Psi_R$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
+| $\tilde{Ξ}^{\mathrm{spn}}\mapsto m\,\tilde{Ξ}^{\mathrm{spn}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
+| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 
 ## Further Reading

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-m^2c^2/\hbar^2\right)\tilde{\Phi}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field.
+The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-m^2c^2/\hbar^2\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field.
 
 Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.
 
@@ -25,36 +25,36 @@ The article is organised as follows. The next section fixes the classical field,
 The relativistic scalar field of the framework is the central-valued complex field
 
 $$
-\tilde{\Phi}(\tilde{R})=\chi(\tilde{R})\,e_t,\qquad \chi:\mathbb{R}^{1,3}\to\mathbb{C},
+\tilde{Ξ}(\tilde{R})=\xi(\tilde{R})\,e_t,\qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
-\mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right]
--\frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right]
-=-\,(\partial/\partial Q_t\,\chi^*)(\partial/\partial Q_t\,\chi)-\sum_k(\partial/\partial Q_k\,\chi^*)(\partial/\partial Q_k\,\chi)-\mu^2\chi^*\chi .
+\mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
+-\frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
+=-\,(\partial/\partial Q_t\,\xi^*)(\partial/\partial Q_t\,\xi)-\sum_k(\partial/\partial Q_k\,\xi^*)(\partial/\partial Q_k\,\xi)-\mu^2\xi^*\xi .
 $$
 
 Because $\partial/\partial Q_t=-\tfrac{i}{c}\partial/\partial t'$, the Lagrangian written in the physical time is
 
 $$
-\mathcal{L}=\frac{1}{c^2}|\partial\chi/\partial t'|^2-|\nabla\chi|^2-\mu^2|\chi|^2 .
+\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial t'|^2-|\nabla\xi|^2-\mu^2|\xi|^2 .
 $$
 
 The **conjugate momentum** is
 
 $$
-\pi=\frac{\partial\mathcal{L}}{\partial\left(\partial\chi/\partial t'\right)}=\frac{1}{c^2}\left(\partial\chi/\partial t'\right)^{\,*},\qquad
-\pi^\dagger=\frac{\partial\mathcal{L}}{\partial\left(\partial\chi/\partial t'\right)^{\,*}}=\frac{1}{c^2}\partial\chi/\partial t',
+\pi=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial t'\right)}=\frac{1}{c^2}\left(\partial\xi/\partial t'\right)^{\,*},\qquad
+\pi^\dagger=\frac{\partial\mathcal{L}}{\partial\left(\partial\xi/\partial t'\right)^{\,*}}=\frac{1}{c^2}\partial\xi/\partial t',
 $$
 
-and the Legendre transform is **regular**: $\pi$ determines $\partial\chi/\partial t'$ and conversely, so the phase space is the full space of pairs $(\chi,\pi)$ and no constraint appears. This is the first point of contrast with the two parent quantizations. The Dirac field carried a **second-class** constraint, $\pi-i\psi^\dagger\approx0$, because its equation is first order in time; the Maxwell field carried two **first-class** constraints, $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$, because its potential is a gauge field. The scalar field carries neither. Its equation is second order, so the momentum is independent, and its field is single-component, so there is no gauge redundancy to remove. The canonical structure is therefore taken over from the classical theory without modification — which is the technical reason the quantization below is a transcription with no obstruction and no new structure.
+and the Legendre transform is **regular**: $\pi$ determines $\partial\xi/\partial t'$ and conversely, so the phase space is the full space of pairs $(\xi,\pi)$ and no constraint appears. This is the first point of contrast with the two parent quantizations. The Dirac field carried a **second-class** constraint, $\pi-i\tilde{Ξ}^{\mathrm{spn}\dagger}\approx0$, because its equation is first order in time; the Maxwell field carried two **first-class** constraints, $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$, because its potential is a gauge field. The scalar field carries neither. Its equation is second order, so the momentum is independent, and its field is single-component, so there is no gauge redundancy to remove. The canonical structure is therefore taken over from the classical theory without modification — which is the technical reason the quantization below is a transcription with no obstruction and no new structure.
 
 The equation of motion obtained by varying the action is the parent's biquaternion Klein–Gordon equation,
 
 $$
-\left(\Box-\mu^2\right)\tilde{\Phi}=0 .
+\left(\Box-\mu^2\right)\tilde{Ξ}=0 .
 $$
 
 ## The Field as a Central-Valued Object
@@ -62,12 +62,12 @@ $$
 The value space of the field is the centre, and the reason is structural rather than chosen. A field of spin $0$ carries no Lorentz index; the framework's scalar field is therefore taken to be central-valued, so that its values commute with every element of the algebra. Written in real components, the complex scalar is two real scalars, one in each sector's scalar direction,
 
 $$
-\tilde{\Phi}=\frac{1}{\sqrt2}\Big(\underbrace{\chi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\chi_2\,ie_t}_{\in\,\mathbb{M}_-}\Big),
+\tilde{Ξ}=\frac{1}{\sqrt2}\Big(\underbrace{\xi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{M}_-}\Big),
 \qquad
-\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)=\frac12\left(\chi_1^2+\chi_2^2\right),
+\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)=\frac12\left(\xi_1^2+\xi_2^2\right),
 $$
 
-with $\chi_1,\chi_2$ the two real scalar fields of the sector in the normalization in which the kinetic term is $\frac12[(\partial\chi_1)^2+(\partial\chi_2)^2]$ — the component normalization that the companion articles on the quantized field and on symmetry breaking use throughout — and the complex structure that makes the two into a single complex field is the central scalar imaginary $i$. The scalar field is, in this precise sense, the field of the centre; the spinor module on which the Dirac field lives is not involved.
+with $\xi_1,\xi_2$ the two real scalar fields of the sector in the normalization in which the kinetic term is $\frac12[(\partial\xi_1)^2+(\partial\xi_2)^2]$ — the component normalization that the companion articles on the quantized field and on symmetry breaking use throughout — and the complex structure that makes the two into a single complex field is the central scalar imaginary $i$. The scalar field is, in this precise sense, the field of the centre; the spinor module on which the Dirac field lives is not involved.
 
 The quadratic form of the theory is the biquaternion norm. The material four-wavevector is
 
@@ -79,7 +79,7 @@ $$
 \langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
 $$
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'$. Substituting $\tilde{\Phi}=\chi_0\exp(i\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)e_t$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\vec k^2=\mu^2$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)e_t$ into $\left(\Box-\mu^2\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=\mu^2$, which is the mass-shell condition
 
 $$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_t .
@@ -87,28 +87,28 @@ $$
 
 ## Equal-Time Commutation Relations
 
-Quantization promotes the classical field and its momentum to operators $\chi^{\mathrm{fop}}$, $\chi^{\mathrm{fop}\dagger}$, $\pi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}\dagger}$ and imposes equal-time brackets. Because the field is complex, $\chi$ and $\chi^\dagger$ are independent, and the canonical relations are
+Quantization promotes the classical field and its momentum to operators $\xi^{\mathrm{fop}}$, $\xi^{\mathrm{fop}\dagger}$, $\pi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}\dagger}$ and imposes equal-time brackets. Because the field is complex, $\xi$ and $\xi^\dagger$ are independent, and the canonical relations are
 
 $$
-\boxed{\;\big[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
-=\big[\chi^{\mathrm{fop}\dagger}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}\dagger}(\vec y,t')\big]
+\boxed{\;\big[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
+=\big[\xi^{\mathrm{fop}\dagger}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}\dagger}(\vec y,t')\big]
 =i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\;},
 $$
 
 with
 
 $$
-\big[\chi^{\mathrm{fop}},\chi^{\mathrm{fop}}\big]=\big[\chi^{\mathrm{fop}},\chi^{\mathrm{fop}\dagger}\big]
+\big[\xi^{\mathrm{fop}},\xi^{\mathrm{fop}}\big]=\big[\xi^{\mathrm{fop}},\xi^{\mathrm{fop}\dagger}\big]
 =\big[\pi^{\mathrm{fop}},\pi^{\mathrm{fop}\dagger}\big]=\big[\pi^{\mathrm{fop}},\pi^{\mathrm{fop}}\big]=0 ,
 \qquad
-\big[\chi^{\mathrm{fop}},\pi^{\mathrm{fop}\dagger}\big]=\big[\chi^{\mathrm{fop}\dagger},\pi^{\mathrm{fop}}\big]=0 ,
+\big[\xi^{\mathrm{fop}},\pi^{\mathrm{fop}\dagger}\big]=\big[\xi^{\mathrm{fop}\dagger},\pi^{\mathrm{fop}}\big]=0 ,
 $$
 
 the last two being the cross relations of each of the two independent fields with the momentum conjugate to the other.
 
-In natural units, where $\pi=\left(\partial\chi/\partial t'\right)^{\dagger}$, the first relation reads $[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\left(\partial\chi^{\mathrm{fop}}/\partial t'\right)^{\dagger}(\vec y,t')]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$.
+In natural units, where $\pi=\left(\partial\xi/\partial t'\right)^{\dagger}$, the first relation reads $[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\left(\partial\xi^{\mathrm{fop}}/\partial t'\right)^{\dagger}(\vec y,t')]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$.
 
-The brackets are **commutators**, and the choice is forced, as the companion article *The Spin–Statistics Theorem in Biquaternionic Form* establishes; the three operative reasons may be stated compactly. **Boundedness of the energy:** a commutator makes the particle and antiparticle contributions to the Hamiltonian both positive, whereas an anticommutator would give opposite signs and an energy unbounded below. **Microcausality:** for a spin-$0$ field it is the commutator $[\chi^{\mathrm{fop}}(x),\chi^{\mathrm{fop}\dagger}(y)]$ that must vanish outside the light cone, and it does; the anticommutator does not, and quantizing with it would correlate causally disconnected measurements. **Positivity of the norm:** the symmetric Fock space built on the one-particle space has positive-definite inner product, while the antisymmetric projection of a bosonic one-particle space is not the structure the field equation's solution space supports. The three reasons point the same way for a field of integer spin; the general theorem is not rederived here.
+The brackets are **commutators**, and the choice is forced, as the companion article *The Spin–Statistics Theorem in Biquaternionic Form* establishes; the three operative reasons may be stated compactly. **Boundedness of the energy:** a commutator makes the particle and antiparticle contributions to the Hamiltonian both positive, whereas an anticommutator would give opposite signs and an energy unbounded below. **Microcausality:** for a spin-$0$ field it is the commutator $[\xi^{\mathrm{fop}}(x),\xi^{\mathrm{fop}\dagger}(y)]$ that must vanish outside the light cone, and it does; the anticommutator does not, and quantizing with it would correlate causally disconnected measurements. **Positivity of the norm:** the symmetric Fock space built on the one-particle space has positive-definite inner product, while the antisymmetric projection of a bosonic one-particle space is not the structure the field equation's solution space supports. The three reasons point the same way for a field of integer spin; the general theorem is not rederived here.
 
 The scalar case has one feature the two parent cases do not. Because the field is single-component and the Legendre transform regular, the canonical relation is imposed **directly**, without the Dirac-bracket modification the Dirac field required. There is no constraint surface to project onto and no gauge orbit to fix. What the algebra does not supply is not a constraint resolution but the ladder itself, and that is the subject of the section after next.
 
@@ -117,14 +117,14 @@ The scalar case has one feature the two parent cases do not. Because the field i
 The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\mu^2}$ and $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the quantized field expands as
 
 $$
-\boxed{\;\chi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\boxed{\;\xi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
 \left(a^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x)\right)\;},
 $$
 
 and its adjoint as
 
 $$
-\chi^{\mathrm{fop}\dagger}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\xi^{\mathrm{fop}\dagger}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
 \left(b^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x)+{a^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x)\right).
 $$
 
@@ -142,7 +142,7 @@ $$
 
 The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/(2\pi)^3$ are the standard Lorentz-invariant ones and are inherited.
 
-For a **real** (neutral) scalar field the field is Hermitian, $\chi^{\mathrm{fop}}=\chi^{\mathrm{fop}\dagger}$, which forces $b^{\mathrm{fop}}_{\vec p}=a^{\mathrm{fop}}_{\vec p}$; there is one set of modes, the field creates and destroys its own antiparticle, and the charge below vanishes identically. For a **complex** (charged) field the two sets are independent. The biquaternion framework does not by itself prefer either: the real field is a Hermitian central-valued operator field, the complex field a pair of them related by the central phase, and the distinction is the standard one.
+For a **real** (neutral) scalar field the field is Hermitian, $\xi^{\mathrm{fop}}=\xi^{\mathrm{fop}\dagger}$, which forces $b^{\mathrm{fop}}_{\vec p}=a^{\mathrm{fop}}_{\vec p}$; there is one set of modes, the field creates and destroys its own antiparticle, and the charge below vanishes identically. For a **complex** (charged) field the two sets are independent. The biquaternion framework does not by itself prefer either: the real field is a Hermitian central-valued operator field, the complex field a pair of them related by the central phase, and the distinction is the standard one.
 
 ## The Mode Algebra and the Fock Space
 
@@ -156,10 +156,10 @@ $$
 \big[a^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger\big]=0\;},
 $$
 
-with all other commutators vanishing. The equal-time canonical relation is recovered from these: the positive- and negative-frequency branches enter the commutator $[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\left(\partial\chi^{\mathrm{fop}}/\partial t'\right)^{\dagger}(\vec y,t')]$ with opposite phases, the terms that survive combine into a single momentum integral, and
+with all other commutators vanishing. The equal-time canonical relation is recovered from these: the positive- and negative-frequency branches enter the commutator $[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\left(\partial\xi^{\mathrm{fop}}/\partial t'\right)^{\dagger}(\vec y,t')]$ with opposite phases, the terms that survive combine into a single momentum integral, and
 
 $$
-\big[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
+\big[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
 =i\hbar\int\!\frac{d^3p}{(2\pi)^3}\,\exp(\,i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y))
 =i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y).
 $$
@@ -181,7 +181,7 @@ The obstruction to anything more is worth stating precisely, because it distingu
 The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units
 
 $$
-H=\int d^3x\left(\left(\partial\chi^{\mathrm{fop}}/\partial t'\right)^{\dagger} \partial\chi^{\mathrm{fop}}/\partial t'+\nabla\chi^{\mathrm{fop}\dagger}\cdot\nabla\chi^{\mathrm{fop}}+\mu^2\chi^{\mathrm{fop}\dagger}\chi^{\mathrm{fop}}\right).
+H=\int d^3x\left(\left(\partial\xi^{\mathrm{fop}}/\partial t'\right)^{\dagger} \partial\xi^{\mathrm{fop}}/\partial t'+\nabla\xi^{\mathrm{fop}\dagger}\cdot\nabla\xi^{\mathrm{fop}}+\mu^2\xi^{\mathrm{fop}\dagger}\xi^{\mathrm{fop}}\right).
 $$
 
 Substituting the mode expansion and using the commutators gives, before normal ordering,
@@ -214,18 +214,18 @@ The vacuum energy has the same status in this framework as in the parent quantiz
 The commutator of two field operators is not an operator but a multiple of the identity. From the mode algebra,
 
 $$
-\big[\chi^{\mathrm{fop}}(x),\chi^{\mathrm{fop}\dagger}(y)\big]
+\big[\xi^{\mathrm{fop}}(x),\xi^{\mathrm{fop}\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi)^3\,2E_{\vec p}}
 \left(\exp(-ip\cdot(x-y))-\exp(+ip\cdot(x-y))\right)
 \equiv i\Delta(x-y),
 $$
 
-a c-number, the **commutator function** (Pauli–Jordan function) times a central unit; the commutators $[\chi^{\mathrm{fop}},\chi^{\mathrm{fop}}]$ and $[\chi^{\mathrm{fop}\dagger},\chi^{\mathrm{fop}\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a **classical** field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.
+a c-number, the **commutator function** (Pauli–Jordan function) times a central unit; the commutators $[\xi^{\mathrm{fop}},\xi^{\mathrm{fop}}]$ and $[\xi^{\mathrm{fop}\dagger},\xi^{\mathrm{fop}\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a **classical** field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.
 
 Two properties of $\Delta$ are the physical content. At equal times it vanishes,
 
 $$
-\big[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\chi^{\mathrm{fop}\dagger}(\vec y,t')\big]=0,
+\big[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\xi^{\mathrm{fop}\dagger}(\vec y,t')\big]=0,
 $$
 
 because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde{R}-\tilde R_2\rangle_{\natural}>0$, it vanishes as well, which is **microcausality**: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.
@@ -236,7 +236,7 @@ Because the question addressed here is the second-quantization question of the f
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=-(\partial/\partial Q_t\,\chi^*)(\partial/\partial Q_t\,\chi)-\sum_k(\partial/\partial Q_k\,\chi^*)(\partial/\partial Q_k\,\chi)-\mu^2\chi^*\chi$, the conjugate momentum $\pi=c^{-2}\left(\partial\chi/\partial t'\right)^{\,*}$, and the regular Legendre transform.
+- The Lagrangian $\mathcal{L}=-(\partial/\partial Q_t\,\xi^*)(\partial/\partial Q_t\,\xi)-\sum_k(\partial/\partial Q_k\,\xi^*)(\partial/\partial Q_k\,\xi)-\mu^2\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial t'\right)^{\,*}$, and the regular Legendre transform.
 - The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.
 - The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.
 - The symmetric Fock space, the occupation basis, the vacuum, and the number operator.
@@ -254,11 +254,11 @@ Because the question addressed here is the second-quantization question of the f
 
 ## Summary
 
-The biquaternion Klein–Gordon field is quantized by promoting its central-valued representative to an operator-valued field. The classical theory has the action of the companion Noether article, conjugate momentum $\pi=c^{-2}\left(\partial\chi/\partial t'\right)^{\,*}$, and a **regular** Legendre transform: unlike the Dirac case there is no second-class constraint, and unlike the Maxwell case there is no gauge redundancy. The equal-time relations are commutators,
+The biquaternion Klein–Gordon field is quantized by promoting its central-valued representative to an operator-valued field. The classical theory has the action of the companion Noether article, conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial t'\right)^{\,*}$, and a **regular** Legendre transform: unlike the Dirac case there is no second-class constraint, and unlike the Maxwell case there is no gauge redundancy. The equal-time relations are commutators,
 
 $$
-\big[\chi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
-=\big[\chi^{\mathrm{fop}\dagger}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}\dagger}(\vec y,t')\big]
+\big[\xi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}(\vec y,t')\big]
+=\big[\xi^{\mathrm{fop}\dagger}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}\dagger}(\vec y,t')\big]
 =i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
 $$
 
@@ -267,7 +267,7 @@ with all other equal-time brackets vanishing; commutation rather than anticommut
 The field expands in the parent's plane waves,
 
 $$
-\chi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\xi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
 \left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
@@ -287,10 +287,10 @@ The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian |
-| $\tilde{\Phi}=\chi\,e_t$, $\chi=(\chi_1+i\chi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
-| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})]-\mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$ | Scalar Lagrangian density |
+| $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
+| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-\mu^2\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
 | $\mu=mc/\hbar$ | Mass parameter |
-| $\pi=c^{-2}\left(\partial\chi/\partial t'\right)^{\,*}$, $\pi^\dagger=c^{-2}\partial\chi/\partial t'$ | Conjugate momenta; Legendre transform regular |
+| $\pi=c^{-2}\left(\partial\xi/\partial t'\right)^{\,*}$, $\pi^\dagger=c^{-2}\partial\xi/\partial t'$ | Conjugate momenta; Legendre transform regular |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$, $\langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}$ | Material four-wavevector and biquaternion norm |
 | $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2\,e_t$ | Mass-shell condition |
 | $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$, $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | On-shell energy and phase (natural units) |
@@ -299,7 +299,7 @@ The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $\mathcal{F}=\bigoplus_n(\mathcal{H}_1^{\otimes n})_+$ | Bosonic Fock space (symmetric algebra) |
 | $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Normal-ordered Hamiltonian |
 | $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Conserved charge |
-| $i\Delta(x-y)=[\chi^{\mathrm{fop}}(x),\chi^{\mathrm{fop}\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
+| $i\Delta(x-y)=[\xi^{\mathrm{fop}}(x),\xi^{\mathrm{fop}\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ |
 

@@ -32,18 +32,18 @@ Two structural facts will be used repeatedly. First, $\mathbb{B}$ is the complex
 
 ### Linearity, Positivity, and Complete Positivity
 
-A **state map** is a map $\Phi$ sending states to states. We require it to be **linear**. This is the standard framework of quantum operations and a genuine restriction: nonlinear modifications are excluded by the requirement that the map act consistently on mixtures, since a state prepared as a convex combination of ensembles must be transformed in a way that respects the preparation. In the biquaternion language, $\Phi$ is a real-linear map on $\mathbb{M}_+$,
+A **state map** is a map $Ξ$ sending states to states. We require it to be **linear**. This is the standard framework of quantum operations and a genuine restriction: nonlinear modifications are excluded by the requirement that the map act consistently on mixtures, since a state prepared as a convex combination of ensembles must be transformed in a way that respects the preparation. In the biquaternion language, $Ξ$ is a real-linear map on $\mathbb{M}_+$,
 
 $$
-\Phi : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad \Phi(a\tilde{Ϛ}_1 + b\tilde{Ϛ}_2) = a\,\Phi(\tilde{Ϛ}_1) + b\,\Phi(\tilde{Ϛ}_2), \qquad a, b \in \mathbb{R}.
+Ξ : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad Ξ(a\tilde{Ϛ}_1 + b\tilde{Ϛ}_2) = a\,Ξ(\tilde{Ϛ}_1) + b\,Ξ(\tilde{Ϛ}_2), \qquad a, b \in \mathbb{R}.
 $$
 
-Because $\mathbb{B} = \mathbb{M}_+ \oplus i\mathbb{M}_+$ is the complexification of $\mathbb{M}_+$, every real-linear map on $\mathbb{M}_+$ extends uniquely to a **complex-linear map on $\mathbb{B}$**, $\Phi(x + iy) = \Phi(x) + i\Phi(y)$, and it is standard to work with this extension, regarding a quantum operation as a map on $\mathbb{B} \cong M_2(\mathbb{C})$.
+Because $\mathbb{B} = \mathbb{M}_+ \oplus i\mathbb{M}_+$ is the complexification of $\mathbb{M}_+$, every real-linear map on $\mathbb{M}_+$ extends uniquely to a **complex-linear map on $\mathbb{B}$**, $Ξ(x + iy) = Ξ(x) + iΞ(y)$, and it is standard to work with this extension, regarding a quantum operation as a map on $\mathbb{B} \cong M_2(\mathbb{C})$.
 
-The first requirement is **positivity**: $\tilde{Ϛ} \geq 0$ must imply $\Phi(\tilde{Ϛ}) \geq 0$. Positivity alone is not enough. The system may be entangled with a reference system on which $\Phi$ does not act, and a map that is positive on the system alone can fail to be positive on the joint system. **Complete positivity** is the condition that the extended map
+The first requirement is **positivity**: $\tilde{Ϛ} \geq 0$ must imply $Ξ(\tilde{Ϛ}) \geq 0$. Positivity alone is not enough. The system may be entangled with a reference system on which $Ξ$ does not act, and a map that is positive on the system alone can fail to be positive on the joint system. **Complete positivity** is the condition that the extended map
 
 $$
-\Phi \otimes \mathrm{id}_n : \mathbb{B}\otimes M_n(\mathbb{C}) \longrightarrow \mathbb{B}\otimes M_n(\mathbb{C})
+Ξ \otimes \mathrm{id}_n : \mathbb{B}\otimes M_n(\mathbb{C}) \longrightarrow \mathbb{B}\otimes M_n(\mathbb{C})
 $$
 
 be positive for every $n$. A positive but not completely positive map is not a physical process, because acting on half of an entangled pair it can produce an operator with a negative eigenvalue.
@@ -52,23 +52,23 @@ The standard illustration is the **transpose** $\tilde{Q} \mapsto \tilde{Q}^{\ma
 
 ### Normalisation Preservation and the Dual Map
 
-Because a state map must send normalised elements to normalised elements, we require $\langle\Phi(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},e_t\rangle_{*}$ for all states, equivalently $\langle\Phi(\tilde{Q}),e_t\rangle_{*} = \langle\tilde{Q},e_t\rangle$ for all $\tilde{Q} \in \mathbb{B}$; in the $2\times2$ image this is **trace preservation**, $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$. The plain form defines a **dual map** on observables, the Heisenberg-picture representative of $\Phi$, by
+Because a state map must send normalised elements to normalised elements, we require $\langleΞ(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},e_t\rangle_{*}$ for all states, equivalently $\langleΞ(\tilde{Q}),e_t\rangle_{*} = \langle\tilde{Q},e_t\rangle$ for all $\tilde{Q} \in \mathbb{B}$; in the $2\times2$ image this is **trace preservation**, $\mathrm{Tr}(Ξ(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$. The plain form defines a **dual map** on observables, the Heisenberg-picture representative of $Ξ$, by
 
 $$
-\langle\Phi(\tilde{Ϛ}),\tilde{H}\rangle_{*} = \langle\tilde{Ϛ},\Phi^{*}(\tilde{H})\rangle_{*} \qquad \text{for all } \tilde{Ϛ}, \tilde{H}.
+\langleΞ(\tilde{Ϛ}),\tilde{H}\rangle_{*} = \langle\tilde{Ϛ},Ξ^{*}(\tilde{H})\rangle_{*} \qquad \text{for all } \tilde{Ϛ}, \tilde{H}.
 $$
 
-Normalisation preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\langle\Phi(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},\Phi^{*}(e_t)\rangle_{*}$, which equals $\langle\tilde{Ϛ},e_t\rangle_{*}$ for every $\tilde{Ϛ}$ precisely when $\Phi^{*}(e_t) = e_t$. The duality is mediated throughout by the plain form that gives the Born rule; the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ is its $2\times2$ reading.
+Normalisation preservation of $Ξ$ is equivalent to **unitality** of the dual, $Ξ^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\langleΞ(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},Ξ^{*}(e_t)\rangle_{*}$, which equals $\langle\tilde{Ϛ},e_t\rangle_{*}$ for every $\tilde{Ϛ}$ precisely when $Ξ^{*}(e_t) = e_t$. The duality is mediated throughout by the plain form that gives the Born rule; the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ is its $2\times2$ reading.
 
 ### The Kraus Representation
 
-The structure theorem for completely positive maps is the **Kraus representation** (the Choi–Kraus theorem). A map $\Phi$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many **Kraus operators** $\tilde{K}_l \in \mathbb{B}$ with
+The structure theorem for completely positive maps is the **Kraus representation** (the Choi–Kraus theorem). A map $Ξ$ on $\mathbb{B}$ is completely positive if and only if there exist finitely many **Kraus operators** $\tilde{K}_l \in \mathbb{B}$ with
 
 $$
-\boxed{\;\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*}\;} ,
+\boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*}\;} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{jk} \tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -95,14 +95,14 @@ A single term of a multi-term channel need not be trace preserving. Its $\tilde 
 The simplest channel is conjugation by a single **$*$-unitary biquaternion**:
 
 $$
-\Phi_{\tilde Q}(\tilde{Ϛ}) = \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*}, \qquad \tilde Q \in \mathbb{B}, \quad \tilde Q\tilde Q^{*} = e_t .
+Ξ_{\tilde Q}(\tilde{Ϛ}) = \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*}, \qquad \tilde Q \in \mathbb{B}, \quad \tilde Q\tilde Q^{*} = e_t .
 $$
 
 This is a channel with the single Kraus operator $\tilde{K} = \tilde Q$, and it maps states to states because $\tilde Q\tilde{Ϛ}\tilde Q^{*}$ is Hermitian, positive, and of trace one.
 
 Here "$*$-unitary" means $*$-unitary in the matrix sense, $\tilde Q\tilde Q^{*} = e_t$, and the $*$-unitary biquaternions form the group $\mathrm{U}(2) \subset \mathbb{B}$. This must be distinguished from the condition $\tilde Q\tilde Q^{\natural} = e_t$ of unit **biquaternion norm**, which defines $SL(2,\mathbb{C})$ and describes the Lorentz rotors acting on the material sector $\mathbb{M}_-$. A Lorentz boost rotor is Hermitian and hence is **not** matrix-unitary: for a boost, $\tilde Q\tilde Q^{*} = \tilde Q^2 \neq e_t$. Conjugation by a boost does not preserve the trace, so a boost is not a channel. The reversible processes of the informational sector are the *matrix-unitary* conjugations. The distinction is one of sector, not of group type. On $\mathbb{M}_-$ the group $\{\tilde Q:\tilde Q\tilde Q^{\natural}=e_t\}=SL(2,\mathbb{C})$ gives the whole proper orthochronous Lorentz group, up to the double cover; on $\mathbb{M}_+$ only the compact factor acts, so the image is the maximal compact subgroup $\mathrm{U}(2)$. The $\mathbb{M}_+$ transformation is therefore the compact half of the same group, not a second group: Lorentz is boost times rotation, and on $\mathbb{M}_+$ only the rotation survives.
 
-Under $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the state $\Phi_{\tilde Q}(\tilde{Ϛ})$ is again of the form $\tfrac{1}{2}(e_t + i\vec r_2)$ with $|\vec r_2| = |\vec r|$; the scalar part is fixed and the vector part is rotated. Purity, $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, and the spectrum $\lambda_\pm = (1\pm|\vec r|)/2$ are invariant. The $*$-unitary channels are exactly the **rotations of the Bloch ball**. The short name for this action is the **Bloch rotation**, the conjugation $\Phi_{\tilde Q_0}$ by the compact factor $\tilde Q_0$ of the polar decomposition. Its kernel is the central circle $\mathrm{U}(1)$ and its image is $\mathrm{U}(2)/\mathrm{U}(1)\cong SO(3)$: the name records what the states see, a rotation, not the group element that produces it.
+Under $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the state $Ξ_{\tilde Q}(\tilde{Ϛ})$ is again of the form $\tfrac{1}{2}(e_t + i\vec r_2)$ with $|\vec r_2| = |\vec r|$; the scalar part is fixed and the vector part is rotated. Purity, $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, and the spectrum $\lambda_\pm = (1\pm|\vec r|)/2$ are invariant. The $*$-unitary channels are exactly the **rotations of the Bloch ball**. The short name for this action is the **Bloch rotation**, the conjugation $Ξ_{\tilde Q_0}$ by the compact factor $\tilde Q_0$ of the polar decomposition. Its kernel is the central circle $\mathrm{U}(1)$ and its image is $\mathrm{U}(2)/\mathrm{U}(1)\cong SO(3)$: the name records what the states see, a rotation, not the group element that produces it.
 
 ### The One-Parameter Group Generated by a Hamiltonian
 
@@ -141,26 +141,26 @@ The kernel is explicit. For an element with $B\neq0$ the logarithms differ by th
 
 ### Reversibility
 
-The map $\Phi_{\tilde Q}$ is invertible, with inverse $\Phi_{\tilde Q}^{-1} = \Phi_{\tilde Q^{*}} = \Phi_{\tilde Q(-t')}$, again a $*$-unitary channel: $*$-unitary evolution is **reversible**.
+The map $Ξ_{\tilde Q}$ is invertible, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}} = Ξ_{\tilde Q(-t')}$, again a $*$-unitary channel: $*$-unitary evolution is **reversible**.
 
-The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a $*$-unitary element; equivalently, a channel preserves the purity of every state if and only if it is a $*$-unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $\Phi(\tilde{Q}) = \tilde{K}\tilde{Q}\tilde{K}^{*}$ with $\tilde{K}^{*}\tilde{K} = e_t$, so $\tilde{K}$ is $*$-unitary; and a $*$-unitary conjugation has Kraus rank one. Hence
+The converse is the precise statement of the dichotomy. A completely positive, trace-preserving map on $\mathbb{B} \cong M_2(\mathbb{C})$ is invertible, with an inverse that is again completely positive and trace preserving, **if and only if** it is conjugation by a $*$-unitary element; equivalently, a channel preserves the purity of every state if and only if it is a $*$-unitary conjugation. In the Kraus language the criterion is transparent: a channel with Kraus rank one has the form $Ξ(\tilde{Q}) = \tilde{K}\tilde{Q}\tilde{K}^{*}$ with $\tilde{K}^{*}\tilde{K} = e_t$, so $\tilde{K}$ is $*$-unitary; and a $*$-unitary conjugation has Kraus rank one. Hence
 
 $$
-\boxed{\;\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad \Phi = \Phi_{\tilde Q} \text{ for some }{}^{*}\text{-unitary } \tilde Q\;} .
+\boxed{\;\text{reversible} \quad\Longleftrightarrow\quad \text{Kraus rank one} \quad\Longleftrightarrow\quad Ξ = Ξ_{\tilde Q} \text{ for some }{}^{*}\text{-unitary } \tilde Q\;} .
 $$
 
-The kernel of $\tilde Q \mapsto \Phi_{\tilde Q}$ on $\mathbb{M}_+$ is the group of central $*$-unitary elements, the unit circle $\mathrm{U}(1) \subset \mathbb{C}_{\mathbb{B}}$; unitaries differing by a global phase define the same channel. The effective group is $PU(2) \cong SO(3)$, acting on the Bloch ball by rotations — the biquaternion form of the unobservability of global phase.
+The kernel of $\tilde Q \mapsto Ξ_{\tilde Q}$ on $\mathbb{M}_+$ is the group of central $*$-unitary elements, the unit circle $\mathrm{U}(1) \subset \mathbb{C}_{\mathbb{B}}$; unitaries differing by a global phase define the same channel. The effective group is $PU(2) \cong SO(3)$, acting on the Bloch ball by rotations — the biquaternion form of the unobservability of global phase.
 
 ## The Irreversible Case: General Completely Positive Maps
 
 ### Sums of Conjugations and Stinespring Dilation
 
-A general quantum channel is a sum of conjugations, $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily $*$-unitary, since $\tilde{K}^{*}\tilde{K} = e_t$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
+A general quantum channel is a sum of conjugations, $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily $*$-unitary, since $\tilde{K}^{*}\tilde{K} = e_t$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
 
 The information-theoretic picture is that the Kraus operators describe the interaction of the system with an environment that is not observed. This is made precise by the **Stinespring dilation**: every channel can be written
 
 $$
-\boxed{\;\Phi(\tilde{Ϛ}) = \mathrm{Tr}_E\!\left(\tilde{V}\,\tilde{Ϛ}\,\tilde{V}^{*}\right)\;}
+\boxed{\;Ξ(\tilde{Ϛ}) = \mathrm{Tr}_E\!\left(\tilde{V}\,\tilde{Ϛ}\,\tilde{V}^{*}\right)\;}
 $$
 
 for an isometry $\tilde{V}$ into the system tensor an environment, with $\mathrm{Tr}_E$ the partial trace of the companion article on entangled subsystems, and the Kraus operators the environment components of $\tilde{V}$. This is the deep structural statement of the dichotomy: **every irreversible process on the system is the reduction of a reversible evolution on a larger system, followed by discarding the environment.** The irreversibility is entirely the discarding.
@@ -176,7 +176,7 @@ Dephasing, treated next, is unital: it contracts the ball toward an *axis* rathe
 
 ### The Lindblad Form
 
-The infinitesimal version of the dichotomy is the **Lindblad equation** (the Gorini–Kossakowski–Sudarshan–Lindblad form), governing a one-parameter semigroup $\Phi_{t'}$ of channels:
+The infinitesimal version of the dichotomy is the **Lindblad equation** (the Gorini–Kossakowski–Sudarshan–Lindblad form), governing a one-parameter semigroup $Ξ_{t'}$ of channels:
 
 $$
 \boxed{\;\frac{d\tilde{Ϛ}}{dt'}
@@ -194,7 +194,7 @@ with $\tilde{H} \in \mathbb{M}_+$ Hermitian, the jump operators $\tilde K_k \in 
 Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the **dephasing channel** along $\vec u$ is
 
 $$
-\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ})
+\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ})
 = (1-p)\,\tilde{Ϛ}
 + p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right)\;}.
 $$
@@ -219,7 +219,7 @@ $$
 so the fully dephasing map *projects the Bloch vector onto the $\vec u$ axis*. Including the mixture with weight $1-p$,
 
 $$
-\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
+\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
 \qquad
 \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$
@@ -228,15 +228,15 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 
 ### Limiting Cases, Measurement, and Irreversibility
 
-At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
+At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ^{\mathrm{deph}}_1)^2 = Ξ^{\mathrm{deph}}_1$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
 
 $$
-p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{Ϛ}),
+p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}),
 \qquad
 p_\pm = \frac{\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$
 
-as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $\Phi^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
+as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
 
 Write $r_\parallel = \vec u\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,
 
@@ -302,7 +302,7 @@ The dichotomy of this article is the dichotomy of **Kraus rank**: a channel is r
 
 ## Summary
 
-A general state map on the informational sector is a linear map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and required to be completely positive and trace preserving. Complete positivity guarantees that the map remains positive when the system is entangled with a reference system; trace preservation guarantees that it sends states to states. Every such map has a Kraus representation $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the minimal number of Kraus operators is the Choi rank.
+A general state map on the informational sector is a linear map on $\mathbb{M}_+$, extended complex-linearly to $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ and required to be completely positive and trace preserving. Complete positivity guarantees that the map remains positive when the system is entangled with a reference system; trace preservation guarantees that it sends states to states. Every such map has a Kraus representation $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ with $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the minimal number of Kraus operators is the Choi rank.
 
 The reversible/irreversible dichotomy is the dichotomy of Kraus rank. A channel is reversible if and only if it has Kraus rank one, which happens if and only if it is conjugation by a $*$-unitary biquaternion, $\tilde{Ϛ} \mapsto \tilde Q\tilde{Ϛ}\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$. This is exactly the class of inner automorphisms of the algebra, and exactly the class of channels that preserve purity. The one-parameter subgroups are generated by Hamiltonians $\tilde{H} \in \mathbb{M}_+$ through $\tilde Q(t') = \exp(-i\tilde{H}t'/\hbar)$, whose generators $-i\tilde{H}/\hbar$ lie in the complementary subspace $\mathbb{M}_-$. A channel is irreversible if and only if its Kraus rank is at least two; the general irreversible channel is a sum of conjugations, and by Stinespring dilation it is the reduction of a reversible evolution on a larger system with the environment discarded.
 
@@ -325,15 +325,15 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\tilde{H} = h_t e_t + i\vec h$ | Observable / Hamiltonian |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
-| $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
+| $Ξ(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
 | $\tilde K_l=\tilde H_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde H_{\mathrm{pos},l}=\sqrt{\tilde K_l\tilde K_l^{*}}$ | Generalized Cartan factorization of a Kraus operator; $\tilde H_{\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry |
-| $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |
+| $Ξ^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |
 | $\tilde Q(t') = \exp(-i\tilde{H}t'/\hbar)$ | One-parameter $*$-unitary group |
 | $-i\tilde{H}/\hbar \in \mathbb{M}_-$ | Generator of reversible evolution |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ |
+| $Ξ^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ |
 | $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing action on the Bloch vector |
-| $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(\Phi)$ |
+| $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

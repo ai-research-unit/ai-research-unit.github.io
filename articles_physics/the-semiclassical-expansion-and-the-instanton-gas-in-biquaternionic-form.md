@@ -120,7 +120,7 @@ $$
 so that the topological susceptibility is
 
 $$
-\boxed{\;\chi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
+\boxed{\;\xi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
 $$
 
 Both were checked on a model instanton sum $Z(\theta)=\sum_{Ϙ=-2}^{2}\exp(iϘ\theta)Z_Ϙ$ with symmetric weights: the periodicity residual $|Z(\theta)-Z(\theta+2\pi)|$ was zero to machine precision, and the numerical second derivative of $2K\cos\theta$ at $\theta=0$ returned $2K$ to six digits, confirming the identification of the susceptibility with the instanton density. The periodicity is a property of the integer charge and not of the framework; the susceptibility is the physical content of the semiclassical sum.
@@ -201,7 +201,7 @@ $$
 Z_1^{\mathrm{cl}}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
 $$
 
-with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\chi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
+with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
 The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
@@ -219,7 +219,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
 | $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function |
-| $\mathcal E(\theta)$, $\chi_t$ | Vacuum energy density and topological susceptibility |
+| $\mathcal E(\theta)$, $\xi_t$ | Vacuum energy density and topological susceptibility |
 | $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |
 | $8k$, $8k-3$ | ADHM moduli dimensions; collective-coordinate count |
 | $I_2=\vec E\cdot\vec B$ | Abelian topological density (framework invariant) |

@@ -30,9 +30,9 @@ The companion articles supply the pieces:
 A state that evolves under a time-independent Hamiltonian $\tilde{H}$ acquires the phase
 
 $$
-\psi(t') = \exp(-\frac{i}{\hbar}\tilde{H}t')\,\psi(0),
+\tilde{Ξ}^{\mathrm{spn}}(t') = \exp(-\frac{i}{\hbar}\tilde{H}t')\,\tilde{Ξ}^{\mathrm{spn}}(0),
 \qquad\text{so}\qquad
-\psi(T) = \exp(-\frac{i}{\hbar}E\,T)\,\psi(0)
+\tilde{Ξ}^{\mathrm{spn}}(T) = \exp(-\frac{i}{\hbar}E\,T)\,\tilde{Ξ}^{\mathrm{spn}}(0)
 $$
 
 for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar}\int_0^T E\,dt'$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde{H}\rangle$, and the same statement holds with $\int_0^T\langle\tilde{H}\rangle\,dt'/\hbar$.
@@ -41,17 +41,17 @@ The dynamical phase is not what this article is about. It is removed by a standa
 
 ### The Aharonov–Anandan Phase
 
-Let $|\psi(t')\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\psi(T)\rangle = \exp(i\theta^{\mathrm{pha}}_{\mathrm{tot}})|\psi(0)\rangle$ for some real $\theta^{\mathrm{pha}}_{\mathrm{tot}}$. Define
+Let $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\tilde{Ξ}^{\mathrm{spn}}(T)\rangle = \exp(i\theta^{\mathrm{pha}}_{\mathrm{tot}})|\tilde{Ξ}^{\mathrm{spn}}(0)\rangle$ for some real $\theta^{\mathrm{pha}}_{\mathrm{tot}}$. Define
 
 $$
-\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\psi(t')|\tilde{H}(t')|\psi(t')\rangle\,dt' .
+\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{Ξ}^{\mathrm{spn}}(t')|\tilde{H}(t')|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle\,dt' .
 $$
 
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the trace:
 
 $$
 \langle\tilde{H}\rangle = \frac{\langle\tilde{Ϛ},\tilde H\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})}{\operatorname{Tr}(\tilde{Ϛ})}, \qquad
-\theta^{\mathrm{pha}}_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\psi(0)^\dagger\psi(T)) .
+\theta^{\mathrm{pha}}_{\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}}(0)^\dagger\tilde{Ξ}^{\mathrm{spn}}(T)) .
 $$
 
 The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde H\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.
@@ -110,13 +110,13 @@ $$
 
 it returns to its initial position. The spinor returns only up to a phase, which is computed exactly.
 
-In the matrix representation the spinor is $\psi(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is
+In the matrix representation the spinor is $\tilde{Ξ}^{\mathrm{spn}}(0) = (\cos\tfrac{\theta_0}{2},\,\sin\tfrac{\theta_0}{2})^{\!T}$ and the propagator is
 
 $$
 \boxed{\;U(T) = \exp\!\left(+\frac{i}{2}\omega_L T\,\sigma_3\right) = \exp(i\pi\sigma_3) = -I_2\;},
 $$
 
-so the total phase is $\theta^{\mathrm{pha}}_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
+so the total phase is $\theta^{\mathrm{pha}}_{\mathrm{tot}} = \pi$ and $\tilde{Ξ}^{\mathrm{spn}}(T) = -\tilde{Ξ}^{\mathrm{spn}}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
 
 $$
 \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'
@@ -136,7 +136,7 @@ Two limits make the formula transparent. At $\theta_0\to0$ the state is the eige
 
 ### The $4\pi$ Periodicity
 
-The sign change $\psi(T) = -\psi(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,
+The sign change $\tilde{Ξ}^{\mathrm{spn}}(T) = -\tilde{Ξ}^{\mathrm{spn}}(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,
 
 $$
 \tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\vec u_x)\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\vec u_x),
@@ -155,10 +155,10 @@ The physical consequences are standard: the spinor must be rotated by $4\pi$ to 
 The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
 
 $$
-\tilde\Pi = \frac{\psi\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
+\tilde\Pi = \frac{\tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})},
 $$
 
-and a spinor phase $\psi\mapsto \exp(i\alpha)\psi$ cancels between $\psi$ and $\psi^\dagger$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\tilde{Ξ}^{\mathrm{spn}}\mapsto \exp(i\alpha)\tilde{Ξ}^{\mathrm{spn}}$ cancels between $\tilde{Ξ}^{\mathrm{spn}}$ and $\tilde{Ξ}^{\mathrm{spn}\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 
@@ -179,13 +179,13 @@ The AA phase is the statement that the spinor phase and the geometry of the loop
 
 ### Gauge Freedom and the Pancharatnam Connection
 
-The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the **Pancharatnam connection**: for two non-orthogonal states $|\psi_1\rangle$, $|\psi_2\rangle$, the relative phase is $\arg\langle\psi_1|\psi_2\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,
+The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the **Pancharatnam connection**: for two non-orthogonal states $|\tilde{Ξ}^{\mathrm{spn}}_1\rangle$, $|\tilde{Ξ}^{\mathrm{spn}}_2\rangle$, the relative phase is $\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,
 
 $$
-\arg\langle\psi_1|\psi_2\rangle = \arg\,\mathrm{Tr}\!\left(\psi_1^\dagger\psi_2\right),
+\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle = \arg\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{spn}\dagger}_1\tilde{Ξ}^{\mathrm{spn}}_2\right),
 $$
 
-and it is gauge-covariant: a rephasing $\psi_a\mapsto \exp(i\alpha_a)\psi_a$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
+and it is gauge-covariant: a rephasing $\tilde{Ξ}^{\mathrm{spn}}_a\mapsto \exp(i\alpha_a)\tilde{Ξ}^{\mathrm{spn}}_a$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
 
 ## The Rotating Field at Arbitrary Rate
 
@@ -283,7 +283,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\tilde{H} = -\tfrac{\hbar\omega_L}{2}i\vec e_z$ | Fixed-field Hamiltonian |
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
-| $\psi$ | Spinor; carries the geometric phase |
+| $\tilde{Ξ}^{\mathrm{spn}}$ | Spinor; carries the geometric phase |
 | $\gamma_{AA} = \theta^{\mathrm{pha}}_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt'$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |
 | $\gamma^{\mathrm{geo}} = -\tfrac12\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
@@ -294,7 +294,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\tilde u_{\mathrm r}(t') = \exp(-\tfrac{\omega t'}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
 | $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
-| $\arg\langle\psi_1|\psi_2\rangle = \arg\mathrm{Tr}(\psi_1^\dagger\psi_2)$ | Pancharatnam connection |
+| $\arg\langle\tilde{Ξ}^{\mathrm{spn}}_1|\tilde{Ξ}^{\mathrm{spn}}_2\rangle = \arg\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}_1\tilde{Ξ}^{\mathrm{spn}}_2)$ | Pancharatnam connection |
 
 ## Further Reading
 

@@ -90,29 +90,29 @@ $$
 \mathrm{Sc}(\tilde{V}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$
 
-It is convenient to parametrize the hyperboloid by the **rapidity** $\psi$, defined by
+It is convenient to parametrize the hyperboloid by the **rapidity** $\theta^{\mathrm{rpd}}$, defined by
 
 $$
-v = c\tanh\psi,
+v = c\tanh\theta^{\mathrm{rpd}},
 \qquad
-\gamma = \cosh\psi,
+\gamma = \cosh\theta^{\mathrm{rpd}},
 \qquad
-\gamma v = c\sinh\psi,
+\gamma v = c\sinh\theta^{\mathrm{rpd}},
 $$
 
 so that
 
 $$
-\tilde{V} = \cosh\psi\,(ic\,e_t) + \sinh\psi\,(c\,\vec u)
-= ic\cosh\psi\,e_t + c\sinh\psi\,\vec u,
+\tilde{V} = \cosh\theta^{\mathrm{rpd}}\,(ic\,e_t) + \sinh\theta^{\mathrm{rpd}}\,(c\,\vec u)
+= ic\cosh\theta^{\mathrm{rpd}}\,e_t + c\sinh\theta^{\mathrm{rpd}}\,\vec u,
 $$
 
-with $\vec u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ reads $c^2(-\cosh^2\psi + \sinh^2\psi) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
+with $\vec u = \vec v/v$ the unit direction of motion. In this parametrization the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ reads $c^2(-\cosh^2\theta^{\mathrm{rpd}} + \sinh^2\theta^{\mathrm{rpd}}) = -c^2$, which is an identity. The rapidity is the additive parametrization of the velocity: for motion along a fixed direction the composition of two velocities corresponds to the sum of their rapidities,
 
 $$
-\psi_{\mathrm{tot}} = \psi_1 + \psi_2,
+\theta^{\mathrm{rpd}}_{\mathrm{tot}} = \theta^{\mathrm{rpd}}_1 + \theta^{\mathrm{rpd}}_2,
 \qquad
-\frac{v_1 + v_2}{1 + v_1v_2/c^2} = c\tanh(\psi_1+\psi_2),
+\frac{v_1 + v_2}{1 + v_1v_2/c^2} = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2),
 $$
 
 which is the standard velocity-addition law and is reproduced by the rotor composition of the next section. That the additive variable is a hyperbolic angle, and not the velocity itself, is the algebraic statement that the mass-shell hyperboloid is not a vector space.
@@ -172,30 +172,30 @@ $$
 with $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
 
 $$
-\tilde U_{\mathrm b}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
+\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}},\vec u) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
 \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} ,
 $$
 
-with $\psi$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\vec u$ to the rest four-velocity $ic\,e_t$.
+with $\theta^{\mathrm{rpd}}$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\theta^{\mathrm{rpd}}\,\vec u$ to the rest four-velocity $ic\,e_t$.
 
-Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\psi_1$ and the second $\psi_2$ along the same direction, the product is the boost of rapidity $\psi_1+\psi_2$, and the composed velocity is
+Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\theta^{\mathrm{rpd}}_1$ and the second $\theta^{\mathrm{rpd}}_2$ along the same direction, the product is the boost of rapidity $\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2$, and the composed velocity is
 
 $$
-v_{\mathrm{tot}} = c\tanh(\psi_1+\psi_2) = \frac{v_1+v_2}{1+v_1v_2/c^2},
+v_{\mathrm{tot}} = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2) = \frac{v_1+v_2}{1+v_1v_2/c^2},
 $$
 
-which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\psi$ along $\vec u$ acts on the rest four-velocity as
+which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\theta^{\mathrm{rpd}}$ along $\vec u$ acts on the rest four-velocity as
 
 $$
 \tilde U_{\mathrm b}\,\bigl(ic\,e_t\bigr)\,\tilde U_{\mathrm b}^{*}
 = ic\,e_t\,\tilde U_{\mathrm b}^2
-= ic\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u\right)
-= ic\cosh\psi\,e_t - c\sinh\psi\,\vec u
+= ic\left(\cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u\right)
+= ic\cosh\theta^{\mathrm{rpd}}\,e_t - c\sinh\theta^{\mathrm{rpd}}\,\vec u
 = \gamma\left(ic\,e_t - \vec v\right),
 $$
 
-using that $ic\,e_t$ is central, that $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ for a pure boost, and that $\tilde U_{\mathrm b}^2 = \cosh\psi + i\sinh\psi\,\vec u$. The quaternion-conjugate rotor $\tilde U_{\mathrm b}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
+using that $ic\,e_t$ is central, that $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ for a pure boost, and that $\tilde U_{\mathrm b}^2 = \cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u$. The quaternion-conjugate rotor $\tilde U_{\mathrm b}^{\natural} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, which is the boost of rapidity $-\theta^{\mathrm{rpd}}$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
 
 For **non-collinear** boosts the rotors do not commute, and their product is not a pure boost: it is a boost together with a rotation. The rotation is the Thomas–Wigner rotation, and it is the group-theoretic statement that the boosts do not form a subgroup. It is not needed for the free particle's kinematics, and it is treated in its own right in the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; here it is enough to record that the free four-velocity composes by rotor multiplication, and that the composition is associative while the velocity addition it induces is not.
 
@@ -337,7 +337,7 @@ E = \gamma mc^2,
 \vec p = \gamma m\vec v,
 $$
 
-satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{V} = ic\cosh\psi\,e_t + c\sinh\psi\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
+satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\theta^{\mathrm{rpd}}$, with $v = c\tanh\theta^{\mathrm{rpd}}$ and $\gamma = \cosh\theta^{\mathrm{rpd}}$, makes the four-velocity $\tilde{V} = ic\cosh\theta^{\mathrm{rpd}}\,e_t + c\sinh\theta^{\mathrm{rpd}}\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
@@ -364,11 +364,11 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $d\tau^2 = -\langle d\tilde{R}\rangle_{\natural}/c^2$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity, unit timelike |
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
-| $\psi$, $v = c\tanh\psi$, $\gamma=\cosh\psi$ | Rapidity |
+| $\theta^{\mathrm{rpd}}$, $v = c\tanh\theta^{\mathrm{rpd}}$, $\gamma=\cosh\theta^{\mathrm{rpd}}$ | Rapidity |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum |
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
-| $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
 | $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

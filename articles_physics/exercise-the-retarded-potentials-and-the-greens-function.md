@@ -6,7 +6,7 @@ This is an exercise in the electromagnetism series. It takes the wave equation f
 
 **What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A} = i\,a'_te_t + \vec A$; the four-current $\tilde J = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box\tilde{A} = -\mu\tilde J$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
 
-**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\chi^{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
+**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G^{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t' - R/c)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi^{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
 **The result.** With $R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta + \partial^2/\partial Q_t^2$ is
 $$
@@ -19,7 +19,7 @@ $$
 $$
 whose scalar and vector parts are the standard retarded potentials
 $$
-\chi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho(\vec y,\,t' - R/c)}{R}\,d^3y,
+\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho(\vec y,\,t' - R/c)}{R}\,d^3y,
 \qquad
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J(\vec y,\,t' - R/c)}{R}\,d^3y .
 $$
@@ -80,11 +80,11 @@ where in the last step the delta picks out $\tilde R_2 = \tilde{Q}$. The derivat
 $$
 G_u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \frac{u(g)}{4\pi R}.
 $$
-Write $\chi^{\mathrm{scp}} = 1/(4\pi R)$, so that $G_u = \chi^{\mathrm{scp}}\, u(g)$. The chain rule gives
+Write $\xi^{\mathrm{scp}} = 1/(4\pi R)$, so that $G_u = \xi^{\mathrm{scp}}\, u(g)$. The chain rule gives
 $$
-\Delta G_u = u\,\Delta\chi^{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\chi^{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\chi^{\mathrm{scp}}\,\Delta g + \frac{d^2u}{dg^2}\,\chi^{\mathrm{scp}}\,(\nabla g)^2,
+\Delta G_u = u\,\Delta\xi^{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\xi^{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi^{\mathrm{scp}}\,\Delta g + \frac{d^2u}{dg^2}\,\xi^{\mathrm{scp}}\,(\nabla g)^2,
 \qquad
-\partial^2/\partial {t'}^2 G_u = \frac{d^2u}{dg^2}\,\chi^{\mathrm{scp}},
+\partial^2/\partial {t'}^2 G_u = \frac{d^2u}{dg^2}\,\xi^{\mathrm{scp}},
 $$
 and therefore, with $\Box = \Delta + \partial^2/\partial Q_t^2$,
 $$
@@ -178,7 +178,7 @@ G^{\mathrm{ret}} - G_{\mathrm{adv}} = \frac{1}{4\pi R}\Bigl[\delta\!\left(t' - \
 \qquad
 \Box\,(G^{\mathrm{ret}} - G_{\mathrm{adv}}) = 0 .
 $$
-The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G^{\mathrm{ret}}\,\Box\chi = \int G_{\mathrm{adv}}\,\Box\chi = -\chi(0)$ for the Gaussian test function, while $\int (G^{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box\chi = 0$.
+The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G^{\mathrm{ret}}\,\Box\xi = \int G_{\mathrm{adv}}\,\Box\xi = -\xi(0)$ for the Gaussian test function, while $\int (G^{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box\xi = 0$.
 
 **(c) Which boundary condition selects which.** The retarded kernel is selected by the *causality* (outgoing-radiation, Sommerfeld) condition: the field at an event is determined by the sources in its past light cone, and there is no radiation arriving from past null infinity. In the contour language this is the prescription in which both $\omega$-poles are displaced *below* the real axis, so that the field vanishes for $t'$ earlier than the source and is supported on the future cone. The advanced kernel is selected by the time-reversed condition: the field is determined by sources in its future light cone, with no radiation escaping to future null infinity, corresponding to both poles displaced *above* the real axis and support on the past cone. The Feynman choice, one pole on each side, is the time-ordered combination; it is neither retarded nor advanced, and its relation to the two is treated in the companion article on the Feynman propagator. The two choices and the two contour prescriptions were checked numerically on the mode integral of Problem 2(c): the retarded contour gives support for $t'>0$ and the advanced contour for $t'<0$, with residuals at the $10^{-4}$ to $10^{-3}$ level set by the finite displacement $\epsilon$.
 
@@ -200,7 +200,7 @@ the $t'_2$ integral having been performed against the delta. Every source contri
 $$
 i\,a'_t = \frac{\mu}{4\pi}\int\frac{ic\,\rho^{\mathrm{ret}}}{R}\,d^3y
 \;\Longrightarrow\;
-\chi^{\mathrm{scp}} = \frac{\mu c^2}{4\pi}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y = \frac{1}{4\pi\epsilon}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
+\xi^{\mathrm{scp}} = \frac{\mu c^2}{4\pi}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y = \frac{1}{4\pi\epsilon}\int\frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
 $$
 using $\mu c^2 = \mu/(\epsilon\mu) = 1/\epsilon$. The vector part is unchanged by the extraction,
 $$
@@ -212,7 +212,7 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 
 **(c) The Lorenz gauge is automatic.** Write the gauge scalar
 $$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c^2}\partial/\partial t'\,\chi^{\mathrm{scp}} + \mathrm{div}\,\vec A,
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c^2}\partial/\partial t'\,\xi^{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
 which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial Q_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}$ solves $\Box\tilde{A} = -\mu\tilde J$ and $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$, applying $\tilde{\nabla}^{\natural}$ and taking the scalar part gives
 $$
@@ -226,7 +226,7 @@ where the last equality is the conservation of charge, and where the derivatives
 
 **Solution. (a) The static reduction.** If $\partial/\partial t'\,\rho = 0$ and $\partial/\partial t'\,\vec J = 0$, then $\rho(\vec y, t' - R/c) = \rho(\vec y)$ and $\vec J(\vec y, t' - R/c) = \vec J(\vec y)$, and the retarded time drops out of the integrand:
 $$
-\chi^{\mathrm{scp}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon}\int\frac{\rho(\vec y)}{R}\,d^3y,
+\xi^{\mathrm{scp}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon}\int\frac{\rho(\vec y)}{R}\,d^3y,
 \qquad
 \vec A(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{\mu}{4\pi}\int\frac{\vec J(\vec y)}{R}\,d^3y,
 \qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|.
@@ -235,13 +235,13 @@ The kernel that was $\frac{\delta(t'-R/c)}{4\pi R}$ becomes the Newton kernel $\
 
 **(b) The static equations and the known solutions.** With $\partial/\partial t' \to 0$ the operator reduces to the Laplacian, $\Box \to \Delta$, and the identity $\Delta\frac{1}{R} = -4\pi\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$ gives
 $$
-\Delta\chi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{\epsilon},
+\Delta\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{\epsilon},
 $$
 and likewise $\Delta\vec A = -\mu\vec J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A} = -\mu\tilde J$, which is the static limit of $\Box\tilde{A} = -\mu\tilde J$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
-\boxed{\;\chi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon R},
+\boxed{\;\xi^{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon R},
 \qquad
-\vec E = -\nabla\chi^{\mathrm{scp}} = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
+\vec E = -\nabla\xi^{\mathrm{scp}} = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
 \qquad
 \tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2}\;}
 $$
@@ -294,7 +294,7 @@ derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u
 
 The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t'+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
-\boxed{\;\chi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
+\boxed{\;\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho^{\mathrm{ret}}}{R}\,d^3y,
 \qquad
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J^{\mathrm{ret}}}{R}\,d^3y,
 \qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y|\;}

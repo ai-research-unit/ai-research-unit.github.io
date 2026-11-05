@@ -6,7 +6,7 @@ Every biquaternion off the null cone is the ordered product of four factors: a p
 
 $$
 \boxed{\;\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
+=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$
 
 The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
@@ -35,7 +35,7 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | — | $r>0$ | $1$ | dilation by $r^2$ |
 | 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $1$ | multiplication by the scalar |
-| 3 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi_w}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\psi_w}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi_w\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$ |
+| 3 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\tilde{Ξ}^{\mathrm{spn}}_w\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$ |
 | 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
 The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose action is not a sandwich; its action is scalar multiplication.
@@ -44,17 +44,17 @@ The scale and the phase are central, the boost is Hermitian positive and non-com
 
 ## Reading the Eight Numbers
 
-The word returns the physical description of an element in eight real numbers: the scale $r$, the phase $\alpha$, the rapidity $\psi_w$ and the two angles of the boost axis $\vec u_{\mathrm b}$, and the rotation angle $\theta$ and the two angles of the rotor axis $\vec u_{\mathrm r}$.
+The word returns the physical description of an element in eight real numbers: the scale $r$, the phase $\alpha$, the rapidity $\theta^{\mathrm{rpd}}_w$ and the two angles of the boost axis $\vec u_{\mathrm b}$, and the rotation angle $\theta$ and the two angles of the rotor axis $\vec u_{\mathrm r}$.
 
-The first two are the central data, the next three the non-compact data, the last three the compact data. The scale and the phase are fixed by the norm $N$: $r=\lvert N\rvert^{1/2}$ and $\alpha=\tfrac12\arg N$. The word's rapidity $\psi_w$ is fixed by the ratio of the two invariants,
+The first two are the central data, the next three the non-compact data, the last three the compact data. The scale and the phase are fixed by the norm $N$: $r=\lvert N\rvert^{1/2}$ and $\alpha=\tfrac12\arg N$. The word's rapidity $\theta^{\mathrm{rpd}}_w$ is fixed by the ratio of the two invariants,
 
 $$
-\cosh\psi_w=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert N\rvert},
+\cosh\theta^{\mathrm{rpd}}_w=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert N\rvert},
 $$
 
 and the two axes are fixed by the phases of the four complex coordinates. The pair $(N,\langle\tilde Q,\tilde Q\rangle_{*})$ fixes the scale, the phase and the rapidity and cannot fix the two directions: a rotation of the vector part leaves both invariants unchanged and turns the axes.
 
-The word is a parametrization of the eight-dimensional algebra and not a constraint on it. It is surjective onto the units and not injective where an axis degenerates, at $\psi_w=0$ and at $\theta=0$.
+The word is a parametrization of the eight-dimensional algebra and not a constraint on it. It is surjective onto the units and not injective where an axis degenerates, at $\tilde{Ξ}^{\mathrm{spn}}_w=0$ and at $\theta=0$.
 
 ## The Domain
 
@@ -79,7 +79,7 @@ The four-factor word is the reference. The three pairings are its three bracketi
 
 | Pairing | First factor | Second factor | What it separates |
 | --- | --- | --- | --- |
-| Quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | $\exp(i\tilde\Psi)$ | scale and rotor / phase and boost |
+| Quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | $\exp(i\tilde{Ξ}^{\mathrm{spn}})$ | scale and rotor / phase and boost |
 | Hamilton | $\Rho=r\exp(i\alpha)$ | $\exp(\vec U\Theta)$ | scale and phase / boost and rotor |
 | Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$ | $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
 
@@ -88,12 +88,12 @@ The four-factor word is the reference. The three pairings are its three bracketi
 The quaternion pairing writes the element as a **real quaternion modulus** times the exponential of a **real quaternion angle**:
 
 $$
-\boxed{\;\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
+\boxed{\;\tilde Q=\tilde q\,\exp(i\tilde{Ξ}^{\mathrm{spn}}), \qquad
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
-\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
+\exp(i\tilde{Ξ}^{\mathrm{spn}})=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
 $$
 
-The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is the frame: the rotor carries the reference axes to the axes of the element, and $r$ is the scale at which the frame is taken. §*The Three Factors Compared* states it with the other two.
+The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is the frame: the rotor carries the reference axes to the axes of the element, and $r$ is the scale at which the frame is taken. §*The Three Factors Compared* states it with the other two.
 
 ### The Hamilton Pairing
 
@@ -106,7 +106,7 @@ $$
 B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}\;}.
 $$
 
-The modulus is the only central scalar of the three pairings. The axis and the angle carry the boost and the rotor; on aligned axes the real part of $\Theta$ is half the rotation and the imaginary part is half the word's rapidity $\psi_w$, and in general the two do not separate. The physical reading — the mass for a four-momentum, the amplitude otherwise — is developed in *The Hamilton Pairing*, §*The Central Modulus*.
+The modulus is the only central scalar of the three pairings. The axis and the angle carry the boost and the rotor; on aligned axes the real part of $\Theta$ is half the rotation and the imaginary part is half the word's rapidity $\theta^{\mathrm{rpd}}_w$, and in general the two do not separate. The physical reading — the mass for a four-momentum, the amplitude otherwise — is developed in *The Hamilton Pairing*, §*The Central Modulus*.
 
 ### The Cartan Pairing
 
@@ -142,14 +142,14 @@ The redundancy is exactly the scale $r$, which appears in all three factors. Eac
 
 | factor | determined by | blind to |
 | --- | --- | --- |
-| $\tilde q=r\tilde u_{\mathrm r}$ | $r$, the rotation angle and axis | the phase $\alpha$, the rapidity $\psi_w$, the boost axis |
+| $\tilde q=r\tilde u_{\mathrm r}$ | $r$, the rotation angle and axis | the phase $\alpha$, the rapidity $\theta^{\mathrm{rpd}}_w$, the boost axis |
 | $\Rho=r e^{i\alpha}$ | $r$, the phase | the rotation, the boost, both axes |
 | $\tilde Q_H=r\tilde U_{\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
 
 The factors are three **products**, not three terms:
 
 $$
-\tilde Q=\tilde q\,e^{i\tilde\Psi}
+\tilde Q=\tilde q\,e^{i\tilde{Ξ}^{\mathrm{spn}}}
 =\Rho\,e^{\tilde Q_0\Theta}
 =\tilde Q_H\,\tilde Q_0.
 $$
@@ -180,7 +180,7 @@ The quaternion construction uses the **first** split. The physical sectors are t
 
 The three splits and the three pairings are different structures with the same number. A split asks what the algebra is made of; a pairing asks how the product is grouped. The word's four factors are grouped by the pairings and typed by the splits, and neither classification implies the other.
 
-The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is $*$-unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
+The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is $*$-unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
 
 ## The Action on the Sectors and the Subspaces
 
@@ -198,8 +198,8 @@ The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\o
 On the material sector the boost reads
 
 $$
-a_2=a\cosh\psi_w-b_\parallel\sinh\psi_w, \qquad
-b_{\parallel,2}=b_\parallel\cosh\psi_w-a\sinh\psi_w,
+a_2=a\cosh\theta^{\mathrm{rpd}}_w-b_\parallel\sinh\theta^{\mathrm{rpd}}_w, \qquad
+b_{\parallel,2}=b_\parallel\cosh\theta^{\mathrm{rpd}}_w-a\sinh\theta^{\mathrm{rpd}}_w,
 $$
 
 with $a$ the scalar coordinate and $b_\parallel$ the component of the vector part along the boost axis; on the informational sector the two cross terms carry the opposite sign. The difference is the sector sign. The same congruence reads as the Lorentz action on matter and as a positive congruence on the state space.
@@ -213,9 +213,9 @@ On the informational sector the congruence acts on the states $\tilde{Ϛ}=a e_t+
 The rotor conjugates and fixes the scalar part, so it rotates the ball by $\theta$ about $\vec u_{\mathrm r}$ and preserves the trace and the radius. The phase is central and cancels. The scale multiplies $(a,\vec b)$ by $r^{2}$, hence the trace by $r^{2}$, and leaves the radius unchanged. The boost mixes the scalar and the parallel parts and leaves the transverse part alone:
 
 $$
-a_2=a\cosh\psi_w+b_\parallel\sinh\psi_w,
+a_2=a\cosh\theta^{\mathrm{rpd}}_w+b_\parallel\sinh\theta^{\mathrm{rpd}}_w,
 \qquad
-b_{\parallel,2}=b_\parallel\cosh\psi_w+a\sinh\psi_w,
+b_{\parallel,2}=b_\parallel\cosh\theta^{\mathrm{rpd}}_w+a\sinh\theta^{\mathrm{rpd}}_w,
 \qquad
 \vec b_{\perp,2}=\vec b_\perp .
 $$
@@ -223,12 +223,12 @@ $$
 It therefore changes the trace. Normalised by $a_2$, the state moves on the ball by velocity addition along the boost axis,
 
 $$
-r'_\parallel=\frac{r_\parallel+\tanh\psi_w}{1+r_\parallel\tanh\psi_w},
+r'_\parallel=\frac{r_\parallel+\tanh\theta^{\mathrm{rpd}}_w}{1+r_\parallel\tanh\theta^{\mathrm{rpd}}_w},
 \qquad
-\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi_w+r_\parallel\sinh\psi_w},
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta^{\mathrm{rpd}}_w+r_\parallel\sinh\theta^{\mathrm{rpd}}_w},
 $$
 
-with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$ and $\vec r=\vec b/a$. The poles $\pm\vec u_{\mathrm b}$ are fixed and the boundary sphere is preserved; every interior point moves toward $+\vec u_{\mathrm b}$. The boost is a flow of the ball into itself, with strength $\tanh\psi_w$, and not a rotation of it.
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$ and $\vec r=\vec b/a$. The poles $\pm\vec u_{\mathrm b}$ are fixed and the boundary sphere is preserved; every interior point moves toward $+\vec u_{\mathrm b}$. The boost is a flow of the ball into itself, with strength $\tanh\theta^{\mathrm{rpd}}_w$, and not a rotation of it.
 
 The split is therefore clean on the state space. The rotor rotates, the boost translates hyperbolically, the scale dilates the trace, and the phase is invisible. The rotor is the only factor that acts nontrivially and keeps a state on the slice; the boost and the scale carry it off, and the phase does nothing.
 
@@ -238,30 +238,30 @@ The word's third factor has one slot and two jobs.
 
 | element | third factor | exponent angle | relation to the kinematic rapidity |
 | --- | --- | --- | --- |
-| transformation | $\tilde U_{\mathrm b}(\psi_w)=\exp(i\tfrac{\psi_w}{2}\vec u_{\mathrm b})$ | $\psi_w/2$ | $\psi_w=\psi$ |
-| four-vector | $\mathcal B=\exp(-i\psi\vec u_{\mathrm b})=\tilde U_{\mathrm b}(\psi)^{-2}$ | $-\psi$ | $\psi_w=2\psi$ |
+| transformation | $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)=\exp(i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b})$ | $\tilde{Ξ}^{\mathrm{spn}}_w/2$ | $\tilde{Ξ}^{\mathrm{spn}}_w=\tilde{Ξ}^{\mathrm{spn}}$ |
+| four-vector | $\mathcal B=\exp(-i\tilde{Ξ}^{\mathrm{spn}}\vec u_{\mathrm b})=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{-2}$ | $-\tilde{Ξ}^{\mathrm{spn}}$ | $\tilde{Ξ}^{\mathrm{spn}}_w=2\tilde{Ξ}^{\mathrm{spn}}$ |
 
-For a transformation the factor is the frame rotor, and its congruence is the boost of rapidity $\psi_w$. For a four-vector element the factor is the inverse square of the same rotor, and the element is $\tilde Q=r e^{i\alpha}\mathcal B$. The four-momentum is the case $r=mc$, $\alpha=\pi/2$, where $\tilde P=i mc\,\mathcal B$.
+For a transformation the factor is the frame rotor, and its congruence is the boost of rapidity $\theta^{\mathrm{rpd}}_w$. For a four-vector element the factor is the inverse square of the same rotor, and the element is $\tilde Q=r e^{i\alpha}\mathcal B$. The four-momentum is the case $r=mc$, $\alpha=\pi/2$, where $\tilde P=i mc\,\mathcal B$.
 
-The doubling is between the word parameter and the kinematic rapidity of a four-vector. With $\beta=v/c$ and $\beta=\tanh\psi$,
+The doubling is between the word parameter and the kinematic rapidity of a four-vector. With $\beta=v/c$ and $\beta=\tanh\theta^{\mathrm{rpd}}$,
 
 $$
-\cosh\psi_w=\frac{1+\beta^{2}}{1-\beta^{2}}=\cosh(2\psi),
+\cosh\theta^{\mathrm{rpd}}_w=\frac{1+\beta^{2}}{1-\beta^{2}}=\cosh(2\theta^{\mathrm{rpd}}),
 \qquad
-\gamma=\cosh\psi=\cosh\frac{\psi_w}{2}.
+\gamma=\cosh\theta^{\mathrm{rpd}}=\cosh\frac{\theta^{\mathrm{rpd}}_w}{2}.
 $$
 
 Three errors follow, and each is a check.
 
-- Reading the word parameter $\psi_w$ of a four-vector element as its kinematic rapidity doubles the rapidity.
-- Using the frame rotor $\tilde U_{\mathrm b}(\psi)$ where the four-vector factor $\mathcal B=\tilde U_{\mathrm b}(\psi)^{-2}$ belongs halves the rapidity of the four-vector: $i mc\,\tilde U_{\mathrm b}(\psi)$ is a four-vector of rapidity $\psi/2$.
-- Identifying $\gamma$ with $\cosh\psi_w$ instead of $\cosh(\psi_w/2)$ overstates the energy.
+- Reading the word parameter $\theta^{\mathrm{rpd}}_w$ of a four-vector element as its kinematic rapidity doubles the rapidity.
+- Using the frame rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ where the four-vector factor $\mathcal B=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{-2}$ belongs halves the rapidity of the four-vector: $i mc\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ is a four-vector of rapidity $\theta^{\mathrm{rpd}}/2$.
+- Identifying $\gamma$ with $\cosh\theta^{\mathrm{rpd}}_w$ instead of $\cosh(\theta^{\mathrm{rpd}}_w/2)$ overstates the energy.
 
 The four objects called a boost are separated in *Norm and Pairing Conventions*, §*The Four Objects Called a Boost*.
 
 ## A Four-Vector Is Bilinear, a Spinor Is Linear
 
-The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde Q_0 X\tilde Q_0^{*}$, which is bilinear in the spinor when $X=\psi\psi^{*}$, and a spinor transforms by the left multiplication $\psi\mapsto\tilde Q_0\psi$. The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
+The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde Q_0 X\tilde Q_0^{*}$, which is bilinear in the spinor when $X=\tilde{Ξ}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}*}$, and a spinor transforms by the left multiplication $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde Q_0\tilde{Ξ}^{\mathrm{spn}}$. The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
 
 A rotation through $2\pi$ gives $-\tilde Q_0$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde Q_0$ is the congruence by $\tilde Q_0$. The sign is visible only in the linear action.
 
@@ -271,7 +271,7 @@ The word is the physical description of an element, and each factor has a readin
 
 - The **scale** is the invariant length: the modulus of the four-position, $c$ for the four-velocity, $mc$ for the on-shell four-momentum. It is the only factor that survives the sandwich as a scalar, and it survives squared.
 - The **phase** is the timelike/spacelike label and the gauge phase. It is $\pi/2$ on the timelike cone and $0$ on the spacelike sheet; it is the central $\mathrm{U}(1)$ that the sandwich does not see.
-- The **boost** is the velocity: the axis and the word's rapidity $\psi_w$, which is twice the kinematic rapidity $\psi$ when the element is a four-vector.
+- The **boost** is the velocity: the axis and the word's rapidity $\theta^{\mathrm{rpd}}_w$, which is twice the kinematic rapidity $\theta^{\mathrm{rpd}}$ when the element is a four-vector.
 - The **rotor** is the spin orientation: the rotation angle and axis of the spatial frame.
 
 The pairings read the same data under different headings, and the readings are dictionaries, not derivations. The word is a coordinate statement, not a dynamics: it does not say that a system moves through the factors, that they are conserved, or that the decomposition is stable under evolution.
@@ -288,7 +288,7 @@ The pairings read the same data under different headings, and the readings are d
 - Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
-- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec{Ζ}\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
+- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde{Ξ}^{\mathrm{spn}})$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec{Ζ}\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
 - The three first factors have three types — a real quaternion, a central complex scalar, a Hermitian positive element — and only the Hamilton factor is a scalar.
 - The three factors carry $4+2+4=10$ real numbers for an eight-dimensional element; the redundancy is the scale, which all three contain.
@@ -305,13 +305,13 @@ The pairings read the same data under different headings, and the readings are d
 | --- | --- |
 | $r$ | the positive scale, $r=\lvert N\rvert^{1/2}$ |
 | $\alpha$ | the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi_w}{2}\vec u_{\mathrm b})$ | the frame rotor, the word's third factor for a transformation |
-| $\mathcal B=\tilde U_{\mathrm b}^{-2}=e^{-i\psi_w\vec u_{\mathrm b}}$ | the four-vector factor, the word's third factor for a four-vector element |
+| $\tilde U_{\mathrm b}=\exp(i\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b})$ | the frame rotor, the word's third factor for a transformation |
+| $\mathcal B=\tilde U_{\mathrm b}^{-2}=e^{-i\tilde{Ξ}^{\mathrm{spn}}_w\vec u_{\mathrm b}}$ | the four-vector factor, the word's third factor for a four-vector element |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
-| $\psi_w$, $\theta$ | the word parameter and the rotation angle |
-| $\psi$ | the kinematic rapidity; $\psi_w=\psi$ for a transformation and $\psi_w=2\psi$ for a four-vector element |
+| $\tilde{Ξ}^{\mathrm{spn}}_w$, $\theta$ | the word parameter and the rotation angle |
+| $\theta^{\mathrm{rpd}}$ | the kinematic rapidity; $\theta^{\mathrm{rpd}}_w=\theta^{\mathrm{rpd}}$ for a transformation and $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$ for a four-vector element |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the real quaternion modulus of the quaternion pairing |
-| $\tilde\Psi=\alpha+\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
+| $\tilde{Ξ}^{\mathrm{spn}}=\alpha+\tfrac{\tilde{Ξ}^{\mathrm{spn}}_w}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec{Ζ}$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
 | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
@@ -329,5 +329,5 @@ The pairings read the same data under different headings, and the readings are d
 - [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.
-- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the Cartan pair as strength and backaction and the effect spectrum $r^{2}e^{\pm\psi_w}$.
+- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the Cartan pair as strength and backaction and the effect spectrum $r^{2}e^{\pm\tilde{Ξ}^{\mathrm{spn}}_w}$.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.

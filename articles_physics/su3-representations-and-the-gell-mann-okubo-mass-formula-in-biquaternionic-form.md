@@ -101,25 +101,25 @@ For example $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=N(0,3)=10$, $N(2,2)=27$, $N(0,6)=N(6
 The eightfold way's octets sit on the adjoint representation $(1,1)$. On the subgroup $\mathrm{SU}(2)\subset\mathrm{SU}(3)$ the adjoint representation is reducible, and its reduction is
 
 $$
-\mathrm{sym}_0^{(1,1)} = \Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0,
+\mathrm{sym}_0^{(1,1)} = Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0,
 $$
 
-where $\Phi_3$ is an isospin **triplet**, $\Phi_2$ and $\Phi_2^*$ are a **doublet** and its conjugate, and $\Phi_0$ is a **singlet**: dimensions $3+2+2+1=8$. The baryon octet $F_{1/2}$ therefore reduces to
+where $Ξ_3$ is an isospin **triplet**, $Ξ_2$ and $Ξ^{*}_2$ are a **doublet** and its conjugate, and $Ξ_0$ is a **singlet**: dimensions $3+2+2+1=8$. The baryon octet $F_{1/2}$ therefore reduces to
 
 $$
-\Phi_3=\{\Sigma^+,\Sigma^0,\Sigma^-\},\qquad
-\Phi_2=\{p,n\},\qquad
-\Phi_2^*=\{Ζ^-,Ζ^0\},\qquad
-\Phi_0=\{\Lambda\},
+Ξ_3=\{\Sigma^+,\Sigma^0,\Sigma^-\},\qquad
+Ξ_2=\{p,n\},\qquad
+Ξ^{*}_2=\{Ζ^-,Ζ^0\},\qquad
+Ξ_0=\{\Lambda\},
 $$
 
 and the meson octets $B_0$ (spin $0$, negative parity) and $B_1$ (spin $1$, negative parity) reduce in the same pattern:
 
 $$
-\Phi_3=\{\pi^+,\pi^0,\pi^-\},\qquad
-\Phi_2=\{K^-,K^0\},\qquad
-\Phi_2^*=\{K^+,K^0\}\ \text{(conjugate)},\qquad
-\Phi_0=\{\eta\},
+Ξ_3=\{\pi^+,\pi^0,\pi^-\},\qquad
+Ξ_2=\{K^-,K^0\},\qquad
+Ξ^{*}_2=\{K^+,K^0\}\ \text{(conjugate)},\qquad
+Ξ_0=\{\eta\},
 $$
 
 for $B_0$. The reduction is the representation-theoretic content behind "the eightfold way": the eight states of the octet fall into one triplet, two doublets and one singlet, and the two doublets are conjugate because they carry opposite hypercharge. The charge multiplet structure of the companion spin–charge article is this reduction, with each isospin multiplet carrying the charge values of its members.
@@ -220,7 +220,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 - The degree formula $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
 - The admissibility condition $n-m\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
-- The octet reduction $\mathrm{sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.
+- The octet reduction $\mathrm{sym}_0^{(1,1)}=Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, dimensions $3+2+2+1=8$.
 - The Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.
 
 **Transcribed, not derived.**
@@ -249,7 +249,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Summary
 
-An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,m)$ with degree $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
+An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,m)$ with degree $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
 
 The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is not an algebra of the biquaternion algebra, the gauge-group ceiling stops at $\mathrm{SU}(2)$, and the Okubo matrices are three-by-three. The article records the structure accurately, checks its numerical content, and states that the splitting pattern — not the group — is what borders the framework's own sector structure.
 

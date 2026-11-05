@@ -103,18 +103,18 @@ obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c
 The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral
 
 $$
-Z = \int \mathcal{D}\chi\; \exp(iS[\chi]/\hbar)
+Z = \int \mathcal{D}\xi\; \exp(iS[\xi]/\hbar)
 $$
 
 has an oscillating integrand, and it is not absolutely convergent. After the Wick rotation, the path integral becomes
 
 $$
-Z_E = \int \mathcal{D}\chi\; \exp(-S_E[\chi]/\hbar),
+Z_E = \int \mathcal{D}\xi\; \exp(-S_E[\xi]/\hbar),
 $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion interpretation, the operation is the following. The Lorentzian field $\chi$ on $\mathbb{M}_-$ is transferred to a field $\chi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{M}_-$ is transferred to a field $\xi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
 $$
 \Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} + \Delta,
@@ -176,7 +176,7 @@ The interpretation above suggests a classification of the applications of the Wi
 - Quantum gravity, where the Euclidean action is unbounded below.
 - Any process in which the causal ordering of events matters.
 
-**The exactness is one subgroup at a time.** The relabeling $ict'\mapsto c\tau$ is exact on each one-parameter subgroup taken alone: on a translation in $t'$ it is the analytic continuation $t'\mapsto-i\tau$; on the central phase it turns the oscillation into a real exponential; on a spatial rotation about a fixed axis it does not act at all, because the rotation lives in the spatial units. It fails when two non-commuting factors are present, because the continuation of a product is not the product of the continuations. The polar word $e^{i\psi\vec u_{\mathrm b}/2}e^{\theta\vec u_{\mathrm r}/2}$ is the example: the boost continues to a rotation and the rotor stays a rotation, but the continued product is not the product of the two continued factors. That is the BCH defect of *The Exponential Word and Its Boundary*.
+**The exactness is one subgroup at a time.** The relabeling $ict'\mapsto c\tau$ is exact on each one-parameter subgroup taken alone: on a translation in $t'$ it is the analytic continuation $t'\mapsto-i\tau$; on the central phase it turns the oscillation into a real exponential; on a spatial rotation about a fixed axis it does not act at all, because the rotation lives in the spatial units. It fails when two non-commuting factors are present, because the continuation of a product is not the product of the continuations. The polar word $e^{i\tilde{Ξ}^{\mathrm{spn}}\vec u_{\mathrm b}/2}e^{\theta\vec u_{\mathrm r}/2}$ is the example: the boost continues to a rotation and the rotor stays a rotation, but the continued product is not the product of the two continued factors. That is the BCH defect of *The Exponential Word and Its Boundary*.
 
 The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
 

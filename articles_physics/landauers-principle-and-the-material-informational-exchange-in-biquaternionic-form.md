@@ -238,7 +238,7 @@ The accounting separates the operations of the framework into two classes, and t
 | Operation | Algebra | Entropy change | Lyapunov spectrum |
 |---|---|---|---|
 | Reversible gate (rotor conjugation) | $\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$, $\tilde u\tilde u^{*}=e_t$ | $0$ | $\{0,0,0\}$ |
-| Coarse-graining | conditional expectation $\Phi$ | $\ge 0$ | $\le 0$ |
+| Coarse-graining | conditional expectation $Ξ$ | $\ge 0$ | $\le 0$ |
 | Erasure | reset to $\tilde\Pi_1(\vec u)$ | $-\mathcal{S}(\tilde{Ϛ})$ on the memory, $+\mathcal{S}(\tilde{Ϛ})$ on the environment | $-\infty$ (linear part $L=0$) |
 
 A **reversible** operation is an isometry: it preserves the biquaternion norm, produces no entropy, and has a vanishing Lyapunov spectrum. An **irreversible** operation is a contraction: it destroys distinctions, produces entropy in the combined account, and has non-positive exponents. Erasure is the extreme case of the second class. The thermodynamic cost appears **only** in the second class, and it appears as the compensating environment entropy required by the second law. This is the operational meaning of the material–informational exchange: the informational sector's reversible operations are free, and its irreversible operations are paid for in the material sector.

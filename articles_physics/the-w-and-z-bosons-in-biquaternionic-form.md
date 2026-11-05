@@ -62,15 +62,15 @@ The mixing is the statement that the two neutral gauge fields have different mas
 
 ### The Masses and the Electroweak Scale
 
-The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\chi^{\mathrm{scl}}$, of components ${\chi^{\mathrm{scl}}}^+$ and ${\chi^{\mathrm{scl}}}^0$ and of hypercharge $Y_\chi^{\mathrm{scl}}=\tfrac12$, with the potential $V=\lambda\big(|{\chi^{\mathrm{scl}}}^+|^2+|{\chi^{\mathrm{scl}}}^0|^2-v^2/2\big)^2$ and the vacuum expectation values
+The masses arise from the Higgs sector, which is standard physics and is transcribed here as such. A complex scalar doublet $\xi^{\mathrm{scl}}$, of components ${\xi^{\mathrm{scl}}}^+$ and ${\xi^{\mathrm{scl}}}^0$ and of hypercharge $Y_\xi^{\mathrm{scl}}=\tfrac12$, with the potential $V=\lambda\big(|{\xi^{\mathrm{scl}}}^+|^2+|{\xi^{\mathrm{scl}}}^0|^2-v^2/2\big)^2$ and the vacuum expectation values
 $$
-\langle{\chi^{\mathrm{scl}}}^+\rangle=0,
+\langle{\xi^{\mathrm{scl}}}^+\rangle=0,
 \qquad
-\langle{\chi^{\mathrm{scl}}}^0\rangle=\frac{v}{\sqrt2},
+\langle{\xi^{\mathrm{scl}}}^0\rangle=\frac{v}{\sqrt2},
 \qquad
 v=246.22\ \mathrm{GeV},
 $$
-gives, through the covariant kinetic term $|D_\mu\chi^{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\chi^{\mathrm{scl}} B_\mu$, the mass terms
+gives, through the covariant kinetic term $|D_\mu\xi^{\mathrm{scl}}|^2$, the squared norm summed over the two components, with $D_\mu=\partial/\partial Q_\mu+ig\sum_a T_aW_{\mu a}+i\,g_{\mathrm Y}Y_\xi^{\mathrm{scl}} B_\mu$, the mass terms
 $$
 M_W=\frac{gv}{2},
 \qquad
@@ -98,7 +98,7 @@ $$
 $$
 which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\Delta r$, which is standard.
 
-The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\chi^{\mathrm{scl}})^*(D_\nu\chi^{\mathrm{scl}})$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\chi^{\mathrm{scl}}|\rangle=v/\sqrt2$, is
+The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi^{\mathrm{scl}})^*(D_\nu\xi^{\mathrm{scl}})$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\xi^{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
 \boxed{\;M_A=\frac{ϙ v}{\hbar}=\kappa v\;},
 $$
@@ -126,19 +126,19 @@ the effective angle being the asymmetry result, the second the $\overline{\mathr
 
 The currents below are written with the action of the frame on the field and with the two values of the chirality subscript. The generator of the coordinate $x_\mu$ acts by
 $$
-\psi\longmapsto i\,\psi\,\vec e_\mu\,\vec e_{\nu(\mu)},
+\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\,\tilde{Ξ}^{\mathrm{spn}}\,\vec e_\mu\,\vec e_{\nu(\mu)},
 \qquad
 \nu(t)=x,\quad \nu(k)=y ,
 $$
-and the Dirac adjoint is the pairing $\psi^{\dagger}i\vec e_x$, written with its right factor in position. The chirality of a field is its subscript: a field is $L$ or $R$, $L$ is the $-1$ value of the volume cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ of the frame and $R$ the $+1$ value, every field is a sum of one of each, and only the zero field is both. Left multiplication keeps the letter and a product takes the letter of its right factor, so
+and the Dirac adjoint is the pairing $\tilde{Ξ}^{\mathrm{spn}\dagger}i\vec e_x$, written with its right factor in position. The chirality of a field is its subscript: a field is $L$ or $R$, $L$ is the $-1$ value of the volume cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ of the frame and $R$ the $+1$ value, every field is a sum of one of each, and only the zero field is both. Left multiplication keeps the letter and a product takes the letter of its right factor, so
 $$
-\psi_{\mathrm L}=\tfrac12\big(\psi+i\psi\vec e_z\big),
+\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}=\tfrac12\big(\tilde{Ξ}^{\mathrm{spn}}+i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\big),
 \qquad
-\psi_{\mathrm R}=\tfrac12\big(\psi-i\psi\vec e_z\big),
+\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}=\tfrac12\big(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z\big),
 \qquad
-i\vec e_\mu\,\psi_{\mathrm L}\,\vec e_{\nu(\mu)}\ \text{is of letter } R,
+i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}\,\vec e_{\nu(\mu)}\ \text{is of letter } R,
 \qquad
-i\vec e_\mu\,\psi_{\mathrm R}\,\vec e_{\nu(\mu)}\ \text{is of letter } L .
+i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}\,\vec e_{\nu(\mu)}\ \text{is of letter } L .
 $$
 A frame cell therefore carries each part of a field into the other, and the $L$ part of a frame cell applied to an $L$ field is zero. A term built from one field alone is consequently not chiral; the coupling of the W is chiral because it reads one part of one of the two fields of a doublet. The two letter statements were verified on the four frame cells as maps of the algebra.
 
@@ -146,9 +146,9 @@ The charged current interaction is
 $$
 \mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\Big(\sum_\mu W^+_\mu J^{+}_\mu+\mathrm{h.c.}\Big),
 \qquad
-J^+_\mu=\sum_{\text{doublets}}\mathrm{Sc}\Big(\psi_{\mathrm u}^{*}\,i\,\big(i\vec e_\mu\,\psi_{\mathrm d,\mathrm L}\,\vec e_{\nu(\mu)}\big)\vec e_x\Big),
+J^+_\mu=\sum_{\text{doublets}}\mathrm{Sc}\Big(\tilde{Ξ}^{\mathrm{spn}*}_{\mathrm u}\,i\,\big(i\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}\,\vec e_{\nu(\mu)}\big)\vec e_x\Big),
 $$
-with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, $\psi_{\mathrm u}$ and $\psi_{\mathrm d}$ the up and down members of a doublet, and $\psi_{\mathrm d,\mathrm L}$ the $L$ part of the down field. The selection is what makes the coupling chiral: it is applied to the down field, so that of the two parts of that field only the $L$ one reaches the W. The neutral current interaction is
+with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm u}$ and $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d}$ the up and down members of a doublet, and $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}$ the $L$ part of the down field. The selection is what makes the coupling chiral: it is applied to the down field, so that of the two parts of that field only the $L$ one reaches the W. The neutral current interaction is
 $$
 \mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_\mu Z_\mu J_{Z\mu} ,
 \qquad
@@ -232,7 +232,7 @@ and the rotation angle is the Weinberg angle. The algebra contains the plane and
 
 ### The Standard Route and Its Ingredient
 
-The standard masses $M_W=gv/2$, $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}v/2$ come from the covariant kinetic term of a scalar doublet with $T_3=\pm1/2$, evaluated at its vacuum expectation value. The three ingredients are (i) a scalar field with a nonzero vacuum value, (ii) a scalar that transforms nontrivially under the non-abelian group, so that the kinetic term contains $g^2(T_3)^2|W|^2|\chi^{\mathrm{scl}}|^2$, and (iii) a potential that fixes the value. The framework supplies (i) and (iii) in the abelian case — the central scalar of the Higgs companion has a potential and a vacuum expectation value, and the companion derives the mass $M_A=\kappa v$ — but not (ii): a central scalar is a **singlet** of the compact factor, its adjoint action is zero, and its covariant kinetic term contains no $g^2|W|^2$ term. The non-abelian W's therefore receive no mass from the framework's central scalar. This is the precise content of the statement that the framework's scalar cannot break the non-abelian group.
+The standard masses $M_W=gv/2$, $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}v/2$ come from the covariant kinetic term of a scalar doublet with $T_3=\pm1/2$, evaluated at its vacuum expectation value. The three ingredients are (i) a scalar field with a nonzero vacuum value, (ii) a scalar that transforms nontrivially under the non-abelian group, so that the kinetic term contains $g^2(T_3)^2|W|^2|\xi^{\mathrm{scl}}|^2$, and (iii) a potential that fixes the value. The framework supplies (i) and (iii) in the abelian case — the central scalar of the Higgs companion has a potential and a vacuum expectation value, and the companion derives the mass $M_A=\kappa v$ — but not (ii): a central scalar is a **singlet** of the compact factor, its adjoint action is zero, and its covariant kinetic term contains no $g^2|W|^2$ term. The non-abelian W's therefore receive no mass from the framework's central scalar. This is the precise content of the statement that the framework's scalar cannot break the non-abelian group.
 
 ### What an Adjoint Scalar Would Give
 
@@ -288,7 +288,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -382,9 +382,9 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}$ | The centre of the algebra; the abelian factor |
-| $\psi\mapsto i\psi\vec e_x$; $\psi\mapsto i\psi\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame cells, written as actions on a field: the time cell, a generator cell, and the volume cell whose two values are the chirality |
-| $\psi_{\mathrm L}=\tfrac12(\psi+i\psi\vec e_z)$, $\psi_{\mathrm R}=\tfrac12(\psi-i\psi\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}^{\mathrm{vol}}$, $R$ the $+1$ value |
-| $\psi^{\dagger}i\vec e_x$, and $\mathrm{Sc}(\psi^{*}iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
+| $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$; $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame cells, written as actions on a field: the time cell, a generator cell, and the volume cell whose two values are the chirality |
+| $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm L}=\tfrac12(\tilde{Ξ}^{\mathrm{spn}}+i\tilde{Ξ}^{\mathrm{spn}}\vec e_z)$, $\tilde{Ξ}^{\mathrm{spn}}_{\mathrm R}=\tfrac12(\tilde{Ξ}^{\mathrm{spn}}-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}^{\mathrm{vol}}$, $R$ the $+1$ value |
+| $\tilde{Ξ}^{\mathrm{spn}\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra |
 | $T_a=\tfrac12e_a$, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ | The generators of the compact factor and their commutator |
@@ -399,7 +399,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ | Electromagnetic coupling |
 | $v=( \sqrt{2}G_F)^{-1/2}=246.22$ GeV | Electroweak scale |
 | $M_A=\kappa v=ϙ v/\hbar$ | Framework abelian mass from the central scalar |
-| $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\psi_{\mathrm u}^{*}\,i\,(i\vec e_\mu\psi_{\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
+| $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}*}_{\mathrm u}\,i\,(i\vec e_\mu\tilde{Ξ}^{\mathrm{spn}}_{\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\nu(\mu)})\vec e_x\big)$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial Q_\mu-\partial\mathcal{A}_{\mu a}/\partial Q_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
 | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |

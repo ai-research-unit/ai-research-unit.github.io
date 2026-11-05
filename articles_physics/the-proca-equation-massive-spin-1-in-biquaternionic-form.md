@@ -227,14 +227,14 @@ For $m = 0$ the dispersion relation becomes $\omega^2 = c^2\vec k^2$ and the Lor
 
 ### The massless limit and the Stueckelberg form
 
-The limit $m\to0$ is discontinuous in the degrees of freedom: three states fall to two, and no sequence of Proca fields converges to a Maxwell field with a smooth third state. The standard device that makes the limit continuous is the **Stueckelberg form**, which restores the gauge freedom by extending the field with a scalar $\chi$ and building the mass term from the combination $\tilde{A}+\tilde{\nabla}\chi$ (up to the normalization of $\chi$) rather than from $\tilde{A}$ alone. Under the simultaneous transformations
+The limit $m\to0$ is discontinuous in the degrees of freedom: three states fall to two, and no sequence of Proca fields converges to a Maxwell field with a smooth third state. The standard device that makes the limit continuous is the **Stueckelberg form**, which restores the gauge freedom by extending the field with a scalar $\xi$ and building the mass term from the combination $\tilde{A}+\tilde{\nabla}\xi$ (up to the normalization of $\xi$) rather than from $\tilde{A}$ alone. Under the simultaneous transformations
 
 $$
 \tilde{A} \,\longrightarrow\, \tilde{A} - \tilde{\nabla}\lambda, \qquad
-\chi \,\longrightarrow\, \chi + \lambda,
+\xi \,\longrightarrow\, \xi + \lambda,
 $$
 
-the combination $\tilde{A}+\tilde{\nabla}\chi$ is invariant, so the mass term is gauge invariant and the symmetry is restored. On a plane wave the scalar $\chi$ contributes a piece along the wavevector, and the longitudinal state is carried by that piece; as $m\to0$ it decouples, carrying the third polarization away with it. The Stueckelberg form is a rewriting of the Proca system by a field redefinition, not a different theory, and it is mentioned here only to record that the algebra accommodates it without a change of structure.
+the combination $\tilde{A}+\tilde{\nabla}\xi$ is invariant, so the mass term is gauge invariant and the symmetry is restored. On a plane wave the scalar $\xi$ contributes a piece along the wavevector, and the longitudinal state is carried by that piece; as $m\to0$ it decouples, carrying the third polarization away with it. The Stueckelberg form is a rewriting of the Proca system by a field redefinition, not a different theory, and it is mentioned here only to record that the algebra accommodates it without a change of structure.
 
 ## The Massive Field Strength and the Self-Dual Split
 

@@ -43,7 +43,7 @@ The following table collects the quantitative results the series has obtained an
 | Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $\langle d\tilde{R}\rangle_{\natural}=-c^2d{t'}^2+dx^2+dy^2+dz^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
+| Dirac field | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$; massless case $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\pi^2\hbar c/(240a^4)$, attractive | Standard Casimir force, reproduced |

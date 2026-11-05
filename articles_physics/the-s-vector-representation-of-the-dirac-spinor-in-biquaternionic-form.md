@@ -26,17 +26,17 @@ $$
 u^{\dagger}C_0u = 1, \qquad v^{\dagger}C_0v = -1, \qquad u^{\dagger}C_0v = 0,
 $$
 
-where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\Psi_1^{\dagger}C_0\Psi_2$. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
+where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\tilde{Ξ}^{\mathrm{spn}\dagger}_1C_0\tilde{Ξ}^{\mathrm{spn}}_2$. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
 $$
-C_\mu:\Psi\longmapsto i a_\mu\Psi b_\mu .
+C_\mu:\tilde{Ξ}^{\mathrm{spn}}\longmapsto i a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu .
 $$
-The first generator carries the identity on its left, $a_0=e_t$, so $C_0$ multiplies on the right alone, $\Psi\mapsto i\Psi\vec e_x$, and only the three spatial generators act on both sides. The contraction of the four generators with the components $w_\mu$ is
+The first generator carries the identity on its left, $a_0=e_t$, so $C_0$ multiplies on the right alone, $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$, and only the three spatial generators act on both sides. The contraction of the four generators with the components $w_\mu$ is
 $$
 \mathcal{D}(w) := \sum_\mu w_\mu C_\mu .
 $$
 The reconstruction below needs the same contraction one factor of $i$ lower, on the real map:
 $$
-\mathcal{R}(w):\Psi\longmapsto-\sum_\mu w_\mu\, a_\mu\Psi b_\mu = \sum_\mu w_\mu\, iC_\mu\Psi .
+\mathcal{R}(w):\tilde{Ξ}^{\mathrm{spn}}\longmapsto-\sum_\mu w_\mu\, a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu = \sum_\mu w_\mu\, iC_\mu\tilde{Ξ}^{\mathrm{spn}} .
 $$
 
 The vector and the neutral elements are tied together by
@@ -74,16 +74,16 @@ The names are the source's: $r$ is the right and $l$ the left element of the pai
 Every field of the algebra carries two real four-vectors, each with four independent real components,
 
 $$
-\Psi = \Psi_1 + \Psi_2, \qquad \Psi_1 = \mathcal{R}(B^\flat)v, \qquad \Psi_2 = \mathcal{R}(N^\flat)u,
+\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_1 + \tilde{Ξ}^{\mathrm{spn}}_2, \qquad \tilde{Ξ}^{\mathrm{spn}}_1 = \mathcal{R}(B^\flat)v, \qquad \tilde{Ξ}^{\mathrm{spn}}_2 = \mathcal{R}(N^\flat)u,
 $$
 where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$, with
 
 $$
-B_\mu = \tfrac12\bigl(v^{\dagger}C_0\, iC_\mu\Psi - \Psi^{\dagger}C_0\, iC_\mu v\bigr), \qquad
-N_\mu = \tfrac12\bigl(\Psi^{\dagger}C_0\, iC_\mu u - u^{\dagger}C_0\, iC_\mu\Psi\bigr) .
+B_\mu = \tfrac12\bigl(v^{\dagger}C_0\, iC_\mu\tilde{Ξ}^{\mathrm{spn}} - \tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, iC_\mu v\bigr), \qquad
+N_\mu = \tfrac12\bigl(\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, iC_\mu u - u^{\dagger}C_0\, iC_\mu\tilde{Ξ}^{\mathrm{spn}}\bigr) .
 $$
 
-The projection uses $iC_\mu$, the real map, $\Psi\mapsto-a_\mu\Psi b_\mu$: with $C_\mu$ alone the coefficients would come out $i$ times real, and the product $i\cdot i=-1$ is exactly what makes them real. The two coefficients $B_\mu$ and $N_\mu$ are **real four-vectors**, and the reconstruction $\Psi \mapsto (B, N) \mapsto \Psi$ is exact. This is the first half of the statement that the field is a pair of real four-vectors.
+The projection uses $iC_\mu$, the real map, $\tilde{Ξ}^{\mathrm{spn}}\mapsto-a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu$: with $C_\mu$ alone the coefficients would come out $i$ times real, and the product $i\cdot i=-1$ is exactly what makes them real. The two coefficients $B_\mu$ and $N_\mu$ are **real four-vectors**, and the reconstruction $\tilde{Ξ}^{\mathrm{spn}} \mapsto (B, N) \mapsto \tilde{Ξ}^{\mathrm{spn}}$ is exact. This is the first half of the statement that the field is a pair of real four-vectors.
 
 ## The Composition Law and the Normed Condition
 
@@ -148,43 +148,43 @@ Its realisation is the quaternion algebra. The four directions are read with $e_
 The two real four-vectors $B_\mu$ and $N_\mu$ are the *vector representation* of the two parts of the field. The quadratic form of the field reads
 
 $$
-\Psi^{\dagger}C_0\Psi = -B_\mu g_{\mu\nu}B_\nu + N_\mu g_{\mu\nu}N_\nu,
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = -B_\mu g_{\mu\nu}B_\nu + N_\mu g_{\mu\nu}N_\nu,
 $$
 
-so the two vectors enter with opposite signs, and $\Psi^{\dagger}C_0\Psi = N^2 - B^2$ is the difference of two norms. Neither sign is fixed by the field: in the rest frame the vector $B$ is purely spatial and $N$ vanishes, while for a field polarised along the third direction the vector $B$ is timelike. The labels *timelike* and *spacelike* that the source attaches to the two parts belong to its own metric convention; what is convention-free is the opposite sign with which the two enter $\Psi^{\dagger}C_0\Psi$.
+so the two vectors enter with opposite signs, and $\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = N^2 - B^2$ is the difference of two norms. Neither sign is fixed by the field: in the rest frame the vector $B$ is purely spatial and $N$ vanishes, while for a field polarised along the third direction the vector $B$ is timelike. The labels *timelike* and *spacelike* that the source attaches to the two parts belong to its own metric convention; what is convention-free is the opposite sign with which the two enter $\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}}$.
 
-The complex vector $G_\mu = B_\mu + iN_\mu$ is the combined object, and its real and imaginary parts are the two parts. The two values of the chirality are a second, independent split: the field is written $\Psi_R$ for the $+1$ value and $\Psi_L$ for the $-1$ value, $\Psi=\Psi_R+\Psi_L$, and only the zero element carries both. The corresponding two parts $G_{R\mu}$ and $G_{L\mu}$ of $G_\mu$ are the subject of §The Chiral Pair. The source calls $G_\mu$ an **s-vector**, because it transforms under left multiplication by a unit biquaternion $q$, $S_1(q):\Psi\mapsto q\Psi$, whereas an ordinary spacetime vector $x_\mu$ transforms under the mixed map $\Lambda(q):x\mapsto qxq^{*}$. Two different linear representations of the same $SL(2,\mathbb{C})$ act on the same four-dimensional index.
+The complex vector $G_\mu = B_\mu + iN_\mu$ is the combined object, and its real and imaginary parts are the two parts. The two values of the chirality are a second, independent split: the field is written $\tilde{Ξ}^{\mathrm{spn}}_R$ for the $+1$ value and $\tilde{Ξ}^{\mathrm{spn}}_L$ for the $-1$ value, $\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_R+\tilde{Ξ}^{\mathrm{spn}}_L$, and only the zero element carries both. The corresponding two parts $G_{R\mu}$ and $G_{L\mu}$ of $G_\mu$ are the subject of §The Chiral Pair. The source calls $G_\mu$ an **s-vector**, because it transforms under left multiplication by a unit biquaternion $q$, $S_1(q):\tilde{Ξ}^{\mathrm{spn}}\mapsto q\tilde{Ξ}^{\mathrm{spn}}$, whereas an ordinary spacetime vector $x_\mu$ transforms under the mixed map $\Lambda(q):x\mapsto qxq^{*}$. Two different linear representations of the same $SL(2,\mathbb{C})$ act on the same four-dimensional index.
 
 ## The Bilinear Dictionary
 
 ### The Dictionary
 
-The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$. The chirality acts by $\Psi\mapsto-i\Psi\vec e_z$:
+The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$. The chirality acts by $\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$:
 
 $$
-\Psi^{\dagger}C_0\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
 \qquad
-\Psi^{\dagger}C_0\Gamma\Psi = +\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\Gamma\tilde{Ξ}^{\mathrm{spn}} = +\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
 $$
 
 $$
-\Psi^{\dagger}C_0\, C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu,
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, C_\mu\tilde{Ξ}^{\mathrm{spn}} = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu,
 \qquad
-\Psi^{\dagger}C_0\,\Gamma C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\mu\nu}\, G^*_\nu .
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\,\Gamma C_\mu\tilde{Ξ}^{\mathrm{spn}} = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\mu\nu}\, G^*_\nu .
 $$
-Here $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ and $C_\mu:\Psi\mapsto i a_\mu\Psi b_\mu$, so $\Gamma C_\mu:\Psi\mapsto a_\mu\Psi b_\mu\vec e_z$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
+Here $\Gamma:\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ and $C_\mu:\tilde{Ξ}^{\mathrm{spn}}\mapsto i a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu$, so $\Gamma C_\mu:\tilde{Ξ}^{\mathrm{spn}}\mapsto a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu\vec e_z$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
 
-The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\Psi^{\dagger}C_0C_\mu\Psi$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality is the ordered product of the four generators up to the factor $i$,
+The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\tilde{Ξ}^{\mathrm{spn}\dagger}C_0C_\mu\tilde{Ξ}^{\mathrm{spn}}$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality is the ordered product of the four generators up to the factor $i$,
 $$
-\Gamma:\Psi\longmapsto-i\Psi\vec e_z,
+\Gamma:\tilde{Ξ}^{\mathrm{spn}}\longmapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z,
 $$
 and it anticommutes with each $C_\mu$, so it separates the two values of every field. Its representative on the reference frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth generator. The source further rewrites the mass form as
 
 $$
-\Psi^{\dagger}C_0\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\Psi^{\dagger}C_0\, C_\mu\Psi
+\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = \sum_\mu\epsilon_\mu\, K_\mu\,\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, C_\mu\tilde{Ξ}^{\mathrm{spn}}
 $$
 
-for a unit complex vector $K_\mu$ built from $\Psi$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
+for a unit complex vector $K_\mu$ built from $\tilde{Ξ}^{\mathrm{spn}}$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
 
 ### The Cubicity of the Interaction
 
@@ -197,7 +197,7 @@ $$
 which leaves the trilinear form
 
 $$
-A_\mu\bigl(\Psi^{\dagger}C_0_{(1)}\, C_\mu\Psi_{(2)} + \Psi^{\dagger}C_0_{(2)}\, C_\mu\Psi_{(1)}\bigr)
+A_\mu\bigl(\tilde{Ξ}^{\mathrm{spn}\dagger}C_0_{(1)}\, C_\mu\tilde{Ξ}^{\mathrm{spn}}_{(2)} + \tilde{Ξ}^{\mathrm{spn}\dagger}C_0_{(2)}\, C_\mu\tilde{Ξ}^{\mathrm{spn}}_{(1)}\bigr)
 = 2\sum_{\nu,\lambda,\sigma}\epsilon_\nu\epsilon_\lambda\epsilon_\sigma\, A_\mu\, \varepsilon_{\lambda\mu\nu\sigma}N_\lambda B_\nu k_\sigma
 $$
 
@@ -211,7 +211,7 @@ $$
 $$
 and the form is
 $$
-C = \sum_\mu A_\mu\,\Psi^{\dagger}C_0\, C_\mu\Psi
+C = \sum_\mu A_\mu\,\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, C_\mu\tilde{Ξ}^{\mathrm{spn}}
 = \sum_{\mu,\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, A_\mu\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu .
 $$
 For real $A$ its real part is the source's cubic form,
@@ -225,7 +225,7 @@ with the symmetric $t'$ pairing each part with itself and the antisymmetric $\va
 Passing from the field to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\sum_\mu\epsilon_\mu\bigl[\Psi^{\dagger}C_0\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi - \bigl((\partial/\partial x_\mu + ieA_\mu)\Psi^{\dagger}C_0\bigr) C_\mu\Psi\bigr] - m\Psi^{\dagger}C_0\Psi
+\tfrac12\sum_\mu\epsilon_\mu\bigl[\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\tilde{Ξ}^{\mathrm{spn}} - \bigl((\partial/\partial x_\mu + ieA_\mu)\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\bigr) C_\mu\tilde{Ξ}^{\mathrm{spn}}\bigr] - m\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}}
 $$
 
 $$
@@ -262,10 +262,10 @@ Two features are worth naming. The kinetic operator is not symmetric in $G$ and 
 
 The mass is not carried by the square of a first-order derivative operator. The derivative of the article is the gradient, and the gradient's square is not scalar, because $e_t$ commutes with the spatial units and the mixed time–space derivatives survive in $\tilde\nabla^2=\Box+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$. Only the paired product $\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar, and it conjugates one factor instead of squaring it. The free equation is therefore first order in one field, $i\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda=0$ at $m=0$; the massive system is the pair of §The Chiral Pair, and the mass sits between the two values rather than inside one square.
 
-The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla\Psi_R=m\Psi_L$ and $\tilde\nabla^\natural\Psi_L=m\Psi_R$, applying $\tilde\nabla^\natural$ to the first equation and $\tilde\nabla$ to the second gives $\tilde\nabla^\natural\tilde\nabla\Psi_R=m^2\Psi_R$ and $\tilde\nabla\tilde\nabla^\natural\Psi_L=m^2\Psi_L$, that is
+The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, applying $\tilde\nabla^\natural$ to the first equation and $\tilde\nabla$ to the second gives $\tilde\nabla^\natural\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m^2\tilde{Ξ}^{\mathrm{spn}}_R$ and $\tilde\nabla\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m^2\tilde{Ξ}^{\mathrm{spn}}_L$, that is
 
 $$
-\bigl(\Box-m^2\bigr)\Psi_R=0,\qquad\bigl(\Box-m^2\bigr)\Psi_L=0,
+\bigl(\Box-m^2\bigr)\tilde{Ξ}^{\mathrm{spn}}_R=0,\qquad\bigl(\Box-m^2\bigr)\tilde{Ξ}^{\mathrm{spn}}_L=0,
 $$
 
 since $\tilde\nabla^\natural\tilde\nabla=\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator.
@@ -304,12 +304,12 @@ $$
 is the compact form of the same pair at $A_\mu=0$: the two equations above are its two values, and every $G_\mu$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_\nu$ its index partial and $A_\nu$ its gauge field; the compact line writes the same equation in the corpus gradient, whose $\nu$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
 
 $$
-\tilde\nabla\Psi_R=m\Psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^\natural\Psi_L=m\Psi_R,
+\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
-with the mass $me_t$ central, $e_t$ being the identity of the algebra. Nothing in the mass term flips the value by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each value is carried into the other by the mass. The pair on $G$ and the pair on $\Psi$ are the same two equations in two carriers.
+with the mass $me_t$ central, $e_t$ being the identity of the algebra. Nothing in the mass term flips the value by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each value is carried into the other by the mass. The pair on $G$ and the pair on $\tilde{Ξ}^{\mathrm{spn}}$ are the same two equations in two carriers.
 
 Equivalently, with $A_\mu = 0$, the pair is the self-dual system
 
@@ -335,7 +335,7 @@ $$
 H_{\mu\nu} := \sum_\lambda\epsilon_\lambda\, G^*_\lambda\, \check c_{\lambda\mu\nu}
 $$
 
-is not antisymmetric. Its symmetric part is proportional to the metric, $H_{(\mu\nu)}=\chi^{\mathrm{scl}}\,g_{\mu\nu}$, with $\chi^{\mathrm{scl}}=\tfrac14 g_{\mu\nu}H_{\mu\nu}$, and its antisymmetric part is **anti-self-dual**,
+is not antisymmetric. Its symmetric part is proportional to the metric, $H_{(\mu\nu)}=\xi^{\mathrm{scl}}\,g_{\mu\nu}$, with $\xi^{\mathrm{scl}}=\tfrac14 g_{\mu\nu}H_{\mu\nu}$, and its antisymmetric part is **anti-self-dual**,
 
 $$
 H_{[\mu\nu]} = -\tfrac{i}{2}\sum_{\lambda,\rho}\epsilon_\lambda\epsilon_\rho\,\varepsilon_{\mu\nu\lambda\rho} H_{[\lambda\rho]},
@@ -391,15 +391,15 @@ $$
 \bigl(\cos\alpha - i c_5\sin\alpha\bigr)^n = \cos n\alpha - i c_5\sin n\alpha .
 $$
 
-The mass term $m\Psi^{\dagger}C_0\Psi = -\tfrac{m}{2}(G^*G^* + GG) = +\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
+The mass term $m\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = -\tfrac{m}{2}(G^*G^* + GG) = +\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
 
-The source identifies $M(\alpha)$ with the image of the field's vector $\mathrm{U}(1)$, $\Psi\mapsto\Psi\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\Psi\mapsto\exp(-ia\Gamma)\Psi$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\Psi\mapsto\exp(ia\Gamma)\Psi$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\Psi$ and $\Psi^{\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\Psi$, and the phase sends
+The source identifies $M(\alpha)$ with the image of the field's vector $\mathrm{U}(1)$, $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}}\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\tilde{Ξ}^{\mathrm{spn}}\mapsto\exp(-ia\Gamma)\tilde{Ξ}^{\mathrm{spn}}$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\tilde{Ξ}^{\mathrm{spn}}\mapsto\exp(ia\Gamma)\tilde{Ξ}^{\mathrm{spn}}$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\tilde{Ξ}^{\mathrm{spn}}$ and $\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\tilde{Ξ}^{\mathrm{spn}}$, and the phase sends
 
 $$
 B_\mu \mapsto B_\mu\cos\alpha - \mathrm{Im}(X_\mu)\sin\alpha,
 $$
 
-with $N_\mu$ treated the same way through $Z_\mu:=\Psi^{\dagger}C_0\,iC_\mu u$: a mixing of the two parts, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a symmetry of the field.
+with $N_\mu$ treated the same way through $Z_\mu:=\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\,iC_\mu u$: a mixing of the two parts, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a symmetry of the field.
 
 ## The Dual Transformation and the Two Parts
 
@@ -409,7 +409,7 @@ $$
 B \mapsto N, \qquad N \mapsto -B, \qquad m \mapsto -m
 $$
 
-leaves the quadratic form $m\Psi^{\dagger}C_0\Psi = m\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
+leaves the quadratic form $m\tilde{Ξ}^{\mathrm{spn}\dagger}C_0\tilde{Ξ}^{\mathrm{spn}} = m\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
 
 ## What the Construction Does and Does Not Supply
 
@@ -446,18 +446,18 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The four gammas are the generators of the body, $\gamma_\mu=C_\mu$, the four actions of §The Trinomial Unit Basis, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0:\Psi\longmapsto i\Psi\vec e_x,\quad \gamma_1:\Psi\longmapsto i\vec e_x\Psi\vec e_y,\quad \gamma_2:\Psi\longmapsto i\vec e_y\Psi\vec e_y,\quad \gamma_3:\Psi\longmapsto i\vec e_z\Psi\vec e_y,\quad \gamma_5:\Psi\longmapsto-i\Psi\vec e_z.
+\gamma_0:\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x,\quad \gamma_1:\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\vec e_x\tilde{Ξ}^{\mathrm{spn}}\vec e_y,\quad \gamma_2:\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\vec e_y\tilde{Ξ}^{\mathrm{spn}}\vec e_y,\quad \gamma_3:\tilde{Ξ}^{\mathrm{spn}}\longmapsto i\vec e_z\tilde{Ξ}^{\mathrm{spn}}\vec e_y,\quad \gamma_5:\tilde{Ξ}^{\mathrm{spn}}\longmapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z.
 $$
 
-Each is an action with both elements written in the arrow; $\gamma_0$ and $\gamma_5$ carry the identity on the left and act on the right alone. The arrays the literature prints are these actions in the Peirce frame, and the axis-free arrays of the corpus are the same actions in the corpus frame; a change of frame changes no product, no anticommutator, no trace and no determinant, so every identity here holds in both. Products stay in the same language: the product of two actions is one action, $(\Psi\mapsto a\Psi b)\circ(\Psi\mapsto c\Psi d)=\Psi\mapsto ac\Psi db$, so a product of the symbols here never needs a second notion of operator. An action is one product, and a sum of at most four actions is any $\mathbb{C}$-linear map of the algebra to itself.
+Each is an action with both elements written in the arrow; $\gamma_0$ and $\gamma_5$ carry the identity on the left and act on the right alone. The arrays the literature prints are these actions in the Peirce frame, and the axis-free arrays of the corpus are the same actions in the corpus frame; a change of frame changes no product, no anticommutator, no trace and no determinant, so every identity here holds in both. Products stay in the same language: the product of two actions is one action, $(\tilde{Ξ}^{\mathrm{spn}}\mapsto a\tilde{Ξ}^{\mathrm{spn}} b)\circ(\tilde{Ξ}^{\mathrm{spn}}\mapsto c\tilde{Ξ}^{\mathrm{spn}} d)=\tilde{Ξ}^{\mathrm{spn}}\mapsto ac\tilde{Ξ}^{\mathrm{spn}} db$, so a product of the symbols here never needs a second notion of operator. An action is one product, and a sum of at most four actions is any $\mathbb{C}$-linear map of the algebra to itself.
 
 The field of the older literature is a four-component spinor, a column of a minimal left ideal, and the arrays of this section are its matrices; the corpus writes the same field as an element of $\mathbb{B}$ and keeps the array as a display, which is why no $\gamma$ symbol and no column appears in the body of the article.
 
-$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is the right action $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ written in the frame; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame.
+$\gamma_5$ is the reference-frame representative of the chirality: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is the right action $\Gamma:\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ written in the frame; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality in the algebra, and $\gamma_5$ is its representative on the reference frame.
 
 ## Summary
 
-The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\Psi_1 = \mathcal{R}(B^\flat)v$ and $\Psi_2 = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_k=i\vec e_k$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}^{\mathrm{spn}}_1 = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}^{\mathrm{spn}}_2 = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\tilde{Ξ}^{\mathrm{spn}} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_k=i\vec e_k$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that couples the two values of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + imj_\mu G^{*}_{\mu}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\alpha-ic_5\sin\alpha)G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
@@ -475,29 +475,29 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $r = u+iv$, $l = u-iv$ | The two null elements, $r^{\dagger}C_0l = l^{\dagger}C_0r = 2$ |
 | $k_\pm{}_\mu = \tfrac12(k_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
 | $e_t, \vec e_k$ | The four units of $\mathbb{B}$ |
-| $a\Psi b$ | An action of the algebra on itself, $a$ on the left and $b$ on the right (see *Operator and Calculus Conventions*) |
+| $a\tilde{Ξ}^{\mathrm{spn}} b$ | An action of the algebra on itself, $a$ on the left and $b$ on the right (see *Operator and Calculus Conventions*) |
 | $\tilde\nabla$, $\tilde\nabla^\natural$, $\Box$ | The gradient, its conjugate and the d'Alembertian of *Operator and Calculus Conventions*, with $\varepsilon=(1,-1,-1,-1)$ |
 | $a_\mu, b_\mu$ | Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |
-| $C_\mu:\Psi\mapsto i a_\mu\Psi b_\mu$ | The generator of index $\mu$: two-sided on the three spatial indices, the single right action $\Psi\mapsto i\Psi\vec e_x$ on the time index |
+| $C_\mu:\tilde{Ξ}^{\mathrm{spn}}\mapsto i a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu$ | The generator of index $\mu$: two-sided on the three spatial indices, the single right action $\tilde{Ξ}^{\mathrm{spn}}\mapsto i\tilde{Ξ}^{\mathrm{spn}}\vec e_x$ on the time index |
 | $\mathcal{D}(w) = \sum_\mu w_\mu C_\mu$ | The four generators contracted, a sum of four actions, as it appears in the bilinears |
-| $\mathcal{R}(w):\Psi\mapsto-\sum_\mu w_\mu\,a_\mu\Psi b_\mu$ | The same sum one factor of $i$ lower, the real map of the reconstruction |
-| $\Psi_1^{\dagger}C_0\Psi_2$ | Liu's bilinear of two elements, the object the dictionary reproduces |
+| $\mathcal{R}(w):\tilde{Ξ}^{\mathrm{spn}}\mapsto-\sum_\mu w_\mu\,a_\mu\tilde{Ξ}^{\mathrm{spn}} b_\mu$ | The same sum one factor of $i$ lower, the real map of the reconstruction |
+| $\tilde{Ξ}^{\mathrm{spn}\dagger}_1C_0\tilde{Ξ}^{\mathrm{spn}}_2$ | Liu's bilinear of two elements, the object the dictionary reproduces |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
 | ${t'}_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)$ | Symmetric four-index trace |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | The totally antisymmetric symbol, $\varepsilon_{0123}=1$; a different letter from the sign vector $\epsilon$ |
 | $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
 | $\check c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5{}_{\mu\nu}$ | The $g$-antisymmetric involution of the index space, $(c_5)^2 = 1$; it carries the value $+1$ on $G_{R}$ and $-1$ on $G_{L}$ |
-| $\Gamma:\Psi\mapsto-i\Psi\vec e_z$ | The chirality, a right action of the algebra |
+| $\Gamma:\tilde{Ξ}^{\mathrm{spn}}\mapsto-i\tilde{Ξ}^{\mathrm{spn}}\vec e_z$ | The chirality, a right action of the algebra |
 | $(G\otimes H)_\lambda = \sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B_\mu, N_\mu$ | Real four-vectors of the two parts of the field |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector (the vector representation of the field) |
-| $\Psi_R, \Psi_L$ | The two values of the field, $+1$ and $-1$ |
+| $\tilde{Ξ}^{\mathrm{spn}}_R, \tilde{Ξ}^{\mathrm{spn}}_L$ | The two values of the field, $+1$ and $-1$ |
 | $G_{R\mu}, G_{L\mu}$ | The two parts of the s-vector, the two values of $c_5$ |
-| $\Psi_1, \Psi_2$ | The two parts of the field |
+| $\tilde{Ξ}^{\mathrm{spn}}_1, \tilde{Ξ}^{\mathrm{spn}}_2$ | The two parts of the field |
 | $G_{\mu\nu}$ | Field strength of the self-dual form |
 | $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form; its antisymmetric part is anti-self-dual |
-| $\chi^{\mathrm{scl}} = \tfrac14 g_{\mu\nu}H_{\mu\nu}$ | Complex scalar in $H_{(\mu\nu)}=\chi^{\mathrm{scl}}\,g_{\mu\nu}$, the trace part of $H$ |
+| $\xi^{\mathrm{scl}} = \tfrac14 g_{\mu\nu}H_{\mu\nu}$ | Complex scalar in $H_{(\mu\nu)}=\xi^{\mathrm{scl}}\,g_{\mu\nu}$, the trace part of $H$ |
 | $A_\mu$ | Electromagnetic four-potential |
 
 ## Further Reading

@@ -74,7 +74,7 @@ $$
 A signal therefore satisfies $\Delta t'^{\mathrm{ret}} = 0$ or $\Delta t'_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t' = -\omega\left(t' - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t'^{\mathrm{ret}},
+Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t' = -\omega\left(t' - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t'^{\mathrm{ret}},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -232,7 +232,7 @@ $$
 \beta = \frac{\beta_1+\beta_2}{1+\beta_1\beta_2},
 $$
 
-the standard relativistic addition formula; as a check, $k(0.5)k(0.6) = 3.4641016\ldots = k(0.8461538\ldots)$, and $0.8461538\ldots = (0.5+0.6)/(1+0.5\cdot0.6)$ is the composed velocity computed in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. In rapidities the multiplication of $k$-factors is the addition of rapidities, since $k = \exp(\psi)$; the exchange of signals composes the same abelian group as the boosts. There is no value of $\beta_1,\beta_2$ with $|\beta_i| < 1$ for which the composed speed reaches $1$, which is the exchange form of the barrier of the companion article.
+the standard relativistic addition formula; as a check, $k(0.5)k(0.6) = 3.4641016\ldots = k(0.8461538\ldots)$, and $0.8461538\ldots = (0.5+0.6)/(1+0.5\cdot0.6)$ is the composed velocity computed in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. In rapidities the multiplication of $k$-factors is the addition of rapidities, since $k = \exp(\theta^{\mathrm{rpd}})$; the exchange of signals composes the same abelian group as the boosts. There is no value of $\beta_1,\beta_2$ with $|\beta_i| < 1$ for which the composed speed reaches $1$, which is the exchange form of the barrier of the companion article.
 
 The k-factor is a Lorentz scalar in the following limited sense: it is the ratio of two proper-time intervals and is therefore independent of any coordinate system, though it depends on the pair of observers. It is the invariant content of the exchange, the coordinate-free datum that the two observers can agree on without synchronising their clocks.
 
@@ -243,9 +243,9 @@ The k-factor is a Lorentz scalar in the following limited sense: it is the ratio
 Let frame $S_2$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S_2$ to those of $S$ is the rotor conjugation with the boost biquaternion
 
 $$
-\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_x,
+\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_x,
 \qquad
-\tanh\psi = \frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
 of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta t'$ and $\vec A = \Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
@@ -256,7 +256,7 @@ a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
 A_{2,\parallel} = \vec u_x\cdot\vec A_2,
 $$
 
-the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
+the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
 
 Now apply this to two events that are simultaneous in $S_2$ and separated along the boost direction by $\Delta x_2$. Then $a_2 = c\,\Delta t'_2 = 0$ and $A_{2,\parallel} = \Delta x_2$, so
 
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t'$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded coordinate $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t'^{\mathrm{ret}}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t'$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t'\,\vec u_{\mathrm s}$, and the retarded coordinate $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega t'^{\mathrm{ret}}$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt'$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
@@ -372,11 +372,11 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\vec u_{\mathrm s}$ | Propagation direction |
 | $t'^{\mathrm{ret}} = t'-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t'_{\mathrm{adv}} = t'+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
 | $\tilde P = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $\Phi = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t'^{\mathrm{ret}}$ | Plane-wave phase |
+| $Ξ = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t'^{\mathrm{ret}}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
-| $\tilde U = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\psi=\beta$ |
+| $\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\theta^{\mathrm{rpd}}=\beta$ |
 | $t'_1,t'_2,t'_3$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $t'_2=t'_1+\varepsilon(t'_3-t'_1)$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |

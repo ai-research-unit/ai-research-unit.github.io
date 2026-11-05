@@ -59,21 +59,21 @@ $$
 The evolved state is
 
 $$
-|\psi(t')\rangle = T(t')\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t'/2) \\ \exp(-i\omega_L t'/2) \end{pmatrix}.
+|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = T(t')\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t'/2) \\ \exp(-i\omega_L t'/2) \end{pmatrix}.
 $$
 
 ### Step 4: The expectation value
 
-The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\psi(t')\rangle$ is
+The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle$ is
 
 $$
-\langle S_x\rangle(t') = \langle\psi(t')|S_x|\psi(t')\rangle.
+\langle S_x\rangle(t') = \langle\tilde{Ξ}^{\mathrm{spn}}(t')|S_x|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle.
 $$
 
 Computing the matrix element,
 
 $$
-\langle\psi(t')|\sigma_1|\psi(t')\rangle = \frac{1}{2}\left(\exp(-i\omega_L t'/2) \cdot \exp(-i\omega_L t'/2) + \exp(\,i\omega_L t'/2) \cdot \exp(\,i\omega_L t'/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L t') + \exp(\,i\omega_L t')\right) = \cos(\omega_L t').
+\langle\tilde{Ξ}^{\mathrm{spn}}(t')|\sigma_1|\tilde{Ξ}^{\mathrm{spn}}(t')\rangle = \frac{1}{2}\left(\exp(-i\omega_L t'/2) \cdot \exp(-i\omega_L t'/2) + \exp(\,i\omega_L t'/2) \cdot \exp(\,i\omega_L t'/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L t') + \exp(\,i\omega_L t')\right) = \cos(\omega_L t').
 $$
 
 Therefore

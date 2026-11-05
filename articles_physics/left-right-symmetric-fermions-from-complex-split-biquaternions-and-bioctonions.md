@@ -89,14 +89,14 @@ in which the colour $\mathrm{SU}(3)_c$ and the baryon-minus-lepton number $\math
 
 The construction is a finite algebra, and the source writes no equation of motion. The corpus's dictionary does supply one, and it is worth writing here because it separates two things that the construction runs together: the two sides of the action and the two chiralities. The equation comes in two forms, and they must not be read as one.
 
-**The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: $\tilde\Psi_L$ lies in the $-1$ eigenspace of the frame's volume cell and $\tilde\Psi_R$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
+**The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: $\tilde{Ξ}^{\mathrm{spn}}_L$ lies in the $-1$ eigenspace of the frame's volume cell and $\tilde{Ξ}^{\mathrm{spn}}_R$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
 $$
 \begin{aligned}
-\tilde\nabla\tilde\Psi_R&=m\,\tilde\Psi_L,\\
-\tilde\nabla^{\natural}\tilde\Psi_L&=m\,\tilde\Psi_R,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R&=m\,\tilde{Ξ}^{\mathrm{spn}}_L,\\
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L&=m\,\tilde{Ξ}^{\mathrm{spn}}_R,
 \end{aligned}
 $$
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair".
+with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair".
 
 **The two-sided single equation.** Read on the algebra rather than on a field, the same content is one equation whose two sides are the two multiplications,
 $$
@@ -289,7 +289,7 @@ since $e_t$ is the unit and $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pa
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{axf}},\qquad\text{so}\qquad i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{axf}}=\gamma_5 ,
 $$
-with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The cell and the corpus's abstract central grading $\chi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\chi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\chi_{\mathrm{ad}}=\omega$ and $\chi_{\mathrm{ad}}^2=e_t$, while $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde{Ζ}_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde{Ζ}_{\mathrm{ad}}$ and $\gamma_5$ are three different objects: a central element, its root, and the cell that carries it on the module. $\gamma_5$ represents $\chi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
+with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The cell and the corpus's abstract central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\xi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\xi_{\mathrm{ad}}=\omega$ and $\xi_{\mathrm{ad}}^2=e_t$, while $\tilde{Ζ}_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde{Ζ}_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde{Ζ}_{\mathrm{ad}}$ and $\gamma_5$ are three different objects: a central element, its root, and the cell that carries it on the module. $\gamma_5$ represents $\xi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
 
 **Traces.** With $\epsilon_{0123}=+1$,
 $$
@@ -311,7 +311,7 @@ The first fact is the doubling. The central volume element of each algebra is an
 
 The interpretations are the identification of the two summands with the two chiralities and of the two quaternion actions with $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$, the identification of the neutral state of the right-handed summand with the sterile right-handed neutrino, the assignment of the states to the Pati–Salam multiplets, and the interpretation of the volume element $\omega$ as the Higgs.
 
-The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's volume cell to $\bar F$ as a right multiplication, and that cell squares to $e_t$.
+The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's volume cell to $\bar F$ as a right multiplication, and that cell squares to $e_t$.
 
 The construction's contact with the framework's ledger is that the second chirality and the sterile state are supplied by the algebra rather than added by hand, and that a sterile fermion is unconstrained by the anomaly conditions. Its open end is the same as that of the undoubled construction: the three commutator computations that would decide whether the abelian charge is a physical gauge charge, together with the choice of the supercharge sector that would fix which states carry which weak quantum numbers.
 
@@ -341,7 +341,7 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 | $-iR_{\vec e_z}$ | The volume cell of the frame, a pure right multiplier; $\tilde X_L,\tilde X_R$ are its two eigenspaces, of dimension two each, and the left action preserves both |
 | $i\,(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Four-factor volume cell of the first rung, $\mathrm{Cl}(4)$; it equals the chirality cell, and squares to $I_4$ |
 | $-i\vec e_z$ | The right multiplier that the volume cell applies, $-iR_{\vec e_z}\tilde X=-i\tilde X\vec e_z$; it squares to $e_t$ |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The chirality-off-diagonal pair of Dirac equations |
+| $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ | The chirality-off-diagonal pair of Dirac equations |
 | $\tilde\nabla^{\natural}F=-im\,\bar F\,\vec e_z$ | The same content as one two-sided equation |
 | $L_\omega R_{-\vec e_z}^{\mathrm{axf}}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
 | $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen cells $L_aR_b$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |

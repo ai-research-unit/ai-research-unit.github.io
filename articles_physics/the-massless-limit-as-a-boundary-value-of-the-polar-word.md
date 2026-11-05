@@ -9,19 +9,19 @@ This article owns that limit. It states the boundary value of the four-factor wo
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde U_{\mathrm b}=\exp\left(i\frac{\psi}{2}\vec u_{\mathrm b}\right),
+\tilde U_{\mathrm b}=\exp\left(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$
 
-with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the element is a unit exactly when $r\neq0$. The material four-momentum is
+with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the element is a unit exactly when $r\neq0$. The material four-momentum is
 
 $$
 \tilde P=i\frac{E}{c}e_t+\vec p,
 \qquad
-E=mc^2\cosh\psi,
+E=mc^2\cosh\theta^{\mathrm{rpd}},
 \qquad
-\lvert\vec p\rvert=mc\sinh\psi,
+\lvert\vec p\rvert=mc\sinh\theta^{\mathrm{rpd}},
 $$
 
 with $\vec u_p=\vec p/\lvert\vec p\rvert$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$.
@@ -46,7 +46,7 @@ The four factors carry the eight real parameters of the algebra.
 | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | $r>0$ | $1$ |
 | 2 | $e^{i\alpha}$ | central phase | $i\alpha$ | $\alpha\in(-\pi/2,\pi/2]$ | $1$ |
-| 3 | $\tilde U_{\mathrm b}$ | boost | $i\frac{\psi}{2}\vec u_{\mathrm b}$ | $\psi\ge0$ | $3$ |
+| 3 | $\tilde U_{\mathrm b}$ | boost | $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta^{\mathrm{rpd}}\ge0$ | $3$ |
 | 4 | $\tilde u_{\mathrm r}$ | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ | $3$ |
 
 The norm of the word is
@@ -60,9 +60,9 @@ so the cone is the locus $r=0$ and the mass shell is the level set $r^2e^{2i\alp
 The boost grows with the rapidity,
 
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
-=\frac{e^{\psi/2}}{2}\left(e_t+i\vec u_{\mathrm b}\right)
-+\frac{e^{-\psi/2}}{2}\left(e_t-i\vec u_{\mathrm b}\right),
+\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
+=\frac{e^{\theta^{\mathrm{rpd}}/2}}{2}\left(e_t+i\vec u_{\mathrm b}\right)
++\frac{e^{-\theta^{\mathrm{rpd}}/2}}{2}\left(e_t-i\vec u_{\mathrm b}\right),
 $$
 
 so a collapsing scale and a diverging rapidity can compensate. That compensation is the whole content of the boundary value.
@@ -72,23 +72,23 @@ so a collapsing scale and a diverging rapidity can compensate. That compensation
 Take a unit complex number $\varkappa^{\mathrm{phs}}$, a positive real $R$, and the family
 
 $$
-\tilde Q(\psi)=R\,e^{-\psi/2}\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
+\tilde Q(\theta^{\mathrm{rpd}})=R\,e^{-\theta^{\mathrm{rpd}}/2}\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\vec u_{\mathrm b})\,\tilde u_{\mathrm r},
 \qquad
-\psi>0.
+\theta^{\mathrm{rpd}}>0.
 $$
 
-Each member is a unit, because $R e^{-\psi/2}>0$, and the norm is
+Each member is a unit, because $R e^{-\theta^{\mathrm{rpd}}/2}>0$, and the norm is
 
 $$
-\langle\tilde Q(\psi)\rangle_{\natural}=R^2e^{-\psi}\varkappa^{\mathrm{phs}}^2.
+\langle\tilde Q(\theta^{\mathrm{rpd}})\rangle_{\natural}=R^2e^{-\theta^{\mathrm{rpd}}}\varkappa^{\mathrm{phs}}^2.
 $$
 
-Insert the two-term form of the boost. The family splits into a constant term and a term of order $e^{-\psi}$:
+Insert the two-term form of the boost. The family splits into a constant term and a term of order $e^{-\theta^{\mathrm{rpd}}}$:
 
 $$
-\tilde Q(\psi)
+\tilde Q(\theta^{\mathrm{rpd}})
 =\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
-+\frac{R\varkappa^{\mathrm{phs}}}{2}\,e^{-\psi}\left(e_t-i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}.
++\frac{R\varkappa^{\mathrm{phs}}}{2}\,e^{-\theta^{\mathrm{rpd}}}\left(e_t-i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}.
 $$
 
 The limit therefore exists, and it is
@@ -97,7 +97,7 @@ $$
 \boxed{\;L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;}.
 $$
 
-The convergence is exponential in the rapidity, with the second term of order $e^{-\psi}$. The limit is nonzero, since $(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}\neq0$, and it lies on the cone, since
+The convergence is exponential in the rapidity, with the second term of order $e^{-\theta^{\mathrm{rpd}}}$. The limit is nonzero, since $(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}\neq0$, and it lies on the cone, since
 
 $$
 \left(e_t+i\vec u_{\mathrm b}\right)^2=2\left(e_t+i\vec u_{\mathrm b}\right)
@@ -107,7 +107,7 @@ $$
 
 The limit is a rank-one null element. It is not a value of the word: $L$ is not a unit, and the word is defined only on the units.
 
-**The finite part is the direction of the boost.** The diverging factor is the magnitude $e^{\psi/2}$; the direction $e_t+i\vec u_{\mathrm b}$ survives. The boundary value remembers the axis of the boost and the rotor, and forgets the rapidity. That is why the limit is a point of the cone and not a Lorentz transformation.
+**The finite part is the direction of the boost.** The diverging factor is the magnitude $e^{\theta^{\mathrm{rpd}}/2}$; the direction $e_t+i\vec u_{\mathrm b}$ survives. The boundary value remembers the axis of the boost and the rotor, and forgets the rapidity. That is why the limit is a point of the cone and not a Lorentz transformation.
 
 ## The Two Strata
 
@@ -152,11 +152,11 @@ squares to zero, so $L$ is a nonzero nilpotent. The two rows are disjoint, and t
 
 The classification was checked on sixty random samples of the data, with the predicted stratum and the computed trace agreeing in every case to machine precision, and on a targeted nilpotent sample with $\tilde u_\perp$ orthogonal to the boost axis, where $L^2=0$ and $\langle L\rangle_{\natural}=0$ held to $10^{-16}$.
 
-**The rate is the same for both strata.** The splitting of the family is $O(e^{-\psi})$ in either row; what differs is the direction of the residual, not its rate. The stratum is selected by the orientation of the rotor relative to the boost, not by a slower or faster approach.
+**The rate is the same for both strata.** The splitting of the family is $O(e^{-\theta^{\mathrm{rpd}}})$ in either row; what differs is the direction of the residual, not its rate. The stratum is selected by the orientation of the rotor relative to the boost, not by a slower or faster approach.
 
 ## The Massless Momentum
 
-The physical family is the four-momentum written in the word. In this section $\psi$ is the rapidity of the momentum, not the word rapidity of the preceding section, and $\psi_w=2\psi$ is the word rapidity. Set
+The physical family is the four-momentum written in the word. In this section $\theta^{\mathrm{rpd}}$ is the rapidity of the momentum, not the word rapidity of the preceding section, and $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$ is the word rapidity. Set
 
 $$
 r=mc,
@@ -167,14 +167,14 @@ r=mc,
 \qquad
 \tilde u_{\mathrm r}=e_t,
 \qquad
-\psi_w=2\psi,
+\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}},
 $$
 
-where $\psi$ is the rapidity of the momentum and $\psi_w$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_0=imc\,e_t$ to $\tilde P$ through the half-angle rotor $\tilde U_{\mathrm b}(\psi)$, $\tilde P=\tilde U_{\mathrm b}(\psi)\tilde P_0\tilde U_{\mathrm b}(\psi)^{*}=\tilde U_{\mathrm b}(\psi)^{2}\tilde P_0$. The word's boost factor is that square, $\tilde U_{\mathrm b}(\psi_w)=\tilde U_{\mathrm b}(\psi)^{2}$, so $\psi_w=2\psi$. With these data,
+where $\theta^{\mathrm{rpd}}$ is the rapidity of the momentum and $\theta^{\mathrm{rpd}}_w$ is the rapidity parameter of the word. The factor two is the difference between multiplying once and acting twice: the word multiplies the element once, while the Lorentz boost carries the rest momentum $\tilde P_0=imc\,e_t$ to $\tilde P$ through the half-angle rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, $\tilde P=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde P_0\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{*}=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{2}\tilde P_0$. The word's boost factor is that square, $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{2}$, so $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$. With these data,
 
 $$
-r\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\psi_w)\tilde u_{\mathrm r}
-=imc\left(\cosh\psi\,e_t-i\sinh\psi\,\vec u_p\right)
+r\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)\tilde u_{\mathrm r}
+=imc\left(\cosh\theta^{\mathrm{rpd}}\,e_t-i\sinh\theta^{\mathrm{rpd}}\,\vec u_p\right)
 =i\frac{E}{c}e_t+\vec p
 =\tilde P.
 $$
@@ -182,10 +182,10 @@ $$
 The rate of the family is
 
 $$
-r\,e^{\psi_w/2}=mc\,e^{\psi}=2\frac{E}{c}-mc\,e^{-\psi},
+r\,e^{\theta^{\mathrm{rpd}}_w/2}=mc\,e^{\theta^{\mathrm{rpd}}}=2\frac{E}{c}-mc\,e^{-\theta^{\mathrm{rpd}}},
 $$
 
-so $r e^{\psi_w/2}\to R$ with $R=2E/c$, and the relative defect is $e^{-2\psi}=O(m^2c^4/E^2)$ at fixed energy. The massless limit of the momentum therefore satisfies the finiteness condition automatically, and the coefficient is the energy.
+so $r e^{\theta^{\mathrm{rpd}}_w/2}\to R$ with $R=2E/c$, and the relative defect is $e^{-2\theta^{\mathrm{rpd}}}=O(m^2c^4/E^2)$ at fixed energy. The massless limit of the momentum therefore satisfies the finiteness condition automatically, and the coefficient is the energy.
 
 The boundary value is the massless momentum:
 
@@ -203,11 +203,11 @@ with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempo
 | element | $\tilde P$, a unit | $L$, a rank-one null element |
 | norm | $-m^2c^2$ | $0$ |
 | scale | $r=mc$ | $0$ |
-| rapidity | $\psi<\infty$ | $+\infty$ |
-| rest frame | exists at $\psi=0$ | does not exist |
+| rapidity | $\theta^{\mathrm{rpd}}<\infty$ | $+\infty$ |
+| rest frame | exists at $\theta^{\mathrm{rpd}}=0$ | does not exist |
 | logarithm | exists | does not exist |
 
-**The defect is of order $m^2$.** The approach to the boundary is $O(e^{-2\psi})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P^2=2P_t\tilde P+m^2c^2e_t$, so the massless relation $\tilde P^2=2P_t\tilde P$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.
+**The defect is of order $m^2$.** The approach to the boundary is $O(e^{-2\theta^{\mathrm{rpd}}})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P^2=2P_t\tilde P+m^2c^2e_t$, so the massless relation $\tilde P^2=2P_t\tilde P$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.
 
 **The idempotent stratum is larger than the null momenta.** A general boundary value in the first row of the stratum table is a complex multiple of a minimal idempotent, not necessarily a Hermitian one. The physical null momenta are the anti-Hermitian slice of that stratum: for the Hermitian representative, $L^{*}=-L$ requires $\tau$ purely imaginary, which the data above satisfy. The identification of the stratum with the photon is therefore an identification of one slice, not of the whole stratum.
 
@@ -225,7 +225,7 @@ and $L_1\neq L_2$ unless the rotors differ by the stabiliser of the idempotent. 
 
 Three consequences follow.
 
-1. **The boundary value is a function of the germ of the path at infinity.** It is fixed by the limiting values of $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and by the limiting product $r e^{\psi/2}$. It is not fixed by the element at any finite $\psi$.
+1. **The boundary value is a function of the germ of the path at infinity.** It is fixed by the limiting values of $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and by the limiting product $r e^{\theta^{\mathrm{rpd}}/2}$. It is not fixed by the element at any finite $\theta^{\mathrm{rpd}}$.
 2. **The word has no continuous extension to the cone.** A continuous extension would assign one set of word data to each point of the cone independently of the path. No such assignment exists: two paths with the same endpoint on the cone can have different asymptotic data, because the factorization of the limit into a scale, a phase, a boost axis and a rotor is not unique.
 3. **The two strata can be reached from the same neighbourhood.** A rotor with $a-ib\neq0$ and a rotor with $a=b=0$ are both limits of unit rotors, so an arbitrarily small change of the path can move the boundary value from one stratum to the other. The stratum is stable under a small change of the path that keeps $a-ib$ away from zero; near the surface $a=b=0$ it is not.
 
@@ -236,10 +236,10 @@ The physical reading of the path dependence is that the massless limit is not a 
 The element has a limit and the generator does not. The formal exponent of the word is
 
 $$
-\tilde Q_{\log}(\psi)=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}(\theta^{\mathrm{rpd}})=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
 $$
 
-with $\ln r=\ln R-\psi/2\to-\infty$ and $\psi/2\to+\infty$. The true logarithm differs from it by the BCH correction, a boost of order $\psi$ that changes the coefficient of the divergence and not its presence (*The Exponential Word and Its Boundary*). The two divergent terms cancel in the element, because the boost's growth and the scale's collapse are the same exponential, but they do not cancel in the exponent. The generator of the boundary value does not exist.
+with $\ln r=\ln R-\theta^{\mathrm{rpd}}/2\to-\infty$ and $\theta^{\mathrm{rpd}}/2\to+\infty$. The true logarithm differs from it by the BCH correction, a boost of order $\theta^{\mathrm{rpd}}$ that changes the coefficient of the divergence and not its presence (*The Exponential Word and Its Boundary*). The two divergent terms cancel in the element, because the boost's growth and the scale's collapse are the same exponential, but they do not cancel in the exponent. The generator of the boundary value does not exist.
 
 | Object | Massive | Massless limit |
 | --- | --- | --- |
@@ -249,16 +249,16 @@ with $\ln r=\ln R-\psi/2\to-\infty$ and $\psi/2\to+\infty$. The true logarithm d
 | generator | finite | divergent |
 | rest frame | defined | not defined |
 
-**What the algebra supplies.** The finiteness condition $r e^{\psi/2}\to R$, the limit $L$, the exponential rate of convergence, and the criterion that separates the two strata. These are theorems about the word.
+**What the algebra supplies.** The finiteness condition $r e^{\theta^{\mathrm{rpd}}/2}\to R$, the limit $L$, the exponential rate of convergence, and the criterion that separates the two strata. These are theorems about the word.
 
-**What the model supplies.** The value of $R$, which is the energy; the identification of the idempotent slice with a particle momentum; the rotor, which is the polarization data; and the mass-energy relation $E=mc^2\cosh\psi$ that makes the rate automatic at fixed energy. None of these is an algebraic output.
+**What the model supplies.** The value of $R$, which is the energy; the identification of the idempotent slice with a particle momentum; the rotor, which is the polarization data; and the mass-energy relation $E=mc^2\cosh\theta^{\mathrm{rpd}}$ that makes the rate automatic at fixed energy. None of these is an algebraic output.
 
 **The generator is the place where the limit fails.** The element's limit is finite because the scale and the boost are inverse exponential coordinates. The generator's limit is infinite because it is the sum of the two, not their difference. A process can have a massless limit as an element and no massless limit as a generator, and the two statements are consistent.
 
 ## Physical Readings
 
 - **The massless limit is a boundary value.** The massive element is a unit; the massless one is on the cone, which is the boundary of the group. The limit is taken along a path, and it lands on the cone without the word ever taking a value there.
-- **The mass is the radial coordinate of the word.** The scale $r=mc$ is the distance from the cone, and the massless limit is $r\to0$ compensated by $\psi\to\infty$. The mass is not an angle and not a boost parameter; it is the coordinate that the boundary removes.
+- **The mass is the radial coordinate of the word.** The scale $r=mc$ is the distance from the cone, and the massless limit is $r\to0$ compensated by $\theta^{\mathrm{rpd}}\to\infty$. The mass is not an angle and not a boost parameter; it is the coordinate that the boundary removes.
 - **There is no rest frame at the boundary.** The rapidity diverges, so the frame in which the momentum is at rest does not survive the limit. The word's finite part is the boost direction, not the boost.
 - **The photon lies on the idempotent stratum.** The null momentum is an imaginary multiple of a Hermitian idempotent, reached when the rotor has a component in the plane of $e_t$ and the boost axis. The nilpotent stratum is the other boundary behaviour and is not a four-momentum.
 - **The rate is not predicted.** The algebra forces the leading exponential and leaves the coefficient and the corrections free. The coefficient is the energy, and the energy is supplied by the model.
@@ -275,15 +275,15 @@ with $\ln r=\ln R-\psi/2\to-\infty$ and $\psi/2\to+\infty$. The true logarithm d
 
 ## Summary
 
-The polar word parametrizes the units, and the massless shell is the cone, which is the boundary of the units. The massless limit is therefore a boundary value. Along a family with $r=R e^{-\psi/2}$ and asymptotic data $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, the word converges to
+The polar word parametrizes the units, and the massless shell is the cone, which is the boundary of the units. The massless limit is therefore a boundary value. Along a family with $r=R e^{-\theta^{\mathrm{rpd}}/2}$ and asymptotic data $\varkappa^{\mathrm{phs}}$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, the word converges to
 
 $$
 L=\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
 $$
 
-a nonzero rank-one element of the cone, with a correction of order $e^{-\psi}$. Decomposing the rotor as $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$, the trace of the limit is $\frac{R\varkappa^{\mathrm{phs}}}{2}(a-ib)$ and $L^2=2\operatorname{Sc}L\,L$. When $a-ib\neq0$ the limit is a nonzero complex multiple of a minimal idempotent; when $a=b=0$ it is a nonzero nilpotent. The rotor selects the stratum, and the rate is the same for both.
+a nonzero rank-one element of the cone, with a correction of order $e^{-\theta^{\mathrm{rpd}}}$. Decomposing the rotor as $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$, the trace of the limit is $\frac{R\varkappa^{\mathrm{phs}}}{2}(a-ib)$ and $L^2=2\operatorname{Sc}L\,L$. When $a-ib\neq0$ the limit is a nonzero complex multiple of a minimal idempotent; when $a=b=0$ it is a nonzero nilpotent. The rotor selects the stratum, and the rate is the same for both.
 
-For the material momentum the data are $r=mc$, $\varkappa^{\mathrm{phs}}=i$, $\vec u_{\mathrm b}=-\vec u_p$, $\tilde u_{\mathrm r}=e_t$ and word rapidity $2\psi$, and the rate is $mc\,e^{\psi}=2E/c+O(e^{-\psi})$. The limit is $2i\frac{E}{c}\tilde\Pi(-\vec u_p)$, the massless momentum, reached with a relative defect of order $m^2$. The idempotent stratum contains this momentum on its anti-Hermitian slice; the stratum itself is larger. The element has a finite limit and the generator does not: the logarithm diverges as $\ln r$ and $\psi/2$ diverge separately. The limit is path-dependent, the cone is not a graph over the units, and the algebra supplies the normal form and the rate condition but not the energy, the polarization or the particle identification.
+For the material momentum the data are $r=mc$, $\varkappa^{\mathrm{phs}}=i$, $\vec u_{\mathrm b}=-\vec u_p$, $\tilde u_{\mathrm r}=e_t$ and word rapidity $2\theta^{\mathrm{rpd}}$, and the rate is $mc\,e^{\theta^{\mathrm{rpd}}}=2E/c+O(e^{-\theta^{\mathrm{rpd}}})$. The limit is $2i\frac{E}{c}\tilde\Pi(-\vec u_p)$, the massless momentum, reached with a relative defect of order $m^2$. The idempotent stratum contains this momentum on its anti-Hermitian slice; the stratum itself is larger. The element has a finite limit and the generator does not: the logarithm diverges as $\ln r$ and $\theta^{\mathrm{rpd}}/2$ diverge separately. The limit is path-dependent, the cone is not a graph over the units, and the algebra supplies the normal form and the rate condition but not the energy, the polarization or the particle identification.
 
 ## Summary of Notation
 
@@ -291,7 +291,7 @@ For the material momentum the data are $r=mc$, $\varkappa^{\mathrm{phs}}=i$, $\v
 | --- | --- |
 | $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar word |
 | $r>0$, $\varkappa^{\mathrm{phs}}=e^{i\alpha}$ | the scale and the central phase |
-| $\tilde U_{\mathrm b}=e^{i\psi\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\psi$ and axis $\vec u_{\mathrm b}$ |
+| $\tilde U_{\mathrm b}=e^{i\theta^{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the boost factor at word rapidity $\theta^{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ |
 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the rotor of angle $\theta$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $L=\frac{R\varkappa^{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$ | the boundary value |
@@ -299,7 +299,7 @@ For the material momentum the data are $r=mc$, $\varkappa^{\mathrm{phs}}=i$, $\v
 | $\tau=2\operatorname{Sc}L=R\varkappa^{\mathrm{phs}}(a-ib)$ | the scale of the idempotent, $L^2=\tau L$ |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the material four-momentum |
 | $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ | the Hermitian minimal idempotent opposite the motion |
-| $\psi_w=2\psi$ | the word rapidity of the momentum against its Lorentz rapidity |
+| $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$ | the word rapidity of the momentum against its Lorentz rapidity |
 
 ## Further Reading
 

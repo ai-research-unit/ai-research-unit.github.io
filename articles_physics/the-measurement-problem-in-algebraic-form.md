@@ -141,7 +141,7 @@ This is a statement about elements, and it does not by itself say that no *proce
 The companion article *Decoherence as Idempotent Projection* constructs the dephasing channel along a pointer axis $\vec u$ at strength $p \in [0,1]$,
 
 $$
-\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = (1-p)\,\tilde{Ϛ} + p\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_2(\vec u)\right),
+Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = (1-p)\,\tilde{Ϛ} + p\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}\,\tilde\Pi_2(\vec u)\right),
 $$
 
 with Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_t$ and $\tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\vec u)$, acting on the Bloch vector by
@@ -155,7 +155,7 @@ Two properties of its fully dephased limit ($p = 1$) matter here. In the measure
 **First, the fully dephased element is unique given the statistics and the absence of coherence.** At $p = 1$ the channel is
 
 $$
-\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2 = p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \tilde{Ϛ}_d ,
+Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2 = p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \tilde{Ϛ}_d ,
 $$
 
 the diagonal part of $\tilde{Ϛ}$ in the pointer basis. As the preceding section showed, no other element of $\mathbb{M}_+$ carries the Born statistics and is simultaneously coherence-free in that basis.
@@ -169,15 +169,15 @@ $$
 Each $\Lambda_\pm$ is completely positive, trace preserving, and idempotent as a channel; each is what "select the outcome $\pm$" means as an operation. For every state $\tilde{Ϛ}$ (so $\mathrm{Tr}(\tilde{Ϛ}) = 1$),
 
 $$
-\boxed{\;\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = p_+\,\Lambda_+(\tilde{Ϛ}) + p_-\,\Lambda_-(\tilde{Ϛ})\;},
+\boxed{\;Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = p_+\,\Lambda_+(\tilde{Ϛ}) + p_-\,\Lambda_-(\tilde{Ϛ})\;},
 $$
 
-since $\Lambda_\pm(\tilde{Ϛ}) = \tilde\Pi_{1,2}$ and $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, read through the trace only at normalisation. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
+since $\Lambda_\pm(\tilde{Ϛ}) = \tilde\Pi_{1,2}$ and $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, read through the trace only at normalisation. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $Ξ^{\mathrm{deph}}_1$ are decisive for the problem:
 
 - **The selection channels do not preserve the Born statistics.** $\Lambda_+$ sends every state to $\tilde\Pi_1$, so it assigns probability $1$ to the outcome $+$ regardless of $\tilde{Ϛ}$, whereas the Born probability is $p_+$. A selection channel is a legitimate operation, but it is not a statistics-preserving description of the ensemble.
-- **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\vec u) \oplus \mathbb{C}\tilde\Pi_2(\vec u)$, hence an orthogonal projection with respect to the plain form. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,\Lambda(\tilde{Q})\,\tilde{Q}_1$ for $\tilde{Q}_3, \tilde{Q}_1 \in A$; for example $\Lambda_+(\tilde{Ϛ}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{Ϛ})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
+- **The dephasing channel is a conditional expectation; the selection channels are not.** $Ξ^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\vec u) \oplus \mathbb{C}\tilde\Pi_2(\vec u)$, hence an orthogonal projection with respect to the plain form. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,\Lambda(\tilde{Q})\,\tilde{Q}_1$ for $\tilde{Q}_3, \tilde{Q}_1 \in A$; for example $\Lambda_+(\tilde{Ϛ}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{Ϛ})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
 
-Geometrically the situation is exact and easy to see. Under $\Phi^{\mathrm{deph}}_p$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\vec u\cdot\vec r)\,\vec u$. The two outcomes are the endpoints $\pm\vec u$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
+Geometrically the situation is exact and easy to see. Under $Ξ^{\mathrm{deph}}_p$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\vec u\cdot\vec r)\,\vec u$. The two outcomes are the endpoints $\pm\vec u$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
 
 ## The Selection Step
 
@@ -211,7 +211,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 2. **The mixedness of the decohered state is one scalar, and the residual gap is geometric.** $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}(|\vec r|^2 - 1)e_t$ measures the loss of idempotency, and full dephasing is the trace-preserving conditional expectation onto the pointer subalgebra. The gap between "mixture" and "outcome" is then exactly the gap between an interior point of the pointer diameter and its endpoints. This is a clean and exact way to state that strand; it is a picture, not a mechanism.
 
-3. **The statistics-preserving and selection operations are separated exactly.** $\Phi^{\mathrm{deph}}_1$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{Ϛ}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
+3. **The statistics-preserving and selection operations are separated exactly.** $Ξ^{\mathrm{deph}}_1$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{Ϛ}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
 
 4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{M}_+$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{Ϛ}$. This is inherited from *Quantum Physics in Biquaternionic Form* and *The Informational Sector: States, Observables and Probability*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
 
@@ -235,7 +235,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$, with the acting element either $*$-unitary ($\tilde Q_3\tilde Q_3^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde\Pi^2 = \tilde\Pi = \tilde\Pi^{*}$, the projective sandwich). The Born rule is the normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as the trace $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$. The $*$-unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the $*$-unitary case.
 
-Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{Ϛ}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$, which, for a state $\tilde{Ϛ}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
+Decoherence, in the framework's worked dephasing model, is the channel $Ξ^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{Ϛ}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$, which, for a state $\tilde{Ϛ}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
 What the reformulation changes is the form of the statement: two dynamics become one operation form over two element types; the mixture-versus-outcome gap becomes a segment-versus-endpoint gap; the statistics-preserving and selection operations are separated exactly; the provenance-blindness of the state becomes a statement about one subspace; and the form of the Born rule is algebraic. What it does not change is the physics or the difficulty: no outcome is selected, no preferred basis is derived, no cut is fixed, no probability is explained, no regress terminated, no interpretation decided, and no prediction changed. The algebraic form is a sharpened statement of the measurement problem, not a solution to it.
 
@@ -261,7 +261,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\tilde Q_3\tilde Q_3^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{Ϛ}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ at strength $p$ |
+| $Ξ^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ at strength $p$ |
 | $\Lambda_\pm(\tilde{Q}) = \mathrm{Tr}(\tilde{Q})\tilde\Pi_{1,2}$ | Selection (reset) channels onto the outcomes |
 | $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{Ϛ}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\vec r\|^2)$ |

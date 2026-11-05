@@ -189,35 +189,35 @@ The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$
 
 ## The Klein–Gordon Equation
 
-The **Klein–Gordon equation** for a relativistic scalar field $\tilde{\Phi}$ of mass $m$ is
+The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{\Phi} = 0.
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{Ξ} = 0.
 $$
 
 Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial Q_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
 
 $$
-\Box\tilde{\Phi} = \frac{m^2 c^2}{\hbar^2}\tilde{\Phi},
+\Box\tilde{Ξ} = \frac{m^2 c^2}{\hbar^2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\chi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
-The **Dirac equation** for a relativistic spinor field $\tilde{\Psi}$ of mass $m$ is the linear, chirality-off-diagonal pair
+The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}^{\mathrm{spn}}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
-where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
+where $\tilde{Ξ}^{\mathrm{spn}} = \tilde{Ξ}^{\mathrm{spn}}_L + \tilde{Ξ}^{\mathrm{spn}}_R$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
 
 $$
-\tilde{\nabla}\tilde{\Psi} = 0,
+\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{\Psi}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{Ξ}^{\mathrm{spn}}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\mathrm{spn}\flat} = -\tilde{Ξ}^{\mathrm{spn}*}$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}} = m\tilde{Ξ}^{\mathrm{spn}\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -231,8 +231,8 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
-| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
-| Dirac | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | — |
+| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2)\tilde{Ξ} = 0$ | — |
+| Dirac | $\tilde{\nabla}\tilde{Ξ}^{\mathrm{spn}}_R = m\tilde{Ξ}^{\mathrm{spn}}_L,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L = m\tilde{Ξ}^{\mathrm{spn}}_R$ | — |
 
 ## Structural Observations
 

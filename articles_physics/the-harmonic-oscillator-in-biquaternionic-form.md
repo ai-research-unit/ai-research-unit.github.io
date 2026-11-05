@@ -180,13 +180,13 @@ $$
 
 Both $\tilde{Q}_{\mathrm{osc},1}$ and $\tilde{Q}_{\mathrm{osc},2}$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(t',x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct'\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde R=ict'\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde R\mapsto\tilde U_{\mathrm b}\tilde R\tilde U_{\mathrm b}^{*}$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(t',x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct'\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)\,e_t+i\sinh(\theta^{\mathrm{rpd}}/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde R=ict'\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde R\mapsto\tilde U_{\mathrm b}\tilde R\tilde U_{\mathrm b}^{*}$; computing the result gives
 
 $$
-ct'_2=\cosh\psi\,ct'-\sinh\psi\,x,\qquad x_2=\cosh\psi\,x-\sinh\psi\,ct',
+ct'_2=\cosh\theta^{\mathrm{rpd}}\,ct'-\sinh\theta^{\mathrm{rpd}}\,x,\qquad x_2=\cosh\theta^{\mathrm{rpd}}\,x-\sinh\theta^{\mathrm{rpd}}\,ct',
 $$
 
-so the null combinations scale as $ct'\pm x\mapsto \exp(\mp\psi)(ct'\pm x)$. Identifying the oscillator's phase plane with the $(ct',x)$ plane of $\mathbb{M}_-$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow ct'\pm x$ makes the squeeze a boost, term for term.
+so the null combinations scale as $ct'\pm x\mapsto \exp(\mp\theta^{\mathrm{rpd}})(ct'\pm x)$. Identifying the oscillator's phase plane with the $(ct',x)$ plane of $\mathbb{M}_-$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow ct'\pm x$ makes the squeeze a boost, term for term.
 
 At the group level the identification is the standard one: the oscillator's dynamical group $Sp(2,\mathbb{R})$ is isomorphic to $SU(1,1)$, which is the subgroup of $SL(2,\mathbb{C})$ fixing a space-like direction, equivalently the double cover of the $SO(1,2)$ subgroup of the Lorentz group. Its compact $\mathrm{U}(1)$ is the phase; its two non-compact directions are the squeezes, realized as boosts. So the framework supplies a Lorentzian interpretation of squeezing: the phase is the compact rotation and the squeezes are the non-compact boosts in the same $su(1,1)$.
 
@@ -232,7 +232,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2},\tilde{Q}_{\mathrm{osc},3}$ | Quadratic generators (squeezes and phase), $[\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2}]=2i\tilde{Q}_{\mathrm{osc},3}$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
-| $\tilde U_{\mathrm b}=\cosh\frac\psi2\,e_t+i\sinh\frac\psi2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
+| $\tilde U_{\mathrm b}=\cosh\frac\theta^{\mathrm{rpd}}2\,e_t+i\sinh\frac\theta^{\mathrm{rpd}}2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | Sector exchange by the scalar imaginary |

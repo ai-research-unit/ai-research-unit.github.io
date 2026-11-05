@@ -48,7 +48,7 @@ where the second equality uses $e_t^{*} = e_t$ and $\vec e_k^{*} = -\vec e_k$, t
 
 Two warnings about reading $\tilde{\nabla}$ as an element of $\mathbb{B}$ are needed, because they govern every manipulation that follows. The coefficients $\partial/\partial Q_\mu$ are **operators**, not complex numbers, so $\tilde{\nabla}$ is not an element of the algebra but an algebra-valued differential operator; statements about it are statements about its action. And the coefficients do not commute with the basis in the naive way, because the time coefficient $\partial/\partial Q_t$ is imaginary while the basis is not: the product rule fixes the order, and $\tilde{\nabla}$ acts by left multiplication on the field,
 $$
-\tilde{\nabla}\tilde{\Phi} = \sum_\mu e_\mu\,\partial/\partial Q_\mu\,\tilde{\Phi} .
+\tilde{\nabla}\tilde{Ξ} = \sum_\mu e_\mu\,\partial/\partial Q_\mu\,\tilde{Ξ} .
 $$
 Nothing else in the construction depends on the choice of left or right action, because the d'Alembertian will turn out to be central; the first-order kernel will not be, and there the order is the content.
 
@@ -75,7 +75,7 @@ $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
 $$
-\Box(\tilde{Q}_1\tilde{\Phi}) = \tilde{Q}_1\,(\Box\tilde{\Phi}), \qquad \tilde{Q}_1 \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
+\Box(\tilde{Q}_1\tilde{Ξ}) = \tilde{Q}_1\,(\Box\tilde{Ξ}), \qquad \tilde{Q}_1 \in \mathbb{B},\ \tilde{Ξ}\ \text{any field}.
 $$
 Every later statement about the scalar Green's function follows from this centrality, and every departure from it will be a statement about the first-order operator instead.
 
@@ -85,7 +85,7 @@ The verification of the composition was made on a random real symbol vector $s$,
 
 On a plane wave
 $$
-\tilde{\Phi} = \tilde{\Phi}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'))
+\tilde{Ξ} = \tilde{Ξ}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'))
 $$
 the derivatives act as numbers: $\partial/\partial Q_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial Q_k \to ik_k$, so
 $$
@@ -93,13 +93,13 @@ $$
 \qquad
 \Box \to \frac{\omega^2}{c^2} - \vec k^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{\Phi}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{\Phi}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, the operator above is $\Box = \Delta - c^{-2}\partial^2/\partial {t'}^2$, and the physical mass equation is
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\psi = 0 ,
+\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ}^{\mathrm{spn}} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {t'}^2 + \nabla^2$; its mass equation is $(\Box - m^2)\psi = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\mu^2$ with $\mu = mc/\hbar$.
+whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {t'}^2 + \nabla^2$; its mass equation is $(\Box - m^2)\tilde{Ξ}^{\mathrm{spn}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\mu^2$ with $\mu = mc/\hbar$.
 
 ### Self-adjointness
 
@@ -142,11 +142,11 @@ $$
 $$
 where $\Box_{\tilde{R}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict'$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde J$ inverted by convolution. With this normalisation the inhomogeneous equation
 $$
-\Box\tilde{\Phi} = \tilde{J}
+\Box\tilde{Ξ} = \tilde{J}
 $$
 is solved by
 $$
-\tilde{\Phi}(\tilde{R}) = -\int G(\tilde{R},\tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4Q_2 ,
+\tilde{Ξ}(\tilde{R}) = -\int G(\tilde{R},\tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4Q_2 ,
 $$
 because $\Box$ is central and may be moved through any algebraic factor. The minus sign and the sign of the source equation are a matched pair; changing either alone changes the sign of the field, which is the usual source of an apparent inconsistency between articles that state the convolution differently.
 
@@ -199,7 +199,7 @@ $$
 \boxed{\;
 G^{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)\;}.
 $$
-The Jacobian identity was checked by smearing $\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
+The Jacobian identity was checked by smearing $\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\xi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\xi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\xi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
 $$
 G_{\mathrm{adv}}(\tilde{R}) = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(-t')\,\delta(\rho^2) .
 $$
@@ -299,7 +299,7 @@ $$
 $$
 in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
 
-**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde{\nabla}\tilde{\Phi} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\tilde{\nabla}^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
+**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde{\nabla}\tilde{Ξ} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\tilde{\nabla}^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
 
 ## The Shifted Gradient and the Generalized Maxwell–Dirac Equation
 
@@ -362,11 +362,11 @@ The cross terms cancel for the same reason as before — $[\,\partial/\partial\t
 
 **The weighted kernel, and a sign to pair correctly.** The fundamental solution of the scalar equation to which the square reduces is carried by the light cone with an exponential weight,
 $$
-\psi = \frac{1}{4\pi x}\,\exp(-i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\,\delta(\tau - x) , \qquad x = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
+\tilde{Ξ}^{\mathrm{spn}} = \frac{1}{4\pi x}\,\exp(-i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\,\delta(\tau - x) , \qquad x = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$
-as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's **sign must match the sign of the $(F,\nabla)$ coefficient**, and this is the one place where the paper is not self-consistent. Substituting $\exp(\lambda(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - f\tau)\chi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\chi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\chi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the **same** sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
+as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's **sign must match the sign of the $(F,\nabla)$ coefficient**, and this is the one place where the paper is not self-consistent. Substituting $\exp(\lambda(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - f\tau)\xi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\xi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\xi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the **same** sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
 $$
-\psi = \frac{1}{4\pi x}\,\exp(+i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\,\delta(\tau - x) , \qquad
+\tilde{Ξ}^{\mathrm{spn}} = \frac{1}{4\pi x}\,\exp(+i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\,\delta(\tau - x) , \qquad
 \text{symbol} \quad (\zeta - F)^2 - (\omega + if)^2 ,
 $$
 and $\mu = -2i(F,\nabla)$ with the mirror in which every sign of $F$ is reversed. The printed $\exp(-i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ with $(\zeta + F)^2 - (\omega + if)^2$ is that mirror; what the paper does not do is print it with the coefficient it uses. Its scalar equation, its KGFS equation and its theorem all carry the coefficient $+2i(F,\nabla)$ — its own derivation of the composition gives $+2i$ where its statement of the same lemma gives $-2i$ — while its kernel, its Fourier transform and the integral representations of its last three sections carry the opposite exponent. The two groups are therefore consistent only after $F \to -F$ in one of them, and the corpus records the pairing above, together with the discrepancy, rather than one of the printed halves.
@@ -453,7 +453,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial/\partial Q_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k\|^2$ |
 | $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \nabla^\pm + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta = -\Box$ |
-| $\psi = \frac{1}{4\pi x}\exp(\pm i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
+| $\tilde{Ξ}^{\mathrm{spn}} = \frac{1}{4\pi x}\exp(\pm i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\mathrm{H}^{\mathrm{hvs}}(t')$ | Step function selecting the future cone |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=ict'$ the material interval is $-c^2t'^2+x^2+y^2+z^2$ (not used in $\Box$) |
 

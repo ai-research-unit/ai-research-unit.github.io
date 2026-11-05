@@ -171,7 +171,7 @@ The identity $(\tilde S^{(\mathrm{adj})}_3)^3=\tilde S^{(\mathrm{adj})}_3$ deser
 
 ## The Internal and Orbital Parts of Angular Momentum
 
-It is worth being precise about what the adjoint action is the action *on*. A field in the material sector is a map $\tilde{\Phi}:\mathbb{R}^{1,3}\to\mathbb{M}_-$; its value at a point is a material biquaternion, and a rotation acts on it in two ways: on the point, through the argument, and on the value, through the adjoint action. The total angular momentum is the sum of the two,
+It is worth being precise about what the adjoint action is the action *on*. A field in the material sector is a map $\tilde{Ξ}:\mathbb{R}^{1,3}\to\mathbb{M}_-$; its value at a point is a material biquaternion, and a rotation acts on it in two ways: on the point, through the argument, and on the value, through the adjoint action. The total angular momentum is the sum of the two,
 
 $$
 \tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k,
@@ -222,14 +222,14 @@ which is exactly the statement that the total internal angular momentum of a com
 An integer-spin field is quantized with commutators, not anticommutators. The mode expansion carries one oscillator pair for each of the $2s+1$ polarizations at each momentum,
 
 $$
-\Phi^{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
+Ξ^{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\chi_r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip\cdot x)
-+ \chi_{r}^{*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip\cdot x)
+\xi_r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)\,\exp(-ip\cdot x)
++ \xi_{r}^{*}(\vec p)\,a^{\mathrm{fop}\dagger}_r(\vec p)\,\exp(+ip\cdot x)
 \right],
 $$
 
-with polarization labels $\chi_r$ and mode operators satisfying
+with polarization labels $\xi_r$ and mode operators satisfying
 
 $$
 \left[a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\right]
@@ -297,7 +297,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ | Weight basis of the triplet; $\tilde S^{(\mathrm{adj})}_3$ eigenvalues $\pm1,0$ |
 | $\tilde S^{(\mathrm{adj})}_\pm=\tilde S^{(\mathrm{adj})}_1\pm i\tilde S^{(\mathrm{adj})}_2$ | Ladder operators, matrix element $\sqrt2$ |
 | $(\tilde S^{(\mathrm{adj})}_3)^3-\tilde S^{(\mathrm{adj})}_3=0$ | Minimal polynomial of the spin-one generator |
-| $\chi_r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
+| $\xi_r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
 | $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$ | Bosonic mode operators, $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\delta_{rs}(2\pi)^3\delta^{(3)}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | Helicity; eigenvalues $\pm s$ |
 | $\tilde S^{(s)}_k=\sum_a I\otimes\cdots\otimes \tilde S^{(\mathrm{adj})}_k\otimes\cdots\otimes I$ | Internal spin for rank-$s$ carriers |

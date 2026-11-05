@@ -17,10 +17,10 @@ The division between what is established and what is only transcribed is stated 
 The theorem has three independent inputs, and it is useful to record which of them the biquaternion framework supplies.
 
 1. **The Lorentz representation.** Spin is the intrinsic angular momentum of a particle: in the rest frame it is the label $s$ of the $SU(2)$ little-group representation, with $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$, and for a massless particle it is helicity. In the biquaternion framework that label is carried by the representation of the double cover $SL(2,\mathbb{C})$ of the restricted Lorentz group. The covering homomorphism has kernel $\{\pm e_t\}$, so a representation either descends to $SO^+(1,3)$ — the integer-spin case — or is a genuine two-valued representation of the cover — the half-integer-spin case.
-2. **Locality (microcausality).** Observables at spacelike separation must commute. The field is not an observable; its bilinears are. If $\tilde\Psi$ anticommutes with itself at spacelike separation the bilinears commute, while if it commutes the bilinears do not, because the field's commutator is then a nonzero kernel. Locality therefore bears on the bracket, but only through the bilinears, and it is one of two constraints that must agree.
+2. **Locality (microcausality).** Observables at spacelike separation must commute. The field is not an observable; its bilinears are. If $\tilde{Ξ}^{\mathrm{spn}}$ anticommutes with itself at spacelike separation the bilinears commute, while if it commutes the bilinears do not, because the field's commutator is then a nonzero kernel. Locality therefore bears on the bracket, but only through the bilinears, and it is one of two constraints that must agree.
 3. **Positivity.** The inner product on the state space must be positive definite and the Hamiltonian bounded below. For a half-integer-spin field, commuting modes give negative-norm states and a Hamiltonian unbounded below; anticommuting modes give the positive-definite fermionic Fock space and a bounded Hamiltonian.
 
-The third ingredient is what makes the theorem non-trivial: the two-valuedness of the field makes $\tilde\Psi$ and $-\tilde\Psi$ physically indistinguishable, so the sign that separates commuting from anticommuting quantization is invisible in the classical field, and it has to be recovered from the bilinear $\bar{\tilde\Psi}\tilde\Psi$, that is from the norm. Locality and positivity are logically independent, and the theorem is the assertion that they always select the same bracket; for spin $\tfrac12$ both exclude the commuting one, and both exclusions are computed below.
+The third ingredient is what makes the theorem non-trivial: the two-valuedness of the field makes $\tilde{Ξ}^{\mathrm{spn}}$ and $-\tilde{Ξ}^{\mathrm{spn}}$ physically indistinguishable, so the sign that separates commuting from anticommuting quantization is invisible in the classical field, and it has to be recovered from the bilinear $\bar{\tilde{Ξ}}^{\mathrm{spn}}\tilde{Ξ}^{\mathrm{spn}}$, that is from the norm. Locality and positivity are logically independent, and the theorem is the assertion that they always select the same bracket; for spin $\tfrac12$ both exclude the commuting one, and both exclusions are computed below.
 
 The biquaternion framework supplies the first ingredient geometrically and the third ingredient only at the level of the finite single-mode algebra; it transcribes the second with the parents' plane-wave fields. The five sections that follow take them up in the order representation, mode, locality, positivity.
 
@@ -66,9 +66,9 @@ The $2\pi$ rotation is the nontrivial element of the kernel $\{\pm e_t\}$ of the
 
 The sign is not an artefact of a basis. It is the image of the nontrivial element of $\pi_1(SO^+(1,3))\cong\mathbb{Z}/2$ under the covering homomorphism, and it is why the left action of the cover has no single-valued representative on the algebra.
 
-For an **observable** the sign cancels. The gauge-invariant bilinears of the field are quadratic, $\bar{\tilde\Psi}\,\mathcal{O}\,\tilde\Psi$ with $\mathcal{O}$ a fixed element of the algebra and $\bar{\tilde\Psi}X=\mathrm{Sc}(\tilde\Psi^{*}iX\vec e_x)$ the Dirac adjoint, and under $\tilde\Psi\mapsto-\tilde\Psi$ they are unchanged. This is the precise sense in which $\tilde\Psi$ and $-\tilde\Psi$ are physically indistinguishable, and it is why the classical field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the defining module; it is *half* of the spin–statistics connection, not the whole of it.
+For an **observable** the sign cancels. The gauge-invariant bilinears of the field are quadratic, $\bar{\tilde{Ξ}}^{\mathrm{spn}}\,\mathcal{O}\,\tilde{Ξ}^{\mathrm{spn}}$ with $\mathcal{O}$ a fixed element of the algebra and $\bar{\tilde{Ξ}}^{\mathrm{spn}}X=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}iX\vec e_x)$ the Dirac adjoint, and under $\tilde{Ξ}^{\mathrm{spn}}\mapsto-\tilde{Ξ}^{\mathrm{spn}}$ they are unchanged. This is the precise sense in which $\tilde{Ξ}^{\mathrm{spn}}$ and $-\tilde{Ξ}^{\mathrm{spn}}$ are physically indistinguishable, and it is why the classical field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the defining module; it is *half* of the spin–statistics connection, not the whole of it.
 
-At the level of the operator algebra the two signs are worth distinguishing, because they act on different objects. A rotation by $2\pi$ multiplies the field by $-e_t$, so $\tilde\Psi^{\mathrm{fop}}\mapsto-\tilde\Psi^{\mathrm{fop}}$. The parity element $(-1)^F$ acts by inner automorphism on the algebra of the single mode, and it flips exactly the odd elements: $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and likewise $\vec\Upsilon_y$, while $\tilde\Pi_-$ and $e_t$ are fixed. Both operations are $-\mathrm{id}$ on the odd part and $+\mathrm{id}$ on the even part, and that is the operator-level form of $(-1)^{2s}=(-1)^F$ at $s=\tfrac12$. It is a consistency of two structures; it does not yet say that the bracket *must* anticommute.
+At the level of the operator algebra the two signs are worth distinguishing, because they act on different objects. A rotation by $2\pi$ multiplies the field by $-e_t$, so $\tilde{Ξ}^{\mathrm{fop}}\mapsto-\tilde{Ξ}^{\mathrm{fop}}$. The parity element $(-1)^F$ acts by inner automorphism on the algebra of the single mode, and it flips exactly the odd elements: $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and likewise $\vec\Upsilon_y$, while $\tilde\Pi_-$ and $e_t$ are fixed. Both operations are $-\mathrm{id}$ on the odd part and $+\mathrm{id}$ on the even part, and that is the operator-level form of $(-1)^{2s}=(-1)^F$ at $s=\tfrac12$. It is a consistency of two structures; it does not yet say that the bracket *must* anticommute.
 
 ## The Algebra's Own One Fermionic Mode
 
@@ -119,21 +119,21 @@ The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim
 
 The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No other derivative operator is written.
 
-The field is the element-valued map $\tilde\Psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
+The field is the element-valued map $\tilde{Ξ}^{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 
 $$
-\tilde\Psi^{\mathrm{fop}}(X,t')=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde\Psi^{(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde\Psi^{(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}^{\mathrm{fop}}(X,t')=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{spn}(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{spn}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-where $\tilde\Psi^{(r)}_{\pm}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde\Psi^{\mathrm{fop}\dagger}$ is the Hermitian conjugate.
+where $\tilde{Ξ}^{\mathrm{spn}(r)}_{\pm}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde{Ξ}^{\mathrm{fop}\dagger}$ is the Hermitian conjugate.
 
 The corpus's Dirac equation is one equation per chirality, both acting from the left,
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
 the mass being the off-diagonal coupling of the two halves. On the single element that carries the four complex components of the field it is one two-sided action, written with both elements in position:
@@ -150,16 +150,16 @@ $$
 \mathbb{D}_p^2=p_0^2-|\vec p|^2=m^2,
 $$
 
-because $\exp(-ip\cdot x)$ gives $-iE_{\vec p}$ to the time derivative and $+ip_k$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde\Psi_R,\tilde\Psi_L)=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial t'^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
+because $\exp(-ip\cdot x)$ gives $-iE_{\vec p}$ to the time derivative and $+ip_k$ to the spatial ones. The glyph is the pair operator's, of *Operator and Calculus Conventions*: on the pair it is $\mathbb{D}(\tilde{Ξ}^{\mathrm{spn}}_R,\tilde{Ξ}^{\mathrm{spn}}_L)=(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L)$ with $\mathbb{D}^2=\Box I$, and on one element, which is how the equal-time computation uses it, it is the coordinate form above with $\mathbb{D}^2=\Box$. The square is scalar: the cross terms cancel because left and right multiplications commute, the time term contributes $-\partial^2/\partial t'^2$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_k\vec e_l+\vec e_l\vec e_k=-2\delta_{kl}e_t$. Verified on the symbol at random momenta, with $p^2=p_0^2-|\vec p|^2$: $\mathbb{D}_p^2-p^2I$ to $2.7\times10^{-15}$.
 
 The parents' spin sums are the two completeness identities
 
 $$
-\sum_{r=1}^{2}\tilde\Psi^{(r)}_{+}\,\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{+}\tilde\Phi\big)=(\mathbb{D}_p+m)\big(\tilde\Phi\,i\vec e_x\big),\qquad
-\sum_{r=1}^{2}\tilde\Psi^{(r)}_{-}\,\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{-}\tilde\Phi\big)=(\mathbb{D}_p-m)\big(\tilde\Phi\,i\vec e_x\big)
+\sum_{r=1}^{2}\tilde{Ξ}^{\mathrm{spn}(r)}_{+}\,\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{+}\tilde{Ξ}\big)=(\mathbb{D}_p+m)\big(\tilde{Ξ}\,i\vec e_x\big),\qquad
+\sum_{r=1}^{2}\tilde{Ξ}^{\mathrm{spn}(r)}_{-}\,\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{-}\tilde{Ξ}\big)=(\mathbb{D}_p-m)\big(\tilde{Ξ}\,i\vec e_x\big)
 $$
 
-for every $\tilde\Phi\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is the factor that the Dirac adjoint carries, moved onto the argument: $\bar{\tilde\Psi}X=\mathrm{Sc}(\tilde\Psi^{*}iX\vec e_x)$, and here it multiplies the test element, not the field, so the identity stays an identity of operators on one element. The identities are operator statements and not statements about solutions, and the second carries the opposite mass sign because the negative-frequency branch has the covariant norm $-2m$. Verified with the parent's covariant normalizations $\langle\tilde\Psi^{(r)}_{\pm},\tilde\Psi^{(s)}_{\pm}\rangle_{\mathrm D}=\pm2m\delta_{rs}$ at random momenta: the norms to $1.8\times10^{-15}$ and the two identities to $2.1\times10^{-14}$.
+for every $\tilde{Ξ}\in\mathbb{B}$. The right multiplication by $i\vec e_x$ is the factor that the Dirac adjoint carries, moved onto the argument: $\bar{\tilde{Ξ}}^{\mathrm{spn}}X=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}iX\vec e_x)$, and here it multiplies the test element, not the field, so the identity stays an identity of operators on one element. The identities are operator statements and not statements about solutions, and the second carries the opposite mass sign because the negative-frequency branch has the covariant norm $-2m$. Verified with the parent's covariant normalizations $\langle\tilde{Ξ}^{\mathrm{spn}(r)}_{\pm},\tilde{Ξ}^{\mathrm{spn}(s)}_{\pm}\rangle_{\mathrm D}=\pm2m\delta_{rs}$ at random momenta: the norms to $1.8\times10^{-15}$ and the two identities to $2.1\times10^{-14}$.
 
 The field is element-valued; the biquaternion content is the algebra on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** imposes
 
@@ -173,15 +173,15 @@ with all other brackets vanishing, and the **Bose choice** replaces both braces 
 **The anticommutator (Fermi choice).** At equal times the two branches enter with opposite phases, and with $\theta=\vec p\cdot\vec\Delta$, where $\vec\Delta=X-Y$ is the separation and $X=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, $Y$ likewise (the sign of $\theta$ is fixed by the mode-expansion convention and drops out of the anticommutator, only $\cos\theta$ surviving there), the completeness identities give
 
 $$
-\sum_r\Big[\tilde\Psi^{(r)}_{+}\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{+}\tilde\Phi\big)\exp(+i\theta)
-+\tilde\Psi^{(r)}_{-}\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{-}\tilde\Phi\big)\exp(-i\theta)\Big]
-=2\cos\theta\,\mathbb{D}_p\big(\tilde\Phi\,i\vec e_x\big)+2im\sin\theta\,\big(\tilde\Phi\,i\vec e_x\big).
+\sum_r\Big[\tilde{Ξ}^{\mathrm{spn}(r)}_{+}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{+}\tilde{Ξ}\big)\exp(+i\theta)
++\tilde{Ξ}^{\mathrm{spn}(r)}_{-}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{-}\tilde{Ξ}\big)\exp(-i\theta)\Big]
+=2\cos\theta\,\mathbb{D}_p\big(\tilde{Ξ}\,i\vec e_x\big)+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big).
 $$
 
-The time part of $\mathbb{D}_p$ gives $iE_{\vec p}(\tilde\Phi i\vec e_x)\vec e_x=E_{\vec p}\tilde\Phi$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta$. The spatial part $-i\sum_kp_k\vec e_k(\tilde\Phi i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde\Phi i\vec e_x)$ are odd, because $\sin\theta$ and $p_k$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec\Delta)$, so the equal-time relation is the component statement
+The time part of $\mathbb{D}_p$ gives $iE_{\vec p}(\tilde{Ξ} i\vec e_x)\vec e_x=E_{\vec p}\tilde{Ξ}$, because $i\vec e_x\,i\vec e_x=i^2\vec e_x^2=e_t$; it is even in $\vec p$, and so is $\cos\theta$. The spatial part $-i\sum_kp_k\vec e_k(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd, because $\sin\theta$ and $p_k$ are. The odd terms vanish under symmetric integration. Division by $2E_{\vec p}$ leaves $\cos\theta$ times the identity on the test element, which integrates to $\delta^{(3)}(\vec\Delta)$, so the equal-time relation is the component statement
 
 $$
-\boxed{\;\{\tilde\Psi^{\mathrm{fop}}_\mu(X,t'),\tilde\Psi^{\mathrm{fop}\dagger}_\nu(Y,t')\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec\Delta)\;},
+\boxed{\;\{\tilde{Ξ}^{\mathrm{fop}}_\mu(X,t'),\tilde{Ξ}^{\mathrm{fop}\dagger}_\nu(Y,t')\}=\delta_{\mu\nu}\,\delta^{(3)}(\vec\Delta)\;},
 $$
 
 the indices $\mu,\nu$ running over the four units, and the anticommutator is local. Parity in $\vec p$ decides what survives: the time part of $\mathbb{D}_p$ is even and remains, the spatial part and the mass term are odd and cancel.
@@ -189,37 +189,37 @@ the indices $\mu,\nu$ running over the four units, and the anticommutator is loc
 **The commutator (Bose choice for the same field).** Replacing the plus between the branches by a minus, the same completeness identities give
 
 $$
-\sum_r\Big[\tilde\Psi^{(r)}_{+}\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{+}\tilde\Phi\big)\exp(+i\theta)
--\tilde\Psi^{(r)}_{-}\mathrm{Sc}\big(\tilde\Psi^{(r)*}_{-}\tilde\Phi\big)\exp(-i\theta)\Big]
-=2i\sin\theta\,\mathbb{D}_p\big(\tilde\Phi\,i\vec e_x\big)+2m\cos\theta\,\big(\tilde\Phi\,i\vec e_x\big).
+\sum_r\Big[\tilde{Ξ}^{\mathrm{spn}(r)}_{+}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{+}\tilde{Ξ}\big)\exp(+i\theta)
+-\tilde{Ξ}^{\mathrm{spn}(r)}_{-}\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{spn}(r)*}_{-}\tilde{Ξ}\big)\exp(-i\theta)\Big]
+=2i\sin\theta\,\mathbb{D}_p\big(\tilde{Ξ}\,i\vec e_x\big)+2m\cos\theta\,\big(\tilde{Ξ}\,i\vec e_x\big).
 $$
 
 Here the time part of $\mathbb{D}_p$ multiplies the odd factor $2i\sin\theta$ and drops, while the mass term and the spatial part of $\mathbb{D}_p$ survive, the odd $p_k$ cancelling the odd $\sin\theta$:
 
 $$
-\frac{1}{2E_{\vec p}}\Big[2m\cos\theta\,\big(\tilde\Phi\,i\vec e_x\big)+2\sin\theta\sum_k p_k\,\vec e_k\big(\tilde\Phi\,i\vec e_x\big)\vec e_y\Big].
+\frac{1}{2E_{\vec p}}\Big[2m\cos\theta\,\big(\tilde{Ξ}\,i\vec e_x\big)+2\sin\theta\sum_k p_k\,\vec e_k\big(\tilde{Ξ}\,i\vec e_x\big)\vec e_y\Big].
 $$
 
-Integrating with $\int\frac{d^3p}{(2\pi)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde\Phi\,i\vec e_x)\vec e_y=i\tilde\Phi\vec e_z$, leaves
+Integrating with $\int\frac{d^3p}{(2\pi)^3}\,\frac{\cos\theta}{E_{\vec p}}=F(\vec\Delta)$ and $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$, and using $(\tilde{Ξ}\,i\vec e_x)\vec e_y=i\tilde{Ξ}\vec e_z$, leaves
 
 $$
-[\tilde\Psi^{\mathrm{fop}}(X,t'),\tilde\Psi^{\mathrm{fop}\dagger}(Y,t')]\,\tilde\Phi
-=i\,mF(\vec\Delta)\,\tilde\Phi\vec e_x-i\sum_k\vec e_k\,\tilde\Phi\vec e_z\,\nabla_kF(\vec\Delta),
+[\tilde{Ξ}^{\mathrm{fop}}(X,t'),\tilde{Ξ}^{\mathrm{fop}\dagger}(Y,t')]\,\tilde{Ξ}
+=i\,mF(\vec\Delta)\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF(\vec\Delta),
 \qquad
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
 $$
 
 with $\nabla_k=\partial/\partial\Delta_k$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $m=1$ and $\Delta=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_kF$ vanishes only where $\Delta_k$ does, so the kernel is nonzero for **every** $\vec\Delta\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
 
-The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ is the left action of the gradient on the right-handed half, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the pair operator $\mathbb{D}$ acting on $(\tilde\Psi_R,\tilde\Psi_L)$, with $\mathbb{D}^2=\Box I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
+The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$ is the left action of the gradient on the right-handed half, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the pair operator $\mathbb{D}$ acting on $(\tilde{Ξ}^{\mathrm{spn}}_R,\tilde{Ξ}^{\mathrm{spn}}_L)$, with $\mathbb{D}^2=\Box I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
 
 $$
-\{\tilde\Psi^{\mathrm{fop}}(x),\bar{\tilde\Psi}^{\mathrm{fop}}(y)\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y),
+\{\tilde{Ξ}^{\mathrm{fop}}(x),\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}(y)\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y),
 \qquad
-\langle0|[\tilde\Psi^{\mathrm{fop}}(x),\bar{\tilde\Psi}^{\mathrm{fop}}(y)]|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
+\langle0|[\tilde{Ξ}^{\mathrm{fop}}(x),\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}(y)]|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
 $$
 
-with $\bar{\tilde\Psi}^{\mathrm{fop}}(y)=\tilde\Psi^{\mathrm{fop}\dagger}(y)\,i\vec e_x$ the Dirac adjoint written with its right multiplication in position. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases — the Pauli–Jordan-type kernel, supported inside the light cone and vanishing for spacelike separation — and $G_{\mathrm{S}}$ is the symmetric combination, which does not vanish there. The anticommutator is a $c$-number and equals its own vacuum expectation; under anticommutation relations the commutator is not a $c$-number, and the second identity is its vacuum expectation, whose $c$-number part is what carries $G_{\mathrm{S}}$. The anticommutator inherits the vanishing of $\Delta_{\mathrm{A}}$; the commutator's vacuum expectation inherits the non-vanishing of $G_{\mathrm{S}}$. At equal times these reduce to the delta and to the Bessel kernel computed above. The exact normalizations of $\Delta_{\mathrm{A}}$ and $G_{\mathrm{S}}$ carry the conventional factor of $i$; the covariant form is the standard textbook identity and is recorded as such, and the equal-time form is what was recomputed here.
+with $\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}(y)=\tilde{Ξ}^{\mathrm{fop}\dagger}(y)\,i\vec e_x$ the Dirac adjoint written with its right multiplication in position. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases — the Pauli–Jordan-type kernel, supported inside the light cone and vanishing for spacelike separation — and $G_{\mathrm{S}}$ is the symmetric combination, which does not vanish there. The anticommutator is a $c$-number and equals its own vacuum expectation; under anticommutation relations the commutator is not a $c$-number, and the second identity is its vacuum expectation, whose $c$-number part is what carries $G_{\mathrm{S}}$. The anticommutator inherits the vanishing of $\Delta_{\mathrm{A}}$; the commutator's vacuum expectation inherits the non-vanishing of $G_{\mathrm{S}}$. At equal times these reduce to the delta and to the Bessel kernel computed above. The exact normalizations of $\Delta_{\mathrm{A}}$ and $G_{\mathrm{S}}$ carry the conventional factor of $i$; the covariant form is the standard textbook identity and is recorded as such, and the equal-time form is what was recomputed here.
 
 ## The Energy and the Norm
 
@@ -270,7 +270,7 @@ The table also displays what the framework does and does not explain. The *spin 
 **Transcribed, not derived.**
 
 - That the bracket is *forced* by the conjunction of locality, positivity and Lorentz invariance. The article exhibits the failure of the wrong choices; it does not prove that no other structure evades it.
-- The covariant identities $\{\tilde\Psi^{\mathrm{fop}},\bar{\tilde\Psi}^{\mathrm{fop}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}$ and $[\tilde\Psi^{\mathrm{fop}},\bar{\tilde\Psi}^{\mathrm{fop}}]=(\mathbb{D}+m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
+- The covariant identities $\{\tilde{Ξ}^{\mathrm{fop}},\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}$ and $[\tilde{Ξ}^{\mathrm{fop}},\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}]=(\mathbb{D}+m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
 - The scalar-field and Maxwell-field contrast, and the standard microcausality argument for integer spin.
 
 **Gap, left visible.**
@@ -288,7 +288,7 @@ The table also displays what the framework does and does not explain. The *spin 
 
 **4. Integer-spin quantization in the algebra.** The vector representation appears through the adjoint action on the vector units, and its quantization is standard and imported. Is there a native construction of the integer-spin Fock space from the algebra that mirrors the single-mode fermionic one, and if not, what obstructs it beyond the trace identity?
 
-**5. The massless limit and chirality.** The microcausality failure of the commutator was computed at $m>0$, where the surviving function is built on the Bessel kernel $K_1$. As $m\to 0$ the function $F$ becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish, so the massless case is not qualitatively different. At $m=0$ the chiral pair decouples into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, each carrying one helicity; how the chiral pair and the helicity–chirality locking enter the theorem is not developed here.
+**5. The massless limit and chirality.** The microcausality failure of the commutator was computed at $m>0$, where the surviving function is built on the Bessel kernel $K_1$. As $m\to 0$ the function $F$ becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish, so the massless case is not qualitatively different. At $m=0$ the chiral pair decouples into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=0$, each carrying one helicity; how the chiral pair and the helicity–chirality locking enter the theorem is not developed here.
 
 **6. Empirical content.** The construction reproduces standard field theory. Any deviation would have to appear where the algebra is used beyond transcription — for example in a modification of the one-mode identification or in the coupling to the material sector; none is visible at the level developed here.
 
@@ -321,13 +321,13 @@ What the framework establishes is that the two pairings which survive the theore
 | $\mathbb{D}\tilde X=-\partial\tilde X/\partial t'\,\vec e_x-\sum_k\vec e_k\,\partial\tilde X/\partial Q_k\,\vec e_y$ | Pair operator on one element (coordinate form); the time term is a single right multiplication, the spatial terms two-sided; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p\tilde X=iE_{\vec p}\tilde X\vec e_x-i\sum_k p_k\vec e_k\tilde X\vec e_y$ | Symbol of the same operator on a plane wave; $\mathbb{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^2$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
-| $\tilde\Psi^{\mathrm{fop}}$, $\bar{\tilde\Psi}^{\mathrm{fop}}=\tilde\Psi^{\mathrm{fop}\dagger}i\vec e_x$ | Quantized element-valued Dirac field and its Dirac adjoint, $\bar{\tilde\Psi}X=\mathrm{Sc}(\tilde\Psi^{*}iX\vec e_x)$ |
+| $\tilde{Ξ}^{\mathrm{fop}}$, $\bar{\tilde{Ξ}}^{\mathrm{spn}}^{\mathrm{fop}}=\tilde{Ξ}^{\mathrm{fop}\dagger}i\vec e_x$ | Quantized element-valued Dirac field and its Dirac adjoint, $\bar{\tilde{Ξ}}^{\mathrm{spn}}X=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}iX\vec e_x)$ |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_r(\vec p)$ | Annihilation and antiparticle creation operators |
-| $\tilde\Psi^{(r)}_{\pm}(\vec p)$ | Positive- and negative-frequency amplitudes, elements of $\mathbb{B}$ (from the parents) |
-| $\sum_r\tilde\Psi^{(r)}_{\pm}\mathrm{Sc}(\tilde\Psi^{(r)*}_{\pm}\tilde\Phi)=(\mathbb{D}_p\pm m)(\tilde\Phi\,i\vec e_x)$ | Spin sums as completeness identities, for every $\tilde\Phi\in\mathbb{B}$ |
+| $\tilde{Ξ}^{\mathrm{spn}(r)}_{\pm}(\vec p)$ | Positive- and negative-frequency amplitudes, elements of $\mathbb{B}$ (from the parents) |
+| $\sum_r\tilde{Ξ}^{\mathrm{spn}(r)}_{\pm}\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}(r)*}_{\pm}\tilde{Ξ})=(\mathbb{D}_p\pm m)(\tilde{Ξ}\,i\vec e_x)$ | Spin sums as completeness identities, for every $\tilde{Ξ}\in\mathbb{B}$ |
 | $\theta=\vec p\cdot\vec\Delta$, $\vec\Delta=X-Y$, $X=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Phase and spatial separation in the equal-time brackets |
-| $\{\tilde\Psi^{\mathrm{fop}}_\mu,\tilde\Psi^{\mathrm{fop}\dagger}_\nu\}=\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$ | Local equal-time anticommutator |
-| $[\tilde\Psi^{\mathrm{fop}},\tilde\Psi^{\mathrm{fop}\dagger}]\,\tilde\Phi=i\,mF\,\tilde\Phi\vec e_x-i\sum_k\vec e_k\,\tilde\Phi\vec e_z\,\nabla_kF$ | Nonlocal equal-time commutator acting on a test element $\tilde\Phi$ |
+| $\{\tilde{Ξ}^{\mathrm{fop}}_\mu,\tilde{Ξ}^{\mathrm{fop}\dagger}_\nu\}=\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$ | Local equal-time anticommutator |
+| $[\tilde{Ξ}^{\mathrm{fop}},\tilde{Ξ}^{\mathrm{fop}\dagger}]\,\tilde{Ξ}=i\,mF\,\tilde{Ξ}\vec e_x-i\sum_k\vec e_k\,\tilde{Ξ}\vec e_z\,\nabla_kF$ | Nonlocal equal-time commutator acting on a test element $\tilde{Ξ}$ |
 | $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1(m|\vec\Delta|)$ | Surviving commutator kernel ($m>0$) |
 | $\Delta_{\mathrm{A}}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
 | $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |

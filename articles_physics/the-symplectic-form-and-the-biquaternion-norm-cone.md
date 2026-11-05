@@ -282,7 +282,7 @@ $$
 \boxed{\;\langle\tilde P\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k^2\;},
 $$
 
-and $\langle\tilde P\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial Q_t^2+\Delta$ acts as the eigenvalue
+and $\langle\tilde P\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the operator $\Box=\partial^2/\partial Q_t^2+\Delta$ acts as the eigenvalue
 
 $$
 (iK_0)^2+(i\vec k)^2
@@ -290,7 +290,7 @@ $$
 \qquad K_0=\frac{i\omega}{c},
 $$
 
-so $\Box\tilde\Phi=0$ is exactly $\langle\tilde P\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
+so $\Box\tilde{Ξ}=0$ is exactly $\langle\tilde P\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
 
 ## The Coadjoint Orbit and the Biquaternion-Norm Level Sets
 

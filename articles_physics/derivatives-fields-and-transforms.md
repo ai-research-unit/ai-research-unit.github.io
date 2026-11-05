@@ -175,11 +175,11 @@ The discrete transform replaces the integral by a sum over $N$ samples, with ker
 
 Two features of the transform are genuinely biquaternionic. The first is the **vanishing norm**: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{H}_{\mathbb{B}}$ is sufficient, and on $\mathbb{M}_-$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.
 
-The second is the **positivity of the transform of a measure**. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_k$, the transform $G(\omega)=\int\chi_\omega\,d\mu$, with $\chi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity
+The second is the **positivity of the transform of a measure**. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_k$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity
 
 $$
 \sum_{k,l}A_kA_l\,G(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu,\qquad
-Z=\sum_kA_k\chi_{\omega_k},
+Z=\sum_kA_k\xi_{\omega_k},
 $$
 
 with the biquaternion norm on the right. At $A_1=i$ the left-hand side is $i^2\mu(\mathbb{R}^n)e_t=-\mu(\mathbb{R}^n)e_t$, negative for every non-zero measure, because $\langle i\rangle_{\natural}=-1$: the norm pairing is not positive. With the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and a root with $\rho^{*}=-\rho$, the quadratic form satisfies
@@ -188,19 +188,19 @@ $$
 \sum_{k,l}A_k\,G(\omega_k-\omega_l)\,A_l^{*}=\int ZZ^{*}d\mu
 $$
 
-and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\hat\mu$. For a genuinely complex root the identity fails, because $\chi_\omega^{*}\neq\chi_{-\omega}$, and the positivity fails with it. The two failures are different: the norm failure is root-independent and belongs to the indefinite interval; the positivity failure is root-dependent and belongs to the character.
+and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\hat\mu$. For a genuinely complex root the identity fails, because $\xi_\omega^{*}\neq\xi_{-\omega}$, and the positivity fails with it. The two failures are different: the norm failure is root-independent and belongs to the indefinite interval; the positivity failure is root-dependent and belongs to the character.
 
 ## Physical Interpretations
 
 - **The derivative is the one-sided product.** Differentiation is multiplication of the field by the gradient on one side: $\tilde\nabla\tilde F$ holds the divergence, the gradient and the curl of $\tilde F$ in one biquaternion; the scalar part of the symmetric half is the plain form, and the antisymmetric half is the curl. For the field strength, $\tilde\nabla\tilde F=-g\tilde J$ is the Maxwell equation, with $g$ the coupling of the cited article. Boundary: the equation is a restatement of the cited Maxwell equation, not a derivation; the interpretation supplies no constitutive law, no dynamics and no prediction.
 
-- **The Hermitian form on two gradients is the kinetic density.** For a scalar field $\tilde\Phi=\Phi e_t$,
+- **The Hermitian form on two gradients is the kinetic density.** For a scalar field $\tilde{Ξ}=Ξ e_t$,
 
     $$
-    \mathrm{Sc}\left[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\right]=\sum_\mu\frac{\partial\Phi^{*}}{\partial Q_\mu}\frac{\partial\Phi}{\partial Q_\mu},
+    \mathrm{Sc}\left[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\right]=\sum_\mu\frac{\partialΞ^{*}}{\partial Q_\mu}\frac{\partialΞ}{\partial Q_\mu},
     $$
 
-    and on the material sector, where the field is written $\chi^{\mathrm{scl}}$, this is $-c^{-2}\lvert\partial\chi^{\mathrm{scl}}/\partial t'\rvert^2+\lvert\nabla\chi^{\mathrm{scl}}\rvert^2$. The kinetic Lagrangian is its negative, so the signature of the kinetic term is the signature of the Hermitian form on the gradient; the overall sign is a convention. Boundary: the identification is the Klein–Gordon Lagrangian interpretation; the value of the Hermitian form on the gradient is not positive, because the time derivative is imaginary on the material sector; no dynamics is derived.
+    and on the material sector, where the field is written $\xi^{\mathrm{scl}}$, this is $-c^{-2}\lvert\partial\xi^{\mathrm{scl}}/\partial t'\rvert^2+\lvert\nabla\xi^{\mathrm{scl}}\rvert^2$. The kinetic Lagrangian is its negative, so the signature of the kinetic term is the signature of the Hermitian form on the gradient; the overall sign is a convention. Boundary: the identification is the Klein–Gordon Lagrangian interpretation; the value of the Hermitian form on the gradient is not positive, because the time derivative is imaginary on the material sector; no dynamics is derived.
 
 - **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-c^{-2}\partial^2/\partial {t'}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial Q_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
 

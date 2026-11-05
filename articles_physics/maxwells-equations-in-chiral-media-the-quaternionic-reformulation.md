@@ -6,7 +6,7 @@ A **chiral medium** responds to an electric excitation with a magnetic polarisat
 
 The companion article *Electromagnetism in Media — The Local Complex Structure at Work* treats a medium through its two ordinary parameters, the permittivity $\epsilon$ and the permeability $\mu$, and leaves the constitutive relations $\vec D=\epsilon\vec E$, $\vec B=\mu\vec H$ untouched. A chiral medium needs a third parameter. This article records the **quaternionic reformulation of the time-harmonic Maxwell system for a chiral medium** given by V. V. Kravchenko and H. Oviedo [2003], and the applications they draw from it: integral representations for the fields, a complete solution of the **extendability problem**, the electromagnetic **energy balance**, and solutions in an **inhomogeneous, slowly changing** (stratified) chiral medium.
 
-The reformulation is a diagonalisation. Two complex quaternionic combinations of the fields are formed, one for each circular polarisation, and each satisfies a **first-order quaternionic equation of Beltrami type** whose constant is one of the two chiral wavenumbers. The value of writing the equations quaternionically rather than as the ordinary vector Beltrami equations $\mathrm{rot}\,\Phi=\alpha_2\Phi$ and $\mathrm{rot}\,\Psi=-\alpha_1\Psi$ is that the quaternionic equations carry the whole spatial function theory — the Borel–Pompeiu formula, the Cauchy integral formula and the Plemelj–Sokhotski formulas — and the authors use exactly that theory to obtain the integral representations and the extendability theorem.
+The reformulation is a diagonalisation. Two complex quaternionic combinations of the fields are formed, one for each circular polarisation, and each satisfies a **first-order quaternionic equation of Beltrami type** whose constant is one of the two chiral wavenumbers. The value of writing the equations quaternionically rather than as the ordinary vector Beltrami equations $\mathrm{rot}\,Ξ=\alpha_2Ξ$ and $\mathrm{rot}\,\tilde{Ξ}^{\mathrm{spn}}=-\alpha_1\tilde{Ξ}^{\mathrm{spn}}$ is that the quaternionic equations carry the whole spatial function theory — the Borel–Pompeiu formula, the Cauchy integral formula and the Plemelj–Sokhotski formulas — and the authors use exactly that theory to obtain the integral representations and the extendability theorem.
 
 **A word on the word.** In this series *chiral* usually names a property of a fermion: the inequivalence of the left- and right-handed components of a spinor, the subject of *Chiral Fermions in the Biquaternion Framework*. Here it names a property of a material medium — an electric–magnetic cross-response. The two senses are unrelated, and the word is disambiguated here once and not again.
 
@@ -78,18 +78,18 @@ At $\beta=0$ this is the ordinary pair $\mathrm{rot}\,\vec{\mathcal E}=ik\vec{\m
 Introduce the two purely vectorial biquaternions
 
 $$
-\Phi=\vec{\mathcal E}+i\vec{\mathcal H},
+Ξ=\vec{\mathcal E}+i\vec{\mathcal H},
 \qquad
-\Psi=\vec{\mathcal E}-i\vec{\mathcal H},
+\tilde{Ξ}^{\mathrm{spn}}=\vec{\mathcal E}-i\vec{\mathcal H},
 \tag{14}
 $$
 
-inverse to $\vec{\mathcal E}=\tfrac12(\Phi+\Psi)$, $\vec{\mathcal H}=\tfrac12(\Phi-\Psi)/i$. For real fields the two are complex conjugates, $\Psi=\Phi^{*}$; they are the *left-* and *right-handed* halves of the field in the sense of circular polarisation, not the chiral halves of a spinor of the companion article on chiral fermions. Applying $D_3=\sum_\mu\vec e_\mu\partial/\partial Q_\mu$ and using $D_3f=-\mathrm{div}\,\vec f+\mathrm{rot}\,\vec f$ on a pure vector, the cross terms close and the equations $(12)$ become
+inverse to $\vec{\mathcal E}=\tfrac12(Ξ+\tilde{Ξ}^{\mathrm{spn}})$, $\vec{\mathcal H}=\tfrac12(Ξ-\tilde{Ξ}^{\mathrm{spn}})/i$. For real fields the two are complex conjugates, $\tilde{Ξ}^{\mathrm{spn}}=Ξ^{*}$; they are the *left-* and *right-handed* halves of the field in the sense of circular polarisation, not the chiral halves of a spinor of the companion article on chiral fermions. Applying $D_3=\sum_\mu\vec e_\mu\partial/\partial Q_\mu$ and using $D_3f=-\mathrm{div}\,\vec f+\mathrm{rot}\,\vec f$ on a pure vector, the cross terms close and the equations $(12)$ become
 
 $$
-\Bigl(D_3-\frac{k}{1-k\beta}\Bigr)\Phi=\frac{i}{k}\bigl(\alpha_2\,\vec j_{\mathrm n}+\mathrm{div}\,\vec j_{\mathrm n}\bigr),
+\Bigl(D_3-\frac{k}{1-k\beta}\Bigr)Ξ=\frac{i}{k}\bigl(\alpha_2\,\vec j_{\mathrm n}+\mathrm{div}\,\vec j_{\mathrm n}\bigr),
 \qquad
-\Bigl(D_3+\frac{k}{1+k\beta}\Bigr)\Psi=-\frac{i}{k}\bigl(\alpha_1\,\vec j_{\mathrm n}-\mathrm{div}\,\vec j_{\mathrm n}\bigr),
+\Bigl(D_3+\frac{k}{1+k\beta}\Bigr)\tilde{Ξ}^{\mathrm{spn}}=-\frac{i}{k}\bigl(\alpha_1\,\vec j_{\mathrm n}-\mathrm{div}\,\vec j_{\mathrm n}\bigr),
 \tag{18}
 $$
 
@@ -105,32 +105,32 @@ $$
 The derivation is a two-line computation. From $(12)$, $\mathrm{rot}\,\vec{\mathcal E}=ik\vec{\mathcal H}+ik\beta\,\mathrm{rot}\,\vec{\mathcal H}$ and $\mathrm{rot}\,\vec{\mathcal H}=-ik\vec{\mathcal E}-ik\beta\,\mathrm{rot}\,\vec{\mathcal E}+\vec j_{\mathrm n}$, so
 
 $$
-D_3\Phi=-\mathrm{div}\,\vec{\mathcal E}+\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{rot}\,\vec{\mathcal H}
-=k\Phi+k\beta\bigl(\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{rot}\,\vec{\mathcal H}\bigr)+i\vec j_{\mathrm n}-\mathrm{div}\,\vec{\mathcal E},
+D_3Ξ=-\mathrm{div}\,\vec{\mathcal E}+\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{rot}\,\vec{\mathcal H}
+=kΞ+k\beta\bigl(\mathrm{rot}\,\vec{\mathcal E}+i\,\mathrm{rot}\,\vec{\mathcal H}\bigr)+i\vec j_{\mathrm n}-\mathrm{div}\,\vec{\mathcal E},
 $$
 
-and the bracket is $D_3\Phi+\mathrm{div}\,\vec{\mathcal E}$. Collecting the $D_3\Phi$ terms gives $(D_3-\alpha_2)\Phi=i\vec j_{\mathrm n}/(1-k\beta)-\mathrm{div}\,\vec{\mathcal E}$, and the continuity identity of the preceding section, $\mathrm{div}\,\vec{\mathcal E}=-(i/k)\,\mathrm{div}\,\vec j_{\mathrm n}$, turns the right-hand side into the first of equations $(18)$. The second follows by the same computation with $i\to-i$, which exchanges $\alpha_1$ and $\alpha_2$ and reverses the signs.
+and the bracket is $D_3Ξ+\mathrm{div}\,\vec{\mathcal E}$. Collecting the $D_3Ξ$ terms gives $(D_3-\alpha_2)Ξ=i\vec j_{\mathrm n}/(1-k\beta)-\mathrm{div}\,\vec{\mathcal E}$, and the continuity identity of the preceding section, $\mathrm{div}\,\vec{\mathcal E}=-(i/k)\,\mathrm{div}\,\vec j_{\mathrm n}$, turns the right-hand side into the first of equations $(18)$. The second follows by the same computation with $i\to-i$, which exchanges $\alpha_1$ and $\alpha_2$ and reverses the signs.
 
 ### The sourceless system
 
 In the absence of charges and currents, $\rho=0$ and $\vec j_{\mathrm n}=0$, and $(18)$ reduces to the **diagonal** system
 
 $$
-\boxed{\;\bigl(D_3-\alpha_2\bigr)\Phi=0,
+\boxed{\;\bigl(D_3-\alpha_2\bigr)Ξ=0,
 \qquad
-\bigl(D_3+\alpha_1\bigr)\Psi=0\;}.
+\bigl(D_3+\alpha_1\bigr)\tilde{Ξ}^{\mathrm{spn}}=0\;}.
 \tag{20}
 $$
 
-Each equation is first order, scalar-shifted, and involves only one of the two combinations. Written in vectors, $(20)$ is the pair of **Beltrami** equations $\mathrm{rot}\,\Phi-\alpha_2\Phi=0$ and $\mathrm{rot}\,\Psi+\alpha_1\Psi=0$; purely vectorial solutions of $(D_3+\alpha)\vec f=0$ are the Beltrami fields, also called force-free fields. The reformulation is the procedure the authors call the **Bohren transformation** [Lakhtakia, Varadan and Varadan 1989]. Their point is not the vector form, which is classical, but that the quaternionic form $(20)$ is an equation of a type whose solutions carry a complete function theory, and that the results of the next sections are not reachable within three-dimensional vector calculus.
+Each equation is first order, scalar-shifted, and involves only one of the two combinations. Written in vectors, $(20)$ is the pair of **Beltrami** equations $\mathrm{rot}\,Ξ-\alpha_2Ξ=0$ and $\mathrm{rot}\,\tilde{Ξ}^{\mathrm{spn}}+\alpha_1\tilde{Ξ}^{\mathrm{spn}}=0$; purely vectorial solutions of $(D_3+\alpha)\vec f=0$ are the Beltrami fields, also called force-free fields. The reformulation is the procedure the authors call the **Bohren transformation** [Lakhtakia, Varadan and Varadan 1989]. Their point is not the vector form, which is classical, but that the quaternionic form $(20)$ is an equation of a type whose solutions carry a complete function theory, and that the results of the next sections are not reachable within three-dimensional vector calculus.
 
-**A bridge to the field-strength biquaternion.** The combination $\Phi$ is, up to a constant, the object the rest of the series calls the field strength. Let $\vec E,\vec H$ be the physical fields, $\vec{\mathcal E}=\vec E/\sqrt{\mu}$ and $\vec{\mathcal H}=\vec H/\sqrt{\epsilon}$ the normalised ones entering $\Phi$ (the source's §4 convention), and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ the field strength of the rest of the series (the source's §7 convention). With $c=1/\sqrt{\epsilon\mu}$,
+**A bridge to the field-strength biquaternion.** The combination $Ξ$ is, up to a constant, the object the rest of the series calls the field strength. Let $\vec E,\vec H$ be the physical fields, $\vec{\mathcal E}=\vec E/\sqrt{\mu}$ and $\vec{\mathcal H}=\vec H/\sqrt{\epsilon}$ the normalised ones entering $Ξ$ (the source's §4 convention), and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ the field strength of the rest of the series (the source's §7 convention). With $c=1/\sqrt{\epsilon\mu}$,
 
 $$
-\Phi=\vec{\mathcal E}+i\vec{\mathcal H}=-ic\,\tilde F=ic\,\tilde F^{\natural},
+Ξ=\vec{\mathcal E}+i\vec{\mathcal H}=-ic\,\tilde F=ic\,\tilde F^{\natural},
 $$
 
-the two expressions agreeing because $\tilde F$ is a pure vector and $\tilde F^{\natural}=-\tilde F$ on the vectors. The chiral system is therefore the statement that $\Phi$ obeys a single first-order quaternionic equation with a scalar shift; the companion combination $\Psi$ obeys the shifted equation of the opposite shift. That is the precise sense in which the reformulation is a diagonalisation of the Maxwell operator by a complex structure already present in the algebra.
+the two expressions agreeing because $\tilde F$ is a pure vector and $\tilde F^{\natural}=-\tilde F$ on the vectors. The chiral system is therefore the statement that $Ξ$ obeys a single first-order quaternionic equation with a scalar shift; the companion combination $\tilde{Ξ}^{\mathrm{spn}}$ obeys the shifted equation of the opposite shift. That is the precise sense in which the reformulation is a diagonalisation of the Maxwell operator by a complex structure already present in the algebra.
 
 ## Two Wavenumbers and Optical Activity
 
@@ -144,12 +144,12 @@ $$
 \alpha_1+\alpha_2=\frac{2k}{1-k^2\beta^2}.
 $$
 
-The difference $\alpha_2-\alpha_1$ is the **optical activity**. A plane wave of either combination has the Beltrami form: an amplitude perpendicular to the wave vector with a circular polarisation. For the two amplitudes $\Phi_0=\Psi_0=\vec u_x+i\vec u_y$, with $\vec u_x,\vec u_y,\vec u_k$ a right-handed triad, the combinations
+The difference $\alpha_2-\alpha_1$ is the **optical activity**. A plane wave of either combination has the Beltrami form: an amplitude perpendicular to the wave vector with a circular polarisation. For the two amplitudes $Ξ_0=\tilde{Ξ}^{\mathrm{spn}}_0=\vec u_x+i\vec u_y$, with $\vec u_x,\vec u_y,\vec u_k$ a right-handed triad, the combinations
 
 $$
-\Phi=\Phi_0\,\exp(\,i\alpha_2\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+Ξ=Ξ_0\,\exp(\,i\alpha_2\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 \qquad
-\Psi=\Psi_0\,\exp(-i\alpha_1\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}}_0\,\exp(-i\alpha_1\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 
 satisfy the two Beltrami equations and reconstruct the fields through $(14)$. They are the two circular polarisations, and they carry the two different wavenumbers. An incident linearly polarised wave is their superposition; over a distance $L$ the phases of the two components differ by $(\alpha_2-\alpha_1)L$, and a linear polarisation whose two circular components differ in phase by $\delta$ has its plane rotated by $\delta/2$, so the plane of polarisation has rotated by
@@ -207,14 +207,14 @@ one has: the **Borel–Pompeiu formula** $K_{\pm\alpha}f+T_{\pm\alpha}D_{3\pm\al
 
 ## Integral Representations and the Extendability Problem
 
-**Integral representations.** Applying the Borel–Pompeiu formula to $\Phi$ and $\Psi$ and returning to the fields through $(14)$ gives an integral representation for the pair $(\vec{\mathcal E},\vec{\mathcal H})$ inside $\Omega$ in terms of the boundary values of $\Phi$ and $\Psi$ and the volume sources. In vectors, the vector parts of the resulting formulas are the **Stratton–Chu formulas** for a chiral medium; the scalar parts are a Gauss-type identity, and are identities when the fields obey $(12)$. Thus the representation reconstructs the fields inside the domain from their values on the boundary — the same role the retarded-potential representation plays in *Exercise: The Retarded Potentials and the Green's Function*, with the outgoing chiral kernel in place of the retarded one. It is equation $(21)$ of the source. The survey states the structural point plainly: in this form the Stratton–Chu formulas *are* a Cauchy integral formula for the electromagnetic field, a convolution with the fundamental solution of the Maxwell operator, and the classical vector form only hides that; the biquaternionic representation makes the meaning transparent. That is the survey's justification for the whole programme, and it is the reason the same kernel is then used as a computational basis rather than merely written down.
+**Integral representations.** Applying the Borel–Pompeiu formula to $Ξ$ and $\tilde{Ξ}^{\mathrm{spn}}$ and returning to the fields through $(14)$ gives an integral representation for the pair $(\vec{\mathcal E},\vec{\mathcal H})$ inside $\Omega$ in terms of the boundary values of $Ξ$ and $\tilde{Ξ}^{\mathrm{spn}}$ and the volume sources. In vectors, the vector parts of the resulting formulas are the **Stratton–Chu formulas** for a chiral medium; the scalar parts are a Gauss-type identity, and are identities when the fields obey $(12)$. Thus the representation reconstructs the fields inside the domain from their values on the boundary — the same role the retarded-potential representation plays in *Exercise: The Retarded Potentials and the Green's Function*, with the outgoing chiral kernel in place of the retarded one. It is equation $(21)$ of the source. The survey states the structural point plainly: in this form the Stratton–Chu formulas *are* a Cauchy integral formula for the electromagnetic field, a convolution with the fundamental solution of the Maxwell operator, and the classical vector form only hides that; the biquaternionic representation makes the meaning transparent. That is the survey's justification for the whole programme, and it is the reason the same kernel is then used as a computational basis rather than merely written down.
 
 **The extendability problem.** The question the authors pose is the boundary-value problem for the chiral system: given two Hölder-continuous vectors $\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma$ on the boundary $\Gamma$ of a bounded domain $\Omega$, does there exist a pair $(\vec{\mathcal E},\vec{\mathcal H})$ satisfying the chiral Maxwell equations $(12)$ in $\Omega$ and coinciding with $\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma$ on $\Gamma$? Through $(14)$ the problem splits into the two boundary-value problems
 
 $$
-D_{3-\alpha_2}\Phi=0\ \text{in }\Omega,\quad \Phi|_\Gamma=\vec{\mathcal E}_\Gamma+i\vec{\mathcal H}_\Gamma,
+D_{3-\alpha_2}Ξ=0\ \text{in }\Omega,\quad Ξ|_\Gamma=\vec{\mathcal E}_\Gamma+i\vec{\mathcal H}_\Gamma,
 \qquad
-D_{3+\alpha_1}\Psi=0\ \text{in }\Omega,\quad \Psi|_\Gamma=\vec{\mathcal E}_\Gamma-i\vec{\mathcal H}_\Gamma,
+D_{3+\alpha_1}\tilde{Ξ}^{\mathrm{spn}}=0\ \text{in }\Omega,\quad \tilde{Ξ}^{\mathrm{spn}}|_\Gamma=\vec{\mathcal E}_\Gamma-i\vec{\mathcal H}_\Gamma,
 $$
 
 and each of these has the solvability criterion $Q_\alpha v=T_\alpha g$ on $\Gamma$ for the inhomogeneous problem $D_\alpha f=g$, $f|_\Gamma=v$ (the **Theorem 6** of the paper). Combining the two criteria through $(14)$ gives the authors' **complete solution of the extendability problem**: the pair $(\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma)$ extends to a solution of $(12)$ in $\Omega$ if and only if two integral conditions on $\Gamma$ are satisfied, and then the solution is given by the Stratton–Chu representation. The two conditions are exactly the two boundary-value criteria, one for each circular polarisation.
@@ -253,7 +253,7 @@ $$
 \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\Gamma ,
 $$
 
-with $\vec f$ a prescribed tangential field; this is the source's equation $(14)$. The source writes it for the unnormalised fields of its §3, in which the diagonalising combinations are $\vec\chi=\vec E+i\vec H$ and $\vec\psi=\vec E-i\vec H$ with the same two wavenumbers $\alpha_1,\alpha_2$; the normalised fields $\vec{\mathcal E},\vec{\mathcal H}$ of this article are used below, and the two conventions describe the same equations.
+with $\vec f$ a prescribed tangential field; this is the source's equation $(14)$. The source writes it for the unnormalised fields of its §3, in which the diagonalising combinations are $\vec\xi=\vec E+i\vec H$ and $\vec{\tilde{Ξ}}^{\mathrm{spn}}=\vec E-i\vec H$ with the same two wavenumbers $\alpha_1,\alpha_2$; the normalised fields $\vec{\mathcal E},\vec{\mathcal H}$ of this article are used below, and the two conventions describe the same equations.
 
 **The basis.** The approximation space is spanned by the fundamental solutions of the two shifted operators, evaluated at source points placed on an auxiliary surface. For the exterior problem the sources lie on a closed surface $\Gamma^-$ enclosed by $\Gamma$, the points $\{y_j^-\}$ being dense on it, and the two families are
 
@@ -364,34 +364,34 @@ with the normalisation now applied locally, $\vec{\mathcal E}=\sqrt{\epsilon}\,\
 **Slowly changing media.** Put $\epsilon^{\mathrm{gr}}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$ and $\mu^{\mathrm{gr}}=\mathrm{grad}\sqrt{\mu}/\sqrt{\mu}$; these are the dimensionless vectors of §7, and $\epsilon^{\mathrm{gr}}/k$, $\mu^{\mathrm{gr}}/k$ are dimensionless too. In equation $(31)$ of the source the medium variation enters only through the multiplication operators $M_{\epsilon^{\mathrm{gr}}/k}$ and $M_{\mu^{\mathrm{gr}}/k}$. If $|\epsilon^{\mathrm{gr}}|,|\mu^{\mathrm{gr}}|\ll|k|$ those two terms are negligible, and the diagonalisation survives: the two combinations
 
 $$
-\Phi=\vec{\mathcal E}+i\vec{\mathcal H},
+Ξ=\vec{\mathcal E}+i\vec{\mathcal H},
 \qquad
-\Psi=\vec{\mathcal E}-i\vec{\mathcal H}
+\tilde{Ξ}^{\mathrm{spn}}=\vec{\mathcal E}-i\vec{\mathcal H}
 \tag{30}
 $$
 
 satisfy, to leading order,
 
 $$
-\bigl(D_3-\alpha_2\bigr)\Phi=0,
+\bigl(D_3-\alpha_2\bigr)Ξ=0,
 \qquad
-\bigl(D_3+\alpha_1\bigr)\Psi=0,
+\bigl(D_3+\alpha_1\bigr)\tilde{Ξ}^{\mathrm{spn}}=0,
 \tag{32}
 $$
 
 the same pair as the homogeneous problem $(20)$. The slowly changing chiral medium is therefore solvable by the same equations and the same kernel as the homogeneous one; only the normalisation of the fields has followed the medium. This is the geometric-optics regime of the medium, and the point of contact with the WKB material of the series.
 
-**The device for variable coefficients.** The paper solves the variable-coefficient equation $(D_3+\alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u=0$, with $\alpha$ a scalar function, by a **zero-divisor** device. Let $\chi$ be a solution of the eikonal equation $(\nabla\chi)^2=\alpha^2$, and put $\eta=\exp(\chi)$. Then
+**The device for variable coefficients.** The paper solves the variable-coefficient equation $(D_3+\alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u=0$, with $\alpha$ a scalar function, by a **zero-divisor** device. Let $\xi$ be a solution of the eikonal equation $(\nabla\xi)^2=\alpha^2$, and put $\eta=\exp(\xi)$. Then
 
 $$
 D_3+\alpha=\eta\bigl(D_3+\tilde Q_+\bigr)\eta^{-1},
 \qquad
-\tilde Q_\pm=\alpha\pm\nabla\chi,
+\tilde Q_\pm=\alpha\pm\nabla\xi,
 \qquad
 \tilde Q_+\tilde Q_-=0,
 $$
 
-the last being the zero-divisor identity $\alpha^2-(\nabla\chi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\chi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
+the last being the zero-divisor identity $\alpha^2-(\nabla\xi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\xi=\pm i\Theta$ with $\partial\Theta/\partial x_1=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
 
 $$
 u_x(x)=\exp(\,i\Theta(x_1))\Bigl[H_1(x_2,x_3)(1-i\vec e_x)A_1+H_2(x_2,x_3)\vec e_y(1+i\vec e_x)A_2\Bigr],
@@ -405,7 +405,7 @@ $$
 
 where $H_1,H_2,G_1,G_2$ are analytic functions of the complex variable $z=x_3+\vec e_xx_2$ — that is, for a representative $h=h_0\,e_t+h_1\,\vec e_x$, the parts satisfy the Cauchy–Riemann conditions $\partial/\partial Q_yh_0+\partial/\partial Q_zh_1=0$, $\partial/\partial Q_zh_0-\partial/\partial Q_yh_1=0$ — and $A_i,B_i$ are arbitrary constant biquaternions. The exponential $\exp(i\Theta)$ carries the phase accumulated along the stratification, and the analytic functions carry the transverse structure. Feeding them into the reconstruction $(14)$ gives explicit solutions of the chiral system for a stratified chiral medium; the case of general slowly changing $\epsilon,\mu,\beta$ is approximated by this one. The shift carried by each exponential is fixed below.
 
-**A sign bookkeeping point.** Proposition 14 records that $(43,44)$ solve $(D_3+\alpha(x_1))u=0$ with $\Theta$ an antiderivative of $\alpha$. The source then states the reduced system as $(32)$ and gives the solutions of it as $(46,47)$, with $\mathrm{Sd}_1,\mathrm{Sd}_2$ antiderivatives of $\alpha_1,\alpha_2$ respectively (equation $(45)$; the field formula following Proposition 15 uses the exponent $\exp(\,i\int\alpha_2)$). Recomputation on the printed forms shows that the two statements are related by one global sign: the printed $(46,47)$ with $\partial\mathrm{Sd}_2/\partial x_1=\alpha_2$, $\partial\mathrm{Sd}_1/\partial x_1=\alpha_1$ satisfy $(D_3+\alpha_2)\Phi=0$ and $(D_3-\alpha_1)\Psi=0$, whereas $(32)$ reads $(D_3-\alpha_2)\Phi=0$ and $(D_3+\alpha_1)\Psi=0$. The two agree if $\mathrm{Sd}_1,\mathrm{Sd}_2$ are read as antiderivatives of $-\alpha_1,-\alpha_2$, equivalently if the signs of the two exponentials are exchanged. The verified assignment, valid for a constant or a variable $\alpha(x_1)$, is the one recorded here: the exponential $\exp(\,i\Theta)$ on the first term accompanies the operator $D_3+\alpha$ whose shift is the derivative of $\Theta$. The pairing rule behind that assignment is the pair of eigenvalue identities
+**A sign bookkeeping point.** Proposition 14 records that $(43,44)$ solve $(D_3+\alpha(x_1))u=0$ with $\Theta$ an antiderivative of $\alpha$. The source then states the reduced system as $(32)$ and gives the solutions of it as $(46,47)$, with $\mathrm{Sd}_1,\mathrm{Sd}_2$ antiderivatives of $\alpha_1,\alpha_2$ respectively (equation $(45)$; the field formula following Proposition 15 uses the exponent $\exp(\,i\int\alpha_2)$). Recomputation on the printed forms shows that the two statements are related by one global sign: the printed $(46,47)$ with $\partial\mathrm{Sd}_2/\partial x_1=\alpha_2$, $\partial\mathrm{Sd}_1/\partial x_1=\alpha_1$ satisfy $(D_3+\alpha_2)Ξ=0$ and $(D_3-\alpha_1)\tilde{Ξ}^{\mathrm{spn}}=0$, whereas $(32)$ reads $(D_3-\alpha_2)Ξ=0$ and $(D_3+\alpha_1)\tilde{Ξ}^{\mathrm{spn}}=0$. The two agree if $\mathrm{Sd}_1,\mathrm{Sd}_2$ are read as antiderivatives of $-\alpha_1,-\alpha_2$, equivalently if the signs of the two exponentials are exchanged. The verified assignment, valid for a constant or a variable $\alpha(x_1)$, is the one recorded here: the exponential $\exp(\,i\Theta)$ on the first term accompanies the operator $D_3+\alpha$ whose shift is the derivative of $\Theta$. The pairing rule behind that assignment is the pair of eigenvalue identities
 
 $$
 \vec e_x(1-i\vec e_x)=+i(1-i\vec e_x),
@@ -436,7 +436,7 @@ Two restrictions bound the scope. The chirality parameter is taken real and the 
 
 ## Summary
 
-A chiral medium is an isotropic medium with a magnetoelectric response, described by the Drude–Born–Fedorov relations with the third parameter $\beta$. Its time-harmonic Maxwell system is diagonalised by the two combinations $\Phi=\vec{\mathcal E}+i\vec{\mathcal H}$ and $\Psi=\vec{\mathcal E}-i\vec{\mathcal H}$, each of which satisfies a first-order equation of Beltrami type with one of the two chiral wavenumbers
+A chiral medium is an isotropic medium with a magnetoelectric response, described by the Drude–Born–Fedorov relations with the third parameter $\beta$. Its time-harmonic Maxwell system is diagonalised by the two combinations $Ξ=\vec{\mathcal E}+i\vec{\mathcal H}$ and $\tilde{Ξ}^{\mathrm{spn}}=\vec{\mathcal E}-i\vec{\mathcal H}$, each of which satisfies a first-order equation of Beltrami type with one of the two chiral wavenumbers
 
 $$
 \boxed{\;
@@ -447,7 +447,7 @@ $$
 \alpha_1\alpha_2=\frac{k^2}{1-k^2\beta^2}\;},
 $$
 
-reducing to the ordinary wavenumber $k$ when $\beta=0$. The two wavenumbers are the two circular polarisations; their difference $2k^2\beta/(1-k^2\beta^2)$ is the optical activity, and the rotation of the plane of polarisation is half of it per unit length. The combination $\Phi$ is, up to $-ic$, the field-strength biquaternion $\tilde F$ of the rest of the series, so the diagonalisation is by a complex structure already present in the algebra.
+reducing to the ordinary wavenumber $k$ when $\beta=0$. The two wavenumbers are the two circular polarisations; their difference $2k^2\beta/(1-k^2\beta^2)$ is the optical activity, and the rotation of the plane of polarisation is half of it per unit length. The combination $Ξ$ is, up to $-ic$, the field-strength biquaternion $\tilde F$ of the rest of the series, so the diagonalisation is by a complex structure already present in the algebra.
 
 Because the diagonal equations are of the Helmholtz–Dirac type $D_{3\pm\alpha}u=0$, they carry the whole spatial function theory — the Helmholtz kernel $\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$, the Borel–Pompeiu formula, the Cauchy integral formula and the Plemelj–Sokhotski formulas — and the authors use it for two results: an integral representation of the fields of Stratton–Chu type, and a complete solution of the extendability problem, in which the scalar parts of the integral conditions supply the information that the classical vector condition lacks. The energy balance follows as a corollary of the quaternionic Stokes theorem, with the chiral weights $1-k^2\beta^2$ and its conjugate, and the two differential identities $(26,27)$ as its load-bearing step. For an inhomogeneous but slowly changing chiral medium the same diagonalisation survives to leading order, and the zero-divisor device solves the variable-coefficient equation explicitly for a stratified medium, in terms of exponentials of the accumulated phase and analytic transverse functions.
 
@@ -470,8 +470,8 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ | Drude–Born–Fedorov constitutive relations |
 | $\vec{\mathcal E}=\vec E/\sqrt{\mu}$, $\vec{\mathcal H}=\vec H/\sqrt{\epsilon}$ | §4 normalised fields of the reformulation |
 | $\vec j_{\mathrm n}=\vec j/\sqrt{\epsilon}$ | Normalised current density; the scalar of $(18)$ is $\mathrm{div}\,\vec{\mathcal E}$ |
-| $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion of the rest of the series (its §7 normalisation); $\Phi=-ic\tilde F$ |
-| $\Phi=\vec{\mathcal E}+i\vec{\mathcal H}$, $\Psi=\vec{\mathcal E}-i\vec{\mathcal H}$ | The two diagonalising combinations; $\Psi=\Phi^{*}$ for real fields |
+| $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion of the rest of the series (its §7 normalisation); $Ξ=-ic\tilde F$ |
+| $Ξ=\vec{\mathcal E}+i\vec{\mathcal H}$, $\tilde{Ξ}^{\mathrm{spn}}=\vec{\mathcal E}-i\vec{\mathcal H}$ | The two diagonalising combinations; $\tilde{Ξ}^{\mathrm{spn}}=Ξ^{*}$ for real fields |
 | $\alpha_1=k/(1+k\beta)$, $\alpha_2=k/(1-k\beta)$ | The two chiral wavenumbers; both $=k$ at $\beta=0$ |
 | $\mathrm{Sd}_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution, $\operatorname{Im}\alpha\ge0$ |
 | $\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_{3\pm\alpha}$ |
@@ -484,7 +484,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $y_j^\pm,\ a_j,b_j\in\mathbb B$ | Source points on $\Gamma^\pm$ and the biquaternionic coefficients of the collocation trial functions |
 | $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\vec{\mathcal E}\times\vec u$; scalar part of a biquaternion |
 | $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\zeta$ in the survey |
-| $\chi$, $\tilde Q_\pm=\alpha\pm\nabla\chi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
+| $\xi$, $\tilde Q_\pm=\alpha\pm\nabla\xi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
 | $z=x_3+\vec e_xx_2$ | Transverse complex variable for the stratified solutions |
 
 ## Further Reading

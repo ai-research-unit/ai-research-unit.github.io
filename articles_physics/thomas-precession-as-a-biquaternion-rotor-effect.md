@@ -29,9 +29,9 @@ The article is organized as follows. The next section fixes the boost rotor and 
 The **boost rotor** of a frame moving with velocity $\vec v_b$ is the unit-norm biquaternion
 
 $$
-\tilde U_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\,\vec u,
+\tilde U_{\vec v_b}=\cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\,\vec u,
 \qquad
-\tanh\psi_b=\frac{v_b}{c},
+\tanh\theta^{\mathrm{rpd}}_b=\frac{v_b}{c},
 \qquad
 \vec u=\frac{\vec v_b}{v_b},
 $$
@@ -42,13 +42,13 @@ $$
 \tilde Q_2\;=\;\tilde U_{\vec v_b}\,\tilde{Q}\,\tilde U_{\vec v_b}^{*},
 $$
 
-and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v_2=c\tanh(\psi_v-\psi_b)$.
+and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v_2=c\tanh(\theta^{\mathrm{rpd}}_v-\theta^{\mathrm{rpd}}_b)$.
 
 The rotor associated with a four-velocity is the positive Hermitian square root
 
 $$
 \tilde U_{\vec v}=\sqrt{-\frac{i}{c}\,\tilde{V}^{\natural}}
-=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_v,
+=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_v,
 \qquad
 \tilde U_{\vec v}\,\tilde{V}\,\tilde U_{\vec v}^{*}=ic\,e_t ,
 $$
@@ -60,7 +60,7 @@ and it is the **laboratory-to-rest** rotor. The four-velocity fixes the Hermitia
 Let
 
 $$
-\tilde U^{\mathrm{lor}}_{k}=\cosh\frac{\psi_k}{2}+i\sinh\frac{\psi_k}{2}\,\vec u_k,
+\tilde U^{\mathrm{lor}}_{k}=\cosh\frac{\theta^{\mathrm{rpd}}_k}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_k}{2}\,\vec u_k,
 \qquad k=1,2,
 $$
 
@@ -74,21 +74,21 @@ $$
 \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation}.
 $$
 
-The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\psi_k}{2}$, $s_k=\sinh\tfrac{\psi_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
+The product is Hermitian, and hence a pure boost with no rotation factor, if and only if the two directions are parallel or antiparallel. Otherwise the real vector part $\vec q=s_1s_2\,\vec u_x\times\vec u_y$ (with $c_k=\cosh\tfrac{\theta^{\mathrm{rpd}}_k}{2}$, $s_k=\sinh\tfrac{\theta^{\mathrm{rpd}}_k}{2}$) is non-zero, and the polar decomposition carries exactly that part into the rotation factor. The rotation $\tilde{u}$ is the **Thomas–Wigner rotation** of the pair of boosts. The failure of the exponents to add is the BCH defect of the polar word, computed in *The Exponential Word and Its Boundary*; the precession is the accumulated defect of the boost word along the path.
 
-For two boosts of equal rapidity $\psi$ whose directions make an angle $\theta$, the angle $\theta^{\mathrm{wgn}}$ of $\tilde{u}$ is
+For two boosts of equal rapidity $\theta^{\mathrm{rpd}}$ whose directions make an angle $\theta$, the angle $\theta^{\mathrm{wgn}}$ of $\tilde{u}$ is
 
 $$
 \boxed{\ \tan\frac{\theta^{\mathrm{wgn}}}{2}
-=\frac{\sinh^{2}\dfrac{\psi}{2}\,\sin\theta}
-{\cosh^{2}\dfrac{\psi}{2}+\sinh^{2}\dfrac{\psi}{2}\,\cos\theta}\ } ,
+=\frac{\sinh^{2}\dfrac{\theta^{\mathrm{rpd}}}{2}\,\sin\theta}
+{\cosh^{2}\dfrac{\theta^{\mathrm{rpd}}}{2}+\sinh^{2}\dfrac{\theta^{\mathrm{rpd}}}{2}\,\cos\theta}\ } ,
 $$
 
-and its axis is the normal to the plane of the two boost directions. The general case of unequal rapidities is the same formula with two different rapidities, and it is derived in Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the composition law and the finite Wigner angle. The formula has two instructive limits: for small rapidity it gives $\theta^{\mathrm{wgn}}\approx\tfrac{1}{2}\psi^{2}\sin\theta$, a purely relativistic effect vanishing as $v^{2}/c^{2}$, and for large rapidity it saturates at $\theta^{\mathrm{wgn}}\to\theta$, the angle between the two directions.
+and its axis is the normal to the plane of the two boost directions. The general case of unequal rapidities is the same formula with two different rapidities, and it is derived in Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the composition law and the finite Wigner angle. The formula has two instructive limits: for small rapidity it gives $\theta^{\mathrm{wgn}}\approx\tfrac{1}{2}(\theta^{\mathrm{rpd}})^{2}\sin\theta$, a purely relativistic effect vanishing as $v^{2}/c^{2}$, and for large rapidity it saturates at $\theta^{\mathrm{wgn}}\to\theta$, the angle between the two directions.
 
 Two features of this composition law matter for what follows. First, the **rotation factor is a compact-group element**, an element of the same $SU(2)$ that carries the topology of the cover; the boost part is contractible, and every obstruction in the composition of boosts is carried by the rotation directions. Second, the rotation factor is **absent for a single boost**: a boost is Hermitian, its polar rotation factor is trivial, and no orientation is generated. The Wigner rotation is a property of a pair, or of a path, and it is the compositional side of the same compact structure whose topological side is the two-sheeted cover.
 
-At equal rapidity $\psi=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\theta^{\mathrm{wgn}}=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\psi_1,\psi_2,\theta)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
+At equal rapidity $\theta^{\mathrm{rpd}}=1.0$ and angle $\theta=0.7$ the polar decomposition of the product gives $\theta^{\mathrm{wgn}}=0.235423658$, equal to the formula to the printed digits; at unequal rapidities and angles $(\theta^{\mathrm{rpd}}_1,\theta^{\mathrm{rpd}}_2,\theta)=(0.5,1.2,1.1)$, $(2.0,0.7,2.0)$, $(3.0,1.1,0.9)$ and $(0.3,2.5,1.7)$ the same agreement is found, so the general formula is not merely the symmetric special case. The extracted rotation vector lies along the normal to the plane of the two boost directions in every case, with the sense fixed by the order of the product.
 
 ## The Rotor Between Neighbouring Rest Frames
 
@@ -125,7 +125,7 @@ The interval rotor makes precise in what sense the Thomas precession is a rotor 
 
 ## The Continuous Limit: The Thomas Precession Rate
 
-The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dt'\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\psi_1=\psi+d\psi$ and $\psi_2=\psi$, and let $\theta$ be the angle between them, so that $\theta=\pi-\delta$ with
+The Thomas precession is the angular velocity obtained from the interval rotor in the limit $dt'\to0$. Write the two boost directions and rapidities as in Companion article *Exercise: The Thomas Precession*, for the direct expansion of the interval rotor: $\vec u_x=\vec u_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v$, with rapidities $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}+d\theta^{\mathrm{rpd}}$ and $\theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}}$, and let $\theta$ be the angle between them, so that $\theta=\pi-\delta$ with
 
 $$
 \delta=\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^{2}),
@@ -133,7 +133,7 @@ $$
 \vec a_\perp=\vec a-\frac{\vec a\cdot\vec v}{v^{2}}\vec v,
 $$
 
-the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\psi=\gamma^2(\vec a\cdot\vec u_v)dt'/c$, and to leading order
+the perpendicular part of the acceleration. Since only the perpendicular acceleration changes the direction of the velocity, $d\theta^{\mathrm{rpd}}=\gamma^2(\vec a\cdot\vec u_v)dt'/c$, and to leading order
 
 $$
 \sin\theta=\delta+O(d{t'}^{3}),
@@ -141,15 +141,15 @@ $$
 \cos\theta=-1+O(d{t'}^{2}).
 $$
 
-Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\psi}{2}\,\delta+O(d{t'}^{2})$, the $d\psi$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{t'}^{2})$. Hence
+Substituting into the exact Wigner-angle formula, the numerator is $\sinh^{2}\tfrac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{t'}^{2})$, the $d\theta^{\mathrm{rpd}}$ terms cancel between the two products in the denominator, and the denominator is $1+O(d{t'}^{2})$. Hence
 
 $$
-\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\psi}{2}\,\delta+O(d{t'}^{2})
+\tan\frac{\theta_W}{2}=\sinh^{2}\frac{\theta^{\mathrm{rpd}}}{2}\,\delta+O(d{t'}^{2})
 \;\Longrightarrow\;
 \theta_W=(\gamma-1)\frac{|\vec a_\perp|}{v}\,dt'+O(d{t'}^{2}),
 $$
 
-where $2\sinh^{2}\tfrac{\psi}{2}=\cosh\psi-1=\gamma-1$. The angular velocity is therefore
+where $2\sinh^{2}\tfrac{\theta^{\mathrm{rpd}}}{2}=\cosh\theta^{\mathrm{rpd}}-1=\gamma-1$. The angular velocity is therefore
 
 $$
 \omega_T=\frac{d\theta_W}{dt'}=(\gamma-1)\frac{|\vec a_\perp|}{v}
@@ -171,7 +171,7 @@ $$
 \qquad (v\ll c).
 $$
 
-The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\gamma+1)$, and it arises in the expansion through the cancellation of the $d\psi$ terms in the denominator, which leaves the value $1$ rather than the larger $\cosh\psi$ that a first guess might produce.
+The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^2/(\gamma+1)$, and it arises in the expansion through the cancellation of the $d\theta^{\mathrm{rpd}}$ terms in the denominator, which leaves the value $1$ rather than the larger $\cosh\theta^{\mathrm{rpd}}$ that a first guess might produce.
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
@@ -205,7 +205,7 @@ $$
 
 the sign being the one that makes the generator the negative of the physical angular velocity, exactly as in the Larmor equation.
 
-The half-angle is where the two descriptions of the rotation meet. On a **vector** of the material sector the rotor acts by conjugation, and $\tilde{u}_T$ and $-\tilde{u}_T$ produce the same rotation; the rest frame's triad is insensitive to the sign. On a **spinor**, the rotor acts by one-sided multiplication, $\psi\mapsto\mathsf{M}_2(\tilde{u}_T)\psi$, and the sign is visible: a rotation through $2\pi$ returns the vector to itself but the spinor to its negative. The one-sided action and the spinor module are the subject of Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the defining spinor module and the one-sided Lorentz action; here it is enough to record that the kinematic rotation of the frame and the one-sided rotation of a state are the same rotor, and that the information-theoretic interpretation of the Wigner rotation belongs to the sibling quantum series.
+The half-angle is where the two descriptions of the rotation meet. On a **vector** of the material sector the rotor acts by conjugation, and $\tilde{u}_T$ and $-\tilde{u}_T$ produce the same rotation; the rest frame's triad is insensitive to the sign. On a **spinor**, the rotor acts by one-sided multiplication, $\theta^{\mathrm{rpd}}\mapsto\mathsf{M}_2(\tilde{u}_T)\theta^{\mathrm{rpd}}$, and the sign is visible: a rotation through $2\pi$ returns the vector to itself but the spinor to its negative. The one-sided action and the spinor module are the subject of Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the defining spinor module and the one-sided Lorentz action; here it is enough to record that the kinematic rotation of the frame and the one-sided rotation of a state are the same rotor, and that the information-theoretic interpretation of the Wigner rotation belongs to the sibling quantum series.
 
 ## Uniform Circular Motion
 
@@ -296,10 +296,10 @@ It is useful to separate the algebraic content of the derivation from the standa
 The Thomas precession is a **rotor effect**. The transformation from the laboratory to the instantaneous rest frame of a particle of velocity $\vec v$ is the Hermitian unit-norm biquaternion
 
 $$
-\tilde U_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_v
+\tilde U_{\vec v}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_v
 =\sqrt{-\frac{i}{c}\,\tilde{V}^{\natural}},
 \qquad
-\tanh\psi=\frac{v}{c},
+\tanh\theta^{\mathrm{rpd}}=\frac{v}{c},
 \qquad
 \tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t ,
 $$
@@ -308,8 +308,8 @@ and a single boost contains no rotation. The composition of two non-collinear bo
 
 $$
 \tan\frac{\theta^{\mathrm{wgn}}}{2}
-=\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta}
-{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
+=\frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta}
+{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta},
 $$
 
 about the normal to the plane of the two boost directions. The rest frames at two neighbouring laboratory times are related by the interval rotor
@@ -346,8 +346,8 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{M}_-$ |
 | $c$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
-| $\psi$, $\tanh\psi=v/c$ | Rapidity |
-| $\tilde U_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor, Hermitian, in $\mathbb{M}_+$ |
+| $\theta^{\mathrm{rpd}}$, $\tanh\theta^{\mathrm{rpd}}=v/c$ | Rapidity |
+| $\tilde U_{\vec v_b}=\cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u$ | Boost rotor, Hermitian, in $\mathbb{M}_+$ |
 | $\tilde U_{\vec v}$ | Lab-to-rest rotor, $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t$ |
 | $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\mathrm b}\tilde{u}$ | Polar decomposition of a composition of boosts |
 | $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ | Thomas–Wigner rotation (unit real quaternion) |

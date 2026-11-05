@@ -39,7 +39,7 @@ $$
 \|\tilde Q_1\|_{\dagger}^2
 =2\bigl(|x_t|^2+|x_x|^2+|x_y|^2+|x_z|^2\bigr)>0\quad(\tilde Q_1\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde{H}^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde{H}^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -119,13 +119,13 @@ $$
 =\mathrm{Tr}\bigl(\tilde Q\tilde Q_1^{*}\tilde Q^{*}\tilde Q\tilde Q_1\tilde Q^{*}\bigr)
 =\mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle\,|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|$ and
+using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle\,|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|$ and
 $$
 \mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr)
-=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle\,\mathrm{Tr}\bigl(|\chi^{\mathrm{alt}}\rangle\langle\chi^{\mathrm{alt}}|\tilde Q_4\bigr)
-=\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle^2 .
+=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle\,\mathrm{Tr}\bigl(|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|\tilde Q_4\bigr)
+=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle^2=1$ for every unit $\chi^{\mathrm{alt}}$; positivity gives $\langle\chi^{\mathrm{alt}}|\tilde Q_4\chi^{\mathrm{alt}}\rangle=1$ for all unit $\chi^{\mathrm{alt}}$, hence $\tilde Q_4=e_t$.
+The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle^2=1$ for every unit $\xi^{\mathrm{alt}}$; positivity gives $\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle=1$ for all unit $\xi^{\mathrm{alt}}$, hence $\tilde Q_4=e_t$.
 
 The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_1^{*})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde Q}$ exactly when $\tilde Q$ is $*$-unitary, which is the standard statement of unitarity in the framework's language.
 
@@ -269,21 +269,21 @@ The norm-preservation theorem of the preceding sections is algebraic: it is abou
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
-i\hbar\,\partial/\partial t'\psi=\tilde{Ζ}\tilde{H}\psi ,
+i\hbar\,\partial/\partial t'\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ζ}\tilde{H}\tilde{Ξ}^{\mathrm{spn}} ,
 \qquad
 \tilde{Ζ}^2=-e_t,\quad \tilde{H}\in\mathbb{M}_+,
 $$
 with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde{H}$ Hermitian. The solution, for constant $\tilde{H}$, is
 $$
-\psi(t')=\exp\bigl(Gt'\bigr)\psi(0),
+\tilde{Ξ}^{\mathrm{spn}}(t')=\exp\bigl(Gt'\bigr)\tilde{Ξ}^{\mathrm{spn}}(0),
 \qquad
 G=-\hbar^{-1}\tilde{Ζ}\tilde{H}.
 $$
-The norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved for all $t'$ and all $\psi(0)$ exactly when $G$ is anti-Hermitian,
+The norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}})$ is preserved for all $t'$ and all $\tilde{Ξ}^{\mathrm{spn}}(0)$ exactly when $G$ is anti-Hermitian,
 $$
-\frac{d}{dt'}\mathrm{Tr}\bigl(\psi^\dagger\psi\bigr)
-=\mathrm{Tr}\bigl(\psi^\dagger(G^{*}+G)\psi\bigr)
-=0\ \ \text{for all }\psi
+\frac{d}{dt'}\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}\bigr)
+=\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{spn}\dagger}(G^{*}+G)\tilde{Ξ}^{\mathrm{spn}}\bigr)
+=0\ \ \text{for all }\tilde{Ξ}^{\mathrm{spn}}
 \iff G^{*}=-G .
 $$
 

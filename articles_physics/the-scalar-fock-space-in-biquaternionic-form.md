@@ -159,20 +159,20 @@ The two gradings are distinct and neither is the fermion parity. The parity grad
 The number operator of a mode is obtained from the field by normal ordering, and the construction makes the positivity of the spectrum explicit. With the positive- and negative-frequency parts of the companion field article,
 
 $$
-:\!\chi^{\mathrm{fop}\dagger}(x)\chi^{\mathrm{fop}}(x)\!:
-\,=\,\chi^{\mathrm{fop}{}(+){}^{*}}(x)\,\chi^{\mathrm{fop}(+)}(x)
-+\chi^{\mathrm{fop}(-)}(x)\,\chi^{\mathrm{fop}{}(-){}^{*}}(x)
-+\chi^{\mathrm{fop}{}(+){}^{*}}(x)\,\chi^{\mathrm{fop}(-)}(x)
-+\chi^{\mathrm{fop}{}(-){}^{*}}(x)\,\chi^{\mathrm{fop}(+)}(x),
+:\!\xi^{\mathrm{fop}\dagger}(x)\xi^{\mathrm{fop}}(x)\!:
+\,=\,\xi^{\mathrm{fop}{}(+){}^{*}}(x)\,\xi^{\mathrm{fop}(+)}(x)
++\xi^{\mathrm{fop}(-)}(x)\,\xi^{\mathrm{fop}{}(-){}^{*}}(x)
++\xi^{\mathrm{fop}{}(+){}^{*}}(x)\,\xi^{\mathrm{fop}(-)}(x)
++\xi^{\mathrm{fop}{}(-){}^{*}}(x)\,\xi^{\mathrm{fop}(+)}(x),
 $$
 
-the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\chi^{\mathrm{fop}\dagger}\chi^{\mathrm{fop}}$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\chi^{\mathrm{fop}{}(-){}^{*}}\chi^{\mathrm{fop}(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\chi^{\mathrm{fop}{}(-){}^{*}},\chi^{\mathrm{fop}(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
+the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\xi^{\mathrm{fop}\dagger}\xi^{\mathrm{fop}}$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\xi^{\mathrm{fop}{}(-){}^{*}}\xi^{\mathrm{fop}(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\xi^{\mathrm{fop}{}(-){}^{*}},\xi^{\mathrm{fop}(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
 
 $$
 N_{\vec p}={a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p} ,
 \qquad
-\langle\psi|N_{\vec p}|\psi\rangle
-=\big\|a^{\mathrm{fop}}_{\vec p}\psi\big\|^2\ge0 ,
+\langle\tilde{Ξ}^{\mathrm{spn}}|N_{\vec p}|\tilde{Ξ}^{\mathrm{spn}}\rangle
+=\big\|a^{\mathrm{fop}}_{\vec p}\tilde{Ξ}^{\mathrm{spn}}\big\|^2\ge0 ,
 $$
 
 so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.

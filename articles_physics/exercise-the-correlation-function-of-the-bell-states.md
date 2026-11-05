@@ -17,8 +17,8 @@ The conventions are those of the companion articles. The biquaternion algebra is
 Consider the four **Bell states** of two spin-$\tfrac{1}{2}$ particles:
 
 $$
-|\Phi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
-|\Psi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
+|\tilde{Ξ}^{\mathrm{spn}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
 $$
 
 For two measurement directions $\vec u_x$ and $\vec u_y$, define the **spin correlation function**
@@ -44,20 +44,20 @@ and identify the $3\times 3$ matrix $T$ for each Bell state.
 The four Bell states are the maximally entangled two-qubit states
 
 $$
-|\Phi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
-|\Psi^\pm\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\uparrow\rangle \pm |\downarrow\downarrow\rangle\right), \qquad
+|\tilde{Ξ}^{\mathrm{spn}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle \pm |\downarrow\uparrow\rangle\right).
 $$
 
-They form an orthonormal basis of the two-qubit Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$. The singlet $|\Psi^-\rangle$ was treated in Exercise: Two Spins in the Singlet State; the other three are its companions.
+They form an orthonormal basis of the two-qubit Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$. The singlet $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$ was treated in Exercise: Two Spins in the Singlet State; the other three are its companions.
 
 Each Bell state is a rank-one projector. Using the identity
 
 $$
-|\Phi^\pm\rangle\langle\Phi^\pm| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \mp \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right),
+|Ξ^{\pm}\rangle\langleΞ^{\pm}| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \mp \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right),
 $$
 
 $$
-|\Psi^\pm\rangle\langle\Psi^\pm| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \pm \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right),
+|\tilde{Ξ}^{\mathrm{spn}\pm}\rangle\langle\tilde{Ξ}^{\mathrm{spn}\pm}| = \tfrac{1}{4}\left(I\otimes I \pm \sigma_x\otimes\sigma_x \pm \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right),
 $$
 
 we may expand each Bell projector in the **Pauli-string basis** $\{I\otimes I, \sigma_j\otimes\sigma_k\}$. The Pauli strings are trace-orthogonal:
@@ -71,29 +71,29 @@ $$
 The correlation function is the expectation of the tensor-product observable $\vec u_x\cdot\boldsymbol{\sigma}_1\otimes\vec u_y\cdot\boldsymbol{\sigma}_2$:
 
 $$
-E(\vec u_x, \vec u_y) = \langle\Psi|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_k b_k I\otimes\sigma_k\right)|\Psi\rangle = \sum_{j,k} a_j b_k\,\langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle.
+E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}^{\mathrm{spn}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_k b_k I\otimes\sigma_k\right)|\tilde{Ξ}^{\mathrm{spn}}\rangle = \sum_{j,k} a_j b_k\,\langle\tilde{Ξ}^{\mathrm{spn}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}^{\mathrm{spn}}\rangle.
 $$
 
 So the correlation function is determined by the $3\times 3$ matrix
 
 $$
-T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle = \mathrm{Tr}\!\left(|\Psi\rangle\langle\Psi|\cdot\sigma_j\otimes\sigma_k\right).
+T_{jk} = \langle\tilde{Ξ}^{\mathrm{spn}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}^{\mathrm{spn}}\rangle = \mathrm{Tr}\!\left(|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}|\cdot\sigma_j\otimes\sigma_k\right).
 $$
 
 Because the Pauli strings are trace-orthogonal, the projector admits the expansion
 
 $$
-|\Psi\rangle\langle\Psi| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_k,
+|\tilde{Ξ}^{\mathrm{spn}}\rangle\langle\tilde{Ξ}^{\mathrm{spn}}| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_k,
 $$
 
 and $T_{jk}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_k$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.
 
 ### Step 3: Computing $T$ for each Bell state
 
-**Singlet $|\Psi^-\rangle$.** The projector is
+**Singlet $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$.** The projector is
 
 $$
-|\Psi^-\rangle\langle\Psi^-| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
+|\tilde{Ξ}^{\mathrm{spn}-}\rangle\langle\tilde{Ξ}^{\mathrm{spn}-}| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
 $$
 
 Reading off the coefficients:
@@ -102,12 +102,12 @@ $$
 T_{11} = T_{22} = T_{33} = -1, \qquad T_{jk} = 0 \text{ for } j \neq k.
 $$
 
-So $T_{\Psi^-} = -\mathrm{diag}(1,1,1)$, and $E = -\vec u_x\cdot\vec u_y$. This reproduces the result of Exercise: Two Spins in the Singlet State.
+So $T_{\mathrm{spn}^-} = -\mathrm{diag}(1,1,1)$, and $E = -\vec u_x\cdot\vec u_y$. This reproduces the result of Exercise: Two Spins in the Singlet State.
 
-**State $|\Phi^+\rangle$.** The projector is
+**State $|Ξ^{+}\rangle$.** The projector is
 
 $$
-|\Phi^+\rangle\langle\Phi^+| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
+|Ξ^{+}\rangle\langleΞ^{+}| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x - \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
 $$
 
 Reading off the coefficients:
@@ -116,12 +116,12 @@ $$
 T_{11} = +1, \quad T_{22} = -1, \quad T_{33} = +1, \qquad T_{jk} = 0 \text{ for } j \neq k.
 $$
 
-So $T_{\Phi^+} = \mathrm{diag}(1,-1,1)$, and $E = a_1 b_1 - a_2 b_2 + a_3 b_3$.
+So $T_{Ξ^+} = \mathrm{diag}(1,-1,1)$, and $E = a_1 b_1 - a_2 b_2 + a_3 b_3$.
 
-**State $|\Phi^-\rangle$.** The projector is
+**State $|Ξ^{-}\rangle$.** The projector is
 
 $$
-|\Phi^-\rangle\langle\Phi^-| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
+|Ξ^{-}\rangle\langleΞ^{-}| = \tfrac{1}{4}\left(I\otimes I - \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y + \sigma_z\otimes\sigma_z\right).
 $$
 
 Reading off the coefficients:
@@ -130,12 +130,12 @@ $$
 T_{11} = -1, \quad T_{22} = +1, \quad T_{33} = +1.
 $$
 
-So $T_{\Phi^-} = \mathrm{diag}(-1,1,1)$, and $E = -a_1 b_1 + a_2 b_2 + a_3 b_3$.
+So $T_{Ξ^-} = \mathrm{diag}(-1,1,1)$, and $E = -a_1 b_1 + a_2 b_2 + a_3 b_3$.
 
-**State $|\Psi^+\rangle$.** The projector is
+**State $|\tilde{Ξ}^{\mathrm{spn}+}\rangle$.** The projector is
 
 $$
-|\Psi^+\rangle\langle\Psi^+| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
+|\tilde{Ξ}^{\mathrm{spn}+}\rangle\langle\tilde{Ξ}^{\mathrm{spn}+}| = \tfrac{1}{4}\left(I\otimes I + \sigma_x\otimes\sigma_x + \sigma_y\otimes\sigma_y - \sigma_z\otimes\sigma_z\right).
 $$
 
 Reading off the coefficients:
@@ -144,7 +144,7 @@ $$
 T_{11} = +1, \quad T_{22} = +1, \quad T_{33} = -1.
 $$
 
-So $T_{\Psi^+} = \mathrm{diag}(1,1,-1)$, and $E = a_1 b_1 + a_2 b_2 - a_3 b_3$.
+So $T_{\mathrm{spn}^+} = \mathrm{diag}(1,1,-1)$, and $E = a_1 b_1 + a_2 b_2 - a_3 b_3$.
 
 ### Step 4: The result
 
@@ -152,10 +152,10 @@ The four Bell states give the four diagonal correlation matrices:
 
 | Bell state | $T = \mathrm{diag}(T_{11}, T_{22}, T_{33})$ | $E(\vec u_x, \vec u_y)$ |
 |---|---|---|
-| $|\Psi^-\rangle$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec u_x\cdot\vec u_y$ |
-| $|\Phi^+\rangle$ | $\mathrm{diag}(+1,-1,+1)$ | $a_1 b_1 - a_2 b_2 + a_3 b_3$ |
-| $|\Phi^-\rangle$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
-| $|\Psi^+\rangle$ | $\mathrm{diag}(+1,+1,-1)$ | $a_1 b_1 + a_2 b_2 - a_3 b_3$ |
+| $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec u_x\cdot\vec u_y$ |
+| $|Ξ^{+}\rangle$ | $\mathrm{diag}(+1,-1,+1)$ | $a_1 b_1 - a_2 b_2 + a_3 b_3$ |
+| $|Ξ^{-}\rangle$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
+| $|\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $\mathrm{diag}(+1,+1,-1)$ | $a_1 b_1 + a_2 b_2 - a_3 b_3$ |
 
 Each diagonal entry is $\pm 1$, and the product $T_{11}T_{22}T_{33}$ equals $-1$ in every case. Equivalently, writing $T_{jj} = -\epsilon_j$, the signs satisfy $\epsilon_1\epsilon_2\epsilon_3 = +1$. Only the singlet has $T = -I$, and hence the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.
 
@@ -175,10 +175,10 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 
 | State | $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ | Biquaternion idempotent |
 |---|---|---|
-| $|\Psi^-\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
-| $|\Phi^+\rangle$ | $(-1,+1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ |
-| $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t + \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ |
-| $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
+| $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
+| $|Ξ^{+}\rangle$ | $(-1,+1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ |
+| $|Ξ^{-}\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t + \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ |
+| $|\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
 
 *Idempotency.* The square of $\tilde\Pi_\epsilon$ is
 
@@ -278,10 +278,10 @@ Applying this formula to the four sign patterns:
 
 | Bell state | $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$ | $E(\vec u_x, \vec u_y)$ |
 |---|---|---|
-| $|\Psi^-\rangle$ | $(+1,+1,+1)$ | $-a_1 b_1 - a_2 b_2 - a_3 b_3 = -\vec u_x\cdot\vec u_y$ |
-| $|\Phi^+\rangle$ | $(-1,+1,-1)$ | $+a_1 b_1 - a_2 b_2 + a_3 b_3$ |
-| $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
-| $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $+a_1 b_1 + a_2 b_2 - a_3 b_3$ |
+| $|\tilde{Ξ}^{\mathrm{spn}-}\rangle$ | $(+1,+1,+1)$ | $-a_1 b_1 - a_2 b_2 - a_3 b_3 = -\vec u_x\cdot\vec u_y$ |
+| $|Ξ^{+}\rangle$ | $(-1,+1,-1)$ | $+a_1 b_1 - a_2 b_2 + a_3 b_3$ |
+| $|Ξ^{-}\rangle$ | $(+1,-1,-1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
+| $|\tilde{Ξ}^{\mathrm{spn}+}\rangle$ | $(-1,-1,+1)$ | $+a_1 b_1 + a_2 b_2 - a_3 b_3$ |
 
 These match the standard results exactly.
 
@@ -291,7 +291,7 @@ Both formulations give the same results, and both give the same limits. The clea
 
 **Parallel measurements along a coordinate axis.** Set $\vec u_x = \vec u_y = \vec u_k$; the correlation is the diagonal entry $T_{kk}$:
 
-| Axis | $\Psi^-$ | $\Phi^+$ | $\Phi^-$ | $\Psi^+$ |
+| Axis | $\tilde{Ξ}^{\mathrm{spn}-}$ | $Ξ^{+}$ | $Ξ^{-}$ | $\tilde{Ξ}^{\mathrm{spn}+}$ |
 |---|---|---|---|---|
 | $k=x$ | $-1$ | $+1$ | $-1$ | $+1$ |
 | $k=y$ | $-1$ | $-1$ | $+1$ | $+1$ |
@@ -325,7 +325,7 @@ with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is th
 
 **4. The singlet is the isotropic case.** Among the four Bell states, only the singlet has all signs equal, giving $T = -I$ and the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$. The other three break rotational symmetry; their correlation matrices have one sign pattern of the form $(+,-,+)$ up to permutation, and their correlations depend on the direction of the measurements. The four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$ correspond exactly to the four Bell states, and no other patterns are possible because the idempotency condition enforces the product to be $+1$.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $\tilde\Pi_\epsilon$ corresponds exactly to the rank-one projector $|\Psi_\epsilon\rangle\langle\Psi_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: **the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.**
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $\tilde\Pi_\epsilon$ corresponds exactly to the rank-one projector $|\tilde{Ξ}^{\mathrm{spn}}_\epsilon\rangle\langle\tilde{Ξ}^{\mathrm{spn}}_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: **the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.**
 
 ## Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field, Reduced State of an Entangled Subsystem, Successive Measurements of Spin and Two Spins in the Singlet State
 
@@ -361,11 +361,11 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ | Spin operator on particle 1 |
 | $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ | Spin operator on particle 2 |
-| $|\Phi^\pm\rangle_{*}, |\Psi^\pm\rangle$ | The four Bell states |
+| $|Ξ^{\pm}\rangle_{*}, |\tilde{Ξ}^{\mathrm{spn}\pm}\rangle$ | The four Bell states |
 | $\tilde\Pi_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
 | $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
 | $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{ab}^{*})$ | Correlation function |
-| $T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle$ | Correlation matrix |
+| $T_{jk} = \langle\tilde{Ξ}^{\mathrm{spn}}|\sigma_j\otimes\sigma_k|\tilde{Ξ}^{\mathrm{spn}}\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 
 ## Further Reading

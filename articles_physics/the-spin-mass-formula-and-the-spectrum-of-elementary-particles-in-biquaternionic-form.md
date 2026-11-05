@@ -21,12 +21,12 @@ The article records this formula, its derivation from the determinant of the Bha
 
 ## The Bhabha Equation and Its Determinant
 
-The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma_{\mu}$, a field $\psi$ of $N$ components satisfies
+The spinor-structure route starts from the finite-dimensional wave equation of Bhabha–Gel'fand–Yaglom. In a representation $\tau$ of the Lorentz group, of dimension $N$, with generators $\Gamma_{\mu}$, a field $\tilde{Ξ}^{\mathrm{spn}}$ of $N$ components satisfies
 
 $$
-\bigl(\Gamma_{0}p_0-\Gamma_{1}p_1-\Gamma_{2}p_2-\Gamma_{3}p_3\bigr)\psi + m\psi = 0,
+\bigl(\Gamma_{0}p_0-\Gamma_{1}p_1-\Gamma_{2}p_2-\Gamma_{3}p_3\bigr)\tilde{Ξ}^{\mathrm{spn}} + m\tilde{Ξ}^{\mathrm{spn}} = 0,
 \qquad
-\Gamma(p)\psi = -m\psi .
+\Gamma(p)\tilde{Ξ}^{\mathrm{spn}} = -m\tilde{Ξ}^{\mathrm{spn}} .
 $$
 
 ### The Determinant

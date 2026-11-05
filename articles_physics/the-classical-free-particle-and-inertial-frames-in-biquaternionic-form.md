@@ -128,13 +128,13 @@ The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the 
 The different Lorentz transformations have rotors in different subspaces. A **pure boost** along the unit direction $\vec u_{\mathrm b}$ has the rotor
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
 $$
 
-which is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and hence acts by $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
+which is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and hence acts by $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$. The rapidity $\theta^{\mathrm{rpd}}$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
 
 $$
-\cosh\psi = \gamma_V, \qquad \sinh\psi = \gamma_V\frac{V}{c}, \qquad \tanh\psi = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
+\cosh\theta^{\mathrm{rpd}} = \gamma_V, \qquad \sinh\theta^{\mathrm{rpd}} = \gamma_V\frac{V}{c}, \qquad \tanh\theta^{\mathrm{rpd}} = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
 $$
 
 A **pure spatial rotation** has a rotor in the real-quaternion subalgebra,
@@ -169,10 +169,10 @@ The free particle has a non-relativistic limit, and its transformation law has o
 
 ### Expanding the Boost Rotor
 
-Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\psi \approx V/c$. Expanding the boost rotor,
+Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\theta^{\mathrm{rpd}} \approx V/c$. Expanding the boost rotor,
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$
 
 To first order in $V/c$ the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so the action on a material vector is $\tilde{R} \mapsto \tilde U_{\mathrm b}\tilde{R}\tilde U_{\mathrm b}$, and hence
@@ -202,7 +202,7 @@ $$
 This is the **Galilean transformation**: the time coordinate is untouched and the position is shifted by $-\vec Vt'$. The exact boost transformation, of which this is the leading term, is the standard one,
 
 $$
-c\,t'_2 = \cosh\psi\;c\,t' - \sinh\psi\;x_\parallel, \qquad x_{\parallel,2} = \cosh\psi\;x_\parallel - \sinh\psi\;c\,t', \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_{\perp,2} = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp ,
+c\,t'_2 = \cosh\theta^{\mathrm{rpd}}\;c\,t' - \sinh\theta^{\mathrm{rpd}}\;x_\parallel, \qquad x_{\parallel,2} = \cosh\theta^{\mathrm{rpd}}\;x_\parallel - \sinh\theta^{\mathrm{rpd}}\;c\,t', \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_{\perp,2} = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp ,
 $$
 
 where $x_\parallel$ is the component along $\vec u_{\mathrm b}$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)_\perp$ the perpendicular part; the Galilean form is its $V/c \to 0$ limit.
@@ -256,7 +256,7 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 | Four-momentum $p_\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
 | Four-force $f_\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
 | Lorentz transformation $\Lambda_{\mu\nu}$ | rotor conjugation $\tilde U^{\mathrm{lor}}(\cdot)\tilde U^{\mathrm{lor}}{}^{*}$ | rotor in $\mathbb{B}$ |
-| Boost | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
+| Boost | $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
 | Spatial rotation | $R(\cdot)R^{*}$ | $\mathbb{H}_{\mathbb{B}}$ |
 | Galilean boost (NR limit) | $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \vec Vt'$, $t' \mapsto t'$ | shear of $\mathbb{M}_-$ |
 
@@ -296,7 +296,7 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | Four-force; $\tilde{K}_{\mathrm{f}} = 0$ for the free particle |
 | $\tilde U^{\mathrm{lor}} \in \mathbb{B}$, $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor; frame transformation |
 | $\tilde{R} \mapsto \tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation (frame change) |
-| $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$ |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\theta^{\mathrm{rpd}} = V/c$ |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor, in $\mathbb{H}_{\mathbb{B}}$ |
 | $\langle\tilde{R}\rangle_{\natural} = \tilde{R}\tilde{R}^{\natural}$ | Biquaternion norm; invariant interval on $\mathbb{M}_-$ |
 | $x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z - \vec Vt'$ | Galilean shear (non-relativistic limit) |

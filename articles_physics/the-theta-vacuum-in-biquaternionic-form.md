@@ -155,15 +155,15 @@ a periodic function of $\theta$ with period $2\pi$, whose sectors are the same o
 
 **The topological susceptibility.** The physical measure of the $\theta^{\mathrm{vac}}$ dependence is the topological susceptibility,
 $$
-\chi = \frac{1}{V}\frac{\partial^2}{\partial\theta^2}\log Z(\theta)\bigg|_{\theta=0} ,
+\xi = \frac{1}{V}\frac{\partial^2}{\partial\theta^2}\log Z(\theta)\bigg|_{\theta=0} ,
 $$
-which is (minus) the second cumulant of the charge per unit volume. Because the $\theta^{\mathrm{vac}}$ dependence sits in the phase alone, only the magnitudes $|Z_Ϙ|$ — the sector distribution — contribute to $\chi$ at $\theta=0$: expanding the logarithm, the linear terms cancel by the sum's reality and the quadratic term is minus the variance of $Ϙ$ in the distribution $|Z_Ϙ|$, $-\sigma^2$, and the variance computed directly from the weights gives $4.000000\ldots$, so the second derivative is exactly minus that variance. The susceptibility therefore measures the width of the sector distribution and not the phases, which is the framework's $\theta$-independence of the module made quantitative.
+which is (minus) the second cumulant of the charge per unit volume. Because the $\theta^{\mathrm{vac}}$ dependence sits in the phase alone, only the magnitudes $|Z_Ϙ|$ — the sector distribution — contribute to $\xi$ at $\theta=0$: expanding the logarithm, the linear terms cancel by the sum's reality and the quadratic term is minus the variance of $Ϙ$ in the distribution $|Z_Ϙ|$, $-\sigma^2$, and the variance computed directly from the weights gives $4.000000\ldots$, so the second derivative is exactly minus that variance. The susceptibility therefore measures the width of the sector distribution and not the phases, which is the framework's $\theta$-independence of the module made quantitative.
 
 **The $\theta^{\mathrm{vac}}$ term in the effective action.** Equivalently, the effective action acquires the term
 $$
-\Gamma_\theta = -i\log Z(\theta) \supset \frac{\theta^2}{2}\,\chi\,V
+\Gamma_\theta = -i\log Z(\theta) \supset \frac{\theta^2}{2}\,\xi\,V
 $$
-at small $\theta$, so that a nonzero $\chi$ is what makes $\theta$ a physical parameter with observable consequences. This is standard and is the quantity that enters, for instance, the mass of the would-be Goldstone boson of the axial symmetry in the presence of the anomaly; that application belongs to the particle-physics category and is not pursued here.
+at small $\theta$, so that a nonzero $\xi$ is what makes $\theta$ a physical parameter with observable consequences. This is standard and is the quantity that enters, for instance, the mass of the would-be Goldstone boson of the axial symmetry in the presence of the anomaly; that application belongs to the particle-physics category and is not pursued here.
 
 ## What Is Established and What Is Interpretation
 
@@ -184,7 +184,7 @@ at small $\theta$, so that a nonzero $\chi$ is what makes $\theta$ a physical pa
 - The periodicity of $\theta$, the invariant combination $\bar\theta=\theta+\arg\det M$, the strong-CP problem, and the axion as a relaxation mechanism.
 - The eta invariant and the phase of a determinant family; the parity and time-reversal properties of $F\tilde F$.
 - The index theorem $\mathrm{ind}\,\mathcal{D}_+=\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, equivalently $\frac{1}{16\pi^2}\int d^4x\,\mathrm{tr}(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu})$; the Atiyah–Patodi–Singer boundary correction and the eta invariant; spectral flow as the charge difference.
-- The $\theta$-dependent partition function $Z(\theta)=\sum_Ϙ \exp(i\theta Ϙ)Z_Ϙ$; the topological susceptibility $\chi$ and the small-$\theta$ effective action; the role of $\chi$ in the axial-symmetry Goldstone mass.
+- The $\theta$-dependent partition function $Z(\theta)=\sum_Ϙ \exp(i\theta Ϙ)Z_Ϙ$; the topological susceptibility $\xi$ and the small-$\theta$ effective action; the role of $\xi$ in the axial-symmetry Goldstone mass.
 
 **Interpretation.**
 
@@ -227,7 +227,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 | $\mathrm{ind}\,\mathcal{D}_+$ | Index of the Dirac operator; equals $Ϙ$ |
 | $\mathrm{SF}(\mathcal{D})$ | Spectral flow; equals a charge difference |
 | $Z(\theta)=\sum_Ϙ \exp(i\theta Ϙ)Z_Ϙ$ | $\theta$-dependent partition function |
-| $\chi^{\mathrm{tpl}}=\frac{1}{V}\partial^2/\partial \theta^2\log Z\vert_{\theta=0}$ | Topological susceptibility; the width of the sector distribution |
+| $\xi^{\mathrm{tpl}}=\frac{1}{V}\partial^2/\partial \theta^2\log Z\vert_{\theta=0}$ | Topological susceptibility; the width of the sector distribution |
 
 ## Further Reading
 

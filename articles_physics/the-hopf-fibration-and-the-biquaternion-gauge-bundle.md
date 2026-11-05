@@ -178,7 +178,7 @@ $$
 \mathcal f = d\mathcal a = i F\;},
 $$
 
-which is exactly the abelian connection of *The Gauge Principle in Biquaternionic Form*, whose coefficients are central and whose curvature is central and gauge invariant. The Hopf connection is therefore not merely analogous to the framework's abelian connection; it is that connection in the sector where the base is the idempotent sphere. The real one-form $a$ has a single real coefficient and enters the algebra through the central generator $ie_t$, while the fibre direction it is dual to is the stabiliser direction $\vec e_z$; the gauge transformation $a\mapsto a+d\chi$ is the change of local trivialisation of the bundle.
+which is exactly the abelian connection of *The Gauge Principle in Biquaternionic Form*, whose coefficients are central and whose curvature is central and gauge invariant. The Hopf connection is therefore not merely analogous to the framework's abelian connection; it is that connection in the sector where the base is the idempotent sphere. The real one-form $a$ has a single real coefficient and enters the algebra through the central generator $ie_t$, while the fibre direction it is dual to is the stabiliser direction $\vec e_z$; the gauge transformation $a\mapsto a+d\xi$ is the change of local trivialisation of the bundle.
 
 ## The Non-Abelian Reading and the Instanton Boundary
 
@@ -223,7 +223,7 @@ $$
 For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The gauge connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
 
 $$
-D_\mu \Psi = \partial/\partial x_\mu\Psi + i\kappa\,\mathcal A_\mu\Psi ,
+D_\mu \tilde{Ξ}^{\mathrm{spn}} = \partial/\partial x_\mu\tilde{Ξ}^{\mathrm{spn}} + i\kappa\,\mathcal A_\mu\tilde{Ξ}^{\mathrm{spn}} ,
 $$
 
 which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the gauge principle, and the algebra supplies the module on which it acts.

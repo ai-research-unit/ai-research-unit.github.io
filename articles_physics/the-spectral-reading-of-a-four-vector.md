@@ -32,35 +32,35 @@ $$
 \nu_\pm=\frac{E}{c}\pm\lvert\vec p\rvert\ge0,
 $$
 
-and it is the pair of light-cone frequencies of the momentum. Off the shell one of the two can be negative. For $m>0$ the rapidity $\psi$ of the momentum is fixed by
+and it is the pair of light-cone frequencies of the momentum. Off the shell one of the two can be negative. For $m>0$ the rapidity $\theta^{\mathrm{rpd}}$ of the momentum is fixed by
 
 $$
-\cosh\psi=\frac{E}{mc},
+\cosh\theta^{\mathrm{rpd}}=\frac{E}{mc},
 \qquad
-\sinh\psi=\frac{\lvert\vec p\rvert}{mc},
+\sinh\theta^{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc},
 \qquad
-\tanh\psi=\frac{\lvert\vec p\rvert c}{E},
+\tanh\theta^{\mathrm{rpd}}=\frac{\lvert\vec p\rvert c}{E},
 $$
 
 and the pair takes the compact form
 
 $$
-\boxed{\;\nu_\pm=mc\,e^{\pm\psi},
+\boxed{\;\nu_\pm=mc\,e^{\pm\theta^{\mathrm{rpd}}},
 \qquad
-\lambda_\pm=i\,mc\,e^{\pm\psi}\;}.
+\lambda_\pm=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}\;}.
 $$
 
 This is the **Doppler pair**: the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum, the difference, the product and the ratio are the four physical quantities of the pair; only the product is invariant.
 
 | Quantity | Expression | Reading |
 | --- | --- | --- |
-| eigenvalues | $\lambda_\pm=i\,mc\,e^{\pm\psi}$ | the two light-cone frequencies, imaginary |
-| frequencies | $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\psi}$ | the Doppler pair |
+| eigenvalues | $\lambda_\pm=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}$ | the two light-cone frequencies, imaginary |
+| frequencies | $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\theta^{\mathrm{rpd}}}$ | the Doppler pair |
 | sum | $\nu_++\nu_-=2E/c$ | twice the energy |
 | difference | $\nu_+-\nu_-=2\lvert\vec p\rvert$ | twice the momentum |
 | product | $\nu_+\nu_-=m^2c^2$ | the mass squared |
 | norm | $\lambda_+\lambda_-=\langle\tilde P\rangle_{\natural}=-m^2c^2$ | the interval |
-| ratio | $\nu_+/\nu_-=e^{2\psi}$ | the squared Doppler factor |
+| ratio | $\nu_+/\nu_-=e^{2\theta^{\mathrm{rpd}}}$ | the squared Doppler factor |
 
 The product is the invariant. It does not depend on the frame and it does not depend on the direction of $\vec p$; it is the mass shell. The two factors separately do depend on the frame, and their dependence is exactly the Doppler rescaling.
 
@@ -84,7 +84,7 @@ and the decomposition is
 
 $$
 \boxed{\;\tilde P=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
-=i\,mc\left(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-\right)\;}.
+=i\,mc\left(e^{\theta^{\mathrm{rpd}}}\tilde\Pi_++e^{-\theta^{\mathrm{rpd}}}\tilde\Pi_-\right)\;}.
 $$
 
 Each term is an imaginary multiple of a minimal idempotent, hence a null element. The two terms are the two **lightlike components** of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,
@@ -92,7 +92,7 @@ Each term is an imaginary multiple of a minimal idempotent, hence a null element
 $$
 \tilde P=k_++k_-,
 \qquad
-k_\pm=i\,mc\,e^{\pm\psi}\,\tilde\Pi_\pm,
+k_\pm=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}\,\tilde\Pi_\pm,
 \qquad
 \langle k_\pm\rangle_{\natural}=0.
 $$
@@ -123,13 +123,13 @@ $$
 \nu_+\nu_-\longmapsto\nu_+\nu_-,
 $$
 
-which is the Doppler rescaling written on the pair. Under a rotation the frequencies are unchanged and the axis $\vec u_p$ rotates. Under a general boost the new rapidity $\psi'$ is the rapidity of the new momentum, and the pair is $mc\,e^{\pm\psi'}$.
+which is the Doppler rescaling written on the pair. Under a rotation the frequencies are unchanged and the axis $\vec u_p$ rotates. Under a general boost the new rapidity $\theta^{\mathrm{rpd}}'$ is the rapidity of the new momentum, and the pair is $mc\,e^{\pm\theta^{\mathrm{rpd}}'}$.
 
 | Change of frame | $\nu_+$ | $\nu_-$ | product |
 | --- | --- | --- | --- |
 | boost along $\vec p$ by $\zeta$ | $e^{-\zeta}\nu_+$ | $e^{+\zeta}\nu_-$ | unchanged |
 | rotation | unchanged | unchanged | unchanged |
-| general boost | $mc\,e^{\psi'}$ | $mc\,e^{-\psi'}$ | unchanged |
+| general boost | $mc\,e^{\theta^{\mathrm{rpd}}'}$ | $mc\,e^{-\theta^{\mathrm{rpd}}'}$ | unchanged |
 
 The transformation law is the reason for the name. The two coefficients are the two Doppler factors, and a boost along the direction of motion multiplies one by $e^{-\zeta}$ and the other by $e^{+\zeta}$. The product is the mass squared, and it is the invariant of the pair.
 
@@ -176,21 +176,21 @@ $$
 \qquad
 \vec U=\hat p,
 \qquad
-\Theta=-i\psi .
+\Theta=-i\theta^{\mathrm{rpd}} .
 $$
 
-The expansion checks the identification. With $\vec U^{2}=-e_t$ and $\Theta=-i\psi$,
+The expansion checks the identification. With $\vec U^{2}=-e_t$ and $\Theta=-i\theta^{\mathrm{rpd}}$,
 
 $$
 \Rho e^{\vec U\Theta}
-=imc\left(\cosh\psi-i\hat p\sinh\psi\right)
-=i\frac{mc^{2}\cosh\psi}{c}+mc\sinh\psi\,\hat p
+=imc\left(\cosh\theta^{\mathrm{rpd}}-i\hat p\sinh\theta^{\mathrm{rpd}}\right)
+=i\frac{mc^{2}\cosh\theta^{\mathrm{rpd}}}{c}+mc\sinh\theta^{\mathrm{rpd}}\,\hat p
 =i\frac{E}{c}e_t+\vec p .
 $$
 
-The three slots divide the data. The modulus $\Rho=imc$ is the mass; the angle $\Theta=-i\psi$ is the rapidity; the axis $\vec U=\hat p$ is the direction of motion. The energy is not a slot: it is $mc^{2}\cosh\psi$, the modulus times the frame factor. A boost changes $\psi$ and leaves $\Rho$ fixed.
+The three slots divide the data. The modulus $\Rho=imc$ is the mass; the angle $\Theta=-i\theta^{\mathrm{rpd}}$ is the rapidity; the axis $\vec U=\hat p$ is the direction of motion. The energy is not a slot: it is $mc^{2}\cosh\theta^{\mathrm{rpd}}$, the modulus times the frame factor. A boost changes $\theta^{\mathrm{rpd}}$ and leaves $\Rho$ fixed.
 
-The modulus is central, and that is the algebraic reason the mass is frame-independent while the energy is not. A change of frame conjugates the second factor and commutes with the first. The spectrum sees the same division: the product $\lambda_+\lambda_-=\Rho^{2}=-m^{2}c^{2}$ is the modulus, and the ratio $\lambda_+/\lambda_-=e^{2\psi}$ is the frame.
+The modulus is central, and that is the algebraic reason the mass is frame-independent while the energy is not. A change of frame conjugates the second factor and commutes with the first. The spectrum sees the same division: the product $\lambda_+\lambda_-=\Rho^{2}=-m^{2}c^{2}$ is the modulus, and the ratio $\lambda_+/\lambda_-=e^{2\theta^{\mathrm{rpd}}}$ is the frame.
 
 **The boundary.** The reading is licensed for the four-momentum chart and the principal branch. For a general element the Hamilton modulus is a complex amplitude, and calling it a mass is an extra identification. The branch matters: on the other branch the same element is written with $-\Rho$ and $\Theta+\pi$, and the mass is read from $\lvert\Rho\rvert$.
 
@@ -231,7 +231,7 @@ and the two objects play different roles. The eigenvalues are the coefficients; 
 
 ## Physical Readings
 
-- **The eigenpair is the Doppler pair.** The two eigenvalues are $i\,mc\,e^{\pm\psi}$, and the two light-cone frequencies are $mc\,e^{\pm\psi}$; their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.
+- **The eigenpair is the Doppler pair.** The two eigenvalues are $i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}$, and the two light-cone frequencies are $mc\,e^{\pm\theta^{\mathrm{rpd}}}$; their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.
 - **The sum and the difference are the energy and the momentum.** Twice the energy and twice the momentum are the symmetric and antisymmetric combinations of the pair. The reading is the light-cone bookkeeping of a four-vector.
 - **The product is the mass shell.** The product of the eigenvalues is the norm, and the norm is $-m^2c^2$. The reading is that the mass is the invariant of the pair, not a property of either member.
 - **The two terms are the two null components.** Each term is an imaginary multiple of a minimal idempotent, and the two idempotents are the two pure states along the direction of motion. The reading is the lightlike decomposition of a timelike momentum.
@@ -243,7 +243,7 @@ and the two objects play different roles. The eigenvalues are the coefficients; 
 
 The algebra gives the frequencies, not a particle count. The two terms are null components of one element, not two particles, and the sum of the coefficients is twice the energy.
 
-The mass is read from the product, not from either eigenvalue. No numerical mass is derived; the mass is the input that fixes the rapidity through $\cosh\psi=E/(mc)$.
+The mass is read from the product, not from either eigenvalue. No numerical mass is derived; the mass is the input that fixes the rapidity through $\cosh\theta^{\mathrm{rpd}}=E/(mc)$.
 
 The pair is frame-dependent. Only the product is invariant, and a statement about one member of the pair is a statement about a frame.
 
@@ -255,15 +255,15 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 
 ## Summary
 
-- The four-momentum $\tilde P=i\frac{E}{c}e_t+\vec p$ has eigenvalues $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)=i\,mc\,e^{\pm\psi}$.
-- The pair $\nu_\pm=mc\,e^{\pm\psi}$ is the Doppler pair; its ratio is $e^{2\psi}$ and its product is $m^2c^2$.
+- The four-momentum $\tilde P=i\frac{E}{c}e_t+\vec p$ has eigenvalues $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}$.
+- The pair $\nu_\pm=mc\,e^{\pm\theta^{\mathrm{rpd}}}$ is the Doppler pair; its ratio is $e^{2\theta^{\mathrm{rpd}}}$ and its product is $m^2c^2$.
 - The norm is $\lambda_+\lambda_-=-m^2c^2$; the mass is read from the product, not from either eigenvalue.
 - The eigenprojections are the Hermitian idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$, the two pure states along the direction of motion.
-- The two-term writing is $\tilde P=i\,mc(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-)$; the two terms are the two null components of one momentum.
+- The two-term writing is $\tilde P=i\,mc(e^{\theta^{\mathrm{rpd}}}\tilde\Pi_++e^{-\theta^{\mathrm{rpd}}}\tilde\Pi_-)$; the two terms are the two null components of one momentum.
 - The terms are not two particles and not two energies; their sum is twice the energy and their difference is twice the momentum.
 - A boost along $\vec p$ rescales the pair reciprocally; the product is invariant. A rotation leaves the pair unchanged and rotates the axis.
 - At rest the pair coalesces and the two-term writing is not unique; at $m=0$ one coefficient vanishes and the writing has one term.
-- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\psi$ and $\vec U=\hat p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
+- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta^{\mathrm{rpd}}$ and $\vec U=\hat p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
 - The spectrum fixes the energy and the magnitude of the momentum, not the direction; it is blind to rotations and to the reality of the vector part, and it leaves the eigenprojections free at a degeneracy.
 - The algebra gives the frequencies, not a particle count, a numerical mass, a dynamics or a mass spectrum.
 
@@ -275,13 +275,13 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 | $E$, $\vec p$, $m$ | energy, spatial momentum and mass |
 | $B=\lvert\vec p\rvert$ | the modulus of the spatial momentum |
 | $\vec u_p=\vec p/B$ | the direction of motion, a real unit vector |
-| $\psi$ | the rapidity of the momentum, $\cosh\psi=E/(mc)$ |
+| $\theta^{\mathrm{rpd}}$ | the rapidity of the momentum, $\cosh\theta^{\mathrm{rpd}}=E/(mc)$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $Q_t=iE/c$ |
-| $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\psi}$ | the Doppler pair |
+| $\nu_\pm=\lambda_\pm/i=mc\,e^{\pm\theta^{\mathrm{rpd}}}$ | the Doppler pair |
 | $\vec{Ζ}=-i\vec u_p$ | the pure root of $+1$ of the momentum |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\mp i\vec u_p)$ | the eigenprojections, Hermitian idempotents |
 | $\langle\tilde P\rangle_{\natural}=-m^2c^2$ | the biquaternion norm, the interval |
-| $k_\pm=i\,mc\,e^{\pm\psi}\tilde\Pi_\pm$ | the two null components of $\tilde P$ |
+| $k_\pm=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}\tilde\Pi_\pm$ | the two null components of $\tilde P$ |
 
 ## Further Reading
 

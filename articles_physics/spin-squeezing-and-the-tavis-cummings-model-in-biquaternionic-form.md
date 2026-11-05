@@ -10,7 +10,7 @@ The article establishes:
 
 1. **The collective spin.** The operators $\tilde S_{\mathrm{tot},\alpha} = \sum_{i=1}^N\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
 2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+})$, and in the single-excitation sector the collective coupling is $\hbar g\sqrt{N}$, giving the collective Rabi splitting $2\hbar g\sqrt{N}$. Both statements are verified below.
-3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\Delta \tilde S_{\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde S_{\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
+3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\Delta \tilde S_{\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\xi}{\hbar}\tilde S_{\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are readings of the Hermitian form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
@@ -167,31 +167,31 @@ whose eigenvalues are the variances along the principal axes. In the plane perpe
 The simplest generator of squeezing is the **one-axis twisting** Hamiltonian
 
 $$
-\tilde{H}_{OAT} = \frac{\chi}{\hbar}\,\tilde S_{\mathrm{tot},3}^2 ,
+\tilde{H}_{OAT} = \frac{\xi}{\hbar}\,\tilde S_{\mathrm{tot},3}^2 ,
 $$
 
 which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution
 
 $$
-|\psi(\chi t')\rangle = \exp(-i\chi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)|\theta=\tfrac{\pi}{2},\theta^{\mathrm{azm}}=0\rangle
+|\tilde{Ξ}^{\mathrm{spn}}(\xi t')\rangle = \exp(-i\xi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)|\theta=\tfrac{\pi}{2},\theta^{\mathrm{azm}}=0\rangle
 $$
 
 shears the noise ellipse: the variance in the $y$–$z$ plane develops an off-diagonal covariance, the smaller principal variance drops below $\hbar^2N/4$, and $\zeta_R^2$ falls below $1$. The mean spin also decreases, since the twisting rotates different Dicke components at different rates; the competition between the shrinking variance and the shrinking mean spin fixes an optimal twisting time.
 
 ### Numerical Illustration
 
-Computing the exact evolution in the Dicke basis and minimising $\zeta_R^2$ over $\chi t'$ gives, for the pure one-axis twisting model:
+Computing the exact evolution in the Dicke basis and minimising $\zeta_R^2$ over $\xi t'$ gives, for the pure one-axis twisting model:
 
 | $N$ | 8 | 16 | 32 | 64 |
 |---|---|---|---|---|
 | $\zeta^2_{\min}$ | $0.354$ | $0.230$ | $0.143$ | $0.087$ |
-| $\chi t'_{\mathrm{opt}}$ | $0.228$ | $0.153$ | $0.101$ | $0.066$ |
+| $\xi t'_{\mathrm{opt}}$ | $0.228$ | $0.153$ | $0.101$ | $0.066$ |
 
-The optimal time decreases and the noise decreases with $N$, consistent with the standard one-axis-twisting scaling $\zeta^2_{\min}\sim N^{-2/3}$: the computed optimal times $0.228,0.153,0.101,0.066$ follow $N^{-2/3}$ with a coefficient between $0.9$ and $1.1$, and the minimum variances give $\zeta^2_{\min}N^{2/3} = 1.42,\,1.46,\,1.44,\,1.39$ — the standard scaling with a prefactor of order unity. At $\chi t' = 0$ the parameter is $\zeta^2 = 1$ to machine precision, as it must be for a coherent state.
+The optimal time decreases and the noise decreases with $N$, consistent with the standard one-axis-twisting scaling $\zeta^2_{\min}\sim N^{-2/3}$: the computed optimal times $0.228,0.153,0.101,0.066$ follow $N^{-2/3}$ with a coefficient between $0.9$ and $1.1$, and the minimum variances give $\zeta^2_{\min}N^{2/3} = 1.42,\,1.46,\,1.44,\,1.39$ — the standard scaling with a prefactor of order unity. At $\xi t' = 0$ the parameter is $\zeta^2 = 1$ to machine precision, as it must be for a coherent state.
 
 ### Two-Axis Twisting
 
-The **two-axis countertwisting** Hamiltonian $\frac{\chi}{\hbar}(\tilde S_{\mathrm{tot},+}^2 + \tilde S_{\mathrm{tot},-}^2)$ — or equivalently a squeezing generator with two orthogonal axes — reaches the Heisenberg scaling $\zeta^2\propto N^{-1}$ in the ideal case, faster than one-axis twisting. It is harder to realise physically because it requires a nonlinear coupling with two non-commuting axes, but it is the standard benchmark for the best achievable squeezing from a nonlinear collective Hamiltonian. The framework describes it in the same language: a Hermitian element of $\mathbb{M}_+$ that is quadratic in the collective spin.
+The **two-axis countertwisting** Hamiltonian $\frac{\xi}{\hbar}(\tilde S_{\mathrm{tot},+}^2 + \tilde S_{\mathrm{tot},-}^2)$ — or equivalently a squeezing generator with two orthogonal axes — reaches the Heisenberg scaling $\zeta^2\propto N^{-1}$ in the ideal case, faster than one-axis twisting. It is harder to realise physically because it requires a nonlinear coupling with two non-commuting axes, but it is the standard benchmark for the best achievable squeezing from a nonlinear collective Hamiltonian. The framework describes it in the same language: a Hermitian element of $\mathbb{M}_+$ that is quadratic in the collective spin.
 
 ## The Biquaternion Reading
 
@@ -211,7 +211,7 @@ and the covariance is the trace reading of the symmetrised plain form of $\tilde
 
 ### The Twisting as a Rotor
 
-One-axis twisting is conjugation by a **non-uniform** rotor. In the Dicke basis the evolution operator $\exp(-i\chi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)$ acts on each $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with a phase depending on $s_{\mathrm{tot},z}^2$; written on the spinor it is a diagonal rotor whose angle is proportional to $s_{\mathrm{tot},z}^2$. It is not a rigid rotation of the collective Bloch ball — rigid rotations are generated by the linear $\tilde S_{\mathrm{tot},\alpha}$ and are the unit quaternions of $\mathbb{H}_{\mathbb{B}}$ — but a **shear** of the ball, generated by the quadratic $\tilde S_{\mathrm{tot},3}^2$. The distinction is the algebraic content of the difference between a rotation (which preserves the noise ellipse) and a squeezing (which shears it). The squeezing ellipsoid is the image of the coherent-state noise ball under this shear.
+One-axis twisting is conjugation by a **non-uniform** rotor. In the Dicke basis the evolution operator $\exp(-i\xi t'\tilde S_{\mathrm{tot},3}^2/\hbar^2)$ acts on each $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ with a phase depending on $s_{\mathrm{tot},z}^2$; written on the spinor it is a diagonal rotor whose angle is proportional to $s_{\mathrm{tot},z}^2$. It is not a rigid rotation of the collective Bloch ball — rigid rotations are generated by the linear $\tilde S_{\mathrm{tot},\alpha}$ and are the unit quaternions of $\mathbb{H}_{\mathbb{B}}$ — but a **shear** of the ball, generated by the quadratic $\tilde S_{\mathrm{tot},3}^2$. The distinction is the algebraic content of the difference between a rotation (which preserves the noise ellipse) and a squeezing (which shears it). The squeezing ellipsoid is the image of the coherent-state noise ball under this shear.
 
 ### The Tavis–Cummings Coupling
 
@@ -266,7 +266,7 @@ $$
 \zeta_R^2 = \frac{N\,(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
 $$
 
-equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde S_{\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\chi t' = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
+equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{OAT} = \frac{\xi}{\hbar}\tilde S_{\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi t' = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
 
 In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}\tilde S_{\mathrm{tot},\alpha}^{*})=\mathrm{Tr}(\tilde{Ϛ}\tilde S_{\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{H}_{\mathbb{B}}$, while the twisting generator $\tilde S_{\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\mathrm{tot},-} + a\tilde S_{\mathrm{tot},+})$ is an $\mathbb{M}_+$ coupling whose single-excitation gap is the collective Rabi splitting.
 
@@ -290,7 +290,7 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $a^\dagger a + \tilde S_{\mathrm{tot},3}/\hbar + N/2$ | Conserved excitation number |
 | $\Delta E = 2\hbar g\sqrt{N}$ | Collective Rabi splitting |
 | $\zeta_R^2 = N(\Delta \tilde S_{\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
-| $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde S_{\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
+| $\tilde{H}_{OAT} = \frac{\xi}{\hbar}\tilde S_{\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
 | $\mathrm{Cov}(\tilde S_{\mathrm{tot},\alpha},\tilde S_{\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |
 
 ## Further Reading

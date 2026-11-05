@@ -20,7 +20,7 @@ $$
 (i\vec p)(i\vec p)=+\left(\vec p\cdot\vec p\right)e_t ,
 $$
 
-the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\psi$ the rapidity.
+the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\theta^{\mathrm{rpd}}$ the rapidity.
 
 ## The Algebra of Physical Space Inside the Biquaternions
 
@@ -123,16 +123,16 @@ which is the corpus's polar-word statement $\tilde V=ic\,\mathcal B$ with $\math
 **The frame rotor is a paravector.** The corpus's frame rotor $\tilde U_{\mathrm b}$ of *Norm and Pairing Conventions* is a Hermitian element of norm one, so it is a scalar plus an imaginary vector: $\tilde U_{\mathrm b}\in\mathbb{M}_+=\mathcal{P}$, and the rotor is itself a paravector, the half-angle one. Its square is the proper velocity, and with $\vec u_{\mathrm b}=\vec u_v$,
 
 $$
-\tilde U_{\mathrm b}^{2}=\cosh\psi\,e_t+\sinh\psi\,i\vec u_v=\tilde V_{\mathrm p},
+\tilde U_{\mathrm b}^{2}=\cosh\theta^{\mathrm{rpd}}\,e_t+\sinh\theta^{\mathrm{rpd}}\,i\vec u_v=\tilde V_{\mathrm p},
 $$
 
-a derived form, the half-angle identity read on $\mathcal{P}$, with $\gamma=\cosh\psi$ and $\gamma\beta=\sinh\psi$. The rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and unimodular, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$; its inverse is its quaternion conjugate, $\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{\natural}$, so the four-vector factor is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\tilde V_{\mathrm p}^{\natural}$. The two relations together give the chain $\tilde V_{\mathrm p}=\tilde U_{\mathrm b}^{2}$, $\mathcal B=\tilde V_{\mathrm p}^{-1}$, $\tilde V=ic\,\tilde V_{\mathrm p}^{\natural}$.
+a derived form, the half-angle identity read on $\mathcal{P}$, with $\gamma=\cosh\theta^{\mathrm{rpd}}$ and $\gamma\beta=\sinh\theta^{\mathrm{rpd}}$. The rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and unimodular, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$; its inverse is its quaternion conjugate, $\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{\natural}$, so the four-vector factor is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\tilde V_{\mathrm p}^{\natural}$. The two relations together give the chain $\tilde V_{\mathrm p}=\tilde U_{\mathrm b}^{2}$, $\mathcal B=\tilde V_{\mathrm p}^{-1}$, $\tilde V=ic\,\tilde V_{\mathrm p}^{\natural}$.
 
 ## The Boost Rule
 
 The computational advantage of the paravector interpretation is that the boost of a spacetime vector is a *product* rather than a sandwich with two factors.
 
-**Theorem (boost rule).** Let $\tilde U_{\mathrm b}$ be a frame rotor of rapidity $\psi$ about the unit direction $\vec u_{\mathrm b}$, and $\tilde V_{\mathrm p}=\tilde U_{\mathrm b}^{2}$ the corresponding proper velocity. For a paravector $p=p_te_t+i\vec p$, split it into the part coplanar with the boost plane and the part orthogonal to it,
+**Theorem (boost rule).** Let $\tilde U_{\mathrm b}$ be a frame rotor of rapidity $\theta^{\mathrm{rpd}}$ about the unit direction $\vec u_{\mathrm b}$, and $\tilde V_{\mathrm p}=\tilde U_{\mathrm b}^{2}$ the corresponding proper velocity. For a paravector $p=p_te_t+i\vec p$, split it into the part coplanar with the boost plane and the part orthogonal to it,
 
 $$
 p_\parallel=p_te_t+i\left(\vec p\cdot\vec u_{\mathrm b}\right)\vec u_{\mathrm b} ,
@@ -158,8 +158,8 @@ so the cross terms in the congruence cancel and the squared term contributes a m
 
 $$
 \tilde U_{\mathrm b}\,p_\perp\,\tilde U_{\mathrm b}^{*}
-=\left(\cosh\frac{\psi}{2}+\sinh\frac{\psi}{2}i\vec u_{\mathrm b}\right)p_\perp\left(\cosh\frac{\psi}{2}+\sinh\frac{\psi}{2}i\vec u_{\mathrm b}\right)
-=\left(\cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2}\right)p_\perp=p_\perp .
+=\left(\cosh\frac{\theta^{\mathrm{rpd}}}{2}+\sinh\frac{\theta^{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\right)p_\perp\left(\cosh\frac{\theta^{\mathrm{rpd}}}{2}+\sinh\frac{\theta^{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\right)
+=\left(\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\right)p_\perp=p_\perp .
 $$
 
 *The coplanar part.* The element $p_\parallel$ is a scalar plus a multiple of $i\vec u_{\mathrm b}$, hence commutes with $i\vec u_{\mathrm b}$ and with the rotor, and the congruence collapses to a square:
@@ -366,9 +366,9 @@ The paravector calculus is therefore the calculus of *one-sided* cells of a thre
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,
+L_{\tilde\nabla}\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R,
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,

@@ -192,7 +192,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame cells, the factor $i$ included, so the dictionary below carries no extra phase.
 
-With $L_a\psi=a\psi$ and $R_b\psi=\psi b$, the dictionary is:
+With $L_a\tilde{Ξ}^{\mathrm{spn}}=a\tilde{Ξ}^{\mathrm{spn}}$ and $R_b\tilde{Ξ}^{\mathrm{spn}}=\tilde{Ξ}^{\mathrm{spn}} b$, the dictionary is:
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
@@ -238,7 +238,7 @@ $$
 
 The dictionary is complex-linear. Over $\mathbb{R}$ it splits into two real forms: the products of $\gamma_0,\dots,\gamma_3$ satisfy the $\mathrm{Cl}_{1,3}$ relations and span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the sixteen two-sided cells $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-The central grading $\chi$ is a different object from $\gamma_5$. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the adjoined central root of $-1$, with $\tilde{Ζ}_{\mathrm{ad}}^{2}=-e_t$, so that $\chi^{2}=e_t$; it is also the difference $e_+-e_-$ of the two central idempotents. On the Dirac module it is represented by $\gamma_5$, and it is not $\Gamma$.
+The central grading $\xi$ is a different object from $\gamma_5$. It is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, where $\tilde{Ζ}_{\mathrm{ad}}$ is the adjoined central root of $-1$, with $\tilde{Ζ}_{\mathrm{ad}}^{2}=-e_t$, so that $\xi^{2}=e_t$; it is also the difference $e_+-e_-$ of the two central idempotents. On the Dirac module it is represented by $\gamma_5$, and it is not $\Gamma$.
 
 For translation from the gamma literature, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$:
 
@@ -288,7 +288,7 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 | $Q\mapsto-e_yQe_y$ | The two-sided multiplier; exchanges the two values of the subscript; its square is the identity |
 | $Q\mapsto Qe_x$ | The one-sided form; its square is $-e_t$, its order is four |
 | $Q_L$, $Q_R$ | The two values of the subscript, the minus one and the plus one |
-| $\tilde\Psi_L$, $\tilde\Psi_R$ | The two lines of the free equation, one per value |
+| $\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde{Ξ}^{\mathrm{spn}}_R$ | The two lines of the free equation, one per value |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
 | the fixed set of $Q^{\mathrm c}$ | Time and $y$ real, $x$ and $z$ imaginary; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |

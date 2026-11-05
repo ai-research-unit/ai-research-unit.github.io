@@ -76,7 +76,7 @@ $$
 
 and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is $N$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$, if and only if it is invertible. The $N$-regular set is the group of units $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
 
-**No function is both definite and multiplicative.** The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\chi(0)=0$, so it would give $\chi(e_t+i\vec e_x)\chi(e_t-i\vec e_x)=\chi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.
+**No function is both definite and multiplicative.** The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\xi(0)=0$, so it would give $\xi(e_t+i\vec e_x)\xi(e_t-i\vec e_x)=\xi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
 **One letter, two arities.** A letter names the form when it carries two arguments and the algebraic norm when it carries one; the norm is the form of the same name with the arguments equated. The distinction is not cosmetic: $\langle\cdot\rangle_{\natural}$ is a pairing of two elements and $\langle\tilde Q\rangle_{\natural}$ is a single number, and the multiplicative law is a law of the second, not of the first.
 
@@ -210,7 +210,7 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 
 ## Regular and Degenerate Biquaternions
 
-Each letter cuts the algebra in two by the value of its norm: a $\Phi$-regular biquaternion has $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$. The four cuts are different cuts and must not be exchanged.
+Each letter cuts the algebra in two by the value of its norm: a $Ξ$-regular biquaternion has $Ξ(\tilde Q)\neq0$ and a $Ξ$-degenerate one has $Ξ(\tilde Q)=0$. The four cuts are different cuts and must not be exchanged.
 
 - $N$-regular is $N(\tilde Q)\neq0$, and it is exactly the set of invertible elements, the unit group $\mathbb{B}^{\times}$. $N$-degenerate is the null cone $\mathcal{N}$: the origin together with the zero divisors.
 - $P$-degenerate is the complex cone, of real dimension six. It is not a wall of invertibility; it contains units, $P(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$.
@@ -223,7 +223,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 
 - The twelve products carry four forms and no more: the symmetrisation keeps the scalar part, the antisymmetrisation kills it, so the four general products and their four symmetrisations carry four forms two by two and the four antisymmetric operations carry the zero form.
 - The four forms are the sector sign $\langle\cdot,\cdot\rangle$ written $P$, the interval $\langle\cdot,\cdot\rangle_{\natural}$ written $N$, the Born form $\langle\cdot,\cdot\rangle_{*}$ written $H$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ written $K$, with Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
-- A $\Phi$-regular biquaternion has $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$; only the $N$ cut is the invertibility partition, $N$-regular being the unit group and $N$-degenerate the null cone, the origin together with the zero divisors.
+- A $Ξ$-regular biquaternion has $Ξ(\tilde Q)\neq0$ and a $Ξ$-degenerate one has $Ξ(\tilde Q)=0$; only the $N$ cut is the invertibility partition, $N$-regular being the unit group and $N$-degenerate the null cone, the origin together with the zero divisors.
 - The second slot decides the symmetry and the reality of the algebraic norm; the first slot decides the Gram matrix and the signature.
 - The four algebraic norms are $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
 - $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm; $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the quaternionic norm and the criterion of invertibility.

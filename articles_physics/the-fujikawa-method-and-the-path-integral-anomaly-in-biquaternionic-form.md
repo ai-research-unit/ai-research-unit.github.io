@@ -6,13 +6,13 @@ The **Fujikawa method** derives the axial anomaly from the path integral rather 
 
 The derivation has two facts and one regularisation.
 
-- **A symmetry of the action.** A *global* right rotation $\psi\mapsto\psi\,e^{\alpha\omega}$ leaves the massless gradient equation invariant, because left and right multiplications commute. The exponent is the pseudoscalar $\omega=-\vec e_z$, so the two values of the field are multiplied by opposite phases: the rotation is the axial one and not a central phase, and the central $i$ stays free. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial\alpha/\partial Q_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
-- **A transformation of the measure.** The same rotation is a change of the integration variables $\psi,\psi^{\dagger}$, and the fermion measure $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ picks up the inverse determinant of the rotation. That determinant is the whole story.
+- **A symmetry of the action.** A *global* right rotation $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}}\,e^{\alpha\omega}$ leaves the massless gradient equation invariant, because left and right multiplications commute. The exponent is the pseudoscalar $\omega=-\vec e_z$, so the two values of the field are multiplied by opposite phases: the rotation is the axial one and not a central phase, and the central $i$ stays free. A *local* rotation $\alpha(x)$ leaves the action invariant only up to a term proportional to $\partial\alpha/\partial Q_\mu$, and that term is the axial current; the corresponding Ward identity is the classical one, and the anomaly is the correction to it.
+- **A transformation of the measure.** The same rotation is a change of the integration variables $\tilde{Ξ}^{\mathrm{spn}},\tilde{Ξ}^{\mathrm{spn}\dagger}$, and the fermion measure $\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}$ picks up the inverse determinant of the rotation. That determinant is the whole story.
 - **A regularisation.** The determinant is the product of the rotation's eigenvalues, one per mode, and it is divergent; it is regulated by a heat-kernel factor $\exp(-\mathcal{H}/M^2)$, evaluated as $M\to\infty$, and the finite remnant is the anomaly.
 
 This article asks what the biquaternion framework supplies for this derivation. The answer is stated at the outset.
 
-- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla\psi=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $\tilde K=k_0-i\vec k$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
+- **Supplied, and recomputed below.** The massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$, and the massive equation is the chiral pair, because the square of the gradient with itself is not scalar. The two algebraic facts the derivation rests on are exact: $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the chirality is the right multiplication by the pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$, whose two values split the field into two halves of complex dimension two each. The symbol of the gradient is $\tilde K=k_0-i\vec k$, and on the null cone its left action on the six bivector components has rank four and a kernel of real dimension two, on which every bivector squares to zero. Those numbers are recomputed in §*The Symbol, the Cone and the Null Bivectors*, over five null wave vectors, with residual below $2\times10^{-14}$ at the level of the singular-value basis.
 - **Translated once from the source.** The source's own equation is written with a derivative that carries one frame object per coordinate. Translated once, every derivative in this article is $\tilde\nabla$, the chirality stands on the right as a factor $\omega$, and the contraction is the form $\langle\tilde\nabla,\tilde J\rangle_{\natural}$. The translation is fixed in §*The Gradient, the Pseudoscalar and the Two Values* and is not repeated; the source's form is not displayed.
 - **Transcribed.** The measure, the Jacobian, the heat-kernel expansion, the Fujikawa coefficient and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
 - **Not supplied, and proved not to be.** The four-index symbol is not an object of the algebra. The chirality-weighted trace of the algebra over its four dimensions vanishes for every element, identically, because the pseudoscalar is odd under the natural conjugation; the insertion is taken on the right, the side the rotation acts on, and all $24$ orders of four distinct units give exactly zero. The density is therefore transcribed and not computed from an algebra trace, and §*Why the Symbol Is Not an Algebra Trace* states the theorem and what follows from it. What the algebra supplies in its place is the identification of the density with its own invariant $I_2=\vec E\cdot\vec B$, through the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\,\vec E\cdot\vec B$.
@@ -28,11 +28,11 @@ $$
 $$
 and on $\mathbb{M}_-$ the time derivative reads $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, which on $\mathbb{M}_-$ is $\Delta-c^{-2}\partial^2/\partial {t'}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
 $$
-\mathbb{D}(\psi_L,\psi_R)=\bigl(\tilde\nabla\psi_R,\ \tilde\nabla^{\natural}\psi_L\bigr),
+\mathbb{D}(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R)=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L\bigr),
 \qquad
 \mathbb{D}^2=\Box\,I ,
 $$
-on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Gradient*); it is the chiral pair written once, and it is not a frame object. The Dirac bilinear of two fields is written $\psi^{\dagger}\chi=\mathrm{Sc}(\psi^{*}\chi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+iϙA_\mu/\hbar$ with $[D_\mu,D_\nu]=iϙF_{\mu\nu}/\hbar$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A$. The fermion measure is written $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
+on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Gradient*); it is the chiral pair written once, and it is not a frame object. The Dirac bilinear of two fields is written $\tilde{Ξ}^{\mathrm{spn}\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}\xi\,i\vec e_x)$, with the fixed right multiplier $i\vec e_x$ standing after the product; it is not a derivative, and the multiplier is the same in every term below. The gauge covariant derivative is $D_\mu=\partial/\partial Q_\mu+iϙA_\mu/\hbar$ with $[D_\mu,D_\nu]=iϙF_{\mu\nu}/\hbar$ for the abelian factor, and the gradient form is $\tilde D=\tilde\nabla+iϙ\tilde A$. The fermion measure is written $\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}$. The four-index symbol is the orientation density of the series, taken positive on the identity order, and the field-strength components are $F_{ti}=E_i$ and $F_{ij}=+\epsilon_{ijk}B_k$, every index written low as the companion article writes it. The field invariants $I_1$ and $I_2$ are the instanton article's. Two traces appear below and are kept apart: $\mathrm{tr}$ is the trace of a complex-linear operator on the four coefficients of the field, and $\mathrm{Tr}$ is the functional trace over modes, which is what a determinant produces. Throughout, natural units $\hbar=c=1$ are used, with $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium and $c_0$ the vacuum value.
 
 The framework results used here are those of the companion articles:
 
@@ -48,7 +48,7 @@ The framework results used here are those of the companion articles:
 
 **The free equation.** The massless equation of the framework is
 $$
-\tilde\nabla\psi=0 ,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0 ,
 $$
 one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial Q_t$ term of $\tilde\nabla$ with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$, and the translation of each spatial term is the corresponding $\vec e_k\,\partial/\partial Q_k$. Nothing is added and nothing is dropped. The translated form is the only form used below.
 
@@ -66,11 +66,11 @@ which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2
 
 **The consequence for the mass.** A single field cannot carry a mass at first order, because there is no scalar to subtract from a square that is not scalar. The massive equation is therefore the chiral pair, and it is the same dynamics written for the two values and not a second one:
 $$
-\tilde\nabla\psi_R=m\psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^{\natural}\psi_L=m\psi_R .
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R .
 $$
-Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box\psi=m^2\psi$ on each value, because $\tilde\nabla\tilde\nabla^{\natural}=\Box$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none.
+Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box\tilde{Ξ}^{\mathrm{spn}}=m^2\tilde{Ξ}^{\mathrm{spn}}$ on each value, because $\tilde\nabla\tilde\nabla^{\natural}=\Box$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none.
 
 **The pseudoscalar.** The chirality of the frame is the element
 $$
@@ -80,25 +80,25 @@ with $\omega^{\natural}=+\vec e_z=-\omega$. It anticommutes with $\vec e_x$ and 
 
 **The two values, and the side.** Right multiplication by $\vec e_z$ is a complex-linear operator on the four coefficients, and its eigenvalues are $\pm i$, each of multiplicity two. The field therefore splits into two halves of complex dimension two,
 $$
-\psi_L\vec e_z=-i\,\psi_L,
+\tilde{Ξ}^{\mathrm{spn}}_L\vec e_z=-i\,\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\psi_R\vec e_z=+i\,\psi_R,
+\tilde{Ξ}^{\mathrm{spn}}_R\vec e_z=+i\,\tilde{Ξ}^{\mathrm{spn}}_R,
 \qquad
 \mathbb{B}=\mathbb{B}_L\oplus\mathbb{B}_R,
 \qquad
 \dim_{\mathbb{C}}\mathbb{B}_L=\dim_{\mathbb{C}}\mathbb{B}_R=2 ,
 $$
-and the two values are exactly two. The grading itself is $i$ times right multiplication by $\omega$: it takes the value $-1$ on $\psi_L$ and $+1$ on $\psi_R$, and it squares to the identity. **The insertion stands on the right.** The side is not a convention of printing: $\omega\vec e_x=-\vec e_y$ while $\vec e_x\omega=+\vec e_y$, so the left product and the right product are two different elements of the algebra, and only the right one is the chirality of the source's spin plane, which maps $\psi$ to $-\psi\vec e_z$.
+and the two values are exactly two. The grading itself is $i$ times right multiplication by $\omega$: it takes the value $-1$ on $\tilde{Ξ}^{\mathrm{spn}}_L$ and $+1$ on $\tilde{Ξ}^{\mathrm{spn}}_R$, and it squares to the identity. **The insertion stands on the right.** The side is not a convention of printing: $\omega\vec e_x=-\vec e_y$ while $\vec e_x\omega=+\vec e_y$, so the left product and the right product are two different elements of the algebra, and only the right one is the chirality of the source's spin plane, which maps $\tilde{Ξ}^{\mathrm{spn}}$ to $-\tilde{Ξ}^{\mathrm{spn}}\vec e_z$.
 
 **The axial rotation.** The rotation this article studies is the right multiplication
 $$
-\psi\ \longmapsto\ \psi\,e^{\alpha\omega}=\psi\,(\cos\alpha+\omega\sin\alpha),
+\tilde{Ξ}^{\mathrm{spn}}\ \longmapsto\ \tilde{Ξ}^{\mathrm{spn}}\,e^{\alpha\omega}=\tilde{Ξ}^{\mathrm{spn}}\,(\cos\alpha+\omega\sin\alpha),
 $$
 with $\alpha$ a real parameter. It commutes with every left multiplication, hence with the gradient, and it is unitary because $\omega$ is anti-self-adjoint in the norm, $\omega^{\natural}=-\omega$. Its action on the two values is the pair of opposite phases
 $$
-e^{\alpha\omega}\psi_L=e^{+i\alpha}\psi_L,
+e^{\alpha\omega}\tilde{Ξ}^{\mathrm{spn}}_L=e^{+i\alpha}\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-e^{\alpha\omega}\psi_R=e^{-i\alpha}\psi_R ,
+e^{\alpha\omega}\tilde{Ξ}^{\mathrm{spn}}_R=e^{-i\alpha}\tilde{Ξ}^{\mathrm{spn}}_R ,
 $$
 recomputed on the two eigenspaces with residual below $10^{-10}$: the multipliers are $0.932327-0.361615\,i$ and $0.932327+0.361615\,i$ at $\alpha=0.37$, the two phases of one angle. The source's exponential is this one with $\alpha$ replaced by $-\alpha$, which is the sign its letter $i$ carries; the article keeps the sign above, and every sign below is computed from it.
 
@@ -106,7 +106,7 @@ recomputed on the two eigenspaces with residual below $10^{-10}$: the multiplier
 
 **The generating functional.** For a biquaternion fermion field coupled to an abelian gauge field, the functional integral is
 $$
-Z[A] = \int \mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}\;\exp\!\left(i\int d^4x\;\psi^{\dagger}\bigl(\tilde D-m\bigr)\psi\right),
+Z[A] = \int \mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}\;\exp\!\left(i\int d^4x\;\tilde{Ξ}^{\mathrm{spn}\dagger}\bigl(\tilde D-m\bigr)\tilde{Ξ}^{\mathrm{spn}}\right),
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
@@ -116,24 +116,24 @@ The bosonic and fermionic measures, the Gaussian integration and the determinant
 
 **The chiral rotation.** Rotate the integration variables by an axial phase that is local,
 $$
-\psi(x)\ \longmapsto\ \psi_2(x)=\psi(x)\,e^{\alpha(x)\omega},
+\tilde{Ξ}^{\mathrm{spn}}(x)\ \longmapsto\ \tilde{Ξ}^{\mathrm{spn}}_2(x)=\tilde{Ξ}^{\mathrm{spn}}(x)\,e^{\alpha(x)\omega},
 \qquad
-\psi^{\dagger}(x)\ \longmapsto\ \psi_2^{\dagger}(x)=\psi^{\dagger}(x)\,e^{\alpha(x)\omega},
+\tilde{Ξ}^{\mathrm{spn}\dagger}(x)\ \longmapsto\ \tilde{Ξ}^{\mathrm{spn}\dagger}_2(x)=\tilde{Ξ}^{\mathrm{spn}\dagger}(x)\,e^{\alpha(x)\omega},
 $$
 with $\alpha$ a real scalar function. The exponent is a right multiplication by an element that squares to minus the identity, so the rotation is the exponential of the pseudoscalar and not of a phase: $e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$, with $\mathbb 1$ written for $e_t$ when it multiplies a coefficient. The rotation is unitary and it leaves the norm of the field unchanged.
 
 **The massless kinetic term is invariant.** Left and right multiplications commute, so a constant rotation passes through the gradient,
 $$
-\psi_2^{\dagger}\,\tilde D\,\psi_2
-=\psi^{\dagger}e^{\alpha\omega}\,\tilde D\,(\psi e^{\alpha\omega})
-=\psi^{\dagger}\,\tilde D\,\psi\,e^{2\alpha\omega},
+\tilde{Ξ}^{\mathrm{spn}\dagger}_2\,\tilde D\,\tilde{Ξ}^{\mathrm{spn}}_2
+=\tilde{Ξ}^{\mathrm{spn}\dagger}e^{\alpha\omega}\,\tilde D\,(\tilde{Ξ}^{\mathrm{spn}} e^{\alpha\omega})
+=\tilde{Ξ}^{\mathrm{spn}\dagger}\,\tilde D\,\tilde{Ξ}^{\mathrm{spn}}\,e^{2\alpha\omega},
 $$
-and the last factor is a constant element of the algebra. For the *global* rotation the equation $\tilde\nabla\psi=0$ is invariant exactly and not to first order, since $\tilde\nabla(\psi e^{\alpha\omega})=(\tilde\nabla\psi)e^{\alpha\omega}$. That is the sharpest form of the statement that the axial rotation is a symmetry of the massless action, and it uses no anticommutator of frame objects, only the associativity of the algebra and the commutation of the two sides.
+and the last factor is a constant element of the algebra. For the *global* rotation the equation $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$ is invariant exactly and not to first order, since $\tilde\nabla(\tilde{Ξ}^{\mathrm{spn}} e^{\alpha\omega})=(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}})e^{\alpha\omega}$. That is the sharpest form of the statement that the axial rotation is a symmetry of the massless action, and it uses no anticommutator of frame objects, only the associativity of the algebra and the commutation of the two sides.
 
 **The local rotation produces the current.** When $\alpha$ depends on position the derivative falls on it,
 $$
-\psi_2^{\dagger}\,\tilde D\,\psi_2
-=\psi^{\dagger}\,\tilde D\,\psi
+\tilde{Ξ}^{\mathrm{spn}\dagger}_2\,\tilde D\,\tilde{Ξ}^{\mathrm{spn}}_2
+=\tilde{Ξ}^{\mathrm{spn}\dagger}\,\tilde D\,\tilde{Ξ}^{\mathrm{spn}}
 +i\,\bigl\langle\tilde\nabla\alpha,\tilde J_5\bigr\rangle_{\natural}
 +O(\alpha^2),
 \qquad
@@ -141,26 +141,26 @@ $$
 $$
 because the derivative of the rotation at $\alpha=0$ puts $\omega$ on the right of each of the four components of $\tilde\nabla\alpha$. The pseudoscalar therefore stands on the right of the field, exactly where the chirality belongs, and the contraction is the explicit sum $\langle\tilde\nabla\alpha,\tilde J_5\rangle_{\natural}=\sum_\mu(\partial\alpha/\partial Q_\mu)J_{5\mu}$, per the corpus's rule that a contraction names its index. Under the *global* rotation the term is absent, which is the classical statement. A mass term is not invariant,
 $$
-\psi_2^{\dagger}\,m\,\psi_2=m\,\psi^{\dagger}\psi\,e^{2\alpha\omega}
-=m\,\psi^{\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\psi,
+\tilde{Ξ}^{\mathrm{spn}\dagger}_2\,m\,\tilde{Ξ}^{\mathrm{spn}}_2=m\,\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}\,e^{2\alpha\omega}
+=m\,\tilde{Ξ}^{\mathrm{spn}\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ}^{\mathrm{spn}},
 $$
 which is the classical explicit breaking of the axial symmetry, and the doubling of the angle is the identity $e^{2\alpha\omega}=\cos2\alpha+\sin2\alpha\,\omega$. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the central phase passes through the mass term and this one does not.
 
 **The classical Ward identity, and the question.** Classically the massless action is invariant under the global rotation, and Noether's theorem gives the conservation of the axial current on the equations of motion,
 $$
-j_{5\mu}=\psi^{\dagger}\,\omega\,\vec e_\mu\,\psi,
+j_{5\mu}=\tilde{Ξ}^{\mathrm{spn}\dagger}\,\omega\,\vec e_\mu\,\tilde{Ξ}^{\mathrm{spn}},
 \qquad
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural}=0\quad(\text{on shell}),
 $$
-with the pseudoscalar between the two fields and the unit on the second factor. The vector current is the same bilinear without the pseudoscalar, $j_\mu=\psi^{\dagger}\vec e_\mu\psi$, and the two rotate into one another as a two-vector: recomputed at $\alpha=0.41$ on a random complex field, the vector current of the rotated field equals $\cos2\alpha\,j_\mu+\sin2\alpha\,j_{5\mu}$, and the axial current of the rotated field equals $-\sin2\alpha\,j_\mu+\cos2\alpha\,j_{5\mu}$, both to the five decimals printed. The *local* rotation is not a symmetry — it fails by exactly the current term displayed above, and that failure is what identifies the current. The Ward identity is the global statement read locally. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
+with the pseudoscalar between the two fields and the unit on the second factor. The vector current is the same bilinear without the pseudoscalar, $j_\mu=\tilde{Ξ}^{\mathrm{spn}\dagger}\vec e_\mu\tilde{Ξ}^{\mathrm{spn}}$, and the two rotate into one another as a two-vector: recomputed at $\alpha=0.41$ on a random complex field, the vector current of the rotated field equals $\cos2\alpha\,j_\mu+\sin2\alpha\,j_{5\mu}$, and the axial current of the rotated field equals $-\sin2\alpha\,j_\mu+\cos2\alpha\,j_{5\mu}$, both to the five decimals printed. The *local* rotation is not a symmetry — it fails by exactly the current term displayed above, and that failure is what identifies the current. The Ward identity is the global statement read locally. The quantum question is whether the *measure* is invariant under the same change of variables. It is not, and the failure is the anomaly.
 
 **Why the measure can fail.** A change of integration variables in a finite-dimensional integral multiplies the measure by the Jacobian determinant, regardless of whether the integrand is invariant. A symmetry of the action is therefore not automatically a symmetry of the integral; it is a symmetry only if the Jacobian is one. The chiral rotation of a fermion field is a change of variables whose Jacobian is not one, and no local counterterm can restore it. That is why the anomaly is a property of the measure, and why the diagrammatic and path-integral derivations must agree.
 
 ## The Jacobian and the Regulated Trace
 
-**The Jacobian.** Write the rotation as a linear map on the space of fields, $\psi_2=\psi e^{\alpha\omega}$, and the same rotation on $\psi^{\dagger}$. The measure transforms by the inverse determinants,
+**The Jacobian.** Write the rotation as a linear map on the space of fields, $\tilde{Ξ}^{\mathrm{spn}}_2=\tilde{Ξ}^{\mathrm{spn}} e^{\alpha\omega}$, and the same rotation on $\tilde{Ξ}^{\mathrm{spn}\dagger}$. The measure transforms by the inverse determinants,
 $$
-\mathcal{D}\psi_2\,\mathcal{D}\psi_2^{\dagger} = \bigl(\det U\bigr)^{-2}\,\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger},
+\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}_2\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}_2 = \bigl(\det U\bigr)^{-2}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger},
 \qquad
 U=e^{\alpha\omega},
 $$
@@ -177,13 +177,13 @@ $$
 \qquad
 a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
-The factor $2$ in the exponent is the two determinants, one for $\psi$ and one for $\psi^{\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial\alpha/\partial Q_\mu)\,j_{5\mu}=\int d^4x\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial Q_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
+The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}^{\mathrm{spn}}$ and one for $\tilde{Ξ}^{\mathrm{spn}\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial\alpha/\partial Q_\mu)\,j_{5\mu}=\int d^4x\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial Q_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
 
 **The regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. The square of the pair operator is scalar, $\mathbb{D}^2=\Box I$, so the regulator is the d'Alembertian itself with the connection included,
 $$
 \mathcal{H}=-(\tilde D\tilde D^{\natural})_E ,
 $$
-whose scalar part is $-\Box_E$ and whose remaining part is a bivector built from the commutator $[D_\mu,D_\nu]=iϙF_{\mu\nu}$. The subscript $E$ is the continuation on which $\mathcal{H}$ has no negative eigenvalue and $\exp(-\mathcal{H}/M^2)$ converges: each spatial derivative is multiplied by $i$ and the time derivative is left alone. The continuation changes no coefficient, and it does not touch the pseudoscalar: $\omega$ is an element of the algebra and the continuation acts on the coordinates. Choosing a complete set of modes $\{\chi_n\}$ of $\mathcal{H}$, with $\mathcal{H}\chi_n=\lambda_n\chi_n$ and $\lambda_n\ge0$, the regulated trace is the coincidence value of the heat kernel. In the standard fermion module the divergent orders drop out before the limit is taken: at coincidence the heat kernel expands as $M^4/16\pi^2$ times the identity, plus an $M^2$ term proportional to the bivector of the field strength, plus an $M^0$ term proportional to its square. The first is annihilated by $\mathrm{tr}(\rho_\omega)$ and the second by $\mathrm{tr}(\ell_V\rho_\omega)$, both of which vanish in either module, so only the finite order survives the trace and nothing has to be subtracted by hand. The $M^4$ and $M^2$ divergences are still there in the determinant; it is the weighted trace that removes them. That construction is Fujikawa's and is standard. What the framework contributes is the operator inside it, and, as §*Why the Symbol Is Not an Algebra Trace* proves, not the trace: in $\mathbb{B}$ the same vanishing that removes the divergent orders removes the finite one too, and the weighted trace is identically zero.
+whose scalar part is $-\Box_E$ and whose remaining part is a bivector built from the commutator $[D_\mu,D_\nu]=iϙF_{\mu\nu}$. The subscript $E$ is the continuation on which $\mathcal{H}$ has no negative eigenvalue and $\exp(-\mathcal{H}/M^2)$ converges: each spatial derivative is multiplied by $i$ and the time derivative is left alone. The continuation changes no coefficient, and it does not touch the pseudoscalar: $\omega$ is an element of the algebra and the continuation acts on the coordinates. Choosing a complete set of modes $\{\xi_n\}$ of $\mathcal{H}$, with $\mathcal{H}\xi_n=\lambda_n\xi_n$ and $\lambda_n\ge0$, the regulated trace is the coincidence value of the heat kernel. In the standard fermion module the divergent orders drop out before the limit is taken: at coincidence the heat kernel expands as $M^4/16\pi^2$ times the identity, plus an $M^2$ term proportional to the bivector of the field strength, plus an $M^0$ term proportional to its square. The first is annihilated by $\mathrm{tr}(\rho_\omega)$ and the second by $\mathrm{tr}(\ell_V\rho_\omega)$, both of which vanish in either module, so only the finite order survives the trace and nothing has to be subtracted by hand. The $M^4$ and $M^2$ divergences are still there in the determinant; it is the weighted trace that removes them. That construction is Fujikawa's and is standard. What the framework contributes is the operator inside it, and, as §*Why the Symbol Is Not an Algebra Trace* proves, not the trace: in $\mathbb{B}$ the same vanishing that removes the divergent orders removes the finite one too, and the weighted trace is identically zero.
 
 ## Why the Symbol Is Not an Algebra Trace
 
@@ -305,15 +305,15 @@ so the axial charge transported in a background is twice the index, the minus be
 
 **The zero modes and the measure.** The index interpretation makes the Fujikawa computation transparent. The rotation acts on each mode by a phase; modes of the two values are rotated with opposite phases; the regulator counts them with the heat-kernel weight; and a mismatch between the numbers of zero modes of the two values is a non-zero difference that no regulator can remove. The anomaly is that mismatch seen through the measure. In the framework's terms the mismatch is a property of the pair operator in a background with non-zero topological charge, and the topological charge is the winding of the material-sector connection.
 
-**One instanton.** For a unit instanton the index is one per flavour and the axial charge changes accordingly. The factor of two in front of the index is the one already identified at the measure: two determinants, one for $\psi$ and one for $\psi^{\dagger}$. Equivalently, the bilinear that soaks up a zero mode is $\psi^{\dagger}\psi$, whose axial charge is two, so a single zero mode of one value shifts the axial charge by two units. A mode and its partner of the other value enter the trace with opposite signs, so their contributions annihilate when the index vanishes, and the integral turns on the difference. Nothing here is particular to the biquaternion algebra except the identification of the winding with the material sector and of the density with $I_2$.
+**One instanton.** For a unit instanton the index is one per flavour and the axial charge changes accordingly. The factor of two in front of the index is the one already identified at the measure: two determinants, one for $\tilde{Ξ}^{\mathrm{spn}}$ and one for $\tilde{Ξ}^{\mathrm{spn}\dagger}$. Equivalently, the bilinear that soaks up a zero mode is $\tilde{Ξ}^{\mathrm{spn}\dagger}\tilde{Ξ}^{\mathrm{spn}}$, whose axial charge is two, so a single zero mode of one value shifts the axial charge by two units. A mode and its partner of the other value enter the trace with opposite signs, so their contributions annihilate when the index vanishes, and the integral turns on the difference. Nothing here is particular to the biquaternion algebra except the identification of the winding with the material sector and of the density with $I_2$.
 
-**The two rotations compared.** The framework's two continuous symmetries of the massless equation behave differently in the measure, and the difference is exact. The **vector** rotation $\psi\mapsto e^{i\alpha}\psi$ is multiplication by a central element: it rotates the two values in the same sense, and it is exactly what a gauge transformation does to the field. Because the regulator is gauge invariant, the trace its Jacobian produces is the one *without* the pseudoscalar, and that trace is even under the interchange of the two index pairs, so it contracts to $F_{\mu\nu}F_{\mu\nu}$ and never to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$. An even local term is absorbed by the counterterms that define the effective action, so the divergence of the vector current is not corrected. In a chiral gauge theory the same distinction appears as the cubic charge sum $\sum_LQ^3-\sum_RQ^3$, which vanishes for a vector-like spectrum. The **axial** rotation inserts the pseudoscalar; it rotates the two values oppositely, its leftover is $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and no local counterterm with the symmetries of the theory absorbs it. Only the second rotation is anomalous. In the framework's terms the mass term and the measure agree about which phase is broken: the linear chiral pair conserves the central phase and breaks the axial one at the classical level, and the measure breaks the same axial phase once more at the quantum level. The two breakings add, and their sum is the ABJ divergence.
+**The two rotations compared.** The framework's two continuous symmetries of the massless equation behave differently in the measure, and the difference is exact. The **vector** rotation $\tilde{Ξ}^{\mathrm{spn}}\mapsto e^{i\alpha}\tilde{Ξ}^{\mathrm{spn}}$ is multiplication by a central element: it rotates the two values in the same sense, and it is exactly what a gauge transformation does to the field. Because the regulator is gauge invariant, the trace its Jacobian produces is the one *without* the pseudoscalar, and that trace is even under the interchange of the two index pairs, so it contracts to $F_{\mu\nu}F_{\mu\nu}$ and never to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$. An even local term is absorbed by the counterterms that define the effective action, so the divergence of the vector current is not corrected. In a chiral gauge theory the same distinction appears as the cubic charge sum $\sum_LQ^3-\sum_RQ^3$, which vanishes for a vector-like spectrum. The **axial** rotation inserts the pseudoscalar; it rotates the two values oppositely, its leftover is $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and no local counterterm with the symmetries of the theory absorbs it. Only the second rotation is anomalous. In the framework's terms the mass term and the measure agree about which phase is broken: the linear chiral pair conserves the central phase and breaks the axial one at the classical level, and the measure breaks the same axial phase once more at the quantum level. The two breakings add, and their sum is the ABJ divergence.
 
 **The index density.** The relation above can be written locally. The four-dimensional index density is proportional to $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, the second Chern character of the gauge field, and its integral is the topological charge whose biquaternion form the companion article on instantons computes from $I_2$. The chain is therefore: the rotation inserts the pseudoscalar; the symbol's bivector sector, on the cone, keeps one null polarisation and annihilates the rest; the field-strength contraction turns that survivor into the second invariant; and the integral of the invariant is the winding of the material-sector connection. Every link but the second is a statement the algebra makes, and the second is the one §*Why the Symbol Is Not an Algebra Trace* withholds.
 
 ## The Chiral Rotation in the Biquaternion Language
 
-**The rotation is the axial symmetry of the linear chiral pair.** The rotation $\psi\mapsto\psi e^{\alpha\omega}$ rotates the parts of the two values in opposite directions, because the multiplier is $-1$ on $\psi_L$ and $+1$ on $\psi_R$ in the grading sense, and multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$ in the phase sense. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and belonged to the vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
+**The rotation is the axial symmetry of the linear chiral pair.** The rotation $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}} e^{\alpha\omega}$ rotates the parts of the two values in opposite directions, because the multiplier is $-1$ on $\tilde{Ξ}^{\mathrm{spn}}_L$ and $+1$ on $\tilde{Ξ}^{\mathrm{spn}}_R$ in the grading sense, and multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$ in the phase sense. It is the axial phase whose breaking was treated in the companion article on the condensate; there the breaking was spontaneous and belonged to the vacuum, here it is explicit and quantum-mechanical. The two are different phenomena acting on the same symmetry, and the framework keeps them distinct: the condensate supplies a coefficient to the linear chiral pair, and the anomaly violates the axial current even when the coefficient is zero.
 
 **The angle is a central scalar, the generator is an element.** The rotation parameter is a real scalar function of position, hence a central element of the algebra times a function; it is the same kind of object as the gauge function of the abelian gauge principle. The *generator* is not central: $\omega$ anticommutes with two of the three vector units. That anticommutation, and not a central multiplication, is the algebra's reason that the two values rotate oppositely; and the commutation of left and right multiplications, not any property of a frame object, is the algebra's reason that the constant rotation commutes with the gradient.
 
@@ -325,8 +325,8 @@ so the axial charge transported in a background is twice the index, the minus be
 
 | Item | Status |
 |---|---|
-| The massless equation $\tilde\nabla\psi=0$, one field, first order | **Supplied** by the gradient |
-| The chiral pair, and $\Box\psi=m^2\psi$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla^2$ is not scalar |
+| The massless equation $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$, one field, first order | **Supplied** by the gradient |
+| The chiral pair, and $\Box\tilde{Ξ}^{\mathrm{spn}}=m^2\tilde{Ξ}^{\mathrm{spn}}$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla^2$ is not scalar |
 | $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ | **Supplied**; recomputed with residual $3\times10^{-6}$ |
 | The pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$ | **Supplied** by the algebra |
 | The two values as the two eigenspaces of right multiplication by $\vec e_z$, of dimensions $2$ and $2$ | **Supplied**; recomputed |
@@ -334,7 +334,7 @@ so the axial charge transported in a background is twice the index, the minus be
 | Rank four and kernel two on the six bivectors, with $f^2=0$ on the kernel, for null $k$ | **Supplied**, recomputed over five null wave vectors |
 | The anomaly density, proportional to the framework's invariant $I_2$ | **Supplied** through the contraction $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=+8\vec E\cdot\vec B$; the coefficient is standard |
 | The four-index symbol as a trace of the algebra | **Not supplied, and proved absent**: the chirality-weighted trace vanishes for every element |
-| The functional measure $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ and the determinant | **Not supplied**; the fermionic path-integral apparatus, cited |
+| The functional measure $\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}$ and the determinant | **Not supplied**; the fermionic path-integral apparatus, cited |
 | The Fujikawa coefficient, the Seeley–DeWitt expansion, and the index relation | **Transcribed**; standard |
 | The index theorem and the zero-mode count | **Outside**; the general gauge apparatus |
 | The $\theta^{\mathrm{vac}}$ parameter and the vacuum angle | **Outside**; the general gauge apparatus |
@@ -354,7 +354,7 @@ so the axial charge transported in a background is twice the index, the minus be
 
 ## Summary
 
-The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla\psi=0$, the massive equation is the chiral pair $\tilde\nabla\psi_R=m\psi_L$, $\tilde\nabla^{\natural}\psi_L=m\psi_R$ — because $\tilde\nabla^2$ is not scalar while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is — and the chiral rotation is the right multiplication $\psi\mapsto\psi e^{\alpha\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
+The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}=0$, the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R$ — because $\tilde\nabla^2$ is not scalar while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is — and the chiral rotation is the right multiplication $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde{Ξ}^{\mathrm{spn}} e^{\alpha\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
 
 **The one thing the algebra does not give.** The regulated trace that produces the four-index symbol in the standard computation vanishes here identically: $\mathrm{tr}(\ell_h\rho_\omega)=0$ for every element, so all $24$ orders of four distinct units contribute exactly zero. The coefficient is therefore transcribed, $a=-(ϙ^2/32\pi^2)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and the article states it as transcribed.
 
@@ -370,31 +370,31 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra (*Algebra and Element Conventions*) |
-| $\psi$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\psi^{\dagger}$ its Dirac-conjugate bilinear |
+| $\tilde{Ξ}^{\mathrm{spn}}$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\tilde{Ξ}^{\mathrm{spn}\dagger}$ its Dirac-conjugate bilinear |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {t'}^2$ on $\mathbb{M}_-$ |
 | $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
-| $\psi_L,\psi_R$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
+| $\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |
 | $\ell_h,\ \rho_\omega$ | Left multiplication by $h$, right multiplication by the pseudoscalar; $\rho_\omega$ is the measure's insertion, and $\ell_h\rho_\omega$ is the one two-sided shape the article uses |
-| $\mathbb{D}$ | The pair operator, a block matrix on $\mathbb{B}\oplus\mathbb{B}$ with $\mathbb{D}(\psi_L,\psi_R)=(\tilde\nabla\psi_R,\tilde\nabla^{\natural}\psi_L)$ and $\mathbb{D}^2=\Box I$; a matrix, not an element |
+| $\mathbb{D}$ | The pair operator, a block matrix on $\mathbb{B}\oplus\mathbb{B}$ with $\mathbb{D}(\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L)$ and $\mathbb{D}^2=\Box I$; a matrix, not an element |
 | $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$ | The continued regulator operator, whose scalar part is $-\Box_E$ |
 | $a(x)=-\dfrac{ϙ^2}{32\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Regulated trace density, the index density |
 | $A(x)=2a(x)=-\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
 | $\mathrm{Tr}$ | The functional trace over modes |
-| $\mathcal{D}\psi\,\mathcal{D}\psi^{\dagger}$ | Fermion measure of the functional integral |
+| $\mathcal{D}\tilde{Ξ}^{\mathrm{spn}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{spn}\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-2i\int d^4x\,\alpha a)$ | Jacobian of the measure under the rotation |
 | $Z[A]=\det(\mathbb{D}-m)$ | Fermion determinant |
-| $\psi^{\dagger}\chi=\mathrm{Sc}(\psi^{*}\chi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
-| $j_{\mu}=\psi^{\dagger}\vec e_\mu\psi$ | Vector current |
-| $j_{5\mu}=\psi^{\dagger}\omega\vec e_\mu\psi$ | Axial current |
+| $\tilde{Ξ}^{\mathrm{spn}\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{spn}*}\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
+| $j_{\mu}=\tilde{Ξ}^{\mathrm{spn}\dagger}\vec e_\mu\tilde{Ξ}^{\mathrm{spn}}$ | Vector current |
+| $j_{5\mu}=\tilde{Ξ}^{\mathrm{spn}\dagger}\omega\vec e_\mu\tilde{Ξ}^{\mathrm{spn}}$ | Axial current |
 | $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=-2\,\mathrm{ind}(\mathbb{D})$ | Integrated anomaly and index, in the all-low-index orientation |
 | $I_1$, $I_2$ | Biquaternion field invariants, in the instanton article's normalization |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
-| $2m\,\psi^{\dagger}\omega\psi$ | Mass contribution to the axial divergence |
+| $2m\,\tilde{Ξ}^{\mathrm{spn}\dagger}\omega\tilde{Ξ}^{\mathrm{spn}}$ | Mass contribution to the axial divergence |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

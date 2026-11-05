@@ -7,13 +7,13 @@ The no-cloning theorem states that an unknown quantum state cannot be copied: th
 The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be $*$-unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read as the trace pairing,
 
 $$
-\bigl|\langle\psi|\chi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr) \in [0,1],
+\bigl|\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr) \in [0,1],
 $$
 
 whose endpoints are the orthogonal and coincident cases. A cloning transformation must preserve this pairing, because it is an overlap and overlaps are preserved by the $*$-unitary evolution of the algebra; and it must simultaneously replace the pairing by its square, because two independent copies have an overlap that is the product of the two single-copy overlaps. The obstruction is therefore
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)\Bigr)^{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)\Bigr)^{2},
 $$
 
 which forces the pairing to be $0$ or $1$: **cloning is possible exactly for sets of mutually orthogonal states, and for no others.** The two states are then perfectly distinguishable, and copying them is a classical operation.
@@ -29,19 +29,19 @@ The article develops both interpretations, then treats approximate cloning, wher
 A **cloning machine** for a family of states $\{\tilde{Ϛ}_x\}$ is a physical process, described in the framework by a completely positive trace-preserving map
 
 $$
-\Phi : \mathbb{M}_+ \otimes \mathbb{M}_+ \longrightarrow \mathbb{M}_+ \otimes \mathbb{M}_+ ,
+Ξ : \mathbb{M}_+ \otimes \mathbb{M}_+ \longrightarrow \mathbb{M}_+ \otimes \mathbb{M}_+ ,
 \qquad
-\Phi\bigl(\tilde{Ϛ}_x \otimes \tilde{Ϛ}_0\bigr) = \tilde{Ϛ}_x \otimes \tilde{Ϛ}_x
+Ξ\bigl(\tilde{Ϛ}_x \otimes \tilde{Ϛ}_0\bigr) = \tilde{Ϛ}_x \otimes \tilde{Ϛ}_x
 \ \text{ for all } x,
 $$
 
-where $\tilde{Ϛ}_0$ is a fixed blank state. The process is required to be **universal** if it works for every state of the defining module, and **state-independent** in the sense that the same $\Phi$ and the same blank serve every input.
+where $\tilde{Ϛ}_0$ is a fixed blank state. The process is required to be **universal** if it works for every state of the defining module, and **state-independent** in the sense that the same $Ξ$ and the same blank serve every input.
 
-Two features of $\Phi$ are immediate from the framework. It is **affine on the state space**: a convex combination of inputs maps to the corresponding convex combination of outputs, because a channel is linear on the cone and preserves the trace,
+Two features of $Ξ$ are immediate from the framework. It is **affine on the state space**: a convex combination of inputs maps to the corresponding convex combination of outputs, because a channel is linear on the cone and preserves the trace,
 
 $$
-\Phi\bigl((t\tilde{Ϛ}_1+(1-t)\tilde{Ϛ}_2)\otimes\tilde{Ϛ}_0\bigr)
-= t\,\Phi(\tilde{Ϛ}_1\otimes\tilde{Ϛ}_0) + (1-t)\,\Phi(\tilde{Ϛ}_2\otimes\tilde{Ϛ}_0).
+Ξ\bigl((t\tilde{Ϛ}_1+(1-t)\tilde{Ϛ}_2)\otimes\tilde{Ϛ}_0\bigr)
+= t\,Ξ(\tilde{Ϛ}_1\otimes\tilde{Ϛ}_0) + (1-t)\,Ξ(\tilde{Ϛ}_2\otimes\tilde{Ϛ}_0).
 $$
 
 And the target map $\tilde{Ϛ}_x\mapsto\tilde{Ϛ}_x\otimes\tilde{Ϛ}_x$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_x$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
@@ -51,8 +51,8 @@ And the target map $\tilde{Ϛ}_x\mapsto\tilde{Ϛ}_x\otimes\tilde{Ϛ}_x$ is **qua
 The original statement of the theorem concerns a $*$-unitary evolution of a composite. A cloning $*$-unitary on the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$ would satisfy
 
 $$
-\tilde{U}\bigl(|\psi\rangle\otimes|0\rangle\bigr) = |\psi\rangle\otimes|\psi\rangle
-\qquad \text{for every normalized } |\psi\rangle\in S ,
+\tilde{U}\bigl(|\tilde{Ξ}^{\mathrm{spn}}\rangle\otimes|0\rangle\bigr) = |\tilde{Ξ}^{\mathrm{spn}}\rangle\otimes|\tilde{Ξ}^{\mathrm{spn}}\rangle
+\qquad \text{for every normalized } |\tilde{Ξ}^{\mathrm{spn}}\rangle\in S ,
 $$
 
 with $\tilde Q\tilde Q^{*} = \tilde Q^{*}\tilde Q = e_t\otimes e_t$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde Q$ clones every input. This is the form in which the obstruction is transparent.
@@ -61,41 +61,41 @@ with $\tilde Q\tilde Q^{*} = \tilde Q^{*}\tilde Q = e_t\otimes e_t$. The blank $
 
 ### Overlaps are preserved
 
-$*$-Unitary evolution preserves inner products. For two inputs $|\psi\rangle,|\chi^{\mathrm{alt}}\rangle\in S$ and the blank $|0\rangle$,
+$*$-Unitary evolution preserves inner products. For two inputs $|\tilde{Ξ}^{\mathrm{spn}}\rangle,|\xi^{\mathrm{alt}}\rangle\in S$ and the blank $|0\rangle$,
 
 $$
-\bigl\langle \psi\otimes 0 \,\big|\, \chi^{\mathrm{alt}}\otimes 0 \bigr\rangle
-= \langle\psi|\chi^{\mathrm{alt}}\rangle\,\langle 0|0\rangle
-= \langle\psi|\chi^{\mathrm{alt}}\rangle ,
+\bigl\langle \tilde{Ξ}^{\mathrm{spn}}\otimes 0 \,\big|\, \xi^{\mathrm{alt}}\otimes 0 \bigr\rangle
+= \langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\,\langle 0|0\rangle
+= \langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle ,
 $$
 
-and since $\tilde Q$ is $*$-unitary this equals $\langle \psi\otimes\psi\,|\,\chi^{\mathrm{alt}}\otimes\chi^{\mathrm{alt}}\rangle$, the overlap of the two outputs.
+and since $\tilde Q$ is $*$-unitary this equals $\langle \tilde{Ξ}^{\mathrm{spn}}\otimes\tilde{Ξ}^{\mathrm{spn}}\,|\,\xi^{\mathrm{alt}}\otimes\xi^{\mathrm{alt}}\rangle$, the overlap of the two outputs.
 
 ### Overlaps are squared
 
 Two independent copies have an overlap that factorizes:
 
 $$
-\bigl\langle \psi\otimes\psi \,\big|\, \chi^{\mathrm{alt}}\otimes\chi^{\mathrm{alt}} \bigr\rangle
-= \langle\psi|\chi^{\mathrm{alt}}\rangle\,\langle\psi|\chi^{\mathrm{alt}}\rangle = \langle\psi|\chi^{\mathrm{alt}}\rangle^2 .
+\bigl\langle \tilde{Ξ}^{\mathrm{spn}}\otimes\tilde{Ξ}^{\mathrm{spn}} \,\big|\, \xi^{\mathrm{alt}}\otimes\xi^{\mathrm{alt}} \bigr\rangle
+= \langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\,\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle = \langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle^2 .
 $$
 
-Equating the two evaluations gives $\langle\psi|\chi^{\mathrm{alt}}\rangle=\langle\psi|\chi^{\mathrm{alt}}\rangle^2$, so $\langle\psi|\chi^{\mathrm{alt}}\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
+Equating the two evaluations gives $\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle=\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle^2$, so $\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
 
 $$
-\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)
-= \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)\Bigr)^{2}
+\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)
+= \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)\Bigr)^{2}
 \qquad\Longrightarrow\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)\in\{0,1\}\;}.
+\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)\in\{0,1\}\;}.
 $$
 
-The pairing is $1$ only for $\psi=\chi^{\mathrm{alt}}$ up to phase, and $0$ only for orthogonal states.
+The pairing is $1$ only for $\tilde{Ξ}^{\mathrm{spn}}=\xi^{\mathrm{alt}}$ up to phase, and $0$ only for orthogonal states.
 
 ### The obstruction
 
 The conclusion is the no-cloning theorem in the framework's terms:
 
-> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no $*$-unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
+> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no $*$-unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\tilde{Ξ}^{\mathrm{spn}}\rangle\otimes|0\rangle$ to $|\tilde{Ξ}^{\mathrm{spn}}\rangle\otimes|\tilde{Ξ}^{\mathrm{spn}}\rangle$ for both.
 
 The normalised Hermitian form, read through the trace, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
 
@@ -104,13 +104,13 @@ The normalised Hermitian form, read through the trace, is the algebra's measure 
 The smallest illustration uses the computational ray and the diagonal ray,
 
 $$
-|\psi\rangle = |0\rangle, \qquad |\chi^{\mathrm{alt}}\rangle = \tfrac{1}{\sqrt2}\bigl(|0\rangle + |1\rangle\bigr),
+|\tilde{Ξ}^{\mathrm{spn}}\rangle = |0\rangle, \qquad |\xi^{\mathrm{alt}}\rangle = \tfrac{1}{\sqrt2}\bigl(|0\rangle + |1\rangle\bigr),
 \qquad
-\langle\psi|\chi^{\mathrm{alt}}\rangle = \tfrac{1}{\sqrt2}, \qquad
-\bigl|\langle\psi|\chi^{\mathrm{alt}}\rangle\bigr|^2 = \tfrac12 .
+\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle = \tfrac{1}{\sqrt2}, \qquad
+\bigl|\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\bigr|^2 = \tfrac12 .
 $$
 
-The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning $*$-unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\chi^{\mathrm{alt}}\rangle|0\rangle\mapsto|\chi^{\mathrm{alt}}\rangle|\chi^{\mathrm{alt}}\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no $*$-unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
+The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning $*$-unitary would have to send both $|\tilde{Ξ}^{\mathrm{spn}}\rangle|0\rangle\mapsto|\tilde{Ξ}^{\mathrm{spn}}\rangle|\tilde{Ξ}^{\mathrm{spn}}\rangle$ and $|\xi^{\mathrm{alt}}\rangle|0\rangle\mapsto|\xi^{\mathrm{alt}}\rangle|\xi^{\mathrm{alt}}\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no $*$-unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
 
 ### Cloning versus copying
 
@@ -120,10 +120,10 @@ For an orthogonal family — for instance the two states of any idempotent basis
 
 The $*$-unitary argument applies to pure states and to a single input. There is a second form of the obstruction, which applies directly to channels and to mixed states, and which is the reason the theorem survives when the machine is allowed to be noisy.
 
-A channel is affine on the state space. If a channel $\Phi$ cloned all pure states,
+A channel is affine on the state space. If a channel $Ξ$ cloned all pure states,
 
 $$
-\Phi\bigl(\tilde{Ϛ}\otimes\tilde{Ϛ}_0\bigr) = \tilde{Ϛ}\otimes\tilde{Ϛ}
+Ξ\bigl(\tilde{Ϛ}\otimes\tilde{Ϛ}_0\bigr) = \tilde{Ϛ}\otimes\tilde{Ϛ}
 \qquad \text{for all pure } \tilde{Ϛ},
 $$
 
@@ -143,10 +143,10 @@ whenever the cross terms do not cancel, i.e. whenever the states are not orthogo
 The obstruction is absolute for perfect cloning, so the useful question is how well one can do. For the qubit the optimal universal cloner is known: it takes one copy of an arbitrary state and produces two, each with fidelity
 
 $$
-\boxed{\;F = \langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
+\boxed{\;F = \langle\tilde{Ξ}^{\mathrm{spn}}|\tilde{Ϛ}_{\text{out},1}|\tilde{Ξ}^{\mathrm{spn}}\rangle = \frac{5}{6} = 0.8333\ldots\;} ,
 $$
 
-uniformly in $|\psi\rangle$, and no cloner does better. This is the **Bužek–Hillery bound**, and the machine that attains it is the Bužek–Hillery cloner.
+uniformly in $|\tilde{Ξ}^{\mathrm{spn}}\rangle$, and no cloner does better. This is the **Bužek–Hillery bound**, and the machine that attains it is the Bužek–Hillery cloner.
 
 ### The cloner in the framework's notation
 
@@ -163,13 +163,13 @@ $$
 \end{aligned}
 $$
 
-The two images are orthonormal, so $\tilde Q$ extends to a $*$-unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
+The two images are orthonormal, so $\tilde Q$ extends to a $*$-unitary on the three-qubit space. For a general input $|\tilde{Ξ}^{\mathrm{spn}}\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
 
 $$
-|\psi(\theta,\theta^{\mathrm{azm}})\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\,|1\rangle ,
+|\tilde{Ξ}^{\mathrm{spn}}(\theta,\theta^{\mathrm{azm}})\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$
 
-gives $\langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = 5/6$ for every $\theta$ and $\theta^{\mathrm{azm}}$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.
+gives $\langle\tilde{Ξ}^{\mathrm{spn}}|\tilde{Ϛ}_{\text{out},1}|\tilde{Ξ}^{\mathrm{spn}}\rangle = 5/6$ for every $\theta$ and $\theta^{\mathrm{azm}}$, to machine precision. This was verified numerically on a sample of twenty superpositions; the fidelity was constant at $0.833333$.
 
 ### Comparison with measurement and preparation
 
@@ -177,10 +177,10 @@ A classical strategy is to measure the input and prepare two copies of the best 
 
 ### The fidelity as the normalised Hermitian form, read through the trace
 
-The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\psi)$ and an output state $\tilde{Ϛ}_{\text{out}}$,
+The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})$ and an output state $\tilde{Ϛ}_{\text{out}}$,
 
 $$
-F = \langle\psi|\tilde{Ϛ}_{\text{out}}|\psi\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde{Ϛ}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}\bigr),
+F = \langle\tilde{Ξ}^{\mathrm{spn}}|\tilde{Ϛ}_{\text{out}}|\tilde{Ξ}^{\mathrm{spn}}\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\,\tilde{Ϛ}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde{Ϛ}_{\text{out}}\bigr),
 $$
 
 the same pairing that gives the Born rule. The no-cloning obstruction and its approximate version are therefore both statements about this pairing: perfect cloning would require the pairing of input and clone to attain its maximum $1$ for every input, while the optimal cloner attains $5/6$ uniformly.
@@ -193,7 +193,7 @@ There is a physical argument for the obstruction that complements the algebraic 
 
 The obstruction has companions, all of which are statements about the affine structure of the state space and the plain form.
 
-**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting $*$-unitary would satisfy $\tilde Q(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\chi^{\mathrm{alt}}\rangle$ while the overlap of two inputs is $\langle\psi|\chi^{\mathrm{alt}}\rangle^2$.
+**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting $*$-unitary would satisfy $\tilde Q(|\tilde{Ξ}^{\mathrm{spn}}\rangle|\tilde{Ξ}^{\mathrm{spn}}\rangle)=|\tilde{Ξ}^{\mathrm{spn}}\rangle|0\rangle$ for all $|\tilde{Ξ}^{\mathrm{spn}}\rangle$, and the overlap of two outputs is $\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle$ while the overlap of two inputs is $\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle^2$.
 
 **No-broadcasting.** A mixed state cannot be broadcast: there is no process that takes one copy of a state to two copies for a set of states that do not commute. This is the mixed-state generalization, and it shows that the obstruction is not about purity but about the affine structure of the state space; the framework's state space is the cone slice, and the argument is the same affinity argument as above.
 
@@ -206,7 +206,7 @@ In the framework's terms, all three are the statement that the normalised Hermit
 **What it does.**
 
 - It expresses the distinguishability of two rays as the normalised Hermitian form of their idempotents, read as the trace pairing, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
-- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_{\chi^{\mathrm{alt}}}^{*}) = (\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_{\chi^{\mathrm{alt}}}^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
+- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_{\mathrm{spn}}\tilde\Pi_{\xi^{\mathrm{alt}}}^{*}) = (\mathrm{Tr}(\tilde\Pi_{\mathrm{spn}}\tilde\Pi_{\xi^{\mathrm{alt}}}^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
 - It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{M}_+$, while the cloning target is quadratic.
 - It expresses the fidelity of approximate cloning as the normalised Hermitian form, read through the trace, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
 
@@ -234,20 +234,20 @@ In the framework's terms, all three are the statement that the normalised Hermit
 The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,
 
 $$
-\bigl|\langle\psi|\chi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr) \in [0,1],
+\bigl|\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr) \in [0,1],
 $$
 
 and a cloning $*$-unitary would have to preserve this pairing, because it is an overlap, while the pairing of two independent copies is its square. Equating the two requires
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)\Bigr)^{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)\Bigr)^{2},
 \qquad\text{hence}\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})\bigr)\in\{0,1\}.
+\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr)\in\{0,1\}.
 $$
 
 Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{M}_+$, and the mismatch is the obstruction.
 
-Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
+Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde{Ϛ}_{\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
 ## Summary of Notation
 
@@ -256,16 +256,16 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra (input and blank) |
 | $\mathbb{M}_+$ | Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
-| $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
-| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})^{*}) = |\langle\psi|\chi^{\mathrm{alt}}\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
+| $\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})$ | Rank-one idempotent of a pure state |
+| $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})^{*}) = |\langle\tilde{Ξ}^{\mathrm{spn}}|\xi^{\mathrm{alt}}\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
 | $\tilde Q$ | Cloning $*$-unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
-| $\Phi$ | Cloning channel, completely positive trace preserving |
-| $\Phi(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
-| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})^{*}) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\chi^{\mathrm{alt}})^{*}))^2$ | Algebraic obstruction |
-| $F = \mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}^{*})$ | Cloning fidelity |
+| $Ξ$ | Cloning channel, completely positive trace preserving |
+| $Ξ(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
+| $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})^{*}) = (\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde\Pi(\xi^{\mathrm{alt}})^{*}))^2$ | Algebraic obstruction |
+| $F = \mathrm{Tr}(\tilde\Pi(\tilde{Ξ}^{\mathrm{spn}})\tilde{Ϛ}_{\text{out}}^{*})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
-| $|\psi(\theta,\theta^{\mathrm{azm}})\rangle$ | Test superposition family |
+| $|\tilde{Ξ}^{\mathrm{spn}}(\theta,\theta^{\mathrm{azm}})\rangle$ | Test superposition family |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

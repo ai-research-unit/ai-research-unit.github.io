@@ -14,7 +14,7 @@ $$
 
 It is the only one of the three pairings whose first factor is central, and the only one whose first factor is a scalar. That single fact is what makes it the natural home for an invariant: a central scalar is the one thing that a change of frame cannot touch.
 
-The thesis is one sentence. **The Hamilton modulus $\Rho$ is the invariant of the element — the mass when the element is a four-momentum and the complex amplitude otherwise — and the second factor is the frame, a Lorentz transformation whose angle $\Theta$ is real for a rotation, imaginary for a boost and complex in general.** Two consequences follow and are the substance of the article. The mass is not the energy: the energy is a component of the four-momentum in a frame, and the modulus is the invariant left when the frame is divided out. And the angle is not a single number with a single convention: the spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the modulus may itself be imaginary, so the pair $(\Theta,\vec U)$ is the invariant object and $\Theta$ alone is not.
+The thesis is one sentence. **The Hamilton modulus $\Rho$ is the invariant of the element — the mass when the element is a four-momentum and the complex amplitude otherwise — and the second factor is the frame, a Lorentz transformation whose angle $\Theta$ is real for a rotation, imaginary for a boost and complex in general.** Two consequences follow and are the substance of the article. The mass is not the energy: the energy is a component of the four-momentum in a frame, and the modulus is the invariant left when the frame is divided out. And the angle is not a single number with a single convention: the spinor word stores $\theta^{\mathrm{rpd}}/2$, the four-vector factor stores $\theta^{\mathrm{rpd}}$, and the modulus may itself be imaginary, so the pair $(\Theta,\vec U)$ is the invariant object and $\Theta$ alone is not.
 
 The article is a synthesis. The pairing, its theorem and its domain are owned by *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*; the eigenvalue decomposition and the mass shell by *The Biquaternion Eigenvalue Decomposition* and *The Spectral Reading of a Four-Vector*; the branch of the modulus by *The Polar Decomposition of an N-Regular Biquaternion*. What is added here is the physical reading of the first factor, the anatomy of the complex angle, and the boundaries of the mass identification.
 
@@ -27,8 +27,8 @@ The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word a
 | the Hamilton pairing, its theorem and its domain | **The Hamilton Root Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
 | the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
 | the four factors and the branch of the modulus | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
-| the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$ |
-| the four objects called a boost and the factor of two | [*Norm and Pairing Conventions*](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost* | the $\psi/2$ versus $\psi$ warning |
+| the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\theta^{\mathrm{rpd}}$, $\vec U=\hat p$ |
+| the four objects called a boost and the factor of two | [*Norm and Pairing Conventions*](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost* | the $\theta^{\mathrm{rpd}}/2$ versus $\theta^{\mathrm{rpd}}$ warning |
 | multiplicativity of the norm | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Two Factors* | the modulus of a product |
 | the generalized pairing on the null cone | [*The Polar Decomposition of an N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Vanishing of the Modulus* | the massless limit |
 
@@ -80,7 +80,7 @@ The phase of $\Rho$ carries the causal character when the norm is real.
 For a four-momentum the norm is $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ and the modulus is $\Rho=i mc$ on the principal branch. The two eigenvalues are
 
 $$
-\boxed{\;\lambda_\pm=i mc\,e^{\pm\psi}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;},
+\boxed{\;\lambda_\pm=i mc\,e^{\pm\theta^{\mathrm{rpd}}}=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;},
 $$
 
 the two light-cone combinations, and their product is $-m^{2}c^{2}$. The mass shell is the level set of the modulus, not of the trace.
@@ -108,24 +108,24 @@ The pair $(\Theta,\vec U)$ is the invariant data of the second factor; $\Theta$ 
 | $\Theta$ | second factor | process | example |
 |---|---|---|---|
 | real | a rotation | compact rotation | $e^{\theta\vec u/2}$ |
-| imaginary | a boost | non-compact boost | $e^{-i\psi\hat p}$ |
+| imaginary | a boost | non-compact boost | $e^{-i\theta^{\mathrm{rpd}}\hat p}$ |
 | complex | a rotation composed with a boost | general Lorentz element | aligned or skew word |
 
-The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enters $\sin\Theta$, and a real $B$ with an imaginary $\Rho$ gives an imaginary angle. The four-momentum is the standard case: $B=\lvert\vec p\rvert$ is real, $\Rho=i mc$ is imaginary, and $\Theta=-i\psi$ is imaginary, which is the boost.
+The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enters $\sin\Theta$, and a real $B$ with an imaginary $\Rho$ gives an imaginary angle. The four-momentum is the standard case: $B=\lvert\vec p\rvert$ is real, $\Rho=i mc$ is imaginary, and $\Theta=-i\theta^{\mathrm{rpd}}$ is imaginary, which is the boost.
 
 ### The Factor of Two
 
 The angle depends on which factor of the word the element carries, and the factor of two is the most common error in the corpus.
 
-- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, whose exponent is $\psi/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\psi}{2}$.
-- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\psi\hat p)$, whose exponent is $-\psi$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\psi$, not $-i\psi/2$.
-- The **word parameter** of a four-vector element is $\psi_w=2\psi$, because the word stores the boost twice.
+- The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$, whose exponent is $\theta^{\mathrm{rpd}}/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\theta^{\mathrm{rpd}}}{2}$.
+- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\theta^{\mathrm{rpd}}\hat p)$, whose exponent is $-\theta^{\mathrm{rpd}}$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\theta^{\mathrm{rpd}}$, not $-i\theta^{\mathrm{rpd}}/2$.
+- The **word parameter** of a four-vector element is $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$, because the word stores the boost twice.
 
-Three statements follow, and each is a check. Do not write $\Theta=i\psi$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\psi/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent of the spinor word with the exponent of the four-vector word; they differ by a factor of two and a sign.
+Three statements follow, and each is a check. Do not write $\Theta=i\theta^{\mathrm{rpd}}$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\theta^{\mathrm{rpd}}/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent of the spinor word with the exponent of the four-vector word; they differ by a factor of two and a sign.
 
 ### The Angle Is Not the Rapidity
 
-The imaginary part of $\Theta$ has magnitude $\psi$, the kinematic rapidity, when the element is a four-momentum. For a general element the imaginary part is not a rapidity: it is the boost part of a complex angle whose real part is a rotation, and on skew axes the two parts do not align on a single axis. The statement "the imaginary part is the rapidity" is a statement about the four-momentum chart, not about the algebra.
+The imaginary part of $\Theta$ has magnitude $\theta^{\mathrm{rpd}}$, the kinematic rapidity, when the element is a four-momentum. For a general element the imaginary part is not a rapidity: it is the boost part of a complex angle whose real part is a rotation, and on skew axes the two parts do not align on a single axis. The statement "the imaginary part is the rapidity" is a statement about the four-momentum chart, not about the algebra.
 
 The reality of the angle is also not the reality of the element. A rotation has a real angle and a real quaternion element; a boost has an imaginary angle and an imaginary vector part. The pair $(\Rho,\Theta)$ is the coordinate, and neither member alone classifies the element.
 
@@ -133,18 +133,18 @@ The reality of the angle is also not the reality of the element. A rotation has 
 
 The second factor is a unit-norm element, and it is the frame. Its action depends on the object it acts on, and the corpus separates the two laws.
 
-- On a **spinor**, the unit factor acts by left multiplication, $\chi\mapsto\tilde U\chi$. This is the linear action and it carries the double cover and the sign of the spinor.
+- On a **spinor**, the unit factor acts by left multiplication, $\xi\mapsto\tilde U\xi$. This is the linear action and it carries the double cover and the sign of the spinor.
 - On a **four-vector**, it acts by congruence, $X\mapsto\tilde U X\tilde U^{*}$. This is the bilinear action, and the four-vector element carries the inverse square of the spinor factor.
 
-For a four-momentum the frame factor is $\mathcal B=e^{-i\psi\hat p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\psi$ about $-\hat p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
+For a four-momentum the frame factor is $\mathcal B=e^{-i\theta^{\mathrm{rpd}}\hat p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\theta^{\mathrm{rpd}}$ about $-\hat p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
 
 The rapidity is fixed by the ratio of the two invariants,
 
 $$
-\cosh 2\psi=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
+\cosh 2\theta^{\mathrm{rpd}}=\frac{\langle\tilde Q,\tilde Q\rangle_{*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
 $$
 
-for a four-momentum, where the numerator is the Hermitian square. The ratio is $\cosh\psi_w$, not $\cosh\psi$: the factor of two is already present in the Hermitian norm. This is the frame datum that the modulus does not carry. The modulus gives the mass; the ratio gives the rapidity; the phase of the four complex coordinates gives the two axis angles. The count is the same as in the hub: two invariants fix three numbers, and the directions need the phases.
+for a four-momentum, where the numerator is the Hermitian square. The ratio is $\cosh\theta^{\mathrm{rpd}}_w$, not $\cosh\theta^{\mathrm{rpd}}$: the factor of two is already present in the Hermitian norm. This is the frame datum that the modulus does not carry. The modulus gives the mass; the ratio gives the rapidity; the phase of the four complex coordinates gives the two axis angles. The count is the same as in the hub: two invariants fix three numbers, and the directions need the phases.
 
 ## The Domain and the Witnesses
 
@@ -159,7 +159,7 @@ The element is invertible, the word exists, the quaternion factor exists, and th
 - **The scalar case.** $\vec Q=0$ is the rest frame of a four-momentum. The axis is undefined because there is no boost to point it along; the angle is $0$ or $\pi$ and carries only the sign. The rest frame is the boundary of the chart, not a physical singularity: the element is regular and its mass is $\Rho$.
 - **The nilpotent case.** $\vec Q\neq0$ with $\vec Q^{2}=0$ is a lightlike vector part. There is no frame in which the vector part is a pure scale, and the axis cannot be normalised. The element may still be invertible, as the witness shows.
 
-The two cases are different. The scalar four-momentum is the $\psi\to0$ limit of a boost; the nilpotent case is a lightlike vector part, the boundary of the boost chart, and the two have different stabilisers. The algebra distinguishes them by $\vec Q=0$ and $\vec Q^{2}=0$ with $\vec Q\neq0$.
+The two cases are different. The scalar four-momentum is the $\theta^{\mathrm{rpd}}\to0$ limit of a boost; the nilpotent case is a lightlike vector part, the boundary of the boost chart, and the two have different stabilisers. The algebra distinguishes them by $\vec Q=0$ and $\vec Q^{2}=0$ with $\vec Q\neq0$.
 
 The third boundary is the null cone, $\langle\tilde Q\rangle_{\natural}=0$, where the modulus vanishes and the pairing does not exist. For a four-momentum this is the massless limit: the element is lightlike, the mass shell collapses to the cone, and the word has no rest frame. The generalized Cartan pairing covers the limit with a rank-one amplitude and a partial isometry, and the massless article owns the boundary value.
 
@@ -168,10 +168,10 @@ The third boundary is the null cone, $\langle\tilde Q\rangle_{\natural}=0$, wher
 The modulus is the invariant and the energy is not. For a four-momentum,
 
 $$
-E=mc^{2}\cosh\psi,\qquad \lvert\vec p\rvert=mc\sinh\psi,\qquad \langle\tilde P\rangle_{\natural}=-m^{2}c^{2}.
+E=mc^{2}\cosh\theta^{\mathrm{rpd}},\qquad \lvert\vec p\rvert=mc\sinh\theta^{\mathrm{rpd}},\qquad \langle\tilde P\rangle_{\natural}=-m^{2}c^{2}.
 $$
 
-The energy depends on the frame through $\psi$; the modulus does not. The trace $2Q_t=2iE/c$ is the frame-dependent sum of the eigenvalues; the norm is their frame-independent product. A change of frame moves $\psi$ and hence $E$, and leaves $\Rho$ fixed. This is the algebraic content of "mass is invariant, energy is a component".
+The energy depends on the frame through $\theta^{\mathrm{rpd}}$; the modulus does not. The trace $2Q_t=2iE/c$ is the frame-dependent sum of the eigenvalues; the norm is their frame-independent product. A change of frame moves $\theta^{\mathrm{rpd}}$ and hence $E$, and leaves $\Rho$ fixed. This is the algebraic content of "mass is invariant, energy is a component".
 
 The modulus is **multiplicative** under composition. For any two elements,
 
@@ -197,7 +197,7 @@ The Hamilton pairing is the orbit picture in one line: **a particle is a rest va
 |---|---|---|
 | what is the invariant? | $\Rho$ | the mass of a four-momentum, the amplitude otherwise |
 | what is the frame? | $\vec U$, $\Theta$ | the Lorentz transformation that carries the rest value to the element |
-| what is the rapidity? | $\lvert\operatorname{Im}\Theta\rvert$ on the four-momentum chart | the boost parameter $\psi$ |
+| what is the rapidity? | $\lvert\operatorname{Im}\Theta\rvert$ on the four-momentum chart | the boost parameter $\theta^{\mathrm{rpd}}$ |
 | what is the spin? | the rotation part of $\Theta$ | the compact angle of the frame |
 
 The complex angle is the natural home for analytic continuation. A rotation continued to an imaginary angle is a boost; the single formula $\cos\Theta+\vec U\sin\Theta$ covers both, with the trigonometric and hyperbolic cases as the real and imaginary sections. This is not a new dynamics. It is the statement that the two kinds of Lorentz transformation are two sections of one complexified family, and that the algebra does not need two formulas.
@@ -219,10 +219,10 @@ The reading that changes the theory most is the identification of the modulus wi
 - The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 - The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.
 - The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.
-- For a four-momentum, $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$, and the eigenvalues are $i mc\,e^{\pm\psi}$.
-- The energy is $mc^{2}\cosh\psi$ and depends on the frame; the modulus is the invariant and does not.
+- For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta^{\mathrm{rpd}}$, $\vec U=\hat p$, and the eigenvalues are $i mc\,e^{\pm\theta^{\mathrm{rpd}}}$.
+- The energy is $mc^{2}\cosh\theta^{\mathrm{rpd}}$ and depends on the frame; the modulus is the invariant and does not.
 - The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.
-- The spinor word stores $\psi/2$, the four-vector factor stores $\psi$, and the four-momentum angle is $-i\psi$.
+- The spinor word stores $\theta^{\mathrm{rpd}}/2$, the four-vector factor stores $\theta^{\mathrm{rpd}}$, and the four-momentum angle is $-i\theta^{\mathrm{rpd}}$.
 - The pairing needs $\langle\tilde Q\rangle_{\natural}\neq0$ and $B\neq0$; the scalar rest frame and the nilpotent lightlike case are different boundaries.
 - The modulus is multiplicative under composition; mass is not additive under the addition of four-momenta; the mass of a sum carries a cross term.
 
@@ -237,9 +237,9 @@ The reading that changes the theory most is the identification of the modulus wi
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part square root (not the boost factor $\mathcal B$) |
 | $\Theta$ | the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, $\lambda_\pm=\Rho e^{\pm i\Theta}$ |
-| $\psi$ | the kinematic rapidity of a four-momentum |
-| $\tilde U_{\mathrm b}(\psi)$ | the frame rotor, exponent $\psi/2$ |
-| $\mathcal B=\tilde U_{\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\psi$ |
+| $\theta^{\mathrm{rpd}}$ | the kinematic rapidity of a four-momentum |
+| $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ | the frame rotor, exponent $\theta^{\mathrm{rpd}}/2$ |
+| $\mathcal B=\tilde U_{\mathrm b}^{-2}$ | the four-vector boost factor, exponent $-\theta^{\mathrm{rpd}}$ |
 | $\tilde P=i(E/c)e_t+\vec p$ | the four-momentum, $\Rho=i mc$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |

@@ -215,10 +215,10 @@ $$
 where $\vec P$ and $\vec M$ are the nonlinear polarization and magnetization. For a Kerr medium, the leading nonlinearity is
 
 $$
-\vec P = \epsilon_0(\chi^{(1)}\vec E + \chi^{(3)}|\vec E|^2\vec E),
+\vec P = \epsilon_0(\xi^{(1)}\vec E + \xi^{(3)}|\vec E|^2\vec E),
 $$
 
-where $\chi^{(1)}$ is the linear susceptibility and $\chi^{(3)}$ is the third-order nonlinear susceptibility.
+where $\xi^{(1)}$ is the linear susceptibility and $\xi^{(3)}$ is the third-order nonlinear susceptibility.
 
 The effective refractive index becomes
 
@@ -236,10 +236,10 @@ $$
 \partial/\partial t' \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
 $$
 
-where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\chi^{\mathrm{scl}}$ satisfying $\partial/\partial t'\chi^{\mathrm{scl}} + c(\chi^{\mathrm{scl}})\partial/\partial Q_x\chi^{\mathrm{scl}} = 0$, the equation can be written in conservation form
+where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\xi^{\mathrm{scl}}$ satisfying $\partial/\partial t'\xi^{\mathrm{scl}} + c(\xi^{\mathrm{scl}})\partial/\partial Q_x\xi^{\mathrm{scl}} = 0$, the equation can be written in conservation form
 
 $$
-\partial/\partial t'\chi^{\mathrm{scl}} + \partial/\partial Q_x f(\chi^{\mathrm{scl}}) = 0, \qquad \frac{df}{d\chi^{\mathrm{scl}}}(\chi^{\mathrm{scl}}) = c(\chi^{\mathrm{scl}}),
+\partial/\partial t'\xi^{\mathrm{scl}} + \partial/\partial Q_x f(\xi^{\mathrm{scl}}) = 0, \qquad \frac{df}{d\xi^{\mathrm{scl}}}(\xi^{\mathrm{scl}}) = c(\xi^{\mathrm{scl}}),
 $$
 
 where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.

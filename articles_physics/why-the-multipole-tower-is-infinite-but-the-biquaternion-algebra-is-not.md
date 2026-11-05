@@ -82,10 +82,10 @@ $$
 The weight spectrum confirms it, and it also shows why only integral $l$ can occur. The action is rotor conjugation, and $-\tilde{U}$ gives the same conjugation as $\tilde{U}$, so this action factors through the rotation group $SO(3)$ and cannot see the double cover: every irreducible representation it can contain has integral angular momentum. (The half-integral representations are not excluded from the algebra, but they cannot appear from this action; they appear from the *left multiplication* discussed in the next subsection.) For a rotation about a fixed axis, the centre is fixed, the axis element is fixed, and the two combinations transverse to the axis are eigenvectors with phases $\exp(\mp i\theta)$; the weights are $0$, $0$, $+1$, $-1$, and there is no weight $\pm2$ state that a $D^{(2)}$ would require. Equivalently, the character of the conjugation action equals
 
 $$
-2 + 2\cos\theta = \chi_0(\theta) + \chi_1(\theta),
+2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta),
 $$
 
-the sum of the spin-$0$ and spin-$1$ characters, with the spin-$2$ character $\chi_2 = 1+2\cos\theta+2\cos2\theta$ absent. This is the role in which the algebra is the **value space** of the multipole problem, and the role in which it is capped at $l = 1$.
+the sum of the spin-$0$ and spin-$1$ characters, with the spin-$2$ character $\xi_2 = 1+2\cos\theta+2\cos2\theta$ absent. This is the role in which the algebra is the **value space** of the multipole problem, and the role in which it is capped at $l = 1$.
 
 ### As an Algebra: Simple, with the Spinor Module
 
@@ -140,7 +140,7 @@ $$
 \vec\nabla\,\vec\nabla = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu = -\Delta\,e_t ,
 $$
 
-because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial Q_\mu\partial Q_\nu$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial^2/\partial Q_i\partial Q_j\Phi$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{\mu\nu}\vec e_\mu \vec e_\nu\,H_{\mu\nu} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.
+because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial Q_\mu\partial Q_\nu$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial^2/\partial Q_i\partial Q_jΞ$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{\mu\nu}\vec e_\mu \vec e_\nu\,H_{\mu\nu} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.
 
 The two facts together — the algebra's product and its gradient — say that the finite object can iterate a vector operation arbitrarily many times and still produce only $D^{(0)}\oplus D^{(1)}$ content. The multipole order cannot be raised by multiplication or by differentiation inside the algebra.
 
@@ -253,7 +253,7 @@ In every case the pattern is the same: the *generators* and the *values* are fin
 
 The multipole tower is infinite and the biquaternion algebra is finite, and there is no contradiction. The tower is the decomposition of the infinite-dimensional space of angular functions, $L^2(S^2) = \bigoplus_{l\geq0} D^{(l)}$, and it is a property of the **field**, a function of position. The algebra is the finite-dimensional **value space**, of complex dimension four, isomorphic to $M_2(\mathbb{C})$, and it is a property of each individual value of the field.
 
-As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_t$, so the composition of two derivatives also keeps only the trace.
+As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \xi_0+\xi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_t$, so the composition of two derivatives also keeps only the trace.
 
 The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_{lm}$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
 
@@ -279,7 +279,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $U(\mathrm{SU}(2))$ | Universal enveloping algebra (infinite-dimensional) |
 | $S = \mathbb{B}\tilde\Pi$ | Peirce carrier: the two-dimensional spinor module, a minimal left ideal here; $\tilde\Pi$ a nonzero idempotent |
 | $\mathcal{Q}_{lm}$ | Multipole moment (a functional of the source) |
-| $\chi_l(\theta)$ | Character of $D^{(l)}$; $\chi_0+\chi_1 = 2+2\cos\theta$ |
+| $\xi_l(\theta)$ | Character of $D^{(l)}$; $\xi_0+\xi_1 = 2+2\cos\theta$ |
 
 ## Further Reading
 

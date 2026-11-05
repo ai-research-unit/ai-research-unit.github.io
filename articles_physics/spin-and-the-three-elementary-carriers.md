@@ -132,7 +132,7 @@ Three module-theoretic facts carry the reading.
 
 - **The module is simple and unique.** $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and finite-dimensional, so its modules are completely reducible and there is, up to isomorphism, exactly one simple module. By Schur's lemma $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$.
 - **The algebra is the endomorphism algebra.** $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, and the left regular module splits as $\mathbb{B}\cong S\oplus S$. The algebra is the algebra of all linear maps of the carrier, and the regular module is two copies of it.
-- **The Lorentz action is the left action.** A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\psi\mapsto\tilde U\psi$, and the action is the defining representation of $SL(2,\mathbb{C})$.
+- **The Lorentz action is the left action.** A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde U\tilde{Ξ}^{\mathrm{spn}}$, and the action is the defining representation of $SL(2,\mathbb{C})$.
 
 The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{M}_-$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
 
@@ -153,15 +153,15 @@ $$
 =\tfrac12 I_2\;}.
 $$
 
-The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\psi,\chi^{\mathrm{alt}})=\tfrac12\psi^{\dagger}\chi^{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
+The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ}^{\mathrm{spn}},\xi^{\mathrm{alt}})=\tfrac12\tilde{Ξ}^{\mathrm{spn}\dagger}\xi^{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
 
 $$
 \operatorname{Tr}(\tilde\Pi\tilde H^{*})=2\operatorname{Sc}(\tilde\Pi\tilde H),
 $$
 
-which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{M}_+$. The normalisation is a condition on the Hilbert structure alone: $\langle\psi,\psi\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
+which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{M}_+$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}^{\mathrm{spn}},\tilde{Ξ}^{\mathrm{spn}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
 
-The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\psi$ and $e^{i\alpha}\psi$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
+The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}^{\mathrm{spn}}$ and $e^{i\alpha}\tilde{Ξ}^{\mathrm{spn}}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
 
 The sharpest way to see that this is a second structure and not a second view is the behaviour of the **algebra's own form** on the same carrier. The symmetric bilinear form
 
@@ -359,7 +359,7 @@ The two structures separate the two physical data of a spinor.
 - **The spin is read on the module.** The double cover acts faithfully on the module, $-e_t$ acts as $-\mathrm{id}$, and that is where spin-$\tfrac12$ lives.
 - **The ray is a Hilbert datum.** The form is blind to the sign and to the phase, so the state is a ray and not a vector.
 - **The vacuum is a module datum.** The choice of idempotent $\tilde\Pi_+$ selects the module, and the module is fixed only up to the equivalence of idempotents.
-- **The normalisation is a Hilbert datum.** $\langle\psi,\psi\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.
+- **The normalisation is a Hilbert datum.** $\langle\tilde{Ξ}^{\mathrm{spn}},\tilde{Ξ}^{\mathrm{spn}}\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.
 
 The state space is normalised by the metric and selected by the vacuum, and the two acts are of different kinds: one is a pairing, the other is a choice of generator. The two structures also meet the corpus's word **quantisation**. The insertion of the star into the second slot, the step from $\tilde Q_1\tilde Q_2$ to $\tilde Q_1\tilde Q_2^{*}$, is what turns the composition pairing into the probability pairing. Read on the carrier, the spinor space is **compositional before the step and probabilistic after it**. The step is not an added axiom; it is the choice of what to put in the second slot.
 

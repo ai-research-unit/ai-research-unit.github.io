@@ -191,13 +191,13 @@ The term $\vec\omega/\gamma$ is the **Barnett field**, the field equivalent of t
 Thermal equilibrium in the rotating frame is equilibrium in the effective field, so the magnetization of the body is the magnetization of the material in the field $\vec B_{\rm eff}$,
 
 $$
-\vec M = \chi\,\vec B_{\rm eff} = \chi\!\left(\vec B + \frac{\vec\omega}{\gamma}\right),
+\vec M = \xi\,\vec B_{\rm eff} = \xi\!\left(\vec B + \frac{\vec\omega}{\gamma}\right),
 $$
 
-with $\chi$ the magnetic susceptibility, in the constitutive convention in which the factors of $\mu$ are absorbed into $\chi$. In zero applied field the rotation alone produces
+with $\xi$ the magnetic susceptibility, in the constitutive convention in which the factors of $\mu$ are absorbed into $\xi$. In zero applied field the rotation alone produces
 
 $$
-\boxed{\;\vec M = \frac{\chi}{\gamma}\,\vec\omega\;},
+\boxed{\;\vec M = \frac{\xi}{\gamma}\,\vec\omega\;},
 $$
 
 the Barnett magnetization, parallel to the effective field $\vec B_{\rm eff}$ and therefore along the rotation axis when $\gamma$ is positive and opposed to it when $\gamma$ is negative. The sense is fixed by the sign of $\gamma$, which is what the Einstein–de Haas measurement of the same material returns. The effect is linear in the rotation rate, and the rotation enters the spin's equation exactly as the additional field $\vec\omega/\gamma$: the frame that is at rest for a moment in the applied field $\vec B$ rotates at $\vec\Omega = -\gamma\vec B$, and the applied field that would cancel the Barnett field is $-\vec\omega/\gamma$.
@@ -270,7 +270,7 @@ The **Barnett effect** is the magnetization produced by a rotation:
 $$
 \vec B_{\rm eff} = \vec B + \frac{\vec\omega}{\gamma},
 \qquad
-\vec M = \chi\,\vec B_{\rm eff} = \chi\!\left(\vec B + \frac{\vec\omega}{\gamma}\right),
+\vec M = \xi\,\vec B_{\rm eff} = \xi\!\left(\vec B + \frac{\vec\omega}{\gamma}\right),
 $$
 
 so that a body rotating in zero field is magnetized as if by the field $\vec\omega/\gamma$, the Barnett field. It is the inverse of the Larmor theorem: the frame that is at rest for a moment in the field $\vec B$ rotates at $\vec\Omega = -\gamma\vec B$, and the rotation of the body enters the spin's equation exactly as the Barnett field $\vec\omega/\gamma$ does; the applied field that would cancel it is $-\vec\omega/\gamma$.
@@ -301,7 +301,7 @@ The two effects are **reciprocal**, being the two derivatives of the single spin
 | $\vec B_{\rm eff} = \vec B + \vec\omega/\gamma$ | Barnett effective field |
 | $\vec\Omega$ | Rotation in the spin-rotation coupling: $+\gamma\vec B$ mimics a field, $-\gamma\vec B$ cancels it |
 | $U_{\rm rot} = -\vec\mu\cdot\vec\Omega/\gamma$ | Spin-rotation coupling |
-| $\chi$ | Magnetic susceptibility |
+| $\xi$ | Magnetic susceptibility |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

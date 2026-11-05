@@ -10,7 +10,7 @@ $$
 
 and the transition probability is the squared matrix element of $S$ between the initial state and the final state. Its defining property is **unitarity**, $S^{\dagger} S = 1$. It is the object in which the dynamics of an interacting field theory is summarized. Throughout, $i$ is the central scalar imaginary of the algebra, with $i^2=-1$; natural units $\hbar=c=1$ are used except in the mass-shell relation, where $c$ is restored.
 
-The companion articles have assembled every ingredient this article needs. *The Dirac Equation in Biquaternionic Form* fixes the one-sided pair $\tilde\Psi_L,\tilde\Psi_R$ that the quantized field satisfies and keeps it apart from Kravchenko's two-sided equation. *Canonical Quantization of the Biquaternion Dirac Field* promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* sharpens that result: the Fock space is a **module** over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. *The Feynman Propagator in Biquaternionic Form* supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.
+The companion articles have assembled every ingredient this article needs. *The Dirac Equation in Biquaternionic Form* fixes the one-sided pair $\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R$ that the quantized field satisfies and keeps it apart from Kravchenko's two-sided equation. *Canonical Quantization of the Biquaternion Dirac Field* promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* sharpens that result: the Fock space is a **module** over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. *The Feynman Propagator in Biquaternionic Form* supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.
 
 This article asks what "the S-matrix in biquaternionic form" names. The finding is stated at the outset.
 
@@ -106,7 +106,7 @@ $$
 \tilde S\tilde S^{*} = e_t, \qquad \tilde S \in \mathbb{B}.
 $$
 
-The operator on the module is the action $\tilde\Psi\mapsto\tilde S\tilde\Psi$, read from the left. The conditionality is the Fock article's: whether the one-mode identification is a structural feature of the framework or a coincidence of the dimension count is not decided there, and this article does not decide it either. The S-matrix is not a derivation from the algebra; it is the algebra's one-mode truncation of a standard operator.
+The operator on the module is the action $\tilde{Ξ}^{\mathrm{spn}}\mapsto\tilde S\tilde{Ξ}^{\mathrm{spn}}$, read from the left. The conditionality is the Fock article's: whether the one-mode identification is a structural feature of the framework or a coincidence of the dimension count is not decided there, and this article does not decide it either. The S-matrix is not a derivation from the algebra; it is the algebra's one-mode truncation of a standard operator.
 
 **The physical one-mode S-matrix is diagonal in the parity states.** The one-mode S-matrix is taken to conserve fermion parity: a scattering process does not turn an even state into an odd one. The parity element of the mode is $(-1)^F = i\vec u_{\mathrm p}$, with the axis $\vec u_{\mathrm p}=\vec e_z$ supplied by the physics and declared here; it squares to $e_t$. Fermion-parity conservation is the statement that $\tilde S$ commutes with $i\vec u_{\mathrm p}$. The elements of $\mathbb{B}$ that commute with $i\vec u_{\mathrm p}$ are exactly the complex span of $e_t$ and $i\vec u_{\mathrm p}$, and that span is also the span of the two pure states
 
@@ -236,9 +236,9 @@ Three inheritances should be named.
 **The asymptotic states.** In and out states are plane-wave states from the solutions article, labeled by on-shell momenta. Two equations carry the name *Dirac equation*, and the external states belong to only one of them. They are solutions of the corpus's **one-sided** pair
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\tilde\nabla\tilde{Ξ}^{\mathrm{spn}}_R=m\tilde{Ξ}^{\mathrm{spn}}_L,
 \qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{spn}}_L=m\tilde{Ξ}^{\mathrm{spn}}_R,
 $$
 
 both gradients acting from the left, with the mass carried as the off-diagonal pairing of the two halves. Kravchenko's **two-sided** equation — the spatial gradient acting from the left and the mass from the right through $\vec e_z$, with the componentwise conjugation in the mass term — is a different operator. It is related to the pair by the dictionary of *The Dirac Equation in Biquaternionic Form*, but it is not the equation whose solutions are quantized here, and its mass term is of a different kind. The on-shell condition is the biquaternion mass shell $\tilde P\tilde P^{\natural}=-m^2c^2$. The reduction of the S-matrix element to an amputated correlation function — the LSZ formula — replaces each external leg by the corresponding plane wave and applies the wave operator. The biquaternion form of that reduction is the placement of the external legs on the mass shell and is not rederived here; what matters is that the external data are the solutions article's biquaternion plane waves, and the internal data are the propagator, so the whole Dyson series is written in the read-list notation without a new ingredient.
@@ -256,7 +256,7 @@ $$
 
 with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the cells of *Two-Sided Operators on the Biquaternion Algebra*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
-Two of the multipliers that the corpus prints are single ones, because $e_t$ is the unit of the algebra and a slot carrying it collapses: the time term is the single multiplier $\tilde Q\mapsto i\tilde Q\vec e_xE$, and the multiplier $\tilde Q\mapsto-i\tilde Q\vec e_z$, which the solutions article reads on the two values $\tilde\Psi_L,\tilde\Psi_R$, is the other single one. The derivative form of the contraction replaces $p_\mu$ by $\partial/\partial Q_\mu$.
+Two of the multipliers that the corpus prints are single ones, because $e_t$ is the unit of the algebra and a slot carrying it collapses: the time term is the single multiplier $\tilde Q\mapsto i\tilde Q\vec e_xE$, and the multiplier $\tilde Q\mapsto-i\tilde Q\vec e_z$, which the solutions article reads on the two values $\tilde{Ξ}^{\mathrm{spn}}_L,\tilde{Ξ}^{\mathrm{spn}}_R$, is the other single one. The derivative form of the contraction replaces $p_\mu$ by $\partial/\partial Q_\mu$.
 
 The one-mode S-matrix is not of this kind. It is a single multiplier, the action $\tilde Q\mapsto\tilde S\tilde Q$ of the preceding sections, and that is the structural difference between the S-matrix of a mode and the contraction that builds the propagator: one is an element read from the left, the other is a sum of two-sided terms.
 
@@ -356,8 +356,8 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $\tilde S\tilde S^{*}=e_t$ | Star-unitary element, $\mathrm{U}(2)$ |
 | $\tilde S=\tilde A\tilde Q_0$, $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ | Cartan pairing of the S-matrix; $\tilde A=e_t$ exactly when $\tilde S\tilde S^{*}=e_t$ |
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=1$ | Unit real quaternion, $\mathrm{SU}(2)$; spin rotation |
-| $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost element, of unit quaternionic norm; $\psi$ is the rapidity |
-| $\tilde\Psi$ | Element of the module on which the S-matrix acts |
+| $\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost element, of unit quaternionic norm; $\theta^{\mathrm{rpd}}$ is the rapidity |
+| $\tilde{Ξ}^{\mathrm{spn}}$ | Element of the module on which the S-matrix acts |
 | $\vec u_{\mathrm p}=\vec e_z$ | Parity axis of the one mode, declared where it enters |
 | $(-1)^F=i\vec u_{\mathrm p}$ | Fermion-parity element of the one mode |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The two pure states of the mode, vacuum and occupied |
