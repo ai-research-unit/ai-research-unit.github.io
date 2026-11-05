@@ -99,9 +99,9 @@ $$</p>
 \qquad
 \Box\big|_{\mathbb M_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
 $$</p>
-<p>and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial q_k$. Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$, so the gauged gradient is</p>
+<p>and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial q_k$. Minimal coupling shifts each derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$, and with it the gradient:</p>
 <p>$$
-\tilde\nabla_A=\tilde\nabla-\frac{iq}{\hbar}\tilde A,
+\tilde\nabla\longmapsto\tilde\nabla-\frac{iq}{\hbar}\tilde A,
 \qquad
 \tilde A=\Phi e_t-\vec A,
 \qquad
@@ -109,7 +109,7 @@ $$</p>
 \qquad
 \sum_k\vec e_k\pi_k=-i\hbar\,D_3^A ,
 $$</p>
-<p>with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iqA_k/\hbar)$ the pure part of $\tilde\nabla_A$. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=ct'$, replaces the gradient by the element</p>
+<p>with $\pi_k=p_k-qA_k$ and $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-iqA_k/\hbar)$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla^{\mathrm{gco}}$ in <em>The Covariant Derivative and the Gauge Connection in Biquaternionic Form</em>, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A=\Phi e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_0x_0-\vec k\cdot\vec q)\bigr)$, with $x_0=ct'$, replaces the gradient by the element</p>
 <p>$$
 \tilde K=k_0-i\vec k,
 \qquad
@@ -297,10 +297,10 @@ $$</p>
 \boxed{\;i\hbar\frac{\partial\varphi}{\partial t'}=\left[\frac{(p-q\vec A)^2}{2m}+q\Phi-\frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\varphi\;}
 $$</p>
 <p>which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.</p>
-<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math176">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
+<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math178">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
 <p><strong>Statement.</strong> Carry out the minimal substitution, evaluate the electromagnetic terms it generates, and verify the gyromagnetic factor $g=2$ together with the biquaternion form of the spin term.</p>
 <p><strong>Solution.</strong></p>
-<p><em>Step 1: the substitution.</em> The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla_A=\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(\Phi,-\vec A)$ in this mostly-minus metric, so that $\tilde A=\Phi e_t-\vec A$. The time component gives</p>
+<p><em>Step 1: the substitution.</em> The minimal coupling of this exercise is a shift of every derivative, $\partial/\partial Q_\mu\to\partial/\partial Q_\mu-iqA_\mu/\hbar$; on the gradient it is $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, with $A_\mu=(\Phi,-\vec A)$ in this mostly-minus metric, so that $\tilde A=\Phi e_t-\vec A$. The time component gives</p>
 <p>$$
 i\hbar\frac{\partial}{\partial t'}\ \longrightarrow\ i\hbar\frac{\partial}{\partial t'}-q\Phi ,
 $$</p>
@@ -422,7 +422,7 @@ $$</p>
 \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$</p>
 <p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with $j$ the total angular momentum, $j=\ell\pm\tfrac12$ and one value at $\ell=0$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.</p>
-<h2 id="problem-4-hermiticity-and-the-math303-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
+<h2 id="problem-4-hermiticity-and-the-math305-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
 <p><strong>Statement.</strong> Check the Hermiticity of every term and determine which terms lie in $\mathbb M_+$.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: Hermiticity.</em> Each term of the Hamiltonian of Problem 3 is Hermitian:</p>
@@ -653,8 +653,8 @@ $$</p>
 <td>Pure part of the gradient, free and gauged</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_A=\tilde\nabla-iq\tilde A/\hbar$, $\tilde A=\Phi e_t-\vec A$</td>
-<td>Minimal substitution in the gradient</td>
+<td>$\tilde\nabla-iq\tilde A/\hbar$, $\tilde A=\Phi e_t-\vec A$</td>
+<td>The gauged gradient; minimal substitution</td>
 </tr>
 <tr>
 <td>$\tilde K=k_0-i\vec k$</td>

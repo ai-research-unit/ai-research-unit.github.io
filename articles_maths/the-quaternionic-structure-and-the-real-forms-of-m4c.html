@@ -76,7 +76,7 @@ M_4(\mathbb{R}),\qquad M_2(\mathbb{H}),
 $$</p>
 <p>both of real dimension $16$. The first is the fixed algebra of the conjugation $A\mapsto\bar A$; the second is the fixed algebra of the <strong>quaternionic structure</strong></p>
 <p>$$
-\theta(A)=J\bar A J^{-1},\qquad J^{2}=-I,
+\mathrm{J}(A)=J\bar A J^{-1},\qquad J^{2}=-I,
 $$</p>
 <p>for an antilinear involution $J$ of $\mathbb{C}^{4}$ with $J^{2}=-1$. The two are the two real forms of the Brauer class of $M_4$: the split form and the quaternionic form.</p>
 <p>This article states the antilinear structures of $\mathbb{C}^{4}$, the induced antilinear automorphisms of $M_4$, the two fixed algebras and their dimensions, the classification by the Brauer group of $\mathbb{R}$, the quaternionic matrices and their conjugate transpose, the place of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ as a complex subalgebra and not a real form, and the antilinear automorphism group. The real forms of the Lie algebra are <em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em>; the $*$-structures are <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>.</p>
@@ -95,15 +95,15 @@ J_0=\begin{pmatrix}0&-I_2\\I_2&0\end{pmatrix}\bar{\phantom{v}},
 $$</p>
 <p>where the bar is the componentwise conjugation. Then $\sigma_0^{2}=1$ and $J_0^{2}=-1$.</p>
 <h2 id="the-induced-antilinear-automorphisms">The Induced Antilinear Automorphisms</h2>
-<p><strong>Definition.</strong> An antilinear automorphism of $M_4(\mathbb{C})$ is a bijection $\theta$ with</p>
+<p><strong>Definition.</strong> An antilinear automorphism of $M_4(\mathbb{C})$ is a bijection $\mathrm{J}$ with</p>
 <p>$$
-\theta(A+B)=\theta(A)+\theta(B),\qquad
-\theta(\lambda A)=\bar\lambda\theta(A),\qquad
-\theta(AB)=\theta(A)\theta(B).
+\mathrm{J}(A+B)=\mathrm{J}(A)+\mathrm{J}(B),\qquad
+\mathrm{J}(\lambda A)=\bar\lambda\mathrm{J}(A),\qquad
+\mathrm{J}(AB)=\mathrm{J}(A)\mathrm{J}(B).
 $$</p>
 <p><strong>Proposition.</strong> For every antilinear involution $\sigma$ of $\mathbb{C}^{4}$ with $\sigma^{2}=\pm1$, the map</p>
 <p>$$
-\theta_\sigma(A)=\sigma A\sigma^{-1}
+\mathrm{J}_\sigma(A)=\sigma A\sigma^{-1}
 $$</p>
 <p>is an antilinear automorphism of $M_4(\mathbb{C})$ of order two.</p>
 <p><strong>Proof.</strong> The map is conjugate-linear because $\sigma$ is, multiplicative because conjugation is an automorphism, and of order two because $\sigma^{2}=\pm1$ is a scalar. In the two cases, $\sigma^{-1}=\pm\sigma$, and the sign cancels in the conjugation.</p>
@@ -153,13 +153,13 @@ $$</p>
 <h2 id="the-antilinear-automorphism-group">The Antilinear Automorphism Group</h2>
 <p><strong>Proposition.</strong> Every antilinear automorphism of $M_4(\mathbb{C})$ is of the form</p>
 <p>$$
-\theta(A)=U\bar A U^{-1}
+\mathrm{J}(A)=U\bar A U^{-1}
 $$</p>
 <p>for some $U\in GL_4(\mathbb{C})$, and</p>
 <p>$$
 \operatorname{Aut}_\mathbb{R}(M_4)=PGL_4(\mathbb{C})\rtimes\mathbb{Z}/2.
 $$</p>
-<p><strong>Proof.</strong> Composing $\theta$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\theta(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset.</p>
+<p><strong>Proof.</strong> Composing $\mathrm{J}$ with the conjugation gives a complex-linear automorphism, which is inner by Skolem–Noether; hence $\mathrm{J}(A)=U\bar A U^{-1}$. The linear automorphisms form the normal subgroup $PGL_4$, and the antilinear ones form the nontrivial coset.</p>
 <p><strong>The real structures on the algebra.</strong> The antilinear involutions of $M_4$ fall into two classes, according to whether the square is the identity or an inner automorphism of order two. The first class gives the real form $M_4(\mathbb{R})$, the second the quaternionic form $M_2(\mathbb{H})$. The classification of the classes is the classification of the real forms, and the two are exchanged by no automorphism of the complex algebra: they are the two elements of $Br(\mathbb{R})$.</p>
 <p><strong>The physical interpretation.</strong> A Majorana condition is a real structure on the spinor module, $\psi=C\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ with $C^{2}=\pm1$; a quaternionic structure is the same condition with the opposite sign. The two signs are the two real forms of the algebra, and the choice is a choice of the reality layer, not of the gamma set — five of the sixteen cells, up to $i$ — of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="summary">Summary</h2>
@@ -228,12 +228,12 @@ $$</p>
 <td>a quaternionic structure, antilinear with $J^{2}=-1$</td>
 </tr>
 <tr>
-<td>$\theta_\sigma(A)=\sigma A\sigma^{-1}$</td>
+<td>$\mathrm{J}_\sigma(A)=\sigma A\sigma^{-1}$</td>
 <td>the induced antilinear automorphism</td>
 </tr>
 <tr>
 <td>$M_4^{\sigma}$</td>
-<td>the fixed algebra of $\theta_\sigma$</td>
+<td>the fixed algebra of $\mathrm{J}_\sigma$</td>
 </tr>
 <tr>
 <td>$Sp(2)$</td>

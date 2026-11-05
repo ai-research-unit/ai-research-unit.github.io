@@ -87,9 +87,9 @@ $$</p>
 <p>abbreviated $\mathcal{L}_{\mu i} = \partial \mathcal{L}/\partial u_{i,\mu}$ for the derivative with respect to the gradient. A field configuration is <strong>on shell</strong> when $E_i=0$ for every $i$, and <strong>off shell</strong> otherwise.</p>
 <p><strong>Theorem (the fundamental variation identity).</strong> For any variation $\delta u_i$, the variation of the density is</p>
 <p>$$
-\delta \mathcal{L} = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\Theta_\mu ,
+\delta \mathcal{L} = \sum_i E_i\,\delta u_i + \sum_\mu\partial/\partial x_\mu\,\mathrm{Sd}_\mu ,
 \qquad
-\Theta_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i .
+\mathrm{Sd}_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i .
 $$</p>
 <p><em>Proof.</em> Expanding the variation and inserting the definition of $E_i$,</p>
 <p>$$
@@ -97,8 +97,8 @@ $$</p>
 = \sum_i\Bigl(\frac{\partial \mathcal{L}}{\partial u_i} - \sum_\mu\partial/\partial x_\mu \mathcal{L}_{\mu i}\Bigr)\delta u_i + \sum_\mu\partial/\partial x_\mu\,\bigl(\sum_i \mathcal{L}_{\mu i}\,\delta u_i\bigr),
 $$</p>
 <p>which is the stated identity.</p>
-<p>The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta_\mu$. Everything below is that identity read with a different kind of variation.</p>
-<p><strong>Stationarity.</strong> Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int\sum_i E_i\delta u_i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\sum_\mu\Theta_\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of <em>The Calculus of Variations</em>; what is added here is the classification of the symmetries.</p>
+<p>The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\mathrm{Sd}_\mu$. Everything below is that identity read with a different kind of variation.</p>
+<p><strong>Stationarity.</strong> Integrating the identity over $\Omega$ and requiring $S$ to be stationary under variations vanishing on the boundary gives $\int\sum_i E_i\delta u_i=0$ for every such variation, hence $E_i=0$ by the fundamental lemma of the calculus of variations. If the variation does not vanish on the boundary, the boundary term $\oint\sum_\mu\mathrm{Sd}_\mu\,d\Sigma_\mu$ is the natural boundary condition. The variational derivation is the subject of <em>The Calculus of Variations</em>; what is added here is the classification of the symmetries.</p>
 <p><strong>Definition.</strong> A variation is a <strong>symmetry of the action up to a divergence</strong> when the density changes by a divergence,</p>
 <p>$$
 \delta \mathcal{L} = \sum_\mu\partial/\partial x_\mu F_\mu ,
@@ -325,7 +325,7 @@ $$</p>
 <td>Euler–Lagrange expression</td>
 </tr>
 <tr>
-<td>$\Theta_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i$</td>
+<td>$\mathrm{Sd}_\mu = \sum_i \mathcal{L}_{\mu i}\,\delta u_i$</td>
 <td>Boundary current of a variation</td>
 </tr>
 <tr>

@@ -76,12 +76,12 @@
 $$</p>
 <p>so $\langle\tilde Q\rangle_{\natural}=0$ and $B^{2}\neq0$. The sandwich is the Hermitian congruence</p>
 <p>$$
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$</p>
 <p>On the null cone the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ vanishes, so the four-factor word does not exist. The two-factor polar pair $\tilde Q=\tilde Q_H\tilde Q_0$ survives, and the sandwich reads it as</p>
 <p>$$
-\Theta_{\tilde Q}
-=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0},
+\mathrm{Sd}_{\tilde Q}
+=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0},
 \qquad
 \tilde Q_H=2aP,
 \qquad
@@ -89,9 +89,9 @@ $$</p>
 $$</p>
 <p>with $a=\sqrt{\langle\tilde Q\rangle_{*}/2}>0$ and $P$ a rank-one Hermitian idempotent. The main result is that <strong>the sandwich collapses to a scalar times a partial isometry</strong>:</p>
 <p>$$
-\boxed{\;\Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0}\;}
+\boxed{\;\mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0}\;}
 $$</p>
-<p>because the positive factor $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of <em>The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion</em>.</p>
+<p>because the positive factor $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_P$ acts as the scalar $4a^{2}$ on the image of $\mathrm{Sd}_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of <em>The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion</em>.</p>
 <p>The article is organized as follows. §<em>The Polar Pair</em> recalls the rank-one pair and the matrix model. §<em>The Sandwich</em> computes the closed form, the rank, the spectrum, the image and the kernel. §<em>The Polar Decomposition of the Sandwich</em> reads the pair and proves the scalar collapse. §<em>The Two Slots</em> gives the Peirce and singular-vector pictures and the cancellation of the phase. §<em>The Exponential</em> computes the one-parameter group. §<em>Worked Examples</em> treats a Hermitian and a non-Hermitian idempotent.</p>
 <h2 id="the-polar-pair">The Polar Pair</h2>
 <p>The conventions are those of the companion article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$, the Hermitian norm is $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$, and the quaternionic norm is $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>where $\tilde\Xi=2\tilde\Pi-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.</p>
 <p>The sandwich of the pair is computed in the matrix model. For any $\tilde X$,</p>
 <p>$$
-\mathsf M_2\bigl(\Theta_{\tilde Q}(\tilde X)\bigr)
+\mathsf M_2\bigl(\mathrm{Sd}_{\tilde Q}(\tilde X)\bigr)
 =(2a)^{2}u v^{\dagger}\,\mathsf M_2(\tilde X)\,v u^{\dagger}
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$</p>
@@ -138,150 +138,150 @@ $$</p>
 <h2 id="the-sandwich">The Sandwich</h2>
 <h3 id="elementary-properties">Elementary properties</h3>
 <p><strong>Proposition.</strong> Let $\tilde Q,\tilde Q'\in\mathbb{B}$. Then:</p>
-<p><strong>(a)</strong> $\Theta_{\tilde Q}$ is $\mathbb{C}$-linear;</p>
-<p><strong>(b)</strong> $\Theta_{\tilde Q\tilde Q'}=\Theta_{\tilde Q}\circ\Theta_{\tilde Q'}$;</p>
-<p><strong>(c)</strong> $\Theta_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\Theta_{\tilde Q^{-1}}$;</p>
-<p><strong>(d)</strong> $\Theta_{\tilde Q}$ preserves the real forms $\mathbb{M}_+$ and $\mathbb{M}_-$;</p>
-<p><strong>(e)</strong> the adjoint is $\Theta_{\tilde Q}^{*}=\Theta_{\tilde Q^{*}}$;</p>
+<p><strong>(a)</strong> $\mathrm{Sd}_{\tilde Q}$ is $\mathbb{C}$-linear;</p>
+<p><strong>(b)</strong> $\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}$;</p>
+<p><strong>(c)</strong> $\mathrm{Sd}_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$;</p>
+<p><strong>(d)</strong> $\mathrm{Sd}_{\tilde Q}$ preserves the real forms $\mathbb{M}_+$ and $\mathbb{M}_-$;</p>
+<p><strong>(e)</strong> the adjoint is $\mathrm{Sd}_{\tilde Q}^{*}=\mathrm{Sd}_{\tilde Q^{*}}$;</p>
 <p><strong>(f)</strong> the norm scales as</p>
 <p>$$
-\bigl\langle\Theta_{\tilde Q}(\tilde X)\bigr\rangle_{\natural}
+\bigl\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\bigr\rangle_{\natural}
 =\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}.
 $$</p>
-<p>On $\Sigma_{01}$ the element is a zero divisor, so $\Theta_{\tilde Q}$ is not invertible. The properties are those of <em>Operators of the Polar Word: The Common Framework</em>; the sector changes the values.</p>
+<p>On $\Sigma_{01}$ the element is a zero divisor, so $\mathrm{Sd}_{\tilde Q}$ is not invertible. The properties are those of <em>Operators of the Polar Word: The Common Framework</em>; the sector changes the values.</p>
 <h3 id="the-closed-form">The closed form</h3>
 <p>Let $\tilde Q=c\tilde\Pi$. Since $\tilde\Pi^{2}=\tilde\Pi$,</p>
 <p>$$
-\Theta_{\tilde Q}
-=\lvert c\rvert^{2}\Theta_{\tilde\Pi},
+\mathrm{Sd}_{\tilde Q}
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi},
 \qquad
-\Theta_{\tilde\Pi}^{2}
-=\Theta_{\tilde\Pi},
+\mathrm{Sd}_{\tilde\Pi}^{2}
+=\mathrm{Sd}_{\tilde\Pi},
 \qquad
-\Theta_{\tilde Q}^{2}
-=\lvert c\rvert^{2}\Theta_{\tilde Q}.
+\mathrm{Sd}_{\tilde Q}^{2}
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde Q}.
 $$</p>
-<p>Thus $\Theta_{\tilde Q}/\lvert c\rvert^{2}$ is an idempotent of the operator space, and $\Theta_{\tilde Q}$ is an idempotent up to scale. It is not an orthogonal projection unless $\tilde\Pi$ is Hermitian.</p>
+<p>Thus $\mathrm{Sd}_{\tilde Q}/\lvert c\rvert^{2}$ is an idempotent of the operator space, and $\mathrm{Sd}_{\tilde Q}$ is an idempotent up to scale. It is not an orthogonal projection unless $\tilde\Pi$ is Hermitian.</p>
 <p><strong>Theorem (rank, spectrum and Jordan form).</strong> On $\Sigma_{01}$:</p>
-<p><strong>(a)</strong> $\Theta_{\tilde Q}$ has complex rank $1$;</p>
+<p><strong>(a)</strong> $\mathrm{Sd}_{\tilde Q}$ has complex rank $1$;</p>
 <p><strong>(b)</strong> its spectrum is $\{\lvert c\rvert^{2},0\}$, with algebraic multiplicities $1$ and $3$, and geometric multiplicities $1$ and $3$;</p>
 <p><strong>(c)</strong> it is diagonalizable, with minimal polynomial $X(X-\lvert c\rvert^{2})$;</p>
-<p><strong>(d)</strong> $\operatorname{tr}\Theta_{\tilde Q}=\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$ and $\det\Theta_{\tilde Q}=0$;</p>
-<p><strong>(e)</strong> for every $\tilde X$, $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=0$; the image lies on the null cone.</p>
+<p><strong>(d)</strong> $\operatorname{tr}\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$ and $\det\mathrm{Sd}_{\tilde Q}=0$;</p>
+<p><strong>(e)</strong> for every $\tilde X$, $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=0$; the image lies on the null cone.</p>
 <p><em>Proof.</em> In the matrix model, the formula above gives</p>
 <p>$$
-\Theta_{\tilde Q}(\tilde X)=4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$</p>
 <p>The image is contained in the line $\mathbb{C}u u^{\dagger}$, and it is non-zero because $u u^{\dagger}$ is in the image: take $\tilde X$ with $\mathsf M_2(\tilde X)=u u^{\dagger}$; then $v^{\dagger}u u^{\dagger}v=\lvert v^{\dagger}u\rvert^{2}\neq0$. Hence the rank is one. The square is</p>
 <p>$$
-\Theta_{\tilde Q}^{2}
+\mathrm{Sd}_{\tilde Q}^{2}
 =(4a^{2})^{2}\lvert v^{\dagger}u\rvert^{2}
 \bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}
-=\lvert c\rvert^{2}\Theta_{\tilde Q},
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde Q},
 $$</p>
-<p>because $c=2a\,v^{\dagger}u$. The operator is a non-zero scalar multiple of an idempotent, so it is diagonalizable with eigenvalues $\lvert c\rvert^{2}$ and $0$. The trace is $\lvert c\rvert^{2}$ and the determinant is zero. The norm is $\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.
+<p>because $c=2a\,v^{\dagger}u$. The operator is a non-zero scalar multiple of an idempotent, so it is diagonalizable with eigenvalues $\lvert c\rvert^{2}$ and $0$. The trace is $\lvert c\rvert^{2}$ and the determinant is zero. The norm is $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.
 The image is a null line because $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}=0$.</p>
 <h3 id="the-image-and-the-kernel">The image and the kernel</h3>
 <p>The image is the line</p>
 <p>$$
-\operatorname{im}\Theta_{\tilde Q}=\mathbb{C}P,
+\operatorname{im}\mathrm{Sd}_{\tilde Q}=\mathbb{C}P,
 \qquad
 P=\frac{\tilde Q\tilde Q^{*}}{4a^{2}}=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa}.
 $$</p>
 <p>The line is null: $\langle P\rangle_{\natural}=0$ because $P$ is a non-trivial idempotent. The kernel is the hyperplane</p>
 <p>$$
-\ker\Theta_{\tilde Q}
+\ker\mathrm{Sd}_{\tilde Q}
 =\bigl\{\tilde X:\tilde\Pi\tilde X\tilde\Pi^{*}=0\bigr\},
 \qquad
-\dim_{\mathbb{C}}\ker\Theta_{\tilde Q}=3.
+\dim_{\mathbb{C}}\ker\mathrm{Sd}_{\tilde Q}=3.
 $$</p>
 <p>In the matrix model it is $\{X:v^{\dagger}Xv=0\}$, the hyperplane orthogonal to the rank-one functional $X\mapsto v^{\dagger}Xv$. The kernel contains the right annihilator $A(\tilde Q)=\ker L_{\tilde Q}$ and the left annihilator of $\tilde Q^{*}$, because $\tilde Q\tilde X=0$ or $\tilde X\tilde Q^{*}=0$ implies $\tilde Q\tilde X\tilde Q^{*}=0$, and it is strictly larger than each of them.</p>
 <p>When $\tilde\Pi$ is Hermitian, the Peirce form is diagonal in the eigenbasis $(\tilde\Pi,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi')$:</p>
 <p>$$
 \boxed{\;
-\mathsf M\bigl(\Theta_{\tilde Q}\bigr)
+\mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)
 =\operatorname{diag}\bigl(\lvert c\rvert^{2},0,0,0\bigr).
 \;}
 $$</p>
 <p>Only the $(+,+)$ corner survives; the kernel is the sum of the other three corners. When $\tilde\Pi$ is not Hermitian, the matrix is not diagonal in that basis, but the spectrum and the rank are the same. The image is still the line $\mathbb{C}P$, and the kernel is still the hyperplane above.</p>
 <h3 id="eigenvalues-and-singular-values">Eigenvalues and singular values</h3>
-<p>The eigenvalue of $\Theta_{\tilde Q}$ on its image is $\lvert c\rvert^{2}$. Its non-zero singular value is $4a^{2}$: indeed</p>
+<p>The eigenvalue of $\mathrm{Sd}_{\tilde Q}$ on its image is $\lvert c\rvert^{2}$. Its non-zero singular value is $4a^{2}$: indeed</p>
 <p>$$
-\Theta_{\tilde Q}\Theta_{\tilde Q}^{*}
-=\Theta_{\tilde Q\tilde Q^{*}}
-=\Theta_{4a^{2}P}
-=(4a^{2})^{2}\Theta_P,
+\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}
+=\mathrm{Sd}_{\tilde Q\tilde Q^{*}}
+=\mathrm{Sd}_{4a^{2}P}
+=(4a^{2})^{2}\mathrm{Sd}_P,
 $$</p>
-<p>and $\Theta_P$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The ratio is</p>
+<p>and $\mathrm{Sd}_P$ is an orthogonal projection of rank one, with singular value one. Hence the singular value is $4a^{2}$. The ratio is</p>
 <p>$$
 \frac{\lvert c\rvert^{2}}{4a^{2}}
 =\lvert v^{\dagger}u\rvert^{2}
 =\cos^{2}\theta .
 $$</p>
 <p>This ratio is one exactly when $\tilde\Pi$ is Hermitian ($\kappa=1$, the slots coincide), and it lies strictly between $0$ and $1$ for a non-Hermitian idempotent. It vanishes at the wall $\Sigma_{00}$. The distinction between eigenvalue and singular value is the measure of the obliqueness of the projection.</p>
-<p>The idempotent $\Theta_{\tilde\Pi}$ itself has singular value $\kappa$, because</p>
+<p>The idempotent $\mathrm{Sd}_{\tilde\Pi}$ itself has singular value $\kappa$, because</p>
 <p>$$
-\Theta_{\tilde\Pi}\Theta_{\tilde\Pi}^{*}
-=\Theta_{\tilde\Pi\tilde\Pi^{*}}
-=\Theta_{\kappa P}
-=\kappa^{2}\Theta_P .
+\mathrm{Sd}_{\tilde\Pi}\mathrm{Sd}_{\tilde\Pi}^{*}
+=\mathrm{Sd}_{\tilde\Pi\tilde\Pi^{*}}
+=\mathrm{Sd}_{\kappa P}
+=\kappa^{2}\mathrm{Sd}_P .
 $$</p>
-<p>Thus $\Theta_{\tilde Q}=\lvert c\rvert^{2}\Theta_{\tilde\Pi}$ has singular value $\lvert c\rvert^{2}\kappa=4a^{2}$. The operator $\Theta_{\tilde Q}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the partial isometry $\Theta_{\tilde Q_0}$.</p>
+<p>Thus $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$ has singular value $\lvert c\rvert^{2}\kappa=4a^{2}$. The operator $\mathrm{Sd}_{\tilde Q}$ is not a partial isometry in general: its singular value is $4a^{2}$, not one. It is $4a^{2}$ times the partial isometry $\mathrm{Sd}_{\tilde Q_0}$.</p>
 <h2 id="the-polar-decomposition-of-the-sandwich">The Polar Decomposition of the Sandwich</h2>
 <h3 id="the-scalar-collapse">The scalar collapse</h3>
 <p>By the polar pair theorem, $\tilde Q=2a\tilde Q_0$ and $\tilde Q_0$ is a partial isometry. The multiplicativity of $\Theta$ gives</p>
 <p>$$
-\Theta_{\tilde Q}
-=\Theta_{2a\tilde Q_0}
-=4a^{2}\Theta_{\tilde Q_0}.
+\mathrm{Sd}_{\tilde Q}
+=\mathrm{Sd}_{2a\tilde Q_0}
+=4a^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$</p>
-<p>This is the scalar collapse. The canonical left polar factor of $\Theta_{\tilde Q}$ is</p>
+<p>This is the scalar collapse. The canonical left polar factor of $\mathrm{Sd}_{\tilde Q}$ is</p>
 <p>$$
-\lvert\Theta_{\tilde Q}\rvert
-=\bigl(\Theta_{\tilde Q}\Theta_{\tilde Q}^{*}\bigr)^{1/2}
-=\Theta_{\tilde Q_H}
-=4a^{2}\Theta_P,
+\lvert\mathrm{Sd}_{\tilde Q}\rvert
+=\bigl(\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q}^{*}\bigr)^{1/2}
+=\mathrm{Sd}_{\tilde Q_H}
+=4a^{2}\mathrm{Sd}_P,
 $$</p>
-<p>which is positive semidefinite of rank one. On the image of $\Theta_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $P\tilde Q_0=\tilde Q_0$ and therefore $\Theta_P\Theta_{\tilde Q_0}=\Theta_{\tilde Q_0}$. Hence</p>
+<p>which is positive semidefinite of rank one. On the image of $\mathrm{Sd}_{\tilde Q_0}$ it acts as the scalar $4a^{2}$, because $P\tilde Q_0=\tilde Q_0$ and therefore $\mathrm{Sd}_P\mathrm{Sd}_{\tilde Q_0}=\mathrm{Sd}_{\tilde Q_0}$. Hence</p>
 <p>$$
 \boxed{\;
-\Theta_{\tilde Q}
-=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0}
-=4a^{2}\Theta_{\tilde Q_0},
+\mathrm{Sd}_{\tilde Q}
+=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0}
+=4a^{2}\mathrm{Sd}_{\tilde Q_0},
 \qquad
-\Theta_{\tilde Q_0}\Theta_{\tilde Q_0}^{*}\Theta_{\tilde Q_0}
-=\Theta_{\tilde Q_0}.
+\mathrm{Sd}_{\tilde Q_0}\mathrm{Sd}_{\tilde Q_0}^{*}\mathrm{Sd}_{\tilde Q_0}
+=\mathrm{Sd}_{\tilde Q_0}.
 \;}
 $$</p>
 <p>The sandwich is $4a^{2}$ times a partial isometry. Its non-zero singular value is $4a^{2}$, the square of the one-sided singular value $2a$. Its eigenvalue is $\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$, the squared overlap of the two slots.</p>
 <h3 id="the-phase">The phase</h3>
 <p>The partial-isometry factor is $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi/\sqrt{\kappa}$. Since $\Theta$ is quadratic in $\tilde Q_0$ and $\tilde Q_0^{*}$,</p>
 <p>$$
-\Theta_{\tilde Q_0}
-=\Theta_{\tilde\Pi}/\kappa,
+\mathrm{Sd}_{\tilde Q_0}
+=\mathrm{Sd}_{\tilde\Pi}/\kappa,
 $$</p>
 <p>independent of the phase of $c$. The sandwich therefore cancels the phase:</p>
 <p>$$
-\Theta_{\tilde Q}
-=\lvert c\rvert^{2}\Theta_{\tilde\Pi}
-=4a^{2}\Theta_{\tilde Q_0}.
+\mathrm{Sd}_{\tilde Q}
+=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}
+=4a^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$</p>
-<p>The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the sandwich keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi$ is Hermitian and $c=r e^{i\alpha}$, the polar pair is $\tilde Q_H=r\tilde\Pi$ and $\tilde Q_0=e^{i\alpha}\tilde\Pi$, and the sandwich is $r^{2}\Theta_{\tilde\Pi}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.</p>
+<p>The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the sandwich keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi$ is Hermitian and $c=r e^{i\alpha}$, the polar pair is $\tilde Q_H=r\tilde\Pi$ and $\tilde Q_0=e^{i\alpha}\tilde\Pi$, and the sandwich is $r^{2}\mathrm{Sd}_{\tilde\Pi}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.</p>
 <h3 id="the-polar-pair-of-the-element-and-of-the-operator">The polar pair of the element and of the operator</h3>
-<p>The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2aP$ and $\tilde Q_0$ a partial isometry. The operator pair is $(\Theta_{\tilde Q_H},\Theta_{\tilde Q_0})$, with $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ positive and $\Theta_{\tilde Q_0}$ a partial isometry. The element pair is a rank-one singular value decomposition; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$, and the phase of the element is absent from the operator pair.</p>
+<p>The element pair is $(\tilde Q_H,\tilde Q_0)$, with $\tilde Q_H=2aP$ and $\tilde Q_0$ a partial isometry. The operator pair is $(\mathrm{Sd}_{\tilde Q_H},\mathrm{Sd}_{\tilde Q_0})$, with $\mathrm{Sd}_{\tilde Q_H}=4a^{2}\mathrm{Sd}_P$ positive and $\mathrm{Sd}_{\tilde Q_0}$ a partial isometry. The element pair is a rank-one singular value decomposition; the operator pair is its congruence. The scalar $4a^{2}$ is the square of the element's singular value $2a$, and the phase of the element is absent from the operator pair.</p>
 <h2 id="the-two-slots">The Two Slots</h2>
 <h3 id="the-peirce-picture">The Peirce picture</h3>
 <p>On $\Sigma_{01}$ the eigenbasis exists because $B^{2}\neq0$. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the four Peirce corners are one-dimensional. For a Hermitian $\tilde\Pi$, the sandwich is the projection onto the $(+,+)$ corner:</p>
 <p>$$
-\Theta_{\tilde\Pi}(\tilde\Pi)=\tilde\Pi,
+\mathrm{Sd}_{\tilde\Pi}(\tilde\Pi)=\tilde\Pi,
 \qquad
-\Theta_{\tilde\Pi}(\vec\Upsilon_-)=0,
+\mathrm{Sd}_{\tilde\Pi}(\vec\Upsilon_-)=0,
 \qquad
-\Theta_{\tilde\Pi}(\vec\Upsilon_+)=0,
+\mathrm{Sd}_{\tilde\Pi}(\vec\Upsilon_+)=0,
 \qquad
-\Theta_{\tilde\Pi}(\tilde\Pi')=0.
+\mathrm{Sd}_{\tilde\Pi}(\tilde\Pi')=0.
 $$</p>
-<p>Thus the matrix is $\operatorname{diag}(1,0,0,0)$, and $\Theta_{\tilde Q}$ is $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$. The kernel is the sum of the three other corners. The sandwich pairs the two half-angles of the regular theory; on $\Sigma_{01}$ one half has eigenvalue zero, so only the $(+,+)$ pairing survives. The four eigenvalue products are</p>
+<p>Thus the matrix is $\operatorname{diag}(1,0,0,0)$, and $\mathrm{Sd}_{\tilde Q}$ is $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$. The kernel is the sum of the three other corners. The sandwich pairs the two half-angles of the regular theory; on $\Sigma_{01}$ one half has eigenvalue zero, so only the $(+,+)$ pairing survives. The four eigenvalue products are</p>
 <p>$$
 c\bar c,\quad c\cdot0,\quad 0\cdot\bar c,\quad 0\cdot0,
 $$</p>
@@ -290,31 +290,31 @@ $$</p>
 <h3 id="the-singular-vector-picture">The singular-vector picture</h3>
 <p>In the matrix model the two slots are the singular vectors $u$ and $v$. The sandwich is</p>
 <p>$$
-\Theta_{\tilde Q}(\tilde X)
+\mathrm{Sd}_{\tilde Q}(\tilde X)
 =4a^{2}\bigl(v^{\dagger}\mathsf M_2(\tilde X)v\bigr)u u^{\dagger}.
 $$</p>
 <p>It reads the $v$-slot of $\tilde X$ through the scalar $v^{\dagger}\mathsf M_2(\tilde X)v$ and writes it on the $u$-slot. The relative phase of $u$ and $v$ cancels, because the sandwich uses $u$ and $u^{\dagger}$ on the outside and $v$ and $v^{\dagger}$ on the inside. The eigenvalue is $4a^{2}\lvert v^{\dagger}u\rvert^{2}=\lvert c\rvert^{2}$; the singular value is $4a^{2}$. The two slots are not orthogonal on $\Sigma_{01}$: their overlap has modulus $\cos\theta=1/\sqrt{\kappa}$. At the wall $\Sigma_{00}$ the overlap vanishes, the slots are orthogonal, and the sandwich becomes nilpotent.</p>
 <p>This is the precise form of the two-slot structure of the regular sandwich. In the regular sector the two slots are the two chiralities, and the sandwich carries the full angle and rapidity as the product of the two half-factors. On the null cone the two slots are the singular vectors of the rank-one element, and the sandwich carries only the squared overlap $\cos^{2}\theta$. The angle between the slots replaces the angle of the Lorentz transformation.</p>
 <h2 id="the-exponential">The Exponential</h2>
-<p><strong>The operator exponential.</strong> Since $\Theta_{\tilde Q}=\lvert c\rvert^{2}\Theta_{\tilde\Pi}$ and $\Theta_{\tilde\Pi}^{2}=\Theta_{\tilde\Pi}$,</p>
+<p><strong>The operator exponential.</strong> Since $\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$ and $\mathrm{Sd}_{\tilde\Pi}^{2}=\mathrm{Sd}_{\tilde\Pi}$,</p>
 <p>$$
 \boxed{\;
-\exp\bigl(t\Theta_{\tilde Q}\bigr)
-=I+\bigl(e^{t\lvert c\rvert^{2}}-1\bigr)\Theta_{\tilde\Pi}
+\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)
+=I+\bigl(e^{t\lvert c\rvert^{2}}-1\bigr)\mathrm{Sd}_{\tilde\Pi}
 \;}
 $$</p>
-<p>for every complex $t$. The eigenvalues are $e^{t\lvert c\rvert^{2}}$ and $1$ (three times); the determinant is $e^{t\lvert c\rvert^{2}}$. The group is invertible for every $t$, although the generator $\Theta_{\tilde Q}$ is singular. It dilates the image line and fixes the kernel hyperplane.</p>
-<p><strong>The element flow.</strong> The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$ is a unit for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its sandwich $\Theta_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\Theta_{\tilde Q}$:</p>
+<p>for every complex $t$. The eigenvalues are $e^{t\lvert c\rvert^{2}}$ and $1$ (three times); the determinant is $e^{t\lvert c\rvert^{2}}$. The group is invertible for every $t$, although the generator $\mathrm{Sd}_{\tilde Q}$ is singular. It dilates the image line and fixes the kernel hyperplane.</p>
+<p><strong>The element flow.</strong> The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$ is a unit for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its sandwich $\mathrm{Sd}_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\mathrm{Sd}_{\tilde Q}$:</p>
 <p>$$
-\Theta_{\exp(t\tilde Q)}
-=\exp\bigl(t\Theta_{\tilde Q}\bigr).
+\mathrm{Sd}_{\exp(t\tilde Q)}
+=\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr).
 $$</p>
 <p>The generator is singular, but the one-parameter group it generates is invertible. The one-sided rate is $c$; the sandwich rate is $\lvert c\rvert^{2}$, the squared modulus. The generator is now an oblique projection rather than a conformal Lorentz transformation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="example-1-a-hermitian-idempotent">Example 1: a Hermitian idempotent</h3>
-<p>Take $\tilde Q=e_t+i\vec e_x$. Then $c=2$, $\tilde\Pi=(e_t+i\vec e_x)/2$, $\kappa=1$, $a=1$, $P=\tilde\Pi$, and $\tilde Q_H=\tilde Q$, $\tilde Q_0=\tilde\Pi$. The sandwich is $\Theta_{\tilde Q}=4\Theta_{\tilde\Pi}$, with rank one, eigenvalue $4$, singular value $4$, and image the line $\mathbb{C}\tilde Q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
+<p>Take $\tilde Q=e_t+i\vec e_x$. Then $c=2$, $\tilde\Pi=(e_t+i\vec e_x)/2$, $\kappa=1$, $a=1$, $P=\tilde\Pi$, and $\tilde Q_H=\tilde Q$, $\tilde Q_0=\tilde\Pi$. The sandwich is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi}$, with rank one, eigenvalue $4$, singular value $4$, and image the line $\mathbb{C}\tilde Q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
 <p>$$
-\mathsf M\bigl(\Theta_{\tilde Q}\bigr)=
+\mathsf M\bigl(\mathrm{Sd}_{\tilde Q}\bigr)=
 \begin{pmatrix}
 2&-2i&0&0\\
 2i&2&0&0\\
@@ -322,9 +322,9 @@ $$</p>
 0&0&0&0
 \end{pmatrix},
 $$</p>
-<p>with trace $4$, rank one and square $\Theta_{\tilde Q}^{2}=4\Theta_{\tilde Q}$. The exponential is</p>
+<p>with trace $4$, rank one and square $\mathrm{Sd}_{\tilde Q}^{2}=4\mathrm{Sd}_{\tilde Q}$. The exponential is</p>
 <p>$$
-\exp\bigl(t\Theta_{\tilde Q}\bigr)=I+\bigl(e^{4t}-1\bigr)\Theta_{\tilde\Pi}.
+\exp\bigl(t\mathrm{Sd}_{\tilde Q}\bigr)=I+\bigl(e^{4t}-1\bigr)\mathrm{Sd}_{\tilde\Pi}.
 $$</p>
 <h3 id="example-2-a-non-hermitian-idempotent">Example 2: a non-Hermitian idempotent</h3>
 <p>Take $\tilde Q=e_t+\vec e_x+i\sqrt2\,\vec e_z$. Then $c=2$, $\kappa=2$, $a=\sqrt2$, $\tilde\Xi=\vec e_x+i\sqrt2\,\vec e_z$, and</p>
@@ -335,7 +335,7 @@ P=\frac12 e_t-\frac{i\sqrt2}{4}\vec e_y+\frac{i\sqrt2}{4}\vec e_z,
 \qquad
 \tilde Q_0=\frac{\sqrt2}{4}e_t+\frac{\sqrt2}{4}\vec e_x+\frac{i}{2}\vec e_z .
 $$</p>
-<p>The sandwich is $\Theta_{\tilde Q}=4\Theta_{\tilde\Pi}$, with rank one, eigenvalue $4$, and singular value $8$. The eigenvalue-to-singular-value ratio is $\tfrac12=\cos^{2}\theta$, because $\cos\theta=1/\sqrt2$. The image is the null line $\mathbb{C}P$, with $P\neq\tilde\Pi$; the sandwich is not self-adjoint, and its Peirce matrix in the spectral basis is not diagonal. The example shows the difference between the eigenvalue $\lvert c\rvert^{2}$ and the singular value $4a^{2}$ for an oblique idempotent.</p>
+<p>The sandwich is $\mathrm{Sd}_{\tilde Q}=4\mathrm{Sd}_{\tilde\Pi}$, with rank one, eigenvalue $4$, and singular value $8$. The eigenvalue-to-singular-value ratio is $\tfrac12=\cos^{2}\theta$, because $\cos\theta=1/\sqrt2$. The image is the null line $\mathbb{C}P$, with $P\neq\tilde\Pi$; the sandwich is not self-adjoint, and its Peirce matrix in the spectral basis is not diagonal. The example shows the difference between the eigenvalue $\lvert c\rvert^{2}$ and the singular value $4a^{2}$ for an oblique idempotent.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
@@ -356,15 +356,15 @@ $$</p>
 </tr>
 <tr>
 <td>sandwich</td>
-<td>$\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>
 <td>closed form</td>
-<td>$\Theta_{\tilde Q}=\lvert c\rvert^{2}\Theta_{\tilde\Pi}$, $\Theta_{\tilde\Pi}^{2}=\Theta_{\tilde\Pi}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde\Pi}$, $\mathrm{Sd}_{\tilde\Pi}^{2}=\mathrm{Sd}_{\tilde\Pi}$</td>
 </tr>
 <tr>
 <td>square</td>
-<td>$\Theta_{\tilde Q}^{2}=\lvert c\rvert^{2}\Theta_{\tilde Q}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}^{2}=\lvert c\rvert^{2}\mathrm{Sd}_{\tilde Q}$</td>
 </tr>
 <tr>
 <td>rank</td>
@@ -404,11 +404,11 @@ $$</p>
 </tr>
 <tr>
 <td>scalar collapse</td>
-<td>$\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$</td>
 </tr>
 <tr>
 <td>exponential</td>
-<td>$\exp(t\Theta_{\tilde Q})=I+(e^{t\lvert c\rvert^{2}}-1)\Theta_{\tilde\Pi}$</td>
+<td>$\exp(t\mathrm{Sd}_{\tilde Q})=I+(e^{t\lvert c\rvert^{2}}-1)\mathrm{Sd}_{\tilde\Pi}$</td>
 </tr>
 <tr>
 <td>element flow</td>
@@ -420,7 +420,7 @@ $$</p>
 <ul>
 <li>The norm degeneration fixes the rank: the sandwich has rank one and its image is a null line.</li>
 <li>The spectral regularity fixes the Jordan type: the sandwich is an oblique projection up to scale, not a nilpotent.</li>
-<li>The polar pair collapses: $\Theta_{\tilde Q}=4a^{2}\Theta_{\tilde Q_0}$, with $\Theta_{\tilde Q_0}$ a partial isometry; the positive factor acts as the scalar $4a^{2}$ on the image.</li>
+<li>The polar pair collapses: $\mathrm{Sd}_{\tilde Q}=4a^{2}\mathrm{Sd}_{\tilde Q_0}$, with $\mathrm{Sd}_{\tilde Q_0}$ a partial isometry; the positive factor acts as the scalar $4a^{2}$ on the image.</li>
 <li>The non-zero singular value is $4a^{2}=(2a)^{2}$, the square of the one-sided singular value; the eigenvalue is $\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$.</li>
 <li>The phase is cancelled; the sandwich sees only $\lvert c\rvert^{2}$ and the Hermitian projection $P$.</li>
 <li>The two slots are the singular vectors $u$ and $v$; their overlap $\cos\theta=1/\sqrt{\kappa}$ determines the eigenvalue-to-singular-value ratio, and it vanishes at the wall $\Sigma_{00}$.</li>
@@ -439,7 +439,7 @@ $$</p>
 <td>an element of $\Sigma_{01}$</td>
 </tr>
 <tr>
-<td>$\Theta_{\tilde Q}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
 <td>the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>

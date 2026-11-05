@@ -270,14 +270,14 @@ so that the modular transformation law $f\bigl(i/(Ny)\bigr) = \varepsilon\,(i\sq
 <h2 id="theta-series-and-the-half-integral-weight-theory">Theta Series and the Half-Integral Weight Theory</h2>
 <p><strong>Definition.</strong> For a positive definite quadratic form $\mathfrak{Q}$ on $\mathbb{Z}^n$ the <strong>theta series</strong> is
 $$
-\theta_Q(z) = \sum_{x\in\mathbb{Z}^n}q^{\mathfrak{Q}(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : \mathfrak{Q}(x) = m\},
+\vartheta^{\mathrm{thf}}_Q(z) = \sum_{x\in\mathbb{Z}^n}q^{\mathfrak{Q}(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : \mathfrak{Q}(x) = m\},
 $$
-and for the standard form $\mathfrak{Q}(x) = x^2$ the series is $\theta(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.</p>
-<p><strong>Theorem.</strong> If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\theta_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\theta\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\theta^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
+and for the standard form $\mathfrak{Q}(x) = x^2$ the series is $\vartheta^{\mathrm{thf}}(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.</p>
+<p><strong>Theorem.</strong> If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\vartheta^{\mathrm{thf}}_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\vartheta^{\mathrm{thf}}\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\vartheta^{\mathrm{thf}}^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
 $$
-\theta(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
+\vartheta^{\mathrm{thf}}(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
 $$
-<strong>Proof sketch.</strong> The transformation law of the theta series is the Poisson summation formula of <em>Zeta Functions</em>, which gives $\theta(-1/z) = (z/i)^{1/2}\theta(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim \mathsf{M}_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.</p>
+<strong>Proof sketch.</strong> The transformation law of the theta series is the Poisson summation formula of <em>Zeta Functions</em>, which gives $\vartheta^{\mathrm{thf}}(-1/z) = (z/i)^{1/2}\vartheta^{\mathrm{thf}}(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim \mathsf{M}_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.</p>
 <p><strong>Example.</strong> The formula gives $r_4(1) = 8$, $r_4(2) = 24$, $r_4(3) = 32$, $r_4(4) = 24$: for $n=2$ the representations are the permutations of $(\pm1,\pm1,0,0)$, of which there are $24$, and for $n=4$ the representations are the eight of $(\pm2,0,0,0)$ and the sixteen of $(\pm1,\pm1,\pm1,\pm1)$, again $24$. The agreement with the formula is the classical theorem of Jacobi on the four-square numbers.</p>
 <p><strong>Remark (weight one-half and the multiplier).</strong> The half-integral weight theory requires a multiplier system, since $j(\gamma,z)^{1/2}$ is not a function of $\gamma$ alone; the resulting spaces $M_{k/2}(\Gamma,\chi)$ carry a Hecke theory of their own, due to Shimura, whose operators raise the weight by $2$, and the Waldspurger formula relates the Fourier coefficients of a half-integral weight form to the central values of the $L$-functions of the corresponding integral weight forms.</p>
 <h2 id="modular-forms-and-arithmetic">Modular Forms and Arithmetic</h2>
@@ -384,7 +384,7 @@ unramified outside $N$ and $\lambda$, such that the characteristic polynomial of
 <td>Critical line and right edge of the critical strip of $L(f,s)$</td>
 </tr>
 <tr>
-<td>$\theta$, $r_Q(m)$, $r_4(n)$</td>
+<td>$\vartheta^{\mathrm{thf}}$, $r_Q(m)$, $r_4(n)$</td>
 <td>Theta series, representation numbers</td>
 </tr>
 <tr>

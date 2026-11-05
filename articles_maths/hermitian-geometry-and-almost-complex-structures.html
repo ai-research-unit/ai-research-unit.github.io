@@ -190,18 +190,18 @@ $$</p>
 <p><strong>(b)</strong> $\nabla J = 0$;</p>
 <p><strong>(c)</strong> the torsion $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$ has vanishing $(0,2)$-component, equivalently $T(X,Y) = T(JX,JY)$ for all $X, Y$.</p>
 <p>This is the <strong>Chern connection</strong> of the Hermitian structure.</p>
-<p><strong>Proof sketch.</strong> Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = \theta_{kj}\otimes e_k$ with</p>
+<p><strong>Proof sketch.</strong> Conditions (a) and (b) are linear in $\nabla$ and define an affine space of connections; the difference $\nabla - \nabla^{LC}$ of two connections with $\nabla J = 0$ is a tensor with values in the $J$-skew endomorphisms. Imposing (c) fixes the free part. Concretely, in a local complex frame $e_1,\ldots,e_n$ of $T^{1,0}$ with $g_{i\bar j} = g(e_i, \bar e_j)$, the conditions force $\nabla e_j = A_{kj}\otimes e_k$ with</p>
 <p>$$
-\theta_{kj} = \sum_l (g^{-1})_{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } \theta_{kj} = 0,
+A_{kj} = \sum_l (g^{-1})_{k\bar l}\,\partial g_{j\bar l}, \qquad \text{and} \qquad \bar\partial \text{-part of } A_{kj} = 0,
 $$</p>
-<p>that is, the connection $1$-form is $\theta = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.</p>
-<p><strong>Proposition.</strong> The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is <strong>compatible with the Hermitian metric</strong> in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has <strong>type $(1,1)$</strong>, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $\theta = h^{-1}\partial h$ and the curvature matrix is</p>
+<p>that is, the connection $1$-form is $A = h^{-1}\partial h$ in a holomorphic frame. Uniqueness is the uniqueness of the solution of the resulting linear system.</p>
+<p><strong>Proposition.</strong> The Chern connection is the unique connection on the holomorphic tangent bundle $\nabla : \Gamma(T^{1,0})\to\Omega^1\otimes\Gamma(T^{1,0})$ that is <strong>compatible with the Hermitian metric</strong> in the sense $dh(u,v) = h(\nabla u, v) + h(u,\nabla v)$ and whose $(0,1)$-part is the Dolbeault operator $\bar\partial$; its curvature has <strong>type $(1,1)$</strong>, that is, the curvature $2$-form takes values in the $(1,1)$-forms. In a holomorphic frame the connection matrix is $A = h^{-1}\partial h$ and the curvature matrix is</p>
 <p>$$
-\boxed{\;\Theta = \bar\partial\theta = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h\;},
+\boxed{\;\Omega = \bar\partialA = \bar\partial(h^{-1}\partial h) = -\,h^{-1}\,\bar\partial h\, h^{-1}\wedge \partial h + h^{-1}\,\bar\partial\partial h\;},
 $$</p>
 <p>which is a matrix of $(1,1)$-forms.</p>
-<p><strong>Proof.</strong> In a holomorphic frame the entries of $h$ are smooth functions satisfying $h_{j\bar l} = \overline{h_{l\bar j}}$; the metric-compatibility condition $dh = {}^t\bar\theta\, h + h\,\theta$ forces the antiholomorphic part of $\theta$ to vanish, and the $(1,0)$-part is $h^{-1}\partial h$. The curvature is $\Theta = d\theta + \theta\wedge\theta$ for the convention $\nabla = d + \theta$, and since $\partial(h^{-1}) = -h^{-1}\partial h\,h^{-1}$ one has $\partial\theta = -\,h^{-1}\partial h\,h^{-1}\wedge\partial h = -\theta\wedge\theta$, so the $(2,0)$-terms cancel and $\Theta = \bar\partial\theta$.</p>
-<p><strong>Remark.</strong> The Chern classes of a Hermitian holomorphic vector bundle are the Chern–Weil classes of $\frac{i}{2\pi}\Theta$, and they are independent of the metric; that construction and the splitting principle belong to <em>Characteristic Classes</em>, earlier in this Part. In the Kähler case the Chern connection coincides with the Levi-Civita connection of $g$: the Levi-Civita connection preserves $J$ exactly when $\Omega$ is closed, and then it satisfies (a), (b) and (c) and is unique. The condition $\nabla J = 0$ for the Levi-Civita connection is therefore equivalent to the Kähler condition $d\Omega = 0$, and this is the bridge to <em>Kähler Geometry</em>.</p>
+<p><strong>Proof.</strong> In a holomorphic frame the entries of $h$ are smooth functions satisfying $h_{j\bar l} = \overline{h_{l\bar j}}$; the metric-compatibility condition $dh = {}^t\barA\, h + h\,A$ forces the antiholomorphic part of $A$ to vanish, and the $(1,0)$-part is $h^{-1}\partial h$. The curvature is $\Omega = dA + A\wedgeA$ for the convention $\nabla = d + A$, and since $\partial(h^{-1}) = -h^{-1}\partial h\,h^{-1}$ one has $\partialA = -\,h^{-1}\partial h\,h^{-1}\wedge\partial h = -A\wedgeA$, so the $(2,0)$-terms cancel and $\Omega = \bar\partialA$.</p>
+<p><strong>Remark.</strong> The Chern classes of a Hermitian holomorphic vector bundle are the Chern–Weil classes of $\frac{i}{2\pi}\Omega$, and they are independent of the metric; that construction and the splitting principle belong to <em>Characteristic Classes</em>, earlier in this Part. In the Kähler case the Chern connection coincides with the Levi-Civita connection of $g$: the Levi-Civita connection preserves $J$ exactly when $\Omega$ is closed, and then it satisfies (a), (b) and (c) and is unique. The condition $\nabla J = 0$ for the Levi-Civita connection is therefore equivalent to the Kähler condition $d\Omega = 0$, and this is the bridge to <em>Kähler Geometry</em>.</p>
 <p><strong>Remark (the almost Hermitian classes).</strong> For an almost Hermitian manifold whose almost complex structure need not be integrable, the Levi-Civita connection generally fails to preserve $J$, and the tensor $\nabla J$ together with $d\Omega$ defines the <strong>Gray–Hervella classes</strong> of almost Hermitian structures. They are the four $\mathrm{U}(n)$-modules $W_1, W_2, W_3, W_4$ in which the covariant derivative of $\Omega$ can lie, and the notable classes are: <strong>nearly Kähler</strong> ($\nabla J$ totally antisymmetric, only $W_1$), <strong>almost Kähler</strong> ($d\Omega = 0$, only $W_2$), <strong>Hermitian</strong> ($J$ integrable, only $W_3\oplus W_4$), and <strong>Kähler</strong> (all four zero). The classes organise the intermediate geometries between the almost complex and the Kähler settings and are the source of the nearly Kähler six-sphere, whose structure is the round metric with the octonionic $J$ and which is not Kähler.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (complex Euclidean space).</strong> On $\mathbb{C}^n$ with the standard $J$ and the Euclidean metric $g$, the fundamental form is $\Omega = \sum_i dx_i\wedge dy_i$: indeed $\Omega(\partial/\partial x_i,\partial/\partial y_i) = g(J\partial/\partial x_i,\partial/\partial y_i) = g(\partial/\partial y_i,\partial/\partial y_i) = 1$, and $\Omega$ is alternating. Since the coefficients are constant, $d\Omega=0$ and the structure is Kähler. This is the model Hermitian structure, and its Chern connection is the flat connection.</p>
@@ -277,11 +277,11 @@ $$</p>
 <td>Local expressions in holomorphic coordinates</td>
 </tr>
 <tr>
-<td>$\theta = h^{-1}\partial h$</td>
+<td>$A = h^{-1}\partial h$</td>
 <td>Chern connection $1$-form in a holomorphic frame</td>
 </tr>
 <tr>
-<td>$\Theta = \bar\partial\theta$</td>
+<td>$\Omega = \bar\partialA$</td>
 <td>Chern curvature, of type $(1,1)$</td>
 </tr>
 <tr>

@@ -83,9 +83,9 @@ and for $\sigma=0$ it is the form of the category, $\langle f,g\rangle_0=\sum_nf
 <h3 id="the-adjoint-relation">The adjoint relation</h3>
 <p><strong>Theorem.</strong> For the local operator $M_h$ of multiplication by $h$, the adjoint with respect to the coefficient pairing is
 $$
-\boxed{\;\langle M_hf,g\rangle_\sigma=\langle f,\Theta_hg\rangle_\sigma\;} ,
+\boxed{\;\langle M_hf,g\rangle_\sigma=\langle f,\mathrm{Sd}_hg\rangle_\sigma\;} ,
 $$
-with $(\Theta_hg)(k)=\sum_m\overline{h(m)}g(mk)$; the adjoint of the multiplication by a completely multiplicative function $h$ with $|h(p)|=1$ is the multiplication by $\overline h$ composed with the transposed operator, and on the space of the functions supported on the squarefree integers with $|h(p)|=1$ the operator $M_h$ is unitary.</p>
+with $(\mathrm{Sd}_hg)(k)=\sum_m\overline{h(m)}g(mk)$; the adjoint of the multiplication by a completely multiplicative function $h$ with $|h(p)|=1$ is the multiplication by $\overline h$ composed with the transposed operator, and on the space of the functions supported on the squarefree integers with $|h(p)|=1$ the operator $M_h$ is unitary.</p>
 <p><strong>Proof.</strong> The first statement is the definition of the transposed multiplication; the second is the computation for the unitary case, in which the two sums coincide after the change of variables $n\mapsto mk$. The details are in <em>The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</em>.</p>
 <h2 id="the-completed-pairing">The Completed Pairing</h2>
 <h3 id="the-rankinselberg-convolution">The Rankin–Selberg convolution</h3>
@@ -114,7 +114,7 @@ with the root number $\epsilon$, so the involution $s\mapsto1-\bar s$ acts on th
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
 <p>The pairings fail in four degenerate configurations. First, the coefficient pairing converges only for $\sigma$ larger than the abscissa of the square-integrability, and at the critical line it may diverge; the pairing must then be defined by the analytic continuation of the completed convolution. Second, the Rankin–Selberg convolution has a pole when the two $L$-functions are not orthogonal, and the pairing is then not finite; the pairing of a form with itself has the pole that computes the Petersson norm, and the pole is removed by the regularisation. Third, the positivity of the completed pairing requires the cuspidality of the forms; for the Eisenstein series the convolution has extra poles and the pairing is not positive definite. Fourth, when the conductors are not coprime the local factors can share a ramified component and the product of the $L$-functions is not the $L$-function of a single object; the pairing is then the pairing of a non-primitive product and its functional equation has an extra factor. These are the boundary cases of the Hermitian pairings.</p>
 <h2 id="summary">Summary</h2>
-<p>Every $L$-function carries the coefficient Hermitian pairing $\langle f,g\rangle_\sigma=\sum_nf(n)\overline{g(n)}n^{-\sigma}$, positive definite on the functions of finite norm and invariant under the shift, whose local adjoints are the transposed multiplications $\Theta_h$; and the completed pairing $\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\frac12)$ defined by the Rankin–Selberg convolution, Hermitian, positive definite on the cuspidal part, and compatible with the conjugate symmetry up to the root number. The rank-one and primitive cases recover the classical pairings, and the degenerate cases are the divergence at the critical line, the pole of the self-convolution, the non-cuspidal Eisenstein part and the shared ramified factors.</p>
+<p>Every $L$-function carries the coefficient Hermitian pairing $\langle f,g\rangle_\sigma=\sum_nf(n)\overline{g(n)}n^{-\sigma}$, positive definite on the functions of finite norm and invariant under the shift, whose local adjoints are the transposed multiplications $\mathrm{Sd}_h$; and the completed pairing $\langle f,g\rangle_{\mathrm{RS}}=\Lambda(f\times\bar g,\frac12)$ defined by the Rankin–Selberg convolution, Hermitian, positive definite on the cuspidal part, and compatible with the conjugate symmetry up to the root number. The rank-one and primitive cases recover the classical pairings, and the degenerate cases are the divergence at the critical line, the pole of the self-convolution, the non-cuspidal Eisenstein part and the shared ramified factors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -133,7 +133,7 @@ with the root number $\epsilon$, so the involution $s\mapsto1-\bar s$ acts on th
 <td>Space of the form at $\sigma=0$</td>
 </tr>
 <tr>
-<td>$\Theta_h$</td>
+<td>$\mathrm{Sd}_h$</td>
 <td>Transposed multiplication</td>
 </tr>
 <tr>

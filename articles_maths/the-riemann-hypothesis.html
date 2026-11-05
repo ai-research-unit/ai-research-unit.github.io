@@ -110,9 +110,9 @@ $$
 each to six decimal places, these being the exact ordinates of zeros of $\zeta$ on the line, not approximations to them, to the accuracy stated.</p>
 <p><strong>Proof sketch (the method).</strong> The Riemann–Siegel formula, obtained from the saddle-point analysis of the integral representation of $\zeta$, gives
 $$
-Z(t) = 2\sum_{n\leq N}\frac{\cos(\theta(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
+Z(t) = 2\sum_{n\leq N}\frac{\cos(\vartheta^{\mathrm{thf}}(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
 $$
-for the function $Z(t) = \exp(i\theta(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.</p>
+for the function $Z(t) = \exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.</p>
 <p><strong>Remark (the extent of the verification).</strong> The numerical verification of the hypothesis has reached the first $10^{13}$ zeros in computations without rigorous error bounds, and all the zeros with $\lvert\gamma\rvert < 3\cdot10^{12}$ in a rigorous computation; no zero off the line has ever been found, and none has ever been proved to exist.</p>
 <p><strong>Remark (the numerical check of the ten ordinates).</strong> Evaluating $\zeta(\tfrac12+it)$ from the Euler–Maclaurin expansion — the sum $\sum_{n<N}n^{-s}$ completed by the terms $N^{1-s}/(s-1)+\tfrac12N^{-s}$ and the Bernoulli correction — locates the ten zeros above: the computed value of $\lvert\zeta(\tfrac12+i\gamma_k)\rvert$ is below $10^{-6}$ at each of the ten ordinates displayed, while every other local minimum of $\lvert\zeta(\tfrac12+it)\rvert$ below $t=50$ exceeds $10^{-2}$. The comparison of the count of the zeros found in this way with the Riemann–von Mangoldt formula is what turns the numerics into a verification in a range, and the correction term of the Riemann–Siegel formula is what makes the computation efficient at height rather than the crude expansion used here.</p>
 <h2 id="equivalent-formulations">Equivalent Formulations</h2>
@@ -140,7 +140,7 @@ $$
 $$
 <strong>Theorem (Li's criterion).</strong> $\lambda_n = \sum_{\rho}\bigl(1-(1-1/\rho)^n\bigr)$, the sum over the nontrivial zeros, and the Riemann hypothesis is equivalent to $\lambda_n\geq0$ for every $n\geq1$.</p>
 <p><strong>Proof sketch.</strong> Expanding the logarithm of the Hadamard product for $\xi$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.</p>
-<p><strong>Theorem (Nyman–Beurling criterion).</strong> For $0<\theta<1$ let $\rho_\theta(x) = \{\theta/x\}-\theta\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\theta$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.</p>
+<p><strong>Theorem (Nyman–Beurling criterion).</strong> For $0<\vartheta^{\mathrm{nym}}<1$ let $\rho_\vartheta^{\mathrm{nym}}(x) = \{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\vartheta^{\mathrm{nym}}$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.</p>
 <p><strong>Remark (Weil's positivity criterion).</strong> The explicit formula of <em>The Prime Number Theorem</em>, in Weil's form, expresses the sum $\sum_\rho h(\gamma)$ over the nontrivial zeros, for a suitable test function $h$, as an explicit distribution $W(h)$ whose terms involve the archimedean factor and the sum over the primes. The criterion, proved by Weil and reformulated by Bombieri, is that the Riemann hypothesis is equivalent to the positivity
 $$
 \boxed{\;W(h * h^{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h^{\mathrm{refl}}(x) = \overline{h(-x)}\;},
@@ -238,8 +238,8 @@ $$
 <td>$\frac1\pi\arg\zeta(\tfrac12+iT)$, the fluctuation in the count</td>
 </tr>
 <tr>
-<td>$Z(t)$, $\theta(t)$</td>
-<td>Riemann–Siegel function $\exp(i\theta(t))\zeta(\tfrac12+it)$ and its phase</td>
+<td>$Z(t)$, $\vartheta^{\mathrm{thf}}(t)$</td>
+<td>Riemann–Siegel function $\exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$ and its phase</td>
 </tr>
 <tr>
 <td>$M(x)$</td>
@@ -254,8 +254,8 @@ $$
 <td>Li coefficients, $\lambda_n = \sum_\rho(1-(1-1/\rho)^n)$</td>
 </tr>
 <tr>
-<td>$\rho_\theta$</td>
-<td>Nyman–Beurling function $\{\theta/x\}-\theta\{1/x\}$</td>
+<td>$\rho_\vartheta^{\mathrm{nym}}$</td>
+<td>Nyman–Beurling function $\{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$</td>
 </tr>
 <tr>
 <td>$W(h)$, $h^{\mathrm{refl}}$</td>

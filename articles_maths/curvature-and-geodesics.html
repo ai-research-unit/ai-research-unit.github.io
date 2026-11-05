@@ -106,7 +106,7 @@ $$</p>
 \qquad
 \Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\Bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\Bigr),
 $$</p>
-<p>where $(g^{-1})_{kl}$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta_{ij})$ of $1$-forms with $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.</p>
+<p>where $(g^{-1})_{kl}$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $A = (A_{ij})$ of $1$-forms with $A_{ij} = \sum_k \Gamma_{ijk}dx_k$; the connection-form letter is $A$ and not $\omega$, which is reserved for the symplectic form.</p>
 <h3 id="parallel-transport">Parallel Transport</h3>
 <p><strong>Definition.</strong> A vector field $V$ along a curve $\gamma$ is <strong>parallel</strong> if $\nabla_{\gamma'}V = 0$. For each curve $\gamma : [a, b] \to M$ and each $v \in T_{\gamma(a)}M$ there is a unique parallel field $V$ along $\gamma$ with $V(a) = v$; the proof is the existence and uniqueness theory for the linear equation $\nabla_{\gamma'}V = 0$, which is that of Part III, where the differential equations are available; the <strong>parallel transport</strong> is the linear isomorphism</p>
 <p>$$
@@ -160,7 +160,7 @@ $$</p>
 R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X, Y]}Z,
 $$</p>
 <p>a $(1, 3)$-tensor, and the associated $(0, 4)$-tensor is $R(X, Y, Z, W) = g(R(X, Y)Z, W)$.</p>
-<p>The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = d\theta + \theta \wedge \theta$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.</p>
+<p>The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = dA + A \wedge A$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.</p>
 <p><strong>Theorem (symmetries).</strong> The $(0,4)$-curvature tensor satisfies</p>
 <p>$$
 R(X, Y, Z, W) = -R(Y, X, Z, W) = -R(X, Y, W, Z) = R(Z, W, X, Y),
@@ -310,8 +310,8 @@ $$</p>
 <td>Levi-Civita connection; covariant derivative of $Y$ along $X$</td>
 </tr>
 <tr>
-<td>$\theta = (\theta_{ij})$, $\Gamma_{kij}$</td>
-<td>Connection form and Christoffel symbols; $\theta$ is the connection-form letter of half A</td>
+<td>$A = (A_{ij})$, $\Gamma_{kij}$</td>
+<td>Connection form and Christoffel symbols; $A$ is the connection-form letter of half A</td>
 </tr>
 <tr>
 <td>$P_\gamma$</td>
@@ -326,7 +326,7 @@ $$</p>
 <td>Curvature tensor</td>
 </tr>
 <tr>
-<td>$\mathcal{R} = d\theta + \theta\wedge\theta$</td>
+<td>$\mathcal{R} = dA + A\wedgeA$</td>
 <td>Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used</td>
 </tr>
 <tr>

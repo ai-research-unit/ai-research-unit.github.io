@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Angles of the Corpus: One Letter, Two Cases — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-angles-of-the-corpus-one-letter-two-cases"><strong>The Angles of the Corpus: One Letter, Two Cases</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus writes an angle with eight glyphs. They are $\theta$, $\phi$, $\alpha$, $\Theta$, $\lambda$, $\Omega$, $\psi$ and $\eta$. One of the eight already carries 91 per cent of the role, and the other seven carry the rest in small and scattered blocks.</p>
+<p>The proposal is one line. <strong>A real angle is $\theta$ and a complex angle is $\Theta$.</strong> The case is not a new rule; it is the rule the conventions already state and the angle role is the last role it had not reached.</p>
+<p>The conventions read the case as the scalar sector. The summary table of <em>Algebra and Element Conventions</em> says it in five words: "Lower case, upper case | The scalar sector is the reals, or larger than the reals." A real angle is a real number, so it takes the lower case. A complex angle has a complex scalar sector, so it takes the upper case. That is the whole of the justification, and it is a rule the corpus applies to elements, to idempotents, to nilpotents and to roots.</p>
+<p>The corpus has already half-decided the question in its own articles. <em>The Hamilton Pairing: Mass as Modulus and the Complex Angle</em> writes the angle as $\Theta$ and puts it in the index as "the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$". The eigenvalues of a biquaternion are $\lambda_\pm=\Rho e^{\pm i\Theta}$. A four-momentum carries $\Theta=-i\psi$. Capital $\Theta$ is the complex angle there, and nothing in that article is being proposed here; it is being generalised.</p>
+<p>The question this article answers is what the other seven glyphs are to do, and what the migration costs.</p>
+<h2 id="how-the-census-was-taken">How the Census Was Taken</h2>
+<p>An occurrence is counted as an angle when one of four things holds. The glyph is the argument of a trigonometric or hyperbolic function. The glyph stands inside a parenthesised pair with $\theta$. The glyph carries a label that names an angle. The sentence calls it an angle, an azimuth, a latitude or a solid angle.</p>
+<p>The rule is a role reading and not a keyword count. A glyph can sit in the same sentence as the word "angle" and not be the angle: $\Omega_{\mathrm E}$ in the Foucault article is an angular velocity, $\delta_{ij}$ is a Kronecker delta, $\alpha$ in $\exp(i\alpha x)$ is a wave number. Each of those is excluded by the rule and each is reported in the residual column below.</p>
+<p>The corpus is 412 articles. The counts are of the control sequence, so $\theta$, $\theta_W$ and $\theta_0$ are three occurrences of one glyph.</p>
+<h2 id="what-the-corpus-writes-today">What the Corpus Writes Today</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>angle occurrences</th>
+<th>articles</th>
+<th>what else the glyph carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta$</td>
+<td>3859</td>
+<td>216</td>
+<td>3814</td>
+<td>216</td>
+<td>the stress tensor, $\theta_{\mu\nu}$, 45 in 9</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>2006</td>
+<td>123</td>
+<td>167</td>
+<td>18</td>
+<td>the field 1119, the auxiliary 200, the phase 110, the second state 61</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>3033</td>
+<td>186</td>
+<td>31</td>
+<td>9</td>
+<td>the fine-structure constant 40 in 18; an index, 596 in 66</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>428</td>
+<td>45</td>
+<td>34</td>
+<td>8</td>
+<td>the step $\Theta(t)$ 22 in 6; a stress tensor 5 in 2; the complex parameter 33 in 10</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>3609</td>
+<td>217</td>
+<td>63</td>
+<td>2</td>
+<td>an eigenvalue, a wavelength, an index</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>1020</td>
+<td>84</td>
+<td>58</td>
+<td>11</td>
+<td>an angular velocity, a domain</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>4584</td>
+<td>211</td>
+<td>8</td>
+<td>1</td>
+<td>the spinor 2839, the rapidity 1113</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>600</td>
+<td>53</td>
+<td>3</td>
+<td>1</td>
+<td>an index; the rapidity target of the other migration</td>
+</tr>
+</tbody>
+</table></div>
+<p>The angle occurrences sum to 4178, and $\theta$ holds 3814 of them. That is 91.3 per cent.</p>
+<p><strong>The migration is therefore not a rename.</strong> It is a return: seven glyphs give back 364 occurrences they were holding on loan, and $\theta$ gives up 45 that were never angles.</p>
+<h2 id="the-real-angle-is-already-theta">The Real Angle Is Already Theta</h2>
+<p>$\theta$ is the default angle of the corpus, and it is the default in every context the corpus uses an angle for. It is the rotation angle of a versor, $\cos\theta+r\sin\theta$. It is the half angle of a rotor, $\cos(\theta/2)e_t+\sin(\theta/2)\vec u$. It is the polar coordinate of a sphere. It is the argument of the phase factor $\exp(i\theta)$. It is the weak mixing angle, $\theta_W$, 120 occurrences in 8 articles. It is the orientation of a Kepler orbit, $\theta_0$, 155 occurrences in 15 articles.</p>
+<p>No other glyph comes close, and no other glyph is used for the role across so many articles. The role is already written 216 times over, in more than half of the 412 articles of the corpus.</p>
+<p><strong>One use of $\theta$ is not an angle and it has to leave.</strong> A fixed background tensor is written $\theta_{\mu\nu}$ in 9 articles, 45 occurrences. That is a metric perturbation or a projector, and it collides with the letter the migration needs. The corpus already writes the stress tensor as $T_{\mu\nu}$, 116 occurrences in 25 articles, so the five occurrences of $\Theta_{\mu\nu}$ are an inconsistency as well as a collision. Both move: $\theta_{\mu\nu}\to T_{\mu\nu}$ and $\Theta_{\mu\nu}\to T_{\mu\nu}$. The 45 are the only departures the migration makes from $\theta$.</p>
+<h2 id="the-other-uses-of-theta-article-by-article">The Other Uses of Theta, Article by Article</h2>
+<p>The case rule is only worth stating if the two letters are free to carry it. They are not free, and the price of each is different. This section lists what $\theta$ and $\Theta$ do today besides standing for an angle, with the article and the count for each use.</p>
+<p>The two letters are not equally loaded. $\theta$ appears 11,205 times in the corpus: 3,859 in the physics corpus, 7,203 in the mathematical corpus and 143 in this series. $\Theta$ appears 4,216 times: 428, 3,737 and 51. The angles are in the physics corpus, and the letters are busy in the mathematical one.</p>
+<h3 id="the-other-uses-of-lower-theta">The Other Uses of Lower Theta</h3>
+<p><strong>Lower theta carries ten roles that are not angles, in 149 articles.</strong> The census counts 11,062 occurrences of $\theta$ in the two corpora. Of those, 1,107 are not an angle, a phase of the form $\exp(i\theta)$, or an angle-parameter such as $\theta_W$; 62 of the 1,107 are the vacuum angle, which stays, and 1,045 leave.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>was</th>
+<th>now</th>
+<th>occurrences</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a function of a point: involution, semilinear map, field phase</td>
+<td>$\theta(x)$</td>
+<td>$\mathrm{J}(x)$</td>
+<td>755</td>
+<td>118</td>
+</tr>
+<tr>
+<td>a Grassmann variable, a coherent-state label</td>
+<td>$\lvert\theta\rangle$, $\theta_i^2=0$</td>
+<td>$\zeta^{\mathrm{grm}}$</td>
+<td>132</td>
+<td>5</td>
+</tr>
+<tr>
+<td>a non-commutativity parameter</td>
+<td>$[x_\mu,x_\nu]=i\theta_{\mu\nu}$</td>
+<td>$\kappa_{\mu\nu}$</td>
+<td>28</td>
+<td>1</td>
+</tr>
+<tr>
+<td>a transverse-traceless projector</td>
+<td>$\theta_{ij}=\delta_{ij}-u_iu_j$</td>
+<td>$\delta_{ij}-\vec u_i\vec u_j$</td>
+<td>20</td>
+<td>1</td>
+</tr>
+<tr>
+<td>a magnitude, not an angle</td>
+<td>$\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>$\lVert\vec Q\rVert$</td>
+<td>34</td>
+<td>12</td>
+</tr>
+<tr>
+<td>the Chebyshev function</td>
+<td>$\theta(x)=\sum_{p\le x}\log p$</td>
+<td>$\vartheta^{\mathrm{chb}}(x)$</td>
+<td>33</td>
+<td>2</td>
+</tr>
+<tr>
+<td>the theta function, the theta series</td>
+<td>$\theta(t)$, $\theta_Q(z)$</td>
+<td>$\vartheta^{\mathrm{thf}}$</td>
+<td>24</td>
+<td>4</td>
+</tr>
+<tr>
+<td>a connection form</td>
+<td>$\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$</td>
+<td>$\omega_{ij}$</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>a fixed background metric</td>
+<td>$\theta_{\mu\nu}$</td>
+<td>$\mathring{g}_{\mu\nu}$</td>
+<td>7</td>
+<td>4</td>
+</tr>
+<tr>
+<td>a step function</td>
+<td>$V(x)=V_0\,\theta(x)$</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(x)$</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the vacuum angle</td>
+<td>$\bar\theta$</td>
+<td>$\theta^{\mathrm{vac}}$</td>
+<td>62</td>
+<td>8</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One of the eleven stays on $\theta$.</strong> The vacuum angle is a periodic parameter of the gauge field, so it is an angle and the case rule does not touch it. It takes the label the index already has for it, <code>vac</code>, and it keeps the letter.</p>
+<p><strong>Two corrections the first pass got wrong.</strong> The $\theta_{ij}$ of the four Riemannian articles is a connection form, not a metric, and the $\theta_{\mu\nu}$ of <em>Maxwell's Theory on Non-Commutative Spaces</em> is the non-commutativity parameter $[x_\mu,x_\nu]=i\theta_{\mu\nu}$, not a background. So the single row "a background or transverse metric, 55 occurrences in 14 articles" was three objects in one, and $h_{\mu\nu}$ was the wrong replacement for two of them. The fourth object, the real fixed background metric, is 7 occurrences in 4 articles and takes $\mathring{g}_{\mu\nu}$.</p>
+<p><strong>Three occurrences that are angles leave the tensor bucket.</strong> In <em>The CKM Matrix and CP Violation</em> the forms $\theta_{ij}$ and $\theta_C$ are mixing angles, $c_{ij}=\cos\theta_{ij}$ and $\lambda=\sin\theta_C$. They are not a tensor, they keep $\theta$, and they are why the two-index family counts 66 occurrences and not 63.</p>
+<p><strong>A function of a point, 755 occurrences in 118 articles.</strong> The largest role, and it is three things at once: an involution of an algebra, $\theta(x)=-x^{*}$; a semilinear map of a vector space, $\theta_\sigma:T(V)\to T(V)$; and a phase that depends on the point, which the gauge articles write $\theta(x)$. All three are a map applied to an argument, none is an angle, and all three live in the mathematical corpus, where $\theta$ never means an angle.</p>
+<p>The replacement is $\mathrm{J}(x)$: one upright letter for the map, the argument kept, and no label at all. $\mathrm{J}$ is 62 occurrences in 12 articles and none of them is in the 118; the nearest neighbours are the Peirce part $\mathrm{J}_{ij}$ and the Jordan cone $\Sigma_{10}^{\mathrm{J}}$, and both carry a subscript this base never takes.</p>
+<p><strong>No label was added, and that is the point.</strong> <code>inv</code> is the obvious label and it is already taken by another meaning: $k^{\mathrm{inv}}=k^{-1}$ in <em>Analysis on Compact Groups</em>, and $G_{\mathrm{inv}}$ for the invariant Green function, $\Phi_{\mathrm{inv}}$ for the involutive symmetry, $\Gamma_{\mathrm{inv}}$ for the invisible width. A label that reads both "inverse" and "involution" is the ambiguity this article exists to remove, so the letter alone carries the role.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the alternative</th>
+<th>why it was not chosen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\iota(x)$</td>
+<td>$\iota$ is the classical involution letter, but it is 1,662 occurrences in 160 articles and it is a twistor spinor in 7 of the 118</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>it is the principal anti-automorphism the $\theta$ is composed with, 1,935 occurrences in 59 of the 118</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>it is the scalar companion in $\theta(\lambda x+\mu y)=\varsigma(\lambda)\theta(x)+\varsigma(\mu)\theta(y)$</td>
+</tr>
+<tr>
+<td>$\upsilon(x)$</td>
+<td>free in the 118, 172 occurrences in 7 corpus-wide, but $\upsilon$ names no classical object</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/involutions-of-the-tensor-algebra.html">Involutions of the Tensor Algebra</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-sesquilinear-action.html">The Graded Sesquilinear Action</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-structures-on-varieties-and-galois-descent.html">Real Structures on Varieties and Galois Descent</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>37</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutive-topological-linear-spaces.html">Involutive Topological Linear Spaces</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>31</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-continuous-graded-sesquilinear-action.html">The Continuous Graded Sesquilinear Action</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>31</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html">Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutions-of-the-module-endomorphism-ring.html">Involutions of the Module Endomorphism Ring</a></td>
+<td>a function of a point: $\theta(x)$, $\theta_\sigma$, $\theta:M_n(A)\to M_n(A)$</td>
+<td>23</td>
+</tr>
+<tr>
+<td><em>and 110 more articles</em></td>
+<td></td>
+<td>496</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A Grassmann variable, 132 occurrences in 5 articles.</strong> 124 of the 132 are in the two Grassmann articles; the coherent states use $\lvert\theta\rangle$ and $\theta_i^2=0$. The replacement is $\zeta^{\mathrm{grm}}$.</p>
+<p>$\eta$ was the first candidate and it is wrong: in <em>Grassmann Coherent States</em> $\eta$ is already a second Grassmann label, $\langle\theta|\eta\rangle=\exp(\theta^{*}\eta)$, and in <em>Grassmann Variables and Berezin Integration</em> it is the odd shift of $\int f(\theta+\eta)\,d\theta$. Renaming $\theta$ to $\eta$ would merge two distinct labels. $\zeta$ is 0 occurrences in all five articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td>a Grassmann variable, $\lvert\theta\rangle$ and $\theta_i^2=0$</td>
+<td>66</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/grassmann-variables-and-berezin-integration.html">Grassmann Variables and Berezin Integration</a></td>
+<td>a Grassmann variable, $\lvert\theta\rangle$ and $\theta_i^2=0$</td>
+<td>58</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>a Grassmann variable, $\lvert\theta\rangle$ and $\theta_i^2=0$</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a></td>
+<td>a Grassmann variable, $\lvert\theta\rangle$ and $\theta_i^2=0$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td>a Grassmann variable, $\lvert\theta\rangle$ and $\theta_i^2=0$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A non-commutativity parameter, 28 occurrences in 1 article.</strong> <em>Maxwell's Theory on Non-Commutative Spaces and Quaternions</em> writes $[x_\mu,x_\nu]=i\theta_{\mu\nu}$ with a constant antisymmetric $\theta$, and its spatial components $\theta_{ij}$, $\theta_{\alpha\beta}$, $\theta_{i4}$. It becomes $\kappa_{\mu\nu}$: <code>\kappa</code> is 0 occurrences in that article, and the letter is the standard one for a deformation parameter. The article's own $\Xi$ is taken, 15 occurrences, by the evolution generator.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces and Quaternions</a></td>
+<td>the non-commutativity parameter $[x_\mu,x_\nu]=i\theta_{\mu\nu}$</td>
+<td>28</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A transverse-traceless projector, 20 occurrences in 1 article.</strong> <em>Canonical Quantization of the Biquaternion Graviton Field</em> writes the transverse metric $\theta_{ij}=\delta_{ij}-\vec u_{k,i}\vec u_{k,j}$ and builds $P_{ij,kl}$ from it. The replacement adds no letter: it writes $\delta_{ij}-\vec u_i\vec u_j$ where the symbol is defined and keeps the projector's own name $P_{ij,kl}$ everywhere else.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a></td>
+<td>the transverse metric $\theta_{ij}=\delta_{ij}-\vec u_i\vec u_j$</td>
+<td>20</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A fixed background metric, 7 occurrences in 4 articles.</strong> In <em>Conformal Invariance</em>, <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, <em>The Empirical Status</em> and <em>What the Biquaternion Algebra Cannot Do</em>, the arena carries a fixed tensor $\theta_{\mu\nu}$ that is put in by hand. It becomes $\mathring{g}_{\mu\nu}$, which is 0 occurrences in the corpus and is the standard mark for a fixed background. $h_{\mu\nu}$ is not available: it is the perturbation of the metric in $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, 113 occurrences in 7 articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td>the fixed background metric $\theta_{\mu\nu}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>the fixed background metric $\theta_{\mu\nu}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td>the fixed background metric $\theta_{\mu\nu}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td>the fixed background metric $\theta_{\mu\nu}$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A magnitude, 34 occurrences in 12 articles.</strong> The norm of the vector part of a biquaternion is written $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$, and the polar form is then $\cos\Theta=Q_t/R$, $\sin\Theta=B/R$ with $B=\theta$. The replacement is $\lVert\vec Q\rVert$, which the corpus already writes 4,303 times. It removes the letter and states the object, and the polar form reads $\sin\Theta=\lVert\vec Q\rVert/R$ without a second symbol.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-quaternions.html">Exponential Polar Decomposition of Quaternions</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-special-functions.html">Quaternion Special Functions</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-higher-special-functions.html">Biquaternion Higher Special Functions</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-regular-biquaternion.html">The One-Sided Operators of an N-Degenerate, Spectrally Regular Biquaternion</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html">The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/worked-examples-of-exponential-polar-decomposition-of-quaternions.html">Worked Examples of Exponential Polar Decomposition of Quaternions</a></td>
+<td>a magnitude, $\theta=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><em>and 6 more articles</em></td>
+<td></td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Chebyshev function, 33 occurrences in 2 articles.</strong> $\theta(x)=\sum_{p\le x}\log p$ in <em>Analytic Number Theory</em> and <em>The Prime Number Theorem</em>, beside $\pi(x)$, $\psi(x)$ and $\Lambda(n)$. It becomes $\vartheta^{\mathrm{chb}}(x)$: $\vartheta$ is 0 occurrences in both articles, and the label keeps it apart from the other $\vartheta$ of number theory.</p>
+<p><strong>The theta function and the theta series, 24 occurrences in 4 articles.</strong> $\theta(t)=\sum_{n\in\mathbb Z}e^{-\pi n^2t}$ in <em>Zeta Functions</em>, $\theta_Q(z)$ in <em>Modular Forms</em>, $\theta_\chi(t)$ in <em>L-Functions</em>, and the Riemann–Siegel $\theta(t)$ in <em>The Riemann Hypothesis</em>. It becomes $\vartheta^{\mathrm{thf}}$. Same base as the Chebyshev function, different label, because the corpus reads a shared base and a distinct label as a distinct object.</p>
+<p>The 11 remaining occurrences of $\theta$ in <em>The Prime Number Theorem</em> are the angles of $3+4\cos\theta+\cos2\theta\geq0$, and the 8 remaining in <em>The Riemann Hypothesis</em> are the parameters $0<\theta<1$ of the Nyman–Beurling criterion. Both stay.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/analytic-number-theory.html">Analytic Number Theory</a></td>
+<td>the Chebyshev function $\theta(x)=\sum_{p\le x}\log p$</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-prime-number-theorem.html">The Prime Number Theorem</a></td>
+<td>the Chebyshev function $\theta(x)=\sum_{p\le x}\log p$</td>
+<td>16</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/modular-forms.html">Modular Forms</a></td>
+<td>the theta function, $\theta(t)$ or $\theta_Q(z)$</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zeta-functions.html">Zeta Functions</a></td>
+<td>the theta function, $\theta(t)$ or $\theta_Q(z)$</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-riemann-hypothesis.html">The Riemann Hypothesis</a></td>
+<td>the theta function, $\theta(t)$ or $\theta_Q(z)$</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/l-functions.html">L-Functions</a></td>
+<td>the theta function, $\theta(t)$ or $\theta_Q(z)$</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A connection form, 8 occurrences in 4 articles.</strong> The four Riemannian articles write the connection in a frame as $\theta=(\theta_{ij})$ of $1$-forms, $\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$. It becomes $\omega_{ij}$, which is how the rest of the corpus writes a connection, $\omega=H^{-1}\partial H$; $\omega$ is 4 occurrences in those four articles, so nothing collides.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/curvature-and-geodesics.html">Curvature and Geodesics</a></td>
+<td>the connection form $\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/list-of-riemannian-geometries.html">List of Riemannian Geometries</a></td>
+<td>the connection form $\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/riemannian-geometry.html">Riemannian Geometry</a></td>
+<td>the connection form $\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/pseudo-riemannian-and-lorentzian-geometry.html">Pseudo-Riemannian and Lorentzian Geometry</a></td>
+<td>the connection form $\theta_{ij}=\sum_k\Gamma_{ijk}dx_k$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A step function, 4 occurrences in 1 article.</strong> The potential of <em>The Klein Paradox</em> is $V(x)=V_0\,\theta(x)$. It is the same object as the retarded step $\Theta(t')$ and takes the same glyph, $\mathrm{H}^{\mathrm{hvs}}(x)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>a step function $V(x)=V_0\,\theta(x)$</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vacuum angle keeps the letter.</strong> 62 occurrences in 8 articles, 52 of them in the three articles on the theta vacuum, the axion and strong CP. It is a periodic parameter, so it is an angle; the bar already separates it from a geometric angle and the label makes the separation explicit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutive-topological-linear-spaces.html">Involutive Topological Linear Spaces</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-geometry-and-almost-complex-structures.html">Hermitian Geometry and Almost Complex Structures</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutions-of-a-free-algebra.html">Involutions of a Free Algebra</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/quaternion-harmonic-analysis.html">Quaternion Harmonic Analysis</a></td>
+<td>the vacuum angle $\bar\theta$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>After the ten, $\theta$ means one thing.</strong> 11,062 occurrences, of which 1,045 leave and the remaining 10,017 are a real angle, a phase $\exp(i\theta)$, an angle-parameter such as $\theta_W$ or $\theta_0$, and the labelled vacuum angle. The ten roles are spread over 149 articles, and only three articles carry two of them: <em>Grassmann Variables and Berezin Integration</em> (a map and a Grassmann variable), <em>Maxwell's Theory on Non-Commutative Spaces and Quaternions</em> (a map and a non-commutativity parameter) and <em>The Riemann Hypothesis</em> (a map and the theta function). Each of the three takes both replacements without collision, because the two carriers are a different base in each case.</p>
+<h3 id="the-other-uses-of-capital-theta">The Other Uses of Capital Theta</h3>
+<p><strong>Capital theta carries ten roles that are not angles, in 164 articles.</strong> The census counts 4,165 occurrences of $\Theta$ in the two corpora. The angle role is 244 of them, in the physics corpus. Everything else is one of the ten uses below, and the largest of them is thirty times the size of the next.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>was</th>
+<th>now</th>
+<th>occurrences</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sandwich, a two-sided operator</td>
+<td>$\Theta_{\tilde Q}$, $\Theta_x$</td>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
+<td>2,338</td>
+<td>116</td>
+</tr>
+<tr>
+<td>the graded sandwich</td>
+<td>$\Theta^{\alpha}_x$</td>
+<td>$\mathrm{Sd}^{\alpha}_x$</td>
+<td>844</td>
+<td>39</td>
+</tr>
+<tr>
+<td>an involution, an automorphism, the star</td>
+<td>$\tau=\Theta\sigma$</td>
+<td>$\mathrm{J}$</td>
+<td>141</td>
+<td>8</td>
+</tr>
+<tr>
+<td>the curvature of a connection</td>
+<td>$\Theta=d\omega+\omega\wedge\omega$</td>
+<td>$\Omega$</td>
+<td>92</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the quadrupole tensor</td>
+<td>$\Theta_{ij}$</td>
+<td>$\mathcal{Q}_{ij}$</td>
+<td>53</td>
+<td>3</td>
+</tr>
+<tr>
+<td>the group of homotopy spheres</td>
+<td>$\Theta_n$</td>
+<td>$\mathrm{Sph}_n$</td>
+<td>26</td>
+<td>3</td>
+</tr>
+<tr>
+<td>the improved stress tensor</td>
+<td>$\Theta_{\mu\nu}$</td>
+<td>$T_{\mu\nu}^{\mathrm{bel}}$</td>
+<td>28</td>
+<td>6</td>
+</tr>
+<tr>
+<td>the Heaviside step</td>
+<td>$\Theta(t')$</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(t')$</td>
+<td>22</td>
+<td>6</td>
+</tr>
+<tr>
+<td>the conjugation map of a unit</td>
+<td>$\Theta(\tilde u):V\to V$</td>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>34</td>
+<td>1</td>
+</tr>
+<tr>
+<td>the CPT operator</td>
+<td>$\Theta=C\circ P\circ T$</td>
+<td>$\mathrm{CPT}$</td>
+<td>15</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the ten already have a glyph with exactly that meaning.</strong> $\Omega=d\omega+\tfrac12[\omega,\omega]$ is how <em>Fibre Bundles, Connections and Curvature</em> writes the curvature, and $\mathcal{Q}_{ij}$ is how <em>Higher Multipoles and the Field</em> writes the quadrupole. For those two the migration does not choose a symbol; it makes the corpus write the one it already uses in the articles that define the object.</p>
+<p><strong>The sandwich, 2,338 occurrences in 116 articles.</strong> A two-sided operator, $\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}$. It is the largest use of the letter anywhere in the corpus and five times the angle role.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>184</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html">The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>131</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html">Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>128</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-degenerate-biquaternion.html">The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>99</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html">The Hermitian Sandwich: Definition and Multiplicativity</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>88</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-of-the-sandwich-on-a-hermitian-algebra.html">The Adjoint of the Sandwich on a Hermitian Algebra</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>81</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/completely-positive-maps-of-a-sesqualgebra-with-a-form.html">Completely Positive Maps of a Sesqualgebra with a Form</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>77</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-of-the-ternary-product.html">The Adjoint of the Ternary Product</a></td>
+<td>the sandwich operator $\Theta_{\tilde Q}$</td>
+<td>76</td>
+</tr>
+<tr>
+<td><em>and 108 more articles</em></td>
+<td></td>
+<td>1474</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The graded sandwich, 844 occurrences in 39 articles.</strong> The same operator with a grading, $\Theta^{\alpha}_x=\mathrm{Sd}^{\alpha}_x$. The base changes with the family and the label <code>\alpha</code> stays, because it is the index's own slot label for the grading.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/two-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint.html">Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>90</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-adjoint-of-the-sandwich-on-a-hermitian-algebra.html">The Signed Adjoint of the Sandwich on a Hermitian Algebra</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>76</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-adjoint-sandwich-on-a-complex-vector-space.html">The Signed Adjoint Sandwich on a Complex Vector Space</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-adjoint-sandwich-on-an-ordered-algebra.html">The Signed Adjoint Sandwich on an Ordered Algebra</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>52</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-sandwich-on-a-complex-vector-space.html">The Signed Sandwich on a Complex Vector Space</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>47</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-grading-of-a-hermitian-algebra-with-signed-hermitian-adjoint.html">The Grading of a Hermitian Algebra with Signed Hermitian Adjoint</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>41</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-adjoint-sandwich-on-a-linear-space.html">The Signed Adjoint Sandwich on a Linear Space</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>40</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-adjoint-sandwich-on-a-topological-vector-space.html">The Signed Adjoint Sandwich on a Topological Vector Space</a></td>
+<td>the graded operator $\Theta^{\alpha}_x$</td>
+<td>39</td>
+</tr>
+<tr>
+<td><em>and 31 more articles</em></td>
+<td></td>
+<td>406</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The involution, the automorphism and the star, 141 occurrences in 8 articles.</strong> The corpus writes the principal anti-automorphism $\sigma$ and the star $\tau=\Theta\sigma$; $\Theta$ is the linear map between them. It is the same object as the $\theta$ involution of the lower-theta section, so it takes the same base: $\mathrm{J}$, with no label.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/involutions-of-the-enveloping-algebra.html">Involutions of the Enveloping Algebra</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>42</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-involution-on-the-exterior-derivative.html">The Involution on the Exterior Derivative</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>32</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-representation-and-the-involution.html">The Adjoint Representation and the Involution</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutions-of-the-universal-enveloping-algebra.html">Involutions of the Universal Enveloping Algebra</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-casimir-operator-and-the-involution.html">The Casimir Operator and the Involution</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/modules-over-an-involutive-algebra.html">Modules over an Involutive Algebra</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutive-group-actions.html">Involutive Group Actions</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-cartan-decomposition-and-the-cartan-involution.html">The Cartan Decomposition and the Cartan Involution</a></td>
+<td>the involution or the star, $\tau=\Theta\sigma$</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The curvature, 92 occurrences in 4 articles.</strong> $\Theta=d\omega+\omega\wedge\omega$ is the curvature of the Chern connection in the Hermitian cluster, and the same four articles write the curvature of a general bundle as $\Omega$. One object, one symbol: $\Omega$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/chern-classes-of-a-hermitian-bundle.html">Chern Classes of a Hermitian Bundle</a></td>
+<td>the curvature of a connection, $\Theta=d\omega+\omega\wedge\omega$</td>
+<td>72</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-vector-bundles-and-the-chern-connection.html">Hermitian Vector Bundles and the Chern Connection</a></td>
+<td>the curvature of a connection, $\Theta=d\omega+\omega\wedge\omega$</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-geometry-and-almost-complex-structures.html">Hermitian Geometry and Almost Complex Structures</a></td>
+<td>the curvature of a connection, $\Theta=d\omega+\omega\wedge\omega$</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-manifolds-and-the-canonical-connection.html">Hermitian Manifolds and the Canonical Connection</a></td>
+<td>the curvature of a connection, $\Theta=d\omega+\omega\wedge\omega$</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The quadrupole tensor, 53 occurrences in 3 articles.</strong> $\Theta_{ij}$ is the mass quadrupole of the wave formula. <em>Higher Multipoles and the Field</em> already writes it $\mathcal{Q}_{ij}$, so the three articles take that glyph and the letter is freed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a></td>
+<td>the quadrupole tensor $\Theta_{ij}$</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves in Biquaternionic Form</a></td>
+<td>the quadrupole tensor $\Theta_{ij}$</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html">The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form</a></td>
+<td>the quadrupole tensor $\Theta_{ij}$</td>
+<td>9</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The group of homotopy spheres, 26 occurrences in 3 articles.</strong> $\Theta_n$ is the group of smooth homotopy $n$-spheres in the surgery and manifold articles. It needs a name of its own and <code>Sph</code> is free everywhere, 0 occurrences in any role.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/cobordism-and-surgery-theory.html">Cobordism and Surgery Theory</a></td>
+<td>the group of homotopy spheres $\Theta_n$</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/wild-and-exotic-manifolds.html">Wild and Exotic Manifolds</a></td>
+<td>the group of homotopy spheres $\Theta_n$</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/list-of-geometric-manifolds.html">List of Geometric Manifolds</a></td>
+<td>the group of homotopy spheres $\Theta_n$</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The improved stress tensor, 28 occurrences in 6 articles.</strong> $\Theta_{\mu\nu}$ is the Belinfante tensor. The index already gives <code>can</code> to the canonical tensor and <code>imp</code> to the improvement term, so the improved tensor takes <code>bel</code> and the pair reads $T_{\mu\nu}^{\mathrm{can}}$, $T_{\mu\nu}^{\mathrm{bel}}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/noethers-two-theorems.html">Noether's Two Theorems</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-of-the-left-multiplication-on-the-algebra-of-arithmetic-functions.html">The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.html">One-Sided Operators on the General Plain Sesqualgebra</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-left-multiplication-on-the-algebra-of-arithmetic-functions.html">The Signed Left Multiplication on the Algebra of Arithmetic Functions</a></td>
+<td>the improved stress tensor $\Theta_{\mu\nu}$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Heaviside step, 22 occurrences in 6 articles.</strong> $\Theta(t')$ is the step of a retarded Green function. It takes the caret form $\mathrm{H}^{\mathrm{hvs}}(t')$, the same glyph as the step written $\theta(x)$ in <em>The Klein Paradox</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html">The Unstable State and the Complex Energy Pole in Biquaternionic Form</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/complex-integration.html">Complex Integration</a></td>
+<td>the Heaviside step $\Theta(t')$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The conjugation map, 34 occurrences in 1 article.</strong> $\Theta(\tilde u):V\to V$, $\Theta(\tilde u)\vec q=\tilde u\vec q\tilde u^{-1}$, in <em>Split-Quaternion Rotations and the Lorentz Group</em>. The article itself calls it the adjoint action in the section title, and <em>Similitudes between Biquaternion Algebras</em> writes the same map $\mathrm{Ad}_R$ and says in words that it is conjugation. It becomes $\mathrm{Ad}_{\tilde u}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/split-quaternion-rotations-and-the-lorentz-group.html">Split-Quaternion Rotations and the Lorentz Group</a></td>
+<td>the conjugation map $\Theta(\tilde u)$</td>
+<td>34</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The CPT operator, 15 occurrences in 1 article.</strong> $\Theta=C\circ P\circ T$ in <em>The CPT Theorem in Biquaternionic Form</em>. It is a named composite of three operators, and the corpus writes named operators upright: $\mathrm{BRST}$, $\mathrm{SWAP}$, $\mathrm{CNOT}$. It becomes $\mathrm{CPT}$, which is 0 occurrences today.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td>the CPT operator $\Theta=C\circ P\circ T$</td>
+<td>15</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>After the ten, capital theta means one thing.</strong> 4,165 occurrences, of which 3,593 leave and the remaining 572 are the complex angle, its trigonometric form $\cos\Theta$ and $\sin\Theta$, and the real angles of the exercise articles.</p>
+<p><strong>The eight carrier roles never share an article.</strong> I checked every pair among the involution, the curvature, the quadrupole, the spheres, the stress tensor, the step, the conjugation map and the CPT operator: no article carries two of them, and none of the step's six articles writes a trigonometric $\Theta$. The two families that do share articles are the sandwich and the graded sandwich, which are one family, and they are the only ones large enough to need a rule.</p>
+<h3 id="what-the-numbers-decide">What the Numbers Decide</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>total</th>
+<th>physics</th>
+<th>mathematical</th>
+<th>the angle role</th>
+<th>the largest other use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta$</td>
+<td>11,205</td>
+<td>3,859 in 216</td>
+<td>7,203 in 407</td>
+<td>3,814 in 216</td>
+<td>the function of a point, 755 in 118</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>4,216</td>
+<td>428 in 45</td>
+<td>3,737 in 166</td>
+<td>244 in the physics corpus</td>
+<td>the sandwich, 2,338 in 116</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lower theta is cheap and upper theta is not.</strong> Clearing the 1,045 non-angle uses of $\theta$ frees a letter that already carries the role in 216 articles, and it costs the same letter nothing: $\theta$ keeps the vacuum angle. Clearing the ten uses of $\Theta$ costs 3,593 occurrences in 164 articles, which is more than the entire angle role and the largest single edit of the migration. Clearing the sandwich alone is 2,338 of them.</p>
+<p><strong>The corpus already reads one letter two ways in two corpora.</strong> The mathematical corpus writes $\theta$ for a map and $\Theta$ for the sandwich, and never writes an angle. The physics corpus writes $\theta$ for an angle and $\Theta$ for a complex angle, and writes the sandwich 53 times in 8 articles, in no article that uses a complex angle. The letter is read inside its article, and that is exactly why the overload has survived.</p>
+<p><strong>The split by corpus is what the corpus has now, and it is what the migration ends.</strong> A rule that is read from its own article is not a rule; it is a habit that happens not to have failed yet. The migration replaces it with one letter per role everywhere: $\theta$ and $\Theta$ for the angle in both corpora, $T_{\mu\nu}^{\mathrm{bel}}$ for the tensor, $\mathrm{H}^{\mathrm{hvs}}(t')$ for the step, and $\mathrm{Sd}_{\tilde Q}$ for the sandwich.</p>
+<p><strong>One article sits on the seam.</strong> <em>Two-Sided Operators on the General Plain Sesqualgebra</em> writes the sandwich as $\Theta_{\tilde Q_1}$ and says in the same sentence that the corpus also writes it $\mathrm{H}_{\tilde Q_1}$. That sentence is the argument of the next section, and it is why the sandwich needs a base of its own: the two spellings are the same operator, and neither is an angle.</p>
+<h2 id="the-purge-options-role-by-role">The Purge Options, Role by Role</h2>
+<p><strong>Each row has three ways out, not one.</strong> Column A is what this article adopts and what the sections above describe. B and C are the alternatives that survive the collision check, so a reader who dislikes A has somewhere to go that is not "keep the ambiguity". Every cell was tested in the articles that carry the use, not corpus-wide.</p>
+<h3 id="lower-theta">Lower Theta</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>A, adopted</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a function of a point</td>
+<td>755</td>
+<td>118</td>
+<td>$\mathrm{J}(x)$; J is 62 occurrences in 12 articles and none is in the 118</td>
+<td>$\iota(x)$; classical involution letter, but 111 occurrences in 7 of the 118</td>
+<td>$\upsilon(x)$; free in the 118, 172 occurrences in 7 articles corpus-wide</td>
+</tr>
+<tr>
+<td>a Grassmann variable</td>
+<td>132</td>
+<td>5</td>
+<td>$\zeta^{\mathrm{grm}}$; 0 in the five</td>
+<td>$\mathrm{c}^{\mathrm{grm}}$; 0 in the five, Berezin's own letter</td>
+<td>$\chi^{\mathrm{grm}}$; 7 occurrences in 2 of the five</td>
+</tr>
+<tr>
+<td>the vacuum angle</td>
+<td>62</td>
+<td>8</td>
+<td>$\theta^{\mathrm{vac}}$; keeps the letter, which the angle role justifies</td>
+<td>bare $\bar\theta$; the bar alone separates it</td>
+<td>$\phi^{\mathrm{vac}}$; leaves the letter at the cost of a phase collision</td>
+</tr>
+<tr>
+<td>a magnitude</td>
+<td>34</td>
+<td>12</td>
+<td>withdrawn: $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ is the angle itself, $\vec v=\theta\vec n$, not a second role</td>
+<td>$\lVert\vec Q\rVert$ would collide with the angle in the same line, $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the Chebyshev function</td>
+<td>33</td>
+<td>2</td>
+<td>$\vartheta^{\mathrm{chb}}(x)$; $\vartheta$ is 0 in both</td>
+<td>bare $\vartheta(x)$; 0 in both, and ϑ is number theory only</td>
+<td>$\mathrm{C}^{\mathrm{chb}}(x)$; upright, no Greek</td>
+</tr>
+<tr>
+<td>a non-commutativity parameter</td>
+<td>28</td>
+<td>1</td>
+<td>$\kappa_{\mu\nu}$; 0 in the article</td>
+<td>$\lambda_{\mu\nu}$; 0 in the article</td>
+<td>$\zeta_{\mu\nu}$; 0 in the article</td>
+</tr>
+<tr>
+<td>the theta function, the theta series</td>
+<td>24</td>
+<td>4</td>
+<td>$\vartheta^{\mathrm{thf}}$; $\vartheta$ is 0 in all four</td>
+<td>natural subscripts, $\vartheta_Q$, $\vartheta_\chi$, $\vartheta(t)$</td>
+<td>$\mathrm{C}^{\mathrm{thf}}$</td>
+</tr>
+<tr>
+<td>a transverse-traceless projector</td>
+<td>20</td>
+<td>1</td>
+<td>$\Pi_{ij}$; 0 in the article</td>
+<td>no new letter: $\delta_{ij}-\vec u_i\vec u_j$ written out</td>
+<td>$P_{ij}$ is taken, 6 occurrences</td>
+</tr>
+<tr>
+<td>a connection form</td>
+<td>8</td>
+<td>4</td>
+<td>$A_{ij}$; 0 in the four</td>
+<td>$\omega_{ij}$ is refused: the four articles reserve $\omega$ for the symplectic form, in so many words</td>
+<td>$\Gamma$ is taken, 16 occurrences in the four</td>
+</tr>
+<tr>
+<td>a fixed background metric</td>
+<td>7</td>
+<td>4</td>
+<td>$\mathring{g}_{\mu\nu}$; 0 in the corpus</td>
+<td>$b_{\mu\nu}$; 0 in the four</td>
+<td>$\theta^{\mathrm{bg}}_{\mu\nu}$; keeps the letter</td>
+</tr>
+<tr>
+<td>a step function</td>
+<td>4</td>
+<td>1</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(x)$; 0 in the article</td>
+<td>$\mathrm{u}(x)$; 0 in the corpus</td>
+<td>$\mathrm{Y}(x)$; 0 in the corpus</td>
+</tr>
+<tr>
+<td>the theta relation of a congruence</td>
+<td>60</td>
+<td>1</td>
+<td>$\vartheta^{\mathrm{cng}}$; 0 in the article</td>
+<td>$\mathrm{T}(a)$; no Greek, but T is taken corpus-wide</td>
+<td>keep $\theta(a)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="capital-theta">Capital Theta</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>A, adopted</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sandwich</td>
+<td>2,338</td>
+<td>116</td>
+<td>$\mathrm{Sd}_{\tilde Q}$; 0 occurrences in the corpus</td>
+<td>no new letter: $L_{\tilde Q}R_{\tilde Q^{\dagger}}$, the decomposition the article already states</td>
+<td>$\mathcal{S}_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>the graded sandwich</td>
+<td>844</td>
+<td>39</td>
+<td>$\mathrm{Sd}^{\alpha}_x$; the same family as the sandwich</td>
+<td>$\mathrm{Sd}_{x,\alpha}$; subscript instead of caret</td>
+<td>no new letter, $L_xR_x^{\dagger}$</td>
+</tr>
+<tr>
+<td>the involution</td>
+<td>141</td>
+<td>8</td>
+<td>$\mathrm{J}$; the same base as the point map of the lower-theta table</td>
+<td>$\iota$</td>
+<td>keep $\tau$, rename $\sigma$ instead</td>
+</tr>
+<tr>
+<td>the curvature</td>
+<td>92</td>
+<td>4</td>
+<td>$\Omega$; 7,147 occurrences in 472 articles, and it is the corpus's own letter for a curvature</td>
+<td>$R$, the Riemann-tensor letter</td>
+<td>$F$, the field-strength letter</td>
+</tr>
+<tr>
+<td>the quadrupole tensor</td>
+<td>53</td>
+<td>3</td>
+<td>$\mathcal{Q}_{ij}$; 447 occurrences in 36 articles</td>
+<td>$Q^{\mathrm{qd}}_{ij}$; keeps the letter and labels it</td>
+<td>no new letter, write the moments out</td>
+</tr>
+<tr>
+<td>the improved stress tensor</td>
+<td>28</td>
+<td>6</td>
+<td>$T_{\mu\nu}^{\mathrm{bel}}$</td>
+<td>$\mathcal{T}_{\mu\nu}$</td>
+<td>$\Sigma_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>the group of homotopy spheres</td>
+<td>26</td>
+<td>3</td>
+<td>$\mathrm{Sph}_n$; 0 occurrences in the corpus</td>
+<td>$bP_n$; 0 occurrences, and it is the classical name</td>
+<td>keep $\Theta_n$; it is the standard glyph and the three articles are the only ones</td>
+</tr>
+<tr>
+<td>the Heaviside step</td>
+<td>22</td>
+<td>6</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(t')$; 0 in the six</td>
+<td>$\mathrm{u}(t')$</td>
+<td>$\mathrm{Y}(t')$</td>
+</tr>
+<tr>
+<td>the conjugation map</td>
+<td>34</td>
+<td>1</td>
+<td>$\mathrm{Ad}_{\tilde u}$; 987 occurrences in 92 articles, and the article calls it the adjoint action</td>
+<td>$\iota_{\tilde u}$</td>
+<td>$\mathrm{C}_{\tilde u}$</td>
+</tr>
+<tr>
+<td>the CPT operator</td>
+<td>15</td>
+<td>1</td>
+<td>$\mathrm{CPT}$; 0 occurrences in the corpus</td>
+<td>keep $\Theta_{\mathrm{CPT}}$; one article, one compound</td>
+<td>$K$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two rows remove a symbol instead of trading one.</strong> The transverse-traceless projector and the sandwich both have an option that writes the object out and adds no letter: $\delta_{ij}-\vec u_i\vec u_j$, and $L_{\tilde Q}R_{\tilde Q^{\dagger}}$. They are the only rows where the purge shrinks the alphabet, and they are also the two most expensive rows to edit, 20 and 2,338 occurrences.</p>
+<p><strong>Where A and B differ by taste alone the article keeps A.</strong> Four rows could be decided either way with no collision either way: the Chebyshev function between $\vartheta^{\mathrm{chb}}$ and bare $\vartheta$, the connection form between $\omega_{ij}$ and $A_{ij}$, the background metric between $\mathring{g}_{\mu\nu}$ and $b_{\mu\nu}$, the step between $\mathrm{H}^{\mathrm{hvs}}$ and $\mathrm{u}$. They stay on A because A reuses a letter the corpus already reads that way, and a reused letter costs the reader one lookup instead of two.</p>
+<h2 id="the-purge-executed">The Purge, Executed</h2>
+<p><strong>The migration was carried out, not proposed.</strong> Every row below was applied to the corpus files and the HTML was rebuilt. The lower glyph fell from 11,062 occurrences to 7,079 and the capital from 4,165 to 453, in two passes: the first moved the roles the census had named, the second swept the residue.</p>
+<h3 id="what-moved-lower-theta">What Moved, Lower Theta</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>glyph now</th>
+<th>occurrences moved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a function of a point, the involution, the orbit map, the field</td>
+<td>$\mathrm{J}$</td>
+<td>2,105</td>
+</tr>
+<tr>
+<td>a Grassmann variable, a Berezin generator, a ghost</td>
+<td>$\zeta$</td>
+<td>554</td>
+</tr>
+<tr>
+<td>the vacuum angle, the $\theta$ parameter, the $\theta$-term</td>
+<td>$\theta^{\mathrm{vac}}$</td>
+<td>75</td>
+</tr>
+<tr>
+<td>the theta function and the theta series</td>
+<td>$\vartheta^{\mathrm{thf}}$</td>
+<td>21</td>
+</tr>
+<tr>
+<td>the Chebyshev function</td>
+<td>$\vartheta^{\mathrm{chb}}$</td>
+<td>31</td>
+</tr>
+<tr>
+<td>the theta relation of a congruence</td>
+<td>$\vartheta^{\mathrm{cng}}$</td>
+<td>60</td>
+</tr>
+<tr>
+<td>the Nyman–Beurling dilation parameter</td>
+<td>$\vartheta^{\mathrm{nym}}$</td>
+<td>15</td>
+</tr>
+<tr>
+<td>a non-commutativity parameter</td>
+<td>$\kappa$</td>
+<td>113</td>
+</tr>
+<tr>
+<td>a connection form</td>
+<td>$A$</td>
+<td>49</td>
+</tr>
+<tr>
+<td>a step function</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}$</td>
+<td>51</td>
+</tr>
+<tr>
+<td>a fixed background metric</td>
+<td>$\mathring{g}$</td>
+<td>7</td>
+</tr>
+<tr>
+<td>a transverse-traceless projector</td>
+<td>$\Pi$</td>
+<td>20</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-moved-capital-theta">What Moved, Capital Theta</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>glyph now</th>
+<th>occurrences moved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sandwich and the graded sandwich</td>
+<td>$\mathrm{Sd}$</td>
+<td>3,162</td>
+</tr>
+<tr>
+<td>the group of homotopy spheres</td>
+<td>$\mathrm{Sph}$</td>
+<td>36</td>
+</tr>
+<tr>
+<td>the quadrupole tensor</td>
+<td>$\mathcal{Q}$</td>
+<td>66</td>
+</tr>
+<tr>
+<td>the improved stress tensor</td>
+<td>$T$</td>
+<td>17</td>
+</tr>
+<tr>
+<td>the CPT operator</td>
+<td>$\mathrm{CPT}$</td>
+<td>16</td>
+</tr>
+<tr>
+<td>the conjugation map</td>
+<td>$\mathrm{Ad}$</td>
+<td>9</td>
+</tr>
+<tr>
+<td>the involution, the extension of an involution</td>
+<td>$\mathrm{J}$</td>
+<td>290</td>
+</tr>
+<tr>
+<td>the curvature of a Hermitian bundle</td>
+<td>$\Omega$</td>
+<td>88</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows count the change in each glyph, not a partition of the total.</strong> A new glyph also appears in places that predate the edit, and a glyph carrying a subscript is counted once here and once in the article that supplies the subscript, so the rows do not add to 11,062 and 4,165 exactly. The two totals are exact; the rows are the measured change per glyph.</p>
+<p><strong>Two rows were corrected while the edit was made.</strong> The connection form cannot be $\omega$: the four Riemannian articles say in so many words that $\omega$ is reserved for the symplectic form, so the connection is $A_{ij}$ and the sentence that fixes the reservation still reads true. The magnitude is not a separate use at all: $\vec v=\theta\vec n$ with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ is the angle written through the norm of the rotation vector, so the row is withdrawn and those 34 occurrences stay $\theta$.</p>
+<p><strong>A use the census missed surfaced during the edit.</strong> $\theta(a)$, 60 occurrences in the lattice article, is the theta relation of a congruence. It is not a map and not an angle, and it is now $\vartheta^{\mathrm{cng}}$.</p>
+<h3 id="the-second-pass-executed">The Second Pass, Executed</h3>
+<p><strong>The residue was swept.</strong> A second pass classified every remaining occurrence by its context, not by its article, and moved the ones that were not angles. The lower glyph fell from 7,941 to 7,079 and the capital from 551 to 453: 862 and 98 occurrences in 61 files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>glyph now</th>
+<th>occurrences moved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the exponent of real interpolation</td>
+<td>$\vartheta^{\mathrm{itp}}$</td>
+<td>161</td>
+</tr>
+<tr>
+<td>a modulus, the norm of the vector part</td>
+<td>$\lVert\vec Q\rVert$</td>
+<td>139</td>
+</tr>
+<tr>
+<td>the Goldstone field, the phase of a condensate</td>
+<td>$\vartheta^{\mathrm{fld}}$</td>
+<td>108</td>
+</tr>
+<tr>
+<td>the parameter of a statistical family, the estimator</td>
+<td>$\vartheta^{\mathrm{stt}}$</td>
+<td>76</td>
+</tr>
+<tr>
+<td>the parameter of a one-parameter flow</td>
+<td>$\mathrm{J}$</td>
+<td>177</td>
+</tr>
+<tr>
+<td>the symplectic potential, the tautological one-form</td>
+<td>$\varpi$</td>
+<td>48</td>
+</tr>
+<tr>
+<td>the class of $t$ in a quotient algebra</td>
+<td>$\vartheta^{\mathrm{rts}}$</td>
+<td>43</td>
+</tr>
+<tr>
+<td>the one-parameter group of a Bogoliubov transform</td>
+<td>$\vartheta^{\mathrm{par}}$</td>
+<td>35</td>
+</tr>
+<tr>
+<td>the history argument of a delay equation</td>
+<td>$\vartheta^{\mathrm{hst}}$</td>
+<td>32</td>
+</tr>
+<tr>
+<td>an irreducible character</td>
+<td>$\vartheta^{\mathrm{chr}}$</td>
+<td>28</td>
+</tr>
+<tr>
+<td>a congruence, an equivalence relation</td>
+<td>$\vartheta^{\mathrm{cng}}$</td>
+<td>22</td>
+</tr>
+<tr>
+<td>a connection one-form</td>
+<td>$A$</td>
+<td>12</td>
+</tr>
+<tr>
+<td>the sandwich in two further articles</td>
+<td>$\mathrm{Sd}$</td>
+<td>12</td>
+</tr>
+<tr>
+<td>the integration variable of a symbol</td>
+<td>$\vartheta^{\mathrm{dum}}$</td>
+<td>11</td>
+</tr>
+<tr>
+<td>the ribbon element of a quantum group</td>
+<td>$\vartheta^{\mathrm{rib}}$</td>
+<td>9</td>
+</tr>
+<tr>
+<td>the invariant tensor of the Killing form</td>
+<td>$\vartheta^{\mathrm{cas}}$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>the parameter of a self-adjoint extension</td>
+<td>$\vartheta^{\mathrm{bcp}}$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>the curvature of the Chern connection</td>
+<td>$\Omega$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>the Martin–Schreier element</td>
+<td>$\vartheta^{\mathrm{mrs}}$</td>
+<td>5</td>
+</tr>
+<tr>
+<td>the density of a measure</td>
+<td>$\mathcal{D}^{m}$</td>
+<td>5</td>
+</tr>
+<tr>
+<td>the sandwich with the identity grading</td>
+<td>$\mathrm{Sd}^{\mathrm{id}}$</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four corrections were made while the pass ran.</strong> The symplectic potential cannot be $\lambda$: <em>Kähler Geometry</em> uses $\lambda$ for the Einstein constant and <em>Lagrangian and Hamiltonian Systems</em> for the Lagrange multipliers, so the potential is $\varpi$ and the two older letters keep their work. The curvature in <em>The Curvature Operator of a Complex Manifold</em> is $\Omega$, not $\mathrm{J}$: it is the same object the first pass gave $\Omega$. The two articles that say "the sandwich $\Theta$" in words got $\mathrm{Sd}$, not $\mathrm{J}$. And the $\Theta$ of <em>Integrable Systems</em> is the Riemann theta function, so it is $\vartheta^{\mathrm{thf}}$, the glyph the first pass had already chosen for it.</p>
+<p><strong>Six angles were put back.</strong> The classifier moved occurrences it should have kept, and each was found by reading the result rather than the rule. The phase $\Theta(x_1)$ of <em>Maxwell's Equations in Chiral Media</em> is a phase, not a map. The $\theta$ of <em>The Difference Operator</em> is a coordinate on the circle. The $\theta=0$ of <em>The Polar Decomposition of M3C</em> is the angle at which an idempotent becomes orthogonal. The monotone distortion $\Theta(\theta)$ of <em>The Berry Phase</em> maps angles to angles and stays $\Theta$. The heading $\theta$ of a rolling body in <em>Lagrangian and Hamiltonian Systems</em> is a heading. The $\delta\vec\theta$ of <em>The Action Principle</em> is a direction in the Lie algebra, which is a rotation vector, which is an angle.</p>
+<p><strong>What is left is the angle.</strong> The 7,079 remaining lower occurrences and the 453 remaining capital occurrences carry the angle role: the rotation angle, the polar and azimuthal angles, the complex angle of a biquaternion, the rapidity through $\Theta$, the complex phase $\Theta=-i\psi$. One family is retained with its reason: the rotation-number $\theta$ of the crossed product and of the rotation algebra $A_\theta$, because the article writes the rotation as "the angle $2\pi\theta$", which makes $\theta$ the angle measured in turns. The corpus now builds with no errors.</p>
+<h2 id="the-seven-carriers-that-are-not-theta">The Seven Carriers That Are Not Theta</h2>
+<p>Each row is a role, the glyph that holds it today, and the form it takes under the migration.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>glyph today</th>
+<th>becomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the azimuth</td>
+<td>106</td>
+<td>14</td>
+<td>$\phi$</td>
+<td>$\theta^{\mathrm{azm}}$</td>
+</tr>
+<tr>
+<td>the precession angle of the Euler triple</td>
+<td>22</td>
+<td>1</td>
+<td>$\phi$</td>
+<td>$\theta^{\mathrm{prc}}$</td>
+</tr>
+<tr>
+<td>the Hannay angle</td>
+<td>16</td>
+<td>1</td>
+<td>$\phi$</td>
+<td>$\theta^{\mathrm{han}}$</td>
+</tr>
+<tr>
+<td>the Wigner angle</td>
+<td>21</td>
+<td>1</td>
+<td>$\phi$</td>
+<td>$\theta^{\mathrm{wgn}}$</td>
+</tr>
+<tr>
+<td>the Wigner angle, second spelling</td>
+<td>31</td>
+<td>9</td>
+<td>$\alpha$</td>
+<td>$\theta^{\mathrm{wgn}}$</td>
+</tr>
+<tr>
+<td>the Foucault latitude</td>
+<td>63</td>
+<td>2</td>
+<td>$\lambda$</td>
+<td>$\theta^{\mathrm{foc}}$</td>
+</tr>
+<tr>
+<td>the superluminal angle and the opening angle</td>
+<td>34</td>
+<td>8</td>
+<td>$\Theta$</td>
+<td>$\theta^{\mathrm{opn}}$</td>
+</tr>
+<tr>
+<td>the axicon angle</td>
+<td>3</td>
+<td>1</td>
+<td>$\eta$</td>
+<td>$\theta^{\mathrm{axc}}$</td>
+</tr>
+<tr>
+<td>the Euler angle of a rigid body</td>
+<td>8</td>
+<td>1</td>
+<td>$\psi$</td>
+<td>$\theta^{\mathrm{eul}}$</td>
+</tr>
+<tr>
+<td>the solid angle</td>
+<td>58</td>
+<td>11</td>
+<td>$\Omega$</td>
+<td>$\theta^{\mathrm{sol}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The azimuth block is the largest and the least uniform. In six articles it is the argument of a spherical harmonic or of a rotor, and there it appears with the polar angle. In the other eight it stands alone: the shock-wave azimuth, the azimuth of the polarization ellipse, the azimuth of a mode, the azimuth of the hydrogen atom.</p>
+<p><strong>The second spelling of the Wigner angle is the one that shows why a single glyph is wanted.</strong> The same object is $\alpha$ in 9 articles and $\phi$ in one, and the reader has no way to know that from the letters. Under the migration both are $\theta^{\mathrm{wgn}}$, and the label states the object.</p>
+<h2 id="the-complex-angle-is-capital-theta">The Complex Angle Is Capital Theta</h2>
+<p>The case rule says a complex angle takes the upper case, and the corpus already writes it that way. What the migration adds is the two-parameter form.</p>
+<p>A complex angle has a real part and an imaginary part, and both are angles. The element conventions give the pattern: a biquaternion coefficient is a real part plus $i$ times a real part, $Q_t=q_t+iq'_t$, and the prime marks the slot that carries the $i$. The same reading applies to the angle:</p>
+<p>$$\Theta=\theta+i\theta', \qquad \theta\in\mathbb{R},\ \theta'\in\mathbb{R}.$$</p>
+<p><strong>The real part is the rotation and the imaginary part is the boost.</strong> A rotation by $\theta$ and a boost by $\theta'$ are the same exponential, $\cos\Theta+\vec U\sin\Theta$, read at a real and at an imaginary argument. The corpus says this in one sentence already: <em>The Hamilton Pairing</em> writes that the complex angle is the natural home for analytic continuation, and that a rotation continued to an imaginary angle is a boost.</p>
+<p>$$\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad \sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.$$</p>
+<p><strong>The four-momentum is the pure imaginary case.</strong> <em>The Hamilton Pairing</em> gives $\Theta=-i\psi$ for a four-momentum, with $\Rho=imc$. In the two-parameter form that is $\theta=0$ and $\theta'=\psi$. The sign is the article's and it is not decorative: the axis is along the momentum, so the boost angle enters with a minus. The magnitude of the imaginary part is the rapidity, and the article says so at §<em>The Imaginary Part</em>.</p>
+<p><strong>This is the same rule as $a'_t=\phi/c$.</strong> The temporal coefficient of the four-potential is $A_t=a_t+ia'_t$ with $a_t=0$ and $a'_t=\phi/c$: the electric potential is the imaginary parameter of the time slot, and the prime says so. The complex angle is the same construction one letter over. $\Theta=\theta+i\theta'$ with $\theta=0$ for a pure boost and $\theta'=\psi$. The migration does not invent a convention; it notices that the corpus has one.</p>
+<p><strong>The convention is written into the two element-conventions articles.</strong> <em>Algebra and Element Conventions</em> in the mathematical corpus and <em>Algebra and Element Conventions</em> in the physical corpus each carry a section, <em>The Angle and Its Two Cases</em>, with the equation $\Theta=\theta+i\theta'$ and the two readings of the circle and the hyperbola, and each carries the pair as one row of its notation table. The rule is no longer a proposal in an audit article; it is a convention of the corpus, stated where a reader looks for a convention.</p>
+<h2 id="the-amendment-to-the-rapidity">The Amendment to the Rapidity</h2>
+<p>The other migration, <em>The Phi and Psi Migration</em>, sends the rapidity from $\psi$ to $\eta$, on the ground that $\psi$ belongs to the spinor. This article does not overturn that decision, and it does change its reason.</p>
+<p><strong>A rapidity is the imaginary part of the complex angle, so its home is $\Theta$, not a glyph of its own.</strong> The two forms are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>written</th>
+<th>occurrences of the underlying object</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the rapidity as a name</td>
+<td>$\psi$, $\tanh\psi=v/c$</td>
+<td>1113</td>
+<td>62</td>
+</tr>
+<tr>
+<td>the rapidity as a parameter</td>
+<td>$\chi$, $\cosh\chi$</td>
+<td>13</td>
+<td>4</td>
+</tr>
+<tr>
+<td>the rapidity as the complex angle</td>
+<td>$\Theta=-i\psi$</td>
+<td>33</td>
+<td>10</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 1113 are the object, not the letter, and they stay where they are in this migration: the object is a rapidity and <em>The Phi and Psi Migration</em> owns it. What changes is that $\theta'$ is now available as the parameter of a boost inside a complex angle, and that $\Theta$ is available where the angle is explicitly complex. $\eta$ remains free for the rapidity as a name, and this article does not spend it.</p>
+<p><strong>One consequence has to be stated.</strong> If $\eta$ takes the rapidity, then the corpus has three names for one number: $\psi$, $\chi$ and $\eta$. The census above shows $\chi$ in 4 articles and $\psi$ in 62. A single name is worth having, and the argument for $\eta$ is the argument for one name, not for a third.</p>
+<h2 id="the-labels">The Labels</h2>
+<p>The caret carries three upright lowercase letters, and the index of labels in <em>Index, Notation and Corpus Conventions</em> runs to 78 rows. A new label must be free by spelling.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>label</th>
+<th>reads as</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>conflict check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plr</code></td>
+<td>the polar angle, $\theta^{\mathrm{plr}}$</td>
+<td>41</td>
+<td>13</td>
+<td><code>pol</code> is the polarisation vector, so the polar angle takes <code>plr</code></td>
+</tr>
+<tr>
+<td><code>azm</code></td>
+<td>the azimuth, $\theta^{\mathrm{azm}}$</td>
+<td>106</td>
+<td>14</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>prc</code></td>
+<td>the precession angle, $\theta^{\mathrm{prc}}$</td>
+<td>22</td>
+<td>1</td>
+<td><code>pre</code> is the presheaf</td>
+</tr>
+<tr>
+<td><code>wgn</code></td>
+<td>the Wigner angle, $\theta^{\mathrm{wgn}}$</td>
+<td>52</td>
+<td>10</td>
+<td>free; <code>wig</code> is also free</td>
+</tr>
+<tr>
+<td><code>han</code></td>
+<td>the Hannay angle, $\theta^{\mathrm{han}}$</td>
+<td>16</td>
+<td>1</td>
+<td><code>har</code> is the harmonic Fischer projection</td>
+</tr>
+<tr>
+<td><code>foc</code></td>
+<td>the Foucault latitude, $\theta^{\mathrm{foc}}$</td>
+<td>63</td>
+<td>2</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>opn</code></td>
+<td>the opening and superluminal angle, $\theta^{\mathrm{opn}}$</td>
+<td>34</td>
+<td>8</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>axc</code></td>
+<td>the axicon angle, $\theta^{\mathrm{axc}}$</td>
+<td>3</td>
+<td>1</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>eul</code></td>
+<td>a Euler angle, $\theta^{\mathrm{eul}}$</td>
+<td>8</td>
+<td>1</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>sol</code></td>
+<td>the solid angle, $\theta^{\mathrm{sol}}$</td>
+<td>58</td>
+<td>11</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>grm</code></td>
+<td>a Grassmann variable, $\zeta^{\mathrm{grm}}$</td>
+<td>132</td>
+<td>5</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>chb</code></td>
+<td>the Chebyshev function, $\vartheta^{\mathrm{chb}}(x)$</td>
+<td>33</td>
+<td>2</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>thf</code></td>
+<td>the theta function and the theta series, $\vartheta^{\mathrm{thf}}$</td>
+<td>24</td>
+<td>4</td>
+<td>free; shares the base $\vartheta$ with <code>chb</code>, so the label is what separates them</td>
+</tr>
+<tr>
+<td><code>hvs</code></td>
+<td>the Heaviside step, $\mathrm{H}^{\mathrm{hvs}}(t')$</td>
+<td>26</td>
+<td>6</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>bel</code></td>
+<td>the Belinfante tensor, $T_{\mu\nu}^{\mathrm{bel}}$</td>
+<td>28</td>
+<td>6</td>
+<td><code>can</code> is the canonical tensor and <code>imp</code> the improvement term</td>
+</tr>
+<tr>
+<td><code>ang</code></td>
+<td>an angle, unspecified</td>
+<td>—</td>
+<td>—</td>
+<td>new generic label</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The generic label is the one that pays for the rest.</strong> A bare $\theta$ in the corpus currently means "an angle, and the sentence says which". With <code>ang</code> available, an article that does not care can write $\theta^{\mathrm{ang}}$ once and be precise, and an article that does care writes the specific label. That is the arrangement the field already uses with $\chi$: bare where no precision is needed, labelled where it is.</p>
+<p><strong>Two labels are forced by collisions and the rest are free.</strong> <code>pol</code> cannot carry the polar angle because it is the polarisation vector, and one of the articles in this very role is about the polarization sphere. <code>pre</code> cannot carry precession because it is the presheaf. Every other label above is free by spelling in the 78 rows.</p>
+<h2 id="the-ten-uses-that-leave-capital-theta">The Ten Uses That Leave Capital Theta</h2>
+<p>Capital $\Theta$ is 4,165 occurrences in 213 articles, and 572 of them are an angle. The ten other uses leave the letter, and after them $\Theta$ carries the angle role alone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>decided</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sandwich, $\Theta_{\tilde Q}$</td>
+<td>2,338</td>
+<td>116</td>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
+<td><code>Sd</code> names the sandwich and collides with nothing</td>
+</tr>
+<tr>
+<td>the graded sandwich, $\Theta^{\alpha}_x$</td>
+<td>844</td>
+<td>39</td>
+<td>$\mathrm{Sd}^{\alpha}_x$</td>
+<td>the same family, and <code>\alpha</code> is the index's own slot label</td>
+</tr>
+<tr>
+<td>the involution, $\tau=\Theta\sigma$</td>
+<td>141</td>
+<td>8</td>
+<td>$\mathrm{J}$</td>
+<td>the same base as the $\theta$ involution, so one role is one letter</td>
+</tr>
+<tr>
+<td>the curvature, $\Theta=d\omega+\omega\wedge\omega$</td>
+<td>92</td>
+<td>4</td>
+<td>$\Omega$</td>
+<td>the corpus already writes it so in <em>Fibre Bundles, Connections and Curvature</em></td>
+</tr>
+<tr>
+<td>the quadrupole tensor, $\Theta_{ij}$</td>
+<td>53</td>
+<td>3</td>
+<td>$\mathcal{Q}_{ij}$</td>
+<td>the corpus already writes it so in <em>Higher Multipoles and the Field</em></td>
+</tr>
+<tr>
+<td>the group of homotopy spheres, $\Theta_n$</td>
+<td>26</td>
+<td>3</td>
+<td>$\mathrm{Sph}_n$</td>
+<td><code>Sph</code> is 0 occurrences in every role</td>
+</tr>
+<tr>
+<td>the improved stress tensor, $\Theta_{\mu\nu}$</td>
+<td>28</td>
+<td>6</td>
+<td>$T_{\mu\nu}^{\mathrm{bel}}$</td>
+<td><code>can</code> is the canonical tensor and <code>imp</code> the improvement term</td>
+</tr>
+<tr>
+<td>the Heaviside step, $\Theta(t')$</td>
+<td>22</td>
+<td>6</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(t')$</td>
+<td>the base is the initial, the label names the function</td>
+</tr>
+<tr>
+<td>the conjugation map, $\Theta(\tilde u)$</td>
+<td>34</td>
+<td>1</td>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>the article calls it the adjoint action and <em>Similitudes</em> writes it $\mathrm{Ad}_R$</td>
+</tr>
+<tr>
+<td>the CPT operator, $\Theta=C\circ P\circ T$</td>
+<td>15</td>
+<td>1</td>
+<td>$\mathrm{CPT}$</td>
+<td>the corpus writes named operators upright</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four of the ten cost no decision at all.</strong> The curvature and the quadrupole are already written $\Omega$ and $\mathcal{Q}_{ij}$ in the articles that define them, and the conjugation map is already written $\mathrm{Ad}_R$ in <em>Similitudes between Biquaternion Algebras</em>, which says in words that it is conjugation. The CPT operator is already a compound of three named letters. For these four the migration is a consistency edit, not a choice.</p>
+<p><strong>Four take a caret label.</strong> The step, the stress tensor, the spheres and the graded sandwich each get a base and a subscript or caret label: $\mathrm{H}^{\mathrm{hvs}}$, $T^{\mathrm{bel}}$, $\mathrm{Sph}$, $\mathrm{Sd}^{\alpha}$. The involution takes a bare base, $\mathrm{J}$, because <code>inv</code> already reads "inverse" in <em>Analysis on Compact Groups</em>. The label rule is the one the index already states: a three-letter label carries no capital, and a base that is a particle or a named operator is upright.</p>
+<p><strong>The base is the part that costs.</strong> $\mathrm{H}$ is the Hamiltonian 950 times in 56 articles and a base in 533, but the two do not meet: no article writes both the Hamiltonian and the step. <code>bel</code> is free everywhere, and so is <code>hvs</code>. <code>Sph</code> and <code>Sd</code> are free in every subscript and every caret.</p>
+<h3 id="the-sandwich-and-the-formula-it-has-to-keep">The Sandwich, and the Formula It Has to Keep</h3>
+<p>The sandwich is the two-sided operator</p>
+<p>$$\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}=L_{\tilde Q}R_{\tilde Q^{\dagger}}\tilde X,$$</p>
+<p>a left multiplication composed with a right multiplication, and its family is $\operatorname{End}_{LR\ast}(\mathbb{B})$. The corpus writes it 2,338 times in 116 articles, and that is the largest single use of $\Theta$ anywhere.</p>
+<p><strong>The sandwich takes <code>Sd</code>.</strong> The two-sided operator is written</p>
+<p>$$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}=L_{\tilde Q}R_{\tilde Q^{\dagger}}\tilde X,$$</p>
+<p>an upright base of two letters with the element in the subscript, the same shape as $L_{\tilde Q}$ and $R_{\tilde Q}$. <code>Sd</code> collides with nothing: 0 in a caret, 0 inside any other label, and the four bare $Sd$ in one article on Riemann boundary-value problems are the product $S\,d$ of two italic letters, which an upright token does not meet.</p>
+<p><strong>Why not the alternatives.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>occurrences today</th>
+<th>why it was not chosen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_{\tilde Q}$</td>
+<td>2,338 in 116</td>
+<td>it is the letter the migration is clearing</td>
+</tr>
+<tr>
+<td>$\mathrm{LR}^{*}_{\tilde Q}$</td>
+<td>0</td>
+<td>it names the family $\operatorname{End}_{LR\ast}$ rather than the operator, and the star reads as an adjoint</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}R_{\tilde Q^{\dagger}}$</td>
+<td>$L_xR_{x^{\dagger}}$ 30 in 6</td>
+<td>correct and long in every display; worth keeping where the composition is the point</td>
+</tr>
+<tr>
+<td>$\Lambda_{\tilde Q}$</td>
+<td>4 in 1</td>
+<td>$\Lambda$ is 4,309 occurrences in 367 articles</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde Q}$</td>
+<td>56 in 9</td>
+<td>$\mathrm{H}$ now carries the Heaviside step</td>
+</tr>
+<tr>
+<td>$\mathrm{S}_{\tilde Q}$</td>
+<td>0 with this subscript</td>
+<td>$\mathrm{S}$ is the symmetric algebra, the singular series and the spin connection</td>
+</tr>
+<tr>
+<td>$\Sigma_{\tilde Q}$</td>
+<td>0 with this subscript</td>
+<td>$\Sigma_{\mu\nu}$ is the Lorentz generator, 42 in 4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cost is the largest item in the article and it is paid once.</strong> 2,338 occurrences in 116 articles, of which 1,041 carry a biquaternion and 240 carry a bare element $x$. The three uses never meet inside an article: no article in either corpus writes both the sandwich and the Heaviside step, and none writes both the sandwich and a complex angle. The letter was safe to keep; it is being spent because a letter that means one thing in 80 articles and another in 18 is the defect the article exists to remove.</p>
+<h2 id="what-the-pair-costs">What the Pair Costs</h2>
+<p>The spherical pair is written $(\theta,\phi)$ 34 times and $(\theta,\varphi)$ 7 times, in 13 articles. Under the migration it is written $(\theta^{\mathrm{plr}},\theta^{\mathrm{azm}})$.</p>
+<p><strong>This is the real price of the article, and it is a price worth paying.</strong> A pair of two different letters carries no information about which is which; the reader supplies the order from memory, and the corpus is not consistent about the order — the pair appears in reverse five times. A pair of one letter and two labels states which is which, and the labels are the same ones the article uses everywhere else.</p>
+<p>The cost is not only typographic. The spherical pair is the one place where a bare letter has earned its keep for two centuries, and the migration spends it.</p>
+<p><strong>A cheaper variant exists and it should be considered.</strong> Keep $\theta$ bare for the polar angle and label only the azimuth: $(\theta,\theta^{\mathrm{azm}})$. It keeps the shorter form, it states which of the two is the azimuth, and it leaves the polar angle where it was. The variant costs one label instead of two, and it breaks the symmetry of the pair, which may be worse than the length. The recommendation is the symmetric form and the variant is recorded as the fallback.</p>
+<h2 id="rejected-candidates">Rejected Candidates</h2>
+<ul>
+<li><strong>keep $\phi$ for the angle</strong> — rejected. The glyph carries 2006 occurrences and only 167 of them are an angle. The field holds 1119 and has first claim, and the migration already gives the field $\chi$.</li>
+<li><strong>keep $\lambda$ for the latitude</strong> — rejected. 3609 occurrences, of which 63 are the latitude, in 2 articles. An eigenvalue does not move for a latitude.</li>
+<li><strong>keep $\Omega$ for the solid angle</strong> — rejected. 1020 occurrences, 58 of them a solid angle. $\Omega$ is an angular velocity and a domain in the rest.</li>
+<li><strong>$\alpha$ for the angle</strong> — rejected. 3033 occurrences, 31 an angle, and the fine-structure constant is the physics convention for the letter. Moving the Wigner angle off $\alpha$ costs 31 occurrences and settles a spelling that is already inconsistent.</li>
+<li><strong>$\vartheta$ for the real angle</strong> — rejected. 40 occurrences in 4 articles, and it is a scalar coefficient and a multipole moment there, not an angle. It is also a variant of $\theta$, so it would put two glyphs on one role.</li>
+<li><strong>$\psi$ for a Euler angle</strong> — rejected. 8 occurrences in 1 article. $\psi$ is the spinor, 2839 occurrences.</li>
+<li><strong>$\Theta$ for a real angle</strong> — rejected. It breaks the case rule in the article that states the case rule.</li>
+<li><strong>$\theta$ for a complex angle</strong> — rejected. Same reason, opposite direction. A complex angle written lowercase would say its scalar sector is real.</li>
+<li><strong>a new letter for the complex angle</strong> — rejected. There is none free, and the corpus already has $\Theta$ in the role in <em>The Hamilton Pairing</em> and in the eigenvalue decomposition $\lambda_\pm=\Rho e^{\pm i\Theta}$.</li>
+<li><strong>the low slot</strong> — rejected. An angle is not a component of a four-vector and takes no unit index. A label in the low slot would say the angle is a component.</li>
+</ul>
+<h2 id="the-price-article-by-article">The Price, Article by Article</h2>
+<p>46 articles are touched, and 409 occurrences move: 364 onto $\theta$ and 45 off it. The ten largest are below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>occurrences</th>
+<th>what moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a></td>
+<td>59</td>
+<td>the latitude $\lambda\to\theta^{\mathrm{foc}}$, and the rotation angle stays</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form.html">Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</a></td>
+<td>33</td>
+<td>the Hannay angle $\phi\to\theta^{\mathrm{han}}$, the latitude $\lambda\to\theta^{\mathrm{foc}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces and Quaternions</a></td>
+<td>31</td>
+<td>the rotation angle $\alpha\to\theta^{\mathrm{wgn}}$, the tensor $\theta_{\mu\nu}\to T_{\mu\nu}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.html">Rigid-Body Dynamics and the Biquaternion Rotor</a></td>
+<td>30</td>
+<td>the precession angle $\phi\to\theta^{\mathrm{prc}}$, the Euler angle $\psi\to\theta^{\mathrm{eul}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a></td>
+<td>25</td>
+<td>the azimuth $\phi\to\theta^{\mathrm{azm}}$, the solid angle $\Omega\to\theta^{\mathrm{sol}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td>22</td>
+<td>the azimuth $\phi\to\theta^{\mathrm{azm}}$, the solid angle $\Omega\to\theta^{\mathrm{sol}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td>21</td>
+<td>the Wigner angle $\phi\to\theta^{\mathrm{wgn}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a></td>
+<td>19</td>
+<td>the azimuth $\phi\to\theta^{\mathrm{azm}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a></td>
+<td>17</td>
+<td>the azimuth $\phi\to\theta^{\mathrm{azm}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.html">Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</a></td>
+<td>15</td>
+<td>the solid angle $\Omega\to\theta^{\mathrm{sol}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The distribution is the argument for the migration. The largest article moves 59 occurrences and the tenth moves 15, and the median touched article moves 4. This is not a rewrite of the corpus; it is a correction in 46 places.</p>
+<h2 id="what-remains-open">What Remains Open</h2>
+<p><strong>Two more were found by reading, after the counts were taken.</strong> The $\theta(x_0-y_0)$ of <em>The Feynman Propagator in Biquaternionic Form</em> is a step function, and it is $\mathrm{H}^{\mathrm{hvs}}$, the glyph the first pass had chosen for exactly that role. The $\theta(c)=ucu^{-1}$ of <em>The Z-Grading and the Odd Slot of M4C</em> is an automorphism of the algebra, and it is $\mathrm{J}$. Both are the same lesson: a rule that reads context finds most of a role, and only reading the sentence finds the rest.</p>
+<p><strong>The residue after the second pass.</strong> No occurrence of either glyph is left that is not an angle, with one family kept on purpose: the rotation-number $\theta$ of $A_\theta$, where the article itself writes the rotation as the angle $2\pi\theta$. The count is 7,079 and 453, and every one of them reads as an angle in its sentence.</p>
+<ol>
+<li><strong>The glyph of the Heaviside step.</strong> Decided: $\mathrm{H}^{\mathrm{hvs}}(t')$. The label is free; the base is the Hamiltonian's letter, and no article writes both.</li>
+<li><strong>The letter of the sandwich family.</strong> Decided: $\mathrm{Sd}_{\tilde Q}$, 2,338 occurrences in 116 articles. It is the largest edit in the migration, a quarter of the corpus, and the only one that touches the mathematical corpus.</li>
+<li><strong>The rapidity as a name.</strong> $\psi$ in 62 articles, $\chi$ in 4, $\eta$ proposed by the other migration. One name is wanted and this article does not choose it.</li>
+<li><strong>The polar angle.</strong> $\theta^{\mathrm{plr}}$ is the symmetric choice and $(\theta,\theta^{\mathrm{azm}})$ is the cheaper one.</li>
+<li><strong>Whether a phase is an angle.</strong> $\phi$ carries 110 phase occurrences and $\omega t$ is a phase in most of the corpus. The decision here is no: a phase is read as a phase and the corpus already labels it $\chi^{\mathrm{phs}}$. If the corpus later decides that a phase is an angle, the phase role joins $\theta$ with the label <code>phs</code> and 110 more occurrences move.</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the case rule, the table of marks, and the coefficient $Q_\mu=q_\mu+iq'_\mu$.</li>
+<li><a href="../articles_maths/index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a>, for the caret, the low slot and the 78 rows of labels.</li>
+<li><a href="../articles_physics/the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing: Mass as Modulus and the Complex Angle</a>, for $\Theta$ as the complex angle, $\cos\Theta=Q_t/\Rho$, and $\Theta=-i\psi$ for a four-momentum.</li>
+<li><a href="phi-psy-migration.html">The Phi and Psi Migration</a>, for the field $\chi$, the potential $a'_t=\phi/c$, and the rapidity.</li>
+<li><a href="../articles_maths/operator-family-conventions.html">Operator-Family Conventions</a>, for the four families $L$, $R$, $LR$ and $\Theta$.</li>
+<li><a href="the-lower-labels-and-the-obstruction-to-the-caret.html">The Lower Labels and the Obstruction to the Caret</a>, for the three-letter rule and the collisions in the low slot.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

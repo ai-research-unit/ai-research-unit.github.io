@@ -187,9 +187,9 @@ $$</p>
 (a, r) \longmapsto (a + r\,1_A,\, r)
 $$</p>
 <p>is an isomorphism of $R$-algebras $A^+ \to A \times R$ onto the direct product, with inverse $(c,r) \mapsto (c - r\,1_A,\, r)$; under it $A$ corresponds to $A \times 0$, and the identity $(0,1)$ of $A^+$ corresponds to $(1_A, 1)$, while the original identity $(1_A, 0)$ of $A$ is not the identity of $A^+$.</p>
-<p><em>Proof.</em> Multiplicativity of $f^+$ is the multiplicativity of $f$, and $f^+(0,1) = (0,1)$. For the isomorphism, the displayed map $\theta(a,r) = (a + r1_A, r)$ is $R$-linear and bijective with the stated inverse, and it is multiplicative because</p>
+<p><em>Proof.</em> Multiplicativity of $f^+$ is the multiplicativity of $f$, and $f^+(0,1) = (0,1)$. For the isomorphism, the displayed map $\mathrm{J}(a,r) = (a + r1_A, r)$ is $R$-linear and bijective with the stated inverse, and it is multiplicative because</p>
 <p>$$
-\theta\bigl((a,r)(b,s)\bigr) = \bigl(ab + rb + sa + rs\,1_A,\, rs\bigr) = \bigl((a + r1_A)(b + s1_A),\, rs\bigr) = \theta(a,r)\,\theta(b,s),
+\theta\bigl((a,r)(b,s)\bigr) = \bigl(ab + rb + sa + rs\,1_A,\, rs\bigr) = \bigl((a + r1_A)(b + s1_A),\, rs\bigr) = \mathrm{J}(a,r)\,\mathrm{J}(b,s),
 $$</p>
 <p>the middle equality being the expansion of the product in the unital algebra $A$.</p>
 <p><strong>Remark.</strong> The unitisation is the smallest unital algebra through which every homomorphism from $A$ to a unital algebra factors: it is initial among the unital algebras receiving an $R$-algebra homomorphism from $A$, and every such algebra receives a unique unital homomorphism from $A^+$ extending it. Applied to an algebra that already has an identity it adjoins a new one rather than preserving the old, by the corollary, so $A^+$ is not $A$ when $A$ is unital; what the corollary says is that $A^+$ is then the direct product of $A$ with the base ring. The construction is used without comment in Part II, where the proof of the Gelfand–Naimark theorem applies the GNS construction of <em>Operator Algebras</em>, §<em>The Gelfand–Naimark Theorems</em>, to $A^+$ when $A$ has no identity, and in Part III, where <em>K-Theory of Operator Algebras</em> records that $A \to A^+$ is an isomorphism on $K_1$ and that $K_0(A) = \ker\bigl(K_0(A^+) \to K_0(\mathbb{C})\bigr)$; the universal property is stated here because it is a Part I statement.</p>

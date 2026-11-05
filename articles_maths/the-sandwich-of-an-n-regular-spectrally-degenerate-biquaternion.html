@@ -72,32 +72,32 @@
 <h2 id="introduction">Introduction</h2>
 <p>The Hermitian sandwich of the biquaternion algebra is the operator</p>
 <p>$$
-\Theta_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
+\mathrm{Sd}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$</p>
 <p>It is the sandwich of the polar decomposition, and its theory in the regular sector is <em>The Sandwich of an N-Regular, Spectrally Regular Biquaternion</em>. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.</p>
 <p>The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, computes the fixed directions, and explains how the two spinor slots of the regular article coalesce at the wall. The exponential of the operator is the companion <em>The Sandwich Exponential of an N-Regular, Spectrally Degenerate Biquaternion</em>.</p>
 <h2 id="the-sandwich-of-the-word">The Sandwich of the Word</h2>
 <p>The elementary properties are unchanged:</p>
 <p>$$
-\Theta_{\tilde Q\tilde Q'}=\Theta_{\tilde Q}\circ\Theta_{\tilde Q'},
+\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'},
 \qquad
-\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}},
+\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}},
 \qquad
-\Theta_{\tilde Q}(e_t)=\tilde Q\tilde Q^{*},
+\mathrm{Sd}_{\tilde Q}(e_t)=\tilde Q\tilde Q^{*},
 $$</p>
-<p>and $\Theta_{\tilde Q}$ preserves the Hermitian and anti-Hermitian subspaces. The norm scales by</p>
+<p>and $\mathrm{Sd}_{\tilde Q}$ preserves the Hermitian and anti-Hermitian subspaces. The norm scales by</p>
 <p>$$
-\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}
+\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}
 =\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}.
 $$</p>
 <p>The closed form of the word is</p>
 <p>$$
-\Theta_{\tilde Q}(\tilde X)
+\mathrm{Sd}_{\tilde Q}(\tilde X)
 =r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b},
 $$</p>
-<p>and the central phase cancels, $\Theta_{\exp(i\alpha)}=\mathrm{id}$.</p>
+<p>and the central phase cancels, $\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}$.</p>
 <p>On the sector,</p>
 <p>$$
 \tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
@@ -106,7 +106,7 @@ $$</p>
 \qquad
 \tilde U=e_t+\vec\Upsilon,
 \qquad
-\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}\,\Theta_{\tilde U}.
+\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\,\mathrm{Sd}_{\tilde U}.
 $$</p>
 <p>The problem is therefore reduced to the sandwich by the unipotent element $\tilde U$.</p>
 <h2 id="the-unipotent-operator">The Unipotent Operator</h2>
@@ -116,11 +116,11 @@ A^2=0,
 \qquad
 B^2=0,
 \qquad
-\Theta_{\tilde U}=I+A+B+AB.
+\mathrm{Sd}_{\tilde U}=I+A+B+AB.
 $$</p>
-<p><strong>Proposition (the Jordan structure).</strong> On the Jordan part, $\Theta_{\tilde U}$ has the single eigenvalue $1$, and its nilpotent part</p>
+<p><strong>Proposition (the Jordan structure).</strong> On the Jordan part, $\mathrm{Sd}_{\tilde U}$ has the single eigenvalue $1$, and its nilpotent part</p>
 <p>$$
-\mathsf N=\Theta_{\tilde U}-I=A+B+AB
+\mathsf N=\mathrm{Sd}_{\tilde U}-I=A+B+AB
 $$</p>
 <p>satisfies $\mathsf N^2=2AB$, $\mathsf N^3=0$, with $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. The Jordan form is one block of size three and one block of size one.</p>
 <p><em>Proof.</em> The operators $A$ and $B$ commute and square to zero, so</p>
@@ -130,29 +130,29 @@ $$</p>
 \mathsf N^3=3AB(A+B)=0,
 $$</p>
 <p>because $A^2=B^2=0$. The rank of $A$ is two, and the rank of $B$ is two; their product $AB$ has rank one because the image of $B$ is the right ideal $\vec\Upsilon^{*}\mathbb{B}$ and the kernel of $A$ is the right annihilator of $\vec\Upsilon$, whose intersection with that image is one complex line. Hence $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. A nilpotent on a four-dimensional space with $\mathsf N^3=0$ and $\operatorname{rank}\mathsf N^2=1$ has one block of size three and one of size one.</p>
-<p>Consequently $\Theta_{\tilde Q}$ has the single eigenvalue $|Q_t|^2$, with one $3\times3$ Jordan block and one $1\times1$ block. Its determinant is</p>
+<p>Consequently $\mathrm{Sd}_{\tilde Q}$ has the single eigenvalue $|Q_t|^2$, with one $3\times3$ Jordan block and one $1\times1$ block. Its determinant is</p>
 <p>$$
-\det\Theta_{\tilde Q}=\lvert Q_t\rvert^{8},
+\det\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{8},
 $$</p>
 <p>the fourth power of the element determinant, as in the regular sector.</p>
-<p>The fixed subspace of $\Theta_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not $*$-unitary, and $\Theta_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §<em>The Fixed Directions</em>.</p>
+<p>The fixed subspace of $\mathrm{Sd}_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not $*$-unitary, and $\mathrm{Sd}_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §<em>The Fixed Directions</em>.</p>
 <h2 id="the-polar-decomposition-of-the-sandwich">The Polar Decomposition of the Sandwich</h2>
 <p>Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ $*$-unitary. Then</p>
 <p>$$
-\Theta_{\tilde Q}=\Theta_{\tilde H}\circ\Theta_{\tilde V},
+\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde H}\circ\mathrm{Sd}_{\tilde V},
 \qquad
-\Theta_{\tilde H}(\tilde X)=\tilde H\tilde X\tilde H^{*},
+\mathrm{Sd}_{\tilde H}(\tilde X)=\tilde H\tilde X\tilde H^{*},
 \qquad
-\Theta_{\tilde V}(\tilde X)=\tilde V\tilde X\tilde V^{*}.
+\mathrm{Sd}_{\tilde V}(\tilde X)=\tilde V\tilde X\tilde V^{*}.
 $$</p>
-<p>The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a $*$-unitary operator, because $\tilde V$ is $*$-unitary. This is the polar decomposition of the operator $\Theta_{\tilde Q}$.</p>
-<p>The product $\Theta_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\psi}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.</p>
+<p>The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a $*$-unitary operator, because $\tilde V$ is $*$-unitary. This is the polar decomposition of the operator $\mathrm{Sd}_{\tilde Q}$.</p>
+<p>The product $\mathrm{Sd}_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\psi}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.</p>
 <h2 id="the-two-slots">The Two Slots</h2>
 <p>In the regular sector the sandwich has two spinor slots, and the rotor angle and the rapidity are doubled on them. On the wall the slots do not disappear; they coalesce into the Jordan chain. The $3\times3$ block and the $1\times1$ block are the remnants of the two slots: one slot keeps a fixed vector, and the other carries the nilpotent chain of length three.</p>
-<p>The central phase is invisible in the sandwich, as in the regular sector: $\Theta_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/sandwich contrast: the phase is a one-sided datum, and the sandwich sees only the scale, the boost and the rotor.</p>
+<p>The central phase is invisible in the sandwich, as in the regular sector: $\mathrm{Sd}_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/sandwich contrast: the phase is a one-sided datum, and the sandwich sees only the scale, the boost and the rotor.</p>
 <h2 id="the-fixed-directions">The Fixed Directions</h2>
 <p>The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\times\vec B/a^2$, so that $\lvert\vec c\rvert=1$, and $X=e_t+i\vec c$.</p>
-<p><em>Proposition.</em> $\Theta_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{M}_-$ the fixed null vector is $iX=ie_t-\vec c$.</p>
+<p><em>Proposition.</em> $\mathrm{Sd}_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{M}_-$ the fixed null vector is $iX=ie_t-\vec c$.</p>
 <p><em>Proof.</em> From $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$,</p>
 <p>$$
 \Upsilon\vec A=-a^2-i\vec A\times\vec B=\vec A\bar\Upsilon,\qquad
@@ -165,12 +165,12 @@ $$</p>
 $$</p>
 <p>Hence $\Upsilon X=\Upsilon+i\Upsilon\vec c=0$ and $X\bar\Upsilon=\bar\Upsilon+i\vec c\bar\Upsilon=0$. Therefore</p>
 <p>$$
-\Theta_{\tilde U}(\vec A)
+\mathrm{Sd}_{\tilde U}(\vec A)
 =\vec A+\Upsilon\vec A-\vec A\bar\Upsilon-\Upsilon\vec A\bar\Upsilon=\vec A,
 $$</p>
 <p>because the two middle terms are equal and cancel, and $\Upsilon\vec A\bar\Upsilon=\vec A\bar\Upsilon^2=0$; and</p>
 <p>$$
-\Theta_{\tilde U}(X)
+\mathrm{Sd}_{\tilde U}(X)
 =X+\Upsilon X-X\bar\Upsilon-\Upsilon X\bar\Upsilon=X.
 $$</p>
 <p>The vector $\vec A$ has zero scalar part and $X$ has scalar part one, so they are independent. Since $\ker\mathsf N$ is two-dimensional, they span it.</p>
@@ -178,7 +178,7 @@ $$</p>
 <h2 id="worked-example">Worked Example</h2>
 <p>Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
 <p>$$
-\mathsf M(\Theta_{\tilde Q})=
+\mathsf M(\mathrm{Sd}_{\tilde Q})=
 \begin{pmatrix}
 3 & 0 & -2i & 2i\\
 0 & 1 & 0 & 0\\
@@ -203,7 +203,7 @@ $$</p>
 \qquad
 \tilde V=\frac{e_t+\vec e_x}{\sqrt2},
 $$</p>
-<p>and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$ and the $*$-unitary operator $\Theta_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.</p>
+<p>and the sandwich is the composition of the positive operator $\mathrm{Sd}_{\tilde H}$ and the $*$-unitary operator $\mathrm{Sd}_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
@@ -220,11 +220,11 @@ $$</p>
 </tr>
 <tr>
 <td>operator</td>
-<td>$\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>
 <td>sector form</td>
-<td>$\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}\Theta_{e_t+\vec\Upsilon}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{Sd}_{e_t+\vec\Upsilon}$</td>
 </tr>
 <tr>
 <td>nilpotent part</td>
@@ -252,11 +252,11 @@ $$</p>
 </tr>
 <tr>
 <td>polar factors</td>
-<td>$\Theta_{\tilde H}$ positive, $\Theta_{\tilde V}$ $*$-unitary</td>
+<td>$\mathrm{Sd}_{\tilde H}$ positive, $\mathrm{Sd}_{\tilde V}$ $*$-unitary</td>
 </tr>
 <tr>
 <td>phase</td>
-<td>invisible, $\Theta_{e^{i\alpha}}=\mathrm{id}$</td>
+<td>invisible, $\mathrm{Sd}_{e^{i\alpha}}=\mathrm{id}$</td>
 </tr>
 <tr>
 <td>fixed subspace</td>
@@ -302,7 +302,7 @@ $$</p>
 <td>the null vector of the normal form</td>
 </tr>
 <tr>
-<td>$\Theta_{\tilde Q}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
 <td>the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf N$</td>
-<td>$\Theta_{\tilde U}-I=A+B+AB$</td>
+<td>$\mathrm{Sd}_{\tilde U}-I=A+B+AB$</td>
 </tr>
 </tbody>
 </table></div>

@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>reflection</strong> of a graded algebra is the signed conjugation</p>
 <p>$$
-\tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x) ,
+\tau_a(x) = a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x) ,
 $$</p>
 <p>the signed sandwich with the parameter $b = a^{-1}$; it is an involution exactly when $a$ is a <strong>reflection element</strong>, $\alpha(a) = a^{-1}$. The article computes its <strong>adjoint</strong> for the trace form by specialising the adjoint of the signed sandwich:</p>
 <p>$$
@@ -84,7 +84,7 @@ $$</p>
 <h2 id="the-adjoint-of-the-reflected-operator">The Adjoint of the Reflected Operator</h2>
 <p><strong>Definition.</strong> The <strong>reflected signed two-sided operator</strong> (the reflection) is</p>
 <p>$$
-\tau_a : A\to A, \qquad \tau_a(x) = a\,\alpha(x)\,a^{-1} = \Theta^{\alpha}_{a,\,a^{-1}}(x) ;
+\tau_a : A\to A, \qquad \tau_a(x) = a\,\alpha(x)\,a^{-1} = \mathrm{Sd}^{\alpha}_{a,\,a^{-1}}(x) ;
 $$</p>
 <p>it is the signed conjugation by $a$, and it is an <strong>involution</strong> exactly when $a$ is a reflection element, $\alpha(a) = a^{-1}$.</p>
 <p><strong>Theorem (the adjoint of the reflection).</strong> For the trace form the adjoint of the reflection is the reflection with the $\alpha$-twisted adjoint parameter,</p>
@@ -92,9 +92,9 @@ $$</p>
 \boxed{\;(\tau_a)^{*} = \tau_{\alpha(a^{*})}\;} ;
 $$</p>
 <p>in particular the adjoint of a reflection is again a reflection, the adjoint of $\tau_a$ is the ordinary conjugation by $a^{*}$ when the grade involution is the identity, and the family of the reflections is <strong>closed under the adjoint</strong>.</p>
-<p><em>Proof.</em> Apply the adjoint formula of the signed sandwich to $\Theta^{\alpha}_{a,a^{-1}}$:
+<p><em>Proof.</em> Apply the adjoint formula of the signed sandwich to $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$:
 $$
-(\tau_a)^{*} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \Theta^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
+(\tau_a)^{*} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha((a^{-1})^{*})} = \mathrm{Sd}^{\alpha}_{\alpha(a^{*}),\,\alpha(a^{*})^{-1}} = \tau_{\alpha(a^{*})} ,
 $$
 using $\alpha((a^{-1})^{*}) = \alpha(a^{-1})^{*} = \alpha(a^{*})^{-1}$ and the definition of the reflection. The identity grade involution gives $(\tau_a)^{*} = \tau_{a^{*}}$, the conjugation by the adjoint.</p>
 <p><strong>Corollary (the adjoint of a reflection element).</strong> If $a$ is a reflection element, $\alpha(a) = a^{-1}$, then</p>
@@ -126,7 +126,7 @@ $$</p>
 \boxed{\;\alpha\geq0, \quad a\geq0\ \text{invertible} \implies \tau_a\geq0 \ \text{ and } \ (\tau_a)^{*}\geq0\;} .
 $$</p>
 <p>If the grade involution is not positive then the reflection of positive parameters need not be positive, and the obstruction is the sign of $\alpha$ on the odd part of the cone.</p>
-<p><em>Proof.</em> The reflection is the signed sandwich $\Theta^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of <em>The Adjoint of a Positive Operator</em>. The failure in the non-positive case is the positivity proposition of the signed sandwich.</p>
+<p><em>Proof.</em> The reflection is the signed sandwich $\mathrm{Sd}^{\alpha}_{a,a^{-1}}$; with $\alpha$ positive and $a\geq0$ invertible, so that $a^{-1}\geq0$, the positivity criterion of the signed sandwich gives $\tau_a\geq0$; the positivity of the adjoint is the general positivity preservation of the adjoint of <em>The Adjoint of a Positive Operator</em>. The failure in the non-positive case is the positivity proposition of the signed sandwich.</p>
 <p><strong>Corollary (the order and the outer class).</strong> The reflections that are positive form a subset of the realised reflections closed under the adjoint; the order-reversing reflections are the ones whose adjoint is their negative up to the centre; and the adjoint action on the realised reflections preserves both the positive and the order-reversing classes, because it preserves the positivity of the operators. This is the order-theoretic statement of the outer-class computation: the adjoint is an order automorphism of the reflection family whose action on the outer classes is the $\alpha$-twist of the parameter.</p>
 <p><em>Proof.</em> The closure of the positive reflections under the adjoint is the theorem; the order-reversing case is the sign condition; the outer-class statement is the corollary on the adjoint of the realised reflection.</p>
 <h2 id="worked-cases">Worked Cases</h2>
@@ -137,7 +137,7 @@ $$</p>
 <h3 id="the-clifford-algebra">The Clifford Algebra</h3>
 <p>Let $A = \mathrm{Cl}(V,\mathfrak{Q})$ with the parity grading and its positive grade involution. A vector $e$ with $e^{2} = -1$ is an odd reflection element and $\tau_e$ is a reflection of the algebra restricting to a reflection of $V$; the adjoint of $\tau_e$ is $\tau_{\alpha(e^{*})} = \tau_{-e^{*}}$, the reflection realised by the twist of the adjoint vector, and the pair $e$, $-e$ realises the same reflection modulo the sign. The Clifford case is the geometric instance in which the adjoint of the reflection is the reflection of the adjoint.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>reflection</strong> $\tau_a(x) = a\alpha(x)a^{-1} = \Theta^{\alpha}_{a,a^{-1}}(x)$ of a graded ordered involutive algebra has, for the trace form, the adjoint</p>
+<p>The <strong>reflection</strong> $\tau_a(x) = a\alpha(x)a^{-1} = \mathrm{Sd}^{\alpha}_{a,a^{-1}}(x)$ of a graded ordered involutive algebra has, for the trace form, the adjoint</p>
 <p>$$
 (\tau_a)^{*} = \tau_{\alpha(a^{*})} ,
 $$</p>

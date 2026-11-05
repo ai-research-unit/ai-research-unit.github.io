@@ -72,11 +72,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>The unit group $GL_4(\mathbb{C})$ is a real Lie group of dimension $32$. Its <strong>Cartan involution</strong> is</p>
 <p>$$
-\Theta(g)=(g^{*})^{-1},
+\mathrm{J}(g)=(g^{*})^{-1},
 $$</p>
 <p>whose fixed subgroup is the unitary group $U(4)$. At the level of the Lie algebra $\mathfrak{gl}_4(\mathbb{C})$, regarded as a real Lie algebra, the involution is</p>
 <p>$$
-\theta(X)=-X^{*},
+\mathrm{J}(X)=-X^{*},
 $$</p>
 <p>with fixed algebra $\mathfrak{u}(4)$ and $(-1)$-eigenspace the Hermitian matrices. The <strong>Cartan decomposition</strong> is the direct sum</p>
 <p>$$
@@ -93,11 +93,11 @@ $$</p>
 <p>is a Riemannian symmetric space of non-compact type, of real dimension $16$.</p>
 <p>This article states the involution, the decomposition, the symmetric space, its metric and geodesics, and the relation to the compact and indefinite cases. The polar decomposition of a single element is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>; the Hermitian structure and the unitary group are <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>; the indefinite case is <em>The Krein Isometry Group and Its Cartan Decomposition</em>.</p>
 <h2 id="the-cartan-involution">The Cartan Involution</h2>
-<p><strong>Definition.</strong> On $GL_4(\mathbb{C})$ the Cartan involution is $\Theta(g)=(g^{*})^{-1}$; on $\mathfrak{gl}_4(\mathbb{C})$ it is $\theta(X)=-X^{*}$.</p>
-<p><strong>Proposition.</strong> $\Theta$ is an involutive automorphism of the group, $\theta$ is an involutive automorphism of the real Lie algebra, and the two are compatible with the exponential.</p>
-<p><strong>Proof.</strong> For the group, $\Theta(gh)=((gh)^{*})^{-1}=(h^{*}g^{*})^{-1}=(g^{*})^{-1}(h^{*})^{-1}=\Theta(g)\Theta(h)$, and $\Theta^{2}(g)=((g^{*})^{-1})^{*}{}^{-1}=g$. For the algebra, $\theta([X,Y])=-[X,Y]^{*}=-[Y^{*},X^{*}]=[-X^{*},-Y^{*}]=[\theta X,\theta Y]$, and $\theta^{2}(X)=-(-X^{*})^{*}=X$. The compatibility is $\Theta(e^{X})=e^{\theta X}$, because $(e^{X})^{*}=e^{X^{*}}$.</p>
-<p><strong>The fixed subgroup.</strong> $\Theta(g)=g$ means $(g^{*})^{-1}=g$, that is, $g^{*}g=I$: the fixed subgroup is $U(4)$.</p>
-<p><strong>The fixed algebra.</strong> $\theta(X)=X$ means $-X^{*}=X$, that is, $X^{*}=-X$: the fixed algebra is $\mathfrak{u}(4)$, of real dimension $16$. The $(-1)$-eigenspace is the space of Hermitian matrices, $\operatorname{Herm}_4=\{X:X^{*}=X\}$, also of real dimension $16$.</p>
+<p><strong>Definition.</strong> On $GL_4(\mathbb{C})$ the Cartan involution is $\mathrm{J}(g)=(g^{*})^{-1}$; on $\mathfrak{gl}_4(\mathbb{C})$ it is $\mathrm{J}(X)=-X^{*}$.</p>
+<p><strong>Proposition.</strong> $\mathrm{J}$ is an involutive automorphism of the group, $\mathrm{J}$ is an involutive automorphism of the real Lie algebra, and the two are compatible with the exponential.</p>
+<p><strong>Proof.</strong> For the group, $\mathrm{J}(gh)=((gh)^{*})^{-1}=(h^{*}g^{*})^{-1}=(g^{*})^{-1}(h^{*})^{-1}=\mathrm{J}(g)\mathrm{J}(h)$, and $\mathrm{J}^{2}(g)=((g^{*})^{-1})^{*}{}^{-1}=g$. For the algebra, $\mathrm{J}([X,Y])=-[X,Y]^{*}=-[Y^{*},X^{*}]=[-X^{*},-Y^{*}]=[\mathrm{J} X,\mathrm{J} Y]$, and $\mathrm{J}^{2}(X)=-(-X^{*})^{*}=X$. The compatibility is $\mathrm{J}(e^{X})=e^{\mathrm{J} X}$, because $(e^{X})^{*}=e^{X^{*}}$.</p>
+<p><strong>The fixed subgroup.</strong> $\mathrm{J}(g)=g$ means $(g^{*})^{-1}=g$, that is, $g^{*}g=I$: the fixed subgroup is $U(4)$.</p>
+<p><strong>The fixed algebra.</strong> $\mathrm{J}(X)=X$ means $-X^{*}=X$, that is, $X^{*}=-X$: the fixed algebra is $\mathfrak{u}(4)$, of real dimension $16$. The $(-1)$-eigenspace is the space of Hermitian matrices, $\operatorname{Herm}_4=\{X:X^{*}=X\}$, also of real dimension $16$.</p>
 <p><strong>The decomposition.</strong> Every $X\in\mathfrak{gl}_4$ splits uniquely as</p>
 <p>$$
 X=\underbrace{\tfrac12(X-X^{*})}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(X+X^{*})}_{\text{Hermitian}},
@@ -106,7 +106,7 @@ $$</p>
 <p>$$
 \mathfrak{gl}_4(\mathbb{C})=\mathfrak{u}(4)\oplus\operatorname{Herm}_4
 $$</p>
-<p>as real vector spaces. The summands are the eigenspaces of $\theta$ for the eigenvalues $+1$ and $-1$.</p>
+<p>as real vector spaces. The summands are the eigenspaces of $\mathrm{J}$ for the eigenvalues $+1$ and $-1$.</p>
 <p><strong>The bracket relations.</strong> The decomposition is a <strong>Cartan decomposition</strong>:</p>
 <p>$$
 [\mathfrak{u},\mathfrak{u}]\subseteq\mathfrak{u},\qquad
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>The polar decomposition.</strong> The group-level Cartan decomposition is the polar decomposition $g=UP$, and the symmetric space is the space of the positive factors. The uniqueness of the polar decomposition is the uniqueness of the decomposition; the freedom on the kernel for singular elements is the boundary of the cone.</p>
 <p><strong>The biquaternion comparison.</strong> For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the same construction gives $GL_2(\mathbb{C})/U(2)$, of real dimension $4$, and the cone of positive definite Hermitian $2\times2$ matrices. The passage from $2$ to $4$ doubles the rank of the cone and quadruples its dimension; the Cartan involution is the same formula in both cases.</p>
 <h2 id="summary">Summary</h2>
-<p>The Cartan involution $\Theta(g)=(g^{*})^{-1}$ has fixed subgroup $U(4)$ and induces $\theta(X)=-X^{*}$ on the real Lie algebra, with fixed algebra $\mathfrak{u}(4)$ and $(-1)$-eigenspace $\operatorname{Herm}_4$. The Cartan decomposition is $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$, of real dimensions $16+16$, and at the group level the polar decomposition $GL_4=U(4)\cdot\operatorname{Herm}_4^{++}$. The quotient is the cone of positive definite Hermitian matrices, a symmetric space of non-compact type of real dimension $16$, with non-positive curvature and geodesics $P(t)=P^{1/2}\exp(tP^{-1/2}HP^{-1/2})P^{1/2}$. The compact dual is the group manifold $U(4)$; the indefinite analogues are $\mathbb{CH}^{3}$ and $\operatorname{Gr}(2,4)$, with compact duals $\mathbb{CP}^{3}$ and $\operatorname{Gr}(2,4)$.</p>
+<p>The Cartan involution $\mathrm{J}(g)=(g^{*})^{-1}$ has fixed subgroup $U(4)$ and induces $\mathrm{J}(X)=-X^{*}$ on the real Lie algebra, with fixed algebra $\mathfrak{u}(4)$ and $(-1)$-eigenspace $\operatorname{Herm}_4$. The Cartan decomposition is $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$, of real dimensions $16+16$, and at the group level the polar decomposition $GL_4=U(4)\cdot\operatorname{Herm}_4^{++}$. The quotient is the cone of positive definite Hermitian matrices, a symmetric space of non-compact type of real dimension $16$, with non-positive curvature and geodesics $P(t)=P^{1/2}\exp(tP^{-1/2}HP^{-1/2})P^{1/2}$. The compact dual is the group manifold $U(4)$; the indefinite analogues are $\mathbb{CH}^{3}$ and $\operatorname{Gr}(2,4)$, with compact duals $\mathbb{CP}^{3}$ and $\operatorname{Gr}(2,4)$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -205,11 +205,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Theta(g)=(g^{*})^{-1}$</td>
+<td>$\mathrm{J}(g)=(g^{*})^{-1}$</td>
 <td>the Cartan involution of the group</td>
 </tr>
 <tr>
-<td>$\theta(X)=-X^{*}$</td>
+<td>$\mathrm{J}(X)=-X^{*}$</td>
 <td>the Cartan involution of the Lie algebra</td>
 </tr>
 <tr>

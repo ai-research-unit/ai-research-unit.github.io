@@ -114,12 +114,12 @@ $$</p>
 <h2 id="the-exceptional-set-of-directions">The Exceptional Set of Directions</h2>
 <p><strong>Definition.</strong> For $0 \leq t \leq \dim_H E$ let</p>
 <p>$$
-\Theta_t(E) = \{\theta \in [0,\pi) : \dim_H \pi_\theta E < t\}
+\mathrm{Sd}_t(E) = \{\theta \in [0,\pi) : \dim_H \pi_\theta E < t\}
 $$</p>
-<p>be the set of the directions in which the projection is smaller than the threshold $t$. Marstrand's theorem says that $\Theta_s(E)$ has Lebesgue measure zero for $s = \min(\dim_H E, 1)$.</p>
+<p>be the set of the directions in which the projection is smaller than the threshold $t$. Marstrand's theorem says that $\mathrm{Sd}_s(E)$ has Lebesgue measure zero for $s = \min(\dim_H E, 1)$.</p>
 <p><strong>Theorem (the size of the exceptional set).</strong></p>
-<p><strong>(a)</strong> (Kaufman, 1968) If $0 < t < \dim_H E < 1$, then $\dim_H \Theta_t(E) \leq t$.</p>
-<p><strong>(b)</strong> (Oberlin; Bourgain) If $\dim_H E < 1$, then $\Theta_{\frac12\dim_H E}(E)$ has Hausdorff dimension zero: the projection has at least half the dimension of the set in almost every direction, in the full-measure sense.</p>
+<p><strong>(a)</strong> (Kaufman, 1968) If $0 < t < \dim_H E < 1$, then $\dim_H \mathrm{Sd}_t(E) \leq t$.</p>
+<p><strong>(b)</strong> (Oberlin; Bourgain) If $\dim_H E < 1$, then $\mathrm{Sd}_{\frac12\dim_H E}(E)$ has Hausdorff dimension zero: the projection has at least half the dimension of the set in almost every direction, in the full-measure sense.</p>
 <p><strong>(c)</strong> (Falconer, 1982) If $\dim_H E > 1$, then the set of the directions in which the projection has Lebesgue measure zero has Hausdorff dimension at most $2 - \dim_H E$.</p>
 <p><strong>Proof sketch.</strong> (a) is the refined reading of the energy argument of Kaufman: if the exceptional set carried a measure of dimension exceeding $t$, the integration of the energy identity against that measure would give a direction in which the projected energy is finite, contradicting the definition of the set. (b) is the improvement of the same method with the restriction of the Fourier transform of the measure to the sphere; the estimates are those of Oberlin and Bourgain. (c) is the theorem of Falconer, proved by a Fourier-transform argument; the vanishing of the Lebesgue measure of the projection is detected by the decay of the transform of the measure, and the exceptional set is controlled by the excess dimension $\dim_H E - 1$. The statements are quoted from the survey of Falconer, Fraser and Jin, and the attribution of (a) and (c) is theirs.</p>
 <p><strong>Remark (reading the menu's "dimension zero").</strong> The statement that the exceptional set of directions is <em>of dimension zero</em> is the sharpest form of the theory, and it holds for the threshold of one half when $\dim_H E < 1$ (part (b)); for the full conclusion the exceptional set is only of measure zero, and its dimension is bounded by $t$ or by $2 - \dim_H E$ according to the case. The distinction matters: for the product set $C \times C$ of the previous section the exceptional directions include the two axes, a set of dimension zero, consistent with the bound $2 - s$ of part (c); but a set of dimension $s = 1.1$ can have an exceptional set of dimension up to $0.9$, which is far from zero.</p>
@@ -169,7 +169,7 @@ $$</p>
 <td>$\iint\lvert x-y\rvert^{-t}d\mu\,d\mu$; the finiteness bounds the dimension below</td>
 </tr>
 <tr>
-<td>$\Theta_t(E)$</td>
+<td>$\mathrm{Sd}_t(E)$</td>
 <td>The set of directions in which $\dim_H\pi_\theta E < t$</td>
 </tr>
 <tr>

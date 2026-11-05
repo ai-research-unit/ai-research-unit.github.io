@@ -110,17 +110,17 @@ $$</p>
 <h2 id="the-potential-biquaternion">The Potential Biquaternion</h2>
 <p>The electromagnetic field is described by a <strong>potential biquaternion</strong></p>
 <p>$$
-\tilde{A} = A_0 + \vec A, \qquad A_0 = \frac{i\phi}{c},
+\tilde{A} = A_0 + \vec A, \qquad A_0 = i\,a'_t,
 $$</p>
-<p>where $\phi$ is the scalar potential and $\vec A$ is the vector potential. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.</p>
-<p>The scalar part $A_0 = i\phi/c$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.</p>
+<p>where $a'_t=\phi/c$ is the temporal parameter, the scalar potential in the unit of $\vec A$, and $\vec A$ is the vector potential. The coefficient of $e_t$ is $A_t=i\,a'_t$, the imaginary case of the general $A_t=a_t+i\,a'_t$. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.</p>
+<p>The scalar part $A_0 = i\,a'_t$ is purely imaginary, matching the complex time coordinate $ict'$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.</p>
 <p>The coordinate representation of $\tilde{A}$ as a four-vector potential is</p>
 <p>$$
 \tilde{A} = \sum_{\mu\in\{t,x,y,z\}} A_\mu e_\mu \;\longleftrightarrow\; A_\mu = (A_0, A_1, A_2, A_3),
 $$</p>
 <p>with the four $e_\mu$ the coefficient basis of <em>Algebra and Element Conventions</em>, §<em>The Base and Its Units</em>, and</p>
 <p>$$
-A_0 = \frac{i\phi}{c}, \qquad (A_1, A_2, A_3) = \vec A.
+A_0 = i\,a'_t, \qquad (A_1, A_2, A_3) = \vec A.
 $$</p>
 <p>The four-vector representation is a coordinate representation of the biquaternion, not the fundamental object.</p>
 <h2 id="the-biquaternionic-gradient">The Biquaternionic Gradient</h2>
@@ -129,7 +129,7 @@ $$</p>
 <p>$$
 \frac{\partial}{\partial Q_t} = -\frac{i}{c}\,\frac{\partial}{\partial t'},
 $$</p>
-<p>the substitution fixed in §<em>Conventions for Derivation</em> of the same article; that factor is the one that combines with $A_0 = i\phi/c$ below, where the product of the two factors of $i$ is a sign. And the product of the gradient with its conjugate is the <strong>d'Alembertian</strong> times the unit,</p>
+<p>the substitution fixed in §<em>Conventions for Derivation</em> of the same article; that factor is the one that combines with $A_0 = i\,a'_t$ below, where the product of the two factors of $i$ is a sign. And the product of the gradient with its conjugate is the <strong>d'Alembertian</strong> times the unit,</p>
 <p>$$
 \tilde{\nabla}^{\natural}\tilde{\nabla} = \tilde{\nabla}\tilde{\nabla}^{\natural} = \Box\,e_t ,
 $$</p>
@@ -159,7 +159,7 @@ $$</p>
 =-\frac{i}{c}\frac{\partial\vec A}{\partial t'}-\frac{i}{c}\nabla\phi
 =-\frac{i}{c}\Bigl(\frac{\partial\vec A}{\partial t'}+\nabla\phi\Bigr),
 $$</p>
-<p>using $A_0 = i\phi/c$ and $i^2=-1$. With $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,</p>
+<p>using $A_0 = i\,a'_t$, $a'_t=\phi/c$ and $i^2=-1$. With $\vec E=-\nabla\phi-\partial\vec A/\partial t'$ and $\vec B=\mathrm{rot}\,\vec A$,</p>
 <p>$$
 \mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)
 =\frac{i}{c}\vec E-\vec B .
@@ -177,7 +177,7 @@ $$</p>
 \qquad
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde{A}\bigr)\Bigr)\;}.
 $$</p>
-<p>In Heaviside–Lorentz units, where $\epsilon=\mu=1$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the form quoted in the companion articles; in a medium with $\sqrt{\mu}\neq1$ the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\phi/c$ fixes the imaginary electric part, and the opposite choice would reverse it.</p>
+<p>In Heaviside–Lorentz units, where $\epsilon=\mu=1$, the factor $\sqrt\mu$ is absent and the relation reads $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the form quoted in the companion articles; in a medium with $\sqrt{\mu}\neq1$ the factor is required, and dropping it would make the two sides differ in dimension. No sign convention is left open: the choice $A_0=+i\,a'_t$ fixes the imaginary electric part, and the opposite choice would reverse it.</p>
 <p><strong>The same object in tensor language.</strong> The four-potential has components $A_\mu$, and the field tensor is</p>
 <p>$$
 F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu ,
@@ -282,9 +282,9 @@ $$</p>
 $$</p>
 <p>where $\vec D = \epsilon \vec E$ and $\vec H = \vec B/\mu$ are the usual static fields. In biquaternionic form, the static equation is</p>
 <p>$$
-\tilde{\nabla}_{\mathrm{stat}} \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \tilde{\nabla}_{\mathrm{stat}} = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z,
+\vec\nabla \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \vec\nabla = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z,
 $$</p>
-<p>where $\tilde{\nabla}_{\mathrm{stat}}$ is the biquaternionic gradient restricted to the spatial directions. The equation is purely spatial, and the time coordinate plays no role.</p>
+<p>where $\vec\nabla$ is the vector part of the biquaternionic gradient, the three spatial terms of $\tilde\nabla$ alone. The equation is purely spatial, and the time coordinate plays no role.</p>
 <p>The static solution is given by the <strong>gradient of the Newton kernel</strong>, not by the Newton kernel itself, because the static equation is first order. Write $\vec x = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ for the field point and $\vec y$ for the source point. Then</p>
 <p>$$
 \tilde{F}(\vec x)
@@ -326,10 +326,10 @@ $$</p>
 <p>which means</p>
 <p>$$
 S=\frac{\partial A_0}{\partial Q_t} + \mathrm{div}\,\vec A
-=-\frac{i}{c}\frac{\partial}{\partial t'}\Bigl(\frac{i\phi}{c}\Bigr)+\mathrm{div}\,\vec A
+=-\frac{i}{c}\frac{\partial}{\partial t'}\Bigl(i\,a'_t\Bigr)+\mathrm{div}\,\vec A
 =\frac{1}{c^2}\frac{\partial\phi}{\partial t'}+\mathrm{div}\,\vec A=0,
 $$</p>
-<p>where the two factors of $i$ give $i^2=-1$ and the sign of the second term. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation</p>
+<p>where the two factors of $i$ give $i^2=-1$, $a'_t=\phi/c$ restores the potential, and the sign of the second term follows. This is the biquaternionic form of the standard Lorenz condition $\sum_\mu \partial A_\mu/\partial Q_\mu = 0$, written in the familiar three-vector shape. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation</p>
 <p>$$
 \Box \tilde{A} = -\mu \tilde J,
 $$</p>
@@ -525,7 +525,7 @@ $$</p>
 $$</p>
 <p>and the potential biquaternion becomes</p>
 <p>$$
-\tilde{A} = \frac{i\phi}{c_0} + \vec A.
+\tilde{A} = i\,a'_t + \vec A.
 $$</p>
 <p>The complex time coordinate becomes $ic_0 t'$, recovering the familiar $ict'$ form with the vacuum speed of light. The structure of the equations is unchanged. This is the content of the statement that the vacuum is a special case of a medium: the same equations describe both, with different values of $\epsilon$ and $\mu$.</p>
 <h2 id="the-question-of-what-is-fundamental">The Question of What Is Fundamental</h2>
@@ -584,7 +584,7 @@ $$</p>
 <p><strong>The Lorentz character of the field is not fixed by the equation.</strong> The choice of $\tilde{q}_0$ decides which Lorentz object the field is, and the homogeneous Maxwell equations do not decide it. Lanczos distinguishes three cases. For the electromagnetic six-vector — the bivector field of the corpus's $\tilde{F}$ — the constant is the one that makes $\tilde{F}_2$ transform as a six-vector; for a four-vector the constant is the other element, and Lanczos proposes that the field then be the gradient of a scalar potential, which he associates with gravitation; and the third case, which he did not take, is the one in which the field transforms as the simplest of the three, the massless spin-1/2 field. Gsponer and Hurni note that Lanczos had thus reached, in 1919, the freedom that contains the massless spin-1/2 field, nine years before Dirac, and that he returned to exactly this point after 1928, when he used the quaternion formalism to display the spacetime covariance of the spin-1 and spin-1/2 equations.</p>
 <p>The corpus records the invariance and the three interpretations as the source's and the commentators'. What is structural is the statement of the freedom: the <strong>vacuum Maxwell equation does not determine the spin content of its own solutions</strong>; that is fixed by the constant $\tilde{q}_0$, an extra datum the equation leaves free. The three-parameter group of the freedom is the $\mathrm{SU}(2)$ that <em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em> identifies as the algebra's intrinsic compact group, reached here from the vacuum equation rather than from a gauge construction. The corpus does not adopt Lanczos's assignment of the four-vector case to gravitation; it records that the freedom exists, that its group is $\mathrm{SU}(2)$, and that the electromagnetic interpretation is the one member of the three that the rest of the corpus uses.</p>
 <h2 id="beyond-the-minkowski-subspace-complexified-spacetime">Beyond the Minkowski Subspace: Complexified Spacetime</h2>
-<p>Up to this point the potential has been taken in the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ (the material sector): with $A_0 = i\phi/c$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.</p>
+<p>Up to this point the potential has been taken in the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ (the material sector): with $A_0 = i\,a'_t$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.</p>
 <p>The electric half $i\sqrt{\epsilon}\,\vec E$ is the Hermitian part of the field and the magnetic half $-\sqrt{\mu}\,\vec H$ the anti-Hermitian part, which is the sector split of <em>Algebra and Element Conventions</em>, §<em>The Hermitian and Anti-Hermitian Subspaces</em>, read on $\tilde F$. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become <strong>fully complexified</strong></p>
 <p>$$
 \tilde{A} = A_0 + \vec A, \qquad \tilde{F} = \vec F,

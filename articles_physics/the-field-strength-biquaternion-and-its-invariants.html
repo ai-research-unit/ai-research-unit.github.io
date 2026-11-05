@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p>so $\tilde{F}$ is a <strong>pure-vector</strong> biquaternion. Its three complex components $F_k$ each combine an electric and a magnetic piece: the electric contribution $i\sqrt{\epsilon}\,E_k$ is <strong>purely imaginary</strong> and the magnetic contribution $-\sqrt{\mu}\,H_k$ is <strong>real</strong>. The factor of $i$ on the electric part is the same factor that appears in the complex time coordinate $ict'$. In the $ict'$ convention the time direction is the imaginary direction, and the electric field carries the time index of the field tensor, so it is the electric part that acquires the factor $i$ while the magnetic part remains real. This is the algebraic reason for the asymmetric appearance of $\tilde{F}$.</p>
 <p>The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.</p>
-<p>The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\phi/c + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$. The construction is</p>
+<p>The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde{\nabla}$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, whose conjugate is $\tilde{\nabla}^{\natural}$ and whose d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$. The construction is</p>
 <p>$$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr).
 $$</p>
@@ -105,7 +105,7 @@ F_{0k} = \frac{iE_k}{c},
 \qquad
 F_{jk} = \epsilon_{jkl}B_l .
 $$</p>
-<p>It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\phi/c$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.</p>
+<p>It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_k$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial Q_t=-(i/c)\partial/\partial t'$ and $A_0=+i\,a'_t$ give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})=(i/c)\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_k = i\sqrt{\epsilon}E_k - \sqrt{\mu}H_k$ are then the same statement read component by component.</p>
 <h2 id="the-place-of-the-field-strength-in-the-algebra">The Place of the Field Strength in the Algebra</h2>
 <p>The biquaternion algebra decomposes in several ways, and it is worth locating $\tilde{F}$ precisely in these decompositions, because its peculiar properties are consequences of its position.</p>
 <p><strong>The vector part.</strong> The pure-vector biquaternions form the complex three-dimensional subspace</p>
@@ -407,7 +407,7 @@ $$</p>
 <p>$$
 U(t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
 \qquad
-\theta=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
+\lVert\vec Q\rVert=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
 $$</p>
 <p>one formula for both regimes, since $\tilde u^2=-e_t$ makes the exponential the cosine and sine of a scalar angle: at $\omega=0$ the angle is imaginary and the flow is a boost at the rate $\sigma/c$, at $\sigma=0$ it is real and the flow is a rotation at the rate $\omega/c$, and in general the two are carried together. Read on the display of the congruence, the same statement is</p>
 <p>$$

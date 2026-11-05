@@ -127,16 +127,16 @@ $$</p>
 <p>the entry at infinity being the one that the norm condition forces. The definition is the source's, and it is the shape a sequence takes when its support is the set of factors of a square-free polynomial.</p>
 <h2 id="the-bezoutian-form">The Bezoutian Form</h2>
 <h3 id="the-coefficient-functional-math98">The Coefficient Functional $s_g$</h3>
-<p><strong>Definition.</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free, and let $\theta$ be the class of $t$ in the $n$-dimensional $F$-algebra $E_g = F[t]/(g)$, so that $1, \theta, \ldots, \theta^{n-1}$ is an $F$-basis of $E_g$. The <strong>coefficient functional</strong> is the $F$-linear map</p>
+<p><strong>Definition.</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free, and let $\vartheta^{\mathrm{rts}}$ be the class of $t$ in the $n$-dimensional $F$-algebra $E_g = F[t]/(g)$, so that $1, \vartheta^{\mathrm{rts}}, \ldots, \vartheta^{\mathrm{rts}}^{n-1}$ is an $F$-basis of $E_g$. The <strong>coefficient functional</strong> is the $F$-linear map</p>
 <p>$$
-s_g : E_g \longrightarrow F, \qquad s_g(\theta^i) = 0 \ \ (0 \leq i \leq n-2), \qquad s_g(\theta^{n-1}) = 1,
+s_g : E_g \longrightarrow F, \qquad s_g(\vartheta^{\mathrm{rts}}^i) = 0 \ \ (0 \leq i \leq n-2), \qquad s_g(\vartheta^{\mathrm{rts}}^{n-1}) = 1,
 $$</p>
-<p>so that $s_g(y)$ is the coefficient of $\theta^{n-1}$ in the expansion of $y$ in the basis. For $y \in F[t]$ of degree less than $n$ it is the coefficient of $t^{n-1}$. For $n = 1$ and $g = t + c$ the algebra is $F$ and $s_g(y) = y(-c)$.</p>
+<p>so that $s_g(y)$ is the coefficient of $\vartheta^{\mathrm{rts}}^{n-1}$ in the expansion of $y$ in the basis. For $y \in F[t]$ of degree less than $n$ it is the coefficient of $t^{n-1}$. For $n = 1$ and $g = t + c$ the algebra is $F$ and $s_g(y) = y(-c)$.</p>
 <p><strong>Proposition (trace description).</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free, let $\alpha_1, \ldots, \alpha_n$ be its roots in a splitting field, and let $y \in F[t]$. Then</p>
 <p>$$
-s_g(y \bmod g) = \sum_{i=1}^n \frac{y(\alpha_i)}{g'(\alpha_i)} = \operatorname{Tr}_{E_g/F}\!\left(\frac{y(\theta)}{g'(\theta)}\right),
+s_g(y \bmod g) = \sum_{i=1}^n \frac{y(\alpha_i)}{g'(\alpha_i)} = \operatorname{Tr}_{E_g/F}\!\left(\frac{y(\vartheta^{\mathrm{rts}})}{g'(\vartheta^{\mathrm{rts}})}\right),
 $$</p>
-<p>the last term being the trace of the element $y(\theta)/g'(\theta)$ of $E_g$ over $F$.</p>
+<p>the last term being the trace of the element $y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}})$ of $E_g$ over $F$.</p>
 <p><strong>Proof.</strong> Write $y = qg + r$ with $\deg r < n$. Then $s_g(y \bmod g) = s_g(r)$ is the coefficient of $t^{n-1}$ in $r$, and $y(\alpha_i) = r(\alpha_i)$ for every $i$, because $g(\alpha_i) = 0$. The partial fraction decomposition of $r/g$ is</p>
 <p>$$
 \frac{r(t)}{g(t)} = \sum_{i=1}^n \frac{r(\alpha_i)/g'(\alpha_i)}{t - \alpha_i},
@@ -145,19 +145,19 @@ $$</p>
 <p>$$
 \frac{r(t)}{g(t)} = t^{-1}\left(\sum_{i=1}^n\frac{r(\alpha_i)}{g'(\alpha_i)}\right) + O(t^{-2}),
 $$</p>
-<p>while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\theta)/g'(\theta)$.</p>
+<p>while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}})$.</p>
 <h3 id="the-bezoutian-form-of-a-pair">The Bezoutian Form of a Pair</h3>
 <p><strong>Definition.</strong> Let $g \in F[t]$ be monic of degree $n$ and square-free and let $f \in F[t]$ be coprime to $g$. The <strong>Bezoutian form</strong> of $f$ modulo $g$ is the quadratic form</p>
 <p>$$
-m_{f,g} : E_g \longrightarrow F, \qquad m_{f,g}(x) = s_g\big(f(\theta)x^2\big),
+m_{f,g} : E_g \longrightarrow F, \qquad m_{f,g}(x) = s_g\big(f(\vartheta^{\mathrm{rts}})x^2\big),
 $$</p>
 <p>and its class in the Witt group of <em>The Witt Group and the Grothendieck–Witt Ring</em> is written</p>
 <p>$$
 B(f/g) = [m_{f,g}] \in W(F).
 $$</p>
-<p>The polar form of $m_{f,g}$ is the bilinear form $\mathfrak{b}(x,y) = s_g(f(\theta)xy)$, so in the basis $1, \theta, \ldots, \theta^{n-1}$ the Gram matrix is</p>
+<p>The polar form of $m_{f,g}$ is the bilinear form $\mathfrak{b}(x,y) = s_g(f(\vartheta^{\mathrm{rts}})xy)$, so in the basis $1, \vartheta^{\mathrm{rts}}, \ldots, \vartheta^{\mathrm{rts}}^{n-1}$ the Gram matrix is</p>
 <p>$$
-G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\theta^{i+j}), \qquad m_{f,g}\Big(\sum_{i=0}^{n-1}x_i\theta^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
+G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j}), \qquad m_{f,g}\Big(\sum_{i=0}^{n-1}x_i\vartheta^{\mathrm{rts}}^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
 $$</p>
 <p>The matrix $G$ is symmetric because $i + j = j + i$, so $m_{f,g}$ is a quadratic form in the sense of <em>Quadratic Forms and Polarisation</em>, with $\mathfrak{Q}(x) = B(x,x)$ for its polar form $B$.</p>
 <p><strong>Remark (invariance).</strong> For $g$ monic and square-free and $f$ coprime to $g$ the Bezoutian depends on the pair only through the class of $f$ modulo $g$ and modulo squares: for $h \in F[t]$ coprime to $g$ and $c \in F^\times$ one has</p>
@@ -166,7 +166,7 @@ m_{f h^2, g} \cong m_{f,g} \ \text{ via } x \mapsto hx, \qquad m_{cf,g} = c\,m_{
 $$</p>
 <p>on $E_g$. In particular $B(f/g)$ depends on $f$ only through its class in $E_g^\times/E_g^{\times 2}$, and the element $R(f/g)$ of the definition above is therefore attached to the pair in a way compatible with the form.</p>
 <p><strong>Theorem (non-degeneracy).</strong> Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $m_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.</p>
-<p><strong>Proof for $n = 1$.</strong> Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $m_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.</p>
+<p><strong>Proof for $n = 1$.</strong> Here $g = t + c$ and $\vartheta^{\mathrm{rts}} = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $m_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.</p>
 <p>The non-degeneracy is the reason the Bezoutian is taken over the square-free $g$ and the coprime $f$: the form is then a genuine element of the Witt group, and its triviality is a meaningful condition.</p>
 <p><strong>Remark (the classical Bezoutian).</strong> The name of the form is that of the classical <strong>Bezoutian</strong> of the pair, the polynomial</p>
 <p>$$
@@ -185,11 +185,11 @@ $$</p>
 \boxed{\;B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = \begin{cases} 0 & \text{if } \deg f \equiv \deg g \bmod 2, \\[2pt] [1] & \text{if } \deg f \not\equiv \deg g \bmod 2, \end{cases}\;}
 $$</p>
 <p>where $[1]$ is the class of the one-dimensional form $\langle 1\rangle$.</p>
-<p><strong>The second rule in a special case.</strong> Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\theta^2 = 1$, and $m_{t,g}(x) = s_g(\theta x^2)$ has Gram matrix</p>
+<p><strong>The second rule in a special case.</strong> Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\vartheta^{\mathrm{rts}}^2 = 1$, and $m_{t,g}(x) = s_g(\vartheta^{\mathrm{rts}} x^2)$ has Gram matrix</p>
 <p>$$
-G_{ij} = s_g(\theta^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\theta) & s_g(\theta^2) \\ s_g(\theta^2) & s_g(\theta^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
+G_{ij} = s_g(\vartheta^{\mathrm{rts}}^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\vartheta^{\mathrm{rts}}) & s_g(\vartheta^{\mathrm{rts}}^2) \\ s_g(\vartheta^{\mathrm{rts}}^2) & s_g(\vartheta^{\mathrm{rts}}^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
 $$</p>
-<p>because $s_g(1) = s_g(\theta^3) = 0$ and $s_g(\theta) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\theta^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.</p>
+<p>because $s_g(1) = s_g(\vartheta^{\mathrm{rts}}^3) = 0$ and $s_g(\vartheta^{\mathrm{rts}}) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\vartheta^{\mathrm{rts}}^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.</p>
 <h3 id="a-lemma-on-even-degrees">A Lemma on Even Degrees</h3>
 <p>The following computation is the one used in the example; it expresses the Bezoutian of a pair whose modulus is a product of two even-degree factors through a Pfister form.</p>
 <p><strong>Lemma (Becher).</strong> Let $a_1, a_2 \in F^\times$ and let $g_1, g_2 \in F[t]$ be monic of even degree, coprime, and such that $g_1t$ is a square modulo $g_2$. Let $f \in F[t]$ be such that $a_if$ is a square modulo $g_i$ for $i = 1, 2$. Then</p>
@@ -241,7 +241,7 @@ $$</p>
 f = -2t^3-10t^2-16t-6 .
 $$</p>
 <p>Indeed $2f \equiv 4$ modulo $g_1$ and $6f \equiv 36$ modulo $g_2$ are squares, so the pair satisfies the hypotheses of the lemma with $a_1 = 2$, $a_2 = 6$ and $b = g_2(0) = 2$.</p>
-<p>The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \theta, \theta^2, \theta^3$ its Gram matrix $G_{ij} = s_g(f\theta^{i+j})$ is</p>
+<p>The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \vartheta^{\mathrm{rts}}, \vartheta^{\mathrm{rts}}^2, \vartheta^{\mathrm{rts}}^3$ its Gram matrix $G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j})$ is</p>
 <p>$$
 G = \begin{pmatrix}
 -2 & 0 & 4 & -6\\
@@ -275,7 +275,7 @@ $$</p>
 0 \to k_2(F) \to k_2(F(t)) \xrightarrow{\ \partial\ } \bigoplus_{n \in P'} k_1(\kappa_n) \xrightarrow{\ N\ } k_1(F) \to 0
 $$</p>
 <p>the ramification map is injective on $k_2(F)$ and its image is the <strong>group of ramification sequences</strong> $R_2(F)$, the kernel of the norm. The support and the degree of a sequence measure the places carrying it, and a sequence is <strong>represented by a symbol</strong> when it is $\partial(\{f,g\})$ for a single symbol.</p>
-<p>The <strong>Bezoutian form</strong> of $f$ modulo a monic square-free $g$ is the form $m_{f,g}(x) = s_g(f(\theta)x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\theta^{n-1}$ in the basis $1,\theta,\ldots,\theta^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\theta)/g'(\theta))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules</p>
+<p>The <strong>Bezoutian form</strong> of $f$ modulo a monic square-free $g$ is the form $m_{f,g}(x) = s_g(f(\vartheta^{\mathrm{rts}})x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\vartheta^{\mathrm{rts}}^{n-1}$ in the basis $1,\vartheta^{\mathrm{rts}},\ldots,\vartheta^{\mathrm{rts}}^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}}))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules</p>
 <p>$$
 B\!\left(\frac{f}{g_1g_2}\right) = B\!\left(\frac{fg_2}{g_1}\right) + B\!\left(\frac{fg_1}{g_2}\right), \qquad
 B\!\left(\frac{f}{g}\right) + B\!\left(\frac{g}{f}\right) = 0 \ \text{or}\ [1],
@@ -340,19 +340,19 @@ $$</p>
 <td>The $F$-algebra of a monic square-free $g$, of degree $n$</td>
 </tr>
 <tr>
-<td>$\theta$</td>
+<td>$\vartheta^{\mathrm{rts}}$</td>
 <td>The class of $t$ in $E_g$</td>
 </tr>
 <tr>
 <td>$s_g$</td>
-<td>Coefficient functional of $\theta^{n-1}$; $\operatorname{Tr}_{E_g/F}(\cdot/g'(\theta))$</td>
+<td>Coefficient functional of $\vartheta^{\mathrm{rts}}^{n-1}$; $\operatorname{Tr}_{E_g/F}(\cdot/g'(\vartheta^{\mathrm{rts}}))$</td>
 </tr>
 <tr>
 <td>$m_{f,g}$, $B(f/g)$</td>
 <td>Bezoutian form of $f$ modulo $g$; its class in $W(F)$</td>
 </tr>
 <tr>
-<td>$G_{ij} = s_g(f\theta^{i+j})$</td>
+<td>$G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j})$</td>
 <td>Gram matrix of the Bezoutian form</td>
 </tr>
 <tr>

@@ -235,14 +235,14 @@ $$
 $$
 where the Jacobian is $|dg/dt'| = 2c^2|t'| = 2cR$ at either root. Applying the future step function selects the forward cone,
 $$
-\Theta(t')\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t' - \frac{R}{c}\right) ,
+\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2) = \frac{1}{2cR}\,\delta\!\left(t' - \frac{R}{c}\right) ,
 \qquad\text{hence}\qquad
 \boxed{\;
-G^{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(t')\,\delta(\rho^2)\;}.
+G^{\mathrm{ret}}(\tilde{R}) := \frac{1}{4\pi R}\,\delta\!\left(t' - \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)\;}.
 $$
-The Jacobian identity was checked by smearing $\Theta(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
+The Jacobian identity was checked by smearing $\mathrm{H}^{\mathrm{hvs}}(t')\,\delta(\rho^2)$ against a test function on a two-million-point mesh, the numerical value reproducing $\chi(R/c)/(2cR)$ for three values of $R$ to three decimal places. The normalisation is the one the display uses: $\delta$ of the argument $\rho^2$ carries the Jacobian $2cR$ and gives $\chi(R/c)/(2cR)$, whereas $\delta$ of ${t'}^2 - R^2/c^2$ would carry the Jacobian $2R/c$ and return $c\,\chi(R/c)/(2R)$ — the two differ by $c^2$ and must not be interchanged. The symmetric relation between the retarded and advanced kernels is then immediate,
 $$
-G_{\mathrm{adv}}(\tilde{R}) = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right) = \frac{c}{2\pi}\,\Theta(-t')\,\delta(\rho^2) .
+G_{\mathrm{adv}}(\tilde{R}) = \frac{1}{4\pi R}\,\delta\!\left(t' + \frac{R}{c}\right) = \frac{c}{2\pi}\,\mathrm{H}^{\mathrm{hvs}}(-t')\,\delta(\rho^2) .
 $$</p>
 <p>The retarded kernel inverts the operator. Applying $\Box = \partial^2/\partial Q_t^2 + \Delta$ to $\frac{u(t' - R/c)}{4\pi R}$ and using the two radial identities
 $$
@@ -521,7 +521,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 <td>Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient</td>
 </tr>
 <tr>
-<td>$\Theta(t')$</td>
+<td>$\mathrm{H}^{\mathrm{hvs}}(t')$</td>
 <td>Step function selecting the future cone</td>
 </tr>
 <tr>

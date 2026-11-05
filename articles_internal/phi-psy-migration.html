@@ -1,0 +1,3035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Phi and Psi Migration: An Inventory by Role, and Chi as the Generic Field — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-phi-and-psi-migration-an-inventory-by-role-and-chi-as-the-generic-field"><strong>The Phi and Psi Migration: An Inventory by Role, and Chi as the Generic Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The physics corpus writes two letters for almost everything. The letter $\phi$ names a potential, a field, a phase, an angle, a second state and a carrier function. The letter $\psi$ names a spinor, a rapidity, a kernel, a Grassmann variable and a dummy element of the algebra.</p>
+<p>The two overloads do not have the same shape. $\psi$ is dominated by one role: the spinor and the state carry 2839 of its 4584 occurrences in 211 of the 412 physics articles. $\phi$ has no dominant role, but it has a large one: the scalar field carries 1119 of its 2006 occurrences in 123 articles, the auxiliary scalar 200, the angle 167, the phase 110, the second state 61, and one article uses it for a rapidity.</p>
+<p>The corpus does not fix a glyph to a role. It fixes a glyph to an object, and a bare letter is then read for whatever that object's coordinate is. That is why one letter can carry six roles: nothing in the notation says which object it belongs to, so the reader supplies the object from the sentence. A migration that removes the overload has to supply that statement, and it can supply it only in the glyph.</p>
+<p>A rapidity is not the coordinate of the Dirac field, and it is not a spinor. The letter $\psi$ carries both: 62 articles use it as a rapidity, and 131 use it as a spinor. That collision is the one a migration must settle first, because it puts two different objects of physics on one glyph for no reason.</p>
+<p>The decision taken here is one glyph for a generic field and no role in the low slot. The generic field is $\chi$, three-letter caret superscripts carry the precision, and the count of $\chi$ in the corpus is the price. Each section below ends with the replacements that role admits, ranked by what each one costs.</p>
+<h2 id="how-the-census-was-taken">How the Census Was Taken</h2>
+<p>The count is the number of occurrences of the control sequence, excluding $\varphi$. The pattern matches the control sequence followed by anything but a letter, so a subscript and a superscript are counted and a longer control sequence is not.</p>
+<p>The role is read from the sentence that carries the occurrence, not from a keyword count. Two articles can write the same token and mean different objects; <em>Canonical Quantization of the Biquaternion Klein-Gordon Field</em> and <em>The Scalar Field in the Centre</em> both write $\phi$ as the scalar field, while <em>Electromagnetism in Media</em> writes $\phi/c$ for the potential and $\phi$ alone for a carrier function.</p>
+<p>A row lists a role that carries at least a quarter of the glyph in that article. Small secondary uses are left out of the tables, so the rows of an article sum to less than its own count. The last column always gives the article's own count, and it is the number to use when the whole article is migrated.</p>
+<p>The totals were recomputed by a second method: a plain search for the control sequence over the whole corpus returns 2006 for $\phi$, 4584 for $\psi$ and 1020 for $\chi$. The two methods agree.</p>
+<h2 id="the-glyph-that-is-opened-chi">The Glyph That Is Opened: Chi</h2>
+<p>A replacement has to land somewhere. The first test of a candidate is its load, and the table gives it for every letter the literature proposes for a generic scalar. The count is the count of the census, over the whole physics corpus.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>what it already names here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi$</td>
+<td>1020</td>
+<td>122</td>
+<td>the gauge function, the central grading $\chi_{\mathrm{ad}}$, the cell $\gamma_5$, a Helmholtz kernel</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>995</td>
+<td>65</td>
+<td>the Fourier variable, the isotropic coordinate, a twistor spinor</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>600</td>
+<td>53</td>
+<td>the metric sign $g=-\eta$, the conjugation label $\eta_C$, an adiabatic parameter</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>2311</td>
+<td>191</td>
+<td>the shear, the Pauli triple, a cross-section, a conductivity</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>3755</td>
+<td>262</td>
+<td>the momentum, the factor $2\pi$, the pion</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>3859</td>
+<td>216</td>
+<td>the angle of the pair $(\theta,\phi)$, the rotor angle, a superspace variable</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>3232</td>
+<td>190</td>
+<td>the density, the radial coordinate, the golden ratio, a summed index</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>4130</td>
+<td>179</td>
+<td>the frequency, the Goldstone field, a solid angle</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>3609</td>
+<td>217</td>
+<td>a coupling, an eigenvalue, a gaugino</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>3033</td>
+<td>186</td>
+<td>the phase of $e^{i\alpha}$, a mixing angle, a summed index</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>2812</td>
+<td>147</td>
+<td>$v/c$, the inverse temperature</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>1531</td>
+<td>79</td>
+<td>a curvature, a coupling, an elastic constant</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>351</td>
+<td>24</td>
+<td>a coordinate, a spectral parameter</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>687</td>
+<td>62</td>
+<td>the scalar field coordinate, the golden ratio, a phase, a displacement angle</td>
+</tr>
+<tr>
+<td>$\iota$</td>
+<td>20</td>
+<td>3</td>
+<td>nothing: the conventions retire it, "the letter $\iota$ is not used at all"</td>
+</tr>
+<tr>
+<td>$\upsilon$</td>
+<td>121</td>
+<td>4</td>
+<td>a light-cone coordinate</td>
+</tr>
+<tr>
+<td>$\vartheta$</td>
+<td>40</td>
+<td>4</td>
+<td>the literature's alternate for $\theta$</td>
+</tr>
+<tr>
+<td>$\varrho$</td>
+<td>87</td>
+<td>4</td>
+<td>the literature's alternate for $\rho$</td>
+</tr>
+<tr>
+<td>$\varpi$</td>
+<td>93</td>
+<td>6</td>
+<td>$p/(m\omega)$, the canonical momentum scaled</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The light glyphs are not names.</strong> $\iota$ is retired outright. $\vartheta$, $\varrho$ and $\varpi$ are reserved variants of a letter that already has a base form, so each carries the meaning of its base with a difference, and none of the three reads as "a field". $\upsilon$ carries a light-cone coordinate in four articles. A migration into any of them buys a glyph and states nothing.</p>
+<p><strong>$\chi$ is chosen on what its uses are, not on how many there are.</strong> Its load is 1020 occurrences, and almost none of it is a generic field: the gauge function of a gauge transformation, the central grading, the cell, a Helmholtz kernel. Each of those four is a <em>named</em> object, and a name is the caret's office. A letter whose uses are named can be emptied by four labels. A letter whose uses are unnamed cannot be emptied at all, which is why the light glyphs are not candidates: $\vartheta$, $\varrho$ and $\varpi$ are unnamed variants, and an unnamed use and a generic field are the same thing.</p>
+<p><strong>A glyph swap does not remove an overload; it moves it, unless the moved uses take a label.</strong> That is the whole difference between the migration proposed here and a swap. $\chi$ takes 1020 occurrences of three named objects and gives them a caret each. $\phi$ then loses its largest role, and $\psi$ loses its rival.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>occurrences</th>
+<th>articles</th>
+<th>the label it takes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi$ as the gauge function</td>
+<td>—</td>
+<td>—</td>
+<td>$\chi^{\mathrm{gau}}$</td>
+</tr>
+<tr>
+<td>$\chi_{\mathrm{ad}}$ as the central grading</td>
+<td>—</td>
+<td>—</td>
+<td>unchanged, the label is already there</td>
+</tr>
+<tr>
+<td>$\chi$ as the cell $\gamma_5$</td>
+<td>—</td>
+<td>—</td>
+<td>$\chi^{\mathrm{cel}}$</td>
+</tr>
+<tr>
+<td>$\chi$ as a Helmholtz kernel</td>
+<td>—</td>
+<td>—</td>
+<td>$\chi^{\mathrm{hmk}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-caret-and-no-role-in-the-low-slot">The Caret, and No Role in the Low Slot</h2>
+<p>The corpus has an instrument for this, and it is the caret. A caret carries an upright three-letter label, lowercase, and the index of those labels, in <em>Index, Notation and Corpus Conventions</em>, §<em>The Three-Letter Labels</em>, holds 78 rows.</p>
+<p><strong>A role goes to the caret, not to the low slot.</strong> The index as it stands sends a role low, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, because a role is a part of an object. The migration amends that one line: <strong>a caret label may name the role of a glyph when the glyph is bare.</strong> The low slot is then left to the index, where it carries an index and a part, and it carries no role of this migration.</p>
+<p><strong>The amendment costs one sentence and buys the whole migration.</strong> Under it, $\chi^{\mathrm{scl}}$ is the scalar field, $\chi^{\mathrm{phs}}$ is a phase, $\chi^{\mathrm{grs}}$ is a Grassmann variable, and no letter of the alphabet is spent. The alternative, $\chi_{\mathrm{scl}}$, is a defect under the index as it stands, because the low slot names a part of a named object and a bare $\chi$ names no object yet.</p>
+<p><strong>A new label has to be free of the 78 rows by spelling.</strong> <code>pot</code> names a potential energy, so the scalar potential cannot take it. <code>geo</code> names the geometric phase, so a bare phase cannot take it either and takes <code>phs</code>. <code>src</code> names the source point of a kernel, so the kernel is not given a label at all: it is given the glyph $G$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>label</th>
+<th>on</th>
+<th>reads as</th>
+<th>slot</th>
+<th>conflict check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scl</code></td>
+<td>$\chi$</td>
+<td>the scalar field, $\chi^{\mathrm{scl}}$</td>
+<td>caret, new</td>
+<td>free by spelling and by slot</td>
+</tr>
+<tr>
+<td><code>scp</code></td>
+<td>$\chi$</td>
+<td>the scalar potential, $\chi^{\mathrm{scp}}$</td>
+<td>caret, new</td>
+<td>distinct from <code>pot</code>, which is potential energy</td>
+</tr>
+<tr>
+<td><code>phs</code></td>
+<td>$\chi$</td>
+<td>a phase, $\chi^{\mathrm{phs}}$</td>
+<td>caret, new</td>
+<td>distinct from <code>geo</code>, the geometric phase</td>
+</tr>
+<tr>
+<td><code>alt</code></td>
+<td>$\chi$</td>
+<td>the second state of an overlap, $\chi^{\mathrm{alt}}$</td>
+<td>caret, new</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>grs</code></td>
+<td>$\chi$</td>
+<td>a Grassmann variable, $\chi^{\mathrm{grs}}$</td>
+<td>caret, new</td>
+<td>free; <code>rgs</code> is the regularised kernel, one letter away and a different object</td>
+</tr>
+<tr>
+<td><code>car</code></td>
+<td>$\chi$</td>
+<td>the carrier of a gauge map, $\chi^{\mathrm{car}}$</td>
+<td>caret, new</td>
+<td>free; <code>cov</code> is the universal cover</td>
+</tr>
+<tr>
+<td><code>trc</code></td>
+<td>$\chi$</td>
+<td>the trace part of a matrix, $\chi^{\mathrm{trc}}$</td>
+<td>caret, new</td>
+<td>free; <code>tot</code> is the total tensor</td>
+</tr>
+<tr>
+<td><code>flw</code></td>
+<td>$\chi$</td>
+<td>a flow, $\chi^{\mathrm{flw}}$</td>
+<td>caret, new</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>gau</code></td>
+<td>$\chi$</td>
+<td>the gauge function, $\chi^{\mathrm{gau}}$</td>
+<td>caret, new</td>
+<td>free; the label names what the glyph already is</td>
+</tr>
+<tr>
+<td><code>cel</code></td>
+<td>$\chi$</td>
+<td>the cell $\gamma_5$, $\chi^{\mathrm{cel}}$</td>
+<td>caret, new</td>
+<td>free</td>
+</tr>
+<tr>
+<td><code>hmk</code></td>
+<td>$\chi$</td>
+<td>a Helmholtz kernel, $\chi^{\mathrm{hmk}}$</td>
+<td>caret, new</td>
+<td>free; <code>src</code> is a part of a kernel, not the kernel</td>
+</tr>
+<tr>
+<td><code>rap</code></td>
+<td>$\eta$</td>
+<td>the rapidity, $\eta^{\mathrm{rap}}$</td>
+<td>caret, new</td>
+<td>free; <code>hyp</code> is the hyperbolic area of a rapidity triangle</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Twelve labels and three glyphs carry the migration.</strong> $\chi$ for a generic field, $\eta$ for the rapidity, $G$ for the kernel, and twelve caret labels for the precisions. No role is written low anywhere, and no letter outside the two is moved.</p>
+<p><strong>A label is read on the object it qualifies, so a bare $\chi$ is a statement.</strong> $\chi$ alone means "a field, unspecified". That is the reading the migration wants for the dummy of the left and right actions, $L_a\chi=a\chi$, and for a general element of the algebra. Precision is then an addition, never a default.</p>
+<h2 id="1-phi">1. Phi</h2>
+<p>$\phi$ appears in 123 articles, 2006 times. It divides into four physics roles, one catch-all and one foreign use. Under the migration the field leaves for $\chi$ and every other role either takes a caret or keeps its letter.</p>
+<h3 id="11-the-scalar-field">1.1 The Scalar Field</h3>
+<p>The scalar field is the largest $\phi$ role in the corpus: 1119 of the 2006 occurrences, in 50 articles. In this role $\phi$ is quantised, integrated over, and given a Fock space. It is a field and not a coordinate of a named object, which is what makes it the role the migration takes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a></td>
+<td>the real scalar $\phi$ of the K-G field</td>
+<td>130</td>
+<td>130</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a></td>
+<td>$\phi^{\mathrm{fop}}$, the eigenstate $\vert\phi\rangle$</td>
+<td>93</td>
+<td>93</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>the complex scalar $\phi$, $\phi^*$</td>
+<td>81</td>
+<td>81</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>$\phi_1,\phi_2$, the K-G field</td>
+<td>77</td>
+<td>83</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a></td>
+<td>$\phi$, the Goldstone component</td>
+<td>76</td>
+<td>78</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a></td>
+<td>the real scalar $\phi$, $\nabla\phi$</td>
+<td>71</td>
+<td>71</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a></td>
+<td>the quantised scalar field $\\phi^{\\mathrm{fop}}(x)$</td>
+<td>61</td>
+<td>84</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>$\phi$ of the massless field</td>
+<td>54</td>
+<td>70</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>$\phi_R$, $\phi_L$, the boson field</td>
+<td>53</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a></td>
+<td>the scalar envelope $\phi$, $\psi=\phi\chi$</td>
+<td>44</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a></td>
+<td>the scalar field $\phi$, $\phi_1,\phi_2$</td>
+<td>39</td>
+<td>53</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
+<td>the scalar $\phi$ of the equivalence</td>
+<td>34</td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>$\mathcal{L}(\phi,\partial\phi)$</td>
+<td>31</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>$\phi^{\mathrm{fop}}$ contractions</td>
+<td>26</td>
+<td>26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>23</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td>$S[\phi]$ of the scalar field</td>
+<td>20</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>18</td>
+<td>35</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a></td>
+<td>the running $\phi$, $\phi^4$</td>
+<td>17</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
+<td>$\phi(n)$, $D_\mu\phi$ on the lattice</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a></td>
+<td>$\phi$ of the effective action</td>
+<td>11</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
+<td>the scalar $\phi$ of the measure</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>$\phi$ of the symmetry-breaking doublet</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the Rho Parameter in Biquaternionic Form</a></td>
+<td>$\phi^0$, $\phi^+$, the Higgs doublet</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></td>
+<td>$\phi$ of the sigma model</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane-Wave Propagation in a Medium</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>7</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>6</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>the matter field $\phi$</td>
+<td>6</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>5</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>the incident field $\phi$</td>
+<td>5</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>the four real scalars $\phi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html">Each Sector Is the Other's Clock: the Sector Exchange as Relational Time</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html">Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</a></td>
+<td>scalar field $\phi$ $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements">Possible replacements</h4>
+<ul>
+<li><strong>$\chi$</strong> — preferred, and this is the migration. The role holds 1119 occurrences in 50 articles, it is a field and not the coordinate of a named object, and $\chi$ is the glyph the corpus has free once its three named uses take a caret.</li>
+<li><strong>$\chi^{\mathrm{scl}}$</strong> — preferred where an article needs the field named against another field. The precision is an addition, so a bare $\chi$ stays readable.</li>
+<li><strong>keep $\phi$</strong> — rejected. It is the largest role in either letter, and keeping it leaves the alphabet where it was.</li>
+<li><strong>$\varphi$</strong> — rejected. It carries the same field on 11 articles, so the move would put the largest role onto a glyph that already means it and split the corpus.</li>
+</ul>
+<h3 id="12-the-phase">1.2 The Phase</h3>
+<p>A phase is an angle inside an exponential: $\exp(i\phi)$, $\delta=\phi_1-\phi_2$, the phase of a gate. The corpus uses $\phi$ for a global phase, for a gate phase, for a Berry phase and for a Pancharatnam phase.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-aharonov-casher-effect-in-biquaternionic-form.html">The Aharonov–Casher Effect in Biquaternionic Form</a></td>
+<td>$\phi_{AB}$, $\phi_{AC}$, the phase shifts</td>
+<td>29</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of B⊗B</a></td>
+<td>the phase $\phi$ of the Bell combination</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.html">Quantum Gates and Circuits in Biquaternionic Form</a></td>
+<td>the gate phase $\phi$</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html">The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers</a></td>
+<td>$\phi_1,\phi_2$, $\delta=\phi_1-\phi_2$</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation in Biquaternionic Form</a></td>
+<td>the geometric phase</td>
+<td>8</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.html">Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</a></td>
+<td>the geometric phase $\phi$</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a></td>
+<td>the Pancharatnam phase $\phi$</td>
+<td>7</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>$\tilde F=f\exp(i\phi)$, $\phi=k_0x_0-\vec k\cdot\vec q$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a></td>
+<td>$\phi_{\mathcal{F}}$, the phase of $\det\mathcal{F}$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral in Biquaternionic Form</a></td>
+<td>phase $\exp(i\phi)$</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entangled-subsystems-in-the-biquaternion-framework.html">Entangled Subsystems in the Biquaternion Framework</a></td>
+<td>phase $\exp(i\phi)$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></td>
+<td>phase $\exp(i\phi)$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bogoliubov-transformations-in-biquaternionic-form.html">Bogoliubov Transformations in Biquaternionic Form</a></td>
+<td>phase $\exp(i\phi)$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-entanglement-entropy-and-the-partial-trace.html">Exercise: Entanglement Entropy and the Partial Trace</a></td>
+<td>phase $\exp(i\phi)$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_1">Possible replacements</h4>
+<ul>
+<li><strong>$\chi^{\mathrm{phs}}$</strong> — preferred. A phase is a property of a field, so it belongs on the field's glyph, and <code>phs</code> is free of <code>geo</code>.</li>
+<li><strong>$\phi^{\mathrm{geo}}$</strong> — preferred where the phase is geometric. <code>geo</code> already names the geometric phase in the index, and the caret is its office.</li>
+<li><strong>$\alpha$</strong> — rejected. It is already the phase of $e^{i\alpha}$ and a mixing angle, in 3033 places, so the swap moves the collision and does not end it.</li>
+<li><strong>$\phi_{\mathrm{phs}}$</strong> — not used. A role in the low slot is what this migration retires.</li>
+</ul>
+<h3 id="13-the-angle-and-the-coordinate">1.3 The Angle and the Coordinate</h3>
+<p>An angle is a real coordinate on a circle or on a sphere: the azimuth of $(\theta,\phi)$, the precession angle of the Euler triple, the Hannay angle, the Wigner angle, the Foucault angle. Here $\phi$ is read and never exponentiated.</p>
+<p>The role holds 167 occurrences in 18 articles. In 100 of them the letter stands inside a named pair or triple — $(\theta,\phi)$ in seven articles, $(\theta,\phi,\psi)$ in the rigid-body article — and there it is not a free choice: $\theta$ assumes it and the reader supplies the rest. In the other 67 it stands alone and nothing beside it says "angle" unless the sentence does.</p>
+<p><strong>The role is not an overload, and that is the reason to leave the letter where it is.</strong> An overload is one glyph for two objects. Here the glyph names one object, a coordinate, and the corpus reads it as a number. The pair $(\theta,\phi)$ is the convention the physics literature shares with the mathematics, and the corpus uses it on the sphere, the Bloch sphere, the Hopf map, the polarization sphere, the coherent state and the ellipsoid.</p>
+<p><strong>The ambiguity is local and it is one caret away.</strong> Where the azimuth stands alone — the shock-wave azimuth, the polarization ellipse, the mode azimuth — the glyph is bare and a reader could take it for the potential. A three-letter label settles that occurrence and leaves the pair untouched.</p>
+<p><strong>A decomposition by name is exact, if the corpus wants it.</strong> The 167 split into five named angles with no remainder: azimuth 106 in 14 articles, precession 22 in 1, Wigner 21 in 1, Hannay 16 in 1, Foucault 2 in 1. Every one of those labels is free by spelling in the 78 rows, with one exception: <code>pre</code> is the presheaf, so the precession label is <code>prc</code>.</p>
+<p><strong>The cost is five labels, and the migration currently spends twelve.</strong> A label is worth spending where the glyph is silent. It is silent in the 67 standalone occurrences and not in the 100 that sit inside a pair. So the recommendation is the letter alone, and the five labels are offered for the articles that need them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.html">Rigid-Body Dynamics and the Biquaternion Rotor</a></td>
+<td>the precession angle $\phi$ of the Euler triple</td>
+<td>22</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td>the Wigner angle $\phi$</td>
+<td>21</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a></td>
+<td>$\theta,\phi$ of the null congruence</td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form.html">Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</a></td>
+<td>the Hannay angle $\phi$</td>
+<td>16</td>
+<td>19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a></td>
+<td>$\theta,\phi$ of the Hopf map</td>
+<td>15</td>
+<td>28</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a></td>
+<td>$\theta,\phi$ on the polarization sphere</td>
+<td>12</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td>$\theta,\phi$ of the spin</td>
+<td>12</td>
+<td>35</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation in Biquaternionic Form</a></td>
+<td>$\theta,\phi$ of the coherent state</td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a></td>
+<td>the azimuth $\phi$</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral in Biquaternionic Form</a></td>
+<td>angle or azimuth $\phi$</td>
+<td>7</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a></td>
+<td>$\theta,\phi$ of the Bloch sphere</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html">The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form</a></td>
+<td>$\theta,\phi$ of the ellipsoid</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>the azimuth $\phi$ of the polarization ellipse</td>
+<td>4</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</a></td>
+<td>the azimuth $\phi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a></td>
+<td>angle or azimuth $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a></td>
+<td>the Foucault angle $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>the azimuth $\phi$ of the mode</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>angle or azimuth $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_2">Possible replacements</h4>
+<p>Sixteen candidates, measured on the role as it stands. The first is the recommendation; the next five are the caret family that decomposes the role by name; the rest are rejected with the load that rejects them.</p>
+<ul>
+<li><strong>keep $\phi$</strong> — preferred, and it costs nothing. The role is one object, a coordinate read as a number, and the letter is half of the pair $(\theta,\phi)$ in seven of the 18 articles. No migration should break a pair the reader already owns.</li>
+<li><strong>$\phi^{\mathrm{azm}}$</strong> — accepted where the azimuth stands alone: 106 occurrences in 14 articles, the largest block of the role and the one that includes the $(\theta,\phi)$ pairs. It is free by spelling in the 78 rows.</li>
+<li><strong>$\phi^{\mathrm{prc}}$</strong> — accepted for the precession angle of the Euler triple: 22 occurrences in 1 article, <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>. The obvious label <code>pre</code> is the presheaf, so the precession label drops one vowel.</li>
+<li><strong>$\phi^{\mathrm{wgn}}$</strong> — accepted for the Wigner angle: 21 occurrences in 1 article, <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>. <code>wig</code> was available and <code>wgn</code> was chosen for the three letters of the name.</li>
+<li><strong>$\phi^{\mathrm{han}}$</strong> — accepted for the Hannay angle: 16 occurrences in 1 article. Free by spelling; <code>har</code> is the harmonic Fischer projection and is one letter away.</li>
+<li><strong>$\phi^{\mathrm{foc}}$</strong> — accepted for the Foucault angle: 2 occurrences in 1 article. Small enough that the bare letter is equally defensible.</li>
+<li><strong>the five labels sum to 167</strong> — the decomposition is exact, azimuth 106, precession 22, Wigner 21, Hannay 16, Foucault 2, with no remainder. That is what makes the family an option rather than a gesture.</li>
+<li><strong>$\theta$</strong> — rejected. 3859 occurrences in 216 articles, the other coordinate of the pair, the polar angle of 838 occurrences and an index in 538 more. Moving the azimuth onto it puts the pair backwards and collides with the largest glyph in the role's own neighbourhood.</li>
+<li><strong>$\alpha$</strong> — rejected. 3033 occurrences in 186 articles: the fine-structure constant in 18 articles, a coefficient, and an index in 596 occurrences.</li>
+<li><strong>$\beta$</strong> — rejected. 2812 occurrences in 147 articles: a velocity ratio, a coupling, and a spinor or representation label in 278 occurrences.</li>
+<li><strong>$\vartheta$</strong> — rejected. 40 occurrences in 4 articles. It is a variant of $\theta$, so it splits the pair into two glyphs that a reader must tell apart for no gain.</li>
+<li><strong>$\chi^{\mathrm{ang}}$</strong> — rejected. 1020 occurrences of the glyph. An angle is not a field, and a field's glyph carrying a role label states the wrong kind of object even when the label is right.</li>
+<li><strong>$\psi$</strong> — rejected. 4584 occurrences in 211 articles, and one article already writes a Euler angle with it. That article is the overload, not the cure.</li>
+<li><strong>$\phi'$</strong> — rejected. A prime marks the imaginary parameter of a coefficient, $Q_\mu=q_\mu+iq'_\mu$. An angle is a real coordinate and has no imaginary part to mark.</li>
+<li><strong>$\phi^{\mathrm{az}}$</strong> — rejected. The caret carries three letters in this corpus; a two-letter label is a second convention for the same slot.</li>
+<li><strong>$\phi^{\mathrm{pol}}$</strong> — rejected. <code>pol</code> is the polarisation vector in the 78 rows, and the polarization sphere is one of the articles in this role.</li>
+<li><strong>no slot, no subscript</strong> — stated as a non-option. An angle is not a component of a four-vector and takes no unit index; the low slot is the wrong instrument entirely.</li>
+</ul>
+<h3 id="14-the-second-state">1.4 The Second State</h3>
+<p>In an overlap $\langle\psi|\phi\rangle$ the corpus writes the second state $\phi$. The letter is then a state label of the same kind as $\psi$, and it stands beside it in the same expression.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.html">No-Cloning and the Algebraic Obstruction in Biquaternionic Form</a></td>
+<td>$\vert\phi\rangle$ in $\langle\psi\vert\phi\rangle$</td>
+<td>25</td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td>$\vert\phi\rangle$ in the overlap</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td>$\vert\langle\psi\vert\phi\rangle_*\vert^2$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a></td>
+<td>$h(\psi,\phi)=\psi^\dagger\phi$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a></td>
+<td>$\vert\phi\rangle$ beside $\vert\psi\rangle$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/mutually-unbiased-bases-and-the-biquaternion-algebra.html">Mutually Unbiased Bases and the Biquaternion Algebra</a></td>
+<td>the second state $\vert\phi\rangle$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td>the second state $\vert\phi\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a></td>
+<td>the second state $\vert\phi\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/roots-idempotents-and-quantum-information.html">Roots, Idempotents and Quantum Information</a></td>
+<td>the second state $\vert\phi\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td>the second state $\vert\phi\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_3">Possible replacements</h4>
+<ul>
+<li><strong>$\chi^{\mathrm{alt}}$</strong> — preferred. The second state of an overlap is the state of the same field, so it takes the field's glyph and the role on the caret.</li>
+<li><strong>$|\phi\rangle$ kept as a ket label</strong> — accepted where the article writes no field at all. A ket is a state of a system, not a generic field, and the letter there labels the pair.</li>
+<li><strong>$|\Phi\rangle$</strong> — rejected. A capital is an algebra-valued object in this corpus, and a state is not that object.</li>
+<li><strong>$|\omega\rangle$</strong> — rejected. $\omega$ is the frequency, at 4130 occurrences.</li>
+</ul>
+<h3 id="15-the-auxiliary-scalar">1.5 The Auxiliary Scalar</h3>
+<p>The auxiliary scalar is a coefficient, a carrier, a map or a name: the carrier in a gauge map, the trace part of a matrix, a flow, the $\phi$ meson. This role holds 212 occurrences in 28 articles and no physics in common.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>the carrier $\phi$ in $\phi^{-1}D(g\phi)$</td>
+<td>59</td>
+<td>124</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.html">No-Cloning and the Algebraic Obstruction in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>17</td>
+<td>43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></td>
+<td>the integration variable $\phi\in\mathbb{C}^n$</td>
+<td>13</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>12</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>$\phi$ of the soliton profile</td>
+<td>9</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>7</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
+<td>$\phi$ of the external scalar</td>
+<td>6</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>the $\phi$ meson</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.html">The Lyapunov Exponent and Information Loss in the Biquaternion Framework</a></td>
+<td>the flow $\phi_{t'}$, $D\phi_{t'}$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>5</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html">Radiation from Accelerated Charges in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>$\phi$, the complex scalar trace part</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/congruence-twistors-and-the-fields-they-generate.html">Congruence Twistors and the Fields They Generate</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane-Wave Propagation in a Medium</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html">Exercise: The Electromagnetic Field of a Moving Charge</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>the conformal map $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html">The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra</a></td>
+<td>auxiliary scalar $\phi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_4">Possible replacements</h4>
+<ul>
+<li><strong>no single replacement.</strong> The catch-all holds four objects with no physics in common, so one letter cannot serve them and the row splits.</li>
+<li><strong>carrier $\to \chi^{\mathrm{car}}$</strong> — preferred. The carrier of a gauge map is a field that acts, so the field's glyph and the role on the caret state both facts.</li>
+<li><strong>trace part $\to \chi^{\mathrm{trc}}$</strong> — preferred. It is the trace of an element of the algebra, and <code>trc</code> is free of <code>tot</code>.</li>
+<li><strong>flow $\to \chi^{\mathrm{flw}}$</strong> — preferred. A flow is a one-parameter family of fields, so the glyph is the field and the label is the family.</li>
+<li><strong>$\phi$ meson $\to$ keep $\phi$</strong> — preferred. The $\phi$ meson is the standard name and this is the one row where the letter is the physics.</li>
+<li><strong>$t$</strong> — rejected for the trace. It is the time coordinate in 1288 places, and a trace written $t$ inside a field expression is worse than a label.</li>
+</ul>
+<h3 id="16-one-rapidity">1.6 One Rapidity</h3>
+<p>A single article writes the boost parameter with $\phi$ instead of $\psi$. The form is $\cosh(\phi/2)$, $\sinh(\phi/2)$, and it is the same object that 62 other articles write $\psi$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td>$\cosh(\phi/2)$, $\sinh(\phi/2)$: a boost parameter</td>
+<td>7</td>
+<td>7</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_5">Possible replacements</h4>
+<ul>
+<li><strong>$\eta$</strong> — preferred. It is the glyph the other 62 articles write for the same object, and the migration already moves the rapidity to $\eta$ at section 2.2.</li>
+<li><strong>$\eta^{\mathrm{rap}}$</strong> — accepted where an article needs it named. The label exists for this role.</li>
+<li><strong>$\chi^{\mathrm{rap}}$</strong> — rejected. A rapidity is not a field.</li>
+<li><strong>$\theta$</strong> — rejected. The rotor already uses $\theta$ for its rotation half.</li>
+</ul>
+<h2 id="2-psi">2. Psi</h2>
+<p>$\psi$ appears in 211 articles, 4584 times. Two roles carry 86 per cent of it. The rest is scattered over kernels, Grassmann variables, dummy elements and two names. Under the migration the spinor keeps the glyph and the rapidity leaves it.</p>
+<h3 id="21-the-spinor-and-the-state">2.1 The Spinor and the State</h3>
+<p>The spinor is a coordinate column, or the state vector $|\psi\rangle$. This role holds 2839 of the 4584 occurrences in 131 articles. It covers the Dirac field, the Majorana field, the Weyl pair $\psi_L,\psi_R$, the wave packet, the qubit state and the Grassmann-odd field of the operator formalism.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td>the Dirac field, $\psi$, $\langle\bar\psi\psi\rangle$</td>
+<td>177</td>
+<td>184</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>134</td>
+<td>136</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>the spinor, $\pi-i\psi^\dagger\approx0$</td>
+<td>119</td>
+<td>122</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td>$\psi$, $H\psi=E\psi$</td>
+<td>94</td>
+<td>94</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets in Biquaternionic Form</a></td>
+<td>the wave packet $\psi(x)$</td>
+<td>90</td>
+<td>90</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>the fermion field $\psi$, $\psi^\dagger$</td>
+<td>85</td>
+<td>132</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td>the state $\vert\psi\rangle$</td>
+<td>84</td>
+<td>89</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td>the Dirac spinor $\psi$</td>
+<td>76</td>
+<td>79</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>76</td>
+<td>119</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>the spinor $\psi$ of the oscillator</td>
+<td>72</td>
+<td>72</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>the Majorana spinor $\psi$</td>
+<td>71</td>
+<td>75</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.html">No-Cloning and the Algebraic Obstruction in Biquaternionic Form</a></td>
+<td>$\vert\psi\rangle$ beside $\vert\phi\rangle$</td>
+<td>67</td>
+<td>70</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a></td>
+<td>the state $\vert\psi\rangle$ on the projective line</td>
+<td>62</td>
+<td>72</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a></td>
+<td>the teleported state $\vert\psi\rangle$</td>
+<td>55</td>
+<td>60</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td>spinor or state $\psi$</td>
+<td>52</td>
+<td>57</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>spinor or state $\psi$</td>
+<td>51</td>
+<td>57</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td>the fermion field $\psi$</td>
+<td>47</td>
+<td>51</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation in Biquaternionic Form</a></td>
+<td>the Majorana spinor $\psi$</td>
+<td>44</td>
+<td>46</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>spinor or state $\psi$</td>
+<td>44</td>
+<td>49</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>the fermion field $\psi$, $\psi_L$</td>
+<td>43</td>
+<td>68</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>42</td>
+<td>46</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.html">Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</a></td>
+<td>the spin state $\psi$</td>
+<td>39</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a></td>
+<td>the state carried by the half-angle</td>
+<td>38</td>
+<td>70</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>spinor or state $\psi$</td>
+<td>36</td>
+<td>45</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-double-slit-experiment-in-biquaternionic-form.html">The Double-Slit Experiment in Biquaternionic Form</a></td>
+<td>the state $\psi$ at the two slits</td>
+<td>34</td>
+<td>36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a></td>
+<td>the module field $\psi=\phi\chi$</td>
+<td>32</td>
+<td>32</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a></td>
+<td>the spinor of the representation</td>
+<td>32</td>
+<td>51</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.html">Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>30</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>the fermion field coupled to $W$ and $Z$</td>
+<td>30</td>
+<td>34</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a></td>
+<td>$h(\psi,\phi)=\psi^\dagger\phi$</td>
+<td>27</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a></td>
+<td>the spinor carried by the rotor</td>
+<td>27</td>
+<td>47</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>the spinor $\psi$ on the curved frame</td>
+<td>25</td>
+<td>25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td>the spinor $\psi$ of the connection</td>
+<td>25</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>24</td>
+<td>28</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a></td>
+<td>spinor or state $\psi$</td>
+<td>23</td>
+<td>25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-path-integral-in-biquaternionic-form.html">The Schrödinger Path Integral in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>23</td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>$\psi_L$, $\psi_R$</td>
+<td>22</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-entanglement-entropy-and-the-partial-trace.html">Exercise: Entanglement Entropy and the Partial Trace</a></td>
+<td>the state $\psi$</td>
+<td>22</td>
+<td>26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td>the spin-1/2 state $\psi$</td>
+<td>22</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>22</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-probability-band-no-clock-three-species-and-the-geometric-phase.html">The Probability Band: No Clock, Three Species and the Geometric Phase</a></td>
+<td>spinor or state $\psi$</td>
+<td>22</td>
+<td>22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/excitation-mode-function-and-the-informational-sector.html">Excitation, Mode Function, and the Informational Sector</a></td>
+<td>$\vert\psi\rangle=\alpha\vert0\rangle+\beta\vert1\rangle$</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a></td>
+<td>the state $\psi$</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a></td>
+<td>the field on the wedge algebra</td>
+<td>19</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a></td>
+<td>the spinor column $\psi$</td>
+<td>19</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td>the Dirac spinor $\psi$</td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td>$\psi_{\mathrm u,a}$, $\psi_{\mathrm d,b}$</td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>the Dirac spinor $\psi$</td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td>spinor or state $\psi$</td>
+<td>17</td>
+<td>31</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html">The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</a></td>
+<td>$\psi$ in the WKB ansatz</td>
+<td>16</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html">Harmonic Elementary Particles and the Periodic System of Atoms</a></td>
+<td>spinor or state $\psi$</td>
+<td>15</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>$S[\psi]=\int\mathcal{L}(\psi,\partial\psi)$</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a></td>
+<td>the state $\psi$</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>$D_\mu(f\psi)$</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a></td>
+<td>$\psi_L$, the fermion field</td>
+<td>14</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a></td>
+<td>the spinor of the twistor pair</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td>spinor or state $\psi$</td>
+<td>14</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>spinor or state $\psi$</td>
+<td>13</td>
+<td>25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>the zero mode $\psi$</td>
+<td>13</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td>the field $\psi$ of the K-G equation</td>
+<td>13</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>12</td>
+<td>34</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>12</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>the state $\psi$ of the triple</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html">The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</a></td>
+<td>$\vert\psi\rangle$ of the Hilbert space</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
+<td>the spinor carried by the boost</td>
+<td>12</td>
+<td>41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>spinor or state $\psi$</td>
+<td>11</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td>the field $\psi$ under $CPT$</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-exponential-word-and-its-boundary.html">The Exponential Word and Its Boundary</a></td>
+<td>spinor or state $\psi$</td>
+<td>11</td>
+<td>37</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></td>
+<td>the state $\psi$ on the zero-divisor locus</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td>the spinor of the carrier</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</a></td>
+<td>the state $\psi$ of the atom</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td>the spin-3/2 field $\psi$</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a></td>
+<td>the neutrino spinor $\psi$</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a></td>
+<td>spinor or state $\psi$</td>
+<td>10</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/mutually-unbiased-bases-and-the-biquaternion-algebra.html">Mutually Unbiased Bases and the Biquaternion Algebra</a></td>
+<td>$\vert\psi\rangle$ of the basis</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</a></td>
+<td>spinor or state $\psi$</td>
+<td>9</td>
+<td>15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a></td>
+<td>the state of the classical sector</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>the spinor of the scattering state</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>8</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>the state $\psi$ of the gauge sector</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>7</td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.html">Entanglement Entropy and the Replica Trick in Biquaternionic Form</a></td>
+<td>the state $\psi$</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>7</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/landau-levels-in-biquaternionic-form.html">Landau Levels in Biquaternionic Form</a></td>
+<td>$\psi=\exp(i(ky+k_zz))f(x)\chi$</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a></td>
+<td>$\psi=(\psi_L,\psi_R)$</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>spinor or state $\psi$</td>
+<td>7</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>the Dirac field, $\psi$</td>
+<td>7</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-spin-precession-in-a-magnetic-field.html">Exercise: Spin Precession in a Magnetic Field</a></td>
+<td>$\vert\psi(t')\rangle$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td>the spinor column $\psi(x)$, $\psi^\dagger F\psi$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form.html">Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</a></td>
+<td>$\psi_R=\tilde u_{\mathrm r}^*\psi$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html">POVMs and the Positive Cone in Biquaternionic Form</a></td>
+<td>$\vert\psi\rangle$, $\tilde\Pi(\psi^\perp)$</td>
+<td>6</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>$\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>5</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
+<td>$\psi\mapsto S\psi$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>spinor or state $\psi$</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of B⊗B</a></td>
+<td>$\vert\psi\rangle=c_1\vert00\rangle+\cdots$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-from-the-hermitian-form-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td>$\vert\langle\psi\vert\phi\rangle_*\vert^2$</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>$\psi$, $\bar\psi$ of the current</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html">The Lorentz Group as Biquaternion Norm Automorphisms</a></td>
+<td>the spinor of the automorphism</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a></td>
+<td>$\psi\in\Delta$, $\tilde Q\cdot(\psi\otimes f)$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html">The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</a></td>
+<td>$(\Gamma_\mu p^\mu+m)\psi=0$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html">Exercise: The Electromagnetic Field of a Moving Charge</a></td>
+<td>spinor or state $\psi$</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a></td>
+<td>spinor or state $\psi$</td>
+<td>4</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a></td>
+<td>$\vert\psi\rangle$ of the singlet</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a></td>
+<td>$p_j\psi=-i\hbar\partial\psi/\partial q_j$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-holevo-bound-and-accessible-information-in-biquaternionic-form.html">The Holevo Bound and Accessible Information in Biquaternionic Form</a></td>
+<td>the state $\psi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a></td>
+<td>$\vert\psi\rangle$, $\langle\psi,\psi\rangle_*$</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/coulomb-scattering-and-rutherfords-formula-in-biquaternionic-form.html">Coulomb Scattering and Rutherford's Formula in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>spinor or state $\psi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ether-and-photons-in-the-electro-gravimagnetic-programme.html">The Ether and Photons in the Electro-Gravimagnetic Programme</a></td>
+<td>spinor or state $\psi$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>3</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>the spinor $\psi$</td>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a></td>
+<td>$\langle\psi\vertN_{\vec p}\vert\psi\rangle$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a></td>
+<td>$\psi^{\mathrm{fop}}(x)$, $\vert\psi\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/helicity-in-biquaternionic-form.html">Helicity in Biquaternionic Form</a></td>
+<td>$\varepsilon(\psi,\phi)$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a></td>
+<td>spinor or state $\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/roots-idempotents-and-quantum-information.html">Roots, Idempotents and Quantum Information</a></td>
+<td>$\vert\psi\rangle$, $\vert\phi\rangle$ in the overlap</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a></td>
+<td>$\vert\psi\rangle=\sum c_{A_1A_2}\vertA_1A_2\rangle$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a></td>
+<td>$\psi\mapsto e^{i\theta}\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td>spinor or state $\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>the field $\psi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entangled-subsystems-in-the-biquaternion-framework.html">Entangled Subsystems in the Biquaternion Framework</a></td>
+<td>the state $\psi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a></td>
+<td>$\pi-i\psi^\dagger\approx0$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a></td>
+<td>the state $\psi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a></td>
+<td>$\vert\psi(\chi t')\rangle$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/strong-subadditivity-in-the-biquaternion-framework.html">Strong Subadditivity in the Biquaternion Framework</a></td>
+<td>spinor or state $\psi$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html">The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form</a></td>
+<td>$\psi^{\mathrm{fop}}(x)$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td>$p=\vert\psi\vert^2$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-sectors-split-and-the-four-bridges.html">The Two Sectors: Split and the Four Bridges</a></td>
+<td>$\ln\tilde H$, $\psi/2$ of the polar word</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_6">Possible replacements</h4>
+<ul>
+<li><strong>keep $\psi$</strong> — preferred. The role holds 2839 of 4584 occurrences in 131 articles, and the notation table fixes $\psi^{\mathrm{fop}}$ for the Fock operator. The glyph is a coordinate that already has the right name.</li>
+<li><strong>$\chi$</strong> — rejected for the spinor. $\chi$ is the generic scalar field of this migration, and a spinor is not a scalar. Giving it $\chi$ would state the wrong kind of object with the right kind of label.</li>
+<li><strong>$\lambda$</strong> — rejected. 3609. It is a coupling, an eigenvalue and, in the supersymmetry articles, a gaugino, so the swap moves the spinor onto a letter that already names three other things.</li>
+<li><strong>$\xi$</strong> — rejected. 995, and it is a spinor in the twistor articles, which is the one place the swap would be ambiguous.</li>
+</ul>
+<h3 id="22-the-rapidity">2.2 The Rapidity</h3>
+<p>The rapidity is the boost parameter: $\tanh\psi=v/c$, and the boost rotor $\cosh(\psi/2)+i\sinh(\psi/2)\vec u$. This role holds 1113 occurrences in 62 articles. It is a real number, and it has nothing to do with a spinor except the letter.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td>$\psi_b$, $\tanh\psi_b=v_b/c$; composition $\psi_1+\psi_2$</td>
+<td>135</td>
+<td>135</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-thomas-precession.html">Exercise: The Thomas Precession</a></td>
+<td>$\tanh\psi=v/c$, and $d\psi$</td>
+<td>73</td>
+<td>73</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a></td>
+<td>the boost angle $\psi$ of the polar word</td>
+<td>59</td>
+<td>64</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a></td>
+<td>$\tilde U=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$</td>
+<td>58</td>
+<td>61</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a></td>
+<td>$\cosh\psi$, $\sinh\psi$ in the polar word</td>
+<td>57</td>
+<td>64</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a></td>
+<td>$\psi\to\infty$ in the massless limit</td>
+<td>57</td>
+<td>68</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a></td>
+<td>$\psi$ of the accelerating frame</td>
+<td>44</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a></td>
+<td>$p=mc\sinh\psi$, $E=mc^2\cosh\psi$</td>
+<td>34</td>
+<td>46</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html">The Hamilton Pairing: Mass as Modulus and the Complex Angle</a></td>
+<td>$\ln\tilde H=\ln r\,e_t+i(\psi/2)\vec u$</td>
+<td>33</td>
+<td>41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a></td>
+<td>$\cosh(\psi/2)$, $\sinh(\psi/2)$; the double cover</td>
+<td>32</td>
+<td>70</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
+<td>boost rapidity $\psi$</td>
+<td>28</td>
+<td>41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-exponential-word-and-its-boundary.html">The Exponential Word and Its Boundary</a></td>
+<td>$e^{i\psi\vec u/2}e^{\theta\vec u_r/2}$</td>
+<td>26</td>
+<td>37</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a></td>
+<td>$mc\,e^{\pm\psi}$, the Doppler factor</td>
+<td>25</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>23</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a></td>
+<td>modular boost angle $\psi$</td>
+<td>20</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>20</td>
+<td>47</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html">Exercise: Duality Rotation and the Riemann–Silberstein Vector</a></td>
+<td>$\psi$ of the duality rotation</td>
+<td>19</td>
+<td>19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a></td>
+<td>the boost parameter $\psi$</td>
+<td>19</td>
+<td>51</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.html">The Relativistic Two-Body Problem in Biquaternionic Form</a></td>
+<td>$\psi$ of each particle</td>
+<td>19</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td>$\psi$ of the boost between frames</td>
+<td>18</td>
+<td>27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a></td>
+<td>$\psi$ of the inertial frame</td>
+<td>18</td>
+<td>18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a></td>
+<td>$\psi$ of the emitter and of the observer</td>
+<td>17</td>
+<td>17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a></td>
+<td>the hyperbolic coordinate $\psi$</td>
+<td>16</td>
+<td>24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.html">Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>14</td>
+<td>44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a></td>
+<td>$\psi$ of the boost across the horizon</td>
+<td>13</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a></td>
+<td>the boost rapidity $\psi$</td>
+<td>13</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td>$\psi$ of the paravector boost</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a></td>
+<td>$\tanh\psi=v/c$</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>11</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>10</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a></td>
+<td>$\psi$ of the rotor</td>
+<td>10</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.html">Spin Entropy and the Lorentz Group in Biquaternionic Form</a></td>
+<td>$\psi$ of the boost</td>
+<td>10</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html">The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>10</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>10</td>
+<td>31</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a></td>
+<td>$\psi$ of the temporal boost</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+<td>$\psi$ of the four-velocity</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a></td>
+<td>$\psi$ of the synchronising boost</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>7</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a></td>
+<td>$\psi$ of the boost dictionary</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html">The Poincaré Group and the Biquaternion Frame</a></td>
+<td>$\psi$ of the boost generator</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a></td>
+<td>$\psi$ along the light cone</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>$\cosh(\psi/2)$, $\sinh(\psi/2)$ in the boost</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>6</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>$\tanh\psi=v_b/c$ in $\tilde U$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a></td>
+<td>$\psi$ of the boost</td>
+<td>6</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-force-in-biquaternion-form.html">The Lorentz Force in Biquaternion Form</a></td>
+<td>$\tanh\psi=v_b/c$ in $\tilde U_{\mathrm b}$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-n-regular-spectrally-regular-sector-mass-in-motion.html">The N-Regular, Spectrally Regular Sector: Mass in Motion</a></td>
+<td>$\psi$ of the moving sector</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html">Exercise: Four-Momentum Conservation in a Collision</a></td>
+<td>$\tilde U_{\mathrm b}$ of rapidity $\psi$</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html">Exercise: The Electromagnetic Field of a Moving Charge</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>5</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a></td>
+<td>$\psi$ of the rotor</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a></td>
+<td>$B=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-kinematics-of-a-two-body-decay.html">Exercise: The Relativistic Kinematics of a Two-Body Decay</a></td>
+<td>the rapidity of the decaying particle</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html">The Lorentz Group as Biquaternion Norm Automorphisms</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td>$\tilde U_{\mathrm b}$ of rapidity $\psi$</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td>$\tanh\psi\,\vec u_{\mathrm b}$ on the Bloch ball</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.html">Quantum Gates and Circuits in Biquaternionic Form</a></td>
+<td>the rotor of rapidity $\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-four-regimes-of-an-element-mass-and-motion.html">The Four Regimes of an Element: Mass and Motion</a></td>
+<td>$mc\,e^{\pm\psi}$, the light-cone frequencies</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a></td>
+<td>the boost rapidity $2\beta\vert\vec h\vert$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td>rapidity, $\tanh\psi=v/c$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html">The Unstable State and the Complex Energy Pole in Biquaternionic Form</a></td>
+<td>complex rapidity $\psi$, $\Theta=-i\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-exponential-the-logarithm-and-the-generator.html">The Exponential, the Logarithm and the Generator</a></td>
+<td>the limit $\psi\to\infty$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_7">Possible replacements</h4>
+<ul>
+<li><strong>$\eta$</strong> — preferred. It is the pseudorapidity of the literature, so the swap keeps a standard name for a standard object. Its load here is 600 occurrences, and its four uses all carry a mark: the metric sign $g=-\eta$, the conjugation label $\eta_C$, an adiabatic parameter and a coordinate.</li>
+<li><strong>$\eta^{\mathrm{rap}}$</strong> — accepted where an article needs the rapidity named against the pseudorapidity. The label is free.</li>
+<li><strong>$\zeta$</strong> — second choice. 351 occurrences in 24 articles, the lightest Greek letter here that no field claims.</li>
+<li><strong>$y$</strong> — rejected. 8542. It is a coordinate.</li>
+<li><strong>$\omega$</strong> — rejected. 4130. It is the frequency and the Goldstone field.</li>
+</ul>
+<h3 id="23-the-kernel">2.3 The Kernel</h3>
+<p>A kernel is a Green function or a fundamental solution: $-\exp(i\omega r)/(4\pi r)$ for the Helmholtz operator, the light-cone kernel $\delta(\tau-x)$, the retarded solution of the inhomogeneous equation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>$\psi^0_m$ of the homogeneous equation</td>
+<td>12</td>
+<td>25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>the fundamental solution $\psi$</td>
+<td>10</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td>the retarded kernel $\psi^0$, $\psi(x)$</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td>the light-cone kernel $\psi$</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ether-and-photons-in-the-electro-gravimagnetic-programme.html">The Ether and Photons in the Electro-Gravimagnetic Programme</a></td>
+<td>$\psi=-\exp(i\omega r)/(4\pi r)$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>the Green function $\psi$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_8">Possible replacements</h4>
+<ul>
+<li><strong>$G$</strong> — preferred. The corpus already writes $G$ for a Green function, and $G_R$ for the retarded one. The kernel is the one role that already has a glyph of its own, and it needs no label at all.</li>
+<li><strong>$G^{\mathrm{rgs}}$</strong> — preferred for the regularised kernel. The label exists in the index and it was made for this object.</li>
+<li><strong>$\chi^{\mathrm{hmk}}$</strong> — accepted where the kernel is written as a field. The label is free, and the one article that reads $\chi$ as a Helmholtz kernel gives that use up under it.</li>
+<li><strong>$\psi_{\mathrm{ker}}$</strong> — not used. A role in the low slot is what this migration retires.</li>
+</ul>
+<h3 id="24-the-grassmann-variable">2.4 The Grassmann Variable</h3>
+<p>The Grassmann variable is the odd object of a fermionic path integral: the worldline pair $\psi_\mu\psi_\nu=-\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$, or the measure $\mathcal{D}\psi^\dagger\mathcal{D}\psi$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\mathcal{D}\psi^\dagger\mathcal{D}\psi$</td>
+<td>47</td>
+<td>132</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td>$\mathcal{D}\psi$, $\mathcal{D}\psi^\dagger$ in the measure</td>
+<td>40</td>
+<td>119</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>$\psi_\mu\psi_\nu=-\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$</td>
+<td>20</td>
+<td>34</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral in Biquaternionic Form</a></td>
+<td>$\psi$ integrated in the spin factor</td>
+<td>18</td>
+<td>28</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td>the Grassmann eigenvalue of the coherent state</td>
+<td>7</td>
+<td>14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></td>
+<td>$\mathcal{D}\psi^\dagger\mathcal{D}\psi$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a></td>
+<td>the worldline variable</td>
+<td>3</td>
+<td>8</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_9">Possible replacements</h4>
+<ul>
+<li><strong>$\chi^{\mathrm{grs}}$</strong> — preferred. A Grassmann variable is a field with odd values, so it takes the generic field's glyph and the label states the oddness. It appears in 7 articles and the one label covers them.</li>
+<li><strong>merge with the spinor</strong> — preferred where the odd object is the fermion field of the same article. The Grassmann variable of a path integral is that field, and the merge needs no glyph.</li>
+<li><strong>$c,\bar c$</strong> — preferred where the odd field is a ghost. A ghost is a different object and the literature gives it a Latin letter.</li>
+</ul>
+<h3 id="25-the-generic-element">2.5 The Generic Element</h3>
+<p>The generic element appears in the definition of the left and right actions, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and in the cell dictionary $\psi\mapsto a\psi b$. The letter there is a dummy variable of the algebra. It names no physics, and the same sentence appears in 45 articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>25</td>
+<td>68</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>10</td>
+<td>29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>9</td>
+<td>23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a></td>
+<td>$\psi^{\mathrm{fop}}$, $\psi^{T}$ in the notation rows</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>$\psi\mapsto e_\mu\psi e_\nu$, $\psi\mapsto-i\psi\vec e_z$</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>$L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>$L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ on the regular module</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>$\psi\mapsto a\psi b$ in the cell dictionary</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td>$L_a\psi$, $L_aR_b$</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>$L_a\psi$, $\psi b$ in the action dictionary</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bogoliubov-transformations-in-biquaternionic-form.html">Bogoliubov Transformations in Biquaternionic Form</a></td>
+<td>generic field in $L_a\psi$, $\psi b$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>$\psi\mapsto a\psi b$ in the cell dictionary</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_10">Possible replacements</h4>
+<ul>
+<li><strong>$\chi$</strong> — preferred, and bare. The dummy of $L_a\psi=a\psi$ is a generic element of the algebra, and $\chi$ is the generic field. The action then reads $L_a\chi=a\chi$, the letter states that the argument is unspecified, and no label is needed.</li>
+<li><strong>$\chi^{\mathrm{el}}$</strong> — rejected. A bare $\chi$ already says "an unspecified element", and a label would make the default look like a special case.</li>
+<li><strong>$\tilde Q$</strong> — rejected as a target. The general element is written with a tilde in the algebra conventions, and that tilde marks the algebra; a dummy of the actions does not need it.</li>
+<li><strong>$w$</strong> — rejected. 990 occurrences, mostly weights and ratios.</li>
+<li><strong>$x$</strong> — rejected. 12700. It is the coordinate.</li>
+</ul>
+<h3 id="26-one-euler-angle">2.6 One Euler Angle</h3>
+<p>A single article writes the spin Euler angle with $\psi$, beside the precession angle $\phi$. The object is a rotation angle of a rigid body, not a spinor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.html">Rigid-Body Dynamics and the Biquaternion Rotor</a></td>
+<td>the spin Euler angle $\psi$, $d\psi/dt$</td>
+<td>25</td>
+<td>25</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_11">Possible replacements</h4>
+<ul>
+<li><strong>keep $\psi$</strong> — preferred. The Euler triple is $(\phi,\theta,\psi)$ in every text on rigid bodies, and this article writes it that way. The pair rule that protects the spherical angle protects this one too.</li>
+<li><strong>$\varphi$</strong> — rejected. It is the scalar field coordinate on 11 articles and the golden ratio elsewhere, not an Euler angle.</li>
+</ul>
+<h3 id="27-two-names-and-one-vector">2.7 Two Names and One Vector</h3>
+<p>The letter appears once as the name of a map, once inside the name <em>quaternionic $\psi$-hyperholomorphic</em>, and once as the vector $\vec\psi=\vec E-i\vec H$ of a chiral medium. None of the three is a spinor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>use</th>
+<th>in this role</th>
+<th>in the article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>the map $\psi$ of the light cone, $\psi^{-1}(j(\mathrm{I}_s))$</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html">The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</a></td>
+<td>the name in "quaternionic $\psi$-hyperholomorphic"</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</a></td>
+<td>$\vec\psi=\vec E-i\vec H$</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="possible-replacements_12">Possible replacements</h4>
+<ul>
+<li><strong>none.</strong> None of the three is a glyph under the corpus's control. <em>Quaternionic $\psi$-hyperholomorphic</em> is a name from the literature, $\vec\psi=\vec E-i\vec H$ is a symbol of the chiral-media literature, and the map is local to one article. A migration renames no literature.</li>
+</ul>
+<h2 id="the-totals">The Totals</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>articles</th>
+<th>occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\phi$: scalar field</td>
+<td>50</td>
+<td>1119</td>
+</tr>
+<tr>
+<td>$\phi$: phase</td>
+<td>14</td>
+<td>110</td>
+</tr>
+<tr>
+<td>$\phi$: angle</td>
+<td>18</td>
+<td>167</td>
+</tr>
+<tr>
+<td>$\phi$: second state</td>
+<td>10</td>
+<td>61</td>
+</tr>
+<tr>
+<td>$\phi$: auxiliary scalar</td>
+<td>27</td>
+<td>200</td>
+</tr>
+<tr>
+<td>$\phi$: rapidity</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>$\psi$: spinor and state</td>
+<td>131</td>
+<td>2839</td>
+</tr>
+<tr>
+<td>$\psi$: rapidity</td>
+<td>62</td>
+<td>1113</td>
+</tr>
+<tr>
+<td>$\psi$: kernel</td>
+<td>6</td>
+<td>37</td>
+</tr>
+<tr>
+<td>$\psi$: Grassmann variable</td>
+<td>7</td>
+<td>139</td>
+</tr>
+<tr>
+<td>$\psi$: generic element</td>
+<td>36</td>
+<td>183</td>
+</tr>
+<tr>
+<td>$\psi$: angle</td>
+<td>1</td>
+<td>25</td>
+</tr>
+<tr>
+<td>$\psi$: map or name</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>corpus: $\phi$</td>
+<td>123</td>
+<td>2006</td>
+</tr>
+<tr>
+<td>corpus: $\psi$</td>
+<td>211</td>
+<td>4584</td>
+</tr>
+<tr>
+<td>corpus: $\varphi$</td>
+<td>61</td>
+<td>685</td>
+</tr>
+<tr>
+<td>corpus: $\chi$</td>
+<td>122</td>
+<td>1020</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four corpus rows count every occurrence. The role rows count only the occurrences assigned to that role, so they sum below the corpus rows.</p>
+<h2 id="what-the-inventory-says-about-a-migration">What the Inventory Says About a Migration</h2>
+<p>The alphabet is saturated and the caret is not. The migration therefore opens one glyph, moves one, borrows one, and spends twelve labels, and it says why at each step.</p>
+<p><strong>The generic field is $\chi$, and it carries no label when no precision is needed.</strong> The scalar field moves first, because it is the largest role in either letter: 1119 occurrences in 50 articles. The dummy element of the algebra moves with it, because a dummy element is a generic element, and $\chi$ is exactly that. The migration is then one statement — $\chi$ is a field — with precisions added where an article needs them.</p>
+<p><strong>The three uses of $\chi$ that are not fields take a label, and that is what frees the glyph.</strong> The gauge function, the cell and the Helmholtz kernel are named objects, and a name is the caret's office. The central grading already carries $\chi_{\mathrm{ad}}$ and needs no change. Three labels buy the whole alphabet.</p>
+<p><strong>The spinor keeps $\psi$.</strong> The role is 2839 of 4584 occurrences in 131 articles, and the glyph is fixed by the notation table, which writes $\psi^{\mathrm{fop}}$ for the Fock operator. A migration that moves it renames a coordinate that already has the right name.</p>
+<p><strong>The rapidity leaves $\psi$ for $\eta$, and the rotor pair is re-cut.</strong> The boost is the second half of a pair, $\theta$ for the rotation and $\psi$ for the boost, and 62 articles write it that way. The pair is not worth a collision with the spinor. It becomes $(\theta,\eta)$: $\eta$ is the pseudorapidity of the literature, its load here is 600 occurrences, and its four uses all carry a mark, so a caret separates them.</p>
+<p><strong>The kernel goes to $G$.</strong> The corpus already writes $G$ for a Green function and $G^{\mathrm{rgs}}$ for the regularised one. This role needs no new glyph and no new label, because the object already has a glyph.</p>
+<p><strong>The potential goes to the temporal parameter $a'_t$, and the corpus is patched.</strong> The coefficient rule gives $A_t=a_t+i\,a'_t$, the material sector sets $a_t=0$, and $a'_t=\phi/c$. The substitution <code>i\phi/c</code> $\to$ <code>i\,a'_t</code> is made in the 31 articles that carry the potential, 71 occurrences, and the definitions are in <em>Algebra and Element Conventions</em> and <em>Maxwell's Equations</em>. The potential stays $\phi$ where it is used as a number, $\vec E=-\nabla\phi$ and $\varrho\phi$.</p>
+<p><strong>The angle keeps its letter in both glyphs.</strong> $(\theta,\phi)$ is the spherical pair and $(\phi,\theta,\psi)$ is the Euler triple. An angle is the one role where the letter is not an overload but half of a pair, and no migration should touch it.</p>
+<p><strong>The auxiliary row dissolves.</strong> Its four objects take four names: $\chi^{\mathrm{car}}$ for a carrier, $\chi^{\mathrm{trc}}$ for a trace part, $\chi^{\mathrm{flw}}$ for a flow, and $\phi$ for the meson, which is the one place the letter is the physics.</p>
+<p><strong>Nothing else moves into a Greek letter.</strong> $\xi$, $\sigma$, $\pi$, $\theta$, $\rho$, $\omega$, $\lambda$, $\alpha$ and $\beta$ are all taken, most of them above 2000 occurrences, and the light ones are variants that state nothing. The literature's ranking of generic scalars is a ranking of a different corpus.</p>
+<p><strong>A migration that states a role is worth more than a migration that states a letter.</strong> Three glyphs and twelve caret labels state every role that either letter was carrying. The corpus gains a statement of what each glyph is doing, and loses one letter to a collision it can now describe.</p>
+<h2 id="summary">Summary</h2>
+<p>$\phi$ appears 2006 times in 123 articles, $\psi$ appears 4584 times in 211 articles, and $\chi$ appears 1020 times in 122 articles.</p>
+<p>$\phi$ splits without a dominant role: the scalar field 1119, the auxiliary scalar 200, the angle 167, the phase 110, the second state 61.</p>
+<p>$\psi$ splits into one dominant role and one rival: the spinor 2839, the rapidity 1113, the dummy element 183, the Grassmann variable 139.</p>
+<p>$\chi$ takes the generic field, bare where no precision is needed: the scalar field $\chi^{\mathrm{scl}}$ 1119, the dummy element 183, the Grassmann variable $\chi^{\mathrm{grs}}$ 139, the phase $\chi^{\mathrm{phs}}$ 110, the second state $\chi^{\mathrm{alt}}$ 61, the carrier $\chi^{\mathrm{car}}$ and the trace part $\chi^{\mathrm{trc}}$ inside the auxiliary row, and the four named uses that give up the bare glyph.</p>
+<p>The roles, not the letter count, decide the migration. $\psi$ keeps the spinor and gives up the rapidity to $\eta$. $\phi$ gives up the field to $\chi$ and keeps the angle. The kernel goes to $G$ and the potential slot to $a'_t$. No role is written in the low slot.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning in this article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\phi$</td>
+<td>the letter under census, whatever its role</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>the second letter under census</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the generic field after the migration, bare when no precision is needed</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{scl}}$</td>
+<td>a caret label naming a role: the scalar field</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{phs}}$</td>
+<td>a caret label naming a role: a phase</td>
+</tr>
+<tr>
+<td>$\chi^{\mathrm{gau}}$</td>
+<td>a caret label naming a named object: the gauge function</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>the rapidity after the migration</td>
+</tr>
+<tr>
+<td>$a'_t$</td>
+<td>the temporal parameter of $\tilde A$, the scalar potential in the unit of $\vec A$, $a'_t=\phi/c$</td>
+</tr>
+<tr>
+<td>$A_t$</td>
+<td>the time coefficient of $\tilde A$, $A_t=a_t+i\,a'_t=i\,a'_t$ in $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$G$, $G^{\mathrm{rgs}}$</td>
+<td>the kernel and its regularised form</td>
+</tr>
+<tr>
+<td>role</td>
+<td>the object the letter names in a given sentence</td>
+</tr>
+<tr>
+<td>in this role</td>
+<td>occurrences of the glyph in that role in that article</td>
+</tr>
+<tr>
+<td>in the article</td>
+<td>total occurrences of the glyph in that article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a>, for the caret, the low slot, and the 78 rows of the three-letter labels that the twelve new labels join.</li>
+<li><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit Index and Notation Conventions</a>, for the notation row that fixes $\psi^{\mathrm{fop}}$ and the field operators.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the left and right actions $L_a$ and $R_b$ whose dummy argument is the generic field.</li>
+<li><a href="../articles_internal/the-letter-d-on-the-covariant-derivative-an-inventory-and-a-retirement.html">The Letter D on the Covariant Derivative: An Inventory and a Retirement</a>, the companion inventory, for the form a retirement takes.</li>
+<li><a href="../articles_internal/pauli-gamma-infestation.html">The Pauli Gamma Infestation</a>, for a migration of a matrix glyph across the same corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

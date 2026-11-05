@@ -140,8 +140,8 @@ $$</p>
 </tr>
 <tr>
 <td>Time component $\mu = t$</td>
-<td>$\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ\phi}{\hbar c}$</td>
-<td>$A_t = i\phi/c$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ a'_t}{\hbar}$</td>
+<td>$A_t = i\,a'_t$</td>
 </tr>
 <tr>
 <td>Space components $\mu = k$</td>
@@ -150,7 +150,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\phi/c$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ\phi}{\hbar c}$. The three spatial components keep their imaginary unit, because $A_k$ is real.</p>
+<p>The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\,a'_t$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ a'_t}{\hbar}$. The three spatial components keep their imaginary unit, because $A_k$ is real.</p>
 <h2 id="the-covariant-derivative-as-a-derivation">The Covariant Derivative as a Derivation</h2>
 <p>The properties collected here are the ones that make $\tilde\nabla^{\mathrm{gco}}$ a covariant derivative rather than an arbitrary first-order operator. They are stated for the abelian case.</p>
 <p><strong>1. Linearity over constants.</strong> For a central constant $\alpha$,</p>
@@ -229,7 +229,7 @@ $$</p>
 \qquad
 d\vec x = \vec e_x\,dx + \vec e_y\,dy + \vec e_z\,dz ,
 $$</p>
-<p>which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\phi/c$ giving $-\phi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
+<p>which is real. The time term is real because its two imaginary units cancel, $d(ict') = ic\,dt'$ and $A_t = i\,a'_t$ giving $-\phi\,dt'$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
 <h2 id="the-curvature-as-the-commutator-of-covariant-derivatives">The Curvature as the Commutator of Covariant Derivatives</h2>
 <p>The curvature is the part of the covariant derivative that survives antisymmetrization. In the abelian case the connection coefficients commute, and the general commutator formula collapses to the curl:</p>
 <p>$$
@@ -411,7 +411,7 @@ $$</p>
 <td>Laplacian in the three vector coordinates</td>
 </tr>
 <tr>
-<td>$\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_t + \vec A$</td>
+<td>$\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$</td>
 <td>Connection / potential biquaternion, in $\mathbb{M}_-$</td>
 </tr>
 <tr>

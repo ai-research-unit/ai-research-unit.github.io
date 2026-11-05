@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draft: Introduction to the Biquaternion Universe, in the Position-Letter Scheme — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="draft-introduction-to-the-biquaternion-universe-in-the-position-letter-scheme"><strong>Draft: Introduction to the Biquaternion Universe, in the Position-Letter Scheme</strong></h1>
+<p><em>This is a draft for review, not a published article. It is the article <a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a> rewritten in the notation of §</em>The Project Migration* of the inventory <a href="the-hermitian-element-and-the-letter-h-an-inventory-of-the-glyph.html">The Hermitian Element and the Letter $h$</a>. No file of <code>articles_physics</code> has been edited to produce it: the draft exists so that the scheme can be read as a page and judged before anything is migrated. The change table at the end lists every passage that moved, and the last section lists the three points the draft forces.*</p>
+<h2 id="core-proposal">Core Proposal</h2>
+<p>The fundamental structure of the universe is a biquaternionic space, of which Minkowski space is a slice. A point in this complexified spacetime is an element of the <strong>biquaternion algebra</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate</p>
+<p>$$ \tilde R = R_t e_t + R_x \vec e_x + R_y \vec e_y + R_z \vec e_z, $$</p>
+<p>where $e_t = 1$ and $\vec e_x, \vec e_y, \vec e_z$ are the quaternion units. The four coefficients $R_\mu$ are <strong>complex</strong>, and everything that follows turns on how each of them is split. Writing every coefficient as a real part plus $i$ times a real part,</p>
+<p>$$ R_t = c\,(r_t + i r'_{t}), \qquad R_x = r_x + i r'_{x}, \qquad R_y = r_y + i r'_{y}, \qquad R_z = r_z + i r'_{z}, \qquad r_\mu, r'_{\mu} \in \mathbb{R}, $$</p>
+<p>replaces the four complex coefficients by <strong>eight real parameters</strong>: $r_\mu$ is the real part of $R_\mu$, the coefficient of $e_\mu$, and $r'_{\mu}$ its imaginary part, the coefficient of $ie_\mu$. The prime therefore marks the parameter that carries the $i$, and it stays <strong>on the parameter letter</strong>, where the conventions already put it: $Q_t=q_t+iq'_t$ becomes $R_t=c\,(r_t+i r'_{t})$. The slot moves into the subscript and the prime does not move at all, so the rewritten coefficient is one letter and one accent, read in the same order as before. The forms $r_t'$ and $r_{t'}$ are not used: the first detaches the prime from the letter and drops it after the subscript, the second moves the prime onto the slot, and both say that the prime qualifies the slot instead of the parameter. The factor $c$ stands on the time coefficient alone, and on both of its halves, because $r_t$ and $r'_{t}$ are times and a time multiplied by a speed is a length, which is what the other three coefficients already are. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits naturally into two four-dimensional real subspaces — one taking $r'_{t}$ together with $r_x, r_y, r_z$, the other taking $r_t$ together with $r'_{x}, r'_{y}, r'_{z}$. The complex structure — the identification of which direction is "real" and which is "imaginary" — is <strong>local</strong>, determined by the electromagnetic properties of the medium at each point.</p>
+<p>The hypothesis of this article is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum physics is evidence for the proposal.</p>
+<p><strong>One letter for the point, one for the mathematics.</strong> $\tilde R$ names a point of the space and never anything else, so the uppercase $R$ of the coordinate and the lowercase $r$ of its two halves are one object read at two depths. The generic biquaternion of the mathematics keeps its own letter, $\tilde Q$, unread by this article. Where the article means an energy that generates a flow, it writes $H$.</p>
+<h2 id="two-sectors-material-and-informational">Two Sectors: Material and Informational</h2>
+<p>The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces:</p>
+<p>$$ \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+. $$</p>
+<p>The subspace $\mathbb{M}_-$ is the <strong>anti-Hermitian subspace</strong>, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{M}_+$ is the <strong>Hermitian subspace</strong>, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde R=\tilde R_\psi+\tilde R_\varphi$, into its <strong>informational part</strong> $\tilde R_\psi\in\mathbb{M}_+$ and its <strong>material part</strong> $\tilde R_\varphi\in\mathbb{M}_-$; an element of $\mathbb{M}_+$ is its own informational part, and an element of $\mathbb{M}_-$ its own material part. The two subscripts are defined by the operation and named by the role: $\tilde R_\psi=\tfrac12(\tilde R+\tilde R^{*})$ is the $+1$ eigenspace of ${}^{*}$ and carries the informational content, $\tilde R_\varphi=\tfrac12(\tilde R-\tilde R^{*})$ is the $-1$ eigenspace and carries the material content. The letters were chosen so that the subscript says what the half is <em>for</em>: $\varphi$ for the material, the physical, the thing that can be touched; $\psi$ for the informational, the register in which a state is written. Neither is a claim about the other, and the formulas remain the definition.</p>
+<p>The two subspaces have distinct physical roles:</p>
+<ul>
+<li><strong>$\mathbb{M}_-$ is the material sector.</strong> Its coordinates are <strong>$i c r'_{t}$</strong> (an imaginary temporal coordinate, $c$ being the speed of light per unit time, so the slot is a length) and <strong>$r_x, r_y, r_z$</strong> (three real spatial coordinates). It is the home of the four-vectors of relativistic physics. The imaginary time coordinate reflects a simple fact: time can be measured, but it cannot be touched, held, or moved through.</li>
+<li><strong>$\mathbb{M}_+$ is the informational sector.</strong> Its coordinates are <strong>$c r_t$</strong> (a real temporal coordinate) and <strong>$i r'_{x}, i r'_{y}, i r'_{z}$</strong> (three imaginary spatial coordinates). It is the home of the Hermitian operators, whose algebraic structure is that of a quantum-mechanical state space. The elements of $\mathbb{M}_+$ carry quantum-informational content, in the sense established in the companion article on quantum physics: they are the states, observables, and measurement operators of a qubit. The name "informational sector" reflects this content. It is not a claim about entropy or any other thermodynamic property of the sector.</li>
+</ul>
+<p>Written as elements of the algebra, each sector carries its own four real parameters, and in this scheme the parameter and the coordinate are the same writing:</p>
+<ul>
+<li>
+<p><strong>$\mathbb{M}_-$</strong>, the material sector, corresponding to the anti-Hermitian subspace:</p>
+<p>$$ \tilde R_\varphi = i c r'_{t}\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z \in \mathbb{M}_- $$</p>
+</li>
+<li>
+<p><strong>$\mathbb{M}_+$</strong>, the informational sector, corresponding to the Hermitian subspace:</p>
+<p>$$ \tilde R_\psi = c r_t\,e_t + i r'_{x}\vec e_x + i r'_{y}\vec e_y + i r'_{z}\vec e_z \in \mathbb{M}_+ $$</p>
+</li>
+</ul>
+<p>Where the prime falls is what distinguishes the sectors: in $\mathbb{M}_-$ it is the <strong>scalar</strong> $r'_{t}$ (the time), in $\mathbb{M}_+$ the <strong>three vectors</strong> $r'_{k}$ (the space). This is why the prime is not attached to a sector — $r'_{t}$ is a material parameter, $r'_{k}$ an informational one — and it is the one rule that makes the two sectors mirror images of each other. The complex structure is then visible as a count: the material sector has three real spatial directions and one imaginary temporal direction, the informational sector three imaginary spatial directions and one real temporal direction.</p>
+<p><strong>The dictionary is gone.</strong> The earlier writing of this article carried two alphabets per sector, a parameter $q$ and a coordinate $x$, and a paragraph that mapped them. There is one alphabet now: $r$ with a subscript naming the slot, and $c$ where a time is turned into a length. The paragraph of the conventions that mapped the two alphabets is deleted, not rewritten. That deletion is the clearest measure of what the scheme buys.</p>
+<h2 id="the-complex-coordinates">The Complex Coordinates</h2>
+<p>Writing the biquaternion coordinate in terms of its material and informational parts,</p>
+<p>$$ \tilde R = \underbrace{i c r'_{t}\,e_t + (r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z)}_{=\,\tilde R_\varphi\,\in\,\mathbb{M}_-} \;+\; \underbrace{c r_t\,e_t + i(r'_{x}\,\vec e_x + r'_{y}\,\vec e_y + r'_{z}\,\vec e_z)}_{=\,\tilde R_\psi\,\in\,\mathbb{M}_+}, $$</p>
+<p>the four coefficients are the four slots of one point, and the two halves are visible in the one display.</p>
+<p><strong>Three guises become two.</strong> The earlier writing displayed the same decomposition three times — as the complex coefficient $Q_\mu$, as its real and imaginary parameters $q_\mu, q'_\mu$, and as the physical coordinates $(ct, x, y, z)$ and $(ict', x, y, z)$ those parameters carried — and a paragraph then matched the last two to each other. In the position letter the second and the third are one symbol: $r_\mu$ is the parameter and it is the coordinate, and the only conversion left in the whole scheme is the factor $c$ in the time slot. That is why the inventory's change table deletes the dictionary paragraph rather than rewriting it.</p>
+<p><strong>The real parameters</strong> $(r'_{t}, r_x, r_y, r_z)$ describe the material sector, and the <strong>real parameters</strong> $(r_t, r'_{x}, r'_{y}, r'_{z})$ describe the informational sector. Each sector is four-dimensional, and the full complexified spacetime is the direct sum of the two.</p>
+<p><strong>One element, one point, one label.</strong> The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and its informational part $\tilde R_\psi$ supplies the four parameters of its <strong>internal label</strong>; read on its informational part, it is an event of the informational sector, $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and its material part $\tilde R_\varphi$ supplies the four parameters of its <strong>spacetime label</strong>. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.</p>
+<h3 id="the-vacuum-limit">The Vacuum Limit</h3>
+<p>In vacuum, $c = c_0$, and the material time coordinate becomes $i c_0 r'_{t}$ — the familiar $ict'$ form with the vacuum speed of light. The $ict'$ convention is therefore the vacuum limit of the more general local structure. In a material medium, the complex structure uses $c$, the local speed of light, and varies from point to point. This makes the complex structure <strong>local</strong>, in the same spirit as the metric in general relativity.</p>
+<h2 id="the-metric">The Metric</h2>
+<p>The natural quadratic form on the biquaternion algebra is the <strong>biquaternion norm</strong></p>
+<p>$$ \langle d\tilde R\rangle_{\natural} = d\tilde R \circ d\tilde R^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dR_\mu)^2, $$</p>
+<p>where $\circ$ is the biquaternion product and ${}^{\natural}$ is the <strong>quaternion conjugate</strong>, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_k^{\natural}=-\vec e_k$, hence $d\tilde R^{\natural} = dR_t\,e_t - dR_x\,\vec e_x - dR_y\,\vec e_y - dR_z\,\vec e_z$. A second conjugation appears later in the article, the <strong>bar</strong>, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde R} = \sum_\mu \overline{R_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the product $d\tilde R \circ d\tilde R$ of $d\tilde R$ with itself is not $\sum_\mu (dR_\mu)^2$.</p>
+<p>The coefficients being complex, each square splits,</p>
+<p>$$ (dR_t)^2 = c^2\bigl((dr_t)^2 - (dr'_{t})^2 + 2i\,dr_t\,dr'_{t}\bigr), \qquad (dR_k)^2 = (dr_k)^2 - (dr'_{k})^2 + 2i\,dr_k\,dr'_{k}, $$</p>
+<p>so the factor $c^2$ rides on the time slot alone, exactly as it does in the point.</p>
+<p>The <strong>real part</strong> of $\langle d\tilde R\rangle_{\natural}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i c r'_{t}$, not from an independently postulated metric signature. The <strong>imaginary part</strong> couples the material and informational sectors through cross terms.</p>
+<p>Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is worth having both writings. On the material part, where $d\tilde R=d\tilde R_\varphi$ and only $dr'_{t}$ and the $dr_k$ are non-zero,</p>
+<p>$$ \boxed{\;\langle d\tilde R_\varphi\rangle_{\natural} = -c^2(dr'_{t})^2 + (dr_x)^2 + (dr_y)^2 + (dr_z)^2\;} $$</p>
+<p>the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\psi$ and only $dr_t$ and the $dr'_{k}$ are non-zero,</p>
+<p>$$ \boxed{\;\langle d\tilde R_\psi\rangle_{\natural} = c^2(dr_t)^2 - (dr'_{x})^2 - (dr'_{y})^2 - (dr'_{z})^2\;} $$</p>
+<p>the mirror interval of signature $(1,3)$. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde R\rangle_{\natural} = -\langle\tilde R\rangle_{\natural}$. In both cases the null cone — the zero divisor set, discussed in the companion articles — has the same two interpretations:</p>
+<p>$$ \mathbb{M}_-:\;\; c^2(dr'_{t})^2 = (dr_x)^2 + (dr_y)^2 + (dr_z)^2, \qquad \mathbb{M}_+:\;\; c^2(dr_t)^2 = (dr'_{x})^2 + (dr'_{y})^2 + (dr'_{z})^2 . $$</p>
+<p>Each is one equation, and the factor $c^2$ is on the time term in both: that is the whole content of the signature, read off the letter rather than imposed on it.</p>
+<p><strong>Where the minus comes from.</strong> Read as a form on $\mathbb{C}$, the same norm is the identity, $\langle\tilde R\rangle_{\natural}=\sum_\mu R_\mu^2$, with every entry positive and the four directions of $\mathbb{B}$ on an equal footing: there is no minus sign in the complex form itself, and none is needed, since a complex coefficient can carry the sign. The minus appears only when a <em>real</em> coordinate is placed on a direction whose coefficient carries a factor of $i$, as it is in each of the two real sectors above. The Minkowski signature is therefore not an independent input of the theory: it is what the algebra's own form looks like once the material time is written $i c r'_{t}$, with $i^2=-1$ supplying the minus. The norm as a complex form, and the four forms it takes, are treated in <em>Algebra and Element Conventions</em>; the local complex structure behind the choice of $i$ is <em>The Local Complex Structure and the Speed of Light</em>.</p>
+<p><strong>One root, three names.</strong> The minus of the metric is one case of a single algebraic fact: the equation $\tilde R^{2}=\lambda e_t$ in the plain product has three distinguished radicands: a root of $-1$ is a complex structure, a root of $0$ a nilpotent of the light cone, and a root of $+1$ an involution. The central root $i$ is the scalar imaginary that writes $i c r'_{t}$; a non-central root is an internal complex structure of the real space, not a change of the algebra's scalars. The three answers are one equation, and the subspace in which the root is sought decides the physical name. Read on the elements, the same observation gives the massive, the massless and the spacelike as the interior, the boundary and the exterior of one quadric. The trichotomy is <em>Roots, Idempotents and Observables</em> and <em>The Zero-Divisor Cone and the Massless Spectrum</em>; the boundary is <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>; and the mass shell is <em>The Physical Interpretation of the 12 Products</em>.</p>
+<h3 id="the-two-forms-of-one-element">The Two Forms of One Element</h3>
+<p>The body has so far developed one form, the biquaternion norm $\langle\cdot\rangle_{\natural}$. The second is the <strong>Hermitian form</strong> on $\mathbb{M}_+$, $\langle\tilde R_1,\tilde R_2\rangle_{*}=\sum_\mu R_{1\mu}\overline{R_{2\mu}}$, the sum of the four coordinates of one element against the conjugates of the other — the bar, the coefficient conjugation, and not the quaternion conjugate ${}^{\natural}$ of the norm. The two forms are two interpretations of one element, and they part company at once: the norm is complex and vanishes on the null cone, the Hermitian form is positive and vanishes only at the origin. At $\tilde R=e_t+i\vec e_z$ the two already differ: the norm is $\langle\tilde R\rangle_{\natural}=0$, while the Hermitian form is $\langle\tilde R,\tilde R\rangle_{*}=2$. The same element is a null direction for the interval and a state of positive weight. The norm is the <strong>interval</strong>, whose zero set is the light cone; the Hermitian form is the <strong>probability weight</strong>, the form the Born rule draws on. One element carries both, and the framework's account of why the causal and the probabilistic structures coexist is that they are two forms on one biquaternion space and not two algebras. The form read as a product, and the positivity and the rank it carries, are treated in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the probability reading is <em>The Informational Sector: States, Observables and Probability</em>.</p>
+<h2 id="what-the-framework-achieves">What the Framework Achieves</h2>
+<p>The main result of the framework so far is that the biquaternion algebra <strong>contains, as a matter of algebra, the structures required for both relativity and quantum physics</strong>. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same biquaternion space, appearing in its two complementary subspaces. Two further classifications are read from that algebra and developed elsewhere: the <strong>reality condition</strong> that fixes the type of a particle, and the split of the internal symmetry into a compact part carrying a discrete charge and a non-compact part carrying a continuous label. Both are treated in <em>The Physical Interpretation of the 12 Products</em>; the antilinear structure behind them is <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>.</p>
+<h3 id="relativity-in-math142">Relativity in $\mathbb{M}_-$</h3>
+<p>A point of the material sector is written, in the one alphabet, as</p>
+<p>$$ \tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-, $$</p>
+<p>the imaginary time $i c r'_{t}$ together with the three real spatial coordinates. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>proper orthochronous Lorentz group</strong> $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the <strong>group of biquaternions of unit norm</strong> in $\mathbb{B}$; its elements are the Lorentz rotors, written $\tilde U^{\mathrm{lor}}$:</p>
+<p>$$ \boxed{\;SL(2,\mathbb{C}) \;\cong\; \{\tilde U^{\mathrm{lor}} \in \mathbb{B} : \tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t\}\;}. $$</p>
+<p>This group <strong>acts</strong> on the material sector by the <strong>rotor conjugation</strong></p>
+<p>$$ \tilde R_\varphi \;\longmapsto\; \tilde U^{\mathrm{lor}}\,\tilde R_\varphi\,\tilde U^{\mathrm{lor}}{}^{*}. $$</p>
+<p>The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.</p>
+<p>The relativistic wave equations — <strong>Maxwell's equations</strong> and the <strong>Dirac equation</strong> — have natural biquaternion forms, as developed in the companion articles.</p>
+<h3 id="quantum-physics-in-math157">Quantum Physics in $\mathbb{M}_+$</h3>
+<p>A point of the informational sector is written, in the same alphabet, as</p>
+<p>$$ \tilde R_\psi = c r_t\,e_t + i r'_{x}\,\vec e_x + i r'_{y}\,\vec e_y + i r'_{z}\,\vec e_z \in \mathbb{M}_+, $$</p>
+<p>the real time $c r_t$ together with the three imaginary spatial coordinates. The informational sector $\mathbb{M}_+$ is, exactly, the <strong>Hermitian part</strong> of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
+<ul>
+<li>The <strong>elements</strong> of $\mathbb{M}_+$, of the form $\tilde R_\psi = c r_t\, e_t + i\vec r_\psi$ with $\vec r_\psi=(r'_{x},r'_{y},r'_{z})$, are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents. Read as an energy rather than as a position, the same element is written $H = h_t e_t + i\vec h$, and the two letters are related by $h_t = c\,r_t$ and $\vec h = \vec r_\psi$. That is the whole of the surviving dictionary, and it applies to the reading and not to the object.</li>
+<li>The <strong>idempotents</strong> in $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
+<li>The <strong>positive elements</strong> in $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, of the form $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, are the mixed states (trace one in the $2\times2$ image), parametrizing the Bloch ball. The Bloch vector $\vec r$ is not a position: it is a vector of $\mathbb{R}^3$ attached to a state, and it never carries a slot subscript. That is the one place where the letter $r$ is printed bare, and the conventions state that a bare $r$ inside a state is a Bloch vector while a bare $r$ nowhere else is a length.</li>
+<li>The <strong>normalised Hermitian form</strong> $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\psi$ gives the Born rule, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ}) = c r_t + \vec r\cdot\vec r_\psi$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real; it is a consequence of the algebra rather than an independent postulate.</li>
+<li>The <strong>sandwich operation</strong> $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi/\langle\tilde\Pi\tilde{Ϛ}\tilde\Pi,e_t\rangle_{*}$ gives the projective measurement and state update (the denominator normalises the post-measurement state; its $2\times2$ reading is $\mathrm{Tr}(\tilde\Pi\tilde{Ϛ}\tilde\Pi)$).</li>
+<li>The <strong>$*$-unitary elements</strong> of $\mathbb{B}$, and their conjugation action $\tilde{Ϛ} \mapsto \tilde R\tilde{Ϛ}\tilde R^{*}$, give the reversible evolution.</li>
+<li>The distinction between <strong>reversible evolution</strong> and <strong>irreversible measurement</strong> is a property of the acting element ($*$-unitary vs. idempotent), not an additional postulate.</li>
+</ul>
+<p>The operator algebra of quantum physics, its state space, its Born rule, and its measurement rule are all <strong>structural consequences</strong> of the algebra of $\mathbb{M}_+$. They are not imposed from outside. The two-state formalism at large is <em>Quantum Physics in Biquaternionic Form</em>; the derivation of the Born rule, and its comparison with the postulate it replaces, are <em>The Born Rule from the Hermitian Form — Derivation and Comparison</em>; the states that the indefinite fourth product cannot normalise are <em>The Physical Interpretation of the 12 Products</em>; and the decoherence of a measurement is <em>Decoherence as Idempotent Projection</em>.</p>
+<h3 id="the-shared-home">The Shared Home</h3>
+<p>The most significant feature of the framework is that <strong>relativity and quantum physics share the same biquaternion space</strong>. The Lorentz group is realized (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm in $\mathbb{B}$, and the operator algebra of quantum physics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same biquaternion space. Under the position letter this is a single sentence: the two theories are two halves of one point, $\tilde R = \tilde R_\psi + \tilde R_\varphi$, and the sum is the shared home.</p>
+<p>This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum physics, but as a <strong>common biquaternion space</strong> on which both can be expressed.</p>
+<h3 id="the-two-slots-of-one-product">The Two Slots of One Product</h3>
+<p>Every product of the algebra reads two elements, one in each <strong>slot</strong>, and in the framework's two sesquilinear products the slots are not interchangeable: one is read plainly and the other through a conjugation. That asymmetry is the algebraic form of the two roles a quantum description pairs — an element and the adjoint of another — and it is the reason the Born weight above can be read as the scalar part of a product on the algebra rather than as a pairing imposed from outside. The four products, the two slots and their four interpretations are treated in <em>The Four General Products: Composition, Probability, Causality, Gauge</em>; the state and observable roles, the gauge action generated inside the algebra, and the chirality of that action are treated in <em>The Physical Interpretation of the 12 Products</em>.</p>
+<p><strong>Four jobs, one grid.</strong> The four products are read as the four jobs a relativistic quantum theory needs — composition, causality, probability and gauge — and each splits into a symmetric half and an antisymmetric half, so that the twelve products of the space are the four general products together with the two halves of each. What the algebra fixes is the grid and the signs; that these are the four jobs, and that the interpretation is exhaustive, is the framework's claim. The jobs are tabulated in <em>The Four General Products: Composition, Probability, Causality, Gauge</em>.</p>
+<p><strong>The reading order.</strong> The corpus is organised in four blocks. <strong>Algebra</strong> fixes the vocabulary: the elements, the twelve products, the four forms and the four norms. <strong>Topology</strong> reads the unit group, the cone and the orders. <strong>Analysis</strong> reads the exponential, the logarithm and the poles. <strong>Geometry</strong> reads the sectors, the frames, the bundles and the null quadric. The physical articles follow the same order: the algebra first, then the material and informational sectors, then the processes and the spectra. A reader who wants one path through the series can take the algebra block, then <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and <em>The Informational Sector: States, Observables and Probability</em>, then the analysis of the exponential, and then the spectral articles.</p>
+<h2 id="status-and-open-questions">Status and Open Questions</h2>
+<p>The framework is a <strong>research program</strong>, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum physics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.</p>
+<p>What is not established is whether the framework has consequences beyond a reformulation of known physics. The key open questions are:</p>
+<ol>
+<li>
+<p><strong>Physical reality of the biquaternionic structure.</strong> Is the biquaternion algebra merely a convenient reformulation of known physics, or does the structure of the universe genuinely follow the algebra? A structural hypothesis of this kind can only be evaluated by the richness of the consequences it produces.</p>
+</li>
+<li>
+<p><strong>Coupling between the two sectors.</strong> Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$? Any such coupling would be where new physical content could reside. One minimal instance is already algebraic and not imposed: the <strong>square</strong>. For a material element the quaternionic square is the interval, $\tilde R_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{M}_+$, so squaring is a map $\mathbb{M}_-\to\mathbb{M}_+$ supplied by the product itself — the interpretation carried by <em>The Physical Interpretation of the 12 Products</em>. What remains open is a coupling with a dynamics; the square is a map, not an evolution.</p>
+</li>
+<li>
+<p><strong>Extension to many qubits and to quantum field theory.</strong> The quantum formalism presented in the companion article is for a single qubit. The extension to $n$ qubits (via the tensor product $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$), the second-quantized version, and the connection to quantum field theory remain to be developed.</p>
+</li>
+<li>
+<p><strong>Relativistic quantum theory.</strong> The biquaternion algebra contains both the Lorentz group and the operator algebra of quantum physics. A fully relativistic quantum theory of spinor fields — whose classical precursor is the biquaternion Dirac equation — is the natural continuation of the framework.</p>
+</li>
+<li>
+<p><strong>Curved spacetime.</strong> The framework so far is formulated on flat spacetime. Its extension to curved spacetime, and its relation to general relativity, remain open.</p>
+</li>
+<li>
+<p><strong>Empirical contact.</strong> What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend.</p>
+</li>
+</ol>
+<p>The framework is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the algebra $\mathbb{B}$ is the natural home in which both relativity and quantum physics are expressed. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict'$ convention a vacuum approximation of a more general local structure, in the same way that special relativity is a local approximation of general relativity.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>Two interpretations of the introduction are worth separating. Read as a statement about invariance, the universe of the article is the sesquilinear pair: a change of the local complex structure moves the interval and the composition and leaves the probability form, the gauge calibration and the zero-divisor cone where they were (<em>Algebra and Element Conventions</em>). Read in time, its two sectors are two clocks reading one hand: the material time and the informational time are the two projections of one central coordinate, so each sector's time is read against the phase of the other (<em>Each Sector Is the Other's Clock: the Sector Exchange as Relational Time</em>). Four further readings can be named.</p>
+<ul>
+<li><strong>Amplitude interpretation.</strong> Each complex coefficient is one complex number, that is, a magnitude and a phase, so the arena of the framework is complex before any quantum interpretation is imposed: the two sectors are read as the real and the imaginary halves of one amplitude, and an element is a point of the complexified spacetime together with its conjugate amplitude data. Boundary: the interpretation names the shape of the coefficient and supplies neither a quantisation nor a measurement rule.</li>
+<li><strong>State-preparation interpretation.</strong> The central map $\tilde R_\psi=-\tfrac{i}{2}\tilde R_\varphi$ carries a material four-vector to an informational element, and on the trace-one slice of the future cone to a state: the four-vector $i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is carried to $\tfrac12(c r'_{t}\,e_t-i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with $\mathrm{Tr}(\tilde R_\psi)=c r'_{t}$ and $\langle\tilde R_\psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\varphi\rangle_{\natural}$, so at $c r'_{t}=1$ it is the Hermitian state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $|\vec r|\le1$. Boundary: the map is the mirror dictionary of <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, which owns it, and the interpretation names a preparation and not a dynamics.</li>
+<li><strong>Cross-sector coupling by the square.</strong> For a material element the quaternionic square is the interval itself, $\tilde R_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{M}_+$: squaring is therefore one algebraic map $\mathbb{M}_-\to\mathbb{M}_+$, the minimal instance of the coupling asked for in question 2 above, supplied by the product rather than added by hand. The product of <em>two</em> material elements is not in general informational, while the <em>square of one</em> is. Boundary: one map, with image the real scalar line, and no dynamics; the identity is owned by <em>The Physical Interpretation of the 12 Products</em>, and its grid-level pointer is <em>The Four General Products: Composition, Probability, Causality, Gauge</em>.</li>
+<li><strong>One locus, two lists.</strong> The norm's zero set $\langle\tilde R\rangle_{\natural}=0$ is the light cone of the material sector and it is also the locus on which the pure states of the informational sector sit: the idempotents $\tilde\Pi=\tfrac12(e_t\pm i\vec u)$ have $\langle\tilde\Pi\rangle_{\natural}=0$. The causal boundary and the list of pure states are one algebraic locus read twice, the zero-divisor cone. Boundary: the interpretation identifies sets, and it does not make every null element a pure state, the null cone being strictly larger than the set of idempotents; the state side is <em>The Physical Interpretation of the 12 Products</em>, and the cone itself <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(i c r'_{t}, r_x, r_y, r_z)$; the <strong>Hermitian subspace</strong> $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(c r_t, i r'_{x}, i r'_{y}, i r'_{z})$. Multiplication by $i$ exchanges the two.</p>
+<p>Both sectors are written in the one biquaternion space, and in one alphabet. A material element is $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and an informational element is $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$; the two are the parts of one point, $\tilde R=\tilde R_\psi+\tilde R_\varphi$, and the norm $\langle\tilde R\rangle_{\natural}=\sum_\mu R_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form $\langle\tilde R_1,\tilde R_2\rangle_{*}=\sum_\mu R_{1\mu}\overline{R_{2\mu}}$ is the probability weight on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde U^{\mathrm{lor}}$ with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian half of a point, $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$, written $H=h_t e_t+i\vec h$ when the reading is an energy.</p>
+<p>The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation, of which the square $\mathbb{M}_-\to\mathbb{M}_+$ is the minimal algebraic instance already supplied by the product; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict'$ convention the vacuum approximation of a more general local structure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\tilde Q = \sum_\mu Q_\mu e_\mu$</td>
+<td>Generic biquaternion: the mathematics letter, with no physical reading</td>
+</tr>
+<tr>
+<td>$\tilde R$</td>
+<td>A point of the biquaternion space, in the position letter; $R_\mu$ its complex coefficient</td>
+</tr>
+<tr>
+<td>$r_\mu$</td>
+<td>Real part of the coefficient in the slot $\mu$: the coordinate of that slot</td>
+</tr>
+<tr>
+<td>$r'_{\mu}$</td>
+<td>Imaginary part of the same coefficient, the primed coordinate of the slot; the prime sits on the parameter letter, the slot in the subscript</td>
+</tr>
+<tr>
+<td>the prime, placement</td>
+<td>$r'_{t}$, never $r_t'$ and never $r_{t'}$: the prime qualifies the parameter, and the parameter is the coefficient letter</td>
+</tr>
+<tr>
+<td>$R_t = c\,(r_t + i r'_{t})$</td>
+<td>The time coefficient: $c$ makes it a length, $r_t$ and $r'_{t}$ being times. The three siblings carry no $c$: $R_x = r_x + i r'_{x}$</td>
+</tr>
+<tr>
+<td>$(r_x + i r'_{x})\,\vec e_x$ and the two siblings</td>
+<td>The three space slots: no factor, both parts already lengths</td>
+</tr>
+<tr>
+<td>$\tilde R_\psi = c r_t e_t + i\vec r_\psi$</td>
+<td>Informational half, the Hermitian part, in $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$\tilde R_\varphi = i c r'_{t} e_t + \vec r_\varphi$</td>
+<td>Material half, the anti-Hermitian part, in $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\vec r_\psi = (r'_{x}, r'_{y}, r'_{z})$</td>
+<td>The informational space vector</td>
+</tr>
+<tr>
+<td>$\vec r_\varphi = (r_x, r_y, r_z)$</td>
+<td>The material space vector</td>
+</tr>
+<tr>
+<td>$\tilde R = \tilde R_\psi + \tilde R_\varphi$</td>
+<td>One point, two halves; the split is $\tfrac12(\tilde R\pm\tilde R^{*})$</td>
+</tr>
+<tr>
+<td>$\langle\tilde R\rangle_{\natural} = \tilde R\tilde R^{\natural} = \sum_\mu R_\mu^2$</td>
+<td>Biquaternion norm; the identity matrix as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the material half</td>
+</tr>
+<tr>
+<td>$\langle\tilde R_1,\tilde R_2\rangle_{*} = \sum_\mu R_{1\mu}\overline{R_{2\mu}}$</td>
+<td>Hermitian form, positive definite; the probability weight</td>
+</tr>
+<tr>
+<td>${}^{\natural}$</td>
+<td>Quaternion conjugate: reverses the quaternion basis, leaves the complex coefficients untouched</td>
+</tr>
+<tr>
+<td>$\overline{\cdot}$</td>
+<td>Bar, the coefficient conjugation: conjugates each coefficient, leaves the basis untouched</td>
+</tr>
+<tr>
+<td>${}^{*} = \overline{\cdot}\circ{}^{\natural}$</td>
+<td>Hermitian conjugation, fixed-point set $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>${}^{\flat} = -{}^{*}$</td>
+<td>Anti-Hermitian conjugation, fixed-point set $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Material sector, coordinates $(i c r'_{t}, r_x, r_y, r_z)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Informational sector, coordinates $(c r_t, i r'_{x}, i r'_{y}, i r'_{z})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real and antiquaternion halves; they cross the sector split</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
+<td>Idempotent, a pure state of the informational sector</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $\lvert\vec r\rvert\le 1$</td>
+<td>A state; $\vec r$ the Bloch vector, the one bare $r$ of the corpus</td>
+</tr>
+<tr>
+<td>$H = h_t e_t + i\vec h$</td>
+<td>The operator letter: the same element read as an energy, with $h_t = c r_t$ and $\vec h = \vec r_\psi$</td>
+</tr>
+<tr>
+<td>$\tilde U^{\mathrm{lor}}$, unit norm</td>
+<td>Lorentz rotor</td>
+</tr>
+<tr>
+<td>$c = 1/\sqrt{\epsilon\mu}$, $c_0$</td>
+<td>Speed of light, local and vacuum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hermann Minkowski, "Space and Time" (1908), reprinted in <em>The Principle of Relativity</em> (Dover).</li>
+<li>Roger Penrose, <em>The Road to Reality</em> (Knopf, 2004), for the complex structure of spacetime.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection between Clifford algebras and the structures discussed here.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric algebra perspective on the same structures.</li>
+<li>Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a related biquaternionic approach to complexified geometry.</li>
+</ul>
+<h2 id="what-moved">What Moved</h2>
+<p>The table records every passage of the published article that the draft rewrites. The rest of the article is carried word for word, with only the letters substituted: $\tilde Q_{\mathrm H}$ and $\tilde H$ become $\tilde R_\psi$, $\tilde Q_{\mathrm A}$ and $\tilde R$ become $\tilde R_\varphi$, and the generic $\tilde Q$ keeps its name.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>passage</th>
+<th>published article</th>
+<th>draft</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the opening</td>
+<td>$\tilde Q = Q_t e_t + Q_x\vec e_x+\dots$, four complex coefficients $Q_\mu$</td>
+<td>$\tilde R = R_t e_t+R_x\vec e_x+\dots$, four complex coefficients $R_\mu$</td>
+</tr>
+<tr>
+<td>the eight parameters</td>
+<td>$Q_\mu = q_\mu + i q'_\mu$</td>
+<td>$R_\mu$ keeps its uppercase, and its halves are $r_\mu$ and $r'_{\mu}$</td>
+</tr>
+<tr>
+<td>the dictionary</td>
+<td>$q_t = ct$, $q'_t = ct'$, $q_k = x_k$, $q'_k = x'_k$, a paragraph mapping two alphabets</td>
+<td>deleted; $c$ sits on the time slot and nothing is mapped</td>
+</tr>
+<tr>
+<td>the material element</td>
+<td>$\tilde Q_{\mathrm A} = \tilde R = iq'_te_t+q_x\vec e_x+\dots$</td>
+<td>$\tilde R_\varphi = i c r'_{t}e_t+r_x\vec e_x+\dots$</td>
+</tr>
+<tr>
+<td>the informational element</td>
+<td>$\tilde Q_{\mathrm H} = q_te_t+iq'_x\vec e_x+\dots$</td>
+<td>$\tilde R_\psi = c r_te_t+i r'_{x}\vec e_x+\dots$</td>
+</tr>
+<tr>
+<td>the metric</td>
+<td>$\langle d\tilde Q\rangle_{\natural}$ and two boxed intervals in $q$</td>
+<td>$\langle d\tilde R\rangle_{\natural}$ and the same two intervals in $r$, with $c^2$ on the time term</td>
+</tr>
+<tr>
+<td>the observables</td>
+<td>$\tilde Q_{\mathrm H}=\tilde H=h_te_t+i\vec h$, "the usual writing of quantum physics"</td>
+<td>$\tilde R_\psi=c r_te_t+i\vec r_\psi$, with $H=h_te_t+i\vec h$ kept for the energy reading and $h_t=c r_t$, $\vec h=\vec r_\psi$</td>
+</tr>
+<tr>
+<td>the Born rule</td>
+<td>$h_t + \vec r\cdot\vec h$</td>
+<td>$c r_t + \vec r\cdot\vec r_\psi$, the same quantity</td>
+</tr>
+<tr>
+<td>the summary</td>
+<td>elements in $q$, both writings</td>
+<td>elements in $r$, one writing</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the draft does not change.</strong> Every number, every link, every section heading and every claim. The eight coordinates are the same eight; only their letters move.</p>
+<h2 id="three-points-the-draft-forces">Three Points the Draft Forces</h2>
+<p><strong>1. Whether $c$ belongs in the point at all.</strong> The draft puts $c$ inside $R_t$ and nowhere else, so $r_t$ is a time and $r_x$ is a length. The alternative is $r_t = ct$, a length in every slot, and no $c$ anywhere in the algebra; the cost is that $r_t$ is then the coordinate of physics and not the time that a clock reads. The inventory's §<em>The Project Migration</em> takes the first, because it keeps the letter equal to the reading. This is the decision that the draft makes visible, and it is the one to settle first.</p>
+<p><strong>2. The bare $r$ inside a state.</strong> $\vec r$ is the Bloch vector in 117 files, 1575 occurrences, and the material space vector in 8 files, 133 occurrences, where it becomes $\vec r_\varphi$. Under the draft it stays a Bloch vector, and a bare $r$ outside a state is a length. That is two rules for one bare letter, which the earlier plan avoided by writing the radius $\rho$. The draft keeps $\vec r$ and states the rule in one sentence; if that sentence is not enough, the radius moves to $\rho$, which is written 87 times in 4 files, and the cost is that $\tilde\varrho$ changes too.</p>
+<p><strong>3. The operator reading.</strong> $H = h_te_t+i\vec h$ survives only as a reading, with $h_t=c r_t$. Either the corpus keeps $h_t$ for energies — and then the quantum articles carry a second alphabet after all — or it writes the energy as $c r_t$ and $H$ as the operator alone. The draft takes the first, because the quantum articles use $h_t$ in dimensions where $r$ would be wrong, and it records the second as the open point of §<em>One Open Point</em> of the inventory.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

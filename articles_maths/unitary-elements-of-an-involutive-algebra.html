@@ -85,15 +85,15 @@ $$</p>
 <h3 id="the-group">The Group</h3>
 <p><strong>Theorem.</strong> The unitary elements form a subgroup $\mathrm{U}(A) \leq A^\times$. Precisely, the map</p>
 <p>$$
-\theta : A^\times \longrightarrow A^\times, \qquad \theta(g) = (g^*)^{-1} = \sigma(g)^{-1},
+\mathrm{J} : A^\times \longrightarrow A^\times, \qquad \mathrm{J}(g) = (g^*)^{-1} = \sigma(g)^{-1},
 $$</p>
-<p>is an automorphism of the group of units with $\theta^2 = \mathrm{id}$, and</p>
+<p>is an automorphism of the group of units with $\mathrm{J}^2 = \mathrm{id}$, and</p>
 <p>$$
-\boxed{\;\mathrm{U}(A) = \{g \in A^\times : \theta(g) = g\}\;}
+\boxed{\;\mathrm{U}(A) = \{g \in A^\times : \mathrm{J}(g) = g\}\;}
 $$</p>
 <p>is its fixed subgroup.</p>
-<p><em>Proof.</em> The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\theta$ is an automorphism; $\theta^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\theta$ has order two. An element is fixed by $\theta$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $\mathrm{U}(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.</p>
-<p><strong>Corollary.</strong> $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\theta)$ in the sense of <em>Involutive Groups</em>, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\theta)$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\theta$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.</p>
+<p><em>Proof.</em> The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\mathrm{J}$ is an automorphism; $\mathrm{J}^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\mathrm{J}$ has order two. An element is fixed by $\mathrm{J}$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $\mathrm{U}(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.</p>
+<p><strong>Corollary.</strong> $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\mathrm{J})$ in the sense of <em>Involutive Groups</em>, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\mathrm{J})$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\mathrm{J}$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.</p>
 <h2 id="the-self-adjoint-elements-of-a-unitary">The Self-Adjoint Elements of a Unitary</h2>
 <p><strong>Proposition.</strong> Let $u$ be unitary. Then $u + u^*$ and $u u^*$ are self-adjoint, $u - u^*$ is skew, and</p>
 <p>$$
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="the-conjugate-transpose">The Conjugate Transpose</h3>
 <p>Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The unitary elements are the matrices with $X^*X = 1$, that is the unitary group $U_n$; the self-adjoint elements are the Hermitian matrices and the skew elements the skew-Hermitian ones. The conjugation $\varsigma$ of $\mathbb{C}$ is a semilinear involution of the scalars, the case of the second kind, and the form of the associated sesquilinear pairing belongs to <em>Hilbert Algebras</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the <strong>unitary elements</strong> are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\theta(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of <em>Involutive Groups</em>. The <strong>self-adjoint</strong> elements are the fixed elements $A^+ = H(A)$ and the <strong>skew</strong> elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is <em>Involutive Algebras</em>, the self-adjoint part is <em>The Self-Adjoint Part of an Algebra</em>, the skew part, its Lie algebra, the tangent space and the Cayley transform are <em>The Skew Part of an Algebra</em>, and the forms and the linear groups belong to <em>Hilbert Algebras</em> and to Part II.</p>
+<p>For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the <strong>unitary elements</strong> are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of <em>Involutive Groups</em>. The <strong>self-adjoint</strong> elements are the fixed elements $A^+ = H(A)$ and the <strong>skew</strong> elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and a skew part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is <em>Involutive Algebras</em>, the self-adjoint part is <em>The Self-Adjoint Part of an Algebra</em>, the skew part, its Lie algebra, the tangent space and the Cayley transform are <em>The Skew Part of an Algebra</em>, and the forms and the linear groups belong to <em>Hilbert Algebras</em> and to Part II.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -160,7 +160,7 @@ $$</p>
 <td>the unitary elements, $u^*u = uu^* = 1$</td>
 </tr>
 <tr>
-<td>$\theta(g) = (g^*)^{-1}$</td>
+<td>$\mathrm{J}(g) = (g^*)^{-1}$</td>
 <td>the order-two automorphism of $A^\times$</td>
 </tr>
 <tr>

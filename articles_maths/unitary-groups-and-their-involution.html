@@ -104,28 +104,28 @@ $$</p>
 <p>a maximal compact subgroup of $\mathrm{U}(V,h)$; maximal compact subgroups are conjugate.</p>
 <p><strong>Proof.</strong> Existence is the diagonalisation; transitivity is Witt's theorem, which extends an isometry of a subspace to an isometry of the whole form. The stabiliser of the decomposition preserves each of $V_{\pm}$, hence is a product of unitary groups of the definite parts, hence compact; it is maximal because any compact subgroup has a fixed vector in $V$ and iterating fixes a maximal positive subspace and a maximal negative one, so it can be conjugated into $K$. That all maximal compact subgroups are conjugate is the standard theorem for a real Lie group with finitely many components.</p>
 <h3 id="the-cartan-involution">The Cartan Involution</h3>
-<p><strong>Theorem (the involution).</strong> Let $K$ be the stabiliser of a definite decomposition. Then there is a unique involutive automorphism $\theta$ of $\mathrm{U}(V,h)$ with</p>
+<p><strong>Theorem (the involution).</strong> Let $K$ be the stabiliser of a definite decomposition. Then there is a unique involutive automorphism $\mathrm{J}$ of $\mathrm{U}(V,h)$ with</p>
 <p>$$
-\boxed{\;\mathrm{U}(V,h)^{\theta} = K, \qquad \theta(T) = T \text{ on } K, \qquad d\theta = -1 \text{ on } \mathfrak{n}\;},
+\boxed{\;\mathrm{U}(V,h)^{\mathrm{J}} = K, \qquad \mathrm{J}(T) = T \text{ on } K, \qquad d\mathrm{J} = -1 \text{ on } \mathfrak{n}\;},
 $$</p>
-<p>the <strong>Cartan involution</strong> of the pair; for the standard form it is $\theta(g) = JgJ^{-1}$. It is defined up to conjugacy, and two Cartan involutions are conjugate by an element of $\mathrm{U}(V,h)$, through the conjugacy of the maximal compact subgroups.</p>
+<p>the <strong>Cartan involution</strong> of the pair; for the standard form it is $\mathrm{J}(g) = JgJ^{-1}$. It is defined up to conjugacy, and two Cartan involutions are conjugate by an element of $\mathrm{U}(V,h)$, through the conjugacy of the maximal compact subgroups.</p>
 <p><strong>Proof.</strong> In the model, the conjugation by $J$ is the inner automorphism $g \mapsto JgJ^{-1}$, an involution because $J^2 = I$, with fixed subgroup the block-diagonal matrices $K = \mathrm{U}(n)\times \mathrm{U}(m)$ and differential $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$; a general form is conjugated to the model by the diagonalisation, and conjugating the involution by the change of basis gives an involution of $\mathrm{U}(V,h)$ with the same properties. Uniqueness up to conjugacy follows from the conjugacy of the maximal compact subgroups.</p>
 <p><strong>Remark.</strong> The involution is on the <strong>elements</strong> of the group, in the sense of the group <code>- * Theory</code>: it is an automorphism of order two, its fixed subgroup is the compact $K$, and its differential splits the Lie algebra into the $+1$-eigenspace $\mathfrak{k}$ and the $-1$-eigenspace $\mathfrak{n}$. It is the differential of the <strong>geodesic symmetry</strong> of the symmetric space at the base point, <em>Riemannian Symmetric Spaces and the Involution</em>. The <strong>adjoint</strong> of an operator on $V$ is a different involution, on the operators, and is not taken here.</p>
 <h3 id="the-fixed-subgroup-and-the-noncompactness">The Fixed Subgroup and the Noncompactness</h3>
 <p><strong>Proposition.</strong> The fixed subgroup $K$ is a maximal compact subgroup of $\mathrm{U}(V,h)$; the quotient $\mathrm{U}(V,h)/K$ is a symmetric space of noncompact type when $m \geq 1$ and a point when $m = 0$; the Cartan decomposition</p>
 <p>$$
 \mathfrak{u}(V,h) = \mathfrak{k}\oplus\mathfrak{n}, \qquad
-\mathfrak{n} = \{X \in \mathfrak{u}(V,h) : \theta(X) = -X\},
+\mathfrak{n} = \{X \in \mathfrak{u}(V,h) : \mathrm{J}(X) = -X\},
 $$</p>
 <p>has $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{n}]\subseteq\mathfrak{n}$, $[\mathfrak{n},\mathfrak{n}]\subseteq\mathfrak{k}$, and $\mathfrak{n}$ is a real vector space of dimension $2pq$.</p>
-<p><strong>Proof.</strong> The bracket relations are the statements that $\theta$ is an automorphism and $\mathfrak{k}$ and $\mathfrak{n}$ are its eigenspaces; $\mathfrak{k}$ is compact because it is the Lie algebra of the compact group $K$. The dimension of $\mathfrak{n}$ is the dimension of the off-diagonal block in the model, $2pq$. The noncompactness for $m\geq1$ is the one-parameter subgroup $\exp(tX)$ with $X \in \mathfrak{n}$ a nonzero diagonal entry, which is unbounded.</p>
+<p><strong>Proof.</strong> The bracket relations are the statements that $\mathrm{J}$ is an automorphism and $\mathfrak{k}$ and $\mathfrak{n}$ are its eigenspaces; $\mathfrak{k}$ is compact because it is the Lie algebra of the compact group $K$. The dimension of $\mathfrak{n}$ is the dimension of the off-diagonal block in the model, $2pq$. The noncompactness for $m\geq1$ is the one-parameter subgroup $\exp(tX)$ with $X \in \mathfrak{n}$ a nonzero diagonal entry, which is unbounded.</p>
 <h2 id="the-symmetric-space">The Symmetric Space</h2>
 <h3 id="the-quotient">The Quotient</h3>
 <p><strong>Definition.</strong> The <strong>symmetric space</strong> of the unitary group is the homogeneous space</p>
 <p>$$
 X = \mathrm{U}(V,h)/K,
 $$</p>
-<p>with base point $o = eK$ and tangent space $T_oX = \mathfrak{n}$; the <strong>geodesic symmetry</strong> at $o$ is $s_o(gK) = \theta(g)K$.</p>
+<p>with base point $o = eK$ and tangent space $T_oX = \mathfrak{n}$; the <strong>geodesic symmetry</strong> at $o$ is $s_o(gK) = \mathrm{J}(g)K$.</p>
 <p><strong>Proposition.</strong> The space $X$ is diffeomorphic to the manifold of $h$-negative subspaces of dimension $m$,</p>
 <p>$$
 \boxed{\;X \cong \{W \leq V : \dim W = m,\ h|_W < 0\}\;},
@@ -142,11 +142,11 @@ $$</p>
 <p><strong>Remark.</strong> The signature is the geometric datum, and it satisfies the boundary test of the part: a different Hermitian form of the same dimension gives a different symmetric space and a different involution. The compact case $m=0$ has $X$ a point and the involution the identity; the split case $n=m$ has maximal rank and is the case of the Siegel disc of the previous article.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <p><strong>Example (the compact unitary group).</strong> Let $m = 0$. Then $\mathrm{U}(V,h) = \mathrm{U}(n)$ is compact, $K = \mathrm{U}(n)$ and $X$ is a point; the Cartan involution is the identity (up to conjugacy there is no noncompact direction), and the involution is trivial. The example shows that the involution is the identity exactly in the compact case.</p>
-<p><strong>Example (the indefinite unitary group).</strong> Let $(n,m) = (1,n-1)$. Then $U(1,n-1)$ has the symmetric space $X = U(1,n-1)/(\mathrm{U}(1)\times \mathrm{U}(n-1))$ of rank one and dimension $2(n-1)$, the complex hyperbolic space; the involution is $\theta(g) = JgJ^{-1}$ with $J = \operatorname{diag}(1,-I_{n-1})$, the fixed subgroup is $\mathrm{U}(1)\times \mathrm{U}(n-1)$, and the geodesic symmetry is complex-antisymmetric. The previous article's bounded realisation identifies $X$ with the unit ball of $\mathbb{C}^{n-1}$.</p>
-<p><strong>Example (the split signature).</strong> Let $n = m = n$. Then $\mathrm{U}(n,n)$ has the symmetric space $\mathrm{U}(n,n)/(\mathrm{U}(n)\times \mathrm{U}(n))$ of rank $n$ and dimension $2n^2$, the Siegel disc in the bounded realisation; the involution $\theta(g) = JgJ^{-1}$ with $J = \operatorname{diag}(I_n,-I_n)$ is conjugation by $J$, and the maximal abelian subspace of $\mathfrak{n}$ is the diagonal, of dimension $n$. The signature $(n,n)$ is the largest rank among the unitary symmetric spaces of dimension $2n^2$.</p>
-<p><strong>Example (the real form).</strong> Let the field be $\mathbb{R}$ with the identity involution; the Hermitian form is then quadratic and the unitary group is the orthogonal group of signature $(n,m)$, $O(n,m)$. The involution $\theta(g) = JgJ^{-1}$ is again the Cartan involution, $\mathfrak{n}$ has dimension $pq$, and the symmetric space is $O(n,m)/(O(n)\times O(m))$. This is the model of <em>The Orthogonal Group and the Involutive Automorphism</em>, the next article, and shows that the construction is not special to the complex case.</p>
+<p><strong>Example (the indefinite unitary group).</strong> Let $(n,m) = (1,n-1)$. Then $U(1,n-1)$ has the symmetric space $X = U(1,n-1)/(\mathrm{U}(1)\times \mathrm{U}(n-1))$ of rank one and dimension $2(n-1)$, the complex hyperbolic space; the involution is $\mathrm{J}(g) = JgJ^{-1}$ with $J = \operatorname{diag}(1,-I_{n-1})$, the fixed subgroup is $\mathrm{U}(1)\times \mathrm{U}(n-1)$, and the geodesic symmetry is complex-antisymmetric. The previous article's bounded realisation identifies $X$ with the unit ball of $\mathbb{C}^{n-1}$.</p>
+<p><strong>Example (the split signature).</strong> Let $n = m = n$. Then $\mathrm{U}(n,n)$ has the symmetric space $\mathrm{U}(n,n)/(\mathrm{U}(n)\times \mathrm{U}(n))$ of rank $n$ and dimension $2n^2$, the Siegel disc in the bounded realisation; the involution $\mathrm{J}(g) = JgJ^{-1}$ with $J = \operatorname{diag}(I_n,-I_n)$ is conjugation by $J$, and the maximal abelian subspace of $\mathfrak{n}$ is the diagonal, of dimension $n$. The signature $(n,n)$ is the largest rank among the unitary symmetric spaces of dimension $2n^2$.</p>
+<p><strong>Example (the real form).</strong> Let the field be $\mathbb{R}$ with the identity involution; the Hermitian form is then quadratic and the unitary group is the orthogonal group of signature $(n,m)$, $O(n,m)$. The involution $\mathrm{J}(g) = JgJ^{-1}$ is again the Cartan involution, $\mathfrak{n}$ has dimension $pq$, and the symmetric space is $O(n,m)/(O(n)\times O(m))$. This is the model of <em>The Orthogonal Group and the Involutive Automorphism</em>, the next article, and shows that the construction is not special to the complex case.</p>
 <h2 id="summary">Summary</h2>
-<p>The unitary group $\mathrm{U}(V,h)$ of a Hermitian form of signature $(n,m)$ is the group of isometries $\{T : T^{*}T = \operatorname{id}\}$ of the Hermitian adjoint; a Hermitian form is diagonalisable, so the group is conjugate to the model $\mathrm{U}(n,m) = \{g : g^{\dagger}Jg = J\}$ and depends only on the signature. A definite decomposition $V = V_+\oplus V_-$ has the stabiliser $K = \mathrm{U}(V_+)\times U(V_-)$, a maximal compact subgroup, and the pair has a Cartan involution $\theta$, unique up to conjugacy, with fixed subgroup $K$ and differential $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$; for the model it is $\theta(g) = JgJ^{-1}$. The quotient $\mathrm{U}(V,h)/K$ is the symmetric space of the negative $m$-subspaces, of dimension $2pq$ and rank $\min(n,m)$, with geodesic symmetry $s_o(gK) = \theta(g)K$; it is a point exactly in the compact case $m = 0$. The involution up to conjugacy is classified by the signature, and the unitary family of symmetric spaces is $\mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m))$ with $X_{n,m}\cong X_{m,n}$. The invariant metric and the Hermitian geometry are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The involution here is on the elements of the group; the adjoint of an operator is the group <code>- * Operator Theory</code>.</p>
+<p>The unitary group $\mathrm{U}(V,h)$ of a Hermitian form of signature $(n,m)$ is the group of isometries $\{T : T^{*}T = \operatorname{id}\}$ of the Hermitian adjoint; a Hermitian form is diagonalisable, so the group is conjugate to the model $\mathrm{U}(n,m) = \{g : g^{\dagger}Jg = J\}$ and depends only on the signature. A definite decomposition $V = V_+\oplus V_-$ has the stabiliser $K = \mathrm{U}(V_+)\times U(V_-)$, a maximal compact subgroup, and the pair has a Cartan involution $\mathrm{J}$, unique up to conjugacy, with fixed subgroup $K$ and differential $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$; for the model it is $\mathrm{J}(g) = JgJ^{-1}$. The quotient $\mathrm{U}(V,h)/K$ is the symmetric space of the negative $m$-subspaces, of dimension $2pq$ and rank $\min(n,m)$, with geodesic symmetry $s_o(gK) = \mathrm{J}(g)K$; it is a point exactly in the compact case $m = 0$. The involution up to conjugacy is classified by the signature, and the unitary family of symmetric spaces is $\mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m))$ with $X_{n,m}\cong X_{m,n}$. The invariant metric and the Hermitian geometry are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The involution here is on the elements of the group; the adjoint of an operator is the group <code>- * Operator Theory</code>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -185,19 +185,19 @@ $$</p>
 <td>the maximal compact subgroup; the fixed subgroup</td>
 </tr>
 <tr>
-<td>$\theta$</td>
-<td>the Cartan involution; $\theta(g) = JgJ^{-1}$ in the model</td>
+<td>$\mathrm{J}$</td>
+<td>the Cartan involution; $\mathrm{J}(g) = JgJ^{-1}$ in the model</td>
 </tr>
 <tr>
 <td>$\mathfrak{k}\oplus\mathfrak{n}$</td>
-<td>the Cartan decomposition; eigen-$\pm1$ spaces of $d\theta$</td>
+<td>the Cartan decomposition; eigen-$\pm1$ spaces of $d\mathrm{J}$</td>
 </tr>
 <tr>
 <td>$X = \mathrm{U}(V,h)/K$</td>
 <td>the symmetric space; the negative $m$-subspaces</td>
 </tr>
 <tr>
-<td>$s_o(gK) = \theta(g)K$</td>
+<td>$s_o(gK) = \mathrm{J}(g)K$</td>
 <td>the geodesic symmetry at the base point</td>
 </tr>
 <tr>

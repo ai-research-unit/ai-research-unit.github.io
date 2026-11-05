@@ -70,57 +70,57 @@
       <div class="article-body">
         <h1 id="involutive-normed-spaces"><strong>Involutive Normed Spaces</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A normed space with a continuous involution carries a number, the <strong>norm of the involution</strong> $\lVert\theta\rVert$, and the involution is an isometry exactly when that number is one; since $\theta$ is its own inverse, a continuous involution always has norm at least one and is a homeomorphism, and replacing the norm by the equivalent norm $\sup(\lVert x\rVert, \lVert\theta x\rVert)$ makes it isometric. The fixed and negated subspaces are closed and the splitting into them is topological; in the antilinear case the fixed subspace is a real normed space of the same dimension as the complex space. On the dual the transposed involution has the same norm, and it is isometric when the involution is.</p>
+<p>A normed space with a continuous involution carries a number, the <strong>norm of the involution</strong> $\lVert\mathrm{J}\rVert$, and the involution is an isometry exactly when that number is one; since $\mathrm{J}$ is its own inverse, a continuous involution always has norm at least one and is a homeomorphism, and replacing the norm by the equivalent norm $\sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$ makes it isometric. The fixed and negated subspaces are closed and the splitting into them is topological; in the antilinear case the fixed subspace is a real normed space of the same dimension as the complex space. On the dual the transposed involution has the same norm, and it is isometric when the involution is.</p>
 <p>This article develops the normed theory of an involution: the norm of the involution, the isometric case, the equivalent invariant norm, the fixed and negated subspaces with the norm they inherit, and the transposed involution on the dual with the dual norm. The topological involution and its closedness and splitting are <em>Involutive Topological Linear Spaces</em>; the locally convex version is <em>Locally Convex Spaces with an Involution</em>; the norms, the bounded operators and the operator norm are <em>Normed and Banach Spaces</em> and <em>Bounded Operators and the Operator Norm</em>; the transposed involution on the dual is <em>The Involution and the Dual Pairing</em>. The completion is <em>Involutive Banach Spaces</em>, the next article of this group. No form, no adjoint and no Hilbert structure is used.</p>
-<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$ (the identity or the complex conjugation), $X$ is a normed space over $\mathbb{K}$ with norm $\lVert\cdot\rVert$, and $\theta$ is a continuous $\varsigma$-semilinear involution of $X$ with $\theta^{2} = \mathrm{id}$; the linear case is written $T$, the antilinear case is $\varsigma \neq \mathrm{id}$, and the fixed and negated subspaces are $X^{\theta} = \ker(\theta - \mathrm{id})$ and $X^{-} = \ker(\theta + \mathrm{id})$.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$ (the identity or the complex conjugation), $X$ is a normed space over $\mathbb{K}$ with norm $\lVert\cdot\rVert$, and $\mathrm{J}$ is a continuous $\varsigma$-semilinear involution of $X$ with $\mathrm{J}^{2} = \mathrm{id}$; the linear case is written $T$, the antilinear case is $\varsigma \neq \mathrm{id}$, and the fixed and negated subspaces are $X^{\mathrm{J}} = \ker(\mathrm{J} - \mathrm{id})$ and $X^{-} = \ker(\mathrm{J} + \mathrm{id})$.</p>
 <h2 id="the-norm-of-an-involution">The Norm of an Involution</h2>
-<p><strong>Proposition (continuity and the norm).</strong> Let $\theta$ be a $\varsigma$-semilinear involution of $X$. Then $\theta$ is continuous if and only if it is bounded, and then</p>
+<p><strong>Proposition (continuity and the norm).</strong> Let $\mathrm{J}$ be a $\varsigma$-semilinear involution of $X$. Then $\mathrm{J}$ is continuous if and only if it is bounded, and then</p>
 <p>$$
-\boxed{\;\lVert\theta\rVert = \sup_{x \neq 0}\frac{\lVert\theta x\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert\theta x\rVert\;}
+\boxed{\;\lVert\mathrm{J}\rVert = \sup_{x \neq 0}\frac{\lVert\mathrm{J} x\rVert}{\lVert x\rVert} = \sup_{\lVert x\rVert \leq 1}\lVert\mathrm{J} x\rVert\;}
 $$</p>
-<p>is finite and satisfies $\lVert\theta\rVert \geq 1$ and $\lVert\theta^{-1}\rVert = \lVert\theta\rVert$; a continuous involution is a topological isomorphism of $X$ onto itself.</p>
-<p><strong>Proof.</strong> Boundedness is the normed form of continuity, and the operator norm is <em>Bounded Operators and the Operator Norm</em>. Since $\theta^{-1} = \theta$ and $\theta$ is a bijection, $\lVert\theta\rVert\lVert\theta^{-1}\rVert \geq \lVert\theta\theta^{-1}\rVert = 1$ gives $\lVert\theta\rVert \geq 1$; the equality of the norms of $\theta$ and $\theta^{-1}$ is the identity $\lVert\theta\rVert = \lVert\theta^{-1}\rVert$ for an involution, read from $\theta^{-1} = \theta$.</p>
-<p><strong>Proposition (isometric exactly at norm one).</strong> A continuous involution $\theta$ satisfies $\lVert\theta\rVert = 1$ if and only if it is an isometry, $\lVert\theta x\rVert = \lVert x\rVert$ for all $x$. For an involutive isometry, $\theta^{-1} = \theta$ gives the reverse inequality, so $\lVert\theta\rVert = 1$.</p>
-<p><strong>Proof.</strong> If $\theta$ is an isometry then $\lVert\theta\rVert = \sup_{\lVert x\rVert\leq1}\lVert x\rVert = 1$. Conversely, $\lVert\theta\rVert = 1$ gives $\lVert\theta x\rVert \leq \lVert x\rVert$, and applying this to $\theta x$ gives $\lVert x\rVert = \lVert\theta^{2}x\rVert \leq \lVert\theta x\rVert$, so equality.</p>
-<p><strong>Proposition (equivalent invariant norm).</strong> For a continuous involution $\theta$ the formula</p>
+<p>is finite and satisfies $\lVert\mathrm{J}\rVert \geq 1$ and $\lVert\mathrm{J}^{-1}\rVert = \lVert\mathrm{J}\rVert$; a continuous involution is a topological isomorphism of $X$ onto itself.</p>
+<p><strong>Proof.</strong> Boundedness is the normed form of continuity, and the operator norm is <em>Bounded Operators and the Operator Norm</em>. Since $\mathrm{J}^{-1} = \mathrm{J}$ and $\mathrm{J}$ is a bijection, $\lVert\mathrm{J}\rVert\lVert\mathrm{J}^{-1}\rVert \geq \lVert\mathrm{J}\mathrm{J}^{-1}\rVert = 1$ gives $\lVert\mathrm{J}\rVert \geq 1$; the equality of the norms of $\mathrm{J}$ and $\mathrm{J}^{-1}$ is the identity $\lVert\mathrm{J}\rVert = \lVert\mathrm{J}^{-1}\rVert$ for an involution, read from $\mathrm{J}^{-1} = \mathrm{J}$.</p>
+<p><strong>Proposition (isometric exactly at norm one).</strong> A continuous involution $\mathrm{J}$ satisfies $\lVert\mathrm{J}\rVert = 1$ if and only if it is an isometry, $\lVert\mathrm{J} x\rVert = \lVert x\rVert$ for all $x$. For an involutive isometry, $\mathrm{J}^{-1} = \mathrm{J}$ gives the reverse inequality, so $\lVert\mathrm{J}\rVert = 1$.</p>
+<p><strong>Proof.</strong> If $\mathrm{J}$ is an isometry then $\lVert\mathrm{J}\rVert = \sup_{\lVert x\rVert\leq1}\lVert x\rVert = 1$. Conversely, $\lVert\mathrm{J}\rVert = 1$ gives $\lVert\mathrm{J} x\rVert \leq \lVert x\rVert$, and applying this to $\mathrm{J} x$ gives $\lVert x\rVert = \lVert\mathrm{J}^{2}x\rVert \leq \lVert\mathrm{J} x\rVert$, so equality.</p>
+<p><strong>Proposition (equivalent invariant norm).</strong> For a continuous involution $\mathrm{J}$ the formula</p>
 <p>$$
-\lVert x\rVert_{\theta} = \sup(\lVert x\rVert, \lVert\theta x\rVert)
+\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)
 $$</p>
-<p>defines a norm on $X$, equivalent to $\lVert\cdot\rVert$, for which $\theta$ is isometric, $\lVert\theta x\rVert_{\theta} = \lVert x\rVert_{\theta}$; the norms coincide exactly when $\theta$ is already isometric for $\lVert\cdot\rVert$.</p>
-<p><strong>Proof.</strong> The supremum is a norm because it is the supremum of two norms, and it is equivalent because $\lVert x\rVert \leq \lVert x\rVert_{\theta} \leq \max(1, \lVert\theta\rVert)\lVert x\rVert$. Invariance is the computation of <em>Locally Convex Spaces with an Involution</em>: $\lVert\theta x\rVert_{\theta} = \sup(\lVert\theta x\rVert, \lVert\theta^{2}x\rVert) = \sup(\lVert\theta x\rVert, \lVert x\rVert) = \lVert x\rVert_{\theta}$. The equality case is the preceding proposition.</p>
+<p>defines a norm on $X$, equivalent to $\lVert\cdot\rVert$, for which $\mathrm{J}$ is isometric, $\lVert\mathrm{J} x\rVert_{\mathrm{J}} = \lVert x\rVert_{\mathrm{J}}$; the norms coincide exactly when $\mathrm{J}$ is already isometric for $\lVert\cdot\rVert$.</p>
+<p><strong>Proof.</strong> The supremum is a norm because it is the supremum of two norms, and it is equivalent because $\lVert x\rVert \leq \lVert x\rVert_{\mathrm{J}} \leq \max(1, \lVert\mathrm{J}\rVert)\lVert x\rVert$. Invariance is the computation of <em>Locally Convex Spaces with an Involution</em>: $\lVert\mathrm{J} x\rVert_{\mathrm{J}} = \sup(\lVert\mathrm{J} x\rVert, \lVert\mathrm{J}^{2}x\rVert) = \sup(\lVert\mathrm{J} x\rVert, \lVert x\rVert) = \lVert x\rVert_{\mathrm{J}}$. The equality case is the preceding proposition.</p>
 <h2 id="the-fixed-and-negated-subspaces">The Fixed and Negated Subspaces</h2>
-<p><strong>Proposition (closedness and the inherited norm).</strong> The fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and the direct sum</p>
+<p><strong>Proposition (closedness and the inherited norm).</strong> The fixed subspace $X^{\mathrm{J}}$ and the negated subspace $X^{-}$ are closed subspaces of $X$, and each is a normed space for the restriction of the norm; in the antilinear case $X^{\mathrm{J}}$ is a real normed space. When $2$ is invertible the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$ are continuous projections and the direct sum</p>
 <p>$$
-\boxed{\;X = X^{\theta} \oplus X^{-}\;}
+\boxed{\;X = X^{\mathrm{J}} \oplus X^{-}\;}
 $$</p>
 <p>is topological, the sum being equivalent to the direct sum of the two restricted norms.</p>
-<p><strong>Proof.</strong> The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \theta$, hence closed; a subspace of a normed space is normed for the restricted norm. The projections and the splitting are the topological splitting of <em>Involutive Topological Linear Spaces</em>, and the equivalence of the norm with the direct sum of the restricted norms is the standard open mapping statement for a topological direct sum of normed spaces.</p>
+<p><strong>Proof.</strong> The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \mathrm{J}$, hence closed; a subspace of a normed space is normed for the restricted norm. The projections and the splitting are the topological splitting of <em>Involutive Topological Linear Spaces</em>, and the equivalence of the norm with the direct sum of the restricted norms is the standard open mapping statement for a topological direct sum of normed spaces.</p>
 <p><strong>Proposition (the invariant norm on the sum).</strong> With the invariant norm and $2$ invertible, every $x = x_{+} + x_{-}$ with $x_{\pm} \in X^{\pm}$ satisfies</p>
 <p>$$
-\max\bigl(\lVert x_{+}\rVert_{\theta}, \lVert x_{-}\rVert_{\theta}\bigr) \leq \lVert x\rVert_{\theta} \leq \lVert x_{+}\rVert_{\theta} + \lVert x_{-}\rVert_{\theta} ,
+\max\bigl(\lVert x_{+}\rVert_{\mathrm{J}}, \lVert x_{-}\rVert_{\mathrm{J}}\bigr) \leq \lVert x\rVert_{\mathrm{J}} \leq \lVert x_{+}\rVert_{\mathrm{J}} + \lVert x_{-}\rVert_{\mathrm{J}} ,
 $$</p>
-<p>and the two inequalities are equalities on the summands; the direct sum norm $\lVert x_{+}\rVert_{\theta} + \lVert x_{-}\rVert_{\theta}$ and $\lVert x\rVert_{\theta}$ are equivalent, with the fixed and negated subspaces isometric to the summands.</p>
-<p><strong>Proof.</strong> $\pi_{1,2}$ are contractions for the invariant norm, since $\lVert\pi_{1,2}x\rVert_{\theta} = \sup(\lVert\pi_{1,2}x\rVert, \lVert\theta\pi_{1,2}x\rVert) = \sup(\lVert\pi_{1,2}x\rVert, \lVert\pi_{1,2}x\rVert) = \lVert\pi_{1,2}x\rVert \leq \lVert x\rVert_{\theta}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\theta$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\theta}$ and $\lVert\cdot\rVert$ agree there.</p>
+<p>and the two inequalities are equalities on the summands; the direct sum norm $\lVert x_{+}\rVert_{\mathrm{J}} + \lVert x_{-}\rVert_{\mathrm{J}}$ and $\lVert x\rVert_{\mathrm{J}}$ are equivalent, with the fixed and negated subspaces isometric to the summands.</p>
+<p><strong>Proof.</strong> $\pi_{1,2}$ are contractions for the invariant norm, since $\lVert\pi_{1,2}x\rVert_{\mathrm{J}} = \sup(\lVert\pi_{1,2}x\rVert, \lVert\mathrm{J}\pi_{1,2}x\rVert) = \sup(\lVert\pi_{1,2}x\rVert, \lVert\pi_{1,2}x\rVert) = \lVert\pi_{1,2}x\rVert \leq \lVert x\rVert_{\mathrm{J}}$, giving the lower bound; the upper bound is the triangle inequality. On a summand $\mathrm{J}$ acts by $\pm\mathrm{id}$, so $\lVert\cdot\rVert_{\mathrm{J}}$ and $\lVert\cdot\rVert$ agree there.</p>
 <h2 id="the-transposed-involution-and-the-dual-norm">The Transposed Involution and the Dual Norm</h2>
-<p><strong>Definition.</strong> The <strong>transposed involution</strong> of $\theta$ on the dual $X^{*}$ is $\theta'(\varphi) = \varphi \circ \theta$; it is an involution of the same kind, and it is continuous for the dual norm.</p>
-<p><strong>Theorem (the transpose has the same norm).</strong> For a continuous involution $\theta$,</p>
+<p><strong>Definition.</strong> The <strong>transposed involution</strong> of $\mathrm{J}$ on the dual $X^{*}$ is $\mathrm{J}'(\varphi) = \varphi \circ \mathrm{J}$; it is an involution of the same kind, and it is continuous for the dual norm.</p>
+<p><strong>Theorem (the transpose has the same norm).</strong> For a continuous involution $\mathrm{J}$,</p>
 <p>$$
-\boxed{\;\lVert\theta'\rVert = \lVert\theta\rVert\;} ,
+\boxed{\;\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert\;} ,
 $$</p>
-<p>and $\theta'$ is isometric exactly when $\theta$ is isometric.</p>
-<p><strong>Proof.</strong> This is the isometry of the transpose, $\lVert\theta'\rVert = \lVert\theta\rVert$, from <em>The Dual Operator</em>; the isometric statement follows because the equality of norms characterises the isometric case in both spaces, by the proposition above.</p>
-<p><strong>Proposition (the dual summands).</strong> The fixed and negated subspaces of $\theta'$ are the annihilators,</p>
+<p>and $\mathrm{J}'$ is isometric exactly when $\mathrm{J}$ is isometric.</p>
+<p><strong>Proof.</strong> This is the isometry of the transpose, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$, from <em>The Dual Operator</em>; the isometric statement follows because the equality of norms characterises the isometric case in both spaces, by the proposition above.</p>
+<p><strong>Proposition (the dual summands).</strong> The fixed and negated subspaces of $\mathrm{J}'$ are the annihilators,</p>
 <p>$$
-(X^{*})^{\theta'} = (X^{-})^{\circ}, \qquad (X^{*})^{-} = (X^{\theta})^{\circ} ,
+(X^{*})^{\mathrm{J}'} = (X^{-})^{\circ}, \qquad (X^{*})^{-} = (X^{\mathrm{J}})^{\circ} ,
 $$</p>
-<p>and each is a normed space for the dual norm; the dual of the involutive space with the transposed involution is the involutive normed space $(X^{*}, \theta')$.</p>
+<p>and each is a normed space for the dual norm; the dual of the involutive space with the transposed involution is the involutive normed space $(X^{*}, \mathrm{J}')$.</p>
 <p><strong>Proof.</strong> The annihilator identification is <em>The Involution and the Dual Pairing</em>; the dual norm restricts to a norm on each closed subspace, and the involution is continuous by the theorem.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>Example (the conjugation of $\mathbb{C}^{n}$).</strong> On $\mathbb{C}^{n}$ with the Euclidean norm the componentwise conjugation is an antilinear isometry, $\lVert\theta z\rVert_{2} = \lVert z\rVert_{2}$, so $\lVert\theta\rVert = 1$; its fixed subspace is $\mathbb{R}^{n}$ with the Euclidean norm, and the real splitting $\mathbb{C}^{n} = \mathbb{R}^{n} \oplus i\mathbb{R}^{n}$ is isometric for the direct sum of the restricted norms in the sense that $\lVert z\rVert_{2}^{2} = \lVert x\rVert_{2}^{2} + \lVert y\rVert_{2}^{2}$ for $z = x + iy$.</p>
+<p><strong>Example (the conjugation of $\mathbb{C}^{n}$).</strong> On $\mathbb{C}^{n}$ with the Euclidean norm the componentwise conjugation is an antilinear isometry, $\lVert\mathrm{J} z\rVert_{2} = \lVert z\rVert_{2}$, so $\lVert\mathrm{J}\rVert = 1$; its fixed subspace is $\mathbb{R}^{n}$ with the Euclidean norm, and the real splitting $\mathbb{C}^{n} = \mathbb{R}^{n} \oplus i\mathbb{R}^{n}$ is isometric for the direct sum of the restricted norms in the sense that $\lVert z\rVert_{2}^{2} = \lVert x\rVert_{2}^{2} + \lVert y\rVert_{2}^{2}$ for $z = x + iy$.</p>
 <p><strong>Example (the coordinate involution of $\ell^{n}$).</strong> On $\ell^{n}$, $1 \leq p \leq \infty$, the coordinatewise conjugation is an antilinear isometry with fixed subspace the real sequence space $\ell^{n}_{\mathbb{R}}$, and the norm of the involution is one; the same holds for the coordinatewise negation on the real space, a linear isometry whose fixed subspace is the sequences vanishing in the chosen coordinates.</p>
 <p><strong>Example (a discontinuous involution).</strong> Let $X$ be an infinite-dimensional normed space and let $T_{0}$ be an unbounded linear automorphism of it, which exists by a Hamel-basis construction. On the normed space $X \oplus X$ the map $T(u, v) = (T_{0}u, T_{0}^{-1}v)$ is a linear involution, and it is unbounded, hence discontinuous; its operator norm is infinite. This shows that the continuity hypothesis is not automatic and that the equivalent invariant norm exists only for bounded involutions.</p>
 <h2 id="summary">Summary</h2>
-<p>On a normed space a continuous involution $\theta$ has a finite norm $\lVert\theta\rVert \geq 1$, it is a topological isomorphism equal to its own inverse, and it is an isometry exactly when $\lVert\theta\rVert = 1$; the formula $\lVert x\rVert_{\theta} = \sup(\lVert x\rVert, \lVert\theta x\rVert)$ is an equivalent norm for which every continuous involution is isometric, and the original norm is already invariant exactly in the isometric case. The fixed and negated subspaces are closed and normed for the restricted norms, and when $2$ is invertible the averaging projections exhibit $X$ as the topological direct sum $X^{\theta}\oplus X^{-}$, the invariant norm being equivalent to the direct sum of the restrictions, which are isometric to the summands; in the antilinear case the fixed subspace is a real normed space. On the dual the transposed involution $\theta'(\varphi) = \varphi\circ\theta$ has the same norm, $\lVert\theta'\rVert = \lVert\theta\rVert$, is isometric exactly when $\theta$ is, and its fixed and negated parts are the annihilators of $X^{-}$ and $X^{\theta}$. The conjugation of $\mathbb{C}^{n}$, the coordinate involution of $\ell^{n}$ and the discontinuous involutions of an infinite-dimensional normed space are the standard examples. The Banach case, where completeness is used, is <em>Involutive Banach Spaces</em>.</p>
+<p>On a normed space a continuous involution $\mathrm{J}$ has a finite norm $\lVert\mathrm{J}\rVert \geq 1$, it is a topological isomorphism equal to its own inverse, and it is an isometry exactly when $\lVert\mathrm{J}\rVert = 1$; the formula $\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$ is an equivalent norm for which every continuous involution is isometric, and the original norm is already invariant exactly in the isometric case. The fixed and negated subspaces are closed and normed for the restricted norms, and when $2$ is invertible the averaging projections exhibit $X$ as the topological direct sum $X^{\mathrm{J}}\oplus X^{-}$, the invariant norm being equivalent to the direct sum of the restrictions, which are isometric to the summands; in the antilinear case the fixed subspace is a real normed space. On the dual the transposed involution $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ has the same norm, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$, is isometric exactly when $\mathrm{J}$ is, and its fixed and negated parts are the annihilators of $X^{-}$ and $X^{\mathrm{J}}$. The conjugation of $\mathbb{C}^{n}$, the coordinate involution of $\ell^{n}$ and the discontinuous involutions of an infinite-dimensional normed space are the standard examples. The Banach case, where completeness is used, is <em>Involutive Banach Spaces</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -139,39 +139,39 @@ $$</p>
 <td>Normed space and its norm</td>
 </tr>
 <tr>
-<td>$\theta$, $T$</td>
+<td>$\mathrm{J}$, $T$</td>
 <td>Continuous involution; the linear case</td>
 </tr>
 <tr>
-<td>$\lVert\theta\rVert$</td>
+<td>$\lVert\mathrm{J}\rVert$</td>
 <td>Norm of the involution, $\geq 1$</td>
 </tr>
 <tr>
-<td>$\lVert\theta\rVert = 1$</td>
+<td>$\lVert\mathrm{J}\rVert = 1$</td>
 <td>The isometric case</td>
 </tr>
 <tr>
-<td>$\lVert x\rVert_{\theta} = \sup(\lVert x\rVert, \lVert\theta x\rVert)$</td>
+<td>$\lVert x\rVert_{\mathrm{J}} = \sup(\lVert x\rVert, \lVert\mathrm{J} x\rVert)$</td>
 <td>Equivalent invariant norm</td>
 </tr>
 <tr>
-<td>$X^{\theta}$, $X^{-}$</td>
+<td>$X^{\mathrm{J}}$, $X^{-}$</td>
 <td>Fixed and negated subspaces, normed</td>
 </tr>
 <tr>
-<td>$\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$</td>
+<td>$\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$</td>
 <td>Averaging projections</td>
 </tr>
 <tr>
-<td>$\theta'(\varphi) = \varphi\circ\theta$</td>
+<td>$\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$</td>
 <td>Transposed involution on the dual</td>
 </tr>
 <tr>
-<td>$\lVert\theta'\rVert = \lVert\theta\rVert$</td>
+<td>$\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$</td>
 <td>Norm of the transpose</td>
 </tr>
 <tr>
-<td>$(X^{-})^{\circ}$, $(X^{\theta})^{\circ}$</td>
+<td>$(X^{-})^{\circ}$, $(X^{\mathrm{J}})^{\circ}$</td>
 <td>Annihilators, the dual summands</td>
 </tr>
 </tbody>

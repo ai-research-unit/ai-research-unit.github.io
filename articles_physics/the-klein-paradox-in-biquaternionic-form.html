@@ -76,14 +76,14 @@
 <p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.</p>
 <h2 id="the-dirac-equation-at-a-potential-step">The Dirac Equation at a Potential Step</h2>
 <h3 id="minimal-coupling-and-the-step">Minimal coupling and the step</h3>
-<p>A static electrostatic potential $\phi(x)$ is the time component of the four-potential, $\tilde{A} = \frac{i\phi}{c}e_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is</p>
+<p>A static electrostatic potential $\phi(x)$ is the time component of the four-potential, $\tilde{A} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is</p>
 <p>$$
-D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A} = \tilde\nabla + \frac{iϙ}{\hbar}\cdot\frac{i\phi}{c}e_t = \tilde\nabla - \frac{ϙ\phi}{\hbar c}e_t .
+D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A} = \tilde\nabla + \frac{iϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla - \frac{ϙ a'_t}{\hbar}e_t .
 $$</p>
 <p>The added term is a <strong>central scalar multiple of $e_t$</strong>. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.</p>
 <p>A <strong>step</strong> is the potential</p>
 <p>$$
-ϙ\phi(x) = V_0\,\theta(x),
+ϙ\phi(x) = V_0\,\mathrm{H}^{\mathrm{hvs}}(x),
 $$</p>
 <p>constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a barrier that repels the electron. On each half-line the covariant derivative is a constant-shift of the gradient, so the equation has plane-wave solutions there and the problem reduces to matching across $x = 0$.</p>
 <h3 id="reduction-along-one-axis">Reduction along one axis</h3>
@@ -93,7 +93,7 @@ i\hbar c\,\frac{d\psi_2}{dx} = \left[E - mc^2 - V(x)\right]\psi_1,
 \qquad
 i\hbar c\,\frac{d\psi_1}{dx} = \left[E + mc^2 - V(x)\right]\psi_2 ,
 $$</p>
-<p>in which $E$ is the total energy, $V(x) = V_0\theta(x)$ the potential energy, and the pair $(\psi_1, \psi_2)$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.</p>
+<p>in which $E$ is the total energy, $V(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\psi_1, \psi_2)$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.</p>
 <h2 id="the-matching-problem">The Matching Problem</h2>
 <h3 id="the-two-regions">The two regions</h3>
 <p>On the incident side, $x < 0$, the potential vanishes and the momentum is</p>
@@ -224,7 +224,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The Klein step is the Dirac equation with a central potential $ϙ\phi(x) = V_0\theta(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.</p>
+<p>The Klein step is the Dirac equation with a central potential $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$, solved by matching two-component plane waves. The reflection coefficient is $R = ((\alpha\beta - 1)/(\alpha\beta + 1))^2$ and the transmission $T = 4\alpha\beta/(\alpha\beta + 1)^2$, with $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ and $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$; current conservation is an identity, checked on the cases tabulated. In the Klein region $V_0 - E > mc^2$ the transmitted wave is a negative-frequency state, and $R$ tends to the finite value $((\alpha - 1)/(\alpha + 1))^2$ as $V_0\to\infty$ rather than to one; in the massless limit $\alpha = \beta = 1$ and $T = 1$ for every step height.</p>
 <p>The biquaternion framework locates the three ingredients: the potential is central and shifts the mass shell without acting on the module; the mass is the linear chirality-off-diagonal term; and the mass shell $\tilde P\tilde P^{\natural} = -m^2c^2$ has two roots, which the step exchanges. The exchange of roots is the algebraic face of the passage to the antiparticle branch, and it is produced by a central shift rather than by a conjugation of the field. The framework does not resolve the paradox, because the resolution is pair creation, a second-quantized statement; the one-particle coefficients are the standard ones. What the framework supplies is the clean separation of a central potential, a chiral mass and a two-rooted mass shell, which is exactly the structure the paradox tests.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -252,11 +252,11 @@ $$</p>
 <td>Covariant derivative (minimal coupling)</td>
 </tr>
 <tr>
-<td>$\tilde{A} = \frac{i\phi}{c}e_t$</td>
+<td>$\tilde{A} = i\,a'_te_t$</td>
 <td>Electrostatic potential biquaternion</td>
 </tr>
 <tr>
-<td>$V_0$, $ϙ\phi(x) = V_0\theta(x)$</td>
+<td>$V_0$, $ϙ\phi(x) = V_0\mathrm{H}^{\mathrm{hvs}}(x)$</td>
 <td>Step height and potential energy</td>
 </tr>
 <tr>

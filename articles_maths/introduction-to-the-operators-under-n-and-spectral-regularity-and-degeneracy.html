@@ -70,37 +70,37 @@
       <div class="article-body">
         <h1 id="introduction-to-the-operators-under-n-and-spectral-regularity-and-degeneracy"><strong>Introduction to the Operators under N and Spectral Regularity and Degeneracy</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Three operators carry the polar word $\tilde Q=\tilde Q_H\tilde Q_0$ on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$. This article states what they have in common: their definitions, their multiplicativity, the doubling rule that passes from the element to the sandwich, and the table of the four sectors. It proves nothing about a particular sector. The values of the rank, the spectrum and the Jordan type on each sector belong to the four companion pairs, and the matrix reading of the sandwich belongs to the two matrix-model articles.</p>
+<p>Three operators carry the polar word $\tilde Q=\tilde Q_H\tilde Q_0$ on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$. This article states what they have in common: their definitions, their multiplicativity, the doubling rule that passes from the element to the sandwich, and the table of the four sectors. It proves nothing about a particular sector. The values of the rank, the spectrum and the Jordan type on each sector belong to the four companion pairs, and the matrix reading of the sandwich belongs to the two matrix-model articles.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$ and the squares $\vec e_k^{2}=-e_t$. The complex unit $i$ is central. The quaternionic norm is $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and the vector form is $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$.</p>
 <p><strong>Forward pointers.</strong> The operator theory of the sandwich, with its multiplicativity and its parameter modulo the central phase, is <em>The Hermitian Sandwich: Definition and Multiplicativity</em>. Its matrix reading is the congruence $X\mapsto MXM^{\dagger}$ of the entry model, and its operator reading is the composite $R_{\tilde Q^{*}}\circ L_{\tilde Q}$ of the frame-free article; the two readings agree by §<em>The Four Products $\lambda_i\bar\lambda_j$</em> of the same article. The eight sector articles of this group are the four sector pairs in the Further Reading, one one-sided and one sandwich article for each of the four sectors; the two exponential articles read the same operators through the exponential.</p>
 <h2 id="the-three-operators">The Three Operators</h2>
 <p>$$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad
 R_{\tilde Q}(\tilde X)=\tilde X\tilde Q,\qquad
-\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$</p>
 <p>All three are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, read as a complex vector space of dimension four. The left multiplication is injective exactly when $\tilde Q$ is a unit: if $\tilde Q\tilde X=0$, then $\tilde X=\tilde Q^{-1}\tilde Q\tilde X=0$. For a zero divisor it has a non-trivial right annihilator, and the same argument on the other side gives the left annihilator. The sandwich is the composite</p>
 <p>$$
-\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},
+\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},
 $$</p>
-<p>and it is invertible exactly when $\tilde Q$ is a unit, with inverse $\Theta_{\tilde Q^{-1}}$.</p>
+<p>and it is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$.</p>
 <p>The kernel of the sandwich is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. It contains the right annihilator $\ker L_{\tilde Q}$ and the left annihilator $\ker R_{\tilde Q^{*}}$, and it is strictly larger than either outside the unit group.</p>
 <h2 id="multiplicativity">Multiplicativity</h2>
 <p><strong>Proposition.</strong> For all $\tilde Q,\tilde Q'\in\mathbb{B}$,</p>
 <p>$$
 L_{\tilde Q\tilde Q'}=L_{\tilde Q}\circ L_{\tilde Q'},\qquad
 R_{\tilde Q\tilde Q'}=R_{\tilde Q'}\circ R_{\tilde Q},\qquad
-\Theta_{\tilde Q\tilde Q'}=\Theta_{\tilde Q}\circ\Theta_{\tilde Q'}.
+\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}.
 $$</p>
 <p><em>Proof.</em> Each identity is the associativity of the product read at the three positions: $\tilde Q\tilde Q'\tilde X=\tilde Q(\tilde Q'\tilde X)$, $\tilde X\tilde Q\tilde Q'=(\tilde X\tilde Q)\tilde Q'$, and $\tilde Q\tilde Q'\tilde X(\tilde Q\tilde Q')^{*}=\tilde Q(\tilde Q'\tilde X\tilde Q'^{*})\tilde Q^{*}$. The last uses $(\tilde Q\tilde Q')^{*}=\tilde Q'^{*}\tilde Q^{*}$.</p>
 <p>The order is the only difference between the three laws: the left multiplication is a representation of the multiplicative monoid, the right multiplication is an anti-representation, and the sandwich is a representation again because the two reversals cancel.</p>
-<p><strong>Corollary.</strong> The map $\tilde Q\mapsto L_{\tilde Q}$ is a faithful representation of $\mathbb{B}$ on itself, and $\tilde Q\mapsto\Theta_{\tilde Q}$ is a representation that kills the central circle on the unit group. On the units, $\tilde Q\mapsto L_{\tilde Q}$ is injective, with image $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ of real dimension eight, and $\tilde Q\mapsto\Theta_{\tilde Q}$ has image the conformal group $CO^{+}(1,3)$, of real dimension seven, with kernel the central circle $U(1)$.</p>
+<p><strong>Corollary.</strong> The map $\tilde Q\mapsto L_{\tilde Q}$ is a faithful representation of $\mathbb{B}$ on itself, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is a representation that kills the central circle on the unit group. On the units, $\tilde Q\mapsto L_{\tilde Q}$ is injective, with image $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ of real dimension eight, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ has image the conformal group $CO^{+}(1,3)$, of real dimension seven, with kernel the central circle $U(1)$.</p>
 <h2 id="the-doubling-rule">The Doubling Rule</h2>
 <p>Write the polar word as $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. Multiplicativity gives at once</p>
 <p>$$
-\boxed{\;\Theta_{\tilde Q}=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0}\;}
+\boxed{\;\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0}\;}
 $$</p>
-<p>The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rvert=\Theta_{\tilde Q_H}$. On the null cone the factor $\Theta_{\tilde Q_H}$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$, so the sandwich collapses to a scalar times a partial isometry. Off the null cone $\Theta_{\tilde Q_0}$ is invertible, and the collapse occurs exactly when $\tilde Q_H$ is a scalar, that is when the element is a scalar multiple of a $*$-unitary. This is the <strong>scalar collapse</strong>, and its value is the <strong>doubling</strong>: every quantity of the element is squared when it passes to the sandwich.</p>
+<p>The positive factor is the modulus of the operator: $\lvert\mathrm{Sd}_{\tilde Q}\rvert=\mathrm{Sd}_{\tilde Q_H}$. On the null cone the factor $\mathrm{Sd}_{\tilde Q_H}$ acts as the scalar $4a^{2}$ on the image of $\mathrm{Sd}_{\tilde Q_0}$, so the sandwich collapses to a scalar times a partial isometry. Off the null cone $\mathrm{Sd}_{\tilde Q_0}$ is invertible, and the collapse occurs exactly when $\tilde Q_H$ is a scalar, that is when the element is a scalar multiple of a $*$-unitary. This is the <strong>scalar collapse</strong>, and its value is the <strong>doubling</strong>: every quantity of the element is squared when it passes to the sandwich.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -123,9 +123,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The scale and the singular value double. The last row is the cancellation of the central phase: $\Theta_{\zeta\tilde Q}=\Theta_{\tilde Q}$ for every central unit $\zeta$, because $\zeta$ commutes with $\tilde X$ and $\zeta\zeta^{*}=1$. The doubling of the exponents $\ln r$, $\theta/2$ and $\psi/2$ is in the operator-exponential companions. On the null cone the collapse is exact and reads</p>
+<p>The scale and the singular value double. The last row is the cancellation of the central phase: $\mathrm{Sd}_{\zeta\tilde Q}=\mathrm{Sd}_{\tilde Q}$ for every central unit $\zeta$, because $\zeta$ commutes with $\tilde X$ and $\zeta\zeta^{*}=1$. The doubling of the exponents $\ln r$, $\theta/2$ and $\psi/2$ is in the operator-exponential companions. On the null cone the collapse is exact and reads</p>
 <p>$$
-\Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0},\qquad
+\mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0},\qquad
 \tilde Q=2a\,\tilde Q_0,
 $$</p>
 <p>with $\tilde Q_0$ a rank-one partial isometry and $2a$ the non-zero singular value of $\tilde Q$.</p>
@@ -245,7 +245,7 @@ $$</p>
 </table></div>
 <p>The two tables are the whole sector theory in one page. Along each row the rank drops when $N=0$, and the Jordan type leaves the semisimple case when $B^{2}=0$; on the scalar line $\Sigma_{10}^{\mathrm{s}}$ the element is central and the operator is a scalar multiple of the identity, so the defective types belong to the Jordan part alone. Along each column the sandwich replaces the one-sided eigenvalue $\lambda_i$ by the product $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum.</p>
 <h2 id="summary">Summary</h2>
-<p>The polar word carries three operators on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\Theta_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q}$. All three are $\mathbb{C}$-linear; the one-sided maps are injective exactly on the units, the sandwich is invertible exactly on the units, and its kernel is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. The three are multiplicative, with the order reversed on the right and restored on the sandwich; the sandwich kills the central phase and squares the scale and the singular value. The four sectors, indexed by $N$ and $B^{2}$, give the rank, the spectrum and the Jordan type of the three operators; the sandwich spectrum is the four products $\lambda_i\bar\lambda_j$. The operator theory of the sandwich, with its multiplicativity and its parameter modulo the central phase, is <em>The Hermitian Sandwich: Definition and Multiplicativity</em>; its matrix readings are the two Model articles; the eight sector articles are the four sector pairs in the Further Reading.</p>
+<p>The polar word carries three operators on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the sandwich $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q}$. All three are $\mathbb{C}$-linear; the one-sided maps are injective exactly on the units, the sandwich is invertible exactly on the units, and its kernel is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. The three are multiplicative, with the order reversed on the right and restored on the sandwich; the sandwich kills the central phase and squares the scale and the singular value. The four sectors, indexed by $N$ and $B^{2}$, give the rank, the spectrum and the Jordan type of the three operators; the sandwich spectrum is the four products $\lambda_i\bar\lambda_j$. The operator theory of the sandwich, with its multiplicativity and its parameter modulo the central phase, is <em>The Hermitian Sandwich: Definition and Multiplicativity</em>; its matrix readings are the two Model articles; the eight sector articles are the four sector pairs in the Further Reading.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -260,7 +260,7 @@ $$</p>
 <td>left and right multiplication by $\tilde Q$</td>
 </tr>
 <tr>
-<td>$\Theta_{\tilde Q}$</td>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
 <td>the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>

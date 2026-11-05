@@ -88,20 +88,20 @@ $$</p>
 <p><strong>Proof.</strong> The preservation is the computation $\mathfrak{Q}(\rho_a x) = \mathfrak{Q}(x)$ of the reflection; the square is the identity because the reflection formula applied twice returns $x$, and the two facts give the adjoint: $h(\rho_a x, y) = h(\rho_a x, \rho_a \rho_a y) = h(x, \rho_a y)$ using the preservation with the substitution $y = \rho_a \rho_a y$, so $\rho_a^{\dagger} = \rho_a$; the unitarity is the combination of the self-adjointness and the involution. The statement is in <em>Geodesic Reflection as an Operator</em> and <em>The Adjoint under a Hermitian Pairing</em>.</p>
 <p><strong>Corollary.</strong> The self-adjointness of the geodesic reflection is exactly the self-adjointness of the reflection as an element: the reflection element $a$ satisfies $a^{*} = a$ for the adjoint induced by the form (the reflection preserves the pairing), and the reflection operator is self-adjoint for the trace pairing of the endomorphism algebra in the sense of the next sections. The two statements — the geometric and the algebraic — are the same fact read on the space and on the algebra.</p>
 <h3 id="the-element-and-the-operator">The Element and the Operator</h3>
-<p><strong>Proposition.</strong> The reflection element $a$ is self-adjoint for the form, and the geodesic reflection is the signed sandwich $\Theta^{\alpha_a}_{a,a^{-1}}$ with the grade involution $\alpha_a(X) = aXa$ defined by the reflection; the reflection preserves the form and its polar, and it is the case of the signed sandwich in which the two parameters are inverse to each other.</p>
+<p><strong>Proposition.</strong> The reflection element $a$ is self-adjoint for the form, and the geodesic reflection is the signed sandwich $\mathrm{Sd}^{\alpha_a}_{a,a^{-1}}$ with the grade involution $\alpha_a(X) = aXa$ defined by the reflection; the reflection preserves the form and its polar, and it is the case of the signed sandwich in which the two parameters are inverse to each other.</p>
 <p><strong>Proof.</strong> The element $a$ is a vector and its adjoint with respect to the symmetric form is itself, $a^{*} = a$; the conjugation $x \mapsto axa^{-1}$ is the signed sandwich by $a$ and $a^{-1}$, and its negative on the vectors is the reflection formula. The statement is in <em>Reflections as Signed Two-Sided Operators on a Linear Space</em> and <em>Clifford Algebras</em>.</p>
 <h2 id="the-signed-inner-sandwich-of-the-reflection">The Signed Inner Sandwich of the Reflection</h2>
 <p><strong>Definition.</strong> Let $E = \operatorname{End}_F(V)$ be the endomorphism algebra with the trace pairing $\langle X,Y\rangle = \operatorname{tr}(XY)$, let $\dagger$ be its adjoint, let $r$ be a reflection of $V$ and let $\alpha$ be a grade involution of $E$; the <strong>signed inner sandwich</strong> of the reflection is</p>
 <p>$$
-\Theta^{\alpha}_{r,r^{-1}}(X) = r\,\alpha(X)\,r^{-1} .
+\mathrm{Sd}^{\alpha}_{r,r^{-1}}(X) = r\,\alpha(X)\,r^{-1} .
 $$</p>
 <p><strong>Theorem.</strong> With the grade involution $\alpha_r(X) = rXr$ defined by the reflection, the signed inner sandwich is the identity,</p>
 <p>$$
-\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id} ,
+\mathrm{Sd}^{\alpha_r}_{r,r^{-1}} = \mathrm{id} ,
 $$</p>
 <p>so the reflection is <strong>self-adjoint and unitary</strong> for its own signed sandwich,</p>
 <p>$$
-\bigl(\Theta^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \Theta^{\alpha_r}_{r,r^{-1}} ;
+\bigl(\mathrm{Sd}^{\alpha_r}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{id} = \mathrm{Sd}^{\alpha_r}_{r,r^{-1}} ;
 $$</p>
 <p>the geodesic reflection is therefore self-adjoint for the signed structure it defines, and its signed adjoint is itself.</p>
 <p><strong>Proof.</strong> The sandwich is $r(rXr)r^{-1} = X$ using $r^2 = \mathrm{id}$ and $r^{-1} = r$, which is the identity; the adjoint of the identity is the identity, and the identity is unitary. The statement is <em>The Signed Adjoint of the Reflection on a Linear Space</em>, applied to the geodesic reflection.</p>
@@ -109,13 +109,13 @@ $$</p>
 <h2 id="the-signed-adjoint-for-a-general-grade-involution">The Signed Adjoint for a General Grade Involution</h2>
 <p><strong>Theorem.</strong> For an arbitrary grade involution $\alpha$ the adjoint of the signed inner sandwich of the reflection is</p>
 <p>$$
-\boxed{\;\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\,\alpha(r)}\;} ,
+\boxed{\;\bigl(\mathrm{Sd}^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\,\alpha(r)}\;} ,
 $$</p>
 <p>the signed sandwich by the inverse image of the parameter; the sandwich is always <strong>unitary</strong>, and it is <strong>self-adjoint</strong> if and only if $\alpha(r)$ is an involution,</p>
 <p>$$
 \boxed{\;\alpha(r)^2 = \mathrm{id}\;} .
 $$</p>
-<p><strong>Proof.</strong> The adjoint formula of the signed adjoint sandwich with the parameters $r$ and $r^{-1}$ gives $\Theta^{\alpha}_{\alpha(r^{-1}),\alpha(r)} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$; the unitarity parameter is $\alpha(r^{-1})\alpha(r) = \alpha(r)^{-1}\alpha(r) = 1$, a central element, so the sandwich is unitary; the self-adjointness requires $\alpha(r^{-1}) = \alpha(r)$, that is, $\alpha(r)^{-1} = \alpha(r)$, which is $\alpha(r)^2 = \mathrm{id}$. The statement is in <em>The Signed Adjoint of the Reflection on a Linear Space</em>.</p>
+<p><strong>Proof.</strong> The adjoint formula of the signed adjoint sandwich with the parameters $r$ and $r^{-1}$ gives $\mathrm{Sd}^{\alpha}_{\alpha(r^{-1}),\alpha(r)} = \mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$; the unitarity parameter is $\alpha(r^{-1})\alpha(r) = \alpha(r)^{-1}\alpha(r) = 1$, a central element, so the sandwich is unitary; the self-adjointness requires $\alpha(r^{-1}) = \alpha(r)$, that is, $\alpha(r)^{-1} = \alpha(r)$, which is $\alpha(r)^2 = \mathrm{id}$. The statement is in <em>The Signed Adjoint of the Reflection on a Linear Space</em>.</p>
 <p><strong>Corollary.</strong> When the reflection commutes with the grade involution, in particular when $\alpha = \alpha_r$, the signed inner sandwich of the reflection is self-adjoint; the general reflection is self-adjoint for the sign it defines and unitary for every sign. The geodesic reflection is therefore self-adjoint for the grade involution of the reflection and unitary for every grade involution, and the self-adjointness fails only when the sign is carried by an element that does not commute with the reflection.</p>
 <p><strong>Proof.</strong> If $r$ commutes with $\alpha$ then $\alpha(r) = r$ and $\alpha(r)^2 = r^2 = \mathrm{id}$, so the criterion of the theorem holds; for $\alpha = \alpha_r$ the sandwich is the identity. The statement is the corollary of the model article.</p>
 <h2 id="the-geodesic-instances">The Geodesic Instances</h2>
@@ -128,7 +128,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\mathfrak{Q}(a) = 0$ the inverse $a^{-1} = a/\mathfrak{Q}(a)$ does not exist and the Clifford sandwich is undefined; in characteristic two the reflection formula is $\rho_a(x) = x - B(x,a)a$ with $B(a,a) = \mathfrak{Q}(a) \neq 0$ but the two eigenspaces $\pm1$ coalesce into the unipotent form, and the grade involution of the associated structure is the identity. The statement is the degenerate-case analysis of <em>The Signed Adjoint of the Reflection on a Linear Space</em>, <em>Clifford Algebras</em> and <em>Degenerate Clifford Algebras and the Radical</em>.</p>
 <p><strong>Remark (the boundary of the article).</strong> The self-adjointness of the geodesic reflection is a statement of the nondegenerate case, and its failure in the degenerate case is the exact boundary of the signed structure: the reflection needs the inverse of its element and the form needs the nondegeneracy for the adjoint to exist. The article marks the two failures and leaves the degenerate theory to <em>Degenerate Clifford Algebras and the Radical</em> and to the indefinite geometry of the quadratic forms.</p>
 <h2 id="summary">Summary</h2>
-<p>The geodesic reflection $\rho_a(x) = x - 2B(x,a)a/\mathfrak{Q}(a)$ preserves the form, is an involution, and is therefore <strong>self-adjoint and unitary</strong> for the form, $\rho_a^{\dagger} = \rho_a^{-1} = \rho_a$; the reflection is the signed sandwich $\Theta^{\alpha_a}_{a,a^{-1}}$ with the grade involution it defines, and that signed inner sandwich is the identity, so the reflection is self-adjoint for its own sign. For a general grade involution $\alpha$ the signed adjoint of the reflection is $\bigl(\Theta^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)^2 = \mathrm{id}$, which holds in particular when the reflection commutes with the sign. The Euclidean, the spherical and the hyperbolic reflections are the geodesic instances, self-adjoint for their ambient forms and carrying the sign of the orientation reversal. In the degenerate case the isotropic normal $\mathfrak{Q}(a) = 0$ makes the reflection element non-invertible and the signed adjoint undefined, and in characteristic two the reflection is unipotent and the sign collapses; these are the two boundaries of the self-adjointness of the geodesic reflection.</p>
+<p>The geodesic reflection $\rho_a(x) = x - 2B(x,a)a/\mathfrak{Q}(a)$ preserves the form, is an involution, and is therefore <strong>self-adjoint and unitary</strong> for the form, $\rho_a^{\dagger} = \rho_a^{-1} = \rho_a$; the reflection is the signed sandwich $\mathrm{Sd}^{\alpha_a}_{a,a^{-1}}$ with the grade involution it defines, and that signed inner sandwich is the identity, so the reflection is self-adjoint for its own sign. For a general grade involution $\alpha$ the signed adjoint of the reflection is $\bigl(\mathrm{Sd}^{\alpha}_{r,r^{-1}}\bigr)^{\dagger} = \mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$, always unitary and self-adjoint exactly when $\alpha(r)^2 = \mathrm{id}$, which holds in particular when the reflection commutes with the sign. The Euclidean, the spherical and the hyperbolic reflections are the geodesic instances, self-adjoint for their ambient forms and carrying the sign of the orientation reversal. In the degenerate case the isotropic normal $\mathfrak{Q}(a) = 0$ makes the reflection element non-invertible and the signed adjoint undefined, and in characteristic two the reflection is unipotent and the sign collapses; these are the two boundaries of the self-adjointness of the geodesic reflection.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -159,15 +159,15 @@ $$</p>
 <td>Grade involution defined by the reflection</td>
 </tr>
 <tr>
-<td>$\Theta^{\alpha}_{r,r^{-1}}(X) = r\alpha(X)r^{-1}$</td>
+<td>$\mathrm{Sd}^{\alpha}_{r,r^{-1}}(X) = r\alpha(X)r^{-1}$</td>
 <td>Signed inner sandwich</td>
 </tr>
 <tr>
-<td>$\Theta^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$</td>
+<td>$\mathrm{Sd}^{\alpha_r}_{r,r^{-1}} = \mathrm{id}$</td>
 <td>Self-adjointness of the reflection</td>
 </tr>
 <tr>
-<td>$(\Theta^{\alpha}_{r,r^{-1}})^{\dagger} = \Theta^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$</td>
+<td>$(\mathrm{Sd}^{\alpha}_{r,r^{-1}})^{\dagger} = \mathrm{Sd}^{\alpha}_{\alpha(r)^{-1},\alpha(r)}$</td>
 <td>Signed adjoint for a general sign</td>
 </tr>
 <tr>

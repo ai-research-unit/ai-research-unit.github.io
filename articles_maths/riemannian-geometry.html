@@ -114,14 +114,14 @@ $$</p>
 <p>$$
 \Gamma_{kij} = \frac{1}{2}\sum_l (g^{-1})_{kl}\bigl(\partial/\partial x_i\,g_{jl} + \partial/\partial x_j\,g_{il} - \partial/\partial x_l\,g_{ij}\bigr),
 $$</p>
-<p>which are symmetric in $i, j$, and the connection form is $\theta_{ij} = \sum_k \Gamma_{ijk}dx_k$.</p>
+<p>which are symmetric in $i, j$, and the connection form is $A_{ij} = \sum_k \Gamma_{ijk}dx_k$.</p>
 <p><strong>Remark.</strong> The symmetry $\Gamma_{kij} = \Gamma_{kji}$ is exactly the torsion-freeness, and the vanishing of $\nabla g$ is exactly the metricity. Both are visible in the Koszul formula and neither survives if the metric is dropped: a general connection has neither property, and the pair of properties is what makes the Levi-Civita connection canonical.</p>
 <h3 id="the-curvature-tensor">The Curvature Tensor</h3>
 <p><strong>Definition.</strong> The <strong>curvature tensor</strong> is</p>
 <p>$$
 R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X, Y]}Z,
 $$</p>
-<p>and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = d\theta + \theta\wedge\theta$, by the structure equation, and $\Omega$ is never used for it here.</p>
+<p>and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = dA + A\wedgeA$, by the structure equation, and $\Omega$ is never used for it here.</p>
 <p><strong>Theorem (symmetries and Bianchi identities).</strong></p>
 <p><strong>(a)</strong> $R(X, Y) = -R(Y, X)$ and $R(X, Y, Z, W) = -R(X, Y, W, Z)$, hence $R(X, Y, Z, Z) = 0$.</p>
 <p><strong>(b)</strong> $R(X, Y, Z, W) = R(Z, W, X, Y)$.</p>
@@ -267,7 +267,7 @@ $$</p>
 <td>Isometry group; a Lie group by Myers–Steenrod</td>
 </tr>
 <tr>
-<td>$\nabla$, $\Gamma_{kij}$, $\theta_{ij}$</td>
+<td>$\nabla$, $\Gamma_{kij}$, $A_{ij}$</td>
 <td>Levi-Civita connection; Christoffel symbols; connection form</td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ $$</p>
 <td>Curvature tensor and its fully covariant form</td>
 </tr>
 <tr>
-<td>$\mathcal{R} = d\theta+\theta\wedge\theta$</td>
+<td>$\mathcal{R} = dA+A\wedgeA$</td>
 <td>Curvature $2$-form in a frame; no bare $\Omega$ is used</td>
 </tr>
 <tr>

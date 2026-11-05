@@ -72,14 +72,14 @@
 <h2 id="introduction">Introduction</h2>
 <p>Every two-sided operator of <em>Two-Sided Operators on a Clifford Algebra</em> is the product of a left multiplication and a right multiplication, and the signed Hermitian sandwich of <em>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em> factors accordingly:</p>
 <p>$$
-\Theta^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},
+\mathrm{Sd}^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},
 \qquad
 \Lambda^{\alpha}_x(y)=\alpha(x)\,y,\qquad R_{x^{\dagger}}(y)=y\,x^{\dagger}.
 $$</p>
 <p>The <strong>signed left multiplication</strong> $\Lambda^{\alpha}_x$ is the one that carries the parity sign, and the <strong>dagger right multiplication</strong> $R_{x^{\dagger}}$ is the one that carries the involution of the base. This article treats the two factors separately. It is the Hermitian counterpart of <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, where the right factor is the inverse right multiplication $R_{x^{-1}}$; the general theory of the two one-sided families is <em>One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint</em> and <em>One-Sided Operators on a Clifford Algebra</em>, and nothing of it is reproved.</p>
 <p>The two factors have opposite linear behaviour, and that is the first structural fact. The signed left multiplication is defined on the whole algebra and is $\sigma$-free, so it is linear in its parameter, $\Lambda^{\alpha}_{ax}=a\,\Lambda^{\alpha}_x$. The dagger right multiplication is $\sigma$-<strong>semilinear</strong> in its parameter, $R_{(ax)^{\dagger}}=\sigma(a)R_{x^{\dagger}}$, because the dagger is. The product of the two rules is the parameter rule of the two-sided operator,</p>
 <p>$$
-\Theta^{\alpha}_{ax}=\Lambda^{\alpha}_{ax}R_{(ax)^{\dagger}}=a\,\sigma(a)\,\Lambda^{\alpha}_xR_{x^{\dagger}}=a\,\sigma(a)\,\Theta^{\alpha}_x,
+\mathrm{Sd}^{\alpha}_{ax}=\Lambda^{\alpha}_{ax}R_{(ax)^{\dagger}}=a\,\sigma(a)\,\Lambda^{\alpha}_xR_{x^{\dagger}}=a\,\sigma(a)\,\mathrm{Sd}^{\alpha}_x,
 $$</p>
 <p>so the semilinearity of the Hermitian family is entirely in the right factor and the sign is entirely in the left one.</p>
 <p>The second fact is that the adjoint of each one-sided operator, for the form $(x,y)=\mathrm{Sc}(x^{\dagger}y)$, is the one-sided operator of the dagger: $\Lambda^{\alpha}_x$ has adjoint $\Lambda^{\alpha}_{x^{\dagger}}$, and $R_{x^{\dagger}}$ has adjoint $R_{(x^{\dagger})^{\dagger}}=R_x$. On the unitary slice the adjoint is the inverse, and that is where the one-sided operators become unitary and the whole family collapses.</p>
@@ -124,9 +124,9 @@ $$</p>
 <p><em>Proof.</em> $R_{x^{\dagger}}(R_{z^{\dagger}}(y))=y\,z^{\dagger}x^{\dagger}=y\,(xz)^{\dagger}$, using $(xz)^{\dagger}=z^{\dagger}x^{\dagger}$; the value at $1$ is the definition; and the parameter rule is $(ax)^{\dagger}=\sigma(a)x^{\dagger}$ with $a$ central.</p>
 <p><strong>Proposition (the two pairings).</strong> The left and right factors commute, and</p>
 <p>$$
-\boxed{\;L_x\circ R_{x^{\dagger}}=\Theta_x,\qquad \Lambda^{\alpha}_x\circ R_{x^{\dagger}}=\Theta^{\alpha}_x\;} ,
+\boxed{\;L_x\circ R_{x^{\dagger}}=\mathrm{Sd}_x,\qquad \Lambda^{\alpha}_x\circ R_{x^{\dagger}}=\mathrm{Sd}^{\alpha}_x\;} ,
 $$</p>
-<p>the signed and unsigned Hermitian sandwiches. On the unitary slice both pairings reduce to the conjugations, $\Theta^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and $\Theta_x=\mathrm{Ad}_x$.</p>
+<p>the signed and unsigned Hermitian sandwiches. On the unitary slice both pairings reduce to the conjugations, $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ and $\mathrm{Sd}_x=\mathrm{Ad}_x$.</p>
 <p><em>Proof.</em> $\Lambda^{\alpha}_x(R_{x^{\dagger}}(y))=\alpha(x)\,y\,x^{\dagger}$; the commutation of a left and a right multiplication is associativity; the slice statement is the slice reduction of the two-sided article.</p>
 <p><strong>Proposition (the adjoint of the right factor).</strong> For the form $(x,y)=\mathrm{Sc}(x^{\dagger}y)$,</p>
 <p>$$
@@ -135,14 +135,14 @@ $$</p>
 <p><em>Proof.</em> The identity $(\mathrm P^{c}_x)^{*}=\mathrm P^{c}_{x^{\dagger}}$ of the general one-sided theory with $c={}^{\dagger}$ gives the first equality; $(x^{\dagger})^{\dagger}=x$ gives the second.</p>
 <p><strong>Corollary (the minus is in the left factor, again).</strong> The two pairings differ by the parity sign,</p>
 <p>$$
-\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x,\qquad \Lambda^{\alpha}_x=\varepsilon_x\,L_x,
+\mathrm{Sd}^{\alpha}_x=\varepsilon_x\,\mathrm{Sd}_x,\qquad \Lambda^{\alpha}_x=\varepsilon_x\,L_x,
 $$</p>
 <p>with the same $\varepsilon_x$. The right factor is common to the signed and the unsigned pairing, so the entire sign bookkeeping of the two-sided operator is carried by the left one-sided operator, exactly as in the inverse formulation.</p>
 <p><strong>Corollary (the reflection).</strong> For a vector $u$ with $\mathfrak{Q}(u)\neq0$ the pairing gives</p>
 <p>$$
-\Lambda^{\alpha}_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\,\rho_u(v),
+\Lambda^{\alpha}_u\bigl(R_{u^{\dagger}}(v)\bigr)=\mathrm{Sd}^{\alpha}_u(v)=-\mathfrak{Q}(u)\,\rho_u(v),
 \qquad
-L_u\bigl(R_{u^{\dagger}}(v)\bigr)=\Theta_u(v)=\mathfrak{Q}(u)\,\rho_u(v),
+L_u\bigl(R_{u^{\dagger}}(v)\bigr)=\mathrm{Sd}_u(v)=\mathfrak{Q}(u)\,\rho_u(v),
 $$</p>
 <p>for $v\in V$; on the unitary slice, where $\mathfrak{Q}(u)=-1$, the signed pairing gives $\rho_u$ and the unsigned pairing gives $-\rho_u$. So a reflection is produced by the pair, and the sign that selects $\rho_u$ over $-\rho_u$ is the one carried by $\Lambda^{\alpha}_u$.</p>
 <p><em>Proof.</em> $R_{u^{\dagger}}(v)=v\,u^{\dagger}=-v\,\sigma(u)$ and $\Lambda^{\alpha}_u$ multiplies by $\alpha(u)=-u$; the result is $u\,v\,\sigma(u)$, which is the vector formula of the two-sided article. The slice statement is the corollary of the reflection proposition there.</p>
@@ -169,19 +169,19 @@ $$</p>
 <p>$$
 \Lambda^{\alpha}_{e_1}(y)=-e_1y,\qquad R_{e_1^{\dagger}}(y)=-y\,e_1=-e_1y,
 $$</p>
-<p>so on this oddly supported element both factors are the same operator $-L_{e_1}=L_{-e_1}$, and their pairing is $\Theta^{\alpha}_{e_1}(y)=(-e_1)y(-e_1)=e_1ye_1$. On a vector $v$ this is $\rho_{e_1}(v)$: the one-sided factors are each a plain left multiplication by $-e_1$, and only the pair produces the reflection.</p>
+<p>so on this oddly supported element both factors are the same operator $-L_{e_1}=L_{-e_1}$, and their pairing is $\mathrm{Sd}^{\alpha}_{e_1}(y)=(-e_1)y(-e_1)=e_1ye_1$. On a vector $v$ this is $\rho_{e_1}(v)$: the one-sided factors are each a plain left multiplication by $-e_1$, and only the pair produces the reflection.</p>
 <h3 id="an-even-element">An Even Element</h3>
-<p>Let $R=e_1e_2$, even, with $R^{\dagger}=R^{-1}=e_2e_1$. Then $\Lambda^{\alpha}_R=L_R$ and $R_{R^{\dagger}}=R_{R^{-1}}$, so the factorisation is that of the inverse formulation and $\Theta^{\alpha}_R=\Theta_R=\mathrm{Ad}_R$, the half-turn. The signed and unsigned left factors agree on the even part, and the right factors differ by the defect $R\,R^{\dagger}=1$ on the slice.</p>
+<p>Let $R=e_1e_2$, even, with $R^{\dagger}=R^{-1}=e_2e_1$. Then $\Lambda^{\alpha}_R=L_R$ and $R_{R^{\dagger}}=R_{R^{-1}}$, so the factorisation is that of the inverse formulation and $\mathrm{Sd}^{\alpha}_R=\mathrm{Sd}_R=\mathrm{Ad}_R$, the half-turn. The signed and unsigned left factors agree on the even part, and the right factors differ by the defect $R\,R^{\dagger}=1$ on the slice.</p>
 <h3 id="the-semilinearity-in-the-parameter">The Semilinearity in the Parameter</h3>
 <p>Over $\mathbb{C}$ in the algebra with $e^{2}=-1$, let $x=2+ie$ and $a=i$. Then $\Lambda^{\alpha}_{ax}=i\,\Lambda^{\alpha}_x$ because the left family is linear in the parameter, while</p>
 <p>$$
 R_{(ax)^{\dagger}}=\sigma(a)\,R_{x^{\dagger}}=-i\,R_{x^{\dagger}},
 $$</p>
-<p>so the two-sided parameter rule is $\Theta^{\alpha}_{ax}=a\sigma(a)\Theta^{\alpha}_x=i(-i)\Theta^{\alpha}_x=\Theta^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>.</p>
+<p>so the two-sided parameter rule is $\mathrm{Sd}^{\alpha}_{ax}=a\sigma(a)\mathrm{Sd}^{\alpha}_x=i(-i)\mathrm{Sd}^{\alpha}_x=\mathrm{Sd}^{\alpha}_x$: the phase of the parameter cancels in the two-sided operator exactly because the left factor is linear and the right factor is antilinear. This is the one-sided form of the semilinearity correction of <em>The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The signed Hermitian sandwich factors into a <strong>signed left multiplication</strong> and a <strong>dagger right multiplication</strong>,</p>
 <p>$$
-\Theta^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},\qquad
+\mathrm{Sd}^{\alpha}_x=\Lambda^{\alpha}_x\circ R_{x^{\dagger}},\qquad
 \Lambda^{\alpha}_x(y)=\alpha(x)\,y,\quad R_{x^{\dagger}}(y)=y\,x^{\dagger}.
 $$</p>
 <p>The left factor carries the parity sign, $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha\circ L_x\circ\alpha$, it is defined on the whole algebra, it is $A$-linear in its parameter, and it composes in the order $\Lambda^{\alpha}_{xz}=\Lambda^{\alpha}_x\Lambda^{\alpha}_z$. The right factor carries the involution of the base and the dagger, $R_{(ax)^{\dagger}}=\sigma(a)R_{x^{\dagger}}$, it is also defined on the whole algebra, it composes in the same order, $R_{x^{\dagger}}R_{z^{\dagger}}=R_{(xz)^{\dagger}}$, and it is $\sigma$-semilinear in its parameter. The two factors commute and their product is the two-sided operator, whose parameter rule $a\sigma(a)$ is the product of the two one-sided rules: <strong>the semilinearity is in the right factor and the sign is in the left one</strong>. For the form $\mathrm{Sc}(x^{\dagger}y)$ the adjoint of each factor is the factor of the dagger, $(\Lambda^{\alpha}_x)^{*}=\Lambda^{\alpha}_{x^{\dagger}}$ and $(R_{x^{\dagger}})^{*}=R_x$; on the unitary slice the dagger is the inverse and both pairings collapse to the conjugations. The kernels and images of the factors do not see the sign, since $\alpha(x)$ and $x$ differ by the central unit $\varepsilon_x$, but they do see the coefficient involution, because the right factor is built from $x^{\dagger}$ and not from $x$. As in the inverse formulation, no one-sided operator acts on the quadratic space; the reflection appears only in the pairing, and there the signed pair gives $\rho_u$ where the unsigned pair gives $-\rho_u$.</p>
@@ -215,7 +215,7 @@ $$</p>
 <td>Linear left, semilinear right</td>
 </tr>
 <tr>
-<td>$\Theta^{\alpha}_x=\Lambda^{\alpha}_x R_{x^{\dagger}}$</td>
+<td>$\mathrm{Sd}^{\alpha}_x=\Lambda^{\alpha}_x R_{x^{\dagger}}$</td>
 <td>The pairing, the two-sided operator</td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@ $$</p>
 <td>Adjoints for $\mathrm{Sc}(x^{\dagger}y)$</td>
 </tr>
 <tr>
-<td>$\Theta^{\alpha}_u(v)=-\mathfrak{Q}(u)\rho_u(v)$</td>
+<td>$\mathrm{Sd}^{\alpha}_u(v)=-\mathfrak{Q}(u)\rho_u(v)$</td>
 <td>The reflection read in the pairing</td>
 </tr>
 </tbody>

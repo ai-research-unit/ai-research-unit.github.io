@@ -72,29 +72,29 @@
 <h2 id="introduction">Introduction</h2>
 <p>An involutive Banach space is a Banach space with a continuous involution, and completeness turns the generalities of the normed case into theorems: the fixed and negated subspaces are themselves Banach spaces, a continuous involution extends uniquely to the completion with the fixed subspace of the completion equal to the closure of the fixed subspace, an everywhere-defined linear involution with closed graph is continuous by the closed graph theorem, and the dual with the transposed involution is again an involutive Banach space with the same norm. Completeness also gives the automatic continuity of a linear involution with closed graph, so on a Banach space the only obstruction to continuity is the failure of the graph to be closed.</p>
 <p>This article develops the Banach theory of an involution. The completion of an involutive topological space and the extension of the involution are <em>Involutive Topological Linear Spaces</em>; the norm of an involution and the equivalent invariant norm are <em>Involutive Normed Spaces</em>; the dual norm and the transposed involution are <em>The Involution and the Dual Pairing</em> and <em>Involutive Normed Spaces</em>; the open mapping and closed graph theorems and the completeness of the dual are <em>Banach Spaces</em>, <em>The Open Mapping Theorem</em> and <em>The Closed Graph Theorem</em>. The separable and reflexive refinements and the weak topologies are <em>Duality Theory</em> and the later articles of the category. No form and no Hilbert structure is used.</p>
-<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $X$ is a Banach space over $\mathbb{K}$ with norm $\lVert\cdot\rVert$, and $\theta$ is a continuous $\varsigma$-semilinear involution of $X$ with $\theta^{2} = \mathrm{id}$; the linear case is written $T$, the fixed and negated subspaces are $X^{\theta}$ and $X^{-}$, and $\widehat{X}$ is the completion of a normed space $X$ with $\iota : X \to \widehat{X}$ the inclusion.</p>
+<p>Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $\varsigma$ is the involution of $\mathbb{K}$, $X$ is a Banach space over $\mathbb{K}$ with norm $\lVert\cdot\rVert$, and $\mathrm{J}$ is a continuous $\varsigma$-semilinear involution of $X$ with $\mathrm{J}^{2} = \mathrm{id}$; the linear case is written $T$, the fixed and negated subspaces are $X^{\mathrm{J}}$ and $X^{-}$, and $\widehat{X}$ is the completion of a normed space $X$ with $\iota : X \to \widehat{X}$ the inclusion.</p>
 <h2 id="completeness-of-the-summands-and-the-splitting">Completeness of the Summands and the Splitting</h2>
-<p><strong>Theorem (the summands are Banach spaces).</strong> Let $X$ be a Banach space and $\theta$ a continuous involution. Then the fixed subspace $X^{\theta}$ and the negated subspace $X^{-}$ are closed, hence complete, subspaces of $X$, and each is a Banach space for the restriction of the norm; in the antilinear case $X^{\theta}$ is a real Banach space.</p>
-<p><strong>Proof.</strong> The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \theta$, hence closed by <em>Involutive Normed Spaces</em>; a closed subspace of a complete normed space is complete, so each is a Banach space for the restricted norm of <em>Banach Spaces</em>. The antilinear statement is that the restriction of the scalars to $\mathbb{R}$ preserves completeness.</p>
-<p><strong>Theorem (topological direct sum).</strong> With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$ are continuous projections and</p>
+<p><strong>Theorem (the summands are Banach spaces).</strong> Let $X$ be a Banach space and $\mathrm{J}$ a continuous involution. Then the fixed subspace $X^{\mathrm{J}}$ and the negated subspace $X^{-}$ are closed, hence complete, subspaces of $X$, and each is a Banach space for the restriction of the norm; in the antilinear case $X^{\mathrm{J}}$ is a real Banach space.</p>
+<p><strong>Proof.</strong> The subspaces are the kernels of the continuous maps $\mathrm{id} \mp \mathrm{J}$, hence closed by <em>Involutive Normed Spaces</em>; a closed subspace of a complete normed space is complete, so each is a Banach space for the restricted norm of <em>Banach Spaces</em>. The antilinear statement is that the restriction of the scalars to $\mathbb{R}$ preserves completeness.</p>
+<p><strong>Theorem (topological direct sum).</strong> With $2$ invertible in $\mathbb{K}$ the averaging maps $\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$ are continuous projections and</p>
 <p>$$
-\boxed{\;X = X^{\theta} \oplus X^{-}\;}
+\boxed{\;X = X^{\mathrm{J}} \oplus X^{-}\;}
 $$</p>
-<p>is a topological direct sum of Banach spaces; the projection onto $X^{\theta}$ along $X^{-}$ is bounded, and the direct sum norm is equivalent to the norm of $X$.</p>
-<p><strong>Proof.</strong> The projections are bounded as composites of $\mathrm{id}$ and $\theta$ with the scalar $\frac12$, and they exhibit the direct sum by <em>Involutive Normed Spaces</em>; the open mapping theorem applied to the bounded bijection $X^{\theta}\oplus X^{-} \to X$, $(x_{+}, x_{-}) \mapsto x_{+} + x_{-}$, from the complete space $X^{\theta}\oplus X^{-}$ onto the complete space $X$, gives that the inverse is bounded, hence the equivalence of the norms.</p>
+<p>is a topological direct sum of Banach spaces; the projection onto $X^{\mathrm{J}}$ along $X^{-}$ is bounded, and the direct sum norm is equivalent to the norm of $X$.</p>
+<p><strong>Proof.</strong> The projections are bounded as composites of $\mathrm{id}$ and $\mathrm{J}$ with the scalar $\frac12$, and they exhibit the direct sum by <em>Involutive Normed Spaces</em>; the open mapping theorem applied to the bounded bijection $X^{\mathrm{J}}\oplus X^{-} \to X$, $(x_{+}, x_{-}) \mapsto x_{+} + x_{-}$, from the complete space $X^{\mathrm{J}}\oplus X^{-}$ onto the complete space $X$, gives that the inverse is bounded, hence the equivalence of the norms.</p>
 <h2 id="the-extension-to-the-completion">The Extension to the Completion</h2>
-<p><strong>Theorem (extension of a bounded involution).</strong> Let $X$ be a normed space with a continuous involution $\theta$ and let $\widehat{X}$ be its completion. Then $\theta$ extends uniquely to a continuous involution $\widehat{\theta}$ of $\widehat{X}$ with $\widehat{\theta}^{\,2} = \mathrm{id}$, of the same kind as $\theta$, and</p>
+<p><strong>Theorem (extension of a bounded involution).</strong> Let $X$ be a normed space with a continuous involution $\mathrm{J}$ and let $\widehat{X}$ be its completion. Then $\mathrm{J}$ extends uniquely to a continuous involution $\widehat{\mathrm{J}}$ of $\widehat{X}$ with $\widehat{\mathrm{J}}^{\,2} = \mathrm{id}$, of the same kind as $\mathrm{J}$, and</p>
 <p>$$
-\boxed{\;\lVert\widehat{\theta}\rVert = \lVert\theta\rVert\;} ;
+\boxed{\;\lVert\widehat{\mathrm{J}}\rVert = \lVert\mathrm{J}\rVert\;} ;
 $$</p>
-<p>if $\theta$ is isometric then so is $\widehat{\theta}$.</p>
+<p>if $\mathrm{J}$ is isometric then so is $\widehat{\mathrm{J}}$.</p>
 <p><strong>Proof.</strong> The extension of a continuous involution to the completion and its uniqueness are <em>Involutive Topological Linear Spaces</em>; the norm identity is the density of $X$ in $\widehat{X}$, the unit ball of $X$ being dense in that of $\widehat{X}$, so the suprema defining the two operator norms agree; the isometric statement follows.</p>
 <p><strong>Theorem (the fixed subspace of the completion).</strong> With $2$ invertible in $\mathbb{K}$, the fixed subspace of the extension is the closure of the fixed subspace,</p>
 <p>$$
-\widehat{X}^{\widehat{\theta}} = \overline{\iota(X^{\theta})} ,
+\widehat{X}^{\widehat{\mathrm{J}}} = \overline{\iota(X^{\mathrm{J}})} ,
 $$</p>
 <p>and the negated subspace of the completion is the closure of the negated subspace.</p>
-<p><strong>Proof.</strong> The direction $\overline{\iota(X^{\theta})} \subseteq \widehat{X}^{\widehat{\theta}}$ is the continuity of $\widehat{\theta}$ and the closedness of its fixed subspace; conversely, if $\hat x \in \widehat{X}^{\widehat{\theta}}$ and $x_{n} \to \hat x$ with $x_{n} \in X$, then $\pi_1x_{n} \to \pi_1\hat x = \hat x$ by the boundedness of $\pi_1$ and the continuity of $\widehat{\theta}$, and $\pi_1x_{n} \in X^{\theta}$, so $\hat x$ is a limit of fixed elements.</p>
+<p><strong>Proof.</strong> The direction $\overline{\iota(X^{\mathrm{J}})} \subseteq \widehat{X}^{\widehat{\mathrm{J}}}$ is the continuity of $\widehat{\mathrm{J}}$ and the closedness of its fixed subspace; conversely, if $\hat x \in \widehat{X}^{\widehat{\mathrm{J}}}$ and $x_{n} \to \hat x$ with $x_{n} \in X$, then $\pi_1x_{n} \to \pi_1\hat x = \hat x$ by the boundedness of $\pi_1$ and the continuity of $\widehat{\mathrm{J}}$, and $\pi_1x_{n} \in X^{\mathrm{J}}$, so $\hat x$ is a limit of fixed elements.</p>
 <p><strong>Corollary (fixed points are limits of fixed points).</strong> An element of the completion is fixed exactly when it is a limit of fixed elements of the original space; in particular a dense fixed subspace of a normed space forces the involution to be the identity, and the extension adds limits and no new fixed element.</p>
 <p><strong>Proof.</strong> The theorem together with the density criterion of <em>Involutive Topological Linear Spaces</em>.</p>
 <h2 id="automatic-continuity-on-a-banach-space">Automatic Continuity on a Banach Space</h2>
@@ -103,20 +103,20 @@ $$</p>
 <p><strong>Corollary (the open mapping form).</strong> A continuous linear surjection of Banach spaces is open, so a continuous linear involution of a Banach space is automatically a homeomorphism; the continuity cannot be improved to isometry without renorming, and $\lVert x\rVert_{T} = \sup(\lVert x\rVert, \lVert Tx\rVert)$ is the equivalent norm that makes it isometric.</p>
 <p><strong>Proof.</strong> The open mapping theorem is <em>The Open Mapping Theorem</em>; the renorming statement is <em>Involutive Normed Spaces</em>.</p>
 <h2 id="the-dual">The Dual</h2>
-<p><strong>Theorem (the dual is an involutive Banach space).</strong> The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\theta'(\varphi) = \varphi\circ\theta$ is a continuous involution of the same kind with</p>
+<p><strong>Theorem (the dual is an involutive Banach space).</strong> The dual $X^{*}$ with the dual norm is a Banach space, the transposed involution $\mathrm{J}'(\varphi) = \varphi\circ\mathrm{J}$ is a continuous involution of the same kind with</p>
 <p>$$
-\boxed{\;\lVert\theta'\rVert = \lVert\theta\rVert\;} ,
+\boxed{\;\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert\;} ,
 $$</p>
-<p>and the fixed and negated subspaces of $\theta'$ are the annihilators of $X^{-}$ and $X^{\theta}$; hence $(X^{*}, \theta')$ is an involutive Banach space, isometric exactly when $\theta$ is isometric.</p>
+<p>and the fixed and negated subspaces of $\mathrm{J}'$ are the annihilators of $X^{-}$ and $X^{\mathrm{J}}$; hence $(X^{*}, \mathrm{J}')$ is an involutive Banach space, isometric exactly when $\mathrm{J}$ is isometric.</p>
 <p><strong>Proof.</strong> The completeness of the dual is <em>Banach Spaces</em>; the transposed involution and its norm are <em>Involutive Normed Spaces</em>, and the annihilator identification is <em>The Involution and the Dual Pairing</em>.</p>
-<p><strong>Theorem (reflexivity and the second transpose).</strong> If $X$ is reflexive then $(\theta')' = \theta$ under the canonical identification $X^{**} = X$, so the operation $\theta \mapsto \theta'$ is an involution of the class of involutive Banach spaces, and $(X^{*}, \theta')$ is reflexive exactly when $X$ is.</p>
-<p><strong>Proof.</strong> The identity $(\theta')' = \theta$ is the symmetry $(\theta^{t})^{t} = \theta$ of <em>The Involution and the Dual Pairing</em> under the canonical identification; reflexivity of the dual is <em>Duality Theory</em>.</p>
+<p><strong>Theorem (reflexivity and the second transpose).</strong> If $X$ is reflexive then $(\mathrm{J}')' = \mathrm{J}$ under the canonical identification $X^{**} = X$, so the operation $\mathrm{J} \mapsto \mathrm{J}'$ is an involution of the class of involutive Banach spaces, and $(X^{*}, \mathrm{J}')$ is reflexive exactly when $X$ is.</p>
+<p><strong>Proof.</strong> The identity $(\mathrm{J}')' = \mathrm{J}$ is the symmetry $(\mathrm{J}^{t})^{t} = \mathrm{J}$ of <em>The Involution and the Dual Pairing</em> under the canonical identification; reflexivity of the dual is <em>Duality Theory</em>.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>Example (the sequence spaces).</strong> On $\ell^{n}$, $1 \leq p \leq \infty$, and on $c_{0}$ the coordinatewise conjugation is an antilinear isometric involution, so each is an involutive Banach space with $\lVert\theta\rVert = 1$; the fixed subspace is the corresponding real sequence space, itself a Banach space over $\mathbb{R}$, and the dual of $\ell^{n}$ with the transposed involution is $\ell^{m}$ with the coordinatewise conjugation.</p>
+<p><strong>Example (the sequence spaces).</strong> On $\ell^{n}$, $1 \leq p \leq \infty$, and on $c_{0}$ the coordinatewise conjugation is an antilinear isometric involution, so each is an involutive Banach space with $\lVert\mathrm{J}\rVert = 1$; the fixed subspace is the corresponding real sequence space, itself a Banach space over $\mathbb{R}$, and the dual of $\ell^{n}$ with the transposed involution is $\ell^{m}$ with the coordinatewise conjugation.</p>
 <p><strong>Example (the function spaces).</strong> On $C(K)$ for a compact Hausdorff $K$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real Banach space $C(K,\mathbb{R})$; on $L^{n}(\mu)$ the map $f \mapsto \overline{f}$ is an antilinear isometric involution with fixed subspace the real space $L^{n}(\mu,\mathbb{R})$, the completions of the corresponding finitely supported spaces.</p>
 <p><strong>Example (the completion of an involutive space).</strong> On $\mathbb{C}[x]$ with the $(x)$-adic topology the involution $\varphi_{0}(f)(x) = f(-x)$ is continuous with fixed subspace the even polynomials; its extension to the completion $\mathbb{C}[[x]]$ has fixed subspace the even power series, the closure of the even polynomials, and the extension adds limits and no new fixed element.</p>
 <h2 id="summary">Summary</h2>
-<p>On a Banach space a continuous involution has closed fixed and negated subspaces, which are therefore Banach spaces for the restricted norms; when $2$ is invertible the averaging projections exhibit the space as the topological direct sum $X^{\theta}\oplus X^{-}$, with the norms equivalent by the open mapping theorem. A continuous involution of a normed space extends uniquely to a continuous involution of the completion with the same norm and the same kind, and with $2$ invertible the fixed subspace of the completion is the closure of the fixed subspace, so the extension adds limits and no new fixed element. An everywhere-defined linear involution of a Banach space with closed graph is continuous by the closed graph theorem, and a continuous linear involution is automatically a homeomorphism. The dual with the transposed involution is again an involutive Banach space, $\lVert\theta'\rVert = \lVert\theta\rVert$, isometric exactly when $\theta$ is, with the fixed and negated parts the annihilators of the summands; when $X$ is reflexive the operation is an involution, $(\theta')' = \theta$. The sequence and function spaces with conjugation and the completion of the involutive $\mathbb{C}[x]$ are the standard examples. The metrisable locally convex case is <em>Involutive Fréchet Spaces</em>.</p>
+<p>On a Banach space a continuous involution has closed fixed and negated subspaces, which are therefore Banach spaces for the restricted norms; when $2$ is invertible the averaging projections exhibit the space as the topological direct sum $X^{\mathrm{J}}\oplus X^{-}$, with the norms equivalent by the open mapping theorem. A continuous involution of a normed space extends uniquely to a continuous involution of the completion with the same norm and the same kind, and with $2$ invertible the fixed subspace of the completion is the closure of the fixed subspace, so the extension adds limits and no new fixed element. An everywhere-defined linear involution of a Banach space with closed graph is continuous by the closed graph theorem, and a continuous linear involution is automatically a homeomorphism. The dual with the transposed involution is again an involutive Banach space, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$, isometric exactly when $\mathrm{J}$ is, with the fixed and negated parts the annihilators of the summands; when $X$ is reflexive the operation is an involution, $(\mathrm{J}')' = \mathrm{J}$. The sequence and function spaces with conjugation and the completion of the involutive $\mathbb{C}[x]$ are the standard examples. The metrisable locally convex case is <em>Involutive Fréchet Spaces</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -131,15 +131,15 @@ $$</p>
 <td>Banach space and its norm</td>
 </tr>
 <tr>
-<td>$\theta$, $T$</td>
+<td>$\mathrm{J}$, $T$</td>
 <td>Continuous involution; the linear case</td>
 </tr>
 <tr>
-<td>$X^{\theta}$, $X^{-}$</td>
+<td>$X^{\mathrm{J}}$, $X^{-}$</td>
 <td>Closed summands, Banach spaces</td>
 </tr>
 <tr>
-<td>$\pi_{1,2} = \frac12(\mathrm{id}\pm\theta)$</td>
+<td>$\pi_{1,2} = \frac12(\mathrm{id}\pm\mathrm{J})$</td>
 <td>Bounded averaging projections</td>
 </tr>
 <tr>
@@ -147,19 +147,19 @@ $$</p>
 <td>Completion and inclusion of a normed space</td>
 </tr>
 <tr>
-<td>$\widehat{\theta}$, $\lVert\widehat{\theta}\rVert = \lVert\theta\rVert$</td>
+<td>$\widehat{\mathrm{J}}$, $\lVert\widehat{\mathrm{J}}\rVert = \lVert\mathrm{J}\rVert$</td>
 <td>Extended involution and its norm</td>
 </tr>
 <tr>
-<td>$\widehat{X}^{\widehat{\theta}} = \overline{\iota(X^{\theta})}$</td>
+<td>$\widehat{X}^{\widehat{\mathrm{J}}} = \overline{\iota(X^{\mathrm{J}})}$</td>
 <td>Fixed subspace of the completion</td>
 </tr>
 <tr>
-<td>$\theta'$, $\lVert\theta'\rVert = \lVert\theta\rVert$</td>
+<td>$\mathrm{J}'$, $\lVert\mathrm{J}'\rVert = \lVert\mathrm{J}\rVert$</td>
 <td>Transposed involution and its norm</td>
 </tr>
 <tr>
-<td>$(\theta')' = \theta$</td>
+<td>$(\mathrm{J}')' = \mathrm{J}$</td>
 <td>Reflexive symmetry</td>
 </tr>
 </tbody>

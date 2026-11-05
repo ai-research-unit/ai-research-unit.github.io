@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Subscripts of the Gradient: A Census and the Five Names Retired — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-subscripts-of-the-gradient-a-census-and-the-five-names-retired"><strong>The Subscripts of the Gradient: A Census and the Five Names Retired</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>One hundred and seventy-four gradients in the physics corpus carry a subscript. Every one of them is an index or an argument, and none names an operator. Twenty-six further writings have been retired in eight articles and in the conventions: seven chart letters and nineteen name letters in five spellings.</p>
+<p><strong>The question this article answers.</strong> Which subscripted gradients stand in the corpus, in which article, written how, and why does each keep its mark? And which have been removed, with what put in their place?</p>
+<p><strong>The method.</strong> A scan of the four hundred and twelve files of <code>articles_physics</code>, matching <code>\nabla</code>, <code>\tilde\nabla</code>, <code>\tilde{\nabla}</code> and <code>\vec\nabla</code> followed by an underscore, reading the subscript to its closing brace or its first non-letter. The counts below are that scan. The retirements are the difference between the scan before the pass and the scan after.</p>
+<p><strong>The answer, stated first.</strong> A low mark on the gradient names the slot the derivative is taken in: a coordinate index, a frame leg, a spinor index, a vector field, a parameter, or the sign of a shift. A low mark never names a second operator, because there is no second operator. The gradient is one object, and every variant of it the corpus needs is already carried by the caret, $\tilde\nabla^{\natural}$, $\tilde\nabla^{\mathrm{gco}}$, $\tilde\nabla^{\mathrm{Ad}}$.</p>
+<h2 id="the-rule-that-decides">The Rule That Decides</h2>
+<p><strong>Two paragraphs of the conventions carry the rule.</strong> <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, states the first:</p>
+<blockquote>
+<p><strong>A subscript on an operator names its degree, its place or its argument.</strong> The rule governs the derivative of a field, which names its variable after the $\partial$. It does not forbid a low mark on an operator that differentiates nothing: the chain boundary is $\partial_n:C_n\to C_{n-1}$, with the degree in the subscript, and a derivative taken along a vector is $\nabla_X$, with the vector.</p>
+</blockquote>
+<p>The same section states the second:</p>
+<blockquote>
+<p><strong>A variant of an operator is a caret, and a chart is not a variant.</strong> The gradient carries $\natural$ or a label on the caret, $\tilde\nabla^{\natural}$ and $\tilde\nabla^{\mathrm{gco}}$, and it never takes a letter in the low slot for the coordinates it is read in.</p>
+</blockquote>
+<p><strong>The objection, and the answer.</strong> A reader may object that the two paragraphs contradict the request they came from: a corpus with $174$ subscripted gradients has not removed its subscripts. The answer is that the request was never about the position of a mark. It was about a name standing where a slot belongs. The gradient $\nabla_\mu$ says which derivative; the grading $\tilde\nabla_{\mathrm E}$ said which operator, and there is only one.</p>
+<p><strong>What a name costs.</strong> A name in the low slot implies a family of operators, and a family needs a definition for each member. The corpus never gave one. Neither the chart letter nor any of the five letters removed below is expanded into components anywhere, before or after the pass, because each is the same four terms.</p>
+<h2 id="the-chart-letter-and-why-it-went">The Chart Letter, and Why It Went</h2>
+<p><strong>The substitution, not the operator.</strong> The Wick rotation is $t'\mapsto-i\tau$, applied to one coordinate. Since $Q_t=ict'$, the coordinate becomes $Q_t=c\tau$, and the four terms of</p>
+<p>$$
+\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu
+$$</p>
+<p>are each the derivative with respect to the same coordinate under the same name. Nothing in the sum is renamed. What changes is the sign of the time term alone, $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$ on the material sector against $+\partial^2/\partial x_4^2$ on the real-quaternion slice.</p>
+<p><strong>The consequence, checked.</strong> The difference between the operator read at $t'$ and the operator read at $\tau$ is that one sign, and the sign is a property of the chart. A letter naming the chart therefore names a coordinate, and a coordinate is a substitution.</p>
+<p><strong>What was retired.</strong> Seven gradients, four occurrences of $\Box_{\mathrm E}$ and eight of $\mathbb{D}_{\mathrm E}$, in two articles.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>writing</th>
+<th>count</th>
+<th>article</th>
+<th>replaced by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{\nabla}_{E}$</td>
+<td>2</td>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>$\tilde{\nabla}$ on the real coordinates</td>
+</tr>
+<tr>
+<td>$\Box_E$</td>
+<td>2</td>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>$\Box$, elliptic on that slice</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm E}$, $\tilde\nabla_{\mathrm E}^{\natural}$</td>
+<td>5</td>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
+</tr>
+<tr>
+<td>$\Box_{\mathrm E}$</td>
+<td>2</td>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\Box$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathrm E}$</td>
+<td>8</td>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\mathbb{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two displays, before and after.</strong> In <em>Instantons and Solitons</em>, the definition of the rotated gradient read</p>
+<p>$$
+\tilde{\nabla}_E=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3,
+\qquad
+\Box_E=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2 .
+$$</p>
+<p>Both sides are now written with the corpus glyphs, and the two displays are separated by the sentence that says what the rotation did:</p>
+<p>$$
+\tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3,
+$$</p>
+<p>$$
+\Box=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2 .
+$$</p>
+<p>In <em>The Fermionic Path Integral</em>, the Euclidean action read</p>
+<p>$$
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\mathrm{Sc}\big(\bar\Psi_L\,\tilde\nabla_{\mathrm{E}}\tilde\Psi_R+\bar\Psi_R\,\tilde\nabla_{\mathrm{E}}^{\natural}\tilde\Psi_L+m\,(\bar\Psi_L\tilde\Psi_L+\bar\Psi_R\tilde\Psi_R)\big),
+$$</p>
+<p>and it now reads</p>
+<p>$$
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\mathrm{Sc}\big(\bar\Psi_L\,\tilde\nabla\tilde\Psi_R+\bar\Psi_R\,\tilde\nabla^{\natural}\tilde\Psi_L+m\,(\bar\Psi_L\tilde\Psi_L+\bar\Psi_R\tilde\Psi_R)\big),
+$$</p>
+<p>with the substitution written on the coordinate in the sentence that follows.</p>
+<p><strong>The cost of a table row.</strong> In each article one table row disappeared with the name, and the fact it carried moved into the row of the operator that remains. The row of $\mathbb{D}$ now ends "... and the same pair read at $t'=-i\tau$ is written $\mathbb{D}$ still", and the row of $\Box$ now reads "hyperbolic on $Q_t=ict'$, elliptic on $Q_t=c\tau$".</p>
+<h2 id="the-five-names-retired">The Five Names Retired</h2>
+<p><strong>Nineteen gradients in six articles.</strong> Each carried a letter that named a variant of the operator rather than a slot of the derivative. None survives.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>writing</th>
+<th>count</th>
+<th>article</th>
+<th>retired to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{\nabla}_{\mathrm{Ad}}$</td>
+<td>4</td>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html">The Poincaré Group and the Biquaternion Frame</a></td>
+<td>$\tilde{\nabla}^{\mathrm{Ad}}$, the caret</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_A$</td>
+<td>4</td>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>the substitution, written out</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}_{\mathrm{stat}}$</td>
+<td>3</td>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>$\vec\nabla$, the vector part</td>
+</tr>
+<tr>
+<td>$\nabla_{3}$</td>
+<td>6</td>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a>, <a href="../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html">Gauge Transformations of the First and Second Kind</a></td>
+<td>$\vec\nabla$, the vector part</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{gen}$</td>
+<td>2</td>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>$\tilde\nabla^{\mathrm{gco}}$, the caret</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-conjugated-gradient">The Conjugated Gradient</h3>
+<p><strong>The gradient transported by a rotor.</strong> The article defines the operator in the rotated basis,</p>
+<p>$$
+\tilde{\nabla}_{\mathrm{Ad}} := \sum_\mu \left(\tilde U^{\mathrm{lor}}\,e_\mu\,\tilde U^{\mathrm{lor}}{}^{-1}\right)\partial/\partial Q_\mu ,
+$$</p>
+<p>and proves the covariance of the biwave equation on it.</p>
+<p><strong>The letter names a variant, so it moves to the caret.</strong> The corpus already writes its one genuine variant of the gradient there, $\tilde\nabla^{\mathrm{gco}}$, and the caret is the slot the conventions reserve for a name. The definition now reads</p>
+<p>$$
+\tilde\nabla^{\mathrm{Ad}} := \sum_\mu \left(\tilde U^{\mathrm{lor}}\,e_\mu\,\tilde U^{\mathrm{lor}}{}^{-1}\right)\partial/\partial Q_\mu ,
+$$</p>
+<p>with the boxed covariance statement and the notation table changed with it. The four occurrences are the definition, the boxed form, the sentence after it, and the table row.</p>
+<h3 id="the-gauged-gradient-of-the-exercise">The Gauged Gradient of the Exercise</h3>
+<p><strong>A name without a body.</strong> The exercise defined</p>
+<p>$$
+\tilde\nabla_A=\tilde\nabla-\frac{iq}{\hbar}\tilde A,
+\qquad
+\tilde A=\Phi e_t-\vec A,
+$$</p>
+<p>and referred to its "pure part $D_3^A$" three more times. The letter $A$ names the potential, not a slot of the derivative, and the corpus has a glyph for this family already: $\tilde\nabla^{\mathrm{gco}}$.</p>
+<p><strong>Why the name was not simply borrowed.</strong> The corpus writes the potential with an $i$ and a $c$ in its time coefficient, $\tilde A=i\phi/c\,e_t+\vec A$ in <em>The Covariant Derivative and the Gauge Connection in Biquaternionic Form</em>, and with the opposite sign in the space part. The exercise writes $\tilde A=\Phi e_t-\vec A$ with the charge $q$ in place of $ϙ$. Borrowing the glyph would have set two displays of one symbol against each other.</p>
+<p><strong>What replaced it.</strong> The substitution itself, which is what the sentence before the display was already stating:</p>
+<p>$$
+\tilde\nabla\longmapsto\tilde\nabla-\frac{iq}{\hbar}\tilde A,
+\qquad
+\tilde A=\Phi e_t-\vec A,
+\qquad
+\vec A=\sum_kA_k\vec e_k,
+\qquad
+\sum_k\vec e_k\pi_k=-i\hbar\,D_3^A .
+$$</p>
+<p>The prose now calls it "the gauged gradient" and names the corpus glyph once, with the potential written out, so that a reader who knows the family sees the relation and a reader who does not loses nothing.</p>
+<h3 id="the-static-gradient">The Static Gradient</h3>
+<p><strong>A restriction to three terms.</strong> The static Maxwell equation was written</p>
+<p>$$
+\tilde{\nabla}_{\mathrm{stat}} \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \tilde{\nabla}_{\mathrm{stat}} = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z .
+$$</p>
+<p>The right-hand display is the vector part of the gradient, which the corpus writes $\vec\nabla$ in five articles.</p>
+<p><strong>The letter names the chart, not the operator.</strong> "Static" says which three terms are kept, and the three terms are the ones the vector part keeps. The equation now reads</p>
+<p>$$
+\vec\nabla \tilde{F} = -\sqrt{\mu}\,\tilde{J}, \qquad \vec\nabla = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z ,
+$$</p>
+<p>and the sentence after it says that $\vec\nabla$ is the vector part, the three spatial terms of $\tilde\nabla$ alone.</p>
+<h3 id="the-three-dimensional-gradient">The Three-Dimensional Gradient</h3>
+<p><strong>A count of dimensions.</strong> The electron article wrote the two-sided equation of V. V. Kravchenko as</p>
+<p>$$
+\mathcal{N}F = \Big(i\frac{\partial}{\partial t'}+\nabla_{3}\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
+$$</p>
+<p>and defined $\nabla_{3} = \sum_k\vec e_k\,\partial/\partial Q_k$. The subscript counts three directions. It does not say which derivative is taken, because the sum already does.</p>
+<p><strong>The corpus already has the glyph, and the article already proves it.</strong> The same display states the identity $-\tilde\nabla^{\natural}F=\mathcal{N}F$ at $c=1$. Substituting $\tilde\nabla=e_t\partial/\partial Q_t+\vec\nabla$ and $\partial/\partial Q_t=-i\partial/\partial t'$ gives $-\tilde\nabla^{\natural}=i\partial/\partial t'+\vec\nabla$, so the operator in the bracket is $\vec\nabla$ and nothing else. The five occurrences now read $\vec\nabla$: the display, the definition sentence, the table row on derivatives, and the two in the notation table.</p>
+<p><strong>The sixth occurrence.</strong> The gauge-transformations article quotes the repaired printed gradient as $\nabla=\partial/\partial t'\,e_t+i\nabla_3$, whose spatial part it prints three lines earlier in full as $\partial/\partial Q_x\,\vec e_x+\partial/\partial Q_y\,\vec e_y+\partial/\partial Q_z\,\vec e_z$. That is $\vec\nabla$, and the line now says so.</p>
+<h3 id="the-generalized-gradient">The Generalized Gradient</h3>
+<p><strong>A name for the gauged family.</strong> The Klein–Gordon article records the failure of the correspondence under minimal coupling,</p>
+<p>$$
+\tilde\nabla^{\natural}_{gen}\tilde\nabla_{gen}\neq\tilde\nabla_{gen}\tilde\nabla^{\natural}_{gen},
+$$</p>
+<p>with the substitution $\tilde\nabla\mapsto\tilde\nabla-ie\tilde A$ in the sentence before it.</p>
+<p><strong>The family has a caret name.</strong> At $\hbar=1$ and $ϙ=-e$ the substitution is the corpus one, $\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$. The display now reads</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco},\natural}\tilde\nabla^{\mathrm{gco}}\neq\tilde\nabla^{\mathrm{gco}}\tilde\nabla^{\mathrm{gco},\natural},
+$$</p>
+<p>and the failure is stated on the glyph the corpus uses for the operator that fails.</p>
+<h2 id="the-census">The Census</h2>
+<p><strong>Four groups, one hundred and seventy-four tokens, twenty-four files.</strong> Every group below keeps its marks.</p>
+<h3 id="gradients-over-a-coordinate-index">Gradients over a Coordinate Index</h3>
+<p><strong>Seventy-seven tokens.</strong> The subscript is one of the four coordinate letters, and the derivative is read in that coordinate.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spelling</th>
+<th>count</th>
+<th>articles, with their counts</th>
+<th>the formula as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nabla_\mu$</td>
+<td>36</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 12, <a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection</a> 9, <a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor</a> 6, <a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a> 3, <a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework</a> 2, <a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation</a> 2, <a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current</a> 1, <a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly</a> 1</td>
+<td>$\Box_g = g^{\mu\nu}\nabla_\mu\nabla_\nu$; $\nabla_\mu g_{\nu\rho}=0$; $\sum_\mu\nabla_\mu T_{\mu\nu}=0$</td>
+</tr>
+<tr>
+<td>$\nabla_\nu$</td>
+<td>12</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 5, <a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor</a> 2, <a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect</a> 2, <a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a> 1, <a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework</a> 1, <a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly</a> 1</td>
+<td>$g^{\mu\nu}\nabla_\mu\nabla_\nu$; $i\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda=0$</td>
+</tr>
+<tr>
+<td>$\nabla_\rho$</td>
+<td>12</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 6, <a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme</a> 5, <a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework</a> 1</td>
+<td>$\nabla_\rho s_\nu = \partial/\partial x_\rho s_\nu - \Gamma_{\mu\nu\rho}s_\mu$; $\nabla_\rho g_{\mu\nu} = -2\,g_{\mu\nu}\,\tilde A_\rho$</td>
+</tr>
+<tr>
+<td>$\nabla_k$</td>
+<td>8</td>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem</a> 7, <a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model</a> 1</td>
+<td>$i\Bigl((\nabla_t\tilde\Psi)\vec e_x+\sum_k\vec e_k(\nabla_k\tilde\Psi)\vec e_y\Bigr)+\ldots=m\tilde\Psi$</td>
+</tr>
+<tr>
+<td>$\nabla_\lambda$</td>
+<td>4</td>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a> 2, <a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework</a> 2</td>
+<td>$\nabla_\lambda g_{\mu\nu}=0$, $\nabla_\lambda J_{\nu\lambda}=0$</td>
+</tr>
+<tr>
+<td>$\nabla_\sigma$</td>
+<td>4</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 3, <a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework</a> 1</td>
+<td>$\Omega_{\rho\sigma} = \nabla_\rho\omega_\sigma - \nabla_\sigma\omega_\rho + [\omega_\rho,\omega_\sigma]$</td>
+</tr>
+<tr>
+<td>$\nabla_t$</td>
+<td>1</td>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model</a> 1</td>
+<td>$(\nabla_t\tilde\Psi)\vec e_x+\sum_k\vec e_k(\nabla_k\tilde\Psi)\vec e_y$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gradients-over-a-frame-or-spinor-index">Gradients over a Frame or Spinor Index</h3>
+<p><strong>Nineteen tokens.</strong> The subscript is a leg of a tetrad or a pair of spinor indices, and it is the index that the covariant derivative is contracted with.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spelling</th>
+<th>count</th>
+<th>articles, with their counts</th>
+<th>the formula as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nabla_a$</td>
+<td>8</td>
+<td><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism</a> 8</td>
+<td>$\Gamma_{abc} := (\nabla_a e_b)\cdot e_c$, $\nabla_a := \nabla_{e_a}$</td>
+</tr>
+<tr>
+<td>$\nabla_{AB}$</td>
+<td>6</td>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme</a> 6</td>
+<td>$\nabla_{AB}F_{CD}=L_{CA}R_{BD}$; $\nabla_{AB}\Sigma = \varphi_A\psi_B$</td>
+</tr>
+<tr>
+<td>$\nabla_{AA'}$</td>
+<td>2</td>
+<td><a href="../articles_physics/congruence-twistors-and-the-fields-they-generate.html">Congruence Twistors and the Fields They Generate</a> 2</td>
+<td>$\Phi_{B'A}=\sum_{A}\iota_{A}\nabla_{AA'}\xi_{B'}$</td>
+</tr>
+<tr>
+<td>$\nabla_{e_a}$</td>
+<td>1</td>
+<td><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism</a> 1</td>
+<td>$\nabla_a := \nabla_{e_a}$</td>
+</tr>
+<tr>
+<td>$\nabla_{0B'}$, $\nabla_{1B'}$</td>
+<td>2</td>
+<td><a href="../articles_physics/congruence-twistors-and-the-fields-they-generate.html">Congruence Twistors and the Fields They Generate</a> 2</td>
+<td>$\nabla_{0B'}\varphi_{1}-\nabla_{1B'}\varphi_{0}=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gradients-over-an-argument">Gradients over an Argument</h3>
+<p><strong>Thirty-nine tokens.</strong> The subscript is the object the derivative is taken along, or the parameter it is taken with respect to. This is the class the conventions name explicitly, with the example $\nabla_X$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spelling</th>
+<th>count</th>
+<th>articles, with their counts</th>
+<th>the formula as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nabla_\kappa$</td>
+<td>15</td>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a> 7, <a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> 7, <a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution</a> 1</td>
+<td>$\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\tilde{\nabla}_\kappa \tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\,\partial/\partial Q_t + \kappa^2$</td>
+</tr>
+<tr>
+<td>$\nabla_{\tilde q}$</td>
+<td>8</td>
+<td><a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics</a> 8</td>
+<td>$\nabla_{\tilde q}f=\sum_\mu e_\mu\frac{\partial f}{\partial q_\mu}$</td>
+</tr>
+<tr>
+<td>$\nabla_{\tilde p}$</td>
+<td>6</td>
+<td><a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics</a> 6</td>
+<td>$\{f,g\}=\mathrm{Sc}\!\left((\nabla_{\tilde q}f)^{\natural}\,\nabla_{\tilde p}g\right)-\mathrm{Sc}\!\left((\nabla_{\tilde p}f)^{\natural}\,\nabla_{\tilde q}g\right)$</td>
+</tr>
+<tr>
+<td>$\nabla_X$</td>
+<td>3</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 2, <a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a> 1</td>
+<td>$R(X,Y)Z = \nabla_X\nabla_Y Z - \nabla_Y\nabla_X Z - \nabla_{[X,Y]}Z$</td>
+</tr>
+<tr>
+<td>$\nabla_Y$</td>
+<td>2</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 2</td>
+<td>the same display</td>
+</tr>
+<tr>
+<td>$\nabla_R$</td>
+<td>2</td>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases</a> 2</td>
+<td>$\gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR$</td>
+</tr>
+<tr>
+<td>$\nabla_{[X,Y]}$</td>
+<td>1</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a> 1</td>
+<td>the same display</td>
+</tr>
+<tr>
+<td>$\nabla_\xi$</td>
+<td>1</td>
+<td><a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect</a> 1</td>
+<td>$\nabla_\xi\xi = \xi$</td>
+</tr>
+<tr>
+<td>$\nabla_{\vec k}$</td>
+<td>1</td>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets</a> 1</td>
+<td>$\nabla_{\vec k}\varphi = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{\hbar\vec k}{m}t'$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="gradients-carrying-a-sign-pair">Gradients Carrying a Sign Pair</h3>
+<p><strong>Thirty-nine tokens, one article.</strong> The shift of the gradient by the oscillator term carries the sign of the shift in the subscript, and the sign is the whole content of the mark: $\vec\nabla_+$ and $\vec\nabla_-$ are two different operators, defined one from the other.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spelling</th>
+<th>count</th>
+<th>article, with its count</th>
+<th>the formula as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec\nabla_-$</td>
+<td>18</td>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a> 18</td>
+<td>$\vec\nabla_-\vec\nabla_+$ and $\vec\nabla_+\vec\nabla_-$, the two orders of the product</td>
+</tr>
+<tr>
+<td>$\vec\nabla_+$</td>
+<td>17</td>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a> 17</td>
+<td>$\vec\nabla_-\vec\nabla_+$ and $\vec\nabla_+\vec\nabla_-$</td>
+</tr>
+<tr>
+<td>$\vec\nabla_\pm$</td>
+<td>2</td>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a> 2</td>
+<td>$\vec\nabla_\pm:=\vec\nabla\pm\frac{m\omega}{\hbar}\,\vec r$</td>
+</tr>
+<tr>
+<td>$\vec\nabla_\mp$</td>
+<td>2</td>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a> 2</td>
+<td>$\mathcal{Q}_\pm:\ \psi\longmapsto i\hbar\,\bigl(\vec\nabla_\mp\psi\bigr)\omega$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="outside-the-gradient">Outside the Gradient</h2>
+<p><strong>Three d'Alembertians and two Laplacian families still carry the E.</strong> They are not gradients, and they were left alone in this pass. $\Box_E$ stands once in <a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral</a> line 194 and twice in <a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method</a> lines 186 and 383; $\Delta_E$ stands fifteen times in three path-integral articles, as the name of the Euclidean quadratic form alongside $G_E$, $S_E$ and $k_E$.</p>
+<p><strong>The reason for leaving them.</strong> The d'Alembertian is the square of the gradient, so the argument above applies to it unchanged: $\Box$ read at $Q_t=c\tau$ is elliptic and needs no letter. The name $\Delta_E$, by contrast, is bound to three other symbols in the same displays, and a rename there is a rename of the whole Euclidean section, not of one glyph. The census of that family belongs to a pass of its own.</p>
+<p><strong>The Dolbeault label is gone from the physics side.</strong> The conventions paragraph that cited $\bar\partial_E$ now cites $\partial_n$ and $\nabla_X$ instead. The maths corpus keeps $\bar\partial_E$ in three articles, where it is the $(0,1)$-part of a connection on a holomorphic bundle and names a genuine second operator.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The counts.</strong> One hundred and seventy-four subscripted gradients remain in twenty-four physics articles. Twenty-six of them were retired in eight articles and in the conventions: seven chart letters, and nineteen name letters in five spellings. Twelve more writings went with them on the operators built from the gradient, four of $\Box$ and eight of $\mathbb{D}$.</p>
+<p><strong>The rule.</strong> A low mark names a slot: a coordinate index, a frame leg, a spinor index, an argument, or the sign of a shift. A name goes on the caret: $\tilde\nabla^{\natural}$, $\tilde\nabla^{\mathrm{gco}}$, $\tilde\nabla^{\mathrm{Ad}}$. A chart goes in the substitution: $t'\mapsto-i\tau$.</p>
+<p><strong>The check.</strong> The five name letters are all expansions of the same four terms. None of them was ever expanded, because none names a second operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is in this article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the biquaternionic gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$, defined once in <em>Operator and Calculus Conventions</em></td>
+</tr>
+<tr>
+<td>$\vec\nabla$</td>
+<td>its vector part, $\sum_k\vec e_k\partial/\partial Q_k$, written in five physics articles</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>the quaternion conjugate, the partner acting from the right</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>the gauge-covariant gradient, $\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$, a caret name</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{Ad}}$</td>
+<td>the gradient in the rotor-transported basis; formerly $\tilde\nabla_{\mathrm{Ad}}$</td>
+</tr>
+<tr>
+<td>$\Box$, $\Box_E$</td>
+<td>the d'Alembertian and the name retired from it; $\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, $\mathbb{D}_{\mathrm E}$</td>
+<td>the pair operator and the name retired from it, $\mathbb{D}^2=\Box I$</td>
+</tr>
+<tr>
+<td>$\nabla_\mu$, $\nabla_a$, $\nabla_X$</td>
+<td>the three kinds of low mark that stay: index, frame leg, argument</td>
+</tr>
+<tr>
+<td>$Q_t$</td>
+<td>the temporal coefficient, $ict'$ on the material sector and $c\tau$ on the real-quaternion slice</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>Conventions for Derivation</em> and §<em>The Gradient</em>, for the two paragraphs the rule rests on and for the definition of $\tilde\nabla$ and $\Box$.</li>
+<li><a href="the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.html">The Labels of the Gradient: An Inventory and the Return to the Caret</a>, for the restriction labels $\tilde\nabla\big|_{\mathbb{M}_-}$ and the argument that a chart is a substitution.</li>
+<li><a href="the-pair-operator-an-inventory-of-the-glyph.html">The Pair Operator: An Inventory of the Glyph</a>, for $\mathbb{D}$, its factor subscript, and the retired $\mathbb{D}_{\mathrm E}$ row.</li>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, §<em>The Elements and their Coefficients</em>, for the caret as the slot of a name.</li>
+<li><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and the Gauge Connection in Biquaternionic Form</a>, for the definition of $\tilde\nabla^{\mathrm{gco}}$ and the potential $\tilde A=i\phi/c\,e_t+\vec A$ that the exercise does not use.</li>
+<li><a href="../articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>, for the rotation as a relabelling inside the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

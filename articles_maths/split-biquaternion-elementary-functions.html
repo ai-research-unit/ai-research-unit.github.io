@@ -85,9 +85,9 @@ $$</p>
 $$</p>
 <p>The <strong>quaternion polar form</strong> of a nonzero quaternion $\tilde q \in \mathbb{H}$ is</p>
 <p>$$
-\tilde q = r \exp(\mu \theta) = r(\cos\theta + \mu \sin\theta),
+\tilde q = r \exp(\mu \lVert\vec Q\rVert) = r(\cos\lVert\vec Q\rVert + \mu \sin\lVert\vec Q\rVert),
 $$</p>
-<p>where $r = |\tilde q| \geq 0$, $\mu$ is a unit pure real quaternion (the axis), and $\theta \in \mathbb{R}$ is the angle. The axis is defined when the vector part of $\tilde q$ is nonzero; when $\tilde q$ is a real scalar, the polar form reduces to $\tilde q = r$ (or $\tilde q = -r$, with $\theta = \pi$).</p>
+<p>where $r = |\tilde q| \geq 0$, $\mu$ is a unit pure real quaternion (the axis), and $\lVert\vec Q\rVert \in \mathbb{R}$ is the angle. The axis is defined when the vector part of $\tilde q$ is nonzero; when $\tilde q$ is a real scalar, the polar form reduces to $\tilde q = r$ (or $\tilde q = -r$, with $\lVert\vec Q\rVert = \pi$).</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>exponential</strong> of a split biquaternion $\tilde{Q}$ is defined by the power series</p>
@@ -122,15 +122,15 @@ $$</p>
 $$</p>
 <p>The exponential of the vector part depends on the split complex norm</p>
 <p>$$
-\theta = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}.
+\lVert\vec Q\rVert = \sqrt{Q_x^2 + Q_y^2 + Q_z^2}.
 $$</p>
-<p>Since $\vec Q^2 = -\theta^2 e_t$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \theta^{2m}/(2m)!$ and $\sum_m (-1)^m \theta^{2m+1}/(2m+1)!$, so</p>
+<p>Since $\vec Q^2 = -\lVert\vec Q\rVert^2 e_t$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \lVert\vec Q\rVert^{2m}/(2m)!$ and $\sum_m (-1)^m \lVert\vec Q\rVert^{2m+1}/(2m+1)!$, so</p>
 <p>$$
-\exp(\vec Q) = \cos\theta \, e_t + \frac{\sin\theta}{\theta} \vec Q,
+\exp(\vec Q) = \cos\lVert\vec Q\rVert \, e_t + \frac{\sin\lVert\vec Q\rVert}{\lVert\vec Q\rVert} \vec Q,
 $$</p>
-<p>where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\theta$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\theta/\theta$ depends on $\theta^2$ alone). No hyperbolic function occurs here. When $\theta^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_t + (\sin r/r)\vec Q$. The real part of $\theta^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, so $\theta^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.</p>
+<p>where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\lVert\vec Q\rVert$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\lVert\vec Q\rVert/\lVert\vec Q\rVert$ depends on $\lVert\vec Q\rVert^2$ alone). No hyperbolic function occurs here. When $\lVert\vec Q\rVert^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_t + (\sin r/r)\vec Q$. The real part of $\lVert\vec Q\rVert^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, so $\lVert\vec Q\rVert^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.</p>
 <h3 id="the-nilpotent-case">The Nilpotent Case</h3>
-<p>If the vector part is nilpotent, i.e., $\vec Q^2 = 0$, then $\theta = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\vec Q = 0$: since $\vec Q^2 = -\theta^2 e_t$ and the real part of $\theta^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, the equation $\vec Q^2 = 0$ forces $\vec Q = 0$, and then $\exp(\vec Q) = e_t$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\vec Q = (1 - j)\vec e_x \in Z_+$ one has $\vec Q^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{B}^{\mathrm{spl}}$ has no nonzero nilpotent vector part.</p>
+<p>If the vector part is nilpotent, i.e., $\vec Q^2 = 0$, then $\lVert\vec Q\rVert = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\vec Q = 0$: since $\vec Q^2 = -\lVert\vec Q\rVert^2 e_t$ and the real part of $\lVert\vec Q\rVert^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, the equation $\vec Q^2 = 0$ forces $\vec Q = 0$, and then $\exp(\vec Q) = e_t$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\vec Q = (1 - j)\vec e_x \in Z_+$ one has $\vec Q^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{B}^{\mathrm{spl}}$ has no nonzero nilpotent vector part.</p>
 <h3 id="properties">Properties</h3>
 <p><strong>Non-vanishing.</strong> The exponential is never zero, because both idempotent components are nonzero: $\exp(\tilde{Q}_\pm) \neq 0$ since the quaternion exponential is never zero.</p>
 <p><strong>Multiplicativity.</strong> The exponential satisfies $\exp(\tilde Q_1 + \tilde Q_2) = \exp(\tilde Q_1) \exp(\tilde Q_2)$ whenever $\tilde Q_1$ and $\tilde Q_2$ commute, but commutativity is not necessary: for example $\tilde Q_1 = 2\pi \vec e_x$ and $\tilde Q_2 = -\pi \vec e_x + \pi\sqrt{3}\,\vec e_y$ do not commute and all three exponentials equal $e_t$. In general, the exponential is not multiplicative.</p>
@@ -270,7 +270,7 @@ $$</p>
 <tr>
 <td>$\exp(\tilde{Q})$</td>
 <td>$\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$</td>
-<td>$\exp(Q_t)(\cos\theta \, e_t + \frac{\sin\theta}{\theta}\vec Q)$</td>
+<td>$\exp(Q_t)(\cos\lVert\vec Q\rVert \, e_t + \frac{\sin\lVert\vec Q\rVert}{\lVert\vec Q\rVert}\vec Q)$</td>
 </tr>
 <tr>
 <td>$\sin(\tilde{Q})$</td>
@@ -327,7 +327,7 @@ $$</p>
 </tr>
 <tr>
 <td>Exponential</td>
-<td>$\exp(Q_t)(\cos\theta \, e_t + \sin\theta \, \vec u)$ with $\theta$ complex</td>
+<td>$\exp(Q_t)(\cos\lVert\vec Q\rVert \, e_t + \sin\lVert\vec Q\rVert \, \vec u)$ with $\lVert\vec Q\rVert$ complex</td>
 <td>$\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$</td>
 </tr>
 <tr>
@@ -342,12 +342,12 @@ $$</p>
 </tr>
 <tr>
 <td>Logarithm</td>
-<td>$Q_t e_t + \theta \vec u$ with $\theta$ complex</td>
+<td>$Q_t e_t + \lVert\vec Q\rVert \vec u$ with $\lVert\vec Q\rVert$ complex</td>
 <td>$\log(\tilde{Q}_+) \tilde\Pi_1 + \log(\tilde{Q}_-) \tilde\Pi_2$</td>
 </tr>
 <tr>
 <td>Power function</td>
-<td>$\exp(\alpha Q_t)(\cos(\alpha\theta) \, e_t + \sin(\alpha\theta) \, \vec u)$</td>
+<td>$\exp(\alpha Q_t)(\cos(\alpha\lVert\vec Q\rVert) \, e_t + \sin(\alpha\lVert\vec Q\rVert) \, \vec u)$</td>
 <td>$\tilde{Q}_+^{\alpha_+} \tilde\Pi_1 + \tilde{Q}_-^{\alpha_-} \tilde\Pi_2$</td>
 </tr>
 <tr>
@@ -371,7 +371,7 @@ $$</p>
 <p><strong>The angles are real.</strong> In the biquaternion case, the angle in the exponential is a complex number. In the split biquaternion case, the angles in the idempotent components are real numbers.</p>
 </li>
 <li>
-<p><strong>The split complex unit produces hyperbolic functions, not trigonometric.</strong> In the biquaternion case, the scalar imaginary $i$ produces trigonometric functions via the identity $\exp(i\theta) = \cos\theta + i\sin\theta$. In the split biquaternion case, the split complex unit $j$ produces hyperbolic functions via the identity $\exp(j\theta) = \cosh\theta + j\sinh\theta$.</p>
+<p><strong>The split complex unit produces hyperbolic functions, not trigonometric.</strong> In the biquaternion case, the scalar imaginary $i$ produces trigonometric functions via the identity $\exp(i\lVert\vec Q\rVert) = \cos\lVert\vec Q\rVert + i\sin\lVert\vec Q\rVert$. In the split biquaternion case, the split complex unit $j$ produces hyperbolic functions via the identity $\exp(j\lVert\vec Q\rVert) = \cosh\lVert\vec Q\rVert + j\sinh\lVert\vec Q\rVert$.</p>
 </li>
 <li>
 <p><strong>The logarithm and power function are simpler.</strong> In the biquaternion case, the logarithm and power function involve the complex angle and the roots of $-1$. In the split biquaternion case, they reduce to the quaternion logarithm and power function in each component.</p>
@@ -416,9 +416,9 @@ $$</p>
 <p>and similarly for the trigonometric and hyperbolic functions.</p>
 <p>The exponential can also be computed directly from the scalar-vector decomposition:</p>
 <p>$$
-\exp(\tilde{Q}) = \exp(Q_t) \left(\cos\theta \, e_t + \frac{\sin\theta}{\theta} \vec Q\right),
+\exp(\tilde{Q}) = \exp(Q_t) \left(\cos\lVert\vec Q\rVert \, e_t + \frac{\sin\lVert\vec Q\rVert}{\lVert\vec Q\rVert} \vec Q\right),
 $$</p>
-<p>where $\theta^2 = Q_x^2 + Q_y^2 + Q_z^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\theta^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\theta^2$ alike, and a negative real $\theta^2$ cannot occur.</p>
+<p>where $\lVert\vec Q\rVert^2 = Q_x^2 + Q_y^2 + Q_z^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\lVert\vec Q\rVert^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\lVert\vec Q\rVert^2$ alike, and a negative real $\lVert\vec Q\rVert^2$ cannot occur.</p>
 <p>The elementary functions of a split biquaternion are <strong>simpler</strong> than the elementary functions of a biquaternion, because the idempotent decomposition reduces them to two copies of the quaternion case, the angles are real numbers, and the split complex unit produces hyperbolic functions rather than trigonometric ones. The main complication is the zero divisor set, on which the logarithm is not defined.</p>
 <p>The elementary functions of several split biquaternion variables are largely open, because the non-commutativity prevents the simple reductions that work for a single variable.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -475,8 +475,8 @@ $$</p>
 <td>Split biquaternion power function</td>
 </tr>
 <tr>
-<td>$\tilde q = r \exp(\mu \theta)$</td>
-<td>Quaternion polar form, axis $\mu$, angle $\theta$</td>
+<td>$\tilde q = r \exp(\mu \lVert\vec Q\rVert)$</td>
+<td>Quaternion polar form, axis $\mu$, angle $\lVert\vec Q\rVert$</td>
 </tr>
 <tr>
 <td>$\mu$</td>
