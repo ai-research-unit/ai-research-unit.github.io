@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Letter Xi: An Inventory of the Glyph — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-letter-xi-an-inventory-of-the-glyph"><strong>The Letter Xi: An Inventory of the Glyph</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>$\xi$ is the largest single occupant in the mathematics corpus that is not a Latin letter. It carries 11 461 tokens in 521 articles: 1 494 in <code>articles_physics</code>, 9 925 in <code>articles_maths</code>, and 42 in the internal articles that name it.</p>
+<p>The letter has two families and they are not equal. The first is the element of the tilde scheme: the root of the algebra, its coordinates, its vector part. The second is the working variable of analysis and topology: a point, a covector, a state, a dual index, an open set. The first family owns about 90 percent of the mathematics corpus and about 43 percent of the physics one.</p>
+<p><strong>What the article establishes.</strong> The nine written forms and their counts. The four rules the conventions already fix — the case rule of the tilde, the arrow of the pure root, the coordinates of the root, the label <code>ad</code> of the adjoined root. The seven roles the lower case carries outside the algebra. Two collisions inside physics and one collision of the upper case across the two corpora.</p>
+<p><strong>What it does not claim.</strong> It does not claim that $\xi$ is available. The letter is the busiest free glyph in the two corpora, and the element family alone binds it in 68 mathematics articles. The claim is narrower: that the algebra role is documented and consistent, and that every other role can be counted and named.</p>
+<h2 id="the-written-forms">The Written Forms</h2>
+<p>The tree writes the command in every case. There is no literal $\xi$ U+03BE and no literal $\Xi$ U+039E in the three corpora: both counts are zero. The glyph exists only as <code>\xi</code> and <code>\Xi</code>, so the two Unicode points the census was asked about are unused and the letter is a command, not a character.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>physics</th>
+<th>articles</th>
+<th>mathematics</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi$</td>
+<td>743</td>
+<td>59</td>
+<td>5 420</td>
+<td>285</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>81</td>
+<td>12</td>
+<td>1 053</td>
+<td>45</td>
+</tr>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>315</td>
+<td>66</td>
+<td>1 916</td>
+<td>68</td>
+</tr>
+<tr>
+<td>$\vec\Xi$</td>
+<td>103</td>
+<td>18</td>
+<td>726</td>
+<td>41</td>
+</tr>
+<tr>
+<td>$\tilde\xi$</td>
+<td>64</td>
+<td>5</td>
+<td>429</td>
+<td>17</td>
+</tr>
+<tr>
+<td>$\vec\xi$</td>
+<td>156</td>
+<td>10</td>
+<td>373</td>
+<td>18</td>
+</tr>
+<tr>
+<td>$\hat\xi$</td>
+<td>23</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>$\bar\xi$</td>
+<td>9</td>
+<td>2</td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr>
+<td>$\bar\Xi$</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>total</td>
+<td>1 494</td>
+<td>130</td>
+<td>9 925</td>
+<td>382</td>
+</tr>
+</tbody>
+</table></div>
+<p>The five subscripts that carry a meaning rather than an index:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>tokens</th>
+<th>articles</th>
+<th>what it names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi_{\mathrm{ad}}$</td>
+<td>129</td>
+<td>72</td>
+<td>the adjoined root of the central grading</td>
+</tr>
+<tr>
+<td>$\Xi_t$, $\xi_t$</td>
+<td>336</td>
+<td>37</td>
+<td>the scalar part of the root</td>
+</tr>
+<tr>
+<td>$\xi'$, $\xi'_\mu$</td>
+<td>295</td>
+<td>12</td>
+<td>the imaginary coordinate of the root's vector part</td>
+</tr>
+<tr>
+<td>$\Xi_{\mathrm{eig}}$</td>
+<td>7</td>
+<td>1</td>
+<td>the root of a spectral decomposition</td>
+</tr>
+<tr>
+<td>$\xi_{\mathrm{std}}$</td>
+<td>2</td>
+<td>1</td>
+<td>the standard contact structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-rules-the-conventions-already-fix">The Rules the Conventions Already Fix</h2>
+<p><em>Special Element Conventions</em> states the case rule in one paragraph:</p>
+<blockquote>
+<p><strong>The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.</strong> The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$.</p>
+</blockquote>
+<p>The next paragraph gives the coordinates:</p>
+<blockquote>
+<p>The coordinates carry the letter of the root: in $\mathbb{B}$ the root is $\tilde{\Xi} = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.</p>
+</blockquote>
+<p><em>Algebra and Element Conventions</em> adds the arrow:</p>
+<blockquote>
+<p>The pure root is $\vec\Xi$ in the biquaternion layer and $\vec\xi$ in the quaternion layer, and the pure nilpotent is $\vec\Upsilon$ in the biquaternion layer and $\vec\nu$ in the quaternion one.</p>
+</blockquote>
+<p>So the four marked forms are one role seen at four layers, and the bare $\Xi$ is the same role in the tilde-free layers. That is why the upper case is not a separate letter in the mathematics corpus: it is the case rule of one letter.</p>
+<h2 id="the-element-family">The Element Family</h2>
+<p>The family is the root of the algebra, its coordinates, and the pure part of a root. It is written in 68 mathematics articles and 66 physics ones, and it is the reason the letter is unavailable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th>marked forms</th>
+<th>articles</th>
+<th>share of the letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mathematics</td>
+<td>3 444</td>
+<td>68</td>
+<td>35 percent, plus most of the bare forms</td>
+</tr>
+<tr>
+<td>physics</td>
+<td>638</td>
+<td>66</td>
+<td>43 percent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mathematics concentration is in one family of articles. <em>Idempotents</em> writes 333 tokens; the <em>Square Roots of One and the Idempotents</em> series writes 313, 200, 197, 167, 148 and 147 in six of its members; <em>The Special Decomposition of a Biquaternion under a Peirce Basis</em> writes 130 and carries the label $\Xi_{\mathrm{eig}}$; <em>Introduction to the Quaternion Algebra</em> writes the imaginary unit as $\tilde\xi=\vec q/\lvert\vec q\rvert$ with $\tilde\xi^2=-e_t$.</p>
+<p>Of the 3 696 upper-case tokens in the mathematics corpus, 2 654 sit in a window that names a root, an idempotent, a square or the algebra; 165 sit in a window that names an open set, a cover or a neighbourhood; 877 in neither. The first figure is the element family, the second is the collision of the next section, and the third is mostly table labels and index positions.</p>
+<h2 id="the-upper-case-as-an-open-set">The Upper Case as an Open Set</h2>
+<p>The same capital names a region of a space in the topology and analysis articles. The pattern is $\Xi\subseteq M$, $\mathcal{O}_X(\Xi)$, $\prod_i\mathcal{F}(\Xi_i)$ for a cover, and $\mathrm{Diff}(M)_\Xi$ for the subgroup fixing a subset.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Čech Cohomology</em></td>
+<td>26</td>
+</tr>
+<tr>
+<td><em>Topological Dynamics</em></td>
+<td>26</td>
+</tr>
+<tr>
+<td><em>Sheaf Cohomology</em></td>
+<td>17</td>
+</tr>
+<tr>
+<td><em>Sheaves and the de Rham Complex</em></td>
+<td>16</td>
+</tr>
+<tr>
+<td><em>Differential Forms and Stokes' Theorem</em></td>
+<td>11</td>
+</tr>
+<tr>
+<td><em>Several Complex Variables</em></td>
+<td>8</td>
+</tr>
+<tr>
+<td><em>Operators on a Variety</em></td>
+<td>8</td>
+</tr>
+<tr>
+<td><em>Schemes</em></td>
+<td>7</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count is 165 tokens in 26 articles. In <em>Fibre Bundles, Connections and Curvature</em> the capital is even the base manifold, $g:\Xi\to GL_k(\mathbb{R})$, which is the same glyph as the open set one step up: the whole space rather than a piece of it.</p>
+<p><strong>This is the one hard collision of the letter.</strong> An algebra article and a topology article both write $\Xi$ with no mark, and the two objects have nothing in common. The corpus separates them by subject and by nothing else.</p>
+<h2 id="the-lower-case-outside-the-algebra">The Lower Case Outside the Algebra</h2>
+<p>Six roles, all with the bare glyph or with an index.</p>
+<p><strong>A vector in a Hilbert space.</strong> The modular theory articles write $\overline{\pi(A)\xi}=K$, $\xi\neq0$, $\xi$ cyclic and separating. The count is about 190 tokens in 38 articles, led by <em>Von Neumann Algebras and the Hilbert Algebra Completeness</em> with 18 and <em>States and Positive Functionals on an Involutive Algebra</em> with 16.</p>
+<p><strong>A dual variable.</strong> The harmonic-analysis articles write $\chi_\xi(x)=\exp(2\pi i\xi x)$ and $\xi\mapsto-\xi$ under the dual involution. The count is about 405 tokens in 73 articles, led by <em>The Adjoint of the Fourier Operator</em> with 32.</p>
+<p><strong>A cotangent covector.</strong> The index-theory and pseudodifferential articles write the principal symbol as $\sigma_m(D)(x,\xi)$ on $T^*M$, elliptic when the symbol is invertible for every $\xi\neq0$. The count is about 511 tokens in 73 articles, led by <em>Differential Operators</em> with 26 and <em>Pseudodifferential Operators</em> with 22.</p>
+<p><strong>A boundary point.</strong> The hyperbolic-geometry articles centre a horosphere at $\xi\in\partial H^3$ and write $\operatorname{Hor}(\xi,s)$. The count is about 40 tokens in 17 articles.</p>
+<p><strong>A contact structure.</strong> <em>Symplectic and Contact Topology</em> writes the hyperplane field as $\xi=\ker\alpha$ and its standard form as $\xi_{\mathrm{std}}$, 11 tokens.</p>
+<p><strong>An index carried by a root.</strong> The biquaternion layer writes $\Xi_\mu=\xi_\mu+i\xi'_\mu$, so $\xi_\mu$ is the real coordinate of a root and not a vector field.</p>
+<h2 id="the-upper-case-in-physics">The Upper Case in Physics</h2>
+<p>Five roles, and four of them are single articles.</p>
+<p><strong>The adjoined root of the central grading.</strong> $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the difference of the two central signs, written in 53 physics articles and 19 mathematics ones. It is the most widely spread use of the letter in physics: 98 tokens across 53 articles, five of them in <em>The Electron in Biquaternionic Form</em> and <em>The Superalgebra Reading and the Odd Extension</em>.</p>
+<p><strong>The root of minus one that generates a dynamics.</strong> <em>What the Biquaternion Algebra Cannot Do</em> writes $i\hbar\,\partial/\partial t'\,\tilde\Psi=\tilde\Xi\tilde\Psi$ and proves that the Hermitian norm is preserved only if $\tilde\Xi=\pm ie_t$.</p>
+<p><strong>The energy–momentum biquaternion.</strong> <em>Twistor Theory and Biquaternions</em> writes $\Xi=\Psi\circ\Psi^*=W+iP$, with scalar part $W$ and vector part $P$.</p>
+<p><strong>A functional of the state.</strong> <em>Matter Makes Space</em> writes $\Xi[\lambda,\Lambda](\Psi)=\sum_A c_A\operatorname{Tr}(\cdots)$ as an array read off the $G_\mu$.</p>
+<p><strong>A baryon.</strong> <em>SU(3) Representations and the Gell-Mann–Nishijima Formula</em> writes the cascade as $\Xi^-$, $\Xi^0$ and its mass as $m_\Xi=1318$ MeV, 18 tokens.</p>
+<p><strong>An angle.</strong> <em>Thomson and Compton Scattering</em> writes the outgoing-polarization sum as $r_e^2\sin^2\Xi$. See §<em>The Angle</em>.</p>
+<h2 id="the-physics-roles-that-are-not-the-element">The Physics Roles That Are Not the Element</h2>
+<p><strong>The displacement of a coordinate.</strong> $\xi_\mu$ is the infinitesimal transformation $x_\mu\mapsto x_\mu+\xi_\mu$ of linearized gravity, the vector field of the graviton article, and the polarization vector $\xi_{\mu,r}$ of the Rarita–Schwinger field. The count is 39 tokens in eight articles, led by <em>Linearized Gravity in Biquaternionic Form</em> with 10 and <em>Canonical Quantization of the Biquaternion Graviton Field</em> with 9.</p>
+<p><strong>The Fourier wavevector.</strong> $\vec\xi$ is the wavevector of the transform in <em>Maxwell's Equations</em>, <em>Bispinor Fields</em> and <em>The Yang–Mills Equation</em>, where the symbol is $\xi^2-(\omega+im)^2$. The count is 18 tokens in five articles.</p>
+<p><strong>A Grassmann-odd variable.</strong> <em>The Superalgebra Reading and the Odd Extension</em> writes the Koszul rule $(\xi\eta)^{*}=(-1)^{\lvert\xi\rvert\lvert\eta\rvert}\eta^{*}\xi^{*}$, eight tokens.</p>
+<p><strong>A squeeze parameter.</strong> <em>Squeezing Beyond the Biquaternion Algebra</em> writes $S(\xi)=\exp\bigl[\tfrac12(\bar\xi a^2-\xi a^{\dagger2})\bigr]$ and carries ten tokens of the squeeze parameter.</p>
+<p><strong>The sign of a direction.</strong> $\hat\xi$ is the unit vector of the bispinor reduction, $\psi^{\pm}_{\vec\xi}$ obeying a factor $(i\pm\hat\xi)$, 23 tokens in two articles.</p>
+<p><strong>The location of a singularity.</strong> <em>The Complex Displaced Singularity and the Circle Electron</em> writes the constants $(\xi,\eta,\upsilon)$ that place the singularity, then sets $\xi=0$, $\eta=0$.</p>
+<p><strong>The slot of a coordinate.</strong> <em>Unit, Index and Notation Conventions</em> lists $\xi_k$ among the slots of a coordinate, beside $q_i$, $x_i$, $p_i$, $\theta_i$.</p>
+<h2 id="the-collisions">The Collisions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>role A</th>
+<th>role B</th>
+<th>where they meet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi$</td>
+<td>the root in the tilde-free layers</td>
+<td>an open set, a base manifold</td>
+<td>different corpora, never the same article</td>
+</tr>
+<tr>
+<td>$\vec\xi$</td>
+<td>the pure root of the quaternion layer</td>
+<td>the Fourier wavevector</td>
+<td>different articles, same corpus</td>
+</tr>
+<tr>
+<td>$\xi_\mu$</td>
+<td>the coordinate of a root, $\Xi_\mu=\xi_\mu+i\xi'_\mu$</td>
+<td>the infinitesimal displacement</td>
+<td><em>Special Element Conventions</em> and <em>Linearized Gravity</em></td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>the root of minus one</td>
+<td>the cascade baryon</td>
+<td>physics only, different articles</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the algebra element</td>
+<td>a Hilbert vector, a covector, a dual index</td>
+<td>mathematics only, different subjects</td>
+</tr>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>the root</td>
+<td>a generator of a dynamics, $\pm ie_t$</td>
+<td>physics, different articles</td>
+</tr>
+</tbody>
+</table></div>
+<p>None of these is ambiguous inside a paragraph. All of them are ambiguous across the corpus, and the letter is one letter.</p>
+<h2 id="the-angle">The Angle</h2>
+<p><em>Thomson and Compton Scattering</em> writes, in one sentence, the outgoing-polarization sum $r_e^2\sin^2\Xi$ and the unpolarized average $r_e^2(1+\cos^2\theta)$. Two angles, two letters, one sentence.</p>
+<p>The angle convention admits three forms only: $\theta$ for a real angle, $\Theta=\theta+i\theta'$ for a complex one, and $\tilde\Theta$ for a quaternion one. Every other angle letter is purged. The $\Xi$ of that sentence is a real angle, so the convention asks for $\theta$.</p>
+<p>This is one token in one article, and it is the only angle the letter carries.</p>
+<h2 id="what-is-not-decided">What Is Not Decided</h2>
+<p>Whether the open set of the topology articles should take another letter. The candidates are Latin: $U$ for an open set, $M$ for the manifold, $\Omega$ for a domain. Latin case is not governed by the Greek rules and no collision was found.</p>
+<p>Whether $\xi_\mu$ should stay the coordinate of a root, or move to another letter, now that it also names a displacement in eight physics articles.</p>
+<p>Whether the cascade baryon should be written with the particle symbol of the Particle Data Group, $\Xi$, or with a Latin label that does not use a Greek letter at all. The article that uses it writes $m_\Xi$ and $m_{\Xi^*}$ throughout, so a change is a change of eighteen tokens.</p>
+<h2 id="summary">Summary</h2>
+<p>The letter is the root of the algebra, and the case and the tilde and the arrow already say which layer. It is also eight other things in analysis, topology, gravity and particle physics, and those are counted here for the first time. Of the four Unicode forms the census was asked about, only two exist in the tree, and they exist as commands: $\xi$ and $\Xi$.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
