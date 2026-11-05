@@ -128,11 +128,11 @@ $$</p>
 <p><strong>Theorem.</strong> The kernel of the exponential on the algebra is</p>
 <p>$$
 \boxed{\;
-\ker \exp = \{\, 2\pi k\,\vec\xi \;:\; k \in \mathbb{Z},\ \vec\xi \in V,\ \vec\xi^2 = -1 \,\} \cup \{0\}
+\ker \exp = \{\, 2\pi k\,\vec\zeta \;:\; k \in \mathbb{Z},\ \vec\zeta \in V,\ \vec\zeta^2 = -1 \,\} \cup \{0\}
 \;},
 $$</p>
 <p>that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.</p>
-<p><strong>Proof.</strong> $\exp(2\pi k\vec\xi) = \cos(2\pi k) + \sin(2\pi k)\vec\xi = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\xi$ with $\vec\xi$ a root of $-1$ (or $\tilde q = 0$).</p>
+<p><strong>Proof.</strong> $\exp(2\pi k\vec\zeta) = \cos(2\pi k) + \sin(2\pi k)\vec\zeta = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\zeta$ with $\vec\zeta$ a root of $-1$ (or $\tilde q = 0$).</p>
 <p>Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
 <p><strong>Theorem (polar form).</strong> Every nonzero split-quaternion has a <strong>polar decomposition</strong></p>
@@ -164,7 +164,7 @@ $$</p>
 \exp(\theta \tilde u) = \cosh\theta + \sinh\theta\, \tilde u,
 $$</p>
 <p>a non-compact group isomorphic to $\mathbb{R}$, the <strong>hyperbolic</strong> subgroup. The prototypes are $\exp(\theta \vec e_y)$ and $\exp(\theta \vec e_z)$, whose adjoint actions are boosts of the planes $\operatorname{span}\{\vec e_x,\vec e_z\}$ and $\operatorname{span}\{\vec e_x,\vec e_y\}$ of signature $(1,1)$.</p>
-<p><strong>Terminology (hyperbolic versors).</strong> The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \xi\sin\theta$, built on a root of $-1$, is a <strong>versor</strong>, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a <strong>hyperbolic versor</strong>. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in <em>List of Algebras by Dimension</em>; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.</p>
+<p><strong>Terminology (hyperbolic versors).</strong> The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \zeta\sin\theta$, built on a root of $-1$, is a <strong>versor</strong>, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a <strong>hyperbolic versor</strong>. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in <em>List of Algebras by Dimension</em>; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.</p>
 <p><strong>The parabolic directions.</strong> For $\vec v$ null ($\vec v^2 = 0$, $\vec v \neq 0$), the closed form gives $\exp(\vec v) = 1 + \vec v$, a unipotent element; the exponentials of the null directions form the one-parameter unipotent subgroups conjugate to the translations of the affine line.</p>
 <p>These are the elliptic, hyperbolic and parabolic one-parameter subgroups of the Lorentz group of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="the-lie-algebra-and-the-lorentz-group">The Lie Algebra and the Lorentz Group</h2>
@@ -230,7 +230,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\ker\exp$</td>
-<td>$\{2\pi k\vec\xi : k\in\mathbb{Z}, \vec\xi^2=-1\} \cup \{0\}$</td>
+<td>$\{2\pi k\vec\zeta : k\in\mathbb{Z}, \vec\zeta^2=-1\} \cup \{0\}$</td>
 <td>this article</td>
 </tr>
 <tr>

@@ -351,15 +351,15 @@ $$</p>
 <h3 id="the-eigenbasis">The Eigenbasis</h3>
 <p>Let $\tilde Q\in\Sigma_{11}$, and fix a square root $B$ of $B^2$. Define</p>
 <p>$$
-\vec\Xi=-i\frac{\vec Q}{B},
+\vec{Ζ}=-i\frac{\vec Q}{B},
 \qquad
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2},
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2},
 \qquad
 \lambda_\pm=Q_t\pm iB.
 $$</p>
-<p><strong>Proposition (the eigenbasis).</strong> The element $\vec\Xi$ is a root of one,</p>
+<p><strong>Proposition (the eigenbasis).</strong> The element $\vec{Ζ}$ is a root of one,</p>
 <p>$$
-\vec\Xi^2=e_t,
+\vec{Ζ}^2=e_t,
 $$</p>
 <p>the two elements $\tilde\Pi_\pm$ are complementary idempotents,</p>
 <p>$$
@@ -376,16 +376,16 @@ $$</p>
 <p>The eigenvalues are distinct and nonzero, and the idempotents are the spectral projections.</p>
 <p><em>Proof.</em> For a pure vector, $\vec Q^2=-\vec Q\cdot\vec Q=-B^2$. Hence</p>
 <p>$$
-\vec\Xi^2=\Bigl(-i\frac{\vec Q}{B}\Bigr)^2=(-i)^2\frac{\vec Q^2}{B^2}=(-1)\frac{-B^2}{B^2}=e_t.
+\vec{Ζ}^2=\Bigl(-i\frac{\vec Q}{B}\Bigr)^2=(-i)^2\frac{\vec Q^2}{B^2}=(-1)\frac{-B^2}{B^2}=e_t.
 $$</p>
-<p>The idempotent identities follow from $\vec\Xi^2=e_t$ and the commutation of $\vec\Xi$ with itself. The spectral decomposition is checked by expanding the right-hand side:</p>
+<p>The idempotent identities follow from $\vec{Ζ}^2=e_t$ and the commutation of $\vec{Ζ}$ with itself. The spectral decomposition is checked by expanding the right-hand side:</p>
 <p>$$
 \lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
-=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec\Xi
-=Q_te_t+iB\vec\Xi
+=\frac{\lambda_++\lambda_-}{2}e_t+\frac{\lambda_+-\lambda_-}{2}\vec{Ζ}
+=Q_te_t+iB\vec{Ζ}
 =Q_te_t+\vec Q.
 $$</p>
-<p>The two signs of $B$ exchange $\vec\Xi$ with $-\vec\Xi$, $\tilde\Pi_+$ with $\tilde\Pi_-$, and $\lambda_+$ with $\lambda_-$; the unordered pair is unchanged. The element is semisimple, its minimal polynomial is $X^2-2Q_tX+N$, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$.</p>
+<p>The two signs of $B$ exchange $\vec{Ζ}$ with $-\vec{Ζ}$, $\tilde\Pi_+$ with $\tilde\Pi_-$, and $\lambda_+$ with $\lambda_-$; the unordered pair is unchanged. The element is semisimple, its minimal polynomial is $X^2-2Q_tX+N$, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\oplus\mathbb{C}$.</p>
 <h3 id="the-unit-factor-on-the-eigenlines">The Unit Factor on the Eigenlines</h3>
 <p>Since $\tilde U=\tilde Q/\Rho$ and $\Rho$ is central,</p>
 <p>$$
@@ -438,12 +438,12 @@ $$</p>
 <li>The two axes are parallel or antiparallel, or one of the two angles vanishes.</li>
 <li>The word is a single exponential.</li>
 </ol>
-<p>In this case the common axis is $\pm i\vec\Xi$ whenever it is defined, and</p>
+<p>In this case the common axis is $\pm i\vec{Ζ}$ whenever it is defined, and</p>
 <p>$$
 \boxed{\;
 \tilde Q=r e^{i\alpha}\exp\Bigl(\frac{\theta+i\psi}{2}\vec u\Bigr),
 \qquad
-\vec u=\pm i\vec\Xi,
+\vec u=\pm i\vec{Ζ},
 \;}
 $$</p>
 <p>with the sign chosen so that $\psi\ge0$. The eigenvalues of the unit factor are</p>
@@ -462,10 +462,10 @@ $$</p>
 =|\Rho|^2\tilde U_{\mathrm b}^2
 =\tilde Q^*\tilde Q,
 $$</p>
-<p>which gives 1. If 3 holds, both factors are functions of $\tilde U$, hence diagonal in its eigenbasis, so their axes are the two eigenlines, which are $\pm i\vec\Xi$; this gives 4. If 4 holds, the two exponents commute, so the product is the exponential of their sum, which gives 5. If 5 holds, $\tilde Q$ is a scalar multiple of the exponential of a complex multiple of a real pure vector, and such an exponential is normal; this gives 1.</p>
+<p>which gives 1. If 3 holds, both factors are functions of $\tilde U$, hence diagonal in its eigenbasis, so their axes are the two eigenlines, which are $\pm i\vec{Ζ}$; this gives 4. If 4 holds, the two exponents commute, so the product is the exponential of their sum, which gives 5. If 5 holds, $\tilde Q$ is a scalar multiple of the exponential of a complex multiple of a real pure vector, and such an exponential is normal; this gives 1.</p>
 <p>For the formula, write $\tilde U_{\mathrm b}=\exp(i\frac{\psi}{2}\vec u)$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u)$ on the common axis. Their product is $\exp(\frac{\theta+i\psi}{2}\vec u)$ because the exponents commute. On the two eigenlines the product acts by $e^{-\psi/2}e^{i\theta/2}$ and $e^{\psi/2}e^{-i\theta/2}$; with the labelling of $\mu_\pm$ fixed by $\lambda_\pm$, and the sign of the common axis chosen accordingly, this is the displayed pair $e^{\mp\psi/2}e^{\pm i\theta/2}$. The extraction of the angles follows from the moduli and the arguments.</p>
 <p>The display is the <strong>amalgamation</strong> of the four factors into one exponential. The complex angle is $\frac{\theta+i\psi}{2}$; the real part is the rotor angle and the imaginary part is the rapidity. The sign of the imaginary part is the sign convention of the boost: the other choice reverses the common axis.</p>
-<p><strong>Remark (the axes in the normal case).</strong> The common axis is $\pm i\vec\Xi$. Since $\vec\Xi=-i\vec Q/B$ and $\vec Q=\omega\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.</p>
+<p><strong>Remark (the axes in the normal case).</strong> The common axis is $\pm i\vec{Ζ}$. Since $\vec{Ζ}=-i\vec Q/B$ and $\vec Q=\omega\vec u$, the axis is $\pm\vec u$: the real direction of the vector part. The eigenbasis and the polar frame are the same frame. The element is normal exactly when its vector part has a real direction; a complex vector part with two independent real directions is non-normal.</p>
 <h3 id="the-non-normal-case">The Non-Normal Case</h3>
 <p>In the general case the polar factors are not functions of $\tilde Q$, and the eigenbasis is not a polar basis.</p>
 <p><strong>Proposition (the failure of the spectral reading).</strong> Let $\tilde Q\in\Sigma_{11}$ be non-normal. Then</p>
@@ -830,16 +830,16 @@ $$</p>
 <p>On the spectral cone the word does not diverge. Let $\tilde Q_k\to\tilde Q_0$ with $N_k\to N_0\neq0$ and $B_k^2\to0$. The modulus converges, the unit factor converges, and the Cartan factors converge, because the Cartan decomposition is continuous. Hence the polar data have a limit: the limiting word is the word of $\tilde Q_0$, which lies in $\Sigma_{10}$ and is treated in the companion article.</p>
 <p>The eigenbasis does not survive. The root is</p>
 <p>$$
-\vec\Xi=-i\frac{\vec Q}{B},
+\vec{Ζ}=-i\frac{\vec Q}{B},
 $$</p>
-<p>and $B\to0$ while $\vec Q\to\vec Q_0\neq0$ on the spectral cone, so $|\vec\Xi|\to\infty$. The idempotents</p>
+<p>and $B\to0$ while $\vec Q\to\vec Q_0\neq0$ on the spectral cone, so $|\vec{Ζ}|\to\infty$. The idempotents</p>
 <p>$$
-\tilde\Pi_\pm=\frac{e_t\pm\vec\Xi}{2}
+\tilde\Pi_\pm=\frac{e_t\pm\vec{Ζ}}{2}
 $$</p>
 <p>diverge, and the spectral decomposition has no limit. The eigenvalues $\lambda_\pm=Q_t\pm iB$ coalesce, the minimal polynomial becomes a square, and the element becomes defective.</p>
-<p><strong>Proposition (the word survives the spectral wall, the eigenbasis does not).</strong> Let $\tilde Q_k\in\Sigma_{11}$ converge to $\tilde Q_0\in\Sigma_{10}$ with $N_0\neq0$ and $\vec Q_0\neq0$, so that the limit lies in the Jordan part. Then $\tilde U_k\to\tilde U_0$, $\tilde U_{\mathrm b,k}\to\tilde U_{\mathrm b,0}$ and $\tilde u_{\mathrm r,k}\to\tilde u_{\mathrm r,0}$, so the word converges to the word of $\tilde Q_0$. The root $\vec\Xi_k$ diverges in norm, and no spectral idempotent of $\tilde Q_k$ converges to a nonzero idempotent.</p>
-<p><em>Proof.</em> The modulus is continuous in $N$ away from zero, and the Cartan factors are continuous functions of $\tilde U$; this gives the convergence of the word. The root satisfies $|\vec\Xi_k|=|\vec Q_k|/|B_k|\to\infty$ because $\vec Q_k\to\vec Q_0\neq0$ and $B_k\to0$. An idempotent of the form $(e_t\pm\vec\Xi_k)/2$ is unbounded, so it has no finite limit.</p>
-<p>At the scalar line the limit is different. If $\tilde Q_0=Q_0e_t$ is a nonzero scalar, then $\vec Q_0=0$, the root is $0/0$, and its limit depends on the path: the family $Q_k=1+\epsilon_k\vec e_x$ has $\vec\Xi_k=-i\vec e_x$, so the idempotents converge to nonzero idempotents of the ambient algebra even though the limit is scalar. The eigenvalues coalesce, but the eigenbasis need not diverge. The proposition is therefore stated for the Jordan part, which is the part of the wall that the sector meets transversally.</p>
+<p><strong>Proposition (the word survives the spectral wall, the eigenbasis does not).</strong> Let $\tilde Q_k\in\Sigma_{11}$ converge to $\tilde Q_0\in\Sigma_{10}$ with $N_0\neq0$ and $\vec Q_0\neq0$, so that the limit lies in the Jordan part. Then $\tilde U_k\to\tilde U_0$, $\tilde U_{\mathrm b,k}\to\tilde U_{\mathrm b,0}$ and $\tilde u_{\mathrm r,k}\to\tilde u_{\mathrm r,0}$, so the word converges to the word of $\tilde Q_0$. The root $\vec{Ζ}_k$ diverges in norm, and no spectral idempotent of $\tilde Q_k$ converges to a nonzero idempotent.</p>
+<p><em>Proof.</em> The modulus is continuous in $N$ away from zero, and the Cartan factors are continuous functions of $\tilde U$; this gives the convergence of the word. The root satisfies $|\vec{Ζ}_k|=|\vec Q_k|/|B_k|\to\infty$ because $\vec Q_k\to\vec Q_0\neq0$ and $B_k\to0$. An idempotent of the form $(e_t\pm\vec{Ζ}_k)/2$ is unbounded, so it has no finite limit.</p>
+<p>At the scalar line the limit is different. If $\tilde Q_0=Q_0e_t$ is a nonzero scalar, then $\vec Q_0=0$, the root is $0/0$, and its limit depends on the path: the family $Q_k=1+\epsilon_k\vec e_x$ has $\vec{Ζ}_k=-i\vec e_x$, so the idempotents converge to nonzero idempotents of the ambient algebra even though the limit is scalar. The eigenvalues coalesce, but the eigenbasis need not diverge. The proposition is therefore stated for the Jordan part, which is the part of the wall that the sector meets transversally.</p>
 <p>The contrast is the exact content of the difference between the two articles. The polar decomposition is a decomposition of the group of units, and it is continuous across the spectral wall. The spectral decomposition is a decomposition of the element, and it degenerates there. The sector $\Sigma_{11}$ is the open set on which both exist; its wall $B^2=0$ is where only the polar one survives.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-formulas">Main Formulas</h3>
@@ -885,7 +885,7 @@ $$</p>
 </tr>
 <tr>
 <td>eigenbasis</td>
-<td>$\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$</td>
+<td>$\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$</td>
 </tr>
 <tr>
 <td>unit-factor eigenvalues</td>
@@ -893,7 +893,7 @@ $$</p>
 </tr>
 <tr>
 <td>normal case</td>
-<td>$\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$, axes $\pm i\vec\Xi$</td>
+<td>$\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$, axes $\pm i\vec{Ζ}$</td>
 </tr>
 <tr>
 <td>normal criterion</td>
@@ -1026,11 +1026,11 @@ $$</p>
 <td>the cosine between the axes</td>
 </tr>
 <tr>
-<td>$\vec\Xi=-i\vec Q/B$</td>
+<td>$\vec{Ζ}=-i\vec Q/B$</td>
 <td>the root of one carried by the element</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$</td>
+<td>$\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$</td>
 <td>the spectral idempotents</td>
 </tr>
 <tr>

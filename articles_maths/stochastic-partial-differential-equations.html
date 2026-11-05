@@ -93,7 +93,7 @@ $$</p>
 W^\Sigma_t = \sum_{k\ge1}\sqrt{q_k}\,\beta_k(t)e_k ,
 $$</p>
 <p>the series converging almost surely in $H$; it is a Gaussian process with mean zero and covariance $\mathbb{E}\langle W^\Sigma_s,x\rangle\langle W^\Sigma_t,y\rangle = (s\wedge t)\langle \Sigma x,y\rangle$, and it has a version with continuous paths.</p>
-<p><strong>Remark (white noise and the diagonal case).</strong> For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a <strong>space-time white noise</strong>, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\xi(t,x)\xi(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.</p>
+<p><strong>Remark (white noise and the diagonal case).</strong> For $\Sigma=I$ the $\Sigma$-Wiener process does not exist in $H$ when $\dim H=\infty$, because $\sum_k1$ diverges; the cylindrical process is then the correct object, and it is the distributional time derivative of a <strong>space-time white noise</strong>, the centred Gaussian field on $\mathbb{R}_+\times\mathcal{O}$ with covariance $\mathbb{E}[\zeta(t,x)\zeta(s,y)]=\delta(t-s)\delta(x-y)$. Every statement about the cylindrical process is formulated through stochastic integrals against it, not through its pointwise values.</p>
 <h3 id="the-hilbertschmidt-integral">The Hilbert–Schmidt Integral</h3>
 <p><strong>Definition.</strong> Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is <strong>Hilbert–Schmidt</strong> if $\|T\|_{\mathrm{HS}}^2 = \sum_k\|Te_k\|^2<\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.</p>
 <p><strong>Definition.</strong> Let $\Sigma$ be trace class on $U$ with $\Sigma^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(\Sigma^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2ds<\infty$. The <strong>stochastic integral</strong> $\int_0^T\Phi_s\,dW^\Sigma_s$ is defined by approximation from elementary integrands, with the isometry</p>
@@ -243,7 +243,7 @@ $$</p>
 <td>Kolmogorov operator with the trace correction</td>
 </tr>
 <tr>
-<td>$\xi$</td>
+<td>$\zeta$</td>
 <td>Space-time white noise</td>
 </tr>
 <tr>

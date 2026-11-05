@@ -84,7 +84,7 @@ which is read off from the profile by Young's inequality when the profile is int
 multiplier by Plancherel when it is not.</p>
 <p>The prerequisites are <em>Measure Theory and Integration</em> for the convolution of integrable functions, the
 $L^{n}$ spaces and Hölder's and Minkowski's inequalities, <em>Fourier Analysis on Euclidean Spaces</em> for the
-transform $(\mathcal F f)(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$, the convolution theorem, the Plancherel theorem,
+transform $(\mathcal F f)(\zeta)=\int f(x)\exp(-2\pi ix\cdot\zeta)dx$, the convolution theorem, the Plancherel theorem,
 the multiplier theorem of Mihlin and Hörmander, and the Hilbert and Riesz transforms, <em>Modes of
 Convergence</em> for convergence in $L^{n}$, and <em>The Integral Operator</em>, the previous article of this group,
 for the kernel form, the Hilbert–Schmidt class and compactness. Nothing beyond the transform on
@@ -153,14 +153,14 @@ whose multiplier is not a function of a continuous variable.</p>
 <p><strong>Theorem (the convolution theorem).</strong> For $k,f\in L^1(\mathbb R^n)$ the transform of the convolution is
 the product of the transforms,
 $$
-\boxed{\;\mathcal F(k*f)(\xi)=(\mathcal F k)(\xi)(\mathcal F f)(\xi)\;},
+\boxed{\;\mathcal F(k*f)(\zeta)=(\mathcal F k)(\zeta)(\mathcal F f)(\zeta)\;},
 $$
-with the normalisation $(\mathcal F f)(\xi)=\int f(x)\exp(-2\pi ix\cdot\xi)dx$ fixed by <em>Fourier Analysis on
+with the normalisation $(\mathcal F f)(\zeta)=\int f(x)\exp(-2\pi ix\cdot\zeta)dx$ fixed by <em>Fourier Analysis on
 Euclidean Spaces</em>.</p>
 <p><strong>Proof.</strong> By Fubini–Tonelli and the change of variable $z=x-y$, the double integral
-$\iint k(y)f(x-y)\exp(-2\pi ix\cdot\xi)dy\,dx$ equals
-$\int k(y)\exp(-2\pi iy\cdot\xi)dy\int f(z)\exp(-2\pi iz\cdot\xi)dz$, and the two factors are
-$(\mathcal F k)(\xi)$ and $(\mathcal F f)(\xi)$.</p>
+$\iint k(y)f(x-y)\exp(-2\pi ix\cdot\zeta)dy\,dx$ equals
+$\int k(y)\exp(-2\pi iy\cdot\zeta)dy\int f(z)\exp(-2\pi iz\cdot\zeta)dz$, and the two factors are
+$(\mathcal F k)(\zeta)$ and $(\mathcal F f)(\zeta)$.</p>
 <p><strong>Definition.</strong> A <strong>Fourier multiplier</strong> is a function $m\in L^\infty(\mathbb R^n)$, and the
 <strong>multiplier operator</strong> it defines is
 $$
@@ -211,7 +211,7 @@ Spaces</em>.</p>
 <p>The profiles form a small part of the bounded translation-invariant operators. The general statement is
 the following, whose proof is the multiplier theorem of the Fourier article.</p>
 <p><strong>Theorem (Mihlin–Hörmander).</strong> Let $m\in C^k(\mathbb R^n\setminus\{0\})$ with
-$\lvert\partial^\alpha m(\xi)\rvert\leq C_\alpha\lvert\xi\rvert^{-\lvert\alpha\rvert}$ for every
+$\lvert\partial^\alpha m(\zeta)\rvert\leq C_\alpha\lvert\zeta\rvert^{-\lvert\alpha\rvert}$ for every
 $\lvert\alpha\rvert\leq k>n/2$. Then $T_m$ is bounded on $L^{n}(\mathbb R^n)$ for every $1<p<\infty$, with
 $\lVert T_m\rVert_{L^{n}}\to L^{n}\leq C_{p,n}\sup_{\lvert\alpha\rvert\leq k}C_\alpha$.</p>
 <p><strong>Proof sketch.</strong> This is proved in <em>Fourier Analysis on Euclidean Spaces</em> by decomposing $m$ into pieces
@@ -219,7 +219,7 @@ supported on dyadic annuli and realising each piece as convolution with an $L^1$
 norm; the cancellation of the pieces away from the origin is what limits the result to $1<p<\infty$, and
 the Hilbert and Riesz transforms show that the endpoint $p=1$ and $p=\infty$ fail in general.</p>
 <p>The theorem shows that the convolution theorem is not the only source of multipliers: the Hilbert
-transform has symbol $-i\operatorname{sgn}(\xi)$, which is not the Fourier transform of any $L^1$ function,
+transform has symbol $-i\operatorname{sgn}(\zeta)$, which is not the Fourier transform of any $L^1$ function,
 and it is bounded on $L^{n}$ for $1<p<\infty$ and of weak type $(1,1)$ but not bounded on $L^1$.</p>
 <h3 id="convolution-operators-and-translation-invariance">Convolution Operators and Translation Invariance</h3>
 <p><strong>Theorem (the convolution operators are the translation-invariant ones, the $L^2$ case).</strong> Let $A$ be a
@@ -228,8 +228,8 @@ $y\in\mathbb R^n$. Then $A=T_m$ for a unique $m\in L^\infty(\mathbb R^n)$, and
 $\lVert A\rVert=\lVert m\rVert_\infty$. Conversely every $T_m$ is bounded and commutes with every
 translation.</p>
 <p><strong>Proof sketch.</strong> Conjugating by the unitary $\mathcal F$, the translations become the multiplications by
-the characters $e_\xi(y)=\exp(-2\pi iy\cdot\xi)$, so $\mathcal FAA^{-1}$ commutes with $M_{e_\xi}$ for every
-$\xi$. An operator $B$ on $L^2$ of a finite measure space commuting with $M_f$ for every
+the characters $e_\zeta(y)=\exp(-2\pi iy\cdot\zeta)$, so $\mathcal FAA^{-1}$ commutes with $M_{e_\zeta}$ for every
+$\zeta$. An operator $B$ on $L^2$ of a finite measure space commuting with $M_f$ for every
 $f\in L^\infty$ is itself a multiplication operator: putting $g=B\mathbf 1$, for every bounded $f$ one
 has $Bf=B M_f\mathbf 1=M_fB\mathbf 1=fg$, and the identity extends by density and continuity. The
 characters generate $L^\infty(\mathbb R^n)$ in the strong operator topology — this is the abelian case of
@@ -250,17 +250,17 @@ of this Part.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the heat semigroup).</strong> The heat kernel of <em>Fourier Analysis on Euclidean Spaces</em>,
 $K_t(x)=(4\pi t)^{-n/2}\exp(-\lvert x\rvert^2/4t)$, lies in $L^1$ with $\lVert K_t\rVert_1=1$ and has
-transform $(\mathcal F K_t)(\xi)=\exp(-4\pi^2t\lvert\xi\rvert^2)$. The operators $T_{K_t}$ are bounded on every
+transform $(\mathcal F K_t)(\zeta)=\exp(-4\pi^2t\lvert\zeta\rvert^2)$. The operators $T_{K_t}$ are bounded on every
 $L^{n}$ with norm at most $1$, act as $T_{K_t}f=K_t*f$, satisfy the semigroup law
-$T_{K_t}T_{K_s}=T_{K_{t+s}}$ and have multipliers $\exp(-4\pi^2t\lvert\xi\rvert^2)$; the limit as
+$T_{K_t}T_{K_s}=T_{K_{t+s}}$ and have multipliers $\exp(-4\pi^2t\lvert\zeta\rvert^2)$; the limit as
 $t\downarrow0$ is the identity on the profiles for which the approximation theorem applies, which is why
 the family is an approximate identity and not an identity.</p>
 <p><strong>Example (the Poisson kernel).</strong> On $\mathbb R$ the function $P_t(x)=\frac1\pi\frac{t}{x^2+t^2}$
-satisfies $P_t\in L^1$, $\lVert P_t\rVert_1=1$ and $(\mathcal F P_t)(\xi)=\exp(-2\pi t\lvert\xi\rvert)$; the operators
+satisfies $P_t\in L^1$, $\lVert P_t\rVert_1=1$ and $(\mathcal F P_t)(\zeta)=\exp(-2\pi t\lvert\zeta\rvert)$; the operators
 satisfy $T_{P_t}T_{P_s}=T_{P_{t+s}}$, so they form a semigroup of contractions on each $L^{n}$ whose
-multipliers are $\exp(-2\pi t\lvert\xi\rvert)$.</p>
+multipliers are $\exp(-2\pi t\lvert\zeta\rvert)$.</p>
 <p><strong>Example (the Hilbert transform).</strong> The Hilbert transform $H$ of <em>Fourier Analysis on Euclidean Spaces</em>
-has kernel $1/(\pi x)$ taken as a principal value and multiplier $-i\operatorname{sgn}(\xi)$. It is
+has kernel $1/(\pi x)$ taken as a principal value and multiplier $-i\operatorname{sgn}(\zeta)$. It is
 translation invariant and bounded on $L^2$ with norm $1$, but it is not a convolution operator with an
 $L^1$ profile, since $1/(\pi x)$ is not integrable and the multiplier is not continuous at the origin.</p>
 <h2 id="compactness">Compactness</h2>
@@ -329,8 +329,8 @@ invariant.</p>
 <td>The circle $\mathbb R/\mathbb Z$</td>
 </tr>
 <tr>
-<td>$e_\xi$, $e_m$</td>
-<td>Characters, $e_\xi(x)=\exp(2\pi ix\cdot\xi)$, $e_m(x)=\exp(2\pi imx)$</td>
+<td>$e_\zeta$, $e_m$</td>
+<td>Characters, $e_\zeta(x)=\exp(2\pi ix\cdot\zeta)$, $e_m(x)=\exp(2\pi imx)$</td>
 </tr>
 <tr>
 <td>$K_t$, $P_t$</td>
@@ -338,7 +338,7 @@ invariant.</p>
 </tr>
 <tr>
 <td>$H$</td>
-<td>Hilbert transform, symbol $-i\operatorname{sgn}\xi$</td>
+<td>Hilbert transform, symbol $-i\operatorname{sgn}\zeta$</td>
 </tr>
 </tbody>
 </table></div>

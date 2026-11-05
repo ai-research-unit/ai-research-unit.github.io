@@ -71,7 +71,7 @@
         <h1 id="biquaternion-elementary-functions"><strong>Biquaternion Elementary Functions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the logarithm, the power functions, the trigonometric and hyperbolic functions, and the inverse functions, and to compute them in closed form. The article mirrors <em>Quaternion Special Functions</em> in its treatment of the elementary functions, adapted to the complexified algebra. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
-<p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec\Xi$ and the parity-matched lattice — is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root, and of §<em>The Eigenvalue Formula</em> below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
+<p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec{Ζ}$ and the parity-matched lattice — is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root, and of §<em>The Eigenvalue Formula</em> below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
 <p>The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, written $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, and its four conjugations. An element is <strong>$\natural$-regular</strong> when $\langle\tilde Q\rangle_{\natural}\neq0$ and <strong>$\natural$-degenerate</strong> when $\langle\tilde Q\rangle_{\natural}=0$.</p>
 <p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two regimes: when the vector part has a nonzero <strong>complex norm</strong>, and when the complex norm vanishes. These two regimes cover all possibilities. The first is the <strong>oscillatory regime</strong>; the second contains the <strong>nilpotent case</strong>, where the vector part is nonzero and squares to zero, and the <strong>scalar case</strong>, where the vector part vanishes. The purpose of this article is to develop the elementary functions in all three cases, with the scalar case distinguished where its logarithm or its powers are larger.</p>
 <p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions.</p>
@@ -100,7 +100,7 @@ a fixed square root of the value of the complex quadratic form on $\vec Q$ (<em>
 $$
 \vec Q=B\vec U,\qquad \vec U=\frac{\vec Q}{B},\qquad \vec U^2=-e_t.
 $$
-The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>The Spectrum</em>, §<em>The Spectral Criterion</em>, and are not derived again; replacing $B$ by $-B$ replaces $\vec U$ by $-\vec U$ and leaves $\tilde Q$ unchanged.</p>
+The square root, the axis and the pure root $\vec{Ζ}=-i\vec U$ are those of <em>The Spectrum</em>, §<em>The Spectral Criterion</em>, and are not derived again; replacing $B$ by $-B$ replaces $\vec U$ by $-\vec U$ and leaves $\tilde Q$ unchanged.</p>
 <p>The spectral data are those of <em>The Spectrum</em>, §<em>The Spectral Criterion</em>, and <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>; the coordinate change and the lattice are derived in §<em>The Logarithm</em> below. The definitions, the decompositions and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -120,7 +120,7 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 </tr>
 <tr>
 <td>Eigenprojections</td>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\vec\Xi=-i\vec U$, for $B\neq0$</td>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
 </tr>
 <tr>
 <td>Eigenvalue decomposition</td>
@@ -231,7 +231,7 @@ $$</p>
 \exp(\tilde Q)=\exp(\lambda_+)\tilde\Pi_++\exp(\lambda_-)\tilde\Pi_-
 =\exp(Q_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr),
 $$</p>
-<p>because $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ with $\vec\Xi=-i\vec U$. Hence</p>
+<p>because $\lambda_\pm=Q_t\pm iB$ and $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with $\vec{Ζ}=-i\vec U$. Hence</p>
 <p>$$
 \boxed{\; \exp(\tilde{Q}) = \exp(Q_t) \bigl(\cos B \, e_t + \sin B \, \vec U\bigr), \qquad B \neq 0 \;}
 $$</p>
@@ -458,7 +458,7 @@ $$</p>
 $$</p>
 <p>and the scalar part is fixed modulo $\pi i$; equivalently, its imaginary part is fixed modulo $\pi$. In the quaternion case the norm is real and positive, so the scalar part is the unique real number $\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ and carries no branch. In $\mathbb B$ the scalar part carries one integer before the vector part is considered.</p>
 <h3 id="the-eigenvalue-formula">The Eigenvalue Formula</h3>
-<p>The eigenvalue decomposition is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, and is not derived again. Let $\tilde Q$ be a unit with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec\Xi=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$; they are primitive, orthogonal and complete, and satisfy</p>
+<p>The eigenvalue decomposition is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, and is not derived again. Let $\tilde Q$ be a unit with $B\neq0$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$, the pure root is $\vec{Ζ}=-i\vec U=-i\vec Q/B$, and the eigenprojections are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$; they are primitive, orthogonal and complete, and satisfy</p>
 <p>$$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
 \qquad
@@ -481,7 +481,7 @@ $$</p>
 \qquad
 \mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm \;},
 $$</p>
-<p>the second equality using $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$ and $\vec\Xi=-i\vec U$. This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
+<p>the second equality using $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ and $\vec{Ζ}=-i\vec U$. This is the <strong>eigenvalue formula</strong>. It is the exact biquaternion form of the quaternion formula, with the real angle replaced by the complex angle</p>
 <p>$$
 \Theta=\frac{\mu_+-\mu_-}{2i}.
 $$</p>
@@ -1456,7 +1456,7 @@ $$</p>
 </tr>
 <tr>
 <td>Eigenprojections</td>
-<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\vec\Xi=-i\vec U$, for $B\neq0$</td>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec U$, for $B\neq0$</td>
 </tr>
 <tr>
 <td>Idempotent Principle</td>
@@ -1730,11 +1730,11 @@ $$</p>
 <td>Eigenvalues of $\tilde Q$ in the oscillatory regime</td>
 </tr>
 <tr>
-<td>$\vec\Xi = -i\vec U$</td>
-<td>Pure root of $+1$ attached to the axis, $\vec\Xi^2=e_t$</td>
+<td>$\vec{Ζ} = -i\vec U$</td>
+<td>Pure root of $+1$ attached to the axis, $\vec{Ζ}^2=e_t$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_\pm = \frac12(e_t \pm \vec\Xi)$</td>
+<td>$\tilde\Pi_\pm = \frac12(e_t \pm \vec{Ζ})$</td>
 <td>Eigenprojections of $\tilde Q$; $\tilde\Pi_++\tilde\Pi_-=e_t$, $\tilde\Pi_+\tilde\Pi_-=0$</td>
 </tr>
 <tr>
@@ -1805,7 +1805,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root $\vec\Xi$; §<em>The Eigenvalue Formula</em> of this article, for the parity-matched lattice used there.</li>
+<li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root $\vec{Ζ}$; §<em>The Eigenvalue Formula</em> of this article, for the parity-matched lattice used there.</li>
 <li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the exponential as a biquaternion Fourier kernel, the root supplied by the element, the character exponents and the Hermitian norm of the flow.</li>
 <li><a href="../articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>, for the null translation as a shear, the gauge orbit along which it moves, and the helicity of the massless field.</li>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.</li>

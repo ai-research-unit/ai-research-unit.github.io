@@ -93,7 +93,7 @@ $$</p>
 $$</p>
 <p>a copy of the complex line embedded as the scalar part, and it is the centre of $\mathbb{B}$. Within it the roots of $-1$ are exactly $\pm i$: the scalar imaginary is not "one root of $-1$ among many" but <em>the</em> central one.</p>
 <h3 id="the-quaternion-units-and-the-non-central-roots">The quaternion units and the non-central roots</h3>
-<p>Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -e_t$: either $\tilde{\Xi} = \pm i$ (the central roots), or $\tilde{\Xi} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the <strong>unit pure real quaternions</strong> $\vec u \in \mathbb{H}_{\mathbb{B}}$, with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^\dagger = -\vec u \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.</p>
+<p>Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the <strong>unit pure real quaternions</strong> $\vec u \in \mathbb{H}_{\mathbb{B}}$, with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^\dagger = -\vec u \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.</p>
 <p>The two appear side by side in the idempotent</p>
 <p>$$
 \tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right),
@@ -216,32 +216,32 @@ p_+ = \frac{\langle\tilde\Pi_1(\vec u),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},
 $$</p>
 <p>For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = \vec e_z$, and $p_+ = \tfrac12(1 + \vec u\cdot \vec e_z)$, the standard result.</p>
 <h2 id="why-the-scalar-imaginary-and-not-a-quaternion-unit">Why the Scalar Imaginary, and Not a Quaternion Unit</h2>
-<p>It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $\tilde\Xi$ with $\tilde\Xi^2 = -1$ is used in place of $i$:</p>
+<p>It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -1$ is used in place of $i$:</p>
 <p>$$
-\hbar\,\tilde\Xi\,\partial/\partial t'\psi = \tilde{H}\psi
+\hbar\,\tilde{Ζ}\,\partial/\partial t'\psi = \tilde{H}\psi
 \qquad\Longrightarrow\qquad
-\partial/\partial t'\psi = -\frac{1}{\hbar}\tilde\Xi\tilde{H}\,\psi,
+\partial/\partial t'\psi = -\frac{1}{\hbar}\tilde{Ζ}\tilde{H}\,\psi,
 $$</p>
-<p>so the generator of the flow is $-\hbar^{-1}\tilde\Xi\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'\tilde\Xi\tilde{H})$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde\Xi\tilde{H}$ is anti-Hermitian, which is the condition</p>
+<p>so the generator of the flow is $-\hbar^{-1}\tilde{Ζ}\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'\tilde{Ζ}\tilde{H})$ is $*$-unitary, exactly when $-\hbar^{-1}\tilde{Ζ}\tilde{H}$ is anti-Hermitian, which is the condition</p>
 <p>$$
-(\tilde\Xi\tilde{H})^{*} = -\tilde\Xi\tilde{H}
+(\tilde{Ζ}\tilde{H})^{*} = -\tilde{Ζ}\tilde{H}
 \qquad\Longleftrightarrow\qquad
-\tilde{H}\tilde\Xi^\dagger = -\tilde\Xi\tilde{H}
+\tilde{H}\tilde{Ζ}^\dagger = -\tilde{Ζ}\tilde{H}
 \quad\text{for all Hermitian } \tilde{H}.
 $$</p>
-<p>Taking $\tilde{H} = e_t$ gives $\tilde\Xi^\dagger = -\tilde\Xi$, so $\tilde\Xi$ must be anti-Hermitian; the condition then becomes $\tilde{H}\tilde\Xi = \tilde\Xi\tilde{H}$ for every Hermitian $\tilde{H}$. Take $\tilde{H} = i\,\vec e_\mu$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_\mu \tilde\Xi = \tilde\Xi\vec e_\mu$, so $\tilde\Xi$ commutes with the quaternion units. Writing $\tilde\Xi = q_t e_t + \sum_\mu q_\mu \vec e_\mu$ with $\mu=x,y,z$, the relations $\vec e_x\tilde\Xi = \tilde\Xi\vec e_x$ and $\vec e_y\tilde\Xi = \tilde\Xi\vec e_y$ give $q_y = q_z = 0$ and then $q_x = 0$, leaving $\tilde\Xi = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde\Xi$ is central. Then $\tilde\Xi^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the <em>unique</em> choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.</p>
-<p><strong>A counterexample for a quaternion unit.</strong> Take $\vec\Xi = \vec e_z$ (a root of $-1$) and the Hermitian $\tilde{H} = i\,\vec e_x$. Then</p>
+<p>Taking $\tilde{H} = e_t$ gives $\tilde{Ζ}^\dagger = -\tilde{Ζ}$, so $\tilde{Ζ}$ must be anti-Hermitian; the condition then becomes $\tilde{H}\tilde{Ζ} = \tilde{Ζ}\tilde{H}$ for every Hermitian $\tilde{H}$. Take $\tilde{H} = i\,\vec e_\mu$ with $\mu = x,y,z$, which is Hermitian: since $i$ is central, the condition reads $\vec e_\mu \tilde{Ζ} = \tilde{Ζ}\vec e_\mu$, so $\tilde{Ζ}$ commutes with the quaternion units. Writing $\tilde{Ζ} = q_t e_t + \sum_\mu q_\mu \vec e_\mu$ with $\mu=x,y,z$, the relations $\vec e_x\tilde{Ζ} = \tilde{Ζ}\vec e_x$ and $\vec e_y\tilde{Ζ} = \tilde{Ζ}\vec e_y$ give $q_y = q_z = 0$ and then $q_x = 0$, leaving $\tilde{Ζ} = q_te_t$ with $q_t \in \mathbb{C}$. The centralizer of the quaternion units is therefore the centre $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$: $\tilde{Ζ}$ is central. Then $\tilde{Ζ}^2 = -e_t$ gives $q_t^2 = -1$, so $q_t = \pm i$. Thus the scalar imaginary is the <em>unique</em> choice, up to sign, that makes the equation norm-preserving for every Hermitian Hamiltonian.</p>
+<p><strong>A counterexample for a quaternion unit.</strong> Take $\vec{Ζ} = \vec e_z$ (a root of $-1$) and the Hermitian $\tilde{H} = i\,\vec e_x$. Then</p>
 <p>$$
-\vec\Xi\tilde{H} = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
+\vec{Ζ}\tilde{H} = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
 $$</p>
-<p>using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec\Xi\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'\vec\Xi\tilde{H})$ is not $*$-unitary. Explicitly, at $t' = \pi\hbar/2$,</p>
+<p>using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}\vec{Ζ}\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'\vec{Ζ}\tilde{H})$ is not $*$-unitary. Explicitly, at $t' = \pi\hbar/2$,</p>
 <p>$$
 \tilde Q^{*}\tilde Q = \exp\!\left(-i\pi \vec e_y\right)
 = \cosh(\pi)\,e_t - i\sinh(\pi)\,\vec e_y \neq e_t,
 $$</p>
-<p>so the norm is not preserved by this "Schrödinger equation". The failure is generic: a non-central $\vec\Xi$ fails as soon as $\tilde{H}$ does not commute with it.</p>
+<p>so the norm is not preserved by this "Schrödinger equation". The failure is generic: a non-central $\vec{Ζ}$ fails as soon as $\tilde{H}$ does not commute with it.</p>
 <p>There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\psi$ and $\psi \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.</p>
-<p><strong>A caveat, stated honestly.</strong> A non-central $\tilde\Xi$ is not always inadmissible: if a particular $\tilde{H}$ commutes with $\tilde\Xi$, then $\tilde\Xi\tilde{H}$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde{H} = i\,\vec e_z$ and $\vec\Xi = \vec e_z$, giving $\vec\Xi\tilde{H} = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation.</p>
+<p><strong>A caveat, stated honestly.</strong> A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde{H}$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde{H}$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde{H} = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde{H} = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation.</p>
 <h2 id="the-math258-and-math259-readings-of-the-equation">The $\mathbb{M}_-$ and $\mathbb{M}_+$ Readings of the Equation</h2>
 <p>The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $i\hbar$,</p>
 <p>$$
@@ -288,7 +288,7 @@ $$</p>
 $$</p>
 <p>with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the <strong>scalar imaginary</strong> — the central root of $-1$ in $\mathbb{B}$, unique up to sign.</p>
 <p>The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.</p>
-<p>Using a non-central root $\tilde\Xi$ in place of $i$ fails generically: the generator $-\hbar^{-1}\tilde\Xi\tilde{H}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec\Xi = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.</p>
+<p>Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\hbar^{-1}\tilde{Ζ}\tilde{H}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.</p>
 <p>Read in the two sectors, the equation says that the Hermitian observable $\tilde{H} \in \mathbb{M}_+$ generates, through the intertwiner $i$, a flow whose generator $-i\tilde{H}/\hbar$ lies in the material sector $\mathbb{M}_-$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

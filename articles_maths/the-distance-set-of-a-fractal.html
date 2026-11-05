@@ -86,7 +86,7 @@ $$</p>
 <p><strong>Theorem (Falconer, 1985).</strong> If $E \subseteq \mathbb{R}^d$ is Borel and $\dim_H E > (d+1)/2$, then $\Delta(E)$ has positive Lebesgue measure.</p>
 <p><strong>Proof sketch.</strong> The proof averages the squared Fourier transform of a measure $\mu$ of finite $s$-energy supported on $E$ over the sphere of radius $r$,</p>
 <p>$$
-\sigma(\mu)(r) = \int_{S^{d-1}} \bigl|\widehat{\mu}(r\xi)\bigr|^2\,d\sigma(\xi) ,
+\sigma(\mu)(r) = \int_{S^{d-1}} \bigl|\widehat{\mu}(r\zeta)\bigr|^2\,d\sigma(\zeta) ,
 $$</p>
 <p>and integrates $r^{d-1}\,dr$ against a cutoff; the decay of $\widehat\mu$ makes the truncated integral bounded exactly when $\dim_H E > (d+1)/2$, and the distance measure is then positive. The computation is the one of <em>Real Harmonic Analysis</em>; the dimension hypothesis enters through the decay of $\widehat\mu$.</p>
 <h2 id="the-thresholds-and-the-partial-results">The Thresholds and the Partial Results</h2>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>Remark (the failure for the polygonal norms).</strong> The conjecture is specific to the Euclidean distance. For a norm in the plane defined by a polygon, the analogue is false: there are sets of Hausdorff dimension two whose distance set has Lebesgue measure zero. The Euclidean structure enters through the curvature of the sphere — the Fourier transform of the surface measure on $S^{d-1}$ decays — and a polygon has no such decay. This is the reason the argument is a harmonic-analytic one and not a purely metric one.</p>
 <p><strong>Remark (the reduction to the projection theorem).</strong> The exact identity behind all the thresholds is the energy identity of <em>Projections of a Fractal and the Dimension</em>,</p>
 <p>$$
-\boxed{\;\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\xi\#}\mu)\,d\sigma(\xi) = c_d\, \mathcal{I}_{d-1}(\mu)\;} ,
+\boxed{\;\int_{S^{d-1}} \mathcal{I}_{d-1}(\pi_{\zeta\#}\mu)\,d\sigma(\zeta) = c_d\, \mathcal{I}_{d-1}(\mu)\;} ,
 $$</p>
 <p>which says that the average over the directions of the energy of the projection of the measure equals the energy of the measure; in the Fourier form the energy is
 $\mathcal{I}_{s}(\mu) = c_{d,s}\int|\widehat{\mu}(\varkappa^{\mathrm{crd}})|^{2}|\varkappa^{\mathrm{crd}}|^{s-d}\,d\varkappa^{\mathrm{crd}}$, and the curvature of the sphere is what makes the average converge. The distance set is the radial image of the difference set, and the projection theorem of <em>Projections of a Fractal and the Dimension</em> is the geometric statement of the same average. Marstrand's theorem gives the dimension of the projections, while Falconer's problem asks for the <strong>measure</strong> of the set of the projected lengths, which is strictly stronger; this is why the projection theorem alone does not settle the conjecture.</p>
@@ -156,8 +156,8 @@ The example is the case in which the difference set is maximal, and it shows tha
 <td>Fourier transform of the measure; surface measure on the sphere</td>
 </tr>
 <tr>
-<td>$\mathcal{I}_{d-1}(\pi_{\xi\#}\mu)$</td>
-<td>Energy of the projection of the measure onto the direction $\xi$</td>
+<td>$\mathcal{I}_{d-1}(\pi_{\zeta\#}\mu)$</td>
+<td>Energy of the projection of the measure onto the direction $\zeta$</td>
 </tr>
 <tr>
 <td>$c\,n/\log n$</td>

@@ -79,7 +79,7 @@ $$</p>
 <p>the unit ball is $B^n = \{Q : \langle Q_1\rangle_{*} + \cdots + \langle Q_n\rangle_{*} < 1\}$, and the <strong>Wirtinger operators</strong> are $\partial/\partial Q_j = \tfrac12(\partial/\partial q_j - i\partial/\partial q'_j)$ and $\partial/\partial \bar Q_j = \tfrac12(\partial/\partial q_j + i\partial/\partial q'_j)$. The <strong>Cauchy–Riemann operator</strong> is $\bar\partial = \sum_j (\partial/\partial \bar Q_j)\,d\bar Q_j$, the sheaf of holomorphic functions is $\mathcal{O}$, the sheaf of nowhere-vanishing holomorphic functions is $\mathcal{O}^*$, the structure sheaf of a complex manifold is written $\mathcal{O}_X$, and $\Omega^n$ is the sheaf of holomorphic $n$-forms. The unit disc in $\mathbb{C}$ is $\Delta$.</p>
 <h2 id="holomorphic-functions-of-several-variables">Holomorphic Functions of Several Variables</h2>
 <h3 id="holomorphy-and-the-cauchyriemann-equations">Holomorphy and the Cauchy–Riemann Equations</h3>
-<p><strong>Definition.</strong> Let $\Xi \subseteq \mathbb{C}^n$ be open. A function $f : \Xi \to \mathbb{C}$ is <strong>holomorphic</strong> if it is complex differentiable at every point, that is, real differentiable with a $\mathbb{C}$-linear differential; equivalently, if it is locally the sum of a convergent power series. The first condition is expressed by the system of Cauchy–Riemann equations</p>
+<p><strong>Definition.</strong> Let $Ζ \subseteq \mathbb{C}^n$ be open. A function $f : Ζ \to \mathbb{C}$ is <strong>holomorphic</strong> if it is complex differentiable at every point, that is, real differentiable with a $\mathbb{C}$-linear differential; equivalently, if it is locally the sum of a convergent power series. The first condition is expressed by the system of Cauchy–Riemann equations</p>
 <p>$$
 \frac{\partial f}{\partial \bar Q_j} = 0, \qquad j = 1, \dots, n ,
 $$</p>
@@ -126,7 +126,7 @@ $$</p>
 <p><strong>Proof.</strong> The functions of $D$ are bounded on $\hat K_D$ by their supremum on $K$, so their power series at points of $K$ converge on an open set containing $\hat K_D$; the continuation gives the extension.</p>
 <h2 id="pseudoconvexity-and-the-levi-problem">Pseudoconvexity and the Levi Problem</h2>
 <h3 id="plurisubharmonic-functions">Plurisubharmonic Functions</h3>
-<p><strong>Definition.</strong> An upper semicontinuous function $\varphi : \Xi \to [-\infty, \infty)$ on an open $\Xi \subseteq \mathbb{C}^n$ is <strong>plurisubharmonic</strong> if for every $Q \in \Xi$ and $B \in \mathbb{C}^n$ the function $\varkappa^{\mathrm{crd}} \mapsto \varphi(Q + \varkappa^{\mathrm{crd}} B)$ of the complex variable $\varkappa^{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its <strong>Levi form</strong></p>
+<p><strong>Definition.</strong> An upper semicontinuous function $\varphi : Ζ \to [-\infty, \infty)$ on an open $Ζ \subseteq \mathbb{C}^n$ is <strong>plurisubharmonic</strong> if for every $Q \in Ζ$ and $B \in \mathbb{C}^n$ the function $\varkappa^{\mathrm{crd}} \mapsto \varphi(Q + \varkappa^{\mathrm{crd}} B)$ of the complex variable $\varkappa^{\mathrm{crd}}$ is subharmonic on its domain. A $\mathcal{C}^2$ function $\varphi$ is plurisubharmonic if and only if its <strong>Levi form</strong></p>
 <p>$$
 L\varphi(Q; B) = \sum_{j,k=1}^{n} \frac{\partial^2 \varphi}{\partial Q_j \partial \bar Q_k}(Q)\, B_j \bar B_k
 $$</p>
@@ -161,7 +161,7 @@ $$</p>
 <p><strong>Corollary.</strong> On a pseudoconvex domain $D$, $H^q(D, \mathcal{O}) = 0$ for every $m \geq 1$. In particular, for $n \geq 2$, if $K \subset D$ is compact and $D \setminus K$ is connected, then every holomorphic function on $D \setminus K$ extends holomorphically to $D$.</p>
 <p><strong>Proof.</strong> The vanishing is the Dolbeault isomorphism with the solvability of $\bar\partial$ in degree $(0,q)$ for $m \geq 1$, using $n = 0$; the extension statement is the combination with the Hartogs phenomenon and the Levi problem.</p>
 <h3 id="the-cousin-problems">The Cousin Problems</h3>
-<p><strong>Definition.</strong> The <strong>first Cousin problem</strong> (additive) asks, given a domain $D$ and an open cover $\{\Xi_i\}$ with holomorphic functions $f_{ij}$ on $\Xi_i \cap \Xi_j$ satisfying the cocycle conditions, for holomorphic $f_i$ on $\Xi_i$ with $f_i - f_j = f_{ij}$. The <strong>second Cousin problem</strong> (multiplicative) asks the same question with the additive cocycle replaced by a nowhere-vanishing multiplicative one, $f_i/f_j = f_{ij}$.</p>
+<p><strong>Definition.</strong> The <strong>first Cousin problem</strong> (additive) asks, given a domain $D$ and an open cover $\{Ζ_i\}$ with holomorphic functions $f_{ij}$ on $Ζ_i \cap Ζ_j$ satisfying the cocycle conditions, for holomorphic $f_i$ on $Ζ_i$ with $f_i - f_j = f_{ij}$. The <strong>second Cousin problem</strong> (multiplicative) asks the same question with the additive cocycle replaced by a nowhere-vanishing multiplicative one, $f_i/f_j = f_{ij}$.</p>
 <p><strong>Theorem.</strong> On a domain of holomorphy the first Cousin problem is always solvable. The second Cousin problem is solvable if and only if the class of the cocycle in $H^1(D, \mathcal{O}^*)$ vanishes, and in the equivalence-class form the obstruction is the image of the class under the connecting map</p>
 <p>$$
 H^1(D, \mathcal{O}^*) \longrightarrow H^2(D, \mathbb{Z})
@@ -285,7 +285,7 @@ $$</p>
 <td>Sheaf cohomology</td>
 </tr>
 <tr>
-<td>$\Xi_i \cap \Xi_j$, $f_{ij}$</td>
+<td>$Ζ_i \cap Ζ_j$, $f_{ij}$</td>
 <td>Cousin data, additive or multiplicative</td>
 </tr>
 <tr>

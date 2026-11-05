@@ -76,42 +76,42 @@
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The split complex plane $\mathbb{C}^{\mathrm{spl}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms</p>
 <p>$$
-\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, Q \rangle = \operatorname{Re}(\bar{\xi} Q) = u q - v q', \qquad \xi = u + jv, \quad Q = q + jq'.
+\langle \zeta, Q \rangle = \operatorname{Re}(\bar{\zeta} Q) = u q - v q', \qquad \zeta = u + jv, \quad Q = q + jq'.
 $$</p>
-<p>Note the minus sign: it comes from the split complex conjugation $\bar{\xi} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}^{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself, but the pairing is indefinite.</p>
+<p>Note the minus sign: it comes from the split complex conjugation $\bar{\zeta} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}^{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself, but the pairing is indefinite.</p>
 <p>So at the level of the additive group, split complex harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a Lorentzian pairing instead of a Euclidean one.</p>
 <h3 id="the-split-complex-characters">The Split Complex Characters</h3>
 <p>The <strong>split complex characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{spl}}$:</p>
 <p>$$
-\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
 $$</p>
 <p>where the exponential is the split complex exponential. Explicitly,</p>
 <p>$$
-\chi_\xi(Q) = \cosh(\operatorname{Re}(\bar{\xi} Q)) + j \sinh(\operatorname{Re}(\bar{\xi} Q)).
+\chi_\zeta(Q) = \cosh(\operatorname{Re}(\bar{\zeta} Q)) + j \sinh(\operatorname{Re}(\bar{\zeta} Q)).
 $$</p>
-<p>These characters are <strong>unbounded</strong>: as $|\operatorname{Re}(\bar{\xi} Q)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.</p>
+<p>These characters are <strong>unbounded</strong>: as $|\operatorname{Re}(\bar{\zeta} Q)| \to \infty$, the hyperbolic functions grow exponentially. This is the fundamental obstruction, and it is the reason split complex harmonic analysis differs from complex harmonic analysis.</p>
 <h2 id="the-split-complex-fourier-transform">The Split Complex Fourier Transform</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>split complex Fourier transform</strong> of a function $f : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ,
 $$</p>
 <p>where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.</p>
 <p><strong>Caution.</strong> The integral converges only for functions $f$ that decay faster than any exponential in both directions. This is the fundamental difference from the complex case.</p>
 <h3 id="the-idempotent-form">The Idempotent Form</h3>
 <p>In the idempotent basis, the split complex Fourier transform decomposes as</p>
 <p>$$
-\boxed{\; (\mathcal F f)(\xi) = \mathcal F f_+(\xi_+) \Pi_+ + \mathcal F f_-(\xi_-) \Pi_- \;},
+\boxed{\; (\mathcal F f)(\zeta) = \mathcal F f_+(\zeta_+) \Pi_+ + \mathcal F f_-(\zeta_-) \Pi_- \;},
 $$</p>
 <p>where</p>
 <p>$$
-\mathcal F f_\pm(\xi_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \xi_\pm Q_\pm) \, dQ_\pm.
+\mathcal F f_\pm(\zeta_\pm) = \int_{\mathbb{R}} f_\pm(Q_\pm) \exp(\mp \zeta_\pm Q_\pm) \, dQ_\pm.
 $$</p>
-<p>The two integrals are <strong>Laplace transforms</strong>, one for each idempotent component. The first integral converges for $\xi_+ > 0$ and the second for $\xi_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.</p>
+<p>The two integrals are <strong>Laplace transforms</strong>, one for each idempotent component. The first integral converges for $\zeta_+ > 0$ and the second for $\zeta_- < 0$. So the split complex Fourier transform is the pair of Laplace transforms on the two null directions.</p>
 <p>This is the precise sense in which split complex harmonic analysis is the Laplace transform in disguise.</p>
 <h3 id="the-domain-of-definition">The Domain of Definition</h3>
 <p>The split complex Fourier transform is defined on the class of functions $f$ for which both idempotent components are integrable against the corresponding exponential. This is a very restrictive class, essentially the functions that decay faster than any exponential at both ends of each null line.</p>
@@ -126,7 +126,7 @@ $$</p>
 <h3 id="relation-to-the-split-complex-fourier-transform">Relation to the Split Complex Fourier Transform</h3>
 <p>The split complex Fourier transform on the positive null direction is the Laplace transform:</p>
 <p>$$
-\mathcal F f_+(\xi_+) = \int_0^\infty f_+(Q_+) \exp(-\xi_+ Q_+) \, dQ_+ = \mathcal{L} f_+(\xi_+).
+\mathcal F f_+(\zeta_+) = \int_0^\infty f_+(Q_+) \exp(-\zeta_+ Q_+) \, dQ_+ = \mathcal{L} f_+(\zeta_+).
 $$</p>
 <p>So the split complex Fourier transform is the pair of Laplace transforms on the two null directions. This is not an analogy; it is an identity.</p>
 <h3 id="inversion">Inversion</h3>
@@ -137,15 +137,15 @@ $$</p>
 <p>which is a contour integral in the complex plane. So the inversion of the split complex Fourier transform requires complexification of the idempotent components. This is the price of working with unbounded characters.</p>
 <h2 id="the-split-complex-fourier-transform-on-a-bounded-interval">The Split Complex Fourier Transform on a Bounded Interval</h2>
 <h3 id="definition_2">Definition</h3>
-<p>On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\xi} Q))$ are bounded, and the split complex Fourier transform</p>
+<p>On a bounded interval $[-T, T]$, the characters $\exp(-j \operatorname{Re}(\bar{\zeta} Q))$ are bounded, and the split complex Fourier transform</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{-T}^T f(Q) \exp(-j \operatorname{Re}(\bar{\xi} Q)) \, dQ
+(\mathcal F f)(\zeta) = \int_{-T}^T f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ
 $$</p>
 <p>converges for $f \in L^1([-T, T])$.</p>
 <h3 id="inversion_1">Inversion</h3>
 <p>On a bounded interval, the inversion formula is</p>
 <p>$$
-f(Q) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\xi) \exp(j \operatorname{Re}(\bar{\xi} Q)) \, d\xi,
+f(Q) = \frac{1}{2\pi} \int_{\mathbb{R}} (\mathcal F f)(\zeta) \exp(j \operatorname{Re}(\bar{\zeta} Q)) \, d\zeta,
 $$</p>
 <p>under suitable conditions. This is the analogue of the Fourier inversion theorem for the split complex case, and it is the setting in which split complex harmonic analysis is useful.</p>
 <h3 id="applications">Applications</h3>
@@ -167,7 +167,7 @@ $$</p>
 <p>where the norms are the ordinary $L^{n}$ norms on $\mathbb{R}^2$.</p>
 <p><strong>Convolution theorem.</strong> For functions for which the split complex Fourier transform is defined,</p>
 <p>$$
-\boxed{\; \widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi) \;}.
+\boxed{\; \widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta) \;}.
 $$</p>
 <p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables.</p>
 <h3 id="the-idempotent-form_1">The Idempotent Form</h3>
@@ -209,7 +209,7 @@ $$</p>
 $$</p>
 <p><strong>Fourier multiplier.</strong> In terms of the split complex Fourier transform,</p>
 <p>$$
-\widehat{Hf}(\xi) = -j \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
+\widehat{Hf}(\zeta) = -j \operatorname{sgn}(\zeta) (\mathcal F f)(\zeta),
 $$</p>
 <p>where $\operatorname{sgn}$ is the sign function on each idempotent component.</p>
 <h2 id="maximal-functions">Maximal Functions</h2>
@@ -294,9 +294,9 @@ $$</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
 <p>$$
-f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\xi} Q)) \, d\sigma \, d\theta,
+f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(j \sigma \operatorname{Re}(\bar{\zeta} Q)) \, d\sigma \, d\theta,
 $$</p>
-<p>where $\xi = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.</p>
+<p>where $\zeta = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in hyperbolic tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
 <h3 id="definition_8">Definition</h3>
 <p>The <strong>split complex continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is</p>
@@ -305,7 +305,7 @@ W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty,
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
 $$</p>
 <p>where $\hat{\psi}$ is the ordinary Fourier transform.</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>
@@ -345,7 +345,7 @@ $$</p>
 <td>General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$</td>
 </tr>
 <tr>
-<td>$\chi_\xi(Q) = \exp(j \operatorname{Re}(\bar{\xi} Q))$</td>
+<td>$\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q))$</td>
 <td>Split complex character</td>
 </tr>
 <tr>

@@ -106,15 +106,15 @@ $$</p>
 <p>the matrix is $Q_t$ times a single unipotent Jordan block. The eigenline is $\ker N$; it is one complex line, not a basis.</p>
 <p>The scalar line $\vec\Upsilon=0$ is the exception. There $\tilde Q=Q_te_t$ is central, every basis is an eigenbasis, and the polar word is central. The rest of the article concerns the Jordan part $\vec\Upsilon\neq0$.</p>
 <h2 id="the-jordan-basis">The Jordan Basis</h2>
-<p><strong>Proposition (the Jordan chain).</strong> Let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. There are elements $\xi,\eta$ with</p>
+<p><strong>Proposition (the Jordan chain).</strong> Let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. There are elements $\zeta,\eta$ with</p>
 <p>$$
-\vec\Upsilon\xi=0,
+\vec\Upsilon\zeta=0,
 \qquad
-\vec\Upsilon\eta=\xi,
+\vec\Upsilon\eta=\zeta,
 $$</p>
-<p>and $(\xi,\eta)$ is a basis. In that basis the matrix of $\tilde Q$ is</p>
+<p>and $(\zeta,\eta)$ is a basis. In that basis the matrix of $\tilde Q$ is</p>
 <p>$$
-\mathsf M_{(\xi,\eta)}(\tilde Q)
+\mathsf M_{(\zeta,\eta)}(\tilde Q)
 =
 Q_t
 \begin{pmatrix}
@@ -123,15 +123,15 @@ Q_t
 \end{pmatrix}.
 $$</p>
 <p><em>Proof.</em> In the matrix model choose $v\in\operatorname{im}N$ with $v\neq0$. Since $N^2=0$, $v\in\ker N$. Choose $w$ with $Nw=v$. Then $v\neq0$ and $w\notin\ker N$, so $(v,w)$ is a basis. The matrix of $N$ in that basis has first column $0$ and second column $v$, which is the nilpotent Jordan block.</p>
-<p>The chain is not unique for the product alone. The vector $\xi$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\xi$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\xi=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>. It is a basis of the generalized eigenspace, not a polar frame.</p>
+<p>The chain is not unique for the product alone. The vector $\zeta$ is determined up to a nonzero scalar, and $\eta$ is determined up to $\eta\mapsto\eta+c\zeta$. The Jordan basis is therefore a spectral object of the element, but not a canonical one from the product alone; the definite Hermitian form selects one chain, with $\zeta=\vec Q$ and $\eta=\tilde\Pi_-=\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$, in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>. It is a basis of the generalized eigenspace, not a polar frame.</p>
 <h2 id="the-polar-word-and-the-jordan-flag">The Polar Word and the Jordan Flag</h2>
 <p>The unit factor is a polynomial in $\tilde Q$,</p>
 <p>$$
 \tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)=\frac{\tilde Q}{Q_t},
 $$</p>
-<p>so it preserves the Jordan flag $\mathbb{C}\xi\subset\mathbb{C}^2$. In the Jordan basis its matrix is the unipotent block</p>
+<p>so it preserves the Jordan flag $\mathbb{C}\zeta\subset\mathbb{C}^2$. In the Jordan basis its matrix is the unipotent block</p>
 <p>$$
-\mathsf M_{(\xi,\eta)}(\tilde U)
+\mathsf M_{(\zeta,\eta)}(\tilde U)
 =
 \varepsilon
 \begin{pmatrix}
@@ -140,7 +140,7 @@ $$</p>
 \end{pmatrix}.
 $$</p>
 <p>The polar factors do not preserve the flag in general.</p>
-<p><strong>Proposition (the factors leave the flag).</strong> On the Jordan part, the positive factor $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ do not preserve the eigenline $\mathbb{C}\xi$ unless the element lies on the scalar line. Their product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ does preserve it.</p>
+<p><strong>Proposition (the factors leave the flag).</strong> On the Jordan part, the positive factor $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ do not preserve the eigenline $\mathbb{C}\zeta$ unless the element lies on the scalar line. Their product $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ does preserve it.</p>
 <p><em>Proof.</em> The product is $\tilde U$, which is upper triangular in the Jordan basis. If both factors preserved the flag, both would be upper triangular in that basis. The worked example below shows that they are not; the general statement follows because the polar factors are functions of $\tilde U$ and $\tilde U^{*}$, and $\tilde U^{*}$ does not preserve the flag of $\tilde U$ on the Jordan part.</p>
 <p>The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\psi/2}$ and $e^{-\psi/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.</p>
 <p>This is the precise sense in which the Jordan reading and the polar reading are transverse. The Jordan basis triangularizes the element and the unit factor. The polar word diagonalizes neither the element nor the unit factor; it separates the element into a positive and a $*$-unitary factor, and only their product is unipotent.</p>
@@ -204,7 +204,7 @@ $$</p>
 \tilde\Pi_\pm=\frac12\bigl(e_t\mp i\vec Q/B\bigr)
 $$</p>
 <p>diverge as $B\to0$, because $\vec Q/B$ diverges. Their sum is $e_t$, which remains finite. The eigenbasis has no limit. The polar word has a limit, and the limit is the word of this article; this is proved in <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>The Boundary</em>.</p>
-<p>The Jordan chain is the limit of a rescaled eigenbasis. If $\xi_\pm$ are normalized eigenvectors of $\tilde Q$ with eigenvalues $\lambda_\pm$, then $\xi_+\to\xi$ and $(\xi_+-\xi_-)/(\lambda_+-\lambda_-)\to\eta$ after a choice of normalization. The chain records the rate at which the two eigenlines merge. It is a spectral remnant of the regular basis, not a polar object.</p>
+<p>The Jordan chain is the limit of a rescaled eigenbasis. If $\zeta_\pm$ are normalized eigenvectors of $\tilde Q$ with eigenvalues $\lambda_\pm$, then $\zeta_+\to\zeta$ and $(\zeta_+-\zeta_-)/(\lambda_+-\lambda_-)\to\eta$ after a choice of normalization. The chain records the rate at which the two eigenlines merge. It is a spectral remnant of the regular basis, not a polar object.</p>
 <h2 id="worked-example">Worked Example</h2>
 <p>Take</p>
 <p>$$
@@ -234,16 +234,16 @@ N=\mathsf M(\vec\Upsilon)=
 0 & 0
 \end{pmatrix}.
 $$</p>
-<p>A Jordan chain is $\xi=(2i,0)$ and $\eta=(0,-1)$; then $\xi=(2i,0)$ is the eigenvector and $N\eta=\xi$. In the basis $(\xi,\eta)$,</p>
+<p>A Jordan chain is $\zeta=(2i,0)$ and $\eta=(0,-1)$; then $\zeta=(2i,0)$ is the eigenvector and $N\eta=\zeta$. In the basis $(\zeta,\eta)$,</p>
 <p>$$
-\mathsf M_{(\xi,\eta)}(\tilde Q)
+\mathsf M_{(\zeta,\eta)}(\tilde Q)
 =
 \begin{pmatrix}
 1 & 1\\
 0 & 1
 \end{pmatrix},
 \qquad
-\mathsf M_{(\xi,\eta)}(\tilde U_{\mathrm b})
+\mathsf M_{(\zeta,\eta)}(\tilde U_{\mathrm b})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
@@ -251,7 +251,7 @@ $$</p>
 2 & 1
 \end{pmatrix},
 \qquad
-\mathsf M_{(\xi,\eta)}(\tilde u_{\mathrm r})
+\mathsf M_{(\zeta,\eta)}(\tilde u_{\mathrm r})
 =
 \frac{1}{\sqrt2}
 \begin{pmatrix}
@@ -297,7 +297,7 @@ $$</p>
 </tr>
 <tr>
 <td>replacement</td>
-<td>a Jordan chain $\xi,\eta$ with $\vec\Upsilon\xi=0$ and $\vec\Upsilon\eta=\xi$</td>
+<td>a Jordan chain $\zeta,\eta$ with $\vec\Upsilon\zeta=0$ and $\vec\Upsilon\eta=\zeta$</td>
 </tr>
 <tr>
 <td>matrix form</td>
@@ -385,8 +385,8 @@ $$</p>
 <td>the sign of the scalar part of the unit factor</td>
 </tr>
 <tr>
-<td>$\xi,\eta$</td>
-<td>a Jordan chain, $\vec\Upsilon\xi=0$, $\vec\Upsilon\eta=\xi$</td>
+<td>$\zeta,\eta$</td>
+<td>a Jordan chain, $\vec\Upsilon\zeta=0$, $\vec\Upsilon\eta=\zeta$</td>
 </tr>
 <tr>
 <td>$\mathsf M(\tilde Q)$</td>

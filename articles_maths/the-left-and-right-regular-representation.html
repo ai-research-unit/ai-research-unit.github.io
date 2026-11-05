@@ -70,24 +70,24 @@
       <div class="article-body">
         <h1 id="the-left-and-right-regular-representation"><strong>The Left and Right Regular Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A group acts on its own $L^2$ space twice: by the left regular representation $\lambda$ and by the right regular representation $\rho$, and the whole operator theory of the group is the theory of the pair. The two are unitary, they commute, and the von Neumann algebras they generate are each other's commutant; the group algebra acts through the first, the second supplies the commutant, and the anti-linear operator $J\xi(x) = \overline{\xi(x^{-1})}$ exchanges them. This article fixes the pair, computes the commutation and the commutant relation, identifies the underlying Hilbert algebra, and describes the exchange.</p>
+<p>A group acts on its own $L^2$ space twice: by the left regular representation $\lambda$ and by the right regular representation $\rho$, and the whole operator theory of the group is the theory of the pair. The two are unitary, they commute, and the von Neumann algebras they generate are each other's commutant; the group algebra acts through the first, the second supplies the commutant, and the anti-linear operator $J\zeta(x) = \overline{\zeta(x^{-1})}$ exchanges them. This article fixes the pair, computes the commutation and the commutant relation, identifies the underlying Hilbert algebra, and describes the exchange.</p>
 <p>The article assumes the group, its Haar measure and the modular function from <em>Locally Compact Groups and Haar Measure</em>; the algebra $L^1(G)$ and its involution from <em>The Convolution Algebra $L^1(G)$</em>; the convolution operators from <em>Convolution on a Group</em>; the integrated forms, the completions and the group von Neumann algebra $L(G)$ from <em>The Group Algebra as an Algebra of Operators</em>; the direct integral and the fibres $\pi\otimes\pi^*$ from <em>The Plancherel Operator</em>; the characters and Pontryagin duality from <em>Harmonic Analysis on Groups</em>; the unitary dual, the direct-integral decomposition and $L(G)$ from <em>Noncommutative Harmonic Analysis</em> and <em>The Plancherel Theorem</em>; and the bounded operators, the von Neumann algebras, the double commutant and the standard form from <em>Operator Algebras</em>. The general left and right regular representations of a Hilbert algebra are <em>The Left and the Right Regular Representation</em>, in the Topology on Algebras slot, and are cited; the modular conjugation is the exchange of <em>The Modular Operator and Tomita–Takesaki Theory</em>, also cited. The adjoint of an operator on the group algebra belongs to the <code>- * Operator Theory</code> group of this category, and the measure algebra to <em>The Involution on the Measure Algebra</em>, later.</p>
-<p>Throughout, $G$ is a locally compact Hausdorff group with identity $e$, left Haar measure $dx$ and modular function $\Delta$; $G$ is <strong>unimodular</strong> when $\Delta \equiv 1$; $L^2(G)$ carries the inner product $\langle\xi,\eta\rangle = \int_G\xi(x)\overline{\eta(x)}\,dx$; and</p>
+<p>Throughout, $G$ is a locally compact Hausdorff group with identity $e$, left Haar measure $dx$ and modular function $\Delta$; $G$ is <strong>unimodular</strong> when $\Delta \equiv 1$; $L^2(G)$ carries the inner product $\langle\zeta,\eta\rangle = \int_G\zeta(x)\overline{\eta(x)}\,dx$; and</p>
 <p>$$
-\bigl(\lambda(x)\xi\bigr)(y) = \xi(x^{-1}y), \qquad \bigl(\rho(x)\xi\bigr)(y) = \xi(yx)
+\bigl(\lambda(x)\zeta\bigr)(y) = \zeta(x^{-1}y), \qquad \bigl(\rho(x)\zeta\bigr)(y) = \zeta(yx)
 $$</p>
 <p>are the <strong>left</strong> and the <strong>right regular representation</strong>, with integrated forms $\lambda(f) = \int_G f(x)\lambda(x)\,dx$, $\rho(f) = \int_G f(x)\rho(x)\,dx$ for $f \in L^1(G)$. The generated von Neumann algebras are</p>
 <p>$$
 \mathcal{M}_L = \lambda(G)'' = L(G), \qquad \mathcal{M}_R = \rho(G)'' ,
 $$</p>
-<p>and the modular conjugation is $J\xi(x) = \overline{\xi(x^{-1})}$.</p>
+<p>and the modular conjugation is $J\zeta(x) = \overline{\zeta(x^{-1})}$.</p>
 <h2 id="the-two-representations">The Two Representations</h2>
 <p><strong>Theorem (unitary representations and the commutation).</strong> The maps $\lambda$ and $\rho$ are representations of $G$,</p>
 <p>$$
 \boxed{\;\lambda(x)\lambda(y) = \lambda(xy), \qquad \rho(x)\rho(y) = \rho(yx)\;},
 $$</p>
 <p>they commute, $\lambda(x)\rho(y) = \rho(y)\lambda(x)$, and they are unitary on $L^2(G)$ for a unimodular group; the pair $(\lambda,\rho)$ is a unitary representation of $G\times G$. For a non-unimodular group $\rho$ is unitary for the inner product weighted by $\Delta$, and the pair is a representation of $G\times G$ with the second factor unitarily equivalent to its twist by the modular function.</p>
-<p><strong>Proof.</strong> The product laws are the associativity of the product on the arguments $y\mapsto x^{-1}y$ and $y\mapsto yx$, and the commutation is that the two translations of $\xi$ by $x$ on the left and $y$ on the right do not interfere. Unitarity of $\lambda$ is the left invariance of $dx$, and of $\rho$ the right invariance, which is $\Delta\equiv1$; the weighted form is the standard correction, recorded in <em>Locally Compact Groups and Haar Measure</em>.</p>
+<p><strong>Proof.</strong> The product laws are the associativity of the product on the arguments $y\mapsto x^{-1}y$ and $y\mapsto yx$, and the commutation is that the two translations of $\zeta$ by $x$ on the left and $y$ on the right do not interfere. Unitarity of $\lambda$ is the left invariance of $dx$, and of $\rho$ the right invariance, which is $\Delta\equiv1$; the weighted form is the standard correction, recorded in <em>Locally Compact Groups and Haar Measure</em>.</p>
 <p><strong>Proposition (the integrated forms).</strong> For $f, g \in L^1(G)$,</p>
 <p>$$
 \lambda(f)\lambda(g) = \lambda(f*g), \qquad \rho(f)\rho(g) = \rho(g*f), \qquad \lambda(f)\rho(g) = \rho(g)\lambda(f),
@@ -114,7 +114,7 @@ $$</p>
 <h2 id="the-modular-conjugation">The Modular Conjugation</h2>
 <p><strong>Definition.</strong> The <strong>modular conjugation</strong> of $L^2(G)$ is the anti-linear isometry</p>
 <p>$$
-J : L^2(G)\to L^2(G), \qquad (J\xi)(x) = \overline{\xi(x^{-1})},
+J : L^2(G)\to L^2(G), \qquad (J\zeta)(x) = \overline{\zeta(x^{-1})},
 $$</p>
 <p>which is defined for every locally compact group and is an involution, $J^2 = \mathrm{id}$, with $J$ isometric.</p>
 <p><strong>Theorem (the exchange of the two pictures).</strong> On a unimodular group $J$ conjugates the left regular representation into the right,</p>
@@ -122,7 +122,7 @@ $$</p>
 \boxed{\;J\,\lambda(x)\,J = \rho(x), \qquad J\,\rho(x)\,J = \lambda(x) \qquad (x \in G)\;},
 $$</p>
 <p>and consequently $J\,\mathcal{M}_L\,J = \mathcal{M}_R$ and $J\,\mathcal{M}_R\,J = \mathcal{M}_L$; the conjugation exchanges the algebra and its commutant and is the group instance of the modular conjugation of the standard form.</p>
-<p><strong>Proof.</strong> Compute $(J\lambda(x)J\xi)(y)$: one has $(J\xi)(z) = \overline{\xi(z^{-1})}$, hence $(\lambda(x)J\xi)(z) = \overline{\xi(z^{-1}x)}$, and evaluating at $z = y^{-1}$ and conjugating gives $\xi(yx) = (\rho(x)\xi)(y)$. The second identity is the first with $x$ replaced by $x^{-1}$; the exchange of the algebras follows from the exchange of the generators.</p>
+<p><strong>Proof.</strong> Compute $(J\lambda(x)J\zeta)(y)$: one has $(J\zeta)(z) = \overline{\zeta(z^{-1})}$, hence $(\lambda(x)J\zeta)(z) = \overline{\zeta(z^{-1}x)}$, and evaluating at $z = y^{-1}$ and conjugating gives $\zeta(yx) = (\rho(x)\zeta)(y)$. The second identity is the first with $x$ replaced by $x^{-1}$; the exchange of the algebras follows from the exchange of the generators.</p>
 <p><strong>Corollary (the exchange is the operator form of inversion).</strong> For $f \in L^1(G)$,</p>
 <p>$$
 J\,\lambda(f)\,J = \rho(\overline{f}), \qquad J\,\rho(f)\,J = \lambda(\overline{f}),
@@ -131,7 +131,7 @@ $$</p>
 <p><strong>Proof.</strong> Integrate the group identity $J\lambda(x)J = \rho(x)$ against $f(x)\,dx$, using that $J$ is anti-linear and isometric: $J\lambda(f)J = \int\overline{f(x)}\rho(x)\,dx = \rho(\overline{f})$. The second identity is the first with the roles exchanged. On a unimodular group $\overline{f(x)} = f^*(x^{-1})$ by the definition of $f^*$; the reading of $f^*$ as the adjoint of $\lambda(f)$ is left to the <code>- * Operator Theory</code> group.</p>
 <p><strong>Remark (the non-unimodular case).</strong> For a non-unimodular group the modular conjugation is not of this simple form: the Tomita–Takesaki modular operator $\nabla$ enters, the left and right representations are related by the modular flow, and the standard form is the one of the modular theory of <em>Operator Algebras</em>; the article records only that the pair $(\mathcal{M}_L,\mathcal{M}_R)$ is the general standard-form pair, with the group's modular function supplying the modular operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The left and the right regular representations $\lambda(x)\xi(y) = \xi(x^{-1}y)$ and $\rho(x)\xi(y) = \xi(yx)$ are representations of $G$ on $L^2(G)$ that commute and combine into a representation of $G\times G$; on a unimodular group both are unitary, and in general the second is unitary for the inner product weighted by the modular function. Their integrated forms satisfy $\lambda(f)\lambda(g) = \lambda(f*g)$, $\rho(f)\rho(g) = \rho(g*f)$ and $\lambda(f)\rho(g) = \rho(g)\lambda(f)$, the second being an anti-homomorphism; the generated von Neumann algebras $\mathcal{M}_L = \lambda(G)'' = L(G)$ and $\mathcal{M}_R = \rho(G)''$ are each other's commutant on a unimodular group, so the left picture determines the right, and the algebra generated by both has centre $\mathcal{M}_L\cap\mathcal{M}_R$. The Haar pairing and the involution make $L^1(G)\cap L^2(G)$ a Hilbert algebra whose left and right regular representations are precisely $\lambda$ and $\rho$, which is the group instance of the general theory of <em>The Left and the Right Regular Representation</em>. The modular conjugation $J\xi(x) = \overline{\xi(x^{-1})}$ is an anti-linear involution exchanging the two pictures, $J\lambda(x)J = \rho(x)$, and it exchanges the algebra and its commutant; for a non-unimodular group it is replaced by the modular conjugation of the Tomita–Takesaki theory. No adjoint of an operator on the group algebra is taken; the equality $\lambda(f^*) = \lambda(f)^*$ and the measure algebra are the <code>- *</code> groups of this category and <em>The Involution on the Measure Algebra</em>, later.</p>
+<p>The left and the right regular representations $\lambda(x)\zeta(y) = \zeta(x^{-1}y)$ and $\rho(x)\zeta(y) = \zeta(yx)$ are representations of $G$ on $L^2(G)$ that commute and combine into a representation of $G\times G$; on a unimodular group both are unitary, and in general the second is unitary for the inner product weighted by the modular function. Their integrated forms satisfy $\lambda(f)\lambda(g) = \lambda(f*g)$, $\rho(f)\rho(g) = \rho(g*f)$ and $\lambda(f)\rho(g) = \rho(g)\lambda(f)$, the second being an anti-homomorphism; the generated von Neumann algebras $\mathcal{M}_L = \lambda(G)'' = L(G)$ and $\mathcal{M}_R = \rho(G)''$ are each other's commutant on a unimodular group, so the left picture determines the right, and the algebra generated by both has centre $\mathcal{M}_L\cap\mathcal{M}_R$. The Haar pairing and the involution make $L^1(G)\cap L^2(G)$ a Hilbert algebra whose left and right regular representations are precisely $\lambda$ and $\rho$, which is the group instance of the general theory of <em>The Left and the Right Regular Representation</em>. The modular conjugation $J\zeta(x) = \overline{\zeta(x^{-1})}$ is an anti-linear involution exchanging the two pictures, $J\lambda(x)J = \rho(x)$, and it exchanges the algebra and its commutant; for a non-unimodular group it is replaced by the modular conjugation of the Tomita–Takesaki theory. No adjoint of an operator on the group algebra is taken; the equality $\lambda(f^*) = \lambda(f)^*$ and the measure algebra are the <code>- *</code> groups of this category and <em>The Involution on the Measure Algebra</em>, later.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -174,7 +174,7 @@ $$</p>
 <td>The involution of the Hilbert algebra</td>
 </tr>
 <tr>
-<td>$J\xi(x) = \overline{\xi(x^{-1})}$</td>
+<td>$J\zeta(x) = \overline{\zeta(x^{-1})}$</td>
 <td>Modular conjugation, $J^2 = \mathrm{id}$</td>
 </tr>
 <tr>

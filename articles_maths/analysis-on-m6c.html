@@ -233,13 +233,13 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{C}^{36})$ is the space of smooth functions $f$ on $\mathbb{R}^{72}$ such that every derivative multiplied by every polynomial is bounded.</p>
 <p><strong>Proposition.</strong> $\mathcal{S}$ is a Fréchet space, stable under differentiation and multiplication by polynomials, and the Fourier transform</p>
 <p>$$
-\hat f(\xi)=\int_{\mathbb{R}^{72}}f(x)e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
+\hat f(\zeta)=\int_{\mathbb{R}^{72}}f(x)e^{-2\pi\mathrm i\langle\zeta,x\rangle}\,dx
 $$</p>
 <p>maps $\mathcal{S}$ into itself.</p>
-<p><strong>Proof.</strong> The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.</p>
+<p><strong>Proof.</strong> The derivatives of $\hat f$ multiply by powers of $\zeta$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.</p>
 <p><strong>Corollary (Plancherel and inversion).</strong> The Fourier transform extends to a $*$-unitary operator on $L^2(\mathbb{R}^{72})$, and</p>
 <p>$$
-f(x)=\int_{\mathbb{R}^{72}}\hat f(\xi)e^{2\pi\mathrm i\langle\xi,x\rangle}\,d\xi .
+f(x)=\int_{\mathbb{R}^{72}}\hat f(\zeta)e^{2\pi\mathrm i\langle\zeta,x\rangle}\,d\zeta .
 $$</p>
 <p><strong>Proof.</strong> The inversion and Plancherel theorems for the Euclidean Fourier transform; the Gaussian is the standard test function.</p>
 <h3 id="the-inversion-and-plancherel">The Inversion and Plancherel</h3>
@@ -250,15 +250,15 @@ $$</p>
 <p><strong>Proof.</strong> The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; unitarity follows from the inversion and the $L^2$ pairing.</p>
 <p><strong>Corollary (differentiation and convolution).</strong> The Fourier transform converts differentiation into multiplication,</p>
 <p>$$
-\widehat{\partial f/\partial x_j}(\xi)=2\pi\mathrm i\xi_j\hat f(\xi),
+\widehat{\partial f/\partial x_j}(\zeta)=2\pi\mathrm i\zeta_j\hat f(\zeta),
 $$</p>
 <p>and convolution into product.</p>
 <p><strong>Proof.</strong> Integration by parts; the convolution theorem.</p>
 <h3 id="the-gaussian-and-the-heat-kernel">The Gaussian and the Heat Kernel</h3>
 <p><strong>Proposition.</strong> The Gaussian Fourier transform is</p>
 <p>$$
-\int_{\mathbb{R}^{72}}e^{-\pi\lvert x\rvert^2}e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
-=e^{-\pi\lvert\xi\rvert^2}.
+\int_{\mathbb{R}^{72}}e^{-\pi\lvert x\rvert^2}e^{-2\pi\mathrm i\langle\zeta,x\rangle}\,dx
+=e^{-\pi\lvert\zeta\rvert^2}.
 $$</p>
 <p><strong>Proof.</strong> The integral factors over the $72$ coordinates; the one-dimensional formula is the standard Gaussian integral.</p>
 <p><strong>Corollary (the heat kernel).</strong> The heat kernel on $\mathbb{R}^{72}$ is</p>
@@ -266,7 +266,7 @@ $$</p>
 p_t(x)=\frac{1}{(4\pi t)^{36}}e^{-\lvert x\rvert^2/(4t)},
 $$</p>
 <p>and it satisfies $\partial p_t/\partial t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.</p>
-<p><strong>Proof.</strong> The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\xi\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.</p>
+<p><strong>Proof.</strong> The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\zeta\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.</p>
 <p><strong>Remark (the Euclidean transform).</strong> <strong>The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_6$.</strong> It uses the additive structure of $\mathbb{C}^{36}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(6)$ is a different object, defined by the irreducible representations; it is not needed here.</p>
 <h2 id="zero-divisors-and-ordinary-matrix-analysis">Zero Divisors and Ordinary Matrix Analysis</h2>
 <h3 id="the-field-and-the-algebra">The Field and the Algebra</h3>

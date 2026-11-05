@@ -77,7 +77,7 @@
 <li>The <strong>ergodic theory of group actions</strong> — the invariance, ergodicity and mixing of an action of a general locally compact group, the Følner averaging of an amenable group, the Mautner phenomenon, the Moore and Howe–Moore theorems, orbit equivalence and the ratio ergodic theorem, and the homogeneous examples — is <em>Ergodic Theory of Group Actions</em>. The two articles overlap in the von Neumann and Birkhoff theorems for the action of $\mathbb{Z}$, which are stated once there as standard mathematics and used, and are here <strong>proved</strong> in the sharp form they take for a single transformation; the present article is the measure-theoretic theory of one map, and the group-action article is the algebraic theory of a group acting. <strong>The division of labour is asserted in the introduction of each article</strong>.</li>
 <li>The <strong>probability theory</strong> used here — the measure-theoretic frame, independence, conditional expectation, the laws of large numbers and the central limit theorem, the martingale theory, the Markov chains and processes, and the Brownian motion — is the block of articles <em>Measure-Theoretic Probability</em> through <em>Brownian Motion and Stochastic Calculus</em>, and the probabilistic statements are cited from them. The <strong>general measure theory</strong> is <em>Measure Theory and Integration</em> and <em>Modes of Convergence</em>, and the <strong>functional analysis</strong> — the spectral theorem, the $L^2$ projection, the unitary operators, the Choquet theory of simplices — is <em>Banach and Hilbert Spaces</em> and <em>Operator Algebras</em>. The <strong>dynamical applications</strong> to homogeneous spaces are <em>Homogeneous Dynamics</em> and <em>Ratner's Theorems</em>; the <strong>equidistribution</strong> of orbits is <em>Equidistribution</em>; and the <strong>random walks on groups</strong>, where the ergodic theory of a convolution action is used, is <em>Random Walks on Groups</em>. No physics is invoked.</li>
 </ul>
-<p>Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a measurable map, and $T$ is <strong>measure-preserving</strong> if $\mu(T^{-1}A) = \mu(A)$ for every $A \in \mathcal{B}$; the pair $(X,\mathcal{B},\mu,T)$ is then a <strong>measure-preserving system</strong>. Statements hold <strong>a.e.</strong> (almost everywhere) when they fail on a $\mu$-null set, and the probabilistic synonym <em>almost surely</em> is not used. The <strong>invariant $\sigma$-algebra</strong> is $\mathcal{I} = \{A \in \mathcal{B} : \mu(T^{-1}A\triangle A) = 0\}$, the <strong>Koopman operator</strong> is $U_Tf = f\circ T$, the <strong>Kronecker</strong> notation $e(\theta) = \exp(2\pi i\theta)$ is used, and $\xi\vee\eta$ is the join of two partitions.</p>
+<p>Throughout, $(X,\mathcal{B},\mu)$ is a probability space, $T : X\to X$ is a measurable map, and $T$ is <strong>measure-preserving</strong> if $\mu(T^{-1}A) = \mu(A)$ for every $A \in \mathcal{B}$; the pair $(X,\mathcal{B},\mu,T)$ is then a <strong>measure-preserving system</strong>. Statements hold <strong>a.e.</strong> (almost everywhere) when they fail on a $\mu$-null set, and the probabilistic synonym <em>almost surely</em> is not used. The <strong>invariant $\sigma$-algebra</strong> is $\mathcal{I} = \{A \in \mathcal{B} : \mu(T^{-1}A\triangle A) = 0\}$, the <strong>Koopman operator</strong> is $U_Tf = f\circ T$, the <strong>Kronecker</strong> notation $e(\theta) = \exp(2\pi i\theta)$ is used, and $\zeta\vee\eta$ is the join of two partitions.</p>
 <h2 id="measure-preserving-transformations">Measure-Preserving Transformations</h2>
 <h3 id="definitions-and-examples">Definitions and Examples</h3>
 <p><strong>Definition.</strong> A measurable map $T : X\to X$ is <strong>measure-preserving</strong> if $\mu(T^{-1}A) = \mu(A)$ for all $A \in \mathcal{B}$, and <strong>invertible</strong> if it is a bimeasurable bijection with a measure-preserving inverse; a measure-preserving system is <strong>ergodic</strong> if $A \in \mathcal{I}$ implies $\mu(A) \in \{0,1\}$, and <strong>nonsingular</strong> if only $\mu(T^{-1}A) = 0 \iff \mu(A) = 0$.</p>
@@ -159,20 +159,20 @@ $$</p>
 <p>Kac's theorem quantifies Poincaré recurrence: the mean return time to $A$ is $1/\mu(A)$, so a small set is revisited only after a long time. It is the prototype of the return-time statements used in the theory of the continued fraction map and in the recurrence of the homogeneous flows of <em>Ergodic Theory of Group Actions</em>.</p>
 <h2 id="entropy">Entropy</h2>
 <h3 id="kolmogorovsinai-entropy">Kolmogorov–Sinai Entropy</h3>
-<p><strong>Definition.</strong> Let $\xi = \{A_1,\dots,A_k\}$ be a finite partition of $X$. Its <strong>entropy</strong> is $H(\xi) = -\sum_i\mu(A_i)\log\mu(A_i)$, and the entropy of $T$ with respect to $\xi$ is</p>
+<p><strong>Definition.</strong> Let $\zeta = \{A_1,\dots,A_k\}$ be a finite partition of $X$. Its <strong>entropy</strong> is $H(\zeta) = -\sum_i\mu(A_i)\log\mu(A_i)$, and the entropy of $T$ with respect to $\zeta$ is</p>
 <p>$$
-h_\mu(T,\xi) = \lim_{n\to\infty}\frac{1}{n}H\!\left(\bigvee_{k=0}^{n-1}T^{-k}\xi\right),
+h_\mu(T,\zeta) = \lim_{n\to\infty}\frac{1}{n}H\!\left(\bigvee_{k=0}^{n-1}T^{-k}\zeta\right),
 $$</p>
-<p>the limit existing because the sequence is subadditive. The <strong>Kolmogorov–Sinai entropy</strong> is $h_\mu(T) = \sup_\xi h_\mu(T,\xi)$, the supremum over finite partitions.</p>
-<p><strong>Theorem (Kolmogorov–Sinai).</strong> If $\xi$ is a <strong>generator</strong> — that is, the partitions $T^{-k}\xi$, $k \geq 0$, generate the $\sigma$-algebra $\mathcal{B}$ up to null sets — then $h_\mu(T) = h_\mu(T,\xi)$.</p>
+<p>the limit existing because the sequence is subadditive. The <strong>Kolmogorov–Sinai entropy</strong> is $h_\mu(T) = \sup_\zeta h_\mu(T,\zeta)$, the supremum over finite partitions.</p>
+<p><strong>Theorem (Kolmogorov–Sinai).</strong> If $\zeta$ is a <strong>generator</strong> — that is, the partitions $T^{-k}\zeta$, $k \geq 0$, generate the $\sigma$-algebra $\mathcal{B}$ up to null sets — then $h_\mu(T) = h_\mu(T,\zeta)$.</p>
 <p>The entropy is an isomorphism invariant: conjugate systems have the same entropy, so the entropy separates systems that are not isomorphic, and it is the principal computable invariant of ergodic theory. The Kolmogorov–Sinai theorem reduces its computation to a single partition for the standard examples: the binary partition generates the doubling map and gives $\log 2$; the digit partition generates the Bernoulli shift and gives $H(p)$; the continued fraction partition together with the Gauss measure gives $\pi^2/(6\log2)$; and a toral automorphism has entropy $\log|\lambda|$ by the Adler–Weiss computation.</p>
 <h3 id="the-shannonmcmillanbreiman-theorem">The Shannon–McMillan–Breiman Theorem</h3>
-<p><strong>Theorem (Shannon–McMillan–Breiman).</strong> Let $T$ be ergodic and measure-preserving and let $\xi$ be a finite partition. Then</p>
+<p><strong>Theorem (Shannon–McMillan–Breiman).</strong> Let $T$ be ergodic and measure-preserving and let $\zeta$ be a finite partition. Then</p>
 <p>$$
--\frac{1}{n}\log\mu\bigl(\xi^{(n)}(x)\bigr) \longrightarrow h_\mu(T,\xi) \qquad \text{a.e. and in } L^1,
+-\frac{1}{n}\log\mu\bigl(\zeta^{(n)}(x)\bigr) \longrightarrow h_\mu(T,\zeta) \qquad \text{a.e. and in } L^1,
 $$</p>
-<p>where $\xi^{(n)} = \bigvee_{k=0}^{n-1}T^{-k}\xi$ and $\xi^{(n)}(x)$ is the atom of $\xi^{(n)}$ containing $x$.</p>
-<p>The theorem is the ergodic theorem for the information function, and it is the reason the entropy is the exponential rate of decay of the measure of the atom: the typical atom of the $n$-fold refinement has measure $\exp(-nh_\mu(T,\xi))$. Its proof applies the martingale convergence theorem of <em>Martingales</em> to the conditional information functions — which form a reverse martingale as the conditioning $\sigma$-algebra shrinks — together with the ergodic theorem for the limiting term, and it is the bridge between entropy and the pointwise ergodic theory.</p>
+<p>where $\zeta^{(n)} = \bigvee_{k=0}^{n-1}T^{-k}\zeta$ and $\zeta^{(n)}(x)$ is the atom of $\zeta^{(n)}$ containing $x$.</p>
+<p>The theorem is the ergodic theorem for the information function, and it is the reason the entropy is the exponential rate of decay of the measure of the atom: the typical atom of the $n$-fold refinement has measure $\exp(-nh_\mu(T,\zeta))$. Its proof applies the martingale convergence theorem of <em>Martingales</em> to the conditional information functions — which form a reverse martingale as the conditioning $\sigma$-algebra shrinks — together with the ergodic theorem for the limiting term, and it is the bridge between entropy and the pointwise ergodic theory.</p>
 <h3 id="bernoulli-shifts-and-ornsteins-theorem">Bernoulli Shifts and Ornstein's Theorem</h3>
 <p><strong>Theorem (Ornstein isomorphism theorem).</strong> Two invertible Bernoulli shifts with probability vectors $p$ and $q$ are isomorphic — there is a measure-preserving invertible map intertwining the two shifts — if and only if $H(p) = H(q)$. More generally, the entropy is a complete invariant for the invertible Bernoulli shifts.</p>
 <p>The theorem is the classification of the Bernoulli shifts, and it is the deepest result of the classical theory: entropy, which is only an invariant, is also sufficient to distinguish the Bernoulli systems. The proof uses the <strong>very weak Bernoulli</strong> property and the machinery of joinings; the same methods classify the Kolmogorov automorphisms and the Bernoulli flows. The result is the reason the entropy is the central numeric invariant of ergodic theory, and it is the model for the classification results of smooth ergodic theory.</p>
@@ -252,8 +252,8 @@ $$</p>
 <td>first return time; $\int_A\tau_A\,d\mu=1$</td>
 </tr>
 <tr>
-<td>$H(\xi)$, $h_\mu(T,\xi)$, $h_\mu(T)$</td>
-<td>partition entropy, entropy with respect to $\xi$, Kolmogorov–Sinai entropy</td>
+<td>$H(\zeta)$, $h_\mu(T,\zeta)$, $h_\mu(T)$</td>
+<td>partition entropy, entropy with respect to $\zeta$, Kolmogorov–Sinai entropy</td>
 </tr>
 <tr>
 <td>generator</td>
@@ -261,7 +261,7 @@ $$</p>
 </tr>
 <tr>
 <td>Shannon–McMillan–Breiman</td>
-<td>$-\frac1n\log\mu(\xi^{(n)}(x))\to h_\mu(T,\xi)$</td>
+<td>$-\frac1n\log\mu(\zeta^{(n)}(x))\to h_\mu(T,\zeta)$</td>
 </tr>
 <tr>
 <td>Bernoulli shift, $H(p)$</td>

@@ -131,9 +131,9 @@ $$</p>
 <h2 id="elliptic-operators-symbols-and-the-analytic-index">Elliptic Operators, Symbols and the Analytic Index</h2>
 <p><strong>Definition.</strong> Let $M$ be a closed smooth manifold and let $D\colon\Gamma(E)\to\Gamma(F)$ be a linear differential operator of order $m$ between smooth vector bundles. The <strong>principal symbol</strong> is the bundle map</p>
 <p>$$
-\sigma_m(D)\colon\pi^{*}E\longrightarrow\pi^{*}F, \qquad \sigma_m(D)(x,\xi)=\lim_{t\to\infty}t^{-m}\exp(-itf)D(\exp(itf)s)(x)
+\sigma_m(D)\colon\pi^{*}E\longrightarrow\pi^{*}F, \qquad \sigma_m(D)(x,\zeta)=\lim_{t\to\infty}t^{-m}\exp(-itf)D(\exp(itf)s)(x)
 $$</p>
-<p>for a function $f$ with $df_x=\xi$ and a section $s$ with $s(x)=v$, a well-defined map on the cotangent bundle $\pi\colon T^{*}M\to M$. The operator is <strong>elliptic</strong> when $\sigma_m(D)(x,\xi)$ is invertible for every $\xi\neq0$.</p>
+<p>for a function $f$ with $df_x=\zeta$ and a section $s$ with $s(x)=v$, a well-defined map on the cotangent bundle $\pi\colon T^{*}M\to M$. The operator is <strong>elliptic</strong> when $\sigma_m(D)(x,\zeta)$ is invertible for every $\zeta\neq0$.</p>
 <p><strong>Definition.</strong> For an elliptic operator on a closed manifold the <strong>analytic index</strong> is</p>
 <p>$$
 \operatorname{ind}_a(D)=\dim\ker D-\dim\operatorname{coker}D,
@@ -185,7 +185,7 @@ $$</p>
 \boxed{\;\operatorname{ind}(D_E)=\int_M\hat{A}(TM)\operatorname{ch}(W)\;}.
 $$</p>
 <p>In particular, for untwisted $W$ the index is the $\hat{A}$-genus of $M$, and the spin case of the theorem is the statement that the index of the Cauchy–Riemann operator is a topological characteristic number.</p>
-<p><strong>Proof.</strong> The symbol of $D_E$ is Clifford multiplication by $i\xi$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus.</p>
+<p><strong>Proof.</strong> The symbol of $D_E$ is Clifford multiplication by $i\zeta$, invertible off the zero section, so the operator is elliptic and its symbol class is the $K$-theory class of the twisted spinor bundle, the class of the spinor bundle multiplied by the class of $W$. Substituting this class in the cohomological form of the theorem gives the stated density: the Thom isomorphism converts the symbol class into a characteristic class on $M$, and the standard computation of the index density of the Cauchy–Riemann operator — the Chern character of the spinor bundle under the Thom isomorphism, its multiplicativity $\operatorname{ch}(S\otimes W)=\operatorname{ch}(S)\operatorname{ch}(W)$, and the identification of the spinor class with the $\hat{A}$-class — produces $\hat{A}(TM)\operatorname{ch}(W)$ in the top degree. For $W$ trivial the density is $\hat{A}(TM)$, and the index is the $\hat{A}$-genus.</p>
 <p><strong>Example (Gauss–Bonnet).</strong> Let $D=d+d^{*}$ be the de Rham operator on the even and odd parts of the exterior algebra of a closed oriented even-dimensional manifold. It is elliptic and self-adjoint, and its index is the Euler characteristic; the theorem gives</p>
 <p>$$
 \chi(M)=\operatorname{ind}(d+d^{*})=\int_Me(TM),
@@ -244,7 +244,7 @@ $$</p>
 <td>Serre–Swan</td>
 </tr>
 <tr>
-<td>$\sigma_m(D)$, $\sigma(D)(x,\xi)$</td>
+<td>$\sigma_m(D)$, $\sigma(D)(x,\zeta)$</td>
 <td>Principal symbol</td>
 </tr>
 <tr>

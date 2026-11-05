@@ -77,47 +77,47 @@
 <h3 id="additive-structure">Additive Structure</h3>
 <p>The dual plane $\mathbb{C}^{\mathrm{dln}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{C}^{\mathrm{dln}}$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:</p>
 <p>$$
-\chi_\xi(Q) = \exp(2\pi i \langle \xi, Q \rangle), \qquad \xi \in \mathbb{C}^{\mathrm{dln}},
+\chi_\zeta(Q) = \exp(2\pi i \langle \zeta, Q \rangle), \qquad \zeta \in \mathbb{C}^{\mathrm{dln}},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
-\langle \xi, Q \rangle = u q + v q', \qquad \xi = u + v\varepsilon, \quad Q = q + \varepsilon q'.
+\langle \zeta, Q \rangle = u q + v q', \qquad \zeta = u + v\varepsilon, \quad Q = q + \varepsilon q'.
 $$</p>
-<p>The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $q$ and the infinitesimal coefficient $v$ with $q'$. It is <strong>not</strong> $\operatorname{Re}(\bar{\xi} Q)$: for dual numbers $\operatorname{Re}(\bar{\xi} Q) = u q$, because the term $-v q'\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.</p>
+<p>The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $q$ and the infinitesimal coefficient $v$ with $q'$. It is <strong>not</strong> $\operatorname{Re}(\bar{\zeta} Q)$: for dual numbers $\operatorname{Re}(\bar{\zeta} Q) = u q$, because the term $-v q'\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.</p>
 <p>So at the level of the additive group, dual harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a degenerate pairing.</p>
 <h3 id="the-dual-characters">The Dual Characters</h3>
 <p>The <strong>dual characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{dln}}$:</p>
 <p>$$
-\chi_\xi(Q) = \exp(\langle \xi, Q \rangle \varepsilon), \qquad \xi \in \mathbb{C}^{\mathrm{dln}},
+\chi_\zeta(Q) = \exp(\langle \zeta, Q \rangle \varepsilon), \qquad \zeta \in \mathbb{C}^{\mathrm{dln}},
 $$</p>
 <p>where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
-\chi_\xi(Q) = 1 + \langle \xi, Q \rangle \varepsilon.
+\chi_\zeta(Q) = 1 + \langle \zeta, Q \rangle \varepsilon.
 $$</p>
-<p>These characters take values in the affine line $1 + \mathbb{C}^{\mathrm{dln}} \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
+<p>These characters take values in the affine line $1 + \mathbb{C}^{\mathrm{dln}} \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \zeta, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
 <p>So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathrm{M}$, so their deviation from the identity lies in the nilpotent maximal ideal.</p>
 <h2 id="the-dual-fourier-transform">The Dual Fourier Transform</h2>
 <h3 id="definition">Definition</h3>
 <p>The <strong>dual Fourier transform</strong> of a function $f : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$ is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) \exp(- \langle \zeta, Q \rangle \varepsilon) \, dQ,
 $$</p>
 <p>where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) (1 - \langle \xi, Q \rangle \varepsilon) \, dQ.
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) (1 - \langle \zeta, Q \rangle \varepsilon) \, dQ.
 $$</p>
 <p>So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.</p>
 <h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
 <p>Write $f(Q) = u(q, q') + v(q, q') \varepsilon$. Then</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{R}^2} u(q, q') \, dq \, dq' + \left( \int_{\mathbb{R}^2} v(q, q') \, dq \, dq' - \int_{\mathbb{R}^2} u(q, q') \langle \xi, Q \rangle \, dq \, dq' \right) \varepsilon.
+(\mathcal F f)(\zeta) = \int_{\mathbb{R}^2} u(q, q') \, dq \, dq' + \left( \int_{\mathbb{R}^2} v(q, q') \, dq \, dq' - \int_{\mathbb{R}^2} u(q, q') \langle \zeta, Q \rangle \, dq \, dq' \right) \varepsilon.
 $$</p>
 <p>So the dual Fourier transform has:</p>
 <ul>
-<li>A real part that is the total integral of the real part of $f$, independent of $\xi$.</li>
+<li>A real part that is the total integral of the real part of $f$, independent of $\zeta$.</li>
 <li>An infinitesimal part that is the total integral of the infinitesimal part of $f$, minus the first moment of the real part of $f$ against the character.</li>
 </ul>
-<p>This is the fundamental structural fact about the dual Fourier transform: the real part is constant in $\xi$, and the infinitesimal part is affine in $\xi$. The transform does not oscillate, because the characters have nilpotent deviation from the identity and do not wrap around the circle.</p>
+<p>This is the fundamental structural fact about the dual Fourier transform: the real part is constant in $\zeta$, and the infinitesimal part is affine in $\zeta$. The transform does not oscillate, because the characters have nilpotent deviation from the identity and do not wrap around the circle.</p>
 <h3 id="comparison-with-the-complex-and-split-cases">Comparison with the Complex and Split Cases</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -131,9 +131,9 @@ $$</p>
 <tbody>
 <tr>
 <td>Characters</td>
-<td>$\exp(i\xi a)$, bounded</td>
-<td>$\exp(j\xi a)$, unbounded</td>
-<td>$1 + \xi q \varepsilon$, linear growth</td>
+<td>$\exp(i\zeta a)$, bounded</td>
+<td>$\exp(j\zeta a)$, unbounded</td>
+<td>$1 + \zeta q \varepsilon$, linear growth</td>
 </tr>
 <tr>
 <td>Transform converges</td>
@@ -151,7 +151,7 @@ $$</p>
 <td>Infinitesimal part</td>
 <td>—</td>
 <td>—</td>
-<td>affine in $\xi$</td>
+<td>affine in $\zeta$</td>
 </tr>
 <tr>
 <td>Plancherel</td>
@@ -166,21 +166,21 @@ $$</p>
 <h3 id="definition_1">Definition</h3>
 <p>On a bounded interval $[-T, T]^2$, the dual Fourier transform</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{[-T, T]^2} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ
+(\mathcal F f)(\zeta) = \int_{[-T, T]^2} f(Q) \exp(- \langle \zeta, Q \rangle \varepsilon) \, dQ
 $$</p>
 <p>converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as above: the real part is the total integral of the real part of $f$, and the infinitesimal part is the total integral of the infinitesimal part minus the first moment of the real part.</p>
 <h3 id="inversion">Inversion</h3>
 <p>The inversion formula is</p>
 <p>$$
-\boxed{\; f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) \exp(\langle \xi, Q \rangle \varepsilon) \, d\xi \;},
+\boxed{\; f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\zeta) \exp(\langle \zeta, Q \rangle \varepsilon) \, d\zeta \;},
 $$</p>
 <p>under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to</p>
 <p>$$
-f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\xi) (1 + \langle \xi, Q \rangle \varepsilon) \, d\xi.
+f(Q) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} (\mathcal F f)(\zeta) (1 + \langle \zeta, Q \rangle \varepsilon) \, d\zeta.
 $$</p>
 <p>The real part of the inversion recovers the total integral, and the infinitesimal part recovers the first moment. So the inversion is not a true inversion: it recovers only the total integral and the first moment of the function, not the function itself. This is the degeneracy of the dual Fourier transform.</p>
 <h3 id="why-the-inversion-is-not-complete">Why the Inversion Is Not Complete</h3>
-<p>The dual Fourier transform loses information because the characters $1 + \xi q \varepsilon$ are linear in $\xi$ and do not oscillate. The transform is essentially the map</p>
+<p>The dual Fourier transform loses information because the characters $1 + \zeta q \varepsilon$ are linear in $\zeta$ and do not oscillate. The transform is essentially the map</p>
 <p>$$
 f \mapsto \left( \int f, \int f \cdot Q \right),
 $$</p>
@@ -204,7 +204,7 @@ $$</p>
 <p><strong>Convolution theorem.</strong> For functions for which the dual Fourier transform is defined,</p>
 <p>$$
 \boxed{\;
-\widehat{f * g}(\xi) = (\mathcal F f)(\xi) (\mathcal F g)(\xi)
+\widehat{f * g}(\zeta) = (\mathcal F f)(\zeta) (\mathcal F g)(\zeta)
 \;}.
 $$</p>
 <p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables.</p>
@@ -245,7 +245,7 @@ $$</p>
 <p>$$
 \langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
 $$</p>
-<p>Because the transform truncates to a moment map, it is <strong>not</strong> a bijection on $\mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$: its real part is constant, its infinitesimal part is affine in $\xi$, and it is therefore far from injective.</p>
+<p>Because the transform truncates to a moment map, it is <strong>not</strong> a bijection on $\mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$: its real part is constant, its infinitesimal part is affine in $\zeta$, and it is therefore far from injective.</p>
 <h3 id="the-delta-distribution">The Delta Distribution</h3>
 <p>The <strong>delta distribution</strong> $\delta$ is the tempered distribution</p>
 <p>$$
@@ -278,7 +278,7 @@ $$</p>
 $$</p>
 <p><strong>Fourier multiplier.</strong> In terms of the dual Fourier transform,</p>
 <p>$$
-\widehat{Hf}(\xi) = -i \operatorname{sgn}(\xi) (\mathcal F f)(\xi),
+\widehat{Hf}(\zeta) = -i \operatorname{sgn}(\zeta) (\mathcal F f)(\zeta),
 $$</p>
 <p>where $\operatorname{sgn}$ is the sign function on the real part.</p>
 <h2 id="maximal-functions">Maximal Functions</h2>
@@ -356,9 +356,9 @@ $$</p>
 <h3 id="the-inversion-formula">The Inversion Formula</h3>
 <p><strong>Theorem.</strong> For suitable $f$,</p>
 <p>$$
-f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(\langle \xi, Q \rangle \varepsilon) \, d\sigma \, d\theta,
+f(Q) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| \exp(\langle \zeta, Q \rangle \varepsilon) \, d\sigma \, d\theta,
 $$</p>
-<p>where $\xi = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.</p>
+<p>where $\zeta = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
 <h3 id="definition_7">Definition</h3>
 <p>The <strong>dual continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is</p>
@@ -367,7 +367,7 @@ W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left
 $$</p>
 <p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty,
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
 $$</p>
 <p>where $\hat{\psi}$ is the ordinary Fourier transform.</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>
@@ -422,7 +422,7 @@ $$</p>
 <td>Second dual number, $q_1 = \operatorname{Re} Q_1$, $q'_1 = \operatorname{Inf} Q_1$</td>
 </tr>
 <tr>
-<td>$\chi_\xi(Q) = 1 + \langle \xi, Q \rangle \varepsilon$</td>
+<td>$\chi_\zeta(Q) = 1 + \langle \zeta, Q \rangle \varepsilon$</td>
 <td>Dual character</td>
 </tr>
 <tr>

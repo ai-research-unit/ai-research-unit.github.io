@@ -106,19 +106,19 @@ $$</p>
 <p>using the constant coefficients to move $L_2$ onto $E_2$ and the convolution with $\delta$. The commutativity is that of convolution.</p>
 <p><strong>Example (the semigroup law).</strong> For the heat kernel $E_t(x)=(4\pi t)^{-n/2}\exp(-|x|^2/(4t))$ the composition theorem reads $E_t*E_s=E_{t+s}$, which is the semigroup law in kernel form, and $T_{E_t}T_{E_s}=T_{E_{t+s}}$ is the semigroup in operator form; the identity $\partial/\partial t-\Delta_x$ applied to $E_t$ gives the delta at $(0,0)$ by the convolution theorem.</p>
 <h2 id="the-symbol-and-the-multiplier">The Symbol and the Multiplier</h2>
-<p><strong>Theorem (the Fourier multiplier).</strong> Let $L$ have constant coefficients with symbol $\sigma_L(\xi)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,</p>
+<p><strong>Theorem (the Fourier multiplier).</strong> Let $L$ have constant coefficients with symbol $\sigma_L(\zeta)$, and let $E$ be a tempered fundamental solution. On the Schwartz space,</p>
 <p>$$
-\boxed{\;\widehat{T_E f}(\xi) = \frac{(\mathcal F f)(\xi)}{\sigma_L(\xi)}\;} ,
+\boxed{\;\widehat{T_E f}(\zeta) = \frac{(\mathcal F f)(\zeta)}{\sigma_L(\zeta)}\;} ,
 $$</p>
-<p>in the sense that the distribution $1/\sigma_L(\xi)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the <strong>Fourier multiplier</strong> by $1/\sigma_L$.</p>
-<p><em>Proof.</em> Taking the Fourier transform of $E*f$ gives the product $\mathcal F E\mathcal F f$ for tempered distributions, and taking the transform of $LE=\delta$ gives $\sigma_L(\xi)\mathcal F E(\xi)=1$, so $\mathcal F E=1/\sigma_L$ in the sense of distributions; substituting gives the display. The multiplier acts on $\mathcal{S}$ or on $L^2$ according to whether $1/\sigma_L$ is a bounded function, and otherwise as an operator between the Sobolev spaces.</p>
+<p>in the sense that the distribution $1/\sigma_L(\zeta)$ is the Fourier transform of $E$ and multiplication by it is the action of $T_E$; the operator $T_E$ is the <strong>Fourier multiplier</strong> by $1/\sigma_L$.</p>
+<p><em>Proof.</em> Taking the Fourier transform of $E*f$ gives the product $\mathcal F E\mathcal F f$ for tempered distributions, and taking the transform of $LE=\delta$ gives $\sigma_L(\zeta)\mathcal F E(\zeta)=1$, so $\mathcal F E=1/\sigma_L$ in the sense of distributions; substituting gives the display. The multiplier acts on $\mathcal{S}$ or on $L^2$ according to whether $1/\sigma_L$ is a bounded function, and otherwise as an operator between the Sobolev spaces.</p>
 <p><strong>Example (the classical multipliers).</strong> The following table records the operator and its multiplier.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Operator $L$</th>
 <th>Fundamental solution $E$</th>
-<th>Multiplier $1/\sigma_L(\xi)$</th>
+<th>Multiplier $1/\sigma_L(\zeta)$</th>
 <th>Inverse on</th>
 </tr>
 </thead>
@@ -126,39 +126,39 @@ $$</p>
 <tr>
 <td>$-\Delta$</td>
 <td>Newtonian potential $\Phi$</td>
-<td>$1/|\xi|^2$</td>
+<td>$1/|\zeta|^2$</td>
 <td>$\mathcal{S}$, up to harmonic term</td>
 </tr>
 <tr>
 <td>$\partial/\partial t-\Delta$</td>
 <td>heat kernel</td>
-<td>$1/(i\tau+|\xi|^2)$</td>
+<td>$1/(i\tau+|\zeta|^2)$</td>
 <td>causal $f$, $t>0$</td>
 </tr>
 <tr>
 <td>$\Box$</td>
 <td>cone-supported solution</td>
-<td>$1/(\tau^2-|\xi|^2)$</td>
+<td>$1/(\tau^2-|\zeta|^2)$</td>
 <td>causal $f$</td>
 </tr>
 <tr>
 <td>$\partial/\partial x$</td>
 <td>Heaviside step</td>
-<td>$1/(i\xi)$</td>
+<td>$1/(i\zeta)$</td>
 <td>$\mathcal{S}$ modulo constants</td>
 </tr>
 <tr>
 <td>$1-d^2/dx^2$</td>
 <td>$\tfrac12\exp(-|x|)$</td>
-<td>$1/(1+\xi^2)$</td>
+<td>$1/(1+\zeta^2)$</td>
 <td>all of $L^2$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The first four multipliers are unbounded at the zeros of the symbol and the operators gain derivatives or lose support; the last is bounded, and $T_E$ is a bounded operator on $L^2$ with norm $1$, the multiplier $1/(1+\xi^2)$ having supremum $1$. The gain of two derivatives by the Newtonian potential operator and the boundedness of the resolvent kernel of $1-d^2/dx^2$ are the two extremes: whether the inverse gains regularity or is bounded is decided by the behaviour of $1/\sigma_L$ at infinity and near its singularities.</p>
+<p>The first four multipliers are unbounded at the zeros of the symbol and the operators gain derivatives or lose support; the last is bounded, and $T_E$ is a bounded operator on $L^2$ with norm $1$, the multiplier $1/(1+\zeta^2)$ having supremum $1$. The gain of two derivatives by the Newtonian potential operator and the boundedness of the resolvent kernel of $1-d^2/dx^2$ are the two extremes: whether the inverse gains regularity or is bounded is decided by the behaviour of $1/\sigma_L$ at infinity and near its singularities.</p>
 <p><strong>Theorem (uniqueness in the tempered class).</strong> Let $L$ have constant coefficients. If the only tempered solution of $Lu=0$ is $u=0$, then $L$ has exactly one tempered fundamental solution and the tempered inverse $T_E$ is unique; in general two tempered fundamental solutions differ by a tempered solution of the homogeneous equation, and the tempered inversion is unique modulo that kernel.</p>
 <p><em>Proof.</em> If $E$ and $E'$ are tempered fundamental solutions, then $E-E'$ is tempered and $L(E-E')=0$, so it vanishes under the hypothesis; conversely a tempered solution $h$ of $Lh=0$ may be added to any fundamental solution, and $E+h$ is a fundamental solution because $L$ is linear. The operator $T_E$ therefore differs from $T_{E'}$ by $T_h$ on the distributions for which both are defined.</p>
-<p><strong>Example (the primitive and the Hilbert transform).</strong> For $L=\partial/\partial x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the <strong>Hilbert transform</strong>, whose multiplier is $-i\,\mathrm{sgn}(\xi)$ and whose relation to the two one-sided primitives is the subject of <em>Real Harmonic Analysis</em>. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.</p>
+<p><strong>Example (the primitive and the Hilbert transform).</strong> For $L=\partial/\partial x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the <strong>Hilbert transform</strong>, whose multiplier is $-i\,\mathrm{sgn}(\zeta)$ and whose relation to the two one-sided primitives is the subject of <em>Real Harmonic Analysis</em>. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.</p>
 <h2 id="the-adjoint-fundamental-solution">The Adjoint Fundamental Solution</h2>
 <p><strong>Definition.</strong> Let $L$ be a differential operator with smooth coefficients on $\mathbb{R}^n$ and let $E$ be a fundamental solution of $L$. The <strong>reflected conjugate</strong> of $E$ is the distribution</p>
 <p>$$
@@ -225,7 +225,7 @@ $$</p>
 <td>Smoothing remainders of the parametrix</td>
 </tr>
 <tr>
-<td>$\sigma_L(\xi)$</td>
+<td>$\sigma_L(\zeta)$</td>
 <td>Symbol of $L$</td>
 </tr>
 <tr>

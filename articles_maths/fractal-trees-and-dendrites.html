@@ -97,7 +97,7 @@
 <p><strong>Definition (the regular tree and its end compactification).</strong> Let $T_r$ be the rooted tree in which each vertex at depth $n \geq 1$ has $r-1$ children and the root has $r$ children, with all edges of length one. A <strong>ray</strong> is an infinite path from the root without backtracking, an <strong>end</strong> is an equivalence class of rays that eventually agree, and the <strong>end compactification</strong> $\overline{T_r} = T_r \cup E(T_r)$ carries the topology in which a sequence of vertices converges to an end when the rays through the vertices converge to it.</p>
 <p><strong>Theorem (the end compactification is a dendrite).</strong> For $r \geq 2$ the space $\overline{T_r}$ is a dendrite: it is compact, connected, locally connected and contains no simple closed curve. Its branch points are exactly the vertices of order at least three, and they are countable; its ends are the points of $E(T_r)$, which is a Cantor set for $r \geq 3$ and a single point for $r = 2$.</p>
 <p><strong>Proof sketch.</strong> Compactness: a sequence of vertices leaves every finite subtree in a ray, and every subsequence has a limit in $E(T_r)$, which is closed. Connectedness: any two points are joined by a finite path or a ray, and a vertex and an end are joined by the ray to the end. Local connectedness: the ball of radius $2^{-n}$ around a vertex is a finite tree with the ends attached along its boundary leaves, a contractible and locally connected neighbourhood. No simple closed curve: the space is a tree together with the ends, and a circle would give two distinct arcs between two points, contradicting the uniqueness of the path in the tree. The branch points are the vertices with at least three neighbours, the ends of the tree being of order one.</p>
-<p><strong>Theorem (the end space and its dimension).</strong> The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\xi,\eta) = r^{\,-\ell(\xi,\eta)}$, where $\ell(\xi,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is</p>
+<p><strong>Theorem (the end space and its dimension).</strong> The end space $E(T_r)$ is a Cantor set for $r \geq 3$. With the visual metric $d(\zeta,\eta) = r^{\,-\ell(\zeta,\eta)}$, where $\ell(\zeta,\eta)$ is the length of the common initial path of two rays, the number of cylinders of diameter $r^{-n}$ is</p>
 <p>$$
 \boxed{\;N\bigl(E(T_r), r^{-n}\bigr) \asymp (r-1)^{n}\;} ,
 $$</p>
@@ -158,7 +158,7 @@ $$</p>
 <td>The rooted tree with $r$ branches at the root and $r-1$ thereafter; its end compactification</td>
 </tr>
 <tr>
-<td>$E(T_r)$, $\ell(\xi,\eta)$</td>
+<td>$E(T_r)$, $\ell(\zeta,\eta)$</td>
 <td>End space of $T_r$; length of the common initial path</td>
 </tr>
 <tr>

@@ -109,8 +109,8 @@ $$</p>
 <p>so $f$ is left-regular if and only if it solves the <strong>Cauchy–Riemann–Fueter system</strong></p>
 <p>$$ \boxed{\; \partial/\partial Q_t\,f_0 = \mathrm{div}\,\vec f, \qquad \partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f = 0 \;} .$$</p>
 <p><em>Proof.</em> Multiply out $\sum_\mu\,e_\mu\partial/\partial Q_\mu(f_0+\vec f)$ term by term, using $\vec a\vec b = -\langle\vec a,\vec b\rangle+\vec a\times\vec b$ for pure quaternions: the scalar part collects $\partial/\partial Q_t\,f_0-\mathrm{div}\,\vec f$, and the vector part collects $\partial/\partial Q_t\vec f+\mathrm{grad}\,f_0+\mathrm{rot}\,\vec f$. Both parts must vanish.</p>
-<p><strong>Corollary.</strong> The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2e_t$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.</p>
-<p><em>Proof.</em> The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.</p>
+<p><strong>Corollary.</strong> The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\zeta) = \sum_\mu\zeta_\mu e_\mu$, which satisfies $s(\zeta)s^{\natural}(\zeta) = |\zeta|^2e_t$ for every real covector $\zeta\neq0$, so the system is elliptic and its solutions are real-analytic.</p>
+<p><em>Proof.</em> The principal symbol is invertible with inverse $s^{\natural}(\zeta)/|\zeta|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.</p>
 <h2 id="examples-and-closure-properties">Examples and Closure Properties</h2>
 <p><strong>Theorem.</strong> Every constant function is regular; the coordinate function $\tilde q$ is not regular, since $D\tilde q = \sum_\mu e_\mu e_\mu = -2e_t$; the Cauchy kernel</p>
 <p>$$
@@ -141,7 +141,7 @@ D_3g = -\mathrm{div}\vec g+\mathrm{grad}g_0+\mathrm{rot}\vec g,
 $$</p>
 <p>so that $D_3\phi = \mathrm{grad}\phi$ on a scalar; and $D_3^2 = -\Delta_3$, the cross terms cancelling because $\partial^2/\partial Q_j\partial Q_k$ is symmetric while $\vec e_j \vec e_k$ is antisymmetric for $j\neq k$.</p>
 <p><em>Proof.</em> The split is the three-dimensional case of the computation of the section above, with the $\partial/\partial Q_t$ terms removed. For the square, the $j=k$ terms give $\sum_k\vec e_k^2\partial^2/\partial Q_k^2 = -\Delta_3$ and the $j\neq k$ terms pair as $(\vec e_j \vec e_k+\vec e_k \vec e_j)\partial^2/\partial Q_j\partial Q_k = 0$.</p>
-<p><strong>Remark (why the dimension matters).</strong> The four-dimensional operator needs its conjugate to factor the Laplacian, and the square shows why: the mixed terms $2\partial/\partial Q_t\,D_3$ that the conjugate cancels are exactly those the fourth coordinate contributes. In three dimensions there is no such term, $D_3$ factorises the Laplacian alone, and the operator is elliptic with symbol $s(\xi) = \xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z$, whose square is $-|\xi|^2$.</p>
+<p><strong>Remark (why the dimension matters).</strong> The four-dimensional operator needs its conjugate to factor the Laplacian, and the square shows why: the mixed terms $2\partial/\partial Q_t\,D_3$ that the conjugate cancels are exactly those the fourth coordinate contributes. In three dimensions there is no such term, $D_3$ factorises the Laplacian alone, and the operator is elliptic with symbol $s(\zeta) = \zeta_x\vec e_x+\zeta_y\vec e_y+\zeta_z\vec e_z$, whose square is $-|\zeta|^2$.</p>
 <p><strong>Definition (the logarithmic derivative).</strong> For a scalar $\phi$ that does not vanish, the <strong>logarithmic derivative</strong> of Marchenko is</p>
 <p>$$
 \check\partial\phi = \phi^{-1}D_3\phi,
@@ -413,8 +413,8 @@ $$</p>
 <td>Cauchy–Riemann–Fueter system</td>
 </tr>
 <tr>
-<td>$s(\xi) = \sum_\mu\xi_\mu e_\mu$</td>
-<td>Principal symbol, $s s^{\natural} = \lvert\xi\rvert^2$</td>
+<td>$s(\zeta) = \sum_\mu\zeta_\mu e_\mu$</td>
+<td>Principal symbol, $s s^{\natural} = \lvert\zeta\rvert^2$</td>
 </tr>
 <tr>
 <td>$A = q_t+\vec e_xq_x$</td>

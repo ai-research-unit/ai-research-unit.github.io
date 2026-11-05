@@ -126,12 +126,12 @@ $$</p>
 <p><strong>Proof.</strong> The formula is the untwisted case of the theorem; integrating the identity $D^2=\nabla^*\nabla+\tfrac14s$ against a spinor and integrating by parts gives the positivity.</p>
 <p><strong>Remark.</strong> The Weitzenböck formula is the bridge between the operator and the geometry: the harmonic spinors of $D_E$ are the solutions of a second-order equation whose potential is the curvature, and the vanishing or non-vanishing of the kernel is controlled by the sign of the curvature. In the twisted case the twisting curvature $F^W$ shifts the potential, and the index measures the net effect.</p>
 <h2 id="ellipticity-and-the-elliptic-complex">Ellipticity and the Elliptic Complex</h2>
-<p><strong>Theorem.</strong> The principal symbol of $D_E$ at a covector $\xi\in T_x^*M$ is Clifford multiplication by $i\xi$,</p>
+<p><strong>Theorem.</strong> The principal symbol of $D_E$ at a covector $\zeta\in T_x^*M$ is Clifford multiplication by $i\zeta$,</p>
 <p>$$
-\sigma(D_E)(x,\xi)=i\,c(\xi)\colon E_x\to E_x,
+\sigma(D_E)(x,\zeta)=i\,c(\zeta)\colon E_x\to E_x,
 $$</p>
-<p>and this endomorphism is invertible for every $\xi\neq0$. Hence $D_E$ is elliptic.</p>
-<p><strong>Proof.</strong> The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\xi_i=c(\xi)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\xi)^2=-|\xi|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\xi)/|\xi|^2$ for $\xi\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.</p>
+<p>and this endomorphism is invertible for every $\zeta\neq0$. Hence $D_E$ is elliptic.</p>
+<p><strong>Proof.</strong> The symbol of a first-order operator $\sum_ic(e_i)\nabla_i$ is $\sum_ic(e_i)\zeta_i=c(\zeta)$ up to the factor $i$ from the Fourier convention. The square is $\sigma(D_E)^2=-c(\zeta)^2=-|\zeta|^2\mathrm{id}$, so the symbol is invertible with inverse $-c(\zeta)/|\zeta|^2$ for $\zeta\neq0$. A differential operator whose principal symbol is invertible for all nonzero covectors is elliptic by definition.</p>
 <p><strong>Theorem.</strong> On a closed spin Riemannian manifold with a $\mathbb{Z}/2$-graded twisted Clifford module bundle $E=E_+\oplus E_-$, the operator restricts to an elliptic operator</p>
 <p>$$
 \boxed{\;D_+\colon\Gamma(E_+)\to\Gamma(E_-)\;},
@@ -172,7 +172,7 @@ $$</p>
 <p>$$
 D_E=\sum_ic(e_i)\nabla^E_{e_i},
 $$</p>
-<p>well defined, geometric, and, on a $\mathbb{Z}/2$-graded module, odd. Its symbol is $i\,c(\xi)$, invertible for $\xi\neq0$, so $D_E$ is elliptic; on a closed manifold the graded operator $D_+\colon\Gamma(E_+)\to\Gamma(E_-)$ has finite-dimensional kernel and cokernel and a well-defined index.</p>
+<p>well defined, geometric, and, on a $\mathbb{Z}/2$-graded module, odd. Its symbol is $i\,c(\zeta)$, invertible for $\zeta\neq0$, so $D_E$ is elliptic; on a closed manifold the graded operator $D_+\colon\Gamma(E_+)\to\Gamma(E_-)$ has finite-dimensional kernel and cokernel and a well-defined index.</p>
 <p>The square of the operator satisfies the Weitzenböck formula $D_E^2=\nabla^{E,*}\nabla^E+\mathcal{R}^E$, with $\mathcal{R}^E=\tfrac14s+c(F^W)$; in the untwisted case this is the Lichnerowicz formula, and positive scalar curvature forces the kernel to vanish. The index is computed by the McKean–Singer supertrace, independent of $t$, and the local index theorem gives</p>
 <p>$$
 \operatorname{ind}(D_+)=\int_M\hat{A}(TM)\operatorname{ch}(W).
@@ -216,8 +216,8 @@ $$</p>
 <td>Twisted Cauchy–Riemann operator</td>
 </tr>
 <tr>
-<td>$\sigma(D_E)(x,\xi)=i\,c(\xi)$</td>
-<td>Principal symbol, invertible for $\xi\neq0$</td>
+<td>$\sigma(D_E)(x,\zeta)=i\,c(\zeta)$</td>
+<td>Principal symbol, invertible for $\zeta\neq0$</td>
 </tr>
 <tr>
 <td>$D_+:\Gamma(E_+)\to\Gamma(E_-)$</td>

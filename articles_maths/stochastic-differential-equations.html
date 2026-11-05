@@ -92,9 +92,9 @@ $$</p>
 <p>Its <strong>quadratic variation</strong> on $[0,t]$ is $\langle B\rangle_t=t$, in the sense that for any sequence of partitions with mesh tending to $0$ the sums $\sum_i(B_{t_{i+1}}-B_{t_i})^2$ converge to $t$ in probability; equivalently, $\langle B\rangle_t=t$ and the process $B_t^2-t$ is a martingale.</p>
 <p><strong>Remark (the two pathologies).</strong> Brownian paths are continuous and nowhere differentiable, and they have infinite variation on every interval; consequently the Riemann–Stieltjes integral $\int\phi\,dB$ does not exist by the classical theory, and the choice of the point at which the integrand is evaluated matters. It is the finite quadratic variation, and not the finite variation, that makes the stochastic integral possible.</p>
 <h3 id="the-ito-integral">The Itô Integral</h3>
-<p><strong>Definition.</strong> Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\phi$ with $\mathbb{E}\int_0^T\phi_s^2ds<\infty$. For a <strong>simple</strong> process $\phi_s=\sum_i\xi_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\xi_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the <strong>Itô integral</strong> is</p>
+<p><strong>Definition.</strong> Let $(\mathcal{F}_t)$ be the filtration and let $\mathcal{H}^2$ be the space of progressively measurable processes $\phi$ with $\mathbb{E}\int_0^T\phi_s^2ds<\infty$. For a <strong>simple</strong> process $\phi_s=\sum_i\zeta_i\mathbf{1}_{(t_i,t_{i+1}]}(s)$ with $\zeta_i$ bounded and $\mathcal{F}_{t_i}$-measurable, the <strong>Itô integral</strong> is</p>
 <p>$$
-\int_0^T\phi_s\,dB_s = \sum_i\xi_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
+\int_0^T\phi_s\,dB_s = \sum_i\zeta_i\bigl(B_{t_{i+1}}-B_{t_i}\bigr),
 $$</p>
 <p>the integrand being evaluated at the <strong>left</strong> endpoint of each interval.</p>
 <p><strong>Theorem (Itô isometry and the extension).</strong> For simple $\phi$,</p>
@@ -103,7 +103,7 @@ $$</p>
 \mathbb{E}\left|\int_0^T\phi_s\,dB_s\right|^2 = \mathbb{E}\int_0^T\phi_s^2\,ds ,
 $$</p>
 <p>and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$; the extended stochastic process $t\mapsto\int_0^t\phi_s\,dB_s$ is a continuous martingale with quadratic variation $\langle\int\phi\,dB\rangle_t=\int_0^t\phi_s^2ds$.</p>
-<p><em>Proof.</em> For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\xi_i\xi_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.</p>
+<p><em>Proof.</em> For simple processes the two identities follow from the independence and the Gaussian moments of the increments: cross terms vanish because the $\zeta_i\zeta_j$ with $i<j$ are $\mathcal{F}_{t_j}$-measurable and the conditional mean of $B_{t_{j+1}}-B_{t_j}$ vanishes. The isometry makes the map an isometry from the dense subspace of simple processes into $L^2(\Omega)$, and the completeness of $L^2$ gives the extension. The martingale property follows by conditioning on $\mathcal{F}_s$ and using the independence of the increments beyond $s$.</p>
 <p><strong>Definition.</strong> For a general integrand $\phi\in\mathcal{H}^2$ the integral is the $L^2$ limit of the integrals of an approximating sequence of simple processes.</p>
 <p><strong>Example (integrating the Brownian motion against itself).</strong> With $\phi_s=B_s$ the Itô integral is $\int_0^tB_s\,dB_s=\frac12(B_t^2-t)$: the integral differs from the naive $\frac12B_t^2$ by $-\frac t2$, and the correction is the quadratic variation. With $\phi$ the left-continuous evaluation the value is forced by the isometry; evaluating at the midpoint instead gives the Stratonovich integral below, which is exactly $\frac12B_t^2$.</p>
 <h2 id="itos-formula-and-the-generator">Itô's Formula and the Generator</h2>

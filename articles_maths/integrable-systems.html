@@ -158,14 +158,14 @@ $$</p>
 <p><strong>Remark (the factorisation, and its hypothesis).</strong> The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\vec f}$ the operator of right multiplication by $\vec f$, one has $-\Delta-vI = (D_3+M_{\vec f})(D_3-M_{\vec f})$ if and only if $\vec f$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial/\partial x_k\,\vec f]$, which vanishes for scalar $\psi$ and for constant $\vec f$ and not otherwise.</p>
 <h3 id="eulers-theorems-in-three-dimensions">Euler's Theorems in Three Dimensions</h3>
 <p>Both classical theorems lift, with the quadrature replaced by the transport equation.</p>
-<p><strong>Proposition (the first theorem, lifted).</strong> Let $\vec h = \operatorname{grad}\xi$ be a particular solution of the Riccati PDE. Then $\vec f = \vec g+\vec h$ is also a solution, where $\vec g = \check\partial\Psi$ and the scalar $\Psi$ solves</p>
+<p><strong>Proposition (the first theorem, lifted).</strong> Let $\vec h = \operatorname{grad}\zeta$ be a particular solution of the Riccati PDE. Then $\vec f = \vec g+\vec h$ is also a solution, where $\vec g = \check\partial\Psi$ and the scalar $\Psi$ solves</p>
 <p>$$
-\Delta\Psi + 2\langle\nabla\xi,\nabla\Psi\rangle = 0,
+\Delta\Psi + 2\langle\nabla\zeta,\nabla\Psi\rangle = 0,
 $$</p>
-<p>equivalently $\operatorname{div}(\exp(2\xi)\nabla\Psi) = 0$. The first form is the <strong>transport equation</strong> of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $\exp(2\xi)$ as the dielectric permeability, and the continuity equation of a steady flow with $\exp(2\xi)$ as the density. The classical first theorem is the case $\vec h = 0$.</p>
-<p><strong>Proposition (the second theorem, lifted).</strong> Let $\vec h_1 = \operatorname{grad}\xi_1$ and $\vec h_2 = \operatorname{grad}\xi_2$ be two particular solutions. Then</p>
+<p>equivalently $\operatorname{div}(\exp(2\zeta)\nabla\Psi) = 0$. The first form is the <strong>transport equation</strong> of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $\exp(2\zeta)$ as the dielectric permeability, and the continuity equation of a steady flow with $\exp(2\zeta)$ as the density. The classical first theorem is the case $\vec h = 0$.</p>
+<p><strong>Proposition (the second theorem, lifted).</strong> Let $\vec h_1 = \operatorname{grad}\zeta_1$ and $\vec h_2 = \operatorname{grad}\zeta_2$ be two particular solutions. Then</p>
 <p>$$
-\vec f = \nabla\phi = \frac{\vec h_1w-\vec h_2}{w-1}, \qquad w = A\exp(\xi_1-\xi_2),
+\vec f = \nabla\phi = \frac{\vec h_1w-\vec h_2}{w-1}, \qquad w = A\exp(\zeta_1-\zeta_2),
 $$</p>
 <p>with $A$ a complex constant, solves the Riccati PDE.</p>
 <p><strong>Example (the lifted theorems give a class, not the general solution).</strong> For $v = -1$ the constants $\vec h_1 = e_1 = \operatorname{grad}x_1$ and $\vec h_2 = e_2 = \operatorname{grad}x_2$ are particular solutions, and the second theorem gives the one-parameter family $\vec f = (A\exp(x_1-x_2)e_1-e_2)/(A\exp(x_1-x_2)-1)$. The third solution $\vec h_3 = e_3$ belongs to no member of that family. The classical count of particular solutions therefore does not survive the lift unchanged: two particular solutions give a larger class and not the general solution.</p>
@@ -221,7 +221,7 @@ $$</p>
 <p>$$
 K(x,y) + B(x+y) + \int_x^\infty K(x,z)\,B(z+y)\,dz = 0 \qquad (y > x),
 $$</p>
-<p>where the kernel is $B(\xi) = \sum_{n=1}^N c_n^2\exp(-\kappa_n\xi) + \frac{1}{2\pi}\int_{\mathbb{R}}r(k)\exp(ik\xi)dk$, and then</p>
+<p>where the kernel is $B(\zeta) = \sum_{n=1}^N c_n^2\exp(-\kappa_n\zeta) + \frac{1}{2\pi}\int_{\mathbb{R}}r(k)\exp(ik\zeta)dk$, and then</p>
 <p>$$
 w(x) = -2\,\frac{d}{dx}K(x,x).
 $$</p>
@@ -236,7 +236,7 @@ $$</p>
 \boxed{\;w(x,t) = -2\kappa^2\operatorname{sech}^2\bigl(\kappa(x-4\kappa^2t-x_0)\bigr)\;},
 $$</p>
 <p>a negative localised travelling wave moving to the right with speed $4\kappa^2$; it is the unique reflectionless solution with one bound state.</p>
-<p><em>Proof.</em> With $N=1$, the kernel is $B(\xi) = c_1^2\exp(-\kappa\xi)$ with $c_1^2 = 2\kappa \exp(2\kappa x_0)$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $w$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2\exp(-\kappa\xi)$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz.</p>
+<p><em>Proof.</em> With $N=1$, the kernel is $B(\zeta) = c_1^2\exp(-\kappa\zeta)$ with $c_1^2 = 2\kappa \exp(2\kappa x_0)$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $w$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2\exp(-\kappa\zeta)$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz.</p>
 <p><strong>Theorem (N-soliton solutions and elastic collision).</strong> For reflectionless data with $N$ bound states the solution is an $N$-soliton</p>
 <p>$$
 w(x,t) = -2\partial^2/\partial x^2\,\log\det\bigl(I + C(x,t)\bigr),
@@ -264,7 +264,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>An integrable system is a nonlinear evolution equation that is equivalent to the compatibility condition of a pair of linear operators. For KdV, $\partial L/\partial t=[A,L]$ with $L=-\partial^2/\partial x^2+w$ and $A=-4\partial^3/\partial x^3+6w\partial/\partial x+3\partial/\partial x w$ is equivalent to $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, and the Lax equation expresses the isospectrality of the Schrödinger operator: the eigenvalues of $L$ are constants of the motion, and the eigenfunctions evolve by $\partial/\partial t\,\psi=A\psi$. The zero-curvature formulation $\partial/\partial t U-\partial/\partial x V+[U,V]=0$ is the matrix form of the same idea, and the AKNS scheme obtains KdV, the nonlinear Schrödinger equation, modified KdV and the sine-Gordon equation as reductions of one linear problem.</p>
 <p>KdV has infinitely many conservation laws, generated by the Lenard recursion with recursion operator $R=-\partial^2/\partial x^2+4w+2\partial/\partial x w(\partial/\partial x)^{-1}$, whose first members are $w$, $w^2$ and $w^3+\frac12\partial/\partial x w^2$; the density $w^3+\frac12\partial/\partial x w^2$ is the energy, and the equation is bi-Hamiltonian with respect to the compatible structures $\partial/\partial x$ and $-\partial^3/\partial x^3+4w\partial/\partial x+2\partial/\partial x w$, which is what produces the infinite family by the Magri theorem. The inverse scattering transform computes the scattering data of $L$ — reflection and transmission coefficients, bound states and norming constants — of which the transmission coefficient and the eigenvalues are time-independent while the reflection data evolve by $\exp(8ik^3t)$; the potential is recovered by the Gelfand–Levitan–Marchenko equation and the formula $w=-2\partial/\partial x\,K(x,x)$. Reflectionless data give the reflectionless potentials, among them the one-soliton $w=-2\kappa^2\operatorname{sech}^2(\kappa(x-4\kappa^2t-x_0))$ and the $N$-soliton determinant formula; the collision of solitons is elastic with a phase shift. The periodic analogue is the finite-gap solution, built from a hyperelliptic Riemann surface and a Riemann theta function by the Its–Matveev formula, and the integrability tests are the Painlevé test and the Hirota bilinear form, in which KdV becomes $D_x(D_t+D_x^3)\tau\cdot\tau=0$.</p>
-<p>The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial^2/\partial x^2-v=-(\partial/\partial x+y)(\partial/\partial x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\vec f+\vec f^2=v$, with $D_3=e_1\partial/\partial 1+e_2\partial/\partial 2+e_3\partial/\partial 3$ and $\vec f=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\vec f=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(\exp(2\xi)\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.</p>
+<p>The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial^2/\partial x^2-v=-(\partial/\partial x+y)(\partial/\partial x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\vec f+\vec f^2=v$, with $D_3=e_1\partial/\partial 1+e_2\partial/\partial 2+e_3\partial/\partial 3$ and $\vec f=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\vec f=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(\exp(2\zeta)\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -351,8 +351,8 @@ $$</p>
 <td>Three-dimensional Cauchy–Riemann operator and the logarithmic derivative</td>
 </tr>
 <tr>
-<td>$\vec f$, $\xi$, $\Psi$</td>
-<td>Riccati-PDE field, the particular solution $\operatorname{grad}\xi$, the transport function</td>
+<td>$\vec f$, $\zeta$, $\Psi$</td>
+<td>Riccati-PDE field, the particular solution $\operatorname{grad}\zeta$, the transport function</td>
 </tr>
 </tbody>
 </table></div>

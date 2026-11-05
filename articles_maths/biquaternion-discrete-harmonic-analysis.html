@@ -182,40 +182,40 @@ $$</p>
 <p>The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell] = F[\ell]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum, and it is the reason the standard techniques of real-signal processing extend to the biquaternion setting, provided the signal is real scalar-valued. For a general real quaternion-valued signal the identity fails, because quaternion conjugation does not fix an element with a vector part and it reverses the order of the factors.</p>
 <h2 id="factorization-into-four-complex-fourier-transforms">Factorization into Four Complex Fourier Transforms</h2>
 <h3 id="the-change-of-basis">The Change of Basis</h3>
-<p>Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\xi$ such that</p>
+<p>Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\zeta$ such that</p>
 <p>$$
-\rho \perp \nu, \qquad \nu \perp \xi, \qquad \xi \perp \rho, \qquad \rho \nu = \xi.
+\rho \perp \nu, \qquad \nu \perp \zeta, \qquad \zeta \perp \rho, \qquad \rho \nu = \zeta.
 $$</p>
-<p>The four elements $\{e_t, \rho, \nu, \xi\}$ form a <strong>complex orthonormal basis</strong> of $\mathbb{B}$. Any biquaternion can be written in this basis as</p>
+<p>The four elements $\{e_t, \rho, \nu, \zeta\}$ form a <strong>complex orthonormal basis</strong> of $\mathbb{B}$. Any biquaternion can be written in this basis as</p>
 <p>$$
-\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
+\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\zeta \zeta,
 $$</p>
-<p>with $Q_t, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.</p>
+<p>with $Q_t, Q_\rho, Q_\nu, Q_\zeta \in \mathbb{C}$.</p>
 <p>The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\vec v = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_x, Q_y, Q_z \in \mathbb{C}$, then the coefficients are</p>
 <p>$$
-Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\xi = \langle \xi, \vec v \rangle,
+Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\zeta = \langle \zeta, \vec v \rangle,
 $$</p>
 <p>where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The General Plain Bilinear Product $\tilde Q_1\tilde Q_2$</em> (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_t$ is unchanged.</p>
 <h3 id="the-factorization">The Factorization</h3>
 <p>Writing each sample $f[n]$ in the new basis,</p>
 <p>$$
-f[n] = w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi,
+f[n] = w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\zeta[n] \zeta,
 $$</p>
 <p>and substituting into the transform with the closed form of the kernel,</p>
 <p>$$
-F[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_t - \sin\theta_n \, \rho\right) \left(w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\xi[n] \xi\right),
+F[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_t - \sin\theta_n \, \rho\right) \left(w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\zeta[n] \zeta\right),
 $$</p>
 <p>where $\theta_n = 2\pi n\ell/N$.</p>
-<p>Expanding the product and using the multiplication rules of the basis $\{e_t, \rho, \nu, \xi\}$:</p>
+<p>Expanding the product and using the multiplication rules of the basis $\{e_t, \rho, \nu, \zeta\}$:</p>
 <p>$$
-e_t e_t = e_t, \quad e_t \rho = \rho, \quad e_t \nu = \nu, \quad e_t \xi = \xi,
+e_t e_t = e_t, \quad e_t \rho = \rho, \quad e_t \nu = \nu, \quad e_t \zeta = \zeta,
 $$</p>
 <p>$$
-\rho e_t = \rho, \quad \rho \rho = -e_t, \quad \rho \nu = \xi, \quad \rho \xi = -\nu,
+\rho e_t = \rho, \quad \rho \rho = -e_t, \quad \rho \nu = \zeta, \quad \rho \zeta = -\nu,
 $$</p>
 <p>and collecting terms by basis element, we obtain four sums:</p>
 <p>$$
-F[\ell] = F_0[\ell] e_t + F_\rho[\ell] \rho + F_\nu[\ell] \nu + F_\xi[\ell] \xi,
+F[\ell] = F_0[\ell] e_t + F_\rho[\ell] \rho + F_\nu[\ell] \nu + F_\zeta[\ell] \zeta,
 $$</p>
 <p>where</p>
 <p>$$
@@ -225,21 +225,21 @@ $$</p>
 F_\rho[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\rho[n] - \sin\theta_n \, w[n]\right),
 $$</p>
 <p>$$
-F_\nu[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\xi[n]\right),
+F_\nu[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\zeta[n]\right),
 $$</p>
 <p>$$
-F_\xi[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\xi[n] - \sin\theta_n \, Q_\nu[n]\right).
+F_\zeta[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\zeta[n] - \sin\theta_n \, Q_\nu[n]\right).
 $$</p>
 <h3 id="the-complex-fourier-transforms">The Complex Fourier Transforms</h3>
 <p>Each of the four sums has the form $\sum_{n=0}^{N-1}(C_\bullet[n]\cos\theta_n + S_\bullet[n]\sin\theta_n)$ with $\theta_n = 2\pi n\ell/N$, where $C_\bullet$ and $S_\bullet$ are the cosine and sine coefficients of that sum. Let $\hat{C}_\bullet[\ell]=\sum_n C_\bullet[n]e^{-2\pi i n\ell/N}$ and likewise for $S_\bullet$. Since $\cos\theta=(e^{i\theta}+e^{-i\theta})/2$, $\sin\theta=(e^{i\theta}-e^{-i\theta})/(2i)$ and $\sum_n C_\bullet[n]e^{\pm2\pi i n\ell/N}=\hat{C}_\bullet[N\mp\ell]$, each sum is</p>
 <p>$$
 F_\bullet[\ell] = \frac{1}{2}\left(\hat{C}_\bullet[\ell] + \hat{C}_\bullet[N-\ell]\right) + \frac{1}{2i}\left(\hat{S}_\bullet[N-\ell] - \hat{S}_\bullet[\ell]\right).
 $$</p>
-<p>For $F_0$ one has $C_0 = w$ and $S_0 = Q_\rho$; the other three follow from their displayed sums. The pairs $(C_\bullet,S_\bullet)$ are, up to signs, the four coefficient sequences $w,Q_\rho,Q_\nu,Q_\xi$, so four complex transforms suffice. The precise form depends on the pairing of the real and imaginary parts.</p>
+<p>For $F_0$ one has $C_0 = w$ and $S_0 = Q_\rho$; the other three follow from their displayed sums. The pairs $(C_\bullet,S_\bullet)$ are, up to signs, the four coefficient sequences $w,Q_\rho,Q_\nu,Q_\zeta$, so four complex transforms suffice. The precise form depends on the pairing of the real and imaginary parts.</p>
 <p>Concretely, the factorization is the following algorithm:</p>
 <ol>
-<li><strong>Change of basis.</strong> For each $n$, write the sample $f[n]$ in the basis $\{e_t, \rho, \nu, \xi\}$, obtaining four complex coefficients $w[n], Q_\rho[n], Q_\nu[n], Q_\xi[n]$.</li>
-<li><strong>Complex Fourier transforms.</strong> Apply the ordinary complex Fourier transform to the four coefficient sequences $w, Q_\rho, Q_\nu, Q_\xi$. The result is four complex spectra.</li>
+<li><strong>Change of basis.</strong> For each $n$, write the sample $f[n]$ in the basis $\{e_t, \rho, \nu, \zeta\}$, obtaining four complex coefficients $w[n], Q_\rho[n], Q_\nu[n], Q_\zeta[n]$.</li>
+<li><strong>Complex Fourier transforms.</strong> Apply the ordinary complex Fourier transform to the four coefficient sequences $w, Q_\rho, Q_\nu, Q_\zeta$. The result is four complex spectra.</li>
 <li><strong>Reassemble.</strong> Combine the four complex spectra into the biquaternion spectrum $F[\ell]$.</li>
 </ol>
 <p>The result is a fast algorithm for the discrete biquaternion Fourier transform, using existing complex FFT libraries. The cost is four complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation of the transform, which is $O(N^2)$.</p>
@@ -312,7 +312,7 @@ F[\ell, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, \ell) \, f[m, n] \, W_N(n,
 $$</p>
 <p>where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, respectively. The two kernels can also be placed both on the left, or both on the right, depending on the convention.</p>
 <h3 id="factorization">Factorization</h3>
-<p>The two-dimensional transform factorizes into four two-dimensional complex transforms, just as in the one-dimensional case. The change of basis is the same: write each sample in the basis $\{e_t, \rho, \nu, \xi\}$, apply the two-dimensional complex transform to the four complex sequences, and reassemble.</p>
+<p>The two-dimensional transform factorizes into four two-dimensional complex transforms, just as in the one-dimensional case. The change of basis is the same: write each sample in the basis $\{e_t, \rho, \nu, \zeta\}$, apply the two-dimensional complex transform to the four complex sequences, and reassemble.</p>
 <h3 id="separability">Separability</h3>
 <p>The two-dimensional kernel is <strong>separable</strong>, in the sense that</p>
 <p>$$

@@ -75,52 +75,52 @@
 <p>The article assumes the metric, the Levi-Civita connection, the geodesics, the exponential map and the curvature of <em>Curvature and Geodesics</em> and <em>Riemannian Geometry</em>, and it cites <em>Smooth Manifolds and Differential Geometry</em> for the tangent and cotangent bundles and the flow of a vector field. The symplectic form and the Hamiltonian theory of the cotangent bundle are named as structures of later articles, <em>Symplectic Geometry</em> and the Hamiltonian dynamics of Part III, and are used only in the sense already available; the measure-theoretic and spectral properties of the flow operator — the invariance of the Liouville measure, its unitary realisation on a Hilbert space and the entropy of the flow — belong to Part III and to <em>The Geodesic Flow</em> of the synthesis of this Part, and are cited rather than developed. No physics is invoked.</p>
 <h2 id="the-geodesic-spray">The Geodesic Spray</h2>
 <h3 id="vector-fields-on-the-tangent-bundle">Vector Fields on the Tangent Bundle</h3>
-<p>Let $(M, g)$ be a Riemannian manifold of dimension $n$, with Levi-Civita connection $\nabla$, and let $\pi : TM \to M$ be the tangent bundle. A point of $TM$ is written $(x, \xi)$ with $x \in M$ and $\xi \in T_xM$; a chart $x_1, \ldots, x_n$ of $M$ induces the chart $x_1, \ldots, x_n, \xi_1, \ldots, \xi_n$ of $TM$, in which a tangent vector of $TM$ is a pair of $n$-tuples. The <strong>vertical subspace</strong> at $(x, \xi)$ is $\ker d\pi_{(x,\xi)} \cong T_xM$, and the <strong>canonical vertical field</strong> is the vector field whose value at $(x,\xi)$ is the copy of $\xi$ in the vertical subspace; it is written $V$ or, in the chart, $\sum_k \xi_k\,\partial/\partial\xi_k$.</p>
+<p>Let $(M, g)$ be a Riemannian manifold of dimension $n$, with Levi-Civita connection $\nabla$, and let $\pi : TM \to M$ be the tangent bundle. A point of $TM$ is written $(x, \zeta)$ with $x \in M$ and $\zeta \in T_xM$; a chart $x_1, \ldots, x_n$ of $M$ induces the chart $x_1, \ldots, x_n, \zeta_1, \ldots, \zeta_n$ of $TM$, in which a tangent vector of $TM$ is a pair of $n$-tuples. The <strong>vertical subspace</strong> at $(x, \zeta)$ is $\ker d\pi_{(x,\zeta)} \cong T_xM$, and the <strong>canonical vertical field</strong> is the vector field whose value at $(x,\zeta)$ is the copy of $\zeta$ in the vertical subspace; it is written $V$ or, in the chart, $\sum_k \zeta_k\,\partial/\partial\zeta_k$.</p>
 <p><strong>Definition.</strong> The <strong>geodesic spray</strong> of $(M, g)$ is the vector field $G$ on $TM$ whose integral curves are the derivatives of the geodesics:</p>
 <p>$$
-G(x, \xi) = \frac{d}{dt}\Big|_{t=0}\bigl(\gamma_\xi(t), \gamma_\xi'(t)\bigr),
+G(x, \zeta) = \frac{d}{dt}\Big|_{t=0}\bigl(\gamma_\zeta(t), \gamma_\zeta'(t)\bigr),
 $$</p>
-<p>where $\gamma_\xi$ is the geodesic with $\gamma_\xi(0) = x$ and $\gamma_\xi'(0) = \xi$. In the induced chart it is</p>
+<p>where $\gamma_\zeta$ is the geodesic with $\gamma_\zeta(0) = x$ and $\gamma_\zeta'(0) = \zeta$. In the induced chart it is</p>
 <p>$$
-G = \sum_k \xi_k\,\partial/\partial x_k - \sum_{i,j,k} \Gamma_{kij}(x)\,\xi_i\xi_j\,\partial/\partial\xi_k,
+G = \sum_k \zeta_k\,\partial/\partial x_k - \sum_{i,j,k} \Gamma_{kij}(x)\,\zeta_i\zeta_j\,\partial/\partial\zeta_k,
 $$</p>
 <p>with the Christoffel symbols $\Gamma_{kij}$ of the metric. The <strong>geodesic flow</strong> is the flow of $G$,</p>
 <p>$$
-\varphi_t : TM \longrightarrow TM, \qquad \varphi_t(x, \xi) = \bigl(\gamma_\xi(t), \gamma_\xi'(t)\bigr),
+\varphi_t : TM \longrightarrow TM, \qquad \varphi_t(x, \zeta) = \bigl(\gamma_\zeta(t), \gamma_\zeta'(t)\bigr),
 $$</p>
 <p>defined for those $t$ for which the geodesic is defined, and $\varphi_{s+t} = \varphi_s \circ \varphi_t$ wherever both sides are defined.</p>
-<p><strong>Proposition.</strong> The spray is a <strong>second-order</strong> vector field, in the sense that $d\pi(G(x,\xi)) = \xi$; conversely a second-order vector field on $TM$ whose integral curves are the derivatives of curves on $M$ determines a spray exactly when the curves are the geodesics of a metric, and then the field is $G$ above. The geodesic equation is the integral equation of the spray, $d^2x_k/dt^2 + \sum_{i,j}\Gamma_{kij}(dx_i/dt)(dx_j/dt) = 0$, and it is a second-order ordinary differential equation.</p>
-<p><strong>Proof.</strong> The first component of $G$ is $\xi$, which is $d\pi(G) = \xi$; the second is the negative of the Christoffel expression, which is exactly the geodesic equation. The local solvability and the smooth dependence on the initial condition are the theory of ordinary differential equations of Part III, cited; the geodesic equation is the equation of the spray.</p>
+<p><strong>Proposition.</strong> The spray is a <strong>second-order</strong> vector field, in the sense that $d\pi(G(x,\zeta)) = \zeta$; conversely a second-order vector field on $TM$ whose integral curves are the derivatives of curves on $M$ determines a spray exactly when the curves are the geodesics of a metric, and then the field is $G$ above. The geodesic equation is the integral equation of the spray, $d^2x_k/dt^2 + \sum_{i,j}\Gamma_{kij}(dx_i/dt)(dx_j/dt) = 0$, and it is a second-order ordinary differential equation.</p>
+<p><strong>Proof.</strong> The first component of $G$ is $\zeta$, which is $d\pi(G) = \zeta$; the second is the negative of the Christoffel expression, which is exactly the geodesic equation. The local solvability and the smooth dependence on the initial condition are the theory of ordinary differential equations of Part III, cited; the geodesic equation is the equation of the spray.</p>
 <h3 id="conservation-of-the-energy">Conservation of the Energy</h3>
 <p><strong>Definition.</strong> The <strong>energy</strong> of a tangent vector is</p>
 <p>$$
-E(x, \xi) = \tfrac{1}{2}\,g_x(\xi, \xi),
+E(x, \zeta) = \tfrac{1}{2}\,g_x(\zeta, \zeta),
 $$</p>
 <p>and for $r > 0$ the <strong>sphere bundle of radius $r$</strong> is $S_rM = \{E = \tfrac12 r^2\}$, with $SM = S_1M$ the <strong>unit tangent bundle</strong>.</p>
 <p><strong>Proposition.</strong> The energy is constant along the geodesic flow, $E \circ \varphi_t = E$; consequently the flow preserves every sphere bundle $S_rM$, and the flow restricted to $S_rM$ is the flow of the <strong>geodesic vector field</strong> $G_r$ obtained by projecting $G$ along the radius. A geodesic has constant speed, equal to the radius of the sphere bundle that contains its derivative.</p>
-<p><strong>Proof.</strong> A geodesic has constant speed, so $E(\varphi_t(x,\xi)) = \frac12|\gamma_\xi'|^2 = \frac12 g_x(\xi,\xi) = E(x,\xi)$; the level sets of $E$ are the sphere bundles, and $G$ is tangent to them, so it projects.</p>
+<p><strong>Proof.</strong> A geodesic has constant speed, so $E(\varphi_t(x,\zeta)) = \frac12|\gamma_\zeta'|^2 = \frac12 g_x(\zeta,\zeta) = E(x,\zeta)$; the level sets of $E$ are the sphere bundles, and $G$ is tangent to them, so it projects.</p>
 <h2 id="the-hamiltonian-formulation">The Hamiltonian Formulation</h2>
 <h3 id="the-cotangent-bundle-and-the-legendre-transform">The Cotangent Bundle and the Legendre Transform</h3>
 <p><strong>Definition.</strong> The <strong>Legendre transform</strong> of the metric is the bundle isomorphism</p>
 <p>$$
-\flat : TM \longrightarrow T^*M, \qquad \flat(x, \xi) = \bigl(x,\ g_x(\xi, \cdot)\bigr),
+\flat : TM \longrightarrow T^*M, \qquad \flat(x, \zeta) = \bigl(x,\ g_x(\zeta, \cdot)\bigr),
 $$</p>
 <p>with inverse $\sharp$, and the <strong>kinetic energy Hamiltonian</strong> is the function on $T^*M$</p>
 <p>$$
 H(x, p) = \tfrac{1}{2}\,g_x^{\sharp}(p, p), \qquad H\circ\flat = E .
 $$</p>
-<p>In a chart, $p_i = \sum_j g_{ij}\xi_j$ and $H = \frac12\sum_{i,j}(g^{-1})_{ij}(x)p_ip_j$.</p>
+<p>In a chart, $p_i = \sum_j g_{ij}\zeta_j$ and $H = \frac12\sum_{i,j}(g^{-1})_{ij}(x)p_ip_j$.</p>
 <p>The cotangent bundle carries the <strong>canonical symplectic form</strong> $\omega = \sum_i dp_i\wedge dx_i$, a nondegenerate closed $2$-form; the form is a structure of Part II and the pair $(T^*M, \omega)$ is the symplectic manifold of <em>Symplectic Geometry</em>, later in this Part, and of the symplectic topology of Part II. The Poisson bracket of two functions is $\{f, h\} = \omega(\sharp_\omega df, \sharp_\omega dh)$, with $\sharp_\omega$ the isomorphism $T^*T^*M \to TT^*M$ defined by $\omega$.</p>
-<p><strong>Theorem.</strong> The Legendre transform carries the geodesic spray to the Hamiltonian vector field of $H$: writing $X_H$ for the vector field with $\omega(X_H, \cdot) = -dH$, one has $d\flat(G) = X_H$, and the integral curves of $X_H$ are the curves $t \mapsto \flat(\varphi_t(x,\xi))$. Equivalently, the geodesic flow is the Hamiltonian flow of the kinetic energy on the cotangent bundle, and every integral curve satisfies the Hamilton equations</p>
+<p><strong>Theorem.</strong> The Legendre transform carries the geodesic spray to the Hamiltonian vector field of $H$: writing $X_H$ for the vector field with $\omega(X_H, \cdot) = -dH$, one has $d\flat(G) = X_H$, and the integral curves of $X_H$ are the curves $t \mapsto \flat(\varphi_t(x,\zeta))$. Equivalently, the geodesic flow is the Hamiltonian flow of the kinetic energy on the cotangent bundle, and every integral curve satisfies the Hamilton equations</p>
 <p>$$
 \boxed{\;dx_k/dt = \frac{\partial H}{\partial p_k} = \sum_j (g^{-1})_{kj}p_j, \qquad
 \,dp_k/dt = -\frac{\partial H}{\partial x_k} = -\tfrac{1}{2}\sum_{i,j}\partial/\partial x_k\,(g^{-1})_{ij}\,p_ip_j\;} .
 $$</p>
-<p><strong>Proof.</strong> The two equations are the equations of the spray read through $\flat$: the first is $dx_k/dt = \xi_k$, and the second is obtained from $d\xi_k/dt = -\sum_{i,j}\Gamma_{kij}\xi_i\xi_j$ by differentiating $p_k = \sum_j g_{kj}\xi_j$ and using the identity $\partial/\partial x_l\,g_{kj} = \Gamma_{jkl}+\Gamma_{klj}$, which expresses the metricity of $\nabla$ in a chart. The Hamiltonian field is well defined because $\omega$ is nondegenerate and closed, and it is tangent to the level sets of $H$ because $X_H(H) = \{H,H\} = 0$.</p>
+<p><strong>Proof.</strong> The two equations are the equations of the spray read through $\flat$: the first is $dx_k/dt = \zeta_k$, and the second is obtained from $d\zeta_k/dt = -\sum_{i,j}\Gamma_{kij}\zeta_i\zeta_j$ by differentiating $p_k = \sum_j g_{kj}\zeta_j$ and using the identity $\partial/\partial x_l\,g_{kj} = \Gamma_{jkl}+\Gamma_{klj}$, which expresses the metricity of $\nabla$ in a chart. The Hamiltonian field is well defined because $\omega$ is nondegenerate and closed, and it is tangent to the level sets of $H$ because $X_H(H) = \{H,H\} = 0$.</p>
 <h3 id="the-flow-as-a-one-parameter-group">The Flow as a One-Parameter Group</h3>
 <p><strong>Definition.</strong> The <strong>geodesic flow operator</strong> is the family $\{\Phi_t\}$ acting on a function $f$ on $TM$ by substitution,</p>
 <p>$$
-(\Phi_tf)(x, \xi) = f\bigl(\varphi_t(x, \xi)\bigr),
+(\Phi_tf)(x, \zeta) = f\bigl(\varphi_t(x, \zeta)\bigr),
 $$</p>
 <p>and on a function on $T^*M$ by the same formula along the Hamiltonian flow. The domain of each $\Phi_t$ is the set on which $\varphi_t$ is defined, and $\Phi_{s+t} = \Phi_s\circ \Phi_t$, $\Phi_0 = \mathrm{id}$, wherever the compositions are defined.</p>
 <p><strong>Proposition.</strong> The generator of the group is the spray read as a derivation of the algebra of smooth functions,</p>
@@ -144,10 +144,10 @@ $$</p>
 <p>so that the Jacobi fields are the kernel of $\mathcal{J}_\gamma$.</p>
 <p><strong>Theorem.</strong> The Jacobi equation is the linearisation of the geodesic equation: a family $s \mapsto \gamma_s$ of geodesics with $\gamma_0 = \gamma$ has variation field $J(t) = \partial/\partial s\,\gamma_s(t)|_{s=0}$, and $J$ is a Jacobi field; conversely every Jacobi field arises this way. Moreover the Jacobi fields along $\gamma$ are exactly the derivatives of the geodesic flow,</p>
 <p>$$
-\boxed{\;J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in L_{(x}R_{\xi)}TM,\quad (x,\xi) = (\gamma(0),\gamma'(0))\;},
+\boxed{\;J(t) = \bigl(\pi \circ d\varphi_t\bigr)(w), \qquad w \in L_{(x}R_{\zeta)}TM,\quad (x,\zeta) = (\gamma(0),\gamma'(0))\;},
 $$</p>
 <p>where $\pi : TTM \to TM$ is the bundle projection followed by the identification of the vertical subspaces with the tangent spaces.</p>
-<p><strong>Proof sketch.</strong> Differentiate the geodesic equation $\nabla_{\partial/\partial t}\gamma_s' = 0$ in the variation parameter $s$ and commute the derivatives with the curvature formula $R(\partial/\partial s,\partial/\partial t)\partial/\partial t = \nabla_{\partial/\partial s}\nabla_{\partial/\partial t}\partial/\partial t - \nabla_{\partial/\partial t}\nabla_{\partial/\partial s}\partial/\partial t$; the term $\nabla_{\partial/\partial t}\nabla_{\partial/\partial t}\partial/\partial s$ gives $\frac{D^2J}{dt^2}$ and the remaining term is $R(J,\gamma')\gamma'$, which is the equation. For the converse, the map from the $(2n)$-dimensional space $L_{(x}R_{\xi)}TM$ to the space of Jacobi fields along $\gamma$, $w\mapsto(\pi\circ d\varphi_t)(w)$, is well defined by the first part, and it is linear; it is surjective because a Jacobi field is determined by $(J(0), \frac{DJ}{dt}(0))$, a pair of vectors in $T_xM$, of total dimension $2n$, and the equation is second order, so $\dim\ker = 0$ and the map is an isomorphism. The identification of the two $2n$-dimensional spaces is the content of the Jacobi equation.</p>
+<p><strong>Proof sketch.</strong> Differentiate the geodesic equation $\nabla_{\partial/\partial t}\gamma_s' = 0$ in the variation parameter $s$ and commute the derivatives with the curvature formula $R(\partial/\partial s,\partial/\partial t)\partial/\partial t = \nabla_{\partial/\partial s}\nabla_{\partial/\partial t}\partial/\partial t - \nabla_{\partial/\partial t}\nabla_{\partial/\partial s}\partial/\partial t$; the term $\nabla_{\partial/\partial t}\nabla_{\partial/\partial t}\partial/\partial s$ gives $\frac{D^2J}{dt^2}$ and the remaining term is $R(J,\gamma')\gamma'$, which is the equation. For the converse, the map from the $(2n)$-dimensional space $L_{(x}R_{\zeta)}TM$ to the space of Jacobi fields along $\gamma$, $w\mapsto(\pi\circ d\varphi_t)(w)$, is well defined by the first part, and it is linear; it is surjective because a Jacobi field is determined by $(J(0), \frac{DJ}{dt}(0))$, a pair of vectors in $T_xM$, of total dimension $2n$, and the equation is second order, so $\dim\ker = 0$ and the map is an isomorphism. The identification of the two $2n$-dimensional spaces is the content of the Jacobi equation.</p>
 <h3 id="conjugate-points">Conjugate Points</h3>
 <p><strong>Definition.</strong> A point $\gamma(t_0)$ with $t_0 > 0$ is <strong>conjugate</strong> to $\gamma(0)$ along $\gamma$ if there is a nonzero Jacobi field $J$ along $\gamma$ with $J(0) = 0$ and $J(t_0) = 0$. The dimension of the space of such fields is the <strong>multiplicity</strong> of the conjugate point.</p>
 <p><strong>Theorem.</strong> The point $\gamma(t_0)$ is conjugate to $\gamma(0)$ if and only if $d(\exp_{\gamma(0)})_{t_0\gamma'(0)}$ is singular, and then the two maps have the same kernel dimension. A geodesic ceases to be minimising at the first conjugate point in the following sense: if there is a conjugate point at $t_0$ then $\gamma$ is not minimising on $[0, t_0 + \epsilon]$ for any $\epsilon > 0$, and a geodesic with no conjugate point before $t_1$ is minimising on $[0, t_1]$.</p>
@@ -158,7 +158,7 @@ $$</p>
 <p><strong>Theorem.</strong> The geodesic spray is a complete vector field if and only if $(M, g)$ is geodesically complete, and then the geodesic flow is defined for all real $t$; for a complete connected manifold every pair of points is joined by a minimising geodesic. A compact Riemannian manifold is complete, and so is a closed submanifold of Euclidean space with the induced metric.</p>
 <p><strong>Proof.</strong> The integral curves of $G$ are the derivatives of the geodesics, so completeness of $G$ is geodesic completeness by definition; the equivalence of geodesic completeness with metric completeness and with the existence of minimising geodesics is the theorem of Hopf–Rinow of <em>Riemannian Geometry</em>, cited. A compact metric space is complete, and a closed subset of a Euclidean space is complete, which gives the two examples.</p>
 <h2 id="summary">Summary</h2>
-<p>The geodesic spray $G$ on $TM$ is the second-order vector field whose integral curves are the derivatives of the geodesics; in a chart it is $G = \sum_k\xi_k\,\partial/\partial x_k - \sum_{i,j,k}\Gamma_{kij}\xi_i\xi_j\,\partial/\partial\xi_k$, and its flow is the <strong>geodesic flow</strong> $\varphi_t$. Under the Legendre transform $\flat$ the spray becomes the Hamiltonian vector field of the kinetic energy $H = \frac12 g^{\sharp}(p,p)$ on the cotangent bundle, so the geodesic flow is the Hamiltonian flow of $H$, and the Hamilton equations are the geodesic equation read through $\flat$. The flow operator $\Phi_tf = f\circ\varphi_t$ is a one-parameter group generated by the derivation $G$, equivalently by $\{H,\cdot\}$; it preserves the energy and every sphere bundle, and it preserves the Liouville measure, making it unitary on $L^2(SM,\mu)$ once the measure is available from Part III.</p>
+<p>The geodesic spray $G$ on $TM$ is the second-order vector field whose integral curves are the derivatives of the geodesics; in a chart it is $G = \sum_k\zeta_k\,\partial/\partial x_k - \sum_{i,j,k}\Gamma_{kij}\zeta_i\zeta_j\,\partial/\partial\zeta_k$, and its flow is the <strong>geodesic flow</strong> $\varphi_t$. Under the Legendre transform $\flat$ the spray becomes the Hamiltonian vector field of the kinetic energy $H = \frac12 g^{\sharp}(p,p)$ on the cotangent bundle, so the geodesic flow is the Hamiltonian flow of $H$, and the Hamilton equations are the geodesic equation read through $\flat$. The flow operator $\Phi_tf = f\circ\varphi_t$ is a one-parameter group generated by the derivation $G$, equivalently by $\{H,\cdot\}$; it preserves the energy and every sphere bundle, and it preserves the Liouville measure, making it unitary on $L^2(SM,\mu)$ once the measure is available from Part III.</p>
 <p>The derivative of the flow along a geodesic is the <strong>Jacobi field</strong>: the linearisation of the geodesic equation is $\frac{D^2J}{dt^2}+R(J,\gamma')\gamma' = 0$, and the Jacobi fields are exactly the images $\pi\circ d\varphi_t$ of tangent vectors of $TM$. The <strong>Jacobi operator</strong> $\mathcal{J}_\gamma J = \frac{D^2J}{dt^2}+R(J,\gamma')\gamma'$ has the Jacobi fields as its kernel, it is self-adjoint for the pairing $\int g(\cdot,\cdot)\,dt$, and its index counts the conjugate points: $\gamma(t_0)$ is conjugate to $\gamma(0)$ exactly when there is a nonzero Jacobi field vanishing at both ends, equivalently when $d\exp$ is singular there, and the first conjugate point is where the geodesic ceases to be minimising. The spray is complete exactly when the metric is geodesically complete, by Hopf–Rinow, and then the flow is defined for all time.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -178,8 +178,8 @@ $$</p>
 <td>Tangent and cotangent bundles and the projection</td>
 </tr>
 <tr>
-<td>$(x, \xi)$, $(x, p)$</td>
-<td>Points of $TM$ and $T^*M$; $p = \flat(\xi)$</td>
+<td>$(x, \zeta)$, $(x, p)$</td>
+<td>Points of $TM$ and $T^*M$; $p = \flat(\zeta)$</td>
 </tr>
 <tr>
 <td>$\Gamma_{kij}$</td>
@@ -190,7 +190,7 @@ $$</p>
 <td>Geodesic spray and geodesic flow</td>
 </tr>
 <tr>
-<td>$E(x,\xi) = \frac12g_x(\xi,\xi)$</td>
+<td>$E(x,\zeta) = \frac12g_x(\zeta,\zeta)$</td>
 <td>Energy; constant along the flow</td>
 </tr>
 <tr>

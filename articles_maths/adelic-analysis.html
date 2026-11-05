@@ -107,17 +107,17 @@ at the real place $\psi_v(x) = \exp(2\pi i x)$, and at a complex place $\psi_v(z
 $$
 \psi(x) = 1 \qquad (x \in K),
 $$
-by the product formula; consequently it induces a character of the compact group $\mathbb{A}/K$ and, by Pontryagin duality, an isomorphism $\mathbb{A} \cong \widehat{\mathbb{A}}$ given by $\xi \mapsto \psi_\xi$ with $\psi_\xi(x) = \psi(\xi x)$.</p>
+by the product formula; consequently it induces a character of the compact group $\mathbb{A}/K$ and, by Pontryagin duality, an isomorphism $\mathbb{A} \cong \widehat{\mathbb{A}}$ given by $\zeta \mapsto \psi_\zeta$ with $\psi_\zeta(x) = \psi(\zeta x)$.</p>
 <p><strong>Proof.</strong> Almost every factor has $x \in \mathcal{O}_v$ and hence $\{x\}_v = 0$, so the product is finite; continuity is local. For $x \in K$ the identity $\psi(x) = 1$ is the product formula $\prod_v \lvert x \rvert_v = 1$ written in the form $\sum_v \{x\}_v \equiv 0$ modulo the appropriate lattices; the induced character is trivial on $K$ by construction. Pontryagin duality is the duality of <em>Harmonic Analysis on Groups</em> applied to the self-dual groups $K_v$ and assembled over the restricted product.</p>
 <h3 id="self-duality-and-the-fourier-transform">Self-Duality and the Fourier Transform</h3>
 <p><strong>Definition.</strong> The Fourier transform of a function $f$ on $\mathbb{A}$ for which the integral converges is
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{A}} f(x)\, \psi(\xi x)\, d\mu(x),
+(\mathcal F f)(\zeta) = \int_{\mathbb{A}} f(x)\, \psi(\zeta x)\, d\mu(x),
 $$
 and the <strong>Schwartz–Bruhat space</strong> $\mathcal{S}(\mathbb{A})$ is the restricted product of the local Schwartz spaces: locally constant compactly supported functions at the finite places and Schwartz functions at the infinite ones, with the convergence requirement that almost every local factor be the indicator of $\mathcal{O}_v$.</p>
 <p><strong>Theorem (inversion and Plancherel).</strong> For $f \in \mathcal{S}(\mathbb{A})$ the Fourier transform lies in $\mathcal{S}(\mathbb{A})$ and
 $$
-\hat{\mathcal F f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert (\mathcal F f)(\xi) \rvert^2 \, d\mu(\xi) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
+\hat{\mathcal F f}(x) = f(-x), \qquad \int_{\mathbb{A}} \lvert (\mathcal F f)(\zeta) \rvert^2 \, d\mu(\zeta) = \int_{\mathbb{A}} \lvert f(x) \rvert^2 \, d\mu(x).
 $$
 <strong>Proof sketch.</strong> The local statements are proved place by place: at a finite place the Fourier transform is the $\mu_v$-self-adjoint operator on the space of locally constant compactly supported functions, and the normalisation $\mu_v(\mathcal{O}_v)=1$ combined with the choice of $\psi_v$ gives $\widehat{\mathbf{1}_{\mathcal{O}_v}} = \mathbf{1}_{\mathcal{O}_v}$; at the infinite places the same statement holds for the Gaussian, and both imply inversion by the standard argument. The global transform is the product of the local transforms for factorisable functions, and the general case follows by linearity and a limiting argument.</p>
 <h2 id="poisson-summation-and-riemannroch">Poisson Summation and Riemann–Roch</h2>

@@ -278,17 +278,17 @@ $$</p>
 </table></div>
 <p>The table is a dictionary and not an identification of two physical objects. The flow is one element's one-parameter group; the kernel is the generating function of a transform. The identity says that the first is a value of the second, and that the value carries the element's own root and rate.</p>
 <h3 id="the-eigenbasis-is-a-fourier-basis">The Eigenbasis Is a Fourier Basis</h3>
-<p>The transform is computed in a root-adapted basis. Choose pure $\nu$ and $\xi$ with</p>
+<p>The transform is computed in a root-adapted basis. Choose pure $\nu$ and $\zeta$ with</p>
 <p>$$
 \rho\perp\nu,
 \qquad
-\nu\perp\xi,
+\nu\perp\zeta,
 \qquad
-\xi\perp\rho,
+\zeta\perp\rho,
 \qquad
-\rho\nu=\xi,
+\rho\nu=\zeta,
 $$</p>
-<p>where the pairing is the complex bilinear form of the vector part. In the ordered basis $(e_t,\rho,\nu,\xi)$ left multiplication by $\rho$ is block diagonal, with the same two-by-two block on $(e_t,\rho)$ and on $(\nu,\xi)$: the block sends $e_t$ to $\rho$ and $\rho$ to $-e_t$, and it sends $\nu$ to $\xi$ and $\xi$ to $-\nu$. Its eigenvalues are $\pm i$.</p>
+<p>where the pairing is the complex bilinear form of the vector part. In the ordered basis $(e_t,\rho,\nu,\zeta)$ left multiplication by $\rho$ is block diagonal, with the same two-by-two block on $(e_t,\rho)$ and on $(\nu,\zeta)$: the block sends $e_t$ to $\rho$ and $\rho$ to $-e_t$, and it sends $\nu$ to $\zeta$ and $\zeta$ to $-\nu$. Its eigenvalues are $\pm i$.</p>
 <p><strong>Proposition 2 (the eigenbasis in the Fourier basis).</strong> In the notation above,</p>
 <p>$$
 \rho\tilde\Pi_\pm=\pm i\,\tilde\Pi_\pm,
@@ -297,12 +297,12 @@ $$</p>
 \qquad
 \rho u_+=-i\,u_+,
 \qquad
-u_\mp=\frac12(\nu\mp i\xi),
+u_\mp=\frac12(\nu\mp i\zeta),
 $$</p>
 <p>and $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{\tilde Q}$ is diagonal, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
-<p><em>Proof.</em> The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\xi)/2=(\xi\pm i\nu)/2=\pm i(\nu\mp i\xi)/2$, using $\rho\nu=\xi$ and $\rho\xi=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\xi)$ is a basis (<em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Change of Basis</em>); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
+<p><em>Proof.</em> The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\zeta)/2=(\zeta\pm i\nu)/2=\pm i(\nu\mp i\zeta)/2$, using $\rho\nu=\zeta$ and $\rho\zeta=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\zeta)$ is a basis (<em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Change of Basis</em>); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.</p>
 <p>The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>, §<em>The Transverse-Vector Construction</em>, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.</p>
-<p><strong>The two cuts are transverse.</strong> The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\xi\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.</p>
+<p><strong>The two cuts are transverse.</strong> The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\zeta\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.</p>
 <h3 id="which-frequency">Which Frequency</h3>
 <p>The word <em>frequency</em> is exact in one case and a rate in the others, and the case is decided by $B$, not by normality.</p>
 <div class="table-scroll"><table>
@@ -633,7 +633,7 @@ $$</p>
 </tr>
 <tr>
 <td>Fourier eigenbasis</td>
-<td>$(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\xi)$</td>
+<td>$(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$, $u_\mp=\tfrac12(\nu\mp i\zeta)$</td>
 </tr>
 <tr>
 <td>Natural unitarity of the kernel</td>
@@ -711,7 +711,7 @@ $$</p>
 <td>the root of $-1$ supplied by the element</td>
 </tr>
 <tr>
-<td>$\vec\Xi=-i\rho$</td>
+<td>$\vec{Ζ}=-i\rho$</td>
 <td>the root of $+1$ used by the spectral articles</td>
 </tr>
 <tr>
@@ -731,11 +731,11 @@ $$</p>
 <td>the biquaternion Fourier kernel</td>
 </tr>
 <tr>
-<td>$\nu,\xi$</td>
+<td>$\nu,\zeta$</td>
 <td>pure directions completing $\rho$ to a root-adapted basis</td>
 </tr>
 <tr>
-<td>$u_\mp=\tfrac12(\nu\mp i\xi)$</td>
+<td>$u_\mp=\tfrac12(\nu\mp i\zeta)$</td>
 <td>the nilpotent pair of the eigenbasis</td>
 </tr>
 <tr>

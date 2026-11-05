@@ -134,28 +134,28 @@ factorisation of the Laplacian is stated in <em>Dirac Differential Operators</em
 <h3 id="the-symbol-and-ellipticity">The Symbol and Ellipticity</h3>
 <p><strong>Definition.</strong> The <strong>principal symbol</strong> of $D$ is the map $\sigma:\mathbb{R}^{m+1}\to A$,</p>
 <p>$$
-\sigma(\xi) = \xi_t+\sum_{i=1}^{m}e_i\,\xi_i ,
+\sigma(\zeta) = \zeta_t+\sum_{i=1}^{m}e_i\,\zeta_i ,
 $$</p>
 <p>and the <strong>reflected symbol</strong> is
-$\bar\sigma(\xi)=\xi_t-\sum_{i\ge1}e_i\xi_i$.</p>
-<p><strong>Proposition (invertibility of the symbol).</strong> For every $\xi\neq0$,</p>
+$\bar\sigma(\zeta)=\zeta_t-\sum_{i\ge1}e_i\zeta_i$.</p>
+<p><strong>Proposition (invertibility of the symbol).</strong> For every $\zeta\neq0$,</p>
 <p>$$
-\boxed{\;\sigma(\xi)\,\bar\sigma(\xi) = \bar\sigma(\xi)\,\sigma(\xi) = |\xi|^2 = \xi_t^2+\sum_{i=1}^{m}\xi_i^2 > 0\;} ,
+\boxed{\;\sigma(\zeta)\,\bar\sigma(\zeta) = \bar\sigma(\zeta)\,\sigma(\zeta) = |\zeta|^2 = \zeta_t^2+\sum_{i=1}^{m}\zeta_i^2 > 0\;} ,
 $$</p>
-<p>so $\sigma(\xi)$ is a unit of $A$, with $\sigma(\xi)^{-1}=\bar\sigma(\xi)/|\xi|^2$, and $D$ is
+<p>so $\sigma(\zeta)$ is a unit of $A$, with $\sigma(\zeta)^{-1}=\bar\sigma(\zeta)/|\zeta|^2$, and $D$ is
 <strong>elliptic</strong>.</p>
-<p><em>Proof.</em> Expanding the product, the diagonal terms contribute $\xi_t^2+\sum_{i\ge1} e_i\bar e_i\xi_i^2$.
-For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\xi_t^2$ or $\xi_i^2$. The off-diagonal
-terms cancel pairwise, because $\xi_i\xi_j$ is a real scalar and
+<p><em>Proof.</em> Expanding the product, the diagonal terms contribute $\zeta_t^2+\sum_{i\ge1} e_i\bar e_i\zeta_i^2$.
+For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\zeta_t^2$ or $\zeta_i^2$. The off-diagonal
+terms cancel pairwise, because $\zeta_i\zeta_j$ is a real scalar and
 $e_i\bar e_j+\bar e_j e_i=0$ for $i\neq j\ge1$, this being the Clifford relation
 $e_ie_j+e_je_i=-2\delta_{ij}$ after the sign $\bar e_j=\epsilon_j e_j$ with
-$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\xi|^2$ is a positive real number, hence a unit of $A$,
+$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\zeta|^2$ is a positive real number, hence a unit of $A$,
 and the displayed inverse is immediate. The computation is identical in the other order because
-$\xi_t$ is central and the two factors commute.</p>
+$\zeta_t$ is central and the two factors commute.</p>
 <p><strong>Corollary.</strong> The equality $D\bar D=\bar DD=\Delta$ holds, $\Delta=\partial^2/\partial x_t^2+\sum_{i=1}^{m}\partial^2/\partial x_i^2$
 being the Laplacian of the ambient space, and $D$ is a first-order elliptic operator with constant
 coefficients.</p>
-<p><em>Proof.</em> Applying the symbol computation to the covector $i\xi$ and separating orders gives the
+<p><em>Proof.</em> Applying the symbol computation to the covector $i\zeta$ and separating orders gives the
 operator identity; equivalently, expand $D\bar D$ directly as in <em>Regularity and the Cauchy–Riemann
 Operator</em>.</p>
 <h3 id="divergence-form">Divergence Form</h3>
@@ -300,8 +300,8 @@ is Part IV's.</p>
 $\mathcal{S}$-valued functions of a vector variable by the one-sided Clifford action; the corpus
 names it the Cauchy–Riemann operator, and the classical name <em>Dirac operator</em> is carried by the
 self-adjoint family of <em>Dirac Differential Operators</em>. Its principal symbol is left multiplication
-by $\sigma(\xi)=\xi_t+\sum_{i\ge1}e_i\xi_i$, which satisfies $\sigma(\xi)\bar\sigma(\xi)=|\xi|^2$; hence
-$\sigma(\xi)$ is a unit for $\xi\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
+by $\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$, which satisfies $\sigma(\zeta)\bar\sigma(\zeta)=|\zeta|^2$; hence
+$\sigma(\zeta)$ is a unit for $\zeta\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
 coefficients are constant, $D$ is the divergence of the field with components $e_\mu f$, and the
 divergence theorem applies to it with the conormal element $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$.</p>
 <p>The operator is not symmetric: with respect to the module form in which the vectors are skew,
@@ -361,8 +361,8 @@ Twisted Cauchy–Riemann Operator</em>.</p>
 <td>Laplacian; $D\bar D=\bar DD=\Delta$</td>
 </tr>
 <tr>
-<td>$\sigma(\xi)=\xi_t+\sum_{i\ge1}e_i\xi_i$</td>
-<td>Principal symbol; $\sigma\bar\sigma=|\xi|^2$</td>
+<td>$\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$</td>
+<td>Principal symbol; $\sigma\bar\sigma=|\zeta|^2$</td>
 </tr>
 <tr>
 <td>$\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$</td>

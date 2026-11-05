@@ -97,20 +97,20 @@ $$</p>
 <p>$$
 P_k u = \sum_{|\alpha| = k} A_\alpha(x)\,\partial/\partial x_\alpha u
 $$</p>
-<p>with $A_\alpha$ an $s \times r$ matrix of functions. For a covector $\xi = \sum_j \xi_j\, dx_j$ at $x$ put</p>
+<p>with $A_\alpha$ an $s \times r$ matrix of functions. For a covector $\zeta = \sum_j \zeta_j\, dx_j$ at $x$ put</p>
 <p>$$
-\sigma_k(P)(x, \xi) = \sum_{|\alpha| = k} A_\alpha(x)\,\xi^\alpha \in \operatorname{Hom}(E_x, F_x),
+\sigma_k(P)(x, \zeta) = \sum_{|\alpha| = k} A_\alpha(x)\,\zeta^\alpha \in \operatorname{Hom}(E_x, F_x),
 $$</p>
-<p>where $\xi^\alpha = \xi_1^{\alpha_1}\cdots\xi_n^{\alpha_n}$. This is the <strong>principal symbol</strong> of $P$ at $x$ in the direction $\xi$.</p>
-<p><strong>Proposition.</strong> The expression $\sigma_k(P)(x,\xi)$ is independent of the chart and the frames, so the principal symbol is a smooth section</p>
+<p>where $\zeta^\alpha = \zeta_1^{\alpha_1}\cdots\zeta_n^{\alpha_n}$. This is the <strong>principal symbol</strong> of $P$ at $x$ in the direction $\zeta$.</p>
+<p><strong>Proposition.</strong> The expression $\sigma_k(P)(x,\zeta)$ is independent of the chart and the frames, so the principal symbol is a smooth section</p>
 <p>$$
 \sigma_k(P) \in \Gamma\!\left(\operatorname{sym}^k TM \otimes \operatorname{Hom}(E,F)\right),
 $$</p>
-<p>equivalently a smooth family of linear maps $\sigma_k(P)(x,\xi) : E_x \to F_x$ polynomial of degree $k$ in $\xi \in T^*_xM$. For $k = 0$ it is $P$ itself, read fibrewise; for every $k$ it depends on $P$ only through its part of order exactly $k$, so $\sigma_k$ is constant on the affine subspace $\{P + D^{k-1}(E,F)\}$.</p>
-<p><em>Proof.</em> Under a change of coordinates the top-order part transforms by the $k$-th symmetric power of the Jacobian, by the argument of the previous section, while the lower-order derivatives of the transition functions contribute only to the terms of order below $k$; and the change of frames conjugates $A_\alpha$ by the two frame matrices. Both operations preserve the displayed combination at every $\xi$, because $\xi^\alpha$ transforms by the inverse transpose of the Jacobian. For the last statement, $A_\alpha$ is unchanged when an operator of order at most $k-1$ is added, since the latter has no terms of order $k$.</p>
+<p>equivalently a smooth family of linear maps $\sigma_k(P)(x,\zeta) : E_x \to F_x$ polynomial of degree $k$ in $\zeta \in T^*_xM$. For $k = 0$ it is $P$ itself, read fibrewise; for every $k$ it depends on $P$ only through its part of order exactly $k$, so $\sigma_k$ is constant on the affine subspace $\{P + D^{k-1}(E,F)\}$.</p>
+<p><em>Proof.</em> Under a change of coordinates the top-order part transforms by the $k$-th symmetric power of the Jacobian, by the argument of the previous section, while the lower-order derivatives of the transition functions contribute only to the terms of order below $k$; and the change of frames conjugates $A_\alpha$ by the two frame matrices. Both operations preserve the displayed combination at every $\zeta$, because $\zeta^\alpha$ transforms by the inverse transpose of the Jacobian. For the last statement, $A_\alpha$ is unchanged when an operator of order at most $k-1$ is added, since the latter has no terms of order $k$.</p>
 <p>The symmetric $k$-linear form underlying $\sigma_k(P)$ is recovered from the polynomial by polarisation, and it is the function of $k$ tangent vectors</p>
 <p>$$
-(\xi_1, \ldots, \xi_k) \longmapsto \frac{1}{k!}\sum_{\epsilon_1, \ldots, \epsilon_k = \pm 1} \epsilon_1\cdots\epsilon_k\, \sigma_k(P)(\epsilon_1\xi_1 + \cdots + \epsilon_k\xi_k).
+(\zeta_1, \ldots, \zeta_k) \longmapsto \frac{1}{k!}\sum_{\epsilon_1, \ldots, \epsilon_k = \pm 1} \epsilon_1\cdots\epsilon_k\, \sigma_k(P)(\epsilon_1\zeta_1 + \cdots + \epsilon_k\zeta_k).
 $$</p>
 <p><strong>Proposition (symbols of a composition and of an adjoint).</strong> Let $P \in D^k(E,F)$ and $Q \in D^l(F,G)$. Then</p>
 <p>$$
@@ -118,14 +118,14 @@ $$</p>
 $$</p>
 <p>the product being the composition of the two homomorphisms of the fibres. If $E$ and $F$ carry metrics and $P^*$ is the formal adjoint of $P$ with respect to them, then $P^*$ has order $k$ and</p>
 <p>$$
-\sigma_k(P^*)(x,\xi) = (-1)^k\, \sigma_k(P)(x,\xi)^*,
+\sigma_k(P^*)(x,\zeta) = (-1)^k\, \sigma_k(P)(x,\zeta)^*,
 $$</p>
 <p>the transpose being taken with respect to the two metrics.</p>
 <p><em>Proof.</em> For the composition, the product $QP$ has order at most $k+l$, and its part of order exactly $k+l$ is obtained by applying the order-$l$ part of $Q$ to the order-$k$ part of $P$; the lower-order parts of one composed with the highest part of the other have order at most $k+l-1$. Substituting the top-order expressions gives the product of the symbols. For the adjoint, differentiate the identity $\langle Pu, v\rangle = \langle u, P^*v\rangle$ to top order: each of the $k$ derivatives is moved from $u$ to $v$, producing the factor $(-1)^k$, and the matrices are transposed.</p>
 <h3 id="elliptic-operators">Elliptic Operators</h3>
-<p><strong>Definition.</strong> An operator $P \in D^k(E,F)$ is <strong>elliptic</strong> at $x$ if $\sigma_k(P)(x,\xi) : E_x \to F_x$ is invertible for every nonzero $\xi \in T^*_xM$; it is elliptic if it is elliptic at every point. The <strong>characteristic variety</strong> of $P$ is the subset of $T^*M$ on which $\sigma_k(P)(x,\xi)$ is not invertible, that is, the zeros of $\det \sigma_k(P)(x,\xi)$ in a pair of frames.</p>
+<p><strong>Definition.</strong> An operator $P \in D^k(E,F)$ is <strong>elliptic</strong> at $x$ if $\sigma_k(P)(x,\zeta) : E_x \to F_x$ is invertible for every nonzero $\zeta \in T^*_xM$; it is elliptic if it is elliptic at every point. The <strong>characteristic variety</strong> of $P$ is the subset of $T^*M$ on which $\sigma_k(P)(x,\zeta)$ is not invertible, that is, the zeros of $\det \sigma_k(P)(x,\zeta)$ in a pair of frames.</p>
 <p>Since the symbol of a composition is the product of the symbols, an elliptic operator has $\operatorname{rank} E = \operatorname{rank} F$, and the composition of two elliptic operators is elliptic; the identity operator is elliptic of order $0$, and $d^k \star d$ type combinations are elliptic of order $2k$. The characteristic variety is a cone in the cotangent bundle, invariant under the scaling of the fibres, and it is empty for an elliptic operator.</p>
-<p><strong>Examples.</strong> The exterior derivative $d : \Omega^p \to \Omega^{p+1}$ has symbol $\sigma_1(d)(x,\xi) = \xi \wedge \cdot$, the exterior multiplication by $\xi$; it is not invertible, and it is not elliptic, because $\xi\wedge\xi = 0$. The de Rham operator $d + \delta$ and the Laplace–de Rham operator $\Delta = d\delta + \delta d$ have symbols the Clifford multiplication by $\xi$ and $-\lvert\xi\rvert^2$ respectively read on forms, and both are elliptic; the symbol of the Laplace–Beltrami operator of a metric is $-\lvert\xi\rvert_g^2$. The Cauchy–Riemann operator and the Dirac operator are first-order elliptic, with symbols the multiplication by $\xi$ and by the Clifford element $\xi$; the equations that these symbols control are the elliptic equations of <em>Partial Differential Equations</em>.</p>
+<p><strong>Examples.</strong> The exterior derivative $d : \Omega^p \to \Omega^{p+1}$ has symbol $\sigma_1(d)(x,\zeta) = \zeta \wedge \cdot$, the exterior multiplication by $\zeta$; it is not invertible, and it is not elliptic, because $\zeta\wedge\zeta = 0$. The de Rham operator $d + \delta$ and the Laplace–de Rham operator $\Delta = d\delta + \delta d$ have symbols the Clifford multiplication by $\zeta$ and $-\lvert\zeta\rvert^2$ respectively read on forms, and both are elliptic; the symbol of the Laplace–Beltrami operator of a metric is $-\lvert\zeta\rvert_g^2$. The Cauchy–Riemann operator and the Dirac operator are first-order elliptic, with symbols the multiplication by $\zeta$ and by the Clifford element $\zeta$; the equations that these symbols control are the elliptic equations of <em>Partial Differential Equations</em>.</p>
 <h2 id="jet-bundles">Jet Bundles</h2>
 <h3 id="the-jet-of-a-section">The Jet of a Section</h3>
 <p><strong>Definition.</strong> Let $E \to M$ be a vector bundle and $k \ge 0$. Two sections $s, t \in \Gamma(E)$ <strong>agree to order $k$</strong> at $x \in M$ if in one, hence every, chart and trivialisation about $x$ the difference $s - t$ and all its partial derivatives of total order at most $k$ vanish at $x$. This is an equivalence relation, and the class of $s$ is the <strong>$k$-jet</strong> $j_k s(x)$ of $s$ at $x$. The set of $k$-jets at $x$ is $J^k_xE$, and the disjoint union $J^kE = \bigsqcup_{x \in M} J^k_xE$ is the <strong>bundle of $k$-jets</strong> of $E$.</p>
@@ -168,10 +168,10 @@ $$</p>
 $$</p>
 <p>with $P_i \circ P_{i-1} = 0$ for every $i$. The complex is <strong>elliptic</strong> if the induced sequence of symbols</p>
 <p>$$
-\cdots \longrightarrow E_{i-1} \xrightarrow{\ \sigma(P_{i-1})(x,\xi)\ } E_i \xrightarrow{\ \sigma(P_i)(x,\xi)\ } E_{i+1} \longrightarrow \cdots
+\cdots \longrightarrow E_{i-1} \xrightarrow{\ \sigma(P_{i-1})(x,\zeta)\ } E_i \xrightarrow{\ \sigma(P_i)(x,\zeta)\ } E_{i+1} \longrightarrow \cdots
 $$</p>
-<p>is exact for every $x \in M$ and every nonzero $\xi \in T^*_xM$. An elliptic complex has finite-dimensional cohomology when $M$ is compact, and on it the Hodge theory of <em>Differential Forms and Stokes' Theorem</em> applies: the complex carries the Laplace-type operator $\Delta_i = P_i^*P_i + P_{i-1}P_{i-1}^*$, its harmonic sections are the canonical representatives of the cohomology, and the index of the complex, the alternating sum of the dimensions of its cohomology, is the topological invariant that Part IV computes from the symbol.</p>
-<p>The <strong>de Rham complex</strong> of <em>Differential Forms and Stokes' Theorem</em> is the fundamental example: the operators are the exterior derivative on the forms, the composition $d \circ d = 0$ is the statement of the complex, and the symbol sequence $0 \to \Lambda^p T^*_xM \to \Lambda^{p+1}T^*_xM \to \cdots$ is exact for $\xi \neq 0$ by the algebraic contractibility of the exterior algebra with respect to the multiplication by $\xi$, as in <em>The Exterior Algebra</em>. Its Laplace-type operator is the Laplace–de Rham operator, whose analysis is <em>The Codifferential</em> and <em>The L2 Adjoint of a Differential Operator</em>. The Dolbeault complex of a complex manifold is the other fundamental example, and it is named here with a forward reference to <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV, where the complex structure that defines it is treated.</p>
+<p>is exact for every $x \in M$ and every nonzero $\zeta \in T^*_xM$. An elliptic complex has finite-dimensional cohomology when $M$ is compact, and on it the Hodge theory of <em>Differential Forms and Stokes' Theorem</em> applies: the complex carries the Laplace-type operator $\Delta_i = P_i^*P_i + P_{i-1}P_{i-1}^*$, its harmonic sections are the canonical representatives of the cohomology, and the index of the complex, the alternating sum of the dimensions of its cohomology, is the topological invariant that Part IV computes from the symbol.</p>
+<p>The <strong>de Rham complex</strong> of <em>Differential Forms and Stokes' Theorem</em> is the fundamental example: the operators are the exterior derivative on the forms, the composition $d \circ d = 0$ is the statement of the complex, and the symbol sequence $0 \to \Lambda^p T^*_xM \to \Lambda^{p+1}T^*_xM \to \cdots$ is exact for $\zeta \neq 0$ by the algebraic contractibility of the exterior algebra with respect to the multiplication by $\zeta$, as in <em>The Exterior Algebra</em>. Its Laplace-type operator is the Laplace–de Rham operator, whose analysis is <em>The Codifferential</em> and <em>The L2 Adjoint of a Differential Operator</em>. The Dolbeault complex of a complex manifold is the other fundamental example, and it is named here with a forward reference to <em>Hermitian Geometry and Almost Complex Structures</em> in Part IV, where the complex structure that defines it is treated.</p>
 <h2 id="summary">Summary</h2>
 <p>A differential operator of order at most $k$ is a linear map on the sections of a vector bundle whose local expression differentiates the coefficients at most $k$ times; the order is well defined, the operators of order at most $k$ form the module $D^k(E,F)$, the sum is order at most the maximum and the composition is order at most the sum. The commutator with a function lowers the order by one, and the iterated commutators characterise the order.</p>
 <p>The principal symbol $\sigma_k(P)$ is the top-order part of the operator read as a linear map $S^kT^*M \otimes E \to F$ on the fibres; it is tensorial, it depends on $P$ only through the class of $P$ modulo the operators of order at most $k-1$, and it multiplies under composition and transposes with a sign under the adjoint. The operator is elliptic when its symbol is invertible off the zero section, and the elliptic operators are closed under composition.</p>
@@ -210,7 +210,7 @@ $$</p>
 <td>Commutator with the multiplication by a function; order at most $\operatorname{ord}(P)-1$</td>
 </tr>
 <tr>
-<td>$\sigma_k(P)(x,\xi)$</td>
+<td>$\sigma_k(P)(x,\zeta)$</td>
 <td>Principal symbol, a linear map $E_x \to F_x$</td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ $$</p>
 <td>Symbol of a composition</td>
 </tr>
 <tr>
-<td>$\sigma_k(P^*)(\xi) = (-1)^k\sigma_k(P)(\xi)^*$</td>
+<td>$\sigma_k(P^*)(\zeta) = (-1)^k\sigma_k(P)(\zeta)^*$</td>
 <td>Symbol of a formal adjoint</td>
 </tr>
 <tr>
