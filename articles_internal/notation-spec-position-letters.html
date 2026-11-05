@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notation Spec: Position Letters and the h-Reading — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="notation-spec-position-letters-and-the-h-reading">Notation Spec: Position Letters and the h-Reading</h1>
+<p>One page. Eight rows. Counts are from the corpus at <code>da552c10b</code>, <code>articles_physics/</code> only.</p>
+<h2 id="the-eight-rows">The eight rows</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Glyph today</th>
+<th>Role it plays</th>
+<th>Form after the pass</th>
+<th>Action</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$t'$</td>
+<td>coordinate time: inside $ic\,t'$, $c^2t'^2$, $dt'$, a tuple $(t',x,y,z)$, a label $(t'_r,t'_p)$</td>
+<td>$r'_t$</td>
+<td><strong>change</strong></td>
+<td>$c^2t'^2$: 49 in 34 files; tuples: 17 in 11; $t'_r,t'_p$ labels: 2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$t'$</td>
+<td>evolution parameter: argument of $\partial/\partial t'$, $\exp(-iHt'/\hbar)$, $\tilde\Xi(t')$, "at time $t'$", a rotation angle, a Fourier variable</td>
+<td>$t'$</td>
+<td><strong>keep</strong></td>
+<td>$\partial/\partial t'$: 532 in 94 files; $\exp(-iHt'/\hbar)$: 19 in 11</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$t$, $ct$, $ict$</td>
+<td>informational time</td>
+<td>$r_t$, $c r_t$, $i c r_t$</td>
+<td><strong>change</strong></td>
+<td>$c r_t$ already: 135 in 23 files; leftovers $ct$/$ict$: 4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$x,y,z$</td>
+<td>coordinate, and inside $x\,\vec e_x$</td>
+<td>$r_x,r_y,r_z$</td>
+<td><strong>change</strong></td>
+<td>leftover $x\,\vec e_x$: 3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$x',y',z'$</td>
+<td>informational space coordinate</td>
+<td>$r'_x,r'_y,r'_z$</td>
+<td><strong>change</strong> (done, verify)</td>
+<td>0 leftovers expected</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\tilde R_\varphi$, $\tilde R_\psi$</td>
+<td>material part, informational part</td>
+<td>unchanged</td>
+<td><strong>keep</strong></td>
+<td>$\tilde R_\psi$: 584; $\tilde R_\varphi$: 256</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$h_t,h_x,h_y,h_z,\vec h$</td>
+<td>operator reading of the informational element</td>
+<td>$c r_t$, $r'_x,r'_y,r'_z$, $\vec r_\psi$</td>
+<td><strong>change</strong></td>
+<td>$h$-family: 1756 in 150 files; $\vec h$: 687 in 57; $h_t$: 508 in 58; bridge declared in 1 file</td>
+</tr>
+<tr>
+<td>7b</td>
+<td>$H$</td>
+<td>the same element used as a Hamiltonian, with $\hbar$</td>
+<td>$H$ kept and declared once per article; $H=h_t e_t+i\vec h$ becomes $H=\tilde R_\psi$</td>
+<td><strong>restrict</strong></td>
+<td>$H=h_t\ldots$: 4 files; $\exp(-iHt'/\hbar)$: 19 sites in 11 files</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\tilde H$, $h_{\mu\nu}$, $h_2$, $h_0,h_1$</td>
+<td>homonyms: magnetic field, metric perturbation, binary entropy, medium fields</td>
+<td>unchanged</td>
+<td><strong>do not touch</strong></td>
+<td>$\tilde H$: 5 in 1 file; $h_{\mu\nu}$: 44 in 3 files</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-decidable-rules">The three decidable rules</h2>
+<p><strong>Rule A — the test for row 1 against row 2.</strong> $t'$ is a <strong>coordinate</strong> when it sits
+inside a scalar that is a length or an interval, or when it names one point of a pair.
+It is a <strong>parameter</strong> when something is differentiated or exponentiated with respect to it.
+Operationally: if the symbol is the denominator of a $\partial$ or $d$, or the argument of
+an exponential, or the variable of a one-parameter group, keep $t'$. Otherwise it is a
+coordinate and becomes $r'_t$.</p>
+<p><strong>Rule B — why $t'$ survives at all.</strong> $r'_t$ is a length; $t'$ is a duration. The corpus
+reads time in metres on the coordinate slot and in seconds on the parameter slot, and
+$c$ is the only object that converts. Keeping both is what makes $\exp(-iHt'/\hbar)$
+dimensionally honest while $i c r'_t$ stays a length.</p>
+<p><strong>Rule C — why $h$ does not survive.</strong> The bridge $h_t=c r_t$, $h_k=r'_k$ is not a
+description of a symbol to keep; it is the <strong>licence to delete it</strong>. It says the two
+writings denote the same number. A notation that carries two names for one number is the
+defect being repaired, not part of the repair. So the operator letters go:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>today</th>
+<th>after</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_t$</td>
+<td>$c r_t$</td>
+<td>the bridge, read left to right</td>
+</tr>
+<tr>
+<td>$h_x,h_y,h_z$</td>
+<td>$r'_x,r'_y,r'_z$</td>
+<td>the bridge, read left to right</td>
+</tr>
+<tr>
+<td>$\vec h$</td>
+<td>$\vec r_\psi$</td>
+<td>the vector part of $\tilde R_\psi$, in the parallel already used for the material half</td>
+</tr>
+<tr>
+<td>$h_t e_t+i\vec h$</td>
+<td>$\tilde R_\psi$</td>
+<td>the element is one element</td>
+</tr>
+</tbody>
+</table></div>
+<p>The parallel that decides it is already in the corpus: the material half is written
+$\tilde R_\varphi=i c r'_t\,e_t+\vec r_\varphi$ in 5 articles, with its vector part
+carrying the half's own subscript. The informational half must be written the same way,
+$\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$. Today the two halves are asymmetric — one in
+position letters, one in operator letters — and that asymmetry is the whole of the
+inconsistency.</p>
+<p><strong>The collision I wrongly feared.</strong> $\vec r$ is the Bloch vector of the state
+$\tilde\varsigma=\tfrac12(e_t+i\vec r)$; $\vec h$ is the vector part of the observable.
+The Born weight is $\tfrac12(h_t+\vec r\cdot\vec h)$. Renaming $h$ to $\vec r$ would
+indeed have collapsed the two, but that is not the rename: the target is $\vec r_\psi$,
+which stays distinct from the Bloch vector. The formula becomes
+$\tfrac12(c r_t+\vec r\cdot\vec r_\psi)$ — Bloch direction against the observable's
+vector part, which is what it always meant.</p>
+<p><strong>Rule D — the one place an exception is allowed.</strong> $H$ survives, and only as a declared
+abbreviation inside an article that actually does evolution:
+$H:=\tilde R_\psi$ in its energy reading, with $\hbar$ in the exponent
+$\exp(-iHt'/\hbar)$ and not in the coefficient. It is declared once, at first use, in
+each of the 4 articles that write $H=h_t e_t+i\vec h$. Everywhere else the element is
+$\tilde R_\psi$. A bare $h$ without a subscript stays the Planck constant.</p>
+<h2 id="the-checker-fails-on-any-survivor">The checker (fails on any survivor)</h2>
+<p>Inside every <code>$…$</code> and <code>$$…$$</code> chunk, the pass must find zero of:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pattern</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c^2t'^2</code>, <code>c^2 t'^2</code></td>
+<td>interval with a bare coordinate time</td>
+</tr>
+<tr>
+<td><code>ic\,t'</code>, <code>ict</code>, <code>ct\,e_t</code></td>
+<td>material or informational time as a plain letter</td>
+</tr>
+<tr>
+<td><code>(t',x,y,z)</code>, <code>(t', r_x</code></td>
+<td>old tuple</td>
+</tr>
+<tr>
+<td><code>x\,\vec e_x</code> (and $y,z$)</td>
+<td>old space letter</td>
+</tr>
+<tr>
+<td><code>t'_q</code>, <code>t'_p</code>, <code>t'_r</code></td>
+<td>old subscripted coordinate time</td>
+</tr>
+<tr>
+<td><code>\Delta t'</code></td>
+<td>old interval increment</td>
+</tr>
+<tr>
+<td><code>h_t</code> outside a declared $H$</td>
+<td>operator letter</td>
+</tr>
+<tr>
+<td><code>h_x</code>, <code>h_y</code>, <code>h_z</code></td>
+<td>operator letter</td>
+</tr>
+<tr>
+<td><code>\vec h</code></td>
+<td>operator vector part</td>
+</tr>
+<tr>
+<td><code>h_t e_t+i\vec h</code></td>
+<td>the element in operator letters</td>
+</tr>
+</tbody>
+</table></div>
+<p>Allowed after the pass: <code>\partial/\partial t'</code>, <code>d/dt'</code>, <code>\exp(…t'…)</code>, <code>\tilde\Xi(t')</code>,
+<code>\vec r_\psi</code>, <code>\vec r_\varphi</code>, a declared <code>H</code> in the 4 evolution articles,
+<code>\tilde H</code>, <code>h_{\mu\nu}</code>, <code>h_2</code>.</p>
+<h2 id="pilot-three-articles-read-line-by-line">Pilot: three articles, read line by line</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>Why this one</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>the-four-regimes-of-an-element-mass-and-motion.md</code></td>
+<td>smallest real case: one interval, $N=-c^2t'^2+B^2$; decides nothing else</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>the-informational-sector-states-observables-and-probability.md</code></td>
+<td>the $h$-heavy state article: 48 $h$-uses against 24 $r$-uses; the rename is decided here</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code></td>
+<td>hardest time case: 19 uses of $t'$, mostly $\Delta t'$ and pairs $t'_q-t'_p$, mixed with $\tilde\Xi(t')$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each pilot article is read in full, line by line. Every change is proposed as an exact
+old line → new line. Nothing is substituted. The diff is shown for approval before the
+remaining 226 files are touched.</p>
+<h2 id="results-of-the-applied-pass">Results of the applied pass</h2>
+<p>Run from <code>da552c10b</code>, <code>articles_physics/</code> only, 412 files, 114 files modified.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what</th>
+<th>sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_t$ → $c r_t$ (including $h_te_t$, $h_t^2$, $h_{1t}$, $H_t$)</td>
+<td>1393</td>
+</tr>
+<tr>
+<td>$\vec h$ → $\vec r_\psi$ (including $\vec h_{1,2}$, $\vec h_{Z,S}$)</td>
+<td>742</td>
+</tr>
+<tr>
+<td>$h_x,h_y,h_z$ → $r'_x,r'_y,r'_z$</td>
+<td>96</td>
+</tr>
+<tr>
+<td>$\vec u_h$ → $\vec u_\psi$</td>
+<td>120</td>
+</tr>
+<tr>
+<td>$c^2t'^2$ → $c^2{r'_{t}}^2$</td>
+<td>51</td>
+</tr>
+<tr>
+<td>$ct\,e_t$ → $c r_t\,e_t$</td>
+<td>13</td>
+</tr>
+<tr>
+<td>$\Delta t'$ → $\Delta r'_t$</td>
+<td>47</td>
+</tr>
+<tr>
+<td>$ct^2$ / $c^2\{t\}^2$ → $c^2 r_t^2$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>tuple $(t',r_x\ldots)$ → $(r'_t,r_x\ldots)$</td>
+<td>26</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two rule-changes were withdrawn on review.</strong> The identity $c r_t=ct$ is <strong>kept</strong>, not
+collapsed: it is a bridge of the same kind as $r_k=x_k$ in <em>Introduction to the
+Biquaternion Universe</em>, and bridges are declared, never deleted. Three sites were
+restored. The material gradient denominators were <strong>restored</strong> to $\partial/\partial x$
+in four sites, pending the decision recorded below.</p>
+<p><strong>Left in the operator letters, on purpose.</strong> $\vec h$ is the magnetic field in three
+articles (<code>electromagnetism-in-media</code>, <code>maxwells-theory-on-non-commutative</code>,
+and the $\vec H=\vec B+\vec h$ of the chiral medium), $\vec h_{\mathrm{eff}}$ is an
+effective field in <code>geometric-phases-of-non-relativistic-spin</code>, and $h_{\mu\nu}$ is a
+metric perturbation in the gravity articles. Different objects, same glyph.</p>
+<p><strong>What remains as $t'$, and why.</strong> 3702 occurrences survive, and every one is a
+parameter use: 848 under a derivative, 1023 as a function argument, 248 in an
+exponential or a one-parameter group, 64 as a retarded time, and 1519 as a labelled
+event time (radar readings $t'_1,t'_2,t'_3$, path-integral bounds $t'_i,t'_f$,
+analytic continuation $t'\to t'+i\beta$, evolution $\rho(t')$). None is a coordinate.</p>
+<p><strong>Checks.</strong> <code>/tmp/check.py</code> fails on any operator letter, interval with a bare
+coordinate time, old tuple, old space letter, $\Delta t'$, or gradient on a plain
+space letter. It reports <strong>0</strong>. <code>build.py</code> exits <strong>0</strong> over all articles with <strong>0</strong>
+warnings. Two displays that carried both notations are gone: the material gradient in
+<code>exercise-the-electromagnetic-energy-momentum-tensor.md</code> and $z e_t=(c r_t+i c r'_t)e_t$
+in <code>the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.md</code>.</p>
+<p><strong>The retired block.</strong> <code>algebra-and-element-conventions.md</code> keeps one display of the old
+letters under the marker <code>&lt;!-- retired notation, kept for reference --&gt;</code>, so the
+declaration has a stated history instead of a silent deletion. The checker skips that
+block only.</p>
+<h2 id="resolved-three-layers-one-letter-per-layer">Resolved: three layers, one letter per layer</h2>
+<p>The corpus already carries the answer, and it is the answer you gave. Nothing new is
+invented. Three layers are declared in the corpus, and each fixes its own letters.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>layer</th>
+<th>element</th>
+<th>time slot</th>
+<th>space slot</th>
+<th>derivative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general, $\mathbb{B}$, $Q_\mu\in\mathbb{C}$</td>
+<td>$\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>$Q_t$</td>
+<td>$Q_x,Q_y,Q_z$ / $Q_k$</td>
+<td>$\partial/\partial Q_\mu$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$ material</td>
+<td>$\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
+<td>$i c r'_t$</td>
+<td>$r_k$, that is $x,y,z$</td>
+<td>$e_t\,\partial/\partial(i c r'_t)+\vec e_k\,\partial/\partial r_k$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$ informational</td>
+<td>$\tilde R_\psi=c r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$</td>
+<td>$c r_t$</td>
+<td>$r'_k$</td>
+<td>$e_t\,\tfrac1c\partial/\partial r_t-i\vec e_k\,\partial/\partial r'_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Declared at: <code>frame-and-metric-conventions</code>:150 ($Q_\mu$ general, material case
+$Q_t=i c r'_t$, $Q_k=r_k$); <code>operator-and-calculus-conventions</code>:200 and :298 (the
+material gradient); <code>the-unit-metric-in-the-biquaternion-universe</code>:112, :129, :279
+($Q_t=c r_t$, $Q_k=i r'_{x_k}$ for $\mathbb{M}_+$).</p>
+<p><strong>The bridges, declared once</strong>, <code>introduction-to-the-biquaternion-universe</code>:82:</p>
+<p>$$r_t=t,\quad r'_t=t',\qquad r_k=x_k,\quad r'_k=x'_k,\qquad c r_t=ct,\quad c r'_t=ct' .$$</p>
+<p><strong>The rule, therefore.</strong> The layer of a display fixes its letters, and the derivative
+takes the coordinate slot of that same layer. There is no mixing to repair, because
+$\partial/\partial r_k$ and $\partial/\partial x_k$ and $\partial/\partial Q_k$ are one
+derivative under three names on the bridge.</p>
+<p><strong>Consequences, measured.</strong></p>
+<ul>
+<li>$\tilde\nabla=e_t\partial/\partial(i c r'_t)+\vec e_x\partial/\partial x+\dots$ in
+  <code>exercise-the-electromagnetic-energy-momentum-tensor.md</code> is <strong>correct as it stands</strong>.
+  It is the $\mathbb{M}_-$ layer, where $Q_k=r_k=x_k$. My earlier conversion was wrong
+  and is reverted.</li>
+<li>Displays that carry a $Q$-slot and a sector letter: <strong>9</strong>, and every one is a bridge
+  with an equality sign, $\partial/\partial Q_t=\partial/\partial(i c r'_t)$. Legitimate.</li>
+<li>Displays that carry $r_x$ and a plain $x$: <strong>80</strong>, and they are the distinction
+  $\vec x$ the position vector against $r_x$ its component, declared as
+  $\vec x:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Also legitimate, and worth stating
+  once as a convention rather than removing.</li>
+</ul>
+<p><strong>The letter names, final.</strong> The general layer keeps $Q$. The material layer keeps
+$i c r'_t$ and $r_k$, with $x_k$ as its display form. The informational layer keeps
+$c r_t$ and $r'_k$, and its element is $\tilde R_\psi$ — the Hermitian element, named
+$H$ only inside an article that does evolution, declared there as $H:=\tilde R_\psi$
+with the energy reading and the $\hbar$ in the exponent.</p>
+<p><strong>Checker rule now enforced.</strong> A display may not carry a $Q$-slot and a sector letter
+unless the same display joins them with $=$. Mixed-frame count: <strong>0</strong>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

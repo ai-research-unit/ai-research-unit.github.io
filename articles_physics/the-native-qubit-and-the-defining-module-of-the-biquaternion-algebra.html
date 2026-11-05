@@ -110,10 +110,10 @@ $$</p>
 <p>$$
 M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$</p>
-<p>so that the Hermitian element $\tilde R_\psi = h_te_t + i(h_x\vec e_x + h_y\vec e_y + h_z\vec e_z)$ with real $h_\mu$ maps to</p>
+<p>so that the Hermitian element $\tilde R_\psi = c r_t\,e_t + i(r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z)$ with real $h_\mu$ maps to</p>
 <p>$$
-M(\tilde R_\psi) = \begin{pmatrix} h_t + h_z & h_x - ih_y \\ h_x + ih_y & h_t - h_z \end{pmatrix}
-= h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3 .
+M(\tilde R_\psi) = \begin{pmatrix} c r_t + r'_z & r'_x - ir'_y \\ r'_x + ir'_y & c r_t - r'_z \end{pmatrix}
+= c r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3 .
 $$</p>
 <p>Acting on $|u\rangle = (u_x, u_y)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to</p>
 <p>$$
@@ -127,7 +127,7 @@ $$</p>
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$</p>
-<p>Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde R_\psi = h_te_t + i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ <strong>is</strong> the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.</p>
+<p>Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $c r_t\,I_2 + \vec r_\psi\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ <strong>is</strong> the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.</p>
 <h2 id="the-defining-module">The Defining Module</h2>
 <h3 id="the-module">The module</h3>
 <p>Let $S = \mathbb{C}^2$ be the space of column vectors, acted on from the left by $M_2(\mathbb{C})$, hence by $\mathbb{B}$ through the isomorphism above:</p>
@@ -189,11 +189,11 @@ $$</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
 $$</p>
-<p>On $\mathbb{M}_+$, writing $\tilde R_\psi = h_te_t + i\vec h$ with real $h_t,\vec h$, it evaluates to</p>
+<p>On $\mathbb{M}_+$, writing $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with real $c r_t,\vec r_\psi$, it evaluates to</p>
 <p>$$
-\langle\tilde R_\psi\rangle_{\natural} = \bigl(h_t^2 - |\vec h|^2\bigr)e_t ,
+\langle\tilde R_\psi\rangle_{\natural} = \bigl(c^2 r_t^2 - |\vec r_\psi|^2\bigr)e_t ,
 $$</p>
-<p>which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde R_\psi\rangle_{\natural} = \det M(\tilde R_\psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state</p>
+<p>which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $c r_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde R_\psi\rangle_{\natural} = \det M(\tilde R_\psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $c r_t$ selects the future cone. For a state</p>
 <p>$$
 \boxed{\;\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.
 $$</p>
